@@ -19,6 +19,14 @@ drive for saving the jpeg
 
 @author: Mats
 """
+import os, sys
+from os.path import join, realpath, dirname, isdir
+
+# the module path is the path to the project folder
+# beeing the parent folder of the folder of this file
+MODUL_PATH = join(dirname(realpath(__file__)), os.pardir)
+# the analysis_docs path is the projects subfolder for outputs to be analysed
+DOC_PATH = join(MODUL_PATH, "doc_data")
 
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
@@ -27,7 +35,6 @@ from pdfminer.pdfpage import PDFPage
 from cStringIO import StringIO
 from wand.image import Image
 from wand.color import Color
-import os, os.path, sys
 
 import tempfile
 from wand.image import Image
@@ -92,7 +99,10 @@ def pdf2jpg(source_file, target_file, dest_width=1895, dest_height=1080,pages=1)
         ima.save(filename = target_file)
 
     return ret 
+
+filedir = join(join(DOC_PATH, 'files'), "0c000b13f44c766f6877daedea49b18d.pdf")
 dat = open('test2.txt','w')
-dat.write(convert_pdf_to_txt('./test.pdf'))
+
+dat.write(convert_pdf_to_txt(filedir))
 pic = 'test.jpeg'
-pdf2jpg('test2.pdf',pic)
+pdf2jpg(filedir,pic)
