@@ -64,14 +64,15 @@ def copyFiles(files_path,classfile_path):
 if len(sys.argv) == 3:
     files_path=sys.argv[1]
     classfile_path=sys.argv[2]
+    
+    cft,cff,cct,ccf,other=copyFiles(files_path,classfile_path)
+    
+    print("Files marked as True: ",cft)
+    print("Files found and copied that were marked as True: ",cct)
+    print("Files marked as False: ",cff)
+    print("Files found and copied as that were marked as False: ",ccf)
+    print("Other values: ",other)
 else:
     print('Usage: python Copyfiles.py [path_to_files] [path_to classification.csv]')
         
 
-cft,cff,cct,ccf,other=copyFiles(files_path,classfile_path)
-
-print("Files marked as True: ",cft)
-print("Files found and copied that were marked as True: ",cct)
-print("Files marked as False: ",cff)
-print("Files found and copied as that were marked as False: ",ccf)
-print("Other values: ",other)
