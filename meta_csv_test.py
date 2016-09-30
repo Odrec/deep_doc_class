@@ -18,11 +18,14 @@ and you are set up to play around like in matlab
 
 @author: kai
 """
-
-import csv
 import os, sys
 from os.path import join, realpath, dirname, isdir
 from datetime import datetime
+
+import csv
+
+# https://www.decalage.info/python/html for installation
+import HTML
 
 # the module path is the path to the project folder
 # beeing the parent folder of the folder of this file
@@ -65,10 +68,11 @@ def get_classifications():
 		datarow[class_fname2idx["published"]] = datarow[class_fname2idx["published"]]=="True"
 		classifications.append(datarow)
 
+
+
 	# return classification and fieldnames
 	return classifications, class_fnames
 
-# get the ids of the classified data
 def get_classified_ids(classifications):
 	"""
 	Parse the classification data
@@ -134,7 +138,6 @@ def get_classified_meta_data(class_data_ids):
 
 	# return the data and the fieldnames
 	return metadata,data_fnames
-
 
 def clean_classifications(metadata, classifications):
 	"""
@@ -203,21 +206,26 @@ def get_stats(vals, op, classifications):
 			str_row += str(cell).center(10)
 		print(str_row)
 
-# get the classification data
-classifications, class_fnames = get_classifications()
-# get the ids of the classifie documents
-class_data_ids = get_classified_ids(classifications)
-# get the meta data of the classified documents
-metadata, data_fnames = get_classified_meta_data(class_data_ids)
-# erase the classified ids that dont appear in the data
-clean_classifications(metadata, classifications)
 
-# example of how to use the stat evaluation
-# get interesting data set
-filesizes = [md[data_fname2idx['filesize']] for md in metadata]
-# define the requested information. The righthand side needs to be hardcoded here
-op = (lambda a: a <= 50000)
-# get the relevant stats
-get_stats(filesizes,op,classifications)
+if __name__ == '__main__':
+
+
+	# get the classification data
+	classifications, class_fnames = get_classifications()
+	# get the ids of the classifie documents
+	class_data_ids = get_classified_ids(classifications)
+	# get the meta data of the classified documents
+	metadata, data_fnames = get_classified_meta_data(class_data_ids)
+	# erase the classified ids that dont appear in the data
+	clean_classifications(metadata, classifications)
+
+	print(data_fnames)
+	# example of how to use the stat evaluation
+	# get interesting data set
+	filesizes = [md[data_fname2idx['filesize']] for md in metadata]
+	# define the requested information. The righthand side needs to be hardcoded here
+	op = (lambda a: a <= 50000)
+	# get the relevant stats
+	get_stats(filesizes,op,classifications)
 
 
