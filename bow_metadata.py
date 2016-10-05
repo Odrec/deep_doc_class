@@ -11,8 +11,11 @@ nltk.data.path.append('nltk_data')  # setting path to files
 __author__ = 'tkgroot'
 
 class Bow_Metadata():
-    def __init__(self, of_type=None):
+    def __init__(self, of_type=None, punishment_factor=None):
         if of_type is None: raise ValueError("Bow Metadata can´t be of type: None")
+        if punishment_factor is None: self.punishment_factor=0.5                    # punishment_factor for author only
+        else: self.punishment_factor=punishment_factor
+
         self.type=of_type                                                           # set the type of bow
         self.vectorizer=CountVectorizer(analyzer='word', max_features=1000)         # initialize bow
 
@@ -33,9 +36,7 @@ class Bow_Metadata():
     # Gets training data
     def get_train(self, data, classifier):
         t0=time()
-        print("Creating training data...\n")
-
-
+        print("creating training data...\n")
         """
         Training data consists of all metadata from documents who fulfill
         being in data and in classifier
@@ -59,7 +60,7 @@ class Bow_Metadata():
         if lang is None: lang=['german','english']    # can take multiple languages to cross-validate against stopwords
 
         try:    # Necessary to cope with empty descriptions or others. They return NaN if empty
-            numpy.isnan(float(train))
+            np.isnan(float(train))
         except:
             # removes non-letters&-numbers and keeps Sonderzeichen ä,ö,ü
             # @ToDo: should take care of more special letters from different languages
@@ -75,9 +76,12 @@ class Bow_Metadata():
 
     # @ToDo: bow_author is a special case because it shouldnt split up the name
     def bow_author(self):
+        t0=time()
+        print("create BoW of authors...")
         self.load_data_to_file()
-        train=self.get_train(self.author,self.clf).drop_duplicates('user_id')   # getting rid of dublicates in author
-        # print(train)
+        train=self.get_train(self.author,self.clf)
+        train.to_csv( "lib_bow/model_author.csv", index=False, quoting=1, encoding='utf-8')
+        print("Finished in %0.3fs" % (time()-t0))
 
     # @ToDo: make_bow for negative examples as well
     # @ToDo: might get error when convert_data is empty for some reason. It should be catched
@@ -136,7 +140,7 @@ class Bow_Metadata():
 
 # Testing
 test=Bow_Metadata('title')
-test.make_bow()
-# test.bow_author()
+# test.make_bow()
+test.bow_author()
 # get_train()
 # make_bow()
