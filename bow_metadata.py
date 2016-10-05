@@ -25,12 +25,12 @@ class Bow_Metadata():
             self.make_bow()
 
     def load_data_to_file(self):
-        self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
-        # self.metadata=pd.read_csv("p52-dl/BowMetaTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
-        self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
-        # self.author=pd.read_csv('p52-dl/uploaderTest.csv', header=0, delimiter=",", quoting=1)
-        self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
-        # self.clf=pd.read_csv("p52-dl/classificationTest.csv", header=0, delimiter=';', quoting=3)
+        # self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+        self.metadata=pd.read_csv("p52-dl/BowMetaTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+        # self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
+        self.author=pd.read_csv('p52-dl/uploaderTest.csv', header=0, delimiter=",", quoting=1)
+        # self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
+        self.clf=pd.read_csv("p52-dl/classificationTest.csv", header=0, delimiter=';', quoting=3)
         self.clf = self.clf.loc[self.clf['published'] == True]  # consider only positive classification
 
     # Gets training data
@@ -88,20 +88,20 @@ class Bow_Metadata():
         self.load_data_to_file()
         train=self.get_train(self.metadata, self.clf)   # get training data
         number_documents=train['document_id'].size      # number of documents in training csv
-        bows = [u'filename', u'title', u'description',
-                u'folder_name', u'folder_description']  # creates bow of given feature, metadata must contain feature
+        bows = ['filename', 'title', 'description',
+                'folder_name', 'folder_description']    # creates bow of given feature, metadata must contain feature
         clean_train_data=[]                             # cleaned training data
 
         for bow in bows:
             t0=time()
             print("create BoW of "+bow)
             # go through train data and convert it so it can be used in a bow
-            for i in xrange(0,number_documents):   # sets the range to the number of documents
-                if(i+1)%1000==0: print "Review %d of %d\n" % ( i+1, number_documents)    # notification every 1000 documents
+            for i in range(0,number_documents):   # sets the range to the number of documents
+                if(i+1)%1000==0: print("Review %d of %d\n" % ( i+1, number_documents))    # notification every 1000 documents
                 if self.convert_data(train[bow][i]):
                     clean_train_data.append(self.convert_data(train[bow][i]))
                 else:
-                    clean_train_data.append(u'')
+                    clean_train_data.append('')
             # print(clean_train_data)
 
             # Create bow
@@ -119,12 +119,8 @@ class Bow_Metadata():
             word_count=word_count/max(word_count)     # unification of data range[0,1]
             # print(word_count)
 
-            # create array [words,word_count]
-            bag=np.array(zip(bow_vocabulary,word_count), dtype=[('word','<U13'),('value',np.float64)])
-            # print(bag)
-
             # Pandas creates a lib_bow for the bow in progress
-            output=pd.DataFrame( data={"value":bag['value'], "word":bag['word']} )
+            output=pd.DataFrame( data={"value":bow_vocabulary, "word":word_count} )
             output.to_csv( "lib_bow/model_"+bow+".csv", index=False, quoting=1, encoding='utf-8')
             duration=time()-t0
             print("finished in: %0.3fs" % duration)
@@ -140,6 +136,6 @@ class Bow_Metadata():
 
 # Testing
 test=Bow_Metadata('title')
-# test.make_bow()
-# test.bow_author()
-test.get_function("c03e30bb9a19d5a24fcd1cc88f245171.pdf")
+test.make_bow()
+test.bow_author()
+# test.get_function("c03e30bb9a19d5a24fcd1cc88f245171.pdf")
