@@ -47,7 +47,7 @@ class Bow_Metadata():
         train=train.dropna(how='all').reset_index(drop=True)
 
         # print(train.dropna(how='all').reset_index())
-        print("training set created in: %0.3fs" % (time()-t0))
+        print("finished in: %0.3fs" % (time()-t0))
         return train
 
     # Number of BoWs
@@ -81,7 +81,7 @@ class Bow_Metadata():
         self.load_data_to_file()
         train=self.get_train(self.author,self.clf)
         train.to_csv( "lib_bow/model_author.csv", index=False, quoting=1, encoding='utf-8')
-        print("Finished in %0.3fs" % (time()-t0))
+        print("finished in %0.3fs" % (time()-t0))
 
     # @ToDo: make_bow for negative examples as well
     # @ToDo: might get error when convert_data is empty for some reason. It should be catched
@@ -95,6 +95,7 @@ class Bow_Metadata():
 
         for bow in bows:
             t0=time()
+            print("create BoW of "+bow)
             # go through train data and convert it so it can be used in a bow
             for i in xrange(0,number_documents):   # sets the range to the number of documents
                 if(i+1)%1000==0: print "Review %d of %d\n" % ( i+1, number_documents)    # notification every 1000 documents
@@ -127,7 +128,7 @@ class Bow_Metadata():
             output=pd.DataFrame( data={"value":bag['value'], "word":bag['word']} )
             output.to_csv( "lib_bow/model_"+bow+".csv", index=False, quoting=1, encoding='utf-8')
             duration=time()-t0
-            print("created bow of "+bow+" in: %0.3fs" % duration)
+            print("finished in: %0.3fs" % duration)
 
     def get_function(self,filepointer, metapointer=None):
         # @ToDo: call self.vectorizer.transform(this data)
@@ -140,7 +141,7 @@ class Bow_Metadata():
 
 # Testing
 test=Bow_Metadata('title')
-# test.make_bow()
+test.make_bow()
 test.bow_author()
 # get_train()
 # make_bow()
