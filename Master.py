@@ -17,6 +17,7 @@ from Text_Score_Module import TextScore
 from bow_pdf_test import BoW_Text_Module
 from page_size_ratio_module import Page_Size_Module
 from scanner_detect_module import ScannerDetect
+#from ocr_bow_module import OCR_BoW_Module
 
 #INSERT IMPORT OF NEURAL NETWORK HERE
 from simple_neural_network import NN
@@ -61,7 +62,90 @@ def get_data_vector(modules, filepointer, metapointer=None):
             #if error occures the value is 0.0
             data.append(0.0)
     #return as numpy array
-    return np.array(data)
+    #return np.array(data)
+    return data
+
+#extracts features from a set of files and returns them on a list of lists
+#it also saves the features to a csv file named features.csv
+#
+#@param filenames:   list of filenames
+#@param classes:     list of classes from the classification.csv file
+#@result:            numpy array of arrays to feed the NN
+def extract_features(filenames,classes):
+    
+    c,m = get_classes(filenames,classes)
+    
+    feat_matrix = list()
+    
+    print('Training Neural Network...')
+    for f in range(len(filenames)):
+        #nn_train.append(get_data_vector(modules,train[t],m[t])) #No metadata for now (Index out of range error)
+        res=get_data_vector(modules,open(path+'/'+filenames[f],'rb'))
+        res.append(c[f])
+        res.append(filenames[f])
+        feat_matrix.append(res) 
+    
+    with open("output.csv","w") as f:
+        writer = csv.writer(f)
+        writer.writerows(feat_matrix)
+        
+    return feat_matrix
+    
+#function to get the classes and metadata of the specified files
+#
+#@param filenames:    list of files
+#@param classes:      list of classes from the classification.csv file
+#@return:             list of classes (in binary) and metadata
+def get_classes(filenames,classes):
+    
+    c = list()
+    m = list()
+    
+    for f in filenames:
+        
+        #Encoding labels to make them numerical
+        #There's the possibility to use categorical labels
+        #by using a softmax activation algorithm on the nn
+        #Could this be another way to induce a sort of bias 
+        #on the different outputs by using different loss
+        #functions??
+        if classes[f.split('.')[0]] == True:
+            c.append(1.)
+        else:
+            c.append(0.)
+        
+        try:
+            m.append(metadata[f])
+        except:
+            print("No metadata available for this file",f)
+            
+        return (c,m)
+        
+#loads the features from the csv file created during extraction
+#
+#@param num_features:    quantity of features
+#@result:                 list of lists of features, list of corresponding classes and filenames
+def load_data():
+    
+    with open('output.csv', 'r') as f:
+      reader = csv.reader(f)
+      data = list(reader)
+      
+    num_features = len(data[0])-2
+            
+    features = [item[:num_features] for item in data]
+    classes = [item[num_features] for item in data]
+    filenames = [item[num_features+1] for item in data]
+    
+    return features, classes, filenames
+    
+#function to train modules if needed. Each module called should have a train function
+def train_modules(modules,filenames,classes,metadata):
+    #For now modules are pre-trained
+    #We want a separate function for this
+    for module in modules:
+        module.train(filenames,classes,metadata)
+    
 
 def get_filepointer(path,filename):
     return open(path+'/'+filename,'rb')
@@ -93,11 +177,16 @@ def getNN(input_dim):
 
 args = sys.argv
 training = False
+extraining = False
 #train mode
 if '-t' in args:
     training = True
-    TESTSIZE = 1000
-
+    TESTSIZE = 1000#should we use a percentage of the total data instead? Ex. 80%
+    
+if '-et' in args:
+    training = True
+    extraining = True
+    TESTSIZE = 1000#should we use a percentage of the total data instead? Ex. 80%    
 
 
 #init filepointer for save-file here, the file will contain all classifications
@@ -119,6 +208,7 @@ modules.append(TextScore())
 modules.append(BoW_Text_Module())
 modules.append(Page_Size_Module())
 modules.append(ScannerDetect())
+#modules.append(OCR_BoW_Module())
 #ADD MODULES HERE
 
 #init neural network
@@ -139,43 +229,37 @@ save_file = open('classes.csv','a')
 
 #START TRAINING HERE
 if(training):
-    train, filenames = MetaHandler.gen_train_test_split(filenames,TESTSIZE)
-    #train module
-    #setup lists
-    c = list()
-    m = list()
-    print("Training Features...")
-    for t in train:
-        
-        #Encoding labels to make them numerical
-        #There's the possibility to use categorical labels
-        #by using a softmax activation algorithm on the nn
-        #Could this be another way to induce a sort of bias 
-        #on the different outputs by using different loss
-        #functions??
-        if classes[t.split('.')[0]] == True:
-            c.append(1.)
-        else:
-            c.append(0.)
-        
-        try:
-            m.append(metadata[t])
-        except:
-            x=1#placeholder            
-            #print("No metadata for this file",t)
     
-    nn_train = list()
-    #train features and setup the nn
-    #For now modules are pre-trained
-    #for module in modules:
-    #    module.train(train,c,m)
-    print('Training Neural Network...')
-    for t in range(len(train)):
-        #nn_train.append(get_data_vector(modules,train[t],m[t])) #No metadata for now (Index out of range error)
-        res=get_data_vector(modules,open(path+'/'+train[t],'rb'))
-        #print(res)
-        nn_train.append(res) 
-    network.trainNN(np.array(nn_train),np.array(c))
+    train, filenames = MetaHandler.gen_train_test_split(filenames,TESTSIZE)
+    
+    if(extraining):
+        #print("Training Features...")
+        print("Extracting Features from the training set. This will take a while...")
+        extract_features(train,classes)
+        
+    features,classes,files = load_data()
+    
+    print(features[10])
+    
+    [[x.replace('nan','0.0') for x in l] for l in features]
+    
+    features = [[float(j) for j in i] for i in features]
+    
+    classes = [float(i) for i in classes]
+    
+    nor=max(map(lambda x: x[2], features))
+    
+    for f in features: f[2] /= nor  
+    
+    print(features[10])    
+
+    features=np.array([np.array(xi) for xi in features])   
+    #features=np.array(features)
+    
+    print(features[21])
+    print(classes[123])
+    
+    network.trainNN(features,np.array(classes))
     print("Training done!")
 
 
