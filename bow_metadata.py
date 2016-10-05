@@ -55,16 +55,16 @@ class Bow_Metadata():
     #     if names_of_bow is None: return [u'filename', u'title', u'description', u'folder_name', u'folder_description']
     #     return names_of_bow
 
-    # train is of the format: train[csv-column-name][number of row/document] - ex. train[u'title'][0]
-    def convert_data(self,train, lang=None):
+    # data is of the format: data[csv-column-name][number of row/document] - ex. data[u'title'][0]
+    def convert_data(self,data, lang=None):
         if lang is None: lang=['german','english']    # can take multiple languages to cross-validate against stopwords
 
         try:    # Necessary to cope with empty descriptions or others. They return NaN if empty
-            np.isnan(float(train))
+            np.isnan(float(data))
         except:
             # removes non-letters&-numbers and keeps Sonderzeichen ä,ö,ü
             # @ToDo: should take care of more special letters from different languages
-            text=re.sub(u'[^a-zA-Z0-9\u00fc\u00e4\u00f6]', " ", train)
+            text=re.sub(u'[^a-zA-Z0-9\u00fc\u00e4\u00f6]', " ", data)
 
             all_words=text.lower().split()  # converts all words to lower case letters and splits them
             for language in lang:   # stopwords from given languages are detected and then removed from words
@@ -74,7 +74,6 @@ class Bow_Metadata():
                 words=[w for w in all_words if not w in stop_words]
             return " ".join(words)
 
-    # @ToDo: bow_author is a special case because it shouldnt split up the name
     def bow_author(self):
         t0=time()
         print("create BoW of authors...")
@@ -133,15 +132,14 @@ class Bow_Metadata():
     def get_function(self,filepointer, metapointer=None):
         # @ToDo: call self.vectorizer.transform(this data)
         # metapointer=pd.DataFrame(data={metapointer})
-        filepointer=re.sub(u'[^a-zA-Z0-9]',' ',filepointer)
-        file=self.convert_data(filepointer)
-        print(file)
+
+        # file=self.convert_data(filepointer[0:-4])
+        print(filepointer[0:-4])
         score=0
         return score
 
 # Testing
 test=Bow_Metadata('title')
-test.make_bow()
-test.bow_author()
-# get_train()
-# make_bow()
+# test.make_bow()
+# test.bow_author()
+test.get_function("c03e30bb9a19d5a24fcd1cc88f245171.pdf")
