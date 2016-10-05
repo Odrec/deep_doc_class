@@ -28,12 +28,12 @@ class NN:
         #hidden=np.mean([num_input_nodes,1]).astype(int)
         
         #Input and hidden layers
-        self.model.add(Dense(10,input_dim=num_input_nodes, init="uniform"))
-        self.model.add(Activation("sigmoid"))
+        self.model.add(Dense(num_input_nodes,input_dim=num_input_nodes, init="uniform"))
+        self.model.add(Activation("relu"))
         
         #Input and hidden layers
         self.model.add(Dense(10, init="uniform"))
-        self.model.add(Activation("sigmoid"))
+        self.model.add(Activation("relu"))
                        
         #Output layer
         #Activation function Sigmoid
@@ -42,13 +42,13 @@ class NN:
         #Compile model
         #The loss function is binary_crossentropy since we are dealing with 
         #just two classes. Stochastic gradient descent
-        self.model.compile(loss="binary_crossentropy", optimizer="sgd", metrics=["accuracy"])
+        self.model.compile(loss="binary_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
         
         
     #@params train_data a list of numpy arrays. Each array is an input
     #@params train_labels a numpy array with the target data
     def trainNN(self, train_data, train_labels):
-        self.model.fit(train_data, train_labels, nb_epoch=50, batch_size=100)
+        self.model.fit(train_data, train_labels, nb_epoch=50, batch_size=128)
         self.model.save("NN.model")
         
     #@params test_data a list of numpy arrays. Each array is an input
