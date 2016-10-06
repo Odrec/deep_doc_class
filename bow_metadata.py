@@ -13,6 +13,7 @@ __author__ = 'tkgroot'
 class Bow_Metadata():
     def __init__(self, of_type=None, punishment_factor=None):
         if of_type is None: raise ValueError("Bow Metadata can´t be of type: None")
+        else: self.of_type=of_type
         if punishment_factor is None: self.punishment_factor=0.5                    # punishment_factor for author only
         else: self.punishment_factor=punishment_factor
 
@@ -26,7 +27,7 @@ class Bow_Metadata():
 
     def load_data_to_file(self):
         # self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
-        self.metadata=pd.read_csv("p52-dl/BowMetaTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+        self.metadata=pd.read_csv("p52-dl/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
         # self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
         self.author=pd.read_csv('p52-dl/uploaderTest.csv', header=0, delimiter=",", quoting=1)
         # self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
@@ -120,22 +121,38 @@ class Bow_Metadata():
             # print(word_count)
 
             # Pandas creates a lib_bow for the bow in progress
-            output=pd.DataFrame( data={"value":bow_vocabulary, "word":word_count} )
+            output=pd.DataFrame( data={'value':word_count, 'word':bow_vocabulary} )
             output.to_csv( "lib_bow/model_"+bow+".csv", index=False, quoting=1, encoding='utf-8')
             duration=time()-t0
             print("finished in: %0.3fs" % duration)
 
+    # @ToDo: call self.vectorizer.transform(this data) need to change the way vectorizer is used, do prediction instead of score
     def get_function(self,filepointer, metapointer=None):
-        # @ToDo: call self.vectorizer.transform(this data)
-        # metapointer=pd.DataFrame(data={metapointer})
+        clean_data=[]
+        self.load_data_to_file()
+        file=re.sub('[^a-zA-Z0-9]','',filepointer)      # get rid of //.*
+        file=file[5:-3]                               # cut out 'files' and 'pdf' from pointer str
 
-        # file=self.convert_data(filepointer[0:-4])
-        print(filepointer[0:-4])
-        score=0
-        return score
+        # load metadata of the file, clean it from artifacts
+        meta_for_file=self.metadata.loc[self.metadata['document_id'] == file].reset_index(drop=True)
+        # print(meta_for_file['title'].reset_index(drop=True))
+        clean_data.append(self.convert_data(meta_for_file[self.of_type][0]))
+        print(clean_data)
+        self.vectorizer.fit_transform(clean_data).toarray()
+        data=self.vectorizer.get_feature_names()
+
+        # load bow of __of_type
+        bow=pd.read_csv('lib_bow/model_'+self.of_type+'.csv', header=0, delimiter=',', quoting=1, encoding='utf-8')
+        # print(bow['word'])
+
+        # scoring
+        score=bow.loc[bow['word'].isin(data)].reset_index(drop=True)
+        size=score.index.size
+
+        return score['value'].sum(axis=0)/size
 
 # Testing
 test=Bow_Metadata('title')
-test.make_bow()
-test.bow_author()
-# test.get_function("c03e30bb9a19d5a24fcd1cc88f245171.pdf")
+# test.make_bow()
+# test.bow_author()
+test.get_function("./files/b4825922d723e3e794ddd3036b635420.pdf")
