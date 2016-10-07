@@ -70,12 +70,12 @@ def get_data_vector(modules, filepointer, metapointer=None):
 #@param filenames:   list of filenames
 #@param classes:     list of classes from the classification.csv file
 #@result:            numpy array of arrays to feed the NN
-def extract_features(filenames,classes):
+def extract_features(filenames,classes,metadata):
     
-    c,m = get_classes(filenames,classes)
+    c,m = get_classes(filenames,classes,metadata)
     
     feat_matrix = list()
-    
+
     print('Training Neural Network...')
     for f in range(len(filenames)):
         #nn_train.append(get_data_vector(modules,train[t],m[t])) #No metadata for now (Index out of range error)
@@ -95,7 +95,7 @@ def extract_features(filenames,classes):
 #@param filenames:    list of files
 #@param classes:      list of classes from the classification.csv file
 #@return:             list of classes (in binary) and metadata
-def get_classes(filenames,classes):
+def get_classes(filenames,classes,metadata):
     
     c = list()
     m = list()
@@ -114,7 +114,7 @@ def get_classes(filenames,classes):
             c.append(0.)
         
         try:
-            m.append(metadata[f])
+            m.append(metadata[f.split('.')[0]])
         except:
             print("No metadata available for this file",f)
             
@@ -234,7 +234,7 @@ if(training):
     if(extraining):
         #print("Training Features...")
         print("Extracting Features from the training set. This will take a while...")
-        extract_features(train,classes)
+        extract_features(train,classes,metadata)
         
     features,classes,files = load_data()
         
