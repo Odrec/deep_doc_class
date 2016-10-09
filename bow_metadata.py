@@ -26,12 +26,12 @@ class Bow_Metadata():
             self.make_bow()
 
     def load_data_to_file(self):
-        # self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
-        self.metadata=pd.read_csv("p52-dl/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
-        # self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
-        self.author=pd.read_csv('p52-dl/uploaderTest.csv', header=0, delimiter=",", quoting=1)
-        # self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
-        self.clf=pd.read_csv("p52-dl/classificationTest.csv", header=0, delimiter=';', quoting=3)
+        self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+        # self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+        self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
+        # self.author=pd.read_csv('tests/uploaderTest.csv', header=0, delimiter=",", quoting=1)
+        self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
+        # self.clf=pd.read_csv("tests/classificationTest.csv", header=0, delimiter=';', quoting=3)
         self.clf = self.clf.loc[self.clf['published'] == True]  # consider only positive classification
 
     # Gets training data
@@ -152,7 +152,7 @@ class Bow_Metadata():
         return score['value'].sum(axis=0)/size
 
 # Testing
-test=Bow_Metadata('title')
+# test=Bow_Metadata('title')
 # test.make_bow()
 # test.bow_author()
-test.get_function("./files/b4825922d723e3e794ddd3036b635420.pdf")
+# test.get_function("./files/b4825922d723e3e794ddd3036b635420.pdf")
