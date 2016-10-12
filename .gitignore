@@ -1,2 +1,10 @@
+# Python
 *.pyc
 __pycache__
+
+*.xml
+files/*.pdf
+metadata.csv
+
+# Mac specifics
+.DS_Store
