@@ -17,6 +17,7 @@ class Bow_Metadata():
         if punishment_factor is None: self.punishment_factor=0.5                    # punishment_factor for author only
         else: self.punishment_factor=punishment_factor
 
+        self.load_data_to_file()
         self.type=of_type                                                           # set the type of bow
         self.vectorizer=CountVectorizer(analyzer='word', max_features=1000)         # initialize bow
 
@@ -129,7 +130,6 @@ class Bow_Metadata():
     # @ToDo: call self.vectorizer.transform(this data) need to change the way vectorizer is used, do prediction instead of score
     def get_function(self,filepointer, metapointer=None):
         clean_data=[]
-        self.load_data_to_file()
         file=re.sub('[^a-zA-Z0-9]','',filepointer)      # get rid of //.*
         file=file[5:-3]                               # cut out 'files' and 'pdf' from pointer str
 
