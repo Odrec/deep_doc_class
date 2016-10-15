@@ -235,17 +235,15 @@ def getNN(input_dim):
 
 args = sys.argv
 training = False
-extraining = False
+extracting = False
 #train mode
 if '-t' in args:
     training = True
     TESTSIZE = 1000#should we use a percentage of the total data instead? Ex. 80%
     
-if '-et' in args:
-    training = True
-    extraining = True
+if '-e' in args:
+    extracting= True
     TESTSIZE = 1000#should we use a percentage of the total data instead? Ex. 80%    
-
 
 #init filepointer for save-file here, the file will contain all classifications
 #maybe csv-file, not yet decided
@@ -262,11 +260,11 @@ conf_thresh = 0.5
 
 #initialize module
 modules = list()
-modules.append(TextScore())
-modules.append(BoW_Text_Module())
-modules.append(Page_Size_Module())
-modules.append(ScannerDetect())
-#modules.append(Naive_Scan_Detector())
+#modules.append(TextScore())
+#modules.append(BoW_Text_Module())
+#modules.append(Page_Size_Module())
+#modules.append(ScannerDetect())
+modules.append(Naive_Scan_Detector())
 #modules.append(OCR_BoW_Module())
 #ADD MODULES HERE
 
@@ -276,7 +274,7 @@ network = getNN(len(modules))
 #get filenames
 path = './files'
 filenames = get_files(path)
-if training:
+if training or extracting:
     metadata,classes = MetaHandler.get_classified_metadata("metadata.csv","classification.csv")
 else:
     metadata = get_metapointer('metadata.csv')
@@ -286,16 +284,16 @@ save_file.close()
 #open for writing new data
 save_file = open('classes.csv','a')
 
+#EXTRACT FEATURES HERE
+if(extracting):
+    print("Extracting Features from the training set. This will take a while...")
+    extract_features(filenames,classes,metadata)
+    
+
 #START TRAINING HERE
 if(training):
     
     #train, filenames = MetaHandler.gen_train_test_split(filenames,TESTSIZE)
-    train = filenames
-    
-    if(extraining):
-        #print("Training Features...")
-        print("Extracting Features from the training set. This will take a while...")
-        extract_features(train,classes,metadata)
         
     features,classes,files = load_data()
         
