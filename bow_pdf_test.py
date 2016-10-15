@@ -4,7 +4,10 @@ __author__ = 'matsrichter'
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
-from pdfminer.pdfpage import PDFPage
+try:
+    from pdfminer.pdfparser import PDFPage
+except ImportError:
+    from pdfminer.pdfpage import PDFPage
 try:
     from cStringIO import StringIO
 except ImportError:
@@ -17,8 +20,18 @@ import csv
 
 class BoW_Text_Module:
 
-    def __init__(self, mode = 'full'):
-        self.lib = self.load_lib(mode)
+    def __init__(self, mode = 'full',text_score = None):
+        """
+        :param mode:
+        :param text_score: a text_score-module object used for faster training, when bow is trained first
+        :return:
+        """
+        self.error = False
+        if(mode == 'reset'):
+            self.lib = dict()
+        else:
+            self.lib = self.load_lib(mode)
+        self.text_score = text_score
         return
 
     def sanitize(self,txt):
@@ -88,6 +101,7 @@ class BoW_Text_Module:
         except:
             x=1#Placeholder
             #print('troubleshooting')
+            self.error = True
         return text
 
     def get_bow(self,txt):
@@ -117,8 +131,12 @@ class BoW_Text_Module:
 
     def get_function(self,filepointer, metapointer = None):
         try:
-            txt = self.convert_pdf_to_txt(filepointer)
+            if(self.text_score == None):
+                txt = self.convert_pdf_to_txt(filepointer)
+            else:
+                txt = self.text_score.x
         except:
+            self.error = True
             return 0.0
         txt = self.sanitize(txt)
         bow = self.get_bow(txt)
@@ -138,11 +156,13 @@ class BoW_Text_Module:
         lib = dict()
         all = 0
         for i in range(len(filenames)):
+            print(i)
             if(classes[i] == 'True'):
                 continue
             with open(filenames[i],'r') as fp:
                 try:
                     txt = self.convert_pdf_to_txt(fp)
+                    self.text_score.len_list.append(len(txt))
                     txt = self.sanitize(txt)
                     bow = (self.get_bow(txt))
                     for key in bow:
@@ -158,11 +178,11 @@ class BoW_Text_Module:
         self.lib = lib
         return
 
-
 """
+
 #training script to create the lib
-save = open('bow_train.txt','w')
-m = BoW_Text_Module()
+save = open('bow_train_full.txt','w')
+m = BoW_Text_Module('reset')
 bows = list()
 
 filenames = list()
@@ -171,13 +191,13 @@ file_class = dict()
 #create dictionary with classifications
 with open('classification.csv','rb') as classes:
     reader = csv.reader(classes,delimiter=';', quotechar='|')
+    first = True
     for row in reader:
+        if first:
+            first = False
+            continue
         file_class['./files/'+row[0]+'.pdf'] = row[2]
-
-for file in os.listdir("./files"):
-    if file.endswith(".pdf"):
-#        print(file)
-        filenames.append('./files/'+file)
+        filenames.append("./files/"+row[0]+".pdf")
 
 counter = 0
 bag = dict()
@@ -199,16 +219,16 @@ for i in range(len(filenames)):
         fp.close()
     if counter%500 == 0:
         bow = sum(bows, collections.Counter())
-        bb = bow.most_common(1000)
-        bow = collections.Counter()
-        for elem in bb:
-            bow[elem[0]] = elem[1]
+        #bb = bow.most_common(1000)
+        #bow = collections.Counter()
+        #for elem in bb:
+        #    bow[elem[0]] = elem[1]
         bows = [bow]
-bow = sum(bows, collections.Counter())
-bb = bow.most_common(1000)
-bow = dict()
-for elem in bb:
-    bow[elem[0]] = elem[1]
+#bow = sum(bows, collections.Counter())
+#bb = bow.most_common(1000)
+#ow = dict()
+#for elem in bb:
+#    bow[elem[0]] = elem[1]
 
 all = 0
 for key in bow:

@@ -41,7 +41,7 @@ class ScannerDetect:
     
         if isinstance(pdf_info,dict):
             if '/Producer' in pdf_info:
-                producer = ''.join(i for i in pdf_info['/Producer'] if not i.isdigit())
+                producer = ''.join(i for i in pdf_info['/Producer'] if not str(i).isdigit())
                 producer = ''.join(i for i in producer if not i == ".")
                 producer = ''.join(i for i in producer if not i == ",")
                 producer = ''.join(i for i in producer if not i == "-")
@@ -88,7 +88,8 @@ class ScannerDetect:
     def classify(self,filepointer):
         
         feature_list=[]
-        sf=rf={}
+#        sf=rf={}
+        sf={}
         
         try:
             inputpdf = PdfFileReader(filepointer,strict=False)
@@ -99,12 +100,13 @@ class ScannerDetect:
         if not inputpdf.isEncrypted:
             #Extract features
             sf=self.readMetadata(inputpdf)
-            if shutil.which('pdf-extract') is not None:
-                rf=self.extractRegions(inputpdf,1)
-                fm={**sf,**rf}
-            else:
-                print("Missing pdf-extract. Only using metadata features.")
-                fm=sf
+#            if shutil.which('pdf-extract') is not None:
+#                rf=self.extractRegions(inputpdf,1)
+#                fm={**sf,**rf}
+#            else:
+#                print("Missing pdf-extract. Only using metadata features.")
+#                fm=sf
+            fm=sf
         else:
             print("Encrypted file. Can't extract features.")
             return np.nan
@@ -119,13 +121,13 @@ class ScannerDetect:
         imp = Imputer(missing_values='NaN',strategy='most_frequent',axis=1)
         feature_list_imp=imp.fit_transform(feature_list_trans)
                 
-        return self.gnl.predict(feature_list_imp).astype(np.float64)
+        return self.gnl.predict(feature_list_imp)
         
     #@param filepointer a pointer to a pdf file
     #@param metapointer a pointer to the metadata, this parameter is not used
     #@return float64 [0 1] probabiliy for the pdf  beeing copyright protected     
     def get_function(self,filepointer, metapointer = None):
-        return self.classify(filepointer)
+        return float(self.classify(filepointer))
         
     #@param path the path where the training data is located
     #@param class_path the path to where the classification.csv is located
@@ -143,48 +145,54 @@ class ScannerDetect:
                    for file in files:
                        
                        try:
-                           inputpdf = PdfFileReader(open(root+'/'+file,'rb'),strict=False)
-                            
-                           if not inputpdf.isEncrypted:                                   
-                               
-                               file_name=os.path.splitext(file)[0]
-                               for d in data_list:
-                                   
-                                   file_not_found=True
-                                   
-                                   if d['document_id'] == file_name:
-                                       if d['published'] == 'True':
-                                           class_copy.append(1)
-                                       elif d['published'] == 'False':
-                                           class_copy.append(0)
-                                       else:
-                                           print("Published:",d['published'])
-                                   
-                                       sf=self.readMetadata(inputpdf)
-                                       rf=self.extractRegions(inputpdf,num_pages)
-                                       fts={**sf,**rf}
-                                       features.append(fts)
-                                       
-                                       if(len(features) != len(class_copy)):
-                                           print("Something went wrong!")
-                                           print(len(features))
-                                           print(len(features[0]))
-                                           print(len(class_copy))
-                                           exit()
-                                           
-                                       file_not_found=False
-                                       
-                                       break
-                                           
+                           
+                           if not os.stat(root+'/'+file).st_size == 0:
+                               inputpdf = PdfFileReader(open(root+'/'+file,'rb'),strict=False)
                                 
-                               if file_not_found:
-                                    print("FILE NOT ON THE LIST")
-                                    shutil.move(root+'/'+file, root+'/Unlisted/'+file)
+                               if not inputpdf.isEncrypted:                                   
                                    
+                                   file_name=os.path.splitext(file)[0]
+                                   for d in data_list:
+                                       
+                                       file_not_found=True
+                                       
+                                       if d['document_id'] == file_name:
+                                           if d['published'] == 'True':
+                                               class_copy.append(1)
+                                           elif d['published'] == 'False':
+                                               class_copy.append(0)
+                                           else:
+                                               print("Published:",d['published'])
+                                       
+                                           sf=self.readMetadata(inputpdf)
+                                           #rf=self.extractRegions(inputpdf,num_pages)
+                                           #fts={**sf,**rf}
+                                           fts=sf
+                                           features.append(fts)
+                                           
+                                           if(len(features) != len(class_copy)):
+                                               print("Something went wrong!")
+                                               print(len(features))
+                                               print(len(features[0]))
+                                               print(len(class_copy))
+                                               exit()
+                                               
+                                           file_not_found=False
+                                           
+                                           break
+                                               
+                                    
+                                   if file_not_found:
+                                        print("FILE NOT ON THE LIST")
+                                        shutil.move(root+'/'+file, root+'/Unlisted/'+file)
 
+                               else:
+                                   print("Encrypted file. Can't extract features.",file)
+                                   #shutil.move(root+'/'+file, root+'/Encrypted/'+file)
+                                   
                            else:
-                               print("Encrypted file. Can't extract features.",file)
-                               shutil.move(root+'/'+file, root+'/Encrypted/'+file)
+                               print("File is 0 bytes")
+                               shutil.move(root+'/'+file, root+'/Damaged/'+file)
                                
                        except utils.PdfReadError:
                             print("Error reading file",file)
@@ -212,4 +220,4 @@ class ScannerDetect:
         
 
     
-
+#ScannerDetect().train("files","classification.csv")

@@ -135,61 +135,61 @@ class OCR_BoW_Module:
         @param metapointer  not used
         @return             a 'copyright-score' represented by a single float64 value        
         
-        This function returns a 'copyright-score' which is loosely tight to
+        This function returns a 'copyriDigital Homicideght-score' which is loosely tight to
         a bag-of-words bayesian classification using ocr
         of a pdf given by the filepointer
         """
         #get string
-        txt = get_text(filepointer)
+        txt = self.get_text(filepointer)
         for t in range(len(txt)):
             txt[t] = self.sanitize(txt[t])
-        bow = create_bag(txt)
+        bow = self.create_bag(txt)
         
-        return get_score(bow)
+        return self.get_score(bow)
 
 
 ############
 #TESTSCRIPT#
 ############
 
-filenames = list()
-file_class = dict()
-bow = OCR_BoW_Module()
-
-#create dictionary with classifications
-with open('classification.csv','rb') as classes:
-    reader = csv.reader(classes,delimiter=';', quotechar='|')
-    for row in reader:
-        file_class['./files/'+row[0]+'.pdf'] = row[2]
-
-for file in os.listdir("./files"):
-    if file.endswith(".pdf"):
-#        print(file)
-        filenames.append('./files/'+file)
-        
-counter = 0
-bag = dict()
-for i in range(len(filenames)):
-    if file_class[filenames[i]] == 'True':
-        continue
-    if(counter == 100):
-        break
-    counter += 1
-    print(str(counter)+'/'+str(len(filenames)))
-    fp = open(filenames[i],'r')
-    txt = str(bow.get_text(fp))
-    txt = bow.sanitize(txt)
-    fp.close()
-    bag = bow.create_bag(txt,bag)
-    #except:
-     #   print("Error opening file: "+filenames[i])
-
-c = 0    
-save = open('lib','w')
-for key in bag:
-    c += bag[key]
-for key in bag:
-    bag[key] = float(bag[key])/float(c)
-save.write(bag)
-save.close()
+#filenames = list()
+#file_class = dict()
+#bow = OCR_BoW_Module()
+#
+##create dictionary with classifications
+#with open('classification.csv','r') as classes:
+#    reader = csv.reader(classes,delimiter=';', quotechar='|')
+#    for row in reader:
+#        file_class['./files/'+row[0]+'.pdf'] = row[2]
+#
+#for file in os.listdir("./files"):
+#    if file.endswith(".pdf"):
+##        print(file)
+#        filenames.append('./files/'+file)
+#        
+#counter = 0
+#bag = dict()
+#for i in range(len(filenames)):
+#    if file_class[filenames[i]] == 'True':
+#        continue
+#    if(counter == 100):
+#        break
+#    counter += 1
+#    print(str(counter)+'/'+str(len(filenames)))
+#    fp = open(filenames[i],'r')
+#    txt = str(bow.get_text(fp))
+#    txt = bow.sanitize(txt)
+#    fp.close()
+#    bag = bow.create_bag(txt,bag)
+#    #except:
+#     #   print("Error opening file: "+filenames[i])
+#
+#c = 0    
+#save = open('lib','w')
+#for key in bag:
+#    c += bag[key]
+#for key in bag:
+#    bag[key] = float(bag[key])/float(c)
+#save.write(bag)
+#save.close()
     

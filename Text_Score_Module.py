@@ -16,7 +16,10 @@ using pdfminer.
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
-from pdfminer.pdfpage import PDFPage
+try:
+    from pdfminer.pdfparser import PDFPage
+except ImportError:
+    from pdfminer.pdfpage import PDFPage
 try:
     from cStringIO import StringIO
 except ImportError:
@@ -27,8 +30,16 @@ import scipy.stats as s
 class TextScore:
     
     def __init__(self):
+        """
+        mean, std are statistical values.
+        x is the last extracted string
+        :return:
+        """
         self.mean = 9109.10716436
         self.std = 22201.1272775
+        self.x = ''
+        self.len_list = list()
+        self.error = False
         return
         
     # @param pages number of pages to transform to text starting from the first
@@ -59,13 +70,14 @@ class TextScore:
             return text
         except:
             #print('troubleshooting')
+            self.error = True
             return 'ERROR'
     #@param filepointer a pointer to a pdf file
     #@param metapointer a pointer to the metadata, this parameter is not used
     #@return float64 [0 1] probabiliy for the pdf  beeing copyright protected     
     def get_function(self,filepointer, metapointer = None):
-        x = len(self.convert_pdf_to_txt(filepointer,-1))
-        return s.norm.pdf(self.mean,self.std,x)
+        self.x = self.convert_pdf_to_txt(filepointer,-1)
+        return s.norm.pdf(self.mean,self.std,len(self.x))
 
 
     def train(self,filenames,classes,metalist = None):
@@ -76,16 +88,16 @@ class TextScore:
         This function replaces the parameters of the gaussian pdf by new ones based on the files and classifications
         provided by the files
         """
-        len_list = list()
-        for i in range(len(filenames)):
-            if(classes[i] == 'True'):
-                continue
-            with open('files/'+filenames[i],'r') as fp:
-                try:
-                    len_list.append(len(self.convert_pdf_to_txt(fp)))
-                except:
+        if(len(self.len_list) <= 1):
+            for i in range(len(filenames)):
+                if(classes[i] == 'True'):
                     continue
-            self.mean = np.mean(len_list)
-            self.std = np.std(len_list)
+                with open(filenames[i],'r') as fp:
+                    try:
+                        self.len_list.append(len(self.convert_pdf_to_txt(fp)))
+                    except:
+                        continue
+        self.mean = np.mean(self.len_list)
+        self.std = np.std(self.len_list)
 
         return

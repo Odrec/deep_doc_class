@@ -10,7 +10,10 @@ This module calculates the data per page for a given pdf
 
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 import os
-from pdfminer.pdfpage import PDFPage
+try:
+    from pdfminer.pdfparser import PDFPage
+except ImportError:
+    from pdfminer.pdfpage import PDFPage
 
 class Page_Size_Module:
 

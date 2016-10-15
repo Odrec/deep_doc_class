@@ -10,6 +10,8 @@ Simple neural net for the prototype
 from keras.models import Sequential
 from keras.layers import Dense, Activation
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.cross_validation import StratifiedKFold
+import numpy as np
 import keras
 import MetaHandler
 
@@ -46,20 +48,37 @@ class NN:
         #just two classes. Stochastic gradient descent
         self.model.compile(loss="binary_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
         
+        self.model.save("NN.model")        
         
         
     #@params train_data a list of numpy arrays. Each array is an input
     #@params train_labels a numpy array with the target data
     def trainNN(self, train_data, train_labels):
-        self.model.fit(train_data, train_labels, nb_epoch=50, batch_size=128)
-        self.model.save("NN.model")
-        gnb = MultinomialNB()
-        gnb.fit(train_data,train_labels)
         
-        print(gnb.coef_)
-        print(gnb.score(train_data, train_labels))
-        print(gnb.predict(train_data))
-        MetaHandler.result_html_confusiontable('conf_table.html',train_labels,gnb.predict(train_data))
+        seed=7
+        np.random.seed(seed)
+        
+        cvscores = []
+        
+        kfold = StratifiedKFold(train_labels, n_folds=10, shuffle=True, random_state=seed)
+
+        for train, test in kfold:
+
+            self.model.fit(train_data[train], train_labels[train], nb_epoch=50, batch_size=128)
+            
+            # evaluate the model
+            scores = self.model.evaluate(train_data[test], train_labels[test], verbose=0)
+            print("%s: %.2f%%" % (self.model.metrics_names[1], scores[1]*100))
+            cvscores.append(scores[1] * 100)
+#            gnb = MultinomialNB()
+#            gnb.fit(train_data[train],train_labels[train])
+#            
+#            print(gnb.coef_)
+#            print(gnb.score(train_data, train_labels))
+#            print(gnb.predict(train_data))
+            #MetaHandler.result_html_confusiontable('conf_table.html',train_labels,gnb.predict(train_data))
+        
+        print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
         
     #@params test_data a list of numpy arrays. Each array is an input
     #@params test_labels a numpy array with the target data
