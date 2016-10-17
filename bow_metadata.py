@@ -11,6 +11,7 @@ nltk.data.path.append('nltk_data')  # setting path to files
 __author__ = 'tkgroot'
 
 class Bow_Metadata():
+    # @ToDo: validation of_type. Now all possible variation can be entered
     def __init__(self, of_type=None, punishment_factor=None):
         if of_type is None: raise ValueError("Bow Metadata can´t be of type: None")
         else: self.of_type=of_type
@@ -169,5 +170,7 @@ class Bow_Metadata():
 # test=Bow_Metadata('description')
 # test.make_bow()
 # test.bow_author()
-# print(test.get_function("./files/b4825922d723e3e794ddd3036b635420.pdf"))
-# print(test.get_function("./files/1c1be8ef8986f848d28280c3444233c7.pdf"))
+# print(test.get_function("./files/b4825922d723e3e794ddd3036b635420.pdf")) #strangely positive in metadatatest
+# print(test.get_function("./files/3d705ef7bee2de856e545e352a5325ec.pdf")) #positive
+# print(test.get_function("./files/189d4bc5378e11884eddeecec9304588.pdf")) #negative
+# print(test.get_function("./files/1c1be8ef8986f848d28280c3444233c7.pdf")) #positive only in metadata
