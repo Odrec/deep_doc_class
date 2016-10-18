@@ -1,0 +1,63 @@
+Probeklausur zu Mathematische Methoden der Physik 1
+
+Universit(cid:127)at Osnabr(cid:127)uck, Fachbereich Physik, Prof. Dr. Ph. Maa(cid:25)
+
+Aufgabe 42: Vektoren
+
+Gegeben sind die Vektoren ~a =
+
+Blatt 14
+
+1CA und ~b =
+
+0B@ (cid:0)1
+
+4
+
+1CA.
+
+1
+
+0B@ 1
+
+2
+
+2
+
+a) Berechnen Sie den Winkel zwischen den Vektoren ~a und ~b.
+b) Berechnen Sie das Vektorprodukt ~a (cid:2) ~b und bestimmen Sie den Fl(cid:127)acheninhalt des von
+
+den Vektoren ~a und ~b aufgespannten Parallelogramms.
+
+c) Wie lautet die Gleichung der Geraden, die durch den Punkt A = (1; 2; 2) geht und
+senkrecht auf der von den Punkten A, B = ((cid:0)1; 4; 1) und C = (1; 5;(cid:0)1) gebildeten
+Ebene steht? Geben Sie die Geradengleichung in der Form ~r((cid:21)) = ~r0 + (cid:21)~r1 an.
+
+Aufgabe 43: Totales Di(cid:11)erenzial, implizite Funktionen und Taylor-Entwicklung
+Gegeben sei die Funktion f (x; y) = (y + 1)e2xy (cid:0) sin(x).
+
+a) Bilden Sie das totale Di(cid:11)erenzial df (x; y).
+
+b) Eine Funktion y = y(x) soll durch die Gleichung f (x; y) = 0 implizit de(cid:12)niert werden.
+
+Bestimmen Sie die Ableitung y
+
+= dy
+
+dx durch implizite Di(cid:11)erenziation.
+
+0
+
+c) Entwickeln Sie die Funktion f (x; y) an der Stelle (x0; y0) = ( (cid:25)
+
+2 ; 0) bis zur 2. Ordnung.
+
+Aufgabe 44: Integration
+
+a) Ein Drehk(cid:127)orper habe eine zur x-Achse rotationssymmetrische Form (siehe Skizze), wobei
+die Funktion f (x) = 1
+x die obere (y > 0) Schnittkurve mit der xy-Ebene beschreibt. Die
+Werte von x liegen zwischen a und b (a (cid:20) x (cid:20) b). Berechnen Sie das Volumen des
+Drehk(cid:127)orpers.
+
+

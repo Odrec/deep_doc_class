@@ -1,0 +1,281 @@
+Mathematik f¨ur Wirtschaftswissenschaftler
+L¨osungen der Aufgaben f¨ur die Tutorien
+
+Serie IV
+
+10.11.–13.11.2014
+
+Aufgabe 1: Die Laufzeit betr¨agt m Quartale: m ist zu bestimmen. Der auf einen Monat
+bezogene Aufzinsungsfaktor ist q0 = 1 +
+= 1, 004. Da die Ratenzahlungen am Ende
+eines jeden Quartals erfolgen, muss der Aufzinsungsfaktor ebenfalls auf den Zeitraum ei-
+nes Quartals umgerechnet werden; wir erhalten daher q = q3
+0 = 1, 0043, da w¨ahrend eines
+Quartals die Schulden jeweils nach jedem der drei Monate verzinst werden und die Zinsen
+zus¨atzlich zu den Schulden addiert werden.
+
+4, 8
+1200
+
+Mit K0 = 300 000 erhalten wir also die Diﬀerenzengleichung
+
+Kn+1 = q · Kn − r f¨ur alle n ∈ IN0.
+
+r = qm(cid:0)K0 − r
+
+q − 1
+
+(cid:1) +
+
+⇐⇒
+
+r
+q − 1
+
+und daher
+
+qm(cid:0) r
+
+q − 1
+
+Km = 0 = qmK0 − qm − 1
+(cid:1) =
+q − 1
+
+⇐⇒
+
+− K0
+
+Wir l¨osen diese Gleichung nach m auf und erhalten
+
+qm =
+
+r
+q − 1
+
+(cid:16) r
+(cid:16) r
+(cid:18)
+
+q − 1
+
+(cid:17)
+
+1
+
+q − 1
+
+− K0
+
+m ln(q) = ln
+
+m = − ln
+
+1 − K0(q − 1)
+(cid:16)
+1 − K0(q − 1)
+
+r
+
+.
+
+1
+
+r
+
+1 − K0(q − 1)
+(cid:16)
+
+= − ln
+
+(cid:17) =
+(cid:19)
+(cid:17) 1
+
+r
+
+.
+
+ln(q)
+
+(cid:17)
+
+also
+
+1 − K0(q − 1)
+
+r
+
+Durch Einsetzen der Zahlenwerte ergibt sich m = 37, 45. Demnach ist nach 38 Quartalen
+das Darlehen getilgt.
+
+Aufgabe 2: Die Sparphase vom 1.1.2002 bis zum 31.12.2021 dauert m = 20 Jahre. Danach
+bleibt das Geld ohne weitere Ratenzahlungen auf dem Konto und wird lediglich nach verzinst.
+F¨ur beide Phasen ist q = 1, 04 der Aufzinsungsfaktor.
+
+Sparphase: Mit der unbekannten Monatsrate r zum Monatsanfang erhalten wir die ﬁktive
+Jahressparrate
+
+R = 12 · r + (12 + 11 + . . . + 1)
+Die Sparphase wird durch die Diﬀerenzengleichung
+
+4 · r
+100 · 12
+
+= 12, 26 r .
+
+beschieben. Es folgt
+
+Kn+1 = qKn + R mit K0 = 0
+
+K20 =
+
+1, 0416 − 1
+
+0, 04
+
+12, 26 r .
+
+Ruhephase: In dieser 3 Jahre langen Ruhephase fallen nach jeweils einem Jahr Zinsen f¨ur
+das angesparte Kapital an; diese werden dann jeweils dem Kapital gutgeschrieben. Demnach
+gilt K23 = 1.043K20. Wegen der Forderung K23 = 200 000 EU R erhalten wir
+
+200 000 = 1, 043 K20 = 1, 043 (1, 0420 − 1)12, 26
+
+0, 04
+
+r .
+
+Es folgt
+
+r =
+
+200 000 · 0, 04
+
+1, 043(1, 0420 − 1)12, 26
+
+= 487, 02 EU R .
+
+Aufgabe 3: i) F¨ur alle x ∈ IR gilt
+−2(ex + e−x)
+(ex + e−x)
+
+−2 =
+
+ex − 2e−x
+ex + e−x = f (x) <
+
+ex + e−x
+ex + e−x = 1 .
+
+<
+
+ii) Es seien jetzt y ∈ ] − 2, 1[ und x ∈ IR mit y = f (x). Es gilt mit der Abk¨urzung z = ex
+
+y = f (x) ⇐⇒ y =
+
+ex − 2e−x
+ex + e−x =
+
+e−x(e2x − 2)
+e−x(e2x + 1)
+
+z2 − 2
+z2 + 1
+
+=
+
+⇐⇒
+
+y(z2 + 1)
+
+z2
+
+=
+
+=
+
+z2 − 2 ⇐⇒ yz2 + y = z2 − 2 ⇐⇒ z2(y − 1) = −y − 2 ⇐⇒
+
+y + 2
+y − 1
+
+⇐⇒ z = +
+
+y + 2
+y − 2
+
+( wegen z = ex > 0 ) ⇐⇒
+
+(cid:114)
+(cid:17)
+
+(cid:16)(cid:114)
+
+x
+
+=
+
+ln(z) = ln
+
+y + 2
+y − 1
+
+=
+
+1
+2
+
+Die Funktion g : ] − 2, 1[→ IR deﬁniert durch g(y) =
+von f .
+
+1
+2
+
+Aufgabe 4: Es gilt
+
+ln(cid:0) y + 2
+
+y − 1
+
+(cid:1) .
+ln(cid:0) y + 2
+
+y − 1
+
+(cid:1) ist die Umkehrfunktion
+
+pn+2 = 0.23 +
+
+0.49 · b(1 − pn)
+bpn + b(1 − pn)
+
+= 0.23 + 0.49 − 0.49pn = 0.72 − 0.49pn
+
+f¨ur alle n ∈ IN0.
+Es gilt mit den Bezeichnungen der L¨osungstabelle c1 = 0, c2 = −0, 49, c0 = 0, 72. Damit
+2, und zn = 72(cid:14)
+π(cid:14)
+erhalten wir die allgemeine L¨osung mit den Konstanten q =
+0, 49 = 0, 7, t = arccos(0) =
+
+√
+
+149
+
+pn = a · 0, 7n cos(cid:0) nπ
+
+(cid:1) + A · 0, 7n sin(cid:0) nπ
+
+(cid:1) + 72(cid:14)
+
+2
+
+2
+
+149
+
+f¨ur alle n ∈ IN0 und (aus m¨oglicherweise gegebenen Anfangswerten zu bestimmenden) Kon-
+stanten a, A ∈ IR.
+
+

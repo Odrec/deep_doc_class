@@ -1,0 +1,96 @@
+Informatik C
+
+Grundlagen der Technischen Informatik
+
+Prof. Dr.-Ing. Werner Brockmann, M. Sc. Jonas Schneider
+
+¨Ubung 0 - Dualzahlen und Codes
+
+Abgabe am Di, 21.10.2014, 14:00 Uhr in der Vorlesung
+
+Die Abgabe des 0. ¨Ubungsblattes ist freiwillig
+
+Vermerken Sie auf Ihren Abgaben immer gut erkennbar Ihre Namen und den Namen
+Ihres Tutors!
+
+Aufgabe 0.1:
+
+Bin¨ar-, Oktal- und Hexadezimalzahlen
+
+(25 P)
+
+Vervollst¨andigen Sie die folgende Tabelle.
+
+Dezimal
+141.28125
+
+Bin¨ar
+
+Oktal
+
+Hexadezimal
+
+10110101.101
+
+204.5
+
+13B.C
+
+Aufgabe 0.2:
+
+Bin¨are Addition & Subtraktion
+
+(10 P)
+
+a) F¨uhren Sie die bin¨are Addition der Dezimalzahlen 13 und 14 durch.
+
+b) F¨uhren Sie die bin¨are Subtraktion der Dezimalzahlen 25 und 19 (25-19) durch.
+
+Aufgabe 0.3:
+
+Bin¨are Multiplikation
+
+(15 P)
+
+F¨uhren Sie die bin¨are Multiplikation der Dezimalzahlen 101 und 27 durch.
+
+Aufgabe 0.4:
+
+Bin¨are Division mit Zweier-Komplement
+
+(20 P)
+
+Dividieren Sie bin¨ar 54610 : 4210 durch schrittweise stellengewichtete Subtraktion unter Be-
+nutzung des Zweier-Komplementes.
+
+Aufgabe 0.5:
+
+BCD-Addition
+
+(20 P)
+
+Wandeln Sie die Dezimalzahlen 591 und 437 in BCD-Code um und bestimmen Sie, welche
+Schritte n¨otig sind, um die beiden BCD-Zahlen zu addieren.
+
+Aufgabe 0.6:
+
+ASCII-Code
+
+(10 P)
+
+Decodieren Sie folgenden ASCII-Code:
+
+1000111 1000101 1010011 1000011 1001000 1000001 1000110 1000110 1010100 0100001
+
+Zusatzaufgabe 0.7:
+
+Codeumwandlung
+
+(freiwillig)
+
+Wie l¨asst sich eine Ziﬀer aus dem BCD-Code einfach in den ASCII-Code ¨uberf¨uhren?
+Was w¨are bei einer mehrstelligen BCD-Zahl zu tun?
+
+1
+
+

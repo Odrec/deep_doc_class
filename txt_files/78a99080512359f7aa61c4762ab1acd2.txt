@@ -1,0 +1,190 @@
+Dr. Timo Gnambs 
+
+Universität Osnabrück 
+
+WS 2014/15 
+
+Übung »Skalieren, Testen und Entscheiden« 
+
+Lösungen zu Aufgabenblatt 5 
+
+ 
+
+ 
+
+Der R-Code für alle Aufgaben findet sich in der Datei „Lösungen zu Aufgabenblatt 5.R“. 
+
+Aufgabe 
+
+1 
+
+ 
+
+(a)  Welche Modellparameter weisen Response Error / Latent Distance Modelle auf? 
+
+(b) Wie lautet die Itemfunktion derartiger Modelle? (Versuchen Sie das formale Messmodell zu 
+
+formulieren) 
+
+ 
+
+Lösung 
+
+1 
+
+ 
+
+(a)  Response Error / Latent Distance Modelle weisen im Vergleich zu Guttman-Modellen zwei 
+
+zusätzliche Parameter auf: Ratewahrscheinlichkeit γi und Irrtumswahrscheinlichkeit βi. Dies 
+
+führt dazu, dass die Lösungswahrscheinlichkeit unterhalb der Sprungstelle nicht exakt gleich 
+
+0 
+
+ist  sondern  die  Konstante  γi  (Ratewahrscheinlichkeit)  aufweist.  Zudem 
+
+ist  die 
+
+Lösungswahrscheinlichkeit  oberhalb  der  Sprungstelle  nicht  gleich  1  sondern  um  βi 
+
+(Irrtumswahrscheinlichkeit)  geringer.  Response  Error  (Latent  Distance)  Modelle  weisen 
+
+somit  vier  Modellparameter  auf:  die  Personenfähigkeit  θ,  die  Itemschwierigkeit  σ,  die 
+
+Ratewahrscheinlichkeit γ, und die Irrtumswahrscheinlichkeit β. 
+
+(b) Die Itemfunktion lautet (vgl. dazu auch Aufgabe 4 in Aufgabenblatt 3): 
+
+p X
+
+(
+
+)
+
+vi
+
+γ
+
+wenn 
+
+
+= 
+1 β wenn 
+
+
+−
+
+i
+
+i
+
+θ σ
+i
+
+≤
+
+v
+
+θ σ
+i
+
+>
+
+v
+
+ 
+
+mit Xvi = Antwort der Person v auf Item i, θv = Fähigkeit Person v, σi = Schwierigkeit von 
+
+Item  i,  γi  =  Ratewahrscheinlichkeit  bei  Item  i,  und  βi  =  Irrtumswahrscheinlichkeit  bei 
+
+Item i 
+
+ 
+
+ 
+
+ 
+
+- 1 - 
+
+Dr. Timo Gnambs 
+
+Universität Osnabrück 
+
+WS 2014/15 
+
+Aufgabe 
+
+2 
+
+ 
+
+Welche Monotonieannahmen macht das Mokken-Modell? Inwiefern treffen diese auch auf das 
+
+Guttman-Modell zu? 
+
+ 
+
+Lösung 
+
+2 
+
+ 
+
+Das Mokken-Modell geht davon aus, dass alle Pbn mit einer höheren Fähigkeit (= latenten 
+
+Merkmalsausprägung) eine Lösungs- bzw. Zustimmungswahrscheinlichkeit für ein Item 
+
+aufweisen, die mindestens so groß oder sogar größer ist als für Personen mit einer geringeren 
+
+Fähigkeit (einfache Monotoniebedingung). Zudem sollen die Reihenfolgen der 
+
+Itemschwierigkeiten (= Lösungs- bzw. Zustimmungswahrscheinlichkeiten) für Personen mit 
+
+unterschiedlicher Fähigkeit gleich sein (doppelte Monotoniebedingung). 
+
+ 
+
+Das Guttman-Modell impliziert dieselben Monotonieannahmen. Allerdings stellt es ein 
+
+deterministisches Testmodell dar, d.h. die Wahrscheinlichkeit ein Item zu lösen kann immer nur 
+
+0% oder 100% betragen – andere Lösungswahrscheinlichkeiten sind nicht möglich. Daher stellt 
+
+es einen Spezialfall eines Mokken-Modells mit strengeren Annahmen dar. Alle Annahmen des 
+
+Mokken-Modells (also auch die beiden Monotoniebedingungen) treffen gleichermaßen auf das 
+
+Guttman-Modell zu. 
+
+ 
+
+ 
+
+Aufgabe 
+
+3 
+
+ 
+
+In der letzten Übung (Aufgabe 2) hatten Sie für die Guttman-Skala zur Erfassung der musischen 
+
+Erziehung den Homogenitätskoeffizienten Hij für die Items 5 und 6 berechnet. Kontrollieren Sie 
+
+Ihre Berechnung mithilfe des mokken-Pakets (die Antworten der Pbn finden sich in der R-Datei 
+
+„Musische Erziehung.Rdata“in Stud.IP). Kommen Sie zu demselben Ergebnis? 
+
+ 
+
+ 
+
+ 
+
+ 
+
+- 2 - 
+
+

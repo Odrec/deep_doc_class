@@ -1,0 +1,245 @@
+NeuroImage 106 (2015) 144–153
+
+Contents lists available at ScienceDirect
+
+NeuroImage
+
+j ou r n a l h o m e p a ge : w ww . e l s e v i e r . c o m / l oc a te / yn i mg
+
+Effective connectivity within the frontoparietal control network
+differentiates cognitive control and working memory
+Ian H. Harding a,b,⁎, Murat Yücel b, Ben J. Harrison a, Christos Pantelis a, Michael Breakspear c,d
+a Melbourne Neuropsychiatry Centre, Department of Psychiatry, University of Melbourne & Melbourne Health, Melbourne, Australia
+b Monash Clinical and Imaging Neuroscience, School of Psychological Sciences, Monash University, Melbourne, Australia
+c QIMR Berghofer Medical Research Institute, Brisbane, QLD, Australia
+d Metro North Mental Health Service, Brisbane, QLD, Australia
+
+a r t i c l e
+
+i n f o
+
+a b s t r a c t
+
+Article history:
+Accepted 18 November 2014
+Available online 22 November 2014
+
+Keywords:
+Cognitive control
+Working memory
+Dynamic causal modeling
+Frontoparietal
+Effective connectivity
+
+Cognitive control and working memory rely upon a common fronto-parietal network that includes the inferior
+frontal junction (IFJ), dorsolateral prefrontal cortex (dlPFC), pre-supplementary motor area/dorsal anterior cin-
+gulate cortex (pSMA/dACC), and intraparietal sulcus (IPS). This network is able to ﬂexibly adapt its function in
+response to changing behavioral goals, mediating a wide range of cognitive demands. Here we apply dynamic
+causal modeling to functional magnetic resonance imaging data to characterize task-related alterations in the
+strength of network interactions across distinct cognitive processes. Evidence in favor of task-related connectivity
+dynamics was accrued across a very large space of possible network structures. Cognitive control and working
+memory demands were manipulated using a factorial combination of the multi-source interference task and a
+verbal 2-back working memory task, respectively. Both were found to alter the sensitivity of the IFJ to perceptual
+information, and to increase IFJ-to-pSMA/dACC connectivity. In contrast, increased connectivity from the pSMA/
+dACC to the IPS, as well as from the dlPFC to the IFJ, was uniquely driven by cognitive control demands; a task-
+induced negative inﬂuence of the dlPFC on the pSMA/dACC was speciﬁc to working memory demands. These re-
+sults reﬂect a system of both shared and unique context-dependent dynamics within the fronto-parietal net-
+work. Mechanisms supporting cognitive engagement, response selection, and action evaluation may be shared
+across cognitive domains, while dynamic updating of task and context representations within this network are
+potentially speciﬁc to changing demands on cognitive control.
+
+© 2014 Elsevier Inc. All rights reserved.
+
+Introduction
+
+Cognitive control (CC) and working memory (WM) rely on neural
+processing within a common set of brain regions encompassing
+dorsomedial prefrontal, lateral prefrontal, and superior parietal regions
+of the human cortex (Fedorenko et al., 2013; Harding et al., in press;
+Niendam et al., 2012). This so-called “frontoparietal network” (FPN)
+represents a ﬂexible, superordinate system supporting adaptive behav-
+ioral control across a broad range of cognitive demands (Cocchi et al.,
+2013; Cole et al., 2013; Dosenbach et al., 2008). The inherent ﬂexibility
+of this system has been linked to rapid adjustments in neuronal re-
+sponse proﬁles as a function of changing behavioral goals or contextual
+cues (Kadohisa et al., 2013; Stokes et al., 2013). However, the neural
+mechanisms underlying such dynamic representation of unique behav-
+ioral goals and encoding of diverse contextual information remain
+unclear.
+
+⁎ Corresponding author at: School of Psychological Sciences, Building 17, Clayton
+
+Campus, Monash University, VIC 3800, Australia. Fax: +61 3 9348 0469.
+
+E-mail address: ian.harding@monash.edu (I.H. Harding).
+
+http://dx.doi.org/10.1016/j.neuroimage.2014.11.039
+1053-8119/© 2014 Elsevier Inc. All rights reserved.
+
+Functional neuroimaging research has established that activity in
+the regions forming the FPN demonstrate temporal coherence
+(i.e., functional connectivity) in human subjects at rest (Cole and
+Schneider, 2007; Power et al., 2011). The magnitude of these intrinsic
+inter-regional interactions has additionally been shown to selectively
+change in response to behavioral demands, as demonstrated most clear-
+ly in studies exploring the dynamic interplay between the dorsomedial
+and dorsolateral prefrontal cortices during cognitive control tasks
+(Carter and van Veen, 2007; Prado et al., 2011; Stephan et al., 2003).
+
+More recently, research has moved beyond the study of FPN
+connectivity using pair-wise correlations in brain signals, employing tech-
+niques that are sensitive to network-wide and directional interdepen-
+dencies (i.e., effective connectivity; Friston, 2011). Dynamic causal
+modeling (DCM) provides one means to infer neural interactions and
+their task-dependent changes within a brain network (Friston et al.,
+2003). In contrast to alternative effective connectivity modeling ap-
+proaches (e.g., Structural Equation Modeling), DCM models dynamics at
+the level of neuronal populations, as opposed to the measured hemody-
+namics, providing greater construct validity to derived models of network
+function (Daunizeau et al., 2011). Moreover, DCM does not depend on the
+temporal precedence of one regional time series relative to another (as in
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+145
+
+multivariate autoregressive models); reliance on temporal lag may be
+problematic to inference using fMRI data (Friston et al., 2013).
+
+Studies employing DCM to explore the FPN have identiﬁed sparse
+task-related connectivity dynamics on top of a foundation of widespread
+task-invariant “baseline” interactions, largely mirroring correlation-
+based work (Cieslik et al., 2011; Fan et al., 2008; Schlosser et al., 2008;
+Wang et al., 2010). In particular, Schlosser et al. (2010) report modula-
+tions of medial–lateral prefrontal interactions during performance of a
+Stroop task, while WM load has been associated with the transient gat-
+ing of, primarily, fronto-parietal connectivity (Deserno et al., 2012; Dima
+et al., 2014; Ma et al., 2012; Schmidt et al., 2014). These ﬁndings point to
+a well-integrated network whose interactions are selectively weighted
+in response to current behavioral demands, reﬂecting a potential mech-
+anism of adaptive coding within the FPN (Duncan, 2001). However, dis-
+similar experimental protocols and deﬁnitions of the FPN across
+available investigations preclude a more uniﬁed account of the response
+of this network across different cognitive domains.
+
+Here we utilize DCM to investigate task-related changes in the FPN
+as CC and WM demands are systematically co-varied within a single
+fMRI task. Task-related dynamics of the interactions between the visual
+system and the FPN are ﬁrst explored to assess the shared versus unique
+mechanisms underlying the selective engagement of higher-order cog-
+nitive processes. Context-dependent plasticity between the major re-
+gions of the FPN as a function of CC or WM demands is then assessed
+to distinguish their relative contributions to underlying connectivity
+dynamics.
+
+Materials & methods
+
+Participants
+
+Twenty-ﬁve right-handed healthy adults (14 males; mean age ±
+s.d. = 25.5 ± 4.4 years) with no history of psychiatric or neurologic ill-
+ness were recruited from the general community through advertise-
+ments in local electronic media. Exclusion criteria included a history
+of psychiatric or neurologic illness, substance dependence, signiﬁcant
+head injury, current use of psychotropic medications, or MRI incompat-
+ibility (e.g., cardiac pace-maker), as assessed using the Structured
+Clinical Interview for DSM-IV Axis-I Disorders (First et al., 2002) and
+self-report. Participants had completed an average of 14.8 ± 2.2 years
+of education and had a mean estimated full-scale IQ of 110 ± 10
+(Wechsler Abbreviated Scale of Intelligence; Wechsler, 1999). This par-
+ticipant sample is the same as that reported in Harding et al. (in press).
+The local research and ethics committee approved study conduct and all
+participants provided written informed consent.
+
+Behavioral paradigm
+
+CC and WM demands were respectively manipulated using the
+multi-source interference task (MSIT; Bush and Shin, 2006) and a verbal
+n-back working memory task (n = 0, 1, or 2; Baddeley, 2003), com-
+bined in a 2 × 3 factorial design. This design allowed for orthogonal ma-
+nipulation of CC and WM demands within a common task context. As
+illustrated in Fig. 1, and described in full detail elsewhere (Harding
+et al., in press), participants were presented with sets of three numbers
+ranging in value from ‘0’ to ‘3’, with one number distinct to the other
+two (e.g., ‘2 1 1’), and instructed to identify the distinct number by but-
+ton press (‘1’ = index; ‘2’ = middle; ‘3’ = ring ﬁngers). CC demands
+were manipulated by altering the composition of the number-sets:
+“congruent” trials featured the distinct number paired with zeros,
+which do not represent a response alternative, and spatially aligned
+with the corresponding response ﬁnger; conversely, “incongruent” tri-
+als featured both ‘Flanker’ interference introduced by distracter num-
+bers (Eriksen and Eriksen, 1974) and ‘Simon’ conﬂict based on spatial
+incongruence between the target digit and the corresponding response
+ﬁnger (Simon and Berbaum, 1990). Working memory demands were
+
+introduced by requiring participants to withhold a response if the cur-
+rent ‘distinct’ number was the same as that presented ‘n’ trials previous-
+ly (where n represents the working memory load: 1 or 2). Two trials in
+which this condition was met were included in each working memory
+block.
+
+The six conditions were presented in alternating blocks containing 8,
+9, or 10 stimuli for 0-Back, 1-Back, and 2-Back blocks, respectively. The
+ﬁrst stimulus in 1-Back blocks, and ﬁrst two in 2-Back blocks were
+discarded during analysis to account for ‘ramping-up’ of WM load.
+Each stimulus was presented for 2 s and separated by variable inter-
+stimulus intervals of between 3.6 s and 7.2 s. Four blocks of each condi-
+tion were presented across the experiment, each preceded by an
+instruction screen indicating the n of the subsequent block.
+
+fMRI data acquisition
+
+Images were obtained on a 3-Tesla Siemens Trio scanner equipped
+with a 32-channel head coil. Each functional run consisted of 354
+whole-brain gradient-echo echo-planar (GRE-EPI) images composed
+of 36 interleaved, contiguous axial slices (TR = 2400 ms; TE = 32 ms;
+ﬂip angle = 90°; slice thickness = 3 mm; in-plane resolution
+(matrix) = 3.3 × 3.3 mm (64 × 64); FOV = 210 × 210 mm). A high-
+resolution T1-weighted MPRAGE structural image was also acquired
+(176 sagittal slices; 0.9 mm isotropic voxels; TR = 1900 ms; TE =
+2.24 ms; FOV = 230 × 230 mm; matrix = 256 × 256).
+
+fMRI data analysis
+
+Analysis was performed using SPM8 software (Functional Imaging
+Laboratory, UCL, UK). Structural (T1-weighted) images from each indi-
+vidual were ﬁrst coregistered to the functional data and normalized to
+standard space (DARTEL; Ashburner, 2007). The estimated nonlinear
+transformation parameters were subsequently applied to the (rigid-
+body) motion-corrected functional data. The normalized data were in-
+terpolated to 2 mm isotropic voxels and spatially smoothed using a
+Gaussian kernel of 8 mm FWHM.
+
+For each individual, the six task conditions were coded as individual
+predictors in a general linear model, alongside nuisance regressors ac-
+counting for error trials, instruction periods, and working memory
+ramping effects (i.e., ﬁrst trial in 1-back blocks and ﬁrst two trials in 2-
+back blocks). Each stimulus event was coded as a delta (i.e., stick) func-
+tion and convolved with a canonical hemodynamic response function.
+Data were high-pass ﬁltered (1/128 s), and temporal autocorrelations
+were estimated using a ﬁrst-order autoregression model [AR(1)]. Pa-
+rameters corresponding to each predictor were estimated using a re-
+stricted maximum likelihood approach. Contrast images were created
+among the six conditions of interest to infer the main positive effects
+of CC and WM (voxel-level family-wise error corrected p b0.05) within
+a repeated-measures ANOVA framework.
+
+Dynamic causal modeling
+
+Deterministic, bilinear dynamic causal models (Friston et al., 2003)
+were used to assess large-scale neural interdependencies within the
+FPN using differential state equations comprised of three sets/matrices
+of parameters: A, context-invariant intrinsic inﬂuences between
+regions; B, context-dependent modulations of the intrinsic connections
+as a function of CC and WM demands; and C, exogenous visual inputs.
+Models of neuronal dynamics were combined with a hemodynamic
+model that describes the relationship between the (hidden) neuronal
+activity of the system and the measured fMRI signal (Friston et al.,
+2000). The parameters of the integrated model were estimated using
+a Bayesian inversion algorithm (Friston et al., 2003), as implemented
+in the DCM10 toolbox (Functional Imaging Laboratory, UCL, UK).
+
+We tested a broad variety of models (see below). Estimates of the
+posterior evidence of these models were derived during Bayesian
+
+

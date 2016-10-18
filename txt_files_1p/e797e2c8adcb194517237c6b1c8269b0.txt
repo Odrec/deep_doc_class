@@ -1,0 +1,62 @@
+ 
+
+Wintersemester 2014/2015
+
+Übungen zu
+
+ Differentialgleichungen
+
+Blatt 11
+
+Prof. Dr. Heinz Spindler 
+Dr. Sean Tilson
+
+Abgabe bis Dienstag, den 20. 1. 2015, 10.00 Uhr 
+
+ 
+
+(cid:1) Exercise 1
+
+Let  f , g, h be solutions of the homogeneous second order linear differential equation 
+y'' (cid:1) p(cid:2)x(cid:3) y' (cid:1) q(cid:2)x(cid:3) y (cid:4) 0. Show that 
+
+det
+
+f '
+
+f ''
+f
+g g' g''
+h h' h''
+
+(cid:4) 0
+
+(cid:1) Exercise 2
+
+Show that if p (cid:5) 0 and 0 (cid:6) e (cid:6) 1, then r (cid:2)1 (cid:1) e cos Θ(cid:3) (cid:4) p is the equation in polar 
+coordinates of an ellipse. Take a (cid:4)
+
+ and x (cid:4) r cos Θ (cid:1) e a, y (cid:4) r sin Θ 
+
+p
+1(cid:8)e2
+
+p
+
+1(cid:8)e2 , b (cid:4)
+
+and show that   x2
+
+a2 (cid:1)
+
+y2
+b2 (cid:4) 1.
+
+(cid:1) Exercise 3
+
+Take s (cid:4) 1
+r
+
+ as in the lecture notes ((cid:9)Bewegung im Zentralfeld, central force problem) 
+
+

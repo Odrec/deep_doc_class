@@ -1,0 +1,44 @@
+Genetik Grundpraktikum 
+
+Grundmodul Genetik I., Polymerasekettenreaktion: 
+ 
+Betreuer: Stefan Walter 
+ 
+1. Versuchsinhalt 
+ 
+Polymerasekettenreaktion, Agarosegelektrophorese 
+ 
+Zwei verschiedene Plasmide werden als Template für eine Polymerasekettenreaktion 
+eingesetzt. Die Produkte sollen gelelektrophoretisch aufgetrennt und ihre Größen bestimmt 
+werden.  
+ 
+ 
+ 
+2. Grundlagen 
+ 
+PCR wurde 1984 zuerst beschrieben und hat seitdem vielfache Anwendung gefunden (Kary 
+Mullis, Nobelpreis 1993). 
+Die breite Verwendung dieser Methode basiert auf der Einfachheit ihrer Durchführung. Mit 
+dieser Methode können kleine DNA Fragmente in relativ kurzer Zeit vermehrt werden. 
+Die Grundlage der Methode ist die Verwendung einer hitzestabilen DNA-Polymerase, z. B. 
+der  Taq Polymerase aus Thermus aquaticus. Dieses thermophile Eubakterium lebt bei 75-
+80°C in heißen Quellen (z. B. Yellowstone Nationalpark). Die hieraus isolierte DNA-
+Polymerase ist sehr stabil gegen hohe Temperaturen (95°C). Die Halbwertszeiten (50 % 
+Restaktivität) betragen 130 min bei 92,5 °C, 40 min bei 95°C und 5 min bei 97,5°C. 
+ 
+ 
+Im ersten Schritt der PCR (Denaturierung) werden die komplementären DNA Stränge bei 
+94°C getrennt. Im zweiten Schritt (Annealing) wird die Probe auf eine Temperatur abgekühlt 
+(42 – 68°C), um die Anlagerung (Hybridisierung) von kleinen synthetischen 
+Oligonukleotiden („Primer“, 15 – 30 Nukleotide lang) an das zu amplifizierende Fragment 
+(Zielsequenz oder Matrizensequenz) zu ermöglichen.  
+Im dritten Schritt (Extension) wird die Temperatur auf 72°C erhöht und die Polymerase fügt 
+Nukleotide an die 3‘-Enden der Primer und vervollständigt so einen neuen komplementären 
+DNA Strang des Zielmoleküls. Diese drei Schritte entsprechen einem sogenannten Zyklus 
+(Cycle). Diese Zyklen werden typischerweise zwischen 20 – 50 mal wiederholt. Theoretisch 
+entspricht dies ab dem 3. Zyklus einer exponentiellen DNA Vermehrung,  also etwa 1010 fach 
+nach 34 Zyklen (2n , n= Nummer des Zyklus). 
+
+Genetik Grundpraktikum 
+
+

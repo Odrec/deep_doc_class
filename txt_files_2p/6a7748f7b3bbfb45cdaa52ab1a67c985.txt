@@ -1,0 +1,59 @@
+Gase und Flüssigkeiten – Hydrostatik und Hydrodynamik
+
+In 1000m Wassertiefe ist es dunkel.
+Unterscheiden sich die Tiefseewesen von den 
+Artgenossen an der Oberfläche allein wegen des 
+fehlenden Lichts?
+
+Auch herrscht dort hundertfacher 
+Atmosphärendruck.
+Spielt auch der Druck bei den Entwicklung der 
+Spezies eine Rolle?
+
+Wir hatten in der letzten Sitzung die Freie Energie in der Form  F =E−T S  geschrieben. Dabei 
+haben wir bei E einen Term  pV , Druck mal Volumen, weggelassen. Nimmt man  pV  hinzu, so wird
+die „Freie Energie“ „Gibbs'sche Freie Energie“ genannt,  G=E+ p V −T S , mehr davon später.  pV  
+spielt bei Atmosphärendruck in der Biologie praktisch keine Rolle.
+Bei hohen Drücken in der Tiefsee ist das aber anders, ein Forschungsgebiet.
+
+Wenn sich ein System, etwa ein Protein bei einer Reaktion ausdehnt, ΔV > 0, so hat die Änderung
+ΔG  der (Gibbs'schen) Freien Energie einen Anteil  p ΔV . Dieser fällt nun in 1000m Tiefe 100 Mal
+größer aus, was gerade darüber entscheiden könnte, ob eine Bioreaktion im Fisch abläuft oder nicht.
+Grundlagen: Was ist Druck, warum steigt der Druck in der Tiefe, warum ist  p ΔV  eine Energie?
+
+Druck
+
+Der lokale Druck p ist definiert als die Kraft  F , die senkrecht 
+auf eine sehr kleine Oberfläche  ΔA  wirkt, dividiert durch den 
+Betrag dieser Fläche:
+p= F
+
+ΔA , SI-Einheit: Pa (Pascal) = N/m2
+
+Lokale, punktuell geltende Größe, das heißt,  ΔA  kann gegen 
+null gehen.
+
+Kurz: Druck ist Kraft pro Flächeneinheit.
+
+510  Pa  
+
+Andere Einheiten:
+1 bar = 
+Für Luftdruck: 1023 hPa (Hektopascal). Statt 102.3 kPa!, weil 
+man früher 1023 mbar gesagt hat. Durch Pa kommt das „antike“
+Hekto wieder!
+Atmosphäre: 1atm = 1013mbar, Normal-Luftdruck
+1 Torr = 1 mmHg = 1/760 atm, in der Medizin sehr verbreitet 
+(Blutdruck!).
+mmHg = Millimeter Quecksilbersäule (Hintergrund später)
+mmWs = Millimeter Wassersäule
+
+Die schwarzen Punkte stellen 
+Gas- oder Flüssigkeitsteilchen 
+dar, welche die Kraft F auf das 
+Flächenelement  ΔA  ausüben.
+
+Die Natur dieser Kraft wird auf 
+den nächsten Seiten diskutiert.
+
+

@@ -1,0 +1,260 @@
+R E V I E W
+
+G E N E T I C S
+
+Replicating nucleosomes
+
+Srinivas Ramachandran1,2 and Steven Henikoff1,2*
+
+2015 © The Authors, some rights reserved;
+
+exclusive licensee American Association for
+
+the Advancement of Science. Distributed
+
+under a Creative Commons Attribution
+
+NonCommercial License 4.0 (CC BY-NC).
+
+10.1126/sciadv.1500587
+
+Eukaryotic replication disrupts each nucleosome as the fork passes, followed by reassembly of disrupted nu-
+cleosomes and incorporation of newly synthesized histones into nucleosomes in the daughter genomes. In this
+review, we examine this process of replication-coupled nucleosome assembly to understand how characteristic
+steady-state nucleosome landscapes are attained. Recent studies have begun to elucidate mechanisms involved in
+histone transfer during replication and maturation of the nucleosome landscape after disruption by replication. A
+fuller understanding of replication-coupled nucleosome assembly will be needed to explain how epigenetic
+information is replicated at every cell division.
+
+INTRODUCTION
+
+Animals and plants develop from a single-celled zygote to a multicel-
+lular organism with scores of different cell types that perform a multitude
+of unique functions and yet carry the same genome. This diversity in
+cellular identity during development and adulthood is achieved by dif-
+ferential gene activation and repression in distinct cell types. Gene ex-
+pression is influenced by nucleosomes, which mediate accessibility and
+hence all biochemical activities on the genome. The overall inhibitory
+role of nucleosomes on genomic access is modulated by posttransla-
+tional modifications of histones in the nucleosome and the replace-
+ment of canonical histones in the nucleosome by histone variants.
+Thus, the pattern of differential gene expression that contributes to
+cellular identity is reflected in features that differentiate nucleosomes
+along the genome, the “nucleosome landscape.” The major histone
+modifications classically associated with repressed chromatin domains
+include H3K9 trimethylation (H3K9me3), which is found in consti-
+tutive heterochromatin, and H3K27 trimethylation (H3K27me3), which
+is found in facultative heterochromatin. The major histone variants
+include H3.3, H2A.Z, and the centromeric H3 variant, cenH3. In meta-
+zoans, H3.3 and H2A.Z are broadly distributed throughout the ge-
+nome, but are differentially enriched at particular regions including
+actively transcribed regions, whereas cenH3 is rarely found outside
+of centromeres.
+
+The nucleosome landscape of different cell types is established in
+large part through processes that disrupt and replace nucleosomes,
+mainly transcription, chromatin remodeling, and replication. Exam-
+ples of transcription and remodeling establishing the cell type–specific
+nucleosome landscape include widespread transcription at enhancers
+(1), remodeling (2), and nucleosome turnover (3) at Polycomb response
+elements (PREs) in Drosophila, which are sites required for maintain-
+ing cell type–specific transcriptional programs through several cell divi-
+sions during development.
+
+For eukaryotic development to proceed, the nucleosome landscape
+must be reproduced by default in daughter cells after DNA replication,
+which proceeds bidirectionally from origins bound by the origin recog-
+nition complex. The replication fork consists minimally of the mini-
+chromosome maintenance (MCM) helicase and DNA polymerase,
+both of which are loaded at replication origins at the beginning of re-
+plication, and the replicative processivity clamp, PCNA. The MCM
+complex forms a channel around a single strand of DNA (the leading
+
+1Howard Hughes Medical Institute, Seattle, WA 98109, USA. 2Basic Sciences Division,
+Fred Hutchinson Cancer Research Center, Seattle, WA 98109, USA.
+*Corresponding author. E-mail: steveh@fhcrc.org
+
+strand of replication) and unwinds DNA in front of it (4). An MCM
+channel translocating on single-stranded DNA will result in the com-
+plete disruption of the nucleosome. Thus, over a few seconds of passage
+of the helicase and the replication machinery behind, there is massive
+disruption that dissociates the prereplication nucleosome landscape.
+
+After the new strand of DNA is synthesized by the polymerase, as-
+sembly factors reconstitute old nucleosomes and assemble new nucleo-
+somes behind the replication fork. Because there is a doubling of genetic
+material during replication, cells require double the amount of the ge-
+nome packing material, namely, the histones. To provide sufficient
+material at S phase, there is massive synthesis of the four canonical
+histones, which form the nucleosome core that wraps 147 base pairs
+(bp) of DNA, and the linker histone H1, which cements an additional
+~20-bp DNA wrap to the nucleosome surface. Newly replicated chro-
+matin must incorporate both the preexisting histones disrupted by the
+replication fork and the newly synthesized histones. The main ques-
+tions for elucidating the inheritance of nucleosome features during rep-
+lication are as follows: How are old and new histones incorporated
+during replication-coupled nucleosome assembly? How is the nucleo-
+some landscape altered during replication?
+
+Stable inheritance of epigenetic information through replication is
+exemplified by cytosine methylation at CG dinucleotides in most
+animals and plants. At CG dinucleotides, methylation is symmetric,
+that is, the cytosine on both strands is methylated. At replication, each
+daughter CG dinucleotide inherits one of the two symmetrically methy-
+lated cytosines from the parental strand, base-paired to an unmethylated
+cytosine on the newly synthesized strand, that is, a hemimethylated CG
+dinucleotide. The Dnmt1 methyltransferase recognizes the hemi-
+methylated CG dinucleotide and methylates the cytosine on the newly
+synthesized strand. Thus, the methylation status of parental CG dinu-
+cleotides is inherited by the daughter chromosomes through the hemi-
+methylated state. In this review, we describe examples where
+nucleosomes are “replicated” on the daughter chromosomes analogous
+to cytosine methylation at CG dinucleotides, with the goal of delineat-
+ing the underlying mechanisms.
+
+NUCLEOSOME INHERITANCE THROUGH REPLICATION
+
+To understand how nucleosomes are inherited through replication, we
+need to first consider the constraints posed by the structure of the nu-
+cleosome. The nucleosome core consists of the centrally located H3-H4
+tetramer flanked on either side by an H2A-H2B dimer. Nucleosomal
+DNA enters at the “proximal” H2A-H2B dimer and exits at the “distal”
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+1 of 9
+
+R E V I E W
+
+H2A-H2B dimer. The twofold mirror symmetry of the nucleosome
+means that half the length of nucleosomal DNA (73 bp) wraps one-half
+of the histone octamer consisting of one each of the H2A-H2B and
+H3-H4 dimers. DNA-histone contacts at the entry and exit sites of the
+nucleosome are the most labile, and these contacts can be lost during
+normal thermal fluctuations, resulting in transient unwrapping of nu-
+cleosomes (5). This results in H2A-H2B dimers being more susceptible
+to loss and replacement than H3-H4. In contrast, the central location of
+the H3-H4 tetramer is expected to restrain its turnover, which in exper-
+imental measurements is markedly lower than that of H2A-H2B (6).
+Tracking nucleosome inheritance then becomes primarily a problem
+of tracking the H3-H4 tetramer through replication.
+
+The nucleosome landscape as defined by the identity of H3 and H4
+would be marked by H3 variants H3.1/H3.2 or H3.3 and posttransla-
+tional modifications on H3 and H4. Posttranslational modifications
+associated with active chromatin are predominantly found on H3.3
+compared to H3.1/H3.2, whereas modifications that are part of the
+machinery involved in repression (H3K27me and H3K9me) are pre-
+dominantly found on H3.1/H3.2 (7). Inheritance of a silenced region
+through replication would in some scenarios involve inheritance of
+H3-bearing modifications associated with repression at the same ge-
+nomic location. Alternatively, the silenced region could be set up afresh
+each time after replication. Of the several modes of nucleosome assembly,
+replication-coupled assembly is distinguished by the fact that the canon-
+ical H3 (H3.1 and H3.2, hereinafter referred to as H3) is incorporated
+into chromatin only through this pathway (8). Replication-independent
+pathways of nucleosome assembly strictly incorporate only H3.3 (8).
+
+Given alternative pathways and mechanisms to maintain the nu-
+cleosome landscape, we need to determine what is the relative signif-
+icance of replication-coupled assembly in maintaining the nucleosome
+landscape through inheritance. Whereas histones are essential, disrup-
+tion of replication-coupled assembly is not lethal in the budding yeast,
+Saccharomyces cerevisiae, indicating that nucleosome assembly path-
+ways are largely redundant in this organism. However, disruption of
+replication-coupled assembly results in derepression of silent loci (9–12).
+A requirement for replication-coupled assembly to maintain silencing
+is also seen in the worm, Caenorhabditis elegans, where deletion of 11
+residues in the H3 C terminus in 1 of 24 H3 genes results in the loss of
+asymmetry in the identities of a neuron pair (13). Deletion of these re-
+sidues in H3 is predicted to destabilize the nucleosome due to loss of
+contacts that stabilize the H3-H4 tetramer interface. The H3 C-terminal
+deletion is phenocopied by disruption of replication-coupled assembly,
+which suggests that impaired replication-coupled assembly can affect
+developmental decisions. Here, similar to the situation in budding yeast,
+inefficient assembly or assembly of destabilized nucleosomes (with mu-
+tant H3) results in replication-independent assembly pathways filling
+in the “holes” in the nucleosome landscape with H3.3 after replication.
+The replication-coupled assembly pathway is also essential for devel-
+opment in plants (Arabidopsis thaliana) (14, 15) and in flies (Drosophila
+melanogaster) (16, 17), even in the presence of alternate nucleosome assem-
+bly pathways. In cultured human cells, disruption of replication-coupled
+assembly results in increased replication-independent incorporation of
+H3.3 (18). Because old H3.3 is enriched in histone modifications that
+are primarily associated with active chromatin, it is possible that
+spurious incorporation of H3.3 could disrupt silencing at inactive
+regions.
+
+The importance of replication-coupled nucleosome assembly in
+maintaining silent chromatin states in yeast and for proper devel-
+
+opment in worms, flies, and plants suggests a role for this pathway in
+epigenetic inheritance. Direct evidence for the essentiality of the main-
+tenance of histone variants through replication is exemplified by cenH3,
+the histone variant that replaces H3 at centromeres. Loss of cenH3 main-
+tenance through replication can result in loss of centromere identity (19).
+
+TRACKING CHROMATIN INHERITANCE
+THROUGH REPLICATION
+
+Nucleosome inheritance would involve not only the transfer of old
+histone variants and posttranslational modifications to the newly syn-
+thesized chromosomes but also preservation of the genomic location
+of the old histones. In principle, we can track nucleosome inheritance
+at multiple levels: in bulk, at the level of genomes or chromosomes, at
+the level of large chromatin domains (~10 kb), and at the single nu-
+cleosome level. Currently, we have solid evidence for chromatin inher-
+itance only at the bulk level.
+
+Several methods have been developed recently to temporally track
+proteins associated with replication forks by isolating newly replicated
+chromatin labeled with nucleotide analogs (20–22). Combining the
+isolation of newly replicated chromatin with differential labeling of
+old and new histones with stable isotopes has enabled the quantifica-
+tion of the extent of transfer of old, modified histones and histone
+variants at the replication fork (23). This method also has high tem-
+poral resolution, enabling pulse-chase experiments to track the matu-
+ration of newly assembled chromatin over time. In cultured human
+cells, this method showed that only a small fraction of old H2A.Z is
+retained in the newly replicated chromatin and that H2A.Z is incor-
+porated much later than fork progression, indicating little or no inher-
+itance of H2A.Z during replication. H3.3 levels in newly replicated
+chromatin are the same as in bulk chromatin, indicating fast incorpo-
+ration of both old and new H3.3 into the newly replicated chromatin.
+Thus, with respect to histone variants, H3.3 levels drop twofold immedi-
+ately after replication, indicative of random segregation to both daughter
+chromosomes, whereas H2A.Z levels drop much more, indicating loss of
+H2A.Z in the daughter chromosomes. With respect to histone mod-
+ifications, the newly replicated chromatin has half the levels of
+H3K27me3 and H3K9me3 compared to total H3. This could be
+attributed to equal distribution of old H3K27me3 and H3K9me3 be-
+tween the daughter chromosomes, as evidenced by the lack of these
+methylation marks in newly synthesized H3.
+
+H3K27me3 is deposited by the Polycomb repressive complex 2
+(PRC2) (24, 25). H3K27me3 is part of the machinery that maintains
+transcriptional repression of large chromatin domains over successive
+cell divisions (26). In the embryonic germ line of worm hermaphro-
+dites, H3K27me3 is maintained by PRC2 on maternal chromosomes
+but remains absent from previously unmodified paternal chromosomes
+(27). Conversely, in a PRC2 null embryo, H3K27me3 containing pater-
+nal chromosomes retain the modified nucleosomes during twofold
+dilution at each cell division. This provides direct evidence of post-
+translationally modified histone inheritance through successive cell
+divisions (27).
+
+Spatially restricted inheritance of old histones has also been ob-
+served in germline stem cells in fly testes (28). These stem cells are at-
+tached to a cellular structure called the hub, and the daughter cells that
+go on to differentiate can be clearly distinguished from the stem cells
+spatially. When the fates of old and newly synthesized histones were
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+2 of 9
+
+

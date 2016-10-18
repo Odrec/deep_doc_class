@@ -1,0 +1,53 @@
+Table of Contents
+
+Homework  9  ......................................................................................................................   1
+Task 1: Reverse correlation ..................................................................................................  1
+Task 2: Fourier Transform ....................................................................................................  3
+
+Homework 9
+
+% group: jschepers(954389), mrichts(955002)
+
+% We would be happy to receive some correction.
+clear all;
+close all;
+
+Task 1: Reverse correlation
+
+kernel = [1 -2 1; -2 4 -2; 1 -2 1]/6; % compute kernel
+% compute if neurons spike, Gaussian noise stimuli for each time step and
+% the activation
+[spikes, stimuli, proj] = revcor(100,kernel);
+
+% reshape stimuli for which the neuron spiked
+stim_spike = stimuli(spikes,:);
+sta = 0;
+for k=1:length(stim_spike)
+stim_rs = reshape(stim_spike(k,:),3,3);
+sta = sta + stim_rs; % compute STA
+end
+
+f = figure('name','Kernel and STA'); % plot kernel and STA
+set(f, 'Position', [300, 150, 880, 400]);
+subplot(1,2,1);
+imagesc(kernel);
+title('Kernel');
+colormap('gray');
+subplot(1,2,2);
+imagesc(sta);
+title('STA');
+
+figure();
+subplot(4,1,1);
+for i=1:9
+    plot(1:100,stimuli(:,i)); % plot stimuli
+    hold on;
+end
+title('Inputs');
+
+subplot(4,1,2);
+overall_input = sum(stimuli,2); % plot overall input
+
+1
+
+

@@ -1,0 +1,207 @@
+The Plant Journal (2013)
+
+doi: 10.1111/tpj.12348
+
+TCP3 interacts with R2R3-MYB proteins, promotes ﬂavonoid
+biosynthesis and negatively regulates the auxin response in
+Arabidopsis thaliana
+
+Shutian Li* and Sabine Zachgo*
+Department of Botany, Osnabru¨ ck University, Barbarastr. 11, 49076 Osnabru¨ ck, Germany
+
+Received 2 September 2013; revised 16 September 2013; accepted 1 October 2013.
+*For correspondence (e-mails: zachgo@biologie.uni-osnabrueck.de or shutian.li@biologie.uni-osnabrueck.de).
+
+SUMMARY
+
+TCP proteins belong to the plant-speciﬁc bHLH transcription factor family, and function as key regulators of
+diverse developmental processes. Functional redundancy amongst family members and post-transcriptional
+down-regulation by miRJAW of several TCP genes complicate their functional characterization. Here, we
+explore the role of TCP3 by analyzing transgenic plants expressing miRJAW-resistant mTCP3 and dominant-
+negative TCP3SRDX. Seedlings and seeds of mTCP3 plants were found to hyper-accumulate ﬂavonols, an-
+thocyanins and proanthocyanidins, whereas levels of proanthocyanidins were slightly reduced in TCP3SRDX
+plants. R2R3-MYB proteins control not only early ﬂavonoid biosynthetic steps but also activate late ﬂavo-
+noid biosynthetic genes by forming ternary R2R3-MYB/bHLH/WD40 (MBW) complexes. TCP3 interacted in
+yeast with R2R3-MYB proteins, which was further conﬁrmed in planta using BiFC experiments. Yeast three-
+hybrid assays revealed that TCP3 signiﬁcantly strengthened the transcriptional activation capacity of R2R3-
+MYBs bound by the bHLH protein TT8. Transcriptome analysis of mTCP3 and TCP3SRDX plants supported a
+role for TCP3 in enhancing ﬂavonoid biosynthesis. Moreover, several auxin-related developmental abnor-
+malities were observed in mTCP3 plants. Transcriptome data coupled with studies of an auxin response
+reporter and auxin efﬂux carriers showed that TCP3 negatively modulates the auxin response, probably by
+compromising auxin transport capacity. Genetic experiments revealed that the chalcone synthase mutant
+tt4-11 lacking ﬂavonoid biosynthesis abrogated the auxin-related defects caused by mTCP3. Together, these
+data suggest that TCP3 interactions with R2R3-MYBs lead to enhanced ﬂavonoid production, which further
+negatively modulates the auxin response.
+
+Keywords: TCP3, ﬂavonoids, auxin response, R2R3-MYBs, MBW complexes, transparent testa 4.
+
+INTRODUCTION
+
+The plant-speciﬁc TCP family of transcription factors is
+named after the ﬁrst three identiﬁed members: TEOSINTE
+BRANCHED1 in maize (Zea mays), CYCLOIDEA (CYC) in
+Antirrhinum majus, and PROLIFERATING CELL NUCLEAR
+ANTIGEN FACTOR in rice (Oryza sativa). Repeated gene
+duplications during land plant evolution have enlarged this
+family of bHLH-containing DNA-binding proteins (Martın-
+Trillo and Cubas, 2010). The Arabidopsis thaliana genome
+encodes 24 TCP transcription factors. Based on the struc-
+ture of their conserved TCP domains, 13 TCP proteins have
+been identiﬁed as members of class I (TCP-P) and have
+been suggested to function as positive regulators of cell
+proliferation (Kosugi and Ohashi, 2002). The other 11 TCP
+proteins belong to class II (TCP-C). CYC controls ﬂoral sym-
+metry formation in Antirrhinum (Luo et al., 1996), and its
+Arabidopsis ortholog TCP1 participates in brassinosteroid
+
+© 2013 The Authors
+The Plant Journal © 2013 John Wiley & Sons Ltd
+
+two class
+
+biosynthesis and modulates longitudinal elongation of
+leaves and stems (Guo et al., 2010; Koyama et al., 2010b).
+The products of
+II/TCP-C genes, TCP12
+(BRANCHED2) and TCP18 (BRANCHED1), operate as inte-
+grators of branching signals within axillary buds (Aguilar-
+Martinez et al., 2007), and TCP12 has also been shown to
+repress the ﬂoral transition of axillary meristems (Niwa
+et al., 2013). Generation of miRJAW-resistant versions and
+dominant-negative forms of TCPs have revealed function-
+ally redundant roles for miRJAW-targeted CINCINNATA
+(CIN)-TCP genes (TCP2-4, TCP10 and TCP24) in the control
+of
+leaf morphogenesis and senescence by modulating
+jasmonate biosynthesis (Palatnik et al., 2003; Schommer
+et al., 2008). Class II CIN-TCPs have also been shown to
+regulate the morphogenesis of shoot lateral organs as well
+as correct petal and stamen development (Palatnik et al.,
+
+1
+
+2 Shutian Li and Sabine Zachgo
+
+2003; Koyama et al., 2007, 2010a; Nag et al., 2009) and
+defense responses (Sugio et al., 2011).
+
+Arabidopsis plants synthesize three classes of ﬂavo-
+noids, including colorless to pale yellow ﬂavonols, red to
+purple anthocyanins, and colorless proanthocyanidins,
+which become brown upon oxidative reactions. Flavonoid
+biosynthesis is largely regulated at
+the transcriptional
+level, and starts with the general phenylpropanoid metabo-
+lism involving phenylalanine ammonia lyase, cinnamate
+4-hydroxylase and 4-coumarate:CoA ligase (4CL). Molecu-
+lar dissection of ﬂavonoid metabolism reveals that chal-
+cone synthase (CHS), chalcone isomerase (CHI), ﬂavanone
+3-hydroxylase (F3H) and ﬂavanone 3′-hydroxylase are
+encoded by TRANSPARENT TESTA4 (TT4), TT5, TT6 and
+TT7, respectively. Sequential reactions catalyzed by these
+enzymes produce dihydroﬂavonols, the last common inter-
+mediates in the biosynthesis of ﬂavonoid end-products
+(Figure S1). Dihydroﬂavonols are then oxidized to ﬂavonols
+by ﬂavonol synthase (FLS), such as quercetins and ka-
+empferols. These early steps of the ﬂavonoid biosynthetic
+pathway are controlled by the R2R3-MYB proteins MYB11,
+MYB12 and MYB111, which activate the early biosynthetic
+genes CHS, CHI, F3H and FLS1 (Mehrtens et al., 2005;
+Stracke et al., 2007) (Figure S1). Dihydroﬂavonol 4-reduc-
+tase (DFR), encoded by the late biosynthetic gene TT3,
+reduces dihydroﬂavonols to leucoanthocyanidins, and
+downstream enzymes participate in the production of an-
+thocyanins and proanthocyanidins (Nesi et al., 2002; Ap-
+(Figure S1). Three classes of
+pelhagen et al., 2011)
+regulatory proteins,
+including R2R3-MYBs, bHLHs and
+TRANSPARENT TESTA GLABROUS1 (TTG1/WD40), form
+the ternary transcriptional
+complex MYB-bHLH-WD40
+(MBW), which activates several late ﬂavonoid biosynthetic
+genes (Nesi et al., 2002; Appelhagen et al., 2011). Anthocy-
+anin biosynthesis is regulated by an MBW complex con-
+sisting of TTG1, one R2R3-MYB protein (PRODUCTION OF
+ANTHOCYANIN PIGMENT1 (PAP1), PAP2, MYB113 or
+MYB114), as well as one of the bHLH proteins TT8, GLA-
+BROUS3 (GL3) or ENHANCER OF GLABRA3 (EGL3) (Gou
+et al., 2011). Seed-speciﬁc activation of proanthocyanidin
+production requires activity of an MBW complex compris-
+ing the R2R3-MYB protein TT2, TT8 and TTG1 (Nesi et al.,
+2002; Ramsay and Glover, 2005). Several transcription fac-
+tors, such as the miR156-targeted SQUAMOSA PRO-
+MOTER BINDING PROTEIN9 (SPL9),
+the WIP-type zinc
+ﬁnger protein TT1 and the R3-MYB protein MYBL2, have
+been shown to interact with R2R3-MYBs or bHLHs to regu-
+late ﬂavonoid biosynthesis, possibly by affecting the stabil-
+ity of
+the ternary MBW complex (Dubos et al., 2008;
+Appelhagen et al., 2011; Gou et al., 2011).
+
+Endogenous ﬂavonols are considered to be natural regu-
+lators of cellular auxin efﬂux and polar auxin transport
+(Murphy et al., 2000; Peer et al., 2004; Lazar and Goodman,
+2006; Santelia et al., 2008; Petrasek and Friml, 2009).
+
+Transcriptome analysis of young seedlings expressing the
+inducible dominant-negative version of TCP3 (TCP3SRDX)
+revealed an altered auxin response during Arabidopsis leaf
+differentiation, such as up-regulation of PIN-FORMED1
+(PIN1), PIN5 and PIN6 as well as down-regulation of PIN3,
+PIN4 and PIN7 (Koyama et al., 2010a). In this work, trans-
+genic plants expressing miRJAW-resistant mTCP3 and
+dominant-negative TCP3SRDX were characterized through-
+out the plant life cycle, and newly observed phenotypes
+were further analyzed. Our results indicate that TCP3 stim-
+ulates ﬂavonoid biosynthesis and negatively modulates
+the auxin response, thereby causing a plethora of auxin-
+related developmental defects.
+
+RESULTS
+
+Phenotypic analysis of transgenic plants expressing
+mTCP3 and TCP3SRDX
+
+Arabidopsis thaliana plants over-expressing TCP3 (p35S::
+TCP3) as well as knockout mutants of TCP3 show no visible
+phenotypic alterations as a consequence of miRJAW-
+guided cleavage of TCP mRNAs and the functional redun-
+dancy of TCP transcription factors (Table S1) (Koyama
+et al., 2007). To reveal the developmental role of TCP3, the
+miRJAW-resistant version mTCP3 and the dominant-nega-
+tive repressor TCP3SRDX were engineered by synonymous
+substitutions in the miRJAW target site and fusion of the
+EAR motif repression domain to the TCP3 C-terminus,
+respectively (Hiratsu et al. 2003; Palatnik et al., 2003). In
+agreement with previous reports (Koyama et al., 2007),
+24.2% of the p35S::mTCP3 plants formed fused cotyledons,
+leading to early death within 4 days after germination
+(Table S1), and 95.7% of the p35S::TCP3SRDX plants devel-
+oped wavy leaves and irregular cotyledon vasculature
+(Table S2). Additionally, the majority of the surviving trans-
+genic plants (Tables S1 and S2) showed phenotypes that
+were not observed previously, supporting further functions
+for TCP3 during plant development. Wild-type and p35S::
+TCP3SRDX transgenic plants formed a spiral phyllotaxy,
+with an angle of 137.5° between the leaf initials (Figure 1a,
+c). In contrast, 65.0% of the p35S::mTCP3 plants showed
+decussate phyllotaxy, whereby each pair of leaves formed
+a 90° angle with the previous pair (Figure 1b). In contrast
+to the regular vascular patterns observed in wild-type coty-
+ledons (Figure 1d), p35S::mTCP3 and p35S::TCP3SRDX
+transgenic cotyledons developed irregular vascular xylem
+strands (Figure 1e,f). Vascular breaks were also observed
+for the ﬁrst true leaf expressing p35S::mTCP3 (Figure S2e).
+p35S::mTCP3 plants showed reduced primary root growth
+and formed fewer lateral roots (Figure 1h). By contrast,
+p35S::TCP3SRDX plants (Figure 1i) developed more lateral
+roots than wild-type plants (Figure 1g). Furthermore, trans-
+genic plants expressing p35S::mTCP3 displayed a bushy
+stature with reduced apical dominance, and developed a
+
+© 2013 The Authors
+The Plant Journal © 2013 John Wiley & Sons Ltd, The Plant Journal, (2013), doi: 10.1111/tpj.12348
+
+

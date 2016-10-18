@@ -1,0 +1,32 @@
+Homework_01
+
+% ribaumann, sbonk, thothi, fziegler
+% 956066, _, _, 936257
+
+close all
+clear
+
+load('Extracellular_Recording_trials_1');
+% sum APs over time per orientation and trial (= firing rates, here,
+% because time = 1s)
+dSum = sum(d,3);
+% average over all trials (= mean firing rates)
+dAvg = mean(dSum,2);
+% plot the 8 firing rates against their corresponding orientation x
+figure;
+hold on;
+x = linspace(0,157.5,8);
+plot(x, dAvg, 'r*');
+title('Tuning Curve');
+xlabel('orientation');
+ylabel('firing fate');
+% compute the best fit and plot it against a fine-grained x
+coef = polyfit(x, dAvg', 2);
+x100 = linspace(0,157.5,100);
+fit = polyval(coef, x100);
+plot(x100, fit, 'b-');
+hold off;
+
+1
+
+

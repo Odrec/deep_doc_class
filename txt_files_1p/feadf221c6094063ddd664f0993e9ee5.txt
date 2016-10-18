@@ -1,0 +1,70 @@
+Quantitative Methoden (Master) 
+Universität Osnabrück, Fachbereich Kultur- und Sozialwissenschaften 
+Sommersemester 2016 
+Golsch 
+ 
+
+Übung 6 - Regression mit Dummy Variablen  
+
+ 
+
+Aufgabe 
+
+Verwenden Sie für diese Aufgabe die Datei soep2011_extended.dta, ein Datenauszug aus 
+dem Sozio-ökwonomischen Panel. Es soll um  die Frage gehen, ob  sich  das  Einkommen  
+von Männern und Frauen signifikant unterscheidet. 
+ 
+1.  Testen  Sie  mit  einem  T-Test,  ob  sich  die  Einkommen  von  Männern  und  Frauen 
+
+signifikant unterscheiden. 
+
+ 
+
+2.  Berechnen  Sie  nun  eine  Regression  mit  der  abhängigen  Variablen  Einkommen  und 
+
+einer unabhängigen Variablen, und zwar dem Geschlecht der Befragungsperson.  
+a.  Da  es  sich  hierbei  um  eine  kategoriale  Variable  handelt,  müssen  Sie  eine 
+
+geeignete Dummy-Variable bilden.  
+
+b.  Schätzen Sie das bivariate Regressionsmodell. 
+c.  Vergleichen Sie die Ergebnisse Ihres Regressionsmodells mit dem vorherigen T-
+
+Test. Welche Statistiken sind identisch? 
+
+ 
+
+3.  Männer  und  Frauen  unterscheiden  sich  in  der  Regel  bezüglich  ihrer  Ausbildung 
+(bilzeit)  und  ihrer  Beschäftigungsdauer  beim  jetzigen  Arbeitgeber  (erwzeit).  Um 
+sicherzustellen,  dass  die 
+in  den  beiden  vorherigen  Fragen  berechneten 
+Einkommensunterschiede  zwischen  Männern  und  Frauen  nicht  durch  Bildungs- 
+und/oder  Senioritätsunterschiede  bedingt  sind,  sollen  Sie  in  einem  multiplen 
+Regressionsmodell diese Variablen (bilzeit und erwzeit) kontrollieren.  
+a.  Führen Sie eine entsprechende Regressionsschätzung durch. 
+b.  Vergleichen  Sie  den  geschätzten  Einkommensunterschied  zwischen  Männern 
+und  Frauen  aus  dem  letzten  (multiplen)  Regressionsmodell  mit  dem  zuvor  in 
+Frage 2 berechneten Einkommensunterschied: In  welcher Richtung hat er sich 
+verändert und warum?  
+
+ 
+
+4.  Erzeugen  Sie  eine  Ergebnistabelle,  die  die  Ergebnisse  der  Regressionsmodelle  aus 
+
+Teilaufgabe 2b und Teilaufgabe 3a widergibt. 
+ 
+
+5.  Ergänzen  Sie  das  Regressionsmodell  um  weitere  unabhängige  Variablen.  Einige 
+Variablen in dem Datensatz sind kategorial. Wenn Sie diese Variablen kontrollieren 
+möchten, müssen Sie zuvor Dummys bilden.    
+ 
+
+6.  Wie  können  wir  testen,  ob  sich  die  Bildungsrendite  signifikant  zwischen  Männern 
+und Frauen unterscheidet? Überlegen Sie, wie man ein geeignetes Regressionsmodell 
+spezifizieren kann. 
+
+1 
+
+ 
+
+

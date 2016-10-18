@@ -1,0 +1,233 @@
+Cellular Microbiology (2007) 9(7), 1834–1850
+
+doi:10.1111/j.1462-5822.2007.00919.x
+First published online 26 March 2007
+
+Salmonella Pathogenicity Island 4 encodes a giant
+non-ﬁmbrial adhesin and the cognate type 1
+secretion system
+
+Roman G. Gerlach,1 Daniela Jäckel,1
+Bärbel Stecher,2 Carolin Wagner,1 Andrei Lupas,3
+Wolf-Dietrich Hardt2 and Michael Hensel1*
+1Institut für Klinische Mikrobiologie, Immunologie und
+Hygiene, FAU Erlangen-Nürnberg, D-91054 Erlangen,
+Germany.
+2Institut für Mikrobiologie, ETH Zürich, Switzerland.
+3MPI für Entwicklungsbiologie, Tübingen, Germany.
+
+Summary
+
+Pathogenicity Islands play a major
+role in the
+pathogenesis of infections by Salmonella enterica.
+The molecular function of Salmonella Pathogenicity
+Island 4 (SPI4) is largely unknown, but recent work
+indicated a role of SPI4 for Salmonella pathogenesis
+in certain animal models. We analysed the virulence
+functions of SPI4 and observed that SPI4 is contrib-
+uting to intestinal inﬂammation in a mouse model. On
+a cellular level, SPI4 mediates adhesion to epithelial
+cells. We demonstrate the function of SPI4-encoded
+proteins as a type I secretion system (T1SS) and
+identify SiiE as the substrate protein of the T1SS.
+SiiE is secreted into the culture medium but med-
+iates contact-dependent adhesion to epithelial cell
+surfaces. SiiE is a very large non-ﬁmbrial adhesin
+of 600 kDa and consists of 53 repeats of Ig domains.
+Our study describes the ﬁrst T1SS-secreted protein
+that functions as a non-ﬁmbrial adhesin in binding
+to eukaryotic cells. The SPI4-encoded T1SS and
+SiiE might functionally resemble the type I ﬁmbrial
+adhesins.
+
+Introduction
+
+The acquisition of virulence functions encoded by genes
+within pathogenicity islands is considered as the major
+driving force in the evolution of the gastrointestinal patho-
+gen Salmonella enterica (Groisman and Ochman, 1997;
+Marcus et al., 2000). Two hallmarks of the pathogenesis
+of Salmonella infections are directly linked to genes
+within Salmonella Pathogenicity Islands (SPI) (reviewed
+
+Received 24 November, 2006; revised 19 January, 2007; accepted 22
+January, 2007. *For correspondence. E-mail hensel@mikrobio.med.
+uni-erlangen.de; Tel. (+49) 9131 8523640; Fax (+49) 9131 8522531.
+
+© 2007 The Authors
+Journal compilation © 2007 Blackwell Publishing Ltd
+
+in Hensel, 2004). SPI1 encodes a type III secretion
+system (T3SS) for the translocation of effector proteins by
+extracellular Salmonella into eukaryotic host cells. This
+translocation ultimately triggers invasion, i.e. the uptake of
+Salmonella by non-phagocytic cells (Schlumberger and
+Hardt, 2006). The SPI1-T3SS is also involved in the elici-
+tation of gastrointestinal
+inﬂammation (for reviews, see
+Wallis and Galyov, 2000; Hapfelmeier and Hardt, 2005).
+S. enterica is a facultative intracellular pathogen that
+survives and proliferates within a membrane-bound
+organelle within host cells termed ‘Salmonella-containing
+vacuole’ or SCV. The function of a second T3SS encoded
+by SPI2 is required for ablating host cell defence mecha-
+nisms and for the modiﬁcation of host cell
+transport
+processes (Kuhle and Hensel, 2004). Genes encoding
+effector proteins are located within SPI1 and SPI2, but
+are also present on various loci scattered over
+the
+chromosome. Two genes, each encoding an effector for
+the SPI1-T3SS and SPI2-T3SS, are located within SPI5.
+SPI3 genes contribute to the intracellular phenotype by
+encoding a high-affinity Mg2+ uptake system required to
+adapt to the nutritional limitations in the SCV. There is also
+evidence that the SPI3-encoded autotransporter protein
+MisL functions as a non-ﬁmbrial adhesin during intestinal
+colonization (Dorsey et al., 2005).
+
+SPI4 has typical characteristics of SPI; however, the
+molecular
+function of SPI4-encoded proteins is not
+known. The initial description of SPI4 suggested the pres-
+ence of 18 open reading frames (ORFs) (Wong et al.,
+1998). A reﬁned analysis based on the genome sequence
+of S. Typhimurium, however, showed that only six ORFs
+are present
+in SPI4 (McClelland et al., 2001; Morgan
+et al., 2004). The role of SPI4 in Salmonella pathogenesis
+has been unclear, but a recent study using signature-
+tagged mutagenesis identiﬁed SPI4 as a colonization
+factor during infection of calf
+(Morgan et al., 2004).
+However, this study did not indicate a role of SPI4 during
+orogastral
+infection of chicken, suggesting SPI4 as a
+determinant of host speciﬁcity. A recent screen for Salmo-
+nella mutant strains attenuated in a model for long-term
+persistence identiﬁed a strain defective in SPI4 genes
+(Lawley et al., 2006).
+In competition experiments with
+wild-type (WT) S. Typhimurium, a SPI4-deﬁcient strain
+was slightly attenuated in long-term persistence.
+
+In addition to T3SS encoded by SPI and the translo-
+cated effector proteins, adhesins are known virulence
+determinants of Salmonella. There is a large number of
+operons encoding ﬁmbrial adhesins but the role in patho-
+genesis has only been partially understood and analysis
+is complicated by the redundancy of ﬁmbrial adhesins. As
+many as 13 operons encoding putative ﬁmbrial adhesins
+have been predicted from the S. Typhimurium genome
+sequence and expression of 11 of these operons has
+been demonstrated (Humphries et al., 2003). In addition
+three non-ﬁmbrial adhesins have been described. MisL
+(Dorsey et al., 2005) and ShdA (Kingsley et al., 2002) are
+members of the autotransporter family and BapA was
+recently characterized as an adhesin for homotypic inter-
+actions during bioﬁlm formation (Latasa et al., 2005).
+While non-ﬁmbrial adhesins are usually secreted by
+the autotransporter mechanisms (also known as type V
+secretion), ﬁmbrial adhesins use the general secretion
+pathway for the transport of subunits that are subse-
+quently assembled by speciﬁc pathways (reviewed in
+Soto and Hultgren, 1999).
+
+During our ongoing systematic functional analyses of
+newly described pathogenicity islands of S. enterica, we
+observed a virulence defect of SPI4-deﬁcient bacteria
+speciﬁcally during interaction with polarized epithelial
+cells. This observation prompted us to study the function
+of genes within SPI4 in more detail. We set out to inves-
+tigate the role of SPI4 in Salmonella virulence using
+reﬁned cell culture and infection models. Our data dem-
+onstrate that SPI4 encodes a novel member of the family
+of large, repetitive non-ﬁmbrial adhesins and a cognate
+type I secretion system (T1SS) for the secretion of this
+adhesin.
+
+Results
+
+SPI4 function is not required for invasion of HeLa cells
+or intracellular replication
+
+To investigate the role of SPI4 in virulence, we ﬁrst applied
+routinely used cell culture infection models. The effect of a
+deletion of SPI4 on host cell invasion was analysed using
+the gentamicin protection assay with the human epithelial
+cell line HeLa. A strain with a defect in the SPI1-encoded
+T3SS was about 500-fold reduced in invasion of HeLa
+cells (Fig. S1A), but strains deﬁcient in the SPI2-T3SS or
+lacking the entire SPI4 locus did not show a reduced
+invasion. The intracellular replication in RAW264.7, a
+murine macrophage-like cell line was also investigated.
+The intracellular replication of S. Typhimurium WT, the
+SPI1- and SPI4-deﬁcient strains was not signiﬁcantly
+different. In contrast, a mutant strain deleted in the SPI2-
+encoded T3SS showed highly reduced intracellular repli-
+cation (Fig. S1B). These data indicate that SPI4 does not
+
+Salmonella Pathogenicity Island 4 1835
+
+contribute to Salmonella invasion of the epithelial cell line
+HeLa and intracellular
+replication in macrophage-like
+cells.
+
+SPI4 function is not required for pathogenesis in a
+murine typhoid fever model
+
+The systemic pathogenesis of a SPI4 deletion strain was
+compared with that of the WT and previously character-
+ized mutant strains deﬁcient in SPI2 function. Cohorts of
+C57BL/6 mice were orally infected with approximately
+5 ¥ 109 colony-forming units (cfu), and the bacterial
+burden was determined at 3 and 5 days after infection. As
+expected from previous reports, a SPI2-deﬁcient strain
+was incapable of proliferating in liver, spleen, mesenteric
+lymph nodes (MLN) or Peyer’s Patches (PP) and the
+bacterial burden remained at a low level. In contrast,
+Salmonella WT replicated in these organs and high bac-
+terial burdens developed. The kinetics of systemic prolif-
+eration of the SPI4 mutant strain was comparable with
+that of WT Salmonella and mice had to be sacriﬁced at
+day 5 due to the development of the severe systemic
+infection (Fig. 1A). Based on these results, SPI4 does not
+appear relevant for the development of systemic infec-
+tions in the murine model. This observation, however, is in
+contrast to the report by Morgan et al. (2004) who found a
+reduced systemic colonization of BALB/c mice after oral
+infection with siiE and siiF strains that are defective in a
+large repetitive protein and a putative subunit of a T1SS
+respectively. These disparate results may be due to the
+different infectious dose applied here and by Morgan et al.
+
+SPI4 contributes to gastrointestinal inﬂammation in the
+murine colitis model
+
+We investigated the possible role of SPI4 in the interaction
+of Salmonella with the intestinal mucosa (Fig. 1B). Intes-
+tinal inﬂammation is usually not induced by S. Typhimu-
+rium infection of mice. However, a recently developed
+model system of caecal
+inﬂammation in streptomycin-
+pretreated mice allows the analysis of intestinal symp-
+toms caused by Salmonella infection (Barthel et al., 2003)
+and was applied for our study (Hapfelmeier and Hardt,
+2005). Oral infection with WT Salmonella caused severe
+caecal inﬂammation, as quantiﬁed by histological scoring
+of oedema, PMN inﬂux, loss of goblet cells and epithelial
+damage. A mutant strain deﬁcient in the function of the
+SPI1-encoded T3SS caused highly reduced caecal
+inﬂammation. The pathological scores observed after
+infection with the SPI4-deﬁcient strain were signiﬁcantly
+reduced, but inﬂammation caused by the SPI4 strain was
+more severe than caused by the SPI1 strain (Fig. 1B;
+Fig. S2). The colonization of the caecum, liver, spleen and
+ileal lymph nodes was comparable after infection with all
+
+© 2007 The Authors
+Journal compilation © 2007 Blackwell Publishing Ltd, Cellular Microbiology, 9, 1834–1850
+
+

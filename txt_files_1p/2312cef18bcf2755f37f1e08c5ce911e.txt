@@ -1,0 +1,70 @@
+Grundkurs Mathematik 2
+
+Testklausur
+
+Oliver R¨ondigs
+
+21.6.2016
+
+Aufgabe 1 Bestimmen Sie die L¨osungsmengen der folgenden reellen Gleichungs-
+
+systeme.
+
+x1 + (−2) · x2 + 3 · x3 = 5
+x2 + 2 · x3 = 5
+x3 = 3
+
+2 · x2 +
+
+2 · x1 +
+−2 · x1 +
+
+x1 −
+x2 + 2 · x3 +
+2 · x1 +
+x2 +
+x1 + 2 · x2 −
+
+x4 = 1
+x3 + 2 · x4 = −2
+= 3
+x3
+
+Aufgabe 2 Bauer Piepenbrinck hat 35 Rinder und eine Biogasanlage. Die Rin-
+der verzehren etwa 450 kg Futter t¨aglich. Des weiteren wendet Bauer Pie-
+penbrinck f¨ur die Rinderhaltung 5 kWh an Energie und 140 e an diversen
+Kosten (Tier¨arztin, Personal, Streu etc.) auf. Die Rinder produzieren etwa
+400 kg Biomasse pro Tag. Die Biogasanlage verbraucht 400 kg Biomas-
+se und verursacht dabei Personal- und weitere Kosten in H¨ohe von 110 e
+t¨aglich. Sie leistet 380 kW. Wie teuer ist die Produktion von 1 kg Biomasse
+und 1 kWh, wenn 1 kg Futter 0,10 e kostet?
+
+Aufgabe 3 Sei 0 < r ∈ R. Bestimmen Sie die Fl¨ache eines regelm¨aßigen 16-
+Ecks auf einem Kreis mit Radius r. Welche Ann¨aherung an π liefert diese
+Fl¨ache?
+
+Aufgabe 4 Sei p := (1, 3,−1). Entscheiden Sie, f¨ur welche reellen Zahlen c es
+
+eine bijektive Abbildung
+
+fc : Hp,1 ∩ H(π,c,−π),−2
+
+(cid:31) R
+
+mit fc(x, y, z) = x gibt, und bestimmen Sie f¨ur diese die Umkehrabbildung
+von fc.
+
+Aufgabe 5 Das Dreieck (cid:52)pqr in R2 mit p = (2, 1), q = (1, 2) und r = (5, 3)
+sei gegeben. Bestimmen Sie die Gleichungen der Mittelsenkrechten dieses
+Dreiecks, sowie deren Schnittpunkt. Ersetzen Sie den Punkt r durch einen
+Punkt s derart, daß die Fl¨ache des Dreiecks (cid:52)pqs genau 2 betr¨agt.
+
+Aufgabe 6 Stimmt die Summe der Anzahl der dreidimensionalen Untertetra-
+eder des vierdimensionalen Standard-Tetraeders mit der Anzahl der vier-
+dimensionalen Unterw¨urfel eines f¨unfdimensionalen W¨urfels ¨uberein mit
+der Anzahl der dreidimensionalen Unterw¨urfel eines sechsdimensionalen
+Standard-Tetraeders?
+
+1
+
+

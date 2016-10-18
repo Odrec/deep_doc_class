@@ -1,0 +1,288 @@
+E
+C
+N
+E
+I
+C
+S
+O
+R
+U
+E
+N
+
+Processing of hierarchical syntactic structure in music
+
+Stefan Koelscha,1, Martin Rohrmeiera,b, Renzo Torrecusoa,c, and Sebastian Jentschkea
+
+aCluster: Languages of Emotion, Freie Universität, 14195 Berlin, Germany; bMIT Intelligence Initiative, Department of Linguistics and Philosophy,
+Massachusetts Institute of Technology, Cambridge, MA 02139; and cBrain Institute, Federal University of Rio Grande do Norte, 59056-450, Natal, Brazil
+
+Edited* by Dale Purves, Duke-National University of Singapore Graduate Medical School, Singapore, Singapore, and approved July 30, 2013 (received for
+review January 8, 2013)
+
+information on different
+
+Hierarchical structure with nested nonlocal dependencies is a key
+feature of human language and can be identiﬁed theoretically in
+most pieces of tonal music. However, previous studies have argued
+against the perception of such structures in music. Here, we show
+processing of nonlocal dependencies in music. We presented
+chorales by J. S. Bach and modiﬁed versions in which the hierarchical
+structure was rendered irregular whereas the local structure was
+kept intact. Brain electric responses differed between regular and
+irregular hierarchical structures, in both musicians and nonmusi-
+cians. This ﬁnding indicates that, when listening to music, humans
+apply cognitive processes that are capable of dealing with long-
+distance dependencies resulting from hierarchically organized syn-
+tactic structures. Our results reveal that a brain mechanism funda-
+mental for syntactic processing is engaged during the perception of
+music, indicating that processing of hierarchical structure with
+nested nonlocal dependencies is not just a key component of hu-
+man language, but a multidomain capacity of human cognition.
+syntax | context-free grammar | parsing | electroencephalography | EEG
+To process sequential information featuring both local and
+
+nonlocal dependencies between elements, nervous systems
+need to represent
+time scales, as
+reﬂected in different frequencies of oscillatory processes (1, 2)
+and different types of memory (3, 4). Tonal music has evolved to
+an extent that composers could make the fullest use of such
+representations. On the one hand, tonal music involves repre-
+sentations of single events and local relationships on short time
+scales. On the other hand, many composers designed nested hi-
+erarchical syntactic structures spanning longer time scales, poten-
+tially up to entire movements of symphonies and sonatas (5, 6).
+Hierarchical syntactic structure (involving the potential for nested
+nonlocal dependencies) is a key component of the human lan-
+guage capacity (7–11) and is frequently produced and perceived
+in everyday life. For example, in the sentence “the boy who helped
+Peter kissed Mary,” the subject relative clause ”who helped Peter”
+is nested into the main clause ”the boy kissed Mary,” creating a
+nonlocal hierarchical dependency between ”the boy” and ”kissed
+Mary.” Music theorists have described analogous hierarchical
+structures for music. Schenker (5) was the ﬁrst to describe musical
+structures as organized hierarchically, in a way that musical events
+are elaborated (or prolonged) by other events in a recursive
+fashion. According to this principle, e.g., a phrase (or set of phrases)
+can be conceived of as an elaboration of a basic underlying tonic–
+dominant–tonic progression. Schenker further argued that this
+principle can be expanded to even larger musical sequences, up
+to entire musical movements. In addition, Hofstadter (12) was
+one of the ﬁrst to argue that a change of key embedded in a
+superordinate key (such as a tonal modulation away from, and
+returning to, an initial key) constitutes a prime example of re-
+cursion in music. Based on similar ideas, several theorists have
+developed formal descriptions of the analysis of hierarchical
+structures in music (13–15). One of these approaches, the Gener-
+ative Theory of Tonal Music (GTTM) by Lerdahl and Jackendoff
+(13), has become one of the most inﬂuential current theories
+in music theory and music psychology. Another approach is
+the Generative Syntax Model (GSM), which provides explicit
+generative rules modeled in analogy with linguistic syntax (15).
+
+However, it has remained unknown whether hierarchical musi-
+cal structure is perceived by human listeners, or whether hier-
+archical musical structure is merely a historical convention driven
+by factors such as notation (where relationships between keys
+can be surveyed and constructed on paper). The perception
+of hierarchical structure of music would indicate that this
+structural property reﬂects, and is driven by, our capacity to
+perceive and produce hierarchical, potentially recursive struc-
+tures (7, 8, 16).
+
+More critically, the theoretical accounts on hierarchical struc-
+tures in music have been challenged by scholars who argued that
+the traditional theory of harmony is local and that syntax of tonal
+music can be captured, e.g., by Markov models (17, 18). Likewise,
+it has been argued that musical understanding does not centrally
+involve grasp of large-scale musical dependencies (19). This view
+assumes that hierarchical accounts are not reﬂected in the cog-
+nitive processing of musical structure and that local models yield
+the best account of elementary tonal harmony (18).
+
+Empirical evidence on this topic is sparse, but, if anything,
+then empirical data rather support local accounts, showing that
+even musically trained listeners are perceptually surprisingly in-
+sensitive to drastic manipulations of large-scale musical structure
+(20), including scrambling the order of the phrases within a sin-
+gle piece (21) or rewriting sections of large tonal pieces so that
+they end in keys that do not provide tonal closure (22). Notably,
+all previous studies reporting behavioral or neurophysiological
+effects of music–syntactic manipulations have tapped into pro-
+cessing of local dependencies, either with frank local violations
+(such as chords with out-of-key tones or harmonic sequences not
+ending with an authentic cadence) (23–25), or by manipulating
+the local transition probability of occurrence of syntactically legal
+events (26). This was the case even in those studies that used tree
+models to describe music–syntactic irregularities (27, 28). Thus,
+behavioral and neurophysiological effects reported in previous
+studies on music–syntactic processing could have been driven
+only by the processing of local dependencies (21, 28). Other
+studies showed recognition of harmonic and melodic reductions,
+which are predicted by syntactic theories of music like the
+GTTM or GSM (29, 30) or correlations between hierarchical
+structure and ratings of tension and relaxation (31), but those
+studies did not provide evidence for processing of long-distance
+dependencies (which are also predicted by GTTM and GSM).
+Thus, although hierarchical musical structures can be described
+theoretically, there is a striking absence of evidence for the
+processing of hierarchical syntactic structures involving long-
+distance dependencies in music.
+
+To investigate this issue, we used two original chorales by J. S.
+Bach (BWV 302 and 373, Fig. 1, Fig. S1, and Audio File S1),
+both with a long-distance dependency of the basic form ABA. In
+addition, we used modiﬁed versions of the form A′BA in which
+
+Author contributions: S.K. and M.R. designed research; R.T. performed research; S.K.
+contributed new reagents/analytic tools; S.J. analyzed data; and S.K., M.R., and S.J. wrote
+the paper.
+
+The authors declare no conﬂict of interest.
+
+*This Direct Submission article had a prearranged editor.
+1To whom correspondence should be addressed. E-mail: stefan.koelsch@fu-berlin.de.
+
+This article contains supporting information online at www.pnas.org/lookup/suppl/doi:10.
+1073/pnas.1300272110/-/DCSupplemental.
+
+www.pnas.org/cgi/doi/10.1073/pnas.1300272110
+
+PNAS Early Edition | 1 of 6
+
+A
+
+B
+
+Fig. 1.
+Illustration of stimuli. (A) Original version of J. S. Bach’s chorale
+Liebster Jesu, wir sind hier (BWV 373). The ﬁrst phrase ends on an open
+dominant (see chord with fermata below orange rectangle), and the second
+phrase ends on a tonic (dotted rectangle). The tree structure above the scores
+represents a schematic diagram of the harmonic dependencies (for full tree
+graphs, see Figs. S2 and S3). The two thick vertical lines (separating the ﬁrst
+and the second phrase) visualize that the local dominant (V in orange rect-
+angle) is not immediately followed by a resolving tonic chord but implies its
+resolution with the ﬁnal tonic (indicated by the dotted arrow). The same
+dependency exists between initial and ﬁnal tonic (indicated by the solid ar-
+row). The tree thus illustrates the nonlocal (long-distance) dependency be-
+tween the initial and ﬁnal tonic regions and tonic chords, respectively (also
+illustrated by the blue rectangles). The chords belonging to a key other than
+the initial key (yellow rectangle) represent one level of embedding. (B)
+Modiﬁed version (the ﬁrst phrase was transposed downward by the pitch
+interval of one fourth, red color). The tree structure above the scores illus-
+trates that the second phrase is not compatible with an expected tonic region
+(indicated by the red dotted line with the red question mark) and that the last
+chord (a tonic of a local cadence, dotted rectangle) neither prolongs the initial
+tonic nor closes the open dominant (see solid and dotted lines followed by red
+question mark). In both A and B, Roman numerals indicate scale degrees. T, S,
+and D indicate the main tonal functions (tonic, subdominant, dominant) of
+the respective part of the sequence (such as functional regions in the GSM).
+Squared brackets indicate scale degrees relative to the local key (in the
+original version, the yellow rectangle indicates that the local key of C major is
+a subdominant region of the initial key G major).
+
+the long-distance dependency between A and A was not fulﬁlled.
+Each of the stimuli consisted of two phrases. In the original
+chorales, the ﬁrst phrase ended on a half cadence (i.e., on an
+open dominant) (Fig. 1 and Fig. S1). The second phrase began
+with a chord other than the tonic (thus not immediately fulﬁlling
+the implication of the dominant at the end of the ﬁrst phrase)
+and featured a sequence of chords that did not belong to the
+initial key of the chorale (representing one level of embedding).
+Then, the second phrase returned to the initial key and ended on
+an authentic cadence (in analogy with the recursive schema de-
+scribed by Hofstadter) (12). Thus, according to the GTTM and
+GSM, the ﬁnal chord of original chorales hierarchically pro-
+longed the ﬁrst chord of the chorale and closed the established
+dominant that remained open at the end of the half cadence.
+Note that the parse trees of the syntactic structures of the two
+chorales according to the GSM and GTTM (Fig. 1 and Figs. S1–S5)
+represent recursive hierarchical organization that creates non-
+local dependencies in a way that embedded parts are (recursively)
+
+This manipulation led to a hierarchical
+
+generated by the same set of rules as superordinated parts. As
+illustrated by the red scores in Fig. 1, we also created modiﬁed
+versions of these chorales by transposing the ﬁrst phrase either
+down a forth (BWV 373) (Fig. 1 and Audio File S2), or up a major
+second (BWV 302) (Fig. S1). By doing so, the second phrase of
+each modiﬁed chorale did not prolong the ﬁrst chord of the
+chorale anymore and did not close the open dominant established
+by the ﬁrst phrase (see red question marks in Fig. 1 and Fig. S1).
+irregularity, while
+keeping the local structure of the second phrase intact. Several
+measures guarantee that the hierarchical irregularity does not
+confound local irregularity. First, despite the transposition of the
+ﬁrst phrase of the modiﬁed chorales (red scores in Fig. 1 and Fig.
+S1), the second phrase remained unchanged and did thus not
+differ acoustically between original and modiﬁed chorales (that
+is, the last nine chords of BWV 373, and the last eight chords of
+BWV 302, were acoustically identical). Second,
+it has been
+shown that local n-gram models of harmony are optimal for
+a context length of two or three items (32, 33), and that pre-
+dictions based on such models change only marginally (and to
+the worse) for longer local context models. Therefore, the local
+transition probabilities for the ﬁnal chords were equal in both
+original and modiﬁed versions, and only the long-distance de-
+pendency between last and ﬁrst chord was manipulated (as well
+as between last chord and open dominant of the half cadence).
+Consequently, any differences in behavioral or neurophysiolog-
+ical responses to the ﬁnal chords of the two versions of the Bach
+chorales can only be due to the processing of the nonlocal, hi-
+erarchical structure of the chorale, but not due to local pro-
+cessing. Notably, in contrast to similar experimental designs used
+in previous research (23), stimuli of the present study contain
+a center-embedded dependency and end on a locally correct
+cadence, both of which are required to investigate hierarchical
+processing without contribution of local processing.
+
+Note that we use the term “hierarchical” here to refer to
+a syntactic organizational principle of musical sequences by
+which elements are organized in terms of subordination and
+dominance relationships (13–15). Such hierarchical structures
+can be established through the recursive application of rules,
+analogous to the establishment of hierarchical structures in
+language (8). In both linguistics and music theory, such hierar-
+chical dependency structures are commonly represented using
+tree graphs. The term “hierarchical” is sometimes also used in
+a different sense, namely to indicate that certain pitches, chords,
+or keys within pieces occur more frequently than others and thus
+establish a frequency-based ranking of structural
+importance
+(34). That is not the sense intended here.
+
+Using electroencephalography (EEG), it has previously been
+observed that processing of music–syntactical
+irregularities is
+reﬂected electrically in an early right anterior negativity (ERAN)
+(reﬂecting music–syntactic processing) (25) and a subsequent
+late negativity (the so-called N5, reﬂecting harmonic integration)
+(28). Whether ERAN and N5 reﬂect local, hierarchical, or both
+local and hierarchical processing is not known. In the present
+study, we tested whether ﬁnal chords of hierarchically irregular
+versions (in the absence of any local violation) would evoke
+ERAN and N5 potentials compared with the hierarchically
+regular versions. After the EEG session, conclusiveness and
+emotion ratings of our stimuli were obtained to test the hy-
+pothesis that conclusiveness ratings would be higher for original
+than for modiﬁed versions.
+Results
+Fig. 2A shows that, compared with the original versions, ﬁnal
+chords of modiﬁed versions evoked an early negative brain-
+electric response that emerged in the N1 range (around 150 ms
+after chord onset) and was maximal at around 220 ms. This effect
+had a frontal scalp distribution and a slight (nonsigniﬁcant) left-
+hemispheric weighting. The early effect was followed by a later
+negativity that emerged at around 500 ms and lasted until about
+850 ms after stimulus onset. A global ANOVA (Materials and
+
+2 of 6 | www.pnas.org/cgi/doi/10.1073/pnas.1300272110
+
+Koelsch et al.
+
+

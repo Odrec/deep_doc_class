@@ -1,0 +1,98 @@
+Leading Edge
+
+Review
+
+Engineering Cellular Metabolism
+
+Jens Nielsen1,2,3,* and Jay D. Keasling2,4,5,6,7,*
+1Department of Biology and Biological Engineering, Chalmers University of Technology, Kemiva¨ gen 10, SE412 96 Gothenburg, Sweden
+2Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark, Kogle Alle´ , DK2970-Hørsholm, Denmark
+3Science for Life Laboratory, Royal Institute of Technology, SE17121-Solna, Sweden
+4Joint Bioenergy Institute, Emeryville, CA 94608, USA
+5Department of Chemical and Biomolecular Engineering & Department of Bioengineering, University of California, Berkeley, Berkeley,
+CA 94720, USA
+6Biological Systems & Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA
+7Synthetic Biology Engineering Research Center (Synberc), Berkeley, CA 94720, USA
+*Correspondence: nielsenj@chalmers.se (J.N.), keasling@berkeley.edu (J.D.K.)
+http://dx.doi.org/10.1016/j.cell.2016.02.004
+
+Metabolic engineering is the science of rewiring the metabolism of cells to enhance production of
+native metabolites or to endow cells with the ability to produce new products. The potential appli-
+cations of such efforts are wide ranging, including the generation of fuels, chemicals, foods, feeds,
+and pharmaceuticals. However, making cells into efﬁcient factories is challenging because cells
+have evolved robust metabolic networks with hard-wired, tightly regulated lines of communication
+between molecular pathways that resist efforts to divert resources. Here, we will review the current
+status and challenges of metabolic engineering and will discuss how new technologies can enable
+metabolic engineering to be scaled up to the industrial level, either by cutting off the lines of control
+for endogenous metabolism or by inﬁltrating the system with disruptive, heterologous pathways
+that overcome cellular regulation.
+
+Introduction
+For at least 8,000 years, humans have harnessed microbes to
+produce fermented foods and beverages. In more recent his-
+tory, microbes have been used to produce chemicals for a
+wide range of applications. During World War I, Chaim Weis-
+mann developed the acetone-butanol-ethanol fermentation pro-
+cess, which was used for 50 years to produce acetone and is
+now being revived for production of 1-butanol. In the 1920s,
+fermentation of the ﬁlamentous fungus Aspergillus niger was
+adapted to generate citric acid, a food and beverage ingredient.
+During World War II, the same technology was used for indus-
+trial scale production of penicillin, the ﬁrst pharmaceutical pro-
+duced by fermentation.
+
+The following decades witnessed a dramatic increase in the
+use of microorganisms to synthesize natural products of pharma-
+ceutical interest, such as antibiotics, cholesterol lowering agents,
+immunosuppressants, and anti-cancer drugs. Improved perfor-
+mance of classical fermentation processes for such purposes
+was typically achieved through mutagenesis and screening.
+For antibiotics in particular, this was an extremely efﬁcient
+approach, with penicillin production using Penicillium chrysoge-
+num boosted by more than 10,000-fold (Thykaer and Nielsen,
+2003). Although genetic engineering made it possible to use a
+more directed approach to improve metabolism, most work
+focused on the development of cell factories for production of re-
+combinant proteins for use as pharmaceuticals, and today, there
+are more than 300 biopharmaceutical proteins and antibodies on
+the market with sales exceeding $100 billion (Langer, 2012).
+
+With the late 1980s and early 1990s came new insights into the
+complex inner workings of cellular metabolism, fueled by bioin-
+
+formatics and mathematical modeling methods that allowed
+quantitative analysis. This enabled speciﬁc genetic modiﬁca-
+tions altering cellular metabolism to be introduced, such that
+ﬂuxes could be directed toward the product of interest. Thus,
+the ﬁeld of metabolic engineering was born (Bailey, 1991; Ste-
+phanopoulos and Vallino, 1991; Nielsen, 2001; Keasling, 2010).
+Now, more than twenty years later, metabolic engineering has
+been exploited not only to improve traditional microbial fermen-
+tation processes, but also to produce chemicals that are
+currently used as fuels, materials, and pharmaceutical ingredi-
+ents (Table 1).
+
+Despite the advanced systems and synthetic biology technol-
+ogies now available for detailed phenotypic characterization of
+cells and genome editing, developing new cell factories that
+meet the economic requirements for industrial scale production
+is still challenging, typically requiring 6–8 years and over $50
+million. The reason for this is inherent to the cells themselves.
+To ensure metabolic homeostasis even when exposed to vary-
+ing environmental conditions, cells have evolved extensive
+regulation and complex interactions between metabolic path-
+ways. Redirecting carbon ﬂuxes toward desired metabolites
+therefore requires modulating the lines of communication in
+endogenous metabolic pathways or inﬁltrating the system with
+disruptive signals that interfere with these regulatory mecha-
+nisms. At present, our knowledge of how metabolism is regu-
+lated even in simple model cells is limited. As a result, engineer-
+ing a cell
+factory involves several rounds of the so-called
+‘‘design-build-test’’ cycle, in which a certain metabolic design
+is implemented and improved through genetic engineering
+and thereafter tested.
+
+Cell 164, March 10, 2016 ª2016 Elsevier Inc. 1185
+
+

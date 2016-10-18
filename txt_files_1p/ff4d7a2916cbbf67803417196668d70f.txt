@@ -1,0 +1,88 @@
+Chromosoma (2014) 123:225–237
+DOI 10.1007/s00412-014-0460-2
+
+REVIEW
+
+Chromatin as dynamic 10-nm fibers
+
+Kazuhiro Maeshima & Ryosuke Imai & Sachiko Tamura &
+Tadasu Nozaki
+
+Received: 15 January 2014 / Revised: 18 March 2014 / Accepted: 20 March 2014 / Published online: 16 April 2014
+# The Author(s) 2014. This article is published with open access at Springerlink.com
+
+Abstract Since Flemming described a nuclear substance in
+the nineteenth century and named it “chromatin,” this sub-
+stance has fascinated biologists. What is the structure of
+chromatin? DNA is wrapped around core histones, forming
+a nucleosome fiber (10-nm fiber). This fiber has long been
+assumed to fold into a 30-nm chromatin fiber and subsequent-
+ly into helically folded larger fibers or radial loops. However,
+several recent studies, including our cryo-EM and X-ray scat-
+tering analyses, demonstrated that chromatin is composed of
+irregularly folded 10-nm fibers, without 30-nm chromatin
+fibers, in interphase chromatin and mitotic chromosomes.
+This irregular folding implies a chromatin state that is physi-
+cally less constrained, which could be more dynamic com-
+pared with classical regular helical folding structures. Consis-
+tent with this, recently, we uncovered by single nucleosome
+imaging large nucleosome fluctuations in living mammalian
+cells (∼50 nm/30 ms). Subsequent computational modeling
+suggested that nucleosome fluctuation increases chromatin
+accessibility, which is advantageous for many “target
+searching” biological processes such as transcriptional regu-
+lation. Therefore, this review provides a novel view on chro-
+matin structure in which chromatin consists of dynamic and
+disordered 10-nm fibers.
+
+K. Maeshima : R. Imai : S. Tamura : T. Nozaki
+Biological Macromolecules Laboratory, Structural Biology Center,
+National Institute of Genetics, Mishima, Shizuoka 411-8540, Japan
+
+K. Maeshima (*) : R. Imai
+Department of Genetics, School of Life Science,
+Graduate University for Advanced Studies (Sokendai),
+Mishima, Shizuoka 411-8540, Japan
+e-mail: kmaeshim@nig.ac.jp
+
+T. Nozaki
+Institute for Advanced Biosciences, Keio University,
+Fujisawa 252-8520, Japan
+
+Introduction
+
+There are 60 trillion cells in the human body. Each cell
+contains 2 m of genomic DNA in a small nucleus with an
+approximately 10-μm diameter (a volume of only ∼100 fL to
+1 pL), and yet, it is able to search and read the information in
+its genomic DNA to execute diverse cellular functions. There-
+fore, it is important to understand how this long genomic
+DNA is organized in the nucleus. In the nineteenth century,
+W. Flemming described a nuclear substance that was clearly
+visible after staining with a basic dye using primitive light
+microscopes and named it “chromatin.” This is now thought
+to be the basic unit of genomic DNA organization (Olins and
+Olins 2003). Since then, even before the discovery of the
+structure of DNA (Watson and Crick 1953), chromatin has
+attracted significant interest from biologists. In this review
+article, we assess the available data to provide a novel view
+of chromatin in which “chromatin is a dynamic and disordered
+10-nm fiber.”
+
+DNA and nucleosomes
+
+Deoxyribonucleic acid (DNA) is a negatively charged poly-
+mer that produces electrostatic repulsion between adjacent
+DNA regions. Therefore, it would be difficult for a long
+DNA molecule alone to fold into a small space like the
+nucleus (Bloomfield 1996; Yoshikawa and Yoshikawa
+2002). To overcome this problem, the long, negatively
+charged polymer is wrapped around a basic protein complex
+known as a core histone octamer, which consists of the histone
+proteins H2A, H2B, H3, and H4, to form a nucleosome
+(Fig. 1) (Olins and Olins 1974; Kornberg 1974; Woodcock
+et al. 1976). The structure of a nucleosome is well known at
+atomic resolution (1.9 Å) (Davey et al. 2002): 147 base pairs
+(bp) of DNA are wrapped in 1.7 left-handed superhelical turns
+
+

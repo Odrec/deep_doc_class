@@ -16,8 +16,8 @@ using pdfminer.
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
-# from pdfminer.pdfpage import PDFPage
-from pdfminer.pdfparser import PDFPage
+from pdfminer.pdfpage import PDFPage
+#from pdfminer.pdfparser import PDFPage
 try:
     from cStringIO import StringIO
 except ImportError:
@@ -30,6 +30,7 @@ class TextScore:
     def __init__(self):
         self.mean = 9109.10716436
         self.std = 22201.1272775
+        self.path = 'txt_files_1p'
         return
         
     # @param pages number of pages to transform to text starting from the first
@@ -61,6 +62,14 @@ class TextScore:
         except:
             #print('troubleshooting')
             return 'ERROR'
+
+    def get_txt(self,fp):
+        fp_txt = open('./'+self.path+'/'+fp.name,'r')
+        txt = ''
+        for lines in fp_txt.readline():
+            txt += lines
+        return txt
+
     #@param filepointer a pointer to a pdf file
     #@param metapointer a pointer to the metadata, this parameter is not used
     #@return float64 [0 1] probabiliy for the pdf  beeing copyright protected     

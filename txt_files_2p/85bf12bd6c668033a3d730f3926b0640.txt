@@ -1,0 +1,101 @@
+2 Adverse Selektion auf Versicherungsm¨arkten
+
+• Beobachtung: staatliche Regulierung bei vielen Versicherungsarten: Kran-
+
+kenversicherung, Rentenversicherung, Arbeitslosenversicherung
+
+• Regulierungselemente: (u.a.)
+
+- Gesetzliche Sozialversicherung
+
+- Regulierung privater Versicherungen (z.B. Kontrahierungszwang)
+
+- Regulierung der Versicherten: z.B. Versicherungspﬂicht
+
+• M¨ogliche Gr¨unde: (u.a.)
+
+1. Paternalismus: Behauptung, dass viele Personen nicht mit den Risiken
+
+umgehen k¨onnen
+
+2. Opportunistisches (Freifahrer-) Verhalten
+
+3. Implementierung sozialer Vertr¨age (Generationenvertrag)
+
+4. Marktgleichgewicht kann ineﬃzient bzw. verteilungspolitisch nicht
+
+erw¨unscht sein
+
+• dieses Kapitel: Eﬃzienz- bzw. Wohlfahrtsgewinne durch staatliche Regulie-
+
+rung; Grund: asymmetrische Information
+
+• Adverse Selektion auf Versicherungsm¨arkten: Intuitives Argument
+
+– zwei Typen von Personen mit Schadenswahrscheinlichkeiten πA und
+
+πB > πA; allen wird einheitlich ein fairer Versicherungsvertrag ange-
+
+boten: Pr¨amie = durchschnittliche Kosten
+⇒ erwartete Kosten Typ A < Pr¨amie < erwartete Kosten Typ B
+⇒ die A-Personen werden durch die B-Personen belastet
+⇒ biete Vertrag mit Selbstbeteiligung an der f¨ur die B-Personen we-
+gen des hohen πB nicht interessant ist
+⇒ nur A-Personen w¨ahlen den Vertrag
+⇒ die Pr¨amie f¨ur urspr¨unglichen Vertrag steigt: neue Pr¨amie = er-
+wartete Kosten f¨ur Typ B
+
+6
+
+– Gleichgewicht: A-Personen w¨ahlen einen geringeren Versicherungs-
+
+schutz als die B-Personen; sie sind damit am Markt unterrepr¨asentiert
+
+(adverse Selektion)
+
+2.1 Ein kompetitiver Versicherungsmarkt
+
+(a) Versicherungsnachfrage
+
+Zwei Gruppen von Personen i = A, B mit den Bev¨olkerungsanteilen λ f¨ur Typ A
+und (1 − λ) f¨ur Typ B
+
+• Einkommen einer Person: y1 wenn kein Schaden eintritt, y2 < y1 im Scha-
+
+densfall
+
+• unterschiedliche Schadenswahrscheinlichkeiten: πA < πB
+• Erwartungsnutzen einer Person: Ui = πiu(ci
+
+2) + (1 − πi)u(ci
+
+1) Annahmen:
+
+u(cid:48) > 0 und u(cid:48)(cid:48) < 0 (Risiko-Aversion)
+
+6u(c)
+
+6ci
+2
+
+-
+c
+
+¯Ui
+
+-
+ci
+1
+
+1 = y1 − Versicherungspr¨amie
+• ci
+2 = y2 − Versicherungspr¨amie + Leistung im Schadensfall
+ci
+
+(b) Pareto-Eﬃziente Allokationen
+
+• Pareto-Eﬃzienz als Maßstab zur Bewertung von Marktgleichgewichten
+
+7
+
+

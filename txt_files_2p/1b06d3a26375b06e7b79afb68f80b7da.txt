@@ -1,0 +1,141 @@
+16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+10.1146/annurev.clinpsy.1.102803.143833
+
+Annu. Rev. Clin. Psychol. 2005. 1:91–111
+doi: 10.1146/annurev.clinpsy.1.102803.143833
+Copyright c(cid:1) 2005 by Annual Reviews. All rights reserved
+First published online as a Review in Advance on December 17, 2004
+
+MOTIVATIONAL INTERVIEWING
+
+Jennifer Hettema, Julie Steele, and William R. Miller
+Department of Psychology, University of New Mexico, Albuquerque, New Mexico
+87131-1161; email: jhettema@unm.edu, jmsteele@unm.edu, wrmiller@unm.edu
+
+substance abuse, health behavior, treatment outcome, meta-analysis,
+
+Key Words
+counseling
+■ Abstract Motivational interviewing (MI) is a client-centered, directive therapeu-
+tic style to enhance readiness for change by helping clients explore and resolve am-
+bivalence. An evolution of Rogers’s person-centered counseling approach, MI elicits
+the client’s own motivations for change. The rapidly growing evidence base for MI
+is summarized in a new meta-analysis of 72 clinical trials spanning a range of target
+problems. The average short-term between-group effect size of MI was 0.77, decreas-
+ing to 0.30 at follow-ups to one year. Observed effect sizes of MI were larger with
+ethnic minority populations, and when the practice of MI was not manual-guided. The
+highly variable effectiveness of MI across providers, populations, target problems, and
+settings suggests a need to understand and specify how MI exerts its effects. Progress
+toward a theory of MI is described, as is research on how clinicians develop proﬁciency
+in this method.
+
+CONTENTS
+
+92
+94
+94
+95
+
+INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+META-ANALYTIC METHODS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Study Identiﬁcation and Coding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Computing Effect Sizes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Comparison of Problem Areas, Comparison Group, and Motivational
+Interviewing Purity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+95
+Analysis of Motivational Interviewing Efﬁcacy Across Time . . . . . . . . . . . . . . . . .
+96
+Homogeneity Analyses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+RESULTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+Characteristics of Included Trials . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+TREATMENT EFFECTS OF MOTIVATIONAL INTERVIEWING . . . . . . . . . . . . .
+99
+General Observations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+99
+Correlates of Effect Size . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+Effects of Motivational Interviewing by Problem Domain . . . . . . . . . . . . . . . . . . . 102
+DISCUSSION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+Treatment Adherence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+Immediacy of Effect . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+Are Manuals a Good Idea? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+Matching Indications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
+
+1548-5943/05/0427-0091$14.00
+
+91
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+92
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+TOWARD A THEORY OF MOTIVATIONAL INTERVIEWING . . . . . . . . . . . . . . . 105
+LEARNING MOTIVATIONAL INTERVIEWING . . . . . . . . . . . . . . . . . . . . . . . . . . . 108
+SUMMARY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
+
+INTRODUCTION
+
+Anyone who aspires to help others change will quickly discover that people are
+often less than “ready, willing, and able” to do so. The “able” part of this for-
+mula is comfortable territory for most cognitive-behavior therapists, who are quite
+prepared to help clients build self-efﬁcacy and learn how to change through a
+rich armamentarium of effective coping strategies. Less familiar is the terrain of
+readiness. Often clients are expected to come already prepared with sufﬁcient
+motivation for change. In substance abuse treatment, it was once common to tell
+less-motivated clients, “Come back when you’re ready.”
+
+Yet, hesitancy about change is human nature. To be sure, clients present with a
+wide range of readiness. Some do come already convinced that something has to
+change. Others come reluctantly or grudgingly, nudged through the door by loved
+ones or the courts. It is a safe assumption that most clients seeking treatment or
+change are ambivalent about it: They want it, and they don’t.
+
+Motivational interviewing (MI) was developed as a way to help people work
+through ambivalence and commit to change (Miller 1983). An evolution of client-
+centered therapy, MI combines a supportive and empathic counseling style (Rogers
+1959) with a consciously directive method for resolving ambivalence in the direc-
+tion of change. Drawing on Bem’s self-perception theory (Bem 1972) that people
+tend to become more committed to that which they hear themselves defend, MI
+explores the client’s own arguments for change. The interviewer seeks to evoke
+this “change talk”—expressions of the client’s desire, ability, reasons, and need
+for change—and responds with reﬂective listening. Clients thus hear themselves
+explaining their own motivations for change, and hear them reﬂected again by
+the counselor. Furthermore, the counselor offers periodic summaries of change
+talk that the client has offered, a kind of bouquet composed of the client’s own
+self-motivational statements (Miller & Rollnick 2002).
+
+The net effect of evoking change talk in an empathic and supportive manner is
+to strengthen the client’s commitment to change. Verbalized intention results in an
+increased probability of behavior change, particularly when it is combined with a
+speciﬁc plan for implementation (Gollwitzer 1999). In psycholinguistic analyses of
+MI sessions with drug dependent people, we found that the strength of commitment
+language predicted drug abstinence. Stated desire, ability, reasons, and need for
+change all contributed to subsequent strength of commitment language, but only
+commitment directly predicted behavior change (Amrhein et al. 2003). To say that
+one wants to, can, has cause to, or needs to change is not the same as making a
+commitment or stating the intention to change. MI is therefore differentiated into
+two phases: the ﬁrst is focused on increasing motivation for change, and the second
+on consolidating commitment (Miller & Rollnick 2002).
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.

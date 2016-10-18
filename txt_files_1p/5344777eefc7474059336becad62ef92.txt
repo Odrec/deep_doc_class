@@ -1,0 +1,81 @@
+Lin et al. Genome Biology  (2016) 17:15 
+DOI 10.1186/s13059-016-0876-5
+
+R E S E A R C H
+
+Open Access
+
+The contribution of Alu exons to the
+human proteome
+Lan Lin1*†, Peng Jiang2†, Juw Won Park1,3,4†, Jinkai Wang1†, Zhi-xiang Lu1, Maggie P. Y. Lam5, Peipei Ping5,6
+and Yi Xing1*
+
+Abstract
+
+Background: Alu elements are major contributors to lineage-specific new exons in primate and human genomes.
+Recent studies indicate that some Alu exons have high transcript inclusion levels or tissue-specific splicing profiles,
+and may play important regulatory roles in modulating mRNA degradation or translational efficiency. However, the
+contribution of Alu exons to the human proteome remains unclear and controversial. The prevailing view is that
+exons derived from young repetitive elements, such as Alu elements, are restricted to regulatory functions and have
+not had adequate evolutionary time to be incorporated into stable, functional proteins.
+Results: We adopt a proteotranscriptomics approach to systematically assess the contribution of Alu exons to the
+human proteome. Using RNA sequencing, ribosome profiling, and proteomics data from human tissues and cell
+lines, we provide evidence for the translational activities of Alu exons and the presence of Alu exon derived
+peptides in human proteins. These Alu exon peptides represent species-specific protein differences between
+primates and other mammals, and in certain instances between humans and closely related primates. In the case of
+the RNA editing enzyme ADARB1, which contains an Alu exon peptide in its catalytic domain, RNA sequencing
+analyses of A-to-I editing demonstrate that both the Alu exon skipping and inclusion isoforms encode active
+enzymes. The Alu exon derived peptide may fine tune the overall editing activity and, in limited cases, the site
+selectivity of ADARB1 protein products.
+Conclusions: Our data indicate that Alu elements have contributed to the acquisition of novel protein sequences
+during primate and human evolution.
+
+Keywords: Alu, Transposable element, Exon, Alternative splicing, RNA editing, RNA-seq, Ribo-seq, Transcriptome,
+Proteome, Evolution, Primate
+
+Background
+Transposable elements have played important roles in
+the evolution of gene regulation and function [1]. The
+primate-specific Alu retrotransposon is
+the most
+abundant class of transposable elements in the human
+genome, with over 1 million copies occupying over 10 %
+of the human genomic DNA [2]. Although Alu elements
+were historically considered as ‘junk DNA’, extensive re-
+search in the past two decades has revealed significant
+contributions of Alu to the evolution of the human
+genome and gene regulatory networks [1–3].
+
+* Correspondence: linlan@ucla.edu; yxing@ucla.edu
+†Equal contributors
+1Department of Microbiology, Immunology & Molecular Genetics, University
+of California, Los Angeles, Los Angeles, CA 90095, USA
+Full list of author information is available at the end of the article
+
+that
+
+Alu is a major contributor to de novo origination of
+lineage-specific exons in primates [4]. Because the Alu
+element contains multiple sites
+resemble the
+consensus donor and acceptor splice site signals, the in-
+sertion of Alu elements into intronic regions of existing
+genes produces preferable substrates for subsequent mu-
+tations that create and establish new exons [4, 5]. The
+exonization of Alu elements is frequent during primate
+and human evolution – thousands of human genes con-
+tain Alu-derived exon segments in their mRNA tran-
+scripts [6, 7]. Although the majority of Alu exons have low
+splicing activities and probably represent non-functional
+evolutionary intermediates, a subset of Alu exons have
+acquired ubiquitously strong or tissue-specific splicing ac-
+tivities in human tissues, as demonstrated by recent tran-
+scriptome studies using splicing-sensitive exon microarray
+
+© 2016 Lin et al. Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0
+International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and
+reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to
+the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver
+(http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.
+
+

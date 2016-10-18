@@ -1,0 +1,172 @@
+l
+
+i
+
+ 
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+ 
+f
+r
+o
+m
+m
+b
+o
+.
+a
+s
+m
+.
+o
+r
+g
+ 
+o
+n
+ 
+D
+e
+c
+e
+m
+b
+e
+r
+ 
+2
+3
+,
+ 
+2
+0
+1
+4
+ 
+-
+ 
+
+P
+u
+b
+
+l
+i
+
+s
+h
+e
+d
+ 
+b
+y
+ 
+m
+b
+o
+
+i
+
+.
+
+a
+s
+m
+o
+r
+g
+
+.
+
+ 
+
+RESEARCH ARTICLE
+
+Recovery of the Gut Microbiome following Fecal Microbiota
+Transplantation
+
+Anna M. Seekatz,a Johannes Aas,b Charles E. Gessert,c Timothy A. Rubin,b Daniel M. Saman,c Johan S. Bakken,d Vincent B. Younga
+
+Department of Internal Medicine, Division of Infectious Diseases, Department of Microbiology and Immunology, University of Michigan, Ann Arbor, Michigan, USAa;
+Essentia Health, Department of Gastroenterology, Duluth, Minnesota, USAb; Essentia Institute of Rural Health, Duluth, Minnesota, USAc; St. Luke’s Hospital, Section of
+Infectious Diseases, Duluth, Minnesota, USAd
+
+ABSTRACT Clostridium difﬁcile infection is one of the most common health care-associated infections, and up to 40% of patients
+suffer from recurrence of disease following standard antibiotic therapy. Recently, fecal microbiota transplantation (FMT) has
+been successfully used to treat recurrent C. difﬁcile infection. It is hypothesized that FMT aids in recovery of a microbiota capa-
+ble of colonization resistance to C. difﬁcile. However, it is not fully understood how this occurs. Here we investigated changes in
+the fecal microbiota structure following FMT in patients with recurrent C. difﬁcile infection, and imputed a hypothetical func-
+tional proﬁle based on the 16S rRNA proﬁle using a predictive metagenomic tool. Increased relative abundance of Bacteroidetes
+and decreased abundance of Proteobacteria were observed following FMT. The fecal microbiota of recipients following trans-
+plantation was more diverse and more similar to the donor proﬁle than the microbiota prior to transplantation. Additionally, we
+observed differences in the imputed metagenomic proﬁle. In particular, amino acid transport systems were overrepresented in
+samples collected prior to transplantation. These results suggest that functional changes accompany microbial structural
+changes following this therapy. Further identiﬁcation of the speciﬁc community members and functions that promote coloniza-
+tion resistance may aid in the development of improved treatment methods for C. difﬁcile infection.
+IMPORTANCE Within the last decade, Clostridium difﬁcile infection has surpassed other bacterial infections to become the lead-
+ing cause of nosocomial infections. Antibiotic use, which disrupts the gut microbiota and its capability in providing colonization
+resistance against C. difﬁcile, is a known risk factor in C. difﬁcile infection. In particular, recurrent C. difﬁcile remains difﬁcult
+to treat with standard antibiotic therapy. Fecal microbiota transplantation (FMT) has provided a successful treatment method
+for some patients with recurrent C. difﬁcile infection, but its mechanism and long-term effects remain unknown. Our results
+provide insight into the structural and potential metabolic changes that occur following FMT, which may aid in the development
+of new treatment methods for C. difﬁcile infection.
+
+Received 12 February 2014 Accepted 21 May 2014 Published 17 June 2014
+Citation Seekatz AM, Aas J, Gessert CE, Rubin TA, Saman DM, Bakken JS, Young VB. 2014. Recovery of the gut microbiome following fecal microbiota transplantation. mBio
+5(3):e00893-14. doi:10.1128/mBio.00893-14.
+Editor Stanley Maloy, San Diego State University
+Copyright © 2014 Seekatz et al. This is an open-access article distributed under the terms of the Creative Commons Attribution-Noncommercial-ShareAlike 3.0 Unported
+license, which permits unrestricted noncommercial use, distribution, and reproduction in any medium, provided the original author and source are credited.
+Address correspondence to Vincent B. Young, youngvi@med.umich.edu.
+
+Clostridium difﬁcile infection (CDI) is the leading cause of
+
+health care-associated diarrhea, and rates of CDI have signif-
+icantly increased during the past decade (1). It is estimated that
+there are more than 500,000 cases of CDI in the United States
+annually, and estimates of the ﬁnancial burden attributed to CDI
+range from $1.3 billion to $3.4 billion (2, 3). The manifestations of
+CDI can range from cramps, diarrhea, and colitis potentially to
+more severe outcomes, including toxic megacolon and death (1).
+Of signiﬁcant concern is the rate of recurrence following an initial
+CDI episode; 20 to 40% of patients do not resolve their infection
+following standard CDI treatment (metronidazole or vancomy-
+cin) and experience a recurrence of disease, which is associated
+with increased morbidity and mortality (1, 4). Once recurrence
+has occurred, the risk of subsequent recurrences is increased fur-
+ther (5).
+
+The gut microbiota plays an important part on the pathogen-
+esis of CDI. A healthy gut microbiota is thought to limit coloniza-
+
+tion by pathogens, a function of the microbiota known as coloni-
+zation resistance. A major risk factor for CDI is antibiotic use,
+which disrupts the normal structure of the gut microbiota and
+leads to the loss of colonization resistance (6). The difﬁculty in
+acquiring patient samples prior to the development of CDI has
+limited the identiﬁcation of speciﬁc members of the microbiota
+that are capable of providing colonization resistance against CDI
+in humans. While it is hypothesized that recurrent CDI occurs due
+to the inability of the indigenous microbiota to recover following
+antibiotic use (7), it is still unknown whether a speciﬁc microbial
+community is more prone to recurrence than others. Comparison
+of the fecal microbiota in patients developing nosocomial diar-
+rhea with and without C. difﬁcile colonization revealed few com-
+munity differences to indicate speciﬁc community structures sus-
+ceptible to CDI (8), although prior studies have demonstrated that
+a small number of patients with recurrent CDI exhibited a unique
+microbiota community structure (9). More than likely, the struc-
+
+May/June 2014 Volume 5 Issue 3 e00893-14
+
+® mbio.asm.org 1
+
+

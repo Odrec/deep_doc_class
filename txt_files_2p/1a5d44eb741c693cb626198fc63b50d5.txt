@@ -1,0 +1,29 @@
+Informatik D: Einführung in die Theoretische Informatik
+
+VO 18
+
+NP-Vollständigkeit
+
+Prof. Dr. Markus Chimani
+
+Theoretische Informatik, Uni Osnabrück
+
+Sommersemester 2016
+
+Komplexitätsklassen P und NP
+
+Wiederholung
+
+Deﬁnition. Die Komplexitätsklasse P umfasst alle
+Entscheidungsprobleme, die sich von einer
+deterministischen Turing-Maschine in polynomieller
+Zeit entscheiden lassen.
+
+Deﬁnition. Die Komplexitätsklasse NP umfasst alle
+Entscheidungsprobleme, die sich von einer
+nicht-deterministischen Turing-Maschine in
+polynomieller Zeit entscheiden lassen.
+
+Beobachtung. P ⊆ NP .
+
+

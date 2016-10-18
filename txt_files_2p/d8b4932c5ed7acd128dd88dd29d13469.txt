@@ -1,0 +1,95 @@
+ 
+
+Wintersemester 2014/2015
+
+Übungen zu
+
+ Elemente der diskreten Mathematik
+
+Blatt 6  Lösungen
+
+Prof. Dr. Heinz Spindler 
+
+Abgabe bis Montag, den 24.11. 2014, 12.00 Uhr 
+
+ 
+
+(cid:1) Aufgabe 1
+Für welche paarweise verschiedenene Ecken a, b, c des Graphen G (cid:1) (cid:2)E, K(cid:3)  gilt die 
+Gleichung d(cid:2)a, c(cid:3) (cid:1) d(cid:2)a, b(cid:3)(cid:4) d(cid:2)b, c(cid:3)?
+a) G (cid:1) C2 n (cid:1) (cid:2)(cid:5) p1,
+..., p2 n(cid:6), (cid:5) p1 (cid:7) p2,
+b) G (cid:1) Q3.
+c) G (cid:1) Pn
+
+..., p2 n(cid:8)1 (cid:7) p2 n, p2 n (cid:7) p1(cid:6)(cid:3) 
+
+Lösung
+
+a) Der Kreis wird durch zwei Ecken a, c in zwei Bögen der Längen k und m mit 
+k (cid:4) m (cid:1) 2 n geteilt. Ist k (cid:1) m, so ist d(cid:2)a, c(cid:3) (cid:1) d(cid:2)a, b(cid:3)(cid:4) d(cid:2)b, c(cid:3) für alle b. Ist k (cid:9) m, so 
+ist d(cid:2)a, c(cid:3) (cid:1) d(cid:2)a, b(cid:3)(cid:4) d(cid:2)b, c(cid:3) genau dann, wenn b auf dem kürzeren Bogen liegt. 
+b) Die Metrik hat die folgende Form d(cid:2)x, y(cid:3) (cid:1) (cid:10)i(cid:1)1
+d(cid:2)x, z(cid:3) (cid:1) d(cid:2)x, y(cid:3)(cid:4) d(cid:2)y, z(cid:3) genau dann, wenn (cid:11)xi (cid:8) zi(cid:12) (cid:1) (cid:11)xi (cid:8) yi(cid:12)(cid:4)(cid:11)yi (cid:8) zi(cid:12) für i (cid:1) 1, 2, 3 
+
+(cid:11)xi (cid:8) yi(cid:12) : Es gilt also 
+
+3
+
+2
+
+Übungen zur diskreten Mathematik
+
+(cid:3)(cid:4) (cid:2)
+
+(cid:3)
+
+(cid:3) (cid:1) (cid:2)
+
+i (cid:8) i(cid:12) (cid:1) (cid:11) i (cid:8) i(cid:12)(cid:4)(cid:11)
+
+(cid:11)
+(cid:2)
+gilt und das ist genau denn der Fall, wenn yi zwischen xi und zi liegt, wenn also 
+xi (cid:13) yi (cid:13) zi oder  zi (cid:13) yi (cid:13) xi für i (cid:1) 1, 2, 3 gilt. 
+c) d (cid:2)a, c(cid:3) (cid:1) d (cid:2)a, b(cid:3)(cid:4) d (cid:2)b, c(cid:3) gilt genau dann, wenn b zwischen a und c liegt. 
+(cid:1) Aufgabe 2
+
+i (cid:8) i(cid:12)
+
+a) Wie viele zu Q3 isomorphe Teilgraphen hat der vierdimensionale Hyperwürfel Q4?
+
+b) Zeige: Qn ist bipartit. 
+
+Lösung
+
+a) Die Abbildungen (cid:14)i(cid:15) :(cid:5)0, 1(cid:6)3(cid:16)(cid:5)0, 1(cid:6)4 mit (cid:14)i(cid:15)(cid:2)x(cid:3) (cid:1) (cid:2)x1,
+isomorph auf den Würfel Qi(cid:15) (cid:1) x (cid:18) (cid:5)0, 1(cid:6)4 xi (cid:1) (cid:15) (cid:20) Q4 ab! Damit hat man acht 
+Teilwürfel im Hyperwürfel Q4 . 
+
+..., x3(cid:3) bildet Q3 
+
+..., (cid:15), xi,
+
+Behauptung: Mehr gibt es nicht.
+Beweis. Es sei (cid:14) :(cid:5)0, 1(cid:6)3(cid:16)(cid:5)0, 1(cid:6)4 ein Isomorphismus auf einen Teilgraphen G von 
+Q4. Wir zeigen, dass G (cid:1) Qi(cid:15) für ein i (cid:1) 1, 2, 3, 4 und ein (cid:15) (cid:1) 0, 1. 
+Es seine a, b, c, d (cid:18) (cid:5)0, 1(cid:6)3, so dass b, c, d die Nachbarpunkte von a sind. Weiter 
+seien e, f , g die Ecken in (cid:5)0, 1(cid:6)3, so dass (cid:2)a, b, c, e(cid:3), (cid:2)a, b, d, g(cid:3), (cid:2)a, c, d, g(cid:3) 
+Quadrate in Q3 sind. Da Kanten in Kanten abgebildet werden, gilt für die Bildpunkte 
+a' (cid:1) (cid:14)(cid:2)a(cid:3), b' (cid:1) (cid:14)(cid:2)b(cid:3), c' (cid:1) (cid:14)(cid:2)c(cid:3), d ' (cid:1) (cid:14)(cid:2)d) auch: b', c', d ' sind Nachbarpunkte von a' in 
+Q4. Der vierte Nachbarpunkt x von a' in Q4 gehört nicht zu G. Es sei ohne 
+Einschränkung
+ a' (cid:1) (cid:2)0, 0, 0, 0(cid:3) und b' (cid:1) (cid:2)1, 0, 0, 0(cid:3), c' (cid:1) (cid:2)0, 1, 0, 0(cid:3), d ' (cid:1) (cid:2)0, 0, 1, 0(cid:3). 
+(Ist das nicht so, so drehe man den Würfel Q4 geeignet!) 
+
+Weiter gilt dann für die Bildpunkte e', f ', g' von e, f , g :
+(*)   (cid:2)a', b', c', e'(cid:3), (cid:2)a', b', d ', g'(cid:3), (cid:2)a', c', d ', g'(cid:3) sind Quadrate in Q4 , also 
+e' (cid:1) (cid:2)1, 1, 0, 0(cid:3), f ' (cid:1) (cid:2)1, 0, 1, 0(cid:3), g' (cid:1) (cid:2)0, 1, 1, 0(cid:3). 
+In dieser Situation ist x (cid:1) (cid:2)0, 0, 0, 1(cid:3) und wir behaupten, dass G (cid:1) Q4
+0 gilt, also die 
+vierten Koordinaten aller Punkte von G gleich Null sind. Wäre das nicht so, so gäbe 
+es einen Punkt y (cid:1) (cid:2)y1, y2, y3, 1(cid:3) in G. Da d(cid:2)p, y(cid:3) (cid:21) 4 für alle  p (cid:18) G, und da 
+(cid:2)0, 0, 0, 0(cid:3) , (cid:2)1, 0, 0, 0(cid:3), (cid:2)0, 1, 0, 0(cid:3), (cid:2)0, 0, 1, 0(cid:3) (cid:18) G, folgt zunächst 
+
+

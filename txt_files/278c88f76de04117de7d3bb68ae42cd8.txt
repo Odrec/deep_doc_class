@@ -1,0 +1,223 @@
+Übung 3 Lösung – Streuung und Streuungsmaße 
+Einführung die Wirtschafts- und Sozialstatistik 
+ 
+
+1.  Die Tabelle zeigt die Altersverteilung von zehn Promovenden. 
+
+ 
+a)  Berechnen Sie das arithmetische Mittel. 
+
+ 
+
+𝑥̅ =
+
+ 
+
+𝑥̅ =
+
+𝑥̅ =
+
+ 
+
+1
+𝑛
+
+𝑛
+∑ 𝑥𝑗
+𝑖=1
+
+ 
+
+1
+10
+1
+10
+
+× (25 + 26 + 27 + 28 + 29 + 30 + 31 + 32 + 33 + 34) 
+
+× 295 = 29,5 
+
+b)  Berechnen Sie die folgenden Streuungsmaße: Spannweite, Varianz, Standardabweichung. 
+
+ 
+1.  Spannweite: Größe des Bereichs, in dem sich Daten bewegen 
+
+ 
+𝑉 = 𝑥𝑚𝑎𝑥 − 𝑥𝑚𝑖𝑛 
+ 
+𝑉 = 34 − 25 = 9 
+ 
+
+2.  Varianz: durchschnittliche Variation aller Merkmale 
+
+ 
+
+𝑣𝑎𝑟(𝑥) =
+
+ 
+
+1
+𝑛
+
+𝑛
+∑(𝑥𝑖 − 𝑥̅)2
+𝑖=1
+
+ 
+
+i  Alter  𝑥𝑖 − 𝑥̅ 
+1 
+-4,5 
+-3,5 
+2 
+-2,5 
+3 
+4 
+-1,5 
+-0,5 
+5 
+0,5 
+6 
+7 
+1,5 
+2,5 
+8 
+3,5 
+9 
+4,5 
+10 
+Summe 
+ 
+1
+10
+
+25 
+26 
+27 
+28 
+29 
+30 
+31 
+32 
+33 
+34 
+ 
+
+𝑣𝑎𝑟(𝑥) =
+
+× 82,5 = 8,25 
+
+(𝑥𝑖 − 𝑥̅)2 
+20,25 
+12,25 
+6,25 
+2,25 
+0,25 
+0,25 
+2,25 
+6,25 
+12,25 
+20,25 
+82,50 
+
+ 
+
+1 
+
+3.  Standardabweichung: Wurzel aus der mittleren quadratischen Abweichung aller 
+
+Werte 
+ 
+𝑠 = √𝑣𝑎𝑟(𝑥) 
+ 
+𝑠 = √8,25 ≈ 2,87 
+
+2.  Das SOEP enthält die Angaben von Jugendlichen auf die Frage nach der Höhe ihres 
+Taschengeldes pro Woche. Für diese Aufgabe verwenden wir die Angaben von 50 
+Jugendlichen. Berechnen Sie das arithmetische Mittel, Median, Quartilsabstand und 
+Standardabweichung. 
+ 
+1.  Arithmetisches Mittel 
+
+ 
+
+𝑥̅ =
+
+ 
+
+𝑥̅ =
+
+1
+𝑛
+
+𝑛
+∑ 𝑥𝑗
+𝑖=1
+
+ 
+
+1
+50
+
+× (25 + 20 + 25 + 23 + 43 + 30 + 23 + 20 + 18 + 17
+
++ 17 + 18 + 18 + 17 + 16 + 18 + 28 + 34 + 23 + 20
++ 28 + 30 + 18 + 24 + 28 + 13 + 30 + 17 + 22 + 33
++ 13 + 31 + 25 + 18 + 22 + 14 + 13 + 18 + 16 + 17
++ 19 + 18 + 13 + 22 + 18 + 22 + 16 + 14 + 15 + 25) 
+
+× 1065 = 21,3 
+
+1
+50
+
+𝑥̅ =
+
+ 
+
+2.  Median 
+
+ 
+
+𝑥̃ =
+
+ 
+
+𝑥̃ =
+
+𝑥𝑛
+2
+
++𝑥𝑛
+2
+2
+
++1
+
+ 
+
+𝑥50
+2
+
++
+
+𝑥50
+2
+
++1
+
+2
+
+= 𝑥25,5 
+
+ 
+
+2 
+
+ 
+
+ 
+
+ 
+
+

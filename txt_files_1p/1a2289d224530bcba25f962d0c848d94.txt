@@ -1,0 +1,54 @@
+Table of Contents
+
+Matlab Homework 8 ...........................................................................................................  1
+Assignment 1 ..................................................................................................................... 1
+Assignment 2 ..................................................................................................................... 1
+Assignment 3 ..................................................................................................................... 2
+
+Matlab Homework 8
+
+worked on by: Corinna Kuehnapfel (956796) Benjamin Uhl (951381) Amir Sibahi (959151) Sebastian
+Blum (950549)
+
+clear all; close all; clc;
+
+Assignment 1
+
+a) get data
+
+load('hw8.mat')
+
+stim = imread('stimulus.png');
+
+Assignment 2
+
+a) b) c) for resizing
+
+squirrel_x_r = squirrel_x;
+squirrel_y_r = squirrel_y;
+% index for the right position after cutting of something
+i = 1;
+for idx = 1:length(squirrel_x)
+    % if out of range
+    if squirrel_x_r(i) < 780 || squirrel_x_r(i) > 1780 || ...
+            squirrel_y_r(i) < 300 || squirrel_y_r(i) > 1300
+        % delete
+        squirrel_x_r(i) = [];
+        squirrel_y_r(i) = [];
+        %lower index
+        i = i-1;
+    end
+    i = i +1;
+end
+% same for the swan
+swan_x_r = swan_x;
+swan_y_r = swan_y;
+i = 1;
+for idx = 1:length(swan_x)
+    if swan_x_r(i) < 780 || swan_x_r(i) > 1780 || ...
+            swan_y_r(i) < 300 || swan_y_r(i) > 1300
+        swan_x_r(i) = [];
+
+1
+
+

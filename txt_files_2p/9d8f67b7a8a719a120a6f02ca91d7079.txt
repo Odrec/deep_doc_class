@@ -1,0 +1,173 @@
+ 
+ 
+ 
+ 
+
+BWL / Management Support und WI 
+
+Management Support Systems I – WS 2014/15 
+Übung Nr. 8 
+Bearbeitungszeit: 08. – 14. Dezember  2014 
+
+Personalisierung und Exception Reporting 
+
+mit Cognos 10 - Report Studio 
+
+Teil A: Personalisierte Berichte 
+
+Die  Produktmanager  des  Textilunternehmens  TexOS,  die  jeweils  für  eine  Sortimentsgruppe 
+verantwortlich  sind,  benötigen  Informationen  über  die  Entwicklung  ihrer  Umsatzzahlen  im 
+Vergleich zu den Planzahlen je Artikel- und Kundengruppe. Dieser Informationsbedarf soll den 
+Produktmanagern wieder mit Cognos Report Studio-basierten Standardberichten zur Verfügung 
+gestellt  werden.  Allerdings  ist  zu  beachten,  dass  den  einzelnen  Produktmanagern  nur 
+Informationen über ihre eigene Sortimentsgruppe bereitgestellt werden sollen.  
+
+Die Möglichkeit, für jede der 6 Sortimentsgruppen einen spezifischen Bericht zu erstellen, mag in 
+diesem  Beispiel  noch  praktikabel  erscheinen;  für  Unternehmen,  die  vielleicht  ca.  100  bis  1.000 
+Sortimentsgruppen  besitzen,  ist  dieses  Szenario  jedoch  keine  Alternative!  Report  Studio  bietet 
+deshalb  zwei  Möglichkeiten,  einen  einzigen  Bericht  so  zu  gestalten,  dass  die  jeweiligen 
+Produktmanager trotzdem nur die für sie bestimmten Daten sehen können: 
+
+1.  Definition eines sog. Security-Filters 
+2.  Distribution von Berichtsteilen an verschiedene Adressaten mittels Zielgruppenverteilung 
+
+1. Definition eines Security-Filters 
+
+Ein sog. Security-Filter hat die Aufgabe, in einem Report nur die Datensätze anzeigen zu lassen, 
+die  in  Zusammenhang  mit  einem  bestimmten  Report  Studio-User  stehen.  Dafür  stellt  Report 
+Studio  die  Makro-Funktion  CSVIdentityNameList  zur  Verfügung.  Diese  Funktion 
+liefert 
+Informationen über die Zugehörigkeit des angemeldeten Users zu Report Studio-internen und -
+externen Benutzergruppen bzw. -rollen. d.h., die Funktion gibt eine Liste mit den Bezeichnungen 
+aller Benutzergruppen und -rollen zurück, in denen der angemeldete User Mitglied ist. Damit hat 
+man nun die Möglichkeit, für jeden Datensatz einer Berichts-Abfrage zu überprüfen, ob der Wert 
+eines bestimmten Attributs der Berichts-Abfrage in der durch die Funktion CSVIdentityNameList 
+erstellten  Liste  (Benutzergruppen  und  -rollen)  enthalten  ist.  Ist  der  Wert  enthalten,  soll  der 
+entsprechende Datensatz in den Bericht übernommen werden, sonst nicht. 
+Erstellen  Sie  daher  einen  Bericht,  der  für  jeden  der  sechs  Produktmanager  nur  die  jeweils 
+relevanten Daten ausgibt. Dazu stehen in Report Studio folgende sechs User zur Verfügung: 
+
+Sortimentsgruppe 
+
+Produktmanager (User)  Kennwort 
+
+Benutzerklasse 
+
+Damenoberbekleidung  DOB 
+
+Herrenoberbekleidung  HOB 
+
+Kinderoberbekleidung  KOB 
+
+Marken Bademode 
+
+Sportbekleidung 
+
+Accessoires 
+
+MBM 
+
+SPB 
+
+ACC 
+
+DOB@MSWI  Damenoberbekleidung 
+
+HOB@MSWI  Herrenoberbekleidung 
+
+KOB@MSWI  Kinderoberbekleidung 
+
+MBM@MSWI  Marken Bademode 
+
+SPB@MSWI 
+
+Sportbekleidung 
+
+ACC@MSWI  Accessoires 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 8          
+ 
+
+Seite 1/6 
+
+Wichtige Hinweise und Tipps: 
+
+  Erstellen  Sie  zuerst  einen  Basis-Bericht  ohne  Filter  und  speichern  Sie  ihn  unter  zwei 
+verschiedenen  Bezeichnungen  ab.  Das  hat  den  Vorteil,  dass  dieser  Basis-Bericht  für  die 
+folgenden Aufgaben  wieder verwendet werden kann (erspart Arbeit!). 
+
+  Erstellen Sie einen Filter auf die Sortimentsgruppe und verwenden Sie dabei die Makro-
+
+Funktion CSVIdentityNameList nach folgender Syntax:: 
+[Attributname] IN (#CSVIdentityNameList(';')#) 
+
+ 
+  Wählen Sie im “Abfragen-Explorer” ihre Abfrage aus und setzen  Sie im Eigenschaften-
+Fenster die Verarbeitung auf „begrenzt lokal“, ansonsten kann die Zielgruppenverteilung 
+nicht ausgeführt werden. 
+
+  Wundern Sie sich nicht, falls unter  Ihrem Benutzer  Gxx keine Daten angezeigt  werden. 
+Dann funktioniert der Filter. Melden Sie sich als einer der Produktmanager an (am besten 
+in einem neuen Browser-Fenster) und überprüfen Sie, welche Daten angezeigt werden. 
+
+2. Zielgruppenverteilung 
+
+Unter  Zielgruppenverteilung  (engl.  bursting)  versteht  man  den  Prozess  der  einmaligen 
+Ausführung  eines  Berichts  und  die  anschließende  Aufteilung  der  Ergebnisse  zur  Verteilung  an 
+mehrere Empfänger, die jeweils nur eine bestimmte Teilmenge der Daten einsehen (dürfen). Die 
+jeweiligen  Benutzer  (z.B.  die  Produktmanager)  führen  dementsprechend  den  erstellten  Bericht 
+nicht  selber  aus,  wie  dies  bei  einem  Bericht  mit  einem  Security-Filter  der  Fall  ist.  Stattdessen 
+erhalten  sie  Zugriff  auf  eine  gespeicherte  Version  des  Berichts,  der  nur  die  für  sie  bestimmte 
+Teilmenge an Daten enthält. 
+
+Mögliche  Adressaten  der  Zielgruppenverteilung  können  neben  Report  Studio-internen  und  -
+externen  Benutzern  auch  E-Mail-Adressen  sein!  Diese  Aufgabe  beschränkt  sich  jedoch  auf  die 
+oben  angegebenen  Benutzerklassen  für  die  Produktmanager.  Im  Gegensatz  zu  den  Security-
+Filtern 
+reicht  bei  der  Zielgruppenverteilung  aber  keine  Namensgleichheit  zwischen 
+Benutzerklasse  und  Sortimentsgruppe  aus.  Hier  benötigt  man  eine  sog.  Bursting-Tabelle,  die  die 
+Benutzergruppe, 
+(z.B. 
+Sortimentsgruppe) mappt. (Anhand dieses Bursting-Attributs wird der Bericht aufgeteilt und an 
+die Adressaten verteilt). Die Bursting-Tabelle (UEB08_SG_BURSTING) steht neben den DDL 
+auch schon im Report Studio zur Verfügung und hat folgenden Inhalt: 
+
+-rolle  oder  E-Mail-Adresse  mit  dem 
+
+sog.  Bursting-Attribut 
+
+Empfaenger 
+CAMID(":Herrenoberbekleidung") 
+
+Sortimentsgruppe 
+1 
+
+CAMID(":Damenoberbekleidung")  2 
+CAMID(":Sportbekleidung") 
+3 
+
+CAMID(":Kinderoberbekleidung") 
+CAMID(":Accessoires") 
+
+CAMID(":Marken Bademode") 
+
+4 
+5 
+
+6 
+
+Das  Attribut  Empfaenger  gibt  den  Report  Studio-spezifischen  Pfad  zu  der  Benutzerklasse  bzw.  -
+rolle  oder  dem  Benutzer  an.  Das  Attribut  Sortimentsgruppe  enthält  die  ID  der  einzelnen 
+Sortimentsgruppen und stellt damit eine Verbindung der Benutzerklassen  in  Report Studio und 
+den  Daten  des  DDLs  her 
+->  Sortimentsgruppe 
+Herrenoberbekleidung). 
+
+(Benutzerklasse  Herrenoberbekleidung 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 8          
+ 
+
+Seite 2/6 
+
+

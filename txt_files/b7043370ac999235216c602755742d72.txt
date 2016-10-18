@@ -1,0 +1,84 @@
+Fachbereich Physik
+Laborversuche zur Physik 3 
+
+Michelson-Interferometer1
+
+Abbildung 1: Albert Abraham
+Michelson . . .
+
+Abbildung 2: . . . und sein Interferometer.
+
+Das später nach ihm benannte Interferometer wurde von Albert Abraham Michelson 1881 
+entwickelt und in den Folgejahren verbessert, um die Existenz des sogenannten Lichtäthers 
+nachzuweisen. Das Misslingen dieses Nachweises bildet eine der Grundlagen für Einsteins spezielle
+Relativitätstheorie.
+Im Praktikumsversuch beschäftigen Sie sich mit weniger spektakulären Fragestellungen, Ziele sind:
+
+● Aufbau und Justierung des Michelson-Interferometers,
+● Abschätzung der Kohärenzlänge des verwendeten Lasers,
+● Messung der Laserwellenlänge,
+● Bestimmung des Brechungsindexes von Luft,
+● Messung der thermischen Ausdehnung von Metallen,
+● Bestimmung von piezoelektrischen Konstanten.
+
+1 Grundlagen
+1.1 Geschichte
+Näheres zum Experiment von Michelson (fortgesetzt von Michelson und Morley) finden Sie im 
+Internet, z. B. unter http://de.wikipedia.org/wiki/Michelson-Morley-Experiment .
+
+1 2008  ©  Klaus Betzler, modifiziert und aktualsiert  Reyher 29.10.14
+
+1.2 Prinzip und Funktionsweise
+Finden Sie unter http://de.wikipedia.org/wiki/Michelson-Interferometer .
+1.3 Anwendungen
+Neben den üblichen Anwendungen zur Längenmessung, die auch den Praktikumsversuch 
+dominieren, gibt es ein paar Spezialitäten, die man kennen sollte, Beispiele sind:
+
+● Nachweis von Gravitationswellen: 
+
+Näheres im Netz, z. B. unter http://de.wikipedia.org/wiki/GEO600
+  
+oder unter http://de.wikipedia.org/wiki/LIGO .
+
+ 
+
+● Fourier-Spektroskopie:
+
+Man misst ein Interferogramm, d. h. die Ausgangsintensität als Funktion des 
+Weglängenunterschieds der beiden „Strahlen“ im Michelson-Interferometer, das Spektrum 
+erhält man durch Fourier-Transformation. Näheres z. B. unter 
+http://de.wikipedia.org/wiki/Fourier-Transformations-IR-Spektroskopie .
+
+● Messung von Sterngrößen:
+
+Näheres z. B. unter http://isi.ssl.berkeley.edu/system_overview.htm .
+
+2 Experiment und Messverfahren
+In unserem Praktikumsversuch sind alle Einzelkomponenten auf Magnethaltern befestigt, somit auf 
+der Basisplatte aus Stahlguss frei (in zwei Dimensionen) positionierbar. 
+2.1 Aufbau
+Die Komponenten des Michelson-Interferometers sind in Abbildung 3 zu sehen. Als Lichtquelle 
+dient hauptsächlich ein Halbleiterlaser, dessen Leistung zwischen etwa 0,05 und 1 mW eingestellt 
+werden kann.
+
+Laser-Sicherheit: Der Halbleiterlaser im Versuch gehört zur Laserschutzklasse 2. 
+Dafür gilt laut Norm EN 60825–1:  Die zugängliche Laserstrahlung liegt nur im sichtbaren 
+Spektralbereich (400 nm bis 700 nm). Sie ist bei kurzzeitiger Bestrahlungsdauer (bis 0,25 s) 
+auch für das Auge ungefährlich. Eine längere Bestrahlung wird durch den natürlichen 
+Lidschlussreflex verhindert.
+Wichtiger Zusatz (Quelle: Wikipedia): Durch wissenschaftliche Untersuchungen (FH 
+Köln) wurde festgestellt, dass der Lidschlussreflex nur bei <20 % der Testpersonen gegeben 
+war. Von dem Vorhandensein des Lidschlussreflexes zum Schutz der Augen darf somit in der
+Regel nicht ausgegangen werden.
+Verhaltensmaßnahmen: Vermeiden Sie direkte Laserbestrahlung der Augen, auch 
+spiegelnde Reflexe sind gefährlich. Es sei denn, Sie sind sich absolut sicher, dass Ihr 
+Lidschlussreflex immer funktioniert . . .
+
+Als Strahlteiler wird ein Würfelstrahlteiler verwendet, der aus zwei verkitteten Prismen besteht. 
+Machen Sie sich seine Funktion klar. Einer der beiden Planspiegel ist auf einer Verschiebemechanik
+montiert, dadurch kann die Weglängendifferenz zwischen den beiden Interferometerarmen in einem
+relativ weiten Bereich variiert werden.
+Aufbauschema und Strahlengang sind inAbbildung 4 skizziert. Durch Spiegel und Strahlteiler 
+bringt man das Licht von zwei hintereinander liegenden virtuellen Lichtquellen zur Interferenz. 
+
+

@@ -1,0 +1,183 @@
+GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+Border Crossings: Colicins
+and Transporters
+Karen S. Jakes1,∗ and William A. Cramer2
+
+1Department of Physiology and Biophysics, Albert Einstein College of Medicine, Bronx,
+New York 10461; email: karen.jakes@einstein.yu.edu
+2Department of Biological Sciences, Purdue University, West Lafayette, Indiana 47907;
+email: waclab@purdue.edu
+
+Annu. Rev. Genet. 2012. 46:209–31
+
+First published online as a Review in Advance on
+August 28, 2012
+
+Keywords
+outer membrane receptor, outer membrane translocator
+
+The Annual Review of Genetics is online at
+genet.annualreviews.org
+
+This article’s doi:
+10.1146/annurev-genet-110711-155427
+Copyright c(cid:2) 2012 by Annual Reviews.
+All rights reserved
+
+0066-4197/12/1201-0209$20.00
+∗Corresponding author
+
+Abstract
+Colicins are protein toxins produced by Escherichia coli to kill related
+bacteria. They must cross the target cell outer membrane (OM), and
+some must also cross the inner membrane (IM). To accomplish cel-
+lular import, colicins have parasitized E. coli nutrient transporters as
+well as IM and periplasmic proteins normally used to maintain cell wall
+integrity or provide energy for nutrient uptake through transporters.
+Colicins have evolved to use both transporters and other membrane
+proteins through mechanisms different from those employed in phys-
+iological substrate uptake. Extended receptor-binding domains allow
+some colicins to search by lateral diffusion for binding sites on their
+OM translocators while bound to their primary OM receptor. Trans-
+port across the OM is initiated by entry of the unstructured N-terminal
+translocation domain into the translocator. Periplasmic and IM net-
+works subsequently accomplish insertion of the colicin cytotoxic do-
+main into or across the IM.
+
+209
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+stress
+
+INTRODUCTION
+Escherichia coli bacteria can engage in biological
+warfare against related bacteria by making
+plasmid-encoded protein toxins called colicins,
+which efﬁciently kill closely related bacteria
+that would otherwise compete for
+scarce
+nutrients under conditions of
+(77).
+Colicins have different modes of cytotoxicity;
+some make ion-conducting channels in the
+cytoplasmic (inner) membrane (IM) of suscep-
+tible cells, thereby deenergizing those cells,
+whereas others enzymatically degrade RNA
+or DNA in the cytoplasm or peptidoglycan
+precursors
+in the periplasm. Nonetheless,
+all colicins must bind to and cross the outer
+membrane (OM) of target E. coli. In order to
+accomplish that, the colicins have parasitized
+a small group of OM proteins (OMPs) whose
+normal role in the life of E. coli is to serve as
+transporters for essential nutrients, such as
+metals (e.g., siderophore-bound iron), vitamins
+(e.g., cobalamin), and sugars, or, in the case
+of the porins, to allow small molecules to pass
+while acting as a permeability barrier against
+large foreign molecules. The mechanisms by
+which these large protein toxins have co-opted
+systems normally used for the transport of small
+molecules across the cell envelope have been
+the subject of extensive genetic, biochemical,
+and structural studies, which are reviewed here.
+With the exception of colicin M, which acts
+in the periplasm (38), the colicins act enzymat-
+ically as nucleases in the cytoplasm of sensitive
+cells or as pores in the IM. The nucleases must
+therefore also cross the IM barrier.
+
+Regardless of their mode of killing, all
+twenty or so colicins that have been identiﬁed
+thus far share a common modular domain
+structure (Figure 1a). (For recent reviews,
+including details of killing mechanisms, which
+are not within the scope of this review, see
+References 14, 30, 58, 60, 72, 74, 85, 117.) In
+the order of the steps required for invasion
+and cytotoxicity, the speciﬁc functions of the
+domains are (a) the middle domain, responsible
+for receptor-binding (R), which binds with
+high afﬁnity to cell surface receptors, thereby
+
+Jakes· Cramer
+
+IM: inner membrane
+OM: outer membrane
+OMP: outer
+membrane protein
+Tol: tolerant
+
+210
+
+to
+
+extracellular milieu
+
+transferring the colicin from the three-
+dimensional
+the
+two-dimensional surface of the OM; (b) the
+N-terminal translocation (T) domain, which
+functions in transferring the colicin from its
+initial binding site on the OM to or through
+the periplasm; and (c) the C domain (cat-
+alytic, carboxy-terminal, or channel-forming),
+which carries the cytotoxicity function—pore-
+forming or enzymatic (2, 50, 103, 109, 113,
+121).
+
+Colicins are divided into groups using crite-
+ria related to all three of the basic steps in the
+killing process (Table 1): (a) the receptor used
+to bind at the cell surface (e.g., E colicins use
+BtuB as their primary receptor); (b) the group
+of IM and periplasmic proteins used to effect
+translocation from the OM into the periplasm
+and IM, either Tol (tolerant) A,B,Q,R (group
+A colicins) (31) or TonB, ExbB, ExbD (group
+B colicins) (32); and (c) their killing mechanism
+(e.g., RNase, DNase, peptidoglycan degrading,
+or pore forming). Recently, as they have been
+identiﬁed, colicins have also been characterized
+by the target cell translocator used to cross the
+OM after binding to their primary receptor.
+
+CRYSTAL STRUCTURES
+OF COLICINS
+Crystal structures have been obtained of the
+colicins B, Ia, N, E3, and M (Figure 1b–
+f ). These colicins exert three different cyto-
+toxic functions: pore formation/depolarization
+of the cytoplasmic membrane (Ia, B, and N)
+(50, 109, 113), endoribonuclease (E3) (103),
+and periplasmic phosphatase (M) (121). Struc-
+tures have also been obtained of an iso-
+lated C-terminal 175–200-residue layered he-
+lical channel-forming domain of colicin A (86)
+and E1 (39) and of the catalytic domain of the
+tRNase colicin D complexed with its immunity
+protein (46).
+
+The extended helical coiled-coil 160- ˚A-long
+R domain of colicin Ia (113), the 100- ˚A-long
+R domain of E3 (103), and the 74- ˚A single
+helix R domain of colicin B (50) (Figure 1)
+are prominent features of the structures of the
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.

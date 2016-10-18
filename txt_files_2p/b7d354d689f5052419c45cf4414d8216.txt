@@ -1,0 +1,175 @@
+ANRV389-CB25-26
+
+ARI
+
+4 September 2009
+
+21:46
+
+Listeria monocytogenes
+Membrane Trafﬁcking and
+Lifestyle: The Exception
+or the Rule?
+Javier Pizarro-Cerd´a1-3 and Pascale Cossart1-3
+
+1Unit´e des Interactions Bact´eries-Cellules, Institut Pasteur, Paris F75015, France
+2INSERM, U604, Paris F75015, France
+3INRA, USC2020, Paris F75015, France; email: javier.pizarro-cerda@pasteur.fr,
+pascale.cossart@pasteur.fr
+
+Key Words
+endocytosis, autophagy, membrane microdomains, cytoskeleton,
+caveolae, clathrin
+
+Abstract
+Listeria monocytogenes is an intracellular bacterial pathogen that pro-
+motes its internalization within nonprofessional phagocytes by interact-
+ing with speciﬁc host cell receptors. L. monocytogenes resides transiently
+in a membrane-bound compartment before escaping into the host cell
+cytosol where bacterial proliferation takes place. Actin-based motil-
+ity then promotes cell-to-cell pathogen spread. Extensive studies on
+cytoskeleton rearrangements, membrane trafﬁcking, and other events
+have established this microorganism as an archetype of cellular func-
+tion subversion for intracellular parasitism. Here we discuss the most
+signiﬁcant membrane trafﬁcking pathways hijacked by L. monocytogenes
+during the host cell infection process and compare them to those of
+other intracellular pathogens, in particular Shigella ﬂexneri, Salmonella
+enterica, and Mycobacterium tuberculosis.
+
+649
+
+Annu. Rev. Cell Dev. Biol. 2009. 25:649–70
+
+First published online as a Review in Advance on
+August 12, 2009
+
+The Annual Review of Cell and Developmental
+Biology is online at cellbio.annualreviews.org
+
+This article’s doi:
+10.1146/annurev.cellbio.042308.113331
+Copyright c(cid:2) 2009 by Annual Reviews.
+All rights reserved
+
+1081-0706/09/1110-0649$20.00
+
+Annu. Rev. Cell Dev. Biol. 2009.25:649-670. Downloaded from www.annualreviews.orgby WIB6113 - Universitatsbibliothek Osnabruck on 11/13/10. For personal use only.ANRV389-CB25-26
+
+ARI
+
+4 September 2009
+
+21:46
+
+Contents
+INTRODUCTION . . . . . . . . . . . . . . . . . . 650
+ENTRY INTO TARGET CELLS . . . . 650
+
+Subversion of Host Cell Receptors
+
+for Pathogen Internalization . . . . . 650
+
+Lipid Rafts and Membrane
+
+Organization at Pathogen
+Entry Sites . . . . . . . . . . . . . . . . . . . . . 655
+
+Clathrin and Caveolin: New Players
+
+and New Links with the
+Cytoskeleton . . . . . . . . . . . . . . . . . . . 657
+
+LIFE IN AND ESCAPE FROM
+
+THE VACUOLE. . . . . . . . . . . . . . . . . . 659
+Maturation of the Vacuole . . . . . . . . . . 659
+Listeriolysin O and Vacuolar
+
+Escape . . . . . . . . . . . . . . . . . . . . . . . . . 659
+
+INTRACYTOSOLIC SURVIVAL
+
+AND AUTOPHAGY . . . . . . . . . . . . . . 661
+CELL-TO-CELL SPREAD . . . . . . . . . . 663
+CONCLUSIONS . . . . . . . . . . . . . . . . . . . . 664
+
+INTRODUCTION
+Invasin of Yersinia pseudotuberculosis was the ﬁrst
+reported bacterial gene product involved in the
+invasion of host eukaryotic target cells (Isberg
+et al. 1987), which opened the door to a new
+ﬁeld that emerged at the boundaries of classical
+cell biology and microbiology: cellular micro-
+biology. During the same period, the hemolysin
+gene of Listeria monocytogenes was characterized
+and became not only the ﬁrst L. monocytogenes
+virulence factor to have its gene characterized
+but also the ﬁrst bacterial gene product for
+which a function critical to bacterial survival
+within host cells was attributed (Mengaud et al.
+1987). Since then, the molecular adaptations
+of L. monocytogenes to the eukaryotic host cell
+environment have been studied extensively
+(Figure 1), leading to the identiﬁcation of a
+broad range of new bacterial virulence factors
+that, similar to the Arp2/3-dependent actin-
+polymerizing ActA product or the InlB invasion
+protein, have paved the road toward profound
+discoveries in the areas of cell and developmen-
+tal biology. Many other bacterial pathogens
+
+Pizarro-Cerd´a· Cossart
+
+650
+
+have evolved fascinating adaptations to interact
+with and hijack host cell functions, and in the
+following sections we compare their molecular
+strategies with those of L. monocytogenes with
+the goal of drawing common themes in mem-
+brane trafﬁcking subversion and intracellular
+lifestyle.
+
+ENTRY INTO TARGET CELLS
+
+Subversion of Host Cell Receptors
+for Pathogen Internalization
+With the analysis of
+the L. monocytogenes
+genome, it was highlighted that this pathogen
+possesses an important arsenal of surface pro-
+teins that modulate bacterial interactions with
+the environment, in particular with host eu-
+karyotic cells (Bierne & Cossart 2007). Among
+these bacterial surface molecules, the inter-
+nalin family is characterized by the presence
+of amino-terminal leucine-rich repeat modules
+implicated in protein-protein interactions. Two
+members of this family are critical for the inter-
+nalization of L. monocytogenes within nonprofes-
+sional phagocytic cells through interaction with
+cell-speciﬁc receptors (Bierne et al. 2007).
+
+The prototype internalin (also known as
+InlA) is a cell wall covalently anchored protein,
+which binds the cellular adhesion molecule E-
+cadherin and induces bacterial entry into polar-
+ized human epithelial cells (Gaillard et al. 1991,
+Mengaud et al. 1996) (Figure 2). E-cadherin
+is normally involved in homophilic interac-
+tions for the establishment and maintenance
+of cell-to-cell contacts in epithelial tissues, and
+L. monocytogenes exploits the E-cadherin local-
+ization at the intestinal barrier to invade en-
+terocytes during the initial stages of host col-
+onization (Lecuit et al. 2001). E-cadherin is
+also involved in the bacterial invasion of the
+syncitio-trophoblast layer at later placental in-
+fection stages (Disson et al. 2008). Through
+studies in human epithelial cell lines, it has
+been shown that, during host cell invasion,
+L. monocytogenes hijacks the molecular machin-
+ery associated with the cytoplasmic tail of
+E-cadherin. β- and α-catenins, which are
+
+Annu. Rev. Cell Dev. Biol. 2009.25:649-670. Downloaded from www.annualreviews.orgby WIB6113 - Universitatsbibliothek Osnabruck on 11/13/10. For personal use only.

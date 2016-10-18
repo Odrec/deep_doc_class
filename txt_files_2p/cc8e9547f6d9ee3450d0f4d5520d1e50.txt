@@ -1,0 +1,234 @@
+Grundmodul Genetik 
+
+UV-Inaktivierung 
+
+ 
+Im Versuch UV-Inaktivierung soll die Auswirkung von UV-Licht induzierten DNA-Schäden 
+untersucht werden. Dabei werden ein RecA+ und ein RecA- Stamm von Escherichia coli mit 
+UV-Licht  bestrahlt.  Nachverschiedenen  Bestrahlungszeiten  werden  Proben  entnommen  und 
+der  Lebendtiter  bestimmt.  Die  Überlebensraten  und  die  UV-Sensitivität  beider  Stämme 
+werden miteinander verglichen und die Wirkung von RecA über die SOS-Antwort berechnet. 
+ 
+Versuchsdurchführung: 
+Achtung!  Die  eingesetze  UV  Strahlung  ist  mutagen.  Deshalb  sollten  Hände  mit 
+Handschuhen geschützt werden und nicht ohne Schutzbrille direkt in das Licht geblickt 
+werden.  Die  einzelnen  Schritte  werden  jeweils  vor  der  Durchführung  noch  genau 
+besprochen.  Bitte die einzelnen Schritte erst auf Anweisung durchführen! 
+ 
+1.Tag: Versuchsdurchführung 
+Gruppen 1-6 erhalten Stamm CSH36 mit einer optischen Dichte OD600 = 2 
+Gruppen 7-12 erhalten Stamm JM109 mit einer optischen Dichte OD600 = 2 
+ 
+1.  1ml  der  Bakterienkultur  werden  mit  10  ml  NaCl  Lösung  in  einer  Petrischale  gemischt. 
+Davon  wird  1ml  in  eine  Küvette  überführt  und  die  optische  Dichte  bei  600nm  gegen 
+Wasser  als  Referenz  gemessen.  Dann  wird  für  die  beiden  Stämme  unterschiedlich 
+verfahren: 
+
+ 
+Für die Gruppen mit CSH36: 10µl werden in einem Eppendorfgefäß mit 990 µl NaCl Lösung 
+gemischt und mit -2 (für 10-2fache = 1:100 fache Verdünnung) beschriftet. 
+ 
+Für die Gruppen mit JM109: 100µl werden in einem Eppendorfgefäß pipettiert. und und mit  
+0 (für 100fache = unverdünnt) beschriftet.  
+ 
+2. Die restliche Bakterienkultur verbleibt in der Petrischale und wird nun mit UV-Licht von 
+0.5 mW/cm2 bestrahlt. Die Bestrahlung erfolgt wieder für beide Stämme unterschiedlich 
+lange: 
+
+ 
+CSH36: nach 20, 40 und 60 sec. werden je 10µl Probe entnommen und wie zuvor in 990µl 
+NaCl Lösung pipettiert. Dazu werden drei Eppendorfgefäße vorbereitet und mit 20, 40 und 60 
+beschriftet. 
+ 
+JM109:  nach10,  30  und  60  sec.  werden  je  100µl  Probe  entnommen  und  wie  zuvor  in  ein 
+Eppendorfgefäß pipettiert. Dazu werden drei Eppendorfgefäße vorbereitet und mit  10, 30 und 
+60 beschriftet. 
+ 
+
+Nehmen Sie die Petrischale mit den Zellen, die Gefäße für die Proben und eine passend 
+eingestellte Pipette mit Spitze bitte mit zu den Betreuern an den UV-Lampen. 
+
+ 
+3. Jede Gruppe hat jetzt vier Eppendorfgefäße mit Proben. Die Nullprobe vor der Bestrahlung 
+und drei Proben von den unterschiedlichen Zeitpunkten der Bestrahlung (je nach Stamm 
+10,  30  und  60  bzw.  20,  40  und  60.  Von  jeder  dieser  vier  Proben  erstellen  sie  nun  eine 
+Verdünnungsreihe entsprechend dem unten vorgegebenen Schema.  
+
+ 
+
+ 
+
+Zellen (µl) 
+NaCl-Lsg. (µl) 
+Zellen (µl) 
+NaCl-Lsg. (µl) 
+Zellen (µl) 
+NaCl-Lsg. (µl) 
+Zellen (µl) 
+NaCl-Lsg. (µl) 
+
+1 zu 10 
+10-1 
+
+20 
+180 
+20 
+180 
+20 
+180 
+20 
+180 
+
+1 zu 100 
+10-2 
+
+20 
+180 
+20 
+180 
+20 
+180 
+20 
+180 
+
+1 zu 1000 
+10-3 
+
+20 
+180 
+20 
+180 
+20 
+180 
+20 
+180 
+
+ 
+
+Zellen (µl) 
+NaCl-Lsg. (µl) 
+Zellen (µl) 
+NaCl-Lsg. (µl) 
+Zellen (µl) 
+NaCl-Lsg. (µl) 
+Zellen (µl) 
+NaCl-Lsg. (µl) 
+
+1 zu 1000 
+10-3 
+
+20 
+180 
+20 
+180 
+20 
+180 
+20 
+180 
+
+1 zu 10000 
+10-4 
+
+1 zu 100000 
+10-5 
+
+1 zu 1000000 
+10-6 
+
+20 
+180 
+20 
+180 
+20 
+180 
+20 
+180 
+
+20 
+180 
+20 
+180 
+20 
+180 
+20 
+180 
+
+20 
+180 
+20 
+180 
+20 
+180 
+20 
+180 
+
+JM109: 
+
+Zeitpunkt 
+(sec.) 
+0 
+
+10 
+
+30 
+
+60 
+
+ 
+CSH36: 
+
+Zeitpunkt 
+(sec.) 
+0 
+
+20 
+
+40 
+
+60 
+
+Die Angaben in der Tabelle in der Spalte Zellen beziehen sich jeweils auf die vorhergehende 
+Verdünnungsstufe. Die Verdünnungen werden entsprechend ihrer Verdünnung mit -1, -2, -3 
+... usw. beschriftet. 
+ 
+4. 30µl der unten angegebenen Verdünnungen werden auf Platten mit Nährmedium nach dem 
+von den Betreuern an der Tafel vorgegebenen Schema getropft. und die Platten über Nacht 
+bei 37°C inkubiert. 
+
+. 
+JM109:  0,  -1,  -2,  -3,  zusätzlich  30  µl  der 
+NaCl-Lsg. als Negativkontrolle: 
+
+CSH36:  -3,  -4,  -5,  -6  zusätzlich  30  µl  der 
+NaCl-Lsg als Negativkontrolle: 
+
+ 
+
+0
+
+-2
+
+Kontr.
+
+-1
+
+-3
+
+-3
+
+-5
+
+Kontr.
+
+-4
+
+-6
+
+ 
+2.Tag: Auswertung 
+Zählen Sie jeweils alle Kolonien für alle Verdünnungen und bestimmen Sie die Mittelwerte 
+für den gesamten Kurs. Anschließend wird gemeinsam die Überlebensrate bestimmt. 
+
+ 
+
+

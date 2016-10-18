@@ -1,0 +1,93 @@
+Using	Corpora	to	Explore	Syntactic	Variation	
+		In	this	exercise,	we	will	try	to	gain	some	hands-on	experience	in	working	with	
+corpora	in	order	to	explore	syntactic	variation.	Here	is	what	you	need:	
+	
+•  You	will	be	working	in	groups.	Each	group	needs	at	least	one	computer	
+which	is	able	to	run	AntConc:	
+http://www.laurenceanthony.net/software/antconc/	
+•  You	will	need	access	to	one	or	several	of	the	International	Corpus	of	English	
+(ICE)	national	subcorpora:	
+https://www.dropbox.com/sh/pwwvnanhlh5suda/AACfTfToRruQMJftNeGJ
+u-eka?dl=0	
+These	corpora	are	divided	into	discrete	text	types	(e.g.	private	conversations,	
+news	writing,	academic	writing,	etc.)	according	to	the	same	standard	and	
+proportions,	so	comparisons	of	different	text	types	within	one	ICE	corpus	
+and	of	general	tendencies	across	different	ICE	corpora	are	reliable	and	can	be	
+taken	as	representative.	
+Unfortunately,	since	different	research	teams	compiled	the	different	ICE	
+corpora,	the	format	in	which	they	are	available	can	be	slightly	different.	Each	
+subcorpus	comes	with	a	manual	that	explains	how	the	different	text	types	
+are	coded.	
+•  Finally,	there	is	a	document	on	StudIP	which	describes	some	currently	
+ongoing	changes	in	the	syntax	of	English.	
+	First,	take	a	look	at	the	document	and	read	the	outlines	of	the	different	processes	of	
+change.	Most	of	these	are	well	documented	for	British	and	American	English,	but	not	
+necessarily	for	the	linguistic	reality	in	smaller	English-speaking	countries	like	
+Jamaica,	Nigeria,	or	sometimes	even	New	Zealand.	So	there	is	a	real	chance	that	
+today	you	may	discover	something	no-one	has	ever	discovered	before.	
+	Think	about	what	change	you	find	most	interesting	for	a	little	analysis	project.	
+Maybe	there	is	just	something	about	a	certain	grammatical	construction	that	makes	
+it	generally	interesting	to	you,	maybe	you	feel	like	searching	for	one	type	of	
+construction	in	a	corpus	will	be	easier	than	searching	for	another.	Whatever	the	
+case,	settle	on	one	and	start	thinking	about	how	you	might	go	about	researching	it.	
+Some	of	the	questions	to	consider	include:	
+•  Does	one	variant	occur	more	in	spoken	or	in	written	language?	
+•  Does	formality	play	a	role?	How	could	this	be	measured	in	a	corpus?	
+•  Are	there	any	purely	linguistic	effects	that	constrain	or	promote	the	feature	
+(e.g.	are	there	certain	types	of	verb	or	constructions	the	progressive	aspect	
+likes	or	doesn’t	like)?	
+•  How	do	two	different	varieties	compare	in	terms	of	the	overall	frequency	of	
+the	phenomenon	you	are	interested	in,	and	is	the	distribution	of	the	
+phenomenon	by	text	type	the	same	in	both	varieties?	
+
+	
+
+1	
+
+• 
+
+In	texts/varieties	with	higher	frequencies	of	the	phenomenon,	does	it	occur	
+in	new	contexts	(e.g.	do	we	find	the	progressive	with	stative	verbs	in	
+conversation,	but	not	in	written	English)?	
+•  Are	there	any	other	notable	patterns?	
+	This	seems	like	a	set	of	pretty	big	and	complicated	questions,	but	the	point	of	this	
+exercise	is	that	it	is	possible	for	a	clever	student	with	access	to	a	corpus	to	at	least	
+begin	answering	some	of	them	(though	probably	not	establish	the	last	word	on	all	of	
+them).	The	first	thing	you	need	to	think	about	is	how	you	can	tell	AntConc	to	search	
+for	precisely	the	construction	you	are	interested	in.	So	now	is	probably	a	good	time	
+to	open	the	program	and	play	around	with	it	a	little	bit.	
+	Once	you	have	familiarized	yourself	with	AntConc	and	its	search	functionality,	think	
+about	how	you	could	write	searches	that	target	the	feature	you	are	interested	in.	
+Two	considerations	are	important:	
+•  Precision:	you	want	the	search	to	capture	as	few	things	that	are	not	actual	
+instances	of	the	phenomenon	you	are	looking	at	(“false	positives”)	as	
+possible.	
+•  Recall:	You	want	to	find	as	many	of	all	the	relevant	features	in	the	corpus	as	
+possible,	and	ideally	all	(any	ones	that	are	not	found	are	called	“false	
+negatives”)	
+An	example:	if	you	were	to	look	at	the	progressive	aspect,	you	might	search	for	
+different	inflectional	forms	of	the	verb	be	combined	with	a	word	ending	in	*ing.	This	
+will	capture	many	progressive	forms,	but	will	also	give	you:	
+•  False	positives:	“He	is	king.”	
+•  False	negatives:	“We	are	surely	doing	the	right	thing.”	
+For	the	purposes	of	today’s	class,	we	do	not	expect	to	achieve	100%	accuracy,	so	as	
+long	as	you	can	figure	out	a	good	way	to	approximate	your	feature	with	one	or	a	
+couple	of	search	expressions,	that	will	be	fine.	
+	Next,	think	about	one	or	two	dimensions	of	variation	your	group	would	like	to	
+analyze	in	regard	to	the	feature.	Maybe	you	want	to	simply	compare	written	and	
+spoken	English	in	one	variety.	Maybe	a	comparison	of	two	national	varieties	on	the	
+whole	is	what	you	are	interested	in.	Or	you	could	restrict	yourself	just	to	written	
+English	and	tease	apart	different	text	types	within	that	modality	(e.g.	to	what	extent	
+do	news	writing,	academic	prose	and	personal	letters	behave	differently).	Finally,	
+perhaps	you	just	want	to	use	the	corpus	to	collect	examples	and	analyze	those	‘from	
+within’,	i.e.	paying	attention	to	what	kind	of	linguistic	or	semantic	factors	affect	the	
+choice	of	a	construction.	
+	Once	you	have	decided	as	a	group	what	the	broad	question	is	you	want	to	focus	on,	
+start	planning	the	project	in	a	bit	more	detail:	will	it	be	enough	to	write	one	search	
+expression	or	do	you	need	several	to	capture	all	(or	most)	cases	of	your	feature	of	
+interest?	Is	there	a	way	to	divide	the	work	clearly,	so	different	group	members	can	
+	
+
+2	
+
+

@@ -1,0 +1,559 @@
+Cytoplasmic ATP Hydrolysis Powers Transport of
+Lipopolysaccharide Across the Periplasm in 
+Suguru Okuda
+Science
+DOI: 10.1126/science.1228984
+
+, 1214 (2012);
+
+ et al.
+
+338
+
+ 
+
+E. coli
+
+This copy is for your personal, non-commercial use only.
+ 
+
+If you wish to distribute this article to others
+colleagues, clients, or customers by 
+
+clicking here.
+ 
+
+, you can order high-quality copies for your
+
+Permission to republish or repurpose articles or portions of articles
+following the guidelines 
+
+here.
+
+ 
+
+ can be obtained by
+
+The following resources related to this article are available online at
+www.sciencemag.org (this information is current as of
+ 
+
+October 28, 2014
+
+ ): 
+
+Updated information and services, 
+version of this article at: 
+http://www.sciencemag.org/content/338/6111/1214.full.html
+ 
+
+including high-resolution figures, can be found in the online
+
+Supporting Online Material 
+http://www.sciencemag.org/content/suppl/2012/11/07/science.1228984.DC1.html 
+
+can be found at: 
+
+This article 
+http://www.sciencemag.org/content/338/6111/1214.full.html#ref-list-1
+ 
+
+, 14 of which can be accessed free:
+
+cites 27 articles
+
+10 articles hosted by HighWire Press; see:
+This article has been 
+http://www.sciencemag.org/content/338/6111/1214.full.html#related-urls
+ 
+
+cited by 
+
+This article appears in the following 
+Microbiology
+http://www.sciencemag.org/cgi/collection/microbio
+ 
+
+subject collections:
+
+4
+4
+4
+4
+4
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+2
+2
+2
+2
+2
+
+ 
+ 
+ 
+ 
+ 
+,
+,
+,
+,
+,
+
+8
+8
+8
+8
+8
+2
+2
+2
+2
+2
+
+ 
+ 
+ 
+ 
+ 
+r
+r
+r
+r
+r
+e
+e
+e
+e
+e
+b
+b
+b
+b
+b
+o
+o
+o
+o
+o
+
+ 
+ 
+ 
+ 
+ 
+
+.
+.
+.
+.
+.
+
+ 
+ 
+ 
+ 
+ 
+
+t
+t
+t
+t
+t
+c
+c
+c
+c
+c
+O
+O
+O
+O
+O
+n
+n
+n
+n
+n
+o
+o
+o
+o
+o
+g
+g
+g
+g
+g
+r
+r
+r
+r
+r
+o
+o
+o
+o
+o
+g
+g
+g
+g
+g
+a
+a
+a
+a
+a
+m
+m
+m
+m
+m
+e
+e
+e
+e
+e
+c
+c
+c
+c
+c
+n
+n
+n
+n
+n
+e
+e
+e
+e
+e
+c
+c
+c
+c
+c
+s
+s
+s
+s
+s
+.
+.
+.
+.
+.
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+m
+m
+m
+m
+m
+o
+o
+o
+o
+o
+r
+r
+r
+r
+r
+f
+f
+f
+f
+f
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+i
+i
+i
+i
+i
+
+d
+d
+d
+d
+d
+e
+e
+e
+e
+e
+d
+d
+d
+d
+d
+a
+a
+a
+a
+a
+o
+o
+o
+o
+o
+n
+n
+n
+n
+n
+w
+w
+w
+w
+w
+o
+o
+o
+o
+o
+D
+D
+D
+D
+D
+
+l
+l
+l
+l
+l
+
+(print ISSN 0036-8075; online ISSN 1095-9203) is published weekly, except the last week in December, by the
+Copyright
+
+Science 
+American Association for the Advancement of Science, 1200 New York Avenue NW, Washington, DC 20005. 
+2012 by the American Association for the Advancement of Science; all rights reserved. The title 
+ is a
+registered trademark of AAAS. 
+
+Science
+
+(cid:160)
+(cid:160)
+REPORTS
+
+Cytoplasmic ATP Hydrolysis Powers
+Transport of Lipopolysaccharide
+Across the Periplasm in E. coli
+
+Suguru Okuda,1 Elizaveta Freinkman,1 Daniel Kahne1,2*
+
+Millions of molecules of lipopolysaccharide (LPS) must be assembled on the Escherichia coli
+cell surface each time the cell divides. The biogenesis of LPS requires seven essential
+lipopolysaccharide transport (Lpt) proteins to move LPS from the inner membrane through the
+periplasm to the cell surface. However, no intermediate transport states have been observed.
+We developed methods to observe intermediate LPS molecules bound to Lpt proteins in the process
+of being transported in vivo. Movement of individual LPS molecules along these binding sites
+required multiple rounds of adenosine triphosphate (ATP) hydrolysis in vitro, which suggests
+that ATP is used to push a continuous stream of LPS through a transenvelope bridge in discrete
+steps against a concentration gradient.
+
+The outer membrane of Gram-negative bacte-
+
+ria is an asymmetric bilayer, with the inner
+leaflet composed of phospholipids and
+the outer leaflet composed of lipopolysaccharide
+(LPS). The LPS layer allows Gram-negative
+bacteria to survive in harsh environments and
+in the presence of many antibiotics. However,
+phospholipids and LPS do not spontaneously
+assemble into an asymmetric bilayer, and the
+cell devotes substantial resources to synthesiz-
+ing LPS at the inner membrane and assembling
+it in the outer membrane (1). The process by
+which hydrophobic LPS molecules are trans-
+ported across two membranes and the intervening
+aqueous periplasmic space is not understood,
+but it is known to be mediated by seven essen-
+tial Lpt (lipopolysaccharide transport) proteins.
+The heteromeric ATP-binding cassette (ABC)
+transporter LptBFG forms a complex in the in-
+ner membrane with a membrane-bound protein,
+LptC (Fig. 1A) (2–5). Using homologous do-
+mains, the C terminus of LptC interacts with the
+N terminus of LptA, and the C terminus of LptA
+interacts with the N-terminal periplasmic domain
+of LptD (6–9). The resulting head-to-tail oligomer
+produced creates a transenvelope protein bridge
+that connects the inner-membrane Lpt compo-
+nents with the outer-membrane LPS translocon
+(LptD and LptE) (6, 10–15). Defects in any of
+the Lpt proteins cause LPS to accumulate in
+the outer leaflet of the inner membrane (2, 16).
+However, the mechanism of LPS transport has
+been difficult to study because it involves two
+membranes and seemingly cannot be broken
+into different steps.
+
+To elucidate the mechanism of LPS trans-
+port, we first sought to identify sites where
+
+1Department of Chemistry and Chemical Biology, Harvard
+University, Cambridge, MA 02138, USA. 2Department of Bi-
+ological Chemistry and Molecular Pharmacology, Harvard Med-
+ical School, Boston, MA 02115, USA.
+*To whom correspondence should be addressed. E-mail:
+kahne@chemistry.harvard.edu
+
+LPS interacts with the Lpt proteins in vivo. We
+incorporated an unnatural amino acid contain-
+ing a photo–cross-linker ( p-benzoylphenylalanine,
+pBPA) at 23 positions in LptC and 14 positions
+in LptA (17–20). Four of the LptC mutants and
+five of the LptA mutants formed cross-links
+to LPS in an ultraviolet light (UV)–dependent
+manner (Fig. 1, B and C). LptC adducts con-
+tained the cross-linker at positions 47, 78,
+172, and 182 (Fig. 1B), whereas LptA adducts
+contained the cross-linker at positions 32, 36,
+95, 114, and 116 (Fig. 1C). Except for residue
+47 in LptC, all of these LPS adducts formed
+on the inside of the b-jellyroll structures.
+Residue 47 in LptC is in a disordered region
+of the protein (9), which may become ordered
+when it interacts with the LptBFG complex or
+LPS. No cross-links from side chains on the
+outer surface of the b jellyroll of LptC or LptA
+were observed. Thus, we propose that LPS spe-
+cifically binds inside these proteins and transits
+the periplasm on the inside of the b jellyroll of
+these proteins.
+
+To determine whether LptC or LptA alone
+can extract LPS from the inner membrane or
+whether cross-linking to LPS is dependent on
+the entire transenvelope complex, we manipu-
+lated the expression levels of the Lpt compo-
+nents. We overexpressed LptC or LptA alone
+or in combination with the other inner-membrane
+Lpt proteins (i.e., LptBFG or LptBFGC), rea-
+soning that LptC and LptA would mostly not
+reside in Lpt complexes if they were overex-
+pressed individually. Cross-linking of LPS to
+LptC at position 47, but not at positions 78, 172,
+or 182, increased substantially when LptBFG
+was co-overexpressed (Fig. 2A). Thus, when
+LptA, LptD, and LptE are limiting, LPS accu-
+mulates near residue 47 of LptC. Position 47
+may be located near a strong binding site for
+LPS, whereas the other cross-linking positions
+may reflect more transient interactions that oc-
+cur during the movement of LPS through fully
+assembled bridges. Because LPS accumula-
+
+tion at the binding site around residue 47 de-
+pends on LptBFG, it is also clear that LptC
+cannot extract LPS directly from the inner mem-
+brane unaided.
+
+All five LptA mutants showed increased
+cross-linking with LPS when they were co-
+overexpressed with LptBFGC (Fig. 2B). Thus,
+LptA cannot receive LPS directly from the in-
+ner membrane, but requires LptBFGC complex.
+LPS must migrate out of the inner membrane in
+an ordered process that requires LptBFG to get
+to LptC and LptBFGC to get to LptA. Because
+LPS transport between these proteins can occur
+in incomplete Lpt bridges, it was possible to
+develop a biochemical system to separate the
+individual step of LPS release from the mem-
+brane from that of the transport step along the
+Lpt bridge.
+
+To study the ATP dependence of LPS ex-
+traction from the inner membrane, we first pre-
+pared spheroplasts containing overexpressed
+LptC(T47pBPA) and LptBFG by disrupting the
+outer membrane and cell wall with ethylene-
+diaminetetraacetic acid (EDTA) and lysozyme.
+The inner membrane was then permeabilized by
+osmotic shock to introduce buffer with or with-
+out ATP into the cytoplasm to generate right-
+side-out (RSO) membrane vesicles (21–25). These
+vesicles were then irradiated with UV light.
+Substantial LPS cross-linking to residue 47 of
+LptC was only observed when LptBFG was co-
+overexpressed and ATP was present (Fig. 3A).
+A small amount of LPS was cross-linked to
+LptC in the absence of ATP, but this amount did
+not increase over time (Fig. 3A). Presumably this
+small amount of LPS was present before gen-
+erating the RSO fraction. Because cross-linking
+increased as a function of time in the presence
+of ATP, transfer of LPS from the inner mem-
+brane to the membrane-bound LptC appears to
+require energy.
+
+We next addressed whether LPS could be
+transferred to the periplasmic component, LptA,
+in this in vitro system. This reconstitution re-
+quires release of LPS from a membrane fraction
+to a soluble periplasmic protein (fig. S1). Puri-
+fied LptA(I36pBPA), which cross-linked LPS
+in vivo, was added to RSO vesicles and analyzed
+for cross-linking to LPS. LPS cross-linked to
+LptA over time only in the presence of ATP and
+when all four inner-membrane components were
+overexpressed (Fig. 3B). Notably, LPS did not
+cross-link to LptA in the absence of LptC over-
+expression; this finding indicates that LPS must
+first be transferred to LptC before being trans-
+ferred to LptA, which is consistent with previous
+work (9).
+
+To confirm that the soluble periplasmic bridge
+component assembled in this in vitro system re-
+flects the in vivo assembly process, we tested
+the specificity of this cross-linking. An LptA mu-
+tant, LptA(H37pBPA), interacts directly with
+LptC (6) but not with LPS in vivo (Fig. 1C).
+Residues Ile36 and His37 are both located on the
+edge of the b jellyroll that interacts with LptC,
+
+1214
+
+30 NOVEMBER 2012 VOL 338 SCIENCE www.sciencemag.org
+
+

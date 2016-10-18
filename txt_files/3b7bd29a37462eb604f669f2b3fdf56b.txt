@@ -1,0 +1,149 @@
+Vorlesungsinhalte
+Grundkurs II
+
+§ Zahlräume  – Große Zahlen
+§ Lagebeziehungen - Pläne
+§ Symmetrie
+§ Symmetrie, Parkette
+§ Größen – Einführung, Längen
+§ Größen – Geld, Zeit, 
+§ Größen – Hohlmaße,  Gewichte
+§ Sachrechnen – Ziele, Modellieren, Aufgabenkriterien
+§ Problemlösen
+§ Muster und Strukturen - Argumentieren
+§ Kombinatorik & Daten
+§ Wahrscheinlichkeit
+
+Hedwig  Gasteiger,  Uni Osnabrück 
+
+2
+
+4. Wahrscheinlichkeit - Mathematischer Hintergrund
+Selbsterfahrung
+
+Eine Münze wird fünfmal geworfen.
+
+Grundkurs Mathematikdidaktik II
+
+Prof. Dr. Hedwig Gasteiger
+
+Fragen und Anregungen zur Vorlesung bitte an: 
+hedwig.gasteiger@uni-osnabrueck.de
+
+Gliederung
+Kombinatorik, Daten, Wahrscheinlichkeit
+1. Grundsätzliches
+2. Kombinatorik
+3. Daten
+
+- Mathematischer  Hintergrund
+- Ziele und  Begründungsaspekte
+- Mögliche  Zugänge
+- Lernaktivitäten
+
+4. Zufall und Wahrscheinlichkeit
+
+- Mathematischer  Hintergrund
+- Vorkenntnisse  und  Fehlvorstellungen
+- Begründungsaspekte  und  Ziele
+- Zugangsmöglichkeiten  und  Lernaktivitäten
+
+Hedwig  Gasteiger,  Uni Osnabrück 
+
+3
+
+Hedwig  Gasteiger,  Uni Osnabrück 
+
+4
+
+05.07.16
+
+1
+
+4. Wahrscheinlichkeit - Mathematischer Hintergrund: Begriffe
+Zufallsexperiment
+
+Es gibt also Abläufe, deren Ausgang wir prinzipiell nicht 
+vollständig vorhersagen können. Einen solchen Ablauf 
+nennt man „Zufallsexperiment“.
+Meist ist aber klar, welche Ergebnisse für ein solches 
+Zufallsexperiment denkbar sind.
+Beispiele
+§ Wurf einer Münze: Ergebnisse „Wappen“ (W) und „Zahl“ 
+
+(Z)
+
+§ Wurf eines Würfels: Ergebnisse 1, 2, 3, 4, 5, 6
+§ Zweimaliger  Wurf einer Münze: 
+
+Ergebnisse WW, WZ, ZW, ZZ
+
+§ Wurf von zwei Münzen: …
+
+Hedwig  Gasteiger,  Uni Osnabrück 
+
+4. Wahrscheinlichkeit - Mathematischer Hintergrund: Begriffe
+Ergebnis
+
+Im Folgenden  betrachten wir nur Zufallsexperimente mit 
+endlich vielen möglichen Ergebnissen.
+Zufallsexperimente mit theoretisch unendlich vielen 
+möglichen Ergebnissen sind auch für den Einsatz in der 
+Grundschule denkbar:
+
+Nimm  eine Münze und wirft sie so oft, bis die Zahl oben 
+liegt.
+
+Wie heißen die möglichen Ergebnisse?
+
+Hedwig  Gasteiger,  Uni Osnabrück 
+
+5
+
+7
+
+05.07.16
+
+4. Wahrscheinlichkeit - Mathematischer Hintergrund: Begriffe
+Ereignis
+
+Oft interessiert man sich nicht dafür, ob ein spezielles 
+Ergebnis (z. B. Würfelergebnis 6) eintritt, sondern ob eines 
+von mehreren bestimmten Ergebnissen eintritt:
+Max und Andreas würfeln mit einem Würfel. Max bekommt 
+einen Punkt, wenn die gewürfelte Zahl gerade ist, Andreas 
+einen Punkt, wenn die Zahl größer als 3 ist.
+Max interessieren die Ergebnisse 2, 4 und 6 besonders.
+Andreas interessieren die Ergebnisse 4, 5 und 6 
+besonders.
+Jede solche Kombination von Ergebnissen nennt man 
+(jeweils) ein Ereignis.
+
+Hedwig  Gasteiger,  Uni Osnabrück 
+
+6
+
+4. Wahrscheinlichkeit - Mathematischer Hintergrund: Begriffe
+Wahrscheinlichkeit
+= ein Maß  für die Sicherheit, mit der man mit dem Eintritt 
+eines Ergebnisses oder Ereignisses rechnen kann 
+Zur Bestimmung dieses Maßes gibt es drei Ansätze:
+§ Subjektive Wahrscheinlichkeiten (Intuition, 
+
+Expertenwissen, Erfahrung, …)
+
+§ Frequentistische Wahrscheinlichkeiten (Beobachtungen 
+
+bei der wiederholten Durchführung des Experiments)
+
+§ Laplace-Wahrscheinlichkeiten (theoretische 
+Überlegungen, z.B. geometrischer Zugang, 
+Kombinatorik, …)
+
+Hedwig  Gasteiger,  Uni Osnabrück 
+
+8
+
+2
+
+

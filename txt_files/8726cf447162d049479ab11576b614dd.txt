@@ -1,0 +1,114 @@
+Universität Osnabrück
+
+AUSARBEITUNG
+
+zum Seminar
+
+Software Engineering
+
+im Wintersemester 2014/15
+
+Thema:
+
+Konﬁgurationsmanagement, Werkzeuge im Vergleich
+
+Erstellt am 29. November 2014
+
+Vorgelegt von:
+
+Johan von Behren
+954421
+Ertmanstraße 15
+49082 Osnabrück
+jvonbehren@uos.de
+
+Inhaltsverzeichnis
+1 Einführung
+
+1.1 Motivation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.2 Aufbau dieser Arbeit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+2 Versionsverwaltungssysteme
+
+2.3 Zentrale und verteilte Systeme
+
+2.1 Begriﬀe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.2 Zugriﬀsmethoden . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.2.1 Lock Modify Write . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.2.2 Copy Modify Merge . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3.1 Zentrale Systeme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3.2 Verteilte Systeme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4 Überblick . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4.1 CVS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4.2
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4.3 Mercurial
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4.4 Git . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Subversion (SVN)
+
+1
+1
+2
+
+2
+2
+3
+3
+3
+4
+4
+4
+4
+4
+4
+5
+5
+
+5
+5
+5
+6
+
+3 Subversion
+
+3.1 Begriﬀe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.2 Funktionsweise und Besonderheiten . . . . . . . . . . . . . . . . . . . . . . . .
+3.3 Kommandos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4 Git
+
+7
+7
+7
+8
+9
+4.3 Kommandos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+4.1 Begriﬀe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2 Funktionsweise und Besonderheiten . . . . . . . . . . . . . . . . . . . . . . . .
+4.2.1 Fork-Pull Modell
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2.2 Exkurs: Gitﬂow . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+5 Subversion und Git im Vergleich
+
+6 Zusammenfassung
+
+A Abbildungsverzeichnis
+
+B Literatur
+
+11
+
+13
+
+14
+
+15
+
+i
+
+

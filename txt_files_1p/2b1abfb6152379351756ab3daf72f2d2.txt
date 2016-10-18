@@ -1,0 +1,59 @@
+Informatik C
+
+Grundlagen der Technischen Informatik
+
+Prof. Dr.-Ing. Werner Brockmann, M. Sc. Jonas Schneider
+¨Ubung 12 - Stoppuhr auf dem ATmega16
+Abgabe bis Di, 27.01.2015, 14:00 Uhr in der Vorlesung
+
+Hinweis: Schicken Sie, zus¨atzlich zu Ihrer schriftlichen Abgabe, bitte Ihre Assemblerpro-
+gramme per Mail an Ihren Tutor, damit diese auch getestet und im Testat vorgef¨uhrt werden
+k¨onnen.
+
+Assembler-Coding-Style
+
+Da wir uns nun mit realen Prozessoren besch¨aftigen und diese mehr M¨oglichkeiten bie-
+ten, durch Strukturierungen oder Namensvergaben lesbaren Code zu schreiben, ist folgender
+Coding-Style einzuhalten:
+
+• F¨ur verwendete Register sind sinnvolle Namen zu benutzen.
+• Variablennamen und Registernamen sind selbsterkl¨arend und werden klein geschrieben
+
+und bei Bedarf durch Unterstriche getrennt, z.B. segment nr, timer5, clock time.
+• S¨amtliche Initialisierungen stehen einheitlich am Anfang einer Programmeinheit.
+• Unterprogrammnamen, Makronamen und Konstanten werden GROSS geschrieben (und
+
+ggf. durch Unterstriche getrennt), z.B. LOAD PATTERN, WAIT 5 MS.
+
+• Sprungziele innerhalb von Makros, Unterprogrammen oder dem Hauptptogramm wer-
+den dagegen nur am Anfang groß geschrieben (und durch Unterstriche getrennt), z.B.
+Load Pattern 1:, End of UP:.
+
+• Die ¨Ubersichtlichkeit wird durch Einr¨uckungen unterst¨utzt.
+• Ausf¨uhrliche Dokumentation aller Programmteile: Zu Beginn von Unterprogrammen
+und Makros werden Ein- und Ausgabeparameter mit deren Zweck und Datentyp (und
+ggf. dem zul¨assigen Wertebereich), sowie eine kurze Funktionsbeschreibung (’Was’ soll
+das UP machen bzw. ’Wie’ arbeitet der Algorithmus) als Kommentar angegeben. Details
+der implementierten Funktionen werden dann im Coderumpf kommentiert.
+
+• Bei Unterprogrammen und Makros ist grunds¨atzlich auf Seiteneﬀektfreiheit zu achten.
+• Falls nicht anders angegeben, endet das Programm in einer Endlosschleife.
+
+Hinweise zur Assemblerprogrammierung auf dem ATmega16
+
+• Schreiben Sie vollst¨andige Programme, die an Adresse 0 (Reset-Interrupt) starten. D.h.
+beachten Sie, dass Sie vor der Verwendung des Stacks den Stackpointer initialisieren
+m¨ussen. Ebenso m¨ussen alle Register vor Ihrer Verwendung initialisiert werden. Ihre
+Programme m¨ussen ausf¨uhrbar und simulierbar sein.
+
+• Benutzen Sie zur einfacheren Programmﬂusskontrolle die Branch-Anweisungen, die auf
+
+die verschiedenenen Flags des ATmega16 pr¨ufen.
+
+• Verwenden Sie f¨ur einfache Abfragen die einfachen Skip-Befehle statt der komplexeren
+
+Branch-Befehle.
+
+1
+
+

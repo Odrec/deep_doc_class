@@ -1,0 +1,135 @@
+The EMBO Journal Vol.18 No.14 pp.4023–4034, 1999
+
+PLENA and FARINELLI: redundancy and regulatory
+interactions between two Antirrhinum MADS-box
+factors controlling ﬂower development
+
+Brendan Davies1, Patrick Motte2,3,
+Emma Keck4, Heinz Saedler2,
+Hans Sommer2 and
+Zsuzsanna Schwarz-Sommer2
+
+Leeds Institute for Plant Biotechnology and Agriculture,
+University of Leeds, Leeds LS2 9JT, 4Department of Genetics,
+John Innes Centre, Norwich NR4 7UH, UK and 2Max Planck Institut
+fu¨r Zu¨chtungsforschung, Carl-von-Linne´ Weg 10, 50829 Ko¨ln,
+Germany
+3Present address: Department of Plant Biology, University of Lie`ge,
+B-4000 Lie`ge, Belgium
+1Corresponding author
+
+We report the discovery of an Antirrhinum MADS-box
+gene, FARINELLI (FAR), and the isolation of far
+mutants by a reverse genetic screen. Despite striking
+similarities between FAR and the class C MADS-box
+gene PLENA (PLE), the phenotypes of their respective
+mutants are dramatically different. Unlike ple mutants,
+which show homeotic conversion of reproductive
+organs
+to perianth organs and a loss of ﬂoral
+determinacy, far mutants have normal ﬂowers which
+are partially male-sterile. Expression studies of PLE
+and FAR, in wild-type and mutant backgrounds, show
+complex interactions between the two genes. Double
+mutant analysis reveals an unexpected, redundant
+negative control over the B-function MADS-box genes.
+This feature of the two Antirrhinum C-function-like
+genes is markedly different from the control of the
+inner boundary of the B-function expression domain
+in Arabidopsis, and we propose and discuss a model
+to account for these differences. The difference in
+phenotypes of mutants in two highly related genes
+illustrates the importance of the position within the
+regulatory network in determining gene function.
+Keywords: ﬂoral determinacy/homeotic mutants/MADS-
+box/male sterility/regulatory network
+
+Introduction
+The study of Antirrhinum and Arabidopsis ﬂoral homeotic
+mutants produced a simple combinatorial model to explain
+how the regulated expression of a few genes could
+determine the organ composition of the ﬂower (Coen
+and Meyerowitz, 1991). The model proposes that three
+functions are expressed in adjacent, overlapping whorls
+such that the A-function is expressed in whorls 1 and 2,
+the B-function in whorls 2 and 3, and the C-function in
+whorls 3 and 4. Expression of the A-function alone
+determines sepal development, co-expression of the A-
+and B-functions or the B- and C-functions speciﬁes petals
+or stamens, respectively, and expression of the C-function
+alone results in carpel development. In B-function mutants,
+
+reproductive organs.
+
+petals and stamens are replaced by sepals and carpels,
+In C-function mutants, perianth organs
+respectively.
+develop in place of
+In both
+Antirrhinum and Arabidopsis, a single C-function and two
+B-function genes have been identiﬁed and shown to encode
+MADS-box transcription factors (Sommer et al., 1990;
+Yanofsky et al., 1990; Jack et al., 1992; Tro¨bner et al.,
+1992; Bradley et al., 1993; Goto and Meyerowitz, 1994).
+The MADS-box family is deﬁned by the presence of a
+58 amino acid domain which is conserved between the
+founding members; MCM1 (yeast), AGAMOUS and
+DEFICIENS (plants) and SRF (animals) (Schwarz-Sommer
+et al., 1990). Although MADS-box genes have been identi-
+ﬁed and characterized in animals and yeasts (Shore and
+Sharrocks, 1995), they are found most extensively in plants
+(Theissen et al., 1996, Liljegren et al., 1998). The ⬎200
+known plant MADS-factors, from many different species,
+have been divided into sub-families based mainly on their
+predicted amino acid sequences (Doyle, 1994; Purugganan
+et al., 1995; Theissen et al., 1996). Often, genes from
+different species which fall into one of these sub-families
+have similar expression patterns and similar roles in
+development. For example,
+the B-function genes of
+Antirrhinum [DEFICIENS (DEF) and GLOBOSA (GLO)]
+and Arabidopsis [APETALA3 (AP3) and PISTILLATA (PI)]
+are expressed mainly in the second and third whorls and
+show similar mutant phenotypes. Similarly, the C-function
+genes of Antirrhinum [PLENA (PLE)] and Arabidopsis
+[AGAMOUS (AG)] are expressed in the third and fourth
+whorls and show similar mutant phenotypes. Currently
+identiﬁed functions of the MADS-box gene family include
+the control of organ identity (see above), ﬂowering time
+(Sheldon et al., 1999), meristem identity (Huijser et al.,
+1992; Mandel et al., 1992; Kempin et al., 1995), regulation
+of ovule development (Angenent et al., 1995), regulation
+of fruit development (Gu et al., 1998) and control of root
+architecture (Zhang and Forde, 1998).
+
+Here we report the isolation of a novel Antirrhinum
+MADS-box gene, FARINELLI (FAR), and a recessive far
+mutant. We show that all our current criteria identify FAR
+as a second C-function gene. However, far mutants display
+none of the typical features of C-function mutants and
+instead show reduced male fertility. Furthermore, the ple/
+far double mutant reveals that PLE and FAR act redundantly
+to prevent expression of the B-function genes, DEF and
+GLO, in the fourth whorl. We propose a model for the
+interactions of PLE and FAR and show that two crucial
+differences could account for the variation in single and
+double
+in
+Antirrhinum and Arabidopsis.
+
+homeotic mutant
+
+phenotypes
+
+observed
+
+Results
+IsolationofasecondAntirrhinumC-functiongene
+To identify further members of the MADS-box gene
+family, an Antirrhinum ﬂoral cDNA library was screened
+
+© European Molecular Biology Organization
+
+4023
+
+

@@ -1,0 +1,99 @@
+Spitzweck/Heine/Soud`eres/M¨ahr/Mengler/Uliczka
+
+3. November 2014
+
+Lineare Algebra I
+Tutoriumsvorschl¨age
+
+1. Zeige, dass F3 = Z/3Z, wie nachfolgend deﬁniert, ein K¨orper bildet.
+
+⊕ 0 1 2
+0 0 1 2
+1 1 2 0
+2 2 0 1
+
+(cid:12) 0 1 2
+0 0 0 0
+1 0 1 2
+2 0 2 1
+
+2. Zeigen Sie, dass die Teilmenge
+
+√
+K = {a + b
+2 : a,b ∈ Q}
+
+von R einen Teilk¨orper bildet.
+
+3. Seien R ein kommutativer Ring, M eine beliebige nichtleere Menge und S = Abb(M,R) die
+
+Menge aller Abbildungen von M nach R, so ist auf S durch
+
+( f + g)(m) := f (m) + g(m), ( f · g)(m) := f (m)· g(m),
+
+eine Addition und eine Multiplikation erkl¨art.
+a) Zeigen Sie, dass S auf diese Weise zu einem Ring wird.
+b) Ist S ein K¨orper, falls R ein K¨orper ist?
+c) Beispiel : Mit R = R; Zeigen Sie dass die seitigen Abbildungen von R nach R einen
+Unterring von S bilden. Bestimmen Sie die Einheitengruppe von C (R,R).
+
+(cid:18) 1
+
+(cid:19)
+
+4. In M2(R), rechnen Sie a)
+2
+3 −1
+
+2
+3 −1
+b) Wir nehmen an dass D = ad − bc (cid:54)= 0. Berechnen Sie
+
+1 5
+
++
+
+(cid:19)
+
+(cid:19)
+
+(cid:18) 2 1
+
+0 3
+
+·
+
+(cid:18) 1
+
+(cid:19)
+(cid:19)(cid:18) d
+
+und
+
+(cid:18) 2 1
+(cid:18) a b
+
+c d
+
+D − b
+− c
+D
+
+D
+a
+D
+
+(cid:19)
+
+c) Bestimmen Sie der Einheitengruppe von M2(R).
+
+5. Auf Z/nZ deﬁnieren wir (+,·) durch
+
+¯a + ¯b = a + b,
+
+und ¯a· ¯b = ab.
+
+Dadurch wird Z/nZ zu einem Ring.
+a) Bestimmen Sie die Einheitengruppe von Z/2Z, Z/5Z,
+
+

@@ -1,0 +1,275 @@
+APPLIED AND ENVIRONMENTAL MICROBIOLOGY, Mar. 2009, p. 1575–1580
+0099-2240/09/$08.00⫹0 doi:10.1128/AEM.02509-08
+Copyright © 2009, American Society for Microbiology. All Rights Reserved.
+
+Vol. 75, No. 6
+
+Rapid Oligonucleotide-Based Recombineering of the Chromosome
+
+of Salmonella enterica䌤†
+
+Roman G. Gerlach,‡ Daniela Ja¨ckel, Stefanie U. Ho¨lzer, and Michael Hensel*
+
+Infektionsbiologische Abteilung, Universita¨tsklinikum Erlangen, Erlangen, Germany
+
+Received 2 November 2008/Accepted 6 January 2009
+
+Recombinant engineering using Red recombinase-based approaches offers efﬁcient and rapid approaches to
+deletion and modiﬁcation of genes. Here we describe a novel application of Red recombinant engineering that
+enables direct manipulation of chromosomal loci by electroporation with short synthetic DNA molecules. We
+demonstrate the use of this approach for the generation of scarless in-frame deletions in chromosomal genes
+of Salmonella enterica. Furthermore, we describe rapid site-directed mutagenesis within bacterial chromosomes
+without any requirement for cloning and mutating genes in vitro or for reintroducing mutant alleles into the
+chromosome. This approach can be expected to facilitate mutational analysis in S. enterica and in other
+bacterial species able to support Red-mediated recombination.
+
+Functional genomics of bacteria frequently requires gene
+manipulations, such as in-frame deletion, site-directed mu-
+tagenesis, or insertion of foreign sequences. Various ap-
+proaches are available to perform such manipulations with
+cloned genes in vitro. However, the generation of strains with
+mutations in chromosomal genes remains the “gold standard”
+for functional analyses. Current approaches are tedious and
+time-consuming since construction of mutant alleles in vitro
+and replacement of wild-type alleles by mutant alleles are
+required. Recent advances in molecular genetics of enterobac-
+teria allow rapid and high-throughput approaches for the gen-
+eration of chromosomal in-frame deletions (1). Expression of
+the phage ␭ recombinase Red allows homologous recombina-
+tion of short (40-nucleotide) homologous sequences into the
+chromosome of Salmonella (3, 19). This has enabled rapid
+gene deletions and fusions using linear DNA constructs gen-
+erated by PCR (3, 6). It has also been shown that Red recom-
+binase can mediate recombination of synthetic oligonucleo-
+tides (4), and this approach has been utilized for recombinant
+engineering of bacterial artiﬁcial chromosomes (18) or viral
+genomes (14).
+
+Allelic exchange in wild-type bacteria requires the use of
+positively selectable markers. Usually, antibiotic resistance cas-
+settes are used for gene disruption. However, insertion of such
+cassettes is not compatible with in-frame deletions. For the
+generation of scarless chromosomal mutations, two systems of
+interest are (i) positive selection of tetracycline sensitivity (9)
+and (ii) use of homing endonuclease digestion for positive
+selection (16).
+
+Here we report a novel approach that allows direct mutagen-
+
+* Corresponding author. Mailing address: Infektionsbiologische
+Abteilung im Mikrobiologischen Institut, Universita¨tsklinikum Erlan-
+gen, Wasserturmstr. 3-5, D-91054 Erlangen, Germany. Phone: 49
+(0)9131 85 23640. Fax: 49 (0)9131 85 22531. E-mail: Michael.Hensel
+@uk-erlangen.de.
+
+‡ Present address: Robert Koch-Institut, Wernigerode Branch,
+
+Burgstr. 37, D-38855 Wernigerode, Germany.
+
+† Supplemental material for this article may be found at http://aem
+
+.asm.org/.
+
+䌤 Published ahead of print on 16 January 2009.
+
+esis of chromosomal genes by electroporation with short syn-
+thetic DNA fragments and Red recombinase-mediated recom-
+bination.
+
+MATERIALS AND METHODS
+
+Construction of tetAR insertions. Strains and plasmids used in this study are
+listed in Table 1. Salmonella enterica serovar Typhimurium NCTC12023 was used
+as the target strain for mutagenesis. To insert a gene cassette consisting of tetA
+and tetR into the target gene for mutagenesis, the tetAR fragment was ampliﬁed
+from genomic DNA of a strain harboring a Tn10dTc insertion using a high-
+ﬁdelity polymerase mixture (MBI Fermentas) and 60-mer oligonucleotides com-
+plementary to tetAR and the target gene.
+
+The PCR product was puriﬁed and used for electroporation of S. enterica
+serovar Typhimurium harboring pKD46 that was made competent and induced
+for expression of Red recombinase as described previously (6). After electropo-
+ration the cell suspension was plated onto LB plates containing tetracycline (20
+␮g ml⫺1) and incubated overnight at 37°C. Clones resistant to tetracycline
+were selected, and proper insertion of the tetAR cassette was conﬁrmed by
+colony PCR with oligonucleotides speciﬁc for tetA and the target gene for the
+mutagenesis (Fig. 1 and Table 2). The resulting Tetr clones were also tested
+for growth inhibition on Bochner-Maloy plates (11) for 24 h at 42°C. This
+selection procedure is not as effective as conventional selection by antibiotics.
+We observed different degrees of growth inhibition by tetracycline for clones
+obtained using a mutagenesis approach. Clones with the highest sensitivity on
+Bochner-Maloy plates were selected for further mutagenesis. The medium
+composition, detailed step-by-step protocols, and notes are provided in the
+supplemental material.
+
+Generation of double-stranded DNA for electroporation. Oligonucleotides
+were synthesized and puriﬁed using high-performance liquid chromatography by
+Thermo Scientiﬁc (Ulm, Germany). Lyophilized oligonucleotides were resus-
+pended in distilled H2O at a concentration of 500 pmol ml⫺1. A mixture (total
+volume, 20 ␮l) containing equal amounts of the forward and reverse oligonu-
+cleotides was prepared in a “Safelock” Eppendorf tube. The tube was incubated
+in a water bath at 95°C for 15 min, and the water bath was allowed to slowly cool
+to room temperature overnight. Proper annealing was veriﬁed by gel electro-
+phoresis of diluted samples of the mixture on 2% agarose gels.
+
+For electroporation, 2 to 3 ␮l of the annealed oligonucleotides or various
+dilutions of the mixture were used to transform pKD46-containing Tetr target
+strains to a Tets phenotype. After electroporation, various dilutions of the cell
+suspension were plated onto freshly prepared Bochner-Maloy plates and incu-
+bated for 24 h at 42°C. Tets clones were selected and streak puriﬁed on Bochner-
+Maloy plates with incubation for 24 h at 42°C. Selection at 42°C was necessary to
+obtain the strongest possible growth inhibition of Tetr clones. Puriﬁed clones
+were streaked in parallel onto LB plates without an antibiotic or containing
+tetracycline (20 ␮g ml⫺1). Clones were further conﬁrmed by colony PCR of the
+mutated loci. A detailed step-by-step protocol and further practical notes are
+provided in the supplemental material.
+
+1575
+
+1576
+
+GERLACH ET AL.
+
+APPL. ENVIRON. MICROBIOL.
+
+TABLE 1. Bacterial strains and plasmids used in this study
+
+Strain or plasmid
+
+Relevant characteristic(s)
+
+Reference or source
+
+S. enterica serovar
+
+Typhimurium strains
+
+NCTC121023
+
+EB231
+
+MvP599
+MvP812
+MvP781
+MvP990
+MvP991
+
+Wild type
+
+phsA::Tn10dTc
+
+⌬siiE::FRT
+⌬siiF::FRT
+⌬siiE6540-12493::FRT (⌬Ig21-40)
+⌬siiE6540-9541::FRT (⌬Ig21-30)
+⌬siiE6540-8038::FRT (⌬Ig21-25)
+
+NCTC, Colindale,
+United Kingdom
+B. C. Berks, Oxford,
+United Kingdom
+
+8
+8
+5
+5
+5
+
+tetAR insertion strains
+
+MvP1220
+MvP1287
+
+siiE deletion strains
+
+MvP1222
+MvP1226
+MvP1227
+
+siiE6540::tetAR
+siiF1506::tetAR
+
+⌬siiE6541-12492 (⌬Ig21-40)
+⌬siiE6541-9540 (⌬Ig21-30)
+⌬siiE6541-8037 (⌬Ig21-25)
+
+Site-directed mutagenesis
+
+strains
+MvP1311
+MvP1312
+MvP1313
+
+siiF(G500E)
+siiF(K506L)
+siiF SacI
+
+This study
+This study
+
+This study
+This study
+This study
+
+This study
+This study
+This study
+
+Plasmids
+pKD46
+
+pWSK29
+p3223
+
+Red-expressing plasmid,
+temperature sensitive
+
+Low-copy-number vector, Ampr
+Complementation of siiF
+
+3
+
+17
+5
+
+Sequence analyses. DNA sequencing and restriction analyses were performed
+
+with PCR products obtained by colony PCR of selected clones.
+
+Analyses of SiiE synthesis and secretion. SiiE was detected in cell lysates of
+various S. enterica serovar Typhimurium strains (5) and quantiﬁcation of SiiE
+secretion into the culture supernatant by various strains by an enzyme-linked
+immunosorbent assay (ELISA) (7) was performed as previously described.
+
+RESULTS AND DISCUSSION
+
+Rationale for oligonucleotide-based recombineering. Ho-
+mologous recombination mediated by the Red recombinase is
+a highly efﬁcient process that has allowed generation of dele-
+tions and gene fusions in various microbial organisms. Flank-
+ing regions as short as 40 bp are sufﬁcient to enable Red-
+mediated homologous recombination in Escherichia coli, S.
+enterica, and various other bacteria. We speculated that this
+speciﬁc feature might allow the use of short synthetic DNA for
+recombinant engineering of target genes directly in their
+genomic context.
+
+We devised a two-step procedure for construction of in-
+frame deletions and site-directed mutagenesis (Fig. 1). In the
+ﬁrst step, a cassette consisting of the tetAR genes was intro-
+duced into the target locus for mutagenesis by Red-mediated
+recombination (Fig. 1A). The resulting clones were selected by
+virtue of their resistance to tetracycline, and the proper posi-
+tion of the tetAR cassette was conﬁrmed by colony PCR. In the
+second step, conﬁrmed clones were electroporated with
+
+FIG. 1. Rationale of the oligonucleotide-based recombinant engineering approach. In the ﬁrst step, the tetAR cassette is inserted using Red
+recombinase-mediated recombination into the target locus, and Tetr strains are selected (A). Proper insertion of the tetAR cassette is conﬁrmed
+by colony PCR using primer TetAR-Del-Check-For (Check-For) and a target gene-speciﬁc primer (orfX-Rev) or primer TetAR-Del-Check-Rev
+(Check-Rev) and a target gene-speciﬁc primer (orfX-For). In the second step, conﬁrmed clones are transformed with the Red recombinase-
+expressing plasmid pKD46, and subsequently 80- to 88-bp DNA fragments are introduced by electroporation to generate in-frame deletions (B) or
+site-directed mutation or insertion of codons (C). Tets clones are selected on Bochner-Maloy plates. Finally, the mutations introduced by
+recombination are conﬁrmed by colony PCR using primers ﬂanking the deletion or by restriction analysis, as described in the legend to Fig. 3. RBS,
+ribosome binding site.
+
+

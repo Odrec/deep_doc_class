@@ -1,0 +1,69 @@
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                  WS 2014/2015 
+
+ÜBUNG »MULTIVARIATE VERFAHREN« 
+
+Lösungen Aufgabenblatt 13 
+
+Aufgabe 
+
+1 
+
+(a) 
+
+(b) 
+
+(c) 
+
+(d) 
+
+Strukturgleichungsmodellierung besteht darin, ein (kausales) Modell zwischen latenten 
+Variablen und dessen Verknüpfungen mit Indikatoren zu prüfen. 
+
+Ein Pfad stellt eine gerichte (kausale) Beziehung zwischen zwei Variablen dar. Fehlt er 
+zwischen zwei Variablen, so postuliert das Modell, dass keine der beiden Variablen ge‐
+richtet auf die andere wirkt. Das Pfadgewicht (= Pfadkoeffizienten = Ladung) wird in der 
+Strukturgleichungsmodellierung geschätzt und gibt an, ob die Beziehung positiv, nega‐
+tiv oder Null ist (Vorzeichen) und wie stark die Wirkung ist. 
+
+Eine latente Variable ist eine Variable die nicht direkt beobachtet wurde, sondern die 
+aus  manifesten  (d.h.  aus  direkt  beobachteten)  Variablen  (=Indikatoren)  erschlossen 
+wird. Die latenten Variablen sind die theoretischen Konstrukte, die um den Messfehler 
+bereinigt sind. 
+
+Ein Modell ist überidentifiziert, wenn es mehr Datenwerte als zu schätzende Parameter 
+aufweist. Überidentifikation macht es erst möglich, zu prüfen, ob sich die Daten so wie 
+in dem Modell postuliert verzahnen und die Parameter zu schätzen. 
+
+(e)  Das  Gegenteil  ist  richtig:  Null‐Gewichte  sind  starke  Aussagen.  Der  Forscher  vermutet 
+hier keine Beziehung bzw. er postuliert ein Modell, dass ohne diese Beziehungen die 
+Daten erklären kann. Ein Modell, in dem alles mit allem korreliert, ist eher ein schwa‐
+ches Modell mit wenig Erklärungswert. 
+
+ 
+
+Aufgabe 
+
+2 
+
+(a) 
+
+In  dem  Modell  wird  davon  ausgegangen,  dass  die  Wirkung  der  sexuellen  Belästigung 
+auf  das  Ausmaß  der  Essstörungen  vollständig  vermittelt  wird  über  die  Variablen 
+Selbstwert,  Stress  und  Selbstanschuldigung. Daneben wirkt sich die sexuellen Belästi‐
+gungen  auch  noch  direkt  auf  die  Zufriedenheit  mit  der  Arbeit  und  ‐  über  den  Stress 
+vermittelt – auf die auf die Zufriedenheit mit der Arbeit und der Gesundheit aus. 
+
+(b) 
+
+Zum Messmodell gehören alle Verbindungen zwischen den Indikatoren (in den Recht‐
+ecken) und den Konstrukten (in den Ellipsen), hier grün hinterlegt: 
+
+ 
+
+– 1 – 
+
+ 
+
+(28.01.2015)
+
+

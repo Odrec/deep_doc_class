@@ -1,0 +1,139 @@
+Mathematik f¨ur Wirtschaftswissenschaftler
+L¨osungen der Aufgaben f¨ur die Tutorien
+
+Serie IV
+
+10.11.–13.11.2014
+
+Aufgabe 1: Die Laufzeit betr¨agt m Quartale: m ist zu bestimmen. Der auf einen Monat
+bezogene Aufzinsungsfaktor ist q0 = 1 +
+= 1, 004. Da die Ratenzahlungen am Ende
+eines jeden Quartals erfolgen, muss der Aufzinsungsfaktor ebenfalls auf den Zeitraum ei-
+nes Quartals umgerechnet werden; wir erhalten daher q = q3
+0 = 1, 0043, da w¨ahrend eines
+Quartals die Schulden jeweils nach jedem der drei Monate verzinst werden und die Zinsen
+zus¨atzlich zu den Schulden addiert werden.
+
+4, 8
+1200
+
+Mit K0 = 300 000 erhalten wir also die Diﬀerenzengleichung
+
+Kn+1 = q · Kn − r f¨ur alle n ∈ IN0.
+
+r = qm(cid:0)K0 − r
+
+q − 1
+
+(cid:1) +
+
+⇐⇒
+
+r
+q − 1
+
+und daher
+
+qm(cid:0) r
+
+q − 1
+
+Km = 0 = qmK0 − qm − 1
+(cid:1) =
+q − 1
+
+⇐⇒
+
+− K0
+
+Wir l¨osen diese Gleichung nach m auf und erhalten
+
+qm =
+
+r
+q − 1
+
+(cid:16) r
+(cid:16) r
+(cid:18)
+
+q − 1
+
+(cid:17)
+
+1
+
+q − 1
+
+− K0
+
+m ln(q) = ln
+
+m = − ln
+
+1 − K0(q − 1)
+(cid:16)
+1 − K0(q − 1)
+
+r
+
+.
+
+1
+
+r
+
+1 − K0(q − 1)
+(cid:16)
+
+= − ln
+
+(cid:17) =
+(cid:19)
+(cid:17) 1
+
+r
+
+.
+
+ln(q)
+
+(cid:17)
+
+also
+
+1 − K0(q − 1)
+
+r
+
+Durch Einsetzen der Zahlenwerte ergibt sich m = 37, 45. Demnach ist nach 38 Quartalen
+das Darlehen getilgt.
+
+Aufgabe 2: Die Sparphase vom 1.1.2002 bis zum 31.12.2021 dauert m = 20 Jahre. Danach
+bleibt das Geld ohne weitere Ratenzahlungen auf dem Konto und wird lediglich nach verzinst.
+F¨ur beide Phasen ist q = 1, 04 der Aufzinsungsfaktor.
+
+Sparphase: Mit der unbekannten Monatsrate r zum Monatsanfang erhalten wir die ﬁktive
+Jahressparrate
+
+R = 12 · r + (12 + 11 + . . . + 1)
+Die Sparphase wird durch die Diﬀerenzengleichung
+
+4 · r
+100 · 12
+
+= 12, 26 r .
+
+beschieben. Es folgt
+
+Kn+1 = qKn + R mit K0 = 0
+
+K20 =
+
+1, 0416 − 1
+
+0, 04
+
+12, 26 r .
+
+

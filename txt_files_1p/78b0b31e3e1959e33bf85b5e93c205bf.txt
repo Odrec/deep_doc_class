@@ -1,0 +1,74 @@
+168 
+
+7  Die  Beschreibung 
+
+von 
+
+Verteilungen 
+
+Kuchendiagramme  sind  in   Stata  ähnlich  wie  Balkendiagramme 
+
+i m p l e m e n t i e r t.  W ie 
+bei  Balkendiagrammen   m ü s s en  z u n ä c h st   D u m m y - V a r i a b l en  erzeugt  werden.  Sie   k ö n n en 
+auch  hier  m it  der  O p t i on  b y ()  Kuchendiagramme 
+anfordern. 
+
+für  unterschiedliche  T e i l g r u p p en 
+
+. graph pie pid*,  by(sex) 
+
+7.2.2.4  Dot-Chart 
+
+Dot-Charts  wurden  von  Cleveland  (1984)  zur  grafischen  Darstellung  von  D a t en  m it  l a n(cid:173)
+gen  Value-Labeln  entwickelt.  In  Experimenten   haben  Sie  sich  im  Vergleich  zu  B a l k e n-
+Diagrammen  in   verschiedener  Hinsicht  als  vorteilhaft  erwiesen.  Dennoch  werden  D o t-
+Charts  nur  selten  in  der  wissenschaftlichen  L i t e r a t ur   oder  der  Presse  verwendet.  Dies 
+liegt  wahrscheinlich  daran,  dass  Dot-Charts 
+mentiert  sind. 
+
+in  vielen  Software-Paketen  nicht  i m p l e(cid:173)
+
+Das  Grundprinzip  von  Dot-Charts  ist   ähnlich  wie  das  der  Balkendiagramme.  D er 
+Unterschied  ist,  dass Dot-Charts  einen  P u n k t,  Bar-Charts  einen  Balken  zur  D a r s t e l l u ng 
+der  Statistik  verwenden.  Der   Ähnlichkeit  der  Grafiken  entspricht  die   Ä h n l i c h k e it   i h r er 
+Implementation  in   Stata.  Im  Wesentlichen  reicht  es,  das  G r a f i k - U n t e r k o m m a n do  b ar 
+mit  d ot  zu   ersetzen. Allerdings brauchen  w ir  auch  hier,  wie bei  den  B a l k e n d i a g r a m m e n, 
+Dummy-Variablen  zur  Darstellung.  E in   erster  Versuch: 
+
+. graph dot pid* 
+
+oo 
+
+° 
+
+.1 
+
+.2 
+
+.3 
+
+.4 
+
+•  meanofpidl 
+•  meanofpldS 
+*  mean ol pld5 
+o meanofpld7 
+
+•  mean of pld2 
+*  maanofpIcH 
+'  mean of pld6 
+<> mean of pida 
+
+Keine  Frage,  diese  Grafik  ist  nicht  optimal.  Aber  bevor  w ir  die  Darstellung   v e r s c h ö(cid:173)
+nern  noch  ein  allgemeiner  Hinweis.  Die  A b b i l d u ng  zeigt  für
+  jede  M a ß z a hl   ein  S y m b ol 
+auf  einer  gepunkteten  Linie.  Das  Symbol   ganz  rechts  (der  ausgefüllte  D i a m a n t)  zeigt 
+den  M i t t e l w e rt  der  Variablen  p i d 2,  was  dem   A n t e il   der  Befragten  entspricht,  die  der 
+C D U / C SU   nahestehen.  Die  anderen  Symbole  werden   entsprechend  interpretiert.  N a(cid:173)
+türlich  wäre   es  besser,  wenn  die   verschiedenen  Symbole  jeweils  auf   einer  eigenen  L i n ie 
+lägen.  W ir sollten jedoch   z u n ä c h st   festhalten,  dass man  durch  die  Verwendung  v on  S y m(cid:173)
+bolen  mehrere  Werte  auf   einer  Linie  abtragen  kann.  S p ä t e r,   wenn  w ir  die  D a r s t e l l u ng 
+von  metrischen  Variablen   beschreiben,  werden  w ir   diese  sogenannte  „ S u p e r p o s i t i o n" 
+nutzen.  Sie  eignet  sich  hervorragend  für  den  Vergleich  von  Verteilungen.  N un   aber  zu 
+
+

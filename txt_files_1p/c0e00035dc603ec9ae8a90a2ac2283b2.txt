@@ -1,0 +1,166 @@
+D
+N
+A
+
+L
+A
+C
+I
+G
+O
+L
+O
+H
+C
+Y
+S
+P
+
+S
+E
+C
+N
+E
+I
+C
+S
+
+E
+V
+I
+T
+I
+N
+G
+O
+C
+
+Eye movement evidence that readers maintain and
+act on uncertainty about past linguistic input
+
+Roger Levya,1, Klinton Bicknella, Tim Slatteryb, and Keith Raynerb
+
+Departments of aLinguistics and bPsychology, University of California at San Diego, 9500 Gilman Drive, La Jolla, CA 92093
+
+Edited by Edward E. Smith, Columbia University, New York, NY, and approved October 20, 2009 (received for review July 14, 2009)
+
+In prevailing approaches to human sentence comprehension, the
+outcome of the word recognition process is assumed to be a
+categorical representation with no residual uncertainty. Yet per-
+ception is inevitably uncertain, and a system making optimal use of
+available information might retain this uncertainty and interac-
+tively recruit grammatical analysis and subsequent perceptual
+input to help resolve it. To test for the possibility of such an
+interaction, we tracked readers’ eye movements as they read
+sentences constructed to vary in (i) whether an early word had near
+neighbors of a different grammatical category, and (ii) how
+strongly another word further downstream cohered grammatically
+with these potential near neighbors. Eye movements indicated
+that readers maintain uncertain beliefs about previously read word
+identities, revise these beliefs on the basis of relative grammatical
+consistency with subsequent input, and use these changing beliefs
+to guide saccadic behavior in ways consistent with principles of
+rational probabilistic inference.
+
+psycholinguistics 兩 language comprehension 兩
+probabilistic models of cognition
+
+A critical part of understanding a sentence is identifying the
+
+words that comprise it. It is well understood that humans
+achieve this goal through a combination of top-down (contex-
+tual) and bottom-up (perceptual) cues (1, 2). In spoken word
+recognition, comprehenders’ conclusions about a given word’s
+identity can be affected by phonetic and lexical cues from
+adjacent words (3, 4), and by subsequent semantic context when
+the speech stream is manipulated to make bottom-up evidence
+ambiguous (5, 6). It has also recently become clear that even
+relatively unambiguous bottom-up evidence regarding spoken
+word identity can be overridden by subsequent evidence within
+the same word (7, 8). It is unknown, however, whether word-
+identity uncertainty is maintained as a matter of course after
+perceptual cues have been encountered in full upon hearing or
+first reading a word in a sentence. It could be that, under normal
+circumstances, a categorical commitment is made to a unique
+candidate word, which is then integrated into an incremental
+sentence representation. Such a strategy could be efficient if
+considerable effort is required to construct and maintain syn-
+tactic/semantic relationships for multiple candidate words at a
+given position within the sentence (9). This possibility also
+coincides with the treatment of grammatical analysis in most
+formal models of language comprehension as a process that
+takes a word sequence as its input (10–12), and with the
+treatment in leading models of eye-movement control in reading
+(13, 14). On the other hand, it is also possible that the perceptual
+input from a given word gives rise to multiple candidate word
+representations entering the stream of syntactic/semantic pro-
+cessing. This strategy would have the advantage of greater
+robustness, permitting identification and correction of percep-
+tual noise or speaker error early in a sentence on the basis of
+additional
+information obtained late in a sentence (15). In
+addition, maintaining and continually reassessing uncertainty
+about word identity could be useful in guiding behavior during
+real-time comprehension. In reading, eye movements could be
+directed to previous parts of a sentence where word-identity
+
+uncertainty is high; in spoken language comprehension, alloca-
+tion of attentional resources could be updated on the basis of
+word uncertainty, or the listener could prompt the speaker for
+clarification about parts of a message that were unclear. Whether
+uncertainty about word identity is maintained and revised, and
+if so, according to what principles, is thus a question of funda-
+mental interest in the study of language comprehension.
+
+A Sharp Test for Word-Level Uncertainty
+In the past, providing a sharp test of whether word-identity
+uncertainty is maintained has proven elusive because existing
+results could be interpreted as involving categorical word mis-
+identification. For example, the word flour is reread more often
+in sentence 1a than in sentence 1b or than the word wheat in
+sentence 1c (16):
+1a. He swept the flour that he spilled.
+1b. The baker needed more flour for the special bread.
+1c. He swept the wheat that he spilled.
+Crucially, the word flour has an orthographically similar ‘‘near-
+neighbor,’’ floor, that is semantically incompatible with the
+continuations of sentences 1a or 1c. The sentence-initial context
+in sentence 1a is more strongly predictive of floor than of flour,
+so it is possible that the distinctive rereading behavior is due to
+the comprehender initially maintaining some uncertainty as to
+whether the critical word was flour or floor, and subsequently
+returning to this word to confirm that it is indeed flour. This same
+result could, however, be obtained under a theory in which
+uncertainty about word identity is not maintained after initial
+word recognition, but there is an occasional categorical misiden-
+tification of flour as floor in sentence 1a upon first reading, and
+the incongruous downstream word spilled triggers a return of the
+eyes to the initial locus of semantic anomaly.
+
+In the present work, we provide a sharper test of whether
+word-identity uncertainty is maintained by using sentences in
+which categorical misidentification should in principle facilitate,
+rather than hinder, downstream processing. We turn to sentences
+with a combination of grammatical constructions that has at-
+tracted considerable recent attention for the theoretically prob-
+lematic comprehension behavior it elicits. Despite near meaning
+equivalence, sentence 2a is considerably more difficult to read
+and comprehend than sentences 2b and 2c (17–19):
+2a. The coach smiled at the player tossed the frisbee.
+2b. The coach smiled at the player thrown the frisbee.
+2c. The coach smiled at the player who was tossed the frisbee.
+
+Author contributions: R.L., K.B., T.S., and K.R. designed research; R.L., K.B., and T.S.
+performed research; R.L., T.S., and K.R. contributed new reagents/analytic tools; R.L., K.B.,
+T.S., and K.R. analyzed data; and R.L. wrote the paper.
+The authors declare no conﬂict of interest.
+This article is a PNAS Direct Submission.
+1To whom correspondence should be addressed. E-mail: rlevy@ling.ucsd.edu.
+This article contains supporting information online at www.pnas.org/cgi/content/full/
+0907664106/DCSupplemental.
+
+www.pnas.org兾cgi兾doi兾10.1073兾pnas.0907664106
+
+PNAS Early Edition 兩 1 of 5
+
+

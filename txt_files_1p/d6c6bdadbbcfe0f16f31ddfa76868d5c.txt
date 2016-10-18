@@ -1,0 +1,122 @@
+Vol 464 | 15 April 2010 | doi:10.1038/nature08932
+
+LETTERS
+
+Catastrophic cascade of failures in interdependent
+networks
+Sergey V. Buldyrev1,2, Roni Parshani3, Gerald Paul2, H. Eugene Stanley2 & Shlomo Havlin3
+
+Complex networks have been studied intensively for a decade, but
+research still focuses on the limited case of a single, non-interacting
+network1–14. Modern systems are coupled together15–19 and there-
+fore should be modelled as interdependent networks. A fun-
+damental property of interdependent networks is that failure of
+nodes in one network may lead to failure of dependent nodes in
+other networks. This may happen recursively and can lead to a
+cascade of failures. In fact, a failure of a very small fraction of nodes
+in one network may lead to the complete fragmentation of a system
+of several
+interdependent networks. A dramatic real-world
+example of a cascade of failures (‘concurrent malfunction’) is the
+electrical blackout that affected much of Italy on 28 September
+2003: the shutdown of power stations directly led to the failure of
+nodes in the Internet communication network, which in turn
+caused further breakdown of power stations20. Here we develop a
+framework for understanding the robustness of
+interacting
+networks subject to such cascading failures. We present exact ana-
+lytical solutions for the critical fraction of nodes that, on removal,
+will lead to a failure cascade and to a complete fragmentation of two
+interdependent networks. Surprisingly, a broader degree distri-
+bution increases the vulnerability of interdependent networks to
+random failure, which is opposite to how a single network behaves.
+Our findings highlight the need to consider interdependent
+network properties in designing robust networks.
+
+Today’s networks are becoming increasingly dependent on one
+another. Diverse infrastructures such as water supply, transportation,
+fuel and power stations are coupled together. We show that owing to
+this coupling, interdependent networks are extremely sensitive to
+random failure, such that a random removal of a small fraction of
+nodes from one network can produce an iterative cascade of failures
+in several interdependent networks. Electrical blackouts frequently
+result from a cascade of failures between interdependent networks,
+and the problem has been dramatically exemplified by the several
+large-scale blackouts that have occurred in recent years. In this Letter,
+we demonstrate a cascade of failures using real-world data from a
+power network and an Internet network (a supervisory control and
+data acquisition system) that were implicated in the blackout that
+affected much of Italy on 28 September 200320. These two networks
+feature a bidirectional dependence such that power stations depend
+on communication nodes for control and communication nodes
+depend on power stations for their electricity supply.
+
+Figure 1 shows the two networks and the connections between
+them, based on the real geographical locations. The figure exemplifies
+a situation in which an initial failure of only one power station may
+lead to an iterative cascade of failures that causes both networks to
+become fragmented. For an isolated single network, a significant
+number of the network nodes must be randomly removed before
+the network breaks down. However, when taking into account the
+
+dependencies between the networks, removal of only a small fraction
+of nodes can result in the complete fragmentation of the entire system.
+To model interdependent networks, we consider for simplicity,
+and without loss of generality, two networks, A and B, with the same
+number of nodes, N. The functioning of node Ai (i 5 1, 2, …, N), in
+network A, depends on the ability of node Bi , in network B, to supply
+a critical resource, and vice versa. If node Ai stops functioning owing
+to attack or failure, node Bi stops functioning. Similarly, if node Bi
+stops functioning then node Ai stops functioning. We denote such a
+dependence by a bidirectional link, Ai « Bi, that defines a one-to-one
+correspondence between nodes of network A and nodes of network
+B. Within network A, the nodes are randomly connected by A-links
+with degree distribution PA(k), where the degree, k, of each node is
+defined as the number of A-links connected to that node in network
+A. Analogously, within network B, the nodes are randomly connected
+by B-links with degree distribution PB(k) (Fig. 2).
+
+We begin by randomly removing a fraction, 1 2 p, of the nodes of
+network A and removing all the A-links connected to these removed
+nodes (Fig. 2a). Owing to the dependence between the networks, all
+the nodes in network B that are connected to the removed A-nodes by
+A « B links must also be removed (Fig. 2b). Any B-links connected
+to the removed B-nodes are then also removed. As nodes and links
+are sequentially removed, each network begins to fragment into con-
+nected components, which we call clusters. The clusters in network A
+and the clusters in network B are different because each network is
+connected differently. A set of nodes, a, in network A and the cor-
+responding set of nodes, b, in network B form a mutually connected
+set if (1) each pair of nodes in a is connected by a path that consists of
+nodes belonging to a and links of network A, and (2) each pair of
+nodes in b is connected by a path that consists of nodes belonging to b
+and links of network B. We call a mutually connected set a mutually
+connected cluster if it cannot be enlarged by adding other nodes and
+still satisfy the conditions above. Only mutually connected clusters
+are potentially functional.
+
+To identify these mutually connected clusters, we first define the
+a1-clusters as the clusters of network A remaining after a fraction
+1 2 p of the A-nodes are removed as the result of an attack or mal-
+function (Fig. 2b). This state of the networks is the first stage in the
+cascade of failures. Next we define the b1-sets as the sets of B-nodes
+that are connected to a1-clusters by A « B links. According to the
+definition of mutually connected clusters, all the B-links connecting
+different b1-sets must be removed. Because the two networks are
+connected differently, each b1-set may split into several clusters,
+which we define as b2-clusters (Fig. 2c). The b1-sets that do not split,
+and hence coincide with a1-clusters, are mutually connected. This
+state of the networks is the second stage in the cascade of failures. In
+the third stage, we determine all the a3-clusters (Fig. 2d), in a similar
+way, and in the fourth stage we determine all the b4-clusters. We
+
+1Department of Physics, Yeshiva University, 500 West 185th Street, New York, New York 10033, USA. 2Center for Polymer Studies and Department of Physics, Boston University,
+Boston, Massachusetts 02215, USA. 3Minerva Center and Department of Physics, Bar-Ilan University, 52900 Ramat-Gan, Israel.
+
+©2010
+
+Macmillan Publishers Limited. All rights reserved
+
+1025
+
+

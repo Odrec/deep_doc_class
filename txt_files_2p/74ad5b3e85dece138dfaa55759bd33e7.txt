@@ -1,0 +1,149 @@
+Logik & 
+Argumentationstheorie 
+
+Sommersemester 2016 
+Nikola Kompa 
+
+21.06.2016 
+
+Gültige Schlüsse? 
+
+Jedes Mensaessen wird von Spitzenköchen gekocht. 
+Kein Spitzenkoch kocht Grünkohl-Nudelauflauf mit 
+
+Zigeunersoße.  
+
+Also: Grünkohl-Nudelauflauf mit Zigeunersoße ist kein 
+
+Mensaessen. 
+
+Kein Kollege kommt zur Konferenz. 
+Otto ist ein Kollege 
+Otto kommt nicht zur Konferenz.  
+
+21.06.2016 
+
+1 
+
+21.06.2016 
+
+Gültige Schlüsse? 
+
+Prädikatenlogik 
+
+Jemand fängt an zu singen.  
+Jeder, der anfängt zu singen, hört irgendwann zu singen auf.  
+Also: Jemand hört irgendwann zu singen auf.  
+
+Alle werden langsam älter.  
+Anna wird langsam älter. 
+
+Der letzte Gast möchte Kaffee. 
+Mindestens einer möchte Kaffee. (Rosenkranz 2006, 103&106) 
+
+  Zu unterscheiden: Singuläre Terme und generelle 
+
+Terme/Prädikate.  
+  Eigennamen & Kennzeichnungen 
+  Einstellige und mehrstellige Prädikate – n-stellige 
+
+Prädikate.  
+
+  Singuläre Aussagen: Sokrates schläft. 
+  Universelle Aussagen: Alle Studierenden im Kurs 
+
+langweilen sich.   
+
+  Existenzaussagen: Es gibt mindestens einen 
+
+interessierten Studierenden.  
+
+21.06.2016 
+
+3 
+
+21.06.2016 
+
+2 
+
+4 
+
+1 
+
+Allquantor 
+
+Allquantor 
+
+1. Alle sind glücklich.  
+1'. Jeder ist glücklich.  
+Für jedes Individuum/Ding x gilt: x ist glücklich.  
+1F. ∀xGx 
+2. Alle Diamanten sind Edelsteine. 
+Für jedes Individuum/Ding x gilt: Wenn x ein Diamant ist, dann 
+
+ist x ein Edelstein.   
+
+2F. ∀x (Dx → Ex)   
+3.  Nichts funktioniert.  
+3F. ∀x¬Fx 
+
+21.06.2016 
+
+4. Kein Diamant ist ein Edelstein.  
+4F.  ∀x(Dx → ¬Ex) 
+5. Niemand kommt zur Konferenz. 
+5F. ∀x¬Kx 
+6. Kein Student kommt zur Konferenz.  
+6F. ∀x(Sx → ¬Kx) 
+
+In all diesen Formalisierungen ist der Bereich, über den die 
+
+Variable läuft, nicht explizit beschränkt!  
+
+5 
+
+21.06.2016 
+
+Existenzquantor 
+
+Bereichserweiterung 
+
+7. Jemand kommt zum Fest.    
+Es gibt mindestens ein x, so dass gilt: x kommt zum Fest.  
+7F. ∃xFx 
+
+8. Mindestens einer möchte Tee.  
+Es gibt mindestens ein x, so dass gilt: x möchte Tee. 
+8F. ∃xTx 
+
+9. Einige Frösche haben gelbe Hälse.  
+9F. ∃x(Fx & Gx)  
+
+21.06.2016 
+
+Bereichserweiterung Existenzquantor: 
+„Forme die ursprüngliche Bereichsangabe des 
+
+Existenzquantors um und bilde die Konjunktion mit dem 
+schon verwendeten Prädikat.“ (HH S. 185).  
+
+Bereichserweiterung Allquantor: 
+„Forme die ursprüngliche Bereichsangabe des Allquantors in 
+
+ein Prädikat um und setze es als Vorderglied des 
+Konditionals mit dem schon verwendeten Prädikat als 
+Hinterglied ein.“ (HH S. 186).  
+
+7 
+
+21.06.2016 
+
+21.06.2016 
+
+6 
+
+8 
+
+2 
+
+

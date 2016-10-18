@@ -1,0 +1,243 @@
+NEWS & VIEWS
+
+NATURE|Vol 441|8 June 2006
+
+a
+
+b
+
+n
+o
+i
+s
+s
+i
+m
+s
+n
+a
+r
+T
+
+c
+
+1
+
+2
+
+ω
+s
+
+ω
+p
+
+3
+
+Probe frequency
+
+Ereflected
+
+Eincident
+
+Etransmitted
+
+Figure 1 | Electromagnetically induced
+transparency. a, In conventional EIT in an
+atomic system, a strong pump field ȣp is tuned to
+an atomic energy transition (1–2) and creates a
+‘transparency window’ for the signal field ȣs,
+which is tuned to a second transition (1–3). 
+b, Destructive interference between the two
+absorption pathways results in a narrow spike of
+increased transmission within a wider absorption
+line. The refractive index of the material thus
+varies rapidly over a narrow frequency range, and
+the resulting increased dispersion can lead to
+ultraslow propagation of light. The narrow spike
+also provides a well-defined frequency marker
+for precision measurements. c, In a system of
+microresonators, studied by Xu et al.1, EIT occurs
+because of destructive interference between two
+fields, leaving two appropriately spaced rings in
+the direction of the reflection port. The width of
+the absorption feature is determined by the
+overall loss of the ring resonator system (often
+dominated by coupling to the straight
+waveguide), whereas that of the transparency
+window is set by the internal loss of the ring
+resonators. (Part c adapted from ref. 1.)
+
+whenever a whole number of wavelengths of
+the incident light fits into the resonator. More-
+over, destructive interference occurs between
+light emerging from two coupled resonators. 
+Early microresonators were simply aerosols
+containing particles of varying sizes, but mod-
+ern fabrication procedures produce individual
+resonators with highly controllable resonance
+frequencies4. These resonators come in various
+forms: ring shapes; disks or spheres, in which
+the light skims across the outer surface as sound
+does in a ‘whispering gallery’; or less obvious
+forms, such as defects in an otherwise perfect
+photonic crystal. Their small size makes them
+ideally suited to perform operations on light
+analogous to those performed by components
+702
+
+of silicon chips on electrons, and numerous
+applications have been proposed for them5–7.
+
+Several methods5,8,9 for combining EIT and
+optical  microresonators  to  obtain  EIT-like 
+resonances in integrated optical systems were
+proposed in 2004, and a laboratory demon-
+stration of such an effect was published last
+year10. In that experiment, EIT-like transmis-
+sion spectra were observed in two interacting
+microresonators in the form of glass spheres
+approximately 400 micrometres in diameter
+that supported resonances of the whispering-
+gallery type. 
+
+Xu et al.1 take this advance a stage further.
+Using modern nanofabrication procedures,
+they manufactured a pair of micro-ring res-
+onators coupled to parallel waveguides on a
+silicon-on-insulator  substrate  typical  of  an
+electronic chip. The refractive index of the 
+silicon that made up the waveguides and the
+rings (3.45) was significantly greater than that
+of the silicon oxide that surrounded them on
+all sides (1.46). This meant that light could be
+confined  in  rings  of  a  very  small  diameter
+through the process known as total internal
+reflection.  EIT-like  behaviour  was  demon-
+strated by measuring the transmission at dif-
+ferent frequencies of a laser beam injected into
+the system. The authors constructed several
+such devices, where the distance between the
+micro-rings was varied from device to device,
+and thus the spectral location of the EIT-like
+transmission peak could be adjusted. 
+
+So what good is all this? As the name indi-
+cates,  EIT  is  primarily  a  way  of  rendering
+transparent  an  otherwise  highly  absorbing
+material, and so lends itself to applications
+such  as  the  construction  of  long-distance 
+optical  transmission  lines. The  dispersion
+characteristic that results from EIT has already
+allowed 
+light’  propagation  to  be
+achieved11–13 at speeds just a small fraction 
+of the normal speed of light. Optical ‘buffers’
+to  temporarily  store  light are  an  obvious 
+
+‘slow 
+
+application of such slow-light technology.
+
+Perhaps most importantly, EIT resonances
+can  be  much  narrower  than  those  of  indi-
+vidual resonators, whether these are atoms or
+microresonators. As a resonance frequency
+can typically be measured only to an accuracy
+given by some fixed fraction of the resonance
+linewidth, narrowed linewidths could be use-
+ful for performing precise optical measure-
+ments  of  quantities  such  as  magnetic  field
+strength14. The ability to synthesize such com-
+ponents on an optical chip suggested by Xu
+and colleagues’ innovation1 is a crucial step
+towards the development of such integrated
+optical devices.
+I
+Robert W. Boyd is at the Institute of Optics and
+Department of Physics and Astronomy,
+University of Rochester, Rochester, New York
+14627, USA. 
+Daniel J. Gauthier is in the Department of
+Physics, Duke University, Durham, North
+Carolina 27708, USA.
+e-mails: boyd@optics.rochester.edu;
+gauthier@phy.duke.edu
+
+1.  Xu, Q., Sandhu, S., Povinelli, M. L., Shakya, J., Fan, S. &
+
+Lipson, M. Phys. Rev. Lett. 96, 123901 (2006).
+
+2.  Harris, S. E., Field, J. E. & Imamoglu, A. Phys. Rev. Lett. 64,
+
+1107–1110 (1990).
+
+3.  Alzar, C. L. G., Martinez, M. A. G. & Nussenzveig, P. 
+
+Am. J. Phys. 70, 37–41 (2002).
+
+4.  Vahala, K. J. Nature 424, 839–846 (2003). 
+5. Yanik, M. F., Suh, W., Wang, Z. & Fan, S. Phys. Rev. Lett. 93,
+
+233903 (2004). 
+
+6. Scheuer, J. & Yariv, A. Phys. Rev. Lett. 96, 053901 (2006). 
+7. Heebner, J. et al. Opt. Lett. 29, 769–771 (2004).
+8.  Smith, D. D., Chang, H., Fuller, K. A., Rosenberger, A. T. &
+
+Boyd, R. W. Phys. Rev. A 69, 063804 (2004). 
+
+9. Maleki, L., Matsko, A. B., Savchenkov, A. A. & Ilchenko, V. S.
+
+Opt. Lett. 29, 626–628 (2004).
+
+10.  Naweed, A., Farca, G., Shopova, S. I. & Rosenberger, A. T.
+
+Phys. Rev. A 71, 043804 (2005).
+
+11.  Hau, L. V., Harris, S. E., Dutton, Z. & Behroozi, C. H. Nature
+
+397, 594–598 (1999).
+
+12.  Boyd, R. W. & Gauthier, D. J. Prog. Opt. 43, 497–530 (2002).
+13. Bigelow, M. S., Lepeshkin, N. N. & Boyd, R. W. Phys. Rev. Lett.
+
+14.  Scully, M. O. & Fleischhauer, M. Phys. Rev. Lett. 69,
+
+90, 113903 (2003).
+
+1360–1363 (1992). 
+
+NEUROBIOLOGY 
+
+Extending influence
+
+Eve Marder
+Rather than merely firing in a digital on–off fashion, vertebrate neurons 
+may have an analogue aspect to their signalling too — a finding that will not
+surprise many who have worked on invertebrate neurons.
+
+Much of what we know about electrical sig-
+nalling in the brain comes from extracellular
+recordings that detect when a neuron is firing
+action  potentials.  These  recordings  do  not,
+however, provide continuous monitoring of
+the fluctuations of membrane potential, and 
+do  not  capture  sub-threshold  changes  in 
+membrane potential such as those caused by
+individual synaptic events. The prevalence of
+
+extracellular recordings in the literature has
+contributed to a collective consciousness in
+which the action potential or ‘spike’ is viewed
+as  an  invariant,  all-or-nothing  stereotyped
+event that occurs once a threshold membrane
+potential is reached. This ‘digital’ signal carries
+information from the neuronal cell body, the
+soma, down the axon to presynaptic terminals,
+where it evokes the release of neurotransmitter
+
+ ©2006
+
+Nature  Publishing Group
+
+

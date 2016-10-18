@@ -1,0 +1,214 @@
+A neural basis for inference in perceptual ambiguity
+
+Philipp Sterzer, and Andreas Kleinschmidt 
+
+PNAS
+
+ 2007;104;323-328; originally published online Dec 26, 2006; 
+
+doi:10.1073/pnas.0609006104 
+
+This information is current as of March 2007.
+ 
+
+Online Information
+& Services
+ 
+
+Supplementary Material
+ 
+
+References
+
+ 
+
+E-mail Alerts
+
+ 
+
+Rights & Permissions
+
+ 
+
+Reprints
+
+ 
+
+Notes:
+ 
+
+High-resolution figures, a citation map, links to PubMed and Google Scholar,
+etc., can be found at: 
+www.pnas.org/cgi/content/full/104/1/323
+ 
+Supplementary material can be found at: 
+www.pnas.org/cgi/content/full/0609006104/DC1
+ 
+This article cites 41 articles, 9 of which you can access for free at: 
+www.pnas.org/cgi/content/full/104/1/323#BIBL
+ 
+This article has been cited by other articles: 
+www.pnas.org/cgi/content/full/104/1/323#otherarticles
+Receive free email alerts when new articles cite this article - sign up in the box
+at the top right corner of the article or
+To reproduce this article in part (figures, tables) or in entirety, see: 
+www.pnas.org/misc/rightperm.shtml
+ 
+To order reprints, see: 
+www.pnas.org/misc/reprints.shtml
+ 
+
+click here
+
+. 
+
+ 
+
+A neural basis for inference in perceptual ambiguity
+
+Philipp Sterzer†‡§ and Andreas Kleinschmidt¶㥋**
+
+†Department of Neurology, Johann Wolfgang Goethe University, Theodor-Stern-Kai 7, D-60590 Frankfurt am Main, Germany; ‡Department of Psychiatry,
+Charite´ University Hospital/St Hedwig Hospital, Turmstrasse 21, D-10559 Berlin, Germany; ¶Institut National de la Sante´ et de la Recherche Me´ dicale Unite´
+562, Cognitive Neuroimaging, 91401 Orsay Cedex, France, 㛳Commissariat a` l’Energie Atomique, Direction des Sciences du Vivant, De´ partement de Recherche
+Me´ dicale, Service Hospitalier Fre´ de´ ric Joliot, Orsay, 91401 Cedex, France; and **Universite´ Paris-Sud, Orsay, 91405, France
+
+Edited by Marcus E. Raichle, Washington University School of Medicine, St. Louis, MO, and approved November 8, 2006 (received for review
+October 11, 2006)
+
+When looking at ambiguous visual stimuli, the observer experi-
+ences frequent spontaneous transitions between two competing
+percepts while physical stimulation remains unchanged. Despite
+recent advances in understanding the neural processes underlying
+such perceptual rivalry, a key question has remained unresolved:
+Does perceptual rivalry result merely from local bistability of
+neural activity patterns in sensory stimulus representations, or do
+higher-order areas play a causal role by shifting inference and,
+thus, initiating perceptual changes? We used functional MRI to
+measure brain activity while human observers reported successive
+spontaneous changes in perceived direction for an ambiguous
+apparent motion stimulus. In a control condition, the individual
+sequences of spontaneous perceptual switches during bistability
+were replayed by using a disambiguated version of the stimulus.
+Greater activations during spontaneous compared with stimulus-
+driven switches were observed in inferior frontal cortex bilaterally.
+Subsequent chronometric analyses of event-related signal time
+courses showed that, relative to activations in motion-sensitive
+extrastriate visual cortex, right inferior frontal cortex activation
+occurred earlier during spontaneous than during stimulus-driven
+perceptual changes. The temporal precedence of right inferior
+frontal activations suggests that this region participates in initiat-
+ing spontaneous switches in perception during constant physical
+stimulation. Our ﬁndings can thus be seen as a signature of when
+and where the brain ‘‘makes up its mind’’ about competing
+perceptual interpretations of a given sensory input pattern.
+
+apparent motion 兩 bistable perception 兩 functional MRI
+
+We usually experience our perception of the visual world as
+
+unitary and stable even though the information available
+to our brains is often noisy or ambiguous. How does the brain
+nonetheless ‘‘make sense’’ of this information? From a theoret-
+ical perspective, translating the images cast onto the retina into
+meaningful percepts can be addressed as an inference problem,
+but related neurophysiological evidence is sparse (1). This need
+for inference is best illustrated by ambiguous stimuli as the
+Necker cube or the apparent motion quartet (2, 3) (Fig. 1), where
+perception typically fluctuates spontaneously between two mu-
+tually exclusive interpretations of the same sensory input. Such
+bistable perception is paralleled by activity changes in separate
+neuronal populations that represent one or the other perceptual
+interpretation (4), but what causes the change to occur in the first
+place remains unclear. In binocular rivalry, where discrepant
+information is presented to the two eyes, neural activity at the
+earliest visual processing stages correlates with spontaneous
+perceptual fluctuations (5–9), suggesting a ‘‘gate-keeping’’ func-
+tion of these structures in visual awareness. Alternatively, per-
+ceptual changes could be initiated by a higher-level process that,
+by way of inference, can stabilize, bias, or topple the current
+interpretation of the sensory input (10, 11).
+
+These two scenarios differ in the causal chain assumed to
+underlie changes in visual awareness, but it remains difficult to
+infer causality from correlative neurophysiological measures.
+Still, temporal precedence is generally considered good evidence
+in favor of a putative causal role (12). Invasive neurophysiolog-
+
+ical recordings would therefore appear ideally suited to resolve
+this question but suffer from the uncertainty of where exactly to
+place recording electrodes, for instance, in the frontal lobe.
+Functional neuroimaging provides whole-brain coverage and has
+indeed shown activations related to perceptual change not only
+in visual but also frontal and parietal regions (10, 13–16).
+However, the conventional amplitude-based analytical tech-
+niques used in these studies could not clarify whether fronto-
+parietal regions respond to a feed-forward signal from the
+sensory cortex that is driven by perceptual change or whether
+these regions generate a feedback signal to the sensory cortex
+before perceptual change. Recent novel analytical approaches
+have shown that the temporally dispersed neurovascular re-
+sponse is reliable enough to resolve latency differences in the
+range of a couple of hundreds of milliseconds (17–22). Here, we
+used such techniques to analyze the onset latencies of functional
+MRI (fMRI) activiations during spontaneous perceptual
+changes in bistable apparent motion (rivalry) compared with
+stimulus-driven changes in a matched control condition (replay)
+where the sequence of reversals as reported in the preceding
+rivalry condition was replayed by using a disambiguated version
+of the apparent motion quartet (Fig. 1). We hypothesized that a
+top-down process, where frontal or parietal regions play a causal
+role in initiating perceptual change, should be associated with an
+earlier onset of activations in these regions during spontaneous
+compared with stimulus-driven perceptual changes, relative to
+activations in visual cortex [supporting information (SI) Fig. 5].
+
+Results
+We first mapped transient activations that occurred whenever
+perception changed, irrespective of whether this happened spon-
+taneously during rivalry or in response to a stimulus change
+during replay. In our paradigm, change in perception refers to a
+change in direction of apparent motion (from vertical to hori-
+zontal or vice versa, see Fig. 1), and activation refers to a signal
+increase over and above constant ongoing sensory processing. As
+reported with similar paradigms (16, 23–25), switch-related
+activations occurred at the lateral occipitotemporal junction,
+corresponding to the human motion complex (hMT⫹/V5) (Fig.
+2A). Additionally and again in accord with previous findings (13,
+14, 16), we observed a distributed activation pattern associated
+with perceptual switches that included bilateral inferior frontal
+lobe regions and the right inferior parietal lobule but also the
+calcarine cortex, consistent with early visual areas V1/V2 (see SI
+
+Author contributions: P.S. and A.K. designed research; P.S. performed research; P.S. ana-
+lyzed data; and P.S. and A.K. wrote the paper.
+The authors declare no conﬂict of interest.
+This article is a PNAS direct submission.
+Abbreviations: fMRI, functional magnetic resonance imaging; hMT⫹/V5, human motion
+complex; BOLD, blood oxygenation level dependent; HRF, hemodynamic response func-
+tion; ROI, region of interest.
+§To whom correspondence should be addressed. E-mail: philipp.sterzer@charite.de.
+This article contains supporting information online at www.pnas.org/cgi/content/full/
+0609006104/DC1.
+© 2006 by The National Academy of Sciences of the USA
+
+E
+C
+N
+E
+I
+C
+S
+O
+R
+U
+E
+N
+
+www.pnas.org兾cgi兾doi兾10.1073兾pnas.0609006104
+
+PNAS 兩
+
+January 2, 2007 兩 vol. 104 兩 no. 1 兩 323–328
+
+

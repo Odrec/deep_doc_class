@@ -1,0 +1,198 @@
+SOMMERSEMESTER 2016
+
+UNIVERSIT ¨AT OSNABR ¨UCK
+INSTITUT F ¨UR MATHEMATIK
+DR. THOMAS PETER
+PROF. STEFAN KUNIS
+
+Aufgabe 4.13 (10 Punkte).
+Zeigen Sie, dass das Problem
+
+¨Ubungen zur Optimierung
+
+¨Ubung 4
+
+(cid:107)Ax − b(cid:107)2
+
+2
+
+min
+x∈Rd
+
+f¨ur A ∈ Rn×d mit n ≥ d und rang(A) = d sowie b ∈ Rn eindeutig l¨osbar ist. Verwenden Sie dazu
+die in der Vorlesung behandelten Kriterien f¨ur ein lokales Minimum und geben Sie dieses Minimum
+an.
+Aufgabe 4.14 (10 Punkte).
+Es sei f : R2 → R, f (x1, x2) = x2
+
+2 f¨ur a > 1.
+
+1 + ax2
+
+a) Bestimmen Sie, ausgehend von x0 = (a, 1)T , die Folge der Iterierten (xk)k∈N0 des Modell-
+Algorithmus mit negativer Gradientensuchrichtung und optimaler Schrittl¨angenbestimmung.
+Berechnen Sie hierzu die Schrittl¨ange analytisch.
+
+b) Zeigen Sie, dass f¨ur alle k ≥ 0 und f¨ur das strikte Minimum x∗ ∈ R2 von f gilt
+
+||xk+1 − x∗||2 =
+
+f (xk+1) − f (x∗) =
+
+||xk − x∗||2,
+
+a − 1
+a + 1
+
+(cid:18) a − 1
+
+(cid:19)2
+
+a + 1
+
+(f (xk) − f (x∗)).
+
+c) Dr¨ucken Sie die Konvergenzrate a−1
+
+a+1 mit Hilfe der spektralen Konditionszahl
+
+κ(∇2f (x)) =
+
+λ2
+λ1
+
+der Hesse-Matrix aus. Hierbei bezeichnet λ2 bzw. λ1 den gr¨oßten bzw. kleinsten Eigenwert von
+∇2f (x). Wie verh¨alt sich die Konvergenzrate f¨ur κ(∇2f (x)) → ∞?
+
+Aufgabe 4.15 (10 Punkte).
+Sei q : Rd (cid:55)→ R eine quadratische Funktion mit symmetrisch positiv deﬁniter Matrix A ∈ Rd×d und
+b ∈ Rd. Sei xk noch kein station¨arer Punkt von q und pk eine Abstiegsrichtung (nicht zwingend der
+steilste Abstieg) f¨ur q in xk.
+
+a) Berechnen Sie die exakte Schrittweite ˆαk.
+
+b) Berechnen Sie (eine von xk und pk unabh¨angige, m¨oglichst große) Konstante θ > 0 mit
+
+q(x) − q(x + ˆαkpk) ≥ θ
+
+(cid:18)∇q(xk)(cid:62)pk
+
+(cid:19)2
+
+(cid:107)pk(cid:107)
+
+.
+
+Aufgabe 4.16 (10 Punkte).
+
+a) Sei q : R2 (cid:55)→ R mit q(x) = x(cid:62)Ax und
+
+(cid:19)
+
+(cid:18)1
+
+0
+0 10
+
+A =
+
+F¨ugen Sie Ihrer Implementation des Gradientenverfahrens f¨ur quadratische Zielfunktionen die
+Abbruchkriterien nach Gill, Murray und Wright hinzu. Setzen Sie x0 = (10, 1)(cid:62), kmax = 50
+und variieren Sie die Toleranzen:
+
+• tol = 10−3
+• tol = 10−6
+• tol = 10−9
+
+Machen Sie sich mit dem Befehl fprintf vertraut und lassen Sie f¨ur jede der Toleranzen in
+jedem Schritt die Schrittanzahl und die aktiven Abbruchbedingungen ausgeben.
+
+b) Machen Sie sich mit dem Konzept des Funktion Handles in MATLAB vertraut und er-
+stellen Sie eine Funktion Armijo(f,x,p,g,sigma,beta), der ein Funktion Handle der
+Zielfunktion f ¨ubergeben wird, eine aktuelle N¨aherung x, eine Suchrichtung p, der Gradient
+g = ∇f (x) an der aktuellen N¨aherung, sowie die Armijo-Parameter σ, β. Die Funktion soll die,
+durch die Armijo-Bedingung bestimmte, Schrittweite α zur¨uckgeben. Testen Sie Ihre Funktion
+f¨ur
+
+x(cid:62)Ax − b(cid:62)x + c, mit
+
+f (x) =
+
+A =
+
+1
+2
+
+(cid:18)2.5 1
+
+(cid:19)
+
+1
+
+6
+
+(cid:18) 4
+
+(cid:19)
+
+−1
+
+,
+
+b =
+
+,
+
+c = 4,
+
+x =
+
+(cid:19)
+
+,
+
+σ = 0.1,
+
+β = 0.95.
+
+(cid:18)0
+
+0
+
+c) Ersetzen Sie die exakte Schrittweite (in Ihrem Gradientenverfahren f¨ur quadratische Zielfunk-
+tionen mit Abbruchbedingungen nach Gill, Murray und Wright) durch die in Aufgabenteil b)
+erstellte Armijo-Schrittweitensuche. Testen Sie Ihr Verfahren f¨ur q(x) = x(cid:62)Ax mit
+
+A =
+
+0
+0 10
+
+, tol = 10−3,
+
+kmax = 50,
+
+x0 =
+
+,
+
+σ = 0.1,
+
+β = 0.95.
+
+(cid:18)1
+
+(cid:19)
+
+(cid:18)10
+(cid:19)
+
+1
+
+Vergleichen Sie die Anzahl der ben¨otigen Schritte mit denen in Aufgabenteil a). (Unterdr¨ucken
+Sie in diesem Aufgabenteil die Ausgabe der aktiven Abbruchbedingungen in jedem Schritt.)
+
+Bitte werfen Sie die L¨osungen bis zum 05.05.2016, 8:30 Uhr in den ¨Ubungszettelkasten, Geb¨aude
+69, Erdgeschoss ein.
+
+

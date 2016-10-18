@@ -1,0 +1,117 @@
+Quantitative Methoden (Master) 
+Universität Osnabrück, Fachbereich Kultur- und Sozialwissenschaften 
+Sommersemester 2016 
+Golsch 
+ 
+
+Übung 6 - Regression mit Dummy Variablen  
+
+ 
+
+Aufgabe 
+
+Verwenden Sie für diese Aufgabe die Datei soep2011_extended.dta, ein Datenauszug aus 
+dem Sozio-ökwonomischen Panel. Es soll um  die Frage gehen, ob  sich  das  Einkommen  
+von Männern und Frauen signifikant unterscheidet. 
+ 
+1.  Testen  Sie  mit  einem  T-Test,  ob  sich  die  Einkommen  von  Männern  und  Frauen 
+
+signifikant unterscheiden. 
+
+ 
+
+2.  Berechnen  Sie  nun  eine  Regression  mit  der  abhängigen  Variablen  Einkommen  und 
+
+einer unabhängigen Variablen, und zwar dem Geschlecht der Befragungsperson.  
+a.  Da  es  sich  hierbei  um  eine  kategoriale  Variable  handelt,  müssen  Sie  eine 
+
+geeignete Dummy-Variable bilden.  
+
+b.  Schätzen Sie das bivariate Regressionsmodell. 
+c.  Vergleichen Sie die Ergebnisse Ihres Regressionsmodells mit dem vorherigen T-
+
+Test. Welche Statistiken sind identisch? 
+
+ 
+
+3.  Männer  und  Frauen  unterscheiden  sich  in  der  Regel  bezüglich  ihrer  Ausbildung 
+(bilzeit)  und  ihrer  Beschäftigungsdauer  beim  jetzigen  Arbeitgeber  (erwzeit).  Um 
+sicherzustellen,  dass  die 
+in  den  beiden  vorherigen  Fragen  berechneten 
+Einkommensunterschiede  zwischen  Männern  und  Frauen  nicht  durch  Bildungs- 
+und/oder  Senioritätsunterschiede  bedingt  sind,  sollen  Sie  in  einem  multiplen 
+Regressionsmodell diese Variablen (bilzeit und erwzeit) kontrollieren.  
+a.  Führen Sie eine entsprechende Regressionsschätzung durch. 
+b.  Vergleichen  Sie  den  geschätzten  Einkommensunterschied  zwischen  Männern 
+und  Frauen  aus  dem  letzten  (multiplen)  Regressionsmodell  mit  dem  zuvor  in 
+Frage 2 berechneten Einkommensunterschied: In  welcher Richtung hat er sich 
+verändert und warum?  
+
+ 
+
+4.  Erzeugen  Sie  eine  Ergebnistabelle,  die  die  Ergebnisse  der  Regressionsmodelle  aus 
+
+Teilaufgabe 2b und Teilaufgabe 3a widergibt. 
+ 
+
+5.  Ergänzen  Sie  das  Regressionsmodell  um  weitere  unabhängige  Variablen.  Einige 
+Variablen in dem Datensatz sind kategorial. Wenn Sie diese Variablen kontrollieren 
+möchten, müssen Sie zuvor Dummys bilden.    
+ 
+
+6.  Wie  können  wir  testen,  ob  sich  die  Bildungsrendite  signifikant  zwischen  Männern 
+und Frauen unterscheidet? Überlegen Sie, wie man ein geeignetes Regressionsmodell 
+spezifizieren kann. 
+
+1 
+
+ 
+
+ 
+
+ 
+Datensatzbeschreibung  
+ 
+
+ 
+
+Stata Kommandos 
+
+Befehl 
+ 
+ttest 
+ 
+regress y x1 x2 x3 
+ 
+
+estimates store 
+modell1 
+ 
+estimates table 
+modell1, star 
+ 
+ 
+ 
+
+ 
+
+ 
+
+Beschreibung 
+ 
+führt einen T-Test durch 
+ 
+berechnet die multiple Regression der abhängigen Variable y auf die 
+unabhängigen Variablen x1, x2, x3 
+ 
+speichert Ergebnisse des letzten Modells unter dem Namen modell1 ab.  
+ 
+
+erstellt eine Übersichtstabelle in Stata; Ergebnisse müssen zuvor mit 
+dem Befehl estimates store gespeichert werden 
+ 
+ 
+
+2 
+
+Sorted by:                                                                                                                                        expue           float   %9.0g                 Arbeitsmarkterfahrung Arbeitslosexppt           float   %9.0g                 Arbeitsmarkterfahrung Teilzeitexpft           float   %9.0g                 Arbeitsmarkterfahrung Vollzeitemplst          byte    %44.0g     emplst11   Employment Statusallbet          byte    %35.0g     allbet11   Grobkategorien Unternehmensgroesseisced           byte    %27.0g     isced11    ISCED-1997-Klassifikationautono          byte    %22.0g     autono11   Autonomie beruflichen Handelnsegp             byte    %45.0g     egp11      ERIKSON and GOLDTHORPE Class Categorie (IS88)siops           byte    %8.0g                 TREIMANS STANDARD INT.OCC.PR.SCORE (IS88)mps             float   %9.0g                 Magnitude Prestigeskala (Klas)isei            byte    %8.0g                 ISEI-Status88 nach Ganzeboom (IS88)uebstd          float   %9.0g                 Ueberstunden pro Wochevebzeit         float   %9.0g                 Vereinbarte Arbeitszeit pro Wochetatzeit         float   %9.0g                 Tatsaechliche Arbeitszeit pro Wochefamstd          byte    %26.0g     bbfamstd   Familienstandpsbil           byte    %30.0g     bbpsbil    Schulabschlussnation          int     %35.0g     nation11   Staatsangehoerigkeit-Nationalitaetausb            byte    %46.0g     ausb11     erforderliche Ausbildung im Berufoeffd           byte    %22.0g     oeffd11    im oeffentlichen Dienstbetr            byte    %36.0g     betr11     Unternehmensgroesseerljob          byte    %26.0g     erljob11   Taetigkeit im erlernten Beruferwtyp          byte    %57.0g     erwtyp11   Erwerbstypuslabgro          long    %10.0g                Akt. Bruttoerwerbseink.(gen) in Euroerwzeit2        float   %9.0g                 Dauer der Betriebszugehoerigkeit, quadratierterwzeit         float   %9.0g                 Dauer der Betriebszugehoerigkeitbilzeit         float   %9.0g                 Dauer der Ausbildung, in Jahrenalterk          float   %18.0g     alterk     Alter in Jahren, klassiertalter           float   %9.0g                 Alter in Jahrengebjahr         int     %8.0g                 Geburtsjahr -4Steller-sex             byte    %22.0g     sex        Geschlechtwest            float   %9.0g      janein     Westdeutschland, alte Bundeslaenderpersnr          long    %12.0g                Personennummerhhnr            long    %12.0g                Haushaltsnummer                                                                                                                                      variable name   type    format     label      variable label              storage   display    value                                                                                                                                       size:       872,496                           vars:            33                          13 Jun 2014 12:53  obs:        10,512                          Datenauszug, SOEP Lehrversion, Befragungsjahr 2011Contains data from E:\Osnabrück\Lehre\Quantitative Methoden\Übungen\Daten\Stata 12\soep2011_extended.dta. describe

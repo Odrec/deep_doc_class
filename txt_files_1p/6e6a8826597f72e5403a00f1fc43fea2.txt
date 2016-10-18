@@ -1,0 +1,72 @@
+Patterns of Walkability, Transit, and
+
+Recreation Environment for
+
+Physical Activity
+
+Marc A. Adams, PhD, MPH,1 Michael Todd, PhD,2 Jonathan Kurka, MS,1 Terry L. Conway, PhD,3
+
+Kelli L. Cain, MA,3 Lawrence D. Frank, PhD,4 James F. Sallis, PhD3
+
+Introduction: Diverse combinations of built environment (BE) features for physical activity (PA)
+are understudied. This study explored whether patterns of GIS-derived BE features explained
+objective and self-reported PA, sedentary behavior, and BMI.
+Methods: Neighborhood Quality of Life Study participants (N¼2,199, aged 20–65 years, 48.2%
+female, 26% ethnic minority) were sampled in 2001–2005 from Seattle / King County WA and
+Baltimore MD / Washington DC regions. Their addresses were geocoded to compute net residential
+density, land use mix, retail ﬂoor area ratio, intersection density, public transit, and public park and
+private recreation facility densities using a 1-km network buffer. Latent proﬁle analyses (LPAs) were
+estimated from these variables. Multilevel regression models compared proﬁles on accelerometer-
+measured moderate to vigorous PA (MVPA) and self-reported PA, adjusting for covariates and
+clustering. Analyses were conducted in 2013–2014.
+
+Results: Seattle region LPAs yielded four proﬁles, including low walkability/transit/recreation
+(L-L-L); mean walkability/transit/recreation (M-M-M); moderately high walkability/transit/
+recreation (MH-MH-MH); and high walkability/transit/recreation (H-HH). All measures were
+higher in the HHH than the LLL proﬁle (difference of 17.1 minutes/day for MVPA, 146.5
+minutes/week for walking for transportation, 58.2 minutes/week for leisure-time PA, and 2.2
+BMI points; all po0.05). Baltimore region LPAs yielded four proﬁles, including L-L-L; M-M-M;
+high land use mix, transit, and recreation (HLU-HT-HRA); and high intersection density, high
+retail ﬂoor area ratio (HID-HRFAR). HLU-HT-HRA and L-L-L differed by 12.3 MVPA
+minutes/day; HID-HRFAR and L-L-L differed by 157.4 minutes/week for walking for trans-
+portation (all po0.05).
+Conclusions: Patterns of environmental features explain greater differences in adults’ PA than the
+four-component walkability index.
+(Am J Prev Med 2015;49(6):878–887) & 2015 American Journal of Preventive Medicine
+
+From the 1Exercise Science and Health Promotion, School of Nutrition and
+Health Promotion, Arizona State University, Phoenix, Arizona; 2College of
+Nursing and Health Innovation, Arizona State University, Phoenix,
+Arizona; 3Department of Family and Preventive Medicine, School of
+Medicine, University of California, San Diego, California; and 4Schools
+of Population and Public Health and Community and Regional Planning,
+University of British Columbia, Vancouver, British Columbia, Canada
+
+Address correspondence to: Marc A. Adams, PhD, MPH, Exercise
+Science and Health Promotion, School of Nutrition and Health Promotion,
+Arizona State University, 500 N. Third Street (Mail Code 3020), Phoenix
+AZ 85004. E-mail: marc.adams@asu.edu.
+
+0749-3797/$36.00
+http://dx.doi.org/10.1016/j.amepre.2015.05.024
+
+Introduction
+
+M ost Americans do not meet physical activity
+
+(PA) guidelines.1 People live in neighbor-
+hoods that are mosaics of modiﬁable2,3 built
+environment (BE) features (e.g., walkability, access to
+public transportation, public park, private recreation
+facilities).4–7 Such features have been individually and
+consistently linked to PA among adults8–13 and have
+shown behavior-speciﬁc associations with different
+domains of PA (e.g., recreation, transportation).8,13–17
+Mixed evidence exists for relations of BEs with sedentary
+behaviors and obesity.18–22
+
+878 Am J Prev Med 2015;49(6):878–887
+
+& 2015 American Journal of Preventive Medicine  Published by Elsevier Inc.
+
+

@@ -1,0 +1,331 @@
+Brit. J. Phil. Sci. 61 (2010), 729–768
+
+Insights and Blindspots of the
+Cognitivist Theory of Emotions
+
+Andrea Scarantino
+
+ABSTRACT
+
+Philosophical cognitivists have argued for more than four decades that emotions are
+special types of judgments. Anti-cognitivists have provided a series of counterexamples
+aiming to show that identifying emotions with judgments overintellectualizes the emo-
+tions. I provide a novel counterexample that makes the overintellectualization charge
+especially vivid. I discuss neurophysiological evidence to the effect that the fear system
+can be activated by stimuli the subject is unaware of seeing. To emphasize the analogy
+with blindsight, I call this phenomenon blindfright. Cognitivists may reply that blind-
+fright is nothing but an unconscious judgment subcortically elicited. This reply is in line
+with the strategy commonly employed by cognitivists against their critics. I call it the
+Elastic Strategy, because it consists of ‘stretching’ the notion of judgment in order to
+accommodate counterexamples. This strategy, I argue, turns cognitivism into a theory
+that is at worst unfalsiﬁable and at best trivially true. The ﬁnal portion of my article aims
+to rescue cognitivism from the damage done by the Elastic Strategy. I distinguish three
+varieties of cognitivism, one concerned with what emotions essentially are (Constitutive
+Cognitivism), one concerned with what causes emotions (Etiological Cognitivism) and
+one concerned with what emotions represent (Representational Cognitivism). I conclude
+that what cognitivism has to offer to emotion theory are primarily insights concerning the
+causes and representational content of emotions. The constitutive identiﬁcation of emo-
+tions with judgments, on the other hand, does more harm than good.
+
+1.
+
+Introduction
+
+2. The Emergence of Cognitivism
+
+3. Blindfright
+
+4. The Master Argument Against Cognitivism
+
+5. The Elastic Strategy
+
+6. Three Varieties of Cognitivism
+
+6.1 Constitutive Cognitivism
+
+6.2 Etiological Cognitivism
+
+6.3 Representational Cognitivism
+
+7. Conclusion
+
+ß The Author 2010. Published by Oxford University Press on behalf of British Society for the Philosophy of Science. All rights reserved.
+doi:10.1093/bjps/axq011
+For permissions, please email: journals.permissions@oxfordjournals.org
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+730
+
+Andrea Scarantino
+
+1 Introduction
+
+Philosophical cognitivists have long argued that emotions are special types of
+judgments (Solomon [1976], [2003]; Nussbaum [2001]).1 This thesis has been
+widely criticized, because judgments appear to have distinguishing properties
+emotions lack (e.g., cognitive sophistication) and lack distinguishing proper-
+ties emotions have (e.g., motivational power) (cf. Deigh [1994]; Grifﬁths
+[1997]; DeLancey [2001]; D’Arms and Jacobson [2003]; Prinz [2004]).
+Cognitivists have been largely unfazed by criticisms of this sort. Their stand-
+ard reaction is to ﬁne-tune the notion of judgment, and reply that, relative to
+such notion, emotions are indeed judgments. The purpose of this article is to
+move beyond this standard dialectic, which mixes terminological disputes on
+what judgments are with substantive disagreements on the nature of emotions.
+The paper can be divided into three parts. In the ﬁrst, I present a new
+counterexample to cognitivism, an emotion I call blindfright. Blindfright is a
+type of fear elicited without awareness of the eliciting stimulus, in circum-
+stances analogous to those in which blindsight is manifested. Besides being an
+interesting phenomenon in its own right, blindfright is a striking example of
+what is wrong with the identiﬁcation of emotions with judgments, under the
+understanding of judgment presupposed by anti-cognitivists. Cognitivists,
+however, reject such an understanding, and adopt what I call the Elastic
+Strategy. The strategy consists of stretching the notion of ‘judgment’ in
+order to accommodate counterexamples. Blindfright is bound to lead cogni-
+tivists to add the notion of a subcortical judgment to the already motley crew of
+items that qualify as judgments by cognitivists’ lights.
+
+In the second part of my paper, I explain what is wrong with the Elastic
+Strategy. In a nutshell, it has turned cognitivism into a theory that is (at best)
+trivially true. Furthermore, the Elastic Strategy has led cognitivists and
+anti-cognitivists to talk past each other; while they respectively afﬁrm and
+deny that emotions are judgments, they mean different things by ‘judgment’.
+Finally, the Elastic Strategy has prevented anti-cognitivists from gaining an
+appreciation of the insights of the cognitivist research program.
+
+In the third part of my paper, I try to rescue cognitivism from the damage
+done by the Elastic Strategy. I distinguish between three varieties of cognitiv-
+ism that have been historically important in philosophy and in the sciences of
+mind. One is concerned with the essential nature of emotions (Constitutive
+
+1 Other versions of cognitivism in philosophy are less radical (see, e.g., Deigh [1994] for further
+discussion). Greenspan ([1998]), for example, offers a cognitivist theory that makes room for the
+feeling dimension of emotions by suggesting that emotions are feelings of comfort or discomfort
+towards a stimulus-directed thought. Marks ([1984]) offers a belief and desire theory which
+makes room for the motivational dimension of emotions, proposing that an emotion results
+from the conjunction of a belief and a strong desire. I will disregard varieties of philosophical
+cognitivism distinct from pure judgmentalism in what follows.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+

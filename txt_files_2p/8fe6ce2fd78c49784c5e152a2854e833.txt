@@ -1,0 +1,132 @@
+    Differentialgleichungen
+
+Vorlesungsskript Wintersemester 2014/15
+
+Heinz Spindler
+Institut für Mathematik - Universität Osnabrück
+
+Der Vorlesung liegt das Buch von Walter [W] zugrunde. 
+
+Einleitung
+
+Unter  einer  Differentialgleichung  versteht  man  eine  Gleichung,  in  der  unabhängige  Variable,
+Funktionen und Ableitungen von Funktionen auftreten. Kommt nur eine unabhängige Variable
+vor, so spricht man von gewöhnlichen Differentialgleichungen. 
+Ein einfaches Beispiel einer gewöhnlichen Differentialgleichung ist
+
+y'(cid:1) 2 x y(cid:2) 0.
+
+Hier ist x die unabhängige Variable und y die gesuchte Funktion, y' ihre Ableitung. Eine Lösung
+
+(cid:3)0.1(cid:4)
+dieser  Differentialgleichung  ist  eine  Funktion  y(cid:2) y(cid:3)x(cid:4)  in  der  reellen  Variablen  x,  für  die  die
+Gleichung  y'(cid:3)x(cid:4)(cid:1) 2 x y(cid:3)x(cid:4)(cid:2) 0 für alle x erfüllt ist. Aus der Kettenregel folgt unmittelbar, dass
+y(cid:3)x(cid:4)(cid:2) e(cid:5)x2 eine Lösung ist. Auch c y(cid:3)x(cid:4)  ist eine Lösung, wenn c eine beliebige Konstante ist.  
+
+ eine  Differentialgleichung  erster  Ordnung.
+
+ Die  allgemeine
+
+Die  Gleichung  (0.1)  ist
+Differentialgleichung erster Ordnung lautet
+
+F(cid:3)x, y, y'(cid:4)(cid:2) 0.
+ und  F(cid:3)x, y(cid:3)x(cid:4), y'(cid:3)x(cid:4)(cid:4)(cid:2) 0  für
+
+Die  Funktion  y (cid:2) y(cid:3)x(cid:4)  ist  Lösung  von  (0.2)  in  einem  Intervall  J ,
+ alle  x(cid:6) J  gilt.
+
+differenzierbar
+ Treten  in  einer
+Differentialgleichung auch höhere Ableitungen auf, etwa bis zur n-ten Ordnung, so spricht man
+von einer Differentialgleichung n-ter Ordnung. Sie lässt sich immer in der impliziten Form
+
+(cid:3)0.2(cid:4)
+ wenn  y(cid:3)x(cid:4)  in  J
+
+ ist
+
+Fx, y, y', y'',
+
+..., y(cid:3)n(cid:4)(cid:2) 0.
+
+(cid:3)0.3(cid:4)
+
+schreiben.  Eine  Lösung  ist  eine  n-mal  differenzierbare  Funktion,  die  die  Gleichung  (0.3)
+identisch  erfüllt.  Man  nennt  eine  Differentialgleichung  n-ter  Ordnung  explizit,  wenn  sie  nach
+
+Institut für Mathematik
+
+2 | Differentialgleichungen
+
+der höchsten Ableitung aufgelöst ist, wenn also
+
+y(cid:3)n(cid:4)(cid:2) fx, y, y', y'',
+
+..., y(cid:3)n(cid:5)1(cid:4).
+
+(cid:3)0.4(cid:4)
+
+ Zunächst  werden  wir  explizite  gewöhnliche  Differentialgleichung  erster  Ordnung
+
+gilt.
+untersuchen, das sind Gleichungen der Form 
+
+Einfache  DGLen  kann  man  durch  Integration  lösen.  Zum  Beispiel  die  DGL  mit  getrennten
+Variablen
+
+Man schreibt formal  d y
+
+g(cid:3)y(cid:4) (cid:2) f(cid:3)x(cid:4) d x und integriert auf beiden Seiten der Gleichung:
+
+(cid:3)0.5(cid:4)
+
+(cid:3)0.6(cid:4)
+
+y'(cid:2) f(cid:3)x, y(cid:4).
+
+y'(cid:2) f(cid:3)x(cid:4) g(cid:3)y(cid:4).
+
+g(cid:3)y(cid:4) (cid:10) y(cid:2) f(cid:3)x(cid:4)(cid:10) x.
+ 1
+
+kleinen Überlegung
+
+Hat  man  die  Integration  geschafft,  so  löst  man  das  Ergebnis  nach  y  auf,  was  natürlich  -  wie
+schon  die  Integration  -  ein  schwieriges  Unterfangen  sein  kann!  Ein  einfaches  Beispiel  stellen
+die homogenen linearen DGLen dar:
+
+y'(cid:2) f(cid:3)x(cid:4) y.
+
+Die  Integration  von   d y
+
+(cid:3)0.7(cid:4)
+y (cid:2) f(cid:3)x(cid:4)  ergibt  log(cid:11)y(cid:12)(cid:2)(cid:13) f(cid:3)x(cid:4)(cid:10) x  und  somit  ergibt  sich  nach  einer
+(cid:3)0.8(cid:4)
+wobei F(cid:3)x(cid:4) eine Stammfunktion von  f(cid:3)x(cid:4) und c eine beliebige Konstante ist. Eine zugehörige
+(cid:3)0.9(cid:4)
+kann man dann durch (cid:14)Variation der Konstanten(cid:15) lösen: Man macht den Ansatz y(cid:3)x(cid:4)(cid:2) c(cid:3)x(cid:4) eF(cid:3)x(cid:4)
+
+y'(cid:2) f(cid:3)x(cid:4) y(cid:1) g(cid:3)x(cid:4)
+
+für eine Lösung der inhomogenen DGL (0.9) und wird durch Ableiten auf die Gleichung
+
+y(cid:2) c eF(cid:3)x(cid:4),
+
+inhomogene lineare DGL
+
+geführt. Vergleicht man diese mit 
+
+so kommt man zur Bedingung
+
+ y'(cid:3)x(cid:4)(cid:2) c'(cid:3)x(cid:4) eF(cid:3)x(cid:4)(cid:1) f(cid:3)x(cid:4) y(cid:3)x(cid:4)  
+y'(cid:3)x(cid:4)(cid:2) f(cid:3)x(cid:4) y(cid:3)x(cid:4)(cid:1) g(cid:3)x(cid:4), 
+c'(cid:3)x(cid:4)(cid:2) g(cid:3)x(cid:4) e(cid:5)F(cid:3)x(cid:4)
+
+und durch Integration zu einer Formel für c(cid:3)x(cid:4). Es ist klar, dass die Integration im allgemeinen
+
+nicht  elemenentar  durchführbar  ist.  In  speziellen  Fällen  kann  man  auch  nach  anderen
+
+Uni Osnabück
+
+

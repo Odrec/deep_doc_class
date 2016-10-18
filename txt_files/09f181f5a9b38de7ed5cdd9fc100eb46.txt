@@ -1,0 +1,214 @@
+Neuron, Vol. 35, 1167–1175, September 12, 2002, Copyright 2002 by Cell Press
+
+Brain Areas Active during Visual
+Perception of Biological Motion
+
+Emily D. Grossman1 and Randolph Blake
+Vanderbilt Vision Research Center/Department
+
+of Psychology
+
+Vanderbilt University
+Nashville, Tennessee 37203
+
+Summary
+
+Theories of vision posit that form and motion are rep-
+resented by neural mechanisms segregated into func-
+tionally and anatomically distinct pathways. Using
+point-light animations of biological motion, we exam-
+ine the extent to which form and motion pathways are
+mutually involved in perceiving figures depicted by the
+spatio-temporal integration of local motion compo-
+nents. Previous work discloses that viewing biological
+motion selectively activates a region on the posterior
+superior temporal sulcus (STSp). Here we report that
+the occipital and fusiform face areas (OFA and FFA)
+also contain neural signals capable of differentiating
+biological from nonbiological motion. EBA and LOC,
+although involved in perception of human form, do not
+contain neural signals selective for biological motion.
+Our results suggest that a network of distributed neu-
+ral areas in the form and motion pathways underlie
+the perception of biological motion.
+
+Introduction
+
+It is widely believed that primate vision comprises multi-
+ple visual areas organized into hierarchical pathways
+specialized for registering information about particular
+aspects of the visual scene (Felleman and Van Essen,
+1991). Over the years, this overarching model has taken
+different forms, with some versions emphasizing distinc-
+tions between “sustained” and “transient” aspects of
+vision (Breitmeyer and Ganz, 1976; Kulikowski and Tol-
+hurst, 1973), others distinguishing “color” and “broad-
+band” channels (Schiller et al., 1990), and still others
+focusing on distinctions between perceiving objects and
+acting upon objects (Goodale and Humphrey, 1998). One
+currently popular version of this theory posits a so-called
+“motion” pathway extending into more dorsal aspects
+of extrastriate and posterior parietal cortex, specialized
+for registering information about the locations of objects
+and their movements within the visual scene, and an
+“object” stream pathway in ventral cortex involved in
+specifying information about the shapes and identities
+of visual objects (Ungerleider and Mishkin, 1982; Living-
+stone and Hubel, 1987). This particular version of the
+multiple pathway model has sparked a wealth of re-
+search aimed at testing the notion of object-grounded
+and motion-grounded neural systems (Haxby et al.,
+1991; Tanaka, 1996; Bradley et al., 1998; Kourtzi and
+Kanwisher, 2000).
+
+While not disputing the notion of object-based and
+
+1Correspondence: e.grossman@vanderbilt.edu
+
+motion-based processing streams, several recent neu-
+ral imaging studies have sought to determine the extent
+to which neural representations of objects are distrib-
+uted throughout visual cortex. Sereno et al. (2002) found
+evidence for cue-invariant, 3D shape representations in
+multiple brain areas spanning object and motion path-
+ways in anesthetized monkeys. Haxby et al. (2001) found
+that the distribution of brain activity associated with
+viewing faces and objects was widespread within ven-
+tral temporal cortex, leading these authors to downplay
+the importance of highly specialized neural areas in ob-
+ject recognition. We, too, have recently become inter-
+ested in the question of distributed neural representa-
+tions, in our case, representations associated with a
+particularly salient class of motion-defined forms, i.e.,
+biological motion. In this paper, we report results from
+a brain imaging study that examines patterns of neural
+activity within multiple brain areas implicated in visual
+perception of bodies and body parts.
+
+In these experiments, we have capitalized on a vivid,
+remarkable example of motion-defined shape: Johans-
+son’s “point-light” animation sequences (Johansson,
+1973). These animations convey complex human activi-
+ties using just a handful of dots placed on the joints
+of the human body. Single static frames resemble a
+meaningless cluster of dots portraying no hint of an
+object, human or otherwise, but when shown in rapid
+succession, these animated dots are grouped to create
+the perception of a human form engaged in a readily
+identified activity (Cutting et al., 1978; Ahlstro¨ m et al.,
+1997; Neri et al., 1998; Mather et al., 1992). The compel-
+ling sense of human form created by the spatio-temporal
+integration of these local dot motions would seem to
+imply that “object” and “motion” pathways are together
+creating perception of an active person.
+
+Brain imaging studies in humans have pinpointed a
+region on the posterior superior temporal sulcus (STSp)
+that is active when observers perceive biological motion
+in point-light animations (Bonda et al., 1996; Howard et
+al., 1996; Grossman et al., 2000; Vaina et al., 2001).
+It seems reasonable to place STSp within the motion
+pathway, based on its proximity to motion-responsive
+areas MT and MST (Suneart et al., 1999); moreover,
+STSp is far removed from ventral temporal cortex and,
+by implication, brain areas involved in form perception.
+Nonetheless, point-light animations portraying biologi-
+cal motion create compelling impressions of a class of
+recognizable objects, namely humans, so it is natural to
+suppose that this unique type of structure from motion
+also activates “object-selective” ventral stream mecha-
+nisms. Thus while STSp may be selectively activated
+when viewing biological motion perception, the entire
+network of brain areas involved in registering all aspects
+of these salient animations may extend to the form
+pathway.
+
+We have examined this supposition by isolating brain
+areas generally believed to be involved in the perception
+of objects, including human body parts, and then mea-
+suring BOLD signals in those areas produced by viewing
+biological motion sequences. These areas are: (1) the
+
+Neuron
+1168
+
+Figure 1. Schematics of the Stimuli
+Dynamic human activity was portrayed by the
+motion twelve dots located on the joints and
+head of an actor performing various activities.
+Occlusions of some dots naturally occur as
+limbs pass behind the body. These occlu-
+sions help convey normal, three-dimensional
+body movement, and so were retained in the
+animations (i.e., not all dots were visible at all
+times). The scrambled animations contained
+the same motion vectors as the biological
+ones, but the initial starting positions of the
+dots are randomized within a region approxi-
+mating the size of the body. The whole-body
+animations depicted an actor performing the
+same activities as the point-light animations.
+The rotating, structured globe was created by
+moving 200 dots sinusoidally within a circular
+aperture. The variable speed of the dots con-
+veyed three-dimensional structure, but the
+direction of the rotation was ambiguous. The
+wire frame pictured above to denote three-
+dimensional structure was not visible in the
+experiment. The stationary, headless body
+condition consisted of
+images of bodies
+standing or sitting, with the heads erased.
+Observers also viewed images of faces and
+common household objects.
+
+lateral occipital complex (LOC), which has been impli-
+cated in the perception of forms regardless of the visual
+cues used to define those forms (Grill-Spector et al.,
+1999); (2) the extrastriate body area (EBA), which has
+recently been implicated in the perception of images of
+bodies and body parts, but not faces (Downing et al.,
+2001); and (3) the occipital (OFA) and fusiform face areas
+(FFA), both of which have been implicated in the percep-
+tion of faces (Kanwisher et al., 1997), as well as in the
+perception of other highly familiar objects (Gauthier et
+al., 1999). We used widely accepted stimuli and subtrac-
+tion conditions to isolate these object-responsive brain
+areas, including pictures of headless bodies to activate
+the EBA, pictures of objects to activate the LOC, and
+pictures of faces to activate the FFA and OFA (Figure 1).
+We also measured neural activity in STSp, the brain
+area implicated in perception of biological motion. In
+localizing STSp, observers viewed point-light actors
+performing a variety of human activities. However, these
+animations, composed of only 12 dots, are visually
+sparse in comparison to the pictures of headless bodies,
+faces, and objects. To evaluate the consequence of this
+sparseness on BOLD signal levels, we included anima-
+
+tions in which the entire figure of the actor was visible.
+Also, to determine if neural responses were due to the
+presence of an object, or specifically because the object
+is biological, we included animations of a nonbiological
+object (a rotating, 3D globe) defined solely by dot mo-
+tions.
+
+Results
+
+Our strategy entailed several steps: (1) use standard
+subtraction conditions to localize STSp, EBA, LOC, OFA,
+and FFA (Figure 2A), (2) assess patterns of activation
+across all of these areas by comparing evoked BOLD
+signals to a common baseline of fixation, and (3) deter-
+mine whether neural signals within those regions are capa-
+ble of discriminating between biological and scrambled
+point-light animations. To control for attention, which is
+known to modulate BOLD signals in many of the neural
+areas included in this study (Corbetta et al., 1991; Wojci-
+ulik et al., 1998), observers performed a 1-back task on
+the individual stimuli within each block.
+
+Results from our measurements are discussed brain
+region by brain region in the following sections and are
+
+

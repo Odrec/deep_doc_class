@@ -1,0 +1,102 @@
+NeuroImage 106 (2015) 144–153
+
+Contents lists available at ScienceDirect
+
+NeuroImage
+
+j ou r n a l h o m e p a ge : w ww . e l s e v i e r . c o m / l oc a te / yn i mg
+
+Effective connectivity within the frontoparietal control network
+differentiates cognitive control and working memory
+Ian H. Harding a,b,⁎, Murat Yücel b, Ben J. Harrison a, Christos Pantelis a, Michael Breakspear c,d
+a Melbourne Neuropsychiatry Centre, Department of Psychiatry, University of Melbourne & Melbourne Health, Melbourne, Australia
+b Monash Clinical and Imaging Neuroscience, School of Psychological Sciences, Monash University, Melbourne, Australia
+c QIMR Berghofer Medical Research Institute, Brisbane, QLD, Australia
+d Metro North Mental Health Service, Brisbane, QLD, Australia
+
+a r t i c l e
+
+i n f o
+
+a b s t r a c t
+
+Article history:
+Accepted 18 November 2014
+Available online 22 November 2014
+
+Keywords:
+Cognitive control
+Working memory
+Dynamic causal modeling
+Frontoparietal
+Effective connectivity
+
+Cognitive control and working memory rely upon a common fronto-parietal network that includes the inferior
+frontal junction (IFJ), dorsolateral prefrontal cortex (dlPFC), pre-supplementary motor area/dorsal anterior cin-
+gulate cortex (pSMA/dACC), and intraparietal sulcus (IPS). This network is able to ﬂexibly adapt its function in
+response to changing behavioral goals, mediating a wide range of cognitive demands. Here we apply dynamic
+causal modeling to functional magnetic resonance imaging data to characterize task-related alterations in the
+strength of network interactions across distinct cognitive processes. Evidence in favor of task-related connectivity
+dynamics was accrued across a very large space of possible network structures. Cognitive control and working
+memory demands were manipulated using a factorial combination of the multi-source interference task and a
+verbal 2-back working memory task, respectively. Both were found to alter the sensitivity of the IFJ to perceptual
+information, and to increase IFJ-to-pSMA/dACC connectivity. In contrast, increased connectivity from the pSMA/
+dACC to the IPS, as well as from the dlPFC to the IFJ, was uniquely driven by cognitive control demands; a task-
+induced negative inﬂuence of the dlPFC on the pSMA/dACC was speciﬁc to working memory demands. These re-
+sults reﬂect a system of both shared and unique context-dependent dynamics within the fronto-parietal net-
+work. Mechanisms supporting cognitive engagement, response selection, and action evaluation may be shared
+across cognitive domains, while dynamic updating of task and context representations within this network are
+potentially speciﬁc to changing demands on cognitive control.
+
+© 2014 Elsevier Inc. All rights reserved.
+
+Introduction
+
+Cognitive control (CC) and working memory (WM) rely on neural
+processing within a common set of brain regions encompassing
+dorsomedial prefrontal, lateral prefrontal, and superior parietal regions
+of the human cortex (Fedorenko et al., 2013; Harding et al., in press;
+Niendam et al., 2012). This so-called “frontoparietal network” (FPN)
+represents a ﬂexible, superordinate system supporting adaptive behav-
+ioral control across a broad range of cognitive demands (Cocchi et al.,
+2013; Cole et al., 2013; Dosenbach et al., 2008). The inherent ﬂexibility
+of this system has been linked to rapid adjustments in neuronal re-
+sponse proﬁles as a function of changing behavioral goals or contextual
+cues (Kadohisa et al., 2013; Stokes et al., 2013). However, the neural
+mechanisms underlying such dynamic representation of unique behav-
+ioral goals and encoding of diverse contextual information remain
+unclear.
+
+⁎ Corresponding author at: School of Psychological Sciences, Building 17, Clayton
+
+Campus, Monash University, VIC 3800, Australia. Fax: +61 3 9348 0469.
+
+E-mail address: ian.harding@monash.edu (I.H. Harding).
+
+http://dx.doi.org/10.1016/j.neuroimage.2014.11.039
+1053-8119/© 2014 Elsevier Inc. All rights reserved.
+
+Functional neuroimaging research has established that activity in
+the regions forming the FPN demonstrate temporal coherence
+(i.e., functional connectivity) in human subjects at rest (Cole and
+Schneider, 2007; Power et al., 2011). The magnitude of these intrinsic
+inter-regional interactions has additionally been shown to selectively
+change in response to behavioral demands, as demonstrated most clear-
+ly in studies exploring the dynamic interplay between the dorsomedial
+and dorsolateral prefrontal cortices during cognitive control tasks
+(Carter and van Veen, 2007; Prado et al., 2011; Stephan et al., 2003).
+
+More recently, research has moved beyond the study of FPN
+connectivity using pair-wise correlations in brain signals, employing tech-
+niques that are sensitive to network-wide and directional interdepen-
+dencies (i.e., effective connectivity; Friston, 2011). Dynamic causal
+modeling (DCM) provides one means to infer neural interactions and
+their task-dependent changes within a brain network (Friston et al.,
+2003). In contrast to alternative effective connectivity modeling ap-
+proaches (e.g., Structural Equation Modeling), DCM models dynamics at
+the level of neuronal populations, as opposed to the measured hemody-
+namics, providing greater construct validity to derived models of network
+function (Daunizeau et al., 2011). Moreover, DCM does not depend on the
+temporal precedence of one regional time series relative to another (as in
+
+

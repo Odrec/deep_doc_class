@@ -1,0 +1,17 @@
+Social Data Mining
+
+Andrea Suckro, Lukas Rein, Henning Wübben
+
+Task 1
+
+Choosing our Tool
+
+ Started with R 
+
+ Ran into problems because R was very slow handling the size of the data set
+
+ Switched to Python and solved the whole task in it
+
+ Was really quick in reading and processing the csv files
+
+

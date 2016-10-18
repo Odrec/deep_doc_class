@@ -1,0 +1,152 @@
+28/06/2016
+
+Introduction to CL
+
+Class Agenda
+
+Formal languages
+
+RegExp, FSA, 
+
+Phonetics
+
+Morphology 
+
+Syntax 
+
+Semantics
+
+Human speech production
+
+FST, Mental Lexicon
+
+CFG, POS tagging, parsing
+
+compositional semantics, 
+reference, quantification
+
+Pragmatics & Discourse
+
+anaphora, implicatures
+
+Language processing
+
+experimental paradigms
+
+Lexical & Distributional 
+Semantics
+
+meaning representation,
+WSD, vector models, 
+
+Introduction to Computational Linguistics
+
+University of Osnabrück
+
+Cognitive Science BSc Programme
+
+Summer Term 2016
+
+Lecture 21
+
+Lexical Semantics
+
+Peter Bosch
+
+The material for this lecture series rests on contributions from many people, most of whom have taught parts of this class in earlier 
+years: Stefan Evert, Stefan Hinterwimmer, Graham Katz, Anke Lüdeling, Sabine Reinhard, Malte Wöstmann. It has also profited from the 
+interaction with tutors and students .  Further sources are listed in the Reference sections and on individual slides.
+
+Lexical Semantics
+
+Lexical Semantics
+
+Denotations ‐ Meaning relations   ‐ Concepts as Meanings
+
+Denotations ‐ Meaning relations   ‐ Concepts as Meanings
+
+Today’s Agenda
+
+• Denotations of lexical items
+
+• Meaning relations
+
+• Concepts as meanings
+
+a possible situation S
+
+Denotation of lexical items
+viewed as extensions:
+[[triangle]] = the set of triangles
+some extensions with respect to situation S:
+[[box]] = {     ,       ,      }
+
+[[circle]] = {         }
+
+[[red]]  = {     ,      ,        }
+
+[[triangle]] = {         } 
+
+[[green]]  =  {      ,      }
+
+[[cylinder]] = {          }
+
+[[blue]]  =  {        }
+
+[[above]] =   {  
+
+,    
+
+ , 
+
+,        , 
+
+,         , 
+
+,        }
+
+Lexical Semantics
+
+Lexical Semantics
+
+Denotations ‐ Meaning relations   ‐ Concepts as Meanings
+
+Denotations ‐ Meaning relations   ‐ Concepts as Meanings
+
+Denotation of lexical items
+viewed as extensions:
+[[triangle]] = the set of triangles
+
+viewed as intensions:
+[[triangle]] = 
+
+the characteristic function of the set of triangles, i.e., 
+the rule that determines the set of triangles.
+
+this is the same as 
+ the property of being a triangle, or 
+ the truth function that yields the value 1 for each 
+
+argument that is a triangle, or
+
+ in Fregean terminology: the concept of a triangle.
+
+Denotation of lexical items
+viewed as intensions:
+
+the rule that tells you what to select: 
+The concept of a box
+
+a possible situation S
+
+[[box]] = f : S {0,1} such that f(x)=1 iff x { ,        ,      }
+
+in general: 
+
+denotations of lexical items are functions of some kind; 
+in the simplest case, the case of predicates or intransitive 
+verbs, they are concepts.
+
+1
+
+

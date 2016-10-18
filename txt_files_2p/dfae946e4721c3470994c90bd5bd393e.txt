@@ -1,0 +1,164 @@
+Developmental Cell
+
+Article
+
+Differential Expression of WOX Genes
+Mediates Apical-Basal Axis Formation
+in the Arabidopsis Embryo
+
+Holger Breuninger,1,2,3 Enno Rikirsch,1,2 Marita Hermann,1 Minako Ueda,1 and Thomas Laux1,*
+1Faculty of Biology, University of Freiburg, Schaenzlestraße 1, 79104 Freiburg, Germany
+2These authors contributed equally to this work
+3Present address: John Innes Centre, Colney Lane, Norwich, NR4 7UH, UK
+*Correspondence: laux@biologie.uni-freiburg.de
+DOI 10.1016/j.devcel.2008.03.008
+
+SUMMARY
+
+Axis formation is one of the earliest patterning events
+in plant and animal embryogenesis. In Arabidopsis,
+the main axis of the embryo is evident at the asym-
+metric division of the zygote into a small, embryonic
+apical cell and a large extraembryonic basal cell.
+Here we show that the homeobox genes WOX2 and
+WOX8, which are initially coexpressed in the zygote,
+act as complementary cell fate regulators in the apical
+and basal lineage, respectively. Furthermore, WOX8
+expression in the basal cell lineage is required for
+WOX2 expression and normal development of the
+proembryo, suggesting an inductive mechanism.
+The identiﬁed WOX cascade is required for normal ex-
+pression of a reporter gene of the auxin efﬂux carrier
+PIN1 and for the formation of auxin response maxima
+in the proembryo. Thus, our results link the spatial
+separation of WOX transcription factors to localized
+auxin response and the formation of the main body
+axis in the embryo.
+
+INTRODUCTION
+
+Development of a speciﬁc body plan during embryogenesis re-
+quires the coordination of cell fates according to their positions
+along the embryo axes. In animal model organisms, the accessi-
+bility of egg cells has greatly enhanced analysis of early pattern-
+ing. In higher plants, however, the zygote is relatively inaccessible
+to experimental analysis due to the surrounding maternal tissue,
+and the high degree of genetic redundancy has complicated
+analysis of regulatory mechanisms. An invariant cell division
+pattern during early embryogenesis in Arabidopsis facilitates
+the following of the apical and basal lineages derived from each
+daughter cell (Figure 1A; Dolan et al., 1993; Mansﬁeld and Briarty,
+1991). First, the zygote divides asymmetrically and generates
+two daughter cells with different properties and developmental
+programs. The small and densely cytoplasmic apical daughter
+divides perpendicular to the orientation of the division of the zy-
+gote, and subsequent divisions generate the isodiametric cells
+of the apical cell lineage, termed proembryo. At the 8-cell stage,
+the proembryo is already divided into an upper tier of cells giving
+
+rise to the shoot and a lower tier of cells giving rise to the hypo-
+cotyl and embryonic root. Subsequent tangential cell walls estab-
+lish the radial axis, separating protoderm and inner cells before
+shoot meristem, cotyledon, hypocotyl, and embryonic root pri-
+mordia are formed. By contrast, the larger and more vacuolated
+basal daughter cell of the zygote continues to divide horizontally,
+producing a ﬁle of elongated cells, termed the suspensor, which
+pushes the embryo into the lumen of the developing seed
+(Ju¨ rgens and Mayer, 1994; Mansﬁeld and Briarty, 1991). Only
+the uppermost cell of the basal lineage, the hypophysis, becomes
+incorporated into the embryo where it gives rise to the quiescent
+center and the columella stem cells of the root meristem (for
+review see Jenik et al., 2007; Ju¨ rgens, 2001; Laux et al., 2004).
+Similar to animals with invariant cell division patterns, speciﬁca-
+tion of cell
+identities in the Arabidopsis embryo relies on
+cell-cell communication.
+
+Recent studies have revealed a crucial role for the directional
+transport of the plant growth factor auxin in apical-basal axis for-
+mation. After the asymmetric division of the zygote, the auxin ef-
+ﬂux factor PIN-FORMED7 (PIN7) is expressed only in the basal
+daughter cell and becomes localized to the membrane facing
+the apical daughter (Friml et al., 2003). Presumably, auxin is
+transported into the apical daughter cell where it accumulates,
+as evidenced by weak expression of the synthetic auxin re-
+sponse reporter gene DR5rev:GFP. Auxin ﬂux is then thought
+to be reversed in the globular stage embryo, involving the com-
+bined activity of several PIN proteins, which results in the forma-
+tion of an auxin response maximum at the developing root pole.
+Later in embryogenesis, additional auxin response maxima are
+formed at the tips of the emerging cotyledons mediated by polar
+cellular localization of PIN1 protein, which is thought to play an
+important role in auxin ﬂux from the globular embryo stage on-
+ward (Benkova et al., 2003). Loss of multiple members of the
+PIN family; mutations in the Auxin Response Factor (ARF)
+GTPase exchange factor GNOM (GN), which is required for di-
+rectional trafﬁcking of PIN1 protein; and chemical inhibition of
+polar auxin transport all cause striking defects in apical-basal
+embryo patterning, demonstrating the crucial role of polar auxin
+distribution in axis formation (Blilou et al., 2005; Friml et al., 2003;
+Geldner et al., 2003; Mayer et al., 1993; Steinmann et al., 1999).
+Similarly, embryos that have lost the ARF MONOPTEROS (MP)
+or harbor auxin nondegradable variants of its antagonist BOD-
+ENLOS (BDL) fail to initiate the hypophysis, indicating that tran-
+scriptional responses to auxin are required for root initiation
+
+Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc. 867
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+Developmental Cell
+
+Figure 1. wox2 and Multiple wox Mutant Phenotypes
+(A) Schematic drawing of WOX2, WOX8, and WOX9 expression domains (Haecker et al., 2004).
+(B) Phylogenetic tree of the WOX protein family. Modiﬁed after Haecker et al. (2004).
+(C–F) Nomarski images of cleared ovules. Periclinal divisions have set up the protoderm (pd) in wild-type at the 16-cell stage (C). wox2-1 embryos show abnormal
+anticlinal divisions in the prospective shoot domain (arrows in [D] and [E]) and subsequently form only single cotyledon primordia (cp) ([F]; compare with wild-type,
+inset in [F]).
+(G–K) Live images of 8-day-old seedlings (prs is indicated as w3 [wox3], asterisk marks putative position of missing shoot meristem).
+(L–N) Dark-ﬁeld images showing venation patterns of seedling cotyledons. The number of main veins (mv) indicates that wox2-1 seedling organs represent two
+fused cotyledons (M) or one cotyledon (N).
+(O) Phenotype penetrance of multiple wox combinations at the 16-cell embryo stage (red) and at the seedling stage (blue).
+E, egg cell; Z, zygote; 1-c, 2-4-c, 8-c: 1-cell, 2-4-cell, 8-cell embryo stage, respectively; wt, wild-type; hy, hypocotyl; c, cotyledon; SAM, shoot apical meristem.
+Scale bars: 10 mm in (C–F), 2.5 mm in (G–K), and 2 mm in (L–N).
+
+(Berleth and Ju¨ rgens, 1993; Hamann et al., 1999, 2002). At the
+same time, MP activity is also required for the expression of
+PIN genes, consistent with a feedback mechanism wherein
+high auxin concentration promotes increased directional auxin
+efﬂux (Paciorek et al., 2005; Weijers et al., 2006).
+
+A fundamental question is how the differences between apical
+and basal programs are established. Mutations in the MAPKK ki-
+nase YODA (YDA) suppress the elongation of the zygote and de-
+velopment of the extraembryonic suspensor, suggesting that
+a MAP kinase signaling pathway promotes extraembryonic fate
+in the basal lineage (Lukowitz et al., 2004). However, the targets
+of presumed YDA signaling remain to be determined. In animals,
+localized expression of transcription factors is instrumental for
+early cell fate decisions in the embryo (Akam, 1998; Krumlauf,
+1994). For example, homeobox (HOX) genes confer region-spe-
+ciﬁc identities along the anterior-posterior axis in Drosophila and
+mammals. Recent studies in Arabidopsis have identiﬁed a group
+
+of homeobox genes related to the stem cell regulator WUSCHEL
+(WUS) that are expressed in a lineage-speciﬁc manner during
+early embryogenesis (Figures 1A and 1B; Haecker et al., 2004).
+WUSCHEL RELATED HOMEOBOX2 (WOX2) and WOX8 are
+initially coexpressed in the egg cell and the zygote, but become
+restricted to the apical (WOX2) and basal (WOX8) lineages after
+the zygotic division, raising the intriguing question of whether
+distinct transcriptional programs are established with the divi-
+sion of the zygote. WOX9, the closest homolog of WOX8, is
+also expressed in the basal cell lineage, and several members
+of the WUS/WOX2 subclade become expressed in the develop-
+ing proembryo (Figure 1B; Haecker et al., 2004). Once the apical-
+basal axis of the embryo is established, expression of two WOX
+genes, WUS and WOX5, is initiated in lineages that give rise to
+the signaling centers of the shoot and root stem cell niches, re-
+spectively (Mayer et al., 1998; Sarkar et al., 2007). Apart from
+Arabidopsis, complementary expression of WOX2 and WOX9
+
+868 Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc.
+
+

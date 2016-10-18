@@ -1,0 +1,80 @@
+Table of Contents
+
+Homework  5  ......................................................................................................................   1
+1st step: load data ...............................................................................................................  1
+2nd step: build the network ..................................................................................................  1
+3rd step: train the network ....................................................................................................  1
+4th step: Analysis ................................................................................................................ 2
+
+Homework 5
+
+% group: jschepers(954389), mrichts(955002)
+
+% We would be happy to receive some correction.
+clear all;
+close all;
+
+1st step: load data
+
+load('inputs.mat');
+IR1 = reshape(Inputs(1,:),[7,7]); % reshape input matrices
+IR2 = reshape(Inputs(2,:),[7,7]);
+IR3 = reshape(Inputs(3,:),[7,7]);
+IR4 = reshape(Inputs(4,:),[7,7]);
+
+2nd step: build the network
+
+w = rand(49,2); % create weights between input and output neurons
+l = 0.01; % choose learning rate
+dw = zeros(49,2); % create space for changed weights
+O = zeros(4,2);  % create space for outputs
+
+3rd step: train the network
+
+for k = 1:100 % train network 100 times
+    for g = 1:4 % for every input
+    O(g,1:2) = Inputs(g,:)*w; % compute output
+    green(:,:)= (Inputs(g,:))'*O(g,:); % 1st part of the formula
+    for j=1:size(w,2)
+        blue(:,j) = O(j)*(w(:,1:j))*(O(1:j))'; % 2nd part of the formula
+    end
+    dw(:,:) = l*(green(:,:)-blue(:,:)); % compute change in weights
+    w = w +dw; % add it up to the old weights
+    end
+end
+
+% plot outputs for the 4 different inputs
+figure('name','Outputs for the 4 different inputs');
+
+1
+
+plottitles = {'H', 'A', 'I', 'J'};
+val1 = reshape(O,1,[]);
+clims = [min(val1) max(val1)];
+for g=1:4
+    subplot(2,2,g)
+    imagesc(O(g,:),clims);
+    title(plottitles(g));
+end
+
+% Which pattern do you think is encoded by the connections to neuron 1/2?
+%
+% Answer: When you look at the representation of the weights for neuron 1
+% you can see that it resembles the patterns of the letters A and H whereas
+% the weights pattern for neuron 2 resembles the patterns of the letters I
+% and J. That makes sense because A and H are similar in their shape and
+% I and J are also simiar in their shape.
+% Following from this you can see the neurons learnt different patterns.
+
+4th step: Analysis
+
+Plot outputs for new Inputs M and T
+
+NewIn = [M;T];
+Onew = NewIn * w;
+val2 = reshape(Onew,1,[]);
+clims2 = [min(val2) max(val2)];
+
+2
+
+

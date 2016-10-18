@@ -1,0 +1,121 @@
+Slowness and Sparseness Have Diverging Effects on
+Complex Cell Learning
+
+Jo¨ rn-Philipp Lies1, Ralf M. Ha¨ fner2, Matthias Bethge1,3,4*
+
+1 Werner Reichardt Centre for Integrative Neuroscience, University of Tu¨ bingen, Tu¨ bingen, Germany, 2 Swartz Center for Theoretical Neurobiology, Brandeis University,
+Waltham, Massachusetts, United States of America, 3 Bernstein Center for Computational Neuroscience, Tu¨ bingen, Germany, 4 Max Planck Institute for Biological
+Cybernetics, Tu¨ bingen, Germany
+
+Abstract
+
+Following earlier studies which showed that a sparse coding principle may explain the receptive field properties of complex
+cells in primary visual cortex, it has been concluded that the same properties may be equally derived from a slowness
+principle. In contrast to this claim, we here show that slowness and sparsity drive the representations towards substantially
+different receptive field properties. To do so, we present complete sets of basis functions learned with slow subspace
+analysis (SSA) in case of natural movies as well as translations, rotations, and scalings of natural images. SSA directly parallels
+independent subspace analysis (ISA) with the only difference that SSA maximizes slowness instead of sparsity. We find a
+large discrepancy between the filter shapes learned with SSA and ISA. We argue that SSA can be understood as a
+generalization of the Fourier transform where the power spectrum corresponds to the maximally slow subspace energies in
+SSA. Finally, we investigate the trade-off between slowness and sparseness when combined in one objective function.
+
+Citation: Lies J-P, Ha¨fner RM, Bethge M (2014) Slowness and Sparseness Have Diverging Effects on Complex Cell Learning. PLoS Comput Biol 10(3): e1003468.
+doi:10.1371/journal.pcbi.1003468
+
+Editor: Jorg Lucke, Technische Universita¨t Berlin, Germany
+
+Received January 2, 2013; Accepted December 19, 2013; Published March 6, 2014
+Copyright: ß 2014 Lies et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted
+use, distribution, and reproduction in any medium, provided the original author and source are credited.
+
+Funding: This work was supported by the Max Planck Society and the German Ministry of Education, Science, Research and Technology through the Bernstein
+award to MB (BMBF; FKZ: 01GQ0601), the Bernstein Center for Computational Neuroscience, Tuebingen (BMBF; FKZ: 01GQ1002), and the German Excellency
+Initiative through the Centre for Integrative Neuroscience Tu¨ bingen (EXC307). RMH acknowledges funding from the Swartz Foundation. We acknowledge support
+by Deutsche Forschungsgemeinschaft and Open Access Publishing Fund of Tuebingen University. The funders had no role in study design, data collection and
+analysis, decision to publish, or preparation of the manuscript.
+
+Competing Interests: The authors have declared that no competing interests exist.
+
+* E-mail: matthias@bethgelab.org
+
+Introduction
+
+in order
+
+The appearance of objects in an image can change dramatically
+depending on their pose, distance, and illumination. Learning
+representations that are invariant against such appearance changes
+can be viewed as an important preprocessing step which removes
+distracting variance from a data set
+to improve
+performance of downstream classifiers or regression estimators
+[1]. Clearly, it is an inherent part of training a classifier to make its
+response invariant against all within-class variations. Rather than
+learning these invariances for each object class individually,
+however, we observe that many transformations such as transla-
+tion, rotation and scaling apply to any object independent of its
+specific shape. This suggests that signatures of such transforma-
+tions exist in the spatio-temporal statistics of natural images which
+allow one to learn invariant representations in an unsupervised
+way.
+
+Complex cells in primary visual cortex are commonly seen as
+building blocks for such invariant image representations (e.g. [2]).
+While complex cells,
+like simple cells, respond to edges of
+particular orientation they are less sensitive to the precise location
+of the edge [3]. A variety of neural algorithms have been proposed
+that aim at explaining the response properties of complex cells as
+components of an invariant representation that is optimized for
+the spatio-temporal statistics of the visual input [4–12].
+
+The two main objectives used for the optimization of models of
+neural representations are sparseness and slowness. While in the
+
+is better interpreted as a measure of
+
+context of unsupervised representation learning the two objectives
+have been proposed to similarly explain the receptive field
+properties of complex cells,
+there are important differences
+between them that may help to identify the algorithms used in
+biological vision. Intuitively, the slowness objective can be seen as
+a measure of approximate invariance or ‘‘tolerance’’, whereas
+sparseness
+selectivity.
+Tolerance and selectivity—or slowness and sparseness, respective-
+ly—can be understood as complementary goals which both play
+an important role for solving the task of object recognition [13]. A
+prominent view that goes back to Fukushima’s proposal of the
+necognitron (1980) is that these goals are pursued in an alternating
+fashion by alternating layers of S and C cells where the S cells are
+optimized for selectivity and the C cells are optimized for
+tolerance. This idea has been inspired by the finding of simple
+and complex cells in primary visual cortex which also motivated
+the terminology of S and C cells.
+
+Thus, based on the strong association between complex cells
+and invariance, one would expect
+that slowness rather than
+sparseness should play a critical role for complex cell represen-
+tations. In this study, we investigate the differences between
+slowness and sparseness for shaping the receptive field properties
+of complex cells.
+
+While for natural signals it may be impossible to find perfectly
+invariant representations, slowness seeks to find features that at
+least change as
+the appearance
+transformations exhibited in the data [16,9–12,14–27]. In contrast
+
+slowly as possible under
+
+PLOS Computational Biology | www.ploscompbiol.org
+
+1
+
+March 2014 | Volume 10 |
+
+Issue 3 | e1003468
+
+

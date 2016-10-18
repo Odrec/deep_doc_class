@@ -1,0 +1,147 @@
+Consciousness and Cognition 25 (2014) 27–41
+
+Contents lists available at ScienceDirect
+
+Consciousness and Cognition
+
+j o u r n a l h o m e p a g e : w w w . e l s e v i e r . c o m / l o c a t e / c o n c o g
+
+The free will inventory: Measuring beliefs about agency
+and responsibility
+Thomas Nadelhoffer a,⇑
+
+, Jason Shepard b, Eddy Nahmias c, Chandra Sripada d, Lisa Thomson Ross e
+
+a Department of Philosophy, College of Charleston, 66 George Street, Charleston, SC 29424, United States
+b Department of Psychology, Emory University, 36 Eagle Row, Atlanta, GA 30322, United States
+c Department of Philosophy, Neuroscience Institute, Georgia State University, P.O. Box 3994, Atlanta, GA 30302-3994, United States
+d Department of Philosophy, The University of Michigan, 2215 Angell Hall, 435 South State Street, Ann Arbor, MI 48109, United States
+e Department of Psychology, College of Charleston, 66 George Street, Charleston, SC 29424, United States
+
+a r t i c l e
+
+i n f o
+
+a b s t r a c t
+
+In this paper, we present the results of the construction and validation of a new psycho-
+metric tool for measuring beliefs about free will and related concepts: The Free Will Inven-
+tory (FWI). In its ﬁnal form, FWI is a 29-item instrument with two parts. Part 1 consists of
+three 5-item subscales designed to measure strength of belief in free will, determinism,
+and dualism. Part 2 consists of a series of fourteen statements designed to further explore
+the complex network of people’s associated beliefs and attitudes about free will, determin-
+ism, choice, the soul, predictability, responsibility, and punishment. Having presented the
+construction and validation of FWI, we discuss several ways that it could be used in future
+research, highlight some as yet unanswered questions that are ripe for interdisciplinary
+investigation, and encourage researchers to join us in our efforts to answer these questions.
+Ó 2014 Elsevier Inc. All rights reserved.
+
+Article history:
+Received 30 October 2013
+
+Keywords:
+Free will
+Determinism
+Dualism
+Soul
+Responsibility
+Punishment
+Psychometrics
+Scale
+Folk intuitions
+
+1. Introduction
+
+Philosophers have long debated the nature of free will and moral responsibility. Psychologists have more recently joined
+the fray. While some researchers have tried to shed empirical light on the debate concerning whether we have free will, typ-
+ically concluding that we do not (e.g., Bargh, 2008; Harris, 2012; Libet, 1999; Wegner, 2002), others have focused instead on
+exploring our beliefs about free will and the role they play in our daily lives (e.g., Alquist, Ainsworth, & Baumeister, 2013;
+Bergner & Ramon, 2013; Haynes, Rojas, & Viney, 2003; Nettler, 1959; Nettler, 1961; Ogletree & Oberle, 2008; Pronin & Kug-
+ler, 2010; Schooler, Nadelhoffer, Nahmias, & Vohs, in press; Stillman & Baumeister, 2010; Stillman et al., 2010; Stroessner &
+Green, 1990; Viney, Parker-Martin, & Dotten, 1988; Viney, Waldman, & Barchilon, 1982; Waldman, Viney, Bell, Bennett, &
+Hess, 1983). Each of these two projects is interesting and important in its own right. For present purposes, we focus on
+the psychology of believing in free will—a topic that has received increasing attention in the wake of gathering evidence that
+challenging people’s beliefs about free will may inﬂuence their behavior in surprising and sometimes alarming ways. For
+example, telling people they do not have free will has been shown to increase cheating (Vohs & Schooler, 2008) decrease
+helping behavior and increases aggression (Baumeister, Masicampo, & DeWall, 2009), reduce self-control (Rigoni, Kuhn,
+
+⇑ Corresponding author. Fax: +1 843 953 6388.
+
+E-mail addresses: nadelhofferta@cofc.edu (T. Nadelhoffer), jason.s.shepard@emory.edu (J. Shepard), enahmias@gsu.edu (E. Nahmias), sripida@umich.edu
+
+(C. Sripada), rossl@cofc.edu (L.T. Ross).
+
+http://dx.doi.org/10.1016/j.concog.2014.01.006
+1053-8100/Ó 2014 Elsevier Inc. All rights reserved.
+
+28
+
+T. Nadelhoffer et al. / Consciousness and Cognition 25 (2014) 27–41
+
+Gaudino, Sartori, & Brass, 2012), and impair detection of errors (Rigoni, Wilquin, Brass, & Burle, 2013). These ﬁndings suggest
+that believing in free will may be instrumentally valuable from the standpoints of positive psychology and public morality.
+This is true regardless of whether or not we actually have free will, a related but orthogonal issue that we will not be explor-
+ing here.
+
+These recent ﬁndings also highlight the importance of having valid and reliable tools for measuring beliefs about free will
+and related concepts. For while the gathering data suggest that diminishing people’s belief in free will may lead to increased
+cheating, decreased helping, lower punishment judgments, and the like, the validity of these ﬁndings depends in part on the
+validity and reliability of the scales used to measure people’s beliefs about free will, determinism, and responsibility. As such,
+these otherwise exciting ﬁndings have highlighted a problem that has hindered empirical research on free will beliefs from
+the outset—namely, that while researchers have developed several scales during the past thirty years for measuring beliefs
+about free will (e.g., Paulhus & Carey, 2011; Paulhus & Margesson, 1994; Rakos, Laurene, Skala, & Slane, 2008; Stroessner &
+Green, 1990; Viney, McIntyre, & Viney, 1984; Viney et al., 1982), each of these tools is problematic. The main goal of our
+project was to develop a new psychometric instrument that would have greater validity than previous scales while at the
+same time yielding more ﬁne-grained data concerning how people think about the complex relationships among free will,
+responsibility, dualism, choice, determinism, and related concepts.
+
+In this paper, we ﬁrst discuss the extant tools that have been developed for measuring free will beliefs, and we identify
+some of their limitations. Then, we present the results of the construction and validation of a new psychometric tool for
+measuring beliefs about free will: The Free Will Inventory (FWI). The FWI is a 29-item instrument with two parts (which
+can be given together or separately). Part 1 consists of three ﬁve-item subscales designed to measure strength of belief in
+free will, determinism, and dualism. Part 2 consists of a series of 14 statements designed to further explore people’s asso-
+ciated beliefs and attitudes about free will, (in)determinism, choice, the soul, predictability, responsibility, and punish-
+ment. After presenting the construction and validation of FWI, we (a) discuss several ways that it could be used in
+future research, (b) highlight some as yet unanswered questions that are ripe for interdisciplinary investigation, and
+(c) encourage researchers to join us in our efforts to answer these questions.
+
+1.1. Measuring beliefs about free will: An overview
+
+Most of the earliest work on the psychology of believing in free will focused on the relationship between beliefs about free
+will, determinism, and punishment (e.g., Nettler, 1959; Nettler, 1961; Stroessner & Green, 1990; Viney et al., 1982; Viney
+et al., 1988). Though groundbreaking, the results were often mixed and hard to interpret. For instance, in one of the ﬁrst
+studies on free will beliefs, Nettler (1959) claimed to have found that believing in free will is correlated with cruelty, retri-
+bution, and revenge and that believing in determinism is correlated with people being less punitive and treating others with
+more dignity. In response, Viney et al. (1982) ﬁrst reported data that seemed to support the opposite conclusion—namely,
+that people who believe in free will are less rather than more punitive—before later ﬁnding ‘‘neither reliable correlations
+between punitiveness and beliefs in free will or determinism nor reliable correlations between rationales for punishment
+and beliefs in free will or determinism’’ (Viney et al., 1988, p. 20).
+
+Looking back on the early empirical work on free will beliefs with the beneﬁt of hindsight, there are at least two les-
+sons to learn. First, what researchers ﬁnd when it comes to beliefs about free will can depend a great deal on how the
+researchers conceptualize and think about free will. Not only can researchers’ own free will beliefs inﬂuence how they
+design their experiments, phrase their questions, etc., but these beliefs may also color how the ﬁndings are analyzed
+and interpreted. Let us call this the problem of theory contamination—i.e., when researchers’ own theoretical commitments
+unduly inﬂuence or bias their ﬁndings. While it may be impossible to keep one’s theoretical commitments entirely at bay
+while designing studies and analyzing data, it is important for researchers to make a concerted effort to avoid theory con-
+tamination as much as possible. One strategy that we adopted was making sure we had both psychologists and philos-
+ophers on our team, as well as people with competing views about free will and its relationship to determinism.
+
+A second lesson to be learned from the early research on free will beliefs is that researchers should have a shared vocab-
+ulary (or lexicon) when exploring these types of complex beliefs and attitudes. Instead, much of the early empirical work in
+this area contains conﬂicting deﬁnitions of key terms (or usages of key terms) such as determinism, libertarian free will,
+choice, dualism, fatalism, and the like. Moreover, not only are key terms used in ways that differ from one researcher to
+the next, these terms are often deﬁned in ways that most philosophers who specialize in the free will debate would reject.
+This generates worries about both content and criterion validity. While philosophical experts on free will should not have
+carte blanche to deﬁne contested terminology however they see ﬁt, the long and deep engagement of philosophers with
+the question of free will should be taken into consideration during empirical investigations of free will beliefs.
+
+At least some of these methodological worries might be alleviated if psychologists and philosophers worked together
+rather than laboring individually on their own respective sides of the disciplinary divide. For while psychologists do not ap-
+pear to have a shared lexicon when it comes to free will and related concepts, philosophers have developed a common
+vocabulary for talking about these issues. Take, for instance, the concept of determinism. While the term has a variety of
+meanings and uses (both in everyday life and amongst psychologists), philosophers typically have one thing in mind when
+they discuss determinism—namely, the thesis that given the actual past and the laws of nature, there is only one possible
+future at any moment in time (e.g., van Inwagen, 1983).
+
+

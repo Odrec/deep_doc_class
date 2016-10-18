@@ -1,0 +1,93 @@
+ 
+ 
+ 
+ 
+
+BWL / Management Support und WI 
+
+Management Support Systems I – WS 2014/15 
+Übung Nr. 8 
+Bearbeitungszeit: 08. – 14. Dezember  2014 
+
+Personalisierung und Exception Reporting 
+
+mit Cognos 10 - Report Studio 
+
+Teil A: Personalisierte Berichte 
+
+Die  Produktmanager  des  Textilunternehmens  TexOS,  die  jeweils  für  eine  Sortimentsgruppe 
+verantwortlich  sind,  benötigen  Informationen  über  die  Entwicklung  ihrer  Umsatzzahlen  im 
+Vergleich zu den Planzahlen je Artikel- und Kundengruppe. Dieser Informationsbedarf soll den 
+Produktmanagern wieder mit Cognos Report Studio-basierten Standardberichten zur Verfügung 
+gestellt  werden.  Allerdings  ist  zu  beachten,  dass  den  einzelnen  Produktmanagern  nur 
+Informationen über ihre eigene Sortimentsgruppe bereitgestellt werden sollen.  
+
+Die Möglichkeit, für jede der 6 Sortimentsgruppen einen spezifischen Bericht zu erstellen, mag in 
+diesem  Beispiel  noch  praktikabel  erscheinen;  für  Unternehmen,  die  vielleicht  ca.  100  bis  1.000 
+Sortimentsgruppen  besitzen,  ist  dieses  Szenario  jedoch  keine  Alternative!  Report  Studio  bietet 
+deshalb  zwei  Möglichkeiten,  einen  einzigen  Bericht  so  zu  gestalten,  dass  die  jeweiligen 
+Produktmanager trotzdem nur die für sie bestimmten Daten sehen können: 
+
+1.  Definition eines sog. Security-Filters 
+2.  Distribution von Berichtsteilen an verschiedene Adressaten mittels Zielgruppenverteilung 
+
+1. Definition eines Security-Filters 
+
+Ein sog. Security-Filter hat die Aufgabe, in einem Report nur die Datensätze anzeigen zu lassen, 
+die  in  Zusammenhang  mit  einem  bestimmten  Report  Studio-User  stehen.  Dafür  stellt  Report 
+Studio  die  Makro-Funktion  CSVIdentityNameList  zur  Verfügung.  Diese  Funktion 
+liefert 
+Informationen über die Zugehörigkeit des angemeldeten Users zu Report Studio-internen und -
+externen Benutzergruppen bzw. -rollen. d.h., die Funktion gibt eine Liste mit den Bezeichnungen 
+aller Benutzergruppen und -rollen zurück, in denen der angemeldete User Mitglied ist. Damit hat 
+man nun die Möglichkeit, für jeden Datensatz einer Berichts-Abfrage zu überprüfen, ob der Wert 
+eines bestimmten Attributs der Berichts-Abfrage in der durch die Funktion CSVIdentityNameList 
+erstellten  Liste  (Benutzergruppen  und  -rollen)  enthalten  ist.  Ist  der  Wert  enthalten,  soll  der 
+entsprechende Datensatz in den Bericht übernommen werden, sonst nicht. 
+Erstellen  Sie  daher  einen  Bericht,  der  für  jeden  der  sechs  Produktmanager  nur  die  jeweils 
+relevanten Daten ausgibt. Dazu stehen in Report Studio folgende sechs User zur Verfügung: 
+
+Sortimentsgruppe 
+
+Produktmanager (User)  Kennwort 
+
+Benutzerklasse 
+
+Damenoberbekleidung  DOB 
+
+Herrenoberbekleidung  HOB 
+
+Kinderoberbekleidung  KOB 
+
+Marken Bademode 
+
+Sportbekleidung 
+
+Accessoires 
+
+MBM 
+
+SPB 
+
+ACC 
+
+DOB@MSWI  Damenoberbekleidung 
+
+HOB@MSWI  Herrenoberbekleidung 
+
+KOB@MSWI  Kinderoberbekleidung 
+
+MBM@MSWI  Marken Bademode 
+
+SPB@MSWI 
+
+Sportbekleidung 
+
+ACC@MSWI  Accessoires 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 8          
+ 
+
+Seite 1/6 
+
+

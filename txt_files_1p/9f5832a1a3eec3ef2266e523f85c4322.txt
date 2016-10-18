@@ -1,0 +1,113 @@
+Review
+
+TRENDS in Cognitive Sciences Vol.10 No.7 July 2006
+
+Special Issue: Probabilistic models of cognition
+
+Bayesian decision theory in
+sensorimotor control
+Konrad P. Ko¨ rding1 and Daniel M. Wolpert2
+
+1Brain and Cognitive Sciences, Massachusetts Institute of Technology, Building NE46-4053, Cambridge, Massachusetts, 02139, USA
+2Department of Engineering, University of Cambridge, Trumpington Street, Cambridge, CB2 1PZ, UK
+
+Action selection is a fundamental decision process for
+us, and depends on the state of both our body and the
+environment. Because signals in our sensory and motor
+systems are corrupted by variability or noise, the
+nervous system needs to estimate these states. To
+select an optimal action these state estimates need to be
+combined with knowledge of the potential costs or
+rewards of different action outcomes. We review recent
+studies that have investigated the mechanisms used by
+the nervous system to solve such estimation and
+decision problems, which show that human behaviour
+is close to that predicted by Bayesian Decision Theory.
+This theory deﬁnes optimal behaviour in a world
+characterized by uncertainty, and provides a coherent
+way of describing sensorimotor processes.
+
+Introduction
+The central nervous system (CNS) constantly sends motor
+commands to our muscles. Determining the appropriate
+motor command is fundamentally a decision process. At
+each point in time we must select one particular motor
+command from the set of possible motor commands. Two
+components jointly deﬁne the decision problem: knowl-
+edge of the state of the world (including our own body) and
+knowledge of our objectives.
+
+The sensory inputs of humans are plagued by noise
+[1,2] which means that we will always have uncertainty
+about our hand’s true location (Figure 1a). This uncer-
+tainty depends on the modality of the sensory input: when
+we use proprioception to locate our hand we may have
+more uncertainty about its position compared to when we
+can see it. Moreover, our muscles produce noisy outputs
+[3,4] and when we quickly move to a target location
+(shown as a red ! in Figure 1a) our ﬁnal hand position
+will typically deviate from the intended target. Even if our
+sensors were perfect they would only tell us about the part
+of the world that we can currently sense. This uncertainty
+places the problem of estimating the state of the world and
+the control of our motor system within a statistical
+framework. Bayesian statistics [5–8] provides a systema-
+tic way of solving problems in the presence of uncertainty
+(see the online article by Grifﬁths and Yuille associated
+with this issue: Supplementary material online).
+
+Corresponding author: Ko¨rding, K.P. (kording@mit.edu).
+
+The approach of Bayesian statistics is characterized by
+assigning probabilities to any degree of belief about the
+state of the world (see also Conceptual Foundations
+editorial by Chater, Tenenbaum and Yuille).
+
+Bayesian statistics deﬁnes how new information should
+be combined with prior beliefs and how information from
+several modalities should be integrated. Bayesian decision
+theory [9–11] deﬁnes how our beliefs should be combined
+with our objectives to make optimal decisions. Under-
+standing the way the CNS deals with uncertainty might
+be key to understanding its normal mode of operation.
+
+The cost of each movement (such as energy consumed)
+must be weighed against the potential rewards that can be
+obtained by moving. In the framework of decision theory a
+utility function should quantify the overall desirability of
+the outcome of a movement decision. We should choose a
+movement so that as to maximize utility. Several recent
+papers have addressed what functions people optimize
+with their movements. Understanding what human
+subjects try to optimize is a necessary step towards a
+rational theory of movement selection.
+
+The selection of a movement can be described as the
+rational choice of the movement that maximizes utility
+according to decision theory (see Box 1). This approach
+thus asks why people behave the way they do. An
+increasing number of laboratories have addressed this
+question within this framework. Here we review recent
+studies that ﬁnd human movement performance to be
+close to the predictions obtained from optimally combining
+probability estimates with movement costs and rewards.
+The approach has the potential to embed human
+behaviour into a coherent mathematical framework.
+
+Estimation using Bayes rule
+We need to estimate the variables that are relevant for our
+choice of movement. For example, when playing tennis we
+may want to estimate where the ball will bounce. Because
+vision does not provide perfect information about the ball’s
+velocity there is uncertainty as to the bounce location.
+However, if we know about the noise in our sensory system
+then the sensory input can be used to compute the
+likelihood – the probability of getting the particular
+sensory inputs for different possible bounce locations
+(shown in red in Figure 1b). We can combine this with
+information that is available over repeated experience of
+tennis: the position where the ball hits the ground is not
+
+www.sciencedirect.com 1364-6613/$ - see front matter Q 2006 Elsevier Ltd. All rights reserved. doi:10.1016/j.tics.2006.05.003
+
+

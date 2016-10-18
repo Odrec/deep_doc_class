@@ -1,0 +1,49 @@
+AlphaGo
+
+Mastering the game of Go
+
+with deep neural networks and tree search
+
+A presentation by Anke Dittmer, Falk Heuer 
+
+Table of contents
+
+1.
+
+Introduction
+
+a. Motivation
+b.
+Rules of Go
+
+2. Overview of AlphaGo
+3.
+
+Prior Knowledge
+
+a. Monte Carlo Tree Search
+b.
+
+Recap: Convolutional Networks
+
+4. AlphaGo
+
+a. Deep neural networks & Rollout policy
+b.
+
+Procedure of AlphaGo
+
+5. Discussion
+
+a.
+AlphaGo vs. Lee Sedol
+b. Discussing the match
+c. General Discussion
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+

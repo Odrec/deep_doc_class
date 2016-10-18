@@ -1,0 +1,56 @@
+Tomasi/Scharle/Souderes
+
+3. Juni 2016
+
+Mathematik f¨ur Anwender I
+
+¨Ubungsblatt 9
+
+Abgabe: 13.06.2016
+
+1. (7 Punkte) Leiten Sie ab:
+
+(cid:17)
+
+x3+3x2+x+1
+
+(cid:16) x2+27x+15
+
+3√
+(1) xx
+x2 + 17
+(2)
+(3) ln
+(4) cos(esin(x))
+(5) sin2(x2)
+(6) x2 cos(x)sin(x)
+(7) e− 1
+
+x2
+
+2. (2 Punkte) Beweisen Sie: Die Ableitung einer geraden Funktion ist ungerade und die Ab-
+
+leitung einer ungeraden Funktion ist gerade.
+
+3. (3 Punkte) Bestimmen Sie mit dem Satz ¨uber die Ableitung der Umkehrfunktion die Ablei-
+
+tungen der folgenden Funktionen:
+(1) cos−1(x)
+(2) sinh−1(x)
+
+4. (4 Punkte )Finden Sie die kritischen Punkte der folgenden Funktionen.
+
+(1) (x2 + 5)e3x
+(2) ln(x2 + 1)(x2 + 1)
+
+5. (2 Punkte) Zeigen Sie, dass die Ableitung der Funktion f mit f (x) = xp f¨ur p ∈ R durch
+
+f (cid:48)(x) = pxp−1 gegeben ist.
+
+6. (2 Punkte) Seien f ,g : R → R (nicht notwenigerweise differenzierbare) Funktionen. Sei f
+außerdem streng monoton steigend. Zeigen Sie: Hat g in x0 ein lokales Maximum, so hat
+auch f ◦ g in x0 ein lokales Maximum.
+Bemerkung: Der Satz gilt analog f¨ur lokale Minima. Ist f streng monoton fallend, werden
+lokale Maxima von g zu lokalen Minima von f ◦ g.
+
+

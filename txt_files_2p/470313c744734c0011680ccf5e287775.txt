@@ -1,0 +1,472 @@
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                  WS 2014/2015 
+
+ÜBUNG »MULTIVARIATE VERFAHREN« 
+
+Lösungen Aufgabenblatt 11 
+
+Aufgabe 
+
+1 
+
+(a)  Die  Faktorenanalyse 
+
+findet  man  unter  Analysieren/Dimensionsreduktion/
+Faktorenanalyse…. Dort müssen zunächst die Variablen e1 bis e12 angegeben wer‐
+den (nur diese Variablen angeben!). Da die Hauptkomponentenanalyse (HKA) voreinge‐
+stellt ist, muss lediglich unter (Rotation…) die Methode auf „Varimax“ gesetzt werden. 
+Es resultieren folgende Ergebnistabellen: 
+
+In nebenstehender Tabelle werden die in die Fak‐
+torenanalyse  eingehenden  Varianzanteile  der 
+Items in der Spalte „Anfänglich“ (initiale Kommu‐
+nalitäten; bei der HKA immer alle 1) und die nach 
+der  Extraktion  von  –  wie  unten  zu  sehen  –  vier 
+Faktoren  erklärte  Varianz  aufgeführt 
+(finale 
+Kommunalitäten). 
+In der untenstehenden Tabelle erkennt man, dass 
+aufgrund  des  voreingestellten  Eigenwert‐Krite‐
+riums  vier  Faktoren  (Hauptkomponenten)  mit 
+einem  Eigenwert  über  1  extrahiert  wurden.  Die 
+vier Faktoren erklären zusammen 78.1% der Vari‐
+anz. 
+
+Erklärte Gesamtvarianz
+
+Kommunalitäten
+
+Anfänglich Extraktion
+,836
+,854
+,590
+,852
+,765
+,823
+,706
+,838
+,857
+,846
+,748
+,661
+
+E1
+E2
+E3
+E4
+E5
+E6
+E7
+E8
+E9
+E10
+E11
+E12
+Extraktionsmethode: Hauptkomponentenanalyse.
+
+1,000
+1,000
+1,000
+1,000
+1,000
+1,000
+1,000
+1,000
+1,000
+1,000
+1,000
+1,000
+
+(b) 
+
+ 
+
+ 
+
+Summen von quadrierten Faktorladungen
+
+für Extraktion
+Gesamt % der Varianz
+42,694
+16,092
+10,155
+9,185
+
+5,123
+1,931
+1,219
+1,102
+
+Kumulierte %
+42,694
+58,786
+68,942
+78,127
+
+Anfängliche Eigenwerte
+
+Komponente
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Extraktionsmethode: Hauptkomponentenanalyse.
+
+Gesamt % der Varianz
+42,694
+16,092
+10,155
+9,185
+5,129
+4,209
+3,201
+2,626
+1,836
+1,778
+1,619
+1,475
+
+5,123
+1,931
+1,219
+1,102
+,616
+,505
+,384
+,315
+,220
+,213
+,194
+,177
+
+Kumulierte %
+42,694
+58,786
+68,942
+78,127
+83,256
+87,465
+90,666
+93,292
+95,128
+96,907
+98,525
+100,000
+
+Rotierte Summe der quadrierten Ladungen
+Gesamt % der Varianz
+Kumulierte %
+21,313
+21,313
+41,836
+20,523
+61,127
+19,291
+78,127
+16,999
+
+2,558
+2,463
+2,315
+2,040
+
+Screeplot
+
+Gibt  man  unter  (Extraktion…)  die 
+Anzeige „Screeplot“ an, so erhält man die 
+nebenstehende Darstellung. Zeichnet man 
+von  rechts  kommend  eine  Gerade  durch 
+die Punkte, so zeigt sich ein erster abwei‐
+chender  Knick  nach  oben  ebenfalls  bei 
+dem vierten Faktor. 
+
+Damit  sprechen  theoretische  Erwartung, 
+Kaiser‐Kriterium  und  Scree‐Test  überein‐
+stimmend für die Extraktion von vier Fak‐
+toren. 
+
+t
+r
+e
+w
+n
+e
+g
+E
+
+i
+
+6
+
+5
+
+4
+
+3
+
+2
+
+1
+
+0
+
+ 
+
+– 1 – 
+
+ 
+
+(11.1.2015)
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+7
+Faktor
+
+8
+
+9
+
+10
+
+11
+
+12
+
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                  WS 2014/2015 
+
+(c) 
+
+Zur Prüfung der theoretisch postulierten Zuordnung der Items zu den Faktoren betrach‐
+ten wir die rotierte Faktorladungsmatrix, die in der Standardform wie links unten und in 
+der durch die Angabe der Anzeigeoptionen „Sortiert nach Größe“ und „Unterdrücken 
+von Absolutwerten kleiner als .30“ unter (Optionen…) übersichtlicher wie rechts dar‐
+gestellt werden kann: 
+
+ 
+
+ 
+
+Rotierte Komponentenmatrixa
+
+Rotierte Komponentenmatrixa
+
+1
+
+Komponente
+2
+3
+,027
+,902
+,213
+,068
+,184
+,141
+,874
+,216
+,221
+,827
+,242
+,144
+,293
+,163
+,846
+,168
+,162
+,893
+,178
+,059
+,016
+,125
+,710
+,045
+
+E1
+E2
+E3
+E4
+E5
+E6
+E7
+E8
+E9
+E10
+E11
+E12
+Extraktionsmethode: Hauptkomponentenanalyse. 
+Rotationsmethode: Varimax mit Kaiser-Normalisierung.
+
+,050
+,874
+,225
+,185
+,141
+,851
+,124
+,158
+,061
+,868
+,190
+,361
+
+4
+,134
+,203
+,697
+,087
+,113
+,141
+,760
+,262
+,174
+,241
+,834
+,156
+
+Komponente
+2
+3
+
+4
+
+1
+,874
+,868
+,851
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+,902
+,893
+,827
+
+E2
+E10
+E6
+E1
+E9
+E5
+E4
+E8
+E12
+E11
+E7
+E3
+Extraktionsmethode: Hauptkomponentenanalyse. 
+Rotationsmethode: Varimax mit Kaiser-Normalisierung.
+
+,874
+,846
+,710
+
+,361
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+,834
+,760
+,697
+
+a. 
+
+Die Rotation ist in 6 Iterationen konvergiert.
+
+a. 
+
+Die Rotation ist in 6 Iterationen konvergiert.
+
+Der Vergleich mit der Tabelle im Aufgabenblatt zeigt, dass tatsächlich wie postuliert die 
+Items E1, E5, E9 auf einem Faktor laden (Faktor 2, „Selbstwirksamkeit“), die Items E2, 
+E6, E10 auf einem Faktor (Faktor 1, „Einfluss“), die Items E3, E7, E11 auf Faktor 4 
+(„Wichtigkeit“) und schließlich die Items E4, E8, E12 zusammen auf dem dritten Fak‐
+tor laden („Autonomie“). 
+
+(d) 
+
+ 
+
+Eine zusammenfassende Ergebnistabelle erzeugt man durch das Kopieren der entspre‐
+chenden  Tabellenteile  aus  dem  Ergebnisviewer  von  SPSS  über  die  Option  Bearbei-
+ten/Kopieren via Zwischenablage z.B. in das Programm Word oder Excel. 
+Zu beachten ist dabei, dass die Itemreihenfolge in der Tabelle der Kommunalitäten, die 
+rechts angefügt werden muss, nicht der entspricht, die man erhält, wenn man die Opti‐
+on „Sortiert nach Größe“ angibt. Die einfachste Lösung besteht darin, die Reihenfolge 
+der Variablen in der Faktorenanalyse‐Prozedur wie in der rotierten Faktorladungsmatrix 
+anzugeben (am besten in der Syntax ändern). Dann sind die Variablen in allen Tabellen 
+in der gewünschten Reihefolge sortiert. Es resultiert eine Tabelle wie auf der folgenden 
+Seite oben. 
+
+(e)  Die geringste Kommunalität weist mit 0.590 das Item E3 auf. Man sieht, dass es auch 
+eine geringere Ladung auf dem Wichtigkeits‐Faktor F4 aufweist, als die beiden anderen 
+Items. Schaut man sich die Itemformulierungen genauer an, so erkennt man, dass bei 
+E3 („Die Arbeit, die ich mache, ist bedeutsam.“) im Gegensatz zu den beiden anderen 
+Items kein Bezug auf die eigene, persönliche Bedeutsamkeit zu finden ist. Ob das die 
+Ursache ist, könnte man prüfen, indem man das Item umformuliert (z.B. „Die Arbeit, 
+die ich mache, ist für mich bedeutsam.“) und den Fragebogen erneut einer Stichprobe 
+vorgibt. 
+
+ 
+
+ 
+
+– 2 – 
+
+ 
+
+(11.1.2015)
+
+

@@ -1,0 +1,147 @@
+Solutions Homework 5
+
+Tutorial Lisa-Marie Vortmann
+
+Computational Lingustics, Prof. Bosch, SS 2016
+
+David Menrath
+
+Tim Landwehr
+
+Tobias Ludwig
+
+964606
+
+964185
+
+963177
+
+29. Juni 2016
+
+Exercise 1
+
+A: presupposition For sentence (i) to be true, Steven has to know some-
+thing that is correct. Therefore, we need to presuppose sentence (ii). Correct
+sentences including knowing always presuppose truth.
+
+B: none This statement could not be seen as an implicature, due to the
+fact that even if the information that IBM builds telephones were true, what
+Maude believes (not knows!) is never objective.
+
+C: presupposition The term proved implies logical derivability, there-
+fore (ii) is to be presupposed for (i) to make sense.
+
+D: implicature did not tell many would also include did not tell any
+which would contradict (ii). Still our understanding of not many yields some.
+
+E: presupposition Again, (ii) is necessary for (i) to make sense. If there
+were no re inspector in our town, it would be impossible to talk to him.
+
+F: implicature The logical interpretation of some yields at least one.
+Therefore all would also be a correct interpretation, still if we want to
+express all, we would use it as term. Therefore, our understanding gives us
+the correct solution.
+
+Excercise 2
+
+1) Usually on Fridays I sing in the choir [implicature: also next Friday] but
+this Friday I won't [implicature defeated].
+
+2) There are ten people in our PoM seminar [implicature: there are no
+more than ten people in our seminar], in fact there are even eleven people
+including the prof [implicature defeated].
+
+3) She won't necessarily get the job [impliciture: she won't get it] but she
+possibly gets it [implicature defeated].
+
+1
+
+Excercise 3
+
+Fred brought two bottles of wine
+
+a) From what is said... For the sentence to be correct, Fred must have
+brought not less than two bottles. If he had less, it would not be true any-
+more. Logically, two just limits the minimum of bottles, Fred must have
+brought. If he had brought more than two, the statement would be still true.
+
+b) Gricean Maximes Due to the Maxim of quality, we know that Fred
+did not bring less than two bottles of wine; otherwise the sentence would be
+wrong. For the sentence being true, according to the Maxim of quantity, it
+would have to be most informative, too. Therefore, the speaker must have
+told the maximum number of bottles that Fred brought. Hence we know
+Fred did not bring more than 2 bottles. Combining those, 2 bottles is the
+only number of bottles yielding the truth value 1.
+
+c) Conversional context The gist of the sentence is clearly informative:
+person A informs person B about something person C (Fred) did. To do so,
+over- or underestimating the real number of bottles would not make sense
+at all. Thus we assume A told the exact number.
+
+Excercise 4
+
+a) Tree for i) and ii)
+
+S
+
+<t>
+
+DP
+
+< <e,t>,t>
+
+VP
+
+<e,t>
+
+D
+
+NP
+
+< <e,t>, < <e,t>,t> >
+
+<e,t>
+
+VP
+
+<e,t>
+
+PP
+
+< <e,t>, <e,t> >
+
+V
+
+DP
+
+P
+
+< < <e,t>,t>,<e,t> >
+
+< <e,t>,t>
+
+< <e,t>, <e,t> >
+
+D
+
+NP
+
+< <e,t>, < <e,t>,t> >
+
+<e,t>
+
+The
+
+PoG/KoF
+
+met
+
+the
+
+KoF/PoG
+
+yesterday
+
+2
+
+

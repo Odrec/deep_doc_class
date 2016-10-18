@@ -1,0 +1,147 @@
+Chromosoma (2014) 123:225–237
+DOI 10.1007/s00412-014-0460-2
+
+REVIEW
+
+Chromatin as dynamic 10-nm fibers
+
+Kazuhiro Maeshima & Ryosuke Imai & Sachiko Tamura &
+Tadasu Nozaki
+
+Received: 15 January 2014 / Revised: 18 March 2014 / Accepted: 20 March 2014 / Published online: 16 April 2014
+# The Author(s) 2014. This article is published with open access at Springerlink.com
+
+Abstract Since Flemming described a nuclear substance in
+the nineteenth century and named it “chromatin,” this sub-
+stance has fascinated biologists. What is the structure of
+chromatin? DNA is wrapped around core histones, forming
+a nucleosome fiber (10-nm fiber). This fiber has long been
+assumed to fold into a 30-nm chromatin fiber and subsequent-
+ly into helically folded larger fibers or radial loops. However,
+several recent studies, including our cryo-EM and X-ray scat-
+tering analyses, demonstrated that chromatin is composed of
+irregularly folded 10-nm fibers, without 30-nm chromatin
+fibers, in interphase chromatin and mitotic chromosomes.
+This irregular folding implies a chromatin state that is physi-
+cally less constrained, which could be more dynamic com-
+pared with classical regular helical folding structures. Consis-
+tent with this, recently, we uncovered by single nucleosome
+imaging large nucleosome fluctuations in living mammalian
+cells (∼50 nm/30 ms). Subsequent computational modeling
+suggested that nucleosome fluctuation increases chromatin
+accessibility, which is advantageous for many “target
+searching” biological processes such as transcriptional regu-
+lation. Therefore, this review provides a novel view on chro-
+matin structure in which chromatin consists of dynamic and
+disordered 10-nm fibers.
+
+K. Maeshima : R. Imai : S. Tamura : T. Nozaki
+Biological Macromolecules Laboratory, Structural Biology Center,
+National Institute of Genetics, Mishima, Shizuoka 411-8540, Japan
+
+K. Maeshima (*) : R. Imai
+Department of Genetics, School of Life Science,
+Graduate University for Advanced Studies (Sokendai),
+Mishima, Shizuoka 411-8540, Japan
+e-mail: kmaeshim@nig.ac.jp
+
+T. Nozaki
+Institute for Advanced Biosciences, Keio University,
+Fujisawa 252-8520, Japan
+
+Introduction
+
+There are 60 trillion cells in the human body. Each cell
+contains 2 m of genomic DNA in a small nucleus with an
+approximately 10-μm diameter (a volume of only ∼100 fL to
+1 pL), and yet, it is able to search and read the information in
+its genomic DNA to execute diverse cellular functions. There-
+fore, it is important to understand how this long genomic
+DNA is organized in the nucleus. In the nineteenth century,
+W. Flemming described a nuclear substance that was clearly
+visible after staining with a basic dye using primitive light
+microscopes and named it “chromatin.” This is now thought
+to be the basic unit of genomic DNA organization (Olins and
+Olins 2003). Since then, even before the discovery of the
+structure of DNA (Watson and Crick 1953), chromatin has
+attracted significant interest from biologists. In this review
+article, we assess the available data to provide a novel view
+of chromatin in which “chromatin is a dynamic and disordered
+10-nm fiber.”
+
+DNA and nucleosomes
+
+Deoxyribonucleic acid (DNA) is a negatively charged poly-
+mer that produces electrostatic repulsion between adjacent
+DNA regions. Therefore, it would be difficult for a long
+DNA molecule alone to fold into a small space like the
+nucleus (Bloomfield 1996; Yoshikawa and Yoshikawa
+2002). To overcome this problem, the long, negatively
+charged polymer is wrapped around a basic protein complex
+known as a core histone octamer, which consists of the histone
+proteins H2A, H2B, H3, and H4, to form a nucleosome
+(Fig. 1) (Olins and Olins 1974; Kornberg 1974; Woodcock
+et al. 1976). The structure of a nucleosome is well known at
+atomic resolution (1.9 Å) (Davey et al. 2002): 147 base pairs
+(bp) of DNA are wrapped in 1.7 left-handed superhelical turns
+
+226
+
+Chromosoma (2014) 123:225–237
+
+fibers “30-nm chromatin fibers” (Figs. 1 and 2a, b) (Finch and
+Klug 1976). In their structural model of the 30-nm fibers
+called “solenoids,” consecutive nucleosomes are located ad-
+jacent to one another in the fiber and folded into a simple
+“one-start helix” (Fig. 2a). Subsequently, a second model of
+the “two-start helix” was proposed based on microscopic
+observations of isolated nucleosomes (Fig. 2b) (Woodcock
+et al. 1984). The second model assumed that nucleosomes
+were arranged in a zigzag manner, where a nucleosome in the
+fiber was bound to the second neighbor (Bassett et al. 2009)
+(Fig. 2b). In addition to these two famous structural models,
+many other structural variations of 30-nm chromatin fibers
+have been proposed (van Holde and Zlatanova 2007).
+
+Fig. 1 Old and novel views of chromatin structure. A long DNA mole-
+cule with a diameter of ∼2 nm is wrapped around a core histone octamer
+and forms a nucleosome with a diameter of 11 nm (Alberts et al. 2007).
+The nucleosome has long been assumed to fold into 30-nm chromatin
+fibers (left) and subsequently into the higher order organization of inter-
+phase nuclei or mitotic chromosomes. The right panel shows the novel
+hypothesis of irregularly folded nucleosome fibers
+
+around a histone octamer, whose surface is positively charged.
+Each nucleosome particle is connected by linker DNA (20–
+80 bp) to form repetitive motifs of ∼200 bp; this was described
+originally to resemble “beads on a string” (Fig. 1) (Olins and
+Olins 2003). This nucleosome fiber is also known as the 10-
+nm fiber (Fig. 1). A single histone octamer in the nucleosome
+has ∼220 positively charged lysine and arginine residues and
+∼74 negatively charged aspartic acid and glutamic acid resi-
+dues. There are also 400 negative charges in the phosphate
+backbone of 200 bp of DNA. Because only about half of the
+negative charges in the DNA are neutralized, the remaining
+charge must be neutralized by other factors (e.g., linker his-
+tone H1, cations, and other positively charged molecules) for
+further folding.
+
+Discovery of 30-nm chromatin fibers in vitro
+
+In 1976, Finch and Klug first found, under transmission
+electron microscopy (EM), that purified nucleosome fibers
+(10-nm fibers) with linker histone H1 or Mg2+ ions were
+folded into fibers with a diameter of 30 nm. They named these
+
+Fig. 2 Two classical models of 30-nm chromatin fibers and higher order
+chromatin structures. a One-start helix (solenoid), b two-start helix
+(zigzag). (Top) A scheme of the two different topologies of chromatin fibers
+is shown (Robinson and Rhodes 2006). Positions from the first (N1) to the
+eighth (N8) nucleosome are labeled. c Two classical higher order chromatin
+structure models: the hierarchical helical folding model (Sedat and
+Manuelidis 1978) and the radial loop model (Laemmli et al. 1978). In the
+radial loop model, many loop structures of the 30-nm fiber (red) wrap
+around the scaffold structure (gray) (Laemmli et al. 1978), which consists
+of condensin and topoisomerase IIα (Maeshima and Laemmli 2003)
+
+

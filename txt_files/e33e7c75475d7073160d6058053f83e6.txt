@@ -1,0 +1,48 @@
+Algorithmen II
+
+VO 2
+
+Nachtrag: Linearzeit-Sortieren
+
+Amortisierte Analyse
+
+Prof. Dr. Markus Chimani
+
+Theoretische Informatik, Uni Osnabrück
+
+Wintersemester 2014/15
+
+CountingSort
+
+Wiederholung
+
+Algorithmus:
+Sei C ein k-elementiges Integerarray, mit 0en initialisiert.
+for all i = 1 . . . n:
+
+C[key(oi)] += 1
+for all i = 2 . . . k:
+C[i] += C[i − 1]
+
+// Erhöhe entspr. „Bucketgröße“ um 1
+
+// Errechne Endindex des i-ten Buckets
+
+Sei R ein n-elementiges Objektarray, anfangs leer.
+for all i = n . . . 1:
+
+// Von hinten nach vorne!
+
+R[ C[key(oi)] ] = oi
+C[key(oi)] –= 1
+
+return R
+
+// Bucket-Endindex nach vorne schieben.
+
+Laufzeit: Θ(n + k). Falls k = O(n) ⇒ Laufzeit Θ(n)
+Selbe O-Notation wie BucketSort, aber auf Arrays statt Listen.
+
+Sowohl BucketSort als auch CountingSort sind stabil.
+
+

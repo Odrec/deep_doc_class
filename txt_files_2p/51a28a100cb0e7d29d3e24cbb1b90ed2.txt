@@ -1,0 +1,95 @@
+Berechnungsgrundlagen für Konzentrationen 
+
+ 
+ 
+Berechnung von Konzentrationen: 
+ 
+1. Wichtige Formeln:    c =   n/V   (mol/L);    m = n * M  -->  n = m/M;   
+ 
+2. Verschiedene Konzentrationsangaben sind möglich:   
+ 
+
+a) Stoffmengenkonzentration  (cid:1) c = n/V 
+
+b) Molalität (cid:1) β = n/m  (Achtung: Angabe m in kg!!) 
+c) Verdünnungskonzentrationen: Angabe in %  (cid:1) Bezug auf 100; dabei Unterschiede:  
+     Masse in Volumen (m/V = g/100ml), oder Masse in Masse (m/m = g/100g) 
+
+ 
+
+Aufgaben 
+
+ 
+Berechnen Sie die Massen für folgende Verbindungen: 
+ 
+Siehe PSE und Angabe der relativen Atommasse für Elemente, dann 
+ 
+NaOH:   Na=23g, O= 16g,  H=1g;    => 24g + 16g +1g = 40g 
+CH4: C=12g, 1H=1g also 4H = 4g     => 16g 
+NaCl:  Na=23g, Cl=35,5g    => 58,5g 
+H2SO4: H=1g, S=32,1g, O=16g     =>  98,1g 
+C6H12O6  => 180g 
+H2CO3 =>  62g 
+Fe2O3 => 160g 
+H2O  => 18g 
+HCl => 36,5g 
+KMnO4: K=39,1g, Mn=54,9g, O=16g;     =>  158g 
+ 
+Berechnen Sie die Stoffmengen! 
+ 
+1.)    m = 1,52g, M = ?,  n = 0,033 mol 
+m= n*M    (cid:1)  M = m/n   
+M = 1,52g/0,033mol  
+     = 46,06 g/mol 
+ 
+2.)  Welche Stoffmenge besitzt 1g NaCl? 
+gesucht wird die Stoffmenge „n“, also gilt: m = n*M  bzw. n = m/M 
+M= 58,5g/mol (Na=23g, Cl=35,5) 
+n= m/M  =  1/58,5 (g/g/mol => mol)   =>  n = 0,017mol 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+3.)  Beim Lösen von Natriumhydroxid (NaOH) in Wasser erhält man Natronlauge.  
+     Wie viel g NaOH muss ein Chemiker in 1L Wasser lösen, damit er eine 1-molare Lösung  
+     erhält? 
+gesucht wird „m“, gegeben sind: V= 1L; c= 1 mol/L 
+ 
+1. Schritt: c = n/V   =>       1mol/L = n/1L   =>  n=1mol 
+2. Schritt: m = n*M   
+    Berechnung von M:   M= 23g(Na) + 16g(O) + 1g(H)  =>     M=40g/mol 
+    m = n*M  = 1mol * 40g/mol = 40g   
+       =>  m= 40g 
+ 
+ 
+Berechnen Sie die Verdünnungen! 
+ 
+1.) Wieviel mol Salzsäure sind in 700ml Lösung mit der Konzentration c(HCl) = 1mol/l 
+enthalten?  
+1L = 1000ml = 1mol 
+700ml = 0,7mol 
+ 
+2.) In 800g Wasser werden 80g Kochsalz gelöst. Wie groß ist der Salz-Massenanteil der 
+Lösung (Angabe in %)? 
+80g Kochsalz        in       800g Wasser 
+        x                    in       100g Wasser 
+x = 10g Kochsalz 
+=> Die Lösung ist 10%ig.  
+ 
+3.) 45kg Natriumhydroxid werden in 500kg Wasser aufgelöst. Welche Konzentration der 
+Lösung ist entstanden? 
+45kg  NaOH in 500kg Wasser  =>  In 100kg Wasser sind 9kg NaOH, also ist eine 9%ige 
+Lösung entstanden. 
+ 
+4.) Wie viel kg Natriumchlorid müssen in 500kg Wasser aufgelöst werden, wenn eine Lösung 
+mit 8,3% entstehen soll? 
+8,3%  =>  8,3kg NaCl in 100kg Wasser; in 500kg müssen somit 41,5kg NaCl gelöst werden. 
+ 
+ 
+
+

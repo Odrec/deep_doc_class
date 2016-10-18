@@ -1,0 +1,18 @@
+Erstellung und Analyse einer kryptographischen Funktion
+
+auf Graphenbasis
+
+Falk Wilke
+
+Institut f¨ur Informatik
+Universit¨at Osnabr¨uck
+
+Albrechtstr. 28
+49069 Osnabr¨uck
+fwilke@uos.de
+
+Abstract: Das Thema dieser Arbeit ist die Erstellung einer kryptographischen Funkti-
+on auf Graphenbasis. Hierzu wird ein einfacher Basisalgorithmus der Graphentheorie
+erweitert und im Anschluss die G¨ute des Verfahrens bestimmt.
+
+

@@ -1,0 +1,64 @@
+Monotemporale visuelle Interpretation eines
+
+Satellitenbildausschnittes
+
+von Henrik Buckelo
+
+Inhaltsverzeichnis:
+
+1. Einleitung
+2. Karte der Landschaftsräume 
+
+2.1 Begründung/ grobe Interpretation
+
+3. Karte der Landschaftsnutzung 
+4. Interpretation 
+5. Bewertung 
+
+1.Einleitung
+
+Als Interpretationsgrundlage dient ein Satellitenbildausschnitt des Sensors Landsat- TM4, 
+das am 18.05.1992 an einem „unbekannten“ Ort aufgenommen wurde.
+Mit Hilfe von Paint skizzierte ich eine Karte zur Einteilung der Landschaftsräume und eine 
+über die Landschaftsnutzung. Nach der Karte der Landschaftsräume, werde ich grob 
+erläutern nach welchen Kriterien ich die Einteilungen in die verschiedenen Zonen festlegte.
+Dies wird im Weiteren dann als Interpretations- und Einteilungsstütze benötigt. Mit Hilfe 
+der Karte der Landschaftsnutzungen kommt die eigentliche Hauptinterpretation, des 
+Satellitenbildausschnittes.
+Bei der Interpretation werde ich dann genauer auf Details eingehen und meine 
+Interpretationen begründen, wobei ich unter anderen die Beziehung der verschiedenen 
+Landschaftnutzungen mit einbeziehe. Zum leichteren Verständnis und Überblick habe ich 
+die Interpretation in sich selbst nochmal in die verschiedenen Landschaftsnutzungen (z. B. 
+Wald, Stadt, Fluss etc.) unterteilt.
+Die Interpretation mache ich mit Hilfe von Erdas Imagine, wobei ich verschieden 
+Kanalkombinationen benutze, um jeweils angepasst genauere Informationen über das 
+betrachtete Objekt zu erhalten.
+Nach der Interpretation schildere ich noch einige Probleme, die mir bei der Interpretation 
+des vorliegenden Ausschnittes aufgefallen sind.
+
+2.Karte der Landschaftsräume
+
+Farbgebung nur für die Abgrenzung
+
+2.1 Begründung
+
+Auf dem Satellitenbild lassen sich relativ deutlich die 3 oben eingezeichneten 
+Zonen erkennen.
+Die "Waldzone" habe ich einerseits durch die Echtfarbdarstellung analysiert. Da 
+fällt das dunkle grün einfach auf, was bei der Bandeinstellung für Vegetation 
+spricht. Bei der Falschfarbeinstellung(Band von oben nach unten 4,3,2) erkennt 
+man es an der kräftigen dunkelroten Färbung, die bei dieser Bandeinstellung für 
+starke Vegetation spricht. Zudem sprach die "blumkohlartige" Textur sowie die 
+Größe der rot(oder Grün)gefärbten Fläche für einen Wald.
+Im Osten grenzt sich der Wald durch eine rapide Farbänderung ab. Statt 
+dunkelgrün wird der Bereich jetzt mehr Grau und weißlich(in 
+Echtfarbdarstellung).
+Zudem ändert sich die Textur, statt "blumkohlartigen" Bewuchs, wird das 
+Landschaftsbild jetzt mehr von geordneten Flächen geprägt. Darum zog ich da die
+"Grenze" durch. Die "Landwirtschaftsfläche" ist an der zuvor schon erwähnten, 
+prägnanten Anordnung vieler kleiner rechteckigen Felder oder Flächen zu 
+erkennen. Was für einen anthropogenen Einfluss spricht. Zudem liegen die 
+Flächen nahe am Fluss, was den Verdacht auf "Landwirtschaftsflächen" nahe 
+liegt. Im Westen wird die Zone durch den Wald abgegrenzt und im Osten durch 
+
+

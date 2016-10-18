@@ -1,0 +1,79 @@
+SOMMERSEMESTER 2016
+
+UNIVERSIT ¨AT OSNABR ¨UCK
+INSTITUT F ¨UR MATHEMATIK
+DR. THOMAS PETER
+PROF. STEFAN KUNIS
+
+¨Ubungen zur Optimierung
+
+¨Ubung 11
+
+Aufgabe 11.40 (10 Punkte).
+Weisen Sie anhand des restringierten Optimierungsproblems
+
+−x1
+min
+s.d. x2 + x3
+
+1 ≤ 0
+−x2 ≤ 0
+
+nach, dass (TF (x∗) (cid:54)= T lin(x∗)).
+Aufgabe 11.41 (10 Punkte).
+Sei A ∈ Rm×d. Zeigen Sie: Entweder ist das System Ap > 0 l¨osbar oder das System
+
+A(cid:62)u = 0,
+
+u ≥ 0,
+
+u (cid:54)= 0
+
+besitzt eine L¨osung. Dabei sind die Relationszeichen =,≤, <,(cid:54)= komponentenweise zu verstehen.
+Aufgabe 11.42 (12 Punkte).
+Gegeben sei das Optimierungsproblem
+
+min − (x1 + 1)2 − (x2 + 1)2
+s.d.
+
+x2
+1 + x2
+x1
+
+2 ≤ 2
+≤ γ
+
+(1)
+
+mit einer fest vorgegebenen Zahl γ ≥ −√
+a) Ermitteln Sie anhand einer Skizze die L¨osung x∗ = x∗(γ) von (1) mit einer Fallunterscheidung
+f¨ur γ = −√
+
+2 < γ ≤ 1, γ > 1.
+
+2,−√
+
+2.
+
+b) Gen¨ugt x∗ den Regularit¨atsbedingungen LICQ bzw. Abadie CQ?
+c) Gibt es zu x∗ einen Vektor λ∗ ∈ R2, sodass (x∗, λ∗) ein KKT-Punkt von (1) ist?
+
+Aufgabe 11.43 (8 Punkte).
+Gegeben sei das Optimierungsproblem
+
+min x1 − x2
+s.d.
+
+1 + x2
+2
+− 1 ≤ x1 ≤ 1.
+
+(2)
+
+Geben Sie alle KKT-Punkte von (2) an (d.h., weisen Sie die KKT-Bedingungen f¨ur diese Punkte nach)
+und ¨uberpr¨ufen Sie welche dieser Punkte globale, bzw. lokale Minima, oder sogar nicht einmal lokale
+Minima sind.
+Bitte werfen Sie die L¨osungen bis zum 23.06.2016, 8:30 Uhr in den ¨Ubungszettelkasten, Geb¨aude
+69, Erdgeschoss ein.
+
+

@@ -1,0 +1,71 @@
+Technical Report
+
+Social Data Mining
+
+Kim Gerbaulet
+
+Sebastian Höﬀner
+
+November 09, 2014
+
+1 Used tool
+We decided to stay with Python, which worked really good and we already knew what we had to do for this
+task.
+
+2 Solving the task
+2.1 Recycling the data
+In task 1 we chunked the data into each hour of the day and already solved the problem of CR and LF. In
+some programming languages (as in Python and R) CR was interpreted as a LF which resulted in corrupted
+data. Thus we used the chunked data to avoid this problem. We read in the data with a for loop in which
+we fetched the whole day at once.
+
+f o l d e r = " . . / data / "
+folder_2 = " chunks /201407 " + str ( day ) + " 00 " + " 0000. csv "
+hashtag = {}
+hashcount = {}
+for hour in hours :
+
+i f hour < 10 and hour > 0:
+
+folder_2 = ( " chunks /201407 " + str ( day ) + " 0 " + str ( hour )
+
+e l i f hour >= 10:
+
++ " 0000. csv " )
+
+folder_2 = " chunks /201407 " + str ( day ) + str ( hour ) + " 0000. csv "
+
+with open( f o l d e r + folder_2 ,
+
+" r " ) as
+
+c s v f i l e :
+
+csvreader = csv . reader ( c s v f i l e , d e l i m i t e r=’ \ t ’ )
+for entry in csvreader :
+
+tweet ) = ( entry [ 2 ] ,
+
+entry [ 6 ] )
+
+( date ,
+c s v f i l e . c l o s e ()
+
+2.2 Finding the Hashtags
+To ﬁnd the 20 most common hashtags, we wanted only the tweets with hashtags. We used a dictionary to
+save those hashtags with their amounts of occurrence.
+for entry in csvreader :
+
+tweet ) = ( entry [ 2 ] ,
+
+entry [ 6 ] )
+
+( date ,
+i f
+
+’#’ not in tweet :
+continue
+
+1
+
+

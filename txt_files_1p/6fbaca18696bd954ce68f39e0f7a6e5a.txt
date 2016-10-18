@@ -1,0 +1,25 @@
+Beispiel: Kalkulation von Kreditzinsen mit dem 
+Unternehmenswertmodell von Merton (1974)
+
+Ein bislang rein eigenfinanziertes Unternehmen möchte zur Finanzierung eines 
+größeren Investitionsprojektes einen Bankkredit aufnehmen. Das Unternehmen 
+wünscht einen Kredit mit 5 Jahren Laufzeit ohne zwischenzeitliche Zins- und 
+Tilgungszahlungen. Der Rückzahlungsbetrag in 5 Jahren soll 10 Mio. € sein.
+a) Mit welchem heutigen Kreditauszahlungsbetrag kann das Unternehmen 
+rechnen, wenn ihre Hausbank den aktuellen Marktwert der Unternehmensaktiva 
+auf 15 Mio. € schätzt, die Volatilität der Unternehmenswertrendite mit 20 % p. a. 
+beziffert und die Bank das Merton-Modell anwendet?
+Als zusätzliche Kreditvertragsklausel verpflichtet die Bank das Unternehmen, 
+während der Kreditlaufzeit keine Gewinne an die Eigentümer auszuschütten 
+und auch kein zusätzliches (gleichrangiges oder sogar bevorrechtigtes) 
+Fremdkapital aufzunehmen.
+Der risikolose Zinssatz (stetige Verzinsungsrate) liegt bei 5 % p. a. Es besteht 
+eine flache und im Zeitablauf konstante Zinsstrukturkurve.
+b) Welcher nominelle (risikoadjustierte effektive) Kreditzins ergibt sich?
+c) Wie hoch ist die geforderte Risikoprämie (Credit Spread)?
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+

@@ -1,0 +1,232 @@
+The Journal of Neuroscience, October 9, 2013 • 33(41):16275–16284 • 16275
+
+Behavioral/Cognitive
+
+Prior Expectations Bias Sensory Representations in Visual
+Cortex
+
+Peter Kok,1 Gijs Joost Brouwer,2 Marcel A.J. van Gerven,1 and Floris P. de Lange1
+1Radboud University Nijmegen, Donders Institute for Brain, Cognition and Behaviour, 6500 HE Nijmegen, Netherlands, and 2New York University,
+Department of Psychology and Center for Neural Science, New York, New York 10003
+
+Perception is strongly influenced by expectations. Accordingly, perception has sometimes been cast as a process of inference, whereby
+sensory inputs are combined with prior knowledge. However, despite a wealth of behavioral literature supporting an account of percep-
+tion as probabilistic inference, the neural mechanisms underlying this process remain largely unknown. One important question is
+whether top-down expectation biases stimulus representations in early sensory cortex, i.e., whether the integration of prior knowledge
+and bottom-up inputs is already observable at the earliest levels of sensory processing. Alternatively, early sensory processing may be
+unaffected by top-down expectations, and integration of prior knowledge and bottom-up input may take place in downstream association
+areas that are proposed to be involved in perceptual decision-making. Here, we implicitly manipulated human subjects’ prior expecta-
+tions about visual motion stimuli, and probed the effects on both perception and sensory representations in visual cortex. To this end, we
+measured neural activity noninvasively using functional magnetic resonance imaging, and applied a forward modeling approach to
+reconstruct the motion direction of the perceived stimuli from the signal in visual cortex. Our results show that top-down expectations
+bias representations in visual cortex, demonstrating that the integration of prior information and sensory input is reflected at the earliest
+stages of sensory processing.
+
+Introduction
+Perception is not solely determined by the input from our eyes,
+but it is strongly influenced by our expectations. In line with this
+notion, perception has often been cast as a process of inference,
+whereby sensory inputs are combined with prior knowledge
+(Helmholtz, 1867). In recent years, this notion has received con-
+siderable empirical support (Kersten et al., 2004; Yuille and Ker-
+sten, 2006). For example, many perceptual illusions can be
+explained as the result of prior knowledge about the statistics of
+the world influencing perceptual inference: we expect light to
+come from above (Sun and Perona, 1998), faces to be convex and
+not concave (Gregory, 1997), and objects in the world to move
+slowly rather than fast (Weiss et al., 2002). Many of these priors
+are not set in stone, but rather reflect the agent’s current model of
+the world, and can sometimes adjust to (experimentally) altered
+circumstances on a relatively short timescale (Adams et al., 2004;
+Chalk et al., 2010; Sotiropoulos et al., 2011).
+
+However, despite a wealth of literature supporting an account
+of perception as probabilistic inference (Kersten et al., 2004;
+Yuille and Kersten, 2006), the neural mechanisms underlying this
+
+Received Feb. 18, 2013; revised Sept. 3, 2013; accepted Sept. 6, 2013.
+
+Author contributions: P.K. and F.P.d.L. designed research; P.K. performed research; P.K., G.J.B., and M.A.J.v.G.
+
+analyzed data; P.K., G.J.B., M.A.J.v.G., and F.P.d.L. wrote the paper.
+
+This work was supported by the Netherlands Organisation for Scientific Research (NWO VENI 451-09-001
+
+awarded to F.P.d.L.).
+
+The authors declare no competing financial interests.
+Correspondence should be addressed to Peter Kok, Donders Institute for Brain, Cognition and Behaviour, Rad-
+
+boud University Nijmegen, P.O. Box 9101, 6500 HB Nijmegen, The Netherlands. E-mail: p.kok@donders.ru.nl.
+
+DOI:10.1523/JNEUROSCI.0742-13.2013
+
+Copyright © 2013 the authors
+
+0270-6474/13/3316275-10$15.00/0
+
+process remain largely unknown. Here, we are particularly con-
+cerned with the integration of bottom-up sensory inputs and
+top-down prior expectations. Specifically, the question we wish
+to address is whether top-down expectations can bias stimulus
+representations in early sensory cortex. It is well known that valid
+prior expectations result in reduced neural activity in sensory
+cortex (Summerfield et al., 2008; den Ouden et al., 2009; Alink et
+al., 2010; Todorovic et al., 2011; Kok et al., 2012a; Todorovic and
+de Lange, 2012), but it is an open question whether expectations
+are also able to change the contents of the sensory representation.
+Previous work by Murray et al. (2006) has revealed a neural cor-
+relate of an illusion of size as a result of inferred depth in V1,
+suggesting such modulations are indeed possible. This would re-
+veal the integration of prior knowledge and bottom-up inputs to
+be a key feature of sensory processing at even the earliest levels, in
+line with hierarchical inference theories of perception (Lee and
+Mumford, 2003; Friston, 2005). Alternatively, early sensory pro-
+cessing may be unaffected by top-down expectations, and inte-
+gration may take place in downstream association areas that are
+proposed to be involved in perceptual decision-making, such as
+parietal and prefrontal cortex (Gold and Shadlen, 2007; Heek-
+eren et al., 2008; Rao et al., 2012).
+
+To examine whether priors modify stimulus representations
+in sensory cortex, we implicitly manipulated human subjects’
+prior expectations about visual motion stimuli, and probed the
+effects on both perception and representations in visual cortex.
+We used functional magnetic resonance imaging (fMRI), in con-
+junction with a forward modeling approach, to reconstruct the
+motion direction of the perceived stimuli from signals in visual
+cortex. To preview, our results show that top-down expectation
+
+16276 • J. Neurosci., October 9, 2013 • 33(41):16275–16284
+
+Kok et al. • Expectation Biases Sensory Representations
+
+distribution. The RDPs always had one of five possible directions of
+coherent motion: 10, 27.5, 45, 62.5, or 80° (where 0° corresponds to
+rightward and 90° corresponds to upward motion; Fig. 1B). The discrete
+nature of the possible motion directions was unknown to the subjects,
+who were informed that the predominant motion direction would al-
+ways be in the upper right quadrant, i.e., between 0 and 90°. Prior expec-
+tations about the motion direction were implicitly induced by the
+auditory cue, which had a probabilistic relationship with the distribution
+from which the stimulus would be drawn. More specifically, there were
+two tones that each predicted one of the intermediate motion directions
+(27.5 or 62.5°) with 60% probability. For example, if the auditory cue was
+a low (high) tone, the RDP was 60% likely to have a 27.5° (62.5°) motion
+direction (Fig. 1C). The four other (nonpredicted) directions were each
+10% likely to occur. The relationship between pitch (low/high) and pre-
+dicted direction (27.5/62.5°) was counterbalanced across subjects. Sub-
+jects were not informed about the relationship between the auditory cue
+and the visual stimulus. After the experiment, subjects were requested to
+fill out a questionnaire regarding the relationship between the tones and
+the moving dots. The exact question posed to them was as follows: “Did
+you notice any relationship between the tones you heard and the direc-
+tions of motion you saw? If so, please describe the relationship you ob-
+served in the text box below. You can also use the circle to illustrate your
+answer. You can draw more than one arrow.” Underneath the question,
+they were given the options “Yes/No,” a text box to describe the relation-
+ship they suspected (if any), and a circle into which they could draw
+arrows indicating the directions of motion related to the tones. Out of 23
+included subjects, only one suspected the true relationship between the
+tones and the moving dots. One other subject suspected the exact oppo-
+site of the true relationship, i.e., low tone predicts rightward and high
+tone predicts upward, whereas the opposite was true. Three subjects
+suspected a relationship between just one of the two tones and a certain
+direction of motion, of which only one subject reported the true relation-
+ship. The remaining 18 subjects reported suspecting no relationship be-
+tween the tones and the moving dots. Together, this underlines the
+implicit nature of the expectation manipulation.
+
+To familiarize subjects with the task and to establish implicit learning
+of the predictive relationship between the auditory cues and visual stim-
+uli, subjects participated in a behavioral session outside the scanner 1 d
+before the fMRI session. During this training session, participants per-
+formed 12 blocks of 40 trials of the task. The percentage of coherently
+moving dots was varied pseudorandomly from trial to trial, and could be
+10, 20, or 30%.
+
+During the fMRI session, only one coherence level was used, deter-
+mined on the basis of subjects’ performance in the training session. Spe-
+cifically, we chose the coherence level that resulted in a mean absolute
+error of ⬃15° during the training session. This number was chosen arbi-
+trarily, to approximately equate task difficulty across subjects. In the
+scanner, each subject performed three runs of the task, with each run
+containing three blocks of 40 trials, yielding a total of 360 trials. Addi-
+tionally, all subjects participated in a localizer run, consisting of RDPs
+with the same overall properties as those presented during the experi-
+ment, except that coherence was set to 100%, and seven motion direc-
+tions were presented in pseudorandom order for a duration of 12 s each.
+The motion directions were ⫺7.5, 10, 27.5, 45, 62.5, 80, and 97.5°. The
+localizer consisted of 12 blocks of seven motion directions and one blank
+fixation screen (12 s) each, resulting in 84 stimulus trials and 12 fixation
+screens. Throughout the localizer, a (white) fixation cross was presented.
+This fixation cross dimmed at random moments, and subjects were re-
+quired to press a button at these events, to ensure central fixation. Finally,
+subjects engaged in a retinotopic mapping run, in which they viewed a
+wedge, consisting of a contrast-reversing black-and-white checkerboard
+pattern (3 Hz), first rotating clockwise for nine cycles and then anticlock-
+wise for another nine cycles (at a rotation speed of 23.4 s/cycle; run
+duration was ⬃8 min). Again, to ensure central fixation, subjects were
+required to press a button when they detected a dimming of the fixation
+cross.
+
+Eye-movement recording. To verify that subjects maintained fixation
+on the central fixation point throughout the trial, we monitored subjects’
+eye movements using an infrared eye-tracking system in the scanner
+
+Figure 1.
+Experimental paradigm. A, Each trial started with an auditory cue that was fol-
+lowed by a visual RDP stimulus. Subjects were asked to report the predominant motion direc-
+tion in the subsequent RDP stimulus on a continuous scale, by positioning a line segment in a
+360°circle.B,TheRDPshadoneoffivepossibledirectionsofcoherentmotion:10,27.5,45,62.5,
+or 80°, with 0° being rightward motion and 90° upward motion. C, The auditory cue had a
+probabilistic relationship with the distribution from which the stimulus would be drawn. For
+example, if the auditory cue was a low (high) tone, the RDP was 60% likely to have a 27.5°
+(62.5°) motion direction. The four other (nonpredicted) directions were each 10% likely to
+occur. The relationship between pitch (low/high) and predicted direction (27.5/62.5°) was
+counterbalanced across subjects.
+
+biases representations in visual cortex, demonstrating that the
+integration of prior information and sensory input is reflected
+already at the earliest stages of sensory processing.
+
+Materials and Methods
+Subjects. Twenty-four healthy right-handed individuals (16 female, age
+23 ⫾ 3 years, mean ⫾ SD) with normal or corrected-to-normal vision
+gave written informed consent to participate in this study, in accordance
+with the institutional guidelines of the local ethics committee (Commis-
+sie Mensgebonden Onderzoek region Arnhem-Nijmegen, The Nether-
+lands). Data from one subject were excluded due to excessive head
+movement (⬎5 mm).
+
+Stimuli. Visual stimuli consisted of random dot motion patterns
+(RDPs), displayed in an annulus (outer diameter, 15° visual angle; inner
+diameter, 3°) surrounding a white fixation cross (0.3°, 327.0 cd/m 2) for a
+duration of 1 s. The RDPs consisted of 0.1° white (327.0 cd/m 2) dots (2.5
+dots per square degree) on a dark-gray background (15.5 cd/m 2; Weber
+contrast, 20.1). Within each RDP, there was a proportion of coherently
+moving dots, while the remaining dots were each assigned a random
+motion direction. Both coherent and random dots moved at a speed of
+6°/s and had a lifetime of 200 ms. The stimuli were generated and pre-
+sented using Matlab (MathWorks) in conjunction with the Psychophys-
+ics Toolbox (Brainard, 1997), and displayed on a rear-projection screen
+using an EIKI projector (1024 ⫻ 768 resolution, 60 Hz refresh rate).
+Auditory cues consisted of pure tones (450 or 1000 Hz) with a duration of
+200 ms, and were presented over MR-compatible earphones. During the
+behavioral training session, visual stimuli were presented on an LCD
+monitor (1024 ⫻ 768 resolution, 60 Hz refresh rate) and tones were
+presented over external speakers.
+
+Experimental design. Each trial started with an auditory cue followed
+by a visual RDP stimulus [cue-stimulus stimulus-onset asynchrony
+(SOA), 750 ms]. Subjects were told that they could ignore the auditory
+tone and that they had to report the predominant motion direction in the
+subsequent RDP stimulus on a continuous scale by positioning a line
+segment in a 360° circle (Fig. 1A) using two buttons of an MR-compatible
+button box to rotate the line clockwise or anticlockwise. The initial di-
+rection of the line segment was randomized between ⫺45° and 135°. The
+stimulus–response interval was jittered between 1000 and 2000 ms, and
+the intertrial interval was jittered between 2250 and 4250 ms (yielding an
+RDP SOA of 8 –11 s). The jittered intervals were drawn from a uniform
+
+

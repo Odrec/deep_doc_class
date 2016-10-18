@@ -1,0 +1,38 @@
+Table of Contents
+
+Matlab Homework 5 ............................................................................................................  1
+1. Load the file inputs.mat and have a look at its variables .........................................................  1
+2. Building the network ........................................................................................................ 2
+3. Training the network ........................................................................................................  2
+4.  Analysis  .........................................................................................................................   4
+
+Matlab Homework 5
+
+worked on by: Corinna Kuehnapfel (956796) Benjamin Uhl (951381) Amir Sibahi (959151) Sebastian
+Blum (950549)
+
+clear all; close all; clc;
+
+1. Load the file inputs.mat and have a look at
+its variables
+
+load inputs.mat
+
+H = reshape(Inputs(1,:),7,7);
+A = reshape(Inputs(2,:),7,7);
+I = reshape(Inputs(3,:),7,7);
+J = reshape(Inputs(4,:),7,7);
+
+figure
+subplot(2,2,1)
+imagesc(H)
+subplot(2,2,2)
+imagesc(A)
+subplot(2,2,3)
+imagesc(I)
+subplot(2,2,4)
+imagesc(J)
+
+1
+
+

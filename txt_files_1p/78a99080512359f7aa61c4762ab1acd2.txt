@@ -1,0 +1,112 @@
+Dr. Timo Gnambs 
+
+Universität Osnabrück 
+
+WS 2014/15 
+
+Übung »Skalieren, Testen und Entscheiden« 
+
+Lösungen zu Aufgabenblatt 5 
+
+ 
+
+ 
+
+Der R-Code für alle Aufgaben findet sich in der Datei „Lösungen zu Aufgabenblatt 5.R“. 
+
+Aufgabe 
+
+1 
+
+ 
+
+(a)  Welche Modellparameter weisen Response Error / Latent Distance Modelle auf? 
+
+(b) Wie lautet die Itemfunktion derartiger Modelle? (Versuchen Sie das formale Messmodell zu 
+
+formulieren) 
+
+ 
+
+Lösung 
+
+1 
+
+ 
+
+(a)  Response Error / Latent Distance Modelle weisen im Vergleich zu Guttman-Modellen zwei 
+
+zusätzliche Parameter auf: Ratewahrscheinlichkeit γi und Irrtumswahrscheinlichkeit βi. Dies 
+
+führt dazu, dass die Lösungswahrscheinlichkeit unterhalb der Sprungstelle nicht exakt gleich 
+
+0 
+
+ist  sondern  die  Konstante  γi  (Ratewahrscheinlichkeit)  aufweist.  Zudem 
+
+ist  die 
+
+Lösungswahrscheinlichkeit  oberhalb  der  Sprungstelle  nicht  gleich  1  sondern  um  βi 
+
+(Irrtumswahrscheinlichkeit)  geringer.  Response  Error  (Latent  Distance)  Modelle  weisen 
+
+somit  vier  Modellparameter  auf:  die  Personenfähigkeit  θ,  die  Itemschwierigkeit  σ,  die 
+
+Ratewahrscheinlichkeit γ, und die Irrtumswahrscheinlichkeit β. 
+
+(b) Die Itemfunktion lautet (vgl. dazu auch Aufgabe 4 in Aufgabenblatt 3): 
+
+p X
+
+(
+
+)
+
+vi
+
+γ
+
+wenn 
+
+
+= 
+1 β wenn 
+
+
+−
+
+i
+
+i
+
+θ σ
+i
+
+≤
+
+v
+
+θ σ
+i
+
+>
+
+v
+
+ 
+
+mit Xvi = Antwort der Person v auf Item i, θv = Fähigkeit Person v, σi = Schwierigkeit von 
+
+Item  i,  γi  =  Ratewahrscheinlichkeit  bei  Item  i,  und  βi  =  Irrtumswahrscheinlichkeit  bei 
+
+Item i 
+
+ 
+
+ 
+
+ 
+
+- 1 - 
+
+

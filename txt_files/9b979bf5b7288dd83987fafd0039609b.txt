@@ -1,0 +1,41 @@
+Algorithmen und Datenstrukturen 
+
+ 
+
+Linienvereinfachung 
+
+ 
+
+ 
+
+ 
+
+Martin Kada 
+
+Universität Osnabrück 
+
+Institut für Geoinformatik und Fernerkundung 
+
+1 
+
+Was bedeutet Linienvereinfachung? 
+
+ Eine Linie besteht aus Anfangs- und Endpunkt und beliebig vielen 
+
+Zwischenpunkten 
+
+Zwischenpunkte 
+
+Endpunkt 
+
+Anfangspunkt 
+
+ Die Linienvereinfachung entfernt nicht benötigte Zwischenpunkte 
+
+ Algorithmen zur Linienvereinfachung unterscheiden sich (hauptsächlich) 
+
+in den Kriterien, nach denen sie nicht benötigte Punkte identifizieren 
+
+2 
+
+

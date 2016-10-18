@@ -1,0 +1,56 @@
+PMPC Tutorial Sheet 2
+
+1. What is the sample space in roulette? What is the event space in roulette?
+How many possible events are there? What is the diﬀerence between
+betting $18 on the even numbers and betting $1 on each even number?
+How does the bank make money?
+
+2. The following expression is a useful variant of Bayes’ rule:
+
+P (A | B)
+
+P (not A | B)
+
+=
+
+P (B | A)
+
+P (B | not A)
+
+· P (A)
+P (not A)
+
+.
+
+The left-hand side are the posterior odds that A is true. The ﬁrst term
+on the right-hand side is called the likelihood ratio; the second term are
+the prior odds. Convince yourself that it is correct.
+
+3. In a famous series of studies Daniel Kahneman and Amos Tversky exam-
+ined judgements under uncertainty. In one of their experiments partici-
+pants were given the following judgement task [4]:
+A cab was involved in a hit and run accident at night. Two cab companies,
+the Green and the Blue, operate in the city. You are given the following
+data:
+(a) 85% of the cabs in the city are Green and 15% are Blue
+(b) a witness identiﬁed the cab as Blue. The court tested the reliability
+of the witness under the same circumstances that existed on the night of
+the accident and concluded that the witness correctly identiﬁed each one
+of the two colors 80% of the time and failed 20% of the time. What is
+the probability that the cab involved in the accident was Blue rather than
+Green?
+A large number of subjects were tested and the mode and the median of
+the answers is 80%. What is the correct answer? What is going wrong?
+
+4. Is medical screening sensible [1, 2]? To diagnose colorectal cancer the
+hemocult test is conducted to detect occult in the stool. For symptom-free
+people over 50 years old who participate in screening using the hemocult
+test the following information is available:
+Thirty out of 10,000 people have colorectal cancer. Of these 30 people
+with the cancer, 15 will have a positive test result (The hemocult test
+is not very sensitive, its hit-rate is only 50%). Of the remaining 9,970
+people without the cancer, 300 will still have a positive hemocult test (the
+
+1
+
+

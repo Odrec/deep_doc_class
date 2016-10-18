@@ -1,0 +1,59 @@
+Prozessorientierte  
+Informationssysteme 
+
+ 
+
+Lehrveranstaltung 
+
+an der Universität Osnabrück,  
+
+Wintersemester 2014/15 
+
+Dozenten: Dr. Michael Fellmann (Vorlesung), 
+
+Christina Niemöller, M. Sc., Dirk Metzger, M. Sc. with honors (Übung) 
+
+Fachgebiet Informationsmanagement und Wirtschaftsinformatik 
+
+ 
+ 
+
+  
+
+Prof. Dr. Oliver Thomas 
+
+ 
+
+Universität Osnabrück 
+
+ 
+
+Agenda 
+
+Semantische Prozessmodellierung mit BPMN 2.0  
+
+– Historie und Charakterisierung von BPMN 
+
+– Basiskonstrukte für einfache Modelle 
+
+– Verfeinerung der Basiskonstrukte 
+
+– Erweiterte Ereignisbehandlung und Fehlermanagement  
+
+– Kollaboration, Choreographie und Konversation 
+
+– Weiterführendes: Metamodell und Abbildung auf BPEL 
+
+ 
+
+ 
+
+Hinweis: Alle Beispielabbildungen in dieser Präsentation sind bis auf gekennzeichnete Ausnahmen der BPMN-Spezifikation 
+entnommen (Dokument-ID: formal/2011-01-03), die unter http://www.omg.org/spec/BPMN/2.0/ eingesehen werden kann. 
+Als Quellenangabe wird lediglich die Abbildungs- oder Tabellennummer aus der BPMN-Spezifikation verwendet.  
+
+ProzIS 14/15 | Michael Fellmann 
+
+2  
+
+

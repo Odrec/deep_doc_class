@@ -1,0 +1,284 @@
+11560 • The Journal of Neuroscience, September 16, 2009 • 29(37):11560 –11571
+
+Behavioral/Systems/Cognitive
+
+Decisions in Changing Conditions: The Urgency-Gating
+Model
+
+Paul Cisek, Genevie`ve Aude Puskas, and Stephany El-Murr
+Groupe de Recherche sur le Syste`me Nerveux Central, De´partement de Physiologie, Universite´ de Montre´al, Montre´al, Que´bec H3C 3J7, Canada
+
+Several widely accepted models of decision making suggest that, during simple decision tasks, neural activity builds up until a threshold
+is reached and a decision is made. These models explain error rates and reaction time distributions in a variety of tasks and are supported
+by neurophysiological studies showing that neural activity in several cortical and subcortical regions gradually builds up at a rate related
+to task difficulty and reaches a relatively constant level of discharge at a time that predicts movement initiation. The mechanism
+responsible for this buildup is believed to be related to the temporal integration of sequential samples of sensory information. However,
+an alternative mechanism that may explain the neural and behavioral data is one in which the buildup of activity is instead attributable
+to a growing signal related to the urgency to respond, which multiplicatively modulates updated estimates of sensory evidence. These
+models are difficult to distinguish when, as in previous studies, subjects are presented with constant sensory evidence throughout each
+trial. To distinguish the models, we presented human subjects with a task in which evidence changed over the course of each trial. Our
+results are more consistent with “urgency gating” than with temporal integration of sensory samples and suggest a simple mechanism for
+implementing trade-offs between the speed and accuracy of decisions.
+
+Introduction
+Research into the temporal aspects of decision making has pro-
+vided support for a class of theories that may be called “se-
+quential sampling,” or “bounded integrator” models (Stone,
+1960; Laming, 1968; Ratcliff, 1978; Carpenter and Williams,
+1995; Usher and McClelland, 2001; Wang, 2002; Mazurek et al.,
+2003; Reddi et al., 2003; Smith and Ratcliff, 2004; Wong and
+Wang, 2006; Bogacz and Gurney, 2007; Grossberg and Pilly,
+2008). According to these models, simple decisions involve the
+sequential sampling of the sensory stimulus and temporally inte-
+grating the information present in that stimulus until a threshold
+(or “bound”) is reached, at which point the decision is taken (see
+Fig. 1A). The rate of this integration is related to the quality of
+information present in the stimulus in favor of a given choice,
+and the threshold is related to motivational factors such as payoff,
+risk, and urgency (Reddi and Carpenter, 2000). Several variations
+of bounded integrator models exist, and they offer a remarkably
+successful account of behavior in simple decision tasks. In partic-
+ular, assuming that the rate of integration is subject to variability,
+these models can explain error rates and distributions of reaction
+times (RTs) in a wide variety of tasks (Ratcliff, 1978; Carpenter
+and Williams, 1995; Reddi and Carpenter, 2000; Reddi et al.,
+2003; Smith and Ratcliff, 2004). Furthermore, recent neurophys-
+
+Received April 15, 2009; revised June 30, 2009; accepted July 20, 2009.
+
+This study was supported by the Natural Sciences and Engineering Research Council of Canada, the EJLB Foun-
+dation, the Faculty of Medicine summer student program (Universite´ de Montre´al), and an infrastructure grant from
+Fonds de la Recherche en Sante´ du Que´bec. We thank Drs. Yoshua Bengio, Andrea Green, John Kalaska, Galen
+Pickard, and David Thura, and two anonymous reviewers for helpful comments on this work.
+
+Correspondence should be addressed to Dr. Paul Cisek, De´partement de Physiologie, Universite´ de Montre´al, C.P.
+
+6128 Succursale Centre-ville, Montre´al, QC H3C 3J7, Canada. E-mail: paul.cisek@umontreal.ca.
+
+DOI:10.1523/JNEUROSCI.1844-09.2009
+Copyright © 2009 Society for Neuroscience
+
+0270-6474/09/2911560-12$15.00/0
+
+iological data on decision tasks have provided evidence for accu-
+mulation processes in the superior colliculus (Munoz and Wurtz,
+1995; Munoz et al., 2000; Ratcliff et al., 2003, 2007; Shen and Pare´,
+2007), the lateral intraparietal area (LIP) (Roitman and Shadlen,
+2002; Leon and Shadlen, 2003), the frontal eye fields (Gold and
+Shadlen, 2000, 2003), and the prefrontal cortex (Kim and
+Shadlen, 1999). Finally, integration of samples toward a bound is
+reminiscent of the “sequential probability ratio test” (SPRT)
+(Wald, 1945; Bogacz et al., 2006), an optimal procedure for mak-
+ing decisions on the basis of information that arrives over time
+(Wald and Wolfowitz, 1948). Consequently, integrator models
+are now widely accepted as an explanatory mechanism for deci-
+sion making in many simple tasks.
+
+However, in most of the studies supporting integrator models,
+the information presented to subjects varied across trials but was
+constant during the course of each trial. As described below, in
+such conditions one cannot distinguish whether the buildup ob-
+served in neural activity (and inferred from behavioral data) is
+caused by temporal integration of sensory information or by a
+growing signal related to elapsed time. It is therefore conceivable
+that the neural and behavioral data from constant-information
+tasks can be explained by an alternative model, in which neural
+activity is the product of current stimulus information and a
+growing signal related to the urgency for making a choice (see
+Fig. 1 B). Although this model, which we call “urgency gating,”
+behaves very similarly to integrator models in constant-information
+tasks, it proposes a very different mechanism to explain neural
+activity and behavior. To distinguish the models, we presented
+human subjects with a decision task in which the information
+favoring one choice over another changed during each trial.
+Some of these results have previously been presented in abstract
+form (Puskas et al., 2007; Cisek et al., 2008).
+
+Cisek et al. • Decisions in Changing Conditions
+
+J. Neurosci., September 16, 2009 • 29(37):11560 –11571 • 11561
+
+Materials and Methods
+Modeling formalism
+Many variations of integrator models exist, but all may be formalized as
+follows:
+
+xi(t) ⫽ g冕
+
+t
+
+Ei(␶) d␶,
+
+(1)
+
+0
+
+where xi(t) is a putative neural variable corresponding to choice i, g is a
+scalar gain term, and Ei(␶) is some internal estimate of the sensory infor-
+mation, present at time ␶, that constitutes evidence in favor of choice i.
+The variable xi starts at some initial level xi(0) related to the previous
+probability that choice i is correct and grows over time at a rate related to
+the sensory evidence until it hits a threshold T, at which time the subject
+commits to choice i. All integrator models share this basic set of assump-
+tions. Where they differ is on how they define the evidence function Ei(t)
+and on how they determine the time at which the decision is taken (the
+“stopping rule”). For example, “independent race” models (Vickers,
+1970) suggest that there exist separate variables xi(t) for each option, each
+of which independently accumulates an estimate Ei(t) that is computed
+solely on the basis of sensory information in favor of that option. When-
+ever any of these independent processes reaches its threshold, the deci-
+sion is made in favor of the corresponding option. In contrast, the
+“diffusion” model (Stone, 1960; Laming, 1968; Ratcliff, 1978; Ratcliff et
+al., 2003; Smith and Ratcliff, 2004) suggests that there is only a single
+variable x(t), which accumulates E(t), which is defined as the difference
+between sensory evidence for option A over option B. In other words,
+E(t) ⫽ EA(t) ⫺ EB(t). The decision is taken when x(t) either grows above
+a positive threshold ⫹T, selecting option A, or falls below a negative
+threshold ⫺T, selecting option B. Another variant (Shadlen et al., 1996)
+defines separate variables xA(t) and xB(t), each of which integrates inde-
+pendent evidence, and uses a stopping rule based on the difference of
+accumulated totals. Still another variant, called the “leaky competing
+accumulator” model (Usher and McClelland, 2001), proposes separate
+accumulators that mutually inhibit each other. Bogacz et al. (2006)
+showed that, under reasonable parameter choices, most of these models
+(with the exception of the independent race model) are functionally
+equivalent to the diffusion model. Furthermore, the diffusion model is
+formally equivalent to the SPRT and is very effective at reproducing
+human behavior. Below, we consider four variations of integrator mod-
+els, all based on diffusion, using different definitions of what is meant by
+“sensory evidence.”
+
+In addition to integrator models, we consider a different class of mod-
+els, which are similar in that there is also a buildup of neural activity
+toward a threshold, but the buildup is caused by a time-varying gain
+(Ditterich, 2006), not by temporal integration. We call these urgency-
+gating models, which can be expressed as follows:
+
+xi(t) ⫽ g 䡠 Ei(t) 䡠 u(t),
+
+(2)
+
+where u(t) is some function of time that is not related to evidence for any
+particular choice. This model (Fig. 1 B), suggests that neural activity xi(t)
+is the product of the momentary evidence Ei(t) and a signal u(t), which
+reflects the growing urgency to make a response (Ditterich, 2006;
+Churchland et al., 2008). Although this model is very different from the
+integrator models (1), the two can be shown to be mathematically equiv-
+alent in the case of constant evidence tasks, as follows.
+
+First, note that if Ei(t) is not a function of time, then it can be replaced
+by a constant Ei within each trial. Because a constant can be moved
+outside of an integral, Equation 1 can now be rewritten as follows:
+
+xi(t) ⫽ g冕
+
+t
+
+Ei d␶⫽ g 䡠 Ei冕
+
+t
+
+d␶⫽ g 䡠 Ei 䡠 t.
+
+(3)
+
+0
+
+0
+
+Similarly, for the urgency-gating model, we can set Ei(t) to a constant and
+simply set urgency proportional to elapsed time, u(t) ⫽ t, and so Equa-
+tion 2 becomes the following:
+
+xi(t) ⫽ g 䡠 Ei(t) 䡠 u(t) ⫽ g 䡠 Ei 䡠 t.
+
+(4)
+
+A
+
+Stimulus onset
+
+sensory 
+evidence
+B
+sensory
+evidence
+
+urgency
+
+E
+
+∫
+
+D
+
+decision
+
+Stimulus onset
+
+E
+
+u
+
+D
+
+decision
+
+Figure 1.
+Twoalternativemodelsofsimpledecisions.A,Theboundedintegratormodel,inwhich
+sensory information (E) is integrated over time (兰) and compared with a threshold, resulting in a
+decision (D). When evidence is strong (black lines), the buildup of activity in the neural integrator is
+faster and produces a decision earlier in time than when evidence is weaker (gray lines). B, The
+urgency-gating model, in which sensory information is multiplied by a growing signal related to the
+urgencytorespond(u).Theproductofthesetwosignalscausesbuildupofactivitythat,asinA,isfaster
+for strong evidence (black) than for weak evidence (gray).
+
+To summarize, with the assumptions of constant evidence and linear
+urgency growth, the integrator and urgency-gating models are equiva-
+lent. Therefore, for any task that presents subjects with constant evidence
+during each trial, the models make very similar predictions about neural
+activity and behavior. In both, the neural variable grows at a rate propor-
+tional to the subject’s estimate of the strength of evidence, and reaches
+some threshold level of activity at the time the decision is made. In
+Equation 1, the growth is attributable to integration of sensory evidence
+over time (Fig. 1 A). In Equation 2, it is attributable to multiplication of
+momentary evidence by a growing urgency to respond (Fig. 1 B). Because
+both models propose a growth of activity at a rate proportional to evi-
+dence, both make similar predictions about how sensory evidence influ-
+ences neural activity, error rates, and reaction time distributions.
+
+The above derivation of Equation 3 does not address the issue of noise.
+However, it is clear that noise exists in the sensory signal as well as in the
+internal processes of sensory transduction and computation of decision
+variables. The presence of noise is one reason why temporal integration is
+seen as essential for decision making. However, it is not the only option.
+A low-pass filter can also deal with noise, without necessarily retaining all
+properties of pure integration such as a long-lasting memory of past
+states. Therefore, we propose that the estimate of momentary evidence
+[Ei(t)] in the urgency-gating model is low-pass filtered before it is mul-
+tiplied by the urgency signal.
+
+In the context of the comparison between temporal integration and
+urgency gating, it is useful to distinguish two kinds of noise in the deci-
+sion process: (1) intratrial variability in Ei(t), which is attributable to
+moment-to-moment neural activity fluctuations; and (2) intertrial vari-
+ability in Ei, attributable to variations in levels of arousal, attention, etc.,
+which are different from trial to trial but are relatively constant over the
+course of each trial. Analyses of reaction time distributions using “recip-
+robit plots” (Carpenter and Williams, 1995) suggest that the primary
+cause of variability in reaction times is intertrial variability (differences in
+arousal/attention) and that intratrial noise does not have a major impact
+at the behavioral level. This makes sense because during each trial, the
+brain can average across the uncorrelated activity fluctuations of many
+thousands of neurons (Shadlen et al., 1996), but it cannot average over
+changes in underlying baselines that vary between trials. Clearly, the
+presence of intertrial noise in Ei does not affect the derivation of Equation
+3 and affects both kinds of models identically. That is not the case for
+intratrial noise, which results in a time-dependent noise distribution in
+Equation 3 but a time-independent distribution in Equation 4. Never-
+theless, we conjecture that, if intratrial noise is relatively weak (as sug-
+gested by reciprobit plot analyses), and reaction times are relatively short,
+then this difference will be too subtle to distinguish in data from exper-
+iments that used constant-evidence tasks.
+
+

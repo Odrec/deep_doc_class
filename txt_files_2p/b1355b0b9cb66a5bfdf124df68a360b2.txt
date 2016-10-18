@@ -1,0 +1,39 @@
+ 
+
+ 
+
+Elemente der Diskreten 
+Mathematik
+
+Vorlesung Wintersemester 2014/15
+
+Heinz Spindler
+
+2 | Elemente der diskreten Mathematik
+
+1
+
+Elementare Kombinatorik
+
+1 Endliche Mengen
+
+1.1 Etwas Mengenlehre
+Georg Cantor (1845-1918) hat die folgende bekannte Definition für Mengen gegeben. 
+„Unter  einer  ‚Menge(cid:1)  verstehen  wir  jede  Zusammenfassung  M  von  bestimmten
+wohlunterschiedenen  Objekten  m  unserer  Anschauung  oder  unseres  Denkens  (welche  die
+‚Elemente(cid:1) von M genannt werden) zu einem Ganzen.(cid:2)
+Wichtig ist  die  Elementrelation  (cid:1).  Ist  X  eine  Menge  und  x  ein  Objekt  (Ding,  Symbol,  ...)  so
+bedeutet x (cid:3) X , dass x ein Element der Menge X  ist.
+Ebenso  wichtig  ist  die  Teilmengenrelation  (cid:2).  Sind  X , Y  Mengen,  so  ist  Y (cid:4) X  (also  Y
+Teilmenge von X ), wenn alle Elemente von Y  auch Elemente von X  sind. 
+
+Mengen  werden  durch  Auflisten  aller  Elemente  oder  durch  definierende  Eigenschaften
+beschrieben
+
+1.1.1 Beispiele
+1)  X (cid:5) (cid:6)a, b, c, d(cid:7)  ist  die  Menge  mit  den  Elementen  a, b, c, d,  die  hier  als  verschiedene
+Symbole zu betrachten sind. Es gilt also zum Beispiel a (cid:3) X . Da das Symbol x von a, b, c, d
+verschieden ist, ist x kein Element von X  und wir schreiben deshalb x (cid:8) X . 
+2)  X (cid:5) x x ist reelle Zahl und x2 (cid:5) 2  kann  man  auch  leicht  durch  Aufzählung  aller  Elemente
+
+

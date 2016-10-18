@@ -1,0 +1,80 @@
+Reitzner/B¨ottger/Mohammadi/Sieg
+
+26. November 2014
+
+Mathematik f¨ur Anwender I
+
+¨Ubungsblatt 7
+
+Abgabe: 08.12.2014, bis 10:00 Uhr
+
+23. Sei I = [a,b] ⊂ R ein Intervall und f : I → R eine stetige Funktion. Wir sagen, dass f in
+x0 ∈ I ein lokales Minmum beziehungsweise Maximum besitzt, falls ein δ > 0 existiert,
+sodass f (x) ≥ f (x0) beziehungsweise f (x) ≤ f (x0) f¨ur alle x ∈ I mit |x− x0| < δ .
+Nun sei kein x0 ∈]a,b[ ein lokales Minimum oder Maximum von f . Zeigen Sie mit Hilfe
+des Satzes ¨uber Minimum und Maximum, dass dann f monoton fallend oder wachsend sein
+muss.
+
+24. Untersuchen Sie folgende Abbildungen auf Injektivit¨at und geben Sie die jeweilige Um-
+
+kehrabbildung an, falls dies m¨oglich ist.
+x (cid:55)→ x2 + 2x + 2,
+(1) f1 : [−1,∞[→ R,
+(2) f2 : [0,π] → R,
+x (cid:55)→ sin(x) + cos(x),
+x (cid:55)→ x2−5x+6
+(3) f3 :]− 1,∞[→ R,
+x2−2x−3.
+
+25.
+
+(1) Zeigen Sie, dass die Ungleichung
+
+ln(x) + ln(y)
+
+(cid:16)x + y
+
+(cid:17)
+
+2
+
+≤ ln
+
+2
+
+(2) L¨osen Sie die folgenden Gleichungen in R:
+
+f¨ur alle x,y > 0 gilt.
+(a) 92x = 813−2x,
+3√
+74(x−3)) = 8ln(2).
+(b) 8ln(14) + ln(
+
+26.
+
+(1) Zeigen Sie, dass f¨ur alle x,y ∈ R, f¨ur die tanx, tany, tan(x + y) deﬁniert sind, gilt:
+
+tan(x + y) =
+
+tan(x) + tan(y)
+1− tan(x)tan(y)
+
+.
+
+(2) Berechnen Sie die exakten Werte von sin und cos an den Stellen
+
+π
+3
+mit Hilfe der Additionstheoreme.
+
+π
+4
+
+,
+
+und
+
+π
+6
+
+

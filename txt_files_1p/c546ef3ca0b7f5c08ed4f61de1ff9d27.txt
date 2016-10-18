@@ -1,0 +1,94 @@
+Jörg Klasmeier, Alexander Ahring
+14.01.2015
+
+Abgabe bis spätestens Mi, 28.01.2015
+in der Übung oder an aahring@uos.de
+
+Umweltsystemanalyse WS14/15 - Übungsblatt 6
+
+Aufgabe 1 (10 Punkte)
+
+Der Biokonzentrationsfaktor BCF dient zur Abschätzung der Anreicherung von Schadstof-
+fen in der Nahrungskette. Er gibt das Verhältnis der Gleichgewichtskonzentrationen in dem
+betre(cid:29)enden Organismus (hier: Fisch) und dem Aufnahmemedium (hier: Wasser) an. Zur
+Messung des Biokonzentrationsfaktors Fisch verwendet man häu(cid:27)g ein Durch(cid:30)uss-System
+mit (weitgehend) konstanter Konzentration im Wasser. In einem solchen System (Volumen:
+50 l) wurde die Anreicherung der Substanz X in Fischen der Art Y (Aufnahme und Abgabe)
+untersucht. Eine Beschreibung des Experimentes sowie die erhaltenen Messdaten sind im
+Folgenden gegeben.
+
+Versuch 1: Schadsto(cid:29)abgabe (Clearance) aus belasteten Fischen
+
+Etwa 20 Fische werden drei Wochen lang in einem Aquarium (geschlossenes System) mit
+kontaminiertem Wasser gehalten bis sich thermodynamisches Gleichgewicht einstellt. An-
+schließend werden die Fische in ein Durch(cid:30)uss- System mit schadsto(cid:29)freiem Wasser (CW =
+0 mg/l) eingesetzt. Die Startkonzentration in den Fischen wird analytisch ermittelt und die
+Konzentrationsabnahme in den Fischen beobachtet.
+
+Ergebnisse (Konz. Fisch ist der Mittelwert der 2 Bestimmungen):
+
+Zeitpunkt [d]
+Konzentration Fisch [mg/kg]
+
+0
+8,8
+
+1
+8,5
+
+2
+8,3
+
+3
+7,9
+
+4
+7,6
+
+8
+6,9
+
+12
+6,2
+
+16
+5,4
+
+20
+4,9
+
+Versuch 2: Schadsto(cid:29)aufnahme im Durch(cid:30)uss-System
+
+Mehrere unbelastete Fische (CF (0) = 0 mg/kg) mit einem durchschnittlichen Gewicht von
+100 g werden in ein Durch(cid:30)uss-System mit kontaminiertem Wasser eingesetzt. Die Sub-
+stanzkonzentration CW (t) im Wasser wird während des Versuchs konstant gehalten bei
+CW = 1 mg/l. Zu bestimmten Zeitpunkten werden jeweils zwei Fische getötet und ana-
+lytisch die Schadsto(cid:29)konzentration CF (t) in den Fischen ermittelt.
+Ergebnisse (Konzentration Fisch ist der Mittelwert der 2 Bestimmungen):
+8
+6,9
+
+Zeitpunkt [d]
+Konzentration Fisch [mg/kg]
+
+0,5
+0,1
+
+4
+4,7
+
+1
+0,6
+
+2
+1,2
+
+3
+2,4
+
+12
+9,2
+
+1
+
+

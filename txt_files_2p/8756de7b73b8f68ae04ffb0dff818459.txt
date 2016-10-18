@@ -1,0 +1,176 @@
+ 
+ 
+ 
+
+GM-MB1 16, VERSUCH 3, KURS ___, GRUPPE ____ 
+
+  
+
+1.  FORMELLE ASPEKTE GESAMTPROTOKOLL UND TEXT 
+
+☐  Gliederung fehlt/unklar (Einführung/Zielsetzung, Methode/Durchführung, Ergebnisse, 
+
+Diskussion/Fehlerbetrachtung, ggf. Literatur) 
+
+☐  Seitenzahlen fehlen 
+☐  Wissenschaftliche Ausdrucksweise anpassen, Umgangssprache vermeiden, siehe Markierung 
+☐  Korrekte Schreibweise von Speziesbezeichnungen, Gen- und Proteinbezeichnungen beachten  
+☐  Allg. Rechtschreibung, siehe Markierung 
+☐  Einheit der Verdopplungszeit oder der spez. Wachstumskonstante fehlt 
+☐  _____________________________________________________________________________ 
+
+2.  FORMELLE ASPEKTE ABBILDUNGEN, LEGENDEN UND TABELLEN 
+
+☐  Nummerierung von Abb. und Tabellen fehlt 
+☐  Bezug zu Abb. und Tabellen fehlt im Text 
+☐  Legende zu Abb._______________________________ fehlt 
+☐  Legende zu Abb._______________________________ unvollständig, s.u. 
+☐  Tabellentitel fehlt, Tabelle________________________. 
+☐  Tabellenanmerkungen in Fußnoten, Tabelle________________________ 
+☐  Achsenbeschriftungen fehlen, Abb, ________________ 
+☐  Achsenbeschriftungen inkorrekt, Abb.________________ 
+☐  _____________________________________________________________________________ 
+☐  _____________________________________________________________________________ 
+
+3.  INHALTLICHE ASPEKTE 
+
+Interpretation der Ergebnisse unvollständig/fehlend 
+
+☐  Einführung unvollständig/Zielsetzung nicht vermittelt 
+☐  Darstellung Ergebnisse unvollständig 
+☐ 
+☐  Diskussion unvollständig/fehlend 
+☐  Fehlerbetrachtung unvollständig/fehlend 
+☐  Beantwortung der weiterführenden Fragen fehlt oder inkorrekt: 
+☐  Wissenschaftlicher Hintergrund fehlt oder mangelhaft 
+☐  Berechnungen nicht nachvollziehbar, Original Werte nicht angegeben 
+
+4.  SONSTIGE PUNKTE 
+
+☐  ______________________________________________________________________________ 
+☐  ______________________________________________________________________________ 
+☐  Detailliert und vollständig 
+ 
+
+☐  Korrekturen zur Kenntnisnahme, keine Überarbeitung nötig 
+☐  Überarbeitung mit Korrektur erforderlich 
+
+UniversItät Osnabrück, Abteilung Mikrobiologie, Grundmodul 2016 Kurs: A  Gruppe: 5 
+
+Name, Vorname: Arnhölter, Laura   
+
+Name, Vorname: Fritze, Neele 
+
+ 
+
+ 
+
+ 
+
+Matrikelnummer: 951775 
+
+Matrikelnummer: 950811 
+
+Versuch 3 
+
+Parameter des bakteriellen Wachstums 
+
+Einführung 
+Das  klassische  Beispiel  für  exponentielle  Wachstumsprozesse  ist  das  Wachstum  einer 
+Bakterienkultur.  Ziel  des  Versuches  ist  die  Bestimmung  des  Wachstums  einer  Bakterienkultur 
+aus E. coli unter Laborbedingungen mittels fester Messintervalle von 30 Minuten. Die gewonnen 
+optischen Dichten werden mit den primären Daten der  Lebendzellzahl und der Gesamtzellzahl 
+verglichen. 
+
+Methoden 
+Unter  den  Bedingungen  eines  Minimalmediums  in  einer  Umgebung  von  37°C  und  aeroben 
+Verhältnissen  wurde  das  Wachstumsverhalten  des  Wildtyps  K12  von  Escherichia  coli 
+untersucht. Die Methodik folgte dem ausgehändigten Skript zum Grundmodul Mikrobiologie – 
+Übungen. 
+ 
+Teilversuch A: Wachstumskurve 
+ 
+Wachstumsbedingung : LB Vollmedium, 30°C, aerob 
+ 
+Zeichnen Sie die Wachstumskurve Ihres Versuches mittels eines semi-logarithmischen 
+Blatt auf, tragen Sie auch die Phasen des bakteriellen Wachstums sowie die 
+Verdopplungszeit ein und geben Sie die Wachstumskonstante an. 
+ 
+Tabelle 1: Messergebnisse der optischen Dichte der wachsenden Bakterienkultur in 
+Zeitintervallen von 30 Minuten 
+
+OD 
+0,062 
+0,061 
+0,063 
+0,067 
+0,1 
+0,131 
+0,178 
+0,261 
+0,381 
+
+OD 
+0,443 
+0,655 
+0,84 
+0,76 
+1,6 
+2,02 
+2,53 
+3,28 
+4,65 
+
+Zeitpunkt 
+T9 
+T10 
+T11 
+T12 
+T13 
+T14 
+T15 
+T16 
+T  24h 
+
+Zeitpunkt 
+T 0 
+T 1 (30min) 
+T2 (60min) 
+T3 (90min) 
+T4 
+T5 
+T6 
+T7 
+T8 
+ 
+Bei  der  Wachstumskurve  (siehe  Anhang)  wird  die  Zellzahl  in  einer  halblogarithymischen 
+Achsenskala  gegen  die  Zeit  aufgetragen.    Aus  der  Steigung  des  Graphen  kann  die  Ver-
+dopplungszeit (td) ermittelt werden. Mittels dieser kann dann rechnerisch die Wachstumsrate  μ 
+in der exponentiellen Phase berechnet werden: 
+Berechnungen: 
+Verdopplungszeit: 
+Wachstumskonstante μ:  
+ 
+ 
+
+td=72 min 
+μ = ln2 /td 
+μ =ln 2 / 72 min 
+μ =9,627*10^9 [1/min] 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+2 
+
+

@@ -1,0 +1,109 @@
+Psychological Review
+2004, Vol. 111, No. 4, 1036 –1060
+
+Copyright 2004 by the American Psychological Association
+0033-295X/04/$12.00 DOI: 10.1037/0033-295X.111.4.1036
+
+An Integrated Theory of the Mind
+
+John R. Anderson and Daniel Bothell
+
+Carnegie Mellon University
+
+Michael D. Byrne
+
+Rice University
+
+Scott Douglass, Christian Lebiere, and Yulin Qin
+
+Carnegie Mellon University
+
+Adaptive control of thought–rational (ACT–R; J. R. Anderson & C. Lebiere, 1998) has evolved into a
+theory that consists of multiple modules but also explains how these modules are integrated to produce
+coherent cognition. The perceptual-motor modules, the goal module, and the declarative memory module
+are presented as examples of specialized systems in ACT–R. These modules are associated with distinct
+cortical regions. These modules place chunks in buffers where they can be detected by a production
+system that responds to patterns of information in the buffers. At any point in time, a single production
+rule is selected to respond to the current pattern. Subsymbolic processes serve to guide the selection of
+rules to fire as well as the internal operations of some modules. Much of learning involves tuning of these
+subsymbolic processes. A number of simple and complex empirical examples are described to illustrate
+how these modules function singly and in concert.
+
+Psychology, like other sciences, has seen an inexorable move-
+ment toward specialization. This is seen in the proliferation of
+specialty journals in the field but also in the proliferation of
+special-topic articles in this journal, which is supposed to serve as
+the place where ideas from psychology meet. Specialization is a
+necessary response to complexity in a field. Along with this move
+to a specialization in topics studied, there has been a parallel move
+toward viewing the mind as consisting of a set of specialized
+components. With varying degrees of consensus and controversy,
+there have been claims for separate mechanisms for processing
+visual objects versus locations (Ungerleider & Miskin, 1982), for
+procedural versus declarative knowledge (Squire, 1987), for lan-
+guage (Fodor, 1983), for arithmetic (Dehaene, Spelke, Pinel, Sta-
+nescu, & Tsivkin, 1999), for categorical knowledge (Warrington &
+Shallice, 1984), and for cheater detection (Cosmides & Tooby,
+2000), to name just a few.
+
+Although there are good reasons for at least some of the pro-
+posals for specialized cognitive modules, there is something un-
+satisfactory about the result—an image of the mind as a discon-
+nected set of mental specialties. One can ask “how is it all put back
+together?” An analogy here can be made to the study of the body.
+Modern biology and medicine have seen a successful movement
+toward specialization, responding to the fact that various body
+
+John R. Anderson, Daniel Bothell, Scott Douglass, and Yulin Qin,
+Psychology Department, Carnegie Mellon University; Michael D. Byrne,
+Psychology Department, Rice University; Christian Lebiere, Human Com-
+puter Interaction Institute, Carnegie Mellon University.
+
+This research was supported by National Aeronautics and Space Ad-
+ministration Grant NCC2-1226 and Office of Naval Research Grant
+N00014-96-01491.
+
+Correspondence concerning this article should be addressed to John R.
+Anderson, Department of Psychology, Carnegie Mellon University, 352
+Baker Hall, Pittsburgh, PA 15213. E-mail: ja@cmu.edu
+
+1036
+
+systems and parts are specialized for their functions. However,
+because the whole body is readily visible, the people who study the
+shoulder have a basic understanding how their specialty relates to
+the specialty of those who study the hand, and the people who
+study the lung have a basic understanding of how their specialty
+relates to the specialty of those who study the heart. Can one say
+the same of the person who studies categorization and the person
+who studies online inference in sentence processing or of the
+person who studies decision making and the person who studies
+motor control?
+
+Newell (1990) argued for cognitive architectures that would
+explain how all the components of the mind worked to produce
+coherent cognition. In his book, he described the Soar system,
+which was his best hypothesis about the architecture. We have
+been working on a cognitive architecture called adaptive control of
+thought–rational (ACT–R; e.g., Anderson & Lebiere, 1998), which
+is our best hypothesis about such an architecture. It has recently
+undergone a major development into a version called ACT–R 5.0,
+and this form offers some new insights into the integration of
+cognition. The goal of this article is to describe how cognition is
+integrated in the ACT–R theory. The quote below gives the es-
+sence of Newell’s argument for an integrated system:
+
+A single system (mind) produces all aspects of behavior. It is one
+mind that minds them all. Even if the mind has parts, modules,
+components, or whatever, they all mesh together to produce behavior.
+Any bit of behavior has causal tendrils that extend back through large
+parts of the total cognitive system before grounding in the environ-
+mental situation of some earlier times. If a theory covers only one part
+or component, it flirts with trouble from the start. It goes without
+saying that there are dissociations, independencies, impenetrabilities,
+and modularities. These all help to break the web of each bit of
+behavior being shaped by an unlimited set of antecedents. So they are
+important to understand and help to make that theory simple enough
+to use. But they don’t remove the necessity of a theory that provides
+
+

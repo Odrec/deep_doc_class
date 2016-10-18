@@ -1,0 +1,91 @@
+Reitzner/B¨ottger/Mohammadi/Sieg
+
+30. Oktober 2014
+
+Mathematik f¨ur Anwender I
+
+¨Ubungsblatt 3
+
+Abgabe: 10.11.2014, bis 10:00 Uhr
+
+9. Zeigen Sie, dass die Aussage aus Satz 3.15 (Q liegt dicht in R)
+
+(1) F¨ur alle x ∈ R und alle ε > 0 existiert ein q ∈ Q mit q ∈]x− ε,x + ε[.
+¨aquivalent zur folgenden Aussage ist:
+(2) F¨ur alle x ∈ R exisitert eine Folge (qn)n∈N in Q mit limn→∞ qn = x.
+Hinweis: Betrachten Sie f¨ur die Hinrichtung ε = 1
+
+n ,n ∈ N,n ≥ 1.
+
+10. Wir betrachten die Fibonacci-Zahlen aus Aufgabe 4 und deﬁnieren die Folge (xn)n≥2 durch
+
+xn :=
+
+Fn
+Fn−1
+
+.
+
+Weiterhin betrachten wir die Funktion h : R\{0} → R, h(x) = 1 + 1
+x .
+(1) Zeigen Sie, dass xn+1 = h(xn) = 1 + 1
+xn
+(2) Bestimmen Sie die Fixpunkte von h(x), das heißt alle x ∈ R mit h(x) = x. Der positive
+Fixpunkt Φ heißt goldener Schnitt. Den negativen Schnittpunkt bezeichnen wir mit Φ.
+
+f¨ur alle n ∈ N,n ≥ 2.
+
+(3) Zeigen Sie, dass (xn)n≥2 gegen Φ konvergiert.
+Hinweis: Sie d¨urfen ohne Beweis benutzen, dass
+
+Fn =
+
+1√
+5
+
+(Φn − Φn
+
+) f¨ur alle n ∈ N,n ≥ 1.
+
+Sollten Sie diese Aussage beweisen gibt es 3 Zusatzpunkte.
+
+11. Untersuchen Sie die Folgen auf Konvergenz und berechnen Sie gegebenfalls den Grenz-
+
+wert.
+(1) an := 9n3−12n2+7n+1
+−3n3+5n2−1 ,
+(2) bn := n4−2n3+n−1
+,
+√
+n4 + 3n2 + 2n−√
+n3−1
+(3) cn :=
+
+n4 + n3 + 1.
+
+12.
+
+(1) Seien (xn)n≥0, (zn)n≥0 konvergente Folgen und
+xn = lim
+n→∞
+
+a = lim
+n→∞
+
+zn.
+
+Sei (yn)n≥0 eine Folge, sodass ein N ∈ N existiert mit xn ≤ yn ≤ zn f¨ur n ≥ N. Zeigen
+Sie, dass auch (yn)n≥0 konvergent ist und es gilt a = limn→∞ yn.
+
+(2) Zeigen Sie, dass
+
+n
+lim
+2n = 0.
+n→∞
+2n ≤ 1
+Hinweis: ¨Uberlegen Sie sich, dass n
+
+n f¨ur n ≥ 4 und wenden Sie (1) an.
+
+

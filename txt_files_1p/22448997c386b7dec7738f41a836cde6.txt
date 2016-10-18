@@ -1,0 +1,43 @@
+Verteilungskoeffizient Boden / Wasser
+Verteilungskoeffizient Boden / Wasser
+
+KBW = q + (e - q) KAW + (1- e) KOC  fOC  r
+
+F / 1000
+
+- Wassergehalt (%, v/v)
+
+- Porenvolumen (%, v/v) 
+
+q
+e
+KAW - Verteilungskoeffizient Luft / Wasser (m³ m-3)
+KOC
+fOC
+r
+
+- Verteilungskoeffizient org. Kohlenstoff / Wasser (L kg-1)
+- Anteil org. Kohlenstoff an der festen Phase (%, w/w)
+- Feststoffdichte (kg/m³)
+
+F
+
+1000 - Umrechnungsfaktor von L auf m³
+
+Anmerkung:  Trapp & Matthies verwenden in der Formel (S. 274) die 
+
+B anstelle der Feststoffdichte r
+
+Lagerungsdichte r
+Es gilt:   r
+
+F (1 - e)   =  r
+
+Umweltsystemanalyse WS 2013/14
+
+F.  
+
+1
+
+B
+

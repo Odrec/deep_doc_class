@@ -1,0 +1,378 @@
+Tutorium: Einführung in die Organisation; SS 2015 
+Prof. Dr. U. Hoppe  
+ 
+
+Aufgabenblatt 12 „Projekte“ 
+ 
+Relevante Grundlagen zur Terminplanung 
+ 
+Netzplantechnik – MPM 
+ 
+
+•  Vorgangsknoten 
+
+V  D(i) 
+
+i 
+FAZ(i)  GP  FEZ(i) 
+SAZ(i)  FP  SEZ(i) 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+      i      = Nr. des Vorgangs 
+      D(i) = Dauer des Vorgangs i 
+      FAZ(i)   = frühester Anfangszeitpunkt von i 
+
+ 
+  
+ 
+          FEZ(i)   = frühester Endzeitpunkt von i 
+
+FAZ(i)  = spätester Anfangszeitpunkt von i 
+SEZ(i)  = spätester Endzeitpunkt von i 
+
+•  Vorwärtsterminierung 
+
+–  FAZ(j) = Max(FEZ(i)) 
+–  FEZ(i) = FAZ(i) + D(i) 
+
+ 
+
+•  Rückwärtsterminierung 
+
+–  SAZ(i) = SEZ(i) – D(i) 
+–  SEZ(i) = Min(SAZ(j)), 
+
+ 
+
+ 
+
+•  gesamte Pufferzeit 
+
+mit j Nachfolger von i 
+
+mit j Nachfolger von i 
+
+–  GP = SAZ(i) – FAZ(i) 
+–  GP = SEZ(i) – FEZ(i) 
+–  beide Formeln müssen das gleiche Ergebnis bringen 
+
+ 
+
+•  unabhängige Pufferzeit (freie Pufferzeit) 
+
+–  UP = min [FAZ(j)] – D(i) – max [SEZ(h)], 
+
+mit j Nachfolger von i und h Vorgänger von i 
+ 
+
+•  Kritischer Pfad 
+
+–  Alle  Vorgänge,  bei  denen  die  früheste  und  späteste  zeitliche  Lage 
+
+übereinstimmen 
+
+–  Verschiebung bedeutet Veränderung des Projektendtermins 
+
+ 
+
+1 
+
+ 
+
+ 
+ 
+
+ 
+
+Tutorium: Einführung in die Organisation; SS 2015 
+Prof. Dr. U. Hoppe  
+ 
+Aufgabe 1: MPM 
+
+ 
+Bestimmen  Sie  für  die  Vorgänge  der  folgenden  Netzpläne  die  gesamte  und  freie 
+
+Pufferzeit,  die 
+
+frühest-  und  spätestmöglichen  Anfangs-  sowie  Endzeitpunkte. 
+
+Kennzeichnen Sie außerdem die kritischen Pfade. 
+
+ 
+
+a) 
+
+A 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+b) 
+ 
+
+A 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+14 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+B 
+
+ 
+
+ 
+
+C 
+
+ 
+
+ 
+
+B 
+
+ 
+
+ 
+
+C 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+5 
+
+ 
+
+ 
+
+8 
+
+ 
+
+ 
+
+D 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+12 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+19 
+
+ 
+
+ 
+
+8 
+
+ 
+
+ 
+
+D 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+5 
+
+ 
+
+ 
+
+E 
+
+ 
+
+ 
+
+F 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+15 
+
+ 
+
+ 
+
+G 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+20 
+
+ 
+
+ 
+
+2 
+
+

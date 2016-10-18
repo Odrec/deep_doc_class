@@ -1,0 +1,116 @@
+Available online at www.sciencedirect.com
+
+Translocated effectors of Yersinia
+Hiroyuki Matsumoto and Glenn M Young
+
+Currently, all known translocated effectors of Yersinia are
+delivered into host cells by type III secretion systems
+(T3SSs). Pathogenic Yersinia maintain the plasmid-encoded
+Ysc T3SS for the speciﬁc delivery of the well-studied Yop
+effectors. New horizons for effector biology have opened with
+the discovery of the Ysps of Y. enterocolitica Biovar 1B, which
+are translocated into host cells by the chromosome-endoded
+Ysa T3SS. The reported arsenal of effectors is likely to expand
+since genomic analysis has revealed gene-clusters in some
+Yersinia that code for other T3SSs. These efforts also revealed
+possible type VI secretion (T6S) systems, which may
+indicate that translocation of effectors occurs by multiple
+mechanisms.
+
+Address
+Department of Food Science and Technology, Robert Mondavi South
+Laboratory Building, University of California, Davis, One Shields Avenue,
+Davis, CA 95616, USA
+
+Corresponding author: Matsumoto, Hiroyuki (hmatsumoto@ucdavis.edu)
+and Young, Glenn M (gmyoung@ucdavis.edu)
+
+Current Opinion in Microbiology 2009, 12:94–100
+
+This review comes from a themed issue on
+Host-microbe interactions: bacteria
+Edited by Brendan Kenny and Raphael Valdivia
+
+1369-5274/$ – see front matter
+# 2009 Elsevier Ltd. All rights reserved.
+
+DOI 10.1016/j.mib.2008.12.005
+
+Introduction
+The genus Yersinia includes three human pathogens.
+The most infamous is the black death agent Y. pestis,
+which causes bubonic plague when it is transmitted by
+the bite of a ﬂea and pneumonic plague when it is
+acquired through aerosol transmission [1]. By contrast,
+Y. enterocolitica and Y. pseudotuberculosis are enteropatho-
+gens transmitted by consumption of contaminated food
+or water [2]. These two organisms cause gastrointestinal
+syndromes that can develop into fatal septicemia in
+patients with compromised or underdeveloped immune
+systems. Regardless of the species and type of disease
+that ensues, translocation of toxic virulence effectors into
+host cells by type III secretion (T3S) systems plays an
+essential role in determining the outcome of a Yersinia
+infection. There are two recognized groups of effector
+proteins delivered by T3SSs among the Yersinia; the Yops
+and the Ysps.
+
+Yop effectors and the innate immune
+response
+Interestingly, despite the various modes of transmission
+and diseases caused by the pathogenic Yersinia, they
+commonly have the plasmid-encoded Ysc T3SS for the
+delivery of six Yop effectors (YopE, YopH, YpkA/YopO,
+YopM, YopJ/P, and YopT) (Table 1). Efforts to determine
+the biochemical activities of the Yops have revealed that
+many targets are cellular components that inﬂuence the
+host innate immune response (Figure 1). This arm of the
+immune system serves as the front line of defense against
+an invasive pathogen [3]. Macrophages and neutrophils
+are important elements of the early innate immune
+response and serve as sentries that take up and then
+inactivate invading bacteria. These cells, which act along
+with other facets of the innate immune response, are
+induced following the recognition of pathogen-associated
+molecular patterns (PAMPS) by the family of pattern-
+recognition receptors (PRRs) located on a variety of cell
+types. In response to PRR agonists or PAMPS, such as
+LPS or ﬂagellin, signals are transduced and converged to
+activate multiple MAPKs and the NF-kB signaling path-
+ways. This inﬂammatory response in turn leads to the
+production of numerous proinﬂammatory cytokines, in-
+cluding TNF-a, IL-12 and IL-18.
+
+Given the important role that the MAPKs and NF-kB
+signaling pathways play in the earliest stages of the
+immune response, it is not surprising that one strategy
+of pathogenic Yersinia is to interfere with these essential
+signaling components [4–6]. It is well established that
+YopJ/P is a potent inhibitor of multiple MAPK and NF-
+kB pathways [7]. Recent studies have clariﬁed the bio-
+chemical nature of YopJ/P activity by revealing that it is
+an enzyme that acetylates serine and threonine residues
+in the activation loop of MKKs and IKKs [8,9,10].
+This modiﬁcation effectively blocks the residues from
+being phosphorylated and results in an inhibition of their
+activation thereby affecting cytokine production and
+inducing apoptosis of macrophages.
+
+Phagocytosis of bacteria requires reorganization of the
+actin cytoskeleton through a process that is regulated by
+Rho family GTPases [11]. YopE is a Rho GTPase-acti-
+vating protein (RhoGAP) that has been shown to stimu-
+late GTP hydrolysis,
+thereby interfering with actin
+depolymerization mediated by the Rho family of proteins
+[12,13]. In addition to GTPase activation, it has been
+shown that membrane anchoring is also required for the
+activation of RhoA, Rac1 and Cdc42. Membrane anchor-
+ing occurs as the result of a post-translational modiﬁcation
+resulting in C-terminal prenylation at a cysteine residue.
+
+Current Opinion in Microbiology 2009, 12:94–100
+
+www.sciencedirect.com
+
+

@@ -1,0 +1,285 @@
+Psychological Review
+2002, Vol. 109, No. 4, 646 – 678
+
+Copyright 2002 by the American Psychological Association, Inc.
+0033-295X/02/$5.00 DOI: 10.1037//0033-295X.109.4.646
+
+Conditionals: A Theory of Meaning, Pragmatics, and Inference
+
+P. N. Johnson-Laird
+
+Princeton University
+
+Ruth M. J. Byrne
+University of Dublin
+
+The authors outline a theory of conditionals of the form If A then C and If A then possibly C. The 2 sorts
+of conditional have separate core meanings that refer to sets of possibilities. Knowledge, pragmatics, and
+semantics can modulate these meanings. Modulation can add information about temporal and other
+relations between antecedent and consequent. It can also prevent the construction of possibilities to
+yield 10 distinct sets of possibilities to which conditionals can refer. The mental representation of a
+conditional normally makes explicit only the possibilities in which its antecedent is true, yielding other
+possibilities implicitly. Reasoners tend to focus on the explicit possibilities. The theory predicts the major
+phenomena of understanding and reasoning with conditionals.
+
+You reason about conditional relations because much of your
+knowledge is conditional. If you get caught speeding, then you pay
+a fine. If you have an operation, then you need time to recuperate.
+If you have money in the bank, then you can cash a check.
+Conditional reasoning is a central part of thinking, yet people do
+not always reason correctly. The lawyer Jan Schlictmann in a
+celebrated trial (see Harr, 1995, pp. 361–362) elicited the follow-
+ing information from an expert witness about the source of a
+chemical pollutant trichloroethylene (TCE):
+
+P. N. Johnson-Laird, Department of Psychology, Princeton University;
+Ruth M. J. Byrne, Department of Psychology, University of Dublin,
+Dublin, Ireland.
+
+This research was made possible in part by a grant to P. N. Johnson-
+Laird from the National Science Foundation (Grant BCS 0076287) to study
+strategies in reasoning. We thank Jon Baron and Ray Nickerson for their
+helpful criticisms of an earlier version of this article. We thank Yingrui
+Yang for providing technical help and advice, Patricia Barres for carrying
+out Experiment 2, Rachel McCloy for carrying out a study of modus
+tollens, Dan Zook for writing a preliminary version of the program for
+pragmatic modulation, and David Over for engaging in many discussions
+of philosophical theories of conditionals. We are also grateful to many
+people: Peter Wason, now in retirement, for pioneering the psychological
+study of conditionals; Jonathan Evans and David Over for a critique of our
+account, which they presented at the Workshop on Mental Models in
+Brussels, March 2001, and also for many discussions of conditionals; Luca
+Bonatti, the late Martin Braine, Keith Holyoak, Howard Margolis, David
+O’Brien, and Lance Rips for their vigorous criticisms of the model theory;
+Monica Bucciarelli, Orlando Espino, Vittorio Girotto, Eugenia Goldvarg,
+Paolo Legrenzi, Maria Sonino Legrenzi, Juan Garcı´a Madruga, Henry
+Markovits, Mary Newsome, Cristina Quelhas, Sergio Moreno Rios, Carlos
+Santamarı´a, Fabien Savary, Walter Schaeken, Walter Schroyens, Alessan-
+dra Tasso, and Valerie Thompson for their collaboration in studies of
+conditional reasoning. We are also grateful to the following individuals for
+many useful ideas: Bruno Bara, Victoria Bell, David Green, Uri Hasson,
+Mark Keane, Markus Knauff, Jim Kroger, Robert Mackiewicz, Hans-
+Georg Neth, Tom Ormerod, Rosemary Stevenson, Dan Sperber, Vladimir
+Sloutsky, and Jean-Baptiste van der Henst.
+
+Correspondence concerning this article should be addressed to P. N.
+Johnson-Laird, Department of Psychology, Princeton University, Green
+Hall, Princeton, New Jersey 08544. E-mail: phil@princeton.edu
+
+If the TCE in the wells had been drawn from out of the river,
+
+then there’d be TCE in the riverbed.
+But there isn’t any TCE in the riverbed.
+
+Schlictmann then argued that these premises were consistent with
+the proposition that no contamination came from the river. What
+he overlooked is that the conclusion is not merely consistent with
+the premises but follows necessarily from them. Psychologists
+disagree about the cause of such oversights and about conditional
+reasoning in general (e.g., Braine & O’Brien, 1998; Cheng &
+Holyoak, 1985; Johnson-Laird, 1986; Rips, 1983). Philosophers,
+logicians, and linguists also disagree about the meaning of condi-
+tionals (Adams, 1975; Lewis, 1973; Stalnaker, 1968). No consen-
+sus exists about if.
+
+Our concern is everyday conditionals, including all sentences of
+the form If A then C or C if A, where A and C are declarative
+clauses. Naive individuals can grasp the meaning of such asser-
+tions, and they can use it to reason. The term naive refers here
+merely to people who have not studied logic in any depth. In the
+1970s, psychologists assumed that such individuals reason using
+formal rules of inference like those of a logical calculus. The
+challenge was to pin down the particular rules (e.g., Braine, 1978;
+Johnson-Laird, 1975; Osherson, 1974 –1976). Such theorizing ne-
+glected a discovery made by Wason (1966). Intelligent adults in
+his selection task regularly committed a logical error. He laid out
+four cards in front of them:
+
+A B 2
+
+3
+
+They knew that each card had a letter on one side and a number on
+the other side. He showed them a conditional: If a card has the
+letter A on one side then it has the number 2 on the other side.
+Their task was to select those cards that had to be turned over to
+discover whether the conditional was true or false about the four
+cards. Most people selected the A and 2 cards, or the A card alone.
+They failed to select the 3 card. However, if the 3 has an A on its
+other side, the conditional is false. Indeed, nearly everyone judges
+it to be false in this case. Individuals also generate this case when
+they are asked to make a conditional false (Oaksford & Stenning,
+1992), and they judge that the probability of this case is zero given
+
+646
+
+CONDITIONALS
+
+647
+
+the truth of the conditional (Johnson-Laird, Legrenzi, Girotto,
+Legrenzi, & Caverni, 1999). When Wason and Shapiro (1971)
+changed the assertion to a sensible everyday conditional, many
+people made the correct selection. Theories based on formal rules
+have difficulty in explaining both the error with neutral condition-
+als and its correction with sensible content.
+
+Our theory is not formal. It assumes instead that reasoners use
+the meaning of premises, and general knowledge, to imagine the
+possibilities under consideration—that is, to construct mental mod-
+els of them (see Johnson-Laird & Byrne, 1991; Polk & Newell,
+1995). Mental models can be constructed from perception, imag-
+ination, or the comprehension of discourse. They underlie visual
+images, but they can also be abstract, representing situations that
+cannot be visualized. Each mental model represents a possibility.
+It is akin to a diagram in that its structure is analogous to the
+structure of the situation that it represents, unlike, say, the structure
+of logical forms used in formal rule theories.
+
+Some sentential connectives such as and and or have logical
+meanings that are easy to define. For example, consider the fol-
+lowing:
+
+Either the printer is broken or else the cable is disconnected,
+
+but not both.
+
+The truth of an exclusive disjunction such as this one is a function
+of the truth of its constituent atomic propositions, that is, those
+propositions that contain neither not nor connectives (the printer is
+broken, the cable is disconnected). The exclusive disjunction is
+true in two cases: first, where it is true that the printer is broken but
+false that the cable is disconnected, and, second, where it is false
+that the printer is broken but true that the cable is disconnected.
+Logicians lay out these conditions in a truth table, as shown in
+Table 1, in which we abbreviate the atomic propositions. Each row
+in the truth table represents a different possibility. Thus, the first
+row represents the possibility in which both the printer is broken
+and the cable is disconnected; in this possibility, the exclusive
+disjunction is false. The connective and can be defined in an
+analogous way. A conjunction of the form A and C is true in just
+one row of its truth table, namely, where A is true and C is true, and
+it is false in every other case. Those sentential connectives that can
+be defined in a truth table are known as truth functional—that is,
+their meanings are functions that take the truth values of proposi-
+tions as inputs and deliver a truth value as an output. The logic of
+these truth-functional meanings is captured in the sentential cal-
+culus (see, e.g., Jeffrey, 1981).
+
+Psychological theories based on formal rules (hereinafter rule
+theories) and the theory based on mental models (hereinafter the
+
+Table 1
+A Truth Table for the Exclusive Disjunction “Either the Printer
+Is Broken or Else the Cable is Disconnected”
+
+Printer is broken
+
+Cable is
+
+disconnected
+
+Either printer is broken or else
+
+cable is disconnected
+
+True
+True
+False
+False
+
+True
+False
+True
+False
+
+False
+True
+True
+False
+
+model theory) run in parallel for many aspects of reasoning.
+Insofar as both sorts of theory reflect logical principles, however,
+they have potential limitations (cf. Sloman, 1996). And at the heart
+of these limitations is the vexed question of conditionals. Are they
+truth functional or not? The answer is not clear. Some theorists
+have argued that conditionals have the same meaning as the
+truth-functional connective of material implication (e.g., Grice,
+1975; Wilson, 1975), which is shown in Table 2. Other theorists
+have rejected this analysis (e.g., Gazdar, 1979; O’Brien, 1999).
+The profundity of the puzzle correlates with the length of its
+literature. One aim of the present article is to resolve this puzzle.
+
+Simple inferences from conditionals are of four main sorts:
+1. Modus ponens:
+
+If there is a circle then there is a triangle.
+There is a circle.
+
+⬖ There is a triangle.
+
+2. Modus tollens:
+
+If A then C.
+A.
+⬖ C.
+
+If there is a circle then there is a triangle.
+There is not a triangle.
+
+⬖ There is not a circle.
+
+If A then C.
+Not C.
+⬖ Not A.
+
+3. Denial of the antecedent:
+
+If there is a circle then there is a triangle.
+There is not a circle.
+
+⬖ There is not a triangle.
+
+If A then C.
+Not A.
+⬖ Not C.
+
+4. Affirmation of the consequent:
+
+If there is a circle then there is a triangle.
+There is a triangle.
+
+⬖ There is a circle.
+
+If A then C.
+C.
+⬖ A.
+
+Modus ponens and modus tollens are valid for both conditionals
+and biconditionals (If and only if there is a circle then there is a
+triangle), whereas the other two inferences are valid only for
+biconditionals. There are more experimental studies of these and
+other inferences with if than of any other deductive term (for
+reviews, see Baron, 1994; J. Evans, Newstead, & Byrne, 1993;
+Garnham & Oakhill, 1994). Likewise, there are probably more
+semantic analyses of if than of any other single word in English
+(e.g., Harper, Stalnaker, & Pearce, 1981; Jackson, 1987; Lewis,
+1973; Traugott, ter Meulen, Reilly, & Ferguson, 1986). Some
+authors have despaired of formulating the conditions in which
+conditionals are true and have argued instead that they have merely
+conditions in which it is justifiable to assert them (see, e.g.,
+Adams, 1970, 1975; cf. Lewis, 1976). Such skepticism is in
+striking contrast to the ease with which individuals understand
+conditionals in daily life and judge them to be true or false.
+
+Our goal is to resolve the problems of conditionals. We there-
+fore formulate a theory of the meaning of conditionals, of how this
+meaning is modulated by semantics and pragmatics, and of its use
+in reasoning. Braine and O’Brien (1991) offered such an account
+based on a rule theory. The present article offers an account based
+on the model theory. Of course, the model theory has had some-
+thing to say about conditionals in the past (e.g., Johnson-Laird &
+Byrne, 1991), but its account was incomplete. Critics have iden-
+tified two principal lacunae (see, e.g., Fillenbaum, 1993; Holyoak
+
+

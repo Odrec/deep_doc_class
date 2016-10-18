@@ -1,0 +1,43 @@
+Grundsätzlich gilt: 
+
+1. Da Tests immer auf der Basis von SP erfolgen, 
+
+die eine GG ja niemals „exakt“ widerspiegeln 
+können, kann man auch nie sagen, dass eine 
+Hypothese richtig oder falsch ist; man kann 
+immer nur sagen, eine Hypothese ist mit einer 
+gewissen vorher festgelegten Irrtumswahr-
+scheinlichkeit richtig oder falsch. 
+
+2. Streng genommen kann ein Test eine Hypo-
+these nur mit einer bestimmten Wahrschein-
+lichkeit widerlegen, sie aber nicht bestätigen 
+oder gar beweisen. 
+
+Teststatistik in dieser Veranstaltung 
+ 
+
+Es gibt eine Vielzahl von Testverfahren, von denen 
+hier 4 besprochen werden sollen. Sie testen jeweils 
+unterschiedliche Parameter: Verteilungen, Streuungen 
+und Mittelwerte 
+
+1. Der χ²-Test auf „Verteilungsunterschiede“ erfordert 
+
+nominale Datenniveaus 
+
+2. Der χ²-Test auf „Normalverteilung“ oder 
+
+„Anpassungstest“ erfordert metrische Datenniveaus 
+
+3. Der F-Test auf „Streuungsunterschiede“ erfordert 
+
+metrische Datenniveaus 
+
+4. Der t-Test auf „Mittelwertunterschiede“ erfordert 
+
+metrische Datenniveaus 
+
+1 
+
+

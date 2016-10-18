@@ -1,0 +1,253 @@
+R E V I E W S
+
+MAKING SENSE OF IT ALL:
+BACTERIAL CHEMOTAXIS
+
+George H. Wadhams and Judith P. Armitage
+
+Abstract | Bacteria must be able to respond to a changing environment, and one way to respond
+is to move. The transduction of sensory signals alters the concentration of small phosphorylated
+response regulators that bind to the rotary flagellar motor and cause switching. This simple
+pathway has provided a paradigm for sensory systems in general. However, the increasing
+number of sequenced bacterial genomes shows that although the central sensory mechanism
+seems to be common to all bacteria, there is added complexity in a wide range of species.
+
+In an ever-changing environment, it is essential that
+organisms  are  able  to  sense  these  changes  and  to
+respond appropriately. Possible responses include alter-
+ations in gene expression and/or active movement
+towards or away from an environment. Most sensory
+pathways in eukaryotic organisms rely on serine, threo-
+nine or tyrosine protein kinases, whereas the most com-
+mon  sensory  pathways 
+in  prokaryotes  use  a
+histidine–aspartate phosphorelay (HAP) system. HAP
+systems have at least two components — a dimeric
+histidine protein kinase (HPK) and a response regula-
+tor (RR)1. HAP systems are also found in many lower
+eukaryotes, in which they control processes such as
+osmoregulation in, for example, Saccharomyces cere-
+visiae 2, Candida  albicans3
+and  Dictyostelium
+discoideum4. They are also found in plants, in which
+they control, for example, ethylene-mediated fruit
+ripening5 and blue-light responses. The Arabidopsis
+thaliana genome has genes for 16 HPK and 24 RR
+homologues.
+
+Bacteria can sense a vast range of environmental
+signals, from the concentrations of nutrients and toxins
+to oxygen levels, pH, osmolarity and the intensity and
+wavelength of light. Genome sequencing has identified
+over 600 HAP systems and some individual bacterial
+species contain more than 130 (REF. 6) — for example,
+Myxococcus xanthus has about 140 HAP systems (J. R.
+Kirby, personal communication). Despite the extremely
+high homology between the components of HAP sys-
+tems, numerous pathways operate in individual bacteria
+
+without significant crosstalk. Although most of these
+HAP systems are involved in the regulation of gene
+expression, one of the most well-understood pathways
+regulates motile behaviour. Chemotaxis operates as part
+of a complex network of signals that balance to produce
+a physiological response that is suited to a specific envi-
+ronment (BOX 1). Here, we describe the basic bacterial
+chemosensory pathway, as well as some of the varia-
+tions of this system. However, first we provide a general
+overview of HAP systems.
+
+Histidine–aspartate-phosphorelay systems
+HAP systems rely on the trans-autophosphorylation of a
+His residue that resides in one monomer of the HPK
+dimer by the γ-phosphoryl group of an ATP molecule
+that  is  bound  to  the  kinase  domain  of the  other
+monomer. This phosphoryl group is then transferred to
+an Asp residue on a separate RR protein to alter its activ-
+ity and generate a response. Some systems incorporate
+several His–Asp phosphorylation steps, which possibly
+allows  for  complex  regulatory  control  as  discussed
+below7,8.
+
+Numerous HAP systems have been identified in
+different bacteria (FIG. 1). Most of the HPKs involved
+(for example, EnvZ; FIG. 1a) have an N-terminal region
+that spans the membrane twice, which results in an
+intervening periplasmic domain that can sense an
+extracellular  signal. The  C-terminal  cytoplasmic
+region comprises a linker or HAMP DOMAIN (‘histidine
+kinases, adenylyl cyclases, methyl-binding proteins
+
+HAMP DOMAIN
+(‘Histidine kinases, adenylyl
+cyclases, methyl-binding
+proteins and phosphatases’
+domain). A domain that is
+broadly conserved in histidine
+protein kinases, chemoreceptors
+and phosphatases. It contains
+two amphipathic helices, and is
+presumed to have a role in signal
+transduction.
+
+Department of
+Biochemistry,
+University of Oxford,
+Oxford OX1 3QU, UK.
+Correspondence to J.P.A.
+e-mail: judith.armitage@
+bioch.ox.ac.uk
+doi:10.1038/nrm1524
+
+1024 | DECEMBER 2004 | VOLUME 5
+
+www.nature.com/reviews/molcellbio
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+Box 1 | Chemotaxis as part of a complex network of signalling pathways
+
+Pathogenicity
+Motility and chemotaxis are required for many pathogenic species to colonize and invade a host. Bacteria sense a wide
+range of signals — including temperature and pH changes, nutrient concentrations, osmolarity and oxygen — and
+they integrate this information to generate the pathogenic response. Chemotaxis can, for example, guide Helicobacter
+pylori to the mucus lining of the stomach97, free-living Vibrio anguillarium to the surface of fish121, and Agrobacterium
+tumefaciens to wounded plants122. Each species responds to specific, relevant chemoattractants and other sensory
+signals then control the expression of virulence genes. Interestingly, it is not clear whether Vibrio cholera — which can
+live in biofilms in aquatic environments or in the human small intestine123, and has a spectacular range of
+histidine–aspartate-phosphorelay systems (~ 30), methyl-accepting chemotaxis proteins (~40) and chemotaxis
+protein (Che) homologues (3 CheW, CheA, CheB, CheR and CheV proteins, 4 CheY proteins and 1 CheZ protein) —
+uses chemotaxis to swim to the villi of the small intestine. However, motility is known to be essential for
+pathogenicity124.
+
+Symbiotic associations
+Chemotaxis probably guides free-living rhizobia to the environment around legume root hairs, which contains a higher
+concentration  of nutrients. The correct host–symbiont contact then triggers the formation of NODULES and the
+subsequent nitrogen fixation by bacteria125. In a different type of symbiotic association, the squid Euprymna scolopes
+uses bioluminescence to confuse preditors. The marine bacterium Vibrio fischeri is only bioluminescent at high cell
+densities (~1010 ml–1), and chemotaxis guides free-living bacteria to the squid light organs, in which the colony size
+increases. Eventually, the concentration of a diffusible autoinducer (N-acyl homoserine lactone) reaches the level that is
+required to induce the expression of bioluminescence genes126.
+
+Biofilms 
+Many bacterial species are not normally free living, but are associated with surfaces in complex polysaccharide
+biofilms, in which microcolonies of different species coexist and compete for diffusing nutrients127. Biofilms are
+involved in fouling — for example, on oil rigs, teeth and medical implants, and in the lungs of cystic-fibrosis
+patients128 — and they protect bacterial colonies from antimicrobial agents. Biofilm formation and development
+results from large numbers of interacting sensory signals — for example, QUORUM SENSING129, osmolarity and charge
+sensing, and also chemotaxis. In biofilms, many species lose flagella, but induce the expression of type-IV PILI, which
+allow them to ‘twitch’ along surfaces (BOX 2). Biofilms are far from static entities and they mature, develop and shed
+bacteria, which swim to new locations.
+
+and phosphatases’domain), a dimerization domain and a
+kinase domain that interacts with its cognate RR. Some
+HPKs lack the periplasmic and transmembrane domains,
+for example, CheA (chemotaxis protein A; FIG. 1c) and
+NtrB. CheA interacts with transmembrane receptors (see
+below), whereas NtrB interacts with cytoplasmic sensors.
+Some transmembrane HPKs have several transmem-
+brane regions, for example, PrrB (also known as RegB)
+has four transmembrane helices and KinB has six8,9
+(FIG. 1d). Other HPKs have further cytoplasmic domains
+— for example, aerobic-respiration-control sensor pro-
+tein-B (ArcB) has a cytoplasmic PAS (PER,ARNT, SIM) DOMAIN, a
+fused RR domain and an extra histidine-containing
+phosphotransfer (HPt) DOMAIN (FIG. 1b).
+
+HAP-system signalling is initiated by trans-autophos-
+phorylation within the HPK dimer. As mentioned above,
+the γ-phosphoryl group of an ATP molecule that is
+bound to the kinase domain of one monomer is trans-
+ferred to a His residue in the other monomer. The phos-
+phoryl group is then transferred to the conserved Asp
+residue of the relevant RR, which results in the activation
+of the output domain of the RR (FIG. 1). RRs can undergo
+spontaneous dephosphorylation by transferring the
+phosphoryl group to water, and the half-lives of the dif-
+ferent phosphoryl–Asp RRs vary from a few seconds to
+hours. However, in many cases, the half-life is reduced
+by the presence or activation of a phosphatase, which
+might be the HPK itself. More complex versions of
+HAP  systems  with  numerous  His–Asp–His–Asp
+
+phosphotransfer steps are widespread, particularly in
+eukaryotes, and such systems have been characterized
+in detail in relation to osmoregulation in S. cerevisiae, as
+well as sporulation in Bacillus subtilis 8 (FIG. 1d). HPt
+domains, which can add extra phosphotransfer steps,
+have no catalytic activity and the cognate RR functions to
+take or transfer the phosphoryl group from the HPt
+domain. The reason for numerous steps is unclear, but
+studies on the oxygen-sensing Arc pathway (FIG. 1b) indi-
+cate that it might assist in complex regulatory control8.
+
+Bacterial chemotaxis as a model system
+Bacterial chemotaxis is the biasing of movement
+towards regions that contain higher concentrations of
+beneficial, or lower concentrations of toxic, chemi-
+cals. The signalling pathway that is involved has been
+most  extensively  studied  in  the  enteric  bacteria
+Escherichia  coli and  Salmonella  enterica  serovar
+Typhimurium10,11. Structural and biochemical details
+are now available for every step of the pathway, which
+makes it one of the most well-understood of all sen-
+sory pathways.
+
+Most sequenced bacterial genomes include homo-
+logues of genes that are known to encode components
+of flagella and chemosensory pathways, which indicates
+that motility is widespread (BOX 2) and probably pro-
+vides a selective advantage, especially in non-homoge-
+neous, nutrient-limiting environments. However, all
+bacteria in which motility has been studied seem to be
+
+NODULE
+A swelling on the roots of
+nitrogen-fixing plants that
+contains symbiotic nitrogen-
+fixing bacteria.
+
+QUORUM SENSING
+The ability of bacteria to sense
+their own cell density by
+detecting the concentration of
+signalling molecules that have
+been released in their
+environment.
+
+PILI
+Short, polymerized-protein
+projections that protrude from
+the bacterial cell and are used for
+surface attachment and
+twitching motility.
+
+PAS DOMAIN
+(PER, ARNT, SIM domain).
+A domain that is involved in
+recognizing stimuli such as light,
+oxygen, redox potential, energy
+status and small ligands.
+
+HPt DOMAIN
+(Histidine-containing
+phosphotransfer domain). These
+domains are ~120 amino acids
+long and contain a histidine
+residue that can participate in
+phosphoryl-transfer reactions.
+They function as
+phosphoreceivers and
+phosphodonors, and can
+therefore be used to create
+multistep phosphorelay systems.
+
+NATURE REVIEWS | MOLECULAR CELL BIOLOGY
+
+VOLUME 5 | DECEMBER 2004 | 1 0 2 5
+
+©  2004 Nature  Publishing Group
+
+

@@ -1,0 +1,83 @@
+ 
+
+Wintersemester 2014/2015
+
+Übungen zu
+
+ Elemente der diskreten Mathematik
+
+Blatt 9 
+
+Prof. Dr. Heinz Spindler 
+
+Abgabe bis Montag, den 15.12. 2014, 12.00 Uhr 
+
+ 
+
+(cid:1) Aufgabe 1
+
+a) Gibt es einen Graphen mit 6 Ecken und den Graden 2,3,3,3,3,3?
+
+b) Gibt es einen Graphen mit 6 Ecken und den Graden 0,1,2,3,4,5?
+
+c) Wie viele Graphen (bis auf Isomorphie) mit 4 Ecken und den Graden 1,1,2,2 gibt 
+es?
+
+d) Wie viele 1-reguläre Graphen mit 10 Ecken gibt es?
+
+e) Zeige: Für alle n (cid:1) (cid:2), n (cid:3) 1 gilt: Es gibt einen 3-regulären Graphen mit 2 n Ecken.
+
+(cid:1) Aufgabe 2
+
+Es sei G (cid:4) (cid:5)E, K(cid:6) ein Graph. Eine Teilmenge A (cid:7) E heißt unabhängig, wenn für alle 
+a, b (cid:1) A der Abstand d(cid:5)a, b(cid:6) mindestens 2 ist. Α(cid:5)G(cid:6) ist definiert als das Maximum 
+max (cid:9) (cid:10)A(cid:11) A (cid:7) E unabhängig(cid:12).
+
+a) Zeige: Α(cid:5)G(cid:6) (cid:13) (cid:10)E(cid:11)
+
+(cid:14)(cid:5)G(cid:6)(cid:15)1
+
+, wobei (cid:14)(cid:5)G(cid:6) (cid:4) max (cid:9)d(cid:5)a(cid:6) a (cid:1) E(cid:12) der maximale Grad von 
+
+2
+
+Übungen zur diskreten Mathematik
+
+Ecken in G ist.
+
+b) Berechne Α(cid:5)G(cid:6) für G (cid:4) Pn und G (cid:4) Cn.
+
+c) Es sei  Χ(cid:5)G(cid:6) die chromatische Zahl von G  (Blatt 7, Aufgabe 4). Zeige: 
+Α(cid:5)G(cid:6) Χ(cid:5)G(cid:6) (cid:13) (cid:10)E(cid:11) .
+
+(cid:1) Aufgabe 3
+
+Das Komplement G eines Graphen G (cid:4) (cid:5)E, K(cid:6) hat dieselbe Eckenmenge wie G und 
+(cid:9)a, b(cid:12) ist genau dann eine Kante in G, wenn (cid:9)a, b(cid:12) keine Kante in G ist. Es sei n (cid:4) (cid:10)E(cid:11)
+
+a) Bestimme das Komplement Q3 . Wie viele Dreiecke (Kreise der Länge 3) enthält 
+Q3?
+
+b) Zeige:  Χ(cid:5)G(cid:6) (cid:15) Χ(cid:5)G(cid:6) (cid:17) n (cid:15) 1,  Χ(cid:5)G(cid:6) Χ(cid:5)G(cid:6) (cid:13) n.
+
+(cid:1) Aufgabe 4
+
+Ein gerichteter Graph G (cid:4) (cid:5)E, K(cid:6) besteht aus einer Eckenmenge E und einer 
+Teilmenge K (cid:7) E (cid:18)E von geordneten Paaren (cid:5)a, b(cid:6) mit a (cid:19) b. Ist (cid:5)a, b(cid:6) (cid:1) K, so heißt 
+(cid:5)a, b(cid:6) gerichtete Kante mit Anfangsecke a und Endecke b. Man definiert d(cid:15)(cid:5)a(cid:6) als die 
+Anzahl der Kanten  mit Endecke a  und d(cid:20)(cid:5)a(cid:6) als die Anzahl der Kanten mit 
+Anfangsecke a. 
+
+Gilt nun, dass es zu je zwei Ecken genau eine gerichtete Kante gibt, so nennt man G 
+ein Turnier. Es sei jetzt G ein Turnier.
+
+a) Zeige: Es gibt eine Ecke a, so dass jede andere Ecke durch einen gerichteten Weg 
+der Länge (cid:17)2  von a aus erreicht werden kann.
+
+b) Es sei Π (cid:4) (cid:5)a1,
+..., an(cid:6) eine Nummerierung der Ecken von G, Es sei dann  f (cid:4) f (cid:5)Π(cid:6) 
+die Summe aller (cid:22)Feedbacklängen(cid:23)  j (cid:20) i, wobei i (cid:24) j und a j (cid:25) ai (cid:1) K. Ist  f  minimal 
+unter allen möglichen Nummerierungen Π von E, so gilt 
+d(cid:20)(cid:5)a1(cid:6) (cid:13) d(cid:20)(cid:5)a2(cid:6) (cid:13) ... (cid:13) d(cid:20)(cid:5)an(cid:6).
+
+

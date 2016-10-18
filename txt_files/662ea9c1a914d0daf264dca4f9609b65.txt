@@ -1,0 +1,230 @@
+Tabellerna satta Kontrolleras noga
+Kolla Figur1 sid 9 – fungerar den i s/v 
+
+REPRODUCING AND RESHAPING ETHNIC RESIDENTIAL SEGREGATION IN STOCKHOLM
+
+REPRODUCING AND RESHAPING ETHNIC 
+
+RESIDENTIAL SEGREGATION IN STOCKHOLM: 
+THE ROLE OF SELECTIVE MIGRATION MOVES
+
+by
+
+Roger Andersson
+
+ANDERSSON, R. (2013): ‘Reproducing and reshaping ethnic res­
+idential segregation in Stockholm: the role of selective migration 
+moves’,  Geografiska  Annaler:  Series  B,  Human  Geography  95 
+(2):163–187.
+
+ABSTRACT. This paper deals with the issues of selective migra­
+tion moves, and the production and reproduction of immigrant-
+dense neighbourhoods in Stockholm, Sweden. It has been shown 
+earlier that selective migration, that is, socioeconomic and eth­
+nic  differences  between  those  leaving,  entering  and  staying  in 
+so-called deprived neighbourhoods, reproduces these neighbour­
+hoods’ characteristics of being poor and immigrant dense. Key 
+concepts launched to inform such studies and derived from the US 
+segregation discourse are “white flight” and “white avoidance”, 
+meaning that native people (or white people in the US case) tend 
+to leave neighbourhoods experiencing growing numbers of im­
+migrants (black people) and which they also tend to avoid mov­
+ing into such neighbourhoods. Using a complete set of geo-coded 
+longitudinal individual data for the 2005–2008 Stockholm County 
+population, this paper contributes to our understanding of ethnic 
+differences in the intra-urban migration system. Three empirical 
+questions  are  addressed:  what  individual  characteristics  distin­
+guish (1) those who move into neighbourhoods experiencing rap­
+idly increasing immigrant densities from those moving elsewhere 
+in the urban region; (2) those who leave neighbourhoods expe­
+riencing rapidly increasing immigrant densities from those who 
+stay put; (3) those who move in the direction of higher immigrant 
+densities from those moving into lower densities? Results from 
+multivariate statistical analyses provide support for the avoidance 
+hypothesis but less support for the flight hypothesis. When con­
+trolling  for  a  range  of  individual  and  neighbourhood  attributes 
+there is clear evidence that native-born Swedes are less inclined 
+than most immigrant categories to move into immigrant dense are­
+as while ethnic origin does not seem to matter much when explain­
+ing who leaves such areas.
+
+Keywords: ethnic segregation, flight avoidance, longitudinal data, 
+selective migration, Sweden
+
+Introduction
+Ethnic residential segregation is a concern for pol­
+iticians  and  urban  planners  and  has  consequently 
+generated  substantial  interest  from  researchers  in 
+different social science disciplines and in a grow­
+ing number of countries. While this issue has long 
+been on the agenda, especially in the USA and South 
+Africa, rather limited interest was paid to segrega­
+tion in European countries before the 1990s. Now, 
+
+following  from  a  discourse  that  links  segregation 
+with the perceived failure of integrating immigrants 
+into host societies, the issue is vividly debated in 
+countries such as France, the UK, the Netherlands, 
+Belgium, Germany, and in Scandinavian countries 
+including Sweden (Bolt et al. 2010). The topic is 
+also increasingly discussed in Southern Europe, not 
+least in the context of the financial crisis and rising 
+inequalities (Arapoglou 2012; Kandylis et al. 2012).
+ 
+If  one  believes  that  spatial  segregation  is  the 
+cause of the lack of integration characterizing life 
+for many immigrants – especially more recently ar­
+rived refugee immigrants from the Middle East and 
+Africa – it is natural to try to affect segregation pat­
+terns  and  processes.  Such  attempts  take  different 
+forms: housing mix programmes, (refugee) settle­
+ment and dispersal policies, area-based urban pro­
+grammes (Andersson et al. 2010). However, before 
+engaging further in a debate concerning measures 
+to avoid or mitigate segregation processes, the re­
+search community needs to better analyse the dy­
+namic  component  that  shapes  and  reproduces 
+neighbourhood  population  compositions  and  the 
+segregated city: migration. Without such process-
+related knowledge – and of course more knowledge 
+about whether ethnic segregation is harmful or not 
+and for whom – policy interventions might be inef­
+fective or even counter-productive. This article con­
+tributes to the development of such process- related 
+knowledge  while  leaving  the  consequence  issue 
+aside.
+ 
+It has been shown (Andersson and Bråmå 2004; 
+Bråmå 2006; see also Wilson 1987; Jargovsky 1997; 
+Bolt et al. 2008; Card et al. 2008) that selective mi­
+gration,  that  is,  socioeconomic  and  ethnic  differ­
+ences between those leaving, entering and staying 
+in so-called deprived neighbourhoods, reproduces 
+these neighbourhoods’ characteristics of being poor 
+and immigrant dense. Key concepts launched to in­
+form such studies and derived from the US discourse 
+are “white flight” and “white avoidance” (see Ellen 
+
+© The author 2013
+Geografiska Annaler: Series B © 2013 Swedish Society for Anthropology and Geography
+
+163
+
+ROGER ANDERSSON
+
+2000), meaning that native people (or “whites” in 
+the US case) tend to leave neighbourhoods experi­
+encing growing numbers of immigrants (“blacks”) 
+and that they also tend to avoid moving into such 
+neighbourhoods. Especially the flight notion often 
+contains some kind of idea about thresholds, mean­
+ing that whites start to move out in bigger numbers 
+if the proportion of blacks exceeds a certain level 
+(Card et al. 2008). In contrast to discourses of eth­
+nic “self-segregation” that have given rise ‘to the 
+myth that minority ethnic communities live, or wish 
+to live, separate lives and disengage from wider …. 
+society’ (Phillips 2006, p. 36), this author believes 
+it is correct to place much focus on the natives’ (or 
+the  majority’s)  role  in  producing  ethnic  residen­
+tial segregation. This is also in line with the stand­
+point put forward by Crowder et al. (2011, p. 41): 
+‘While scholarly attention continues to focus on im­
+migrants’ residential attainment processes, we call 
+for additional attention to native-born populations’ 
+mobility  reactions  to  these  immigrant  settlement 
+patterns.’ While acknowledging the natives’ role we 
+need to take the departure in the fact that segrega­
+tion processes operate in cities comprising a system 
+of neighbourhoods: what takes place in poor and/or 
+immigrant-dense neighbourhoods is very much re­
+lated to what takes place in other neighbourhoods 
+(Jargovsky 1997, ch. 6; Bråmå 2011).
+ 
+The new forms of diversity and multiculturalism 
+in society are expected to influence residential loca­
+tion decisions, and the ways in which immigrants 
+and  natives  interact  in  neighbourhoods,  schools, 
+playgrounds  and  workplaces.  Such  interaction,  in 
+turn, has direct bearings on social cohesion and in­
+tergroup understanding and tolerance (Wessel 2009; 
+Galster  et  al.  2010).  In  the  Norface-funded  com­
+parative research project NODES (Nordic welfare 
+states and the dynamics and effects of ethnic resi­
+dential segregation) we aim to study the dynamics 
+and effects of ethnic residential segregation in four 
+Nordic countries. This particular article has been de­
+veloped in this research context and deals with the 
+issues of selective migration moves, and the produc­
+tion  and  reproduction  of  immigrant-dense  neigh­
+bourhoods in Stockholm, Sweden.
+Selective migration among natives, and its ef­
+ 
+fects  upon  ethnic  segregation,  is  a  relatively  new 
+field  of  research  in  the  Nordic  context.  Bråmå 
+(2006) has analysed the role of Swedish majority 
+populations.  She  concludes  that  selective  in-mi­
+gration (particularly avoidance), and not selective 
+out- migration (flight), is the main driver behind the 
+
+production and reproduction of immigrant concen­
+trations in contemporary Sweden. A study of school 
+segregation in Oslo (Sundell 2008) produced simi­
+lar results, although with a greater emphasis on se­
+lective out-migration (i.e. the flight mechanism).
+  Vilkama  (2010,  2011)  shows  that  despite 
+Helsinki’s  much  lower  proportion  of  immigrants, 
+both flight and avoidance are relevant concepts also 
+in that context. She furthermore confirms what has 
+also  been  found  for  Sweden:  out-migration  rates 
+from  immigrant-dense  neighbourhoods  are  simi­
+lar for immigrants and natives but immigrants tend 
+to more often circulate within the same segment of 
+neighbourhoods,  that  is  to  say,  immigrant-dense 
+neighbourhoods (see also Jargovsky 1997).
+  Other studies have documented selective migra­
+tion among immigrants. Magnusson and Özüekren 
+(2002) examined intra-urban mobility during 1975–
+1990 among Turkish immigrants in three middle-
+sized  Swedish  cities. Their  results  show  a  highly 
+concentrated pattern of mobility. Later research in 
+Sweden (see Andersson and Bråmå 2004), Denmark 
+(Skifter Andersen 2010) and Norway (Blom 2006) 
+present a more split picture: older, established im­
+migrants tend to leave distressed/multiethnic areas, 
+while recently arrived immigrants gravitate (volun­
+tarily and/or are steered through institutional prac­
+tices) towards these places. Skifter Andersen (2010), 
+studying such housing estates in Denmark, stresses 
+the importance of preferences, such as the desirabil­
+ity for certain neighbourhood compositions. Many 
+others have contributed to the research field, focus­
+ing  on  for  instance  out-mobility  from  immigrant 
+dense  and/or  socioeconomically  deprived  neigh­
+bourhoods  and  on  the  effects  of  neighbourhood 
+compositional change (Charles 2000; Clark 2002; 
+Meen et al. 2005; Bailey and Livingston 2008; van 
+Ham and Feijten 2008; Feijten and van Ham 2009; 
+van Ham and Clark 2009; Pais et al. 2009; Crowder 
+et al. 2011; Saiz and Wachter 2011).
+This article will make use of longitudinal reg­
+ 
+ister data and it aims at describing and analysing 
+the ethnic compositional dynamics going on in the 
+system  of  neighbourhoods  in  the  Stockholm  re­
+gion. The key research question is whether native 
+Swedes contribute to sustaining and reinforcing eth­
+nic residential segregation by avoiding and leaving 
+neighbourhoods that experience high and increasing 
+immigrant density. The hypothesis is that this is in­
+deed the case.
+The empirical study will be carried out in three 
+ 
+steps. The first is to identify neighbourhoods that 
+
+164
+
+© The author 2013
+Geografiska Annaler: Series B © 2013 Swedish Society for Anthropology and Geography
+
+

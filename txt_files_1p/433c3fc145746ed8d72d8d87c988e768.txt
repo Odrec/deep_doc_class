@@ -1,0 +1,78 @@
+ 
+
+7.  REALISIERUNG VON STEUERWERKEN  
+
+ist  die  strikte  Aufteilung 
+
+7.1  Grundprinzip  
+ 
+Eine bewährte Entwurfsmethode bei komplexen Digitalsystemen 
+wie  Mikroprozessoren 
+in  einen 
+datenverarbeitenden und einen steuernden Teil (vgl. Kap. 6).  
+ 
+Ein  Steuerwerk  (Kontrolleinheit,  Control  Unit)  steuert  den 
+Ablauf in einem Operationswerk (Verarbeitungseinheit, Data 
+Processing Unit, Datenpfad, Data Path). Zusätzlich werden i. 
+Allg.  Kontrollsignale  (Start,  Stopp,  Fehler  etc.)  von  außen 
+verarbeitet bzw. nach außen generiert. 
+ 
+
+C’in
+
+Steuer-
+werk
+
+C’ out
+
+Cin
+
+Cout
+
+Eingabe-
+daten
+
+Operations-
+
+werk
+
+Ausgabe-
+daten
+
+ 
+
+ 
+Cin: 
+
+ 
+Cout: 
+
+ 
+C’in: 
+
+interne  Eingabesignale  (Kriterien),  die  die  Ablauf-
+steuerung im Steuerwerk beeinflussen 
+interne  Kontrollsignale 
+Steuerwerk an die Verarbeitungseinheit 
+externe  Eingabesignale  z.B.  von  anderen 
+geordneten) Kontrolleinheiten (z. B. BEGIN, RESET) 
+
+(Mikrooperationen)  vom 
+
+(über-
+
+ 
+C’out:  externe  Ausgabesignale  an  andere  Kontrolleinheiten  
+
+(z. B. BUSY, END) 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 1 
+
+AG Technische 
+Informatik 
+
+

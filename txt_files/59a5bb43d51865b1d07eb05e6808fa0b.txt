@@ -1,0 +1,31 @@
+Anwendungen von GIS: 
+
+ 
+
+Höhenmodelle 
+
+ 
+ 
+
+M.Sc. Florian Hillen 
+
+Übung: ASCII-Daten 
+
+ Kopieren Sie die Dateien lidar.las, reithalle.txt, 
+
+westerberg.txt und lastools.zip aus dem 
+Seminarordner (Höhendaten) in Ihr Verzeichnis 
+ Suchen Sie bei Google nach den „LAStools“ und 
+
+finden Sie heraus wie sie die .las Datei in eine .txt 
+Datei konvertieren können 
+
+ Öffnen Sie die .txt Dateien im Texteditor. Finden Sie 
+
+heraus um welches Koordinatensystem es sich 
+handeln könnte und vergleichen Sie die 
+verschiedenen Dateien. Was fällt auf? 
+
+ Importieren Sie die drei Dateien in GRASS 
+
+

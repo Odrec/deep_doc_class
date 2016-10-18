@@ -1,0 +1,194 @@
+Methoden der Optimierung für Suchmaschinen 
+
+ 
+ 
+Allgemein zu beachten  
+ 
+Ziel (speziell bei der On-the-Page-Optimierung): Dokumente durch Schlüsselwörter so zu 
+optimieren, dass bei Suchanfragen eine hohe Relevanzbewertung statt findet. 
+ 
+
+o  Langfristige Durchführung, da sonst Verlust der erreichten Rangposition (z.B. durch 
+
+Auswertung der Webserver Log Files) 
+
+o  Suchmaschinen-Webrobots besuchen aktuelle Dokumente häufiger, Änderungen 
+
+wirken sich positiv auf die Gewichtung eines Dokuments aus 
+
+o  der Dokumententitel ist der wichtigste Bereich für Keywords eines HTML-
+
+Dokuments (über ihn wird die Gewichtung / Relevanz vergeben durch die Klickrate)!  
+
+o  Ein Titel sollte: nur Substantive verwenden die den Inhalt des Dokuments 
+
+wiedergeben (und mind. einmal im Text vorkommen), Pluralform beachten, ca. 80-
+200 Zeichen beinhalten, Keywords in der Reihe ihrer Wichtigkeit sortieren, individuell 
+für jede Seite bestimmt sein (Bsp. Hotel Berlin Tagungshotel Hotelname) 
+
+o  Keywords auch in der URL verwenden!    
+o  nicht alle Meta-Tags werden von allen Suchmaschinen berücksichtigt (nur die 
+
+folgenden drei sind relevant für das Ranking!) 
+
+o  das Meta-Tag DESCRIPTION: dient zur Beschreibung einer Seite für die 
+
+Ergebnislisten in Suchmaschinen, nimmt Einfluss auf die Gewichtung durch die 
+Klickrate, wichtige Keywords sollten hier stehen (positive Beeinflussung auf Ranking), 
+muss individuell je Seite erstellt werden 
+
+o  das Meta-Tag KEYWORDS wird kaum noch von Suchmaschinen beachtet, in ihm 
+
+stehen aber Schlüsselwörter (die mind. ein Mal im Text enthalten sind) 
+
+o  das Meta-Tag ROBOTS erteilt individuell Anweisungen Dokumente zu indexieren 
+
+oder sie von der Indexierung auszuschließen 
+
+o  Dokumente werden in ihrer Länge nicht unbegrenzt ausgewertet und erfasst (Google 
+
+erfasst z.B. max. 100 KB!) 
+
+o  enthält die Website Wörter aus Ausschlusslisten (Stoppwortliste, Blacklist) wird sie 
+
+nicht indexiert 
+
+ 
+ 
+Wichtig für den Inhalt 
+
+ 
+o  bei der Wahl der Keywords ist die „inverse Dokumentenhäufigkeit“ (inverse 
+
+document frequency IDF) zu beachten:  Keywords wählen, die im Datenbestand in 
+geringer Menge vorkommen ⇒ Suchmaschinen überprüfen, Log Files auswerten 
+
+o  Schwerpunkt der Keywords auf ein oder wenige Themen beschränken: je Dokument 
+
+ca. 3-5 Keywords 
+
+o  Zielgruppenorientierte Keywords wählen (dabei Synonyme, Fachbegriffe und 
+
+Umgangssprache beachten), Wortkombinationen abdecken 
+
+o  Keywords werden immer in Kleinschreibung indexiert, jedoch unterschiedlich nach 
+
+Singular- und Pluralform 
+
+o  Die Länge der Keywords hat keine Bedeutung, bei Interpunktionen werden Wörter 
+
+in zwei Begriffe geteilt (z.B. Titel-Bereich, Titel Bereich) 
+
+o  die Keyword-Dichte ist für die Bewertung und Indexierung eines Dokuments 
+
+ausschlaggebend 
+
+o  die relative Worthäufigkeit eines Keywords sollte in einem Dokument max. 15 % 
+
+betragen (es werden nur Substantive berücksichtigt!) 
+
+o  die Keyword-Lage ist wichtig für die Bewertung: je weiter am Anfang des Textes ein 
+
+Keyword steht, desto höher das Gewicht 
+
+o  Suchmaschinen verwalten Dokumente getrennt nach Sprachen 
+
+o  Texte sollten auf einer Seite nur in einer Sprache verfasst sein, da sie sonst nicht 
+
+o  enthält die Website Wörter aus Ausschlusslisten (Stoppwortliste, Blacklist) wird sie 
+
+indexiert werden 
+
+nicht indexiert 
+
+ 
+Wichtig für die Struktur 
+ 
+
+o  gut verlinkte Struktur der Seite ist wichtig, damit für die Anmeldung bei 
+
+Suchmaschinen die Angabe der Startseite ausreichend ist 
+
+o  wichtige Seiten sollten auf der ersten Ebene liegen, auf wichtige Seiten sollte es 
+
+möglichst viele interne Verweise geben (je tiefer ein Dokument desto geringer die 
+Gewichtung und desto seltener indexiert!) 
+
+o  eine zu tiefe Verzeichnisstruktur kann zur Ablehnung der Indexierung durch 
+
+Suchmaschinen führen 
+
+o  Link Popularity beachten: Menge und Qualität der Hyperlink-Verweise beeinflussen 
+
+das Ranking bei Suchmaschinen, gleiche oder ähnliche Dokumente auf 
+verweisenden Seiten ist vorteilhaft 
+
+ 
+ 
+Wichtig für die Programmierung 
+ 
+ 
+
+o  keine dynamischen Dokumente mit Sonderzeichen in der URL benutzen (werden nur 
+
+von einigen Suchmaschinen indexiert), falls nötig einfach statische Dokumente 
+vorschalten 
+
+o  Framesets vermeiden, sie erschweren die vollständige Erfassung aller Dokumente 
+o  am wichtigsten sind die ersten 200 Zeichen (bei Tabellen die Keywords immer in der 
+
+ersten Zeile angeben!) 
+
+o  der ALT-Tag (Beschreibung von Bildern) wird von einigen Suchmaschinen analysiert 
+
+und zur Gewichtung herangezogen, z.B. AltaVista, Google, Fireball, Teoma 
+
+o  Kommentare werden grundsätzlich von Suchmaschinen erkannt! 
+o  Suchmaschinen (Google, Altavista) erfassen Textauszeichnungs-Tags (z.B. H1-H6, 
+
+b, i, u, big, sup, strong), CSS können noch nicht berücksichtigt werden 
+
+o  Websites sollten eine zentrale Navigationsseite haben, über die mit Hyperlinks (als 
+
+o 
+
+Textverweise) alle anderen Dokumente erreichbar sind 
+jegliche Buchstaben, Sonderzeichen, etc. müssen im 7-Bit ASCII-Code geschrieben 
+sein (Bsp. Umlaute ä zu &auml;) 
+
+o  HTML-Dokumente müssen in sauberem HTML-Code nach den Vorgaben des W3C-
+
+Consortium geschrieben sein, ansonsten könnten z.B. Texte / Keywords nicht als 
+Inhalt erkannt werden (Überprüfung durch HTML-Validator von W3C, auch für XML 
+und CSS) 
+
+o  Nur Google lässt verschiedenste Dateiformate zu, andere Suchmaschinen oft nur 
+
+HTML und PDF 
+
+o  Flash-Dateien können von Suchmaschinen nicht inhaltlich erfasst werden (außer von 
+
+FAST), deshalb ist kein Ranking möglich 
+
+o  JavaScript kann nur schwer ausgewertet werden, viele Anwender deaktivieren 
+
+JavaScript (bei hohem Ranking vermeiden, genauso DHTML) 
+
+o  Websites, die an einen Cookie binden bzw. ein LogIn erfordern werden nicht 
+
+indexiert 
+
+o  wird keine Robots.txt-Datei angelegt, kann dies als Spam vom Robot verstanden 
+
+werden, beim Anlegen müssen diverse Regeln beachtet werden (Infos über 
+searchengineworld.com) 
+
+Quelle:  
+
+Suchmaschinen im Internet : Funktionsweisen, Ranking Methoden, Top Positionen / 
+Michael Glöggler 
+
+ 
+ 
+
+

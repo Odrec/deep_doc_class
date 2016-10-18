@@ -1,0 +1,52 @@
+Foundations of Logic
+
+Homework 12: Argument Reconstruction
+
+Due January 28th, 2014
+
+Exercise 1 (8/20)
+
+Are the following claims true or false? Briefly explain each answer.
+
+1.1.
+
+1.2. 
+
+1.3.
+
+The only reason to study logic is to analyze and evaluate natural language arguments.
+
+The semantic tree method can be used to show that an argument scheme is invalid in Lpred
+by showing that the corresponding inference conditional has no models.
+We can use GLCQ to show that an argument scheme Φ1, Φ2,…, Φn ∴ 
+just because GLCQ is sound. The fact that GLCQ is also complete does not matter for this 
+purpose.
+
+ Ψ is valid in Lpred 
+
+1.4.
+
+All formal languages are undecidable.
+
+Exercise 2 (12/20)
+
+Reconstruct the following English arguments in Lpred.
+
+2.1.
+
+2.2.
+
+2.3.
+
+Some rappers are gangsters. Many hustlers are not rappers. Obviously, there are emcees 
+who are not gangsters. So that must mean that there are hustlers who are also emcees.
+
+All rappers who are not gangsters are rich. All hustlers are rappers. Some hustlers are not 
+rich. So there must be at least one gangster.
+
+Some rappers, like all gangsters, are either rich or they die tryin'. Not all rappers are rich. 
+Therefore, there are some gangsters who die tryin'.
+
+1/1 
+
+

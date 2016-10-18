@@ -1,0 +1,212 @@
+GPC Praktikum 
+
+ 
+
+Versuch: Molmassenbestimmung/Kryoskopie  
+
+ 
+
+Versuchsdatum: 17.11.2014 
+
+ 
+
+ 
+ 
+ 
+Versuchsbetreuerin: Brigitte Hartmann 
+ 
+ 
+ 
+ 
+Praktikanten: Gruppe 1 
+                       Kristin Stüwe 
+                       Mona Sonnenschein  
+ 
+ 
+ 
+ 
+ 
+Abgabedatum: 07.12.2014 
+ 
+Abgabestatus: 1.Abgabe 
+ 
+ 
+ 
+ 
+ 
+ 
+E-Mail: kstuewe@uos,de 
+             msonnenschei@uos.de  
+ 
+
+Aufgabe:  Bestimmung  der  Molmasse  einer  unbekannten  Substanz  durch 
+Gefrierpunktsbestimmungen. 
+ 
+Durchführung:  Ca.  50  ml  Cyclohexan  wurden  in  ein  Becherglas  gegeben  und  das 
+Gewicht  notiert.  Das  Becherglas  wurde  in  ein  Eisbad  gestellt  und  der  Temperaturverlauf 
+bis  zum  Gefrieren  festgehalten.  Die  Messung  wurde  wiederholt.  Danach  wurden 
+nacheinander  drei  mal  0,15g  einer  unbekannten  Substanz  zugegeben  und  der 
+Temperaturverlauf 
+zur 
+Gefrierpunktserniedrigung wurden jeweils die Molmassen bestimmt. 
+ 
+ 
+ 
+Messergebnisse: 
+ 
+Gefrierpunkt Cyclohexan T(rel): 6,67 K 
+Einwaage von Cyclohexan: 43,46 g 
+ 
+
+notiert.  Mit 
+
+jeweils 
+
+erneut 
+
+Hilfe 
+
+der 
+
+Formel 
+
+Einwaage 
+
+ 
+
+Gesamt 
+
+T(rel) (K) 
+(Gemessen) 
+
+Delta T (K)  M (kg/mol)  M (g/mol) 
+
+M1 (g) 
+
+M2 (g) 
+
+M3 (g) 
+
+0,1531 
+
+0,1505 
+
+0,1516 
+
+ 
+
+ 
+ 
+Berechnung von ∆𝑇: 
+
+0,1531 
+
+0,3036 
+
+0,4552 
+
+ 
+
+6,24 
+
+5,71 
+
+5,23 
+
+ 
+
+0,43 
+
+0,96 
+
+1,44 
+
+ 
+
+0,1655 
+
+0,1470 
+
+0,1469 
+
+165,5 
+
+147 
+
+146,9 
+
+Mittelwert 
+
+153,13 
+
+ 
+Beispielrechnung für M1: 
+
+∆𝑇 = 𝑇(𝑟𝑒𝑙)𝐶𝑦𝑐𝑙𝑜ℎ𝑒𝑥𝑎𝑛 − 𝑇(𝑟𝑒𝑙)𝐸𝑖𝑛𝑤𝑎𝑎𝑔𝑒 
+
+∆𝑇 = 6,67𝐾 − 6,24𝐾 = 0,43𝐾 
+
+ 
+Berechnung  von  Molmasse  der  gelösten  Substanz  durch  Umstellung  der  Formel  zur 
+Gefrierpunktserniedriegung: 
+ 
+
+ 
+ 
+
+𝑀𝐴 =
+
+ 
+
+∆𝑇 =
+
+𝐸𝐺 ∗ 𝑚𝐴
+𝑀𝐴 ∗ 𝑚𝐿𝑀
+
+ 
+
+𝐸𝐺  (
+
+𝐾 ∗ 𝑘𝑔
+
+𝑚𝑜𝑙
+
+) ∗ 𝑚𝐴 (𝑔)
+ 
+
+𝑚𝐿𝑀 (𝑔) ∗ ∆𝑇 (𝐾)
+
+ 
+Ein Rechenbeispiel für M1(mit Umrechnung von kg/mol auf g/mol) : 
+ 
+ 
+
+20,2  (
+
+𝐾 ∗ 𝑘𝑔
+
+𝑚𝑜𝑙
+
+) ∗ 0,1531 (𝑔)
+
+43,46 (𝑔) ∗ 0,43 (𝐾)
+
+= 0,1665 
+
+𝑘𝑔
+𝑚𝑜𝑙
+
+∗ 1000 = 165,5
+
+𝑔
+
+𝑚𝑜𝑙
+
+ 
+
+ 𝑀𝐴 =
+
+ 
+ 
+
+

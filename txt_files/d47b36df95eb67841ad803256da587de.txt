@@ -1,0 +1,75 @@
+Universit¨at Osnabr¨uck
+
+Wintersemester 2014/15
+
+Funktionalanalysis
+
+5. Aufgabenblatt
+
+1. Aufgabe: Sublineare Funktionale versus Halbnormen
+Geben Sie ein Beispiel eines sublinearen Funktionals welches keine Halbnorm ist.
+Tip: Betrachten Sie lim sup auf (cid:96)∞.
+
+2. Aufgabe: Ces`aro-Summationsoperator
+Sei C = (ci,j)i,j∈N die Ces`aro-Matrix deﬁniert durch ci,j := 1/i f¨ur 1 ≤ j ≤ i und ci,j = 0
+sonst. Zeigen Sie:
+(i) C : (cid:96)∞ → (cid:96)∞ ist ein beschr¨ankter Operator mit (cid:107)C(cid:107) = 1.
+(ii) Ct ∈ c und lim Ct = lim t f¨ur alle t ∈ c.
+
+(iii) C(bs) = c0
+
+Tip zu (ii): (cid:107)(cid:80)n
+
+j=1 tj/n− t(cid:107) = (cid:107)(cid:80)n
+
+j=1(tj − t)/n(cid:107) ≤ |(cid:80)N
+
+j=1(tj − t)/n| +|(cid:80)n
+
+j=N +1(tj − t)/n|
+
+3. Aufgabe: C[0,1] ist kein Hilbertraum
+Zeigen Sie dass C[0, 1] nicht das Parallelogrammgesetz erf¨ullt.
+
+4. Aufgabe: Hilbertr¨aume
+Sei A eine Menge. Deﬁniere
+
+(cid:96)2(A) :=(cid:8)f : A → K|{a ∈ A : f (a) (cid:54)= 0} ist h¨ochstens abz¨ahlbar und
+(i) (cid:96)2(A) ist ein Hilbertraum bez¨uglich f · g :=(cid:80)
+
+Zeigen Sie:
+
+a∈A f (a)g(a).
+
+|f (a)|2 < ∞(cid:9).
+
+(cid:88)
+
+a∈A
+
+(ii) {1a : a ∈ A} ist eine orthonormale Basis von (cid:96)2(A), wobei 1a(a) := 1, 1a(x) := 0 f¨ur
+
+alle x (cid:54)= a.
+
+(iii) Jeder Hilbertraum ist isometrisch isomorph zu einem (cid:96)2(A).
+
+5. Aufgabe: Separable Hilbertr¨aume
+Zeigen Sie: Ein Hilbertraum ist genau dann separabel, wenn seine orthonormale Dimension
+h¨ochstens abz¨ahlbar ist.
+
+Bitte wenden
+
+6. Aufgabe: Orthonormale Mengen in Hilbertr¨aumen
+Sei H ein Hilbertraum und {xj : j ∈ N} ⊆ H eine orthonormale Menge (xi (cid:54)= xj ∀i (cid:54)= j).
+Zeigen Sie:
+
+j=1(x· xj)xj und es gilt (x− y) ⊥ xj f¨ur alle j ∈ N.
+
+(i) F¨ur jedes x ∈ H existiert y :=(cid:80)∞
+(ii) Die Reihe(cid:80)∞
+
+j=1 xj konvergiert genau dann, wenn sie absolut konvergiert.
+
+Abgabe: 20. November (bis 12 Uhr) im Postfach 35
+
+

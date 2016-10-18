@@ -1,0 +1,88 @@
+Aufgabenblatt 8 
+
+Clusteranalyse 
+
+Aufgabe 1  
+
+Gegeben seien folgende nominale Daten von vier Personen: 
+
+ 
+1 
+2 
+3 
+4 
+
+ 
+
+Geschlecht 
+
+Familienstand 
+
+Hohes Preisbewusstsein 
+
+m 
+m 
+w 
+w 
+
+Verheiratet 
+Verheiratet 
+
+Ledig 
+Ledig 
+
+Ja 
+
+Nein 
+
+Ja 
+
+Nein 
+
+Kodieren Sie jeweils die Ausprägungen „männlich“, „Verheiratet“ und „hohes 
+Preisbewusstsein = ja“ mit 1 und überlegen Sie, ob der Tanimoto-Koeffizient oder Simple- 
+Matching geeignet sind, die Ähnlichkeit der Personen zu messen. 
+ 
+Beachten Sie folgende Informationen. 
+ 
+Ähnlichkeiten für nominale Merkmale 
+
+j                                           i 
+1 
+0 
+ 
+1: Eigenschaft vorhanden 
+
+1 
+a 
+b 
+
+0: Eigenschaft nicht vorhanden 
+
+0 
+c 
+e 
+
+a: Anzahl Eigenschaften, die bei beiden Objekten vorhanden sind 
+
+b: Anzahl Eigenschaften, die nur bei Objekte i vorhanden sind 
+
+c: Anzahl Eigenschaften, die nur bei Objekte j vorhanden sind 
+
+e: Anzahl Eigenschaften, die bei beiden Objekten nicht vorhanden sind 
+
+a + b + c + e = m 
+
+hier: 
+
+  Männlich: 1 
+  Verheiratet: 1 
+  Hohes Preisbewusstsein = ja : 1 
+
+ 
+ 
+ 
+ 
+ 
+
+

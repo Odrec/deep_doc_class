@@ -1,0 +1,30 @@
+¨Ubungen Einf¨uhrung in die Kombinatorische Optimierung
+Knust/Bruns/Lehnfeld
+
+Blatt 6
+
+WS 14/15
+Abgabe: 27.11.2014
+
+Aufgabe 11: (3 Punkte)
+F¨ur eine Reihenfolge π = (π1, . . . , πn) enth¨alt die Nachbarschaft Napi alle Permuta-
+tionen, die sich durch Vertauschen von zwei benachbarten Elementen ergeben. In der
+Nachbarschaft Nswap sind beliebige Vertauschungen zugelassen, bei der Nachbarschaft
+Nshif t werden Elemente an andere Positionen geschoben.
+Sind die Nachbarschaften Napi, Nswap, Nshif t zusammenh¨angend?
+Aufgabe 12: (4 Punkte)
+Betrachten Sie folgende Attributwahl f¨ur eine Tabusuche mit der Nachbarschaft Nswap.
+Werden die Elemente i, j in einer Reihenfolge vertauscht, so speichert man das Paar
+{i, j}. Ein Vertauschen der Elemente i, j ist nicht erlaubt, solange {i, j} in der Ta-
+buliste enthalten ist. Kann es bei diesem Tabukriterium passieren, dass L¨osungen
+mehrfach besucht werden? Werden Zyklen bei der Tabusuche verhindert?
+
+Programmieraufgabe P6: (12 Punkte)
+
+Implementieren Sie eine Tabusuche f¨ur das bin¨are Rucksackproblem und testen Sie sie
+anhand der (in Stud.IP verf¨ugbaren) Probleminstanzen rucksack{1-5}.txt. Experi-
+mentieren Sie mit verschiedenen Attributen und Stopp-Kriterien. Betrachten Sie Vari-
+anten, bei denen nur zul¨assige bzw. auch unzul¨assige L¨osungen erlaubt sind. Schreiben
+Sie einen kurzen Bericht zu den Ergebnissen (ca. eine Seite).
+
+

@@ -1,0 +1,41 @@
+Table of Contents
+
+Homework 7 .............................................................................................................. 1
+Task 1 a): Raster plot ................................................................................................... 1
+Task 1 b): Peri-stimulus time histogramm ........................................................................ 2
+Task 2: Cross-correlation .............................................................................................. 3
+
+Homework 7
+
+%
+%
+%
+%
+
+Tara Radovic: 962296
+Krzysztof Piekarski: 958157
+Sonja Ries: 955077
+correction seekers :)
+
+clear all;
+close all;
+
+Task 1 a): Raster plot
+
+load ('spiking.mat');
+%contains spike times of a single neuron over 47 tirals.
+
+% create raster plot with data from the first 10 trials
+for j = 1:10
+
+t = neuron(j).times;
+line([t,t],[j,j+1])
+hold on
+
+end
+title ('raster plot')
+hold off
+
+1
+
+

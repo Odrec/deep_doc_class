@@ -1,0 +1,38 @@
+ 
+
+Wintersemester 2014/2015
+
+Übungen zu
+
+ Elemente der diskreten Mathematik
+
+Blatt 10 
+
+Prof. Dr. Heinz Spindler 
+
+Abgabe bis Montag, den 12.01.2015, 12.00 Uhr 
+
+ 
+
+(cid:1) Aufgabe 1
+
+Es sei G (cid:1) (cid:2)E, K(cid:3) ein ebener Graph mit e (cid:4) 3 Ecken.
+
+a) Zeige: G hat höchstens 2 e (cid:5) 4 Flächen.
+
+b) Zeige: Hat G keine Dreiecke, so hat G höchstens e (cid:5) 2 Flächen.
+
+(cid:1) Aufgabe 2
+
+Zeige: Ein ebener Graph G (cid:1) (cid:2)E, K(cid:3) mit d(cid:2)a(cid:3) (cid:4) 5 für alle a (cid:6) E hat mindestens 12 
+Ecken.
+
+(cid:1) Aufgabe 3
+
+a) Es sei G ein ebener Graph, so dass d(cid:2)a(cid:3) für alle Ecken gerade ist. Zeige: Die 
+Flächen von G können mit zwei Farben gefärbt werden. 
+
+b) Es gibt keinen ebenen Graphen mit nur geraden Ecken, so dass alle beschränkten 
+Flächen Dreiecke sind und die unbeschränkte Fläche ein Fünfeck ist. 
+
+

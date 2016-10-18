@@ -1,0 +1,41 @@
+Table of Contents
+
+Homework 1 ...................................................................................................................... 1
+Compute orientation tuning curve .......................................................................................... 1
+Visualize data ....................................................................................................................  1
+Fit curve through data .........................................................................................................  2
+
+Homework 1
+
+% dfinger, bwinter, cgass, hwuebben, mapaul
+% 945299, 951213, 950628,  942069, 945318
+
+clear all
+close all
+
+load('Extracellular_Recording_trials_1.mat');
+
+Compute orientation tuning curve
+
+% compute orientations in degrees for x-axis
+x = linspace(0,157.5,8);
+
+%count spikes for each orientation
+spike_count = sum(d,3);
+
+%take mean count over the trials
+average_spikes = mean(spike_count,2);
+
+Visualize data
+
+x = x';
+
+figure;
+plot(x,average_spikes,'b.')
+xlabel('Orientation in Degrees')
+ylabel('Mean Spike Count')
+title('Tuning Curve')
+
+1
+
+

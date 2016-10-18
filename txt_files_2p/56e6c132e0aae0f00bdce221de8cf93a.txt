@@ -1,0 +1,35 @@
+Jun.-Prof. M. Spitzweck
+Dr. S. Tilson
+
+K¨orper- und Galoistheorie
+
+¨Ubungsblatt 6
+
+10. Mai 2016
+
+Pro Aufgabe gibt es maximal 10 Punkte.
+
+Aufgabe 1 Sei K ein K¨orper der Charakteristik p > 0 und f ∈ K[X] ir-
+reduzibel. Sei r ∈ N maximal gew¨ahlt mit der Eigenschaft, dass es ein
+g ∈ K[X] gibt mit f = g(X pr). Zeigen Sie, dass dann der Separabi-
+lit¨atsgrad [(K[X]/(f )) : K]s gleich grad(g) ist.
+
+Aufgabe 2 Bestimmen Sie den Grad und den Separabilit¨atsgrad eines Zer-
+
+f¨allungsk¨orpers des Polynoms X 6 − t ∈ F2(t)[X] ¨uber F2(t).
+
+Aufgabe 3 Sei K ein K¨orper der Charakteristik 0 und f ∈ K[X] ein nicht-
+konstantes Polynom. Sei g := ggT(f, f(cid:48)). Zeigen Sie, dass f
+g die selben
+Nullstellen wie f hat und separabel ist. Gilt diese Aussage auch, wenn
+K positive Charakterisitik hat?
+
+Aufgabe 4 Sei K ein vollkommener K¨orper. Zeigen Sie, dass jede algebrai-
+sche Erweiterung von K auch vollkommen ist. Gilt diese Aussage auch,
+wenn man eine beliebige Erweiterung von K betrachtet?
+
+Abgabe bis zum 17. Mai um 12 Uhr
+
+1
+
+

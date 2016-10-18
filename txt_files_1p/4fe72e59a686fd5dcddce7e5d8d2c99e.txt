@@ -1,0 +1,125 @@
+Gleichungsbasierte Modelle I
+
+Malchow, Bengfort, Vortkamp
+
+Aufgabenblatt 7.
+
+Abgabe bis Mi, 01.06.2016
+
+1 Chaos in einer dreikomponentigen Nahrungskette
+
+(10 P)
+
+Wir betrachten ein Modell einer Nahrungskette bestehend aus einer Beute N , einem R¨auber B und einem
+Top-R¨auber P .
+
+(cid:18)
+
+(cid:19)
+
+dN
+dt
+dB
+dt
+dP
+dt
+
+= rN
+
+= 1a1
+
+= 2a2
+
+1 − N
+K
+
+N
+
+H1 + N
+
+B
+
+H2 + B
+
+B
+
+N
+
+− a1
+H1 + N
+B − m1B − a2
+P − m2P
+
+B
+
+H2 + B
+
+P
+
+(1)
+
+(2)
+
+(3)
+
+(5)
+
+Die Beute w¨achst logistisch mit Wachstumsrate r und Kapazit¨at K. Die funktionellen Reaktionen der
+R¨auber sind jeweils vom Holling-Typ II mit einer maximalen Fressrate a1,2 und halben S¨attigungsdichten
+H1,2. Die Parameter 1,2 beschreiben die Eﬀektivit¨at der Biomassenumwandlung. Beide R¨auber unterlie-
+gen weiterhin einer Sterblichkeit mit der jeweiligen Mortalit¨atsrate m1,2.
+
+1. L¨ose das System (1-3) f¨ur den folgenden Parametersatz numerisch im Intervall t = [0, 10000].
+
+r = 0.265, K = 5.3, a1 = a2 = 0.4, H1 = 0.6, H2 = 1.0, 1 = 2 = 0.6, m1 = 0.175, m2 = 0.05
+
+Stelle das Ergebnis im Phasenraum N − B − P dar.
+Hinweis: Bei Verwendung des Euler-Verfahrens solltest Du eine Schrittweite von ∆t = 0.1 ver-
+wenden. Die Berechnung kann dann schon ein paar Sekunden (je nach Computer) in Anspruch
+nehmen.
+
+(4)
+
+2. Vergleiche diese L¨osung mit einer weiteren L¨osung f¨ur eine nahe benachbarte Anfangsbedingung.
+
+Plotte dazu f¨ur beide L¨osungen jeweils eine Art (z.B. B) ¨uber die Zeit.
+
+3. Erstelle einen Poincar´e-Schnitt f¨ur die N − B-Ebene bei P = 0.2 und den Parametersatz (4).
+4. Erstelle eine Maximumsabbildung f¨ur die Zustandsgr¨oße P mit dem Parametersatz (4).
+
+2 Zeltabbildung
+
+(8 P)
+
+In einer iterierten Abbildung wird der Wert von x zum diskreten Zeitpunkt ti+1 (also xi+1) durch den
+Wert von x zum Zeitpunkt ti (also xi) bestimmt.
+Betrachte die einfache iterierte Abbildung f (xi) = xi+1 mit einem Anfangswert x0, sodass 0 ≤ x0 ≤ 1. :
+
+(cid:26) rxi,
+
+f (xi) =
+
+r − rxi,
+
+0 ≤ xi ≤ 1
+2 ≤ xi ≤ 1
+
+2
+
+1
+
+• Welches sind die station¨aren Punkte dieser Abbildung? (Wann gilt xn+1 = xn?)
+• Gib die Stabilit¨at dieser Punkte in Abh¨angigkeit des Parameters r an.
+• Implementiere die iterierte Abbildung (5) in einer Programmiersprache deiner Wahl. Starte bei
+einem beliebigen Wert f¨ur 0 < x0 < 1 und iteriere etwa 300 Schritte um transientes Verhalten
+(d.h. Einschwingvorg¨ange) zu eliminieren. Dann speichere nur die folgenden 200 Schritte. Wieder-
+hole dies f¨ur viele (etwa 1000 oder mehr*) Werte von r im Intervall 1 < r < 1.5 und stelle die
+Ergebnisse in einem x/r Diagramm dat. Verwende f¨ur die Darstellung der Werte kleine Punkte (in
+Matlab/Octave hilft die Option ’.’,’markersize’,2 in gnuplot gibt es die Option with dots.)
+Achte darauf, dass diese Punkte nicht mit Linien verbunden werden.
+
+• Was beobachtest du, wenn du einzelne Abschnitte des Plots vergr¨oßerst?
+
+* Sollte dein Computer zu langsam sein, reduziere die Anzahl der Variationen von r.
+
+

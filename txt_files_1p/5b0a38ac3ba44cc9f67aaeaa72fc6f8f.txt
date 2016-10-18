@@ -1,0 +1,42 @@
+ 
+
+Wintersemester 2014/2015
+
+Übungen zu
+
+ Elemente der diskreten Mathematik
+
+Blatt 9 
+
+Prof. Dr. Heinz Spindler 
+
+Abgabe bis Montag, den 15.12. 2014, 12.00 Uhr 
+
+ 
+
+(cid:1) Aufgabe 1
+
+a) Gibt es einen Graphen mit 6 Ecken und den Graden 2,3,3,3,3,3?
+
+b) Gibt es einen Graphen mit 6 Ecken und den Graden 0,1,2,3,4,5?
+
+c) Wie viele Graphen (bis auf Isomorphie) mit 4 Ecken und den Graden 1,1,2,2 gibt 
+es?
+
+d) Wie viele 1-reguläre Graphen mit 10 Ecken gibt es?
+
+e) Zeige: Für alle n (cid:1) (cid:2), n (cid:3) 1 gilt: Es gibt einen 3-regulären Graphen mit 2 n Ecken.
+
+(cid:1) Aufgabe 2
+
+Es sei G (cid:4) (cid:5)E, K(cid:6) ein Graph. Eine Teilmenge A (cid:7) E heißt unabhängig, wenn für alle 
+a, b (cid:1) A der Abstand d(cid:5)a, b(cid:6) mindestens 2 ist. Α(cid:5)G(cid:6) ist definiert als das Maximum 
+max (cid:9) (cid:10)A(cid:11) A (cid:7) E unabhängig(cid:12).
+
+a) Zeige: Α(cid:5)G(cid:6) (cid:13) (cid:10)E(cid:11)
+
+(cid:14)(cid:5)G(cid:6)(cid:15)1
+
+, wobei (cid:14)(cid:5)G(cid:6) (cid:4) max (cid:9)d(cid:5)a(cid:6) a (cid:1) E(cid:12) der maximale Grad von 
+
+

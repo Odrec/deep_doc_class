@@ -1,0 +1,107 @@
+500
+
+J. Physiol. (I952) I I7, 500-544
+
+A QUANTITATIVE DESCRIPTION OF MEMBRANE
+CURRENT AND ITS APPLICATION TO CONDUCTION
+
+AND EXCITATION IN NERVE
+
+BY A. L. HODGKIN AND A. F. HUXLEY
+
+From the Physiological Laboratory, University of Cambridge
+
+(Received 10 March 1952)
+
+This article concludes a series of papers concerned with the flow of electric
+current through the surface membrane of a giant nerve fibre (Hodgkin,
+Huxley & Katz, 1952; Hodgkin & Huxley, 1952 a-c). Its general object is to
+the results of the preceding papers (Part I), to put them into
+discu
+mathematical form (Part II) and to show that they will account for con-
+duction and excitation in quantitative terms (Part III).
+
+PART I. DISCUSSION OF EXPERIMENTAL RESULTS
+
+The results described in the preceding papers suggest that the electrical
+behaviour of the membrane may be represented by the network shown in
+Fig. 1. Current can be carried through the membrane either by charging the
+membrane capacity or by movement of ion-s through the resistances in parallel
+with the capacity. The ionic current is divided into components carried by
+sodium and potassium ions (INa and IK), and a small 'leakage current' (I,)
+made up by chloride and other ions. Each component of the ionic current is
+determined by a driving force which may conveniently be measured as an
+electrical potential difference and a permeability coefficient which has the
+dimensions of a conductance. Thus the sodium current (INa) is equal to the
+sodium conductance (9Na) multiplied by the difference between the membrane
+potential (E) and the equilibrium potential for the sodium ion (ENa). Similar
+equations apply to 'K and I, and are collected on p. 505.
+Our experiments suggest that gNa and 9E are functions of time and
+membrane potential, but that ENa, EK, El, CM and g, may be taken as
+constant. The influence of membrane potential on permeability can be sum-
+marized by stating: first, that depolarization causes a transient increase in
+sodium conductance and a slower but maintained increase in potassium con-
+ductance; secondly, that these changes are graded and that they can be
+reversed by repolarizing the membrane. In order to decide whether these
+effects are sufficient to account for complicated phenomena such as the action
+potential and refractory period, it is necessary to obtain expressions relating
+
+MEMBRANE CURRENT IN NERVE
+
+501
+the sodium and potassium conductances to time and membrane potential.
+Before attempting this we shall consider briefly what types of physical system
+are likely to be consistent with the observed changes in permeability.
+
+Outside
+
+T
+
+INT TK
+
+CM~~~~~~+
+
+ItE
+
++
+
+Fig. 1.
+
+Electrical circuit representing membrane. RB
+RK vary with time and membrane potential; the other components are constant.
+
+=l/gNa; RK= l/9K; RI= 1/#1. RNw and
+
+Inside
+
+)
+
+The nature of the permewablity change8
+
+At present the thickness and composition of the excitable membrane are
+unknown. Our experiments are therefore unlikely to give any certain informa-
+tion about the nature of the molecular events underlying changes in perme-
+ability. The object of this section is to show that certain types of theory are
+excluded by our experiments and that others are consistent with them.
+
+The first point which emerges is that the changes in permeability appear to
+depend on membrane potential and not on membrane current. At a fixed
+depolarization the sodium current follows a time course whose form is inde-
+pendent of the current through the membrane. If the sodium concentration
+is such that ENaB<E, the sodium current is inward; if it is reduced until
+ENa > E the current changes in sign but still appears to follow the same time
+course. Further support for the view that membrane potential is the variable
+controlling permeability is provided by the observation that restoration of the
+normal membrane potential causes the sodium or potassium conductance to
+decline to a low value at any stage of the response.
+
+The dependence of 9Na and g9
+
+on membrane potential suggests that the
+permeability changes arise from the effect of the electric field on the distribu-
+tion or orientation of molecules with a charge or dipole moment. By this we
+do not mean to exclude chemical reactions, for the rate at which these occur
+might depend on the position of a charged substrate or catalyst. All that is
+intended is that small changes in membrane potential Would be most unlikely
+
+

@@ -1,0 +1,222 @@
+Psychopharmacology (2009) 206:515–530
+DOI 10.1007/s00213-009-1561-0
+
+REVIEW
+
+From drugs to deprivation: a Bayesian framework
+for understanding models of psychosis
+
+P. R. Corlett & C. D. Frith & P. C. Fletcher
+
+Received: 10 February 2009 / Accepted: 29 April 2009 / Published online: 28 May 2009
+# The Author(s) 2009. This article is published with open access at Springerlink.com
+
+Abstract
+Introduction Various experimental manipulations, usually
+involving drug administration, have been used to produce
+symptoms of psychosis in healthy volunteers. Different
+drugs produce both common and distinct symptoms. A
+challenge is to understand how apparently different manip-
+ulations can produce overlapping symptoms. We suggest
+that current Bayesian formulations of information process-
+ing in the brain provide a framework that maps onto neural
+circuitry and gives us a context within which we can relate
+the symptoms of psychosis to their underlying causes. This
+helps us to understand the similarities and differences
+across the common models of psychosis.
+Materials and methods The Bayesian approach emphasises
+processing of information in terms of both prior expectan-
+
+P. R. Corlett : P. C. Fletcher
+Department of Psychiatry, Brain Mapping Unit,
+University of Cambridge,
+Downing Site,
+Cambridge CB2 3EB, UK
+
+C. D. Frith
+Wellcome Trust Centre for Neuroimaging,
+12 Queen Square,
+London WC1N 3BG, UK
+
+P. R. Corlett
+Abraham Ribicoff Research Facility, Connecticut Mental
+Health Centre, Yale University Medical School,
+New Haven, CT, USA
+
+P. C. Fletcher (*)
+Department of Psychiatry, Addenbrooke’s Hospital,
+University of Cambridge,
+P.O. Box 255, Cambridge CB2 2QQ, UK
+e-mail: pcf22@cam.ac.uk
+
+cies and current inputs. A mismatch between these leads us
+to update inferences about the world and to generate new
+predictions for the future. According to this model, what we
+experience shapes what we learn, and what we learn
+modifies how we experience things.
+Discussion This simple idea gives us a powerful and
+flexible way of understanding the symptoms of psychosis
+where perception, learning and inference are deranged. We
+examine the predictions of the cognitive model in light of
+what we understand about
+the neuropharmacology of
+psychotomimetic drugs and thereby attempt to account for
+the common and the distinctive effects of NMDA receptor
+antagonists, serotonergic hallucinogens, cannabinoids and
+dopamine agonists.
+Conclusion By acknowledging the importance of percep-
+tion and perceptual aberration in mediating the positive
+symptoms of psychosis, the model also provides a useful
+setting in which to consider an under-researched model of
+psychosis—sensory deprivation.
+
+Keywords Bayesian learning . Prediction error . Perception .
+Belief . Psychotomimetic drugs
+
+Introduction
+
+[The] world is …what we make of it. Once our mould
+for world making is formed it most strongly resists
+change. The psychodelics (sic) allow us, for a little
+while, to divest ourselves of these acquired assump-
+tions and to see the universe again with an innocent
+eye (Osmond 1957).
+
+516
+
+Psychopharmacology (2009) 206:515–530
+
+In the first review of psychotomimetic drugs and their
+clinical implications, Humphrey Osmond outlined what he
+felt were the future directions for the field of model
+psychoses. He emphasised a number of themes, including
+the importance of drug-induced alterations in perceptions
+and expectations. This is an interesting starting point for
+our paper because, as has often been noted (Corlett et al.
+2007; Freedman 1974; Maher 1974; McGhie and Chapman
+1961), such alterations may be an important component of
+the state of emerging psychosis (see Corlett et al. 2007 for
+discussion).
+
+Drug models of psychosis need a cognitive neuroscience
+perspective. Without it, though the pharmacology of such
+models may be understood with great subtlety and
+sophistication, our understanding of how the pharmacology
+links to the symptoms will remain incomplete (Kandel
+1999; Kapur 2003). It may ultimately prove that this link
+will be critical in understanding how it is that such apparently
+different manipulations lead to common symptoms.
+
+The cognitive framework that we apply derives from a
+current
+theory of brain function (Friston 2005a) and
+emphasises the hierarchical interactions between top-down
+and bottom-up processes, which enable our perception and
+prediction of the world (Friston 2005a; Mumford 1992).
+Our suggestion is that all experimental interventions that
+induce psychotic symptoms affect the interaction between
+subjects' predictions about the world and the sensory inputs
+that
+this
+interaction shapes experience and learning and, when it is
+disrupted, these will be correspondingly altered, engender-
+ing the altered experiences that characterise the effects of
+psychotomimetic drug administration (Freedman 1974) as
+well as the early stages of endogenous psychoses (Maher
+1974; McGhie and Chapman 1961).
+
+they encounter. Under normal circumstances,
+
+Having drawn attention to the key features of this model,
+we will outline how the processes might be implemented in
+the brain. We will go on to consider how each of the major
+psychotomimetic drugs interacts with this model of brain
+function and therefore how these apparently very different
+neurochemical manipulations may produce common psy-
+chological effects. There are, however, notable differences
+between the psychotomimetic drugs, and we will attempt to
+account for these within the scheme. Finally, we will test
+the predictions of our model with reference to sensory
+deprivation—a preparation that induces psychotic symptoms
+non-pharmacologically (Bexton et al. 1954; Scott et al. 2007).
+
+Learning, expectation and mismatch: Bayesian ideas
+of how we experience the world
+
+Bayesian perspectives on cognitive processing are now
+very widespread (Shanks 2006). They emphasise a central
+
+theme that has long been present even in models that do not
+that of perception as ‘uncon-
+explicitly mention Bayes:
+scious inference’ (Barlow 1990; Helmholtz 1871/1971).
+The key insight offered here is that our perception (our
+experience of the world) is conditional upon what we
+expect and in turn leads to inferences about the world,
+which alter
+future expectations. There are numerous
+illusions which reflect this simple truth, producing their
+effects by appealing to prior beliefs such that incoming
+sensory information is seemingly altered to fit with these.
+This is the essence of Bayes' Theorem: Incoming informa-
+tion is interpreted in light of our prior expectations.
+
+Critical to understanding such models is the recognition
+inputs,
+that mismatches between expected and actual
+known as prediction errors (Rescorla and Wagner 1972;
+Schultz and Dickinson 2000), are important in learning and
+experience. Bayesian treatments of learning and perception
+represent subjects' beliefs—their predictions about
+the
+world—as a probability distribution (Kruschke 2008). A
+key problem faced by the brain is to infer the causes of
+sensory events in the environment (Friston 2005a) and to
+use those causes in cognition and comportment (Mumford
+1992). A measure of its success at any time is if the
+environment is well-predicted, that is, if prediction error
+(also referred to as ‘free energy’; Friston 2005a) engen-
+dered by environmental events is minimised. To meet the
+challenge of minimising error, new information must be
+integrated with existing world models, where necessary
+leading to updating of these models such that recurrence of
+that particular information can be made predictable.
+
+level,
+
+the level of
+
+the computational
+
+In terms of David Marr's levels of analysis (Marr 1982),
+the model offers an explanation of what the brain must
+achieve: First at
+it predicts its
+to respond adaptively to its
+sensory inputs in order
+environment. Second, at the algorithmic level, it employs
+a hierarchical Bayesian strategy to make and adapt this
+prediction. Third, at
+implementation, we
+suggest that feedback (NMDA) and feed-forward (AMPA)
+signalling in the hierarchy are responsible for the specifi-
+cation of the priors (or predictions) and the prediction error
+respectively and that, furthermore, the impact of a particular
+prediction error is modulated by various slow, modulatory
+neurotransmitters (dopamine and acetylcholine).
+
+The same interactive framework has been applied to
+single neurons, whose behaviour is driven by their inputs as
+well as their expectancies based on prior experience
+(Deneve 2008a, b; Fiorillo 2008). In one such model, the
+inputs are specified by glutamatergic signals incumbent
+upon the cell. In these finer-grained treatments, priors are
+specified by the number and functional status of potassium
+channels in the cell membrane, which modulate the cell's
+responsivity to stimulation (Fiorillo 2008). We note with
+interest
+individuals with an autoimmune disorder,
+
+that
+
+

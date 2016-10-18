@@ -1,0 +1,279 @@
+Slowness and Sparseness Have Diverging Effects on
+Complex Cell Learning
+
+Jo¨ rn-Philipp Lies1, Ralf M. Ha¨ fner2, Matthias Bethge1,3,4*
+
+1 Werner Reichardt Centre for Integrative Neuroscience, University of Tu¨ bingen, Tu¨ bingen, Germany, 2 Swartz Center for Theoretical Neurobiology, Brandeis University,
+Waltham, Massachusetts, United States of America, 3 Bernstein Center for Computational Neuroscience, Tu¨ bingen, Germany, 4 Max Planck Institute for Biological
+Cybernetics, Tu¨ bingen, Germany
+
+Abstract
+
+Following earlier studies which showed that a sparse coding principle may explain the receptive field properties of complex
+cells in primary visual cortex, it has been concluded that the same properties may be equally derived from a slowness
+principle. In contrast to this claim, we here show that slowness and sparsity drive the representations towards substantially
+different receptive field properties. To do so, we present complete sets of basis functions learned with slow subspace
+analysis (SSA) in case of natural movies as well as translations, rotations, and scalings of natural images. SSA directly parallels
+independent subspace analysis (ISA) with the only difference that SSA maximizes slowness instead of sparsity. We find a
+large discrepancy between the filter shapes learned with SSA and ISA. We argue that SSA can be understood as a
+generalization of the Fourier transform where the power spectrum corresponds to the maximally slow subspace energies in
+SSA. Finally, we investigate the trade-off between slowness and sparseness when combined in one objective function.
+
+Citation: Lies J-P, Ha¨fner RM, Bethge M (2014) Slowness and Sparseness Have Diverging Effects on Complex Cell Learning. PLoS Comput Biol 10(3): e1003468.
+doi:10.1371/journal.pcbi.1003468
+
+Editor: Jorg Lucke, Technische Universita¨t Berlin, Germany
+
+Received January 2, 2013; Accepted December 19, 2013; Published March 6, 2014
+Copyright: ß 2014 Lies et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted
+use, distribution, and reproduction in any medium, provided the original author and source are credited.
+
+Funding: This work was supported by the Max Planck Society and the German Ministry of Education, Science, Research and Technology through the Bernstein
+award to MB (BMBF; FKZ: 01GQ0601), the Bernstein Center for Computational Neuroscience, Tuebingen (BMBF; FKZ: 01GQ1002), and the German Excellency
+Initiative through the Centre for Integrative Neuroscience Tu¨ bingen (EXC307). RMH acknowledges funding from the Swartz Foundation. We acknowledge support
+by Deutsche Forschungsgemeinschaft and Open Access Publishing Fund of Tuebingen University. The funders had no role in study design, data collection and
+analysis, decision to publish, or preparation of the manuscript.
+
+Competing Interests: The authors have declared that no competing interests exist.
+
+* E-mail: matthias@bethgelab.org
+
+Introduction
+
+in order
+
+The appearance of objects in an image can change dramatically
+depending on their pose, distance, and illumination. Learning
+representations that are invariant against such appearance changes
+can be viewed as an important preprocessing step which removes
+distracting variance from a data set
+to improve
+performance of downstream classifiers or regression estimators
+[1]. Clearly, it is an inherent part of training a classifier to make its
+response invariant against all within-class variations. Rather than
+learning these invariances for each object class individually,
+however, we observe that many transformations such as transla-
+tion, rotation and scaling apply to any object independent of its
+specific shape. This suggests that signatures of such transforma-
+tions exist in the spatio-temporal statistics of natural images which
+allow one to learn invariant representations in an unsupervised
+way.
+
+Complex cells in primary visual cortex are commonly seen as
+building blocks for such invariant image representations (e.g. [2]).
+While complex cells,
+like simple cells, respond to edges of
+particular orientation they are less sensitive to the precise location
+of the edge [3]. A variety of neural algorithms have been proposed
+that aim at explaining the response properties of complex cells as
+components of an invariant representation that is optimized for
+the spatio-temporal statistics of the visual input [4–12].
+
+The two main objectives used for the optimization of models of
+neural representations are sparseness and slowness. While in the
+
+is better interpreted as a measure of
+
+context of unsupervised representation learning the two objectives
+have been proposed to similarly explain the receptive field
+properties of complex cells,
+there are important differences
+between them that may help to identify the algorithms used in
+biological vision. Intuitively, the slowness objective can be seen as
+a measure of approximate invariance or ‘‘tolerance’’, whereas
+sparseness
+selectivity.
+Tolerance and selectivity—or slowness and sparseness, respective-
+ly—can be understood as complementary goals which both play
+an important role for solving the task of object recognition [13]. A
+prominent view that goes back to Fukushima’s proposal of the
+necognitron (1980) is that these goals are pursued in an alternating
+fashion by alternating layers of S and C cells where the S cells are
+optimized for selectivity and the C cells are optimized for
+tolerance. This idea has been inspired by the finding of simple
+and complex cells in primary visual cortex which also motivated
+the terminology of S and C cells.
+
+Thus, based on the strong association between complex cells
+and invariance, one would expect
+that slowness rather than
+sparseness should play a critical role for complex cell represen-
+tations. In this study, we investigate the differences between
+slowness and sparseness for shaping the receptive field properties
+of complex cells.
+
+While for natural signals it may be impossible to find perfectly
+invariant representations, slowness seeks to find features that at
+least change as
+the appearance
+transformations exhibited in the data [16,9–12,14–27]. In contrast
+
+slowly as possible under
+
+PLOS Computational Biology | www.ploscompbiol.org
+
+1
+
+March 2014 | Volume 10 |
+
+Issue 3 | e1003468
+
+Author Summary
+
+A key question in visual neuroscience is how neural
+representations achieve invariance against appearance
+changes of objects. In particular, the invariance of complex
+cell
+responses in primary visual cortex against small
+translations is commonly interpreted as a signature of an
+invariant coding strategy possibly originating from an
+unsupervised learning principle. Various models have been
+proposed to explain the response properties of complex
+cells using a sparsity or a slowness criterion and it has been
+concluded that physiologically plausible receptive field
+properties can be derived from either criterion. Here, we
+show that the effect of the two objectives on the resulting
+receptive field properties is in fact very different. We
+conclude that slowness alone cannot explain the filter
+shapes of complex cells and discuss what kind of
+experimental measurements could help us to better asses
+the role of slowness and sparsity for complex cell
+representations.
+
+to sparse representation learning which is
+tightly linked to
+generative modeling, many slow feature learning algorithms follow
+a discriminative or coarse-graining approach: they do not aim at
+modeling all variations in the sensory data but rather classify parts
+of it as noise (or some dimensions as being dominated by noise)
+and then discard this information. This is most obvious in the case
+of slow feature analysis (SFA) [21]. SFA can be seen as a special
+case of oriented principal component analysis which seeks to
+determine the most informative subspace under the assumption
+that fast changes are noise [28]. While it is very likely that some
+information is discarded along the visual pathway, throwing away
+information in modeling studies requires great caution. For
+example, if one discards all high spatial frequency information in
+natural images one would easily obtain a representation which
+changes more slowly in time. Yet, this improvement in slowness is
+not productive as high spatial frequency information in natural
+images cannot be equated with noise but often carries critical
+information. We therefore compare complete sets of filters learned
+with slow subspace analysis (SSA) [9] and independent subspace analysis
+(ISA) [4], respectively. The two algorithms are perfectly identical
+with the only difference that SSA maximizes slowness while ISA
+maximizes sparsity.
+
+For sparseness it is common to show complete sets of filters, but
+this is not so in case of slowness. Based on the analysis of a small
+subset of filters, it has been argued that SSA may generally yield
+similar results to ISA [9]. In contrast, we here arrive at quite the
+opposite conclusion: by looking at the complete representation we
+find a large discrepancy between the filter shapes derived with SSA
+and those derived with ISA. Most notably, we find that SSA does
+not lead to localized receptive fields as has been claimed ([9,29] —
+but see [28,30]).
+
+Complete representations optimizing slowness have previously
+been studied only for mixed objective functions that combined
+slowness with sparseness [8,31–33] but never when optimizing
+exclusively for slowness alone. Here we systematically investigate
+how a complete set of filters changes when varying the objective
+function from a pure slowness objective to a pure sparsity objective
+by using a weighted mixture of the two and gradually increasing
+the ratio of their respective weights. From this analysis we will
+conclude that the receptive field shapes shown in [8,31–33] are
+mostly determined by the sparsity objective rather than the
+slowness objective. That is the receptive fields would change
+relatively little if the slowness objective was dropped but it would
+
+Slowness and Sparseness in Complex Cell Learning
+
+change drastically if the sparsity objective was removed. These
+findings change our view of the effect of slowness and raise new
+questions that can guide us to a more profound understanding of
+unsupervised complex cell learning.
+
+Results
+
+from that of sparseness. Most
+
+The central result of this paper is the observation that the effect
+of the slowness objective on complex cell learning is substantially
+different
+likely this has gone
+unnoticed to date because previous work either did not derive
+complete representations from slowness or combined the slowness
+objective with a sparsity constraint which masked the genuine
+effect of slowness. Therefore, we here put a large effort into
+characterizing the effect of slow subspace learning on the complete
+set of filter shapes under various conditions. We first study a
+number of analytically defined transformations such as transla-
+tions, rotations, and scalings before we turn to natural movies and
+the comparison between slowness and sparseness.
+
+The general design common to SSA and ISA is illustrated in
+Figure 1. We apply a set of filters to the input x(t) and square the
+filter responses. Two filters form a 2-dimensional subspace (gray box
+in Figure 1) and the sum of squared filter responses of these two
+filters yield the subspace energy response. This can be seen as the
+squared radial component of the projection of the signal into the 2D
+subspace formed by the two respective filters. For example, if the
+filters are taken from the Fourier basis and grouped such that the
+two filters within each subspace have the same spatial frequency and
+orientation and 900 phase difference, the output z(t) at a fixed time
+instant t is the power spectrum of the image x(t). As input x(t) we
+used 11|11 image patches sampled from the van Hateren image
+database [34] and from the video database [35], vectorized to 121-
+dimensions, and applied SSA to all remaining 120 AC components
+after projecting out the DC component.
+
+In the first part of our study, the input sequence consisted of
+translations. As time-varying process for the translations, we
+implemented a two-dimensional random walk of an 11|11
+window over the full image. The shift amplitudes were drawn from
+a continuous uniform distribution between 0 and 2 pixels, allowing
+for subpixel shifts. The filters obtained from SSA are shown in
+Figure 2A. Each row contains the filter pairs of 6 subspaces, sorted
+by descending slowness from left to right and top to bottom. The
+filters clearly resemble global sine wave functions. The wave
+functions differ in spatial frequency and orientation between the
+different subspaces. Within each subspace, orientation and spatial
+frequency are almost identical, but phases differ significantly. In
+fact, the phase difference is close to 900 (90:20+3:80), resembling
+quadrature pairs of sine and cosine functions as it is the case for
+the two-dimensional Fourier basis. Accordingly,
+the subspace
+energy output z(t) of the resulting SSA representation is very
+similar to the power spectrum of the image x(t).
+
+In fact, one can think of SSA as learning a generalized power
+spectrum based on a slowness criterion. While the power spectrum
+is known to be invariant against
+translations with periodic
+boundary conditions, perfect invariance—or infinite slowness—is
+not achieved for the translations with open boundary conditions
+studied here (see Figure 2 B). The slowness criterion is best
+understood as a penalty of fast changes since it decomposes into an
+average over penalties of
+for each individual
+component (see methods). Therefore, we will always show the
+inverse slowness v for each component such that the smaller the
+area under the curve the better the average slowness.
+
+fast changes
+
+Compared to random subspaces, the decrease in v,
+
+i.e. the
+increase in slowness, is substantial: the average inverse slowness
+
+PLOS Computational Biology | www.ploscompbiol.org
+
+2
+
+March 2014 | Volume 10 |
+
+Issue 3 | e1003468
+
+

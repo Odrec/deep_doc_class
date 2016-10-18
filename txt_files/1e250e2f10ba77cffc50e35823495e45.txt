@@ -1,0 +1,49 @@
+ 
+Neuroinformatics Lecture (L7) 
+
+Prof. Dr. Gordon Pipa  
+Institute of Cognitive Science University of Osnabrück 
+
+ 
+
+Probability Distributions 
+ 
+
+We defined probability as: 
+(probability that the random variable X takes the Value xi)  
+ 
+
+•
+
+A Discrete Probability Distribution:  
+
+Rehearsal 
+
+𝑝(𝑋 = 𝑥𝑖) 
+
+A distribution is discrete if the random variable X is discrete, such that 
+the range of X is finite or countably infinite. 
+
+ 
+
+e.g. Poisson distribution, Bernoulli distribution, binomial distribution, 
+geometric distribution, negative binomial distribution 
+
+ 
+
+•
+
+A Continuous Probability Distribution :  
+
+A distribution of a random variable X is called continuous if the range of 
+X is uncountably infinite. 
+
+ 
+
+e.g. normal, uniform, chi-squared, and others. 
+
+ 
+
+ 
+
+

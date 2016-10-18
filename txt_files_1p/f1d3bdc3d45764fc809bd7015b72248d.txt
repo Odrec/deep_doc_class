@@ -1,0 +1,130 @@
+162
+
+Neural mechanisms of object recognition
+Maximilian Riesenhuber* and Tomaso Poggio†
+
+Single-unit recordings from behaving monkeys and human
+functional magnetic resonance imaging studies have continued
+to provide a host of experimental data on the properties and
+mechanisms of object recognition in cortex. Recent advances 
+in object recognition, spanning issues regarding invariance,
+selectivity, representation and levels of recognition have allowed
+us to propose a putative model of object recognition in cortex.
+
+Addresses
+McGovern Institute for Brain Research, Department of Brain & Cognitive
+Sciences, Center for Biological and Computational Learning and
+Artificial Intelligence Laboratory, Massachusetts Institute of Technology,
+Cambridge, Massachusetts 02142, USA
+*e-mail: max@ai.mit.edu
+†e-mail: tp@ai.mit.edu
+
+Current Opinion in Neurobiology 2002, 12:162–168
+
+0959-4388/02/$ — see front matter
+© 2002 Elsevier Science Ltd. All rights reserved.
+
+Published online 4th March 2002
+
+Abbreviations
+FFA
+fMRI
+IT
+Max
+PFC
+RBF
+V1
+V2
+
+fusiform face area
+functional magnetic resonance imaging
+inferotemporal cortex
+maximum
+prefrontal cortex
+radial basis function
+primary visual cortex
+secondary visual cortex
+
+Introduction
+Object recognition is fundamental to the behavior of higher
+primates. It is also the most remarkable achievement of the
+visual  cortex  and  one  that  probably  greatly  influences  its
+functional  architecture.  The  visual  system  rapidly  and
+effortlessly recognizes a large number of diverse objects in
+cluttered,  natural  scenes — a  very  difficult  computational
+task.  Here,  we  review  progress  in  this  field  over  the  past
+two years. We do so in the context of a recent quantitative
+model,  which  helps  us  summarize  and  organize  existing
+data as well as interpret contradictory, and occasionally ill-
+defined, claims. We organize the discussion of the new data
+around the four key issues of object recognition: invariance,
+selectivity, object representation and levels of recognition.
+
+Invariance
+Simple  cells  in  primary  visual  cortex  (V1)  have  small 
+receptive  fields  and  respond  preferentially  to  oriented
+bars.  Progressing  along  the  ventral  stream — thought  to
+play a central role in object recognition in cortex [1,2] —
+neurons show an increase in receptive field size and in the
+complexity of their preferred stimuli [3]. At the top of the
+ventral stream, in the inferotemporal  cortex (IT), cells are
+tuned to complex stimuli such as faces [4–7]. A hallmark of
+these IT cells is, in addition to selectivity, the robustness
+of  their  firing  to  stimulus  transformations,  such  as  scale 
+
+and  position  changes  [1,2,8,9].  In  contrast,  later  studies
+[8,10–12] have shown that most neurons show specificity
+for a certain object view or lighting condition. In particular,
+Logothetis et al. [8] trained monkeys to perform an object
+recognition  task  with  isolated  views  of  novel  objects
+(paperclips).  When  recording  from  the  animals’  IT,  they
+found that the great majority of neurons selectively tuned
+to  the  training  objects  showed  tight  tuning  to  a  specific
+view  of  one  of  the  training  objects  (a  few  units  showed
+greater  tolerance,  in  agreement  with  earlier  predictions
+[13]).  The  view-tuned  neurons  also  showed  an  average
+scale invariance of two octaves. That is, the neurons still
+responded  at  a  higher  level  to  the  scaled  image  of  their
+preferred  paperclip  than  to  other  paperclips,  even  when
+stimulus  size  was  varied  over  two  octaves.  Furthermore,
+the view-tuned neurons had an average translation invari-
+ance of 4° (for typical stimulus sizes of 2°) [14], which is
+much  smaller  than  previous  reports,  but  large  for  any 
+computational mechanism. A very recent study (JJ DiCarlo,
+JHR  Maunsell,  personal  communication),  using  different
+stimuli  and  training  paradigms,  reports  translation  invari-
+ance from one view of less than 3°, pointing to a possible
+influence of training history and object shape on invariance
+ranges.  Human  functional  magnetic  resonance  imaging
+(fMRI)  data  have  shown  a  similar  pattern  of  invariance
+properties for the lateral occipital cortex, a brain region in
+human  visual  cortex  central  to  object  recognition  and
+believed to be the homolog of monkey area IT [15–17].
+
+From  a  computational  point  of  view  one  might  ask  the
+question:  which  object  transformations  can  be  estimated
+from one versus several object views? It is well known that
+only a very small number of views are required to generalize
+object recognition across different uniform transformations
+[18• and references therein]. Scaling and translation in the
+image  plane,  for  instance,  solely  require  a  single  object
+view, as they preserve the original information of an image.
+In  this  case,  it  is  possible  to  dispense  with  the  need  for
+additional  examples  of  different  sizes  or  positions  in  the
+field of view. In sharp contrast, multiple views are generally
+required  to  recognize  objects  subjected  to  three-dimen-
+sional shape transformations, whether actual — such as the
+rotation of objects in depth — or induced — such as those
+resulting  from  illumination  changes.  The  frontal  view  of
+a novel  face,  for  instance,  does  not  contain  sufficient 
+information to predict the profile of that face. 
+
+Computational  considerations  such  as  these  lead  to  a 
+hierarchical architecture of a system for object recognition
+that instantiates the basic facts about the ventral pathways
+of  the  brain  [18•].  The  model  shown  schematically  in
+Figure 1 reflects the general organization of visual cortex
+in  a  series  of  layers  from  V1 → IT → prefrontal  cortex
+(PFC).  Invariance  properties  emerge  from  the  functional
+
+

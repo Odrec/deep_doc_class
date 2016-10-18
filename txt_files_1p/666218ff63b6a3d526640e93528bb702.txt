@@ -1,0 +1,45 @@
+ 
+
+Wintersemester 2014/2015
+
+Übungen zu
+
+ Elemente der diskreten Mathematik
+
+Blatt 11 Lösungen
+
+Prof. Dr. Heinz Spindler 
+
+Abgabe bis Montag, den 17.01.2015, 12.00 Uhr 
+
+ 
+
+(cid:1) Aufgabe 1
+Mit (cid:1)n(cid:2) bezeichnen wir die Menge aller natürlichen Zahlen k mit 1 (cid:3) k (cid:3) n. 
+Untersuche (mit Beweisen!) die folgenden Abbildungen auf Injektivität, Surjektivität, 
+Bijektivität. Bestimme gegebenenfalls die Umkehrabbildung.
+
+1)  f : (cid:1)5](cid:4)[6], f (cid:5) 1 2 3 4 5
+2 2 2 3 6
+
+, 2)   f : (cid:1)5](cid:4)[6], f (cid:5) 1 2 3 4 5
+2 3 1 5 6
+
+,
+
+3)   f : (cid:1)6](cid:4)[6],  f (cid:5) 1 2 3 4 5 6
+4 5 1 3 6 2
+f : (cid:10)(cid:4)(cid:10), f (cid:7)x(cid:8) (cid:5) x3 (cid:9) 4,
+6)   f : (cid:7)a, b, c(cid:8) (cid:12) (cid:6)3 a (cid:3) b (cid:3) c(cid:4)(cid:7)a, b, c(cid:8) (cid:12) (cid:6)3 a (cid:14) b (cid:14) c,
+
+.
+
+, 4)  f :(cid:6)(cid:4)(cid:6), f (cid:7)x(cid:8) (cid:5) x(cid:9) 32,  5) 
+
+f (cid:7)a, b, c(cid:8) (cid:5) (cid:7)a, b (cid:9) 1, c(cid:9) 2(cid:8)
+
+Lösung
+
+1) nicht injektiv, weil  f (cid:7)1(cid:8) (cid:5) f (cid:7)2(cid:8), nicht surjektiv, weil 6 (cid:15) 5.  nicht bijektiv, weil 
+
+

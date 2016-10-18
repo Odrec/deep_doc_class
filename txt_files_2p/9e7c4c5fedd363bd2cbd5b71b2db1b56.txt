@@ -1,0 +1,137 @@
+Whole Genome Sequencing Highlights Genetic Changes
+Associated with Laboratory Domestication of C.elegans
+
+Katherine P. Weber1, Subhajyoti De1, Iwanka Kozarewa2, Daniel J. Turner2, M. Madan Babu1, Mario de
+Bono1*
+
+1 Medical Research Council Laboratory of Molecular Biology, Cambridge, United Kingdom, 2 Wellcome Trust Sanger Institute, Hinxton, United Kingdom
+
+Abstract
+
+Defining the mutational landscape when individuals of a species grow separately and diverge over many generations can
+provide insights into trait evolution. A specific example of this involves studying changes associated with domestication
+where different lines of the same wild stock have been cultivated independently in different standard environments. Whole
+genome sequence comparison of such lines permits estimation of mutation rates, inference of genes’ ancestral states and
+ancestry of existing strains, and correction of sequencing errors in genome databases. Here we study domestication of the
+C. elegans Bristol strain as a model, and report the genome sequence of LSJ1 (Bristol), a sibling of the standard C. elegans
+reference wild type N2 (Bristol). The LSJ1 and N2 lines were cultivated separately from shortly after the Bristol strain was
+isolated until methods to freeze C. elegans were developed. We find that during this time the two strains have accumulated
+1208 genetic differences. We describe phenotypic variation between N2 and LSJ1 in the rate at which embryos develop, the
+rate of production of eggs, the maturity of eggs at laying, and feeding behavior, all the result of post-isolation changes. We
+infer the ancestral alleles in the original Bristol
+isolate and highlight 2038 likely sequencing errors in the original N2
+reference genome sequence. Many of these changes modify genome annotation. Our study provides a starting point to
+further investigate genotype-phenotype association and offers insights into the process of selection as a result of laboratory
+domestication.
+
+Citation: Weber KP, De S, Kozarewa I, Turner DJ, Babu MM, et al. (2010) Whole Genome Sequencing Highlights Genetic Changes Associated with Laboratory
+Domestication of C. elegans. PLoS ONE 5(11): e13922. doi:10.1371/journal.pone.0013922
+
+Editor: Ben Lehner, Centre for Genomic Regulation, Spain
+
+Received July 21, 2010; Accepted October 14, 2010; Published November 11, 2010
+Copyright: ß 2010 Weber et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits
+unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+
+Funding: This work was supported by the Medical Research Council (http://www.mrc.ac.uk/index.htm) and the Wellcome Trust (http://www.wellcome.ac.uk/). K.
+Weber was supported by a Marshall Scholarship (http://www.marshallscholarship.org/) and a National Science Foundation Graduate Fellowship (Fellow ID:
+2008068356; http://www.nsf.gov/funding/pgm_summ.jsp?pims_id = 6201). The funders had no role in study design, data collection and analysis, decision to
+publish, or preparation of the manuscript.
+
+Competing Interests: The authors have declared that no competing interests exist.
+
+* E-mail: debono@mrc-lmb.cam.ac.uk
+
+Introduction
+
+Selective breeding during domestication can lead to rapid and
+dramatic changes in phenotype [1]. Understanding domestication
+is important both because it can link phenotypic selection with
+genetic change, and because it has been central to human success
+[2,3]. Laboratory strains of model organisms are unusual examples
+of domestication in which extensive inbreeding has maximized
+phenotypic uniformity and artificial selection has been used to
+improve laboratory handling [4–6]. Inbred lab strains often
+exhibit significant phenotypic differences from wild isolates of the
+same species. For example, olfactory responses of lab strains of
+Drosophila differ from those of recently caught wild strains [7]. Lab-
+adapted mouse strains show reduced exploratory behavior [8],
+agility and strength [9], and risk aversion [10] compared to wild
+caught mice. However, the consequences of laboratory domesti-
+cation have not been systematically investigated in any animal.
+
+laboratory studies of
+
+With a few exceptions [11–16],
+
+the
+nematode C. elegans have used the same wild type reference strain:
+N2 (Bristol). The progenitor of this strain was collected in Bristol,
+England, sometime before 1956 by L.N. Staniland [17,18]. E.
+Dougherty took its descendants to California, where two stocks of
+the strain were maintained from 1956 by serial transfer, one in
+axenic liquid culture and the other on nutrient agar inoculated
+
+with E. coli [17]. In 1964, Dougherty sent Sydney Brenner at the
+MRC Laboratory of Molecular Biology one of these C. elegans sub-
+strains. Brenner used this
+stock to establish the laboratory
+reference C. elegans wild strain, which he called N2 (Bristol). At
+the MRC, N2 was maintained on agar plates with an E. coli food
+source until c. 1970, when the strain was frozen (Figure 1a).
+
+The sibling stock of the Bristol isolate that was cultivated in
+axenic liquid culture appears to have also survived, and is called
+LSJ1(Berkeley) [16]. Here we refer to it as LSJ1(Bristol) to indicate
+its origins. Distinct growth conditions and inadvertent selective
+breeding are likely to have exposed the N2 and LSJ1 sub-cultures
+to different selective pressures. Additionally, both strains likely
+experienced genetic bottlenecks, with associated founder affects,
+prior to freezing. Comparing the genomes of N2 and LSJ1 Bristol
+strains would highlight genetic changes associated with lab
+domestication as well as errors in the C. elegans reference genome.
+The ancestral and derived alleles at each polymorphic locus could
+also be established by comparing the genomes of Bristol-derived
+strains and of other wild C. elegans isolates.
+
+One striking difference between N2 and most other wild C.
+elegans isolates is in foraging [11]. N2 feeds alone, whereas most
+wild isolates feed in groups [11,15]. Dimorphism in foraging is
+associated with two alleles of the neuropeptide receptor npr-1 that
+differ at codon 215. Aggregating strains encode the ancestral npr-1
+
+PLoS ONE | www.plosone.org
+
+1
+
+November 2010 | Volume 5 |
+
+Issue 11 | e13922
+
+Domestication of C. elegans
+
+Figure 1. Laboratory strain cultivation history (a) and chromosomal distribution of N2/LSJ1 polymorphisms (b). (a) Red lines indicate
+that worms were maintained in solid culture, and blue lines in liquid culture. (b) SNPs are indicated by red hatches, and small insertions and deletions
+by blue hatches. Changes are distributed uniformly on chrmosomes I, II and X and slightly enriched on the arms of chromosomes III, IV and V (K-S test,
+P values adjusted using FDR).
+doi:10.1371/journal.pone.0013922.g001
+
+215F allele whereas N2 encodes npr-1 215V [11,19]. Twelve other
+wild isolates that are genetically closely related to N2 also show
+solitary behavior and encode npr-1 215V, which would be
+consistent with recent occurrence of the polymorphism in wild
+
+populations. Surprisingly however, the LSJ1 strain feeds in groups
+and encodes the npr-1 215F allele, which would suggest that the
+npr-1 215V allele arose during laboratory domestication of N2
+[13,20]. These conflicting data suggest two hypotheses: that the 12
+
+PLoS ONE | www.plosone.org
+
+2
+
+November 2010 | Volume 5 |
+
+Issue 11 | e13922
+
+

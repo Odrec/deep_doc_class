@@ -1,0 +1,345 @@
+Prof. Dr. T. Staufenbiel                          Universität Osnabrück 
+
+»TESTTHEORIE UND TESTKONSTRUKTION« 
+
+Demo‐Klausur: Lösungen 
+
+Die korrekten Antworten auf die 11 Multiple‐Choice Items lauten wie folgt: 
+
+Aufgabe Nr.: 
+
+Lösungs‐
+buchstabe: 
+
+1 
+
+d 
+
+2 
+
+e 
+
+3 
+
+f 
+
+4 
+
+c 
+
+5 
+
+b 
+
+6 
+
+e 
+
+7 
+
+a 
+
+8 
+
+d 
+
+9 
+
+a 
+
+10 
+
+11 
+
+a 
+
+e 
+
+ 
+
+ 
+
+ 
+
+,
+
+
+
+ik
+
+ij
+
+ij
+
+,
+
+
+
+ik
+
+ij
+
+ij
+
+ijx
+
+)
+
+  
+) 0
+
+  
+) 0
+
+12.  Axiom 1: Ziehen wir einen Pbn i zufällig aus einer Population von Personen, so wird der 
+wahre  Wert  von  i  in  einem  Item  j  definiert  als  der  Erwartungswert  der  beobachteten 
+Werte:  
+E(
+ 
+ij
+Axiom 2: Der beobachtete Wert einer Person in einem Item zerlegt sich additiv in den 
+wahren Wert und den Messfehler: 
+x      
+ij
+ij
+Axiom 3: Der Erwartungswert des Messfehlers ist gleich Null: 
+E(
+Axiom 4: Wahre Werte und Messfehler in einem Item oder in zwei verschiedenen Items 
+(j=k oder jk) korrelieren nicht (linear) miteinander: 
+Cor 
+(
+Axiom 5: Fehlerwerte einer Person in einem Item j korrelieren nicht mit den Fehlerwer‐
+ten in einem anderem Item k: 
+Cor 
+(
+(a)  Zur  Erfassung  der  Aquieszenz  kann  man  z.B.  solche  Items  heranziehen,  bei  denen 
+eine Zustimmung zum Iteminhalt äußerst unwahrscheinlich ist (die aber, um soziale Er‐
+wünschtheit als Erklärung auszuschließen, nicht sozial erwünschte Inhalte erfragen soll‐
+ten). Bsp.: „Ich schlafe nachts nie mehr als zwei Stunden.“  stimmt  stimmt nicht“. 
+Alternativ  kann  man  auch  Items  mit  unterschiedlicher  Polung  verwenden  und  dann 
+schauen, ob sich komplementäre Beantwortungen ergeben. Bsp.: 
+„Für mich ist es sehr wichtig, im Beruf erfolgreich zu sein.“  stimmt  stimmt nicht“  
+„Mir ist es gleichgültig, ob ich im Beruf erfolgreich bin.“  stimmt  stimmt nicht“ 
+ 
+(b) Items zur Erfassung der sozialen Erwünschtheit fragen nach sozial erwünschten Inhal‐
+ten, die aber nur sehr selten auftreten. Bsp.: „Ich bin manchmal ärgerlich, wenn ich mei‐
+nen Wille nicht bekomme.   stimmt   stimmt nicht“.  
+
+  
+) 0
+
+13. 
+
+ 
+
+– 1 –
+
+ 
+
+17.07.2014
+
+Prof. Dr. T. Staufenbiel                          Universität Osnabrück 
+
+ 
+
+ 
+
+14. 
+
+(a) z = (17 - 18.7) / 3.8 = -0.45, also T = 50 + 10·(-0.45) = 45.5 
+
+ 
+
+
+
+
+
+1
+
+
+
+
+
+z
+crit
+
+SD x
+( )
+
+(b) Das Konfidenzintervall  
+Rel
+x
+i
+kann  auf  der  Basis  des  Rohwerts  oder  T‐Wertes  bestimmt  werden.  Dann  ergibt  sich 
+entweder für den Rohwert 
+17 1.96 3.8
+
+oder für den T‐Standardwert: 
+45.5 1.96 10
+
+1 0.88 17 2.58
+
+
+[38.7,52.3]
+
+45.5 6.79
+
+[14.4,19.6]
+
+1 0.88
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+T2
+
+crit
+
+Rel
+
+2
+
+
+SD x
+( )
+
+
+z
+
+
+2 0.88 0.88 9.60
+
+
+(c) D = 5 und Einsetzen ergibt 
+D
+Rel
+crit
+T1
+10 1.96
+
+
+Da D < Dcrit, können wir bei der gewählten Irrtumswahrscheinlichkeit von 5% nicht aus‐
+schliessen, dass der Anstieg auf Messfehler zurückgeht. 
+(a) Durch Einsetzen erhält man die einfach minderungskorrigierte Validität: 
+Val
+
+0.482
+
+
+
+
+
+
+
+*
+
+ 
+
+Val
+Rel
+
+x
+
+0.45
+0.87
+
+15. 
+
+(b) Nachschlagen für BR = 0.50, SR = 10/100 = 0.10, Val = 0.45 ergibt eine Erfolgsquote 
+von EQ = 0.81. Für Val = 0 ist EQ = BR, also .50. Die Differenz beträgt also 31 Prozent‐
+punkte. 
+
+(c) Bestimmung von u = 3.92/7.42 = 0.28 und Einsetzen erhält man die um den Einfluss 
+der direkten Varianzeinschränkung im Prädiktor korrigierte Validität: 
+Val
+
+0.69
+
+ 
+
+
+
+
+
+ 
+
+0.45
+(1 0.45 ) 0.28
+
+ 
+
+2
+
+
+
+Val
+(1
+ 
+
+2
+
+Val
+
+2
+
+Val
+
+)
+
+
+
+u
+
+2
+
+0.45
+
+(d) Für den z‐Wert von (55-40.9)/7.4=1.91 entnimmt man der Normalverteilungs‐Tabelle, 
+dass dem in etwa ein Flächenanteil von p = 0.97 entspricht. Also dürften bei einer vorlie‐
+genden Normalverteilung nur ungefähr 3 BewerberInnen oberhalb des Cut‐offs liegen, 
+tatsächlich sind es 10. Dies spricht also dagegen, dass das erfasste Merkmal einer Nor‐
+malverteilung folgt (und vielmehr dafür, dass die Verteilung rechtssteil ist). 
+
+ 
+
+– 2 –
+
+ 
+
+17.07.2014
+
+

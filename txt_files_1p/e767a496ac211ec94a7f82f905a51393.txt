@@ -1,0 +1,83 @@
+The Plant Journal (2013)
+
+doi: 10.1111/tpj.12348
+
+TCP3 interacts with R2R3-MYB proteins, promotes ﬂavonoid
+biosynthesis and negatively regulates the auxin response in
+Arabidopsis thaliana
+
+Shutian Li* and Sabine Zachgo*
+Department of Botany, Osnabru¨ ck University, Barbarastr. 11, 49076 Osnabru¨ ck, Germany
+
+Received 2 September 2013; revised 16 September 2013; accepted 1 October 2013.
+*For correspondence (e-mails: zachgo@biologie.uni-osnabrueck.de or shutian.li@biologie.uni-osnabrueck.de).
+
+SUMMARY
+
+TCP proteins belong to the plant-speciﬁc bHLH transcription factor family, and function as key regulators of
+diverse developmental processes. Functional redundancy amongst family members and post-transcriptional
+down-regulation by miRJAW of several TCP genes complicate their functional characterization. Here, we
+explore the role of TCP3 by analyzing transgenic plants expressing miRJAW-resistant mTCP3 and dominant-
+negative TCP3SRDX. Seedlings and seeds of mTCP3 plants were found to hyper-accumulate ﬂavonols, an-
+thocyanins and proanthocyanidins, whereas levels of proanthocyanidins were slightly reduced in TCP3SRDX
+plants. R2R3-MYB proteins control not only early ﬂavonoid biosynthetic steps but also activate late ﬂavo-
+noid biosynthetic genes by forming ternary R2R3-MYB/bHLH/WD40 (MBW) complexes. TCP3 interacted in
+yeast with R2R3-MYB proteins, which was further conﬁrmed in planta using BiFC experiments. Yeast three-
+hybrid assays revealed that TCP3 signiﬁcantly strengthened the transcriptional activation capacity of R2R3-
+MYBs bound by the bHLH protein TT8. Transcriptome analysis of mTCP3 and TCP3SRDX plants supported a
+role for TCP3 in enhancing ﬂavonoid biosynthesis. Moreover, several auxin-related developmental abnor-
+malities were observed in mTCP3 plants. Transcriptome data coupled with studies of an auxin response
+reporter and auxin efﬂux carriers showed that TCP3 negatively modulates the auxin response, probably by
+compromising auxin transport capacity. Genetic experiments revealed that the chalcone synthase mutant
+tt4-11 lacking ﬂavonoid biosynthesis abrogated the auxin-related defects caused by mTCP3. Together, these
+data suggest that TCP3 interactions with R2R3-MYBs lead to enhanced ﬂavonoid production, which further
+negatively modulates the auxin response.
+
+Keywords: TCP3, ﬂavonoids, auxin response, R2R3-MYBs, MBW complexes, transparent testa 4.
+
+INTRODUCTION
+
+The plant-speciﬁc TCP family of transcription factors is
+named after the ﬁrst three identiﬁed members: TEOSINTE
+BRANCHED1 in maize (Zea mays), CYCLOIDEA (CYC) in
+Antirrhinum majus, and PROLIFERATING CELL NUCLEAR
+ANTIGEN FACTOR in rice (Oryza sativa). Repeated gene
+duplications during land plant evolution have enlarged this
+family of bHLH-containing DNA-binding proteins (Martın-
+Trillo and Cubas, 2010). The Arabidopsis thaliana genome
+encodes 24 TCP transcription factors. Based on the struc-
+ture of their conserved TCP domains, 13 TCP proteins have
+been identiﬁed as members of class I (TCP-P) and have
+been suggested to function as positive regulators of cell
+proliferation (Kosugi and Ohashi, 2002). The other 11 TCP
+proteins belong to class II (TCP-C). CYC controls ﬂoral sym-
+metry formation in Antirrhinum (Luo et al., 1996), and its
+Arabidopsis ortholog TCP1 participates in brassinosteroid
+
+© 2013 The Authors
+The Plant Journal © 2013 John Wiley & Sons Ltd
+
+two class
+
+biosynthesis and modulates longitudinal elongation of
+leaves and stems (Guo et al., 2010; Koyama et al., 2010b).
+The products of
+II/TCP-C genes, TCP12
+(BRANCHED2) and TCP18 (BRANCHED1), operate as inte-
+grators of branching signals within axillary buds (Aguilar-
+Martinez et al., 2007), and TCP12 has also been shown to
+repress the ﬂoral transition of axillary meristems (Niwa
+et al., 2013). Generation of miRJAW-resistant versions and
+dominant-negative forms of TCPs have revealed function-
+ally redundant roles for miRJAW-targeted CINCINNATA
+(CIN)-TCP genes (TCP2-4, TCP10 and TCP24) in the control
+of
+leaf morphogenesis and senescence by modulating
+jasmonate biosynthesis (Palatnik et al., 2003; Schommer
+et al., 2008). Class II CIN-TCPs have also been shown to
+regulate the morphogenesis of shoot lateral organs as well
+as correct petal and stamen development (Palatnik et al.,
+
+1
+
+

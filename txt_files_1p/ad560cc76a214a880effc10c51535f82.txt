@@ -1,0 +1,78 @@
+ 
+ 
+ 
+ 
+ 
+
+FG BWL / Management Support und WI 
+
+Management Support Systems I – WS 2014/2015 
+Übung Nr. 3 
+Bearbeitungszeit: 03.- 10. November 2014 
+
+Einige PowerCenter-Server-Fehler und ihre möglichen Ursachen 
+
+ 
+ 
+  Error: ORA-00001: Verstoß gegen Eindeutigkeit 
+ 
+
+Versuch Daten in eine Tabelle zu füllen, obwohl diese schon dort enthalten sind 
+=> Tabelleninhalte (falls sie zu  korrigieren  sind) zuerst löschen vor dem erneuten Start der 
+Session 
+
+ 
+  Error: ORA-01400: Einfügen von NULL nicht möglich 
+ 
+
+Versuch eine Spalte, die als NOT NULL definiert ist mit NULL zu füllen 
+=> Kontrollieren, ob die Verbindungen (blaue Pfeile) im Designer alle richtig definiert sind; 
+ansonsten Tabellendefinition ändern, wenn NULL-Werte erlaubt sind 
+
+ 
+ 
+  Error:  ORA-02291:  Verstoß  gegen  Integritätsregel.  Übergeordneter  Schlüssel  nicht 
+
+gefunden 
+
+ 
+
+Versuch  eine  Tabelle  mit  Fremdschlüssel  zu  füllen,  obwohl  die  Tabelle,  auf  die  der 
+Fremdschlüssel referenziert, noch nicht gefüllt ist 
+=> Reihenfolge beim Starten der Sessions ist zu beachten 
+
+ 
+ 
+  Error: ORA-00942: Tabelle oder View nicht vorhanden 
+ 
+
+Versuch auf eine Tabelle zu zugreifen, die nicht in der Quell- bzw. in der Zieldatenbank zu 
+finden ist 
+=>  Kontrollieren  der  Session-Definition,  ob  die  Database  Connections 
+Quelldatenbank (sandburg) und Zieldatenbank (sandburg) stimmen 
+=>  Überprüfen,  ob  das  Create-Skript  richtig  gelaufen  ist  und  alle  Tabellen  in  der 
+Zieldatenbank erzeugt wurden 
+
+für  die 
+
+ 
+  Error: ORA-26002: Table Gxx.RDL xxx has index defined upon it. 
+ 
+
+Lässt auf einen falschen Target Load Type schliessen 
+==> Target Load Type umstellen auf "normal" via Tools -> Options -> Miscellaneous -> Target 
+Load Type 
+
+ 
+
+Für  Fragen  zur  Aufgabe  oder  zu  allgemeinen  Dingen  stehen  wir  selbstverständlich  gerne  per  
+E-Mail (mss@uni-osnabrueck.de) oder persönlich zur Verfügung! 
+
+Viel Spaß! 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 3          
+ 
+
+Seite 1/1 
+
+

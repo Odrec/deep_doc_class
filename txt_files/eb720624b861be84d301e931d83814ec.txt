@@ -1,0 +1,147 @@
+An Eye-Tracking Study on Infant Second Order Sound-Object-
+Association Learning – Influence of Personal Variables on 
+Performance
+
+Lena Dorfschmidt1, Nina Eissner1, Robert Sartorius1, Laura Ritter1
+
+1 Institute of Cognitive Science, University of Osnabrueck, Osnabrueck, Germany. All authors contributed equally.
+
+Introduction
+Infants usually comprehend individual words and simple
+sentences at the age of 10 months and they produce their first
+words, which are mostly context-bound (Barrett, 1995), at 10 to 15
+months of age (Benedict,1979).
+
+There are several studies investigating different aspects of sound-
+object association in infant word-learning processes. According to
+infants are able to build new
+Tincoff and Jusczyk (1999),
+references at the age of six months at the latest. On contrary
+there are several studies providing evidence for first learned word-
+object associations at the age around 12-14 months (Smith and Yu,
+2008; Werker et al. 1998, Woodward and Hoyne, 1999).
+
+With our study we want to investigate whether infants at the age of
+10 to 20 months are able to learn the word of a novel object by
+second order association to its sound.
+In our group we especially focused on how the infants” performance
+is influenced by personal variables, such as age, sex, pregnancy
+week, developmental history and medication. We hypothesized
+that older infants and the ones with a faster developmental history
+in detecting the right object
+have a higher
+according to its sound.
+
+rate and are fast
+
+Figure 1. Overview Experimental Design
+
+Results
+Figure 2a.  Correlation of Age and Mean Fixation 
+Time on Correct Area of Interest (AOI)
+
+Figure 2b.  Correlation of Age and Accuracy of 
+Looking in the appropriate AOI
+
+Table 1.  A  Pearson Correlation of Age and Performance
+
+• There was a tendency of a 
+significant correlation between 
+the mean time the children were 
+fixating on the correct area of 
+interest (AOI) and their age, 
+τ = 0.26, [-0.252; 0.658], p=0.078. 
+
+•The accuracy of the first look was significantly related to the infant’s age, τ = 0.31, [-0.2; 
+0.588]; p=0.047.
+• The latency of the first look into the correct area of interest was significantly correlated
+with the mean time the infants were fixating the correct area of interest overall, r= -0.575, 
+[-0.872; 0.033], p=0.008.
+
+Figure 3.   Results of Two-Way ANOVA Revealing Interaction Between 
+
+Factors Sex and Motor Developmental History 
+
+Figure 1: Learning Phase 1 and 3 display an object with its sound, Learning Phase 2 and 4 play the label according to
+the sound, Test phase disaplays both objects and plays one word, fitting to one of the objects
+
+Methods
+Participants: N = 18, German natives, including bilinguals, age 10-
+20 months, (data of three infants excluded because of insufficient
+data)
+
+Eye tracking: Tobii Pro X2-60 eye tracker, collects gaze data at 300
+HZ, specialized for unobtrusive eye tracking of infants
+
+Testing:Infants were tested in a little distracting environment, sitting
+on
+
+parent’s lap, mostly using three-point-calibration
+
+Design: Second order association learning of a picture-word
+mapping
+
+1. Learning Phase: Pairing of object + sound
+2. Learning Phase: Pairing of sound + novel label
+3. Repetition of Learning Phase 1 +2 in shorter sequence
+4. Testing phase: Testing for object-label congruency
+
+Stimuli:
+
+ pictures of novel objects from the NOUN Database
+ paired with the sound of an icterine warbler and a bongo
+ novel word labels “fufu”, “gägä”, “kiki” and “lolo” were randomily
+assigned to objects
+ Infants’ attention was triggered by slight movement of objects
+and a sound signal at the beginning of each phase
+
+References: 
+Tincoff, R., & Jusczyk, P.W. (1999). Some beginnings of word comprehension in 6-month-olds. Psychological Science, 10(2), 172-175.
+Smith, L., & Yu, C. (2008). Infants rapidly learn word-referent mappings via cross-situational statistics. Cognition, 106(3), 1558-1568.
+Werker, J.F., Cohen, L. B. Lloyd, V.L., Casasola, M., & Stager, C.L. (1998). Acquisition of word-object associations by 14-month-old infants. Developmental psychology. 34(6), 1289.
+Woodward, A., & Hoyne, K. (1999). Infants’ learning about words and sounds in relation to objects. Child development, 70(1), 65-77.
+Barrett, M. (1995). Early lexikal development. In P. Flecher & B. Mac-Whinney (Eds.), The handbook of child language (pp. 362-392). Oxford, UK: Blackwell.
+Benedict, H. (1979). Early lexical development: Comprehension and production. Journal of Child Language, 6, 183-200.
+
+Figure 3: Results of Two-Way ANOVA Revealing an Interaction Effect Between Factors Sex and Motor Developmental History.  
+Error bars denote one standard error around the mean 
+
+There was a significant interaction effect between the motor developmental
+history and the sex of the infants, on the mean fixating time to correct area of
+interest (AOI), F(1,13) = 9.07, p = 0.01, ηp² = .411. This indicates that male and
+female infants were affected differently by their motor development. Specifically
+the mean fixating time to correct AOI was significantly higher in early developers
+(M = 2016, SD = 681.82) than late developers (M = 969, SD = 795.77) in male
+infants; however, in female infants the mean fixating time to correct AOI was
+significantly higher in late developers (M = 1659, SD = 462.44) compared with
+early developers (M = 833, SD = 199.39).
+
+Data analysis
+MATLAB to evaluate data of Eye-tracker
+In SPSS:
+
+ANOVA
+
+Dependent variable: mean fixation time on correct areas
+Independent variable:
+
+Between-subject factor 1: motor developmental history (early/late)
+Between-subject factor 2: sex (male/female)
+
+PEARSON Correlation (Age, Mean Fixation Time on correct AOI)
+KENDALL Rank Correlation (Age, Accuracy of looking in the appropiate AOI)
+
+Discussion /Conclusions
+
+Main increase in performance accuracy dependend on the age of the infant
+
+Early motor development of an infant
+performance on the experiment
+
+(free sitting)
+
+influences an infants
+
+Further data needs to be evaluated and additional research should be conducted
+
+

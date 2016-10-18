@@ -1,0 +1,89 @@
+Informatik C
+
+Grundlagen der Technischen Informatik
+
+Prof. Dr.-Ing. Werner Brockmann, M. Sc. Jonas Schneider
+
+¨Ubung 1 - Beispiel-CPU H6809
+
+Abgabe am Di, 28.10.2014, 14:00 Uhr in der Vorlesung
+
+Vermerken Sie auf Ihren Abgaben immer gut erkennbar Ihre Namen und den Namen
+Ihres Tutors!
+
+Hinweise: Schreiben Sie f¨ur die schriftliche Abgabe alle Assemblerprogramme und -sequenzen
+in der Form tabellarisch auf, die auf den L¨osungsbl¨attern im Anhang vorgegeben ist, und
+befolgen Sie folgende Konventionen:
+
+• In der Spalte Label bekommen alle Variablen, Konstanten und Sprungziele eindeutige
+
+und m¨oglichst selbstredende Namen zugewiesen.
+
+• In der Spalte Opcode stehen nur Assemblerbefehle oder -direktiven (in Klartext).
+• In der Spalte Operand stehen Variablennamen, Konstantennamen, Sprungziele oder
+
+Konstanten.
+
+• Mindestens jede Gruppe von Assemblerbefehlen bekommt einen Kommentar.
+• Vor einer durchzuf¨uhrenden Aufgabe sollte jeweils die Verwendung der Register in einem
+
+Registerbelegungsplan festgelegt werden.
+
+• Beim Schreiben von Assemblerprogrammen empﬁehlt es sich, zun¨achst die Speicherzel-
+len von Variablen und Konstanten zu labeln und dann das Programm in den Spalten
+Opcode und Operand zu entwickeln. Dabei werden Sprungziele mit Labeln versehen.
+
+• Alle Variablen m¨ussen beim Programmstart zun¨achst grunds¨atzlich initialisiert werden.
+• Beenden Sie Ihre Programme f¨ur die H6809 jeweils durch einen Sprung an die Speicher-
+
+adresse 1000hex (analog z.B. zu einem Wiedereinstiegspunkt in das Betriebssystem).
+
+• Danach kann das fertige Programm in die Maschinensprache (Objektcode) in Hexade-
+
+zimaldarstellung in der Spalte M(Adr) ¨ubertragen werden.
+
+Hier seien die in den folgenden ¨Ubungsaufgaben verwendeten Variablen zentral wie folgt
+abgelegt:
+
+Variable
+Adresse
+
+Z1
+
+Z2
+
+$0500
+
+$0501
+
+ERG
+$0502
+
+INP
+$0503
+
+Z
+
+$0504
+
+Aufgabe 1.1:
+
+Arithmetik auf Variablen
+
+(12 P)
+
+Hochsprache:
+
+ERG = Z1 + Z2
+ERG = Z1 - Z2
+ERG = Z1 & Z2
+
+Schreiben Sie je eine Assemblersequenz f¨ur die H6809, die die Addition, Subtraktion und bit-
+stellenweise Verundung der beiden Byte-Variablen an den Speicherstellen Z1 und Z2 durchf¨uhrt.
+Legen Sie jeweils das Resultat an der Speicherstelle ERG ab. Vernachl¨assigen Sie bei den Re-
+chenoperationen ¨Uber- bzw. Unterl¨aufe und liefern Sie nur das Low-Word (niederwertiges
+Byte) als Ergebnis.
+
+1
+
+

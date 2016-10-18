@@ -1,0 +1,46 @@
+Table of Contents
+
+  ........................................................................................................................................   1
+Orientation Map .................................................................................................................. 1
+angles  ................................................................................................................................  2
+Difference between orientation map and activation map: ..........................................................  10
+
+% Maria Marchante Fernandez
+%950157
+%HM6
+
+Orientation Map
+
+%Importing data
+
+or_map = importdata('or.mat');
+
+% Plotting my figure
+
+Figure_1 = figure
+
+imagesc(or_map);
+
+axes ('Parent',Figure_1);
+
+xlabel({'Neurons X dimension'});
+ylabel({'Neurons Y dimension'});
+
+title ('Matrix of the orientation map');
+colorbar ('peer',axes)
+
+Figure_1 = 
+
+  Figure (1) with properties:
+
+      Number: 1
+        Name: ''
+       Color: [0.9400 0.9400 0.9400]
+    Position: [440 378 560 420]
+       Units: 'pixels'
+
+  Use GET to show all properties
+
+1
+
+

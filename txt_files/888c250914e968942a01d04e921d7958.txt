@@ -1,0 +1,177 @@
+Timo Bourdon, Andrea Olberding 
+
+ 
+
+Seminar zum GK Mathematik (SS 2016) 
+
+Hypothesentest 
+
+Inhaltliche Zusammenfassung 
+
+ 
+
+1.  Auflistung relevanter Kenntnisse 
+ 
+
+  Unterschied zwischen relativen und absoluten Häufigkeiten kennen. 
+  Binomialverteilung berechnen mit gegebenen Parametern n, p und k, wobei n der Anzahl der 
+
+Versuche,  p der Erfolgswahrscheinlichkeit und k der Anzahl der Erfolge entspricht. 
+
+  Berechnung von Erwartungswert, Varianz, Standardabweichung einer gegebenen 
+
+Binomialverteilung. 
+
+  Aufstellung von Hypothesen (insbesondere Null- und Alternativhypothese). 
+  Kenntnisse über Signifikanzniveau bzgl. des Annahme- und Ablehnungsbereichs eines Tests. 
+  Kenntnisse über die Anwendung des links-, rechts- und beidseitigen Tests. 
+  Fehler 1. und 2. Art 
+
+2.  Ausformulierung zentraler Aspekte 
+ 
+
+In der Schule ist der klassische Hypothesentest eine weit verbreitete wenn nicht sogar die Methode der 
+beurteilenden Statistik [1]. Der Hypothesentest führt zum einen Begriffe der Stochastik, zum anderen 
+Begriffe  aus  der  beschreibenden  Statistik  produktiv  zusammen  und  ist  wesentlich  für  den 
+wissenschaftlichen  Erkenntnisgewinn [3].  Die  grundlegende  Arbeitsweise  von  empirisch arbeitenden 
+Wissenschaftlern  kann  über  den  Hypothesentest  für  die  Schülerinnen  und  Schüler  exemplarisch 
+erfahrbar gemacht werden: 
+
+  Aufstellen von Null- und Alternativhypothese 
+  Analysieren von Stichproben 
+  Verwerfen bzw. vorläufiges Akzeptieren der Hypothesen 
+
+ 
+
+Selbstreguliertes Lernen beim Hypothesentest 
+
+ 
+Das  Konzept  des  Hypothesentest  ist  anspruchsvoll  nicht  zuletzt  auch  aufgrund  der  Begrifflichkeiten 
+(bspw.  Bedingte  Wahrscheinlichkeit,  Fehler  1.  Art  und  2.  Art,  Binomialverteilung,  etc.).  Oftmals  ist 
+die angemessene Interpretation der Ablehnungs- und Annahmebereiche selbst für Experten schwierig 
+und auch der Realitätsbezug macht die Problemsituation meist komplexer als transparenter [1]. Für ein 
+tiefreichendes  Verständnis  ist  der  Aufbau  von  tragfähigen  und  inhaltlichen  Begriffsvorstellungen 
+nötig,  genauso  wie  das  inhaltlich-anschauliche  Arbeiten,  da  häufig  das  Testen  von  Hypothesen  als 
+unverstandenes  Schema  abgearbeitet  wird  [3].  All  diese  Aspekte  sollen  im  hohen  Maße  von  hoher 
+Schüleraktivität begleitet werden [3]. Hier setzt das selbstregulierte Lernen ein: 
+
+„Kognitive  Komponenten:  Dieser  Funktionsbereich  umschreibt  konzeptionelles  und  strategisches 
+Wissen  ebenso  wie  die  Fähigkeit,  entsprechende  Strategien  (z.  B.  kognitive  Lernstrategien) 
+anzuwenden. 
+
+Motivationale  Komponenten:  Diese  Komponenten  umfassen  Aktivitäten,  die  der  Initiierung  (z.  B. 
+Selbstmotivierung)  und  Aufrechterhalten  (volitionale  Steuerung)  des  Lernens  dienen.  Auch  günstige 
+Ursachenzuschreibungen 
+die 
+
+und  Misserfolgen 
+
+sowie 
+
+(Attributionen) 
+
+von  Erfolgen 
+
+Timo Bourdon, Andrea Olberding 
+
+ 
+
+Seminar zum GK Mathematik (SS 2016) 
+
+Selbstwirksamkeitsüberzeugung  (Überzeugung,  wirksame  Handlungen  durchführen  zu  können)  einer 
+Person gehören zu diesem Bereich. 
+
+Metakognitive Komponenten: Dieser Bereich beinhaltet die Selbstbeobachtung, Planung und adaptive 
+Anpassung des Lernverhaltens in Bezug auf das angestrebte Lernziel.“ [2] 
+
+ 
+
+Beispiel zum Hypothesentest 
+
+Das Konzept des Hypothesentest sowie einige zentrale Aspekte werden am folgenden Beispiel explizit 
+gemacht: 
+
+„Bei  einem  fairen  Würfel  beträgt  die  Wahrscheinlichkeit  eine  ‚6‘  zu  würfeln  1/6.  Nach  120  Würfen 
+taucht  die  Augenzahl  ‚6‘  mit  29-mal  wesentlich  häufiger  als  erwartet  auf.  Ist  der  Würfel  gezinkt? 
+(gezinkt  bedeutet  hier,  dass  die  ‚6‘  häufiger  als  erwartet  auftritt.  Eine  geringere  Anzahl  an  ‚6‘ 
+betrachten wir nicht)“. 
+
+1.  Aufstellen einer Null- und Alternativhypothese 
+
+ 
+
+1
+Nullhypothese (H0): Die Wahrscheinlichkeit eine „6“ zu würfeln ist ≤ 
+6
+
+ 
+
+Alternativhypothese (H1): Die Wahrscheinlichkeit eine „6“ zu würfeln ist > 
+
+1
+6
+
+  
+
+ 
+
+2.  Erwartungswert, Varianz, Standardabweichung 
+
+ 
+Im  Folgenden  gibt  n  die  Gesamtanzahl  der  Würfe  an,  p  die  Wahrscheinlichkeit  eine  „6“  zu 
+würfeln und q = 1 - p die Gegenwahrscheinlichkeit. 
+ 
+Erwartungswert, Varianz und Standardabweichung werden zunächst bei der Durchführung des 
+Hypothesentests  nicht  benötigt, 
+späteren  Annäherung  der 
+Binomialverteilung  an  die  Normalverteilung,  weshalb  wir  diese  hier  bereits  berechnen.  Für 
+große n nähert sich die Binomialverteilung der Nomalverteilung an. Diese wird zur schnellen 
+Bestimmung der Wahrscheinlichkeit vieler Stufen der Binomialverteilung genutzt. 
+
+allerdings  bei  der 
+
+ 
+
+Erwartungswert: 
+
+Varianz: 
+ 
+
+ 
+Standardabweichung: 
+
+𝜇 = 𝑛 ∙ 𝑝 = 120 ∙
+
+1
+6
+
+= 20 
+
+𝑉(𝑋) = 𝑛 ∙ 𝑝 ∙ 𝑞 = 120 ∙
+
+1
+6
+
+∙
+
+5
+6
+
+=
+
+600
+36
+
+≈ 16,67 
+
+𝜎 = √𝑉(𝑋) = √16,67 ≈ 4,08 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+

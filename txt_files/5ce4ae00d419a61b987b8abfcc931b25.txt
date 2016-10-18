@@ -1,0 +1,102 @@
+Scaling
+
+7
+
+Sociological Methodology
+2014, Vol. 44(1) 369–399
+Ó American Sociological Association 2014
+DOI: 10.1177/0081175013516114
+http://sm.sagepub.com
+
+THE EFFECT OF LABELING AND
+NUMBERING OF RESPONSE SCALES
+ON THE LIKELIHOOD OF RESPONSE
+BIAS
+
+Guy Moors*
+Natalia D. Kieruj*
+Jeroen K. Vermunt*
+
+Abstract
+
+Extreme response style (ERS) and acquiescence response style (ARS) are
+among the most encountered problems in attitudinal research. The authors
+investigate whether the response bias caused by these response styles varies
+with following three aspects of question format: full versus end labeling,
+numbering answer categories, and bipolar versus agreement response scales.
+A questionnaire was distributed to a random sample of 5,351 respondents
+from the Longitudinal Internet Studies for the Social Sciences household
+panel, of which a subsample was assigned to one of five conditions. The
+authors apply a latent class factor model that allows for diagnosing and cor-
+recting for ERS and ARS simultaneously. The results show clearly that both
+response styles are present in the data set, but ARS is less pronounced than
+ERS. With regard to format effects, the authors find that end labeling evokes
+more ERS than full labeling and that bipolar scales evoke more ERS than
+
+*Tilburg University, Tilburg, The Netherlands
+
+Corresponding Author:
+Guy Moors, Tilburg University, Department of Methodology and Statistics, PO Box 90153,
+5000LE Tilburg, The Netherlands
+Email: guy.moors@uvt.nl
+
+Downloaded from 
+
+smx.sagepub.com
+
+ at ASA - American Sociological Association on September 5, 2014
+
+370
+
+Moors et al.
+
+agreement style scales. With full labeling, ERS opposes opting for middle
+response categories, whereas end labeling distinguishes ERS from all other
+response categories. ARS did not significantly differ depending on test
+conditions.
+
+Keywords
+
+acquiescence response style, extreme response style, latent class analysis, full
+labeling, end labeling, measuring attitudes
+
+1. INTRODUCTION
+
+A survey researcher’s ultimate dream is to develop unbiased measure-
+ments of opinions and attitudes. However, measurement error is hard to
+avoid, and when measurement error is not random, it is of great concern
+to any survey researcher. Response bias is a well-known source of non-
+random error, and Likert-type rating scales have been shown to be
+prone to all kinds of biases (Chan 1991; Greenleaf 1992; Kieruj and
+Moors 2010; Smith 1967). In this paper, we focus on the question of
+whether certain aspects of scale format—more specifically, the verbal
+and numerical labeling of the answer categories—affect a respondent’s
+likelihood of providing biased responses.
+
+Response bias is defined as response style whenever a person
+responds systematically to questionnaire items on some basis other than
+what the items were specifically designed to measure (Paulhus 1991). In
+this study, we focus on two commonly discussed response style behaviors
+in attitude research: (1) extreme response style (ERS) and (2) acquies-
+cence response style (ARS). ERS is the tendency to choose only the
+extreme endpoints of the scale (Hurley 1998), and ARS is the tendency
+to agree rather than disagree with items regardless of item content (Van
+Herk, Poortinga, and Verhallen 2004). These response styles can be par-
+ticularly problematic for comparative research; when left unevaluated,
+cultural differences may be misinterpreted as substantive differences in
+the construct being examined (Johnson et al. 2005). Developing scales
+that are not affected or are much less affected by response styles thus
+becomes important. Hui and Triandis (1989), for instance, found that cul-
+tural variations in ERS use were apparent when 5-point scales were used,
+but such variations vanished when 10-point scales were administered.
+
+The process of constructing a rating scale is not as straightforward as
+it may first appear. There are several choices a researcher must make
+
+Downloaded from 
+
+smx.sagepub.com
+
+ at ASA - American Sociological Association on September 5, 2014
+
+

@@ -1,0 +1,51 @@
+Reduktionsmodelle
+
+(synonym Intensitätsmodelle)
+
+Grundidee:
+• Es erfolgt keine modellendogene Bestimmung des Insolvenzzeitpunktes;
+keine ökonomische Erklärung eines Ausfalls
+• Der Ausfallprozess wird als sog. Sprungprozess modelliert
+• Die Marktpreise ausfallbedrohter Finanzierungstitel des Unternehmens (bzw. 
+von Unternehmen einer Risikoklasse) gehen zunächst als Input in das Modell 
+ein, anhand derer die Parameter des Modells geschätzt werden
+• Die Bewertung von derivativen Finanztiteln, wie z. B. Kreditderivaten, Optionen 
+auf (ausfallbedrohte) Unternehmensanleihen oder Marktpreisderivaten mit 
+Kontrahentenausfallrisiko, erfolgt dann relativ zu den als gegeben betrachteten 
+Preisen der ausfallbedrohten Finanzierungstitel des Unternehmens
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+1
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Modellannahmen (1/2) (zeitdiskretes Modell):
+
+• Vollkommener Kapitalmarkt, insb. keine Transaktionskosten, keine Steuern, 
+
+beliebige Teilbarkeit aller Finanztitel, Zulässigkeit unbeschränkter Leerverkäufe 
+usw.
+
+• Handelszeitpunkte sind T*={0, 1, 2, ... , T}
+• Gehandelt werden ausfallrisikolose und ausfallbedrohte Nullkuponanleihen (NKA) 
+
+eines Unternehmens (oder von Unternehmen derselben Risikoklasse) mit 
+Fälligkeiten 1, ... , T; der Rückzahlungsbetrag aller NKA sei Eins.
+
+• Die laufzeitspezifischen Zinssätze i(t,T) für die sichere Anlage/Verschuldung je 
+
+Periode schwanken im Zeitablauf zufällig; sie sind jedoch (annahmegemäß) 
+unabhängig vom Ausfallrisiko bzw. dem Ausfallzeitpunkt (i(t,T): im Zeitpunkt t 
+beobachtbarer Zinssatz für sichere Anlagen/Kreditaufnahmen (je Periode) für den 
+Zeitraum [t,T])
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+2
+
+

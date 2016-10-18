@@ -1,0 +1,63 @@
+EXERCISE REGULAR EXPRESSIONS
+
+EXERCISE
+Regular expression to:  
+happy, happier, happiest, happiness, sad, sadness 
+Turn this into an FSA: a(b)+cd*r{2, }(x|y|z)?[a-z]    
+(no epsilon transitions, the final state can be left) 
+Create an FST that can transform happy ➞ happy,  
+happy+er ➞ happier, happy+est ➞ happiest 
+
+What are the minimal pairs in the following set: 
+root, rat, bowl, get, owl, hat, bat, got 
+
+Give a morphological analysis of the following words, 
+ - include base, root, prefix, derivational, inflectional  
+suffix, free morpheme, bound morpheme 
+ - give the order of composition 
+reorganisation, effectiveness, handstand  
+
+Translate the following sentence: 
+ɪf juː ɑː ˈfɪnɪʃt wɪð ðɪs pliːz reɪz jɔː hænd
+
+.  matches any character in the alphabet 
+
+s.ng ➞ sing, sang, sung, song, syng, … 
+
+? marks preceding character as optional 
+
+neighbou?r ➞ neighbor, neighbour 
+
+* Kleene star:  matches zero or more 
+occurrences of preceding character (x as a 
+character variable) 
+
+<x*> ➞ <>, <x>, <xx>, <xxx>, <xxxx>, <xxxxx>, 
+… 
+
++ Kleene plus: matches one or more 
+occurrences of preceding character (x as a 
+character variable) 
+
+<x+> ➞ <x>, <xx>, <xxx>, <xxxx>, <xxxxx>, … 
+
+(…) grouping (operator precedence) 
+
+tee(hee)+ ➞ teehee, teeheehee, … 
+
+[...] square brackets mark disjunction 
+
+[Tt]he ➞ The, the 
+
+(…|…|…) pipe symbol marks disjunction  
+
+(up|down|re)?link ➞ link, uplink, downlink, relink 
+
+\ backslash functions as escape character 
+for special characters 
+{n} matches n occurrences of preceding 
+character 
+{n,m} matches between n & m occurrences 
+{n,} matches at least n occurrences
+
+

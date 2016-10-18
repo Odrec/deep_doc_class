@@ -1,0 +1,39 @@
+ 
+
+Wintersemester 2014/2015
+
+Übungen zu
+
+ Elemente der diskreten Mathematik
+
+Blatt 6  Lösungen
+
+Prof. Dr. Heinz Spindler 
+
+Abgabe bis Montag, den 24.11. 2014, 12.00 Uhr 
+
+ 
+
+(cid:1) Aufgabe 1
+Für welche paarweise verschiedenene Ecken a, b, c des Graphen G (cid:1) (cid:2)E, K(cid:3)  gilt die 
+Gleichung d(cid:2)a, c(cid:3) (cid:1) d(cid:2)a, b(cid:3)(cid:4) d(cid:2)b, c(cid:3)?
+a) G (cid:1) C2 n (cid:1) (cid:2)(cid:5) p1,
+..., p2 n(cid:6), (cid:5) p1 (cid:7) p2,
+b) G (cid:1) Q3.
+c) G (cid:1) Pn
+
+..., p2 n(cid:8)1 (cid:7) p2 n, p2 n (cid:7) p1(cid:6)(cid:3) 
+
+Lösung
+
+a) Der Kreis wird durch zwei Ecken a, c in zwei Bögen der Längen k und m mit 
+k (cid:4) m (cid:1) 2 n geteilt. Ist k (cid:1) m, so ist d(cid:2)a, c(cid:3) (cid:1) d(cid:2)a, b(cid:3)(cid:4) d(cid:2)b, c(cid:3) für alle b. Ist k (cid:9) m, so 
+ist d(cid:2)a, c(cid:3) (cid:1) d(cid:2)a, b(cid:3)(cid:4) d(cid:2)b, c(cid:3) genau dann, wenn b auf dem kürzeren Bogen liegt. 
+b) Die Metrik hat die folgende Form d(cid:2)x, y(cid:3) (cid:1) (cid:10)i(cid:1)1
+d(cid:2)x, z(cid:3) (cid:1) d(cid:2)x, y(cid:3)(cid:4) d(cid:2)y, z(cid:3) genau dann, wenn (cid:11)xi (cid:8) zi(cid:12) (cid:1) (cid:11)xi (cid:8) yi(cid:12)(cid:4)(cid:11)yi (cid:8) zi(cid:12) für i (cid:1) 1, 2, 3 
+
+(cid:11)xi (cid:8) yi(cid:12) : Es gilt also 
+
+3
+
+

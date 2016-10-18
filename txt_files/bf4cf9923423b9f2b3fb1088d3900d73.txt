@@ -1,0 +1,195 @@
+Übungen zur "Einführung in die Physik" im WS14/15
+
+Reyher, 25.11.14
+
+Blatt 7
+
+Zur Vorlesung 1 bis 13
+
+Wenn Sie finden, eine Multiple-Choice-Frage sei nicht genau zu beantworten, so kreuzen Sie „keines“
+an und erläutern ganz kurz in Stichworten, warum. Bei reinen Verständnisfragen werden immer die 
+naheliegenden Antworten als richtig angesehen, auch wenn bei spitzfindiger Argumentation etwas 
+dagegen sprechen mag. Es ist nahezu unmöglich, Verständnisfragen zu stellen, ohne eine gewisse 
+„Genauigkeitstoleranz“ vorauszusetzen. 
+
+Richtige Antwort(en) ankreuzen.
+1 Wenn ein Vesikel in einer Zentrifuge zum Boden des Zentrifugenröhrchens hin, also nach 
+außen bewegt wird, so gilt: Die physikalische Natur der treibenden Kraft resultiert aus
+a)
+
+b)
+
+c)
+der Oberflächen-
+
+d)
+der Massenträgheit keines von a) - d)
+
+e)
+
+dem
+
+Röhrchenmaterial
+
+der Viskosität
+
+spannung
+
+2 Im „Spiegel“ stand kürzlich der Satz: „...das Solarpanel hat eine Leistung von 4 Watt pro 
+Stunde“. Welche Leistung hat es in 24 Stunden?
+a)
+
+b)
+
+d)
+
+c)
+
+96 Watt
+
+6 Watt
+
+1.66 Watt
+
+24 Watt
+
+e)
+keines von a) - d)
+
+3 Eine Fledermaus sendet Schallwellen von 41kHz während 1ms aus. Welche Zeit braucht 
+der Schallpuls für den Weg zu einer Beute in 480cm Abstand? (Schallgeschwindigkeit in Luft
+= 340 m/s)
+a)
+
+b)
+
+d)
+
+c)
+
+0.001 s
+
+41000 s
+
+41 s
+
+0.041 s
+
+e)
+keines von a) - d)
+
+4 Ein leichtes Samenkorn schwebt langsam von einer Pflanze auf den Boden. Die geringe 
+Geschwindigkeit kommt von 
+a)
+
+d)
+
+b)
+der Viskosität der
+
+c)
+der Luftreibung
+
+der geringen
+
+Größe
+
+Luft
+
+e)
+keines von a) - d)
+
+der geringen
+
+Fallhöhe
+
+5 Die isolierende Fettschicht einer Robbe vermindert in erster Linie die 
+a)
+die Wärmeleitung
+
+b)
+die Wärmestrahlung die Wärme
+
+d)
+die Konvektion
+
+c)
+
+e)
+keines von a) - d)
+
+6 Wegen der Einheiten kann die Ausbreitungsgeschwindigkeit c einer Welle mit ihrer 
+Wellenlänge λ und Frequenz f nur folgendermaßen zusammenhängen
+a)
+c= λ f
+
+b)
+c= f λ
+
+e)
+keines von a) - d)
+
+c)
+c= λ
+f
+
+d)
+c= f
+λ
+
+4 −T U
+
+4 ) . Dabei ist  T K  die Körpertemperatur in 
+
+7) Die Wärmestrahlung, welche ein Körper der Oberfläche A bei einer Umgebungstemperatur
+T U  abgibt, hat die Leistung  P=σ ε A(T K
+Kelvin, ebenso wie  T U . σ ist die Stefan-Boltzmann-Konstante mit dem Wert  5.67⋅10−8  W 
+m-2 K-4.
+Ein Mensch besitzt für die betreffende Strahlung den Emissionsgrad ε=1.
+a) Welche Energie gibt ein ruhender Mensch mit 2 m2 Hautoberfläche und einer 
+Hauttemperatur von 30° C alleine durch Wärmestrahlung in einem 18° C warmen Raum in 
+einer Stunde ab? Dabei soll die Kleidung ignoriert werden.
+b) Etwa 80% der Stoffwechselrate  P S  (in Watt gemessen) geht während der Ruhe in Wärme 
+über. Diese Wärme soll unter den oben genannten Bedingungen abgegeben werden, also ohne
+andere Wärmetransportmechanismen. Wie groß ist  P S ?
+c) Welche Mechanismen der Wärmeabgabe treten zur Strahlung hinzu. 
+
+8) Im folgenden Beispiel betrachten wir nur die Wärmeleitung.
+Durch unterschiedliche Wärmeleitungskoeffizienten
+λ stellt sich in bei zwei verschiedenen Isolations-
+schichten ein Temperaturverlauf von innen,  T i , 
+nach außen,  T a , wie rechts dargestellt ein.
+Die Temperatur  T x  beim Übergang Haut-Fell ist 
+unbekannt.
+Ansatz: Kontinuitätsbedingung – der Wärmefluss
+Φ= ΔQ
+Δt
+
+ ist für Haut- und Fell-Schicht gleich, also 
+
+λh
+Lh
+
+λ f
+L f
+
+Φ=
+
+A(T i−T x)=
+
+A(T x−T a)  (1)
+
+ L kennzeichnet die Dicke der 
+jeweiligen Schicht.
+
+a) Lösen Sie Gleichung (1) nach der unbekannten Temperatur  T x  auf. Gerne dürfen Sie 
+hierzu einen Taschenrechner mit Computeralgebra verwenden.
+b) Bei nordamerikanischen Bären im Winterschlaf wurde  T i=31° C  und  T a=2.5° C  
+gemessen. Die Haut entspricht einer Speckschicht von  Lh=4 cm mit  λh=0.2 W m-1 K-1, das 
+Fell einer Schicht Luft mit  L f =3 cm und  λh=0.024 W m-1 K-1. Wie groß ist die Temperatur 
+an der äußeren Hautschicht  T x ?
+c) Der Wärmeleitungskoeffizient des Fells entspricht dem von Luft. Weshalb muss man dann 
+die Wärmeleitung durch Luft auf die Felldicke beschränken und kann sie nicht bis zur 
+Höhlenwand fortsetzen?
+
+

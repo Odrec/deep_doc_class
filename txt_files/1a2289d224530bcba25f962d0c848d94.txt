@@ -1,0 +1,110 @@
+Table of Contents
+
+Matlab Homework 8 ...........................................................................................................  1
+Assignment 1 ..................................................................................................................... 1
+Assignment 2 ..................................................................................................................... 1
+Assignment 3 ..................................................................................................................... 2
+
+Matlab Homework 8
+
+worked on by: Corinna Kuehnapfel (956796) Benjamin Uhl (951381) Amir Sibahi (959151) Sebastian
+Blum (950549)
+
+clear all; close all; clc;
+
+Assignment 1
+
+a) get data
+
+load('hw8.mat')
+
+stim = imread('stimulus.png');
+
+Assignment 2
+
+a) b) c) for resizing
+
+squirrel_x_r = squirrel_x;
+squirrel_y_r = squirrel_y;
+% index for the right position after cutting of something
+i = 1;
+for idx = 1:length(squirrel_x)
+    % if out of range
+    if squirrel_x_r(i) < 780 || squirrel_x_r(i) > 1780 || ...
+            squirrel_y_r(i) < 300 || squirrel_y_r(i) > 1300
+        % delete
+        squirrel_x_r(i) = [];
+        squirrel_y_r(i) = [];
+        %lower index
+        i = i-1;
+    end
+    i = i +1;
+end
+% same for the swan
+swan_x_r = swan_x;
+swan_y_r = swan_y;
+i = 1;
+for idx = 1:length(swan_x)
+    if swan_x_r(i) < 780 || swan_x_r(i) > 1780 || ...
+            swan_y_r(i) < 300 || swan_y_r(i) > 1300
+        swan_x_r(i) = [];
+
+1
+
+        swan_y_r(i) = [];
+        i = i-1;
+    end
+    i = i +1;
+end
+
+% create the fixmap, {780:1780 300:1300} for being in stimulus space
+squirrel_cord = [squirrel_x_r; squirrel_y_r]';
+fixmap_squirrel = hist3(squirrel_cord,{780:1780 300:1300})';
+
+swan_cord = [swan_x_r; swan_y_r]';
+fixmap_swan = hist3(swan_cord,{780:1780 300:1300})';
+
+Assignment 3
+
+a) b) c) d) e) f)
+
+% calculate the FWHM
+
+% visual angle
+vis_ang = 1;
+% tangens
+t = tand(vis_ang);
+% distance
+d = 60;
+% radius
+radius = 60 * t;
+% diameter
+diameter = 2* radius;
+% pixelsize
+p_size = 0.025;
+% diameter in pixel
+diameter_pixel = diameter / p_size;
+
+% build gauss kernel
+gauss_kernel = make_gaussian(120,120,diameter_pixel,diameter_pixel,...
+    60,60);
+
+% convolve fixmaps with gaus kernel
+conv_squirrel = conv2(fixmap_squirrel,gauss_kernel,'same');
+conv_swan = conv2(fixmap_swan,gauss_kernel,'same');
+
+figure;
+subplot(1,2,1)
+% use overlay to plot
+over_squirrel = overlay(conv_squirrel,stim);
+title('squirrel fixations')
+cb = colorbar('vert');
+zlab = get(cb,'ylabel');
+set(zlab,'String','Number of Fixations');
+subplot(1,2,2)
+over_swan = overlay(conv_swan,stim);
+title('swan fixations')
+
+2
+
+

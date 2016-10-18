@@ -1,0 +1,225 @@
+Übung 5 Lösung – Tabellenanalyse II 
+Einführung in die Wirtschafts- und Sozialstatistik 
+ 
+
+1. 
+
+Im folgenden Beispiel geht es um die Parteipräferenz und Konfession. Als Datengrundlage 
+dienen uns die Angaben von 4572 Befragungspersonen aus dem Sozio-ökonomischen Panel. 
+ 
+a)  Berechnen Sie Pearson’s Chi Quadrat 𝑥2. 
+
+ 
+Chi-Quadrat: Vergleich der Kontingenztabelle (beobachtete Häufigkeiten 𝑓𝑖𝑗) mit 
+Indifferenztabelle (erwartete Häufigkeiten 𝑒𝑖𝑗 bei statistischer Unabhängigkeit) 
+ 
+
+𝑥2 = ∑
+
+(𝑓𝑖𝑗 − 𝑒𝑖𝑗)2
+
+𝑒𝑖𝑗
+
+ 
+
+ 
+
+𝑒𝑟𝑤𝑎𝑟𝑡𝑒𝑡𝑒 𝐻ä𝑢𝑓𝑖𝑔𝑘𝑒𝑖𝑡𝑒𝑛 =
+
+ 
+
+Kontingenztabelle 
+
+nicht 
+
+𝑆𝑝𝑎𝑙𝑡𝑒𝑛𝑠𝑢𝑚𝑚𝑒 × 𝑍𝑒𝑖𝑙𝑒𝑛𝑠𝑢𝑚𝑚𝑒
+
+𝐺𝑒𝑠𝑎𝑚𝑡𝑠𝑢𝑚𝑚𝑒
+
+ 
+
+Indifferenztabelle 
+
+nicht 
+
+Präferenz 
+SPD 
+CDU/CSU 
+Andere 
+Summe 
+
+katholisch  katholisch 
+350 
+731 
+328 
+1409 
+
+1035 
+1032 
+1096 
+3163 
+
+Präferenz 
+Summe 
+1385 
+SPD 
+1763  CDU/CSU 
+1424 
+Andere 
+4572 
+Summe 
+
+katholisch  katholisch 
+426,83 
+543,32 
+438,85 
+1409 
+
+958,17 
+1219,68 
+985,15 
+3163 
+
+Summe 
+1385 
+1763 
+1424 
+4572 
+
+ 
+ 
+
+j 
+i 
+1 
+1 
+2 
+1 
+1 
+2 
+2 
+2 
+1 
+3 
+3 
+2 
+Summe 
+ 
+
+𝑓𝑖𝑗 
+1035 
+350 
+
+𝑒𝑖𝑗 
+958,17 
+426,83 
+1032  1219,68 
+543,32 
+985,15 
+438,85 
+4575 
+ 
+
+731 
+1096 
+328 
+4572 
+ 
+
+(𝑓𝑖𝑗 − 𝑒𝑖𝑗)2 
+5902,85 
+5902,85 
+35223,78 
+35223,78 
+12287,72 
+12287,72 
+ 
+ 
+
+(𝑓𝑖𝑗 − 𝑒𝑖𝑗)2
+
+𝑒𝑖𝑗
+
+ 
+
+6,16 
+13,83 
+28,88 
+64,83 
+12,47 
+28,00 
+154,17 
+ 
+
+𝑥2 = 154,17 > 0 → Es besteht ein Zusammenhang zwischen Konfession und 
+Parteipräferenz. 
+
+ 
+
+1 
+
+ 
+
+ 
+
+b)  Berechnen Sie auf der Basis des 𝑥2-Wertes das Assoziationsmaß Cramer’s V. 
+
+ 
+Cramer’s V: misst Stärke des Zusammenhangs 
+ 
+
+𝑉 = √
+
+ 
+𝑛 − min (𝑟 − 1; 𝑠 − 1)
+
+𝑥2
+
+ 
+
+𝑉 = √
+
+154,17
+4572 − 1
+
+≈ 0,18 
+
+ 
+
+c)  Handelt es sich bei dem untersuchten Zusammenhang eher um eine starke oder eher um 
+
+eine schwache Assoziation? Begründen Sie Ihre Antwort. 
+ 
+
+  0 < 𝑉 < 0,3 → schwacher Zusammenhang 
+  0,3 < 𝑉 < 1 → starker Zusammenhang 
+
+ 
+
+→  0 < 0,18 < 0,3: Es besteht ein schwacher Zusammenhang zwischen Konfession 
+
+und Parteipräferenz. 
+ 
+
+2. 
+
+In einer Umfrage wurden 3320 Männer und Frauen gefragt, ob sie sich große Sorgen, einige 
+Sorgen oder keine Sorgen um die Erhaltung des Friedens machen. Mithilfe des 
+Statistikprogramms STATA wurde eine Kreuztabelle erzeugt, die die Ergebnisse dieser 
+Umfrage wiedergibt. Zusätzlich wurden zwei Maßzahlen, Chi-Quadrat und Cramer’s V, 
+berechnet. Interpretieren Sie die Ergebnisse. 
+ 
+
+  𝑥2 = 59,2013 → Zusammenhang zwischen Variable „Sorge um Erhalt des Friedens“ 
+
+und Geschlecht 
+statistisch voneinander abhängig 
+
+ 
+  𝑉 = 0,1335 → schwacher Zusammenhang 
+
+ 
+
+2 
+
+

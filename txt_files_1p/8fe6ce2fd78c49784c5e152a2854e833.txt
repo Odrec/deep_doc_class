@@ -1,0 +1,60 @@
+    Differentialgleichungen
+
+Vorlesungsskript Wintersemester 2014/15
+
+Heinz Spindler
+Institut für Mathematik - Universität Osnabrück
+
+Der Vorlesung liegt das Buch von Walter [W] zugrunde. 
+
+Einleitung
+
+Unter  einer  Differentialgleichung  versteht  man  eine  Gleichung,  in  der  unabhängige  Variable,
+Funktionen und Ableitungen von Funktionen auftreten. Kommt nur eine unabhängige Variable
+vor, so spricht man von gewöhnlichen Differentialgleichungen. 
+Ein einfaches Beispiel einer gewöhnlichen Differentialgleichung ist
+
+y'(cid:1) 2 x y(cid:2) 0.
+
+Hier ist x die unabhängige Variable und y die gesuchte Funktion, y' ihre Ableitung. Eine Lösung
+
+(cid:3)0.1(cid:4)
+dieser  Differentialgleichung  ist  eine  Funktion  y(cid:2) y(cid:3)x(cid:4)  in  der  reellen  Variablen  x,  für  die  die
+Gleichung  y'(cid:3)x(cid:4)(cid:1) 2 x y(cid:3)x(cid:4)(cid:2) 0 für alle x erfüllt ist. Aus der Kettenregel folgt unmittelbar, dass
+y(cid:3)x(cid:4)(cid:2) e(cid:5)x2 eine Lösung ist. Auch c y(cid:3)x(cid:4)  ist eine Lösung, wenn c eine beliebige Konstante ist.  
+
+ eine  Differentialgleichung  erster  Ordnung.
+
+ Die  allgemeine
+
+Die  Gleichung  (0.1)  ist
+Differentialgleichung erster Ordnung lautet
+
+F(cid:3)x, y, y'(cid:4)(cid:2) 0.
+ und  F(cid:3)x, y(cid:3)x(cid:4), y'(cid:3)x(cid:4)(cid:4)(cid:2) 0  für
+
+Die  Funktion  y (cid:2) y(cid:3)x(cid:4)  ist  Lösung  von  (0.2)  in  einem  Intervall  J ,
+ alle  x(cid:6) J  gilt.
+
+differenzierbar
+ Treten  in  einer
+Differentialgleichung auch höhere Ableitungen auf, etwa bis zur n-ten Ordnung, so spricht man
+von einer Differentialgleichung n-ter Ordnung. Sie lässt sich immer in der impliziten Form
+
+(cid:3)0.2(cid:4)
+ wenn  y(cid:3)x(cid:4)  in  J
+
+ ist
+
+Fx, y, y', y'',
+
+..., y(cid:3)n(cid:4)(cid:2) 0.
+
+(cid:3)0.3(cid:4)
+
+schreiben.  Eine  Lösung  ist  eine  n-mal  differenzierbare  Funktion,  die  die  Gleichung  (0.3)
+identisch  erfüllt.  Man  nennt  eine  Differentialgleichung  n-ter  Ordnung  explizit,  wenn  sie  nach
+
+Institut für Mathematik
+
+

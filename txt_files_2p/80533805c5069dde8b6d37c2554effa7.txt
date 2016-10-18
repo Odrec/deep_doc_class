@@ -1,0 +1,434 @@
+4
+
+Update
+
+TRENDS in Microbiology Vol.12 No.1 January 2004
+
+16 Collins, R.F. et al. (2003) Three-dimensional structure of the Neisseria
+meningitidis secretin PilQ determined from negative stain trans-
+mission electron microscopy. J. Bacteriol. 185, 2611–2617
+
+17 Spratt, B.G. et al. (2001) The relative contributions of recombination
+and point mutation to the diversiﬁcation of bacterial clones. Curr.
+Opin. Microbiol. 4, 602–606
+
+18 Bjedov, I. et al. (2003) Stress-induced mutagenesis in bacteria. Science
+
+300, 1404 –1409
+
+19 Rad, M.E. et al. (2003) Mutations in putative mutator genes of
+Mycobacterium tuberculosis strains of the W-Beijing family. Emerg.
+Infect. Dis. 9, 838–845
+
+20 Rainey, B.P. and Moxon, E.R. (2000) When being hyper keeps you ﬁt.
+
+Science 288, 1186–1187
+
+21 Bayliss, C.D. et al.
+
+(2002) Mutations in polI but not mutSLH
+destabilize Haemophilus inﬂuenzae tetranucleotide repeats. EMBO
+J. 21, 1465 –1476
+
+22 Martin, P. et al.
+
+(2003) Experimentally revised repertoire of
+
+putative contingency loci in Neisseria meningitidis strain MC58:
+evidence for a novel mechanism of phase variation. Mol. Microbiol.
+50, 245 – 257
+
+23 Falush, D. et al. (2001) Recombination and mutation during long-term
+gastric colonization by Helicobacter pylori: estimates of clock rates,
+recombination size, and minimal age. Proc. Natl. Acad. Sci. U. S. A. 98,
+15056–15061
+
+24 Rhen, M. et al. (2003) The basis of persistent bacterial infections.
+
+Trends Microbiol. 11, 80–86
+
+25 Slechta, E.S. et al. (2003) Adaptive mutation: general mutagenesis is
+not a programmed response to stress but results from rare co-
+ampliﬁcation of dinB with lac. Proc. Natl. Acad. Sci. U. S. A. 100,
+12847–12852
+
+0966-842X/$ - see front matter q 2003 Elsevier Ltd. All rights reserved.
+doi:10.1016/j.tim.2003.11.008
+
+| Genome Analysis
+
+Transporter’s evolution and carbohydrate metabolic
+clusters
+
+Titia H. Plantinga1, Chris van der Does1,2 and Arnold J.M. Driessen1
+
+1Department of Microbiology, Groningen Biomolecular Sciences and Biotechnology Institute, University of Groningen, P.O. Box 14,
+9750 AA Haren, The Netherlands
+2Institute of Biochemistry, Biocenter, Goethe-Universita¨ t Frankfurt, Marie Curie Straße 9, D-60439 Frankfurt, Germany
+
+The yiaQRS genes of Escherichia coli K-12 are involved
+in carbohydrate metabolism. Clustering of homologous
+genes was found throughout several unrelated bacteria.
+Strikingly, all four bacterial transport protein classes
+were found, conserving transport function but not mech-
+anism. It appears that during evolution the ability to
+transport, phosphorylate and metabolize substrates of
+unknown identity have been conserved. However, the
+transporter classes have been swapped. This probably
+demonstrates the subtlety of transport-protein evolution.
+
+(a)
+
+(b)
+
+(c)
+
+yiaJ K L M N
+
+O
+
+P
+
+Q R S
+
+lyxK
+
+sgbH ...U ...E
+
+yiaJ K L X1 X2
+
+P
+
+Q R S
+
+yjfQ
+
+R
+
+S
+
+T U V W X
+
+...B
+
+sgaT
+...A...H ...U ...E
+ulaA ...B...C...D ...E ...F
+
+The gene cluster designated yiaJKLMNOPQRS (GenBank
+accession number g1789999 – 1790008) in the Escherichia
+coli K-12 genome (Figure 1a) has been suggested to be
+involved in the uptake and metabolism of carbohydrates
+[1–5]. Recently, we have demonstrated that the bind-
+ing protein-dependent secondary transporter (Figure 2a)
+encoded by the yiaMNO genes transports the rare pentose
+L-xylulose, providing the ﬁrst evidence that these systems
+are able to transport carbohydrates [6]. During character-
+ization of this transporter we became interested in the
+function of the remaining genes in the cluster. An increase
+in the availability of genome databases has permitted a
+search for similar gene clusters among other organisms.
+Homologs of the individual yiaQ, yiaR and yiaS genes
+were discovered in several bacterial and archaeal genomes
+(T.H. Plantinga et al., unpublished). Remarkably, cluster-
+ing of these genes in putative operons occurs in a limited
+
+Corresponding author: Arnold J.M. Driessen (a.j.m.driessen@biol.rug.nl).
+
+http://www.trends.com
+
+(d)
+
+yiaS
+
+yjfQ YPO3328 tnp ...3330
+
+...3331 ...3332 yiaR yiaP
+
+TRENDS in Microbiology 
+
+Figure 1. The structural organization of highly similar gene clusters that contain
+yiaQRS homologs (blue). These cluster with members from any of the four classes
+of bacterial transport proteins (purple). This is demonstrated in four model organ-
+isms. Conventional nomenclature is used, with proposed alternatives provided
+below each gene. Shades of blue identify genes that encode homologous
+enzymes: yiaQ and yjfV, 3-keto-L-gulonate 6-phosphate decarboxylases; yiaR and
+yjfW, (putative) L-xylulose 5-phosphate 3-epimerases; yiaS and yjfX, ribulose-5-
+phosphate 4-epimerases. The (putative) kinases are shown in yellow. (a) The
+yiaJ– S gene cluster of Escherichia coli K-12 contains a binding protein-dependent
+secondary transporter {yiaM, small [4 transmembrane domains (TMDs)] mem-
+brane protein; yiaN,
+large [12 TMDs] membrane protein; yiaO, periplasmic
+substrate-binding protein}. (b) The yiaJ– S gene cluster of Klebsiella oxytoca con-
+tains a secondary transporter (yiaX2) and a chemotaxis-like protein (yiaX1). (c) The
+yjfQ–X gene cluster of E. coli K-12 contains a phosphotransferase system (PTS)
+(yjfS, permease IIC component; yjfT and yjfU, cytosolic phosphotransferase com-
+ponents IIB and IIA, respectively). (d) The YPO3328-3332 genes of Yersinia pestis
+encode a binding protein-dependent primary ATP-binding cassette (ABC) trans-
+porter [YPO3328, periplasmic substrate-binding protein; YPO3330, ABC (ATPase)
+domain; YPO3331 and YPO3332, permease domains]. The gene order is not con-
+served, but yiaR, yiaS and yiaP homologs are present. Red (yiaJ and yjfQ), putative
+regulators; tnp, transposase. [1– 4,7,9,17].
+
+Update
+
+TRENDS in Microbiology Vol.12 No.1 January 2004
+
+5
+
+(a)
+
+(b)
+
+(c)
+
+(d)
+
+H+ (Na+)
+
+H+ (Na+)
+
+Out
+
+In
+
+PEP
+
+~P
+
+ATP
+ADP + Pi
+
+TRENDS in Microbiology 
+
+Figure 2. Domain structure of the four major classes of bacterial uptake systems.
+(a) Binding protein-dependent secondary transporters [11 –14]. The substrate-
+binding protein delivers the substrate to the membrane-localized transporter, and
+unidirectional transport is driven by the proton-motive force (pmf) and/or sodium-
+motive force (smf). The carrier domains are dissimilar: the small domain contains
+four putative transmembrane domains (TMDs) and shows no homology with
+known membrane proteins, whereas the large domain resembles classical second-
+ary transporters; it contains 12 putative TMDs and a large central cytosolic loop.
+(b) Secondary transporters facilitate solute uptake in a pmf- and/or smf-dependent
+manner [15]. A single integral membrane protein mediates reversible transport.
+(c) Phosphoenolpyruvate:carbohydrate phosphotransferase systems (PTS) use
+multiple cytosolic components, such as the IIA and IIB proteins, to transfer the
+phosphoryl group from phosphoenolpyruvate (PEP) to the carbohydrate substrate
+that is taken up via the IIC membrane domain [10]. (d) Binding protein-dependent
+primary transporters are members of the ATP-binding cassette (ABC) transporter
+superfamily [16]. The binding protein donates the solute to two identical or homo-
+logous membrane-localized transport domains. Subsequently, transport is driven
+by hydrolysis of ATP, which is mediated by two identical or homologous ATPases
+that are associated with the carrier at the cytoplasmic side of the membrane.
+
+number of bacterial genomes. The conserved genomic organ-
+ization suggests that these genes specify similar functions.
+
+Clustering of putative carbohydrate-metabolizing
+enzymes
+An extensive search of accessible genome databases has
+revealed 30 gene clusters containing putative enzymes
+that are highly similar to those encoded by the yiaQRS
+genes, and in most cases the gene order is well conserved
+(Figure 1). Interestingly, representatives are found in
+several unrelated Gram-positive and -negative bacterial
+species, most of which are known human pathogens
+(Table 1). Clustering of these three enzymes is found in
+26 completely sequenced bacterial genomes that are
+available at this time, and also in the relatively small
+genomes of three Mycoplasma species (Table 1). Although
+homologs of the individual genes are found in the Archaea,
+the cluster does not appear to be conserved in members of
+this kingdom.
+
+To date, only the E. coli K-12 enzymes have been
+biochemically characterized in detail. YiaQ has been
+suggested to function as a 3-keto-L-gulonate 6-phosphate
+decarboxylase based on a comparison with its homolog
+Yjf V [7]. Because of amino acid sequence homology,
+YiaQ has also been suggested to function as a hexulose
+6-phosphate synthase [5], but this activity has not been
+demonstrated experimentally [8]. The YiaR amino acid
+sequence shows a high similarity to 3-epimerases, and
+
+Table 1. Bacterial genomes containing the putative carbohydrate metabolism cluster
+
+Organism and strain
+
+Locus
+
+Transporter
+
+BPD seca
+
+Secondaryb
+
+BPD ABCc
+
+PTSd
+
+Gram-negative:
+Escherichia coli K-12 (MG1655)
+E. coli O157:H7 (EDL933 and Sakai)
+E. coli CFT073
+Salmonella typhimurium LT2
+S. enterica subsp. enterica serovar Typhi (CT18)
+Klebsiella oxytoca
+Shigella ﬂexneri (2a str. 301)
+Yersinia pestis (CO92)
+Haemophilus inﬂuenzae Rd
+H. somnus (129 PT)
+Pasteurella multocida
+Vibrio cholerae El Tor
+V. vulniﬁcus (CMCP6)
+
+Gram-positive:
+Mycoplasma penetrans
+M. pneumoniae (M129)
+M. pulmonis
+Streptococcus agalactiae (2603V/R)
+S. mutans
+S. pneumoniae (R6 and TIGR4)
+S. pyogenes (M1 GAS and MGAS8232)
+Enterococcus faecium
+Leuconostoc mesenteroides subsp. mesenteroides
+Oceanobacillus iheyensis (HTE831)
+
+AE000435
+AE005174/BA000007
+AE016768
+AE008870
+AL513382
+AF282849
+AE015441
+AL590842
+L42023
+NZ_AABO02000002
+AE004439
+AE003853
+AE016811
+
+AP004173
+U00089
+AL445565
+AE014274
+AF397165
+AE007317/AE005672
+AE004092/AE009949
+NZ_AAAK01000214
+NZ_AAABH02000028
+AP004602
+
+abinding protein-dependent secondary transporter.
+bsecondary transporter.
+cbinding protein-dependent ATP-binding cassette (ABC) transporter.
+dphosphotransferase system (PTS).
+eyiaO interrupted by IS-element.
+fmixed gene order.
+gno yjfVWX homologs.
+hno IIB component, mixed gene order.
+ino yjfQR.
+
+http://www.trends.com
+
+þ
+2
+þ
+þ
+þ e
+2
+2
+2
+þ
+þ
+þ f
+2
+2
+
+2
+2
+2
+2
+2
+2
+2
+2
+2
+þ
+
+2
+2
+2
+2
+2
+þ
+2
+2
+2
+2
+2
+2
+2
+
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+
+2
+2
+2
+2
+2
+2
+2
+þ f
+2
+2
+2
+2
+2
+
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+
+þ
+þ
+þ
+þ
+2
+2
+þ
+2
+2
+2
+þ g
+þ h
+þ
+
+þ
+þ I
+þ I
+þ I
+þ I
+þ I
+þ I
+þ I
+þ
+2
+
+

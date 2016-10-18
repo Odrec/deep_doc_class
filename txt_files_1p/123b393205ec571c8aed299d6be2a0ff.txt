@@ -1,0 +1,60 @@
+ 
+ 
+ 
+ 
+
+Fachgebiet Management Support und WI 
+Management Support Systems III – WS 2014/15 
+Aufgabe Nr. 8 
+Bearbeitungszeit: 03.12. bis 10.12.2014 
+
+Aufgabe 8: 
+Data Mining 
+
+(Klassifizierung, Segmentierung, Assoziierung) 
+
+Ziel 
+Ziel dieser Aufgabe ist es sich mit einigen Grundfunktionen des Data Mining vertraut zu machen. 
+Dazu sollen anhand eines Beispieldatensatzes jeweils ein Klassifizierungs-, Segmentierungs- und 
+ein Assoziierungsprozess mit Hilfe des Werkzeugs RapidMiner modelliert werden. Die Auswahl 
+und Anwendung einer Data Mining Methode wird dabei lediglich als ein Schritt im Ablauf eines 
+kompletten KDD-Prozesses betrachtet. 
+Einleitung 
+Gegenstand der Aufgabe ist ein Beispieldatensatz (der Datensatz wird Ihnen über StudIP mit der 
+Bezeichnung  MSS3auf08_DemoDatenDataMining 
+gestellt!).  Der 
+Beispieldatensatz wird Ihnen in Form einer Excel-Datei präsentiert und beinhaltet 28 Spalten mit 
+insgesamt 6400 Datenreihen. Die Daten liegen in gemischt binominaler und numerischer Form 
+vor. Die Spalten besitzen die folgenden Bezeichnungen: 
+
+Verfügung 
+
+zur 
+
+Age,  Marital  status,  Address,  Income,  Income  Category,  Car  price,  Car  price 
+category,  Education,  Emply,  Retired,  Employment  category,  Gender,  Length  at 
+current residence, Wireless, Multiple lines, Voice mail, Pager, Internet, Caller ID, Call 
+waiting,  Own  TV, Own VCR,  Own  CD player, Own  PDA,  Own  computer, Own 
+Fax, Read newspapers, Response 
+
+Im Rahmen des Knowledge Discovery in Databases (KDD) geht es jetzt grundsätzlich darum, 
+aus diesen Fällen Wissen zu induzieren, das auf neue Fälle angewendet werden kann. Dabei kann 
+bezüglich Data Mining Methoden aus den Kategorien Klassifikation, Segmentierung (Clustering) 
+und  Assoziation  unterschieden  werden.  Hierzu  stellt  RapidMiner  ein  breites  Spektrum 
+implementierter Methoden zur Verfügung. Im Folgenden sollen Sie je eine dieser Methoden auf 
+die Beispieldaten anwenden und die produzierten Ergebnisse interpretieren. 
+Hinweis 
+Für  diese  Übung  könnte  es  notwendig  sein,  dass  Sie  einen  Operator  aus  dem  Weka  Paket 
+verwenden.  Die  Weka  Operatoren  sind  nicht  standardmäßig  Bestandteil  von  RapidMiner  und 
+müssen von Ihnen nachträglich installiert werden. 
+Wenn  Sie  in  RapidMiner  auf  „Help“    „Updates  and  Extensions  (Marketplace)…“  gehen, 
+können  Sie  über  die  Suche  nach  „weka“  die  Weka  Extension  installieren.  Die  Operatoren 
+befinden  sich  im  Operator  Bereich  unter  „Modeling“    „Classification  and  Regression“   
+„Weka“ sowie „Modeling“  „Association and Item Set Mining“  „Weka“. 
+
+Universität Osnabrück, FB9, MSWI, Prof. Dr. B. Rieger, MSS III – Aufgabe Nr. 8          
+ 
+
+Seite 1/5 
+
+

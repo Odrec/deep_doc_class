@@ -1,0 +1,45 @@
+	  
+
+Dr. Thomas Wiemann 
+
+8. Übungsblatt zur Vorlesung 
+
+„Einführung in die Programmiersprache C++“ 
+
+	  
+
+Wintersemester 2014 / 2015 
+
+ 
+Aufgabe: Integration von Bitmap-Texturen und Refaktoring  
+ 
+Ziel der Übung:  
+In  dieser  Übung  werden  wir  die  Struktur  des  Viewers  überarbeiten  und  an  geeigneten  Stellen  Funktionalitäten  in 
+Oberklassen auslagern. Auf diese Art und Weise werden wir uns mit dem Klassenkonzept und der C++-Syntax zur 
+Vererbung vertraut machen. Weiter werden Sie sich mit dem Factory-Designpattern auseinander setzen, indem Sie 
+Fabrikklassen  zum  Laden  von  3D-Modellen  und  Bildern  in  unterschiedlichen  Dateiformaten  implementieren.  In 
+StudIP finden Sie eine neue Version der Software mit einer erweiterten Verzeichnisstruktur. Ihre Aufgabe besteht 
+nun zunächst darin, die Software so umzubauen, dass Sie leichter wartbar und erweiterbar wird.  
+Neue Struktur der Software 
+In dieser Aufgabe werden wir die Software um diverse Features erweitern. Zur besseren Übersichtlichkeit haben wir 
+die vorhandenen Quelldateien in verschiedene Unterordner aufgeteilt: 
+
+ 
+
+Im  Ordner  "ext"  liegt  der  Quellcode  einer  externen  Bibliothek  zum  laden  von  .3ds-Dateien.  Da  diese  Bibliothek 
+standardmäßig  nicht  mit  den  gängigen  Linux-Distributionen  verteilt  wird,  haben  wir  die  Quellen  hier  in  unsere 
+Software übernommen und in das cmake-Buildsystem integriert. Im "io"-Ordner liegen alle Dateien, die zum Laden 
+und  Speichern  von  3D-Modellen  benötigt  werden.  Der  "math"-Order  beinhaltet  die  Funktionalitäten,  die  mit 
+mathematischen  Operationen  zu  tun  haben,  insbesondere  die  Vertex-  /  Matrix-  /  Quaternion-Implementierungen. 
+Unter  "models"  liegen  alle  Dateien,  die  zur  Modellierung  der  Spielwelt  benötigt  werdden.  Dazu  gehören 
+verschiedene  Flugzeugmodelle  mit  den  entsprechenden  Ressourcen  sowie  ein  Satz  Bitmaps  zur  Darstellung  der 
+Weltraumumgebung.  Der  Ordner  "rendering"  enthält  die  Quelltexte  zu  allen  Objekten,  die  in  unserer  Software 
+gerendert werden können. In "view" liegen die Klassen, die für die Darstellung verantwortlich sind. 
+ 
+Aufgabe 1: Auslagern von Funktionalität in Oberklassen: 
+Schauen Sie sich die Klassen im Unterverzeichnis "rendering" der Software an. Dort finden Sie neben der bekannten 
+TraingleMesh-Klasse  nun  die  Klassen  Texture  und  Skybox  sowie  eine  Klasse  TexturedMesh  zur 
+Repräsentation  von  texturierten  3D-Modellen.  Die Skybox-Klasse  nutzt  Texturen,  um  einen  Hintergrund  um  die 
+3D-Szene zu malen. Überarbeiten Sie die Klassen so, dass sich folgende Klassenstruktur ergibt (10 Punkte): 
+
+

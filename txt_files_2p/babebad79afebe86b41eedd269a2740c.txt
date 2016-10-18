@@ -1,0 +1,200 @@
+Article
+
+More than just money: Patterns of disaggregated welfare 
+
+expenditure in the enlarged Europe
+
+Kati Kuitto*
+
+Department of Political Science, University of Greifswald, Greifswald, 
+
+Germany
+
+Summary  This article demonstrates the potential of the disaggregated expenditure approach in com-
+parative welfare state analysis by applying it for comparing patterns of welfare spending across 28 
+European countries. An initial factor analysis shows that welfare states differ primarily along their 
+emphasis  either  on  cash  transfers  for  the  elderly  or  on  social  services  and  cash  transfers  for  the 
+working-age population. European welfare states cluster along these two spending dimensions in a 
+way that to a great extent coincides with the well-known delineation of welfare regimes based on 
+institutional characteristics. Furthermore, the results attest to the emergence of a variety of welfare 
+arrangements in the post-communist region, yet with a general orientation toward a Bismarckian or 
+conservative model. The results of this analysis demonstrate that disaggregated welfare expenditure 
+measures retain considerable importance in elucidating the realities of contemporary welfare policy. 
+
+Keywords  cluster analysis, disaggregated social expenditure, welfare regimes
+
+Comparing national patterns of welfare policies and 
+classifying divergent types of welfare states consti-
+tutes  an  important  field  of  comparative  welfare 
+state  research  (for  an  overview,  see,  for  example, 
+Abrahamson,  2000;  Arts  and  Gelissen,  2002; 
+Bambra, 2007; for the genesis of the regime analy-
+sis,  see  Castles  and  Obinger,  2008).  Typology-
+building is thereby not just an intellectual endeavour 
+or  an  end  in  itself,  but  an  important  analytical 
+means to an end. Typologies serve as a tool for cog-
+nitive  simplification.  In  Richard  Titmuss’  words: 
+‘The purpose of model-building is not to admire the 
+architecture of the building, but to help us see some 
+order  in  all  the  disorder  and  confusion  of  facts, 
+systems and choices’ (Titmuss, 1974: 30). Welfare 
+state classifications and typologies offer a meaningful 
+point of origin for theory-building and causal analysis, 
+when  not  only  single  programmes  or  institutions, 
+
+but also the entirety of welfare state arrangements is 
+the focus of the research interest. This is often the 
+case in macro-quantitative comparisons. 
+
+Classification systems have long been dominated 
+by  indicators  of  welfare  institutions  and  social 
+rights.  In  contrast  to  simple  measures  of  social 
+expenditure,  the  superiority  of  institution  and 
+rights-based typologies has been repeatedly stressed 
+in the past. Yet the lack of comparable and concep-
+tually substantiated time series data on welfare pol-
+icies  and  institutions  is  still  an  Achilles’  heel  in 
+comparative analysis (Clasen and Siegel, 2007).1 As 
+a consequence, cross-country comparisons of welfare 
+policy  patterns  and  their  causes  and  effects  have 
+either  been  limited  to  countries  for  which  more 
+sophisticated  data  like  welfare  state  generosity  is 
+available,  (that  is,  the  Organisation  of  Economic 
+Co-operation and Development (OECD) countries) 
+
+*Author to whom correspondence should be sent: Kati Kuitto, Department of Political Science, University of Greifswald, 
+Baderstrasse 6/7, D-17489 Greifswald, Germany. [email: kuitto@uni-greifswald.de]
+
+© The Author(s), 2009. Reprints and permissions: http://www.sagepub.co.uk/journalsPermissions.nav Journal of European Social Policy, 
+© The Author(s), 2011. Reprints and permissions: http://www.sagepub.co.uk/journalsPermissions.nav Journal of European Social Policy, 
+0958-9287; Vol. 19(5): 348–14; 344247; DOI:10.1177/0958928709XXXXXX http://esp.sagepub.com
+0958-9287; Vol. 21(4): 348–364; 412223; DOI:10.1177/0958928711412223 http://esp.sagepub.com
+
+Downloaded from 
+
+esp.sagepub.com
+
+ at Max Planck Society on May 13, 2014
+
+ 
+
+More than just money 
+
+349
+
+or  aggregate  social  expenditure  is  still  taken  as  a 
+proxy  measure  for  welfare  stateness  especially  in 
+analyses with pooled designs. The latter is especially 
+unsatisfying,  since  total  social  expenditure  reveals 
+barely anything of the contents of welfare policies 
+and is often misleadingly interpreted as a measure of 
+welfare generosity. 
+
+As  increasingly  more  attention  is  paid  to  the 
+dynamics  of  welfare  arrangements  on  the  one 
+hand,  and  to  the  configuration  of  welfare  state 
+arrangements  in  developing  and  middle-income 
+countries  on  the  other,  the  question  of  feasible 
+measures for welfare policies and the demand for 
+appropriate  and  comparable  data  gains  added 
+importance. One way of addressing this problem 
+consists of refining the conception and utility of 
+expenditure measures by relying on disaggregated 
+social expenditure data and thus on the functional 
+differentiation  of  welfare  spending.  These  kinds 
+of data illuminate the contents of welfare policy 
+effort,  namely,  which  programmes  and  purposes 
+governments  emphasize  in  the  realm  of  welfare. 
+Two  sources,  the  Social  Expenditure  Database 
+(SOCX) by the OECD and the European System 
+of 
+Statistics 
+(ESSPROS) by the Eurostat, now provide scholars 
+with annual, time series data for a large number 
+of countries. 
+
+Social  Protection 
+
+Integrated 
+
+This article argues that the potential of disaggre-
+gated  expenditure  data  is  far  from  being  fully 
+exhausted  in  comparative  welfare  policy  analysis. 
+Building upon earlier approaches (see for example 
+Castles,  2004,  2008;  Flora,  1986;  Kautto,  2002; 
+Klau, 1985; Saunders and Jensen, 2008; Tepe and 
+Vanhuysse, 2010), I demonstrate that disaggregated 
+expenditure  data  is  well  suited  for  comparative 
+endeavours and, even though telling less about the 
+quality  or  effectiveness  of  welfare  policies  for  the 
+recipients, it reveals important parameters of welfare 
+policy  arrangements  especially  from  the  public 
+policy perspective. This article seeks to extend the 
+disaggregated  expenditure  approach  for  compara-
+tive analysis of welfare policy patterns by addressing 
+the  following  question:  Do  disaggregated  welfare 
+spending  patterns  reveal  significant  cross-country 
+variation  among  European  welfare  states  in  line 
+with a theoretically meaningful distinction between 
+welfare regimes? In order to test this empirically, I 
+take on Castles’ (2008) framework of four distinct 
+spending  categories.  While  Castles’  approach  was 
+
+primarily  descriptive,  derived  from  observing  the 
+distinct  spending  patterns  among  Western  OECD 
+countries, I apply a more robust method by utilizing 
+factor  and  cluster  analysis  for  28  European  coun-
+tries and use the ESSPROS data. This approach inte-
+grates the Central and Eastern European (CEE) new 
+member states of the European Union (EU) in the 
+quantitative comparative analysis of welfare policy 
+patterns – an attempt that has gained little methodo-
+logically substantiated attention thus far. Applying 
+the newly available disaggregated data will facilitate 
+exploring  which  ways  the  emerging  patterns  of 
+welfare policy arrangements in these countries cor-
+respond  to  those  prevalent  in  Western  Europe.  In 
+contrast to most previous analyses, I also account 
+for social needs pressure factors potentially affecting 
+welfare spending levels by adjusting the data with 
+adequate weights. The results show that European 
+countries cluster in a theoretically meaningful way 
+along their functional welfare spending. These clus-
+ters coincide to a high extent with different regimes 
+or worlds of welfare.
+
+The study is structured as follows: the next section 
+discusses advantages, possibilities and limits of dis-
+aggregated expenditure approaches and introduces 
+three contemporary classifications of welfare states 
+based  on  their  functional  spending  structure.  The 
+third section outlines the data and method used in 
+this  study  and  discusses  the  data  treatment  for 
+adjusting  welfare  expenditure  for  needs  pressures. 
+In the fourth section, the dimensionality of welfare 
+spending is first depicted through a factor analysis 
+before  testing  how  28  European  welfare  states 
+cluster with respect to distinct categories of welfare 
+policy expenditure. The characteristics of the clus-
+ters  revealed  by  the  analysis  are  subsequently  dis-
+cussed. The final section concludes by discussing the 
+advantages and caveats of this approach for future 
+research. 
+
+Disaggregated social expenditure as a 
+measure for welfare policy patterns
+Advantages and limits of expenditure 
+approaches in welfare state comparisons
+
+As has been noted repeatedly by scholars of compar-
+ative welfare state research, total social expenditure 
+gives little information about the substantive content 
+or  generosity  of  welfare  policies.  Esping-Andersen 
+
+Downloaded from 
+
+esp.sagepub.com
+
+ at Max Planck Society on May 13, 2014
+
+Journal of European Social Policy 2011 21 (4)

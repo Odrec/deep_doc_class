@@ -1,0 +1,65 @@
+R¨omer/Bachmann
+
+16.10.2014
+
+Wahrscheinlichkeitstheorie
+
+¨Ubungsblatt 1
+
+Abgabe: 23.10.2014, 14:00 Uhr
+
+Hinweis: Es sind vier Aufgaben auszuw¨ahlen und zu bearbeiten. Begr¨unden Sie Ihre
+L¨osungen ausf¨uhrlich.
+
+1. Aufgabe:
+Wir werfen dreimal nacheinander eine 1 Euro M¨unze und nehmen hierbei an, dass eine
+faire M¨unze geworfen wird.
+
+(i) Geben Sie die Menge Ω der Elementarereignisse an.
+(ii) Bestimmen Sie die Wahrscheinlichkeit daf¨ur, dass zweimal Zahl und dann einmal
+
+Kopf geworfen wird.
+
+(iii) Nehmen Sie eine 1 Euro M¨unze zur Hand und werfen Sie dreimal nacheinander.
+
+Geben Sie h4(ZZK) und r4(ZZK) an.
+
+2. Aufgabe:
+
+(i) Gegeben ist Ω = {1,2,3,4} und ein zugeh¨origes Wahrscheinlichkeitsmaß P mit
+
+P(gerade) = 1/2, P({1,2}) = 1/2 und P({3}) = 0.
+
+Berechnen Sie P f¨ur alle Elementarereignisse.
+
+(ii) Gegeben ist Ω = {1,2,3,4} und P mit
+
+P(gerade) = 1/2, P({1,2}) = 1/2 und P({3}) = 3/4.
+
+Kann P ein Wahrscheinlichkeitsmaß sein?
+
+3. Aufgabe:
+Ω (cid:54)= /0 sei eine Menge und E sei eine σ-Algebra ¨uber Ω. Sei ω0 ∈ Ω fest gew¨ahlt. Setze
+
+(cid:40)
+
+δω0(E) :=
+
+1, ω0 ∈ E,
+0, ω0 (cid:54)∈ E
+
+f¨ur E ∈ E .
+
+Zeigen Sie, dass δω0 ein Wahrscheinlichkeitsmaß deﬁniert. Dieses heißt auch Dirac-Maß.
+4. Aufgabe:
+Sei E eine σ-Algebra ¨uber einer Menge Ω (cid:54)= /0. Beweisen Sie:
+
+(iii) F¨ur eine Familie (En)n∈N>0 von Elementen von E folgt, dass(cid:84)∞
+
+(i) Aus E,F ∈ E folgt, dass E ∪ F ∈ E .
+(ii) Aus E,F ∈ E folgt, dass E ∩ F ∈ E .
+(iv) Aus E,F ∈ E folgt, dass E \ F ∈ E .
+
+n=1 En ∈ E .
+
+

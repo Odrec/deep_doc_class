@@ -1,0 +1,678 @@
+Neural substrates of cognitive capacity limitations
+
+Timothy J. Buschmana,1, Markus Siegela,b, Jefferson E. Roya, and Earl K. Millera
+
+aThe Picower Institute for Learning and Memory and Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge,
+MA 02139; and bCentre for Integrative Neuroscience, University of Tübingen, 72076 Tübingen, Germany
+
+Edited by Robert Desimone, Massachusetts Institute of Technology, Cambridge, MA, and approved May 23, 2011 (received for review March 23, 2011)
+
+Cognition has a severely limited capacity: Adult humans can retain
+only about four items “in mind”. This limitation is fundamental to
+human brain function: Individual capacity is highly correlated with
+intelligence measures and capacity is reduced in neuropsychiatric
+diseases. Although human capacity limitations are well studied,
+their mechanisms have not been investigated at the single-neuron
+level. Simultaneous recordings from monkey parietal and frontal
+cortex revealed that visual capacity limitations occurred immedi-
+ately upon stimulus encoding and in a bottom-up manner. Capacity
+limitations were found to reﬂect a dual model of working memory.
+The left and right halves of visual space had independent capacities
+and thus are discrete resources. However, within each hemiﬁeld,
+neural information about successfully remembered objects was re-
+duced by adding further objects, indicating that resources are shared.
+Together, these results suggest visual capacity limitation is due to
+discrete, slot-like, resources, each containing limited pools of neural
+information that can be divided among objects.
+slot model | interference model | attention | hemisphere
+Despite the remarkable power and ﬂexibility of human cog-
+
+nition, our working memory—the “online” workspace that
+most cognitive mechanisms depend upon—is surprisingly lim-
+ited. An average adult human has a capacity to retain only four
+items at a given time (1–3). This capacity is fundamental to
+cognition: Individual variability in capacity is highly correlated
+with ﬂuid intelligence (4–6) and patients with neuropsychiatric
+disorders often have a reduced capacity (7, 8). Because it is so
+basic to cognition, capacity limitation has been well studied in
+humans (9), particularly the capacity limitation of visual short-
+term working memory (for reviews see refs. 1 and 4). This work
+has led to several competing theories about the neural basis of
+capacity limitations. “Discrete” models suggest that capacity limi-
+tations reﬂect a limit in the number of objects that can be simul-
+taneously represented (3, 10, 11). “Flexible resource” models
+predict that only the total amount of information available is
+limited, with information divided among all represented objects
+(12–14). It is also not clear whether the limitation is in stimulus
+encoding or in maintenance (15).
+
+To better understand the neural basis of capacity limitations
+we simultaneously recorded from single neurons in the pre-
+frontal and parietal cortex of two monkeys trained to perform
+a typical human test of cognitive capacity: change localization
+(Fig. 1A). Two arrays of objects (colored squares) were sepa-
+rated by a short memory delay. In the second array, the color of
+a randomly chosen object (the target) was changed. Monkeys
+were trained to detect this change and make a saccade to it.
+Cognitive load was increased by varying the number of objects in
+the arrays from two to ﬁve. We recorded simultaneously from
+multiple electrodes in the frontal cortex [lateral prefrontal cortex
+(LPFC) and frontal eye ﬁelds (FEF)] and the parietal cortex
+[lateral intraparietal area (LIP)]. These areas were chosen as
+they are critical for short-term memory (16–19) and human
+studies implicate them in capacity limitations (20–22).
+
+Results
+Like in humans, increasing the number of objects decreased per-
+formance (84.8% correct with 2 objects to 66.5% with 5 objects,
+Fig. 1B). The amount of information the monkeys had about
+
+the objects in the array, calculated from their behavior (SI Mate-
+rials and Methods), increased from 2 to 4 objects, but then satu-
+rated, reﬂecting a limited capacity (Fig. 1C; 2 < 3, P < 10−15; 3 < 4,
+P < 10−15; 4 < 5, P = 0.12, two-tailed permutation test). A capacity-
+limited model ﬁtted the animals’ information signiﬁcantly better
+than a simpler linear model (P = 0.026, validation test, see SI
+Materials and Methods for details). Both monkeys’ capacities were
+similar (3.88 monkey Sp, 3.87 monkey Si), with an overall average
+of 3.88 objects [95% conﬁdence interval (CI): 3.82–3.93; SI
+Materials and Methods]. In similar paradigms the capacity of an
+average adult human is typically around 4 items (1).
+
+Closer examination of the monkeys’ behavior revealed that
+their total capacity was composed of two independent, smaller,
+capacities in the right and left halves of visual space (hemiﬁelds).
+Adding objects to the same hemiﬁeld as the target strongly de-
+graded performance (Fig. 2A, rows), whereas adding objects in the
+opposite hemiﬁeld had no impact (Fig. 2A, columns; ipsilateral
+effect, P = 5.0 × 10−11; contralateral effect, P = 0.23; ANOVA).
+The number of same-hemiﬁeld objects accounted for >95% of the
+behavioral effect of the total number of objects. Behavioral per-
+formance was not signiﬁcantly different between the two hemi-
+ﬁelds, suggesting similar capacity in each hemisphere (target
+hemiﬁeld effect, P = 0.74; ANOVA). The information the animals
+had about each hemiﬁeld increased with a second object, but then
+saturated, suggesting each hemiﬁeld’s capacity was ∼2 objects
+(Fig. 2C; 2 > 1, P < 10−15; 3 > 2, P = 0.58, two-tailed permutation
+test). Again, a nonlinear, capacity-limited model ﬁt signiﬁcantly
+better than a linear one (P = 4.4 × 10−4, validation test). The es-
+timated per-hemiﬁeld capacity was 1.6 objects (95% CI: 1.60–1.64;
+capacity of 1.74 for Sp and 1.51 for Si, Fig. S1).
+
+Neural activity also showed independent capacities for each
+visual hemiﬁeld. For example, average object information in
+LPFC neurons during the sample period decreased with increasing
+number of objects in the same hemiﬁeld (Fig. 2D, Left), but not
+the opposite hemiﬁeld (Fig. 2D, Right; ipsilateral effect, P = 1.4 ×
+10−4; contralateral effect, P = 0.51; two-way ANOVA). We found
+the same effect during the memory delay [ipsilateral effect (Ipsi),
+P = 2.6 × 10−6; contralateral effect (Contra), P = 0.53; two-way
+ANOVA] as well as in the LIP and FEF (Ipsi, P = 0.026 and P =
+0.029; Contra, P = 0.52 and P = 0.19; two-way ANOVA; see SI
+Materials and Methods for details). This result cannot reﬂect
+attention to one hemiﬁeld or switching attention between them;
+the monkeys could not predict which object would change and
+performance was well above that expected from those strategies.
+Is the brain’s capacity limit a bottom–up failure to perceptu-
+ally encode objects or a top–down failure to retain objects in
+memory? A perceptual encoding failure predicts that, when ca-
+pacity is exceeded, object information is lost during neurons’
+sensory responses and in lower-order before higher-order cortex.
+
+Author contributions: T.J.B. and E.K.M. designed research; T.J.B. and J.E.R. performed
+research; T.J.B. and M.S. analyzed data; and T.J.B. and E.K.M. wrote the paper.
+
+The authors declare no conﬂict of interest.
+
+This article is a PNAS Direct Submission.
+
+Freely available online through the PNAS open access option.
+1To whom correspondence should be addressed. E-mail: buschman@mit.edu.
+This article contains supporting information online at www.pnas.org/lookup/suppl/doi:10.
+1073/pnas.1104666108/-/DCSupplemental.
+
+11252–11255 | PNAS |
+
+July 5, 2011 | vol. 108 | no. 27
+
+www.pnas.org/cgi/doi/10.1073/pnas.1104666108
+
+A
+
+Fixation
+(500 ms)
+
+Sample
+(800 ms)
+
+Memory Delay
+(800 - 1000 ms)
+
+Test
+Array
+
+A
+
+ 
+i
+l
+
+Behavioral Performance for All Possible Displays
+
+100%
+
+t
+e
+g
+r
+a
+T
+ 
+o
+t
+ 
+l
+a
+r
+e
+t
+a
+
+l
+i
+
+s
+p
+I
+
+u
+m
+
+i
+t
+
+S
+
+ 
+f
+o
+ 
+#
+ 
+g
+n
+s
+a
+e
+r
+c
+n
+I
+
+i
+
+B
+
+100
+
+)
+
+%
+
+(
+ 
+e
+c
+n
+a
+m
+r
+o
+f
+r
+e
+P
+
+80
+
+60
+
+40
+
+80%
+
+60%
+
+40%
+
+20%
+
+3
+
+Time
+
+C
+
+)
+s
+t
+i
+
+ 
+
+n
+o
+
+i
+t
+
+a
+m
+r
+o
+n
+
+f
+
+I
+ 
+l
+
+a
+u
+
+t
+
+u
+M
+
+b
+(
+ 
+y
+t
+i
+t
+
+n
+e
+d
+
+I
+ 
+t
+
+e
+g
+r
+a
+T
+
+ 
+t
+
+u
+o
+b
+a
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+Information 
+
+Plateaus
+
+2
+
+3
+
+4
+
+5
+
+# of Total Objects in Display
+
+B
+
+)
+
+%
+
+(
+ 
+
+e
+c
+n
+a
+m
+r
+o
+
+f
+r
+e
+P
+
+90
+
+80
+
+70
+
+60
+
+2
+
+50
+# of Total Objects
+
+3
+
+4
+
+5
+
+in Display
+
+Fig. 1.
+(A) Task timeline. Animals ﬁxated (indicated by red circle) to start
+trial. A sample array was presented for 800 ms, consisting of two to ﬁve
+objects (ranging from zero to three in each hemiﬁeld). After a brief memory
+delay (800–1,000 ms) a test array was displayed that was identical to the
+sample, except one object (the target) had changed color. (B) Behavioral
+performance decreased as the number of objects in the stimulus array was
+increased. (C) The information the animal had about the entire stimulus
+array (derived from behavioral performance) increased until four or more
+objects were in the array, indicating the animal’s capacity was between
+three and four objects. All error bars indicate 95% conﬁdence intervals.
+
+A memory failure predicts a loss later (after encoding) and in
+higher cortical areas ﬁrst. We found the former. Below capacity
+(one object per hemiﬁeld), object information appeared in LIP
+early after sample array onset [193 ms (95% conﬁdence interval,
+149–229 ms); Fig. 3A], followed by LPFC [317 ms (249–359 ms);
+Fig. 3B] and FEF [291 ms (249–339 ms); Fig. 3C, LIP < the
+LPFC, P < 10−3; LIP < FEF, P = 0.003, randomization test],
+consistent with a bottom–up ﬂow of sensory information from
+parietal to frontal cortex. By comparing below- to above-capacity
+activity, we computed the latency for information loss (Fig. 3,
+compare blue curve to red/green curves). Information loss began
+soon after array onset and immediately in LIP activity [191 ms
+(139–249 ms); Fig. 3A, black square], earlier than in the LPFC
+[341 ms (289–379 ms); Fig. 3B, black square] and FEF [658 ms
+(599–709 ms); Fig. 3C, black square, LIP < LPFC, P < 10−3; LIP <
+FEF, P < 10−3; LPFC < FEF, P < 10−3, randomization test]. In
+fact, when capacity was exceeded (two to three objects per
+hemiﬁeld), information in the LIP was weak and did not reach
+signiﬁcance until after the LPFC and FEF (all P < 10−3, Fig. 3
+A–C and SI Materials and Methods). Individual neurons showed
+similar effects, with >85% of neurons selective in both below-
+and above-capacity displays showing a decrease in information
+when displays were above capacity (P = 4 × 10−8 across all areas;
+Fig. S3 and SI Materials and Methods). Information loss above
+capacity carried through the memory delay (Fig. 3 A–C, Right)
+with the LPFC showing a further reduction of information for
+three vs. two objects late in the delay (P = 0.047, randomization
+test). One possibility is that this delayed difference between two-
+and three-item displays reﬂects an unbounded (or less limited)
+source of information available during sample presentation but
+lost during the memory delay (e.g., iconic memory, ref. 2).
+
+A limited capacity to represent multiple objects was evident on
+a behavioral and neural
+level. However, what is the neural
+mechanism underlying this bottleneck? Two main hypotheses
+have been put forth. First, objects could compete for encoding
+within a limited number of discrete “slots”, with each object
+being either successfully or unsuccessfully encoded (3, 10, 11).
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+Increasing # of Stimuli Contralateral to Target
+
+C
+
+ 
+n
+o
+i
+t
+a
+m
+r
+o
+f
+n
+I
+ 
+l
+a
+u
+t
+u
+M
+
+)
+s
+t
+i
+b
+(
+ 
+y
+t
+i
+t
+n
+e
+d
+I
+ 
+t
+e
+g
+r
+a
+T
+
+ 
+t
+u
+o
+b
+a
+
+0.45
+
+0.40
+
+0.35
+
+0.30
+
+0.25
+
+0.20
+
+2
+
+1
+# of Stimuli 
+
+3
+
+Ipsilateral to Target
+
+Below
+Capacity
+
+Above
+Capacity
+
+1
+
+2
+
+# of Stimuli
+
+Ipsilateral to Target
+
+D
+
+)
+
+V
+E
+P
+ω
+
+(
+ 
+n
+o
+i
+t
+a
+m
+r
+o
+f
+n
+I
+
+y
+t
+i
+t
+n
+e
+d
+I
+ 
+t
+c
+e
+b
+O
+
+j
+
+ 
+t
+u
+o
+b
+a
+
+Average LPFC Information about Object
+Identity during Sample Period (100 - 800 ms)
+
+x10-1
+
+15
+
+10
+
+5
+
+1
+
+2
+
+3
+
+# Ipsilateral Stimuli
+
+0
+
+1
+
+2
+
+3
+
+# Contralateral Stimuli
+
+Fig. 2.
+(A) Behavioral performance (indicated by the color of the border/
+background) for all possible stimulus displays. Adding objects to the same
+side (ipsilateral) as the target (marked with a “T”) impaired performance
+(rows), whereas adding objects to the other side (contralateral) had no ef-
+fect. This result argues for separate capacities in each hemisphere. (B) Be-
+havioral performance decreased as the number of objects ipsilateral to the
+target was increased and (C) the information the animal had about the ip-
+silateral stimulus array (derived from behavioral performance) increased
+until two or more objects, reﬂecting the animal’s capacity was between one
+and two objects in each hemiﬁeld. (D) Information was lost in lateral pre-
+frontal cortex (LPFC) neurons over the sample period (100–800 ms after
+stimulus array onset) as items were added ipsilateral to the encoded object
+(Left). However, adding contralateral items (Right) had no impact on neural
+information, matching the observed behavioral effects. All error bars in-
+dicate 95% conﬁdence intervals.
+
+E
+C
+N
+E
+I
+C
+S
+O
+R
+U
+E
+N
+
+Alternatively, capacity limitations could reﬂect a limited in-
+formation “pool” that is ﬂexibly divided among objects, and so
+adding objects reduces the information allotted to each encoded
+object (12–14). Our behavioral and neural data suggest that the
+two hemiﬁelds act like two slots. We tested whether encoding
+was also slot-like within a hemiﬁeld.
+
+A pure slot-like model predicts that encoding an object is all
+or none: If successfully remembered, there should be an equal
+amount of information about it regardless of how many other
+objects are in the array. If an object is forgotten, there should be
+no information about it. In contrast, we found that even when
+a given target object was successfully encoded and retained, in-
+formation about that speciﬁc object was reduced in all three
+areas when another object was added to its hemiﬁeld (Fig. 4A,
+1 > 2 objects: LIP, P = 0.033, 150–350 ms after array onset;
+LPFC, P = 0.001, at 350–800 ms; FEF, P = 0.041 at 450–800 ms,
+permutation tests; time windows selected on the basis of periods
+
+Buschman et al.
+
+PNAS |
+
+July 5, 2011 | vol. 108 | no. 27 | 11253
+
+

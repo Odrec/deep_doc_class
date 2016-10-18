@@ -1,0 +1,71 @@
+Grundlagen der physikalischen Chemie
+
+Adsorptionsisotherme
+
+24.11.2014
+
+1.Abgabe – 2.12.2014
+
+Gruppe 17 - Sören Vinke, Zunhao Wang, Niklas Schweinitz
+
+E-Mail: nschweinitz@uos.de
+
+Versuchsbetreuer: Brigitte Hartmann
+
+Aufgabenstellung:
+
+1.
+Untersucht   werden   die   Adsorptionseigenschaften   von   Aktivkohle   für   ein   Gemisch   aus
+Essigsäure   und   Wasser.   Bestimmt   werden   die   Adsorptionsisothermen   für   zwei
+Temperaturen, genauer Raumtemperatur (20°C) und 60°C. Im Anschluss an der Messung
+werden die Adsorptionsisothermen mit den Näherungen nach Freundlich und Langmuir
+überprüft und eine Auswertung zu beiden Theorien angefertigt.
+
+Durchführung:
+
+2.
+Zunächst wird eine Messreihe aus der 1 M Essigsäure hergestellt und gut homogenisiert. In
+Schraubdeckelgläschen werden jeweils  3g  Aktivkohle abgewogen, es werden 10 Gläser für
+zwei Versuchsreihen benötigt. Zur Aktivkohle werden jeweils 30ml der unterschiedlichen
+Konzentration der Essigsäure gegeben. Für die Versuchsreihe bei Raumtemperatur (20°C)
+werden die Gläser kontinuierlich per Hand geschüttelt, die Gläser der Versuchsreihe bei
+60°C werden in ein auf die gewünschte Temperatur eingestelltes Wasserbad gestellt und ab
+und zu kurz geschüttelt. Nach etwa 10 Minuten werden die Lösungen mit Faltenfilter
+abgefiltert, sodass keine Aktivkohle mehr in der Lösung ist. Nun wird mit 1 M und 0,1M
+Natronlauge (NaOH) titriert um die Konzentration  Cnach  der Essigsäure nach der Reaktion
+zu bestimmen. Die Werte werden notiert und die adsorbierte Menge an Essigsäure  α
+berechnet (siehe Messprotokollkopie im Anhang).
+
+Auswertung:
+
+3.
+Zur besseren Veranschaulichung wird die Auswertung in 5 Aufgabenteile (a bis e) aufgeteilt.
+Im ersten Teil a) werden die Werte der adsorbierten Menge  α gegen die Konzentration
+(nach der Reaktion) aufgetragen und anschließend diskutiert, sowohl für die Werte der
+Versuchsreihe bei Raumtemperatur (20°C), als auch für die Werte der Versuchsreihe bei
+60°C. Die graphische Veranschaulichung ist im Anhang unter Graph 1 zu finde.
+
+a) Wie in  Graph 1  zu sehen ist, liegt die Adsorptionsisotherme der höheren Temperatur
+unter der bei Raumtemperatur erzeugten Isotherme. Der Grund für diese Varition ist die
+Tatsache , das der Vorgang der Adsorption exotherm ist. Durch eine Temperaturerhöhung
+verschiebt sich nach dem Prinzip von Le Chatelier das Gleichgewicht auf die Eduktseite. In
+diesem Fall beudeutet es , dass bei erhöhter Temperatur der Anteil der Desorption steigt.
+
+In Aufgabenteil b) wird jede einzelne adsorptionsisotherme nach Langmuir untersucht,
+indem   die   reziproken   Werte   (die   Kehrwerte)   der   adsorbierten   Menge   und   der
+Konzentration nach der Reaktion gegeneinander Aufgetragen werden und anschließend
+diskutiert werden.
+
+b) Der Messpunkte aus  Graph 2  und  Graph 3  werden durch lineare Regression zu einer
+Geraden vereinheitlicht. Dabei erhält man aus der Geradengleichung die Werte für K und
+α∞ , nach der Formel :  α= α∞∗c
++ 1
+α∞ .
+Die Werte werden in Tabelle 1 zusammengefasst.
+
+K +c ≡ 1
+
+α= K
+α∞c
+
+

@@ -1,0 +1,233 @@
+Distinct Regions of Right Temporo-Parietal Junction Are
+Selective for Theory of Mind and Exogenous Attention
+
+Jonathan Scholz1, Christina Triantafyllou2, Susan Whitfield-Gabrieli2, Emery N. Brown2, Rebecca Saxe2*
+
+1 School of Computer Science, Georgia Institute of Technology, Atlanta, Georgia, United States of America, 2 Department of Brain and Cognitive Sciences, Massachusetts
+Institute of Technology, Cambridge, Massachusetts, United States of America
+
+Abstract
+
+In functional magnetic resonance imaging (fMRI) studies, a cortical region in the right temporo-parietal junction (RTPJ) is
+recruited when participants read stories about people’s thoughts (‘Theory of Mind’). Both fMRI and lesion studies suggest
+that a region near the RTPJ is associated with attentional reorienting in response to an unexpected stimulus. Do Theory of
+Mind and attentional reorienting recruit a single population of neurons, or are there two neighboring but distinct neural
+populations in the RTPJ? One recent study compared these activations, and found evidence consistent with a single
+common region. However, the apparent overlap may have been due to the low resolution of the previous technique. We
+tested this hypothesis using a high-resolution protocol, within-subjects analyses, and more powerful statistical methods.
+Strict conjunction analyses revealed that the area of overlap was small and on the periphery of each activation. In addition, a
+bootstrap analysis identified a reliable 6–10 mm spatial displacement between the peak activations of the two tasks; the
+same magnitude and direction of displacement was observed in within-subjects comparisons. In all, these results suggest
+that there are neighboring but distinct regions within the RTPJ implicated in Theory of Mind and orienting attention.
+
+Citation: Scholz J, Triantafyllou C, Whitfield-Gabrieli S, Brown EN, Saxe R (2009) Distinct Regions of Right Temporo-Parietal Junction Are Selective for Theory of
+Mind and Exogenous Attention. PLoS ONE 4(3): e4869. doi:10.1371/journal.pone.0004869
+
+Editor: Jan Lauwereyns, Victoria University of Wellington, New Zealand
+
+Received November 16, 2008; Accepted November 26, 2008; Published March 17, 2009
+Copyright: ß 2009 Scholz et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits
+unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+
+Funding: RS was supported by a John Merck fellowship and grants from the Ellison Medical Foundation, the Packard Foundation and the Simons Foundation. EB
+was supported by R01 DA015644. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
+Competing Interests: The authors have declared that no competing interests exist.
+
+* E-mail: saxe@mit.edu
+
+Introduction
+
+In fMRI studies, a cortical region in the right temporo-parietal
+junction (RTPJ) is recruited when participants read stories about
+people’s thoughts, relative to controls for logical and attentional
+demands [1,2]. The blood oxygen level dependent
+(BOLD)
+response in this region is significantly higher when participants
+read about false beliefs than during closely-matched stories about
+false maps or signs [3], and is specific to thinking about thoughts
+relative to other social information [4–6].
+
+Both fMRI and lesion studies also suggest that a region near the
+RTPJ is involved in attentional reorienting. In a Posner spatial-
+cueing paradigm [7], activity in the RTPJ is
+increased on
+‘‘invalidly-cued’’ trials, when a target appears in an unexpected
+location [8]. Similar activation has been observed during detection
+of centrally presented low-frequency targets [9], suggesting that
+the function of this region is in exogenously-cued redeployment of
+attention. Damage to RTPJ is the most common cause of left
+hemifield spatial neglect [10,11].
+
+One obvious question is: do these findings reflect recruitment of
+a single neural region, common to both Theory of Mind and
+exogenous attention, or are there neighboring but distinct regions
+within the RTPJ that account for these results? The discovery that
+these two tasks share a common mechanism would be surprising
+and informative, suggesting that the two tasks rely on common
+psychological component process.
+
+Caution is clearly necessary before we accept an observation that
+two different tasks activate the ‘‘same’’ brain region in imaging
+studies as evidence that common psychological mechanisms are
+
+engaged. In standard fMRI methods, the large voxel-size, along with
+the combined effects of partial-voluming, pooling due to shared
+vasculature [12],
+imperfect alignment during normalization and
+group averaging, and spatial smoothing all conspire to bias fMRI
+analyses towards findings of spurious overlap [13].
+
+Mitchell [14] recently conducted the first direct comparison of
+the Theory of Mind and exogenous attention tasks in the same
+individuals. He reported overlap between the regions of RTPJ
+recruited by the two tasks. For the reasons described above, these
+results are potentially important but hard to interpret. We
+therefore investigated whether there is real overlap between
+regions recruited for Theory of mind and attentional reorienting,
+and/or whether there is a reliable spatial separation between the
+regions activated by the two tasks, using higher field strength (3T
+versus 1.5T) and higher resolution (1.661.662.4 mm voxels,
+versus 3.7563.7566 mm) than the previous study. To overcome
+the limitations of
+the weak attention effect, we use a non-
+parametric bootstrap to estimate confidence intervals for the
+relative locations of the peaks in group data. The bootstrap is a
+computationally intensive method for assessing the uncertainty in
+a statistical measure [15].
+
+Methods
+
+Twenty-one naive adults (ten women, eleven men) participated
+in the study for payment. Participants gave written consent, as
+approved by the Committee on the Use of Humans as
+Experimental Subjects at the Massachusetts Institute of Technol-
+ogy. All subjects were right-handed, native English speakers, and
+
+PLoS ONE | www.plosone.org
+
+1
+
+March 2009 | Volume 4 |
+
+Issue 3 | e4869
+
+had normal or corrected-to-normal vision. Subjects were scanned
+using 12-channel head coil, in a 3T Siemens MAGNETOM Trio,
+a TIM system (Siemens Medical Solutions, Erlangen, Germany)
+in the Athinoula A. Martinos Imaging Center at the McGovern
+Institute for Brain Research at MIT. Functional BOLD images
+were collected using a single shot gradient echo echo-planar
+imaging (EPI)
+flip an-
+gle = 90u. Twenty-one 2-mm thick near-axial
+slices were
+acquired with 20% interslice gap and in-plane resolution of
+1.661.6 mm, providing coverage over superior temporal and
+parietal cortices.
+
+sequence with TR = 2s, TE = 30 ms,
+
+Runs of two experiments were interleaved in a single scan
+session for each participant. In the Theory of Mind experiment,
+subjects read 24 short vignettes about
+the formation of a
+representation (12 about beliefs [‘Belief’ trials], 12 about physical
+representations like a photo, drawing, or map [‘Photo’ trials]) that
+did not correspond to a reality [2,Figure 1a]. Stories were on
+average 32 words long, and were presented for 10 seconds.
+Subjects then answered a fill-in-the-blank question either about
+the representation or about reality (4 seconds). Stories from the
+two conditions alternated (order counterbalanced across subjects
+and runs), with 12s rest interleaved between each story. Each run
+lasted 2 min and 48 seconds (six stories); each subject participated
+in four runs of this experiment.
+
+The spatial attention experiment
+
+followed the procedure
+described by Corbetta [8], adapted from the Posner cueing task
+[7]. Before each trial, the subject viewed a central fixation dot
+flanked on either side by empty square boxes. At the start of a trial
+the fixation dot turned green (Figure 1b), and was followed by a
+cue arrow pointing to one side (left 50%, right 50%). The arrow
+was followed in 44% of the trials by the appearance of the target (a
+large asterisk) at the cued location (a ‘‘valid’’ trial), in another 16%
+of the trials at the opposite location (an ‘‘invalid’’ trial), and in 20%
+of trials, no target appeared (a ‘‘noise’’ trial). On the remaining
+20% of trials, after the arrow appeared the central fixation turned
+immediately back to red (‘‘cue’’ trial). Trials were separated by a
+fixation interval of 9, 10 or 12 seconds (randomly distributed;
+mean fixation duration 10 seconds). Trials
+from the four
+conditions (valid, invalid, cue, noise) were randomly intermixed.
+Each run was comprised of 25 trials, and each subject participated
+in 4 to 6 runs of the experiment. Subjects were provided an MR-
+safe response box and instructed to respond with a single button
+press as quickly as possible when a target appeared in either box
+(effectively, a go/no-go task). This method isolates the effect of
+‘‘invalid’’ trials to visuo-spatial attention; there is no response
+conflict once the target has been detected.
+
+Stimuli were presented onto a screen via Matlab 5.0 with an
+Apple G4 powerbook on a dark background. Reaction time
+measures were obtained during both experiments with the MR-
+safe button box. Behavioral data for three subjects in the Theory
+of Mind task were lost due to technical error.
+
+fMRI data were analyzed with SPM2 (Wellcome Department of
+Cognitive Neurology, London, UK). The images were motion
+corrected, normalized to a functional template, and smoothed with
+a Gaussian filter (FWHM = 2.5 mm) prior to analysis; during
+normalizing, the functional data were resliced to 26262 mm.
+Data were then high-pass filtered and modeled using a boxcar
+regressor
+for each
+condition (Belief, Photo; Invalid, Valid, Cue, Noise). Contrasts
+from each task (Belief-Photo, Invalid-Valid) were calculated for
+each subject and then combined for group random effects
+analyses. Surface reconstructions, for the figures, were constructed
+for the group average results based on a standard single subject
+anatomical.
+
+to estimate the hemodynamic responses
+
+Distinct Regions of RTPJ
+
+Figure 1. Task structure for the two tasks. (A) Sample stimuli for
+the Theory of Mind task. The key contrast compares the brain response
+while participants read ‘Belief’ vs ‘Photo’ stories. (B) Four trial types in
+the attentional reorienting task. The key contrast compared the brain
+response while participants detect the target on Invalid, vs Valid, trials.
+doi:10.1371/journal.pone.0004869.g001
+
+An analysis of overlap between activations was conducted on
+group random effects data using in-house software. Overlap was
+calculated as a function of threshold on the voxel-wise T statistic
+for the two contrasts. For the purposes of the overlap analyses, an
+anatomical ROI was defined as a cube around the peaks from the
+two group averages: [X 40:66; Y 273:241; Z 20:52]. Active
+voxels were defined as any voxel passing the threshold in either
+task that fell inside the anatomical ROI. Overlap was measured as
+a strict conjunction: each voxel counted as ‘overlap’ only if the
+contrast exceeded the T-threshold independently for both tasks.
+Percentage overlap was defined as the percentage of active voxels
+that were counted in the conjunction. For technical reasons, in the
+bootstrap and individual subjects overlap analyses there was no
+extent threshold applied, whereas in the group analyses used an
+extent threshold of k.10; as a result the bootstrap analysis was
+more likely to find overlapping voxels, and therefore provides an
+upper bound on the true percentage overlap.
+
+The spatial relationship between activations was assessed with a
+repeated-sample random effects analysis using a non-parametric
+
+PLoS ONE | www.plosone.org
+
+2
+
+March 2009 | Volume 4 |
+
+Issue 3 | e4869
+
+

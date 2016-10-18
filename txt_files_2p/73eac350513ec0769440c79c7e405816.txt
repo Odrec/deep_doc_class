@@ -1,0 +1,135 @@
+Sommersemester 2016
+
+Prof. Dr. Frank M. Hilker
+Alexander Stanclik, B.A.
+Karen auf der Horst, Maria H¨olscher, Lasse Keetz, Saskia Osterkamp, Kevin Ruwisch
+
+Daten und Modelle
+
+¨Ubungsblatt 4
+
+Abgabe: mit ¨Ubungsblatt, getackert oder geklammert in 2er-Gruppen ins Postfach UND
+elektronische Abgabe in den Stud.IP-Ordner als zip-Archiv (A Blatt 03 Meyer Schmidt.zip)
+
+bis sp¨atestens Dienstag, 03.05.2016, 14:15 Uhr
+
+Namen:
+
+4 (cid:80) Zeichen
+
+Gruppe:
+
+Aufgabe
+Punkte
+
+1
+
+2
+
+3
+
+Aufgabe 1: Deﬁnitionen
+Beantworten Sie die folgenden Fragen mit eigenen Worten.
+
+[8]
+
+a) Welche Voraussetzungen muss ein Zufallsexperiment erf¨ullen? Geben Sie ein eigenes Bei-
+
+spiel f¨ur ein Zufallsexperiment an.
+
+b) Was sind Elementarereignisse und was ist eine Ergebnismenge?
+
+c) Was wird unter einer bedingten Wahrscheinlichkeit verstanden?
+
+d) Was bedeutet
+
+stochastische Unabh¨angigkeit“ von Ereignissen?
+”
+
+e) Was ist der Unterschied zwischen einer diskreten und einer stetigen Zufallsvariablen?
+
+f) Was beschreibt der Erwartungswert einer Zufallsvariablen?
+
+[6]
+Aufgabe 2: Kugeln in einer Urne
+In einer Urne beﬁnden sich 100 Kugeln mit den Nummern 1 bis 100. Von den Kugeln wird eine
+zuf¨allig gezogen und die Nummer der gezogenen Kugel sei X. Mit Hilfe von X sind folgende
+Ereignisse A, B und C deﬁniert:
+
+A: X ist durch 5 teilbar,
+
+B: X ist durch 2 teilbar,
+
+C: X endet auf 0.
+
+a) Berechnen Sie die Wahrscheinlichkeit f¨ur die Ereignisse P (A) und P (B).
+b) Berechnen Sie ebenfalls die Wahrscheinlichkeiten f¨ur die Ereignisse P (A ∩ B), P (A ∪ C)
+
+und P (A ∩ B).
+Tipp: Zeichnen Sie Venn-Diagramme zur Veranschaulichung des jeweiligen Sachverhaltes.
+
+1 von 2
+
+Sommersemester 2016
+
+Prof. Dr. Frank M. Hilker
+Alexander Stanclik, B.A.
+Karen auf der Horst, Maria H¨olscher, Lasse Keetz, Saskia Osterkamp, Kevin Ruwisch
+
+Daten und Modelle
+
+Aufgabe 3: Sport
+[10]
+Eine Umfrage unter 100 Studierenden bzgl. ihrer sportlichen Aktivit¨aten ergab die folgende
+Tabelle. Aus dieser Grundgesamtheit wird nun eine Person ausgew¨ahlt.
+
+M¨anner Frauen
+
+Sport
+treiben
+
+keinen Sport
+
+treiben
+
+48
+
+16
+
+12
+
+24
+
+a) Wie groß ist die Wahrscheinlichkeit, dass diese Person m¨annlich bzw. weiblich ist? Wie
+groß ist die Wahrscheinlichkeit, dass die ausgew¨ahlte Person Sport treibt bzw. keine Sport-
+art aus¨ubt?
+
+b) Es wurde bekannt, dass es sich bei der ausgew¨ahlten Person um eine Studentin handelt.
+Wie groß ist die Wahrscheinlichkeit, dass sie sich sportlich bet¨atigt? Wenn die ausgew¨ahlte
+Person keinen Sport treibt, wie groß ist die Wahrscheinlichkeit, dass sie m¨annlich ist?
+
+c) Ein anderer Student widmet sich in seiner Freizeit dem Angelsport. Er hat bei der Auswahl
+seines Angelgebietes die Auswahl zwischen drei Seen (A, B, C). Die Wahrscheinlichkeit
+f¨ur einen Fang, betr¨agt f¨ur See A: 2
+5. Der angelnde Student
+kehrt an einem sch¨onen Samstagmorgen mit erfolgreich von seiner Angeltour zur¨uck.
+
+4 und f¨ur See C: 4
+
+3, f¨ur See B: 3
+
+i) Wie hoch ist die Wahrscheinlichkeit an einem beliebigen Tag, einen Fang mit nach
+
+Hause zu bringen?
+
+ii) Wie groß ist die Wahrscheinlichkeit, dass sein Fang aus See A stammt?
+
+[6]
+Aufgabe 4: Dreifacher W¨urfelwurf
+Ein mit den Zahlen von 1 bis 6 beschrifteter fairer W¨urfel wird dreimal geworfen. Die Zufallsva-
+riable X sei die Augenzahl als Summe der drei W¨urfe. Berechnen Sie die Wahrscheinlichkeiten
+f¨ur alle m¨oglichen Augensummen.
+
+2 von 2
+
+

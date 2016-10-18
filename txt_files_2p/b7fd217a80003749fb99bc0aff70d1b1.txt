@@ -1,0 +1,101 @@
+GESCHLECHTSTYPISCHE BERUFSWAHL:
+
+BEGABUNGSZUSCHREIBUNGEN, ASPIRATIONEN
+
+UND INSTITUTIONEN
+
+Marlis Buchmann und Irene Kriesi
+
+Zusammenfassung: Der vorliegende Beitrag geht der Frage nach, ob geschlechterstereotype Bega-
+bungszuschreibungen von Eltern am Ende der Pflichtschulzeit einen Einfluss darauf haben, dass
+junge Frauen und Männer drei Jahre später, mit 18 Jahren, eine geschlechtstypische Berufsausbil-
+dung absolvieren. Die Daten stammen von der mittleren Kohorte der Schweizer Kinder- und Ju-
+gendlängsschnittstudie COCON und wurden 2006 und 2009 erhoben, als die Jugendlichen 15
+bzw. 18 Jahre alt waren. Die Ergebnisse multinominaler Logit-Modelle zeigen, dass geschlechter-
+stereotype elterliche Fähigkeitszuschreibungen die Wahl unterschiedlicher Typen von Frauen- und
+Männerberufen begünstigen. Zudem kommt geschlechtstypischen Aspirationen sowie institutio-
+nellen Zuweisungsprozessen aufgrund schulischer Qualifikationen eine große Bedeutung zu.
+
+I. Einleitung
+
+In westlichen Ländern wählen junge Frauen und Männer auch heute noch größtenteils
+unterschiedliche Berufe. Zudem konzentrieren sich die meisten erwerbstätigen Frauen
+in wenigen Frauenberufen, während Männer in einem viel breiteren Berufsspektrum
+tätig sind (Charles und Grusky 2004; Leemann und Keck 2005). Da Männer- und
+Frauenberufe teilweise mit unterschiedlichen Lohn-, Aufstiegs- und Weiterbildungs-
+möglichkeiten einhergehen, gilt die geschlechtsspezifische Arbeitsmarktsegregation auch
+als wichtige Ursache für die soziale Ungleichheit zwischen den Geschlechtern (vgl.
+Trappe 2006). Die berufliche Segregation ist besonders ausgeprägt in Ländern wie der
+Schweiz, die sich durch ein stratifiziertes duales Ausbildungssystem mit früher Berufs-
+wahl auszeichnen. Die zeitliche Überschneidung von Berufsfindung und jugendlicher
+Identitätssuche erschwert es, Geschlechtergrenzen zu überschreiten und geschlechtsun-
+typische Berufe zu wählen (vgl. Charles und Buchmann 1994; Leemann und Keck
+2005). Aufgrund der engen Koppelung zwischen Berufsbildung und Arbeitsmarktallo-
+kation lassen sich zudem früh getroffene geschlechtstypische Ausbildungsentscheidun-
+gen nur mit relativ hohen Kosten korrigieren, sodass sie direkt zu einer hohen berufli-
+chen Geschlechtersegregation im Arbeitsmarkt führen (vgl. Solga und Konietzka 2000;
+Trappe 2006).
+
+In der Schweiz wechseln ungefähr zwei Drittel der Jugendlichen nach der Pflicht-
+schulzeit (mit ungefähr 16 Jahren) in eine berufliche Grundausbildung, wobei die gro-
+ße Mehrheit eine Berufslehre absolviert (vgl. Borkowsky 2000). Der Übergang in die
+Berufsausbildung ist somit der wichtigste Bildungsweg in der Sekundarstufe II, der zu-
+dem am stärksten geschlechtstypisch segregiert ist (vgl. Konietzka 1999; Leemann und
+
+R. Becker, H. Solga (Hrsg.), Soziologische Bildungsforschung,
+Kölner Zeitschrift für Soziologie und Sozialpsychologie,
+DOI 10.1007/978-3-658-00120-9_11, © Springer Fachmedien Wiesbaden 2012
+
+Geschlechtstypische Berufswahl
+
+257
+
+Keck 2005). Deshalb drängt es sich besonders für diese Gruppe junger Frauen und
+Männer auf, geschlechtstypische Berufswahlen zu untersuchen.
+
+Zur Bestimmung dessen, was ein Frauen- oder Männerberuf ist, können die nume-
+rischen Verteilungen der Geschlechter oder die geschlechtertypischen Konnotationen
+von beruflichen Qualifikationsprofilen herangezogen werden. In Letzteren sind kultu-
+rell tief verankerte Vorstellungen über die mit den Bildern von Weiblichkeit und
+Männlichkeit stereotypisierten Fähigkeiten und Eigenschaften eingelagert, die für die
+erfolgreiche Ausübung einer beruflichen Tätigkeit als unabdingbar erachtet werden
+(vgl. Borkowsky 2000; Cejka und Eagly 1999; Charles und Bradley 2009). Obwohl
+die jüngere Geschlechterforschung von multiplen Bildern von Männlichkeit und Weib-
+lichkeit ausgeht (z. B. Schippers 2007), wurden diese Erkenntnisse bislang noch wenig
+für die Analyse der beruflichen Geschlechtersegregation genutzt. Der internen Diffe-
+renzierung von Frauen- und Männerberufen wurde bislang also wenig Beachtung ge-
+schenkt. Dies wird in diesem Beitrag nachgeholt, indem wir verschiedene Typen von
+Männer- und Frauenberufen unterscheiden.
+
+Für die geschlechtstypische Berufswahl junger Frauen und Männer misst der vorlie-
+gende Beitrag kulturell verankerten Geschlechterbildern in mehrfacher Hinsicht beson-
+dere Bedeutung zu. Erstens prägen sie aus historischen Gründen die beruflichen Quali-
+fikationsprofile, die institutionell dem dualen Berufsbildungssystem zugeordnet sind
+(vgl. Heidenreich 1998; Leemann und Keck 2005). Zweitens beeinflussen sie die So-
+zialisationspraktiken und Unterstützungsleistungen der bei der Berufswahl beteiligten
+Akteure, wie Eltern, Lehrpersonen oder Berufsberater. Drittens sind sie auch bestim-
+mend für die Selbstbilder, schulischen Leistungen und beruflichen Interessen von He-
+ranwachsenden (Correll 2001).
+
+Nachgewiesenermaßen spielen Eltern in diesem Vermittlungsprozess von Geschlech-
+terbildern eine wichtige Rolle. Sie schreiben ihren Kindern teilweise geschlechterstereo-
+type Begabungen zu, die sich in fachspezifischen Selbstkonzepten und Selbstwirksam-
+keitsüberzeugungen niederschlagen (vgl. Dresel et al. 2007; Kurtz-Costes et al. 2008).
+Ob sich solche elterlichen Zuschreibungen über Sozialisationsprozesse und „gatekeep-
+ing“ auch auf die Berufswahl auswirken, ist allerdings noch kaum untersucht worden.
+Dies gilt auch für die Frage, in welcher Weise schulische Qualifikationskriterien die
+Zuweisung zu einem geschlechtstypischen Beruf beeinflussen. Eine weitere augenfällige
+Forschunglücke besteht im fast vollständigen Fehlen von Studien zur geschlechtstypi-
+schen Berufswahl junger Männer.
+
+Der vorliegende Beitrag untersucht daher mit Daten der Schweizer Kinder- und Ju-
+gendlängsschnittstudie COCON, ob geschlechterstereotype Begabungszuschreibungen
+von Eltern am Ende der Pflichtschulzeit einen Einfluss darauf haben, dass ihre Söhne
+und Töchter drei Jahre später eine geschlechtstypische Berufsaubildung absolvieren.
+Dabei interessiert auch, welche Rolle geschlechterstereotype Begabungszuschreibungen
+im Verhältnis zu individuellen beruflichen Aspirationen sowie schulischen Qualifika-
+tionskriterien spielen. In Erweiterung der bisherigen Forschung, welche Frauen- und
+Männerberufe in der Regel als homogene Kategorien betrachtet, unterscheiden wir ver-
+schiedene Arten geschlechtstypischer Berufe.
+
+

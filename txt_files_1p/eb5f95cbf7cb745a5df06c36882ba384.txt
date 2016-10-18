@@ -1,0 +1,72 @@
+Spitzweck/Heine/Soud`eres/M¨ahr/Mengler/Uliczka
+
+12. Dezember 2014
+
+Lineare Algebra I
+Tutoriumsvorschl¨age
+
+1. Bestimmen Sie den Rang der Matrix
+
+
+
+1 1 0 1 0
+0 1 1 0 1
+0 1 1 0 0
+0 0 1 1 0
+1 1 1 0 1
+
+ ,
+
+wenn
+
+(a) K = Z/2Z,
+(b) K = Z/3Z,
+(c) K = Q ist.
+
+2. Bestimmen Sie den Rang der Matrix
+
+A =
+
+ 0
+
+α β
+−α
+γ
+0
+−β −γ
+0
+
+
+
+in Abh¨angigkeit von α,β ,γ ∈ R.
+
+3. Bestimmen Sie den Rang der Matrix
+
+
+
+1
+n + 1
+...
+
+···
+n
+··· 2n
+...
+...
+(n− 1)n + 1 (n− 1)n + 2 ··· n2
+
+2
+n + 2
+...
+
+
+
+4. Sei K ein K¨orper und A ∈ Mm,n(K) und B ∈ Mm,p(K) eine m× n beziehungsweise m× p
+Matrix ¨uber K. F¨ur j = 1, . . . , p sei b j die j-te Spalte von B. Zeigen Sie, dass das lineare
+Gleichungssystem AX = B genau dann mindestens eine L¨osung ˆX ∈ Kn,p besitzt, wenn
+
+rang A = rang [A,b1] = ··· = rang [A,bp]
+
+gilt. Unter welcher Bedingung ist diese L¨osung eindeutig?
+
+

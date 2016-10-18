@@ -1,0 +1,29 @@
+Matlab for Cognitive Science
+
+Homework #1
+
+Please turn in your homework in your group folder on Friday Oct 31st. The docu-
+ment needs to contain your name(s), matriculation number(s) as well as your Mat-
+Lab code and all required ﬁgures.
+
+Task : Compute a Orientation Tuning Curve
+
+1. Get the ﬁle Extracellular_Recording_trials_1.mat from Stud.IP.
+
+Load the data into MatLab.
+
+• In this data matrix you’ll ﬁnd recordings of the response of one neuron in
+V1. 8 different bars with a speciﬁc orientation were shown; meanwhile
+the activity of the neuron was recorded (see ﬁgure A). The orientations
+are equally spaced and range from 0° to 157.5°. Each recording contains
+100 samples over the time intervall of 1000ms in 10 trials. 1 represents
+the occurrence of a spike at this sample, while 0 indicates that no spike
+has occcurred.
+
+• The ﬁrst dimension of the matrix corresponds to the different orienta-
+tions, the second dimension to trials and the third dimension is the ac-
+tivity
+
+1
+
+

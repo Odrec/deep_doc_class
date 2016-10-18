@@ -1,0 +1,264 @@
+ORIGINAL RESEARCH
+published: 26 May 2016
+doi: 10.3389/fpsyg.2016.00329
+
+Retrieval Interference in
+Syntactic Processing: The Case
+of Reﬂexive Binding in English
+
+Umesh Patil 1, 2*, Shravan Vasishth 1 and Richard L. Lewis 3
+
+1 Department of Linguistics, University of Potsdam, Potsdam, Germany, 2 Computational Linguistics, Institute of Cognitive
+Science, University of Osnabrück, Osnabrück, Germany, 3 Department of Psychology, University of Michigan, Ann Arbor, MI,
+
+USA
+
+It has been proposed that in online sentence comprehension the dependency between a
+reﬂexive pronoun such as himself/herself and its antecedent is resolved using exclusively
+syntactic constraints. Under this strictly syntactic search account, Principle A of the
+binding theory—which requires that the antecedent c-command the reﬂexive within
+the same clause that the reﬂexive occurs in—constrains the parser’s search for an
+antecedent. The parser thus ignores candidate antecedents that might match agreement
+features of the reﬂexive (e.g., gender) but are ineligible as potential antecedents because
+they are in structurally illicit positions. An alternative possibility accords no special
+status to structural constraints: in addition to using Principle A, the parser also uses
+non-structural cues such as gender to access the antecedent. According to cue-based
+retrieval theories of memory (e.g., Lewis and Vasishth, 2005), the use of non-structural
+cues should result in increased retrieval times and occasional errors when candidates
+partially match the cues, even if the candidates are in structurally illicit positions. In this
+paper, we ﬁrst show how the retrieval processes that underlie the reﬂexive binding are
+naturally realized in the Lewis and Vasishth (2005) model. We present the predictions of
+the model under the assumption that both structural and non-structural cues are used
+during retrieval, and provide a critical analysis of previous empirical studies that failed
+to ﬁnd evidence for the use of non-structural cues, suggesting that these failures may
+be Type II errors. We use this analysis and the results of further modeling to motivate
+a new empirical design that we use in an eye tracking study. The results of this study
+conﬁrm the key predictions of the model concerning the use of non-structural cues,
+and are inconsistent with the strictly syntactic search account. These results present
+a challenge for theories advocating the infallibility of the human parser in the case of
+reﬂexive resolution, and provide support for the inclusion of agreement features such as
+gender in the set of retrieval cues.
+
+Keywords: sentence processing, anaphor resolution, memory retrieval, interference, computational modeling, eye
+tracking
+
+1. INTRODUCTION
+
+Sentence comprehension involves, among other things, recovering hierarchical structure from
+an input string of words (e.g., Frazier, 1979). Such recovery requires the online application of
+grammatical constraints that delimit the possible relationships between various elements of the
+sentence. For example, to understand a sentence like (1), the pronoun himself has to be resolved
+
+Edited by:
+
+Colin Phillips,
+
+University of Maryland, College Park,
+
+USA
+
+Reviewed by:
+
+Dan Parker,
+
+College of William & Mary, USA
+
+Jeffrey Thomas Runner,
+
+University of Rochester, USA
+
+*Correspondence:
+
+Umesh Patil
+
+umesh.patil@gmail.com
+
+Specialty section:
+
+This article was submitted to
+
+Language Sciences,
+
+a section of the journal
+
+Frontiers in Psychology
+
+Received: 05 September 2015
+
+Accepted: 22 February 2016
+
+Published: 26 May 2016
+
+Citation:
+
+Patil U, Vasishth S and Lewis RL
+
+(2016) Retrieval Interference in
+
+Syntactic Processing: The Case
+
+of Reﬂexive Binding in English.
+
+Front. Psychol. 7:329.
+
+doi: 10.3389/fpsyg.2016.00329
+
+Frontiers in Psychology | www.frontiersin.org
+
+1
+
+May 2016 | Volume 7 | Article 329
+
+Patil et al.
+
+Retrieval Interference in Reﬂexive Binding
+
+to a referent of an earlier noun surgeon; the reﬂexive cannot be
+associated with Jonathan due to Principle A of the binding theory
+(Chomsky, 1981)1.
+
+(1)
+
+The surgeon who treated Jonathan had pricked himself.
+
+Establishing a relationship between two non-adjacent elements in
+a sentence requires maintaining some memory of the immediate
+past. The question we are concerned with here is: what role do
+grammatical and non-grammatical constraints play in the access
+to the immediate past? The binding of English reﬂexive pronouns
+is a particularly informative case, because the conﬁgurational
+and agreement constraints are relatively clear, and the structure
+admits manipulations of distance and distracting candidate
+antecedents (Sturt, 2003).
+
+One proposal for how structural constraints are implicated in
+dependency resolution is motivated by the experiments reported
+in Nicol and Swinney (1989), Sturt (2003), and Xiang et al. (2009).
+Using diﬀerent experimental methodologies, these studies found
+that a grammatically incorrect antecedent [e.g., Jonathan in (1)]
+does not interfere in the process of binding a reﬂexive pronoun by
+a grammatically correct antecedent [e.g., surgeon in (1)], at least
+in the early stages of processing a reﬂexive.
+
+Nicol and Swinney (1989) presented evidence from a
+series of experiments that employed the cross modal lexical
+priming paradigm. Participants listened to sentences similar
+to those shown in (2) and responded to visually presented
+probe words that was presented immediately following the
+reﬂexive himself. The probe word was either semantically
+related or unrelated to one of the three previously occurring
+nouns in the sentence (boxer, skier, or doctor). Participants
+judged whether the probe word was a word or non-word.
+A signiﬁcant priming eﬀect was observed when probe words
+were related to grammatically accessible as antecedents [e.g.,
+doctor in (2)], but not when they were related to grammatically
+inaccessible antecedents [e.g., boxer and skier in (2)]. Nicol
+and Swinney (1989) concluded that no priming was observed
+for words related to grammatically inaccessible antecedents
+because they had not been considered during co-reference
+resolution.
+
+(2)
+
+The boxer told the skier that the doctor for the team
+would blame himself for the recent injury.
+
+Sturt (2003) reported eye tracking studies using materials such as
+(3). He found that ﬁrst ﬁxation duration and ﬁrst pass reading
+time on the region containing the reﬂexive were longer when
+the gender of the reﬂexive did not match the stereotypical
+gender of the grammatically accessible antecedent than when
+it matched (e.g., herself and surgeon vs. himself and surgeon).
+Early reading times were not aﬀected by gender match between
+
+1Principle A speciﬁes a structural constraint on the interpretation of reﬂexives
+in English: a reﬂexive must be bound by an antecedent in the local domain (the
+current clause). An antecedent X can bind a reﬂexive Y, if X and Y are coindexed,
+and X c-commands Y. The term c-command deﬁnes a hierarchical relationship
+between two constituents in a syntax tree. A constituent c-commands its sister
+constituent and every constituent below the sister constituent in the syntax tree.
+In (1), the reﬂexive himself is bound by surgeon; the noun Jonathan cannot bind
+the reﬂexive because it does not c-command it.
+
+the reﬂexive and the grammatically inaccessible antecedent
+(Jonathan or Jennifer). Second pass reading time at the reﬂexives
+showed an interaction for gender match between the reﬂexive
+and the two antecedents suggesting that in later interpretation
+stages (but, crucially, not in earlier processing stages)2 the
+inaccessible antecedent is part of the candidates being considered
+as antecedents. There was also an eﬀect of the inaccessible
+antecedent in second pass reading time in the pre-ﬁnal region,
+but this eﬀect was observed only when the accessible antecedent
+matched the gender of the reﬂexive. However, these late eﬀects
+of the inaccessible antecedent were not observed in the second
+experiment [with design as in (4)], but he pointed out that the
+absence of any eﬀect of the inaccessible antecedent in Experiment
+2 could have been due to the fact that the inaccessible antecedent
+did not c-command the reﬂexive and it was also not as prominent
+as in Experiment 1.
+
+To gain further insight into this late-stage interpretation of
+the sentences, Sturt (2003) also ran a follow-up study, where
+a sentence-by-sentence self-paced reading task was followed
+by a question that directly probed for the antecedent of the
+reﬂexive. This study showed a signiﬁcant interference eﬀect, with
+more ungrammatical interpretations when the grammatically
+inaccessible antecedent matched the gender of the reﬂexive;
+the eﬀect was bigger when the accessible antecedent did not
+match the gender of the reﬂexive. Sturt (2003) concluded that
+grammatical constraints are applied very early in processing,
+but interference from the grammatically inaccessible antecedent
+occurs during later processes that are related to recovery
+strategies, rather than during processes related to the initial
+interpretation of the reﬂexive.
+
+(3)
+
+(4)
+
+the City
+{Jonathan/Jennifer} was pretty worried at
+Hospital. {He/She} remembered that the surgeon had
+pricked {himself/herself} with a used syringe needle.
+There should be an investigation soon.
+
+the City
+{Jonathan/Jennifer} was pretty worried at
+Hospital. The surgeon who treated {Jonathan/Jennifer}
+had pricked {himself/herself} with a used syringe needle.
+There should be an investigation soon.
+
+Dillon et al. (2013) reported two eye tracking studies with English
+reﬂexives using material with syntactic structure similar to
+Experiment 2 in Sturt (2003). They also did not ﬁnd any eﬀect of
+the inaccessible antecedent, but reported eﬀects of the accessible
+antecedent. Xiang et al. (2009) reported similar results in an ERP
+study, where they found that a P600 is elicited by a reﬂexive
+that mismatches the stereotypical gender of the grammatically
+accessible antecedent, and is not attenuated by the presence of
+a matching antecedent in a grammatically inaccessible position.
+Based on results from these studies, Phillips et al. (2011)
+
+suggests that:
+
+“. . . argument
+from
+structurally inaccessible antecedents because antecedents are
+
+to interference
+
+reﬂexives are
+
+immune
+
+2In this paper, we follow the literature (see e.g., Sturt, 2003) in assuming that so-
+called early and late measures in eye tracking data map onto processes that occur
+(respectively) in early and late stages of parsing.
+
+Frontiers in Psychology | www.frontiersin.org
+
+2
+
+May 2016 | Volume 7 | Article 329
+
+

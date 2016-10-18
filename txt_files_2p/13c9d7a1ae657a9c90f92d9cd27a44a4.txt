@@ -1,0 +1,182 @@
+Dipl.-Psych. Jennifer Lindzus        Universität Osnabrück           WS 2014/2015 
+
+ÜBUNG »STATISTIK UND DATENANALYSE I« 
+
+Lösungen Aufgabenblatt 7 
+
+ 
+
+ 
+
+Aufgabe 
+
+1 
+
+ (ohne SPSS) 
+
+ 
+  (Menge 
+Zur  Lösung  der  beiden  ersten  Teilaufgaben,  sollten  Sie  mit  den  Konzepten  „Durchschnitt“ 
+aller Elemente, die zu beiden Mengen gehören) sowie „Vereinigung“ 
+ (Menge der Elemente, die ent-
+weder zu Menge A oder B oder zu beiden gehören) aus der Mengenlehre vertraut sein. Zudem verlan-
+gen  beide  Teilaufgaben  die  Bildung  des  so  genannten  „kartesischen  Produktes“  zweier  Mengen  (vgl. 
+Folie 8; VL „Grundlagen der Wahrscheinlichkeitstheorie, Teil I“). 
+ 
+(a) 
+
+(b) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+) einer Menge 
+
+ bestimmen. Die Elemente der Menge 
+
+(c) In dieser Aufgabe sollen Sie die Mächtigkeit (angezeigt durch die Betragsstriche) der Potenzmenge 
+ haben Sie in Teilaufga-
+ beinhaltet alle Teilmengen der 
+(inklusive der Menge Ω selbst; auch „sicheres Ereignis“, vgl. Folie 23). Ihre Aufgabe besteht 
+zu bestimmen. Die sog. Mächtigkeit ei-
+) entspricht - bei endlichen Mengen - der Anzahl der in der 
+o-
+? Dieser Frage nähern wir uns nun 
+
+(Schreibweise: 
+be (a) bereits bestimmt. Die sogenannte Potenzmenge der Menge 
+Menge 
+jetzt darin, die Mächtigkeit der Potenzmenge der Menge 
+ner Menge (hier der Potenzmenge von 
+Menge befindlichen Elemente. Wie viele Elemente befinden sich also in der Potenzmenge von 
+der anders ausgedrückt, wie viele Teilmengen hat die Menge 
+schrittweise. 
+Neben der Menge selbst (Ω) ist auch die sogenannte leere Menge Ø (auch: „unmögliches Ereignis“) 
+, denn sie ist Teilmenge jeder Menge. Neben diesen beiden Men-
+eine Teilmenge unserer Menge 
+gen sind alle einelementigen (z.B. 
+), dreielemen-
+
+), zweielementigen (z.B. 
+
+ ermitteln.] Die Anzahl der einelementigen Teilmengen der Menge 
+
+),  vierelementigen  und  fünfelementigen  echten  Teilmengen  der 
+tigen  (z.B.
+Menge 
+ Bestandteil der Potenzmenge [Anmerkung: Zur Beantwortung dieser Aufgabe müssen die 
+Teilmengen nicht im einzelnen aufgeschrieben werden. Sie sollen lediglich die Anzahl aller Teilmenge 
+der Menge 
+ ist offensichtlich 
+6. Aber wie viele zweielementige Teilmengen gibt es? Dies lässt sich mittels Rückgriff auf die Formel 
+des 3. kombinatorischen Falls bestimmen (vgl. Folie 19; VL „Grundlagen der Wahrscheinlichkeitsthe-
+orie, Teil I“). Diese Formel erlaubt uns zu bestimmen, wie viele Mengen der „Größe“ k  (hier 2) sich 
+aus den n=6  Elementen der Menge 
+ bilden lassen, da die Reihenfolge der Elemente innerhalb der 
+)  und  jedes  der  6 
+geschweiften  Klammern  bedeutungslos  ist  (
+Elemente pro Teilmenge nur einmal vorkommt (d.h. Ziehung ohne Zurücklegen).  
+
+ 
+
+– 1 – 
+
+ 
+
+ 
+
+49. KW 
+
+(){1,2}({,}{,}){1,2}{,,}{(1,),(1,),(1,),(2,),(2,),(2,)}EABCabbcabcabcabc(  )(  B){(1,),(1,),(2,),(2,)}{(1,),(1,),(3,),(3,)}{(1,),(1,)}FABDababababab2EEEEEEEEEE{(1,)}a{(1,),(1,)}ab{(1,),(1,),(1,)}abcEEEE{(1,),(1,)}{(1,),(1,)}abbaDipl.-Psych. Jennifer Lindzus        Universität Osnabrück           WS 2014/2015 
+
+ 
+
+ 
+Nun setzten wir erneut ein, um die Anzahl aller möglichen Tripelkombinationen (k=3) zu erhalten: 
+
+ 
+
+ 
+Analog dazu die Quadrupelkominationen (mit k=4): 
+
+ 
+Und zuletzt die Quintupelkombinationen (mit k=5): 
+
+ 
+
+ 
+
+ 
+
+ 
+Zählen wir nun zusammen, so haben wir die leere Menge, 6 einelementige, 15 zweielementige, 20 
+dreielementige, 15 vierelementige und 6 fünfelementige Teilmengen sowie 1 sechselementige Teil-
+menge (d.h. die Menge selbst), weshalb gilt: 
+
+=1+6+15+20+15+6+1=64 
+
+Die Mächtigkeit der Potenzmenge von 
+
+ beträgt also 64.  
+
+ES lässt sich zeigen, dass jede Potenzmenge einer endlichen Menge genau 
+
+ Elemente hat:  
+
+ 
+
+ 
+
+ 
+
+Aufgabe 
+
+2 
+
+ (ohne SPSS) 
+
+ 
+(a)  Die Wahrscheinlichkeit, dass der Buchstabe ein Vokal ist beträgt: 
+
+ 
+
+Die Wahrscheinlichkeit, dass der Buchstabe unter den ersten zehn des Alphabets ist beträgt: 
+
+ 
+
+Die Wahrscheinlichkeit, dass der gezogene Buchstabe unter den ersten zehn des Alphabets ist und 
+ein Vokal ist (Buchstaben a, e oder i) beträgt: 
+
+ 
+
+Die gesuchte Wahrscheinlichkeit 
+
+ergibt sich also wie folgt: 
+
+ 
+
+ 
+(b)  Die Wahrscheinlichkeit, dass Herr M. in 20 Jahren noch lebt beträgt: 
+
+ 
+
+Die Wahrscheinlichkeit, dass Frau S. in 20 Jahren noch lebt beträgt: 
+
+ 
+
+ 
+
+– 2 – 
+
+ 
+
+ 
+
+49. KW 
+
+!(1)6515!!22nnnnKkknk!6!654321!!3!(63)!nnKkknk(321)(321)120206!6!654321!!4!(64)!nnKkknk(4321)30152(21)6!6543215!(65)!nKk(54321)66112EE262264E5P(A)2610P(B)263P(AB)26P(AB)510312P(AB) = P(A) + P(B) - P(AB) = .4626262626P(A).60P(B).70

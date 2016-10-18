@@ -1,0 +1,466 @@
+A R T I C L E S
+
+Divergence of fMRI and neural signals in V1 during
+perceptual suppression in the awake monkey
+
+Alexander Maier1, Melanie Wilke1, Christopher Aura1, Charles Zhu2, Frank Q Ye2 & David A Leopold1,2
+
+The role of primary visual cortex (V1) in determining the contents of perception is controversial. Human functional magnetic
+resonance imaging (fMRI) studies of perceptual suppression have revealed a robust drop in V1 activity when a stimulus is
+subjectively invisible. In contrast, monkey single-unit recordings have failed to demonstrate such perception-locked changes in
+V1. To investigate the basis of this discrepancy, we measured both the blood oxygen level–dependent (BOLD) response and
+several electrophysiological signals in two behaving monkeys. We found that all signals were in good agreement during
+conventional stimulus presentation, showing strong visual modulation to presentation and removal of a stimulus. During
+perceptual suppression, however, only the BOLD response and the low-frequency local ﬁeld potential (LFP) power showed
+decreases, whereas the spiking and high-frequency LFP power were unaffected. These results demonstrate that the coupling
+between the BOLD and electrophysiological signals in V1 is context dependent, with a marked dissociation occurring during
+perceptual suppression.
+
+Perceptual suppression provides an intriguing puzzle for sensory
+neuroscientists: how is an unperceived stimulus represented in the
+brain? Binocular rivalry and related phenomena, in which salient visual
+patterns are rendered temporarily invisible to the observer, have been
+frequently employed to dissociate sensation from perception while
+monitoring brain activity1. These studies have provided insight into
+the nature of visual suppression, but have nonetheless failed to answer
+the fundamental question of what role V1 activity has in determining
+the visibility of a stimulus2. The main problem is that human and
+animal studies have reached nearly opposite conclusions. On the one
+hand, measurements of the BOLD signal
+in human fMRI have
+commonly found partial or even complete elimination of V1 responses
+to perceptually suppressed stimuli during rivalry3–9, which suggests that
+V1 is important in determining whether a stimulus reaches subsequent
+processing stages. On the other hand, monkey single-unit studies found
+little or no change in activity in this area as a function of perceptual
+state, leading to the conclusion that perceptual suppression does not
+involve the perturbation of visual signals in the ﬁrst cortical processing
+stage10–13. This discrepancy has been identiﬁed as a major impediment
+for understanding how V1 activity contributes to perception.
+
+Until now, it has been impossible to isolate the potential reasons for
+the observed differences, as fMRI and electrophysiological studies
+have differed in their visual stimuli, behavioral procedures and
+species tested3,14,15. Here, we directly investigated the basis of these
+contradictory ﬁndings and further explored the role of V1 in
+visual perception by measuring both fMRI and electrophysiological
+responses of two trained monkeys experiencing perceptual suppression.
+Holding the stimulus procedure constant, we found that fMRI and
+
+neurophysiological signals in V1, although in good agreement during
+conventional stimulation, consistently diverged during perceptual
+suppression, with the most accurate reﬂection of stimulus visibility
+provided by BOLD responses.
+
+RESULTS
+The main objective of the study was to compare neural and fMRI
+responses under identical stimulus and perceptual conditions. To this
+end, we trained both monkeys to respond explicitly to the visibility of a
+salient target that was presented on a screen by depressing a lever when-
+ever the target was present. We used generalized ﬂash suppression
+(GFS)16, where a salient target disappears on the abrupt onset of a
+surrounding ﬁeld of dynamic dots, to reliably induce perceptual
+suppression (the stimulus sequence used in the present study is
+shown in Fig. 1a). Previous work in monkeys13 and humans16
+demonstrated that such a stimulus reliably leads to all-or-none percep-
+tual suppression in the absence of either local or interocular conﬂict. By
+adjusting stimulus parameters, such as the density of the dots, the
+minimum distance between the dots and the target, and the ocular
+conﬁguration, we were able to affect the probability of the all-or-none
+target disappearance (see Methods). Suppression in the GFS procedure
+is related to that in motion-induced blindness17, but is controlled using
+a temporal sequence resembling binocular rivalry ﬂash suppression18.
+As with conventional binocular rivalry, GFS suppression is known to
+diminish the visual responses of extrastriate cortical neurons, but has
+little effect on V1 ﬁring rates10,11,19,20.
+
+We used two general approaches to induce perceptual suppression.
+In the ﬁrst, which we term perceptual report testing, we adjusted the
+
+1Unit on Cognitive Neurophysiology and Imaging, Laboratory of Neuropsychology, National Institute of Mental Health and 2Neurophysiology Imaging Facility, National
+Institute of Mental Health, National Institute of Neurological Disorders and Stroke, National Eye Institute, US National Institutes of Health, Department of Health and Human
+Services, 49 Convent Dr., B2J-45, MSC 4400, Bethesda, Maryland 20892, USA. Correspondence should be addressed to A.M. (maiera@mail.nih.gov).
+
+Received 27 March; accepted 24 June; published online 24 August 2008; doi:10.1038/nn.2173
+
+NATURE NEUROSCIENCE VOLUME 11 [ NUMBER 10 [ OCTOBER 2008
+
+1 1 9 3
+
+©2008 Nature Publishing Group  http://www.nature.com/natureneuroscienceA R T I C L E S
+
+a
+
+b
+
+FIX
+
+F
+
+INV
+
++
+
+VISTR
+
+Suppression period
+
+VIS OFF INV
+
+Block design trial types
+
+Target percept suppressed
+
+Figure 1 Generalized ﬂash suppression protocol for the block design
+experiment. (a) Stimulus conditions. The parameters of the salient target and
+the random dot surround were adjusted to create ﬁve different conditions,
+with individual trials lasting 6 s (1-min blocks consisted of up to nine such
+trials). In the generalized ﬂash suppression (INV) condition, the appearance
+of surrounding dots to both eyes consistently induced the monocular target to
+disappear (the time period during which the target stimulus disappears is
+indicated with a thick orange line). In the physical removal (OFF) condition,
+the target was physically extinguished on appearance of the dots, mimicking
+perceptual suppression. In the temporal reversal (VISTR) and binocular (VIS)
+conditions, the stimuli were adjusted by reversing the order of the target (red
+disk) and surround (moving random dots) or by presenting the target to both
+eyes, respectively, to ensure that the target did not disappear. Finally, in the
+ﬁxation (FIX) condition (not depicted), the screen remained blank as the
+monkey ﬁxated a small cross throughout the trial. (T on ¼ target on, T off ¼
+target off, S on ¼ surround on, S off ¼ surround off). (b) The two modes of
+block design used for the fMRI experiments. In the sequential block design,
+the ﬁve stimulus conditions alternated in a ﬁxed temporal order, keeping the
+number of stimulus conditions per run constant. In the randomized block
+design, each condition was presented in pseudorandomized order, each
+preceded by a blank screen ﬁxation condition. (c) Psychophysical responses during the different conditions. The probabilities of perceptual suppression that
+are shown were based on ten psychophysical test sessions (ﬁve from each animal) and are plotted as the mean and s.e.m. over these sessions.
+
+F
+Randomized block mode
+
+Target continuously visible
+
+Target physically removed
+
+Sequential block mode
+
+Target Surround
+
+n = 10
+sessions
+
+Time (s)
+
+VISTR
+
+VISTR
+
+T off
+
+S off
+
+OFF
+
++
+
++
+
++
+
++
+
+B
+
++
+
++
+
+F
+
+F
+
+T on
+
+S on
+
++
+
++
+
+B
+
++
+
++
+
+F
+
+F
+
+c
+
+1.5 s
+
+2.0 s
+
+1.5 s
+
+60 s
+
+VIS
+
+OFF
+
+INV
+
+30 s
+
+VIS
+
+0.0
+
+2.0
+
+4.0
+
+6.0
+
++
+
+F
+
+Percentage of trials reported visible
+0
+0
+
+100
+
+20
+
+80
+
+40
+
+60
+
+stimulus parameters at the beginning of each session according to
+the monkeys’ psychophysical report such that the probability of
+disappearance for each trial presentation was roughly 0.5. This method,
+which was applied in a previous study13, entails the sorting of neural
+responses by the monkey’s report on a trial-by-trial basis. The second
+approach, which allowed direct comparison of fMRI and electrophy-
+siological responses, was termed block design testing (Fig. 1b). In block
+design testing, which was used for the majority of the study, the
+visibility of the target was controlled over extended periods (blocks)
+by biasing the physical stimulus parameters (see Methods).
+
+To isolate signal changes related to perceptual suppression, we
+compared responses during conditions in which the target was ren-
+dered either visible (VIS) or invisible (INV). Because of the existing
+discrepancy in the literature, we were particularly interested in whether
+activity during suppression (INV) would fall to the level of a control
+condition in which the stimulus condition was turned off when
+the surrounding dots appeared (OFF). This control condition is
+perceptually indistinguishable from suppres-
+sion16. For both fMRI and electrophysiologi-
+cal testing, brain activation was measured
+relative to a stimulus-free ﬁxation condition
+(FIX). Note that
+the monkeys were not
+required to conﬁrm the disappearance during
+the block design testing (maintaining accurate
+
+a
+
+Figure 2 Modulation of BOLD responses during
+perceptual suppression in two monkeys.
+(a) Single-session examples of target-speciﬁc
+activation on axial slices (anterior is up, posterior
+is down) are shown. Colors represent the
+thresholded t score map corresponding to the
+statistical comparison between four repetitions of
+30-s target presentation and four interleaved 30-s
+blocks of a blank screen (see Methods for the
+parameters used for the anatomical and
+functional magnetic resonance scans). (b) Mean
+BOLD responses over all sessions for both
+monkeys. Only voxels in V1 showing signiﬁcant
+decreases in activity during the OFF period were
+included (see Methods for details). Mean ± s.e.m.
+over 8 and 16 sessions for Monkey CB35 and
+98X009, respectively.
+
+perceptual report for truly ambiguous stimuli requires a large propor-
+tion of interspersed catch trials). Nonetheless, the effectiveness of the
+biased stimulus conﬁgurations was evaluated repeatedly in perceptual
+report testing. The behavioral results in the two animals verify that the
+manipulations of stimulus visibility were highly effective (see Fig. 1c)
+and matched the expectations of observed psychophysical results in a
+different group of monkeys13.
+
+In the block design, stimuli were grouped into 30- or 60-s epochs of
+repeated 6-s trials, during which the monkey was required to ﬁxate a
+small cross. Blocks of the different conditions (INV, VIS, OFF, etc.)
+were presented either sequentially or in randomly interleaved order
+(Fig. 1b), with a total of four blocks of each type per scanning session.
+After successfully completed trials, the animal received a drop of apple
+juice and a short break (0.8–1.0s) in which it was free to brieﬂy move its
+eyes about. Two animals participated in a total of 29 fMRI sessions and
+41 electrophysiology sessions, which were conducted over the same
+time period, but on different days.
+
+b
+
+e
+g
+n
+a
+h
+c
+ 
+t
+
+n
+e
+c
+r
+e
+P
+
+e
+g
+n
+a
+h
+c
+ 
+t
+n
+e
+c
+r
+e
+P
+
+3
+
+2
+
+1
+
+0
+
+2
+
+1
+
+0
+
+e
+r
+o
+c
+s
+ 
+t
+
+6.2
+
+0.0
+
+e
+r
+o
+c
+s
+ 
+t
+
+7.3
+
+0.0
+
+Monkey CB35 (all sessions)
+
+FIX
+
+0
+
+VISTR
+100
+
+VIS
+
+OFF
+
+200
+
+INV
+
+300
+
+Monkey 98X009 (all sessions)
+
+FIX
+
+0
+
+VIS
+
+VISTR
+100
+
+OFF
+
+200
+
+INV
+
+300
+
+Seconds
+
+ 
+
+ 
+
+(
+n
+=
+8
+ 
+s
+e
+s
+s
+o
+n
+s
+)
+
+i
+
+ 
+
+(
+n
+=
+ 
+1
+6
+ 
+s
+e
+s
+s
+o
+n
+s
+)
+
+i
+
+1 1 9 4
+
+VOLUME 11 [ NUMBER 10 [ OCTOBER 2008 NATURE NEUROSCIENCE
+
+©2008 Nature Publishing Group  http://www.nature.com/natureneuroscience

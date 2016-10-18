@@ -1,0 +1,108 @@
+R E V I E W S
+
+MAKING SENSE OF IT ALL:
+BACTERIAL CHEMOTAXIS
+
+George H. Wadhams and Judith P. Armitage
+
+Abstract | Bacteria must be able to respond to a changing environment, and one way to respond
+is to move. The transduction of sensory signals alters the concentration of small phosphorylated
+response regulators that bind to the rotary flagellar motor and cause switching. This simple
+pathway has provided a paradigm for sensory systems in general. However, the increasing
+number of sequenced bacterial genomes shows that although the central sensory mechanism
+seems to be common to all bacteria, there is added complexity in a wide range of species.
+
+In an ever-changing environment, it is essential that
+organisms  are  able  to  sense  these  changes  and  to
+respond appropriately. Possible responses include alter-
+ations in gene expression and/or active movement
+towards or away from an environment. Most sensory
+pathways in eukaryotic organisms rely on serine, threo-
+nine or tyrosine protein kinases, whereas the most com-
+mon  sensory  pathways 
+in  prokaryotes  use  a
+histidine–aspartate phosphorelay (HAP) system. HAP
+systems have at least two components — a dimeric
+histidine protein kinase (HPK) and a response regula-
+tor (RR)1. HAP systems are also found in many lower
+eukaryotes, in which they control processes such as
+osmoregulation in, for example, Saccharomyces cere-
+visiae 2, Candida  albicans3
+and  Dictyostelium
+discoideum4. They are also found in plants, in which
+they control, for example, ethylene-mediated fruit
+ripening5 and blue-light responses. The Arabidopsis
+thaliana genome has genes for 16 HPK and 24 RR
+homologues.
+
+Bacteria can sense a vast range of environmental
+signals, from the concentrations of nutrients and toxins
+to oxygen levels, pH, osmolarity and the intensity and
+wavelength of light. Genome sequencing has identified
+over 600 HAP systems and some individual bacterial
+species contain more than 130 (REF. 6) — for example,
+Myxococcus xanthus has about 140 HAP systems (J. R.
+Kirby, personal communication). Despite the extremely
+high homology between the components of HAP sys-
+tems, numerous pathways operate in individual bacteria
+
+without significant crosstalk. Although most of these
+HAP systems are involved in the regulation of gene
+expression, one of the most well-understood pathways
+regulates motile behaviour. Chemotaxis operates as part
+of a complex network of signals that balance to produce
+a physiological response that is suited to a specific envi-
+ronment (BOX 1). Here, we describe the basic bacterial
+chemosensory pathway, as well as some of the varia-
+tions of this system. However, first we provide a general
+overview of HAP systems.
+
+Histidine–aspartate-phosphorelay systems
+HAP systems rely on the trans-autophosphorylation of a
+His residue that resides in one monomer of the HPK
+dimer by the γ-phosphoryl group of an ATP molecule
+that  is  bound  to  the  kinase  domain  of the  other
+monomer. This phosphoryl group is then transferred to
+an Asp residue on a separate RR protein to alter its activ-
+ity and generate a response. Some systems incorporate
+several His–Asp phosphorylation steps, which possibly
+allows  for  complex  regulatory  control  as  discussed
+below7,8.
+
+Numerous HAP systems have been identified in
+different bacteria (FIG. 1). Most of the HPKs involved
+(for example, EnvZ; FIG. 1a) have an N-terminal region
+that spans the membrane twice, which results in an
+intervening periplasmic domain that can sense an
+extracellular  signal. The  C-terminal  cytoplasmic
+region comprises a linker or HAMP DOMAIN (‘histidine
+kinases, adenylyl cyclases, methyl-binding proteins
+
+HAMP DOMAIN
+(‘Histidine kinases, adenylyl
+cyclases, methyl-binding
+proteins and phosphatases’
+domain). A domain that is
+broadly conserved in histidine
+protein kinases, chemoreceptors
+and phosphatases. It contains
+two amphipathic helices, and is
+presumed to have a role in signal
+transduction.
+
+Department of
+Biochemistry,
+University of Oxford,
+Oxford OX1 3QU, UK.
+Correspondence to J.P.A.
+e-mail: judith.armitage@
+bioch.ox.ac.uk
+doi:10.1038/nrm1524
+
+1024 | DECEMBER 2004 | VOLUME 5
+
+www.nature.com/reviews/molcellbio
+
+©  2004 Nature  Publishing Group
+
+

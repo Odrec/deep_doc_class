@@ -1,0 +1,73 @@
+PRECÍS OF SIMPLE HEURISTICS THAT 
+
+MAKE US SMART – AN ABSTRACT 
+
+In their detailed summary paper, published 2000 in the behavioural and brain science magazine, about 
+
+the well-cited (4023 citations until Nov14) book Simple Heuristics that make us smart, Peter M. Todd and 
+
+Gerd Gigerenzer challenge the popular complex reasoning mechanisms like Expected Utility Maximization 
+
+or Multiple Regression by stating the claim that simple heuristics, from now on especially called fast & 
+
+frugal heuristics, can outperform them in terms of complexity, time and computation effort and even 
+
+accuracy. 
+
+In Cognitive Science, Economics and Animal Behaviour Studies modelling (human / animal / artificial 
+
+intelligence) reasoning and decision making requires a number of assumptions, from which one of the 
+
+most assumed is being unconstrained. Limitless knowledge, endless time and supernatural reasoning 
+
+powers are taken for granted to manifest the various theories of reasoning. This, obviously, is far from 
+
+reality, does not deliver a sufficient explanation of human reasoning and neither serves to develop 
+
+artificially intelligent inference machines. The authors thus suggest to keep reasoning in the most 
+
+simplistic form, in their notation fast & frugal heuristics. 
+
+A very descriptive example mentioned in the paper is the decision of a medic on the risk level of an 
+
+incoming patient, resulting in a binary solution: “High risk patient” or “Low risk patient”. Since there is a 
+
+vast number of parameters able to measure from the patient, time is really pressing in this possibly life-
+
+threatening situation and the computational potential of a stressed medic is also very constrained, one 
+
+solution to this problem would be a complex reasoner which has a huge dataset of many parameters and 
+
+entries and tries to make an estimated guess about the risk. Another solution but, to use only a few 
+
+number of most informative cues and decide from them heuristically. So is the blood pressure level the 
+
+most important cue and can decide on its own under certain conditions whether the patient is a high risk 
+
+patient, disregarding every other parameter. Adding age and the information whether there is sinus 
+
+tachycardia present in the patient, one gets a (at most) 3-step heuristic which is far less complex and 
+
+therefore faster and computationally cheaper without losing accuracy. 
+
+Todd and Gigerenzer discuss about various types of rationality that arose in the human history, but 
+
+defend humanity by stating that “biases” in examples like the Wason Selection Task or Kahneman & 
+
+Tverskys famous experiments do not show that humans are irrational, but that they are not using logics or 
+
+mathematics to use the most tasks in their life, but heuristics. 
+
+They also present some classes of their theoretical heuristics, show how to implement them, compare 
+
+them to today’s standard complex methods and evaluate, whether humans actually use them. 
+
+Lastly, they introduce their concept of the adaptive toolbox, for which more information are held in Gerd 
+
+Gigerenzers “Bounded Rationality: The adaptive Toolbox”, that serves as a framework for human 
+
+reasoning explained in heuristics using lower- and higher-order cognitive functions, as well as other 
+
+heuristics. 
+
+

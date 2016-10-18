@@ -1,0 +1,78 @@
+MATLAB in Cognitive Science
+
+Homework #5
+
+Please turn your homework until Friday Nov 28th. The sheet needs to contain your name(s),
+matriculation number(s) as well as your MatLab code and all required labeled ﬁgures.
+If you
+encounter problems, don’t hesitate to write an email to kahartma@uos.de. and ameisener@uos.de
+Be sure to include [matlab] in the subject.
+
+Task 1: Simple Learning Net
+
+We will build a very simple artiﬁcial neural network. The goal of this network is to detect
+letters from a binary input vector with the shape of 1x47 (or 7x7 for visual representation). The
+input vectors get projected onto 2 output neurons and each neuron has 47 weights for weighting
+the inputs. For each of 4 different given inputs the network should produce a distingishuable
+output. To train the network on those 4 inputs we will use a very simple learning rule called
+“Hebbian Learning”1 in an altered form2. This rule works after a very simple principle: “What
+ﬁres together, wires together”.
+
+1. Load the ﬁle inputs.mat and have a look at its variables
+
+(a) There is a matrix Inputs which contains 4 1x49 matrices. This are the patterns we use
+to train our network. The patterns simply encode an abstract version of the letters H,
+A, I and J.
+
+(b) The ﬁle also contains the inputs M and T which we user for later testing
+(c) Reshape the inputs to a 7x7 matrix to see how they look.
+
+2. Building the network
+
+(a) You need 49 input and 2 output “neurons”. You do not really need to create the neurons,
+
+but only the connections between them.
+
+(b) For that you need one matrix that contains all weights from each (virtual) input to each
+(virtual) output neuron. The weights are initialized with uniform random numbers
+between (0,1).
+
+1http://en.wikipedia.org/wiki/Hebbian_theory
+2http://en.wikipedia.org/wiki/Generalized_Hebbian_Algorithm
+
+1
+
+(c) Choose a learning rate h that is not too high and not too low(0.01 or similar). The
+learning rate deﬁnes how much your network learns in each presentation of the letters.
+With a higher h you learn “faster”, but a lower h catches more details
+
+(d) The output of one neuron is simply input times the respective weights summed up
+
+(Matrix multiplication).
+
+3. Training the network
+
+(a) Let the network train its weights on the inputs at least 100 times for each input. Use
+the above equation for calculating the change of the weight from neuron i to j. x are the
+input and y the output neurons’ activations, w the current weights (changes with each
+iteration) and h the learning rate.
+
+(b) It is possible to program the whole thing with 3 for loops, we recommend you this time
+to start with 4 for-loops and then possible reduce one of them. If you can do it in two
+for-loops without repeating code. Kudos! (If you really want to try, have a second look
+at http://en.wikipedia.org/wiki/Generalized_Hebbian_Algorithm and its derivation)
+(c) Plot the outputs for all 4 inputs. Which pattern do you think is encoded by the connec-
+
+tions to neuron 1/2?
+
+4. Analysis
+
+(a) Plot the outputs for the inputs M and T. Explain the neuron activations by taking the
+
+input patterns into account.
+
+(b) Plot the weights as a 7x7 grid to support your argumentation.
+
+2
+
+
