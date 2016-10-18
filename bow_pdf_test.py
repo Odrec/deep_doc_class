@@ -4,8 +4,8 @@ __author__ = 'matsrichter'
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
-from pdfminer.pdfparser import PDFPage
-# from pdfminer.pdfpage import PDFPage
+#from pdfminer.pdfparser import PDFPage
+from pdfminer.pdfpage import PDFPage
 try:
     from cStringIO import StringIO
 except ImportError:
@@ -18,8 +18,10 @@ import csv
 
 class BoW_Text_Module:
 
-    def __init__(self, mode = 'full'):
+    def __init__(self,txt=False, mode = 'full'):
         self.lib = self.load_lib(mode)
+        self.txt = txt
+        self.target = 'txt_files_1p'
         return
 
     def sanitize(self,txt):
@@ -87,9 +89,16 @@ class BoW_Text_Module:
             device.close()
             retstr.close()
         except:
-            x=1#Placeholder
-            #print('troubleshooting')
+            print('troubleshooting')
+            text = ''
         return text
+
+    def get_txt(self,fp):
+        fp_txt = open('./'+self.path+'/'+fp.name,'r')
+        txt = ''
+        for lines in fp_txt.readline():
+            txt += lines
+        return txt
 
     def get_bow(self,txt):
         """
@@ -113,12 +122,17 @@ class BoW_Text_Module:
     def load_lib(self,mode = 'full'):
         if(mode == 'full'):
             return eval(open('bow_train_full.txt','r').read())
+        elif(mode == 'train'):
+            return dict()
         else:
             return eval(open('bow_train.txt','r').read())
 
     def get_function(self,filepointer, metapointer = None):
         try:
-            txt = self.convert_pdf_to_txt(filepointer)
+            if self.txt:
+                txt = self.get_txt(filepointer)
+            else:
+                txt = self.convert_pdf_to_txt(filepointer)
         except:
             return 0.0
         txt = self.sanitize(txt)
@@ -141,19 +155,23 @@ class BoW_Text_Module:
         for i in range(len(filenames)):
             if(classes[i] == 'True'):
                 continue
-            with open(filenames[i],'r') as fp:
-                try:
-                    txt = self.convert_pdf_to_txt(fp)
-                    txt = self.sanitize(txt)
-                    bow = (self.get_bow(txt))
-                    for key in bow:
-                        all += bow[key]
-                        if not key in lib:
-                            lib[key] = 1
+            else:
+                with open(filenames[i],'r') as fp:
+                    try:
+                        if(self.txt):
+                            txt = self.get_txt(fp)
                         else:
-                            lib[key] += bow[key]
-                except:
-                    continue
+                            txt = self.convert_pdf_to_txt(fp)
+                        txt = self.sanitize(txt)
+                        bow = (self.get_bow(txt))
+                        for key in bow:
+                            all += bow[key]
+                            if not key in lib:
+                                lib[key] = 1
+                            else:
+                                lib[key] += bow[key]
+                    except:
+                        continue
         for key in lib:
             lib[key] /= all
         self.lib = lib
@@ -163,14 +181,14 @@ class BoW_Text_Module:
 """
 #training script to create the lib
 save = open('bow_train.txt','w')
-m = BoW_Text_Module()
+m = BoW_Text_Module('train')
 bows = list()
 
 filenames = list()
 file_class = dict()
 
 #create dictionary with classifications
-with open('classification.csv','rb') as classes:
+with open('classification.csv','r') as classes:
     reader = csv.reader(classes,delimiter=';', quotechar='|')
     for row in reader:
         file_class['./files/'+row[0]+'.pdf'] = row[2]
@@ -189,8 +207,7 @@ for i in range(len(filenames)):
         continue
     #if(counter == 100):
     #    break
-    print(str(counter)+'/'+str(len(filenames)))
-    fp = open(filenames[i],'r')
+    fp = open(filenames[i],'rb')
     try:
         b = m.get_bow(m.sanitize(m.convert_pdf_to_txt(fp)))
         bows.append(b)
@@ -200,16 +217,16 @@ for i in range(len(filenames)):
         fp.close()
     if counter%500 == 0:
         bow = sum(bows, collections.Counter())
-        bb = bow.most_common(1000)
-        bow = collections.Counter()
-        for elem in bb:
-            bow[elem[0]] = elem[1]
+#        bb = bow.most_common(1000)
+#        bow = collections.Counter()
+#        for elem in bb:
+#            bow[elem[0]] = elem[1]
         bows = [bow]
 bow = sum(bows, collections.Counter())
-bb = bow.most_common(1000)
-bow = dict()
-for elem in bb:
-    bow[elem[0]] = elem[1]
+#bb = bow.most_common(1000)
+#bow = dict()
+#for elem in bb:
+#    bow[elem[0]] = elem[1]
 
 all = 0
 for key in bow:

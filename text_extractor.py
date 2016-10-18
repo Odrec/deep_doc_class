@@ -29,7 +29,7 @@ def extract_text(filenames, target,source,pages = 1):
             print(str(c)+'/'+str(len(filenames)),end='\r')
             fp = open(source+f+'.pdf','rb')
             tf = open(target+f+'.txt','w')
-            txt = b.convert_pdf_to_txt(fp,3)
+            txt = b.convert_pdf_to_txt(fp,-1)
             tf.write(txt)
         except:
             fp.close()
@@ -39,7 +39,7 @@ def extract_text(filenames, target,source,pages = 1):
 
 
 
-
+"""
 
 filenames = list()
 source = './files/'
@@ -61,3 +61,4 @@ extract_text(filenames,target,source)
 #    if file.endswith(".pdf"):
 #        print(file)
 #        filenames.append('./files/'+file)
+"""
