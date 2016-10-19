@@ -62,8 +62,7 @@ def get_data_vector(modules, filepointer, metapointer=None):
         except:
             #if erI mostlyror occures the value is 0.0
             data.append(0.0)
-    #return as numpy array
-    #return np.array(data)
+
     return data
 
 #extracts features from a set of files and returns them on a list of lists
@@ -277,9 +276,6 @@ modules.append(ScannerDetect())
 #modules.append(OCR_BoW_Module())
 #ADD MODULES HERE
 
-#init neural network
-network = getNN(len(modules))
-
 #get filenames
 path = './files'
 filenames = get_files(path)
@@ -301,10 +297,8 @@ if(extracting):
 
 #START TRAINING HERE
 if(training):
-    
-    #train, filenames = MetaHandler.gen_train_test_split(filenames,TESTSIZE)
-        
-    features,classes,files = load_data(features_file)
+            
+    features, classes, files = load_data(features_file)
         
     features = [[float(j) for j in i] for i in features]
     
@@ -315,10 +309,6 @@ if(training):
     
     min_nor=min(map(lambda x: x[2], features))
     min_nor2=min(map(lambda x: x[1], features))
-
-#    for f in features: f[2] /= max_nor
-#        
-#    for f in features: f[1] /= max_nor2
     
     for f in features: (f[2] - min_nor)/(max_nor-min_nor)
         
@@ -326,6 +316,11 @@ if(training):
     
     features=np.array([np.array(xi) for xi in features])
     
+    print("Initiating Neural Network")
+    network = getNN(len(features[0]))
+    print("Initialization finished")
+    
+    print("Starting training.")
     network.trainNN(features,np.array(classes))
     print("Training done!")
 
