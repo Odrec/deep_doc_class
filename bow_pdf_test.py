@@ -19,9 +19,9 @@ import csv
 class BoW_Text_Module:
 
     def __init__(self,txt=False, mode = 'full'):
-        self.lib = self.load_lib(mode)
         self.txt = txt
-        self.target = 'txt_files_1p'
+        self.lib = self.load_lib(mode)
+        self.path = 'txt_files_1p'
         return
 
     def sanitize(self,txt):
@@ -94,12 +94,14 @@ class BoW_Text_Module:
         return text
 
     def get_txt(self,fp):
-        fp_txt = open('./'+self.path+'/'+fp.name,'r')
+        path = fp.name.replace('.pdf','.txt')
+        path = path.replace('./files/','./'+self.path+'/')
+        #print(path)
+        fp_txt = open(path,'r')
         txt = ''
         for lines in fp_txt.readline():
             txt += lines
         return txt
-
     def get_bow(self,txt):
         """
         @param txt:     the pdf-content as a string
@@ -120,6 +122,8 @@ class BoW_Text_Module:
         return score
 
     def load_lib(self,mode = 'full'):
+        if self.txt:
+            return eval(open('bow_train_p1.txt','r').read())
         if(mode == 'full'):
             return eval(open('bow_train_full.txt','r').read())
         elif(mode == 'train'):
@@ -156,8 +160,9 @@ class BoW_Text_Module:
             if(classes[i] == 'True'):
                 continue
             else:
-                with open(filenames[i],'r') as fp:
-                    try:
+                try:
+                    with open('./files/'+filenames[i],'r') as fp:
+
                         if(self.txt):
                             txt = self.get_txt(fp)
                         else:
@@ -170,11 +175,14 @@ class BoW_Text_Module:
                                 lib[key] = 1
                             else:
                                 lib[key] += bow[key]
-                    except:
-                        continue
+                except:
+                    continue
         for key in lib:
             lib[key] /= all
         self.lib = lib
+        f = open('bow_train.txt','w')
+        f.write(str(lib))
+        f.close
         return
 
 

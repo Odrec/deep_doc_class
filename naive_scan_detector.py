@@ -82,7 +82,7 @@ class Naive_Scan_Detector:
 
     def train(self,filenames,classes,metalist = None):
          return
-
+"""
 
 #training script to create the lib
 m = Naive_Scan_Detector()
@@ -143,3 +143,4 @@ print("False Negative:\t"+str((false_neg)))
 
 
 
+"""

@@ -27,9 +27,15 @@ import scipy.stats as s
 
 class TextScore:
     
-    def __init__(self):
-        self.mean = 9109.10716436
-        self.std = 22201.1272775
+    def __init__(self,txt=False):
+        self.txt = txt
+        if not txt:
+            self.mean = 9109.10716436
+            self.std = 22201.1272775
+        else:
+            #if txt files are used, the only contain a single page
+            self.mean = 35.7563871896
+            self.std = 124.842470114
         self.path = 'txt_files_1p'
         return
         
@@ -64,7 +70,10 @@ class TextScore:
             return 'ERROR'
 
     def get_txt(self,fp):
-        fp_txt = open('./'+self.path+'/'+fp.name,'r')
+        path = fp.name.replace('.pdf','.txt')
+        path = path.replace('./files/','./'+self.path+'/')
+        #print(path)
+        fp_txt = open(path,'r')
         txt = ''
         for lines in fp_txt.readline():
             txt += lines
@@ -87,15 +96,21 @@ class TextScore:
         provided by the files
         """
         len_list = list()
+
         for i in range(len(filenames)):
             if(classes[i] == 'True'):
                 continue
-            with open('files/'+filenames[i],'r') as fp:
-                try:
-                    len_list.append(len(self.convert_pdf_to_txt(fp)))
-                except:
-                    continue
+            try:
+                with open('./files/'+filenames[i],'r') as fp:
+                    if(self.txt):
+                        len_list.append(len(self.get_txt(fp)))
+                    else:
+                        len_list.append(len(self.convert_pdf_to_txt(fp)))
+            except:
+                continue
             self.mean = np.mean(len_list)
             self.std = np.std(len_list)
-
+        print(len(len_list))
+        print(self.mean)
+        print(self.std)
         return
