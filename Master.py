@@ -60,7 +60,7 @@ def get_data_vector(modules, filepointer, metapointer=None):
             #extract data-dimension from pdf
             data.append(m.get_function(filepointer,metapointer))
         except:
-            #if error occures the value is 0.0
+            #if erI mostlyror occures the value is 0.0
             data.append(0.0)
     #return as numpy array
     #return np.array(data)
@@ -123,9 +123,9 @@ def get_classes(filenames,classes,metadata):
 #loads the features from the csv file created during extraction
 #
 #@result:                 list of lists of features, list of corresponding classes and filenames
-def load_data():
+def load_data(features_file):
     
-    with open('output.csv', 'r') as f:
+    with open(features_file, 'r') as f:
       reader = csv.reader(f)
       data = list(reader)
       
@@ -234,16 +234,25 @@ def getNN(input_dim):
     return network
 
 args = sys.argv
+len_args = len(args)
 training = False
 extracting = False
 #train mode
 if '-t' in args:
     training = True
     TESTSIZE = 1000#should we use a percentage of the total data instead? Ex. 80%
+    if len_args == 3:
+        features_file = args[2]
+    elif len_args == 4:
+        features_file = args[3]
+        
+    if not os.path.isfile(features_file):
+        print("Error: Features file doesn't exist.")
+        exit();
     
 if '-e' in args:
     extracting= True
-    TESTSIZE = 1000#should we use a percentage of the total data instead? Ex. 80%    
+    TESTSIZE = 1000#should we use a percentage of the total data instead? Ex. 80%     
 
 #init filepointer for save-file here, the file will contain all classifications
 #maybe csv-file, not yet decided
@@ -260,11 +269,11 @@ conf_thresh = 0.5
 
 #initialize module
 modules = list()
-#modules.append(TextScore())
-#modules.append(BoW_Text_Module())
-#modules.append(Page_Size_Module())
-#modules.append(ScannerDetect())
-modules.append(Naive_Scan_Detector())
+modules.append(TextScore())
+modules.append(BoW_Text_Module())
+modules.append(Page_Size_Module())
+modules.append(ScannerDetect())
+#modules.append(Naive_Scan_Detector())
 #modules.append(OCR_BoW_Module())
 #ADD MODULES HERE
 
@@ -295,7 +304,7 @@ if(training):
     
     #train, filenames = MetaHandler.gen_train_test_split(filenames,TESTSIZE)
         
-    features,classes,files = load_data()
+    features,classes,files = load_data(features_file)
         
     features = [[float(j) for j in i] for i in features]
     

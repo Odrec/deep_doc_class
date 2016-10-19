@@ -4,7 +4,7 @@ Created on Fri Oct 14 18:58:33 2016
 
 @author: odrec
 """
-import sys, csv
+import sys, csv, random, os, os.path
 
 #merges the features from two csv files created during extraction
 #
@@ -63,6 +63,46 @@ def substitute_feature(orig_file, new_feat_file, feat_position):
         
     return True
     
+#create a new output file with the subset of features for the same amount of 
+#positive and false examples
+#
+#@param orig_file:       the original output file
+#@param num_files:       the number of files to be used for each class. If not given it will take
+#   the lowest number of files from both classes and use that one
+#
+#@result:               new file (output_subset.csv) with the sample features
+def subset_features(orig_file, num_files=0):
+
+    with open(orig_file, 'r') as f:
+      reader = csv.reader(f)
+      data = list(reader)
+      
+    ld = len(data[0])
+    
+    data_true = list()
+    data_false = list()
+    data_new = list()
+      
+    if num_files == 0:
+        for x in data: 
+            if x[ld-2] == '1.0': data_true.append(x)
+            elif x[ld-2] == '0.0': data_false.append(x)
+            
+        num_files = min(len(data_true), len(data_false))
+        
+    rst = random.sample(data_true, num_files)
+    rsf = random.sample(data_false, num_files) 
+    
+    data_new = rst + rsf
+    
+    random.shuffle(data_new)
+
+    with open("output_subset.csv","w") as f:
+        writer = csv.writer(f)
+        writer.writerows(data_new)
+
+    return True
+    
 #opens both files and checks if the data is correct
 #
 #@param file1/file2:    files to open and check
@@ -110,12 +150,31 @@ def open_files(file1, file2, origin):
     
     
 args = sys.argv
+len_args = len(args)
 
-if len(args) == 3:
-    merge_features(args[1],args[2])
-else:
+if len_args == 2 and os.path.isfile(args[1]):
     
-    if len(args) == 4:
-        substitute_feature(args[1],args[2],args[3])
+    subset_features(args[1])
+    
+elif len_args == 3 and (os.path.isfile(args[2]) or args[2].isInt()):
+    
+    if os.path.isfile(args[2]):
+        merge_features(args[1], args[2])
     else:
-        print("You need to specify both files to merge as arguments, or two files and a position to substitute an old feature for a new one (the first file passed as argument should be the one with the old feature)")
+        subset_features(args[1], args[2])
+            
+elif len_args == 4 and os.path.isfile(args[2]) and args[3].isInt():
+            
+    substitute_feature(args[1], args[2], args[3])
+
+else:
+    print("Usage:")
+    print("\n")
+    print("[path_to_output_file_1] [path_to_output_file_2]")
+    print("This will merge the features on both files into a new output_merged.csv")
+    print("\n")
+    print("[path_to_output_file_with_old_feature] [path_to_output_file_with_new_feature] [position_of_old_feature_on_first_output_file]")
+    print("This will substitute an old feature on a determined position on the first file with a new feature on the first position of the second file and create a new ouput_sub.csv file")
+    print("\n")
+    print("[path_to_output_file] [[number of files to subset]]")
+    print("This will choose an equal amount of random True files and False files and create a new output_sample.csv file")
