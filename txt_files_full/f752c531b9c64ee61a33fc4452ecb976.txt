@@ -1,0 +1,115 @@
+Regelbasierte Modelle im WiSe 2014/15
+
+Anleitung zum Aufsetzen eines Modells
+
+1. File -> New -> Project... -> Repast Simphony Project
+
+2. Im Ordner src -> Projektpackage (benannt nach Projektname):
+Dateien ModelInitializer.groovy und ModelInitializer.agent löschen
+
+3. Über Rechtsklick auf das Projektpackage -> New -> Class neue Klassen erzeugen:
+
+• Builder-Klasse aus Interface
+
+ContextBuilder<Object>
+
+und überschriebener Methode
+
+public Context<Object> build(Context<Object> context) ,
+
+in der die Projektion (Grid, Space, Network) erzeugt wird [siehe Beispiele unten]
+und die Anfangsbesetzung stattndet (zum Schluss
+
+return context; )
+
+• Style-Klasse aus Superklasse
+
+DefaultStyleOGL2D
+
+und überschriebener Methode
+
+public Color getColor(Object agent) ,
+
+in der das Aussehen der Agenten in Abhängigkeit von ihrem Status deniert werden kann
+(Ausgabe von
+
+return Color.farbe; )
+
+• Agenten-Klasse(n)
+
+4. Eintragung der verwendeten Projektion in die Datei context.xml im Ordner Projektname.rs:
+
+• Rechtsklick context -> add Child -> New Element... -> Element Name: projection
+• Rechtsklick projection -> add Attribute
+
+-> Name: type, Value: grid/continuous space/network
+
+• Rechtsklick projection -> add Attribute
+
+-> Name: id, Value: gleicher Name wie im ContextBuilder deniert
+
+5. Modell über kleinen Pfeil neben Run-Button Projektname Model starten (eventuell vorher über
+
+Run -> Run Congurations... einstellen)
+
+6. Im Reiter ScenarioTree des Repast-GUI die Default-Datei unter Data Loader löschen und über
+Rechtsklick Data Loaders -> Set Data Loader -> Custom ContextBuilder -> Implemen-
+tation -> Next -> eigene Klasse auswählen
+
+7. Für grasche Darstellung der Projektion: Rechtsklick Displays -> Add Display
+
+8. Für Diagramme (von Daten aus einer Agentenmethode):
+
+Erst Rechtsklick Data Sets -> Add Data Set, dann Rechtsklick Charts -> Add ... mit Auswahl
+des entsprechenden Data Sets
+sinnvolle Histogramme benötigen Data Sets, die non-aggregate und ohne Tick Count sind
+
+9. Für Datenausgaben: Rechtsklick Text Sinks -> Add ...
+
+1
+
+Beispiele für das Erzeugen von Projektionen im ContextBuilder:
+
+Gitter:
+
+Grid<Object> grid = GridFactoryFinder.createGridFactory(null).createGrid("gridname",
+
+context, new GridBuilderParameters<Object>(new StickyBorders(),
+
+new SimpleGridAdder<Object>(), false , gridbreite, gridhoehe))
+
+true = Doppelbelegung möglich, false = Einfachbelegung
+mögliche Begrenzungstypen sind StickyBorders, StrictBorders, WrapAroundBorders
+
+kontinuierlicher Raum:
+
+ContinuousSpace<Object> space =
+
+ContinuousSpaceFactoryFinder.createContinuousSpaceFactory(null).createContinuousSpace(
+
+"spacename", context, new SimpleCartesianAdder<Object>(),
+
+new repast.simphony.space.continuous.WrapAroundBorders(),
+
+breite, hoehe)
+
+Netzwerk:
+
+NetworkBuilder<Object> netBuilder = new NetworkBuilder<Object>("networkname",
+
+context, true)
+
+dann
+
+Network<Object> network = netBuilder.buildNetwork()
+
+true = gerichtet, false = ungerichtet
+
+Pakete
+
+Es müssen immer auch die entsprechenden Pakte importiert werden (die Eclipse dann automatisch vor-
+schlägt).
+
+2
+
+

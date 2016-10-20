@@ -1,0 +1,121 @@
+ 
+ 
+ 
+ 
+ 
+
+FG BWL / Management Support und WI 
+
+Übung: MSS2 (Unternehmensplanung und –führung) – SS 2016 
+Übungsblatt Nr. 09 
+Bearbeitungszeit:  30.06. – 07.07.2016 
+
+ 
+
+Genetischer Algorithmus 
+
+ 
+ 
+Lernziel 
+ 
+Mittels  einer  Plattform  zur  Konfiguration  des  genetischen  Algorithmus  sollen  verschiedene 
+Parameterkonstellationen des Algorithmus explorativ analysiert werden. 
+Die Plattform ist web-basiert und über folgenden Link zu erreichen: 
+
+http://samoa.fb9.uni-osnabrueck.de/KonfigurationsGA/html/main.html 
+
+Die Webseite ist ausschließlich über das Uninetzwerk (VPN) erreichbar. Eine Dokumentation 
+zur Bedienung der Plattform ist in Stud.IP bereitgestellt. 
+ 
+Beschreibung 
+ 
+Ein Handlungsreisender (Traveling Salesman) soll die folgenden 20 Städte bereisen: 
+ 
+
+Chetek, WI, United States 
+
+Rajkot, GJ, India 
+Ujung Pandang, SN, Indonesia  Indianapolis, IN, United States 
+Campo Grande, MS, Brazil 
+Taiyuan, BJ, China 
+Valparaiso, VS, Chile 
+Coimbatore, TN, India 
+Berlin, BE, Germany 
+Campinas, SP, Brazil 
+Bordeaux, AQ, France 
+Lusaka, LS, Zambia 
+
+Shantou, GD, China 
+Tarawa Terrace, NC, United States 
+Ouagadougou, KA, Burkina Faso 
+Samara, GU, Costa Rica 
+Kolkata, WB, India 
+Washington, DC, United States 
+Quito, PI, Ecuador 
+Nassau City, NP, The Bahamas 
+
+ 
+Die zurückgelegte Strecke soll mittels des genetischen Algorithmus minimiert werden. 
+ 
+ 
+Aufgaben 
+ 
+Führen Sie einen Basislauf durch, nutzen Sie die folgende Konfiguration: 
+
+-  Populationsgröße: 100 
+-  Selektionsoperator: Roulettewheel 
+-  Elitismus: deaktiviert 
+-  Crossoveroperator: Order mit 80%iger Crossoverwahrscheinlichkeit 
+-  Mutationsoperator: Swap mit 5%iger Mutationswahrscheinlichkeit 
+-  Abbruchkriterium: 250 Generationen 
+ 
+
+1.  Hat die Anzahl an Generationen zwangsläufig einen Einfluss auf die on-/off-line Per-
+formance (statische Kennzahl) des genetischen Algorithmus? Führen Sie gerne mehre-
+re Läufe mit derselben Konfiguration durch, um eine Antwort zu finden. 
+ 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS2 SS2016 – Übungsblatt Nr. 09         
+ 
+
+Seite 1/2 
+
+2.  Im Folgenden soll ein 10%iger Elitismus aktiviert werden und nach 500 Generatio-
+nen  abgebrochen  werden.  Welcher  Kurvenverlauf  ist  bei  der  maximalen  Fitness  und 
+bei der Distanz (jeweils  zeitabhängige Kennzahlen) im Vergleich zur 1. Variation zu 
+erwarten? 
+
+3.  Die Selektion soll nun mit Hilfe des linearen Rankings erfolgen. Führen Sie mehrere 
+Läufe durch, um die Auswirkung eines steigenden Erwartungswertes zu analysieren. 
+Der Elitismus und die Anzahl an Generationen aus 2. bleiben bestehen. Erläutern Sie 
+den Verlauf der maximalen Fitness und der Distanz im Vergleich zu Aufgabe 2. 
+
+4.  Weiterhin  soll  das  lineare  Ranking  als  Selektionsstrategie  verwendet  werden  und 
+zwar mit einem Erwartungswert von 1,6. Eine Swap Mutation soll mit 70%iger Mu-
+tationswahrscheinlichkeit durchgeführt werden. (Elitismus und die Anz. an Genera-
+tionen bleiben bestehen) Welche Entwicklungen erwarten Sie in den Kennzahlenkate-
+gorien Effektivität und Konvergenz im Vergleich zu Variation 2 und 3? 
+
+5.  Die  Bedingungen  bleiben  im  Vergleich  zu  4.  dieselben,  jedoch  soll  anstatt  der  Swap 
+Mutation die Scramble Strategie verwendet werden. Welche Entwicklungen erwarten 
+Sie bzgl. Effektivität und Konvergenz im Vergleich zu 4.? 
+
+ 
+ 
+ 
+ 
+ 
+Viel Spaß! 
+ 
+
+Bei Fragen zur Aufgabe oder zur Übungsveranstaltung nutzt bitte das dafür vorgesehene Veran-
+staltungsforum in Stud.IP. 
+
+ 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS2 SS2016 – Übungsblatt Nr. 09         
+ 
+
+Seite 2/2 
+
+

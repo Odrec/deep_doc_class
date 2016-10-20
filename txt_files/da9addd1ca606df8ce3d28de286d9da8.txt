@@ -209,4 +209,105 @@ Ein Rechenbeispiel für M1(mit Umrechnung von kg/mol auf g/mol) :
  
  
 
+EG = 20,2 K·kg/mol 
+
+ΔT = Gefrierpunktserniedrigung 
+
+mA  = Masse der gelösten Substanz  
+
+MA = Molmasse der gelösten Substanz  
+
+mLM = Masse des Lösemittels 
+
+ 
+Der Mittelwert wurde aus der Molmasse in (g/mol) errechnet: 
+ 
+
+) + 147(
+
+) + 146,9(
+
+165,5(
+
+ 
+
+𝑔
+
+𝑚𝑜𝑙
+
+𝑔
+
+𝑚𝑜𝑙
+3
+
+𝑔
+
+𝑚𝑜𝑙
+
+)
+
+= 153,13(
+
+𝑔
+
+𝑚𝑜𝑙
+
+) 
+
+Umstellung der GPE-Formel nach MA: 
+ 
+
+ 
+𝐾 ∗ 𝑘𝑔
+
+𝑚𝑜𝑙
+
+)
+
+20,2  (
+
+3,37 (𝐾/𝑔) ∗ 0,04346 (𝑘𝑔)
+
+𝑀𝐴 =
+
+= 137,921(
+
+𝑔
+
+𝑚𝑜𝑙
+
+) 
+
+ 
+ 
+ 
+Die  ausgegeben  Substanz  C  war  Biphenyl  mit  einer  Molmasse  von  154,21  g/mol 
+(Literaturwert). Der Fehler liegt bei 10,56 %. 
+ 
+ 
+Fehlerbetrachtung: 
+ 
+Die Abweichung von 10,56% vom Literaturwert kann daran liegen, dass das Gemisch am 
+Becherglasrand  auskristallisiert  ist  oder  daran,  dass  Cyclohexan  einen  sehr  hohen 
+Dampfdruck besitzt und deswegen schnell verdampft. 
+ 
+ 
+
+0,10,150,20,250,30,350,40,450,500,20,40,60,811,21,41,6f(x) = 3,37x - 0,07Spalte BLinear (Spalte B)zugegebene Substanzmenge mA (g)GPE dTAnhang 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
 

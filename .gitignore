@@ -1,6 +1,7 @@
 # Python
 *.pyc
 __pycache__
+<<<<<<< Updated upstream
 
 *.xml
 files/*.pdf
@@ -8,3 +9,12 @@ metadata.csv
 
 # Mac specifics
 .DS_Store
+=======
+*.iml
+
+*.xml
+
+*.pdf
+
+.idea/.name
+>>>>>>> Stashed changes

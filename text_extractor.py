@@ -5,6 +5,7 @@ from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage# if the argument is set to -1, all pages are read
 import bow_pdf_test
+from Text_Score_Module import TextScore
 import csv
 try:
     from cStringIO import StringIO
@@ -39,12 +40,11 @@ def extract_text(filenames, target,source,pages = 1):
 
 
 
-"""
-
 filenames = list()
 source = './files/'
 target = './txt_files/'
 #file_class = dict()
+classification = list()
 
 #create dictionary with classifications
 with open('classification.csv','r') as classes:
@@ -54,11 +54,21 @@ with open('classification.csv','r') as classes:
         if first:
             first = False
             continue
-        filenames.append(row[0])
-extract_text(filenames,target,source)
+        name = row[0]+'.pdf'
+        filenames.append(name)
+        classification.append(row[2])
+
+t = TextScore(True)
+b = bow_pdf_test.BoW_Text_Module(True)
+
+print("start training...")
+t.train(filenames,classification)
+print("finished text score training...")
+b.train(filenames,classification)
+print("done.")
+#extract_text(filenames,target,source)
 
 #for file in os.listdir("./files"):
 #    if file.endswith(".pdf"):
 #        print(file)
 #        filenames.append('./files/'+file)
-"""

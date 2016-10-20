@@ -1,0 +1,290 @@
+das wirtschaftsstudium
+
+41. Jahrgang
+Heft 5
+Mai 2012
+
+Zeitschrift für Ausbildung, Prüfung, Berufseinstieg und Fortbildung
+
+WISU-MAGAZIN
+
+China und Indien: Gedämpftes Wachstum
+Bologna-Prozess — von anderen Ländern lernen
+Europa: Wohin geht die Reise? (Titelseite)
+Frankreich: Au revoir Sarko, bonjour Monsieur Hollande!
+USA: Who is Mister Romney?
+Die guten Seiten der Schattenwirtschaft
+Wie groß ist die Armut wirklich?
+Deutschlands „Silicon Allee“
+Japan: Vom Niedergang einer Industriemacht
+Nokias brutaler Absturz
+Im Interview: Bert Rürup
+Verbrechen: Das Billionen-Business
+Lateinamerika: Schwere Zeiten für spanische Firmen
+Irland: Der ungeliebte Fiskalpakt
+Bits and Bytes
+Professoren-Profile: Harald Pechlaner
+
+WISU-KARRIERE
+
+Vorsicht ist die Mutter der Porzellankiste
+Karriere-Kick durch Engagement
+Wo Absolventen gern arbeiten
+Für Ruhm, Geld und bessere Chancen
+Buchtipps für Bewerber
+Business School News
+
+WISU-KOMPAKT
+
+Prof. Dr. Agnes Aschfalk-Evertz, Berlin Full-Goodwill-Methode nach IFRS 3
+Dipl.-Volksw. Jürgen Matthes, Köln Rebalancing
+Dipl.-Ök. Adrian Nowak (MBA), Hamburg Die digitale Fabrik
+Prof. Dr. Frank Hubert, Mannheim Lohnunterschiede
+Dr. Stephan Ebeling, Bonn Erlöschen von Forderungen
+Dr. Philipp Silwedel, Köln Betriebliches Gesundheitsmanagement
+Prof. Dr. Rüdiger von Nitzsch/Dr. Dirk Braun/Maren Prüwer, M.Sc., Aachen Reziprozität
+Prof. Dr. Edeltraud Günther/Dipl.-Kffr. Kirstin Stechemeister, Dresden Carbon Accounting
+Ökonomik interaktiv: Hot Hand
+Check-up: Compliance
+
+BETRIEBSWIRTSCHAFTSLEHRE
+
+Prof. Dr. Thomas Wolke, Berlin Bewertung von Staatsanleihen
+Prof. Dr. Dr. Heribert Popp/M.A. Silke Kreupl, Deggendorf/M.A. Wolfgang Mößlein, Adelsdorf Die Wissensbilanz
+Prof. Dr. Bernd Irlenbusch/Dr. Gari Walkowitz/Julia Berndt, M.Sc., Köln Wirtschaftsethik und Verhaltensforschung
+Prof. Dr. Ludwig Kuntz, Köln Die Klausur
+
+WIRTSCHAFTSINFORMATIK
+
+Prof. Dr. Stefan Voß/Dr. Silvia Schwarze, Hamburg LTE und LTE-A: Mobilfunk der vierten Generation
+Prof. Dr. Andreas Gadatsch, Sankt Augustin Die Fallstudie
+
+VOLKSWIRTSCHAFTSLEHRE
+
+Prof. Dr. Dennis Hilgers/Andreas Burth, M.Sc., Hamburg Typologien öffentlicher Verschuldung
+Prof. Dr. Klaus Müller, Chemnitz/Glauchau Probleme des Wirtschaftswachstums
+Prof. Dr. Axel Dreher, Heidelberg Die Klausur
+
+WIRTSCHAFTSMATHEMATIK/WIRTSCHAFTSSTATISTIK
+
+Prof. Dr. Markus Wessler, München Fraktale Modelle für Finanzprognosen
+
+WISU-REPETITORIUM
+
+Betriebswirtschaftslehre, Wirtschaftsinformatik, Volkswirtschaftslehre, 
+
+Wirtschaftsmathematik/Wirtschaftsstatistik
+
+WISU-REINGELESEN
+
+Bert Rürup/Dirk Heilmann: Fette Jahre — warum Deutschland eine glänzende Zukunft hat
+
+597
+601
+604
+608
+611
+612
+615
+616
+618
+620
+623
+632
+632
+633
+634
+637
+
+643
+644
+645
+646
+648
+650
+
+653
+655
+656
+659
+660
+662
+663
+664
+657
+668
+
+671
+675
+681
+686
+
+689
+693
+
+694
+700
+707
+
+711
+
+718
+
+625
+
+WISU 5/12
+593
+
+Die Fallstudie 
+Einsatz von Open-Source-Software
+
+Prof. Dr. Andreas Gadatsch, Sankt Augustin
+
+I. Der Fall
+Ein mittelständisches Unternehmen beschäftigt etwa 200 Mitarbei-
+ter. Davon arbeiten etwa 80 Prozent am Stammsitz in Deutschland,
+der Rest in den ausländischen Niederlassungen. Der Jahresumsatz
+beträgt etwa 60 Mio. Euro. Die Nachfrage nach den Produkten des
+Unternehmens hängt von der Witterung ab. Der hohen Nachfrage in
+den kälteren Monaten folgt ein Nachfragerückgang in den wärmeren
+Monaten. Das Unternehmen ist europaweit vertreten. 
+Seine  IT-Kapazitäten  lassen  sich  nicht  an  die  schwankende  Nach-
+frage anpassen. Den zu geringen Kapazitäten in der Hauptsaison ste-
+hen  nicht  ausgelastete  Kapazitäten  in  der  Nebensaison  gegenüber.
+Da die Nachfrage in der Hauptsaison nicht immer kurzfristig befriedigt
+werden kann, kommt es regelmäßig zu Beschwerden der Kunden.
+Die IT des Unternehmens wird derzeit von zwei festangestellten Mit-
+arbeitern und einer Reihe freier Mitarbeiter für Spezialaufgaben be-
+trieben.  Im  Unternehmen  sind  etwa  120  Bildschirmarbeitsplätze
+(Desktop-PCs) in Betrieb, auf denen Windows installiert ist. Ein Teil
+der Rechner ist nicht vernetzt. Daneben sind etwa 30 mobile Arbeits-
+plätze im Einsatz, überwiegend im Vertriebsaußendienst (Laptops).
+Auf den Rechnern sind zahllose unterschiedliche Hardware-Kom-
+ponenten und Software-Lizenzen in verschiedenen Versionen zu
+finden. Sowohl die Betriebssystemversionen als auch die Releases
+der Anwendungssoftware sind nicht einheitlich. Eine stichprobenar-
+tig durchgeführte Bestandsaufnahme ergab, dass kaum ein Rechner
+dem anderen gleicht. Die Mitarbeiter oder „IT-kundige“ Kollegen in-
+stallieren selbständig Hardware-Komponenten wie Bildschirme, Dru-
+cker, Festplatten, Software (Anwendungs- und zum Teil auch Sys-
+tem-Software)  oder  verändern  Systemeinstellungen,  vom  Hinter-
+grundbild über Bildschirmschoner bis zu Virenschutzprogrammen.
+Zum Teil sind die Mitarbeiter stundenlang mit Installationsarbeiten
+oder der Fehlersuche beschäftigt. 
+Regelmäßige Schulungen der Mitarbeiter finden selten statt. „Trai-
+ning-on-the-job“ und „Trial and Error“ sind die bevorzugten Vorge-
+hensweisen bei der IT. 
+Die zahlreichen Abstürze des instabilen Betriebssystems und an-
+dere Störungen beeinträchtigen das Tagesgeschäft erheblich. Zum
+Teil  wird  tagelang  mit  „Papierbuchführungen“  gearbeitet,  um  die
+Kundenaufträge bearbeiten zu können. 
+Hinzu kommen viele Virenattacken, die den Betrieb zusätzlich be-
+einträchtigen. Der Datentransfer zwischen den noch nicht vernetz-
+ten Rechnern über USB-Sticks, CD-ROMs und ähnliche Medien ist
+zeitaufwändig und fehleranfällig. 
+Unternehmenskritische Daten werden zum Teil dezentral auf End-
+anwenderfestplatten gespeichert. Kundendaten befinden sich auf
+Laptops  der  Außendienstmitarbeiter.  Zentrale  Datensicherungen
+werden nicht durchgängig durchgeführt. Gelegentliche Datenver-
+luste haben bereits dazu geführt, dass die Daten wiederholt erfasst
+werden mussten. 
+
+II. Aufgaben
+Der Geschäftsführer des Unternehmens bittet Sie als IT-Berater um
+Hilfe,  wie  sich  diese  untragbare  Situation  schnellstens  verbessern
+lässt. Welche Ratschläge würden Sie ihm geben?
+
+III. Lösung
+Open-Source-Strategie
+Sie empfehlen dem Geschäftsführer als Erstes, von der Windows-
+Umgebung auf eine offene Linux-Umgebung umzusteigen. Mithilfe
+eines  externen  IT-Dienstleisters  muss  ein  Konzept  erarbeitet  wer-
+den, um von dezentral eingesetzten Windows-Desktops auf zentral
+administrierbare Thin-Clients zu wechseln. Kern der Strategie ist der
+Aufbau mehrerer zentraler Linux-Server für unterschiedliche Zwecke
+(z.B. Datenserver, Druckserver, Mailserver) und der Einsatz kosten-
+günstiger zentral administrierter Thin-Clients auf der Anwenderseite. 
+Der IT-Dienstleister muss künftig für die Installations- und Wartungs-
+arbeiten verantwortlich und fallweise im Einsatz sein. Die beiden fest
+
+       WIRTSCHAFTSINFORMATIK
+
+angestellten IT-Mitarbeiter kümmern sich übergreifend um sämtliche
+Anwendungen  des  Unternehmens  sowie  organisatorische  Umset-
+zungsarbeiten und Datensicherungen. Sie sind die Schnittstelle zu
+allen externen IT-Dienstleistern. 
+Spezielles  Know-how  wird    vom  IT-Dienstleister  (z.B.  Installation
+oder  Reparatur  von  Hardware,  Wechsel  von  Software-Versionen)
+oder vom Hersteller der ERP-Software zugekauft.
+Linux-Server 
+Im  Unternehmen  werden  mehrere  Linux-Server  installiert,  welche
+die  gesamte  Anwendungsfunktionalität  bereitstellen.  Neben  dem
+ERP-System  für  Einkauf,  Lager,  Produktion,  Verkauf  sowie  Rech-
+nungs- und Personalwesen werden auch die Büro- und Internet-An-
+wendungen für die Thin-Clients aller Büroarbeitsplätze bereitge-
+stellt. Lokale Installationen auf den Client-Rechnern erübrigen sich.
+Thin-Clients 
+Als Thin-Client können Rechner mit minimalen Hardware-Anforde-
+rungen  (Prozessor,  Hauptspeicher)  genutzt  werden.  Aufgrund  der
+geringen  Anforderungen  wird  deren  durchschnittliche  Nutzungs-
+dauer  mit  etwa  sechs  Jahren  deutlich  höher  kalkuliert  als  bei  den
+bisherigen Windows-PCs. Die Thin-Clients werden über den Linux-
+Server  mit  den  für  einen  typischen  Büroeinsatz  notwendigen  Pro-
+grammen versorgt. Der auf dem Server hinterlegte Standard-Büro-
+arbeitsplatz umfasst Open Office für Büroanwendungen (Textverar-
+beitung,  Tabellenkalkulation  etc.)  sowie  verschiedene  weitere  An-
+wendungen. Die Systemeinstellungen für den Desktop-PC können
+vom  Endanwender  nicht  verändert  werden.  Lokal  werden  keine
+Dateien  gespeichert.  Sämtliche  Anwenderdaten  befinden  sich  auf
+ausfallsicheren und mehrmals täglich gesicherten Servern. Für die
+Endanwender wird eine Basisschulung konzipiert, die bei Updates
+der Hardware oder Software regelmäßig aktualisiert wird. Aufgrund
+dieses Konzepts lässt sich eine stabile Arbeitsumgebung sicherstel-
+len. Die Wartungskosten sinken beträchtlich, die Störungen werden
+deutlich reduziert.
+Windows-Restanwendungen 
+Eine vollständige Umstellung auf das Linux-Betriebssystem ist nicht
+möglich,  da einige Spezialanwendungen nicht  mit Linux betrieben
+werden können. Dafür und für die Außendienstmitarbeiter sind wei-
+terhin einige Windows-Desktops bzw. Laptops notwendig. Die ge-
+meinsam genutzten Bürodokumente (Textverarbeitung, Tabellenkal-
+kulationen) können über Filter ausgetauscht werden.
+Folgen für das Unternehmen und die Mitarbeiter
+Die  Administrations-  und  Betriebskosten  der  neuen  IT-Architektur
+sinken  deutlich.  Die  durch  die  zentral  administrierten  Thin-Clients
+eingeschränkte „Freiheit“ der Endanwender wird zunächst zu etwas
+Unruhe bei diesen führen. Der Wechsel zu einer neuen Oberfläche
+und die veränderte Funktionalität bereiten hingegen kaum Probleme.
+Die Mitarbeiter werden die Vorteile der neuen IT-Architektur schnell
+erkennen: 
+1. Sie können sich jederzeit an jedem Endgerät unter ihrer gewohn-
+
+ten Arbeitsumgebung anmelden.
+
+2. Alle Standard-Anwendungen laufen stabil und sicher.
+3. Die Anwendungsdaten und die persönlichen Daten werden regel-
+
+mäßig gesichert.
+
+4. Probleme mit Viren und Würmern gehören der Vergangenheit an,
+da Linux-Systeme solchen Angriffen deutlich seltener ausgesetzt
+sind.
+
+Literatur:
+
+den 2010.
+
+Gadatsch, A./Mayer, E.: Masterkurs IT-Controlling. 4. Aufl., Wiesba-
+
+Prokop,  M.:  Open  Source  Projektmanagement.  Softwareentwick-
+
+lung von der Idee zur Marktreife. München 2010.
+
+Strahringer, S. (Hrsg.): Open Source — Konzepte, Risiken, Trends.
+
+In: HMD 283 (2012).
+
+WISU 5/12
+693
+
+

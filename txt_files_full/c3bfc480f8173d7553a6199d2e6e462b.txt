@@ -1,0 +1,94 @@
+Vom 2D-GIS zum 3D-GIS / Rheinland-Pfalz in 3D
+    Vanessa Wiche, Institut für Informatik, Universität Osnabrück
+
+ 
+
+Wieso ein 3D-GIS?
+
+● Bietet gute Einblicke in Topographie und Siedlungsstrukuren
+
+● vielfältige Anwendungsgebiete: von Simulation von Neubauten, Lärmausbreitung bis hin zu Katastrophenschutz
+
+Datengrundlage
+
+Gebäudeerkennung
+
+3D-Visualisierung
+
+● LaserScanning-Daten liefern 
+
+Höheninformationen
+
+● Detektion von Gebäuden durch 
+
+automatisierte Klassifizierung
+
+● Mittels Höheninformationen und 
+Tins wird ein 3D-Modell erzeugt
+
+● Aussendung von Laserimpulsen
+
+● Entfernung durch Lichtlaufzeit 
+zwischen Messgerät und Boden
+
+● Bei durchlässigen Objekten 
+werden First und Last Pulse 
+aufgenommen
+
+● Jede Dachseite wird 
+originalgetreu erfasst
+
+● Informationen zur Neigung, 
+
+Ausrichtung und Größe 
+
+● Kann als Ergänzung zu Alkis-
+
+Daten dienen
+
+● Mehrere Detailstufen
+
+– Klötzchenmodell
+– Realitätsgetreue 
+
+Dachstrukturen
+
+– Realitätsgetreue 
+
+Dachstrukturen und Texturen
+
+Rheinland-Pfalz in 3D
+
+● Vom Landesamt für Vermessung und Geobasisinformation zur Verfügung gestellt
+
+● Aktualität der Gebäudedaten: 2013 
+
+● Unterschiedliche Hintergrundkarten wählbar (Liegenschaften, Luftbilder, WebAtlas)
+
+● Mehrere Koordinatensysteme 
+
+● Zweite Detailstufe
+
+● Verschattung veränderbar
+
+● Hochwasseranalyse
+
+● Integrierte Straßensuche
+
+● Touren durch interessante Orte 
+
+● Höhe und Adresse von Gebäuden
+
+● Flughöhe und Sicht veränderbar
+
+ 
+
+Ausblick
+
+ 
+
+● Rheinland-Pfalz guter Vorreiter für andere Bundesländer
+
+● 3D-GIS nehmen an Bedeutung für ein breit gefächertes Aufgabenspektrum zu 
+
+

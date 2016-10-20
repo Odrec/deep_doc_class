@@ -1,0 +1,51 @@
+
+Files:
+======
+
+classification.csv:
+-------------------
+
+Result of manual classification for 2374 pdf files
+Columns:
+1. document_id - md5 document id as found in metadata and in filenames
+2. classification:
+   1 - Own, non-published material
+   2 - Copyrighted, published material, allowed by campus licence
+   3 - Published material, allowed by a free licence or no licence at all (author longer than 70 years dead)
+   4 - Copyrighted, published material, allowed by §52a UrhG (Text)
+   5 - Copyrighted, published material, allowed by §52a UrhG (non Text)
+   6 - Copyrighted, published material not coverred by a known licence
+   7 - classification not possible 
+3. Published
+   True - for classification in [2,3,4,6]
+   False - all other cases
+
+metadata.csv:
+-------------
+
+Metadata from Stud.IP for all 880.000 documents.
+
+Columns:
+1. document_id (as used in classification.csv and file names in files folder)
+2. filename - File system name of the file
+3. title - Title of the file (default: same as filename, but uploader may change deliberately)
+4. description - Text field for describing the file. Often left empty.
+5. is_pdf - 1=Filename ends with .pdf|.PDF, 0=Filename does not end with .pdf|.PDF
+6. folder_name - Every file is uploaded to a folder. This is the folder name.
+7. folder_description - Text field for describing a folder. Often left empty.
+8. author_prof - Does academic title of uploader containt "Prof."?
+9. author_dr - Does academic title of uploader containt "Dr."?
+10. status - Uploader's permission level for the course: root/admin=Administrator, dozent=lecturer, tutor=tutor, autor=student
+11. upload_timestamp - UNIX timestamp of upload date and time
+12. filesize - Size of file in bytes
+13. institute - Name of institute/Lehreineit responsible for the course
+
+
+Files folder
+------------
+
+The folder contains the original pdf as referenced in classification.csv. 
+Name = <document_id>.pdf
+
+Some referenced files are missing: They have been deleted from Stud.IP after classification.
+

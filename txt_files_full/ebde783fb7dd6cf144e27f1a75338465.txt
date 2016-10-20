@@ -1,0 +1,476 @@
+NEWS & VIEWS
+
+NATURE|Vol 441|8 June 2006
+
+a
+
+b
+
+n
+o
+i
+s
+s
+i
+m
+s
+n
+a
+r
+T
+
+c
+
+1
+
+2
+
+ω
+s
+
+ω
+p
+
+3
+
+Probe frequency
+
+Ereflected
+
+Eincident
+
+Etransmitted
+
+Figure 1 | Electromagnetically induced
+transparency. a, In conventional EIT in an
+atomic system, a strong pump field ȣp is tuned to
+an atomic energy transition (1–2) and creates a
+‘transparency window’ for the signal field ȣs,
+which is tuned to a second transition (1–3). 
+b, Destructive interference between the two
+absorption pathways results in a narrow spike of
+increased transmission within a wider absorption
+line. The refractive index of the material thus
+varies rapidly over a narrow frequency range, and
+the resulting increased dispersion can lead to
+ultraslow propagation of light. The narrow spike
+also provides a well-defined frequency marker
+for precision measurements. c, In a system of
+microresonators, studied by Xu et al.1, EIT occurs
+because of destructive interference between two
+fields, leaving two appropriately spaced rings in
+the direction of the reflection port. The width of
+the absorption feature is determined by the
+overall loss of the ring resonator system (often
+dominated by coupling to the straight
+waveguide), whereas that of the transparency
+window is set by the internal loss of the ring
+resonators. (Part c adapted from ref. 1.)
+
+whenever a whole number of wavelengths of
+the incident light fits into the resonator. More-
+over, destructive interference occurs between
+light emerging from two coupled resonators. 
+Early microresonators were simply aerosols
+containing particles of varying sizes, but mod-
+ern fabrication procedures produce individual
+resonators with highly controllable resonance
+frequencies4. These resonators come in various
+forms: ring shapes; disks or spheres, in which
+the light skims across the outer surface as sound
+does in a ‘whispering gallery’; or less obvious
+forms, such as defects in an otherwise perfect
+photonic crystal. Their small size makes them
+ideally suited to perform operations on light
+analogous to those performed by components
+702
+
+of silicon chips on electrons, and numerous
+applications have been proposed for them5–7.
+
+Several methods5,8,9 for combining EIT and
+optical  microresonators  to  obtain  EIT-like 
+resonances in integrated optical systems were
+proposed in 2004, and a laboratory demon-
+stration of such an effect was published last
+year10. In that experiment, EIT-like transmis-
+sion spectra were observed in two interacting
+microresonators in the form of glass spheres
+approximately 400 micrometres in diameter
+that supported resonances of the whispering-
+gallery type. 
+
+Xu et al.1 take this advance a stage further.
+Using modern nanofabrication procedures,
+they manufactured a pair of micro-ring res-
+onators coupled to parallel waveguides on a
+silicon-on-insulator  substrate  typical  of  an
+electronic chip. The refractive index of the 
+silicon that made up the waveguides and the
+rings (3.45) was significantly greater than that
+of the silicon oxide that surrounded them on
+all sides (1.46). This meant that light could be
+confined  in  rings  of  a  very  small  diameter
+through the process known as total internal
+reflection.  EIT-like  behaviour  was  demon-
+strated by measuring the transmission at dif-
+ferent frequencies of a laser beam injected into
+the system. The authors constructed several
+such devices, where the distance between the
+micro-rings was varied from device to device,
+and thus the spectral location of the EIT-like
+transmission peak could be adjusted. 
+
+So what good is all this? As the name indi-
+cates,  EIT  is  primarily  a  way  of  rendering
+transparent  an  otherwise  highly  absorbing
+material, and so lends itself to applications
+such  as  the  construction  of  long-distance 
+optical  transmission  lines. The  dispersion
+characteristic that results from EIT has already
+allowed 
+light’  propagation  to  be
+achieved11–13 at speeds just a small fraction 
+of the normal speed of light. Optical ‘buffers’
+to  temporarily  store  light are  an  obvious 
+
+‘slow 
+
+application of such slow-light technology.
+
+Perhaps most importantly, EIT resonances
+can  be  much  narrower  than  those  of  indi-
+vidual resonators, whether these are atoms or
+microresonators. As a resonance frequency
+can typically be measured only to an accuracy
+given by some fixed fraction of the resonance
+linewidth, narrowed linewidths could be use-
+ful for performing precise optical measure-
+ments  of  quantities  such  as  magnetic  field
+strength14. The ability to synthesize such com-
+ponents on an optical chip suggested by Xu
+and colleagues’ innovation1 is a crucial step
+towards the development of such integrated
+optical devices.
+I
+Robert W. Boyd is at the Institute of Optics and
+Department of Physics and Astronomy,
+University of Rochester, Rochester, New York
+14627, USA. 
+Daniel J. Gauthier is in the Department of
+Physics, Duke University, Durham, North
+Carolina 27708, USA.
+e-mails: boyd@optics.rochester.edu;
+gauthier@phy.duke.edu
+
+1.  Xu, Q., Sandhu, S., Povinelli, M. L., Shakya, J., Fan, S. &
+
+Lipson, M. Phys. Rev. Lett. 96, 123901 (2006).
+
+2.  Harris, S. E., Field, J. E. & Imamoglu, A. Phys. Rev. Lett. 64,
+
+1107–1110 (1990).
+
+3.  Alzar, C. L. G., Martinez, M. A. G. & Nussenzveig, P. 
+
+Am. J. Phys. 70, 37–41 (2002).
+
+4.  Vahala, K. J. Nature 424, 839–846 (2003). 
+5. Yanik, M. F., Suh, W., Wang, Z. & Fan, S. Phys. Rev. Lett. 93,
+
+233903 (2004). 
+
+6. Scheuer, J. & Yariv, A. Phys. Rev. Lett. 96, 053901 (2006). 
+7. Heebner, J. et al. Opt. Lett. 29, 769–771 (2004).
+8.  Smith, D. D., Chang, H., Fuller, K. A., Rosenberger, A. T. &
+
+Boyd, R. W. Phys. Rev. A 69, 063804 (2004). 
+
+9. Maleki, L., Matsko, A. B., Savchenkov, A. A. & Ilchenko, V. S.
+
+Opt. Lett. 29, 626–628 (2004).
+
+10.  Naweed, A., Farca, G., Shopova, S. I. & Rosenberger, A. T.
+
+Phys. Rev. A 71, 043804 (2005).
+
+11.  Hau, L. V., Harris, S. E., Dutton, Z. & Behroozi, C. H. Nature
+
+397, 594–598 (1999).
+
+12.  Boyd, R. W. & Gauthier, D. J. Prog. Opt. 43, 497–530 (2002).
+13. Bigelow, M. S., Lepeshkin, N. N. & Boyd, R. W. Phys. Rev. Lett.
+
+14.  Scully, M. O. & Fleischhauer, M. Phys. Rev. Lett. 69,
+
+90, 113903 (2003).
+
+1360–1363 (1992). 
+
+NEUROBIOLOGY 
+
+Extending influence
+
+Eve Marder
+Rather than merely firing in a digital on–off fashion, vertebrate neurons 
+may have an analogue aspect to their signalling too — a finding that will not
+surprise many who have worked on invertebrate neurons.
+
+Much of what we know about electrical sig-
+nalling in the brain comes from extracellular
+recordings that detect when a neuron is firing
+action  potentials.  These  recordings  do  not,
+however, provide continuous monitoring of
+the fluctuations of membrane potential, and 
+do  not  capture  sub-threshold  changes  in 
+membrane potential such as those caused by
+individual synaptic events. The prevalence of
+
+extracellular recordings in the literature has
+contributed to a collective consciousness in
+which the action potential or ‘spike’ is viewed
+as  an  invariant,  all-or-nothing  stereotyped
+event that occurs once a threshold membrane
+potential is reached. This ‘digital’ signal carries
+information from the neuronal cell body, the
+soma, down the axon to presynaptic terminals,
+where it evokes the release of neurotransmitter
+
+ ©2006
+
+Nature  Publishing Group
+
+NATURE|Vol 441|8 June 2006
+
+NEWS & VIEWS
+
+to excite or inhibit the next neuron. In this sim-
+ple  framework,  the  spike  frequency  might
+influence the amount of transmitter release by
+mechanisms such as facilitation and depres-
+sion1, but sub-threshold events occurring in
+the soma and the dendrites (the projections
+that receive inputs from other neurons) are
+thought to be too far away to influence trans-
+mitter release from the axonal terminals. 
+
+Alle and Geiger writing in Science2, and Shu
+et al. (this issue, page 761)3 now show, how-
+ever, that the release of neurotransmitter from
+axon terminals of certain vertebrate neurons is
+influenced by the somatic membrane poten-
+tial. So, in terms of neuronal signalling, the
+axon terminals and the soma are electrically
+much closer than many would have assumed
+(Fig. 1). The salient finding in both papers,
+from which all of the rest of the results follow,
+is that the length constant, ȕ, of axons is sur-
+prisingly long, at about 420–450 Ȗm, in two
+types of neuron: hippocampal mossy fibres
+from rats2 and layer 5 pyramidal cells from the
+prefrontal cortex of ferrets3. ȕ is the distance
+over which a voltage change imposed at one
+site  will  drop  to  approximately  37%  of  its 
+initial  value4.  Although  rapid  changes  in 
+membrane potential are more attenuated by
+distance  than  are  slow  signals, when  two
+regions of a neuron are less than ȕ apart, they
+are commonly considered to be electrically
+‘close’. Put another way, at a distance less than
+ȕ, changes in membrane potential at one place
+will appreciably alter the membrane potential
+at the other. In the case of the mossy fibres, ȕ
+was  calculated  using  the  distance  between
+recordings made from boutons (presumably
+presynaptic release sites) and the soma2. In the
+case of the prefrontal cortical neurons, simul-
+taneous recordings were made from the soma
+and axon at known distances apart3. 
+
+How surprising is it that ȕ is so long in these
+neurons? Some readers will undoubtedly be
+taken aback to discover that vertebrate neurons
+can be so electrically compact, at least for slow
+signals. But those of us who work with large
+neurons in invertebrates already know of cases
+in which somatic voltages influence the axon
+more than a millimetre away5. In the vertebrate
+hippocampal2 and layer 5 cortical neurons3 the
+consequence of ȕ being so long is that slow
+depolarizations  (positive-going  changes  in
+membrane  potential  that  bring  the  neuron
+closer to threshold) of the membrane at the
+somatic and dendritic regions are transmitted
+to the axon terminals, and can influence the
+release of transmitter. 
+
+Shu et al.3 show that depolarization of the
+soma can increase the amount of spike-medi-
+ated release of neurotransmitter from the pre-
+synaptic terminals by about 30% per 10 mV of
+somatic depolarization. Is this change likely to
+be important for the function of the circuits
+containing these neurons? This will depend on
+many factors, but it is fair to say that even small
+changes in synaptic strength can have signifi-
+cant influences on circuit performance.
+
+Soma
+
+a
+
+Input
+
+Dendrites
+
+Boutons
+
+Axon
+
+λ
+
+–62 mV
+
+–48 mV
+
+b
+
+c
+
+Figure 1 | Analogue signalling. The membrane
+potential of the soma can influence transmitter
+release from the axonal terminals2,3. a, An input
+(green) produces a subthreshold depolarization
+of the neuron (pink). This depolarization spreads
+down the axon, decaying exponentially with
+distance. At distance ȕ, a voltage change in the
+soma will drop to 37% of its initial value. b, An
+action potential (red) is triggered from a baseline
+membrane potential of ǁ62 mV. The active
+neuron releases neurotransmitter onto its
+follower neuron, resulting in a postsynaptic
+change (pale blue). c, The baseline somatic
+potential is depolarized to ǁ48 mV, by barrages
+of input synapses or by an electrode. Now, when
+an action potential is evoked on the top of the
+baseline depolarization, the action potential
+(dark red) may be broader and results in a larger
+amplitude synaptic event in the follower neuron
+(dark blue).
+
+In the work by Shu et al.3 somatic depolar-
+ization was associated with significant spike
+broadening, that is the return to resting poten-
+tial occurred more slowly, in both the soma
+and the axon. Presumably this spike broaden-
+ing may contribute to the enhanced transmit-
+ter  release,  as  occurs  elsewhere6,7.  In  this
+study3, the authors recorded ongoing barrages
+of synaptic potentials resulting from sponta-
+neous network activity. The depolarizations
+associated with these synaptic barrages were
+seen in both somatic and axonal recordings,
+demonstrating that signals of the amplitude
+and time-course of normal synaptic inputs
+could influence axonal membrane potential. 
+Alle and Geiger2 saw no evidence of spike
+broadening in their recordings. But they did
+show that somatic depolarizations that mimic
+
+ ©2006
+
+Nature  Publishing Group
+
+those recorded in vivo during theta oscillations
+(an ongoing brain rhythm) can substantially
+increase the amplitudes of the postsynaptic
+currents evoked by action potentials.
+
+Many types of invertebrate neuron release
+neurotransmitter both in response to action
+potentials and as a graded function of mem-
+brane  potential8–11.  There  is,  however,  an
+important difference between the results in the
+two studies highlighted here2,3 and the classic
+graded transmission well characterized in the
+retina and in many invertebrate neurons12–16.
+In classic graded transmission, action poten-
+tials are not necessary for transmitter release
+because the threshold for transmitter release is
+often close to the resting potential. Therefore,
+synaptic release follows the analogue fluctua-
+tions of the presynaptic neuron’s membrane
+potential. In contrast, the results of Alle and
+Geiger2 and of Shu et al.3 show no indication
+that transmitter release occurs independently
+of action potentials, but only that the somatic
+membrane potential can influence how much
+transmitter is released by an action potential.
+Over the years, I have watched the charac-
+teristics ascribed to vertebrate neurons slowly
+evolve  to  exhibit  many  of  the  attributes  so
+clearly demonstrable in invertebrate neurons.
+I now find it gratifying that vertebrate neurons
+found in the hippocampus and cortex, brain
+regions well known for their importance in
+memory and cognition, may also avail them-
+selves of some of the benefits of analogue pro-
+cessing in addition to spike-mediated release.
+My  guess  is  that  this  work2,3 will  trigger
+numerous studies to determine how transmit-
+ter release from spiking neurons in the verte-
+brate brain is influenced by slow changes in
+membrane potential that result from neuro-
+modulation and ongoing activity. In this way,
+we will come to understand how neural cir-
+cuits produce variable outputs as a function of
+behavioural state and mood.
+I
+Eve Marder is at the Volen Center and Biology
+Department, Brandeis University, 415 South St,
+Waltham, Massachusetts 02454-9110, USA.
+e-mail: marder@brandeis.edu
+
+1. Zucker, R. S. & Regehr, W. G. Annu. Rev. Physiol. 64,
+
+355–405 (2002).
+
+2. Alle, H. & Geiger, J. R. Science 311, 1290–1293 (2006).
+3. Shu, Y., Hasenstaub, A., Duque, A., Yu, Y. & McCormick, 
+
+D. A. Nature 441, 761–765 (2006).
+
+4. Kandel, E. R., Schwartz, J. H. & Jessell, T. M. Principles of
+
+Neural Science (McGraw–Hill, New York, 2000).
+
+5. Meyrand, P. et al. J. Neurosci. 12, 2803–2812 (1992).
+6. Sabatini, B. L. & Regehr, W. G. J. Neurosci. 17, 3425–3435
+
+7. Ma, M. & Koester, J. J. Neurosci. 16, 4089–4101 (1996).
+8. Selverston, A. I. et al. Prog. Neurobiol. 7, 215–290 (1976).
+9. Ayali, A. et al. J. Neurophysiol. 79, 2063–2069 (1998).
+10. Angstadt, J. D. & Calabrese, R. L. J. Neurosci. 11, 746–759
+
+(1997).
+
+(1991).
+
+(1980).
+
+(1978).
+
+(1969).
+
+11. Graubard, K. et al. Proc. Natl Acad. Sci. USA 77, 3733–3735
+
+12. Graubard, K. J. Neurophysiol. 41, 1014–1025 (1978).
+13. Manor, Y. et al. J. Neurosci. 17, 5610–5621 (1997).
+14. DiCaprio, R. A. J. Comp. Neurol. 185, 83–106 (1989).
+15. Burrows, M. & Siegler, M. V. J. Physiol. (Lond.) 285, 231–255
+
+16. Werblin, F. S. & Dowling, J. E. J. Neurophysiol. 32, 339–355
+
+703
+
+

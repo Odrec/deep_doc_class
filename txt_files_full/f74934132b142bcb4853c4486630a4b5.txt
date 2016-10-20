@@ -1,0 +1,67 @@
+Spitzweck/Heine/Soud`eres/M¨ahr/Mengler/Uliczka
+
+24. November 2014
+
+Lineare Algebra I
+Tutoriumsvorschl¨age
+
+1. Die Abbildung f : C3 → C2 sei gegeben durch
+
+f (z1,z2,z3) = (z1 + iz2 − z3 , iz1 − z2 + (1 + i)z3).
+
+(a) Zeigen Sie: f ist linear.
+(b) Bestimmen Sie Kern f .
+
+2. Untersuchen Sie die folgenden Abbildungen auf Linearit¨at:
+
+(a) R2 → R2,
+(c) Q2 → R,
+(e) Abb(R,R) → R,
+
+(x,y) (cid:55)→ (3x + 2y,x)
+(x,y) (cid:55)→ x +
+
+√
+2y
+f (cid:55)→ f (1)
+
+¨uber Q
+
+(b) R → R,
+(d) C → C,
+(f) C → C,
+
+x (cid:55)→ ax + b
+z (cid:55)→ ¯z
+z (cid:55)→ ¯z
+
+¨uber R
+
+3. Zeigen Sie: Ist F : V → W ein Ismorphimus und V = U1 ⊕U2, so ist W = F(U1)⊕ F(U2).
+4. Sei p ∈ {2,3} und V = (Z/pZ)3. Untersuchen Sie f¨ur welche p die folgenden Abbildungen
+
+Φi : V → V linear sind:
+(1) Φ1(x,y,z) = (2z,x,3y− x)
+(2) Φ2(x,y,z) = (x + 1,2y,z)
+(3) Φ3(x,y,z) = (3xy,x,z)
+
+5. Sei K ein K¨orper und V und W zwei endlichdimensionale K-Vektorr¨aume. Weiterhin sei
+
+f : V → W eine lineare Abbildung und U ⊆ W ein Untervektorraum von W . Zeigen Sie:
+a) f −1(U) := {v ∈ V | f (v) ∈ U} ist ein Untervektorraum von V .
+b) Wir schreiben f 2 f¨ur f ◦ f . Zeigen Sie, dass die folgenden Aussagen ¨aquivalent sind:
+
+(a1)
+
+rang f = rang f 2
+
+(b1) dimKern f = dimKern f 2
+
+6. Sei K ein K¨orper, V ein K-Vektorraum und p ein Endomorphismus von V mit p◦ p = p (p
+
+heißt Projektion).
+a) Zeigen Sie, dass q = (1− p) auch Projektionen sind (dass ist q◦ q = q).
+b) Seigen Sie, dass Imq ⊂ Ker p.
+c) Was k¨onnen Sie sagen ¨uber Im oder ker von p und q ?
+
+
