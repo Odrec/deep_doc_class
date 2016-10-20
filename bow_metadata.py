@@ -12,7 +12,7 @@ __author__ = 'tkgroot'
 
 class Bow_Metadata():
     # @ToDo: validation of_type. Now all possible variation can be entered
-    def __init__(self, of_type=None, punish_threshold=None, punish_factor=None):
+    def __init__(self, of_type=None, punish_threshold=None, punish_factor=None, debug=False):
         if of_type is None: raise ValueError("Bow Metadata can´t be of type: None\n"
                                              "Use author filename, title, description, folder_name, folder_description"
                                              " for considering one of these specific bag of words")
@@ -22,7 +22,8 @@ class Bow_Metadata():
         if punish_factor is None: self.punish_factor=0.1                            # punish_factor is the multiplier
         else: self.punish_factor=punish_factor
 
-        self.load_data_from_file()                                                  # loading csv files
+        self.debug=debug
+        self.load_metadata_from_csv()                                               # loading csv files
         self.vectorizer=CountVectorizer(analyzer='word', max_features=1000)         # initialize bow
 
         # Checks if lib_bow exists, if not it will create it and run make_bow()
@@ -31,15 +32,17 @@ class Bow_Metadata():
             self.make_bow()
             self.bow_author()
 
-    def load_data_from_file(self):
+    def load_metadata_from_csv(self):
         t0=time()
         print("loading csv-files...")
-        self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
-        # self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
-        self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
-        # self.author=pd.read_csv('tests/uploaderTest.csv', header=0, delimiter=",", quoting=1)
-        self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
-        # self.clf=pd.read_csv("tests/classificationTest.csv", header=0, delimiter=';', quoting=3)
+        if self.debug:    # consider testing
+            self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+            self.author=pd.read_csv('tests/uploaderTest.csv', header=0, delimiter=",", quoting=1)
+            self.clf=pd.read_csv("tests/classificationTest.csv", header=0, delimiter=';', quoting=3)
+        else:
+            self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+            self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
+            self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
 
         self.clf = self.clf.loc[self.clf['published'] == True]  # consider only positive classification
         # self.author=self.author.set_index('document_id')        # shift the index to the document_id for easier search
