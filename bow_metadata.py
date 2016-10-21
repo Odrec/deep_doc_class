@@ -159,7 +159,10 @@ class Bow_Metadata():
         if self.of_type == 'author':
             author=self.author.set_index(['document_id'])        # shift the index to the document_id for easier search
             bow=self.load_bow_from_csv()
-            uploader=author.loc[file].drop_duplicates(keep='first')
+            try:
+                uploader=author.loc[file].drop_duplicates(keep='first')
+            except:
+                return 0
             score=bow.loc[bow['user_id'] == uploader['user_id']]['value'].sum()
             if score >= self.punish_threshold: return 1
             else: return score*self.punish_factor
