@@ -36,6 +36,8 @@ class TextScore:
             #if txt files are used, the only contain a single page
             self.mean = 35.7563871896
             self.std = 124.842470114
+        if  not self.load_data():
+            print("loading data for textscore failed, using default values instead...")
         self.path = 'txt_files_1p'
         return
         
@@ -79,6 +81,15 @@ class TextScore:
             txt += lines
         return txt
 
+    def load_data(self):
+        try:
+            fp = open('txtscore_pdf.txt','r')
+            self.mean = float(fp.readline())
+            self.std = float(fp.readline())
+        except:
+            return False
+        return True
+
     #@param filepointer a pointer to a pdf file
     #@param metapointer a pointer to the metadata, this parameter is not used
     #@return float64 [0 1] probabiliy for the pdf  beeing copyright protected     
@@ -110,6 +121,9 @@ class TextScore:
                 continue
             self.mean = np.mean(len_list)
             self.std = np.std(len_list)
+            fp = open('txtscore_pdf.txt','w')
+            fp.write(str(self.mean)+'\n')
+            fp.write(str(self.std)+'\n')
         print(len(len_list))
         print(self.mean)
         print(self.std)
