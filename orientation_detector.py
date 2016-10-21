@@ -37,6 +37,8 @@ class page_orientation_module:
     def train(self,filenames,classes,metalist = None):
         return
 
+"""
+
 file_class = dict()
 m = page_orientation_module()
 
@@ -96,3 +98,4 @@ print('Total Landscape:.\t'+str(landscape))
 print('Total Portrait:\t'+str(port))
 print('Total:\t'+str(c))
 
+"""
