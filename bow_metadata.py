@@ -12,30 +12,40 @@ __author__ = 'tkgroot'
 
 class Bow_Metadata():
     # @ToDo: validation of_type. Now all possible variation can be entered
-    def __init__(self, of_type=None, punishment_factor=None):
-        if of_type is None: raise ValueError("Bow Metadata can´t be of type: None")
+    def __init__(self, of_type=None, punish_threshold=None, punish_factor=None, debug=False):
+        if of_type is None: raise ValueError("Bow Metadata can´t be of type: None\n"
+                                             "Use author filename, title, description, folder_name, folder_description"
+                                             " for considering one of these specific bag of words")
         else: self.of_type=of_type
-        if punishment_factor is None: self.punishment_factor=0.5                    # punishment_factor for author only
-        else: self.punishment_factor=punishment_factor
+        if punish_threshold is None: self.punish_threshold=10                       # punish_threshold at 10 documents
+        else: self.punish_threshold=punish_threshold
+        if punish_factor is None: self.punish_factor=0.1                            # punish_factor is the multiplier
+        else: self.punish_factor=punish_factor
 
-        self.load_data_from_file()                                                  # loading csv files
+        self.debug=debug
+        self.load_metadata_from_csv()                                               # loading csv files
         self.vectorizer=CountVectorizer(analyzer='word', max_features=1000)         # initialize bow
 
         # Checks if lib_bow exists, if not it will create it and run make_bow()
         if not os.path.exists("lib_bow/"):
             os.makedirs('lib_bow/')
             self.make_bow()
+            self.bow_author()
 
-    def load_data_from_file(self):
+    def load_metadata_from_csv(self):
         t0=time()
         print("loading csv-files...")
-        self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
-        # self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
-        self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
-        # self.author=pd.read_csv('tests/uploaderTest.csv', header=0, delimiter=",", quoting=1)
-        self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
-        # self.clf=pd.read_csv("tests/classificationTest.csv", header=0, delimiter=';', quoting=3)
+        if self.debug:    # consider testing
+            self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+            self.author=pd.read_csv('tests/uploaderTest.csv', header=0, delimiter=",", quoting=1)
+            self.clf=pd.read_csv("tests/classificationTest.csv", header=0, delimiter=';', quoting=3)
+        else:
+            self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+            self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
+            self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
+
         self.clf = self.clf.loc[self.clf['published'] == True]  # consider only positive classification
+        # self.author=self.author.set_index('document_id')        # shift the index to the document_id for easier search
         print("done in %0.3fs" % (time()-t0))
 
     # Gets training data
@@ -83,8 +93,14 @@ class Bow_Metadata():
         t0=time()
         print("create BoW of authors")
         train=self.get_train(self.author,self.clf)
-        train.to_csv( "lib_bow/model_author.csv", index=False, quoting=1, encoding='utf-8')
-        print("finished in %0.3fs" % (time()-t0))
+        self.vectorizer.fit_transform(train['user_id']).toarray()
+        author=self.vectorizer.get_feature_names()
+        value=np.sum(self.vectorizer.fit_transform(train['user_id']).toarray(),axis=0)
+
+        # Pandas creates a lib_bow for the bow_author
+        output=pd.DataFrame(data={'user_id': author, 'value': value})
+        output.to_csv( "lib_bow/model_author.csv", index=False, quoting=1, encoding='utf-8')
+        print("done in %0.3fs" % (time()-t0))
 
     # @ToDo: make_bow for negative examples as well
     # @ToDo: might get error when convert_data is empty for some reason. It should be catched
@@ -127,6 +143,10 @@ class Bow_Metadata():
             output.to_csv( "lib_bow/model_"+bow+".csv", index=False, quoting=1, encoding='utf-8')
             print("finished in: %0.3fs" % (time()-t0))
 
+    def load_bow_from_csv(self):
+        bow=pd.read_csv('lib_bow/model_'+self.of_type+'.csv', header=0, delimiter=',', quoting=1, encoding='utf-8')
+        return bow
+
     # @ToDo: call self.vectorizer.transform(this data) need to change the way vectorizer is used, do prediction instead of score
     # @ToDo: create functions for if-construct-body
     def get_function(self,filepointer, metapointer=None):
@@ -134,13 +154,18 @@ class Bow_Metadata():
         file=re.sub('[^a-zA-Z0-9]','',filepointer)      # get rid of //.*
         file=file[5:-3]                               # cut out 'files' and 'pdf' from pointer str
 
-        # @ToDo: author checks just if author exists, not how many times <-- could be implemented
+        # @ToDo: non existing files in classification catch
+        # @ToDo: catch possible duplicate document_ids
         if self.of_type == 'author':
-            meta_for_file=self.clf.loc[self.clf['document_id'] == file].reset_index(drop=True)
-            if meta_for_file.empty:
+            author=self.author.set_index(['document_id'])        # shift the index to the document_id for easier search
+            bow=self.load_bow_from_csv()
+            try:
+                uploader=author.loc[file].drop_duplicates(keep='first')
+            except:
                 return 0
-            else:
-                return self.punishment_factor
+            score=bow.loc[bow['user_id'] == uploader['user_id']]['value'].sum()
+            if score >= self.punish_threshold: return 1
+            else: return score*self.punish_factor
 
         # load metadata of the file, clean it from artifacts
         meta_for_file=self.metadata.loc[self.metadata['document_id'] == file].reset_index(drop=True)
@@ -150,12 +175,12 @@ class Bow_Metadata():
             return 0
 
         clean_data.append(self.convert_data(meta_for_file[self.of_type][0]))
-        print(clean_data)
+        # print(clean_data)
         self.vectorizer.fit_transform(clean_data).toarray()
         data=self.vectorizer.get_feature_names()
 
         # load bow of __of_type
-        bow=pd.read_csv('lib_bow/model_'+self.of_type+'.csv', header=0, delimiter=',', quoting=1, encoding='utf-8')
+        bow=self.load_bow_from_csv()
         # print(bow['word'])
 
         # scoring
@@ -163,14 +188,3 @@ class Bow_Metadata():
         size=score.index.size
 
         return score['value'].sum(axis=0)/size
-
-# Testing
-# test=Bow_Metadata('author')
-# test=Bow_Metadata('title')
-# test=Bow_Metadata('description')
-# test.make_bow()
-# test.bow_author()
-# print(test.get_function("./files/b4825922d723e3e794ddd3036b635420.pdf")) #strangely positive in metadatatest
-# print(test.get_function("./files/3d705ef7bee2de856e545e352a5325ec.pdf")) #positive
-# print(test.get_function("./files/189d4bc5378e11884eddeecec9304588.pdf")) #negative
-# print(test.get_function("./files/1c1be8ef8986f848d28280c3444233c7.pdf")) #positive only in metadata
