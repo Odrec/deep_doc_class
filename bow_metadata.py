@@ -1,7 +1,7 @@
 # coding=utf-8
 import nltk, os.path
 import pandas as pd
-import re, numpy
+import re
 import numpy as np
 from time import time
 from nltk.corpus import stopwords
@@ -176,7 +176,10 @@ class Bow_Metadata():
 
         clean_data.append(self.convert_data(meta_for_file[self.of_type][0]))
         # print(clean_data)
-        self.vectorizer.fit_transform(clean_data).toarray()
+        try: # catches empty or nan fields in csv file
+            self.vectorizer.fit_transform(clean_data).toarray()
+        except:
+            return 0
         data=self.vectorizer.get_feature_names()
 
         # load bow of __of_type
@@ -187,4 +190,7 @@ class Bow_Metadata():
         score=bow.loc[bow['word'].isin(data)].reset_index(drop=True)
         size=score.index.size
 
-        return score['value'].sum(axis=0)/size
+        if size == 0:
+            return 0
+        else:
+            return score['value'].sum(axis=0)/size
