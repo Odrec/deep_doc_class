@@ -1,0 +1,1071 @@
+FORSCHUNGS-
+KOLLOQUIUM 
+
+Pädagogische 
+Psychologie
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+1
+
+Varianzanalyse
+
+• Wann wendet man Varianzanalysen an?
+
+• Voraussetzungen für die Berechnung von 
+
+Varianzanalysen
+
+• Terminologie
+
+• Prinzip
+
+• Signifikanztests
+
+• Einfaktorielle Varianzanalyse
+
+• Mehrfaktorielle Varianzanalyse
+
+• Covarianzanalyse
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+2
+
+Varianzanalyse
+
+Wann wendet man Varianzanalysen an?
+
+Mit Varianzanalysen werden Mittelwertsunterschiede 
+getestet.
+
+Man wendet sie an, wenn man Unterschiede zwischen 
+mehr als zwei Gruppen testen will.
+
+Man wendet sie an, wenn man untersuchen will, ob 
+mehrere unabhängige Variablen zusammen auf die 
+abhängige Variable wirken (cid:1) Interaktion.
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+3
+
+Varianzanalyse
+
+Voraussetzungen für die Berechnung von 
+
+Varianzanalysen
+
+Intervallskalenniveau
+
+Normalverteilte Daten
+
+Varianzhomogenität
+
+Möglichst keine Ausreißer
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+4
+
+Varianzanalyse
+
+Voraussetzungen für die Berechnung von 
+
+Varianzanalysen
+
+Was geschieht bei Verletzung der Voraussetzungen?
+Die Varianzanalyse ist gegen Voraussetzungsverletzungen 
+relativ robust.
+
+Sind die Daten nicht normal verteilt, ist die Power niedrig.
+
+Eine Verletzung der Varianzhomogenität ist nur dann 
+problematisch, wenn die Gruppengröße sehr 
+unterschiedlich ist und die kleinere Gruppe die größte 
+Varianz aufweist.
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+5
+
+Varianzanalyse
+
+Terminologie
+
+Abhängige Variablen (cid:1) Messwerte
+
+Unabhängige Variablen (cid:1) Faktoren
+
+Jede Ausprägung der unabhängigen Variable wird als 
+Faktorstufe bezeichnet
+
+UV
+
+Lehrmethode
+
+Computer
+
+Frontalunterricht
+
+Gruppe
+
+AV
+
+Leistung
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+6
+
+Varianzanalyse
+
+Das Prinzip der klassischen Varianzanalyse ist 
+
+Prinzip
+
+die Varianzzerlegung
+
+Faktorvarianz
+
+Fehlervarianz
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+7
+
+Varianzanalyse
+
+Das Prinzip der klassischen Varianzanalyse ist 
+
+Prinzip
+
+die Varianzzerlegung
+
+Bedingung 
+Computer 
+Computer 
+Computer
+Gruppe
+Gruppe
+Gruppe
+Frontal
+Frontal
+Frontal
+
+7.66
+
+3.66
+
+Leistung
+7 
+10
+6
+5
+1
+5
+1
+6
+3
+
+3.33
+
+Störvariablen
+z.B. Persönlichkeit,
+Tagesverfassung
+Intelligenz …
+
+Gesamtmittel
+
+4.88
+
+Gruppenmittel
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+8
+
+Varianzanalyse
+
+Das Prinzip der klassischen Varianzanalyse ist 
+
+Prinzip
+
+die Varianzzerlegung
+
+Computer 
+Computer 
+Computer
+Gruppe
+Gruppe
+Gruppe
+Frontal
+Frontal
+Frontal
+
+Leistung
+7 
+10
+6
+5
+1
+5
+1
+6
+3
+
+7.66
+
+3.66
+
+3.33
+
+Varianz zwischen Gruppen
+
+Faktorvarianz
+
+Mittlere Abweichung der 
+Gruppenmittel vom 
+Gesamtmittel
+Gesamtmittel
+
+4.88
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+9
+
+Varianzanalyse
+
+Das Prinzip der klassischen Varianzanalyse ist 
+
+Prinzip
+
+die Varianzzerlegung
+
+Varianz innerhalb der Gruppen
+
+Fehlervarianz
+
+Mittlere Abweichung der 
+Werte von ihren 
+Gruppenmitteln
+
+Computer 
+Computer 
+Computer
+Gruppe
+Gruppe
+Gruppe
+Frontal
+Frontal
+Frontal
+
+Leistung
+7 
+10
+6
+5
+1
+5
+1
+6
+3
+
+7.66
+
+3.66
+
+3.33
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+10
+
+Varianzanalyse
+
+Prinzip
+
+Es wird die Varianz zwischen den Gruppen zur 
+Fehlervarianz (Varianz innerhalb) in Beziehung 
+
+gesetzt
+
+F-Ratio
+
+F =
+
+Varianz zwischen
+Varianz Innerhalb
+
+Je größer der F-Wert ist, desto wahrscheinlicher ist es, 
+dass sich die untersuchten Gruppen in ihren 
+Mittelwerten unterscheiden.
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+11
+
+Varianzanalyse
+
+Prinzip
+
+F =
+
+Varianz zwischen
+Varianz Innerhalb
+
+Der F-Wert wird umso größer, je größer die 
+Unterschiede zwischen den Gruppen im Vergleich zu 
+den Unterschieden innerhalb der Gruppen 
+(Fehlervarianz) sind.
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+12
+
+Varianzanalyse
+
+Signifikanztest
+
+F ist die Prüfgröße für Varianzanalysen
+
+H0 Es besteht kein Unterschied zwischen den 
+
+Gruppen
+
+H1 Es besteht ein Unterschied zwischen den 
+
+Gruppen
+
+Merke: F-Test sind immer zweiseitig
+
+Die Nullhypothese muss beibehalten werden, wenn 
+das F klein ist, d.h. die Unterschiede innerhalb der 
+Gruppen viel größer sind als die zwischen den 
+Gruppen.
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+13
+
+!
+
+Varianzanalyse
+
+Signifikanztest
+
+F ist die Prüfgröße für Varianzanalysen
+
+Wenn die Nullhypothese gilt, d.h. in der Grundgesamtheit  
+kein Unterschied zwischen den Gruppen besteht, müsste 
+man bei den meisten Stichproben, die man zieht, ein F 
+zwischen 0 und 1 bekommen.
+
+Wie bei anderen Prüfverteilungen 
+kann man auch bei der F-
+Verteilung für jeden Wert 
+berechnen, wie wahrscheinlich es 
+ist, dass man einen solchen Wert 
+bekommt, wenn die Nullhypothese 
+gilt
+
+Beispiel für 40 Vpn und 3 
+
+Gruppen
+
+14
+
+5%
+
+3,25
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+Varianzanalyse
+
+Signifikanztest
+
+F ist die Prüfgröße für Varianzanalysen
+
+Wann ein F-Wert groß genug ist, damit er signifikant wird 
+(d.h. der Unterschied unwahrscheinlich  nur auf Zufall 
+zurückzuführen ist) hängt auch von der Anzahl der 
+Freiheitsgrade ab.
+Bei F-Werten muss man immer zwei Freiheitsgrade
+berücksichtigen. Einen für den Zähler (Varianz zwischen) 
+und einen für den Nenner (Varianz innerhalb).
+
+! Für die einfaktorielle Varianzanalyse gilt 
+
+z.B.
+
+Bei drei Faktorstufen und 40 Vpn
+
+df Zähler = k -1  k = Faktorstufen
+df Nenner N – k  N = Stichprobengröße
+
+df Zähler = 2
+df Nenner = 37
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+15
+
+Varianzanalyse
+
+Signifikanztest
+
+F ist die Prüfgröße für Varianzanalysen
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+16
+
+Varianzanalyse
+
+Signifikanztest
+
+F ist die Prüfgröße für Varianzanalysen
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+17
+
+Varianzanalyse
+
+Signifikanztest
+
+F ist die Prüfgröße für Varianzanalysen
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+18
+
+Varianzanalyse
+
+Einfaktorielle Varianzanalyse
+
+Es gibt eine unabhängige Variable bzw. einen Faktor
+Das Prinzip ist wie oben beschrieben.
+
+Beispiel: Unterscheiden sich Personen mit 
+unterschiedlichen Schulabschlüssen in ihrer Leistung 
+in einem sprachfreien Intelligenztest (SPM Raven)?
+
+H0 Es besteht kein Unterschied zwischen den 
+
+Gruppen
+
+H1 Es besteht ein Unterschied zwischen den 
+
+Gruppen
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+19
+
+Varianzanalyse
+
+Einfaktorielle Varianzanalyse
+
+SPSS Output
+
+Zellbesetzung
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+20
+
+Varianzanalyse
+
+Einfaktorielle Varianzanalyse
+
+SPSS Output
+
+Varianz zwischen
+
+Varianz zwischen/ Varianz innerhalb
+
+Varianz innerhalb
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+21
+
+Varianzanalyse
+
+Einfaktorielle Varianzanalyse
+
+SPSS Output
+
+Freiheitsgrade Zähler
+
+Die Wahrscheinlichkeit, 
+dass sich bei gegebenem 
+Unterschied in der 
+Stichprobe die vier 
+Gruppen in der 
+Grundgesamtheit nicht in 
+ihrer Intelligenzleistung 
+unterscheiden, beträgt 
+weniger als 1 Promille. 
+Die Nullhypothese kann 
+verworfen werden (cid:1) Die 
+Gruppen unterscheiden 
+sich
+
+Freiheitsgrade Nenner
+
+F(3,571) = 14.29, p < .001
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+Effektstärke: 7% der Varianz in der 
+Intelligenzleistung wird durch die 
+
+Schulausbildung aufgeklärt
+
+22
+
+Varianzanalyse
+
+Einfaktorielle Varianzanalyse
+
+SPSS Output
+
+Ein signifikanter F-Wert bei einer Analyse mit mehreren 
+Faktorstufen besagt nur, dass sich mindestens eine 
+Faktorstufe von einer anderen unterscheidet.
+
+Evt. 
+Einzeltests 
+durchführen (cid:1)
+Post hoc Tests
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+23
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Es gibt mehrere unabhängige Variablen bzw. mehrere 
+Faktoren.
+Mit der mehrfaktoriellen Varianzanalyse kann man 
+auch Interaktionen von unabhängigen Variablen 
+untersuchen.
+Das Prinzip ist wie bei der einfaktoriellen 
+Varianzanalyse die Varianzzerlegung
+Es gibt aber hier mehr als nur zwei Varianzquellen.
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+24
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+Jeder Faktor stellt eine Varianzquelle dar 
+(Haupteffekte)
+
+Jede Interaktion stellt eine Varianzquelle dar
+
+Die Fehler stellen eine Varianzquelle dar
+
+Beispiel: zweifaktorielle Varianzanalyse
+Wirkung des Geschlechts (m/w) und der 
+Unterrichtsform (comp/frontal) auf die Matheleistung
+
+(cid:1)2 x 2 Design
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+25
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+Haupteffekt 1: Geschlecht
+
+Haupteffekt 2: Unterrichtsform
+
+Interaktion Geschlecht x Unterrichtsform
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+26
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Dreifaktorielle Varianzanalyse
+
+Haupteffekt 1: Geschlecht
+Haupteffekt 2: Unterrichtsform
+Haupteffekt 3: Klassenstufe (7/10)
+2-fach Interaktion Geschlecht x Unterrichtsform
+2-fach Interaktion Geschlecht x Klasse 
+2- fach Interaktion Unterrichtsform x Klasse
+3-fach Interaktion Geschlecht x Unterrichtsform x Klasse 
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+27
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+Nur 
+
+Haupteffekt 
+Geschlecht
+
+Jungen
+
+Mädchen
+Mädchen
+
+Computer
+
+Frontal
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+28
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+Nur 
+
+Haupteffekt 
+
+Methode
+
+Jungen
+
+Mädchen
+
+Computer
+
+Frontal
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+29
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+Haupteffekt 
+Geschlecht 
+
+und 
+
+Haupteffekt 
+
+Methode
+
+Jungen
+
+Mädchen
+
+Computer
+
+Frontal
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+30
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+Jungen
+
+Mädchen
+
+Computer
+
+Frontal
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+31
+
+Interaktion
+Geschlecht 
+X Methode
+
+Interaktion 
+bedeuteut, 
+dass die 
+Wirkung des 
+einen Faktors 
+auf die 
+abhängige 
+Variable 
+abhängig ist 
+von der 
+Ausprägung 
+des anderen 
+Faktors
+
+Interaktion
+Geschlecht 
+X Methode
+
+und 
+
+Hauoteffekt 
+Geschlecht
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+Jungen
+
+Mädchen
+
+Computer
+
+Frontal
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+32
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+Nehmen Übergewichtige, die in einer Klinik 
+zum Abnehmen sind, nahrungsbezogene 
+Wörter im Vergleich zu einer Kontrollgruppe 
+schneller wahr und ist dies durch das 
+Geschlecht moderiert?
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+33
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+SPSS Output
+
+Zellbesetzung
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+34
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+SPSS Output
+
+Varianz zwischen
+
+Forschungskolloquium Pädagogische 
+
+Varianz innerhalb
+
+35
+
+Psychologie Rosa M. Puca
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+Freiheitsgrade Zähler
+
+SPSS Output
+
+Freiheitsgrade Nenner
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+Der Haupteffekt für 
+Geschlecht ist nicht 
+signifikant. Männer und 
+Frauen unterscheiden 
+sich in ihrer 
+Reaktionszeit nicht
+
+Der Haupteffekt für die 
+Bedingung ist signifikant. 
+Die Kontrollgruppe 
+unterscheidet sich von 
+der Experimentalgruppe  
+in ihrer Reaktionszeit
+
+Die Interaktion ist nicht 
+signifikant. Die Wirkung 
+der Bedingung ist 
+unabhängig vom 
+Geschlecht.
+
+36
+
+Varianzanalyse
+
+Mehrfaktorielle Varianzanalyse
+
+Beispiel: Zweifaktorielle Varianzanalyse
+
+SPSS Output
+
+Mittelwerte
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+37
+
+Varianzanalyse
+
+Covarianzanalyse
+
+Man kann in die Varianzanalyse eine Covariate 
+einbeziehen.
+
+Beispiel
+
+Unterscheiden sich Kinder aus höheren Bildungsschichten 
+von Kindern aus niedrigen Bildungsschichten in ihren 
+Schulnoten?
+
+Intelligenz covariiert mit der Schicht und beeinflusst die 
+Schulnote.
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+38
+
+Varianzanalyse
+
+Covarianzanalyse
+
+Beispiel
+
+Mit der Covarianzanalyse wird berechnet, wie sich die 
+Gruppen unterscheiden, wenn der Wert für die Covariate 
+für beide Gruppen gleich wäre.
+
+Gäbe es noch einen Schichtunterschied in den 
+Schulnoten, wenn sich die Schichten nicht in der 
+Intelligenz unterschieden?
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+39
+
+Varianzanalyse
+
+Covarianzanalyse
+
+Ist ein zuvor signifikanter Effekt bei Einbeziehung der 
+Covariate immer noch signifikant, ist er nicht auf die 
+Covariate zurückzuführen.
+
+Verschwindet der Effekt durch die Covariate, ist er 
+vermutlich durch die Covariate vermittelt 
+(Mediatorvariable).
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+40
+
+Varianzanalyse
+
+Covarianzanalyse
+
+Faktorvarianz
+
+Fehlervarianz
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+41
+
+Varianzanalyse
+
+Covarianzanalyse
+
+Faktorvarianz
+
+Verhältnis 
+Faktorvari-
+
+anz zu 
+
+Fehlervari-
+anz wird 
+schlechter
+
+Fehlervarianz
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+42
+
+Varianzanalyse
+
+Covarianzanalyse
+
+Eine Covariate kann auch eine zuvor nicht signifkianten 
+Effekt zum Vorschein bringen, wenn sie die AV beeinflusst, 
+aber mit der UV nicht covariiert
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+43
+
+Varianzanalyse
+
+Covarianzanalyse
+
+Faktorvarianz
+
+Verhältnis 
+Faktorvari-
+
+anz zu 
+
+Fehlervari-
+anz wird 
+besser
+
+Fehlervarianz
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+44
+
+Varianzanalyse mit Messwiederholung
+
+Forschungskolloquium Pädagogische 
+
+Psychologie Rosa M. Puca
+
+45
+
+

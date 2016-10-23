@@ -1,0 +1,1945 @@
+Globalizing Quiescence: Globalization,
+Union Density and Strikes in 15 Industrialized
+Countries
+
+James A. Piazza
+University of North Carolina at Charlotte
+
+This study examines the role played by globalization in the decline of
+strike rates in industrialized countries after the 1980s. Using a
+pooled, time-series multiple regression analysis of 15 advanced
+capitalist countries in North America, Western Europe and East Asia
+from 1952 to 2001, the author ﬁnds a relationship between
+globalization – measured in terms of international trade, investment
+and loosened international capital controls – and declining strike
+rates, but ﬁnds that the relationship is non-monotonic and that the
+level and change of union density plays an intermediary role between
+globalization and labor quiescence. The ﬁndings empirically validate
+earlier work by Tsebelis and Lange and Shalev, who also
+demonstrated a non-monotonic relationship between macroeconomic
+phenomena, labor strength and strikes.
+
+Keywords: globalization, investment, strikes, trade unions
+
+Introduction
+
+Historians of industrial relations in the 1970s, in observing a marked
+increase in industrial militancy in advanced capitalist countries,
+speculated that the increasing frequency and intensity of industrial
+conﬂict was either a cyclical ‘uptick’ spurred by stagﬂation that
+would revert back to the ‘regular’ level of strikes seen in the 1950s
+and 1960s or that the political and social turmoil of the decade
+had permanently changed industrial relations, and that the turbulent
+1970s were a harbinger of things to come1 (Brecher, 1972). Neither
+was to be the case. The militant 1970s were followed by the quiescent
+1980s and 1990s. Strike rates, measured as the number of working
+
+Economic and Industrial Democracy & 2005 (SAGE, London, Thousand Oaks and
+New Delhi), Vol. 26(2): 289–314.
+DOI: 10.1177/0143831X05051518
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+290
+
+Economic and Industrial Democracy 26(2)
+
+days lost due to industrial conﬂicts per worker, fell in every indus-
+trialized country and remained lower than not only the level of the
+1970s but also of the 1960s and 1950s in most countries until the
+beginning of the 21st century. This ominous quiescence seemed to
+defy the tempo of the business cycle or short-term macroeconomic
+disruptions. Table 1 illustrates this strange decline of strike activity.
+Looking at the average strike rates in the bottom row of Table 1,
+it is clear that strike rate levels remained fairly constant throughout
+the 1950s and 1960s and after increasing during the militant 1970s,
+they began to decline in the 1980s, dipping below the ‘mode’ set
+between 1950 and 1969. This decline continued even more precipi-
+tously during the 1990s, setting a new level of quiescence, 59.6 per-
+cent lower than the previous decade and roughly 61 percent lower
+than the strike rates of the 1950s and 1960s. Looking at individual
+countries, the picture becomes more complex and a few patterns
+emerge. The largest group of countries, Australia, Austria, Belgium,
+Canada, France, Germany, Italy, Japan, Netherlands, Switzerland
+and the UK, seem to roughly adhere to the pattern established by
+
+Number of Days Lost Due to Strikes per Worker, 1952–99
+
+TABLE 1
+
+Australia
+Austria
+Belgium
+Canada
+Denmark
+Finland
+France
+Germany
+Italy
+Japan
+Netherlands
+Norway
+Sweden
+Switzerland
+UK
+
+Average
+
+1952–9
+
+1960–9
+
+1970–9
+
+1980–9
+
+1990–9
+
+2426
+251
+2606
+2826
+783
+4256
+2807
+461
+2212
+1171
+333
+1475
+n/a
+n/a
+1203
+
+2034
+506
+n/a
+4245
+1457
+1180
+1723
+122
+8207
+834
+61
+554
+132
+77
+1845
+
+4264
+88
+1376
+8074
+2111
+4872
+1272
+302
+9434
+853
+360
+381
+243
+19
+5145
+
+591
+20
+1452
+4876
+1536
+3379
+797
+244
+5650
+73
+130
+850
+1799
+3
+3074
+
+964
+42
+338
+2051
+1642
+1629
+249
+98
+1164
+19
+216
+733
+445
+14
+261
+
+.61754.6
+
+.61641.2
+
+.62586.3
+
+.61631.6
+
+.6657.7
+
+Source: International Labour Organization, Yearbook of Labour Statistics (various
+years).
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+291
+
+the average for the entire set of 15 countries tallied in the bottom row
+in that strike rates after 1980 were signiﬁcantly (at least 30 percent)
+lower than those prior to 1980. However, a smaller group, Denmark,
+Finland, Sweden and Norway, either had strike rates in the 1980s
+and 1990s that were higher (up to ﬁve times higher in the case of
+Sweden) or not signiﬁcantly lower than those witnessed prior to
+1980.
+
+The Puzzle
+
+What explains the beginning of labor quiescence in 1980, a phenom-
+enon noticed by Perusek and Worcester (1995) and Shalev (1992),
+and its intensiﬁcation after the 1980s for the average and largest
+groups of countries listed in Table 1? Furthermore, what explains
+the diversity of the group of countries? Why have most countries
+experienced a resurgence of quiescence while a minority have seen
+increasing militancy?
+
+Much of the classical literature on strikes is not particularly
+helpful in answering these questions because it locates the cause of
+industrial conﬂict in the ﬂuctuations of the business cycle or the
+schedule of contract (re)negotiations or changes in the political
+climate (Budd, 1994; Cameron, 1984; Korpi and Shalev, 1979;
+Hibbs, 1978; Rees, 1952; Kalecki, 1943). Certainly, business booms,
+recessions and recoveries do affect strikes and it is intuitive that
+strikes are more likely in years in which large contract negotiations
+occur, which may be on a regular basis for countries with peak-level
+bargaining. Also, changes in political leadership, for example the
+assumption of power by the Thatcher administration in Britain in
+1979, clearly will have implications for industrial action, either nega-
+tively or positively. However, most of these phenomena have a
+short-term impact on labor relations and one would not expect
+any of these to produce such long-term (20-year!) effects.
+
+The literature on comparative labor market institutions provides
+important pieces of the puzzle. First, scholarly work on centralized
+bargaining and the effects of international trade on small advanced
+capitalist states demonstrates that exposure of unionized workers to
+pressures from the international market promotes general wage
+restraint and labor peace in order to maintain national competitive-
+ness in export markets (Garrett and Way, 1995; Iversen, 1996;
+Katzenstein, 1985; Lange et al., 1995; McKeown, 1999; Swenson,
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+292
+
+Economic and Industrial Democracy 26(2)
+
+1991, 1989; Wood, 1994). Second, it has also been convincingly
+demonstrated that the organizational capacity of workers is an
+important determinant of collective activities such as strikes and
+industrial action (Shorter and Tilly, 1974; Tilly, 1978; Snyder,
+1975). Shalev (1992) speciﬁcally identiﬁes union density – the
+number of unionized workers as a percentage of the total work-
+force – as a crucial indicator of workers’ organizational capacity,
+and as a key determinant of strike activity. Finally, a large body
+of studies indicates that common macroeconomic features have
+different effects on unions, labor markets and domestic labor activ-
+ity depending on the structure of institutional features such as wage
+bargaining, union density and the status of social-democratic parties
+(Freeman, 1989; Lange and Scruggs, 1999; Pedersen, 1982; Piazza,
+2002; Rothstein, 1989; Visser and Ebbinghaus, 1999; Western, 1997).
+Two studies in particular, however, provide a useful framework
+for explaining the general labor quiescence of the 1980s and 1990s
+and the renewed labor militancy in four other cases. First, Shalev
+(1992) observed that patterns of strike activity among industrialized
+countries vary both by time-period and by country. In his study,
+he broke his observations of strikes in advanced industrialized coun-
+tries into three time-periods. In the ﬁrst period – 1960–7, a period
+characterized by rapid economic growth and low unemployment –
+strikes fall into four groups of cases: countries such as Switzerland,
+Norway, Sweden, Germany and the Netherlands, which exhibit
+strikes involving few workers for a short duration; countries such
+as France, Italy and Australia, which have brief strikes but with a
+mass participation of workers; countries such as the US, Canada
+and Ireland, which have strikes that are few in number but are
+long and protracted; and countries such as Japan, Britain, Belgium,
+New Zealand, Finland, Austria and Denmark, which exhibit strikes
+of a medium duration and participation rate. The second period,
+1968–73, is turbulent and shows some convergence among countries
+in terms of rates of worker participation in strikes, but with little
+alternation of the previous patterns of duration. The post-1974
+period, a period of stagﬂation and rising unemployment, witnesses
+strikes dramatically declining in France, Japan and the US, while
+dramatically increasing in terms of participation in Sweden and
+Norway.
+
+Shalev concludes with the observation that the three countries
+that lead the pack in terms of declining strike activity post-1974,
+the US, France and Japan, are also the three countries in which
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+293
+
+union density decreased the most after 1973. Moreover, of the six
+countries that experienced a decline in union density, four also
+exhibited a precipitous decline in the relative involvement of workers
+in strikes. The two countries that experienced a sharp increase in
+strike activity, measured in terms of worker participation in strikes,
+were Sweden and Norway, two of the most heavily unionized coun-
+tries in the industrialized world. Though it is not the central focus of
+his study, union density and degree of worker organization is an
+important component of his observations about deviations in strike
+patterns. Shalev explains, ‘Workers’ ability to prosecute industrial
+action is dependent not only on the favourability of market forces
+but also on their capacity for collective action, particularly the
+prior extent of labour organization. . . . It might well be the case,
+therefore, that longer-term shifts in the extent of worker orga-
+nization have an appreciable effect on strike-proneness’ (Shalev,
+1992: 117).
+
+The second study provides more insight into the puzzle of national
+divergence of strike activity displayed in Table 1. Noting that con-
+ventional explanations would predict that strikes in industrialized
+countries should converge toward a mean, Tsebelis and Lange
+(1995) take a ﬁrst cut at trying to combine macroeconomic, political
+climate and organizational models of how strikes occur in indus-
+trialized countries. In doing so, they make an important contri-
+bution by considering a non-monotonic relationship between the
+strength of labor (which they deﬁne more broadly than organized
+labor) and the incidence of strikes. They observe that while OECD
+countries experienced quite similar macroeconomic challenges in
+the 1970s and 1980s, among them the challenge of increasing open-
+ness to the international economy, unemployment and inﬂation,
+levels of strike activity sharply diverged as did the degree of corpor-
+atism and the political power of the left.
+
+To explain this phenomenon, Tsebelis and Lange consider two
+alternating-offers game theory models. The ﬁrst sets labor against
+capital in a negotiation over the division of proﬁts wherein labor
+may at any stage of the alternating offers choose to pursue an ‘out-
+side option’ by going on strike. The second presents the same sort of
+game but with incomplete information. Capital does not know the
+value of labor’s outside option, the ability to go on strike, and so
+therefore is engaged in bargaining with an adversary that can be
+either ‘strong’ or ‘weak’. In both games, the authors note, a discount
+factor makes both players eager to come to resolution.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+294
+
+Economic and Industrial Democracy 26(2)
+
+The outcome of the game predicts a curvilinear model of labor
+strength and the incidence of strikes. In cases where labor is
+strong, capital has an immediate incentive to compromise with
+labor and will conclude negotiations with an eye to avoiding a
+costly strike. In cases where labor is weak, it is instead labor that
+has incentives to compromise in order to come to agreement because
+a strike is too costly for it. In both of these situations, Tsebelis
+and Lange predict a generally low incidence of strike activity. It is
+when strong labor becomes weaker and when weak labor becomes
+stronger that the problem of incomplete information rears its head
+and strikes are more likely. Employers are likely to become more
+intransigent when bargaining with labor that was once strong but
+has become weaker. Though it is losing power, labor may not yet
+feel compelled to acquiesce; indeed it may feel it unwise to do so
+during the alternation of offers lest it encourage capital to drive a
+harder bargain. Conversely, labor that is getting stronger from an
+earlier position of weakness will hold a stronger line against capital
+in order to brandish its newly vitalized outside option, while capital
+may wish to hold onto its previously dominant bargaining position.
+In either situation, when labor power is growing or shrinking, strikes
+are more likely. The authors empirically test their predictions by
+regressing change in strikes with change in labor strength, producing
+statistically signiﬁcant results.
+
+Enter Globalization
+
+What explains the timing of the general decline of strike rates in
+Table 1? The 1980s, when the quiescence (or the militancy for four
+of the countries) begins, and the 1990s, where it rapidly accelerates,
+are also the decades that are commonly identiﬁed with the beginning
+and the acceleration of globalization of national economies (Visser,
+1994). Economic globalization is deﬁned as the increasing inter-
+connectedness of domestic economies with one another, and is
+often measured in terms of rising international imports and exports
+and an acute increase in international investment stocks. Table 2
+illustrates the change in these indicators of globalization during
+the last ﬁve decades, averaged for the 15 countries listed in Table 1.
+Theoretically, there are two ways that globalization might be a
+contributing factor to the strike phenomena illustrated in Table 1.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+295
+
+International Trade and Investment as a Percentage of GDP, 1950–99
+
+TABLE 2
+
+1952–9
+
+1960–9
+
+1970–9
+
+1980–9
+
+1990–9
+
+Average international
+
+35.6%
+
+39.2%
+
+43.5%
+
+47.9%
+
+52.7%
+
+trade as a % of GDP a
+
+Average stocks of direct
+investment abroad as
+a % of GDP a
+
+15.1%
+
+25.4%
+
+21.4%
+
+41.7%
+
+93.5%
+
+a Average for Australia, Austria, Belgium, Canada, Denmark, Finland, France,
+Germany, Italy, Japan, Netherlands, Norway, Sweden, Switzerland and UK.
+Source: International Monetary Fund, International Financial Statistics Yearbook
+(various years).
+
+in the public
+
+First, globalization intensiﬁes pressure on ﬁrms, both domestic and
+multinational, by increasing inter-ﬁrm competition as national mar-
+kets become more integrated. New entrants to the global market
+intensify the existing competition among multinational corpora-
+tions. Domestic ﬁrms, previously sheltered from international com-
+petition, are increasingly exposed to foreign competitors and foreign
+products. All ﬁrms ﬁnd that global competition is squeezing their
+proﬁt margins and that they must reduce costs in order to maintain
+market share. Interestingly, the ‘proﬁt squeeze’ scenario can also
+apply to governments and workers
+sector.
+Globalization increases pressure on governments to attract or
+retain globally mobile capital investment, an important source of
+jobs for citizens and public revenues, by tinkering with taxes, interest
+rates and regulatory policies. The adoption by states of ‘globally
+capital friendly’ policy, in turn, places wage pressures on domestic
+public sector employees as government policy-makers hasten to
+implement ﬁscal austerity plans. These changes have implications
+for domestic workers across all sectors should government policy-
+makers choose to also reform wage-setting and workplace institu-
+tions that bolster unionization or high wages in an attempt to pro-
+vide business-friendly environments for globally footloose capital.2
+Second, globalization provides opportunities for proﬁt-squeezed,
+or proﬁt-maximizing, employers to outsource production abroad
+where wages and operating costs might be lower. Proﬁt-squeezes
+lead employers to demand wage and other labor cost concessions
+from workers at the bargaining table. Outsourcing leads to a
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+296
+
+Economic and Industrial Democracy 26(2)
+
+direct reduction in union and/or high-wage employment in the out-
+sourcing company. Both of these processes lead to an erosion of
+labor power. The pressures of globalization are related to the reduc-
+tion in union density rates in many countries – in addition to
+facilitating the outsourcing of union jobs to non-union plants
+abroad – by altering the bargaining position of unions vis-a-vis
+employers in a way that reduces the utility of union membership,
+namely job security and premium wages, to existing and prospective
+union members. When unions can no longer guarantee high wages
+and secure employment, workers come to see union membership
+as a waste of dues, at best, and a liability at worst.
+
+The erosion of union density compromises the ability of workers
+to engage in collective activities, such as strikes. Again, considering
+the aforementioned scholarship that demonstrates that common
+macroeconomic processes have different national effects, because
+domestic institutions mediate these processes (see especially Waller-
+stein and Western, 2000; Western, 1997), we could expect globaliza-
+tion and the erosion of union density to have divergent effects on
+actual strike rates across cases. In the Nordic countries, where
+strong unions and centralized bargaining ordinarily foster low
+strike rates, globalization may increase strike activity if it erodes
+strike-reducing labor market institutions, such as union density
+and peak-level bargaining. In countries characterized by low levels
+of unionization and decentralized bargaining, France or Japan for
+example, globalization could reduce strike activity if it compromised
+the vehicles workers usually use to launch and coordinate strikes:
+labor union. Though he does not mention the globalization of
+national economies among the macroeconomic factors affecting
+the observed changes in strikes, and the concomitant changes in
+union density, the question hangs above Shalev’s (1992) analysis
+due to the timing of the changes. The post-1974 period is one of
+rapidly increasing globalization of trade and investment and a relax-
+ing of international capital controls, as indicated in Table 2. And the
+countries that see the most dramatic change in strike activity are
+those at the top and the bottom of the scale in terms of union
+density. The notoriously low density countries, France, Japan and
+the US, which also experienced decreasing unionization rates
+throughout
+the 1960–74 timeframe, had the most precipitous
+declines in strikes while the very high density countries, Norway
+and Sweden, which had stable and increasing density rates respec-
+tively, had an increase in strikes.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+297
+
+Analysis
+
+Therefore, the objective of this study is to determine whether globa-
+lization is a signiﬁcant predictor of strike activity in industrialized
+countries and whether or not labor market institutions, in particular
+union density, determine how globalization affects strike rates.
+Of particular interest is how globalization affects strikes in cases
+characterized by high and low union density and how it affects
+strikes in cases where union density is increasing or decreasing
+from a high or low base. Three hypotheses are tested using a
+pooled time-series multiple regression analysis on a data set
+composed of 15 advanced, industrialized democracies: Australia,
+Austria, Belgium, Canada, Denmark, Finland, France, Germany,
+Italy, Japan, the Netherlands, Sweden, Switzerland and the UK.3
+These hypotheses are:
+
+Hypothesis 1: If we at ﬁrst ignore the role played by domestic insti-
+tutional features, such as union density, we would expect globali-
+zation to be negatively related to strike
+rates, because
+globalization improves the relative bargaining position of capital
+to labor by allowing employers the opportunity to exit abroad or
+to demand concessions by claiming a ‘proﬁt squeeze’ from
+increased international competition during negotiations with
+unions. In this scenario, unions, cognizant of their severely com-
+promised bargaining position, are wary of strikes and opt to
+concede at the bargaining table in order to preserve domestic
+employment.
+
+Hypothesis 2: However, understanding that country-speciﬁc institu-
+tional features, such as union density, do play a role in determin-
+ing how macroeconomic processes affect bargaining and other
+labor market phenomena, we would expect to ﬁnd the negative
+effects of globalization on strikes to be particularly acute in coun-
+tries where labor movements are weaker and where labor markets
+are not highly ‘institutionalized’. Countries with strong labor
+movements would either not display a signiﬁcant relationship
+between globalization and strike rates or would display a positive
+relationship as globalization erodes the institutions that constrain
+worker militancy.
+
+Hypothesis 3: Because Tsebelis and Lange (1995) demonstrate that
+not only does the level of labor strength matter in determining
+the behavior of employers and workers, and by extension whether
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+298
+
+Economic and Industrial Democracy 26(2)
+
+or not a strike will occur, but also the direction of change of labor
+strength over time is crucial, we would expect to see a positive
+relationship between strike rates and globalization in countries
+where union density is decreasing from an already high level or
+increasing from a moderate to low level. We would expect to see
+no relationship or a negative relationship between globalization
+and strike rates in countries where union density is increasing
+from a high base or decreasing from a moderate to low base.
+
+The analysis involves observations in all 15 cases for the years
+1952–2001, yielding a total number of 669 observations for which
+complete data are available. The Appendix details the sources and
+calculation procedures for all data. The core analysis consists of
+seven regression models, one aggregate and six sorted, and involves
+the following variables:
+
+Strikerate (strike rate) is the dependent variable of the analysis
+and is calculated as the annual total number of days, per capita,
+lost to strikes and lockouts nationwide in a given year from 1952
+to 2001 in the 15 countries examined.4
+
+Globalization, the primary independent variable, is operationa-
+lized as an index (Globalization) composed of three indicators of
+economic globalization: a measurement of a country’s international
+exports and imports as a percentage of gross domestic product; a
+measurement of the total yearly direct5 and portfolio investment
+abroad as a percentage of gross domestic product; and Dennis
+Quinn and Carla Inclan’s 1997 index of ﬁnancial capital control
+openness (see Appendix). Given the hypothesized importance of
+the effects of globalization on union bargaining strength vis-a-vis
+employers, particularly given that employer proﬁt-squeezes due to
+increased competition with imports and opportunities for employers
+to outsource abroad to lower costs often work in tandem, it is useful
+to consider an indexed measure of globalization that includes trade
+as well as capital investment. To assess the role played by country-
+speciﬁc labor market institutions or other features that may affect
+labor’s power, I examine union density levels (Density), the degree
+of union centralization (Central) and the degree of left party domi-
+nance (LeftPart) over parliamentary governing seats and govern-
+ment portfolios in the 15 countries between 1952 and 2001.
+
+The ﬁrst institutional predictor, union density, is the measurement
+of the percentage of the national workforce that is unionized as
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+299
+
+coded in Golden et al.’s (2002) data set on union centralization as
+‘totden’. The second institutional predictor, the degree of union
+centralization, is a measurement also derived from the Golden et
+al. data set – coded by the investigators as ‘coninv’ – that rates the
+level of involvement of union confederations in wage setting using
+an index between 1 and 11. The third institutional predictor, the
+degree of left party (LeftPart) dominance over national governments
+and legislatures, is a measurement of the ‘center of gravity’ in terms
+of right–left dominance of national governments calculated as the
+difference between the percentage of cabinet portfolios, governing
+seats and legislative seats held by ‘left’ and ‘right’ parties in the
+15 countries using Swank’s 1999 data set on partisanship, supple-
+mented by recent electoral data (see Appendix).
+
+Expectations about union density and globalization as predictors
+are covered in the hypotheses. Centralization of wage bargaining is
+assumed to be a negative predictor of strike rates mainly because
+peak-level bargaining agents exert signiﬁcant disciplinary power
+over local actors and most peak wage pacts have strong labor
+peace clauses attached to them6 (Calmfors and Drifﬁll, 1988).
+Whether or not the degree of left party power is a signiﬁcant predic-
+tor of strike rates, and whether it is a positive or negative predictor,
+should largely rest on the overall political conﬁguration of distribu-
+tional conﬂicts in a country, and may pattern somewhat the effects
+of union density on strike rates as indicated previously. Countries
+with hegemonic left, labor-allied parties that have worked with
+unions to construct pacted, corporatist bargaining structures, for
+example, again, the Nordic countries, will likely display a negative
+relationship between left party power and strike rates (Western,
+1997). In these countries, strong left parties have successfully
+relocated distributional conﬂicts from the workplace to the political
+system and have thereby been able to foster industrial peace.
+Countries where the political left is not hegemonic, or where it is
+junior to center or right parties, may either have no signiﬁcant
+relationship or a positive relationship with strike rates. In the case
+of the latter, the assumption of power by a left party might either
+signal to workers that the time is opportune to strike before the
+political climate changes or may provide workers the political space
+to conduct strikes.
+
+The remaining variables are all
+
+independent macroeconomic
+control variables. IndEmpl, or change in the percentage of the
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+300
+
+Economic and Industrial Democracy 26(2)
+
+active workforce employed in manufacturing, measures the rate of
+deindustrialization in the countries examined. This variable is con-
+sidered to test the thesis put forth by Piven (1992) that the decline
+of industrial employment, or ‘deproletarianization’, is the cause
+for the decline of the postwar hegemony of social democracy, the
+core of which is the provision of ‘social peace’ and a moderation
+of industrial conﬂict in exchange for collective bargaining rights
+for workers and state-provided social welfare. However,
+the
+relationship between deindustrialization and strike rates is likely
+to be ambiguous. While a declining manufacturing workforce may
+result in low unionization rates (Visser, 1991; Troy, 1990; Bell,
+1973), as mentioned previously this could reduce strike rates in
+countries with already low union density or it could increase strike
+rates in countries where high union density fosters labor peace.
+Also, deindustrialization is related to sectoral employment changes,
+and this could wash out any effects on strike rates if the concentra-
+tion of jobs in an economy moves from the private manufacturing
+sector to, for example, the public sector, which may itself be even
+more strike-prone.
+
+Previous empirical studies seeking to explain the diversity of strike
+activity among industrialized countries undertaken by Cameron
+(1984), Korpi and Shalev (1979, 1980) and Hibbs (1978) consider
+several contributory factors related to welfare states, wages and
+labor market policy. The overall results yielded by these studies is
+that in countries that exhibit substantial public investment in
+social resources, strike activity will be shorter and less frequent.
+I therefore consider welfare state and wage factors in my analysis
+by using two dependent control variables: StateGDP and Real-
+Wages. The ﬁrst of these measures the percentage of gross domestic
+product comprised by government social spending per year to deter-
+mine the effects of government social spending on strike rates. The
+second measures the annual percentage increase in mean real
+wages to determine whether rising (or stagnating) real wages are
+related to decreased (or increased) strike activity. Given that rising
+real wages and state intervention in the economy are factors likely
+to protect workers’ real material resources, both are likely to
+foster labor quiescence and to be negative predictors of strike rates.
+My analysis includes three additional macroeconomic control
+variables: Unemployment, or the national unemployment rate;
+GDPGrowth, or the annual growth rate for gross domestic product;
+and Inﬂation, or the annual inﬂation rate. All three of these variables
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+301
+
+are linked by scholars to strike activity and all three have been
+demonstrated by other scholars to be positive predictors of strike
+activity (Ingram et al., 1993; Kalecki, 1943; Rees, 1952).7
+
+Results
+
+The results of the seven regression models are displayed in Tables 3
+through 5. Model 1 is displayed in Table 3, and it provides evidence
+supporting the ﬁrst hypothesis, that globalization is negatively
+related to strike rates in the aggregate. In Model 1, the independent
+variable Globalization is a signiﬁcant negative predictor of strike
+rates and indeed has the largest coefﬁcient out of any of the variables
+in the model, signiﬁcant or not. Union centralization is also a signi-
+ﬁcant negative predictor of strike rates, as expected given the litera-
+ture on centralization and wage restraint (Calmfors and Drifﬁll,
+
+Regression Model 1, Aggregate Analysis of Globalization, Union Density and Strike
+
+TABLE 3
+
+Rates
+
+DV: Strikerate
+
+Globalization
+
+Density
+LeftPart
+Central
+
+IndEmpl
+StateGDP
+RealWages
+Unemployment
+GDPGrowth
+Inﬂation
+
+Lagged DV
+
+N
+R2
+
+1
+
+B
+
+(SE)
+
+(20.125)
+
+(.803)
+(11.316)
+(4.363)
+
+(3.690)
+(1.096)
+(3.062)
+(4.492)
+(4.472)
+(3.076)
+
+(32.983)
+
+ 44.876*
+  .049
+ .405
+ 13.409*
+ 7.284*
+ 2.226*
+ 15.079*
+ 10.404*
+  2.902
+ 26.743*
+ 13.889
+
+669
+.172
+
+All coefﬁcients are unstandardized B measurements; standard errors given in
+parentheses.
+* indicates signiﬁcance at the p ¼ :05 level or below.
+Collinearity statistics indicate tolerance levels above .10 and VIF statistics below 10.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+302
+
+Economic and Industrial Democracy 26(2)
+
+1988). All of the macroeconomic independent variables, except
+GDPGrowth, are also signiﬁcant predictors of strike rates in the
+expected manner. In the aggregate, IndEmpl is a signiﬁcant negative
+predictor, thus not eliminating the hypothesis that deindustrializa-
+tion erodes the collective action power of workers posited by
+Visser (1991), Troy (1990) and Bell (1973). The degree of left party
+dominance (LeftPart), however, is not signiﬁcant.
+
+In Model 1 union density itself is not signiﬁcant. This result sug-
+gests that the mechanism by which globalization is linked to labor
+quiescence, put forth in the ﬁrst hypothesis, is dependent on institu-
+tional conﬁgurations that are not addressed in the aggregate model.
+The possibility that the relationship between globalization, union
+density and strike rates is non-monotonic, rather than linear, in
+the manner presented by Tsebelis and Lange (1995) and Shalev
+(1992) is still intact and is addressed in Models 2 though 7 through
+the process of splitting the ﬁle to expose how the level of union
+density and change in union density might mediate the way in
+which globalization affects strikes.
+
+It should also be noted that a large number, seven out of 11, inde-
+pendent variables in the model are signiﬁcant, and that some of
+them, mainly the macroeconomic variables, could theoretically be
+predictors of each other. This raises the question of multicollinearity
+in the model. However, collinearity tests on the model produce
+tolerance levels above .10 and VIF statistics below 10, above and
+below the acceptable thresholds. Collinearity statistics are likewise
+run on the remainder of the models (numbers 2 through 7) and
+they produce the same results, indicating that multicollinearity is
+not present.
+
+Table 4 presents the results of Models 2 and 3, which divide the
+data set into ‘high union density’ and ‘low union density’ sets.
+These sets are created by sorting the cases into those with union
+density rates that exceed and those that are below the median
+(39.1) for the entire data set. In some instances, the 50 observations
+that comprise an entire country (one observation per year, 1952–
+2001) were sorted into one set, while in others, country observations
+were sorted into different sets. The total number of observations is
+roughly equal between the sets: 321 for high density and 347 for
+low density. The results do reveal that globalization bears a different
+relationship to the observations depending on the set: it is a signiﬁ-
+cant, negative predictor with a rather large coefﬁcient in the low
+density set while it is not signiﬁcant though positive in the high
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+303
+
+Regression Models 2 and 3, Globalization and Strike Rates in High and Low Density
+
+TABLE 4
+
+Cases
+
+2
+
+High Density
+
+3
+
+Low Density
+
+B
+
+(SE)
+
+B
+
+(SE)
+
+34.683
+ 25.142 
+* 13.664* 
+
+(46.477)
+
+(16.697)
+(5.725)
+
+* 65.967*  (27.244)
+
+26.380
+ 7.630 
+* 20.034* 
+*  4.706* 
+* 18.812* 
+
+6.525
+1.295
+
+*30.862*
+
+(15.405)
+(7.090)
+
+(6.033)
+(2.092)
+(4.119)
+(7.660)
+(5.999)
+(5.105)
+
+7.126
+.127
+* 9.287*
+*13.329*
+
+.855
+
+*26.906*
+ 18.997 
+
+(5.312)
+(1.481)
+(4.587)
+(6.233)
+(7.069)
+(3.900)
+
+DV: Strikerate
+
+Globalization
+
+LeftPart
+Central
+
+IndEmpl
+StateGDP
+RealWages
+Unemployment
+GDPGrowth
+Inﬂation
+
+Lagged DV
+
+N
+R2
+
+(43.650)
+
+59.130
+
+(48.925)
+
+321
+.182
+
+347
+.233
+
+All coefﬁcients are unstandardized B measurements; standard errors given in
+parentheses.
+* indicates signiﬁcance at the p ¼ :05 level or below.
+Collinearity statistics indicate tolerance levels above .10 and VIF statistics below 10.
+
+density set. In the high density set, furthermore, union centralization
+is a negative predictor of strike rates while it is not signiﬁcant in the
+low density set. The macroeconomic control variables also have
+different relationships to strike rates in the two sets, with the excep-
+tions of growth of real wages and inﬂation, which are consistent
+across the two sets: negative in the case of real wage growth and
+positive for inﬂation. While both IndEmpl and StateGDP are signi-
+ﬁcant negative predictors in the low density set, they are neither
+signiﬁcant nor do they have negative coefﬁcients in the high density
+set. While unemployment is a signiﬁcant positive predictor in the
+high density set, it is not signiﬁcant in the low density set.
+
+Models 4 through 7, displayed in Table 5, build off of the results
+of Models 2 and 3 and try to capture the non-monadic structure pre-
+dicted by Tsebelis and Lange (1995).
+
+The aggregate data set is now sorted into countries, rather than by
+case, based on the average level of union density as compared to the
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+304
+
+Economic and Industrial Democracy 26(2)
+
+Regression Models 4 through 7, Globalization and Strike Rates and Change in High and
+
+Low Density Countries
+
+TABLE 5
+
+5
+
+High-
+
+Decrease
+
+B
+
+(SE)
+
+6
+
+Low-
+
+Increase
+
+B
+
+(SE)
+
+7
+
+Low-
+
+Decrease
+
+B
+
+(SE)
+
+278.695*  201.318*  * 32.535* 
+(63.085)
+ 29.397 
+(16.747)
+
+69.879
+(54.597)
+
+7.383
+(5.925)
+
+(99.565)
+
+(10.834)
+
+10.354
+(16.440)
+
+* 8.082* 
+
+(2.669)
+
+* 51.852*  * 5.066* 
+
+6.357
+(13.648)
+
+*18.871*
+(8.774)
+
+.924
+(1.143)
+ 16.182 
+(8.669)
+ 5.258 
+(10.954)
+ 8.758 
+(7.871)
+
+*34.829*
+(6.129)
+
+(25.993)
+ 2.734 
+(7.216)
+
+*98.583*
+(26.371)
+ 48.072 
+(26.020)
+
+16.269
+(16.016)
+
+16.677
+(14.069)
+
+(2.349)
+
+.741
+(.919)
+
+* 10.786* 
+
+(1.656)
+
+* 7.785* 
+
+(3.227)
+
+* 4.604* 
+
+(2.202)
+
+*6.067*
+(1.987)
+ 5.852
+(21.502)
+
+235
+.327.
+
+DV: Strikerate
+
+Globalization
+
+LeftPart
+
+Central
+
+IndEmpl
+
+StateGDP
+
+RealWages
+
+Unemployment
+
+GDPGrowth
+
+Inﬂation
+
+Lagged DV
+
+N
+R2
+
+4
+
+High-
+
+Increase
+
+B
+
+(SE)
+
+32.146
+(42.762)
+
+20.888
+(26.272)
+ 5.269 
+(26.272)
+
+*23.743*
+(10.499)
+ 2.909 
+(3.648)
+
+2.328
+(5.477)
+
+7.135
+(6.980)
+ 6.906 
+(9.355)
+
+5.184
+(5.279)
+ 29.777 
+(43.010)
+
+199.580*
+(98.324)
+
+117.707
+(106.411)
+
+191
+.084.
+
+131
+.386.
+
+110
+.361.
+
+All coefﬁcients are unstandardized B measurements; standard errors given in
+parentheses.
+* indicates signiﬁcance at the p ¼ :05 level or below.
+Collinearity statistics indicate tolerance levels above .10 and VIF statistics below 10.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+305
+
+median and the direction of change, increasing or decreasing, of
+union density experienced by the country. For the latter distinction,
+the sorting is completed by subtracting the average union density
+level for the years 1980–2001 from the average union density level
+for the years 1952–1979 for each country. The purpose of this is to
+capture the change of union density levels before and after the
+onset of globalization. For the purposes of my analysis, I use
+Visser’s (1994) estimate of 1980 as the starting point of globalization,
+as 1980 marks the year by which most industrialized countries com-
+pletely liberalized their national capital accounts and foreign invest-
+ment policies.8 Also, by 1980 the full impact of the collapse of the
+Bretton-Woods ﬁxed exchange rate system was felt by most indus-
+trialized countries and the rate of both international trade and
+investment began to rapidly increase. The results of the sort are
+presented in Figure 1.
+
+Models 4 through 7 empirically test
+
+the hypothetical non-
+monotonic relationship between ‘labor strength’ and strike activity
+employed by Tsebelis and Lange (1995) and Shalev (1992), and
+the results seem to partially validate their hypotheses. In countries
+where union density is high and increases from the pre- to the
+post-globalization period, globalization is not a signiﬁcant predictor
+
+Sorting Countries by Level of and Change in Union Density
+
+FIGURE 1
+
+(average density 1980–2001)   (average density 1952–80)
+
+Change in Union Density
+
+Increase
+
+Decrease
+
+High
+
+Union
+Density
+
+Belgium
+Denmark
+Finland
+Norway
+Sweden
+
+Australia
+Austria
+United Kingdom
+
+(191) Switzerland (131)
+
+Low
+
+Canada
+Italy
+
+France
+Germany
+Japan
+Netherlands
+
+Sweden
+
+(110) Switzerland (235)
+
+Note: Number of observations per set is given in parentheses.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+306
+
+Economic and Industrial Democracy 26(2)
+
+of strike rate. Instead, only IndEmpl is, and it is a positive predictor.
+In countries where union density is high but decreases in the post-
+globalization era, globalization is a signiﬁcant but positive predictor
+of strike rates, with an extremely large coefﬁcient. IndEmpl is a
+positive predictor of strike rates as is inﬂation. For countries quali-
+ﬁed by low density rates, but where union density increases from the
+pre- to the post-globalization time-period, globalization is a signi-
+ﬁcant negative predictor of strike rates, as is IndEmpl. However,
+growth of real wages is a signiﬁcant positive predictor. Finally, in
+countries with low average union density rates that decrease from
+the pre- to the post-globalization period, globalization is also a
+signiﬁcant negative predictor. Union centralization is as well,
+along with a host of macroeconomic control variables: IndEmpl,
+growth of real wages, unemployment, growth of GDP. Inﬂation is
+also signiﬁcant for this group, but it is positive.
+
+Conclusion
+
+Models 4 through 7 present the most comprehensive picture of how
+globalization affects strikes in the 15 countries in the analysis and
+with Models 1 through 3, some signiﬁcant conclusions can be
+yielded.
+
+First, in the aggregate, globalization (measured in terms of inter-
+national trade, investment and liberalization of ﬁnancial controls) is
+negatively related to union militancy, but is joined by a large number
+of other macroeconomic variables also related to strikes. But it
+is generally accepted that macroeconomic factors affect unions
+and workers differently in different countries due to domestic-level
+labor market
+institutions, and the aggregate model does not
+adequately capture this.
+
+Second, where labor is ‘strong’, using union density as the primary
+measurement of union strength, globalization is not a signiﬁcant
+factor in determining strikes. However, where union density is
+low, globalization is a signiﬁcant contributor to labor quiescence.
+These ﬁndings are consistent with Shalev’s (1992). Other macro-
+economic variables that might affect strike activity are signiﬁcant
+in both high and low density countries, while one institutional vari-
+able, degree of union centralization, reduces labor militancy in coun-
+tries with high levels of union density.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+307
+
+Finally, considering both the strength of labor and change in
+labor strength, strikes are almost wholly unaffected by macro-
+economic forces in countries where unions are strong and have
+grown despite globalization. Where union density is on average
+high but has decreased during globalization, globalization is a
+highly signiﬁcant contributor to union militancy, as are two other
+macroeconomic variables, growth of industrial employment and
+inﬂation to a much lesser extent. This ﬁnding is most consistent
+with the result found by Tsebelis and Lange (1995): that strikes
+increase in countries in which labor is ordinarily a strong player,
+but is becoming less powerful.
+
+However, the results deviate from Tsebelis and Lange’s ﬁndings in
+the case of countries where unions are not as strong, but have experi-
+enced growth in the post-1980 period. For these countries, globaliza-
+tion is a (quite strong) force promoting quiescence rather than
+militancy. But the curvilinear relationship described by Tsebelis and
+Lange is borne out again when looking at countries where union
+density is low and has become lower in the post-globalization era.
+In these countries, globalization is also related to labor quiescence.
+But also noteworthy is the sheer number of other macroeconomic
+variables that also are negatively related to strikes. The latter ﬁnding
+supports previous ﬁndings by Wallerstein and Western (2000) and
+Western (1997), among others, demonstrating that the degree to
+which macroeconomic forces affect unions and workers is deter-
+mined by domestic labor market institutions such as the structure
+of wage bargaining, union density levels, the position of social-
+democratic parties and the provision and management of public
+selective beneﬁts such as unemployment insurance.
+
+*
+
+*
+
+*
+
+These results underscore the argument that institutional conﬁgura-
+tions of labor markets matter. They play a role in determining
+how broad macroeconomic forces affect domestic actors in the
+wage bargaining process, of which strikes are an important compo-
+nent. The results also facilitate the argument that change – of insti-
+tutional features and the position of actors in political economies
+such as labor unions – is also critical. Without consideration of
+both static institutional conﬁgurations and dynamic actors within
+those conﬁgurations, much of the non-linear effects of economic
+processes on economies can be missed.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+308
+
+Economic and Industrial Democracy 26(2)
+
+Data Appendix: Variables
+
+Strikerate = (days lost to strikes and lockouts in all industries)/
+
+(total working population)
+
+Source: International Labor Organization (various years) Yearbook
+
+of Labour Statistics.
+
+Globalization = [(exports + imports)/GDP] + [(direct investment
+abroad + portfolio investment abroad + foreign direct invest-
+ment)/GDP] + [(Quinn and Inclan index)/14]
+
+Sources: International Monetary Fund (various years) International
+Financial Statistics Yearbook; Dennis Quinn and Carla Inclan’s
+‘Measuring Financial Openness’ database provided by Quinn to
+author.
+
+Density = (unionized workers)/(total workers)
+Sources: All countries 1952–2000: Miriam Golden, Peter Lange and
+Michael Wallerstein (2002)
+‘Union Centralization among
+Advanced Industrial Societies: An Empirical Study’, data set
+available at: www.shelley.polisci.ucla.edu/data/; European coun-
+tries 1992–2000: Bernhard Ebbinghaus and Jelle Visser (2000)
+Trade Unions in Western Europe Since 1945, London: Macmillan
+Reference; Australia 1992–2001: Australian Bureau of Statistics
+(2003) Employee Earnings, Beneﬁts and Trade Union Membership
+(August); Austria 1997–2001: European Industrial Relations
+Observatory (2003) ‘Structures and Patterns in Collective Bar-
+gaining Reviewed’; Canada 1992–2001: Statistics Canada (2003)
+The Labour Force Survey, Labor Statistics Division; Denmark
+1997–2001: Statistiske Departement (various years) Statistical
+Yearbook, Copenhagen; Finland 1997–2001: Statistical Yearbook
+of Finland (various years), Helsinki: Tilastokeskus; Germany
+1997–2001: Statistiches Bundesamt (2002) Statistisches Jahrbuch
+fur die Bundesrepublik Deutschland; Netherlands 1997–2001:
+Centraal Bureau voor de Statistiek (2002) ‘Ledentallen van Vak-
+verenigingen Aangesloten bij Vakcentrales’, Voorbur/Heerlen;
+Norway 1996–2001: Statistics Norway (various years); Sweden
+1997–2000: Statistical Yearbook of Sweden (various years);
+Switzerland, 1997–9: Annuaire Statisique de la Suisse (various
+years).
+
+LeftPart = [(percent of portfolios held by left parties) + (percent of
+governing seats held by left parties) + (percent of total seats in
+national legislatures held by left parties)] – [(percent of portfolios
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+309
+
+held by right parties) + (percent of governing seats held by right
+parties) + (percent of total seats in national legislatures held by
+right parties)]
+
+Sources: Duanne Swank (1999) ‘Pooled Time Series Data Base on
+the Comparative Political Economy of Advanced Capitalist
+Economies’, electronic database, Marquette University; for years
+2000 and 2001, author supplemented the Swank data using
+‘Elections Around the World’ online database at www.election-
+world.com
+
+Note: For more information on the use of the partisan variables see
+
+Swank (1998).
+
+Central = Index measurement, labeled by principal investigators as
+‘CONINV’, between 1 and 11, where 1 indicates the lowest level of
+centralization (union confederation completely uninvolved in
+wage setting) and 11 indicates the highest level of centralization
+(union confederation negotiates national wage agreements with
+limits on supplemental bargaining).
+
+Source: Miriam Golden, Peter Lange and Michael Wallerstein
+(2002)
+‘Union Centralization among Advanced Industrial
+Societies: An Empirical Study’, data set available at www.shelley.
+polisci.ucla.edu/data/
+
+IndEmpl = (workers employed in manufacturing)/(total workforce)
+Source: United Nations Industrial Development Organization
+(UNIDO) ‘UNIDO Industrial Statistics Database 3-Digit Level
+of ISIC Code’ (2002) from the International Statistics Yearbook
+(CD-Rom)
+
+StateGDP = (total spent by state on social welfare)/GDP
+Source: World Bank (various years) World Tables and International
+Monetary Fund (various years) International Financial Statistics
+Yearbook.
+
+RealWages = annual growth of real wages for all workers
+Source: International Labor Organization (various years) Yearbook
+
+of Labour Statistics.
+
+Unemployment = national unemployment rate
+Source: International Labor Organization (various years) Yearbook
+
+of Labour Statistics.
+
+GDPGrowth = annual growth of national gross domestic product
+Source: International Monetary Fund (various years) International
+
+Financial Statistics Yearbook.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+310
+
+Economic and Industrial Democracy 26(2)
+
+Inﬂation = national inﬂation rate
+Source: US Bureau of Labor Statistics ‘Consumer Price Indices,
+Sixteen Countries, 1950–2002’, data available at: www.bls.gov/
+ﬂsdata.htm
+
+Notes
+
+The author would like to thank several people for their help on this article. The ﬁrst is
+Ms Lyda Fontes, who served as the research assistant and helped in data collection.
+The author is also indebted to Marcus Crepaz and Andy Martin, both of whom
+served as discussants on panels where the study was presented as a paper and provided
+useful feedback, as well as Michael Shalev who provided valuable feedback and advice
+on a later iteration of the article.
+
+1. Brecher concludes his exhaustive historical study of industrial protest in the US
+with a quote by former United Auto Workers’ president Walter Reuther, ‘There is a
+new breed of workers in the plant who is less willing to accept corporate decisions that
+pre-empt his own decisions’ (Brecher, 1972: 264). Brecher goes on to quote several
+other sources that indicate that the ‘new’ generation of workers in American industry
+are far more willing than previous generations to use strikes to voice disagreement
+with management, to facilitate wage and other workplace demands and to communi-
+cate political messages to society at large. Brecher extensively documents the intensi-
+ﬁcation of industrial conﬂict – both through authorized and illegal strike activity –
+against employers in all sectors of the economy; and also to an extent against the
+union establishment itself.
+
+2. Though Taylor Dark’s (1999) innovative work The Unions and the Democrats:
+An Enduring Alliance points out that during the 1993 NAFTA debate in the US oppo-
+sition to the trade agreement was divided between workers in exposed and private
+sectors and workers in non-tradable public and service sectors. Dark is correct to
+stress that sectoral distinctions are important in determining the reactions of orga-
+nized labor to globalization, however several examples indicate that traditionally
+unexposed sectors are likewise susceptible to the pressures of globalization. For
+example, during the 1995–6 General Strike in France, the public transportation
+workers’ union led the popular opposition against ﬁscal austerity measures instituted
+by the Chirac government. In the conﬂict, international economic forces were a key
+component alongside austerity. The striking union and its allies argued that a host
+of regional and global pressures, from France’s plan to join the European Monetary
+Union to increased relocation of French industry abroad in search of cheaper labor
+costs, had prompted the budget cuts to social services and public sector wages and
+came to regard globalization as an integral component of the threat to the French
+welfare and wage system.
+
+3. See Shalev (1978: footnote 1).
+4. For a full discussion of the various measurements of strike activity used by
+scholars who study industrial conﬂict, consult Korpi and Shalev (1980). The measure-
+ment used in this study, referred to by Shalev (1992) as ‘relative volume’, is best suited
+for aggregate analysis of strikes because it combines the most important measure-
+ments of strike activity: frequency, size and duration.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+311
+
+5. For the purposes of this study, I employ a deﬁnition of direct investment abroad
+that corresponds with that of the US Department of Commerce: the ownership or
+control by a country’s resident of at least 10 percent of the voting securities of an
+incorporated foreign business enterprise; see Malatoni (1997).
+
+6. Though Wallerstein and Western (2000) note that under centralized bargaining
+systems, repudiation of peak agreements by locals or groups of workers is a possible
+outcome.
+
+7. However, in their empirical study of the incidence of strikes in British manu-
+facturing, Ingram et al. (1993) uncovered a counter-cyclical relationship between
+unemployment and unions’ willingness to strike. As unemployment worsened, so
+did strike activity in contrast to theoretical expectations and some empirical studies
+of strike activity in the US.
+
+8. Denis Quinn and Carla Inclan’s data set ‘Measuring Financial Openness’ also
+validates 1980 as a threshold year for the liberalization of international capital
+markets.
+
+References
+
+Ashenfelter, Orley and George Johnson (1969) ‘Bargaining Theory, Trade Unions
+
+and Industrial Strike Activity’, American Economic Review 59: 35–49.
+
+Ashenfelter, Orley and John H. Pencavel (1969) ‘American Trade Union Growth:
+
+1900–1960’, Quarterly Journal of Economics 83: 434–48.
+
+Batstone, Eric (1985) ‘International Variations in Strike Activity’, European Socio-
+
+logical Review 1(1): 46–64.
+
+Bell, Daniel (1973) The Coming of Post-Industrial Society: A Venture in Social Fore-
+
+casting. New York: Basic Books.
+
+Brecher, Jeremy (1972) Strike! San Francisco: Straight Arrow Books.
+Budd, John W. (1994) ‘The Effect of Multinational Institutions on Strike Activity in
+
+Canada’, Industrial and Labor Relations Review 47(3): 401–16.
+
+Calmfors, Lars and John Drifﬁll (1988) ‘Bargaining Structure, Corporatism and
+
+Macroeconomic Performance’, Economic Policy 3: 13–61.
+
+Cameron, David R. (1984) ‘Social Democracy, Corporatism and Labour Quiescence
+in Advanced Capitalist Society’, pp. 143–78 in John H. Goldthorpe (ed.) Order and
+Conﬂict in Contemporary Capitalism. Cambridge: Cambridge University Press.
+
+Dark, Taylor (1999) The Unions and the Democrats: An Enduring Alliance. Ithaca,
+
+NY: Cornell University Press.
+
+Dunlop, John T. (1949) ‘The Development of Labor Organizations: A Theoretical
+Framework’, pp. 163–93 in R. Lester and J. Shister (eds) Insights Into Labor
+Issues. New York: Macmillan.
+
+Ebbinghaus, Bernhard and Jelle Visser (2000) Trade Unions in Western Europe Since
+
+1945. London: Macmillan.
+
+Freeman, Joshua B. (1997) ‘The Strike Weapon: Can it Still Work?’, Dissent 44(2):
+
+60–5.
+
+Freeman, Richard B. (1989) On the Divergence in Unionism in Developed Countries,
+NBER Working Paper 2817. Cambridge, MA: National Bureau of Economic
+Research.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+312
+
+Economic and Industrial Democracy 26(2)
+
+Garrett, G. and C. Way (1995) ‘The Sectoral Composition of Trade Unions, Corpor-
+atism and Economic Performance’, pp. 38–61 in B. Eichengreen, J. Frieden and
+J. von Hagen (eds) Monetary and Fiscal Policy in an Integrated Europe. Berlin:
+Springer Verlag.
+
+Golden, Miriam, Peter Lange and Michael Wallerstein (2002) ‘Union Centralization
+among Advanced Industrial Societies: An Empirical Study’, data set available at:
+shelley.sscnet.ucla.edu/data
+
+Grifﬁn, L.M., H.J. McCammon and C. Botsko (1990) ‘The ‘‘Unmaking’’ of a Move-
+ment?: The Crisis of US Trade Unions in Comparative Perspective’, pp. 169–94 in
+M. Hallinan, D. Klein and J. Glass (eds) Change in Societal Institutions. New York:
+Plenum Press.
+
+Hibbs, Douglass A. (1978) ‘On the Political Economy of Long-Run Trends in Strike
+
+Activity’, British Journal of Political Science 8: 154.
+
+Hines, A.G. (1964) ‘Trade Unions and Wage Inﬂation in the United Kingdom 1948–
+
+1962: A Disaggregated Study’, Economics Journal 79: 66–89.
+
+Howell, Chris (1995) ‘Trade Unions and the State: A Critique of British Industrial
+
+Relations’, Political Sociology 23: 149–83.
+
+Hyman, Richard (1972) Strikes. London: Fontana.
+Hyman, Richard (1975) Industrial Relations: A Marxist Introduction. London:
+
+Macmillan.
+
+Ingram, Peter, David Metcalf and Jonathan Wadsworth (1993) ‘Strike Incidence in
+British Manufacturing in the 1980s’, Industrial and Labor Relations Review 46(4):
+704–17.
+
+Iversen, Torben (1996) ‘Power, Flexibility and the Breakdown of Centralized Wage
+Bargaining: The Cases of Denmark and Sweden in Comparative Perspective’,
+Comparative Politics 28: 399–436.
+
+Kalecki, Michal (1943) ‘Political Aspects of Full Employment’, Political Quarterly
+
+14(4): 322–31.
+
+Katzenstein, Peter (1985) Small States in World Markets: Industrial Policy in Europe.
+
+Ithaca, NY: Cornell University Press.
+
+Korpi, Walter (1978) The Working Class in Welfare Capitalism. London: Routledge.
+Korpi, Walter and Michael Shalev (1979) ‘Strikes, Industrial Relations and Class
+
+Conﬂict in Capitalist Societies’, British Journal of Sociology 30: 172.
+
+Korpi, Walter and Michael Shalev (1980) ‘Strikes, Power and Politics in the Western
+
+Nations, 1900–1976’, Political Power and Social Theory 1: 301–34.
+
+Lange, Peter and Lyle Scruggs (1999) ‘Where Have All The Members Gone?: La
+Sindacalizzazione nell’era Della Globalizzazione’, Stato e Mercato 55 (April): 39–
+78.
+
+Lange, Peter, Michael Wallerstein and Miriam Golden (1995) ‘The End of Corporat-
+ism?: Wage Setting in the Nordic and Germanic Countries’, pp. 76–100 in Sanford
+Jacoby (ed.) Workers of Nations: Industrial Relations in a Global Economy. Oxford:
+Oxford University Press.
+
+McKeown, T. (1999) ‘The Global Economy, Post-Fordism and Trade Policy in
+Advanced Capitalist States’, pp. 11–35 in H. Kitschelt, P. Lange, G. Marks and
+J.D. Stephens (eds) Continuity and Change in Contemporary Capitalism. Cambridge:
+Cambridge University Press.
+
+Malatoni, Raymond (1997) ‘US Multinational Companies: Operations in 1995’,
+
+Survey of Current Business 44 (October): 68.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+Piazza: Globalizing Quiescence
+
+313
+
+Pedersen, P.J. (1982) ‘Union Growth in Denmark: 1911–39’, Scandinavian Journal of
+
+Economics 84: 583–92.
+
+Perusek, Glen and Kent Worcester (1995) ‘Patterns of Class Conﬂict in the United
+States Since the 1960s’, pp. 3–21 in Glen Perusek and Kent Worcester (eds)
+Trade Union Politics: American Unions and Economic Change, 1960s–1990s.
+Atlantic Highlands, NJ: Humanities Press.
+
+Piazza, James (2002) Going Global: Unions and Globalization in the United States,
+
+Sweden and Germany. Lanham, MD: Lexington Books.
+
+Piven, Frances Fox (1992) ‘The Decline of Labor Parties: An Overview’, pp. 1–19 in
+Frances Fox Piven (ed.) Labor Parties in Post-Industrial Societies. New York:
+Oxford University Press.
+
+Rees, Albert (1952) ‘Industrial Conﬂict and Business Fluctuations’, Journal of Politi-
+
+cal Economy 88(5): 371–82.
+
+Regalia, I., M. Regini and E. Reyneri (1978) ‘Labour Conﬂicts and Industrial Rela-
+tions in Italy’, pp. 101–58 in C. Crouch and A. Pizzorno (eds) The Resurgence of
+Class Conﬂict in Europe since 1968. London: Macmillan.
+
+Roomkin, Myron (1976) ‘Union Structure, Internal Control and Strike Activity’,
+
+Industrial and Labor Relations Review 29: 198–217.
+
+Ross, Arthur and Paul Hartman (1960) Changing Patterns of Industrial Conﬂict. New
+
+York: Wiley.
+
+Rothstein, Bo (1989) ‘Marxism, Institutional Analysis and Working-Class Power’,
+
+Political Sociology 18: 317–46.
+
+Rothstein, Richard (1997) ‘Union Strength in the United States: Lessons from the
+
+UPS Strike’, International Labour Review 136(4): 469–91.
+
+Schmitter, Phillippe (1981) ‘Interest Intermediation and Regime Governability in
+Contemporary Western Europe and North America’, pp. 285–327 in S. Berger
+(ed.) Organizing Interests in Western Europe. New York: Cambridge University
+Press.
+
+Shalev, Michael (1978) ‘Lies, Damned Lies and Strike Statistics: The Measurement of
+Trends in Industrial Conﬂict’, pp. 1–19 in Colin Crouch and Alessandro Pizzorno
+(eds) The Resurgence of Class Conﬂict in Western Europe since 1968, Vol. 1.
+London: Macmillan.
+
+Shalev, Michael (1983) ‘Strikes and the Crisis: Industrial Conﬂict and Unemployment
+
+in the Western Nations’, Economic and Industrial Democracy 4(4): 417–60.
+
+Shalev, Michael (1992) ‘The Resurgence of Labour Quiescence’, pp. 102–32 in Mario
+
+Regini (ed.) The Future of Labour Movements. London: Sage.
+
+Shorter, Edward and Charles Tilly (1974) Strikes in France: 1830–1968. Cambridge:
+
+Cambridge University Press.
+
+Snyder, David (1975) ‘Institutional Setting and Industrial Conﬂict: Comparative
+Analyses of France, Italy and the United States’, American Sociological Review
+40: 259–78.
+
+Swank, Duanne (1998) ‘Funding the Welfare State: Globalization and the Taxation of
+
+Business in Advanced Market Economies’, Political Studies 46(4): 671–92.
+
+Swenson, Peter (1989) Fair Shares: Unions, Pay and Politics in Sweden and West
+
+Germany. Ithaca, NY: Cornell University Press.
+
+Swenson, Peter (1991) ‘Bringing Capital Back In, or Social Democracy Reconsidered’,
+
+World Politics 43(4): 513–44.
+
+Therborn, Go¨ ran (2000) ‘Social Democracy in One Country?’, Dissent Fall: 59–65.
+Tilly, Charles (1978) From Mobilization to Revolution. New York: Random House.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+314
+
+Economic and Industrial Democracy 26(2)
+
+Tilly, Charles (1986) The Contentious French. Cambridge, MA: Belknap Press.
+Troy, L. (1990) ‘Is the US Unique in the Decline of Private Sector Unionism?’, Journal
+
+of Labor Research 11: 111–43.
+
+Tsebelis, George and Peter Lange (1995) ‘Strikes Around the World: A Game Theo-
+retic Approach’, pp. 101–25 in Sanford M. Jacoby (ed.) The Workers of Nations:
+Industrial Relations in a Global Economy. New York: Oxford University Press.
+
+Visser, Jelle (1991) ‘In Search of Inclusive Unionism’, Acta Sociologica 34(3): 234–5.
+Visser, Jelle (1994) ‘Union Organization, Why Countries Differ’, pp. 164–84 in
+J. Niland, R.D. Landsbury and C. Vervis (eds) The Future of Industrial Relations:
+Global Changes and Challenges. London: Sage.
+
+Visser, Jelle and Bernard Ebbinghaus (1999) ‘When Institutions Matter’, European
+
+Sociological Review 15(2): 135–58.
+
+Wallerstein, Michael and Bruce Western (2000) ‘Unions in Decline? What Has
+
+Changed and Why?’, Annual Review of Political Science 3(2): 355–78.
+
+Western, Bruce (1997) Between Class and Market: Postwar Unionization in the
+
+Capitalist Democracies. Princeton, NJ: Princeton University Press.
+
+Wood, Adrian (1994) North–South Trade: Employment and Inequality. Oxford:
+
+Clarendon Press.
+
+James A. Piazza
+is an assistant professor in the Department of
+Political Science at the University of North
+Carolina at Charlotte. His previous research
+on the topic of globalization and organized
+labor includes the book Going Global: Unions
+and Globalization in the United States, Sweden
+and Germany (Lanham, MD: Lexington
+Books, 2002) and an article titled
+‘De-Linking Labor: Labor Unions and Social
+Democratic Parties Under Globalization’,
+Party Politics 7(4), 2001: 413–36.
+
+Downloaded from 
+
+eid.sagepub.com
+
+ at Universitaet Osnabrueck on April 3, 2016
+
+

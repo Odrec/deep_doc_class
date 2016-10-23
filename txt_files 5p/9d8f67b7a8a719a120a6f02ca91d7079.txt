@@ -1,0 +1,437 @@
+ 
+ 
+ 
+ 
+
+BWL / Management Support und WI 
+
+Management Support Systems I – WS 2014/15 
+Übung Nr. 8 
+Bearbeitungszeit: 08. – 14. Dezember  2014 
+
+Personalisierung und Exception Reporting 
+
+mit Cognos 10 - Report Studio 
+
+Teil A: Personalisierte Berichte 
+
+Die  Produktmanager  des  Textilunternehmens  TexOS,  die  jeweils  für  eine  Sortimentsgruppe 
+verantwortlich  sind,  benötigen  Informationen  über  die  Entwicklung  ihrer  Umsatzzahlen  im 
+Vergleich zu den Planzahlen je Artikel- und Kundengruppe. Dieser Informationsbedarf soll den 
+Produktmanagern wieder mit Cognos Report Studio-basierten Standardberichten zur Verfügung 
+gestellt  werden.  Allerdings  ist  zu  beachten,  dass  den  einzelnen  Produktmanagern  nur 
+Informationen über ihre eigene Sortimentsgruppe bereitgestellt werden sollen.  
+
+Die Möglichkeit, für jede der 6 Sortimentsgruppen einen spezifischen Bericht zu erstellen, mag in 
+diesem  Beispiel  noch  praktikabel  erscheinen;  für  Unternehmen,  die  vielleicht  ca.  100  bis  1.000 
+Sortimentsgruppen  besitzen,  ist  dieses  Szenario  jedoch  keine  Alternative!  Report  Studio  bietet 
+deshalb  zwei  Möglichkeiten,  einen  einzigen  Bericht  so  zu  gestalten,  dass  die  jeweiligen 
+Produktmanager trotzdem nur die für sie bestimmten Daten sehen können: 
+
+1.  Definition eines sog. Security-Filters 
+2.  Distribution von Berichtsteilen an verschiedene Adressaten mittels Zielgruppenverteilung 
+
+1. Definition eines Security-Filters 
+
+Ein sog. Security-Filter hat die Aufgabe, in einem Report nur die Datensätze anzeigen zu lassen, 
+die  in  Zusammenhang  mit  einem  bestimmten  Report  Studio-User  stehen.  Dafür  stellt  Report 
+Studio  die  Makro-Funktion  CSVIdentityNameList  zur  Verfügung.  Diese  Funktion 
+liefert 
+Informationen über die Zugehörigkeit des angemeldeten Users zu Report Studio-internen und -
+externen Benutzergruppen bzw. -rollen. d.h., die Funktion gibt eine Liste mit den Bezeichnungen 
+aller Benutzergruppen und -rollen zurück, in denen der angemeldete User Mitglied ist. Damit hat 
+man nun die Möglichkeit, für jeden Datensatz einer Berichts-Abfrage zu überprüfen, ob der Wert 
+eines bestimmten Attributs der Berichts-Abfrage in der durch die Funktion CSVIdentityNameList 
+erstellten  Liste  (Benutzergruppen  und  -rollen)  enthalten  ist.  Ist  der  Wert  enthalten,  soll  der 
+entsprechende Datensatz in den Bericht übernommen werden, sonst nicht. 
+Erstellen  Sie  daher  einen  Bericht,  der  für  jeden  der  sechs  Produktmanager  nur  die  jeweils 
+relevanten Daten ausgibt. Dazu stehen in Report Studio folgende sechs User zur Verfügung: 
+
+Sortimentsgruppe 
+
+Produktmanager (User)  Kennwort 
+
+Benutzerklasse 
+
+Damenoberbekleidung  DOB 
+
+Herrenoberbekleidung  HOB 
+
+Kinderoberbekleidung  KOB 
+
+Marken Bademode 
+
+Sportbekleidung 
+
+Accessoires 
+
+MBM 
+
+SPB 
+
+ACC 
+
+DOB@MSWI  Damenoberbekleidung 
+
+HOB@MSWI  Herrenoberbekleidung 
+
+KOB@MSWI  Kinderoberbekleidung 
+
+MBM@MSWI  Marken Bademode 
+
+SPB@MSWI 
+
+Sportbekleidung 
+
+ACC@MSWI  Accessoires 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 8          
+ 
+
+Seite 1/6 
+
+Wichtige Hinweise und Tipps: 
+
+  Erstellen  Sie  zuerst  einen  Basis-Bericht  ohne  Filter  und  speichern  Sie  ihn  unter  zwei 
+verschiedenen  Bezeichnungen  ab.  Das  hat  den  Vorteil,  dass  dieser  Basis-Bericht  für  die 
+folgenden Aufgaben  wieder verwendet werden kann (erspart Arbeit!). 
+
+  Erstellen Sie einen Filter auf die Sortimentsgruppe und verwenden Sie dabei die Makro-
+
+Funktion CSVIdentityNameList nach folgender Syntax:: 
+[Attributname] IN (#CSVIdentityNameList(';')#) 
+
+ 
+  Wählen Sie im “Abfragen-Explorer” ihre Abfrage aus und setzen  Sie im Eigenschaften-
+Fenster die Verarbeitung auf „begrenzt lokal“, ansonsten kann die Zielgruppenverteilung 
+nicht ausgeführt werden. 
+
+  Wundern Sie sich nicht, falls unter  Ihrem Benutzer  Gxx keine Daten angezeigt  werden. 
+Dann funktioniert der Filter. Melden Sie sich als einer der Produktmanager an (am besten 
+in einem neuen Browser-Fenster) und überprüfen Sie, welche Daten angezeigt werden. 
+
+2. Zielgruppenverteilung 
+
+Unter  Zielgruppenverteilung  (engl.  bursting)  versteht  man  den  Prozess  der  einmaligen 
+Ausführung  eines  Berichts  und  die  anschließende  Aufteilung  der  Ergebnisse  zur  Verteilung  an 
+mehrere Empfänger, die jeweils nur eine bestimmte Teilmenge der Daten einsehen (dürfen). Die 
+jeweiligen  Benutzer  (z.B.  die  Produktmanager)  führen  dementsprechend  den  erstellten  Bericht 
+nicht  selber  aus,  wie  dies  bei  einem  Bericht  mit  einem  Security-Filter  der  Fall  ist.  Stattdessen 
+erhalten  sie  Zugriff  auf  eine  gespeicherte  Version  des  Berichts,  der  nur  die  für  sie  bestimmte 
+Teilmenge an Daten enthält. 
+
+Mögliche  Adressaten  der  Zielgruppenverteilung  können  neben  Report  Studio-internen  und  -
+externen  Benutzern  auch  E-Mail-Adressen  sein!  Diese  Aufgabe  beschränkt  sich  jedoch  auf  die 
+oben  angegebenen  Benutzerklassen  für  die  Produktmanager.  Im  Gegensatz  zu  den  Security-
+Filtern 
+reicht  bei  der  Zielgruppenverteilung  aber  keine  Namensgleichheit  zwischen 
+Benutzerklasse  und  Sortimentsgruppe  aus.  Hier  benötigt  man  eine  sog.  Bursting-Tabelle,  die  die 
+Benutzergruppe, 
+(z.B. 
+Sortimentsgruppe) mappt. (Anhand dieses Bursting-Attributs wird der Bericht aufgeteilt und an 
+die Adressaten verteilt). Die Bursting-Tabelle (UEB08_SG_BURSTING) steht neben den DDL 
+auch schon im Report Studio zur Verfügung und hat folgenden Inhalt: 
+
+-rolle  oder  E-Mail-Adresse  mit  dem 
+
+sog.  Bursting-Attribut 
+
+Empfaenger 
+CAMID(":Herrenoberbekleidung") 
+
+Sortimentsgruppe 
+1 
+
+CAMID(":Damenoberbekleidung")  2 
+CAMID(":Sportbekleidung") 
+3 
+
+CAMID(":Kinderoberbekleidung") 
+CAMID(":Accessoires") 
+
+CAMID(":Marken Bademode") 
+
+4 
+5 
+
+6 
+
+Das  Attribut  Empfaenger  gibt  den  Report  Studio-spezifischen  Pfad  zu  der  Benutzerklasse  bzw.  -
+rolle  oder  dem  Benutzer  an.  Das  Attribut  Sortimentsgruppe  enthält  die  ID  der  einzelnen 
+Sortimentsgruppen und stellt damit eine Verbindung der Benutzerklassen  in  Report Studio und 
+den  Daten  des  DDLs  her 
+->  Sortimentsgruppe 
+Herrenoberbekleidung). 
+
+(Benutzerklasse  Herrenoberbekleidung 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 8          
+ 
+
+Seite 2/6 
+
+Erstellen  Sie  daher  den  gleichen  Bericht  wie  in  Teil  A1,  dieses  Mal  nur  unter  Verwendung  der 
+Zielgruppenverteilung! 
+
+Allgemeines Vorgehen: 
+
+1.  Verwenden Sie wieder den Basis-Bericht aus Teil A1 und speichern Sie ihn unter einem 
+
+anderen Namen neu ab. 
+
+2.  Erstellen Sie den Bericht und aktivieren Sie die Zielgruppenverteilungsoptionen. 
+3.  Ist die Berichtsdefinition fertig, speichern Sie den Bericht ab und wechseln Sie in Cognos 
+
+Connection zu dem Bericht. 
+
+4.  Führen  Sie  den  Bericht  mit  Optionen  aus  (mit  Optionen  ausführen)  und  aktivieren  Sie  die 
+
+Zielgruppenverteilung. 
+
+5.  Öffnen  Sie  ein  neues  Browser-Fenster  und  melden  Sie  sich  als  einer  der  sechs 
+Produktmanager in Report Studio neu an. Gehen Sie über Öffentliche Ordner zu dem eben 
+erstellten  Bericht  und  öffnen  Sie  ihn.  Sehen  Sie  jetzt  nur  die  entsprechenden  Daten? 
+Dann überprüfen Sie es noch für die anderen Produktmanager und dann sind Sie fertig! 
+
+Wichtige Hinweise und Tipps: 
+
+  Die Zielgruppenverteilung wird in Report Studio über zwei Elemente, den Zielgruppen und 
+
+den Zielgruppenempfänger gesteuert:  
+
+1.  Als Zielgruppen werden  das (oder die) Berichts-Attribut(e) definiert, das für jeden 
+
+seiner Attributwerte genau einen Teilbericht erstellen soll.  
+
+2.  Das  Element  Zielgruppenempfänger  legt  fest,  an  welchen  Adressaten  (sprich  die 
+Benutzerklasse,  -rolle  oder  eine  E-Mail-Adresse)  ein  Teilbericht  verteilt  werden 
+soll.  
+
+Dies bedeutet, dass sowohl das Attribut für die Zielgruppen als auch das Attribut für den 
+Zielgruppenempfänger Bestandteil der gleichen Abfrage sein muss.  
+
+  Fügen  Sie  daher in  Ihre  Abfrage  sowohl  die  Sortimentsgruppe  als  auch  den  Empfänger 
+
+ein. Das Berichtslayout soll jedoch nur die Sortimentsgruppe enthalten. 
+
+  Die  Zielgruppenverteilung  aktivieren  Sie  unter  Datei  ->  Zielgruppenverteilungsoptionen...  -> 
+
+Bericht zur Verteilung an Zielgruppen verfügbar machen.  
+
+  Die  Zielgruppen  definieren  Sie,  indem  eine  geeignete  Abfrage,  das  entsprechende  Attribut 
+(Beschriftung)  ausgewählt  und  eine  Gruppe,  die  das  Beschriftungsattribut  enthält,  erstellt 
+wird. 
+
+  Der  Zielgruppenempfänger  wird  (analog  zu  den  Zielgruppen)  auch  über  Abfrage  und  Attribut 
+(Datenelement)  definiert.  Wählen  Sie  als  Datenelement  das  Attribut,  das  die  Informationen 
+über die jeweiligen Adressaten des Teilberichts enthält. Darüber hinaus legt der Typ fest, 
+ob  die  Zielgruppenverteilung  sich  auf  E-Mail-Adressen  oder  Benutzer,  Benutzerklassen 
+bzw. -rollen (Verzeichniseinträge) bezieht. Wählen Sie Verzeichniseinträge. 
+
+  Die  Zielgruppenverteilung  führt  man  unter  Bericht  mit  Optionen  ausführen  aus.  Unter 
+Erweiterte Optionen können Sie festlegen, dass der Bericht gespeichert werden soll und die 
+Zielgruppenverteilung aktivieren.  
+
+  Unter  Öffentliche  Ordner  kann  dann  jeder  Produktmanager  sich  seinen  (Teil-)Bericht 
+anzeigen  lassen.  Sie  als  Berichtersteller  (Gxx)  können  sich  zusätzlich  noch  jeden 
+einzelnen an die Produktmanager adressierten Teilbericht anschauen. 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 8          
+ 
+
+Seite 3/6 
+
+Teil B – „Exception Reporting“ mit Cognos Report Studio  
+
+1. Markierendes Exception Reporting 
+
+Die  Produktmanager sollen in ihren (Teil-)Berichten aus A2 visuell auf gravierende prozentuale 
+Abweichungen  zwischen  Ist-  und  Planumsätzen  in  Form  eines  markierenden  Exception 
+Reporting hingewiesen werden, damit sie schneller unerwartete Umsatzeinbrüche bzw. –anstiege 
+erkennen können. 
+
+Folgende Schwellenwerte wurden vom Vertriebsleiter festgelegt (siehe auch Beispiel): 
+
+-  Umsatzanstiege um mehr als 15% sollen grün, 
+-  Umsatzeinbrüche um mehr als 10% sollen rot und 
+-  Umsatzeinbrüche zwischen 5 und 10% sollen gelb hinterlegt werden. 
+
+Allgemeines Vorgehen: 
+
+1.  Öffnen  Sie  Ihren  Zielgruppenverteilungs-Bericht  in  Report  Studio,  öffnen  Sie  den 
+
+Bedingungs-Explorer und klicken Sie auf Variablen. 
+
+2.  Erzeugen  Sie  eine  neue  Variable  vom  Typ  Zeichenfolgenvariable  und  lassen  Sie  die 
+
+Bedingung zunächst leer (ein Leerzeichen genügt, um die Bedingung zu erstellen). 
+3.  Definieren Sie die verschiedenen Merkmalsausprägungen der Variable unter Werte. 
+4.  Definieren Sie dann die Bedingung der Variablen (Berichtsausdruck) unter Eigenschaften. 
+5.  Wechseln  Sie  in  das  Seiten-Layout,  markieren  Sie  im  Bedingungs-Explorer  eine 
+Merkmalsausprägung  der  Variablen  (die  Explorer-Leiste  färbt  sich  grün)  und  markieren 
+Sie  dann  das  Berichtselement,  das  in  Abhängigkeit  der  Variablen  verändert  dargestellt 
+werden soll (bspw. eine Berichtsspalte). Ordnen Sie unter Eigenschaften -> Stilvariable dem 
+markierten  Berichtselement  die  Bedingungsvariable  zu.  Jetzt  können  Sie  beliebige 
+variablenabhängige Layoutveränderungen vornehmen. 
+
+Wichtige Hinweise & Tipps: 
+
+-  Die Syntax für den Berichtsausdruck der Bedingungsvariablen lautet wie folgt:  
+
+[Attribut] 
+
+IF 
+Variable]’) ELSE (’[Merkmalsausprägung Variable]’)  
+
+[Wert] 
+
+THEN 
+
+< 
+
+(’[Merkmalsausprägung 
+
+oder  
+
+< 
+
+[Attribut] 
+
+CASE  
+WHEN 
+Variable‘) (ELSE (‘[Merkmalsausprägung Variable]‘)  
+WHEN 
+Variable‘) (ELSE (‘[Merkmalsausprägung Variable]‘) 
+(…….) 
+END 
+
+[Attribut] 
+
+[Wert] 
+
+[Wert] 
+
+THEN 
+
+(‘Merkmalsausprägung 
+
+< 
+
+THEN 
+
+(‘Merkmalsausprägung 
+
+-  Anstatt  der  Merkmalsausprägung  einer  Variablen  können  auch  beliebige  andere 
+
+Ausdrücke oder Funktionen im THEN und ELSE-Teil verwendet werden. 
+
+ 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 8          
+ 
+
+Seite 4/6 
+
+2. Erzeugung von Ereignissen mit dem Event Studio 
+
+Damit die Produktmanager möglichst schnell darüber informiert werden, falls der Umsatz einer 
+Artikelgruppe  um  mehr  als  10%  im  Vergleich  zu  den  Planzahlen  zurückgegangen  ist,  soll  ein 
+entsprechender Bericht ausschließlich zu dem Zeitpunkt ausgeführt und an die Produktmanager 
+verteilt  werden,  an  dem dieser  Umsatzrückgang  im  Data  Warehouse  dokumentiert  wurde.  Dies 
+hat den Vorteil, dass die Produktmanager schnellst möglich über den Umsatzrückgang informiert 
+werden  und  keine  Berichte  erstellt  werden,  wenn  dieser  Umsatzrückgang  nicht  eingetreten  ist 
+(Stichwort: Informationsüberflutung). 
+
+Um diese Anforderung umsetzen zu können, bietet Cognos Report Studio das Event Studio. Hier 
+können sog. Agenten definiert werden, die in regelmäßigen Abständen Daten einer Datenquelle 
+überwachen,  bei  Eintreten  eines  definierten  Ereignisses  (z.B.  Umsatzrückgang)  aktiviert  werden 
+und  dann  eine  festgelegte  Aktion  (z.B.  Ausführung  eines  Berichts,  E-Mail-Benachrichtigung 
+u.v.m) ausführen. 
+
+Definieren  Sie  im  Event  Studio  einen  Agenten,  der  einen  10%igen  Umsatzrückgang  gegenüber 
+den Plandaten überwacht und einen Bericht ausführt, der diesen Umsatzrückgang dokumentiert. 
+Verwenden Sie für diesen Bericht auch die Zielgruppenverteilung. 
+
+Allgemeines Vorgehen 
+
+1.  Öffnen  Sie  zuerst  Ihren  Bericht  aus  dem  Aufgabenteil  B1  und  passen  Sie  ihn  an  die 
+neuen  Anforderungen  an  (nur  ein  neues  Berichtselement  einfügen).  Speichern  Sie  den 
+Bericht unter einem neuen Namen und achten Sie auf den Speicherpfad. 
+
+2.  Gehen  Sie  in  Ihr  Gruppenverzeichnis  in  Cognos  Connection  und  öffnen  Sie  dann  das 
+
+Event Studio . 
+
+3.  In der neuesten Version des Internet Explorers kann es sein, dass sich das Event Studio 
+nicht  öffnet,  in  diesem  Fall  muss  die  „Kompatibilitätsansicht“  des  Browser  aktiviert 
+
+werden. Dies geht am schnellsten durch einen Klick auf das entsprechende Zeichen 
+ 
+rechts oben in der Adressleiste, so dass sich das Zeichen blau färbt (statt grau). Danach 
+das Event Studio erneut öffnen und jetzt müsste es laufen).   
+
+4.  Es wird automatisch ein sog. Agent erstellt. Speichern Sie ihn einfach ab.  
+5.  Legen Sie eine  Ereignisbedingung fest. 
+6.  Definieren Sie eine Aufgabe (z.B. Bericht ausführen) 
+7.  Legen Sie eine Aufgabenausführungsregel fest. Definieren Sie zunächst einen  Ereignisschlüssel. 
+Dieser  Schlüssel  muss  die  Datenelemente  enthalten,  die  ein  Ereignis  in  der  Datenquelle 
+eindeutig identifizieren können. Legen Sie dann fest, unter welchen Ereignisbedingungen 
+eine  Aufgabe  ausgeführt  werden  soll  (neu  –  Ereignis  tritt  erstmalig  auf.  Fortlaufend  – 
+Ereignis tritt wiederholt auf). Belassen Sie hier die Standardeinstellungen. 
+
+8.  Testen Sie den Agenten (Vorschau in der Menüleiste). 
+9.  Wechseln Sie zurück in Ihr Gruppenverzeichnis in Cognos Connection. Dort finden Sie 
+
+Ihren erstellten Agenten. Starten Sie ihn via Mit Optionen ausführen. 
+
+10. Prüfen Sie, ob Ihr Bericht ordnungsgemäß für die Produktmanager erstellt wurde.  
+
+ 
+
+ 
+
+ 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 8          
+ 
+
+Seite 5/6 
+
+Wichtige Hinweise und Tipps: 
+
+-  Unter  Aufgabe  hinzufügen  können  Sie  eine  Aufgabe  definieren  und  den  Aufgabentyp 
+
+festlegen. 
+
+-  Haben  Sie  einen  Bericht  ausgewählt,  aktivieren  Sie  im  Event  Studio  unter  Bericht  -> 
+Optionen  die  Zielgruppenverteilung  (dafür  müssen  die  Standardwerte  überschrieben 
+werden). 
+
+-  Die  Ereignisbedingung kann als  Detail oder Auswertung  definiert werden.  Detail  bezieht sich 
+
+auf einen einzelnen Datensatz, Auswertung auf gruppierte Datenwerte. 
+
+-  Wenn  Sie eine  Aufgabenausführungsregel  festlegen,  empfiehlt  es  sich,  als  Ereignisschlüssel  alle 
+die  Datenelemente  auszuwählen,  die  auch  später  im  Bericht  erscheinen.  Das  gibt  Ihnen 
+einen besseren Überblick, wenn Sie den Agenten testen. 
+
+Anmerkung: 
+
+Richtig Sinn macht dieses Szenario in der Praxis erst, wenn die (Teil-)Berichte per E-Mail an die 
+einzelnen  Produktmanager  verteilt  werden  würden.  Aus  technischen  Gründen  muss  auf  die 
+Einbindung  von  E-Mails  in  dieser  Aufgabe  allerdings  verzichtet  werden.  Die  Problematik  und 
+der Nutzen des Event Studios können aber auch durch dieses Beispiel verdeutlicht werden. 
+
+ 
+
+Für  Fragen  zur  Aufgabe  oder  zu  allgemeinen  Dingen  stehen  wir  selbstverständlich  gerne  per 
+E-Mail (mss@uni-osnabrueck.de) oder persönlich zur Verfügung! 
+
+Viel Spaß! 
+
+Uni OS, FB 9, BWL/MSWI, Prof. Dr. B. Rieger, MSS I – Übung Nr. 8          
+ 
+
+Seite 6/6 
+
+

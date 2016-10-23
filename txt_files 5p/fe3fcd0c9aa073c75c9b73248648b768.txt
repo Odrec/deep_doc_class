@@ -1,0 +1,1018 @@
+Chapter 2.2: DSGE Models
+
+Questions:
+
+1. How to build Keynesian models which are robust to the Lucas-critique?
+
+2. What is the role of frictions in the determination of the general 
+
+equilibrium outcomes?
+
+3. How can monetary factors be modeled? 
+Literature:
+• Romer, Advanced Macroeconomics, Chapter 6
+• Kocherlakota (2010): “Modern Macroeconomic Models as Tools for 
+
+Economic Policy”, Minneapolis Fed
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+1
+
+2.2.1. Introduction
+Kydland’s nobel prize lecture: “The eminent researcher and 1995 Nobel 
+laureate in economics, Bob Lucas, from whom I’ve learned a lot, wrote 
+(Lucas, 1980): “One of the functions of theoretical economics is to provide 
+fully articulated, artificial economic systems that can serve as laboratories in 
+which policies that would be prohibitively expensive to experiment with in 
+actual economies can be tested out at much lower cost… (696)…
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+2
+
+Cont…
+… Our task, as I see it…is to write a FORTRAN program
+
+that will accept specific economic policy rules as ‘input’ and will generate as
+
+‘output’ statistics describing the operating characteristics of time series we
+
+care about, which are predicted to result from these policies”. 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+3
+
+Cont…
+The  desired environments to which Lucas refers would make use of 
+information on “individual responses [that] can be documented relatively 
+cheaply…by means of…censuses, panels [and] other surveys…” (710). Lucas 
+seems to suggest that economic researchers place people in desired model 
+environments and record how they behave under alternative policy rules.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+4
+
+• Kydland’s Nobel prize lecture summarizes the fundamental changes in 
+
+macroeconomic modeling in the 1960s:
+ Introduction of rational expectations
+ Lucas critique: statistical regularities cannot be exploited for policy 
+
+design, since they can break down in adjustment towards a newly 
+introduced policy.
+
+• The RBC models were the most straight forward outcome of these 
+
+developments: they avoid ad hoc assumptions on expectation formation 
+(derive expectation formations mathematically) and depend only fixed deep 
+parameter which do not change in reaction to policy.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+5
+
+• Traditional Keynesian models differed in the sense that they made ad hoc 
+
+assumptions on expectations and used estimated statistical relations to 
+evaluate policy.
+
+• Was the battle lost by the Keynesians in favor of the Walrasian classical  
+
+economists?
+
+• The Keynesian economists still had hard critique against the RBC 
+
+framework. It was centered around thee main directions:
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+6
+
+ The efficiency of business cycles: in the RBC models the cycles arise 
+
+form agents’ optimization actions. There is no need for stabilization 
+policy. In the Keynesian way of thinking recessions are a inefficient 
+(wasteful) use of resources.
+
+ The role of technology shocks: Keynesians view them as a source of 
+
+long-term rather then short-term dynamics.
+
+ The missing role of money and monetary factors: the RBC are solely 
+
+based on real factors.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+7
+
+• The resulting modeling approach is a combination of Keynesian and RBC 
+
+•
+
+analysis often called new neoclassical synthesis.
+It incorporates Keynesian feature into the DSGE framework of RBC 
+models. It uses both rational expectations and microfoundations and is 
+therefore not subject to the Lucas critique.
+
+• A comparison between the classical RBC models and the new Keynesian 
+
+models points to the following similarities:
+ General equilibrium: all markets clear since agents adjust all 
+
+endogenous variables to the shocks in the exogenous variables. (This 
+equilibrium concept is new for the Keynesian way of thinking!).
+
+ The adjustment is based on the intertemporal decisions of the agents. 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+8
+
+• How do we include monetary factors into the models?
+• Basically two ways:
+
+A. Modeling money explicitly: explicitly modeling the reasons why 
+
+agent hold money.
+
+B. Cashless economy: hiding money under the carpet – we know agents 
+use money as an accounting unit but since it is only about accounting 
+it shouldn’t influence agents behavior and can be ignored. 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+9
+
+A. Modeling money explicitly
+
+• Why would agents want to hold money at all: it doesn’t earn any interest 
+
+and is therefore unattractive. Here are three potential reasons:
+ Money in the utility function: real balances directly enters the utility 
+function (is not a deep explanations, rather a shortcut for modeling a 
+wide-range of reasons).
+
+ Shopping time: money reduces transaction costs 
+ Cash-in-advance: agents need cash in order to pay for goods
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+10
+
+•
+
+In all these models the disadvantage of money that it brings no interest is 
+compensated by its advantages summarized by the key functions of money:
+ Medium of exchange
+ Accounting unit
+ Store of value
+ Standard of deferred payment
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+11
+
+B. Cashless economy
+•
+
+Ignore the store of value function and focus on money as an accounting 
+unit.
+
+• The model is written in nominal terms.
+• Money demand is a simple function of GDP and the interest  rate.
+• A benchmark for this modeling approach is the “classical monetary 
+
+economy” model which introduces a distinction between real and nominal 
+variables. But since nominal variables are only a unit of accounting they 
+behave just as real variables suggest that they should. So there are no 
+nominal frictions and therefore no role for monetary policy. The results of 
+the classical monetary economy model are just as those of the RBC model.
+• So we turn to a model that takes money more seriously and present next a 
+
+baseline new Keynesian model.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+12
+
+2.2.2. The baseline New-Keynesian model 
+• We will present the models following an algorithm similar to the one we 
+
+used for the RBC model: 
+ Setup: describe the ingredients of the model. Number of households 
+
+and firms, utility and production functions.
+
+ Optimization: define the FOCs resulting from the optimization 
+
+behavior of the agents.
+
+ Solution: derive expressions for all endogenous variables based on 
+
+solving the FOCs.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+13
+
+Setup
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+14
+
+• New features:
+
+ Instead of Walrasian equilibrium we assume that agents set prices in all 
+
+input and output markets. The assumption of perfect competition is 
+abandoned and replaced by monopolistic competition.
+
+ Remember we are looking at models that also bear Keynesian features. 
+
+Keynesian models assume prices and wages are not fully flexible but 
+sticky. They call this feature nominal rigidities.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+15
+
+Households:
+• The representative households maximize their utility function given by:
+
+• Consumption does not consist of a single good but is rater a bundle of  
+
+varieties of goods:
+
+where i denotes the specific good and 𝜖𝜖 the elasticity of substitution between 
+
+different goods (this is needed for modeling the monopolistic competition).
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+16
+
+• The households budget constraint is given by: 
+
+• Pi and Ci denote prices and consumption, Wt the nominal wage, Nt the 
+
+hours worked,  Tt the nominal lump-sum taxes, Bt is a one-period riskless 
+zero bond that matures in t+1, and Qt is the price of this bond in period t.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+17
+
+Firms:
+• An infinite number of firms producing different variety of the goods.
+• All firms use the same production function. The firm producing the good’s 
+
+variety i is also denoted with i.
+
+• The production function (with constant returns to scale) is given by:
+
+𝑌𝑌𝑡𝑡𝑡𝑡 =𝐴𝐴𝑡𝑡𝑁𝑁𝑡𝑡𝑖𝑖
+𝐴𝐴𝑡𝑡 is the technology level common to all firms.
+
+perfect competition assumption is abandoned).
+
+• Firms are allowed to set prices which differ from marginal costs (the
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+18
+
+Optimization
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+19
+
+• The FOCs are more complicated than in the RBC model since households 
+
+not only decide on how much to consume altogether but how to spread 
+their consumption across different varieties of goods.
+
+• The decision of households on the consumption of different product 
+
+varieties generates the demand curves (downward sloping) for each firm.
+
+• Firms decide on their prices taking the demand curves under consideration.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+20
+
+Households
+• Households consumption choice consists of 2 steps:
+
+ Step one: Decide on how to distribute consumption across different 
+
+product varieties given a total level of consumption expenditure.
+
+ Step two: Determine the total consumption expenditure.
+
+Step one: Demand for each C(i)
+• The demand for each variety is determined by maximizing the bundle of 
+
+goods subject to the restriction that households spend their total 
+consumption expenditure M.
+
+• Optimization is, therefore, based on the following Lagrangian:
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+21
+
+• The Lagrangians derivative (and the FOC) with respect to each C(i) is 
+
+given by: 
+
+• How do we find the value of 𝛌𝛌?
+
+write the FOC:
+
+• From the definition of the bundle of goods we substitute the integral and re-
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+22
+
+• Solving for C(i) results in:
+
+• We can now define 𝛌𝛌by substituting                in the bundle expression and 
+
+re-writing:
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+23
+
+• Let’s now simplify the notation by introducing the price index 𝑃𝑃𝑡𝑡:
+
+•
+
+Inserting in the FOC results in:
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+24
+
+• …replacing 𝛌𝛌 with
+
+Results in:
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+25
+
+• Note that the price index 𝑃𝑃𝑡𝑡 is the inverse of 𝛌𝛌:
+𝛌𝛌 is also known as the shadow price: by how much would 𝐶𝐶𝑡𝑡 increase if 
+• The FOC for 𝐶𝐶𝑡𝑡(𝑖𝑖) then results in the following demand functions:
+
+the consumption constraint (M) is marginally increased.
+
+•
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+26
+
+• The following differences relative to the perfect competition case should be 
+
+noticed:
+ Love of variety: the consumer buys a portion of all varieties.
+ The relative price changes affect the demand for the respective goods 
+
+depending on the elasticity of substitution 𝜖𝜖.
+ If 𝑃𝑃𝑡𝑡𝑖𝑖 >𝑃𝑃𝑡𝑡 the resulting demand is still larger than 0 and if 𝑃𝑃𝑡𝑡𝑖𝑖 <𝑃𝑃𝑡𝑡
+the resulting demand is smaller than 𝐶𝐶𝑡𝑡.
+
+ Since goods are imperfect substitutes in the utility function firms can 
+
+increase prices without facing zero demand (monopolistic competition).
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+27
+
+Step two: total expenditure
+• Starting point is the budget constrain which can be re-written using the 
+
+price index in the following form:
+
+• Solving for 𝐶𝐶𝑡𝑡 results in:
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+28
+
+Firms:
+• Firms maximize profits taking the demand function into consideration.
+• Assuming that firms have to satisfy the full demand and the price they have 
+
+announced (no rationing condition) they will choose the price using the 
+following Lagrangian:
+
+• We take the FOCs from this Lagrangian with respect to: 𝑌𝑌𝑡𝑡𝑖𝑖,𝑃𝑃𝑡𝑡𝑖𝑖 and 
+𝛌𝛌𝑡𝑡𝑖𝑖 .
+• We further assume that each firm takes 𝑃𝑃𝑡𝑡 and 𝑊𝑊𝑡𝑡 as constant since it is too 
+
+small to influence them.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+29
+
+• The resulting optimal price is: 
+
+• Noting that           is just the marginal cost, we can re-write the price as:
+
+= Markup*Marginal cost
+
+Markup= 𝜖𝜖𝜖𝜖−1 depend only on the elasticity of substitution, the smaller 𝜖𝜖, the 
+
+larger the markup.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+30
+
+• The introduction of monopolistic competition leads to higher prices (prices 
+
+are scaled by the markup)
+
+• However prices are still just a scaling factor. 
+• There is no reason to expect any real effect of monetary factors if prices are 
+
+just scaled by a markup factor.
+
+• This will not be the case if prices are not fully flexible and do not react one 
+
+to one to monetary policy changes.
+If prices are sticky (=if they do not automatically adjust to money supply 
+changes) monetary policy can play a substantial role.
+
+•
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+31
+
+• David Humes (1752): “Were all the gold in England annihilated at once, 
+
+and one and twenty shillings substituted in the place of every guinea, would 
+money be more plentiful or interest lower? No surely: We should only use 
+silver instead of gold.” (Lukas, 1995)
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+32
+
+• David Humes (1752): “There is always an interval before matters be 
+
+adjusted to their new situation, and this interval is as pernicious to industry 
+when gold and silver are diminishing as it is advantageous when these 
+metals are increasing. The workman has not the same employment from the 
+manufacturer or merchant though he pays the same price for everything in 
+the market. The farmer cannot dispose of his corn and cattle, though he 
+must pay the same rent to his landlord. The poverty, and beggary, and sloth 
+which must ensue are easily foreseen.” (Lukas, 1995)
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+33
+
+We will devote a separate chapter on price stickiness, note here just some 
+stylized facts:
+• Prices have an average duration (across product groups) of 4 to 6 months 
+
+(Bils and Klenow).
+
+• Duration is substantially lower if we account for sales (Nakamura and 
+
+Steinsson).
+
+• There is a substantial variation across the stickiness of different product 
+
+groups. 
+
+• Prices are stickier downwards than upwards.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+34
+
+• Prices can be stickier because of a variety of reasons: menu costs, 
+
+information costs.
+
+• Also the price-changing rules can differ. The most prominent examples are:
+
+ Time-dependent price setting
+ State-dependent price setting
+ Both will be discussed in detail in the chapter on price rigidities; we 
+
+will focus here on the most prominent time-dependent rule: Calvo
+pricing.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+35
+
+•
+
+In a Calvo pricing scheme (Calvo, 1983) each firm faces a constant 
+probability to change its price in each period of time.
+
+• A fraction1−𝜃𝜃 of all firms are given the possibility to change their prices 
+in each period, the rest of the firms ( a fraction 𝜃𝜃) has to keep their prices 
+
+unchanged at least until the next period. The probability of each firm to be 
+allowed to change its price does not depend on whether it just changed the 
+price in the previous period.
+
+• Calvo price setting is a short cut with a lot of limitations but has been 
+
+widely used because of its analytical tractability. 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+36
+
+• The fact that prices are not allowed to change in every period makes the 
+
+price setting an intertemporal problem: firms care not only about 
+optimization of today’s profits but also account for the fact that tomorrow 
+they might have the same price although conditions have changed.
+
+• Today’s prices, therefore, matter for tomorrows profits.
+• Today’s profits are:
+
+where 𝑃𝑃𝑡𝑡𝑖𝑖 is today’s price, 𝑌𝑌𝑡𝑡𝑖𝑖 today’s sales of firm i and        is the nominal 
+
+cost function (= the cost at period t of producing Yi
+
+t).
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+37
+
+• Tomorrow’s expected profits are:
+
+where                                                   is the stochastic discount factor between 
+period t and t+1. Qt,t+1 is equal to the price of a bond that pays one unit 
+tomorrow. 
+• The key point with sticky prices is what is Pi
+•
+
+probability of 1-𝜃𝜃), it can choose the optimal price. If this is the case, then 
+• However, with a probability 𝜃𝜃 the firm will not be able to reset its price 
+
+tomorrow, so the price it set today determines also tomorrows profits. 
+
+If the firm is allowed to reset its price in t+1 (which happens with a 
+
+the firm doesn’t have to care today about tomorrow’ optimal price: this is a 
+problem that it can solve tomorrow.
+
+t+1?
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+38
+
+•
+
+In this case tomorrows expected profits are:
+
+where                                         is the amount of goods sold in t+1 if charging 
+
+t.
+
+the price Pi
+• This implies that Pi
+
+𝜃𝜃 also tomorrow’s profits. 
+
+and tomorrow’s profits depending on Pi
+
+t:
+
+t not only affects todays profits but with a probability of 
+
+• Therefore, when choosing Pi
+
+t the firm has to maximize the sum of today’s 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+39
+
+• This was the two-period case. In reality the firm has to account for the 
+
+effect of today’s price on the infinitely many periods that follow:
+
+• This maximization problem is solved subject to the demand constraints:
+
+• The demand constraints tell us that demand for firm i’s product will depend 
+
+on its price relative to the price index.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+40
+
+• The FOCs for the firm’s problem is:
+
+where the markup                 and the nominal marginal costs
+
+have been introduced  on p. 30.
+
+• Note that if 𝜃𝜃=0 each firm can reset its price in every period so that: 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+41
+
+Solution
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+42
+
+• As with the RBC models the solution, based on using the FOCs to find the 
+
+expressions for all variables and all time period,  follows three steps:
+ Find the relevant steady-states
+ Linearize the first-order conditions
+ Find the equilibrium.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+43
+
+• Start with the first step: finding the relevant steady-states.
+
+• Divide the firms’ FOC
+
+by 𝑃𝑃𝑡𝑡−1 and re-write 𝑄𝑄𝑡𝑡,𝑡𝑡+𝑘𝑘 in two parts: the non-stationary 𝛽𝛽𝑘𝑘and a part that 
+
+in the steady-state is equal to 1:
+
+• The FOC then takes the following form: 
+
+where                                       are the real marginal costs in period t+k.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+44
+
+• Therefore, marginal costs and output are constant over time even if the firm 
+
+does not change the price:
+
+• Since the price level in general is not defined in the steady state assume that 
+
+inflation is zero and 𝑃𝑃𝑡𝑡∗𝑃𝑃𝑡𝑡+1=1.
+• The definition of Λ𝑡𝑡,𝑡𝑡+𝑘𝑘 implies that it is equal to one in a steady state.
+
+• Therefore, in steady state the FOC then takes the following form:
+
+which implies that the marginal costs MC are equal to 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+45
+
+• Next linearize the FOCs.
+• For this purpose we re-write the FOC from p. 41 as follows:
+
+• Let’s then linearize the left-hand side of the condition:
+
+• The linearization of the right hand side results in: 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+46
+
+• Combining the right-hand side and the left-hand size we can cancel out Λ 
+
+and yi. The result is: 
+
+• Noting that �𝑚𝑚𝑚𝑚t+k=log MCt+k-log(1/Μ)= logMCt+k+log(Μ) we get: 
+
+•
+
+In words: a firm that is allowed to reset its price will set the price so that it 
+is above the current and the expected nominal marginal costs.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+47
+
+• The weight of future marginal costs in the determination of the price 
+
+depends on both the discount factor and the probability of changing the 
+price.
+
+• How does the aggregate price index behave?
+
+identical they all choose to reset according to the same rule described 
+on p. 47.
+
+ A fraction 1-𝜃𝜃 of all firms can reset their  prices. Since they are 
+ A fraction 𝜃𝜃 does not reset. In sum the aggregate price index is equal 
+𝑃𝑃𝑡𝑡= 𝜃𝜃𝑃𝑃𝑡𝑡−11−𝜖𝜖+(1−𝜃𝜃)𝜃𝜃(𝑃𝑃𝑡𝑡 ∗)1−𝜖𝜖
+
+11−𝜖𝜖.
+
+to:
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+48
+
+Linearizing the price level
+
+• Start with the following transformation (divide by 𝑃𝑃𝑡𝑡−1and raise to the 
+power of 1−𝜖𝜖):
+• ∏𝑡𝑡𝑖𝑖𝑖𝑖 gross inflation which in our zero inflation scenario is equal to one, the 
+same is true for the ratio 𝑃𝑃𝑡𝑡∗𝑃𝑃𝑡𝑡−1.
+where 𝜋𝜋𝑡𝑡denotes the percentage deviation from the steady state gross inflation 
+
+Linearization around this state, therefore,  yields:
+
+•
+
+(which we assume  to be equal to 1)
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+49
+
+• Returning to the optimal price we get:
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+50
+
+• From here on it follows that:
+
+and
+
+•
+
+•
+
+In sum: inflation today is a discounted sum of today’s and future’s marginal 
+costs.
+Intuition: if firms expect their costs to rise tomorrow and anticipate that 
+they might not be able to adjust their prices when the costs change they 
+change the price already today.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+51
+
+• Let’s return to the general equilibrium.
+•
+
+It requires clearing of both :
+ The goods market, and
+ The labor market
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+52
+
+• The equilibrium in the goods market requires that production of each 
+
+product variety equals the demand for this product variety.
+
+• For the individual product variety:
+
+• And the bundle:
+
+•
+
+=𝐶𝐶𝑡𝑡
+
+• From there on and from the linearized Euler equation it follows that: 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+53
+
+• The equilibrium in the labor market requires that supply and demand of 
+
+labor clear.
+
+• Analytically, the labor market clearing (accounting for the goods market’s 
+
+clearing and demand functions) can be expressed as:
+
+• After linearization we get: 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+54
+
+In this last expression the linearization of                                   is denoted by 
+
+𝑑𝑑𝑡𝑡 and has the interpretation of price dispersion (and the resulting output 
+
+dispersion).
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+55
+
+• Which is the natural level of output (= the output level if prices are free to 
+
+adjust)?
+In a world without nominal rigidities firms will set the prices so that in each 
+period they’ll be equal to marginal costs plus markup. 
+
+•
+
+• Nominal marginal costs are: 
+
+• Dividing by P gives the real marginal costs:
+
+• After linearization: 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+56
+
+• Substituting the linearized wage yields:
+
+•
+
+•
+
+and taking into account that in equilibrium ��𝑦𝑦= ̂𝑚𝑚:
+If we denote the natural level of output by 𝑦𝑦𝑛𝑛 t:
+
+=> 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+57
+
+• The output gap (= the difference between the output with sticky prices and 
+
+output with flexible prices=                     ) is therefore determined by:
+
+• Combining this equation with the equation about inflation:
+
+yields:
+
+• You actually remember a very similar relation from your undergraduate 
+
+macro classes: the Phillips curve.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+58
+
+• The representation given here is known as the New Keynesian Phillips 
+
+Curve. It will be the first building block of the system.
+
+• Let’s now review in the DSGE framework another theoretical concept that 
+
+you already know: the IS curve (= relation between interest rate and 
+aggregate demand).
+
+• We turn back to the output equation
+
+and re-write it in terms of output gap:
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+59
+
+• From there on it follows that:
+
+•
+
+rn is the natural rate of the interest rate and is equal to
+
+• This equation is known as the dynamic IS equation and represents the 
+
+second building block of our system. 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+60
+
+• Taken together: 
+
+ the new Keynesian Philips Curve and the Dynamic IS equation 
+
+describe the non-policy side of the model (everything is governed by 
+households and firms optimization behavior).
+
+ In order to close the model we need to understand how do policy 
+
+makers behave.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+61
+
+• We focus here on monetary policy, so the policy rule we examine is interest 
+
+rate setting rule.
+
+• A surprisingly simple rule has dominated much of the modeling. It has been 
+
+suggested by John Taylor (1993) and is often called “Taylor rule”.
+It says that the nominal interest rate is equal to: 
+
+•
+
+where i denotes the steady-state nominal interest rate.
+• This rule can be generalized to: 
+
+which gives the third building block of the model.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+62
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+63
+
+Effect of a monetary policy shock:
+• Start by assuming an AR(1) process for the exogenous component of the 
+
+interest rate:
+
+• Since we are only interested in the shock we can assume that the 𝑟𝑟𝑛𝑛=0
+• From there on we can derive the responses of 𝜋𝜋𝑡𝑡,𝑦𝑦𝑡𝑡 and 𝑖𝑖𝑡𝑡 to a shock 𝜀𝜀𝑡𝑡𝜗𝜗 in 
+
+and solve the now simplified versions of the three equations of the model 
+(there are different ways to come with a solution, one of them being the 
+method of undetermined coefficient we used for the RBC model).
+
+the nominal interest rate.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+64
+
+• As with the RBC model the model can only produce reasonable predictions 
+
+if we “feed” it with appropriate parameter values.
+If we calibrate with the following values: 
+
+•
+
+we get the following theoretical impulse responses.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+65
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+66
+
+… and here are the empirically generated IRFs 
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+67
+
+Summary:
+• Qualitatively a good fit:
+
+ The nominal interest rates first goes up and then down
+ Inflation initially falls, later returns
+ Output initially decreases, but then recovers
+ The real interest rate goes up.
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+68
+
+• DSGE models in forecasting (Wickens, 2012)
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+69
+
+Advanced Macroeconomics - SS 2016 - Prof. Dr. Valeriya Dinger
+
+70
+
+

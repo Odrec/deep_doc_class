@@ -1,0 +1,553 @@
+Grundlagen der physikalischen Chemie 
+
+Praktikum
+
+Leitfähigkeit starker und schwacher Elektrolyte
+
+28.10.2014
+
+1. Abgabe – 04.11.2014
+
+Gruppe 17 - Sören Vinke, Zunhao Wang, Niklas Schweinitz
+
+Email: nikson@gmx.de
+
+Versuchsbetreuer: Felix Alexander Henkel, Hendrik Vorwerk
+
+Aufgabenstellung
+
+ 1.
+Untersucht werden bei diesem Versuch die spezifische Leitfähigkeit von verschiedenen 
+  Aus   den   Ergebnissen   der   Messung   sollen   des   weiteren   die 
+Lösungen.  
+Äquivalentleitfähigkeit   und   die   damit   verknüpfte   Dissoziationsgrad,
+  sowie 
+Dissoziationskonstante durch anwenden geeigneter Gesetze bestimmt werden.
+
+ 2. Durchführung
+Zur   Messung   der   Leitfähigkeit   von   NaCl,   NaAc,   HCl   und   HAc,   werden   Messreihen 
+verdünnter   Lösungen   angesetzt.
+  Danach   wird   mit   einer   Eichlösung   das 
+Leitfähigkeitsmessgerät   justiert.   Die   Zellkonstante,   der   Unterschied   zwischen   dem 
+Standartwert und dem eigenen Wert, wird notiert. Danach werden alle Verdünnungsreihen 
+beginnend mit der Nullprobe des Lösungsmittels (Wasser) gemessen und die Werte für die 
+spezifische Leitfähigkeit notiert.
+ 
+ 3.
+Messergebnisse der Verdünnungsreihen:
+Tabelle 1: NaCl
+
+Auswertung
+
+Lösung
+
+Nullprobe (Wasser)
+
+4∗10−3
+
+2∗10−3
+
+1∗10−3
+
+5∗10−4
+
+2,5∗10−4
+
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+
+Tabelle 2: NaAc
+
+Lösung
+
+Nullprobe (Wasser)
+
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+
+4∗10−3
+
+2∗10−3
+
+1∗10−3
+
+5∗10−4
+
+2,5∗10−4
+
+Leitfähigkeit
+
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+
+6,6
+
+468
+
+246
+
+126,8
+
+69,8
+
+39,1
+
+Leitfähigkeit
+
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+
+6,6
+
+327
+
+174,6
+
+92,6
+
+51,2
+
+30
+
+Tabelle 3: HCl
+
+Lösung
+
+Nullprobe (Wasser)
+
+2∗10−3
+
+1∗10−3
+
+5∗10−4
+
+2,5∗10−4
+
+1,25∗10−4
+
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+
+Tabelle 4: HAc
+
+Lösung
+
+Nullprobe (Wasser)
+
+Leitfähigkeit
+
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+
+6,6
+
+747
+
+380
+
+187,1
+
+80,8
+
+43,7
+
+Leitfähigkeit
+
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+
+4∗10−3
+
+8∗10−4
+
+1,6∗10−4
+
+3,2∗10−5
+
+1,6∗10−5
+
+6,6
+
+96,9
+
+43,1
+
+18,4
+
+11,7
+
+8,8
+
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+μS
+cm
+
+Zur weiteren Auswertung ist es nötig den erhaltenen Wert des Lösungsmittels von den 
+anderen  Werten  ab   zu   ziehen.  Dies  wird   gemacht,  da  sich  die  Leitfähigkeiten  additiv 
+verhalten, was uns später von Nutzen sein wird. Die NaCl-, NaAc- und Hcl-Lösungen sind 
+Lösungen starker Elektrolyte, also Stoffen die in Lösung komplett in Ionen dissoziieren. 
+Daher können wir mit folgender Formel vorgehen, um die Äquivalentleitfähigkeit dieser 
+Stoffen zu berechnen. Dies ist von Nöten, da wir die Dissoziation von den Lösungsmitteln 
+vergleichen   wollen.   Die   Äquivalentleitfähigkeit   ist   eine   Größe   die   das   Verhältnis   von 
+dissoziierten Ionen abhängig von der molaren Leitfähigkeit und  der Anfangskonzentration 
+des Stoffes.
+
+Λev=
+
+(k −k o)
+Z∗c0
+
+[1]
+
+mit: Z = Ladungszahl des Anions, c0 = Ausgangskonzentration der Lösung, k = spezifische 
+
+Leitfähigkeit und k 0 = Leitfähigkeit von Wasser
+
+Angewendet   auf   unser   Messergebnisse,   erhalten   wir   folgende   Werte   für   die 
+Äquivalentleitfähigkeit:
+
+Tabelle 5: 
+
+Λev= cm2
+Ω∗mol
+
+NaCl
+115,4
+119,7
+120,2
+126,4
+130
+
+NaAc
+80,1
+84
+86
+89,2
+93,6
+
+HCl
+
+370,2
+373,4
+361
+296,8
+296,8
+
+Für die Essigsäure gilt die Formel nicht, da es sich um ein schwaches Elektrolyt handelt. 
+Schwache Elektrolyten dissoziieren nicht komplett in Wasser oder anderen Lösungsmitteln. 
+Um nun die Äquivalentleitfähigkeit von Essigsäure bestimmen zu können nehmen wir die 
+Werte aus Tabelle 5 und Tragen sie graphisch gegen  √c0 auf (Siehe Graph 1 im Anhang).
+Wir   erweitern   die   Graphen   bis   zur   y-Achse.   Der   y-Achsenabschnitt   ist   der   Wert   der 
+Äquivalentleitfähigkeit bei unendlicher Verdünnung   Λ∞ .Für alle Messergebnisse wurde 
+eine Ausgleichsgerade gezogen (dunklere Farbvariante), außer für die Messergebnisse der 
+Hcl-Lösung. Hier musste eine Korrektur gemacht werden (hellgelbe Linie) damit sie den 
+Literaturwerten ähnlicher sind, da die Werte bei höherer Verdünnung stark abweichen von 
+der Erwartung.
+
+NaCl=0,014 m2
+Λ∞
+Ωmol
+NaAc=0,010 m2
+Λ∞
+Ωmol
+hCl=0,038 m2
+Λ∞
+Ωmol
+
+ Wie oben bereits erwähnt, verhalten sich die Leitfähigkeiten additiv, d.h. die Leitfähigkeit 
+eines Elektrolyten ist die Summe der Leitfähigkeiten der einzelnen Ionen. Man nennt dieses 
+Gesetz der unabhängigen Ionenwanderung.
+
+Λ=ν+¿Λ+¿+ν−¿Λ−¿ [2]
+
+mit:  ν = Anzahl der Ionen pro Mol
+
+Wenn wir nun nach der Formel 2 gehen, können wir die Äquivalentleitfähigkeit von HAc 
+berechnen  
+indem   wir   die   Leitfähigkeiten   der   anderen   Elektrolyte   günstig 
+zusammenrechnen. 
+
+Λ NaAc+ΛHCl−Λ NaCl=Λ HAc
+
+Angewenden   der  Formel   1  auf   unsere   Messergebnisse   und  Formel   2  auf   die 
+Grenzleitfähigkeiten  Λ∞ bekommen wir folgende Werte für die Äquivalentleitfähigkeit von 
+Essigsäure.
+
+Tabelle 6: 
+
+4∗10−3
+
+HAc= cm2
+Λev
+Ω∗mol
+Konzentration
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+
+3,2∗10−5
+
+1,6∗10−4
+
+8∗10−4
+
+1,6∗10−5
+Im Unendlichen:
+
+Äquivalentleitfähigkeit
+
+22,6
+
+53,9
+
+73,8
+
+141,7
+
+137,5
+
+340
+
+Mit diesen Werten können wir nun den Dissoziationsgrad  α berechnen. Dafür werden alle 
+Werte durch den Wert der Grenzleitfähigkeit geteilt. Man erhält somit einen Wert zwischen 
+1 und 0. Wobei 1 für vollstandige Dissoziation steht und jeder Wert unterhalb 1 für den 
+entsprechenden prozentualen Anteil. 
+
+α=
+
+Λev
+Λ∞ [3]
+
+Tabelle 7:  αHAc
+
+8∗10−4
+
+4∗10−3
+
+Konzentration
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+
+3,2∗10−5
+
+1,6∗10−4
+
+1,6∗10−5
+
+Dissoziationsgrad
+
+6,647∗10−2
+
+15,853∗10−2
+
+21,706∗10−2
+
+41,677∗10−2
+
+40,441∗10−2
+
+Wir tragen die Werte gegen die Konzentration auf und erhalten so einen exponentielle 
+Absenkung (Siehe Graph 2 im Anhang).
+Im   letzten   Teil   der   Auswertung   berechnen   wir   die   Dissoziationskonstante   K  
+in 
+abhängigkeit der Konzentration  c0 . Da es sich bei HAc um einen schwachen Elektrolyten 
+handelt, nutzen wir das Ostwaldsche Verdünnungsgesetz, ein Massenwirkungsgesetz.
+
+K = α2
+1−α
+
+∗c0 [4]
+
+Wir   setzen   in  Formel   4  die   Werte   aus  Tabelle   7  ein   und   erhalten   somit   die 
+Dissoziationskonstanten in Abhängigkeit der Konzentration.
+
+Tabelle 8:  K HAc
+
+4∗10−3
+
+8∗10−4
+
+Konzentration
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+
+3,2∗10−5
+
+1,6∗10−4
+
+1,6∗10−5
+
+Dissoziationskonstante
+
+18,931∗10−6
+
+119,475∗10−6
+
+240,708∗10−6
+
+1191,277∗10−6
+
+1098,389∗10−6
+
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+mol
+L
+
+Zu erkennen ist in Graph 3 ein ähnlicher Graphenverlauf wie in Graph 2 . Die Werte für die 
+Dissoziationskonstante liegen zum Teil sehr weit auseinadner, daher ist es zu empfehlen 
+den Mittelwert (hier Rot) zu bilden. 
+
+In diesem Falle wäre das : K mittel=533,756∗10−6
+
+(graphische Darstellung im Anhang)
+
+mol
+L
+
+Da dieser jedoch von extremen Abweichungen beeinflusst wird und der Graph zum größten 
+teil sich der x-Achse annähert, habe ich einen zweiten Mittelwertgebildet in dem die 
+größten   Abweichungen   fehlen,   um   auch   diesen   Wert   mit   dem   Graphenverlauf   zu 
+vergleichen (hier Gelb):
+
+K mittel2=180,092∗10−6
+
+mol
+L .
+
+Der Literaturwert beträgt 
+
+K =1,8∗10−5 mol
+
+L und ist damit um ein 10tel kleiner als  K mittel2 .
+
+(Quelle:http://www.chemgapedia.de/vsengine/vlu/vsc/de/ch/1/pc/pc_07/pc_07_02/pc_0
+7_02_01.vlu/Page/vsc/de/ch/1/pc/pc_07/pc_07_02/pc_07_02_04.vscml.html 03.12.2014 
+18:15) 
+
+ 4.
+
+Fehlerdiskussion
+
+Allgemein zu den Versuchen ist zu sagen, dass sich die Messreiehn als wenig kompliziert 
+heraus stellt. Die Berechnungen zur Konzentration/Volumen-Verhältnisse wurden von den 
+Betreuern kontrolliert und für richtig befunden. Und alle Messergebnisse sind in den zu 
+erwartenden Messbereichen gegeben. Als Ausnnahme sind die Messwerte der  HCl-Lösung 
+sind bei höherer Verdünnung sehr stark am abweichen, wie der Graph 1 sehr schön 
+veranschaulicht.   Da   es   die   erste   gemessene   Reihe   war,   wurde   dort   mit   der   höhsten 
+Konzentration angefangen. Wir wurden allerdings darauf hingewiesen, dass die Ergebnisse 
+dadurch verfälscht werden können. Daher wurde von da an mit der kleinsten Konzentration 
+weiter gearbeitet. Es ist daher anzunehmen, dass die Werte für kleinere Konzentrationen 
+gestört wurden durch „Rest-Ionen“ der stärksten Konzentration. 
+
+ 5.
+
+Anhang
+
+Graph 1: Veranschaulichung der Äquivalentleitfähigkeit von NaCL-, NaAc- und HCL-Lösung
+
+Graph 2: Dissoziationsgrad der Essigsäure in Abhängigkeit von der Konzentration
+
+Graph 3: Dissoziationskonstante der Essigsäure in Abhängigkeit von der Konzentration
+
+

@@ -1,0 +1,493 @@
+SCL-90-R
+
+Testverfahren-Seminar WS 2014/15 
+
+Lukasz Stasielowicz
+
+Maria Bürgstein, Nicole Kupczik, Helen Overkamp
+
+ 
+
+ 
+
+Testdurchführung
+
+ 
+
+ 
+
+Gliederung
+
+1.  Testdurchführung 
+2.  Überblick
+3.  Geschichtliche Entwicklung
+4.  Anwendung
+5.  Skalen
+6.  Auswertung
+7.  Interpretation
+8.  Normierung
+9.  Gütekriterien
+10. Kritik & Fazit
+ 
+11. Literatur
+
+ 
+
+2. Überblick
+
+Symptomcheckliste-90-R
+
+● Test zur Erfassung körperlicher und 
+
+psychischer Symptome durch subjektive 
+Einschätzung
+
+● 90 Items, eingeteilt in 9 Skalen
+● Sprachliche Einfachheit & Klarheit
+● Fünfstufige Likert-Skala
+
+0 „überhaupt nicht“ bis  4 „sehr stark“
+
+ 
+
+ 
+
+3. Entwicklung
+
+● Ursprüngliche Version auf Englisch
+
+→ Übersetzung ins Deutsche
+
+● Erste Vorläufer:
+
+– Discomfort Scale (Kellmann und Frank, 1954)
+– SCL in verschiedenen Versionen:
+
+1960: HSCL (Hopkins Symptom Checklist)
+1970: Kurzversion der HSCL mit 35 Items;
+           lange Version der SCL mit 90 Items
+
+ 
+
+● Abschließende Konstruktion:
+
+– 1977: SCL-90-R nach Derogatis et al.
+
+ 
+
+4. Anwendung
+● Kurzes Selbstbeurteilungsverfahren
+
+→ Durchführung: 10-15 Minuten
+
+● Bezieht sich auf die voherigen sieben Tage
+
+→ akute Symptome, wobei Stimmung als  SV 
+     kontrolliert wird
+
+   
+
+● Erfasst leichte, „normale“ bis schwere Symptome
+● Einzel- und Gruppentestungen möglich
+● Standardisierte Instruktion
+
+ 
+
+→ keine Hilfestellung durch VL
+● Messwiederholung(en) möglich
+● Anwendung vor allem im klinischen Bereich
+
+ 
+
+5. Skalen
+
+● 9 Skalen mit insgesamt 90 Items; 7 Zusatzitems
+
+1. Somatisierung
+2. Zwanghaftigkeit
+3. Unsicherheit im Sozialkontakt
+4. Depressivität
+5. Ängstlichkeit
+6. Aggressivität/Feindseligkeit
+7. Phobische Angst
+8. Paranoides Denken
+9. Psychotizismus
+10. Zusatzfragen
+ 
+
+ 
+
+Somatisierung
+
+(SOMA)
+
+● 12 Items
+● Körperliche Belastung 
+
+bis zur funktionalen 
+Störung
+
+ 
+
+ 
+
+Zwanghaftigkeit
+
+(ZWAN)
+
+● 10 Items
+● Konzentrations- und 
+
+Arbeitsstörungen bis hin 
+zur Zwanghaftigkeit
+
+ 
+
+ 
+
+Unsicherheit im Sozialkontakt
+
+(UNSI)
+
+● 9 Items
+● Soziale Unsicherheit 
+
+bis hin zum Gefühl 
+völliger persönlicher 
+Unzulänglichkeit und 
+Miderwertigkeit
+
+ 
+
+ 
+
+Depressivität
+
+(DEPR)
+
+● 13 Items
+● Leichte Traurigkeit bis 
+
+hin zur schweren 
+Depressivität
+
+● Orientiert sich an der 
+
+Bandbreite der 
+Manifestation der 
+klinischen Depression
+
+ 
+
+ 
+
+Ängstlichkeit
+
+(ANGS)
+● 10 Items
+● (körperlich) spürbare 
+
+Nervosität bis zu 
+starker Angst
+
+ 
+
+ 
+
+Aggressivität/Feindseligkeit
+
+(AGGR)
+● 6 Items
+● Reizbarkeit und 
+
+Unausgeglichenheit 
+bis zu starker 
+Aggression mit 
+feindseligen Aspekten
+
+ 
+
+ 
+
+Phobische Angst
+
+(PHOB)
+
+● 7 Items
+● Gefühl von Bedrohung 
+
+bis zur massiven 
+phobischen Angst
+→ andauernde, 
+unangemessene Furcht
+
+ 
+
+ 
+
+Paranoides Denken
+
+(PARA)
+
+● 6 Items
+● Gefühle von 
+
+Misstrauen und 
+Minderwertigkeit bis zu 
+stark paranoidem 
+Denken
+
+ 
+
+ 
+
+Psychotizismus
+
+ 
+
+ 
+
+(PSYC)
+● 10 Items
+● Gefühl der Isolation 
+und Entfremdung bis 
+zur dramatischen 
+Evidenz psychotischen 
+Erlebens
+● Bezieht 
+
+Primärsymptome der 
+Schizophrenie mit ein
+
+Zusatzfragen
+
+● 7 Items
+● Vor allem Schlaf- und Essgewohnheiten im 
+
+Vordergrund
+
+ 
+
+ 
+
+6. Auswertung
+Berechnung der Rohwerte:
+● Items nach Skalen ordnen
+
+ 
+
+ 
+
+Bestimmung von:
+
+– Summenwert Sn 
+
+(Itemwerte addieren)
+
+– Skalenwert Gn 
+
+(Summenwert/ Anzahl der Items; fällt 
+
+bei Zusatzfragen weg)
+– Belastungstendenz Pn 
+
+(Anzahl der Items bei denen eine 
+
+Belastung angegeben wird)
+
+ 
+
+ 
+
+Globale Kennwerte
+
+GSI (Global Severity Index)
+→ Intensität der Belastung
+
+((Summe von S1-S10)/90)
+
+PST (Positive Symptom Total)
+→ Anzahl der Items, bei denen eine  
+     Belastung berichtet wurde
+
+(Summe von P1-P10)
+
+PSDI (Positive Symptom Distress Index)
+→ Intensität der Antworten
+
+ 
+
+((Summe von S1-S10)/PST)
+
+ 
+
+7. Interpretation
+
+● Spannbreite der Werte aussagekräftig für 
+
+Antwortverhalten und Interpretation
+
+● „Normale“ Menschen stimmen etwa 24 
+
+Items zu
+
+● Erst deutliche Abweichung von normaler 
+Belastung wird aufmerksam interpretiert
+→ klinisch relevant
+
+ 
+
+ 
+
+Gesamtinterpretation
+
+Erfolgt in fünf Schritten:
+1. Bewertung der Schwere der  Beeinträchtigung (Falldefinition)
+auffällig: T(GSI)>=63 und/oder T(2 Skalen)>=63
+2.Bewertung der Ausprägung der Globalen Kennwerte (T>=60)
+60-64 leicht erhöht; 65-69 deutlich erhöht; 70-74 stark erhöht; 
+75-80 sehr stark erhöht
+3. Bewertung der Ausprägung der Skalen
+4. Analyse der Itemantworten bei Skalen mit T>=60
+Vergleich zur jeweiligen Normgruppe
+5. Analyse der Antworten auf die Zusatzitems
+auffällig: >= M+ 1 SD
+
+ 
+
+ 
+
+Theoretische Interpretationshilfen 
+
+bei einmaliger Messung
+
+● Tabellen über Standardmessfehler und 
+
+Vertrauensgrenzen sowohl für T- als auch 
+für Rohwerte
+
+ 
+
+ 
+
+ 
+
+ 
+
+8. Normierung
+
+● Deutschsprachige Stichproben:
+
+N1: deutschsprachige Erwachsene (n=2.141)
+N2: deutschsprachige Jugendliche (n=857)
+N3: Studierende (n=800)
+● Klinische Stichproben:
+
+P1: Stationäre Psychotherapiepatienten (n=5.057)
+P2: HIV-Infizierte Patienten (n=568)
+P3: Schizophrene Psychiatriepatienten (n=110)
+Sehbeeinträchtigte Patienten (n=117) 
+
+ 
+
+ 
+
+9. Gütekriterien
+
+Objektivität
+● Auswertungs- und 
+
+Interpretationsobjektivität gewährleistet
+● Durchführungsobjektivität gefährdet bei 
+
+Abweichungen der Instruktion und 
+Versuchsleitereffekten
+
+ 
+
+ 
+
+Reliabilität
+
+Interne Konsistenz
+
+„Normale“ Probanden: N1-N3
+
+ 
+
+ 
+
+Klinische Gruppe (P1 und P2), GSI, PSDI, PST
+
+ 
+
+ 
+
+Retest-Reliabilität
+
+● Intervall: 7 Tage
+● Mit r > .90 bei mehreren Studien
+● Interpretation jedoch nur teilweise sinnvoll
+
+→ akute Symptome! 
+
+ 
+
+ 
+
+Validität
+
+● Inhaltlich und augenscheinlich valide Items
+● Items durch wiederholte 
+
+Modifikationsprozesse und Befragung von 
+Patienten und Experten ausgebessert
+
+● Interkorrelation der Skalen:
+
+durchschnittlich sehr hoch (r= .47 bis r= .68)
+● Etwa die Hälfte (48,27%) der Gesamtvarianz 
+
+durch 9 extrahierte Faktoren erklärt
+→ Generalfaktor?
+
+ 
+
+ 
+
+10. Kritik & Fazit
+
+● Stark schwankende Unterschiede der 
+
+Itemanzahl zwischen den Skalen
+
+● Keine Normalverteilung der Skalen
+● Effekt der Bildung
+
+Trotzdem: valider, reliabler Test, der 
+durchaus hilfreich zur Symptomerfassung 
+ist, jedoch allein zur Diagnose etwaiger 
+Störungen nicht ausreicht 
+
+ 
+
+ 
+
+Danke für eure 
+Aufmerksamkeit!
+
+ 
+
+ 
+
+11. Literatur
+
+Franke, G.H. (2001). SCL-90-R. Die Symptomcheckliste von 
+
+Derogatis – Deutsche Version – Manual. Beltz,  Göttingen.
+
+ 
+
+ 
+
+

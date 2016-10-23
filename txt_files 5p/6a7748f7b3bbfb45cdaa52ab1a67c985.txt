@@ -1,0 +1,477 @@
+Gase und Flüssigkeiten – Hydrostatik und Hydrodynamik
+
+In 1000m Wassertiefe ist es dunkel.
+Unterscheiden sich die Tiefseewesen von den 
+Artgenossen an der Oberfläche allein wegen des 
+fehlenden Lichts?
+
+Auch herrscht dort hundertfacher 
+Atmosphärendruck.
+Spielt auch der Druck bei den Entwicklung der 
+Spezies eine Rolle?
+
+Wir hatten in der letzten Sitzung die Freie Energie in der Form  F =E−T S  geschrieben. Dabei 
+haben wir bei E einen Term  pV , Druck mal Volumen, weggelassen. Nimmt man  pV  hinzu, so wird
+die „Freie Energie“ „Gibbs'sche Freie Energie“ genannt,  G=E+ p V −T S , mehr davon später.  pV  
+spielt bei Atmosphärendruck in der Biologie praktisch keine Rolle.
+Bei hohen Drücken in der Tiefsee ist das aber anders, ein Forschungsgebiet.
+
+Wenn sich ein System, etwa ein Protein bei einer Reaktion ausdehnt, ΔV > 0, so hat die Änderung
+ΔG  der (Gibbs'schen) Freien Energie einen Anteil  p ΔV . Dieser fällt nun in 1000m Tiefe 100 Mal
+größer aus, was gerade darüber entscheiden könnte, ob eine Bioreaktion im Fisch abläuft oder nicht.
+Grundlagen: Was ist Druck, warum steigt der Druck in der Tiefe, warum ist  p ΔV  eine Energie?
+
+Druck
+
+Der lokale Druck p ist definiert als die Kraft  F , die senkrecht 
+auf eine sehr kleine Oberfläche  ΔA  wirkt, dividiert durch den 
+Betrag dieser Fläche:
+p= F
+
+ΔA , SI-Einheit: Pa (Pascal) = N/m2
+
+Lokale, punktuell geltende Größe, das heißt,  ΔA  kann gegen 
+null gehen.
+
+Kurz: Druck ist Kraft pro Flächeneinheit.
+
+510  Pa  
+
+Andere Einheiten:
+1 bar = 
+Für Luftdruck: 1023 hPa (Hektopascal). Statt 102.3 kPa!, weil 
+man früher 1023 mbar gesagt hat. Durch Pa kommt das „antike“
+Hekto wieder!
+Atmosphäre: 1atm = 1013mbar, Normal-Luftdruck
+1 Torr = 1 mmHg = 1/760 atm, in der Medizin sehr verbreitet 
+(Blutdruck!).
+mmHg = Millimeter Quecksilbersäule (Hintergrund später)
+mmWs = Millimeter Wassersäule
+
+Die schwarzen Punkte stellen 
+Gas- oder Flüssigkeitsteilchen 
+dar, welche die Kraft F auf das 
+Flächenelement  ΔA  ausüben.
+
+Die Natur dieser Kraft wird auf 
+den nächsten Seiten diskutiert.
+
+Vorlesungsversuch:
+
+Das statische Bild des Druckes
+
+Die Kräfte werden als Resultat der Gewichte der Kugeln 
+= Flüssigkeitsmoleküle aufgefasst.
+
+Dies führt zur Kompression.
+
+Jede Kugel drückt mit ihrem Gewicht auf
+die untere – das Schaumstoffstück wird 
+zusammengedrückt.
+Einschub: Für viele Materialien gilt für die relative Volumenänderung durch den allseitigen 
+Kompressionsdruck die Beziehung:  − ΔV
+V
+Die Materialkonstante K wird Kompressionsmodul genannt. Bei Flüssigkeiten ist K sehr groß, 
+Wasser:  2.2⋅10−4 atm  – man sagt, „Flüssigkeiten sind inkompressibel“
+
+= 1
+K
+
+p
+
+Das dynamische Bild des Druckes
+
+Das dynamische Bild wird üblicherweise nur bei
+
+Gasen angewandt (kinetische Gastheorie):
+
+Der Gasdruck entsteht durch das „Trommeln“
+(Impulsübertrag) der Moleküle auf die Wand.
+
+Impulsübertrag=Kraftstoß
+
+Pohl'scher Modellversuch mit Stahlkugeln
+
+(a) Gas, (b) Flüssigkeit
+
+Auch bei einer Flüssigkeit 
+„trommeln“ die Moleküle auf die 
+Wand. Dies spielt gegenüber dem 
+Gewichtseffekt aber keine Rolle.
+Die Bewegung der Flüssigkeits-
+
+moleküle wird erst beim
+
+osmotischen Druck wichtig.
+
+Bilder aus Gerthsen, Physik
+
+Der hydrostatische Druck quantitativ - Vorbemerkung
+
+Die Druck-Kraft auf eine eingetauchte Fläche  ΔA  kann in 
+einer Flüssigkeit nur senkrecht zur Fläche wirksam sein.
+Bild rechts: Angenommen,  F  habe ein parallele und eine 
+senkrechte Komponente,  F p und F s .
+F p  kann nicht existieren, da die Flüssigkeitsmoleküle in 
+dieser Richtung an  ΔA  vorbeigleiten und in diese Richtung 
+nicht „ziehen“ können – physikalisch ausgedrückt:
+Keine Scherkräfte bei Flüssigkeiten.
+
+Auch im dynamischen Bild des „Trommelns“, physikalisch 
+des Impulsübertrags  ⃗Δp  gilt das gleiche:  ⃗F =⃗Δp/ Δt  
+(Kraftstoß, Kraftschlag) und  ⃗Δp  stehen beim Abprallen der 
+Moleküle immer senkrecht auf  ΔA .
+
+Der hydrostatische Druck quantitativ
+
+Ansatz : Man betrachtet das in einem Quader eingeschlossene Volumen – genannt „Probevolumen“ 
+oder „Testvolumen“. Auf dieses übt das äußere Wasser Druck aus.
+Nur Kräfte in h-Richtung sind von Bedeutung, denn die seitlichen Kräfte  ⃗F L  und  ⃗F R  müssen sich 
+gegenseitig aufheben, sonst würde sich das Probevolumen von selbst bewegen.
+Ν   ach unten auf den Deckel mit der Fläche  ΔA  wirkt
+die Druckkraft:
+
+F 1= p1 ΔA ,  p1  ist zunächst unbekannt!
+
+Nach unten wirkt ebenfalls das Gewicht:
+
+F G=m g
+
+Nach oben wirkt die Druckkraft auf den Boden:
+
+F 2= p2 ΔA (Betrag)
+Keine Bewegung, also Gleichgewicht:
+F 2=F 1mg (Beträge
+
+Für m schreiben wir  m= ρV  , Masse = Dichte mal Volumen. Und für V gilt:  V = ΔA⋅(h2−h1)  .
+Damit wird die Gleichgewichtsbedingung zu:
+
+Dies gilt aber für alle  h2  und für alle  h1 . Also auch für  h1=0 ─ dort ist  p1= pLuft .
+
+  p2 A= p1 ΔA+ ρ ΔA(h2−h1) g  oder  p2= p1+ ρ(h2−h1) g .
+
+Daher allgemein:
+
+p(h)= pLuft+ ρ g h
+
+Abzüglich des Luftdrucks bleibt der reine Flüssigkeitsdruck:
+
+Ergebnis: Hydrostatischer Druck
+
+p(h)= ρ g h
+
+Der hydrostatische Druck hängt NUR von der Tiefe h ab, nicht
+
+von der seitlichen Ausdehnung des Flüssigkeitsbehälters.
+
+Beispiel:
+
+Der Druck in der Tiefe h ist in allen drei Gefäßen gleich.
+
+Der Druck am Fuß der Staumauer
+ist der gleiche wie der am Ende
+eines 1cm dicken mit Wasser
+gefüllten Rohres gleicher Höhe.
+
+„Hydrostatischer“ Druck beim Gas? – Luftdruck
+
+Die Ursache des Luftdrucks auf eine Fläche ist ebenfalls das 
+Gewicht der darüber liegenden Luftsäule.
+Der große Unterschied liegt in  m= ρ⋅V und
+
+Luft ist kompressibel, daher  ρ= ρ(h)
+
+Die Dichte ist eine Funktion der Höhe.
+Eine genaue Betrachtung liefert die so genannte 
+
+Barometrische Höhenformel ph= p0exp −h
+8000 m
+
+Exponentialfunktion (oder auch e-Funktion genannt)
+p=exp x=e x
+
+Spezielle Eigenschaft der e-Funktion: Druckabfall von 
+p h
+( )/ 2
+auf 
+beliebiges h.
+
+( )p h  
+ erfordert immer die gleiche Höhenzunahme, für 
+
+Luftdruck
+
+Wasserdruck
+
+Anwendung hydrostatischer Druck
+
+Flüssigkeitsmanometer
+Druckunterschied zwischen Niveau 1 und 2 ist
+
+Δp= ρ g h
+
+Zahlenwerte: 
+Wasser:  ρ=103 kg
+m3
+
+, h = 1m, damit wird
+
+Δp=9.81⋅103 kg⋅m⋅m
+
+m3⋅s2 ≈104 Pa≈0.1atm
+
+Der normale Luftdruck entspricht grob 10 Meter
+
+Wassersäule – genauer 10.32m.
+
+Im Manometer unpraktisch, daher:
+Quecksilber,  ρ=13.546⋅103 kg
+m3
+10.32 m⋅ 1
+
+13.562
+
+≈0.76 m  „Quecksilbersäule“ oder 760 
+
+mmHg (= Torr)
+
+, Luftdruck entspricht
+
+Aus Halliday/Resnick, Physik
+
+Ηydrostatischer Druck in der Physiologie
+
+Aus Schmidt/Lang/Thews
+Beim Stehen herrscht im Kopf ein niedrigerer Druck als beim Liegen oder beim Bücken. Bei der 
+Giraffe ist dieser Effekt so bedeutend, dass sie ein extra kräftiges Herz und ein besonderes 
+Bindegewebe um das Hirn entwickelt hat.
+
+Wenn externer Druck dazu kommt – Das Pascal’sche Prinzip
+
+Externer Druck, der auf ein abgeschlossenes
+
+Flüssigkeitsvolumen ausgeübt wird, wirkt in der
+Flüssigkeit überall; auch auf die Behälterwände.
+
+p(h)= pextern+ ρ g h
+
+Ist mit dem anschaulichen atomaren Bild (siehe
+
+oben) intuitiv einsichtig.
+
+(Bilder aus Halliday/Resnick)
+
+Anwendung Hydraulik
+
+Bei Vernachlässigung von  ρ g h  gilt im Bild
+
+rechts: pStempel Eingang= pStempel Ausgang  , also
+
+F Eing./ AEing.=F Ausg./ AAusg.
+
+Also ist  F Ausg.≫ F Eing.  da  AAusg.≫ AEing.
+
+Da  Ae d e= Aa d a  sein muss (gleiche Volumina), ist
+
+d a  kleiner als  d e .
+
+Dimensionsbetrachtung: 
+
+pV soll eine Energie sein?
+
+N
+m2 m3=N m=J  – soweit stimmt die Behauptung, aber anschaulich??
+
+Nochmals des Bild von oben. 
+Mit  F e  wird der Stempel links um  d e  verschoben. 
+Dabei wird er Stempel rechts um  d a  angehoben.
+Es kann also eine Last mit dem Gewicht  G≈ F a angehoben 
+werden.
+Die Last gewinnt die potentielle Energie  E=G d a≈ F a d a
+Nun ist  F a= pa Aa , also  E= pa Aa d a= paV a , was zu zeigen 
+war.
+In der Natur gibt es aber keine Zylinder und Kolben!
+Entgegnung: 
+Beispiel Zelle, die Wasser aufnimmt. Volumen V erhöht sich 
+um ΔV (rote Schnittfläche). Jedes Oberflächenelement dA wird
+durch die Kraft  F a  des Überdrucks durch das einströmende 
+Wasser um die Dicke d der roten Schicht nach außen 
+geschoben. Wie oben ist die äußere Kraft durch den Außen-
+druck p nur minimal kleiner als  F a , also  p dA≈ F a . - Für dA 
+gilt also wie oben  dE= p dA d . 
+
+Alle dA aufsummiert:  ΔE= p ΔV
+
+Hydrostatischer Druck und Osmotischer Druck
+
+Eine so genannte semipermeable Wand = SPW trennt zwei 
+verschieden konzentrierte wässrige Zuckerlösungen (Beispiel). 
+Wasser kann durch die SPW hindurch diffundieren, Zucker nicht. 
+
+ 
+
+Um links und rechts gleiche Verteilungen, d. h. gleiche
+
+Konzentrationen zu erreichen, diffundiert mehr Wasser nach rechts
+
+als nach links.
+
+Frage: Warum sollte gleiche Konzentration so viel Energie hergeben,
+dass die Flüssigkeit rechts gegen die Schwere angehoben wird?
+Antwort: Die Zuckermoleküle wollen mehr Raum haben, auf dem 
+sie sich verteilen können – sie haben einen Entropiegewinn, mehr 
+Unordnung. Bei der Änderung der freien Energie  ΔF= ΔE−TΔS  
+überwiegt das Anwachsen von  ΔS  das Anwachsen von
+ΔE=1/2 ρV g H . (H ist die Höhe des Flüssigkeitsspiegels rechts 
+über dem links; V muss im Mittel um H/2 angehoben werden.)
+Da Druck eine Kraft pro Fläche ist, muss es eine anhebende 
+Gegenkraft geben. 
+Diese osmotische Kraft ist ein Beispiel für die „Entropiekräfte“
+
+„Pfeffer’sche Zelle“
+
+Der Meniskus steigt durch 
+Eindiffusion der Moleküle des 
+Lösungsmittels, wenn die gefüllte
+Zelle in den Becher gestellt wird. 
+Die Höhe der Flüssigkeitssäule ist
+ein Maß für den hydrostatischen 
+Druck in Höhe der Membran. Da 
+dieser durch die Osmose erzeugt 
+wurde, wird er osmotischer Druck
+genannt.
+
+Die historische Pfeffer’sche Zelle (1877) ist im Prinzip gleich aufgebaut.
+
+Man kann durch äußeren Druck der Konzentrationsänderung auf
+
+der rechten Seite entgegenwirken.
+
+Dieser externe Druck ist dann ein Maß für die „Entropiekraft“. 
+
+Der Druck gegen den externen Druck wird osmotischer Druck
+
+genannt
+
+Im Bild rechts wird der osmotische Druck durch den roten
+waagerechten Pfeil symbolisiert – er wird hier also dem
+Lösungsmittel zugeordnet, da dieses ja fließen muss. 
+
+In Campbell/Reece wird der Lösung mit höherer Konzentration ein 
+negativer osmotischer Druck zugeordnet. Reines Lösungsmittel hat 
+dann den osmotischen Druck (auch „Druck-Potenzial“) null. 
+Obwohl negative Werte kleiner als null sind, wird bei hoher 
+Konzentration, also negativerem Wert, von „höherem“ 
+osmotischem Druck gesprochen.
+(siehe Kapitel "Transportvorgänge in Blütenpflanzen", Abschnitt 
+"Wasserpotenzial")
+
+Auftrieb als Folge des hydrostatischen Drucks
+
+Zerlege einen beliebigen Körper in die  
+grünen Stäbchen. 
+Die tatsächlichen Endflächen der Stäbchen 
+(rot) ersetzen wir durch horizontale 
+Projektionen  ΔAErsatz , da wir nur an 
+vertikalen Kräften F v interessiert sind. 
+Für jedes Stäbchen gilt:
+F v ,unten−F v , oben=( punten− poben) ΔAErsatz=
+
+ρWasser g H ΔAErsatz
+
+wobei H die Höhe des Stäbchens angibt. 
+Richtung immer nach oben.
+H ΔAErsatz  ist aber das Volumen des 
+Stäbchens.
+Aufsummieren von  F v, unten−F v, oben
+ergibt:
+
+F Auftrieb= ρWasser⋅g⋅V Körper
+
+Die Auftriebskraft entspricht dem Gewicht des vom
+
+Körper verdrängten Wassers – Archimedes.
+
+Bei teilweise eingetauchtem Körper erzeugt nur das eingetauchte Volumen einen Auftrieb, siehe
+
+watender Diplodocus.
+
+Watender Diplodocus
+
+Paläobiologie: Der Diplodocus konnte aufgrund seines Gewichts nicht oder nur sehr schwer an Land
+
+gehen.
+
+Schwimmen, Tauchen, Schweben
+
+Die Differenz von Gewicht und Auftriebskraft  ΔF  bestimmt, ob ein Körper schwebt, sinkt (taucht) 
+oder schwimmt.
+
+ΔF= ρWasser V g− ρKörper V g=( ρWasser− ρKörper)V g .
+
+aus Halliday/Resnick
+
+Der Dichteunterschied entscheidet also.
+
+(a)  Ein weiß eingehülltes „Wasserstück“. Dichteunterschied null. Hier ist die Gewichtskraft genau 
+
+gleich der Auftriebskraft, das „Stück Wasser“ schwebt.
+
+(b)  Stein, Dichteunterschied negativ, sinkt.
+(c)  Holz, Dichteunterschied positiv (meistens), schwimmt.
+
+Viele Fische schweben dank Schwimmblase
+
+aus Campbell/Reece
+
+Durch Änderung des Volumens der gasgefüllten Schwimmblase können manche Fische genau den
+
+Schwebezustand austarieren und somit Bewegungsenergie sparen. 
+
+Austarieren: Die mittlere Dichte  ̄ρKörper  wird durch die Schwimmblase gleich  ρWasser  eingestellt.
+Ebenso beim U-Boot.
+
+U-Boot- oder Fischmodell – Reagenzglas mit Luft im Standzylinder
+
+Durch äußeren Druck wird die „Schwimmblase“ verkleinert oder vergrößert und der Fisch
+
+schwimmt, schwebt und sinkt.
+
+Der Glaskörper des Aräometers ist unten mit Blei gefüllt.
+
+Anwendung: Aräometer zur Dichtemessung
+
+Der zylindrische Bereich mit der Skala habe die 
+Querschnittsfläche A.
+Das Gerät muss bis zu dieser Skala eingetaucht sein, 
+Eintauchtiefe h.
+Das Volumen der unteren Verdickung sei  V 0 .
+
+Ansatz: Kräftegleichgewicht, Auftrieb = Gewicht
+
+ρFlüssigkeit⋅(V 0+ A⋅h)⋅g=mg
+
+oder
+
+ρFlüssigkeit=m/(V 0+ A⋅h) ,
+
+weshalb man jedem h eine Dichte zuordnen kann.
+
+Die h-Skala ist nicht linear, was man mit der Umformung
+
+aus Gerthsen,Physik
+
+h=
+
+erkennt.
+
+m
+
+A⋅ρFlüssigkeit
+
+−
+
+V 0
+A
+
+

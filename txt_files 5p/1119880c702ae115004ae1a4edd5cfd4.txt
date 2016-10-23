@@ -1,0 +1,530 @@
+Long Short-Term Memory (LSTM) (C)
+
+Concepts and Applications of Neural Networks
+Patrick Faion, Alessa Grund
+09.05.2016
+
+Outline
+
+‣
+
+Introduction to recurrent neural networks
+‣ Motivation: Memory
+‣ Basic concept of RNNs
+‣ Learning algorithms
+
+‣ Long Short-Term Memory (LSTM)
+‣ Constant Error Carousel (CEC)
+‣ Forward Pass
+‣ Networks
+‣ Learning: Backward Pass
+
+Improvements
+
+‣
+‣ Conclusions
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+2 / 28
+
+Introduction to
+
+Recurrent Neural Networks
+
+Memory For Neural Networks
+
+‣ General aim: predict future data of time series
+‣ Problem: markov property holds only for sufficiently complex models
+
+‣
+
+Introducing memory can fix this issue
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+4 / 28
+
+Memory For Neural Networks
+
+‣ Feedforward networks can have memory!
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+http://www.thesimpledollar.com/how-to-read-a-stock-chart-in-just-five-seconds/
+
+5 / 28
+
+Memory For Neural Networks
+
+‣ Feedforward networks can have memory!
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+http://www.thesimpledollar.com/how-to-read-a-stock-chart-in-just-five-seconds/
+
+5 / 28
+
+Memory For Neural Networks
+
+‣ Feedforward networks can have memory!
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+http://www.thesimpledollar.com/how-to-read-a-stock-chart-in-just-five-seconds/
+
+5 / 28
+
+Memory For Neural Networks
+
+‣ Feedforward networks can have memory!
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+http://www.thesimpledollar.com/how-to-read-a-stock-chart-in-just-five-seconds/
+
+5 / 28
+
+Recurrent Neural Networks
+
+‣ Recurrent connections allow for (some kind of) memory in the network
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+6 / 28
+
+Recurrent Neural Networks
+
+‣ Recurrent connections can be visualized as forward connections 
+
+by unfolding the network through time
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+7 / 28
+
+Recurrent Neural Networks
+
+‣ Recurrent connections can be visualized as forward connections 
+
+by unfolding the network through time
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+7 / 28
+
+Recurrent Neural Networks
+
+‣ Recurrent connections can be visualized as forward connections 
+
+by unfolding the network through time
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+7 / 28
+
+Recurrent Neural Networks
+
+‣ Recurrent connections can be visualized as forward connections 
+
+by unfolding the network through time
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+7 / 28
+
+Recurrent Neural Networks
+
+‣ All connections ( input, recurrent, output ) should have the 
+
+same properties at all times. Network activity is different.
+
+S1
+
+S2
+
+S3
+
+S4
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+8 / 28
+
+Backpropagation through time (BPTT)
+
+‣ Unfold network over learning sequence and train with normal backpropagation. The 
+
+weights have to be the same for all times.
+
+‣ Vanishing error gradients restrict memory capacity to a few timesteps.
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+9 / 28
+
+Real Time Recurrent Learning (RTRL)
+
+‣ Adaptive gradient approximation allows for real time learning.
+
+Grad(0) = 0
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+10 / 28
+
+Real Time Recurrent Learning (RTRL)
+
+‣ Adaptive gradient approximation allows for real time learning.
+
+Grad(1) =
+Grad(0) + x
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+11 / 28
+
+Real Time Recurrent Learning (RTRL)
+
+‣ Adaptive gradient approximation allows for real time learning.
+
+Grad(2) =
+Grad(1) + x
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+12 / 28
+
+Recap: Memory in RNNs
+
+‣ RNNs store traces of previous activations/input in their current activity.
+‣ The influence of previous inputs on the current state gets smaller and smaller.
+
+Influence of 
+input from past 
+time on current 
+activity
+
+‣ As a result, RNNs forget past input very quickly!
+
+ti-3
+
+ti-2
+
+ti-1
+
+ti
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+13 / 28
+
+LSTM
+
+Long Short-Term Memory
+
+CEC (Constant Error Carousel)
+‣ LSTMs avoid vanishing and exploding gradients with a 1.0 weight to itself
+
+vanishing gradient:
+(0.4)t for large t will get close to zero
+
+0.4
+
+0.4
+
+0.4
+
+1.0
+
+STATE
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+15 / 28
+
+LSTM - A Simple Memory Cell 
+
+Net input to memory cell
+
+Squashed candidate state
+
+Cell state update
+
+Long Short -Term  Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+16 / 28
+
+LSTM - A Simple Memory Cell 
+
+Input Gate
+
+Net input to input gate 
+
+Squashed input gate activation
+
+New cell state update
+
+Long Short -Term  Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+17 / 28
+
+LSTM - A Simple Memory Cell 
+
+Output Gate
+
+Net input to output gate 
+
+Squashed output 
+gate activation
+
+New cell output
+
+Long Short -Term  Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+18 / 28
+
+LSTM - A Simple Memory Cell  
+
+Memory Cell
+
+I/O Gates
+
+Long Short -Term  Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+19 / 28
+
+Networks and Memory Cell Blocks
+‣ Memory cells in the same cell block share the input and output gates
+
+‣
+
+Indexing: cell v in block j
+
+Memory cell
+Memory cell block
+I/O Gates
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+20 / 28
+
+Learning
+
+‣ LSTMs use a fusion of RTRL and truncated BPTT
+‣ Weight update is done online for every timestep.
+
+Error of input 
+gate and cell 
+input with RTRL 
+and stored 
+gradients
+
+Error of output 
+gate with 
+truncated BPTT
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+21 / 28
+
+Learning - Output Gates
+
+Error caused by the cell’s output
+
+(recap: forward output function)
+
+Error caused by output gate
+
+Output gate weight update
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+22 / 28
+
+Learning - State Error
+
+Error caused by the cell’s output
+
+(recap: forward output function)
+
+Error arriving at the internal state
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+23 / 28
+
+Learning - Input Gate Derivative
+
+‣ At each forward pass we update the stored derivatives:
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+24 / 28
+
+Learning - Cell Input Derivative
+
+‣ At each forward pass we update the stored derivatives:
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+25 / 28
+
+Learning - Incoming Weight Update
+
+‣ Weight updates for cell input and input gates with stored derivatives
+
+Long Short-Term Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+26 / 28
+
+LSTM - Improvements
+
+Forget Gate
+
+Peephole 
+Connections
+
+Long Short -Term  Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+27 / 28
+
+Conclusions
+
+‣ Classical RNNs cannot memorize values over many timesteps
+
+‣ LSTMs offer the possibility to store values for infinite time
+
+‣ Learning can be done online, but takes long to converge
+
+‣ Many variations of LSTMs were developed and are widely used
+
+Long Short -Term  Memory (LSTM) (C)
+
+09.05.2016
+
+Patrick Faion, Alessa Grund
+
+28 / 28
+
+

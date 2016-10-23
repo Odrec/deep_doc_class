@@ -1,0 +1,60 @@
+Table of Contents
+
+Homework Assignment #1 jpirlet fbrieger mvischer .................................................................. 1
+Ex 1: load experiment data ..................................................................................................  1
+Ex 2: calculate tuning curve .................................................................................................  1
+Ex 3: visualize data ............................................................................................................  1
+Ex 4: fit a curve through data points ......................................................................................  2
+
+Homework Assignment #1 jpirlet fbrieger mvis-
+cher
+
+clear workspace
+
+clear all
+
+Ex 1: load experiment data
+
+load experiment data
+
+load ('Extracellular_Recording_trials_1.mat')
+
+Ex 2: calculate tuning curve
+
+calculate the mean of all trials and squeeze out 2nd dimension
+
+trialsSum = mean(d,2);
+trialsSqueezed = squeeze(trialsSum(:,1,:));
+% calculate the mean of all 100 measurements (formerly 3rd dimension)
+trialsFrequency = mean(trialsSqueezed,2);
+% plot the resulting 8x1 vector of frequency means as single red stars
+
+Ex 3: visualize data
+
+figure
+plot(linspace(0,157.5,8),trialsFrequency, '*r')
+% title and label the plot
+title('Tuning Curve')
+ylabel('Spike Frequency (Hz)')
+xlabel('Orientation (degrees)')
+
+1
+
+Ex 4: fit a curve through data points
+
+calculate the coefficients using polyfit
+
+P = polyfit(linspace(0,157.5,8)',trialsFrequency,2);
+% hold plot to add the polynomial
+hold on;
+% plot the polynomial to the figure
+plot(linspace(0,157.5,100),polyval(P, linspace(0,157.5,100)))
+hold off;
+
+2
+
+Published with MATLAB® 7.13
+
+3
+
+

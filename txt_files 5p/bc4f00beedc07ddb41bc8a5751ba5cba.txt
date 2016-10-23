@@ -1,0 +1,117 @@
+ 
+
+Boltzmann-Verteilung: Population von Energieniveaus (P) 
+
+Wie verhält sich die Zahl N1(ε1) der Teilchen in Energieniveau ε1 zur Zahl N2(ε2) der Teilchen 
+in Energieniveau ε2? Geben Sie einen Ausdruck für das Verhältnis der Besetzungszahlen an. 
+ 
+
+ 
+
+𝑛1
+𝑛2
+
+ 
+
+ 
+
+ 
+
+(−
+
+𝜀1
+𝑘𝐵 𝑇
+
+)
+
+=  
+
+𝑒
+
+(−
+
+𝑒
+𝜀1
+𝑘𝐵𝑇
+
+  ∙  
+
+)
+
+ +  𝑒
+
+(−
+
+𝜀2
+𝑘𝐵 𝑇
+
+)
+
+(−
+
+𝜀1
+𝑘𝐵 𝑇
+
+)
+
+𝑒
+
+(− 
+
++ 𝑒
+𝜀2
+𝑘𝐵 𝑇
+
+)
+
+(−
+
+𝑒
+
+𝜀2
+𝑘𝐵 𝑇
+
+)
+
+ 
+
+ 
+
+ӏ kürzt sich weg 
+
+𝑒
+
+ 
+
+)
+
+𝜀1
+𝑘𝐵 𝑇
+𝜀2
+𝑘𝐵𝑇
+
+)
+
+(− 
+
+(− 
+
+𝑒
+
+            ӏ Potenzgesetz anwenden:  
+
+𝑎𝑥
+𝑎𝑦   =    𝑎𝑥 − 𝑦 
+
+−𝜀1−(− 𝜀2)
+
+  𝑒
+
+𝑘𝐵 𝑇
+
+   =    𝑒
+
+𝜀2− 𝜀1
+𝑘𝐵 𝑇  
+
+

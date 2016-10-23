@@ -1,0 +1,74 @@
+Social Data Mining
+
+Andrea Suckro, Lukas Rein, Henning Wübben
+
+Task 1
+
+Choosing our Tool
+
+ Started with R 
+
+ Ran into problems because R was very slow handling the size of the data set
+
+ Switched to Python and solved the whole task in it
+
+ Was really quick in reading and processing the csv files
+
+Task 1
+
+ Plot number of tweets each day per minute.
+
+ Plot number of tweets of the related word of goal vs. time 
+
+(per minute) for the days that have outstanding peaks 
+than usual.
+
+Plot number of tweets each day per minute.
+
+Observations:
+
+-third graph looks 
+
+different
+
+-all graphs contain a 
+characteristic activity 
+
+pattern
+
+Plot number of tweets that contain the 
+regex "g+o+a*l+|t+o+r+"
+
+Plot number of tweets that contain the 
+regex "g+o+a*l+|t+o+r+"
+
+huge peak at: x=1285
+
+corresponds to:
+
+21:25:00
+
+deutsche Sommerzeit 
+
+(UTC +2) -2
+
+UTC
+
+closer look at the peak
+
+x = 77080
+
+corresponds to 21:24:40
+
+regex = "f+o+u+l+|c+a+r+d+"
+
+Peaks at x = 1169, 1173, 1216 and 1224
+
+correspond to yellow cards at
+
+19:29, 19:33, 20:24 and a huge foul at 20:16
+
+Do you have any further questions or 
+recommendations?
+
+

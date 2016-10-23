@@ -1,0 +1,193 @@
+Seminar:
+
+GIS Customizing
+
+M.Sc. Andreas Wichmann
+
+Universität Osnabrück
+
+Institut für Geoinformatik und Fernerkundung
+
+FWTools
+
+Recap
+
+ FWTools: Set aus Open Source GIS
+
+ Raster‐ und Vektorverarbeitung mit GDAL/OGR
+
+ Umgang mit verschiedenen Datenformaten und SRS
+
+ Verarbeitung größerer Datenmengen
+
+Agenda
+
+ 4 GeoTools
+
+ 4.1 Einführung
+
+ 4.2 Features
+
+ 4.3 Visualisierung
+
+ (4.4 Entwicklung eines GIS)
+
+ 4.5 Zusammenfassung
+
+GeoTools
+
+‐
+
+4.1 Einführung
+
+GeoTools
+
+ GeoTools: Open Source Java GIS Toolkit
+ OSGeo Project
+ Verwendet JTS Topology Suite
+ Unterstützt viele Raster‐ und Vektorformate
+
+ arcsde, arcgrid, geotiff, grassraster, gtopo30, image 
+
+(JPEG, TIFF, GIF, PNG), imageio‐ext‐gdal, imagemoasaic, 
+imagepyramid, JP2K, matlab
+
+ app‐schema, arcsde, csv, dxf, edigeo, excel, geojson, org, 
+
+property, shapefile, wfs
+
+GeoTools
+
+ Weitere unterstützte Datenformate
+
+ XML (gml2, gml3, kml, . . .)
+ Datenbanken (db2, mysql, oralce, postgis, spatiallite, . . .)
+
+ Implementiert viele OGC Standards
+
+ ISO 19107 Geometry
+ OGC General Feature Model mit Simple Feature Support
+ OGC Filter und CQL
+ Clients für WFS, WMS und (WPS)
+ . . .
+
+GeoTools
+
+Quelle: http://docs.geotools.org/latest/userguide/geotools.html
+
+GeoTools
+
+‐
+
+4.2 Features
+
+GeoTools
+
+ Aufgabe
+
+ Lest die unten angegebenen CSV‐Daten in ein Java‐
+
+Programm ein
+
+ Erstellt anhand dieser Daten eine SimpleFeature‐Liste
+
+LAT, LON, CITY, AREA
+52.2799, 8.0472, Osnabrueck, 120
+51.5136, 7.4653, Dortmund, 281
+52.3759, 9.7320, Hanover, 204
+53.5511, 9.9937, Hamburg, 755
+52.5192, 13.4061, Berlin, 892
+48.7754, 9.1818, Stuttgart, 207
+50.1109, 8.6821, Frankfurt, 248
+51.3397, 12.3731, Leipzig, 297
+
+GeoTools
+
+ Lösung
+
+ SimpleFeatureType: Zur Beschreibung der Daten
+
+ GeometryFactory: Zur Erzeugung einer Geometrie
+
+ SimpleFeatureBuilder: Zur Erzeugung eines SimpleFeatures
+
+ (SimpleFeatureCollection: Kontainer für die Features)
+
+ Aktuell als „immutable view” oder „result set” eingestuft
+
+GeoTools
+
+ Aufgabe
+
+ Erstellt aus der SimpleFeature‐Liste ein ShapeFile mit 
+
+WGS84 als CRS
+
+ Lösung
+
+ ShapefileDataStoreFactory ‐> ShapefileDataStore ‐> 
+
+SimpleFeatureSource ‐> SimpleFeatureStore
+
+ Transaction
+
+GeoTools
+
+ Aufgabe
+
+ Erzeugt aus der CSV‐Datei eine Shape‐Datei mit zusätzlich 
+Daten weiterer Städte, die im Quellcode im WKT‐Format 
+angegeben sind
+
+ Lösung
+
+ WKTReader
+
+GeoTools
+
+‐
+
+4.3 Visualisierung
+
+GeoTools
+
+ Aufgabe
+
+ Lest eine Shape‐Datei ein und visualisiert den Inhalt in 
+
+einem JMapFrame
+
+ Lösung
+
+ MapContent (früher: MapContext)
+ JMapFrame
+
+GeoTools
+
+GeoTools
+
+‐
+
+4.4 Entwicklung eines GIS
+
+GeoTools
+
+GeoTools
+
+‐
+
+4.5 Zusammenfassung
+
+GeoTools
+
+ GeoTools: Open Source Java GIS Toolkit
+
+ Ermöglicht einfachen Umgang mit Geodaten
+
+ Lesen
+ Schreiben
+ CRS‐Transformationen
+ Räumliche Abfragen
+ Visualisierung
+
+

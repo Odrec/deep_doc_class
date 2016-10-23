@@ -1,0 +1,1116 @@
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Vorlesungsübersicht Genetik Erweiterungsmodul (WS2014/15)
+Grundlagen der allgemeinen Genetik und Entwicklungsgenetik - Teil 1: Pro- und niedere Eukaryonten
+
+Mittwoch, 22.10.2014
+L’État – c’est moi!
+Regulations-Hierarchie  
+lac-Operon, positive, negative Regulation
+Freitag, 24.10.2014
+Von den Vorteilen der Globalisierung:
+Übergeordnete  Regulationsmechanismen 
+ara-Operon, DNA-Biegung, Glucose-Modulon
+Mittwoch, 29.10.2014
+Jedes Töpfchen hat sein Deckelchen:
+Zweikomponenten-Systeme 
+Osmoregulation, Antisense-RNA, 
+Stickstoffregulation
+
+Freitag, 31.10.2014
+There are more things in heaven and 
+earth ...
+Weitere Regulationsmechanismen
+Klassen von Transkriptionsfaktoren, 
+Attenuation, Riboswitches, Ribosomen-
+synthese, kleine RNAs bei Eukaryonten
+
+Mittwoch, 5.11. 2014
+Die Grippe der Bakterien:
+Lambda-Regulation
+Freitag, 7.11.2014
+Das Prä-Klonierungs-Zeitalter:
+Klassische Hefegenetik          
+Tetradenanalyse, Holliday-Modell
+Mittwoch, 12.11.2014
+The awesome power of yeast genetics:
+Molekulare Hefegenetik       
+Vektoren, homologe Rekombination, 
+Deletionen, Tags etc., Dihybrid-System
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Konzepte zu Grundlagen der klassischen 
+
+Genetik niederer Eukaryonten
+1. S. cerevisiae ist ein eukaryontischer Modellorganismus
+2. Der Lebenszyklus von Laborstämmen mit stabilem Paarungs-
+
+typ und stabilen haploiden und diploiden Vermehrungsphasen
+erlaubt genetische Ansätze unter Ausnutzung der Sexualität
+
+3. Neurospora crassa bildet bei der sexuellen Fortpflanzung geordnete 
+
+Asci mit 8 Sporen, die durch Meiose und eine Mitose entstehen
+4. Genetische Marken lassen sich durch Tetradenanalyse verfolgen 
+
+und werden nach Mendel vererbt
+
+5. Damit lassen sich Crossover, Genkonversion und postmeiotische
+
+Segregation beobachten
+
+6. Bei S. cerevisiae lassen sich die ungeordneten Tetraden durch 
+
+Mikromanipulation und Analyse der genetischen Marker 
+untersuchen (parentaler  & nichtparentaler Dityp, Tetratyp)
+
+1
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Konzepte zu Grundlagen der klassischen 
+
+Genetik niederer Eukaryonten
+
+7. Grundlage der genetischen Rekombination ist der Austausch von 
+
+Sequenzen zwischen doppelsträngigen DNA-Molekülen der 
+Chromatiden homologer Chromosomen
+
+8. Der molekulare Mechanismus wird durch das Holliday-Modell
+
+beschrieben (Strangbruch, Bildung von Heteroduplex-DNA und 
+Wanderung der “Holliday-Junction“, Auflösung der Holliday-
+Struktur)
+
+9. Genkonversion an einem bestimmten Locus ist zu 50% mit einem 
+
+Crossover (= reziprokem Austausch der distalen Marker) 
+gekoppelt
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Molekulargenetik von 
+
+Saccharomyces 
+
+cerevisiae
+Vector- & 
+
+Dr. Hans-Dieter Schmitt
+
+Darmstadt ≈1983
+
+Transformations-Systeme  
+
+2
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Allgemeine Voraussetzungen für gentechnische 
+
+Untersuchungen an Organismen
+
+Transformationsmethode
+(Möglichkeit, DNA in die Zelle zu bringen
+
+ Tumortransformation)
+
+Selektionsmethode
+(Möglichkeit die neu eingebrachte DNA
+phänotypisch nachzuweisen)
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Transformationsmethoden für Hefen
+
+Heinisch & Hollenberg, 1993
+
+3
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Selektionsmarker für Hefen
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Minimale Anforderungen an einen 
+
+(Hefe) Vektor
+1) Selektierbarer Marker
+2) Amplifikation in E.coli
+
+( ori; Selektion; "shuttle vector") 
+3) Replikationsursprung [ARS] für Hefe
+
+4
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+z.B. Hefe-DNA
+
+Isolierung der 
+ersten Hefegene
+- Genbank
+- Komplementation
+
+z.B. Medium ohne
+Tryptophan bzw. 
+ohne Uracil
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Vektoren:
+E. coli-Vector 
+pBR322 als Basis
+- Replikation in E. coli
+- Resistenz gegen
+Ampicillin und
+gegen Tetracyclin
+
+HindIII
+
+EcoRI
+
+ScaI
+
+PvuI
+
+PstI
+
+bla
+
+EcoRV
+NheI BamHI
+SphI
+
+SalI
+
+tet
+
+pBR322
+4363 bps
+
+NruI
+
+ori
+
+NdeI
+
+PvuII
+
+5
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Vektoren:
+YRp7 als erster 
+
+Hefe/E.coli
+
+"shuttle"-Vektor
+- Replikation in E. coli
+- Replikation in Hefe (ARS)
+- Resistenz gegen Ampicillin  
+
+und Tetracyclin in E. coli
+- Selektion auf Trp-freiem
+Medium in trp1-Mutante
+von S. cerevisiae
+
+EcoRI
+HindIII
+
+XbaI
+
+TRP1
+
+PstI
+
+EcoRV
+NheIBamHI
+SphI
+SalI
+
+tet
+
+NruI
+
+EcoRI
+
+ARS
+
+YRp7
+
+5816 bps
+
+bla
+
+ScaI
+
+PstI
+
+ori
+
+PvuII
+
+NdeI
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Funktionselemente in Hefechromosomen
+
+Abbildung Review
+
+genes
+
+6
+
+Eco RI 
+
+URA3
+
+YAC
+
+TRP1
+bla
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Cloning of large DNA
+
+fragments in YAC vectors
+(“Yeast Artificial Chromosomes”)
+
+partial 
+
+restriction 
+with EcoRI
+
+TEL
+
+TEL
+
+ori
+
+Bam HI 
+
+Bam HI 
+
+restriction with
+EcoRI and BamHI
+
+TEL
+
+TRP1
+
+CEN/ARS
+
+TEL
+
+URA3
+ligation, yeast transformation and
+
+selection for trp- and ura prototrophy
+
+TEL
+
+TRP1
+
+CEN/ARS
+
+up to 2 Mbp of donor DNA
+
+URA3
+
+TEL
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Vektoren:
+YEp352 als 
+
+Hochkopienzahl-
+
+Vektor ("multicopy")
+- Replikation in E. coli
+- Replikation in Hefe (2µm)
+- Resistenz gegen Ampicillin  
+
+in E. coli
+
+- blau/weiß-Screening in E.coli
+
+durch -Komplementation
+
+- Selektion auf Ura-freiem
+Medium in ura3-Mutante
+von S. cerevisiae
+
+"Polylinker"
+= "multiple
+cloning site"
+
+230
+
+EcoRI
+KpnI
+BamHI
+XbaI
+SalI
+SphI
+HindIII
+
+281
+
+StuI 943
+
+NcoI 1172
+EcoRV 1191
+
+ori
+
+lacZ'
+
+URA3
+
+YEp352
+5188 bps
+
+bla
+
+2µm
+
+2µm = Replikikations-Ursprung aus natürlichem Hefeplasmid
+
+7
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Grundtypen von Hefevektoren
+YIp =  "yeast integrative plasmid"
+YRp = "yeast replicating plasmid"
+YEp = "yeast episomal plasmid"
+YCp = "yeast centromeric plasmid"
+YLp = "yeast linear plasmid"
+YAC = "yeast artificial chromosome"
+YDp = "yeast disruption/deletion plasmid"
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Eigenschaften von Hefevektoren
+
+Tabelle aus Review mit
+Hefevektoren
+
+8
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Klonierung eines Hefegens über Komplementation 
+
+(z.B. Gen für Glykolyseenzym)
+
+Herstellung einer
+
+Genbank in "shuttle"-Vektor
+
+Herstellung einer
+Glykolysemutante
+
+Eine Genbank besteht aus
+einem Gemisch von 
+Plasmiden mit verschiedenen
+Insertionen von Hefe-DNA-
+Fragmenten (mindestens
+5000-10000 Insertionen).
+
+Transformation
+
+Selektion auf
+
+Glucose
+
+Plasmide in Hefe sind
+kompatibel, d.h. eine
+kompetente Zelle nimmt
+mehrere verschiedene
+Plasmide auf und ist in
+der Lage, sie zu replizieren.
+
+Plasmidisolierung,
+
+Amplifikation in E.coli &
+
+Retransformation in S.cerevisiae
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Orthologs of human disease
+
+genes in S. cerevisiae
+
+aus: Feldmann (2010): "Yeast -
+Molecular and Cell Biology"
+
+9
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Dr. Hans-Dieter Schmitt
+
+Darmstadt ≈1988
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Molekulargenetik von 
+Saccharomyces cerevisiae
+
+(Genomweite) Funktionsanalyse,
+konditionale Genexpression und 
+das Hefe-Dihybrid-System (YTH) 
+
+10
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Integration eines Hefeplasmides ins Genom
+
+bla
+
+URA3
+
+x
+ura3
+
+Chromosom V
+Tandem-
+Integration
+(2-10 Kopien)
+
+Integration
+
+URA3
+
+bla
+
+x
+ura3
+
+URA3
+
+bla
+
+x
+
+URA3
+
+bla
+
+x
+ura3
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Deletion klonierter Hefegene über homologe Rekombination
+bla
+
+bla
+
+5' end      3' end
+
+gene X
+URA3
+
+e.g. 
+EcoRI
+
+fragment excision
+yeast transformation
+
+restriction
+
+ligation with marker
+amplification in E.coli
+
+gene X
+
+URA3
+
+homologous recombination
+
+selection for
+
+uracil prototrophy
+
+gene X
+
+URA3
+
+11
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Deletion durch PCR + homologe Rekombination
+
+40 nt 
+YGS
+
+20 nt vector
+
+Prom
+
+kanMX
+
+Term
+
+loxP
+
+YGS = Yeast 
+Genomic Sequence
+
+Vektor (z.B. pUG6)
+
+PCR
+
+loxP
+
+40 nt 
+YGS
+
+20 nt vector
+
+Prom
+
+kanMX
+
+Term
+
+PCR-Deletionskassette
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Deletion durch PCR + homologe Rekombination
+
+Prom
+
+kanMX
+
+Term
+
+PCR-Deletionskassette
+
+ Transformation in Hefe
+homologe Rekombination
+
+ATG
+basengenaue
+Deletion
+Prom
+
+kanMX
+
+ORF
+
+("open reading frame")
+
+Term
+
+TGA
+
+loxP
+
++ Cre-Rekombinase 
+Entfernunng des Markers und
+Verbleib einer loxP-Stelle im Genom
+
+J.Heinisch
+
+12
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+S. cerevisiae-
+Stammsammlungen    
+mit ≈ 6000 Deletionen 
+jeweils in Haploiden 
+beider Paarungstypen 
+bzw. in Diploiden bei 
+essentiellen Genen in 
+Frankfurt (EUROSCARF) 
+und in Berkely
+
+Dr. Hans-Dieter Schmitt
+
+Darmstadt ≈1988
+
+"clone by phone"
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Untersuchung 
+essentieller 
+
+Gene
+
+Tetrade
+
+heterozygote
+Diploide
+
+Sporulation
+
+Mikromanipulation
+
+kein Wachstum Wachstum Wachstum kein Wachstum
+
+13
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Promotorstrukturen bei Pro- und Eukaryonten 
+
+Genverteilung in S. cerevisiae
+
+SOK1
+
+P
+
+P
+
+TRP1
+
+P
+
+GAL3
+
+E. coli lac-Operon
+
+Problem: 
+Koordinierte 
+Regulation (z.B. 
+Galactose-
+Verwertung)
+
+14
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Regulation 
+im Hefe-
+
+GAL-System
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Das Galactose-Regulon in Hefe
+
+GAL10
+
+Promotor (z.B. GAL1/10)
+
+GAL1
+
+Glucose
+
+BD
+
+AD
+
+ohne Galactose:
+Hemmung der
+Aktivierungs-Domäne
+
+Gal80p
+
+Gal4p
+
+Galactose
+
+Gal80p
+
+Gal3p
+
+- Glucose /  + Galactose
+
+15
+
+Vorlesung Genetik EWI - WS2014/15
+
+Der GAL1/10-Promotor
+
+Jürgen J. Heinisch
+
+"klassisches" Experiment von Jasper Rine
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Untersuchung 
+
+letaler 
+
+Deletionen
+
+heterozygote
+
+Diploide
+
+Glucose
+- ura
+
+Tetrade
+
+GAL1p
+
+essentielles
+
+Gen
+
+URA3
+
+Sporulation
+
+Mikromanipulation
+
+Galactose
+
+Glucose
+Galactose
+
+-
++
+
++
++
+
++
++
+
+-
+-
+
+16
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Untersuchung letaler Deletionen
+
+
+
+GAL1p
+
+essentielles
+
+Gen
+
+URA3
+
+-
+Glucose
+Galactose +
+
+Konditionale
+Expression
+
+("Galactose depletion assay")
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Das Hefe-
+
+Dihybrid-System
+"YTH" = yeast two hybrid
+zur Untersuchung von Protein-
+Protein-Wechselwirkungen in vivo
+X,Y = auf Wechselwirkung
+
+Y
+
+AD
+
+Reporter-Gen
+
+X
+
+BD
+UAS
+
+zu untersuchende
+Proteine
+
+fusioniert (Gene) an:
+BD = DNA-Bindedomäne
+AD = Transkriptions-
+
+Aktivierungsdomäne
+
+UAS = upstream activating
+
+sequence (d.h. Binde-
+stelle für Transkr.-
+Faktor)
+
+z.B.
+Gal4p
+lexA
+
+BD
+UAS
+
+Y
+
+X
+
+AD
+
+z.B.
+Gal4p
+VP16
+
+Reporter-Gen
+
+z.B. lacZ
+HIS3
+ADE2
+
+17
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Protein-Protein-Wechselwirkungen im 2-Hybrid-System
+
+CWI-Signalweg
+
+Sensoren
+
+Wsc1
+
+Mid2
+
+GEF
+
+Rho1
+
+Pkc1
+
+MAPK-
+Kaskade
+
+Rlm1
+
+CWI = "cell wall integrity"
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Deletion durch PCR + homologe Rekombination
+
+Prom
+
+kanMX
+
+Term
+
+PCR-Deletionskassette
+
+ Transformation in Hefe
+homologe Rekombination
+
+ATG
+basengenaue
+Deletion
+Prom
+
+kanMX
+
+ORF
+
+("open reading frame")
+
+Term
+
+TGA
+
+loxP
+
++ Cre-Rekombinase 
+Entfernunng des Markers und
+Verbleib einer loxP-Stelle im Genom
+
+J.Heinisch
+
+18
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Intrazelluläre Proteinlokalisation: Nachweis über 
+
+"tags" und Antikörper
+
+N
+
+5'
+
+Protein
+
+RNA
+
+Marker
++ GAL1promoter
+
+Fusionsprotein
+
+C
+
+3'
+
+DNA
+
+Marker
+
+6x His
+Flag
+etc.
+
+c-myc
+HA
+GST
+GFP
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Intrazelluläre Proteinlokalisation: Nachweis über 
+
+"tags" und Antikörper
+
+Fusionsprotein
+
+Antikörper
+
+Affinitätsreinigung
+
+an Säulen
+
+Western
+
+Fluoreszenz-markierter
+
+Zweitantikörper
+
+Nachweis
+von Größe, Menge oder
+Lokalisation (nach Dichtegradient)
+
+19
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Intrazelluläre Proteinlokalisation: GFP
+
+Aequorea victoria:
+
+"Green Fluorescent Protein"
+
+Vorlesung Genetik EWI - WS2014/15
+
+Jürgen J. Heinisch
+
+Lokalisierung des Sensors Wsc1p in Hefe
+
+1997 Sigrid Nilius
+
+2001
+
+Hans-Peter Schmitz
+
+2001
+
+Hans-Peter Schmitz
+
+2001
+
+je 30 Aufnahmen (XY-Maximal-Projektion)
+
+Hans-Peter Schmitz
+
+20
+
+

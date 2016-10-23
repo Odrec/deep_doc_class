@@ -1,0 +1,676 @@
+Outline
+
+Unification
+
+Unification Algorithm
+
+Procedural Semantics of Prolog
+
+The Prolog Prove Loop
+
+Consequences
+
+Induction
+
+The induction principle 
+
+Examples 
+
+Proof by Induction 
+
+Recursive Programs and the Proof by Induction
+
+Discussion 
+
+Arithmetic and why it’s not Logic
+
+Peano’s Axioms 
+
+Gödel’s Incompleteness Result 
+
+Compare operations
+
+Unification Algorithm (Functional Form)
+
+Helpers:
+
+function var : term → bool
+
+returns true if term is a variable
+
+function dec : term → term × term list
+
+returns the functor and the argument list
+
+Unify two terms:
+
+function unify : term × term × substitution → substitution
+
+if
+
+var(T1)
+
+else if var(T2) 
+
+then Θ  {T1 ↦ T2} 
+
+then Θ  {T2 ↦ T1} 
+
+unify(T1, T2, Θ)=    else if (F,AL1) = dec(T1)
+
+then unify_l(AL1,AL2,Θ)
+
+∧ (F,AL2) = dec(T2)
+
+else
+
+fail
+
+3
+
+Unification algorithm
+
+Unify a list of terms:
+
+function unify_l : term list × term list × substitution → substitution
+
+unify_l(L1,L2,Θ)=
+
+if
+
+L1 = L2 = []
+
+then
+
+Θ  
+
+else if
+
+else
+
+L1 = [T1|R1] 
+L2 = [T2|R2]
+
+∧
+
+then
+
+unify_l(R1,R2,unify(T1Θ, T2Θ, Θ))
+
+fail
+
+4
+
+The Prolog Prove Loop
+
+1. Start with the list of subgoals from the query 
+
+an empty substitution
+
+Q0 = Q = G1, G2,... , 
+Θ = {}, 
+
+a clause pointer pointing to begin of program, 
+
+C
+
+an empty stack of choice points 
+
+CP
+
+(we keep in mind that the elements of Q are treated as negated atomic 
+formulas)
+
+2. While Q is not empty
+
+2.1 Select the first subgoal G1 from Q 
+2.2 Find clause according to C and process it (next slide) 
+
+2.3 If no clause can be found
+
+2.3.1
+
+2.3.2
+
+If there is no choice point left: return fail 
+
+Pop the last choice point from CP and continue
+
+3. Print vars(Q0)Θ and return success
+
+The Prolog Prove Loop
+
+ Find clause according to C and process it (from last slide):
+
+ According to C , select (if possible) the next clause 
+
+H : −B1, B2, ..., Bk such that H is unifiable with G1
+C now points to the clause following the selected clause
+
+1. Push a choice point (state of the prover: Q, Θ, C) to CP 
+
+2. Use a copy H′ : −B1′,B2′,...,Bk′ of the clause H : −B1,B2,...,Bk with
+
+new (local) variables
+
+(may be k = 0, if the clause is a fact) 
+
+3. Unify G1 with H′ to get the most general unifier Θ′ 
+4. Set
+
+Q := (B1′,B2′,...,Bk′,G2,...)Θ′, 
+Θ := ΘΘ′, 
+
+C := begin of program,
+
+continue
+
+Example
+
+% A simple program to demonstrate the prolog solver logic
+
+answer(42).
+
+answer(om).
+
+ask('What is the meaning of life?', 'Ha. Ha. You just want to trick me.').
+
+ask(_, Q) :-
+
+answer(Q).
+
+ask('Is it raining?', 'Yes, if the street is wet.').
+
+?- ask(‘What is the meaning of life?’, Answer).
+
+Answer = ‘Ha. Ha. You just want to trick me.’
+
+Peer Instruction question: How many choice points are left after this answer?
+
+File: answer.pl
+
+Consequences
+
+ Rules and facts are used in the sequential order of the program 
+
+ Each rule is used like a proof rule:
+
+ To prove the conclusion prove the goals of the body 
+
+ in the given order
+
+ The behavior of the prover changes if we change the order of the 
+
+clauses of a program
+
+ Problems may occur if the set of solutions is infinite:
+
+ is_a_list([]). 
+
+is_a_list([_ |R]) :-
+
+is_a_list(R). 
+
+ is_a_list([_ |R]) :-
+
+is_a_list(R).
+
+is_a_list([]).
+
+When do the two definitions
+behave differently?
+
+When using is_a_list to
+generate lists! (First one generates lists of l
+ength 0,1,2,3,4,…., second one produces an 
+error because of infinite recursion.) 
+
+Consequences
+
+ State base cases first 
+
+ then they will be used first
+
+ State the recursive rule(s) as last clause(s) 
+
+ then they will be used if the base cases cannot be applied
+
+ Rule of thumb: Recursive goal as LAST goal of LAST clause
+
+ so called ’tail recursive programs’ 
+
+(not always possible)
+
+ can be optimized by the compiler 
+
+ Don’t try to avoid recursion!
+
+Prolog can handle recursion very efficiently!
+
+Rotate pairs in a list of pairs
+
+Example: rotate
+
+rotate([],[]).
+
+rotate([X|R],[Y|R1]) :-
+
+rotate1(X,Y),
+
+rotate(R,R1).
+
+rotate1(X,X).
+
+rotate1([L,R],[R,L]).
+
+?- rotate([[1,2],[3,4]], L).
+
+L = [[1,2], [3,4]];
+
+L = [[1,2], [4,3]];
+
+L = [[2,1], [3,4]];
+
+L = [[2,1], [4,3]]
+
+See domino.pl or
+http://swish.swi-prolog.org/p/uos-intro-ai-domino.swinb
+
+Example: permutate
+
+See domino.pl or
+http://swish.swi-prolog.org/p/uos-intro-ai-domino.swinb
+
+permutate([],[]). 
+permutate(L,[X|R1]) :-
+append(A,[X|B],L), 
+append(A,B,R), 
+permutate(R,R1). 
+
+permutate(L1, L2) – List L2 is a permutation of List L1  
+
+Peer instruction: Which statement describes best how permutate/2 works?
+
+Application: Domino
+
+Task:
+
+Give a set of domino blocks, 
+find a configuration of
+blocks to form a complete
+valid domino queue.
+
+Configuration:
+- Blocks can be rotated
+- Order of blocks can be
+
+changes
+
+Example:
+domino_data([[1,6],[2,4],[3,3],[1,3],[3,4]]).
+?- domino(X).
+X = [[2,4],[4,3],[3,3],[3,1],[1,6]]
+
+See domino.pl or
+http://swish.swi-prolog.org/p/uos-intro-ai-domino.swinb
+
+Code
+
+domino_data([[1,6],[2,4],[3,3],[1,3],[3,4]]).
+
+Pattern:
+Generate and test
+
+domino(X) :-
+
+domino_data(Y),
+
+generate(Y,X),
+
+test(X).
+
+generate(X,Y) :-
+
+rotate(X,Z),
+
+permutate(Z,Y).
+
+test([]).
+
+test([_X]).
+
+test([[_A,B],[B,C]|R]) :-
+
+% neighboring condition: two adjacent pairs must 
+
+have matching ends
+
+test([[B,C]|R]).
+
+The induction principle
+
+Induction over natural numbers:
+ To check that a predicate p is true for all natural numbers:
+
+ Induction base:
+
+Check that p is true applied to 1 
+
+ Induction hypothesis:
+
+Assume that if p is true applied to some natural number n
+
+ Induction step:
+
+Show that then p is true applied to n + 1
+
+ Then
+
+ p is true on 1 (induction base)  
+ p is true on 2, since p is true on 1 and 2 = 1 + 1  
+ p is true on 3, since p is true on 2 and 3 = 2 + 1  
+ p is true on 4, since p is true on 3 and 4 = 3 + 1
+ ...
+
+The induction principle
+
+Strongly related to recursion
+
+ p(1)
+
+∧
+
+∀n:(p(n) → p(n+1)) 
+
+→ ∀i ∈ℕ :p(i)
+
+Sum over the first n integers
+
+
+
+Prove: p(n) for all n ∈ℕ
+
+ Proof by induction
+
+ Base case:
+
+ Assume p is true for some n:
+
+ Show
+
+
+
+ qed.
+
+p(n)(ii1nn(n1)2)p(1)(ii1111(11)2)p(n)(ii1nn(n1)2)p(n1)(ii1n1(n1)(n2)2):ii1n1(ii1n)n1n(n1)2n1n(n1)22(n1)2n(n1)2(n1)2(n1)(n2)2Another example: 
+
+Another example:
+
+
+
+Prove p(n) for all n ∈ℕ with n > 4
+
+ Proof by induction:
+
+ Base case:
+
+ Assume p is true for some n > 4:
+
+for n > 4:
+
+ Show
+
+
+
+ qed.
+
+2nn2p(n)2nn2p(n)2nn2p(n1)2n1(n1)22n12n22n2nn2n2n23nn22nnn22n1(n1)2p(5)25322552Induction not only for natural numbers
+
+Induction proofs can be used not only for predicates over natural 
+
+numbers.
+
+ For all enumerable sets 
+
+ Integers
+
+ Rationals (may be a bit tricky) 
+
+ For all inductively defined sets
+
+ Terms of a logical language
+
+ over the length of a list: 
+
+p([ ]) ∧
+
+∀X,R : p(R) → p([X|R]) 
+
+→ ∀L ∈ Lists : p(L)
+
+Proof by Induction (forward)
+
+ Base case(es): 
+
+ Show that the statement holds for the base case(s)
+
+ Induction hypothesis: 
+
+ The statement holds for all cases up to a given complexity
+
+ Induction step: 
+
+ Show that the statement holds for all more complex cases which 
+
+can be constructed from the cases of the given complexity
+
+ by using the induction hypothesis
+
+ We need the property that all cases can be constructed from less 
+
+complex cases (inductive definitions). (Seems to be obvious, but there 
+are cases which are questionable: e.g. regular trees)
+
+Proof by induction (backward)
+
+ Base case(es): 
+
+ Show that the statement holds for the base case(s)
+
+ Induction step: 
+
+ Given a general case.
+
+ Show that the statement holds for the general case 
+
+ if it holds for a (or some) less complex cases
+
+ Assumption: The statement holds for all less complex cases
+
+Recursive Programs and the Proof by Induction
+
+Recursive programs in Prolog follow the proof schema ’Proof by 
+
+Induction (backward)’.
+
+ To define a predicate recursively:
+
+ Base case(es): State some clauses which are obviously true. 
+
+ Induction step:
+
+ Add a clause (or some clauses) stating that a general case is 
+
+true if a (or some) less complex case(s) is(are) true.
+
+ Assumption: Holds for all less complex cases 
+
+(nothing to do for Prolog)
+
+ Recursive (Prolog) programs can be viewed as their own correctness 
+
+proof!
+
+Recursive programs and the Proof by Induction
+Example
+
+Intended usage: pairs(+List, ?List_of_pairs) 
+
+True if List_of_pairs is the list of pairs of the elements of List :
+
+
+
+
+
+Initial case(es): 
+
+pairs([], []). % obviously true!
+
+Induction step: 
+
+pairs([A,B|R], [[A,B]|R_pairs]) :- pairs(R, R_pairs).
+
+ Remember, this is a backward implication 
+
+ R is less complex than [A,B|R] 
+
+ If pairs(R,R_pairs) is correct
+
+ then [[A,B]|R_pairs] is obviously the correct solution  
+
+ Assumption:
+
+ pairs(List, List_of_pairs) 
+
+is correct for all lists List which are less complex than [A,B|R]
+
+ (nothing to do for Prolog)
+
+Recursive Programs and the Proof by Induction
+
+ Proof by Induction states the correctness of the program! 
+
+ if the program follows the proof schema of induction!
+
+ That’s the best you can get!!!!!
+
+ Do not try to figure out what the system really does to construct 
+
+the results (operation by operation)
+
+ The sequence of operations performed by the system depends not 
+
+only on the program code, but on the current status of the 
+variables, too.
+
+ Problem:
+
+ Not all parts of Prolog are logically sound. 
+
+ Therefore, we need an idea, at which point which subproofs are 
+
+already performed.
+
+Discussion
+
+ Take home messages:
+
+ Logic is a nice and elegant framework to specify domains, 
+
+problems and solutions in AI
+
+ It’s abstract, yes 
+
+ There are some caveats due to the fundamental properties of the 
+
+logics used
+
+ That these problems are visible in Prolog is not a fault of 
+
+Prolog, 
+
+ Languages which do not show these problems are not 
+
+powerful enough.
+
+Discussion
+
+ More concrete: Prolog’s advantages:
+
+ Logical variables
+
+ Unification (the only way how variables get values in Prolog) 
+
+ Non-determinism (the ability to compute alternative solutions)
+
+ Classical programming languages lack these properties.
+
+ To implement these things by hand is cumbersome.
+
+ Prolog is a compromise between pure logic and the ability to program 
+
+in a procedural fashion.
+
+Arithmetic in Prolog 
+
+• Prolog knows about mathematical operators like + - / *
+
+•
+
+Internally they are just functors for complex terms!
+
+• 8 + 8 ≡ +(8,8)
+
+• So, they can be used just like other complex terms.
+
+• 8 + 9 * 4 / 4 ≡ +(8, *(9, /(4,4)))
+
+• Prolog does not interpret these terms!
+
+• Example:
+
+plus_to_list(A, [A]) :-
+
+not(A =.. [+|_]). % A is not +(…), use ..= to 
+
+convert complex terms to lists.
+
+plus_to_list(A+B, L) :-
+
+plus_to_list(A,AL),
+
+plus_to_list(B,BL),
+
+append(AL, BL, L).
+
+Arithmetic in Prolog
+
+• There is a bultin predicate that interprets arithmetic termin:
+
+•
+
+•
+
+is/2
+
+It‘s normally used inline:
+
+• X is 3+4
+
+• Y is 45/87*9.0
+
+• Length of a list:
+
+…
+
+Next Session
+
+ Aritmetic operations
+
+ Built-in predicates
+
+ FOL 
+
+ Normal forms
+
+

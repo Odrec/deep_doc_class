@@ -1,0 +1,960 @@
+Grundlagen der Biowissenschaften I
+Molekulare Genetik
+
+Übersicht I
+
+III. Grundlagen der Genregulation
+
+• Transkriptionsveränderungen als Reaktion auf Umweltbedingungen
+
+- Das Operon-Konzept
+- negative Regulation der Genexpression
+- positive Regulation der Genexpression
+
+• Ebenen der Expressionsregulation in Eukaryoten
+
+- Differenzielle Genexpression
+- Regulation der Chromatinstruktur
+- Regulation der Transkription
+- Posttranskriptionale Regulation
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+1
+
+Grundlagen der Biowissenschaften I
+Molekulare Genetik
+
+Übersicht II
+
+III. Grundlagen der Genregulation
+
+• Regulation der Genexpression durch nicht codierende RNAs  
+
+- Mikro-RNA und kleine interferrierende RNA
+- Chromatinumbau und Stilllegung der Transkription
+
+• Differenzielle Genexpression bestimmt den Zelltypus
+
+- Das genetische Programm der Embryonalentwicklung
+- Cytoplasmatische Determinanten und Induktionssignale
+- Genexpression während der Zelldifferenzierung
+- Musterausbildung und Körperbau
+
+• Genetische Veränderungen als Ursache von Krebs
+
+- Gene und Krebs
+- Genetische Veranlagung und krebsfördernde Faktoren
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+2
+
+Grundlagen der Biowissenschaften I
+Molekulare Genetik
+
+Übersicht
+
+IV. Viren
+
+• Viren bestehen aus Nucleinsäuren und einer Proteinhülle  
+
+- Die Entdeckung der Viren
+- Der Aufbau von Viren
+
+• Viren vermehren sich in Wirtszellen
+
+- Grundlagen der Vermehrung
+- Pagenvermehrung
+- Vermehrung von Tierviren
+- Evolution von Viren
+
+• Viren, Viroide, Prionen als Pathogene
+
+- Viruserkrankungen von Tieren
+- Entstehung neuer Viren
+- Viren als Pflanzenpathogene
+- Viroide und Prionen
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+3
+
+IV. Viren
+
+• Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Viren und ihre Rolle in der Molekularbiologie:
+
+Bakteriophage
+
+Hintergrund
+
+E.coli
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+4
+
+Rückblick: I. Die molekularen Grundlagen der Vererbung
+
+• Die DNA als Erbsubstanz
+
+Geschichte der Entdeckung
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+5
+
+Rückblick: I. Die molekularen Grundlagen der Vererbung
+
+• Die DNA als Erbsubstanz
+
+Geschichte der Entdeckung
+
+Hershey and Chase (1952): Virale DNA programmiert Zellen um
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+6
+
+IV. Viren
+
+• Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Die Entdeckung der Viren
+
+1883 Adolf Meyer: Extrakte aus Tabakpflanzen 
+übertragen die Mosaikkrankheit. Bakterien sind 
+nicht nachweisbar. Kleine Bakterien?
+1893 Dmitri Ivanowsky: Auch Sterilfiltration 
+verhindert nicht die Infektion. Bakterien sind so 
+klein, daß sie den Sterilfilter passieren können.
+1898 Martinus Beijerinck: Krankheitserreger 
+können sich nach Neuinfektion vermehren. 
+Krankheitserreger kann sich nur in Zellen 
+vermehren aber nicht auf Nährmedien.
+ Erreger ist ein vermehrungsfähiges Teilchen, 
+das kleiner und einfacher als ein Bakterium ist.
+1935 Wendell Stanley: Kristallisation des 
+Tabakmosaikvirus und erste Elektronen-
+mikroskopische Aufnahmen.
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+7
+
+IV. Viren
+
+• Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Die Entdeckung der Viren
+
+1898 Paul Frosch: Die Übertragung der Hand-
+Mund-Fuß Kranheit ist auf ein ähnliches Agenz 
+zurückzuführen, wie die Mosaikkrankheit.
+
+1909 Karl Landsteiner:  Entdeckung des 
+Poliovirus.
+
+1911 Peyton Rous: Rous sarcoma virus 
+vermag Tumore bei Hühnern auszulösen
+
+1915 Frederick Twort, 1917 Felix d'Herelle:
+Entdeckung der Bakteriophagen und ihrer 
+Fähigkeit Bakterien zu lysieren.
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+8
+
+IV. Viren
+
+• Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Eine Definition
+
+"A PIECE OF BAD NEWS WRAPPED UP IN A PROTEIN"
+"Schlechte Nachrichten verpackt in Protein"
+Viren: sind kleine, infektiöse, obligat intrazelluläre molekulare Parasiten, die nicht 
+atmen, sich nicht bewegen oder wachsen.
+Virion: Nur der infektiöse Partikel.
+ähnliche Partikel und ihre Definition:
+Viroide: 200-400 nt lange, zirkuläre RNA Moleküle mit stabförmiger sekundär Struktur, 
+ohne Kapsid oder Hülle. Lösen zumeist Krankheiten bei Pflanzen aus.
+Virusoide: cd 1000 nt lange viroid ähnliche Moleküle, die als Satelliten auf die 
+Replikation eines Virus angewiesen sind. Werden als Passagieren mit in die Capside
+von Viren verpackt. 
+Prionen: Besitzen keine Nukleinsäuren. Infektiöse Agentien, die aus einem einzigen 
+Protein bestehen. Die Proteine sind im Genom codiert und erst eine 
+Konformationsänderung überführt das Protein in die infektiöse Form. Auslöser z.B. von 
+Kreutzfeld-Jakob und BSE.
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+9
+
+IV. Viren
+
+• Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Eine Definition
+
+Koneman et al. Color Atlas and Textbook of Microbiology 5th Ed. 1997
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+10
+
+IV. Viren
+
+• Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Der Aufbau von Viren schematisch:
+
+Der Aufbau von Viren
+
+Nukleinsäure
+Capsid (Protein)
+Hülle (Lipid)
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+11
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Der Aufbau von Viren
+
+Beispiele:
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+12
+
+Rückblick: II. Vom Gen zum Protein
+
+• Historie und Übersicht
+
+Transkription und Translation in der Übersicht
+
+Das Codon-Konzept: Basentriplets auf dem Matrizenstrang (codogenem) Strang 
+codieren Aminosäuren.
+
+Matrizen - , Minus - , codogener -, 
+antisense - Strang
+
+Sinn - , Plus - , kodierender -, sense -
+Strang
+
+Watson – Strang
+Crick - Strang
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+13
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Einteilung nach dem Baltimore* Schema: Typ der Nukleinsäure und Form
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+14
+
+*David Baltimore:
+Amerikanischer Virologe
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Einteilung nach dem Baltimore Schema: Typ der Nukleinsäure und Form
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+15
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virengenome:
+
+Linear: z.B. Tabakmosaikvirus
+
+Zirkulär: z.B. Polyomavirus
+
+Segmentiert oder zweiteilig
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+16
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virale Strukturen: Helikal, Ikosaedrisch und Komplex
+
+Beispiel: Tabak mosaic virus
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+17
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virale Strukturen: Helikal, Ikosaedrisch und Komplex
+
+gerade z.B. Tabak mosaik
+
+gebogen z.B. Ebola
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+18
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virale Strukturen: Helikal, Ikosaedrisch und Komplex
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+19
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virale Strukturen: Helikal, Ikosaedrisch und Komplex
+Symmetrieachsen bei Ikosaedrischen Viren
+
+5-fach
+
+3-fach
+
+2-fach
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+20
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virale Strukturen: Helikal, Ikosaedrisch und Komplex
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+21
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virale Strukturen: Helikal, Ikosaedrisch und Komplex
+
+Penton
+
+Hexon
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+22
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virale Strukturen: Helikal, Ikosaedrisch und Komplex
+
+I.
+
+Mischung aus Ikosaedrisch und filamentös
+
+z.B. viele Bakteriophagen
+
+II.
+
+Assymetrische (irreguläre) Formen
+
+z.B. Pockenviren i.d.R. größere Viren
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+23
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virale Hülle:
+
+• Hülle entsteht i.d.R. durch Knospung aus der Wirtszellmembran
+
+• Möglichkeit die Zelle zu verlassen ohne sie zu lysieren (und zu töten)
+
+• Enthält wenigstens ein viral codiertes Protein ("Attachment Protein")
+
+• Verlust der Hülle führt zum Verlust der Infektivität
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+24
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+25
+
+IV. Viren Viren bestehen aus Nucleinsäuren und 
+einer Proteinhülle
+
+Einteilung von Viren
+
+Virengenome:
+
+Reverse
+Transkriptase
+
+RNA-abhängige
+RNA-Polymerase
+
+RNA-abhängige
+RNA-Polymerase
+
+RNA-abhängige
+RNA-Polymerase
+
+Reverse
+Transkriptase
+
+virale Enzyme
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+26
+
+I. Die molekularen Grundlagen der Vererbung
+
+• Replikation und Reparatur von DNA
+
+Mechanismen der DNA-Reparatur
+
+Am 5'-Ende von  DNA-Molekülen kommt es zu Verkürzungen während der Replikation
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+AG Genetik - Dr. Hans-Peter Schmitz
+
+27
+
+I. Die molekularen Grundlagen der Vererbung
+
+• Replikation und Reparatur von DNA
+
+Mechanismen der DNA-Reparatur
+
+Ein Beispiel für die Lösung des Problems: „Protein priming“ und „ strand displacement“ 
+
+TWiV 106
+http://www.twiv.tv
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+AG Genetik - Dr. Hans-Peter Schmitz
+
+28
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Pagenvermehrung
+
+Phagenlyse wird als
+Plaques auf einem
+Bakterienrasen sichtbar
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+29
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Pagenvermehrung
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+30
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Pagenvermehrung
+
+Phagen besitzen einen lysogenen und einen lytischen Zyklus:
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+31
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Grundlagen der Vermehrung
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+32
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Grundlagen der Vermehrung
+
+Vireneintritt:
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+33
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Grundlagen der Vermehrung
+
+Strategien des Uncoating:
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+34
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Vermehrung von Tierviren
+
+Vermehrungszyklus eines Virus mit Membranhülle:
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+35
+
+Rückblick: III. Grundlagen der Genregulation
+
+• Ebenen der Expressionsregulation 
+bei Eukaryoten
+
+Posttranskriptionale Regulation
+
+Regulation durch Umbau von Proteinen:
+
+• proteolytische Spaltung (Beispiel Pro-Insulin => Insulin)
+
+• Phosphorylierung durch Kinasen
+
+• Glycosylierung
+
+Phospho-Serin, Threonin und Tyrosin
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+36
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Tierspezifische Viren
+
+Wichtige "Tier"-viren:
+Einige Krankheitserreger
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+37
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Vermehrung von Tierviren
+
+Das HI-Virus:
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+38
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Influenza:
+
+Evolution von Viren
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+39
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Influenza: H1N1, Schweinegrippe, neue-Grippe, Mexiko-grippe
+
+Evolution von Viren
+
+11. Juni 2009 WHO ruft die höchste Pandemie Warnstufe aus
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+40
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Evolution von Viren
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+41
+
+IV. Viren
+
+• Viren, Viroide, Prionen als Pathogene
+
+Entstehung neuer Viren
+
+Influenza: Aufbau von Influenza A Viren
+
+(-)ss RNA
+8 Segmente – 11 Gene
+HA: Hämagglutinase
+NA: Neuraminidase
+
+16 H und 9 N Subtypen
+Nur H1,3,4 und N1,2 im
+Menschen
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+42
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Influenza: H1N1 2009
+
+Evolution von Viren
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+43
+
+IV. Viren
+
+• Viren vermehren sich in Wirtszellen
+
+Influenza: H1N1 2009
+
+Evolution von Viren
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+44
+
+IV. Viren
+
+• Ebola
+
+Aktuelle Zahlen vom 30. Oktober:
+
+Ebola          
+
+http://www.cdc.gov/vhf/ebola/outbreaks/2014-west-africa/case-counts.html
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+45
+
+IV. Viren
+
+• Ebola
+
+Ebola          
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+46
+
+IV. Viren
+
+• Ebola
+
+Ebola          
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+47
+
+IV. Viren
+
+• Ebola
+
+Ebola          
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+48
+
+IV. Viren
+
+• Ebola
+
+Ebola          
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+49
+
+IV. Viren
+
+• Ebola
+
+- Strang RNA Virus
+
+Ebola          
+
+http://www.frontiersin.org/files/Articles/21403/fmicb-03-00034-HTML/image_m/fmicb-03-00034-g002.jpg
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+50
+
+IV. Viren
+
+• Ebola
+
+Ebola          
+
+http://www.frontiersin.org/files/Articles/21403/fmicb-03-00034-HTML/image_m/fmicb-03-00034-g003.jpg
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+51
+
+IV. Viren
+
+• Ebola
+
+Ebola          
+
+http://www.frontiersin.org/files/Articles/21403/fmicb-03-00034-HTML/image_m/fmicb-03-00034-g003.jpg
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+52
+
+IV. Viren
+
+• Viren, Viroide, Prionen als Pathogene
+
+Viren als Pflanzenpathogene
+
+Pflanzen besitzen kein Immunsystem => keine Impfung möglich
+
+Pflanzenviren verursachen große wirtschaftliche Schäden bei Nutzpflanzen
+
+horizontale Transmission: Infektion durch einen Virus von außen.
+vertikale Transmission: Vererbung der Infektion.
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+53
+
+IV. Viren
+
+• Viren, Viroide, Prionen als Pathogene
+
+Viren als Pflanzenpathogene
+
+Blattrollvirus der Kartoffel
+
+Kartoffelvirus X
+
+Kartoffelvirus Y 
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+54
+
+IV. Viren
+
+• Viren, Viroide, Prionen als Pathogene
+
+Prione sind infektiöse Proteine
+
+Viroide und Prionen
+
+Krankheiten:
+Scrapie
+BSE ("Rinderwahn")
+Kreutzfeld-Jakob (und neue Variante)
+Kuru
+
+=> neurodegenerative Erkrankungen
+
+normal           "infektiös"
+
+WS 14/15
+
+AG Genetik – PD Dr. Hans-Peter Schmitz
+
+55
+
+

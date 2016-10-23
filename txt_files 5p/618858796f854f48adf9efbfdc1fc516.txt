@@ -1,0 +1,985 @@
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Vorlesungsübersicht zur Genetik I (SS2016)
+Jürgen Heinisch
+Mittwoch, 11.05.2016
+Eukaryontische Modell-
+organismen; 
+Kreuzungsgenetik
+
+Knut Jahreis
+Mittwoch, 20.04.2016
+Bewegliche Genetische 
+Elemente (Transposons und 
+IS-Elemente)
+
+Hans-Peter Schmitz
+Mittwoch, 06.04.2016
+Grundlagen der DNA-
+Struktur, Plasmide; 
+Replikation in Pro- & 
+Eukaryonten
+
+Stefan Walter
+Mittwoch, 04.05.2016
+Homologe Rekombination
+
+Freitag, 06.05.2016
+Genbanken, CRISP-R
+
+Freitag, 20.05.2016
+PCR-Methode
+„-omics“-Ansätze
+
+Freitag, 08.04.2016
+Transkription in Pro- & 
+Eukaryonten
+
+Mittwoch, 13.04.2016
+Transkription und Translation 
+in Pro- & Eukaryonten
+
+Freitag, 15.04.2016
+Mutagenese & DNA-
+Reparatur
+Aufbau von Genomen
+(Viren, Pro- & Eukaryonten)
+
+Freitag, 22.04.2016
+Konjugation; lac-Operon; 
+Attenuation
+
+Mittwoch, 27.04.2016
+Signaltransduktion und 
+Regulation in Pro- und 
+Eukaryonten I
+
+Freitag, 29.04.2016
+Signaltransduktion und 
+Regulation in Pro- und 
+Eukaryonten II
+
+Praktikum  Kurs A und B parallel vom 23.05.-27.05.2016
+
+Kurs C vom 27.6.-01.07.2016;                 Kurs D (2FB) vom 04.07.-08.07.2016
+
+Freitag, 13.05.2016
+Mutantenselektion; Epistasie; 
+Komplementation; „reverse
+genetics“
+
+Mittwoch, 18.05.2016
+Funktionsanalyse von Genen; 
+„KO-Mäuse“ 
+Epigenetik 
+
+06.07.2016: Klausur
+1F-Bachelor Studiengang
+
+13.07.2016: Klausur 2FB-
+Bachelor Studiengang
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Zusammenfassung der letzten Vorlesung, Teil I
+Bei Mutationen in für Enzyme eines Stoffwechselweges kodierenden 
+Genen häufen sich die vor dem Defekt auftretenden Metabolite an 
+Zur Steigerung der Mutationsfrequenz können Strahlung oder chemische 
+Mutagene eingesetzt werden
+Bei einer Mutantenselektion wachsen nur die Zellen mit dem gewünschten 
+Phänotyp, bei einem genetischen Screen werden meistens visuelle 
+Unterschiede herangezogen
+Durch Einteilung in Komplementationsgruppen läßt sich die Zahl der an 
+einem Stoffwechselweg beteiligten Enzyme in erster Näherung bestimmen 
+(Ausnahme: intragenische Komplementation)
+Epistasie-Analysen geben Aufschluss über die Reaktionsfolge
+Eine Mutation in einem Strukturgen für ein Enzym führt im heterozygoten 
+Zustand zu einer Reduktion der Enzymaktivität auf 50% gegenüber dem 
+homozygoten Wildtyp
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Zusammenfassung der letzten Vorlesung, Teil II
+Bei Saccharomyces cerevisiae kann durch Kreuzung und Tetradenanalyse 
+der Phänotyp einem bestimmten Gendefekt zugeordnet werden
+Durch Komplementation mit einer Genbank können Gene isoliert werden
+Das isolierte Gen (bzw. das Vorliegen der DNA- bzw. der Genom-Sequenz) 
+erlauben die gezielte Herstellung von Deletionsmutanten durch Ersatz von 
+proteinkodierenden Sequenzen mit selektierbaren Markern über homologe 
+Rekombination
+“Reverse Genetics“ ist in Hefe durch PCR-Ansätze möglich, die 40 Bp 
+Homologie zum Zielgen links und rechts von “Markerkassetten“ einfügen 
+(= ausreichend homologe Sequenzen zur gezielten Rekombination in S. cerevisiae)
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Molekulare
+Mausgenetik
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Transgene
+
+Mäuse
+
+Transgene Organismen
+exprimieren ein extern
+eingebrachtes Gen
+(stabil durch die 
+Keimbahn ?)
+
+Vektoren:
+- SV40
+- Adenoviren
+- Retroviren
+
+„knock-in“
+
+(„knock-down“)
+(„knock-out“ s.u.)
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Virale Vektoren
+
+E. coli
+replication
+
+E. coli
+selection
+
+Sca
+
+I 9545
+
+bla
+
+ori
+
+Spe I 252
+
+Nde I 486
+
+CMV
+LTR5'
+
+Psi
+
+mammalian 
+integration
+
+ori, bla
+(Replikation und Selektion in E. coli)
+
+LTR = Long Terminal Repeat
+(Replikation und Integration ins Wirtsgenom)
+
+8000
+
+L22_eGFP
+9987 bps
+
+2000
+
+SV40 ori
+
+f1 ori
+
+6000
+
+4000
+
+CamKII
+
+LTR3'
+
+WPRE
+
+eGFP
+
+Xho
+
+I 5283
+
+Eco RI 4655
+
+Bam HI
+
+YFG
+
+(= Your Favorite Gene)
+
+Lentivirus/E. coli
+
+Psi = virales Verpackungssignal
+(Transfektion der Zielzellen mit modifizierten Viren)
+
+expression
+signals
+
+cloning
+
+site
+
+CamKII, WPRE
+(Promotor und Terminator zur Regulation der
+Transkription in den Zielzellen)
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Virale Vektoren: Hefe/E. coli/Säuger 
+
+“Triple-Shuttle-Vector“
+
+E. coli
+replication
+
+E. coli
+selection
+
+Sca
+
+I 9545
+
+bla
+
+ori
+
+Spe I 252
+
+Nde I 486
+
+CMV
+LTR5'
+
+Psi
+
+mammalian 
+integration
+
+8000
+
+L22_eGFP
+9987 bps
+
+2000
+
+SV40 ori
+
+f1 ori
+
+6000
+
+4000
+
+CamKII
+
+LTR3'
+
+WPRE
+
+eGFP
+
+Xho
+
+I 5283
+
+Eco RI 4655
+
+Bam HI
+
+expression
+signals
+
+cloning
+
+site
+
+YFG
+
+(= Your Favorite Gene)
+
+Lentivirus/E. coli
+
+neu:  2µm & URA3 zur Replikation und 
+
+Selektion in S. cerevisiae
+
+2µm
+
+Nde I 1165
+
+bla
+
+pUC ori
+
+12000
+
+URA3
+
+Spe I 2257
+
+Nde I 2491
+
+10000
+
+pJJH1242
+
+2000
+
+CMV
+
+SV40 ori
+
+f1 ori
+
+12609 bps
+
+4000
+
+8000
+
+6000
+
+CamKII
+
+WPRE
+
+eGFP
+
+Xho
+
+I 7288
+
+Not I 3529
+
+Eco
+
+RI 6660
+I 6645
+
+Not
+
+Bam HI 5899
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Medizinische Nutzung transgener Mäuse
+
+Lesch-Nyhan: X-chromosomal; HPRT (Enzymdefekt), 
+
+Selbstverstümmelung, geistige Behinderung
+
+Cystische Fibrose: autosomal rezessiv; CFRT-Gen  Chloridkanal
+
+Schleim in Lungen, chronische Infektionen
+
+Duchenne Md (DMD): X-rezessiv; Muskelschwund (Skelettgewebe)
+Morbus Gaucher: autosomal rezessiv; Hirnschäden, Nierenfunktion
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Was bringen Deletionsmutanten?
+
+- "kein Gen, kein Enzym"  Funktionsanalyse ( "leaky"-Mutanten)
+
+= in vivo-Bedeutung
+
+- Redundanz in Genomen  Kombination von Mutationen
+
+= Analyse von Netzwerken
+
+- Clonierung heterologer Gene über Komplementation
+
+- Bedeutung von Domänen bzw. einzelner Aminosäuren für  
+
+die Funktion von Proteinen (z.B. allosterische Regulation),
+durch Einbringen von Genen nach in vitro-Mutagenese
+
+- Isolierung von ts-Mutanten nach PCR-Mutagenese mit 
+
+Plasmid-"shuffling"
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+"Knock-out"-Mäuse: Nobelpreis 2007 
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+"Knock-out"-Mäuse: Homologe Rekombination 
+
+Neor  Resistenz
+
+gegen G418
+
+HSV-tk  Sensitivität
+gegen Ganciclovir
+
+Embryonale
+Stammzellen
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+"Knock-out"-Mäuse: 
+
+Homologe Rekombination 
+
+Neor
+
+Embryonale
+Stammzellen
+
+Neor
+
+Neor
+
+Resistenz
+gegen G418
+
+Neor
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+"Knock-out"-
+
+Mäuse
+
+Problem der 
+häufigen nicht-
+homologen 
+Rekombination
+(= "illegitime 
+Rekombination")
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+"Knock-out"-
+
+Mäuse
+Lösung durch  
+doppelte Selektions-
+Prozedur
+
+Neomycin-
+Resistenz
+
+Ganciclovir-
+Resistenz
+
+Überprüfung 
+durch PCR!
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Homozygote "Knock-out"-Mäuse: Rückkreuzungen 
+
+Rückkreuzung
+ergibt 25% Homozygote
+(wenn lebensfähig)
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Gewebespezifische "Knock-out"-Mäuse
+1. "dead cells/animals don't talk"
+2. Rekombination zwischen umgekehrten Sequenz-
+wiederholungen führt zu Inversionen, zwischen
+direkten Sequenzwiederholungen zu Deletionen
+
+3. Der Bacteriophage P1 hat ein ringförmiges Genom,
+
+das nicht integriert;
+Replikation im lytischen Zyklus durch "rolling
+circle" führt zu Concatameren;
+Auflösung durch Cre-Rekombinase ("causes 
+recombination"), die an loxP-Stellen angreift
+("locus of recombination [X-over]")
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Gewebespezifische 
+"Knock-out"-Mäuse
+loxP-Sequenz
+
+34 bp
+
+http://2012.igem.org/Team:Marburg_SYNMIKRO/Project
+
+aus: Lodish
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Gewebespezifische 
+"Knock-out"-Mäuse
+Bakteriophage P1:
+- Cre-Rekombinase
+- loxP-Erkennungs-
+
+sequenzen
+
+aus: Knippers
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Gewebespezifische "Knock-out"-Mäuse
+
+http://mouseclique.jax.org/crelox-breeding-for-dummies/
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Beispiele für "Knock-out"-Mäuse
+
+Beispiele:
+- Rezeptor für
+körpereigene
+Signalstoffe zur
+Angstbewältigung
+
+- PrPc-knockouts
+mit Resistenz
+gegen BSE
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Zusammenfassung KO-Mäuse, Teil I
+- Transgene Mäuse können durch Injektion von in viralen Vektoren 
+
+enthaltenen Genen erzeugt werden und dienen als einfache 
+Modellsysteme für menschliche Erbkrankheiten
+
+- Nobelpreis für KO-Mäuse 2007
+- hergestellt durch doppelte Selektion (positiv, negativ) in 
+
+embryonalen Stammzellen
+
+- Injektion in Blastocyste und Kreuzung von chimären Mäusen 
+
+ergibt heterozygote stabile Stämme
+
+- Rückkreuzung dieser Stämme ergibt, wenn die Deletion 
+
+lebensfähig ist, zu 1/4 homozygote Nachkommen
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Zusammenfassung KO-Mäuse, Teil II
+
+- heterozygote Mäuse mit einem Allel deletiert und dem zweiten 
+Allel mit einem oder mehreren Exonen zwischen loxP-Stellen 
+("gefloxte" Mäuse) können für gewebespezifische Deletionen 
+eingesetzt werden
+
+- dazu wird die Cre-Rekombinase in transgenen Mäusen hinter 
+
+einem gewebespezifischen Promotor exprimiert
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Organisation des Chromatins
+
+bei Eukaryonten:
+
+Epigenetik und "Silencing"
+
+kurze Auffrischung der Ringvorlesung im Schnelldurchlauf
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+ESP = Extra-Sensory Perception 
+autosomal rezessiv oder dominant?
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+EPIGENETIK bei Mäusen
+
+Entfernen des männlichen
+Prokerns und Ersatz durch
+weiblichen Prokern aus
+anderer befruchteter Eizelle
+(und umgekehrt)
+
+nur mütterliches (bzw. nur väterliches) 
+Genom; aber diploid!
+
+Durchlaufen der frühen 
+Embryonalentwicklung;
+Absterben der Zellen bei 
+Implantation in Uteruswand
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Epigenetik  =                  unterschiedliche vererbbare 
+Eigenschaften die nicht auf 
+„überlagerte Genetik" 
+Veränderungen in der DNA-
+Sequenz basieren
+
+Schlußfolgerung: Gene in beiden Genomen haben zum Teil
+
+unterschiedliche Funktionen 
+(wahrscheinlich einige hundert Gene)
+
+ Genomische Prägung ("imprinting")
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Epigenetik  & genomische Prägung (Imprinting)
+Prader-Willi-Syndrom:
+mentale Retardation, Korpulenz, kurzer Wuchs
+kleine Hände und Füße
+Angelman-Syndrom:
+unkontrolliertes Lachen, krampartige Bewe-
+gungen, motorische und mentale Defizienzen
+URSACHE: Deletion auf Chromosom 15
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Epigenetik  & 
+Chromatin
+
+Epigenetik =
+den Genen (der DNA-
+Sequenz) "übergeordnete"
+Vererbung
+
+Ganze Gengruppen können 
+durch die Veränderung der 
+Chromatinstruktur aktiviert 
+oder inaktiviert werden (Bsp. 
+Barr-Körperchen).
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Epigenetik  & 
+Chromatin
+
+Darwin  Lamarck
+
+http://epigenetics.ch/images/evolution.gif
+
+Einige Modifikationen des Chromatins werden 
+wahrscheinlich von der Umwelt (Nahrung, 
+Chemikalien, Stress etc.) beeinflusst und 
+könnten sich auf die elterliche Prägung 
+auswirken (???).
+
+http://embryology.med.unsw.edu.au/MolDev/Images/epigenetics.jpg
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Komponente 2: Histon-Modifikationen
+
+aus: Wikipedia Juni 2009
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Epigenetik  & Entwicklung
+
+„Reset“ der epigenetischen Programmierung bei der Bildung der Keimbahnzellen
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Stillgelegte Chromatinbereiche: Telomere
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Nachweis des "silencing" in der Telomerregion bei Hefe
+
+Mutante mit einem Defekt in einem 
+Schritt der Uracil-Biosynthese 
+ura3-Gen auf Chromosom V
+
+Tel
+
+CEN ura3
+
+Tel
+
+Integration eines zusätzlichen Wildtyp-
+URA3-Gens am ura3-Locus
+
+Tel
+
+CEN ura3
+
+Tel
+
+URA3
+
+Integration eines zusätzlichen Wildtyp-
+URA3-Gens an einem Telomer
+
+Tel
+
+CEN ura3
+
+Tel
+
+URA3
+
+Medium ohne Uracil
+
+kein Wachstum
+
+Wachstum
+
+kein Wachstum
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Zusammenfassung zur Epigenetik
+
+- die Modifikation von Histonen verändert die Packungsdichte von 
+
+DNA in eukaryontischen Chromosomen (Eu- und Heterochromatin) 
+oder größeren Teilbereichen und wirkt sich auf die Transkription 
+ganzer Gengruppen aus (z.B. Barr-Körperchen; „Imprinting“)
+
+- dies wirkt sich auf die Ausprägung von Eigenschaften unabhängig 
+
+von Veränderungen (Mutationen) in der DNA-Sequenz aus und wird 
+unter dem Begriff Epigenetik zusammengefasst
+
+- neben Histonmodifikationen (Acetylierung, Phosphorylierung, 
+
+Methylierung) dient auch die Methylierung von Cytosinen (in CpG-
+Inseln) solchen globalen Regulationsmechanismen
+
+- Nachweis von „Silencing“-Regionen durch die Unterdrückung der 
+
+Expression künstlich eingesetzter Markergene
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Zusatzfolien
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Gewebespezifische "Knock-out"-Mäuse
+
+http://bsd.neuroinf.jp/w/images/thumb/2/27/CreloxP%E5%9B%B34.jp
+g/300px-CreloxP%E5%9B%B34.jpg
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Bakteriophage P1:
+- Cre-Rekombinase-
+
+Gen
+
+- loxP-Erkennungs-
+
+sequenzen
+
+inverted repeat
+
+spacer
+
+inverted repeat
+
+5'-ATAACTTCGTATA-GCATACAT-TATACGAAGTTAT-3'
+3'-TATTGAAGCATAT-CGTATGTA-ATATGCTTCAATA-5'
+
+http://2012.igem.org/Team:Marburg_SYNMIKRO/Project
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Chromatinstruktur 
+bei Eukaryonten
+
+geringe Ionenkonz.; 10 nm Durchmesser
+
+physiologisch; 30 nm Durchmesser
+
+Verpackungsebenen der DNA:
+1. Nucleosomen
+2. 30nm Faser
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Chromatinstruktur: 
+
+Aufbau von Nucleosomen
+Heterooctamer aus je 2x 
+H2A, H2B, H3 und H4; dazwischen H1
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Chromatinstruktur 
+
+Aufbau von 
+Nucleosomen
+Keine Röntgenstruktur der
+N-Termini erhältlich!
+
+weiß = dsDNA
+
+Wechselwirkung der basischen 
+Histone mit dem negativ 
+geladenen „Phosphat-Rückgrat“ 
+der DNA
+Modifikation an N-Termini :
+- Acetylierung
+- Phosphorylierung
+- Methylierung
+
+„Verdichtung“
+
+„Auflockerung“
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Enzymatische Modifikation von Histonen
+
+Acetylasen, Deacetylasen, Methylasen etc.
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Eukaryontische Chromosomen: Eu- &  Heterochromatin
+- Nucleosomenstruktur
+(Modifikationen an
+Histonen)
+
+- Histon H1
+
+- Epigenetik
+(z.B. Methylierung an
+"CpG-Inseln")
+
+aus: Lodish et al. (2001) S. 359
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Eukaryontische Chromosomen: Eu- &  Heterochromatin
+
+Trisomie 21
+
+Barr-Körperchen
+"Lyonisierung"
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Die Calico-Katze
+Histon: 
+"macroH2A1"
+"X-inactivation
+center" = XIC
+XIST long non-coding RNA
+somatische
+Differenzierung
+(in Blastula noch beide
+X-Chromosomen aktiv)
+
+Vorlesung Genetik Grundmodul - SS2016
+
+Jürgen J. Heinisch
+
+Komponente 1: DNA-Methylierung → 
+
+CpG-Inseln und Genexpression
+
+- statistisch signifikant erhöhtes Auftreten von CpG in Kontrollbereichen 
+
+("upstream sequences") von Genen
+
+- Folgen einer Methylierung von Cytosin-Resten:
+
+i)  erhöhte Mutationsrate ("mutational hot-spots")
+ii) verringerte Transkription (Abschalten von Genen)
+
+

@@ -1,0 +1,227 @@
+Table of Contents
+
+Homework 03 ....................................................................................................................  1
+Varying means ...................................................................................................................  1
+Varying variance ................................................................................................................  4
+
+Homework 03
+
+%Valerie Vogt:955741; Philipp Noll:955011;
+%Klaus-Michael Lux: 955998; Stefan Riegl: 956976
+
+Varying means
+
+clear all;
+close all;
+%generate distributions
+variance = 15;
+std = sqrt(variance);
+nostimulus = normrnd(50,std,1000,1);
+stimulus = normrnd(60,std,1000,1);
+figure;
+hold on;
+%plot histograms
+[hist_stim,x1] = hist(stimulus,40);
+[hist_nostim,x2] = hist(nostimulus,40);
+bar(x1,hist_stim,'r');
+bar(x2,hist_nostim,'b');
+values = zeros(90,4);
+
+%for-loop for stim_mean: 60
+for t=1:90
+    %'find' will generate a vector containing all elements that satfisy
+    %the conditions. Performing 'length' on this vector will give the
+    %number of elements.
+    %true positives
+    values(t,1) = length(find(stimulus>t));
+    %false positives
+    values(t,2) = length(find(nostimulus>t));
+    %true negatives
+    values(t,3) = length(find(nostimulus<t));
+    %false negatives
+    values(t,4)= length(find(stimulus<t));
+    TPR(t) = values(t,1)/(values(t,1) + values(t,4));
+    FPR(t) = values(t,2)/(values(t,2) + values(t,3));
+end;
+
+figure;
+subplot(1,3,1);
+hold on;
+
+1
+
+plot(FPR,TPR,'r*');
+x = linspace(0,1,100);
+y = x;
+plot(x,y);
+ylabel('P(TP)');
+xlabel('P(FP)');
+title('Stimulus cond. mean = 60');
+
+stimulus = normrnd(55,std,1000,1);
+%for-loop for stim_mean: 55
+for t=1:90
+    %true positives
+    values(t,1) = length(find(stimulus>t));
+    %false positives
+    values(t,2) = length(find(nostimulus>t));
+    %true negatives
+    values(t,3) = length(find(nostimulus<t));
+    %false negatives
+    values(t,4)= length(find(stimulus<t));
+    TPR(t) = values(t,1)/(values(t,1) + values(t,4));
+    FPR(t) = values(t,2)/(values(t,2) + values(t,3));
+end;
+
+subplot(1,3,2);
+hold on;
+plot(FPR,TPR,'r*');
+x = linspace(0,1,100);
+y = x;
+plot(x,y);
+ylabel('P(TP)');
+xlabel('P(FP)');
+title('Stimulus cond. mean = 55');
+
+stimulus = normrnd(50,std,1000,1);
+%for-loop for stim_mean: 50
+for t=1:90
+    %true positives
+    values(t,1) = length(find(stimulus>t));
+    %false positives
+    values(t,2) = length(find(nostimulus>t));
+    %true negatives
+    values(t,3) = length(find(nostimulus<t));
+    %false negatives
+    values(t,4)= length(find(stimulus<t));
+    TPR(t) = values(t,1)/(values(t,1) + values(t,4));
+    FPR(t) = values(t,2)/(values(t,2) + values(t,3));
+end;
+
+subplot(1,3,3);
+hold on;
+plot(FPR,TPR,'r*');
+x = linspace(0,1,100);
+y = x;
+plot(x,y);
+
+2
+
+ylabel('P(TP)');
+xlabel('P(FP)');
+title('Stimulus cond. mean = 50');
+
+%The performance of the threshold model worsens if the means
+%of the two populations are closer to each other.
+%This is due to the fact that the distributions resemble each other
+%more in those instances,leading to a bigger overlap between them.
+
+3
+
+Varying variance
+
+drawing figures for varying variances
+
+figure;
+variance = 5;
+std = sqrt(variance);
+nostimulus = normrnd(50,std,1000,1);
+stimulus = normrnd(60,std,1000,1);
+
+%for-loop for variance = 5
+for t=1:90
+    %true positives
+    values(t,1) = length(find(stimulus>t));
+    %false positives
+    values(t,2) = length(find(nostimulus>t));
+    %true negatives
+    values(t,3) = length(find(nostimulus<t));
+    %false negatives
+    values(t,4)= length(find(stimulus<t));
+    TPR(t) = values(t,1)/(values(t,1) + values(t,4));
+    FPR(t) = values(t,2)/(values(t,2) + values(t,3));
+end;
+
+subplot(1,3,1);
+hold on;
+
+4
+
+plot(FPR,TPR,'r*');
+x = linspace(0,1,100);
+y = x;
+plot(x,y);
+ylabel('P(TP)');
+xlabel('P(FP)');
+title('Variance = 5');
+
+variance = 15;
+std = sqrt(variance);
+nostimulus = normrnd(50,std,1000,1);
+stimulus = normrnd(60,std,1000,1);
+
+%for-loop for variance = 15
+for t=1:90
+    %true positives
+    values(t,1) = length(find(stimulus>t));
+    %false positives
+    values(t,2) = length(find(nostimulus>t));
+    %true negatives
+    values(t,3) = length(find(nostimulus<t));
+    %false negatives
+    values(t,4)= length(find(stimulus<t));
+    TPR(t) = values(t,1)/(values(t,1) + values(t,4));
+    FPR(t) = values(t,2)/(values(t,2) + values(t,3));
+end;
+
+subplot(1,3,2);
+hold on;
+plot(FPR,TPR,'r*');
+x = linspace(0,1,100);
+y = x;
+plot(x,y);
+ylabel('P(TP)');
+xlabel('P(FP)');
+title('Variance = 15');
+
+variance = 50;
+std = sqrt(variance);
+nostimulus = normrnd(50,std,1000,1);
+stimulus = normrnd(60,std,1000,1);
+
+%for-loop for variance = 50
+for t=1:90
+    %true positives
+    values(t,1) = length(find(stimulus>t));
+    %false positives
+    values(t,2) = length(find(nostimulus>t));
+    %true negatives
+    values(t,3) = length(find(nostimulus<t));
+    %false negatives
+    values(t,4)= length(find(stimulus<t));
+    TPR(t) = values(t,1)/(values(t,1) + values(t,4));
+    FPR(t) = values(t,2)/(values(t,2) + values(t,3));
+
+5
+
+end;
+
+subplot(1,3,3);
+hold on;
+plot(FPR,TPR,'r*');
+x = linspace(0,1,100);
+y = x;
+plot(x,y);
+ylabel('P(TP)');
+xlabel('P(FP)');
+title('Variance = 50');
+
+%The performance of the threshold model worsens for growing variance.
+%This is due to the fact that the distributions will spread out more in
+%those instances, leading to more outliers that are classified incorrectly.
+
+Published with MATLAB® 7.13
+
+6
+
+

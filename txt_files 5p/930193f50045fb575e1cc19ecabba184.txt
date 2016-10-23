@@ -1,0 +1,25 @@
+Homework 2 – Exercise 5 
+
+Compare the histogram distributions between the whole image and the fixated regions. You 
+
+don’t need to run statistical tests, just report on your observations. 
+
+ 
+
+The histogram for the Blue / Yellow contrast corresponds the best to how often each B / Y 
+
+value was fixated. The correspondence between occurrences of different Red / Green 
+
+contrast values to how often they were fixated seems lower, but a relation is still visible. On 
+
+the other hand, there is little to no correspondence between the histogram showing the 
+
+occurrence of different luminance contrast values and their fixation amounts.  
+
+Hence, it seems that luminance contrast is a bad predictor for what is fixated in an image. 
+
+Red / Green contrast is better and the Blue / Yellow contrast appears to be the best 
+
+predicting factor. 
+
+

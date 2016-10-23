@@ -1,0 +1,180 @@
+REVIEW OF SYNTACTIC PRINCIPLES OF
+
+HEURISTIC-DRIVEN THEORY PROJECTION
+
+CHRISTOPH FINKENSIEP, RENATO GARITA AND MARINA HOLZER
+
+Abstract. This is a summary and review of the paper written by Angela
+Schwering, Ulf Krummack, Kai-Uwe K¨uhnberger and Helmer Gust titled Syn-
+tactic Principles of Heuritic-Driven Theory Projection. The Heuristic-Driven
+Theory Projection (HDTP)is a mathematically sound framework for analogy
+making. It’s proposed as the ﬁrst theory for analogies that uses a logic-based
+approach.
+
+1. Introduction
+
+Given the importance of analogy from a cognitive perspective and the complexity
+of the analogical process [1], it seems prudent to have several theories that approach
+the construction of analogies from diﬀerent perspectives. Since there’s no theory
+out there which has a strong logical foundation to analogies, HDTP is a welcoming
+addition.
+
+The paper Syntactic Principles of Heuritic-Driven Theory Projection [3] de-
+scribes the analogy process as one by which a knowledge domain (target) can be
+enriched by comparing its structural relationships and rules with another domain
+(source).
+
+According to the paper, making analogies is a three step process. The ﬁrst step
+is retrieval and it aims to ﬁnd a source domain for the target domain. The second
+step is mapping which builds an analogical relation between the source and target
+domains by identifying common structures and mapping concepts and relations.
+The third step is the transfer which transfers knowledge from the source domain
+to the target domain using the analogical relationship. HDTP can do the mapping
+and transfer provided that it is given a source and target domains.
+
+2. Analogical mechanisms with HDTP: mapping and transfer
+
+The idea about mapping in an analogical process is to detect structures in the
+source domain that are common or can be applied in the target domain. HDTP
+uses anti-uniﬁcation to create a generalization of both domains.
+
+2.1. Anti-uniﬁcation. Anti-uniﬁcation can be formally described as follows: given
+two formulas s and t, ﬁnd a generalization G of s and t so that there exists some
+substitutions α and θ that transform G into s and t respectively.
+
+A least general generalization (lgg) is preferred thus making the substitutions less
+complex. It is also ideal if the generalization can preserve as much of the structure
+of both domain terms as possible and that the generalization is not structurally
+more complex than the original terms.
+
+Anti-uniﬁcation can be either ﬁrst-order where the substitution is done from
+variables to terms or it can be a higher-order where variables can take arguments
+
+1
+
+2
+
+CHRISTOPH FINKENSIEP, RENATO GARITA AND MARINA HOLZER
+
+and generalizations can be more complex. To avoid unnecessary complexity some
+basic substitutions are proposed:
+
+• Renaming: exchanging variable names.
+• Fixation: replaces a variable by a function symbol.
+• Argument insertion: replaces a set of arguments by a function term.
+• Permutation: rearrangement of arguments.
+
+The complexity of the generalization can then be calculated by summing the
+predeﬁned values that represent the computational complexity of the basic substi-
+tutions for both domains.
+
+Since the mapping process looks for structural commonalities in many levels we
+need a way to reach this structural knowledge that is not obvious immediately.
+That is what re-representation is used for.
+
+2.2. Re-representation. When making analogies the structural commonalities
+usually become visible during the analogy making process. The representation
+of the domains can be changed to make the implicit analogous structures explicit.
+In the context of logical representation this can be done by ﬁnding formulas that
+posses a common structure leading to a generalization while considering not only
+the axiomatizations of the domains but the theories containing the formulas derived
+from them.
+
+The generalization can then cover at least some of the formulas that have struc-
+turally common characteristics between both domains. Once all the axioms from
+a domain are covered (directly or indirectly) the computation of the analogical
+relations can be stopped.
+
+Once all the relations are established the transfer process can be started.
+
+2.3. Transfer. The goal of the transfer process is to make the translation from the
+source domain to the target domain.
+
+For HDTP the transfer process consists in transferring formulas that are not
+covered by the generalization, given that these represent the knowledge that is
+truly new for the target domain. After this transfer the consistency of the logical
+system is checked by a theorem prover. There’s no general applicable method to
+judge the usefulness of analogical inferences.
+
+The type of transfers that can be achieved with HDTP consist in:
+
+• Create new statements in the target domain using the existing vocabulary.
+• Introduce entirely new concepts into the target domain.
+
+Once the transfer step is ﬁnished the analogical process is complete. But the
+
+question remains if HDTP is plausible as a cognitive theory.
+
+3. Cognitive plausibility of HDTP
+
+The authors of the paper name several reasons why HDTP can be considered a
+
+cognitive plausible model for analogy making:
+
+to logical inferences.
+
+• Logical languages are good to model knowledge domains but are restricted
+• There’s an agreement between researchers that analogy is based on the
+• It is also accepted that analogies rely on large and deeply interconnected
+
+alignment of relational or structural commonalities.
+
+systems of relations between elements of a domain.
+
+REVIEW OF SYNTACTIC PRINCIPLES OF HEURISTIC-DRIVEN THEORY PROJECTION 3
+
+into the capacity to have several conceptualizations of the domains.
+
+• The capacity to do many-to-many mappings with HDTP can be translated
+• Relational categories are better learned with common abstract relational
+• Detecting analogical structures is connected with seeing a domain from
+• High-level cognition is an integrated and interactive process.
+• Creativity can be seen as a product of using analogies in an abductive
+
+structures and rules.
+
+diﬀerent perspectives.
+
+process or of analogical generalization.
+
+All these points are tackled partially or completely by HDTP.
+
+4. Conclusion
+
+This paper describes the syntactical principles of HDTP in detail. The frame-
+work is well speciﬁed and supported by analogical theories and the utilization of a
+logical representation seems like a powerful tool to meet the requirements of analogy
+making.
+
+The paper raises some issues that we found equally important like the open
+problem of logical inference being or not enough to represent all knowledge domains
+where analogies can be applied.
+
+Other issues not dealt with in the paper have to do with how to choose heuristics
+that can be applied on diﬀerent contexts and that work in such a complex process.
+Or what happens when a domain can have diﬀerent axiomatizations at diﬀerent
+levels of representation.
+
+Since the paper was published in 2009, there has already been some progress re-
+garding the semantics, the role of heuristics and the algorithms to compute analogies
+with HDTP [2].
+
+References
+
+[1] Douglas R. Hofstadter. Analogy as the core of cognition. In Dedre Gentner, Keith J. Holyoak,
+and Boicho N. Kokinov, editors, The Analogical Mind: Perspectives from Cognitive Science,
+pages 499–538. 2001.
+
+[2] Krumnack Ulf Schmidt, Marti and, Helmar Gust, and Kai-Uwe K¨uhnberger. Heuristic-driven
+theory projection: An overview. In Henry Prade and Gilles Richard, editors, Computational
+Approaches to Analogical Reasoning: Current Trends, pages 163–194. Springer Berlin Heidel-
+berg, Berlin, 2014.
+
+[3] Angela Schwering, Ulf Krumnack, Kai-Uwe K¨uhnberger, and Helmar Gust. Syntactic principles
+
+of heuristic-driven theory projection. Cognitive Systems Research, 3(10):251–269, 2009.
+E-mail address: cfinkensiep@uni-osnabrueck.de
+E-mail address: rgaritafigue@uni-osnabrueck.de
+E-mail address: maholzer@uni-osnabrueck.de
+
+

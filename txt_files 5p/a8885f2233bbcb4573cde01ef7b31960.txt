@@ -1,0 +1,1345 @@
+Einführung in die  
+
+Programmiersprache C++
+
+... für Fortgeschrittene ...
+
+Dr. Thomas Wiemann 
+Institut für Informatik 
+
+AG Wissensbasierte Systeme 
+
+WS 2014 / 2015
+
+Gliederung
+
+1.Einführung in C 
+2.Einführung in C++ 
+3.C++ für Fortgeschrittene 
+
+3.1 Templates 
+3.2 Die C++-Standardbibliothek 
+
+3.2.1 Strings 
+3.2.2 STL 
+3.2.2 Bibliotheksfunktionen 
+
+3.3 Threads
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+376
+
+C++ Strings (1)
+
+‣ In C wurden Strings als Arrays vom Typ char behandelt, mit der 
+Konvention, dass Strings auf (char) 0 terminieren. 
+‣ C++ führt die Klasse string ein 
+- Dynamisch allokierter, größenveränderbarer String 
+- Stellt viele nützliche Features zur Verfügung, die die Klasse 
+- Ist einfach zu benutzen 
+- Auch in komplexen Zusammenhängen 
+- Daher sollte in C++-Programmen die Klasse string benutzt 
+
+string den Feldern von Typ char überlegen machen 
+
+werden 
+
+#include <string>
+
+‣ Was ist ein String? 
+‣ String ist eine Instanzierung vom Template basic_string für 
+eine Sequenz von char, d.h. 
+
+typedef basic_string<char> string;
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+377
+
+C++ Strings (2)
+
+typedef basic_string<wchar_t> wstring;
+
+‣ Der Standard-String ist für eine Sequenz von chars definiert 
+‣ Es gibt auch andere Strings 
+‣ wchar_t ist ein Typ zur Speicherung von Unicode-Zeichen 
+‣ Lokal spezifische Vergleichsoperatoren 
+‣ Strings können von anderen Strings oder char* initialisiert 
+werden: 
+string s1 = "green"; // Same as s1("green");
+string s2 = s1;      // Same as s2(s1);
+
+‣ s2 ist eine tiefe Kopie von s1
+‣ Initialisierung durch Wiederholung eines einzelnen Zeiches 
+‣ Initialisierung als Teilstring 
+‣ Erste Zahl ist die Position im String, zweite Zahl die Anzahl der 
+Zeichen
+
+string reps(5,'a');  // reps == "aaaaa"
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+378
+
+C++ Strings (3)
+
+‣ Strings haben einen Zuweisungsoperator 
+
+string s1 = "orange";
+string s2 = "yellow";
+s2 = s1;
+s1 = "gray";
+
+‣ Man kann auch die assign(.)-Member-Funktion nehmen 
+
+s2.assign(s1);
+s1.assign("gray");
+
+‣ So zugewiesene Strings teilen sich keine Ressourcen 
+‣ Jede Zuweisung erzeugt eine Kopie des Strings 
+‣ Strings haben Vegleichsoperatoren 
+‣ Per Default case-sensitive!
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+379
+
+C++ Strings (4)
+
+‣ Strings lassen sich verketten: 
+
+title += 's';
+
+string title = "purple";
+title = title + " people";
+title += " eater";
+‣ Unterstützt auch einzelne chars: 
+‣ Es gibt auch eine Methode append(.)
+‣ length() gibt die Anzahl der Zeichen im String zurück: 
+string color = "chartreuse";
+cout << color << " has " << color.length()
+     << " characters." << endl;
+‣ Nummerierung von 0 bis length() - 1
+‣ string::npos zeigt einen ungültigen Index an 
+‣ Für alle Strings gilt: length() < string::npos
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+380
+
+C++ Strings (5)
+
+‣ Auf einzelne Zeichen kann mit [] zugegriffen werden 
+
+string word = "far";
+word[1] = 'o';    // now word == "for“
+
+‣ Indexwerte werden nicht überprüft 
+‣ Daher schnell & gefährlich 
+‣ Zugriff auch mit word.at(1) = ‘o‘
+‣ Wirft eine Exception
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+381
+
+C++ Strings (6)
+
+‣ Etliche Hilfsfunktionen sind in <cctype> bzw. 
+<cwctype>definiert:
+
+Beschreibung
+Buchstabe: a..z oder A..Z
+Großbuchstabe: A..Z
+Kleinbuchstabe: a..z
+Ziffer 0..9
+
+Funktion 
+int isalpha(int)
+int isupper(int)
+int islower(int)
+int isdigit(int)
+int isxdigit(int) Hexadezimal: 0..9, a..f oder A..F
+int isspace(int)
+int toupper(int)
+int tolower(int)
+
+Jedes Whitespace-Zeichen
+Buchstaben zu Großbuchstaben
+Buchstaben zu Kleinbuchstaben
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+382
+
+C++ Strings (7)
+
+‣ Strings sind eine Zusammenstellung von Zeichen 
+‣ Man kann also über sie iterieren 
+‣ begin() ist der Iterator zum ersten Zeichen 
+‣ end() ist der Iterator zum letzten Zeichen 
+
+string col= "purple";
+string::iterator si;
+// Send the contents of col to cout
+for (si = col.begin(); si != col.end(); si++)
+{
+  cout << *si;
+}
+
+‣ Man kann Strings mit STL-Algorithmen benutzen 
+‣ Nicht sehr effizient 
+‣ Besser: Verwendung der string Member-Funktionen
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+383
+
+C++ Strings (8)
+
+‣ find() Member-Funktion mit vier Signaturen: 
+
+size_type find(const string &, size_type start = 0)
+size_type find(const char *, size_type start, 
+                             size_type length)
+size_type find(const char *, size_type start = 0)
+size_type find(char, size_type start = 0)
+
+‣ Gibt den Index für den ersten gefundenen Match zurück 
+‣ Falls keine Übereinstimmung gefunden wird ist das Ergebnis 
+string::npos
+‣ rfind() durchsucht den String rückwärts 
+‣ Gleiche Signaturen wie find() inkl. den Default-Werten 
+‣ find_first_of(), find_last_of
+‣ Matchen sobald irgendein Zeichen des Suchstrings gefunden 
+wurde 
+‣ find_first_not_of(), find_last_not_of()
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+384
+
+C++ Strings (9)
+‣ substr() extrahiert einen Teilstring 
+substr(size_type start = 0,
+       size_type length = npos)
+
+‣ Gibt einen neuen String zurück 
+‣ replace() modifiziert den String 
+‣ Viele Versionen 
+‣ Positionen, Iteratoren etc. 
+‣ erase() löscht einen Teilstring 
+‣ append() erlaubt das Anhängen von strings und char-
+Arrays 
+‣ insert() fügt einen String ein
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+385
+
+C++ Strings (10)
+
+‣ strings können nach char* konvertiert werden 
+• c_str() gibt einen Pointer auf ein nullterminiertes Feld zurück 
+• data() gibt einen Pointer auf ein nicht-terminiertes Feld zurück 
+• copy() kopiert einen String in einen char*-Buffer 
+‣ Beispiel: 
+
+string value = "orange";
+printf("%s\n", value.data());   // WRONG!
+printf("%s\n", value.c_str());  // Correct
+
+‣ Niemals die data()-Member-Funktion verwenden, wenn die 
+Nullterminierung gebraucht wird!!!
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+386
+
+C++ Strings (11)
+
+‣ Niemals die Pointer zwischenspeichern, die von data() oder 
+c_str() Member-Funktionen zurück gegeben werden! 
+‣ Diese zeigen auf Interna der String-Klasse  
+‣ Können sich ändern 
+‣ Die data() oder c_str() Ergebnisse nicht als 
+Funktionsrückgabewerte verwenden: 
+
+char *getUserName() {
+  string name;
+  cout << "Enter username: ";
+  cin >> name;
+  return name.c_str();   // BAD!
+}
+
+‣ Der Speicher wird in der String-Klasse verwaltet und freigegeben 
+wenn die Instanz gelöscht wird
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+387
+
+Gliederung
+
+1.Einführung in C 
+2.Einführung in C++ 
+3.C++ für Fortgeschrittene 
+
+3.1 Templates 
+3.2 Die C++-Standardbibliothek 
+
+3.2.1 Strings 
+3.2.2 STL 
+3.2.2 Bibliotheksfunktionen 
+
+3.3 Threads
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+388
+
+C++ Standard Template Library (1)
+
+‣ Entstehung: 
+• 1971 erste Entwürfe generischer Bibliotheken (Dave Musser) 
+• 1979 erste Überlegungen von Alexander Stepanow 
+• Stepanow entwickelt bei HP erste Version von STL 
+• 1993 wurde die STL dem Standardisierungskommitee vorgestellt 
+• Basierend darauf wurden Teile der Bibliothek in die C++-
+‣ Die C++-Standardbibliothek weicht in Teilen von der 
+ursprünglichen Implementierung ab  
+‣ STL ist keine Untermenge der C++-Standardbibliothek 
+‣ Der Begriff wird aber häufig mit ihr in Zusammenhang gebracht 
+‣ Was ist die STL?
+
+Standardbibliothek übernommen 
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+389
+
+C++ Standard Template Library (2)
+
+‣ Antwort von Wikipedia:
+
+Ursprünglich wurde mit Standard Template Library eine in den 
+1980er Jahren bei Hewlett-Packard (kurz: HP) entwickelte, in 
+C++ verfasste Bibliothek bezeichnet, die weitgehend auf 
+generischer Programmierung mit dem Schwerpunkt Daten-
+strukturen und Algorithmen basierte. Diese Bibliothek be-
+einflusste maßgeblich die so genannte C++-Standard-
+bibliothek, die heute fester Bestandteil der Programmier-
+sprache C++ ist. 
+‣ Es gibt verschiedene Bibliotheken namens STL 
+‣ Wir werden uns um den Teil kümmern, der in die C++-Standard-
+bibliothek eingegangen ist
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+390
+
+C++ Standard Template Library (3)
+
+‣ STL ist 
+• Generisch 
+
+- Stark parametrisiert, viele Templates 
+
+• Enthält so genannte Container 
+
+- Zusammenstellung von Objekten mit verschiedener Charakteristik 
+
+• Enthält Algorithmen 
+
+• Enthält Iteratoren 
+
+- Zur Manipulation der in Containern gespeicherten Daten 
+
+- Iteratoren sind eine Generalisierung von Pointern 
+- Damit ist es möglich Algorithmen sauber von Containern zu trennen 
+
+‣ Erste Kategorie von Containern: Sequenzen 
+• Verwendung eines Index zum Zugriff 
+• Werte haben eine „Ordnung“
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+391
+
+C++ Standard Template Library (4)
+
+‣ Weitere Kategorien?  
+‣ Dazu später mehr! 
+‣ Beispiel: 
+
+vector<int> v(3);     // Vector of 3 elements
+v[0] = 7;
+v[1] = v[0] + 3;
+v[2] = v[0] + v[1];
+
+‣ Oder: 
+
+vector<int> v;        // Without predetermined size
+v.push_back(7);
+v.push_back(v[0] + 3);
+v.push_back(v[0] + v[1]);
+
+‣ Nun möchten wir die Reihenfolge der drei Zahlen vertauschen 
+
+reverse(v.begin(), v.end());
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+392
+
+C++ Standard Template Library (5)
+
+‣ vector<int> ist ein generischer Container 
+‣ reverse() ist ein Algorithmus 
+‣ reverse() benutzt Iteratoren, die mit v assoziiert sind 
+‣ STL bietet generische Funktionen 
+‣ Parametrisiert über den Iterator-Typ, nicht über den Container 
+‣ Beispiel: Der find()-Algorithmus 
+
+template <class InputIterator, class T>
+InputIterator find(InputIterator first,
+                   InputIterator last,
+                   const T& value) 
+{
+  while (first != last && *first != value) ++first;
+  return first;
+}
+
+‣ Sucht nach value im Bereich [first, last)
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+393
+
+C++ Standard Template Library (6)
+
+template <class InputIterator, class T>
+InputIterator find(InputIterator first,
+                   InputIterator last,
+                   const T& value)
+‣ InputIterator hat keinen speziellen Typ 
+while (first != last && *first != value) ++first;
+‣ Nur die Unterstützung für * (Dereferenzieren), ++ (Inkrement) 
+und == (Gleichheit) muss vorhanden sein! 
+‣ Pointer erfüllen diese Zwänge 
+
+int a[5] = { 1.1, 2.3, -4.7, 3.6, 5.2 };
+int *pVal;
+pVal = find(a, a + 5, 3.6);// Use int* as iterators
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+394
+
+C++ Standard Template Library (7)
+
+‣ Die Menge der benötigten Funktionalität für einen Typ wird auch 
+Konzept genannt. 
+‣ Hier wird das Konzept „InputIterator“ genannt. 
+‣ Bei einem Typ, der die Bedingungen eines Konzepts erfüllt, 
+spricht man auch davon, dass er das Konzept modelliert. 
+‣ Beispiel: 
+• int* ist ein Model des InputIterators, weil int* alle 
+Operationen zur Verfügung stellt, die der InputIterator 
+benötigt.  
+‣ Der reverse()-Algorithmus benötigt mehr! 
+• Die Iteratoren brauchen auch eine ---Operation! 
+• Man Spricht vom „BidirectionalIterator“ 
+
+- Analog wie InputIterator, aber mit mehr „Requirements“
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+395
+
+C++ Standard Template Library (8)
+‣ Der BidirectionalIterator erweitert (engl.: refines) das 
+Konzept des  InputIterators 
+• Dies ist genau wie die Klassen-Hierarchie 
+• Andere Namensgebung, weil es sich nicht um Klassen handelt 
+‣ Leider wird das Konzept der „Konzepte“ nicht von der 
+Programmiersprache unterstützt 
+• Keine Unterstützung bei der Deklaration von Konzepten 
+• Keine Unterstützung ob ein Typ ein Konzept modelliert 
+‣ Mehr Arbeit für den Programmierer / Herausforderung
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+396
+
+C++ Standard Template Library (9)
+
+‣ Trivial Interator 
+• Unterstützt dereferenzieren 
+• Das war‘s schon! … It‘s trivial … 
+‣ Input Iterator 
+• Nur Lese-Unterstützung wird zugesichert 
+• Nur „Single Pass“ Unterstützung wird zugesichert 
+‣ Forward Iterator 
+• Ähnlich wie InputIterator 
+• Unterstützt auch „Multi Pass“ 
+‣ Bidirectional Iterator 
+• Unterstützt Dekrement 
+‣ Random Access Iterator 
+• Unterstützt Schritte beliebiger Größe in beliebiger Richtung
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+397
+
+Gliederung
+
+1.Einführung in C 
+2.Einführung in C++ 
+3.C++ für Fortgeschrittene 
+
+3.1 Templates 
+3.2 Die C++-Standardbibliothek 
+
+3.2.1 Strings 
+3.2.2 STL 
+3.2.2 Bibliotheksfunktionen 
+
+3.3 Threads
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+398
+
+Funktoren (1)
+
+‣ Wir wollen eine flexible Template-Funktion sort() schreiben 
+‣ Problem: Die Funktion kennt den Anwendungskontext nicht 
+‣ Sortierreihenfolge und Sortierkriterium sollten steuerbar sein 
+‣ Eine allgemeine Implementierung scheint wegen der zweiten 
+Forderung nicht möglich 
+‣ Die Eigenschaften sind für beliebige T nicht bekannt 
+‣ Beispiel:
+template <class T>
+void sort (T* first, int num);
+
+class Student {
+string name;
+int semester;
+/* ... */
+
+};
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+399
+
+Funktoren (2)
+
+‣ sort() braucht eigentlich nur eine Problemabhängige 
+Vergleichsfunktion 
+‣ Idee: Vergleichsoperatoren überschreiben 
+‣ Löst hier das Problem nicht (wenn wir z.B. die Sortierreihenfolge 
+ändern wollen) 
+‣ Lösung: Wir stellen einen so genannten Funktor zur Verfügung, 
+der leicht ausgetauscht werden kann: 
+
+struct compName
+{
+
+}
+
+};
+
+bool operator()(const Student& a, const Student& b)
+{
+
+return (a.name < b.name);
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+400
+
+Funktoren (3)
+
+‣ Funktoren sind Klassen, die den ()-Operator implementieren 
+‣ Diese Klassen können als Parameter übergeben werden, um das 
+Verhalten von Algorithmen zu beeinflussen 
+‣ Benutzung in der Version der sort()-Funktion: 
+
+template <class T, class Comp>
+void sort (T* begin, int num, Comp cmpFunc)
+{
+
+...
+if (cmpFunc(a, b)) ...
+
+}
+
+‣ Benutzung von sort() mit verschiedenen Funktoren: 
+
+Student students[100];
+// ...
+sort(students, 100, compName); // sort by Name
+sort(students, 100, compTime); // sort by Semester
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+401
+
+STL - Funktionsobjekte (1)
+
+‣ Funktionsobjekte sind all das, was wie eine Funktion aufgerufen 
+werden kann: 
+- Eine Verallgemeinerung einer Funktion 
+- Ein Funktionspointer 
+- Eine Instanz einer Klasse, die () überlädt 
+‣ Erlauben die Veränderung von Algorithmen, bzw. der 
+Operationen, die Algorithmen ausführen 
+‣ Diese Dinge können STL übergeben werden 
+‣ Auch bekannt unter dem Namen „Functors“
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+402
+
+STL - Funktionsobjekte (2)
+
+‣ In der Standard-Bibliothek werden verschiedene Konzepte 
+unterstützt 
+‣ Beispiele:
+Konzept
+Generator
+Unäre Funktion
+Binäre Funktion
+Prädikat
+Binäres Prädikat
+
+Bemerkung
+keine Argumente
+ein Argument
+zwei Argumente
+ein Argument
+zwei Argumente
+
+Beispiel
+f()
+f(x)
+f(x, y)
+bool f(x)
+bool f(x, y)
+
+‣ Und noch viele weitere mehr...
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+403
+
+STL - Funktionsobjekte (3)
+
+‣ Beispiel: Erzeugen von 100 Zufallszahlen 
+
+vector<int> values(100);
+generate(values.begin(), values.end(), rand);
+
+‣ Mit Funktoren kann man sich eigene Funktionen erstellen: 
+
+int randomColorValue() {
+  return rand() & 0x00FFFFFF;
+}
+
+...
+
+vector<int> randColors(10);
+generate(randColors.begin(), 
+         randColors.end(),
+         randomColorValue);
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+404
+
+STL - Funktionsobjekte (4)
+
+‣ Funktor mit Zustand 
+‣ Beispiel: Gesucht ist die Summe von Elementen 
+‣ Eine Klasse mit überladenen () – Operatoren ist perfekt 
+
+struct adder : public unary_function<int, void>
+{ 
+  int sum;
+  adder() : sum(0) { }
+  void operator()(int x) { sum += x; }
+};
+
+‣ Anwendung des Funktors mit dem for_each-Algorithmus 
+
+adder result = for_each(values.begin(),
+                        values.end(),
+                        adder());
+cout << "Sum is " << result.sum << endl;
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+405
+
+STL - Funktionsobjekte (4)
+
+‣ Weiteres Beispiel: Ausgabe von Zahlen 
+‣ Anwendung des copy()-Funktors und des Output-Iterators 
+
+copy(values.begin(),
+     values.end(),
+     ostream_iterator<int>(cout, ", "));
+
+‣ Bemerkung: Der Template-Parameter von ostream_iterator 
+muss zu dem Element-Type der Kollektion passen! 
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+406
+
+STL - Containerklassen
+
+‣ Bisher: Sequenzen (z.B. Vektoren, Listen, …) 
+‣ Weitere Container Kategorien sind: 
+‣ Assoziative Container 
+• set 
+• map 
+• multiset / multimap 
+• unordered_map (früher hash_map)
+‣ Container-Adapter  
+• stack 
+• queue 
+• priority_queue 
+• bitset 
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+407
+
+STL-Beispiel: set-Vereinigung
+
+struct ltstr {
+  bool operator()(const char* s1, const char* s2) const {
+    return strcmp(s1, s2) < 0;
+  }
+};
+
+int main()
+{
+  const int N = 6;
+  const char* a[N] = {"isomer", "ephemeral", "prosaic", 
+                      "nugatory", "artichoke", "serif"};
+  const char* b[N] = {"flat", "this", "artichoke",
+                      "frigate", "prosaic", "isomer"};
+
+  set<const char*, ltstr> A(a, a + N);
+  set<const char*, ltstr> B(b, b + N);
+
+  cout << "Union: ";
+  set_union(A.begin(), A.end(), B.begin(), B.end(),
+            ostream_iterator<const char*>(cout, " "), ltstr());   
+  cout << endl;
+}
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+408
+
+std::chrono (1)
+
+c++11
+
+‣ Chrono-Library zur Verwaltung von Zeitpunkten und -dauern 
+‣ Definiert drei Grundlegende Konzepte 
+• Zeitdauer („Duration“): Eine festlegte Anzahl an Zeitticks in einer 
+• Zeitpunkt („Timepoint“): Kombination aus einer Länge und dem 
+
+definierten Einheit („3 Minuten“, „42 Sekunden“, „1000 Millisekunden) 
+
+Anfangspunkt einer Epoche. (Neujahr 2000: 1.262.300.400 Senkunden 
+seit dem ersten Januar 1970, POSIX-Epoche) 
+
+• Die Epoche wird durch eine Uhr („Clock“) bestimmt. 
+
+C++ Standard Library, The: A Tutorial and Reference, 
+2nd Edition, Addison-Wesley Professional, 2012
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+409
+
+std::chrono (2)
+
+c++11
+
+‣ Durations: 
+
+std::chrono::duration<int>twentySeconds(20);
+std::chrono::duration<double,std::ratio<60>>halfAMinute(0.5);
+std::chrono::duration<long,std::ratio<1,1000> oneMillisecond(1);
+
+‣ Der erste Parameter definiert die Einheit der Ticks 
+‣ Der zweite, optionale die weite der Ticks 
+‣ Weite der Ticks wird durch std::ratio<n, m> bestimmt 
+‣ In der Standardlib sind die folgenden Typen vordefiniert:
+
+namespace std {
+namespace chrono {
+typedef duration<signed int-type >= 64 bits,nano>        nanoseconds;
+typedef duration<signed int-type >= 55 bits,micro>       microseconds;
+typedef duration<signed int-type >= 45 bits,milli>       milliseconds;
+typedef duration<signed int-type >= 35 bits>             seconds;
+typedef duration<signed int-type >= 29 bits,ratio<60>>   minutes;
+typedef duration<signed int-type >= 23 bits,ratio<3600>> hours;
+}
+}
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+410
+
+std::chrono (3)
+
+‣ Zeiträume unterstützen arithmetische Operationen 
+‣ Beispiel:
+
+std::chrono::seconds twentySeconds(20);  // 20 seconds
+std::chrono::hours   aDay(24);           // 24 hours
+
+c++11
+
+std::chrono::milliseconds ms;            // 0 milliseconds
+ms += twentySeconds + aDay;              // 86,400,000 milliseconds
+--ms;                                    // 86,399,999 milliseconds
+ms *= 2;                                 // 172,839,998 milliseconds
+std::cout << ms.count() << " ms" << std::endl;
+std::cout << std::chrono::nanoseconds(ms).count() << " ns" << std::endl;
+
+‣ Ergibt folgende Ausgabe:
+
+172839998 ms
+172839998000000 ns
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+411
+
+std::chrono (4)
+
+c++11
+
+‣ Zeitpunkte definieren sich durch Dauer und der Epoche (Uhr) 
+‣ In der Standardbibliothek gibt es drei definierte Uhren 
+• Die Systemuhr (system_clock): Normalerweise die Echtzeituhr des 
+Systems. D.h. es lassen sich Kalenderzeiten repräsentieren. Interface 
+zu Kalenderfunktionen. 
+
+d.h., der Zähler steigt immer  
+
+• Eine steady_clock, die garantiert, dass die Uhr niemals verstellt wird, 
+• Die high_resolution_clock kann Ticks mit der auf dem System 
+‣ Der Standard definiert nicht, welche Epochen, Auflösungen etc. 
+von den einzelnen Uhren geliefert werden 
+‣ Zum Herausfinden gibt des Hilsfunktionen
+
+größtmöglichen Auflösung darstellen 
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+412
+
+std::chrono (5)
+
+‣ Interface zu Kalenderfunktionen
+
+c++11
+
+string asString (const chrono::system_clock::time_point& tp)
+{
+    time_t t = chrono::system_clock::to_time_t(tp); // convert to system time
+    string ts = ctime(&t);                          // convert to calendar time
+    ts.resize(ts.size()-1);                         // skip trailing newline
+    return ts;
+}
+
+     // print the epoch of this system clock:
+     std::chrono::system_clock::time_point tp;
+     std::cout << "epoch: " << asString(tp) << std::endl;
+
+     // print current time:
+     tp = std::chrono::system_clock::now();
+     std::cout << "now:   " << asString(tp) << std::endl;
+
+     // print minimum time of this system clock:
+     tp = std::chrono::system_clock::time_point::min();
+     std::cout << "min:   " << asString(tp) << std::endl;
+
+     // print maximum time of this system clock:
+     tp = std::chrono::system_clock::time_point::max();
+     std::cout << "max:   " << asString(tp) << std::endl;
+
+ epoch: Thu Jan1 01:00:00 1970
+  now:Sun Jul 24 19:40:46 2011
+  min:Sat Mar5 18:27:38 1904
+  max:Mon Oct 29 07:32:22 2035
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+413
+
+std::chrono (6)
+
+c++11
+
+   // define type for durations that represent day(s):
+   typedef chrono::duration<int,ratio<3600*24>> Days;
+
+   // process the epoch of this system clock
+   chrono::time_point<chrono::system_clock> tp;
+   cout << "epoch:" << asString(tp) << endl;
+
+  // add one day, 23 hours, and 55 minutes
+  tp += Days(1) + chrono::hours(23) + chrono::minutes(55);
+  cout << "later:" << asString(tp) << endl;
+
+epoch:        Thu Jan1 01:00:00 1970
+later:        Sat Jan3 00:55:00 1970
+diff:         2875 minute(s)
+diff:         1 day(s)
+-1 year:      Fri Jan3 00:55:00 1969
+-50 years:    Thu Jan 16 00:55:00 1919
+-50 years:    Sat Mar5 07:23:16 2005
+
+  // process difference from epoch in minutes and days:
+  auto diff = tp - chrono::system_clock::time_point();
+  cout << "diff:"
+       << chrono::duration_cast<chrono::minutes>(diff).count()
+       << " minute(s)" << endl;
+  Days days = chrono::duration_cast<Days>(diff);
+  cout << "diff:" << days.count() << " day(s)" << endl;
+
+  // subtract one year (hoping it is valid and not a leap year)
+  tp -= chrono::hours(24*365);
+  cout << "-1 year:" << asString(tp) << endl;
+
+  // subtract 50 years (hoping it is valid and ignoring leap years)
+  tp -= chrono::duration<int,ratio<3600*24*365>>(50);
+  cout << "-50 years: " << asString(tp) << endl;
+
+  // subtract 50 years (hoping it is valid and ignoring leap years)
+  tp -= chrono::duration<int,ratio<3600*24*365>>(50);
+  cout << "-50 years: " << asString(tp) << endl;
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+414
+
+Smart Pointer (1)
+
+c++11
+
+std::unique_ptr<int> p1(new int(5));
+std::unique_ptr<int> p2 = p1; //Compile error.
+std::unique_ptr<int> p3 = std::move(p1); 
+//Transfers ownership. p3 now owns the memory and p1 is rendered invalid.
+ 
+p3.reset(); //Deletes the memory.
+p1.reset(); //Does nothing.
+
+‣ In C++11 gibt es zwei Arten von Smart-Pointern: Unique-Pointer, 
+die es nicht erlauben einen Zeiger zu kopieren und Container mit 
+Referenzzählern 
+‣ std::unique_pointer kann gespeicherte Zeiger nicht 
+kopieren nur verschieben 
+‣ In std::unique_pointer sind die Copy-Konstruktoren und 
+Zuweisungsoperatoren gelöscht 
+‣ Die verwalteten Zeiger können nur mittels std::move 
+weitergegeben werden 
+‣ Will man, dass sich mehrere Objekte Zeiger teilen, benötigt man 
+Referenzzähler
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+415
+
+Smart Pointer (2)
+
+c++11
+
+‣ Verwaltete Pointer mit Referenzzähler erhöhen einen internen 
+Zähler sobald eine Kopieroperation durchgeführt wird 
+‣ Wird ein verwalteter Zeiger freigegeben, wird der Referenzzähler 
+dekrementiert 
+‣ Wenn der Referenzzähler 0 ist, kann der verwaltete Zeiger sicher 
+freigegeben werden 
+‣ Kann Memory-Leaks verhindern
+std::shared_ptr<int> p1(new int(5));
+std::shared_ptr<int> p2 = p1; //Both now own the memory.
+ 
+p1.reset(); //Memory still exists, due to p2.
+p2.reset(); //Deletes the memory, since no one else owns the 
+memory.
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+416
+
+Smart Pointer (3)
+
+‣ Problem bei diesem Ansatz: Gegenseitige Referenzierung
+
+c++11
+
+struct CDad : public CSample
+{
+   CChildPtr myBoy;
+};
+
+struct CChild : public CSample
+{
+  CDadPtr myDad;
+};
+
+typedef std::shared_ptr<CDad>   CDadPtr;
+typedef std::shared_ptr<CChild> CChildPtr;
+
+// a "thing" that holds a smart pointer to another "thing":
+CDadPtr   parent(new CDadPtr); 
+CChildPtr child(new CChildPtr);
+
+// deliberately create a circular reference:
+parent->myBoy = child; 
+child->myDad = dad;
+
+// resetting one ptr...
+child.reset();
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+417
+
+Smart Pointer (4)
+
+c++11
+
+‣ Nach child.reset() existiert immer noch die indirekte 
+Referenz von dad nach child 
+‣ dad.reset() würde hier dafür sorgen, dass es keine 
+Möglichkeit mehr gibt an child zu kommen 
+‣ Beide Referenzzähler währen noch auf 1 
+‣ Kein Smart Pointer gibt den Speicher frei -> Memory Leak! 
+‣ Lösung: Weak Pointer
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+418
+
+c++11
+
+Smart Pointer (5)
+
+‣ Die Lösung: Schwache Referenzen, std::weak_ptr
+‣ Erhöht den Referenzzähler zunächst nicht, speichert nur den 
+Verweis  
+‣ Das refrenzierte Objekt kann jederzeit freigegeben werden 
+‣ Man kann daher auf den Inhalt nur zugreifen, wenn das Objekt 
+noch existiert 
+‣ Im Beispiel oben kann man den Zeiger vom Kind zum Vater 
+schwach modellieren 
+‣ Dann würde das Zählen der Referenzen klappen
+
+struct	  CBetterChild	  :	  public	  CSample	  
+{	  
+	  	  weak_ptr<CDad>	  myDad;	  
+	  	  void	  BringBeer()	  
+	  	  {	  
+	  	  	  	  shared_ptr<CDad>	  strongDad	  =	  myDad.lock();	  //	  request	  a	  strong	  pointer	  
+	  	  	  	  if	  (strongDad)	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  //	  is	  the	  object	  still	  alive?	  
+	  	  	  	  	  	  strongDad-­‐>SetBeer();	  
+	  	  	  	  //	  strongDad	  is	  released	  when	  it	  goes	  out	  of	  scope.	  
+	  	  	  	  //	  the	  object	  retains	  the	  weak	  pointer	  
+	  	  }	  
+};
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+419
+
+Smart Pointer (6)
+
+c++11
+
+‣ In C++03 gab einen Typ std::auto_ptr mit Referenzzählung 
+‣ Dieser ist in C++11 deprecated und sollte daher nicht mehr 
+verwendet werden 
+‣ std::auto_ptr aus aus Kompatibilitätsgründen immer noch 
+Teil der Bibliothek 
+‣ In C++11 sind alle Smart-Pointer thread-safe. 
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+420
+
+Gliederung
+
+1.Einführung in C 
+2.Einführung in C++ 
+3.C++ für Fortgeschrittene 
+
+3.1 Templates 
+3.2 Die C++-Standardbibliothek 
+
+3.2.1 STL 
+3.2.2 Bibliotheksfunktionen 
+
+3.3 Threads
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+421
+
+Threads (1)
+
+‣ Ein Thread ist ein eigenständiger Ausführungsstrang innerhalb 
+eines Prozesses 
+‣ Threads können parallel laufen (Multithreading) 
+‣ Threads in Vergleich zu Prozessen: 
+• Prozesse werden vom System erzeugt 
+• Prozesse arbeiten in eigenen (gesicherten) Speicherbereichen 
+• Kommunikation zwischen Prozessen ist schwierig 
+• fork() 
+‣ Threads sind ‘lightweight‘ Prozesse:  
+• Ein Prozess kann viele Threads haben 
+• Alles Threads gehören zum gleichen Programm 
+• Threads können sich Ressourcen teilen
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+422
+
+Threads (2)
+
+‣ Alle Threads teilen sich die Programminstruktionen, den globalen 
+Programmspeicher, offene Files, … 
+‣ Jeder Thread hat seine eigene ID, seinen eigenen Stack, 
+Instruction-Counter,… 
+‣ Threads kommunizieren über gemeinsamen Speicher (shared 
+memory). 
+‣ Threads haben spezielle Synchronisationsmechanismen.
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+423
+
+Flynn’sche Klassifizierung
+
+‣ Einteilung von Rechnerarchitekturen in verschiedene Klassen 
+‣ Lässt sich auch im Kontext von Threads anwenden 
+‣ SISD (Single Instruction, Single Data) 
+• entspricht genau einen Thread 
+• wie ein klassisches Programm ohne Threads 
+‣ SIMD (Single Instruction, Multiple Data) 
+• der gleiche Algorithmus wird parallel auf verschiedene Daten 
+‣ MISD (Multiple Instructions, Single Data) 
+• schwer zu klassifizieren 
+• z.B. redundante Verarbeitung von Daten 
+‣ MIMD (Multiple Instructions, Multiple Data) 
+• unterschiedliche Threads / Prozesse arbeiten unabhängig
+
+angewendet 
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+424
+
+C++ Threads (1)
+
+c++11
+
+// thread example
+#include <iostream>       // std::cout
+#include <thread>         // std::thread
+ 
+void foo() 
+{
+  // do stuff...
+}
+
+void bar(int x)
+{
+  // do stuff...
+}
+
+int main() 
+{
+  std::thread first (foo);     // spawn new thread that calls foo()
+  std::thread second (bar,0);  // spawn new thread that calls bar(0)
+
+  std::cout << "main, foo and bar now execute concurrently…" << std::endl;
+
+  // synchronize threads:
+  first.join();                // pauses until first finishes
+  second.join();               // pauses until second finishes
+
+  std::cout << "foo and bar completed.“ << std::endl;
+
+  return 0;
+}
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+425
+
+Threads (2)
+
+‣ Thread bekommen Zeiger auf Funktionen oder Funktionsobjekte 
+‣ Beispiel für einen Thread mit Funktionsobjekt:
+
+c++11
+
+#include <vector>
+#include <thread>
+
+class Worker {
+public:
+
+...
+
+}
+
+};
+
+void operator()(int i, std::string s, std::vector<double>)
+{
+
+std::thread t(Worker(), 42, "hello", std::vector<double>(1.2, 3.14));
+t.join();
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+426
+
+Threads (3)
+
+c++11
+
+‣ Mutexe:
+
+class account
+{
+    std::mutex m;
+    currency_value balance;
+public:
+
+    friend void transfer(account& from,account& to,
+                         currency_value amount)
+    {
+        std::lock_guard<std::mutex> lock_from(from.m);
+        std::lock_guard<std::mutex> lock_to(to.m);
+        from.balance -= amount;
+        to.balance += amount;
+    }
+};
+
+Potentieller Dead-Lock!!
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+427
+
+Threads (4)
+
+c++11
+
+‣ Ohne Deadlock:
+
+void transfer(account& from,account& to,
+              currency_value amount)
+{
+    std::lock(from.m,to.m);
+    std::lock_guard<std::mutex> lock_from(from.m,std::adopt_lock);
+    std::lock_guard<std::mutex> lock_to(to.m,std::adopt_lock);
+    from.balance -= amount;
+    to.balance += amount;
+
+}‣ std::lock ist ein Template und keine Funktion 
+‣ std::lock kann beliebig viele Parameter haben 
+‣ „Variadic Templates“ sind auch ein neues C++11-Feature 
+‣ std::lock sperrt hier beide Mutexe gleichzeitig, keine Race-
+Conditions 
+‣ std::adopt_lock sagt, dass wir im Besitz des Locks sind 
+und std::lock_guard es sicher frei geben kann
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+428
+
+Threads (5)
+
+‣ Zeitabhängige Mutexe:
+
+std::timed_mutex m;
+
+c++11
+
+int data;
+void foo()
+{
+
+// Try to generate a lock for 3 ms
+std::unique_lock<std::timed_mutex> lk(m, std::chrono::milliseconds(3));
+
+// If locked, process data
+if(lk) process_data(data);
+
+}‣ std::unique_lock<...> sperrt den Mutex im Konstruktor und 
+gibt ihn im Destruktor wieder frei 
+‣ std::unique_lock<...> behält Ownership so lange es die 
+Instanz gibt 
+‣ Kann als Rückgabewert verwendet werden 
+‣ std::chrono ist eine Bibliothek zum Verwalten von Zeiträumen
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+429
+
+Threads (6)
+‣ Einmaliges Initialisieren von Daten:
+
+c++11
+
+class MyClass
+{
+
+int i;
+
+public:
+
+MyClass(int i_) : i(i_){}
+
+};
+
+std::once_flag flag;
+
+MyClass* p;
+void createInstance()
+{
+
+p = new MyClass(17);
+
+}
+
+void bar()
+{
+
+}
+
+std::call_once(flag, createInstance)
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+430
+
+

@@ -1,0 +1,530 @@
+Action and Cognition 2 Tutoria l 
+
+D E C I S I O N  
+1 6 . 0 6 . 2 0 1 6  
+
+G R E T A   H Ä B E R L E  
+
+Last Week’s Questions 
+
+2 
+
+Q8.1:   Make a sketch of tuning curves of hypothetical neurons coding 
+
+ visual stimuli in eye coordinates, head-coordinates and eye-
+ coordinates with gain fields. 
+
+Q8.2:   Explain the concept of a gain field using the example of a 
+
+ neuron in LIP.  
+
+Q8.3:   Explain the response properties of neurons in LIP or VIP 
+
+ according to multimodal stimuli.  
+
+Q8.4:   Describe the response properties of neurons in LIP and PRR 
+
+ in a combined fixation and reaching task. 
+
+Q8.5:   How could you find out, whether the reference frame of primary 
+
+ visual cortex corresponds to retina positions or head coordinates?  
+
+Q8.6:   Describe the differences between egocentric and allocentric 
+
+ reference frame.  
+
+ 
+
+Send your answered questions until Sunday to ghaeberle@uos.de to get feedback!  
+
+  
+
+Areas involved in the random dot movement 
+
+3 
+
+  FEF: Frontal Eye Field: Motor area for eye-movements 
+  LIP: Lateral Intraparietal (Area): guiding eye-movements, working 
+
+memory 
+
+  MT (in macaque monkeys) : middle temporal, motion perception 
+
+Recap: MT 
+
+4 
+
+  Topography: 
+
+¡  Neurons arranged in 
+
+direction hypercolumns 
+
+  Response Properties: 
+
+¡  Most neurons sensitive to 
+
+direction and speed of moving 
+luminance contrasts 
+
+¡  Large receptive fields (about 10 
+
+times wider than V1) 
+
+¡  Ocular invariance 
+
+ 
+
+ 
+
+Recap: Frontal Eye Field 
+
+5 
+
+  Properties:  
+
+¡  Some visually responsive neurons 
+
+(roughly half of them) 
+
+¡  Other neurons elicit saccades and 
+
+are topographically arranged 
+(neighboring locations in FEF elicit 
+saccades to neighboring sites in the 
+visual field) 
+
+¡  Neurons in the ventrolateral part 
+
+(receving input from the fovea) elicit 
+short-amplitude saccades (blue) 
+¡  Neurons in the dorsomedial part 
+
+(receiving input from the periphery) 
+elicit longer-amplitude saccades 
+(red) 
+
+Response Properties LIP 
+
+6 
+
+  Experiment: 
+
+¡  Targets appeared in 1 of 8 
+
+locations  
+
+¡  The monkey made an eye 
+
+movement to its remembered 
+location when the fixation point 
+was extinguished (triangles) 
+
+¡  Record from LIP neuron 
+
+  Results: 
+
+¡  Example neuron exhibited 
+increased activity in the delay 
+period before saccadic eye 
+  
+movements to the left. 
+¡  Activity after the initiation of 
+the saccadic eye movement is 
+not included in graphs  
+
+Setup of a Basic Decision Task  
+
+7 
+
+  Random dot stimulus (set of randomly 
+moving dots, subset moves coherently 
+into one direction)  
+
+  Subset of moving dots is varied 
+  Time span of Delay Period is varied 
+  Monkey indicates judged direction of 
+
+motion by saccadic eye movement (T1 if 
+leftward motion, T2 if rightward motion 
+was detected) 
+
+  Record from MT and LIP neurons 
+
+A Basic Decision Task – Results MT 
+
+8 
+
+  Results in MT: 
+
+¡  Neurons in MT are activated 
+
+during presentation of the 
+moving dot stimulus for the 
+preferred direction 
+
+¡  MT activation scales with 
+
+level of coherence in motion 
+to the preferred direction 
+¡  The firing stops once the 
+
+stimulus is turned off 
+
+Ø  MT activity seems to reflect 
+
+momentary sensory evidence 
+for movement 
+
+A Basic Decision Task – Results LIP 
+
+9 
+
+  Results in LIP: 
+
+¡  T1 but not T2 fell within the 
+
+movement field of LIP neuron 
+
+¡  Activity of the neuron reflected a 
+
+choice for a saccade towards T1, even 
+without coherence in the dot-
+movement 
+
+¡  Increase of activity for later T1 choise 
+
+during stimulus presentation 
+
+¡  Higher increase for higher coherence 
+¡  In delay period after stimulus off-set 
+
+still high activity until saccade 
+
+Ø  LIP activity is influenced by stimulus 
+
+properties but seems to reflect the 
+behavioral decision 
+
+LIP and Motion Discrimination 
+
+10 
+
+  Increase of LIP activity for 
+decisions towards the LIP 
+neuron's preferred 
+direction (green lines) for: 
+
+  Dot movement in that 
+
+direction (solid line) 
+
+  But also for non-matching 
+movements (dashed line) 
+  No Increase of LIP activity 
+for decisions away from the 
+perferred direction (red 
+lines) irrespective of dot 
+movement direction 
+
+Ø  LIP activity is influenced by 
+
+stimulus properties but 
+seems to reflect the 
+behavioral decision. 
+
+LIP as a temporal integrator 
+
+11 
+  LIP activity could be integrated over 
+time from the evidence given by MT 
+neuron's (pro and against preferred 
+direction) 
+
+  i.e. the activity from MT neurons that 
+code away from preferred direction 
+gets substracted from activity of MT 
+neurons that code forward the 
+preferred direction 
+
+  Example: 
+
+with preferred saccade direction to the 
+right 
+
+¡  Grey Histogram: Activity of MT neurons 
+with same preferred movement direction 
+as LIP saccade direction 
+
+¡  Black Line: Activity of MT neurons with 
+
+opposing preferred movement direction as 
+LIP saccade direction   
+
+¡  Red Line: Modelled activity of LIP neuron 
+
+A 3 Stage Model of Decisions 
+
+12 
+
+Stage 1 
+
+13 
+
+  MT neurons fire in response to 
+perceived movement direction 
+with a higher firing rate the 
+higher the movement 
+coherence is  
+
+Ø Activitiy of MT-Neurons 
+
+reflects momentary perceived 
+evidence 
+
+Stage 2 
+
+14 
+
+  LIP neurons approximate the 
+
+integral of the difference of 
+the firing behavior of MT 
+neurons with opposing 
+direction preferences → 
+Integration of sensory 
+evidence by neurons in LIP 
+
+Ø Integration of sensory 
+
+evidence by neurons in LIP  
+
+Stage 3 
+
+15 
+
+  The accumulated activation of a 
+
+LIP neuron reaches a certain 
+threshold, a decision is made, and 
+the saccade can be executed 
+
+Ø Activitiy of LIP-neurons reflects 
+
+decision properties 
+
+Random Dot Experiment – the Reaction Time 
+
+Task 
+
+16 
+
+  Setup: 
+
+¡  Same as before, but without delay period 
+¡  Reaction time and neural activity between 
+
+stimulus onset and saccade is measured 
+
+  Results: 
+
+¡  Slope of neuronal activity becomes 
+
+steeper, the more sensory evidence is 
+available 
+
+¡  Decisions are made earlier when the 
+
+evidence is stronger 
+
+¡  Average firing rate threshold of about 
+
+68Hz for eliciting the decision, regardless 
+of coherence 
+
+FEF and LIP in a Random Dot Experiment 
+
+17 
+
+  Setup: 
+cross 
+
+¡  Monkey fixates fixation 
+
+¡  Two targets appear below 
+and above fixation point 
+
+¡  Moving dot stimulus 
+
+appears above fixation cross 
+
+¡  Percentage of dots moving 
+coherently into one direction 
+and viewing time is varied 
+
+¡  Stimulus is turned off: 
+
+÷  The monkey has to indicate 
+the movement direction of 
+the coherentlymoving dots 
+via a saccade to the target 
+corresponding to the 
+movement direction  
+
+¡  Activity from LIP neuron is 
+
+measured 
+
+¡  Stimulating electrode in 
+
+FEF: in this case FEF 
+neuron elicits saccade to the 
+right 
+ 
+
+FEF and LIP in a Random Dot Experiment 
+
+18 
+
+¡  The activity of LIP neurons encoding a decision for a saccade towards a target causes a 
+
+corresponding deviation in the saccade which is induced by FEF stimulation 
+
+¡  The size of this deviation increases with the percentage of coherence and the viewing time of 
+
+  Results: 
+
+the moving dots 
+
+  Conclusion: 
+
+¡  The oculomotor system is informed about the evolving decision and not just the final (post-
+
+threshold) outcome of the decision process.  
+
+¡  Evidence accumulation and motor responses are thus not sequential processes but 
+
+integrated.  
+
+Motion Discrimination Task Variations 
+
+19 
+
+  Pro-saccade task:  
+
+¡  Saccade in direction of coherently moving dots 
+¡  Saccades after FEF stimulation were systematically biased by stimulus 
+
+induced decision 
+
+  Colored target task:  
+
+¡  Saccade to randomly placed colored targets that were associated with a 
+
+dot movement direction 
+
+¡  Saccades after FEF stimulation were not biased through direction 
+
+decisions based on a color code leading to a random location 
+
+  Anti-saccade task:  
+
+¡  Saccade had to be in opposing direction of moving dots 
+¡  Saccades after FEF stimulation were systematically biased by stimulus 
+
+induced decision 
+
+Ø  Accumulation of information can only be revealed by FEF 
+stimulation if the decision matches directly to known eye 
+movements. 
+
+Representation of Sensory Evidence 
+
+20 
+
+  Setup:  
+
+degradation  
+
+  Example: 
+
+¡  Participants 
+¡  Stimuli belonging to two categories- e.g houses and faces with different levels of 
+
+¡  A Method for measuring neuronal activity at different locations (e.g. fMRI) 
+
+¡  Participants decide if the stimulus is a house or face 
+¡  An increase in noise should lead to a decrease in activity  
+
+Representation of Evidence Integration 
+
+21 
+
+  Setup: 
+
+¡  Same as before but measuring from a different area 
+  Said area has to fulfill the following criteria: 
+
+1. 
+
+2. 
+
+The larger the sensory evidence, the larger its influence on integration i.e. Less  noise → 
+clearer signal 
+Activation should correlate with the difference of activation in sensory areas coding for 
+evidence (e.g. FFA) and counterevidence (e.g. PPA) for the preferred interpretation of the 
+respective integration area (e.g. face) 
+
+This Weeks Questions 
+
+22 
+
+Q9.1:
+
+Q9.2:  
+
+Q9.3:  
+
+Q9.4:  
+
+Q9.5:  
+
+Q9.6:  
+
+Q9.7:  
+
+Q9.8:  
+
+Q9.9:  
+
+Q9.10:  
+
+ Describe the physiological basis of a decision process using the example of a random dot 
+ stimulus with a coherently moving subset of dots. Include a description of the role of different 
+ cortical areas in this process.  
+ Describe the pattern of activity of a representative LIP neuron in a motion 
+ discrimination task. Also consider error trials, where the monkeys report does not match the 
+ stimulus.  
+ Describe qualitative differences in the activity patterns of neurons in MT and LIP in a motion 
+ discrimination task.  
+ Describe the classical paradigm, i.e. the experimental design, which is used to measure the 
+ importance of LIP neurons in decision processes.  
+ Besides the delay task as the classical paradigm in motion discrimination, there is the reaction 
+ time task. What is done differently in this task and what is it that you can find out with it?  
+ To further investigate, whether a slow increase in firing rate really reflects the increasing 
+ certainty of a decision, frontal eye field (FEF) was micro-stimulated. Explain the experimental 
+ setup and tell the results.  
+ Compare the outcome of monkey experiments, where pro-saccade, colored-target or anti-
+ saccade task were applied.  
+ Describe the pathway of processing a random-dot motion from seeing the dots to making the 
+ choice, where the dots move. (Hint: 3-stage-diagram)  
+ What are the experimental ingredients to investigate representations of sensory evidence and 
+ evidence integration?  
+ How is sensory evidence accumulation and motor responses related? Are they sequential or 
+ integrated? Explain using the experimental evidence from FEF micro-stimulations.  
+
+Send your answered questions until Sunday to ghaeberle@uos.de to get feedback!  
+ 
+
+

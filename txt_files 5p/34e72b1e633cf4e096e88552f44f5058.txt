@@ -1,0 +1,1730 @@
+VL GM Biochemie 
+ 
+6  Bioenergetik 
+(mit gerechneten Beispielen)  
+ 
+
+S. Engelbrecht-Vandré   
+
+(Un)Gleichverteilung, (Un)Gleichgewicht, (Un)Ordnung 
+
+2 
+
+Gleichgewicht & Arbeit in 
+einem isolierten & einem 
+offenen System 
+
+3 
+
+Thermodynamik 1 
+ 
+ 
+ 
+System   
+Umgebung 
+ 
+ 
+
+ := Materie in einem definierten Raumbereich  
+ := Raum außerhalb des def. Bereiches 
+
+ 
+
+ 
+System  
+ 
+isoliert
+geschlossen
+offen
+ 
+ 
+
+ 
+
+ 
+      Materieaustausch
+
+ WW mit der Umgebung durch 
+
+     Energieaustausch 
+
+ 
+ 
+ 
+
+ nein
+ nein
+   ja
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ nein 
+   ja 
+   ja 
+
+4 
+
+Ein offenes System  
+im Ungleichgewicht  
+und ohne Aktivierungs- 
+energie-Hürde ☺ 
+
+5 
+
+ 
+Thermodynamik 2 
+ 
+ 
+1. Hauptsatz: 
+
+ 
+
+  
+  
+
+ 
+
+ Die Gesamtenergie eines Systems + seiner Umgebung 
+ ist konstant. 
+ 
+ 
+
+ ΣΕUniversum = konstant 
+
+  
+ oder auch 
+
+ " Energie kann weder erschaffen noch zerstört werden, wohl aber 
+ verschiedene Formen annehmen: kinetische, potentielle, chemische, 
+ Wärme-, Vibrations-, Schwingungs,-  usw.  
+
+6 
+
+ 
+Thermodynamik 3 
+ 
+ 
+ 
+Enthalpie 
+     (Symbol:  H) 
+ 
+ 
+   Bindungsbruch erfordert Energie (damit er erfolgt)
+   Bindungsbildung liefert Energie (das System wird Enthalpie-ärmer)  
+
+ Wärmeinhalt eines Systems 
+
+ = 
+
+ 
+
+ 
+
+ " endotherm 
+ " exotherm 
+
+ 
+ 
+
+   Aber: das sagt nichts über die Richtung bzw. Spontaneität (besser: „Freiwilligkeit“)  
+
+eines Prozesses aus!  
+(Beispiel: Auflösen von Salz in Wasser ist spontan, entzieht aber der Umgebung 
+ Wärme, da sich die Lösung abkühlt und nach Wiedererwärmen folglich die      
+ Umgebung etwas kälter geworden ist) 
+
+7 
+
+Diffusion als Entropie-getriebener Prozess 
+
+8 
+
+Thermodynamik 4 
+ 
+
+ 
+ 
+
+     Umgebung nimmt bei freiwillig ablaufenden 
+     Prozessen immer zu 
+
+ 
+2. Hauptsatz: Die Gesamtentropie eines Systems und seiner  
+ 
+ 
+  
+ 
+ 
+ 
+Entropie 
+
+ ∆Sges  > 0 
+
+ 
+
+ 
+
+9 
+
+ 
+ 
+
+ (Symbol „S“)
+ 
+ 
+ 
+
+ 
+
+ = 
+ 
+ 
+ 
+  
+
+ Maß für die Unordnung eines Systems oder, in         
+ anderen Worten, die Anzahl der Mikrozustände,  
+ die die Teilchen in einem System einnehmen  
+ können (Wahrscheinlichkeit).           S = kB ln W 
+
+ 
+ 
+ 
+ flüssiges Wasser hat eine höhere Entropie als Eiskristalle,  
+ Wasserdampf (= Gas) eine höhere Entropie als flüssiges Wasser 
+
+ Beispiel: 
+ 
+
+ 
+
+ 
+
+ 
+ 
+Thermodynamik 5 
+
+ 
+
+Wenn in einem System Bindungen gebildet werden, das System also Enthalpie-ärmer wird, 
+
+so wird die freiwerdende Energie von der Umgebung des Systems als Wärme  
+aufgenommen. Diese wird zu einer Steigerung der Unordnung der Umgebung benutzt 
+(bildlich: die Beweglichkeit der Teilchen der Umgebung nimmt zu). Der Effekt ist umso 
+ausgeprägter, je kälter die Umgebung anfangs ist, daher muß bei quantitativer 
+Betrachtung auf die (absolute) Temperatur normiert werden (durch T teilen):  
+ 
+ 
+
+ 
+ 
+
+  
+ 
+
+ ∆SUmgebung = - ∆HSystem  / T 
+
+ 
+ 
+Anders gesagt: eine lokale Entropieabnahme (≈Wärmefreisetzung) muß einhergehen mit 
+
+einer Entropiezunahme der Umgebung 
+
+ 
+
+ 
+
+ 
+
+  
+
+10 
+
+ 
+Thermodynamik 6 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+  
+
+ 
+
+ 
+
+ ∆Sgesamt    = ∆SSystem  + ∆SUmgebung  
+
+ 
+
+ = ∆SSystem   -   ∆HSystem / T    |    ·(-T) 
+
+             -T ∆Sgesamt   = ∆HSystem    -  T ∆SSystem   
+
+ 
+ 
+ freie Enthalpie        :=   -T∆Sgesamt
+ 
+
+ =   ∆G = ∆H   -  T ∆S 
+
+  (Symbol G)
+
+ auch „nutzbare Arbeit“, Gibbs‘sche freie Energie) 
+
+!
+
+11 
+
+enthalpische & entropische Beiträge zu Prozessen 
+
+12 
+
+enthalpische & entropische Beiträge zu Prozessen 
+
+13 
+
+Thermodynamik 7 
+ 
+Die freie Enthalpie G reicht aus, Prozeßverläufe vorherzusagen, da sie die lt. 2.HS 
+
+geforderte Bedingung mit allen hier relevanten Größen (also der Enthalpie H, der 
+Entropie S und der absoluten Temperatur) verknüpft. Anders gesagt: Wie groß ist ∆G 
+bei einem spontanen Prozeß? 
+ 
+
+ ∆Sgesamt   >   0    bzw.   ∆SSystem   >   ∆HSystem / T 
+
+exergon    = thermodynamisch begünstigt, spontan, Produktbildung erfolgt 
+endergon  = thermodynamisch nicht begünstigt, nicht spontan, Gegenreaktion spontan 
+Gleichgewicht = Hin- und Rückreaktion laufen gleich schnell, insgesamt kein Umsatz 
+ 
+
+!
+
+14 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+             T ∆SSystem   >   ∆HSystem  
+
+          ∆HSystem    -  T ∆SSystem    <   0 
+
+ 
+ 
+ 
+
+               ∆G
+               ∆G
+               ∆G
+
+ <   0
+ >   0
+ =   0
+
+ 
+ 
+ 
+
+ exergon 
+ endergon 
+ Gleichgewicht 
+
+Die freie Enthalpie ∆G 
+
+#  sagt etwas über die Richtung einer Reaktion aus 
+#  ∆G ist negativ, wenn eine Reaktion ‘spontan’ abläuft 
+
+ (exergon  $ ∆G < 0) 
+
+#  ist ∆G für eine Reaktion positiv, muss Energie investiert 
+
+ werden (endergon $ ∆G > 0). 
+
+#  im Gleichgewicht ist ∆G = 0 
+
+15 
+
+thermodynamische „Regeln“ 
+
+16 
+
+Beispiel: Bioenergetik des Citrat-Zyklus 
+
+17 
+
+Gleichgewichte, Massenwirkungsgesetz & freie Enthalpie 
+ 
+
+K   =  
+ 
+
+GG
+
+ 
+
+ 
+ 
+
+    A + 2B
+
+       3C + 4D        GG " 
+
+ 
+
+  
+
+  
+
+ 
+
+ 
+
+Beispiel:            + 
+
+ 
+
+ %
+
+ 
+ 
+                            +                           % 
+            
+  
+
+  
+
+ 
+
+!
+
+ 
+
+ 
+
+[C]
+3
+GG
+[A]
+1
+GG
+        
+
+[D]
+4
+  
+GG
+[B]
+2
+GG
+  
+
+   + 
+
+        K = 1  (Ausbeute = 50%) 
+GG 
+
+GG 
+
+ 
+                                                        
+                            +                             % 
+ 
+ 
+Anm.: eckige Klammern [  ]  bedeuten immer Konzentrationen in mol/l 
+ 
+
+GG 
+
+18 
+
+Änderungen der freien Enthalpie in Abhängigkeit von der 
+
+Zusammensetzung der Reaktionsmixtur 
+
+19 
+
+freie Standard-Enthalpie  
+ 
+ 
+Für Startkonzentrationen von 1M A, 1M B, 1M C und 1M D gilt als Wert für die freie 
+
+Enthalpie der Reaktion, die zur Einstellung der GG-Konzentrationen führt:  
+
+ 
+
+ 
+
+               
+
+ ∆G0     (ohne  « ‘ »  ) 
+
+ 
+Da dies bei Reaktionen, an denen H+ beteiligt ist, zu „unphysiologischem pH“ führen 
+
+würde: 
+ 
+
+ 
+
+ 
+
+ 1M H+ = 100 M H+ = pH0 
+
+ 
+bezieht sich die Biochemie stattdessen auf  
+
+ 
+ 
+
+ 
+
+ 
+
+ pH 7 (=10-7
+
+ M H+)  
+
+ 
+und eine feste Wasserkonzentration (genauer: Aktivität) von  ≈55,5 M und definiert  
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ ∆G0‘    (mit  « ‘ » )  
+ 
+
+  
+
+20 
+
+Gleichgewicht, Massenwirkungsgesetz & freie Standard-Enthalpie  
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ∆G0‘   =  - RT ln KGG  
+
+ K
+
+ =  10 - ∆G0‘ / 5,69 
+
+Wir sehen: letztlich drücken die Massenwirkungskonstante und die Änderung der freien 
+
+Enthalpie das Gleiche aus.  
+
+ 
+Mit  
+
+ 
+
+ R (der allgemeinen Gaskonstanten)   = 8,315 ·10-3 kJ/(mol K)  und 
+ T  (der absoluten Temperatur) 
+
+ = 298 K (25°C, Raumtemperatur) 
+
+kann man aus dem ∆G0‘ also sofort das GG-Verhältnis von Edukten und Produkten 
+
+errechnen: 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ∆G0‘ = 17    "    [Produkt] : [Edukt] ≈ 1 : 1000 
+
+!
+
+21 
+
+$
+$
+$
+freie Standard-Enthalpie & freie Enthalpie  
+ 
+Da normalerweise die Ausgangskonzentrationen bei Reaktionen natürlich nicht  
+
+1M betragen, kann man wie folgt umrechnen:  
+
+ 
+
+ 
+
+ 
+
+  
+ 
+ 
+  
+
+  ∆G
+  
+
+ =  ∆G0‘  + RT ln  
+
+3
+
+[C] [D]
+4
+[A] [B]
+2
+
+1
+
+ A + 2B        3C + 4D  
+
+wobei jetzt die tatsächlichen Konzentrationen (immer in mol/l) bei Reaktionsbeginn 
+
+!
+!
+
+22 
+
+eingesetzt werden.  
+
+ 
+"  Da streng genommen nicht mit den Konzentrationen, sondern mit den „effektiven 
+Konzentrationen“ (= Aktivitäten) der beteiligten Komponenten gerechnet werden 
+müßte, sind die einzutragenden Werte, obwohl mol/l verwendet werden müssen, 
+dennoch dimensionslos:  
+
+ 
+
+ statt [C]3 mol3/l3  also  (aC (mol/l) / 1mol C/l)3 
+
+Gleichgewichtskonstante, freie Enthalpie & tatsächliche 
+
+Konzentrationen 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+              ∆G0‘ =  - RT ln KGG 
+ 
+                   =  - RT ln             
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ (GG)  
+
+            ∆G  =  ∆G0‘ + RT ln                           
+
+ (tatsächlich) 
+
+ 
+
+ 
+
+ 
+
+        =  ∆G0‘ + RT ln Q 
+
+        =  - RT ln KGG + RT ln Q  
+
+        =   RT ln Q/KGG $
+
+ 
+
+Beispiel: 
+A + 2 B ⇌ C 
+KGG = [C]/([A]·[B]2) 
+
+  
+
+ 
+
+23 
+
+$
+thermodynamische „Regeln“ 
+
+24 
+
+freie Enthalpie & Transportphänomene 
+
+ΔG  =  ΔG0‘ + RT ln Q 
+
+   = - RT ln KGG + RT ln [A]2/[A]1  
+
+ 
+
+ΔG0‘ gilt für den GG-Zustand:  
+  =>  [A]2 = [A]1  =>  ΔG0‘ = 0 
+
+          
+
+     ΔG = RT ln [A]2/[A]1 
+
+für Ionen gilt bei Transport  
+von „außen“ nach „innen“:  
+ 
+ΔG  =  RT ln [in]/[out] + zFΔψ 
+
+25 
+
+Änderungen der freien Standardenthalpie sind additiv  
+(daher kann der Ablauf endergoner Prozesse durch Kopplung an einen 
+exergonen Prozeß möglich gemacht werden) 
+
+‘°  = 20 kJ/mol       ΔG2
+‘°  + ΔG2
+
+Beispiel:  
+ΔG1
+" ΔGSumme = ΔG1
+Obwohl Prozeß (1) nicht freiwillig abläuft, erfolgt der Umsatz von A zu C  
+nach Kopplung an Prozeß (2). B entsteht in nicht nennenswertem Umfang,  
+da es sofort weiterreagiert zu C.   
+
+‘° = -30 kJ/mol  
+‘° = - 10 kJ/mol  
+
+26 
+
+Kopplung endergoner & exergoner Reaktionen 
+ 
+ 
+Was tun, wenn eine Reaktion (oder ein Prozeß) thermodynamisch beungünstigt ist? 
+
+ 
+ 
+
+ 
+
+ 
+
+ A               B  +  C  
+
+ 
+Im Gleichgewicht werden wir also erheblich mehr A als B+C vorliegen haben.  
+
+  ∆G0‘ = + 21 kJ/mol 
+
+∆G0‘ ist jedoch additiv, d.h. die Gesamtänderung der freien Enthalpie einer chemisch 
+gekoppelten Serie von Reaktionen ist gleich der Summe der Änderungen der freien 
+Enthalpie der Einzelschritte.  
+
+ 
+
+ 
+
+  ∆G0‘ =  - 31 kJ/mol 
+ 
+ _______________________________________________________ 
+  ∆G0‘ =  - 10 kJ/mol 
+ 
+
+ A               C  +  D  
+
+ B               D
+
+ 
+
+ 
+
+ 
+
+27 
+
+$
+Adenosintriphosphat  (ATP) 
+
+28 
+
+Gibt es eine „allgemein koppelbare“, exergone Reaktion? 
+ 
+ 
+ 
+ja, zum Beispiel 
+die 
+ 
+ATP-Hydrolyse 
+ 
+
+29 
+
+Das hohe Phosphatgruppen-
+Übertragungspotential von ATP (und 
+verwandter Verbindungen) erklärt sich 
+aus der Mesomerie (Resonanz)-
+Stabilisierung des entstehenden 
+Phosphates sowie der Abstoßung 
+gleich geladener Gruppen im ATP.  
+
+30 
+
+ATP 2 
+
+31 
+
+allgemeine Anwendung: Kopplung an die ATP-Hydrolyse 
+ 
+
+  
+ 
+
+ 
+
+ 
+
+  
+
+ A
+
+ B 
+
+ 
+
+ ∆G0‘ =  + 17 kJ/mol 
+
+ K   =   [B]/[A] = 10 –((+17)/5,69)   ≈ 10-3 = 1 : 1000  
+
+  
+
+    
+A  +  ATP 
+
+  
+  
+
+ B + ADP + Pi 
+
+ ∆G0‘ =  +17+(-30,5) kJ/mol= -13,5 kJ/mol 
+
+ K   =   ([B][ADP][Pi])/([A][ATP]) = 10 –((-13,5)/5,69)   = 236 : 1 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+   
+  
+ 10-3 : 236  =  1 : 105 !! 
+
+ (völlig überflüssiger) Hinweis: Es ist – für viele Gelegenheiten – außerordentlich hilfreich, wenn man diese & 
+alle anderen expliziten Rechnungen selbst mit Papier, Bleistift und Taschenrechner nachvollzieht und dabei 
+insbesondere auf die Einheiten, Größenordnungen & verwendeten Gleichungen achtet!  ☺ 
+
+32 
+
+Beispiel: Umwandlung Glu % Gln 
+ 
+Diese endergone Reaktion läuft nicht in 
+nennenswertem Umfang in Richtung der  
+Produkte ab.  
+ 
+ 
+ATP „aktiviert“ Glutamat. 
+ 
+ 
+Jetzt kann durch Ammoniakanlagerung aus 
+dem phosphorylierten Glutamat das 
+Endprodukt Glutamin entstehen.  
+ 
+ 
+ 
+Die Summe der beiden ∆G-Werte ist negativ, 
+der Prozeß insgesamt jetzt exergon.  
+
+33 
+
+die freie Enthalpie der ATP-Hydrolyse 
+ 
+ 
+
+  
+ 
+
+ 
+
+ ATP + H2O  
+
+     ADP  +  Pi  
+
+ ∆G0‘ =  - 30,5 kJ/mol 
+
+   
+
+ 
+
+      K   =   10 –((-30,5)/5,69)   =    2,29 ·105 
+
+ Erwartungsgemäß (∆G0‘  < 0) liegt also im GG erheblich mehr ADP als ATP vor, 
+anders gesagt, die Hydrolyse von ATP ist thermodynamisch favorisiert.  
+Unter zellulären Bedingungen ist das infolge der dann anderen Konzentrationen der 
+Reaktionspartner sogar noch viel ausgeprägter:  
+ 
+
+ [Pi]Zelle ≈ 2 mM   
+
+ [ATP]Zelle ≈ 5 mM  
+      ∆G  = -30,5 kJ/mol +  RT ln (10-3·2·10-3/5 ·10-3)  = -49,9 kJ/mol 
+
+ [ADP]Zelle ≈ 1 mM 
+
+ 
+     
+
+ 
+
+ 
+
+ 
+ 
+
+34 
+
+Vermeidung hoher Metabolitenkonzentrationen 
+
+   F6P  +  Pi  ⇋  F16P + H2O
+
+ 
+
+ ∆G0‘ =  +16,3 kJ/mol 
+
+  
+
+      [F16P]/[F6P] soll 10 : 1 sein, wie groß ist dann [Pi]  =  ? 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+   
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    K = e-∆G0‘/RT = 0,0014 
+
+ ∆G = RT ln Q/K = RT ln (([F16P][H2O]/[F6P][Pi]) / K)   < 0  (da ja F16P entstehen soll) 
+
+ 
+  
+ 
+
+              RT ln ((10 · 1/1 · [Pi]) / 0,0014)  < 0 
+
+               Pi > 10/0,0014     Pi > 7143 M  !!! 
+
+          F6P  +  ATP  ⇋  F16P  +  ADP
+
+ 
+
+ ∆G0‘ =  - 14,2 kJ/mol 
+
+ 
+
+      ∆G = RT ln Q/K = RT ln (([F16P][ADP])/([F6P][ATP]) / K)   < 0       
+
+  
+
+                 (freies Phosphat kommt gar nicht vor) 
+
+       RT ln ((10 · 1 / 1 · 5) / 308)  = - 12,5 kJ/mol    (die Reaktion ist auch unter den gewünschten         
+
+               Bedingungen exergon!)        F6P = Fructose-6-Phosphat    F16P = Fructose-1,6-Bisphosphat 
+
+35 
+
+weitere Anwendungen 
+der ATP-Hydrolyse 
+
+36 
+
+Hydrolyse 
+biologisch wichtiger  
+Phosphat- 
+verbindungen 
+
+37 
+
+Anwendung: Kopplung an eine exergone Folgereaktion 
+ 
+
+                    Oxalacetat  +  NADH  +  H+ 
+
+  ∆G0‘ =  + 29,7 kJ/mol  "  K  ≈ 6·10-6 
+
+           Malat  +  NAD+ 
+ 
+
+ 
+
+ 
+  
+
+ Ac-CoA  +  Oxalacetat
+
+      Citrat  +  CoA  + H+  
+
+  
+$                          ∆G0‘ =  - 31,4 kJ/mol  "  K  ≈ 3·105 
+                _______________________________________________________ 
+ 
+   Malat  +  NAD+  +  Ac-CoA                      Citrat  +  NADH  +  CoA  +  2 H+   
+ 
+$                          ∆G0‘ =  - 1,7 kJ/mol  "  K  ≈ 2 
+
+  
+
+ 
+Übrigens: woher weiß man die ganzen ∆G0‘-Werte? Aus Tabellen, die zur Verfügung stehen müssen. 
+
+38 
+
+ 
+ 
+
+$
+$
+$
+$
+$
+Beispiel: Bioenergetik des Citrat-Zyklus 
+
+39 
+
+Rückschau 
+ 
+Wir haben jetzt gesehen, wie an sich endergone Reaktionen durch Kopplung 
+
+an exergone Reaktionen mit drastisch erhöhter Ausbeute ermöglicht werden 
+können.  
+
+ 
+Die gezeigten Beispiele stellen insofern nur eine Auswahl dar, als oft die ATP-
+
+Hydrolyse direkt an der Reaktion z.B. unter Ausbildung eines 
+phosphorylierten Zwischenproduktes (Beispiel Glykolyse/1. Reaktion:  
+Glc + ATP ergibt Glc-6-P + ADP) beteiligt ist, also nicht etwa das ATP in 
+einer „separaten“ Reaktion hydrolysiert wird. Das wäre ja Energie-
+verschwendung (die durch die kinetische Hemmung der ATP-Hydrolyse 
+verhindert wird).  
+
+ 
+Außerdem können die auf Folie 32 gezeigten Reaktionspartner A und B sehr 
+
+!
+
+allgemein interpretiert werden: Zwei unterschiedliche Konformationen ein- 
+und desselben Proteins, ein und dasselbe Ion auf den beiden Seiten einer 
+Membran (Folie 25) usw. usw. 
+
+40 
+
+Thermodynamik & Kinetik 
+ 
+ 
+ 
+wichtiger Hinweis: Die Tatsache, daß ein Prozeß exergon ist (oder durch 
+
+Kopplung dahin gebracht wird) sagt nichts darüber aus, mit welcher 
+Geschwindigkeit eben dieser Prozeß denn nun tatsächlich abläuft!  
+Denn die meisten (exergonen) Prozesse sind kinetisch gehemmt, d.h. sie 
+haben eine „Aktivierungsenergiehürde“ (∆Gǂ), die überkommen werden 
+muß, damit der Prozeß überhaupt abläuft, unabhängig von seinem ∆G0‘.  
+
+ 
+Das Absenken dieser Aktivierungsenergiehürde obliegt den Enzymen 
+
+Enzyme können keine Gleichgewichte „verschieben“, sondern 
+
+nur die Geschwindigkeit der GG-Einstellung erhöhen! 
+
+(„Katalyse“) und ist Gegenstand der Kinetik.  
+
+ 
+
+!
+
+41 
+
+nützliche Daten und 
+Zusammenhänge! 
+
+42 
+
+43 
+
+ATP, Redoxreaktionen & Metabolismus 
+•  Durchschnittliche Erwachsene 
+    synthetisieren pro Tag annähernd ihre durch- 
+    schnittliche Körpermasse als ATP! 
+    (~4000 kJ/d = 4000/50 mol ATP = 80 mol ATP =  
+        80 x ~500g = ~ 40 kg) 
+•  Glykolyse & Citrat-Zyklus produzieren  
+    relativ wenig ATP pro Glucose 
+    (Glykolyse: 2, CitZykl: 2) 
+•  Aber:    6 Dehydrogenierungen in der      
+    Glykolyse (1), Pyruvatdehydrogenase-      
+    Reaktion (1) und im Citrat-Zyklus (4) 
+    produzieren insgesamt 10 NADH und  
+    2 FADH2  pro Glucose 
+•  Aerobe Zellen übertragen e-  schrittweise 
+    auf molekularen Sauerstoff und koppeln 
+    diese Reduktion an die ATP-Synthese  
+    (ca. 26 pro Glucose) 
+
+44 44 
+
+Redoxreaktionen: Vergleich mit S/B-Rktn., Definitionen   
+
+•  Säure/Base-Reaktion: 
+    Säure                                           konjugierte Base            +  H+ 
+     H+- Donor                                        H+-Akzeptor  
+       CH3COOH                                            CH3COO -                       +   H+  
+•  Redoxreaktion: 
+    reduzierte Komponente               oxidierte Komponente    +   e- 
+       e- - Donor
+     Fe2+  
+•  freie e- kommen in Lösung nicht vor, daher   
+•  Donor1  +  Akzeptor2                     Akzeptor1  +   Donor2  
+    Cu+           +      Fe3+ 
+       RCHO   +  2 Cu2+ + 4 OH-                  RCOOH      +   Cu2O  + 2 H2O 
+ 
+Die bisher benutzten Gleichungen für die freie Enthalpie nützen bei Redoxprozessen 
+nichts, da hier nur Elektronen verschoben werden 
+
+          e- - Akzeptor 
+           Fe3+                                                +    e- 
+
+                                        Cu2+          +    Fe2+ 
+
+ 
+ 
+
+          
+ 
+
+!
+
+45 
+
+zur Messung des  
+Standardreduktionspotentials 
+E0‘ 
+
+emf, electromotive force 
+
+46 
+
+‘  statt   Eo  (10-7 M H+ statt 100 M) 
+
+Anpassung an „biochemische Bedingungen“  
+pH 7  (nicht pH 0  wegen 1M H+ !!) 
+ ⇒ Eo
+Beispiel: 
+ 
+  Meßelektrode  
+ 
+
+ Referenzelektrode
+ 
+ 
+
+ 
+
+ 
+
+Ref        Mess 
+
+   gemessenes Potential  
+ ∆Eo
+
+‘ Akzeptor - Eo
+
+‘ = Eo
+
+‘ Donor 
+
+        
+
+ 
+‘ = - 0.42
+
+ 
+ - 0.42 V 
+
+ 
+‘ = - 0.32
+
+               H+/H2
+ 
+    pH 0 ;  Eo  := 0  
+
+------------------------------------------------------------------------------------------------------ 
+        H+/H2
+pH 7 ;  Eo
+ 
+ NAD+/NADH
+pH 7;   Eo
+ 
+ NAD+/NADH
+pH 7;   Eo
+Standard-Reduktions-Potential Eo  bei pH 0 
+Standard-Reduktions-Potential Eo
+‘ bei pH 7 
+
+          H+/H2 
+   pH 0 ;   Eo : = 0  
+
+           H+/H2 
+   pH 7;    Eo
+
+ 
+‘  = - 0.32
+
+ - 0.32 V 
+
+‘  = - 0.42
+
+ + 0.10 V !! 
+
+47 
+
+Reduktionspotential 
+•  je größer Eo
+    anderen  Stoff zu oxidieren) 
+•  Zusammenhang freie Enthalpie – Reduktionspotential  
+ 
+
+‘,  desto höher die Tendenz e- aufzunehmen (und dabei einen  
+
+ ∆Go
+
+‘ = -nF∆Eo
+
+‘ = -nF (Eo
+
+‘ Akzeptor - Eo
+
+‘ Donor)    (F=Faradaykonstante) 
+
+ Beispiel 1:    
+
+            Ethanol + NAD+        
+          NAD+ + H+ + 2 e-        
+              NADH       Eo
+   Acetaldehyd + 2 H+ + 2 e-                           Ethanol     Eo
+
+  
+
+ 
+
+‘ = - 0.32 V 
+‘ = - 0.20  
+
+ Acetaldehyd + NADH + H+   
+
+        ∆Go
+
+∆Eo
+‘ =  -nF∆Eo
+
+‘ = - 0.32 V - (- 0.20 V) = - 0.12 V 
+‘ = -2 (96.5 kJ mol-1 V-1) (-0.12 V) = + 23.2 kJ mol-1 
+
+Diese Reaktion läuft so (d.h. unter diesen Umständen) also nicht ab  
+
+(positives  ∆Go
+(was wegen der beiden Eo
+
+‘⇒ endergone Reaktion)  
+’-Werte auch nicht verwundert, s.o.) 
+
+ 
+
+ 
+
+Konvention: Eo
+
+‘  wird immer in Richtung  ox + e-  ⇋  red angegeben! 
+
+48 !
+
+Beispiel 2: Pyruvat/Lactat 
+ 
+
+ Pyr  +  NADH  +  H+         Lac  +  NAD+  
+
+ Pyr  +  2H+  +  2e-     %    Lac  
+ NAD+  +  H+  +  2e-    %    NADH
+
+  Eo
+  Eo
+
+‘ = -0,19 V 
+‘ = -0,32 V 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+Pyruvat ist ein Keton (genauer: eine  α-Keto-Carbonsäure, CH3COCOO-), Lactat ein 
+Alkohol (CH3CHOHCOO-), d.h. höher reduziert. Also ist Pyr der Akzeptor und NADH der 
+Donor. 
+ 
+
+         ∆Go
+
+‘  = -0,19 V – (-0,32 V) = + 0,13 V 
+
+       ∆Eo
+‘  = - 2 ·96,5 kJ mol-1 V-1 · 0,13 V = - 25,1 kJ/mol 
+
+ 
+  
+ 
+ 
+Diese Reaktion ist folglich exergon und läuft in der gezeigten Richtung ab, was man  
+bereits an dem höheren Redoxpotential des Pyr/Lac-Paares hätte ablesen können. 
+
+49 
+
+Berechnung von Redoxpotentialen unter Nichtstandard-Bedingungen 
+
+RT
+
+E
+
+'
+
+=
+
+E
+
+0
+
+'
+
++
+
+.2
+
+E
+
+'
+
+=
+
+E
+
+0
+
+'
+
++
+
+303
+nF
+06.0
+
+[
+
+log
+
+Elektronen
+Elektronen
+[
+
+akzeptor
+donor
+]
+
+n
+
+[
+
+log
+
+Elektronen
+Elektronen
+[
+
+akzeptor
+donor
+]
+]
+
+]
+
+(
+
+Nernst
+
+)
+
+zum Vergleich: 
+=
+
+pH
+
+pK
+
+a
+
++
+
+log
+
+[
+
+H
++
+H
+[
+
+−
++
+
+Akzeptor
+Donor
+]
+−
+
+]
+
+(
+
+Henderson
+
+−
+
+Hasselbalc
+
+h
+
+)
+
+!
+
+Anders als bei (Nicht-Redox)GG-Reaktionen muß man bei Redoxreaktionen also 
+zuerst die beiden Einzelpotentiale getrennt errechnen und dann ihre Differenz 
+
+zur Berechnung von ∆G‘ heranziehen. 
+
+50 
+
+weitere Beispiele 
+NAD+/NADH  bei anderen als den Standardkonzentrationen: 
+
+‘  = - 2 ·96,5 kJ mol-1V-1· (0,82 V – (- 0,32) V) = - 220 kJ/mol    
+
+51 
+
+ 
+
+NAD+/NADH  
+Acetald./EtOH
+
+ 
+
+ 
+ =  100
+ =  0,01
+ 
+
+ 
+ 
+ 
+ 
+
+H+/H2  pH 7 statt pH 0: 
+ 
+H+/H2   (pH0)  =  1:1        =  1  
+H+/H2  (pH7)   =  10-7 : 1  =  10-7
+ 
+ 
+NADH/O2 
+ 
+0,5 O2   +  2H+  +  2e-  % H2O  
+NAD+  +      H+  +  2e-  % NADH  
+ 
+         0,5 O2   +  NADH  +  H+ 
+ 
+∆Go
+
+ 
+
+   E0‘
+ -0,32
+ -0,20
+ 
+
+ 
+ 
+ 
+ 
+
+    E‘ 
+ -0,26 
+ -0,26 
+ In diesem Fall wäre also ∆G‘ = 0! 
+
+ 0 per def. 
+ 
+      ---
+
+   --- 
+ -0,42   Fazit: pH ‘runter, E0‘ ‘rauf 
+
+ E0‘ = +0,82V 
+ E0‘ = - 0,32V 
+
+ H2O  +  NAD+      
+
+Reicht die Energie der Elektronenübertragung von NADH auf 
+molekularen Sauerstoff zur ATP-Synthese? 
+
+O2 + 2 NADH + 2 H+  ⇋  2 NAD+ + 2 H2O 
+
+Mitochondrien:  37 °C     pH 8,4    pO2 = 2 Torr     [NAD+] = 10 mM     [NADH] = 100 µM 
+
+=  ∆G0‘ + 55,6 kJ/mol  
+
+∆G0‘ = -220 kJ/mol (s. Folie 51) 
+
+ 
+
+ 
+
+ 
+
+2 · (- 220) kJ/mol + 55,6 kJ/mol = -384 kJ/mol " 192 kJ/mol für 1 NADH 
+
+2,5 · 50 kJ/mol (ATP in vivo)= 125 kJ/mol = 65% (von 192) 
+
+52 
+
+ 2 H+ +  2 Fe2+ 
+
+‘ Fe3+/Fe2+ =  + 0.77 V 
+‘  2H+/H2    =  -  0.42 V 
+
+noch mehr Beispiele ... 
+   in welche Richtung fließen die e- ?   
+•  H2  + 2 Fe3+   
+      Eo
+    Eo
+    ⇒  in Richtung Fe3+   
+ 
+•   NADH + FMN +  H+              NAD+ + FMNH2 
+‘ NAD+ + H+/NADH       =  - 0.32 V 
+    Eo
+    Eo‘ FMN + 2 H+ / FMNH2 =  - 0.30 V 
+    ⇒ in Richtung FMN  
+ 
+•   CoQH2 + 2 Cyt b3+         CoQ + 2 Cyt b2+ 
+‘ CoQ + 2 H+/CoQH2    =  + 0.04 V 
+    Eo
+    Eo
+‘ Cyt b3+/ Cyt b2+             
+ =  + 0.07 V 
+    ⇒ in Richtung Cyt b3+  
+ 
+je größer Eo‘, desto höher die Tendenz, e- aufzunehmen 
+
+53 53 
+
+54 
+
+Anhang: Fehler im Stryer, 6. deutsche Auflage 
+ 
+Die folgenden (nicht trivialen) Fehler sind mir im Zusammenhang mit den hier erörterten 
+Sachverhalten im Stryer (6. Auflage in deutsch) aufgefallen.  
+ 
+
+ S. 13 mittlerer Absatz vorvorletzte Zeile: Die lokale Abnahme der Entropie.. (statt  
+ Zunahme) 
+ S. 462 Überschrift unten: „Die ATP-Hydrolyse treibt den Metabolismus an, indem sie  
+ das Gleichgewicht gekoppelter Reaktionen verschiebt“. Streichen Sie bitte diesen 
+ Satz ersatzlos, selten sah ich irreführendere Formulierungen!  Die Lektüre der 
+ vorliegenden Ausarbeitung sollte Sie erkennen lassen, was an der Überschrift  
+ alles falsch ist.  
+ S. 463 zweite Formel von oben: es fehlt das Minuszeichen vor dem ΔG0‘ im 
+ Exponenten  
+ Fünfte Formel auf der Seitenmitte: das zweite Gleichheitszeichen muß durch ein 
+ Multiplikationszeichen ersetzt werden (K‘ · [ATP]/([ADP][Pi])) 
+ Der unmittelbar folgende Satz ist ebenfalls falsch und sollte gestrichen werden.  
+
+ 
+
+   
+
+55 
+
+56 
+
+57 
+
+Fragen 1 
+
+ offenen Systemen.  
+
+Wie hängen die Begriffe Verteilung, Gleichgewicht und Ordnung zusammen? 
+Nennen Sie mechanische und chemische Beispiele für Gleichgewichte und Arbeit in isolierten und  
+ 
+Wie ordnen sich lebende Organismen im obigen Systembegriff ein? Warum? 
+Was besagt der 1. Hauptsatz der Thermodynamik? 
+Welche Formen von Energie gibt es? 
+Wie ist die Enthalpie definiert?  
+Was bedeuten exotherm und endotherm? 
+Begründen Sie die Diffusion als entropisch getriebenen Prozeß.  
+Was besagt der 2. Hauptsatz der Thermodynamik? 
+Wie ist die Entropie definiert? 
+Wie ist die freie Enthalpie definiert? 
+Skizzieren Sie entropisch und enthalpisch getriebene Prozesse.  
+Was bedeuten exergon und endergon? 
+Wie groß ist ΔG im Gleichgewicht? 
+Was besagt das Massenwirkungsgesetz? 
+Wie ist die Änderung der freien  Standardenthalpie definiert?  
+Wie hängt sie mit der Massenwirkungskonstante zusammen? 
+Wie ist die Änderung der freien Enthalpie definiert?  
+
+58 
+
+Fragen 2 
+
+Worin liegt der Unterschied zwischen Aktivität und Konzentration? 
+Was versteht man unter „Kopplung“ im thermodynamischen Sinne? 
+Nennen Sie Beispiele gekoppelter Prozesse.  
+Nennen Sie Beispiele von an die ATP-Hydrolyse gekoppelten Prozessen.  
+Warum ist die ATP-Hydrolyse exergon? 
+Wo ordnet sich die ATP-Hydrolyse in einer Reihe exergoner Prozesse ein? 
+Worin liegt der Unterschied zwischen thermodynamisch bzw. kinetisch (nicht) möglichen Prozessen? 
+Was sind Redoxreaktionen? Worin unterscheiden sie sich von hydrolytischen Reaktionen? 
+Wie wird ein Standardreduktionspotential gemessen? 
+Wie hängt die freie Enthalpie mit dem Reduktionspotential zusammen? 
+Was besagt die Nernst-Gleichung? 
+Wie hängen Reduktionspotential und Elektronegativität zusammen? 
+Können Sie alle in dieser VL vorkommenden Rechnungen nachvollziehen? 
+
+59 
+
+

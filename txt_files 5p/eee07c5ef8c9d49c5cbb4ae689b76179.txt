@@ -1,0 +1,2693 @@
+Vorlesung Software Engineering
+Foliensatz Nr. 10 (04.12.14)
+
+Software Engineering
+
+Prof. Elke Pulvermüller
+
+Universität Osnabrück
+Institut für Informatik, Fachbereich Mathematik / Informatik
+Arbeitsgruppe Software Engineering
+Raum 31/318, Albrechtstr. 28, D-49069 Osnabrück
+
+elke.pulvermueller@informatik.uni-osnabrueck.de
+
+http://www.inf.uos.de/se
+http://www.inf.uos.de/se
+
+Sprechstunde: n.V.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 1
+
+Software Engineering – Wintersemester 14/15
+
+Vorlesung Software Engineering
+Inhalt
+
+1 Software-Krise und Software Engineering
+
+2 Grundlagen des Software Engineering
+
+3 Projektmanagement
+
+4 Konfigurationsmanagement
+
+5 Software-Modelle
+
+6 Software-Entwicklungsphasen, -prozesse, -vorgehensmodelle
+
+7 Qualität
+
+(8  … Fortgeschrittene Techniken)
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 2
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+Inhalt
+
+5.1  Grundlagen und Modelltypen
+5.2  Programmablaufplan
+5.3  Struktogramm
+5.3  Struktogramm
+5.4  Funktionsbaum
+5.5  Strukturierte Analyse (SA)
+5.6  EBNF und Syntaxdiagramm
+5.7  Entity-Relationship-Modell (ERM)
+5.8  Objektorientierte Modellierung mit UML
+5.8  Objektorientierte Modellierung mit UML
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 3
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Objektdiagramm
+
+Objektdiagramme 
+
+ zeigen eine Momentaufnahme des Systems (statisch, Struktur)
+
+ beschreiben zu einem bestimmten Zeitpunkt die Menge der
+
+existierenden Objekte mit ihren augenblicklichen Attributwerten und
+ihrer Beziehungen untereinander
+
+ Beziehungen heißen Links; sie können auch Namen und Rollen tragen
+
+Objekt
+
+:Klasse
+
+Objekt:Klasse
+
+Objektname
+
+(Waisenobjekt)
+
+Nur 
+
+Klassenname
+(namensloses / 
+
+anonymes 
+
+Objekt)
+
+Attribut:Typ = Wert
+
+Klassen- und 
+Objektname
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 4
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Objektdiagramm
+
+Repräsentation von Instanzen/Objekten in UML
+
+Typ + 
+Typ + 
+Initialwert 
+(optional)
+
+OO Kurs
+: Veranstaltung
+
+startZeit = 1600
+endZeit = 1800
+
+Konkrete 
+Konkrete 
+Attributwerte 
+beschreiben den 
+Zustand
+
+: Veranstaltung
+
+startZeit = 800
+endZeit :int = 1000
+
+Veranstaltung
+
+startZeit: int = 800
+endZeit
+
+anlegen(name:String)
+anzeigenTeilnehmer()
+anzeigenTeilnehmer()
+
+Parameter optional: 
+Parameter optional: 
+Name:Typ = Initialwert
+
+Klasse
+
+Instanzen
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 5
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Objektdiagramm
+
+Beispiel für ein UML Objektdiagramm (Object Diagram): 
+
+od Objektdiagrammname
+
+Link: 
+konkrete Beziehung 
+zwischen Objekten 
+(IAusprägung einer 
+Assoziation)
+
+Ausprägung für
+Attribute
+Attribute
+
+:Client
+:Client
+
+Unspecified
+Unspecified
+Object (no name)
+
+a:AddressBook
+
+Objekt a
+
+p1:Person
+
+p2:Person
+
+p3:Person
+
+p4:Person
+
+Name = “Jim”
+
+Name = “Jill”
+
+Name = “Jack”
+
+Name = “Jane”
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 6
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Objektdiagramm
+
+Aktive/passive Klassen und Objekte
+
+Nebenläufig
+
+Ausführung 
+Ausführung 
+
+sequentiell nur 
+nach Aufruf von 
+
+außen
+
+Lecturer
+
+P. Brown 
+
+Aktive Klasse
+
+Aktives Objekt
+
+Lecturer
+Lecturer
+
+P. Brown 
+P. Brown 
+
+Passive Klasse
+
+Passives Objekt
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 7
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Kommunikationsdiagramm
+
+UML Kommunikationsdiagramm
+
+ Gehört in die Gruppe der Interaktionsdiagramme (Interaction Diagrams)
+
+ Vorgänger:
+
+Object Diagram von G. Booch 
+
+ﬁ Collaboration Diagram (UML 1.x) 
+
+ﬁ Communication Diagram (UML 2.x)
+
+Achtung: Diagrammnamensverwirrung!
+
+ Modelliert einen Sachverhalt ähnlich zum Sequenzdiagramm, allerdings 
+ Modelliert einen Sachverhalt ähnlich zum Sequenzdiagramm, allerdings 
+
+aus einer anderen Perspektive
+
+ Modelliert für einen begrenzten Systemauszug die Menge der 
+
+existierenden Objekte/Rollen, deren Attributwerte und Interaktionen
+
+ Geeignet zur Erklärung und Dokumentation spezieller Ablaufsituationen
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 8
+
+Software Engineering – Wintersemester 14/15
+
+ﬁ
+ﬁ
+ﬁ
+ﬁ
+ﬁ
+ﬁ
+Software-Modelle
+5.8 OO Modellierung mit UML: Kommunikationsdiagramm
+
+Nachrichten zwischen Objekten / Rollen:
+
+Nachrichtenname
+
+anObject1
+
+anObject2:ClassA
+
+ Wie in einem Sequenzdiagramm zeigen Pfeile die Nachrichten an:
+ Wie in einem Sequenzdiagramm zeigen Pfeile die Nachrichten an:
+
+Synchrone Nachricht
+Asynchrone Nachricht
+Rückantwort
+
+ Der Pfeil zeigt vom Sender in Richtung des Empfängers. 
+
+ Die Reihenfolge der Nachrichten werden durch eine Nummerierung 
+
+angegeben. 
+angegeben. 
+
+ Die Nachrichten können 
+
+sequentiell (Nummerierung: 1, 2, 3)
+geschachtelt (Nummerierung: 2.3.1, 2.3.2, 2.1.1, 2.1.2)
+nebenläufig (Nummerierung: 7a,7b,7c) 
+
+modelliert werden.
+Die erste, aktionsauslösende Nachricht wird ohne Nummer dargestellt.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 9
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Kommunikationsdiagramm
+
+Prinzipaufbau eines Kommunikationsdiagramms:
+
+Schlüsselwort interaction oder sd 
+gefolgt vom Namen des Diagramms
+
+interaction CommDname
+
+anObject1
+
+1:Message2()
+Reply(Data)  
+
+Nachricht wird nur 
+verschickt, wenn die 
+Bedingung wahr ist
+
+1.1[Condition == true]:
+
+Message3()
+
+Zahl zeigt die 
+Aufrufreihenfolge 
+(und Aufruf-
+hierarchie) an
+
+1.1.1: Message4(Param)
+
+Objekt / Rolle
+Objekt / Rolle
+
+(als Rolle teils auch ohne 
+
+Unterstreichung)
+
+anObject2:ClassA
+
+Iteration mit 
+Bedingung
+
+1.2*[x>0]: Message5()
+
+1.3: Message6
+
+anObject3
+
+:ClassB
+
+Nachrichten-
+format wie in 
+Sequenz-
+diagrammen
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 10
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+ Spezifikation des Verhaltens z.B.
+
+- eines Objekts (mit den Zuständen innerhalb des Objekts)
+- eines Anwendungsfalls (Use Case)
+- eine Kommunikationsprotokolls / einer Schnittstellungnutzung
+- einer GUI
+
+ NICHT geeignet zur Beschreibung von Interaktionen zwischen Objekten
+
+ Ursprung: State Charts, David Harrel, 1987
+
+State Charts = extended state automata
+
+ Endliche Zustandsautomaten beschreiben für ein Objekt die möglichen 
+Zustände und deren Übergänge zusammen mit den Ereignissen, die die 
+Übergänge initiieren.
+
+ Endlicher Zustandsautomat (Finite state machine):
+
+Zustand (state): Zeitspanne, in der das Objekt auf ein Ereignis wartet
+
+(besondere Zustände: Start- und Endzustände)
+
+Transition (transition): Zustandsübergang, verbindet zwei Zustände, 
+
+wird durch ein Ereignis ausgelöst, hat keine Dauer, 
+kann nicht unterbrochen werden
+
+Ereignis (event): tritt zu einem Zeitpunkt ein (ohne Dauer)
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 11
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+Prinzipaufbau von UML Zustandsübergangsdiagrammen
+(State Machine Diagram, State Transition Diagram / State Chart)
+
+stm name
+
+Start-
+zustand
+
+Transition mit 
+Transition mit 
+
+Auslöser (trigger)
+
+State 1
+
+Event A
+
+Event X
+
+Superstate 2
+
+State 2.1
+
+Event B
+
+Sub-
+
+zustand
+(Nesting)
+
+Event F
+
+State 3
+
+Event D
+
+State 2.2
+
+State 2.3
+
+Event C
+
+End-
+End-
+zustand
+
+Event E
+
+Transition auf sich 
+selbst (Self 
+transition)
+
+Verschachtelung (Nesting): 
+State 2 ist ein Superzustand, der die Subzustände State 2.1, State 2.2 und State 
+2.3 enthält.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 12
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+ Zustände:
+
+Start zustand
+
+(initial pseudo state)
+
+Endzustand
+(bull’s eye)
+
+Superstate
+
+State 2.1
+
+Event B
+
+State 2.2
+State 2.2
+
+Zusammengesetzter Zustand
+
+(Composite state; superstate / substate)
+
+State name
+
+State name 
+
+entry / action
+entry / action
+do / activity
+exit / action
+
+Besondere interne Aktionen (Aktionen ohne 
+Zustandsänderung):
+- Aktion wird automatisch ausgeführt, wenn 
+der Zustand betreten wird (von kurzer 
+der Zustand betreten wird (von kurzer 
+Dauer, z.B. Versenden einer Nachricht)
+- Aktivität wird ausgeführt bis der 
+Zustand verlassen wird (mit Dauer)
+- Aktion wird beim Verlassen des 
+automatisch Zustands ausgeführt.
+
+Anonymer
+Zustand
+
+Gewöhnlicher 
+
+Zustand
+
+Zustand mit internen Aktionen
+Format: Event [Guard] / Action
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 13
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+Transitionen: (bedingte) Zustandsübergänge (Event, Transition, Trigger)
+
+Zustand
+Zustand
+
+Ereignis[Bedingung] / Aktionen
+Ereignis[Bedingung] / Aktionen
+
+ Zustandsübergänge werden durch Ereignisse ausgelöst.
+
+Ausnahme: Übergang vom Startzustand.
+
+ Ereignisse können um Bedingungen ergänzt werden.
+ Ereignisse können um Bedingungen ergänzt werden.
+
+ Zustandsübergänge können Aktionen anstoßen.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 14
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+ Transitionen: 
+
+- Allgemeines Format für Zustandsübergänge: 
+
+Event, Event, … [Guard] / Effect
+
+- Eine Transition wird durch ein Event ausgelöst (trigger)
+
+Ruhe
+
+Ruhe
+
+Ruhe
+
+Ruhe
+
+arbeite
+
+at Kontostand < 0
+
+after(Pause), at(Chef kommt)
+[Lust zu arbeiten] 
+/ zur Arbeitsstelle gehen
+
+all
+
+AnyReceiveEvent
+AnyTrigger
+
+Shopping
+
+Arbeit
+
+Arbeit
+
+Arbeit
+
+Arbeit
+
+Implizites Ereignis: Transition 
+Implizites Ereignis: Transition 
+nach Ende der Aktion im 
+Zustand (Epsilon-Übergang)
+
+Aufrufereignis (Call Event): 
+Ereignis ist ein 
+Operationsaufruf
+Änderungsereignis (Change 
+Event): Ereignis ist die 
+Änderung bestimmter Werte
+
+Zeitereignis (Time Event)
+Signalereignis (Signal 
+Event), asynchron
+
+Bedingung (Guard, Condition)
+Aktion (Action) 
+/ Auswirkung bzw. Operation (Effect)
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 15
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+ Transitionen: 
+
+- Alle Ereignisse werden ignoriert (und konsumiert), wenn es keinen 
+
+passenden Übergang für den aktuell aktiven Zustand definiert ist.
+
+- Die Auswahl der Transition ist nicht deterministisch, falls mehrere 
+
+Transitionen gleichermaßen möglich sind.
+
+- Die Transition, die vom Startzustand ausgeht, wird sofort 
+ausgeführt (ohne Bedingung und in der Regel auch ohne 
+besonderes Ereignis an dieser ersten Transition).
+
+- Es gibt nur einen Startzustand im Diagramm.
+
+ … weitere Modellelemente, z.B. Senden und Empfangen von 
+
+Ereignissen im Rahmen einer Transition, Zusammenführung, Teilung 
+und Verzweigung von Transitionen (analoge Symbole wie im 
+Aktivitätsdiagramm)
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 16
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+ Hierarchische Zustände / Zusammengesetzte Zustände
+
+- Bieten die Möglichkeit, das Zustandsdiagramm besser zu strukturieren 
+und Eigenschaften zu abstrahieren.
+
+- Können zur Top-down-Entwicklung eines Zustandsmodells verwendet werden.
+
+a
+
+e5
+
+b
+
+c
+
+e1
+
+e2
+
+d
+
+e3
+
+e5
+e5
+
+e
+
+e4
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 17
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+ Hierarchische / zusammengesetzte Zustände
+
+Reihenfolge der Aktionsausführung: 
+
+“exit” von “innen” nach “außen”
+
+State1
+
+exit / p
+
+State2
+
+exit / q
+exit / q
+
+/s
+
+State3
+
+entry / r
+entry / r
+do / t
+
+Reihenfolge bei Transition:
+
+q,p,s,r,t
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 18
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+ Regionen (Regions): nebenläufige Zustände (concurrent substates)
+
+Regionen teilen Zustände in disjunkte Bereiche auf:
+Zustände, die aus mehreren Unterzuständen bestehen, in denen sich das 
+System gleichzeitig befinden kann.
+System gleichzeitig befinden kann.
+
+[Geist]
+
+Restaurantbesuch
+
+Angespannt
+
+Entspannt
+
+Start
+
+[Körper]
+
+Hungrig
+Hungrig
+
+Satt
+Satt
+
+Ende
+
+- Die Regionen werden bei Betreten des (umgebenden) Zustands
+
+gleichzeitig aktiviert.
+
+- Das Konzept “Region” verhindert “Explosion” der Anzahl von Zuständen.
+- Der Zustand wird verlassen, wenn alle Regionen terminiert haben.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 19
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+ Beispiel: Objekt-Lebenszyklus für ein Girokonto als Zustandsdiagramm
+
+abheben(e),einzahlen(e) [sonst]
+
+abheben(e) [saldo-e < 0]
+
+abheben(e),einzahlen(e) [sonst]
+
+abheben(e) [saldo-e < dispo] / 
+
+kunde.Mahnung()
+
+Plus
+
+do / [saldo > 5000] kunde.beraten()
+
+Dispo
+
+Überzogen
+
+abheben(e),einzahlen(e) [sonst]
+
+einzahlen(e) [saldo+e >= 0]
+
+einzahlen(e) [saldo+e >= dispo]
+
+Weitere Transitionen sind der direkte Übergang vom Zustand „Plus“ durch 
+Abheben eines großen Betrags in den Zustand „Überzogen „sowie umgekehrt 
+der direkte Übergang vom Zustand „Überzogen“ durch Einzahlen eines großen 
+Betrags in den Zustand „Plus“.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 20
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zustandsdiagramm
+
+ Protokollautomat  (Protocol state machine)
+
+- Spezielle Form eines endlichen Zustandsautomaten,
+
+spezielle Form eines UML Zustandsdiagramms.
+Beschreibt für ein Objekt einer Klasse, welche Operationen in welchem 
+- Beschreibt für ein Objekt einer Klasse, welche Operationen in welchem 
+Objektzustand unter welchen Bedingungen gerufen werden kann.
+
+- Es gibt keine Aktionen.
+- Transition Syntax: 
+
+[precondition] operation / [postcondition]
+
+stm name {protocol}
+
+operation3 / 
+operation3 / 
+[postcondition]
+
+operation 1 /
+operation 1 /
+
+State 1
+
+[precondition] 
+operation2 /
+
+operation 3 /
+
+operation4 /
+
+State 2
+
+Class X
+Class X
+
+operation1()
+operation2()
+operation3()
+operation4()
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 21
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+UML Use Case Diagram (Anwendungsfalldiagramm)
+
+Grafische Representation der wichtigsten Anwendungsfälle (Use Cases), 
+Akteure und ihrer Struktur.
+
+Textuelle Beschreibung der Anwendungsfälle
+(notwendig für das Verständnis der Funktionalität!).
+
+Bestandteile der grafischen Representation:
+
+- Akteure/Aktoren (actors, roles, neighbor system)
+- System, Systemname, Systemgrenze (system boundary)
+- Anwendungsfälle (Use Cases)
+- Anwendungsfälle (Use Cases)
+- Assoziationen (Associations; communication between actors 
+
+and use cases)
+
+- Use Case Beziehungen: 
+<<include>>-dependency, <<extends>>-dependency, generalization
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 22
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+Haupteinsatz: Spezifikation der Anforderungen (Requirements) aus 
+Sicht der Systembenutzung
+
+uc UseCaseName
+uc UseCaseName
+
+Subject (System)
+
+System name
+System name
+
+Actor 2
+
+Akteur als 
+Pictogramm
+
+Actor 1
+
+Akteur: Mensch oder System 
+außerhalb des zu 
+entwickelnden Systems  
+(Rolle, Nachbarsystem)
+
+Use Case 1
+
+Use Case 2
+
+Use Case 3
+
+Darstellungs-
+alternativen für Use 
+Cases
+
+<<actor>>
+
+Actor 3
+
+Akteur in der Form 
+eines Stereotyps
+eines Stereotyps
+
+System Boundary
+(= Grenze des Systems, das entwickelt werden soll)
+
+Gerichtete Assoziation 
+(Output)
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 23
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+Beispiel und Prinzip eines Anwendungsfalldiagramms (Use Case) 
+
+uc Beziehungen
+
+Kassenbuch
+
+Verkauf durchführen
+Verkauf durchführen
+Extension points: 
+
+Quittung
+
+Anwender
+
+<<include>>
+
+Zahlung 
+prüfen
+
+Basis Use Case
+(in Bezug auf die 
+Erweiterung)
+Erweiterungspunkt: 
+Stelle, an der der Use 
+Case eingefügt 
+werden kann
+
+condition:
+[Quittung angefordert]
+extension point: Quittung
+
+<<extend>>
+
+Quittung 
+Quittung 
+drucken
+
+Kommentar mit 
+Erweiterungs-
+bedingung
+bedingung
+
+Geschäftsführer
+
+Sub-Akteur
+
+Generalisierung 
+(analog zur 
+Vererbung)
+
+Quittung
+
+Privatkunde 
+
+drucken
+
+Quittung
+Großkunde 
+
+drucken
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 24
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+Dependency <<include>> (Enthältbeziehung): 
+
+- Use case A inkludiert immer Use Case B. B wird immer ausgeführt, wenn A 
+
+ausgeführt wird.
+
+- Wiederverwendung von Teilen, die mehreren Use Cases gemeinsam sind.
+- Beispiel: Die Ausführung von „Verkauf durchführen“ erfordert immer auch die 
+Ausführung von „Zahlung prüfen“
+
+Dependency <<extend>> (Erweiterungsbeziehung): 
+
+- Use Case B ist optional Teil des Use Case A und kann im definierten 
+
+Erweiterungspunkt (Extension Point) von A eingefügt werden. 
+
+- Optional (aber empfohlen): Zusätzlicher Kommentar mit einer Definition der 
+
+Bedingung. Use Case B wird in Use Case A nur eingefügt, wenn die Bedingung 
+wahr ist.
+
+- Es kann viele Erweiterungspunkte geben.
+- Beispiel: Wenn „Verkauf durchführen“ ausgeführt wird, kann der Use Case 
+
+„Quittung drucken“ ausgeführt werden (muss aber nicht).
+
+Generalisierungsbeziehung (zwischen Akteuren oder Use Cases):
+
+- Beispiel: Der spezialisierte Use Case „Quittung Privatkunde drucken“ erbt 
+
+alle Eigenschaften von Use Case „Quittung drucken“.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 25
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+ Beispiel:
+
+uc Use Case Model
+
+Partyservice-Unterstützungs-System
+
+Menü und Speisen 
+Menü und Speisen 
+
+wählen
+
+<<include>>
+
+Bestellung erfassen
+
+extension points: 
+
+Anzahlung
+
+<<include>>
+
+Ort und Zeit wählen
+
+<<extend>>
+
+condition: [Preis der Bestellung > 150€ ]
+extension points: Anzahlung
+
+Anzahlung leisten
+
+Bestellung stornieren
+
+Zutatenliste erstellen
+
+Warenbestand 
+aktualisieren
+
+Zubereitungsplan für 
+
+Speisen abrufen
+
+Koch
+
+Angestellter
+
+Chef
+
+Lagerist
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 26
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+ Beispiel:
+
+Person
+
+Systemname
+
+Programm starten
+Programm starten
+
+<<include>>
+
+Passwort eingeben
+Passwort eingeben
+
+Programm beenden
+
+Programmdaten ausgeben
+
+Backupdaten einspielen
+
+Administrator
+
+Drucker
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 27
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+WICHTIG: Neben der grafischen Darstellung ist eine textuelle Beschreibung der 
+Anwendungsfälle (in natürlicher Sprache) notwendig, um die Funktionalität und 
+den Ablauf ganz verständlich zu machen, z. B. in Tabellenform:
+
+Beschreibung Anwendungsfall
+Name
+Kurzbeschreibung
+Akteure
+Auslöser
+Ergebnis(se)
+Eingehende Daten
+Vorbedingungen
+Nachbedingungen
+Essenzielle Schritte
+Essenzielle Schritte
+Offene Punkte
+Änderungshistorie
+Sonstige Anmerkungen
+
+Möglich: Einsatz von Aktivitätsdiagrammen zur Beschreibung der Abläufe in 
+einem Use Case
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 28
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+ Eine Anwendungsfallbezeichnung besteht aus einem Substantiv 
+
+und einem aktiven Verb (z. B. „Bestellung stornieren“).
+
+ An jedem Anwendungsfall ist mindestens ein Akteur beteiligt.
+ An jedem Anwendungsfall ist mindestens ein Akteur beteiligt.
+
+ Jeder Anwendungsfall hat einen fachlichen Auslöser und ein 
+
+fachlich relevantes und wertvolles Ergebnis.
+
+ Die Beschreibung wird aus Sicht des zu entwickelnden Systems 
+formuliert, inhaltlich wird jedoch das Verhalten beschrieben, das 
+für den (außenstehenden) Akteur wahrnehmbar ist.
+
+ Die Beschreibung sollte so kurz und abstrakt wie möglich sein und 
+ Die Beschreibung sollte so kurz und abstrakt wie möglich sein und 
+so ausführlich und konkret, wie zum eindeutigen Verständnis nötig 
+ist.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 29
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+Leicht zu verstehen: Kunden (Experten der Problemdomäne, 
+Fachexperten) können bei der Modellierung kooperieren.
+
+Use Cases werden in der Praxis häufig zur Definition der 
+Use Cases werden in der Praxis häufig zur Definition der 
+Grundfunktionalität (Anforderungen) eines Systems eingesetzt.
+
+Können in initiale Klassendiagramme und andere Diagramme zur 
+Modellierung des Verhaltens transformiert werden.
+
+Aber:
+
+Keine grafische Modellierung der Ordnung/Reihenfolge der Use 
+Cases bzw. von Abläufen.
+
+Nichtfunktionale Anforderungen können nicht direkt modelliert 
+werden.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 30
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+Nichtfunktionale Anforderungen (non-functional Requirements):
+
+ Nichtfunktionale Anforderungen sind nicht direkt mit einer 
+
+Systemfunktionalität verknüpft.
+Systemfunktionalität verknüpft.
+
+ Beispiele:
+
+- Zeitschranken (Time Limits), z. B. falls ein System innerhalb n 
+
+Millisekunden antworten muss.
+
+- Einsatz spezifischer Kommunikationskonzepte, z.B. Konzepte zur 
+
+verteilten Programmierung.
+
+ Allerdings: Nichtfunktionale Anforderungen finden sich am Ende auch 
+
+in der Implementierung als Funktionalität:
+z. B. Zeitschranken ﬁ
+ﬁ Watch Dog Funktion
+z. B. Verteilung ﬁ
+
+ﬁ Einsatz von Threads oder WebService-Technologie
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 31
+
+Software Engineering – Wintersemester 14/15
+
+ﬁ
+ﬁ
+ﬁ
+ﬁ
+Software-Modelle
+5.8 OO Modellierung mit UML: Anwendungsfalldiagramm
+
+Szenarien (Scenarios):
+
+ Eine detailliertere Spezifikation von Interaktionen zwischen 
+
+Akteuren und Use Cases wird durch Szenarien möglich.
+
+ Szenario = spezielle Ausprägung eines Use Case, ein 
+
+Anwendungsfall mit konkreten Werten
+
+ Allerdings: Die Notation von Use Case Diagrammen genügt nicht, 
+
+um Szenarien auszudrücken.
+
+ Szenarien werden mit Sequenzdiagrammen (oder 
+
+Aktivitätsdiagrammen) modelliert, um zeitliche Details von 
+Interaktionen darzustellen.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 32
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+ Beschreiben die Reihenfolge und die Abhängigkeiten zwischen Aktionen
+
+
+
+In UML werden Aktivitätsdiagramme einer Klasse/ einem Objekt, einer 
+Operation oder einem Uses Case zugeordnet
+
+ Hauptziel: Geschäftsprozessmodellierung, Use Case Szenarien, 
+
+Algorithmen
+
+ Ursrpünge:  Petri Nets
+
+Flow Charts
+Nassi-Shneidermann Diagrams
+Dataflow Diagrams 
+Event Process Chains (EPCs)
+UML 1.x Activity Diagrams
+UML 1.x Activity Diagrams
+
+1960
+1970
+1980
+
+1990
+2000
+2000
+
+ Achtung: die Semantik in UML 1.x und 2.x ist unterschiedlich
+
+ Beschreibung des Kontrollflusses (Reihenfolge der Funktionen) und 
+
+Datenflusses (Daten, die zwischen den Aktionen ausgetauscht werden); 
+Die Semantik der Flüsse  (token flows) sind ähnlich zu Petri-Netzen
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 33
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Zutaten für UML 2.x Aktivitätsdiagrammen
+
+ Aktivität:
+
+- Ein Diagramm pro Aktivität (Funktionalität, Verhalten)
+
+- Aktivitäten werden von Akteuren ausgeführt
+
+- Eine Aktivität spezifiziert die Koordinierung von Aktionen durch 
+
+Angabe von Daten- und Kontrollflussknoten, 
+z. B. durch Aufteilen (Branching) und Zusammenführen des 
+Kontrollflusses (Merging)
+Kontrollflusses (Merging)
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 34
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Zutaten für UML 2.x Aktivitätsdiagrammen
+
+ Knoten (Nodes):
+
+Aktionsknoten
+(Action Node)
+
+Führt eine Aktion 
+
+aus
+
+Kontrollknoten
+(Control Node)
+Steuert den 
+Kontrollfluss
+
+Objektknoten
+(Object Node)
+Beschreibt den 
+
+Datenfluss
+
+ Transitionen (Transitions): Kanten (Activity Edge)
+
+Kontrollfluss
+(Control flow)
+(Control flow)
+
+Objekt- / Datenfluss
+(Object / Data Flow)
+(Object / Data Flow)
+
+ Diagrammstruktur
+
+Konnektor
+(Connector)
+
+Aktivitätsbereiche
+(Activity Partitions)
+
+Aktivitäts-
+Referenz
+(Activity Nesting)
+
+Unterbrechbarer 
+Aktivitätsbereich
+(Interruptible 
+Activity Region)
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 35
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Aktion, Aktionsknoten: Kleinste ausführbare Funktion
+
+Aktion 
+Aktion 
+
+Operations-
+
+aufruf
+
+Aktion 
+Aktion 
+
+Operations-
+
+aufruf
+
+Zeigt Aktivitäts-Referenzierung 
+
+(Nesting) an: ermöglicht 
+
+Aktionshierarchien (Aufruf in ein 
+Aktionshierarchien (Aufruf in ein 
+
+anderes Aktivitätsdiagramm)
+
+Aktion 
+
+Signal senden
+
+Aktion 
+Ereignis 
+empfangen
+
+Aktion Zeitereignis 
+
+akzeptieren / Wartezeit-Aktion
+
+ Aktionen können einen oder mehrere Parameter haben (→ Objektkonten)
+
+
+
+Im Kontrollfluss können Signale gesendet oder empfangen werden 
+(Zweck: Reaktion auf Ereignisse von außen und Synchronisation; Signale 
+sind asynchron)
+
+ Mehrere parallele Aktionsflüsse sind möglich (unabhängig zueinander)
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 36
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Kontrollknoten: Definieren und steuern den Kontroll- und Datenfluss (mit  
+
+Kontrollfluss-Token)
+
+ Startknoten (Initial / Start node): 
+ Startknoten (Initial / Start node): 
+nur ausgehender Kontrollfluss 
+ein oder mehrere Startknoten (wenn es Parameterknoten gibt, sind 
+keine Startknoten nötig)
+zu Beginn einer Aktivität werden die tokens an den Startknoten plaziert 
+
+ Endknoten (Final node): 
+
+- mindestens ein eingehender, aber kein ausgehender Kontrollfluss
+ein oder mehrere Endknoten (wenn es Parameterknoten gibt, sind 
+keine Endknoten nötig)
+keine Endknoten nötig)
+beendet alle Flüsse in der Aktivität
+
+ Ablaufende (Flow final node ): wie ein Endknoten, beendet aber nur einen
+
+Kontrollfluss und hat keinen Einfluss auf die anderen Flüsse in der Aktivität
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 37
+
+Software Engineering – Wintersemester 14/15
+
+-
+-
+-
+-
+-
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Kontrollknoten: Definieren und steuern den Kontroll- und Datenfluss (mit 
+
+Kontrollfluss -Token)
+
+Bedingung (Guard): 
+
+Prädikat zur 
+Kontrolle des 
+Kontrollflusses 
+(Token-
+Weiterleitung)
+- überlappende 
+
+Bedingungen führen 
+zu Nicht-
+Determinismus und 
+Determinismus und 
+sollten vermieden 
+werden
+
+- die Syntax ist nicht 
+
+definiert
+
+[x<0]
+[x<0]
+
+[x>0]
+[x>0]
+
+[else]
+
+Entscheidung, 
+Verzweigung 
+(Decision): 
+
+Verzweigung im 
+
+Kontroll- und 
+Datenfluss;
+
+abhängig von der 
+abhängig von der 
+Bedingung wird ein 
+Zweig ausgewählt
+
+[x<0]
+[x<0]
+
+[x>=0]
+
+Bedingte 
+
+Zusammenführung
+
+(Decision and 
+
+Merge)
+
+Zusammenführung, 
+Disjunktion, Oder 
+
+(Merge): 
+
+Bringt mehrere 
+
+verschiedene Flüsse 
+
+zusammen (keine 
+Synchronisation), 
+Synchronisation), 
+ODER-Semantik
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 38
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Kontrollknoten: Definieren und steuern den Kontroll- und Datenfluss (mit 
+
+Kontrollfluss - Token)
+
+Teilung (Fork / Splitting): 
+nicht bedingte Aufteilung von 
+Kontroll-/Datenfluss in mehrere 
+
+ausgehende parallele 
+
+Kontrollflüsse
+
+Synchronisation, Und, Konjunktion (Join ):
+
+wartet auf alle einkommenden Kontroll- und Datenflüsse 
+bevor mit dem ausgehenden Kontrollfluss weitergemacht 
+
+wird
+
+- UND-Semantik
+- Zusammenführung der Kontrollfluss-Tokens
+- Individuelle Weiterleitung der Datenfluss-Tokens
+
+Aufteilung und 
+Synchronisation
+(Fork and Join)
+
+Spezialisierte Synchronisation 
+
+(Specialized Join)
+
+A B C
+
+{joinSpec = (A and B) 
+or (A and C)}
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 39
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Kontrollknoten und ihre Semantiken:
+
+Achtung: Die Kreise an den Kanten zeigen Tokens im Sinne von Petri-Netzen; sie 
+sind nicht Teil der UML Notation!
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 40
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+Objektknoten: Definieren ein oder mehrere Objekte, die durch den 
+
+Datenfluss transportiert werden (als Objekt - Token)
+Objekte und Daten können nicht entlang einer Kontrollflusskante 
+transportiert werden 
+
+Aktivitätsparameter
+
+Aktionsparameter
+Aktionsparameter
+
+Input pin / Output pin
+
+Make 
+Payment
+
+Pin: Es kann mehrere 
+solcher Pins geben
+
+Aktivitätsparameterknoten
+Aktivitätsparameterknoten
+
+Aktivität
+
+Flüchtiger Datenspeicher für Daten-
+Flüchtiger Datenspeicher für Daten-
+
+Tokens
+
+(Central Buffer Node)
+
+Persistenter Speicher für Daten-Tokens: 
+Persistenter Speicher für Daten-Tokens: 
+
+Datenspeicher (Data Store Node)
+
+gibt immer nur Kopien zurück, löscht nicht
+
+<<centralBuffer>>
+
+<<datastore>>
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 41
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Objektzustand
+
+(optional)
+
+Objektyp
+
+Objektknoten in einem Datenfluss 
+
+als Aktionsparameter 
+
+(alternative Darstellungen)
+
+Send Invoice
+
+Send Invoice
+
+Send Invoice
+
+Ein-/Ausgabeparameter  
+
+der Aktivität als 
+Objektknoten
+
+act p
+
+Data
+
+Send Invoice
+
+Invoice
+[Amount]
+Invoice
+[Amount]
+
+Make 
+Payment
+Payment
+
+Input/Output
+Pin Notation
+
+Invoice
+[Amount]
+
+Make 
+Make 
+Payment
+
+Invoice
+[Amount]
+
+Make 
+Payment
+Payment
+
+Hier (optional):Genauere 
+
+Spezifikation des 
+
+Parameters, z. B. des Typs
+
+Invoice
+[Amount]
+
+Make 
+Payment
+
+Money
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 42
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Semantik von Daten- und Kontrollfluss:
+
+ Datenflusskanten haben dieselbe Notation wie Kontrollflusskanten – sie 
+
+werden aber durch Objekte ergänzt 
+werden aber durch Objekte ergänzt 
+
+ Daten-/Objekt-Tokens können beliebige (typbehaftete) Werte beinhalten
+ Der Datenfluss genügt um eine Aktion zu starten
+
+Input Pin (mit 
+Typbezeichner)
+
+Kunde
+
+Auftrag
+
+Kunde
+
+Auftrag
+
+Auftrag bearbeiten
+
+Trinken
+
+Trinken
+
+Rechnung
+
+Rechnung
+
+nur Kontrollflüsse
+
+Kontroll- und 
+Datenflüsse
+
+OutputPin (mit 
+Typbezeichner)
+
+nur Datenflüsse
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 43
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Semantik von Daten- und Kontrollfluss:
+
+ Semantik einer Aktion:
+
+anAction
+
+anAction
+
+anAction
+
+AND-Semantik 
+
+Ausführung wird beendet
+
+Exklusives ODER (XOR)
+
+Die Ausführung in der 
+Die Ausführung in der 
+
+Aktion kann starten, sobald 
+
+die Tokens an allen 
+
+einkommenden Daten- und 
+
+Kontrollflusskanten 
+
+verfügbar sind (implizite 
+
+Synchronisation)
+
+Neue Kontrollfluss-Tokens 
+Neue Kontrollfluss-Tokens 
+
+an allen ausgehenden 
+Kontrollflusskanten und 
+Objekt -Tokens an allen 
+
+Output-Pins 
+
+⇒⇒⇒⇒ die nachfolgenden 
+
+Aktionen  können starten
+
+Nur der Fluss wird 
+Nur der Fluss wird 
+
+fortgesetzt, der als erster 
+dazu bereit ist, das Token 
+
+zu verarbeiten
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 44
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+Unterbrechbare Aktivitätsregion (Interruptible Activity Region): Ein Set von 
+Knoten, die beendet werden, wenn die Unterbrechungskante (eine Kontroll- oder 
+Datenflusskante) durchlaufen wird
+
+act p
+
+Data
+
+Send Invoice
+
+Stop all
+
+Invoice
+[Amount]
+
+Make 
+Payment
+
+Money
+
+Unterbrechende Kante
+
+(Interrupting Edge)
+
+Im Fall eines 
+
+Unterbrechungssignals  
+
+wird hier fortgesetzt 
+(alle Tokens, Aktionen 
+und Verhalten werden 
+
+beendet)
+
+Unterbrechbare 
+Unterbrechbare 
+Aktivitätsregion
+
+ Wenn eine Signal-Aktion keine eingehende Kante hat, wird sie am Start der Aktivität 
+
+aktiviert (aktiv geschaltet)
+
+ Ausnahme: Die Aktionen in der unterbrechbaren Aktivitätsregion werden aktiv, wenn 
+
+die Region zum ersten Mal im Fluss betreten wird
+
+ Eine aktive Signal-Aktion ist bereit, das entsprechende Signal zu empfangen 
+
+(asynchron) 
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 45
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Unterbrechbare Aktivitätsregion: Ein Set von Knoten die beendet werden, wenn die 
+
+Unterbrechungskante (eine Kontroll- oder Datenflusskante) durchlaufen wird
+
+Aktivität
+Aktivität
+
+A
+
+Signal B
+
+Signal A
+
+aktiv, sobald die umgebende
+
+Aktivität startet
+Aktivität startet
+
+erst aktiv, wenn 
+Unterbrechungsbereich 
+„betreten“ wird
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 46
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Verschachtelung von Aktionen/Aktivitäten (Call Behavior Action): Eine Aktion in 
+
+einem Aktivitätsdiagramm ruft ein anderes Aktivitätsdiagramm auf
+
+act …
+
+act Prepare Lunch
+
+act Cut ingredients
+
+Prepare 
+Lunch
+
+Cut 
+
+ingredients
+
+Search knife
+
+ Verschachtelung (Nesting) ist ein impliziter Aufruf von einer Aktion an ein 
+anderes Aktivitätsdiagramm (üblicherweise haben aufrufende Aktion und 
+aufgerufene Aktivität denselben Namen)
+
+ Input/Output-Pins der Aktion werden auf die Aktivitätsparameter 
+
+übertragen 
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 47
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Verantwortlichkeitsbereiche (Swim Lane, Activity Partitions): 
+Gruppierung von Knoten und Kanten basierend auf gemeinsamen 
+Eigenschaften um die Lesbarkeit zu verbessern  (rein logische Sicht, ohne 
+Einfluss auf Kontroll-/Datenfluss in der Aktivität)
+
+Bereiche, Swim Line (Schwimmbahnen)
+Bereiche, Swim Line (Schwimmbahnen)
+
+Guest
+
+Waiter
+
+Alternative Darstellung von 
+Verantwortlichkeitsbereichen
+
+Enter 
+
+restaurant
+
+Ignore guest
+
+(Partition Guest)
+Enter restaurant
+
+(Partition waiter)
+
+Ignore guest
+
+Make a break
+
+(Partition waiter)
+
+Make a break
+
+ Auch möglich: Mehrdimensionale Bereiche, Verschachtelung, Überlappung 
+
+von Verantwortlichkeitsbereichen 
+
+ Achtung: Lesbarkeit überprüfen!
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 48
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Konnektor (Connector): Bezeichner, um die Struktur der Diagramme zu verbessern
+
+Enter 
+
+restaurant
+
+Ignore guest
+
+Alternative Darstellung:
+
+Enter 
+
+restaurant
+
+A
+
+A
+
+Ignore guest
+
+Konnektor: Bezeichner um die 
+Konnektor: Bezeichner um die 
+
+implizite Fortführung der 
+Transition darzustellen
+
+ Zur Vermeidung von langen Kanten
+
+ Um Kanten in einem anderen Dokument fortzusetzen
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 49
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Abstraktes
+Beispiel
+
+Aktivität
+
+Aktivitäts-Parameterknoten
+
+Activity
+
+Startknoten
+
+Datenfluss
+
+S
+
+[else]
+
+Endknoten
+
+Kontrollfluss
+
+InputPin
+InputPin
+
+Entscheidung
+
+B
+
+Aktion
+
+[x>0]
+
+Bedingung
+
+A
+
+Unterbrechbare 
+Aktivitätsregion
+
+Teilung
+
+C
+C
+
+OutputPin
+
+5s
+5s
+
+Ablaufende
+
+<<centralBuffer>>
+
+Central  Buffer Node
+flüchtiger Datenspeicher
+
+Unterbrechende 
+Kante
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 50
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+Beispiel:
+
+act Zutatenbestellung
+
+Bestellung
+
+Montag
+Vormittag
+
+Lager
+
+Donnerstag
+
+Mittag
+
+Lieferung
+
+Verantwortlichen
+
+informieren
+
+Ware
+Ware
+
+Ware
+
+Ware einlagern
+
+Manuelle 
+Bestellung
+
+Zutaten für 
+Zutaten für 
+die nächste 
+
+Woche
+
+Zutatenliste
+
+erstellen
+
+Zutatenliste
+
+Bestellung
+verschicken
+
+Dienstag
+
+Mittag
+
+Bestellbestätigung
+
+Verantwortlichen
+
+informieren
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 51
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Aktivitätsdiagramm
+
+act Zutatenbestellung
+
+Ware
+
+Bestellung
+
+Montag
+Vormittag
+
+Ware einlagern
+
+Lager
+
+Beispiel:
+(zeigt 
+Schachtel-
+ung):
+
+Manuelle 
+Bestellung
+
+Zutaten für 
+Zutaten für 
+die nächste 
+
+Woche
+
+Ware
+Ware
+
+Zutatenliste
+
+Ware prüfen
+erstellen
+
+Ware
+
+Zutatenliste
+
+[else]
+
+[Ware ok]
+
+Bestellung
+Ware
+verschicken
+Ware 
+
+abbestellen
+abbestellen
+
+Dienstag
+
+Mittag
+
+Ware
+Ware
+
+Bestellbestätigung
+Bestand 
+
+aktualisieren
+
+Verantwortlichen
+
+informieren
+
+Lieferung
+
+Donnerstag
+
+Ware
+
+Mittag
+Lieferung 
+ablehnen
+Verantwortlichen
+
+informieren
+
+Ware
+Ware
+
+Ware
+
+Ware einlagern
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 52
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Zeitdiagramm
+
+ Alternativ auch: Zeitverlaufsdiagramm, Timing Diagram
+ Gehört zur Kategorie der Interaktionsdiagramme
+ Beschreibt die zeitlichen Bedingungen von Zustandswechseln mehrerer 
+
+beteiligter Objekte (zeitliche Abhängigkeiten)
+
+ Einsatz v.a. für Echtzeitsysteme
+ Einsatz v.a. für Echtzeitsysteme
+
+interaction Zeitdiagramm
+
+{t..3*t}
+
+Zeitbedingung
+
+1
+e
+s
+s
+a
+K
+:
+y
+
+l
+
+i
+i
+
+e
+e
+n
+n
+
+i
+i
+l
+l
+
+s
+s
+n
+n
+e
+e
+b
+b
+e
+e
+L
+L
+
+2
+2
+e
+e
+s
+s
+s
+s
+a
+a
+K
+K
+:
+:
+x
+x
+
+l
+l
+
+e
+e
+t
+t
+k
+k
+e
+e
+b
+b
+O
+O
+
+j
+j
+
+Zustand 1
+
+Zustand 2
+
+Zustand A
+
+Zustand B
+
+Zustand C
+
+nachricht2()
+
+nachricht1()
+
+nachricht3()
+
+t=now
+
+{<10ms}
+
+Zustandslinie
+
+Zeitachse mit Zeitpunkten, Zeiträumen und zu erfüllenden Bedingungen
+
+Sek.:  0   1   2
+
+Zeitskala
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 53
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Verteilungsdiagramm
+
+Verteilungsdiagramme:
+ Werden für Verteilungsaspekte im zu modellierenden System verwendet.
+ Stellen die physikalische Aufteilung der Rechner und Netze/Knoten dar.
+ Helfen bei der Analyse von Performance-Engpässen.
+ Helfen bei der Analyse von Performance-Engpässen.
+
+Knoten:
+ Enthalten zur Laufzeit die Komponenten, Objekte und sonstige Artefakte.
+ Repräsentieren physikalische Einheiten.
+
+dep DeploymentDiagramName
+
+Server
+
+<<component>>
+Datenverwaltung
+
+<<component>>
+
+Spielregelverwaltung
+
+ZugDesSpielers
+
+Client
+
+Spielinformationen
+
+<<component>>
+
+Anzeigeverwaltung
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 54
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Komponentendiagramm
+
+Komponentendiagramme:
+ Legen die Komponentenarchitektur des Systems fest.
+ Beschreiben Abhängigkeiten und Schnittstellen zwischen Komponenten.
+
+UML-Komponenten:
+ Sind einzeln entwickelbare Einheiten, die zu einem Ganzen kombiniert 
+
+werden können.
+
+ Zeichnen sich durch definierte Schnittstellen aus.
+
+cmp CDName
+
+<<component>> Komponentenname
+
+Klasse1
+Klasse1
+
+Klasse2
+Klasse2
+
+Schnittstelle 1
+
+Schnittstelle 2
+
+<<component>> Komponentenname
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 55
+
+Software Engineering – Wintersemester 14/15
+
+Software-Modelle
+5.8 OO Modellierung mit UML: Bewertung
+
+Vorteile:
+ UML hat sich zum Standard für die objektorientierte Modellierung 
+
+entwickelt.
+entwickelt.
+
+ Eine Vielzahl von Werkzeugen unterstützt die Modellierung mit UML.
+ UML besitzt gute Erweiterungsmöglichkeiten (ﬁ
+
+ﬁ Kommentare, 
+
+Stereotypen, Profile).
+
+Nachteile:
+ Auf Grund der sich teilweise überschneidenden Sichten muss auf 
+
+die Konsistenz der Diagramme geachtet werden.
+die Konsistenz der Diagramme geachtet werden.
+
+ Es existiert zur Zeit keine umfassende Semantik für UML.
+ UML besitzt einen sehr großen Sprachumfang.
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 56
+
+Software Engineering – Wintersemester 14/15
+
+ﬁ
+ﬁ
+Software-Modelle
+5.8 OO Modellierung mit UML: Ursprünge
+
+Herkunft der Diagrammtypen
+
+ Use Case Diagram: Jacobson [92]
+
+ Klassendiagramm: Coad/Jourdon [91] , Rumbaugh [91] , Booch [94] , … 
+
+ Sequenzdiagramm: Rumbaugh [91] , Booch [94] , … 
+
+ Objektdiagramm / Kollaborationsdiagramm (heute: 
+
+Kommunikationsdiagramm): Booch [94] 
+
+ Zustandsübergangsdiagramm: Harel [87]
+ Zustandsübergangsdiagramm: Harel [87]
+
+ Deployment Diagram: Booch [94]
+
+ Zeitdiagramme: Modellierung in der Elektronik, Elektrotechnik
+
+D. Harel. Visual Formalism for Complex Systems. Science of Computer Programming, 8:231 – 274, 1987
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 57
+
+Software Engineering – Wintersemester 14/15
+
+5 Software-Modelle
+Zusammenfassung und Ausblick
+
+1 Software-Krise und 
+
+Software Engineering
+
+2 Grundlagen des 
+
+Software Engineering
+Software Engineering
+
+3 Projektmanagement
+4 Konfigurationsmanagement
+5 Software-Modelle
+6 Software-Entwicklungsphasen, 
+
+-prozesse, -vorgehensmodelle
+
+7 Qualität
+(8 … Fortgeschrittene Techniken)
+
+5.1  Grundlagen und Modelltypen 
+
+(Modellbegriff, Modellarten/Sichten, 
+Einsatz, Modellvielfalt, 
+Abstraktionsebenen)
+5.2  Programmablaufplan
+5.3  Struktogramm
+5.4  Funktionsbaum
+5.5  Structured Analysis
+5.6  EBNF, Syntaxdiagramm
+5.7  ERM
+5.8  OO-Modelle mit UML
+
+bekannte
+Modelle bzw. 
+Modellierungs-
+sprachen
+
+ﬁ Wege im Umgang mit der Software-Krise und 
+Umsetzung der Grundlagen und Prinzipien: 
+Entwicklung nach einem systematischen Vorgehensmodell
+
+Prof. Dr.-Ing. E. Pulvermüller, Universität Osnabrück
+
+Folie 58
+
+Software Engineering – Wintersemester 14/15
+
+ﬁ
+ﬁ
+ﬁ
+

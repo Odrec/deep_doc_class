@@ -1,0 +1,658 @@
+(Master-)	Seminar	SoSe 2016	
+Komplexität	und	Theorie	von	
+Spielen
+
+Prof.	Dr.	Markus	Chimani
+Dipl.-Math.	Ivo	Hedtke
+M.Sc.	Tilo	Wiedera
+
+Theoretische	Informatik,	Uni	Osnabrück
+
+aktualisiert am	4.4.16,	16	Uhr
+
+Inhalt
+
+1. Organisatorisches
+2. Was	ist	Spieltheorie?
+3.
+4. Vortragsthemen
+
+Ein	Beispiel:	Conway‘s Army
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität von	Spielen
+
+2
+
+Organisatorisches
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität von	Spielen
+
+3
+
+Ziele
+
+Ziel
+§
+
+§
+
+speziell:
+Lernen	über	Spieltheorie
+allgemein:
+
+Recherchieren	→ Einordnen	→ Beurteilen	→ Verstehen	→ Aufbereiten	→ Präsentieren
+
+Ablauf
+Gegeben	(von	uns):
+§
+
+Thema
+
+z.B.	Metatheoreme	für	Videospiele
+
+Gesucht	(von	Ihnen,	mit	unserer	Unterstützung):
+§ Recherchieren:
+Einordnen:
+§
+§ Beurteilen:
+
+§ Verstehen:
+§ Aufbereiten/Präsentieren:
+
+Was	ist	das?	Was	gibt	es	zu	dem	Thema?
+Was	davon	gehört zu	dem	Thema?
+Was	davon	ist	interessant/wichtig?
+Lesbarkeit/Korrektheit	von	fremden	Ausarbeitungen.
+Wie	funktionieren	die	spannendsten	Teile	genau?
+Wie kann man	das	nun	erworbene Wissen
+anderen vermitteln?
+
+SoSe 2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität von	Spielen
+
+4
+
+Ziele
+
+Schwerpunkt Theorie	und	Komplexität
+
+Ausarbeitung	 und	Vortrag	beantworten	die	Fragen:
+§ Was	ist	die	Problemstellung,	welche	Varianten	gibt	es,	…
+§ Komplexität	(polynomiell,	 NP-schwer,	approximierbar,	einfachere	
+
+Spezialfälle,...)
+
+§ Spieltheoretische	Konzepte
+§ Ein	oder	zwei	interessante	Punkte	herauspicken	und	genauer	beschreiben:
+
+§ Spieltheoretische	Konzepte
+§ Algorithmen,	Approximationen,	 exakte	Verfahren
+§ Schranken
+§ NP-Härte,	PSPACE
+§ Laufzeitbetrachtungen
+§ Korrektheit
+§ …
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität von	Spielen
+
+5
+
+Zeitplan
+
+04. April
+08.	April
+11.	April
+
+Heute
+Heute	+	4	Tage
+Heute	+	1	Woche
+
+KW	18: 2.-4.	Mai
+
+X	– 9	Wochen
+
+29.	Mai
+
+6.	Juni
+
+13.	Juni
+
+KW	26:	27.-29.	Juni
+KW	27:	genaue	
+Termine	folgen
+
+X	– 5 Wochen
+
+X	– 4 Wochen
+
+X	– 3 Wochen
+
+X – 1 Woche
+X
+
+B =	Treffen mit Betreuer
+
+Vorbesprechung
+Anmeldeschluss	+	Gruppenwunsch
+Gruppeneinteilung	 +	
+Themenvergabe
+B Recherche	und	Auswahlvorschlag	
+fertig!
+Ausarbeitung fertig
+ca.	15	Seiten,	LATEX
+Review	der	fremden	Ausarbeitung
+fertig
+Einbau	beider	Reviews	in	
+Ausarbeitung	 fertig
+B Folien	fertig
+Vorträge:	ca.	45	min
+(Voraussetzung:	Ausarbeitung ok)
+
+Natürlich auch gerne Termine zwischendurch …
+
+{markus.chimani, ivo.hedtke, twiedera}@uni-osnabrueck.de
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+6
+
+Was	ist	Spieltheorie?
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität von	Spielen
+
+7
+
+Was	ist	Spieltheorie?
+
+Quelle:	[T.L.	TUROCY,	B.	V.	STENGEL:	Game	Theory.	Report	LSE-CDAM-2001-09]
+Game	theory is the formal	study of conflict and cooperation.	Game	theoretic
+concepts apply whenever the actions of several agents are interdependent.	
+These	agents may be individuals,	 groups,	firms,	or any combination of these.	
+The	concepts of game theory provide a	language to formulate,	structure,	
+analyze,	and understand strategic scenarios.
+The	object of study in	game theory is the game,	which is a	formal	model of an	
+interactive situation.	[...]	The	formal	definition lays out	the players,	their
+preferences,	their information,	the strategic actions available to them,	and
+how these influence the outcome.
+
+Wichtige	Aspekte	für uns:
+§ Schwierigkeit von	Spielen:	Constraint	Logic,	Metatheoreme
+§ Exakte Algorithmen für schwierige Probleme
+§ Suchstrategien für Spielzüge bei Mensch-gegen-Computer	Situationen
+§ Klassische Resultate:	Gleichgewichtszustände und	Voraussetzungen für
+
+Gewinnstrategien
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+8
+
+Beispiel:	Conway‘s ChequerboardArmy
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+9
+
+Beispiel:	Conway‘s ChequerboardArmy
+
+John	Horton	Conway	(geb.	26.12.1937)	 englischer	Mathematiker
+
+Arbeitsgebiete:
+• Endliche	Gruppen
+• Knotentheorie
+•
+Zahlentheorie
+• Kombinatorische	Spieltheorie
+• Kodierungstheorie
+
+http://www.math.princeto
+n.edu/directory/john-
+conway
+
+Besonders	bekannt	für das
+Game	of	Life
+
+https://en.wikipedia.org/wiki/
+Conway%27s_Game_of_Life
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität von	Spielen
+
+10
+
+Conway‘s ChequerboardArmy:	Das	Problem
+
+Quelle:	[JULIAN HAVIL:	Nonplussed!:	Mathematical Proof	of Implausible Ideas.	
+Princeton	University	Press.	2010]	Chapter	6
+
+Gegeben:
+Ein	unendlich	 großes	zweidimensionales
+Schachbrett.	Es	wird	durch	eine	unendlich
+lange	Barriere in	zwei	Teile	geteilt.	Über
+der	Barriere sind die	Felder	horizontal	in
+Level eingeteilt.	Steine sind in	den	Feldern
+Unterhalb der	Barriere platziert.	Sie
+Bewegen sich horizontal	und	vertikal wie
+Dame-Spielsteine.
+
+T
+
+L	4
+
+L	3
+
+L	2
+
+L	1
+
+Aufgabe:
+Finde eine initiale Platzierung von	möglichst wenig Steinen,	sodass ein
+beliebiges Target	über der	Barriere erreicht werden kann.
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität von	Spielen
+
+11
+
+Conway‘s ChequerboardArmy:	Erste	Ergebnisse
+
+T
+
+T
+
+T
+
+T
+
+Wir	beweisen	Theorem	1(b):
+
+Theorem	1
+a)
+
+The	minumal number of chequers needed to reach level 1,	2,	3	and 4	is 2,	
+4,	8	and 20.
+Level	5	is impossible to reach.
+
+b)
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+12
+
+Conway‘s Army:	Level	5	is impossible to reach
+
+Wir	fixieren	ein	beliebiges	Target	T auf	Level	5	des	Bretts.
+Die	Distanz	d(f)	eines	Feldes	f zum	Target	T sei	durch	die
+Manhattan-Metrik	definiert:	d(f)	:=	|xf - xT|	+	|yf - yT|.	Es
+sei	X eine	Variable.	Jedes	Feld	f erhält	das	Label	Xd(f).
+
+Beobachtung:	Jeder	Konfiguration	 von	Steinen	auf	dem
+Brett	wird	ein	Polynom zugeordnet.	Die	Startkonfiguration
+für	Level	3	wird	mit	X3 +	3X4 +	3X5 +	X6 assoziiert.
+
+Welchen	Effekt	haben	Bewegungen	der	Steine?	Es	gibt	nur
+3	Fälle (was	der	geneigte Leser selbst prüft):
+§ Xn+2 +	Xn+1
+§ Xn +	Xn-1
+§ Xn +	Xn+1
+
+wird zu Xn
+wird zu Xn
+wird zu Xn+2
+
+T
+
+X1
+
+X1
+
+X2
+X2
+X3 X2 X1 X2 X3
+
+T
+
+X1
+
+X1
+
+X2
+X2
+X3 X2 X1 X2 X3
+
+T
+
+X1
+
+X1
+
+X2
+X2
+X3 X2 X1 X2 X3
+
+T
+
+X1
+
+X1
+
+X2
+X2
+X3 X2 X1 X2 X3
+X4 X3 X2 X3 X4
+X5 X4 X3 X4 X5
+X5 X4 X5 X6
+X6
+
+T
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+13
+
+Conway‘s Army:	Level	5	is impossible to reach
+
+Beobachtung:	Die	Startkonfiguration	 ist	ein	Polynom.	Das
+Ziel	ist	es,	am	Ende	aller	Spielzüge mit einem Spielstein auf
+T zu stehen.	Das	“Stehen auf T“	entspricht dem Polynom X0.
+
+T
+
+X1
+
+X1
+
+X2
+X2
+X3 X2 X1 X2 X3
+X4 X3 X2 X3 X4
+X5 X4 X3 X4 X5
+X5 X4 X5 X6
+X6
+
+Beispiel:	T	auf	Level	3:
+Startkonfiguration:	P	=	X3 +	3X4 +	3X5 +	X6
+Schritt 1:	X4+X3→X2,	P	=	X2 +	2X4 +	3X5 +	X6
+2:	X5+X4→X3,	P	=	X2 +	X3 +	X4 +	2X5 +	X6
+3:	X3+X2→X1,	P	=	X1 +	X4 +	2X5 +	X6
+4:	X5+X4→X3,	P	=	X1 +	X3 +	X5 +	X6
+
+5:	X6+X5→X4,	P =	X1 +	X3 +	X4
+6:	X4+X3→X2,	P =	X1 +	X2
+7:	X2+X1→X0,	P =	X0
+
+T
+
+T
+
+T
+
+T
+
+T
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+14
+
+Conway‘s Army:	Level	5	is impossible to reach
+
+Beobachtung:	Die	Startkonfiguration	 ist	ein	Polynom.	Ziel	ist	es,	am	Ende	mit
+einem Spielstein auf	T zu stehen.	Das	entspricht dem Polynom X0.
+
+Idee für den	Beweis:	Wir belegen die	Variable	X mit einem festen Wert.	Dann
+entspricht die	Startkonfiguration auch einem Zahlenwert.	Der	Wert	auf	den	wir
+am	Ende kommen wollen,	ist X0 =	1.	
+
+Wir wollen:	Die	einzelnen Spielzüge induzieren eine monoton fallende Folge
+von	Polynomwerten.	Dazu müssen wir ein ganz bestimmtes X wählen.	Es muss	
+die	Bedingungen erfüllen:
+• Xn+2 +	Xn+1 wird zu Xn: Wert	bleibt gleich:
+• Xn +	Xn-1 wird zu Xn:
+Wert	wird kleiner:
+• Xn +	Xn+1 wird zu Xn+2: Wert	wird kleiner:
+
+(1)	Xn+2 +	Xn+1 = Xn
+(2)	Xn +	Xn-1 > Xn
+(3)	Xn +	Xn+1 > Xn+2
+
+Aus	(3)	folgt:	1	+	X >	X2,	weshalb	0	<	X <	(√5+1)/2	=	φ (goldener	Schnitt).
+(2)	Ist	für positive	X	sowieso immer erfüllt.
+Aus	(1)	folgt	X +	X2 =	1,	weshalb	nur	noch	X =	(√5-1)/2	=	1/φ (cid:1) 0.618 bleibt.
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+15
+
+Conway‘s Army:	Grundidee	mit	Zahlenwerten
+
+Sei	P0 der	Wert	von	P(1/φ)	bei	der	Startkonfiguration.	Ebenso	seien	Pi die	
+Werte	von	P(1/φ)	jeweils	nach	dem	i-ten Spielzug.	Damit	wir	das	Target	T
+erreichen,	muss	gelten
+
+Wir	zeigen	nun,	dass	P0 <	1,	womit	wir	mit	keiner	Folge	von	Spielzügen jemals
+ein Target	auf	Level	5	erreichen können.
+
+P0 ≥	P1 ≥	P2 ≥	...	≥	1.
+
+Lemma:	Sei A(X) das	Polynom wenn alle Felder
+unterhalb der	Barriere belegt sind,	dann ist
+P0 <	A(1/φ).
+
+Beweis:	offensichtlich
+
+Es	bleibt,	A(X)	und	A(1/φ) zu	bestimmen.
+
+X9 X8 X7 X6 X5 X6 X7 X8 X9
+X10 X9 X8 X7 X6 X7 X8 X9 X10
+X11 X10 X9 X8 X7 X8 X9 X10 X11
+X12 X11 X10 X9 X8 X9 X10 X11 X12
+X13 X12 X11 X10 X9 X10 X11 X12 X13
+
+A(X)	=	X5 +	3X6 +	5X7 +	7X8 +	9X9 +	...	=	X5 (	1	+	3X +	5X2 +	7X3 +	9X4 +	...)
+A(X)	=	X5 S(X)
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+16
+
+Conway‘s Army:	Level	5	is impossible to reach
+
+S(X)
+X S(x)
+(1-X)S(X) =	1	+	2X +	2X2 +	2X3 +	2X4 +	2X5 +	...
+
+=	1	+	3X +	5X2 +	7X3 +	9X4 +	...
+=	X	+	3X2 +	5X3 +	7X4 +	9X5 +	...
+
+Notiz:
+wollen	zeigen:	P0 <	1
+verwenden:	P0 <	A(1/φ)
+es	ist:	A(X)	=	X5 S(X)
+S(X)	=	1	+	3X +	5X2 +	7X3 +	9X4 +	...
+
+=	1	+	2(X +	X2 +	X3 +	X4 +	X5 +	...)	=	1	+	2X/(1-X)	=	(1+X)/(1-X)
+
+S(X)	=	(1+X)/(1-X)2
+A(X)	=	X5 S(X)	=	X5(1+X)/(1-X)2
+
+Wir	haben	X	=	1/φ gewählt,	weil wir X +	X2 =	1	gefordert haben.	Daraus leiten
+wir 1	- X =	X2 und	1	+	X =	1/X ab.	Es folgt
+
+A(X)	=	X5(1+X)/(1-X)2 =	X5(1/X)	/	(X2)2 =	X5 /	X5 =	1.
+
+Wir	haben	gezeigt:	P0 <	A(1/φ)	=	1.	Egal	wie	die	Startkonfiguration	der	
+Spielsteine	aussieht,	Level	5	kann	nicht	erreicht	werden.
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+17
+
+Vortragsthemen
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+18
+
+1.	Komplexität von	1-Spieler-Spielen
+
+Theorie:	Constraint Graphs,	Non-Deterministic Constraint Logic (NCL),	PSPACE-
+complete,	Unbounded Games	(NCL	=	PSPACE-complete)
+
+Spiele: Sliding Coin,	Sokoban
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+19
+
+2.	Komplexität von	2-Spieler-Spielen
+
+Theorie:	Constraint Graphs,	Two-Player	Constraint Logic (2CL),	PSPACE-
+complete,	Bounded Games	(2CL	=	PSPACE-complete)
+
+Spiel:	Konane
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+20
+
+3.	Metatheoreme	für Video-Spiele
+
+Theorie:	Komplexität	von	Video-Spielen
+mit	Elementen	wie:	“destroyable paths,
+collectible items,	doors opened by keys
+or activated by buttons or pressure
+plates”
+
+Spiele:	Lemmings,	Pac-Man,	Starcraft
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+21
+
+4.	Sudokus	lösen:	Nishio
+
+Theorie:	Nishio-Technik,	Transformation	in	Graphen,	Algorithmus,	Korrektheit,	
+Laufzeit
+
+Spiel:	Sudoku
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+22
+
+5.	Proof-Number Search
+
+Theorie:	Search-Trees for AND/OR	trees.	Optimierung	von	Laufzeit	und	
+Speicherverbrauch,	Vergleich	zu	α-β-Search,	SSS*-,	B*- und	Conspiracy-Search
+
+Spiel:	Awari
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+23
+
+6.	Evolutionary Stable Strategies & Conditions f.	Win Strategies
+
+Theorie:	Nash-Gleichgewicht,	Evolutionary Game	Theory
+
+Spiele:	Hawk-Dove	(Chicken),	Tic-Tac-Toe
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+24
+
+Vortragsthemen
+
+1.
+
+2.
+
+Komplexität	von	1-Spieler-Spielen:	Constraint Graphs,	Non-Deterministic Constraint
+Logic (NCL),	PSPACE-complete,	Unbounded Games	(NCL	=	PSPACE-complete).	Sliding
+Coin,	Sokoban
+
+Komplexität	von	2-Spieler-Spielen:	Constraint Graphs,	Two-Player	Constraint Logic
+(2CL),	PSPACE-complete,	Bounded Games	(2CL	=	PSPACE-complete).	Konane
+
+3. Metatheoreme	für	Video-Spiele:	Komplexität	von	Video-Spielen	mit	Elementen	wie:	
+“destroyable paths,	collectible items,	doors opened by keys or activated by buttons or
+pressure plates”.	Lemmings,	Pac-Man,	Starcraft
+
+4.
+
+5.
+
+6.
+
+Sudokus	lösen	(Nishio):	Nishio-Technik,	Transformation	in	Graphen,	Algorithmus,	
+Korrektheit,	Laufzeit.	Sudoku
+
+Proof-Number Search:	Search-Trees for AND/OR	trees.	Optimierung	von	Laufzeit	und	
+Speicherverbrauch,	Vergleich	zu	α-β-Search,	SSS*-,	B*- und	Conspiracy-Search.	Awari
+
+Evolutionary Stable Strategies and Conditions for Winning Strategies:	Nash-
+Gleichgewicht,	Evolutionary Game	Theory.	Hawk-Dove	(Chicken),	Tic-Tac-Toe
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+25
+
+ANMELDUNG
+
+Bitte	melden	Sie	sich	bis	einschl.	8.4.16	per	Mail	an	Prof.	Chimani zum	Seminar	
+an.	Bachelorstudenten	nennen	in	dieser	Mail	bitte	ihren	Partner	oder	teilen	
+uns	mit,	dass	sie	einen	Partner	zugeteilt	bekommen	möchten.
+
+SoSe	2016	– Ivo	Hedtke
+
+Theorie	und	Komplexität	von	Spielen
+
+26
+
+

@@ -1,0 +1,5105 @@
+Lineare Algebra und analytische
+
+Geometrie I
+
+Markus Spitzweck
+
+Wintersemester 2014/2015
+
+Inhaltsverzeichnis
+
+1 Lineare Gleichungssysteme, erste Schritte
+
+1.1 Gleichungen, Gleichungssysteme . . . . . . . . . . . . . . . . .
+1.2 Lineare Gleichungssysteme . . . . . . . . . . . . . . . . . . . .
+
+2 Mengen und Abbildungen
+
+3
+3
+5
+
+12
+
+3 Gruppen
+
+18
+3.1 Permutationsgruppen . . . . . . . . . . . . . . . . . . . . . . . 21
+
+4 K¨orper
+
+5 Die komplexen Zahlen
+
+6 Vektorr¨aume
+
+7 Lineare Abh¨angigkeit, Basis, Dimension
+
+8 Dimensionsformel und direkte Summen
+
+9 Zornsches Lemma und die Existenz von Basen
+
+10 Lineare Abbildungen
+
+11 Kern und Bild
+
+12 Lineare Abbildungen und Matrizen
+
+13 Dualr¨aume
+
+14 Lineare Gleichungssysteme II
+
+23
+
+26
+
+29
+
+33
+
+37
+
+40
+
+42
+
+47
+
+49
+
+58
+
+65
+
+2
+
+1 Lineare Gleichungssysteme, erste Schritte
+
+1.1 Gleichungen, Gleichungssysteme
+
+Beispiele:
+
+• Betrachten wir die Gleichung 3x = 5. Hierbei ist x eine Variable. Sie
+vertritt die gesuchte L¨osung der Gleichung. Dabei suchen wir L¨osungen
+in den reellen Zahlen. Als eindeutige L¨osung erhalten wir x = 5
+3.
+
+• Die Gleichung 0 · x = 2 hat keine L¨osung.
+2)2 − 1
+• x2 + x − 1
+2,
+
+4 = 0: x2 + x − 1
+
+4 = (x + 1
+
+also erhalten wir die zwei L¨osungen x1,2 = − 1
+
+2 ± 1√
+
+.
+
+2
+
+• Die Gleichung x2 = −1 hat keine L¨osung in den reellen Zahlen.
+• Eine Gleichung der Form
+
+anxn + an−1xn−1 + . . . + a1x + a0 = 0,
+
+wobei die a0, . . . , an feste Zahlen sind mit an (cid:54)= 0, nennt man eine
+Gleichung n-ten Grades.
+
+F¨ur den Fall n = 1 erhalten wir eine lineare Gleichung in einer
+Variablen. Sie hat die eindeutige L¨osung x = − a0
+(wir beachten, dass
+wir durch a1 teilen d¨urfen, da wir a1 (cid:54)= 0 vorausgesetzt haben).
+F¨ur den Fall n = 2 kennen wir eine L¨osungsformel aus der Schule.
+
+a1
+
+F¨ur den Fall n = 3 und n = 4 gibt es auch (kompliziertere) L¨osungs-
+formeln.
+F¨ur die F¨alle n ≥ 5 ist bewiesen worden, dass es keine allgemeinen
+L¨osungsformeln, in denen nur Wurzelausd¨ucke und die gew¨ohnlichen
+Rechensymbole vorkommen, geben kann (Abel, 1827).
+
+• x − y = 1
+2x + y = 2
+
+ist ein Gleichungssystem
+
+(2 Gleichungen, 2 Variable).
+Wir setzen y = x − 1 in die 2. Gleichung ein:
+2x + x − 1 = 2
+3x = 3
+x = 1,
+
+3
+
+und erhalten die eindeutige L¨osung (x, y) = (1, 0). Diese L¨osung hat
+auch eine geometrische Interpretation:
+
+Die L¨osungen jeder einzelnen Gleichung stellen Geraden in der Ebene
+dar, und die L¨osung des Systems ist durch dessen Schnittpunkt gege-
+ben.
+
+x − y = 1
+
+3
+
+2
+
+1
+
+-4
+
+-3
+
+-2
+
+-1
+
+1
+
+2
+
+3
+
+4
+
+-1
+
+-2
+
+-3
+
+2x + y = 2
+
+F¨ugen wir x−2y = 0 zum Gleichungssystem hinzu, hat das Gleichungs-
+system keine L¨osung mehr.
+Betrachten wir nur die Gleichung x − y = 1, haben wir unendlich viele
+L¨osungen. Die L¨osungsmenge k¨onnen wir beschreiben als {(x, y) ∈ R2 |
+y = x − 1}.
+
+• Die L¨osungsmenge des Gleichungssystems
+x2 − y − 1 = 0
+x − y − 1 = 0
+
+ist {(0,−1), (1, 0)}
+
+4
+
+1
+
+-1
+
+-1
+
+1
+
+1.2 Lineare Gleichungssysteme
+Gleichung ax = b: hat genau denn eine eindeutige L¨osung, wenn a (cid:54)= 0 ist,
+a; falls a = 0 gilt: falls b (cid:54)= 0, existiert keine L¨osung,
+dann ist die L¨osung x = b
+falls b = 0, ist jedes x eine L¨osung.
+Gleichungssystem
+
+ax + by = e
+cx + dy = f (II)
+
+(I)
+
+adx + bdy = de
+bcx + bdy = bf
+
+a, b, c, d, e, f Konstanten;
+y eliminieren: d · (I) :
+b · (II) :
+Subtraktion: adx − bcx = de − bf
+x eliminieren: acx + bcy = ce
+acx + ady = af
+Subtraktion: (ad − bc)y = af − ce
+nehme an, ad − bc (cid:54)= 0, dann gilt, dass aus (∗)
+
+de − bf
+ad − bc
+
+,
+
+af − ce
+ad − bc
+
+y =
+
+x =
+
+(∗)
+
+(∗∗)
+
+folgt, aber anderseits folgt aus (∗∗) (∗):
+a(de − bf ) + b(af − ce)
+
+ax + by =
+
+ad − bc
+
+genauso cx + dy = f .
+Damit haben wir gezeigt:
+
+5
+
+ade − abf + abf − bce
+
+ad − bc
+
+=
+
+= e,
+
+Lemma 1.1 (Cramersche Regel) Ist ad − bd (cid:54)= 0, so ist
+
+(cid:18) de − bf
+
+ad − bc
+
+af − ce
+ad − bc
+
+,
+
+(cid:19)
+
+(x, y) =
+
+die einzig L¨osung von (∗).
+Deﬁnition 1.2 Die Zahl ad − bc heißt Determinante des linearen Glei-
+chungssystems (∗). Man schreibt daf¨ur
+
+(cid:12)(cid:12)(cid:12)(cid:12)a b
+
+c d
+
+(cid:12)(cid:12)(cid:12)(cid:12) = det
+
+(cid:18)a b
+
+(cid:19)
+
+= ad − bc.
+
+c d
+
+Ist ad − bc = 0, so kann es unendlich viele oder gar keine L¨osungen geben.
+
+Beispiele:
+
+x + y = 1
+2x + 2y = 0
+
+hat keine L¨osung.
+
+x + 2y = 4
+2x + 4y = 8
+Der allgemeine Typ eines linearen Gleichungssystems ist
+
+hat unendlich viele L¨osungen.
+
+ a11xn + . . . + a1nxn = 0
+
+...
+am1x1 + . . . + amnxn = 0
+
+...
+
+...
+
+6
+
+
+
+a11xn + a12x2 + . . . + a1nxn = b1
+a21xn + a22x2 + . . . + a2nxn = b2
+...
+am1x1 + am2x2 + . . . + amnxn = bn
+
+...
+
+...
+
+...
+
+(1)
+
+Dabei sind m, n nat¨urliche Zahlen (m, n ∈ N),
+m = Anzahl der Gleichungen
+n = Anzahl der Unbekannten
+x1, . . . , xn: Unbekannte
+Die m · n Zahlen aij, i = 1, . . . , m, j = 1, . . . , n, heißen die Koeﬃzienten
+und die m Zahlen bi die konstanten Terme des Gleichungssystems. Das
+Gleichungssystem heißt homogen, falls bi = 0 f¨ur i = 1, . . . , m ist, sonst
+heißt es inhomogen.
+Das lineare Gleichungssystem
+
+heißt das zu (1) geh¨orige homogene lineare Gleichungssystem.
+Die Koeﬃzienten aij ordnen wir wie folgt in einem Zahlenschema an:
+
+ a11
+
+a12
+a22
+
+a21
+...
+am1 am2
+
+
+
+. . . a1n
+. . . a2n
+
+. . . amn
+
+dieses nennen wir eine m× n-Matrix. K¨urzer schreiben wir auch (aij)i=1,...,m
+oder (aij) f¨ur diese Matrix.
+Wir k¨onnen der Matrix einen Namen geben, etwa A = (aij).
+F¨ur i ∈ {1, . . . , m} heißt (ai1, . . . , ain) die i-te Zeile von A,
+
+j=1,...,n
+
+f¨ur j ∈ {1, . . . , n} heißt
+
+Daf¨ur schreiben wir auch (aij, . . . , amj)T . Sei b = (b1, . . . , bm)T , dann heißt
+die m × (n + 1)-Matrix
+
+ a1j
+
+...
+amj
+
+ die j-te Spalte von A.
+ a11
+
+. . . a1n
+...
+. . . amn
+
+...
+am1
+
+b1
+...
+bm
+
+
+
+(A, b) = (aij, bi) =
+
+die erweiterte Matrix des linearen Gleichungssystems (1).
+Ein n-Tupel x0 = (x0
+chungssystems (1) falls
+
+1, . . . , x0
+
+n) reeller Zahlen heißt L¨osung des lineare Glei-
+
+a11x0
+...
+am1x0
+
+1+ . . . a1nx0
+
+1+ . . . amnx0
+
+...
+
+n = b1
+...
+n = bm
+
+i heißt i-te Komponente der L¨osung von x0.
+
+gilt. x0
+Das Gleichungssystem (1) heißt
+
+a) l¨osbar, wenn es mindestens eine L¨osung besitzt,
+
+b) nicht l¨osbar, wenn es keine L¨osung besitzt und
+
+c) eindeutig l¨osbar, wenn es genau eine L¨osung besitzt.
+
+7
+
+11xn + . . . + a(cid:48)
+a(cid:48)
+...
+a(cid:48)
+k1x1 + . . . + a(cid:48)
+
+1nxn = b(cid:48)
+...
+...
+knxn = b(cid:48)
+
+k
+
+1
+
+(2)
+
+Sei
+
+ein weiteres lineares Gleichungssystem und (A(cid:48), b(cid:48)) die zugeh¨orige erweiterte
+Matrix.
+
+Deﬁnition 1.3 Die Gleichungssysteme (1) und (2) heißen ¨aquivalent (in
+Zeichen (1) ∼ (2) oder (A, b) ∼ (A(cid:48), b(cid:48))), fall sie dieselbe L¨osungsmenge be-
+sitzen, d.h. wenn gilt: Ist x0 eine L¨osung von (1), so ist x0 auch eine L¨osung
+von (2), und ist x0eine L¨osung von (2), so ist x0 auch eine L¨osung von (1).
+
+Umformungen von Gleichungssystem (1) von folgendem Typ werden ele-
+mentare Umformungen genannt:
+
+Typ I: Tij: Vertausche die i-te und j-te Gleichung.
+
+Typ II: Tij(c): Ersetze die i-te Gleichung durch (ai1 + caj1)x1 + . . . + (ain +
+
+cajn)xn = bi + cbj, i, j ∈ {1, . . . , m}, i (cid:54)= j, c reelle Zahl.
+
+Typ III: Ti(c): Ersetze i-te Geleichung durch cai1x1 + . . . + cainxn = cb,
+
+c (cid:54)= 0.
+
+Typ IV: Ti: Weglassen der i-ten Gleichung, falls aij = 0 f¨ur j = 1, . . . , n,
+
+bi = 0.
+
+Beispiel:
+
+x + y = 2
+x − y = 3
+
+T21(1)
+
+/ x + y = 2
+
+2x = 5
+
+Satz 1.4 Nehme an, ein Gleichungssystem geht aus einem gegebenen Glei-
+chungssytem durch elementare Umformungen hervor. Dann sind die beiden
+Gleichungssysteme ¨aquivalent.
+
+Beweis:
+
+• Umformungen vom Typ I, III und IV ¨andern die L¨osungsmenge nicht.
+• Gegeben sei eine L¨osung x0 von
+
+a11xn + . . . + a1nxn = bn
+...
+am1x1 + . . . + amnxn = bm
+
+...
+
+...
+
+,
+
+(3)
+
+8
+
+/
+dann gilt auch
+
+(ai1 + caj1)x0
+
+1 + . . . + (ain + cajn)x0
+
+n = bi + cbj,
+
+also ist x0 auch eine L¨osung des Gleichungssystems (4), welches man
+durch Anwenden von Tij(c) auf (3) erh¨alt.
+Anderseits geht (3) aus (4) durch Anwenden von Tij(−c) hervor.
+Nach der ersten Argumentation ist dann eine L¨osung von (4) auch eine
+L¨osung von (3).
+
+(cid:3)
+
+Deﬁnition 1.5 Ein lineares Gleichungssystem
+
+a11xn + . . . + a1nxn = bn
+...
+am1x1 + . . . + amnxn = bm
+
+...
+
+...
+
+hat Stufenform, falls es eine nat¨urliche Zahl r mit 0 ≤ r ≤ m und Zahlen
+1 ≤ j1 < j2 < . . . < jr ≤ n gibt, so dass gilt:
+
+(cid:26) 1 ≤ i ≤ r und j < ji oder
+
+aij = 0 falls
+
+i > r
+
+und aij1 (cid:54)= 0, . . . , arjr (cid:54)= 0.
+Die zugeh¨orige erweiterte Matrix sieht also so aus:
+
+
+
+. . .
+. . .
+...
+
+. . . a1n
+. . . a2n
+...
+. . . 0 arjr . . . arn
+
+0 . . . 0 a1j1 . . .
+. . .
+0 . . . 0 . . . 0 a2j2
+...
+0 . . . . . .
+0
+...
+0
+
+. . .
+
+bn
+b2
+...
+br
+0 br+1
+...
+...
+0
+bm
+
+
+
+(Zeilenstufenform)
+
+Satz 1.6 Jedes lineare Gleichungssystem ist zu einem linearen Gleichungs-
+system in Stufenform ¨aquivalent.
+
+9
+
+Beweis: Gegeben sei das lineare Gleichungssystem
+
+a11xn + . . . + a1nxn = bn
+...
+am1x1 + . . . + amnxn = bm.
+
+...
+
+...
+
+Falls alle aij gleich 0 sind, sind wir fertig (es liegt eine Stufenform vor). Sei
+also mindestens ein aij ungleich 0. Sei j1 der kleinste Index j ∈ {1, . . . , n},
+so dass die j-te Spalte der Matrix (aij) nicht nur aus Nullen besteht.
+Wende nun eine elementare Umformung vom Typ I an, um zu erreichen,
+das aij1 (cid:54)= 0 ist. Wende nun f¨ur i = 2, . . . , m die Umformung Ti,1
+an. Das entstehende Gleichungssystem hat ji-te Spalte (aij1, 0, . . . , 0)T . Nun
+behandelt man das Gleichungssystem, welches aus der zweiten bis m-ten
+Gleichung besteht, wie im ersten Schritt.
+Nach sp¨atestens m Schritte erh¨alt man die Stufenform.
+Der angegebene Algorithmus heißt Gaußsches Eliminationsverfahren.
+Man kann ihn auch auf die erweiterte Matrix (A, b) anwenden.
+
+(cid:16)− aij1
+
+(cid:17)
+
+(cid:3)
+
+a1j1
+
+Beispiele 1.7 Betrachte
+
+x1 + x2 + x3 + x4 = 1
+2x1 + x2 − 2x3 + 2x4 = 2
+4x1 − 3x2 + 2x3
+= 30,
+
+ 1
+
+1
+1 1
+1 −2 2
+2
+4 −3
+
+1
+2
+2 0 30
+
+
+
+erweitere Matrix:
+
+Gaußscher Algorithmus:
+
+T21(−2)
+
+T31(−4)
+
+T32(−7)
+
+(1. Schritt)
+
+ 1
+ 1
+ 1
+
+
+
+
+
+1 1
+1
+0 −1 −4 0
+4 −3
+
+1
+0
+2 0 30
+
+1
+
+1
+1
+0 −1 −4
+0
+4 −7 −2 −4 26
+
+1
+0
+
+1
+
+1
+1
+0 −1 −4
+0
+26 −5 26
+0
+
+1
+0
+
+0
+
+10
+
+/
+/
+/
+/
+/
+/
+(2. Schritt); Zeilenstufenform liegt vor!
+
+Hat ein Gleichungssystem Stufenform wie in Deﬁnition 1.5, so heißen die
+Unbekannten xj1, . . . , xjr Hauptvariable und die Unbekannten xj mit j /∈
+{j1, . . . , jr} freie Variable.
+Ein Gleichungssystem in Stufenform ist leicht l¨osbar: Sei Stufenform wie
+in Deﬁnition 1.5 gegeben. Dann ist das Gleichungssystem h¨ochstens dann
+l¨osbar, wenn bn+1 = . . . = bm = 0 gilt. Ist dies der Fall, kann man f¨ur die
+freien Variablen irgendwelche Werte x0
+j vorgeben. Aus der r-ten Gleichung
+bekommt man dann
+
+(cid:0)br − arjr+1x0
+
+xjr = x0
+
+jr :=
+
+1
+arjr
+
+(cid:1) ,
+
+jr+1 − . . . − arnx0
+
+n
+
+aus der (r − 1)-ten Gleichung ergibt sich die Hauptvariable xjr−1, usw. bis zu
+xj1.
+Wir haben also gezeigt:
+
+Satz 1.8 Ein lineares Gleichungssystem (1) sowie eine mittels des Gauß-
+schen Elimintionsverfahren gewonnene Stufenform hat diselben L¨osungen.
+Hat diese die Form wie in Deﬁnition 1.5, so ist das Gleichungssystem genau
+dann l¨osbar, wenn bn+1 = . . . = bm = 0 gilt. Dann gilt: Zu jeder beliebi-
+gen Wahl αj, j /∈ {j1, . . . , jr} von Werten f¨ur die freien Variablen gibt es
+genau eine L¨osung x0 = (x0
+j = αj f¨ur
+j /∈ {j1, . . . , jr}.
+Insbesondere ist das Gleichungssystem genau dann eindeutig l¨osbar, wenn
+r = n und bn+1 = . . . = bm = 0 in der Stufenform gilt (dann muss also auch
+m ≥ n gelten).
+
+n) des Gleichungssystems mit x0
+
+1, . . . , x0
+
+Bemerkung:
+
+• Durch Umformungen vom Typ III kann man erreichen, dass die Koef-
+
+ﬁzienten von den Hauptvariablen in einer Stufenform gleich 1 sind.
+
+• Außerdem kann man xj2, xj3, . . . in der ersten Gleichung eliminieren,
+
+xj3, . . . in der zweiten bis xjr aus der (r − 1)-ten.
+
+• Man kann Gleichungen 0 = 0 weglassen.
+
+Die so erhaltenen Form heißt reduzierte Zeilenstufenform (besteht aus r
+Gleichungen, falls das Gleichungssystem l¨osbar ist).
+Hat man ein l¨osbares Gleichungssystem mit n Gleichungen in n Unbekannten,
+kann man aus der reduzierten Stufenform die L¨osung direkt ablesen.
+
+11
+
+Die reduzierte Zeilenstufenform in Beispiel 1.7 bekommt man so:
+Tpy III:
+
+Tpy II:
+
+0 1 4
+0 0 1 − 2
+
+1 1
+
+0 0
+
+13 1
+
+ 1 1 1
+ 1 0 −3
+ 1 0 0
+
+0 1
+
+0 0
+
+
+
+
+
+1 1
+
+0 0
+
+13 1
+
+4
+1 − 2
+
+7
+13
+
+8
+
+13 −4
+
+4
+
+1
+
+0 1 0
+0 0 1 − 2
+
+13
+
+2 Mengen und Abbildungen
+
+Wir haben bereits Mengen benutzt, genauer Mengen von Zahlen, wie N (die
+Menge der nat¨urlichen Zahlen) oder R (die Menge der reellen Zahlen).
+In unserem Vorgehen deﬁnieren wir nicht, was eine Menge ist, sondern cha-
+rakterisieren Mengen durch ihre Eigenschaften untereinander und durch die
+Operationen, die man auf diese anwenden kann.
+Georg Cantor (1845-1918) hat den Begriﬀ der Menge wie folgt beschrieben:
+Unter einer Menge verstehen wir
+eine Zusammenfassung von bestimmten
+”
+wohl unterschiedenen Objekten unserer Anschauung oder unseres Denkens
+(welche die Elemente der Menge genannt werden) zu einem Ganzen“.
+Sei M Menge, wir schreiben
+
+x ∈ M : x ist Element von M
+x /∈ M : x ist nicht Element von M.
+
+Mengen sind durch ihre Elemente bestimmt, d.h. es gilt:
+Seien M und N zwei Mengen. Dann gilt: Falls f¨ur alle x gilt x ∈ M ⇐⇒
+x ∈ N , dann ist M = N .
+Hierbei ist ⇐⇒ ein logisches Symbol, es steht f¨ur
+
+genau dann wenn“.
+”
+
+12
+
+Beispiele 2.1
+
+• ist x (cid:54)= 5 und x (cid:54)= 13 so ist x /∈ {5, 13}.
+
+• es ist {4, 6, 8, 10, 12, 14} = {x ∈ N | 3 ≤ x ≤ 15 und x gerade},
+• es ist {15, 6, 6, 7, 10} = {6, 10, 7, 15}
+
+Man kann gewisse Operationen auf Mengen anwenden und erh¨alt wieder
+Mengen: Sei ϕ eine Eigenschaft von Mengen und M eine Menge, dann ist
+
+{x ∈ M | ϕ(x)} wieder eine Menge,
+
+sie besteht genau aus denjenigen Elementen aus M , auf die ϕ zutriﬀt.
+Z.B. {x ∈ N | x ist durch 3 , aber nicht durch 5 teilbar}.
+Im Folgenden schreiben wir : ⇐⇒ f¨ur
+
+ist deﬁnitionsgem¨aß ¨aquivalent zu“:
+”
+
+Deﬁnition 2.2 A, B Mengen,
+
+• A ⊂ B : ⇐⇒ (x ∈ A =⇒ x ∈ B)
+• A ⊃ B : ⇐⇒ (x ∈ B =⇒ x ∈ A)
+• A (cid:36) B : ⇐⇒ (A ⊂ B und A (cid:54)= B)
+• A ∩ B := {x | x ∈ A und x ∈ B}
+• A ∪ B := {x | x ∈ A oder x ∈ B}
+• A\B := {x | x ∈ A und x /∈ B}
+• ∅ := {x | x (cid:54)= x} leere Menge.
+
+weitere logische Symbole :
+
+• =⇒ : es folgt, impliziert
+• ∀x: f¨ur alle x; z.B. ∀x : x /∈ ∅.
+• ∃ x: es gibt x; z.B. ∀ Mengen M : M (cid:54)= ∅ ⇐⇒ ∃ x : x ∈ M .
+
+Man kann auch Mengen von Teilmengen bilden, z.B. die Menge aller Teil-
+mengen einer gegebenen Menge:
+M Menge, P(M ) := {x | x ⊂ M} ist auch eine Menge,
+z.B. P({1, 2}) = {∅,{1},{2},{1, 2}}.
+
+13
+
+Deﬁnition 2.3 F¨ur x, y bezeichne (x, y) das geordnete Paar von x und y.
+Es hat die Eigenschaft, dass (x1, y1) = (x2, y2) genau dann gilt, wenn x1 = x2
+und y1 = y2.
+
+Bemerkung: Innerhalb der Mengenlehre kann man das geordnete Paar (x, y)
+als {{x},{x, y}} deﬁnieren, dies hat die gew¨unschte Eigenschaft. Z.B. ist
+(0, 0) (cid:54)= (0, 1), (1, 0) (cid:54)= (0, 1).
+Deﬁnition 2.4 X, Y Mengen, X × Y := {(x, y) | x ∈ X, y ∈ Y } heißt das
+kartesische Produkt von X und Y . Z.B. ∅ × X = ∅.
+
+Deﬁnition 2.5 X, Y Mengen, eine Relation zwischen X und Y ist eine
+Teilmenge R ⊂ X × Y .
+F¨ur (x, y) ∈ R schreibt man dann auch xRy.
+Beispiel: X := {0, . . . , n}, n ∈ N, dann ist <:= {(x1, x2) ∈ X×X | x1 < x2}
+eine Relation zwischen X und X.
+
+Deﬁnition 2.6 Eine Abbildung (oder Funktion) f von einer Menge A in
+eine Menge B ist eine Relation f ⊂ A × B, so dass gilt: f¨ur jedes z ∈ A ∃
+genau ein y ∈ B mit (x, y) ∈ f .
+F¨ur eine Abbildung f von A und B schreiben wir auch f : A → B. A heißt
+der Deﬁnitions-, B der Zielbereich von f .
+Wir schreiben y = f (x) f¨ur xf y, und auch x (cid:55)→ f (x).
+
+Beispiele 2.7
+
+• A, B Mengen, y ∈ B, so ist A × {y} ⊂ A × B eine
+
+Abbildung von A nach B, die konstante Abbildung mit Wert y.
+
+• falls B aus mehr als einem Element besteht, ist A× B keine Abbildung
+
+von A und B.
+
+• falls A (cid:54)= ∅, (cid:64) Abbildung von A nach ∅.
+
+Eine Abbildung kann man auch durch ein Mengendiagramm veranschauli-
+chen:
+
+14
+
+Deﬁnition 2.8 Sei f : A → B Abbildung.
+
+• f heißt injektiv (in Zeichen f : A (cid:26) B), falls ∀x, y ∈ A gilt: f (x) =
+
+f (y) =⇒ x = y;
+
+• f heißt surjektiv (in Zeichen f : A (cid:16) B), falls ∀y ∈ B ∃x ∈ A mit
+
+f (x) = y;
+
+• f heißt bijektiv (in Zeichen f : A
+
+∼→ B), falls f injektiv und surjektiv
+
+ist.
+
+Beispiele 2.9
+
+• f : R → R, x (cid:55)→ x2 ist weder injektiv noch surjektiv.
+
+• f : R → R≥0, x (cid:55)→ |x|, ist surjektiv, aber nicht injektiv.
+• f : N → {n ∈ N | n gerade}, n (cid:55)→ 2n, ist bijektiv.
+
+Sei f : A → B Abbildung. F¨ur X ⊂ A sei f (X) := {y ∈ B | ∃x ∈
+X mit f (x) = y} (Bild), f¨ur Y ⊂ B sei f−1(Y ) := {x ∈ A | f (x) ∈ Y }
+(Urbild). f (A) ⊂ B heißt Wertebereich von f .
+F¨ur A, B Mengen bezeichnet BA die Menge aller Abbildungen von A nach
+B.
+
+Beispiele 2.10 X Menge, deﬁniere induktiv X 1 := X,
+
+X n+1; = X × X n,
+
+also z.B. X 4 = X × (X × (X × X)). Dann ist X n in nat¨urlicher Bijektion zu
+X{1,...,n}.
+
+15
+
+Deﬁnition 2.11 Seien f : A → B und g : B → C Abbildungen. Dann ist
+die Komposition g◦ f : A → C deﬁniert durch x (cid:55)→ g(f (x)), also (g◦ f )(x) =
+g(f (x)).
+Komposition von Abbildungen deﬁniert also eine Abbildung
+
+Beispiele 2.12
+
+(f, g)
+
+BA × C B → C A
+
+(cid:55)→ g ◦ f.
+
+f : R → R, x (cid:55)→ xn
+g : R → R, x (cid:55)→ xm,
+dann ist g ◦ f : R → R, x (cid:55)→ xmn.
+
+Die Abbildung idA : A → A, x (cid:55)→ x, heißt die Identit¨at von A.
+Falls f : A → B Abbildung und A(cid:48) ⊂ A, heißt f|A(cid:48) : A(cid:48) → B, x (cid:55)→ f (x), die
+Einschr¨ankung von f auf A(cid:48).
+Deﬁnition 2.13 Sei f : A → B bijektiv. Dann heißt die Abbildung f−1 :
+B → A, die jedem y ∈ B das eindeutige x ∈ A mit f (x) = y zuordnet, die
+Umkehrabbildung von f .
+Bemerkung: f−1 ist also das Bild von f ⊂ A × B unter der Abbildung
+A × B → B × A, (x, y) (cid:55)→ (y, x).
+
+Satz 2.14 Komposition aus Abbildungen ist assoziativ, d.h. sind
+
+f : A → B, g : B → C und h : C → D
+
+Abbildungen, so gilt h ◦ (g ◦ f ) = (h ◦ g) ◦ f . Außerdem ist idB ◦f = f und
+f ◦ idA = f .
+Beweis: F¨ur x ∈ A gilt
+
+(h ◦ (g ◦ f ))(x) = h((g ◦ f )(x))
+= h(g(f (x)))
+= (h ◦ g)(f (x))
+= ((h ◦ g) ◦ f )(x).
+
+Die zweiten Aussagen sind klar.
+Ebenso einfach sieht man:
+Satz 2.15 f : A → B Abbildung. f ist genau dann bijektiv, wenn es eine
+Abbildung g : B → A gibt mit g ◦ f = idA und f ◦ g = idB. In diesem Fall
+ist g = f−1.
+
+(cid:3)
+
+16
+
+Beispiele 2.16 Die Abbildung
+
+f : R≥0 → R≥0, x (cid:55)→ x2,
+
+ist bijektiv, die Umkehrabbildung ist
+
+f−1 : R≥0 → R≥0, x (cid:55)→ √
+
+x.
+
+Deﬁnition 2.17 Sei X eine Menge und R eine Relation von X nach X (d.h.
+R ⊂ X × X). R heißt
+
+• reﬂexiv, falls ∀x ∈ X : xRx,
+• symmetrisch, falls ∀x, y ∈ X : xRy ⇒ yRx,
+• transitiv, falls ∀x, y, z ∈ X; (xRy und yRz) ⇒ xRz.
+
+Falls R reﬂexiv, symmetrisch und transitiv ist, heißt R ¨Aquivalenzrelation.
+Ist R ¨Aquivalenzrelation auf X, x ∈ X, so heißt [x]R := {y ∈ X | xRy} die
+¨Aquivalenzklasse von x bzgl. R.
+Lemma 2.18 Sei R ¨Aquivalenzrelation auf X, x, x1, x2 ∈ X, dann gilt:
+(1) x ∈ [x]R,
+(2) [x1]R = [x2]R ⇐⇒ x1Rx2
+(3) [x1]R (cid:54)= [x2]R ⇐⇒ [x1]R ∩ [x2]R = ∅.
+
+⇒“: wegen [x1]R = [x2]R ist x2 ∈ [x1]R, damit x1Rx2.
+”
+
+Beweis: (1) gilt, da R reﬂexiv
+(2)
+⇐“: Sei x1Rx2, y ∈ [x2]R, also x2Ry, damit (R transitiv) x1Ry, also y ∈
+[x1]R, also [x2]R ⊂ [x1]R
+”
+R symmetrisch ⇒ x2Rx1, also folgt wie gerade [x1]R ⊂ [x2]R, also [x1]R =
+[x2]R.
+(3) da [x1]R (cid:54)= ∅, [x2]R (cid:54)= ∅,
+folgt
+⇒“: y ∈ [x1]R ∩ [x2]R, dann x1Ry, x2Ry, also nach (2) [x1] = [y]r = [x2]R.
+(cid:3)
+”
+Im Teil (3) habe wir eine Implikation A ⇒ B gezeigt, indem wir ¬B ⇒ ¬A
+gezeigt haben.
+Hier steht ¬A f¨ur
+
+⇐“.
+”
+
+nicht A“, also die Negation der Aussage A.
+”
+
+17
+
+Allgemein geht ein Beweis durch Widerspruch wie folgt: man will A ⇒ B
+beweisen, dazu nimmt man A und ¬B an und leitet einen Widerspruch ab.
+Ein y ∈ [x]R nennt man einen Repr¨asentanten der ¨Aquivalenzklasse [x]R.
+Es sei X/R := {[x]R | x ∈ X} ⊂ P(X) die Menge der ¨Aquivalenzklassen.
+Aus Lemma 2.18 folgt, dass P = X/R eine Partition von X ist, d.h.
+
+(i) t ∈ P ⇒ t (cid:54)= ∅,
+(ii) t, s ∈ P ⇒ t = s oder t ∩ s = ∅,
+
+(iii) (cid:83)
+
+t∈P
+
+t = X
+
+Umgekehrt deﬁniert jede Partition P von X eine ¨Aquivalenzrelation R auf
+X, indem man xRy : ⇐⇒ ∃t ∈ P ; x, y ∈ t setzt.
+Ein Repr¨asentantensystem von R ist eine Teilmenge von X, die genau
+einen Repr¨asentanten jeder ¨Aquivalenzklasse enth¨alt.
+Beispiel: Deﬁniere auf X = Z die Relation R durch xRy : ⇐⇒ 5 | x − y,
+dann ist {0, 1, 2, 3, 4} ein Repr¨asentantensystem von R.
+Sei I Menge und sei f¨ur jedes i ∈ I eine Menge Ai vorgegeben.
+Dies nennt man auch eine durch I indizierte Familie von Mengen und schreibt
+(Ai)i∈I.
+Wir setzen
+
+Ai := {x | ∃i ∈ I : x ∈ Ai},
+
+Ai := {x | ∀i ∈ I : x ∈ Ai}( falls I (cid:54)= ∅),
+
+Ai | ∀i ∈ I : f (i) ∈ Ai} (kartesisches Produkt),
+
+(cid:91)
+Ai := {f : I →(cid:91)
+
+(cid:92)
+
+i∈I
+
+i∈I
+
+i∈I
+
+(cid:89)
+
+i∈I
+
+dies verallgemeinert das Produkt X × Y .
+
+3 Gruppen
+
+In der Mathematik, insbesondere der Algebra, ordnet man h¨auﬁg zwei gege-
+benen Objekten einer gewissen Art ein drittes Objekt zu, d.h. man verkn¨upft
+die beiden Objekte.
+
+Deﬁnition 3.1 Eine Verkn¨upfung auf einer Menge X ist eine Abbildung
+
+ϕ : X × X → X.
+
+18
+
+Beispiele 3.2 + : N × N → N
+
+(x, y)
+
+(cid:55)→ x + y
+
+· : R × R → R
+
+(x, y)
+
+(cid:55)→ x · y = xy
+
+Anstelle von ϕ(x, y) schreiben wir im Folgenden h¨auﬁg xy.
+Deﬁnition 3.3 Sei X eine Menge mit einer Verkn¨upfung (x, y) (cid:55)→ xy.
+
+• Die Verkn¨upfung heißt assoziativ, wenn ∀ x, y, z ∈ X gilt x(yz) =
+
+(xy)z.
+
+• Die Verkn¨upfung heißt kommutativ, wenn ∀ x, y ∈ X gilt xy = yx.
+Beispiele 3.4 Die Rechenoperationen +,· auf den gew¨ohnlichen Zahlberei-
+chen sind alle assoziativ und kommutativ.
+
+• Sei M Menge und
+
+X := {f : M → M} = M M
+
+die Menge aller Abbildungen von M nach M . Dann ist die Verkn¨upfung
+
+◦ : X × X → X, (f, g) (cid:55)→ f ◦ g
+
+assoziativ, aber i.a. nicht kommutativ (Warum?).
+
+Beobachtung 3.5 Sei X eine Menge mit einer Verkn¨upfung (x, y) (cid:55)→ xy.
+
+(i) Ist diese assoziativ, so ist das Produkt
+
+x1 ··· xn, xi ∈ X, n ∈ N, n ≥ 1,
+
+unabh¨angig von einer Klammerung.
+
+(ii) Ist diese assoziativ und kommutativ, so ist das Produkt
+
+x1 ··· xn, xi ∈ X, n ∈ N, n ≥ 1,
+
+unabh¨angig von einer Klammerung und der Reihenfolge der Faktoren.
+In R gilt x + 0 = 0 + x = x und x · 1 = 1 · x = x ∀ x ∈ R, d.h. 0 und 1
+verhalten sich
+
+neutral“ bzgl. + und ·.
+”
+
+19
+
+Deﬁnition 3.6 Sei X eine Menge mit einer Verkn¨upfung (x, y) (cid:55)→ xy. Ein
+Element e ∈ X heißt neutral, wenn xe = ex = x gilt ∀ x ∈ X.
+Neutrale Elemente sind eindeutig bestimmt: Sind e, e(cid:48) neutral, so gilt e =
+e(cid:48)e = e(cid:48).
+
+Deﬁnition 3.7 Eine Gruppe ist eine Menge G mit einer Verkn¨upfung
+(x, y) (cid:55)→ xy, f¨ur die gilt:
+
+(i) Die Verkn¨upfung ist assoziativ.
+
+(ii) Die Verkn¨upfung besitzt ein neutrales Element e.
+(iii) Zu jedem x ∈ G ∃ ein x(cid:48) ∈ G mit xx(cid:48) = x(cid:48)x = e.
+
+Wenn die Verkn¨upfung kommutativ ist, heißt G abelsch.
+F¨ur jedes x ∈ G ist das Element x(cid:48) in (iii) eindeutig bestimmt: Sind x(cid:48), x(cid:48)(cid:48) ∈ G
+mit xx(cid:48) = x(cid:48)x = e und xx(cid:48)(cid:48) = x(cid:48)(cid:48)x = e, so folgt x(cid:48) = x(cid:48)(xx(cid:48)(cid:48)) = (x(cid:48)x)x(cid:48)(cid:48) = x(cid:48)(cid:48).
+Dieses Element nennen wir das Inverse von x und bezeichnen es mit x−1
+(wird die Verkn¨upfung mit + notiert, so bezeichnen wir es mit −x).
+
+Bemerkung 3.8 F¨ur eine Gruppe gen¨ugt es, ein linksneutrales Element und
+Linksinverse zu fordern (Bew. ¨uberlassen wir dem Leser).
+
+Lemma 3.9 Sei G Gruppe.
+
+(i) ∀ x ∈ G gilt (x−1)−1 = x, ∀ x, y ∈ G gilt (xy)−1 = y−1x−1.
+
+(ii) Man kann
+(iii) Seien a, b ∈ G. Die Gleichung ax = b hat die eindeutige L¨osung x =
+
+k¨urzen“: gilt xy = x(cid:48)y oder yx = yx(cid:48), so folgt x = x(cid:48).
+”
+
+a−1b in G, entsprechend hat xa = b die eindeutige L¨osung x = ba−1.
+
+Beweis: (i) 1. folgt aus Deﬁnition 3.7 (iii).
+2. Es gilt (xy)(y−1x−1) = x(yy−1)x−1 = xx−1 = e, entsprechend ist
+(y−1x−1)(xy) = e, also (xy)−1 = y−1x−1.
+(ii) Multiplizieren von xy = x(cid:48)y mit y−1 von rechts liefert x = x(cid:48), die 2.
+Behauptung folgt entsprechend.
+(iii) ax = b ⇒ x = a−1b (Multiplikation mit a−1 von links),
+x = a−1b ⇒ ax = b (Multiplikation mit a von links),
+also ax = b ⇐⇒ x = a−1b. 2. Behauptung entsprechend.
+Manchmal schreibt man (G,◦) f¨ur eine Gruppe G mit Verkn¨upfung ◦.
+
+(cid:3)
+
+20
+
+Beispiele 3.10
+
+• (Z, +), (Q, +), (R, +) sind abelsche Gruppen.
+
+• (N, +), (Q,·), (R,·) sind keine Gruppen.
+• (Q\{0},·), (R\{0},·) sind abelsche Gruppen.
+
+3.1 Permutationsgruppen
+Deﬁnition und Satz 3.11 Sei X eine Menge. Dann ist S(X) = {f : X →
+X | f bijektiv} zusammen mit der Komposition ◦ als Verkn¨upfung eine Grup-
+pe.
+Das neutrale Element ist die Identit¨at idX, das Inverse zu einer bijektiven
+Abbildung f : X → X ist die Umkehrabbildung f−1. S(X) heißt die sym-
+metrische Gruppe oder Permutationsgruppe von X.
+
+Beweis: Klar.
+Eine bijektive Abbildung f ∈ S(X) heißt auch Permutation.
+Sei Sn := S({1, 2, . . . , n}).
+Man kann eine Permutation π ∈ Sn durch ihre Tafel
+
+(cid:3)
+
+(cid:18) 1
+
+2
+
+n
+
+. . .
+. . . π(n)
+
+π(1) π(2)
+
+Beispiele 3.12 n = 3,
+
+(cid:18)1 2 3
+(cid:19)
+
+angeben.
+
+(cid:19)
+(cid:18)1 2 3
+(cid:19)
+
+, π2 =
+
+2 1 3
+
+π1 =
+(π2 ◦ π1)(3) = π2(3) = 2, also ist π1 ◦ π2 (cid:54)= π2 ◦ π1 und S3 nicht abelsch.
+Man sieht leicht: Sn abelsch ⇐⇒ n ≤ 2.
+
+1 3 2
+
+, dann ist (π1 ◦ π2)(3) = π1(2) = 1 und
+
+Wiederholung: Eine Menge X heißt endlich, wenn es eine nat¨urliche Zahl
+∼→ {1, . . . , n} gibt. Die Zahl n ist dann eindeu-
+n ∈ N und eine Bijektion X
+tig bestimmt und heißt die Kardinalit¨at oder M¨achtigkeit von X. Wir
+bezeichnen sie mit |X| oder (cid:93)X.
+Im anderen Fall heißt X unendlich.
+Satz 3.13 |Sn| = n! =
+
+n(cid:81)
+
+i.
+
+i=1
+
+Beweis: Induktion nach n: n = 1 ist klar; die Behauptung gelte f¨ur n, dann
+folgt, dass es f¨ur jedes i ∈ {1, . . . , n + 1} genau n! Permutationen π von
+{1, . . . , n + 1} gibt mit π(1) = i, also gibt es insgesamt (n + 1)n! = (n + 1)!
+Permutationen von {1, . . . , n + 1}.
+(cid:3)
+
+21
+
+Man kann in einer Gruppe G Potenzen einf¨uhren: wir deﬁnieren rekursiv f¨ur
+n ∈ N
+
+(cid:26) 1,
+
+xn :=
+
+n = 0
+xn−1x n > 0,
+
+f¨ur n ∈ Z \ N sei xn := (x−1)
+Lemma 3.14 Seien x, y ∈ G, m, n ∈ Z.
+
+−n.
+
+(i) xmxn = xm+n,
+
+(ii) (xm)n = xmn,
+
+(iii) falls xy = yx, ist (xy)n = xnyn.
+Beweis: (i) Wir beweisen den Fall m, n ≥ 0: Induktion nach n: n = 0 ist
+klar,
+n → n + 1:
+xmxn+1 = xmxnx = xm+nx = xm+n+1.
+Wir ¨uberlassen den Rest dem Leser.
+Bei additiver Schreibweise schreiben nx statt xn.
+Sei G Gruppe, x ∈ G.
+Falls ein n ∈ N>0 existiert mit xn = e deﬁnieren wir ord(x) = min{n ∈ N>0 |
+xn = e}, andernfalls deﬁnieren wir ord(x) = ∞.
+Deﬁnition 3.15 Sei G Gruppe. Eine Teilmenge U ⊂ G heißt Untergruppe
+von G, wenn gilt:
+
+(cid:3)
+
+(i) Die Verkn¨upfung von G l¨asst sich auf U einschr¨anken, d.h. ∀ x, y ∈ U
+
+gilt xy ∈ U ,
+
+(ii) U ist mit dieser Einschr¨ankung als Verkn¨upfung selbst eine Gruppe.
+• (Z, +) ist Untergruppe von (Q, +), (Q, +) eine von
+
+Beispiele 3.16
+
+(R, +).
+
+• n ≥ 1, {π ∈ Sn | π(1) = 1} ⊂ Sn ist Untergruppe.
+
+Satz 3.17 (Untergruppenkriterium)
+Sei G Gruppe und U ⊆ G. Dann ist U eine Untergruppe genau dann, wenn
+gilt:
+
+(i) U (cid:54)= ∅,
+
+22
+
+(ii) ∀ x, y ∈ U ist xy−1 ∈ U .
+
+⇒“: U ist Gruppe, enth¨alt damit ein neutrales Element und ist
+”
+
+Beweis:
+damit (cid:54)= ∅, also (i).
+Sei e(cid:48) neutrales Element von U , dann gilt e(cid:48)e(cid:48) = e(cid:48).
+K¨urzen: e(cid:48) = e, also ist e(cid:48) auch das neutrale Element in G.
+Damit ist das Inverse in U auch dasjenige in G, also f¨ur x, y ∈ U gilt y−1 ∈ U ,
+damit xy−1 ∈ U , ⇒ (ii).
+⇐“: da U (cid:54)= ∅∃ x ∈ U , wegen (ii) ist xx−1 = e ∈ U .
+”
+Seien x, y ∈ U , dann ist ey−1 = y−1 ∈ U , also auch x(y−1)−1 = xy ∈ U .
+(cid:3)
+Daraus folgt, dass U Untergruppe ist.
+
+4 K¨orper
+
+Gruppen sind Objekte mit einer Verkn¨upfung, jetzt wollen wir Objekte mit
+zwei Verkn¨upfungen, h¨auﬁg mit + und · notiert, untersuchen.
+
+Deﬁnition 4.1 Ein Ring ist eine Menge R zusammen mit zwei Ver-
+kn¨upfungen
+
++ : R × R → R und · : R × R → R,
+
+so dass gilt:
+
+(i) (R, +) ist eine abelsche Gruppe,
+(ii) · ist assoziativ und besitzt ein neutrales Element,
+(iii) es gelten die Distributivgesetze, d.h. ∀x, y, z ∈ R gilt x · (y + z) =
+
+(x · y) + (x · z) und (y + z) · x = (y · x) + (z · x).
+
+Ein Ring heißt kommutativ, falls · kommutativ ist.
+In einem Ring schreiben wir f¨ur x · y auch xy; das neutrale Element bzgl.
++ bezeichnen wir mit 0, das bzgl. · mit 1. Das Inverse zu x ∈ R bzgl. +
+bezeichnen wir mit −x.
+Weitere Konstruktionen:
+(i) x − y := x + (−y)
+(ii) in einem Ausdruck mit + und · gilt: ·
+
+kommt vor“ +, z.B. ist x·y +z =
+”
+
+(x · y) + z = (xy) + z = xy + z.
+
+23
+
+Lemma 4.2 (R, +,·) Ring, dann gilt;
+
+(i) 0 · x = x · 0 = 0∀x ∈ R,
+(ii) (−1) · x = −x∀x ∈ R,
+
+(iii) falls 0 = 1, hat R genau ein Element (Nullring).
+Beweis: (i) Es gilt 0 · x = (0 + 0) · x = 0 · x + 0 · x, Subtraktion von 0 · x
+liefert 0 = 0 · x, entsprechend x · 0 = 0.
+(ii) Es gilt 0 = 0 · x = (1 − 1) · x = x + (−1) · x also −x = (−1) · x,
+(iii) ist 0 = 1, so gilt ∀x ∈ R: x = 1 · x = 0 · x = 0, ⇒ Beh.
+
+(cid:3)
+• (Z, +,·) ist ein kommutativer Ring, genauso (Q, +,·)
+
+Beispiele 4.3
+
+und (R, +,·).
+
+• ({n ∈ Z | n gerade}, +,·) ist kein Ring (hat kein neutrales Element
+
+bzgl. ·).
+
+• Die Menge der 2 × 2-Matrizen mit Eintr¨agen in R, M2(R), mit
+
+ist ein Ring, der nicht kommutativ ist. Das neutrale Element bzgl. · ist
+1 :=
+
+.
+
+Deﬁnition 4.4 Sei (R, +,·) ein Ring. Ein Element x ∈ R heißt inver-
+tierbar oder Einheit, falls ein x(cid:48) ∈ R existiert mit xx(cid:48) = x(cid:48)x = 1.
+R× := {x ∈ R | x invertierbar} ⊂ R heißt die Gruppe der Einheiten.
+Bemerkung 4.5 R× ist bzgl. · tats¨achlich eine Gruppe: −R× ist bzgl. ·
+abgeschlossen: x, y ∈ R×, x(cid:48), y(cid:48) wie in Deﬁnition, dann erf¨ullt f¨ur z := xy das
+Element z(cid:48) := y(cid:48)x(cid:48) die Deﬁnition, außerdem ist mit x ∈ R× auch das x(cid:48) aus
+Deﬁnition ∈ R×, somit sind alle Gruppenaxiome erf¨ullt.
+Das eindeutige x(cid:48) aus der Deﬁnition bezeichnen wir mit x−1.
+
+Beispiele 4.6
+
+• Z× = {±1}
+
+24
+
+(cid:19)
+(cid:18)a2
+
++
+
+(cid:18)a2
+(cid:19)
+
+b2
+c2 d2
+
+b2
+c2 d2
+
+:=
+
+(cid:19)
+(cid:18)a1 + a2
+(cid:19)
+(cid:18)a1a2 + b1c2 a1b2 + b1d2
+
+b1 + b2
+c1 + c2 d1 + d2
+
+:=
+
+c1a2 + d1c2
+
+c1b2 + d1d2
+
+(cid:19)
+
+und
+
+(cid:18)a1
+(cid:18)a1
+(cid:19)
+(cid:18)1 0
+
+b1
+c1 d1
+
+b1
+c1 d1
+
+(cid:19)
+
+·
+
+0 1
+
+• Q× = Q \ {0}, R× = R \ {0}.
+
+(sp¨ater: M2(R)× =
+
+c d
+
+(cid:26)(cid:18)a b
+
+(cid:19)
+
+(cid:27)
+
+| ad − bc (cid:54)= 0
+
+)
+
+Deﬁnition 4.7 Ein K¨orper ist ein kommutativer Ring (K, +,·) mit 0 (cid:54)= 1,
+so dass jedes Element x ∈ K\{0} invertierbar ist.
+
+Beispiele 4.8
+
+• Q, R sind K¨orper
+
+• Z ist kein K¨orper (z.B. ist 2 nicht invertierbar).
+• K := {0, 1}, mit
+
++ 0 1
+0 0 1
+1 1 0
+
+und
+
+· 0 1
+0 0 0
+1 0 1
+
+ist ein K¨orper;
+
+F¨ur x ∈ K, y ∈ K× sei x
+
+y := xy−1; wie man leicht sieht, gilt z.B.
+
+a
+b
+
++
+
+c
+d
+
+=
+
+ad + cb
+
+bd
+
+(man kann Br¨uche k¨urzen und mit Elementen (cid:54)= 0 erweitern)
+Durch Induktion sieht man, dass (nx)(my) = (nm)(xy) f¨ur x, y ∈ K, n, m ∈
+Z
+(dies gilt sogar in einem Ring).
+Deﬁnition 4.9 Sei K ein K¨orper. Wenn f¨ur alle n ∈ N>n, n · 1 (cid:54)= 0 gilt,
+sagen wir, K hat die Charakteristik 0, kurz char K = 0. Andernfalls setzen
+wir char K := min{n ∈ N>0 | n · 1 = 0} (Charakteristik).
+Satz 4.10 Sei K ein K¨orper mit char K (cid:54)= 0. Dann ist char K eine Primzahl.
+
+Beweis: Sei n = char K.
+Annahme: n ist keine Primzahl, also ∃ n1, n2 ∈ N mit n = n1n2, 1 < n1, n2 <
+n. Dann ist 0 = n1 = n1n21 = (n11)(n21), da aber n11, n21 (cid:54)= 0, muss auch
+(cid:3)
+
+(n11, n21 (cid:54)= 0 sein, dies ist ein Widerspruch(cid:32).
+
+Beispiele 4.11 Q und R haben Charakteristik 0, der zweielementige K¨orper
+hat die Charakteristik 2.
+
+25
+
+Deﬁnition 4.12 K K¨orper, eine Teilmenge von L ⊂ K ist ein Teilk¨orper,
+wenn sich + und · auf L einschr¨anken lassen und L mit diesen Verkn¨upfungen
+ein K¨orper ist. K heißt dann Erweiterungsk¨orper von L.
+Beispiele 4.13 Q ⊂ R ist ein Teilk¨orper, Z ⊂ Q nicht.
+
+5 Die komplexen Zahlen
+
+Die komplexen Zahlen bilden eine wichtige Erweiterung der reellen Zahlen.
+Wir f¨uhren auf C := R2 folgende Verkn¨upfungen ein:
+
+(x1, y1) + (x2, y2) := (x1 + x2, y1 + y2),
+
+(x1, y1)(x2, y2) := (x1x2 − y1y2, x1y2 + y1x2).
+
+Satz 5.1 Mit diesen Verkn¨upfungen ist C ein K¨orper, den wir den K¨orper
+der komplexen Zahlen nennen.
+
+Beweis: Assoziativit¨at und Kommutativit¨at f¨ur die Addition rechnet man
+komponentenweise nach, (0, 0) ist neutral bzgl. +, (−x,−y) ist invers zu
+(x, y) bzgl. +. Die Kommutativit¨at der Multiplikation sieht man direkt.
+Assoziativit¨at:
+
+((x1, y1)(x2, y2))(x3, y3)
+= (x1x2 − y1y2, x1y2 + y1x2)(x3, y3)
+= (x1x2x3 − y1y2x3 − x1y2y3 − y1x2y3, x1x2y3 − y1y2y3 + x1y2x3 + y1x2x3)
+= (x1, y1)(x2x3 − y2y3, x2y3 + y2x3)
+= (x1y2)((x2, y2)(x3, y3)).
+
+(1, 0) ist neutral bzgl. der Multiplikation:
+
+(1, 0)(x, y) = (1x − 0y, 1y + 0x) = (x, y).
+
+Seien x, y ∈ R mit x (cid:54)= 0 oder y (cid:54)= 0, dann ist x2 + y2 > 0 und
+ein wohldeﬁniertes Element aus C. Es gilt
+
+(cid:16) x
+
+x2+y2 ,
+
+(cid:17)
+
+−y
+x2+y2
+
+(cid:18) x
+
+(x, y)
+
+x2 + y2 ,
+
+(cid:19)
+
+−y
+
+x2 + y2
+
+(cid:18) x2 + y2
+
+x2 + y2 ,
+
+=
+
+(cid:19)
+
+−xy + yx
+x2 + y2
+
+= (1, 0),
+
+also ist (x, y) invertierbar.
+
+26
+
+Distrubutivgesetz:
+
+(x1, y1)((x2, y2) + (x3, y3))
+= (x1, y1)(x2 + x3, y2 + y3)
+= (x1x2 + x1x3 − y1y2 − y1y3, x1y2 + x1y3 + y1x2 + y1x3)
+= (x1, y1)(x2, y2) + (x1, y1)(x3, y3).
+
+(cid:3)
+Damit sind alle K¨orperaxiome erf¨ullt.
+Sei ϕ : R → C, a (cid:55)→ (a, 0). Dann gilt ϕ(a+b) = ϕ(a)+ϕ(b), ϕ(ab) = ϕ(a)ϕ(b),
+ϕ(0) = (0, 0), ϕ(1) = (1, 0). Wir betrachten nun R als Teilk¨orper von C
+verm¨oge ϕ, d.h. wir identiﬁzieren a mit ϕ(a) = (a, 0).
+Sei i := (0, 1) ∈ C, dann gilt i2 = (−1, 0) = −1 ∈ R.
+F¨ur (a, b) ∈ C hat man
+
+(a, b) = (a, 0)(1, 0) + (b, 0)(0, 1) = a + bi,
+
+und in dieser Weise schreibt man komplexe Zahlen, wenn man mit ihnen
+rechnet.
+F¨ur z = a + bi heißt a der Real- und b der Imagin¨arteil von z, a = Re z,
+b = Im z.
+F¨ur z = a + bi heißt z := a − bi die komplexe-konjugiert Zahl, die Abbil-
+dung C → C, z (cid:55)→ z heißt komplexe Konjugation.
+Es gilt zz = (a + bi)(a − bi) = a2 − (bi)2 = a2 + b2.
+|z| :=
+Es gilt:
+
+√
+zz heißt Betrag von z.
+
+• z + w = z + w
+• zw = z w
+• z−1 = z|z|2 , z (cid:54)= 0
+• Re z = 1
+2(z + z)
+• Im z = 1
+2i(z − z)
+• z ∈ R ⇐⇒ z = z
+• z = z
+
+(Nachrechnen)
+F¨ur den Betrag gilt: z, w ∈ C:
+
+27
+
+• |z| ∈ R≥0, |z| = 0 ⇐⇒ z = 0,
+• |zw| = |z||w|,
+• |z + w| ≤ |z| + |w| (Dreiecksungleichung)
+
+(cid:3)
+Beweis: Analysis.
+Veranschaulichung von komplexen Zahlen in der Gaußschen Zahlenebene:
+
+Im z
+
+z
+
+Re z
+
+Sei z ∈ C×,dann ist r := |z| > 0, und f¨ur u := z
+Zahlen z mit |z| = 1 liegen auf dem Einheitskreis
+
+r gilt |u| = 1
+
+r|z| = 1. Komplexe
+
+S1 = {x + iy | x2 + y2 = 1} ⊂ C.
+
+Um diese zu beschreiben, setzen wir folgende Eigenschaften von sin und cos
+voraus:
+
+(i) cos und sin sind periodisch mit Periode 2π.
+(ii) cos2 ϕ + sin2 ϕ = 1 ∀ϕ ∈ R
+(iii) zu jedem z ∈ C mit |z| = 1 ∃ genau ein ϕ ∈ R mit 0 ≤ ϕ < 2π, so dass
+
+Re z = cos ϕ, Im z = sin ϕ.
+
+(iv) Es gilt
+
+Daraus folgt:
+
+cos(α + β) = cos α cos β − sin α sin β
+sin(α + β) = cos α sin β + sin α cos β.
+
+• (cos α + i sin α)(cos β + i sin β) = cos(α + β) + i sin(α + β)
+• jedes z ∈ C× hat die Form z = r · (cos ϕ + i · sin ϕ) mit r ∈ R>0 und
+ϕ ∈ R, wobei ϕ bis auf Addition von Zahlen der Form 2kπ, k ∈ Z,
+eindeutig bestimmt ist. Das ϕ heißt ein Argument von z.
+
+28
+
+• z = r(cos α + i sin α), w = s(cos β + i sin β) =⇒ z· w = r· s(cos(α + β) +
+i sin(α + β)), d.h. die Betr¨age multiplizieren sich und die Argumente
+addieren sich.
+
+• weitere Folgerung:
+
+Die Gleichung xn = a, a (cid:54)= 0, hat genau n komplexe L¨osungen: ist
+a = r(cos ϕ + i sin ϕ), so sind die L¨osungen
+
+(cid:1) , i = 0, . . . , n − 1
+
+n + i sin ϕ
+
+n
+
+√
+x = ξi n
+ξ = cos 2π
+
+r(cid:0)cos ϕ
+
+n + i sin 2π
+n .
+
+Die ξi heißen n-te Einheitswurzeln.
+
+Allgemeiner gilt der Fundamentalsatz der Algeba, den wir hier formulie-
+ren, obwohl wir den Begriﬀ des Polynoms noch nicht pr¨azisiert haben.
+Satz 5.2 Sei p ∈ C[X], p (cid:54)= 0 ein Polynom n-ten Grades, dann existieren
+z1, . . . , zn ∈ C, u ∈ C×, mit p = u(X − zn) · . . . · (X − zn).
+
+6 Vektorr¨aume
+
+Die mathematischen Objekte, mit denen sich die
+lineare Algebra
+haupts¨achlich besch¨aftigt, sind die Vektorr¨aume. Genauso wie Gruppen, Rin-
+ge und K¨orper f¨uhren wir diese axiomatisch ein.
+
+Deﬁnition 6.1 Sei K ein K¨orper. Ein K-Vektorraum ist eine Menge V
+zusammen mit einer Verkn¨upfung
++ : V × V → V und einer Abbildung
+· : K × V → V , (a, v) (cid:55)→ a · v = av,
+genannt skalare Multiplikation, so dass folgendes gilt:
+
+(a) (V, +) ist eine abelsche Gruppe
+(b) ∀ a, b ∈ K, v, w ∈ V gilt
+
+(i) a(bv) = (ab)v,
+
+(ii) 1v = v,
+
+(iii) a(v + w) = av + aw,
+
+(iv) (a + b)v = av + bv.
+
+29
+
+Wie f¨ur einen K¨orper beweist man folgende Rechenregeln:
+
+• av = 0, a0 = 0,
+• (−a)v = a(−v) = −av
+• av = 0 ⇐⇒ a = 0 oder v = 0.
+
+Beispiele 6.2
+
+(a) V = K, skalare Multiplikation = Multiplikation von K,
+
+ist ein K-Vektorraum.
+
+(b) Ist M eine Menge, so ist K M , die Menge der Abbildungen von M nach
+K, mit (f + g)(m) = f (m) + g(m) und (a · f )(m) = a · f (m) ein K-
+Vektorraum, insbesondere ist K n := K{1,...,n} ein K-Vektorraum, z.B.
+f¨ur K = R der R1, R2, . . ., K = C : Cn . . .
+
+(c) ein Erweiterungsk¨orper L von K ist ein K-Vektorraum, die skalare
+Multiplikation ist die Einschr¨ankung von L × L → L auf K × L z.B.
+ist R ein Q-Vektorraum, oder C ein R-Vektorraum.
+Allemeiner ist jeder L-Vektorraum ein K-Vektorraum, man schr¨ankt
+die skalare Multiplikation L × V → V auf K × V ein.
+
+Deﬁnition 6.3 Sei V K-Vektorraum. Eine Teilmenge U ⊂ V heißt Unter-
+vektorraum, falls
+(a) U (cid:54)= ∅
+(b) ∀v, w ∈ U ist auch v + w ∈ U .
+(c) ∀v ∈ U , a ∈ K ist av ∈ U .
+
+Damit ist U eine eingeschr¨ankte Addition und Skalarmultiplikation, und mit
+diesen ist U ein Vektorraum:
+Sei v ∈ U , (wg. U (cid:54)= ∅), dann 0v = 0 ∈ U , außerdem ist mit v ∈ U auch
+−v = (−1)v ∈ U ⇒ (U, +) ist abelsche Gruppe.
+Alle anderen Rechenregeln sind erf¨ullt, da sie f¨ur V erf¨ullt sind.
+Satz 6.4 Sei V K-Vektorraum, I (cid:54)= ∅ Indexmenge und f¨ur jedes i ∈ I sei
+Ui ⊂ V ein Untervektorraum.
+
+Ui ⊂ V ein Untervektorraum. Dann ist auch(cid:84)
+Beweis: 0 ∈ Ui ∀i ⇒ 0 ∈ (cid:84)
+Seien u, w ∈ (cid:84)
+
+i∈I
+Ui ⇒ v, w ∈ Ui ∀i ∈ I,
+
+i∈I
+
+Ui ⇒ (cid:84)
+
+(cid:54)= ∅.
+
+i∈I
+
+i∈I
+
+30
+
+⇒ v + w ∈ Ui ∀i ∈ I ⇒ v + w ∈ (cid:84)
+v ∈ (cid:84)
+
+Ui f¨ur a ∈ K,
+(cid:3)
+Vorsicht: F¨ur Untervektorr¨aume U1, U2 ⊂ V ist U1 ∪ U2 i.A. kein Untervek-
+torraum.
+
+Ui, ¨ahnlich av ∈ (cid:84)
+
+i∈I
+
+Ui.
+
+i∈I
+
+i∈I
+
+Beispiele 6.5
+
+• {0} und V sind Untervektorr¨aume eines jeden K-
+
+Vektorraums V .
+
+• K ⊂ L K¨orpererweiterung, so ist K Untervektorraum des K-Vektor-
+
+raums L.
+
+• Geraden und Ebenen im Rn, die 0 enthalten, sind Untervektorr¨aume,
+
+enthalten sie nicht 0, sind sie keine Untervektorr¨aume.
+
+• {(x, y) ∈ R2 | y = x2}, {(x, y) ∈ R2 | x = 0, y ≥ 0} sind keine
+
+Untervektorr¨aume von R2.
+
+• Ist a11x1 + . . . + a1nxn = 0
+
+...
+
+...
+
+am1x1 + . . . + amnxn = 0
+
+ein homogenes lineares Gleichungssystem mit Koeﬃzienten aij ∈ K
+und Unbekannten xi, so ist die L¨osungsmenge L ein Untervektorraum
+des K-Untervektorraums K n.
+
+Deﬁnition 6.6 V K-Vektorraum, v1, . . . , vn ∈ V . Ein Element w ∈ V ist
+Linearkombination von v1, . . . , vn, wenn α1, . . . , αn ∈ K existieren mit
+w = α1v1 + . . . + αnvn.
+
+Bemerkung 6.7 Seien w = α1v1 + . . . αnvn und z = β1v1 + . . . + βnvn Line-
+arkombinationen von v1, . . . , vn. Dann sind auch w + z = (α1 + β1)v1 + . . . +
+(αn + βn)vn und γw = (γα1)v1 + . . . + (γαn)vn, γ ∈ K, Linearkombinationen
+von v1, . . . , vn.
+0 ist Linearkombination der leeren Familie von Vektoren.
+Deﬁnition 6.8 V K-Vektorraum, M ⊂ V Teilmenge. Sei (cid:104)M(cid:105) := {w ∈ V |
+∃ v1, . . . , vn ∈ M, s.d. w Linearkombination von v1, . . . , vn ist}. (cid:104)M(cid:105) heißt
+der von M erzeugte Untervektorraum von V .
+Bemerkung 6.9 (cid:104)M(cid:105) ⊂ V ist Untervektorraum: ist w Linearkombinati-
+on von v1, . . . , vn und z Linearkombination von v(cid:48)
+m, so ist w + z
+Linearkombination von v1, . . . , vn, v(cid:48)
+m. λw ist Linearkombination von
+v1, . . . , vn, λ ∈ K.
+
+1, . . . , v(cid:48)
+
+1, . . . , v(cid:48)
+
+31
+
+Ist I eine Menge, so nennen wir eine Abbildung f : I → V eine (durch I
+indizierte) Familie von Vektoren. Setzen wir vi := f (i), so schreiben wir daf¨ur
+auch (vi)i∈I oder (vi).
+Wir schreiben (cid:104)vi | i ∈ I(cid:105) := (cid:104){vi | i ∈ I}(cid:105), das ist der von der Familie
+erzeugte Untervektorraum.
+Ist U = (cid:104)vi | i ∈ I(cid:105), so heißt (vi)i∈I auch Erzeugendensystem von U .
+Seien U1, U2 ⊂ V Untervektorr¨aume, dann ist U1∩ U2 der gr¨oßte gemeinsame
+Untervektorraum von U1 und U2. Es ist U1+U2 := {u1+u2 | u1 ∈ U1, u2 ∈ U2}
+der kleinste Untervektorraum von V , der sowohl U1 als auch U2 enth¨alt:
+
+• U1 + U2 ist Untervektorraum, denn mit v, w ∈ U1 + U2 ist auch v + w ∈
+
+U1 + U2 und λv ∈ U1 + U2, λ ∈ K.
+
+• Ist U1 ∪ U2 ⊂ W , W Untervektorraum, so ist U1 + U2 ⊂ W .
+
+Allgemeiner setzen wir f¨ur eine Familie (Ui)i∈I von Untervektorr¨aumen von V
+
+Ui := {v ∈ V | ∃ n ∈ N, i1, . . . , in ∈ I, vij ∈ Uij
+
+f¨ur j = 1, . . . , n, mit v = vi1 + . . . + vin},
+
+dies ist wieder der kleinste Untervektorraum von V , der alle Ui enth¨alt. Z.B.
+
+gilt (cid:104)M(cid:105) = (cid:80)
+
+(cid:104)v(cid:105), (cid:104)vi | i ∈ I(cid:105) =(cid:80)
+
+v∈M
+
+(cid:104)vi(cid:105).
+
+i∈I
+
+Beispiele 6.10
+
+• Sei ei := (0, . . . , 0, 1, 0, . . . , 0) ∈ K n, i = 1, . . . , n, wo-
+
+(cid:88)
+
+i∈I
+
+bei die 1 an der i-ten Stelle steht.
+
+Dann ist K n =
+
+n(cid:80)
+
+i=1
+
+(cid:104)ei(cid:105).
+
+• Sei I Menge, f¨ur i ∈ I sei ei : I → K,
+
+(cid:26) 1,
+
+0,
+
+ei(j) :=
+
+j = i
+sonst.
+
+Dann ist(cid:80)
+(cid:80)
+
+i∈I
+
+(cid:104)ei(cid:105) der Untervektorraum von K I, dessen Elemente an nur end-
+lich vielen Stellen aus I von 0 verschiedene Eintr¨age haben; insbesondere ist
+
+i∈I
+
+(cid:104)ei(cid:105) (cid:38) K I, falls I unendlich ist.
+
+32
+
+7 Lineare Abh¨angigkeit, Basis, Dimension
+
+Deﬁnition 7.1 V K-Vektorraum.
+Eine endliche Familie (v1, . . . , vn) von Vektoren aus V heißt linear unab-
+h¨angig, falls gilt: Sind λ1, . . . , λn ∈ K und ist λ1v1 + . . . + λnvn = 0, so folgt
+λ1 = . . . = λn = 0.
+Eine beliebige Familie (vi)i∈I von Vektoren heißt linear unabh¨angig, falls
+jede endliche Teilfamilie linear unabh¨angig ist.
+Die Familie (vi) heißt linear abh¨angig, falls sie nicht linear unabh¨angig
+ist, d.h. falls n ∈ N, i1, . . . , in ∈ I existiert mit ij
+(cid:54)= ik f¨ur j (cid:54)= k und
+λ1, . . . , λn ∈ K, die nicht alle gleich 0 sind, so dass λ1vi1 + . . . + λnvin = 0
+ist.
+Bemerkung: Eine Teilfamilie von (vi)i∈I ist (vi)i∈J f¨ur J ⊂ I; sie ist endlich,
+falls J endlich ist.
+
+Beispiele 7.2
+
+• (v) ist linear unabh¨angig ⇐⇒ v (cid:54)= 0.
+
+• (v, v) ist linear abh¨angig, allgemeiner ist (vi)i∈I linear abh¨angig, falls
+
+i, j ∈ I, i (cid:54)= j, existieren mit vi = vj.
+
+• Die (ei)i∈I des Beispiels 6.10 sind linear unabh¨angig: J ⊂ I endlich
+
+(cid:80)
+
+i∈J
+
+λiei = 0, es ist(cid:32)(cid:88)
+
+(cid:33)
+
+λiei
+
+(k) =
+
+i∈J
+
+(cid:26) λk,
+
+0
+
+falls k ∈ J
+sonst
+
+⇒ alle λi, i ∈ J, sind 0.
+
+• Die leere Familie ist linear unabh¨angig.
+• Ist (vi)i∈I linear unabh¨angige Familie von Vektoren aus einem Unter-
+vektorraum von W von V , dann ist (vi)i∈I auch linear unabh¨angig in V .
+• Sind v1, . . . , vn ∈ V linear abh¨angig, n ≥ 2, so ∃ k ∈ {1, . . . , n}, s.d.
+sich vk als Linearkombination von v1, . . . , vk−1, vk+1, . . . , vn schreiben
+l¨asst:
+λ1v1+. . .+λnvn = 0, nicht alle λi = 0, dann ∃ k ∈ {1, . . . , n} mit λk (cid:54)= 0,
+dann vk = − 1
+
+(λ1v1 + . . . + λk−1vk−1 + λk+1vk+1 + . . . + λnvn).
+
+λk
+
+Satz 7.3 F¨ur eine Familie (vi)i∈I von Vektoren eines K-Vektorraumes sind
+¨aquivalent:
+
+33
+
+(i) (vi) ist linear unabh¨angig.
+(ii) Jeder Vektor v ∈ (cid:104)vi | i ∈ I(cid:105) l¨asst sich in eindeutiger Weise aus
+
+Vektoren der Familie (vi) linear kombinieren.
+
+Beweis: (i) ⇒ (ii):
+Sei v ∈ (cid:104)vi | i ∈ I(cid:105) auf zwei Arten linear kombiniert, also
+
+(cid:88)
+
+i∈I
+
+(cid:88)
+
+i∈I
+
+v =
+
+λivi =
+
+µivi,
+
+(∗)
+
+I∈J
+
+wobei in beiden Summen jeweils nur endlich viele der Koeﬃzienten von 0
+verschieden sind.
+⇒ ∃ endliche Teilmenge J ⊂ I, so dass f¨ur i ∈ I\J gilt λi = µi = 0.
+
+(λi−µi)vi = 0, aus der linearen Unabh¨angigkeit also λi = µi,
+
+Aus (∗) folgt(cid:80)
+
+f¨ur i ∈ J und f¨ur i ∈ I\J auch λi = µi = 0,
+⇒ Darstellung ist eindeutig.
+(ii) ⇒ (i): (vi) linear abh¨angig.
+⇒ ∃n ∈ N, i1 . . . , in ∈ I paarweise verschieden, λ1, . . . , λn ∈ K, nicht alle
+gleich 0, so dass λ1vi1 + . . . + λnvin = 0 aber auch 0 = 0 · vi1 + . . . + 0 · vin,
+(cid:3)
+somit hat der Nullvektor zwei verschiedene Darstellungen.
+
+Deﬁnition 7.4 Sei V K-Vektorraum und (vi)i∈I eine Familie von Vektoren
+aus V . (vi)i∈I heißt Basis von V , falls gilt:
+
+(i) (vi) ist ein Erzeugendensystem von V ,
+
+(ii) (vi) ist linear unabh¨angig.
+
+Falls I endlich ist, nennt man (cid:93)I L¨ange der Basis (vi), andernfalls sagt man,
+die Basis hat unendliche L¨ange.
+
+Beispiele 7.5
+
+• Im K n ist (e1, . . . , en) eine Basis (siehe Beispiel 6.10
+und Beispiel 7.2). K = (e1, . . . , en) heißt kanonische Basis des K n.
+• Ist (vi)i∈I linear unabh¨angig, so ist (vi) eine Basis von (cid:104)vi | i ∈ I(cid:105), z.B.
+ist (ei)i∈I eine Basis von {f ∈ K I | f (i) (cid:54)= 0 f¨ur nur endlich viele i ∈
+I}.
+
+• Die leere Familie ist Basis des Nullvektorraums {0}.
+
+Satz 7.6 V K-Vektorraum, (vi)i∈I Familie von Vektoren aus V . Dann sind
+¨aquivalent:
+
+34
+
+(i) (vi) ist eine Basis von V .
+
+(ii) (vi) ist ein unk¨urzbares Erzeugendensystem, d.h. f¨ur jede echte Teil-
+
+menge J (cid:38) I gilt (cid:104)vi | i ∈ J(cid:105) (cid:54)= V .
+
+(iii) (vi) ist eine unverl¨angerbare linear unabh¨angige Familie, d.h. jede
+
+Familie (vi)i∈J mit I (cid:38) J ist linear abh¨angig.
+
+i∈I(cid:48)
+
+(iv) Jeder Vektor aus V l¨asst sich eindeutig aus (vi)i∈I linear kombinieren.
+Beweis: (i) ⇒ (ii): (vi) ist Erzeugendensystem, da (vi) Basis;
+angenommen, ∃ J (cid:38) I, s.d. (vi)i∈J Erzeugendensystem ist, w¨ahle i0 ∈ I\J,
+λivi, damit (vi)i∈I(cid:48)∪{i0}
+
+dann ∃ I(cid:48) ⊂ J endlich, λi ∈ K ∀i ∈ I(cid:48) mit vi0 = (cid:80)
+linear abh¨angig(cid:32).
+(ii) ⇒ (i): Angenommen (vi) keine Basis, dann ist (vi) linear abh¨angig, da
+(cid:80)
+Erzeugendensystem; sei also J ⊂ I endlich, λi ∈ K∀i ∈ J, nicht alle gleich 0,
+λivi = 0. Sei λi0 (cid:54)= 0, damit l¨asst sich vi0 aus (vi)i∈j\{i0} linear kombinieren.
+i∈J
+⇒ (vi)i∈I\{i0} ist Erzeugendessystem, im Widerspruch zur Unverk¨urzbarkeit.
+(i) ⇒ (iii): (vi) linear unabh¨angig, da Basis; jede Verl¨angerung ist linear
+abh¨angig, das sich neue hinzukommende Vektoren aus den (vi)i∈I linear kom-
+binieren lassen.
+(iii) ⇒ (i): (vi) linear unabh¨angig, falls nicht Erzeugendensystem, ∃ v ∈
+V \(cid:104)vi | i ∈ I(cid:105), dann aber (v, (vi)i∈I) linear unabh¨angig:
+λivi = 0 (nun endlich viele λ (cid:54)= 0) falls λ = 0 ⇒ λi = 0∀ i, da (vi)i∈I
+
+λv +(cid:80)
+
+i∈I
+
+linear unabh¨angig.
+λ (cid:54)= 0 geht nicht, da v /∈ (cid:104)vi | i ∈ I(cid:105).
+(i) ⇒ (iv): (vi) Erzeugendensystem, da Basis, falls v ∈ V zwei verschiede-
+ne Darstellungen als Linearkombination aus (vi) hat, bilde Diﬀerenz: man
+erh¨alt nichttriviale Darstellung des Nullvektors 0, Widerspruch zur linearen
+Unabh¨angigkeit von (vi).
+(iv) ⇒ (i): (vi) Erzeugendensystem, da die Darstellung des Nullvektors 0
+(cid:3)
+eindeutig ist, folgt auch lineare Unabh¨angigkeit.
+
+Satz 7.7 (Basisauswahlsatz)
+Aus einem endlichen Erzeugendensystem (v1, . . . , vn) eines K-Vektorraums
+V kann man eine Basis ausw¨ahlen, d.h. ∃ i1 . . . , ir ∈ {1, . . . , n}, so dass
+(vi1, . . . , vir) Basis von V ist.
+
+Beweis: Induktion ¨uber n:
+
+35
+
+n = 0: klar.
+n > 0: Satz gelte f¨ur n − 1: falls (v1, . . . , vn) Basis ist, sind wir fertig, falls
+nicht, ist das Erzeugendensystem nach Satz 7.6 verk¨urzbar, d.h.
+∃ i1, . . . , in−1 ∈ {1, . . . , n}, s.d. (vi1, . . . , vin−1) Erzeugendensystem ist, wende
+(cid:3)
+darauf Induktionsannahme an.
+
+Lemma 7.8 (Austauschlemma)
+V K-Vektorraum mit Basis K = (v1, . . . , vn), w = λ1v1 + . . . + λnvn ∈ V . Ist
+k ∈ {1, . . . , n} mit λk (cid:54)= 0, so ist K = (v1, . . . , vk−1, w, vk+1, . . . , vn) wieder
+eine Basis von V .
+
+, ist (cid:104)K(cid:48)(cid:105) = (cid:104)K(cid:105) = V , also K(cid:48) Erzeugen-
+
+(cid:33)
+
+(cid:32)
+
+Beweis: Da vk = 1
+λk
+
+w −(cid:80)
+lineare Unabh¨angigkeit: λw +(cid:80)
+(cid:88)
+
+densystem.
+
+λivi
+
+i(cid:54)=k
+
+λ(cid:48)
+ivi = 0, also
+
+i(cid:54)=k
+
+(λλi + λ(cid:48)
+
+i)vi = 0,
+
+λvk +
+
+i(cid:54)=k
+
+da K linear unabh¨angig, folgt
+
+λ = 0 und λλi + λ(cid:48)
+
+i = 0∀i (cid:54)= k,
+also auch λi = 0∀i (cid:54)= k
+
+(cid:3)
+
+Satz 7.9 (Austauschsatz)
+V K-Vektorraum mit Basis (v1, . . . , vn), (w1, . . . , wn) sei linear unabh¨angige
+Familie. Dann ist r ≤ n, und es gibt i1, . . . , ir ∈ {1, . . . , n} derart, dass man
+nach Austausch von vi1 gegen w1, . . . , vir gegen wr wieder eine Basis von V
+erh¨alt.
+
+Beweis: Induktion nach r: r = 0 klar.
+Sei r ≥ 1 und der Satz f¨ur r − 1 schon bewiesen.
+(w1, . . . , wr−1) linear unabh¨angig
+Induktionannahme ⇒
+(w1, . . . , wr−1, vr, . . . , vn) Basis (nach geeigneter Umnummerierung der vi),
+außerdem r − 1 ≤ n.
+W¨are r − 1 = n, w¨are (w1, . . . , wr−1) Basis im Widerspruch zu Satz 7.6, also
+r ≤ n.
+
+36
+
+Sei wr = λ1w+ . . . + λr−1wr−1 + λrvr + . . . + λnvn
+W¨are λr = . . . = λn = 0, h¨atte man einen Widerspruch zur linearen Un-
+abh¨angigkeit der (w1, . . . , wr), also ∃ k ∈ {r, . . . , n} mit λk (cid:54)= 0. Nach dem
+Austauschlemma 7.8 k¨onnen wir damit vk gegen wr austauschen und erhalten
+(cid:3)
+eine Basis der gew¨unschten Form.
+
+Korollar 7.10 Ist ein K-Vektorraum V endlich erzeugt (womit er nach Satz
+7.7 auch eine Basis hat), so ist jede Basis von V endlich.
+
+Beweis: Sei (v1, . . . , vn) endliche Basis, (wi)i∈I eine beliebige Basis von V .
+W¨are I nicht endlich, g¨abe es i1 . . . , in+1 ∈ I, so dass wi1, . . . , wir+1 linear
+unabh¨angig w¨aren,(cid:32) zu Satz 7.9.
+(cid:3)
+
+Satz 7.11 (Hauptsatz)
+Je zwei endliche Basen eines K-Vektorraums haben gleiche L¨ange.
+Beweis: (v1, . . . , vn), (w1, . . . , wm) zwei Basen, so folgt mit Satz 7.9, n ≤ m,
+m ≤ n, also n = m.
+(cid:3)
+
+Deﬁnition 7.12 Ist V ein K-Vektorraum, so setzen wir
+
+(cid:26) ∞,
+
+n,
+
+dimK V :=
+
+falls V keine endliche Basis besitzt.
+falls V eine Basis der L¨ange n besitzt.
+
+dimK V heißt Dimension von V ¨uber K.
+
+Satz 7.13 (Basiserg¨anzungssatz, endlichdimensionaler Fall)
+Sei V endlich erzeugter K-Vektorraum, (vi)i∈I eine linear unabh¨angige Fami-
+lie von Vektoren aus V . Dann gibt es eine Basis (vi)i∈J von V , die die Familie
+(vi)i∈I als Teilfamilie enth¨alt.
+Beweis: Nach Satz 7.7 hat V eine endliche Basis B = (w1, . . . , wn). Nach
+Satz 7.9 ist dann I endlich mit |I| ≤ n, und man kann (vi)i∈I mit Vektoren
+aus B erg¨anzen, um eine Basis zu erhalten.
+(cid:3)
+
+8 Dimensionsformel und direkte Summen
+Satz 8.1 Sei V endlich-dimensionaler K-Vektorraum, W, W (cid:48) ⊂ V zwei Un-
+tervektor¨aume. Dann gilt
+
+dimK(W + W (cid:48)) = dimK W + dimK W (cid:48) − dimK(W ∩ W (cid:48)).
+
+37
+
+Beweis: Sei (v1, . . . , vn) Basis von W ∩W (cid:48) (beachte: jeder Unterraum U ⊂ V
+hat endliche Dimension ≤ dimK V ; Warum?).
+l ∈ W (cid:48), so dass
+Nach Satz 7.13 gibt es w1, . . . , wk ∈ W und w(cid:48)
+(v1, . . . , vn, w1, . . . , wk) eine Basis von W und (v1, . . . , vm, w(cid:48)
+l) eine
+Basis von W (cid:48) ist.
+Wenn wir zeigen, dass
+
+1, . . . , w(cid:48)
+
+1, . . . , w(cid:48)
+
+B := (v1, . . . , vn, w1, . . . , wk, w(cid:48)
+
+1, . . . , w(cid:48)
+l)
+
+Basis von W + W (cid:48) ist, sind wir fertig, denn dann ist
+
+dim W + dim W (cid:48) = n + k + n + l = (n + k + l) + n
+= dim(W + W (cid:48)) + dim(W ∩ W (cid:48)).
+
+B erzeugt W + W (cid:48): W ⊂ (cid:104)B(cid:105) und W (cid:48) ⊂ (cid:104)B(cid:105) ist klar.
+B ist linear unabh¨angig: Sei
+
+1w(cid:48)
+
+1 + . . . + µ(cid:48)
+
+λ1v1 + . . . + λnvn + µ1w1 + . . . + µkwk + µ(cid:48)
+
+lw(cid:48)
+Sei v := λ1v1 + . . . + λnvn + µ1w1 + . . . + µkwk ∈ W , dann v = −(µ(cid:48)
+l) ∈ W (cid:48), also v ∈ W ∩ W (cid:48) ⇒ ∃λ(cid:48)
+lw(cid:48)
+µ(cid:48)
+Eindeutigkeit der Linearkombination (Satz 7.3)
+⇒ λ1 = λ(cid:48)
+1, . . . , λ(cid:48)
+Da (v1, . . . , vn, w(cid:48)
+
+n, µ1 = . . . = µk = 0.
+l) linear unabh¨angig, folgt damit aus (∗) auch
+
+n ∈ K mit v = λ(cid:48)
+
+n = λ(cid:48)
+1, . . . , w(cid:48)
+
+l = 0.
+1w(cid:48)
+
+1, . . . , λ(cid:48)
+
+1v1 + . . . + λ(cid:48)
+
+1 + . . . +
+nvn
+
+(∗)
+
+λ1 = . . . = λn = µ(cid:48)
+
+1 = . . . = µ(cid:48)
+
+l = 0.
+
+(cid:3)
+
+vi mit vi ∈ Ui ∀ i
+
+Satz 8.2 Sei V K-Vektorraum, (Ui)i∈I Familie von Untervektorr¨aumen von
+
+i∈I
+
+Ui. Dann sind ¨aquivalent:
+
+V und U =(cid:80)
+(i) Jedes v ∈ U hat eine eindeutige Darstellung v =(cid:80)
+(ii) Aus(cid:80)
+(iii) F¨ur jedes i0 ∈ I gilt Ui0 ∩ (cid:80)
+
+(nur endlich viele vi (cid:54)= 0).
+
+Ui = {0}.
+
+i∈I
+
+i∈I
+
+vi = 0 (nur endlich viele vi (cid:54)= 0), vi ∈ Ui, folgt vi = 0∀ i.
+
+i(cid:54)=i0
+
+38
+
+= 0, vi ∈ Ui∀i, nach Voraussetzung ist die Dar-
+
+vi, vi ∈ Ui,
+vi = 0 nach Voraussetzung ist damit insbesondere v = 0,
+Ui = {0}.
+
+i(cid:54)=i0
+
+i(cid:54)=i0
+
+Ui, also v = (cid:80)
+i ∈ Ui ∀ i, also(cid:80)
+
+i∈I
+
+i(cid:54)=i0
+
+stellung der 0 eindeutig, also vi = 0∀ i.
+
+Beweis: (i) ⇒ (ii): Sei (cid:80)
+(ii) ⇒ (iii): Sei i0 ∈ I und v ∈ Ui0 ∩ (cid:80)
+somit v − (cid:80)
+also Ui0 ∩ (cid:80)
+(iii) ⇒ (i): Sei v ∈ U mit v =(cid:80)
+vi =(cid:80)
+i0 = −(cid:80)
+Summe der Ui, in Zeichen U =(cid:76)
+
+oder f¨ur jedes i0 ∈ I vi0 − v(cid:48)
+{0}, also vi0 = v(cid:48)
+i0.
+
+i(cid:54)=i0
+
+i(cid:54)=i0
+
+i∈I
+
+i∈I
+
+i, vi, v(cid:48)
+v(cid:48)
+i∈I
+(vi − v(cid:48)
+i) somit vi0 − v(cid:48)
+
+(vi − v(cid:48)
+
+i0 ∈ Ui0 ∩(cid:80)
+
+i∈I
+
+i(cid:54)=i0
+
+i) = 0
+
+Ui =
+(cid:3)
+
+Deﬁnition 8.3 Sei die Situation wie in Satz 8.2. Dann heißt U die direkte
+Ui, wenn die ¨aquivalenten Bedingungen
+
+von Satz 8.2 erf¨ullt sind.
+Falls I = {1, . . . , n}, schreiben wir auch U = U1 ⊕ . . . ⊕ Un.
+Bemerkung: Es ist U1 + U2 = U1 ⊕ U2 genau dann wenn U1 ∩ U2 = {0},
+falls V endlich-dimensional dim(U1 + U2) = dim U1 + dim U2.
+Seien v1, . . . , vn ∈ V , es ist
+⇐⇒ (v1, . . . , vn) ist linear unabh¨angig.
+
+Deﬁnition 8.4 Sei (Vi)i∈I Familie von K-Vektorr¨aumen, dann heißt (cid:81)
+
+(cid:104)v1(cid:105) =
+
+n(cid:76)
+
+n(cid:80)
+
+(cid:104)v1(cid:105)
+
+Vi
+
+i=1
+
+i=1
+
+i∈I
+
+ausgestattet mit der komponentenweisen Addition und Skalarmultiplikation
+der Produktvektorraum von (Vi)i∈I.
+
+Bemerkung: Man ¨uberpr¨uft leicht, dass dies ein K-Vektorraum ist.
+Wir k¨onnen Vi0 mit dem Untervektorraum
+
+{(vi)i∈I ∈(cid:89)
+
+i∈I
+
+Vi | vi = 0∀i (cid:54)= i0}
+
+Dann ist (cid:80)
+
+identiﬁzieren.
+
+Vi = (cid:76)
+
+i∈I
+
+i∈I
+
+als die ¨außere direkte Summe der Vi.
+
+Vi (Warum?), und diesen Vektorraum bezeichnet man
+
+39
+
+9 Zornsches Lemma und die Existenz von
+
+Basen
+
+Wir ben¨otigen das folgende Axiom aus der Mengenlehre:
+
+Axiom 9.1 (Auswahlaxiom)
+Sei (Ai)i∈I eine Familie von Menge mit Ai (cid:54)= ∅∀ i ∈ I.
+
+Ai (cid:54)= ∅.
+
+Dann ist (cid:81)
+
+i∈I
+
+Deﬁnition 9.2 Eine teilweise geordnete Menge ist eine Menge M zu-
+sammen mit einer Relation ≤ ⊂ M × M , so dass gilt
+
+(i) x ≤ x ∀x ∈ M ,
+(ii) ∀x, y, z ∈ M : x ≤ y und y ≤ z ⇒ x ≤ z,
+(iii) ∀x, y ∈ M : x ≤ y und y ≤ x ⇒ x = y.
+Eine Teilmenge N ⊂ M heißt streng geordnet, wenn ∀x, y ∈ N gilt x ≤ y
+oder y ≤ x. Ein z ∈ M heißt obere Schranke von N , falls ∀x ∈ N : x ≤ z.
+Ein Element z ∈ M heißt maximal, wenn ∀x ∈ M gilt: z ≤ x ⇒ x = z.
+Nun k¨onnen wir formulieren:
+
+Satz 9.3 Es sind ¨aquivalent (vor dem Hintergrund der anderen Axiome der
+Mengenlehre):
+
+(i) Das Auswahlaxiom 9.1 gilt.
+
+(ii) (Zornsches Lemma) Ist M eine teilweise geordnete Menge und besitzt
+jede streng geordnete Teilmenge von M eine obere Schranke in M , so
+existiert in M ein maximales Element.
+
+Beweis: Siehe Friedrichsdorf-Prestel: Mengenlehre f¨ur den Mathematiker. (cid:3)
+Wir setzen von nun an das Auswahlaxiom voraus.
+Nun k¨onnen wir beweisen:
+
+Satz 9.4 (Basiserg¨anzungssatz)
+Sei V K-Vektorraum und (vi)i∈I eine lineare unabh¨angige Familie von Vekto-
+ren aus V . Dann existiert eine Basis (vi)i∈J von V , die (vi)i∈I als Teilfamilie
+enth¨alt (also I ⊂ J).
+
+40
+
+Bemerkung: Man kann die Begriﬀe Erzeugendensystem, linear unabh¨angig
+und Basis auch f¨ur Teilmengen von V formulieren, indem man einer Teilmen-
+ge A ⊂ V die durch A indizierte Familie A → V , a (cid:55)→ a, zuordnet und f¨ur
+diese die jeweilige Eigenschaft fordert.
+Beweis: Wir benutzen das Zornsche Lemma Satz 9.3 (ii).
+Sei A0 := {vi | i ∈ I} ⊂ V . Dann ist A0 linear unabh¨angig.
+Sei M := {A ⊂ V | A linear unabh¨angig und A0 ⊂ A}
+M ist mit A ≤ B : ⇐⇒ A ⊂ B teilweise geordnete Menge;
+M erf¨ullt die Voraussetzungen des Zornschen Lemmas: Sei N ⊂ M streng
+geordnet; falls N = ∅ ist A0 obere Schranke, sei oBdA N (cid:54)= ∅.
+
+Behauptung: Z := (cid:83)
+
+A ⊂ V ist obere Schranke von N :
+
+A∈N
+
+• Z ∈ M :
+
+– Z linear unabh¨angig: sind v1, . . . , vn ∈ Z paarweise verschieden,
+n ∈ N, dann ∃A ∈ N mit v1, . . . , vn ∈ A, da N streng geordnet,
+also v1, . . . , vn linear unabh¨angig.
+
+– A0 ⊂ Z, da N (cid:54)= ∅. ⇒ Z ∈ M .
+
+• ∀A ∈ N gilt A ⊂ Z
+
+⇒ Z obere Schranke von N . Zornsches Lemma ⇒ M besitzt ein maxima-
+les Element A1 ∈ M . A1 ist Basis, da unverl¨angerbare lineare unabh¨angige
+Teilmenge (Satz 7.6), außerdem A0 ⊂ A1, womit der Satz gezeigt ist.
+(cid:3)
+
+Korollar 9.5 Jeder K-Vektorraum besitzt eine Basis.
+
+(cid:3)
+Beweis: Wende Satz 9.4 auf die leere linear unabh¨angige Familie an.
+Korollar 9.6 Sei V K-Vektorraum und W ⊂ V Untervektorraum. Dann
+existiert ein Untervektorraum W (cid:48) ⊂ V mit V = W ⊕ W (cid:48).
+
+Beweis: W¨ahle Basis von (vi)i∈I von W (existiert nach Korollar 9.5).
+Erweitere diese zu einer Basis (vi)i∈I, I ⊂ J, von V (Satz 9.4).
+Sei W (cid:48) := (cid:104)vi | i ∈ J\I(cid:105).
+Behauptung: V = W ⊕ W (cid:48):
+V = W + W (cid:48), da jedes vi, i ∈ J, in W + W (cid:48) ist.
+
+W + W (cid:48) = W ⊕ W (cid:48): Sei v ∈ W ∩ W (cid:48), also v =(cid:80)
+
+λivi = (cid:80)
+
+i∈J\I
+
+i∈I
+
+(vi)i∈J Basis ⇒ λi = 0∀i ∈ J, ⇒ v = 0.
+
+41
+
+λivi = 0
+
+(cid:3)
+
+10 Lineare Abbildungen
+
+Um mit linearen Gleichungssytemen besser umgehen zu k¨onnen, f¨uhren wir
+den Begriﬀ der linearen Abbildung ein.
+Deﬁnition 10.1 Seien V, W K-Vektorr¨aume. Eine Abbildung F : V → W
+heißt K-linear, falls gilt:
+
+(i) ∀v, w ∈ V gilt F (v + w) = F (v) + F (w),
+(ii) ∀λ ∈ K, v ∈ V gilt F (λv) = λF (v).
+
+Falls klar ist, welcher K¨orper gemeint ist, sagt man auch linear.
+F linear ⇐⇒ ∀λ, µ ∈ K, v, w ∈ V : F (λv + µw) = λF (v) + µF (w).
+Satz 10.2 Sei F : V → W linear. Dann gilt:
+(1) F (0) = 0 und F (v − w) = F (v) − F (w) ∀v, w ∈ V .
+
+(2) (vi)i∈I Familie von Vektoren aus V , dann gilt:
+
+(a) (vi) linear abh¨angig in V =⇒ (F (vi)) linear abh¨angig in W .
+(b) (F (vi)) linear unabh¨angig in W =⇒ (vi) linear unabh¨angig in V .
+(3) V (cid:48) ⊂ V Untervektorraum, so F (V (cid:48)) ⊂ W Untervektorraum; W (cid:48) ⊂ W
+
+Untervektorraum, so F −1(W (cid:48)) ⊂ V Untervektorraum.
+
+(4) dim F (V ) ≤ dim V .
+
+Beweis:
+(1) F (0) = F (0 · 0) = 0 · F (0) = 0.
+
+F (v − w) = f (v + (−1)w) = F (v) + (−1)F (w) = F (v) − F (w).
+
+(2) (a) Seien i1, . . . , in ∈ I paarweise verschieden und λ1, . . . , λn ∈ K, nicht
+
+alle λi = 0, mit λ1vi1 + . . . + λnvin = 0.
+Anwenden von F darauf: λ1F (vi1) + . . . + λnF (vin) = 0, also (F (vi))
+linear abh¨angig.
+
+(b) ist gleichbedeutend mit (a).
+
+42
+
+(3) 0 ∈ V (cid:48) ⇒ 0 = F (0) ∈ F (cid:48)(V (cid:48)) ⇒ F (V (cid:48)) (cid:54)= ∅.
+
+Seien w, w(cid:48) ∈ F (V (cid:48)), also ∃v, v(cid:48) ∈ V (cid:48) mit F (v) = w, F (v(cid:48)) = w(cid:48), damit
+w + w(cid:48) = F (v) + F (v(cid:48)) = F (v + v(cid:48)) ∈ F (V (cid:48)), da v + v(cid:48) ∈ V (cid:48).
+Sei weiter λ ∈ K,
+dann λw = λF (v) = F (λw) ∈ F (V (cid:48)), da λv ∈ V (cid:48),
+⇒ F (V (cid:48)) ist Untervektorraum.
+F (0) = 0 ∈ W (cid:48), damit 0 ∈ F −1(W (cid:48)), also F −1(W (cid:48)) (cid:54)= ∅,
+v, v(cid:48) ∈ F −1(W (cid:48)), also F (v), F (v(cid:48)) ∈ W (cid:48),
+⇒ F (v + v(cid:48)) = F (v) + F (v(cid:48)) ∈ W (cid:48)
+⇒ v + v(cid:48) ∈ F −1(W (cid:48)),
+λ ∈ K ⇒ λF (v) ∈ W (cid:48) ⇒ F (λv) = λF (v) ∈ W (cid:48) ⇒ F −1(W (cid:48)) Untervek-
+torraum.
+
+(4) dim V = ∞ klar, sonst: v1, . . . , vn Basis von V
+
+⇒ F (v1), . . . , F (vn) Erzeugendensystem von F (V ), dann Satz 7.7.
+
+(cid:3)
+• die Nullabbildung F : V → W , v (cid:55)→ 0 ∀v ∈ V , ist
+
+Beispiele 10.3
+
+linear.
+
+• f¨ur λ ∈ K ist F : K → K, v (cid:55)→ λ · v, linear. Jede lineare Abbildung
+
+K → K ist von dieser Gestalt (setze λ := F (1)).
+
+• Seien f¨ur i ∈ {1, . . . , m}, j ∈ {1, . . . , n} Elemente aij ∈ K gegeben und
+
+sei F : K n → K m deﬁniert durch
+
+(cid:32) n(cid:88)
+
+(cid:33)
+
+n(cid:88)
+
+(x1, . . . , xn) (cid:55)→
+
+aijxj, . . . ,
+
+amjxj
+
+.
+
+j=1
+
+j=1
+
+Dann ist F linear.
+Sp¨ater: jede lineare Abbildung F : K n → K m ist von dieser Gestalt.
+L¨osungsmenge des Gleichungssystems, welches zur erweiterten Matrix
+((aij), b), b ∈ K m geh¨ort, ist gerade F −1(b).
+ϕ→ Y Abbildung von Mengen, dann ist
+
+• Sei X
+
+F : K Y → K X
+(cid:55)→ f ◦ ϕ
+
+f
+
+43
+
+linear, z.B.
+
+RR→R
+f (cid:55)→ f (0).
+
+• W ⊂ V Untervektorraum, dann ist
+
+F : W → V,
+v (cid:55)→ v
+
+linear.
+
+• F : C 1(R)→ C 0(R) ist linear
+
+f
+
+(cid:55)→ f(cid:48)
+
+(C i(R): Raum der i-mal stetig diﬀerenzierbaren Funktionen)
+
+Satz 10.4 V, W K-Vektorr¨aume, I Menge. (vi)i∈I Basis von V und (wi)i∈I
+Familie von Vektoren aus W .
+Dann gibt es genau eine lineare Abbildung F : V → W mit F (vi) = wi
+∀i ∈ I.
+Weiterhin gilt:
+
+(i) F (V ) = (cid:104)wi | i ∈ I(cid:105),
+(ii) F injektiv ⇐⇒ (wi) linear unabh¨angig.
+Beweis: Eine lineare Abbildung F : V → W ist eindeutig durch die Bilder
+der Basisvektoren F (vi), i ∈ I, bestimmt, denn man hat
+
+F
+
+λivi
+
+=
+
+λiF (vi)
+
+(∗)
+
+(cid:32)(cid:88)
+
+i∈I
+
+(cid:33)
+
+(cid:88)
+
+i∈I
+
+(nur endlich viele λi (cid:54)= 0), d.h. es gibt h¨ochstens ein F mit der angegebenen
+Eigenschaft.
+Existenz: Wir benutzen (∗), um F zu deﬁnieren; F ist wohldeﬁniert, da die
+Darstellung eines v ∈ V als Linearkombination der (vi) eindeutig ist.
+F ist linear:
+
+44
+
+v, w ∈ V , v =(cid:80)
+
+i∈I
+
+λivi, w =(cid:80)
+
+i∈I
+
+F (v + w) = F
+
+(λi + µi)vi
+
+(cid:19)
+
+µivi;
+
+i∈I
+
+(λi + µi)wi
+
+(cid:18)(cid:80)
+= (cid:80)
+λiwi +(cid:80)
+= (cid:80)
+= λ(cid:80)
+
+i∈I
+= F (v) + F (w);
+
+i∈I
+
+i∈I
+
+λivi = λF (v).
+
+i∈I
+
+µiwi
+
+λ ∈ K,F (λv) = F
+
+(cid:19)
+
+λλivi
+
+(cid:18)(cid:80)
+
+i∈I
+
+(i) F (V ) ⊂ (cid:104)wi | i ∈ I(cid:105) nach Deﬁnition von F
+
+wi ∈ F (V ), da F (vi) = wi, also auch (cid:104)wi | i ∈ I(cid:105) ⊂ F (V ).
+⇒“: (wi) linear abh¨angig.
+”
+
+(ii)
+
+⇒ 0 =(cid:80)
+(cid:18)(cid:80)
+
+i∈I
+
+also F
+
+λiwi, nicht alle λi = 0
+
+(cid:19)
+
+= (cid:80)
+
+i∈I
+
+λiwi = 0, aber (cid:80)
+
+i∈I
+
+λivi
+
+i∈I
+
+λivi (cid:54)= 0, da (vi) linear un-
+
+abh¨angig, aber auch F (0) = 0
+⇒ F nicht injektiv.
+⇐“: F nicht injektiv, also ∃v, w ∈ V , v (cid:54)= w, mit F (v) = F (w), also
+F (v − w) = 0.
+”
+
+λivi ⇒ nicht alle λi = 0,
+
+Sei v − w =(cid:80)
+(cid:19)
+(cid:18)(cid:80)
+
+i∈I
+
+0 = F
+
+λivi
+
+i∈I
+
+=(cid:80)
+
+i∈I
+
+λiwi, ⇒ (wi) linear abh¨angig.
+
+(cid:3)
+
+Deﬁnition 10.5
+
+(1) Statt linearer Abbildung sagt man auch Vektor-
+
+raumhomomorphismus oder Homomorphismus.
+
+(2) Ein Homomorphismus F : V → W heißt
+Monomorphismus : ⇐⇒ F injektiv,
+Epimorphismus : ⇐⇒ F surjektiv,
+Isomorphismus : ⇐⇒ F bijektiv,
+
+45
+
+Endomorphismus : ⇐⇒ V = W ,
+Automorphismus : ⇐⇒ V = W und F bijektiv.
+
+Satz 10.6
+
+(i) Sind F : V → W und G : W → U Vektorraumhomomor-
+phismen, so ist auch G ◦ F : V → U ein Vektorraumhomomorphismus.
+(ii) Ist F : V → W ein Isomorphismus, so ist auch F −1 : W → V ein
+
+Vektorraumhomomorphismus (und damit ein Isomorphismus).
+
+(iii) Die Menge AutK(V ) der Automorphismen eines Vektorraums V ist mit
+
+der Komposition von Abbildungen als Verkn¨upfung eine Gruppe.
+
+Beweis: (i) Seien v, w ∈ V , dann ist
+(G ◦ F )(v + w) = G(F (v + w)) = G(F (v) + F (w))
+
+= G(V (v)) + G(F (w)) = (G ◦ F )(v) + (G ◦ F )(w).
+
+λ ∈ K, dann ist
+
+(G ◦ F )(λv) = G(F (λv)) = G(λF (v)) = λG(F (v)) = λ(G ◦ F )(v).
+
+(ii) Seien v, w ∈ W , dann ist
+F (F −1(v+w)) = v+w = F (F −1(v))+F (F −1(w)) = F (F −1(v)+F −1(w)),
+und da F injektiv ist folgt F −1(v + w) = F −1(v) + F −1(w). λ ∈ K, dann ist
+
+F (F −1(λv)) = λv = λF (F −1(v)) = F (λF 1(v)),
+
+damit wieder F −1(λv) = λF −1(v).
+(iii) folgt mit (i) und (ii)
+(cid:3)
+(neutrales Element ist idV , das Inverse zu F ist F −1).
+F¨ur einen K-Vektorraum V und eine Menge X ist die Menge der Abbildun-
+gen V X wieder ein K-Vektorraum mit der komponentenweisen Addition und
+Skalarmultiplikation, d.h.
+
+f, g ∈ V X; es ist V X = (cid:81)
+
+x∈X
+
+(f + g)(x) = f (x) + g(x) ∀x ∈ X
+
+(λf )(x) = λf (x) ∀x ∈ X,
+
+V Produktvektorraum.
+
+F¨ur K-Vektorr¨aume V, W sei HomK(V, W ) die Menge der linearen Abbil-
+dungen von V und W .
+
+46
+
+Satz 10.7 V, W K-Vektorr¨aume, dann ist HomK(V, W ) ⊂ W V ein Unter-
+vektorraum.
+Beweis: Seien F, G ∈ HomK(V, W ).
+Seien v, w ∈ V , λ ∈ K, dann ist
+
+(F + G)(v + w) = F (v + w) + G(v + w)
+
+= F (v) + F (w) + G(v) + G(w)
+= (F + G)(v) + (F + G)(w),
+
+(F + G)(λv) = F (λv) + G(λv)
+= λF (v) + λG(v)
+= λ(F (v) + G(v))
+= λ(F + G)(v),
+
+also F + G ∈ HomK(V, W ).
+Sei F ∈ HomK(V, W ), σ ∈ K, v, w ∈ V , λ ∈ K, dann ist
+
+(λF )(v + w) = λF (v + w) = λF (v) + λF (w)
+
+= (λF )(v) + (λF )(w),
+
+(λF )(σv) = λF (σv) = λσF (v)
+
+= σλF (v) = σ(λF )(v),
+
+also λF ∈ HomK(V, W ); somit ist HomK(V, W ) ⊂ W V Untervektorraum. (cid:3)
+
+11 Kern und Bild
+Deﬁnition 11.1 Sei F : V → W ein Homomorphismus. Dann heißt
+Ker F := F −1({0}) ⊂ V der Kern von F und Im F := F (V ) ⊂ W das
+Bild von F .
+
+Ker F und Im F sind Untervektorr¨aume von V und W (Satz 10.2,3).
+Lemma 11.2 F : V → W Homomorphismus, dann sind ¨aquivalent:
+
+(i) F ist injektiv.
+(ii) Ker F = {0}.
+Beweis: (i) ⇒ (ii): 0 ∈ Ker F , und da F injektiv ist, ist 0 auch das einzige
+Element in Ker F .
+(ii) ⇒ (i): v, w ∈ V mit F (v) = F (w), dann F (v − w) = F (v) − F (w) = 0,
+also v − w ∈ Ker F , also v − w = 0, da Ker F = {0}, also v = w.
+(cid:3)
+
+47
+
+Beispiele 11.3 Sei v ∈ K n und
+
+F : K → K n, λ (cid:55)→ λv,
+
+dann ist F linear, und
+
+Ker F =
+
+Sei
+
+F : K n → K m
+
+(x1, . . . , xn)
+
+(cid:55)→
+
+aijxj, . . . ,
+
+(cid:26) {0},
+n(cid:80)
+
+K,
+
+falls v (cid:54)= 0.
+falls v = 0.
+
+(cid:33)
+
+amjxj
+
+(cid:32) n(cid:80)
+
+j=1
+
+j=1
+
+(vgl. Beispiel 10.3).
+Dann ist Ker F genau die L¨osungsmenge des homogenen linearen Gleichungs-
+system, welches zur Matrix (aij) geh¨ort.
+Satz 11.4 Sei F : V → W Homomorphismus und V endlich-dimensional.
+Dann ist dim V = dim Im F + dim Ker F .
+
+Beweis: Im F ist endlich dimensional (10.2.4), Ker F auch.
+Sei (w1, . . . , wr) Basis von Im F v1, . . . , vr ∈ V mit F (vi) = wi, i = 1, . . . , r,
+u1, . . . , uk Basis von Ker F .
+Behauptung: B := (v1, . . . , vr, u1, . . . , uk) ist Basis von V :
+
+• B erzeugt V : v ∈ V ⇒ ∃ λ1, . . . , λr ∈ K mit
+
+F (v) = λ1w1 + . . . + λrwr = F (λ1v1 + . . . + λrvr),
+also v − λ1v1 − . . . − λrvr ∈ Ker F , also ∃ µ1, . . . , µk ∈ K mit
+v − λ1v1 − . . . − λrvr = µ1u1 + . . . + µkuk ⇒ v ∈ (cid:104)B(cid:105).
+
+• B ist linear unabh¨angig:
+
+λ1, . . . , λr, µ1 . . . , µk ∈ K mit
+
+λ1v1 + . . . + λrvr + µ1u1 + . . . + µkuk = 0,
+
+(∗)
+
+wende F darauf an und nutze aus, dass
+ui ∈ Ker F ⇒ λ1w1 + . . . + wr = 0 ⇒ λi = 0, i = 1 . . . r, mit (∗) dann
+auch µi = 0, i = 1 . . . , k, da u1, . . . , uk linear unabh¨angig.
+
+48
+
+(cid:3)
+Korollar 11.5 V, W endlich-dimensionale Vektorr¨aume, dann ∃ ein Isomor-
+phismus V → W genau dann, wenn dim V = dim W .
+
+⇐“: Sei dim V = dim W ,
+”
+
+Beweis:
+(v1, . . . , vn) Basis von V , (w1, . . . , wn) Basis von W
+F : V → W die eindeutige lineare Abbildung mit F (vi) = wi, i = 1, . . . , n
+(Satz 10.4).
+F surjektiv, da (cid:104)wi | i = 1 . . . , n(cid:105) = W ,
+F injektiv, da w1, . . . , wn linear unabh¨angig (Satz 10.4).
+⇒“: F : V → W Isomorphismus, also dim Ker F = 0 und Im F = W , mit
+(cid:3)
+”
+Satz 11.4 also dim V = dim W .
+
+12 Lineare Abbildungen und Matrizen
+
+Nachdem wir den Begriﬀ einer Matrix schon benutzt haben, wollen wir diesen
+nun pr¨azisieren:
+Deﬁnition 12.1 Seien m, n ∈ N. Eine m × n-Matrix (mit Werten in K) ist
+eine Abbildung {1, . . . , m} × {1, . . . , n} → K.
+Bemerkung 12.2 Eine m × n-Matrix ist also eine Ansammlung von K¨or-
+perelementen aij ∈ K f¨ur i = 1, . . . , m, j = 1, . . . , n.
+Man schreibt sie meist in der Form
+
+ a11
+
+...
+am1
+
+ .
+
+. . . a1n
+...
+. . . amn
+
+(aij) =
+
+Die m × n-Matrizen bilden (mit komponentenweiser Addition und Skalar-
+multiplikation) einen K-Vektorraum, den wir mit M (m × n; K) bezeichnen.
+Eine Basis von M (m × n; K) bilden die Vektoren eij, i = 1, . . . , m, j =
+1, . . . , n, mit
+
+(cid:26) 1,
+
+falls (k, l) = (i, j)
+sonst ,
+
+eij((k, l)) =
+(k, l) ∈ {1, . . . , m} × {1, . . . , n}.
+Es ist (aij) =
+
+(cid:80)
+
+0,
+
+aijeij.
+
+(i,j)∈{1,...,m}×{1,...,n}
+
+49
+
+Deﬁnition 12.3 Es sei L : M (m × n; K) → HomK(K n, K m) die eindeutige
+lineare Abbildung, die f¨ur alle (i, j) ∈ {1, . . . , m} × {1, . . . , n} gegeben ist
+durch
+
+L(eij)(el) =
+
+Bemerkung 12.4 Es ist
+
+0,
+
+(cid:26) ei,
+ a1l
+
+...
+aml
+
+falls l = j
+sonst .
+
+ ∈ K m,
+
+L((aij))(el) =
+
+Die Spaltenvektoren sind die Bilder der Basisvektoren.“
+”
+
+also:
+Deﬁnition 12.5 Es sei M : HomK(K n, K m) → M (m×n; K) die Abbildung,
+die durch M (F )ij = F (ej)i (i-te Komponente) gegeben ist.
+
+Satz 12.6 L und M sind zueinander inverse Abbildungen, insbesondere ist
+also auch M linear und L und M sind Isomorphismen.
+
+Beweis: Es ist
+
+und
+
+(M ◦ L)(F )(el) =
+
+(M ◦ L)((aij))kl = M (L((aij))kl = L((aij))(el)k = akl.
+
+ M (F )1l
+
+...
+
+ =
+
+ F (el)1
+
+...
+
+ = F (el).
+
+M (F )ml
+
+F (el)m
+
+(cid:3)
+Wir f¨uhren nun eine Multiplikation auf Matrizen ein, die die Hintereinander-
+schaltung von linearen Abbildungen modelliert:
+Deﬁnition 12.7 Sei A ∈ M (m × n; K) und B ∈ M (r × m; K). Dann ist
+
+B · A := M (L(B) ◦ (L(A)) ∈ M (r × m; K).
+
+Bemerkung 12.8 Man beachte, dass L(A) : K n → K m und L(B) : K m →
+K r, also kann man die Abbildungen verkn¨upfen, und man bekommt eine
+Abbildung L(B) ◦ L(A) : K n → K r, dessen zugeh¨orige Matrix wir mit B · A
+bezeichnen.
+
+50
+
+Satz 12.9 Sei A ∈ M (m × n, K) und B ∈ M (r × m; K). Dann ist
+
+m(cid:88)
+
+(B · A)ij =
+
+BikAkj.
+
+Beweis:
+
+k=1
+
+M (L(B) ◦ L(A))ij = (L(B) ◦ L(A))(ej)i
+
+= (L(B)(L(A)(ej)))i
+
+L(B)
+
+Akjek
+
+(cid:18) m(cid:80)
+
+k=1
+
+(cid:18)
+(cid:18) m(cid:80)
+m(cid:80)
+
+k=1
+
+=
+
+=
+
+=
+
+(cid:19)(cid:19)
+(cid:19)
+
+i
+
+m(cid:80)
+
+AkjL(B)(ek)
+
+i
+
+AkjL(B)(ek)i =
+
+AkjBik.
+
+k=1
+
+k=1
+
+(cid:3)
+Satz 12.10 Seien A ∈ M (m× n; K), B ∈ M (r, n; K) und C ∈ M (s× r; K).
+Dann ist (C · B) · A = C · (B · A).
+
+Beweis:
+
+(C · B) · A = M (L(C · B) ◦ L(A))
+
+= M (L(M (L(C) ◦ L(B))) ◦ L(A))
+= M ((L(C) ◦ L(B)) ◦ L(A))
+= M (L(C) ◦ (L(B) ◦ L(A)))
+= M (L(C) ◦ L(M (L(B) ◦ L(A))))
+= M (L(C) ◦ L(B · A))
+= C · (B · A).
+
+Bemerkung 12.11 Veranschaulichung der Matrizenmultiplikation:
+
+(cid:3)
+
+51
+
+
+
+b11
+
+bi1
+
+br1
+
+. . .
+
+. . .
+
+. . .
+
+b1m
+
+bim
+
+brm
+
+ ·
+
+
+
+a11
+
+a1j
+
+a11
+
+...
+
+...
+
+...
+
+am1
+
+amj
+
+am1
+
+ = BA
+
+Um den Eintrag an der i-ten Zeile und j-ten Spalte des Produkts B · A zu
+bestimmen, bildet man das
+Skalarprodukt“ der i-ten Zeile von B mit der
+”
+j-ten Spalte von A.
+
+Bemerkung 12.12 Matrizenmultiplikation ist i.A. nicht kommutativ, i.A.
+kann man nicht einmal A · B bilden. Aber selbst f¨ur r = m = n gilt dies
+nicht:
+
+z.B.(cid:18)1 0
+
+(cid:19)
+
+0 0
+
+·
+
+(cid:18)0 1
+
+(cid:19)
+
+0 0
+
+Beispiele 12.13
+
+=
+
+, aber
+
+0 0
+
+(cid:19)
+
+(cid:18)0 1
+(cid:32) n(cid:80)
+
+(cid:55)→
+
+F : K n → K m
+
+(cid:18)0 1
+
+(cid:19)
+
+0 0
+
+·
+
+(cid:18)1 0
+
+(cid:19)
+
+(cid:18)0 0
+
+(cid:19)
+
+0 0
+
+=
+
+0 0
+
+(cid:33)
+
+(x1, . . . , xn)
+
+aijxj, . . . ,
+
+amjxj
+
+i=1
+
+(Beispiel 10.3.), dann ist
+
+M (F ) =
+
+•
+
+•
+
+j=1
+
+n(cid:80)
+ a11
+
+
+...
+am1
+
+1
+
+0
+
+1
+
+0
+...
+0 . . .
+
+52
+
+. . . a1n
+...
+. . . amn
+
+. . . 0
+...
+. . . 0
+1
+0
+
+
+ = En
+(cid:18)cos α − sin α
+
+sin α
+
+cos α
+
+(cid:19)
+
+M (idKn) =
+
+Einheitsmatrix;
+
+• Sei Fα : R2 → R2 eine Drehung um den Winkel α, die den Nullpunkt
+
+fest l¨asst. Dann ist Fα(e1) = (cos α, sin α),
+
+Fα(e2) = (− sin α, cos α), also M (Fα) =
+
+dann ist Fα ◦ Fβ = Fα+β, also auch
+
+(cid:18)cos α − sin α
+
+(cid:19)(cid:18)cos β − sin β
+
+(cid:19)
+
+sin α
+
+cos α
+
+sin β
+
+cos β
+
+(cid:18)cos(α + β) − sin(α + β)
+(cid:19)
+
+sin(α + β)
+
+cos(α + β)
+
+,
+
+=
+
+was man auch mittels der Additionstheoreme f¨ur sin und cos sieht.
+
+Bemerkung 12.14 Sei A ∈ M (m×n; K), x ∈ K n. Dann ist L(A)(x) = A·x,
+wobei wir x und L(A)(x) als n × 1- bzw. m × 1-Matrizen betrachten:
+F¨ur jedes y ∈ K n sei ϕn(y) : K → K n die eindeutige lineare Abbildung, die
+1 auf y schickt. Dann ist L(A) ◦ ϕn(x) = ϕm(L(A)(x)), also
+L(A)(x) = M (ϕm(L(A)(x))) = M (L(A)◦ϕn(x)) = M (L(A))·M (ϕn(x)) = A·x.
+
+ −1−9 + 24
+
+−2 + 9
+
+ =
+
+−1
+ ,
+
+15
+7
+
+Beispiele 12.151 4 0
+
+−1
+ =
+(cid:125)
+(cid:123)(cid:122)
+ =
+−1
+.
+
+(cid:124)
+−1
+
+9 7 8
+2 2 3
+
+also L(A)
+
+0
+3
+
+A
+
+0
+3
+
+15
+7
+
+Deﬁnition 12.16 Sei V K-Vektorraum, B = (v1, . . . , vn) Familie von Vek-
+toren von V . Dann sei ΦB : K n → V die eindeutige lineare Abbildung mit
+ΦB(ei) = vi, i = 1, . . . , n. Sie ist genau dann ein Isomorphismus, wenn B eine
+Basis von V ist.
+In diesem Fall nennt man ΦB ein Koordinatensystem in V . F¨ur ein v ∈ V
+heißt x = (x1, . . . , xn) := Φ−1B (v) der Koordinatenvektor von v bzgl. B. Es
+gilt v = x1v1 + . . . + xnvn.
+Deﬁnition 12.17 Wir bezeichnen mit Kn = (e1, . . . , en) die kanonische Ba-
+sis von K n.
+
+(cid:18)cos α
+
+(cid:19)
+
+sin α
+
+(cid:19)
+• ΦKn = idKn
+
+(cid:18)− sin α
+
+, v2 =
+
+cos α
+
+Beispiele 12.18
+
+• v1 =
+
+α.
+
+∈ R2, Φ(v1,v2) = Fα: Drehung um Winkel
+
+Deﬁnition 12.19 Seien V, W K-Vektorr¨aume der Dimensionen n und m
+mit Basen A und B gegeben.
+
+53
+
+(i) Die Abbildung L(A,B) : M (m × n; K) → HomK(V, W ) sei durch
+
+A (cid:55)→(cid:0)ΦB ◦ L(A) ◦ Φ−1A : V → W(cid:1)
+
+deﬁniert.
+
+(ii) Die Abbildung M (A,B) : HomK(V, W ) → M (m × n; K) sei durch
+
+F (cid:55)→ M (Φ−1B ◦ F ◦ ΦA)
+
+deﬁniert.
+
+Bemerkung 12.20 Sei A = (v1, . . . , vn), B = (w1, . . . , wm), dann ist
+
+(cid:55)→ wi
+(cid:55)→ 0, l (cid:54)= j :
+
+L(A,B)(eij) : vj
+vl
+(cid:55)−→ 0
+(cid:55)−→ ei (cid:55)−→ wi.
+
+Φ−1A(cid:55)−→ el
+Φ−1A(cid:55)−→ ej
+
+L(eij )
+
+l (cid:54)= j und
+
+vl
+
+vj
+
+Allgemeiner gilt
+
+L(A,B)((aij)) : vl (cid:55)→ m(cid:88)
+
+aklwk : vl
+
+Φ−1A(cid:55)−→ el
+
+(cid:55)−→ m(cid:88)
+
+L((aij ))
+
+(cid:55)−→ m(cid:88)
+
+ΦB
+
+k=1
+
+aklek
+
+aklwk
+
+k=1
+
+k=1
+
+Damit sieht man auch, dass L(A,B) linear ist.
+Bemerkung 12.21 Die Deﬁnition von L(A,B) besagt gerade, dass das Dia-
+gramm
+
+K n
+
+ΦA
+
+V
+
+L(A)
+
+L(A,B)(A)
+
+K m
+
+ΦB
+
+/ W
+
+kommutativ ist.
+Dabei heißt ein Diagramm von Mengen und Abbildungen kommutativ, falls
+gilt: Sind X und Y zwei Mengen im Diagramm und sind f, g : X → Y
+zwei Abbildungen, die durch Komposition von Abbildungen des Diagramm
+entstehen, so ist f = g.
+Die Deﬁnition von M (A,B) besagt, dass
+
+K n L(M (A,B)(F ))/
+
+K m
+
+ΦA
+
+V
+
+ΦB
+
+/ W
+
+F
+
+54
+
+/
+/
+
+
+
+
+/
+/
+
+
+
+
+/
+kommutiert. L(A,B)(A) heißt die der Matrix A bzgl. der Basen A und B
+zugeordnete lineare Abbildung, M (A,B)(F ) heißt die der linearen Abbildung
+F bzgl. der Basen A und B zugeordnete Matrix.
+Wir k¨onnen den Sachverhalt auch so formulieren: M (A,B)(F ) · x ist der
+Koordinatenvektor von F (v) bzgl. B, wobei x der Koordinatenvektor von v
+bzgl. A ist.
+
+Satz 12.22 F¨ur K-Vektorr¨aume V und W (beide endlich-dimensional) mit
+Basen A und B sind die Abbildungen L(A,B) und M (A,B) zueinander in-
+vers. Insbesondere ist auch M (A,B) linear.
+
+Beweis: Es ist
+
+M (A,B)(L(A,B)(A)) = M (A,B)(ΦB ◦ L(A) ◦ Φ−1A )
+
+= M (Φ−1B ◦ ΦB ◦ L(A) ◦ Φ−1A ◦ ΦB)
+= M (L(A)) = A
+
+und
+
+L(A,B)(M (A,B)(F )) = L(A,B)(M (Φ−1B ◦ F ◦ Φ−1A ))
+
+= ΦB ◦ L(M (Φ−1B ◦ F ◦ Φ−1A )) ◦ Φ−1A
+= ΦB ◦ Φ−1B ◦ F ◦ ΦA ◦ Φ−1A = F
+
+(cid:3)
+Hierbei haben wir Satz 12.6 benutzt.
+Satz 12.23 Sei V endlich-dimensionaler Vektorraum und F : V → V En-
+domorphisms. Dann sind ¨aquivalent:
+
+(i) F ist Automorphismus.
+
+(ii) F ist injektiv.
+
+(iii) F ist surjektiv.
+
+(cid:3)
+Beweis: Dies folgt aus Satz 11.4.
+Lemma 12.24 Seien A, A(cid:48) ∈ M (m× n; K) und B, B(cid:48) ∈ M (n× r; K). Dann
+gilt A· (B + B(cid:48)) = A· B + A· B(cid:48) und (A + A(cid:48))· B = A· B + A(cid:48) · B. F¨ur λ ∈ K
+gilt A · (λB) = (λA) · B = λ(A · B).
+
+Beweis: Dies folgt aus Satz 12.9.
+
+(cid:3)
+
+55
+
+Satz 12.25 Die Menge M (n × n; K) ist mit Matrizenaddition und -multi-
+plikation als Verk¨upfung ein Ring.
+
+Beweis: Dies folgt aus Satz 12.10 und Lemma 12.24. En ist neutrales Element
+bzgl. ·.
+(cid:3)
+Satz 12.26 Eine Matrix A ∈ M (n × n; K) ist genau dann invertierbar im
+Ring M (n × n; K), wenn L(A) : K n → K n Automorphismus ist.
+
+⇒“: Ist B ∈ M (n× n; K) mit AB = BA = En, so ist L(B) inverse
+Beweis:
+”
+Abbildung von L(A).
+⇐“: Ist G inverse Abbildung zu L(A), so ist A· M (G) = M (G)· A = En. (cid:3)
+”
+Deﬁnition 12.27 Die Gruppe der Einheiten M (n × n; K)× wird mit
+GLn(K) bezeichnet.
+
+Bemerkung 12.28 Darstellende Matrizen von Vektorraumisomorphismen
+sind invertierbar.
+Deﬁnition 12.29 Sei V n-dimensionaler K-Vektorraum und A,B Basen
+von V . Dann heißt T := M (Φ−1B ◦ ΦA) = M (A,B)(idV ) ∈ GLn(V ) Trans-
+formationsmatrix des Basiswechsels A (cid:55)→ B.
+Bemerkung 12.30 Sei f¨ur v ∈ V ΦA(v) =: x ∈ K n der Koordinatenvektor
+von v bzgl. A. Dann ist T x = (Φ−1B ◦ ΦA)(Φ−1A (v)) = Φ−1B (v) der Koordina-
+tenvektor von v bzgl. B.
+Satz 12.31 Seien V, W endlich-dimensionale K-Vektorr¨aume und A,A(cid:48)
+bzw. B,B(cid:48) Basen von V bzw. W . Sei F ∈ HomK(V, W ). Sei A := M (A,B)(F )
+und B := M (A(cid:48),B(cid:48))(F ). Seien T = M (A,A(cid:48))(idV ) bzw. S = M (B,B(cid:48))(idW )
+die Transformationsmatrizen der Basiswechsel A (cid:55)→ A(cid:48) bzw. B (cid:55)→ B(cid:48). Dann
+ist B = SAT −1.
+Beweis: Es ist SAT −1 = M (Φ−1B ◦ ΦB) · M (Φ−1B ◦ F ◦ ΦA) · M (Φ−1A ◦ ΦA(cid:48)) =
+M (Φ−1B ◦ F ◦ ΦA(cid:48)).
+(cid:3)
+Deﬁnition 12.32 F¨ur ein F ∈ HomK(V, W ) sei rang F := dimK Im F .
+Deﬁnition 12.33 F¨ur A = (aij) ∈ M (m × n; K) sei
+
+ZR(A) := (cid:104)(ai1, . . . , ain) | i = 1, . . . , n(cid:105) ⊂ K n
+
+der Zeilenraum und
+
+SR := (cid:104)(a1j, . . . , amj) | j = 1, . . . , n(cid:105) ⊂ K m
+
+56
+
+der Spaltenraum von A.
+Es seien Zeilenrang (A) := dim ZR(A) und Spaltenrang (A) := dim SR(A).
+Satz 12.34 Seien V und W K-Vektorr¨aume und A,B Basen von V, W . Sei
+F ∈ HomK(V, W ). Dann ist Spaltenrang M (A,B)(F ) = rang F .
+Beweis: Sei A := M (A,B)(F ). Es ist SR(A) = Im L(A) = Φ−1B (Im(F )),
+(cid:3)
+also dim SR(A) = dim Im(F ) = rang F .
+∈
+Satz 12.35 Seien V, W endlich dimensionale K-Vektorr¨aume, F
+HomK(V, W ) und r := rang F . Dann existieren Basen A und B von V und
+W mit
+
+(cid:18)Er 0
+(cid:19)
+
+0
+
+0
+
+.
+
+M (A,B)(F ) =
+
+Sei
+
+eine Basis
+
+(w1, . . . , wr)
+
+Beweis:
+(w1, . . . , wr, wr+1, . . . wm) eine Erg¨anzung zu einer Basis von W .
+Sei vi ∈ V mit F (vi) = wi, i = 1, . . . , r und (ui, . . . , uk) eine Basis von
+Ker F . Nach dem Beweis von Satz 11.4 ist dann A := (v1, . . . , vr, u1, . . . , uk)
+eine Basis von V . Dann ist
+
+von
+
+Im F
+
+:=
+
+und B
+
+Er
+
+0
+...
+0
+
+0
+
+. . .
+
+ .
+
+. . . 0
+
+. . . 0
+
+M (A,B)(F ) =
+
+(cid:3)
+Deﬁnition 12.36 Seien A, B ∈ M (m × n; K). Wir nennen B ¨aquivalent
+zu A (in Zeichen A ∼ B), wenn es S ∈ GLm(K) und T ∈ GLn(K) gibt mit
+B = SAT −1.
+
+Bemerkung 12.37 Dies ist eine ¨Aquivalenzrelation (Warum?).
+Satz 12.38 F¨ur A, B ∈ M (m × n; K) sind ¨aquivalent:
+
+(i) B ist ¨aquivalent zu A.
+
+(ii) Spaltenrang A = Spaltenrang B.
+
+(iii) A und B beschreiben bzgl. geeigneter Basen dieselbe lineare Abbildung.
+
+57
+
+Beweis: (i) ⇒ (ii): dim Im L(A) = dim Im L(SAT −1).
+(ii) ⇒ (iii): Sei r = Spaltenrang A = Spaltenrang B. Sei
+: K n → K m.
+
+(cid:18)(cid:18)Er 0
+(cid:19)(cid:19)
+
+F := L
+
+0
+
+0
+
+Nach Satz 12.35 gibt es Isomorphismen Φ und Ψ, so dass
+
+K n
+
+Φ 
+K n
+
+F
+
+L(A)
+
+K m
+
+Ψ
+/ K m
+
+a11
+
+a1n
+
+Sei S :=
+
+.
+
+. . . an1
+...
+. . . ann
+
+kommutiert.
+Mit A := Φ−1(Kn) und B := Ψ−1(Km) ist dann A = M (A,B)(F )
+Entsprechend stellt B die Abbildung F bzgl. geeigneter Basen dar.
+(iii) ⇒ (i): Dies ist Satz 12.31.
+(cid:3)
+Satz 12.39 Seien A = (v1, . . . , vn) und B = (w1, . . . , wn) Basen eines Vek-
+torraums V .
+Sei wi = ai1v1 + . . . + ainvn, i = 1, . . . , n.
+
+Dann ist die Transformationsmatrix des Basiswechsels A (cid:55)→ B S−1.
+Beweis: Es ist S = M (B,A)(idV ), da die Spalten von S die Koordinaten-
+vektoren bzgl. A der Bilder der Basisvektoren von B unter idV sind. Damit
+ist M (A,B)(idV ) = S−1.
+(cid:3)
+
+13 Dualr¨aume
+Deﬁnition 13.1 Ist V ein K-Vektorraum, so heißt V ∗ := HomK(V, K), d.h.
+der Vektorraum der linearen Abbildungen ϕ : V → K, der zu V duale Vek-
+torraum (oder Dualraum von V ). Jedes ϕ ∈ V ∗ nennt man Linearform
+(oder lineares Funktional) auf V .
+
+Beispiele 13.2
+
+• Ist V = K n und sind a1, . . . , an ∈ K so ist durch
+
+ϕ : K n → K, (x1, . . . , xn) (cid:55)→ n(cid:88)
+
+aixi,
+
+i=1
+
+58
+
+/
+/
+
+
+/
+eine Linearform ϕ ∈ (K n)∗ deﬁniert.
+Es ist ϕ = L((a1, . . . , an)), wobei wir (a1, . . . , an) als 1 × n-Matrix
+auﬀassen.
+
+• Allgemein kann man eine lineare Abbildung F : K n → K m als m
+(cid:55)−→ F (x)i, i = 1, . . . , m.
+Linearformen auﬀassen, n¨amlich als die x
+Ist (aij) = M (F ), so ist ϕi = L((ai1, . . . , ain)). Mit A := (aij) ist die
+L¨osungsmenge des Gleichungssystems A · x = 0 gerade
+L = Ker L(A) = {x ∈ K n | A · x = 0}
+
+ϕi
+
+m(cid:84)
+
+= {x ∈ K n | ϕi(x) = 0 f¨ur i = 1, . . . , n}
+=
+
+Ker ϕi.
+
+i=1
+
+Man vergewissert sich auch, dass, falls W = (cid:104)ϕi | i = 1 . . . , n(cid:105) der von
+den ϕi aufgespannte Untervektorraum des (K n)∗ ist, gilt
+
+L = {x ∈ K n | ϕ(x) = 0∀ϕ ∈ W}.
+
+D.h. die L¨osungsmenge eines homogenen linearen Gleichungssystems
+h¨angt nur von dem von den zugeh¨origen Linearformen aufgespannten
+Untervektorraum des (K n)∗ ab.
+• C([0, 1]) stetige Funktionen auf
+
+[0, 1], dann ist C([0, 1]) (cid:51) f (cid:55)→
+f (x)dx ∈ R ein lineares Funktional auf C([0, 1]) und f¨ur a ∈ [0, 1]
+f (cid:55)→ f (a) ebenso.
+
+1(cid:82)
+
+0
+
+(cid:26) 1,
+
+0,
+
+Deﬁnition 13.3 F¨ur i, j ∈ N sei δij :=
+
+falls i = j
+sonst
+
+(das sogenannte Kronecker-Symbol).
+Satz 13.4 Sei V K-Vektorraum und B = (v1, . . . , vn) Basis von V .
+i ∈ V ∗ deﬁniert durch v∗
+F¨ur i ∈ {1, . . . , n} sei v∗
+n) eine Basis von V ∗, die zu B duale Basis.
+Dann ist B = (v∗
+i , . . . , v∗
+
+i (vj) = δij ∀j = 1, . . . , n.
+
+Beweis:
+
+• B∗ erzeugt V ∗: sei ϕ ∈ V ∗, λi := ϕ(vi), i = 1, . . . , n Ψ := λiv∗
+
+i + . . . +
+
+j (vj) = λj = ϕ(vj), j = 1, . . . , n, also ϕ = Ψ, da
+
+λnv∗
+n.
+Dann ist Ψ(vj) = λjv∗
+sie auf einer Basis ¨ubereinstimmen.
+
+59
+
+• da dim V ∗ = dim HomK(V, K) = dim M (1 × n, K) = n, muss B∗ auch
+
+linear unabh¨angig sein.
+
+(cid:3)
+Satz 13.5 Ist V K-Vektorraum und v ∈ V mit v (cid:54)= 0, so ∃ϕ ∈ V ∗ mit
+ϕ(v) (cid:54)= 0.
+Beweis: Erg¨anze (v) zu einer Basis (v, (vi)i∈I) von V und deﬁniere ϕ ∈ V ∗
+durch
+
+ϕ(v) = 1, ϕ(vi) = 0, i ∈ I,
+
+(cid:3)
+dann ist ϕ wie gew¨unscht.
+Bemerkung 13.6 Ist A = (v1, . . . , vn) eine Basis von V , so deﬁniert ΨA :
+V → V ∗, vi → v∗
+i , einen Isomorphismus. Dieser h¨angt aber i.A. von der Wahl
+der Basis ab.
+Sei a ∈ R\{0},dann ist (a) Basis des 1-dimensonalen R-Vektorraums R und
+
+Ψ(a) : R (cid:55)→ (R)∗
+
+a (cid:55)→ (a (cid:55)→ 1)
+1 (cid:55)→ (1 → 1
+a2 ),
+
+also sind die Ψ(a) i. A. verschieden f¨ur verschiedene a.
+Bemerkung 13.7 Da K n eine kanonische Basis hat (Kn), k¨onnen wir K n
+und (K n)∗ kanonisch identiﬁzieren: ΨKn : K n
+Der kanonische Isomorphismus K n ∼= HomK(K, K n) liefert eine Identiﬁkati-
+on K n ∼= M (n × 1; K), und wir haben (K n)∗ ∼= M (1 × n; K). Bzgl. dieser
+
+∼=−→ (K n)∗.
+
+Identiﬁkationen ist die Auswertungsabbildung
+(K n)∗ × K n → K
+
+gerade die Matrizenmultiplikation
+
+(ϕ, v)
+
+(cid:55)→ ϕ(v),
+
+(cid:55)→ n(cid:80)
+
+(M (1 × n; K) × M (n × 1; K) → M (1 × 1; K) ∼= K
+
+((a1, . . . , an), (x1, . . . , xn))
+
+aixi.
+
+i=1
+
+Wie betrachten nun den Dualraum des Dualraums, (V ∗)∗ = V ∗∗:
+Satz 13.8 Ist V K-Vektorraum, so wird durch ι : V → V ∗∗, v (cid:55)→ (ϕ (cid:55)→
+ϕ(v)), ein Monomorphismus erkl¨art. F¨ur dim V < ∞ ist ι Isomorphismus.
+
+60
+
+Beweis: Zun¨achst zeigen wir, dass f¨ur ein festes v ∈ V die Abbildung
+
+ιv : V ∗ → K, ϕ (cid:55)→ ϕ(v),
+
+linear ist: ϕ, ψ ∈ V ∗, dann ist
+
+ιv(ϕ + ψ) = (ϕ + ψ)(v) = ϕ(v) + ψ(v) = ιv(ϕ) + ιv(ψ),
+
+und f¨ur λ ∈ K ist
+
+ιv(λϕ) = λϕ(v) = λ · ϕ(v) = λιv(ϕ).
+
+Nun zeigen wir, dass ι linear ist:
+v, w ∈ V ,
+ιv+w(ϕ) = ϕ(v + w) = ϕ(v) + ϕ(w) = ιv(ϕ) + ιw(ϕ) = (ιv + ιw)(ϕ)∀ϕ ∈ V ∗
+⇒ ιv+w = cv + cw, und f¨ur λ ∈ K
+
+ιλv(ϕ) = ϕ(λv) = λϕ(v) = λιv(ϕ) = (λιv)(ϕ∀ ∈ V ∗
+
+also ιλv = λιv.
+ι ist Monomorphismus: v ∈ V mit ιv = 0, also ϕ(v) = 0 ∀ϕ ∈ V ∗,
+⇒ v = 0 mit Satz 13.5.
+Ist dim V < ∞, gilt mit Satz 13.4 dim V = dim V ∗ = dim V ∗∗, also ist ι
+(cid:3)
+Isomorphismus.
+
+Bemerkung 13.9 ι ist im Gegensatz zu den ΨA aus Bemerkung 13.6 ka-
+nonisch, also k¨onnen wir f¨ur dim V < ∞ V und V ∗∗ identiﬁzieren.
+Deﬁnition 13.10 Ist V K-Vektorraum und W ⊂ V ein Untervektorraum,
+so heißt
+
+W ⊥ := {ϕ ∈ V ∗ | ϕ(w) = 0 ∀w ∈ W} ⊂ V ∗
+
+der zu W orthogonale Raum.
+Bemerkung 13.11 W ⊥ ist Untervektorraum (Warum?).
+Bemerkung 13.12 W ⊥ ist die maximale Menge von ‘”Gleichungen“, die
+jedes w ∈ W erf¨ullt.
+Satz 13.13 Sei V endlich-dimensionaler K-Vektorraum, W ⊂ V Untervek-
+torraum, (w1, . . . , wk) Basis von W und (w1, . . . , wk, v1, . . . , vr) Basis von V .
+Sei (w∗
+r ) Basis von
+W ⊥. Insbesondere gilt dim W + dim W ⊥ = dim V .
+
+r ) die duale Basis. Dann ist (v∗
+
+1, . . . , w∗
+
+k, v∗
+
+1, . . . , v∗
+
+1, . . . , v∗
+
+61
+
+Beweis: (v∗
+1, . . . , v∗
+Also z.z.: W ⊥ = (cid:104)v∗
+i (wj) = 0, i = 1, . . . , r, j = 1, . . . , k ist (cid:104)v∗
+Wegen v∗
+Sei ϕ ∈ W ⊥. Dann ∃µ1, . . . , µk, λ1, . . . , λr ∈ K mit
+
+r ) ist linear unabh¨angig, da Teil einer Basis.
+i | i = 1, . . . , r(cid:105).
+
+i | i = 1, . . . , r(cid:105) ⊂ W ⊥
+
+ϕ = µ1w∗
+
+1 + . . . + µkw∗
+
+k + λ1v∗
+
+1 + . . . + λrv∗
+r .
+
+Einsetzen von wi, i = 1, . . . , k ergibt 0 = ϕ(wi) = µi, also ϕ ∈ (cid:104)v∗
+1, . . . , r(cid:105).
+
+i
+
+| i =
+(cid:3)
+
+Bemerkung 13.14 Sei V endlich-dimensionaler K-Vektorraum. Dann kom-
+mutiert
+
+V ∗∗ × V ∗ (α, ϕ)
+
+ι × id ∼=
+
+V × V ∗ (v, ϕ)
+
+α(ϕ)
+
+K
+
+ϕ(v)
+
+nach Deﬁnition von ι.
+Korollar 13.15 Sei V endlich-dimensionaler K-Vektorraum, und V ∗∗, wie
+in Bemerkung 13.9, mit V identiﬁziert. Dann gilt f¨ur jeden Untervektorraum
+W ⊂ V : (W ⊥)⊥ = W (also genauer ι−1((W ⊥)⊥) = W ).
+Beweis: Ist w ∈ W , so ist
+
+ι(w)(ϕ) = ϕ(w) = 0 ∀ϕ ∈ W ⊥,
+
+also ι(w) ∈ (W ⊥)⊥, damit W ⊂ (W ⊥)⊥.
+Wegen dim V = dim V ∗ folgt aus 13.13 dim W = dim(W ⊥)⊥, damit W =
+(cid:3)
+(W ⊥)⊥.
+Bemerkung 13.16 Sei W ⊂ V (V endlich-dimensional) Untervektorraum,
+W ⊥ die zugeh¨origen Gleichungen. Dann ist der Raum der v ∈ V , die alle
+Gleichungen aus W ⊥ erf¨ullen, wieder W .
+Deﬁnition 13.17 Seien V, W K-Vektorr¨aume, F : V → W linear.
+Dann ist die Abbildung F ∗ : W ∗ → V ∗, die durch ψ (cid:55)→ ψ ◦ F deﬁniert ist,
+die duale Abbildung von F .
+
+62
+
+Bemerkung 13.18 Die Abbildung F ∗ : W ∗ → V ∗ ist linear: Sind ϕ, ψ ∈
+W ∗ und λ, µ ∈ K, so ist
+F ∗(λϕ + µψ) = (λϕ + µψ) ◦ F = λ(ϕ ◦ F ) + µ(ψ ◦ F ) = λF ∗(ϕ) = µF ∗(ψ).
+Deﬁnition 13.19 Sei A = (aij) ∈ M (m× n; K). Dann ist die transponierte
+Matrix tA ∈ M (n × m; K) deﬁniert durch (i, j) (cid:55)→ aji, i = 1, . . . , n, j =
+1 . . . , m, also
+
+a11
+
+...
+a1n
+
+ .
+
+. . . am1
+...
+. . . amn
+
+tA =
+
+Bemerkung 13.20 M (m× n; K) → M (n× m; K), A (cid:55)→ tA, ist ein Isomor-
+phismus von K-Vektorr¨aumen. Es ist t(tA) = A.
+
+Satz 13.21 Seien V, W endlich-dimensionale K-Vektorr¨aume mit Basen
+A,B. Seien A∗, B∗ die dualen Basen von V ∗, W ∗. Dann gilt f¨ur jedes
+F ∈ HomK(V, W ): M (B∗,A∗)(F ∗) = t(M, (A∗,B∗)(F )).
+Beweis: Sei A = (v1, . . . , vn), B = (w1, . . . , wm),
+
+n, i = 1, . . . , m.
+
+A = (aij) = M (A,B)(F ) und B = (bji) = M (B∗,A∗)(F ∗)
+Dann ist F (vj) = aijw1 + . . . + amjwm, j = 1, . . . , n, und F ∗(w∗
+. . . + bniv∗
+Nach Deﬁnition der dualen Basis ist
+i (F (vj)) = aij und F ∗(w∗
+w∗
+Nach Deﬁnition von F ∗ ist
+F ∗(w∗
+
+i ◦ F, also aij = bji,
+
+i )(vj) = bji.
+
+i ) = w∗
+
+i ) = b1iv∗
+
+1 +
+
+was zu beweisen war.
+
+(cid:3)
+
+Korollar 13.22 Sind V, W endlich-dimensionale K-Vektorr¨aume, so ist die
+Abbildung
+
+(V, W ) → Hom
+
+(W ∗, V ∗), F (cid:55)→ F ∗,
+
+K
+
+Hom
+
+K
+
+ein Isomorphsimus.
+Beweis: n = dim V , m = dim W , A,B Basen von V, W , so ist nach 13.11
+das Diagramm
+
+HomK(V, W )
+M (A,B)
+M (m × n; K)
+
+HomK(W ∗, V ∗)
+M (B∗,A∗)
+/ M (n × m; K)
+
+F(cid:55)→F ∗
+
+A(cid:55)→tA
+
+63
+
+/
+/
+
+
+
+
+/
+kommutativ, womit die betrachtete Abbildung eine Komposition von Isomor-
+(cid:3)
+phismen, also selbst ein Isomorphismus ist.
+Lemma 13.23 Seine V, W, Z K-Vektorr¨aume, F ∈ HomK(V, W ), G ∈
+HomK(W, Z). Dann ist (G ◦ F )∗ = F ∗ ◦ G∗.
+Beweis: F¨ur ϕ ∈ Z∗ ist
+(F ∗◦G∗)(ϕ) = F ∗(G∗(ϕ)) = F ∗(ϕ◦G) = (ϕ◦G)◦F = ϕ◦(G◦F ) = (G◦F )∗(ϕ).
+(cid:3)
+Korollar 13.24 F¨ur A ∈ M (m×n; K), B ∈ M (r×n; K) ist t(B·A) = tA·tB.
+
+Beweis: Es ist
+
+t(B · A) = t(M (L(B · A))) 13.21= M (L(B · A)∗)
+
+= M ((L(B) ◦ L(A))∗) 13.23= M (L(A)∗ ◦ L(B)∗)
+13.21= M (L(tA) ◦ L(tB)) = tA · tB.
+
+(cid:3)
+Satz 13.25 Seien V, W endlich-dimensionale K-Vektorr¨aume und F ∈
+HomK(V, W ). Dann ist Im F ∗ = (Ker F )⊥.
+
+Beweis:
+
+• Im F ∗ ⊂ (Ker F )⊥ : ϕ ∈ Im F ∗, also ϕ = ψ ◦ F f¨ur ein ψ ∈ W ∗, damit
+gilt f¨ur v ∈ Ker F : ϕ(v) = (ψ ◦ F )(v) = ψ(F (v)) = ψ(0) = 0, also
+ϕ ∈ Ker F )⊥.
+
+• Sei W (cid:48) := Im F , (cid:101)F : V → W (cid:48).
+(cid:101)F ∗ : (W (cid:48))∗ → (Ker F )⊥ surjektiv ist, aber (cid:101)F ∗ ist injektiv (warum?), und
+
+Es ist W ∗ → (W (cid:48))∗ surjektiv (Basiserg¨anzung), also gen¨ugt es z.z., dass
+dim(W (cid:48))∗ = dim W (cid:48) = dim V − dim Ker F = dim(Ker F )⊥.
+
+v (cid:55)→ F (v)
+
+(cid:3)
+Korollar 13.26 F¨ur jede Matrix A ∈ M (m × n; K) gilt Zeilenrang A =
+Spaltenrang A.
+
+64
+
+Beweis: Wir haben L(A) : K n → K m und nach 13.21 L(A)∗ = L(tA) :
+(K m)∗ → (K n)∗.
+Dann gilt
+
+Spaltenrang A
+
+=
+
+(11.4)
+
+=
+
+(13.13)
+
+=
+
+(13.25)
+
+=
+=
+
+dim Im L(A)
+n − dim Ker L(A)
+dim(Ker L(A))⊥
+dim Im L(tA)
+Spaltenrang (tA) = Zeilenrang A.
+
+(cid:3)
+Deﬁnition 13.27 F¨ur A ∈ M (m×n; K) sei rang(A) := Spaltenrang (A) =
+Zeilenrang (A).
+
+14 Lineare Gleichungssysteme II
+
+Gegeben sei ein lineares Gleichungssystem
+
+a11x1 + . . . + a1nxn = b1
+...
+am1x1 + . . . + amnxn = bm
+
+...
+
+...
+
+¨uber einem K¨orper K, d.h. aij ∈ K, i = 1, . . . , m, j = 1, . . . , n, bi ∈ K,
+i = 1, . . . , m, und gesucht sind L¨osungen x = (x1, . . . , xn) ∈ K n. Setzen
+wir A = (aij) ∈ M (m × n; K), b = (b1, . . . , bm) ∈ K m, so k¨onnen wir das
+Gleichungssystem kompakt als Ax = b schreiben.
+Die L¨osungsmenge ist dann
+
+L = {x ∈ K n | Ax = b} = L(A)−1(b).
+
+Das Gleichungssystem Ax = 0 wird das zugeh¨orige homogene Gleichungssy-
+tem genannt; dessen L¨osungsmenge ist Ker L(A).
+
+Deﬁnition 14.1 F¨ur Teilmengen X, Y eines K-Vektorraums V sei
+
+X + Y := {x + y | x ∈ X, y ∈ Y } und
+X − Y := {x − y | x ∈ X, y ∈ Y }.
+
+Statt {x} + Y schreiben wir auc x + Y , etc.
+
+65
+
+Satz 14.2 Seien A ∈ M (m × n : K), b ∈ K m, L = {x ∈ K n | Ax = b} die
+L¨osungsmenge von Ax = b. Ist L (cid:54)= ∅ und x0 ∈ L, so ist L = x0 + Ker L(A),
+und Ker L(A) = L − L = L − x0 = x0 − L.
+Beweis: Sind x0 und x(cid:48)
+daraus folgt alles.
+
+0 zwei L¨osungen von Ax = b, so ist x0−x(cid:48)
+
+0 ∈ Ker L(A),
+(cid:3)
+
+Deﬁnition 14.3 Eine Teilmenge X eines K-Vektorraums V heißt aﬃner
+Unterraum, falls entweder X = ∅ oder ∃W ⊂ V Untervektorraum, v ∈ V ,
+mit X = v + W .
+
+Bemerkung 14.4
+
+bestimmt, denn es ist W = X − X.
+
+• falls X (cid:54)= ∅ ist das W in Deﬁnition 14.3 eindeutig
+
+• ist X (cid:54)= ∅, so gilt f¨ur jedes v ∈ X: X = v + W mit W = X − X.
+• L¨osungsmengen von linearen Gleichungssystemen sind damit aﬃne Un-
+
+terr¨aume.
+
+F¨ur einen aﬃnen Unterraum X ⊂ V sei
+
+(cid:26) −1
+
+dim X :=
+
+dim(X − X)
+
+X = ∅
+sonst.
+
+Lemma 14.5 Sei A ∈ M (m × n; K), b ∈ K m, S ∈ GLm(K). Dann haben
+die Gleichungssysteme Ax = b und SAx = Sb die gleichen L¨osungsmengen.
+
+Beweis: Ist Ax = b, so ist auch SAx = Sb (Mult. mit S von links), ist
+SAx = Sb so folgt S−1SAx = S−1Sb (Mult. mit S−1 von links), also Ax = b.
+(cid:3)
+Deﬁnition 14.6 Sei m ∈ N>0, i, j ∈ {1, . . . , m}, i (cid:54)= j, λ ∈ K. Es sei
+
+
+
+Pij =
+
+1
+
+. . .
+
+. . .
+
+. . .
+
+0
+. . .
+
+. . .
+
+1
+. . . 0 . . .
+1
+
+. . . 1 . . .
+
+...
+...
+...
+...
+...
+...
+...
+...
+...
+
+. . .
+
+. . .
+
+. . .
+
+66
+
+...
+...
+...
+...
+...
+...
+...
+...
+...
+
+. . . 1 . . .
+
+1
+. . . 0 . . .
+1
+
+0
+
+. . .
+
+. . .
+
+. . .
+
+. . .
+
+1
+
+
+
+,
+
+wobei die gestrichelten Linien die i-te und j-te Zeile bzw. Spalte signalisieren.
+
+Qij(λ) =
+
+1
+
+0
+. . .
+
+. . .
+
+. . .
+
+0
+
+...
+...
+...
+...
+1
+
+0
+
+0
+
+. . .
+. . . 1 . . . λ . . .
+0
+. . .
+
+. . .
+
+0
+
+Si(λ) =
+
+0
+. . .
+
+1
+
+0
+. . .
+
+0
+
+1
+. . . λ . . .
+1
+
+...
+...
+...
+...
+...
+...
+
+0
+
+. . .
+
+. . .
+0
+
+0
+
+1
+
+. . .
+
+ ,
+ , λ (cid:54)= 0,
+
+1
+
+wobei das λ in der i-ten Zeile und j-ten Spalte steht.
+
+
+
+
+...
+...
+
+...
+...
+
+wobei das λ in der i-ten Zeile und Spalte steht.
+Diese Matrizen nennt man die Elementarmatrizen. Es ist Pij = Pji.
+Zusammenhang zu den elementaren Umformungen aus Kap. 1:
+A ∈ M (m × n; K), dann Pij · A: Zeilen i und j von A vertauscht.
+Qij(λ) · A: Entsteht aus A durch Addieren des λ-fachen der j-ten Zeile zur
+i-ten Zeile.
+Si(λ) · A: Multipliziere die i-te Zeile von A mit λ.
+Grund:
+
+
+
+ a11
+
+...
+am1
+
+ =
+
+
+
+. . .
+
+a1n
+...
+. . . amm
+
+aj1
+
+0
+. . . ajn
+0
+
+ ,
+
+eij · A =
+
+. . .
+
+0
+0
+. . . 1 . . .
+
+. . .
+
+0
+
+0
+
+
+
+wobei die nichttriviale Zeile der letzten Matrix die i-te Zeile ist.
+¨Ahnlich gilt f¨ur n × n-Elementarmatrizen:
+A · Pij: Vertauschen der i-ten und j-ten Spalte.
+
+67
+
+A · Qij(λ): entsteht aus A durch Addition der λ-fachen der i-ten Spalte zur
+j-ten Spalte.
+A · Si(λ): Multipliziere die i-te Spalte von A mit λ.
+
+Bemerkung 14.7 Es gilt:
+
+• λ (cid:54)= 0; Qij(λ) = Sj(λ−1) · Qij(1) · Sj(λ)
+
+• Pij = Qji(1)Qij(−1)Qji(1)Sj(−1).
+
+Lemma 14.8 Die Elementarmatrizen sind invertierbar und ihre Inversen
+sind wieder Elementarmatrizen. Genauer:
+
+ij = Pij
+
+• P −1
+• Qij(λ)−1 = Qij(−λ)
+• Si(λ)−1 = Si(λ−1).
+
+Beweis: Interpretiere Mult. von links mit Elementarmatrizen als die ent-
+(cid:3)
+sprechenden Zeilenumformungen.
+Deﬁnition 14.9 Eine Matrix A ∈ M (m× n; K) hat Zeilenstufenform, wenn
+sie die Bedingung aus Deﬁnition 1.5 erf¨ullt, also
+
+
+
+ , aiji (cid:54)= 0.
+
+A =
+
+. . .
+
+. . .
+. . .
+...
+
+0 . . . 0 a1j1 . . .
+. . .
+0 . . . 0 . . . 0 a2j2
+...
+0 . . . . . .
+0
+...
+0
+
+. . . a1n
+. . . a2n
+...
+. . . 0 arjr . . . arn
+0
+...
+0
+
+Lemma 14.10 F¨ur eine Matrix A ∈ M (m × n; K) in Zeilenstufenformen
+mit r wie in Deﬁnition 14.9 bilden die ersten r Zeilen eine Basis von ZR(A),
+insbesondere ist rang(A) = r.
+
+Beweis: Die ersten r Zeilen sind oﬀensichtlich linear unabh¨angig, alle an-
+deren Zeilen sind 0, damit bilden die ersten r Zeilen eine Basis von ZR(A).
+(cid:3)
+Lemma 14.11 Ist A ∈ M (m × n; K) und S ∈ GLm(K), so ist ZR(A) =
+ZR(SA).
+
+68
+
+Beweis: Es ist ZR(A) = Im L(tA) = Im L(tAtS) = Im L(t(SA)) = ZR(SA).
+(cid:3)
+Lemma 14.12 Sei A ∈ M (m × n; K) dann gibt es Elementarmatrizen
+S1, . . . , Sl, so dass S1, . . . Sl · A Zeilenstufenform hat.
+
+Beweis: Multiplikation von links mit Pij entspricht einer elementaren Um-
+formung vom Typ I Tij (siehe Deﬁnition 1.3);
+
+Qij(λ) ⇐⇒ Typ II: Tij(λ)
+(Si(λ) ⇐⇒ Typ III: Ti(λ)),
+
+(cid:3)
+Damit liefert der Beweis von Satz 1.6 den Beweis des Lemmas.
+Dieses Gaußsche Eliminationsverfahren liefert einen Algorithmus zum L¨osen
+von linearen Gleichungssystemen Ax = b:
+Man wendet ihn auf die erweiterte Matrix (A, b) von Ax = b an:
+Man ﬁndet Elementarmatrizen S1, . . . , Sl, so dass S1 . . . , SlA Zeilenstufen-
+form hat, und berechnet gleichzeitig S1 . . . , Slb, indem man die Umformungen
+an (A, b) ausf¨uhrt.
+Das entstehende Gleichungssystem S1, . . . , SlAx = S1 . . . , Slb hat dieselben
+L¨osungen wie Ax = b (Lemma 14.5) und man l¨ost es wie vor und in Satz 1.8.
+Satz 14.13 Sei A ∈ GLn(K) (also rang A = n). Dann ist A (endliches) Pro-
+dukt von Elementarmatrizen. Man sagt daf¨ur auch, dass die Gruppe GLn(K)
+von den Elementarmatrizen erzeugt wird.
+
+Beweis: Nach Lemma 14.12 gibt es Elementarmatrizen S1, . . . , Sl, so dass
+S1, . . . , SlA =: B Zeilenstufenform hat:
+
+ , wegen rang B = n ist b11 (cid:54)= 0, . . . , bnn (cid:54)= 0.
+
+. . .
+. . .
+
+b1n
+...
+bnn
+
+b11
+
+0
+
+B =
+
+Nun beseitigt man b1n, . . . , bn−1,n mit Hilfe der
+letzten Zeile, dann
+b1,n−1, . . . , bn−2,n−1 mit Hilfe der vorletzten Zeile, usw. Schließlich normiert
+man die Diagonalelemente auf 1.
+⇒ ∃ Elementarmatrizen S(cid:48)
+1, . . . , S(cid:48)
+S(cid:48)
+1 . . . S(cid:48)
+S(cid:48)
+1 . . . S(cid:48)
+A = S−1
+folgt.
+
+1)−1, woraus mit Lemma 14.8 die Behauptung
+(cid:3)
+
+1 (S(cid:48)
+
+k, s.d.
+
+kB = En, also
+k, S1 . . . SlA = En, also
+k)−1 . . . (S(cid:48)
+
+. . . S−1
+
+l
+
+69
+
+Bemerkung 14.14 Der Beweis von Satz 14.13 liefert ein Verfahren zur Be-
+stimmung der Inversen einer Matrix A ∈ M (n × n; K): A muss nicht als
+invertierbar vorausgesetzt werden, das Verfahren gibt an, ob A invertierbar
+ist:
+Man f¨uhrt die Zeilenumformungen startend mit A auch parallel startend mit
+En durch. Nach Erreichen einer Zeilenstufenform von A sieht man, ob A
+invertierbar ist.
+Man bekommt parallel die Matrix S(cid:48)
+von A.
+
+kS1 . . . slEn = A−1, also die Inverse
+
+1 . . . S(cid:48)
+
+70
+
+Beispiele 14.15
+
+A =
+
+Q21(−2)−→
+
+P23−→
+
+Q32(10)−→
+
+Q23(− 1
+12 )−→
+
+Q13(− 1
+12 )−→
+
+Q12(−4)−→
+
+S3( 1
+
+12 )−→
+
+0 1 0
+0 0 1
+
+0 1
+1
+0 0 12
+
+0 0
+−2 1 0
+0 1
+0
+
+0 0
+0
+0 1
+−2 1 0
+
+4 −1
+1 −2
+0
+1
+0
+1
+4 −1
+1 −10
+2
+1
+0
+1
+4 −1
+1
+1
+1
+0 −10
+2
+
+1
+1 0 0
+
+
+1
+  1
+
+1
+  1
+
+ 1
+1 4 −1
+
+
+
+  1
+1 4 −1
+
+  5
+1 4
+
+  1
+1 0
+1 0 0
+
+
+ 1
+(cid:124)
+(cid:125)
+
+0
+0
+1
+−2 1 10
+
+0
+0
+0 1
+0 0 12
+
+0
+0 1
+0
+0 0 12
+
+6 − 1
+−2
+
+12
+1
+
+6 − 1
+−2
+
+12
+1
+
+6
+1
+
+6 − 1
+−2
+
+12
+1
+
+6
+1
+
+6 − 1
+(cid:123)(cid:122)
+− 1
+
+12
+1
+12
+=A−1
+
+6
+
+0 1
+0
+0 0 12
+
+0
+1
+6
+10
+
+5
+6
+1
+6
+10
+
+1
+6
+1
+6
+10
+
+0 1 0
+0 0 1
+
+1
+
+6
+1
+
+0
+0
+
+0
+
+1
+12
+
+5
+12
+
+5
+12
+
+1
+6
+1
+6
+5
+6
+
+Bemerkung 14.16 Sei A ∈ M (m × n; K), r = rang A. ¨Ahnlich wie gerade
+k¨onnen wir ein Verfahren zur Bestimmung von S ∈ GLm(K) und T −1 ∈
+GLn(K) angeben, s.d. SAT 1 =
+: Man f¨uhre A durch Mult. von links
+
+(cid:18)Er 0
+(cid:19)
+
+0
+
+0
+
+mit Elementarmatrizen in Zeilenstufenform ¨uber und f¨uhre die Umformungen
+
+71
+
+parallel startend mit Em durch:
+
+S1 . . . SlEm, B = S1 . . . SlA.
+
+Da B Zeilenstufenform hat, kann man durch Spaltenumformungen (Mult.
+
+mit Elementarmatrizen von recht) B auf die Form
+
+bringen:
+
+(cid:18)Er 0
+(cid:19)
+(cid:18)Er 0
+(cid:19)
+
+0
+
+0
+
+,
+
+0
+
+0
+
+BS(cid:48)
+
+1 . . . S(cid:48)
+
+k = S1 . . . SlAS(cid:48)
+
+1 . . . S(cid:48)
+
+k =
+
+also liefern S := S1 . . . Sl und T −1 := S(cid:48)
+Satz 14.17 Sei A ∈ M (m × n; K) und b ∈ K m.
+
+1 . . . S(cid:48)
+
+k das Gew¨unschte.
+
+(i) Ax = b ist genau dann l¨osbar (d.h. besitzt mindestens eine L¨osung),
+
+wenn rang A = rang(A, b).
+
+(ii) Ax = b ist genau dann universell l¨osbar (d.h. besitzt f¨ur jedes b ∈ K m
+
+mindestens eine L¨osung), wenn rang A = m gilt.
+
+(iii) Ax = b besitzt genau dann f¨ur alle b ∈ K m h¨ochstens eine L¨osung,
+
+wenn rang A = n gilt.
+
+Beweis: (i) Ax = b l¨osbar ⇐⇒ b ∈ Im L(A)
+⇐⇒ SR(A) = SR((A, b))
+⇐⇒ rang A = rang(A, b).
+(ii) Ax = b universell l¨osbar ⇐⇒ L(A) surjektiv
+⇐⇒ SR(A) = K m ⇐⇒ rang A = m
+(iii) Ax = b besitzt f¨ur jedes b ∈ K m h¨ochstens eine L¨osung ⇐⇒ L(A) injek-
+tiv ⇐⇒ Ker L(A) = {0} ⇐⇒ dim Ker L(A) = 0 ⇐⇒ dim Im L(A) = n
+(Dimensionsformel) ⇐⇒ rang A = n.
+(cid:3)
+Bemerkung 14.18 A ∈ M (m × n; K) in Zeilenstufenform, rang A = r,
+dann liefert das L¨osungsverfahren vor und in Satz 1.8 einen kanonischen
+Ismorphismus
+
+K n−r ∼=−→ Ker L(A),
+
+indem man die Komponenten von Vektoren aus dem K n−r als die freien
+Variablen interpretiert. Insbesondere hat man dann eine Basis der L¨osungs-
+raums von Ax = 0 gefunden.
+
+72
+
+

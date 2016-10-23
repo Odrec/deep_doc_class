@@ -1,0 +1,115 @@
+RBM 2014/15 Übung 5
+
+Herzlich Willkommen
+
+ 
+
+RBM WiSe 2014/2015       Übung 5       13.11.2014       Hannes Thomsen, Julian Maguhn
+
+Vergabe der Modellprojekte
+
+Thema
+Krankheitsausbreitung im Flugzeug
+Besucherzahlen einer Vorlesung
+Ringspezies
+Standing Ovations
+Arbeitsmarkt
+Freundschaftliches Verleihnetzwerk
+Grasarten
+Menschenfluss
+Infektionskrankheit
+Shared Space
+Rechts-Vor-Links vs. Vorfahrt
+Wasserwellen
+
+ 
+
+wird bearbeitet von
+Niklas + Fabian
+Vera + Leon
+Lasse + Julian
+Nico + Svantje
+
+Bernd + Kevin
+
+Michael + Jannes
+
+Alexander + René
+Focke
+
+RBM WiSe 2014/2015       Übung 5       13.11.2014       Hannes Thomsen, Julian Maguhn
+
+Wiederholung der letzten Stunde
+
+Räuber-Beute-Modell
+
+● Parallelen und Unterschiede zu gleichungsbasierten 
+
+Modellen: Oszillationen, aber auch Aussterben, ... 
+-> Vergleich DGL vs. RBM: siehe Vorlesung
+
+● Zwei Projektionen: Gitter und kontinuierlicher Raum
+
+● Bewegungsimplementierung im kontinuierlichen Raum
+
+● gezielte Bewegung hin zu Beute führt zu raschem 
+
+Aussterben der Schafe
+
+ 
+
+RBM WiSe 2014/2015       Übung 5       13.11.2014       Hannes Thomsen, Julian Maguhn
+
+Innovations-Diffusions-Modell
+
+heute:
+
+Innovations-Diffusions-Modell
+
+Diffusion einer Innovation
+
+in einem Netzwerk
+
+ 
+
+RBM WiSe 2014/2015       Übung 5       13.11.2014       Hannes Thomsen, Julian Maguhn
+
+Diffusion von Innovationen (I)
+
+ 
+
+RBM WiSe 2014/2015       Übung 5       13.11.2014       Hannes Thomsen, Julian Maguhn
+
+Diffusion von Innovationen (II)
+
+● Verbreitung einer Innovation in einem sozialen System
+
+● Üblicherweise: Sigmoider Verlauf der Menge von 
+Agenten, die die Innovationen übernommen haben
+
+● Persönlicher Austausch spielt dabei eine wesentliche 
+
+Rolle
+ → Nutzung von Netzwerken in der Modellierung
+
+ 
+
+RBM WiSe 2014/2015       Übung 5       13.11.2014       Hannes Thomsen, Julian Maguhn
+
+Innovations-Diffusions-Modell
+
+● Netzwerk-Projektion von Repast
+
+● gerichtete Kanten zeigen auf „Nachbarn“
+
+● Exposure-Threshold-Modell:
+
+Agent übernimmt Innovation, wenn Anteil der 
+Nachbarn, die Innovation übernommen haben, über 
+seinem individuellen Schwellwert liegt
+
+ 
+
+RBM WiSe 2014/2015       Übung 5       13.11.2014       Hannes Thomsen, Julian Maguhn
+
+

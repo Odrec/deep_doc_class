@@ -1,0 +1,565 @@
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                   Probe‐Klausur 
+
+STATISTIK I 
+
+Probe‐Klausur 
+
+ Ihr Vorname: 
+
+ Ihr Nachname: 
+
+ Ihre Matrikel‐Nr.: 
+
+ 
+
+ 
+
+ 
+
+ Studiengang (bitte ankreuzen): 
+
+  (cid:136)  B.Sc. Cognitive Science 
+  (cid:136)  B.Sc. Psychologie 
+  (cid:136)  anderer, und zwar: _____________________________
+
+ Semester im Studiengang: 
+
+  ___ . Semester 
+
+In der Klausur können maximal 22 Punkte erworben werden. Zum Bestehen sind 11 Punkte er‐
+forderlich.  Bei  jeder  der  16  Aufgaben  ist  jeweils  angegeben,  wie  viele  Punkte  es  für  die  
+korrekte Beantwortung gibt. 
+
+Bitte tragen Sie abschließend (!) die Lösungsbuchstaben der Aufgaben 1 bis 11 hier ein (Diese 
+Eintragungen gelten!): 
+
+1 
+
+ 
+
+2 
+
+ 
+
+3 
+
+ 
+
+4 
+
+ 
+
+5 
+
+ 
+
+6 
+
+ 
+
+7 
+
+ 
+
+8 
+
+ 
+
+9 
+
+ 
+
+10 
+
+11 
+
+ 
+
+ 
+
+Aufgabe Nr.: 
+
+Lösungs‐
+buchstabe: 
+
+ 
+
+Ich erkläre hiermit, dass ich die Klausur selbständig und ohne unerlaubte Hilfsmittel bearbeitet 
+habe und an der Universität Osnabrück eingeschrieben bin. 
+
+Unterschrift 
+
+ 
+ 
+ 
+ 
+ 
+
+Punktzahl: 
+
+Aufgabe Nr.: 
+
+1‐11 
+
+12 
+
+13 
+
+14 
+
+15 
+
+16 
+
+ 
+
+Maximalpunktzahl: 
+
+Punkte: 
+
+11 
+
+ 
+
+3 
+
+ 
+
+2 
+
+ 
+
+2 
+
+ 
+
+2 
+
+ 
+
+2 
+
+ 
+
+Gesamt 
+
+ 
+
+ 
+
+– 1 – 
+
+ 
+
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                   Probe‐Klausur 
+
+ 
+Bitte kreuzen Sie im Folgenden jeweils die richtige Antwort an. Es gibt bei jeder Frage genau 
+eine richtige Antwort [je 1 Punkt pro Frage]: 
+
+1. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+2. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+3. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+4. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+lineare Transformationen der Form x’ = a + b·x mit b > 0. 
+streng monoton wachsende Transformationen. 
+
+Bei einer Intervallskala sind zulässig beliebige … 
+(a) 
+(b) 
+(c)  Ähnlichkeitstransformationen der Form x’ = b·x mit b > 0. 
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (a) und (c) sind richtig. 
+(f) 
+
+Alle Aussagen (a) bis (c) sind richtig. 
+
+ist die Summe der Abweichungen 0. 
+ist die Summe der absoluten Abweichungen 0. 
+ist die Summe der quadrierten Abweichungen 0. 
+
+Vom arithmetischen Mittelwert … 
+(a) 
+(b) 
+(c) 
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (a) und (c) sind richtig. 
+(f) 
+
+Alle Aussagen (a) bis (c) sind falsch. 
+
+Rechnet man das monatliche Einkommen durch Multiplikation mit 12 in das Jahresein‐
+kommen um, so ändert sich … 
+(a)  die Varianz. 
+(b)  der Median. 
+(c) 
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (a) und (c) sind richtig. 
+(f) 
+
+die Produkt‐Moment Korrelation des Einkommens mit der Lebenszufriedenheit. 
+
+Alle Aussagen (a) bis (c) sind richtig. 
+
+fallen Modalwert und Median immer zusammen. 
+ist das erste gleich dem dritten Quartil. 
+ist der Exzess 0. 
+
+Bei einer symmetrischen Verteilung … 
+(a) 
+(b) 
+(c) 
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (a) und (c) sind richtig. 
+(f) 
+
+Alle Aussagen (a) bis (c) sind falsch. 
+
+ist ein Maß für die Richtung und die Enge des linearen Zusammenhangs. 
+ist niemals kleiner als die Produkt‐Moment Korrelation. 
+ändert sich bei linearen Transformationen der Variablen. 
+
+5.  Die Kovarianz zwischen zwei Variablen … 
+ 
+ 
+ 
+ 
+ 
+ 
+
+(a) 
+(b) 
+(c) 
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (a) und (c) sind richtig. 
+(f) 
+
+Alle Aussagen (a) bis (c) sind richtig. 
+
+ 
+
+ 
+
+– 2 – 
+
+ 
+
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                   Probe‐Klausur 
+
+ 
+
+6.  Die Partialkorrelation rXY.Z ... 
+ 
+
+−
+
+−
+
+x
+ˆ
+i
+
+)
+
+(c) 
+
+(a)  wird verwendet, um eine Mediatorhypothese zu prüfen. 
+(b) 
+
+ist  nur  sinnvoll  interpretierbar,  wenn  man  in  der  Studie  die  zu  kontrollierende 
+Variable konstant gehalten hat. 
+ist gleich 
+X und Y durch Z resultieren. 
+(d)  Nur (a) und (c) sind richtig. 
+(e)  Nur (b) und (c) sind richtig. 
+(f) 
+
+, wenn die Abweichungen aufgrund der Vorhersagen von 
+
+Alle Aussagen (a) bis (c) sind richtig. 
+
+(
+r y
+i
+
+y x
+ˆ
+,
+i
+i
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ist nur bei kleinen Stichproben sinnvoll. 
+führt dazu, dass der Standardfehler kleiner wird. 
+ist abhängig von der Größe der Stichprobe und der Größe der Population. 
+
+Alle Aussagen (a) bis (c) sind falsch. 
+
+(a) 
+(b) 
+(c) 
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (b) und (c) sind richtig. 
+(f) 
+
+7.  Die Endlichkeitskorrektur … 
+ 
+ 
+ 
+ 
+ 
+ 
+8.  Wenn zwei Ereignisse A und B unabhängig sind …  
+ 
+können sie nicht beide gleichzeitig eintreten. 
+ 
+ 
+ 
+ 
+ 
+
+(a) 
+(b)  dann ist P(A ∩ B) = P(A)·P(B). 
+(c) 
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (b) und (c) sind richtig. 
+(f) 
+
+Alle Aussagen (a) bis (c) sind richtig. 
+
+dann ist P(A⏐B) = P(B). 
+
+9. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Ein Konfidenzintervall wird breiter, wenn … 
+(a)  die Streuung des Merkmals größer ist. 
+(b)  α kleiner gewählt wird. 
+(c) 
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (a) und (c) sind richtig. 
+(f) 
+
+Alle Aussagen (a) bis (c) sind richtig. 
+
+die Stichprobe größer ist. 
+
+10.  Bei einem zweiseitig durchgeführten t‐Test für zwei Gruppen … 
+
+(a)  muss man sich festlegen, welches Vorzeichen der Effekt haben soll. 
+(b)  beträgt die Irrtumswahrscheinlichkeit 0.10 statt 0.05. 
+(c) 
+
+spielt die Richtung des Effektes in der Stichprobe (d.h. ob Gruppe 1 oder Gruppe 2 
+den höheren Mittelwert aufweist) für die statistische Entscheidung keine Rolle. 
+
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (a) und (c) sind richtig. 
+(f) 
+
+Alle Aussagen (a) bis (c) sind richtig. 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+– 3 – 
+
+ 
+
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                   Probe‐Klausur 
+
+ 
+
+11. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+In  einer  Studie  ergab  der  Mittelwertsvergleich  von  zwei  unabhängigen  Gruppen  mit 
+großen Stichprobenumfängen n1 und n2 im t‐Test ein statistisch signifikantes Ergebnis (α 
+= 0.05). Dann kann die Stärke des Effektes g … 
+(a) 
+(b) 
+(c) 
+(d)  Nur (a) und (b) sind richtig. 
+(e)  Nur (a) und (c) sind richtig. 
+(f) 
+
+sehr groß sein. 
+sehr klein sein. 
+aus der Kenntnis von n1, n2 und dem t‐Wert berechnet werden. 
+
+Alle Aussagen (a) bis (c) sind richtig. 
+
+Bitte beantworten Sie die folgenden Fragen (auf den leeren Seiten am Ende). 
+
+12.  Anhand der an einer Stichprobe von n = 20 Personen erhobenen Daten wurden folgende 
+
+Statistiken berechnet: 
+
+x
+
+=
+
+4.6,
+
+QS
+
+=
+
+n
+
+∑
+
+i
+
+1
+=
+
+(
+
+x
+i
+
+−
+
+2
+
+x
+
+)
+
+=
+
+2.2,
+
+Min
+
+=
+
+1,
+
+Range
+
+=
+
+10,
+
+Q
+1
+
+=
+
+2.5,
+
+Q
+3
+
+=
+
+5.5
+
+ 
+
+Welche der folgenden Aussagen sind sicher richtig (bitte jeweils ankreuzen) [insgesamt 3 
+Punkte]: 
+Max = 11 
+(cid:137) sicher richtig   (cid:137) falsch oder nicht entscheidbar 
+s = 0.116 
+(cid:137) sicher richtig   (cid:137) falsch oder nicht entscheidbar 
+IQA = 3 
+(cid:137) sicher richtig   (cid:137) falsch oder nicht entscheidbar 
+Md = 4.0 
+(cid:137) sicher richtig   (cid:137) falsch oder nicht entscheidbar 
+Md = 4.6 
+(cid:137) sicher richtig   (cid:137) falsch oder nicht entscheidbar 
+x80% ≥ 5.5  (cid:137) sicher richtig   (cid:137) falsch oder nicht entscheidbar 
+
+13.  Erläutern Sie, warum bei der Schätzung der Populationsvarianz in der Stichprobenvarianz 
+durch n − 1 (statt durch n) dividiert wird und welche Effekte es hat, dass im Zähler die 
+Abweichungen quadriert werden. [2 Punkte] 
+
+14.  Eine Person erhält in einem normalverteilten Test mit μ = 100 und σ = 10 zur Erfassung 
+
+der Konzentrationsfähigkeit einen Testwert von 96. [2 Punkte] 
+(a)  Welchen Prozentrang weist die Person auf?  
+(b)  Was bedeutet dieser Prozentrang?  
+(c)  Welchen Testwert muss man mindestens erhalten, um zu den besten 5 Prozent im  
+  Merkmal Konzentrationsfähigkeit zu gehören? 
+(d)  Wie wahrscheinlich ist es, dass bei einer Testung mit dem Konzentrationstest der  
+  Mittelwert einer Stichprobe der Größe 40 unter 102 liegt? 
+
+15.  Was  versteht  man  unter  dem  α‐  und  dem  β‐Fehler?  Unter  welchen  Umständen  ist  es 
+
+sinnvoll, die Irrtumswahrscheinlichkeit größer als 0.05 zu wählen? [2 Punkte] 
+
+16.  Wann  sollte  man  den  t‐Test  für  unabhängige  Stichproben,  wann  den  Welch‐Test  und 
+
+wann den Mann‐Whitney U‐Test verwenden? [2 Punkte] 
+
+ 
+
+ 
+
+– 4 – 
+
+ 
+
+

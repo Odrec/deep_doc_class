@@ -1,0 +1,2801 @@
+03/05/2016
+
+Introduction to CL
+
+Class Agenda
+
+Formal languages
+
+RegExp, FSA, 
+
+Phonetics
+
+Morphology 
+
+Syntax  (3/6)
+
+Semantics
+
+Human speech production
+
+FST, Mental Lexicon
+
+CFG, POS tagging, parsing
+
+compositional semantics, 
+reference, quantification
+
+Pragmatics & Discourse
+
+anaphora, implicatures
+
+Language processing
+
+experimental paradigms
+
+Lexical & Distributional 
+Semantics
+
+meaning representation,
+WSD, vector models, 
+
+Introduction to Computational Linguistics
+
+University of Osnabrück
+
+Cognitive Science BSc Programme
+
+Summer Term 2016
+
+Lecture 8
+
+Syntax 3: Syntactic Parsing
+
+Peter Bosch
+
+The material for this lecture series rests on contributions from many people, most of whom have taught parts of this class in earlier years: 
+Stefan Evert, Stefan Hinterwimmer, Graham Katz, Anke Lüdeling, Sabine Reinhard, Malte Wöstmann. It has also profited from the 
+interaction with tutors and students .  Further sources are listed in the Reference sections and on individual slides.
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Today’s agenda
+
+1.
+
+Syntactic Parsing
+
+2. Chart Parsing
+
+3. Human Parsing
+
+Syntactic parsing
+
+means
+
+
+
+recognizing a string of words as a sentence, and
+assigning a structure to it.
+
+The input of a parser is
+
+a string of words and
+a CF‐grammar.
+
+The output of a parser is
+
+a phrase structure tree (or parse tree).
+
+CFG is a declarative formalism.
+Accordingly, there are many possible parsing algorithms for CFGs
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+A Context‐free Grammar G is a 4‐tuple
+<N, S, P, S>
+ N: a finite set of non‐terminal symbols
+ Σ : a finite set of terminal symbols
+ SN: the start symbol
+ P: a set of production rules
+
+where  A  N  and    (Σ∪ N)*
+
+Production rules are of the type  A  
+
+An example of a phrase 
+structure grammar that 
+we saw earlier:
+
+S  NP   VP
+NP  Det N
+VP  VP   PP
+VP  V   NP
+PP  P  NP
+Det  {every, a}
+N  {boy, dog, stick}
+V  hit
+P  with
+
+A Context‐free Grammar G is a 4‐tuple
+<N, S, P, S>
+ N: a finite set of non‐terminal symbols
+ Σ : a finite set of terminal symbols
+ SN: the start symbol
+ P: a set of production rules
+
+where  A  N  and    (Σ∪ N)*
+
+Production rules are of the type  A  
+
+An example of a phrase 
+structure grammar that 
+we saw earlier
+in another format:
+N={S, NP, VP, PP, Det, N, V, P} 
+Σ ={every, a, boy, dog, stick,    
+
+hit, with} 
+
+S N
+P = {    
+
+S  NP   VP
+NP  Det N,
+VP  VP   PP,
+VP  V   NP,
+PP  P  NP }
+Det  {every, a}
+N  {boy, dog, stick}
+V  hit
+P  with
+
+1
+
+03/05/2016
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Syntactic parsing
+is needed for:
+
+• Grammar checking
+• Intermediate stage for semantic processing
+• Machine translation
+• Question answering
+• Information extraction
+• Speech recognition
+• etc.
+
+Syntactic parsing
+
+may be viewed as a search problem:
+
+The goal is to find all possible parse trees
+• whose root is the start symbol S, and
+• which cover exactly the input words
+
+The search space is defined by the grammar (find the tree(s) that fit   
+
+the string of input words in the forest defined by the grammar)
+
+The search strategy can be
+
+• top‐down or goal‐driven (starting with S)
+• bottom‐up or data‐driven (starting with the terminal string)
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+The grammar
+
+Top‐down parsing
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+The intended 
+
+output
+
+S
+
+book
+
+that
+
+flight
+
+The input sentence
+
+Top‐down parsing
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+The intended 
+
+output
+
+S
+
+VP
+
+book
+
+that
+
+flight
+
+The input sentence
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Top‐down parsing
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+The intended 
+
+output
+
+S
+
+VP
+
+V
+
+NP
+
+book
+
+that
+
+flight
+
+The input sentence
+
+Top‐down parsing
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+The intended 
+
+output
+
+S
+
+VP
+
+V
+
+NP
+
+Det
+
+Nom
+
+book
+
+that
+
+flight
+
+The input sentence
+
+2
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Top‐down parsing
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+The intended 
+
+output
+
+S
+
+VP
+
+V
+
+NP
+
+Det
+
+book
+
+that
+
+The input sentence
+
+Nom
+
+N
+
+flight
+
+Top‐down parsing
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+The intended 
+
+output
+
+S
+
+VP
+
+V
+
+NP
+
+Det
+
+book
+
+that
+
+The input sentence
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Top‐down parsing
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+The intended 
+
+output
+
+S
+
+VP
+
+V
+
+NP
+
+Det
+
+book
+
+book
+
+that
+
+The input sentence
+
+Nom
+
+N
+
+flight
+
+flight
+
+Top‐down parsing
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+The intended 
+
+output
+
+S
+
+VP
+
+V
+
+NP
+
+Det
+
+book
+
+that
+
+book
+
+that
+
+The input sentence
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+NP
+
+we only follow up 
+the first path in the 
+first pass
+
+
+
+
+
+Top‐down parsing – First pass 
+S     NP VP 
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+VP
+
+S
+
+S
+S
+
+Aux
+Aux
+
+NP
+
+VP
+
+S
+
+VP
+
+S
+
+NP
+
+VP
+
+
+
+
+
+Top‐down parsing – First pass 
+S     NP VP 
+S     Aux NP VP
+S     VP
+NP  Det  Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this  |  that |  ..
+P  from | to | on |  near |  ...
+
+03/05/2016
+
+Nom
+
+N
+
+flight
+
+flight
+
+Nom
+
+N
+
+flight
+
+flight
+
+3
+
+03/05/2016
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+
+
+
+
+
+
+
+Top‐down parsing – First pass 
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this |  that |  ..
+P  from | to | on |  near |  ...
+
+S
+
+Nom
+
+S
+
+VP
+
+VP
+
+NP
+
+Det
+
+NP
+
+PropN
+
+NP
+
+Det
+
+S
+
+Nom
+
+VP
+
+
+
+
+
+
+
+
+Top‐down parsing – First pass 
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this |  that |  ..
+P  from | to | on |  near |  ...
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+
+
+
+
+
+
+
+Top‐down parsing – First pass 
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this |  that |  ..
+P  from | to | on |  near |  ...
+
+
+
+
+
+Det
+
+NP
+
+N
+
+S
+
+Nom
+
+N
+
+NP
+
+Det
+
+S
+
+Nom
+
+NP
+
+VP
+
+Nom
+
+Det
+
+VP
+
+S
+
+Nom
+
+VP
+
+Nom
+
+PP
+
+
+
+
+
+
+
+
+Top‐down parsing – First pass 
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this |  that |  ..
+P  from | to | on |  near |  ...
+
+
+
+
+
+
+
+
+NP
+
+Det
+
+S
+
+Nom
+
+N
+
+VP
+
+V
+
+S
+
+NP
+
+VP
+
+Det
+
+Nom
+
+V
+
+NP
+
+N
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+
+
+
+
+
+
+
+Top‐down parsing – First pass 
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this |  that |  ..
+P  from | to | on |  near |  ...
+
+
+
+
+
+
+
+
+NP
+
+Det
+
+S
+
+Nom
+
+N
+
+VP
+
+V
+
+
+
+
+
+
+
+
+Top‐down parsing – First pass 
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+
+V  book | prefer | like | ...
+
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this | that |...
+P  from | to | on |  near |  ...
+
+
+
+
+
+
+
+
+
+
+NP
+
+S
+
+Nom
+
+N
+
+flight
+
+3
+
+VP
+
+V
+
+book
+
+3
+
+Det
+
+a
+
+4
+
+first pass results in junk:  36  incorrect  parse trees.
+
+since English has a few more than just 4 determiners, 3 
+nouns, and 3 verbs, in fact there would be a lot more junk.
+
+4
+
+03/05/2016
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Top‐down parsing – First pass 
+
+The parser builds up a very large search space, increased with each 
+rule application.
+Only when final, lexical, rules are not applicable – because the 
+terminal nodes don't match the input string – it turns out that a 
+whole pass through the search space can be eliminated, and a new 
+pass must be started. 
+This looks pretty inefficient.
+So perhaps we should start at the bottom?
+
+A bottom‐up strategy starts with the input sentence and results in S.
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Bottom‐up parsing
+
+Input  sentence: Book that flight
+
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this | that |...
+P  from | to | on |  near |  ...
+
+N     Det N
+
+Book that flight
+Nom
+Nom
+
+N    Det N 
+
+V     Det
+
+N
+
+Book that flight
+Nom
+
+V     Det
+
+N
+
+Book that flight
+
+Book that flight
+
+NP
+
+Nom
+
+Nom
+
+VP
+
+Nom
+
+N     Det N 
+
+V       Det N 
+
+NP
+
+Nom
+
+Book  that flight
+can't continue
+
+Book  that flight
+
+V    Det
+
+N 
+
+Book that
+
+flight
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Bottom‐up parsing
+
+Input  sentence: Book that flight
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Bottom‐up parsing
+
+Input  sentence: Book that flight
+
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this | that |...
+P  from | to | on |  near |  ...
+
+N     Det N
+
+Book that flight
+Nom
+Nom
+
+N    Det N 
+
+V     Det
+
+N
+
+Book that flight
+Nom
+
+V     Det
+
+N
+
+Book that flight
+
+Book that flight
+
+NP
+
+Nom
+
+Nom
+
+VP
+
+Nom
+
+N     Det N 
+
+V       Det N 
+
+NP
+
+Nom
+
+Book  that flight
+can't continue
+
+Book  that flight
+
+V    Det
+
+N 
+
+Book that
+
+flight
+
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this | that |...
+P  from | to | on |  near |  ...
+
+V     Det
+
+N
+
+Book that flight
+Nom
+
+V     Det
+
+N
+
+Book that flight
+
+VP
+
+Nom
+
+V       Det N 
+
+NP
+
+Nom
+
+Book  that flight
+
+V    Det
+
+N 
+
+Book that
+
+flight
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Bottom‐up parsing
+
+Input  sentence: Book that flight
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Bottom‐up parsing
+
+Input  sentence: Book that flight
+
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this | that |...
+P  from | to | on |  near |  ...
+
+V     Det
+
+N
+
+Book that flight
+Nom
+
+V     Det
+
+N
+
+Book that flight
+
+NP
+
+Nom
+
+V    Det
+
+N 
+
+VP
+
+Nom
+
+V       Det N 
+
+Book  that flight
+
+Book that
+
+flight
+
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this | that |...
+P  from | to | on |  near |  ...
+
+V     Det
+
+N
+
+Book that flight
+Nom
+
+V     Det
+
+N
+
+Book that flight
+
+NP
+
+Nom
+
+V    Det
+
+N 
+
+can't continue
+
+NP
+
+VP
+
+Nom
+
+V       Det N 
+
+Book  that flight
+
+Book that
+
+flight
+
+5
+
+03/05/2016
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Bottom‐up parsing
+
+Input  sentence: Book that flight
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Bottom‐up parsing
+
+Input  sentence: Book that flight
+
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this | that |...
+P  from | to | on |  near |  ...
+
+V     Det
+
+N
+
+Book that flight
+Nom
+
+V     Det
+
+N
+
+Book that flight
+
+NP
+
+Nom
+
+V    Det
+
+N 
+
+Book that
+
+flight
+
+S     NP VP  
+S     Aux NP VP
+S     VP
+NP  Det Nom
+NP  PropN
+Nom  N
+Nom  N  Nom
+Nom  Nom PP
+VP  V
+VP  V  NP
+PP  P  NP
+N  flight | book |  morning | ...
+V  book | prefer | like | ...
+Aux  does | ...
+PropN  Los Angeles | Chicago |  ...
+Det  a  |  the |  this | that |...
+P  from | to | on |  near |  ...
+
+V     Det
+
+N
+
+Book that flight
+Nom
+
+V     Det
+
+N
+
+Book that flight
+
+NP
+
+Nom
+
+S
+
+VP
+
+NP
+
+Nom
+
+V    Det
+
+N 
+
+V    Det
+
+N 
+
+Book that
+
+flight
+
+Book that
+
+flight
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Top‐down vs. bottom‐up parsing 
+
+Bottom‐up parser:
+
+‐
++
+
+Generates many sub‐trees that do not result in S
+Only generates trees that are consistent with the input 
+
+Top‐down parser:
+
++
+‐
+
+Only generates trees that result in S
+Spends much time on trees that are not consistent with
+the input
+
+Dynamic programming and chart parsers
+
+• Based on the principle of dynamic  programming: 
+
+tables (charts) of solutions to sub‐problems are systematically 
+filled in. 
+
+• Chart stores intermediate results:
+
+• Partial analyses ("hypotheses") for substrings do not have to be 
+
+computed repeatedly.
+
+• This solves the re‐parsing problem.
+
+• Both bottom‐up and top‐down chart parsers.
+
+• Top‐down algorithm: Earley parser [J&M, ch. 13]
+
+• Bottom‐up algorithm: Cocke‐Younger‐Kasami (CYK) [J&M, ch. 13]
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Dynamic programming and chart parsers: The CYK Algorithm
+
+Dynamic programming and chart parsers: The CYK Algorithm
+
+Grammar must be in 
+Chomsky Normal Form (CNF)
+Chomsky normal form for a CFG
+1. All rules (productions, PS‐rules) are
+
+of the form A  BC  or A  α
+(i.e. the structures are at most binary 
+branching)
+
+2. No empty strings ( ε)
+
+A CFG for our example:
+
+• Syntactic rules:
+S  NP VP
+VP  V NP
+NP  Det Nom | Det N
+Nom  Adj N
+
+• Lexical rules:
+
+V  chased | saw | hit
+Det  the | a
+Adj  black | young
+N  cat | dog | rat
+
+Starting point is
+
+a representation of the sentence showing positions and word indices
+
+.0 w1 .  1 w2 .  2 w3 .  3 w4 .  4 w5 .  5 w6 .6
+
+Example:
+
+.0 The1 . 1 black2 . 2 dog3 . 3 saw4 . 4 a5 . 5 cat6 .6
+
+6
+
+03/05/2016
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Dynamic programming and chart parsers: The CYK Algorithm
+
+Starting point is
+
+a representation of the sentence showing positions and word indices
+
+.0 w1 .  1 w2 .  2 w3 .  3 w4 .  4 w5 .  5 w6 .6
+
+Example:
+
+.0 The1 . 1 black2 . 2 dog3 . 3 saw4 . 4 a5 . 5 cat6 .6
+
+Dynamic programming and chart parsers: The CYK Algorithm
+o The chart for a string of lenth n is an n x n matrix.
+o Each field (i,j) of the matrix encodes the set of all syntactic categories
+
+that start at position i and end at position j.
+Example of an input sentence with six words:
+
+.0 w1 .1 w2 .2 w3 .3 w4 .4 w5 .5 w6 .6
+
+0‐1
+
+From i↓         to j→ 1
+0
+1
+2
+3
+4
+5
+
+2
+0‐2
+1‐2
+
+3
+0‐3
+1‐3
+2‐3
+
+4
+0‐4
+1‐4
+2‐4
+3‐4
+
+5
+0‐5
+1‐5
+2‐5
+3‐5
+4‐5
+
+6
+0‐6
+1‐6
+2‐6
+3‐6
+4‐6
+5‐6
+
+set up the 
+chart
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+fill in the 
+words
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Dynamic programming and chart parsers: The CYK Algorithm
+.0 w1 .1 w2 .2 w3 .3 w4 .4 w5 .5 w6 .6
+.0 The1 .1 black2 .2 dog3 .3 saw4 .4 a5 .5 cat6 .6
+i  ↓ j→ 1
+0
+
+0‐1 The 0‐2
+
+5
+0‐5
+
+3
+0‐3
+
+4
+0‐4
+
+2
+
+6
+0‐6
+
+Dynamic programming and chart parsers: The CYK Algorithm
+.0 w1 .1 w2 .2 w3 .3 w4 .4 w5 .5 w6 .6
+.0 The1 .1 black2 .2 dog3 .3 saw4 .4 a5 .5 cat6 .6
+i  ↓ j→ 1
+0
+
+0‐1 The 0‐2
+
+5
+0‐5
+
+3
+0‐3
+
+4
+0‐4
+
+2
+
+6
+0‐6
+
+1
+
+2
+3
+4
+5
+
+1‐2 black 1‐3
+
+1‐4
+
+1‐5
+
+1‐6
+
+2‐3 dog
+
+2‐4
+3‐4 chased
+
+2‐5
+3‐5
+4‐5   a 
+
+2‐6
+3‐6
+4‐6
+5‐6 cat
+
+1
+
+2
+3
+4
+5
+
+1‐2 black 1‐3
+
+1‐4
+
+1‐5
+
+1‐6
+
+2‐3 dog
+
+2‐4
+3‐4 saw
+
+2‐5
+3‐5
+4‐5   a  
+
+2‐6
+3‐6
+4‐6
+5‐6 cat
+
+lexical chart 
+fill
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+lexical chart 
+fill
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Dynamic programming and chart parsers: The CYK Algorithm
+V  chased | saw | hit
+.0 w1 .1 w2 .2 w3 .3 w4 .4 w5 .5 w6 .6
+Det  the | a
+Adj  black | young
+.0 The1 .1 black2 .2 dog3 .3 saw4 .4 a5 .5 cat6 .6
+N  cat | dog | saw
+i ↓ j→ 1
+0
+
+2
+0‐2
+
+4
+0‐4
+
+5
+0‐5
+
+6
+0‐6
+
+3
+0‐3
+
+0‐1 The
+{Det}
+
+1
+
+1‐2 black
+{Adj}
+
+1‐3
+
+1‐4
+
+1‐5
+
+1‐6
+
+2
+3
+4
+5
+for j := 1 to length(string)
+
+lexical_chart_fill (j‐1, j)           
+
+fill field that contains a word with the
+pre‐terminal category of the word
+
+2‐3 dog {N} 2‐4
+
+3‐4 saw {V,N}
+
+2‐5
+3‐5
+4‐5 a {Det}
+
+2‐6
+3‐6
+4‐6
+5‐6 cat {N}
+
+Dynamic programming and chart parsers: The CYK Algorithm
+V  chased | saw | hit
+Det  the | a
+Adj  black | young
+N  cat | dog | saw
+
+for j := 1 to length(string)
+
+lexical_chart_fill (j‐1, j)           
+
+Idea:  Lexical look‐up: Each field (j‐1, j) in the chart is filled with the
+
+pre‐terminal category dominating word j.
+
+Realization:
+
+chart(j‐1, j) := {X | [X  wordj ]  P}
+
+e.g. 
+
+for j=1 (i.e. column 1):
+
+chart(0,1):= Det
+because: 
+
+(fill in: Det)        
+
+wordj =The
+[Det  The]  P
+
+7
+
+03/05/2016
+
+lexical chart 
+fill
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+syntactic 
+chart fill
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Dynamic programming and chart parsers: The CYK Algorithm
+V  chased | saw | hit
+.0 w1 .1 w2 .2 w3 .3 w4 .4 w5 .5 w6 .6
+Det  the | a
+Adj  black | young
+.0 The1 .1 black2 .2 dog3 .3 saw4 .4 a5 .5 cat6 .6
+N  cat | dog | saw
+i ↓ j→ 1
+0
+
+2
+0‐2
+
+4
+0‐4
+
+5
+0‐5
+
+6
+0‐6
+
+3
+0‐3
+
+0‐1 The
+{Det}
+
+Dynamic programming and chart parsers: The CYK Algorithm
+.0 w1 .1 w2 .2 w3 .3 w4 .4 w5 .5 w6 .6
+.0 The1 .1 black2 .2 dog3 .3 saw4 .4 a5 .5 cat6 .6
+i ↓ j→ 1
+0
+
+S  NP VP
+VP  V NP
+NP  Det Nom | Det N
+Nom  Adj N
+
+3
+0‐3  NP
+
+6
+0‐6   S
+
+2
+0‐2
+
+4
+0‐4
+
+5
+0‐5
+
+0‐1 The
+{Det}
+
+1
+
+1‐2 black
+{Adj}
+
+1‐3
+
+1‐4
+
+1‐5
+
+1‐6
+
+1
+
+1‐2 black
+{Adj}
+
+1‐3  Nom 1‐4
+
+1‐5
+
+1‐6
+
+2
+3
+4
+5
+for j := 1 to length(string)
+
+2‐3 dog {N} 2‐4
+
+3‐4 saw {V,N}
+
+2‐5
+3‐5
+4‐5 a {Det}
+
+2‐6
+3‐6
+4‐6
+5‐6 cat {N}
+
+lexical_chart_fill (j‐1, j)           
+
+lexical_chart_fill (j‐1, j)           
+
+2‐3 dog {N} 2‐4
+
+3‐4 saw {V,N}
+
+2
+3
+4
+5
+for j := 1 to length(string)
+
+2‐5
+3‐5
+4‐5 a {Det}
+
+2‐6
+3‐6  VP
+4‐6  NP
+5‐6 cat {N}
+
+for i := j‐2 down to 0
+
+syntactic_chart_fill (i,j)  
+
+syntactic 
+chart fill
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Dynamic programming and chart parsers: The CYK Algorithm
+
+Dynamic programming and chart parsers: The CYK Algorithm
+The complete CYK Algorithm
+
+for i := j‐2 down to 0
+
+syntactic_chart_fill (i,j)  
+
+Idea:  Perform all reduction steps (applying PS rules from right to left) 
+
+using syntactic rules in the grammar such that the reduced
+symbol covers the string from i to j.
+
+Realization:
+
+for j:=j‐2 down to 0
+chart(i,j) :={ }
+
+For k := i+1 to j‐1
+
+for every A  BC  P
+
+if Bchart(i,k) and Cchart(k,j) then
+chart(i,j) := chart(i,j)  {A}
+
+Input: Start category S and input string
+
+for j := 1 to length(string)
+
+chart(j‐1, j) := {X | X  wordj  P}
+for i := j‐2 down to 0
+
+chart(i,j) := { }
+for k := i+1 to j ‐1
+
+for every A  BC  P
+
+if B  chart(i,k) and C  chart(k, j), then
+
+chart(i,j) := chart(i,j)  {A}
+
+Syntactic Parsing
+
+S  NP VP
+VP  V NP
+NP  Det Nom | Det N
+Nom  Adj N
+V  chased | saw | hit
+Dynamic programming and chart parsers: The CYK Algorithm
+Det  the | a
+.0 The1 .1 black2 .2 dog3 .3 saw4 .4 a5 .5 cat6 .6
+Adj  black | young
+N  cat | dog | rat
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+1
+The
+
+Det
+
+2
+The 
+black
+
+black
+Adj
+
+3
+The black 
+dog
+NP
+NP
+black dog
+Nom
+dog
+N
+N
+
+4
+The black dog
+saw
+
+5
+The black dog
+saw a 
+
+6
+The black dog saw a 
+cat
+S
+S
+
+black dog saw black dog saw a  black dog saw a cat
+
+dog saw
+
+dog saw a 
+
+dog saw a cat
+
+saw
+V
+V
+
+saw a
+
+a
+Det
+Det
+
+saw a cat
+VP
+VP
+a cat
+NP
+NP
+cat
+N
+N
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Dynamic programming and chart parsers: The CYK Algorithm
+The CYK Algorithm
+
+So far, all we have is a recognizer (tells us if the parse results in S)
+
+To get a parser (that gives us the syntactic trees), 
+
+we store in each field not only the mother symbol, but also the
+daughters and their field numbers.
+
+This gives us the following chart: 
+
+8
+
+03/05/2016
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Human Parsing
+
+Is syntactic analysis actually a part of human sentence comprehension?
+
+Do humans actually parse sentences when they understand them?
+
+We had seen already that the ambiguity of some sentences  and 
+phrases (visiting relatives, elephant in my pyjamas,..) correlates 
+with differences in syntactic analysis.
+
+We will now look at further evidence for human parsing...
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+S  NP VP
+VP  V NP
+NP  Det Nom | Det N
+Nom  Adj N
+Dynamic programming and chart parsers: The CYK Algorithm
+i ↓ j→ 1
+0
+
+Det
+
+4
+
+5
+
+6
+S
+(NP; 0,3)
+(VP; 3.6)
+
+3
+NP
+(Det;  0,1)
+(Nom; 1,3)
+Nom
+(Adj; 1,2)
+(N; 2,3)
+N
+
+2
+
+Adj
+
+S
+
+1
+
+2
+3
+
+4
+
+5
+
+NP              VP
+
+Det Nom      V     NP
+N       Det
+
+Adj
+
+N
+
+V
+
+Det
+
+VP
+(V; 3,4)
+(NP; 4,6)
+NP
+(Det; 4,5)
+(N; 5,6)
+N
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Class room experiment:  Is this a sentence of German? 
+
+Is this a sentence of English? 
+
+Königin Isabella I. von Kastilien, die Auftraggeberin von 
+Columbus, glaubte, dass der Entdecker von Amerika 
+schon lange vorher erfahren hatte.
+
+Königin Isabella I. von Kastilien, die Auftraggeberin von 
+Columbus, glaubte, dass der Entdecker  [short pause] 
+von Amerika schon lange vorher erfahren hatte.
+
+incorrect parse: 
+
+"von Amerika" is not part of 
+a nominal with the head "Entdecker"
+
+Since Peter has been jogging a mile seems a short distance to him.
+
+Since Peter has been jogging, [short pause]
+
+a mile seems a short distance to him.
+
+incorrect parse: "a mile" is not the object of "jogging"
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+The garden path effect 
+It seems that an incorrect syntactic analysis of certain parts of these
+sentences disables the completion of the parse.
+The garden path effect would thus demonstrate that syntactic analysis is
+actually part of sentence comprehension. 
+
+The garden path effect results from a processing difficulty: 
+
+• break down of processing, or
+•
+
+increased processing cost, due to back‐tracking
+
+Increased processing cost can be measured: by reading time
+
+A common method: Self‐paced reading
+
+o words presented one after another
+o subject presses a button for each word
+o times between button presses are recorded
+
+9
+
+03/05/2016
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Self‐paced reading
+
+theexam
+fail
+If 
+studentwill
+theyknowthe
+
+Self‐paced reading
+Why is there a slow‐down after will?
+
+700
+600
+500
+400
+300
+200
+100
+0
+
+if
+
+they
+
+know
+
+the
+
+student will
+
+fail
+
+the
+
+exam
+
+700
+600
+500
+400
+300
+200
+100
+0
+
+if
+
+they
+
+know
+
+the
+
+student will
+
+fail
+
+the
+
+exam
+
+* a comprehension difficulty usually does not show up in the reading time of the word that causes 
+the difficulty, but in the reading tome of the following words.
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Suppose each incoming word is added to the tree in the simplest 
+possible way:
+
+Suppose each incoming word is added to the tree in the 
+structurally simplest possible way:
+
+S
+
+S
+
+VP
+
+NP
+
+?
+
+Conj
+
+NP
+
+V
+
+Det
+
+N
+
+Aux V
+
+If      they   know      the   student   will     fail ...
+
+delay
+
+S
+
+S
+
+VP
+
+two  new 
+nodes need 
+to be added
+
+VP
+
+S
+NP
+
+V
+
+Det
+
+N
+
+Conj
+
+NP
+
+Aux V
+If      they   know      the   student   will     fail
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Explaining the processing difficulty
+
+A: The Universal Grammar explanation
+Suppose Universal Grammar contains the following
+The Minimal attachment principle:
+
+Each new incoming word is added to the phrase structure 
+representation with the least possible number of new 
+syntactic phrase nodes needed. 
+
+(Clifton & Ferreira 1987)
+
+Minimal attachment 
+The right structure uses an extra S node
+
+S
+
+S
+
+VP
+
+NP
+
+S
+
+S
+
+VP
+
+S
+NP
+
+Conj
+
+NP
+
+V
+
+Det
+
+N
+
+Conj
+
+NP
+
+V
+
+Det
+
+N
+
+If      they   know      the   student...
+
+If      they   know      the   student ...
+
+[Frazier 1987]
+
+10
+
+03/05/2016
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+The classic example for the Gardenpath Effect
+
+The horse raced past the barn fell.
+
+S
+
+NP
+
+N
+
+Det
+The    horse
+
+VP
+
+V
+
+PP
+
+?
+
+raced
+
+past the barn 
+
+fell.
+
+The classic example
+
+S
+
+NP
+
+Det
+
+Nom
+
+VP
+
+2 extra 
+phrasal nodes
+
+N
+
+AP
+
+Adj
+
+PP
+
+V
+
+The  
+
+horse
+
+raced
+
+past the barn fell.
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Minimal attachment 
+
+B. The interactional explanation
+
+If Mininal Attachment operates in sentence processing, the
+Garden Path effect is explained as a result of parsing the incoming
+sentence bottom‐up .
+
+When you read a sentence out of the blue, some autonomous 
+grammatical principle, like minimal attachment, seems to operate. 
+
+But pure bottom‐up processes are rare in cognition: 
+
+Usually there is some form of interacting top‐down 
+processing; some form of priming or expectation
+
+Two horses were being raced down on the farm. One jockey rode his
+horse around on the pasture. A second was riding near the barn. The 
+horse in the pasture had no trouble. But...
+
+... the horse raced past the barn fell. 
+
+No gardenpath effect!
+
+If there is a suitable semantic expectation, set up by discourse, the 
+garden path effect does not arise:
+
+Syntactic analysis in human comprehension seems to interact 
+with semantic expectations.
+[[[
+
+[Altmann &  Steedman 1988]
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Semantic expectations:
+A cross‐modal priming experiment
+
+landing planes : landing as an adjective or a gerund?
+
+acoustic prime with adjectival bias:  
+If you walk too near the runway, landing planes...
+
+(visual probe: are/is)
+
+acoustic prime with gerund bias: 
+If you’ve been trained as a pilot, landing planes .... 
+
+(visual probe: are/is)
+
+The probe favoured by the bias has much shorter naming latency! 
+
+[Tyler & Marslen‐Wilson 1980]
+
+
+
+
+
+
+
+We saw arguments for the assumption that syntactic
+analysis is part of human sentence comprehension.
+But preceding discourse may have a top‐down 
+influence on syntactic analysis
+Hence, even though grammar is possibly a separate 
+module of cognition, it interacts with other modules
+
+11
+
+03/05/2016
+
+Syntactic Parsing
+
+Syntactic Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Parsing with CFG     Chart Parsing    Human Parsing
+
+Further reading:
+
+Parsing in CL:
+Jurafsky & Martin, Chapter 13
+Eugene Charniak: Statistical Language Learning. MIT Press.1993. Ch.1 & 5
+
+Homework assignment 3
+can be downloaded from stud.IP.  Due on  12 May, 2016
+
+Human parsing:
+Altmann, G., & M. Steedman 1988. Interaction with context during human 
+
+sentence processing. Cognition 30,191–238.
+
+Ch. 4
+
+Frazier, L. (1987). Theories of sentence processing. In J. Garfield (Ed.), 
+
+Modulariry in knowledge representation and natural language processing 
+(pp. 493‐522). Cambridge, MA: MIT Press.
+
+L.K.Tyler & W.D. Marslen‐Wilson 1977. The On‐Line Effects of Semantic Context 
+
+on Syntactic Processing . J. Verbal Learning & Verb Behavior 16, 683‐692
+Matthew J. Traxler: Introduction to Psycholinguistics. Wiley‐Blackwell. 2012, 
+
+Introduction to CL
+
+Outlook
+
+Formal languages
+
+RegExp, FSA, 
+
+Phonetics
+
+Morphology 
+
+Syntax  (4/6)
+
+Semantics
+
+Human speech production
+
+FST, Mental Lexicon
+
+CFG, POS tagging, parsing
+
+compositional semantics, 
+reference, quantification
+
+Pragmatics & Discourse
+
+anaphora, implicatures
+
+Language processing
+
+experimental paradigms
+
+Lexical & Distributional 
+Semantics
+
+meaning representation,
+WSD, vector models, 
+
+12
+
+

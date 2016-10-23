@@ -1,0 +1,733 @@
+Action & Cognition 1 Tutorial
+
+Week 9: Color, V4, FEF
+
+Lilli Kaufhold
+
+11.12.2014
+
+ 
+
+ 
+
+Last Week's Questions
+
+1. Describe the process of color vision including the role of 
+
+illumination, scene and cones.
+
+2. What is color constancy?
+3. What are metamers?
+4. What are double opponent receptive fields?
+5. How can you objectively determine color blindness?
+6. What is synesthesia?
+7. Give an account of a typical case of Grapheme --> Color 
+
+Not Covered Yet!
+
+synesthesia. Include etiology, symptoms and objective 
+measurement.
+
+New!
+
+New!
+
+ 
+
+ 
+
+Warm Up
+
+Add the missing entries in the table!
+
+Method
+
+Signal Source
+
+Spatial 
+Resolution
+
+Temporal 
+Resolution
+
+Burden On 
+Subject
+
+Setup
+
+EEG
+
+LFP
+
+fMRI
+
+PET
+
+ 
+
+?
+
+?
+
+?
+
+poor - 40mm
+
+?
+
+low / 
+harmless
+
+mobil
+
+very good - 
+0.51mm
+
+good - 0.01s
+
+very high
+
+mobil
+
+?
+
+?
+
+moderate
+
+stationary
+
+special (decay of 
+radioactive 
+markers)
+
+good - 7mm very poor - 1h
+
+stationary
+
+?
+
+ 
+
+[1]
+
+Warm Up
+
+Add the missing entries in the table!
+
+Method
+
+Signal Source
+
+Spatial 
+Resolution
+
+Temporal 
+Resolution
+
+Burden On 
+Subject
+
+Setup
+
+EEG
+
+electromagnetic poor - 40mm good - 0.01s
+
+low / 
+harmless
+
+mobil
+
+LFP
+
+fMRI
+
+PET
+
+ 
+
+electromagnetic very good - 
+
+0.51mm
+
+good - 0.01s
+
+very high
+
+mobil
+
+haemodynamic 
+(change in 
+BOLD)
+
+special (decay of 
+radioactive 
+markers)
+
+very good - 
+(1-3mm)
+
+poor - 1s
+
+moderate
+
+stationary
+
+good - 7mm very poor - 1h high
+
+stationary
+
+ 
+
+[1]
+
+Warm Up
+
+Which statements are correct?
+
+● In MRI a 90° radio-frequency pulse is used to flip the 
+
+orientation of the nuclei's spin into the transverse plane.
+● The resonance frequency of a nucleus depends on the 
+
+strength of the magnetic field. Therefore the signal source 
+in MRI can be determined with the help of a gradient in the 
+magnetic field. 
+
+● The T1 decay time is different for oxygenated and 
+
+deoxygenated hemoglobin. This effect is used to measure 
+the BOLD signal in fMRI.
+
+● In a typical case of Graheme-Color synesthesia, certain 
+
+colors are associated with the perception of a specific 
+grapheme.
+
+ 
+
+ 
+
+Warm Up
+
+Which statements are correct?
+
+✔ In MRI a 90° radio-frequency pulse is used to flip the 
+
+orientation of the nuclei's spin into the transverse plane.
+✔ The resonance frequency of a nucleus depends on the 
+
+strength of the magnetic field. Therefore the signal source 
+in MRI can be determined with the help of a gradient in the 
+magnetic field. 
+
+✗ The T1 decay time is different for oxygenated and 
+
+deoxygenated hemoglobin. This effect is used to measure 
+the BOLD signal in fMRI.
+
+✗ In a typical case of Graheme-Color synesthesia, certain 
+
+colors are associated with the perception of a specific 
+grapheme.
+
+ 
+
+ 
+
+How We See Color - Video
+
+ 
+
+ 
+
+[11]
+
+Light
+
+Light source
+● light sources can be described by power 
+
+wavelength between 380 and 740 nm
+
+spectra / a spectral distribution (how much of 
+a particular wavelength is present in the light 
+source)
+
+● visible light: electromagnetic radiation with a 
+
+Scene / Surface
+● Reflectance function specifies the fraction 
+
+of the light the surface reflects for each 
+wavelength
+
+Reflected Light
+● From the spectral distribution of the light 
+
+and the reflectance function we can 
+compute the spectral distribution of the 
+reflected light: pointwise multiplication of the 
+reflectance function with the spectral 
+distribution of the light yields the spectral 
+distribution of the reflected light
+
+The reflectance of light for an object depends on 
+spectral distribution of the light source and on the 
+ 
+object's surface.
+
+ 
+
+[4]
+
+[1,2,3]
+
+Color & Cones
+
+Photoreceptors:
+● rods
+● 3 types of cones:
+
+● S: short wavelength, blue, most sensitive at ~420 nm
+● M: middle wavelengths, green, most sensitive at 
+
+~530 nm
+
+● L: long wavelengths, red, most sensitive at ~560 nm
+
+Cone Reponse
+● For each cone type: pointwise multiply each power of 
+the spectral distribution of the reflected light with each 
+sensitivity of the cone spectrum
+
+● integrate resulting cone functions to get one value for 
+
+each cone type
+
+The relative 
+activation of the 
+three cone types in 
+response to a visual 
+stimulus determines 
+the perceived color.
+
+ 
+
+ 
+
+[5]
+
+[1,2,3]
+
+Metamers
+
+Definition: 
+● Colors of objects are perceived as the 
+
+same even though their spectral power 
+distributions are different
+
+● The spectra (A) and (B) are metamers for 
+
+human trichromats under illumination 1 
+but not under 2 or 3.
+
+How can this be explained?
+● there are several spectral power 
+
+distributions that yield the same cone 
+responses / color sensation
+
+Metamers and Cones
+● Reducing the number of functional cone 
+types increases the number of metamers
+
+● The resulting inability to distinguish 
+between certain colors is known as 
+(partial) color blindness
+ 
+
+ 
+[1,2,3]
+
+[6]
+
+Color Blindness
+
+Definition:
+● Inability or decreased ability 
+
+to see color, or perceive 
+color differences
+
+Cause:
+● Absence or malfunction of 
+
+one cone type 
+(Dichromacy)
+
+● Alteration of Trichromat 
+spectral sensitivity of at 
+least one cone type 
+(Anomalous trichromacy)
+● Defect or absence of at 
+least two cone pigments 
+(Monochromacy)
+
+➔ Several types of color 
+
+blindness can be defined 
+depending on which type 
+ 
+of cone is deficient
+
+ 
+
+[7]
+
+[1,2]
+
+Objectively Measuring Color Blindness
+
+Ishihara color test: 
+
+● consists of a series of 
+
+pictures of colored spots
+
+● figure (often digits) are 
+
+embedded in the picture 
+with a difference in color 
+contrast (but no difference 
+in luminance contrast)
+
+● the figure cannot be seen by 
+
+an individual with a 
+particular deficit (e.g. 
+protanope)
+
+● by varying intensity and type 
+
+of contrast, the type and 
+severity of color blindness 
+can be determined
+ 
+
+ 
+
+[8]
+
+[1,3]
+
+Color Consistency
+
+Definition: 
+● The perceived color of objects remains relatively constant 
+
+under varying illumination conditions
+
+● This is possible even though varying illumination conditions 
+
+imply differences in light reflexion and cone activation
+
+Why is it useful?
+● Reliably recognize objects under different illumination 
+
+conditions (e.g. a banana always as yellow)
+
+[9]
+
+Color perception does not only depend on spectral 
+power distributions, but is also object- and context 
+ 
+dependent.
+
+ 
+
+[1,2,3]
+
+Intermediate Questions
+
+Which statements are correct?
+
+● The perceived color of an object only depends on the 
+
+spectra of the light source and the reflectance properties of 
+the object.
+
+● One can infer the reflected spectrum of a stimulus by the 
+
+activation of the different cone types.
+
+● Color blindness can be measured with an Ishihara color 
+
+test, in which the figure is embedded in the luminance 
+contrast, but 'overwriten' by the color contrasts.
+
+● The colors of 2 objects can be perceived as the same, even 
+
+though their reflectance distribution lead to different cone 
+activation.
+
+ 
+
+ 
+
+Intermediate Questions
+
+Which statements are correct?
+
+✗ The perceived color of an object only depends on the 
+
+spectra of the light source and the reflectance properties of 
+the object.
+
+✗ One can infer the reflected spectrum of a stimulus by the 
+
+activation of the different cone types.
+
+✔ Color blindness can be measured with an Ishihara color 
+
+test, in which the figure is embedded in the luminance 
+contrast, but 'overwriten' by the color contrasts.
+
+✔ The colors of 2 objects can be perceived as the same, even 
+
+though their reflectance distribution lead to different cone 
+activation.
+
+ 
+
+ 
+
+Is V4 the color center?
+
+Pro color center:
+● Bilateral lesioning of V4 can lead to 
+
+Con color center:
+● V4 lesion also lead to attentional and
+
+achromatopsia
+
+● Contains many wavelength selective 
+
+cognitive deficits
+
+cells
+
+● Contains cells that are selective for 
+perceived color (color constancy)
+
+V4 is not the only region 
+which contains color / 
+wavelength sensitive cells.
+
+Furthermore, the sensitivity 
+to multiple additional 
+features (e.g. Depth, Shape 
+and Orientation) suggest a 
+more complex role.
+
+ 
+
+● form/orientation selective cells
+● activity of V4 neurons are also 
+
+selective to the 3D shape of an object
+● V4 cells can change their selectivity in
+
+a task dependent manner
+
+● motion selective cells
+● also wavelength selective cells in 
+
+other areas (LGN, V1,V2)
+
+ 
+
+[1,2,3]
+
+Frontal Eye Field
+
+Properties of FEF:
+● FEF is a hub of integration of the dorsal and ventral stream and in general 
+
+involved in the control of eye-movements
+
+● some visually responsive neurons (roughly half of them)
+● other neurons elicit saccades and are topographically arranged (neighboring 
+
+locations in FEF elicit saccades to neighboring sites in the visual field)
+
+● neurons in the ventrolateral part (receving input from the fovea) elicit short-
+
+amplitude saccades
+
+● neurons in the dorsomedial part (receiving input from the periphery) elicit 
+ 
+
+longer-amplitude saccades
+
+ 
+
+[1,2,3]
+
+FEF and V4
+
+Goal
+● examine the functional interaction 
+of saccade preparation (FEF) and 
+visual coding (V4) 
+
+Setup:
+● record via a microelectrode from 
+
+a neuron in V4, determine it‘s 
+receptive field and preferred 
+stimulus
+
+● find an area in FEF in which 
+microstimulation causes a 
+saccade to the RF of the V4 cell
+
+● apply subthreshold (no saccade) 
+
+stimulation to FEF neurons 
+(saccade would move to the RF of 
+the V4 neuron)
+
+● the monkey maintains central 
+fixation during the experiment
+ 
+
+ 
+
+[1,2,3]
+
+FEF and V4
+
+Experiment:
+● first show stimulus in V4 cell's RF for 3 
+
+conditions (p: preferred, np: non-
+preferred, 
+
+∅
+: no stimulus)
+
+● then subthreshold stimulation of FEF and 
+
+recording from V4 (red spikes)
+
+● control: no stimulation of FEF and 
+
+recording from V4 (black spikes)
+
+Results:
+● V4 cell shows an increased response to FEF stimulation in 
+
+condition p (a)
+∅
+, FEF stimulation doesn't seem to influence the 
+
+● in condition 
+
+activity of the V4 cell (b)
+
+● V4 response enhancement through FEF stimulation seems to 
+
+increase with stimulus preference (c)
+
+ 
+
+Activity in FEF can up-modulate activity in V4. The effects 
+are similar to those observed for attention (enhancement 
+of processing preferentially for preferred stimuli)
+
+ 
+
+[1,2,3]
+
+This Week's Questions
+
+1. Describe visual area V4. Is it the ‘color center’ of the brain? Are there other
+
+features, to which V4 neurons were found to be selective?
+
+2. Give a characterization of neuronal properties in FEF.
+3. Describe an experiment investigating the effect of FEF stimulation on 
+
+activity in V4. Include experimental setup, stimuli, result and interpretation.
+
+4. What is perceptual learning?
+5. Use the experimental evidence of learning in popout tasks to make an 
+
+argument for the “Reverse hierarchy theory” as put forward by Hochstein 
+and Ahissar.
+
+Not Covered Yet!
+
+6. Explain the placement with respect of site in the hierarchy and time course 
+
+in processing of visual information according to the “Common view” 
+(stressing feed forward processing) and the “Reverse Hierarchy Theory” 
+according to Hochstein and Ahissar of
+(1) basic level categorization
+(3) difficult discriminations 
+(5) hard condition perceptual learning.
+
+(2) Feature search pop-out
+(4) easy condition perceptual learning and
+
+ 
+
+Please send your answers to lkaufhol@uos.de until Sunday to get feedback.
+
+ 
+
+Questions?
+
+[10]
+
+ 
+
+For an explanation why the sky appears blue have a look at: 
+
+http://math.ucr.edu/home/baez/physics/General/BlueSky/blue_sky.html  
+
+ 
+
+Sources
+
+[1] P. König, T. Kietzmann (2014). Action & Cognition - Lecture Slides, University of Osnabrueck
+
+[2] M. Krüger (2012/13). Action & Cognition – Tutorial Slides, University of Osnabrueck
+
+[3] B. Wahn (2012/13). Action & Cognition – Tutorial Slides, University of Osnabrueck
+
+[4] http://9-4fordham.wikispaces.com/file/view/em_spectrum.jpg/244287321/em_spectrum.jpg
+
+[5] http://askabiologist.asu.edu/sites/default/files/cones_graph.gif
+
+[6] http://www.cs.berkeley.edu/~sequin/CS184/IMGS/Metamers_Brown_appl.jpg
+
+[7] http://brainlagoon.com/wp-content/uploads/2012/12/Color-blindness.png
+
+[8] http://upload.wikimedia.org/wikipedia/commons/f/fb/Ishihara_compare_1.jpg
+
+[9] http://upload.wikimedia.org/wikipedia/commons/5/51/Hot_air_balloon_-_color_constancy.jpg
+
+[10] http://xkcd.com/1145/
+
+[11] https://www.youtube.com/watch?v=l8_fZPHasdo
+
+ 
+
+ 
+
+

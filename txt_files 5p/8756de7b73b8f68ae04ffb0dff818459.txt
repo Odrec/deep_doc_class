@@ -1,0 +1,430 @@
+ 
+ 
+ 
+
+GM-MB1 16, VERSUCH 3, KURS ___, GRUPPE ____ 
+
+  
+
+1.  FORMELLE ASPEKTE GESAMTPROTOKOLL UND TEXT 
+
+☐  Gliederung fehlt/unklar (Einführung/Zielsetzung, Methode/Durchführung, Ergebnisse, 
+
+Diskussion/Fehlerbetrachtung, ggf. Literatur) 
+
+☐  Seitenzahlen fehlen 
+☐  Wissenschaftliche Ausdrucksweise anpassen, Umgangssprache vermeiden, siehe Markierung 
+☐  Korrekte Schreibweise von Speziesbezeichnungen, Gen- und Proteinbezeichnungen beachten  
+☐  Allg. Rechtschreibung, siehe Markierung 
+☐  Einheit der Verdopplungszeit oder der spez. Wachstumskonstante fehlt 
+☐  _____________________________________________________________________________ 
+
+2.  FORMELLE ASPEKTE ABBILDUNGEN, LEGENDEN UND TABELLEN 
+
+☐  Nummerierung von Abb. und Tabellen fehlt 
+☐  Bezug zu Abb. und Tabellen fehlt im Text 
+☐  Legende zu Abb._______________________________ fehlt 
+☐  Legende zu Abb._______________________________ unvollständig, s.u. 
+☐  Tabellentitel fehlt, Tabelle________________________. 
+☐  Tabellenanmerkungen in Fußnoten, Tabelle________________________ 
+☐  Achsenbeschriftungen fehlen, Abb, ________________ 
+☐  Achsenbeschriftungen inkorrekt, Abb.________________ 
+☐  _____________________________________________________________________________ 
+☐  _____________________________________________________________________________ 
+
+3.  INHALTLICHE ASPEKTE 
+
+Interpretation der Ergebnisse unvollständig/fehlend 
+
+☐  Einführung unvollständig/Zielsetzung nicht vermittelt 
+☐  Darstellung Ergebnisse unvollständig 
+☐ 
+☐  Diskussion unvollständig/fehlend 
+☐  Fehlerbetrachtung unvollständig/fehlend 
+☐  Beantwortung der weiterführenden Fragen fehlt oder inkorrekt: 
+☐  Wissenschaftlicher Hintergrund fehlt oder mangelhaft 
+☐  Berechnungen nicht nachvollziehbar, Original Werte nicht angegeben 
+
+4.  SONSTIGE PUNKTE 
+
+☐  ______________________________________________________________________________ 
+☐  ______________________________________________________________________________ 
+☐  Detailliert und vollständig 
+ 
+
+☐  Korrekturen zur Kenntnisnahme, keine Überarbeitung nötig 
+☐  Überarbeitung mit Korrektur erforderlich 
+
+UniversItät Osnabrück, Abteilung Mikrobiologie, Grundmodul 2016 Kurs: A  Gruppe: 5 
+
+Name, Vorname: Arnhölter, Laura   
+
+Name, Vorname: Fritze, Neele 
+
+ 
+
+ 
+
+ 
+
+Matrikelnummer: 951775 
+
+Matrikelnummer: 950811 
+
+Versuch 3 
+
+Parameter des bakteriellen Wachstums 
+
+Einführung 
+Das  klassische  Beispiel  für  exponentielle  Wachstumsprozesse  ist  das  Wachstum  einer 
+Bakterienkultur.  Ziel  des  Versuches  ist  die  Bestimmung  des  Wachstums  einer  Bakterienkultur 
+aus E. coli unter Laborbedingungen mittels fester Messintervalle von 30 Minuten. Die gewonnen 
+optischen Dichten werden mit den primären Daten der  Lebendzellzahl und der Gesamtzellzahl 
+verglichen. 
+
+Methoden 
+Unter  den  Bedingungen  eines  Minimalmediums  in  einer  Umgebung  von  37°C  und  aeroben 
+Verhältnissen  wurde  das  Wachstumsverhalten  des  Wildtyps  K12  von  Escherichia  coli 
+untersucht. Die Methodik folgte dem ausgehändigten Skript zum Grundmodul Mikrobiologie – 
+Übungen. 
+ 
+Teilversuch A: Wachstumskurve 
+ 
+Wachstumsbedingung : LB Vollmedium, 30°C, aerob 
+ 
+Zeichnen Sie die Wachstumskurve Ihres Versuches mittels eines semi-logarithmischen 
+Blatt auf, tragen Sie auch die Phasen des bakteriellen Wachstums sowie die 
+Verdopplungszeit ein und geben Sie die Wachstumskonstante an. 
+ 
+Tabelle 1: Messergebnisse der optischen Dichte der wachsenden Bakterienkultur in 
+Zeitintervallen von 30 Minuten 
+
+OD 
+0,062 
+0,061 
+0,063 
+0,067 
+0,1 
+0,131 
+0,178 
+0,261 
+0,381 
+
+OD 
+0,443 
+0,655 
+0,84 
+0,76 
+1,6 
+2,02 
+2,53 
+3,28 
+4,65 
+
+Zeitpunkt 
+T9 
+T10 
+T11 
+T12 
+T13 
+T14 
+T15 
+T16 
+T  24h 
+
+Zeitpunkt 
+T 0 
+T 1 (30min) 
+T2 (60min) 
+T3 (90min) 
+T4 
+T5 
+T6 
+T7 
+T8 
+ 
+Bei  der  Wachstumskurve  (siehe  Anhang)  wird  die  Zellzahl  in  einer  halblogarithymischen 
+Achsenskala  gegen  die  Zeit  aufgetragen.    Aus  der  Steigung  des  Graphen  kann  die  Ver-
+dopplungszeit (td) ermittelt werden. Mittels dieser kann dann rechnerisch die Wachstumsrate  μ 
+in der exponentiellen Phase berechnet werden: 
+Berechnungen: 
+Verdopplungszeit: 
+Wachstumskonstante μ:  
+ 
+ 
+
+td=72 min 
+μ = ln2 /td 
+μ =ln 2 / 72 min 
+μ =9,627*10^9 [1/min] 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+2 
+
+UniversItät Osnabrück, Abteilung Mikrobiologie, Grundmodul 2016 Kurs: A  Gruppe: 5 
+
+Name, Vorname: Arnhölter, Laura   
+
+Name, Vorname: Fritze, Neele 
+
+ 
+
+ 
+
+ 
+
+Matrikelnummer: 951775 
+
+Matrikelnummer: 950811 
+
+Teilversuch  B:  Bestimmung  der  Gesamtzellzahl  (GZZ)  mit  der  Thomakammer  und  der 
+Lebendzellzahl 
+Prüfen Sie die elektronische Tabelle mit ihren Werte ihrer Verdünnungen, GZZ, LZZ und 
+die entsprechende Messung der optischen Dichten. 
+ 
+Tabelle 2: Auflistung der gewonnen Daten mit den verwendeten Verdünnungsfaktoren und 
+der optischen Dichte 
+
+ 
+
+OD578 
+
+Stat. Phase 
+
+4,59 
+
+Log. Phase 
+
+0,459 
+
+Vf 
+GZZ 
+403,9 
+
+57,6 
+
+Bakterien/Gq 
+ 
+93,5 
+
+Vf 
+LZZ 
+1,35*10^6 
+
+173 
+
+81,75 
+
+0,197*10^6 
+
+124 
+
+Kolonien/Platte 
+
+200B-
+Platte 
+200B-
+Platte 
+
+ 
+Vergleich der eigenen Ergebnisse der Wachstumsparameter mit denen anderer Gruppen 
+Nach eingehendem Vergleich der elektronischen Tabelle mit den eigenen Werten der GZZ, LZZ, 
+optischen Dichte (OD) und der Verdünnung kann folgendes geschlussfolgert werden: 
+Die gemessene OD entspricht  sowohl in der stationären Phase als auch in der logarithmischen 
+Phase den erwarteten Werten. Die Bakteriendichte der Gesamtzellzahl ist mit 9,761*10^9 B/ml 
+(stat.) und 1,228*10^9 B/ml (log.)höher als die entsprechenden Lebendzellzahl.  
+Im  Vergleich  mit  den  Werten  der  anderen  Gruppen  fällt  unser  Wert  der  Gesamtzellzahl  der 
+logarithmischen  Phase  als  weitaus  höher  auf.  Er  umfasst  in  etwa  das  5-fache  der  anderen 
+Gruppenergebnisse. Der verwendete Verdünnungsfaktor zur Bestimmung der Gesamtzellzahl der 
+logarithmischen Phase unsererseits liegt mit 58 im Vergleich zu den anderen Werten mit etwa 20 
+deutlich höher.  
+Bei der Reflexion des Prozesses und der Kontrolle der vorausgegangenen Rechnungen ist aufge-
+fallen, dass die Berechnung des Verdünnungsfaktors für die logarithmische Phase fehlerhaft war 
+(Potenzrechenfehler) und in Folge dessen die Bestimmung der GZZ der logarithmischen Phase 
+Folgefehler beinhaltet. 
+ 
+Welchen Anteil haben die lebenden Zellen in der stationären und logarithmischen Phase? 
+Tabelle 3: Anteil lebender Zellen in der stationären und logarithmischen Phase an der 
+Gesamtzellzahl 
+
+logarithmisch 
+2,14*10^8 
+1,2276*10^9 
+17,43 % 
+
+ 
+LZZ (B/ml) 
+GZZ (B/ml) 
+Anteil 
+ 
+Wie unterscheidet sich die Gesamtzellzahl (GZZ) von der Lebenzellzahl (LZZ)? 
+Entsprechen ihre Werte den Erwartungen? 
+Die  Gesamtzellzahl  (GZZ)  umfasst  sowohl  die  Zahl  der  lebenden,  vermehrungsfähigen  Zellen 
+als auch die Zahl der abgestorbenen oder inaktiven Zellen, die sich in einer Probe befinden. 
+
+stationär 
+2,193*10^9 
+9,761*10^9 
+22,47 % 
+
+ 
+
+3 
+
+UniversItät Osnabrück, Abteilung Mikrobiologie, Grundmodul 2016 Kurs: A  Gruppe: 5 
+
+Name, Vorname: Arnhölter, Laura   
+
+Name, Vorname: Fritze, Neele 
+
+ 
+
+ 
+
+ 
+
+Matrikelnummer: 951775 
+
+Matrikelnummer: 950811 
+
+Die Lebendzellzahl (LZZ) umfasst die lebenden, vermehrungsfähigen Zellen einer Probe.1 Über 
+den  Verlauf  der  Wachstumskurve  verändern  sich  die  Verhältnisse  von  Lebendzellzahl  zu 
+Gesamtzellzahl. 
+
+Die  gewonnen  Werte  entsprechen  den  Erwartungen.  Die  Gesamtzellzahl  der  stationären  Phase 
+mit  9,761*10^9  B/ml  und  der  logarithmischen  Phase  mit  1,228*10^9  B/ml  ist  größer  als  die 
+entsprechenden  Lebendzellzahlen  (stat.:  2,193*10^9,  log.:  0,214*10^9).  Entsprechend  der 
+Tabelle 3 haben die lebenden Zellen mit 17,43% einen kleineren Anteil an der Gesamtzellzahl in 
+der logarithmischen Phase als in der stationären Phase (22,47%).  
+Die  logarithmische  Phase  ist  durch  eine  konstante,  maximale  Teilungsrate  der  Zellen 
+gekennzeichnet. In dieser Phase steigt der Logarithmus der Zellzahl linear mit der Zeit an, d.h., 
+die  Teilungsrate  der  Zellen  ist  konstant.  Mit  der  Abnahme  des  Nährstoffangebotes  und  der 
+Anreicherung schädlicher Stoffwechselprodukte stellt sich die stationäre  Phase ein, bei der die 
+Geschwindigkeit der Zellteilung als Vermehrung und die des Absterbens der Zellen gleich sind. 
+Dadurch  müsste  der  Anteil  lebender  Zellen  an  der  Gesamtzellzahl  mit  dem  Fortschreiten  der 
+logarithmischen Phase sinken (Verhältnis von Lebendzellzahl an Gesamtzellzahl sinkt), was sich 
+in den Messwerten (Tab. oben) nicht widerspiegelt. Dieser Aspekt der Messwerte widerspricht 
+unseren Erwartungen.  
+ 
+3. Wie wirken sich die Verfügbarkeit von Sauerstoff, Nitrat und die Temperatur auf das 
+bakterielle Wachstum aus? Wie interpretieren Sie die Verfügbarkeit von Nitrat auf die 
+Verwertbarkeit von Kohlenhydraten? 
+Für ein bakterielles Wachstum müssen bestimmte Mindestvoraussetzungen bzgl. des Nährstoff-
+angebotes, des Sauerstoffs und der Temperatur gegeben sein. Diese Voraussetzungen sind 
+speziesabhängig.  
+Sauerstoffverwertung:  Der Stoffwechsel von Escherichia coli ist aerob (Sauerstoffatmung) oder 
+fakultativ anaerob (Nitratatmung, Glukose-Gärung). In Abhängigkeit der Sauerstoffverfügbarkeit 
+wird stets der Stoffwechselweg gewählt, der unter den bestehenden Bedingungen die höchste 
+ATP-Ausbeute liefert. Durch die Inkubation unter aeroben Bedingungen unterdrückt der 
+anwesende Sauerstoff anaerobe Stoffwechselprozesse und fördert den Citratzyklus und den 
+aeroben Elektronentransport.2 
+Nitratverwertung: E. coli ist ein fakultativ anaerobes Bakterien, deren Nitratreduktase durch die 
+Anwesenheit von Nitrat induziert wird. In der Denitrifikation. wird Nitrat durch die 
+Nitratreduktase des E. coli zu Nitrit reduziert. Da die Nitratatmung eine höhere Energieausbeute 
+als die ebenso von E.coli anwendbare gemischte Säuregärung liefert, würde E. coli bei 
+Vorhandensein von Nitrat und Kohlenhydraten das Nitrat zur Verwertung bevorzugen. 3 
+ 
+Temperatur: Das optimale  Wachstum weist E. coli bei einer Temperatur von 37°C auf.4 
+ 
+
+                                                            
+1 Fuchs (2007). Allgemeine Mikrobiologie. S.169 
+2 edb. S. 507. 
+3 Fuchs (2007): Allgemeine Mikrobiologie. S. 507ff. 
+4 http://www.spektrum.de/lexikon/biologie/escherichia-coli/22571, 16.07.16 
+
+ 
+
+4 
+
+UniversItät Osnabrück, Abteilung Mikrobiologie, Grundmodul 2016 Kurs: A  Gruppe: 5 
+
+Name, Vorname: Arnhölter, Laura   
+
+Name, Vorname: Fritze, Neele 
+
+ 
+
+ 
+
+ 
+
+Matrikelnummer: 951775 
+
+Matrikelnummer: 950811 
+
+4. Welche Rolle spielt der Stoffwechsel in Hinblick auf die chemiosmotische Theorie? 
+Die chemiosmotische Theorie erklärt die Kopplung von Redoxreaktionen und Phosphorylierung 
+in der mitochondrialen Atmungskette.5 Mikroorganismen wandeln zur Energiegewinnung in den 
+Mitochondrien Kohlenhydrate z.B unter aerober Atmung in Kohlendioxid und Wasser um. Die 
+durch  die  erfolgte  Oxidation  gewonnene  Energie  dient  dem  Aufbau  eines  Protonengradienten 
+entlang  einer  Membran.  Dieser  erzeugte  Gradient  kann  in  dem  Bakterium  eine  Vielfalt  von 
+Reaktionen  begünstigen  oder  antreiben  wie  z.B.  aktiven  Membrantransport,  die  ATP-Synthese 
+oder die Flagellenrotation.  
+ 
+Diskussion 
+Aus  den  Gruppenergebnissen  des  Kurses,  bei  denen  Voll-  und  Minimalmedien  verwendet 
+wurden bei gleicher Temperatur und unterschiedlichen Atmosphären, lässt sich eine Abhängig-
+keit  des  Bakterienwachstums  von  der  Zusammensetzung  des  Substrates  und  den  atmos-
+phärischen  Kulturbedingungen  erkennen.  Die  entstandenen  Wachstumskurven  weisen  den 
+typischen  vierphasigen  Verlauf  der  Verzögerungsphase,  in  der  Stoffwechselanpassung  der 
+Bakterien  an  die  neuen  Lebensbedingungen  erfolgen  müssen,  der  exponentiellen  Phase,  in  der 
+sich  die  Bakterien  aufgrund  des  optimalen  Nährmediums  mit  ihrer  maximalen  Teilungsrate 
+vermehren,  der  stationären  Phase,  in  der  die  vorhandenen  Nährstoffe  zunehmend  verbraucht 
+werden  und  andererseits  die  Bakterien  zunehmend  teilweise  toxische  Stoffwechselendprodukte 
+an ihre Umgebung abgeben, sodass die Vermehrungsrate und Absterberate gleich groß sind, und 
+einzelne Wachstumskurven auch deutlich die Absterbephase auf. 
+ 
+Literatur 
+Horton, Moran, Scrimgeour, Perry, Rawn (2008): Biochemie. 4. Aktualisierte Auflage, Pearson-Verlag. 
+ 
+Fuchs (Hrsg) (2007): Allgemeine Mikrobiologie. 8. vollständig überarbeitete und erweiterte Auflage, 
+Georg-Thieme Verlag. 
+ 
+Lexikon der Biologie (o.J.): Escherichia Coli abgerufen unter 
+http://www.spektrum.de/lexikon/biologie/escherichia-coli/22571 [16.07.16] 
+
+                                                            
+5 Horton, Moran,Scrimgeour, Perry, Rawn (2008): Biochemie. 4. Aktualisierte Auflage, Pearson-Verlag.S.562f. 
+
+5 
+
+ 
+
+UniversItät Osnabrück, Abteilung Mikrobiologie, Grundmodul 2016 Kurs: A  Gruppe: 5 
+
+Name, Vorname: Arnhölter, Laura   
+
+Name, Vorname: Fritze, Neele 
+
+ 
+
+ 
+
+ 
+
+Matrikelnummer: 951775 
+
+Matrikelnummer: 950811 
+
+Anhang: 
+
+ 
+
+ 
+
+6 
+
+

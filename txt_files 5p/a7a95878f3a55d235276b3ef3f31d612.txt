@@ -1,0 +1,158 @@
+Table of Contents
+
+Matlab Homework 5 ............................................................................................................  1
+1. Load the file inputs.mat and have a look at its variables .........................................................  1
+2. Building the network ........................................................................................................ 2
+3. Training the network ........................................................................................................  2
+4.  Analysis  .........................................................................................................................   4
+
+Matlab Homework 5
+
+worked on by: Corinna Kuehnapfel (956796) Benjamin Uhl (951381) Amir Sibahi (959151) Sebastian
+Blum (950549)
+
+clear all; close all; clc;
+
+1. Load the file inputs.mat and have a look at
+its variables
+
+load inputs.mat
+
+H = reshape(Inputs(1,:),7,7);
+A = reshape(Inputs(2,:),7,7);
+I = reshape(Inputs(3,:),7,7);
+J = reshape(Inputs(4,:),7,7);
+
+figure
+subplot(2,2,1)
+imagesc(H)
+subplot(2,2,2)
+imagesc(A)
+subplot(2,2,3)
+imagesc(I)
+subplot(2,2,4)
+imagesc(J)
+
+1
+
+2. Building the network
+
+weights = rand(2,49);
+lr = 0.01;
+
+3. Training the network
+
+delta_weights = zeros(size(weights));
+
+% Loop for all the letters
+for train = 1:100
+
+    % train the input a hundred times
+    for input = 1:4
+        % transpose weights
+        Outputs = Inputs(input,:) * weights';
+
+        % calculation for both outputs neurons
+        % neuron one
+        delta_weights(1,:) = lr * (Outputs(1)*Inputs(input,:) - ...
+                                   Outputs(1)*(weights(1,:)*Outputs(1)));
+        % neuron two
+        delta_weights(2,:) = lr * (Outputs(2)*Inputs(input,:) - ...
+                                   Outputs(2)*(weights(2,:)*Outputs(2) + ...
+                                   weights(1,:)*Outputs(1)));
+
+2
+
+        weights = weights + delta_weights;
+    end
+end
+
+figure
+% plotting all
+for i = 1:4
+    subplot(2,2,i)
+    % possibly use abs() for scalar product
+    % I have no clue why the values change during the different runs from
+    % negativ to plus and vice versa. It works with the absolute value, but
+    % it is kind of awkward whether we have to use this...
+    Outputs =   abs( Inputs(i,:) * weights' )
+    imagesc(Outputs, [0.5 6]);
+    % set colormap to spring for fabulous unicorns
+    colormap jet
+end
+
+% blablabla, don't know whether this is correct, it should be,
+% at least there are different colors. One could use min/max for correct
+% boundaries for the output colors... Below is the possible solution by Marie
+% Sinderman for this...
+
+% for i = 1:4
+%     output(1,i) = abs(Inputs(i,:) * weights(1,:)');
+%     output(2,i) = abs(Inputs(i,:) * weights(2,:)');
+% end
+% for i = 1:4
+%     subplot(2,2,i);
+%     imagesc(output(:,i)',[min(min(output)) max(max(output))])
+% end
+
+Outputs =
+
+    4.1584    0.4255
+
+Outputs =
+
+    4.8369    0.1283
+
+Outputs =
+
+    0.5369    2.4934
+
+Outputs =
+
+    0.5653    2.9004
+
+3
+
+4. Analysis
+
+% (a) Plot the outputs for the inputs M and T. Explain the neuron
+%     activations by taking the input patterns into account.
+
+Outputs_M= zeros(1,2);
+Outputs_T= zeros(1,2);
+
+Outputs_M = M * weights';
+Outputs_T = T * weights';
+
+figure
+subplot(2,1,1)
+imagesc(Outputs_M, [0.5 6])
+title('Output M')
+subplot(2,1,2)
+imagesc(Outputs_T, [0.5 6])
+title('Output T')
+colormap jet
+
+% (b) Plot the weights as a 7x7 grid to support your argumentation.
+
+weights_1 = reshape(weights(1,:),7,7);
+weights_2 = reshape(weights(2,:),7,7);
+
+4
+
+figure
+subplot(1,2,1)
+imagesc(weights_1)
+title('Weights Neuron 1')
+subplot(1,2,2)
+imagesc(weights_2)
+title('Weights Neuron 2')
+colormap jet
+
+5
+
+Published with MATLAB® R2014b
+
+6
+
+

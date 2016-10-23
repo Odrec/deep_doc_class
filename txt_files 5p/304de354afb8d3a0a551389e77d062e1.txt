@@ -1,0 +1,90 @@
+Übungsblatt 9
+Abgabe: 15/12/2014 bis 10:00 Uhr
+Vorlesung: Jun. Prof. M. Spitzweck
+
+Universität Osnabrück – WS 2014/2015
+Lineare Algebra I
+Übungen: Soudères/Heine
+Tutorium: Mähr/Mengler/Uliczka
+
+Lineare Algebra I
+
+Übungsblatt 9: Vektoraum– Dualität – Matrix
+
+Abgabe: 15/12/2014 bis 10:00 Uhr
+
+Aufgabe 9.A. Es sei A eine (n× n)-Matrix über dem Körper K. Beweisen Sie die Äquivalenz der
+folgenden Aussagen:
+
+1. Es gibt ein a ∈ K mit A = a · In.
+2. Für alle (n × n)-Matrizen B über K gilt AB = BA.
+3. Für alle invertierbaren (n × n)-Matrizen B über K gilt AB = BA.
+
+Hinweis 9.A. Betrachten Sie Matrizen der Form B = In + Eij, i �= j, wobei Eij an der Stelle (i, j)
+eine Eins und sonst nur Nullen enthält.
+
+Aufgabe 9.B. Sei V ein endlich dimensionaler K-Vektorraum mit dim(V ) = n, U ein Unterraum
+mit dim(U ) = n − k.
+
+Beweisen Sie: Es existieren Linearformen ϕ1, . . . , ϕk auf V mit der Eigenschaft
+
+Hinweis 9.B. Man kann mit eine Basis von U anfangen.
+
+U = ker(ϕ1) ∩ ··· ∩ ker(ϕk).
+
+Aufgabe 9.C. Überprüfen Sie, dass die angegebenen Tupel von Vektoren Basen sind und bestimmen
+Sie die dualen Basen für
+
+• ((−2, 1, 1), (−2, 0,−2), (2,−1, 0)) im Standardvektorraum R3.
+• ((−1,−1), (0, 1)) im Standardvektorraum (Z/3Z)2
+
+Hinweis 9.C. Sei (ei) die kanonische Basis von V (im Falls 1 und 2) und sei e∗i die duale Ba-
+sis. Man kann die Vektoren als Linearkombination der ei schreiben und die dualen Vektoren als
+Linearkombination der e∗i oder durch
+
+ϕi(x, y, z) = ... im Falls 1 und ϕi(x, y) = ... im Falls 2.
+
+19
+
+Übungsblatt 9
+Abgabe: 15/12/2014 bis 10:00 Uhr
+Vorlesung: Jun. Prof. M. Spitzweck
+
+Universität Osnabrück – WS 2014/2015
+Lineare Algebra I
+Übungen: Soudères/Heine
+Tutorium: Mähr/Mengler/Uliczka
+
+Aufgabe 9.D. Sei V ein endlich dimensionaler K-Vektorraum mit dim(V ) = n und f1, . . . , fn ∈
+V ∗ Linearformen. Die Abbildung F : V −→ K n ist durch
+
+v �−→ (f1(v), . . . , fn(v))
+
+deﬁniert.
+
+1. Zeigen Sie, dass F linear ist.
+
+2. Wir nehmen an, dass f1, . . . , fn linear abhängig sind. Zeigen Sie, dass F nicht surjektiv ist.
+
+3. Wir nehmen an, dass F nicht surjektiv ist. Zeigen Sie, dass f1, . . . , fn linear abhängig sind.
+
+Unter welcher Bedingung ist F bijektiv ?
+
+4. Zeigen Sie, dass F genau dann bijektiv ist, wenn
+
+ker(f1) ∩ ··· ∩ ker(fn) = {0}
+
+Hinweis 9.D. Um Teil (3) zu lösen, kann man benutzen, dass in diesem Fall Im(F ) ⊂ U, wobei U
+eine Hyperebene von K n ist. U ist durch eine Linearform von K n gegeben.
+
+Aufgabe 9.E. K sei ein Körper, A eine (n × p)-Matrix, B eine (m × n)-Matrix über K. Zeigen
+Sie:
+
+Anleitung: Übersetzen Sie die Behauptung in eine Aussage über die von BA, A und B repräsentier-
+ten linearen Abbildungen.
+
+rang BA ≤ min(rang A, rang B).
+
+20
+
+

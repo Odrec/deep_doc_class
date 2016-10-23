@@ -1,0 +1,552 @@
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                  WS 2014/2015 
+
+ÜBUNG »MULTIVARIATE VERFAHREN« 
+
+Lösungen Aufgabenblatt 5 
+
+1 
+
+Aufgabe 
+Die erste Hypothese lautet, dass es einen negativen Zusammenhang zwischen der Arbeitsplat‐
+zunsicherheit und dem freiwilligen Arbeitsengagement gibt. Sie kann überprüft werden, indem 
+man die bivariate Korrelation zwischen den beiden Variablen berechnet. 
+Die zweite Hypothese ist eine Mediatorhypothese. Sie besagt, dass Mitarbeiter, die stärker um 
+ihren Arbeitsplatz bangen, sich weniger mit dem Unternehmen identifizieren und dies wiede‐
+rum dazu führt, dass sie sich weniger im Unternehmen engagieren. Commitment soll also eine 
+Mediatorvariable sein. 
+Damit  eine  Mediatorwirkung  besteht,  muss  gelten,  dass  X  (hier: unsich)  statistisch  signifi‐
+kante Einflüsse auf Y (engage) und auf Z (com) aufweist (jeweils mit den postulierten Vorzei‐
+chen). Zudem muss Z einen signifikanten Einfluss auf Y haben, wenn der Einfluss von X statis‐
+tisch kontrolliert wird. Dies wird anhand der Signifikanz des Regressionsgewichts von Z in einer 
+multiplen Regression geprüft, in der X und Z als Prädiktoren aufgenommen werden. Wenn da‐
+bei das Regressionsgewicht von X insignifikant wird, dann liegt vollständige Mediation vor, an‐
+dernfalls partielle. 
+Wir  führen  also  eine  multiple  Regression  mit  der  „Abhängigen  Variable“  engage  und  den  
+beiden  „Unabhängigen  Variable(n)“  unsich  sowie  com  durch.  Dabei  lassen  wir  uns  unter  
+[Statistiken] auch die „Deskriptiven Statistik“en ausgeben. 
+
+An der Korrelationsmatrix erkennt man zunächst, dass die erste Hypothese bezüglich des nega‐
+tiven  Zusammenhangs  zwischen  Arbeitsplatzunsicherheit  und  dem  freiwilligen  Arbeisengage‐
+ment bestätigt wird: r = .23, p < .01. Weiter erkennt man, dass die ersten beiden Voraus‐ 
+setzungen für das Vorliegen von Medi‐
+ation  ebenfalls  erfüllt  sind:  Die  Ar‐
+beitsplatzunsicherheit  unsich  korre‐
+liert wie vorhergesagt statistisch signi‐
+fikant  negativ  mit  dem  Engagement 
+engage  (s.o.)  und  dem  Commitment 
+com (r = .33). 
+An den Regressionsgewichten sieht man, dass tatsächlich eine vollständige Mediation vorliegt: 
+Der (negative) Einfluss der Arbeitsplat‐
+zunsicherheit  wird  durch  die  Auf‐
+nahme  des  Mediators  Commitment 
+(p = .44).  Commitment 
+insignifikant 
+seinerseits  weist  ein  statistisch  signifi‐
+kantes,  positives  Regressionsgewicht 
+auf ( = 0.53, p < .01). 
+Hinweis: Die Steuerdatei findet sich unter dem Namen unsicher.sps in Stud.IP. 
+
+B
+4,246
+,307
+-,031
+Abhängige Variable: ENGAGE
+
+ENGAGE
+1,000
+,550
+-,234
+,
+,000
+,003
+136
+136
+136
+
+UNSICH
+-,234
+-,329
+1,000
+,003
+,000
+,
+136
+136
+136
+
+ENGAGE
+COM
+UNSICH
+ENGAGE
+COM
+UNSICH
+ENGAGE
+COM
+UNSICH
+
+Nicht standardisierte
+
+Koeffizienten
+
+Standardisierte
+Koeffizienten
+
+T
+14,427
+6,935
+-,774
+
+Signifikanz
+,000
+,000
+,440
+
+Standard
+
+fehler
+
+,294
+,044
+,040
+
+COM
+
+,550
+1,000
+-,329
+,000
+,
+,000
+136
+136
+136
+
+(Konstante)
+COM
+UNSICH
+
+Beta
+
+,531
+-,059
+
+Modell
+1
+
+a. 
+
+Koeffizientena
+
+Korrelationen
+
+Korrelation nach Pearson
+
+Signifikanz (einseitig)
+
+N
+
+ 
+
+ 
+
+– 1 –
+
+ 
+
+(24.11.2014)
+
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                  WS 2014/2015 
+
+Koeffizientena
+
+Nicht standardisierte
+
+Koeffizienten
+
+Standardisierte
+Koeffizienten
+
+Modell
+1
+
+(Konstante)
+WITAL
+WITSCH
+WITBO
+MTP
+
+B
+15,197
+-,055
+-,019
+-,021
+-,020
+
+a. 
+
+Abhängige Variable: BERNOTE
+
+Standard
+
+fehler
+
+2,257
+,016
+,016
+,012
+,015
+
+Beta
+
+-,440
+-,202
+-,299
+-,180
+
+T
+6,733
+-3,317
+-1,184
+-1,677
+-1,332
+
+Signifikanz
+,000
+,003
+,247
+,106
+,194
+
+ 
+
+2 
+
+Aufgabe 
+Zur  Kreuzvalidierung  muss  die  im 
+letzten Aufgabenblatt an der ersten 
+Stichprobe  berechnete  Gleichung 
+(Ergebnis  siehe  Tabelle  rechts)  nun 
+auf die Daten der zweiten Stichpro‐
+be angewandt werden. 
+
+Dazu  muss  eine  neue  Variable,  hier 
+mit  dem  Namen  vbernote  be‐
+zeichnet,  unter  Transformieren/
+Berechnen  entsprechend  obiger 
+Regressionsgleichung  wie 
+rechts 
+erzeugt  werden  (oder  direkt  in  der 
+Syntax). 
+ 
+
+Die  Korrelation  dieser  Variable  vbernote  mit  den  beobachteten  Kriteriumswerten 
+bernote der 1988er Stichprobe gibt jetzt an, wie gut die an der ersten Stichprobe gewonne‐
+nen Regressionsgewichte zur Vorhersage in der zweiten Stichprobe geeignet sind. Dazu wählt 
+man jetzt wie oben unter Daten/Fälle_auswählen alle Probanden mit jahrg=2 aus. 
+Unter 
+Statistik/Korrelation/
+Bivariat…  kann  die  Korrelation 
+zwischen  den  Variablen  bernote 
+und vbernote bestimmt werden: 
+
+BERNOTE VBERNOTE
+
+Korrelationen
+
+BERNOTE
+
+VBERNOTE
+
+Korrelation nach Pearson
+Signifikanz (2-seitig)
+N
+Korrelation nach Pearson
+Signifikanz (2-seitig)
+N
+
+1
+.
+28
+
+,482**
+,009
+28
+
+,482**
+,009
+28
+1
+.
+28
+
+**. 
+
+Die Korrelation ist auf dem Niveau von 0,01 (2-seitig)
+signifikant.
+
+(a)  Die kreuzvalidierte „multiple Korrelation“ beträgt also .48, p < .01. Sie ist damit deutlich 
+geringer  als  die  multiple  Korrelation  in  der  Ausgangsstichprobe  (R = .76),  aber  noch 
+statistisch signifikant. 
+
+(b)  Um eine Doppelkreuzvalidierung durchzuführen, muss man den ganzen Prozess noch‐
+mals durchführen, nur dabei die beiden Stichproben vertauschen: Die Gewichte werden 
+also an der 1988er Stichprobe bestimmt, die Daten der 1987er Stichprobe darin einge‐
+setzt und dann korreliert. Dabei ergibt sich zunächst ein R von .74 und dann eine (in 
+dieser Richtung weniger stark abfallendes) kreuzvalidierte Korrelation von .54. 
+
+Hinweis:  Die  vollständige  Steuerdatei  (incl.  der  Kreuzvalidierung)  findet  sich  unter  dem  Namen  
+azubi.sps ebenfalls im Stud.IP. 
+ 
+
+ 
+
+– 2 –
+
+ 
+
+(24.11.2014)
+
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                  WS 2014/2015 
+
+ 
+
+Aufgabe 
+
+3 
+
+Die erste Hypothese bzgl. des positiven Zusammenhangs zwischen der Partizipation und dem 
+OCB lässt sich mittels der Berechnung einer Produkt‐Moment Korrelation unter Analysieren/ 
+Korrelation/Bivariat…  prüfen.  Es  resultiert  ein  signifikanter  positiver  Zusammenhang, 
+r = .33, p < .01. 
+Die zweite Hypothese ist eine Moderatorhypothese: Die Ausmaß an Konflikten soll den Zusam‐
+menhang zwischen Partizipation und OCB moderieren. Eine Moderatorhypothese lässt sich per 
+multipler Regression prüfen, indem man neben den Prädiktoren part und konf den multipli‐
+kativen Interaktionsterm part*konf zusätzlich in die Regressionsgleichung aufnimmt. Dazu 
+muss als Vorarbeit zunächst die neue multiplikative Variable erzeugt werden, z.B. in der Syntax 
+durch die Befehle: 
+COMPUTE i_pzko=part*konf. 
+EXECUTE. 
+Dann werden unter Analysieren/Regression/Linear… die „Abhängige Variable“ ocb und die 
+„Unabhängige Variablen“ part, konf und i_pzko angegeben. Da bei Analysen mit multipli‐
+kativen  Termen  häufiger  Multikollinearitätsprobleme  auftreten,  wird  unter  (Statistiken…) 
+zusätzlich die Option „Kollinearitätsdiagnose“ aktiviert. Die Ergebnisse dieser Diagnose werden 
+in der folgenden Tabelle dargestellt: 
+
+Koeffizientena
+
+Nicht standardisierte
+
+Koeffizienten
+
+Standardisierte
+Koeffizienten
+
+Modell
+1
+
+(Konstante)
+PART
+KONF
+I_PZKO
+
+B
+5,337
+,118
+-,177
+,001
+
+a. 
+
+Abhängige Variable: OCB
+
+Standardf
+
+ehler
+
+,467
+,095
+,140
+,029
+
+Beta
+
+,294
+-,293
+,015
+
+T
+11,417
+1,245
+-1,264
+,048
+
+Signifikanz
+,000
+,214
+,208
+,962
+
+Kollinearitätsstatistik
+
+Toleranz
+
+VIF
+
+,072
+,075
+,042
+
+13,802
+13,372
+23,573
+
+ 
+
+Man erkennt, dass Multikollinearitätsprobleme bestehen: die VIF‐Werte liegen über der kriti‐
+schen Grenze von 10. (Auffällig ist auch, dass der Prädiktor Partizipation nicht signifikant wird.) 
+Da  sich  die  Multikollinearitätsprobleme  manchmal  durch  die  Zentrierung  der  Variablen  ver‐
+schwinden, versuchen wir diesen Weg. Für die Zentrierung benötigen wir zunächst die Mittel‐
+werte  der  Variablen,  die  unter  Analysieren/Deskriptive_Statistiken/Deskriptive_ 
+Statistiken… angefordert werden können. Es resultiert: 
+
+Deskriptive Statistik
+
+Minimum Maximum Mittelwert
+4,4634
+3,1984
+
+1,33
+1,25
+
+7,00
+6,50
+
+PART
+KONF
+Gültige Werte
+(Listenweise)
+
+N
+
+205
+205
+
+205
+
+Standardab
+weichung
+1,31995
+,88239
+
+ 
+
+Für die Zentrierung erzeugen wir wie folgt drei neue Variablen: 
+COMPUTE z_part=part-4.4634. 
+COMPUTE z_konf=konf-3.1984. 
+COMPUTE iz_pzko=z_part*z_konf. 
+EXECUTE. 
+und wiederholen dann die obige multiple Regressionsanalyse, indem wir die drei Prädiktoren durch ihre 
+zentrierten Pendants ersetzen. Das Ergebnis ist: 
+
+ 
+
+– 3 –
+
+ 
+
+(24.11.2014)
+
+Prof. Dr. T. Staufenbiel                             Universität Osnabrück                                  WS 2014/2015 
+
+Koeffizientena
+
+Nicht standardisierte
+
+Koeffizienten
+
+Standardisierte
+Koeffizienten
+
+Modell
+1
+
+(Konstante)
+Z_PART
+Z_KONF
+IZ_PZKO
+
+B
+5,319
+,123
+-,171
+,001
+
+a. 
+
+Abhängige Variable: OCB
+
+Standardf
+
+ehler
+
+,034
+,026
+,039
+,029
+
+Beta
+
+,305
+-,283
+,003
+
+T
+
+157,261
+4,775
+-4,380
+,048
+
+Signifikanz
+,000
+,000
+,000
+,962
+
+Kollinearitätsstatistik
+
+Toleranz
+
+VIF
+
+,989
+,964
+,973
+
+1,011
+1,038
+1,028
+
+ 
+
+Man  erkennt,  dass  durch  diese  Transformationen  das  Multikollinearitätsproblem  tatsächlich 
+verschwunden ist. 
+Wir können uns daher der Moderatoranalyse zuwenden. Die Variable konf ist genau dann ein 
+Moderator, wenn das ‐Gewicht des multiplikativen Terms statistisch signifikant wird. Dies ist 
+hier nicht der Fall. Die zweite Hypothese muss also zurückgewiesen werden. 
+Man  erkennt,  dass  das  OCB  umso  stärker  ausfällt,  je  mehr  partizipiert  wird  ( = .31, p < .01) 
+und je weniger Konflikte bestehen ( = .28, p < .01). Es handelt sich also um einfache „Haupt‐
+effekte“. Für eine Wechselwirkung derart, dass sich die Partizipation nur dann positiv auswirkt, 
+wenn wenig Konflikte auftreten, gibt es hingegen keine Bestätigung ( = .00, ns). 
+Hinweis: Die vollständige Steuerdatei findet sich als Datei fahrrad.sps in Stud.IP. 
+ 
+
+ 
+
+– 4 –
+
+ 
+
+(24.11.2014)
+
+

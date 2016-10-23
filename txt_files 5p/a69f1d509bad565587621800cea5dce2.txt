@@ -1,0 +1,1074 @@
+Elektrophysiologische Methodik 
+
+und Physiologie erregbarer 
+
+Zellen
+
+PD Dr. Thomas Krüppel
+
+Tierphysiologie
+
+SS 2016
+
+Current clamp Experimente
+Stromreizung - Spannungsmessung
+
+U
+
+I
+
+I
+
+U
+
+Zwei Elektroden: je eine zur 
+
+Strominjektion & Spannungsmessung
+
+Exkurs Mikroelektroden
+
+Glaskapillaren
+
+David Kopf
+
+Puller
+
+Sutter
+
+DMZ-UNIVERSAL
+
+PULLER
+
+Elektrodenhalter
+
+Mikroelektroden
+
+Chlorierter Silberdraht
+
+Pellet
+
+Badelektroden
+
+Dri-Ref™ reference electrodes, developed by WPI, 
+
+exhibit stable and reproducible potential, 
+
+low resistance and extremely low electrolyte leakage
+
+Silber-Silberchlorid Elektrode
+
+Referenzelektrode
+Bezugselektrode
+
+funktioniert nur,
+
+wenn Chlorid-Ionen
+
+vorhanden sind
+
+Eigenpotential
+ca. 220 mV
+in 1 M KCl
+
+Exkurs pH-Elektrode
+
+Meter
+
+e
+c
+n
+e
+r
+e
+f
+e
+r
+
+e
+d
+o
+r
+t
+c
+e
+e
+ 
+H
+p
+
+l
+
+pH glass
+
+Fill solution
+
+Ag wire
+
+Porous junction
+
+AgCl
+
+Reference gel
+
+Ag wire
+
+pH-Elektrode Funktionsprinzip
+
+Glaselektrode
+
+Das Potential wird durch Ionenaustausch auf beiden 
+Seiten der Glasmembran erzeugt:
+Oxoniumionen gegen Alkaliionen des Glases. 
+
+Exkurs patch-clamp Technik
+
+Patch-Elektrode
+
+Whole-cell
+
+Cell-attached
+
+G-Seal
+
+Konfigurationen
+
+cell-attached
+
+whole-cell
+
+inside out
+
+outside out
+
+Details: Konfigurationen
+
+Stretch-activated channels
+
+MscL aus E. coli
+
+giant spheroplast
+
+reconstitution
+into liposome
+
+single-channel
+
+currents
+
+Elektroden 
+
+Widerstand & Kapazität
+
+Ersatzschaltbild
+
+1 M KCl
+
+spitz ausgezogene
+Glaskapillare
+
+1 pF/mm
+
+5-100 M
+
+Diffusionspotentiale
+
+diffusion- or junction potential
+
+1 M KCl
+
+0,01 oder 0,1 M KCl
+
+extra- oder intrazellulär 
+
+Äuqivalentleitfähigkeiten einiger Ionen
+
+[cm2 · ohm-1 · mol-1]
+
+Na
+K
+Li
+H
+
+43
+64
+33
+317
+
+OH
+Cl
+Br
+J
+
+177
+65
+67
+67
+
+Kaliumionen und Chloridionen haben gleiche Äquivalentleitfähigkeiten
+
+Spitzenpotentiale
+
+tip potential
+
+The surface chemistry of
+the
+glass is complex: at the tip of a
+microelectrode it is believed that
+a restriction of anionic mobility
+is established. As a result of this,
+the liquid junction potential
+is
+altered by properties of
+the
+electrode tip. This is the tip
+potential
+(TP). The TP is
+abolished by breakage of the tip.
+
+Ursprung des Spitzenpotentials: Interaktion zwischen Glas und Elektrolyt führt 
+zu eingeschränkter Anionenbeweglichkeit in der Spitze „cation plug“. Es entsteht 
+ein Nernst-ähnliches Potential, dessen Amplitude annähernd von dem Verhältnis 
+der Kationenkonzentrationen innerhalb und außerhalb der Elektrode abhängt.
+
+Ruhepotentialmessung
+
+U
+
+Spannungsmeßgerät
+
+U
+
+Mikroelektrode
+
+Bad-
+
+elektrode
+
+Bad
+
+Zelle
+
+Abgleich
+
+Ruhepotentialmessung
+
+Strominjektionsexperiment I
+
+Aktionspotential [mV]
+
+U
+
+I
+
+Rp
+
+Stromreiz
+
+[nA]
+
+Badelektrode
+
+intrazelluläre
+
+Spannungselektrode
+
+Stromreiz
+
+[nA]
+
+intrazelluläre
+Stromelektrode
+
+Strominjektionsexperiment II
+
+Aktionspotential [mV]
+
+Schalter
+
+U
+
+I
+
+Stromreiz [nA]
+
+Rp
+
+nur
+
+eine intrazelluläre
+
+Strom-Spannungselektrode
+
+Elektrophysiologie von Euplotes
+
+dSEC-Technik
+
+(discontinious single-electrode clamp)
+
+Haltepipette
+
+Euplotes 
+
+vannus/crassus
+
+100 µm
+
+The Protist Euplotes
+
+my favourite cell
+
+Topics:
+
+cell locomotion
+with cilia (cirri) 
+
+ion channels
+antiporters
+focus on
+[Ca2+]i
+
+Membranpotential Euplotes
+rhythmical change of depolarizations
+
+long lasting
+depolarisation 
+trigger SSR
+
+100 µm
+
+start
+
+short depolarization
+
+reduce speed
+
+100 µm
+
+start
+
+Passive Membraneigenschaften
+
+Membran als RC-Glied
+
+d.h. ohne Aktivierung spannungsregulierter Ionerkanäle
+
+R = konstant
+
+Vm = konstant
+
+C = konstant
+
+RC-Glied bei Strompulsen
+
+A)
+
+IPuls
+
+B)
+
+IPuls
+
+C)
+
+IPuls
+
+außen
+IR
+
+R
+
+innen
+
+außen
+IC
+
+C
+
+innen
+
+UR
+
+UR
+
+IPuls = IR
+
+UC
+
+UC
+
+IPuls = IC
+
+A
+
+IC
+
+C
+
+R
+
+außen
+IR
+
+innen
+
+URC
+
+UR
+
+URC
+
+UC
+
+IR
+
+IC
+IPuls= IC+IR
+
+Strompuls auf Widerstand
+
+I
+
+R
+
+  =    U
+R
+
+Strompuls auf Kondensator
+
+I   =  C  dU
+C
+dt
+
+Strompuls auf parallelem
+Widerstand & Kondensator
+
+I
+
+CR
+
+  =   
+
+dU
+
+R (1- e-t/RC
+
+)
+
+Negativer Strompuls - Zelle
+
+Bestimmung des Eingangswiderstandes Ri
+
+Strompuls
+
+dI = 0,2 nA
+
+dV
+
+dI
+
+0
+
+-20
+
+-40
+
+Zeit (ms) 80
+
+160
+
+Strompuls
+
+Euplotes
+
+dV = 20 mV
+
+Ri = dV/dI
+Ri = 20 mV / 0,2 nA
+Ri = 100 M
+passive Reaktion am Beispiel von Euplotes vannus
+
+)
+
+V
+m
+
+(
+
+l
+
+a
+i
+t
+n
+e
+t
+o
+p
+n
+a
+r
+b
+m
+e
+M
+
+Negativer Strompuls - Zelle
+
+Bestimmung der Zeitkonstante 
+
+Strompuls
+
+dI = 0,2 nA
+
+Euplotes
+
+160
+
+Zeit (ms) 80
+
+
+Strompuls
+
+63 % dV = 12,5 mV
+
+dV = 20 mV
+
+0
+
+-20
+
+-40
+
+angepaßte Exponentialfunktion
+
+100 µm
+
+ = 20 ms
+
+)
+
+V
+m
+
+(
+
+l
+
+a
+i
+t
+n
+e
+t
+o
+p
+n
+a
+r
+b
+m
+e
+M
+
+Bestimmung der 
+
+Eingangskapazität Ci
+
+ und Ri wurden zunächst experimentell bestimmt (s. vorne)
+Einheitenüberlegung:
+ = V/A & F=As/V
+
+ = R  C
+
+[s] = [ [F]
+
+As V 
+
+sVA
+
+
+Über Ci =  / Ri
+läßt sich die 
+
+Eingangskapazität 
+
+berechnen
+
+Euplotes
+
+Berechnung von Ci von Euplotes
+
+Euplotes
+
+Ci =  / Ri
+
+ = 20 ms
+
+Ri = 100 M
+
+Beispiel Euplotes:
+
+0,02 s = 100 106 Ci
+Ci = 0,2  10-9 s/
+Ci = 200 pF
+
+Ci = 200 pF
+
+Bestimmung der Zelloberfläche
+
+Über die Bestimmung der Eingangskapazität Ci
+
+und mit Hilfe der spezifischen Membrankapazität von
+1µF/cm2 kann die Zelloberfläche bestimmt werden
+
+=A
+
+Ci
+Cm
+
+Unser Beispiel Euplotes:
+
+Ci = 200 pF
+
+A  = 200 
+
+A  =  200
+
+A =  2 
+
+
+
+ cm2
+
+ 10-12 F 
+
+
+10-6 F
+1
+
+10 -6 cm2
+
+
+ 10-4 cm2
+
+mit 1 cm2 = 108 µm2 folgt:
+
+A  =  2 
+
+
+
+ 10 4  m2
+
+
+
+Warum ist 63 % von dV = 
+ hängt von R & C ab 
+
+-t/
+Vm (t) =  Im R (1-e      )
+
+ =  R C
+
+
+folgt
+
+wenn t =  
+
+
+
+    dann  ist   -t/
+
+
+    =    -1
+
+mit
+
+1
+e -1= e
+
+1
+Vm (t) =  Im R (1-     )e
+
+mit e =  2,7 folgt
+
+Vm (t) =  Im R (1-         )1
+
+2,7
+
+Vm (t) =  Im R (1- 0,37)
+
+Vm (t) =  Im R   0,63
+
+ = R  C
+
+ ist ein charakteristischerWert
+
+für den Verlauf einer 
+Exponentialfunktion 
+
+ ist der Zeitpunkt, bei dem sich 
+
+die Spannung um 63%
+
+geändert hat
+
+I/U- Kennlinien passiv
+
+Depolarisation
+
+Depolarisation
+
+-2,5
+
+0
+
+(ms)
+
+150
+
+Hyperpolarisation
+
+Strompulse
+
+40
+
+(mV)
+
+-40
+
+V
+m
+ 
+0
+5
+
+2,5
+
+2,5 nA
+(nA)
+
+(mV)
+50
+
+0
+
+-50
+
+-2,5 bis + 2,5 nA
+
+5 Reize durch Auswärtsströme (positiv) 0 bis +2,5 nA
+
+Hyperpolarisation
+
+5 Reize durch Einwärtsströme (negativ) 0 bis –2,5 nA
+
+Aktive Membraneigenschaften
+
+Membran als RC-Glied
+
+d.h. mit Aktivierung spannungsregulierter Ionenkanäle
+
+R = f (Vm)
+
+Vm = konstant
+
+C = konstant
+
+Negativer Strompuls - Zelle
+
+Vergleich aktiver und passiver Reaktion
+
+0
+(mV)
+
+-25
+
+-50
+
+-75
+
+80
+
+160
+
+(ms)
+
+Einwärtsgleichrichtung
+
+passiv
+
+negativer Stromreiz
+
+-1,0 nA
+
+dV
+
+dI
+
+Euplotes
+
+Ursache:
+
+langsame Aktivierung
+
+eines durch 
+
+Hyperpolarisation aktivierten
+
+Na-Einstroms
+
+Positiver Strompuls - Zelle
+
+Vergleich aktiver und passiver Reaktion
+
+(mV)
+
+0
+
+-25
+
+-50
+
+graduiertes Aktionspotential
+200
+passiv
+
+100
+
+(ms)
+
+Auswärtsgleichrichtung
+
+positiver Stromreiz
+
++1,0 nA
+
+Ursache:
+
+schnelle Aktivierung
+
+eines durch 
+
+Depolarisation aktivierten
+
+Ca-Einstroms
+
+Ursache:
+
+langsame Aktivierung
+
+eines durch 
+
+Depolarisation aktivierten
+
+K-Ausstroms
+
+Gleichrichtung im I/U-Diagramm
+
+1 [nA]
+
+-1 [nA]
+
+[mV]
+
+-
+
+-
+
+-
+
+Einwärts-
+
+gleichrichtung
+
+[mV]
+0
+
+-20
+
+-40
+
+-60
+
+0
+
+100  [ms]
+
+200
+
+-1
+
+-0.5
+
+0
+
+0
+
+-10
+
+-30
+
+-40
+
+-50
+
+Auswärts-
+
+gleichrichtung
+
+Ruhepotential
+
+0.5
+
+1 [nA]
+
+Spannungsmessung
+im Plateau bei 160 ms 
+
+Stromreize: -1,0 bis +1,0 nA
+
+Graduiertes Ca-Aktionspotential
+
+Ciliaten
+
+graduiertes Aktionspotential
+
+maximale 
+
+Aktionspotentialamplitude [mV]
+
+20
+
+10
+
+20
+[mV]
+
+10
+
+0
+
+20
+
+30
+
+40 [ms]
+
+50
+
+10
+Reiz
+
+1,0 nA
+0 nA
+
+0
+
+0
+
+Reizamplitude [nA]
+
+0,2
+
+0,4
+
+0,6
+
+0,8
+
+1,0
+
+Die Amplitude des Aktionspotentials nimmt mit steigender
+
+Reizintensität zu (häufig bei Ca-Aktionspotentialen)
+
+Ca-Aktionspotentiale Herz I
+
+Schrittmacherzellen  im Sinusknoten
+
+Ca-Aktionspotentiale Herz II
+
+Arbeitmyokard im Ventrikel
+
+Ca-Aktionspotentiale
+
+Crustacean
+
+Muskelzellen von Crustacean benutzen keine Na-Kanäle 
+
+für Aktionspotentiale sondern Ca-Kanäle 
+
+A-o-N Aktionspotential
+
+Ciliaten
+
+A.o.N.
+
+Aktionspotential
+
+Rp
+
+Konstantstromexeperiment
+11 Reize  -1,0 bis +1,0 nA
+
+Inkrement 0,2 nA
+
+Mikroelektrode
+gefüllt mit CsCl
+
+Cs blockiert
+Kaliumkanäle 
+
+Ruhepotential (Rp)
+
+A.o.N.
+
+Aktionspotential
+
+Ap-
+
+Amplitude
+
+A-o-N Aktionspotential
+
+Tintenfischaxon 
+
+Tintenfischaxon regeneratives Aktionspotential
+Reaktion auf kurzen, starken Stromreiz (1 ms)
+
+passive Reaktion Aufschlag
+langen, schwachen Stromreiz
+
+passive Reaktion auf kurzen, schwachen Stromreiz
+
+Stromreiz (nA) kurz und stark
+
+Stromreiz (nA) kurz und schwach
+
+Stromreiz (nA)
+
+lang und schwach
+
+Reaktion auf
+
+kurze und lange
+
+Stromreize
+
+A-o-N Aktionspotential
+
+Tintenfischaxon
+
+kurze und lange Reize
+
+kurzer Reiz
+
+langer Reiz
+
+HH-Zyklus & 
+
+regenerative  Antwort
+
+Ende
+
+

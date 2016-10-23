@@ -1,0 +1,552 @@
+Erstellung und Analyse einer kryptographischen Funktion
+
+auf Graphenbasis
+
+Falk Wilke
+
+Institut f¨ur Informatik
+Universit¨at Osnabr¨uck
+
+Albrechtstr. 28
+49069 Osnabr¨uck
+fwilke@uos.de
+
+Abstract: Das Thema dieser Arbeit ist die Erstellung einer kryptographischen Funkti-
+on auf Graphenbasis. Hierzu wird ein einfacher Basisalgorithmus der Graphentheorie
+erweitert und im Anschluss die G¨ute des Verfahrens bestimmt.
+
+3
+3
+3
+3
+4
+4
+5
+
+6
+6
+7
+
+9
+9
+9
+9
+9
+10
+10
+11
+11
+
+12
+
+Inhaltsverzeichnis
+
+1 Grundlagen
+
+1.1 Kryptographische Grundlagen . . . . . . . . . . . . . . . . . . . . . . .
+1.1.1
+Symmetrische Verfahren . . . . . . . . . . . . . . . . . . . . . .
+1.1.2 Asymmetrische Verfahren . . . . . . . . . . . . . . . . . . . . .
+1.2 Graphentheoretische Grundlagen . . . . . . . . . . . . . . . . . . . . . .
+1.2.1 Graphdeﬁnition . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.2.2 Tiefensuche .
+. . . . . . . . . . . . . . . . . . . . . . . .
+
+. . . .
+
+2 Graphenverschl¨usselung
+
+2.1 Verschl¨usselung mittels Tiefensuche . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . .
+2.2 Konversion von Graph und Text
+
+3 Analyse
+
+3.1 Laufzeit
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+. . . . .
+. . . . .
+
+3.1.1 Verschl¨usselung . . .
+3.1.2 Entschl¨usselung . .
+3.1.3 Gesamt
+. . . .
+3.2 Speicherbedarf
+.
+3.3 Verschl¨usselungsg¨ute . . . .
+3.4 Widerstand Brute-Force-Methode
+3.5 Einordnung und Fazit .
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . .
+. . . .
+. . . .
+. . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+. . . . .
+
+. . . . .
+
+.
+.
+
+.
+.
+
+.
+.
+
+Literatur
+
+2
+
+1 Grundlagen
+
+Dieser Abschnitt thematisiert die f¨ur die nachfolgenden Abschnitte ben¨otigten Grundla-
+gen. Hierbei werden Aspekte der Kryptographie und der Graphentheorie erl¨autert.
+
+1.1 Kryptographische Grundlagen
+
+Die Kryptographie unterscheidet bei Verschl¨usselungsverfahren zwischen symmetrischen
+und asymmetrischen Verfahren. Diese differieren grundlegend in ihrer Anwendung und in
+ihrem Aufbau.
+
+1.1.1 Symmetrische Verfahren
+
+Symmetrische Verschl¨usselungsverfahren nutzen zum Ver- und Entschl¨usseln denselben
+Schl¨ussel. Einer der bekanntesten und ¨altesten Vertreter dieser Gattung ist die C¨asar-
+Verschl¨usselung. Diese verrechnet den Text einer Nachricht, indem sie jeden Buchsta-
+ben im benutzten Alphabet um eine vorher festgelegte Zahl zyklisch rotiert. Anschau-
+lich wird z.B. durch eine Rotation von drei Zeichen ein ”B“ zu einem ”E“. Symmetrische
+Verfahren zeichnen sich vor allem durch ihre Geschwindigkeit und vornehmliche Einfach-
+heit aus. Problematisch ist der sichere Schl¨usselaustausch, da alle Kommunikationspartner
+einen identischen Schl¨ussel einsetzen, welcher vor Beginn der Kommunikation zu vertei-
+len ist. Wird dieser Schl¨ussel abgefangen, so ist die Kommunikation aller Beteiligten kom-
+promittiert. Symmetrische Verfahren sind deshalb abh¨angig von ¨außeren (Distributions-)
+Umst¨anden. Dies ist f¨ur ein Kryptographieverfahren zur Herstellung gesicherter Kommu-
+nikation ein großer Nachteil. Diesem Umstand wird in der Praxis h¨auﬁg durch einen kom-
+binierten Einsatz asymmetrischer und symmetrischer Verfahren begegnet. Hierbei wird
+eine asymmetrische Verschl¨usselung zum Schl¨usselaustausch eingesetzt, w¨ahrend die ei-
+gentliche Kommunikation ¨uber eine symmetrische Verschl¨usselung gesichert wird. Die
+asymmetrischen Verfahren erl¨autert der folgenden Abschnitt.[Beu07] [RW09] [Soc12]
+
+1.1.2 Asymmetrische Verfahren
+
+Im Gegensatz zu symmetrischen Verschl¨usselungsverfahren beruht das Prinzip von asym-
+metrischen Verschl¨usselungen auf unterschiedlichen Schl¨usseln zum Ver- und Entschl¨usseln.
+Ein anderer Name f¨ur diese Verfahrensart ist ”Public-Key-Verschl¨usselungsverfahren“. Im
+Grunde werden ein ¨offentlicher Schl¨ussel zum Verschl¨usseln und ein privater Schl¨ussel
+zum Entschl¨usseln erzeugt. Ein wesentlicher Aspekt hierbei ist, dass nur der private Schl¨ussel
+den ¨Offentlichen implizieren1 darf, die R¨uckrichtung jedoch explizit ausgeschlossen sein
+muss. Insofern stellt der private Schl¨ussel den sicherheitskritischen Part in einem asym-
+metrischen Verfahren dar. Mit der Asymmetrie einher geht auch ein ”Rollentausch “ der
+Kommunikationspartner. Jeder von diesen ver¨offentlicht seinen ¨offentlichen Schl¨ussel und
+
+1siehe auch Fallt¨urfunktion
+
+3
+
+nutzt selbst die ¨offentlichen Schl¨ussel der anderen Teilnehmer. Da sich im Regelfall der
+private Schl¨ussel nicht aus dem ¨offentlichen Teil berechnen l¨asst (lassen sollte), bleibt
+die Kommunikation bis zur Kompromittierung eines Teilnehmers sicher. Das symmetri-
+sche Problem der Schl¨usseldistribution entf¨allt ebenfalls, zudem kompromittiert das Be-
+kanntwerden eines private Schl¨ussels lediglich diesen Kommunikationspartner (mit Ein-
+schr¨ankungen, siehe Signierung). Nachteilig an asymmetrischen Verfahren ist jedoch der
+hohe (Verwaltungs-) Aufwand; in der Praxis wird zumeist lediglich der Schl¨usselaustausch
+per asymmetrischer Verschl¨usselung durchgef¨uhrt bzw. in bestimmten Anwendungen (Si-
+gnierung) kann lediglich ein asymmetrisches Vorgehen eingesetzt werden. Einen der be-
+kanntesten Vertreter dieser Gattung von Verfahren stellt die RSA-Verschl¨usselung dar,
+welche auf der Theorie von Primzahlen und Kongruenzen basiert.[Beu07]
+
+1.2 Graphentheoretische Grundlagen
+
+Dieser Abschnitt behandelt die Deﬁnition eines Graphen, sowie einen klassischen Algo-
+rithmus der Graphentheorie.
+
+1.2.1 Graphdeﬁnition
+
+Ein Graph G = (V, E) besteht aus einer Menge von Knoten V (engl. vertices) und ei-
+ner Menge von Kanten E (eng. edges) zwischen diesen. Eine Kante e hat einen Endpunkt
+u und einen Endpunkt v mit u, v ∈ V, v (cid:54)= u. E kann nur orientierte (d.h. richtungs-
+abh¨angige) Kante enthalten. In diesem Fall nennt man G Digraph (eng. directed graph).
+Ist keine Kante orientiert, spricht man lediglich von einem Graphen. Es ist ersichtlich, dass
+die meisten Aussagen f¨ur simple Graphen lediglich um eine Behandlung der Kantenrich-
+tung erg¨anzt werden m¨ussen, um auf Digraphen anwendbar zu sein. Eine Mischform aus
+orientierten und nichtorientierten Kanten ist nicht vorgesehen. Mit Nachbarn eines Kno-
+tens v bezeichnet man alle durch eine Kante mit v verbundenen Knoten.
+Im folgenden ist ein Graph G immer ein sogenannter simpler Graph. Dies bedeutet, dass
+zwischen zwei Knoten h¨ochstens eine Kante existiert und f¨ur eine Kante die Endpunkte
+nicht identisch sein k¨onnen (engl. selﬂoop). Damit ist es f¨ur |V | = n maximal m¨oglich
+die Beziehung |E| = n∗(n−1)
+2 zu erf¨ullen. Ein Graph der diese Eigenschaft erf¨ullt, wird
+vollst¨andiger Graph oder f¨ur einen Parameter n kurz Kn genannt.
+Ein Weg durch den Graphen ist eine geordnete (ggf. unendliche) Folge von Knoten. Die-
+se sind beginnend beim zweiten Knoten jeweils mit ihrem Vorg¨anger durch eine Kante
+verbunden. Sie werden in der durch die Folge vorgegebenen Reihenfolge besucht, d.h.
+¨uber die Verbindungskanten traversiert. Hierbei sind auch Dopplungen (d.h. mehrfaches
+Besuchen von Kanten und Knoten) erlaubt. Im Gegensatz dazu erlaubt ein Pfad nur ein
+h¨ochstens einmaliges Besuchen der Knoten aus V . Damit ist auch ein h¨ochstens einmali-
+ges Besuchen der Kanten aus E m¨oglich, da die Endpunkte der Kanten h¨ochstens einmal
+besucht werden d¨urfen. Ist es m¨oglich, einen Weg durch den Graphen zu ﬁnden, welcher
+
+2
+
+2Kombinatorik:(cid:0)n
+
+(cid:1)
+
+2
+
+4
+
+alle Knoten umfasst, so nennt man G zusammenh¨angend. Nat¨urlicherweise ist ein Kn
+zusammenh¨angend.
+F¨ur die Darstellung eines Graphen im Computer werden h¨auﬁg zwei Datenstrukturen be-
+nutzt. Die Adjazenzmatrix speichert Kanten als Eintr¨age in einer Matrix (z.B. 1 f¨ur Kante
+0 f¨ur keine Kante). Der Spalten- bzw. Zeilenindex repr¨asentiert hierbei einen Knoten. Die
+Adjazenzliste bzw. die Adjazenzlisten werden jedem Knoten zugeordnet und speichern
+die ausgehenden und damit auch die eingehenden Kanten zu ihrem zugeordneten Knoten.
+Im Gegensatz zur Adjazenzmatrix beinhaltet die Adjazenzliste eine Zusatzinformation, die
+nicht direkt in einer Adjazenzmatrix codiert werden kann. Eine Liste ist immer geordnet,
+in diesem Fall wird demnach implizit durch die Implementierung eine Reihenfolge der
+Kanten vorgegeben. In der Theorie w¨are hierzu eine weitere Funktion, welche die Kanten
+nummeriert, erforderlich.
+Einer der Basisalgorithmen der Graphentheorie ist die Tiefensuche, welche unter anderem
+als Zusammenhangstest eingesetzt wird. Im folgenden Abschnitt soll der Algorithmus kurz
+vorgestellt werden. [Bap14]
+
+1.2.2 Tiefensuche
+
+Die Tiefensuche stellt einen der vielseitigsten Algorithmen der Graphentheorie dar. In
+dieser Arbeit soll lediglich auf die grundlegende Struktur der Tiefensuche eingegangen
+und eine L¨ucke in der Deﬁnition zur Modiﬁzierung eingesetzt werden. Im folgenden eine
+Pseudocode-Darstellung der Tiefensuche (depth-ﬁrst-search,dfs) als rekursive Variante.
+
+Listing 1: Tiefensuche rekursiv
+
+d f s ( Node v )
+
+markAsSeen ( v )
+f o r
+
+a l l w i n n e i g h b o u r s ( v )
+i f ( ! s e e n (w) )
+
+d f s (w)
+
+end
+
+end
+
+end
+
+Im Wesentlichen werden demnach die Nachbarn aller Knoten in undeﬁnierter Reihenfolge
+angesehen und auf diesen rekursiv die Tiefensuche aufgerufen . Es ist ersichtlich, dass der
+Algorithmus terminiert und alle Knoten ﬁndet, die mit dem ersten Aufrufargument auf ei-
+nem Weg liegen k¨onnen. Es ist in der Literatur f¨ur den Basisalgorithmus nicht speziﬁziert,
+in welcher Reihenfolge die Nachbarn vom Algorithmus betrachtet wird. [Blu12]
+Dies bietet Raum f¨ur eine einfache und im Folgenden vorgestellte Modiﬁkation zur Ge-
+winnung eines Verschl¨usselungsalgorithmus. Dies ist das Thema des folgenden Kapitels.
+
+5
+
+2 Graphenverschl¨usselung
+
+Dies Kapitel beschreibt ein durch eine modiﬁzierte Tiefensuche gewonnenes Verschl¨usselungsverfahren.
+Die eingesetzte Darstellungsform ist eine Adjazenzliste.
+
+2.1 Verschl¨usselung mittels Tiefensuche
+
+Der Algorithmus in Listing 1 traversiert die Nachbarn eines Knotens in beliebiger Rei-
+henfolge. Bemerkenswert ist, dass in einem vollst¨andigen Graphen nur genau ein Nachbar
+(mit Ausnahme des letzten gefundenen Knotens) des aktuellen Knotens traversiert wird.
+Alle anderen potentiellen Kandidaten werden (da der Graph vollst¨andig ist) bereits durch
+den rekursiven Aufruf erreicht bzw. markiert. Diese Eigenschaft kann wie folgt ausgenutzt
+werden: Anstelle einer wahllosen Traversierung ¨uber alle Nachbarn kann ein ”Orakel “ be-
+nutzt werden, welches einen (im Sinne der Tiefensuche richtigen) Knoten ausw¨ahlt. Diese
+Funktion stellt den Schl¨ussel des hier vorgestellten Verschl¨usselungsverfahren dar.
+Sei f¨ur beliebiges m aus den nat¨urlichen Zahlen ein Km und ein Schl¨ussel δ : V → N
+gegeben, welcher zu jedem Knoten die Position in der Adjazenzliste des n¨achsten f¨ur die
+Tiefensuche zu betrachtenden Nachbarn angibt. Der Schl¨ussel δ kann beliebig gew¨ahlt
+werden, es bietet sich jedoch an, hier auf Zufallszahlen zur¨uckzugreifen. Der Graph sei
+zus¨atzlich in der durch δ vorgegebenen Reihenfolge im Sinne der Tiefensuche traversier-
+bar (sonst tausche Positionen in der Adjazenliste). F¨ur den letzten der traversierten Knoten
+kann δ einen beliebigen Nachbarn angeben.
+δ gibt demnach eine Traversierungsreihenfolge des Graphen vor. Der Graph ist vollst¨andig
+und insofern wird ein Pfad durch den Graphen gefunden und nicht ein Weg. Des Weite-
+ren werden alle Knoten betrachtet, da der Graph zusammenh¨angend ist. Ein vollst¨andiger
+Graph hat exponentiell viele Pfade3, der Schl¨ussel liefert genau einen eindeutigen Pfad f¨ur
+jeden Startknoten S.
+Die Idee des Verfahrens ist es, die Originaldaten als den ”richtigen“ Pfad zu betrachten
+und den Graphen an diesen Pfad und den Schl¨ussel anzupassen. Zu diesem Zweck wird
+zu einem Pfad P zun¨achst ein vollst¨andiger Graph G mit ausreichend (f¨ur P ) Knoten
+erzeugt. Die Adjazenzlisten m¨ussen, um Sicherheit zu erreichen, zuf¨allig gew¨urfelt wer-
+den, da sonst der Schl¨ussel sich selbst verr¨at. In einem letzten Schritt m¨ussen die in P
+bezeichneten Kanten in die durch δ vorgegebene Position verschoben werden. Der auf
+diese Weise gewonnene Graph ist das Chiffrat. Dieser enth¨alt exponentiell viele Pfade, der
+richtige Pfad ist demnach unter vielen ggf. richtig Aussehenden versteckt. Des Weiteren
+enth¨alt, falls |G| > |P| gilt, das Chiffrat mehr Informationen als notwendig. Dies stellt ei-
+ne zus¨atzliche Schwierigkeit beim Entschl¨usseln dar, da nat¨urlicherweise mehr m¨ogliche
+Pfade durch den Graphen vorhanden sind. Bei Kenntnis des Schl¨ussels wird beim Ent-
+schl¨usseln ebenfalls ein zu langer Pfad erzeugt, durch Einf¨ugen eines Trennknotens o.¨a.
+kann dies jedoch leicht herausgeﬁltert werden. Auch ein Ignorieren dieser Begebenheit ist
+denkbar, da der eigentliche Pfad lediglich verl¨angert wird.
+
+3siehe auch Entscheidungsbaum
+
+6
+
+Eine Beispielhafte Pseudocode-Implementierung der Entschl¨usselung gibt das folgende
+Listing 2 an:
+
+Listing 2: Entschl¨usselung
+
+d e c r y p t ( Node s t a r t , Key d e l t a )
+
+P a t h P [ | V| ]
+f o r
+
+i =0 t o |V|−1
+P [ 0 ] = n u l l
+
+d f s ( s t a r t , d e l t a , 0 , P )
+r e t u r n P
+
+end
+d f s ( Node v , Key d e l t a , i n t k , P a t h P )
+
+markAsSeen ( v )
+P [ k ]= v
+
+L i s t n e i g h b o u r s =v . n e i g h b o u r s ( )
+Knoten w= n e i g h b o u r s . getFromIndex ( d e l t a ( v ) )
+
+i f ( ! s e e n (w) )
+
+d f s (w, d e l t a , k +1 ,P )
+
+end
+
+end
+
+Diese Funktion traversiert den Graphen ausgehend von einem Startknoten im Sinne des
+Algorithmus in Listing 1. Der Unterschied besteht darin, dass δ zur Auswahl des n¨achsten
+Knotens der Traversierung dient. Zudem notiert der Algorithmus den abgelaufenen Pfad.
+Es k¨onnen keine Sackgassen entstehen, da der Graph zusammenh¨angend und vollst¨andig
+ist. Die Verschl¨usselung ist fast als generisch anzusehen. Die Schritte zum Erzeugen eines
+vollst¨andigen Graphen bzw. zum zuf¨alligen Anordnen der Adjazenzlisten haben nichts mit
+dem zu verschl¨usselnden Pfad zu tun. Lediglich das Anordnen der Kanten in Bezug auf
+δ ist von Belang, es wird jedoch an dieser Stelle darauf verzichtet, Pseudocode hierf¨ur
+anzugeben.
+
+2.2 Konversion von Graph und Text
+
+Im vorherigen Abschnitt 2.1 wurde die Verschl¨usselung eines Pfades P in einem Graphen
+angesprochen und dass die Originaldaten als ein Pfad zu betrachten sind. Es stellt sich die
+Frage, wie ein Text in einen Graphen der ben¨otigten Art verwandelt werden kann, sodass
+der Text einen Pfad in diesem Graphen markiert. Hierzu werden nun einige Grundannah-
+men getroffen. Der Text habe lediglich Zeichen aus einer festen Menge C und nicht mehr
+als N viele Zeichen. Ein Text gr¨oßerer L¨ange als N kann ggf. auch aufgeteilt werden,
+ohne dass sich der Parameter N ¨andern muss. Beide Parameter lassen sich f¨ur beliebige
+Texte skalieren.
+Es l¨asst sich ein K|C|∗N +1 erzeugen und jedes Zeichen aus C impliziert dabei N vie-
+le Knoten. Jeder dieser Knoten wird mit seinem korrespondierenden Zeichen identiﬁziert.
+
+7
+
+Zus¨atzlich existiere ein Startknoten S, welcher den Anfang aller Traversierungen markiert.
+Dieser ist notwendig, da sonst die Entschl¨usselung nicht an einem fest deﬁnierten Punkt
+einsetzen k¨onnte. Dieses Problem ist z.B. bei Dateien nicht vorhanden, da diese am Da-
+teianfang einen Einsprungpunkt haben. Es ist ersichtlich, dass f¨ur einen gegebenen Text
+unter den obigen Nebenbedingungen jedes Zeichen mit genau einem Knoten identiﬁziert
+werden kann. Durch Aufsammeln der Knoten in der durch den Text vorgegebenen Reihen-
+folge erh¨alt man einen Pfad durch den Graphen. Ab diesem Punkt kann auf die in Abschnitt
+2.1 vorgestellte Verfahrensweise zur¨uckgegriffen werden. Der bei der Entschl¨usselung ge-
+wonnene Pfad impliziert direkt einen Text durch Identiﬁzierung der besuchten Knoten mit
+ihren korrespondierenden Zeichen in der gegebene Reihenfolge
+Da der urspr¨ungliche Text in eine andere Darstellungsform ¨uberf¨uhrt worden ist, stellt
+sich die Frage nach m¨oglichen Konvertierungsverlusten. Der Text selbst markiert einen
+eindeutigen Pfad im Graphen, dieser wird (abgesehen von einer m¨oglichen Verl¨angerung)
+von der Entschl¨usselung wiederhergestellt. Demnach ist sichergestellt, dass keine Infor-
+mation verlorengeht, jedoch kann der entschl¨usselte Text deutlich l¨anger und nach der
+eigentlichen Nachricht mit unsinnigen Zeichen angef¨ullt sein. Dem kann allerdings wirk-
+sam durch Einf¨uhrung eines speziellen Trennzeichens in den Text begegnet werden und
+stellt somit kein Problem dar. In diesem Sinne ist dies sogar ein gew¨unschtes Verhalten, da
+die L¨ange des Chiffrats nicht vom verschl¨usselten Text abh¨angt und alle potentiellen Texte
+der L¨ange N mit Zeichen ausschließlich aus C umfasst. Die zuf¨allige Verw¨urfelung der
+Adjazenzlisten verhindert, dass der ”richtige “ Text im Graphen ohne Schl¨ussel erkennbar
+wird. Insofern bietet das Verfahren viele potentielle L¨osungen an, die eigentliche Nach-
+richt ist unter vielen anderen, ebenfalls sinnvollen Nachrichten versteckt. Problematisch
+ist jedoch der hohe Bandbreiten- und Speicherbedarf dieses Verfahrens. Dies wird in Ab-
+schnitt 3 genauer dargestellt.
+Das vorgestellte Verfahren geh¨ort zu den symmetrischen Verschl¨usselungsverfahren, da
+der benutzte Schl¨ussel f¨ur Ver- und Entschl¨usselung identisch ist. Zur sicheren Schl¨ussel-
+¨ubertragung wird demnach noch ein geeignetes asymmetrisches Verfahren ben¨otigt. Hier
+bietet sich z.B. das RSA-Verfahren an.
+
+8
+
+3 Analyse
+
+Dieser Abschnitt behandelt die Analyse der vorgestellten Verschl¨usselung. Diese kann auf
+Laufzeit, Speicherbedarf und Verschl¨usselungsg¨ute hin untersucht werden.
+
+3.1 Laufzeit
+
+Einer der wichtigsten Aspekte eines Verschl¨usselungsverfahren ist die Laufzeit des selbi-
+gen. Die Betrachtung dieser l¨asst sich in die Phasen Ver- und Entschl¨usselung einteilen.
+
+3.1.1 Verschl¨usselung
+
+Das vorgestellte Verfahren erzeugt f¨ur einen Text unter den Nebenbedingungen aus Ab-
+schnitt 2.1 einen vollst¨andigen Graphen mit |C| ∗ N Knoten. Es werden bei variablem N
+hierf¨ur O((C ∗ N )2) viele Operationen zur Erstellung aller Knoten und Adjazenzlisten
+ben¨otigt. Alternativ k¨onnen C und N auch als Konstanten betrachtet werden, hiermit liegt
+die Laufzeit in O(1).
+Die ¨Anderung der Adjazenzlisten korrespondierend zu δ erfordert lediglich O(|C| ∗ N )
+viele Operationen, letztlich weist das Verfahren je nach Betrachtungsweise eine quadrati-
+sche oder lineare Laufzeit auf.
+
+3.1.2 Entschl¨usselung
+
+Die Entschl¨usselung ben¨otigt lediglich einen Durchlauf des in Listing 2 vorgestellten Al-
+gorithmus, welcher jeden Knoten genau einmal besucht. Insofern handelt es sich hierbei
+um eine Laufzeit in O(|C|∗N ) Alternativ k¨onnen C und N auch als Konstanten betrachtet
+werden, damit liegt die Laufzeit in O(1).
+
+3.1.3 Gesamt
+
+F¨ur beide Teilbereiche ergibt sich eine h¨ochstens quadratische Laufzeit. Da in den meisten
+F¨allen eine Kommunikation bidirektional abl¨auft, werden beide Teilbereiche zusammen
+eingesetzt. In den meisten F¨allen wird somit die lineare Laufzeit durch den quadratischen
+Verschl¨usselungsteil dominiert werden. Ist die L¨ange und der Zeichensatz aller betrachte-
+ten Texte jedoch beschr¨ankt ergibt sich eine lineare Gesamtlaufzeit. In diesem Fall k¨onnen
+C und N als Konstanten angenommen werden und die Erstellung des Graphen ben¨otigt
+eine Laufzeit in O(1).
+
+9
+
+3.2 Speicherbedarf
+
+Der Speicherbedarf des Verfahrens stellt ebenfalls eine wichtige Kenngr¨oße dar. Vor al-
+lem der von der Gr¨oße des urspr¨unglichen Texts abweichende Umfang des Chiffrats kann
+sich als problematisch erweisen. Abgesehen vom Speicher f¨ur das erzeugte Chiffrat, den
+Schl¨ussel δ und den urspr¨unglichen Text ist kein weiterer Speicher erforderlich. Dies liegt
+darin begr¨undet, dass alle Teile des Verfahrens auf dem aufgebauten Graphen unter Zuhil-
+fenahme des Schl¨ussels arbeiten. Lediglich beim Entschl¨usselungsvorgang kann potentiell
+zus¨atzlicher Speicher durch angeh¨angten Text ben¨otigt werden, dies kann jedoch durch
+Nutzung eines speziellen Trennzeichens ausgeschlossen werden. Ohne Beschr¨ankung der
+Allgemeinheit kann angenommen werden, dass der Text weniger als N Zeichen beinhaltet
+(sonst skaliere N). Damit ergibt sich (da der Schl¨ussel maximal |C| ∗ N Eintr¨age hat) ein
+Gesamtspeicherbedarf in O((|C| ∗ N )2), da der aufgebaute Graph den gr¨oßten Speicher-
+bedarf hat. Es gibt in diesem Graphen exakt |C|∗ N + 1 Knoten und in jeder Adjazenzliste
+jedes Knoten stehen (da der Graph vollst¨andig ist) |C|∗ N Eintr¨age. Daraus resultiert sich
+der quadratische Speicherbedarf, die linearen Anteile f¨ur Schl¨ussel und Text fallen in der
+O-Notation nicht ins Gewicht.
+Die Speicherbedarf bzw. die ben¨otigte Bandbreite zur ¨Ubertragung h¨angt somit quadra-
+tisch von einem Parameter ab, der die Gr¨oße des eigentlichen Textes im besten Fall um
+den Faktor |C| ¨uberschreitet. Dies ist weniger optimal, da so auch f¨ur kleine Texte ggf.
+sehr viele Daten zus¨atzlich anfallen. Andererseits kann, da bis auf die Reihenfolge der
+Adjazenzlisten immer die gleiche Datenstruktur ¨ubertragen wird, ggf. ein spezialisierter
+Komprimierungsalgorithmus zum Einsatz kommen. Ein solcher Ansatz ist jedoch nicht
+Teil dieser Arbeit.
+
+3.3 Verschl¨usselungsg¨ute
+
+Die G¨ute eines Verfahrens h¨angt maßgeblich von seiner F¨ahigkeit ab, ein Berechnen des
+Originaltexts ohne Zusatzinformation (Schl¨ussel) zu verhindern. Bei dem hier vorgestell-
+ten Verfahren kommt es maßgeblich auf die in Abschnitt 2.1 beschriebene zuf¨allige Anord-
+nung der Adjazenzlisten an. Durch eine gleichverteilt4 zuf¨allige Auswahl des Schl¨ussels δ
+und der Anordnung der Adjazenzlisten ist es f¨ur einen ”Außenstehenden“ nicht zu unter-
+scheiden, welche Elemente der Adjazenzlisten planvoll nach der durch δ gegebenen Vor-
+schrift angeordnet sind und welche zuf¨allig ihren Platz einnehmen. Es ist allerdings ggf.
+trotzdem m¨oglich, per Brute-Force-Methode5 den Originaltext wiederherzustellen. Dies
+behandelt der folgende Abschnitt.
+
+4alle Schl¨ussel gleich wahrscheinlich
+5durchprobieren aller M¨oglichkeiten
+
+10
+
+3.4 Widerstand Brute-Force-Methode
+
+Ohne den Schl¨ussel ist lediglich der Startknoten S bekannt, die Traversierungsreihen-
+folge hingegen nicht. Ein Ausprobieren aller m¨oglichen Schl¨ussel f¨uhrt letztlich auf ein
+Durchspielen aller m¨oglichen Pfade (der Schl¨ussel gibt immer einen eindeutigen Pfad
+an). Ein solches ausprobieren wird auch als ”Brute-Force-Methode“ bezeichnet. Es gibt
+O((|C|∗N )!) viele m¨ogliche Pfade, da ohne Mehrfachtraversierung nach jedem besuchten
+Knoten genau ein Knoten weniger als vor dem Besuch zur Auswahl steht. Dies begr¨undet
+sich in der Vollst¨andigkeit des Graphen und einem einfachen kombinatorischen Argument.
+In diesem Sinn ergeben sich zu viele m¨ogliche Pfade, da der Graph alle potentiellen Texte
+der L¨ange ≤ N mit Zeichen ausschließlich aus C kodiert. Ggf. kann durch eine intelligen-
+te Heuristik die Menge der m¨oglichen Pfade reduziert werden. Im Deutschen ist z.B. eine
+Zeichenabfolge ”tßu“ nicht vorgesehen. Diese Pfade k¨onnen ausgeschlossen werden. Al-
+lerdings verbleiben dennoch viele richtige Texte (der Graph kodiert alle m¨oglichen Texte),
+die dennoch nicht dem Originaltext entsprechen. Dies bedeutet, dass lediglich die Informa-
+tion ¨uber die obere Schranke der L¨ange des Texts auf diese Weise ausgelesen werden kann.
+Dies kann jedoch in keiner Weise zur Entschl¨usselung herangezogen werden. Die St¨arke
+des Verfahrens liegt darin, dass zus¨atzlich zum Originaltext viele Alternativen angeboten
+werden. Diese sind f¨ur einen Außenstehenden nach Kenntnis des Autors nicht vom Origi-
+naltext zu unterscheiden. Dies h¨angt maßgeblich von der G¨ute der benutzten Zufallszahlen
+ab. Das Verfahren besitzt Anleihen zu einem bekannten Verfahren der Kryptographie, wel-
+ches im folgenden Abschnitt vorgestellt wird.
+
+3.5 Einordnung und Fazit
+
+Im Prinzip handelt es sich hierbei um eine Variante des One-Time-Pads (OTP, auch Ein-
+malverschl¨usselung). Dieses verschl¨usselt jeden Buchstaben eines Textes unter Zuhilfe-
+nahme einer Zufallszahl. Diese Zufallszahl wird lediglich einmal zum Ver- und einmal
+zum Entschl¨usseln benutzt. Als Quelle f¨ur diese Zahlen dient z.B. atmosph¨arisches Rau-
+schen. Die in dieser Arbeit vorgestellte Funktion ¨andert die Reihenfolge der Adjazenzlis-
+ten f¨ur jede Verschl¨usselung zuf¨allig, was dem One-Time-Pad ¨ahnelt. Im Gegensatz zum
+OTP wird jedoch ein Schl¨ussel generiert, der ggf. mehrfach benutzt wird. Dieser ist min-
+destens genau so lang wie die Nachricht. Falls der Schl¨ussel und die Verw¨urfelung der
+Adjazenzlisten gleichverteilt zuf¨allig gew¨ahlt wurde und der Schl¨ussel lediglich einmal
+benutzt wird, so ist analog zum OTP eine perfekte Sicherheit erreicht. Das OTP w¨urde
+jedoch bevorzugt werden, da es bessere Laufzeiten und praktisch keine Beschr¨ankungen
+f¨ur die zu verschl¨usselnden Texte aufweist.[Beu07]
+
+11
+
+Literatur
+
+[Bap14] Ravindra B. Bapat. Graphs and Matrices. Springer, 2014.
+
+[Beu07] Albrecht Beutelspacher. Kryptologie: Eine Einf¨uhrung in die Wissenschaft vom Ver-
+
+schl¨usseln, Verbergen und Verheimlichen. Vieweg+Teubner Verlag, 2007.
+
+[Blu12] Norbert Blum. Algorithmen und Datenstrukturen. Oldenbourg Wissenschaftsverlag, 2012.
+
+[RW09] Lasse Rempe und Rebecca Waldecker. Primzahltests f¨ur Einsteiger. Vieweg+Teubner
+
+Verlag, GWV Fachverlage GmbH, 2009.
+
+[Soc12] Rolf Socher. Algebra f¨ur Informatiker: Mit Anwendungen in der Kryptograﬁe und Codie-
+
+rungstheorie. Carl Hanser Verlag GmbH & Ko KG, 2012.
+
+12
+
+

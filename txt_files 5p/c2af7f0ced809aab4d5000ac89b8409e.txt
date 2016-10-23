@@ -1,0 +1,520 @@
+Einführung in die  
+
+Programmiersprache C++
+
+Dr. Thomas Wiemann 
+Institut für Informatik 
+
+AG Wissensbasierte Systeme 
+
+!
+
+WS 2014 / 2015
+
+Forschungsthemen AG KBS
+
+• Steuerung von mobilen Robotern 
+
+(„Embedded Systems“) 
+
+• 3D Umgebungserfassung und 
+
+Modellierung 
+
+• Semantische Karten basierend auf 
+
+Umgebungsmodellen
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+2
+
+www.inf.uos.de/kbs
+
+Praktika AG KBS
+
+‣ Praktikum WS 2014 / 2015 
+‣ Projekte an Kurt-Robotern (SICK Robot Day) 
+‣ KI, Robotik, WBS (Prof. Hertzberg) 
+‣ 3D Sensordatenverarbeitung (SS 2015)
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+3
+
+Calvin
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+4
+
+Hobbes
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+5
+
+3D Rekonstruktion
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+6
+
+SICK Robot Day 2014
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+7
+
+C++?
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+8
+
+Ziele der Veranstaltung
+
+können! 
+
+‣ Wichtig: 
+• Systematisches Erlernen von C++ 
+• Als Informatiker sollte man mehr als nur eine Programmiersprache 
+‣ Wichtiger: 
+• C / C++ versteckt weniger Systemarchitektur als Java usw. 
+• Man muss sich direkter mit dem System auseinander setzen 
+‣ Am Wichtigsten: 
+• Praktische Erfahrung in Problemorientierter Programmierung 
+• Praktische Erfahrung Software-Design 
+• Anwendung dessen was man in Info X gelernt hat 
+‣ Aber: 
+• Zeitaufwand kann hoch werden 
+• Man muss bereit sein, sich mit den Problemen auseinder zu setzen
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+9
+
+Organisatorisches (1) - Vorlesungsteil
+
+‣ 15 Vorlesungen á 60 min 
+‣ Inhalt 
+• Einführung in die Programmierung mit C (erster Teil) 
+• Einführung in die Programmierung mit C++ (zweiter Teil) 
+• C++ für Fortgeschrittene (dritter Teil) 
+‣ Vorraussetzungen 
+• Informatik A, Informatik B 
+• UNIX / Linux / Cygwin (kein offizieller Support für Windows!) 
+• Interesse am Programmieren 
+‣ Ziele 
+• Sicheren Umgang mit C++ lernen 
+• Software Engineering Praxis 
+
+- Wie schreibt man Code, der einfach zu verstehen ist? 
+- Wie findet man Bugs 
+- Wie wird Code wartbar und erweiterbar?
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+10
+
+Organisatorisches (2) - Vorlesungsteil
+
+‣ Materialien zur Vorlesung werden in StudIP bereit gestellt: 
+• Vorlesungsfolien (kein ausformuliertes Skript) 
+• Beispielprogramme aus der Vorlesung 
+• Übungszettel plus Unterlagen 
+‣ Übungen 
+• Jede Woche gibt es es einen Zettel, der bearbeitet werden muss 
+• Tutoren kontrollieren die Leistungen (CIP-Pool im AVZ) 
+• Tutoren machen für jeden Zettel einen Bewertungsvorschlag 
+• Die endgültigen Noten werden allerdings von mir vergeben!!! 
+• Fragen / Kommentare zu den Übungen im StudIP-Forum! 
+• Tutorium / Übung Donnerstags in 32/109 
+• Durchschnittsnote der Übungen ergibt die Endnote (ein F frei) 
+
+➡ keine Klausur am Ende 
+➡ Anmeldung in OPIUM bis spätestens 02.11!!! (ausnahmslos)
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+11
+
+Organisatorisches (3) - Vorlesungsteil
+
+‣ Ablauf der Übungen 
+• Abgabe der Übungen ausgedruckt mit Angabe von Namen und 
+• Zusätzlich: Pro Gruppe eine Mail an cpp@informatik.uni-
+
+Testatgruppe (A, B oder C). Jeder Einzeln!!! 
+
+osnabrueck.de!
+- bis spätestens Montag 08:00 Uhr 
+- Betreff: „Gruppe A|B|C vollständige Namen“ 
+- Anhänge nicht packen! 
+
+• Testate erfolgen in Zweiergruppen 
+• Teststzuteilung: Listen hängen an der Tür zum CIP-Raum 
+• Fragen, Anregungen, Kritik: 
+• Jederzeit! (in der Woche immer, keine Garantie am Wochenende!!!) 
+• E-Mail (twiemann@uos.de oder cpp-Adresse) 
+• Vorbeikommen: 509a  
+• Telefon: 2438, ICQ: 284-384-188, Facebook Messanger
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+12
+
+Organisatorisches (4) - Praktikumsteil
+
+‣ Die Veranstaltung gibt insgesamt 6 Credits 
+‣ Jeweils 3 für Vorlesung und Praktikum 
+‣ Beides kann nur zusammen als Modul belegt werden (kein 
+Splitting in 3 + 3 Credits möglich!) 
+‣ Endnote Durchschnitt aus Praktikums und Vorlesungsnote! 
+‣ Organisation Praktikum: 
+• Zeitraum: Ersten beiden Märzwochen 2014 (03. bis 15.03.2014) 
+• Im Praktikum wird ein mittelkleines Entwicklungsprojekt in Gruppen 
+
+bearbeitet (Gruppengröße wird noch festgelegt) 
+
+• Jede Gruppe erarbeitet eine Lösung und Dokumentiert Ihr Projekt 
+• Jede Gruppe macht eine kleine Abschlusspräsentation 
+• Projektlösung als ganzes wird benotet
+
+Themenvorstellung, Zeitraum und alles weitere in einer 
+
+Vorbesprechung zu Beginn des Praktikums
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+13
+
+Unterlagen
+
+‣ Es gibt kein „offizielles“ Buch zu Vorlesung 
+• Der relevante Stoff wird in der Verlesung besprochen  
+• Übungen vertiefen und bringen Beispiele über die Vorlesung hinaus 
+‣ „Standardwerk“ 
+• Bjarne Stroustrup, „The C++ Programming Language“ 
+
+➡Selbststudium erforderlich! 
+
+- Vom Designer der Programmiersprache 
+- Gute Referenz, schlechtes Buch zum lernen 
+
+‣ Gute Bücher zum Lernen: 
+• Scott Meyers, „Effective C++“, „More Effective C++“ 
+• Herb Sutter, „Exceptional C++“, „More Exceptional C++“ 
+• Kerningham / Ritchie „Programmieren in C“ 
+- für den ersten Teil der Vorlesung, nicht die erste Auflage 
+‣ Refenzen 
+• Unix man pages für C-Funktionen 
+• www.cplusplus.com für C++
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+14
+
+Das make-Tool
+
+‣ ... ist sehr nützlich wenn man größere Projekte übersetzen will! 
+‣ ... wird zunächst in den Übungen verwendet!
+Dependencies
+
+Targets
+
+programm: programm.o	
+
+
+gcc programm.o -o programm	
+
+
+programm.o: programm.c programm.h	
+
+
+gcc -c programm.c	
+
+
+clean:	
+
+
+rm programm.o programm
+
+Commands
+
+‣ Wenn programm.c oder programm.h sich ändert... 
+• ist programm.o nicht mehr aktuell 
+• programm.o wird neu übersetzt  
+• nun ist programm nicht mehr aktuell 
+• programm wird übersetzt
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+15
+
+Programmdokumentation mit doxygen
+
+‣ Mit doxygen lassen sich schnell gute Dokumentationen erzeugen 
+‣ Syntax ähnlich zu javadoc
+
+     /**	
+	 * @brief Subscribes to a player server and returns the a client proxy pointer	
+  
+	 *	  
+	 * If the given player server is running but no fitting PlayerServer instance	
+  
+	 * is found in @ref m_playerServers, a new one will created.	
+  
+	 *	  
+	 * @ param ip 	 	
+  
+	 * @param port		 Connection port on the player server	
+  
+	 * @param interface Interface ID	
+  
+	 * @param index	 	 Interface index	
+  
+	 *	  
+	 * @return Pointer to the corresponding ClientProxy	
+  
+	 */	  
+	 static ClientProxy* SubscribeProxy(string ip, int port, int interface, int index);
+  
+
+IP of a running player server	
+
+Beispiel
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+16
+
+Gliederung
+
+1.Einführung in C 
+1.1 Historisches 
+1.2 Struktur eines C-Programms 
+1.3 Sprachelemente 
+1.4 Zeiger 
+1.5 Benutzerdefinierte Datentypen 
+1.6 Weitere Sprachelemente 
+
+2.Einführung in C++ 
+3.C++ für Fortgeschrittene 
+4.Weitere Themen rund um C++
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+17
+
+Einführung in C - Historisches
+
+‣ Geschichte / Ursprung 
+• Martin Richards entwickelt 1966 die Sprache BCPL 
+• BCPL beeinflusst 1970 die von Ken Thompson entwickelte 
+
+Sprache B. BCPL und B sind typenlose Sprachen und haben große 
+Nähe zu Assembler 
+
+• Dennis Ritchie von den Bell Labs arbeitete an UNIX 
+
+- 1972 Programmiersprache C 
+- UNIX wurde zu 95% in C geschrieben 
+
+‣ Pro 
+• Low-level Programmierung 
+• Geschwindigkeits- und Speichereffizient 
+• Portabel 
+‣ Contra 
+• Unsicher 
+• Niedriger Abstraktionslevel
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+18
+
+Stammbaum der Programmiersprachen
+
+2000 
+
+1990 
+
+1980 
+
+Miranda 
+
+Apl2 
+
+Java 2 (V5.0) 
+
+Java 2 
+Java 1.1 
+Java 1.0 
+
+C# 
+
+ANSI C++ 
+
+Fortran90 
+
+Eiffel 
+
+C++ 
+
+Smalltalk-80 
+
+ML FP 
+
+Fortran-77 
+
+C 
+
+BCPL 
+
+Ada95 
+
+Ada 
+
+Oberon2 
+Oberon 
+
+Modula-2 
+
+Pascal 
+
+Alogol68 Simula67 
+
+PL/1 
+
+Cobol 
+
+Algol60 
+
+1970 
+
+Logo 
+
+Prolog 
+
+APL 
+
+1960 
+
+Basic 
+
+Lisp 
+
+Fortran 
+
+Assembler-Sprachen 
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+19
+
+Ein etwas anderer Blick...
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+20
+
+Gliederung
+
+1.Einführung in C 
+1.1 Historisches 
+1.2 Struktur eines C-Programms 
+1.2.1 Hello World 
+1.2.2 Quellen / Objektcode / Linken 
+1.2.3 Der C-Präprozessor 
+1.3 Sprachelemente 
+1.4 Zeiger 
+1.5 Benutzerdefinierte Datentypen 
+1.6 Weitere Sprachelemente
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+21
+
+C - Hello World
+
+‣ Erzeuge eine Datei hello.c 
+z.B. mit emacs 
+
+#include <stdio.h>!
+int main(void)!
+{!
+    printf("hello, world!\n");!
+    return 0;!
+}
+
+‣ Übersetze sie mit einem C-
+Compiler (z.B. gcc)
+‣ Juchu!! 
+‣ Der Compiler übersetzt das Programm in ein Object-File 
+‣ Der Linker führt Object-Files und benötigte Bibliotheken zu 
+einem ausführbaren Programm zusammen 
+‣ Hier macht gcc beides in einem Schritt
+
+% gcc hello.c -o hello% 
+hello!
+hello, world!!
+%
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+22
+
+Erstellen eines C-Programms - Kompilieren
+
+In den Header-Files 
+stehen die Prototypen 
+von Funktionen. Keine 
+
+Implementationen!
+
+main() {	
+
+   /* This is fun */	
+
+}
+
+/
+
+Source-Code (.c)
+
+Header-Files (.h)
+
+Präprozess
+
+Compiler
+
+Object-Files (.o)
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+23
+
+Object-Files (.o)
+
+Bibliotheken (.a)
+
+Linker
+
+/
+
+müssen die 
+
+Implementierungen aller 
+deklarierten Funktionen 
+
+Object-Files und Bibliotheken 
+
+enthalten. Ansonsten gibt‘s 
+
+„undefined references“!
+
+Thomas Wiemann - Einführung in die Programmiersprache C++
+
+24
+
+

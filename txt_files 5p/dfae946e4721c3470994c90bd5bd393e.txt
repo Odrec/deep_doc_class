@@ -1,0 +1,1041 @@
+Developmental Cell
+
+Article
+
+Differential Expression of WOX Genes
+Mediates Apical-Basal Axis Formation
+in the Arabidopsis Embryo
+
+Holger Breuninger,1,2,3 Enno Rikirsch,1,2 Marita Hermann,1 Minako Ueda,1 and Thomas Laux1,*
+1Faculty of Biology, University of Freiburg, Schaenzlestraße 1, 79104 Freiburg, Germany
+2These authors contributed equally to this work
+3Present address: John Innes Centre, Colney Lane, Norwich, NR4 7UH, UK
+*Correspondence: laux@biologie.uni-freiburg.de
+DOI 10.1016/j.devcel.2008.03.008
+
+SUMMARY
+
+Axis formation is one of the earliest patterning events
+in plant and animal embryogenesis. In Arabidopsis,
+the main axis of the embryo is evident at the asym-
+metric division of the zygote into a small, embryonic
+apical cell and a large extraembryonic basal cell.
+Here we show that the homeobox genes WOX2 and
+WOX8, which are initially coexpressed in the zygote,
+act as complementary cell fate regulators in the apical
+and basal lineage, respectively. Furthermore, WOX8
+expression in the basal cell lineage is required for
+WOX2 expression and normal development of the
+proembryo, suggesting an inductive mechanism.
+The identiﬁed WOX cascade is required for normal ex-
+pression of a reporter gene of the auxin efﬂux carrier
+PIN1 and for the formation of auxin response maxima
+in the proembryo. Thus, our results link the spatial
+separation of WOX transcription factors to localized
+auxin response and the formation of the main body
+axis in the embryo.
+
+INTRODUCTION
+
+Development of a speciﬁc body plan during embryogenesis re-
+quires the coordination of cell fates according to their positions
+along the embryo axes. In animal model organisms, the accessi-
+bility of egg cells has greatly enhanced analysis of early pattern-
+ing. In higher plants, however, the zygote is relatively inaccessible
+to experimental analysis due to the surrounding maternal tissue,
+and the high degree of genetic redundancy has complicated
+analysis of regulatory mechanisms. An invariant cell division
+pattern during early embryogenesis in Arabidopsis facilitates
+the following of the apical and basal lineages derived from each
+daughter cell (Figure 1A; Dolan et al., 1993; Mansﬁeld and Briarty,
+1991). First, the zygote divides asymmetrically and generates
+two daughter cells with different properties and developmental
+programs. The small and densely cytoplasmic apical daughter
+divides perpendicular to the orientation of the division of the zy-
+gote, and subsequent divisions generate the isodiametric cells
+of the apical cell lineage, termed proembryo. At the 8-cell stage,
+the proembryo is already divided into an upper tier of cells giving
+
+rise to the shoot and a lower tier of cells giving rise to the hypo-
+cotyl and embryonic root. Subsequent tangential cell walls estab-
+lish the radial axis, separating protoderm and inner cells before
+shoot meristem, cotyledon, hypocotyl, and embryonic root pri-
+mordia are formed. By contrast, the larger and more vacuolated
+basal daughter cell of the zygote continues to divide horizontally,
+producing a ﬁle of elongated cells, termed the suspensor, which
+pushes the embryo into the lumen of the developing seed
+(Ju¨ rgens and Mayer, 1994; Mansﬁeld and Briarty, 1991). Only
+the uppermost cell of the basal lineage, the hypophysis, becomes
+incorporated into the embryo where it gives rise to the quiescent
+center and the columella stem cells of the root meristem (for
+review see Jenik et al., 2007; Ju¨ rgens, 2001; Laux et al., 2004).
+Similar to animals with invariant cell division patterns, speciﬁca-
+tion of cell
+identities in the Arabidopsis embryo relies on
+cell-cell communication.
+
+Recent studies have revealed a crucial role for the directional
+transport of the plant growth factor auxin in apical-basal axis for-
+mation. After the asymmetric division of the zygote, the auxin ef-
+ﬂux factor PIN-FORMED7 (PIN7) is expressed only in the basal
+daughter cell and becomes localized to the membrane facing
+the apical daughter (Friml et al., 2003). Presumably, auxin is
+transported into the apical daughter cell where it accumulates,
+as evidenced by weak expression of the synthetic auxin re-
+sponse reporter gene DR5rev:GFP. Auxin ﬂux is then thought
+to be reversed in the globular stage embryo, involving the com-
+bined activity of several PIN proteins, which results in the forma-
+tion of an auxin response maximum at the developing root pole.
+Later in embryogenesis, additional auxin response maxima are
+formed at the tips of the emerging cotyledons mediated by polar
+cellular localization of PIN1 protein, which is thought to play an
+important role in auxin ﬂux from the globular embryo stage on-
+ward (Benkova et al., 2003). Loss of multiple members of the
+PIN family; mutations in the Auxin Response Factor (ARF)
+GTPase exchange factor GNOM (GN), which is required for di-
+rectional trafﬁcking of PIN1 protein; and chemical inhibition of
+polar auxin transport all cause striking defects in apical-basal
+embryo patterning, demonstrating the crucial role of polar auxin
+distribution in axis formation (Blilou et al., 2005; Friml et al., 2003;
+Geldner et al., 2003; Mayer et al., 1993; Steinmann et al., 1999).
+Similarly, embryos that have lost the ARF MONOPTEROS (MP)
+or harbor auxin nondegradable variants of its antagonist BOD-
+ENLOS (BDL) fail to initiate the hypophysis, indicating that tran-
+scriptional responses to auxin are required for root initiation
+
+Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc. 867
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+Developmental Cell
+
+Figure 1. wox2 and Multiple wox Mutant Phenotypes
+(A) Schematic drawing of WOX2, WOX8, and WOX9 expression domains (Haecker et al., 2004).
+(B) Phylogenetic tree of the WOX protein family. Modiﬁed after Haecker et al. (2004).
+(C–F) Nomarski images of cleared ovules. Periclinal divisions have set up the protoderm (pd) in wild-type at the 16-cell stage (C). wox2-1 embryos show abnormal
+anticlinal divisions in the prospective shoot domain (arrows in [D] and [E]) and subsequently form only single cotyledon primordia (cp) ([F]; compare with wild-type,
+inset in [F]).
+(G–K) Live images of 8-day-old seedlings (prs is indicated as w3 [wox3], asterisk marks putative position of missing shoot meristem).
+(L–N) Dark-ﬁeld images showing venation patterns of seedling cotyledons. The number of main veins (mv) indicates that wox2-1 seedling organs represent two
+fused cotyledons (M) or one cotyledon (N).
+(O) Phenotype penetrance of multiple wox combinations at the 16-cell embryo stage (red) and at the seedling stage (blue).
+E, egg cell; Z, zygote; 1-c, 2-4-c, 8-c: 1-cell, 2-4-cell, 8-cell embryo stage, respectively; wt, wild-type; hy, hypocotyl; c, cotyledon; SAM, shoot apical meristem.
+Scale bars: 10 mm in (C–F), 2.5 mm in (G–K), and 2 mm in (L–N).
+
+(Berleth and Ju¨ rgens, 1993; Hamann et al., 1999, 2002). At the
+same time, MP activity is also required for the expression of
+PIN genes, consistent with a feedback mechanism wherein
+high auxin concentration promotes increased directional auxin
+efﬂux (Paciorek et al., 2005; Weijers et al., 2006).
+
+A fundamental question is how the differences between apical
+and basal programs are established. Mutations in the MAPKK ki-
+nase YODA (YDA) suppress the elongation of the zygote and de-
+velopment of the extraembryonic suspensor, suggesting that
+a MAP kinase signaling pathway promotes extraembryonic fate
+in the basal lineage (Lukowitz et al., 2004). However, the targets
+of presumed YDA signaling remain to be determined. In animals,
+localized expression of transcription factors is instrumental for
+early cell fate decisions in the embryo (Akam, 1998; Krumlauf,
+1994). For example, homeobox (HOX) genes confer region-spe-
+ciﬁc identities along the anterior-posterior axis in Drosophila and
+mammals. Recent studies in Arabidopsis have identiﬁed a group
+
+of homeobox genes related to the stem cell regulator WUSCHEL
+(WUS) that are expressed in a lineage-speciﬁc manner during
+early embryogenesis (Figures 1A and 1B; Haecker et al., 2004).
+WUSCHEL RELATED HOMEOBOX2 (WOX2) and WOX8 are
+initially coexpressed in the egg cell and the zygote, but become
+restricted to the apical (WOX2) and basal (WOX8) lineages after
+the zygotic division, raising the intriguing question of whether
+distinct transcriptional programs are established with the divi-
+sion of the zygote. WOX9, the closest homolog of WOX8, is
+also expressed in the basal cell lineage, and several members
+of the WUS/WOX2 subclade become expressed in the develop-
+ing proembryo (Figure 1B; Haecker et al., 2004). Once the apical-
+basal axis of the embryo is established, expression of two WOX
+genes, WUS and WOX5, is initiated in lineages that give rise to
+the signaling centers of the shoot and root stem cell niches, re-
+spectively (Mayer et al., 1998; Sarkar et al., 2007). Apart from
+Arabidopsis, complementary expression of WOX2 and WOX9
+
+868 Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc.
+
+Developmental Cell
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+seedling stage, instead of two as in wild-type (Figures 1H, 1M,
+and 1N).
+
+We investigated whether the low penetrance of the wox2-1
+phenotype might be due to genetic redundancy. Embryo devel-
+opment in single mutants of the close WOX2 homologs WOX1
+and PRESSED FLOWER/WOX3 (PRS; Matsumoto and Okada,
+2001) was normal, and the wox2 phenotype was not signiﬁcantly
+affected by combining either mutation with wox2-1 (Table S1).
+By contrast, wox1 wox2-1 prs triple mutants displayed a strong
+increase in the frequency of wox2 defects (Figure 1O), indicating
+that WOX1 and PRS act redundantly with WOX2 in shoot
+patterning.
+
+WOX5 belongs to the same subclade of the WOX gene family
+as WOX1, WOX2, and PRS (Figure 1B; Haecker et al., 2004). In
+addition to its expression in the developing root stem cell niche,
+WOX5 is expressed in the vasculature of the cotyledon primordia
+from heart stage onward (Haecker et al., 2004). While wox5-1
+single mutants showed normal shoot development (Table S1),
+the wox5-1 mutation strongly enhanced shoot patterning defects
+of wox1 wox2-1 prs triple mutants (Figure 1O), resulting in qua-
+druple mutant seedlings with a rod-like apical outgrowth (30%,
+n = 495; Figure 1I) or an apparent complete lack of all shoot
+structures (18%; Figure 1J). Importantly, wox1 wox5-1 prs triple
+mutant shoots were normal (Figure 1O) and wox5-1 alone did not
+signiﬁcantly enhance the wox2 phenotype (Table S1). Therefore,
+WOX2 appears to be the main regulator of embryonic shoot pat-
+terning among the WOX genes analyzed, whereas WOX1, PRS,
+and WOX5 activity only becomes relevant in the absence of
+WOX2 function.
+
+WOX8 and WOX9 Genes Redundantly Affect Basal
+and Apical Lineage Development
+Next we addressed the function of the basally expressed WOX8
+and WOX9 genes (Haecker et al., 2004). Several independent
+wox8 and wox9 single mutants representing severe or complete
+loss of function, based on mRNA expression analysis (Figure S1),
+did not visibly affect embryo development (Table S2). This is
+unlike the recently reported embryo lethality in stip/wox9 alleles
+(Wu et al., 2007), which might be due to differences in growth
+conditions, genetic background, or both. Postembryonically,
+wox9 mutants displayed disturbed ovule development (data
+not shown).
+
+In contrast to single mutants, all wox8 wox9 double mutant
+combinations analyzed displayed strong deviations from wild-
+type embryogenesis, which in the following will be discussed
+for wox8-1 wox9-1 (Figure 2; Table S2). Initially, segregating
+wox8-1 wox9-1/+ embryos were morphologically indistinguish-
+able from wild-type at the zygote (n = 98) and the 1-cell embryo
+stages (n = 192). Subsequently, however, the apical cell divided
+horizontally instead of vertically in approximately half of the ex-
+pected homozygous double mutants, consistent with previous
+reports (Wu et al., 2007). In addition, a minority of segregating
+embryos displayed irregular cell division planes or enlarged, mis-
+shapen cells in the basal lineage (Figure 2H; Table S2). From the
+8-cell stage on (throughout the text, mutant stages will be deﬁned
+according to the stages of their phenotypically normal siblings in
+the same silique), approximately one-fourth of the segregating
+embryos had large, vacuolized cells throughout and developed
+into ﬁnger-like structures (Figures 2I and 2J) that eventually
+
+Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc. 869
+
+Figure 2. WOX8 and WOX9 Are Required for Embryo Development
+(A–J) Nomarski images of cleared ovules. Wild-type (A–E) and wox8-1 wox9-1
+(F–J) embryo development is pictured. Abnormal divisions in the double mu-
+tant are marked by arrowheads. Subsequently, ﬁnger-like structures are
+formed (I and J). ac, apical cell; bc, basal cell; cp, cotyledon primordia; hy, hy-
+pophysis; zyg, zygote. Scale bars: 10 mm.
+
+homologous genes has recently also been detected in maize
+embryos, suggesting that WOX genes might play a conserved
+role in angiosperm embryogenesis (Nardmann and Werr, 2006).
+Here, we address the role of WOX gene function in early em-
+bryo patterning. We demonstrate that WOX2 and WOX8 identify
+two subclades of developmental regulators that mediate distinct
+cell fates after the asymmetric zygotic division. In addition to
+WOX8/WOX9 function in the basal lineage, WOX2 expression
+in the proembryo is dependent on WOX8/WOX9, revealing an
+interaction across clonal boundaries. Importantly, the establish-
+ment of asymmetric WOX transcriptional domains is linked to the
+formation of auxin gradients during embryogenesis.
+
+RESULTS
+
+WOX2 Acts Redundantly with Other WOX Genes
+in Apical Embryo Patterning
+Consistent with the accumulation of WOX2 transcripts in the api-
+cal cell and the early proembryo (Figure 1A; Haecker et al., 2004),
+approximately one-third of all 8-cell embryos with the putative
+null allele wox2-1 (Figure S1, see the Supplemental Data avail-
+able with this article online) failed to correctly separate the
+protoderm layer by periclinal divisions in one or more cells of
+the prospective shoot region (Figures 1D and 1E; Table S1). Sub-
+sequently, 8% of mutant embryos (n = 191) initiated only one
+cotyledon primordia (Figure 1F), which was either normal or rep-
+resented a fusion of two apparently misplaced organs at the
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+Developmental Cell
+
+arrested development. Thus, neither the suspensor nor the pro-
+embryo developed normally in wox8 wox9 double mutants. All
+defects were completely rescued by transformation with geno-
+mic or cDNA clones for either WOX8 or WOX9 (data not shown).
+To characterize the development of wox8-1 wox9-1 double
+mutants at the molecular level, we generated several cell fate
+markers for the early embryo (see Experimental Procedures).
+For all reporter genes assayed, phenotypically normal siblings
+displayed wild-type expression, suggesting that maternal or
+dominant zygotic effects did not play a relevant role. A number
+of marker genes, including AtML1, WOX9, and histone H4,
+were expressed normally in wox8-1 wox9-1 until at least the
+globular stage (Figure S2), indicating that the double mutant
+embryos, albeit morphologically severely affected, are able to
+execute relevant gene expression programs to some extent.
+
+Expression of WOX8gD:NLS-venusYFP3 (vYFP3) as a reporter
+gene for the basal lineage was initially indistinguishable from that
+of wild-type, but became conﬁned to only one or two of the most
+basal suspensor cells in double mutant embryos after the 8-cell
+embryo stage (Figures 3A and 3B; Table S3). Expression of
+a WOX5:NLS-vYFP3 reporter, which marks the development of
+the quiescent center in the root stem cell niche, was undetect-
+able or strongly reduced in wox8-1 wox9-1 embryos (Figure 3D;
+Table S4), indicating that the hypophyseal region was not cor-
+rectly speciﬁed. Thus, gene expression programs of the basal
+lineage are not properly established in wox8 wox9 double
+mutants.
+
+The aberrant proembryo development in wox8-1 wox9-1 sug-
+gested that WOX8/WOX9, in addition to their function in the
+basal lineage, exert a non-cell-autonomous effect on the apical
+lineage. In support of this view, the wox8-1 mutation enhanced
+the shoot patterning defects of wox2-1 and wox1 wox2-1 prs
+embryos, resulting in rod-like seedlings without any discernable
+shoot structures in the most extreme cases (Figure 1K and 1O;
+Table S1).
+
+To determine whether gene expression programs in the apical
+lineage were altered in wox8-1 wox9-1 mutants, we ﬁrst ana-
+lyzed expression of a ZWILLE-YFP (ZLL:ZLL-YFP; M. Tucker
+and T.L., unpublished data) reporter gene, which normally marks
+all cells of the early globular proembryo before becoming re-
+stricted to the vascular primordium (Figure 3E). ZLL-YFP signal
+was not detectable in wox8-1 wox9-1 embryos (Figure 3F; Table
+S5). To investigate earlier stages of embryogenesis, we used
+a WOX2:NLS-YFP reporter construct containing 3 kb of the
+WOX2 promoter sequence. This fragment provided YFP expres-
+sion in proembryo and suspensor cells, unlike the endogenous
+WOX2 mRNA, presumably due to the lack of negative cis-
+elements that restrict the activity of the endogenous WOX2
+promoter to the proembryo. The very strong expression of this
+construct, however, made it possible to reliably detect signals
+from the 1-cell stage in whole-mount immature seeds (Fig-
+ure 3G). Compared with wild-type, approximately one-fourth of
+segregating wox8-1 wox9-1/+ embryos lacked any detectable
+WOX2:NLS-YFP expression from the 1-cell embryo stage
+onward (Figure 3H; Table S6), indicating that wox8-1 wox9-1
+double mutants fail to express this reporter gene also in the
+1-cell proembryo.
+
+In summary, WOX8 and WOX9 are essential for the normal ex-
+ecution of gene expression programs and normal development
+
+870 Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc.
+
+Figure 3. Marker Expression in wox8 wox9
+(A–L) Merged pictures of Nomarski images and ﬂuorescent marker expression.
+(A and B) WOX8gD:NLS-vYFP3 expression becomes restricted to the lower
+suspensor cells in wox8-1 wox9-1 (arrowhead in [B]). (C and D) WOX5:
+NLS-vYFP3 expression in the hypophyseal region of wild-type embryos (C) is
+lost (D) or strongly reduced (inset in [D]) in wox8-1 wox9-1 embryos. (E–H)
+ZLL:ZLL-YFP and WOX2:NLS-YFP expression are not detected in wox8-1
+wox9-1 embryos ([F] and [H], respectively) compared with wild-type (E and
+G). (I and J) There is localized expression of DR5rev:GFP in the hypophysis
+of wild-type globular embryos (I), while wox8-1 wox9-1 embryos show a delo-
+calized, uniform expression (J). (K and L) PIN1:PIN1-GFP signal, localized to
+membranes of the embryo proper in wild-type globular embryos, is shown in
+(K); a wox8-1 wox9-1 embryo without PIN1:PIN1-GFP signal is shown in (L).
+Embryos in (A), (C–F), and (I–L) have been dissected from the ovule; all other
+images were taken from cleared ovules and embryo structures are outlined
+if required. wt, wild-type; hy, hypophysis. Scale bars: 10 mm.
+
+in both the basal and apical embryo lineages as early as the
+1-cell embryo stage.
+
+WOX8 and WOX9 Promote PIN1:PIN1-GFP Expression
+and Localized Auxin Response in the Proembryo
+To investigate whether auxin distribution was affected in wox8-1
+wox9-1 embryos, we monitored expression of the DR5rev:GFP
+auxin response reporter gene (Friml et al., 2003). Under our
+
+Developmental Cell
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+Figure 4. Interaction of wox and mp Mutants
+(A–F) Nomarski images of cleared ovules. mpB4149 em-
+bryos are normal at the 16-cell stage ([A]; compare to
+wild-type in Figure 1C), but show basal (bracket) and api-
+cal patterning defects at torpedo stage ([B]; compare with
+wild-type, inset in [D]). wox8 mpB4149 16-cell embryos are
+normal (C), but later defects in the upper domain are en-
+hanced ([D]; compare with [B]). In wox2-1 wox8-1 mpB4149
+triple mutants, wox2 defects in protoderm formation are
+enhanced ([E], arrows; compare with wox2 in Figure 1D),
+and the shoot embryo domain is severely disrupted ([F];
+compare with [D]). (G and J) Fluorescence PIN1:PIN1-
+GFP signal and Nomarski images (inset). GFP signal is ab-
+sent in the lower part (bracket) of mpB4149 embryos (G) but
+remains in the L1 (arrowheads) and the vasculature (arrow)
+of the prospective shoot domain. These expressions are
+also normal in wox2-1 wox8-1 (J) compared to wild-type
+(inset in [H]). (H and I) Merged picture of Nomarski images
+and PIN1:PIN1-GFP expression of torpedo stage em-
+bryos. PIN1:PIN1-GFP expression is restricted to the L1
+in the upper embryo region in wox8-1 mpB4149 (H) and to
+a ring around the apical embryo in wox2-1 wox8-1
+mpB4149 (central plane of focus in [I]). (K–M) Live images
+of 8-day-old seedlings. mpB4149 (K) seedlings form no
+root (arrowhead) but establish cotyledons (c) and a shoot
+apical meristem (SAM), or a single umbrella-like organ (L).
+mpB4149 wox2-1 wox8-1 seedlings show a severe reduc-
+tion of apical structures ([M], arrow). (N) Merged picture
+of Nomarski images and DR5rev:GFP expression of tor-
+pedo stage embryos. wox2-1 wox8-1 mpB4149 embryos
+show delocalized GFP signal in the upper domain (aster-
+isk) in contrast to the localized signal at the tips of the
+root and the cotyledons in wild-type (inset in [N], arrow-
+heads). Embryos in (G–J) and (N) have been dissected
+from the ovule. Brackets indicate lower embryo domains.
+cp, cotyledon primordial. Scale bars: 10 mm in (A–J) and
+(N) and 5 mm in (K–M).
+
+conditions, DR5rev:GFP expression was detected in the hypo-
+physeal cell of wild-type embryos from early globular stages
+on (Figure 3I), and in the tips of the cotyledon primordia at heart
+stage (inset of Figure 4N). In contrast to this polar distribution,
+wox8-1 wox9-1 double mutants showed DR5rev:GFP signal uni-
+formly throughout the embryo (n = 35; Figure 3J), as previously
+reported (Wu et al., 2007). Since this uniform auxin response
+was not changed after chemical interference with auxin transport
+by naphthylphthalamic acid and brefeldin A (data not shown), we
+investigated the expression of the PIN1:PIN1-GFP reporter gene
+(Benkova et al., 2003). PIN1:PIN1-GFP signal was detected at
+newly formed cell walls in globular wild-type embryos
+(Figure 3K). By contrast, PIN1:PIN1-GFP expression was re-
+duced in segregating embryos and not detectable in the majority
+of dissected wox8-1 wox9-1 globular stage embryos (n = 19;
+Figure 3L; Table S7), suggesting a requirement of WOX8/
+WOX9 activity for normal PIN1:PIN1-GFP expression. The min-
+ority of embryos that appear unaffected indicates that this re-
+quirement is not absolute. Cytokinin often has antagonistic func-
+tions to auxin in plant development and plays an important role
+during embryonic shoot development (Chaudhury et al., 1993).
+In contrast to auxin response, however, cytokinin response,
+analyzed by a YFP version of the commonly used cytokinin
+
+response gene ARR5:GUS (D’Agostino et al., 2000), was not
+affected in wox8-1 wox9-1 embryos (data not shown).
+
+In summary, wox8/wox9 mutations affect expression of the
+PIN1:PIN1-GFP reporter and localize auxin response in the
+embryo.
+
+Interaction of WOX and MP Genes
+The ARF transcription factor MP is a central component of
+the auxin machinery during embryogenesis and promotes
+PIN1:PIN1-GFP expression and auxin ﬂux (Weijers et al.,
+2006). We therefore investigated whether WOX2 and WOX8
+might act together with MP.
+
+mpB4149 embryos failed to initiate root development (Fig-
+ure 4B), and cotyledon and shoot meristem were often mal-
+formed at the seedling stage (Figures 4K and 4L; Weijers et al.,
+2006). The shoot defects were strongly enhanced by the wox8-
+1 mutation, resulting in a majority of arrested, spherically shaped
+embryos that did not initiate cotyledon primordia (Figure 4D;
+Table S1). wox2-1 mpB4149/+ segregating embryos displayed a
+dramatically increased frequency of protoderm defects (69%,
+n = 177)
+in comparison with wox2-1 single mutants (30%,
+n = 158). This increase was signiﬁcantly higher than that ex-
+pected for a recessive function of the mp allele (p = 0.0359),
+
+Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc. 871
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+Developmental Cell
+
+indicating a semidominant effect of the mpB4149 mutation in the
+wox2-1 background. wox2-1 mpB4149 seedlings also displayed
+enhanced shoot patterning defects and occasionally produced
+only a rudimentary shoot (4%, n = 116, compare with Figure 4M),
+which was never observed in either single mutant. All defects in
+the apical cell
+lineage were further enhanced when wox2-1,
+wox8-1, and mpB4149 mutations were combined (Figures 4E
+and 4F), resulting in a majority of triple mutant seedlings (72%,
+n = 84) with only rudimentary shoot tissue (Figure 4M).
+
+In summary, all combinations of wox2-1 and wox8-1 with the
+mpB4149 mutant displayed defects that appeared more severe
+than expected from an additive combination of the single mutant
+phenotypes, suggesting that the WOX and MP pathways in em-
+bryo patterning converge at some point.
+
+We next analyzed PIN1:PIN1-GFP expression and localized
+auxin response. In comparison with PIN1:PIN1-GFP expression
+in the entire provasculature and the epidermis of cotyledons of
+wild-type, provascular PIN1:PIN1-GFP expression was unde-
+tectable in the lower part of mpB4149 single mutant embryos (Fig-
+ure 4G). In phenotypic wox8-1 mpB4149 embryos (18% of segre-
+gating embryos), PIN1:PIN1-GFP expression was additionally
+undetectable in the provasculature of the upper part of the em-
+bryo, but remained detectable in the epidermal cell layer cover-
+ing most of the embryo apex (Figure 4H). The wox2-1 mutation
+further reduced the epidermal signal to a ring around the apical
+embryo (Figure 4I). mpB4149 single mutant embryos lacked de-
+tectable DR5rev:GFP expression at the position of the hypophy-
+sis, whereas a localized signal at the tip of the cotyledon or cot-
+yledons was present, as reported previously (Weijers et al.,
+2006). This expression domain was extended across the whole
+apex of wox2-1 wox8-1 mpB4149 triple mutant embryos (n = 16;
+Figure 4N), suggesting that auxin was not properly localized. No-
+tably, wox2-1 wox8-1 double mutant embryos displayed wild-
+type PIN1:PIN1-GFP (Figure 4J) and DR5rev:GFP expression
+patterns (data not shown).
+
+In summary, WOX2 and WOX8 appear to act redundantly with
+MP to promote PIN1:PIN1-GFP expression in the cotyledon vas-
+culature, and both affect the formation of localized auxin re-
+sponse maxima.
+
+WOX2 Restores Apical Cell Fates in wox8 wox9
+Mutant Embryos
+Our ﬁndings, that WOX2 reporter expression in the proembryo is
+dependent on WOX8/WOX9 and that WOX2 and WOX8 genes
+both cooperate with MP in PIN1 regulation, raised the possibility
+that WOX2 mediates WOX8/WOX9 functions in the proembryo.
+Therefore, we reconstituted WOX2 expression in wox8-1 wox9-1
+embryos via a WOX9 promoter fragment that was initially in the
+zygote, the suspensor, and the proembryo (Figure 5F), before
+becoming restricted to the basal lineage after the 8-cell stage
+(inset of Figure 5F).
+
+Reconstituted WOX2 expression in wox8-1 wox9-1/+ resulted
+in zygotes that failed to elongate (Figure 5A) and that gave rise
+to two daughter cells of almost equal size (Figures 5B and 5J).
+During further divisions, the cells in both lineages remained
+small, isodiametric, and densely cytoplasmic, in contrast to
+wox8-1 wox9-1 alone (Figures 5C–5E). Notably, the cells in
+the basal
+lineage divided in seemingly random orientations
+rather than transversely (Figure 5D) and, unlike in wild-type or
+
+872 Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc.
+
+wox8-1 wox9-1, they did not become vacuolated and did not
+elongate to push the embryo into the lumen of the seed
+(Figure 5E).
+
+Next we asked whether gene expression programs deﬁcient in
+wox8 wox9 embryos were restored by reinstated WOX2 function.
+Expression of WOX5:NLS-vYFP3 was restored at the stage when
+WOX5 expression commenced in the cotyledon primordia of
+wild-type, but not at earlier stages representing the initiation of
+the root stem cell niche (Figure 5G; Table S8). PIN1:PIN1-GFP
+expression was also restored to detectable levels in approxi-
+mately half of the homozygous wox8-1 wox9-1 embryos (Fig-
+ure 5H; Table S8). GFP signal was conﬁned to the apical proto-
+derm and to a discrete central domain (asterisk in Figure 5H),
+reminiscent of PIN1:PIN1-GFP expression in the cotyledon tips
+and the provasculature of corresponding wild-type torpedo
+stage embryos (compare inset of Figure 4H). Importantly, local-
+ized DR5rev:GFP expression in transgenic embryos was restored
+at the presumptive root pole (inset of Figure 5I) and, in one-third of
+cases, also at the tip of the embryo (n = 27; Figure 5I), similar to the
+localization of auxin response maxima in the root and the tips of
+the cotyledons in wild-type, respectively (compare inset of
+Figure 4N).
+
+Notably, transgenic WOX2 expression had no effect in either
+single mutant or wild-type controls (Table S9), and expression
+of WOX8 or WOX9 cDNAs from the same promoter completely
+restored wild-type development (data not shown). The effects
+of WOX2 expression in wox8 wox9 were strikingly similar to
+the phenotype of yda mutants (Lukowitz et al., 2004). The
+MAPKK kinase YDA represses zygote elongation and apical
+fate in the basal daughter linage. We therefore addressed
+whether YDA might be placed in context with WOX8/WOX9 by
+analyzing the yda wox8 wox9 triple mutant. Triple mutant zy-
+gotes were indistinguishable from yda single mutant zygotes,
+generating two small isodiametric daughter cells. However, sub-
+sequent development of the two daughter cells was completely
+arrested (Table 1), something not observed to a similar extent
+in either yda or wox8 wox9, indicating that these genes do not
+operate in a linear pathway.
+
+Taken together, our data suggest that wox8 wox9 mutants are
+defective in both apical and basal gene expression programs,
+and that restoration of WOX2 expression is sufﬁcient to establish
+important aspects of proembryo fates in both apical and basal
+lineages of wox8 wox9 embryos.
+
+DISCUSSION
+
+The establishment of distinct transcriptional domains is a key
+step in determining different cell fates during embryo develop-
+ment. Our results suggest a model where apical-basal axis for-
+mation in the Arabidopsis embryo is governed by a combination
+of asymmetric cell divisions and cell-cell communication: the
+zygote expresses a mixture of the homeodomain transcription
+factors WOX2 and WOX8, which act as key regulators of apical
+and basal fates, respectively. By an as yet unknown mechanism,
+the expression domains of these regulators become separated
+with the asymmetric zygotic division, providing each daughter
+cell with a speciﬁc transcription program and setting the stage
+for the organization of auxin ﬂux and response in the early
+embryo.
+
+Developmental Cell
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+Figure 5. Reconstituted WOX2 Expression Restores Apical Lineage Features in wox8 wox9 Embryos
+(A–E) Nomarski images of cleared ovules containing wox8-1 wox9-1 and wox8-1 wox9-1 WOX9:WOX2 (marked wox8,9 W9:W2) embryos at different stages. The
+wox8,9 W9:W2 zygote does not elongate (A), giving rise to two cells of similar sizes (B and J). Subsequently, random patterns of cell division result in isodiametric
+cells in the embryo (C and D) and the prospective suspensor region (arrows in [D]), unlike growth patterns in wox8-1 wox9-1 or wild-type (compare also Figure 2).
+At torpedo stage (E), wox8,9 W9:W2 embryos are round and lack a suspensor in comparison with wild-type (inset) and the double mutant. (F–I) Merged pictures of
+Nomarski images and ﬂuorescent marker expression in wox8,9 W9:W2 at torpedo stage (8 days postpollination [dpp]). (F) WOX9:NLS-vYFP3 is expressed in all
+cells derived from the zygote until 2-cell to 8-cell stages and becomes restricted to a few cells at the basal pole during development (inset). (G) WOX5:NLS-vYFP3
+expression is re-established only at 12 dpp (compare with wox8-1 wox9-1 in Figure 3D). (H) PIN1:PIN1-GFP is expressed in the L1 (arrowhead) and putative pro-
+vascular cells (asterisk) in the middle of the embryo (compare with wox8-1 wox9-1 in Figure 3L). (I) DR5rev:GFP signal (arrowhead) is localized to the basal pole
+(inset) or the basal and apical poles of the embryo (compare with wox8-1 wox9-1 in Figure 3J). (J) Schematic drawing of 1-cell stage embryos of wox8-1 wox9-1
+and wox8,9 W9:W2. Numbers indicate the average length of the cells (data are represented as mean ± SEM); n, number of embryos. Embryos in (I) have been
+dissected from the ovule; all other images were taken from cleared ovules and embryo structures are outlined if required. Scale bars: 10 mm.
+
+WOX Genes Act as Cell-Lineage-Speciﬁc
+Developmental Regulators
+Mutations in either WOX2 or WOX8 have only weak or no effects,
+but additional mutations in their closest homologs reveal that
+both gene functions are crucial regulators of early embryo devel-
+opment. Previous studies using stimpy (wox9) and stimpy-like
+(wox8) mutants have highlighted cell proliferation defects in
+wox8 wox9 mutants at later stages of development (Wu et al.,
+2007). The data presented here demonstrate that WOX8 and
+its redundant partner WOX9 regulate gene expression programs,
+cell morphology, and division patterns in both the basal and the
+apical lineage from the 1-cell embryo stage on.
+
+Several scenarios may explain how WOX8/WOX9 activities
+affect development of the proembryo. WOX8 mRNA expression
+
+is detected in the zygote and the basal lineage (Haecker et al.,
+2004). WOX9 mRNA and reporter gene expression also appears
+to be predominantly in the basal lineage until the early globular
+stage embryo (Haecker et al., 2004, and Figure S2), but a broader
+expression pattern has also been reported (Wu et al., 2007). It is
+possible that abnormalities in the wox8 wox9 proembryo origi-
+nate from a lack of WOX8 and/or WOX9 function in the zygote.
+However, loss of WOX8 function in a wox2 or mp background
+causes aberrations in shoot patterning that do not become visi-
+ble before the emergence of cotyledon primordia at approxi-
+mately 5 days post fertilization, making this scenario unlikely.
+While we cannot exclude the possibility that WOX8 and WOX9
+are expressed in the apical lineage below the detection limits
+in our experiments, a model that is consistent with our data
+
+Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc. 873
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+Developmental Cell
+
+Table 1. Combinations of wox8, wox9, and yda Mutants
+
+Genotype of mother plant n
+
+Embryo Phenotype at Globular
+Stage (%)
+
+wox8
+wox9-like
+phenotype
+
+yda-like
+phenotype
+
+1-cell
+stage
+arrest
+
+Wild-type
+
+yda-1/+
+
+wox8-1 yda-1/+
+
+wox9-1/+ yda-1/+
+
+243
+
+260
+
+239
+
+249
+
+0.0
+
+0.0
+
+0.0
+
+0.0
+
+wox8-1 wox9-1/+
+
+216 25.9
+
+wox8-1 wox9-1/+ yda-1/+ 435 20.2
+
+0.0
+
+21.9
+
+27.2
+
+24.5
+
+0.0
+
+19.8
+
+0.0
+
+1.2
+
+0.8
+
+1.6
+
+1.4
+
+6.0
+
+Embryos from single and multiple mutant plants were morphologically
+analyzed and classiﬁed. n, number of embryos analyzed.
+
+suggests that WOX8/WOX9 activities trigger a signal from the
+basal to the apical lineage, which is essential for sustained devel-
+opment of the proembryo. Such an instructive function of the
+basal
+lineage is consistent with current models of auxin ﬂux
+from the basal cell into the apical cell, which facilitates its devel-
+opment into a proembryo (Friml et al., 2003).
+
+An Early Embryonic WOX Gene Cascade Involved
+in Graded Auxin Distribution
+Consistent with an inductive effect from the basal to the apical
+lineage, our data suggest that WOX2 expression in the apical lin-
+eage is an early and important downstream function of WOX8/
+WOX9 activity: expression of a WOX2 reporter in wox8 wox9
+embryos was not detected; WOX2 is required in the proembryo
+for the periclinal cell divisions separating the protoderm from
+inner cells, as well as for patterning of the shoot apex; and trans-
+genic expression experiments indicate that WOX2 promotes
+several aspects of apical fate. Since the redundant functions of
+WOX1, WOX5, and PRS become essential for normal develop-
+ment of the apical lineage only in the absence of WOX2 activity,
+WOX2 appears to be the most important WOX gene for shoot
+patterning.
+
+Early WOX gene functions affect expression of PIN1:PIN1-GFP
+and DR5rev:GFP, linking the WOX transcriptional machinery to
+the establishment of localized auxin response in the proembryo.
+Based on mutant combinations with mp, PIN1:PIN1-GFP expres-
+sion in provascular cells appears most affected. Because alter-
+ations in PIN1:PIN1-GFP and DR5rev:GFP expression in wox
+mutants were observed later than other effects, this interaction
+might involve intermediate steps. Previous studies have revealed
+a positive feedback between auxin accumulation and PIN1:PIN1-
+GFP expression (Vieten et al., 2005). Reduction of PIN1:PIN1-
+GFP expression in the majority of wox8 wox9 embryos, despite
+an apparent strong and uniform accumulation of auxin, is consis-
+tent with auxin involving WOX in promoting PIN1 expression in
+the early embryo. Notably, however, we found WOX2 expression
+itself not affected by auxin (Figure S3).
+
+Loss of PIN1 function alone does not have a striking effect on
+auxin distribution or embryo development, because it is com-
+pensated for by the upregulation of other PIN genes, namely
+PIN3, PIN4, and PIN7 (Blilou et al., 2005; Friml et al., 2003; Vieten
+et al., 2005). This implies that reduction of only PIN1 could not
+
+874 Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc.
+
+for
+
+account
+the uniform auxin distribution in wox8 wox9
+embryos, and therefore it appears likely that the WOX cascade
+also affects genes involved in auxin localization other than
+PIN1. In addition, WOX genes clearly have important functions
+that go beyond auxin localization, because the developmental
+defects of wox8 wox9 embryos are considerably more severe
+than the defects reported for auxin-related embryo mutants.
+
+WOX Genes and the Asymmetric Division of the Zygote
+An intriguing question is what role WOX2 and WOX8 play in the
+zygote. The analysis of loss-of-function mutants has not yet re-
+vealed any function for these genes at this stage—a result that
+might in part be due to the lack of appropriate molecular
+markers. However, transgenic expression of WOX2 represses
+elongation of the zygote and renders its division more symmet-
+ric, similar to the phenotype observed with mutations in the
+YDA gene (Lukowitz et al., 2004). Because this effect only be-
+comes apparent in the absence of WOX8 and WOX9, a likely
+explanation is that wox8 wox9 zygotes do not express WOX2
+(see above), making them deﬁcient in all three WOX functions.
+
+An implication of this scenario is that the wild-type zygote not
+only expresses a mixture of apical and basal cell fate regulators,
+but that their balanced activity is crucial for its ability to divide
+unequally and to establish distinct fates in its daughters. While
+the mechanistic basis for this asymmetric division remains to
+be determined, the nonadditive effect of wox8 wox9 mutants
+with mutations in the MAPKK kinase YDA suggest that signaling
+through the YDA pathway and WOX-dependent transcriptional
+regulation are both critical.
+
+EXPERIMENTAL PROCEDURES
+
+Plant Material
+Plants were grown on soil or in sterile culture on 0.53 MS medium containing
+Murashige and Skoog salts. After incubation for at least 4 days at 4C in dark-
+ness, plants were grown in growth chambers under long-day conditions (16 hr
+light and 8 hr dark) at 18C. The Arabidopsis mutants wox2-1, wox2-2, prs,
+wox5-1, mpB4149, and bdl-1 have been described previously (Haecker et al.,
+2004; Hamann et al., 1999; Matsumoto and Okada, 2001; Sarkar et al.,
+2007; Weijers et al., 2006). A T-DNA insertion mutant in the WOX1 gene
+(At3g18010) was obtained from the Versailles T-DNA insertion collection (Was-
+silevskija accession; Bechtold et al., 1993). The wox8-1 insertion line in the
+Wassilevskija accession was obtained from the Arabidopsis Knockout Facility
+of the University of Wisconsin (Krysan et al., 1999). A wox8-2 insertion line in
+the Columbia accession was identiﬁed in the SALK insertion collection by da-
+tabase search (Alonso et al., 2003). The wox9-1 allele in the Columbia acces-
+sion was isolated from the ZIGIA transposon collection in Cologne (Wisman
+et al., 1998). For genotyping protocols of the new mutant lines used, please
+see Supplemental Experimental Procedures available online. The ﬂuorescent
+markers PIN1:PIN1-GFP (Benkova et al., 2003), DR5rev:GFP (Friml et al.,
+2003), and AtML1:NLS-GFP3 (Takada and Ju¨ rgens, 2007) were kindly pro-
+vided by J. Friml and G. Ju¨ rgens (Tu¨ bingen). Signiﬁcance tests were performed
+using the two-tail Fisher’s Exact Test (http://www.langsrud.com/ﬁsher.htm).
+
+Construction of the Promoter and Protein Fusions
+For the WOX8gD:NLS-vYFP3 reporter the homeodomain sequence of WOX8
+was removed from the genomic sequence by a deletion of 425 bp including
+the ﬁrst exon and the beginning of the second exon. gD designates the deletion
+from the genomic fragment. At the 30 end of the genomic sequence, a BglII site
+was introduced, replacing the STOP codon, and a NLS-vYFP3 fragment (Nagai
+et al., 2002) was inserted. The promoter fusion of WOX9 was generated by in-
+serting a BamHI site at the 50 and the 30 end of the genomic sequence, remov-
+ing the coding sequence. This BamHI site was used to introduce the second
+
+Developmental Cell
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+intron and a NLS-vYFP3. The promoter fusions contain the sequences be-
+tween the closest annotated upstream genes and the ATG (start codon) of
+WOX8 and WOX9. At the 30 end, each construct contains the genomic region
+between the STOP codon of either WOX8 or WOX9 and the next annotated
+downstream genes. The WOX2 reporter was generated using the 3 kb up-
+stream sequence of the ATG fused to NLS-YFP and the CaMV35S terminator.
+The ARR5:NLS-vYFP3 was constructed by replacing the GUS sequence of the
+previously described ARR5 reporter (D’Agostino et al., 2000) with a NLS-vYFP3
+sequence. Details of cloning procedures are available as online information
+(Supplemental Experimental Procedures).
+
+Microscopy
+Nomarski microscopy analysis was performed using a chloral hydrate solution
+(containing glycerin, chloral hydrate, and water in a ratio of 1:8:3) on a Zeiss
+Imager A1 with DIC optics. For ﬂuorescent analysis the prepared ovules
+were placed in 10% glycerin and analyzed using the Zeiss ﬁlters 46HE for
+YFP and 38HE for GFP. After the 16-cell stage, wox8 wox9 embryos could
+be reproducibly dissected from ovules; for earlier stages, whole-mount imma-
+ture seeds were imaged.
+
+ACCESSION NUMBERS
+
+Database accession numbers are Atg nomenclature gene accession numbers
+of
+the TAIR database (http://www.arabidopsis.org) and are: At3g18010
+(WOX1), At5g59340 (WOX2), At2g28610 (WOX3/PRS), At3g11260 (WOX5),
+At5g45980 (WOX8), and At2g33880 (WOX9).
+
+SUPPLEMENTAL DATA
+
+The Supplemental Data include three ﬁgures, nine tables, Supplemental
+Experimental Procedures, and Supplemental References, and can be found
+with this article online at http://www.developmentalcell.com/cgi/content/full/
+14/6/867/DC1/.
+
+ACKNOWLEDGMENTS
+
+We thank the members of the Laux laboratory, Dolf Weijers, and Wolfgang
+Lukowitz for helpful comments on the manuscript. We thank Dolf Weijers for
+providing the mpB4149 allele, Jiri Friml and Gerd Ju¨ rgens for providing the
+PIN1:PIN1-GFP, the DR5rev:GFP, and the AtML1:NLS-GFP3 markers, and
+Elise Tucker for proofreading the manuscript. This work was supported by
+grants from the Deutsche Forschungsgemeinschaft and the EU (REGIA) to
+T.L., and by a JSPS fellowship to M.U.
+
+Received: December 23, 2007
+Revised: March 7, 2008
+Accepted: March 13, 2008
+Published: June 9, 2008
+
+REFERENCES
+
+Akam, M. (1998). Hox genes in arthropod development and evolution. Biol.
+Bull. 195, 373–374.
+
+Alonso, J.M., Stepanova, A.N., Leisse, T.J., Kim, C.J., Chen, H., Shinn, P., Ste-
+venson, D.K., Zimmerman, J., Barajas, P., Cheuk, R., et al. (2003). Genome-
+wide insertional mutagenesis of Arabidopsis thaliana. Science 301, 653–657.
+
+Bechtold, N., Ellis, J., and Pelletier, G. (1993). In planta Agrobacterium medi-
+ated gene transfer by inﬁltration of adult Arabidopsis thaliana plants. C R
+Acad. Sci. Paris Life Sci. 316, 1194–1199.
+
+Benkova, E., Michniewicz, M., Sauer, M., Teichmann, T., Seifertova, D., Ju¨ r-
+gens, G., and Friml, J. (2003). Local, efﬂux-dependent auxin gradients as
+a common module for plant organ formation. Cell 115, 591–602.
+
+Berleth, T., and Ju¨ rgens, G. (1993). The role of the Monopteros gene in organ-
+ising the basal body region of the Arabidopsis embryo. Development 118,
+575–587.
+
+Blilou, I., Xu, J., Wildwater, M., Willemsen, V., Paponov, I., Friml, J., Heidstra,
+R., Aida, M., Palme, K., and Scheres, B. (2005). The PIN auxin efﬂux facilitator
+network controls growth and patterning in Arabidopsis roots. Nature 433,
+39–44.
+
+Chaudhury, A.M., Letham, S., Craig, S., and Dennis, E.S. (1993). amp1 - a mu-
+tant with high cytokinin levels and altered embryonic pattern, faster vegetative
+growth, consitutive photomorphogenesis and precocious ﬂowering. Plant J. 4,
+907–916.
+
+D’Agostino, I.B., Deruere, J., and Kieber, J.J. (2000). Characterization of the
+response of the Arabidopsis response regulator gene family to cytokinin. Plant
+Physiol. 124, 1706–1717.
+
+Dolan, L., Janmaat, K., Willemsen, V., Linstead, P., Poethig, S., Roberts, K.,
+and Scheres, B. (1993). Cellular organisation of the Arabidopsis thaliana
+root. Development 119, 71–84.
+
+Friml, J., Vieten, A., Sauer, M., Weijers, D., Schwarz, H., Hamann, T., Offringa,
+R., and Ju¨ rgens, G. (2003). Efﬂux-dependent auxin gradients establish the
+apical-basal axis of Arabidopsis. Nature 426, 147–153.
+
+Geldner, N., Anders, N., Wolters, H., Keicher, J., Kornberger, W., Mu¨ ller, P.,
+Delbarre, A., Ueda, T., Nakano, A., and Ju¨ rgens, G. (2003). The Arabidopsis
+GNOM ARF-GEF mediates endosomal recycling, auxin transport, and auxin-
+dependent plant growth. Cell 112, 219–230.
+
+Haecker, A., Gross-Hardt, R., Geiges, B., Sarkar, A., Breuninger, H., Herr-
+mann, M., and Laux, T. (2004). Expression dynamics of WOX genes mark
+cell fate decisions during early embryonic patterning in Arabidopsis thaliana.
+Development 131, 657–668.
+
+Hamann, T., Mayer, U., and Ju¨ rgens, G. (1999). The auxin-insensitive bodenlos
+mutation affects primary root formation and apical-basal patterning in the
+Arabidopsis embryo. Development 126, 1387–1395.
+
+Hamann, T., Benkova, E., Ba¨ urle, I., Kientz, M., and Ju¨ rgens, G. (2002). The
+Arabidopsis BODENLOS gene encodes an auxin response protein inhibiting
+MONOPTEROS-mediated embryo patterning. Genes Dev. 16, 1610–1615.
+
+Jenik, P.D., Gillmor, C.S., and Lukowitz, W. (2007). Embryonic patterning in
+Arabidopsis thaliana. Annu. Rev. Cell Dev. Biol. 23, 207–236.
+
+Ju¨ rgens, G. (2001). Apical-basal pattern formation in Arabidopsis embryogen-
+esis. EMBO J. 20, 3609–3616.
+
+Ju¨ rgens, G., and Mayer, U. (1994). Arabidopsis. In A Colour Atlas of Developing
+Embryos, J. Bard, ed. (London: Wolfe Publishing), pp. 7–21.
+
+Krumlauf, R. (1994). Hox genes in vertebrate development. Cell 78, 191–201.
+
+Krysan, P.J., Young, J.C., and Sussman, M.R. (1999). T-DNA as an insertional
+mutagen in Arabidopsis. Plant Cell 11, 2283–2290.
+
+Laux, T., Wurschum, T., and Breuninger, H. (2004). Genetic regulation of em-
+bryonic pattern formation. Plant Cell Suppl. 16, S190–S202.
+
+Lukowitz, W., Roeder, A., Parmenter, D., and Somerville, C. (2004). A MAPKK
+kinase gene regulates extra-embryonic cell fate in Arabidopsis. Cell 116,
+109–119.
+
+Mansﬁeld, S.G., and Briarty, L.G. (1991). Early embryogenesis in Arabidopsis
+thaliana. II. The developing embryo. Can. J. Bot. 69, 461–476.
+
+Matsumoto, N., and Okada, K. (2001). A homeobox gene, PRESSED FLOWER,
+regulates lateral axis-dependent development of Arabidopsis ﬂowers. Genes
+Dev. 15, 3355–3364.
+
+Mayer, K.F., Schoof, H., Haecker, A., Lenhard, M., Ju¨ rgens, G., and Laux, T.
+(1998). Role of WUSCHEL in regulating stem cell fate in the Arabidopsis shoot
+meristem. Cell 95, 805–815.
+
+Mayer, U., Bu¨ ttner, G., and Ju¨ rgens, G. (1993). Apical-basal pattern formation
+in the Arabidopsis embryo: Studies on the role of the gnom gene. Development
+117, 149–162.
+
+Nagai, T., Ibata, K., Sun Park, E., Kubota, M., Mikoshiba, K., and Miyawaki, A.
+(2002). A variant of yellow ﬂuorescent protein with fast and efﬁcient maturation
+for cell-biological applications. Nat. Biotechnology 20, 87–90.
+
+Nardmann, J., and Werr, W. (2006). The shoot stem cell niche in angiosperms:
+expression patterns of WUS orthologues in rice and maize imply major
+modiﬁcations in the course of mono- and dicot evolution. Mol. Biol. Evol. 23,
+2492–2504.
+
+Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc. 875
+
+WOX Genes Mediate Apical-Basal Axis in Arabidopsis
+
+Developmental Cell
+
+Paciorek, T., Zazimalova, E., Ruthardt, N., Petrasek, J., Stierhof, Y.D., Kleine-
+Vehn, J., Morris, D.A., Emans, N., Ju¨ rgens, G., Geldner, N., et al. (2005). Auxin
+inhibits endocytosis and promotes its own efﬂux from cells. Nature 435,
+1251–1256.
+
+Vieten, A., Vanneste, S., Wisniewska, J., Benkova, E., Benjamins, R., Beeck-
+man, T., Luschnig, C., and Friml, J. (2005). Functional redundancy of PIN pro-
+teins is accompanied by auxin-dependent cross-regulation of PIN expression.
+Development 132, 4521–4531.
+
+Sarkar, A., Luijten, M., Miyashima, S., Lenhard, M., Hashimoto, T., Nakajima,
+K., Scheres, B., Heidstra, R., and Laux, T. (2007). Conserved factors regulate
+signalling in Arabidopsis thaliana shoot and root stem cell organizers. Nature
+446, 811–814.
+
+Steinmann, T., Geldner, N., Grebe, M., Mangold, S., Jackson, C.L., Paris, S.,
+Galweiler, L., Palme, K., and Ju¨ rgens, G. (1999). Coordinated polar localization
+of auxin efﬂux carrier PIN1 by GNOM ARF GEF. Science 286, 316–318.
+
+Takada, S., and Ju¨ rgens, G. (2007). Transcriptional regulation of epidermal cell
+fate in the Arabidopsis embryo. Development 134, 1141–1150.
+
+Weijers, D., Schlereth, A., Ehrismann, J.S., Schwank, G., Kientz, M., and Ju¨ r-
+gens, G. (2006). Auxin triggers transient local signaling for cell speciﬁcation in
+Arabidopsis embryogenesis. Dev. Cell 10, 265–270.
+
+Wisman, E., Cardon, H.G., Fransz, P., and Saedler, H. (1998). The behaviour of
+the autonomous transposable element En/Spm in Arabidopsis thaliana allows
+efﬁcient mutagenesis. Plant Mol. Biol. 37, 989–999.
+
+Wu, X., Chory, J., and Weigel, D. (2007). Combinations of WOX activities
+regulate tissue proliferation during Arabidopsis embryonic development.
+Dev. Biol. 309, 306–316.
+
+876 Developmental Cell 14, 867–876, June 2008 ª2008 Elsevier Inc.
+
+

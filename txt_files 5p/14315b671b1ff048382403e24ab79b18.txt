@@ -1,0 +1,304 @@
+Natural Language 
+Processing: GATE
+by Renato Garita
+
+Course: Special Topics in AI
+Date: 28.11.2014
+
+GATE
+
+project
+
+● Comprised of:
+
+● Allegedly biggest open source language processing 
+
+○ IDE (GATE Developer)
+○ Web app (GATE Teamware)
+○ Framework (GATE Embedded)
+○ A process to create robust and maintainable services
+○ Cloud computer solution (GATE_Cloud.net)
+○ Massively scalable multiparadigm index (GATE 
+
+Mímir)
+
+○ Wiki/CMS (GATE_Wiki.sf.net)
+
+GATE: Developer
+
+● Used to create annotated graphs, finite 
+
+state machines, support vector machines 
+for language processing
+
+● Results can be exported to GATE 
+
+Embedded (applications) or GATE 
+Teamware and GATE Cloud (quality 
+control/parallelization)
+
+GATE: ANNIE
+● ANNIE: Information Extraction system.
+● Relies on finite algorithms and the JAPE language.
+
+https://gate.ac.uk/demos/annie/annie.html
+
+GATE: ANNIE
+
+https://gate.ac.uk/sale/tao/splitch6.html#chap:annie
+
+GATE: ANNIE
+
+● Tokenizer (default and english tokenizer): distinguishes between 
+
+simple tokens.
+
+○ Rules:
+
+■ Format: LHS>RHS.
+
+■ LHS: regular expression: | (or), * (0 or occurrences), ? (0 or 
+
+1 occurrences), + (1 or more occurrences).
+
+■ RHS: uses ';' as a separator: {Annotation type};{attribute1}
+
+={value1};...;{attribute n}={value n}
+
+■ Example: ‘UPPERCASE_LETTER’ 
+
+‘LOWERCASE_LETTER’*> Token;orth=upperInitial;
+kind=word;
+
+GATE: ANNIE
+
+● Gazetteer: identifies and annotates identity names on lists. Each 
+
+list is a set of names (cities, companies, etc).
+
+software_company.lst:
+
+Red Hat&stockSymbol=RHAT
+Apple Computer&abbrev=Apple&stockSymbol=AAPL
+Microsoft&abbrev=MS&stockSymbol=MSFT
+
+● Lists are accessed using an index file major type, minor type, 
+
+language and annotation type:
+
+software_company.lst:company:software
+
+GATE: ANNIE
+
+● Sentence Splitter: cascade of finite state transducers which 
+
+segment text into sentences.
+
+○ Uses the Gazetteer list of abbreviations to distinguish sentence-
+
+marking full stops.
+
+○ Each sentence is annotated with the type ‘Sentence’.
+○ Each sentence break is annotated with ‘Split’.
+○ Feature ‘kind’ with ‘internal’ or ‘external’ values.
+
+● RegEx Sentence Splitter: addresses performance issues with the 
+
+Sentence Splitter.
+
+○ Based in regular expressions.
+○ Patterns for ‘internal’, ‘external’ and ‘non’ splits.
+
+GATE: ANNIE
+
+● Part of Speech Tagger: produces a tag (noun, preposition, etc) 
+
+for every word and symbol.
+
+○ Uses a default lexicon and ruleset (extracted from large training 
+
+corpus).
+
+○ Both can be modified manually.
+○ Two more lexicons: for all UPPERCASE or all lowercase.
+○ Adds features to existing annotation or creates new annotation.
+
+● Semantic Tagger: rules that act on previous annotations to 
+
+produce annotated entities (MUC entities: Person, Location, etc).
+
+GATE: ANNIE
+
+● Orthographic coreference (OrthoMatcher): adds identity 
+
+relations between entities found by the Semantic Tagger in order to 
+perform coreference.
+
+○ Lookup table of aliases: e.g. Coca-Cola, Coke.
+○ Table for spurious matches: e.g. ‘BT Wireless’, ‘BT Cellnet’.
+○ Uses string comparison function.
+
+GATE: ANNIE
+
+● Pronominal coreference: performs anaphora resolution using 
+
+JAPE grammar formalism.
+
+○ Submodules:
+
+■ Locate quoted fragments.
+■ Locate pleonastic ‘it’ occurrences. E.g. ‘It rains’.
+
+GATE: ANNIE
+
+● Pronominal coreference:
+
+○ Main module: 
+
+■ Depends on the previous detection of: Tokens, Sentences, 
+
+Splits, Location, Person, Organization.
+
+■ Functionality:
+
+● Preprocess:
+
+○ Identify sentences.
+○ Data structure with 3 lists: 
+
+person/organization/location.
+
+○ Identify gender of persons.
+○ Store pleonastic ‘it’ in separate list.
+○ Structure to store persons and 3rd person singular 
+
+pronouns in sentence.
+
+GATE: ANNIE
+
+● Pronominal coreference:
+
+○ Functionality:
+
+■ Create coreference chains:
+
+○ Pair each anaphor/antecedent with orthographic 
+
+matches to create chain.
+
+○ Coreference annotation for each chain.
+○ Context of (normally) 3 sentences.
+○ Closer candidates are scored better (recency 
+
+factor).
+
+○ Inanimate objects not considered.
+○ Gender compatibility check.
+○ For ‘it’, ‘its’ and ‘itself’. The recency factor plays 
+
+biggest role.
+
+○ The resolution of ‘I’, ‘me’, ‘my’ and ‘myself’ is text 
+
+prior to quote or text following quote
+
+GATE: ANNIE
+
+● Pronominal coreference:
+
+○ Functionality:
+
+■ Pronoun resolution:
+
+○ Retrieve annotated possessive adjectives and 
+
+pronouns and sort them according to offset in text.
+○ If it founds ‘it’ check if it’s pleonastic and nothing is 
+
+done.
+
+○ Identify context: preceding sentence(s).
+○ Set of candidate antecedents is proposed (e.g. ‘she’ 
+
+with a female or unknown identity).
+
+○ One candidate is chosen according to evaluation 
+
+criteria.
+
+GATE: ANNIE
+
+● Pronominal coreference:
+
+○ Functionality:
+
+■ Result:
+
+● Generates annotation of type Coreference that 
+
+contains: antecedent offset for the starting node of the 
+
+annotation and matches in a list of annotation IDs 
+
+which is the coreference chain containing the 
+anaphor/antecedent pair.
+
+GATE: ANNIE
+
+● Example: Use tokenizer, gazetteer and named-entity grammar to 
+
+recognise the phrase ‘800,000 US dollars’ as an entity of type 
+‘Number’, with the feature ‘money’. 
+
+Macros and rules
+
+Tokenizer
+
+Gazetteer
+
+Result
+
+https://gate.ac.uk/sale/tao/splitch6.html#x9-1600006.10
+
+GATE: Q&A Systems
+
+● K. Humphreys, R. Gaizauskas, M. Hepple, and M. 
+
+Sanderson. The University of Sheﬃeld TREC-8 Q&A 
+System. In In Proceedings of the 8th Text REtrieval 
+Conference, 1999.  (Used ANNIE’s predecessor LaSIE) (9th in 
+TREC 2004)
+
+● H. Saggion. Identifying deﬁnitions in text collections for 
+
+question answering. lrec. In Proceedings of Language 
+Resources and Evaluation Conference. ELDA, 2004. 
+(Definition patterns in GATE) (4th in TREC 2004)
+
+References
+
+● GATE Site: gate.ac.uk
+
+● Wikipedia GATE entry: http://en.wikipedia.
+
+org/wiki/General_Architecture_for_Text_Engineering (General 
+Architecture for Text Enginnering)
+
+● Cunningham, H., Maynard, D., Bontcheva, K., & Tablan, V. (2002, July). 
+
+GATE: an architecture for development of robust HLT applications. In 
+Proceedings of the 40th annual meeting on association for 
+computational linguistics (pp. 168-175). Association for Computational 
+Linguistics.
+
+● H. Saggion. Identifying deﬁnitions in text collections for question 
+
+answering. lrec. In Proceedings of Language Resources and Evaluation 
+Conference. ELDA, 2004.
+
+● K. Humphreys, R. Gaizauskas, M. Hepple, and M. Sanderson. The 
+
+University of Sheﬃeld TREC-8 Q&A System. In In Proceedings of the 8th 
+Text REtrieval Conference, 1999.
+
+

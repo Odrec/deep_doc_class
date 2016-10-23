@@ -1,0 +1,565 @@
+Einführung in die 
+Wirtschafts- und 
+
+Sozialstatistik
+
+Tutorium 1
+
+Donnerstags 12:00–14:00 Uhr
+
+Raum: 15/E27
+Rabea Mette 
+
+ramette@uni-osnabrueck.de
+
+Ablaufplan
+Do, 14.04.2016 Häufigkeiten und Lagemaße
+Do, 21.04.2016 Streuung und Streuungsmaße
+Do, 28.04.2016 Tabellenanalyse I
+Do, 05.05.2016Tabellenanalyse II
+Do, 19.05.2016 Korrelation
+Do, 26.05.2016 Lineare Regression
+Do, 02.06.2016 Drittvariablenkontrolle
+Do, 09.06.2016 Grundgesamtheit und Stichprobe
+Do, 16.06.2016 Schätzen
+Do, 23.06.2016 Testen
+Do, 30.06.2016 Wiederholung und Fragen
+Di, 05.07.2016 Klausur
+
+Aufgabe 1
+
+ 
+1. Im folgenden Beispiel geht es um die Parteipräferenz und 
+Konfession. Als Datengrundlage dienen uns die Angaben von 4572 
+Befragungspersonen aus dem Sozio-ökonomischen Panel. 
+
+ 
+a. Berechnen Sie Pearson's Chi-Quadrat. 
+b. Berechnen Sie auf der Basis des  Chi2-Wertes das Assoziationsmaß Cramer's V. 
+c. Handelt es sich bei dem untersuchten Zusammenhang eher um eine starke oder 
+eher um eine schwache Assoziation? Begründen Sie Ihre Antwort. 
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+Chi-Quadrat 
+= Vergleich der Kontingenztabelle (beobachtete Häufigkeiten) mit der 
+Indifferenztabelle (erwartete Häufigkeiten bei statistischer Unabhängigkeit) 
+
+Kontingenztabelle
+
+ → Beobachtete Ausprägungskombinationen einer
+bivariaten Häufigkeitsverteilung
+
+In den Zellen stehen
+die beobachteten Häufigkeiten (        ) mit denen die 
+Ausprägungskombination bei den
+Merkmalsträgern aufgetreten ist.
+
+x j; y j
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+Chi-Quadrat
+= Vergleich der Kontingenztabelle (beobachtete Häufigkeiten) mit der 
+Indifferenztabelle (erwartete Häufigkeiten bei statistischer Unabhängigkeit) 
+
+Indifferenztabelle
+
+zeigt die Häufigkeit, die wir erwarten würden, 
+wenn keine Beziehung zwischen den Variablen 
+bestünde
+
+= die Variablen unabhängig voneinander wären
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+Chi-Quadrat
+= Vergleich der Kontingenztabelle (beobachtete Häufigkeiten) mit der 
+Indifferenztabelle (erwartete Häufigkeiten bei statistischer Unabhängigkeit) 
+
+Kontingenztabelle
+
+Wie berechnet man die Werte für die 
+Indifferenztabelle? 
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+Erwartete Häufigkeit SPD/nicht katholisch:
+
+3163 x      = 
+      
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+Erwartete Häufigkeit SPD/nicht katholisch:
+
+3163 x 1385  = 
+      
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+Erwartete Häufigkeit SPD/nicht katholisch:
+
+3163 x 1385  = 
+      4572
+
+958,17
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+beobachtete 
+Häufigkeiten
+
+erwartete 
+Häufigkeiten
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+beobachtete 
+Häufigkeiten
+
+erwartete 
+Häufigkeiten
+
+Aufgabe 1
+
+a. Berechnen Sie Pearson's Chi-Quadrat.
+
+beobachtete 
+Häufigkeiten
+
+erwartete 
+Häufigkeiten
+
+Chi-Quadrat
+
+x
+
+Aufgabe 1
+
+b. Berechnen Sie auf der Basis des Chi-Quadrat-Wertes das Assoziationsmaß Cramer's V. 
+
+.
+x
+
+Aufgabe 1
+
+b. Berechnen Sie auf der Basis des Chi-Quadrat-Wertes das Assoziationsmaß Cramer's V. 
+
+Aufgabe 1
+
+c. Handelt es sich bei dem untersuchten Zusammenhang eher um eine starke oder
+eher um eine schwache Assoziation? Begründen Sie Ihre Antwort. 
+
+0,0 < V < 0,3 → schwacher Zusammenhang 
+0,3 < V < 1,0 → starker Zusammenhang 
+
+→ 0<0,18<0,3: Es besteht ein schwacher Zusammenhang zwischen 
+Konfession und Parteipräferenz. 
+
+Aufgabe 1
+
+c. Handelt es sich bei dem untersuchten Zusammenhang eher um eine starke oder
+eher um eine schwache Assoziation? Begründen Sie Ihre Antwort. 
+
+0,0 < V < 0,3 → schwacher Zusammenhang 
+0,3 < V < 1,0 → starker Zusammenhang
+
+→ 0 < 0,18 < 0,3: Es besteht ein schwacher Zusammenhang 
+zwischen Konfession und Parteipräferenz. 
+
+→ 0<0,18<0,3: Es besteht ein schwacher Zusammenhang zwischen 
+Konfession und Parteipräferenz. 
+
+Aufgabe 2
+
+ 
+In einer Umfrage wurden 3320 Männer und Frauen gefragt, ob sie sich große Sorgen, 
+einige Sorgen oder keine Sorgen um die Erhaltung des Friedens machen. Mithilfe 
+des Statistikprogramms STATA wurde eine Kreuztabelle erzeugt, die die Ergebnisse dieser 
+Umfrage wiedergibt. Zusätzlich wurden zwei Maßzahlen, Chi-Quadrat und Cramer’s V, 
+berechnet. Interpretieren Sie die Ergebnisse! 
+
+Chi-Quadrat 
+Zusammenhangsmaß aus dem  Vergleich 
+der Kontingenztabelle beobachteter 
+Häufigkeiten  mit erwarteten Häufigkeiten
+
+Cramers V
+Normiert Chi-Quadrat
+Wertebereich 0 bis 1, wobei:
+V = 0 → statistische Unabhängigkeit
+V = 1 → statistische Abhängigkeit
+
+Aufgabe 2
+
+ 
+In einer Umfrage wurden 3320 Männer und Frauen gefragt, ob sie sich große Sorgen, 
+einige Sorgen oder keine Sorgen um die Erhaltung des Friedens machen. Mithilfe 
+des Statistikprogramms STATA wurde eine Kreuztabelle erzeugt, die die Ergebnisse dieser 
+Umfrage wiedergibt. Zusätzlich wurden zwei Maßzahlen, Chi-Quadrat und Cramer’s V, 
+berechnet. Interpretieren Sie die Ergebnisse! 
+
+Chi-Quadrat = 59,2013:
+Es gibt einen Zusammenhang zwischen 
+„Sorgen um Erhalt des Friedens“ und 
+„Geschlecht“ 
+
+→ die Variablen sind statistisch 
+voneinander abhängig
+ 
+Cramer´s V =0,1335:
+Es liegt ein schwacher Zusammenhang 
+vor
+
+FAZIT
+
+Chi-Quadrat
+
+Cramer´s V
+
+Vergleich zwischen beobachteten und erwarteten 
+Häufigkeiten 
+
+Cramer‘s A ist das üblichste Maß für nominale 
+Variablen
+
+(Kontingenstabelle : Indifferenztabelle)
+
+Statistische  Unabhängigkeit:  Kontingenztabelle  und 
+Indifferenztabelle sind identisch 
+Chi-Quadrat = 0
+Statistische  Abhängigkeit:  Kontingenztabelle  und 
+Indifferenztabelle sind ungleich 
+Chi-Quadrat > 0
+Wertebereich: 0 bis unendlich
+
+Perfekter statistischer Zusammenhang: Cramer´s V = 
+1
+
+Statistische Unabhängigkeit: Cramer´s V = 0
+
+Wertebereich: 0 bis 1
+
+Nachteil:  Da  Chi-Quadrat  von  der  Anzahl  der  Fälle 
+abhängig  ist,  kann  es  nicht  als  alleiniges  Maß  zur 
+Interpretation  von  Zusammenhängen  herangezogen 
+werden. 
+
+Vorteil: normierter Wertebereich (Werte > 0,3 
+werden in den Sozialwissenschaften als starke 
+Zusammenhänge zwischen zwei Variablen 
+interpretiert). Bietet die Möglichkeit des Vergleichs 
+zwischen unterschiedlichen Tabellen
+
+                 Korrelation
+
+Ablaufplan
+
+Do, 14.04.2016 Häufigkeiten und Lagemaße
+Do, 21.04.2016 Streuung und Streuungsmaße
+Do, 28.04.2016 Tabellenanalyse I
+Do, 12.05.2016 Tabellenanalyse II
+Do, 19.05.2016Korrelation
+Do, 26.05.2016 Lineare Regression
+Do, 02.06.2016 Drittvariablenkontrolle
+Do, 09.06.2016 Grundgesamtheit und Stichprobe
+Do, 16.06.2016 Schätzen
+Do, 23.06.2016 Testen
+Do, 30.06.2016 Wiederholung und Fragen
+Di, 05.07.2016 Klausur
+
+Aufgabe 1
+
+Welche der folgenden Aussagen passt am besten zu den folgenden 
+Streudiagrammen?
+
+1. Die Korrelation ist näherungsweise null, obwohl ein Zusammenhang 
+
+besteht, der jedoch nicht linear ist.
+
+2. Es besteht ein positiver Zusammenhang
+3. Es ergibt sich eine negative Korrelation.
+4. Es besteht kein offensichtlicher Zusammenhang, die Korrelation ist 
+
+näherungsweise null.
+
+Aufgabe 1.1
+
+1. Die Korrelation ist näherungsweise 
+
+null, obwohl ein Zusammenhang 
+besteht, der jedoch nicht linear ist.
+
+2. Es besteht ein positiver 
+
+Zusammenhang.
+
+3. Es ergibt sich eine negative 
+
+Korrelation.
+
+4. Es besteht kein offensichtlicher 
+
+Zusammenhang, die Korrelation ist 
+näherungsweise null.
+
+Aufgabe 1.1
+
+1. Die Korrelation ist näherungsweise 
+
+null, obwohl ein Zusammenhang 
+besteht, der jedoch nicht linear ist.
+
+2. Es besteht ein positiver 
+
+Zusammenhang.
+
+3. Es ergibt sich eine negative 
+
+Korrelation.
+
+4. Es besteht kein offensichtlicher 
+
+Zusammenhang, die Korrelation ist 
+näherungsweise null.
+
+Aufgabe 1.2
+
+1. Die Korrelation ist näherungsweise 
+
+null, obwohl ein Zusammenhang 
+besteht, der jedoch nicht linear ist.
+
+2. Es besteht ein positiver 
+
+Zusammenhang
+
+3. Es ergibt sich eine negative 
+
+Korrelation.
+
+4. Es besteht kein offensichtlicher 
+
+Zusammenhang, die Korrelation ist 
+näherungsweise null.
+
+Aufgabe 1.2
+
+1. Die Korrelation ist näherungsweise 
+
+null, obwohl ein Zusammenhang 
+besteht, der jedoch nicht linear ist.
+
+2. Es besteht ein positiver 
+
+Zusammenhang
+
+3. Es ergibt sich eine negative 
+
+Korrelation.
+
+4. Es besteht kein offensichtlicher 
+
+Zusammenhang, die Korrelation ist 
+näherungsweise null.
+
+Aufgabe 1.3
+
+1. Die Korrelation ist näherungsweise 
+
+null, obwohl ein Zusammenhang 
+besteht, der jedoch nicht linear ist.
+
+2. Es besteht ein positiver 
+
+Zusammenhang
+
+3. Es ergibt sich eine negative 
+
+Korrelation.
+
+4. Es besteht kein offensichtlicher 
+
+Zusammenhang, die Korrelation ist 
+näherungsweise null.
+
+Aufgabe 1.3
+
+1. Die Korrelation ist näherungsweise 
+
+null, obwohl ein Zusammenhang 
+besteht, der jedoch nicht linear ist.
+
+2. Es besteht ein positiver 
+
+Zusammenhang
+
+3. Es ergibt sich eine negative 
+
+Korrelation.
+
+4. Es besteht kein offensichtlicher 
+
+Zusammenhang, die Korrelation ist 
+näherungsweise null.
+
+Aufgabe 1.4
+
+1. Die Korrelation ist näherungsweise 
+
+null, obwohl ein Zusammenhang 
+besteht, der jedoch nicht linear ist.
+
+2. Es besteht ein positiver 
+
+Zusammenhang
+
+3. Es ergibt sich eine negative 
+
+Korrelation.
+
+4. Es besteht kein offensichtlicher 
+
+Zusammenhang, die Korrelation ist 
+näherungsweise null.
+
+Aufgabe 1.4
+
+1. Die Korrelation ist näherungsweise 
+
+null, obwohl ein Zusammenhang 
+besteht, der jedoch nicht linear ist.
+
+2. Es besteht ein positiver 
+
+Zusammenhang
+
+3. Es ergibt sich eine negative 
+
+Korrelation.
+
+4. Es besteht kein offensichtlicher 
+
+Zusammenhang, die Korrelation ist 
+näherungsweise null.
+
+Aufgabe 2
+
+Die folgende Tabelle gibt Auskunft über die Bildungsjahre und das 
+Einkommen von zehn Personen.
+
+Aufgabe 2a)
+
+Welchen Zusammenhang erwarten Sie zwischen Bildung und 
+Einkommen. Formulieren Sie eine Hypothese.
+
+Es besteht ein positiver Zusammenhang zwischen Bildung und 
+Einkommen. Je höher die Anzahl der Bildungsjahre ist, desto höher ist 
+das Einkommen.
+
+Kovarianz
+
+•  
+
+Kovarianz
+
+•  
+
+Korrelationskoeffizient
+
+•  
+
+Korrelationskoeffizient
+
+• Stärke der Korrelation (negativ und positiv)
+
+•  keine Korrelation
+•  schwache Korrelation
+•  mittlere Korrelation
+•  starke Korrelation
+•  sehr starke Korrelation
+
+Aufgabe 2b)
+
+Berechnen Sie den Korrelationskoeffizienten von Pearson als ein Maß 
+für den Zusammenhang zwischen Bildungsjahre und Einkommen.
+
+1. Arithmetische Mittel berechnen
+2. Kovarianz berechnen
+3. Standardabweichungen berechnen
+4. Errechnete Daten einsetzen
+
+Aufgabe 2b)
+
+•  
+
+ 
+
+ 
+
+Aufgabe 2b)
+
+•  
+
+Aufgabe 2b)
+
+•  
+
+Aufgabe 2b)
+
+•  
+
+Aufgabe 2b)
+
+•  
+
+Aufgabe 2b)
+
+•  
+
+Aufgabe 2c)
+
+•  
+
+Aufgabe 3
+
+.•  
+
+Aufgabe 3a)
+
+•  
+
+Aufgabe 3b)
+
+•  
+
+Aufgabe 3c)
+
+•  
+
+

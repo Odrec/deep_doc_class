@@ -1,0 +1,524 @@
+AlphaGo
+
+Mastering the game of Go
+
+with deep neural networks and tree search
+
+A presentation by Anke Dittmer, Falk Heuer 
+
+Table of contents
+
+1.
+
+Introduction
+
+a. Motivation
+b.
+Rules of Go
+
+2. Overview of AlphaGo
+3.
+
+Prior Knowledge
+
+a. Monte Carlo Tree Search
+b.
+
+Recap: Convolutional Networks
+
+4. AlphaGo
+
+a. Deep neural networks & Rollout policy
+b.
+
+Procedure of AlphaGo
+
+5. Discussion
+
+a.
+AlphaGo vs. Lee Sedol
+b. Discussing the match
+c. General Discussion
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+January 2014
+
+27 January 2016
+
+October 2015
+
+Why Go?
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+33:54
+
+30.05.2016
+
+How to play Go?
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Make bigger territories
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Capturing stones
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Overview of AlphaGo
+
+SL Policy Network
+
+Estimation
+
+ Rollout 
+
+Value Network
+
+Value of
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Monte Carlo Tree Search
+
+- Why MCTS? The Tree has a too high branching factor (~364!/164! ≈ 10^482 leafs, 
+atoms in the universe: ~10^80) to fully expand for e.g. a MiniMax evaluation, even 
+with tree pruning
+In order to search through the tree with full depth (to 
+evaluate the winner) but in finite time, random full games 
+are played out and the winning amounts are noted
+
+-
+
+- For each move, a field which previously gave the highest 
+
+winning chances is selected, until a leaf (end state) is 
+reached. If there is no winning percentage yet, random 
+choice or a heuristic may be chosen.
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Monte Carlo Tree Search
+
+- Once a leaf node has been reached, the winner is noted and the game number 
+increase as well as the winning rate (for this player) is increased for each node
+
+- The process is repeated until a stop criterion and the branch 
+
+with the most playouts is chosen
+
+- This way, the algorithm can be stopped at any time and 
+
+converges towards perfect play over time
+
+- Using MCTS combined with Go specific heuristics, agents 
+
+have reached up to 6 Dan amateur play and represented the 
+strongest agents until AlphaGo
+
+ 
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Convolutional Layers
+● Why Convolution? Training a Fully Connected NN requires a lot of 
+
+computational resources, while convolutional layers are only sparsely connected 
+=> faster for high input dimensionality
+
+● What is convolution used for? Usually image classification, as it serves as shape 
+
+recognizer. Since Go also heavily depends on Shapes, it is very suitable to 
+recognize:
+
+○
+
+Local Shapes and structures
+
+○ Global shapes in bigger empty areas
+
+=> CNNs are the agent’s “Intuition”, something that pure MCTS agents lack
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Convolutional Layers
+● Instead of connecting all neurons with 
+
+weights for the next layer, only blocks of 
+specific size connect to 1 neuron
+
+● The weights of one block (Kernel) can 
+
+be pre-trained for specific tasks like edge 
+detection or learned via e.g. 
+backpropagation
+
+● To reduce the output matrix to 1 value, 
+pooling (most popular: max pooling) is 
+applied
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+AlphaGo - Search Tree
+
+Search tree too big to evaluate, can be reduced in:
+
+● Depth, by position evaluation -> value network
+
+● Breadth, by sampling actions from a policy -> policy network
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+AlphaGo - Deep neural networks & Rollout policy
+
+1. SL policy network
+
+Rectifier linear unit:
+
+-> Probability distribution over all legal moves
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+AlphaGo - Deep neural networks & Rollout policy
+
+ 2.  RL policy network 
+
+-> Probability distribution over all legal moves
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+AlphaGo - Deep neural networks & Rollout policy
+
+ 3.  Value network
+
+-> 1 value, evaluation of the board position
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+AlphaGo - Deep neural networks & Rollout policy 
+
+ 4. Rollout policy
+
+-> Probability distribution
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+AlphaGo - Deep neural networks & Rollout policy
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Procedure of Alpha Go
+
+● Value & Policy Networks are 
+
+combined through a MCTS
+
+● Edges store:
+
+○ An action value Q(s,a)
+○ A visit count N(s,a)
+○ A prior probability P(s,a)
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Procedure of Alpha Go
+
+● At each time step t, an action is 
+
+selected with the highest action value 
+plus a bonus:
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Procedure of Alpha Go
+
+● If leaf node is reached, the node may 
+be expanded, and is processed by the 
+SL Policy Network
+
+● The output probabilities are stored as 
+
+prior probabilities 
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Procedure of Alpha Go
+
+● The leaf node is evaluated in two 
+
+parameter λ:
+
+different ways:
+○ 1. By the value network
+○ 2. Random rollout
+
+● => Combined using mixing 
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Procedure of Alpha Go
+
+● Action value Q(s,a) & visit count N
+
+(s,a) are updated
+
+● Once search is complete the most 
+
+visited move is chosen
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Overview of AlphaGo
+
+SL Policy Network
+
+Estimation
+
+ Rollout 
+
+Value Network
+
+Value of
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+27 January 2016
+
+Lee Sedol vs AlphaGo
+
+Lee Sedol (02. Mar. 1983 ~ )
+
+1 million $$$
+
+South Korea
+In 1995: became professional Go player
+
+18 international titles
+
+VS.VS.
+
+AlphaGo (2015 ~ )
+
+England
+5 - 0 vs. Fan Hui
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+08 March 2016
+
+08 March 2016
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+11:02
+
+Lee Sedol (Black), AlphaGo (White)
+AlphaGo wins by resignation
+
+AlphaGo (Black), Lee Sedol (White)
+AlphaGo wins by resignation
+
+Lee Sedol (Black), AlphaGo (White)
+AlphaGo wins by resignation
+
+AlphaGo (Black),
+Lee Sedol (White)
+Lee Sedol wins by resignation
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+Lee Sedol (Black),
+AlphaGo (White)
+AlphaGo wins by resignation
+
+30.05.2016
+
+30, 29, 28, 27, …, 3, 2, 1 Kyu
+-> 1, 2, 3, …, 9 Dan
+
+The Match: AlphaGo vs. Lee Sedol
+
+1. Game 1 (see SGF)
+
+2. Game 4, the game Lee Sedol won.
+
+After Lee played the brilliant move 78, AlphaGo felt behind and played bad 
+moves. This is because when there are low percentages for many moves, Tree 
+Search will expand too many branches in those other bad variations and not be 
+able to search deep enough for reasonable moves. 
+
+Look at the whole game here!   http://www.go4go.net/go/games/sgfview/53071
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Discussion
+
+1. Deepmind wants to develop agents that can be used in further areas (ultimately 
+leading to GAI). Will Board Game agents like AlphaGo aid on the road towards 
+this ambitious goal?
+
+2. AlphaGo learned Go from a KGS data set (an amateur Go server) which is not 
+professional play, but it could still beat Lee Sedol (the strongest professional in 
+the last 15 years).
+
+3. How will AlphaGo influence the Go world?
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+References
+
+1. David Silver et al.(2016). Mastering the game of Go with deep neural networks and tree search. Nature. 
+
+Vol 529, p. 484 - 489
+http://www.go4go.net/, AlphaGo games (and more)
+http://www.gokgs.com/, KGS Go Server
+https://deepmind.com/alpha-go.html, DeepMind’s AlphaGo page
+http://jeffbradberry.com/posts/2015/09/intro-to-monte-carlo-tree-search/, Monte Carlo Tree Search
+https://www.tensorflow.org, Deep Learning & Reinforcement Learning
+
+2.
+3.
+4.
+5.
+6.
+7. Hong Minpyo(2016), AlphaGo vs. Lee Sedol, Yisang media
+8.
+
+http://www.slideshare.net/ckmarkohchang/alphago-in-depth?ref=http://embedslide.net/slide-alphago-in-
+depth-s56e8b45858e693701f960310.html Mark Chang, AlphaGo in Depth.
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Further reading
+
+1. Deep Mind's Youtube Channel  with Commentaries about the games
+2. http://buchung.zfh.uni-osnabrueck.de/angebote/aktueller_zeitraum/_Go.html 
+
+Play Go with us! 
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+Additional: Updating Weights of the Networks
+
+Anke Dittmer, Falk Heuer
+
+Concepts and Applications of Neural Networks Week 9
+
+30.05.2016
+
+

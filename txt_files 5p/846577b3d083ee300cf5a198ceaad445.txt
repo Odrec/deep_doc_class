@@ -1,0 +1,621 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Protokoll zum Erweiterungsmodul: EM-MB1 
+
+Molekulare und Zelluläre Mikrobiologie 
+
+im WS 2015/2016 
+
+ 
+
+Experiment 5: Abhängigkeit bakteriellen Wachstums von 
+
+Kohlenstoffquellen 
+
+ Prof. Dr. rer. nat. Michael Hensel, Dipl.-Biol. 
+
+Dr. Jörg Deiwick, Dipl.-Biochem. 
+
+Dr. Nicole Hansmeier, Dipl.-Biol. 
+
+Dr. Torsten Sterzenbach, Dipl.-Biol. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Marie Nachbar, 947704 
+
+Rieke von Lübken, 955891 
+
+Juliane Kretzschmar, 955690 
+
+Gruppe A 
+Marie Nachbar, Rieke von Lübken, Juliane Kretzschmar 
+
+ 
+
+EMMB 2016 
+ 
+
+Inhaltsverzeichnis 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1.  Hintergrund, Durchführung und Ziele 
+
+2.  Material und Methoden 
+
+ 
+
+3.  Ergebnisse und Auswertung 
+
+4.  Literatur 
+
+ 
+
+ 
+
+5.  Abbildungsverzeichnis 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+     Seite 3 
+
+     Seite 3 
+
+     Seite 4 
+
+     Seite 10 
+
+     Seite 10 
+
+ 
+
+2 
+
+Gruppe A 
+Marie Nachbar, Rieke von Lübken, Juliane Kretzschmar 
+
+ 
+
+1. Hintergrund, Durchführung und Ziele: 
+
+EMMB 2016 
+ 
+
+Der  Versuch  5  behandelte  das  Wachstum  von  E.  coli  K12  unter  der 
+
+Verstoffwechselung  verschiedener  Kohlenstoffquellen.  Zu  den  aerob  verwertbaren 
+
+C-Quellen gehören Glucose, Acetat und Glycerin.  
+
+Glucose wird über die Glycolyse fermentiert, wobei die Glucose zu Pyruvat abgebaut 
+
+wird.  Es  entstehen  2  Moleküle  Pyruvat  pro  Molekül  Glucose.  Die  Produkte  der 
+
+Glycolyse können weiter in den Citrat-Cyklus abgeben werden. 
+
+Acetat kann hingegen direkt unter ATP-Verbrauch, durch den Protonen-Symport  in 
+
+den  Citrat-Cyklus  eingebracht  werden.  Es  wird  durch  Hexokinasen  phosphoryliert 
+
+und zu Acetyl-CoA umgewandelt.  
+
+ 
+
+Das  Wachstumsverhalten  der  verschiedenen  Kohlenstoffe  (Glucose  und  Acetat) 
+
+wurde  mit  Hilfe  der  Messung  der  optischen  Dichte  mittels  Photometer,  alle  30 
+
+Minuten  protokolliert.  So 
+
+ließ  sich  die  Zelldichte  berechnen  mit  der  die 
+
+Wachstumsrate und die Verdopplungszeit ermittelt werden konnte. 
+
+ 
+
+ 
+
+2. Material und Methoden: 
+
+Materialien und Methoden wurden, wie im Skript  Übungen zum Erweiterungsmodul: 
+
+EM-MB1  Molekulare  und  Zelluläre  Mikrobiologie,  Wintersemester  2015/16 
+
+aufgeführt, verwendet. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3 
+
+Gruppe A 
+Marie Nachbar, Rieke von Lübken, Juliane Kretzschmar 
+
+ 
+
+EMMB 2016 
+ 
+
+3. Ergebnisse und Auswertung: 
+
+1)  Der  Anstieg  der  OD  der  beiden  Kulturen  wird  logarithmisch  in  einem  Diagramm 
+
+gegen  die  Zeit  aufgetragen.  Aus 
+
+linear  verlaufenden  Abschnitten  der 
+
+Wachstumskurven 
+
+(d.h. 
+
+exponentielle  Wachstumsphase)  werden 
+
+die 
+
+Wachstumsraten (µ) und die Verdopplungszeiten (td) ermittelt. 
+
+10 
+
+1 
+
+0 
+
+0,1 
+
+0,01 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+Mittelwert Glucose 
+
+Mittelwert Acetat 
+
+ 
+
+Abbildung 1: Wachstumskurve C-Quellen 
+
+ 
+
+Formel und Berechnung der Wachstumsrate für Glucose:  
+
+ 
+
+                  
+
+     
+
+        h-1 
+
+ 
+
+Wachstumsrate Acetat: 
+
+                    
+
+       
+
+        h-1 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4 
+
+Gruppe A 
+Marie Nachbar, Rieke von Lübken, Juliane Kretzschmar 
+
+ 
+
+EMMB 2016 
+ 
+
+Formel und Berechnung Verdopplungszeit für Glucose:  
+
+ 
+
+        h 
+
+    
+
+     
+
+ 
+
+Verdopplungszeit Acetat: 
+
+        h 
+
+    
+
+     
+
+ 
+
+2)  Beschreiben  Sie  die  erhaltenen  Kurvenverläufe  auf  den  unterschiedlichen 
+
+Kohlenstoffquellen.  Erklären  Sie  mögliche  Unterschiede 
+
+in  den  ermittelten 
+
+Wachstumsraten mithilfe Ihrer Kenntnisse hinsichtlich Stoffwechselflüssen. 
+
+ 
+
+Das Wachstum der Bakterien unter Glucoseverbrauch ist hingegen zum Wachstum 
+
+unter  Acetatverbrauch  besser,  da  Glucose  mehr  Energie 
+
+liefert.  Beide 
+
+Wachstumsverläufe  sind  exponentiell.    Bei  Glucose  handelt  es  sich  um  einen  C6-
+
+und bei Acetat um einen C2-Körper. Die lag-Phase unter Glucoseverbrauch verläuft 
+
+nur  relativ  kurz,  von  0-0,5  Stunden,  da  Glucose  direkt  in  den  Stoffwechselkreislauf 
+
+eingespeist wird. Die lag-Phase von Acetat verläuft hingegen etwas länger, von  0-1 
+
+Stunde.  Die  log-Phase  beginnt  bei  Glucose  bei  0,5  Stunden  und  endete  bei  4 
+
+Stunden. Daraus ließ sich auch die Wachstumsrate mit Hilfe des Steigungsdreiecks 
+berechnen 0,7591 h-1. Die log-Phase von Acetat lag zwischen 1,5 und 4,5 Stunden 
+und die Wachstumsrate bei 0,431 h-1. Erwartungsgemäß ist die Wachstumsrate des 
+
+Acetats geringer ausgefallen, aufgrund der späteren Einspeisung des Acetats in den 
+
+Stoffwechselkreislauf  vom  Citrat-Zyklus.  Der  Beginn  der  stationären  Phase  setzte 
+
+bei  Glucose  ab  4  Stunden  ein,  bei Acetat  hingegen  circa  eine halbe  Stunde  später 
+
+bei  4,5  Stunden.  Die  stationäre  Phase  kennzeichnet  sich  durch  das  Gleichgewicht 
+
+der  Vermehrung  und  des  Absterbens  der  Bakterienkultur  aus,  sodass  kein 
+
+exponentielles  Wachstum  mehr  erkennbar  ist.  Der  Verlauf  des  Graphen  ist  bei 
+
+Acetat  jedoch  deutlich  flacher,  als  bei  Glucose.  Daraus  lässt  sich  schließen,  dass 
+
+ 
+
+5 
+
+Gruppe A 
+Marie Nachbar, Rieke von Lübken, Juliane Kretzschmar 
+
+ 
+
+EMMB 2016 
+ 
+
+Glucose eine bessere Energieausbeute bietet. Wie in der nachfolgenden Tabelle zu 
+
+erkennen  ist,  ist  die  Ausbeute  von  ATP,  NADH  und  FADH  bei  Acetat  deutlich 
+
+geringer.  
+
+ 
+
+Energieausbeute von Glucose und Acetat: 
+
+Glucose 
+
+4 ATP 
+
+8 NADH 
+
+2 FADH 
+
+ 
+
+ 
+
+ 
+
+Acetat 
+
+1 ATP 
+
+3 NADH 
+
+1 FADH 
+
+3)  Vergleichen  Sie  Ihre  errechneten  Wachstumsraten  mit  Literaturwerten  (Holms, 
+
+1996) und diskutieren Sie die Unterschiede. 
+
+ 
+
+Unsere Wachstumsrate von Glucose lag bei 0,759 h-1 und die von Acetat bei 0,431 
+h-1.  
+
+Holms  hingegen  erhielt  eine  Wachstumsrate  unter  Verwendung  der  Glucose  von 
+0,94  h-1  und  einen  Wert  von  0,43  h-1  bei  Acetat.    Somit  ist  erkennbar,  dass  E.  coli 
+
+K12  und  E.  coli  ML308  eine  identische  Wachstumsrate  bei  Acetat  aufweisen.  Im 
+
+Gegensatz  dazu  weisen  die  Werte  von  Glucose  leichte  Unterschiede,  mit  einer 
+Differenz  von  0,181  h-1,  auf.  Die  Standardabweichung  unserer  Glucose-
+
+Wachstumsrate  liegt  bei  0,0524  und  ist  somit  signifikant.  Das  bedeutet,  dass  die 
+
+Abweichungen  unseres  Wertes  mit  dem 
+
+von  Holms 
+
+innerhalb  des 
+
+Schwankungsbereichs liegen. 
+
+ 
+
+ 
+
+ 
+
+6 
+
+Gruppe A 
+Marie Nachbar, Rieke von Lübken, Juliane Kretzschmar 
+
+ 
+
+EMMB 2016 
+ 
+
+Abbildung 2: Wachstumsraten E. coli ML308 (Holms) 
+
+ 
+
+ 
+
+4)  Stellen  Sie  die  Proteinmuster,  der  unterschiedlichen  C-Quellen  gewachsenen  E. 
+
+coli  dar  und  beschreiben  Sie  mögliche  Unterschiede.  Erstellen  Sie  eine  Eichkurve 
+
+zur Ermittlung Molekulargewichte unbekannter Proteinbanden mithilfe der bekannten 
+
+Marker-Proteine (Plot: Log MW vs. Laufstrecke) und beschreiben Sie unterschiedlich 
+
+intensive Proteinbanden. 
+
+Abbildung 3: SDS-Gel Glycerol, Acetate, Glucose 
+
+ 
+
+7 
+
+ 
+
+ 
+
+Gruppe A 
+Marie Nachbar, Rieke von Lübken, Juliane Kretzschmar 
+
+ 
+
+EMMB 2016 
+ 
+
+ 
+
+Wir  erstellten  eine  Eichkurve  mittels  der  gemessenen  Laufweite  und  der  Trendline 
+
+von  y=-104ln(x)+224,8.  Bei  einer  Kammerweite  von  0,8  cm  erhielten  wir  eine 
+
+Proteinmasse  von  248,007  kDa,  was  auf  das  Protein  des  Markers  bei  250  kDa  zu 
+
+schließen  ist.  Des Weiteren    errechneten  wir  eine  Proteinmasse  von  125,427  kDa, 
+
+welche mit dem Marker bei 127 kDa zu vergleichen war und eine Proteinmasse von 
+
+57,478 kDa, die sich mit dem Marker bei 55 kDa vergleichen lies. 
+
+Um  eine  genaue 
+
+Identifizierung  der  Proteine  zu  erhalten,  müsste  eine 
+
+Massenspektrometrie durchgeführt werden. 
+
+ 
+
+ 
+
+ 
+
+Abbildung 4: Eichkurve und errechnete Proteinmassen 
+
+ 
+
+Das  SDS-Gel  (Abbildung  3)  zeigte  Unterschiede  im  Proteom  von  E.  coli  K12  nach 
+
+Wachstum  auf  unterschiedlichen  C-Quellen.  Insgesamt  wurden  zehn  signifikante 
+
+Unterschiede auf dem SDS-Gel festgestellt. 
+
+Beim Wachstum auf Acetat wurden Proteinbanden bei 15 kDa, 22 kDa und 250 kDa 
+
+ausgebildet, wohingegen  diese bei Glucose nicht aufzuweisen waren. Außerdem ist 
+
+zu vermerken, dass bei 27 kDa und 50 kDa deutlich mehr Proteinbanden exprimiert 
+
+wurden. Im Gegensatz dazu wurden bei Glucose Proteinbanden bei 12 kDa und 90 
+
+kDa exprimiert,  die bei Acetat nur  geringfügig, bis  gar nicht zu  identifizieren  waren. 
+
+Des Weiteren  sind  die  Proteinbaden beim  Acetat bei  60  kDa und 100  kDa  deutlich 
+
+breiter als bei Glucose.  
+
+ 
+
+8 
+
+Gruppe A 
+Marie Nachbar, Rieke von Lübken, Juliane Kretzschmar 
+
+ 
+
+EMMB 2016 
+ 
+
+Der Vergleich zwischen Glucose und Glycerol wurde von Gruppe B bearbeitet. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+9 
+
+Gruppe A 
+Marie Nachbar, Rieke von Lübken, Juliane Kretzschmar 
+
+ 
+
+EMMB 2016 
+ 
+
+4. Literatur: 
+
+Holms,  Harry:  Flux  analysis  and  control  of  the  central  metabolic  pathways  in 
+
+Escherichia coli, FEMS Mikrobiology Reviews 19 (1996), S. 85-116 
+
+Madigan,  Michael  et  al.:  Brock  Mikrobiologie,  13  Auflage,  Pearson  (2013),  S.  136-
+
+138 
+
+ 
+
+ 
+
+5. Abbildungsverzeichnis: 
+
+Abbildung 1: Wachstumskurve C-Quellen (eigene Werte) 
+
+Abbildung 2: Wachstumsraten  E.coli (Holms, 1996: Flux analysis and control of the 
+central metabolic pathways in Escherichia coli, S. 91 
+
+Abbildung 3: SDS-Gel Glycerol, Glucose, Acetate (eigene Aufnahme) 
+
+Abbildung 4: Eichkurve und errechnete Proteinmassen (eigene Werte)  
+
+ 
+
+ 
+
+10 
+
+

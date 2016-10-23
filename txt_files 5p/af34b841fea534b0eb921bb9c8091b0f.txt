@@ -1,0 +1,421 @@
+2. Sitzung, 20.10.2014: 
+
+ Deskriptive Statistik (was war das nochmal?) 
+
+ Grundbegriffe 
+
+ Datenerhebung (hier nur: Stichprobenauswahlverfahren) 
+
+ Datenniveau 
+
+ Datenaufbereitung (Verdichtung, Datenbank) 
+
+ Univariate Verteilungen (Aufbereitung, Gruppierung 
+
+von Daten) 
+
+Grundbegriffe der Statistik 
+
+ 
+ Merkmalsträger / Untersuchungseinheiten (UE) sind 
+
+Gegenstände empirischer Untersuchungen, also Objekte 
+der Grundgesamtheit, die in eine Stichprobe gelangen. 
+
+ Merkmale / Variablen sind Informationen über die 
+
+Merkmalsträger, die in einer Untersuchung von Interesse 
+sind. Da sie sich von UE zu UE unterscheiden können, 
+folglich variabel sind, werden sie auch Variablen 
+genannt. 
+
+ Merkmalsausprägungen / Werte bezeichnen die 
+
+verschiedenen Ausprägungen, die eine Variable 
+annehmen kann. 
+
+1 
+
+http://www.stadtentwicklung.berlin.de/wohnen/mietspiegel/de/download/Wo
+hnlagenkarte2013.pdf (15.10.2014) 
+
+Was heißt Messen? 
+
+ Messen ist die Zuordnung von Zahlen zu 
+
+Beobachtungen durch den Vergleich mit einer 
+Maßeinheit (Clauss et al. 2004, S. 8) 
+
+ Messen im weiteren Sinn: „Messen entspricht 
+
+der Zuordnung von Zahlen zu Beobachtungen/ 
+Objekten nach bestimmten Regeln“  
+
+(Clauss et al. 2004, S. 8) 
+
+ 
+
+ 
+
+2 
+
+Auswahl der Untersuchungseinheiten  
+(Stichprobenauswahl) 
+  Grundgesamtheit (population) ist „... die Menge aller 
+
+Elemente, über die wir durch eine Untersuchung 
+Erkenntnisse gewinnen wollen. Die – nicht immer 
+bekannte – Anzahl dieser Elemente ist N. Der Umfang 
+der Grundgesamtheit (GG) kann auch unendlich sein“ 
+(de Lange u. Wittenberg 1982: 37).  
+
+ Stichprobe (sample) bzw. Teilerhebung ist eine Aus-
+
+wahl n aus der Grundgesamtheit. „Das Stichproben-
+ergebnis informiert über die zur Stichprobe gehörenden 
+Elemente und gestattet mehr oder minder zuverlässige 
+Aussagen über die Grundgesamtheit, der die Stichprobe 
+entnommen wurde“ (Claus u. Ebner 1985: 18). 
+
+Wikipedia über „ZUFALL“: 
+
+(…) „Wenn von Zufall gesprochen wird, kann konkret 
+gemeint sein: 
+
+ Ein Ereignis geschieht objektiv ohne Ursache. 
+
+ Ein Ereignis geschieht, ohne dass eine Ursache 
+
+erkennbar wäre. 
+
+ Ein Ereignis geschieht, bei dem man zwar die 
+
+Einflussfaktoren kennt, sie aber nicht messen oder 
+steuern kann, so dass das Ergebnis nicht vorhersehbar 
+ist („empirisch-pragmatischer Zufall“(…)). 
+
+ Zwei Ereignisse stehen in keinem (bekannten) kausalen 
+
+Zusammenhang.“ (…) 
+
+Quelle: https://de.wikipedia.org/wiki/Zufall (19.10.2014) 
+
+3 
+
+Stichprobenauswahlverfahren 
+
+HIER NUR ZUFALLSGESTEUERTE AUSWAHLVERFAHREN 
+1. Einfache Zufallsstichprobe  
+
+Bei endlichen Grundgesamtheiten können Lotterie-
+verfahren angewendet werden. Dabei muss allen 
+Elementen der GG eine Zahl zwischen 1 und N 
+zugeordnet werden.  
+Die Auswahl der Elemente kann z.B. mit einer Tafel von 
+Zufallszahlen erfolgen, siehe etwa Bahrenberg et al. 
+(2010) 
+
+2. Systematische Zufallsstichprobe 
+
+Die Elemente der endlichen GG werden in eine 
+Rangordnung gebracht (Nummerierung 1 bis n). 
+Anschließend wählt man jedes N/n-te Element aus. 
+Vorsicht: die Variable, anhand der die Reihenfolge 
+festgelegt wird, muss unabhängig sein von der/den zu 
+untersuchenden Variable/n! 
+
+  
+
+ 
+
+Stichprobenauswahlverfahren 
+
+3. Geschichtete Zufallsstichprobe 
+  Die Elemente einer endlichen GG werden in Schichten 
+(Klassen) zusammengefasst. Anschließend zieht man 
+eine einfache Zufallsstichprobe aus jeder Schicht. 
+Geschichtete Stichproben setzen die Kenntnis einiger 
+Parameter der Grundgesamtheit voraus. Zur Aufteilung 
+des Stichprobenumfangs auf die einzelnen Schichten 
+wird i.d.R. die proportionale Aufteilung gewählt. 
+
+4. Klumpenstichprobe 
+  GG ist bereits in „natürliche“ Gruppen aufgeteilt. Als 
+
+Stichprobe dient eine dieser Gruppen (Klumpen), von 
+deren Verhalten auf das Verhalten anderer Gruppen 
+geschlossen wird. 
+
+4 
+
+ 
+Stichprobenauswahlverfahren: 
+Probleme von Zufallsstichproben 
+
+  Systembedingt: Verzerrungen  
+
+z.B. durch niedrige Rücklaufquoten 
+oder hohe Verweigerungsquoten 
+
+ 
+ Befragerbedingt: Ansprechen von 
+
+Personen mit „geringem Ablehnungs-
+risiko“ oder „besonderer Affinität“ 
+
+Stichprobenverzerrungen 
+
+ Besser selbst thematisieren, nicht 
+
+kommentarlos den Leserinnen überlassen! 
+
+ Sind eigentlich unvermeidlich, etwa durch 
+
+Ausfälle 
+
+ Können auch durch Gewichtungsverfahren 
+
+nicht neutralisiert werden 
+
+(Mengering, Fred ³2011: Probleme der Hypothesenprüfung mittels Signifikanztests. In:  Akremi, 
+Leila et al., Datenanalyse mit SPSS für Fortgeschrittene 1. 3. Aufl., Wiesbaden: VS, Springer S, 
+276-298; hier S. 295-6) 
+
+5 
+
+Größe von Stichproben 
+
+ Gesetz der großen Zahl  
+
+(die Eigenschaften der SP nähern sich mit 
+wachsendem SP-Umfang den Eigenschaften der 
+GG an) 
+
+ Mindestgröße im allgemeinen 30,  
+
+ABER:  
+je mehr die Werte streuen, desto größer die SP! 
+
+Größe von Stichproben 
+
+ Ivo Moßig 2012: Stichproben, 
+
+Stichprobenauswahlverfahren und 
+Berechnung des minimal erforderlichen 
+Stichprobenumfangs. =´Beiträge zur 
+Wirtschaftsgeographie und 
+Regionalentwicklung; 1-2012. Bremen 
+
+ Demnach: durchaus berechenbar, der 
+
+minimale Stichprobemumfang! 
+
+6 
+
+Repräsentativität von SP 
+
+ Eine SP, deren Eigenschaften sich auf die 
+
+GG übertragen lassen, nennt man 
+repräsentativ  
+
+ Schwierig! 
+
+ Für die Repräsentativität einer SP ist nicht 
+
+der relative Anteil an der GG bedeutsam, 
+sondern ihre absolute Größe 
+
+ 
+
+Stichproben … 
+
+ Wie beschreiben? 
+
+ Wie auswerten? 
+
+ 
+
+ Dazu benötigt man ein methodisches 
+
+Instrumentarium. 
+
+ … auch deskriptive Statistik genannt! 
+
+ 
+
+7 
+
+Variablen oder Merkmale 
+
+ qualitative  
+ Zuordnung von 
+
+ quantitative 
+ Zuordnung von 
+
+Werten anhand von 
+Regeln 
+
+Werten mittels einer 
+Messskala 
+
+ Beispiele: 
+
+ Beispiele: 
+
+Geschlecht, Wohnort, 
+Familienstand 
+
+Schulnoten, 
+Einwohnerzahl, 
+Temperatur in °C 
+
+Variablen oder Merkmale 
+
+ Werden immer mit 
+
+großen Buchstaben 
+bezeichnet  
+
+ 
+
+ 
+
+ z.B. 
+
+Wahlentscheidung =X 
+
+ Merkmalsausprägungen/
+Werte werden hingegen 
+mit kleinen Buchstaben 
+gekennzeichnet, z.B.: 
+ 
+
+ xi = 1 meint, Bürger klein 
+i hat die Partei 1 gewählt  
+
+ 
+
+ 
+
+ 
+
+8 
+
+Variablen oder Merkmale 
+
+ Skript S. 5, Tab. 3 
+
+ Diskutieren Sie bitte in Kleingruppen, 
+
+welche spezifischen Qualitäten die 
+Variablen in diesem Fragebogen haben 
+
+ Fallen Ihnen weitere Kategorien auf als 
+
+‚qualitativ‘ versus ‚quantitativ‘? 
+
+ Z.B.: wo macht es Sinn, 
+
+Durchschnittswerte zu berechnen? 
+
+9 
+
+Auszug aus einem Fragebogen 1. Sind Sie der Eigentümer dieses Betriebes? (1) ja (2) Familienangehöriger (3) Geschäftsleiter   (4) Angestellter  (wn)(kA) 2. Vor wie vielen Jahren haben Sie dieses Geschäft (diesen Betrieb) hier eröffnet?        vor ____ Jahren    (wn)(kA) 3. Wie beurteilen Sie den Standort Ihres Betriebes hier im Hinblick auf ... die Anzahl der Laufkundschaft    (1) sehr gut (2) gut (3) mittel  (4) schlecht (5) sehr schlecht die Anzahl an Kunden i. d. Nähe   (1) sehr gut (2) gut (3) mittel  (4) schlecht (5) sehr schlecht die Anzahl an Parkmöglichkeiten   (1) sehr gut (2) gut (3) mittel  (4) schlecht (5) sehr schlecht 4. Wie hoch ist derzeit in etwa ihre Miete pro Quadratmeter Verkaufsfläche? DM ____ /qm Verkaufsfläche   oder insgesamt DM ______ 5. Wie hoch lag - ungefähr - der Umsatz Ihres Betriebes im Jahre 1998? (1) unter 25.000 DM    (2) 25.000 - 50.000 DM     (3) 50.000 - 100.000 DM  (4) 100.000 - 250.000 DM   (5) 250.000 - 500.000 DM  (6) über 500.000 DM    Nominalskala 
+
+ Alle Ausprägungen sind ‚gleichwertig‘, also 
+
+ohne Rangordnung 
+
+ Binär oder dichotom, wenn nur 2 
+
+Ausprägungen möglich 
+
+Nominalskala 
+
+ Alle Ausprägungen sind ‚gleichwertig‘, also 
+
+ohne Rangordnung 
+
+ Binär oder dichotom, wenn nur 2 
+
+Ausprägungen möglich 
+
+ Auch kategoriale Daten genannt: 
+
+Ausprägung xi gehört entweder in diese 
+oder in jene Kategorie 
+
+10 
+
+Ordinalskala 
+
+ Ausprägungen lassen sich in Rangfolge 
+
+bringen, z.B. größer/kleiner 
+
+ Abstand zwischen zwei Rangplätzen ohne 
+
+definierte Maßeinheit – deshalb können 
+keine sinnvollen Differenzen gebildet 
+werden 
+
+ Informativer als Nominalskala 
+
+ 
+
+Intervallskala 
+
+ Ausprägungen unterliegen (wieder) 
+
+Rangfolge, z.B. größer/kleiner 
+
+ Abstand zwischen zwei beliebigen 
+
+Ausprägungen kann bestimmt werden  
+
+ Nullpunkt nicht absolut, z.B. nach 
+
+Übereinkunft gesetzt (Bsp.: °C)  
+
+ Informativer als Nominal- und Ordinalskala 
+
+ Division und Multiplikation: nicht möglich 
+
+ 
+
+11 
+
+Rationalskala  
+(auch: Verhältnis- oder Absolutskala) 
+
+ Besitzt absoluten Nullpunkt, also: das 
+Vielfache eines Variablenwertes kann 
+auch inhaltlich als Vielfaches interpretiert 
+werden. 
+
+ Division und Multiplikation also möglich 
+
+ Aussagen zur Art der Verschiedenheit, zur 
+
+Größe der Verschiedenheit und zum 
+Verhältnis zwischen 2 Objekten möglich 
+
+ 
+
+Metrische Skala 
+
+ Sammelbegriff für Rational- und 
+
+Intervallskala 
+
+ SPSS differenziert nicht zwischen diesen 
+
+beiden 
+
+ 
+
+12 
+
+

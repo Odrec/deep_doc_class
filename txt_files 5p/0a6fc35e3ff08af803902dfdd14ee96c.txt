@@ -1,0 +1,886 @@
+Cytoplasmic ATP Hydrolysis Powers Transport of
+Lipopolysaccharide Across the Periplasm in 
+Suguru Okuda
+Science
+DOI: 10.1126/science.1228984
+
+, 1214 (2012);
+
+ et al.
+
+338
+
+ 
+
+E. coli
+
+This copy is for your personal, non-commercial use only.
+ 
+
+If you wish to distribute this article to others
+colleagues, clients, or customers by 
+
+clicking here.
+ 
+
+, you can order high-quality copies for your
+
+Permission to republish or repurpose articles or portions of articles
+following the guidelines 
+
+here.
+
+ 
+
+ can be obtained by
+
+The following resources related to this article are available online at
+www.sciencemag.org (this information is current as of
+ 
+
+October 28, 2014
+
+ ): 
+
+Updated information and services, 
+version of this article at: 
+http://www.sciencemag.org/content/338/6111/1214.full.html
+ 
+
+including high-resolution figures, can be found in the online
+
+Supporting Online Material 
+http://www.sciencemag.org/content/suppl/2012/11/07/science.1228984.DC1.html 
+
+can be found at: 
+
+This article 
+http://www.sciencemag.org/content/338/6111/1214.full.html#ref-list-1
+ 
+
+, 14 of which can be accessed free:
+
+cites 27 articles
+
+10 articles hosted by HighWire Press; see:
+This article has been 
+http://www.sciencemag.org/content/338/6111/1214.full.html#related-urls
+ 
+
+cited by 
+
+This article appears in the following 
+Microbiology
+http://www.sciencemag.org/cgi/collection/microbio
+ 
+
+subject collections:
+
+4
+4
+4
+4
+4
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+2
+2
+2
+2
+2
+
+ 
+ 
+ 
+ 
+ 
+,
+,
+,
+,
+,
+
+8
+8
+8
+8
+8
+2
+2
+2
+2
+2
+
+ 
+ 
+ 
+ 
+ 
+r
+r
+r
+r
+r
+e
+e
+e
+e
+e
+b
+b
+b
+b
+b
+o
+o
+o
+o
+o
+
+ 
+ 
+ 
+ 
+ 
+
+.
+.
+.
+.
+.
+
+ 
+ 
+ 
+ 
+ 
+
+t
+t
+t
+t
+t
+c
+c
+c
+c
+c
+O
+O
+O
+O
+O
+n
+n
+n
+n
+n
+o
+o
+o
+o
+o
+g
+g
+g
+g
+g
+r
+r
+r
+r
+r
+o
+o
+o
+o
+o
+g
+g
+g
+g
+g
+a
+a
+a
+a
+a
+m
+m
+m
+m
+m
+e
+e
+e
+e
+e
+c
+c
+c
+c
+c
+n
+n
+n
+n
+n
+e
+e
+e
+e
+e
+c
+c
+c
+c
+c
+s
+s
+s
+s
+s
+.
+.
+.
+.
+.
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+m
+m
+m
+m
+m
+o
+o
+o
+o
+o
+r
+r
+r
+r
+r
+f
+f
+f
+f
+f
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+i
+i
+i
+i
+i
+
+d
+d
+d
+d
+d
+e
+e
+e
+e
+e
+d
+d
+d
+d
+d
+a
+a
+a
+a
+a
+o
+o
+o
+o
+o
+n
+n
+n
+n
+n
+w
+w
+w
+w
+w
+o
+o
+o
+o
+o
+D
+D
+D
+D
+D
+
+l
+l
+l
+l
+l
+
+(print ISSN 0036-8075; online ISSN 1095-9203) is published weekly, except the last week in December, by the
+Copyright
+
+Science 
+American Association for the Advancement of Science, 1200 New York Avenue NW, Washington, DC 20005. 
+2012 by the American Association for the Advancement of Science; all rights reserved. The title 
+ is a
+registered trademark of AAAS. 
+
+Science
+
+(cid:160)
+(cid:160)
+REPORTS
+
+Cytoplasmic ATP Hydrolysis Powers
+Transport of Lipopolysaccharide
+Across the Periplasm in E. coli
+
+Suguru Okuda,1 Elizaveta Freinkman,1 Daniel Kahne1,2*
+
+Millions of molecules of lipopolysaccharide (LPS) must be assembled on the Escherichia coli
+cell surface each time the cell divides. The biogenesis of LPS requires seven essential
+lipopolysaccharide transport (Lpt) proteins to move LPS from the inner membrane through the
+periplasm to the cell surface. However, no intermediate transport states have been observed.
+We developed methods to observe intermediate LPS molecules bound to Lpt proteins in the process
+of being transported in vivo. Movement of individual LPS molecules along these binding sites
+required multiple rounds of adenosine triphosphate (ATP) hydrolysis in vitro, which suggests
+that ATP is used to push a continuous stream of LPS through a transenvelope bridge in discrete
+steps against a concentration gradient.
+
+The outer membrane of Gram-negative bacte-
+
+ria is an asymmetric bilayer, with the inner
+leaflet composed of phospholipids and
+the outer leaflet composed of lipopolysaccharide
+(LPS). The LPS layer allows Gram-negative
+bacteria to survive in harsh environments and
+in the presence of many antibiotics. However,
+phospholipids and LPS do not spontaneously
+assemble into an asymmetric bilayer, and the
+cell devotes substantial resources to synthesiz-
+ing LPS at the inner membrane and assembling
+it in the outer membrane (1). The process by
+which hydrophobic LPS molecules are trans-
+ported across two membranes and the intervening
+aqueous periplasmic space is not understood,
+but it is known to be mediated by seven essen-
+tial Lpt (lipopolysaccharide transport) proteins.
+The heteromeric ATP-binding cassette (ABC)
+transporter LptBFG forms a complex in the in-
+ner membrane with a membrane-bound protein,
+LptC (Fig. 1A) (2–5). Using homologous do-
+mains, the C terminus of LptC interacts with the
+N terminus of LptA, and the C terminus of LptA
+interacts with the N-terminal periplasmic domain
+of LptD (6–9). The resulting head-to-tail oligomer
+produced creates a transenvelope protein bridge
+that connects the inner-membrane Lpt compo-
+nents with the outer-membrane LPS translocon
+(LptD and LptE) (6, 10–15). Defects in any of
+the Lpt proteins cause LPS to accumulate in
+the outer leaflet of the inner membrane (2, 16).
+However, the mechanism of LPS transport has
+been difficult to study because it involves two
+membranes and seemingly cannot be broken
+into different steps.
+
+To elucidate the mechanism of LPS trans-
+port, we first sought to identify sites where
+
+1Department of Chemistry and Chemical Biology, Harvard
+University, Cambridge, MA 02138, USA. 2Department of Bi-
+ological Chemistry and Molecular Pharmacology, Harvard Med-
+ical School, Boston, MA 02115, USA.
+*To whom correspondence should be addressed. E-mail:
+kahne@chemistry.harvard.edu
+
+LPS interacts with the Lpt proteins in vivo. We
+incorporated an unnatural amino acid contain-
+ing a photo–cross-linker ( p-benzoylphenylalanine,
+pBPA) at 23 positions in LptC and 14 positions
+in LptA (17–20). Four of the LptC mutants and
+five of the LptA mutants formed cross-links
+to LPS in an ultraviolet light (UV)–dependent
+manner (Fig. 1, B and C). LptC adducts con-
+tained the cross-linker at positions 47, 78,
+172, and 182 (Fig. 1B), whereas LptA adducts
+contained the cross-linker at positions 32, 36,
+95, 114, and 116 (Fig. 1C). Except for residue
+47 in LptC, all of these LPS adducts formed
+on the inside of the b-jellyroll structures.
+Residue 47 in LptC is in a disordered region
+of the protein (9), which may become ordered
+when it interacts with the LptBFG complex or
+LPS. No cross-links from side chains on the
+outer surface of the b jellyroll of LptC or LptA
+were observed. Thus, we propose that LPS spe-
+cifically binds inside these proteins and transits
+the periplasm on the inside of the b jellyroll of
+these proteins.
+
+To determine whether LptC or LptA alone
+can extract LPS from the inner membrane or
+whether cross-linking to LPS is dependent on
+the entire transenvelope complex, we manipu-
+lated the expression levels of the Lpt compo-
+nents. We overexpressed LptC or LptA alone
+or in combination with the other inner-membrane
+Lpt proteins (i.e., LptBFG or LptBFGC), rea-
+soning that LptC and LptA would mostly not
+reside in Lpt complexes if they were overex-
+pressed individually. Cross-linking of LPS to
+LptC at position 47, but not at positions 78, 172,
+or 182, increased substantially when LptBFG
+was co-overexpressed (Fig. 2A). Thus, when
+LptA, LptD, and LptE are limiting, LPS accu-
+mulates near residue 47 of LptC. Position 47
+may be located near a strong binding site for
+LPS, whereas the other cross-linking positions
+may reflect more transient interactions that oc-
+cur during the movement of LPS through fully
+assembled bridges. Because LPS accumula-
+
+tion at the binding site around residue 47 de-
+pends on LptBFG, it is also clear that LptC
+cannot extract LPS directly from the inner mem-
+brane unaided.
+
+All five LptA mutants showed increased
+cross-linking with LPS when they were co-
+overexpressed with LptBFGC (Fig. 2B). Thus,
+LptA cannot receive LPS directly from the in-
+ner membrane, but requires LptBFGC complex.
+LPS must migrate out of the inner membrane in
+an ordered process that requires LptBFG to get
+to LptC and LptBFGC to get to LptA. Because
+LPS transport between these proteins can occur
+in incomplete Lpt bridges, it was possible to
+develop a biochemical system to separate the
+individual step of LPS release from the mem-
+brane from that of the transport step along the
+Lpt bridge.
+
+To study the ATP dependence of LPS ex-
+traction from the inner membrane, we first pre-
+pared spheroplasts containing overexpressed
+LptC(T47pBPA) and LptBFG by disrupting the
+outer membrane and cell wall with ethylene-
+diaminetetraacetic acid (EDTA) and lysozyme.
+The inner membrane was then permeabilized by
+osmotic shock to introduce buffer with or with-
+out ATP into the cytoplasm to generate right-
+side-out (RSO) membrane vesicles (21–25). These
+vesicles were then irradiated with UV light.
+Substantial LPS cross-linking to residue 47 of
+LptC was only observed when LptBFG was co-
+overexpressed and ATP was present (Fig. 3A).
+A small amount of LPS was cross-linked to
+LptC in the absence of ATP, but this amount did
+not increase over time (Fig. 3A). Presumably this
+small amount of LPS was present before gen-
+erating the RSO fraction. Because cross-linking
+increased as a function of time in the presence
+of ATP, transfer of LPS from the inner mem-
+brane to the membrane-bound LptC appears to
+require energy.
+
+We next addressed whether LPS could be
+transferred to the periplasmic component, LptA,
+in this in vitro system. This reconstitution re-
+quires release of LPS from a membrane fraction
+to a soluble periplasmic protein (fig. S1). Puri-
+fied LptA(I36pBPA), which cross-linked LPS
+in vivo, was added to RSO vesicles and analyzed
+for cross-linking to LPS. LPS cross-linked to
+LptA over time only in the presence of ATP and
+when all four inner-membrane components were
+overexpressed (Fig. 3B). Notably, LPS did not
+cross-link to LptA in the absence of LptC over-
+expression; this finding indicates that LPS must
+first be transferred to LptC before being trans-
+ferred to LptA, which is consistent with previous
+work (9).
+
+To confirm that the soluble periplasmic bridge
+component assembled in this in vitro system re-
+flects the in vivo assembly process, we tested
+the specificity of this cross-linking. An LptA mu-
+tant, LptA(H37pBPA), interacts directly with
+LptC (6) but not with LPS in vivo (Fig. 1C).
+Residues Ile36 and His37 are both located on the
+edge of the b jellyroll that interacts with LptC,
+
+1214
+
+30 NOVEMBER 2012 VOL 338 SCIENCE www.sciencemag.org
+
+but their side chains are oriented in opposite di-
+rections (Fig. 3C). In this RSO vesicle reconsti-
+tution, the His37 mutant cross-linked to LptC (Fig.
+3D). However, although His37 is directly adjacent
+to Ile36, His37 did not cross-link to LPS in the
+presence of ATP (Fig. 3B). Thus, our in vitro
+reconstitution cleanly recapitulates the specific
+protein-protein and the protein-substrate inter-
+actions observed in vivo. Because the binding of
+LptA to LptC was rapid and did not depend on
+time or the presence of ATP (Fig. 3D), energy
+appears not to be required for assembly of the
+
+bridge, but is required to transport LPS from the
+inner membrane to LptA.
+
+A small amount of LPS accumulated in LptC
+in the absence of ATP (Fig. 3A) but did not spon-
+taneously move to LptA (Fig. 3B). We thus asked
+whether LPS transfer from LptC to LptA requires
+a separate energetic step. We incubated RSO vesi-
+cles overexpressing LptBFG-LptC(T47pBPA)
+with ATP to accumulate LPS in LptC, and then
+added purified LptA(I36pBPA) with or without
+an adenosine triphosphatase (ATPase) inhibi-
+tor, vanadate, before irradiating the samples.
+
+LPS did not cross-link to LptA in the inhibitor-
+treated samples, which shows that LPS transfer
+from LptC to LptA required energy (Fig. 4A). In
+the absence of vanadate, LptC–cross-linked adducts
+with LPS were not decreased even when LPS trans-
+ferred to LptA, which suggests that the binding
+sites for LPS in the periplasmic bridge are always
+filled with LPS during its transport. Thus, at least
+two energy-dependent steps are involved in LPS
+transport: one during extraction from the membrane
+to the periplasmic domain of the membrane-
+bound LptC, and another during transfer of LPS
+
+REPORTS
+
+Fig. 1. LPS forms cross-links to the inner surface of LptC and LptA in vivo. (A) Cartoon of
+LPS transport in E. coli. An ABC transporter, MsbA, flips LPS across the inner membrane,
+and seven Lpt proteins transport it to the cell surface. OM, outer membrane; IM, inner
+membrane; PL, phospholipid; ADP + Pi, adenosine diphosphate + inorganic phosphate.
+(B) Specific amino acid positions in LptC cross-linked to LPS. In His-tagged LptC, eight
+residues on the inner surface, 11 residues on the outer surface, and four residues in the
+disordered region (shown as a dashed line) were mutated to incorporate pBPA. Four
+positions (red), three on the inner surface and one in the disordered region, cross-linked to
+LPS upon UV irradiation. Cross-linking adducts (LPS × LptC) were detected by nickel
+affinity chromatography followed by immunoblotting with antibodies to LPS (WT, wild
+type). Non–cross-linked LPS was also detected. Single-letter amino acid abbreviations: A,
+Ala; D, Asp; E, Glu; F, Phe; G, Gly; H, His; I, Ile; K, Lys; L, Leu; N, Asn; P, Pro; Q, Gln; S, Ser; T,
+Thr; V, Val; Y, Tyr. (C) Specific amino acid positions in LptA cross-linked to LPS. As in (B), six
+and eight positions on the inner and outer surfaces, respectively, of the b jellyroll were
+mutated to pBPA and evaluated after UV irradiation by immunoblotting. Five specific
+positions (red) on the inner surface of LptA cross-linked to LPS.
+
+www.sciencemag.org SCIENCE VOL 338
+
+30 NOVEMBER 2012
+
+1215
+
+REPORTS
+
+from LptC to LptA. These steps may occur syn-
+chronously. We propose a model for LPS trans-
+port in which ATP hydrolysis in the cytoplasm
+provides energy to push LPS molecules in dis-
+crete steps across the bridge (Fig. 4B).
+
+The mechanism of LPS transport is some-
+what similar to that of efflux pumps, which also
+form transenvelope bridges and use energy to
+drive a small molecule through a continuous chan-
+nel to the exterior environment (26–28). The model
+
+Fig. 2. LPS cross-linking in LptA and LptC depends
+on the inner-membrane components of the Lpt ma-
+chine. (A) LPS accumulates near residue Thr47 of
+LptC in LptBFGC complexes. LptC mutants that cross-
+link to LPS were overexpressed with or without co-
+overexpression of LptBFG. Cross-linking was detected
+similarly to Fig. 1B with antibodies to LPS and LptC.
+Cross-linking at position 47 substantially increases
+when LptBFG is co-overexpressed. (B) LPS accumu-
+lates at several positions of LptA in a LptBFGC-
+dependent manner. In a method analogous to that in
+(A), LptA mutants that cross-link to LPS were overex-
+pressed with or without co-overexpression of LptBFGC.
+Cross-linking at all five positions increases when
+LptBFGC is co-overexpressed.
+
+for efflux pumps suggests that only one energy-
+dependent step drives one toxic molecule out
+of the cell. This requirement reflects the fact the
+noxious molecules are released from the internal
+three-dimensional reservoir into the channel of
+the pump, which is continuous with the infinite
+exterior environment; diffusion can efficiently
+carry the molecule away. Movement of LPS
+from the inner membrane to the outer membrane
+across the periplasm proceeds through a series of
+energy-dependent steps as sequential molecules
+are pushed in a continuous stream through the
+bridge. The problem of LPS transport is differ-
+ent from drug efflux in that LPS must move from
+a two-dimensional reservoir at the inner mem-
+brane to another two-dimensional reservoir at
+the cell surface in opposition to the concentra-
+tion gradient. Multiple rounds of ATP hydrolysis
+are required to increase the efficiency of unidirec-
+tional transport. If transport across the periplasmic
+bridge requires that multiple binding sites on Lpt
+proteins be filled with LPS during transport, it may
+be possible to design inhibitors that destroy the
+pumping mechanism by introducing air in the line.
+
+Fig. 3. LPS transport can be reconstituted
+in vitro. (A) LPS accumulates in LptC in mem-
+brane vesicles over time in an LptBFG- and
+ATP-dependent manner. RSO membrane ves-
+icles containing overexpressed LptC(T47pBPA)
+with or without co-overexpression of LptBFG
+were prepared in the presence or absence of
+ATP. After incubation at 30°C for the times
+indicated, the vesicles were UV-irradiated. Cross-
+linking was detected as in Fig. 1B with anti-
+bodies to LPS and LptC. (B) LPS is released to
+LptA in an LptBFGC-, time-, and ATP-dependent manner. RSO membrane vesicles were prepared from wild-type cells or cells overexpressing LptC, LptBFG, or
+LptBFGC with or without added ATP. Purified LptA(I36pBPA) or LptA(H37pBPA) was added to these vesicles, incubated at 30°C for the times indicated, and then
+UV-irradiated. (C) Model of the stacked crystal structures of LptC (green) and LptA (purple). Residues Ile36 and His37 in LptA, which interact with LPS and LptC,
+respectively, are depicted as stick structures. (D) Periplasmic bridge components properly assemble in vitro. Purified LptA(I36pBPA) or LptA(H37pBPA) was added
+to LptC- or LptBFGC-enriched RSO membrane vesicles. Samples were incubated at 30°C for the times indicated, and then UV-irradiated. LptA(H37pBPA) cross-
+linked to LptC in an ATP-, time-, and LptBFG-independent manner.
+
+1216
+
+30 NOVEMBER 2012 VOL 338 SCIENCE www.sciencemag.org
+
+Fig. 4. LPS is pushed in a continuous stream
+through the Lpt bridge. (A) Inhibition of ATP hy-
+drolysis inhibits transfer of LPS from LptC to LptA.
+RSO membrane vesicles overexpressing LptBFG-LptC
+(T47pBPA) were incubated at 30°C for 30 min in the
+presence of ATP to accumulate LPS in LptC. Purified
+LptA(I36pBPA) was then added with or without van-
+adate, and the samples were incubated for an ad-
+ditional 60 min. Cross-linking was detected as in Fig.
+1B with antibodies to LPS, LptC, and LptA. (B) Model
+of LPS biogenesis. LptBFG extracts LPS from the inner
+membrane and transports it to LptC using ATP hy-
+drolysis energy. ATP hydrolysis is used again to push
+LPS from LptC to LptA.
+
+6. E. Freinkman, S. Okuda, N. Ruiz, D. Kahne, Biochemistry
+
+51, 4800 (2012).
+
+7. P. Sperandeo et al., J. Bacteriol. 193, 1042 (2011).
+8. M. D. Suits, P. Sperandeo, G. Dehò, A. Polissi, Z. Jia,
+
+J. Mol. Biol. 380, 476 (2008).
+
+9. A. X. Tran, C. Dong, C. Whitfield, J. Biol. Chem. 285,
+
+REPORTS
+
+11. S. S. Chng, L. S. Gronenberg, D. Kahne, Biochemistry
+
+49, 4565 (2010).
+
+12. S. S. Chng, N. Ruiz, G. Chimalakonda, T. J. Silhavy,
+
+D. Kahne, Proc. Natl. Acad. Sci. U.S.A. 107, 5363 (2010).
+13. E. Freinkman, S. S. Chng, D. Kahne, Proc. Natl. Acad. Sci.
+
+U.S.A. 108, 2486 (2011).
+
+14. T. Wu et al., Proc. Natl. Acad. Sci. U.S.A. 103, 11754
+
+(2006).
+
+15. M. P. Bos, B. Tefsen, J. Geurtsen, J. Tommassen, Proc.
+
+Natl. Acad. Sci. U.S.A. 101, 9417 (2004).
+
+16. P. Sperandeo et al., J. Bacteriol. 190, 4460 (2008).
+17. L. Wang, A. Brock, B. Herberich, P. G. Schultz, Science
+
+292, 498 (2001).
+
+18. J. W. Chin, A. B. Martin, D. S. King, L. Wang, P. G. Schultz,
+
+Proc. Natl. Acad. Sci. U.S.A. 99, 11020 (2002).
+
+19. Y. Ryu, P. G. Schultz, Nat. Methods 3, 263 (2006).
+20. C. C. Liu, P. G. Schultz, Annu. Rev. Biochem. 79,
+
+413 (2010).
+
+21. H. R. Kaback, Methods Enzymol. 22, 99 (1971).
+22. H. R. Kaback, E. R. Stadtman, Proc. Natl. Acad. Sci.
+
+U.S.A. 55, 920 (1966).
+
+23. Y. J. Kim, T. Rajapandi, D. Oliver, Cell 78, 845 (1994).
+24. T. Yakushi, N. Yokota, S. Matsuyama, H. Tokuda, J. Biol.
+
+Chem. 273, 32576 (1998).
+
+25. See supplementary materials on Science Online.
+26. S. Murakami, R. Nakashima, E. Yamashita, T. Matsumoto,
+
+A. Yamaguchi, Nature 443, 173 (2006).
+
+27. H. Nikaido, Annu. Rev. Biochem. 78, 119 (2009).
+28. M. A. Seeger et al., Science 313, 1295 (2006).
+
+Acknowledgments: The plasmid pSup-BpaRS-6TRN was a gift
+from P. G. Schultz (Scripps Research Institute). We thank
+C. Hagan for valuable discussion. Supported by NIH grants
+AI081059 and GM066174 (D.K.) and a Fannie and John Hertz
+Foundation graduate fellowship (E.F.).
+
+Supplementary Materials
+www.sciencemag.org/cgi/content/full/science.1228984/DC1
+Materials and Methods
+Fig. S1
+Tables S1 and S2
+
+33529 (2010).
+
+10. M. Braun, T. J. Silhavy, Mol. Microbiol. 45, 1289
+
+(2002).
+
+17 August 2012; accepted 25 October 2012
+Published online 8 November 2012;
+10.1126/science.1228984
+
+References and Notes
+
+1. C. R. Raetz, C. Whitfield, Annu. Rev. Biochem. 71, 635
+
+(2002).
+
+2. N. Ruiz, L. S. Gronenberg, D. Kahne, T. J. Silhavy, Proc.
+
+Natl. Acad. Sci. U.S.A. 105, 5537 (2008).
+
+3. P. Sperandeo et al., J. Bacteriol. 189, 244 (2007).
+4. N. Ruiz, D. Kahne, T. J. Silhavy, Nat. Rev. Microbiol.
+
+7, 677 (2009).
+
+5. S. Narita, H. Tokuda, FEBS Lett. 583, 2160 (2009).
+
+Direct Observation of Stalled Fork
+Restart via Fork Regression in
+the T4 Replication System
+
+Maria Manosas,1,2,5* Senthil K. Perumal,4* Vincent Croquette,2,3† Stephen J. Benkovic4†
+
+The restart of a stalled replication fork is a major challenge for DNA replication. Depending on the
+nature of the damage, different repair processes might be triggered; one is template switching,
+which is a bypass of a leading-strand lesion via fork regression. Using magnetic tweezers to study
+the T4 bacteriophage enzymes, we have reproduced in vitro the complete process of template
+switching. We show that the UvsW DNA helicase in cooperation with the T4 holoenzyme can
+overcome leading-strand lesion damage by a pseudostochastic process, periodically forming and
+migrating a four-way Holliday junction. The initiation of the repair process requires partial
+replisome disassembly via the departure of the replicative helicase. The results support the role
+of fork regression pathways in DNA repair.
+
+DNA damage causes a replication fork to
+
+stall or collapse and is responsible for
+illegitimate recombination and cellular
+dysfunction (1, 2). Although damage in the lag-
+ging strand is less likely to block fork progres-
+sion, damage in the leading strand is a particular
+
+challenge because of the continuous nature of
+the leading-strand synthesis. The fork regression
+pathway is one means to overcome leading-strand
+lesions, as generally described in terms of four
+steps (fig. S1): (i) replisome disassembly; (ii)
+stalled fork regression to form a Holliday junction
+
+(HJ) structure (also called a chicken-foot struc-
+ture); (iii) either lesion excision repair or template
+switching (3, 4), which is polymerase extension
+of the 3′ end of the leading strand, now annealed
+to an intact template, downstream of the lesion
+(referred here as lesion bypass); and (iv) restora-
+tion of the fork and reloading of the replisome
+(2). However, the details of such a pathway and
+the biological role of regressed forks in vivo are
+poorly understood (2, 5).
+
+The bacteriophage T4 lacks translesion poly-
+merases and, unlike Escherichia coli, cannot re-
+initiate synthesis by repriming the leading strand
+(6, 7). Hence, the T4 phage may exclusively use
+
+1Departament de Física Fonamental, Facultat de Física, Uni-
+versitat de Barcelona, Diagonal 647, 08028 Barcelona, Spain.
+2Laboratoire de Physique Statistique, Ecole Normale Supérieure,
+UPMC Université Paris 06, Université Paris Diderot, CNRS, 24
+rue Lhomond, 75005 Paris, France. 3Département de Biologie,
+Ecole Normale Supérieure, 46 rue d’Ulm, 75005 Paris, France.
+4Department of Chemistry, The Pennsylvania State University,
+University Park, PA 16802, USA. 5CIBER-BBN de Bioingenieria,
+Biomateriales y Nanomedicina, Instituto de Sanidad Carlos III,
+Madrid, Spain.
+*These authors contributed equally to this work.
+†To whom correspondence should be addressed. E-mail:
+vincent.croquette@lps.ens.fr (V.C.); sjb1@psu.edu (S.J.B.)
+
+www.sciencemag.org SCIENCE VOL 338
+
+30 NOVEMBER 2012
+
+1217
+
+

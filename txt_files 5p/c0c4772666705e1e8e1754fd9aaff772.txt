@@ -1,0 +1,2016 @@
+Ecole Normale Supérieur de Lyon
+Département des Sciences de la Matière
+
+Master de Chimie
+
+Année 2010-2011
+
+ENCADREMENT
+Paul Fleurat-Lessard
+Émeline Barbet-Massin
+
+Travaux Pratiques de Chimie Orbitalaire
+
+Ces TP sont en fait plutôt des TD assistés par Ordinateur. Ainsi, il est préférable d’avoir relu les cours et 
+les TD avant de venir, ainsi que ce polycopié. Vous pouvez même venir avec votre cours et vos TD.
+
+Le but de ces TP est double : au cours des deux premiers postes, vous allez utiliser MOPAC2009 (à 
+l'aide de l'interface Gabedit)  pour revoir des choses vues en cours et en TD, mais d’une autre façon. En 
+particulier, nous ajouterons du ‘quantitatif’ dans plusieurs domaines.
+
+La   troisième   séance   aborde   des   ‘mini-problèmes’   que   vous   devrez   résoudre   en   utilisant   vos 
+connaissances de cours, mais aussi l’outil de calcul MOPAC2009 pour obtenir des résultats quantitatifs.
+
+Rotation :
+Vous aurez trois séances de TP chacun. Pas de binômes pour ces TP (sauf si affinités…). 
+Chacun évolue à son rythme, tout le monde fait les TP dans le même ordre, donc pas de rotation 
+nécessaire. Consultez l’emploi du temps affiché sur votre tableau pour connaître les jours de passage.
+
+Une version PDF couleur est disponible sur le site PR@TIC (formation.ens-lyon.fr).
+
+POSTES DE TP :
+Table des matières
+Premiers pas avec … .................................................................................................................................2
+I-l'ordinateur Linux..................................................................................................................................2
+II-MOPAC2009.......................................................................................................................................3
+III-Gabedit ...............................................................................................................................................3
+Poste 1..........................................................................................................................................................5
+I-Les molécules dans l'espace..................................................................................................................5
+II-Orbitales Moléculaires de petites Molécules.......................................................................................7
+III-Diagrammes de Walsh .......................................................................................................................9
+IV-Bonus : sortie de Ccl4 du cryptophane.............................................................................................11
+Poste 2........................................................................................................................................................13
+I-Substitutions Nucléophiles..................................................................................................................13
+II-Réactions électrocycliques.................................................................................................................16
+III-Cycloadditions : réaction de Diels-Alder.........................................................................................19
+Poste 3........................................................................................................................................................22
+I-A faire plutôt seul................................................................................................................................22
+II-Réactions électrocycliques.................................................................................................................23
+III-A faire plutôt en petit groupe............................................................................................................24
+
+Premiers pas avec … 
+
+I-L'ORDINATEUR LINUX
+
+1 – Obtenir Gabedit et MOPAC2009
+  Ces   deux   programmes   sont   gratuits.   Vous   pouvez   obtenir   gabedit   sur   le   site   : 
+http://sites.google.com/site/allouchear/Home/gabedit. Pour plus de facilité, nous avons déjà regroupé 
+ces   fichiers   sur   les   ordinateurs   en   libre   service   dans  /soft/enseignants/Paul.Fleurat-
+Lessard/TPChimieOrb. Pour y avoir accès, il faut suivre les instructions suivantes, à n'effectuer que 
+lors du  premier  TP. Créez tout d'abord un répertoire de travail pour ces TP. Par la suite, nous 
+supposerons   qu'il   s'appelle   TPChimieOrb.   Ouvrez   un   terminal   et   tapez     (chaque   ligne   est   une 
+commande différente, que vous devez valider par 'Entrée') :
+mkdir TPChimieOrb
+cd TPChimieOrb
+source /soft/enseignants/Paul.Fleurat-Lessard/TPChimieOrb/TP.sh
+
+Vous avez normalement accès à MOPAC2009, Gabedit et aux utilitaires que nous utiliserons dans ces 
+TP.
+2 -  Lancement de Gabedit
+Il suffit de taper : 
+Gabedit & 
+dans un terminal.
+II-MOPAC2009
+C'est un programme de calcul semi-empirique, disponible gratuitement pour les académiques, sous 
+Linux, Windows et Mac OS X : http://openmopac.net/MOPAC2009.html.
+Le manuel est un peu caché :  http://openmopac.net/manual/index.html, la page la plus intéressante 
+étant celles de mot clés (KeyWords).
+
+III-GABEDIT 
+La première fois que vous lancez 
+Gabedit,   vous   devrez   répondre   à 
+plusieurs   questions.   Les   seules 
+choses   à   changer   concernent 
+MOPAC   dans
+fenêtre 
+'Commands/Network',   pour   lequel 
+il faudra rentrer le bon chemin pour 
+son exécution.
+
+la  
+
+ 
+
+Comme   indiqué   sur   la   figure   ci-
+contre, il faut taper « mopac », puis 
+valider  avec « Entrée », puis faire 
+« Continue »
+
+2
+
+Voici un récapitulatif des icônes disponibles dans Gabedit, je vous renvoie à l’aide disponible dans le 
+logiciel pour une meilleure prise en main.
+
+s
+s
+e
+m
+a
+G
+
+ 
+t
+u
+p
+n
+i
+ 
+
+n
+u
+
+ 
+r
+e
+é
+r
+
+C
+
+s
+a
+c
+l
+o
+M
+
+ 
+t
+u
+p
+n
+i
+ 
+
+n
+u
+
+ 
+r
+e
+é
+r
+
+C
+
+o
+r
+p
+l
+o
+M
+
+ 
+t
+u
+p
+n
+i
+ 
+
+n
+u
+
+ 
+r
+e
+é
+r
+
+C
+
+n
+a
+i
+s
+s
+u
+a
+G
+
+ 
+t
+u
+p
+n
+i
+ 
+
+n
+u
+
+ 
+r
+e
+é
+r
+
+C
+
+a
+c
+r
+O
+
+ 
+t
+u
+p
+n
+i
+ 
+
+n
+u
+
+ 
+r
+e
+é
+r
+
+C
+
+C
+Q
+P
+M
+
+ 
+t
+u
+p
+n
+i
+ 
+
+n
+u
+
+ 
+r
+e
+é
+r
+
+C
+
+m
+e
+h
+C
+Q
+
+ 
+t
+u
+p
+n
+i
+ 
+
+n
+u
+
+ 
+r
+e
+é
+r
+
+C
+
+s
+s
+e
+m
+a
+G
+C
+P
+
+ 
+t
+u
+p
+n
+i
+ 
+
+n
+u
+
+ 
+r
+e
+é
+r
+
+C
+
+9
+0
+C
+A
+P
+O
+M
+
+ 
+t
+u
+p
+n
+
+i
+ 
+
+n
+u
+ 
+r
+e
+é
+r
+C
+
+r
+e
+m
+
+i
+r
+p
+m
+
+I
+
+ 
+r
+e
+p
+u
+o
+C
+
+ 
+r
+e
+i
+p
+o
+C
+
+r
+e
+l
+l
+o
+C
+
+r
+e
+h
+c
+r
+e
+h
+C
+
+r
+e
+i
+h
+c
+i
+f
+ 
+
+n
+u
+
+ 
+e
+r
+u
+l
+c
+n
+I
+
+r
+e
+i
+h
+c
+i
+f
+ 
+
+n
+u
+
+ 
+r
+i
+r
+v
+u
+O
+
+r
+e
+r
+t
+s
+i
+g
+e
+r
+n
+E
+
+s
+u
+o
+s
+ 
+r
+e
+r
+t
+s
+i
+g
+e
+r
+n
+E
+
+r
+e
+t
+t
+i
+u
+Q
+
+.
+.
+.
+s
+o
+p
+o
+r
+p
+A
+
+ 
+
+r
+e
+n
+n
+o
+i
+t
+c
+e
+l
+é
+s
+ 
+t
+u
+o
+T
+
+o
+i
+t
+i
+n
+i
+ 
+
+b
+a
+ 
+l
+u
+c
+l
+a
+c
+ 
+
+n
+u
+
+ 
+r
+e
+c
+n
+a
+L
+
+e
+l
+u
+c
+é
+l
+o
+m
+ 
+e
+n
+u
+
+ 
+r
+e
+n
+i
+s
+s
+e
+D
+
+.
+l
+a
+ 
+t
+e
+ 
+
+M
+O
+ 
+s
+e
+l
+ 
+r
+e
+s
+i
+l
+a
+u
+s
+i
+V
+
+s
+é
+t
+i
+n
+u
+d
+
+'
+
+ 
+
+n
+o
+i
+s
+r
+e
+v
+n
+o
+c
+ 
+e
+d
+
+ 
+e
+r
+i
+a
+t
+i
+l
+i
+t
+
+U
+
+ 
+Dans ces TP nous utiliserons exclusivement le logiciel MOPAC2009, gratuit pour les académiques. 
+Les logiciels en italiques sont aussi gratuits et vous pouvez les installer pour les tester si vous le 
+souhaitez.
+
+Pour lancer un calcul avec Gabedit, il faut d'abord créer une nouvelle géométrie, en la dessinant à 
+l'aide de l'icône « Draw » (
+). Quand on clique sur cet icône, une fenêtre intitulée 'Gabedit: Draw 
+Geometry' s'ouvre, qui contient le menu suivant sur la gauche :
+
+Translation
+Rotation
+Rotation autour de z
+Zoom
+
+Ajouter/Modifier un atome ou une liaison
+
+Choix de l'atome à insérer
+
+Ajouter les H automatiquement (Ajuster les H)
+
+Insérer un fragment
+Sélectionner des atomes. Par défaut, sélectionne la molécule. Laisser le bouton gauche de la souris appuyé pour 
+définir une fenêtre et sélectionner un groupe d'atome arbitraire. On peut sélectionner plusieurs groupe avec pressant 
+Shift.
+Supprimer la sélection
+
+Déplacer la sélection
+
+Faire tourner la sélection
+
+Faire tourner la sélection autour de z
+
+Recalculer les liaisons pendant un déplacement
+
+TP Chimie Orbitalaire – M1
+
+3
+
+Mode Mesure: affiche une fenêtre supplémentaire indiquant les valeurs des distances, angles et angle 
+dièdres.
+Dessin en bâtons (Stick)
+Dessin boule et bâtons (Ball&Stick)
+Voir/Cacher la fenêtre des mesures. Notez l'option 'Move Group'  présente en bas à droite qui permet de  
+déterminer ce qui bouge lorsque l'on modifier une valeur. 
+
+Et surtout, comme indiqué en bas de la fenêtre, le 'clic droit' est votre menu : nous y reviendrons au 
+cours de ces TP.
+Pour regarder les OM, il faut utiliser le mode 'Visualisation de la densité, des OM et des vibrations', 
+accessible soit par l'icone 
+, soit lorsque l'on regarde le fichier de sortie d'un calcul en cliquant sur 
+'Dens. Orb.'. On fait alors apparaître une fenêtre 'Orbitals/Density/Vibration' qui contient un menu 
+similaire au menu 'Dessin':
+
+Translation
+Rotation
+Rotation autour de x
+Rotation autour de y
+Rotation autour de z
+Zoom
+Vue en perspective ou projection orthographique
+Caméra optimale
+Représentation fil de fer
+Représentation bâtons
+Représentation Ball&Stick
+
+4
+
+Poste 1
+
+GÉOMÉTRIE ET OM 
+
+I-LES MOLÉCULES DANS L'ESPACE
+Ce premier exercice utilise des molécules vues lors du TD 1 de Chimie Organique II, pour vous 
+permettre de prendre les outils de construction de Gabedit en main, et (re)voir que nos dessins de 
+chimistes traduisent parfois mal l'arrangement spatial réel des molécules concernées, tant d'un point de 
+vue structure qu'encombrement stérique.
+
+Ouvrez une fenêtre "Draw Geometry" en cliquant sur  
+
+. Dans cette fenêtre, utiliser l'outil 
+  pour construire  une  des molécules suivantes. Pour gagner du 
+insertion/modification d'atomes  
+temps, vérifier que le bouton "Ajout d'Hydrogène"  
+  est enfoncé. Si vous avez commencé sans 
+l'activer, vous pouvez ajouter les hydrogènes après coup en faisant un clic droit pour faire apparaître le 
+menu et sélectionner Add  → Add Hydrogens. Pour déplacer un seul atome, il suffit d'utiliser l'icône 
+. Cliquez ensuite sur l'atome et déplacez-le en gardant le bouton de gauche enfoncé. Si vous 
+souhaitez déplacer un groupe d'atomes, il faut auparavant les sélectionner avec l'icone 
+. Si vous 
+souhaitez sélectionner toute une molécule, un clic gauche sur un atome de la molécule suffit. Si vous 
+souhaitez sélectionner une partie d'une molécule ou plusieurs molécules, il faut faire un clic gauche à 
+côté des atomes à sélectionner et dessiner un cadre de sélection en maintenant le bouton de gauche 
+enfoncé. Vous pouvez sélectionner tous les atomes par clic-droit → Selection → Select all atoms.
+
+Pour la molécule  C, vous pouvez utiliser l'ajout de fragment :  
+
+. Ceci ouvre une fenêtre 
+
+contenant une (longue !) liste de fragments que vous pouvez utiliser comme brique de base.
+
+Lorsque la molécule est construite, clic-droit →   Molecular Mechanics → Optimization, pour 
+
+réaliser une optimisation de géométrie afin d'obtenir une géométrie affinée. 
+
+Les structures représentées correspondent-elles à celles obtenues à l'aide de Gabedit en 3D ?
+
+A
+
+B
+
+C
+
+Pour obtenir une vision de l'encombrement de ces molécules, on peut utiliser le mode 'SpaceFill' 
+qui est un peu caché dans cette version de Gabedit. Pour cela, sauvez la géométrie au format XYZ : 
+clic-droit → Save As → XYZ File. Choisissez un nom différent pour chaque molécule. Ensuite, 
+fermer la fenêtre « Draw » et ouvrez la fenêtre « Densité, OM,... » avec  
+. Charger votre fichier 
+XYZ avec clic-droit → Geometry → Read a geometry from XYZ File. Passez en mode 'SpaceFill' : 
+clic-droit → Render → Geometry → Space Fill. Conclusion ? 
+
+Remarque technique : il se peut que l'affichage 'Space Fill' ne soit pas très beau, ou qu'on aie 
+parfois l'impression que la molécule est 'plane'. Pour corriger cela, il faut fermer la fenêtre « Draw ». 
+Dans la fenêtre principale de Gabedit, ouvrez le menu 'Settings → Preference. Sélectionner le dernier 
+onglet 'Others', et dé-selectionner l'option RGBA. Au passage, vous pouvez augmenter les valeurs de 
+« number of Subdivisions for a Cylinder » et « … for a Sphere » :
+
+TP Chimie Orbitalaire – M1
+
+5
+
+Fermez la fenêtre en cliquant sur « Save&Apply&Close », puis quittez Gabedit, et relancez-le.
+
+II-ORBITALES MOLÉCULAIRES DE PETITES MOLÉCULES
+
+On se propose dans cette partie d’étudier de façon plus quantitative qu’en TD l’évolution de 
+
+l’énergie et de la forme des Orbitales Moléculaires (OM) pour de petites molécules.
+II.1. Molécules de type AH2
+Dans la fenêtre “Draw”, construisez la molécule d’eau H2O en utilisant l'outil d'insertion d'atomes 
+. Fermez la fenêtre et créez un nouvel input Mopac (
+structure Search'. Garder le niveau de calcul (onglet 'Hamiltonian') à PM6, et 'Solvent' à 'Nothing'.
+Fermer la fenêtre, vous obtenez alors l'input suivant :
+
+). Modifier le 'Job Type' en 'Equilibrium 
+
+Fichier
+* =============================== 
+* Input file for Mopac 
+* =============================== 
+PM6 XYZ CHARGE=0 Singlet  BONDS AUX 
+
+Mopac file generated by Gabedit 
+O  ­0.171705  1 ­0.417987  1 ­0.173378  1 
+H  ­0.248893  1 ­1.393241  1 ­0.831378  1 
+H   0.900243  1 ­0.355560  1  0.313522  1
+
+Signification
+Commentaire
+Commentaire
+Commentaire
+1e ligne de Mots-clés 
+2e   ligne   de   Mots-clés  
+nécessaire)
+Titre
+Coordonnées du 1er atome
+Coordonnées du 2e atome
+Coordonnées du 3e atome
+Ligne vide de fin de données
+
+  (si 
+
+Les commentaires sont ignorés par MOPAC, mais permettent de se souvenir de ce que l'on fait. Une 
+ligne de commentaire commence toujours par '*'.
+Les mots-clés sont donnés dans les deux premières lignes qui ne sont pas des commentaires. On 
+trouve ici :
+
+– PM6 : ceci indique le niveau de calcul. C'est un niveau semi-empirique, on aurait pu aussi 
+choisir AM1, RM1, PM3 ou PM6-DH2. Vous pouvez vous amuser à le changer pour voir les 
+différences... ou pas ;
+
+– XYZ : on indique à MOPAC que l'on va travailler en coordonnées cartésiennes. Ce sont les 
+
+coordonnées les plus simples pour commencer ;
+– CHARGE = 0 : La charge du système est nulle ;
+– SINGLET : C'est la multiplicité de spin, soit 2S+1. On a ici un système à couche fermée, de 
+
+spin nul, c'est à dire un singulet ;
+
+6
+
+– BONDS : on demande à MOPAC de nous indiquer la valeur de certaines distances dans le 
+
+– AUX : on demande à MOPAC de donner plus de détails sur l'évolution du calcul dans un 
+
+système ;
+
+fichier auxiliaire
+
+ Sauver ce fichier sous un nom plus pertinent que “NoName”, par exemple H2O.  Lancer le calcul soit 
+par le menu 'Run' soit par l'icône 
+Une fois le calcul terminé (il est quasi immédiat), vous pouvez ouvrir l'onglet 'H2O.out'. Vous avez 
+alors accès au fichier de sortie du calcul MOPAC. Voici des extraits de ce fichier (qui fait quand 
+même 209 lignes), les informations importantes sont en gras :
+
+. 
+
+ ******************************************************************************* 
+ ** Site#: 4100            For non­commercial use only        Version 10.288L ** 
+ ******************************************************************************* 
+ ** Cite this work as: MOPAC2009, James J. P. Stewart, Stewart Computational  ** 
+ ** Chemistry, Version 10.288L web: HTTP://OpenMOPAC.net  Days remaining: 354 ** 
+ ******************************************************************************* 
+ **                                                                           ** 
+ **                                MOPAC2009                                  ** 
+ **                                                                           ** 
+ ******************************************************************************* 
+
+                            PM6 CALCULATION RESULTS 
+
+ ******************************************************************************* 
+ *  CALCULATION DONE:                                Tue Oct 26 17:06:09 2010  * 
+ *  PM6      ­ The PM6 Hamiltonian to be used 
+ *  SINGLET  ­ SPIN STATE DEFINED AS A SINGLET 
+ [...]
+ *  BONDS    ­ FINAL BOND­ORDER MATRIX TO BE PRINTED 
+ ******************************************************************************* 
+PM6 XYZ    CHARGE=0 Singlet  GNORM=0.01  BONDS AUX 
+
+[...]
+
+Un récaptitulatif de la licence et de la 
+version de MOPAC utilisée
+
+On fait un calcul PM6
+
+Récapitulatif des mots clés de l'input.
+ [...]
+
+Copie de l'input
+[…]
+
+ General Reference for PM6: 
+  "Optimization   of   Parameters   for   Semiempirical   Methods   V:   Modification   of   NDDO 
+Approximations 
+  and   Application   to   70   Elements",   J.   J.   P.   Stewart,   J.   Mol.   Mod.,   13,   1173­1213 
+(2007) 
+        
+[…]
+
+ CYCLE:     1 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:   178.095 HEAT:­28.26738 
+ […]
+ CYCLE:    20 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.010 HEAT:­54.30636 
+
+suivie   des   détails   sur   les   paramètres 
+utilisés...
+[…]
+
+ Les pas de l'optimisation de géométries 
+[...]
+
+[...]
+
+          FINAL HEAT OF FORMATION =        ­54.30636 KCAL/MOL =    ­227.21780 KJ/MOL 
+
+          TOTAL ENERGY            =       ­319.07752 EV 
+          ELECTRONIC ENERGY       =       ­458.40543 EV  POINT GROUP:     C2v 
+          CORE­CORE REPULSION     =        139.32791 EV 
+ […]
+
+   ATOM   CHEMICAL          X               Y               Z 
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS) 
+ 
+     1       O         ­0.14242029  *  ­0.44487192  *  ­0.17842286  * 
+    [...]
+
+                  EIGENVALUES  
+ ­30.40527 ­18.98842 ­14.10920 ­11.90620   4.06797   6.04097 
+
+              NET ATOMIC CHARGES AND DIPOLE CONTRIBUTIONS 
+
+ L'énergie finale
+et   sa   décomposition   en   énergie 
+électronique et nucléaire.
+[...]
+Les coordonnées cartésiennes finales
+
+[...]
+
+Les énergies des orbitales
+
+L'analyse des OM en terme de charges 
+partielles , dipole, …
+
+  ATOM NO.   TYPE          CHARGE      No. of ELECS.   s­Pop       p­Pop       
+    1          O          ­0.618789        6.6188     1.75977     4.85902 
+ [...]
+          ATOMIC ORBITAL ELECTRON POPULATIONS 
+
+   1.75977   1.51127   1.59490   1.75286   0.69061   0.69060 
+
+puis population atomique 
+
+et les indices de liaison
+
+       […]
+                    BOND ORDERS AND VALENCIES 
+
+                  O  1       H  2       H  3 
+ ­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­ 
+     O    1   1.808254 
+     H    2   0.904131   0.904279 
+     H    3   0.904123   0.000148   0.904271 
+
+TOTAL CPU TIME:             0.01 SECONDS 
+
+ == MOPAC DONE == 
+
+Temps de calcul : 0,01s, rapide !
+Tout s'est bien passé.
+
+TP Chimie Orbitalaire – M1
+
+7
+
+ﬁ
+ﬁ
+ﬁ
+ Sur la droite de la fenêtre, vous avez aussi cinq options :
+
+Update : qui relit le fichier .out, utile pour les calculs longs (cf Cryptophane !) ;
+Go to end : qui permet d'aller directement à la fin du fichier ;
+Update/end : relit le fichier et va à la fin. Très utile pour les calculs longs ;
+Geom. Conv. : qui permet de voir évoluer les géométries lors de l'optimisation, ainsi que de 
+voir les énergies  à chaque étape ;
+Dens. Orb. : qui permet d'afficher la densité électronique, les OM et les vibrations.
+
+Avant d’étudier les OM, mesurez l’angle HOH : ouvrez la fenêtre “Geom. Conv.”.   Une fenêtre 
+affiche alors l'évolution de l'énergie électronique de la molécule au cours de l'optimisation. Cliquer sur 
+“Draw” pour afficher aussi les géométries. Par défaut, Gabedit montre la dernière géométrie, c'est à 
+dire la géométrie optimisée. Si vous voulez voir l'évolution de la géométrie au cours de l'optimisation, 
+cliquer sur un point de la courbe dans la fenêtre « Geometry Convergence …'  :
+
+ → 
+
+Dans la fenêtre 'Geometry Convergence from file', on peut se déplacer avec les touches n pour next, p 
+pour précédent, f pour first et l pour last. Ainsi, pour aller à la dernière géométrie, presser la touche l 
+suffit.
+ Mesurer la valeur de l'angle HOH grâce à l'outil mesure.  Vous pouvez suivre l'évolution de cet angle 
+au cours de l'optimisation. Notez la valeur obtenue en fin d'optimisation.
+Pour visualiser les OM, cliquer sur 'Dens. Orb.'. La fenêtre 'Orbitals/Density/Vibration' s'ouvre (on 
+aurait bien sûr pu l'avoir par  
+). Lire les OM par clic-droit → Orbitals → Read geometry and 
+orbitals   from  a MOPAC  aux file.   Une fois  le  fichier  ouvert (normalement,  Gabedit sélectionne 
+directement H2O.aux). La fenêtre de sélection des OM apparaît. Si ce n'est pas le cas, faites clic-droit 
+→ Orbitals → Selection.
+Si vous double-cliquez sur un numéro d'OM, Gabedit la calcule et l'affiche. Si l'OM paraît coupée par 
+endroit, c'est que la grille utilisée pour calculer l'OM est un peu trop petite, il faut alors la modifier en 
+ajoutant typiquement 1 ou 2  à la valeur proposée :
+
+→ 
+
+Comme indiqué sur ces figures, il suffit de changer une seule valeur.
+
+Si vous trouvez que la valeur de l'isovaleur proposée n'est pas optimale, vous pouvez la changer soit 
+dès le départ dans la boite de dialogue, soit après coup par clic-droit → 
+Surfaces → reset isovalue.
+Les OM obtenues sont-elles conformes à vos attentes ? Quel est le lien entre 
+les   OM   que   vous   dessinez   en   TD   et   celles   que   vous   donne   Gabedit ? 
+Considérez   par   exemple   la   troisième   orbitale   représentée   ci-dessous. 
+Comment la représentez-vous en TD ?
+
+ Figure 1: OM3 de H2O
+
+8
+
+-
+-
+-
+-
+-
+Si vous souhaitez regarder plusieurs OM, par défaut Gabedit les superpose toutes. Il faut donc les 
+effacer régulièrement : clic-droit → Surfaces → Delete All.
+On s’intéresse maintenant plus particulièrement à l’évolution de l’énergie et de la forme de l’orbitale 
+OM3 lorsque l’on modifie l’atome central. Construisez les OM des molécules BH2, CH2, et NH2. Que 
+constatez-vous ? Cela vous paraît-il en accord avec vos prédictions à l’aide d’interactions à trois 
+orbitales ?
+Conseil : de façon à comparer les formes plus facilement, on peut gagner à sauver le dessin des OM 
+dans un ficher. Si vous souhaitez comparer une seule orbitale : clic-droit → Screen Capture → Png 
+Format. On pourra choisir ou pas "Transparent background'. Vous pouvez ensuite afficher toutes les 
+OM obtenues avec Gimp par exemple, ou en les important dans Open Office. 
+Si vous souhaitez comparer plusieurs orbitales, utilisez l'option clic-droit → Orbitals → Slideshow qui 
+va générer puis afficher le dessin de toutes les orbitales sélectionnées:
+
+Pour terminer cette section, on considère maintenant les molécules H2S et SiH2. Comment évolue la 
+formes des OM lorsque l’on passe du carbène CH2 au silène SiH2 ? On comparera surtout les OM 
+provenant de l’interaction à trois orbitales. Même question pour H2S et H2O.
+III-DIAGRAMMES DE WALSH 
+On termine ce premier TP par la construction explicite des diagrammes de Walsh pour les molécules 
+de type AH2 et AH3.
+
+III.1. Molécules AH2 
+Le tracé d’un diagramme de Walsh avec Gabedit est un peu subtil (pour cette version au moins), car 
+rien n’est prévu pour extraire les énergies des orbitales lors de la variation d’un paramètre. Ainsi, il va 
+falloir faire ces diagrammes en deux temps.
+Pour dire à MOPAC que l'on veut calculer l'énergie et les OM en faisant varier l'angle HOH, il faut 
+faire plusieurs calculs en faisant varier cet angle, on appelle cela un 'scan' (balayage). Sauf qu'a priori, 
+MOPAC ne sait pas que l'on veut faire varier un angle, par défaut, les atomes sont définis par leurs 
+coordonnées cartésiennes :
+O  -0.638431  1 1.052549  1 0.000000  1 
+H  -1.545817  1 1.295337  1 -0.712564  1 
+H  -0.177768  1 0.007183  1 -0.291617  1
+
+Une autre représentation souvent utilisée en chimie consiste à définir les atomes les uns par rapport 
+aux autres. On place un premier atome au centre du repère, le deuxième est placé à une distance d1 du 
+premier,  le long de l'axe x, le troisième à une distance d2 du premier, en faisant un angle a 1 (dit angle 
+de valence) avec le 2e atome défini le plan xOy. L'axe z est alors défini de façon unique pour que le 
+trièdre (x,y,z) soit direct. Pour les atomes suivants (i.e. à partir du 4e atome), on va définir l'atome 
+numéro i à l'aide de sa distance à un atome précédent numéroté j, de l'angle entre les atomes i,j et 
+l'atome k. Enfin, il faut ensuite caractériser le plan ijk par rapport aux atomes précédents. Ceci est fait 
+en définissant un angle dièdre avec un quatrième atome numéroté l : l'angle dièdre ijkl est en fait 
+l'angle orienté entre les deux plans formés par les  atomes (i,j,k) et (j,k,l). Ces distances, angles de 
+valences et des angles dièdres sont appelées coordonnées internes. La représentation d'une molécule à 
+l'aide de ces coordonnées s'appelle une Z-Matrice, souvent abrégée Z-MAT.
+Voici un exemple pour être plus clair (au format MOPAC2009) :
+O  0.0  0 0.0    0 0.0 0 0 0 0 
+H  0.95 1 0.0    0 0.0 0 1 0 0 
+H  0.95 1 180.0  1 0.0 0 1 2 0 
+
+TP Chimie Orbitalaire – M1
+
+9
+
+La première colonne définit le type de l'atome (O ou H ici), les colonnes 2, 4 et 6 correspondent 
+respectivement aux valeurs des distances, angles et angles dièdres. Les indices des atomes concernés 
+sont : l'indice de l'atome en cours, et les trois numéros en fin de ligne (colonnes 8,9 et 10).
+Les colonnes 3, 5 et 7 (ici des 1 et des 0) indiquent à MOPAC2009 si la variable est fixe (on a alors un 
+0) ou libre (on à alors un 1). Une autre valeur possible est -1 qui indique que cette variable doit être 
+modifiée au cours d'un chemin, comme vous le ferez dans quelques minutes !
+
+ Pour obtenir les coordonnées Z-Mat, construisez une molécule d’eau H2O linéaire. Puis, clic-droit → 
+Edit → Open XYZ or GZMAT. Dans la fenêtre « Geometry Editor » qui s'est ouverte : clic-droit → 
+To Zmat (ça commence à venir, non ?).  Vous obtenez alors la fenêtre suivante (ou quelque chose qui 
+y ressemble) :
+
+Ceci indique que le « centre » de la molécule est l'oxygène, ce qui semble logique. Ensuite, un atome 
+d'hydrogène est lié à cet oxygène ce qui est indiqué par le 1 dans la colonne NR (entouré de rouge 
+dans la figure ci-dessus). Enfin, le deuxième atome d'hydrogène est défini par rapport à l'oxygène et 
+au premier hydrogène... sauf qu'ici, il est indiqué comme lié au premier hydrogène, ce qui n'est pas 
+très logique : si c'est aussi le cas pour vous, il faut indiquer à Gabedit que le deuxième hydrogène est 
+lui aussi lié à l'oxygène. Pour cela, avec la souris, cliquer sur le 2 de la colonne NR pour ce deuxième 
+atome, et entrer '1'. Gabedit se plaint car du coup, il a l'impression que vous souhaitez définir cet 
+atome comme lié à l'oxygène 1, et faisant un angle avec le même oxygène 1 (car il y a encore un 1 
+dans la colonne NA). Il corrige de lui-même en indiquant que l'angle est en fait l'angle HOH.
+Vérifier au passage que l'angle indiqué est bien de 180° car on veut une molécule linéaire. Si ce n'est 
+pas le cas, modifier la valeur à la main. Vous devez avoir :
+
+Fermez   cette   fenêtre   et   la   fenêtre   “Draw”.   Créer   un   nouvel   input   Mopac,   en   précisant   Job 
+Type=”Reaction path”. Le bas de la fenêtre devient actif :
+
+10
+
+Dans la fenêtre First, en cliquant sur la flèche de menu (
+), sélectionnez 'Angle'. Vous devez alors 
+avoir   et mettez le nombre de points à 9 avec un pas de -10. Ceci correspond donc à faire varier l'angle 
+HOH de 180° (linéaire) à 90° par pas de 10° :
+
+ → 
+
+ Sauver ce fichier sous un nom pertinent tel que H2O_scan.mop. Il doit ressembler à:
+* =============================== 
+* Input file for Mopac 
+* =============================== 
+PM6 1SCF STEP=-5 POINT=10    CHARGE=0 Singlet  BONDS AUX 
+Mopac file generated by Gabedit 
+O  0.0 0 0.0 0 0.0 0 0.0 0 0 
+H  0.950118  1 0.0 0 0.0 0 1 0 0 
+H  0.950119  1 180.  -1 0.0 0 1 2 0
+Remarquez le -1 à côté du 180. qui indique que cet angle va varier en partant de 180°, puis va faire 
+10 pas (POINT=10) de -5° (STEP=-5).
+
+Avant de lancer le calcul, nous allons demander à MOPAC d'afficher plus de détails sur le calcul. 
+Tout d'abord, il faut supprimer le mot clé '1SCF' qui indique à MOPAC de ne pas optimiser les liaison 
+OH   lorsque   l'angle   HOH   évolue.   Ensuite,   rajouter   les   mots   clés   'GNORM=0.1   EIGS'   dont   la 
+signification est :
+
+GNORM=0.1 : l'optimisation de géométrie s'arrêtera lorsque les forces seront inférieures à 0.1 
+
+kcal/mol, et non 1 kcal/mol qui est le défaut.
+
+afficher en fonction de l'angle dièdre.
+
+EIGS : les énergies des OM sont affichées à chaque itération. On va se servir de cela pour les 
+
+TP Chimie Orbitalaire – M1
+
+11
+
+-
+-
+Une fois que le calcul est terminé, il faut analyser le fichier de sortie et en faire un diagramme de 
+Walsh. Ceci peut être réalisé par l'utilitaire que l'on vous fournit qui s'appelle : Mop2Walsh.sh. Pour 
+l'utiliser, dans le terminal, il faut vous placer dans le répertoire contenant le fichier H2O_scan.out, et 
+taper :
+Mop2Walsh.sh H2O_scan
+Comment ce diagramme se compare-t-il à celui vu en cours ?
+
+Dans la première partie de ce TP, vous avez calculé les OM de plusieurs molécules AH2. Vous aviez 
+aussi obtenu les géométries. Pouvez-vous rationaliser les géométries obtenues précédemment à l’aide 
+de ce diagramme de Walsh ?
+
+III.2. Molécule HOOH
+
+On considère maintenant le peroxyde d'hydrogène HOOH. Notre but est de regarder l'évolution de la 
+forme et de l'énergie des OM lorsque l'on passe de la forme cis à la forme trans. Cette analyse nous 
+permettra de justifier la géométrie d'équilibre coudée de cette molécule.
+
+1) On calcule d'abord l'énergie des formes planes cis, trans et coudées de HOOH. Pour cela, il faut 
+dire   à   MOPAC   d'optimiser   tous   les   paramètres   sauf   l'angle   dièdre   HOOH.   Procéder   comme 
+précédemment : 1) Dans une nouvelle fenêtre 'Draw',  construisez la molécule HOOH. Ensuite, ouvrez 
+l'éditeur XYZ. Vérifier que les atomes sont dans l'ordre H, O, O H. Si ce n'est pas le cas, vous pouvez 
+modifier l'ordre des atomes, en changeant leur numéro dans dans la première colonne : 
+
+Passer en mode Zmat (clic-droit → To Zmat using connections). Vérifier que la définition du dernier 
+hydrogène est correcte, c'est à dire qu'elle permet de bloquer la molécule dans une géométrie plane : 
+pour cela, cet hydrogène doit être connecté à l'oxygène proche de lui, faire un angle avec l'oxygène le 
+plus éloigné et un angle dièdre avec le deuxième hydrogène :
+
+Faire un 'All=>'. Sélectionner l'angle dièdre dans la fenêtre de droite (intitulée Variables Editor) et 
+faire 'clic-droit → <=One' pour obliger MOPAC à laisser cet angle fixe. Mettre sa valeur à 0° pour la 
+forme cis, 180° pour la forme trans ou 90° pour la forme coudée.
+Fermer les fenêtres et créer un nouvel input avec Job Type="Equilibrium structure Search".  Ce fichier 
+doit ressembler à :
+* =============================== 
+* Input file for Mopac 
+* =============================== 
+
+ 
+
+12
+
+PM6 XYZ    CHARGE=0 Singlet  BONDS AUX 
+Mopac file generated by Gabedit 
+Mopac file generated by Gabedit 
+H  0.0 0 0.0 0 0.0 0 0.0 0 0 
+O  1.004958  1 0.0 0 0.0 0 1 0 0 
+O  1.415241  1 101.838746  1 0.0 0 2 1 0 
+H  1.004958  1 101.828840  1 0.0  0 3 2 1 
+ 
+Notez le 0 à côté du 0.0, indiquant que cet angle dièdre doit rester fixe pendant l'optimisation.
+Lancer MOPAC pour les trois formes. Comparer les énergies : quelle est la géométrie la plus stable ? 
+Visualiser les OM pour comprendre l'origine de cette stabilité.
+
+Vous pouvez recommencer ces calculs en utilisant différentes approches semi-empirique : PM6 (la 
+méthode utilisée pour l'instant), AM1 ou RM1 par exemple. Pour changer de méthode, vous pouvez 
+directement modifier les fichiers d'input, ou re-créer des nouveaux inputs et modifier la valeur de 
+Hamiltonian.
+
+2)   En   partant   de   la   forme   cis,   créer   un   nouvel   input   avec   Job   Type="Reaction   Path",   et 
+First="Dihedral", Nb Point=72, Pas=5. Vérifier que l'angle dièdre correspond bien à 4[H4-O3-O2-
+H1]. Sauver l'input sous un nom pertinent (HOOH_scan). Enlever le mot clé "1SCF" et rajouter 
+"GNORM=0.1 EIGS". Lancer le calcul, puis analyser le avec Mop2Walsh.sh comme précédemment.
+Conclusions ?
+IV-BONUS : LE CRYPTOPHANE
+IV.1. Énergie de complexation
+
+On s'intéresse maintenant aux cryptophanes, dont un représentant est donné ci-dessous :
+
+Il est conseillé de repasser en mode Stick ou Ball&Stick pour la construction et de n'utiliser le mode 
+SpaceFill que pour la visualisation finale.
+Construisez cette molécule dans Gabedit. On pourra le faire 'brique par brique' et utiliser la haute 
+symétrie de la molécule pour 'copier/coller' les briques. Pour ce faire, cliquer sur 'Sélection d'atomes' (
+), sélectionner les atomes/molécules que vous souhaitez dupliquer. Ensuite, clic-droit → Edit → 
+Copy&Paste of selected atoms. A partir de maintenant, un clic gauche de la souris sur la fenêtre 
+« Draw » collera les atomes sélectionnés précédemment. 
+Vous pouvez utiliser l'outil 'Measure' associé à la fenêtre de mesure pour ajuster à la main certains 
+paramètres. Attention, c'est le dernier atome sélectionné qui bouge, et non le premier ! Cette option 
+est particulièrement utile pour faire tourner un bout de molécule, par exemple un groupe méthoxy.
+Une autre option pour déplacer ou ré-orienter une molécule ou un bout de molécule est d'utiliser l'outil 
+'Sélection d'atomes' ( 
+) et 'déplacement d'atomes' 
+
+) puis les outils de 'rotation de fragments' (
+
+ et 
+
+TP Chimie Orbitalaire – M1
+
+13
+
+). On peut gagner à faire 'clic-droit → Molecular Mechanics → Optimization' de temps en temps 
+
+(
+pour 'améliorer' la géométrie des briques. 
+Dernière petite 'aide': si vous utiliser le bouton du milieu, vous pouvez faire tourner vos molécules 
+quelque soit l'action en cours.
+On ne cherchera pas à reproduire la symétrie C3 de la molécule. La représentation ci-dessus est-elle 
+vraiment en accord avec ce que vous obtenez ? Repasser en mode Space Fill  : la cage est-elle si 
+grande que ça ? 
+Pour vous convaincre que la cage est relativement grande mais qu’il est difficile d’y entrer ou d’en 
+sortir, nous allons tenter d'y faire entrer une molécule de CCl4. Pour cela, construisez une molécule de 
+CCl4, environ à 10  Å  d'un bord de la cage. On rappelle qu'une distance C-Cl vaut environ 1.7  Å. 
+Optimiser ce ‘super-système’ en Mécanique Moléculaire et noter son énergie.
+
+Il arrive parfois que Gabedit se plaigne que les types des atomes sont indéfinis lors de l'optimisation 
+en mécanique moléculaire :
+
+Ceci vient du fait que Gabedit n'a pas encore attribué de type à certains atomes du système. 
+Dans ce cas là, cliquer sur Ok, puis 'Cancel'. Faites clic-droit → Set → Atom types using connections 
+types, puis relancer l'optimisation en MM.
+Déplacer la molécule CCl4  à l’intérieur de la cage, et calculer à nouveau l’énergie du système. 
+Conclusion ?  À ce stade, vous pouvez aussi regarder le système en représentation Space Fill.
+
+IV.2. Énergie de sortie de la cage
+Pour évaluer la barrière d’énergie nécessaire à l’entrée ou à la sortie de la cage, on va réaliser trois 
+calculs en PM6 : CCl4 dans la cage, à l'extérieur de la cage et bloquée à l'entrée de la cage. Les deux 
+premiers calculs sont très similaires à ceux déjà fait au début du TP, nous vous laissons les faire seuls. 
+Pour la molécule bloquée sur la cage, on va demander à MOPAC2009 de relaxer le système tout en 
+maintenant une distance constante. On partira d'une géométrie dans laquelle le  CCl4 est à l'intérieur de 
+la cage. 
+En pratique, il faut utiliser une description à l'aide des distances, angles de valence et angles de 
+torsions pour la molécule, que nous avons déjà un peu vu pour H2O et NH3. Ceci s'appelle une Z-
+Matrice, souvent abrégée Z-MAT. Tout d'abord, pour que Gabedit ne modifie pas les numéros des 
+atomes, il faut ouvrir la fenêtre Edit → Open XYZ or GZMAT editor, puis 'clic-droite → To Zmat' 
+pour passer en mode Zmat . 
+On va maintenant repérer les numéros de quelques atomes dans la molécule :  Clic-droit → Labels → 
+Numbers. Si vous trouvez qu'il y a trop d'atomes, vous pouvez cacher les atomes d'hydrogène : Clic-
+droit → Render → Hide hydrogens atoms. 
+
+14
+
+Repérer le numéro du carbone de CCl4 ainsi que le 
+numéro d'un carbone d'un bord de la cage. Sur 
+l'exemple   ci-contre,   le   carbone   de   CCl4  est   le 
+numéro 1 (je l'ai déplacé là volontairement), et le 
+carbone que j'ai choisi est le numéro 123. 
+
+Si l'atome de la cage porte un numéro supérieur à 
+celui du carbone de CCl4 (comme c'est le cas sur 
+l'exemple), dans la fenêtre « Geometry Editor », 
+allez à la ligne de l'atome de la cage et remplacer 
+le numéro de la colonne NR par celui du carbone 
+de CCl4. À l'inverse, si le carbone de la cage porte 
+un numéro inférieur à celui du  CCl4, allez à la 
+ligne du carbone de CCl4 et remplacer le numéro 
+de la colone NR par celui de l'atome de la cage.
+
+On va maintenant dire à MOPAC de tout optimiser sauf cette distance. Clic-droit → All=>, puis sur la 
+colone de droite, clic-droit sur le nom de la distance entre l'atome de la  cage et celui de CCl4  (RC123 
+pour cet exemple) et '<=One'. 
+Fermer cette fenêtre ainsi que la fenêtre 'Draw'. Créer un nouvel input MOPAC grâce à l'icône 
+. 
+Changer seulement 'Job Type' en 'Equilibrium Structure Search'. Vous obtenez alors un input qui 
+ressemble à :
+* =============================== 
+* Input file for Mopac 
+* =============================== 
+PM6 XYZ    CHARGE=0 Singlet  BONDS AUX 
+Mopac file generated by Gabedit 
+C  0.0 0 0.0 0 0.0 0 0.0 0 0 
+Cl  1.700000  1 0.0 0 0.0 0 1 0 0 
+Cl  1.700000  1 102.690102  1 0.0 0 1 2 0
+ [...]
+H  3.940243  1 66.072400  1 7.969686  1 121 120 119 
+C  24.435239  0 2.958996  1 -12.226930  1 1 121 120 
+H  1.088070  1 165.438878  1 152.377921  1 123 122 121
+ […]
+
+Vous pouvez vérifier que pour l'atome de la cage (le N°123 pour cet exemple), la distance le reliant au 
+carbone de CCl4 est gelée : il y a un 0 dans l'input.
+ Ensuite, lancer le calcul soit par le menu 'Run' soit par l'icône 
+.  Vous pouvez suivre le calcul en 
+cliquant  sur l'ongle 'Fichier.out'  de la fenêtre  principale  de  Gabedit,  et en  faisant régulièrement 
+'Update/End'. Une fois l'optimisation terminée, regarder la fin du fichier de sortie, l'énergie que l'on 
+cherche est indiquée par 'FINAL HEAT OF FORMATION'. Conclusion ?
+
+TP Chimie Orbitalaire – M1
+
+15
+
+Poste 2
+RÉACTIVITÉ 
+
+I-SUBSTITUTIONS NUCLÉOPHILES
+On considère tout d’abord une réaction de substitution nucléophile de deuxième ordre :
+
+Cl- + CH3Cl ﬁ
+
+ ClCH3 + Cl-
+
+I.1. Phase gazeuse
+
+I.1.a. Quelle attaque ?
+
+Deux approches sont possibles pour déterminer la géométrie d'attaque : soit on utilise la forme de 
+l'orbitale la plus basse vacante (BV ou LUMO en anglais), soit on utilise une généralisation des 
+orbitales frontières qui consiste à calculer la susceptibilité nucléophile de   CH3Cl.  La susceptibilité 
+nucléophile est une fonction qui décrit la facilité d'une attaque nucléophile. La formule introduite par 
+Fukui1, et utilisée par Gabedit2 est :
+
+αε LUMO−ε j
+
+,
+
+    F r =∑2−n j∣ jr ∣2 e
+
+α ε LUMO−ε j
+
+∑ 2−n je
+j l'énergie de l'orbitale j
+
+dans laquelle e LUMO est l'énergie de la BV,  e
+l'orbitale j
+défaut, il vaut 3 dans Gabedit. La somme se fait sur toutes les OM.
+
+j et nj le nombre d'électrons dans 
+ est un paramètre qui permet de jouer sur l'importance des OM autres que la BV. Par 
+
+j. a
+
+Nous avons déjà vu lors de la première séance comment tracer une OM. Nous allons donc détailler ici 
+comment visualiser la susceptibilité nucléophile. Pour cela, créez et optimisez CH3Cl. Ensuite, ouvrir 
+le mode « Density... ». Dans ce mode, faites lire le fichier .aux correspondant par clic-droit → Orbitals 
+→ Read geometry and orbitals from a MOPAC aux file. 
+Calculez alors la densité électronique avec Clic droit → 
+Density   →   Electronic.   Laissez   les   valeurs   par   défaut 
+pour le calcul de la densité, puis choisir dans la fenêtre 
+suivante   un   affichage   de   la   surface   d'isodensité 
+électronique à 0.2 (champs “isovalue”).
+
+On va maintenant afficher les valeurs de la susceptibilité 
+nucléophile sur cette surface d'isodensité : clic-droit → 
+Fukui   →   Mapping   by   the   nucleophilic   susceptibility. 
+Gabedit redemande la valeur à choisir pour l'isodensité, 
+soyez cohérent : 0.2. Il faut ensuite ajuster l'échelle des 
+couleurs,   en   bas   de   la   fenêtre   “density”   :   mettez   le 
+maximum ) à 0.02.
+
+Conclusion ? 
+
+1 K. Fukui, T. Yonezawa, C. Nagata, H. Singu J. Chem. Phys. 1954, vol. 22(8), pp. 1433-1442.
+2 En fait, Gabedit utilise une formule plus générale, valable aussi pour les susceptibilités électrophile  et radicalaire.
+16
+
+I.1.b. Profil d’énergie
+Quel profil d’énergie attendez vous ? Nous allons vérifier cela en utilisant Gabedit pour calculer le 
+profil d’énergie correspondant à l’approche du chlorure. Dans la fenêtre "Draw", ajoutez un atome Cl 
+situé à l'opposé de la liaison C-Cl de CH3Cl, environ à 5 ou 6 Å.  Ouvrez la fenêtre "Edit XYZ or 
+GZMAT".
+Afficher les numéros de atomes Clic droit (sur la fenêtre Draw) → 
+Labels → Numbers. Repérez les numéros des deux atomes qui vont se 
+rapprocher. Vérifiez que l'ion chlorure qui s'approche est en dernière 
+position, au besoin, modifiez son numéro en cliquant sur la colonne 
+'Nr'  et en tapant "6" :
+
+Passez en mode Zmat : clic-droit →  To Zmat. Vérifiez que le chlorure 
+est bien lié au carbone. Si ce n'est pas le cas, notez le numéro du 
+carbone (4 sur notre exemple), puis rentrer le dans la colonne NR sur 
+la ligne de nucléophile.
+
+Si besoin est, convertissez les valeurs en variables par clic-droit sur la partie gauche de la fenêtre puis 
+→ All=>. Dans la fenêtre de droite, cliquez sur la variable correspondant à la distance entre le 
+chlorure et le carbone (normalement 'RCl6'), et faites  : clic-droit → <= One pour qu'elle repasse en 
+constante. Mettre cette valeur à 6.
+
+Fermer   les   fenêtre   et   préparer   un   calcul   de   chemin   de 
+réaction pour MOPAC (
+). Définir la charge du système 
+(combien vaut-elle?). Sous Job type, choisir Reaction path 
+(chemin   de   réaction),   avec   un   hamiltonien   PM6.   La 
+coordonnée de réaction est la liaison qui va se former : 
+dans l'ongle First, garder 'Bond', mais utiliser la flèche de 
+menu pour sélectionner la distance Cl-C, soit 6[Cl6-C4] 
+dans notre exemple. Choisir 90 points et un pas de -0.05. 
+Validez sur 'Ok'. 
+
+Le fichier d'input est créé dans l'onglet NoName. Sauvez le sous un nom plus parlant, tel que SN2. Il 
+faut le modifier un peu : supprimez l'option 1SCF, qui empêcherait l'optimisation de géométrie à 
+chaque étape, et rajoutez 'GNORM=0.1' qui impose une optimisation plus fine.
+Lancez le calcul (
+). Observez le résultat dans l'onglet .out, Clic Update/end. Une fois le calcul 
+terminé (ie lorsque vous pouvez lire 'Mopac Done'), ouvrez la fenêtre « Draw », puis chargez les 
+géométries par clic-droit → Read → Mopac → Read geometries from a MOPAC scan. Le profil 
+d'énergie   s'affiche   dans   la   fenêtre   'Geometry   Convergence   from   file'   avec   les   géométries 
+correspondantes dans la fenêtre Draw. Sélectionnez la fenêtre 'Convergence'. On peut se déplacer en 
+utilisant   les   touches   n(ext),   p(receding),   f(irst)   et   l(ast).   Ceci   permet   d'analyser   plus   facilement 
+l'évolution de l'énergie et des géométries. Il est conseillé d'utiliser l'outil 'measure' pour voir évoluer la 
+distance Cl-C au cours de la réaction.
+Le   profil   obtenu   correspond-il   à   vos   attentes ?   À   quoi   correspond   le   minimum   à   faible 
+distance (d» 2.85Å)? 
+
+I.1.c. État de transition
+De façon à caractériser plus précisément l’état de transition, il faut déterminer sa géométrie plus 
+finement. Cliquer sur le maximum d'énergie du profil précédant ; dans la fenêtre des structures, l'état 
+
+TP Chimie Orbitalaire – M1
+
+17
+
+de   transition   approximatif   devrait   s'afficher.   Sinon   cliquer   sur   'Draw'.   Dans   la   fenêtre   DRAW, 
+convertissez toutes les constantes en variables par : clic-droit → Edit XYZ or GZMAT, si besoin clic-
+droit → To Zmat, puis clic-droit → All=>. Fermer ces fenêtres. Préparer un nouveau calcul MOPAC. 
+Ne pas oublier de vérifier la charge du système, choisir 'Transition structure search' pour Job Type, 
+avec un hamiltonien PM6. L'état de transition est un maximum local, où les forces sont nulles. 
+MOPAC optimise la géométrie pour minimiser ces forces. Avant de lancer le calcul, ajoutez l'option 
+'GNORM=0.1'.
+Regardez les résultats dans l'onglet .out, Update/end puis Geom. Conv. Le profil d'énergie s'affiche, 
+dans ce cas choisir la structure la plus basse en énergie (la dernière, que  l'on peut atteindre facilement 
+en pressant la touche l pour last). Si vous obtenez un message d'erreur de gabedit ('Sorry I can not read 
+energies'). Cela signifie que la structure n'a pas été changée parce qu'elle correspondait déjà à l'état de 
+transition. 
+Notez les distances obtenues sur la structure correspondant à l'état de transition affiné.
+
+I.2. Phase aqueuse
+I.2.a. Profil d’énergie
+On a vu à l’étape précédente que le profil obtenu en phase gazeuse ne correspond pas à celui que l’on 
+voit dans les livres. En effet, ce dernier correspond à un profil en phase aqueuse.
+Recharger la structure initiale (SN2.mop).  Créer un nouvel input MOPAC (
+). Calculer le chemin 
+de réaction correspondant à l’approche du chlorure avec les mêmes options que précédemment en 
+modifiant juste l'onglet 'Solvent' en  'Water [H2O]'. 
+Une autre façon de faire, plus rapide à notre avis, est de modifier directement le fichier .mop dans 
+l'éditeur de texte, en rajoutant ' EPS=78.39 RSOLV=1.3 ' à côté de 'GNORM=0.1' par exemple. 
+
+Remarque sur la signification de ces mots-clés :
+ Une modélisation simple (mais efficace) du solvant est de le décrire comme un continuum diélectrique qui 
+entoure le soluté. Ce dernier se retrouve alors au milieu d'une cavité creusée dans le continuum. Pour définir 
+cette cavité, il faut indiquer à quelle distance le solvant se situe du soluté en moyenne. Ceci est réaliser en 
+imaginant que les molécules de solvant sont des sphères dont on fournit le rayon. Voici donc la signification 
+des mots-clés :
+
+– EPS : ceci indique la valeur de la permittivité relative e
+– RSOLV : rayon effectif du solvant. 
+
+r du solvant. 
+
+Dans tous les cas, sauvez le fichier sous un nom parlant, tel que SN2_water.mop. Lancez le calcul. Le 
+profil obtenu correspond-il mieux à vos attentes ? 
+
+I.2.b. Etat de transition
+Optimisez l’état de transition dans l’eau en prenant la structure correspondant approximativement à 
+l'état de transition dans le profil d'énergie et faites une optimisation de la géométrie de l'état de 
+transition('Transition structure search') avec un hamiltonien PM6 et l'eau comme solvant.
+Comparer les distances obtenues avec celles obtenues en phase gaz.
+
+I.3. Chemin de réaction
+Dans les études précédentes, nous avons supposé que la distance C-X était une bonne approximation 
+de la coordonnée de réaction. Pour ce cas simple, c’est amplement suffisant. Cependant, lors de 
+l’étude de réaction complexes (cf. questions suivantes !), il est parfois important de connaître de façon 
+précise la coordonnée de réaction. Une façon de faire est de partir de l’état de transition, situé au 
+sommet d’un col, et de suivre le col vers les réactifs et/ou vers les produits.
+
+18
+
+Cette option est disponible dans MOPAC, mais pas directement par Gabedit, il faut donc travailler un 
+peu plus. Reprenez la structure de l’état de transition obtenue en phase gaz. Créer un nouvel input 
+MOPAC   (
+).   Pour   Job   Type,   indiquer   'Equilibrium   structure   search',   Hamiltonian=PM6, 
+Solvent=Nothing. Avant de lancer le calcul, il faut indiquer à MOPAC qu'on veut en fait suivre le 
+chemin menant de l'état de transition aux réactifs ou aux produits. Ce chemin, défini par Fukui,3 est 
+celui qui suit la coordonnée de réaction intrinsèque au système, appelée IRC (Intrinsic Reaction 
+Coordinate). Pour suivre un tel chemin, il faut ajouter les mots clés : LARGE IRC=1* GNORM=0.1 
+Sauvez le calcul avec 'IRC=1*' sous le nom CH3Cl_IRC1.mop (par exemple), puis lancez le. Gabedit 
+ne sait pas (encore) lire un IRC, il faut donc convertir le fichier de sortie obtenu pour qu'il ressemble 
+davantage à un scan. Pour cela, dans un terminal, placez vous dans le dossier contenant le fichier .out, 
+et faites:
+Irc2Scan CH3Cl_IRC1
+ceci va créer le fichier CH3Cl_IRC1_Irc2Scan.out que vous pouvez maintenant ouvrir dans la fenêtre 
+« Draw » par clic-droit → Read → Mopac → Read geometries from a MOPAC scan.
+Le profil obtenu est-il semblable à celui établi précédemment ? si non pourquoi ?
+II-RÉACTIONS ÉLECTROCYCLIQUES
+Nous avons vu lors de  l’étude de la SN2 que l’on pouvait parfois obtenir une idée correcte du chemin 
+de   réaction   à   l’aide   d’une   coordonnée   approchée.   Nous   allons   voir   ici   que   pour   la   réaction   de 
+cyclisation du 1,3-butadiène il est nécessaire d’avoir une bonne réaction de coordonnée.
+
+II.1. Voie thermique
+II.1.a. Distance C-C terminaux.
+
+Pour mettre ceci en évidence,  construire cyclobutène,  optimiser sa géométrie (attention  à la 
+charge) et mesurer la distance CC simple opposée à la double liaison.  Construire ensuite le butadiène 
+cis et optimiser sa géométrie. Mesurer la distance entres les carbones terminaux.
+
+Pour calculer le profil d'énergie,  ouvrez la fenêtre Draw pour le butadiène. Ouvrez l'éditeur XYZ. 
+Afficher les numéros des atomes (labels → Numbers) et repérer les numéros des 4 carbones. Parmi 
+ces quatre atomes, il faut que l'un des carbones terminaux aie le plus grand numéro, et l'autre le plus 
+petit. Si ce n'est pas le cas, modifiez les numéros des carbones dans la colonne 'Nr'. Passez ensuite en 
+mode Zmat. Dans la fenêtre 'Geometry Editor', vérifier que le dernier atome de carbone (celui de plus 
+grand numéro) est bien défini par rapport aux trois autres carbones : dans notre exemple,  ce n'est pas 
+le cas au départ :
+
+Modifier les numéros des colonnes NR, NA et ND pour que l'angle dièdre soit bien défini par les 
+
+atomes 8-5-7-2, comme représenté au final :
+
+3K. Fukui J. Phys. Chem. 1970, vol. 74, pp 416-4163 ; K. Fukui Acc. Chem. Res. 1981, 14 (12), pp 363–368.
+
+TP Chimie Orbitalaire – M1
+
+19
+
+Transformer   tout   en   variable   par   clic-droit   →   All=>.   Puis   repasser   la   distance   entre   les   C 
+terminaux en constante en la sélectionnant puis clic-droit → <=One. Dans notre exemple, c'est la 
+variable RC8. Fermer les fenêtre. Calculer le profil d’énergie (hamiltonien PM6) en faisant varier la 
+distance CC entre les deux valeurs mesurées avant, par pas de 0.02 Å. Ne pas oublier d'éliminer 
+l'option 1SCF et de rajouter le mot clé GNORM=0.1.Que constatez-vous ?
+
+Pour vous convaincre que le chemin  obtenu est inexploitable,  vous pouvez recommencer  la 
+
+procédure précédente en partant du cyclobutène pour obtenir le butadiène cis.
+
+II.1.b. Distance CC et angle HCCC.
+
+L’étude précédente montre que la coordonnée de réaction est beaucoup plus complexe que la 
+simple liaison CC. En particulier, l’angle de rotation des groupes CH2  terminaux joue un rôle non 
+négligeable. De façon à quantifier ce rôle, ainsi que pour avoir une meilleure vue du processus 
+réactionnel, nous allons tracer la surface d’énergie potentielle associée à ces deux coordonnées. Cette 
+surface est la généralisation d’un profil d’énergie : on représente l’énergie électronique du système en 
+fonction de deux coordonnées de réaction. 
+
+Pour cela, en partant du 1,3-butadiène, ouvrez l'éditeur XYZ/Z-MAT, faites afficher les numéros 
+et vérifier qu'un des hydrogènes du carbone terminal de plus haut numéro est défini par rapport par 
+rapport au carbone terminal, puis au carbone interne lié à ce carbone, puis au second carbone interne. 
+Dans notre exemple, on a bien H9 lié à C8 puis C7 puis C6. Si ce n'est pas le cas pour vous, faites tout 
+d'abord un clic-droit → <=All sur la fenêtre des variables, puis éditez les numéros des colonnes NR, 
+NA et ND pour l'hydrogène terminal comme on l'a fait précédemment pour le carbone terminal.
+
+Dans la fenêtre de droite, sélectionner la 
+distance entre les carbones terminaux (RC8 
+dans   notre   cas)   et   transformez-là   en 
+constante.   Avant   de   faire   de   même   pour 
+l'angle dièdre concernant l'hydrogène (DH9 
+dans notre exemple), vérifiez que sa valeur 
+est positive, proche de 180° normalement. Si 
+ce n'est pas le cas, ajoutez 360° à la valeur 
+lue. Convertissez cette variable en constante. 
+Votre Z-MAT doit ressembler à celle-ci :
+
+Fermer les fenêtres, créer un nouvel input MOPAC. Sauvez le fichier sous un nom raisonnable 
+(tel que Buta_Cyclo_2D.mop) et lancer un calcul « Reaction Path » en PM6.  À  l'aide des menus 
+déroulants, sélectionnez la distance entre les C terminaux comme première variable (8[C8-C3] dans 
+notre exemple), et l'angle dièdre pour l'hydrogène en seconde variable (9[H9-C9-C7-C6] dans notre 
+cas). On prendra 16 pas de -0.1 Å pour la distance et 35 de -2° pour l'angle dièdre. Remplacez le 1SCF 
+par GNORM=0.2 avant de sauver puis de lancer le calcul. 
+
+20
+
+Buta_Cyclo_2D.out et tapez : 
+
+Une   fois   le   calcul   terminé,   dans   le   terminal,   allez   dans   le   répertoire   contenant   le   fichier 
+Mop2Surf.sh Buta_Cyclo_2D
+
+On obtient la surface d’énergie représentée sur la Figure 1. Vous pouvez faire tourner cette surface 
+grâce à la souris dans Gnuplot.
+
+Figure 1 : Carte d’énergie pour l’ouverture du cyclobutène. 
+
+II.1.c. Etat de transition.
+Utiliser la structure approchée de l'état de transition trouvée grâce à cette étude comme géométrie de 
+départ pour une optimisation d’état de Transition en PM6. Pour cela, se placer à la position de l'état de 
+transition sur le profil réactionnel. Utiliser 'Draw' si nécessaire. Lancer l'optimisation de géométrie de 
+l'état de transition en utilisant un hamiltonien PM6.
+De façon à vérifier la nature du mouvement à l'état de transition, calculez les fréquences de vibration 
+de l’état de transition. Préparez un nouveau calcul MOPAC, et choisissez 'Frequencies' avec un 
+hamiltonien PM6. Il faut éditer le fichier MOPAC à la main. Ajouter le mot 'LET' dans la 4e ligne, 
+après 'FORCE'. Puis lancer le calcul.
+Aller   dans   l'onglet   out,   'Update/end'   puis   'Dens.   Orb'.   Dans   la   nouvelle   fenêtre,   Clic   Droit   → 
+Animation → Vibration. Dans la nouvelle fenêtre, lire le fichier contenant les fréquences File→ Read 
+→ Read a Mopac aux file. Choisir le fichier *.aux (* est le nom que vous avez donné à votre calcul).
+Sélectionner la fréquence la plus basse (associée à un nombre d’onde négatif 4) et cliquer sur 'Play'. Le 
+mouvement   est-il   conrotatoire   ou   disrotatoire ?   D’après   les   règles   de  Woodward-Hoffman,   cette 
+réaction est-elle permise suivant ce chemin ?
+II.2. Voie photochimique
+Cette voie utilise des états excités et sera vue au cours du troisième poste.
+
+4 En fait, le nombre d’onde est imaginaire car il correspond à la racine carrée d’une constante de force négative. Mais on a 
+pris l’habitude de convertir ces fréquences imaginaires en fréquences négatives.
+
+TP Chimie Orbitalaire – M1
+
+21
+
+III-CYCLOADDITIONS : RÉACTION DE DIELS-ALDER
+Le but de cette partie est d’étudier l’effet des substituants sur la stéréo et la régiosélectivité de la 
+réaction de Diels-Alder.
+
+III.1. Reaction sans substituants
+On commence tout d’abord par l’étude de la réaction sans substituants : 
+
+2
+
++
+
+4
+
+1
+
+3
+
+Construisez   le   butadiène   et   la   molécule   d’éthylène.   D’après   les   règles   de   Woodward-Hoffman, 
+comment devez-vous placer ces deux molécules l’une par rapport à l’autre pour favoriser la réaction ?
+Faites-le et modifiez les distances de manière à avoir 3 Å pour les distances C1-C2 et C3-C4.5 Sauvez 
+votre fichier. Pour définir les deux coordonnées de réaction correspondant aux distances C1-C2 et C3-
+C4, il va sans doute falloir changer la z-matrice (sinon, vous êtes très chanceux, lancez le calcul!) pour 
+pouvoir définir ces labels : Clic droit→ Edit → Open XYZ or GZMAT editor. Dans l'éditeur : Clic 
+droit → to Zmat. Il est plus facile de travailler si toutes les valeurs sont dans la Zmat, pour s'en 
+assurer, faites un clic-droit → <=All, sur la fenêtre « VARIABLES Editor ».
+Repérez   maintenant   les   numéros   des   atomes   qui   vous   intéressent   (les   atomes   sont   souvent 
+renumérotés quand on passe à la z-matrice). Disons que les labels que vous voulez définir pour le 
+chemin de réaction correspondent aux atomes 14-7 et  6-13.
+Vous allez changer les labels relatifs à l'atome de plus grand numéro à chaque fois (ici, 13 et 14).
+La ligne de l'atome 14 sur l'ancienne z-matrice est (14-13-12-11), ce qui signifie que la z-matrice 
+donne la distance 14-13, puis l'angle défini par 14-13-12 puis l'angle dièdre défini par 14-13-12-11.
+Pour pouvoir définir 14-7 comme label, il faut donc changer la valeur de NR en 7 au lieu de 14. Idem 
+pour l'atome 13 qui doit être défini par rapport à 6.
+
+Vous pouvez maintenant définir de nouveaux labels. Transformez toutes les valeurs en variables par 
+clic-droit (sur la fenêtre Z-MATRIX Editor)  → All=>), puis convertissez les deux distances  en 
+constantes par clic-droit → <=One sur leur nom (dans notre exemple RC14 et RC13).
+
+Calculez la surface de potentiel (Job Type= « Reaction Path ») en PM6, avec une recherche allant de 3 
+Å à 1.5 Å par pas de 0.2 Å pour chaque distance. Vous devez donc définir First et Second. N'oubliez 
+pas   d'enlever   l'option   1SCF   et   d'ajouter   GNORM=0.2.   Sauvez   ce   fichier   (par   exemple 
+DielsAlder.mop) et lancez le calcul. Une fois le calcul terminé, dans un terminal, exécutez le script de 
+visualisation :
+
+Mop2Surf.sh DielsAlder
+
+Vérifiez en faisant tourner la surface que le point le plus stable du col correspond bien à un processus 
+concerté synchrone. Pensez au passage à vérifier que vous savez ce que cela signifie vraiment !
+Dans la fenêtre « Draw », chargez le .out du scan (Read geometries from a MOPAC ouput scan). Dans 
+la fenêtre 'Geometry convergence', récupérez l'état de transition approximatif, optimisez-le et vérifiez 
+à nouveau que le mécanisme est bien concerté et synchrone en calculant les vibrations à l'état de 
+transition.
+
+III.2. Endo/exo
+On considère maintenant la réaction entre deux molécules de 1,3-cyclopentadiène. On va tracer le 
+chemin correspondant à la réduction simultanée des deux liaisons C-C pour une approche endo et une 
+
+5 Les outils 'déplacement/rotation de la sélection' (
+des molécules.
+22
+
+, 
+
+ et 
+
+) s’avèrent très utile pour modifier l’orientation relative 
+
+approche exo.5 Pour réduire simultanément les deux longueurs, vous allez imposer une « symétrie » 
+entre deux labels, qui impose qu'ils soient égaux. Il faudra modifier les labels de la zmat pour que ce 
+soit possible. Par exemple ici le label 18-17 est déjà défini donc pas besoin de modification. Par contre 
+le   label   13-8-11-10   doit   être   défini   à   la   main   dans   l'éditeur   de   zmat   (mais   vous   savez   faire 
+maintenant!). On partira de distances approximativement égales à 3 Å.
+
+Préparer un calcul MOPAC en choisissant 'Reaction Path',  20 pas de -0.1 et un seul label (ici, 18-17).
+Puis à la main, éditer le fichier d'input dans l'éditeur de texte. Enlever le 1SCF, mettre l'option 
+GNORM=0.2, et ajoutez l'option SYMMETRY.
+Il faut également dire à MOPAC de ne pas chercher à optimiser la distance 13-8 (mettez un 0 à la 
+place du 1 derrière cette distance).
+En bas des coordonnées, ajoutez un zéro, il informe MOPAC que la section donnant les coordonnées 
+est complète. Sur la ligne suivante, on met les détails de la symétrie imposée.
+Ajoutez le numéro de l'atome qui possède le label qui va être varié (sur l'exemple, 18), suivi de 1 et du 
+numéro de l'atome qui correspond à la deuxième distance qui devrait varier simultanément (sur 
+l'exemple, 13). Le 1 indique que vous imposez lors de l'optimisation que les labels-distance des 
+atomes soient égaux.  Votre input devrait ressembler à (avec les liaisons 15-4 et 19-5):
+* =============================== 
+* Input file for Mopac 
+* =============================== 
+PM6 GNORM=0.2 STEP=-0.1 POINT=20    CHARGE=0 Singlet  BONDS AUX SYMMETRY 
+Mopac file generated by Gabedit 
+H  0.0 0 0.0 0 0.0 0 0.0 0 0 
+H  1.758311  1 0.0 0 0.0 0 1 0 0 
+H  4.097619  1 44.873765  1 0.0 0 2 1 0 
+C  2.165308  1 18.972423  1 -55.044117  1 3 2 1 
+C  1.334825  1 23.926518  1 -42.791339  1 4 3 2 
+C  2.359733  1 36.165505  1 179.999891  1 5 4 3 
+C  2.359733  1 36.194202  1 179.999985  1 6 5 4 
+C  1.335775  1 36.152277  1 179.999957  1 7 6 5 
+H  2.165411  1 23.939506  1 179.999979  1 8 7 6 
+H  2.588337  1 24.494285  1 -179.946613  1 9 8 7 
+H  2.707146  1 101.372123  1 19.935462  1 10 9 8 
+H  5.664049  1 111.910985  1 14.896558  1 11 10 9 
+C  1.089015  1 17.079069  1 128.133105  1 12 11 10 
+C  1.287202  1 113.174277  1 140.585271  1 13 12 11 
+C  3.600000  -1 98.190000  1 115.970000  1 4 6 8 
+H  2.165308  1 23.926470  1 179.999911  1 15 14 13 
+
+TP Chimie Orbitalaire – M1
+
+23
+
+H  2.588976  1 24.509954  1 179.999851  1 16 15 14 
+C  2.230770  1 91.070216  1 -15.134235  1 17 16 15 
+C  3.600000  0 107.210000  1 -86.420000  1 5 7 8 
+H  1.459369  1 24.245416  1 -152.103726  1 19 18 17 
+H  1.199388  1 108.792823  1 60.808354  1 20 19 18 
+H  2.941398  1 54.428211  1 35.911605  1 21 20 19 
+0. 
+15 1 19
+
+Lancez l'optimisation. En déduire une géométrie approchée des états de transition. Calculez plus 
+précisément les énergies et les géométries des états de transition. Quelle approche est favorisée ? 
+pourquoi ?
+
+On s’intéresse maintenant à la réaction suivante (vue en TD) :
+
+O
+
+O
+
++
+
+?
+
+, 40°C
+
+En calculant les orbitales frontières de symétrie p
+ des deux réactifs, indiquez la molécule qui joue le 
+rôle de diène et celle qui est le diénophile. En déduire aussi l’approche (endo ou exo) conduisant au 
+produit majoritaire. Vérifiez en calculant l’énergie des états de transition mis en jeu. 
+
+III.3. Régiosélectivité
+Vérifiez que, comme (presque) vu en TD : 
+
+OMe
+
++
+
+O
+
+OMe
+
+OMe
+
+CHO
+
++
+
+CHO
+
+Pour cela, calculez la géométrie et l’énergie des différents produits et des différents états de transition. 
+
+Majoritaire
+
+Minoritaire
+
+III.4. Orientation syn/anti
+Dans cette dernière partie, on essaie de comprendre les résultats expérimentaux suivants :
+
+MeO
+
+OMe
+
+OMe
+
+H
+
++
+
++
+
+syn
+
+Minoritaire
+
+anti
+
+Majoritaire
+
+24
+
+Poste 3
+
+MINI-PROBLÈMES 
+
+Ces mini-problèmes sont classés par difficulté et non par genre. N’hésitez pas à discuter entre vous 
+pour les résoudre, ou à demander à votre encadrant si vous bloquez totalement. 
+I-A FAIRE PLUTÔT SEUL
+*) On observe expérimentalement que l’attaque d’un électrophile sur le pyrrole se fait 
+préférentiellement   en   position   2.   On   considèrera   l’attaque   d’un   proton.     Justifier   les 
+observations expérimentales en calculant la susceptibilité électrophile.
+ 
+*) Substitutions nucléophiles : effet du groupe partant.
+Comparer la géométrie des états de transition et les profils énergétiques des réactions Cl- + CH3X ﬁ
+ClCH3 +X-, en phase aqueuse avec X=F, Br et OH.   Conclusions ?
+
+N
+H
+
+3
+
+2
+
+ 
+
+*) Isomérisation de la menthone
+En milieu acide, on observe l’isomérisation de la  (-)-menthone en (+)-menthone.
+
+H+
+
+O
+
+O
+
+(-)-menthone
+
+(+)-isomenthone
+
+L’analyse du pouvoir rotatoire indique qu’à l’équilibre on a environ 65% de (-)-menthone. Quelle 
+proportion prédisez vous ?
+
+*) Influence de l’atome sur la stabilité d’une double liaison
+
+La  chimie   du   carbone  est  maintenant   bien   connue.   Elle  se  caractérise   en   particulier   par 
+l’existence de composés présentant de longues chaînes carbonées, ainsi que par la stabilité   des 
+liaisons multiples CC. Sachant que Si et C sont isoélectroniques, on pourrait s’attendre à ce qu’il en 
+soit de même pour la chimie du silicium. Il n’est est malheureusement rien.
+Nous nous intéressons ici aux molécules isoélectroniques H2X=XH2 où X=C ou Si.
+
+Construisez ces molécules et trouvez la géométrie la plus stable dans chaque cas. On partira de 
+molécules non planes6. Conclusion ? Nous ne détaillerons pas ici les raisons responsables de cette 
+différence de géométrie, sauf si vous insistez. Pour ceux qui sont intéressés, vous pouvez consulter les 
+articles suivants : G. Trinquier, J. Am. Chem. Soc. 1991, vol 113, p 144 ; G. Trinquier, J.-P. Malrieu et 
+P. Rivière, J. Am. Chem. Soc. 1982, vol 104, p 4529.
+
+6 Ceci est obligatoire si l’on veut pouvoir obtenir à la fin une géométrie non plane. En effet, techniquement, la procédure 
+d’optimisation ne peut pas modifier le groupe de symétrie d’une molécule. Ainsi une molécule plane restera toujours 
+plane, mais pas l’inverse.
+
+TP Chimie Orbitalaire – M1
+
+25
+
+*) Géométrie de molécule hypervalente.
+La règle de l’octet s’applique bien aux molécules de la seconde période, mais est très souvent violée 
+pour les périodes suivantes. On se propose ici de regarder si la géométrie des molécules hypervalentes 
+est en accord avec les règles de Gillespie (VSEPR). 
+
+Pour les molécules suivantes, indiquer quelles sont les géométries envisageables, quelle est 
+
+celle prédite par VSEPR, et quelle est celle qui est la plus stable dans le cadre d’un calcul PM6 :
+SF4, ClF3 et SOF4.
+
+*)   On   s’intéresse   à   nouveau   à   la   conformation   d’une   liaison   double.   Cependant,   on   considère 
+maintenant un système cyclique, comme celui représenté ci-dessous :
+
+ou
+
+H
+
+H
+
+H
+
+Construisez et optimisez les alcènes cycliques Z et E pour des cycles comprenant 8, 10, 12 et 14 
+atomes. Quel est l’isomère le plus stable dans chaque cas ? pourquoi ?
+II-RÉACTIONS ÉLECTROCYCLIQUES
+II.1.
+
+Voie photochimique
+
+H
+
+On étudie maintenant la cyclisation lors d’une réaction photochimique. Pour cela, on va étudier l’état 
+de spin triplet du système butadiène ﬁ
+ cyclobutène. Suivez la procédure présentée pour le Poste2, 
+mais en remplaçant dans tous vos fichiers le mot clé SINGLET par TRIPLET. Pensez aussi à sauver 
+vos fichiers sous des noms différents.
+
+II.2. Chemin disrotatoire thermique et conrotatoire photochimique
+De façon à vérifier que les chemins précédents sont bien les chemins de plus basse énergie, nous 
+allons calculer les variations de l’énergie lors en suivant un chemin disrotatoire lors d’une activation 
+thermique, puis en suivant en chemin conrotatoire lors d’une activation photochimique.
+Pour   cela,   sélectionnez   cinq   structures   le   long   du   chemin   obtenu   par   voie   photochimique (le 
+butadiène, l’état de transition, le cyclobutène et deux point intermédiaires). Pour chaque structure, 
+créez une nouvel input MOPAC et lancez le calcul de l’énergie (Job Type=Single Point). Pour chaque 
+structure, indiquez bien SINGLET. Notez les énergies et reporter les sur un graphe en utilisant Excel 
+ou Gnuplot  par exemple. La barrière obtenue suivant ce chemin est-elle plus grande ou plus petite 
+qu’auparavant ?
+
+De façon similaire, sélectionnez cinq structures le long du chemin obtenu par voie thermique (le 
+butadiène, l’état de transition, le cyclobutène et deux point intermédiaires). Pour chacune de ces 
+structures, lancer le calcul de l’énergie en précisant bien TRIPLET. Notez les énergies et reporter les 
+sur un graphe en utilisant Excel par exemple. La barrière obtenue suivant ce chemin est-elle plus 
+grande ou plus petite que celle obtenue en suivant un chemin disrotatoire ?
+
+26
+
+III-A FAIRE PLUTÔT EN PETIT GROUPE
+*) On observe expérimentalement :
+
+R
+
+R
+
+R
+
++
+
+NO2
+
+R
+
+MeO
+CO2Et
+
+H
+NO2
++
+
+%o
+17
+28
+
++
+
+H
+NO2
+
+%m
+-
+68
+
+R
+
+H NO2
+%p
+83
+3
+
+a) Calculer les OM frontières pour les réactifs dans le cas R=OMe et R=CO2Et. Les OM obtenues 
+
+sont-ils cohérents avec les pourcentages observés ?
+
+b) Une autre information, plus complète que l’analyse des orbitales frontières est la carte de 
+
+susceptibilité électrophilique. Construisez cette carte. Comment se compare-t-elle aux OF ?
+
+c) Vérifiez en calculant les énergies des états de transition que les proportions sont conformes 
+
+aux prédictions des OF. Comment se classent les énergies des produits ?
+
+*) Indiquer le produit majoritaire pour R=Cl, Me et OMe pour la réaction :
+
+R
+
+Nu-
+
+GP
+
+R
+
+(GP est un groupe partant quelconque).
+
+Nu
+
+Nu
+
+*) Indiquer le produit majoritaire pour R=Cl, Me et OMe pour la réaction :
+
+R
+
+Nu-
+
+GP
+
+R
+
+ou
+
+Nu
+
+ou
+
+R
+
+ou
+
+Nu
+
+ou
+
+R
+
+R
+
+R
+
+Nu
+
+Nu
+
+*) Carbone Plan carré.
+La   théorie   VSEPR   prédit   qu’un   carbone   tétravalent   doit   être   tétraédrique.   Nous     regardons   ici 
+comment faire pour favoriser la géométrie plan carrée.
+
+a) Vérifier que la géométrie plan carrée est moins stable que la géométrie tétraédrique pour CH4.
+b) On considère la substitution d’un atome d’hydrogène par un groupe XH2. Est-il préférable de 
+
+prendre un groupe donneur ou accepteur ?
+
+c) On considère C(XH2)4.   En supposant que les groupes XH2  restent plans, quelles sont les 
+
+géométries possibles ? Laquelle est la plus stable ?
+
+TP Chimie Orbitalaire – M1
+
+27
+
+

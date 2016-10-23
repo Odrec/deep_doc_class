@@ -1,0 +1,9866 @@
+Algorithmen II
+
+Prof. Dr. Markus Chimani
+
+Theoretische Informatik, Uni Osnabrück
+
+Wintersemester 2014/15
+
+Einleitung
+
+Einleitung
+
+Organisatorisches
+
+Einleitung Organisatorisches
+
+Vorlesung
+
+Vorlesung
+
+4
+
+(cid:73) Termin: wöchentlich, Montag, 10:15 – 11:45 @ 69/E18
+(cid:73) Unterlagen:
+
+(cid:73) Diese Folien, online → Stud.IP
+(cid:73) Einschlägige Algorithmenbücher, z.B.:
+
+Cormen/Stein/Leiserson/Rivest: „Introduction to
+Algorithms“
+(Deutscher Titel: „Algorithmen - Eine Einführung“)
+
+Prüfung
+
+(cid:73) Zulassung: Erfolgreiches Bestehen der Übung
+
+→ siehe nächste Folie
+
+(cid:73) Prüfungsmodus (voraussichtlich):
+
+Mündliche Prüfung, ca. 30min
+
+Einleitung Organisatorisches
+
+Übung
+
+5
+
+(cid:73) alle 2 Wochen
+(cid:73) Freitag, 12:30 – 14:00 @ 69/E18
+(cid:73) Erster Termin: 24. Oktober
+
+(cid:73) Übungsblatt: immer ca. 2 Wochen vorab → Stud.IP
+(cid:73) „Kreuzchenübung“:
+
+Ankreuzen welche Aufgaben gelöst.
+Pseudozufällige Auswahl, wer es an der Tafel vorrechnet.
+
+(cid:73) Bestehen der Übung:
+
+(cid:73) mindestens 70% der Übungsaufgaben angekreuzt.
+(cid:73) Bei zu unrecht angekreuzter Aufgabe:
+
+1. Vergehen: Keine Bewertung des Übungsblatts.
+2. Vergehen: Kein Bestehen der Übung.
+
+Einleitung
+
+Thema der Vorlesung
+
+Einleitung Thema der Vorlesung
+
+7
+
+Inhalt von Algorithmen II
+
+∗ heute?
+
+(cid:73) Formale Grundlagen: Landau-Symbole ∗
+(cid:73) Sortieren&Co: CountingSort, RadixSort ∗
+(cid:73) Suchen: weitere Suchbäume, Skiplisten, Intervallsuchen
+(cid:73) Heaps: d-ary, Binomial, Fibonacci
+(cid:73) Hashing: Cuckoo-Hashing
+(cid:73) Strings: Suche, Alignment
+(cid:73) Flüsse/Schnitte:
+
+MaxFlow/MinCut, Ford-Fulkerson, Menger-Theorem
+
+(cid:73) Geometrische Algorithmen:
+Konvexe Hülle, Voronoi, Scanline
+(cid:73) Mathematische Algorithmen:
+
+Matrizenmultiplikation, Primzahl-Test
+
+(cid:73) Angewandte Algorithmen:
+
+Zip-Kompression, Schnelle Fourier-Transformation
+
+Warm Up: Formale
+
+Grundlagen & Sortieren
+
+Warm Up: Formale
+
+Grundlagen & Sortieren
+
+Landau-Symbole
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+10
+
+O-Notation
+
+Das wichtigste Landau-Symbol kennen Sie schon: O
+Laufzeiten: O(n), O(n log n), O(n2m + m1.5),...
+Deﬁnition (Groß-O-Notation). Sei f (n) : Nk → N eine Funktion.
+Parameter n is dabei ein k-stelliger Vektor.
+O(f ) := { g : Nk → N | ∃c > 0,∃n0 ∈ Nk,∀n ≥ n0 : g(n) ≤ c · f (n) }
+
+Diese Menge bezeichnet alle Funktionen die asymptotisch maximal
+so schnell wachsen wie f (n). Die Funktion f (n) ist also eine
+asymptotische obere Schranke für jede Funktion g(n).
+
+Dies ist gleichbedeutend mit:
+
+g ∈ O(f ) ⇐⇒ ∃c > 0,∃n0 ∈ Nk, sodass ∀n ≥ n0 : g(n) ≤ c · f (n)
+
+In der Informatik schreiben wir (wenn auch formal fragwürdig) i.d.R.
+g = O(f ) statt g ∈ O(f ).
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+O-Notation als Kurve; Beispiele
+
+11
+
+(n + 1)!
+
+2n
+
+3
+
+2 n + 3
+
+4
+
+10 n2 + 8
+
+5 n + 11
+
+10
+
+1
+
+f (n) = n
+40 n3 − 3
+log2 n + 2
+39
+10
+
+1
+
+2 n + 1
+
+4
+
+1
+
+20 n2 + 1
+
+2
+
+grün ∈ O(f )
+rot (cid:54)∈ O(f )
+
+n
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+12
+
+O-Notation als Kurve; Beispiele (transformiert)
+5 n + 11
+10 )
+
+40 n3 − 3
+
+20 n2 + 1
+2 )
+
+10 n2 + 8
+
+(n + 1)!
+
+5( 1
+
+2n
+
+6
+
+5 ( 1
+f (n) = n
+
+1
+
+2 ( 3
+
+2 n + 3
+4 )
+
+39
+10
+
+1
+
+2 n + 1
+
+4
+
+1
+2 ( log2 n + 2)
+
+grün ∈ O(f )
+rot (cid:54)∈ O(f )
+
+n
+
+n0
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+13
+
+Untere Schranken
+
+O-Notation gibt eine asympt. obere Schranke für eine Funktion an.
+„Algorithmus XY hat eine Laufzeit O(n2).“
+→ Er benötigt maximal quadratisch viel Zeit in der Eingabegröße.
+
+Analog können wir deﬁnieren:
+
+(cid:73) Asymptotische untere Schranke Ω (großes griech. Omega)
+
+„Algorithmus XY hat eine Laufzeit Ω(n2).“
+→ Er benötigt mindestens quadratisch viel Zeit.
+
+(cid:73) Asymptotisch scharfe Schranke Θ (großes griech. Theta)
+
+„Algorithmus XY hat eine Laufzeit Θ(n2).“
+→ Er benötigt immer quadratisch viel Zeit.
+
+Das bedeutet:
+
+Θ(f ) = O(f ) ∩ Ω(f )
+g = Θ(f ) ⇐⇒ g = O(f ) ∧ g = Ω(f )
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+14
+
+Dominierende Schranken
+
+Und dann gibt es noch:
+
+(cid:73) Asymptotisch dominiert o (klein O)
+
+„Algorithmus XY hat eine Laufzeit o(n2).“
+→ Er benötigt echt weniger als quadratisch viel Zeit.
+
+(cid:73) Asymptotisch dominierend ω (klein omega)
+
+„Algorithmus XY hat eine Laufzeit ω(n2).“
+→ Er benötigt echt mehr als quadratisch viel Zeit.
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+15
+
+Schranken, formal
+
+(cid:73) g ∈ o(f ): f dominiert (asymptotisch) g:
+
+„g < f “ ∀c > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : g(n) ≤ c · f (n)
+
+(cid:73) g ∈ O(f ): f ist eine asymptotische obere Schranke für g:
+
+„g ≤ f “ ∃c > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : g(n) ≤ c · f (n)
+
+(cid:73) g ∈ Θ(f ): f ist eine asymptotisch scharfe Schranke für g:
+
+„g = f “ ∃c(cid:48), c > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : c(cid:48) · f (n) ≤ g(n) ≤ c · f (n)
+
+(cid:73) g ∈ Ω(f ): f ist eine asymptotische untere Schranke für g:
+
+„g ≥ f “ ∃c(cid:48) > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : c(cid:48) · f (n) ≤ g(n)
+
+(cid:73) g ∈ ω(f ): f wird (asymptotisch) dominiert von g:
+„g > f “ ∀c(cid:48) > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : c(cid:48) · f (n) ≤ g(n)
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+16
+
+Eigenschaften
+
+Es gelten u.a. die folgenden einfachen Zusammenhänge:
+
+(cid:73) ω(f ) ⊂ Ω(f )
+(cid:73) o(f ) ⊂ O(f )
+(cid:73) Ω(f ) ∩ O(f ) = Θ(f )
+(cid:73) ω(f ) ∩ o(f ) = ∅
+(cid:73) Ω(f ) \ Θ(f ) = ω(f ), ω(f ) ∪ Θ(f ) = Ω(f )
+(cid:73) O(f ) \ Θ(f ) = o(f ), o(f ) ∪ Θ(f ) = O(f )
+(cid:73) O(f ) ∪ ω(f ) = o(f ) ∪ Ω(f )
+
+(cid:73) g = O(f ) ⇐⇒ f = Ω(g)
+(cid:73) g = o(f ) ⇐⇒ f = ω(g)
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+17
+
+Laufzeitschranken beim Sortieren
+
+Sortieren von n Elementen.
+
+(cid:73) InsertionSort:
+(cid:73) SelectionSort:
+(cid:73) MergeSort:
+(cid:73) QuickSort:
+(cid:73) HeapSort:
+
+O(n2)
+O(n2)
+
+Ω(n),
+Ω(n2),
+Ω(n log n), O(n log n) ⇒ Θ(n log n)
+Ω(n log n), O(n2)
+Ω(n),
+
+O(n log n)
+
+⇒ Θ(n2)
+
+(heterogene Daten) Ω(n log n), O(n log n) ⇒ Θ(n log n)
+
+(cid:73) BubbleSort:
+
+Ω(n),
+
+O(n2) pfui...
+
+Achtung!
+
+(cid:73) InsertionSort:
+(cid:73) SelectionSort:
+(cid:73) MergeSort:
+(cid:73) QuickSort:
+(cid:73) HeapSort:
+
+Θ(n2)
+Θ(n2)
+
+Best case Worst case Any case
+Θ(n)
+Θ(n2)
+Θ(n log n) Θ(n log n) Θ(n log n)
+Θ(n log n) Θ(n2)
+Θ(n)
+
+Ω(n log n)∩O(n2)
+Θ(n log n) Ω(n) ∩ O(n log n)
+
+Ω(n) ∩ O(n2)
+Θ(n2)
+
+(heterogene Daten) Ω(n log n) O(n log n) Θ(n log n)
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+18
+
+„Groberes“ Landausymbol
+
+˜O = „soft O“
+
+= O-Notation bei der logarithmische Faktoren ignoriert werden.
+
+g = ˜O(f ) ⇐⇒ ∃k : g = O(f logk f )
+
+Beachte: logk n = o(n(cid:96)) für alle Konstanten k, (cid:96) > 0!
+„Logaritmische Dinge wachsen immer langsamer als Polynome“
+
+z.B.
+
+3n log n
+
+√
+
+3n2
+4n log5 n
+4n log5 2n
+4n log5 n2
+
+= O(n2.5 log n)
+= O(n log5 n)
+= O(n log5 n)
+= O(n log5 n)
+
+= ˜O(n2.5)
+= ˜O(n)
+= ˜O(n)
+= ˜O(n)
+
+Warm Up: Formale
+
+Grundlagen & Sortieren
+
+Sortieren in Linearzeit
+
+Warm Up: Formale Grundlagen & Sortieren Sortieren in Linearzeit
+
+20
+
+Linearzeit Sortierverfahren
+
+Wir erinnern uns: Untere Schranke beim Sortieren: Ω(n log n)
+⇒ Gilt nur für vergleichsbasierte Sortierprobleme.
+Oft sortiert man Objekte, die man nicht nur auf
+kleiner/gleich/größer miteinander vergleichen kann, z.B.:
+
+(cid:73) Sortiere eine Menge von n natürlichen Zahlen mit Werten ≤ k.
+(cid:73) Sortiere eine Menge von n Objekten gemäß ihrem Indexwert
+
+(z.B. Primary Key?) der zwischen 1 und n liegt.
+
+(cid:73) Sortiere eine Menge von n Fliesskommazahlen, wobei nur die
+
+Werte {1, 1.3, π, π3, 9.003, 12.456} vorkommen.
+
+⇒ Wir kennen a priori eine beschränkte Menge der potentiell
+
+vorkommenden Schlüsselwerte.
+
+Verfahren aus Info-A: BucketSort
+
+Warm Up: Formale Grundlagen & Sortieren Sortieren in Linearzeit
+
+21
+
+BucketSort
+
+Gegeben: Objektmenge O = {o1, o2, . . . , on} und Schlüsselfolge
+S = (cid:104)s1, s2, . . . , sk(cid:105). Jedes Objekt oi, 1 ≤ i ≤ n, enthält einen
+Schlüssel key(oi) ∈ S.
+Gesucht: Liste der Objekte O, sortiert gemäß der Schlüsselfolge S.
+
+Im Allgemeinen haben also mehrere Objekte den selben Schlüssel!
+
+Algorithmus BucketSort:
+
+Sei L ein k-elementiges Array von leeren Listen („Buckets“)
+for all i = 1 . . . n:
+
+L[key(oi)].append(oi)
+
+// sortiere Objekte in Buckets
+
+Sei R eine leere Liste
+for all i = 1 . . . k:
+R.append(L[i])
+
+return R
+
+// hänge Buckets aneinander
+
+Laufzeit: Θ(n + k). Falls k = O(n) ⇒ Laufzeit Θ(n)
+
+Warm Up: Formale Grundlagen & Sortieren Sortieren in Linearzeit
+
+22
+
+BucketSort, Pros & Cons ⇒ CountingSort
+
+Vorteil: Sehr einfach zu beschreiben, implementieren und
+Korrektheit einzusehen. — BucketSort ist stabil (Elemente mit
+gleichem Schlüssel behalten ihre vorige relative Reihenfolge bei).
+
+Nachteil: Speicheroverhead durch Listenverwaltung. Wenn
+Implementierung mit Arrays: Θ(nk) Speicher (Jeder Bucket muss
+Platz für bis zu n Elemente bieten)⇒ plötzlich Θ(nk) Laufzeit :-(
+
+Alternative: CountingSort
+
+Idee: Verwalte die Objekte zwischenzweitlich nicht in Buckets,
+sondern zähle nur mit, wieviele Objekte jeweils in einem Bucket
+landen würden. Daraus können wir folgern, an welcher
+Indexposition im Lösungsarray ein Bucket beginnt bzw. endet.
+Beispiel: O = {α3, β1, γ2, δ1}, S = (cid:104)1, 2, 3(cid:105)
+⇒ Bucketgrößen: C[1] = 2, C[2] = 1, C[3] = 1
+⇒ (vorläuﬁges) Ergebnisarray (nur Schlüssel): ?1, ?1, ?2, ?3
+⇒ Ablaufen der Eingabe, um die korrekten Objekte einzusetzen
+(stabiles Sortierverfahre!): β1, δ1, γ2, α3
+
+Warm Up: Formale Grundlagen & Sortieren Sortieren in Linearzeit
+
+23
+
+CountingSort
+
+Algorithmus:
+Sei C ein k-elementiges Integerarray, mit 0en initialisiert.
+for all i = 1 . . . n:
+
+C[key(oi)] += 1
+for all i = 2 . . . k:
+C[i] += C[i − 1]
+
+// Erhöhe entspr. „Bucketgröße“ um 1
+
+// Errechne Endindex des i-ten Buckets
+
+Sei R ein n-elementiges Objektarray, anfangs leer.
+for all i = n . . . 1:
+
+// Von hinten nach vorne!
+
+R[ C[key(oi)] ] = oi
+C[key(oi)] –= 1
+
+return R
+
+// Bucket-Endindex nach vorne schieben.
+
+Laufzeit: Θ(n + k). Falls k = O(n) ⇒ Laufzeit Θ(n)
+Selbe O-Notation wie BucketSort, aber auf Arrays statt Listen.
+
+Sowohl BucketSort als auch CountingSort sind stabil.
+
+Warm Up: Formale Grundlagen & Sortieren Sortieren in Linearzeit
+
+24
+
+Ein Meta-Sortierverfahren: RadixSort
+
+1 Was, wenn die zu sortierenden natürlichen Zahlen zwar < k ist,
+k jedoch eine sehr große Zahl, z.B. 1 000 000? Soviele Buckets
+oder Counter wären in der Praxis böse...
+
+2 Was, wenn man Zeichenketten sortieren will? Die einzelnen
+
+Symbole kommen nur aus einer kleinen Schlüsselmenge (z.B.
+a, b, c, ..., z), die Strings können jedoch lang sein...
+
+Radix ≈ Wurzel ≈ Basis einer Zahlendarstellung
+RadixSort ist ein Sortierschema, dass intern ein anderes (lineares)
+stabiles Sortierverfahren benutzt (z.B. Bucket- oder CountingSort)
+
+Idee: Sortiere die Elemente mehrmals, jeweils nur gemäß einer
+Stelle (bei Zahlen: 1er-, 10er-, 100er-Stelle...; bei Zeichenketten
+erstes, zweites, drittes Symbol,...)
+
+Zwei Varianten:
+
+LSD: least signiﬁcant digit ﬁrst (z.B. für 1 )
+MSD: most signiﬁcant digit ﬁrst (z.B. für 2 )
+
+Warm Up: Formale Grundlagen & Sortieren Sortieren in Linearzeit
+
+25
+
+RadixSort: LSD & MSD
+
+1 LSD: least signiﬁcant digit ﬁrst
+
+Gegeben: n jeweils (cid:96)-stellige Zahlen. Sei Stelle 1 hinten.
+for all i = 1 . . . (cid:96): Sortiere Objekte stabil gemäß (cid:96)-ter Stelle
+
+Beispiel: Gegeben:
+
+652, 103, 012, 301, 537, 131, 102
+
+nach Iteration i = 1:
+nach Iteration i = 2:
+nach Iteration i = 3:
+
+301, 131, 652, 012, 102, 103, 537
+301, 102, 103, 012, 131, 537, 652
+012, 102, 103, 131, 301, 537, 652
+
+2 MSD: most signiﬁcant digit ﬁrst
+
+Sortiere die vorderste Stelle ⇒ k Buckets; Elemente eines
+Buckets haben immer die gleiche vorderste Stelle („ungefähr
+gleich groß“, lexikographische Sortierung). Sortiere jeden
+Bucket ohne vorderster Stelle rekursiv wieder mit RadixSort.
+Laufzeit: LSD Θ((cid:96)(n + k)), MSB Ω(n + k), O((cid:96)(n + k)).
+k ≤ n → Θ(n(cid:96)) vs. Ω(n) ∪ O(n(cid:96)). k und (cid:96) konstant → beide Θ(n).
+Nat. Zahlen < M: Θ(n log M) bzw. Ω(n + log M), O(n log M)
+
+Amortisierte Analyse
+
+Amortisierte Analyse
+
+27
+
+Amortisierte Analyse: Können Sie, keine Angst!
+
+Fahrpreise bei einer Sommerrodelbahn:
+
+1 Fahrt . . . . . . . . . 2 e
+5 Fahrten . . . . . . 9 e
+
+Wieviel kostet eine Fahrt asymptotisch, also wenn man viele
+Fahrten (n) macht?
+
+1 Jede Fahrt einzeln zahlen ⇒ 2 e / Fahrt
+2 Sei r ≤ 4 der Rest der Division n/5. Kaufe für die ersten n − r
+Fahrten insgesamt (n − r)/5 5er-Tickets, dann r Einzeltickets.
+Durchschnittl. Fahrpreis: 9e·(n−r)/5+2e·r
+5 + r
+Asymptotisch, d.h. n → ∞:
+limn→∞ 9
+
+= 9n/5−9r/5+2r
+
+5 + 0 = 1, 80 e / Fahrt
+
+5 + limn→∞ 9
+
+5n = 9
+
+5 + r
+
+5n ≤ 9
+
+n
+
+n
+
+= 9
+
+5n
+
+3 Asymptotisch kann man also, unabhängig von r, einfach immer
+
+auch ausschließlich (cid:100)n/5(cid:101) 5er-Tickets kaufen.
+
+4 Naïve Worst-Case Algorithmenanalyse: „Wenn kein Ticket
+(mehr), kaufe ein 5-Fahrten-Ticket (siehe 3 ).“ ⇒ Vor der Fahrt
+zahlt man entweder 0e oder 9e ⇒ Jedes mal max. 9 e zahlen
+⇒ obere Schranke 9 e / Fahrt
+
+Amortisierte Analyse
+
+28
+
+Wachsende Arrays, Grimm
+
+Aufgabe: Speichere Elemente in eine Datenstruktur. Welche?
+
+Jacob: Nimm ein Array, das ist klein, einfach und ﬂott.
+Wilhelm: Nein, dazu müsste man die Anzahl vorab wissen. Benutze
+eine Liste!
+Jacob: Listen benötigen so viel Overhead durch die Zeiger. Ich fange
+einfach mit einem kleinen Array an, und lasse es wachsen, wenn zu
+viele Elemente kommen.
+Wilhelm: Dann kannst Du aber nicht mehr in O(1) Zeit ein Element
+einfügen, weil Du womöglich das ganze Array umkopieren musst...
+Jacob: Kein Problem, ich kann amortisierte Analyse! Im
+Durchschnitt benötige ich immer noch nur O(1).
+
+Amortisierte Analyse Aggregationsmethode
+
+29
+
+Wachsende
+Arrays
+
+Laufzeit pro
+Operation?
+pop: O(1)
+push: O(cap)
+
+class Stack:
+int num
+int cap
+data A[1 . . . cap]
+
+// Anzahl der Elementa am Stack
+// Aktuelle Kapazität des Stack
+// Array, gefüllt für Indizes 1 . . . num
+// O(1) oder O(cap)
+// Array ist zu klein
+cap = 2 · cap; neues größeres A; kopiere Daten
+
+void push(data a):
+
+if num = cap:
+
+A[++num] = a
+
+data pop():
+
+return A[num – –]
+
+//O(1)
+
+Amortisierte Laufzeit einer Operation = durchschnittliche
+Laufzeit einer Operation im Worst Case einer Anwendung.
+
+Anwendung: n viele Aufrufe der Stackoperationen auf einem
+anfangs leeren Stack mit konstanter Anfangskapazität C.
+
+Amortisierte Analyse Aggregationsmethode
+
+30
+
+Wachsende Arrays
+
+Amortisierte Laufzeit einer Operation = durchschnittliche
+Laufzeit einer Operation im Worst Case einer Anwendung.
+
+Anwendung: n viele Aufrufe der Stackoperationen auf einem
+anfangs leeren Stack mit konstanter Anfangskapazität C.
+Best Case: immer abwechselnd push und pop → jeweils O(1)
+Worst Case: nur push Operationen.
+„C mal O(1), dann O(C), dann C mal O(1), dann O(2C), dann 2C
+mal O(1), dann O(4C), dann 4C mal O(1),...“
+⇒ O(n) „billige“ Operationen mit jeweils Laufzeit O(1)
+⇒ „Teure“ Laufzeiten (teuerste zuerst): O(n), O(n/2), O(n/4),. . .
+⇒Summe alle Laufzeiten:
+O(n · 1) + O(n + n/2 + n/4 + . . .) = O(n) + O(n) = O(n)
+⇒ Durchschnittliche Laufzeit = Summe-der-Laufzeiten
+
+Anzahl-der-Operationen = O(n)/n = O(1)
+
+Amortisierte Analyse Aggregationsmethode
+
+31
+
+Binärzahlen inkrementieren
+
+Operation BinIncr: Sei α eine Binärzahl mit n vielen Stellen. Erhöhe
+α um eins. Wieviele Bit-Rechenschritte benötigt das?
+Algorithmus?
+Mit αi bezeichnen wir die i-te Bit von α,
+beginnend mit dem least signiﬁcant
+(„Einer-Stelle“, ganz rechts).
+Zahl „111 . . . 111111“: Schleife wird O(n) mal durchlaufen.
+⇒BinIncr benötigt O(n) Zeit... ja, aber...
+Asymptotische Analyse: Was ist der durchschnittliche
+Aufwand, wenn man BinIncr n mal hintereinander aufruft?
+
+αi = 1 − αi
+if αi = 1 then return
+
+for i = 1 . . . n + 1:
+
+Laufzeit von BinIncr ist linear abhängig von der Anzahl der
+ausgeführten Bit-Flips. Nicht jeder BinIncr-Aufruf ﬂippt jedes Bit:
+α1 wird jedes mal geﬂippt, α2 jedes 2. Mal, α3 jedes 4. Mal,...
+Summe über alle Bit-Flips bei n Aufrufen:
+
+n + n/2 + n/4 + n/8 + ... ≤ n ·(cid:80)∞
+
+i=0 2−i = 2n
+
+Durchschnittliche Anzahl an Bit-Flips ≤ 2n/n = O(1)
+
+(cid:3)
+
+Amortisierte Analyse Buchhalter- und Potenzialmethode
+
+32
+
+Beweistechniken der Asymptotischen Analyse
+
+Bisher:
+
+(cid:73) Aggregationsmethode (aggregate analysis).
+
+Idee: Erkenne den WorstCase, summiere alle Laufzeiten der n
+Operationen, und dividiere diese Laufzeitsumme durch n.
+
+Vorteil: Einfach zu verstehen.
+Nachteil: Klappt nur, wenn man (a) den WorstCase gut ﬁnden &
+beschreiben kann, (b) die Summe gut berechnen kann, und (c) keine
+unterschiedlichen Operationen mit unterschiedlichen Kosten hat.
+
+Daher gibt es als Alternative auch:
+
+(cid:73) Buchhaltermethode (accounting method).
+
+Idee: Man beweist, dass eine Operation amortisiert max. R Zeit
+benötigt. Man verwaltet ein „Konto“ K. Jede auszuführende
+Operation zahlt zunächst R Einheiten in K ein. Danach
+entnimmt sie so viele Einheiten aus K wie sie tatsächlich Zeit
+benötigt. Man zeigt, dass K nie negativ wird.
+(cid:73) Potentialmethode (potential method).
+
+Idee: ... später, zunächst Buchhaltermethode...
+
+Amortisierte Analyse Buchhalter- und Potenzialmethode
+
+33
+
+Buchhaltermethode @ Wachsendes Array
+
+Beispiel: Wachsendes Array
+Beobachtung: Wieviele Zeiteinheiten benötigt push/pop?
+
+push: Entweder O(1), sagen wir 1; oder O(cap), sagen wir cap.
+pop: O(1), sagen wir 1.
+
+Behaupt.: push benötigt amortisiert O(1), sagen wir 3, Zeiteinh.
+Beweis mittels Buchhaltermethode.
+Super: keine explizite Argumentation über WorstCase nötig!
+Initial ist K = 0. Zeige, dass nach jeder Operation K ≥ 0 gilt.
+Aufruf von pop: K := K + 1 − 1 ⇒ K ändert sich nicht, K ≥ 0.
+Aufruf „billiges“ push: K := K + 3 − 1. ⇒ K wächst um 2, K ≥ 0.
+Aufruf „teures“ push: Seit letztem teuren push sind mindestens
+cap/2 billige pushs passiert. Direkt nach dem letzten teuren push
+galt K ≥ 0, nun gilt also K ≥ 2 · cap/2 = cap. ⇒ Auch nach
+Entnahme von cap Einheiten für den teuren push bleibt K ≥ 0.
+
+(cid:3)
+
+Amortisierte Analyse Buchhalter- und Potenzialmethode
+
+34
+
+Buchhaltermethode @ BinIncr
+
+Beispiel: BinIncr
+Für jedes Bit-Flippen benötigen wir O(1) Zeit → „1 Münze zahlen“.
+Beh.: BinIncr benötigt amortisiert O(1) Zeit → 2 Münzen.
+Beweis mittels Buchhaltermethode.
+Jedes Binärstelle von α hat ein eigenes Konto. Invariante: Jedes 1-Bit
+erhält eine Münze. Anfangs α = 0.
+Beobachtung: Schleife wird nur fortgesetzt, wenn αi von 1 auf 0
+geﬂippt wird.
+
+Aufruf von BinIncr: Die Operation hat 2 Münzen zur Verfügung um
+für seine Schritte zu bezahlen, und die Invariante zu erhalten.
+Wenn BinIncr auf eine 1 trifft, benutzt es die dort vorhandene
+Münze um den Flip auf 0 zu bezahlen.
+Wenn BinIncr auf eine 0 trifft, benutzt es seine erste eigene Münze
+um den Flip auf 1 zu bezahlen, und übergibt seine zweite Münze
+dem neuen 1-Bit (um die Invariante zu erhalten).
+
+(cid:3)
+
+Amortisierte Analyse Buchhalter- und Potenzialmethode
+
+35
+
+Potentialmethode
+
+Ähnlich Buchhaltermethode, aber doch etwas anders...
+Statt einem oder mehrerer Konten hat man eine
+Potentialfunktion Φ für die Datenstruktur D. Diese speichert
+„Energie“ um die Datenstruktur zu betreiben.
+
+Sei: ci = Kosten der i-ten Operation.
+
+Φi−1, Φi Potential vor und nach Operation i.
+Meist: Φ0 = 0
+⇒ Amortisierte Kosten ¯ci := ci + (Φi − Φi−1)
+
+i=1(ci + Φi − Φi−1) =(cid:80)n
+
+i=1 ci + (Φn − Φ0)
+
+Summe:(cid:80)n
+
+i=1 ¯ci =(cid:80)n
+
+Falls Φn ≥ Φ0 ⇒ Summe der amortisierte Kosten ist obere Schranke
+für Summe der echten Kosten.
+Wenn man Φi − Φ0 für alle i zeigt → Buchhaltermethode!
+Mächtigkeit der Potentialmethode („Kosten müssen nicht vorab
+bezahlt werden“, Φi < 0 erlaubt für 0 < i < n) nur selten notwendig.
+
+Amortisierte Analyse Buchhalter- und Potenzialmethode
+
+36
+
+Potentialmethode @ BinIncr
+
+(cid:73) Deﬁniere geeignete Potentialfunktion:
+
+Φ gibt stets die Anzahl der 1-Bits in α an ⇒ Φi ≥ 0, ∀0 ≤ i ≤ n
+
+⇒ ci := ti + 1
+
+(cid:3)
+
+(cid:73) Berechne amortisierte Kosten:
+
+i-tes BinIncr ﬂippt ti + 1 bits (t1mal 1→0; 1mal 0→1)
+⇒ (Φi − Φi−1) = (Φi−1 − ti + 1) − Φi−1 = 1 − ti
+⇒ ¯ci := ci + (Φi − Φi−1) = ti + 1 + 1 − ti = 2
+(cid:73) Falls initial α = 0: Φ0 = 0 ≤ Φn ⇒ fertig!
+(cid:73) Falls initial α > 0 (k 1er-Bits): womöglich Φ0 > Φn :-(
+
+... aber:(cid:80)n
+i=1 ci =(cid:80)n
+
+i=1 ¯ci − (Φn − Φ0) =(cid:80)n
+
+i=1 2 − (Φn − Φ0) ≤ 2n + k
+
+Falls k = O(n) ist die Kostensumme also O(n)!
+⇒ Sobald n = Ω(k) Operationen ausgeführt werden, haben wir
+(cid:3)
+O(1) amortisierte Kosten für BinIncr.
+
+Suchstrukturen
+
+Suchstrukturen
+
+Dictionary
+
+38
+
+Was ist der abstrakte Datentyp (ADT) Dictionary?
+
+Dictionary = Eine Datenstruktur, die folgendes Anforderungsproﬁl
+erfüllt: Ein item besteht aus key und data. Folgende Operationen
+efﬁzient möchten wir efﬁzient unterstützen:
+
+(cid:73) void insert(item)
+(cid:73) item* ﬁnd(key)
+(cid:73) void delete(item*)
+
+Ggf. auch gerne:
+
+(cid:73) item* min() und item* max()
+(cid:73) item* predecessor(item*) und item* successor(item*)
+
+Welche Datenstruktur kann das?
+
+Suchstrukturen
+
+Wiederholung: Binäre Suchbäume
+
+aus Informatik A
+
+Suchstrukturen Wiederholung: Binäre Suchbäume aus Informatik A
+
+40
+
+Binäre Suchbäume
+
+key → 17
+data → bla
+L , R
+
+key → 17
+
+9
+sup
+L , R
+
+23
+grp
+L , R
+
+⇒
+
+9
+
+23
+
+19
+wly
+L , R
+
+43
+pft
+
+L , R
+
+19
+
+43
+
+Wir erinnern uns, wie ﬁnd, insert, delete geht, oder?
+→ Sonst: siehe Informatik A
+
+Suchstrukturen Wiederholung: Binäre Suchbäume aus Informatik A
+
+41
+
+Problem: Suchbaum womöglich unbalanciert
+
+4
+
+9
+
+14
+
+17
+
+19
+
+34
+
+17
+
+55
+
+9
+
+20
+
+41
+
+89
+
+4
+
+14
+
+19
+
+23
+
+39
+
+42
+
+65
+
+92
+
+92
+
+Logarithmische Höhe ⇒
+
+„teure“ Operationen in O(log n)
+
+Lineare Höhe ⇒
+
+„teure“ Operationen in O(n)
+
+Suchstrukturen Wiederholung: Binäre Suchbäume aus Informatik A
+
+42
+
+AVL-Bäume
+
+34 +1
+
+17 0
+
+55 +1
+
+9 −1
+
+20 0
+
+89 0
+
+14 0 19 0 23 0
+
+Kernidee: Balancewerte −1,0,+1 an jedem Knoten. Beim
+Einfügen/Löschen an Knoten „rotieren“.
+Vorteil: Garantierte O(log n) Höhe.
+
+Nachteile: — Nur „schwach“ balanciert
+
+— Fummelig und irgendwie hässlich...
+— In der Praxis nicht besonders toll
+
+Suchstrukturen
+
+B-Bäume
+
+Suchstrukturen B-Bäume
+
+44
+
+Probleme der binären Suchbäumen
+
+(cid:73) Schwache vs. Starke Balance:
+
+Perfekt balancierter Binärbaum = vollständiger Binärbaum:
+Jedes Level vollständig gefüllt, alle Blätter auf der selben Ebene
+⇒ Klappt nur bei 2k − 1, k ∈ N, Knoten...
+Quasi-perfekt balancierter Binärbaum = wie BinaryHeap:
+Jedes Level, außer vielleicht dem letzten, vollständig gefüllt.
+Blätter also nur auf den untersten zwei Ebenen
+⇒ Rebalancieren nach Einfügen/Löschen wäre sehr teuer
+
+(Suchbaum (cid:54)= Heap!)
+
+(cid:73) Geschwindigkeit der Speicherzugriffe:
+
+Bei jedem Absteigen im Baum folgt man einem Zeiger
+→ dieser zeigt auf einen beliebigen, ggf. „weit entfernten“
+→ dieser ist noch nicht in einem schnellen CPU-nahen Cache!
+→ Wartezeit durch Laden vom Speicher
+
+Speicherbereich
+
+Suchstrukturen B-Bäume
+
+Große Knoten
+
+45
+
+Idee: Nicht nur binäre Bäume betrachten!
+Ein Knoten der Ordnung m hat m Kinder c0, c1, . . . , cm−1 und
+m − 1 Schlüssel k1, k2, . . . , km−1 mit ki < ki+1 für alle 1 ≤ i < m − 1.
+Der Teilbaum von Kind i enthält nur Schlüssel im Intervall (ki, ki+1),
+mit k0 := −∞, km := +∞. ⇒ Der Knoten ist wohl-geordnet.
+
+k1
+
+k2
+
+. . .
+
+km−1
+
+c0
+
+c1
+
+c2
+
+cm−2
+
+cm−1
+
+. . . < k1
+
+k1 < . . . < k2
+
+k2 < . . . < k3
+
+km−2 < . . . < km−1 km−1 < . . .
+
+Tiefe bei r Knoten?
+
+(cid:100)logm r(cid:101)
+
+Bäume mit nur Knoten der Ordnung m:
+
+Tiefe bei n Schlüsseln? (cid:6) logm(cid:100) n
+m−1(cid:101)(cid:7)
+
+Binärbaum
+log2 r
+log2 n
+großes m → ﬂacherer Baum (+ weniger Knoten, Zeigeroverhead,...)
+
+Suchstrukturen B-Bäume
+
+46
+
+B-Baum: Geschichte & Nutzen
+
+B-Baum. 1972 durch Bayer & McCreight entwickelt (ohne
+Namenserklärung). Perfekt balancierter Baum, dessen Knoten alle
+(ungefähr) Ordnung M haben (Details folgen).
+
+Alle großen Dateisysteme und Datenbanken benutzen
+intern B-Bäume (bzw. Varianten davon)! B-Bäume sind speziell
+für riesige Datenmengen sehr geeignet.
+
+Speicherzugriffe. Annahme 1.000.000 Schlüssel (das ist wenig!)
+in einem perfekt balancierten Suchbaum. Jedes Absteigen im Baum
+(Folgen eines Zeigers) benötigt einen teuren Externspeicherzugriff.
+50% aller Suchanfragen laufen bis zur einem Blatt, 75% bis zu den
+unteren beiden Ebenen, etc.
+⇒ Binärbaum log2(106) ≈ 20 Ladevorgänge.
+⇒ B-Baum, Ordnung 100 (winzig!): ≈ log100 106/100 = 2 Ladevorg.
+⇒ B-Baum, Ordnung 1000: ≈ log1000 106/1000 = 1 Ladevorgang.
+
+Suchstrukturen B-Bäume
+
+47
+
+B-Baum der Ordnung M
+
+53
+
+12
+
+23
+
+34
+
+67
+
+89
+
+9
+
+17
+
+27
+
+31
+
+35
+
+38
+
+44
+
+57
+
+69
+
+74
+
+99
+
+1 Alle Knoten sind wohl-geordnet.
+2 Alle Knoten haben Ordnung ≤ M.
+3 Der Baum ist leer oder die Wurzel hat Ordnung ≥ 2. Alle
+
+anderen Knoten haben Ordnung ≥ (cid:100)M/2(cid:101).
+
+4 Der Baum ist vollständig (inneren Knoten haben keine NIL-Zeiger).
+5 Alle Blätter haben die gleiche Tiefe.
+6 (Alle Schlüssel sind unterschiedlich.)
+7 (Zu jedem Schlüssel werden auch Daten gespeichert.)
+
+Ordnung M in diesem Beispiel? M = 4
+
+Suchstrukturen B-Bäume
+
+Existenz
+
+48
+
+Theorem. Für jede Schlüsselmenge S, n := |S|, und jedes
+M ∈ N, M ≥ 3 existiert ein B-Baum der Ordnung M.
+Beweis. Basisfall n < M: Es reicht ein einzelner Wurzelknoten.
+Sonst: Beweis durch rekursiven Aufbau von unten nach oben.
+
+Partitioniere S in (cid:96) + 2 paarweise disjunkte Teilmengen S0, . . . , S(cid:96), T.
+(cid:73) Die Trenner T sind sortiert t1 < . . . < t(cid:96).
+(cid:73) (cid:100)M/2(cid:101) ≤ |Si| + 1 ≤ M, d.h. jedes Si passt legal in einen Knoten.
+⇒ Die Mengen S0, . . . , S(cid:96) bilden die Blätter des B-Baumes. Für die
+Trenner T baue rekursiv mittels des Theorems einen B-Baum.
+Dessen NIL-Zeiger werden Verweise auf S0, . . . , S(cid:96).
+Was ist (cid:96) ? Wähle (cid:96) := (cid:98)n/M(cid:99), und verteile die Elemente so, dass
+alle Si möglichst gleich groß sind. Dann gilt für jedes Si:
+
+(cid:23)
+
+(cid:22) n − (cid:96)
+Zu zeigen: (cid:100)M/2(cid:101) ≤(cid:106) n−(cid:96)
+(cid:107)
+
+(cid:96) + 1
+
+(cid:96)+1
+
++ 1 und
+
+≤ |Si| ≤
+
+(cid:25)
+
+(cid:24) n − (cid:96)
+(cid:108) n−(cid:96)
+(cid:109)
+
+(cid:96)+1
+
+(cid:96) + 1
++ 1 ≤ M
+
+Suchstrukturen B-Bäume
+
+49
+
+Existenzbeweis (Fortsetzung)
+
+(cid:39)
+
+=
+
+M
+
+n − n−M+1
+n−M+1
+M + 1
+n + 1
+
++
+
+n−M+1
+n−M+1
+
+M + 1
+M + 1
+
+(cid:25)
+
+=
+
+M
+
+n − M + 1 + M
+
+=
+
+M
+
+n + 1
+n + 1
+
+(cid:25)
+
+= M
+
+(cid:24)
+
+(cid:23)
+
+(cid:25)
+(cid:39)
+
+(cid:38)
+(cid:24)
+
+≤
+
++ 1
+
+(cid:96)+1
+
++ 1 ≤ M:
+
+(cid:109)
+(cid:108) n−(cid:96)
+(cid:24) n − (cid:98) n
+M(cid:99)
+(cid:38)
+(cid:98) n
+M(cid:99) + 1
+n + 1
+(cid:107)
+M + 1
+
+n−M+1
+
+=
+
+(cid:106) n−(cid:96)
+(cid:23)
+
+(cid:96)+1
+
++ 1 =
+
+(cid:73) Zu zeigen:
+
+(cid:24) n − (cid:96)
+
+(cid:25)
+
++ 1 =
+
+(cid:96) + 1
+
+(cid:73) Zu zeigen
+
+(cid:22) n − (cid:96)
+
+(cid:96) + 1
+
+(cid:22) n − n
+(cid:23) (n≥M)≥
+
+M
+n
+M + 1
+
++
+
++ 1
+
+≥
+
++ 1 ≥ (cid:100)M/2(cid:101):
+(cid:22) n − (cid:98) n
+M(cid:99)
+(cid:22) n + 1
+(cid:23)
+(cid:98) n
+M(cid:99) + 1
+(cid:22) M + 1
+(cid:23)
+
+n
+M + 1
+
+=
+
+=
+
+=
+
+=
+
+2
+
+(cid:23)
+
+(cid:22)
+(cid:24) M
+
+M
+
+2
+
+n + 1
+n + M
+
+(cid:25)
+
+n
+M + 1
+n
+M + 1
+
+(cid:22)
+
+=
+
+(cid:23)
+
+M
+
+M + 1
+
+2M
+
+=
+
+(cid:3)
+
+Suchstrukturen B-Bäume
+
+50
+
+Tiefe eines B-Baums
+
+Theorem. Die Anzahl der Schlüssel eines B-Baums der Tiefe t liegt
+im Intervall [2 · (M/2)t − 1, Mt+1 − 1].
+
+Beweis.
+Maximum: Alle Knoten voll ⇒ immer M Kinder
+
+⇒ Mt Blätter ⇒ Mt − 1 Schlüssel in inneren Knoten.
+
+⇒ nmax := Mt · (M − 1) + Mt − 1 = Mt+1 − 1
+Minimum: Alle Knoten nur „halb voll“ und Wurzel nur zwei Kinder
+
+⇒ b := 2 · (M/2)t−1 Blätter ⇒ b − 1 Schlüssel in inneren Knoten.
+⇒ nmin := 2 · (M/2)t−1 · (M/2 − 1) + 2 · (M/2)t−1 − 1 = 2 · (M/2)t − 1
+
+Korollar. Die Tiefe jedes B-Baums mit n Schlüsseln ist Θ(logM n).
+Beweis.
+tmin = (cid:100)logM(nmax + 1) − 1(cid:101) → t = Ω(logM n)
+tmax = (cid:100)logM/2
+
+(cid:101) → t = O(logM/2 n) = O(logM n)
+
+nmin+1
+
+2
+
+Suchstrukturen B-Bäume
+
+51
+
+Suche in einem B-Baum
+
+(M = 3)
+
+53
+
+12
+
+23
+
+89
+
+9
+
+17
+
+27
+
+31
+
+69
+
+74
+
+99
+
+Data ﬁnd(Schlüssel k):
+
+return ﬁndR(k,Wurzel des B-Baums)
+
+Data ﬁndR(Schlüssel k, Knoten node):
+
+if node = NIL then return NIL
+for i = 1 . . . node.numberOfKeys:
+
+// naïv!
+//not found
+
+if k < node.key[i] then return ﬁndR(k,node.child[i − 1])
+if k = node.key[i] then return node.data[i])
+return ﬁndR(k,node.child[node.numberOfKeys])
+
+//found
+
+Suchstrukturen B-Bäume
+
+52
+
+Laufzeit: Suche
+
+Lemma. Die Laufzeit von ﬁnd auf einem B-Baum mit n Schlüsseln
+ist O(log2 n). Dabei werden O(logM n) Knoten besucht.
+Beweis.
+Laufzeit = Anzahl der besuchten Knoten × Aufwand pro Knoten
+Anzahl der besuchten Knoten = Tiefe des B-Baums = O(logM n)
+Aufwand pro Knoten:
+Naïv (vorige Folie): lineare Suche, O(M)
+Mittels binärer Suche innerhalb eines Knotens: O(log2 M)
+
+Gesamtlaufzeit:
+
+O(logM n × log2 M) = O
+
+(cid:18) log2 n
+
+log2 M
+
+(cid:19)
+
+× log2 M
+
+= O(log2 n)
+
+Suchstrukturen B-Bäume
+
+Insert (15)
+
+(M = 3)
+
+53
+
+53
+
+12
+
+23
+
+89
+
+9
+
+17
+
+27
+
+31
+
+69
+
+74
+
+99
+
+Füge 15 ein.
+Tue dies im passenden Blatt!
+
+Suchstrukturen B-Bäume
+
+Insert (15)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+89
+
+54
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+74
+
+99
+
+Knoten wurde nicht zu groß → fertig.
+
+Suchstrukturen B-Bäume
+
+Insert (75)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+89
+
+55
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+74
+
+99
+
+Füge 75 ein.
+
+Suchstrukturen B-Bäume
+
+Insert (75)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+89
+
+56
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+74
+
+75
+
+99
+
+Blatt wird zu groß!
+→ Blatt aufspalten, mittleren Schlüssel nach oben ziehen.
+
+Suchstrukturen B-Bäume
+
+Insert (75)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+74
+
+89
+
+57
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+75
+
+99
+
+Nach dem Aufspalten ist nun kein Knoten zu groß.
+
+Suchstrukturen B-Bäume
+
+Insert (29)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+74
+
+89
+
+58
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+75
+
+99
+
+Füge 29 ein.
+
+Suchstrukturen B-Bäume
+
+Insert (29)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+74
+
+89
+
+59
+
+9
+
+15
+
+17
+
+27
+
+29
+
+31
+
+69
+
+75
+
+99
+
+Blatt muss aufgespaltet werden.
+
+Suchstrukturen B-Bäume
+
+Insert (29)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+29
+
+74
+
+89
+
+60
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+75
+
+99
+
+Blätter passen, aber innerer Knoten nun zu groß.
+→ wieder aufspalten und Problem nach oben schieben...
+
+Suchstrukturen B-Bäume
+
+Insert (29)
+
+(M = 3)
+
+23
+
+53
+
+12
+
+29
+
+74
+
+89
+
+61
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+75
+
+99
+
+Nun passt alles.
+
+Suchstrukturen B-Bäume
+
+Insert (20)
+
+62
+
+23
+
+53
+
+(M = 3)
+
+8
+
+12
+
+29
+
+89
+
+2
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+92
+
+99
+
+Und ein letztes mal noch: Füge 20 ein.
+
+Suchstrukturen B-Bäume
+
+Insert (20)
+
+63
+
+23
+
+53
+
+(M = 3)
+
+8
+
+12
+
+29
+
+89
+
+2
+
+9
+
+15
+
+17
+
+20
+
+27
+
+31
+
+69
+
+92
+
+99
+
+Blatt muss aufgespaltet werden.
+
+Suchstrukturen B-Bäume
+
+Insert (20)
+
+64
+
+23
+
+53
+
+(M = 3)
+
+8
+
+12
+
+17
+
+29
+
+89
+
+2
+
+9
+
+15
+
+20
+
+27
+
+31
+
+69
+
+92
+
+99
+
+Innerer Knoten muss aufgespaltet werden.
+
+Suchstrukturen B-Bäume
+
+Insert (20)
+
+65
+
+12
+
+23
+
+53
+
+(M = 3)
+
+8
+
+17
+
+29
+
+89
+
+2
+
+9
+
+15
+
+20
+
+27
+
+31
+
+69
+
+92
+
+99
+
+Wurzel zu groß → Auch Wurzel aufspalten.
+
+Suchstrukturen B-Bäume
+
+Insert (20)
+
+66
+
+23
+
+12
+
+53
+
+(M = 3)
+
+8
+
+17
+
+29
+
+89
+
+2
+
+9
+
+15
+
+20
+
+27
+
+31
+
+69
+
+92
+
+99
+
+Spätestens nach dem Aufspalten der Wurzel ist jeder Knoten legal
+groß.
+
+Suchstrukturen B-Bäume
+
+67
+
+Insert: Algorithmus
+
+void insert(Schlüssel k, Daten d):
+
+Finde Blatt leaf zum Einfügen von k
+if k schon im B-Baum enthalten:
+
+// analog zu ﬁnd
+
+Aktualisieren der Daten oder Fehlermeldung, return
+
+insertInto(k,leaf ,NIL,NIL)
+
+void insertInto(Schlüssel k, Knoten K, Knoten c1, c2)
+
+Finde Einfügeposition für k in K und füge k ein
+Ersetze dabei den alten Zeiger an dieser Position durch zwei
+
+Zeiger c1, c2 (links und rechts von neuem Schlüssel k)
+
+if node.numberOfChildren > M:
+
+repair(K)
+
+void repair(Knoten K)
+p = K.parent
+Spalte K an Schlüssel k := (cid:98)M/2(cid:99) − 1 in Knoten n1, n2 auf
+if p = NIL:
+
+Erzeuge neue leere Wurzel p für den B-Baum
+
+insertInto(k,p,n1,n2)
+
+Suchstrukturen B-Bäume
+
+68
+
+Insert: Laufzeit
+
+Lemma. Die Laufzeit von insert in einem B-Baum mit n Schlüsseln
+ist O(log2 n). Dabei werden O(logM n) Knoten besucht.
+Beweis.
+Laufzeit = Anzahl der besuchten Knoten × Aufwand pro Knoten
+Anzahl der besuchten Knoten: Tiefe des B-Baums = O(logM n)
+Zunächst von der Wurzel abwärts bis zum richtigen Blatt, dann ggf.
+wegen Aufspaltungen wieder bis oben aufsteigen.
+Aufwand pro Knoten: Absteigen: O(log2 M) (wie ﬁnd).
+Aufsteigen: Einfügen & Aufspalten... Implementierungsabhängig!
+
+Einfaches Array: O(M)
+Lokale Suchbäume innerhalb des Knoten: O(log2 M)
+
+In der Praxis sind einfache Arrays am schnellsten!
+Gesamtlaufzeit: O(logM n × log2 M) = O(log2 n)
+
+Suchstrukturen B-Bäume
+
+Delete (17)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+74
+
+89
+
+69
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+75
+
+99
+
+Entferne 17.
+
+Suchstrukturen B-Bäume
+
+Delete (15)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+74
+
+89
+
+70
+
+9
+
+15
+
+27
+
+31
+
+69
+
+75
+
+99
+
+Das hat ja einfach geklappt... nun entferne 15 ein.
+
+Suchstrukturen B-Bäume
+
+Delete (15)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+74
+
+89
+
+71
+
+9
+
+27
+
+31
+
+69
+
+75
+
+99
+
+Knoten ist nun zu klein: weniger als (cid:100)M/2(cid:101) Zeiger...
+→ rotiere von „reichem“ Nachbar-Bruder
+
+Suchstrukturen B-Bäume
+
+Delete (15)
+
+(M = 3)
+
+53
+
+12
+
+27
+
+74
+
+89
+
+72
+
+9
+
+23
+
+31
+
+69
+
+75
+
+99
+
+Knoten ist nun groß genug, Größe des Vaters ändert sich nicht,
+Bruder war ausreichend groß. → fertig.
+
+Suchstrukturen B-Bäume
+
+Delete (23)
+
+(M = 3)
+
+53
+
+12
+
+27
+
+74
+
+89
+
+73
+
+9
+
+23
+
+31
+
+69
+
+75
+
+99
+
+Löschen von 23.
+
+Suchstrukturen B-Bäume
+
+Delete (23)
+
+(M = 3)
+
+53
+
+12
+
+27
+
+74
+
+89
+
+74
+
+9
+
+31
+
+69
+
+75
+
+99
+
+Knoten zu klein... und keiner der Nachbar-Brüder ist groß genug um
+einen Schlüssel abzugeben...
+→ Dann ist so ein Nachbar-Bruder aber klein genug, um ein Element
+aufzunehmen!
+
+Suchstrukturen B-Bäume
+
+Delete (23)
+
+(M = 3)
+
+53
+
+12
+
+74
+
+89
+
+75
+
+9
+
+27
+
+31
+
+69
+
+75
+
+99
+
+Der Vaterknoten ist nicht zu klein geworden → fertig
+
+76
+
+53
+
+12
+
+74
+
+9
+
+27
+
+69
+
+71
+
+75
+
+81
+
+Suchstrukturen B-Bäume
+
+Delete (9)
+
+(M = 3)
+
+Entferne 9
+
+Suchstrukturen B-Bäume
+
+Delete (9)
+
+(M = 3)
+
+77
+
+53
+
+12
+
+74
+
+27
+
+69
+
+71
+
+75
+
+81
+
+Blatt zu klein, kein großer Nachbar-Bruder
+→ Verschmelzen mit Schlüssel aus Vater
+
+Suchstrukturen B-Bäume
+
+Delete (9)
+
+(M = 3)
+
+78
+
+53
+
+74
+
+12
+
+27
+
+69
+
+71
+
+75
+
+81
+
+Blatt nun okay, aber ist der innere Knoten zu klein
+⇒ den selben Prozess an diesem Knoten wiederholen:
+
+→ Ist ein Nachbar-Bruder groß genug? Dann rotiere...
+→ Also mit Nachbar-Bruder verschmelzen
+
+...hier: Nachbar-Bruder ist zu klein
+
+Suchstrukturen B-Bäume
+
+Delete (9)
+
+(M = 3)
+
+79
+
+53
+
+74
+
+12
+
+27
+
+69
+
+71
+
+75
+
+81
+
+Nun ist die Wurzel zu klein.
+Achtung: Die Wurzel benötigt nur mind. zwei Kinder, nicht (cid:100)M/2(cid:101)!
+⇒ Wurzel ist nur zu klein, wenn sie keinen Schlüssel mehr enthält
+⇒ Lösche Wurzel; einziges Kind wird die neue Wurzel
+
+80
+
+53
+
+74
+
+12
+
+27
+
+69
+
+71
+
+75
+
+81
+
+Suchstrukturen B-Bäume
+
+Delete (9)
+
+(M = 3)
+
+Fertig!
+
+Suchstrukturen B-Bäume
+
+Delete (53)
+
+(M = 3)
+
+53
+
+12
+
+23
+
+74
+
+89
+
+81
+
+9
+
+15
+
+17
+
+27
+
+31
+
+69
+
+75
+
+99
+
+Was, wenn das zu entfernende Element nicht in einem Blatt liegt?
+→ Entferne 53
+⇒ Tausche den Schlüssel mit seinem direkten Vorgänger:
+Dieser liegt immer in einem Blatt!
+→ Lösche danach im Blatt. Falls das Blatt dabei zu klein wird: selbes
+Vorgehen wie vorhin.
+
+Suchstrukturen B-Bäume
+
+Delete (53)
+
+(M = 3)
+
+31
+
+12
+
+23
+
+74
+
+89
+
+82
+
+9
+
+15
+
+17
+
+27
+
+69
+
+75
+
+99
+
+Fertig
+
+Suchstrukturen B-Bäume
+
+83
+
+Delete: Algorithmus
+
+void delete(Schlüssel k):
+
+Finde k; sei K sein Knoten
+if K ist kein Blatt:
+
+Finde Vorgänger k(cid:48); sei K(cid:48) sein Knoten (ein Blatt)
+Vertausche k und k(cid:48) und setze K = K(cid:48)
+
+// analog zu ﬁnd
+
+Entferne k aus K
+ensureSize(K)
+
+// K ist ein Blatt
+// Größen-Eigenschaften beibehalten
+
+void ensureSize(Knoten K)
+
+if K ist Wurzel and K.numberOfKeys = 0:
+if K ist nicht die Wurzel and K.numberOfKeys < (cid:100)M/2(cid:101) − 1:
+
+Setze K.child[0] als neue Wurzel und lösche K
+
+K2 = linker oder rechter Nachbarbruder von K
+Kp = K.parent, kp = Trennschlüssel zwischen K und K2
+if K2.numberOfKeys ≥ (cid:100)M/2(cid:101):
+
+Annahme K2 links von K: Rechtester key von K2 nach Kp; kp nach
+K; rechtestes Kind von K2 wird linkestes Kind von K.
+
+Rotiere von K2 nach K
+
+else:
+
+Verschmelze K2, kp, K
+ensureSize(Kp)
+
+// Kp verliert kp
+
+Suchstrukturen B-Bäume
+
+84
+
+Delete: Laufzeit
+
+Lemma. Die Laufzeit von delete in einem B-Baum mit n Schlüsseln
+ist O(log2 n). Dabei werden O(logM n) Knoten besucht.
+Beweis. Analog zu insert.
+Laufzeit = Anzahl der besuchten Knoten × Aufwand pro Knoten
+Anzahl der besuchten Knoten = Tiefe des B-Baums = O(logM n)
+Zunächst von der Wurzel abwärts bis zum zu entfernenden
+Schlüssel und ggf. weiter bis zum Blatt mit Vorgänger. Danach ggf.
+wegen Verschmelzungen wieder bis oben aufsteigen.
+Aufwand pro Knoten: Absteigen: O(log2 M) (wie ﬁnd).
+Aufsteigen: Entfernen & Verschmelzen...
+
+Einfaches Array: O(M)
+Lokale Suchbäume innerhalb des Knoten: O(log2 M)
+In der Praxis sind einfache Arrays wieder am schnellsten!
+Gesamtlaufzeit: O(logM n × log2 M) = O(log2 n)
+
+Suchstrukturen B-Bäume
+
+85
+
+Anmerkungen
+
+Rotation vs. Verschmelzen.
+Warum versucht man bei delete nicht z.B. mittels 2 Rotationen
+einen Schlüssel vom Nachbarbruder des Nachbarbruders zu holen,
+statt das Problem nach oben zu verschieben?
+Alle Brüder auf ihre Größe abzufragen, bedeutet bis zu M − 1
+Knotenbetrachtungen → gute B-Bäume sind weit weniger tief als M!
+⇒ Es ist gut wenn wir das Problem durch Verschmelzen nach oben
+schieben können: Im besten Fall schrumpft die Tiefe des Baums!
+⇒ Wir wollen lieber verschmelzen als zu rotieren.
+
+Wachsen und Schrumpfen des Baumes. Insert und delete
+beginnt die eigentliche Arbeit in einem Blatt. Im Gegensatz zu
+binären Suchbäumen wächst/schrumpft der Baum (in Sinn seiner
+Tiefe) nicht durch Hinzunahme/Entfernen von Blättern. Er
+wächst/schrumpft an der Wurzel!
+
+Suchstrukturen B-Bäume
+
+86
+
+Operationen des B-Baums
+
+Laufzeiten.
+In einem B-Baum mit n Schlüsseln benötigen die Operationen
+Suchen, Einfügen und Löschen jeweils O(log n) Zeit und betrachten
+dabei O(logM n) Knoten.
+
+Weitere Operationen des ADT Dictionary.
+Laufzeiten von min/max und predecessor/successor?
+Trivial: O(log n) Zeit, O(logM n) Knotenbesuche
+Augmentieren des B-Baums: O(1) Zeit, O(1) Knotenbesuche
+
+→ Übung
+
+Verbessertes Einfügen/Löschen.
+Obiges insert/delete läuft den Baum 2x ab (hinunter&hinauf). Bei
+geradzahligem M genügt sogar ein einziger Ablauf von oben
+nach unten. Dabei „auf Verdacht“ aufspalten/verschmelzen.
+⇒ Nur halb so viele Speicherzugriffe!
+
+(Hier nun keine Details)
+
+Suchstrukturen B-Bäume
+
+Spezialfälle
+
+87
+
+(cid:73) 2-3-Bäume (schon 1970, J.E. Hopcroft) bzw. 2-3-4-Bäume:
+
+B-Bäume der Ordnung 3 bzw. 4.
+
+(cid:73) Rot-Schwarz-Bäume: Äquivalent zu 2-3-4-Bäumen, bzw. eine
+
+mögliche (einfachere) Implementierung davon.
+Statt große Knoten zu benutzen, werden diese durch binäre
+Knoten simuliert, die jeweils rot oder schwarz sind.
+
+17
+
+34
+
+55
+
+⇒
+
+34
+
+17
+
+55
+
+All diese Varianten garantieren also auch O(log n) Laufzeiten für die
+teuren Operationen.
+
+Praxis: Rot-Schwarz-Bäume sind ähnlich aufwendig zu
+implementieren wie AVL-Bäume, aber in der Praxis schneller.
+
+Suchstrukturen B-Bäume
+
+88
+
+Implementierungsanmerkung
+
+Innere Knoten vs. Blätter.
+Sei K ein Knoten mit m Schlüsseln. → m + 1 Kinder/Zeiger.
+K = innerer Knoten: alle m + 1 Zeiger sind (cid:54)= NIL (echte Kinder).
+K = Blatt: alle m + 1 Zeiger sind NIL
+Blatt-Objekte würden nur Speicherplatz verschwenden ⇒
+Blätter als andere Knotenklassen (ohne Kinder) implementieren!
+
+53
+
+12
+
+23
+
+34
+
+67
+
+89
+
+9
+
+17
+
+27 31
+
+35 38 44
+
+57
+
+69 74
+
+99
+
+Wenn Blätter keine Zeiger speichern, könnten sie bei gleicher
+Byte-Größe (angepasst an Cacheline, RAM-Blockgröße,...) nun auch
+doppelt so viele Schlüssel halten!
+
+Suchstrukturen B-Bäume
+
+89
+
+Variante: B+-Baum
+
+Wenn Blätter ohnehin „anders“ sind, kann man noch weiter gehen.
+
+Wir erinnern uns: in B-Bäumen, werden zu jedem Schlüssel auch
+Daten (oder ein Zeiger auf die Daten) mitgespeichert...
+
+Im Gegensatz dazu:
+B+-Bäume. Wie ein B-Baum, aber:
+
+(cid:73) Jeder Schlüssel wird mit seinen zugehörigen Daten in einem
+
+Blatt gespeichert.
+
+(cid:73) In inneren Knoten werden nur Schlüssel und Kindzeiger (aber
+
+keine Daten) gespeichert.
+
+(cid:73) Schlüssel in inneren Knoten sind Duplikate von Schlüsseln in
+
+den Blättern. (Achtung: natürlich ist nicht jeder Blattschlüssel
+auch in einem inneren Knoten!)
+
+Vorteil. Innere Knoten können bei gleicher Byte-Größe (angepasst
+an Cacheline, RAM-Blockgröße,...) mehr Schlüssel halten → höherer
+Verzweigungsgrad des Baums → B+-Baum weniger tief.
+
+Suchstrukturen B-Bäume
+
+90
+
+Anmerkungen zu Notationen und Namen
+
+(cid:73) Achtung: In der Literatur gibt es zwei unterschiedliche
+
+Arten, wie man die Ordnung eines Baums deﬁniert.
+In einem B-Baum der Ordnung M hat jeder Knoten...
+
+1 ...maximal M Kinder
+2 ...mindestens M Schlüssel (mit Ausnahme der Wurzel)
+
+← in diesen Folien benutzt
+
+Variante 2 ist die originale Deﬁnition von Bayer&McCreight ’72
+
+(erlaubt nur „gerade“ B-Bäume).
+
+Variante 1 ist die derzeit gebräuchlichere (Knuth ’98).
+
+(cid:73) B+-Bäume: Oft inklusive einer Verkettung der Blätter mittels
+
+Zeigern deﬁniert → alle Schlüssel efﬁzient ablaufbar
+
+(cid:73) B*-Bäume: B-Baum, aber statt 1
+
+2 M werden immer 2
+
+3 M Kinder
+
+gefordert. Bessere Ausnutzung der Speicherblöcke, aber
+Einfügen&Entfernen etwas komplizierter.
+
+Suchstrukturen
+
+Skiplisten
+
+Suchstrukturen Skiplisten
+
+92
+
+Randomisierung hilft
+
+Wunsch:
+Eine einfache Datenstruktur, die alle Dictionary-Operationen
+(ggf. amortisiert) in O(log n) Zeit ausführen kann.
+
+Kennt niemand... Deterministische Datenstrukturen mit
+O(log n)-Garantien sind kompliziert...
+
+Abgeschwächter Wunsch:
+Eine einfache Datenstruktur, die alle Dictionary-Operationen
+mit hoher Wahrscheinlichkeit in O(log n) Zeit ausführen kann.
+
+(cid:73) Sie kennen schon Hash-Tabellen
+
+(→ später mehr)
+
+Nachteile: Abhängigkeit von einer guten Hashfunktion, bei
+Wachstum Rehash notwendig, keine Unterstützung von
+predecessor/successor,...
+
+(cid:73) Nun: Randomisierte Datenstruktur Skiplisten
+
+Sehr einfache und schnelle Datenstruktur — nur die Beweise,
+dass sie schnell funktioniert, sind aufwendig(er)
+
+Suchstrukturen Skiplisten
+
+93
+
+(Sehr) Einfache Datenstrukturen
+
+Annahme: Datenstruktur enthält n Schlüssel.
+
+Ops
+ﬁnd
+insert
+delete
+pred./succ.
+min/max
+
+Array1
+
+Liste
+
+unsort.
+O(n)
+O(1)
+O(1)
+O(n)
+*
+
+sortiert
+O(log n)
+O(n)
+O(n)
+O(1)
+O(1)
+
+unsort.
+O(n)
+O(1)
+O(1)
+O(n)
+*
+
+sortiert
+O(n)
+O(n)
+O(n)
+O(1)
+O(1)
+
+[mit hoher W’keit]
+
+Skipliste
+O(log n)
+O(log n)
+O(log n)
+O(1)
+O(1)
+
+* zwei Möglichkeiten:
+
+1 O(n) mittels Absuchen
+2 O(1) durch explizites Mitspeichern. → Bei insert/delete ggf.
+aktualisieren. ⇒ Laufzeit von delete erhöht sich auf O(n)!
+
+1inkl. Amortisierung durch Größenverdopplung
+
+Suchstrukturen Skiplisten
+
+Skipliste
+
+Normale zeigerverkettete Liste:
+
+94
+
+NIL
+
+head
+
+2
+
+5
+
+6
+
+9
+
+12
+
+14
+
+26
+
+35
+
+78
+
+79
+
+82
+
+84
+
+89
+
+92
+
+Skipliste
+
+4
+
+3
+
+2
+
+1
+
+head
+
+2
+
+5
+
+6
+
+9
+
+12
+
+14
+
+26
+
+35
+
+78
+
+79
+
+82
+
+84
+
+89
+
+92 ∞
+
+(cid:73) Jeder Knoten K hat eine Höhe hK ≥ 1
+(cid:73) Der Head hat gleiche Höhe wie das höchste Element
+(cid:73) Jeder Knoten hat Zeiger succ[1..hK] (ggf. analog auch pred[1..hK])
+(cid:73) Zeiger succ[i] zeigt auf den nächsten Nachfolger der
+
+mindestens Höhe i hat.
+
+→ Auf unterster Ebene sind alle Schlüssel aufsteigend verkettet
+
+Suchstrukturen Skiplisten
+
+95
+
+Suchen in einer Skipliste
+
+Angenommen, wir haben eine Skipliste gegeben.
+Wie können wir ein Element suchen, z.B. die 35?
+
+4
+
+3
+
+2
+
+1
+
+head
+
+2
+
+5
+
+6
+
+9
+
+12
+
+14
+
+26
+
+35
+
+78
+
+79
+
+82
+
+84
+
+89
+
+92
+
+97 ∞
+
+Knoten ﬁnd(Schlüssel k):
+
+S = head, (cid:96) = hS
+while (cid:96) > 0:
+
+if S.succ[(cid:96)].key = k then return S.succ[(cid:96)]
+if S.succ[(cid:96)].key < k then S = S.succ[(cid:96)]
+if S.succ[(cid:96)].key > k then (cid:96) = (cid:96) − 1
+
+// tail.key= ∞
+
+// gefunden
+
+return NIL
+
+// nicht gefunden
+
+⇒ Beim Suche überspringen (engl. „skip“) wir Teile der Liste.
+
+Suchstrukturen Skiplisten
+
+96
+
+Perfekte Skipliste
+
+4
+
+3
+
+2
+
+1
+
+head
+
+2
+
+5
+
+6
+
+9
+
+12
+
+14
+
+26
+
+35
+
+78
+
+79
+
+82
+
+84
+
+89
+
+92
+
+97 ∞
+
+Unrealistische Annahme: Schlüssel ändern sich nicht.
+⇒ Wir könnten die Höhe der Knoten so wählen, dass eine Binäre
+Suche simuliert wird.
+
+Realität: Wir wissen nicht, wann welche Schlüssel eingefügt und
+entfernt werden.
+⇒ Nach jedem Einfügen/Entfernen die Höhe aller Knoten
+anzupassen wäre zu teuer (O(n))...
+
+Beobachtung. In der perfekten Skipliste sind in jeder Ebene nur
+ca. halb so viele Elemente wie in der Ebene darunter.
+⇒ Reicht diese Eigenschaft vielleicht schon aus?
+
+Suchstrukturen Skiplisten
+
+97
+
+Randomisierung
+
+Betrachte folgenden randomisierten Algorithmus:
+
+int randomHeight():
+
+Wirf solange eine Münze bis „Kopf“ kommt
+return Anzahl der benötigten Münzwürfe
+
+Welchen Wert hat (cid:96) := randomHeight() am Ende?
+
+Wahrscheinlichkeit
+
+1
+2
+
+1
+2
+
+1
+4
+
+1
+
+(cid:96) =
+W’keit, dass (cid:96) = h: P[(cid:96) = h] = 1/2h
+W’keit, dass (cid:96) ≥ h: P[(cid:96) ≥ h] = 2 · P[(cid:96) = h] = 1/2h−1
+
+2
+
+1
+4
+
+1
+8
+
+1
+8
+
+1
+16
+
+1
+16
+1
+1
+32
+32
+
+3
+
+4 5 . ..
+
+Suchstrukturen Skiplisten
+
+98
+
+Analyse des Prozesses
+
+Idee: Beim Einfügen eines Element e in die random. Skipliste S:
+Bestimme e’s Höhe mit vorigem randomisierten Algorithmus!
+
+Wie hoch wird ein e bzw. S im Erwartungswert?
+„Erwartungswert“ ist nur eine schwache Aussage: Wie
+wahrscheinlich ist es, dass S höher als der Erwartungswert ist?
+
+(Achtung: Durchschnitt (cid:54)= Median!)
+
+→ Wie hoch wird die Skipliste mit hoher Wahrscheinlichkeit?
+Genaue Deﬁnition & Analyse sehen wir später. Nehmen wir an, wir
+hätten schon gezeigt:
+Lemma (vorab). Eine randomisierte Skipliste mit n Elementen
+benötigt im Erwartungswert nur O(n) Platz und hat mit hoher
+Wahrscheinlichkeit eine Höhe O(log n).
+
+Wie funktioniert dann insert und delete?
+
+Suchstrukturen Skiplisten
+
+99
+
+Einfügen und Löschen
+
+4
+
+3
+
+2
+
+1
+
+head
+
+2
+
+5
+
+6
+
+9
+
+12
+
+14
+
+26
+
+35
+
+45
+
+79
+
+82
+
+84 ∞
+
+Beispiel: Einfügen/Entfernen von 45.
+
+void S.insert(Schlüssel k):
+
+(cid:96) = randomHeight()
+K = neuer Knoten mit Schlüssel k und Höhe (cid:96)
+if S.ﬁnd(k) (cid:54)= NIL then Fehlermeldung
+L = bei ﬁnd betrachtete Kanten zu zu-großen Schlüsseln
+Füge K auf den (cid:96) untersten Kanten aus L ein.
+
+// k schon enthalten
+
+void S.delete(Schlüssel k):
+
+K = S.ﬁnd(k);
+if K = NIL then Fehlermeldung
+Entferne K aus Ebenen 1..h(K)
+
+// k nicht enthalten
+// wie bei h(K) normalen Listen
+
+Suchstrukturen Skiplisten
+
+Analyse...
+
+100
+
+Wie hoch ist ein Knoten im Erwartungswert?
+
+E[(cid:96)] =
+
+1
+2
+
+· 1 +
+
+1
+4
+
+· 2 +
+
+1
+8
+
+· 3 +
+
+1
+16
+
+· 4 + . . . =
+
+∞(cid:88)
+
+i=1
+
+i
+2i = ?
+
+knifﬂig... versuchen wir es anders...
+
+Suchstrukturen Skiplisten
+
+101
+
+Analyse der Größe
+
+Beobachtung 1. Sei K ein Knoten.
+W’keit, dass h(K) = i: P[h(K) = i] = 1/2i
+W’keit, dass h(K) ≥ i: P[h(K) ≥ i] = 1/2i + 1/2i = 1/2i−1
+Knoten K hat Höhe ≥ i ⇐⇒ Knoten K existiert auf Ebene i.
+⇒ W’keit, dass ein Knoten K auf Ebene i existiert: 1/2i−1
+
+Beobachtung 2. Skipliste mit n Knoten. Sei ni die Anzahl der
+Knoten die auf Ebene i existieren. Erwartungswert von ni:
+
+E[ni] = n · 1/2i−1 = n/2i−1
+
+Lemma. Eine Skipliste S mit n Elementen benötigt im
+Erwartungswert O(n) Speicher.
+
+Beweis. Speicherbedarf B = #Schlüssel + #Zeiger = n +(cid:80)∞
+E[B] = n +(cid:80)∞
+
+E[ni] = n +(cid:80)∞
+
+i=1
+
+i=1 n/2i−1 = n + n(cid:80)∞
+
+Maximale Höhe ist unbeschränkt!
+j=0 1/2j = 3n (cid:3)
+
+i=1 ni
+
+Suchstrukturen Skiplisten
+
+102
+
+Analyse der Höhe, 1/2
+
+Achtung:
+Aus dem Durchschnitt der erwarteten Zeigeranzahl erhalten wir zwar
+
+Jeder Knoten hat im Erwartungswert eine Höhe von 2.
+
+Aber das sagt nichts über die erwartete Höhe der Skipliste aus!
+h(S) ist nicht Durchschnitt der Einzelhöhen, sondern das Maximum!
+
+Betrachte ein Ereignis, dass mit W’keit α auftritt.
+Wahrscheinlichkeit, dass das Ereignis bei n (unabhängigen)
+
+Wiederholungen mindestens 1x Auftritt: ≤ n · α.
+
+Beobachtung. W’keit, dass mind. ein Knoten auf Ebene i existiert:
+
+≤ n · P[h(K) ≥ i] = n · 1/2i−1 = n/2i−1
+
+Beispiel. W’keit, dass die Skipliste höher als 3 log n ist?
+⇒ W’keit, dass auf Ebene 3 log n + 1 noch ein Knoten existiert
+≤ n/23 log n+1−1 = n/2log(n3) = n/n3 = 1/n2
+
+Suchstrukturen Skiplisten
+
+103
+
+Analyse der Höhe, 2/2
+
+Beispiel. W’keit, dass die Skipliste höher als 3 log n ist?
+⇒ W’keit, dass auf Ebene 3 log n ein Knoten existiert
+≤ n/23 log n+1−1 = n/2log(n3) = n/n3 = 1/n2
+
+Warum die 3 vor dem Logarithmus?
+
+Theorem. Die Höhe einer Skipliste mit n Schlüsseln ist mit hoher
+Wahrscheinlichkeit O(log n).
+Beweis. Zeigen, dass die Wahrscheinlichkeit einer höheren
+Skipliste verschwindend gering ist (Gegenwahrscheinlichkeit).
+
+f (n) = O(log n) ⇐⇒ ∃ c > 0 sodass f (n) < c log n
+W’keit, dass auf Ebene c log n + 1 noch ein Knoten existiert
+
+≤ n/2c log n+1−1 = n/2log(nc) = n/nc = 1/nc−1
+
+Für linear steigendes c nimmt die Gegenw’keit exponentiell ab!
+Gegenw’keit sinkt insbesondere sogar für wachsende n!
+⇒ Für n → ∞ geht die Gegenw’keit gegen 0, und die W’keit der
+O(log n)-beschränkten Skipliste gegen 1.
+
+(cid:3)
+
+Suchstrukturen Skiplisten
+
+104
+
+Analyse der Laufzeiten, 1/2
+
+WorstCase-Laufzeit von ﬁnd ist Ω(h(S)).
+Insert und delete benötigen zunächst ein ﬁnd und dann O(h(S)) Zeit
+zum eigentlichen Einfügen/Löschen. ⇒ beide also in O(ﬁnd).
+
+5
+
+4
+
+3
+
+2
+
+1
+
+head
+
+2
+
+5
+
+6
+
+9
+
+12
+
+14
+
+26
+
+35
+
+45
+
+79
+
+82
+
+84 ∞
+
+Theorem. Operation ﬁnd benötigt auf eine Skipliste mit n
+Schlüsseln im Erwartungswert O(log n) Zeit.
+
+Beweis. Laufzeit = #Rechts-Schritte + #Runter-Schritte.
+#Runter-Schritte = O(h(S)).
+#Rechts-Schritte? Knifﬂig in Richtung des Suchpfades...
+
+→ Betrachte Suchpfad (auch) rückwärts!
+
+Beobachtung. Jeder Knoten auf dem Vorwärtssuchpfad wird auf
+seiner obersten Ebene betreten.
+
+Suchstrukturen Skiplisten
+
+105
+
+Analyse der Laufzeiten, 2/2
+
+5
+
+4
+
+3
+
+2
+
+1
+
+head
+
+2
+
+5
+
+6
+
+9
+
+12
+
+14
+
+26
+
+35
+
+45
+
+79
+
+82
+
+84 ∞
+
+(cid:73) Beim Rückwärtsablaufen des Suchpfads geht man (startend
+beim letzten Element) immer nach oben. Wenn nicht möglich
+dann den Vorgänger auf dieser Ebene, dort wieder nach oben,
+usw.
+
+(cid:73) Ein Element hat aufgehört zu wachsen, wenn die Münze „Kopf“
+
+gezeigt hat.
+
+(cid:73) Beim Rückwärtsablaufen hat man eine 50/50 Chance ob man
+
+weiter nach oben oder nach links gehen wird.
+
+(cid:73) E[#Rechts-Schritte] = E[#Runter-Schritte] = E[h(S)] = O(log n)
+(cid:3)
+
+Suchstrukturen Skiplisten
+
+106
+
+Skiplisten – Zusammenfassung
+
+Wir haben gezeigt:
+Theorem. Betrachte eine randomierte Skipliste S mit n Schlüsseln.
+
+1 Erwartete Größe O(n)
+2 Mit hoher Wahrscheinlichkeit Höhe O(log n)
+(Dies impliziert: Erwartete Höhe von O(log n))
+
+3 Erwartete Laufzeit O(log n) für ﬁnd, insert, delete
+4 Garantierte Laufzeit O(1) für predecessor/successor, min/max
+
+Mit genauerer Analyse kann man sogar zeigen:
+
+1 Mit hoher Wahrscheinlichkeit Größe O(n)
+3 Mit hoher Wahrscheinlichkeit Laufzeit O(log n) für ﬁnd,
+
+insert, delete
+
+Suchstrukturen
+
+Bereichsabfragen
+
+Suchstrukturen Bereichsabfragen
+
+108
+
+1-dimensionale Bereichsabfragen
+
+Bisher: Gegeben Query q. Suche Datensatz mit Schlüssel X = q.
+Bereichsabfrage: Gegeben Intervall [q(cid:96), qr]. Suche alle Datensätze
+mit einem Schlüssel X, sodass q(cid:96) ≤ X ≤ qr.
+Algorithmische Lösung:
+Suchbäume: Suche nach q(cid:96). Vom letzten Knoten der Suche (egal
+ob erfolgreich oder nicht) starte eine In-Order Traversierung
+(successor-Aufrufe): Nimm alle dabei besuchten Knoten in die
+Ergebnisliste auf, bis ein Knoten mit Schlüssel > qr besucht wird.
+Skipliste: Analog.
+
+Laufzeit?
+Suche: O(log n), Traversierung: O(1) pro Schritt.
+⇒ Maximal n Knoten werden traversiert ⇒ O(n) Laufzeit ⇒ Autsch!
+Output-Sensitive Algorithmen:
+Laufzeit als Funktion von Ein- und Ausgabe.
+⇒ k viele Resultate ⇒ Gesamtlaufzeit O(log n + k).
+
+Suchstrukturen Bereichsabfragen
+
+109
+
+2-dimensionale Bereichsabfragen
+
+Query
+
+Was, wenn Schlüssel ohne lineare Ordnung?
+→ zum Beispiel Punkte in der Fläche.
+Naïv: Prüfe für jeden Punkt, ob er in der Lösung liegt: O(n)
+
+Suchstrukturen Bereichsabfragen
+
+Trivial: Gitter
+
+110
+
+Query
+
+Gitter: Teile Fläche mittels eines regelmäßigen Gitters in Bereiche
+auf speichere Punkte bei „ihrem“ Bereich. Einzelne Punkte müssen
+nur für betroffene Randbereiche geprüft werden.
+→ Bringt in O-Notation nichts, da so ein Bereich O(n) viele Punkte
+enthalten kann.
+
+Suchstrukturen Bereichsabfragen
+
+Quadtree
+
+111
+
+Query
+
+Idee: Kein regelmäßiges Gitter, sondern unterteile nur dort, wo
+notwendig weil zu viele Punkte im selben Bereich.
+⇒ Quad? Tree?
+
+Suchstrukturen Bereichsabfragen
+
+Quadtree
+
+112
+
+10
+
+5
+
+1
+
+0
+
+4
+
+1
+
+1
+
+2
+
+1
+
+1
+
+0
+
+2
+
+1
+
+0
+
+1
+
+1
+
+0
+
+1
+
+0
+
+0
+
+1
+
+Sei c ∈ N>0 eine Konstante. Im Beispiel: c = 1.
+Rekursive Regel: Eine (quadratische) Region entspricht einem
+Knoten im Baum. Falls eine Region mehr als c Punkte enthält,
+unterteile sie in ihre vier Quadranten (Knoten hat vier Kinder).
+
+Suchstrukturen Bereichsabfragen
+
+113
+
+Entarteter Quadtree
+
+3
+
+0
+
+1
+
+2
+
+0
+
+0
+
+0
+
+2
+
+0
+
+0
+
+0
+
+2
+
+0
+
+0
+
+0
+
+2
+
+0
+
+0
+
+0
+
+2
+
+0
+
+0
+
+1
+
+1
+
+0
+
+Problem: Quadtree kann (beliebig?) groß werden, wenn Punkte
+nahe beisammen liegen!
+
+Suchstrukturen Bereichsabfragen
+
+114
+
+Reduzierter Quadtree
+
+3
+
+3
+
+1
+
+2
+
+1
+
+2
+
+2
+
+2
+
+2
+
+1
+
+1
+
+x=[0.0; 0.01],
+y=[0.0; 0.01]
+
+2
+
+1
+
+1
+
+Lösung: Leere Region (0-Knoten) sind ohnehin nur NIL-Pointer.
+„Verkürze“ Pfade im Baum, in denen nur ein Kind nicht-leer ist.
+Annotiere Regionskoordinaten an Kante!
+
+Suchstrukturen Bereichsabfragen
+
+115
+
+Reduzierter Quadtree: Lineare Größe
+
+3
+
+1
+
+Theorem.
+Ein reduzierter Quadtree für n Punkte be-
+nötigt nur O(n) Platz.
+Beweis.
+Jeder Knoten (inkl. seiner Zeiger und ggf.
+der Beschriftung der eingehenden Kante)
+benötigt O(1) Speicher.
+Jedes Blatt
+einen Punkt. ⇒ O(n) Blätter.
+Durch die Reduktion hat jeder innere
+Knoten des Baums mindestens zwei ech-
+te Kinder. ⇒ # innere Knoten < # Blätter
+⇒ O(n) innere Knoten.
+Ingesamt O(n) Platz.
+(cid:3)
+
+repräsentiert mindestens
+
+x=[0.0; 0.01],
+y=[0.0; 0.01]
+
+2
+
+1
+
+1
+
+Suchstrukturen Bereichsabfragen
+
+3D: Octree
+
+116
+
+Angenommen, die Punkte sind im 3D-Raum (Computergraphik,
+Computerspiele, Physiksimulationen,...)
+
+Idee des Quadtree, lässt sich auf Octree erweitern: Zerteile einen
+Würfel immer in 8 Teilwürfel.
+
+Oft zum efﬁzienten Speichern z. B. von Voxeln (= „Volume Pixel“)
+benutzt (läst sich einfach & schnell rendern).
+
+Suchstrukturen Bereichsabfragen
+
+117
+
+Weitere Bereichsabfrage-Strukturen
+
+kD Tree: Für Punkte in k Dimensionen (k = 2, 3, . . .).
+Unterteile Bereiche Abwechselnd entlang einer der Achsenebenen
+(k = 2: zuerst nach x, dann y, dann wieder x, etc.)
+
+2D-tree
+
+BSP-tree
+
+Binary Space Partition, BSP-Trees: Auch für k-Dimensionen.
+Unterteile entlang von beliebigen Geraden (k = 2), Ebenen (k = 3),
+Hyperebenen (k > 3)
+
+→ Allüberall in Computergraphik...
+
+Suchstrukturen
+
+Intervall-Bäume
+
+Suchstrukturen Intervall-Bäume
+
+119
+
+Suchen von Intervallen
+
+Was, wenn die Schlüssel selbst Intervalle sind?
+
+Beispiele:
+
+(cid:73) Termine in einem Projektplan.
+
+„Alle aktiven Teilprojekte zwischen 3. und 7. Mai?“
+
+(cid:73) 2D/3D-Objekte (nicht nur Punkte).
+
+Suchstrukturen Intervall-Bäume
+
+1D-Intervalle
+
+120
+
+In der VO betrachten wir nur 1D-Intervalle, also z.B. die Anwendung
+beim Projektplan. Die Ansätze sind aber direkt erweiterbar für
+(othogonale) Routings auf Leiterplatten, achsenparallele
+Boundingboxen von Objekten im 3D-Raum, etc.
+
+q
+
+Q
+
+Formal: Gegeben eine Menge I von Intervallen („horizontale
+Linien“). Ein Intervall X ∈ R2 ist ein 2-Tupel aus X.min und X.max.
+Mögliche Abfragen:
+
+(cid:73) Punkt-Query q ∈ R:
+
+Finde alle Intervalle aus I, die q enthalten.
+
+q → {X ∈ I | X.min ≤ q ≤ X.max}
+
+(cid:73) Intervall-Query Q ∈ R2:
+
+Finde alle Intervalle aus I, die sich mit Q überlappen.
+
+Q → {X ∈ I | X.min ≤ Q.max∧Q.min ≤ X.max}
+
+Suchstrukturen Intervall-Bäume
+
+121
+
+Datenstruktur, 1/3
+
+Beobachtung 1. Datenstruktur muss output-sensitive
+Suchalgorithmen ermöglichen.
+
+Beobachtung 2. Ein normaler Suchbaum hilft uns nicht, da nicht
+klar, nach welchem Schlüssel wir sortieren sollten. Nur min / max
+reicht nicht aus; Durchschnitt (min + max)/2 hilft gar nichts;...
+
+Idee. Instanz in kleinere disjunkte Instanzen aufteilen, soweit
+möglich. Wähle einen Wert m in der Mitte (Details später)
+
+m
+
+I = Ilinks ∪ Imitte ∪ Irechts
+
+Suchstrukturen Intervall-Bäume
+
+122
+
+Datenstruktur, 2/3
+
+m
+
+I = Ilinks ∪ Imitte ∪ Irechts
+
+m
+
+„Imitte“
+
+IB(Ilinks)
+
+IB(Irechts)
+
+Beobachtung. Betrachte ein Query q.
+Falls q = m: return Imitte.
+Falls q < m (q > m): Intervalle Irechts (Ilinks) nicht mehr betrachten.
+→ Suche jeweils in den beiden anderen Teilmengen.
+
+Datenstruktur Intervallbaum IB(I)
+
+(cid:73) IB(I) hat eine Wurzel w, die einen Wert m speichert.
+(cid:73) Sei I = Ilinks ∪ Imitte ∪ Irechts die Aufteilung bzgl. m.
+(cid:73) Wurzel w speichert eine Kodierung von Imitte.
+(cid:73) Wurzel w hat bis zu zwei Kinder. Das linke Kind ist IB(Ilinks) (falls
+
+Ilinks (cid:54)= ∅), das rechte ist IB(Irechts) (falls Irechts (cid:54)= ∅).
+
+Suchstrukturen Intervall-Bäume
+
+123
+
+Datenstruktur, 3/3
+
+Was hat es mit der Kodierung Imitte auf sich?
+
+q
+
+m
+
+Betrachte Fall q < m:
+(cid:73) Alle Intervalle aus Imitte reichen nach rechts mindestens bis
+
+nach m → keines der Intervalle kann „vor“ q enden.
+⇒ Wir müssen für jedes X ∈ Imitte nur prüfen, ob X früh genug
+startet, d.h. ob X.min ≤ q.
+
+(cid:73) Sortiere alle Intervalle in Imitte aufsteigend gemäß ihrem
+
+min-Wert. ⇒ Ablaufen der Liste, bis zum ersten mal X.min > q
+ﬁndet alle notwendigen Intervalle!
+
+Fall q > m analog mit gemäß max sortierter Liste.
+Imitte im Wurzelknoten von IB(I) 2x speichern: einmal als nach min
+und einmal als nach max sortierte Liste (Lmin bzw. Lmax).
+
+Suchstrukturen Intervall-Bäume
+
+Query q
+
+Liste query(Intervallbaumknoten w, Query q):
+
+124
+
+if q = w.m:
+
+return w.Lmin
+else if q < w.m:
+R = query(w.left);
+forall X ∈ Lmin:
+
+if X.min > q then break
+else füge X zu R hinzu.
+
+else:
+
+return R
+R = query(w.right);
+forall X ∈ Lmax:
+
+if X.max < q then break
+else füge X zu R hinzu.
+
+return R
+
+Intervall-Query Q? → Übung
+
+// aufsteigend nach min
+
+// q > w.m
+
+// absteigend nach max
+
+Suchstrukturen Intervall-Bäume
+
+125
+
+Analyse: Tiefe des Baums
+
+Gegeben I, wie wählt man m?
+
+Jedes Intervall X deﬁniert zwei Endpunkte (X.min und X.max).
+Wähle m als Median aller Intervall-Endpunkte.a
+
+aGleich viele Endpunkte liegen links wie rechts von m.
+
+Lemma. Ein Intervallbaum für n Intervalle hat Tiefe O(log n).
+
+Beweis. Wir zeigen dies dadurch, dass durch die Median-Wahl bei
+Intervallen I sowohl der linke als auch der rechts Teilbaum jeweils
+maximal |I|/2 Intervalle verwalten.
+Angenommen, |Ilinks| > |I|/2 (oder analog rechts).
+⇒ Mehr als |I| der insgesamt 2 · |I| Endpunkte liegen links (bzw.
+rechts) von m
+⇒ Widerspruch zur Wahl des Medians.
+Anmerkung. Dies zeigt insbesondere auch, dass nicht alle
+Intervalle nur links oder nur rechts liegen können.
+
+(cid:3)
+
+Suchstrukturen Intervall-Bäume
+
+126
+
+Analyse: Platz
+
+Lemma. Ein Intervallbaum für n Intervalle benötigt nur O(n) Platz.
+
+Beweis.
+
+(cid:73) Jedes Blatt speichert mindestens ein Intervall → O(n) Blätter.
+
+Der Binärbaum hat Maximaltiefe O(log n)
+⇒ O(n) Knoten insgesamt.
+
+(cid:73) Intervalle werden nur als Imitte gespeichert, nämlich 2x (in Lmin
+und in Lmax). Wenn ein Intervall in einem Knoten so gespeichert
+wird, taucht das Intervall weiter unten im Baum nicht mehr auf
+⇒ Jedes Intervall wird genau 2x gespeichert → O(n)
+
+⇒ O(n) Speicherbedarf insgesamt (= Intervalle und Knoten).
+
+(cid:3)
+
+Suchstrukturen Intervall-Bäume
+
+127
+
+Analyse: Query-Laufzeit
+
+Lemma. Ein Query q benötigt O(log n + k) Zeit, wobei k die Größe
+der Resultatsliste ist.
+
+Beweis.
+
+(cid:73) Man läuft von der Wurzel maximal bis zu einem Blatt
+
+⇒ O(log n) rekursive Aufrufe
+
+(cid:73) Innerhalb eines Aufrufs im Baum auf Ebene i:
+
+(cid:73) Konstanter Aufwand durch Aufruf, IFs, etc. → O(1)
+(cid:73) O(ki) zum Ausgeben der ki gefundenen Intervalle.
+
+⇒ O(1 + ki) auf Ebene i.
+Achtung: Die „1“ darf in O-Notation nicht ignoriert werden,
+denn ki könnte 0 sein, der Aufwand ist aber dennoch O(1)!
+
+i=1 ki
+
+= O(t + k) = O(log n + k)
+
+(cid:3)
+
+⇒ Insgesamt, bei einem Baum der Tiefe t:
+
+(cid:17)
+
+= O(cid:16)
+
+t +(cid:80)t
+
+(cid:17)
+
+O(cid:16)(cid:80)t
+
+i=1(1 + ki)
+
+Suchstrukturen Intervall-Bäume
+
+Update
+
+128
+
+Die Intervallbaum-Datenstruktur ist dynamisch!
+
+Wir können Intervalle in den Baum einfügen und entfernen.
+Mit nun schon bekannten Rebalancierungs-Techniken (AVL-Baum,
+Rot-Schwarz-Baum) kann man sicherstellen, dass die Tiefe O(log n)
+bewahrt bleibt.
+Wir müssen dabei „nur“ zusätzlich darauf achten, dass die
+jeweiligen Lmin/Lmax Listen efﬁzient aktualisiert werden.
+
+→ Übung
+
+Priority Queues und Heaps
+
+Priority Queues und Heaps
+
+130
+
+Priority Queue
+
+Was ist der abstrakte Datentyp (ADT) Priority Queue?
+
+Priority Queue („Prioritätswarteschlange“) = Datenstruktur, die
+folgendes Anforderungsproﬁl erfüllt: Ein item besteht aus key und
+data. Folgende Operationen efﬁzient möchten wir efﬁzient
+unterstützen:
+
+(cid:73) item* min()
+(cid:73) void insert(item)
+(cid:73) item* deleteMin()
+(cid:73) void decreaseKey(item*, newKey)
+
+Ggf. auch:
+
+(cid:73) void delete(item*)
+(cid:73) PQ union(PQ1, PQ2)
+
+Verschmelzen/Vereinigen zweier PQs
+
+Welche Datenstruktur kann das?
+
+Priority Queues und Heaps
+
+131
+
+Binary Heaps → Kennen Sie aus Informatik A!
+
+Binary Heap
+
+Operation
+min
+insert
+decreaseKey
+deleteMin
+delete
+union O(min(nL, nS log nL))2
+
+O(1)
+O(log n)
+O(log n)
+O(log n)
+O(log n)
+
+l
+
+e
+t
+n
+e
+m
+e
+E
+n
+,
+n
+e
+t
+i
+e
+z
+f
+u
+a
+L
+
+Praxis: Binary Heap ist gut, aber es geht besser (Theorie + Praxis).
+
+„Probleme“ normaler Binary Heaps:
+
+(cid:73) O(log n) nicht nur WorstCase, sondern bei deleteMin die Regel!
+(cid:73) Fast jede Schicht in eigener Cache-Line → bei großen Heaps ist
+
+(cid:73) In vielen Anwendungen (ShortestPath, MinimumSpanningTree)
+
+jeder Schritt im Heap einen Cache-Miss → langsam.
+sind decreaseKeys häuﬁger als deleteMins → schnelleres
+decreaseKey, ggf. zu Lasten von deleteMin wäre okay!
+
+2Alles in ein gemeinsames Array kopieren und Heapeigenschaft herstellen (=
+
+HeapSort’s „heapify“), oder Schlüssel des kleinen Heaps einzeln in großen einfügen.
+
+Priority Queues und Heaps
+
+d-ary Heaps
+
+Priority Queues und Heaps d-ary Heaps
+
+133
+
+d-ary Heap
+
+Selbe Idee wie bei Binary Heap, aber größerer Verzweigungsgrad!
+Binary Heap ist ein 2-ary Heap, d.h. d = 2!
+
+4-ary Heap.
+
+2
+
+45
+
+12
+
+79
+
+65
+
+67
+
+97
+
+52
+
+46
+
+13
+
+98
+
+15
+
+24
+
+85
+
+82
+
+Heap-Baum wie Binary Heap in einem Array kodieren:
+
+2
+
+0
+
+45 12 79 65 67 97 52 46 13 98 15 24 85 82
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+Kinder von i starten bei 4i + 1
+Vater von j liegt auf (cid:98)(j − 1)/4(cid:99)
+
+Priority Queues und Heaps d-ary Heaps
+
+134
+
+Laufzeit
+
+Binary Heap
+
+O(1)
+O(log n)
+O(log n)
+O(log n)
+O(log n)
+
+min
+insert
+decreaseKey
+deleteMin
+delete
+union O(min(nL, nS log nL)) O(min(nL, nS logd nL))
+Für jedes konstante d verhält sich ein d-ary Heap asymptotisch
+genauso wie ein Binary Heap, aber
+1 Höherer Verzweigungsgrad → Logarithmenbasis größer (logd n)
+
+e
+t
+n
+e
+m
+e
+E
+n
+,
+n
+e
+t
+i
+e
+z
+f
+u
+a
+L
+
+O(1)
+
+d-ary Heap
+O(logd n)
+O(logd n)
+O(d · logd n)
+O(d · logd n)
+
+l
+
+→ geringere Baumtiefe & besseres Cache-Verhalten
+durchsuchen → O(d · logd n)
+
+2 Nach-unten-sickern: alle Kinder nach neuem Minimum
+
+3 delete/deleteMin wird durch 2 etwas langsamer;
+
+insert/decreaseKey durch 1 etwas schneller
+
+In der Praxis:
+— 4-ary Heap bei allen Ops i.d.R. schneller als Binary Heap.
+— Heap größer als Cache? → großes d immer hilfreich!
+
+Priority Queues und Heaps d-ary Heaps
+
+135
+
+Laufzeit, Dijkstra
+
+Gegeben: Zusammenhängender Graph mit n Knoten, m Kanten,
+Knotendistanzen d, Startknoten s.
+Gesucht: SSSP (Single-Source Shortest Path; kürzester Weg von s
+zu jedem anderen Knoten) → Dijkstra’s Algorithmus (Informatik A)
+
+(cid:73) P = PriorityQueue für Knoten. key(v) = bisher kürzeste
+
+bekannte Distanz s → v. Anfangs: key(s) = 0, alle anderen +∞.
+
+(cid:73) while(|P| > 0) { v = deleteMin(P);
+
+forall Nachbarn u von v: decreaseKey(u,key(v) + d(v, u))3 }
+
+(cid:73) O(n) mal deleteMin, O(m) mal decreaseKey
+
+Laufzeit?
+(cid:73) Laufzeit mit Binary Heap: O(n log2 n + m log2 n) = O(m log2 n)
+(cid:73) Laufzeit mit d-ary Heap: Wähle d so, dass
+O(n · (d · logd n) + m · logd n) minimal wird.
+⇒ wähle d = [m/n] ⇒ O(m log[m/n] n)
+
+3Falls kleiner als bisheriger key
+
+Priority Queues und Heaps
+
+Binomial Heaps
+
+Priority Queues und Heaps Binomial Heaps
+
+137
+
+Pascal’sches Dreieck
+
+0
+
+1
+
+2
+
+1
+
+0
+
+0
+
+(cid:0)0
+(cid:1)
+(cid:1)(cid:0)1
+(cid:0)1
+(cid:1)
+(cid:1)(cid:0)2
+(cid:1)(cid:0)2
+(cid:0)2
+(cid:1)
+(cid:1)(cid:0)3
+(cid:1)(cid:0)3
+(cid:1)(cid:0)3
+(cid:0)3
+(cid:1)
+(cid:0)4
+(cid:1)
+(cid:1)(cid:0)4
+(cid:1)(cid:0)4
+(cid:1)(cid:0)4
+(cid:1)(cid:0)4
+(cid:1)
+(cid:1)(cid:0)5
+(cid:1)(cid:0)5
+(cid:1)(cid:0)5
+(cid:1)(cid:0)5
+(cid:1)(cid:0)5
+(cid:0)5
+(cid:1)(cid:0)6
+(cid:1)(cid:0)6
+(cid:1)(cid:0)6
+(cid:1)(cid:0)6
+(cid:1)(cid:0)6
+(cid:1)(cid:0)6
+(cid:0)6
+(cid:1)
+(cid:1)(cid:0)7
+(cid:1)(cid:0)7
+(cid:1)(cid:0)7
+(cid:1)(cid:0)7
+(cid:1)(cid:0)7
+(cid:1)(cid:0)7
+(cid:1)(cid:0)7
+(cid:1)
+(cid:0)7
+(cid:1)(cid:0)8
+(cid:1)(cid:0)8
+(cid:1)(cid:0)8
+(cid:1)(cid:0)8
+(cid:1)(cid:0)8
+(cid:1)(cid:0)8
+(cid:1)(cid:0)8
+(cid:1)(cid:0)8
+(cid:1)
+(cid:0)8
+
+2
+
+3
+
+0
+
+1
+
+3
+
+4
+
+1
+
+2
+
+0
+
+1
+
+4
+
+5
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+0
+
+1
+
+2
+
+0
+
+3
+
+4
+
+5
+
+2
+
+3
+
+6
+
+7
+
+6
+
+2
+
+3
+
+4
+
+5
+
+6
+
+0
+
+1
+
+7
+
+8
+
+0:
+
+1:
+
+2:
+
+3:
+
+4:
+
+5:
+
+6:
+
+7:
+
+8:
+
+1
+
+3
+
+1
+
+2
+
+6
+
+1
+
+3
+
+1
+
+4
+
+1
+
+1
+
+1
+
+4
+
+1
+
+1
+
+1
+
+5 10 10 5
+
+1
+
+1
+
+6 15 20 15 6
+
+1
+
+1
+
+7 21 35 35 21 7
+
+1
+
+1
+
+8 28 56 70 56 28 8
+
+1
+
+Priority Queues und Heaps Binomial Heaps
+
+138
+
+Binomial Tree
+
+Deﬁnition Binomial Tree.
+Ein Binomial Tree Bk der Ordnung k ist rekursiv
+deﬁniert:
+
+(cid:73) B0 ist ein einzelner Knoten.
+(cid:73) Bk besteht aus zwei Bk−1, wobei einer das
+
+Kind des anderen ist.
+
+Bk−1
+
+Bk−1
+
+B0
+
+1
+
+B1
+
+1
+
+1
+
+B2
+
+1
+
+2
+
+1
+
+B3
+
+1
+
+3
+
+3
+
+1
+
+|Bk| = 2k
+
+B4
+
+1
+
+4
+
+6
+
+4
+
+1
+
+Priority Queues und Heaps Binomial Heaps
+
+139
+
+Binomial Heap
+
+Deﬁnition Binomial Heap.
+Ein Binomial Heap ist eine Liste von Binomial Trees. Keine zwei
+Bäume sind gleich groß und die Liste ist gemäß dieser Größe
+sortiert. Innerhalb jedes Binomial Trees gilt die Heap-Eigenschaft,
+d.h. der Schlüssel im Vater ist kleiner-gleich der Schlüssel seiner
+Kinder.
+
+B3
+6
+
+10
+
+11
+
+8
+
+B0
+5
+
+B1
+3
+
+7
+
+16
+
+13
+
+18
+
+17
+
+Beobachtung.
+Da |Bk| = 2k ist bei n
+Elementen eindeutig wie
+groß die Bäume im Heap
+sind:
+→ Binärdarstellung von n!
+Sei n = 11 = 10112⇒ B0, B1, B3
+
+Wie ﬁndet man Minimum? Eine der Wurzeln, O(Anzahl der Bäume)
+
+Priority Queues und Heaps Binomial Heaps
+
+140
+
+Binomial Heap
+
+Deﬁnition Binomial Heap (revisited).
+Ein Binomial Heap ist eine Liste von Binomial Trees. Keine zwei
+Bäume sind gleich groß und die Liste ist gemäß dieser Größe
+sortiert. Innerhalb jedes Binomial Trees gilt die Heap-Eigenschaft,
+d.h. der Schlüssel im Vater ist kleiner-gleich der Schlüssel seiner
+Kinder. Zusätzlich ein Zeiger auf die kleinste Wurzel.
+
+B3
+6
+
+10
+
+11
+
+8
+
+B0
+5
+
+B1
+3
+
+7
+
+16
+
+13
+
+18
+
+17
+
+Wie ﬁndet man Minimum? O(1)
+
+Priority Queues und Heaps Binomial Heaps
+
+141
+
+Größe
+
+Lemma.
+Ein Binomial Heap H mit n Elementen benötigt Θ(n) Platz und hält
+O(log n) Bäume. Ein Knoten in einem Binomial Tree Bk hat
+Maximalgrad (=Anzahl der Kinder eines Knoten) k.
+
+Beweis. Größe: Wir haben n Knoten. Für jeden Knoten gibt es
+maximal einen Zeiger (entweder von der Wurzel, oder vom
+(→ siehe auch nächste Folie)
+Listenvorgänger).
+Bäume: H enthält einen Baum Bk genau dann wenn die k-te Stelle
+(Stelle mit Wert 2k) der Binärdarstellung von n ist eine 1.
+⇒ Die Binärdarstellung von n benötigt (cid:100)log2 n(cid:101) bits.
+Maximalgrad: Per Induktion über k:
+Grad ändert sich nur an der Wurzel (= Wurzel hat Maximalgrad).
+Basisfälle: Wurzel von B0 hat Grad 0, Wurzel von B1 hat Grad 1,...
+Induktion: Bk besteht aus zwei Bäumen Bk−1, wovon einer an die
+Wurzel des anderen gehängt wird. → Grad dieser Wurzel steigt
+um 1. Per Ind.Annahme hat Bk−1 Maximalgrad k − 1 ⇒ Bk hat
+Maximalgrad k.
+
+(cid:3)
+
+Priority Queues und Heaps Binomial Heaps
+
+142
+
+Speicherung des Baums
+
+Wie speichert man efﬁzient einen Baum mit vielen Kindern?
+Klassisch:
+Jeder Knoten hat eine Liste von Kindern → in der Praxis inefﬁzient...
+Besser:
+Kodiere den Baum als einfachen Binären Baum. Jeder Knoten hat
+einen Verweis auf sein linkestes Kind und auf seinen rechten Bruder
+(„Knuth Transformation“).
+
+6
+
+8
+
+10
+
+11
+
+6
+
+10
+
+16
+
+13
+
+18
+
+16
+
+11
+
+17
+
+17
+
+13
+
+18
+
+8
+
+Priority Queues und Heaps Binomial Heaps
+
+143
+
+Verschmelzung, Binomial Tree
+
+Gegeben zwei Binomial Trees T1, T2 der Ordnung k, die jeweils die
+Heap-Eigenschaft erfüllen.
+Wir können die beiden in O(1) Zeit zu einem Binomial Tree der
+Ordnung k + 1 verschmelzen:
+
+4
+
+7
+
+Bk−1
+
+Bk−1
+
+if T1.root-value ≤ T2.root-value then
+
+Hänge T2 als linkestes Kind an die Wurzel von T1
+
+else
+
+Hänge T1 als linkestes Kind an die Wurzel von T2
+
+Priority Queues und Heaps Binomial Heaps
+
+144
+
+Verschmelzung, Binomial Heap
+
+Grundlegende Operationen von Binomial Heaps: union!
+Gegeben zwei Binomial Heaps H1, H2. Erstelle Binomial Heap H∗
+der die Vereinigung beider darstellt.
+
+Laufzeit:
+Für jede „Binärstelle“
+1x Baumverschmelzen
+→ O(log n)
+Dabei auch H∗.min
+ﬁnden&setzen.
+
+3
+
+7
+
+9
+
+7
+
+9
+
+4
+
+|H1| = 14
+
+0 1 1 1 0
+
+3
+
+9
+
+3
+
+4
+
+4
+
+8
+
+8
+
+8
+
+1
+
+|H2| = 7
+
+0 0 1 1 1
+
+|H∗| = 21
+
+1
+
+1 0 1 0 1
+
+Priority Queues und Heaps Binomial Heaps
+
+145
+
+Insert
+
+Insert mittels union!
+void insert(H, key):
+Lege neuen Binomial Heap H2 mit Schlüssel key an.
+H = union(H,H2)
+
+// füge key in H ein.
+// aktualisiert auch den Verweis auf H.min
+
+Laufzeit: O(log n)
+Moment! Da fällt uns was auf, oder?
+(cid:73) Union ist wie binäres Addieren.
+(cid:73) Insert ist binäres Inkrementieren.
+(cid:73) Erinnerung: binäres Inkrementieren benötigt zwar O(log n) im
+
+Worst-Case aber amortisiert nur O(1)!
+
+Lemma.
+Insert benötigt – amortisiert über eine Folge von mehreren inserts –
+nur O(1) Zeit.
+
+Priority Queues und Heaps Binomial Heaps
+
+146
+
+DecreaseKey
+
+DecreaseKey wir beim Binären Heap...
+void decreaseKey(H, item* X, newkey):
+
+X.key = newkey
+while X.parent (cid:54)= NIL and X.parent.key > X.key:
+aktualisiere ggf. den Verweis auf H.min
+
+tausche X mit Vaterknoten
+
+Laufzeit: O(Tiefe des Baums)
+
+Lemma. Ein Binomial Tree Bk hat Tiefe k (= längster Pfad von Wurzel).
+
+Beweis. Per Induktion. Basisfall: B0 passt. Induktionsschritt: ein
+Baum Bk−1 wird unter die Wurzel eines anderen Baums Bk−1
+gehängt. Die Blätter des ersten Baums hatten vorher
+(Induktionsannahme) Tiefe k − 1, nun also k.
+(cid:3)
+Bk enthält 2k Elemente → n Elemente passen in einen Baum B(cid:100)log2 n(cid:101)
+Lemma. DecreaseKey benötigt O(log n) Zeit.
+
+Priority Queues und Heaps Binomial Heaps
+
+DeleteMin(H)
+
+147
+
+Beobachtung. Betrachte einen Binomial Tree Bk. Die Teilbäume
+unter der Wurzel sind (sortiert) Binomial Trees Bk−1, Bk−2, . . . , B1, B0.
+
+w
+
+item* deleteMin(H):
+
+Sei T der Binomial Tree in H der das Minimum hält.
+Entferne T aus H, und die Wurzel w aus T.
+Sei L die Liste der Teilbäume die unter w hingen.
+H = union(H,L)
+return w
+
+void delete(H, item* X):
+
+decreaseKey(H, X, −∞)
+deleteMin(H)
+
+Laufzeit (jeweils): O(log n)
+
+Priority Queues und Heaps Binomial Heaps
+
+148
+
+Laufzeit
+
+Operation Binary Heap d-ary Heap Binomial Heap4
+O(log n) / O(1)
+
+O(1)
+
+O(1)
+O(log n)
+O(log n)
+O(log n)
+O(log n)
+
+l
+
+e
+t
+n
+e
+m
+e
+E
+n
+,
+n
+e
+t
+i
+e
+z
+f
+u
+a
+L
+
+min
+insert
+decreaseKey
+deleteMin
+delete
+union
+
+O(1)
+O(log n)
+O(log n)
+O(log n)
+O(log n)
+
+O(logd n)
+O(logd n)
+O(d · logd n)
+O(d · logd n)
+
+pfui
+
+pfui
+
+Bisher haben wir die Amortisierung nur für eine Folge von
+insert-Operationen gezeigt!
+→ wenn nach jedem insert ein delete folgt, so dass wir (als
+Binärzahl) zwischen 100..0 und 011..1 pendeln, benötigt jedes
+insert O(log n) Zeit.
+Aber wir können diese Kosten auch einfach auf das delete
+draufrechnen (O(2 log n) = O(log n)) als „Guthaben“ bei der
+Kontomethode zum Verbrauch von dem nächsten insert. Dann
+benötigt insert amortisiert weiterhin nur O(1) Zeit!
+
+4Worst-Case / amortisiert
+
+Priority Queues und Heaps
+
+Fibonacci Heaps
+
+Priority Queues und Heaps Fibonacci Heaps
+
+150
+
+Fibonacci
+
+Fibonacci Folge kennen Sie schon (mindestens) aus Informatik A!
+F1 = 1
+
+Fn+2 = Fn + Fn+1
+
+F2 = 1
+
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, . . .
+
+1
+
+1
+
+2
+
+3
+
+5
+
+8 13 21 34
+
+1
+
+3
+
+1
+
+2
+
+6
+
+1
+
+3
+
+1
+
+4
+
+1
+
+1
+
+1
+
+4
+
+1
+
+1
+
+1
+
+5 10 10 5
+
+1
+
+1
+
+6 15 20 15 6
+
+1
+
+1
+
+7 21 35 35 21 7
+
+1
+
+1
+
+8 28 56 70 56 28 8
+
+1
+
+Priority Queues und Heaps Fibonacci Heaps
+
+151
+
+Fibonacci
+
+Fibonacci Folge kennen Sie schon (mindestens) aus Informatik A!
+F1 = 1
+
+Fn+2 = Fn + Fn+1
+
+F2 = 1
+
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, . . .
+
+Goldener Schnitt:
+
+Major+Minor
+
+Major
+
+√
+2 ≈ 1.618...
+Minor = ϕ = 1+
+
+= Major
+
+5
+
+Fibonacci vs. Goldener Schnitt
+
+limn→∞ Fn+1
+Fn
+
+= ϕ
+
+Priority Queues und Heaps Fibonacci Heaps
+
+152
+
+Fibonacci
+
+Fibonacci Folge kennen Sie schon (mindestens) aus Informatik A!
+F1 = 1
+
+Fn+2 = Fn + Fn+1
+
+F2 = 1
+
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, . . .
+
+Priority Queues und Heaps Fibonacci Heaps
+
+153
+
+Fibonacci
+
+F1 = 1
+
+F2 = 1
+
+Fn+2 = Fn + Fn+1
+
+Gegeben k, wie berechnet man Fk?
+
+int ﬁbonacci-pfui(k):
+
+if k < 3 then return 1
+else return ﬁbonacci-pfui(k − 1) + ﬁbonacci-pfui(k − 2)
+
+int ﬁbonacci-iterativ(k):
+
+a0 = a1 = 1
+for i = 3 . . . k:
+
+ai mod 2 = a0 + a1
+
+return ak mod 2
+
+int ﬁbonacci-matheass(k):
+
+(cid:20)(cid:16) 1+
+
+√
+2
+
+5
+
+return 1√
+5
+
+(cid:17)k −(cid:16) 1−√
+
+2
+
+(cid:17)k(cid:21)
+
+5
+
+Priority Queues und Heaps Fibonacci Heaps
+
+154
+
+Idee des Fibonacci Heaps
+
+Fibonacci Heaps sind ähnlich zu Binomial Heaps, aber:
+
+(cid:73) Die einzelnen Bäume haben keine so rigide Knotananzahl und
+Stuktur mehr. Die Anzahl der Bäume ist auch nicht mehr streng
+beschränkt.
+
+(cid:73) Einzelne Operationen können auch mal lange dauern (O(n)),
+
+aber amortisiert sind sie schnell.
+
+(cid:73) Wir erkaufen uns Geschwindigkeit in dem wir bei einigen
+
+Operationen „schlampig“ sind und die Operation nur
+„husch-pfusch“ durchführen. Erst wenn wir „zu viel“ Unordnung
+haben, räumen wir zwischendrin bei einer Operation auch mal
+auf. Im Durchschnitt benötigen wir so weniger Zeit, als wenn
+wir immer alles in Ordnung halten würden.
+
+Priority Queues und Heaps Fibonacci Heaps
+
+155
+
+Datenstruktur
+
+5
+
+9
+
+17
+
+4
+
+6
+
+10
+
+11
+
+8
+
+13
+
+18
+
+16
+
+17
+
+3
+
+7
+
+12
+
+15
+
+51
+
+70
+
+Deﬁnition Fibonacci Heap.
+
+(cid:73) Ein Fibonacci Heap ist eine Liste von gewurzelten Bäumen.
+(cid:73) Innerhalb jedes Baums gilt die Heap-Eigenschaft, d.h. der
+
+Schlüssel im Vater ist kleiner-gleich der Schlüssel seiner Kinder.
+
+(cid:73) Zusätzlich ein Zeiger auf die kleinste Wurzel.
+(cid:73) Für jeden Knoten w mit k Kindern gilt: k = O(log n) und der an
+
+w gewurzelte Teilbaum enthält mindestens Fk+2 Knoten.
+
+Priority Queues und Heaps Fibonacci Heaps
+
+156
+
+Implementierung und weitere Felder
+
+5
+
+9
+
+17
+
+4
+
+6
+
+10
+
+11
+
+8
+
+13
+
+18
+
+16
+
+17
+
+3
+
+7
+
+12
+
+15
+
+51
+
+70
+
+Global gespeichert: Anzahl der Elemente, Verweis auf Minimum
+Jeder Knoten speichert:
+
+(cid:73) Verweis auf Elternknoten (NIL falls Wurzel),
+(cid:73) Verweis auf irgendeines seiner Kinder (NIL falls Blatt),
+(cid:73) Verweis auf linken und auf rechten Bruder (=doppelt
+
+ringverkettete Geschwisterliste), bzw. vorige/nächste Wurzel,
+
+(cid:73) Anzahl der Kinder,
+(cid:73) Boolean-Markierung. Initial sind alle Knoten unmarkiert.
+
+Priority Queues und Heaps Fibonacci Heaps
+
+157
+
+Einfache Operationen
+
+item* min(H):
+
+return H.min
+
+void insert(H, key):
+
+Erstelle neue Wurzel w für key, ohne Kinder
+Füge w der Wurzelliste hinzu, update ggf. H.min
+
+FibonacciHeap union(H1,H2):
+
+Hänge beide Wurzellisten aneinander und setze H.min
+
+item* deleteMin(H):
+
+???
+
+void decreaseKey(H, item* X, newkey):
+
+// O(1)
+
+// O(1)
+
+// O(1)
+
+???
+
+void delete(H, item* X):
+
+decreaseKey(H, X, −∞)
+deleteMin(H)
+
+// O(„decreaseKey“ + „deleteMin“)
+
+Priority Queues und Heaps Fibonacci Heaps
+
+158
+
+Analyse mit Buchhaltermethode
+
+Idee: Jeder Knoten im Fibonacci Heap kann Münzen besitzen, mit
+denen man konstant viel Arbeit bezahlen kann.
+
+Invarianten: Wir werden bei allen Operationen die folgenden
+Eigenschaften einhalten:
+
+(cid:73) Wurzelknoten halten (mindestens) eine Münze
+
+Damit sich die Wurzel ein „ich hänge mich unter einen anderen
+Knoten“ selbst ﬁnanzieren kann.
+
+(cid:73) Markierte Knoten halten (mindestens) zwei Münzen
+Damit sich der Knoten ein „ich schneide mich los und werde
+eine Wurzel“ selbst ﬁnanzieren kann (1 Münze), und dann noch
+die als Wurzel notwendige Münze besitzt.
+
+Priority Queues und Heaps Fibonacci Heaps
+
+159
+
+Einfache Operationen, amortisiert
+
+item* min(H):
+
+return H.min
+
+1 Münze für O(1) Zeitaufwand, keine Änderung bei den Münzen
+innerhalb des Heaps
+
+// O(1)
+
+void insert(H, key):
+
+⇒ 1 Münze → amortisiert O(1) Zeitaufwand
+// O(1)
+
+Erstelle neue Wurzel w für key, ohne Kinder
+Füge w der Wurzelliste hinzu, update ggf. H.min
+
+1 Münze für O(1) Zeitaufwand + 1 Münze für Wurzelinvariante
+
+⇒ 2 Münzen → amortisiert O(1) Zeitaufwand
+// O(1)
+
+FibonacciHeap union(H1,H2):
+
+Hänge beide Wurzellisten aneinander und setze H.min
+
+1 Münze für O(1) Zeitaufwand, keine Änderung bei den Münzen
+innerhalb des Heaps
+
+⇒ 1 Münze → amortisiert O(1) Zeitaufwand
+
+Priority Queues und Heaps Fibonacci Heaps
+
+160
+
+DecreaseKey, 11→2
+
+5
+
+9
+
+17
+
+4
+
+6
+
+10
+
+11
+
+8
+
+13
+
+18
+
+16
+
+17
+
+1
+
+7
+
+Priority Queues und Heaps Fibonacci Heaps
+
+160
+
+DecreaseKey, 11→2
+
+5
+
+9
+
+17
+
+4
+
+6
+
+2
+
+8
+
+10
+
+1
+
+7
+
+13
+
+18
+
+16
+
+17
+
+Priority Queues und Heaps Fibonacci Heaps
+
+160
+
+DecreaseKey, 11→2
+
+5
+
+9
+
+17
+
+4
+
+6
+
+10
+
+13
+
+16
+
+17
+
+1
+
+7
+
+2
+
+18
+
+8
+
+Priority Queues und Heaps Fibonacci Heaps
+
+161
+
+DecreaseKey, 18→3
+
+6
+
+9
+
+8
+
+10
+
+1
+
+7
+
+15
+
+14
+
+13
+
+19
+
+18
+
+Priority Queues und Heaps Fibonacci Heaps
+
+161
+
+DecreaseKey, 18→3
+
+6
+
+9
+
+8
+
+10
+
+1
+
+7
+
+15
+
+14
+
+13
+
+19
+
+3
+
+Priority Queues und Heaps Fibonacci Heaps
+
+161
+
+DecreaseKey, 18→3
+
+6
+
+99
+
+8
+
+10
+
+3
+
+1
+
+7
+
+15
+
+14
+
+13
+
+19
+
+Markierung! → „Warnung“, dass
+der hier gewurzelte Teilbaum wo-
+möglich bald zu wenige Knoten re-
+lativ zur Kinderanzahl hat.
+
+Wir setzen Markierung immer bei
+einer Nicht-Wurzel, wenn eines
+ihrer Kinder entfernt wird.
+
+Priority Queues und Heaps Fibonacci Heaps
+
+162
+
+DecreaseKey, 13→4
+
+6
+
+9
+
+8
+
+10
+
+3
+
+1
+
+7
+
+15
+
+14
+
+13
+
+19
+
+Priority Queues und Heaps Fibonacci Heaps
+
+162
+
+DecreaseKey, 13→4
+
+6
+
+9
+
+8
+
+10
+
+3
+
+1
+
+7
+
+15
+
+14
+
+4
+
+19
+
+Priority Queues und Heaps Fibonacci Heaps
+
+162
+
+DecreaseKey, 13→4
+
+6
+
+9
+
+8
+
+10
+
+1
+
+7
+
+3
+
+4
+
+15
+
+14
+
+19
+
+Knoten schon markiert!
+→ Abschneiden und zur Wurzel ma-
+chen, wie vorhin sein Kind.
+Vater markieren (falls keine Wurzel)!
+
+Priority Queues und Heaps Fibonacci Heaps
+
+162
+
+DecreaseKey, 13→4
+
+6
+
+10
+
+8
+
+1
+
+7
+
+3
+
+4
+
+9
+
+15
+
+14
+
+19
+
+Priority Queues und Heaps Fibonacci Heaps
+
+163
+
+DecreaseKey – Pseudocode
+void decreaseKey(H, item* X, newkey):
+
+X.key = newkey
+if (Y := X.parent) existiert und Y.key > X.key :
+
+// Annahme: neuer key tatsächlich kleiner
+
+cut(H, X)
+ﬁxDaddy(H, Y)
+void cut(H, item* X):
+
+Entferne X (inkl. seinem Teilbaum) aus Kinderliste von X.parent
+Hänge X (inkl. seinem Teilbaum) in die Wurzelliste von H
+X.markiert = false (und update ggf. H.min)
+
+void ﬁxDaddy(H, item* X):
+
+if (Y := X.parent) existiert nicht then return
+if X.markiert = false:
+X.markiert = true
+cut(H, X)
+ﬁxDaddy(H, Y)
+
+else:
+
+// X ist markierte Nicht-Wurzel
+
+Priority Queues und Heaps Fibonacci Heaps
+
+164
+
+DecreaseKey – Analyse
+
+Lemma. DecreaseKey benötigt amortisiert O(1) Zeit.
+
+Beweis.
+Falls die Operation etwas an der Heapstruktur macht, dann:
+
+1 abschneiden&wurzeln des betrachteten Items,
+2 abschneiden&wurzeln der Vorfahren-Knoten, solange sie schon
+
+markiert sind,
+
+3 markieren des ersten unmarkierten Vorfahren (falls keine
+
+Wurzel).
+
+Jedes Abschneiden&Wurzeln benötigt konstant viel Zeit (= 1 Münze)
++ 1 Münze für Wurzelinvariante.
+
+(cid:73) Für 1 : 2 Münzen
+(cid:73) Für 2 : keine zusätzlichen Münzen notwendig, da schon auf
+
+markierten Knoten vorhanden (Markierungsinvariante)
+
+(cid:73) Für 3 : 1 Münze zum markieren, 2 Münzen um
+
+Markierungsinvariante herzustellen
+
+⇒ insgesamt 5 Münzen → konstant
+
+(cid:3)
+
+Priority Queues und Heaps Fibonacci Heaps
+
+165
+
+DeleteMin
+
+item* deleteMin(H):
+
+ϕ = Goldener Schnitt ≈ 1.618
+
+1 „Extrahiere Minimum“
+
+Entferne Wurzel H.min (und liefere es am Ende zurück)
+Füge ihre Kinder an die Liste der Wurzeln an.
+
+Jetzt benötigen wir das neue Minimum... aus SOOO viele Wurzeln...
+
+2 „Schrumpfe Wurzelliste“
+
+Stelle sicher, dass für jedes k ∈ {1, 2, . . . ,(cid:98)logϕ n(cid:99)} maximal
+→ dazu werden Bäume verschmolzen... wie genau?
+
+eine Wurzel mit k Kindern existiert
+
+3 „Finde neues Minimum“
+
+Finde kleinste der logϕ n Wurzeln → neues H.min
+
+Wir werden zeigen: Nach 2 ist maximaler Knotengrad ≤ logϕ n.
+Bei keiner anderen Operation kann der Knotengrad steigen.
+⇒ 1 benötigt O(log n) Zeit (so wie 3 ).
+⇒ Schritt 2 mit Ω(log n) im Worstcase dominiert die Laufzeit.
+
+Priority Queues und Heaps Fibonacci Heaps
+
+166
+
+Wurzelliste schrumpfen
+
+a Verwalte Array A der Größe (cid:98)logϕ n(cid:99). Für alle i: der i-te Eintrag
+
+(initial NIL) verweist auf eine Wurzel mit Grad i.
+
+b Gehe durch alle (sagen wir m viele) Wurzeln in der Wurzelliste
+
+durch, und registriere die Wurzel in A
+
+(cid:73) Falls schon eine andere Wurzel mit selben Knotengrad
+
+bekannt: Hänge Wurzel mit größerem Schlüssel unter die
+andere Wurzel. Deren Grad steigt um 1. Aktualisiere A
+entsprechend.
+
+Lemma. Obige Operation benötigt amortisiert O(log n) Zeit.
+Beweis.
+
+(cid:73) Ω(log n) ist klar wegen Verwaltung von A.
+(cid:73) In b wird maximal O(log n) mal nicht verschmolzen.
+(cid:73) Wenn Verschmolzen wird: Aufwand für ein Verschmelzen ist
+
+konstant und wird von der Münze des „nun nicht mehr
+Wurzel“-Knotens bezahlt. Wurzelinvariante (und
+Markierungsinvariante) bleibt bestehen.
+
+(cid:3)
+
+Priority Queues und Heaps Fibonacci Heaps
+
+167
+
+Was zu zeigen bleibt: Grad-Eigenschaft, 1/2
+
+Lemma. Die Wurzeln erhalten in obigem Scheme nie einen
+Knotengrad > (cid:98)logϕ n(cid:99). Das heisst, A reicht aus.
+Beweis.
+(cid:73) Fd+2 ≥ ϕd (für alle d ≥ 0) → Übung
+(cid:73) Angenommen es gilt:
+
+Behauptung. Sei w ein beliebiger Knoten mit d Kindern. Der
+an w gewurzelter Teilbaum hat size(w) ≥ Fd+2 Knoten.
+Dann folgt daraus logϕ n ≥ logϕ size(w) ≥ d.
+
+(cid:3)
+
+Beweis der Behauptung.
+Per Induktion über die Höhe von w (=längster Pfad zu einem Blatt.)
+Achtung: w muss keine Wurzel sein!
+Induktionsanfang. Höhe 0: d = 0; einzelner Knoten size(w) = 1 = F2.
+Induktionsschritt. nächste Folie
+
+Priority Queues und Heaps Fibonacci Heaps
+
+168
+
+Was zu zeigen bleibt: Grad-Eigenschaft, 2/2
+
+Behauptung. Sei w ein beliebiger Knoten mit d Kindern. Der an w
+gewurzelter Teilbaum hat size(w) ≥ Fd+2 Knoten.
+Beweis der Behauptung, Fortsetzung. – Induktionsschritt.
+
+(cid:73) Sei w ein Knoten mit d Kinder v1, . . . , vd, die jeweils c1, . . . cd
+
+Kinder haben. Kinderindizes sind sortiert danach, wann v? ein
+Kind von w wurde. vd ist das neueste Kind.
+
+d(cid:80)
+
+i=1
+
+(cid:73) Beobachtung: ci ≥ i − 2 (für alle i ≥ 2).
+
+Als vi Kind wurde, hatte w mindestens Grad i − 1 (durch
+Kinder v1, . . . , vi−1). vi wird bei Verschmelzung nur unter w
+gehängt, wenn gleicher Knotengrad. Seitdem hat vi maximal 1
+Kind verloren (Markierungsstrategie bei decreaseKey)
+→ mindestens i − 2 Kinder.
+
+(cid:73) Für i ≥ 2 gilt Induktionsannahme size(vi) ≥ Fci+2 ≥ Fi−2+2 = Fi.
+
+Zusammen mit w selbst und size(v1) ≥ 1 = F1 erhalten wir:
+
+size(w) ≥ 1 +
+
+Fi
+
+Übung
+
+= Fd+2
+
+(cid:3)
+
+Priority Queues und Heaps Fibonacci Heaps
+
+169
+
+Zusammenfassung (fast)
+
+Op
+min
+
+d-ary
+Binary
+O(1)
+O(1)
+insert O(log n)
+O(logd n)
+decr.Key O(log n)
+O(logd n)
+deleteMin O(log n) O(d · logd n)
+delete O(log n) O(d · logd n)
+union
+
+pfui
+
+pfui
+
+Binomial
+
+O(1)
+O(1)*
+O(log n)
+O(log n)
+O(log n)
+O(log n)
+
+Fibonacci
+
+O(1)
+O(1)
+O(1)*
+O(log n)*
+O(log n)*
+O(1)
+* amortisiert
+
+Praxis: Fibonacci Heaps fast immer langsamer als d-ary Heaps.
+
+Priority Queues und Heaps Fibonacci Heaps
+
+170
+
+Laufzeit, Dijkstra (nochmal)
+
+Gegeben: Gewichteter Graph mit n Knoten, m Kanten.
+Gesucht: SSSP (Single-Source Shortest Path) → Dijkstra’s Alg.
+
+(cid:73) P = PriorityQueue für Knoten.
+
+Anfangs: key(s) = 0, alle anderen +∞5.
+
+(cid:73) while(|P| > 0) { v = deleteMin(P);
+
+forall Nachbarn u von v: decreaseKey(u,key(v) + d(v, u))6 }
+
+O(n) mal deleteMin, O(m) mal decreaseKey
+
+Laufzeit mit...
+
+(cid:73) Binary Heap:
+(cid:73) d-ary Heap: O(n · (d · logd n) + m · logd n)
+
+O(n log2 n + m log2 n) =O(m log2 n)
+= O(m log[m/n] n)
+
+d=[m/n]
+
+(cid:73) Fibonacci Heap:
+
+O(n logϕ n + m · 1) = O(m + n log2 n)
+
+5Bzw. nicht in P.
+6Falls kleiner als bisheriger key. Falls noch nicht in P: stattdessen insert.
+
+Priority Queues und Heaps Zusammenfassung
+
+171
+
+Weitere Heaps (unter anderem...)
+
+pfui
+
+pfui
+
+O(1)
+
+d-ary
+Op Binary
+min O(1)
+O(1)
+insert O(log n) O(logd n)
+
+Binomial Fibonacci Pairing Brodal
+O(1)
+O(1)
+O(1)
+O(1)*
+O(1)
+O(1)
+o(log n)* O(1)
+decr.Key O(log n) O(logd n) O(log n)
+deleteMin O(log n) O(d · logd n) O(log n) O(log n)* O(log n)* O(log n)
+delete O(log n) O(d · logd n) O(log n) O(log n)* O(log n)* O(log n)
+O(1)
+union
+* amortisiert
+
+O(1)
+O(1)
+O(1)*
+
+O(log n)
+
+O(1)
+
+Pairing Heaps.
+
+(cid:73) Noch „schlampiger“ als Fibonacci Heaps. Listen statt Bäumen.
+(cid:73) In der Praxis schneller als Fibonacci (und etwas einfacher zu
+
+implementieren); bei ausreichend vielen Schlüsseln ca. so
+schnell wie d-ary Heaps.
+Ω(log log n) ∩ O(22
+
+(cid:73) Genaue Laufzeit von decreaseKey unbekannt: wir wissen nur
+
+log log n)
+
+√
+
+Brodal Heaps.
+
+(cid:73) Zum ersten Mal Fibonacci-Laufzeiten im Worst Case.
+(cid:73) Zitat des Autors: sehr kompliziert und praxisuntauglich
+
+(so wie alle formal guten Heaps seitdem)
+
+Minimaler Spannbaum
+
+Minimaler Spannbaum
+
+173
+
+Minimale Spannbäume
+
+Kennen Sie doch aus Informatik A!!!
+→ Kurskal’s Algorithmus
+
+Minimaler Spannbaum
+
+174
+
+Geschichtlicher Abriss
+
+Die Geschichte minimaler Spannbäume (MST) ist eine Geschichte
+voller schlechter Zitate...
+
+(cid:73) Sie kennen „Alg. von Joseph Kruskal (1956)“
+(cid:73) Alternativ: „Alg. von Robert C. Prim (1957)“, auch Dijkstra (1959)
+
+Aber es gab schon Forschung vor dem zweiten Weltkrieg! — Nur
+halt nicht so einfach auf Englisch ﬁndbar für Amerikaner...
+
+(cid:73) Otakar Bor˚uvka (1926)
+
+anderer algorithmischer Ansatz (unabhängig wiederentdeckt
+von Sollin, 1961); immer nur oberﬂächlich zitiert
+
+(cid:73) Vojtˇech Jarník (1930)
+
+„Prims“ Algorithmus; nie zitiert
+
+Korrekte Algorithmenbezeichnungen:
+
+– Bor˚uvka Algorithmus
+– Jarník-Prim Algorithmus
+– Kruskal Algorithmus
+
+Minimaler Spannbaum
+
+175
+
+Bor˚uvka & Jarník
+
+(cid:73) Bor˚uvka (1926)
+
+Erste Erwähnung des MST Problems. Motivation: Elektriﬁzierung
+von Südmähren7.
+Vor der „Erﬁndung“ der modernen Graphentheorie/Notation!
+
+Zwei Veröffentlichungen:
+
+1 22 Seiten (Tschechisch + deutsche Zusammenfassung):
+
+Theoretische Beschreibung des Problems & Algorithmus’.
+Wurde zitiert, aber immer als „zu kompliziert“8.
+
+2 2 Seiten (Tschechisch):
+
+Beipielberechnung mittels des Algorithmus’.
+Wurde nie zitiert.
+
+(cid:73) Jarník (1930)
+
+Antwort auf 1 : Einfacherer Alg. (der, den Prim wiederentdeckte)
+5 Seiten (Tschechisch, davon 2 Seiten deutsche Zusammenf.)
+Erste Zitation in den späten 60ern, dann wieder lange nicht...
+
+7Hauptstadt Brno (Brünn), zweitgrößte Stadt des heutigen Tschechiens
+8Inzwischen weiß man: Idee in modernem Setting am efﬁzientesten!
+
+Minimaler Spannbaum
+
+176
+
+Drei Algorithmen...
+
+Alle drei Algorithmen sind Greedy-Algorithmen: Lösung strittweise
+aufbauen, in jedem Schritt die lokal billigste Möglichkeit machen.
+Starte mit Graphen ohne gewählte Kanten. Nimm schrittweise
+Kanten hinzu. Die entstehenden Zusammenhangskomponenten
+(Teil-Spannbäume) nennen wir Fragmente.
+
+(cid:73) Kruskal: Anfangs ist jeder Knoten sein eigenes Fragment.
+
+Wähle immer billigste Kante, die zwei unterschiedliche
+Fragmente verbindet.
+
+(cid:73) Jarník-Prim: Anfangs ist ein beliebig gewählter Knoten das
+einzige (triviale) Fragment. Wähle billigste Kante, die einen
+weiteren Knoten zum Fragment hinzunimmt.
+
+(cid:73) Bor˚uvka: Anfangs ist jeder Knoten sein eigenes Fragment.
+Füge für jedes Fragment die billigste Kante hinzu, die es mit
+einem anderen Fragment verbindet.9
+
+9Annahme: Alle Kantenkosten sind unterschiedlich.
+
+Minimaler Spannbaum
+
+177
+
+Generischer Algorithmus
+
+Sei S eine Kantenteilmenge eines MST. Eine Kante e ist S-zulässig,
+falls auch S ∪ {e} eine Kantenteilmenge eines MST sein kann.
+Geg.: zusammenh., unger. Graph G = (V, E) mit Kosten c : E → N
+
+S = ∅
+while |S| < |V| − 1:
+
+ﬁnde Kante e ∈ E \ S die S-zulässig ist, und füge sie zu S hinzu
+
+return S
+
+Beobachtung. Während des Algorithmus’ bleibt S immer kreisfrei
+(→ ein Wald) ⇒ |S| = |V| − 1 ⇐⇒ S ist ein Spannbaum.
+Theorem. Sei (W : ¯W) eine Knotenpartition (=Schnitt) in G mit
+S ∩ F = ∅. Dabei sind F := (W × ¯W) ∩ E die Schnittkanten. Die
+billigste Schnittkante e = arg mine(cid:48)∈F c(e(cid:48)) ist S-zulässig. → Beweis folgt
+Beobachtung. Falls |S| < |V| − 1: ∃ mind. 2 Komponenten in G.
+Wähle eine Komp. als W ⇒ Theorem anwendbar ⇒ ∃ zulässige Kante.
+Korrolar. Obiger Algorithmus berechnet einen Spannbaum in
+O(|V| · s(G)), wobei s(G) die Laufzeit für die Suche nach e angibt.
+
+Minimaler Spannbaum
+
+178
+
+Schnittbeweis
+
+e
+
+f
+
+W
+
+¯W
+
+Theorem. Sei (W : ¯W) eine Knotenpartition (=Schnitt) in G mit
+S ∩ F = ∅. Dabei sind F := (W × ¯W) ∩ E die Schnittkanten. Die
+billigste Schnittkante e = arg mine(cid:48)∈F c(e(cid:48)) ist S-zulässig.
+
+Beweis.
+Sei T ein beliebiger optimaler MST in G, der e nicht enthält. Füge e
+zu T hinzu, so entsteht ein Kreis C. Löschen einer beliebigen Kante
+aus C liefert einen Spannbaum (nicht unbedingt minimal). Da e ∈ F
+und C ein Kreis, muss (mindestens) eine weitere Kante f ∈ C ∩ F
+existieren. c(f ) (cid:54)< c(e) durch Wahl von e, und c(f ) (cid:54)> c(e) durch
+Minimalität von T. In T können wir f durch e ersetzen und erhalten
+einen Spannbaum mit e und gleichem Gewicht wie T.
+
+(cid:3)
+
+Minimaler Spannbaum
+
+Jarník-Prim
+
+Minimaler Spannbaum Jarník-Prim
+
+Jarník-Prim
+
+Wähle beliebigen Knoten v ∈ V und setze W = {v}
+while |W| < |V|:
+
+wähle billigste Kante {w, u} ∈ E mit w ∈ W, u ∈ V \ W
+füge u zu W hinzu
+
+180
+
+Wie ﬁndet man die billigste Kante? → Verwalte die potentiell
+nächsten Kanten in einer PriorityQueue (z.B. Binary Heap)
+Wähle beliebigen Knoten v ∈ V und setze W = {v}
+Jeder Knoten u ∈ V \ {v} hat Zusatzfelder pred und key
+PriorityQueue P enthält alle u ∈ V \ {v} jeweils mit Priorität u.key
+for all u ∈ V \ {v}:
+while |W| < |V|:
+
+u.pred = v und u.key = c(v, u)
+u = P.extractMin()
+wähle Kante (u.pred, u) und setze W = W ∪ {u}
+for all w ∈ N(u) \ W: if c(u, w) < w.key:
+
+„P.insert“
+
+w.key = c(u, w) und w.pred = u
+
+„P.decreaseKey“
+
+Minimaler Spannbaum Jarník-Prim
+
+181
+
+Jarník-Prim: Laufzeit (Binary Heap)
+
+Theorem. Wenn wir die PriorityQueue mittels Binary Heaps
+implementieren, benötigt der Algorithmus O(|E| log|V|) Zeit.
+
+Beweis.
+
+(cid:73) P enthält maximal |V − 1| Elemente → Operationen auf P
+
+benötigen O(log|V|) Zeit
+
+(cid:73) Äussere For-Schleife: O(|V|) mal ein P.insert ⇒ O(|V| log|V|)
+(cid:73) While-Schleife wird O(|V|) mal durchlaufen. Dabei wird jedesmal
+
+1x P.extractMin und bis zu O(|V|)-mal P.decreaseKey
+aufgerufen
+⇒ O(|V|2 log|V|) :-(
+
+(cid:73) Innere For-Schleife besser analysieren: Jede Kante wird von
+dieser Schleife insgesamt (über alle While-Durchläufe) nur
+einmal betrachtet! ⇒ innere For-Schleife insgesamt nur
+O(|E|)-mal durchlaufen.
+
+(cid:73) Gesamtlaufzeit (zusammenhängende Graphen: |V| = O(|E|)):
+
+O(|V| log|V| + |V| log|V| + |E| log|V|) = O(|E| log|V|)
+
+(cid:3)
+
+Minimaler Spannbaum Jarník-Prim
+
+182
+
+Jarník-Prim: Laufzeit (Fibonacci Heap)
+
+implementieren, benötigt der Algorithmus O(cid:0)|E| + |V| log|V|(cid:1) Zeit.
+
+Theorem. Wenn wir die PriorityQueue mittels Fibonacci Heaps
+
+Beweis.
+
+(cid:73) Äussere For-Schleife: O(|V|) mal ein P.insert (O(1)) ⇒ O(|V|)
+(cid:73) While-Schleife wird O(|V|) mal durchlaufen. Dabei wird jedesmal
+
+1x P.extractMin (amortisiert O(log|V|)) aufgerufen
+⇒ O(|V| log|V|)
+
+(cid:73) Innere For-Schleife insgesamt nur O(|E|)-mal durchlaufen;
+
+(cid:73) Gesamtlaufzeit: O(|V| + |V| log|V| + |E|) = O(cid:0)|E| + |V| log|V|(cid:1) (cid:3)
+
+P.decreaseKey amortisiert in O(1). ⇒ O(|E|)
+
+Minimaler Spannbaum
+
+Kruskal
+
+Minimaler Spannbaum Kruskal
+
+184
+
+Kruskal
+T = (V,∅)
+while T verbindet nicht alle Knoten:
+
+e = billigste noch nicht betrachtete Kante aus G
+if T + e ist kreisfrei then
+
+Füge e zu T hinzu
+
+Wie löst man die Schritte 1 – 3 efﬁzient?
+
+1 Mitzählen, wieviele Kanten eingefügt wurden:
+
+|V| Knoten → |V| − 1 Kanten notwendig
+
+// 1
+// 2
+// 3
+
+2 Sortiere die Kanten von G, und laufe sortierte Liste ab.
+
+(cid:73) Allgemeine Kantenkosten: O(|E| log|E|) = O(|E| log|V|)
+(cid:73) Beschr. ganzz. Kosten: Linearzeit-Sortieren! O(|E|)
+
+3 Hm... mehrere Möglichkeiten...
+
+Minimaler Spannbaum Kruskal
+
+185
+
+Kruskal — mit explizitem Kreis-Test
+
+T = (V,∅), a = 0
+Sortiere Kantenliste
+while a < |V| − 1:
+
+e = nächste Kante aus G gemäß Reihenfolge
+if istKreisfrei(T + e) then
+
+Füge e zu T hinzu, a++
+
+istKreisfrei kennen Sie aus Info-A: Tiefen- oder Breitensuche.
+Laufzeit: linear in Knoten- und Kantenanzahl des Graphen
+Da T + e weniger Kanten als Knoten enthält ⇒ O(|V|)
+
+Laufzeit (Kruskal, expliziter Kreis-Test): O(|E| · |V|)
+
+Minimaler Spannbaum Kruskal
+
+186
+
+Kruskal — mit Union-Find
+
+T = (V,∅), a = 0, jeder Knoten liegt in eigener Komponente
+Sortiere Kantenliste
+while a < |V| − 1:
+
+(u, v) = nächste Kante aus G gemäß Reihenfolge
+if componentOf(u) (cid:54)= componentOf(v) then
+
+Füge e zu T hinzu, a++
+Vereinige componentOf(u) und componentOf(v)
+
+Neue Datenstruktur zur (efﬁzienten) Verwaltung von Disjoint Sets:
+
+Operationen, die wir benötigen:
+
+(cid:73) init(): Jedem Knoten wird eine eigene Komponente zugeordnet
+(cid:73) ﬁnd(u): In welcher Komponente liegt u?
+(cid:73) union(u,v): Vereinige die Komponente von u mit der von v
+
+⇒ Union-Find Datenstruktur
+Mehrere Möglichkeiten, z.B.: Listen und Wälder
+
+Minimaler Spannbaum Kruskal
+
+187
+
+Kruskal mit Union-Find Listen, 1/2
+
+(cid:73) Komponenten sind Objekte.
+(cid:73) Jeder Knoten u speichert einen Zeiger u.comp zur Komponente
+
+zu der er gehört.
+→ﬁnd(u) trivial in O(1)
+
+(cid:73) Jede Komponente speichert ihre Größe und eine Liste ihrer
+
+Elemente.
+→init(): Jedes Element hat eigene, 1-elementige Komp.; O(|V|)
+(cid:73) union(u,v): Füge die kleinere Komponente der größeren hinzu.
+
+Aneinanderhängen der Elementlisten und Updaten der Größe
+(O(1)); bei den Elementen der kleineren Komponente den
+comp-Zeiger aktualisieren (O(Größe-der-kleineren-Komp.))
+
+Minimaler Spannbaum Kruskal
+
+188
+
+Kruskal mit Union-Find Listen, 2/2
+
+Füge e zu T hinzu, a++
+union(u, v)
+
+(u, v) = nächste Kante aus G gemäß Reihenfolge
+if ﬁnd(u) (cid:54)= ﬁnd(v) then
+
+T = (V,∅), a = 0, jeder Knoten liegt in eigener Komponente // O(|V|)
+// O(|E| log|V|)
+Sortiere Kantenliste
+// O(|E|)
+while a < |V| − 1:
+// O(1)
+// O(?)
+Union: O(|V|)-mal; WorstCase jedesmal O(|V|)? → Amort. Analyse!
+Ohne Zeigerupdate benötigt union nur O(1) Zeit.
+Wie oft wird der comp-Zeiger eines bel. Knoten w aktualisiert?
+Nur, wenn w in der kleineren Komponente ist → aber dann ist
+seine Komponente nachher mindestens doppelt so groß! → nach
+maximal O(log|V|) Updates enthält die Komponente alle Knoten
+⇒ Die Laufzeit-Summe über alle union-Aufrufe ist O(|V| +|V| log|V|)
+(Sortieren dominiert!)
+.
+
+Laufzeit (mit UF Listen):
+
+O(|E| log|V| + |E| + |V| log|V|) = O(|E| log|V|)
+
+Minimaler Spannbaum Kruskal
+
+189
+
+Kruskal mit Union-Find Wäldern, 1/3
+
+Annahme: Kanten schon sortiert oder in Linearzeit sortierbar.
+UF Listen beschränken die Gesamtlaufzeit auf O(|E| log|V|).
+Geht es besser? → JA! Union-Find Wälder
+
+(cid:73) Komponenten werden jeweils durch einen Baum repräsentiert,
+
+der die Graphknoten enthält. Die Wurzel ist der
+Repräsentant der Komponente.
+
+(cid:73) Jeder Knoten speichert einen Verweis auf seinen Vater (Initial:
+
+auf sich selbst). Achtung: Wir speichern nur diese
+Aufwärtsverweise des Baums, niemals Kinder eines Knoten...
+
+(cid:73) Jeder Knoten speichert die Tiefe (=Höhe) des an ihm
+
+gewurzelten Teilbaums.
+
+Find(u). Laufe von u den Baum nach oben und gib Wurzel zurück.
+
+Union(u,v). Setze die Wurzel des höheren Baums als den Vater der
+Wurzel des anderen Baums. D.h.: Hänge den Baum mit der
+geringeren Tiefe unter die Wurzel des anderen Baums.
+
+Minimaler Spannbaum Kruskal
+
+190
+
+Kruskal mit Union-Find Wäldern, 2/3
+
+1 Wir können union immer mit zwei Wurzeln aufrufen (da vorher
+
+schon ﬁnd gemacht). Dann benötigt union nur O(1) Zeit.
+
+2 Beim Verschmelzen zweier Bäume steigt die Höhe nur dann
+
+(und zwar um 1) wenn beide Bäume gleich hoch waren.
+
+3 ﬁnd(u) benötigt O(k) Zeit, wenn u k Ebenen von Wurzel entfernt.
+
+Pfadkompression: Hänge alle beim ﬁnd gesehenen Knoten
+direkt unter die Wurzel. → O(k) & beschleunigt folgende ﬁnds.
+Problem: Aktualisieren der Baumtiefe klappt nicht efﬁzient!
+
+⇒ Statt echter Baumtiefe, nur einen Rang (=Tiefe ohne Pfadkom-
+pression = obere Schranke für echte Tiefe) an Knoten speichern.
+Aus technischen Gründen: Deﬁniere Rang um 2 größer als notwendig.
+(cid:73) Initial hat jeder Baum (=einzelner Knoten) Rang 2 (statt 0).
+(cid:73) Bei ﬁnd wird der Rang nicht verändert.
+(cid:73) Bei union steigt der Rang nur (und zwar um 1 am Wurzelknoten)
+
+wenn zwei Bäume mit gleichem Rang verschmolzen werden.
+
+Minimaler Spannbaum Kruskal
+
+191
+
+Kruskal mit Union-Find Wäldern, 3/3
+
+Spannbaum KruskalMST( G = (V, E) , w ):
+
+T = (V,∅), a = 0, gemäß w sortierte Kantenliste
+v.parent = v, v.rank = 2
+while a < |V| − 1:
+
+∀v ∈ V
+
+// O(|V|)?
+
+(u, v) = nächste Kante aus G gemäß Reihenfolge
+if (uR := ﬁnd(u)) (cid:54)= (vR := ﬁnd(v)) then
+
+Füge Kante (u, v) zu T hinzu, a++, union(uR,vR)
+
+return T
+
+Knoten ﬁnd( u ):
+
+if u.parent (cid:54)= u then u.parent = ﬁnd(u.parent)
+return u.parent
+
+// mit Pfadkompression!
+
+void union( uR , vR ): // Annahme: u und v sind unterschiedl. Wurzeln, O(1)
+
+if uR.rank < vR.rank:
+
+uR.parent = vR
+
+else if uR.rank > vR.rank:
+
+vR.parent = uR
+
+else:
+
+uR.parent = vR
+vR.rank++
+
+Minimaler Spannbaum Kruskal
+
+192
+
+Kruskal + UF Wälder: Analyse
+
+Lange Zeit war unklar, wie man die Laufzeit von ﬁnd überhaupt gut
+analysieren kann!
+
+(cid:73) Hopcroft, Ullman, 1973:
+
+Amortisiert O(log∗ |V|) Zeit
+⇒ KruskalMST O(|E| log∗ |V|)
+log∗? Iterierter Logarithmus: extrem langsam-wachsende Fkt
+log∗ n := min{k : log(k) n = log log . . . log
+
+n < 1}
+
+(cid:124)
+
+(cid:123)(cid:122)
+
+k
+
+(cid:125)
+
+(cid:73) Tarjan, 1975:
+
+⇒ KruskalMST O(|E| α(|V|))
+
+Amortisiert O(α(|V|)) Zeit
+α? Inverse Ackermann-Funktion: noch viel extremer
+langsam-wachsende Fkt, α(n) := min{k : n ≤ Ak(2)}
+Ackermann-Funktion Ak((cid:96))?
+α(n) ≤ 4 für alle auch nur jemals vorkommenden n
+
+Minimaler Spannbaum Kruskal
+
+193
+
+Ackermann-Funktion
+
+Verschiedene Möglichkeiten, sie formal zu deﬁnieren.
+Alle Varianten wachsen ähnlich schnell.
+
+„Unsere“ Ackermannfunktion:
+
+A0((cid:96)) := A(1)
+Ak+1((cid:96)) := A((cid:96))
+
+k
+
+0 ((cid:96)) = (cid:96) + 1
+k ((cid:96)) = A((cid:96)−1)
+(cid:125)
+
+(cid:96)
+
+(cid:124)
+
+(cid:123)(cid:122)
+(cid:124)
+(cid:123)(cid:122)
+(cid:125)
+1 ((cid:96)) = 2 · 2 · . . . · 2
+2 ((cid:96)) (cid:29)(cid:124)(cid:123)(cid:122)(cid:125)
+222···2(cid:96)
+
+(cid:96)
+
+(cid:96)
+
+A2((cid:96)) = A((cid:96))
+
+A3((cid:96)) = A((cid:96))
+
+A1((cid:96)) = A((cid:96))
+
+0 ((cid:96)) = (cid:96) +1 + 1 + . . . + 1
+
+= (cid:96) + (cid:96) = 2(cid:96)
+
+·(cid:96) = 2(cid:96)(cid:96) ≥ 2(cid:96)
+
+(Ak((cid:96))) = Ak(Ak(. . . Ak(
+
+(cid:96) ) . . .))
+
+(cid:124)
+
+(cid:123)(cid:122)
+
+(cid:96)
+
+k
+0
+1
+2
+3
+
+(cid:125)
+
+Ak(2)
+3
+4
+8
+2048
+
+4 (cid:29)(cid:124)(cid:123)(cid:122)(cid:125)
+222···22048
+
+2048
+
+(cid:29) 1020000
+
+α(n) := min{k : n ≤ Ak(2)} ≤ 4 ... so gut wie konstant
+
+Minimaler Spannbaum Kruskal
+
+194
+
+UF Wald: ﬁnd-Analyse, 1/5
+
+Zunächst ein paar Beobachtungen (Beweise → Übung)
+Beobachtung (Zeitliche Rang-Monotonie).
+Der Rang eines Knotens nimmt während des Algorithmus’ nie ab.
+Er kann nur steigen, wenn der Knoten eine Wurzel ist.
+Eine Nicht-Wurzel wird später nie wieder eine Wurzel.
+
+Lemma (Väterliche Rang-Monotonie).
+Der Rang des Vaters ist immer echt größer als der seiner Söhne.
+
+Lemma (Mindestgröße).
+Sei v ein Knoten mit Rang r. Ohne Pfadkompressionen enthält der
+an v gewurzelte Teilbaum mindestens 2r−2 Knoten.
+
+Beweis: Induktion über r.
+
+Folgerung (Maximaler Rang).
+Der maximal auftretende Rang ist (cid:98)log|V|(cid:99) + 2.
+
+Folgerung (Knotenanzahl pro Rang).
+Es gibt maximal |V|/2r−2 Knoten mit Rang r.
+
+A
+
+B
+
+C
+
+D
+
+E
+
+Minimaler Spannbaum Kruskal
+
+195
+
+UF Wald: ﬁnd-Analyse, 2/5
+
+Rang-Unterschied zw. einem Knoten v und seinem Vater.
+
+(cid:73) v hat Vater ⇒ v.rank ändert sich nicht mehr.
+(cid:73) v.parent (und damit auch v.parent.rank) kann sich durch
+
+Pfadkompressionen ändern.
+
+(cid:73) Sei δ(v) := max{k : v.parent.rank ≥ Ak(v.rank)}
+
+(cid:73) δ(v) ändert sich ggf. im Laufe des Algorithmus’, aber kann
+
+nicht kleiner werden
+(cid:73) A0(v.rank) = v.rank + 1
+0 ≤ δ(v)
+
+⇒
+
+B≤ v.parent.rank
+
+(cid:73) Aδ(v)(2) ≤ Aδ(v)(v.rank)
+
+def≤ v.parent.rank
+
+⇒
+
+δ(v) < α(|V|)
+
+F
+
+D≤ (cid:98)log|V|(cid:99) + 2
+
+|V|≥5
+< |V|
+
+G
+
+Minimaler Spannbaum Kruskal
+
+196
+
+UF Wald: ﬁnd-Analyse, 3/5
+
+Amortisierte Analyse.
+ﬁnd(v) benötigt O(s) Zeit, wobei s = Pfadlänge von v zur Wurzel w.
+⇒ s „Zeitmünzen“ werden verbraucht, einer pro „Aufwärtsschritt“.
+Wieviele Zeitmünzen müssen wir insgesamt verteilen?
+
+(cid:73) Jede ﬁnd-Operation erhält α(|V|) Münzen.
+(cid:73) Ein Topf mit O(|V|α(|V|)) Münzen. Wenn ein Knoten eine Münze
+
+braucht, nimmt er sie aus dem Topf.
+
+Wenn wir damit auskommen: |E| viele ﬁnds, |V| ≤ |E| ⇒ O(|E| α(|V|))
+Zeit für alle ﬁnds (und damit für KruskalMST insgesamt)
+
+Betrachte beliebigen Aufwärtsschritt von einem Knoten x aus.
+
+1 Falls x einen Vorfahren y mit δ(x) = δ(y) hat:
+
+Knoten x benutzt Münze aus Topf.
+
+2 Sonst: Benutze eine Münze der derzeitigen ﬁnd-Operation.
+
+Minimaler Spannbaum Kruskal
+
+197
+
+UF Wald: ﬁnd-Analyse, 4/5
+
+2
+
+x hat keinen Vorfahren y mit δ(x) = δ(y): Münze von ﬁnd.
+
+Für alle x ∈ V gilt: 0
+⇒ nur α(|V|) verschiedene δ-Werte → α(|V|) Münzen pro ﬁnd (cid:88)
+
+< α(|V|)
+
+F≤ δ(x)
+
+G
+
+1
+
+x hat Vorfahren y mit δ(x) = δ(y) =: k: Münze von x.
+
+Per Defn.:
+
+y.parent.rank ≥ Ak(y.rank)
+
+Sei w Baumwurzel.
+
+w.rank
+
+B≥ y.parent.rank
+
+x.parent.rank ≥ Ak(x.rank)
+Sei i ≥ 1, sodass x.parent.rank ≥ A(i)
+k (x.rank)
+δ≥
+δ≥ Ak(y.rank)
+k (x.rank)) = A(i+1)
+
+B≥ Ak(x.parent.rank)
+
+δ≥ Ak(A(i)
+
+(x.rank)
+
+Nach dem ﬁnd ist wg. Pfadkompression x.parent = w
+
+⇒ x.parent.rank ≥ A(i+1)
+
+(x.rank)
+
+Also: Nach spätestens (x.rank − 1)-vielen ﬁnds gilt:
+
+x.parent.rank ≥ A(x.rank)
+
+k
+
+(x.rank) = Ak+1(x.rank)
+
+und daher: δ(x) ≥ k + 1
+
+k
+
+k
+
+Minimaler Spannbaum Kruskal
+
+UF Wald: ﬁnd-Analyse, 5/5
+
+2
+
+1
+
+x hat keinen Vorfahren y mit δ(x) = δ(y): Münze von ﬁnd.
+
+x hat Vorfahren y mit δ(x) = δ(y) =: k: Münze von x.
+
+198
+
+(cid:88)
+
+Fortsetzung.
+Nach spätestens x.rank ﬁnds steigt δ(x) um 1.
+Da 0 ≤ δ(x) < α(|V|) kann es nur maximal α(|V|) mal steigen.
+⇒ # Münzen für Knoten x:
+
+≤ x.rank · α(|V|)
+≤ |V|/2r−2
+2r−2
+
+# Knoten mit Rang r ( E ):
+
+⇒ # Münzen für Knoten mit Rang r: ≤ r·α(|V|)·|V|
+(cid:98)log |V|(cid:99)+2(cid:88)
+
+r · α(|V|) · |V|
+
+∞(cid:88)
+
+Summe über alle Ränge = obere Schranke für alle Knoten zusammen:
+
+2r−2
+
+r=2
+
+≤ |V| · α(|V|) ·
+
+r + 2
+
+2r = O(|V| · α(|V|))
+
+r=0
+
+(cid:88)
+
+Minimaler Spannbaum Bor˚uvka & Zusammenfassung
+
+199
+
+Zusammenfassung der Laufzeiten
+
+(cid:73) Jarník-Prim
+
+(cid:73) mit Binary Heap:
+(cid:73) mit Fibonacci Heap:
+
+(cid:73) Kruskal
+
+(cid:73) mit explizitem Kreis-Test:
+(cid:73) mit Union-Find Listen:
+(cid:73) mit Union-Find Wäldern
+
+O(|E| log|V|)
+O(|E| + |V| log|V|)
+
+O(|E| · |V|)
+O(|E| log|V|)
+
+(+ vorsortierten/linear sortierbaren Kanten):
+
+O(|E| α(|V|)) ≈ O(|E|)
+
+Anmerkung 1. Kruskal + UF Wälder sind trivial zu implementieren!
+
+Anmerkung 2. Man kann zeigen: UF-Datenstrukturen können nicht
+efﬁzienter sein, d.h. Ω(|E| α(|V|)) ist auch eine untere Schranke
+für Kruskal!
+
+Minimaler Spannbaum Bor˚uvka & Zusammenfassung
+
+200
+
+Bor˚uvka, einige Anmerkungen
+
+(cid:73) Jarník-Prim:
+
+Lasse den Baum, ausgehend von einem Knoten, wachsen.
+
+(cid:73) Kruskal:
+
+Lasse den MST an mehreren Stellen des Graphen „entstehen“.
+
+(cid:73) Bor˚uvka:
+
+„Mischung“ aus beiden: Starte mit mehreren disjunkten
+Bäumen, die jeweils gleichzeitig wachsen. → Übung
+
+Bor˚uvkas Ansatz benötigt O(|E| log|V|) Zeit.
+
+Bor˚uvkas Ansatz erlaubt sehr efﬁziente Parallelisierung!
+→ Moderne MST Algorithmen sprechen z.T. von Bor˚uvka-Schritten
+
+.
+
+Minimaler Spannbaum Bor˚uvka & Zusammenfassung
+
+201
+
+Es gäbe noch mehr...
+
+Klassiker
+
+(cid:73) Bor˚uvka:
+(cid:73) Jarník-Prim:
+
+(cid:73) Kruskal:
+
+O(|E| log|V|)
+O(|E| + |V| log|V|)
+O(|E|) für „dichte“ Graphen (|E|/|V| ≥ log|V|)
+O(|E| log|V|)
+O(|E| α(|V|)) falls vorsortiert/linear-sortierbar
+
+Aktuelle Algorithmen
+
+(cid:73) Fredman-Tarjan, 1987:
+
+O(|E|) für „dichte“ Graphen (|E|/|V| ≥ log log log|V|)
+
+(cid:73) Fredman-Willard, 1994:
+
+O(|E|) für ganzzahlige Gewichte (in Binärdarstellung)
+
+(cid:73) Karger-Klein-Tarjan, 1995:
+
+O(|E|) im Erwartungswert (randomisiert)
+
+(cid:73) Chazelle, 2000:
+
+O(|E| α(|V|))
+
+Offene Frage
+
+(cid:73) Kann man allgemeines MST deterministisch in O(|E|) Zeit lösen?
+
+String Suche
+
+String Suche
+
+Naïve Suche
+
+String Suche Naïve Suche
+
+Fragestellung
+
+204
+
+Gegeben: Text T, Muster („Pattern“) P
+
+T, P sind Zeichenketten über einem Alphabet Σ, d.h. T, P ∈ Σ∗
+
+Gesucht: Kommt P in T vor? Wenn ja, wo? Wo überall?
+
+Allgemeine Bezeichnungen: n := |T|, m := |P|, m (cid:28) n
+
+Beispiel:
+
+P:
+
+T:
+
+n
+0
+
+a
+0
+
+a
+1
+
+n
+1
+n
+
+n
+2
+
+a
+2
+a
+
+a
+3
+
+n
+3
+n
+
+s
+5
+
+b
+6
+
+a
+7
+
+a
+4
+a
+
+n
+8
+n
+
+a
+9
+a
+
+n
+10
+n
+
+a
+11
+a
+
+n
+12
+
+e
+13
+
+String Suche Naïve Suche
+
+205
+
+Naïve Suche
+
+for i = 0, . . . , n − m:
+
+// jede mögliche Startposition
+
+j = 0
+while j < m and T[i + j] = P[j] do j++
+if j = m then „Übereinstimmung an Position i gefunden“
+
+// überprüfe Pattern
+
+T: a
+0
+
+i = 1: n
+i = 2:
+i = 3:
+i = 4:
+i = 5:
+i = 6:
+i = 7:
+i = 8:
+i = 9:
+i = 10:
+i = 11:
+
+n
+1
+a
+n
+
+a
+2
+n
+a
+n
+
+n
+3
+a
+n
+a
+n
+
+a
+4
+
+a
+n
+a
+n
+
+s
+5
+
+a
+n
+a
+n
+
+b
+6
+
+a
+n
+a
+n
+
+a
+7
+
+n
+8
+
+a
+9
+
+n
+10
+
+a
+11
+
+n
+12
+
+e
+13
+
+P: n
+0
+
+a
+1
+
+n
+2
+
+a
+3
+
+a
+n
+a
+n
+
+a
+n
+a
+n
+
+a
+n
+a
+n
+
+a
+n
+a
+n
+
+a
+n
+a
+
+a
+n
+
+n
+
+Laufzeit: O(n · m)
+
+String Suche
+
+Karp-Rabin
+
+String Suche Karp-Rabin
+
+Karp-Rabin
+
+(Richard M. Karp, Michael O. Rabin; 1987)
+
+207
+
+Beobachtung. Wenn wir T zumindest 1x ansehen müssen, ist
+Laufzeit Ω(n) unvermeidlich ist. Aber dann...
+
+Idee: Ein Nachteil des naïven Verfahrens ist es, dass wir für jeder
+potentielle Startposition i jeweils O(m) Zeit benötigen. Wenn wir
+einen Match in O(1) feststellen/auschliessen könnten, hätten wir
+einen O(n − m) = O(n) Algorithmus.
+
+?= S2 in O(1) Zeit?
+
+Gegeben zwei Strings S1, S2. Entscheide S1
+Hashing! Sei h : Σ∗ → N eine Hashfunktion.
+(cid:73) Angenommen wir kennen h(S1), h(S2)
+(cid:73) Falls h(S1) (cid:54)= h(S2) ⇒ S1 (cid:54)= S2
+(cid:73) Falls S1 = S2 ⇒ h(S1) = h(S2)
+(cid:73) Falls S1 (cid:54)= S2 ⇒ meistens h(S1) (cid:54)= h(S2)
+
+String Suche Karp-Rabin
+
+208
+
+Karp-Rabin, Algorithmus (erster Versuch)
+
+Ti,m = Teilstring von T, startend an Position i, Länge m
+
+1 hP = h(P)
+2
+
+for i = 0, . . . , n − m:
+
+hT = h(Ti,m)
+if hP = hT:
+
+3
+4
+
+5
+
+// bestimme Hashwert von P
+// jede mögliche Startposition
+// bestimme Hashwert von Ti,m
+// Hashes müssen übereinstimmen
+
+if P = Ti,m then „Übereinstimmung @i gefunden“
+
+– Gegeben ein String S. Berechnen von h(S) benötigt Θ(|S|) Zeit.
+
+In unserem Fall (Zeilen 1 und 3 ) also immer Θ(m)
++ Auswerten des ersten if (Zeile 4 ) benötigt O(1) Zeit
+– Auswerten des zweiten if (Zeile 5 ) benötigt O(m) Zeit
++ Das zweite if (Zeile 5 ) wird hoffentlich fast nie ausgeführt
+
+(außer wenn tatsächlich ein Match gefunden wird)
+
+Was haben wir gewonnen? Bisher nichts, im Gegenteil: Laufzeit nun
+sogar immer Θ(nm) statt O(nm) im Worst Case.
+
+Der „Bösewicht“ ist Zeile 3 !
+
+String Suche Karp-Rabin
+
+String-Hash
+
+209
+
+Gegeben ein String S. Wie berechnen wir einen (guten) Hashwert?
+Interpretiere Alphabet Σ als Menge von Zahlen {0, 1, 2, . . . , Σ − 1}.
+Wähle ein B ≥ |Σ|.
+
+Stelle S als Zahl zur Basis B dar: zS =(cid:80)|S|−1
+
+Diese Zahl ist eindeutig für jeden String!
+
+i=0 S[i] · Bi
+
+Praxis-Problem. Die Zahl ist i.A. zu groß für int Datentyp.
+
+Zwei Möglichkeiten:
+
+1 Wähle Hash zS modulo einer Primzahl.
+2 Abhängig von m = |S|, wähle B klein genug (auch kleiner als
+|Σ|, aber prim), so dass auch größtmögliches zS (≈ Bm) immer
+in Datenzelle (bzw. konstante Anzahl von Datenzellen passt)
+passt. → Im Folgenden einfacher!
+
+String Suche Karp-Rabin
+
+210
+
+Rolling String-Hash
+
+Im Algorithmus benötigen wir in der Schleife immer die Hashes von
+„ähnlichen“ Strings: T0,m, T1,m, T2,m, T3,m,...
+Bei jedem Schleifendurchlauf fällt das vorderste Zeichen aus der
+String weg, und hinten kommt ein Zeichen dazu.
+Ein Rolling Hash erlaubt es, bei einer derartigen String-Folge den
+jeweils nächsten Hashwert in konstanter Zeit zu ermitteln:
+Beispiel: Alphabet Σ = {a, b, c, d} → {0, 1, 2, 3}, B = 5
+
+1 · 53 + 3 · 52 + 2 · 51 + 1 · 50 = 211
+
+d
+
+c
+
+b
+
+b
+
+b
+
+d
+
+d
+
+c
+
+c
+
+b
+
+b
+
+c
+
+c
+
+d
+
+c
+
+b
+
+− 1 · 53
+
+3 · 52 + 2 · 51 + 1 · 50
+
+×5
+
+3 · 53 + 2 · 52 + 1 · 51
+
++ 2 · 50
+
+3 · 53 + 2 · 52 + 1 · 51 + 2 · 50 = 432
+
+h(Ti+1,m) = (h(Ti,m) − T[i] · Bm−1) × B + T[i + m]
+
+String Suche Karp-Rabin
+
+211
+
+Karp-Rabin, Algorithmus
+
+Wähle Basis B für Hashfunktion (abhängig von m und |Σ|)
+hP = h(P)
+hT = h(T0,m)
+for i = 0, . . . , n − m:
+
+// bestimme Hashwert von P
+// bestimme Hashwert der ersten m Zeichen
+// jede mögliche Startposition
+// Hashes müssen übereinstimmen
+
+if hP = hT:
+hT = (hT − T[i] · Bm−1) × B + T[i + m]
+
+if P = Ti,m then „Übereinstimmung @i gefunden“
+
+// T[n] = 0
+
+Laufzeit?
+
+(cid:73) Annahme gute Hashfunktion, also i.d.R.
+
+h(Ti,m) = h(P) ⇐⇒ Ti,m = P
+Abbruch beim ersten Treffer: O(n + m) =O(n)
+Alle k Treffer ﬁnden:
+
+O(n + k · m)
+
+(cid:73) Worst Case Annahme häuﬁge Hash-Kollisionen
+
+O(nm) (wie naïver Algorithmus)
+
+(cid:73) Praxis: sehr ﬂott, Hashfunktion meist sehr gut
+
+String Suche Karp-Rabin
+
+212
+
+Mehrere Muster suchen
+
+Gegeben. Mehrere Muster P1, P2, . . . , P(cid:96) nach denen wir in T
+suchen. (z.B. Plagiatssuche!)
+(Nun vereinfachende Annahme: alle Muster haben jeweils Länge m)
+Traditionelle Lösung: (cid:96)-mal normaler Suchalgorithmus ⇒ Ω((cid:96) · n)
+Mit Karp-Rabin geht das schneller!
+Wähle Basis B für Hashfunktion (abhängig von m und |Σ|)
+H = leere Hashtabelle
+for j = 1, . . . , (cid:96) do H.add(Pj)
+hT = h(T0,m)
+for i = 0, . . . , n − m:
+if hT ∈ H:
+
+// mit Hashwert h(Pj)
+
+forall Pj ∈ H mit h(Pj) = hT:
+
+// O(1)
+// tendenziell nur eines!
+
+if Pj = Ti,m then „Übereinstimmung für Pj @i“
+
+hT = (hT − T[i] · Bm−1) × B + T[i + m]
+
+Laufzeit wenn Hashwerte „gut“ funktionieren:
+
+O(n) (Erster Match), bzw. O(n + km) (k Matches)
+
+String Suche
+Knuth-Morris-Pratt
+
+String Suche Knuth-Morris-Pratt
+
+214
+
+Knuth-Morris-Pratt
+
+(Donald Knuth, Vaughan Pratt; James H. Morris; 1977)
+
+Betrachte naïven Algorithmus. Wenn wir P „gut kennen“, können wir
+uns viele Anlegepositionen und Vergleiche ersparen!
+
+T: a
+0
+
+a
+4
+
+s
+5
+
+b
+6
+
+a
+7
+
+n
+8
+
+a
+9
+
+n
+10
+
+a
+11
+
+n
+12
+
+e
+13
+
+P: n
+0
+
+a
+1
+
+n
+2
+
+a
+3
+
+n
+1
+a
+n
+
+a
+2
+n
+a
+n
+
+n
+3
+a
+n
+a
+n
+
+a
+n
+a
+n
+
+a
+n
+a
+n
+
+a
+n
+a
+n
+
+i = 1: n
+i = 2:
+i = 3:
+i = 4:
+i = 5:
+i = 6:
+i = 7:
+i = 8:
+Blaue Felder nicht nochmals
+i = 9:
+überprüfen, da wir von voriger
+i = 10:
+Iteration schon wissen welche
+i = 11:
+Werte sie haben, und dass sie
+daher mit dem Anfang von P bis
+hier übereinstimmen („gut ken-
+nen“ von P).
+
+Position kann nicht klappen, da wir schon
+wissen, dass P[1] = T[2] (vorige Iteration)
+aber P[0] (cid:54)= P[1] („gut kennen“ von P)
+
+a
+n
+a
+n
+
+a
+n
+a
+n
+
+a
+n
+a
+n
+
+a
+n
+a
+n
+
+a
+n
+a
+
+a
+n
+
+n
+
+String Suche Knuth-Morris-Pratt
+
+215
+
+Endlicher Automat (nur abhängig von P)
+
+n
+
+n
+
+n
+
+n
+
+na
+
+a
+
+n
+
+nan
+
+n
+
+a
+
+nana
+
+start
+
+(cid:73) Ablaufen des EA wie üblich: Einlesen von T, dabei gemäß
+den Symbolen im EA bewegen. Wenn man im „Endzustand“
+landet, hat man einen Match.
+Danach weiterlaufen: Finde die weiteren Matches.
+
+(cid:73) Rote Kanten: „Sonst“ (= wenn keine anderer Übergang)
+(cid:73) Größe des EA: m + 1 Zustände, max. min{|Σ|, m} Übergänge
+
+pro Zustand ⇒ O(min{m|Σ|, m2}).
+→ Speichere EA als Übergangstabelle dieser Größe!
+
+(cid:73) Such-Laufzeit (wenn EA schon existiert): Jedes Zeichen
+aus T 1x lesen, dabei in O(1) den nächsten Übergang wählen
+⇒ O(n)
+
+String Suche Knuth-Morris-Pratt
+
+216
+
+EA vs. Sprungvektor
+
+Endlicher Automat:
+
+(cid:73) Preprocessing: Der EA kann in O(min{m|Σ|, m2}) Zeit
+
+aufgebaut werden
+
+(cid:73) Gesamtlaufzeit: O(n + min{m|Σ|, m2})
+
+Falls Alphabet konstant: O(n + m) = O(n)
+
+(ohne Beweis)
+
+Alternative: Sprungvektor
+
+(cid:73) Statt der 2-dimensionalen Übergangsmatrix des EA nur einen
+
+1-dimensionalen Übergangsvektor V der Größe m + 1
+benutzen. V kann in O(m) berechnet werden.
+
+(cid:73) Dafür werden Zeichen aus T ggf. mehrmals gelesen, aber
+
+dennoch immer nur insgesamt O(n) Iterationen durchgeführt.
+
+(cid:73) Gesamtlaufzeit: O(n + m) = O(n)
+(cid:73) Wie klappt das?
+
+String Suche Knuth-Morris-Pratt
+
+217
+
+Spezieller Automat
+
+Pattern P:
+
+n
+
+a
+
+n
+
+a
+
+start
+
+Pattern P:
+
+n
+
+a
+
+n
+
+u
+
+start
+
+n
+
+n
+
+n
+
+n
+
+a
+
+a
+
+na
+
+na
+
+n
+
+n
+
+a
+
+u
+
+nan
+
+nan
+
+nana
+
+nanu
+
+Maximal zwei Übergänge aus jedem Zustand.
+
+(cid:73) Grüner Übergang: Wählen, wenn gelesener Buchstabe mit
+Kantenbeschriftung übereinstimmt. ((cid:54) ∃ in letztem Zustand!)
+
+(cid:73) Roter Übergang: Sonst
+
+Übergänge können verschiedene Ausprägungen haben:
+(cid:73) Dick: normal, d.h. Zeichen aus T wird „weggelesen“.
+
+Grün&dick: führt immer zum „nächsten“ Zustand.
+Rot&dick: Selﬂoop am Startzustand (immer und nur dort).
+
+(cid:73) Strichliert: Gelesenes Zeichen verbleibt ⇒ nochmals lesen!
+
+Solche ein Übergang führt immer „rückwärts“.
+
+Automat: O(m) groß. Aufbau in O(m) (ohne Beweis).
+
+String Suche Knuth-Morris-Pratt
+
+Sprungvektor
+
+start
+
+n
+
+n
+
+a
+
+na
+
+n
+
+nan
+
+a
+
+nana
+
+218
+
+V[j] = Länge der rot-gestrichelten Kante von Zustand j ≥ 1.
+Algorithmus ohne explizitem Automaten:
+i = 0
+j = 0
+while i − j ≤ n − m:
+
+// Leseposition in T
+// Vergleichsposition in P (≈ Zustand im EA)
+// „Virtuelle Variable“ s = Pos. in T, an der P „angelegt“ wird.
+// s = i − j
+
+if T[i] = P[j]:
+i++, j++
+if j = m then { „Match @i − j“, j –= V[m] }
+
+else if j = 0:
+
+i++
+
+else:
+
+j –= V[j]
+
+// s += V[j]
+
+// s++
+
+// s += V[j]
+
+Laufzeit: In jeder Iteration werden i und/oder s um mind. 1 erhöht,
+aber nie gesenkt. Da i, s ≤ n: max. 2n = O(n) Iterationen.
+Jede Iteration O(1) ⇒ Suche in O(n)
+
+String Suche
+
+Boyer-Moore
+
+String Suche Boyer-Moore
+
+Boyer-Moore
+
+(Robert S. Boyer, J. Strother Moore; 1977, ++)
+
+220
+
+Vorteil von Knuth-Morris-Pratt: einfachster O(n + m) Algorithmus
+Aber: Es geht noch schneller als Knuth-Morris-Pratt, in Theorie
+und Praxis... aber Preprocessing & Beweise sind komplexer...
+
+Insbesondere: Boyer-Moore ist sogar (oft) sublinear, also
+schneller als Ω(n + m)!
+
+Bei unerfolgreicher Suche:
+
+(cid:73) Laufzeit O(n + m) bewiesen durch Knuth, Morris & Pratt (1977)!
+
+Bei erfolgreicher Suche:
+
+(cid:73) Originalversion des Algorithmus hatte Laufzeit O(nm) :-(
+(cid:73) Zvi Galil (1979): algorithmisch kleine Erweiterung ⇒ O(n + m)
+
+String Suche Boyer-Moore
+
+221
+
+Idee: Pattern rückwärts prüfen
+
+Bisher:
+
+T: a
+0
+a
+
+n
+1
+b
+
+b
+2
+a
+a
+
+n
+3
+s
+b
+a
+
+Boyer-Moore:
+
+T: a
+0
+a
+
+n
+n
+3
+s
+
+n
+b
+1
+2
+a
+b
+n (cid:54)∈ P
+
+a
+4
+
+a
+b
+a
+
+a
+4
+
+a
+
+s
+5
+
+s
+a
+b
+
+s
+5
+
+b
+a
+
+b
+6
+
+s
+a
+. . .
+
+b
+b
+6
+
+s
+7
+
+s
+
+s
+s
+7
+
+a
+s
+a
+b
+n (cid:54)∈ P
+
+n
+8
+
+a
+9
+
+n
+10
+
+a
+11
+
+n
+12
+
+. . .
+13
+
+P: a
+0
+
+b
+1
+
+a
+2
+
+s
+3
+
+a
+9
+
+n
+10
+
+a
+11
+
+n
+n
+12
+
+. . .
+13
+
+P: a
+0
+
+b
+1
+
+a
+2
+
+s
+3
+
+n
+n
+8
+
+s
+
+a
+
+b
+
+a
+
+s
+. . .
+
+b eine Stelle weiter links in P
+
+Viele Symbole in T (die blauen) werden nie betrachtet!
+Best-Case: P wird immer um m Stellen verschoben ⇒ Laufzeit Ω(n/m)
+
+String Suche Boyer-Moore
+
+Shift Regeln
+
+222
+
+Angenommen wir ﬁnden einen Mismatch zwischen P und T.
+Es gibt zwei korrekte Regeln wie weit wir P auf jeden Fall nach
+rechts verschieben dürfen, ohne einen möglichen Match zu
+„übersehen“.
+Es werden immer beide Regeln ausgewertet, und dann die
+größere der beiden Verschiebungen realisiert:
+
+(cid:73) Bad Character Rule.
+
+Betrachte Symbol in T, das den Mismatch verursacht hat.
+
+(cid:73) Good Sufﬁx Rule.
+
+Betrachte die bisher (von hinten nach vorne) positiv
+gematchten Zeichen von P.
+
+String Suche Boyer-Moore
+
+223
+
+Bad Character Rule
+
+T: ..
+
+10
+
+n
+11
+
+P:
+
+b
+12
+
+b
+0
+
+n
+13
+
+a
+1
+
++2
+
+a
+14
+
+b
+b
+2
+
+b
+0
+
+s
+15
+
+a
+3
+2
+a
+1
+
+b
+b
+16
+
+a
+a
+4
+
+b
+b
+2
+
+s
+17
+
+s
+s
+5
+
+a
+3
+
+n
+18
+
+a
+19
+
+..
+20
+
+..
+10
+
+n
+11
+
+a
+4
+
+s
+5
+
+b
+12
+
+b
+0
+
+n
+13
+
+a
+1
+
+a
+14
+
+b
+2
+
+s
+15
+
+a
+3
+
+n
+n
+16
+
+a
+a
+4
+
+5
+
++5
+
+s
+17
+
+s
+s
+5
+
+b
+0
+
+n
+18
+
+a
+19
+
+n
+20
+
+a
+21
+
+n
+22
+
+..
+23
+
+a
+1
+
+b
+2
+
+a
+3
+
+a
+4
+
+s
+5
+
+Folgende Situation im Algorithmus:
+P wird ab Position s an T angelegt. (Beispiel: s = 12)
+Von hinten nach vorne prüfen (j = m − 1, . . . , 0) ob P[j] = T[s + j].
+Erster (=rechtester) Mismatch P[j∗] (cid:54)= T[s + j∗]. (Bsp.: j∗ = 4)
+„Bad Character Rule“
+
+1 Suche* größten Index j(cid:48) < j∗ mit P[j(cid:48)] = T[s + j∗].
+
+Falls dieser Index nicht existiert: j(cid:48) = −1.
+
+2 P kann auf jeden Fall (mindestens) um j∗ − j(cid:48) Positionen nach
+
+rechts geschoben werden ⇒ s += j∗ − j(cid:48).
+
+(*) Nachschlagen in O(1) in vorberechneter Tabelle
+
+der Größe min{m|Σ|, m2 + |Σ|}!
+
+String Suche Boyer-Moore
+
+224
+
+Good Sufﬁx Rule (Sufﬁx wiederholt sich)
+b
+23
+
+T: ..
+
+a
+15
+
+s
+16
+
+a
+a
+18
+
+s
+19
+
+a
+20
+
+s
+21
+
+a
+22
+
+a
+11
+
+n
+12
+
+10
+
+b
+13
+
+n
+14
+
+b
+17
+
+s
+24
+
+n
+25
+
+n
+26
+
+..
+27
+
+P:
+
+a
+0
+
+s
+s
+1
+
+s
+s
+2
+
+a
+a
+3
+
+s
+s
+4
+
+5
+
++5
+
+a
+5
+
+a
+0
+
+b
+b
+6
+
+s
+s
+1
+
+s
+s
+7
+
+s
+s
+2
+
+a
+a
+8
+
+a
+a
+3
+
+s
+s
+9
+
+s
+s
+4
+
+a
+5
+
+b
+6
+
+s
+7
+
+a
+8
+
+s
+s
+9
+
+Wie vorhin: Mismatch @ j∗ = 6... ⇒ „Good Sufﬁx Rule“
+
+1 Suche10 größten Index j(cid:48) < j∗ mit
+
+P[j(cid:48) + 1, . . . , m − 1] = T[s + j∗ + 1, . . . , s + m − 1].
+„Wo kommt der bisher gematchte P-Sufﬁx nochmals in P vor?“
+⇒ P kann auf jeden Fall (mindestens) um j∗ − j(cid:48)(cid:48) Positionen nach
+rechts geschoben werden ⇒ s += j∗ − j(cid:48).
+
+10Wieder: O(1)-Lookup. Tabelle sogar nur O(m) groß.
+
+String Suche Boyer-Moore
+
+225
+
+Good Sufﬁx Rule (Sufﬁx wiederholt sich nicht)
+n
+25
+
+T: ..
+
+a
+15
+
+s
+16
+
+b
+13
+
+a
+a
+18
+
+s
+19
+
+a
+20
+
+s
+21
+
+a
+22
+
+a
+11
+
+n
+12
+
+n
+14
+
+b
+17
+
+10
+
+b
+23
+
+s
+24
+
+n
+26
+
+..
+27
+
+P:
+
+a
+a
+0
+
+s
+s
+1
+
+s
+2
+
+b
+3
+
+a
+5
+
+b
+b
+6
+
+s
+s
+7
+
+s
+4
+8
+
++8
+
+a
+a
+8
+
+a
+a
+0
+
+s
+s
+9
+
+s
+s
+1
+
+s
+2
+
+b
+3
+
+s
+4
+
+a
+5
+
+b
+6
+
+s
+7
+
+a
+8
+
+s
+9
+
+Wie vorhin: Mismatch @ j∗ = 6... ⇒ „Good Sufﬁx Rule“
+
+1 Suche10 größten Index j(cid:48) < j∗ mit
+
+P[j(cid:48) + 1, . . . , m − 1] = T[s + j∗ + 1, . . . , s + m − 1].
+„Wo kommt der bisher gematchte P-Sufﬁx nochmals in P vor?“
+⇒ P kann auf jeden Fall (mindestens) um j∗ − j(cid:48)(cid:48) Positionen nach
+rechts geschoben werden ⇒ s += j∗ − j(cid:48).
+
+2 Falls j(cid:48) nicht existiert: Suche10 längsten P-Präﬁx, der ein Sufﬁx
+
+des bisher gematchten P-Sufﬁx P[j∗ + 1, . . . , m − 1] ist.
+Verschiebe s entsprechend (ggf. um volle P-Länge m)
+
+10Wieder: O(1)-Lookup. Tabelle sogar nur O(m) groß.
+
+String Suche Boyer-Moore
+
+226
+
+Good Sufﬁx Rule (Verbesserung nach Galil)
+s
+24
+
+T: ..
+
+a
+11
+
+s
+21
+
+a
+22
+
+a
+a
+18
+
+s
+19
+
+a
+20
+
+n
+12
+
+b
+13
+
+n
+14
+
+a
+15
+
+s
+16
+
+b
+17
+
+10
+
+(cid:54)=
+
+b
+23
+
+n
+25
+
+n
+26
+
+..
+27
+
+P:
+
+a
+0
+
+s
+s
+1
+
+s
+s
+2
+
+a
+a
+3
+
+s
+s
+4
+
+5
+
++5
+
+a
+5
+
+a
+0
+
+b
+b
+6
+
+s
+s
+1
+
+s
+s
+7
+
+s
+s
+2
+
+a
+a
+8
+
+a
+a
+3
+
+s
+s
+9
+
+s
+s
+4
+
+a
+5
+
+b
+6
+
+s
+7
+
+a
+8
+
+s
+s
+9
+
+Wie vorhin: Mismatch @ j∗ = 6... ⇒ „Good Sufﬁx Rule“
+
+1 Suche10 größten Index j(cid:48) < j∗ mit P[j(cid:48)] (cid:54)= P[j∗] und
+P[j(cid:48) + 1, . . . , m − 1] = T[s + j∗ + 1, . . . , s + m − 1].
+„Wo kommt der bisher gematchte P-Sufﬁx nochmals in P vor?“
+⇒ P kann auf jeden Fall (mindestens) um j∗ − j(cid:48)(cid:48) Positionen nach
+rechts geschoben werden ⇒ s += j∗ − j(cid:48).
+
+2 Falls j(cid:48) nicht existiert: Suche10 längsten P-Präﬁx, der ein Sufﬁx
+
+des bisher gematchten P-Sufﬁx P[j∗ + 1, . . . , m − 1] ist.
+Verschiebe s entsprechend (ggf. um volle P-Länge m)
+
+10Wieder: O(1)-Lookup. Tabelle sogar nur O(m) groß.
+
+String Suche Boyer-Moore
+
+Laufzeit
+
+227
+
+Theorem. (ohne Beweis)
+Die Lookup-Tabelle für die Bad Character Rule kann in
+O(min{m|Σ|, m2 + |Σ|}) berechnet werden. Die für die Good Sufﬁx
+Rule sogar in O(m).
+
+Theorem. (ohne Beweis)
+Gegeben die notwendigen Lookup-Tabellen. Der Suchalgorithmus
+benötigt
+
+(cid:73) O(n/m) Zeit im Best-Case
+(cid:73) Falls P (cid:54)∈ T: O(n + m) = O(n) Zeit im Worst-Case
+(cid:73) Falls P ∈ T (ohne Galil): O(nm) Zeit im Worst-Case11
+(cid:73) Falls P ∈ T (mit Galil): O(n + m) = O(n) Zeit im Worst-Case
+
+11Beispiel: P = aa . . . a, T = aaa . . . a
+
+String Suche Boyer-Moore
+
+228
+
+Zusammefassung (String Suche)
+
+(cid:73) Naïv.
+
+Kein Preprocessing.
+Laufzeit: Ω(n) ∩ O(nm).
+
+(cid:73) Karp-Rabin.
+
+Kein Preprocessing.
+Laufzeit: Ω(n) ∩ O(nm).
+Wenn Hashes „gut“ funktionieren: O(n).
+Efﬁzient für mehrere Pattern gleichzeitig.
+
+(cid:73) Knuth-Morris-Pratt.
+
+(vergleichsweise einfaches) Preprocessing.
+Laufzeit: Θ(n).
+Einfacher als Boyer-Moore.
+
+(cid:73) Boyer-Moore.
+
+(vergleichsweise kompliziertes) Preprocessing.
+Laufzeit: Ω(n/m) ∩ O(n) (genauer: O(n + m|Σ|)).
+In der Praxis deutlich schneller als Knuth-Morris-Pratt.
+
+String Suche Boyer-Moore
+
+Apropos...
+
+229
+
+Bisheriges Setting:
+Gegeben Text T, ﬁnde Pattern P.
+→ Preprocessing für P
+→ T nur 1x lesen (oder sogar sublinear n/m)
+Anwendungen z.B. bei einem Texteditor...
+
+Alternatives Setting:
+Statischer Text & mehrere Suchen
+z.B. ein Buch T → mehrere Suchanfragen P1, P2, . . . in selbem T
+⇒ dann lohnt es sich, ein Preprocessing des Texts T zu machen!
+⇒ Sufﬁx Trees, Sufﬁx Arrays,...
+
+→ MSc-VO „Algorithm Engineering“ nächstes Wintersemester!
+
+Hashing
+
+von Stephan Beyer
+(siehe Folien VO 11)
+
+Geometrische Algorithmen
+
+Geometrische Algorithmen
+
+Konvexe Hülle
+
+Geometrische Algorithmen Konvexe Hülle
+
+232
+
+Welche Punkte liegen „außen“?
+
+y
+
+Gegeben: Punkte P in der 2-dimensionalen Ebene, n := |P|
+Gesucht: Konvexe Hülle von P
+
+x
+
+Geometrische Algorithmen Konvexe Hülle
+
+233
+
+Konvex, 2 Punkte
+
+Gegeben: zwei Punkte A, B
+
+Lineare Hülle
+
+= Menge aller möglichen Linearkombinationen
+= {C | ∃λ ∈ R : C = λA + (1 − λ)B}
+= Alle Punkte auf der Geraden durch A und B
+
+A
+
+B
+
+Konvexe Hülle
+
+= Menge aller möglichen Konvexkombinationen
+= {C | ∃λ ∈ [0, 1] : C = λA + (1 − λ)B}
+= Alle Punkte auf der Strecke von A nach B
+
+A
+
+B
+
+Geometrische Algorithmen Konvexe Hülle
+
+234
+
+Konvex, mehrere Punkte
+
+Gegeben: mehrere Punkte P = {A1, A2, A3, . . . , An}
+
+= {C | ∃λ1, . . . , λn ∈ [0, 1] : (cid:80)n
+
+Konvexe Hülle
+= Menge aller möglichen Konvexkombinationen
+i=1 λiAi}
+= Alle Punkte innerhalb des kleinsten konvexen
+
+Polygons, dass alle Punkte P enthält
+
+i=1 λi = 1∧
+
+C =(cid:80)n
+
+Achtung: Die konvexe Hülle ist das gesamte Polygon (=alle
+Punkte am Rand und innerhalb), nicht nur der Rand!
+
+Wir kodieren die konvexe Hülle als
+Liste der Polygon-Eckpunkte im Uhrzeigersinn.
+
+Geometrische Algorithmen Konvexe Hülle
+
+235
+
+Konvexes Polygon, Konvexe Ecke
+
+B
+
+nicht konvex
+
+⇒ B ist ein konkaver Eckpunkt
+
+konvex
+
+Geometrische Algorithmen Konvexe Hülle
+
+236
+
+Konvexes Polygon, Geraden
+
+A
+
+A(cid:48)
+
+nicht konvex
+
+konvex
+
+Für jedes Paar A, A(cid:48) von konsekutiven Eckpunkten eines konvexen
+Polygons gilt: Kein Punkte liegt links von der Gerade durch A und
+A(cid:48) (gemäß der Uhrzeigersinn-Orientierung unserer Kodierung).
+
+Geometrische Algorithmen Konvexe Hülle
+
+237
+
+Konvexes Polygon, Rechtsknick
+
+
+
+
+
+
+
+
+
+
+
+konvex
+
+
+
+
+
+
+
+
+
+nicht konvex
+
+Wenn man den Rand der konvexen Hülle entlangläuft, macht man
+an jedem Eckpunkt einen Rechtsknick.
+
+Geometrische Algorithmen Konvexe Hülle
+
+238
+
+Interpretationen
+
+(cid:73) Gummiband: Man stelle sich Punkte als halb eingeschlagene
+Nägel vor, und lege nun ein geschlossenes Gummiband um alle
+Nägel ⇒ Beim Loslassen, zieht sich der Gummiring zusammen,
+und bildet den Rand der konvexen Hülle.
+
+(cid:73) Gespannte Schnur: Punkte sind wieder Nägel. Binde eine
+Schnur am linkesten Nagel fest, und laufe mit dem Ende der
+Schnur außen um die Nägel herum. ⇒ Die gespannte Schnur
+bildet den Rand der konvexen Hülle.
+
+Geometrische Algorithmen Konvexe Hülle
+
+239
+
+Untere Schranke
+
+Theorem. Das Berechnen der konxeve
+Hülle von Punkten benötigt mindestens so
+viel Zeit, wie das Sortieren der Punkte nach
+einer der Koordinaten.
+
+(x1, (x1)2), (xn, (xn)2), . . . , (xn, (xn)2).
+
+Beweis. Reduktion von Sortieren.
+Seien x1, x2, . . . , xn zu sortierende Zahlen.
+Reduktion: Betrachte die Punkte
+⇒ Die Punkte liegen entlang einer
+konvexen Funktion (Parabel)
+⇒ All diese Punkte sind Eckpunkte des
+Rands ihrer konvexen Hülle
+⇒ Die Ergebnisliste (=Kodierung des
+Polygons) enthält all diese Punkte sortiert
+nach ihrer x-Koordinate
+
+y
+
+x4
+
+x5
+
+x1
+x3
+
+x6
+x2
+
+x
+
+Geometrische Algorithmen Konvexe Hülle
+
+240
+
+Jarvis Marsch (R. A. Jarvis, 1973)
+
+Der Algorithmus simuliert die Idee der „gespannten Schnur“.
+Annahme, damit Algorithmus einfacher (eigentlich unnötig):
+Alle Punkte P beﬁnden sich in allgemeiner Lage, d.h. keine x- oder
+y-Koordinate kommt mehrmals vor, keine drei Punkte sind colinear.
+
+H = ∅
+A = Punkt mit minimaler x-Koordinate
+loop {
+
+// Ergebnisliste
+// A
+
+H.append(A)
+B = Punkt, sodass kein Punkt links der Geraden A − B liegt.
+if B (cid:54)= H.ﬁrstElement() then A = B
+else return H
+
+// B
+
+}
+
+Korrektheit: 
+
+Wie lösen wir Schritt A und B ?
+
+Geometrische Algorithmen Konvexe Hülle
+
+241
+
+Jarvis Marsch, Details
+
+Sei P[1 . . . n] ein Array der n gegebenen Punkte.
+H = ∅
+A = P[1]
+for i = 2, . . . , n:
+
+// Ergebnisliste
+// Suche Punkt mit minimalen x-Koordinaten
+
+if P[i].x < A.x then A = P[i]
+
+loop {
+
+H.append(A)
+B = P[1]
+for i = 2, . . . , n:
+
+// Suche B, sodass nichts links von A − B liegt
+
+if P[i] links der Geraden A − B then B = P[i]
+
+if B (cid:54)= H.ﬁrstElement() then A = B
+else return H
+
+}
+
+Wie stellt man fest, ob „P[i].x links der Geraden A − B“ liegt?
+
+Geometrische Algorithmen Konvexe Hülle
+
+242
+
+Links der Gerade
+
+Liegt P links oder rechts der Geraden A − B?
+
+P
+
++
+
+B
+
+A
+
+A
+
+−
+
+B
+
+P
+
+−→
+AB und
+
+−→
+AB und
+
+−→
+AP steht.
+
+Wie berechnet man das? Fummelig mit Schultrigonometrie...
+⇒ Schnell & einfach: Kreuzprodukt (vrgl. Computergraphik)
+−→
+Interpretiere
+AP als Vektoren im 3-dimensionalen Raum
+innerhalb der (z = 0)-Ebene.
+Kreuzprodukt = Vektor der (gemäß der Rechte-Hand-Regel) normal
+auf
+⇒ z-Richtung des Kreuzprodukts
+⇒ Vorzeichen der Berechnung
+
+AP gibt Winkelrichtung an!
+
+−→
+AB × −→
+
+(B.x − A.x)(P.y − A.y) − (B.y − A.y)(P.x − A.x)
+
+Geometrische Algorithmen Konvexe Hülle
+
+243
+
+Jarvis Marsch, Details (2)
+
+Sei P[1 . . . n] ein Array der n gegebenen Punkte.
+H = ∅
+A = P[1]
+for i = 2, . . . , n:
+
+// Ergebnisliste
+// Suche Punkt mit minimalen x-Koordinaten
+
+if P[i].x < A.x then A = P[i]
+
+loop {
+
+H.append(A)
+B = P[1]
+for i = 2, . . . , n:
+
+// Suche B, sodass nichts links von A − B liegt
+if (B.x − A.x)(P[i].y − A.y) − (B.y − A.y)(P[i].x − A.x) > 0 12 then B = P[i]
+
+if B (cid:54)= H.ﬁrstElement() then A = B
+else return H
+
+}
+
+⇒ Laufzeit?
+12P[i] liegt links der Geraden A − B
+
+Geometrische Algorithmen Konvexe Hülle
+
+244
+
+Jarvis Marsch, Laufzeit
+
+(cid:73) Suche Punkt mit minimaler x-Koordinate: O(n)
+(cid:73) Anzahl der Durchläufe der loop-Schleife: O(n)
+(cid:73) Innerhalb der loop-Schleife:
+
+Suche Punkt B, sodass kein Punkt links von A − B: O(n)
+
+⇒ Gesamtlaufzeit: O(n2)
+
+Können wir das besser analysieren?
+Outputsensitiv!
+Sei h die Anzahl der Eckpunkte des Lösungspolygons.
+
+(cid:73) Anzahl der Durchläufe der loop-Schleife: O(h)
+
+⇒ Gesamtlaufzeit: O(nh)
+
+Geometrische Algorithmen Konvexe Hülle
+
+245
+
+Graham Scan (Ronald Graham, 1972)
+
+(cid:73) Betrachte die Vektoren vom linkesten Punkt zu allen anderen.
+Jeder Vektor hat einen Winkel zwischen +180 und −180 Grad.
+(cid:73) Wenn man die konvexe Hülle abläuft, sinken diese Winkel stets!
+
+Geometrische Algorithmen Konvexe Hülle
+
+246
+
+Graham Scan (Ronald Graham, 1972)
+
+(cid:73) Betrachte die Vektoren vom linkesten Punkt zu allen anderen.
+Jeder Vektor hat einen Winkel zwischen +180 und −180 Grad.
+(cid:73) Wenn man die konvexe Hülle abläuft, sinken diese Winkel stets!
+(cid:73) Wenn man die Punkte gemäß der sortierten Winkel wählt,
+
+erhält man ein einfaches Polygon (keine Selbstkreuzungen) –
+aber mit konkaven Ecken.
+
+(cid:73) Idee: Filtere die konkaven Ecken aus diesem Polygon heraus →
+
+Rand der konvexe Hülle verbleibt
+
+Geometrische Algorithmen Konvexe Hülle
+
+247
+
+Graham Scan, Algorithmus
+
+A = Punkt mit minimaler x-Koordinate
+Sortiere alle B ∈ P \ {P} gemäß dem Winkela des Vektors
+H = (cid:104)A,S.pop()(cid:105)
+
+// derzeitige Ergebnisliste
+LH liefert den letzten, PH den vorletzten Punkt in H.
+
+−→
+AB ⇒ S
+
+while S (cid:54)= ∅:
+
+N = S.pop()
+−−−→
+PHLH zu
+while
+H.append(N)
+
+−−→
+LHN ist ein Linksknickb:
+
+H.deleteLastElement()
+
+// neuer Punkt
+
+// lösche LH
+
+aggü. der Horizontalen
+bWieder Kreuzprodukt:
+
+(LH.x − PH.x)(N.y − PH.y) − (LH.y − PH.y)(N.x − PH.x) > 0
+
+⇒ Laufzeit?
+
+Geometrische Algorithmen Konvexe Hülle
+
+248
+
+Graham Scan, Laufzeit
+
+A = Punkt mit minimaler x-Koordinate
+Sortiere alle B ∈ P \ {P} gemäß Winkel von
+H = (cid:104)A,S.pop()(cid:105)
+while S (cid:54)= ∅:
+N = S.pop()
+while Linksknick(
+H.append(N)
+
+H.deleteLastElement()
+
+−−−→
+PHLH,
+
+−−→
+LHN):
+
+−→
+AB ⇒ S
+
+// O(n)
+// O(n log n)
+// O(n) oft
+
+// wie oft?
+
+(cid:73) Immer wenn die innere while-Schleife ausgeführt wird, wird ein
+
+Knoten aus H ⊆ P entfernt, und nie wieder betrachtet.
+
+(cid:73) Innere while-Schleife wird insgesamt – über alle Durchläufe
+
+der äußeren Schleife – O(n) mal ausgeführt.
+
+(cid:73) Die verschachtelten Schleifen zusammen: O(n)
+(cid:73) Gesamtlaufzeit wird durch das Sortieren dominiert!
+
+→ O(n log n)
+
+Geometrische Algorithmen Konvexe Hülle
+
+249
+
+Graham Scan, Praktische Beschleunigung
+
+Berechnen der Winkel α = tan(yd/xd)
+(um danach so sortieren) ist teuer
+(Auswerten der Winkelfunktion)
+
+A
+
+α
+
+P
+xd = A.x − P.x
+
+yd = A.y − P.y
+
+1 Tangens ist (bis auf Inversion an der einzigen Sprungstelle) eine
+
+monotone Funktion!
+⇒ Sortiere nicht nach α, sondern einfach nach yd/xd
+
+2 Variante 1 benötigt eine Division & Fließkommazahlen (oder
+
+explizite Vergleiche rationaler Zahlen). Bei Integerkoordinaten
+womöglich langsam.
+⇒ Variante von A. M. Andrew (1979): (auch O(n log n))
+Sortiere Punkte gemäß x-Koordinate. Laufe die Punkte 2x ab:
+
+(cid:73) links-nach-rechts → obere Hälfte der konvexen Hülle
+(cid:73) rechts-nach-links → untere Hälfte der konvexen Hülle
+
+Geometrische Algorithmen Konvexe Hülle
+
+250
+
+Chan’s Algorithmus (Timothy M. Chan, 1996)
+
+Bisher:
+
+O(nh) = O(n2)
+(cid:73) Jarvis Marsch:
+O(n log n)
+(cid:73) Graham Scan:
+(cid:73) Untere Schranke: Ω(n log n)
+
+Ist Graham Scan bestmöglich? ...jein
+Bei unserer unteren Schranke galt h = n!
+Anzahl der Eckpunkte der des Polygons (h) war kein möglicher
+Parameter, da wir nur Input-Komplexität betrachtet haben...
+Idee nun: Algorithmus, der nur O(n log n) benötigt, wenn h = n,
+und sonst weniger (abhängig von h < n).
+Kombination der Ideen von Jarvis Marsch und Graham Scan
+
+Geometrische Algorithmen Konvexe Hülle
+
+251
+
+Chan’s Algorithmus, Konzept
+
+Algorithmus ist abhängig von einem Parameter s.
+
+1 Partitioniere P beliebig in r := (cid:100)n/s(cid:101) Punktmengen
+
+Q1,Q2, . . . ,Qr, sodass |Qi| ≤ s.
+
+2 for i = 1, . . . , r:
+
+Berechne konvexe Hülle Hi von Qi mittels Graham Scan
+
+3 Benutze (modiﬁzierten) Jarvis Marsch, um konvexe Hülle H von
+
+P zu berechnen.
+Modiﬁkation: Beschleunigung der Suche nach dem Punkt B,
+sodass kein Punkt links von B liegt.
+a Für jede Partition Qi, suche den Punkt Bi der diese
+
+Eigenschaft in Bezug auf Qi erfüllt.
+
+b Finde B (mit normaler Jarvis-Marsch-Methode) unter den
+
+Punkten B1, B2, . . . , Br
+
+⇒ Laufzeit?
+
+Geometrische Algorithmen Konvexe Hülle
+
+252
+
+Chan’s Algorithmus, Laufzeit (1)
+
+1 Partition P → Q1, . . . ,Qr, mit r := (cid:100)n/s(cid:101) und |Qi| ≤ s
+2 for i = 1, . . . , r: Hi = GrahamScan(Qi)
+3 H = modiﬁzierter Jarvis Marsch über P:
+
+a ∀Qi: Punkt Bi = Punkt, sodass nichts aus Qi links von A − Bi
+b B = Jarvis-Marsch-Methode über B1, B2, . . . , Br
+
+1 O(n) Zeit
+2 O(s log s) pro Qi ⇒ O(r · s log s) = O(n log s)
+a Ausnutzen, dass wir Hi schon kennen!
+b O(r)
+
+3
+
+Binäre Suchea über Hi! ⇒ O(log s) pro Qi ⇒ O(r log s)
+
+⇒ O(r log s) per B-Suche
+⇒ Jarvis Marsch sucht O(h) mal: O(h · r log s) = O(nh/s · log s)
+
+Insgesamt: O(max{1, h/s} · n log s)
+
+aBerechne Tangente an konvexem Polygon: nicht trivial! → würde zu weit führen
+
+Geometrische Algorithmen Konvexe Hülle
+
+253
+
+Chan’s Algorithmus, Laufzeit (2)
+
+Insgesamt: O(max{1, h/s} · n log s)
+
+(cid:73) Falls s = Θ(1): Laufzeit wird zu O(h · n)
+(cid:73) Falls s = Θ(n): Laufzeit wird zu O(n log n)
+(cid:73) Falls s = Θ(h): Laufzeit wird zu O(n log h)
+
+Wie kann man sicherstellen, den Algorithmus mit s = h zu starten?
+
+(cid:73) Starte Algorithmus für wachsende Werte von s
+(cid:73) Betrachte dabei s als obere Schranke für h ⇒ Falls H nach s
+Punkten nicht fertig: Abbrechen, und größeres s versuchen.
+
+(cid:73) Laufzeit für ein gegebenes s: O(max{n, s · r} log s) = O(n log s)
+(cid:73) Beim t-ten Versuch wähle s := 22t (s wird immer quadriert)
+Falls s ≥ n: wähle s = n; Prozess wird stoppen sobald s ≥ h
+
+(cid:73) Anzahl der Versuche: min t mit 22t ≥ h ⇒ t = (cid:100)log log h(cid:101)
+
+(cid:73) Gesamtlaufzeit:(cid:80)(cid:100)log log h(cid:101)
+= O(n ·(cid:80)(cid:100)log log h(cid:101)
+
+t=1
+
+t=1
+
+O(n log 22t
+2t) = O(n · 2 · 2(cid:100)log log h(cid:101)) = O(n log h)
+
+) =
+
+Geometrische Algorithmen Konvexe Hülle
+
+254
+
+Zusammenfassung
+
+Wir haben gelernt (in 2D)
+
+(cid:73) Untere Schranke:
+
+(in Eingabekomplexität)
+
+(cid:73) Jarvis Marsch:
+(cid:73) Graham Scan:
+(cid:73) Chan’s Algorithmus:
+
+O(n log n)
+
+O(nh)
+O(n log n)
+O(n log h)
+
+Höhere Dimensionen
+
+(cid:73) Höhere Dimensionen d werden kompliziert, da die konvexe
+
+Hülle i.A. exponentiell groß (in d) werden kann!
+
+(cid:73) Man kann aber z.B. Chan’s Algorithmus für d = 3 erweitern,
+
+sodass er immer noch in O(n log h) läuft.
+
+Geometrische Algorithmen
+
+Sweepline
+
+Geometrische Algorithmen Sweepline
+
+Fragestellung
+
+256
+
+Abstrakte Aufgabe: Gegegeben mehrere Objekte, ﬁnde etwas
+über Ihre Beziehung zueinander heraus.
+In unserem Fall nun: Gegeben n achsenparallele Rechtecke in der
+Ebene. Welche Rechteckspaare überlappen sich?
+
+y
+
+x
+
+Naïve Idee:
+Teste für jedes Rechteckspaar, ob sie sich überlappen ⇒ O(n2)
+Hm...
+Angenommen, wir wollen alle Tripel, Quadrupel, oder k-Tupel (für
+irgendein kostantes k) von Rechtecken ﬁnden, die sich überlappen.
+⇒ Naïver Algorithmus benötigt O(n3), O(n4), bzw. O(nk) Zeit :-(
+
+Geometrische Algorithmen Sweepline
+
+257
+
+Sind die naïven Ideen schlecht?
+
+∃ Instanzen, bei denen sich jedes Rechteck mit jedem anderen
+überlappt.
+→ Ausgabe ist Θ(n2) groß
+→ jeder korrekte Algorithmus benötigt Ω(n2) Zeit.
+→ Naïver Algorithmus benötigt auch nur O(n2)Zeit.
+⇒ Die naïven Algorithmen sind eigentlich sogar optimal bezüglich
+der Inputkomplexität!
+
+Abermals:
+Uns interessieren nun Outputsensitive Algorithmen:
+k = Anzahl der sich überlappenden Rechteckspaare
+
+= Länge der auszugebenden Liste
+
+Messe Laufzeit in Abhängigkeit von n und k. Ziel:
+
+(cid:73) Für k = Θ(n2): Laufzeit Θ(n2)
+(cid:73) Für k = o(n2): Laufzeit o(n2)
+(cid:73) Allgemein: Laufzeit o(n2) + Θ(k)
+
+Geometrische Algorithmen Sweepline
+
+258
+
+Sweepline Algorithmus
+
+Allgemeine Idee: Führe eine (vertikale) Linie (=Sweepline,
+Scanline) L von links nach rechts über die gesamte Fläche.
+Beobachte dabei die Veränderungen auf L.
+
+Linie über die Fläche führen? Was bedeutet das algorithmisch?
+Wir deﬁnieren interessante Positionen für L während ihrer
+Bewegung, d.h., Positionen wo sich „etwas auf der Sweepline
+ändert“. Algorithmisch springen wir dann immer (von links nach
+rechts) von einer interessanten Position zur nächsten.
+
+y
+
+Pos:
+
+1 2
+
+3 45 6 7
+
+8
+
+9
+
+10
+
+x
+
+Geometrische Algorithmen Sweepline
+
+259
+
+Positionen und Status
+
+Interessante Positionen:
+
+(cid:73) Wenn die Sweepline auf den Anfang eines Rechtecks stößt
+
+→ ab nun schneidet sich L mit diesem Rechteck
+
+(cid:73) Wenn die Sweepline auf das Ende eines Rechtecks stößt
+
+→ ab nun schneidet sich L mit diesem Rechteck nicht mehr
+Für jede Sweepline-Pos.: jedes Rechteck R hat einen Status:
+
+(cid:73) Nicht betrachtet: R wurde noch nicht von L getroffen
+(cid:73) Aktiv: R wird gerade von L getroffen
+(cid:73) Bearbeitet: R wird nicht mehr von L getroffen
+
+y
+
+x
+
+Geometrische Algorithmen Sweepline
+
+259
+
+Positionen und Status
+
+Interessante Positionen:
+
+(cid:73) Wenn die Sweepline auf den Anfang eines Rechtecks stößt
+
+→ ab nun schneidet sich L mit diesem Rechteck
+
+(cid:73) Wenn die Sweepline auf das Ende eines Rechtecks stößt
+
+→ ab nun schneidet sich L mit diesem Rechteck nicht mehr
+Für jede Sweepline-Pos.: jedes Rechteck R hat einen Status:
+
+(cid:73) Nicht betrachtet: R wurde noch nicht von L getroffen
+(cid:73) Aktiv: R wird gerade von L getroffen
+(cid:73) Bearbeitet: R wird nicht mehr von L getroffen
+
+Beobachtung.
+Damit sich zwei Rechtecke überlappen können,
+müssen sie irgendwann gleichzeitig aktiv sein!
+
+y
+
+x
+
+Geometrische Algorithmen Sweepline
+
+260
+
+Überlappungen erkennen
+
+Ziel: Jede Rechtecksüberlappung genau 1x erkennen/ausgeben.
+
+R1
+
+R2
+
+R1
+
+R2
+
+R1
+
+R2
+
+R1 und R2 überlappen sich ⇐⇒ Das erste Rechteck ist aktiv wenn L
+am Anfang des zweiten Rechtecks ist und es überlappen sich die
+Intervalle YR1 := [R1.ymin, R1.ymax] und YR2 := [R2.ymin, R2.ymax].
+
+Algorithmische Konsequenz:
+
+(cid:73) Verwalte Menge A der aktiven Rechtecke. Initial A = ∅
+(cid:73) Wenn L an einer interessanten Position ankommt:
+(cid:73) Ende eines Rechtecks R? → entferne R aus A
+(cid:73) Anfang eines Rechtecks R? → Überprüfe, mit welchen YR(cid:48),
+R(cid:48) ∈ A, sich YR überlappt; füge R zu A hinzu
+Efﬁziente Datenstruktur für A? → Intervallbäume!
+
+Geometrische Algorithmen Sweepline
+
+Algorithmus
+
+261
+
+Gegeben: R = Menge von Rechteckena, n := |R|
+Gesucht: Alle Paare von sich überlappenden Rechtecken
+Intervallbaum A := ∅
+P := {(R.xmin, R), (R.xmax, R) | R ∈ R}
+sortiere P gemäß erster Komponente der 2-Tupel (=x-Koordinate)
+forall (x, R) ∈ P do:
+
+// Benutzt die Y-Intervalle eines Rechtecks
+// zwei 2-Tupel pro Rechteck
+
+if x = R.xmin:
+
+// aufsteigend von links nach rechts
+// Anfang des Rechtecks
+Q = A.query(R)
+// Rechtecke Q ∈ Q mit überlappenden YQ,YR
+print {(cid:104)R, Q(cid:105) | Q ∈ Q} // Gib überlappende Rechteckspaare aus
+A.insert(R)
+// Füge Intervall YR zum Intervallbaum hinzu
+// Ende des Rechtecks
+A.delete(R)
+// Entferne Intervall YR aus Intervallbaum
+
+else:
+
+aAlle Koordinaten sind paarweise unterschiedlich. Verallgemeinerung wäre einfach.
+
+Laufzeit?
+
+Geometrische Algorithmen Sweepline
+
+262
+
+Algorithmus, Laufzeit
+
+Gegeben: R = Menge von Rechtecken, n := |R|
+Gesucht: Alle Paare von sich überlappenden Rechtecken
+Intervallbaum A := ∅
+P := {(R.xmin, R), (R.xmax, R) | R ∈ R}
+sortiere P gemäß erster Komponente der 2-Tupel
+forall (x, R) ∈ P do:
+
+if x = R.xmin:
+
+Q = A.query(R)
+print {(cid:104)R, Q(cid:105) | Q ∈ Q}
+A.insert(R)
+A.delete(R)
+
+else:
+
+Laufzeit: O(n log n) + O(n) · O(log n) +(cid:80)
+
+// O(1)
+// O(n)
+// O(n log n)
+// O(n) mal
+// O(1)
+// O(log n + ki)
+// O(ki)
+// O(log n)
+
+// O(log n)
+
+(Erinnerung: k ist die Anzahl der Rechtecksüberlappungen)
+
+i O(ki) = O(n log n + k)
+
+Geometrische Algorithmen Sweepline
+
+263
+
+Zusammenfassung
+
+Kernidee aller Sweepline-Algorithmen:
+Durch die Sweepline wird das 2-dimensionale Problem in eine
+Sequenz aus 1-dimensionalen Problemen verwandelt.
+Diese 1-dimensionalen Probleme entstehen durch Projektion
+„aktiver“ 2-dimensionaler Objekte auf die Sweepline.
+
+Die Idee kann man auch bei höheren Dimensionen benutzen!
+
+(cid:73) 3D: Bewege eine (2-dimensionale) Sweep-Plane von links
+
+nach rechts durch den 3-dimensionalen Raum, und erhalte eine
+Sequenz von 2-dimensionalen Problemen...
+
+(cid:73) kD: Bewege eine ((k − 1)-dimensionale) Sweep-Hyperplane
+von links nach rechts durch den k-dimensionalen Raum, und
+erhalte eine Sequenz von (k − 1)-dimensionalen Problemen...
+
+Matrix Multiplikation
+
+von Ivo Hedtke
+
+(siehe Folien VO 14)
+
+Inhaltsverzeichnis
+
+0 Einleitung
+
+Organisatorisches
+Thema der Vorlesung
+
+1 Warm Up: Formale Grundlagen & Sortieren
+
+Landau-Symbole
+Sortieren in Linearzeit
+2 Amortisierte Analyse
+Aggregationsmethode
+Buchhalter- und Potenzialmethode
+
+3 Suchstrukturen
+
+Wiederholung: Binäre Suchbäume aus Informatik A
+B-Bäume
+Skiplisten
+Bereichsabfragen
+Intervall-Bäume
+
+4 Priority Queues und Heaps
+
+d-ary Heaps
+Binomial Heaps
+Fibonacci Heaps
+Zusammenfassung
+
+5 Minimaler Spannbaum
+
+Jarník-Prim
+Kruskal
+Bor˚uvka & Zusammenfassung
+
+6 String Suche
+Naïve Suche
+Karp-Rabin
+Knuth-Morris-Pratt
+Boyer-Moore
+
+7 Hashing
+
+von Stephan Beyer (siehe Folien VO 11)
+
+8 Geometrische Algorithmen
+
+Konvexe Hülle
+Sweepline
+
+9 Matrix Multiplikation
+
+von Ivo Hedtke (siehe Folien VO 14)
+
+

@@ -1,0 +1,942 @@
+THE JOURNAL OF BIOLOGICAL CHEMISTRY
+© 2002 by The American Society for Biochemistry and Molecular Biology, Inc.
+
+Vol. 277, No. 43, Issue of October 25, pp. 40544–40548, 2002
+Printed in U.S.A.
+
+Concanamycin A, the Specific Inhibitor of V-ATPases, Binds to the
+Vo Subunit c*
+
+Received for publication, July 22, 2002, and in revised form, August 16, 2002
+Published, JBC Papers in Press, August 16, 2002, DOI 10.1074/jbc.M207345200
+
+Markus Huss‡§, Gudrun Ingenhorst¶储, Simone Ko¨ nig**, Michael Gaßel‡‡§§, Stefan Dro¨ se‡‡¶¶,
+Axel Zeeck¶, Karlheinz Altendorf‡‡, and Helmut Wieczorek‡§储储
+From the ‡Universita¨t Osnabru¨ ck, Fachbereich Biologie/Chemie, §Abteilung Tierphysiologie, and ‡‡Abteilung
+Mikrobiologie, 49069 Osnabru¨ ck, Germany, the ¶Universita¨t Go¨ttingen, Fakulta¨t fu¨ r Chemie, Institut fu¨ r Organische
+Chemie, 37077 Go¨ttingen, Germany, and the **Universita¨t Mu¨ nster, Interdisziplina¨res Zentrum fu¨ r Klinische Forschung,
+Integrierte Funktionelle Genomik, 48149 Mu¨ nster, Germany
+
+Vacuolar-type ATPase (V-ATPase) purified from the
+midgut of the tobacco hornworm Manduca sexta is in-
+hibited 50% by 10 nM of the plecomacrolide concanamy-
+cin A, the specific inhibitor of V-ATPases. To determine
+the binding site(s) of that antibiotic in the enzyme com-
+plex, labeling with the semisynthetic 9-O-[p-(trifluoro-
+ethyldiazirinyl)-benzoyl]-21,23-dideoxy-23-[125I]iodo-
+concanolide A (J-concanolide A) was performed, which
+still inhibits the V-ATPase 50% at a concentration of
+15–20 ␮M. Upon treatment with UV light, a highly reac-
+tive carbene is generated from this concanamycin deriv-
+ative, resulting in the formation of a covalent bond to
+the enzyme. In addition, the radioactive tracer 125I
+makes the detection of the labeled subunit(s) feasible.
+Treatment of the V1/Vo holoenzyme, the Vo complex, and
+the V-ATPase containing goblet cell apical membranes
+with concanolide resulted in the labeling of only the
+proteolipid, subunit c, of the proton translocating Vo
+complex. Binding of J-concanolide A to subunit c was
+prevented in a concentration-dependent manner by con-
+canamycin A, indicating that labeling was specific.
+Binding was also prevented by the plecomacrolides
+bafilomycin A1 and B1, respectively, but not by the ben-
+zolactone enamide salicylihalamide, a member of a
+novel class of V-ATPase inhibitors.
+
+Vacuolar-type ATPases (V-ATPases)1 are complex, hetero-
+multimeric proteins consisting of a peripheral, catalytic V1
+complex and a membrane bound, ion translocating Vo complex.
+
+* This work was supported by grants from the Deutsche Forschungs-
+gemeinschaft Sonderforschungsbereich 431 (to H. W. and K. A.), the
+Fonds der Chemischen Industrie (to K. A. and A. Z.), and the Dept. of
+Research and Technology in Germany, Nos. 01KX9820/B and
+01KS9604/0 (to S. K.). The costs of publication of this article were
+defrayed in part by the payment of page charges. This article must
+therefore be hereby marked “advertisement” in accordance with 18
+U.S.C. Section 1734 solely to indicate this fact.
+
+储 Present address: School of Pharmacy, University of Wisconsin,
+
+§§ Present address: Deutsches Krebsforschungszentrum, 69120
+
+Madison, WI 53705.
+
+Heidelberg, Germany.
+
+¶¶ Present address: Universita¨tsklinikum Frankfurt, Institut fu¨ r
+
+Biochemie I, 60590 Frankfurt, Germany.
+
+储储 To whom correspondence should be addressed: Universita¨t Os-
+nabru¨ ck, Fachbereich Biologie/Chemie, Abteilung Tierphysiologie,
+49069 Osnabru¨ ck, Germany. Tel.: 49-541-9693501; Fax: 49-541-
+9693503; E-mail: wieczorek@biologie.uni-osnabrueck.de.
+
+1 The abbreviations used are: V-ATPase, vacuolar-type ATPase; J-
+concanolide A, 9-O-[p-(trifluoroethyldiazirinyl)-benzoyl]-21,23-dideoxy-
+23-[125I]iodo-concanolide A; DCCD, dicyclohexylcarbodiimide; C12E10,
+polyoxyethylene 10-laurylether; MALDI-MS, matrix-assisted laser de-
+sorption ionization-mass spectrometry.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+w
+w
+w
+
+ 
+
+.
+j
+
+b
+c
+.
+
+o
+r
+g
+b
+y
+ 
+
+ 
+
+g
+u
+e
+s
+t
+,
+ 
+
+ 
+
+o
+n
+A
+u
+g
+u
+s
+t
+ 
+
+1
+
+,
+ 
+
+2
+0
+1
+0
+
+V-ATPases in eukaryotes appear to be exclusive proton pumps
+that energize intracellular membranes of all cells as well as
+plasma membranes in a variety of animal cells (1). V-ATPases
+play crucial roles for many cellular processes and may also be
+involved in diseases such as osteoporosis and cancer (2).
+
+More than a decade ago, bafilomycin A1, a plecomacrolide
+antibiotic containing a 16-membered lactone ring, was reported
+to be a specific inhibitor of V-ATPases with a Ki value of less
+than 10 nM (3). A structure-activity study showed that the
+concanamycins, 18-membered plecomacrolides, exhibit 10-fold
+lower Ki values and thus are better and more specific inhibitors
+of V-ATPases than the bafilomycins (4). Kinetic studies of the
+bovine chromaffin granule V-ATPase provided the first indirect
+evidence that bafilomycin A1 interacts with the hydrophobic Vo
+complex (5). Direct evidence came from two independent ap-
+proaches, both using the bovine-coated vesicle V-ATPase (6, 7).
+First, a latent acid-activated proton conductance of proteolipo-
+somes containing the reconstituted Vo complex could be blocked
+by 1 nM bafilomycin A1 (6). Second, reconstituted vesicles con-
+taining the Vo complex added to clathrin-coated vesicles could
+protect ATP-dependent proton transport from bafilomycin in-
+hibition (7). Since considerable protection was also achieved by
+the reconstituted 100-kDa subunit a alone, it was concluded
+that the binding site for bafilomycin may reside in this subunit.
+Affinity chromatography of chicken osteoclast V-ATPase us-
+ing bafilomycin C1-coupled cellulose led to the purification of
+the holoenzyme (8). In the presence of 1 mM DCCD the
+V-ATPase did not bind to the column, indicating that the bind-
+ing site for bafilomycin is near the binding site(s) for DCCD and
+may thus be located in the proteolipid, subunit c. However,
+because DCCD, especially at the rather high concentration of 1
+mM, may bind to sites different from that in the proteolipid and
+may bind not only to carboxyl groups but also to sulfhydryl
+groups or to tyrosine residues (9), and since the 100-kDa sub-
+unit a was not clearly resolved in this study, the bafilomycin
+binding subunit was still not identified. Strong hints in favor of
+subunit c representing the bafilomycin binding subunit were
+provided by recent results from analysis of Neurospora crassa
+strains, indicating that those with point mutations in subunit c
+show a higher tolerance to bafilomycin (I50 80–400 nM) com-
+pared with the wild type (I50 6.3 nM); interestingly, the toler-
+ance to concanamycin was not changed simultaneously (10).
+
+Based on extensive screening studies of systematically mod-
+ified derivatives of concanamycin, a probe was designed that
+still inhibits V-ATPase activity and which generates upon
+UV-irradiation a covalent bond between the inhibitor and the
+V-ATPase (11, 12). In the present report we show for the first
+time that this derivative of concanamycin A, 9-O-[p-(trifluoro-
+ethyldiazirinyl)-benzoyl]-21,23-dideoxy-23-[125I]iodo-concanol-
+
+40544
+
+This paper is available on line at http://www.jbc.org
+
+Concanamycin A Binds to the V-ATPase Subunit c
+
+40545
+
+ide A (J-concanolide A), binds only to subunit c of the V-ATPase
+from tobacco hornworm (M. sexta) midgut.
+
+EXPERIMENTAL PROCEDURES
+
+Purification of the V1/Vo ATPase and the Vo Complex—As many as 20
+whole M. sexta midguts were dissected from feeding fifth instar larvae
+and homogenized in ice-cold buffer A (5 mM Tris-HCl, 250 mM sucrose,
+5 mM Pefabloc SC (Biomol), 5 mM Na-EDTA, pH 8.1). After centrifuga-
+tion of the crude homogenate in a fixed-angle rotor at 12,000 ⫻ gmax for
+5 min at 4 °C, the pellet was resuspended in buffer A and centrifuged
+again. The resulting pellet was resuspended in buffer A and centrifuged
+in a fixed-angle rotor at 233,000 ⫻ gmax for 30 min at 4 °C to yield a final
+pellet that was solubilized in buffer B (16 mM Tris-HCl, 0.32 mM EDTA,
+9.6 mM 2-mercaptoethanol and 0.1% C12E10, pH 8.1) at 4 °C with a
+detergent to protein ratio of 2:1. After centrifugation in a fixed-angle
+rotor at 233,000 ⫻ gmax for 1 h at 4 °C, the supernatant was layered on
+a discontinuous sucrose density gradient (3 ml of 40%, 2 ml of 30%, 2 ml
+of 20%, and 1.6 ml of 10% sucrose (w/v) dissolved in buffer B with 200
+mM KCl and a lower detergent concentration of 0.01% C12E10) and
+centrifuged in a vertical rotor at 339,000 ⫻ gmax for 90 min at 4 °C. The
+30% sucrose fraction was diluted 4-fold with buffer C (20 mM Tris-HCl,
+9.6 mM 2-mercaptoethanol, 0.01% C12E10, pH 8.1) containing 50 mM
+NaCl and subjected to anion exchange chromatography using a Mono Q
+(Amersham Biosciences) column. The V1/Vo ATPase was eluted in a
+linear salt gradient (50–400 mM NaCl dissolved in buffer C) at NaCl
+concentrations between 250 and 280 mM. The last step in the purifica-
+tion protocol was gel permeation chromatography on a Superdex 200
+column (Amersham Biosciences), which was performed in buffer C
+containing 150 mM NaCl. The final yield was ⬃1 mg of V-ATPase per 20
+midguts.
+
+For purification of the Vo complex, midguts of larvae starved for
+16–20 h were prepared, homogenized, and centrifuged twice as de-
+scribed above. The second pellet was resuspended in a buffer consisting
+of 5 mM Tris-HCl, 0.8 M KI, 5 mM Na-EDTA, and 5 mM Pefabloc SC (pH
+8.1) and incubated for 30 min on ice. Then the sample was diluted with
+16 mM Tris-HCl, 0.32 mM EDTA, 9.6 mM 2-mercaptoethanol (pH 8.1) to
+a KI concentration of 40 mM and centrifuged at 233,000 ⫻ gmax for 30
+min at 4 °C. The pellet was resuspended in the dilution buffer and
+centrifuged again under the same conditions. The final pellet was
+solubilized and purified as described above for the V1/Vo ATPase, except
+for the use of 20% instead of the 30% sucrose fraction after rate zonal
+centrifugation. The final yield of the preparation was ⬃0.5 mg of Vo
+complex per 20 midguts.
+
+Antibiotics—J-concanolide A as well as its 125I-labeled form were
+synthesized as described elsewhere (11). Concanamycin A, bafilomycin
+A1, and bafilomycin B1 were isolated according to published procedures
+(12). Salicylihalamide was a generous gift from M. R. Boyd (National
+Cancer Institute, MD, USA). To avoid freeze thaw cycles, which have
+significant influence on the stability of the substances, aliquots of stock
+solutions in dimethyl sulfoxide were stored at ⫺70 °C and thawed only
+once immediately before use. The actual concentrations of the stock
+solutions were determined spectrophotometrically.
+
+ATPase Assays—ATPase assays with a final volume of 160 ␮l and a
+pH of 8.1 contained 3–4 ␮g of protein, 50 mM Tris-Mops, 3 mM 2-mer-
+captoethanol, 1 mM MgCl2, 0.1 mM sodium orthovanadate, 0.5 mM
+sodium azide, 20 mM KCl, 0.003% C12E10, 20 mM NaCl, and 3 mM
+Tris-HCl. After 5 min of preincubation at 30 °C with or without inhib-
+itors, 1 mM Tris-ATP was added, and after an additional 2 min the
+reaction was stopped by placing the reaction tubes in liquid nitrogen.
+Determination of the produced inorganic phosphate followed the proto-
+col of Wieczorek et al. (13).
+
+Labeling—20 ␮g of the samples were incubated with varying concen-
+trations of J-concanolide A in a volume of 30–40 ␮l for 1 h on ice or 3
+min at room temperature and irradiated for 3 min with UV light (366
+nm) on ice. After irradiation, 7.5–10 ␮l of 5-fold sample buffer (14) was
+added. The mixture was heated for 45 s at 95 °C or 30 min at 40 °C,
+cooled on ice, and subjected to SDS-PAGE (10–15% T, 3.3% C; (15)) or
+to Tricine-SDS-PAGE (16.5% T, 3% C separating gel and 10% T, 3% C
+spacer gel (16)), followed by Coomassie staining. The gels were either
+dried on Whatman paper or sealed in plastic wrap before they were
+exposed to a phosphoscreen for as many as 72 h and analyzed with the
+aid of a phosphorimager (Molecular Dynamics).
+
+Mass Spectrometric Analysis—After SDS-PAGE of the purified V1/Vo
+ATPase, the 100-kDa and the 17-kDa Coomassie-stained bands, respec-
+tively, were prepared for mass spectrometry in a procedure adapted
+from Shevchenko et al. (17) and Zhang et al. (18). Briefly, the proteins
+were digested by trypsin or chymotrypsin in the gel, and the peptides
+
+FIG. 1. Purified V1/Vo ATPase, V1 complex, and Vo complex
+from M. sexta midgut. SDS-PAGE gels (17% T, 0.4% C), stained with
+silver (lanes 1–4), visualized by autoradiography (lane 5) and immuno-
+stained after Western blotting (lanes 6–8) are shown. 1 ␮g of protein
+(lanes 1–4, 6–8) or 5 ␮g of protein (lane 5) were loaded on each lane.
+Lane 1, standard proteins with molecular masses as indicated. Lane 2,
+purified cytosolic V1 complex. Lane 3, purified V1/Vo holoenzyme. Lanes
+4–8, purified Vo complex. Lane 5, [14C]DCCD labeling of the proteolipid,
+subunit c (34). Lane 6, monoclonal antibodies to subunit e (26). Lane 7,
+polyclonal antibodies to subunit d (35). Lane 8, polyclonal antibodies
+against the bovine chromaffin granule 116-kDa subunit (29).
+
+were mapped using MALDI-MS (TofSpec-2E, Micromass Ltd.,
+Manchester, UK).
+
+Other Procedures—Fifth instar larvae of M. sexta (Lepidoptera,
+Sphingidae), weighing 6–8 g, were reared under long-day conditions
+(16 h of light) at 27 °C using a synthetic diet modified according to Bell
+et al. (19). The preparation of highly purified goblet cell apical mem-
+branes followed published protocols (13, 20). SDS-PAGE, Western blot-
+ting on nitrocellulose membranes, and immunostaining were performed
+as described previously (13, 21).
+
+RESULTS AND DISCUSSION
+
+Revised Purification Protocol Reveals Subunit a in the Insect
+V-ATPase—The unequivocal assignment of an inhibitor such
+as concanamycin or bafilomycin to a special V-ATPase subunit
+requires experimental evidence for the existence of all consti-
+tutive subunits in the V-ATPase preparation used. Although
+nearly all subunits of the insect V-ATPase have been cloned
+and sequenced (22, 23), we had so far not been able to identify
+the 100-kDa subunit a of the insect V-ATPase unequivocally
+(24–26). Because this subunit on the one hand appeared to be
+very sensitive to proteolysis (27), and on the other hand was
+proposed to be a candidate for bafilomycin binding (7), we
+repeatedly modified purification protocols to recover a putative
+subunit a, also in the insect V-ATPase. Degradation during the
+process of purification was evidently not responsible for our
+lack of evidence because even with complex cocktails of prote-
+ase inhibitors we were not able to resolve subunit a (28).
+
+Purification of the M. sexta V-ATPase according to a new
+protocol as compared with previous procedures (Ref. 24, see
+under “Experimental Procedures”) resulted, mainly because of
+the presence of 200 mM KCl during zonal centrifugation of the
+detergent-solubilized protein in a sucrose gradient, for the first
+time in the detection of a 100-kDa subunit in an insect
+V-ATPase preparation (Fig. 1, lane 3). The 100-kDa band re-
+acted in immunoblots with polyclonal antibodies to the 116-
+kDa subunit a of the V-ATPase from bovine chromaffin gran-
+ules (Ref. 29, not shown, but see below the results for the Vo
+complex), suggesting the existence of a 100-kDa subunit a, also
+in the M. sexta midgut V-ATPase. Respective evidence had
+already been provided recently by the demonstration of at least
+two genes encoding a V-ATPase subunit a in the midgut (23).
+Definitive proof that the 100-kDa band represented the
+V-ATPase subunit a was finally obtained from MALDI-MS. A
+number of tryptic peptides were found in the map of the protein
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+w
+w
+w
+
+ 
+
+.
+j
+
+b
+c
+.
+
+o
+r
+g
+b
+y
+ 
+
+ 
+
+g
+u
+e
+s
+t
+,
+ 
+
+ 
+
+o
+n
+A
+u
+g
+u
+s
+t
+ 
+
+1
+
+,
+ 
+
+2
+0
+1
+0
+
+40546
+
+Concanamycin A Binds to the V-ATPase Subunit c
+
+FIG. 2. Sequences of subunits a and
+c, indicating tryptic peptides found
+by MALDI-MS. A, subunit a (Gen-
+BankTM accession no. AJ249390). B, sub-
+unit c (GenBankTM accession no. X65051).
+Tryptic (subunit a, subunit c) and chymo-
+tryptic (subunit c) peptides detected after
+enzymatic in-gel digestion of the 100-kDa
+band and the 17-kDa band, respectively,
+by MALDI-MS are marked in bold and
+underlined.
+
+(Fig. 2A), providing 36% sequence coverage (compare Ref. 23
+with GenBankTM accession no. AJ249390).
+
+Purification of the Vo complex was facilitated by the fact that
+goblet cell apical membranes of molting or starving M. sexta
+larvae lose most of their V1 complexes by dissociation from the
+membrane, whereas the Vo complexes remain membrane
+bound (30, 31). Further treatment of the membranes with
+chaotropic iodide (32) supported the dissociation of V1 com-
+plexes, leaving virtually V1-free membranes. According to sil-
+ver staining of SDS gels, the Vo complex appeared to consist of
+five major protein bands with apparent molecular masses of
+100, 40, 26, 20, and 17 kDa, respectively (Fig. 1, lane 4). Four
+polypeptides could be identified as established Vo subunits by
+staining Western blots with specific antibodies against the Vo
+subunits a, d, and e, respectively (Fig. 1, lanes 6–8) or by
+DCCD-labeling of subunit c (Fig. 1, lane 5). The fifth major
+band with an apparent molecular mass of ⬃26 kDa was
+N-terminally sequenced and appeared to be a dimer of subunit
+c (data not shown).
+
+Plecomacrolide Antibiotics Bind to Subunit c of the Insect
+V-ATPase—J-concanolide A (Fig. 3) was synthesized as de-
+scribed elsewhere (11). Two features of this potential inhibitor
+appeared to be essential for the identification of the plecoma-
+crolide binding subunit(s). First, the p-(trifluoroethyldiaziri-
+nyl)-benzoyl group at position C9 generates, after treatment
+with UV light, a highly reactive carbene, which itself can be
+inserted into covalent bonds, especially C-H bonds. Second, the
+125I at position C23 of the hemiketal ring could be used as a
+radioactive tracer, thus making detection of the labeled subunit
+by autoradiography possible.
+
+Before performing labeling experiments we tested the inhib-
+itory efficacy of J-concanolide A on the activity of the V-ATPase
+holoenzyme. As shown in Fig. 4, J-concanolide A inhibited the
+purified V-ATPase half-maximally at a concentration of 15–20
+␮M, equivalent to an I50 value of ⬃0.6 ␮mol per mg of protein.
+This value was 1000 times higher than that for the plecomac-
+rolides concanamycin A and bafilomycin A1 and B1, respec-
+tively, and the benzolactone enamide salicylihalamide. All of
+these substances inhibited the M. sexta V-ATPase at submicro-
+molar concentrations, with I50 values of ⬃0.5 nmol per mg and
+with half-maximal concentrations of 10 nM. Although J-con-
+canolide A was three orders of magnitude less inhibitory, it still
+was an effective inhibitor with an I50 value comparable to that
+of the Escherichia coli Kdp-ATPase for bafilomycins (4).
+
+UV illumination of the purified M. sexta V-ATPase in the
+presence of J-concanolide A led, after SDS-PAGE, Coomassie
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+w
+w
+w
+
+ 
+
+.
+j
+
+b
+c
+.
+
+FIG. 3. Structure of J-concanolide A (9-O-[p-(trifluoroethyldia-
+
+zirinyl)-benzoyl]-21,23-dideoxy-23-[125I]iodo-concanolide A).
+
+o
+r
+g
+b
+y
+ 
+
+ 
+
+g
+u
+e
+s
+t
+,
+ 
+
+ 
+
+o
+n
+A
+u
+g
+u
+s
+t
+ 
+
+1
+
+,
+ 
+
+2
+0
+1
+0
+
+FIG. 4. Inhibition of the V1/Vo holoenzyme activity by plecoma-
+crolide antibiotics. For concanamycin A and J-concanoloide A, each
+value represents the mean ⫾ S.D. from experiments with 4–5 inde-
+pendent preparations, respectively. For bafilomycin A1, bafilomycin B1,
+and salicylihalamide, each value represents the mean of two independ-
+ent preparations, respectively. The specific activity of purified
+V-ATPase in standard assays without inhibitors was 2.9 ⫾ 0.5 ␮mol/
+min/mg. Concanamycin A (solid diamonds), J-concanolide A (open dia-
+monds), bafilomycin A1 (open triangles), bafilomycin B1 (open squares)
+and salicylihalamide (open circles).
+
+staining, and autoradiography of the gel to the detection of 125I
+at the exact position of the V-ATPase subunit c (Fig. 5A). The
+identity of the band as subunit c was proven by MALDI-MS.
+Analysis of tryptic and chymotryptic peptides resulted in a
+sequence coverage of 76% with subunit c (Fig. 2B, compare Ref.
+33 with GenBankTM accession no. X65051). However, two dis-
+tinct masses of 1523,9 m/z and 1739,9 m/z, respectively, were
+not covered by the known sequence of subunit c. These frag-
+
+Concanamycin A Binds to the V-ATPase Subunit c
+
+40547
+
+FIG. 5. Photoaffinity labeling of the purified V-ATPase with J-concanolide A. Samples containing 20 ␮g each of V-ATPase were
+incubated for 1 h on icewith the indicated concentrations of J-concanolide A and separated afterward by Tricine-SDS-PAGE. A, 1st lane left,
+staining with Coomassie Blue; 2nd-9th lanes, autoradiography of the gel after exposition to a phosphoscreen. 2nd lane, without UV-illumination.
+Evidently during electrophoresis the hydrophobic J-concanolide A entered the gel together with the SDS of the running buffer. 3rd-9th lane, with
+UV-illumination. Mainly the J-concanolide A bound to protein entered the gel. Most of the unbound but photolyzed J-concanolide A, perhaps
+because of formation of cross-linked products with, for example, the non-ionic detergent C12E10 had no electrophoretic mobility and therefore
+remained in the stacking gel (data not shown). B, autoradiography of the gel after exposition to a phosphoscreen. Samples were preincubated for
+1 h on ice without concanamycin A (control) or with the indicated concentrations of concanamycin A. J-concanolide A was then added to give a final
+concentration of 10 ␮M. The mixture was incubated fo r 1 h on ice andtreated afterward with UV light. C, autoradiography of the gel after exposition
+to a phosphoscreen. Samples were preincubated fo r 1 h on icewith the indicated concentrations of bafilomycin A1 (Baf A1), bafilomycin B1 (Baf B1),
+or salicylihalamide (Salicyl), respectively. J-concanolide A was then added to give a final concentration of 10 ␮M. The mixture was incubated for
+1 h on ice and treated afterward with UV light. Control with preincubation, but without effectors.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+w
+w
+w
+
+ 
+
+.
+j
+
+b
+c
+.
+
+o
+r
+g
+b
+y
+ 
+
+ 
+
+g
+u
+e
+s
+t
+,
+ 
+
+ 
+
+o
+n
+A
+u
+g
+u
+s
+t
+ 
+
+1
+
+,
+ 
+
+2
+0
+1
+0
+
+FIG. 6. Correlation between inhibition of V-ATPase activity by
+J-concanolide A and bound radioactivity. Bands of subunit c from
+the gel in Fig. 5A were excised. The bound radioactivities were meas-
+ured in a ␥-counter and then compared with the enzyme activities. The
+background radioactivity was subtracted by using an equivalent-sized
+gel slice right to the lane with the lowest concentration of J-concanolide
+A (0.1 ␮M). The radioactivity of the 100 ␮M band was set to 100%.
+
+ments might derive from an isoform of the c subunit, c’, which
+is present in V-ATPases of other species (2) but so far could not
+be identified in M. sexta. On the one hand, genomic Southern
+blots had suggested that there is only one single gene for
+subunit c in M. sexta, but on the other hand, Northern blots had
+revealed two transcripts (33). The latter finding may be inter-
+preted as a hint in favor of a c’ isoform. Nevertheless, labeling
+of the band representing subunit c and/or a putative isoform
+was specific because it was dependent on the concentration of
+J-concanolide A (Fig. 5A) and because labeling with 10 ␮M
+J-concanolide A was prevented by preincubation with concen-
+trations of concanamycin A ranging from 1 to 300 ␮M (Fig. 5B).
+Fig. 5B shows that a concentration of 1 ␮M concanamycin was
+not enough to displace J-concanolide A. At first glance this may
+appear counterintuitive, because at a concentration of 0.1 ␮M
+the V-ATPase activity was already inhibited nearly 100%.
+However, one has to keep in mind that already the binding of
+one molecule of concanamycin A to one of the probably six
+subunits c in a Vo complex may lead to complete inhibition of
+
+FIG. 7. Plecomacrolide antibiotics bind to the proteolipid, sub-
+unit c of the purified V1/Vo ATPase, the purified Vo complex, and
+the membrane bound V1/Vo ATPase. SDS-PAGE gel (10–15% T,
+3.3% C) stained with Coomassie Blue (lanes 1, 3, and 5). Autoradiogra-
+phies of gels after exposition to a phosphoscreen (lanes 2, 4, and 6).
+Lanes 1–2, 20 ␮g of purified V1/Vo holoenzyme. Lanes 3–4, 20 ␮g of
+purified Vo complex. Lanes 5–6, 20 ␮g of highly purified goblet cell
+apical membranes. All samples contained 0.1 ␮M J-concanolide A; after
+incubation for 3 min at room temperature they were irradiated with UV
+light.
+
+enzyme activity, whereas six molecules of concanamycin A
+would be needed for complete displacement of J-concanolide A.
+To verify the correlation between inhibition and labeling by
+J-concanolide A, we cut out the Coomassie-stained bands of
+subunit c from the SDS-PAGE gel and measured their radio-
+activity in a ␥-counter. Indeed, a concentration-dependent cor-
+relation between bound radioactivity and inhibition of the en-
+zyme activity was found (Fig. 6). Labeling of the holoenzyme
+subunit c evidently was specific for plecomacrolides, because it
+was also prevented by bafilomycin A1 and B1, respectively (Fig.
+5C). This finding implied that the binding site for both families
+of plecomacrolide antibiotics, concanamycin and the bafilomy-
+cins, in general resides in subunit c. At present, we cannot
+
+40548
+
+Concanamycin A Binds to the V-ATPase Subunit c
+
+explain the discrepancy between this result and the results
+obtained with N. crassa mutants, which exhibited a higher
+tolerance to bafilomycin but not to concanamycin (10). Because
+labeling was not impaired by salicylihalamide, we conclude
+that the site(s) and mechanism of inhibition for benzolactone
+enamides may be different from that for plecomacrolides.
+
+In another approach we used, in addition to the purified
+holoenzyme, the purified Vo complex and highly purified goblet
+cell apical membranes in which the V-ATPase is the predomi-
+nant protein and, moreover, resides in its native lipid sur-
+rounding (Fig. 7). Clear labeling of subunit c was again ob-
+tained for the Vo complex as well as for the goblet cell apical
+membrane.
+
+Taken together, we provided for the first time direct proof
+that subunit c, which forms the major part of the proton trans-
+locating Vo complex of V-ATPases, carries the binding site for
+plecomacrolide antibiotics. Experiments more precisely defin-
+ing the site of covalent modification are in progress.
+
+Acknowledgments—We thank G. Gehlmann (Institut fu¨ r Mediz-
+inische Physik and Biophysik, Universita¨t Mu¨ nster) for preparation of
+samples for mass spectrometry. S. Ko¨nig acknowledges the use of the
+mass spectrometer of the protein sequencing laboratory of Interdiszi-
+plina¨res Zentrum fu¨ r Klinische Forschung, Universita¨t Mu¨ nster. We
+thank D. K. Apps (Department of Biochemistry, University of Edin-
+burgh, Scotland) for providing us with polyclonal antibodies to the
+116-kDa subunit a of the V-ATPase from bovine chromaffin granules.
+
+REFERENCES
+
+1. Wieczorek, H., Brown, D., Grinstein, S., Ehrenfeld, J., and Harvey, W. R.
+
+(1999) Bioessays 21, 637–648
+
+2. Nishi, T., and Forgac, M. (2002) Nat. Rev. Mol. Cell. Biol. 3, 94–103
+3. Bowman, E. J., Siebers, A., and Altendorf, K. (1988) Proc. Natl. Acad. Sci.
+
+U. S. A. 85, 7972–7976
+
+K. (1993) Biochemistry 32, 3902–3906
+
+5. Hanada, H., Moriyama, Y., Maeda, M., and Futai, M. (1990) Biochem. Biophys.
+
+Res. Commun. 170, 873–878
+
+17379–17381
+
+4. Dro¨se, S., Bindseil, K. U., Bowman, E. J., Siebers, A., Zeeck, A., and Altendorf,
+
+32. Gra¨f, R., Lepier, A., Harvey, W. R., and Wieczorek, H. (1994) J. Biol. Chem.
+
+6. Crider, B. P., Xie, X. S., and Stone, D. K. (1994) J. Biol. Chem. 269,
+
+Wieczorek, H. (1996) J. Biol. Chem. 271, 8502–8508
+
+7. Zhang, J. M., Feng, Y., and Forgac, M. (1994) J. Biol. Chem. 269, 23518–23523
+
+239–244
+
+8. Rautiala, T. J., Koskinen, A. M., and Vaananen, H. K. (1993) Biochem. Bio-
+
+phys. Res. Commun. 194, 50–56
+
+9. Azzi, A., Casey, R. P., and Nalecz, M. (1984) Biochim. Biophys. Acta 768,
+
+209–226
+
+10. Bowman, B. J., and Bowman, E. J. (2002) J. Biol. Chem. 277, 3965–3972
+11. Ingenhorst, G., Bindseil, K. U., Boddien, C., Dro¨se, S., Ga␤el, M., Altendorf, K.,
+
+and Zeeck, A. (2001) Eur. J. Org. Chem. 23, 4525–4532
+
+12. Dro¨se, S., Boddien, C., Ga␤el, M., Ingenhorst, G., Zeeck, A., and Altendorf, K.
+
+(2001) Biochemistry 40, 2816–2825
+
+13. Wieczorek, H., Cioffi, M., Klein, U., Harvey, W. R., Schweikl, H., and
+
+Wolfersberger, M. G. (1990) Methods Enzymol. 192, 608–616
+
+14. Laemmli, U. K. (1970) Nature 227, 680–685
+15. Ratajczak, R. (1994) Bot. Acta 107, 201–209
+16. Scha¨gger, H., and v. Jagow, G. (1987) Anal. Biochem. 166, 368–379
+17. Shevchenko, A., Wilm, M., Vorm, O., and Mann, M. (1996) Anal. Chem. 68,
+
+850–858
+
+669–678
+
+18. Zhang, X., Herring, C. J., Romano, P. R., Szczepaowska, J., Brzeska, H.,
+
+Hinnebusch, A. G., and Qin, J. (1998) Anal. Chem. 70, 2050–2059
+
+19. Bell, R. A., Borg, T. K., and Ittycheriah, P. I. (1974) J. Insect Physiol. 20,
+
+20. Cioffi, M., and Wolfersberger, M. G. (1983) Tissue & Cell 15, 781–803
+21. Wieczorek, H., Putzenlechner, M., Zeiske, W., and Klein, U. (1991) J. Biol.
+
+Chem. 266, 15340–15347
+
+22. Wieczorek, H., Gru¨ ber, G., Harvey, W. R., Huss, M., and Merzendorfer, H.
+
+(1999) J. Bioenerg. Biomembr. 31, 67–74
+
+23. Merzendorfer, H., Reineke, S., Zhao, X. F., Jacobmeier, B., Harvey, W. R., and
+
+Wieczorek, H. (2000) Biochim. Biophys. Acta 25, 369–379
+
+24. Schweikl, H., Klein, U., Schindlbeck, M., and Wieczorek, H. (1989) J. Biol.
+
+Chem. 264, 11136–11142
+
+25. Wieczorek, H. (1992) J. Exp. Biol. 172, 335–343
+26. Merzendorfer, H., Huss, M., Schmid, R., Harvey, W. R., and Wieczorek, H.
+
+(1999) J. Biol. Chem. 274, 17372–17378
+
+27. Adachi, I., Arai, H., Pimental, R., and Forgac, M. (1990) J. Biol. Chem. 265,
+
+960–966
+
+28. Wieczorek, H., Gru¨ ber, G., Harvey, W. R., Huss, M., Merzendorfer, H., and
+
+Zeiske, W. (2000) J. Exp. Biol. 203, 127–135
+
+29. Gillespie, J., Ozanne, S., Tugal, B., Percy, J., Warren, M., Haywood, J., and
+
+Apps, D. (1991) FEBS Lett. 282, 69–72
+
+30. Sumner, J. P., Dow, J. A. T., Earley, F. G. P., Klein, U., Ja¨ger, D., and
+
+Wieczorek, H. (1995) J. Biol. Chem. 270, 5649–5653
+
+31. Gra¨f, R., Harvey, W. R., and Wieczorek, H. (1996) J. Biol. Chem. 271,
+
+20908–20913
+
+269, 3767–3774
+
+33. Dow, J. A., Goodwin, S. F., and Kaiser, K. (1992) Gene 122, 355–360
+34. Lepier, A., Gra¨f, R., Azuma, M., Merzendorfer, H., Harvey, W. R., and
+
+35. Merzendorfer, H., Harvey, W. R., and Wieczorek, H. (1997) FEBS Lett. 411,
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+w
+w
+w
+
+ 
+
+.
+j
+
+b
+c
+.
+
+o
+r
+g
+b
+y
+ 
+
+ 
+
+g
+u
+e
+s
+t
+,
+ 
+
+ 
+
+o
+n
+A
+u
+g
+u
+s
+t
+ 
+
+1
+
+,
+ 
+
+2
+0
+1
+0
+
+

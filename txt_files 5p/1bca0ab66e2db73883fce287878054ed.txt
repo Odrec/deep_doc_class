@@ -1,0 +1,240 @@
+Wissensbasierte Systeme 
+
+Seminar WS 2014/15 
+
+Joachim Hertzberg,  
+
+Sven Albrecht, 
+
+Jochen Sprickerhof 
+
+Joachim Hertzberg 
+Seminar Wissensbasierte Systeme 
+WS 2014/15 
+
+1 
+
+1. Organisation 
+
+•  Zeit: Do 8:30-10   (oder 8:15-9:45?) 
+•  Kontakt: J.H. 31/507, joachim.hertzberg@uos.de,  
+
+weitere Betreuer s. Stud.IP-Seite 
+
+•  Seminar-Seite in Stud.IP (z.B. für Material) 
+•  Voraussetzungen: Informatik (mind. A+B; Info D hilft),  
+
+Mathe (im üblichen Umfang für Bachelorstudium Informatik) 
+
+•  Studiengänge:  
+
+•  nicht  M.Sc. Informatik! 
+•  ansonsten: s. Ihre jeweiligen Prüfungsordnungen 
+
+Joachim Hertzberg 
+Seminar Wissensbasierte Systeme 
+WS 2014/15 
+
+2 
+
+Anforderungen 
+
+•  Vortrag über das zugeteilte Thema  
+
+(45‘-60‘ + Fragen/Diskussion) (50%) 
+
+•  Schriftliche Ausarbeitung:  
+
+~ 10 S. + Referenzen, ggf. Anhang;  
+ maximal(!) 3(!) Wochen nach dem Vortrag (40%) 
+
+•  Beteiligung an Seminardiskussion (10%) 
+•  Material zum Thema vorgegeben;  
+
+Auswahl/Schwerpunkte in Absprache mit Betreuer 
+
+•  Anwesenheit verpflichtend! In allen Sitzungen! Außer bei 
+
+guter(!) Entschuldigung! Bei Fehlen Durchfallgefahr! 
+•  Anmeldung in Opium jetzt! (Anmeldeschluss 2.11.!) 
+
+Joachim Hertzberg 
+Seminar Wissensbasierte Systeme 
+WS 2014/15 
+
+3 
+
+Kontakt zu Themen-Betreuer 
+
+…  für inhaltliche Fragen zum Thema 
+…  zur Wahl der Themen-Schwerpunkte 
+…  zur Vorbesprechung des Vortrags (obligatorisch!) 
+…  zur Diskussion einer Vorversion der 
+
+Seminarausarbeitung 
+
+…  und zu welchen Seminar-Problemen auch immer 
+
+Joachim Hertzberg 
+Seminar Wissensbasierte Systeme 
+WS 2014/15 
+
+4 
+
+2. Ablaufplan 
+
+1.  (heute, Semesterwoche 1, JH)  Organisation 
+2.  (SW 2, Do 23.10., JH)  Wie präsentiere ich einen 
+
+Seminarvortrag? Wie schreibe ich ein Seminarpapier? 
+
+3.  (SW 4-15, Studierende) 12 Vorträge 
+4.  Seminarpapiere fällig spätestens 3 Wochen nach Vortrag! 
+
+Können auch schon vor Vortrag fast fertig sein! 
+Vermeiden Sie zusätzlichen Stress in der Klausurzeit!!! 
+
+Joachim Hertzberg 
+Seminar Wissensbasierte Systeme 
+WS 2014/15 
+
+5 
+
+3. Inhalt 
+
+1. Technisches Thema:  
+D.E. Knuth: The Art of Computer Programming, vol. 3: 
+Sorting and Searching (2. Aufl. 1998) 
+…  ein Klassiker der Informatik-Literatur 
+…  und die Klassiker sollte man gelegentlich lesen(!)  
+
+(selber!) (ganz!) 
+
+2. Akademische „Schlüsselqualifikationen“ 
+•  Vortragen, wissenschaftliches Schreiben  
+
+(Literatur Englisch, Vortrag und Ausarbeitung Deutsch) 
+
+Joachim Hertzberg 
+Seminar Wissensbasierte Systeme 
+WS 2014/15 
+
+6 
+
+Aufbereitung der Textabschnitte 
+
+•  Jeder Abschnitt enthält mehr Material als man 
+
+plausiblerweise vortragen kann 
+•  Auswahl/Schwerpunktsetzung ist gefragt! 
+
+•  Jeder Abschnitt hat zahlreiche Übungsaufgaben von 
+unterschiedlichem Charakter und Schwierigkeitsgrad 
+• 
+
+Im Vortrag als Beispiel oder Vertiefung verwenden! 
+
+•  Zu den Themen Sortieren und Suchen gibt es jede Menge 
+
+freie Implementierungen 
+•  Möglicherweise für Beispiele im Vortrag gebrauchen! 
+
+•  … am besten in Absprache mit dem Betreuer 
+
+Joachim Hertzberg 
+Seminar Wissensbasierte Systeme 
+WS 2014/15 
+
+7 
+
+4. Themenverteilung 
+
+Datum 
+
+Titel 
+
+Betreuer 
+
+Student/in 
+
+6.11.14 
+
+Insertion Sorting (Intro 5.2, 5.2.1) 
+
+Hertzberg  Hegerfeld 
+
+13.11.14  Sorting by Exchanging (5.2.2) 
+
+Sprickerhof  Langemeyer 
+
+20.11.14  Sorting by Selection (5.2.3) 
+
+27.11.14  Merging & Unmerging (5.2.4, 5.2.5)  
+
+Albrecht  Löpmeier 
+
+Hertzberg  Wiegand 
+
+4.12.14  Optimum Sorting (Intro 5.3, 5.3.1) 
+
+Sprickerhof  Mitschke 
+
+11.12.14  External Sorting (Intro 5.4, 5.4.1) 
+
+Albrecht  John 
+
+18.12.14  Sequential & Ordered Search (6.1, 6.2.1) 
+
+Hertzberg  Löhr 
+
+8.1.15  Binary Tree Search (6.2.2) 
+
+15.1.15  Balanced Tree Search (6.2.3) 
+
+22.1.15  Digital Search (6.3) 
+
+29.1.15  Hashing (6.4) 
+
+5.2.15  Using Secondary Keys (6.5) 
+
+Joachim Hertzberg 
+Seminar Wissensbasierte Systeme 
+WS 2014/15 
+
+Sprickerhof  Molsbeck 
+
+Albrecht  Timmer 
+
+Hertzberg  Rasathurai 
+
+Sprickerhof  Resch 
+
+Albrecht  Runde 
+
+8 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+7 
+
+8 
+
+9 
+
+10 
+
+11 
+
+12 
+
+

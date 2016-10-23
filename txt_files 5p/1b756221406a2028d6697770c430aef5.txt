@@ -1,0 +1,1402 @@
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+Plant hormone receptors: perception is everything
+Brenda Chow and Peter McCourt
+
+Genes Dev.
+Access the most recent version at doi:
+
+ 2006 20: 1998-2008
+
+10.1101/gad.1432806
+ 
+
+References
+
+This article cites 82 articles, 51 of which can be accessed free at:
+http://genesdev.cshlp.org/content/20/15/1998.full.html#ref-list-1
+ 
+
+Article cited in: 
+http://genesdev.cshlp.org/content/20/15/1998.full.html#related-urls
+ 
+
+Email alerting
+service
+
+Topic
+Collections
+
+Receive free email alerts when new articles cite this article - sign up in the box at the
+top right corner of the article or
+
+click here
+
+ 
+
+Articles on similar topics can be found in the following collections
+ (cid:160) (cid:149)
+
+Plant Biology
+
+ (27 articles)
+
+To subscribe to 
+http://genesdev.cshlp.org/subscriptions
+ 
+
+Genes & Development
+
+ go to: 
+
+Copyright © 2006, Cold Spring Harbor Laboratory Press
+
+(cid:160)
+(cid:160)
+(cid:160)
+(cid:160)
+(cid:160)
+(cid:160)
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+REVIEW
+
+Plant hormone receptors: perception
+is everything
+
+Brenda Chow1 and Peter McCourt1,2
+1Department of Botany, University of Toronto, Toronto M5S 3B2, Canada
+
+Despite the bewildering ability of higher plants to
+change their development with respect to the environ-
+ment, there appear to be only a few hormones that func-
+tion to organize growth and development. With the re-
+cent identification of three plant hormone receptors, the
+molecular identities of all the major plant receptors are
+now known. Some plant hormones such as cytokinins,
+ethylene, and brassinosteroids (BR) use well-character-
+ized signaling modules such as those involving receptor
+kinases, but in the case of the ethylene and BR receptors,
+there appear to be additional functions aside from the
+hormone they perceive. Auxin and gibberellin percep-
+tion require unique mechanisms where the receptors are
+components involved in ubiquitination-dependent pro-
+teolysis. With plant hormone receptors in hand, com-
+parisons can now be made between plants and other
+kingdoms as to how hormones control growth and de-
+velopment.
+
+Multicellular organisms, whether plants or animals, co-
+ordinate their growth and development at a tissue and
+organ level by using extracellular signaling molecules to
+communicate between cells. In animals, these extracel-
+lular signals usually take the form of small proteins or
+peptides, like insulin, or small organic-based hormone
+molecules, such as steroids or retinoids. In the case of
+plants, the organic class of hormones has historically
+dominated since these molecules influence numerous
+aspects of growth and development (Davies 1995). In-
+triguingly, although a number of the plant hormone
+structures have similar animal counterparts, plant hor-
+mones seem to have a much broader range of function
+(Fig. 1). A single plant cell can respond to more than one
+hormone, while a single hormone can affect different
+tissues in different ways. Obviously, any understanding
+of how this developmental complexity is initiated by
+these simple organic molecules first requires an under-
+standing of how they are perceived. Until recently, how-
+ever, the molecular properties of plant hormone percep-
+tion were fragmentary compared with animal studies
+
+due to the difficulties in biochemical purification of re-
+ceptors.
+
+Unlike animal systems, where organs and glands are
+discrete, plant development is a continuum of growth
+and differentiation in which cells and tissues both pro-
+duce and respond to many hormones. Biochemical analy-
+sis is further compromised by the cell wall and the
+plethora of secondary chemical products that plants syn-
+thesize. Fortunately, with the arrival of modern Arabi-
+dopsis genetics, mutations were identified that increased
+or decreased the response of a whole plant to a particular
+hormone. With the mutants in hand, genes could be iso-
+lated without the need for sophisticated biochemistry,
+and in the past few years, receptors to many of the major
+plant hormones have been identified. This has allowed
+biochemical studies and has also initiated a comprehen-
+sive comparison of how multicellular plants and ani-
+mals, which most likely evolved independently, use
+similar organic-based hormones to organize develop-
+ment.
+
+In this review, because of the strong influence of ge-
+netic analysis on plant hormone studies, we have limited
+ourselves to receptors where in vivo studies have pro-
+vided the reagents for in vitro experiments. We have
+focused on five receptors, as a sufficient body of work
+exists for these to allow both informed mechanistic con-
+clusions and general comparisons to animal counter-
+parts. We have not dealt with the recent identification of
+a receptor for abscisic acid (ABA) as the role of this re-
+ceptor in general ABA signaling is not clear at this time
+(Razem et al. 2006). We have also not dwelt on the
+subtleties of mutant screens or details of phenotypes as
+these topics have been covered in detail by a large num-
+ber of excellent reviews. Sufficient information is now
+available to allow receptors to be classified with respect
+to their biochemical properties rather than by the hor-
+mone they perceive. This type of organization allows
+comparisons not only between different plant hormone
+systems but also, where possible, to receptors in other
+kingdoms.
+
+[Keywords: Arabidopsis; hormones; development; signal transduction]
+2Corresponding author.
+E-MAIL mccourt@botany.utoronto.ca; FAX (416) 978-5878.
+Article is online at http://www.genesdev.org/cgi/doi/10.1101/gad.1432806.
+
+Two-component-based hormone receptors
+
+Two-component regulators derive their name from the
+transfer of phosphates between a collection of signature
+
+1998
+
+GENES & DEVELOPMENT 20:1998–2008 © 2006 by Cold Spring Harbor Laboratory Press ISSN 0890-9369/06; www.genesdev.org
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+Hormone perception
+
+ability of exogenous cytokinins to cause greening in Ara-
+bidopsis plant tissue culture. An insensitive mutant was
+isolated, which led to the identification of the mem-
+brane-bound two-component input regulator, CRE1 (In-
+oue et al. 2001). Subsequently, two close homologs,
+AHK2 and AHK3, were also identified (Suzuki et al.
+2001; Yamada et al. 2001; Higuchi et al. 2004). All three
+gene products have been shown to bind cytokinin and
+complement yeast and bacterial two-component mu-
+tants in a cytokinin-dependent manner (Fig. 3A). In Ara-
+bidopsis, there are five genes that encode HPt proteins,
+designated AHPs, and it appears that these intermediates
+transmit the membrane perceived cytokinin signal to
+the response regulators (ARRs) located in the nucleus
+(Hwang and Sheen 2001).
+
+Because a small gene family defines the cytokinin re-
+ceptors, it was perhaps not surprising that single loss-of-
+function mutations were not lethal and, for the most
+part, allowed plants to grow normally (Higuchi et al.
+2004). Combinations of double and triple mutations did
+expose abnormal developmental phenotypes, but sur-
+prisingly, embryogenesis and early seedling patterning
+were relatively normal. Although it is possible that other
+cytokinin perception systems exist, these results hint
+that the traditional view of an essential role for cytoki-
+nins in plant growth and development may be exagger-
+ated.
+
+The first genes encoding ethylene receptors were also
+identified through genetic screens for mutants that did
+not respond to hormone application. These studies led to
+the classification of five genes (ETR1, ETR2, ERS1, ERS2,
+EIN4) that share sequence similarity with those enocod-
+ing the two-component input regulators (Bleecker et al.
+1988; Chang et al. 1993; Hua et al. 1995; Hua and Mey-
+erowitz 1998; Sakai et al. 1998). Heterologous expression
+studies in yeast have clearly defined the signal input do-
+main that perceives ethylene as a hydrophobic region at
+the N terminus of members of the ethylene receptor
+family (Chen et al. 2005; O’Malley et al. 2005). However,
+unlike the cytokinin story, the transmitter domain has
+been more difficult to understand for a variety of reasons.
+First, although truncation of the histidine kinase domain
+results in the loss of signal output, site-directed muta-
+genesis that specifically eliminates kinase activity only
+has modest effects on ethylene signaling (Qu and
+Schaller 2004). Second, phylogenetic analysis can divide
+the ethylene receptors into two subfamilies based on the
+presence or absence of conserved subdomains character-
+istic for histidine kinases (Fig. 3B). Finally, some receptor
+family members contain a C-terminal receiver domain
+that may be phosphorylated by the histidine kinase do-
+main, but the presence of a receiver domain does not
+correlate with the presence of a histidine kinase domain.
+However, since gain-of-function mutations in any of the
+receptors confer insensitivity to ethylene, it appears that
+all five genes can contribute to ethylene signaling. The
+dominant nature of these mutations suggests that mu-
+tant receptors may interact with wild-type receptors to
+transduce the ethylene signal.
+
+As with the cytokinin receptors, individual loss-of-
+
+GENES & DEVELOPMENT
+
+1999
+
+Figure 1. Chemical structures of different organic-based hor-
+mones found in plants and animals. The names in the center
+represent the precursors from which the hormones are derived.
+
+proteins. This starts when the first component perceives
+an input signal to cause an autophosphorylation of a con-
+served histidine in the transmitter domain (Fig. 2A). The
+signal is then relayed through a phosphotransfer to a con-
+served aspartate residue in the receiver domain of the
+second component, often called the response regulator.
+Two-component regulators were first defined in prokary-
+otes, where they are quite prevalent, often representing
+up to 1% of the genome (Mizuno 1997). To date, no two-
+component regulators have been found in animals; how-
+ever, they have been identified in both fungi and plants.
+The fungal and plant two-component systems are more
+complicated than the canonical prokaryotic system in
+that the input histidine kinase domain itself often car-
+ries a receiver domain (Fig. 2B). Moreover, an intermedi-
+ate, designated HPt for histidine phosphotransfer protein
+can also participate in the phosphate transfer between
+the histidine kinase and the receiver domain. Three-di-
+mensional protein studies show that HPt domains share
+similarity with parts of the transmitter domain (Kato et
+al. 1997).
+
+In Arabidopsis, eight two-component input regulators
+genes have been functionally identified as hormone re-
+ceptors (Fig. 3). Three are involved in cytokinin percep-
+tion, and five encode ethylene receptors. The first cyto-
+kinin receptor was identified by taking advantage of the
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+Chow and McCourt
+
+Figure 2. The prototypical two-component
+system. (A) The two-step system found only
+in prokaryotes. The input domain binds a
+signal molecule, resulting in the phosphory-
+lation (green-encircled P) of a conserved his-
+tidine in the transmitter domain. This phos-
+phoryl group is subsequently transferred to
+the receiver domain on the response regula-
+tor. As a result, the output domain is acti-
+vated to transduce the signal. (B) The mul-
+tistep derivation of the two-component sys-
+and some
+tem found in prokaryotes
+eukaryotes. Overall phosphotransfer
+is
+similar to A with the exception of interme-
+diate components acting between the trans-
+mitter and output domains. These include
+receiver domains fused to the transmitter
+domain and a separate intermediate Hpt do-
+main that can receive a phosphoryl group
+from a receiver domain. In all cases, phos-
+photransfers can be bidirectional. H (histi-
+dine), N (asparagine), G (glycine), and F (phe-
+nylalanine)
+conserved blocks
+characteristic of
+functional histidine ki-
+nases.
+
+represent
+
+function mutations in the ethylene receptor genes
+caused little change in plant growth while multiple com-
+binations resulted in developmental phenotypes (Hua
+and Meyerowitz 1998). However, unlike the cytokinin
+response where loss of more receptors decreased cytoki-
+nin responsiveness, decreasing the number of functional
+ethylene receptors resulted in plants with a constitutive
+ethylene response (Hua and Meyerowitz 1998). The most
+parsimonious explanation for this result is that the fam-
+ily of ethylene receptors normally functions in the ab-
+sence of ethylene and that addition of the gas inhibits
+this function (Fig. 3B). This model fits well with the
+immediate downstream component of the receptors,
+CTR1, since this serine/threonine protein kinase is a
+negative regulator of the ethylene response in Arabidop-
+sis (Kieber et al. 1993). In the absence of ethylene, the
+receptors activate CTR1, which in turn suppresses the
+ethylene response (Fig. 3B). When ethylene binds the re-
+ceptors, CTR1 activation is inhibited, releasing down-
+stream components to activate the ethylene pathway.
+Protein interaction studies and colocalization of both
+ETR1 and CTR1 protein to the endoplasmic reticulum
+(ER) support the genetic interactions (Clark et al. 1998;
+Cancel and Larsen 2002; Chen et al. 2002; Gao et al.
+2003). Because specific mutations in CTR1 that disrupt
+ETR1–CTR1 interactions cause movement of CTR1 to
+the cytosol and genetic removal of two or more ethylene
+receptors also results in CTR1 protein redistribution, it
+appears that the ethylene receptors act as a scaffolding
+protein for CTR1 at the ER (Gao et al. 2003; Huang et al.
+2003). Therefore, ethylene receptors are quite unlike cy-
+tokinin or other two-component receptors in that there
+
+2000
+
+GENES & DEVELOPMENT
+
+is no phospho-relay to a typical HPt domain protein or a
+response regulator.
+
+The oddities of the ethylene “two-component” recep-
+tors also apply to the way ethylene itself interacts with
+the receptor. Like other hormone ligands, ethylene is
+active at nanomolar concentrations. However, unlike
+most hormones, which are generally complex with re-
+spect to molecular shape, ethylene simply consists of
+two carbons. The lack of multiple contact points be-
+tween ethylene and its receptor would not allow for the
+many weak interactions that are usually required to
+achieve high-affinity ligand–receptor specificity. This
+peculiarity was explained by the demonstration that a
+copper ion associates with the ethylene receptor and is
+required for binding of ethylene in both Arabidopsis and
+heterologous yeast systems expressing ETR1 (Schaller
+and Bleecker 1995; Rodriguez et al. 1999). Interestingly,
+the cyanobacterium Synechocystis strain 6803 contains
+an ethylene receptor ortholog, which also requires a cop-
+per cofactor to bind ethylene at a high affinity (Rodriguez
+et al. 1999). Although Synechocystis does not synthesize
+or respond to ethylene, the conservation between bacte-
+rial and higher plant genes suggests that the progenitor
+to the ethylene receptor in plants was co-opted from a
+cyanobacterial ancestor after plant cells acquired the
+chloroplast during endosymbiosis.
+
+This model implies that the progenitor ethylene recep-
+tor may have evolved to influence an already existing
+plant signaling pathway. Models of signaling pathway
+evolution have suggested that these pathways evolve in
+reverse order from the target transcription factor to the
+first step, which is the receptor and ligand combination
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+Hormone perception
+
+Figure 3. Structural relationships within and between two-component regulators involved in cytokinin and ethylene perception. (A)
+In Arabidopsis, three cytokinin receptors (CRE1, AHR2, and AHR3) all bind cytokinins at their extracellular input domain. This
+results in a phospho-relay that eventually activates cytokinin responses. AHP and the type-B ARR are the Arabidopsis equivalents of
+the Hpt domain and response regulator proteins, respectively. (B) Five ethylene receptors (ETR1, ERS1, ETR2, EIN4, and ERS2) exist
+in Arabidopsis that all bind ethylene in their extracellular domain. Various forms of the transmitter domain exist on each receptor so,
+in principle, not all receptors can transfer phosphate groups. However, genetic analysis suggests that all of the ethylene receptors
+activate their downstream target component (CTR1) in the absence of the gas, and that binding of ethylene to the receptors inhibits
+this activation of CTR1.
+
+(Wilkins 1995). Often new components act as neomor-
+phic and dominant-negative units that reverse the func-
+tion of the previous step. This would appear to hold true
+for the upper part of the ethylene signaling pathway in
+which CTR1 acts negatively on EIN2, ethylene receptors
+act positively on CTR1, and, finally, ethylene acts nega-
+tively on the receptors. The idea that the ethylene recep-
+tor was a late addition to a pre-existing pathway may
+explain the major paradox in ethylene signaling regard-
+ing how enhanced sensitivity can occur with a reduction
+in receptor number (Cancel and Larsen 2002). The obser-
+vation that glucose can enhance the degradation of EIN3,
+a key transcriptional regulator at the bottom of the eth-
+ylene response pathway, hints that the ethylene pathway
+has other modulators (Yanagisawa et al. 2003). If the role
+of the bottom of the ethylene response pathway is to
+modulate sugar responses, which in turn determines cell
+growth and expansion, then the role of ethylene and its
+upstream receptor may simply be to inhibit a carbon
+response pathway.
+Leucine-rich repeat (LRR)-based hormone receptors
+
+In both plants and animals, steroid-based molecules have
+been identified that act as hormones for directing growth
+
+and development. In plants, the best described steroid
+hormone is brassinosteroid (BR). The first interest in BR
+arose from its growth promoting qualities upon applica-
+tion. The isolation of Arabidopsis mutants deficient in
+BR biosynthesis clearly demonstrated that BR is in fact a
+general regulator of plant growth and development (Li et
+al. 1996; Szekeres et al. 1996). The identification of mu-
+tations affecting BR perception involved screening for
+Arabidopsis mutants that showed normal root growth
+on exogenous BR or by screening for dwarf mutants that
+mimicked BR auxotrophic phenotypes that were not res-
+cued by exogenous BR (Clouse et al. 1996; Li and Chory
+1997; Noguchi et al. 1999).
+
+In both cases, these approaches uncovered many al-
+leles of a single locus, designated BRI1, which encodes a
+plasma membrane-associated LRR receptor-like kinase
+(LRR-RLK) (Li and Chory 1997). The LRR is a common
+protein motif of usually 20–29 residues that is found in a
+number of proteins with diverse functions throughout
+all kingdoms (Fig. 4A; Kobe and Kajava 2001). Plant re-
+ceptors have an extracellular LRR domain that is fused
+to an intracellular serine/threonine kinase domain. In
+animals, LRR-based receptors transduce their signals
+through intracellular protein–protein interactions rather
+
+GENES & DEVELOPMENT
+
+2001
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+Chow and McCourt
+
+Figure 4. LRR receptors. (A) Comparison
+of four types of LRR receptors found in
+plants and animals: BRI1, an Arabidopsis
+BR receptor; CLV1, a receptor involved in
+binding the small peptide CLV3 that down-
+regulates meristem size in Arabidopsis; Cf-
+9, a receptor involved in plant pathogen re-
+sponses in tomato; and Toll, an embryo
+patterning and innate immunity receptor
+in Drosophila . (B) Mechanism of BR per-
+ception. Normally the BRI1 and BAK1 LRR
+kinases are inactive homodimers. Upon BR
+binding, the BRI1 and BAK1 proteins aggre-
+gate, resulting in an autophosphorylation
+event. This leads to the repression of the
+downstream negative regulator, BIN2, and
+induction of BR responses.
+
+than directly through kinase domains. For example, the
+activated Toll receptor in Drosophila recruits, among
+other proteins, a serine/threonine kinase that shares
+similarity to the kinase domain found in plant LRR-
+RLKs (Shiu and Bleecker 2001). Interestingly, other ex-
+amples exist where plants have fused regulatory domains
+into a single protein while the equivalent domains in
+animals must associate through protein–protein interac-
+tions (Schena and Davis 1994).
+
+The uncovering of a LRR-RLK as having a role in plant
+hormone signaling is perhaps not unexpected since this
+class of genes constitutes a large family consisting of
+>200 genes in the Arabidopsis genome (Shiu and Bleecker
+2003). What was unexpected is that the extracellular
+LRR module directly binds BR. It is commonly thought
+that the LRR motif functions as a protein–protein inter-
+action domain rather than as a domain that interacts
+with organic molecules (Kobe and Kajava 2001). In the
+case of the BRI1 LRR, however, the 25 leucine repeats are
+interrupted by a unique 70-amino-acid island domain
+(ID) between repeat 21 and 22 (Li and Chory 1997). The
+importance of the ID in BR signaling was implied by the
+observation that mutations that confer BR insensitivity
+cluster to this region and, more directly, by the ability of
+BR to bind to the ID in vitro (Li and Chory 1997; Ki-
+noshita et al. 2005). Perhaps the ID explains the unique
+property of this extracellular domain to bind organic
+molecules, and it has been speculated that LRR22-ID
+may not fold in a typical way (Kinoshita et al. 2005).
+
+In animals, a superfamily of nuclear receptors exists
+that are activated when the fully buried ligand completes
+
+2002
+
+GENES & DEVELOPMENT
+
+the hydrophobic core of the receptor (Bogan et al. 1998).
+In this scenario, the ligand acts to stabilize the protein so
+that it can become nuclear localized and directly bind
+DNA. In plants, it appears that binding of BR to inactive
+BRI1 homodimers induces autophosphorylation of its cy-
+toplasmic kinase domain and thereby stimulates the in-
+teraction of BRI1 with another related LRR-RLK called
+BAK1 (Fig. 4B). BAK1 contains a short four-leucine zip-
+per repeat extracellular domain with no ID motif so it
+appears this LRR-RLK does not bind BR. Two models
+have been proposed for BRI1/BAK1 interactions. The
+first suggests that BR allows BRI1 and BAK1 to interact,
+thereby allowing transphosphorylation of BAK1. A sec-
+ond model is that BRI1 and BAK1 form a complex that is
+stabilized and activated by BR (Nam and Li 2002). Re-
+cently, in vitro analysis suggested that heteromeric as-
+sociations between BRI1 and BAK1, as well as phos-
+phorylation, are dependent on BR (Wang et al. 2005).
+Whatever the case, it appears that plants perceive steroid
+hormones at the plasma membrane and eventually
+stimulate gene expression through an involved signal
+transduction pathway that is similar to Wnt signaling in
+animals (Yin et al. 2002).
+
+Binding experiments with BR indicate that it directly
+interacts with and activates the BRI1/BAK1 complex;
+however, some evidence exists to suggest that the first
+stages of signaling may be more complex. First, overex-
+pressing the carboxypeptidase BRS1, which normally lo-
+calizes to the extracellular space, can suppress a weak
+bri1 allele (Li et al. 2001a; Zhou and Li 2005). This sup-
+pression, which is specific to BRI1 and requires both BR
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+and a functional protein kinase domain, indicates that
+BRS1 is involved in an early event in BRI1-mediated sig-
+naling. The molecular identity of BRS1 suggests that this
+protein may be involved in receptor proteolytic process-
+ing, and there is evidence that BRI1 may undergo endo-
+cytosis after binding BR (Russinova et al. 2004).
+
+Alternatively, BRS1 may be involved in the processing
+of an as of yet unidentified protein ligand. The latter idea
+gains some support from studies in tomato showing that
+the BRI1 homolog is also the receptor for an 18-amino-
+acid protein called systemin (Montoya et al. 2002; Scheer
+et al. 2003). Systemin is the processed form of an inactive
+200-amino-acid preprotein made during insect herbivory
+to activate a battery of defense genes (Ryan and Pearce
+2003). Tomato bri1 mutants, which are phenotypically
+similar to BR-deficient dwarfs, are defective in systemin
+signaling. Furthermore, although BR does not reduce sys-
+temin binding, it does inhibit the systemin response
+(Scheer et al. 2003). It is possible that BR inhibits syste-
+min signaling by directing the tomato BRI1 receptor
+away from systemin signaling and toward hormone sig-
+naling (Fig. 5A). Alternatively, BR and systemin may
+function through the same signaling pathway. In Arabi-
+dopsis, one function of a BR-bound BRI1 receptor is to
+negatively regulate the GSK3/SHAGGY-like kinase,
+BIN2 (Li et al. 2001b; Li and Nam 2002). In the absence
+of BR, BIN2 negatively regulates activators of BR gene
+expression. In tomato, the BRI1 receptor is activated by
+
+Hormone perception
+
+systemin, which could influence BIN2 function. In this
+case, mutations in BIN2 and other downstream compo-
+nents of BR signaling may have altered systemin signal-
+ing. Although systemin has only been identified in some
+members of the Solanceae family, this observation of a
+shared receptor for both a peptide and organic molecule
+could mean that BR receptors in other plants may also
+have shared perception functions. Multiple recognition
+specificity may explain the discrepancy between the
+level of BRI protein, which is abundant in all tissues, and
+the low levels of BR ligand (Friedrichsen et al. 2000).
+
+Aside from the structural similarities, other intriguing
+similarities exist between systemin/BR perception and
+signaling in tomato and Toll-based signaling in Dro-
+sophila. Like the tomato systemin/BR receptor, the Toll
+receptor also has two functions: one in embryogenesis,
+and the other in adult immune responses. Early events
+also appear to involve a proteolytic processing of an in-
+active preprotein to produce the activated Spatzle ligand
+that subsequently binds the extracellular LRR domain of
+the receptor (Jang et al. 2006). This leads to the recruit-
+ment of a serine/threonine kinase, which phosphorylates
+downstream components. In the case of the Toll path-
+way, however, a single ligand Spatzle is used in both
+processes but is cleaved by different developmentally
+regulated proteases into its mature form. The processing
+of the systemin ligand parallels that of the Toll ligand, as
+does the identification of a carboxyl peptidase in BRI1
+
+Figure 5. Consequences of LRR receptor–ligand interactions. (A) In tomato, the BRI1 receptor (tBRI1) can bind either BR or the small
+peptide systemin. Systemin is processed from a larger polypeptide by an as of yet uncharacterized protease (curved arrow). The
+resulting ligand binds tBRI1, causing heterodimerization of the tBRI1 with an uncharacterized LRR protein (?) to induce defense
+responses. Alternatively, if tBRI1 binds BR, this results in a BRI–BAK1 dimerization and BR-dependent growth. (B) InDrosophila , a
+protease (curved arrow) cleaves a preprotein to generate a polypeptide Spatzle, which subsequently binds the Toll receptor. The choice
+between embryo development and innate immune response is determined by the developmentally regulated cleavage of the pre-Spatzle
+protein.
+
+GENES & DEVELOPMENT
+
+2003
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+Chow and McCourt
+
+signaling. Although not conserved at the amino acid
+level, the Toll receptor also contains an “island” within
+the LRR extracellular domains whose functions are un-
+known. Perhaps like BRI1, this region can also bind an
+organic molecule that modulates its function.
+
+Ubiquitination-based hormone receptors
+
+The first hints that some plant hormones had unique
+mechanisms of signaling came from the identification of
+genes required for normal responsiveness to exogenous
+auxin. Broadly speaking, these genes encoded two classes
+of molecules. One comprised members of a family of
+extremely shortlived nuclear proteins called Aux/IAAs
+(Rouse et al. 1998; Tian and Reed 1999; Nagpal et al.
+2000; Rogg et al. 2001; for review, see Reed 2001). Aux/
+IAA genes are rapidly induced by auxin application, and
+their protein products are then quickly degraded (Abel
+and Theologis 1996). Mutations in Aux/IAA genes that
+conferred increased resistance to auxin mapped to a com-
+mon domain shown to be important in protein stability.
+Hence, decreasing the turnover of an Aux/IAA protein
+somehow conferred decreased auxin sensitivity. The sec-
+
+ond class of molecules identified various components of
+the SCF (Skp1/Cullin/F-box) ubiquitin protein complex
+(Ruegger et al. 1998; Gray et al. 1999, 2001).
+
+The SCF complex, which was first identified in yeast,
+provides a mechanism by which cells can rapidly degrade
+proteins by targeting them to the 26S proteosome (for
+review, see Tyers and Jorgensen 2000). Briefly, ubiquitin
+is first activated by an E1 enzyme and then passed to a
+family of ubiquitin-conjugating E2 enzymes (Fig. 6). The
+E2 enzyme carrying an ubiquitin molecule can interact
+with the Cullin subunit of the SCF complex. The SKP1
+subunit acts as an adaptor protein between Cullin and
+the F-box so that when the F-box protein captures a pro-
+tein target it is now in the vicinity of the E2 enzyme and
+can be ubiquinated (Fig. 6). This process is reiterated un-
+til the target protein accumulates more than four ubiq-
+uitins, which signal it for degradation via the 26S pro-
+teosome.
+
+There are other subunits and modifications that influ-
+ence SCF function, but the specificity of the F-box pro-
+tein in determining target substrate suggested that the
+SCF complex is central to the regulation of Aux/IAA
+protein levels. An F-box protein, TIR1, which specifi-
+
+Figure 6. SCF-dependent hormone-regulated ubiquitination of proteins. Key components in a canonical SCF pathway are shown, and
+related components in the auxin and GA pathways have the same shape. The left panel represents a yeast-type SCF proteolysis model
+in which an ubiquitin (⽧) is added to the target protein via a set of reactions. Ubiquitin is activated by an E1 enzyme and conjugated
+to the target via the E2 and F-box proteins associated with the SCF complex. The F-box protein determines specificity of targets. As
+ubiquitination of the target is a reiterative process, the ubiquitin tail grows and, after reaching a certain length, causes the degradation
+of the target via the 20S proteosome. The middle panel depicts auxin-mediated degradation of Aux/IAA repressor targets. The TIR1
+F-box protein binds auxin, and this stimulates its association with the Aux/IAA protein. Targeting of Aux/IAA to the proteosome
+releases auxin response genes from repression. The modification of the Cullin subunit with the ubiquitin-like protein RUB1 and other
+proteins enhances SCF-dependent ubiquitination. The first auxin resistant mutant (arx1) identified a protein required in rubinylation.
+The right panel depicts GA-mediated degradation of the DELLA domain repressor targets. The GID1 protein binds the DELLA protein
+in a GA-dependent manner and targets it to the SCFGID2 complex for ubiquitination. Degradation of the DELLA domain proteins
+releases GA-dependent genes from repression.
+
+2004
+
+GENES & DEVELOPMENT
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+cally targets the Aux/IAA proteins for proteolysis, was
+identified in a screen for resistance to auxin transport
+inhibitors, and subsequent analysis suggested it was an
+essential component of auxin responsiveness (Ruegger et
+al. 1998). The SCFTIR1 complex was shown to bind Aux/
+IAA proteins directly, and this binding was enhanced in
+a cell free assay by the addition of auxin (Gray et al. 2001;
+Dharmasiri et al. 2003; Kepinski and Leyser 2004). Fi-
+nally, it was shown that TIR1 itself could specifically
+bind bioactive auxin, and this resulted in an increased
+affinity for Aux/IAA proteins (Dharmasiri et al. 2005a;
+Kepinski and Leyser 2005). Thus TIR1 is an auxin recep-
+tor, and unlike most F-box substrate interactions, this
+F-box protein can be directly modified by a small organic
+molecule (Fig. 6).
+
+Although Aux/IAA proteins are turned over in an
+auxin-dependent manner, these proteins do not bind
+DNA but heterodimerize with a related family of auxin
+response factor proteins (ARFs) that do bind DNA (Kim
+et al. 1997; Ulmasov et al. 1997). These findings led to a
+model suggesting that Aux/IAA proteins act as repres-
+sors of ARF-mediated transcription and that auxin acti-
+vates the SCFTIR1 complex to specifically degrade these
+repressors to allow ARF-dependent auxin responses.
+Strong support for this model came from knockout com-
+binations of all four TIR1-related auxin receptor genes
+that not only caused severe loss of auxin responsiveness
+but also phenocopied many of the auxin related devel-
+opmental defects seen in ARF loss-of-function mutants
+(Dharmasiri et al. 2005b).
+
+The ∼700 F-box proteins predicted to be encoded by
+the Arabidopsis genome is roughly one order of magni-
+tude more than the number found in fungi and animals.
+This begs the question as to whether any other F-box
+proteins function as receptors for other plant hormones.
+One of the best candidates was an F-box protein involved
+in GA signaling. In both rice and Arabidopsis, loss-of-
+function mutations in GID2 and SLY1, respectively, re-
+sult in reduced GA responsiveness, and both genes en-
+code related F-box proteins (Steber et al. 1998; McGinnis
+et al. 2003; Sasaki et al. 2003). These F-box proteins ap-
+pear to target a family of proteins that normally function
+to repress GA-related processes (Fig. 6; Peng et al. 1997;
+Silverstone et al. 1998; Dill et al. 2001; Itoh et al. 2002).
+Because the addition of GA causes these proteins to be
+degraded and thereby activates GA-dependent gene ex-
+pression, the GA system has many similarities to the
+components involved in auxin signaling. This led to sug-
+gestions that perhaps GID2/SLY1 F-boxes could be GA
+receptors. However, a loss-of-function mutation in a rice
+gene encoding a protein with similarity to animal hor-
+mone lipases (GID1) was also identified, and this muta-
+tion caused both a reduction in GA responsiveness and
+prevented the degradation of the DELLA domain repres-
+sor protein SLR1 (Ueguchi-Tanaka et al. 2005). More im-
+portantly, GID1 specifically bound bioactive GA, and its
+ability to bind 17 SLR1 in a yeast two-hybrid assay was
+GA dependent (Ueguchi-Tanaka et al. 2005). Hence, the
+addition of GA results in a protein–protein interaction
+between GID1 and the SLR1 DELLA domain protein to
+
+Hormone perception
+
+cause the degradation of this negative regulator of the
+GA response (Fig. 6). The GID1 protein has no detectable
+lipase activity but is soluble and localizes to the nucleus
+where DELLA domain proteins reside. Interestingly,
+members of the TIR1 family of proteins also show
+nuclear localization, which raises questions of where
+these receptors encounter their hormones and whether
+the hormone influences receptor localization.
+
+The identification of the SCF complexes and protein
+turnover as central to early auxin and GA signaling
+events suggests that the proteolysis of repressor proteins
+is an important hormone signal transduction mecha-
+nism in plants. However, unlike most epigenetic signal-
+ing events, such as a phosphotransfer, proteolysis is ir-
+reversible and therefore enforces directionality on a sys-
+tem. Such directionality is important in decisions that
+require total commitments such as controlling the cell
+cycle (Patton et al. 1998). By analogy, it could be argued
+that changes in levels of hormones such as auxin and GA
+during plant development should be followed by irre-
+versible developmental commitments to processes such
+as cell division and expansion.
+
+With respect to plant hormone signaling, the auxin
+and GA receptors are unique in that the number of com-
+ponents between the hormone ligand and the transcrip-
+tional factors they control is very small. Depending on
+the process being regulated, the length of the signaling
+pathway should reflect the required balance between the
+speed and robustness of a simple pathway versus the
+noise buffering ability of a more complex pathway. Buff-
+ering occurs because the addition of signaling compo-
+nents creates opportunities for loops to form that can
+enhance robustness while reducing signaling noise
+(Brandman et al. 2005). Hence, auxin and GA signaling
+should be very fast but with less buffering capacity than
+ethylene, BR, and cytokinin signaling. This modeling in-
+formation should be useful when mapped onto the dif-
+ferent physiological and developmental processes that
+these hormones influence.
+
+Hormone reception and plant development
+
+By definition, a hormone receptor should be able to rec-
+ognize subtle structural differences between small mol-
+ecules in a highly specific manner. Binding of the hor-
+mone to the receptor should be noncovalent and revers-
+ible and result in an activated complex that induces the
+primary hormone response. Certainly, the plant hor-
+mone receptors reviewed here fulfill many of these cri-
+teria, and in the cases of ethylene, cytokinin, and BR
+perception, the classic modules of receptor kinases have
+been identified. Having the receptors in hand has al-
+lowed comparison to each other as well as to those in
+other systems. For example, ethylene interferes with its
+two-component receptor function, whereas the cytoki-
+nin two-component receptor acts through the archetypal
+mechanism of activation and phosphotransfer to a re-
+sponse regulator. The ethylene two-component kinase
+does not signal to a canonical response regulator, and its
+negative regulation of receptor function suggests the re-
+
+GENES & DEVELOPMENT
+
+2005
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+Chow and McCourt
+
+ceptor has other functions in the absence of the hor-
+mone. In tomato, the BR receptor is not specific but is
+shared with another signaling pathway. Although the ex-
+tracellular domain of BRI1 resembles the classic LRR–
+protein interaction motif, it has the capacity to bind an
+organic molecule through a novel embedded domain.
+Presumably the extracellular LRR originally served as a
+protein ligand receptor and the addition of the BR-bind-
+ing ID domain arose secondarily.
+
+These observations suggest that hormone receptors
+like those involving ethylene and BR signaling have ad-
+ditional functions that the hormones influence. Auxin
+and GA perception use a unique SCF-based proteolysis
+mechanism that takes advantage of F-box specificity for
+target proteins. However, in the case of GA-dependent
+targets, different hormones and environmental stresses
+such as salt can also influence target stability (Achard
+et al. 2003, 2006; Fu and Harberd 2003). The use of SCF-
+based proteolysis as a mechanism of signaling creates
+potential nodes of interactions between signaling mol-
+ecules. For example, specific mutations that conferred
+auxin insensitivity and mapped to a Cullin subunit also
+altered jasmonate sensitivity by attenuating the assem-
+bly of the jasmonate specific F-box protein COI1 into the
+SCF complex (Ren et al. 2005).
+
+These molecular mechanisms of hormone perception
+are now beginning to explain how these small enigmatic
+molecules can coordinate plant growth and develop-
+ment. Plant hormones have never had a clear location of
+synthesis and appear to cause a myriad of responses. For
+these reasons the role of hormones as “limiting factors”
+whose levels control a particular developmental path-
+way has never resonated well and has led to arguments
+that these small molecules actually function more as
+cofactors in balancing the different reactions and meta-
+bolic pathways comprising the overall network driving
+development (Trewavas 1986). The non-Euclidian pat-
+terns of connectivity in a network not only buffer a sys-
+tem but also lead to the capacity to produce the same
+output via different strategies, which fits well with plant
+hormone phenomena. In this respect, that the loss of
+hormone perception does not generally result in overall
+lethality or even a reduction of cell types also supports
+the notion that hormones modulate rather than limit
+particular processes. Being perceived by proteins that
+have additional functions, or acting at central nodes of
+signaling, partly supports a modulating versus control
+and command scenario for plant hormone function.
+
+Whatever the case, it is clear there are differences be-
+tween how plants and animals use organic-based hor-
+mones to organize tissues and organs. Unlike animals,
+plants are essentially an amalgamation of loosely depen-
+dent units that do not require highly centralized centers
+to coordinate growth and development. Because of this,
+different parts of a plant can experience different local
+environments and respond somewhat independently.
+Consequently, rather than having specific organs that
+make and respond to particular hormones, each indepen-
+dent unit produces and responds to many signals. By act-
+ing as factors that bind with high specificity to proteins
+
+2006
+
+GENES & DEVELOPMENT
+
+with additional roles in development, plant hormones
+can add flexibility to signaling pathways that underlie
+the plasticity of development seen in higher plants.
+
+Acknowledgments
+
+P.M. is a participant in the Collaborative Program in Develop-
+mental Biology.
+
+References
+
+Abel, S. and Theologis, A. 1996. Early genes and auxin action.
+
+Plant Physiol. 111: 9–17.
+
+Achard, P., Vriezen, W.H., van Der Straeten, D., and Harberd,
+N.P. 2003. Ethylene regulates Arabidopsis development via
+the modulation of DELLA protein growth repressor func-
+tion. Plant Cell 15: 2816–2825.
+
+Achard, P., Cheng, H., De Grauwe, L., Decat, J., Schoutteten, H.,
+Moritz, T., Van Der Straeten, D., Peng, J., and Harberd, N.P.
+2006. Integration of plant responses to environmentally ac-
+tivated phytohormonal signals. Science 311: 91–94.
+
+Bleecker, A., Estelle, M., Somerville, C., and Kende, H. 1988.
+Insensitivity to ethylene conferred by a dominant mutation
+in Arabidopsis thaliana. Science 241: 1086–1089.
+
+Bogan, A.A., Cohen, F.E., and Scanlan, T.S. 1998. Natural li-
+gands of nuclear receptors have conserved volumes. Nat.
+Struct. Biol. 5: 679–681.
+
+Brandman, O., Ferrell, J.E., Li, R., and Meyer, T. 2005. Inter-
+linked fast and slow positive feedback loops drive reliable
+cell decisions. Science 310: 496–498.
+
+Cancel, J.D. and Larsen, P.B. 2002. Loss-of-function mutations
+in the ethylene receptor ETR1 cause enhanced sensitivity
+and exaggerated response to ethylene in Arabidopsis. Plant
+Physiol. 129: 1557–1567.
+
+Chang, C., Kwok, S.F., Bleecker, A.B., and Meyerowitz, E.M.
+1993. Arabidopsis ethylene response gene ETR1: Similarity
+of product to two-component regulators. Science 262: 539–
+544.
+
+Chen, Y.F., Randlett, M.D., Findell, J.L., and Schaller, G.E.
+2002. Localization of the ethylene receptor ETR1 to the en-
+doplasmic reticulum of Arabidopsis. J. Biol. Chem. 277:
+19861–19866.
+
+Chen, Y.F., Etheridge, N., and Schaller, G.E. 2005. Ethylene
+
+signal transduction. Ann. Bot. (Lond.) 95: 901–915.
+
+Clark, K.L., Larsen, P.B., Wang, X., and Chang, C. 1998. Asso-
+ciation of the Arabidopsis CTR1 Raf-like kinase with the
+ETR1 and ERS1 ethylene receptors. Proc. Natl. Acad. Sci. 95:
+5401–5406.
+
+Clouse, S.D., Langford, M., and McMorris, T.C. 1996. A brassi-
+nosteroid-insensitive mutant in Arabidopsis thaliana exhib-
+its multiple defects in growth and development. Plant
+Physiol. 111: 671–678.
+
+Davies, P.J. 1995. The plant hormones: Their nature, occurrence
+and functions. In Plant hormones: Physiology, biochemistry
+and molecular biology (ed. P.J. Davies), pp. 1–12. Kluwer
+Academic Publishers, Dordrecht, The Netherlands.
+
+Dharmasiri, N., Dharmasiri, S., Jones, A.M., and Estelle, M.
+2003. Auxin action in a cell-free system. Curr. Biol. 13:
+1418–1422.
+
+Dharmasiri, N., Dharmasiri, S., and Estelle, M. 2005a. The F-
+box protein TIR1 is an auxin receptor. Nature 435: 441–445.
+Dharmasiri, N., Dharmasiri, S., Weijers, D., Lechner, E., Ya-
+mada, M., Hobbie, L., Ehrismann, J.S., Jurgens, G., and Es-
+telle, M. 2005b. Plant development is regulated by a family
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+of auxin receptor F box proteins. Dev. Cell 9: 109–119.
+
+Dill, A., Jung, H.S., and Sun, T.-P. 2001. The DELLA motif is
+essential for gibberellin induced degradation of RGA. Proc.
+Natl. Acad. Sci. 98: 14162–14167.
+
+Friedrichsen, D.M., Joazeiro, C.A., Li, J., Hunter, T., and Chory,
+J. 2000. Brassinosteroid-insensitive-1 is a ubiquitously ex-
+pressed leucine-rich repeat receptor serine/threonine kinase.
+Plant Physiol. 123: 1247–1256.
+
+Fu, X. and Harberd, N.P. 2003. Auxin promotes Arabidopsis
+root growth by modulating gibberellin response. Nature 421:
+740–743.
+
+Gao, Z., Chen, Y.F., Randlett, M.D., Zhao, X.C., Findell, J.L.,
+Kieber, J.J., and Schaller, G.E. 2003. Localization of the Raf-
+like kinase CTR1 to the endoplasmic reticulum of Arabi-
+dopsis through participation in ethylene receptor signalling
+complexes. J. Biol. Chem. 278: 34725–34732.
+
+Gray, W.M., del Pozo, J.C., Walker, L., Hobbie, L., Risseeuw, E.,
+Banks, T., Crosby, W.L., Yang, M., Ma, H., and Estelle, M.
+1999. Identification of an SCF ubiquitin–ligase complex re-
+quired for auxin response in Arabidopsis thaliana. Genes &
+Dev. 13: 1678–1691.
+
+Gray, W.M., Kepinski, S., Rouse, D., Leyser, O., and Estelle, M.
+2001. Auxin regulates SCF(TIR1)-dependent degradation of
+AUX/IAA proteins. Nature 414: 271–276.
+
+Higuchi, M., Pischke, M.S., Mahonen, A.P., Miyawaki, K.,
+Hashimoto, Y., Seki, M., Kobayashi, M., Shinozaki, K., Kato,
+T., Tabata, S., et al. 2004. In planta functions of the Arabi-
+dopsis cytokinin receptor family. Proc. Natl. Acad. Sci. 101:
+8821–8826.
+
+Hua, J. and Meyerowitz, E.M. 1998. Ethylene responses are
+negatively regulated by a receptor gene family in Arabidop-
+sis thaliana. Cell 94: 261–271.
+
+Hua, J., Chang, C., Sun, Q., and Meyerowitz, E.M. 1995. Ethyl-
+ene insensitivity conferred by Arabidopsis ERS gene. Sci-
+ence 269: 1712–1714.
+
+Huang, Y., Li, H., Hutchison, C.E., Laskey, J., and Kieber, J.J.
+2003. Biochemical and functional analysis of CTR1, a pro-
+tein kinase that negatively regulates ethylene signaling in
+Arabidopsis. Plant J. 33: 221–233.
+
+Hwang, I. and Sheen, J. 2001. Two-component circuitry in Ara-
+transduction. Nature 413:
+
+cytokinin signal
+
+bidopsis
+383–389.
+
+Inoue, T., Higuchi, M., Hashimoto, Y., Seki, M., Kobayashi, M.,
+Kato, T., Tabata, S., Shinozaki, K., and Kakimoto, T. 2001.
+Identification of CRE1 as a cytokinin receptor from Arabi-
+dopsis. Nature 409: 1060–1063.
+
+Itoh, H., Ueguchi-Tanaka, M., Sato, Y., Ashikari, M., and Mat-
+suoka, M. 2002. The gibberellin signaling pathway is regu-
+lated by the appearance and disappearance of SLENDER
+RICE1 in nuclei. Plant Cell 14: 57–70.
+
+Jang, I.H., Chosa, N., Kim, S.H., Nam, H.J., Lemaitre, B., Ochiai,
+M., Kambris, Z., Brun, S., Hashimoto, C., Ashida, M., et al.
+2006. A Spatzle-processing enzyme required for Toll signal-
+ing activation in Drosophila innate immunity. Dev. Cell 10:
+45–55.
+
+Kato, M., Mizuno, T., Shimizu, T., and Hakoshima, T. 1997.
+Insights into multistep phosphorelay from the crystal struc-
+ture of the C-terminal HPt domain of ArcB. Cell 88: 717–
+723.
+
+Kepinski, S. and Leyser, O. 2004. Auxin-induced SCFTIR1-Aux/
+IAA interaction involves stable modification of the SCF–
+TIR1 complex. Proc. Natl. Acad. Sci. 101: 12381–12386.
+
+———. 2005. The Arabidopsis F-box protein TIR1 is an auxin
+
+receptor. Nature 435: 446–451.
+
+Kieber, J.J., Rothenberg, M., Roman, G., Feldman, K.A., and
+Ecker, J.R. 1993. CTR1, a negative regulator of the ethylene
+
+Hormone perception
+
+response pathway in Arabidopsis, encodes a member of the
+Raf family of protein kinases. Cell 72: 427–441.
+
+Kim, J., Harter, K., and Theologis, A. 1997. Protein–protein in-
+teractions among the Aux/IAA proteins. Proc. Natl. Acad.
+Sci. 94: 11786–11791.
+
+Kinoshita, T., Cano-Delgado, A., Seto, H., Hiranuma, S., Fu-
+jioka, S., Yoshida, S., and Chory, J. 2005. Binding of brassi-
+nosteroids to the extracellular domain of plant receptor ki-
+nase BRI1. Nature 433: 167–171.
+
+Kobe, B. and Kajava, A.V. 2001. The leucine-rich repeat as a
+protein recognition motif. Curr. Opin. Struct. Biol. 11: 725–
+732.
+
+Li, J. and Chory, J. 1997. A putative leucine-rich repeat receptor
+kinase involved in brassinosteroid signal transduction. Cell
+90: 929–938.
+
+Li, J. and Nam, K.H. 2002. Regulation of brassinosteroid signal-
+ing by a GSK3/SHAGGY-like kinase. Science 295: 1299–
+1301.
+
+Li, J., Nagpal, P., Vitart, V., McMorris, T.C., and Chory, J. 1996.
+A role for brassinosteroids in light-dependent development
+of Arabidopsis. Science 272: 398–401.
+
+Li, J., Lease, K.A., Tax, F.E., and Walker, J.C. 2001a. BRS1, a
+serine carboxypeptidase, regulates BRI1 signaling in Arabi-
+dopsis thaliana. Proc. Natl. Acad. Sci. 98: 5916–5921.
+
+Li, J., Nam, K.H., Vafeados, D., and Chory, J. 2001b. BIN2, a new
+in Arabidopsis. Plant
+
+brassinosteroid-insensitive locus
+Physiol. 127: 14–22.
+
+McGinnis, K.M., Thomas, S.G., Soule, J.D., Strader, L.C., Zale,
+J.M., Sun, T.-P., and Steber, C.M. 2003. The Arabidopsis
+SLEEPY1 gene encodes a putative F-box subunit of an SCF E3
+ubiquitin ligase. Plant Cell 15: 1120–1130.
+
+Mizuno, T. 1997. Compilation of all genes encoding two-com-
+ponent phosphotransfer signal transducers in the genome of
+Escherichia coli. DNA Res. 4: 161–168.
+
+Montoya, T., Nomura, T., Farrar, K., Kaneta, T., Yokota, T., and
+Bishop, G.J. 2002. Cloning the tomato curl3 gene highlights
+the putative dual role of the leucine-rich repeat receptor ki-
+nase tBRI1/SR160 in plant steroid hormone and peptide hor-
+mone signaling. Plant Cell 14: 3163–3176.
+
+Nagpal, P., Walker, L.M., Young, J.C., Sonawala, A., Timpte, C.,
+Estelle, M., and Reed, J.W. 2000. AXR2 encodes a member of
+the Aux/IAA protein family. Plant Physiol. 123: 563–574.
+
+Nam, K.H. and Li, J. 2002. BRI1/BAK1, a receptor kinase pair
+
+mediating brassinosteroid signaling. Cell 110: 203–212.
+
+Noguchi, T., Fujioka, S., Choe, S., Takatsuto, S., Yoshida, S.,
+Yuan, H., Feldmann, K.A., and Tax, F.E. 1999. Brassino-
+steroid-insensitive dwarf mutants of Arabidopsis accumu-
+late brassinosteroids. Plant Physiol. 121: 743–752.
+
+O’Malley, R.C., Rodriguez, F.I., Esch,
+
+J.J., Binder, B.M.,
+O’Donnell, P., Klee, H.J., and Bleecker, A.B. 2005. Ethylene-
+binding activity, gene expression levels, and receptor system
+output for ethylene receptor family members from Arabi-
+dopsis and tomato. Plant J. 41: 651–659.
+
+Patton, E.E., Willems, A.R., and Tyers, M. 1998. Combinatorial
+control in ubiquitin-dependent proteolysis: Don’t Skp the
+F-box hypothesis. Trends Genet. 14: 236–243.
+
+Peng, J., Carol, P., Richards, D.E., King, K.E., Cowling, R.J., Mur-
+phy, G.P., and Harberd, N.P. 1997. The Arabidopsis GAI
+gene defines a signaling pathway that negatively regulates
+gibberellin responses. Genes & Dev. 11: 3194–3205.
+
+Qu, X. and Schaller, G.E. 2004. Requirement of the histidine
+kinase domain for signal transduction by the ethylene recep-
+tor ETR1. Plant Physiol. 136: 2961–2970.
+
+Razem, F.A., El-Kereamy, A., Abrams, S.R., and Hill, R.D. 2006.
+The RNA-binding protein FCA is an abscisic acid receptor.
+Nature 439: 290–294.
+
+GENES & DEVELOPMENT
+
+2007
+
+Downloaded from 
+
+genesdev.cshlp.org
+
+ on October 26, 2011 - Published by 
+
+Cold Spring Harbor Laboratory Press
+ 
+
+Chow and McCourt
+
+Reed, J. 2001. Roles and activities of Aux/IAA proteins in Ara-
+
+bidopsis. Trends Plant Sci. 6: 420–425.
+
+Ren, C., Pan, J., Peng, W., Genschik, P., Hobbie, L., Hellmann,
+H., Estelle, M., Gao, B., Peng, J., Sun, C., et al. 2005. Point
+mutations in Arabidopsis Cullin1 reveal its essential role in
+jasmonate response. Plant J. 42: 514–524.
+
+Rodriguez, F.I., Esch, J.J., Hall, A.E., Binder, B.M., Schaller, G.E.,
+and Bleecker, A.B. 1999. A copper cofactor for the ethylene
+receptor ETR1 from Arabidopsis. Science 283: 996–998.
+
+Rogg, L.E., Lasswell, J., and Bartel, B. 2001. A gain-of-function
+mutation in IAA28 suppresses lateral root development.
+Plant Cell 13: 465–480.
+
+Rouse, D., Mackay, P., Stirnberg, P., Estelle, M., and Leyser, O.
+1998. Changes in auxin response from mutations in an AUX/
+IAA gene. Science 279: 1371–1373.
+
+Ruegger, M., Dewey, E., Gray, W.M., Hobbie, L., Turner, J., and
+Estelle, M. 1998. The TIR1 protein of Arabidopsis functions
+in auxin response and is related to human SKP2 and yeast
+Grr1p. Genes & Dev. 12: 198–207.
+
+Russinova, E., Borst, J.W., Kwaaitaal, M., Cano-Delgado, A.,
+Yin, Y., Chory, J., and de Vries, S.C. 2004. Heterodimeriza-
+tion and endocytosis of Arabidopsis brassinosteroid recep-
+tors BRI1 and AtSERK3 (BAK1). Plant Cell 16: 3216–3229.
+Ryan, C.A. and Pearce, G. 2003. Systemins: A functionally de-
+fined family of peptide signals that regulate defensive genes
+in Solanaceae species. Proc. Natl. Acad. Sci. (Suppl. 2) 100:
+14577–14580.
+
+Sakai, H., Hua, J., Chen, Q.G., Chang, C., Medrano, L.J.,
+Bleecker, A.B., and Meyerowitz, E.M. 1998. ETR2 is an
+ETR1-like gene involved in ethylene signaling in Arabidop-
+sis. Proc. Natl. Acad. Sci. 95: 5812–5817.
+
+Sasaki, A., Itoh, H., Gomi, K., Ueguchi-Tanaka, M., Ishiyama,
+K., Kobayashi, M., Jeong, D.H., An, G., Kitano, H., Ashikari,
+M., et al. 2003. Accumulation of phosphorylated repressor
+for gibberellin signaling in an F-box mutant. Science 299:
+1896–1898.
+
+Schaller, G.E. and Bleecker, A.B. 1995. Ethylene-binding sites
+generated in yeast expressing the Arabidopsis ETR1 gene.
+Science 270: 1809–1811.
+
+Scheer, J.M., Pearce, G., and Ryan, C.A. 2003. Generation of
+systemin signaling in tobacco by transformation with the
+tomato systemin receptor kinase gene. Proc. Natl. Acad. Sci.
+100: 10114–10117.
+
+Schena, M. and Davis, R.W. 1994. Structure of homeobox-
+leucine zipper genes suggests a model for the evolution of
+gene families. Proc. Natl. Acad. Sci. 91: 8393–8397.
+
+CYP90, a cytochrome P450, controlling cell elongation and
+de-etiolation in Arabidopsis. Cell 85: 171–182.
+
+Tian, Q. and Reed, J.W. 1999. Control of auxin-regulated root
+development by the Arabidopsis thaliana SHY2/IAA3 gene.
+Development 126: 711–721.
+
+Trewavas, A. 1986. Understanding the control of plant develop-
+ment and the role of growth substances. Aust. J. Plant
+Physiol. 13: 447–457.
+
+Tyers, M. and Jorgensen, P. 2000. Proteolysis and the cell cycle:
+With this RING I do thee destroy. Curr. Opin. Genet. Dev.
+10: 54–64.
+
+Ueguchi-Tanaka, M., Ashikari, M., Nakajima, M., Itoh, H.,
+Katoh, E., Kobayashi, M., Chow, T.Y., Hsing, Y.I., Kitano,
+H., Yamaguchi, I., et al. 2005. GIBBERELLIN INSENSITIVE
+DWARF1 encodes a soluble receptor for gibberellin. Nature
+437: 693–698.
+
+Ulmasov, T., Murfett, J., Hagen, G., and Guilfoyle, T.J. 1997.
+Aux/IAA proteins repress expression of reporter genes con-
+taining natural and highly active synthetic auxin response
+elements. Plant Cell 9: 1963–1971.
+
+Wang, X., Goshe, M.B., Soderblom, E.J., Phinney, B.S., Kuchar,
+J.A., Li, J., Asami, T., Yoshida, S., Huber, S.C., and Clouse,
+S.D. 2005. Identification and functional analysis of in vivo
+the Arabidopsis BRASSINO-
+phosphorylation sites of
+STEROID-INSENSITIVE1 receptor kinase. Plant Cell 17:
+1685–1703.
+
+Wilkins, A.S. 1995. Moving up the hierarchy: A hypothesis on
+the evolution of a genetic sex determination pathway. Bioes-
+says 17: 71–77.
+
+Yamada, H., Suzuki, T., Terada, K., Takei, K., Ishikawa, K.,
+Miwa, K., Yamashino, T., Mizuno, T. 2001. The Arabidopsis
+AHK4 histidine kinase is a cytokinin binding receptor that
+transduces cytokinin signals across the membrane. Plant
+Cell Physiol. 42: 1017–1023.
+
+Yanagisawa, S., Yoo, S.D., and Sheen, J. 2003. Differential regu-
+lation of EIN3 stability by glucose and ethylene signalling in
+plants. Nature 425: 521–525.
+
+Yin, Y., Wang, Z.Y., Mora-Garcia, S., Li, J., Yoshida, S., Asami,
+T., and Chory, J. 2002. BES1 accumulates in the nucleus in
+response to brassinosteroids to regulate gene expression and
+promote stem elongation. Cell 109: 181–191.
+
+Zhou, A. and Li, J. 2005. Arabidopsis BRS1 is a secreted and
+active serine carboxypeptidase. J. Biol. Chem. 280: 35554–
+35561.
+
+Shiu, S.H. and Bleecker, A.B. 2001. Receptor-like kinases from
+Arabidopsis form a monophyletic gene family related to ani-
+98:
+mal
+10763–10768.
+
+receptor kinases. Proc. Natl. Acad.
+
+Sci.
+
+———. 2003. Expansion of the receptor-like kinase/Pelle gene
+family and receptor-like proteins in Arabidopsis. Plant
+Physiol. 132: 530–543.
+
+Silverstone, A.L., Ciampaglio, C.N., and Sun, T. 1998. The Ara-
+bidopsis RGA gene encodes a transcriptional regulator re-
+pressing the gibberellin signal transduction pathway. Plant
+Cell 10: 155–169.
+
+Steber, C.M., Cooney, S.E., and McCourt, P. 1998. Isolation of
+the GA-response mutant sly1 as a suppressor of ABI1-1 in
+Arabidopsis thaliana. Genetics 149: 509–521.
+
+Suzuki, T., Miwa, K., Ishikawa, K., Yamada, H., Aiba, H., and
+Mizuno, T. 2001. The Arabidopsis sensor His-kinase, AHk4,
+can respond to cytokinins. Plant Cell Physiol. 42: 107–113.
+Szekeres, M., Nemeth, K., Koncz-Kalman, Z., Mathur, J., Kaus-
+chmann, A., Altmann, T., Redei, G.P., Nagy, F., Schell, J.,
+and Koncz, C. 1996. Brassinosteroids rescue the deficiency of
+
+2008
+
+GENES & DEVELOPMENT
+
+

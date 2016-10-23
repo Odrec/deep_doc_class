@@ -1,0 +1,35 @@
+Universit¨at Osnabr¨uck
+
+Wintersemester 2014/15
+
+Funktionalanalysis
+
+11. Aufgabenblatt
+
+1. Aufgabe: Stetige Linearformen
+Sei X normiert und f : X → K linear, f (cid:54)= 0. Zeigen Sie die ¨Aquivalenz folgender
+Aussagen:
+
+(a) f ist stetig.
+(b) N (f ) ist ein abgeschlossener Unterraum von X.
+(c) N (f ) liegt nicht dicht in X.
+
+2. Aufgabe: Der Dualraum erkennt abgeschlossene Unterr¨aume
+Sei X normiert, A ⊆ X eine Teilmenge und x ∈ X. Zeigen Sie: x liegt genau dann im
+Abschluß der linearen H¨ulle von A (also x ∈ (cid:104)A(cid:105)), wenn f (x) = 0 f¨ur jedes f ∈ X(cid:48) mit
+f (A) = 0.
+
+3. Aufgabe: Kompaktheit
+Zeigen Sie dass der Hilbertquader C := {t = (tj) ∈ (cid:96)2 : |tj| ≤ 1/j} kompakt ist.
+
+deﬁniert durch V f (t) :=(cid:82) t
+
+4. Aufgabe: Allgemeiner Volterraoperator
+Sei k : [0, 1] × [0, 1] → K stetig und betrachte den Volterraoperator V : C[0, 1] → C[0, 1],
+0 k(t, s)f (s) ds, f ∈ C[0, 1]. Zeigen Sie dass V ein kompakter
+
+Operator ist und bestimmen Sie das Spektrum von V .
+
+Abgabe: 5. Februar (bis 12 Uhr) im Postfach 35
+
+

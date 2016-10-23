@@ -1,0 +1,293 @@
+Self Study V - Caroline Graf
+
+2014/01/05
+
+Exercise 1
+
+The Role of Research in Psychology, Part IV: The problems of generalisation and decision-making in
+research: Chance findings and sample size
+
+• Overview
+
+◦ In psychology: Generalisation because striving for universalism
+
+▪ BUT: How to draw the limits to whether a finding is universal/can be replicated or was just
+
+a matter of chance?! → sampling procedures and statistical significance
+
+◦ Psychological research is concerned with samples of people rather than with individuals
+
+◦ Problem with sample population: usually just most convenient population (e.g. Psy students) →
+
+no random sampling from specified population (sample population biased)
+
+◦ generalisation: universalism = assumption that behavioral effects found in experiments are the
+
+same for all people → “no need for ensuring that sample is representative”
+
+▪ → overgeneralization?!
+
+◦ statistical analysis = “how safe” is it to generalize from a given sample data set to all people?
+
+◦ General  procedure:  Assume that the H0 was true and then comparing found data to effect
+
+claimed by H0
+
+◦ With an alpha = 5  percent:  the  probability of a finding being due to chance when the null
+hypothesis is in fact true is 5 times out of 100, or less. Results that meet this criterion are called
+statistically significant, otherwise they are statistically non-significant
+
+◦ sample size is important (the bigger → the more likely that statistically significant)
+
+•
+
+Introduction
+
+◦ Are we justified to make more general claims about findings of our research beyond research
+
+itself?
+
+◦ Three themes:
+
+▪ lack of limitations placed on generalisation by the universalism of psychological theory.
+
+▪ limitations placed on generalisation by the sampling methods used.
+
+▪ limitations placed on generalisation by the structures of statistical significance testing.
+
+◦ issues such as the generalisability of data are really aspects of process of decision-making that a
+
+researcher makes throughout their research
+
+• Universalism
+
+◦ characteristic of psychology: tendency towards universalism
+
+◦ universalism: The principles of psychology will not vary; psychological findings will apply
+anywhere to anybody irrespective of social status, culture... → finding is true of all people
+(there are exceptions: in rare cases, it's implied that findings are only for a certain population)
+“psychological principles = laws of human nature”
+
+◦ historically: also generalisation from animals to humans (Pavlov, Skinner)
+
+◦ only recently: critique on universalism
+
+◦ Nowadays: psychologists likely to be aware of the problem but, nevertheless, this awareness is
+not built into their practices for designing their research studies: Universalism operates covertly
+
+•
+
+Sampling and generalisation
+
+◦ Many   criticisms   have   been   made   of   psychology   for   its   restricted   approach   to   sampling
+
+(“psychological research = psychology of psychology students”)
+
+◦ How big should a sample be to allow for generalisability?
+
+◦ How should samples be selected in order to allow for generalisability?
+
+◦ There is a variability (differences between people and within people) between all individuals:
+
+→ need for statistics and sampling designs
+
+◦ sample size partially dependent on possible consequences of research 
+
+◦ larger samples are more likely to demonstrate a trend in the study if there is one in reality →
+
+psychologists believe that this is likely to result in greater precision in their estimates
+
+◦ sample size depends on whether we simply want to find if two parameters correlate/have a
+
+relationship or if we want to find the exact/”true” size of that relationship
+
+◦ convenience samples = not random samples of groups of people that are relatively easy for the
+
+researcher to get to take part in their study
+▪ most find this acceptable for majority of psychological research
+▪ but some argue that this procedure is presumptious
+
+◦ universalism = psychologist's tendency to generalise beyond the population which would be
+
+defined by the research sample.
+▪ At what time should generalisation stop?!
+▪ distinction between the  
+
+ population of interest  
+ 
+
+ 
+sample of participants
+
+ and the population defined clearly by the
+
+▪ appropriateness of sampling methods?!
+
+◦ randomisation is used it is in the form of random allocation to the conditions of an experiment
+
+or the sequence of taking part in the conditions BUT not for random sampling
+
+◦ Random sampling is considerably undermined by poor participation rates (Participation rates refer to
+
+the proportion of people who take part in the research compared with the number asked to take part in the research)
+
+◦ Systematic errors!!! by unappropriate sampling methods/not random samples
+
+•
+
+Statistics and generalisation
+
+◦ Statistical techniques help researchers explore patterns in their data
+
+◦ A statistically significant finding is one that is large enough that it is unlikely to be caused by
+
+chance fluctuations/noise
+
+◦ convention: alpha = 5 percent level : finding as big as ours can be expected to occur by chance
+on 5 or fewer occasions if we tested that finding on 100 occasions (assuming that the null
+hypothesis is in fact true)
+
+◦ A finding or effect that is likely to occur on more than 5 out of 100 times by chance is described
+
+as being statistically non-significant or not statistically significant
+
+◦ Statistical significance testing merely refers to the question whether the trend is sufficiently
+large in the data so that it is unlikely that it could be the result of chance factors due to the
+variability inherent in sampling, that is, there is little chance that the null hypothesis of no trend
+or difference is correct
+
+◦ larger sample → higher probability to get significant results (very few H0 are true when dealing
+
+with large samples)
+
+◦ the critical value of 5 per cent or .05 or less is an arbitrary cut-off point, BUT nevertheless one
+
+widely accepted
+
+◦ more conservative alpha: smaller than 0.05
+◦ more liberal: bigger than 0.05
+
+• Directional and non-directional hypotheses (again)
+
+◦ Researchers usually have an idea as to what the outcome of their experiments is or at least in
+
+what direction the effect/trend is going
+
+▪ → often research hypotheses are expressed in a directional form 
+
+◦ Research works best when the researcher articulates coherent, factually based and convincing
+
+grounds for their expectations
+
+◦ Difference between basic hypotheses/expectations/assumptions and STATISTICAL hypotheses
+◦ for   directional  statistical  hypotheses  there  must   be   strong  and   convincing  empirical   and/or
+theoretical evidence in order for a directional hypothesis to be offered (plus researchers must be
+ignorant of their data before making the prediction)
+▪ very exacting requirements
+▪ one-tailed significance testing
+▪ a directional hypothesis is supported by weaker data than would be required by the non-
+
+directional hypothesis (5% all on one side and not split to 2 x 2,5%)
+•
+
+The only good justification for accepting a weaker trend is that there is good reason to think that
+it is correct
+
+◦ in non-directional hypothesis-testing: 5% is split in positive and negative direction 
+◦ main   assumption   of   hypothesis-testing:   given   that   the   null   hypothesis   is   true:   what's   the
+
+probability of obtaining each of the possible outcomes (by possible sampling)
+
+•
+
+Similarity between measures of effect and association
+
+◦ most   common   statistical   analysis   techniques   include   the   t-test   and   the   Pearson   correlation
+
+coefficient
+
+◦ t-tests: either calculate the standard error of the mean and or the standard error of the difference
+
+between two means (mean(s) relative to the variability in the data)
+
+▪ the bigger t, the bigger the effect (in order to be significant: t must be bigger than 2.00)
+
+◦ the Pearson’s correlation shows the size of an association between two quantitative variables (it
+varies from -1 to 1) (association between two quantitative variables)(=point biserial correlation)
+
+◦ there is an interchangeability of the concepts of correlation and tests of difference (t-tests):
+
+▪   we can speak of a difference between two groups or alternatively of a correlation or an
+
+association between group membership and another variable
+
+•
+
+Sample size and size of association
+
+◦ how big should a sample  be in order to see whether an effect or association is statistically
+
+significant?
+
+◦ The bigger the correlation is, the smaller can the sample be, for the effect to be significant
+◦ size of an association/correlation can be described in words and in numbers
+◦ coefficient   of   determination   =   squared   correlation   value   (proportion   of   the   variation   in   a
+
+variable that is shared with the variation in another variable.)
+
+◦ it is helpful to consider the amount of variation explained by a correlation and not simply the
+
+numerical size → to what extent does a certain variable explain a particular kind of behavior 
+
+◦ we   should   be  cautious   about  the   routine  application   of  labels  to  correlations   or  any  other
+research   result   →   measures   are   not   perfectly  reliable   or   valid   measures   of   what   they  are
+measuring → usually to underestimate the true or real size of the association
+
+◦ correction for attenuation: simple statistical procedure for taking into account the unreliability
+
+of the measures
+
+◦ how make up mind on what association/effect to find?
+
+▪ Previous research
+▪ small pilot study prior to actual study (can calculate number of participants needed to make
+
+trend in pilot study significant)
+
+▪ decide what size of relationship/effect is of interest (very small effects are significant in very
+
+large samples)
+
+◦ purely   statistical   approaches   to   generalisation   of   research   findings   are   something   of   an
+impossibility → it's a decision-making process and the researcher needs to keep in mind a
+number of factors (such as the nature of the sampling, the adequacy of each of the measures
+taken, and an assessment of the value or worth of the findings for the purpose for which they
+were intended)
+
+Exercise 2: Raw data file of all participants
+
+check!
+
+Exercise 3: Create ideal figure:
+
+Exercise 4: Create folder for Data Analysis. Include the raw data file and commit
+stage. Document your commit message in the PDF
+
+C:\Users\Caroline\Documents\GitHub [master +2 “0 -0 !] git add Data_analysis
+C:\Users\Caroline\Documents\GitHub [master]> git commit -m “Added all data files in one file”
+[master (root-commit) 61f1b06] Added all data files in one file
+  1 file changed, 1 insertion(+)
+  create mode 160000 Data_analysis 
+C:\Users\Caroline\Documents\GitHub [master]> git log
+commit 61f1b06fce966f84e430a24aaf413d5633e525b0
+Author: 
+Date: 
+
+Caroline Graf <cgraf@uos.de>
+Fri Jan 16 21:09:34 2015 +0100
+
+Added all data files in one file
+
+C:\Users\Caroline\Documents\GitHub [master]>
+
+

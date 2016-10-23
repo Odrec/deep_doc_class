@@ -1,0 +1,812 @@
+ 
+
+Universität Osnabrück 
+Fachbereich Physik 
+Arbeitsgruppe Physikdidaktik 
+
+ 
+
+ 
+
+Name: Simone Grimsmann 
+Kurzunterricht Nr.: 29 
+
+Experimentieren im Physikunterricht  
+WieSe 2015 / 2016: Elektrizitätslehre 
+
+ 
+Kurzbeschreibung des physikalischen Sachverhalts 
+
+Einführen und Erklären des Begriffs „Effektivwert“ für Wechselspannung und Wechselströme. 
+Darauffolgend bei sinusförmigen Spannungsverlauf zeigen, dass die Amplitude um einen Faktor 
+„Wurzel zwei“ größer ist als die Amplitude einer Gleichspannung. 
+ 
+Experimentierform 
+
+Lehrerversuch/ Schülerversuch mit Unterstützung 
+ 
+Bedarfsliste 
+
+Versuchsskizze(n) 
+
+Einstiegsversuch: 
+ 
+-  Oszilloskop 
+-  Sinus-
+
+Spannungsgenerator 
+(Wechselspannung; 
+Amplitude und 
+Frequenz regelbar) 
+
+-  Spannungsquelle 
+(Gleichspannung) 
+
+-  Zwei Voltmeter 
+
+(optional) 
+
+-  Zwei Glühlampen (6V, 
+
+3W)  
+
+-  2 Glühlampen-
+
+fassungen 
+
+-  Backpapier (optional) 
+-  8 Kabel 
+-  2 Oszilloskop-Kabel 
+-  Dokumentenkamera 
+
+(optional) 
+
+ 
+ 
+ 
+Schülerversuch (vorne): 
+ 
+Derselbe Aufbau wie 
+oben; Ausschalten der 
+Voltmeter, da nun nicht 
+mehr relevant. 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+Identische Versuchsskizze 
+
+1 
+
+Einordnung der 
+Stunde/Vorwissen 
+Gymnasiale Oberstufe (Klasse 11) 
+ 
+Die Schülerinnen und Schüler… 
+ 
+-  haben schon oft mit Gleich- 
+
+- 
+
+- 
+
+spannung gearbeitet. 
+kennen  sinusförmigen 
+Spannungsverlauf einer 
+Wechselspannung. 
+kennen sich mit den 
+verwendeten Generatoren und 
+dem Oszilloskop aus. 
+
+-  wissen, dass die Helligkeit der 
+
+Ziele der Stunde 
+
+Die Schülerinnen und Schüler… 
+ 
+-  erklären den Effektivwert einer Wechselspannung als den 
+
+Wert einer Gleichspannung, welche an einem gleichen 
+Widerstand in gleicher Zeit die gleiche Energie liefert. 
+
+-  ermitteln für einen sinusförmigen Spannungsverlauf einer 
+
+Wechselspannung, dass die Amplitude (also der Maximalwert) 
+um einen Faktor Wurzel zwei größer beziehungsweise 1,4-
+mal so groß ist, als die Amplitude einer Gleichspannung bei 
+gleichem Effektivwert. 
+
+- 
+
+- 
+
+Lampe etwas über ihren 
+Energiestrom aussagt. 
+kennen die physikalischen 
+Größen Leistung und 
+elektrische Energie. 
+kennen Lösungsansätze, um 
+festzustellen, ob ein 
+Zusammenhang zwischen zwei 
+Werten besteht 
+(Proportionalität, Quotienten 
+Bildung etc.) 
+
+ 
+Alltagsbezug 
+
+Mit sinusförmiger 
+Wechselspannung hat jeder im 
+Alltag zu tun, wenn er ein Gerät an 
+einer Steckdose betreibt. Jeder 
+Schüler benennt wohl die 
+Spannung, die aus der Steckdose 
+kommt, mit 230V. Dass sie dabei 
+aber von einem Effektivwert reden 
+ist ihnen nicht klar. Der 
+Maximalwert der Spannung liegt 
+ungefähr bei 325 V. 
+Außerdem zeigen die meisten in 
+der Schule verwendeten 
+Messgeräte für 
+Wechselspannungen und -ströme 
+einen konstanten Wert an und 
+somit auch einen Effektivwert. 
+
+Tipps für den Versuch 
+
+-  Raum sollte abgedunkelt werden beim Schülerversuch 
+-  Lampenschirme aus Backpapier helfen die 
+
+Helligkeitsunterschiede zwischen den Lampen besser zu 
+erkennen. Diese sollten dann aber den gleichen Durchmesser 
+und die gleiche Höhe besitzen. 
+
+-  Bei hohen Spannungen (circa ab 3,5V) leuchten die Lampen 
+
+schon sehr hell und die Annäherung der Helligkeiten der 
+Lampen fällt zunehmend schwerer. 
+
+-  Eine Dokumentenkamera macht den Bildschirm des 
+
+Oszilloskops für die Klasse gut sichtbar. 
+
+-  Es muss eine glatte Gleichspannung verwendet werden. 
+-  Voltmeter zur anfänglichen Verdeutlichung von Wechsel- und 
+Gleichspannung. (Noch vor dem richtigen Versuch; Daten im 
+Versuch alle auf dem Oszilloskop ersichtlich) 
+
+ 
+
+2 
+
+ 
+
+ 
+
+Durchführung des Kurzunterrichts 
+Kurze Ansage zur Einordnung der Stunde und dem Vorwissen der Klasse. 
+ 
+Begrüßung: Willkommen zur heutigen Stunde! 
+Hier vorne könnt ihr schon den Versuchsaufbau sehen mit dem wir heute arbeiten wollen. 
+Damit ihr den Versuchsaufbau besser verstehen könnt, habe ich ihn hier auch nochmal auf 
+Folie für euch vorbereitet. (OHP einschalten) Ihr seht hier zwei Stromkreise mit zwei 
+identischen Glühlampen. Doch in diesem Stromkreis wird die Lampe mit Wechselspannung 
+betrieben und hier mit Gleichspannung. Diese Lampenschirme helfen euch später die 
+Helligkeit der Lampe besser einzuschätzen. Bei beiden Stromkreisen messen wir noch die 
+Spannung mit diesen Voltmetern. Durch das Oszilloskop können wir uns später die 
+Spannungsverläufe anzeigen lassen und durch die Dokumentenkamera könnt ihr nachher 
+alles besser mitverfolgen. (Währenddessen wird alles am Versuchsaufbau gezeigt.) Ok, dann 
+fangen wir mal an! 
+(Einschalten der Spannungsquellen, sodass beide Lampen gleich hell leuchten.) 
+ 
+So, beschreibt mir doch bitte einmal was ihr beobachten könnt. 
+ 
+Schülerantwort A: Die Lampen leuchten gleich hell. 
+Schülerantwort B: Die Voltmeter zeigen beide den gleichen Wert. 
+ 
+Ja, gut. Bezieht doch nun bitte noch die Energie mit ein. 
+ 
+Schülerantwort A: In beiden Stromkreisen ist dieselbe Energie. 
+Schülerantwort B: Die Lampen leuchten gleich hell, also wird bei dem einen Stromkreis genauso viel 
+Energie umgesetzt wie bei dem anderen. 
+ 
+Bei Antwort A: Kannst du begründen, wie du darauf kommst? 
+ 
+Schülerantwort A: Die Lampen leuchten gleich hell. [Danach weiter wie bei Antwort B] 
+ 
+Bei Antwort B: Richtig also wissen wir: Je größer die Energie, desto heller leuchtet die Lampe. 
+Und leuchten beide gleich hell, so ist der Energieumsatz auch gleich. 
+ 
+Skizziere bitte nun einmal jemand hier vorne auf der Folie, wie die Spannungsverläufe von 
+Gleichspannung und Wechselspannung aussehen. (Falls niemand möchte, wird jemand 
+ausgewählt.) 
+Gut, ja so ist es richtig. Aber erklärt mir doch bitte, warum wir hier einen konstanten Wert am 
+Voltmeter angezeigt bekommen, obwohl es doch ein sinusförmiger Spannungsverlauf ist. 
+ 
+Schülerantwort A: Da sind die Schwankungen nicht sichtbar, da die Spannung sich viel zu schnell 
+verändert. 
+Schülerantwort B: Die Frequenz ist zu hoch, als das wir die Schwankungen sehen könnten. 
+Keine Antwort. 
+ 
+Bei Antwort A: Genau, die Frequenz ist einfach zu hoch. 
+Bei Antwort B: Richtig. 
+Bei Keiner Antwort: Ok, dann dreh ich mal die Frequenz stark runter, dann könnt ihr sehen was 
+passiert.  
+(Frequenz wird nach allen Antworten einmal am Sinusgenerator so niedrig [0,1 Hz] eingestellt, dass 
+der Zeiger des Voltmeters schwankt und die Lampe unterschiedlich leuchtet.) Es gibt hier also 
+wirklich diese Schwankungen wie in der Skizze, doch durch die Trägheit sehen wir diese bei 
+hohen Frequenzen nicht. In dieser Stunde geht es jedoch um den Wert, welchen das 
+Voltmeter anzeigt, wenn die Frequenz wieder höher ist, wie zum Beispiel bei 50 Hz. 
+(Zurückstellen der Frequenz.) Denkt daran, dass dieser Wert genauso groß ist, wie der Wert für 
+die Gleichspannung, wenn die Lampen gleich hell leuchten. Lasst uns nun noch einen 
+Versuch hier vorne durchführen. Dafür bekommt ihr dieses Arbeitsblatt, in das ihr eure 
+Messergebnisse eintragen könnt. (Austeilen des Arbeitsblatts.) Ich brauche nun zwei Freiwillige. 
+
+3 
+
+ 
+
+ 
+
+Einer der die vorgegebene Gleichspannung einstellt und jemand, der die Amplitude der 
+Wechselspannung so einstellt, dass die Lampen wirklich gleich hell leuchten. Diejenigen, die 
+in der Nähe der Fenster sitzen, machen bitte einmal die Rollos herunter. (Zwei Freiwillige 
+melden sich oder zwei Personen werden so ausgewählt. Ein Schüler der vorne sitzt bekommt die 
+Folie vom OHP, um die Messergebnisse dort einzutragen.) 
+(Einschalten des Oszilloskops und der Dokumentenkamera; falls Fragen bei den Durchführenden 
+bestehen werden diese erläutert.) 
+[Durchführung des Versuchs] 
+Diejenigen, die hier vorne nicht den Versuch durchführen, können ja schon einmal den 
+Maximalwert der Spannung bestimmen. Dafür muss nur der Wert, der von Spitze zu Spitze 
+aufgenommen wurde, halbiert werden. 
+ 
+Danke, dass ihr beiden das Experiment durchgeführt habt. Ihr könnt euch wieder setzen. 
+Vergleicht doch nun einmal den Wert der Gleichspannung mit dem Maximalwert. 
+ 
+Schülerantwort A: Der Maximalwert ist höher als der Wert der Gleichspannung. 
+Keine Antwort. 
+ 
+Bei keiner Antwort: Ihr könnt hier erkennen, dass der Maximalwert höher ist als die 
+Gleichspannung. 
+Bei Antwort A: Gut erkannt. 
+ 
+Wie wir vorher ja festgestellt haben ist der Wert der Gleichspannung auch am Voltmeter der 
+Wechselspannung angezeigt worden. Diesen Wert nennt man bei der Wechselspannung 
+Effektivwert. Der Effektivwert gibt den Wert der Gleichspannung an, welche an einem gleichen 
+Widerstand in gleicher Zeit die gleiche Energie liefert. (Dieser Satz wird an der Tafel stehen und 
+kann mit auf das Arbeitsblatt übertragen werden.) Diesen Satz könnt ihr einmal auf eurem 
+Arbeitsblatt eintragen. 
+Nun schaut euch bitte mal die Aufgabe 3 auf dem Arbeitsblatt an. Dort hat eine andere 
+Schülergruppe den gleichen Versuch durchgeführt, sich aber auch nochmal den Effektivwert 
+am Oszilloskop anzeigen lassen. Nennt mir doch bitte eine Möglichkeit, wie wir einen 
+Zusammenhang zwischen den beiden nachprüfen können und was wir somit in die letzte 
+offene Zeile eintragen müssen. 
+ 
+Schülerantwort A: Wir müssen die beiden Werte irgendwie teilen. 
+Schülerantwort B: Es muss der Maximalwert durch den Effektivwert geteilt werden. 
+Schülerantwort C: Der Effektivwert muss durch den Maximalwert genommen werden. 
+Keine Antwort. 
+ 
+Bei Antwort A: Genau, wir müssen den Maximalwert durch den Effektivwert teilen, um 
+aussagen zu können um welchen Faktor die Amplitude der Wechselspannung größer ist als 
+bei einer Gleichspannung. 
+Bei Antwort B: Richtig, wir müssen den Quotienten der beiden Werte bilden, damit wir sagen 
+können, um welchen Faktor die Amplitude der Wechselspannung größer ist als bei der 
+Gleichspannung. 
+Bei Antwort C: Ne, genau anders herum. Wir müssen den Maximalwert durch den Effektivwert 
+teilen, um aussagen zu können um welchen Faktor die Amplitude der Wechselspannung 
+größer ist als bei einer Gleichspannung. 
+ 
+[Ausrechnen der Werte, Nennen der Ergebnisse ~ 1,4] 
+ 
+Richtig, es sollte überall ungefähr 1,4 herauskommen. Um den Maximalwert der 
+Wechselspannung zu bestimmen, muss man also einfach den Effektivwert vom Voltmeter mit 
+1,4 multiplizieren. In der Literatur ist nicht 1,4 angegeben, sondern genauer Wurzel 2. Wie man 
+mathematisch darauf kommt werden wir in den nächsten Stunden erarbeiten. Dann werdet ihr 
+auch sehen, dass genau das gleiche auch für die Wechselströme gilt. Als Hausaufgabe 
+überlegt euch doch mal, ob der Wert 230 V, dem ihr im Haushalt oft begegnet, nun ein 
+Effektivwert ist oder ein Maximalwert. 
+
+4 
+
+ 
+
+Weitere Anmerkungen zur Unterrichtsplanung und -durchführung 
+Lernschwierigkeiten der Schüler (Schülervorstellungen) 
+ 
+Anmerkungen zur Unterrichtsplanung und –durchführung: 
+ 
+Diesen Kurzunterricht könnte man sowohl sehr mathematisch mit Herleitungen und Graphen 
+gestalten oder sich qualitativ an den Effektivwert heranarbeiten. Ich habe mich für die zweite Variante 
+entschieden. Da der Effektivwert für die Klasse neu ist, kann er nur vom Lehrer eingeführt werden. 
+Deswegen ist der Sprechanteil der Lehrperson leider höher. Auf den Effektivwert wird kleinschrittig 
+am Anfang hingearbeitet. Die genaue mathematische Herleitung kann nach diesem Unterricht immer 
+noch durchgegangen werden. Am Anfang wird schnell von mir selbst mit Hilfe einer Schaltskizze und 
+Zeigen am Versuch der Aufbau beschrieben, um mehr Zeit für den weiteren Verlauf zu haben. 
+Bevor ich die Schülerinnen und Schüler mit dem Schülerversuch anfangen lasse, bitte ich einen 
+Schüler die Spannungsverläufe, die der Klasse bekannt sein sollten, noch mal auf Folie aufzeichnen. 
+Es ist gut immer mal wieder die Schülerinnen und Schüler in Bewegung und nach vorne kommen zu 
+lassen. So beteiligen sie sich aktiver. 
+Für eine bessere Sicht auf das Oszilloskop beim Schülerversuch wird eine Dokumentenkamera 
+benutzt. Dadurch, dass jeder, durch das vom Beamer auf die Wand projizierte Bild, alles mitverfolgen 
+kann, sind die Schülerinnen und Schüler auch motivierter mitzumachen. Auch der abgedunkelte 
+Raum trägt zur Aufmerksamkeit der Schülerinnen und Schüler bei. 
+Beim Oszilloskop ist extra der gleiche Nullpunkt für die beiden Spannungsverläufe gewählt, damit sie 
+vergleichbar sind. Außerdem werden beim Schülerversuch die Voltmeter ausgeschaltet, damit, 
+jedenfalls bei der Wechselspannung, dort von den Schülern nicht geschummelt werden kann, wenn 
+sie versuchen die gleiche Helligkeit der Glühlampen einzustellen. Für die Auswertung habe ich mich 
+entschieden den Quotienten zu bestimmen, da so schnell und einfach ein gutes Ergebnis erzielt wird. 
+In der gymnasialen Oberstufe sollte allen langsam bewusst sein, was so ein Quotient aussagt. 
+In diesem Unterricht gibt es auch mehrere Konfliktsituationen, die bei den Schülerinnen und Schülern 
+auftreten können (z.B. Warum schwankt der Zeiger vom Voltmeter bei Wechselspannung nicht?). 
+Auch dies soll die Motivation der Schülerinnen und Schüler fördern. 
+ 
+ 
+Lernschwierigkeiten der Schüler (Schülervorstellungen) 
+ 
+In diesem Kurzunterricht sind an sich keine Schülervorstellungen direkt betroffen. Natürlich sollte 
+trotzdem auf die korrekte Verwendung der Begriffe Spannung, Energie und Strom geachtet werden. 
+Es wird hier aber mit dem Effektivwert ein neuer Begriff eingeführt. Dieser sollte unbelastet von 
+Schülervorstellungen sein. Durch die am Ende gestellte Hausaufgabe lernen die Schüler noch, dass 
+der Wert 230V, den sie alle kennen, auch ein Effektivwert ist. 
+ 
+ 
+
+ 
+Quellen 
+ 
+Schulbücher: 
+-  DORNBADER: PHYSIK 11/12; Professor Dr. F. Bader, 2000, Schroedel Verlag 
+-  Cornelsen: PHYSIK Oberstufe Gesamtband, 2008 
+-  W. Kuhn: Physik Band II 2. Teil: Klasse 12/13; Braunschweig, 1990; Westermann 
+
+- 
+
+Schulbuchverlag GmbH 
+J. Grehn, J. Krause: Metzler Physik; 1998, Schroedel Verlag 
+ 
+
+Internetquellen: 
+-  http://www.leifiphysik.de/themenbereiche/wechselstromtechnik/ausblick [Stand: 12.01.16] 
+ 
+
+ 
+
+ 
+
+5 
+
+ 
+
+ 
+
+Weitere Versuchsbeschreibungen und -ergebnisse aus dem Praktikum 
+ 
+Versuch 1: Helligkeit der Lampen bei Gleich- und Wechselspannung 
+ 
+Materialliste: 
+ 
+-  Oszilloskop 
+-  Spannungsquelle (Wechselspannung) 
+-  Spannungsquelle (Gleichspannung) 
+-  Zwei Voltmeter (optional; nur zur Verdeutlichung) 
+-  Zwei Lampen (6V, 3W)  
+-  Backpapier (optional; Helligkeit der Lampen leichter ersichtlich) 
+-  8 Kabel 
+-  2 Oszilloskop-Kabel 
+-  Dokumentenkamera (optional; für bessere Sicht der Klasse) 
+ 
+Bild: 
+ 
+
+ 
+
+ 
+Durchführung: 
+ 
+Es wird jeweils eine Lampe (6V, 3W) mit Gleichspannung und mit Wechselspannung betrieben, 
+sodass beide gleich hell leuchten. Zuerst kann am Sinusgenerator eine sehr niedrige Frequenz 
+eingestellt werden und somit am Voltmeter einmal der schwankende Zeiger bei Wechselspannung 
+gezeigt werden und auch wie die Lampe mal heller und mal dunkler leuchtet. Danach wird auf 50 Hz 
+hochgeregelt, da dies auch die Frequenz aus der Steckdose ist. Der Zeiger schwankt nun nicht mehr 
+und die Lampe leuchtet konstant. Nun sind die Voltmeter nicht weiter relevant, da das Oszilloskop 
+alles Wesentliche anzeigt und können ausgeschaltet werden. Nun werden bei der Gleichspannung 
+bestimmte Werte (1,5V; 2,0V; 2,5V; 3,0V…) eingestellt. Der Raum wird abgedunkelt und es wird 
+versucht die Lampe im Stromkreis mit der Wechselspannung auf die gleiche Helligkeit zu bringen. 
+Nun wird der Spitze-Spitze-Wert (Uss) vom Oszilloskop notiert und halbiert um auf den Maximalwert 
+der Spannung zu kommen (Umax). 
+ 
+ 
+ 
+
+6 
+
+ 
+
+ 
+Messwerte aus dem Labor: 
+
+UGleichspannung 
+in V 
+Uss in V 
+Ueff in V 
+Umax(=Uss/2) 
+in V 
+Umax/Ueff 
+
+1,50 
+
+2,00 
+
+2,50 
+
+3,00 
+
+3,50 
+
+4,00 
+
+4,50 
+
+5,00 
+
+4,16 
+1,48 
+2,08 
+
+5,60 
+2,02 
+2,80 
+
+7,12 
+2,57 
+3,56 
+
+8,72 
+3,14 
+4,36 
+
+9,84 
+3,53 
+4,92 
+
+11,4 
+4,14 
+5,70 
+
+12,7 
+4,57 
+6,35 
+
+14,4 
+5,22 
+7,20 
+
+1,41 
+
+1,39 
+
+1,39 
+
+1,39 
+
+1,39 
+
+1,37 
+
+1,39 
+
+1,38 
+
+ 
+ 
+Deutende Beobachtung: 
+ 
+Durch diesen Versuch wird der Effektivwert deutlich und wozu dieser dient. Des Weiteren kann auch 
+bei diesem Versuch ermittelt werden, dass die Amplitude für einen sinusförmigen Spannungsverlauf 
+einer Wechselspannung um einen Faktor Wurzel 2 größer beziehungsweise 1,4-mal so groß ist, als 
+die Amplitude einer Gleichspannung bei gleichem Effektivwert. Zwei Schüler können vorne unter 
+Aufsicht das Experiment durchführen. Durch den abgedunkelten Raum werden alle Schüler dazu 
+angehalten mitzumachen. Vorne können sie durch die Dokumentenkamera, die auf das Oszilloskop 
+gerichtet ist, alle Werte mit verfolgen. Im Schülerversuch wäre es ratsam nur bis zu einer 
+Gleichspannung von 3 V zu gehen. Bei höheren Spannungen sind die Lampen schon sehr hell und 
+die Unterschiede zwischen den Helligkeiten der Lampen sehr gering. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+ 
+Versuch 2: Wechselspannung am Oszilloskop 
+ 
+Materialliste: 
+ 
+-  Sinus-Generator 
+-  Oszilloskop 
+-  1 Oszilloskop-Kabel 
+ 
+ 
+Bild: 
+ 
+
+ 
+ 
+Durchführung: 
+ 
+Am Sinus-Generator werden 50 Hz eingestellt. Der Strom beträgt 3 A. Das Oszilloskop gibt den 
+Spitze-Spitze-Wert (Uss) und den Effektivwert (Ueff). Danach muss man den Spitze-Spitze-Wert noch 
+halbieren um den Scheitelwert der Spannung (Umax) zu erhalten. Wird nun der Scheitelwert durch den 
+Effektivwert geteilt, so erhält man circa den Faktor 1,4 beziehungsweise Wurzel 2. 
+ 
+
+ 
+
+Uss in V 
+Ueff in V 
+Umax in V 
+Umax/Ueff 
+
+2,40 
+0,83 
+1,20 
+1,45 
+
+5,20 
+1,86 
+2,60 
+1,40 
+
+7,52 
+2,67 
+3,76 
+1,41 
+
+11,4 
+4,06 
+5,70 
+1,40 
+
+13,5 
+4,85 
+6,75 
+1,39 
+
+15,1 
+5,41 
+7,55 
+1,40 
+
+16,4 
+5,89 
+8,20 
+1,39 
+
+ 
+ 
+Deutende Beobachtung: 
+ 
+Dies ist ein sehr einfacher und recht schneller Versuch. Jedoch ist er dadurch höchstwahrscheinlich 
+auch nicht so spannend für die Schülerinnen und Schüler. Durch diesen Versuch kann trotzdem 
+einfach für einen sinusförmigen Spannungsverlauf einer Wechselspannung ermittelt werden, dass 
+die Amplitude um einen Faktor Wurzel 2 größer beziehungsweise 1,4-mal so groß ist, als die 
+Amplitude einer Gleichspannung bei gleichem Effektivwert. 
+ 
+
+8 
+
+ 
+
+ 
+
+ 
+
+ 
+Versuch 3: Tauchsieder 
+ 
+Materialliste: 
+ 
+-  Tauchsieder 
+-  Spannungsquelle (Gleichspannung) 
+-  Spannungsquelle (Wechselspannung) 
+-  Becherglas mit Wasser 
+-  Thermometer 
+-  3 Kabel (bei hoher Spannung, Schutzkabel) 
+-  2 geschützte Krokodilklemmen 
+-  Amperemeter (umstellbar -/~) 
+ 
+ 
+Bilder:  
+
+ 
+ 
+
+ 
+
+ 
+Durchführung: 
+ 
+Der Tauchsieder wird nacheinander mit Gleichstrom der Stärke 0,425 A (durch unseren Aufbau 
+genommener Wert; einfacher vielleicht mit 1 A zu arbeiten) sowie mit Wechselstrom der 
+Scheitelstromstärke 0,425 A betrieben. Hierbei wird die Temperatur des Wassers im Becher alle 30 
+Sekunden gemessen. 
+ 
+ 
+Deutende Beobachtung: 
+ 
+Das Wasser erwärmt sich langsamer beim Betrieb mit der Wechselspannung als bei angelegter 
+Gleichspannung. Dies wird einem klar, wenn man die Temperaturen über der Zeit aufträgt. Damit die 
+Wechselspannung in gleichen Zeiträumen die gleiche Erwärmung des Wassers wie die 
+Gleichspannung hervorruft, muss ihr Scheitelwert circa 1,4-mal so hoch eingestellt werden. 
+Wie man schon auf den Bildern erkennen kann musste für diesen Versuchsaufbau recht viel 
+improvisiert werden, da nur Tauchsieder mit Steckdosenstecker vorhanden waren. Dies wäre für 
+einen Versuch in der Schule mit Schülern wohl eher nicht zu empfehlen. Dazu kommt das die 
+Messungen und das Abkühlen des Tauchsieders viel Zeit brauchen und somit wurde dieser Versuch 
+nicht in diesem Kurzunterricht benutzt. 
+ 
+
+9 
+
+ 
+
+Aufgabe 1: 
+
+Arbeitsblatt: Effektivwert 
+
+ 
+
+Trage die Messergebnisse des Versuchs in die folgende Tabelle ein. 
+
+UGleich in V 
+USS in V 
+Umax= USS/2 in V 
+[UGleich: Gleichspannung; USS: Wechselspannung von einer unteren Spitze zur oberen Spitze; Umax: 
+Maximalwert der Wechselspannung] 
+
+2,5 
+ 
+ 
+
+3,0 
+ 
+ 
+
+1,5 
+ 
+ 
+
+2,0 
+ 
+ 
+
+Mögliche Messwerte in Aufgabe 3 zu sehen. 
+
+Aufgabe 2: 
+
+Formuliere eine Definition zum Effektivwert.  
+
+Der Effektivwert einer Wechselspannung gibt den Wert der Gleichspannung an, welche an einem  
+gleichen Widerstand in gleicher Zeit die gleiche Energie liefert. 
+
+ 
+
+ 
+
+ 
+
+Aufgabe 3: 
+
+Eine andere Schülergruppe hat diesen Versuch auch durchgeführt und sich dabei zusätzlich am 
+Oszilloskop den genauen Effektivwert der Wechselspannung mit anzeigen lassen.  
+
+Ermittle mit Hilfe der Tabelle einen Zusammenhang zwischen dem Effektiv- und dem Maximalwert. 
+
+UGleich in V 
+USS in V 
+Ueff in V 
+Umax in V 
+Umax/Ueff 
+
+1,50 
+4,16 
+1,48 
+2,08 
+1,41 
+
+2,00 
+5,60 
+2,02 
+2,80 
+1,39 
+
+2,50 
+7,12 
+2,57 
+3,56 
+1,39 
+
+3,00 
+8,72 
+3,14 
+4,36 
+1,39 
+
+[Ueff: Effektivwert der Wechselspannung] 
+
+Umax= 1,4 x Ueff = √2 x Ueff 
+
+ 
+
+ 
+
+ 
+
+ 
+(Lösungen: rot) 
+ 
+
+ 
+
+ 
+
+10 
+
+ 
+Folie für OHP: 
+ 
+
+ 
+
+ 
+
+11 
+
+

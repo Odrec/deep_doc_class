@@ -1,0 +1,546 @@
+Aufgabenblatt 3 
+
+Regressionsanalyse - SPSS 
+
+ 
+
+Aufgabenblatt 2 
+Aufgabe 1 
+
+ 
+Zwischen  der  Verkaufszahl  y  und  den  Einflussgrößen  Preis  (x1)  und  Qualität  (x2)  von 
+Fernsehzeitschriften  wird  ein  linearer  Zusammenhang  vermutet.  Um  dies  zu  untersuchen, 
+
+sollen  die  folgenden  Stichprobendaten  fünf  konkurrierender  Fernsehzeitschriften  mittels 
+
+multipler linearer Regression ausgewertet werden. 
+
+ 
+
+ 
+
+ 
+
+Zeitschrift 1  Zeitschrift 2  Zeitschrift 3  Zeitschrift 4  Zeitschrift 5 
+
+40 
+
+1 
+
+3 
+
+20 
+
+2 
+
+3 
+
+20 
+
+2 
+
+2 
+
+10 
+
+2 
+
+1 
+
+10 
+
+3 
+
+1 
+
+Verkaufszahl 
+
+(y) 
+
+Preis (x1) 
+
+Qualität (x2) 
+
+ 
+
+e)  Führen Sie die gleiche Analyse mit SPSS durch. Vergleichen Sie nicht nur die 
+
+Endergebnisse, sondern auch Zwischenresultate! 
+
+-  Öffnen Sie SPSS-Statistics 
+-  Tragen Sie in der Variablenansicht unter Name die Variablennamen Zeitschrift, 
+
+Verkaufszahl, Preis und Qualität ein (Messniveau: Nominal, Skala, Skala, Skala) 
+-  Wechseln Sie dann in die Datenansicht und tragen die Werte aus der Tabelle ein 
+-  Danach führen Sie die Regression durch: Analysieren(cid:1) Regression (cid:1) linear 
+
+Abhängige Variable und Unabhängige Variablen eintragen (cid:1) OK 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ausgabe: 
+
+ 
+
+1.  Bestimmen Sie mit Hilfe der KQ-Methode die Regressionskoeffizienten b0, b1, und b2. 
+
+2.  Ermitteln Sie das multiple Bestimmtheitsmaß R2. 
+
+ 
+
+ 
+
+ 
+
+3.  Prüfen  Sie  zum  Signifikanzniveau  α  =  0,05,  ob  der  durch  das  Regressionsmodell 
+
+erklärte Zusammenhang auch auf die Grundgesamtheit übertragbar ist. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4.  Testen Sie, ob der Einfluss von Preis und Qualität jeweils signifikant ist (α = 0,05). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Aufgabe 2 (hedonische Regression mit SPSS) 
+
+Die  Datei  „Motorrad.sav“  enthält  Preise  und  Produktmerkmale  vom  deutschen 
+
+Motorradmarkt.  
+
+a)  Ermitteln  Sie,  wie  der  Preis  von  Radstand,  Hubraum  und  Art  der  Kühlung  des 
+
+Motorrads  abhängt.  Verwenden  Sie  für  Kühlung  die  Kategorie  „Luft“  als 
+
+Referenzkategorie und führen Sie eine Kollinearitätsdiagnose durch! 
+
+b)  Wiederholen Sie die Analyse, aber verwenden Sie diesmal die Kategorie „Flüssig“ als 
+
+Referenzkategorie. Betrachten Sie die Unterschiede in Koeffizienten und T-Tests. 
+
+ 
+
+a)   
+
+ 
+
+-  Öffnen Sie die Datei „Motorrad.sav“ 
+
+Regressionsanalyse: 
+
+y=  
+
+x1=  
+x2=  
+x3=  
+(cid:2)  Luft: Referenzkategorie 
+
+y= β0 + β1x1 + β2x2 + β3 x3 + ε 
+ 
+
+Problem:  x3  Variable  mit  nominalem  Messniveau,  kennen  allerdings  Ausprägungen  noch 
+nicht 
+
+-  Vorgehen: Schaltfläche Analysieren (cid:1) deskriptive Statistiken (cid:1) Häufigkeiten 
+
+(cid:1)  neues  Fenster  öffnet  sich:  Kühlung  in  Fenster  Variablen  ziehen  und  OK 
+
+drücken 
+
+-  Wir erhalten die Ausprägungen: Flüssigkeit, Gebläse, Luft (Referenzkategorie) 
+
+und Luft/Öl 
+
+-  Könnten  nun  ausprobieren,  ob  Regression  so  funktioniert  wie  bereits  in 
+
+Aufgabe 1 
+
+-  Schaltfläche Analysieren (cid:1) Regression (cid:1) linear anklicken 
+-  Abhängige Variable:  
+-  Unabhängige Variablen:  
+
+(cid:2)  Problem (wie bereits erwartet): Kühlung wird als String-Variable nicht akzeptiert 
+
+-  Lösung: Bildung von Dummy Variablen: 
+-  (cid:1)(cid:2)(cid:3)(cid:4)(cid:5) =	(cid:8)1, (cid:11)(cid:12)(cid:13)(cid:13)	(cid:14)(cid:15)(cid:16)(cid:15)(cid:17)(cid:17)(cid:18)(cid:19)	(cid:20)(cid:21)(cid:22)(cid:16)/(cid:24)(cid:12)(cid:25)	(cid:26)üℎ(cid:25)(cid:21)(cid:13)(cid:29)
+-  Äquivalent für die anderen 
+-  Bildung von Dummy Variablen mit SPSS 
+-  Schaltfläche Transformieren (cid:1) Variablen berechnen 
+-  Zielvariable:  
+
+0	(cid:31)(cid:15)(cid:13)(cid:31)(cid:16)
+
+ 
+
+o  D_Loel= 1*(kuehlung=“Luft/Öl“) 
+o  D_Geblaese= 1*(kuehlung=“Gebläse“) 
+o  D_Fluessig= 1*(kuehlung=“Flüssigkeit“) 
+
+Jetzt können wir die Regression duchführen: 
+
+- 
+-  Schaltfläche: Analysieren (cid:1) Regression (cid:1) Linear 
+-  Abhängige Variable:  
+-  Unabhängige Variable:  
+
+o 
+o 
+o 
+o 
+o 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-  Ok drücken 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ausgabe: 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(cid:2)  y = 7822,47 – 15,688x1 – 2,826x2 – 1059,524x3 – 1240,048x4 + 1425,934 x5 
+
+ 
+
+Kollinearitätsdiagnose  
+
+-  Regression nochmal durchführen 
+
+(cid:2)  Statistiken Kollinearitätsdiagnose aktivieren 
+
+-  Toleranz < 0,2 (cid:1) weist auf Multikollinearität hin (Faustregel) 
+
+(cid:2)  Damit wäre dann VIF > 
+
+(cid:1) eindeutige Grenzen für die Toleranz/ VIF existieren jedoch nicht 
+
+ 
+
+b) 
+
+genauso, allerdings diesmal „Flüssigkeit“ Referenzkategorie 
+
+(cid:2)  Zusätzliche Dummy-Variable bilden D_Luft=1*(kuehlung=“Luft“) 
+(cid:2)  Keine Veränderung von Radstand, Hubraum, R2, F-Test 
+(cid:2)  Aber:  Konstante  &  Dummies  ändern  sich,  Dummy-Variablen  werden  nun  zu  einer 
+
+anderen Referenzkategorie interpretiert, t-Test andere Ergebnisse 
+
+(cid:2)  R2, F-Test gleich, da Modell immer noch die gleichen Variablen aufweist 
+
+ 
+
+Aufgabe 3 (vereinfachte Scan-Pro mit SPSS) 
+ 
+
+Die  Datei 
+
+„OSaftScanPro1.sav“ 
+
+enthält  Handelspaneldaten 
+
+für  Käufe  von  3 
+
+Orangensaftmarken in den USA. 
+
+a)  Verschaffen  Sie  sich  einen  Überblick  über  den  Datensatz  (wie  viele  Outlets  und 
+
+Wochen  werden  berücksichtigt;  welche  Variablen  sind  vorhanden;  in  welchem 
+
+Wertebereich liegen diese Variablen) 
+
+b)  Schätzen  Sie  die  Parameter  einer  linearen  Preisabsatzfunktion  für  den  Absatz  der 
+
+Marke  HH.  Verwenden  Sie  als  unabhängige  Variablen  die    Preise  und  Displays  der 
+
+Marke  selbst  sowie  der  Konkurrenzmarken.  Führen  Sie  auch  einen  Durbin-Watson 
+
+Test auf Autokorrelation durch. 
+
+c)  Schätzen  Sie  das  Scan-Pro-Modell.  Verwenden  Sie  Woche  1  und  Outlet  1  als 
+
+Referenzkategorien. 
+
+ 
+
+ 
+
+-  welche  Variablen  vorhanden  sind  können  wir  in  der  Variablenansicht  sehen:  Outlet, 
+
+Woche, QHH, … 
+
+-  Anzahl Outlets und Wochen: Analysieren (cid:1) deskriptive Statistik (cid:1) Häufigkeiten (cid:1) 
+
+Variablen: Outlets und Wochen 
+
+(cid:2)  Ergebnis:  
+
+ Outlets und  
+
+ 
+
+ Wochen 
+
+-  Wertebereich: Analysieren  (cid:1) Deskriptive Statistiken  (cid:1) Deskriptive Statistik 
+
+(cid:1) Variable auswählen und anzeigen lassen (cid:1) man kann dann den Min-Wert 
+
+und den Max-Wert ablesen und hat somit den Wertebereich 
+
+a) 
+
+ 
+
+b) 
+
+abhängige Variable:  
+
+unabhängige Variable:  
+
+ 
+
+ 
+
+Vorgehen: Analysieren (cid:1) Regression (cid:1) Linear 
+
+Abhängige und unabhängige Variablen eintragen 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ausgabe: 
+
+ 
+
+y= 597,553- 767,385x1+442,231x2+126,331x3+213,710x4-83,320x5+75,484x6 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Durbin-Watson-Test (Ermittlung Autokorrelation) 
+
+Regressionsanalyse nochmal durchführen (cid:1) unter Statistiken D.-W.T. aktivieren 
+
+ 
+
+Interpretation D-W-Statistik s. Direkthilfe 
+
+ 
+
+c) 
+
+ 
+
+Analysieren (cid:1) Regression (cid:1) Linear 
+
+Abhängige Variable:  
+
+Unabhängige Variablen: 
+
+ 
+
+

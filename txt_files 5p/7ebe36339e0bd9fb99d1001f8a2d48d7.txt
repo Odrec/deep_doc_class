@@ -1,0 +1,2127 @@
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+Journal of Animal Ecology
+
+ 2008, 
+
+77
+
+, 145–155
+
+doi: 10.1111/j.1365-2656.2007.01303.x
+
+Blackwell Publishing Ltd
+
+Combined effects of climate and biotic interactions on 
+the elevational range of a phytophagous insect
+
+Richard M. Merrill*§, David Gutiérrez†, Owen T. Lewis*, Javier Gutiérrez†, Sonia B. Díez† and 
+Robert J. Wilson†‡
+
+*
+†
+Department of  Zoology, University of  Oxford, South Parks Road, Oxford OX1 3PS, UK; 
+y Conservación, Escuela Superior de Ciencias Experimentales y Tecnología, Universidad Rey Juan Carlos, 
+‡
+Tulipán s/n, Móstoles, E-28933 Madrid, Spain; and 
+Centre for Ecology and Conservation, University of  Exeter, 
+Cornwall Campus, Penryn TR10 9EZ, UK
+
+Área de Biodiversidad 
+
+Summary
+
+Aporia crataegi
+
+A.  crataegi
+
+A. crataegi
+
+The ﬂight period of 
+
+A. crataegi
+
+We found that the current upper elevation limit to 
+
+The mountains of the Sierra de Guadarrama (central Spain) include both cool and warm range
+, which has disappeared from low
+
+1.
+The ranges of many species have expanded in cool regions but contracted at warm margins in
+response to recent climate warming, but the mechanisms behind such changes remain unclear.
+Particular debate concerns the roles of direct climatic limitation vs. the effects of interacting species
+in explaining the location of low latitude or low elevation range margins.
+2.
+margins for the black-veined white butterﬂy, 
+elevations since the 1970s without colonizing the highest elevations.
+3.
+’s distribution coincided
+closely with that of  its host plants, but that the species was absent from elevations below 900 m,
+even where host plants were present. The density of 
+ per host plant increased with ele-
+vation, but overall abundance of the species declined at high elevations where host plants were rare.
+4.
+ was later at higher elevations, meaning that butterﬂies in higher
+populations ﬂew at hotter times of year; nevertheless, daytime temperatures for the month of peak
+°
+ﬂight decreased by 6·2 
+C per 1 km increase in elevation.
+5.
+ eggs were laid on the south side of host plants (expected to
+At higher elevations 
+A. crataegi
+correspond to hotter microclimates), whereas at lower sites the (cooler) north side of plants was
+selected. Field transplant experiments showed that egg survival increased with elevation.
+6.
+A. cra-
+, whereas the absence of host plants from high elevations sets the upper limit. This contrasts
+taegi
+with the frequent assumption that biotic interactions typically determine warm range margins, and
+thermal limitation cool margins.
+7.
+Studies that have modelled distribution changes in response to climate change may have under-
+estimated declines for many specialist species, because range contractions will be exacerbated by
+mismatch between the future distribution of suitable climate space and the availability of resources
+such as host plants.
+
+Climatic limitation is the most likely explanation for the low elevation range margin of 
+
+:
+Key-words
+
+altitude, biotic interactions, climate change, phenology, range shifts.
+
+Introduction
+
+Correspondence: Owen T. Lewis, Department of Zoology, 
+University of Oxford, South Parks Road, Oxford OX1 3PS, UK. 
+Tel: + 44 0 1865 271162; Fax: + 44 0 1865 310447; 
+E-mail: owen.lewis@zoo.ox.ac.uk
+§Present address: Department of Zoology, University of Cambridge,
+Downing Street, Cambridge CB2 3EJ, UK.
+
+The ranges of many species have expanded at high latitudes
+and  elevations  but  contracted  at  their  warm  margins  in
+response  to  recent  climate  change  (Walther 
+.  2002;
+Thomas, Franco & Hill 2006). Changes to the distribution of
+‘habitable  climate  space’  may  lead  to  extinctions  if  future
+ranges are too small or isolated from current ranges, and con-
+sequently the impact of climate change on biodiversity is of
+increasing  concern  (Thomas 
+.  2004).  The  mechanisms
+
+et al
+
+et al
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+146
+
+R. M. Merrill
+
+ et al.
+
+that  determine  geographical  range  margins  remain  poorly
+understood, limiting our ability to predict future species
+distributions and to model the effects of climate change on
+biodiversity (Pearson & Dawson 2003; Ibáñez 
+
+. 2006).
+
+et al
+
+Climate  can  limit  distributions  directly  by  inﬂuencing  sur-
+vival and fecundity, or indirectly through its effects on inter-
+acting species, including food sources, natural enemies and
+competitors (Gaston 2003). The prevailing view that climate
+limits  distributions  directly  at  cool,  upper  latitude  range
+margins is supported by considerable empirical evidence
+(see  references  in Gaston 2003). An increasing number of
+examples  show  how  climate  warming  has  allowed  range
+expansions at high latitudes by reducing mortality (Crozier
+2004; Walther, Berger & Sykes 2005) or increasing fecundity
+(Davies 
+. 2006). In contrast, there is little evidence for
+direct climate limitation at warm margins, where biotic inter-
+actions are believed to be more important (MacArthur 1972;
+Brown,  Stevens  &  Kaufman  1996;  Parmesan 
+.  2005).
+Considering that the ﬁrst symptoms of biodiversity loss are
+expected at lower elevational and latitudinal boundaries,
+empirical evidence for the mechanisms that limit species
+distributions in these areas is of particular importance for
+modelling future species ranges and for adapting biodiversity
+conservation to climate change (Hampe & Petit 2005).
+
+et al
+
+et al
+
+et al
+
+Phytophagous  insects  and  their  host  plants  are  useful
+model systems for testing the effects of climate and  biotic
+interactions on species distributions (Hodkinson 1999; Bale
+. 2002), and have provided some of the ﬁrst evidence for
+et al
+the  climatic  mechanisms  behind  population  extinctions  at
+warm  range  margins  (Parmesan  1996,  2005;  McLaughlin
+.  2002).  The  progressive  restriction  of  phytophagous
+et al
+insects to warmer microhabitats is a well-documented explana-
+tion for the locations of cool range boundaries (Thomas 1993;
+. 1999), but evidence for the reverse pattern at
+Thomas 
+warm margins is lacking. In this study we determine the
+relative roles of climate and larval host plants in determining
+distribution  and  abundance  for  an  oligophagous  butterﬂy
+across a naturally occurring thermal gradient incorporat-
+ing both warm (low elevation) and cool (upper elevation)
+range  limits.  We  ﬁrst  determine  changes  to  the  elevational
+range  of  the  black-veined  white 
+  L.  after
+30 years of climate warming, and test for differences between
+the current range of the species and its larval host plants. We
+then investigate how climatic effects on the phenology, habitat
+associations and survival of 
+ could cause its eleva-
+tional range to be narrower than that of  its host plant. In
+contrast to prevailing explanations for range margins, we
+ﬁnd  stronger  evidence  for  direct  climate  limitation  at  the
+warm margin of the species distribution and for host plant
+limitation at the cool margin.
+
+Aporia  crataegi
+
+A. crataegi
+
+Methods
+
+S T U D Y
+
+ 
+
+S Y S T E M
+
+The black-veined white 
+ L. is a widespread Palearctic butter-
+fly, distributed from north-west Africa and western Europe to east
+
+A. crataegi
+
+°
+
+Asia  (40–70
+ N)  and  Japan  (Tolman  &  Lewington  1997).  In
+Europe, the species has expanded its range in Scandinavia but has
+also suffered serious declines, including extinctions from the United
+Kingdom in the 1920s and recently from the Czech Republic and
+. 2001). At its south-western range margin,
+the Netherlands (Asher 
+ is
+in central and southern Spain and in North Africa, 
+restricted to high elevations in mountains (García-Barros 
+.
+et al
+2004; personal communication, J. Tennent, 2007).
+
+A. crataegi
+
+et al
+
+Crataegus
+
+A. crataegi
+
+Prunus  spinosa
+
+ has one annual flight period, and females lay batches
+. 100 eggs on the leaves of both wild and cultivated Rosaceae
+of up to 
+c
+(Emmet & Heath 1989). In particular, the species uses 
+ spp.
+  L.  (blackthorn).  Eggs  hatch  after
+(hawthorn)  and 
+approximately 2 weeks, and larvae live gregariously in a silken web
+from which they emerge to feed. The web is converted into a nest,
+constructed from leaves and silk, in which larvae over-winter in the
+second instar. In spring, larvae continue feeding in groups on the host
+plant before dispersing and pupating alone (Emmet & Heath 1989).
+The study location was the Sierra de Guadarrama (central Spain),
+°
+′
+°
+′
+ N 4
+a 100 
+00
+45
+ 40
+ W, that
+≥
+rises to a maximum elevation of 2428 m from plains of 
+ 700 m to the
+≥
+ 535 m to the south (Fig. 1). The main host plants for
+north and 
+,
+ in the region are 
+P. spinosa
+A. crataegi
+although  eggs  have  also  been  observed  rarely  on 
+  spp.  (D.
+Gutiérrez,  personal  observation).  Mean  annual  temperature  in  the
+region  increased  by  1·3 
+C  between  1967–1973  and  1997–2003
+(equivalent to an uphill shift in isotherms of 
+ 225 m), and over the
+same time-period the lower elevational limits of 16 butterfly species
+with herbaceous host plants shifted uphill by an average of 212 m
+(Wilson 
+
+ 30 km mountain range located at 
+
+C. monogyna
+
+ Jacq. and 
+
+. 2005).
+
+Rosa
+
+et al
+
+c.
+
+c.
+
+×
+
+°
+
+E L E V A T I O N A L
+
+ 
+
+R A N G E
+
+ 
+
+O F
+
+ 
+
+. 
+
+A
+
+C R A T A E G I
+
+A. crataegi
+
+A. crataegi
+
+A.  crataegi
+
+The elevational range of 
+ was recorded in 1967–73 and
+2004–06 at grassland, scrub and woodland  sites  that  were  visited
+repeatedly  to  record  regional  butterfly  distributions.  Data  for
+1967–73  (Monserrat  1976)  are  butterfly  counts  at  38  sites  that
+were each visited five or more times in total, including at least once
+during  the  flight  period  of 
+  (mid-May  to  late  July).  In
+ was counted every 2 weeks at 43 sites, stratified by
+2006, 
+elevation,  of  which  20  had  also  been  sampled  in  2004  and  2005.
+From  May  to  August,  butterflies  were  counted  on  standardized
+500 m long 
+ 5 m wide transects (Pollard & Yates 1993). The overall
+elevational range of sites was 640–1860 m asl in 1967–73, and 550–
+2240 m in 2006. 
+ was considered to be present in either
+time-period  at  locations  where  two  or  more  individuals  were
+counted,  and  absent  where  no  individuals  were  observed.  Sites
+-
+where only one individual was recorded were excluded from ana
+lyses,  because  sampled  butterflies  might  be  vagrants,  rather  than
+representatives of a local breeding population.
+
+A. crataegi
+
+×
+
+C. monogyna
+
+To test the relation between the elevational range of 
+
+A. crataegi
+and its larval host species, the abundance of host plants was esti-
+mated at each of the 43 transect sites in 2006. The route of the 500 m
+transect was followed in August–September 2006 (before leaf fall)
+and the number of plants of 
+ spp.
+that  occurred  in  the  5 m  wide  butterfly  transect  was  recorded,  to
+give a density of each species per 0·25 ha (500 
+ 5 m). If any of the
+plant  species  was  not  present  in  the  5 m  wide  transect,  then  the
+transect was repeated with increasing widths of 10 m, 20 m, and up
+to  a  maximum  of  50 m  width  (i.e.  25 m  on  either  side  of  the
+recorder): host plant density per 0·25 ha was then estimated based
+on the increased transect width. Host plant species are considered
+present at a site if they were found in transects of 
+ 50 m wide. When
+
+P. spinosa
+
+ and 
+
+Rosa
+
+×
+
+≤
+
+, 
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, 
+
+77
+, 
+Journal of Animal Ecology
+
+, 145–155
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Host and climate constraints at range margins
+
+147
+
+Fig. 1. Sample  distribution  for  A.  crataegi
+and  its  host  plants  in  1967–73  and  2006.
+Triangles show 1967–73 sites. Transect sites in
+2006  are  squares  (C.  monogyna  and/or  P.
+spinosa  present)  and  circles  (host  plants
+absent).  Filled  symbols  show  sites  where  A.
+crataegi  was  observed,  open  symbols  where
+absent.
+
+≤
+ 50 m wide transects, further
+host plant species were not found in 
+searches up to 100 m away from the transect route revealed plants at
+ with abundant eggs, larvae
+only one site (one individual of 
+and pupal cases of 
+ as
+A. crataegi
+‘present’ at the site (given its evident importance for the local popu-
+lation of 
+), and estimate its density as 0·1 per 0·25 ha (i.e.
+as if the one plant had been included in a 50 m wide transect).
+
+C. monogyna
+). In this case, we include 
+
+C. monogyna
+
+A. crataegi
+
+Universal Transverse Mercator (UTM) coordinates were recorded
+at least every 100 m along each transect using a handheld Garmin
+GPS  unit.  The  coordinates  were  used  to  plot  each  transect  in
+ArcView geographic information system (GIS) (ESRI 1996), and the
+average elevation of 100 m grid squares intercepted by the transect
+was determined using a digital elevation model (NASA/JPL-Caltech
+2004). To determine the elevational associations of 
+ and
+its host plants, binary logistic regressions were carried out for pres-
+ence (1) and absence (0) of each species against elevation (km) and
+. To test the validity of results based on logistic regression
+elevation
+models, species’ elevational distributions were also fitted to Huisman–
+Olff–Fresco (HOF) models (Oksanen & Minchin 2002) (see  Supple-
+mentary material, Appendix S1). For 
+, logistic regression
+models were also fitted with the additional variables of host plant
+abundance and its interaction with elevation. For this analysis, host
+
+A. crataegi
+
+A. crataegi
+
+2
+
+ and 
+
+P. spinosa
+
+×
+
+, with 
+
+Rosa
+
+A.  crataegi
+
+C. monogyna
+
+plant abundance included the total transect count of the two main
+ spp. as a separate variable.
+hosts 
+Linear regression was used to test for the effects of elevation on
+  and  its  host  plants  at  sites  where  the
+the  density  of 
+respective species were present. The dependent variables were log-
+transformed counts of each species per 500 
+ 5 m transect. Normal
+rather than Poisson error structures were used because the data were
+highly over-dispersed. For 
+, we used the sum of annual
+transect  counts  and  included  elevation,  the  density  of  larval  host
+plants and their interaction as independent variables. As a further
+ per host plant (i.e.
+analysis, we calculated the density of 
+ and
+ total count divided by the total count of 
+A. crataegi
+ per 0·25 ha), and regressed this variable against elevation.
+P. spinosa
+We tested the validity of results based on the 43 intensive transects
+in 2006 by repeating analyses using data from the 20 transects that
+had also been walked every 2 weeks in 2004 and 2005.
+
+C. monogyna
+
+A. crataegi
+
+A. crataegi
+
+E L E V A T I O N A L
+
+ 
+
+T R E N D S
+
+ 
+
+I N
+
+ 
+
+P H E N O L O G Y
+
+The  flight  period  of 
+  was  summarized  by calculating
+mean  flight  date  and  first  appearance  date  at  each  transect  (each
+measured as the number of days since 1 April). Mean flight date was
+
+A.  crataegi
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, 
+
+, 
+Journal of Animal Ecology
+
+77
+
+, 145–155
+
+148
+
+R. M. Merrill
+
+ et al.
+
+calculated as the weighted mean date of transect counts (Stefanescu,
+Peñuelas & Filella 2003). Linear regressions for flight date were fitted
+with elevation (km) as an explanatory variable.
+
+A. crataegi
+
+To estimate the temperatures experienced by 
+
+ dur-
+ing its flight period (that could affect habitat associations), Hobo
+dataloggers were located at transect sites in 2006, and the temperature
+was recorded every hour from the beginning of May onwards. Data-
+loggers were placed in semishaded locations 1·5 m above the ground,
+corresponding  to  typical 
+  egg-laying  sites  on  shrubs.
+Daytime temperature for the entire flight period was calculated as
+mean temperature (
+C) for the 12-hourly intervals of 07.00–18.00 h
+GMT, over the 2 months from 15 May to 14 July (encompassing
+all 
+ observations in 2006). Daytime temperature during the
+peak  flight  period  was  estimated  as  the  mean  for  the  29 days
+centred on the mean flight date at each occupied site.
+
+A.  crataegi
+
+A. crataegi
+
+°
+
+E G G
+
+-
+
+S I T E
+
+ 
+
+L O C A T I O N
+
+ or 
+
+P. spinosa
+
+A. crataegi
+
+A. crataegi
+
+C. monogyna
+
+Rosa
+P. spinosa
+
+, and no eggs were found on 
+ and 
+
+Host plants were searched for eggs and larval webs at sites across and
+beyond the elevational range of 
+. Twenty-three sites rang-
+ing in elevation from 580 m to 1780 m (14 of which corresponded to
+butterfly transect locations) were visited between 23 June and 12 July
+2006. Repeated searching at elevations above 1800 m revealed no 
+C.
+ spp. at any
+monogyna
+sites. At each location the first 25 
+ plants
+encountered were searched for 
+ egg batches and larval webs.
+Where  fewer  than  25  plants  were  encountered,  all  available  host
+plants were searched. The larval web is almost always on the same or
+an adjacent leaf to the oviposition site, and so is an acceptable measure
+of egg-site location. The height above the ground (
+) and side of the
+host plant (
+) were recorded for each egg batch or larval web. In the
+field 
+ was recorded as the cardinal and ordinal points (i.e. north,
+north-east, east, etc.); data were converted to degrees from north for
+subsequent analyses (so that north = 0, both north-east and north-
+west = 45,  both  east  and  west = 90,  etc.).  The  side  of  the  leaf  on
+which eggs were located (upperside or underside) was recorded for
+egg batches.
+
+H
+
+S
+
+S
+
+S
+
+We hypothesized that at higher elevations eggs would be laid in
+warmer  microhabitats:  on  the  south  side  of  plants,  closer  to  the
+ground,  and  on  the  upper  surface  of  leaves.  Because  egg  batches
+from the same site are not statistically independent, summary values
+for each site were used in analyses. Dependent variables were mean
+values of 
+, and the proportion of egg batches on the upper-
+ and 
+H
+side of the leaf (
+). Generalized linear models were constructed for
+L
+side of host plant (
+) and height above ground (H, log-transformed)
+S
+using  elevation  as  a  predictor  variable.  The  proportion  of  egg
+batches laid on the leaf upperside (L) was tested using analysis of
+deviance, including both elevation and elevation2 to test for a possible
+curvilinear effect of elevation. Because the data were over-dispersed,
+the model for L was tested using quasi-binomial error structure and
+F-tests (Crawley 2002). To test whether the inclusion of sites with
+summary values based on few data had a large effect, analyses were
+repeated  excluding  sites  where  fewer  than  five  egg  batches/larval
+webs were recorded.
+
+E G G  A N D  L A R V A L  S U R V I V O R S H I P
+
+Trends in egg and young larval survivorship were investigated by
+transplanting egg batches onto host plants at different elevations.
+Ten  female  A.  crataegi  were  caught  at  1450 m  and  maintained  in
+captivity outside at 1300 m elevation, where they were provided
+with semishaded C. monogyna plants for egg-laying. The number of
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+eggs in each batch was recorded. Within 3 days of being laid, egg
+batches  were  transplanted  to  nine  sites  at  approximately  100 m
+intervals  between  900 m  and  1700 m,  corresponding  to  the  eleva-
+tional range  of  A.  crataegi,  and  to  a  further  location  at 580 m,
+below  the  current  low  elevation  limit.  Leaf fragments  with  egg
+batches were attached using a drop of UHU® solvent-based glue
+to  the  upper  surface  of  C.  monogyna  leaves,  with  two  batches  in
+shaded microhabitats and two in unshaded microhabitats on each
+tree. This was repeated for two trees at each site (resulting in eight
+experimental batches at each elevation) except at 580 m, where only
+one tree (four egg batches) was used because of a shortage of egg
+batches. In total, 76 experimental egg batches were established
+between 22 and 28 June 2006. The location of each egg batch was
+marked so that it could be relocated and identified.
+
+The  experimental  sites  were  visited  on  17  or  18 July  to  record
+mortality of eggs and young larvae. The criterion for egg batch
+survival was that living larvae were present. Sites with unhatched
+egg batches were revisited on 27 July in case larvae had not had time
+to emerge by the earlier visit. Egg batches were excluded from sub-
+sequent analyses if the leaf onto which they had been transplanted
+could not be recovered.
+
+Survivorship of egg batches in shaded and unshaded treatments
+was compared using a paired t-test. Generalized linear models with
+binomial error structure were then used to test the effects of elevation
+on survivorship. The proportion of surviving batches at each experi-
+mental site was the dependent variable, with elevation as the predictor.
+The analysis was repeated excluding data for the 580 m site, which
+is outside the current elevational range of A. crataegi.
+
+To determine whether Rosa spp. were potential hosts for A. crataegi
+in the region, 10 egg batches were collected from C. monogyna in the
+field on 5 July 2006. Half of these were transplanted onto the leaves
+of Rosa spp. and the remaining control batches onto C. monogyna.
+These egg batches were all placed within 100 m of each other with
+the same elevation (c. 1350 m) and aspect (south). Egg batches were
+attached to leaves on the south side of trees at approximately 1 m
+above ground and were revisited on 17 July.
+
+Results
+
+E L E V A T I O N A L  R A N G E  O F  A.  C R A T A E G I
+
+In 1967–73, A. crataegi was present at 17 sample locations
+(based on observations of two or more adults) and absent from
+19 locations. The lowest elevation population was at 640 m
+(with a maximum count of 37 in one visit), and the highest at
+1800 m  (with  a  maximum  of  6).  In  2006,  A.  crataegi  was
+observed at 26 of 43 transect sites; of these, four were excluded
+from analysis because only one individual was recorded. Sites
+with  two  or  more  adults  ranged  in  elevation  from  930  to
+1765 m.  The  elevational  range  appeared  to  have  shifted
+uphill from 1967–73 to 2006, with the loss of populations
+below 900 m (Fig. 2a).
+
+The three potential host plants (C. monogyna, P. spinosa
+and Rosa spp.) were present, respectively, at 25, 17 and 38 of
+the  transect  sites.  The  distributions  of  the  two  main  host
+plants extended to lower elevations than that of A. crataegi but
+were absent from high elevations: transects with C. monogyna
+ranged from 550 to 1535 m, and of P. spinosa from 840 to 1525 m
+(Fig. 2b). Additional ﬁeld searches encountered C. monogyna up
+to elevations of 1792 m, and P. spinosa as low down as 580 m.
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, 
+
+77
+, 
+Journal of Animal Ecology
+
+, 145–155
+
+Host and climate constraints at range margins 149
+
+occurrence in 2004 and 2005 also showed signiﬁcant positive
+effects of elevation and negative effects of elevation2 (results
+not shown). HOF models showed unimodal relationships of
+probability of occurrence with elevation for A. crataegi, P.
+spinosa and Rosa spp., but the best model for C. monogyna
+was a plateau with a probability of occurrence of > 75% up to
+1600 m, which rapidly declined at higher elevations (see Sup-
+plementary material, Table S1).
+
+Despite the differences between the distributions of A. cra-
+taegi and its host plants, the best-ﬁtting logistic regression
+model for A. crataegi occurrence in 2006 included a positive
+signiﬁcant  effect  of  host  plant  count  (C.  monogyna + P.
+spinosa). The coefﬁcient for host plant count was not signiﬁ-
+cant (P = 0·27) but the removal of  the term produced a sig-
+niﬁcant change in log likelihood (P = 0·006) (overall model:
+logit probability of occurrence = –33·02 (± SE 12·68) + 50·12
+elevation (km) (± 18·75) – 17·88 elevation2 (± 6·65) + 0·08 host
+plant density (± 0·07); –2 log likelihood = 19·94, R2 = 0·77,
+χ2 = 33·49, P < 0·001).
+
+The mean annual count of A. crataegi at occupied transects
+ranged from 14·8 to 16·1 in 2004–06, with maxima per site
+ranging from 38 in 2004 to 72 in 2006. Linear regressions for
+A. crataegi counts at occupied sites showed signiﬁcant effects
+of  elevation  (positive)  and  elevation2  (negative)  (Table 2a;
+Fig. 3a). Counts of host plants (C. monogyna + P. spinosa) in
+sites where they occurred had a marginally non-signiﬁcant uni-
+modal relationship with elevation (Table 2a, Fig. 3b). Rosa spp.
+abundance also increased from low to mid-elevations, before
+decreasing at high elevations (see Supplementary material, Fig.
+S1). The density of A. crataegi per host plant increased sig-
+niﬁcantly with elevation in 2004 and 2006 (Fig. 3c), but the
+relationship  was  marginally  non-signiﬁcant 
+in  2005
+(Table 2b).
+
+Fig. 2. Proportion of occupied sites in 250 m elevation bands for A.
+crataegi and its host plants. (a) A. crataegi in 1967–73 (black) and
+2006 (white); (b) C. monogyna (black) and P. spinosa (white) in the 43
+transect sites in 2006. Number of samples per elevation band shown
+above each bar [in (a), n for 1967–73 and 2006 separated by hyphens].
+Asterisks show 250 m bands where C. monogyna or P. spinosa were
+found, but not at transect sites.
+
+Rosa spp. occurred at both higher and lower elevations than
+A. crataegi (elevational range 590–2040 m; see Supplemen-
+tary material, Fig. S1).
+
+The probability of occurrence of A. crataegi was not sig-
+niﬁcantly related to elevation in 1967–73. In 2006, probability
+of occurrence of A. crataegi and of the three plant species
+peaked at mid-elevations, with signiﬁcant positive effects of
+elevation (km) and negative effects of elevation2 in logistic
+regressions  (Table 1).  Logistic  regressions  for  A.  crataegi
+
+E L E V A T I O N A L  T R E N D S  I N  P H E N O L O G Y
+
+In 2006, the ﬂight period of A. crataegi was later at higher
+locations (Fig. 4), whether analysed using mean ﬂight or ﬁrst
+appearance date. Data from the smaller sample of transects in
+2004–05 conﬁrmed this elevational delay, although mean ﬂight
+date  was  not  signiﬁcantly  related  to  elevation  in  2005
+(Table 3).  Flight  was  approximately  30–40 days  later  per
+1 km increase in elevation in 2006, whereas in 2004–05 the
+delay was 10–30 days per 1 km.
+
+Table 1. Logistic regression models for the elevational range of Aporia crataegi, its main host plants and Rosa spp. Models for logit (probability
+of occurrence), showing number of presences (NP) and absences (NA); coefﬁcients for elevation and elevation2; and summary statistics, with R2
+based on Nagelkerke (1991)
+
+Species
+
+A. crataegi
+C. monogyna
+P. spinosa
+Rosa spp.
+
+NP
+
+22
+25
+17
+38
+
+NA
+
+17
+18
+26
+5
+
+Elevation (km)
+ (coefﬁcient)
+
+Elevation2 
+(coefﬁcient)
+
+45·25**
+18·60*
+59·60*
+34·42***
+
+–16·84**
+–8·72**
+–25·87*
+–13·56***
+
+Intercept
+
+–2 LL
+
+–27·66**
+–7·81+
+–32·46*
+–14·97***
+
+25·50
+34·48
+30·17
+11·10
+
+R2
+
+0·69
+0·58
+0·64
+0·72
+
+χ 2
+
+27·92
+24·00
+27·55
+19·82
+
+P
+
+< 0·001
+< 0·001
+< 0·001
+< 0·001
+
+Signiﬁcance for terms in logistic regression models: ***P < 0·001, **P < 0·01, *P < 0·05, +P < 0·1.
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, Journal of Animal Ecology, 77, 145–155
+
+150 R. M. Merrill et al.
+
+Table 2. Linear regressions for the density of Aporia crataegi, its main host plants and Rosa spp. at occupied sites against elevation, showing
+coefﬁcients (± 1 SE). Elevation in km above sea level
+
+Species
+
+Elevation
+(coefﬁcient)
+
+N
+
+Elevation2 
+(coefﬁcient)
+
+Intercept
+
+R2
+
+F
+
+P
+
+(a) Models for log10 counts at occupied sites
+
+A. crataegi (2004)
+A. crataegi (2005)
+A. crataegi (2006)
+C. monogyna + P. spinosa
+Rosa spp.
+
+10
+11
+22
+27
+38
+
+11·34 (± 3·71)*
+8·46 (± 3·43)*
+12·21 (± 3·34)*
+10·71 (± 4·83)*
+8·91 (± 1·70)***
+
+–4·10 (± 1·35)*
+–3·13 (± 1·20)*
+–4·78 (± 1·26)**
+–5·18 (± 2·20)*
+–3·44 (± 0·64)***
+
+–6·62 (± 2·52)*
+–4·54 (± 2·40)†
+–6·54 (± 2·17)**
+–4·27 (± 2·55)NS
+–4·39 (± 1·07)***
+
+(b) Models for log10 A. crataegi density per host plant
+
+Year
+2004
+2005
+2006
+
+9
+10
+19
+
+3·72 (± 1·46)*
+2·86 (± 1·28)†
+2·90 (± 1·04)*
+
+–5·16 (± 1·92)*
+–3·99 (± 1·67)*
+–3·47 (± 1·32)*
+
+0·57
+0·49
+0·45
+0·20
+0·46
+
+0·48
+0·38
+0·31
+
+4·7
+3·8
+7·9
+3·1
+14·6
+
+6·55
+4·97
+7·84
+
+0·051
+0·070
+0·003
+0·065
+< 0·001
+
+0·038
+0·056
+0·012
+
+Signiﬁcance for terms in models: ***P < 0·001, **P < 0·01, *P < 0·05, †P < 0·1, NSP > 0·1.
+
+Fig. 4. The  relationship  of  A.  crataegi  mean  ﬂight  date  with
+elevation.  Mean  ﬂight  date  (no.  days  since  1 April)  on  butterﬂy
+transects  in  2006  is  plotted  against  elevation  (km)  (regression
+equation shown in Table 3).
+
+Using data from 17 temperature data-loggers at transect
+sites  where  A.  crataegi  and  its  host  plants  were  recorded,
+mean daytime temperature (from 07.00 to 18.00 GMT) over
+the  2 months  of  the  entire  regional  ﬂight  period  in  2006
+decreased  by  8·9 °C  per  1 km  increase  in  elevation  (mean
+temperature = 33·1 °C (± SE 2·7)–8·9 × elevation (km) (± SE
+2·1); R2 = 0·54; F1,15 = 17·4, P = 0·001). Mean daytime tem-
+perature for the month of peak ﬂight at each site had a less
+pronounced  decline  of  6·2 °C  per  1 km  increase  in  elevation
+(mean = 28·8 °C  (± SE  2·4)–6·2 × elevation  (km)  (± SE  1·9);
+R2 = 0·41; F1,15 = 10·3, P = 0·006), because of the phenolo-
+gical  delay  with  increasing  elevation.  Data  from  a  smaller
+number  of  dataloggers  in  2004–05  also  showed  steeper
+declines  in  temperature  with  elevation  for  the  2 months
+encompassing the entire ﬂight period than for the local month
+of peak ﬂight (results not shown).
+
+Fig. 3. Changes in the abundance of A. crataegi and its host plants
+with elevation. (a) A. crataegi annual abundance. (b) C. monogyna and
+P. spinosa density per 0·25 ha (c) A. crataegi density per host plant.
+Regression lines plotted based on the equations for 2006 in Table 2.
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, Journal of Animal Ecology, 77, 145–155
+
+Host and climate constraints at range margins 151
+
+Table 3. Linear regressions for Aporia crataegi mean ﬂight date and ﬁrst appearance date with elevation (km), showing coefﬁcients (± SE). Date
+measured as number of days since 1 April
+
+(a) Mean date
+
+2004
+2005
+2006
+
+(b) Appearance date
+
+2004
+2005
+2006
+
+N
+
+10
+11
+22
+
+10
+11
+22
+
+Elevation (km)
+(coefﬁcient)
+
+24·6 (± 7·0)**
+9·2 (± 6·7)NS
+33·1 (± 6·6)***
+
+28·5 (± 5·3)**
+16·2 (± 4·6)**
+42·7 (± 7·1)***
+
+Intercept
+
+52·5 (± 9·6)**
+64·9 (± 9·2)***
+30·0 (± 8·7)**
+
+39·0 (± 7·3)**
+43·9 (± 6·3)***
+7·8 (± 9·4)NS
+
+R2
+
+0·61
+0·17
+0·56
+
+0·78
+0·58
+0·64
+
+F
+
+12·6
+1·9
+25·2
+
+28·8
+12·5
+36·2
+
+P
+
+0·008
+0·204
+< 0·001
+
+0·001
+0·006
+< 0·001
+
+Signiﬁcance for terms in models: ***P < 0·001, **P < 0·01, NSP > 0·1.
+
+E G G- S I T E  L O C A T I O N
+
+In total, 351 host plants were searched, and data were recorded
+for 236 egg batches and 63 larval webs. Egg batches were not
+located randomly among host plants: the distribution of egg
+batches/larval webs among trees differed signiﬁcantly from
+that expected under a Poisson distribution (χ2-test: obser-
+vations grouped ≥ 4 egg batches/larval webs per host plant;
+χ2 = 237·98, d.f. = 3, P < 0·0001), indicating a clumped dis-
+tribution of egg batches on relatively few host plants. No egg
+batches or larval webs were found below 900 m.
+
+For sites with at least ﬁve egg batches, the side of the tree on
+which eggs were laid (degrees difference from north) was pos-
+itively related to elevation (S° = 104·9 (± SE 18·1) × elevation
+(km) – 30·6 (± SE 23·9); R2 = 0·72, F1,13 = 33·66, P < 0·001),
+indicating that eggs were located on the north side of plants
+at lower elevations, and on the south side of plants at higher
+elevations (Fig. 5a). Height above ground of egg-sites was not
+related to elevation. The proportion of eggs laid on the upper
+surface of leaves (L) showed evidence of a curvilinear relation-
+ship with elevation, peaking at middle elevations (Fig. 5b).
+However, the relationship was not signiﬁcant in the analysis
+of sites with ﬁve egg batches or more, where only one site
+below 1100 m was included (because most eggs had already
+hatched into larvae by the time of egg searches at low elevations).
+
+E G G  A N D  L A R V A L  S U R V I V O R S H I P
+
+There was no signiﬁcant difference in the proportion of egg
+batches surviving to form larval webs in shaded and unshaded
+environments  (paired  t-test,  t = 0·20,  d.f. = 8,  P = 0·847).
+Data  for  shaded  and  unshaded  locations  were  therefore
+pooled for subsequent analyses. Elevation was a highly sig-
+niﬁcant predictor of the proportion of egg batches surviving
+to form larval webs at experimental sites (generalized linear
+model with  quasi-binomial  error  structure  to  correct  for
+overdispersion: F1,8 = 11·61, P = 0·009; Fig. 6), and also after
+excluding data from the 580 m site (F1,7 = 8·91, P = 0·020).
+The parameter estimates for elevation were positive, showing
+that mortality decreases with elevation.
+
+Fig. 5. The relationship of egg-site microhabitat with elevation.
+(a) Side of host plant (°difference from north: higher values represent
+the south-facing side of trees). (b) Proportion of egg batches on the
+leaf upperside. Solid symbols show sites with ≥ 5 egg batches or larval
+webs (trend line shown in a); open symbols show sites with < 5 egg
+batches or larval webs.
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, Journal of Animal Ecology, 77, 145–155
+
+152 R. M. Merrill et al.
+
+Fig. 6. Proportion survival of A. crataegi egg batches as a function
+of elevation (km). Solid symbols show locations within the range of
+A. crataegi (n = 8 batches transplanted per site); open symbol shows
+one location outside the elevational range (n = 4 batches).
+
+None of  the eggs transplanted onto Rosa spp. survived
+as larvae. Living larvae were found at three of ﬁve control
+manipulations on C. monogyna.
+
+Discussion
+
+We present evidence for a shift in the elevational range of
+the butterﬂy A. crataegi in central Spain between 1967–73
+and 2006. The butterﬂy has apparently disappeared from
+low elevations where its larval host plants remain, while its
+ability to expand its distribution above its upper elevation
+limit has been constrained by the absence of host plants at
+higher elevations. We propose increasing temperatures as
+a causal factor for the retraction of  A. crataegi from low
+elevations,  based  on  evidence  that  larval  survivorship
+increases with elevation. Information on population den-
+sity, phenology and habitat use support the importance of
+temperature in inﬂuencing the population dynamics and
+elevational range of A. crataegi.
+
+E L E V A T I O N A L  R A N G E  O F  A.  C R A T A E G I
+
+The elevational range of A. crataegi retracted uphill between
+1967–73 and 2006, with the species disappearing from ele-
+vations below 900 m. In 1967–73 the butterﬂy’s range coin-
+cided closely with that of its host plants (assuming that host
+plant distribution did not change markedly between 1967–73
+and 2006), with large populations recorded as low down as
+640 m and up to 1800 m. By 2006, A. crataegi was absent from
+sites below 900 m, in spite of the presence of host plants.
+The loss of A. crataegi from 600 to 900 m elevations almost
+certainly results from local population extinctions rather than
+adult dispersal, as the nearest known extant populations of
+the  species  are  25 km  or  further  from  the  lowest  elevation
+locations where it was recorded in 1967–73. In contrast, the
+
+upper elevation limit has not increased, and seems to be deter-
+mined by the distribution of C. monogyna and P. spinosa. The
+main host plants are rare above 1500 m and were not found
+above 1792 m despite extensive searching. The few transect
+locations without host plants where A. crataegi was observed
+(all of them at 1400 m elevation or above) were within 2·5 km
+of  the  nearest  known  C.  monogyna  plant,  and  had  annual
+counts of four or fewer A. crataegi.
+
+At occupied sites, the population density of  A. crataegi
+increased from low to mid-elevations before declining above
+1500 m (Fig. 3). The decline in population density at high
+elevations appears to be related to a concurrent decline in
+host plant density. There was an indication that the density
+of A. crataegi relative to that of its host plants increased lin-
+early with elevation (Fig. 3c). One possible explanation for
+such a pattern is that the proportion of host plants that was
+suitable (e.g. for egg-laying or larval survival) increased with
+elevation.
+
+E G G  A N D  L A R V A L  S U R V I V O R S H I P
+
+Field transplant experiments across and below A. crataegi’s
+current range revealed a signiﬁcant effect of elevation on the
+survivorship of egg batches and young larvae. Direct temper-
+ature effects seem to be the most likely explanation for the
+trends in A. crataegi survival (for effects of high temperatures
+on egg and larval survival in other Lepidoptera see Bryant,
+Thomas & Bale 1997; Alonso 1999). Differences in rates of
+leaf maturation or senescence at different elevations (e.g. Weiss
+et al. 1988; Bale et al. 2002) are unlikely to explain differences
+in mortality of young A. crataegi larvae, as leaves are fully mature
+at all elevations at dates of egg hatch (June–July). In addition,
+mortality often occurred before the emergence of larvae, with
+no evidence of larval webs for nine of the 14 experimental egg
+batches that did not survive at sites below 1200 m.
+
+Insects may escape their natural enemies at higher elevations
+or latitudes by entering predator-free space (Randall 1982;
+Hodkinson 1999), representing another possible explanation
+for elevational trends in A. crataegi survivorship. We observed
+no evidence that parasitoids or predators were responsible for
+the pattern observed, and in most cases the unhatched eggs
+remained intact on the leaves. Nevertheless, it would be nec-
+essary to extend the experimental manipulation (e.g. Crozier
+2004; Hill & Hodkinson 1995) to determine the contribu-
+tions to A. crataegi mortality of direct climatic effects, and of
+effects  mediated  by  other  trophic  levels,  that  potentially
+reﬂect the indirect effects of climate. Whichever mechanism
+is responsible, the effects of the elevational gradient on egg
+batch and young larval survivorship will have a negative effect
+on the viability of A. crataegi populations at low elevations,
+with the potential to limit the distribution of this species.
+
+C A U S E S  A N D  C O N S E Q U E N C E S  O F  P H E N O L O G I C A L 
+V A R I A T I O N
+
+Elevation was a signiﬁcant predictor of both mean and ﬁrst
+ﬂight date, consistent with previous studies reporting later
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, Journal of Animal Ecology, 77, 145–155
+
+emergence  dates  for  insects  at  higher  elevations  (Fielding
+et al. 1999; Crozier 2004; Hodkinson 2005). Elevation affects
+mean  temperature,  potentially  inﬂuencing  the  date  of  dia-
+pause cessation and rates of larval and pupal development
+after hibernation. The differences in phenology in 2006 were
+pronounced, with butterﬂies ﬂying 30–40 days later per 1 km
+increase in elevation (Fig. 4).
+
+Climate-driven changes to species phenology could affect
+survival or fecundity, by shifting key stages of life cycles to
+cooler or warmer times of the year (Wilson, Davies & Thomas
+2007)  or  by  disrupting  biotic  interactions  (Ibáñez  et al.
+2006). Because A. crataegi butterﬂies ﬂy later at higher ele-
+vations,  the  temperatures  experienced  by  adults  do  not
+decrease with altitude as sharply as might be predicted, all
+else being equal. However, results from temperature data-
+loggers at transect sites show that mean daytime tempera-
+ture during the local peak month of A. crataegi ﬂight (i.e. the
+temperatures experienced by egg-laying females, eggs and
+young larvae) still decreased by 6·2 °C per 1 km increase in
+elevation.
+
+E G G- S I T E  L O C A T I O N
+
+At high elevations eggs were laid on the south side of host
+plants, corresponding to hotter microclimates, whereas at
+low  elevations  they  were  found  on  the  north  side  of  plants
+(Fig. 5a),  suggesting  that  egg-laying  site  may  depend  on
+ambient  temperature  (Davies  et al.  2006).  Based  on  our
+results  for  survivorship,  the  pattern  could  result  from
+selection  on  female  oviposition  behaviour  for  sites  whose
+microclimate  favours  the  development  and  survival  of
+larvae  (Gilbert  &  Singer  1977).  Further  experiments  are
+needed to conﬁrm whether egg-site location in A. crataegi is
+directly  related  to  temperature  during  oviposition,  or
+whether  egg-site  choice  and  larval  survival  differ  among
+populations from different elevations, representing possible
+local adaptation.
+
+Further work is also required to determine whether additional
+climatic variables inﬂuence egg-site selection. For example,
+exposure to ultraviolet-B radiation (UV-B) can increase by
+c. 20% per 1 km elevation (Blumthaler, Ambach & Ellinger
+1997).  UV-B  can  cause  tissue  damage  in  insect  larvae
+(Caldwell et al. 1998), and high levels of UV-B are avoided by
+some insects (Mazza et al. 2002). In A. crataegi, there was an
+indication that the proportion of egg batches laid on the
+leaf  upperside peaked at middle elevations (Fig. 5b), a pat-
+tern that could result if  host plant leaves protect eggs from
+UV-B. At low elevations, exposure both to UV-B and high
+ambient temperatures might be reduced for eggs on the leaf
+underside.  Reduced  ambient  temperatures  at  increasing
+elevations  could  then  favour  the  upperside,  but  at  the
+highest elevations UV-B exposure may be so high that the
+leaf  underside  is  again  favoured.  Research  is  needed  to
+determine whether the effects of UV-B radiation on insect
+development  and  survival  could  limit  species’  ability  to
+track  climate  change,  by  preventing  range  shifts  towards
+higher elevations.
+
+Host and climate constraints at range margins 153
+
+I M P L I C A T I O N S O F C L I M A T E C H A N G E F O R S P E C I A L I S T 
+S P E C I E S
+
+Increasing temperatures are likely to drive the warm range
+margin of A. crataegi away from low elevations, and the future
+distribution of the species in the region will depend on its
+ability to colonize high elevation sites. However, suitable host
+plants might be unlikely to shift their distributions as quickly
+in response to climate change. Recent research shows that a
+broadening of host plant use by butterﬂies can increase rates
+of range expansion at a landscape scale (Thomas et al. 2001).
+The  ability  to  exploit  alternative  host  plants  such  as  Rosa
+spp., which have a much wider elevational range (see Supple-
+mentary material, Fig. S1), could greatly increase A. crataegi’s
+ability  to  colonize  high  elevations. However, A. crataegi has
+rarely been observed laying eggs on Rosa spp. in the region,
+and our experimental transplants showed no evidence that
+larvae are able to develop on these plants. Unless A. crataegi
+can broaden its host plant use at higher elevations, it seems
+inevitable  that  the  species  will  experience  an  increasingly
+restricted elevational range as the climate warms.
+
+Bioclimate  envelope  models  have  been  used  to  predict
+future species distributions, based either on the geographical
+range of suitable climate space or its overlap with currently
+suitable conditions (e.g. Pearson & Dawson 2003; Thomas
+et al. 2004). Our research emphasizes how, for specialist spe-
+cies such as many phytophagous insects, observed retractions
+in  potential  or  realized  distributions  are  likely  to  be  much
+greater than previously estimated, because of reduced overlap
+between  host  species  and  suitable  climate  (see  Andrew  &
+Hughes  2004,  2005).  Realistic  models  of  future  species
+ranges should include the effects both of species’ physiol-
+ogical requirements and climatic associations, as well as those
+of their key interacting species (Hodkinson 1999; Araújo &
+Guisan 2006) or habitats (Franco et al. 2006).
+
+Our work suggests that temperature is the most likely factor
+determining the low elevation limit to A. crataegi’s distribu-
+tion, whereas interacting species are responsible for its upper
+elevation margin. This result contrasts with the prevailing
+theory  that  species  interactions  determine  warm  limits  to
+species distributions, while direct climatic limitation imposes
+the cool boundaries to species ranges (MacArthur 1972; Brown
+et al. 1996; Parmesan et al. 2005). The clearest change to the
+distribution of A. crataegi was the loss of populations from
+elevations of 600–900 m, despite the continuing presence of
+larval  host  plants.  This  distribution  change  is  unlikely  to
+reﬂect the effects of adult resources, since during A. crataegi’s
+June ﬂight period the density of ﬂowers does not increase with
+elevation, and many nectar sources are available in the habi-
+tats  sampled  below  900 m  (S.  B.  Díez,  unpublished  data).
+Instead, we show that egg and young larval survival increases
+with elevation, with > 75% estimated mortality below the current
+lower elevation margin. Increased mortality at low elevations
+because of  increased temperatures in the region since 1967–
+73 could represent a mechanism behind the range contraction
+of A. crataegi, but further experimental work is needed to rule out
+other competing explanations. For example, egg transplant
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, Journal of Animal Ecology, 77, 145–155
+
+154 R. M. Merrill et al.
+
+experiments that exclude predators or parasitoids could be
+particularly informative (e.g. Crozier 2004), as well as trans-
+location  experiments  using  the  progeny  of  females  from
+lower  elevation populations, to test for a potential role of
+adaptation across the elevational range.
+
+Predictions indicate further warming of up to 4 °C by
+2100 (IPCC 2007), corresponding to a c. 650 m shift in the
+elevational distribution of isotherms. Considering that A.
+crataegi is currently restricted to a 900 m band in the Sierra de
+Guadarrama and may have little capacity to move to higher
+elevations,  a  considerable  contraction  of  its  current  range
+seems inevitable. If the distribution patterns revealed by this
+study also apply to other areas in southern Europe and North
+Africa where the species is restricted to mountains (García
+Barros et al. 2004; J. Tennent, personal communication), then
+the future of A. crataegi, and indeed other plant and animal
+species  with  ranges  limited  in  similar  ways,  may  not  be  as
+secure as its current widespread status implies.
+
+Acknowledgements
+
+We thank V. J. Monserrat for access to historical data, and J. Bridle and J.
+Harcourt for assistance in the ﬁeld. Funding to D.G., R.J.W. and J.G. was provided
+by the Ministerio de Educación y Ciencia (grant reference CGL2005-06820/
+BOS), Spain. R.M.M. was supported by an MSc studentship from the Biotech-
+nology and Biological Sciences Research Council (BBSRC) and by a travel
+grant from St Peter’s College, University of Oxford. O.T.L. is a Royal Society
+University  Research  Fellow  and  was  also  supported  by  the  Ernest  Cook
+Research Fellowship, Somerville College, University of Oxford. Access and
+research permits were provided by Comunidad de Madrid, Parque Regional de
+la Cuenca Alta de Manzanares, Parque Natural de Peñalara, and Parque
+Regional del Curso Medio del Río Guadarrama.
+
+References
+
+Alonso, C. (1999) Variation in herbivory by Yponomeuta mahalabella on its only
+host plant Prunus mahaleb along an elevational gradient. Ecological Entomo-
+logy, 24, 371–379.
+
+Andrew, N.R. & Hughes, L. (2004) Species diversity and structure of  phyto-
+phagous beetle assemblages along a latitudinal gradient: predicting the
+potential impacts of climate change. Ecological Entomology, 29, 527–542.
+Andrew, N.R. & Hughes, L. (2005) Diversity and assemblage structure of phyto-
+phagous  Hemiptera  along  a  latitudinal  gradient:  predicting  the  potential
+impacts of climate change. Global Ecology and Biogeography, 14, 249–262.
+Araújo, M.B. & Guisan, A. (2006) Five (or so) challenges for species distribu-
+
+tion modelling. Journal of Biogeography, 33, 1677–1688.
+
+Asher, J., Warren, M., Fox, R., Harding, P., Jeffcoate, G. & Jeffcoate, S. (2001)
+The Millennium Atlas of Butterﬂies in Britain and Ireland. Oxford University
+Press, Oxford.
+
+Bale,  J.S.,  Masters,  G.J.,  Hodkinson,  I.D.,  Awmack,  C., Bezemer,  T.M.,
+Brown,  V.K.,  Butterﬁeld,  J.,  Buse,  A.,  Coulson,  J.C.,  Farrar,  J.,  Good,
+J.E.G., Harrington, R., Hartley, S., Jones, T.H., Lindroth, R.L., Press,
+M.C., Symrnioudis, I., Watt, A.D. & Whittaker, J.B. (2002) Herbivory in
+global climate change research: direct effects of rising temperatures on insect
+herbivores. Global Change Biology, 8, 1–16.
+
+Blumthaler, M., Ambach, W. & Ellinger, R. (1997) Increase in solar UV
+radiation  with  altitude.  Journal  of  Photochemistry  and  Photobiology,  39,
+130–134.
+
+Brown, J.H., Stevens, G.C. & Kaufman, D.M. (1996) The geographic range:
+size, shape, boundaries and internal structure. Annual Review of Ecology and
+Systematics, 27, 597–623.
+
+Bryant, S.R., Thomas, C.D. & Bale, J.S. (1997) Nettle-feeding nymphalid butter-
+ﬂies:  temperature,  development  and  distribution.  Ecological  Entomology,
+22, 390–398.
+
+Caldwell, M.M., Bjorn, L.O., Bornman, J.F., Flint, S.D., Kulandaivelu, G.,
+Teramura, A.H. & Tevini, M. (1998) Effects of solar ultraviolet radiation on
+terrestrial ecosystems. Journal of Photochemistry and Phytobiology, Series
+B, Biology, 46, 40–52.
+
+Crawley, M.J. (2002) Statistical Computing – an Introduction to Data Analysis
+
+Using S-Plus. John Wiley & Sons, Chichester.
+
+Crozier,  L.G.  (2004)  Field  transplants  reveal  summer  constraints  on  a
+
+butterﬂy range expansion. Oecologia, 141, 148–157.
+
+Davies, Z.G., Wilson, R.J., Coles, S. & Thomas, C.D. (2006) Changing habitat
+associations of a thermally constrained species, the silver-spotted skipper
+butterﬂy, in response to climate warming. Journal of Animal Ecology, 75,
+247–256.
+
+Emmet, A.M. & Heath, J. (1989) The Moths and Butterﬂies of Great Britain
+
+and Ireland, vol. 7, Part 1. Harley Books, Colchester.
+
+Environmental Systems Research Institute (ESRI)  (1996)  Arc  View  Spatial
+Analyst. Advanced Spatial Analysis Using Raster and Vector Data. Environ-
+mental Systems Research Institute, Redlands, CA.
+
+Fielding, C.A., Whittaker, J.B., Butterﬁeld, J.E.L. & Coulson, J.C. (1999)
+Predicting responses to climate change: the effect of altitude on the phenology
+of the spittlebug Neophilaenus lineatus. Functional Ecology, 12 (Suppl. 1),
+65–73.
+
+Franco, A.M.A., Hill, J.K., Kitschke, C., Collingham, Y.C., Roy, D.B., Fox, R.,
+Huntley, B. & Thomas, C.D. (2006) Impacts of climate warming and habitat
+loss on extinctions at species’ low-latitude range boundaries. Global Change
+Biology, 12, 1545–1553.
+
+García-Barros, E., Munguira, M.L., Martín Cano, J., Romo Benito, H.,
+Garcia-Pereira, P. & Maravalhas, E.S. (2004) Atlas of the Butterﬂies of the
+Iberian Peninsula and Balearic Islands (Lepidoptera: Papilionoidea & Hesperi-
+oidea). Sociedad Entomológica Aragonesa, Zaragoza, Spain.
+
+Gaston, K.J. (2003) The Structure and Dynamics of Geographical Ranges. Oxford
+
+University Press, Oxford.
+
+Gilbert, L.E. & Singer, M.C. (1977) Butterﬂy ecology. Annual Review of Ecology
+
+and Systematics, 6, 365–397.
+
+Hampe, A. & Petit, R.J. (2005) Conserving biodiversity under climate change:
+
+the rear edge matters. Ecology Letters, 8, 461–467.
+
+Hill, J.K. & Hodkinson, I.D. (1995) Effects of temperature on phenological
+synchrony and altitudinal distribution of jumping plant-lice (Hemiptera:
+Psylloidea) on dwarf  willow (Salix lapponum) in Norway. Ecological Ento-
+mology, 20, 237–244.
+
+Hodkinson, I.D. (1999) Species response to global environmental change or
+why ecophysiological models are important: a reply to Davis et al. Journal of
+Animal Ecology, 68, 1259–1262.
+
+Hodkinson, I.D. (2005) Terrestrial insects along elevation gradients: species
+
+and community responses to altitude. Biological Reviews, 80, 489–513.
+
+Ibáñez,  I.,  Clark,  J.S.,  Dietze,  M.C.,  Feeley,  K.,  Hersh,  M.,  LaDeau,  S.,
+McBride,  A.,  Welch,  N.E.  &  Wolosin,  N.S.  (2006)  Predicting  biodiversity
+change: outside the climate envelope, beyond the species–area curve. Eco-
+logy, 87, 1896–1906.
+
+Intergovernmental Panel on Climate Change (IPCC)  (2007)  Climate  Change
+2007: the Physical Science Basis. Summary for Policymakers. UNEP Inter-
+governmental Panel on Climate Change, Geneva, Switzerland.
+
+MacArthur, R.H. (1972) Geographyraphical Ecology: Patterns in the Distribution
+
+of Species. Princeton University Press, Princeton, NJ.
+
+Mazza,  C.A.,  Izaguirre,  M.M.,  Zavala,  J.,  Scopel,  A.L.  &  Ballaré,  C.L.
+(2002) Insect perception of ambient ultraviolet-B radiation. Ecology Letters,
+5, 722–726.
+
+McLaughlin, J.F., Hellmann, J.J., Boggs, C.L. & Ehrlich, P.R. (2002) Climate
+change hastens population extinctions. Proceedings of the National Academy
+of Sciences USA, 99, 6070–6974.
+
+Monserrat, V.J. (1976) La distribución ecológica de las mariposas diurnas del
+Guadarrama. Thesis, Universidad Complutense de Madrid, Madrid, Spain.
+Nagelkerke, N.J.D. (1991) A note on a general deﬁnition of the coefﬁcient of
+
+determination. Biometrika, 78, 691–692.
+
+NASA/JPL-Caltech  (2004)  Shuttle  Radar  Topography  Mission.  Available  at:
+
+http://www2.jpl.nasa.gov/srtm/ (acessed 9 June 2007).
+
+Oksanen, J. & Minchin, P.R. (2002) Continuum theory revisited: what shape
+are species responses along ecological gradients? Ecological Modelling, 157,
+119–129.
+
+Parmesan, C. (1996) Climate and species range. Nature, 382, 765–766.
+Parmesan, C. (2005) Detection at multiple levels: Euphydryas editha and climate
+change. Climate Change and Biodiversity (eds T.E. Lovejoy & L. Hannah),
+pp. 56–60. Yale University Press, New Haven CT/London.
+
+Parmesan, C., Gaines, S., Gonzalez, L., Kaufman, D.M., Kingsolver, J., Peter-
+son, A.T. & Sagarin, R. (2005) Empirical perspectives on species borders: from
+traditional biogeography to global change. Oikos, 108, 58–75.
+
+Pearson, R.G. & Dawson, T.P. (2003) Predicting the impacts of climate change
+on the distribution of species: are bioclimatic envelope models useful? Global
+Ecology and Biogeography, 12, 361–371.
+
+Pollard, E. & Yates, T.J. (1993) Monitoring Butterﬂies for Ecology and Conser-
+
+vation. Chapman & Hall, London.
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, Journal of Animal Ecology, 77, 145–155
+
+Randall, M.G.M. (1982) The dynamics of an insect population throughout its alti-
+tudinal distribution: Coleophora alticolella (Lepidoptera) in northern England.
+Journal of Animal Ecology, 51, 993–1016.
+
+Stefanescu, C., Peñuelas, J. & Filella, I. (2003) Effects of climate change on the
+phenology  of  butterﬂies  in  the  northwest  Mediterranean  Basin.  Global
+Change Biology, 9, 1494–1506.
+
+Thomas, J.A. (1993) Holocene climate changes and warm man-made refugia
+may explain why a sixth of  British butterﬂies possess unnatural early-
+successional habitats. Ecography, 16, 278–284.
+
+Thomas, C.D., Bodsworth, E.J., Wilson, R.J., Simmons, A.D., Davies, Z.G.,
+Musche, M. & Conradt, L. (2001) Ecological and evolutionary processes at
+expanding range margins. Nature, 411, 577–581.
+
+Thomas, C.D., Cameron, A., Green, R.E., Bakkenes, M., Beaumont,  L.J.,
+Collingham, Y.C., Erasmus, B.F.N., Ferreira de Siqueira, M., Grainger, A.,
+Hannah, L., Hughes, L.,  Huntley,  B.,  van  Jaarsveld,  A.S.,  Midgley,  G.F.,
+Miles, L., Ortega-Huerta, M.A., Peterson, A.T., Phillips, O.L. & Williams,
+S.E. (2004) Extinction risk from climate change. Nature, 427, 145–148.
+
+Thomas,  C.D.,  Franco,  A.M.A.  &  Hill,  J.K.  (2006)  Range  retractions  and
+extinctions in the face of climate warming. Trends in Ecology and Evolution,
+21, 415–416.
+
+Thomas, J.A., Rose, R.J., Clarke, R.T., Thomas, C.D. & Webb, N.R. (1999)
+Intraspeciﬁc variation in habitat availability among ectothermic animals
+near their climatic limits and their centres of range. Functional Ecology, 13,
+55–64.
+
+Tolman, T. & Lewington, R. (1997) Butterﬂies of Britain and Europe. Harper-
+
+Collins, London.
+
+Walther, G.-R., Berger, S. & Sykes, M.T. (2005) An ecological ‘footprint’ of
+climate change. Proceedings of the Royal Society, Series B, 272, 1427–1432.
+Walther, G.-R., Post, E., Convey, P., Menzel, A., Parmesan, C., Beebee, T.J.C.,
+Fromentin,  J.-M.,  Hoegh-Guildberg,  O.  &  Bairlein,  F.  (2002)  Ecological
+responses to recent climate change. Nature, 416, 389–395.
+
+Weiss, S.B., Murphy, D.D. & White, R.R. (1988) Sun, slope and butterﬂies:
+topographic determinants of habitat quality for Euphydryas editha bayensis.
+Ecology, 69, 1486–1496.
+
+Wilson, R.J., Davies, Z.G. & Thomas, C.D. (2007) Insects and climate change:
+processes, patterns and implications for conservation. Insect Conservation
+Biology (eds A.J.A. Stewart, T.R. New & O.T. Lewis). CABI Publishing,
+Wallingford, UK.
+
+Host and climate constraints at range margins 155
+
+Wilson, R.J., Gutiérrez, D., Gutiérrez, J., Martínez, D., Agudo, R. & Monserrat,
+V.J. (2005) Changes to the elevational limits and extent of species ranges
+associated with climate change. Ecology Letters, 8, 1138–1146.
+
+Received 19 February 2007; accepted 19 July 2007
+Handling Editor: Simon Leather
+
+Supplementary material
+
+The  following  supplementary  material  is  available  for  this
+article.
+
+Appendix S1. Methods: Huisman–Olff–Fresco (HOF) models.
+
+Table S1. HOF models for the elevational range of A. crataegi
+and its host plants.
+
+Fig. S1. The elevational range and abundance of Rosa spp.
+(a) Proportion of occupied sites against elevation (km). (b) Rosa
+abundance against site elevation.
+
+This material is available as part of the online article from:
+http://www.blackwell-synergy.com/doi/full/10.1111/ 
+j.1365-2656.2007.01303.x
+(This link will take you to the article abstract).
+
+Please note: Blackwell Publishing is not responsible for the
+content or functionality of any supplementary material supplied
+by the authors. Any queries (other than missing material)
+should be directed to the corresponding author for the article.
+
+© 2007 The Authors. Journal compilation © 2007 British Ecological Society, Journal of Animal Ecology, 77, 145–155
+
+

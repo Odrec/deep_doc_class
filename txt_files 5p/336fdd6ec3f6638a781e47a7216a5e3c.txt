@@ -1,0 +1,1017 @@
+Vorlesung
+
+Regelbasierte Modelle
+
+Geeske Scholz
+
+Modell-Güte/
+
+Artificial Anasazi
+
+16.12.14
+
+Wann ist ein Modell „richtig“ oder „gut“?
+
+All models are wrong but some are useful
+(George Box)
+
+Grundlegendes
+
+• Es kann nie endgültig bewiesen werden, dass ein Modell eines 
+
+•
+
+realen Systems „richtig“ ist 
+„Richtig“ im Sinne von: erfasst die Wirkzusammenhänge (Elemente, 
+Prozesse), die Dynamik des realen Systems erzeugen
+
+• Einige Gründe:
+
+– Messung des realen Systems (Parameter, Eingabe-Daten) (cid:1)
+
+immer nur Näherung
+
+– Offene Systeme: Das reale System unterliegt immer auch 
+
+Einflüssen, die nicht im Modell abgebildet sind (cid:1) Modell kann 
+nicht klären wie groß diese Einflüsse sind
+
+– Modellgleichheit (s. nächste Folie)
+
+„Modellgleichheit“
+
+• Mehrere System-/Modellstrukturen (Mikro-Ebene) 
+
+können das selbe Verhalten auf Makro-Ebene erzeugen.
+
+(cid:2) In  manchen Fällen kann das plausiblere Modell 
+durch Betrachtung der Mikro-Ebene identifiziert 
+werden
+
+(cid:2) In anderen Fällen ist dies nicht immer der Fall 
+
+(„Expertenstreit“)
+
+Fehler und Artefakte
+
+Galán et al. 2009
+
+Zwei Quellen für „falsche“ Modelle
+
+• Fehler: Das Modell verhält sich nicht entsprechend 
+
+seiner Spezifizierung (es tut nicht was der Modellierer 
+denkt dass es tut)
+– Bsp.: Programmierfehler
+
+• Artefakt: Signifikante Ergebnisse, die von Hilfsannahmen 
+
+erzeugt werden (s.u.)
+
+Artefakte
+
+Unterscheidung:
+• Kern-Annahme: eine in Aufgabenstellung und konzeptionellem 
+
+Modell gemachte Annahme
+
+• Hilfs-Annahme: zusätzliche Annahme die nötig ist für die 
+
+Umsetzung des Modells, z.B.: 
+– Gitterzellen zur Abbildung von Raum 
+– Zeitschritte zur  Abbildung von Zeitabläufen 
+
+• Signifikante Annahme: Ursache für ein signifikantes Ergebnis (kann 
+
+Kern- oder Hilfsannahme sein)
+
+(cid:2) Artefakt: Eine signifikante Hilfsannahme, die fälschlicherweise als 
+
+nicht signifikant eingestuft wird
+
+(cid:2) Was passiert wenn ein Artefakt entdeckt wird?
+• Artefakte „verschwinden“, sobald sie entdeckt werden (die Annahme als 
+
+signifikant identifiziert wird)
+
+• Möglichkeiten Artefakte zu reduzieren:
+
+– Variation von Modell-Annahmen
+– Replikation von Modellen durch anderen Modellierer
+
+Bsp. Artefakt: Der „Schweinezyklus“ 
+
+Synchrones update
+
+Asynchrones update
+
+Quelle: Bachelor-Arbeit Henning Nolzen
+
+Bsp. Artefakt (II): Netlogo Traffic
+
+• Modellzweck: 
+
+– Problem: Staus
+– Frage: Wie entstehen Staus? Wie können Staus „ohne Ursache“ 
+
+(Unfall o.ä.) entstehen?
+
+Wortmodell: Each car slows down (decelerates) if it sees a car close 
+ahead, and speeds up (accelerates) if it doesn't see a car ahead. 
+
+Netlogo Traffic
+
+• Geschwindigkeit eines Autos verändern
+
+• Falls Auto voraus: passe Dich Geschwindigkeit an und 
+bremse weiter ab. Sonst: beschleunige (bis maximale 
+Geschwindigkeit).
+
+• Netlogo-Code:
+
+ifelse car-ahead != nobody
+
+[ set speed [speed] of car-ahead
+slow-down-car ]
+
+[ speed-up-car ]
+
+….
+to slow-down-car  ;; turtle procedure
+set speed speed - deceleration
+End
+….
+to speed-up-car  ;; turtle procedure
+set speed speed + acceleration
+end
+
+Netlogo Traffic
+
+• Ergebnisse des Modells
+
+– Staus können ohne „Ursache“ entstehen
+– Dichte der Autos spielt eine große Rolle
+– Kleine Verzögerungen (Abbremsen, Beschleunigen) schaukeln 
+
+sich auf
+
+• Signifikante Annahme: passe Dich Geschwindigkeit an 
+
+und bremse weiter ab
+
+[ set speed [speed] of car-ahead
+
+slow-down-car ]
+
+Wird diese Annahme weggelassen entstehen unabhängig 
+
+von der Dichte keine Staus!
+
+Netlogo Traffic: mögliches Artefakt
+
+• Wird die signifikante Annahme „bremse weiter ab als 
+
+Vordermann“ nicht als solche erkannt stellt sie ein 
+Artefakt dar
+
+• Es ist davon auszugehen, dass dem Modellierer des 
+
+Netlogo-Modells die Signifikanz der Annahme bewusst 
+ist – es wäre hier also kein Artefakt
+
+• Artefakte sind aufgrund ihrer Natur in der Literatur 
+
+schwer zu finden
+
+• Beispiele aufgedeckter Artefakte finden sich in der 
+
+Literatur zur Replikation von Modellen, z.B.:
+– Edmonds and Hales (2003)
+– Galan et al. (2005)
+
+Überprüfung von Modellen
+
+Teilprozesse der Überprüfung von 
+
+Modellen
+
+• Verifikation: Ist das Modell fehlerfrei (Programmierung)?
+
+(Kein Unterschied zu anderer Software (cid:1) Informatik: Debugging, 
+
+Testen)
+
+• Validierung: Ist das Modell eine dem Zweck 
+
+angemessene Abbildung der Realität?*
+
+• Robustheitsanalyse: Sensitivität gegenüber 
+
+Zufallszahlen, Parametern, Annahmen (Vermeidung von 
+Artefakten)
+
+* Gilt für Modellzwecke Vorhersage, Exploration, Verständnis. Modelle die dem Zweck 
+Lernen/Verständigung dienen müssen nicht unbedingt realistisch sein.
+
+Validierung
+
+• Das Modell muss die für die Fragestellung 
+
+relevanten Elemente und Interaktionen enthalten 
+(cid:1) „richtiges“ konzeptionelles Modell
+
+Ansätze zur Validierung – wie
+
+• Quantitativ / numerisch: 
+
+– Vergleich mit historischen Datenreihen
+– Vergleich mit Statistiken / Verteilungen
+– Statistische Verfahren um Güte der Reproduktion zu 
+
+quantifizieren existieren
+
+• Qualitativ 
+
+– Vergleich von Aspekten von Dynamiken des Modells und des 
+
+realen Systems (Richtung, Wendepunkte, Schwellenwerte, 
+Zyklen…)
+
+• Expertenbefragung
+
+– Entspricht die erzeugte System-Dynamik den Erfahrungen des 
+
+Experten?
+
+Ebenen der Validierung – was kann 
+
+geprüft werden
+
+• Mikro-Ebene:
+
+– Dynamik einzelner Agenten: ist solch eine Dynamik / Verhalten 
+
+realistisch?
+
+• Makro-Ebene:
+
+– Emergente Eigenschaften (z.B. Zyklen, räumliche Muster, 
+
+charakteristische Verteilungen) 
+
+– Aggregierte Werte (z.B. Mittelwerte, Zeitreihen)
+
+Validierung beim Modellzweck 
+
+Vorhersage
+
+• Wissen über die Mikro-Ebene 
+
+fließt in Modellspezifikation (kann 
+also nicht für Validierung genutzt 
+werden)
+
+• Wissen über Makro-Ebene wird 
+
+meist (teilweise) genutzt um 
+Modell zu kalibrieren (festlegen 
+unsicherer Parameter)
+
+• Validierung mittels Reproduktion 
+
+zusätzlicher historischer 
+Zeitreihen oder typischen 
+Systemverhaltens (beides auf 
+Makro-Ebene)
+
+Ergebnis
+
+Gegeben
+
+Validierung bei Vorhersage
+
+• Resultat: Nachweis der Fähigkeit des Modells System-
+
+Verhalten innerhalb bestimmter Annahmen zu 
+reproduzieren (im Kontext der empirischen Daten)
+
+• Generelles Problem: Vorhersage soll häufig für neue 
+Situationen gestellt werden (z.B. Auswirkungen neuer 
+Gesetze) 
+
+(cid:2) Man kann (theoretisch) nie sicher sein, dass alle 
+
+Faktoren, die in der neuen Situation relevant 
+sind/werden, im Modell berücksichtigt wurden
+
+(cid:2) Die Vorhersage für eine unbekannte Situation ist 
+
+unsicher, auch wenn das Modell validiert wurde
+
+Was ist der Unterschied zwischen kalibrieren und 
+
+validieren?
+
+Beispiel Validierung 
+Vorhersage: MATSim
+
+• Mögliche Einführung einer West-Umgehung für Zürich
+• Validierung des Modells durch Simulation des Ist-
+
+Zustands
+
+• Mikro-Ebene spezifiziert mittels Straßen-Netz, 
+
+Information über Agenten aus Volkszählung, Mikro-
+Zensus
+
+• Makro-Ebene: Zählstationen, Landnutzungsdaten
+•
+
+Inwiefern die Daten der Makro-Ebene genutzt wurden das Modell zu 
+kalibrieren ist aus der Publikation nicht ganz ersichtlich.
+
+Wirkungen der Westumfahrung Zürich: Analyse mit einer agentenbasierten 
+Mikrosimulation. Schlussbericht Michael Balmer, Andreas Horni, David 
+Charypar. ETH, Eidgenössische Technische Hochschule Zürich, IVT, Institut 
+für Verkehrsplanung und Transportsysteme. 2009 
+
+Validierung MATSim
+
+Qualitative Übereinstimmung mit Mikrozensus (empirische Beobachtung): 
+Morgenspitze, breitere  Abendspitze, kleinere Mittagsspitze
+
+Validierung MATSim
+
+Zählung an einzelnen Kanten:
+• Grün: < +/- 30% relativer Fehler
+• Rot: > 30% Überschätzung
+• Gelb: > 30% Unterschätzung
+
+Validierung MATSim
+
+Simuliert
+Gezählt
+
+Validierung beim Modellzweck 
+
+Exploration
+
+•
+
+Im Prinzip sehr ähnlich 
+Modellzweck Vorhersage
+
+• Allerdings Validierung häufig 
+
+schwierig, da wenig/kein 
+Wissen über Makro-Ebene 
+vorliegt und Wissen über Mikro-
+Ebene bereits für 
+Modellspezifikation verwendet 
+wurde
+
+Ergebnis
+
+Gegeben, Variation
+
+Exploration
+
+• Resultat: Erkenntnisse über Wirkzusammenhänge 
+
+zwischen angenommener Mikro-Struktur und 
+beobachtetem Makro-Ebene Modellverhalten
+
+• Diese Wirkzusammenhänge können verstanden werden 
+und ggf. unabhängig vom Modell nachvollzogen werden
+Ihre Relevanz für reale Systeme muss dann ggf. durch 
+zusätzliche Forschung gezeigt werden
+
+•
+
+Beispiel Sugarscape: Evolution
+
+• Wirkzusammenhang:
+
+– Begrenzte Ressource
+– Heterogene Agenten
+– Mendel‘sche Genetik
+– Reproduktionserfolg abhängig 
+
+von Fähigkeit Ressource zu 
+nutzen
+
+(cid:2) Effekt: Durchschnittliche 
+
+Eigenschaften verlagern sich in 
+Richtung besserer Fähigkeiten 
+zur Ressourcen-Nutzung 
+
+• Validierung: Durch weitere Forschung überprüfen ob Effekt in realen 
+
+Systemen zu beobachten ist, in denen dieser Wirkzusammenhang 
+besteht.
+
+Validierung Modellzweck Verständnis
+
+• Reproduktion der 
+
+Beobachtung auf Makro-
+Ebene
+
+• Ggf. durch zukünftige 
+
+Forschung: Vergleich der 
+gefundenen Mikro-
+Struktur mit realen 
+Systemen
+
+Ausgangspunkt, bekannt
+
+(teilweise) unbekannt, Variation
+
+Beispiel Netlogo Traffic
+
+• Beobachtungen auf Makro-Ebene die vom Modell 
+
+reproduziert werden können:
+– Entstehung von Stau ohne auslösendes Ereignis
+– Stau bewegt sich rückwärts
+
+• Ggf. weitere Untersuchungen angeraten zu signifikanter 
+
+Annahme, dass Fahrzeuge weiter abbremsen als 
+Geschwindigkeit des Vordermanns
+
+Robustheit von Modell-
+
+Ergebnissen
+
+• Unter welchen Veränderungen von Annahmen 
+
+sind die Modellergebnisse stabil?
+
+• Wie empfindlich reagiert das Modell auf 
+
+Änderungen in
+– Zufallszahlen
+– Parameter
+– (Hilfs-)Annahmen / Modellstruktur
+
+• Beispiele: 
+
+– Fahrverhalten in Netlogo Traffic Basic (nicht robust)
+– Bewegung im Schelling-Modell (robust)
+
+Monte-Carlo Analyse
+
+• Testet Robustheit gegenüber Parameter-
+
+Unsicherheit
+
+• Durchführung vieler Simulationsläufe mit 
+
+zufälliger Parameterwahl (aus bestimmter Menge an 
+Parameterwerten, z.B. Intervall [a,b])
+
+• Mehrere Parameter werden gleichzeitig variiert 
+
+(Exploration des gesamten Parameterraums)
+
+• Automatisierung möglich (in Repast S: Parameter 
+
+Sweep (cid:1) siehe Übung)
+
+Variation der Modellstruktur
+
+• Annahmen über die Systemstruktur fließen in 
+
+das Modell ein
+
+• Z.B. Räuber-Beute-Modell: 
+
+– Räuber fressen immer wenn sie auf Beute treffen
+– Räuber fressen nur, wenn sie hungrig sind
+
+• Manifestation in Form der Funktion oder Form 
+
+der Regel (nicht nur Parameterwert)
+
+• Analyse der Auswirkungen von Variation 
+
+unsicherer Annahmen wichtig 
+
+• Wird (leider) selten durchgeführt (da aufwändig)
+
+Ein ausführliches Beispiel:
+
+Artificial Anasazi
+
+Diamond, Jared M. (2002) Life with the artificial Anasazi. NATURE, 
+VOL 419 (10)
+
+Axtell, R.,  J. Dean, G. Gumerman, J. Epstein, A. Swedlund, M. Parker, 
+and McCarroll (1999) Understanding Anasazi Culture Change 
+Through Agent-Based Modelling. In: Dynamics in Human Primate 
+Societies, edited by Kohler, T and Gumerman, G. Oxford University 
+Press Inc, New York.
+
+Marco A. Janssen (2009) Understanding Artificial Anasazi. Journal of
+Artificial Societies and Social Simulation 12 (4) 13
+http://jasss.soc.surrey.ac.uk/12/4/13.html
+
+http://www.openabm.org/model-archive/ArtificialAnasazi
+
+Besprechung von
+
+• Modellzweck
+• Abstraktionsgrad
+• Modellkomplexität (Modellbeschreibung)
+
+– Individuelle Komplexität / Agenten
+– Interaktion
+– (Funktionale Heterogenität)
+
+• Validierung 
+• Robustheitsanalyse
+
+Hintergrund
+
+• ABM zur Unterstützung von Archäologie: Wie passen 
+Befunde und Annahmen über Verhalten zusammen? 
+
+• Untersuchtes Gebiet: prähistorisches „Long House 
+
+Valley“ (Nord-Ost Arizona, USA). 
+
+• Die „Anasazi“ lebten von Subsistenz -Wirtschaft (Mais). 
+• Population besiedelt das Tal seit ca. 800 n.Chr. 
+
+Plötzliches Verlassen des Tals um 1300. 
+
+• Gute archäologische Befunde lassen eine recht genaue 
+
+Beschreibung der raum-zeitlichen Ausbreitung der 
+Anasazi zu. 
+
+Quelle: Wikipedia
+
+Quelle: Diamond 2002
+
+Long House Valley
+
+Modellzweck + Grundlagen
+
+• Modellzweck Verständnis: Das Modell soll helfen 
+
+die Siedlungsgeschichte (Fluktuationen in 
+Populationsgröße) und das plötzliche Verlassen des 
+Tals zu verstehen.
+
+• Realistisches Modell: Zuschnitt auf spezifischen 
+
+Fall und starke Nutzung entsprechender empirischer 
+Daten
+
+• Grundlage der Modellstruktur 
+
+– Theorie + quantitative Information über Umgebung und 
+
+Umweltschwankungen
+
+– Annahmen über Verhalten der Haushalte (basierend auf 
+Verhalten von heutigen Pueblo-Indianern die Nachfahren 
+der Anasazi sind).
+
+Warum ein agentenbasiertes Modell?
+
+• Raum-zeitliche Dynamik der Besiedlung von Interesse 
+
+(cid:1) expliziter inhomogener Raum
+
+• Besiedlung ergibt sich aus historischer Entwicklung (cid:1)
+
+Pfadabhängigkeit
+
+Modell: Umwelt
+
+• Das Tal hat sieben verschieden 
+Zonen (insgesamt 96km2)
+
+• Diese unterscheiden sich in 
+Produktivität (Mais)
+
+• Jede Zelle: 100x100m 
+
+• Sehr großer Aufwand betrieben die 
+Mais-Produktivität der Umgebung 
+nachzuvollziehen: 
+
+-"Palmer Drought Index“ PDSI (ein 
+Maß für Trockenheit berechnet 
+anhand von Niederschlag und 
+Temperatur, schwankt zeitlich), 
+Nachvollzogen anhand von 
+Baumringen etc. 
+
+- Klassifizierung der Erde 
+
+- Berücksichtigung der Verfügbarkeit 
+von Grundwasser.
+
+Produktivität der Umwelt
+
+Ernte
+
+Die tatsächliche Ernte in einem Jahr ist normal verteilt 
+um den base yield. 
+
+Diese zufällige Schwankung bildet Unterschiede 
+zwischen Jahren ab.
+
+Agenten
+
+• Ein Agent ist ein Haushalt mit 5 Personen.
+• Bedarf an Essen: 800kg Mais / Jahr
+
+– Essen wird nicht mit anderen Haushalten geteilt 
+– Vorrathaltung auf Haushaltsebene (bis zu 2 Jahre)
+
+• Agenten sind Bauern 
+• Haushalte haben ein Haus und ein Feld
+
+– Ein Feld =1 Zelle
+– Felder sind nicht identisch mit Häusern (max. 
+
+Abstand = 1 Meile) 
+
+– Mehrere Häuser können auf einer Zelle stehen
+– Nur unbebaute Zellen können Felder werden
+
+Agenten Regeln
+
+• Falls die Ernährung erwartungsgemäß im nächsten Jahr 
+
+nicht gesichert ist, suche ein neues Feld (+ Haus)
+
+• Die Erwartung ergibt sich aus der diesjährigen Ernte + 
+
+Vorrat im Vergleich zum Bedarf
+
+• Haushalte im fruchtbaren Alter spalten mit gewisser Wkt. 
+
+neue Haushalte ab (Heirat einer Tochter. Zeit bis 
+fruchtbares Alter des Haushalts: Aufwachsen der 
+Tochter, Finden eines Mannes, eigenen Haushalt 
+gründen)
+
+Suche eines neuen Felds
+
+•
+
+Identifiziere alle unbesetzten Zellen die mehr als das 
+benötigte Minimum (800kg) abwerfen (BY>800) und die 
+nicht weiter als 1 Meile von einer Wasserquelle entfernt
+sind. 
+
+• Falls mehrere Zellen diese Kriterien erfüllen, dann wähle
+diejenige welche der jetzigen Position am nähesten ist. 
+
+Suche eines neuen Wohnorts
+
+• Folgende Bedingungen müssen erfüllt sein:
+
+– Nicht als Acker genutzt (aber darf bewohnt sein)
+– Im Umkreis von 1 Meile zum Feld
+– In einer weniger produktiven Zelle als das Feld
+
+• Falls mehrere Zellen diese Kriterien erfüllen wähle
+
+diejenige welche am nähesten an einer Wasserquelle ist
+
+• Falls keine Zelle die Kriterien erfüllt beachte nur die 
+ersten beiden und ggf. nur das erste Kriterium. Falls 
+überhaupt keine Zelle gefunden werden kann entferne
+den Agenten aus der Simulation (aus dem Tal). 
+
+Betrachtung – Agenten/Individuelle 
+
+Komplexität
+
+• Sehr einfache Agenten. Für 
+
+Siedlungsgeschichte nur relevant: 
+– Reproduktion / Vermehrung
+– Besiedlung / Ausbreitung im Tal
+
+• Haushalte als Agenten:
+
+– Abstraktion von Menschen als natürliche Einheit
+– Haushalt entspricht Leben einer Frau im Alter ca. 16 -
+
+46 Jahre
+
+– Immer 5 Personen. Verschiedene Prozesse werden 
+
+abstrahiert und integriert: Geburten, Todesfälle, 
+Umzüge, …
+
+Betrachtung - Interaktion
+
+• Abspaltung von Haushalten
+• Nutzung der Umwelt (Besetzen von Feldern)
+(cid:2) Vergleichsweise geringe Interaktion
+
+Modell-Ablauf
+
+Zeitschritt 1 Jahr:
+
+• Berechne die Ernte für jeden Haushalt (jedes Jahr erneut 
+
+aufgrund Veränderungen des Grundwasserspiegels und jährlicher 
+Schwankungen)
+
+• Entferne Agenten die das maximale Alter überschritten haben 
+
+oder deren Ernte und Vorrat nicht ausreichen, um den Bedarf zu 
+decken
+
+• Für jeden Agenten: berechne den erwarteten Ertrag für das 
+
+nächste Jahr
+
+• Alle Agenten die nicht genügend Ertrag erwarten suchen ein 
+
+neues Feld und Haus
+
+• Alle Agenten im fruchtbaren Alter spalten mit der 
+
+Wahrscheinlichkeit pf einen Haushalt ab. An diesen Haushalt wird 
+ein Anteil fCS des Maisvorrats abgegeben
+
+• Update des Grundwasserspiegels basierend auf Input Daten
+• Jeder Haushalt altert um ein Jahr
+
+Initialisierung
+
+Umwelt: 
+• Die Qualität der Erde einzelner Zellen (vgl. Base-Yield) wird
+
+zufällig (normalverteilt) variiert (Parameter “Harvest 
+Variance”). 
+
+• Dadurch fallen einige Zellen in fruchtbaren Gegenden unter 
+
+den Schwellwert 800kg und einige in weniger fruchtbaren 
+Gegenden klettern über den Schwellwert.
+
+Agenten:
+• Anfängliche Anzahl Haushalte im Jahr 800: 14
+• Haushalt-Alter zufällig aus [0,29]
+• Mais-Vorrat zufällig aus [2000, 2400]
+
+www.openabm.org/model-archive/ArtificialAnasazi
+
+Kalibrierung
+
+• Default-Parameter: 
+
+deutliche Überschätzung 
+Populationsgröße (s. 
+rechts)
+
+• Anpassen von 
+
+Parametern durch 
+Minimierung Differenz 
+Simulation und Daten (15 
+Simulationen, Axtell et al. 
+2002): 
+– Harvest Variance = 0.4
+– Harvest adjustment level = 
+
+0.6
+
+Ergebnisse
+
+Diamond 2002
+
+Kalibrierung und Validierung
+
+• Kalibrierung und Validierung 
+
+nicht getrennt 
+
+• Modellzweck: Verständnis
+• Validierung durch 
+
+•
+
+Reproduktion empirischer 
+Daten (Makro–Ebene)
+In weiten Teilen eine recht 
+gute Übereinstimmung (cid:1)
+eine mögliche Erklärung ist 
+gefunden
+
+• Aber: Exodus aus Tal kann 
+
+nicht (vollständig) erklärt 
+werden
+
+Analyse
+
+• Wesentlich für die 
+
+Dynamik des Modells 
+ist die Veränderung der 
+Tragfähigkeit (=Anzahl 
+Zellen die einen Haushalt 
+versorgen können)
+
+• Agentenregeln wirken 
+
+(nur) als „Glättung“
+
+• Die Anpassung an die 
+
+Tragfähigkeit ist 
+zeitverzögert (Zeit f. 
+Reproduktion, 
+Vorratshaltung)
+
+Janssen 2009
+
+Erkenntnisse
+
+• Es gibt um 1250 einen Abfall der Mais-Produktivität 
+
+(bedingt durch Umweltschwankungen)
+
+• Laut Modell könnten jedoch rund 400 Anasazi bei 
+gegebenen Umweltbedingungen im Valley bleiben
+
+• Das plötzliche Verlassen des Long House Valley kann 
+
+nicht komplett vom Modell erklärt werden
+
+(cid:2) Die Umweltbedingungen alleine sind also wohl nicht der 
+
+Grund für das Verschwinden der Anasazi
+
+Spekulation
+
+• Mögliche zusätzliche Faktoren, die nicht im Modell 
+
+berücksichtigt wurden?
+
+• z.B.
+
+– verringerte Fruchtbarkeit der Erde
+– abgeholzte Wälder nahe des Valley
+– soziale Faktoren
+
+Robustheitsanalyse
+(Janssen 2009)
+
+Sensitivitätsanalyse (Zufallszahlen)
+
+Janssen 2009
+
+Sensitivitätsanalyse (Parameter)
+
+Folgende Parameterwerte wurden untersucht:
+• Maximales Alter und Ende der Fruchtbarkeit: zwischen 26 und 
+40, Schrittweite 2 (Ende Fruchtbarkeit <= maximales Alter 
+(cid:1) 36 Kombinationen)
+
+• Fission Probability: zwischen 0.095 und 0.185, Schrittweite
+
+0.015.
+
+• Harvest Adjustment Level zwischen 0.54 und 0.7, Schrittweite
+
+0.02 
+
+• Harvest Variance zwischen 0 und 0.7, Schrittweite 0.1
+
+(cid:2) 18144 Parameter Kombinationen
+(cid:2) Jeweils 15 Simulationen
+
+Maße
+
+• L1 population: Summe der absoluten Differenz zwischen
+
+historischer und simulierter Populationsgröße
+
+• L2 population: Summe der quadratischen Differenz
+
+zwischen historischer und simulierter Populationsgröße
+
+• L1 carrying capacity: Summe der absoluten Differenz
+
+zwischen historischer Populationsgröße und (simulierter) 
+Tragfähigkeit
+
+• L2 carrying capacity: Summe der quadratischen Differenz
+zwischen historischer Populationsgröße und (simulierter) 
+Tragfähigkeit
+
+Für jeden Parameter nimm Wert mit 
+bestem Fit (des Mittels über 15 Läufe). 
+Teile den Wert durch den insgesamt 
+besten Fit (cid:1) Bester Fit hat Wert 1.
+
+Zusammenfassung - Artificial Anasazi
+
+• Modell soll rückblickend die Plausibilität von Annahmen 
+
+im Lichte von empirischen Befunden klären
+
+• Modell-Input (Mikro-Ebene):
+
+– Raum-zeitlich aufgelöste potentielle Mais-
+
+Produktivität (gut gesichert)
+
+– Einfache Bewegungs- und Reproduktionsregeln 
+
+(Annahmen)
+
+• Kalibrierung unsicherer Modellparameter anhand von 
+
+Zielgröße (Populationsverlauf über der Zeit)
+– Sensitiv: Parameter die Tragfähigkeit bestimmen (z.B. 
+
+durchschnittlicher Ernteerfolg)
+
+– Robust: Annahmen bzgl. Agenten (maximales Alter, 
+
+Fruchtbarkeit etc.)
+
+• Wissen über Makro-Ebene wird bereits verwendet für 
+
+Modell-Spezifikation. Keine weitere Validierung möglich.
+
+Zusammenfassung - Artificial Anasazi
+
+• Wesentlich für die Dynamik des Modells ist die 
+
+Veränderung der Tragfähigkeit 
+
+• Agentenregeln wirken (nur) als „Glättung“
+
+– die Anpassung an die Tragfähigkeit ist zeitverzögert (Zeit f. 
+
+Reproduktion, Vorratshaltung)
+
+• Modell kann Populationsschwankungen recht gut 
+
+reproduzieren
+
+• Das Verlassen des Tals wird vom Modell nicht 
+
+reproduziert.
+
+(cid:1) Das Modell liefert keine vollständige Erklärung, bietet 
+aber eine gute Ausgangsbasis, die ergänzt werden kann.
+
+• Wie findet ihr das Modell der Artificial Anasazi?
+
+• Nächstes Mal:
+
+– Darstellung & Kommunikation von Modellen
+– Unsicherheiten
+
+Literatur
+
+• Edmonds B and Hales D (2003) Replication, replication and replication: 
+
+Some hard lessons from model alignment. Journal of Artificial Societies and 
+Social Simulation, 6 (4) http://jasss.soc.surrey.ac.uk/6/4/11.html.
+
+• Galan, Jose Manuel and Izquierdo, Luis R. (2005). 'Appearances Can Be 
+
+Deceiving: Lessons Learned Re-Implementing Axelrod's 'Evolutionary 
+Approach to Norms''. Journal of Artificial Societies and Social Simulation
+8(3)2 <http://jasss.soc.surrey.ac.uk/8/3/2.html>. 
+J.M. Galán, L.R. Izquierdo, S.S. Izquierdo, J.I. Santos, R. del Olmo, A. 
+López-Paredes, B. Edmonds, Errors and Artefacts in Agent-Based
+Modelling, JASSS 12 (1) (2009).
+Janssen, M. 2009. Understanding Artificial Anasazi. Journal of Artificial 
+Societies and Social Simulation 12 (4) 13.
+J. Gary Polhill, Luis R. Izquierdo and Nicholas M. Gotts (2005) The Ghost in 
+the Model (and Other Effects of Floating Point Arithmetic). Journal of 
+Artificial Societies and Social Simulation vol. 8, no. 1
+
+•
+
+•
+
+•
+
+• Troitzsch, K. Validating Simulation Models,  18th European Simulation 
+
+Multiconference, Magdeburg, Germany, 2004.
+
+

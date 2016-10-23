@@ -1,0 +1,676 @@
+Dipl.-Psych. Jennifer Lindzus        Universität Osnabrück           WS 2014/2015 
+
+ÜBUNG »STATISTIK UND DATENANALYSE I« 
+
+Lösungen Aufgabenblatt 7 
+
+ 
+
+ 
+
+Aufgabe 
+
+1 
+
+ (ohne SPSS) 
+
+ 
+  (Menge 
+Zur  Lösung  der  beiden  ersten  Teilaufgaben,  sollten  Sie  mit  den  Konzepten  „Durchschnitt“ 
+aller Elemente, die zu beiden Mengen gehören) sowie „Vereinigung“ 
+ (Menge der Elemente, die ent-
+weder zu Menge A oder B oder zu beiden gehören) aus der Mengenlehre vertraut sein. Zudem verlan-
+gen  beide  Teilaufgaben  die  Bildung  des  so  genannten  „kartesischen  Produktes“  zweier  Mengen  (vgl. 
+Folie 8; VL „Grundlagen der Wahrscheinlichkeitstheorie, Teil I“). 
+ 
+(a) 
+
+(b) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+) einer Menge 
+
+ bestimmen. Die Elemente der Menge 
+
+(c) In dieser Aufgabe sollen Sie die Mächtigkeit (angezeigt durch die Betragsstriche) der Potenzmenge 
+ haben Sie in Teilaufga-
+ beinhaltet alle Teilmengen der 
+(inklusive der Menge Ω selbst; auch „sicheres Ereignis“, vgl. Folie 23). Ihre Aufgabe besteht 
+zu bestimmen. Die sog. Mächtigkeit ei-
+) entspricht - bei endlichen Mengen - der Anzahl der in der 
+o-
+? Dieser Frage nähern wir uns nun 
+
+(Schreibweise: 
+be (a) bereits bestimmt. Die sogenannte Potenzmenge der Menge 
+Menge 
+jetzt darin, die Mächtigkeit der Potenzmenge der Menge 
+ner Menge (hier der Potenzmenge von 
+Menge befindlichen Elemente. Wie viele Elemente befinden sich also in der Potenzmenge von 
+der anders ausgedrückt, wie viele Teilmengen hat die Menge 
+schrittweise. 
+Neben der Menge selbst (Ω) ist auch die sogenannte leere Menge Ø (auch: „unmögliches Ereignis“) 
+, denn sie ist Teilmenge jeder Menge. Neben diesen beiden Men-
+eine Teilmenge unserer Menge 
+gen sind alle einelementigen (z.B. 
+), dreielemen-
+
+), zweielementigen (z.B. 
+
+ ermitteln.] Die Anzahl der einelementigen Teilmengen der Menge 
+
+),  vierelementigen  und  fünfelementigen  echten  Teilmengen  der 
+tigen  (z.B.
+Menge 
+ Bestandteil der Potenzmenge [Anmerkung: Zur Beantwortung dieser Aufgabe müssen die 
+Teilmengen nicht im einzelnen aufgeschrieben werden. Sie sollen lediglich die Anzahl aller Teilmenge 
+der Menge 
+ ist offensichtlich 
+6. Aber wie viele zweielementige Teilmengen gibt es? Dies lässt sich mittels Rückgriff auf die Formel 
+des 3. kombinatorischen Falls bestimmen (vgl. Folie 19; VL „Grundlagen der Wahrscheinlichkeitsthe-
+orie, Teil I“). Diese Formel erlaubt uns zu bestimmen, wie viele Mengen der „Größe“ k  (hier 2) sich 
+aus den n=6  Elementen der Menge 
+ bilden lassen, da die Reihenfolge der Elemente innerhalb der 
+)  und  jedes  der  6 
+geschweiften  Klammern  bedeutungslos  ist  (
+Elemente pro Teilmenge nur einmal vorkommt (d.h. Ziehung ohne Zurücklegen).  
+
+ 
+
+– 1 – 
+
+ 
+
+ 
+
+49. KW 
+
+(){1,2}({,}{,}){1,2}{,,}{(1,),(1,),(1,),(2,),(2,),(2,)}EABCabbcabcabcabc(  )(  B){(1,),(1,),(2,),(2,)}{(1,),(1,),(3,),(3,)}{(1,),(1,)}FABDababababab2EEEEEEEEEE{(1,)}a{(1,),(1,)}ab{(1,),(1,),(1,)}abcEEEE{(1,),(1,)}{(1,),(1,)}abbaDipl.-Psych. Jennifer Lindzus        Universität Osnabrück           WS 2014/2015 
+
+ 
+
+ 
+Nun setzten wir erneut ein, um die Anzahl aller möglichen Tripelkombinationen (k=3) zu erhalten: 
+
+ 
+
+ 
+Analog dazu die Quadrupelkominationen (mit k=4): 
+
+ 
+Und zuletzt die Quintupelkombinationen (mit k=5): 
+
+ 
+
+ 
+
+ 
+
+ 
+Zählen wir nun zusammen, so haben wir die leere Menge, 6 einelementige, 15 zweielementige, 20 
+dreielementige, 15 vierelementige und 6 fünfelementige Teilmengen sowie 1 sechselementige Teil-
+menge (d.h. die Menge selbst), weshalb gilt: 
+
+=1+6+15+20+15+6+1=64 
+
+Die Mächtigkeit der Potenzmenge von 
+
+ beträgt also 64.  
+
+ES lässt sich zeigen, dass jede Potenzmenge einer endlichen Menge genau 
+
+ Elemente hat:  
+
+ 
+
+ 
+
+ 
+
+Aufgabe 
+
+2 
+
+ (ohne SPSS) 
+
+ 
+(a)  Die Wahrscheinlichkeit, dass der Buchstabe ein Vokal ist beträgt: 
+
+ 
+
+Die Wahrscheinlichkeit, dass der Buchstabe unter den ersten zehn des Alphabets ist beträgt: 
+
+ 
+
+Die Wahrscheinlichkeit, dass der gezogene Buchstabe unter den ersten zehn des Alphabets ist und 
+ein Vokal ist (Buchstaben a, e oder i) beträgt: 
+
+ 
+
+Die gesuchte Wahrscheinlichkeit 
+
+ergibt sich also wie folgt: 
+
+ 
+
+ 
+(b)  Die Wahrscheinlichkeit, dass Herr M. in 20 Jahren noch lebt beträgt: 
+
+ 
+
+Die Wahrscheinlichkeit, dass Frau S. in 20 Jahren noch lebt beträgt: 
+
+ 
+
+ 
+
+– 2 – 
+
+ 
+
+ 
+
+49. KW 
+
+!(1)6515!!22nnnnKkknk!6!654321!!3!(63)!nnKkknk(321)(321)120206!6!654321!!4!(64)!nnKkknk(4321)30152(21)6!6543215!(65)!nKk(54321)66112EE262264E5P(A)2610P(B)263P(AB)26P(AB)510312P(AB) = P(A) + P(B) - P(AB) = .4626262626P(A).60P(B).70Dipl.-Psych. Jennifer Lindzus        Universität Osnabrück           WS 2014/2015 
+
+ 
+
+ 
+Im Falle zweier unabhängiger Ereignisse, ergibt sich die Wahrscheinlichkeit des gemeinsamen Auf-
+tretens der  beiden Ereignisse  aus dem Produkt der Auftretenswahrscheinlickeiten der  Einzelereig-
+nisse (s.a. Folie 90, VL „Bivariate deskriptive Statistik“ Multiplikationstheorem der Wahrscheinlich-
+keiten bzw. Folie 27, VL „Wahrscheinlichkeitstheorie, Teil I“): 
+
+ 
+
+Die Wahrscheinlickeit, dass beide Personen in 20 Jahren noch leben liegt also bei 42%. 
+ 
+
+(c)  Bei den kombinatorischen Basisaufgaben sollten vorab immer die beiden folgenden Fragen beant-
+
+wortet werden: 
+
+1.  Spielt die Reihenfolge eine Rolle oder nicht? Sind zwei Kombinationen, die genau die gleichen 
+Elemente in unterschiedlicher Reihenfolge (Peter - Marie - Hans & Hans - Marie - Peter) aufwei-
+sen, als gleich anzusehen, so spielt die Reihenfolge keine Rolle. 
+
+2.  Erfolgt  die  Ziehung  mit  Zurücklegen  (Wiederholung)  oder  ohne?  „Mit  Wiederholung“  heißt, 
+dass beispielsweise eine gezogene Kugel bei einer (imaginären) Urnenziehung wieder zurückge-
+legt  wird  und  dann  erneut  gezogen  werden  könnte.  In  diesem  Fall  kann  also  jedes  Element 
+mehrmals auftreten, was im Fall ohne Zurücklegen unmöglich ist. 
+
+Aus n=20 Tieren werden k=3 ausgewählt. Die Auswahl ist hier also ohne Zurücklegen (wenn ein Tier 
+einem  Familienmitglied  zugewiesen  wurde,  so  steht  es  für  alle  anderen  Familienmitglieder  nicht 
+mehr zur Verfügung). Die Reihenfolge spielt eine Rolle, da es ja von Bedeutung ist, welchem Famili-
+enmitglied welches Tier zugeordnet wird (Affe, Löwe, Hund ≠ Löwe, Hund, Affe).  
+
+Demnach handelt es sich um den 2. Fall der Kombinatorik, weshalb hier wie folgt zu rechnen ist: 
+
+ 
+
+ 
+Für ein Kind, das aus 20 Tieren für 3 Familienangehörige je ein anderes Tier auswählen soll, ergeben 
+sich also 6840 Kombinationsmöglichkeiten. 
+ 
+
+(d)  In  Aufgabe  (c)  konnten  die  3  gewählten  Tiere  unterschiedlich  auf  die  Familienmitglieder  verteilt 
+werden und es war bedeutsam, wem welches Tier zugeordnet wurde. Im Gegensatz dazu ergeben 
+fünf ausgewählte Mitarbeiter aber immer dasselbe Team (unabhängig davon, wer zuerst dem Team 
+zugeteilt wurde; d.h. Dieter, Hans und Peter = Dieter, Peter und Hans). Die Reihenfolge, in der die 
+Mitarbeiter ausgewählt werden, spielt keine Rolle. Die Auswahl erfolgt zudem ohne Zurücklegen (3. 
+Fall), da ein Mitarbeiter nicht zweimal in einem Fünferteam sein kann. Also ist hier wieder (wie in 
+Aufgabe 1 c) der Binomialkoeffizient zu berechnen: 
+
+ 
+
+ 
+
+Es gibt also 56 Möglichkeiten die  n=8 Mitarbeiter in Gruppen à 5 Personen einzuteilen. 
+ 
+
+(e)  Es handelt sich hier um den ersten kombinatorischen Fall, da bei jedem der vier Würfelwürfe wie-
+der  alle  Zahlen  von  1-6  möglich  sind  (also:  mit  Zurücklegen)  und  explizit  nach  der  Anzahl  unter-
+schiedlicher  Zahlenabfolgen  (also:  mit  Reihenfolge)  gefragt  ist.  Bei  jedem  Würfelwurf  gibt  es  n=6 
+Möglichkeiten und damit bei k=4 Würfen 
+ 
+Von  diesen  1296  verschiedenen  Ergebnissen,  die  alle  gleich  wahrscheinlich  sind  (nämlich  P(A)  = 
+1/1296) gibt es genau 6, die die in der Aufgabenstellung geforderte Bedingungen erfüllen, dass vier 
+gleiche Zahlen gewürfelt werden sollen (1-1-1-1, 2-2-2-2, 3-3-3-3, 4-4-4-4, 5-5-5-5, 6-6-6-6).  
+
+verschiedene Ergebnisse (
+
+). 
+
+ 
+
+– 3 – 
+
+ 
+
+ 
+
+49. KW 
+
+P(AB) = P(A)P(B) = 0.60.7 = .42!20!20191817!()!(203)!nKnk17!201918684088!8765!55!(85)!K5!336566321knnnnn461296Dipl.-Psych. Jennifer Lindzus        Universität Osnabrück           WS 2014/2015 
+
+ 
+
+Nach Laplace ergibt sich also die gesuchte Wahrscheinlichkeit, bei viermaligem Würfelwurf vier glei-
+che Zahlen zu erwürfeln, nach folgender Formel: 
+ 
+
+ 
+
+ 
+Die Wahrscheinlichkeit beträgt also ca. 0,5 Prozent. 
+ 
+
+ 
+
+Aufgabe 
+
+3 
+
+ (ohne SPSS) 
+
+ 
+(a)  Die beiden Ereignisse seien hier bezeichnet mit:  
+
+T=Das Kind besteht den Test  
+
+ 
+
+bzw. 
+
+= Das Kind besteht den Test nicht 
+
+S=Das Kind ist schulreif  
+
+ 
+
+bzw.   = Das Kind ist nicht schulreif 
+
+Gegeben sind die a priori Wahrscheinlichkeiten: 
+
+P(T) = .74 
+
+P(S) = .88 
+
+Außerdem ist die bedingte (a posteriori) Wahrscheinlichkeit  P(T |S) = .81 gegeben, also die Wahr-
+scheinlichkeit,  dass  ein  Kind,  das  das  Ziel  des  ersten  Schuljahres  erreicht  hat  (und  somit  schulreif 
+ist), den vorab durchgeführten Test bestanden hat.  
+
+[Anmerkung:  Um  die  bereits  gegebene  Wahrscheinichkeiten  überhaupt  bestimmen  zu  können, 
+müsste man den Test wohl vorab mit einer großen Stichprobe Kinder durchgeführt haben, die man 
+anschließend (unabhängig vom Testergebnis!) alle eingeschult hat.] 
+
+Die  mit  den  beiden bekannten Randwahrscheinlichkeiten  versehene Vierfeldertafel  sieht dann zu-
+nächst wie folgt aus: 
+
+ 
+
+ 
+
+Test 
+
+ 
+
+ 
+
+ 
+
+T 
+
+ 
+ 
+
+Schulreife 
+
+S 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1 
+
+Für die beiden übrigen Randwahrscheinlichkeiten ergibt sich in der Folge:  
+
+ 
+
+ sowie 
+
+. 
+
+Die „Und“-Wahrscheinlichkeiten in der Vierfeldertafel fehlen zunächst, lassen sich aber mithilfe der 
+Formel zur Errechnung von  P(T |S) bestimmen, wenn man die Formel wie folgt umformt: 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+– 4 – 
+
+ 
+
+ 
+
+49. KW 
+
+AnzahlgünstigeErgebnisse6().005AnzahlmöglicheErgebnisse1296PATSS()PST()PST().74PTT()PST()PST()PT().88PS()PS()1()PSPS1.88.12()1()1.74.26PTPT()(|)()()(|)()PTSPTSPSPTSPTSPSDipl.-Psych. Jennifer Lindzus        Universität Osnabrück           WS 2014/2015 
+
+Für das Datenbeispiel ergibt sich: 
+
+ 
+
+ 
+
+  („Test  bestanden“),  also  die  Wahrscheinlichkeit 
+
+Anmerkung:  Die  a  priori  Wahrscheinlichkeit  des  gemeinsamen  Auftretens  von 
+
+  („schulreif“)  und  
+,  was  gleichbedeutend  ist  mit 
+, lässt sich also in diesem Datenbeispiel nicht einfach dadurch bestimmen, dass man die 
+dazugehörigen Randwahrscheinlichkeiten miteinander multipliziert, da die Ereignisse Test bestanden 
+/ nicht bestanden und schulreif / nicht schulreif nicht unabhängig voneinander sind. Wären sie tat-
+sächlich  unabhängig  voneinander,  so  wäre  dies  ein  katastrophales  Zeugnis  für  den  verwendeten 
+Schuleignungstest. 
+
+Wir können die Wahrscheinlichkeiten für die einzelnen Zellen aber dennoch bestimmen, dazu benö-
+tigen  wir  aber  die  Kenntnis  über  wenigstens  eine  „Zellwahrscheinlichkeit“  (wie  oben  berechnet), 
+denn wenn uns die Wahrscheinlichkeit für eine Zelle bekannt ist, können wir alle übrigen als Diffe-
+renzen zu den bereits bekannten Randwahrscheinlichkeiten berechnen (vgl. Tafel in (b)).  
+
+ 
+
+ 
+
+ 
+
+Test 
+
+ 
+
+ 
+
+ 
+
+T 
+
+ 
+ 
+
+Schulreife 
+
+S 
+
+A 
+
+C 
+
+ 
+
+B 
+
+D 
+
+ 
+
+ 
+
+A + B 
+
+C + D 
+
+A + C 
+
+B + D 
+
+A+B+C+D = 1 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(b)  Die  Wahrscheinlichkeiten  von  Fehlentscheidungen  kann  man  den  beiden  grau  hinterlegten  Zellen 
+
+der Vierfeldertafel entnehmen. Es gibt zwei Arten von Fehlentscheidungen: 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+S 
+
+ 
+
+0.7128 
+
+0.0272 
+
+.74 
+
+0.1672 
+
+0.0928 
+
+.26 
+
+.88 
+
+.12 
+
+ 
+
+ 
+
+ 
+
+ 
+T 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+1.  ein  schulreifes  Kind  wird  durch  den  Test  abgelehnt  (mit  einer  Wahrscheinlichkeit  von 
+
+     
+
+) 
+
+2.  ein  nicht 
+
+schulreifes  Kind  besteht  den  Test 
+
+) 
+
+(mit  einer  Wahrscheinlichkeit  von 
+
+Zusammengefasst werden also bei Einsatz des Testes in ca. 20% aller Fälle Fehlentscheidungen ge-
+troffen. Da insgesamt nur 12% der Kinder nicht schulreif sind, würden bei anschließender Einschu-
+lung aller Kinder - unabhängig vom Testergebnis - also nur 12% fehlerhafte Entscheidungen getrof-
+fen. Die Fehlerquote bei Einsatz des Testes fällt also in diesem Beispiel höher aus als die Fehlerquo-
+te, die resultieren würde, wenn man auf eine Testung verzichten und einfach alle Kinder einschulen 
+würde. 
+
+Bevor man allerdings aufgrund dieser Ergebnisse den Test generell als unbrauchbar verwirft, sollte 
+der relative Schaden, der durch die beiden unterschiedlichen Fehlertypen entstehen kann, genauer 
+
+ 
+
+– 5 – 
+
+ 
+
+ 
+
+49. KW 
+
+()(|)()0.810.88.7128PTSPTSPSST()PST()PTS().1672PTS().0272PTSSTSTDipl.-Psych. Jennifer Lindzus        Universität Osnabrück           WS 2014/2015 
+
+ 
+
+betrachtet werden. Für den Test spricht jedenfalls, dass noch nicht schulreife Kinder bei Einsatz des 
+).  Mög-
+Testes  nur  mit  geringer  Wahrscheinlichkeit  irrtümlich  eingeschult  werden  (
+
+licherweise sind die negativen Konsequenzen, die durch einen solchen Fehler entstehen, aber sehr 
+viel stärker zu gewichten, als die der anderen Fehlentscheidung (z.B. weil die Kinder dann überfor-
+dert wären, schon früh in der Schule Probleme bekommen, frustriert sind, als „Schulversager“ stig-
+matisiert werden oder sich selbst für unfähig halten). Andererseits gibt es aber sicher auch Gründe, 
+die gegen eine zu spät erfolgte Einschulung sprechen (z.B. Verlust von Zeit, Unterforderung, Lange-
+weile). 
+
+Man sieht an diesem Beispiel, dass die Konsequenzen der beiden Fehlerarten sehr unterschiedlich 
+sind, was typischerweise der Fall ist. Hier muss also eine psychologisch begründete Abwägung ge-
+troffen werden. 
+
+ 
+
+Aufgabe 
+
+4 
+
+ 
+
+(a)  Diese  Aufgabe  lässt  sich  nicht  über  eine  der  vier  Grundaufgaben  der  Kombinatorik  lösen,  da  die 
+beiden  möglichen  Ergebnisse  der  Ergebnismenge  {schwarze  Taste,  weiße  Taste}  nicht  gleichwahr-
+scheinlich  sind  (vgl.  Folie  15;  Vorlesung  „Grundlagen  der  Wahrscheinlichkeitstheorie,  Teil  1“).  Die 
+Lösung  besteht  darin,  das  zufällige  Drücken  der  Klaviertasten  als  Bernoulliexperiment  zu  betrach-
+ten, das durch die folgenden Charakteristika gekennzeichnet ist: Ein Zufallsvorgang [hier: das wahl-
+lose  Drücken  einer  der  88  Tasten]  wird  unter  identischen  Bedingungen  n-mal  wiederholt  [hier: 
+n=10] und die Wahrscheinlichkeit des Eintretens eines Ereignisses [hier: das Drücken einer weißen 
+Taste] bleibt dabei konstant [ist hier der Fall, da keine Klaviertasten entfernt werden].  
+ 
+Die Wahrscheinlichkeit eine weiße Taste zu drücken [Ereignis A] beträgt in unserem Beispiel: 
+ 
+
+ 
+
+ 
+Die Zufallsvariable X [Anzahl gedrückter weißer Tasten bei 10 Wiederholungen], die die Ergebnisse 
+des Bernoullieexperiments enthält ist also binomialverteilt (vgl. Folie 19; Vorlesung „Grundlagen der 
+Wahrscheinlichkeitstheorie,  Teil  2“).  Möchte  man nun wissen,  wie  wahrscheinlich es  ist, dass bei 
+n=10 Wiederholungen das Ereignis  A mit der Wahrscheinlichkeit p=0,59 genau k=5 mal eintritt, so 
+kann man sich diese Frage beantworten, indem man die entsprechenden Daten in die Wahrschein-
+lichkeitsfunktion der Binomialverteilung einsetzt: 
+ 
+
+ 
+
+ 
+Die Wahrscheinlichkeit, dass von 10 willkürlich gedrückten Tasten  genau 5 weiß sind, beträgt also 
+ca. 18% (bzw. ca. 21%, wenn man nicht wie oben gerundet hat).  
+[Anmerkung: Der Binomialkoeffizient lässt sich auf vielen wissenschaftlichen Taschenrechnern über 
+die Funktion nCr berechnen, d.h. im Falle unseres Beispiels: 10 nCr 5 = 252.] 
+ 
+
+ 
+(b)  Wollte  man  die  Wahrscheinlichkeit,  dass  Gundula  mindestens  9  weiße  Tasten  erwischt  per  Hand 
+ausrechnen, müsste man zunächst die Wahrscheinlichkeiten berechnen, dass sie beim zehnmaligen 
+
+ 
+
+– 6 – 
+
+ 
+
+ 
+
+49. KW 
+
+().0272PTS52()0,5988PA55()(1)1010!(5)0,590,410,070,0155!(105)!2520,070,010,18knknPXkppkPXDipl.-Psych. Jennifer Lindzus        Universität Osnabrück           WS 2014/2015 
+
+Drücken  neun  bzw.  zehn  weiße  Tasten  erwischt  und  die  errechneten  Wahrscheinlichkeiten  ab-
+schließend summieren. Formal: 
+ 
+
+ 
+
+ 
+[Anmerkung: Die folgenden Berechnungen mussten zur Lösung dieser Aufgabe nicht mehr durchge-
+führt werden und dienen lediglich der Veranschaulichung.] 
+ 
+
+ 
+
+ 
+
+ 
+Die Wahrscheinlichkeit, dass von 10 willkürlich gedrückten Tasten mindestens 9 weiß sind beträgt 
+also ca. 4 Prozent. 
+
+ 
+
+ 
+
+ 
+
+– 7 – 
+
+ 
+
+ 
+
+49. KW 
+
+109(9)()(9)(10)kPXPXkPXPX9191100100101010!(9)0,590,410,590,410.0355182828564999!(109)!1010!(10)0,590,410,590,4110,5910.005111167533011010!(1010)!(9)(9)(10)0.035518282856490.00PXPXPXPXPX5111167533010.04062945038949

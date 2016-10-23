@@ -1,0 +1,279 @@
+Technical Report
+
+Social Data Mining
+
+Kim Gerbaulet
+
+Sebastian Höﬀner
+
+November 09, 2014
+
+1 Used tool
+We decided to stay with Python, which worked really good and we already knew what we had to do for this
+task.
+
+2 Solving the task
+2.1 Recycling the data
+In task 1 we chunked the data into each hour of the day and already solved the problem of CR and LF. In
+some programming languages (as in Python and R) CR was interpreted as a LF which resulted in corrupted
+data. Thus we used the chunked data to avoid this problem. We read in the data with a for loop in which
+we fetched the whole day at once.
+
+f o l d e r = " . . / data / "
+folder_2 = " chunks /201407 " + str ( day ) + " 00 " + " 0000. csv "
+hashtag = {}
+hashcount = {}
+for hour in hours :
+
+i f hour < 10 and hour > 0:
+
+folder_2 = ( " chunks /201407 " + str ( day ) + " 0 " + str ( hour )
+
+e l i f hour >= 10:
+
++ " 0000. csv " )
+
+folder_2 = " chunks /201407 " + str ( day ) + str ( hour ) + " 0000. csv "
+
+with open( f o l d e r + folder_2 ,
+
+" r " ) as
+
+c s v f i l e :
+
+csvreader = csv . reader ( c s v f i l e , d e l i m i t e r=’ \ t ’ )
+for entry in csvreader :
+
+tweet ) = ( entry [ 2 ] ,
+
+entry [ 6 ] )
+
+( date ,
+c s v f i l e . c l o s e ()
+
+2.2 Finding the Hashtags
+To ﬁnd the 20 most common hashtags, we wanted only the tweets with hashtags. We used a dictionary to
+save those hashtags with their amounts of occurrence.
+for entry in csvreader :
+
+tweet ) = ( entry [ 2 ] ,
+
+entry [ 6 ] )
+
+( date ,
+i f
+
+’#’ not in tweet :
+continue
+
+1
+
+r e s u l t s = re . f i n d a l l ( r "#(\w+)" ,
+for r e s u l t
+
+in r e s u l t s :
+
+i f
+
+r e s u l t
+hashcount [ r e s u l t ] += 1
+
+in hashcount :
+
+tweet )
+
+else :
+
+hashcount [ r e s u l t ] = 1
+hashtag [ entry [ 0 ] ] = ( date ,
+
+r e s u l t )
+
+c s v f i l e . c l o s e ()
+
+2.3 Finding the 20 common hashtags
+After having an idea how much hashtags we have, we needed only the 20 most common hashtags for one day.
+To ﬁnd these, we just sorted the dictionary into a list and stored the results into a new csv ﬁle.
+hashcount_sorted = sorted ( hashcount . items ( ) , key=operator . itemgetter (1) ,
+
+r e v e r s e=True )
+
+top20 = [ ]
+with open( f o l d e r + " processed /top_ " + str ( day ) + " . csv " ,
+
+tweetWriter = csv . writer ( procFile , d e l i m i t e r=’ \ t ’ )
+for i
+
+in range ( 2 0 ) :
+
+"wb" ) as procFile :
+
+(k , v ) = hashcount_sorted [ i ]
+tweetWriter . writerow ( [ k , v ] )
+print hashcount_sorted [ i ]
+
+procFile . c l o s e ( ) ;
+
+2.4 Finding the distribution change of the three most common tags
+To ﬁnd the distribution change we counted all occurrences of the most common tags into minute-sized bins.
+These bins were then simply plotted.
+
+N = numTopTweets
+topN = [ None ] ∗ N
+topNdata = {}
+g r a n u l a r i t y = 100
+for topInd in range (N) :
+
+for ( tagDate ,
+
+(k , v ) = hashcount_sorted [ topInd ]
+topN [ topInd ] = k
+tagDate = str ( int ( tagDate ) − ( int ( tagDate ) \% g r a n u l a r i t y ))
+for topTag in topN :
+
+in hashtag . values ( ) :
+
+tag )
+
+i f
+
+tag == topTag :
+tup = ( tagDate ,
+i f
+
+tag )
+tup in topNdata :
+topNdata [ tup ] += 1
+
+else :
+
+break
+
+topNdata [ tup ] = 1
+
+2
+
+3 Results
+3.1 Top 20 Hashtags of 12th July
+Here is a list of the 20 most common hashtags of day 12. As expected the game was tweeted very often.
+We thought that the crocoindoshop had a advertising campaign. The ClaroXperiaZ2 is a new mobile phone.
+Interesting was also the representation of political events, like the crisis in Gaza.
+
+Total
+Hashtag
+28259
+BRA
+21012
+NED
+Job
+20152
+wwwcrocoindoshopcom 18515
+15317
+Jobs
+12816
+ClaroXperiaZ2
+11580
+BRAvsNED
+10780
+TweetMyJobs
+6958
+GER
+VampsLastDay
+6887
+
+Hastag
+ARG
+WorldCup2014
+jackdailto200k
+WorldCup
+trndnl
+selﬁe
+love
+FelizCumpleJames
+PrayForGaza
+np
+
+Total
+6512
+6287
+5628
+5481
+5385
+5087
+4857
+4774
+4764
+4548
+
+3.1.1 Distribution of the three most common hashtags
+The distribution of the three most common hashtags is presented in the chart below.
+
+3
+
+3.2 Top 20 Hashtags of 13th July
+On the 13th of July clearly the world cup ﬁnal overshadowed everything else. Only wwwcrocoindoshopcom,
+Job, ClaroXperiaZ2, TweetMyJobs, and LikeWhoo made it to the top 20 without being soccer related. Again,
+Job was ranked high, as was TweetMyJobs. Both tags refer to job oﬀers – TweetMyJobs is a website oﬀering
+job advertisements on twitter. “Like Whoo” is a song by 2virgins.
+Hastag
+Germany
+VamosArgentina
+Argentina
+ArgentinaCampeonBrasil2014
+ClaroXperiaZ2
+Brasil2014
+TweetMyJobs
+LikeWhoo
+Messi
+ALLARG
+
+Hashtag
+GER
+ARG
+WorldCupFinal
+GERvsARG
+WorldCup2014
+WorldCup
+Job
+GERARG
+wwwcrocoindoshopcom
+Jobs
+
+Total
+168075
+123629
+51023
+31688
+28370
+22738
+19992
+16556
+15073
+14711
+
+Total
+14180
+13822
+12793
+12263
+10867
+10308
+10250
+9849
+9145
+8142
+
+3.2.1 Distribution of the three most common hashtags
+The distribution of the three most common hashtags is presented in the chart below.
+
+4
+
+3.2.2 Log-Scale plots
+Since there is not much to see on the linear scale, we also did log-scaled plots, which are just added here for
+further reference.
+
+5
+
+6
+
+

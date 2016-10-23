@@ -1,0 +1,420 @@
+Analyse und grafische Darstellung  
+
+metrischer Variablen 
+
+POK I: Datenanalyse 2 
+
+Determinanten und Auswirkungen sozialer Ungleichheit im 
+Erwerbsverlauf im Kontext von Familie und Partnerschaft 
+
+ 
+
+11.04.2016 
+
+ 
+
+Miriam Bröckel 
+
+ 
+
+Metrische Variablen - Einführung 
+
+ Metrische Variablen = Variablen mit vielen Ausprägungen 
+ 
+ Intervallskala oder Ratioskala 
+
+ 
+
+ verschiedene Darstellungsmöglichkeiten 
+
+• Gruppierung der Variablen in Kategorien  
+
+und Darstellung wie Variable mit wenig Ausprägungen 
+
+• Maßzahlen für Verteilung 
+• Grafische Darstellung der Variablen 
+
+ 
+ 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+2 
+
+Zusammenhang kategoriale und 
+metrische Variable – Tabellen I 
+
+ Variablen mit vielen Ausprägungen lassen sich nicht gut als 
+
+Häufigkeitstabelle darstellen: 
+Beispiel: tab labgro11 
+=> hat zu viele Ausprägungen 
+
+ 
+ 
+ 
+ Alternative: Gruppierung der Merkmalsausprägungen 
+ 
+ 
+ 
+ 
+  Aber: Gruppierung = Informationsverlust! 
+ 
+ 
+ 
+
+1. Generieren einer gruppierten Version der darzustellenden Variablen 
+2. Darstellung der gruppierten Version wie eine Variable mit wenig  
+  Ausprägungen 
+
+=> Sinn einer Gruppierung hängt von der Fragestellung ab 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+3 
+
+Zusammenhang kategoriale und 
+metrische Variable – Tabellen II 
+
+ Gruppierungsmöglichkeiten: 
+
+ 
+ Gruppierung an Quantilen => annähernd gleiche Fallzahl in den Gruppen, 
+
+aber unterschiedliche Klassenbreite 
+xtile labgro_kat4=labgro11, nquantiles(4) 
+tabulate labgro_kat4 
+
+ 
+ Gruppierung in Intervalle mit gleicher Klassenbreite => unterschiedliche 
+
+Fallzahlen in den Gruppen, aber gleiche Klassenbreite 
+generate labgro_g1=recode(labgro11, 1000, 2000, 
+3000, 4000, 5000, 10000) 
+
+generate labgro_g2=autocode(labgro11, 10, 0, 9000) 
+
+Bessere Variante:  
+recode labgro11 (0/2000=1) (2001/4000=2) (4001/
+6000=3) (nonmissing=4), gen(labgro_kat3) 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+4 
+
+Zusammenhang kategoriale und 
+metrische Variable - Maßzahlen 
+
+ Wiederholung Maßzahlen: 
+
+=> mit Maßzahlen können Variablen in komprimierter Form beschrieben        
+     werden 
+ 
+
+- Arithmetisches Mittel 
+- Standardabweichung 
+- Quantile 
+
+ Wichtige Maßzahlen: 
+ 
+ 
+ 
+ 
+  Beispiel: 
+  summarize labgro11(, detail) 
+  tabstat labgro11, statistics (count, mean, sd) 
+ 
+ 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+5 
+
+Zusammenhang kategoriale und 
+metrische Variable - Maßzahlen 
+
+ Vergleich von Maßzahlen 
+
+ 
+Summarize Funktion von tabulate 
+tabulate sex, summarize (labgro11) 
+tabulate sex migback, summarize(labgro11) 
+ 
+Kombination summarize mit by-Präfix oder tabstat mit by 
+bys sex: summarize labgro11 
+tabstat labgro11, statistics(count q max) by (sex) 
+ 
+Table-Befehl (ermöglicht die Kombination von bis zu 4 Variablen) 
+table sex migback, contents(count labgro11 mean 
+labgro11) 
+
+ 
+ 
+ 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+6 
+
+Zusammenhang kategoriale und 
+metrische Variable – T-Test 
+
+ Mittelwertvergleich zwischen zwei Gruppen – T-Test = Inferenzstatistik 
+
+ 
+
+ Getestet wird: „Die Differenz zwischen dem Mittelwert der Gruppe A und dem 
+
+Mittelwert der Gruppe B ist Null.“ 
+
+ 
+
+. ttest labgro11, by (sex) unequal 
+ 
+Two-sample t test with unequal variances 
+
+------------------------------------------------------------------------------ 
+
+   Group |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval] 
+
+---------+-------------------------------------------------------------------- 
+
+[1] maen | 161,870    2579.644    5.393856    2170.114    2569.072    2590.216 
+
+[2] weib | 132,419    1530.014    3.606464    1312.371    1522.945    1537.082 
+
+---------+-------------------------------------------------------------------- 
+
+combined | 294,289     2107.35    3.515956     1907.35    2100.459    2114.241 
+
+---------+-------------------------------------------------------------------- 
+
+    diff |            1049.631    6.488471                1036.913    1062.348 
+
+------------------------------------------------------------------------------ 
+
+    diff = mean([1] maen) - mean([2] weib)                        t = 161.7686 
+
+Ho: diff = 0                     Satterthwaite's degrees of freedom =   272400 
+
+ 
+
+    Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0 
+
+ Pr(T < t) = 1.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 0.0000 
+
+ 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+7 
+
+Kategoriale und metrische Variable – 
+Grafische Darstellung I 
+
+ Dot-Charts (Beispiel Mittelwerte) 
+ 
+. separate labgro11, by(sex) (=> labgro111 für Männer, labgro112 für Frauen) 
+. graph dot (mean) labgro111 labgro112, over (migback) 
+
+ 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+8 
+
+01,0002,0003,0004,000[4] Migrationshintergrund - n. w[3] indirekter Migrationshinterg[2] direkter Migrationshintergru[1] kein Migrationshintergrundmean of labgro111mean of labgro112Kategoriale und metrische Variable – 
+Grafische Darstellung II 
+
+ Box-Plots 
+. gen labgro11_notop=labgro11 if labgro11<=10000 
+. graph box labgro11_notop 
+
+ 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+9 
+
+02,0004,0006,0008,00010,000labgro11_notopKategoriale und metrische Variable – 
+Grafische Darstellung II 
+
+ Box-Plots über Gruppen 
+. graph box labgro11_notop, over(sex) 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+10 
+
+02,0004,0006,0008,00010,000labgro11_notop[1] maennlich[2] weiblichKategoriale und metrische Variable – 
+Grafische Darstellung III 
+
+ Histogramm über Gruppen 
+. histogram labgro11_notop,  by(sex) 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+11 
+
+02.0e-044.0e-046.0e-0405000100000500010000[1] maennlich[2] weiblichDensitylabgro11_notopGraphs by GeschlechtZusammenhang von zwei 
+metrischen Variablen I 
+
+ Korrelation => misst die Stärke eines linearen! Zusammenhangs zwischen 
+
+zwei mindesten intervallskalierten (metrischen) Merkmalen 
+ 
+
+ Produkt-Moment-Korrelation = Pearsons r 
+
+ Wertebereich zwischen -1 und +1 
+ kein linearer Zusammenhang r=0 
+ 
+
+ Achtung: Bei Individualdaten beobachtet man selten starke 
+
+Zusammenhänge! 
+ 
+
+ Zusätzliche Interpretationsmöglichkeit in Prozent: 
+
+r*r= r2 * 100 
+ 
+
+ Berechnung in Stata (Beispiel Nettoeinkommen und Arbeitszeit) 
+
+. corr labnet11_notop bbtatzeit 
+ 
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+ 
+
+ 
+
+ 
+
+12 
+
+Zusammenhang von zwei 
+metrischen Variablen – Grafik I 
+
+ Grafische Darstellung von zwei metrischen Variablen = Streudiagramm 
+
+(Merkmalsträger mit ähnlichen Merkmalskombinationen liegen dicht 
+beieinander) 
+
+ 
+
+ 
+ 
+ 
+
+r=0,88 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+Quelle: Gehring/Weins (2009) – S.173 
+
+13 
+
+Zusammenhang von zwei 
+metrischen Variablen – Grafik II 
+
+ Grafische Darstellung von zwei metrischen Variablen = Streudiagramm 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+Quelle: Gehring/Weins (2009) – S.174 
+
+14 
+
+Zusammenhang von zwei 
+metrischen Variablen – Grafik I 
+
+ Selber einschätzen, wie stark ein Zusammenhang ist:  
+
+http://guessthecorrelation.com/ 
+ 
+
+ Streudiagramm in Stata erstellen: 
+
+scatter labnet11_notop bbtatzeit 
+ 
+
+ 
+ 
+
+r= 0.53 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+15 
+
+0200040006000800010000labnet11_notop020406080Tatsaechliche Arbeitszeit pro WocheStata-Tip 
+
+ 
+ Tabellen mit Formatierung aus Stata exportieren: 
+
+Tabelle markieren im Outputfenster von Stata 
+Klick mit rechter Maustaste auf Markierung und „Copy Table“ auswählen 
+In Word oder Excel in eine Tabelle übertragbar 
+ 
+
+ 
+ 
+
+SS 2016 
+
+POK I – Datenanalyse 2 - 11.4.2016 
+
+16 
+
+

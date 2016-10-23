@@ -1,0 +1,1348 @@
+ 
+Neuroinformatics Lecture (L4) 
+
+Prof. Dr. Gordon Pipa  
+Institute of Cognitive Science University of Osnabrück 
+
+ 
+
+Probability Theory 
+
+Product Rule 
+ 
+
+Rehearsal 
+
+marginal probability 
+
+Sum Rule 
+
+ 
+
+ 
+
+ 
+
+joint probability 
+
+joint probability 
+
+conditional probability 
+
+marginal probability 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Transformed Densities: Example 1 (proposed by the TAs) 
+
+You want to organize a party. You know the probability distribution for the  
+number of people coming (x=hc: head count):  
+ 
+
+Moreover you heard from a friend that he experienced that the number of 
+drinks per person depends on the head count. From him you got the 
+following functional relation between the head count and the number drinks 
+(y) consumed.                  .  
+
+ 
+
+ 
+
+ 
+
+Different example from previous lecture !  
+
+Given this you want to know the probability distribution of the number of 
+drinks per person.  
+
+  
+
+ 
+
+ 
+
+()ypy()xpx2():gxyxTransformed Densities: Example 2 (proposed by the TAs) 
+
+We have:   
+
+We want to know:  
+
+Step 1:   We need to check whether g is a strictly monotonic function on the interval 
+ 
+ 
+We compute the derivative:   
+
+of interest.  
+
+On the interval x>0 this function is always larger 0  strictly monotonic on x>0 
+
+()ypy()xpx2():gxyx2()2ddgxxxdxdxTransformed Densities: Example 2 (proposed by the TAs) 
+
+We have: 
+
+We want to know:  
+
+Step 2:   We know y(x). To compute the probability p(y) given p(x) we need to 
+ 
+
+substitute x by y .  We need to compute the inverse function g-1 of g 
+
+Step 3:   We substitute x by y, and multiply with the derivative of g-1 
+
+()ypy()xpx2():gxyx2():gxyx1():gyxy111()()()(())()xxdgydgypypgypxdydy1()()()xdgypypydy1()()2xpypyyTransformed Densities: Example 2 (proposed by the TAs) 
+
+We have: 
+
+We want to know:  
+
+Lets say           is approximately Normal (Gaussian) distributed 
+
+Step 3:   Now we can compute p(y) 
+
+()ypy()xpx2():gxyx()xpx221()xxxµxpxenorm1()()2xpypyy2211()2xxyµpyenormyProbabilistic Graphical Models 
+
+A graph comprises nodes (also called vertices) connected by links (also known 
+as edges or arcs).  
+ 
+In a probabilistic graphical model, each node represents a random variable (or  
+a group of random variables), and the links express probabilistic relationships 
+between these variables.  
+ 
+The graph then captures the way in which the joint distribution over all of the  
+random variables can be decomposed into a product of factors, each  
+depending only on a subset of the variables. 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Conditional Models for K Variables 
+
+• The directed graphs that we are considering are subject to an important 
+
+restriction namely that there must be no directed cycles. 
+
+ 
+
+• In other words, there are no closed paths within the graph such that we 
+
+can move from node to node along links following the direction of the 
+arrows and end up back at the starting node.  
+
+ 
+
+• Such graphs are also called directed acyclic graphs, or DAGs. This is 
+equivalent to the statement that there exists an ordering of the nodes 
+such that there are no links that go from any node to any lower- 
+numbered node. 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Conditional Models for K Variables 
+
+For K=3 variables: 
+
+ 
+
+ 
+
+ 
+
+ 
+
+For K variables in general: 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+For a given choice of K, we can again represent this as a directed graph 
+having K nodes, one for each conditional distribution on the right-hand 
+side, with each node having incoming links from all lower-numbered 
+nodes. We say that this graph is fully connected because there is a link 
+between every pair of nodes. 
+ 
+
+ 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Bayesian Networks 
+
+General Factorization 
+
+The joint distribution defined by a graph is given 
+by the product, over all of the nodes of the graph, 
+of a conditional distribution for each node 
+conditioned on the variables corresponding to the 
+parents of that node in the graph. Thus, for a 
+graph with K nodes, the joint distribution is given 
+by: 
+ 
+ 
+ 
+ 
+pak denotes the set of parents of xk 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Neuroinformatics Lecture  
+ 
+ 
+Topics: 
+ 
+Independence in GRAPHICAL MODELS 
+ 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+11 
+
+Statistical Independence 
+
+The most important property for graphical models is statistical 
+independence, since it determines the structure of the graph.  
+ 
+
+Consider three variables a, b, and c, and 
+suppose that the distribution of a, b and c, is 
+such that it factors into a part with p(a)p(b)….  
+ 
+ 
+ 
+Then we say: 
+
+a is independent of b 
+
+Statistical independence: 
+Stochastic variables are independent if and only if the joint probability factorizes. 
+ 
+𝑖𝑓 𝑝 𝑥1, 𝑥2, … , 𝑥𝑁 = 𝑝 𝑥1 𝑝 𝑥2 ⋅ … ⋅ 𝑝 𝑥𝑁  𝑡ℎ𝑎𝑛  𝑎𝑛𝑑 𝑜𝑛𝑙𝑦 𝑡ℎ𝑎𝑛 𝑥1 𝑡𝑜 𝑥𝑁    𝑎𝑟𝑒 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+10/23/2014 
+
+We can investigate whether a and b are independent by marginalizing both sides 
+of with respect to c to give 
+
+c 
+
+We want the joint 
+probability of just a,b 
+
+In general, this does not factorize into the product p(a)p(b), and so the nodes a 
+and b are not independent.  
+ 
+We say,              . The symbol       means that the independence property does 
+not hold. 
+ 
+
+We can investigate whether a and b are independent by marginalizing both sides 
+of with respect to c to give 
+
+c 
+
+In general, this does not factorize into the product p(a)p(b), and so the nodes a 
+and b are not independent.  
+ 
+But what if we know the state of node c ?  
+
+Conditional Independence 
+
+Consider three variables a, b, and c, and 
+suppose that the conditional distribution of a, 
+given b and c, is such that it does not depend 
+on the value of b.  
+
+Trivially a is independent of b given c (                   ) , if:  
+
+ 
+
+ 
+
+ 
+
+ 
+
+or  
+
+In a graphical 
+model, shaded 
+nodes indicate 
+observed or fixed 
+variables. 
+
+Moreover, a is independent of b given c, if the we can factorize into 
+conditional probabilities that are all conditioned only on c:  
+
+ 
+
+ 
+Than we says that the variables a and b are statistically independent, 
+given c. 
+
+(|,)(|)pabcpac(|,)(|)pbacpbc(,|)(|)(|)pabcpacpbc(,|)(|)(|)pabcpacpbcConditional Independence 
+
+Consider three variables a, b, and c, and 
+suppose that the conditional distribution of a, 
+given b and c, is such that it does not depend 
+on the value of b.  
+
+Trivially a is independent of b given c (                   ) , if:  
+
+ 
+
+ 
+
+ 
+
+ 
+
+or  
+
+Moreover, a is independent of b given c, if:  
+
+ 
+
+In a graphical 
+model, shaded 
+nodes indicate 
+observed or fixed 
+variables. 
+
+Statistical conditional independence: 
+Stochastic variables are conditionally independent if and only if the joint probability factorizes. 
+ 
+𝑖𝑓 𝑝 𝑥1, 𝑥2, … , 𝑥𝑁|𝐶 = 𝑝 𝑥1|𝐶 𝑝 𝑥2|𝐶 ⋅ … ⋅ 𝑝 𝑥𝑁|𝐶   
+𝑡ℎ𝑎𝑛  𝑎𝑛𝑑 𝑜𝑛𝑙𝑦 𝑡ℎ𝑎𝑛 𝑥1 𝑡𝑜 𝑥𝑁    𝑎𝑟𝑒 𝑐𝑜𝑛𝑑𝑖𝑡𝑜𝑛𝑎𝑙𝑙𝑦 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 𝑔𝑖𝑣𝑒𝑛 𝐶 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+10/23/2014 
+
+(|,)(|)pabcpac(|,)(|)pbacpbc(,|)(|)(|)pabcpacpbcSummary 
+
+Statistical independence: 
+ 
+𝑖𝑓 𝑝 𝑥1, 𝑥2, … , 𝑥𝑁 = 𝑝 𝑥1 𝑝 𝑥2 ⋅ … ⋅ 𝑝 𝑥𝑁  𝑡ℎ𝑎𝑛  𝑎𝑛𝑑 𝑜𝑛𝑙𝑦 𝑡ℎ𝑎𝑛 𝑥1 𝑡𝑜 𝑥𝑁    𝑎𝑟𝑒 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 
+
+𝑎 𝑎𝑛𝑑 𝑏 𝑎𝑟𝑒 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 
+
+𝑎 𝑎𝑛𝑑 𝑏 𝑎𝑟𝑒 𝑛𝑜𝑡 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 
+
+Statistical conditional independence: 
+ 
+𝑖𝑓 𝑝 𝑥1, 𝑥2, … , 𝑥𝑁|𝐶 = 𝑝 𝑥1|𝐶 𝑝 𝑥2|𝐶 ⋅ … ⋅ 𝑝 𝑥𝑁|𝐶   
+𝑡ℎ𝑎𝑛  𝑎𝑛𝑑 𝑜𝑛𝑙𝑦 𝑡ℎ𝑎𝑛 𝑥1 𝑡𝑜 𝑥𝑁    𝑎𝑟𝑒 𝑐𝑜𝑛𝑑𝑖𝑡𝑜𝑛𝑎𝑙𝑙𝑦 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 𝑔𝑖𝑣𝑒𝑛 𝐶 
+ 
+We use the following symbols in that case:  
+
+𝑎 𝑎𝑛𝑑 𝑏 𝑎𝑟𝑒 𝑐𝑜𝑛𝑑𝑖𝑡𝑜𝑛𝑎𝑙𝑙𝑦 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 𝑔𝑖𝑣𝑒𝑛 𝐶 
+
+𝑎 𝑎𝑛𝑑 𝑏 𝑎𝑟𝑒 𝑛𝑜𝑡 𝑐𝑜𝑛𝑑𝑖𝑡𝑜𝑛𝑎𝑙𝑙𝑦 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 𝑔𝑖𝑣𝑒𝑛 𝐶 
+
+Conditional Independence 
+
+ 
+This Example: 
+ 
+ 
+
+We see immediately that the joint probability factorizes in to three terms:  
+ 
+•
+
+the first is independent of a and b since it is neither a joint probability of a 
+or b nor it is conditioned on a and b.  
+ 
+
+• The remaining two factorize in                           which by definition indicates 
+
+that a and b is conditionally independent given c.  
+ 
+
+• Since neither the first nor the second and the third render a and b 
+
+conditionally dependent, the nodes a and b are conditionally independent.   
+
+(,,)()(|)(|)pabcpcpacpbc(|)(|)pacpbcConditional Independence 
+
+General procedure to test on conditional 
+independence: 
+ 
+We want to check on conditional dependence of 
+a and b given c. 
+ 
+ 
+We start by writing:  
+ 
+ 
+ 
+Than we read the joint probability from the graph: 
+ 
+ 
+ 
+ 
+We use that for the Eqn. above:  
+ 
+
+(,|)()(,,)pabcpcpabc(,,)()(|)(|)pabcpcpacpbc(,|)()()(|)(|)pabcpcpcpacpbc(,|)(|)(|)pabcpacpbc?(,|)(|)(|)pabcpacpbcExample 1: Common Effects 
+
+Joint Distribution 
+ 
+
+so we obtain the conditional independence property 
+
+ 
+We can provide a simple graphical interpretation of this result by considering the 
+path from node a to node b via c.  
+
+ 
+
+The node c is said to be tail-to-tail with respect to this path because the node is 
+connected to the tails of the two arrows. The presence of such path-connecting 
+nodes a and b causes these nodes to be dependent. However, when we condition 
+on node c, the conditioned node ‘blocks’ the path from a to b and causes a and b to 
+become conditionally independent. 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Example 2: Causal Chains 
+
+Joint Distribution 
+ 
+
+First of all, suppose that none of the variables are observed. Again, we can test to 
+see if a and b are independent by marginalizing over c: 
+
+We want the joint 
+probability of just a,b 
+
+which in general does not factorize into p(a)p(b), and so 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Example 2: Causal Chains 
+
+Joint Distribution 
+ 
+
+We use  
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+(,)(|)()(|)()pacpacpcpcapa(|)()(|)()pcapapacpcExample 2: Causal Chains 
+
+Joint Distribution 
+ 
+
+we obtain the conditional independence property 
+
+As before, we can interpret these results graphically. The node c is said to be  
+head-to-tail with respect to the path from node a to node b. Such a path connects 
+nodes a and b and renders them dependent.  
+
+ 
+
+If we now observe c, then this observation ‘blocks’ the path from a to b and so we 
+obtain the conditional independence property 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Example 3 - Common Causes  
+
+Joint Distribution 
+ 
+
+Marginalizing over c, we obtain: 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Note: This is the opposite of Example 1, with c unobserved. 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Joint Distribution 
+ 
+
+Note: This is the opposite of Example 1, with c observed. 
+ 
+     Thus our third example has the opposite behavior from the first two. 
+Graphically, we say that node c is head-to-head with respect to the 
+path from a to b because it connects to the heads of the two 
+arrows. When node c is unobserved, it ‘blocks’ the path, and the 
+variables a and b are independent. However, conditioning on c 
+‘unblocks’ the path and renders a and b dependent. 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+In summary:  
+ 
+• a tail-to-tail node or a head-to-tail node leaves a path unblocked 
+
+unless it is observed, in which case it blocks the path.  
+ 
+
+• a head-to-head node blocks a path if it is unobserved, but once 
+
+the node, and/or at least one of its descendants, is observed, the 
+path becomes unblocked. 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Neuroinformatics Questionnaire – Q3 – Problem 1+2 
+
+Timer (5min):  
+
+Start 
+
+Stop 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Statistical independence: 
+Stochastic variables are independent if and only if the joint probability factorizes. 
+ 
+𝑖𝑓 𝑝 𝑥1, 𝑥2, … , 𝑥𝑁 = 𝑝 𝑥1 𝑝 𝑥2 ⋅ … ⋅ 𝑝 𝑥𝑁  𝑡ℎ𝑎𝑛  𝑎𝑛𝑑 𝑜𝑛𝑙𝑦 𝑡ℎ𝑎𝑛 𝑥1 𝑡𝑜 𝑥𝑁    𝑎𝑟𝑒 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+10/23/2014 
+
+Statistical conditional independence: 
+Stochastic variables are conditionally independent if and only if the joint probability factorizes. 
+ 
+𝑖𝑓 𝑝 𝑥1, 𝑥2, … , 𝑥𝑁|𝐶 = 𝑝 𝑥1|𝐶 𝑝 𝑥2|𝐶 ⋅ … ⋅ 𝑝 𝑥𝑁|𝐶   
+𝑡ℎ𝑎𝑛  𝑎𝑛𝑑 𝑜𝑛𝑙𝑦 𝑡ℎ𝑎𝑛 𝑥1 𝑡𝑜 𝑥𝑁    𝑎𝑟𝑒 𝑐𝑜𝑛𝑑𝑖𝑡𝑜𝑛𝑎𝑙𝑙𝑦 𝑖𝑛𝑑𝑒𝑝𝑒𝑛𝑑𝑒𝑛𝑡 𝑔𝑖𝑣𝑒𝑛 𝐶 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+10/23/2014 
+
+Conditional Independence 
+
+General procedure to test on conditional 
+independence: 
+ 
+We want to check on conditional dependence of 
+a and b given c. 
+ 
+ 
+We start by writing:  
+ 
+ 
+ 
+Than we read the joint probability from the graph: 
+ 
+ 
+ 
+ 
+We use that for the Eqn. above:  
+ 
+
+(,|)()(,,)pabcpcpabc(,,)()(|)(|)pabcpcpacpbc(,|)()()(|)(|)pabcpcpcpacpbc(,|)(|)(|)pabcpacpbc?(,|)(|)(|)pabcpacpbcNeuroinformatics Lecture  
+ 
+ 
+Topics: 
+ 
+Independence in GRAPHICAL MODELS II 
+ 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+30 
+
+D-separation 
+
+We wish to ascertain whether a particular conditional independence statement  
+A     B | C  is implied by a given directed acyclic graph. To do so, we consider all  
+possible paths from any node in A to any node in B. 
+ 
+• A, B, and C are non-intersecting subsets of nodes in a directed graph.  
+
+ 
+
+• A path from A to B is blocked if it contains a node such that either  
+
+1.
+
+2.
+
+the arrows on the path meet either head-to-tail or tail-to-tail at the node,  
+and the node is in the set C, or  
+the arrows meet head-to-head at the node, and neither the node nor any  
+of its descendants are in the set C.  
+
+3. We say that node y is a descendant of node x if there is a path from  
+ 
+
+x to y in which each step of the path follows the directions of the arrows. 
+ 
+
+•
+
+•
+
+If all paths from A to B are blocked, A is said to be d-separated from B by C.  
+ 
+If A is d-separated from B by C, the joint distribution over all variables in the 
+graph satisfies                         , i. e. that A and B are conditionally independent. 
+ 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+D-separation 
+
+path is blocked 
+
+D-separation 
+
+path is blocked 
+
+D-separation – Example 1 
+
+D-separation: Example 
+
+Path from a to b 
+
+• not blocked by node f because it is a  
+
+tail-to-tail node and not observed 
+ 
+
+• not blocked by node e because it is a 
+
+head-to-head node, but  
+it has a descendant c that is in the 
+conditioning set. 
+ 
+
+   We say that node y is a descendant 
+   of node x if there is a path from x to y in 
+which each step of the path follows the 
+directions of the arrows. 
+
+•
+
+•
+
+•
+
+A, B, and C are non-intersecting subsets of nodes in a directed graph. C is the set of 
+observed nodes. 
+A path from A to B is blocked if it contains a node such that either  
+
+1.
+
+2.
+
+the arrows on the path meet either head-to-tail or tail-to-tail at the node, and the  
+node is in the set C of observed nodes, or  
+the arrows meet head-to-head at the node, and neither the node nor any of its 
+descendants are in the set C.  
+
+If all paths from A to B are blocked, A is said to be d-separated from B by C.  
+ 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+D-separation – Example 2 
+
+Path from a to b 
+
+blocked by node f, because this is a 
+tail-to-tail node that is observed 
+ 
+blocked by node e, because this is a 
+head-to-head node and neither the 
+node nor any of its descendants are  
+in the set C.  
+
+•
+
+•
+
+ 
+
+ 
+
+We say that node y is a descendant 
+of node x if there is a path from x to y in 
+which each step of the path follows the 
+directions of the arrows. 
+
+•
+
+•
+
+•
+
+A, B, and C are non-intersecting subsets of nodes in a directed graph. C is the set of 
+observed nodes. 
+A path from A to B is blocked if it contains a node such that either  
+
+1.
+
+2.
+
+the arrows on the path meet either head-to-tail or tail-to-tail at the node, and the  
+node is in the set C of observed nodes, or  
+the arrows meet head-to-head at the node, and neither the node nor any of its 
+descendants are in the set C.  
+
+If all paths from A to B are blocked, A is said to be d-separated from B by C.  
+ 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Neuroinformatics Questionnaire – Q3 – Problem 1+2 
+
+Timer (5min):  
+
+Start 
+
+Stop 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Bayesian Networks 
+
+General Factorization 
+
+The joint distribution defined by a graph is given 
+by the product, over all of the nodes of the graph, 
+of a conditional distribution for each node 
+conditioned on the variables corresponding to the 
+parents of that node in the graph. Thus, for a 
+graph with K nodes, the joint distribution is given 
+by: 
+ 
+ 
+ 
+ 
+pak denotes the set of parents of xk 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+It is worth spending a moment to understand 
+further the unusual behavior of the graph. 
+Consider a particular instance of such a graph 
+corresponding to a problem with three binary 
+random variables relating to the fuel system  
+on a car. 
+ 
+ 
+The variables are called: 
+
+ 
+
+• B, battery state that is either charged (B = 1) or 
+
+flat (B = 0) 
+
+ 
+
+• F, fuel tank state that is either full of fuel (F = 1) 
+
+or empty (F = 0) 
+
+ 
+
+• G, electric fuel gauge state that indicates either 
+
+full (G = 1) or empty (G=0) 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+“Am I out of fuel?” 
+
+and hence 
+
+B  =  Battery (0=flat, 1=fully charged) 
+F  =  Fuel Tank (0=empty, 1=full) 
+G  =  Fuel Gauge Reading 
+ 
+
+(0=empty, 1=full) 
+
+ 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+“Am I out of fuel?” 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+,(,,)(,|)()(|,)()()()(|,)()()FBpBGFpBFGpGpGBFpBpFpGpGBFpBpF“Am I out of fuel?” 
+
+Probability of an empty tank increased by observing G = 0.  
+
+        p(F = 0|G = 0) > p(F = 0) 
+ 
+ 
+Thus observing that the gauge reads empty, makes it more likely that the tank is 
+indeed empty. 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+“Am I out of fuel?” 
+
+Probability of an empty tank reduced by observing B = 0.  
+ 
+This is referred to as “explaining away”: 
+Finding out that the battery is flat explains away the observation that the fuel gauge reads 
+empty. 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Representing Knowledge Example 
+
+𝑝(𝐶) 
+
+Cloudy 
+Cloudy 
+Cloudy 
+
+𝑝 𝑆, 𝐶 = 𝑝 𝑆 𝐶 p(c) 
+
+Spinkler 
+Spinkler 
+Sprinkler 
+
+Rain 
+Rain 
+Rain 
+
+𝑝 𝑅, 𝐶 = 𝑝 𝑅 𝐶 p(c) 
+
+WetGrass 
+WetGrass 
+WetGrass 
+
+In general: 
+
+𝑝 𝑆, 𝐶, 𝑅, 𝑊 = 𝑝 𝑊|𝑆, 𝐶, 𝑅 𝑝 𝑅 𝐶, 𝑆 𝑝 𝑆 𝐶 𝑝(𝐶)  
+
+using conditional  
+independence 
+
+𝑝 𝑆, 𝐶, 𝑅, 𝑊 = 𝑝 𝑊|𝑆, 𝑅 𝑝 𝑅 𝐶 𝑝 𝑆 𝐶 𝑝(𝐶)  
+
+10/23/2014 
+
+Lecture Advanced Neuroinformatics - Cognitive Science Osnabrück - Dr. G. Pipa 
+
+Representing Knowledge Example 
+
+𝑝(𝐶) 
+
+Cloudy 
+Cloudy 
+Cloudy 
+
+𝑝 𝑆, 𝐶 = 𝑝 𝑆 𝐶 p(c) 
+
+Spinkler 
+Spinkler 
+Sprinkler 
+
+Rain 
+Rain 
+Rain 
+
+𝑝 𝑅, 𝐶 = 𝑝 𝑅 𝐶 p(c) 
+
+WetGrass 
+WetGrass 
+WetGrass 
+
+using conditional  
+independence 
+
+𝑝 𝑆, 𝐶, 𝑅, 𝑊 = 𝑝 𝑊|𝑆, 𝑅 𝑝 𝑅 𝐶 𝑝 𝑆 𝐶 𝑝(𝐶)  
+
+The topology of the network defines the conditional probability table (CPT) for  
+each node.  
+
+Representing Knowledge Example 
+
+Representing Knowledge Example 
+
+𝑝(𝐶) 
+
+P(C=F)  P(C=T) 
+P(C=F)  P(C=T) 
+P(C=F)  P(C=T) 
+
+   0.5       0.5 
+   0.5       0.5 
+   0.5       0.5 
+
+Cloudy 
+Cloudy 
+Cloudy 
+
+𝑝 𝑆, 𝐶 = 𝑝 𝑆 𝐶 p(c) 
+
+Spinkler 
+Spinkler 
+Sprinkler 
+
+Rain 
+Rain 
+Rain 
+
+𝑝 𝑅, 𝐶 = 𝑝 𝑅 𝐶 p(c) 
+
+WetGrass 
+WetGrass 
+WetGrass 
+
+𝑝 𝑆, 𝐶, 𝑅, 𝑊 = 𝑝 𝑊|𝑆, 𝑅 𝑝 𝑅 𝐶 𝑝 𝑆 𝐶 𝑝(𝐶)  
+
+E.g. C=T  means S is true (‘it is cloudy’)  / S=F  means S is false (‘it is not cloudy’)  
+
+Lecture Advanced Neuroinformatics - Cognitive Science Osnabrück - Dr. G. Pipa 
+
+10/23/2014 
+
+Representing Knowledge Example 
+
+Representing Knowledge Example 
+
+P(C=F)  P(C=T) 
+P(C=F)  P(C=T) 
+P(C=F)  P(C=T) 
+
+   0.5       0.5 
+   0.5       0.5 
+   0.5       0.5 
+
+Cloudy 
+Cloudy 
+Cloudy 
+
+C  P(S=F) P(S=T) 
+C  P(S=F) P(S=T) 
+C  P(S=F) P(S=T) 
+
+F 
+F 
+F 
+
+T 
+T 
+T 
+
+   0.5      0.5 
+   0.5      0.5 
+   0.5      0.5 
+
+   0.9      0.1 
+   0.9      0.1 
+   0.9      0.1 
+
+Spinkler 
+Spinkler 
+Sprinkler 
+
+Rain 
+Rain 
+Rain 
+
+C  P(R=F) P(R=T) 
+C  P(R=F) P(R=T) 
+C  P(R=F) P(R=T) 
+
+F 
+F 
+F 
+
+T 
+T 
+T 
+
+  0.8      0.2 
+  0.8      0.2 
+  0.8      0.2 
+
+  0.2      0.8 
+  0.2      0.8 
+  0.2      0.8 
+
+WetGrass 
+WetGrass 
+WetGrass 
+
+S R  P(W=F) P(W=T) 
+S R  P(W=F) P(W=T) 
+S R  P(W=F) P(W=T) 
+
+F F 
+F F 
+F F 
+
+   1.0      0.0 
+   1.0      0.0 
+   1.0      0.0 
+
+T F 
+T F 
+T F 
+
+   0.1      0.9 
+   0.1      0.9 
+   0.1      0.9 
+
+F T 
+F T 
+F T 
+
+   0.1      0.9 
+   0.1      0.9 
+   0.1      0.9 
+
+T T 
+T T 
+T T 
+
+  0.01     0.99 
+  0.01     0.99 
+  0.01     0.99 
+
+E.g. C=T  means S is true (‘it is cloudy’)  / S=F  means S is false (‘it is not cloudy’)  
+
+Lecture Advanced Neuroinformatics - Cognitive Science Osnabrück - Dr. G. Pipa 
+
+10/23/2014 
+
+Conditional Probability Table (CPT) 
+
+Conditional Probability Table (CPT) 
+
+The topology of the network defines the conditional probability table (CPT) for  
+each node.  
+
+ 
+                      Example of CPT for the variable WetGrass:  
+
+F F 
+
+   1.0      0.0 
+
+S R  P(W=F) P(W=T) 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+• Each row in the table contains the conditional probability of each node value 
+
+  0.01     0.99 
+
+T F 
+
+   0.1      0.9 
+
+F T 
+
+   0.1      0.9 
+
+S 
+
+R 
+
+T T 
+
+C 
+
+W 
+
+for a conditioning case.  
+
+ 
+
+• Each row must sum to 1 because the entries represent an exhaustive set of 
+
+cases for the variable. 
+
+ 
+
+• A conditioning case is a possible combination of values for the parent nodes.  
+
+Representing Knowledge Example 
+
+Representing Knowledge Example 
+
+P(C=F)  P(C=T) 
+P(C=F)  P(C=T) 
+P(C=F)  P(C=T) 
+
+   0.5       0.5 
+   0.5       0.5 
+   0.5       0.5 
+
+Cloudy 
+Cloudy 
+Cloudy 
+
+C  P(S=F) P(S=T) 
+C  P(S=F) P(S=T) 
+C  P(S=F) P(S=T) 
+
+F 
+F 
+F 
+
+T 
+T 
+T 
+
+   0.5      0.5 
+   0.5      0.5 
+   0.5      0.5 
+
+   0.9      0.1 
+   0.9      0.1 
+   0.9      0.1 
+
+Spinkler 
+Spinkler 
+Sprinkler 
+
+Rain 
+Rain 
+Rain 
+
+C  P(R=F) P(R=T) 
+C  P(R=F) P(R=T) 
+C  P(R=F) P(R=T) 
+
+F 
+F 
+F 
+
+T 
+T 
+T 
+
+  0.8      0.2 
+  0.8      0.2 
+  0.8      0.2 
+
+  0.2      0.8 
+  0.2      0.8 
+  0.2      0.8 
+
+WetGrass 
+WetGrass 
+WetGrass 
+
+S R  P(W=F) P(W=T) 
+S R  P(W=F) P(W=T) 
+S R  P(W=F) P(W=T) 
+
+F F 
+F F 
+F F 
+
+   1.0      0.0 
+   1.0      0.0 
+   1.0      0.0 
+
+T F 
+T F 
+T F 
+
+   0.1      0.9 
+   0.1      0.9 
+   0.1      0.9 
+
+F T 
+F T 
+F T 
+
+   0.1      0.9 
+   0.1      0.9 
+   0.1      0.9 
+
+T T 
+T T 
+T T 
+
+  0.01     0.99 
+  0.01     0.99 
+  0.01     0.99 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Neuroinformatics Questionnaire – Q3 – Problem 5+6 
+
+Timer (5min):  
+
+Start 
+
+Stop 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Bayesian Networks 
+
+x 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+D-separation – Example 1 
+
+D-separation: Example 
+
+Path from a to b 
+
+• not blocked by node f because it is a  
+
+tail-to-tail node and not observed 
+ 
+
+• not blocked by node e because it is a 
+
+head-to-head node, but  
+it has a descendant c that is in the 
+conditioning set. 
+ 
+
+   We say that node y is a descendant 
+   of node x if there is a path from x to y in 
+which each step of the path follows the 
+directions of the arrows. 
+
+•
+
+•
+
+•
+
+A, B, and C are non-intersecting subsets of nodes in a directed graph. C is the set of 
+observed nodes. 
+A path from A to B is blocked if it contains a node such that either  
+
+1.
+
+2.
+
+the arrows on the path meet either head-to-tail or tail-to-tail at the node, and the  
+node is in the set C of observed nodes, or  
+the arrows meet head-to-head at the node, and neither the node nor any of its 
+descendants are in the set C.  
+
+If all paths from A to B are blocked, A is said to be d-separated from B by C.  
+ 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+D-separation 
+
+path is blocked 
+
+Bayesian Networks 
+
+x 
+
+x 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+“Am I out of fuel?” 
+
+Probability of an empty tank reduced by observing B = 0.  
+ 
+This is referred to as “explaining away”: 
+Finding out that the battery is flat explains away the observation that the fuel gauge reads 
+empty. 
+
+10/23/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+

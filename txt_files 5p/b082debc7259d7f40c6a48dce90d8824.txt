@@ -1,0 +1,147 @@
+RBM 2014/15 Übung 2
+
+Herzlich Willkommen
+
+ 
+
+RBM WiSe 2014/2015       Übung 2       23.10.2014       Hannes Thomsen, Julian Maguhn
+
+Modellprojekte – Allgemeines (I)
+
+● Implementierung und Auswertung eines eigenen 
+
+(kleinen) Modells erforderlich für erfolgreiche Teilnahme
+
+● Bearbeitung in 2er Gruppen 
+
+● Modell und Ergebnisse werden in einem Vortrag und einer 
+
+Ausarbeitung dargelegt
+
+● Modellprojektnote setzt sich aus Vortrag (40 %) und 
+
+Ausarbeitung (60 %) zusammen
+
+ 
+
+ 
+
+● Gesamtnote setzt sich aus Klausur (60 %) und 
+
+Modellprojektnote (40 %) zusammen (beide Leistungen 
+müssen bestanden sein)
+
+ 
+
+ 
+
+ 
+
+RBM WiSe 2014/2015       Übung 2       23.10.2014       Hannes Thomsen, Julian Maguhn
+
+Modellprojekte – Allgemeines (II)
+
+● Vortragstermine: 15.01.15 und 22.01.15
+
+● Ausarbeitung (ca. 10 Seiten) bis zum 28.02.15
+
+● Am 13.11.14 erfolgt die Themenvergabe
+
+● Ab 27.11.14: fünf Übungstermine zur Bearbeitung der 
+Modellprojekte, eine Zwischenbesprechung pro Gruppe
+
+● Es können vorgegeben Modellprojektideen oder eine 
+
+eigene Modellprojektidee bearbeitet werden
+
+● Eigene Vorschläge bis zum 6.11.14
+
+ 
+
+RBM WiSe 2014/2015       Übung 2       23.10.2014       Hannes Thomsen, Julian Maguhn
+
+Wiederholung Übung 1
+
+1) Repast Simphony:
+
+– Rahmen zur agentenbasierten Modellierung
+
+– Bereitstellung von Grundfunktionalitäten
+
+– Contexts und Projections um Agenten zusammenzufassen
+
+2) Erstes Modell: Game of Life
+
+– 3 Klassen: Cell, GoLBuilder, AgentStyle2D
+– Synchrones Update mittels „Zwischenrunden“ und _state-Variablen
+– Regelveränderungen: statisches/chaotisches Modellverhalten;
+bei Standardregeln: emergentes Modellverhalten „am Rande des 
+Chaos“
+
+ 
+
+RBM WiSe 2014/2015       Übung 2       23.10.2014       Hannes Thomsen, Julian Maguhn
+
+Schelling Modell
+
+heute:
+
+Schelling Modell
+
+Segregation zweier Gruppen
+
+ 
+
+RBM WiSe 2014/2015       Übung 2       23.10.2014       Hannes Thomsen, Julian Maguhn
+
+Segregation zweier Gruppen (I)
+
+Quelle: commons.wikimedia.org,Tom Hilton, CC BY 2.0 
+
+ 
+
+Quelle: commons.wikimedia.org,Arthur S. Siegel
+
+RBM WiSe 2014/2015       Übung 2       23.10.2014       Hannes Thomsen, Julian Maguhn
+
+Segregation zweier Gruppen (II)
+
+Chicago
+
+Quelle:Bill Rankin, 2009, radicalcartography.net
+
+ 
+
+RBM WiSe 2014/2015       Übung 2       23.10.2014       Hannes Thomsen, Julian Maguhn
+
+Schelling Modell (I)
+
+ 
+
+RBM WiSe 2014/2015       Übung 2       23.10.2014       Hannes Thomsen, Julian Maguhn
+
+Schelling Modell (II)
+
+● Sehr einfaches Modell zur Segregation zweier Gruppen
+
+● KISS-Modell (Keep It Simple and Stupid)
+
+● Mitglieder einer Gruppe sind zufrieden, falls mindestens ein 
+
+gewisser Anteil ihrer Nachbarn zur eigenen Gruppe 
+gehört
+
+● Falls sie nicht zufrieden sind, bewegen sie sich auf eine 
+
+neue, zufällig gewählte freie Zelle
+
+● Parameter percentLikeNeighbors є [0;1] gibt den Anteil 
+
+der Nachbarn der eigenen Gruppe an, der zur Zufriedenheit 
+notwendig ist
+
+ 
+
+RBM WiSe 2014/2015       Übung 2       23.10.2014       Hannes Thomsen, Julian Maguhn
+
+

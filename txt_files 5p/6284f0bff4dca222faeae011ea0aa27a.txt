@@ -1,0 +1,772 @@
+13498 • The Journal of Neuroscience, August 14, 2013 • 33(33):13498 –13504
+
+Behavioral/Cognitive
+
+The Flickering Wheel Illusion: When ␣Rhythms Make a
+Static Wheel Flicker
+
+Rodika Sokoliuk1,2 and Rufin VanRullen1,2
+1Universite´ de Toulouse, Centre de Recherche Cerveau et Cognition, Universite´ Paul Sabatier, 31062 Toulouse, France, and 2CNRS, UMR 5549, Faculte´ de
+Me´decine de Purpan, CHU Purpan, 31052 Toulouse Cedex, France
+
+␣oscillations (8 –14 Hz) greatly influence brain activity, yet we generally do not experience them consciously: the world does not appear
+to oscillate. Dedicated strategies must exist in the brain to prevent these oscillations from disrupting normal processing. Could suitable
+stimuli fool these strategies and lead to the conscious experience of our own brain oscillations? We describe and explore a novel illusion
+in which the center of a static wheel stimulus (with 30 – 40 spokes) is experienced as flickering when viewed in the visual periphery. The
+key feature of this illusion is that the stimulus fluctuations are experienced as a regular and consistent flicker, which our human observers
+estimated at ⬃9 Hz during a psychophysical matching task. Correspondingly, the occipital ␣rhythm of the EEG was the only oscillation
+that showed a time course compatible with the reported illusion: when ␣amplitude was strong, the probability of reporting illusory
+flicker increased. The peak oscillatory frequency for these flicker-induced modulations was significantly correlated, on a subject-by-
+subject basis, with the individual ␣frequency measured during rest, in the absence of visual stimulation. Finally, although the effect is
+strongest during eye movements, we showed that stimulus motion relative to the retina is not necessary to perceive the illusion: the flicker
+can also be perceived on the afterimage of the wheel, yet by definition this afterimage is stationary on the retina. We conclude that this new
+flickering illusion is a unique way to experience the ␣rhythms that constantly occur in the brain but normally remain unnoticed.
+
+Introduction
+Neuronal oscillations, such as the ␣rhythm (Berger, 1929) (8 –14
+Hz), pervade the brain and influence sensory processing (Makeig
+et al., 2002; Thut et al., 2006; Hanslmayr et al., 2007; van Dijk et
+al., 2008). In particular, recent findings showed that visual process-
+ing is more efficient at certain phases of the ongoing ␣rhythm than
+others (Busch et al., 2009; Mathewson et al., 2009; Busch and Van-
+Rullen, 2010; Dugue´ et al., 2011; Scheeringa et al., 2011). It is surpris-
+ing to realize, therefore, that the sensory outcome itself is unaffected:
+we do not perceive the world as oscillating. The brain must have
+developed strategies to conceal the consequences of oscillations from
+our perception. For instance, the brain could rely on one or more of
+the following mechanisms: (1) conscious experience may arise from
+brain regions far removed from those where ␣ is produced and
+found to influence sensory processing; (2) attention, a major factor
+in the selection of information for awareness, is known to decrease
+the amplitude of ␣oscillations (Worden et al., 2000; Thut et al., 2006;
+Klimesch et al., 2007), thereby dampening their potential perceptual
+consequences; and (3) finally, one could envision that any recurring
+“temporal gaps” in perception produced by the periodic pulses of ␣
+
+Received Dec. 10, 2012; revised July 9, 2013; accepted July 14, 2013.
+
+Author contributions: R.S. and R.V. designed research; R.S. performed research; R.S. and R.V. analyzed data; R.S.
+
+and R.V. wrote the paper.
+
+This work was supported by Agence Nationale de la Recherche Grant 06JCJC-0154 and a European Young Inves-
+
+tigator Award to R.V.
+
+The authors declare no competing financial interests.
+Correspondence should be addressed to Rodika Sokoliuk, CERCO CNRS UMR 5549, Pavillon Baudot, CHU Purpan,
+
+BP 25202, 31052 Toulouse Cedex, France. E-mail: sokoliuk@cerco.ups-tlse.fr.
+
+DOI:10.1523/JNEUROSCI.5647-12.2013
+
+Copyright © 2013 the authors
+
+0270-6474/13/3313498-07$15.00/0
+
+inhibition (Jensen and Mazaheri, 2010) could be actively “filled in”
+using immediately preceding and/or following visual information to
+even out our conscious perceptual experience (similarly to the
+filling-in of the blind spot in early representations of visual space).
+Regardless of which of these (or other) strategies is actually used by
+the brain to conceal perceptual effects of ␣rhythms, it is tempting to
+ask whether suitable stimuli could fool these strategies and lead to the
+conscious experience of our own brain oscillations.
+
+Here we report on a novel illusion in which the center of a sta-
+tionary wheel made up of ⬃30–40 spokes appears to flicker vividly
+and regularly (Fig. 1). The flicker occurs most strongly during small
+eye movements performed with the stimulus in the periphery. How-
+ever, we show that stimulus motion relative to the retina is not cru-
+cial to perceive the illusory flicker: flicker can also be experienced on
+the afterimage of the stimulus; yet by definition, this afterimage is
+stationary on the retina. Using psychophysics, we demonstrate that
+the illusory flicker frequency peaks within the ␣range (⬃9 Hz). To
+address the neuronal basis of the illusion, we recorded EEG while
+observers (N ⫽ 20) performed smooth pursuit eye movements, fol-
+lowing with their gaze a slowly rotating dot around the stationary
+wheel. The flicker illusion was maximal for specific eye positions
+around the wheel. The only EEG frequency band that displayed a
+compatible time course was the ␣rhythm (8–14 Hz) over occipital
+electrodes: an increased ␣magnitude specifically coincided with
+the occurrence of illusory flicker. Furthermore, the frequency
+that was maximally modulated during illusory perception was
+significantly correlated with the individual ␣ frequency on a
+subject-by-subject basis. We conclude that this new flickering
+illusion represents a unique way to consciously experience the
+brain’s ongoing ␣rhythm.
+
+Sokoliuk and VanRullen • ␣Rhythms Make a Static Wheel Flicker
+
+J. Neurosci., August 14, 2013 • 33(33):13498 –13504 • 13499
+
+Behavioral data analysis. Behavioral data were analyzed using a one-
+way ANOVA for the matching task and a circular r test: Raleigh test for
+circular uniformity; circular statistics toolbox from MATLAB (Berens,
+2009) for the smooth pursuit task.
+
+EEG data acquisition and analysis. EEG and EOG were recorded at
+1024 Hz using a Biosemi system (64 active and 3 ocular electrodes) and
+downsampled offline to 128 Hz for data analysis via the MATLAB tool-
+box, eeglab (Delorme and Makeig, 2004). Individual electrode data were
+visually inspected, and channel data containing artifacts were interpo-
+lated by the mean of adjacent electrodes. Time-frequency transforma-
+tions were generated over all channels using eeglab (Delorme and
+Makeig, 2004) with a function akin to a wavelet transform, starting with
+3 cycles at 2 Hz and increasing linearly to 37.5 cycles at 50 Hz. To deter-
+mine which oscillatory bands contributed to changes in brain activity
+during the perception of illusory flicker (smooth pursuit paradigm, illu-
+sory condition), a Fourier transform was performed on the amplitude
+envelope of the time-frequency transformed signals, separately for each
+frequency (which were then grouped into standard EEG frequency
+bands: ␦, ␪, ␣, ␤, ␥). The resulting Fourier spectral amplitude at the
+frequency of revolution of the eyes around the wheel (0.067 Hz) was
+normalized by the amplitudes at surrounding frequencies (from 0 to
+0.133 Hz, excluding the eye revolution frequency itself), revealing for
+each oscillatory band the amount of amplitude modulation by eye posi-
+tion (and, thus, by illusory flicker). The same procedure was also applied
+to EEG data of the control condition. To compare amplitude modula-
+tions during illusory and control conditions, we used a two-tailed paired
+t test (␣level ⫽ 0.05). The time course of the amplitude modulation for
+illusory and control conditions was also analyzed for electrodes within a
+specific ROI (see Fig. 3E, green). Trials were epoched, each epoch corre-
+sponding to one revolution of the fixation dot around the wheel (i.e.,
+15 s); these epochs were aligned so as to be centered on the eye position of
+maximal flicker perception (averaged over all subjects).
+
+To evaluate whether the frequency band modulated during illusory
+perception was correlated to the individual ␣ rhythm, we first deter-
+mined, for each subject, the peak modulation frequency of these time-
+frequency representations (we applied a fast Fourier transform on the
+time dimension and used the first frequency component as a measure of
+illusory modulation, then extracted the peak frequency of the resulting
+amplitude spectrum). Fourteen of 20 subjects provided a clear individual
+peak frequency for these flicker-induced modulations (amplitude was
+1.5 times as high as the amplitude at surrounding frequencies: 5–15 Hz).
+To determine the individual ␣ frequency of each subject, we analyzed
+EEG data recorded during rest (eyes opened, data recorded from elec-
+trode Oz; epochs of variable duration from 3 to 60 s). Data were down-
+sampled to 256 Hz, visually inspected for artifacts, and bandpass filtered
+between 0.3 Hz and 30 Hz. Power spectra were computed using Welch’s
+modified periodogram method in MATLAB (Welch, 1967); we extracted
+the peak in the ␣frequency band (8 –14 Hz), retaining only peak ampli-
+tudes that were at least 1.5 times as high as the average amplitude at
+surrounding frequencies (5–15 Hz). Ten of the previously retained 14
+subjects yielded an exploitable individual ␣peak frequency.
+
+Eye tracker data acquisition and analysis. To precisely control eye
+movements during the smooth pursuit task, we performed a control
+experiment with a subgroup (N ⫽ 3) of our subjects where we simulta-
+neously recorded EEG and eye movements using an eye tracker (IView
+Hi-Speed eye tracker; SensoMotoric Instruments). Participants were
+performing the same smooth pursuit task as explained above. Eye posi-
+tion data were recorded at 1250 Hz and downsampled offline to 128 Hz
+for data analysis. Data were then analyzed for artifacts and eye move-
+ments that exceeded a fixed limit: all data points that reflected eye posi-
+tions deviating ⬎3 degrees of visual angle from the fixation dot were
+flagged for rejection. Finally, we repeated the previously described EEG
+time-frequency analysis for these subjects after rejecting from our EEG
+data the correspondingly flagged time points.
+Results
+Psychophysical measurements
+Our first experiment examined the influence of various psycho-
+physical parameters on the perception of the illusion. We used
+
+Figure 1.
+The flickering wheel illusion. The static wheel stimulus produces an impression of
+flicker when it is observed in the visual periphery. Small eye movements, as when reading these
+lines, can enhance the illusory effect. The flicker can also be perceived in the afterimage of the
+stimulus. To experience this, after fixating the top-left black dot for ⬃10 s, switch your gaze to
+the lower dot: an impression of flicker should be fleetingly present within the wheel’s afterim-
+age on the right.
+
+Materials and Methods
+Subjects. Ten volunteers (3 female, mean age 29.2 ⫾ 4.8 years) partici-
+pated in the psychophysical experiment and 21 (6 female; mean age
+26.2 ⫾ 4.0 years; one left handed) in the EEG experiment. All subjects
+showed normal or corrected to normal eye function. One participant was
+excluded from the psychophysical experiment because his mean reported
+flicker intensity was ⬎2 SDs away from the group average and one sub-
+ject was excluded from the EEG experiment because ⬎50% of the EEG
+data contained artifacts.
+
+Stimuli. Stimuli were presented at 57 cm distance using a desktop com-
+puter (2.09 GHz Intel processor, Windows XP) with a cathode ray monitor
+(resolution: 800 ⫻ 600 pixels; refresh rate: 100 Hz) on a gray background
+(luminance: 11.5 cd/m 2). Stimuli were designed and presented via the Psy-
+chophysics Toolbox (Brainard, 1997) running in MATLAB (MathWorks).
+For the matching task, the wheel stimuli (radius: 5 degrees of visual angle)
+were presented with different contrast levels (20%, 40%, 60%, 80%, and
+100% Michelson contrast using uncorrected CRT ␥values, corresponding to
+Michelson luminance contrast of 39%, 65%, 81%, 92%, and 96%, respec-
+tively) and spatial frequencies with 8, 16, 32, or 64 dark and bright alternating
+spokes. In the EEG smooth pursuit task, the fixation dot revolved (15 s/rev-
+olution) at 13 degrees from the wheel center. For the EEG smooth pursuit
+and the afterimage tasks, stimuli (radius: 7 degrees of visual angle) of the
+illusory condition were adjusted for optimal flicker perception (100% con-
+trast and 32 spoke sectors), whereas stimuli of the control condition showed
+a different spatial frequency (8 spoke sectors) and did not lead to illusory
+perception. The 32 spoke wheels had a lower spatial frequency cutoff of 0.73
+cycles per degree at their outer edge, this value increasing to infinity toward
+the wheel center.
+
+Sokoliuk and VanRullen • ␣Rhythms Make a Static Wheel Flicker
+
+13500 • J. Neurosci., August 14, 2013 • 33(33):13498 –13504
+
+different spatial frequencies (8, 16, 32, and
+64 spoke sectors) and contrast
+levels
+(20%, 40%, 60%, 80%, and 100% con-
+trast) of the stimulus pattern, and also
+tested whether binocular vision is needed
+to perceive the illusion. Participants (N ⫽
+9) followed a moving fixation dot by mak-
+ing small successive saccades from left to
+right along the horizontal midline of the
+screen.
+
+Meanwhile, in one part of the screen (8
+degrees above or below the horizontal
+midline), a static wheel stimulus (“test”
+stimulus, 5 degrees radius) was continu-
+ously presented. On the opposite side of
+the screen (below or above fixation) was a
+comparison stimulus (“reference”) com-
+prising a circular pattern (same size as the
+“test”) textured with a black-and-white
+checkerboard, whose center flickered reg-
+ularly; the flicker, created by superimpos-
+ing a gray Gaussian window (SD 2.3
+degrees) onto the stimulus center and si-
+nusoidally modulating its opacity, was ad-
+justable both in temporal frequency and
+intensity (i.e., opacity) via button presses.
+Participants were instructed to match the
+frequency and intensity of the artificial
+flicker in the reference stimulus with the
+illusory flicker (if any) perceived in the
+test stimulus. We found the greatest illu-
+sory effect for a stimulus pattern built up
+of 32 spoke sectors (Fig. 2A; one-way
+⫽ 6.76, p ⫽ 0.001: 32
+ANOVA, F(3,32)
+spoke and 64 spoke wheels induced signif-
+icantly stronger illusion than 8 spokes) and having maximal con-
+⫽ 3.71, p ⫽ 0.01: 100%
+trast (Fig. 2B; one-way ANOVA, F(4,40)
+contrast wheels led to significantly stronger illusion than 20%).
+Furthermore, the magnitude of the illusion was comparable
+whether the wheel was viewed with one or both eyes (Fig. 2C;
+⫽ 0.09, p ⬎ 0.05). Finally, the average
+one-way ANOVA, F(2,21)
+flicker frequency reported by the participants was 9.1 ⫾ 0.38 Hz
+(mean ⫾ SEM; Fig. 2D). According to these psychophysical re-
+sults, we used a 32 spoke wheel with maximal contrast in the
+following experiments.
+
+EEG ␣oscillations correlate with illusory flicker
+To investigate the neural correlates of illusory flicker, we re-
+corded EEG continuously while observers performed smooth
+pursuit eye movements around the centered wheel stimulus (ra-
+dius: 7 degrees of visual angle; Fig. 3A). The same procedure was
+also applied using a control stimulus that did not produce illu-
+sory flicker (Fig. 3B). We did not use saccadic eye movements in
+this case because they tend to generate large-scale EEG artifacts.
+Each trial lasted 2 min, during which the ocular pursuit target
+revolved around the wheel 8 times (revolution duration: 15 s).
+Subjects (N ⫽ 20) reported illusory flicker perception at any
+moment during the trial by pressing (at flicker onset) and releas-
+ing (at flicker offset) a button. The average probability of report-
+ing flicker (in the “illusory” condition) was significantly higher
+for eye positions in the upper left quadrant of the screen (Fig. 3C;
+Rayleigh test for circular uniformity: p ⬍ 10 ⫺6). This nonuni-
+form distribution of illusory percepts suggested the following
+
+Figure 2.
+Psychophysical matching task. A–C, Estimated flicker intensity (% opacity of the sinusoidally modulated gray field
+superimposed at the center of the reference stimulus) for different spatial frequencies of the test pattern (i.e., different number of
+spokes within the wheel) (A), different contrast levels (B), and right-monocular (R), left-monocular (L), and binocular (B) viewing
+conditions (using a stimulus with 32 spoke sectors and 100% contrast) (C). p values are obtained from one-way ANOVAs. n.s., Not
+significant. D, Distribution of estimated frequencies of the perceived illusory flicker over trials. We analyzed for each subject (N ⫽
+9) and experimental condition with optimal flicker perception (32 spoke wheel and 100% contrast level) the three trials with
+strongest flicker intensity. A–C, Error bars indicate SEM.
+
+analysis to determine any potential oscillatory correlate of the
+illusion (Fig. 3D): separately for each of the classical EEG fre-
+quency bands (␦⫽ 2– 4 Hz, ␪ ⫽ 4 – 8 Hz, ␣ ⫽ 8 –14 Hz, ␤ ⫽
+14 –30 Hz, and ␥⫽ 30 –50 Hz), the amplitude envelope of oscil-
+latory signals was extracted by means of a wavelet-based time-
+frequency transform; this envelope was then subjected to a
+Fourier transform to derive its amplitude spectrum. We reasoned
+that any oscillatory signal reflecting the perception of illusory
+flicker would display a peak in this amplitude spectrum at the
+revolution frequency of the eye (i.e., 1/15 cycles per second). The
+peak in the amplitude spectrum was measured as the percentage
+⫽ 0.067 Hz) with
+increase at the eye revolution frequency (fR
+respect to an average of surrounding frequencies (from 0 to 0.133
+Hz, excluding the eye revolution frequency itself). The ␣ band
+displayed a clear response peak (⬃100% increase) over occipital
+electrodes during the illusory condition (Fig. 3E); this peak was
+much decreased in the control condition (Fig. 3F), so that the
+difference between the two conditions was highly significant over
+occipital electrodes (Fig. 3G; two-tailed paired t test, p ⬍ 0.0001).
+The occipital topography, along with the absence of a response
+peak over frontal and ocular electrodes, suggests that the ob-
+served ␣modulation is truly related to the perception of flicker,
+rather than to the movements of the eyes.
+
+In contrast, there was no measurable occipital response in
+other frequency bands (␦, ␪, ␤, and ␥). To summarize, the ␣
+rhythm was the only oscillation to be reliably modulated at the
+frequency of revolution of the eyes around the wheel and, thus, at
+the frequency at which the flickering illusion itself tended to recur
+
+Sokoliuk and VanRullen • ␣Rhythms Make a Static Wheel Flicker
+
+J. Neurosci., August 14, 2013 • 33(33):13498 –13504 • 13501
+
+EEG correlates of illusory flicker in a smooth pursuit paradigm. A, In the “illusory” condition, the stimulus consisted of 32 black-and-white spoke sectors. Subjects (N ⫽ 20) followed the
+Figure 3.
+fixation dot around the wheel using smooth pursuit eye movements and pressed a button when they experienced illusory flicker. B, In the “control” condition, the stimulus contained only 8
+black-and-white spoke sectors; although the task instructions were the same, no illusory flicker was reported. C, Distribution of flicker responses (in the illusory condition) as a function of the angular
+position of the eyes around the wheel (pooled over all 20 subjects). There was a significant tendency to perceive stronger illusory flicker at upper left positions: p ⬍ 10 ⫺6 (Rayleigh test for circular
+uniformity). D, Our analysis procedure is illustrated here with hypothetical data. As the eyes revolve around the wheel every 15 s, the perception of flicker rises and falls in each revolution (as
+demonstrated inC). We hypothesized that the relevant brain activity (e.g., the amplitude of a specific brain oscillation) would show a similar pattern with an increase once per revolution. In that case,
+a fast Fourier transform analysis would reveal a peak in the signal’s power spectrum at the eye revolution frequency (1/15 s ⫽ 0.067 Hz). The amplitude value at that frequency (fR, marked in yellow)
+was compared with the surrounding frequencies (fS, marked in green) to reveal the percentage of signal modulation by angular eye position: Mod ⫽ 100*(fR
+⫺ fS)/fS. E, Modulation of ␣amplitude
+by angular eye position. The analysis described in D was applied to the time course of fluctuations of oscillatory amplitude in the ␣band. The strong modulation over occipital electrodes
+suggests that occipital ␣amplitude changes systematically as a function of eye position, and thus as a function of flicker perception. F, The same analysis reveals weaker modulations for
+the control stimulus. G, Direct contrast between illusory and control conditions (two-tailed paired t test) reveals highly significant differences ( p ⬍ 0.0001) of ␣modulation over
+occipital electrodes.
+
+during each trial. A similar conclusion was reached by observing
+the time-frequency representation of occipital EEG activity (Fig.
+3E, electrodes of interest marked in green) during the course of an
+averaged 15 s smooth pursuit revolution epoch (Fig. 4).
+
+For increased readability, we aligned the epoch so that it was
+centered on the eye position that maximized the illusory flicker
+(averaged over all subjects). Not only was ␣ the only reliably
+modulated frequency, but its modulation was also positively re-
+lated to the flicker illusion: the likelihood of perceived flicker
+increased when ␣amplitude was high and decreased when it was
+low. We compared on a subject-by-subject basis the frequency of
+maximal modulation by the illusory flicker with the individual ␣
+frequency (measured during rest, in the absence of visual stimu-
+lation; see Materials and Methods). Over the group of 10 subjects
+for whom we could reliably determine both the individual ␣
+frequency and the individual frequency of maximal modula-
+tion by the illusory flicker, we found a strongly significant corre-
+
+lation between the two measures (p ⫽ 0.004, r ⫽ 0.813). In
+conclusion, the ␣ rhythm appears to be the sole viable neural
+correlate of the flickering wheel illusion.
+
+In a control experiment performed by a subgroup of subjects
+(N ⫽ 3), we repeated the smooth pursuit task while recording eye
+movements using an eye tracker. This was done to ensure that
+participants were effectively pursuing the fixation dot with their
+gaze. After rejecting epochs of EEG data showing high deviations
+of eye position from the fixation dot (⬎3 degrees visual angle), we
+repeated the EEG time-frequency analysis as above. The time-
+frequency decomposition in Figure 5 shows results highly com-
+patible with those of the original experiment: ␣ activity was
+positively related to the perceived illusory flicker.
+
+Is retinal motion of the wheel necessary?
+Finally, we tested the role of any eye movements in the generation of
+the illusion: is the displacement of the stimulus pattern on the retina
+
+13502 • J. Neurosci., August 14, 2013 • 33(33):13498 –13504
+
+a necessary condition for flicker perception,
+or could the eye movements serve a more
+indirect role, for example, by enhancing or
+phase-resetting the ␣ rhythm (Mulholland
+and Evans, 1965; Dewan, 1967; Fenwick and
+Walker, 1968; Fourment et al., 1976) that
+subsequently produces illusory flicker? Fig-
+ure 1 illustrates that the flicker can also be
+experienced in the afterimage of the wheel
+stimulus; because the afterimage is, by defi-
+nition, stabilized on the retina, this observa-
+tion would tend to favor the second
+alternative. We tested this observation sys-
+tematically on all 20 participants. They were
+asked to fixate the center of the screen. To
+the left or right of fixation (eccentricity: 10
+degrees of visual angle), a wheel stimulus
+(radius: 7 degrees of visual angle) was pre-
+sented for a fixed 6 s interval, so as to ensure
+adaptation; then the wheel disappeared, and
+another wheel simultaneously reappeared
+on the other side of fixation for another 6 s
+period, and so on. In each period, partici-
+pants were instructed to pay attention to the
+afterimage (i.e., the side where the wheel
+had just disappeared) and report illusory
+flicker perception via button press (pressing
+when the illusion started, and releasing
+when it stopped). Flicker could be reported
+either on the side of the afterimage or on the
+side of the physically present stimulus (or
+both; two separate response buttons were
+provided). Two-thirds of the trials were per-
+formed with the illusory and one-third with
+the control stimulus (Fig. 3A,B). A total of
+82.5 ⫾ 5.0% (mean ⫾ SEM) of all illusory
+trials showed responses to flicker perception
+in the afterimage (flicker perception pe-
+riod ⱖ 100 ms). The control stimulus did
+not lead to illusory perception.
+
+To summarize, the frequent perception
+of illusory flicker in the wheel’s afterimage
+implies that displacements of the wheel on
+the retina are not strictly necessary to pro-
+duce the illusion. This finding thus rules out
+eye movements (e.g., saccades and micro-
+saccades) as a direct cause of the illusion, as
+well as any direct contribution from accom-
+modation fluctuations
+(Alpern, 1958;
+Campbell et al., 1959; Kotulak and Schor,
+1986; Winn and Gilmartin, 1992; Gray et al.,
+1993), small changes of the shape of the lens
+that distort the retinal image. This does not
+preclude, however, an indirect role for eye
+movements (or accommodation responses)
+in the flickering effect (e.g., by modulating
+the phase or amplitude of ␣rhythms in such
+a way that would eventually result in the
+perception of illusory flicker).
+
+Discussion
+Several other illusory effects have been de-
+scribed previously where a static pattern
+
+Sokoliuk and VanRullen • ␣Rhythms Make a Static Wheel Flicker
+
+Figure 4. ␣ fluctuations are positively related to illusory flicker. A, Percentage of reported flicker perception during one
+averaged smooth pursuit revolution epoch; the epoch was centered on the time of maximal illusory perception (N ⫽ 20). B,
+Frequency spectrum of amplitude modulation (9 selected occipital electrodes; Fig. 3E, green). C, Time course of amplitude modu-
+lations (same ROI) at each frequency ( y-axis) during an averaged smooth pursuit revolution epoch (same x-axis as in A; N ⫽ 20).
+For each frequency, the modulation is computed as a percentage of deviation from the average amplitude over the entire epoch.
+
+Figure 5.
+Smooth pursuit experiment with eye movement recordings. Three subjects repeated the previous experiment while
+their eye movements were continuously monitored. We performed the same analysis as in Figure 4, after discarding any time
+points with eye movements deviating by ⬎3° from the fixation point. A, Frequency spectrum of amplitude modulation (9 selected
+occipital electrodes, as in Fig. 4B). B, Time course of amplitude modulations (same ROI) at each frequency ( y-axis) during an
+averaged smooth pursuit revolution epoch (as in Fig. 4C). C, Superimposed eye traces recorded during the smooth pursuit task for
+each of the three participants (after discarding any time points with eye movements deviating by ⬎3° from the fixation point). The
+red outline represents the outer edge of the wheel stimulus.
+
+Sokoliuk and VanRullen • ␣Rhythms Make a Static Wheel Flicker
+
+J. Neurosci., August 14, 2013 • 33(33):13498 –13504 • 13503
+
+(Pirenne et al., 1958; Gregory, 1993; Troncoso et al., 2008), often
+under the influence of eye movements or accommodation fluc-
+tuations, appears to undergo dynamic changes. For example, our
+stimulus is a modified version of the well-known “Mackay rays”
+pattern, a wheel with ⬃100 –200 spokes that has been reported to
+produce slowly drifting and rotating illusory circles in its after-
+image (MacKay, 1957). Other examples include Leviant’s
+“Enigma” figure (Leviant, 1996; Kumar and Glaser, 2006; Tron-
+coso et al., 2008) (based on Mackay rays), the scintillating luster
+illusion (Pinna et al., 2002) and the pursuit-pursuing illusion
+(Ito, 2012) (both based on Ehrenstein figures), the peripheral
+drift illusion (Fraser and Wilcox, 1979; Faubert and Herbert,
+1999), the scintillating grid (Schrauf et al., 1997; VanRullen and
+Dong, 2003) (based on the Hermann grid), or the Ouchi illusion
+(Hine et al., 1997; Khang and Essock, 1997). Although it is likely
+that our flickering wheel illusion is related to one or more of these
+well-known effects and could thus share the same neuronal basis,
+what sets our illusion apart is the regular and cyclic (“flickering”)
+nature of the percept. This unique feature gave us the possibility
+to explore potential oscillatory correlates of the effect, which we
+identified in the ␣band.
+
+In the perceptual matching task, participants estimated the
+flicker frequency in the ␣ band (⬃9 Hz; Fig. 2D). However, the
+distribution of reported frequencies was rather broad, with many
+reports occurring at lower frequencies (e.g., in the ␪ band, 4 – 8
+Hz). We think that this may be explained by the intrinsic diffi-
+culty of the perceptual matching task. For example, previous
+studies have shown a general tendency for observers to underes-
+timate perceived temporal frequency in the visual periphery (Yo
+and Wilson, 1993).
+
+In the smooth pursuit task, EEG correlates of illusory flicker
+were again observed in the ␣band (Figs. 4 and 5). The peak of ␣
+activity, however, was not in perfect temporal alignment with the
+maximal strength of the illusion but occurred 1–2 s earlier. At
+least two factors may contribute to this temporal lag. First, the
+perception of the illusion could not be instantaneously reported
+by the participants because of the latency in the motor response;
+in addition, participants may have responded conservatively and
+waited before reporting a flicker percept (or its disappearance)
+when they were not fully confident in their perception. Second,
+one could also envision that illusory flicker may only become
+consciously visible after a minimal integration period of high ␣
+power has occurred; our results would then indicate that this
+integration period is on the order of 1–2 s.
+
+Is the ␣rhythm the source or merely the consequence of the
+perceptual flicker, or is it both? The presence of similar, albeit
+weaker, ␣ fluctuations when the smooth pursuit task is per-
+formed around a control stimulus that produces no illusion
+(Fig. 3F ) indicates that these fluctuations can occur indepen-
+dently of the flicker (Mulholland and Evans, 1965; Dewan,
+1967; Fenwick and Walker, 1968): they are not merely a con-
+sequence of the illusion. On the other hand, the increase of
+said ␣ fluctuations when viewing the illusory stimulus (Figs.
+3E, 4, and 5), together with the fact that our observers consis-
+tently placed the frequency of perceived flicker within the ␣
+band (Fig. 2D), suggests that the flicker illusion could “rever-
+berate” and thereby enhance the existing ␣oscillations, much
+in the same way as a physically flickering stimulus ⬃10 Hz
+evokes a steady-state response at the same frequency (Regan,
+1966; Herrmann, 2001). Therefore, we speculate that ␣ band
+oscillations are both a cause and a consequence of illusory
+flicker: they are necessary for flicker to arise (but certainly not
+sufficient; an appropriate stimulus pattern is also required),
+
+and they are also enhanced by this perceived flicker through
+reverberation mechanisms
+(VanRullen and Macdonald,
+2012).
+
+Not every geometric stimulus pattern can resonate with ␣
+oscillations and induce an oscillatory perception; this effect
+seems to be limited to sunburst or wheel patterns within a precise
+range of radial frequencies (between 30 and 40 spokes; Fig. 2A).
+What could be the relation specifically linking this type of geo-
+metric pattern to ␣oscillations? Interestingly, there are previous
+reports of visual hallucinations resembling geometric radial fig-
+ures that can be induced by stroboscopic visual stimulation (i.e.,
+an actual flicker) at a frequency ⬃10 Hz (Shevelev et al., 2000; ter
+Meulen et al., 2009). The underlying mechanisms are little un-
+derstood (Rule et al., 2011) but could rely on a correspondence
+between the spatial organization of visual cortex (retinotopy, cor-
+tical magnification, lateral connections) and the temporal dy-
+namics of neuronal information propagation (neuronal time
+constants, conduction delays). A similar logic may be applied to
+explain the enhancement of ␣oscillatory activity upon presenta-
+tion of our geometric stimulus pattern. Once this ␣ activity
+reaches a critical threshold, the rapid alternation of favorable and
+less favorable phases for sensory processing (Busch et al., 2009;
+Mathewson et al., 2009) produces a “pulsed-inhibition” (Jensen
+and Mazaheri, 2010) that can become visible as a regular flicker in
+the center of the wheel.
+
+Although the precise mechanisms linking the spatial wheel
+pattern to the temporal fluctuations at ⬃10 Hz still remain to be
+elucidated, our report clearly implies that the illusion is a phe-
+nomenological counterpart of the ␣ rhythm. ␣ oscillations are
+constantly in your brain, affecting the way it processes visual
+inputs, but, unless you are a frequent LSD user (Dubois and
+VanRullen, 2011), you never consciously noticed them— until
+now.
+
+References
+Alpern M (1958) Variability of accommodation during steady fixation at
+various levels of illuminance. J Opt Soc Am 48:193–197. CrossRef
+Medline
+
+Berens P (2009) CircStat: a MATLAB Toolbox for Circular Statistics. J Stat
+
+Softw 31:1–21.
+
+Berger H (1929) U¨ ber das Elektrenkephalogramm des Menschen. Arch Psy-
+
+chiatrie Nervenkrankheiten 87:527–570. CrossRef
+
+Brainard DH (1997) The Psychophysics Toolbox. Spat Vis 10:433– 436.
+
+CrossRef Medline
+
+Busch NA, VanRullen R (2010) Spontaneous EEG oscillations reveal pe-
+riodic sampling of visual attention. Proc Natl Acad Sci U S A 107:
+16048 –16053. CrossRef Medline
+
+Busch NA, Dubois J, VanRullen R (2009) The phase of ongoing EEG oscil-
+lations predicts visual perception. J Neurosci 29:7869 –7876. CrossRef
+Medline
+
+Campbell FW, Robson JG, Westheimer G (1959) Fluctuations of accommo-
+dation under steady viewing conditions. J Physiol 145:579 –594. Medline
+Delorme A, Makeig S (2004) EEGLAB: an open source toolbox for analysis
+of single-trial EEG dynamics including independent component analysis.
+J Neurosci Methods 134:9 –21. CrossRef Medline
+
+Dewan EM (1967) Occipital ␣ rhythm eye position and lens accommoda-
+
+tion. Nature 214:975–977. CrossRef Medline
+
+Dubois J, VanRullen R (2011) Visual trails: do the doors of perception open
+
+periodically? PLoS Biol 9:e1001056. CrossRef Medline
+
+Dugue´ L, Marque P, VanRullen R (2011) Transcranial magnetic stimulation
+reveals attentional feedback to area V1 during serial visual search. PLoS
+One 6:e19712. CrossRef Medline
+
+Faubert J, Herbert AM (1999) The peripheral drift illusion: a motion illu-
+
+sion in the visual periphery. Perception 28:617– 621. CrossRef Medline
+
+Fenwick PB, Walker S (1968) The effects of eye position on the ␣ rhythm.
+
+Electroencephalogr Clin Neurophysiol 25:508. Medline
+
+Fourment A, Calvet J, Bancaud J (1976) Electrocorticography of waves as-
+
+13504 • J. Neurosci., August 14, 2013 • 33(33):13498 –13504
+
+Sokoliuk and VanRullen • ␣Rhythms Make a Static Wheel Flicker
+
+sociated with eye movements in man during wakefulness. Electroen-
+cephalogr Clin Neurophysiol 40:457– 469. CrossRef Medline
+
+Fraser A, Wilcox KJ (1979) Perception of illusory movement. Nature 281:
+
+565–566. CrossRef Medline
+
+Gray LS, Winn B, Gilmartin B (1993) Effect of target luminance on micro-
+fluctuations of accommodation. Ophthalmic Physiol Opt 13:258 –265.
+CrossRef Medline
+
+Gregory RL (1993) A comment: MacKay rays shimmer due to accommoda-
+
+tion changes. Proc Biol Sci 253:123. CrossRef Medline
+
+Hanslmayr S, Aslan A, Staudigl T, Klimesch W, Herrmann CS, Ba¨uml KH
+(2007) Prestimulus oscillations predict visual perception performance
+between and within subjects. Neuroimage 37:1465–1473. CrossRef
+Medline
+
+Herrmann CS (2001) Human EEG responses to 1–100 Hz flicker: resonance
+phenomena in visual cortex and their potential correlation to cognitive
+phenomena. Exp Brain Res 137:346 –353. CrossRef Medline
+
+Hine T, Cook M, Rogers GT (1997) The Ouchi illusion: an anomaly in the
+perception of rigid motion for limited spatial frequencies and angles.
+Percept Psychophys 59:448 – 455. CrossRef Medline
+
+Ito H (2012) Illusory object motion in the centre of a radial pattern: the
+
+Pursuit-Pursuing illusion. Iperception 3:59 – 87. CrossRef Medline
+
+Jensen O, Mazaheri A (2010) Shaping functional architecture by oscillatory
+␣ activity: gating by inhibition. Front Hum Neurosci 4:186. CrossRef
+Medline
+
+Khang BG, Essock EA (1997) A motion illusion from two-dimensional pe-
+
+riodic patterns. Perception 26:585–597. CrossRef Medline
+
+Klimesch W, Sauseng P, Hanslmayr S (2007) EEG ␣ oscillations: the
+inhibition-timing hypothesis. Brain Res Brain Res Rev 53:63– 88.
+CrossRef Medline
+
+Kotulak JC, Schor CM (1986) Temporal variations in accommodation dur-
+ing steadystate conditions. J Opt Soc Am A 3:223–227. CrossRef Medline
+Kumar T, Glaser DA (2006) Illusory motion in Enigma: a psychophysical
+investigation. Proc Natl Acad Sci U S A 103:1947–1952. CrossRef
+Medline
+
+Leviant I (1996) Does “brain power” make Enigma spin? Proc R Soc Lond B
+
+Biol Sci 263:997–1001. CrossRef
+
+Mackay DM (1957) Some further visual phenomena associated with regular
+
+patterned stimulation. Nature 180:1145–1146. CrossRef Medline
+
+Makeig S, Westerfield M, Jung TP, Enghoff S, Townsend J, Courchesne E,
+Sejnowski TJ (2002) Dynamic brain sources of visual evoked responses.
+Science 295:690 – 694. CrossRef Medline
+
+Mathewson KE, Gratton G, Fabiani M, Beck DM, Ro T (2009) To see or not
+to see: prestimulus ␣phase predicts visual awareness. J Neurosci 29:2725–
+2732. CrossRef Medline
+
+Mulholland T, Evans CR (1965) An unexpected artefact in the human elec-
+troencephalogram concerning the ␣ rhythm and the orientation of the
+eyes. Nature 207:36 –37. CrossRef Medline
+
+Pinna B, Spillmann L, Ehrenstein WH (2002) Scintillating lustre and bright-
+
+ness induced by radial lines. Perception 31:5–16. CrossRef Medline
+
+Pirenne MH, Compbell FW, Robson JG, MacKay DM (1958) Moving visual
+images produced by regular stationary patterns. Nature 181:362–363.
+CrossRef Medline
+
+Regan D (1966) Some characteristics of average steady-state and transient
+responses evoked by modulated light. Electroencephalogr Clin Neuro-
+physiol 20:238 –248. CrossRef Medline
+
+Rule M, Stoffregen M, Ermentrout B (2011) A model for the rrigin and
+properties of flicker-induced geometric phosphenes. PLOS Comp Biol
+7:e1002158. CrossRef Medline
+
+Scheeringa R, Mazaheri A, Bojak I, Norris DG, Kleinschmidt A (2011) Mod-
+ulation of visually evoked cortical fMRI responses by phase of ongoing
+occipital ␣oscillations. J Neurosci 31:3813–3820. CrossRef Medline
+
+Schrauf M, Lingelbach B, Wist ER (1997) The scintillating grid illusion.
+
+Vision Res 37:1033–1038. CrossRef Medline
+
+Shevelev IA, Kamenkovich VM, Bark ED, Verkhlutov VM, Sharaev GA,
+Mikhailova ES (2000) Visual illusions and travelling ␣waves produced
+by flicker at ␣frequency. Int J Psychophysiol 39:9 –20. CrossRef Medline
+ter Meulen BC, Tavy D, Jacobs BC (2009) From stroboscope to dream machine:
+a history of flicker-induced hallucinations. Eur Neurol 62:316–320. CrossRef
+Medline
+
+Thut G, Nietzel A, Brandt SA, Pascual-Leone A (2006) ␣-Band electroen-
+cephalographic activity over occipital cortex indexes visuospatial atten-
+tion bias and predicts visual target detection. J Neurosci 26:9494 –9502.
+CrossRef Medline
+
+Troncoso XG, Macknik SL, Otero-Millan J, Martinez-Conde S (2008) Mic-
+rosaccades drive illusory motion in the Enigma illusion. Proc Natl Acad
+Sci U S A 105:16033–16038. CrossRef Medline
+
+van Dijk H, Schoffelen JM, Oostenveld R, Jensen O (2008) Prestimulus os-
+cillatory activity in the ␣ band predicts visual discrimination ability.
+J Neurosci 28:1816 –1823. CrossRef Medline
+
+VanRullen R, Dong T (2003) Attention and scintillation. Vision Res 43:
+
+2191–2196. CrossRef Medline
+
+VanRullen R, Macdonald JS (2012) Perceptual echoes at 10 Hz in the hu-
+
+man brain. Curr Biol 22:995–999. CrossRef Medline
+
+Welch PD (1967) The use of fast Fourier transform for the estimation of
+power spectra: a method based on time averaging over short, modified
+periodograms. IEEE Trans Audio Electroacoustics 15:70 –73. CrossRef
+
+Winn B, Gilmartin B (1992) Current perspective on microfluctuations of
+
+accommodation. Ophthalmic Physiol Opt 12:252–256. Medline
+
+Worden MS, Foxe JJ, Wang N, Simpson GV (2000) Anticipatory biasing of
+visuospatial attention indexed by retinotopically specific ␣-band electro-
+encephalography increases over occipital cortex. J Neurosci 20:RC63.
+Medline
+
+Yo C, Wilson HR (1993) Peripheral temporal frequency channels code fre-
+quency and speed inaccurately but allow accurate discrimination. Vision
+Res 33:33– 45. CrossRef Medline
+
+

@@ -1,0 +1,682 @@
+11 Projektmanagement-
+
+Software
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 1
+
+Motivation / Lernziele
+
+? Motivation:
+
+aufwendig.
+
+• Die manuelle Handhabung einiger PM-Methoden ist recht schwierig und 
+
+• Es hat sich die Verwendung von PM-Software durchgesetzt und weit verbreitet.
+
+• Am Markt existieren zahlreiche Produkte mit einer großen Spannweite an 
+
+Funktionalitäten und unterschiedlichem Fokus.
+
+Lernziele
+
+• Sie sollten die wichtigsten Typen von PM-Software unterscheiden und beschreiben
+
+können
+
+• Sie sollten die Funktionalität von PM-Software beschreiben können.
+
+• Sie sollten zu einem PM-Problem die adäquate PM-Softwareklasse erkennen können.
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 2
+
+Typische Fragen
+
+1.
+
+2.
+
+3.
+
+4.
+
+Beschreiben Sie zwei verschiedene Typen von PM-Software.
+
+In welchen Bereichen ist PM-Software sinnvoll einsetzbar. Geben sie zwei Beispiele.
+
+Wählen Sie einen passenden PM-Softwaretypen für den gegebenen Fall… 
+
+Welches sind die Vor- und Nachteile von PM-Software. Wo stößt diese an ihre Grenzen.
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 3
+
+Literatur
+
+Ahlemann, F. (2005): Softwareunterstützung für das Projektmanagement, in: Litke, H.-D. (Hrsg.): 
+
+Handbuch Projektmanagement, München, 2005.
+
+Meyer, M. M. et al. (2010): Project management software systems: requirements, selection process 
+
+and products, 02, 6, Würzburg; Nürnberg: Barc; Gpm, 2010.
+
+Meyer, M. M. (2007): Softwareunterstützung für das Projektmanagement: Auswahl, Einführung und 
+Einsatz softwaregestützter Instrumente, Anforderungen und Lösungen sowie medialer Transfer, 
+Bremen: Ipmi, 2007.
+
+Vogelsang, K. (2013): Analyse der Softwareakzeptanz bei der Anwendung von 
+
+Projektmanagement-Software und Ableitung von Handlungsempfehlungen, Hamburg, 2013.
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 4
+
+11 Projektmanagement-
+
+Software
+
+11.1 Einleitung
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 5
+
+Projektmanagement-Software
+
+Begriff
+
+Der Begriff PM-Software beschreibt Softwaresysteme, 
+die den Prozess der Initiierung, Planung, Ausführung
+und des Projektabschlusses unterstützen. 
+
+I.e.S. beinhaltet diese Definition alle Produkte, die entwickelt wurden, 
+um PM zu unterstützen.
+
+I.w.S. können auch so genannte “generische Produkte” als PM-
+Software angesehen werden, sofern diese PM-Prozesse und/oder
+Methoden unterstützen.
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 6
+
+Wozu Projektmanagement-Software?
+
+Was PM-Software nicht kann...
+
+Was PM-Software (vielleicht)
+
+kann...
+
+• Projektmanagement-Kompetenz 
+
+• Transparenz über Projekte erhöhen
+
+steigern
+
+• Standardisierte Prozesse effizienter 
+
+• Prozesse standardisieren und 
+
+machen
+
+optimieren
+
+• Die Ressourcenallokation verbessern 
+
+• Probleme in Projekten lösen
+
+helfen
+
+• Die Planungsqualität erhöhen
+
+• Basisinformationen für 
+
+Managemententscheidungen liefern
+
+• Probleme frühzeitig erkennbar machen
+
+Projektmanagement-SW ist kein Mittel zu einer qualitativen/effektiven 
+Verbesserung des Projektmanagements!
+
+Universität Osnabrück
+Organisation und WI
+
+Fragen auf die eine gute Software u.U. Antworten 
+weiß
+
+Universität Osnabrück
+Organisation und WI
+
+11 Projektmanagement-Software
+
+11.2 Funktionalität und Softwaretypen
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 9
+
+Softwarefunktionen im Überblick
+
+1. Idea Generation
+
+5. Project Planning
+
+9. Program Termination
+
+Creativity Techniques
+Idea/Project Classification
+Lead Management
+Project Status/Project Process Management
+
+2. Idea Evaluation
+
+Estimation of Effort
+Resource Need Specification
+Risk Estimation
+Profitability Analysis
+Project Budgeting
+Offer Management
+
+3. Portfolio Planning
+
+Organizational Budgeting
+Project Assessment
+Project Portfolio Optimization
+Project Portfolio Configuration
+
+4. Program Planning
+
+Project Templates
+Resource Mater Data
+Resource Assignment Workflow
+Resource Allocation
+
+Universität Osnabrück
+Organisation und WI
+
+Work Breakdown Structure Planning
+Scope/Product Planning
+Network Planning
+Scheduling
+Resource Leveling
+Risk Planning
+Cost Planning
+
+6. Project Controlling
+
+Change Request/Support Request Management
+(Travel) Expense Managemet
+Timesheet
+Cost Controlling
+Meeting Support
+
+Knowledge Portal
+Competence Database/Yellow Pages
+Project Archiving
+Searching
+
+10. Project Termination
+
+Invoicing
+Document Management 
+Supplier and Claim Management
+
+7. Program Controlling
+
+11. Administration and Configuration
+
+Status Reporting
+Earned Value Controlling/Deviation Analysis
+Quality Controlling
+Versioning
+Milestone Controlling
+
+8. Portfolio Controlling
+
+Performance Measurement
+Dashboard
+Organizational Budget Controlling
+
+Workflow Management
+Access Control
+Report Development
+Form Development
+User-defined data structures
+Microsoft Office Project Interface
+Application Programming Interface (API)
+Offline Usage
+
+Additional Information
+
+Contact Data
+Web resources
+Manufacturer’s sales volumen
+…
+
+Folie 10
+
+PMS- Klassen im Überblick
+
+Teachware
+
+allgemeine 
+
+Arbeitsplatzsoftware
+
+spezifische funktionale Software (z.B. 
+für Risikoanalyse, Expertensysteme, 
+
+etc.)
+
+Projektmanagement-Software
+
+Software zum Datenaustausch/Informations- und 
+
+Kommunikationsplattform 
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 11
+
+Nicht jede Software kann alles...
+
+•
+
+In den Unternehmen, die PMS einsetzen (möchten) ist jedes 
+Einsatzszenario individuell und speziell.
+
+• PMS-Produkte lassen sich je nach Art und Umfang der vorhandenen 
+
+Funktionalitäten in verschiedene Klassen unterteilen. 
+
+• Die verschiedenen Klassen geben eine gute Orientierungshilfe  bei der 
+
+Auswahl eines geeigneten Produktes.
+
+Universität Osnabrück
+Organisation und WI
+
+Fazit
+
+• Am Markt existiert eine große Anzahl verschiedener Projektmanagement-
+
+Software Produkte.
+
+• Die Produkte unterscheiden sicher erheblich in der Art und im Umfang der 
+
+von ihnen angebotenen Funktionalitäten.
+
+• Zur vereinfachten Auswahl einer Software sollten die Produkte in 
+
+unterschiedliche Kategorien eingeordnet werden. 
+
+• Zur richtigen Auswahl eines Produktes ist die genaue Kenntnis der eigenen 
+
+Anforderungen unerlässlich.
+
+Universität Osnabrück
+Organisation und WI
+
+12 Projektmanagement-
+
+Software
+
+11.3 Architekturen
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 14
+
+Architectures
+
+Monolithic Architecture
+
+2-tier
+
+Client / Server
+
+3-tier
+
+Client / Server
+
+Web Architecture
+
+Desktop Computer
+
+Desktop Computer
+
+Desktop Computer
+
+Browser
+
+Input/Output
+
+Dialog Control
+
+Information 
+Processing
+
+Data Storage
+
+Input/Output
+
+Dialog Control
+
+Information
+Processing
+
+Input/Output
+
+Dialog Control
+
+Input/Output
+
+Web-Server
+
+Dialog Control
+
+Application Server
+
+Application Server
+
+Information 
+Processing
+
+Information
+Processing
+
+Database Server
+
+Database Server
+
+Database Server
+
+Data Storage
+
+Data Storage
+
+Data Storage
+
+Universität Osnabrück
+Organisation und WI
+
+Vgl. Meyer, 2010, S. 22.
+
+Folie 15
+
+11 Projektmanagement-
+
+Software
+
+11.4 Auswahlprozess
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 16
+
+Fünf Erfolgsfaktoren für den Einsatz von 
+Projektmanagement-Software
+
+•
+
+•
+
+•
+
+•
+
+PM-Know How: Standardisierte und funktionierende PM-Prozesse
+
+– Notwendig, um die Anforderungen abzuleiten
+
+Klare Anforderungsdefinition
+
+– Ermöglicht eine zielgerichtete Kommunikation mit den Herstellern
+– Sorgt für Transparenz bezüglich der Ziele der Einführung
+
+Stakeholder-Involvierung
+
+– Viele Projekte scheitern an mangelnder Akzeptanz
+
+Realistische Ziele
+
+– Von Maturity Level 1 zu 3 in wenigen Monaten ist unrealistisch
+– Sinnvolle Strategie: Prozesse Schritt für Schritt standardisieren und durch SW 
+
+unterstützen
+
+• Management-Support
+
+– Machtpromotoren fördern den Projekterfolg
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 17
+
+Vorgehensmodell zur Systemeinführung (1/4)
+
+Vorbereitungsphase
+
+• Situationsanalyse –
+
+– Wie gut ist unser PM?
+– Change Management Prozess planen
+– Defizite im PM benennen und hinterfragen
+• Klare Ziele definieren und kommunizieren
+
+– Vorbereitung auf Änderungen im Arbeitsalltag durch PMS
+– Ressourcen bereitstellen
+
+• Anwender integrieren
+
+– Team von 4-7 Mitarbeitern, Entscheidern und evtl. Betriebsrat 
+
+involvieren
+
+• Anforderungen in den beteiligten Fachabteilungen erheben 
+
+und priorisieren
+
+– Anforderungen im Workshop dokumentieren
+– Orientierung an Prozessstandards
+– Priorisierung erfolgt, um Funktionalitäten für einen späteren 
+
+Zeitpunkt zu selektieren oder um diese auszuschließen.
+
+Universität Osnabrück
+Organisation und WI
+
+Vogelsang, 2013, S.205-213.
+
+Folie 18
+
+Vorgehensmodell zur Systemeinführung (2/4)
+
+Auswahlphase
+
+• Grobauswahl treffen
+
+– Long List erstellen (8-10 potenzielle Hersteller identifizieren)
+– Pilot- oder Testprojekte für Implementierung und Testdurchläufe 
+
+identifizieren
+
+– Erste Herstellerpräsentation
+
+• Short List erstellen
+
+– Reduktion auf 2-3 Hersteller 
+– Zweite Herstellerpräsentation
+– intensive Tests durch das Projektteam
+
+• Key-User Tests
+
+– Schulungskonzept erstellen
+– Test- und Demoversionen installieren
+– Pilotprojekt mit 1-2 potenziellen Produkten
+
+• Entscheidung
+
+– Ggf. Entscheidung für ein Produkt
+– Kommunikation der Gründe
+
+Universität Osnabrück
+Organisation und WI
+
+Vogelsang, 2013, S.205-213.
+
+Folie 19
+
+Vorgehensmodell zur Systemeinführung (3/4)
+
+Einführungsphase
+
+• Einführungsprojekt initiieren
+
+– Ressourcen bereitstellen
+– Schulungen planen
+– Stammdaten überarbeiten
+
+• Technische Implementierung
+
+– Infrastruktur analysieren und vorbereiten
+– Enger Kontakt zum Hersteller 
+– Informationen an Anwender
+– Review der Einführung
+• Schulungen durchführen
+
+– Key-User schulen
+– Am Projekt die Anwender schulen
+– Customizing zulassen und Ressourcen dafür bereitstellen
+
+Universität Osnabrück
+Organisation und WI
+
+Vogelsang, 2013, S.205-213.
+
+Folie 20
+
+Vorgehensmodell zur Systemeinführung (4/4)
+
+Betriebsphase
+
+• Support
+
+– Ressourcen für Schulung, Nutzung und Anpassungen 
+
+bereitstellen
+
+– Wikis oder Foren für Probleme oder Lösungen mit PMS 
+
+etablieren
+
+• Ausbau
+
+– …der Funktionalitäten 
+– … des Anwendungsumfangs
+– Nutzung einfordern
+
+Universität Osnabrück
+Organisation und WI
+
+Vogelsang, 2013, S.205-213.
+
+Folie 21
+
+Fragen zur PM-Softwareanwendung
+
+1. Was erwarten wir vom Einsatz einer PM-Software?
+2. Sind die Prozesse im Unternehmen geeignet für eine PM-Software?
+3. Sind die Mitarbeiter fachlich und technisch vorbereitet?
+4. Wie ist die aktuelle Softwaresituation?
+5.
+6. Haben wir die richtige Unternehmensberatung hinzugezogen?
+7. Haben wir die richtige Software ausgewählt?
+8. Sind die inhaltlichen und zeitlichen Ziele richtig gesteckt?
+9. Haben wir genügend (freie) Kapazitäten für die Implementierung und 
+
+Ist die Infrastruktur des Unternehmens gut genug?
+
+Einführung?
+
+Universität Osnabrück
+Organisation und WI
+
+Regeln zur Softwarenutzung
+
+(cid:1) Eine PM-Software erlernt man nicht alleine.
+(cid:1) PM-Software kann nur auf Basis einer guten PM-Kultur aufsetzen.
+(cid:1) Eine gute Anforderungsdefinition, richtige Auswahl und sorgfältige 
+
+Einführung legen den Grundstein der PMS-Akzeptanz. Definieren Sie 
+die richtigen Aufgaben.
+
+(cid:1) Wählen Sie die richtige Software.
+(cid:1) Frühzeitig müssen alle Stakeholder einbezogen werden.
+(cid:1) Die PMS braucht eine gute Lobby (bspw. durch das Management).
+(cid:1) Die konsequente Einforderung der Ergebnisse innerhalb des Systems 
+
+ist unverzichtbar.
+
+(cid:1) Anwender- und anwendungsorientierte Schulungen müssen zu jeder 
+
+Zeit der Softwarenutzung möglich sein.
+
+Universität Osnabrück
+Organisation und WI
+
+Ausblick
+
+• Weitere Branchenspezialisierung der Software bei steigendem 
+
+Funktionalitätenspektrum
+
+• Verschwimmende Grenzen zur Systemlandschaft in Unternehmen
+
+• Durchsetzung von 1-2 Standards 
+
+• Starke Reduktion der Anbieterzahl
+
+• Vermehrt Nischenanbieter 
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 24
+
+Vielen Dank für Ihre Aufmerksamkeit!
+
+Lehrstuhl für Organisation und Wirtschaftsinformatik 
+
+der Universität Osnabrück
+
+Katharinenstraße 1
+49069 Osnabrück
+
+http://www.bow.uni-osnabrueck.de
+
+Universität Osnabrück
+Organisation und WI
+
+Folie 25
+
+

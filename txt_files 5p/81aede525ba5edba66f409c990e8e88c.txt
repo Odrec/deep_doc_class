@@ -1,0 +1,130 @@
+ 
+
+ 
+ 
+ 
+ 
+
+Fachgebiet Management Support und WI 
+Management Support Systems III – WS 2014/15 
+Aufgabe Nr. 7 
+Bearbeitungszeit: 26.11. bis 03.12.2014 
+
+Aufgabe 7: 
+
+Künstliche Neuronale Netze 
+
+(Autopreisschätzer) 
+
+Ziel 
+In  dieser  Aufgabe  geht  es  um  die  Anwendung  eines  Künstlichen  Neuronalen  Netzes.  Ihre 
+Aufgabe  wird  es  sein,  ein  neuronales  Netz  zu  entwerfen,  mit  dem  der  Kaufpreis  eines  Autos 
+aufgrund von mehr oder weniger bekannten Eigenschaften des Autos "geschätzt" werden kann. 
+Für  den  Entwurf  des  Neuronalen  Netzes  und  dessen  Training  sollen  gesammelte  Daten 
+bezüglich mehrerer Gebrauchtwagen verwendet werden. Diese müssen Sie zunächst aufbereiten, 
+damit die Daten in das methodische Modellierungsschema neuronaler Netzanwendungen passen. 
+Beispielsweise sind nominal skalierte Merkmale nicht auswertbar. Schließlich sollen Sie sich bei 
+der Lösung von Schätzanfragen von Ihrem (trainierten) neuronalen Netz beraten lassen. 
+Einleitung 
+Die Firma OSCar möchte den Wert ihrer einzelnen Sportwagen in ihrem Fuhrpark abschätzen 
+(Leistungsdaten,  Ausstattungsdaten, 
+können.  Dazu  stehen  Ihnen  die  folgenden  Daten 
+Umweltdaten) 
+einem 
+Gebrauchtwagenportal zur Verfügung: 
+
+von  Gebrauchtwagen 
+
+des  Fahrzeugtyps 
+
+Sportwagen 
+
+aus 
+
+  Kilometerstand (1-200.000) 
+  Leistung (34, 50, 60, 75, 90, 101, 118, 131, 150, 200, 252, 300)(in PS) 
+  Kraftstoffart (Diesel, Benzin, Gas, Elektro) 
+  Getriebe (Automatik, Schaltgetriebe) 
+  Klimatisierung (ja, nein) 
+  Sitze (2, 4, 5) 
+  Schadstoffklasse (Euro1, Euro2, Euro3, Euro4, Euro5, Euro6) 
+  Umweltplakette (keine, rot, gelb, gruen) 
+  Lederausstattung (ja, nein) 
+  Sitzheizung (ja, nein)  
+  Preis (10.820 -199052) 
+
+Die gesammelten Falldaten stehen in der Datei MSS3auf07_OSCar_Sportwagen_Gebraucht.csv 
+über Stud.IP zur Verfügung. 
+1.  Bereitstellung und Laden relevanter Daten 
+Starten  Sie  RapidMiner  und  erstellen  Sie  ein  neues  Projekt.  Laden  Sie  die  Leistungsdaten, 
+Ausstattungsdaten und Umweltdaten bezüglich gebrauchter Sportwagen über einen „Read CSV“ 
+Operator. Geben Sie als Trennzeichen das „Komma“ an. Nutzen Sie den Operator „Set Role“ 
+um das Zielattribut (Label) zu definieren. 
+
+Universität Osnabrück, FB9, MSWI, Prof. Dr. B. Rieger, MSS III – Aufgabe Nr. 7          
+ 
+
+Seite 1/2 
+
+ 
+
+2.  Formatierung in kompatibles Datenformat 
+Transformieren  Sie  die  Daten  in  einem  weiteren  Prozessschritt  in  ein  Format  das  eine 
+anschließende  Auswertung  mit  einem  Neural  Net  Operator  zulässt.  Teilen  Sie  dabei  den 
+Datensatz in einen prozentualen Trainingsdatensatz und einen Testdatensatz auf. 
+3.  Trainieren des KNN 
+Fügen  Sie  nun  eine  passende  KNN-Methode  ihrem  Prozess  hinzu.  Wählen  Sie  geeignete 
+Parametereinstellungen für die Anzahl verdeckter Schichten, die Anzahl der Trainingsiterationen, 
+die Lernrate und das Momentum. Trainieren Sie anschließend ihr Künstliches Neuronales Netz. 
+
+4.  Anwenden des Modells auf Testdatensatz 
+Sie  haben  nun  einen  Autopreisschätzer  trainiert  und  wollen  dieses  Modell  natürlich  auch  auf 
+weitere Daten anwenden. Dazu benötigen Sie einen „Apply Model“ Operator. Dieser Operator 
+benötigt  als  Eingabe  das  soeben  von  Ihnen  trainierte  KNN  und  einen  Testdatensatz.  Der 
+Testdatensatz  muss  wie  der  Trainingsdatensatz  ebenfalls  in  ein  Datenformat  transformiert 
+werden, das vom KNN-Operator verarbeitet werden kann. Sofern Sie ihr Modell auch in anderen 
+Prozessen  wiederverwenden  möchten,  können  Sie  dieses  noch  über  einen  „Write  Model“ 
+Operator in eine von Ihnen angegebene Datei speichern. 
+
+5.  Interpretation der Ergebnisse 
+Den  Output  des  Apply  Model-Operators  (lab  &  mod)  können  Sie  mit  dem  rechten  Rand  der 
+Prozesskarte  verbinden.  Dadurch  erscheinen  die  Ergebnisse  dieser  Operatoren 
+in  der 
+Ergebnisübersicht,  nachdem  Sie  den  kompletten  Prozess  ausgeführt  haben.  Falls  nicht 
+automatisch geschehen, können Sie nun über einen Reiter in die Ergebnisperspektive wechseln 
+und  sich  die  verschiedenen  Ergebnisse  anschauen.  Sehen  Sie  sich  den  Trainingsdatensatz,  das 
+grafische  KNN-Modell,  das  textuelle  KNN-Modell  und  den  Testdatensatz  genau  an.  Beim 
+Testdatensatz müsste ferner eine Spalte mit dem geschätzten Preis der Autos vorhanden sein. 
+Aufgaben 
+
+1.  Erstellen  Sie  die  oben  beschriebenen  Prozessschritte  und  führen  Sie  die 
+Konsultation  des  trainierten  KNN  auf  den  Testdatensatz  durch.  Speichern  Sie 
+Ihren Prozess und übermitteln Sie diese Datei. 
+
+2.  Welche Input-Variablen des Trainingsdatensatzes haben einen großen und einen 
+
+geringen Einfluss? 
+
+3.  Welche  Input-Variablen  des  Trainingsdatensatzes  haben  einen  positiven  oder 
+
+einen negativen Einfluss? 
+
+4.  Nehmen  Sie  3  einzelne  Stichproben  und  bewerten  Sie  die  Genauigkeit  des 
+
+Preisschätzers. 
+
+Die Antworten zu diesen Fragen sind bis Mittwoch (03.12.2014) 10:00 Uhr unter Angabe des 
+Nachnamens, der Veranstaltung, und der Aufgabennummer (Mustermann-MSS3-AufX) als 
+pdf-Datei an abenjamins@uni-osnabrueck.de zu schicken! Eine entsprechende Programmdatei 
+ist  gegebenenfalls  unter  der  gleichen  Bezeichnungskonvention  der  Email  beizufügen.  Alle 
+später eintreffenden Antworten werden mit einem "-" gewertet. Bitte wenden Sie sich bei Fragen 
+zur Aufgabe oder der Übungsinhalte per E-Mail an mich oder vereinbaren Sie einen Termin. 
+
+Viel Spaß! 
+
+Universität Osnabrück, FB9, MSWI, Prof. Dr. B. Rieger, MSS III – Aufgabe Nr. 7          
+ 
+
+Seite 2/2 
+
+

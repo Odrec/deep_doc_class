@@ -1,0 +1,1334 @@
+European Child & Adolescent Psychiatry
+10:240–247 (2001) © Steinkopff Verlag 2001
+
+ORIGINAL CONTRIBUTION
+
+K. Schmeck
+F. Poustka
+M. Döpfner
+J. Plück
+W. Berner
+G. Lehmkuhl
+J. M. Fegert
+K. Lenz
+M. Huss
+U. Lehmkuhl
+
+Accepted: 17 May 2001
+
+K. Schmeck (쾷) · F. Poustka
+Klinik für Psychiatrie und Psychotherapie
+des Kindes- und Jugendalters am Zentrum
+der Psychiatrie der Johann Wolfgang
+Goethe-Universität
+Deutschordenstr. 50
+60590 Frankfurt a. M., Germany
+E-Mail: Schmeck@em.uni-frankfurt.de
+M. Döpfner · J. Plück · W. Berner · 
+G. Lehmkuhl
+Klinik und Poliklinik für Psychiatrie und
+Psychotherapie des Kindes- und Jugendal-
+ters der Universität zu Köln
+Robert-Koch-Str. 10
+50931 Köln, Germany
+J. M. Fegert
+Klinik für Kinder- und Jugend-
+neuropsychiatrie/Psychotherapie 
+der Universität Rostock
+Gelsheimer Str. 20
+18147 Rostock, Germany
+
+Introduction
+
+Discriminant validity of the Child Behaviour
+Checklist CBCL-4/18 in German samples
+
+K. Lenz · M. Huss · U. Lehmkuhl
+Klinik für Psychiatrie, Psychosomatik 
+und Psychotherapie des Kindes- und 
+Jugendalters, Charité, Humboldt Universität
+zu Berlin,
+Augustenburger Platz 1
+13353 Berlin, Germany
+
+I Abstract This study examined
+the discriminant validity of the
+German version of CBCL in two
+large samples of referred and non-
+referred children and adolescents
+which were matched for age, sex
+and socio-economic status. The
+combined sample that was used for
+statistical analysis consists of 2,058
+referred and 2,058 non-referred
+boys and girls between 4 and 18
+years of age (mean age: referred
+boys=10.9 years, non-referred
+boys=10.9 years, referred
+girls=11.3 years, non-referred
+girls=11.1 years). Referral status
+
+was used as validity criterion. Sta-
+tistical procedures included Odds
+Ratios, Total Predictive Values,
+ROC analyses and discriminant
+analyses. Results indicated that the
+discriminant validity of the Ger-
+man version of CBCL is compara-
+ble to the original English version.
+With the use of CBCL Total Prob-
+lem Score as predictor (cut-off T≥
+60) 83.8 % of children and adoles-
+cents could correctly be classified
+(sensitivity 83.6 %, specificity
+83.9 %). Symptoms of the “Atten-
+tion Problems Scale” show the
+highest discriminative power to
+distinguish between disturbed and
+undisturbed children and adoles-
+cents.
+
+I Key words CBCL – Discrimi-
+nant validity – Total Predictive
+Value – ROC analysis – Attention
+problems
+
+To  assess  child  psychiatric  disorders  two  major  ap-
+proaches  are  used: on  the  one  hand, categorical  diag-
+noses that describe psychopathological states as distinct
+syndromes; on the other hand, dimensional approaches
+that view psychopathology as a deviance from normal
+with no clear threshold between subjects with or with-
+out a disorder.
+
+The  Child  Behaviour  Checklist  (CBCL)  was  devel-
+oped by T. Achenbach (1, 2) for the use of dimensional
+assessment  of childhood  competencies  and  psy-
+
+ 
+
+1
+4
+2
+P
+A
+C
+E
+
+chopathological problems. In the last two decades this
+checklist  approach  has  had  significant  influence  in
+many  countries. CBCL  has  been  translated  into  more
+than 60 languages and has been used in numerous stud-
+ies. The cross-cultural generalisability of CBCL was con-
+firmed  in  studies  that  compared  samples  of several
+countries with different cultural backgrounds (6, 7, 27).
+In Germany CBCL was first used in epidemiological
+studies  by  Poustka  and  Schmeck  (21, 22)  and  Rem-
+schmidt and Walter (23). In 1993 a German consensus
+version (3, 9) was published that has been widely used in
+German-speaking countries since then. Reliability and
+factorial validity of this German version has been suc-
+
+K. Schmeck et al.
+Discriminant validity of CBCL-4/18
+
+241
+
+cessfully checked (10, 11). To establish German norms a
+nationwide representative field sample was drawn (12,
+13). In a random-route procedure a professional mar-
+keting  company  administered  the  questionnaire  to  a
+representative  sample  of 3,663  families  with  children
+aged  4–18  years. The  response  rate  was  82.2 %, 2,856
+parent  ratings  (78.0 %)  could  finally  be  used  for  data
+analysis.
+
+One of the most common ways of employing CBCL in
+child  psychiatric  diagnostic  procedures  is  its  use  as  a
+screening instrument either in epidemiological studies
+or  in  out-patient  settings. With  scores  on  eight  syn-
+drome scales and a Total Problem Score, the extent and
+severity of childhood psychological problems can be de-
+scribed. As a result, evidence is given if a child or ado-
+lescent needs professional help for his problem.
+
+A common way of assessing the quality of a screening
+instrument is to check criterion related validity, i. e. the
+ability of the instrument to predict an external criterion
+that is relevant to the constructs that are assessed.In child
+and adolescent psychiatry referral status is often used as
+“gold standard” to answer the question if a certain in-
+strument yields enough power to discriminate and pre-
+dict the clinical status of two different samples of clinical
+and field populations.As Achenbach (1) points out,refer-
+ral status is not an infallible criterion of children’s need
+for help since there could be children in the non-referred
+group that might need help but still have not received any,
+and other children in the referred groups without severe
+psychological problems. An alternative could be the use
+of a  diagnostic  interview  to  assess  children’s  psy-
+chopathology independent of the screening instrument.
+However, a well-established and widely accepted diag-
+nostic interview has not been available in Germany until
+now.So we decided to use referral status as a validity cri-
+terion.Inaccuracy of referral status could only lead to an
+underestimation of the association between screening
+instrument and psychopathology.
+
+The  original  English  version  of CBCL  has  already
+proven  good  discriminant  validity  (1)  which  is  con-
+firmed  by  other  studies  using  the  CBCL  in  different
+countries. For example, in a recent study Novik (20) de-
+scribed the predictive validity of the Norwegian version
+of CBCL that significantly distinguished between chil-
+dren  with  psychiatric  disorders  and  non-disordered
+children. In a Dutch longitudinal study Koot & Verhulst
+(17) demonstrated the predictive validity of problem be-
+haviours assessed with CBCL with regard to poor out-
+come four years later.
+
+McGuire et al. (19) could demonstrate that the CBCL
+cross-informant syndromes “Aggressive Behaviour”and
+“Delinquent  Behaviour” significantly  separate  disrup-
+tive behaviour disorders from all other clinical disorders
+but that this was not equally true for the prediction of
+emotional  disorders  using  the  cross-informant  syn-
+drome “Anxious/Depressed”.
+
+The aims of the present study were: 1) to investigate
+the ability of the German version of CBCL to discrimi-
+nate between referred and non-referred children in dif-
+ferent age and sex groups; 2) to examine sensitivity and
+specificity  using  different  cut-offs  (based  on  German
+norms); and 3) to study the predictive power of CBCL
+syndromes and items.
+
+Methods
+
+I Subjects
+
+The clinical sample consisted of 4,236 unselected in- and
+out-patients aged 4–18 years who had been referred to
+the  child  and  adolescent  psychiatric  university  clinics 
+of Frankfurt, Cologne  and  Berlin  during  the  years
+1987–1995. Only those parents with good knowledge of
+the  German  language  completed  the  CBCL  question-
+naire. All patients were clinically diagnosed using ICD-
+10  criteria  (8)  or  MAS  criteria  (24)  in  a  classification
+conference of two or more clinically experienced child
+psychiatrists. The  following  subjects  were  excluded
+from the analysis: 1) all subjects with missing data for
+sociodemographic variables or diagnosis (N=961); 2) all
+referred subjects who were classified as non-disturbed
+(no ICD-10 diagnosis) (N=252).
+
+The  general  population  sample  consisted  of 2,856
+children and adolescents aged 4–18 years who had been
+collected in the year 1995 all over Germany (12). This
+sample is representative for Germany according to so-
+cio-economic and urban/rural status (12, 18). Excluded
+from the analysis were: 1) all subjects with missing data
+for  sociodemographic  variables  (N=223); 2)  children
+and adolescents of the normative sample who had been
+referred for treatment in the last 12 months (N=102).
+
+Families’ socio-economic status (SES) was classified
+according  to  a  scheme  (adapted  from  Kleining  and
+Moore’s (16) 9-step classification system of SES) that is
+based  on  parents’ education, occupation  and  income.
+For further analysis SES was summarised in three cate-
+gories: high, medium and low socio-economic status.
+
+To prevent biases in the analysis due to differences in
+basic demographic variables between our two samples
+we  matched  subjects  of the  referred  and  non-referred
+sample for three criteria: sex (male/female), age-group
+(4–11years/12–18years) and SES (high,medium,low).In
+this  matching  procedure  subjects  were  excluded  (by
+chance) from both samples.In our referred sample there
+were more younger boys of all SES and more older boys
+and younger girls of low SES than in our normative non-
+referred sample. So we excluded by chance as many of
+these  subjects  as  necessary  until  the  numbers  in  both
+samples were the same. In the other groups (older girls
+of all SES, younger girls and older boys of medium and
+high  SES)  there  were  more  subjects  in  the  normative
+
+242
+
+European Child & Adolescent Psychiatry, Vol. 10, No. 4 (2001)
+© Steinkopff Verlag 2001
+
+sample so that subjects had to be excluded by chance un-
+til both samples were matched for age, sex and socio-
+economic status.
+
+The final combined sample that was used for statisti-
+cal analysis consisted of 2,058 referred and 2,058 non-re-
+ferred boys and girls between 4 and 18 years of age (in
+both  referred  and  non-referred  sample, 599  4-  to  11-
+year-old boys, 560 12- to18-year-old boys, 460 4- to 11-
+year-old  girls  and  439  12-  to  18-year-old  girls  each).
+Mean age was 10.9 years for both referred and non-re-
+ferred boys, 11.3 years for referred girls and 11.1 years
+for non-referred girls. Socio-economic status (SES) was
+also  strictly  matched  (for  both  referred  and  non-re-
+ferred  sample: boys  4–11 years: 261  SES  low, 223
+medium, 115  high; girls  4–11 years: 264  SES  low, 144
+medium, 52  high; boys  12–18 years: 269  SES  low, 213
+medium, 78  high; girls  12–18 years: 236  SES  low, 136
+medium, 67 high).
+
+ICD-10  diagnoses  of the  referred  sample  were  dis-
+tributed as follows: ADHD (F90)/ADHD + Conduct dis-
+order  (F90.1)  N=303  (14.8 %); Conduct  disorder  (F91,
+F92) N=425 (20.6 %); Emotional disorder (F32-F39, F40-
+F43, F93, F94.0)  N=737  (35.8 %); Psychoses  (F20-F29,
+F30, F31, F33.3)  N=48  (2.4 %); Eating  disorders  (F50)
+N=97 (4.7 %); Personality disorders (F60) N=52 (2.5 %);
+Other disorders N=396 (19.2 %).
+
+As an effect of the matching procedure between re-
+ferred  and  normative  sample  (the  excess  of younger
+boys with mostly disruptive behaviour disorders in our
+clinical sample had to be decreased) the percentage of
+patients with externalising disorders is about 10 % lower
+than in a non-matched clinical sample.
+
+I Procedure
+
+Child Behaviour Checklist (CBCL) (1) is a parent-rating
+scale  to  assess  various  aspects  of psychopathology  in
+childhood and adolescence. The questionnaire consists
+of two parts: in the first part social competence is cov-
+ered by three scales: Activity Scale (amount and quality
+of different activities of daily life), Social Scale (amount
+and quality of children’s contact with other people) and
+School  Scale  (academic  performance  in  school). The
+second part is designed to assess behavioural and emo-
+tional  problems  of children  and  adolescents. Parents
+judge  120  items, if they  are “not  true” (0), “somewhat
+true” (1)  or “always  or  often  true” (2)  for  their  child.
+According to the results of various factor analyses (1)
+items are grouped on eight narrow-band scales: “With-
+drawn”, “Somatic  Complaints”, “Anxious/Depressed”
+(these  first  three  scales  are  summarised  in  the  broad-
+band 
+“Social  Problems”,
+“Thought Problems”,“Attention Problems”,“Delinquent
+Behaviour” and  “Aggressive  Behaviour” (the  last  two
+scales  are  summarised  in  the  broadband  scale “Exter-
+
+scale  “Internalising”),
+
+nalising”). Thirty-three items that could not be assigned
+to any of these scales are called “Other Problems”. The
+sum of all 120 items forms the “Total Score”.
+
+According to Achenbach (1) syndrome scale T-scores
+of 67–70 (percentile 95–98) represent a borderline clin-
+ical range, T-scores above 70 the clinical range. Applied
+to the Total Problem Score T-scores of 60–63 (percentile
+84–90) represent the borderline clinical range, T-scores
+above 63 the clinical range. We used these cut-off points
+for  categorical  discrimination  between  referred  and
+non-referred groups.
+
+I Statistical procedures
+
+To investigate the clinical utility of CBCL as a predictor
+of referral  status  we  used  Odds  Ratio  (OR)  and  Total
+Predictive  Value  (TPV). The  TPV  represents  the  per-
+centage of cases that are correctly classified which is a
+common measure of clinical utility. It has to be taken
+into account that TPV varies with the base rates of the
+conditions  that  are  to  be  predicted. OR, on  the  other
+hand, is independent of base rates. This statistical para-
+meter describes the probability of having a disorder in
+the  presence  of a  risk  factor  in  comparison  with  the
+probability of having the disorder in the absence of this
+risk factor. We calculated ORs according to the formula:
+A x D/B x C = (true negatives x true positives)/(false
+
+positives x false negatives).
+
+In our analysis the risk factor is “being within the clin-
+ical range”. An OR of 5, for example, would stand for a
+five-times higher probability of“being referred to a child
+psychiatric clinic”for a child whose CBCL scores lie in the
+clinical  range  in  comparison  to  a  child  whose  CBCL
+scores lie in the normal or borderline range (definition of
+clinical and borderline range is described above).
+
+We also calculated sensitivity and specificity. Sensi-
+tivity of a test is defined as the percentage of disordered
+subjects  who  are  correctly  classified  as  disordered
+(“true  positives”), whereas  specificity  means  the  per-
+centage of undisturbed subjects who are correctly clas-
+sified as undisturbed (“true negatives”). A further way
+to determine the optimal cut-off point of a screening in-
+strument is to perform a ROC analysis that helps to find
+the point at which sensitivity and specificity are in opti-
+mal relation to each other.The area under curve is a ROC
+measure  of overall  fit  of classification  (a  score  of 1.0
+would represent a perfect fit, a score of 0.5 one that is
+reached by chance).A ROC analysis for each age and sex
+group was performed to estimate the best cut-off point.
+In  contrast  to  clinical  cut-off points  the  statistical
+procedure “Discriminant Analysis” uses weighted com-
+binations  of predictors  to  better  predict  criterion
+groups. As the weighting procedure uses specific char-
+acteristics of the sample to maximise discrimination the
+accuracy of classification could be overestimated. Using
+
+K. Schmeck et al.
+Discriminant validity of CBCL-4/18
+
+243
+
+discriminant analysis in another sample could then re-
+sult in lower classification rates. Two ways of correction
+are possible (4): a “jack-knife”procedure (multiple com-
+puting of discriminant function for each sample with a
+different subject held out of the sample each time), or a
+splitting of the sample in two halves so that the results of
+discriminant analysis of the first half of the sample are
+validated by discriminant analysis of the second half.As
+the sample size was large enough we decided to use the
+latter. So, by chance, the whole sample of 4,116 children
+and adolescents was divided into two parts.All discrim-
+inant analyses were computed twice, once on each half
+of the sample.
+
+As candidate predictors of the stepwise discriminant
+analyses  we  used: a)  the  eight  syndrome  scales  (plus
+“Other Problems”) and b) the 120 CBCL items. Criterion
+to include a predictor in the analysis was a significant re-
+duction of Wilk’s Lambda.
+
+Results
+
+First we analysed the ability of the eight syndrome scales
+and  the  total  score  to  predict  referral  status. Subjects
+with scores above the 98th percentile = T-score 70 (total
+score: > 84th percentile = T-score 60) of the normative
+sample are in the clinical range (1).
+
+According to the normative procedure about 2% of
+non-referred subjects are located in the clinical range of
+syndrome scales and 16.1% lie in the clinical range of
+the total score (see Table 1). In contrast, 18.6–38.9% of
+the patients scored above the clinical cut-off point of the
+eight syndromes and even 83.6% of the patients are lo-
+cated in the clinical range of the Total Problem Score.
+
+Total Predictive Value (percentage of cases which are
+correctly classified) is lowest for the scale “Withdrawn”
+(58.2 %) and highest for the scale “Attention Problems”
+(68.8 %).With the information of all problems in the To-
+tal Problem Score TPV reaches 83.8 %.
+
+The probability of being referred is 44.6 times higher
+
+if the Attention Problem Score exceeds the clinical cut-
+off point of T > 70 but only 9.4 times higher if the So-
+matic Complaints Score exceeds this threshold.
+
+For screening procedures it is essential to know the
+optimal point of discrimination between disturbed and
+non-disturbed subjects. The use of CBCL Total Problem
+Score  T ≥ 60  (borderline  clinical  range  according  to
+Achenbach) leads to an optimal balance between sensi-
+tivity (83.6 %) and specificity (83.9 %) with a Total Pre-
+dictive Value of 83.8 %. With a cut-off criterion of CBCL
+Total Problem Score T > 63 (clinical range) specificity
+increases  to  92.2 %  whereas  sensitivity  decreases  to
+69.7 % and TPV to 80.9 %.If we combine the information
+of CBCL  Total  Problem  Score  (borderline  range)  and
+Syndrome  Scale  Scores  (clinical  range), sensitivity
+(85.4 %) and specificity (82.3%) are also quite balanced
+with a TPV of 83.8 % which is exactly as high as TPV if
+we use the Total Problem Score alone. The use of Syn-
+drome Scale Scores alone as classification criteria does
+not improve the prediction of referral status.
+
+A ROC curve of CBCL Total Problem Score in the to-
+
+tal sample is presented in Fig. 1.
+
+The major co-ordinates of this curve (Table 2) con-
+firm the results above. The optimal relation of sensitiv-
+ity and specificity can be found at a cut-off point of 28
+(T-score 59 for boys; T-score 60 for girls) which is very
+close to Achenbach’s cut-off for borderline cases.
+
+Area under curve is 0.92 (standard error 0.004) which
+represents  an  excellent  ability  of CBCL  Total  Score  to
+correctly classify disturbed and non-disturbed children.
+Separate ROC analyses in age and sex groups show bet-
+ter results with boys (0.93) than with girls (0.89 to 0.90).
+As can be seen in Table 3 the results of discriminant
+
+ROC-curve
+ROC-curve
+
+1.00
+
+0.75
+
+0.50
+
+0.25
+
+Table 1 Odds Ratios, per cent of subjects in clinical range and Total Predictive Val-
+ues according to clinical cut-off points
+
+Odds Ratios
+
+Per cent of subjects in
+clinical range
+
+Total
+Predictive
+Values
+
+Referred
+
+Non-Referred
+
+Sensitivity
+Sensitivity
+
+10.2
+Withdrawn
+9.4
+Somatic Complaints
+24.6
+Anxious/Depressed
+20.6
+Social Problems
+25.0
+Thought Problems
+Attention Problems
+44.6
+Delinquent Behaviour 13.6
+Aggressive Behaviour 18.9
+26.6
+Total Problems
+
+18.6
+20.5
+31.0
+32.0
+31.4
+38.9
+21.7
+30.6
+83.6
+
+2.2
+2.7
+1.8
+2.2
+1.8
+1.4
+2.0
+2.3
+16.1
+
+58.2
+58.9
+64.6
+64.9
+64.8
+68.8
+59.8
+64.2
+83.8
+
+0.00
+
+0.00
+
+0.25
+
+0.50
+
+0.75
+
+1.00
+
+1 – Specificity
+1 – Specificity
+
+Fig. 1 ROC-curve of CBCL-Total Problem Score in the combined sample of referred
+and non-referred subjects (N=4116)
+
+244
+
+European Child & Adolescent Psychiatry, Vol. 10, No. 4 (2001)
+© Steinkopff Verlag 2001
+
+Table 2 Sensitivity and Specificity of the CBCL Total Score in the Total Sample
+
+Raw Score
+
+Sensitivity Specificity
+
+Raw Score Sensitivity Specificity
+
+1
+5
+10
+15
+20
+21
+22
+23
+24
+25
+26
+
+0.999
+0.993
+0.978
+0.957
+0.925
+0.917
+0.906
+0.896
+0.883
+0.870
+0.860
+
+0.059
+0.239
+0.431
+0.591
+0.706
+0.729
+0.751
+0.769
+0.784
+0.798
+0.811
+
+27
+28
+29
+30
+35
+40
+45
+50
+60
+70
+100
+
+0.850
+0.837
+0.827
+0.814
+0.739
+0.664
+0.590
+0.520
+0.370
+0.252
+0.042
+
+0.820
+0.832
+0.847
+0.856
+0.905
+0.941
+0.958
+0.975
+0.989
+0.996
+0.999
+
+Table 3 Findings from Discriminant Analyses based on CBCL Syndrome Scales
+
+Predicted group membership
+(first half of sample)
+
+Predicted group membership
+(second half of sample)
+
+Actual group
+
+Referred
+
+Non-referred
+
+Referred
+
+Non-referred
+
+Boys 4–11
+Referred
+Non-referred
+
+Girls 4–11
+Referred
+Non-referred
+
+Boys 12–18
+Referred
+Non-referred
+
+Girls 12–18
+Referred
+Non-referred
+
+Total sample
+
+244 (81.9 %)
+16 (5.4 %)
+
+54 (18.1 %)
+279 (94.6 %)
+
+245 (81.4 %)
+24 (7.9 %)
+
+56 (18.6 %)
+280 (92.1 %)
+
+166 (72.5 %)
+19 (8.1 %)
+
+63 (27.5 %)
+216 (91.9 %)
+
+174 (75.3 %)
+17 (7.6 %)
+
+57 (24.7 %)
+208 (92.4 %)
+
+215 (78.2 %)
+23 (8.1 %)
+
+60 (21.8 %)
+261 (91.9 %)
+
+228 (80 %)
+18 (6.5 %)
+
+57 (20 %)
+258 (93.5 %)
+
+174 (76.7 %)
+15 (7.0 %)
+
+53 (23.3 %)
+200 (93.0 %)
+
+164 (77.4 %)
+18 (8.0 %)
+
+48 (22.6 %)
+206 (92.0 %)
+
+Referred
+Non-referred
+
+786 (76.4 %) 243 (23.6 %)
+96 (9.3 %)
+933 (90.7 %)
+
+782 (76 %)
+89 (8.6 %)
+
+247 (24.0 %)
+940 (91.4 %)
+
+analyses do not differ between the two halves of the sam-
+ple. Therefore, we can draw the conclusion that the re-
+sults  are  stable  in  different  samples. Of non-referred
+subjects  91.9–94.6%  are  correctly  predicted  as  being
+non-referred, 72.5–81.9 % of referred subjects are cor-
+rectly predicted as cases. The best prediction of clinical
+cases  can  be  demonstrated 
+in  younger  boys
+(81.4–81.9 %)  whereas  the  prediction  of referral  in
+younger girls was slightly less (72.5–75.3 %).
+
+With the use of discriminant analysis Total Predictive
+Value (TPV) increases only little compared to TPV ac-
+cording to cut-off points: 82.3 % (young girls) to 88.2 %
+(young boys) of subjects are correctly classified. When
+all  120  items  are  used  as  predictors  TPV  increases 
+to  89.1–90.0 %  (sensitivity: 85.5–86.9 %; specificity:
+92.6–93.2 %).
+
+Another point of interest was to investigate the dif-
+ferent ability of syndrome scores or items to distinguish
+between referred and non-referred children in separate
+age  and  sex  groups. On  which  syndrome  or  on  which
+items do we have to focus, which of them yield the high-
+est discriminative power?
+
+To answer this question we performed stepwise dis-
+criminant analyses with syndromes or items as predic-
+tors.Discriminative power of variables was measured by
+their  ability  to  significantly  reduce Wilk’s  Lambda. To
+confirm the generalisability of the results analyses were
+performed twice for both halves of the sample.
+
+In three of the four groups (younger and older boys,
+older  girls)  the “Attention  Problem  Scale” showed  the
+highest discriminative power. This was true in all cases
+for both halves of the sample which underlines the sta-
+bility of this result. Only in younger girls the “Attention
+Problem Scale” was not of such importance. In the first
+half of the sample this scale was on the third place re-
+garding  its  discriminative  power, in  the  second  half
+there was no significant effect of this scale. For younger
+girls the “Anxious/Depressed Scale” yielded the highest
+discriminative  power  in  both  analyses. This  scale  was
+also important for older boys and girls, but only of little
+importance for younger boys. In this group the “Aggres-
+sive  Behaviour  Scale” showed  the  second  highest  dis-
+criminative power in both analyses. There was no sig-
+nificant  effect  of this  scale  in  the  other  three  age/sex
+groups. The other scales showed moderate discrimina-
+tive power with differences between age and sex groups.
+Only the scale “Delinquent Behaviour”did not show sig-
+nificant discriminative power in all analyses.
+
+With items used as predictors for stepwise discrimi-
+nant analysis we could confirm the high discriminative
+power of ADHD symptoms. The two items (8 and 45)
+with the highest power to discriminate between referred
+and non-referred children and adolescents cover poor
+concentration and nervousness (Table 4). They are (like
+items 10 and 41) part of the “Attention Problems Scale”,
+the  strongest  predictor  of referral  status  for  boys  and
+older  girls. The  other  items  with  high  discriminative
+power  are  part  of the  “Aggressive  Behaviour  Scale”
+(items  86, 3, 19, 95), “Anxious/Depressed  Scale” (items
+35, 103) and “Social Problems Scale” (item 25).
+
+Discussion
+
+The results of our study in a combined sample of 4,116
+referred  and  non-referred  children  confirm  Achen-
+bach’s  (1)  findings  that  the  Child  Behaviour  Checklist
+has  excellent  ability  to  discriminate  between  children
+with and without mental problems.There does not seem
+to  be  a  major  difference  between  the  original  English
+version and the German version (9). Measures of crite-
+rion-related and discriminant validity in our study were
+in line with findings from other studies (1, 5, 20, 25).
+
+The criterion in our study that should be predicted
+was referral status.We are aware of the fact that being re-
+ferred to a child psychiatric unit is not an ideal criterion
+[using  independent  psychiatric  diagnoses  as  criterion
+would be more advantageous; see,for example,the study
+
+Table 4 Items with highest discriminative power in
+discriminant analysis (Pooled within-groups correla-
+tions between discriminating variables and canonical
+discriminant  functions;  variables  ordered  by  size  of
+correlation within function)
+
+K. Schmeck et al.
+Discriminant validity of CBCL-4/18
+
+245
+
+Item Item
+No.
+
+Scale
+
+Wilk’s
+Lambda
+
+F-Value Correlation
+
+8
+45
+86
+35
+103
+3
+19
+95
+25
+10
+41
+
+Cannot concentrate, cannot pay attention
+Nervous, high-strung or tense
+Stubborn, sullen or irritable
+Feels worthless or inferior
+Unhappy, sad or depressed
+Argues a lot
+Demands a lot of attention
+Temper tantrums or hot temper
+Does not get along with other kids
+Cannot sit still, restless or hyperactive
+Impulsive
+
+Attention Problems
+Attention Problems
+Aggressive Behaviour
+Anxious/Depressed
+Anxious/Depressed
+Aggressive Behaviour
+Aggressive Behaviour
+Aggressive Behaviour
+Social Problems
+Attention Problems
+Attention Problems
+
+0.63
+0.70
+0.77
+0.77
+0.78
+0.78
+0.81
+0.81
+0.81
+0.82
+0.82
+
+2459.7
+1761.6
+1234.7
+1228.9
+1190.7
+1176.0
+987.2
+953.4
+946.7
+911.2
+897.8
+
+0.60
+0.51
+0.43
+0.43
+0.42
+0.42
+0.38
+0.38
+0.38
+0.37
+0.37
+
+of Goodman et al. (14)]. Children in the referred group
+without severe psychiatric problems (i. e. without ICD-
+10  diagnosis)  were  excluded  from  further  analysis
+(N=252), so that this possible distortion of our findings
+should be of little importance. However, it is known that
+a certain percentage of children and adolescents in the
+general population suffer from major mental problems
+without being referred to a specialised unit. Hence, we
+have to assume that some of the children and adoles-
+cents of our non-referred group are in reality cases with
+psychiatric problems.If these were classified as cases ac-
+cording to their CBCL scores, it would be a correct clas-
+sification.As we do not identify these cases in our analy-
+ses  they  are  wrongly  interpreted  as  misclassifications.
+Regarding this possible distortion of data our results can
+be regarded as a conservative estimation of the instru-
+ment’s actual discriminative power because inaccuracy
+of referral status could only lead to an underestimation
+of the  association  between  screening  instrument  and
+psychopathology.
+
+Our different approaches to assess the discriminative
+power of CBCL produced very similar results.A categor-
+ical approach with cut-off points according to the clini-
+cal or borderline range of Total Problem Score or Syn-
+drome  Scale  Scores  as  proposed  by  Achenbach  (1)
+resulted in correct classification of 80.9–83.8 % of chil-
+dren. As an important finding of this study it could be
+shown that the use of CBCL “Total Problem Score” alone
+is  sufficient  as  screening  criterion. When  Syndrome
+Scale Scores were taken into consideration, both Total
+Predictive Value  and  sensitivity/specificity  did  not  in-
+crease. So the use of CBCL “Total Problem Score” T≥60
+(borderline range) as cut-off point seems to be an ade-
+quate  criterion  for  screening  procedures  in  German
+samples if an optimal balance between sensitivity and
+specificity is the aim. Only 7.8 % of non-referred sub-
+jects scored in the clinical range of CBCL “Total Problem
+Score”(T > 63) in contrast to 69.7 % of referred subjects.
+This percentage is higher than that in the study of Ka-
+sius et al. (15) with only 60 % of subjects with a DSM-III-
+R diagnosis in the clinical range of CBCL total score.The
+enormous predictive power of the Total Problem Score
+
+is underlined by findings of a longitudinal study by Ver-
+hulst et al. (26) where deviant scores of the Total Prob-
+lem Scores were significantly associated with poor out-
+come six years later.
+
+The CBCL “Total Problem Score” represents an un-
+weighted sum of 120 items with emotional and behav-
+ioural problems of varying severity. In this sum milder
+symptoms like “wets bed”or “argues a lot”have the same
+weight as severe symptoms like “tries to commit suicide”
+or “physically attacks people”. A sum of mild symptoms
+would result in the same Total Problem Score as a sum
+of very  severe  symptoms. Remschmidt  & Walter  (23),
+therefore, decided  to  use  only “critical” items  of high
+clinical importance for the purpose of case definition.
+Results of our study, however, reveal that, although the
+items are not weighted, the sum of emotional or behav-
+ioural problems is a very good marker of clinical sever-
+ity.Clearly,it is unusual for high scores to arise solely be-
+cause  of the  presence  of a  large  number  of minor
+problems.
+
+ROC curve analyses of CBCL “Total Problem Score”
+confirm our findings. The area under curve was 0.92 for
+the total sample with a range from 0.89 (girls 4–11 years)
+to  0.93  (boys  4–11  years)  for  separate  age  and  sex
+groups. Analysis of the ROC curve’s major co-ordinates
+proves  an  optimal  balance  between  sensitivity  and
+specificity at a cut-off point of 28 which is equivalent to
+a T-score 59 for boys and a T-score 60 for girls according
+to the German norms.The cut-off point can easily be ad-
+justed to a higher or lower CBCL “Total Problem Score”
+if the demands of a study require a different relation be-
+tween sensitivity and specificity.
+
+Originally,CBCL was not constructed for the purpose
+of dichotomous classification of subjects but for imple-
+menting a dimensional approach for the assessment of
+psychopathological  symptoms. Eight  syndrome  scales
+yield a profile for each subject. If the information of all
+syndrome  scales  is  to  be  used  simultaneously  in  a
+screening process,discriminant analysis is the appropri-
+ate statistical procedure since weighted combinations of
+several predictors are used simultaneously. Results of a
+discriminant  analysis  are  partly  dependent  on  sample
+
+246
+
+European Child & Adolescent Psychiatry, Vol. 10, No. 4 (2001)
+© Steinkopff Verlag 2001
+
+characteristics which are used to maximise discrimina-
+tion.To adjust possible distortions we split the sample in
+two halves and all analyses were computed twice.
+
+In contrast to these precautions results of discrimi-
+nant analyses in the different subsamples were quite sta-
+ble. The maximum discrimination resulted in very high
+specificity  with  91.9–94.6 %  of non-referred  children
+classified as nondisturbed and a somewhat lower sensi-
+tivity with 72.5–81.9 % of referred children classified as
+cases. Total Predictive Values according to discriminant
+analyses  with  syndrome  scales  as  predictors  were  be-
+tween 82.3 % for younger girls and 88.2 % for younger
+boys. With  the  information  of all  120  items  included
+TPV could be improved to 89.1–90 %.
+
+Varying dimensions or items are of different impor-
+tance. Verhulst  et  al. (26), for  example, could  demon-
+strate that, besides the “Delinquent Behaviour Scale”, it
+was  mostly  the “Attention  Problem  Scale” that  signifi-
+cantly predicted poor outcome six years later.As a result
+of stepwise discriminant analyses we can show that the
+“Attention Problem Scale” yields the most important in-
+formation to distinguish between referred and non-re-
+ferred children. This finding is remarkable because, as a
+consequence of our matching procedure, children with
+ADHD are underrepresented (only 14.8 % with a diag-
+nosis of ADHD or ADHD + Conduct disorder) in com-
+parison with our unselected clinical sample. Thus, the
+
+References
+
+high  discriminative  power  of the  “Attention  Problem
+Scale” cannot be due to a high prevalence of patients in
+our  sample  with  predominantly  these  symptoms. The
+only  explanation  can  be  that  poor  concentration, the
+item with the highest discriminative power, is a major
+problem for most of the referred subjects regardless of
+their  diagnosis. Besides  ADHD, difficulties  with  con-
+centration  can  also  be  found  in  psychoses, depressive
+disorders, anxiety syndromes or eating disorders. Ner-
+vousness or tension (the item with the second highest
+discriminative  power)  and  restlessness  or  impulsivity
+are also part of many other psychopathological states.As
+second important syndrome appeared the “Anxious/De-
+pressed  Scale” (the  most  important  syndrome  to  dis-
+criminate referred and non-referred young girls).Again,
+feelings of worthlessness or inferiority and an unhappy,
+sad or depressed mood are part of several psychiatric
+problems.
+
+Summarising our findings we can conclude that the
+external validity of the German version of CBCL is com-
+parable to the original English version and other ver-
+sions  from  different  countries. CBCL  “Total  Problem
+Score” yields an excellent tool for screening procedures.
+Symptoms of the “Attention Problems Scale” show the
+highest  discriminative  power  to  distinguish  between
+disturbed and non-disturbed children and adolescents.
+
+1. Achenbach  TM  (1991)  Manual  for  the
+Child  Behavior  Checklist/4–18  and
+1991 Profile. Department of Psychiatry,
+University of Vermont, Burlington,VT
+2. Achenbach  TM, Edelbrock  C  (1983)
+Manual for the Child Behavior Check-
+list and Revised Child Behavior Profile.
+Department of Psychiatry,University of
+Vermont, Burlington,VT
+
+3. Arbeitsgruppe  Deutsche  Child  Behav-
+ior  Checklist  (1993)  Elternfragebogen
+über das Verhalten von Kindern und Ju-
+gendlichen (CBCL/4–18) (Parent ques-
+tionnaire on the behaviour of children
+and  adolescents). Klinik  für  Kinder-
+und  Jugendpsychiatrie  der  Universität
+zu Köln: Arbeitsgemeinschaft Kinder-,
+Jugendlichen- und Familiendiagnostik
+(KJFD)
+
+4. Backhaus  K, Erichson  B, Plinke  W,
+Weiber R (1996) Multivariate Analyse-
+methoden: eine anwendungsorientierte
+Einführung. 8. Auflage  (Methods  of
+multivariate  analyses: a  user-oriented
+introduction. 8th edn. Springer Verlag,
+Berlin
+
+5. Biederman J, Wozniak J, Kiely K, Ablon
+S, Faraone S, Mick E, Mundy E, Kraus I
+(1995)  CBCL  clinical  scales  discrimi-
+nate  prepubertal  children  with  struc-
+tured  interview-derived  diagnosis  of
+mania from those with ADHD. Journal
+of the American Academy of Child and
+Adolescent Psychiatry 34:464–471
+
+6. Crijnen AA, Achenbach TM, Verhulst F
+(1997)  Comparisons  of problems  re-
+ported by parents of children in 12 cul-
+tures: total problems,externalizing,and
+internalizing. Journal of the American
+Academy of Child and Adolescent Psy-
+chiatry 36:1269–1277
+
+7. DeGroot A, Koot  H, Verhulst  F  (1995)
+The  cross-cultural  generalizability  of
+the CBCL cross-informant syndromes.
+Psychological Assessment 6:225–230
+
+8. Dilling  H, Mombour  W, Schmidt  MH
+(eds)  (1991)  Internationale  Klassifika-
+tion  psychischer  Störungen  (Interna-
+tional  classification  of mental  disor-
+ders). Huber, Bern
+
+9. Döpfner  M, Melchers  P, Fegert  J,
+Lehmkuhl G, Lehmkuhl U, Schmeck K,
+Steinhausen  HC, Poustka  F  (1993)
+Deutschsprachige  Konsensus-Versio-
+nen  der  Child  Behavior  Checklist
+(CBCL 4–18), der Teacher Report Form
+(TRF) und der Youth Self-Report Form
+(YSR)  (German  consensus  version  of
+CBCL, TRF and YSR) Kindheit und Ent-
+wicklung 3:54–59
+
+10. Döpfner  M, Schmeck  K, Berner  W,
+Lehmkuhl G, Poustka F (1994) Zur Reli-
+abilität  und  faktoriellen  Validität  der
+Child Behavior Checklist – eine Analyse
+in einer klinischen und einer Feldstich-
+probe (Reliability and factorial validity
+of CBCL – analysis of a clinical and a
+field  sample). Zeitschrift  für  Kinder-
+und Jugendpsychiatrie 22:189–205
+
+11. Döpfner  M, Berner  W, Schmeck  K,
+Lehmkuhl G, Poustka F (1995) Internal
+consistency  and  validity  of the  Child
+Behavior  Checklist  (CBCL)  and  the
+Teacher’s Report Form (TRF) in a Ger-
+man sample – a cross-cultural compar-
+ison. In: Sergeant J (ed) Eunethydis. Eu-
+ropean  Approaches  to  Hyperkinetic
+Disorder pp 52–81. EGG Verlag, Zürich,
+pp 52–81
+
+12. Döpfner  M, Plück  J, Berner  W, Fegert
+JM, Huss  M, Lenz  K, Schmeck  K,
+Lehmkuhl  U, Poustka  F, Lehmkuhl  G
+(1997)  Psychische  Auffälligkeiten  von
+Kindern und Jugendlichen in Deutsch-
+land – Ergebnisse einer repräsentativen
+Studie: Methodik, Alters-, Geschlechts-
+und  Beurteilereffekte  (Psychological
+problems  of children  and  adolescents
+in Germany – results of a representative
+study: methodology, age, sex and rater
+effects). Zeitschrift für Kinder- und Ju-
+gendpsychiatrie  und  Psychotherapie
+25:218–233
+
+Kompetenzen 
+
+13. Döpfner M, Plück J, Berner W, Englert
+E, Fegert JM, Huss M, Lenz K, Schmeck
+K, Lehmkuhl G, Lehmkuhl U, Poustka F
+(1998)  Psychische  Auffälligkeiten  und
+von
+psychosoziale 
+Kindern  und  Jugendlichen 
+in  den
+neuen  und  alten  Bundesländern  –
+Ergebnisse einer bundesweit repräsen-
+tativen Studie. (Psychological problems
+and psychosocial competencies of chil-
+dren  and  adolescents  in  new  and  for-
+mer  German  states  –  results  of a  na-
+tionwide 
+study).
+Zeitschrift  für  Klinische  Psychologie
+27:9–19
+
+representative 
+
+14. Goodman R, Ford T, Simmons H, Gat-
+ward  R, Meltzer  H  (2000)  Using  the
+Strengths  and  Difficulties  Question-
+naire (SDQ) to screen for child psychi-
+atric disorders in a community sample.
+British 
+Psychiatry
+177:534–539
+
+Journal 
+
+15. Kasius MC, Ferdinand RF, van den Berg
+H, Verhulst FC (1997) Associations be-
+tween  different  diagnostic  approaches
+for child and adolescent psychopathol-
+ogy. Journal  of Child  Psychology  and
+Psychiatry 38:625–632
+
+of
+
+K. Schmeck et al.
+Discriminant validity of CBCL-4/18
+
+247
+
+16. Kleining  G, Moore  H  (1968)  Soziale
+Selbsteinstufung (SSE). Ein Instrument
+zur Messung sozialer Schichten (An in-
+strument to assess social strata). Kölner
+Zeitschrift  für  Soziologie  und  Sozial-
+psychologie 20:502–552
+
+17. Koot H, Verhulst F (1992) Prediction of
+children’s referral to mental health and
+special education services from earlier
+adjustment. Journal  of Child  Psychol-
+ogy and Psychiatry 33:721–729
+
+18. Lehmkuhl  G, Döpfner  M, Plück  J,
+Berner W, Fegert JM, Huss M, Lenz K,
+Schmeck  K, Lehmkuhl  U, Poustka  F
+(1998)  Häufigkeit  psychischer  Auffäl-
+ligkeiten  und  somatischer  Beschwer-
+den bei vier- bis zehnjährigen Kindern
+in  Deutschland  im  Urteil  der  Eltern  –
+ein Vergleich normorientierter und kri-
+terienorientierter  Modelle  (Frequency
+of psychological problems and somatic
+complaints of 4- to 10-year-old children
+in  Germany  in  their  parents’ judge-
+ment). Zeitschrift  für  Kinder-  und  Ju-
+gendpsychiatrie 26:83–96
+
+19. McGuire RJ, Berg I, McKenzie I, Wright
+B, Foreman D, Chandiramani K (2000)
+Have  the  Cross-Informant  Syndromes
+of the CBCL any practical value in iden-
+tifying grouped ICD10 diagnoses? Eu-
+ropean  Child  and Adolescent  Psychia-
+try 9:263–270
+
+20. Novik  TS  (1999) Validity  of the  Child
+Behaviour  Checklist  in  a  Norwegian
+sample.European Child and Adolescent
+Psychiatry 8:247–254
+
+21. Poustka F, Schmeck K (1990) Über die
+psychischen  Auswirkungen  von  mili-
+tärischer Tiefstflugtätigkeit auf Kinder.
+Ergebnisse  einer  epidemiologischen
+Untersuchung in Westfalen (Psycholog-
+ical  consequences  of low  level  aircraft
+activity on children. Results of an epi-
+demiological  study 
+in  Westphalia).
+Zeitschrift für Kinder- und Jugendpsy-
+chiatrie 18:61–70
+
+22. Poustka F, Schmeck K (1996) Gesund-
+heitsschäden  bei  Kindern  durch  Tief-
+flüge  und  andere  Umwelteinflüsse  –
+Vegetative  Reaktionen  und  psychische
+Auffälligkeiten  im  Entwicklungsalter
+(Children’s  health  damage  as  a  conse-
+quence of low level flights and other en-
+vironmental  influences  –  autonomous
+reactions  and  psychological  problems
+in  the  developmental  age). G  Fischer
+Verlag, Stuttgart
+
+23. Remschmidt  H, Walter  R  (1990)  Psy-
+chische  Auffälligkeiten  bei  Schul-
+kindern  (Psychological  problems  of
+schoolchildren). Hogrefe, Göttingen
+
+24. Remschmidt  H, Schmidt  MH  (eds)
+(1986)  Multiaxiales  Klassifikations-
+schema für psychiatrische Erkrankun-
+gen  im  Kindes-  und  Jugendalter  nach
+Rutter, Shaffer  &  Sturge. 2. Auflage
+(Multiaxial classification of psychiatric
+diseases in childhood and adolescence
+according  to  Rutter, Shaffer  &  Sturge)
+2nd edn. Huber, Bern
+
+25. Schneider K, Walter R, Remschmidt H
+(1991) Validation of a German version
+of
+the  Child  Behavior  Checklist
+(CBCL). Zeitschrift  für  Klinische  Psy-
+chologie 20:52–64
+
+26. Verhulst FC, Koot HM, Van der Ende J
+(1994)  Differential  predictive  value  of
+parents’ and  teachers’ reports  of chil-
+dren’s problem behaviors: a longitudi-
+nal  study. Journal  of Abnormal  Child
+Psychology 22:531–546
+
+27. Verhulst F,Achenbach T (1995) Empiri-
+cally  based  assessment  and  taxonomy
+of psychopathology: cross-cultural ap-
+plications. A  review. European  Child
+and Adolescent Psychiatry 4:61–76
+
+

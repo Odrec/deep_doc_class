@@ -1,0 +1,628 @@
+Mobile Informationssysteme
+
+WS 2014/2015
+
+3
+
+3
+
+3. Seminartermin, 30.10.2014:
+
+2
+
+1
+
+App-Programmierung (Fortsetzung)
+
+Johannes Oehrlein / Prof. Dr.-Ing. Jan-Henrik Haunert
+
+AndroidManifest.xml
+
+Manifest-Datei enth¨alt die wichtigsten Einstellungen einer App
+
+AndroidManifest.xml
+
+Grundeinstellungen:
+
+verwendetes Paket
+Version code (Integer)
+Version name (String)
+Minimum- sowie
+Ziel-SDK
+
+AndroidManifest.xml
+
+Grundeinstellungen:
+
+verwendetes Paket
+Version code (Integer)
+Version name (String)
+Minimum- sowie
+Ziel-SDK
+
+Gr¨oßtenteils bei
+Erstellung des Projekts
+eingerichtet
+
+AndroidManifest.xml
+
+Grundeinstellungen:
+
+verwendetes Paket
+Version code (Integer)
+Version name (String)
+Minimum- sowie
+Ziel-SDK
+
+Berechtigungen:
+
+hier: Zugriﬀ auf genaue
+Ortsdaten
+Internetzugang, versch.
+Kommunikationsdienste,
+Batteriestatus, Kamera,
+Netzwerkzugang, ...
+
+AndroidManifest.xml
+
+Grundeinstellungen:
+
+verwendetes Paket
+Version code (Integer)
+Version name (String)
+Minimum- sowie
+Ziel-SDK
+
+Berechtigungen:
+
+hier: Zugriﬀ auf genaue
+Ortsdaten
+Internetzugang, versch.
+Kommunikationsdienste,
+Batteriestatus, Kamera,
+Netzwerkzugang, ...
+
+Berechtigungen k¨onnen f¨ur eine App ¨uber den Reiter Permissions
+eingefordert werden
+
+AndroidManifest.xml
+
+weitere Grundeinstellungen:
+
+Zugang zur BackUp-Infrastruktur
+App-Icon, App-Theme, Standard-App-
+Label (beispielsweise f¨ur Activity (hier ¨uberschrieben))
+Verweis auf auszuf¨uhrende Activity
+Intent-Filter
+
+Grundeinstellungen:
+
+verwendetes Paket
+Version code (Integer)
+Version name (String)
+Minimum- sowie
+Ziel-SDK
+
+Berechtigungen:
+
+hier: Zugriﬀ auf genaue
+Ortsdaten
+Internetzugang, versch.
+Kommunikationsdienste,
+Batteriestatus, Kamera,
+Netzwerkzugang, ...
+
+AndroidManifest.xml
+
+weitere Grundeinstellungen:
+
+Zugang zur BackUp-Infrastruktur
+App-Icon, App-Theme, Standard-App-
+Label (beispielsweise f¨ur Activity (hier ¨uberschrieben))
+Verweis auf auszuf¨uhrende Activity
+Intent-Filter
+
+Intent-Objekte k¨onnen als
+Informationspakete beim Aufruf
+einer neuen Activity ¨ubergeben
+werden (z. B. an eine weitere App)
+
+Grundeinstellungen:
+
+verwendetes Paket
+Version code (Integer)
+Version name (String)
+Minimum- sowie
+Ziel-SDK
+
+Berechtigungen:
+
+hier: Zugriﬀ auf genaue
+Ortsdaten
+Internetzugang, versch.
+Kommunikationsdienste,
+Batteriestatus, Kamera,
+Netzwerkzugang, ...
+
+AndroidManifest.xml
+
+weitere Informationen hier:
+http://developer.android.com/guide/topics/manifest/
+manifest-intro.html
+
+Sensoren
+
+Liste von Sensoren, die mit Android angesprochen werden k¨onnen
+
+http://developer.android.com/guide/topics/sensors/sensors_overview.html
+
+Sensoren
+
+Liste von Sensoren, die mit Android angesprochen werden k¨onnen
+
+!
+
+Sensoren sind abh¨angig vom
+Ger¨at verf¨ugbar!
+
+http://developer.android.com/guide/topics/sensors/sensors_overview.html
+
+Sensoren – Zugriﬀ
+Sensoren
+
+SensorManager:
+
+S e n s o r M a n a g e r sm =
+
+( S e n s o r M a n a g e r ) g e t S y s t e m S e r v i c e ( SENSOR SERVICE ) ;
+
+Sensoren – Zugriﬀ
+Sensoren
+
+SensorManager:
+
+S e n s o r M a n a g e r sm =
+
+( S e n s o r M a n a g e r ) g e t S y s t e m S e r v i c e ( SENSOR SERVICE ) ;
+
+Zugriﬀ auf vom Ger¨at zur Verf¨ugung gestellte Sensoren:
+
+sm . g e t S e n s o r L i s t ( S e n s o r . TYPE ALL ) ;
+
+Liefert ein List<Sensor>-Objekt zur¨uck, das alle verf¨ugbaren
+Sensoren enth¨alt.
+
+Sensoren – Zugriﬀ
+Sensoren
+
+SensorManager:
+
+S e n s o r M a n a g e r sm =
+
+( S e n s o r M a n a g e r ) g e t S y s t e m S e r v i c e ( SENSOR SERVICE ) ;
+
+Zugriﬀ auf vom Ger¨at zur Verf¨ugung gestellte Sensoren:
+
+sm . g e t S e n s o r L i s t ( S e n s o r . TYPE ALL ) ;
+
+Liefert ein List<Sensor>-Objekt zur¨uck, das alle verf¨ugbaren
+Sensoren enth¨alt.
+
+Aus dieser Liste kann man nun die gew¨unschten Sensoren extrahieren.
+Hilfreich ist beispielsweise die Sensor-Methode int getType().
+
+Sensoren – Zugriﬀ
+Sensoren
+
+SensorManager:
+
+S e n s o r M a n a g e r sm =
+
+( S e n s o r M a n a g e r ) g e t S y s t e m S e r v i c e ( SENSOR SERVICE ) ;
+
+Zugriﬀ auf vom Ger¨at zur Verf¨ugung gestellte Sensoren:
+
+sm . g e t S e n s o r L i s t ( S e n s o r . TYPE ALL ) ;
+
+TYPE ACCELEROMETER ) ;
+
+Liefert ein List<Sensor>-Objekt zur¨uck, das alle verf¨ugbaren
+Sensoren des Typs Beschleunigungssensor enth¨alt
+Sensoren enth¨alt.
+
+Aus dieser Liste kann man nun die gew¨unschten Sensoren extrahieren.
+Hilfreich ist beispielsweise die Sensor-Methode int getType().
+
+Sensoren – Zugriﬀ
+Sensoren
+
+SensorManager:
+
+S e n s o r M a n a g e r sm =
+
+( S e n s o r M a n a g e r ) g e t S y s t e m S e r v i c e ( SENSOR SERVICE ) ;
+
+Zugriﬀ auf vom Ger¨at zur Verf¨ugung gestellte Sensoren:
+
+sm . g e t S e n s o r L i s t ( S e n s o r . TYPE ALL ) ;
+
+TYPE ACCELEROMETER ) ;
+
+Liefert ein List<Sensor>-Objekt zur¨uck, das alle verf¨ugbaren
+Sensoren des Typs Beschleunigungssensor enth¨alt
+Sensoren enth¨alt.
+
+Aus dieser Liste kann man nun die gew¨unschten Sensoren extrahieren.
+Hilfreich ist beispielsweise die Sensor-Methode int getType().
+einfache Alternative:
+sm.getDefaultSensor(Sensor.TYPE ACCELEROMETER);
+
+Sensoren – Auslesen der Daten
+Sensoren
+
+Zum Auslesen der Daten wird ein SensorEventListener ben¨otigt:
+
+Sensoren – Auslesen der Daten
+Sensoren
+
+Zum Auslesen der Daten wird ein SensorEventListener ben¨otigt:
+new S e n s o r E v e n t L i s t e n e r ( ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n S e n s o r C h a n g e d ( S e n s o r E v e n t e v e n t ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d onAccuracyChanged ( S e n s o r
+}
+
+i n t a c c u r a c y ) {
+
+s e n s o r ,
+
+} ;
+
+Dem der Methode onSensorChanged(...) ¨ubergebenen
+SensorEvent-Objekt sind die gemessenen Werte ¨uber event.values
+vom Typ float[] ablesbar.
+
+Sensoren – Auslesen der Daten
+Sensoren
+
+Zum Auslesen der Daten wird ein SensorEventListener ben¨otigt:
+new S e n s o r E v e n t L i s t e n e r ( ) {
+
+Bemerkung: Der Listener wird unabh¨angig
+vom Sensor und damit seines Typs deﬁniert!
+
+@ O v e r r i d e
+p u b l i c v o i d o n S e n s o r C h a n g e d ( S e n s o r E v e n t e v e n t ) {
+}
+
+F¨ur einen Beschleunigungssensor ist
+event.values ein Array mit 3 Eintr¨agen:
+@ O v e r r i d e
+Beschleunigung minus Gravitation in x-
+p u b l i c v o i d onAccuracyChanged ( S e n s o r
+bzw. y - bzw. z-Richtung
+}
+
+i n t a c c u r a c y ) {
+
+s e n s o r ,
+
+} ;
+
+Dem der Methode onSensorChanged(...) ¨ubergebenen
+SensorEvent-Objekt sind die gemessenen Werte ¨uber event.values
+vom Typ float[] ablesbar.
+
+Sensoren – Auslesen der Daten
+Sensoren
+
+Zum Auslesen der Daten wird ein SensorEventListener ben¨otigt:
+Der Listener muss nun nur noch dem Sensor zugewiesen werden:
+
+f i n a l S e n s o r
+
+s a c c = sm . g e t S e n s o r L i s t (
+S e n s o r . TYPE ACCELEROMETER ) . g e t ( 0 ) ;
+
+sm . r e g i s t e r L i s t e n e r ( s e l ,
+
+s a c c ,
+
+S e n s o r M a n a g e r . SENSOR DELAY NORMAL ) ;
+
+Neben dem Sensor und dem gew¨unschten Listener wird der Methode
+noch ein drittes Argument bez¨uglich der Abfragefrequenz ¨ubergeben.
+M¨ogliche Werte hier sind:
+SensorManager
+
+.SENSOR DELAY FASTEST
+.SENSOR DELAY GAME
+.SENSOR DELAY NORMAL
+.SENSOR DELAY UI
+
+GPS
+
+LocationManager:
+
+L o c a t i o n M a n a g e r
+g e t S y s t e m S e r v i c e ( LOCATION SERVICE ) ;
+
+lm = ( L o c a t i o n M a n a g e r )
+
+GPS
+
+LocationListener:
+new L o c a t i o n L i s t e n e r ( ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n S t a t u s C h a n g e d ( S t r i n g p r o v i d e r ,
+}
+
+i n t
+
+s t a t u s , B u n d l e e x t r a s ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r E n a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r D i s a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n L o c a t i o n C h a n g e d ( L o c a t i o n l o c a t i o n ) {
+}
+
+};
+
+GPS
+
+LocationListener:
+new L o c a t i o n L i s t e n e r ( ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n S t a t u s C h a n g e d ( S t r i n g p r o v i d e r ,
+}
+
+i n t
+
+s t a t u s , B u n d l e e x t r a s ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r E n a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r D i s a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n L o c a t i o n C h a n g e d ( L o c a t i o n l o c a t i o n ) {
+}
+
+};
+
+Status¨anderung:
+
+GPS
+
+LocationListener:
+new L o c a t i o n L i s t e n e r ( ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n S t a t u s C h a n g e d ( S t r i n g p r o v i d e r ,
+}
+
+i n t
+
+s t a t u s , B u n d l e e x t r a s ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r E n a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r D i s a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n L o c a t i o n C h a n g e d ( L o c a t i o n l o c a t i o n ) {
+}
+
+};
+
+Status¨anderung:
+String provider: Provider-Name
+
+GPS
+
+LocationListener:
+new L o c a t i o n L i s t e n e r ( ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n S t a t u s C h a n g e d ( S t r i n g p r o v i d e r ,
+}
+
+i n t
+
+s t a t u s , B u n d l e e x t r a s ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r E n a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r D i s a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n L o c a t i o n C h a n g e d ( L o c a t i o n l o c a t i o n ) {
+}
+
+};
+
+Status¨anderung:
+int status: LocationProvider.AVAILABLE,
+.TEMPORARILY UNAVAILABLE, .OUT OF SERVICE
+
+GPS
+
+LocationListener:
+new L o c a t i o n L i s t e n e r ( ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n S t a t u s C h a n g e d ( S t r i n g p r o v i d e r ,
+}
+
+i n t
+
+s t a t u s , B u n d l e e x t r a s ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r E n a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r D i s a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n L o c a t i o n C h a n g e d ( L o c a t i o n l o c a t i o n ) {
+}
+
+};
+
+Status¨anderung:
+Bundle extras: Zusatzinformationen; Anzahl verf¨ugbarer Satelliten
+
+GPS
+
+LocationListener:
+new L o c a t i o n L i s t e n e r ( ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n S t a t u s C h a n g e d ( S t r i n g p r o v i d e r ,
+}
+
+i n t
+
+s t a t u s , B u n d l e e x t r a s ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r E n a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r D i s a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n L o c a t i o n C h a n g e d ( L o c a t i o n l o c a t i o n ) {
+}
+
+};
+
+¨Anderung des Standortzugriﬀs
+
+GPS
+
+LocationListener:
+new L o c a t i o n L i s t e n e r ( ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n S t a t u s C h a n g e d ( S t r i n g p r o v i d e r ,
+}
+
+i n t
+
+s t a t u s , B u n d l e e x t r a s ) {
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r E n a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n P r o v i d e r D i s a b l e d ( S t r i n g p r o v i d e r ) {
+}
+
+@ O v e r r i d e
+p u b l i c v o i d o n L o c a t i o n C h a n g e d ( L o c a t i o n l o c a t i o n ) {
+}
+
+};
+
+Standort¨anderung:
+Location location: Informationen zu neuem Standort
+
+GPS
+
+LocationListener registrieren:
+
+lm . r e q u e s t L o c a t i o n U p d a t e s ( S t r i n g p r o v i d e r ,
+
+l o n g minTime ,
+L o c a t i o n L i s t e n e r
+
+f l o a t m i n D i s t a n c e ,
+
+l i s t e n e r ) ;
+
+GPS
+
+LocationListener registrieren:
+
+lm . r e q u e s t L o c a t i o n U p d a t e s ( S t r i n g p r o v i d e r ,
+
+l o n g minTime ,
+L o c a t i o n L i s t e n e r
+
+f l o a t m i n D i s t a n c e ,
+
+l i s t e n e r ) ;
+
+provider: Name des zu verwendenden Services, z. B.
+LocationManager.GPS PROVIDER
+
+minTime: Zeit in ms, die nach einer erfolgten Anfrage bis zur n¨achsten
+vergehen muss
+
+minDistance: Distanz in m, die zur¨uckgelegt worden sein m¨ussen, um
+fr¨uhestens nach minTime eine erneute Anfrage zu stellen
+
+listener: der gew¨unschte LocationListener
+
+GPSGPS – Berechtigung
+
+Um auf den Standort zuzugreifen, muss die App die entsprechende
+Berechtigung anfordern:
+
+GPSGPS – Berechtigung
+
+Um auf den Standort zuzugreifen, muss die App die entsprechende
+Berechtigung anfordern:
+
+Aufgabe
+
+Schreiben Sie eine App,
+die nach Knopfdruck
+folgende Daten ausgibt:
+
+Standort –
+Koordinaten via
+GPS
+Status des
+GPS-Service
+Liste der vom Ger¨at
+bereitgestellten
+Sensoren (Name und
+Typ)
+Beschleunigung in
+x-, y - und
+z-Richtung
+
+

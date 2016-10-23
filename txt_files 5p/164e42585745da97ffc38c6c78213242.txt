@@ -1,0 +1,305 @@
+Erfassung von Umwelt-Katastrophen
+
+28.11.2014
+
+Seminar: Fernerkundliche Umweltanalyse
+
+Nils Schön
+
+Fernerkundliche Umweltanalyse
+
+(cid:1) Vorteil der Fernerkundung in der Umweltanalyse?
+
+(cid:1) flächendeckende Erfassung von Oberflächen
+
+(cid:1) regelmäßige,  automatische Erfassung
+
+(cid:1) Katastrophen-
+(cid:1) Katastrophen-
+
+monitoring
+(cid:1) Zugänglichkeit des 
+
+Zielgebietes
+
+2
+
+Taifun Haiyan, Tacloban (2013)
+
+Gliederung
+
+(cid:1) Einordnung
+
+(cid:1) Grundlagen
+
+(cid:1) Verfahren zur Erfassung von Umwelt-Katastrophen
+
+(cid:1) Change Detection
+
+(cid:1) Anwendungen
+(cid:1) Anwendungen
+
+(cid:1) CO-Detektion
+
+(cid:1) Detektion von Aschewolken
+
+(cid:1) Fazit
+
+(cid:1) Quellen
+
+3
+
+Einordnung
+
+(cid:1) Unterschiede innerhalb von (Umwelt-)Katastrophen
+
+Einteilung von Katastrophen nach menschlichem Einfluss (C. van Westen, 2000)
+
+4
+
+Einordnung
+
+Grundlagen
+
+Grundlagen
+
+(cid:1) Daten:
+
+(cid:1) Räumliche Auflösung der zu Grunde liegenden 
+
+Bilddaten
+
+(cid:1) Auswirkungen auf die möglichen Analysen
+
+Verfahren
+
+(cid:1) Change Detection (CD) 
+
+(cid:1) Pixelbasiert:
+
+(cid:1) (größere) Oberflächenveränderungen
+
+(cid:1) Nutzung von spezifischen Parametern
+
+(cid:1) NDVI / LAI
+
+(cid:1) Objektbasiert:
+
+(cid:1) Strukturveränderungen
+
+(cid:1) Erdbeben, Sturmschäden
+
+8
+
+Verfahren
+
+(cid:1) Laserdaten-basierte Change Detection?
+
+(cid:1) Radarsensoren: 
+
+(cid:1) Oberflächenveränderung
+
+(cid:1) Ableitung von Biomasse
+
+(cid:1) Thermale Fernerkundung
+
+(cid:1) Erfassung von spezifischen Parametern
+
+(cid:1) Kohlenstoffmonoxid (MOPITT radiometer)
+
+9
+
+Verfahren
+
+(cid:1) je nach Verfahren unterschiedlicher Datenbestand 
+
+benötigt
+
+(cid:1) Vorher – Nachher Vergleich (z.B. Change Detection)
+
+(cid:1) vorhandener Datenbestand entscheidend
+vorhandener Datenbestand entscheidend
+
+(cid:1) Verfahren mit einmaliger Erfassung
+
+(cid:1) Detektion von Aschewolken
+(cid:1) CO-Ausstoß bei Waldbränden
+
+10
+
+Problematiken
+
+(cid:1) Verfügbarkeit von Daten
+
+(cid:1) Erfassung von Schäden im urbanen Raum
+
+(cid:1) passende Auflösung zum jeweiligen Ereignis
+
+(cid:1) Wolken als generelles Hindernis in der optischen 
+
+Fernerkundung
+(cid:1) Tropenstürme / Hurricans
+
+11
+
+Anwendungen
+
+(cid:1) Erfassung von CO in der Atmosphäre (MOPITT)
+
+(cid:1) MOPITT (Measurement of Pollution in the Troposphere)
+(cid:1) Instrument des TERRA-Satelliten
+
+(cid:1) Gas-Korrelations-Spektroskopie
+
+2,3µ und 4,7µ 
+(cid:1) 2,3µ und 4,7µ 
+
+(cid:1) Messung in 7 Höhen
+
+(cid:1) 22 km nadir
+(cid:1) Max 650km Breite
+
+Messhöhen:
+
+Oberfläche
+
+850 hPa (ca. 1,5km)
+
+700 hPa (ca. 3km)
+
+500 hPa (ca. 5km)
+
+350 hPa
+
+250 hPa
+
+150 hPa (ca. 15km)
+
+12
+
+Anwendungen
+
+(cid:1) Erfassung von CO in der Atmosphäre (MOPITT)
+
+Liu et al., 2005
+
+CO in 1015 mol / cm2
+
+Wind 700mb = 700 hPa
+Wind 700mb = 700 hPa
+
+13
+
+Liu et al., 2005
+
+Anwendungen
+
+(cid:1) Erfassung von CO in der Atmosphäre (MOPITT)
+
+Liu et al., 2005
+
+Parts per billion by volume
+- Volumenmischungsverhältnis
+
+Natürliche Werte: 
+-ca. 140 Nordhalbkugel
+-ca.  50 Südhalbkugel
+
+Liu et al., 2005
+
+14
+
+Anwendungen
+
+(cid:1) Erfassung von Aschewolken mit NOAA AVHRR
+
+(cid:1) Nutzung der täglichen Aufnahmemöglichkeiten
+
+15
+
+(NASA, 2013)
+
+Anwendungen
+
+(cid:1) Erfassung von Aschewolken mit NOAA AVHRR
+
+- Filizzola et al., 2007
+
+-Farbskala symbolisiert die Dichte 
+der Aschewolken
+
+- stärkste Ausprägung der 
+- stärkste Ausprägung der 
+Aschewolken bei -6.0 (ALICE -
+Index)
+(Absolutely Local Index of Change of Environment)
+
+-Aufnahmedaten:
+a) 28.10.2002 – 01:46 GMT
+b) 29.10.2002 – 01:35 GMT
+c) 30.10.2002 – 01:24 GMT 
+d) 31.10.2002 – 01:13 GMT
+
+16
+
+Filizzola et al., 2007
+
+Fazit
+
+(cid:1) Fernerkundung bietet vielseitige Möglichkeiten bei der 
+
+Erfassung von Umwelt-Ereignissen
+(cid:1) Vorteil der Unabhängigkeit vom Ereignisort
+
+(cid:1) Datenbestand entscheidend für viele Verfahren
+
+siehe Change Detection
+(cid:1) siehe Change Detection
+
+(cid:1) Potential von Hyperspektraldaten?
+
+(cid:1) Extrem hohe spektrale Auflösung
+(cid:1) Ableitung von Vegetationsparametern
+
+(cid:1) Trockenstress
+
+17
+
+Literatur
+
+(cid:1) Boer, M. M., Macfarlane, C., Norris, J., Sadler, R. J., Wallace, J. and Grierson, P. F., 2008, Mapping 
+
+(cid:1)
+
+burned areas and burn severity patterns in SW Australian eucalypt forest using
+remotely-sensed changes in leaf area index in Remote Sensing of Environment, Vol. 112, 4358 –
+4369.
+Filizzola, C., Lacava, T., Marchese, F., Pergola, N., Scaffidi, I. and Tramutoli, V., 2007, Assessing RAT 
+(Robust AVHRR Techniques) performances for volcanic ash cloud detection and
+monitoring in near real-time: The 2002 eruption of Mt. Etna (Italy) in Remote Sensing of
+Environment, Vol. 107, 440 – 454.
+
+(cid:1) Ganci G., Vicari, A., Cappello, A., Del Negro, C., 2012, An emergent strategy for volcano hazard
+
+assessment: From thermal satellite monitoring to lava flow modeling in Remote Sensing
+assessment: From thermal satellite monitoring to lava flow modeling in Remote Sensing
+of Environment, Vol. 119, 197 – 207.
+
+(cid:1) Tralli, D. M., Blom, R. G., Zlotnicki, V., Donnellan, A. and Evans, D. L., 2005, Satellite remote sensing
+of earthquake, volcano, flood, landslide and coastal inundation hazards in ISPRS Journal of
+Photogrammetry and Remote Sensing, Vol. 59, 185 – 198.
+
+(cid:1) Cees van Westen, 2000, Remote Sensing for natural disaster Management, International 
+
+Archives of Photogrammetry and Remote Sensing, Vol. XXXIII, Part B7, Amsterdam. 
+
+(cid:1) Taifun Haiyan ,Tacloban (2013):
+
+http://static.guim.co.uk/sys-images/Arts/Arts_/Pictures/2013/11/15/1384537606583/Typhoon-Haiyan-
+--Tacloban-010.jpg (28.11.2014)
+
+(cid:1) NASA, 2013: http://noaasis.noaa.gov/NOAASIS/ml/avhrr.html (28.11.2014)
+
+18
+
+

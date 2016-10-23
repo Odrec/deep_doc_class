@@ -1,0 +1,29 @@
+Computer Vision - Sheet 5
+
+Winter 2014/15
+
+Submission until: 24.11.2014
+Discussion on: 25.11.2014
+Submission on stud.ip, submission folder for sheet.
+Please submit a zip ﬁle containing the .m ﬁles for Matlab programming tasks.
+
+Assignment 1 (Color segmentation - 10p)
+Use the image ’gummy bears.jpg’ for this task.
+(a) (5p) Implement k-means clustering for color image segmentation on the RGB image (yourself,
+no built-ins). The function should evaluate the result for diﬀerent values of k. Also, handle
+empty clusters by re-initializing the corresponding center vector. Stop the calculation when
+the center vectors do not change more than a predeﬁned threshold.
+
+(b) (1,5p) Modify the previous implementation to perform k-means clustering on the HSV image
+
+instead of on the RGB image.
+
+(c) (3,5p) Think of a way to improve the color segmentation with k-means clustering on the
+HSV image and implement it (e.g. using only individual color channels). You’re free to try
+any ideas, but the result should show an improvement as to the previous task.
+
+Prof. Dr. G. Heidemann
+
+Page 1
+
+

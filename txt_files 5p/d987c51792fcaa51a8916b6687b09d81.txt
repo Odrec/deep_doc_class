@@ -1,0 +1,650 @@
+4.  
+ 
+4.1 
+
+ 
+
+Physikalische und chemische Gleichgewichte 
+
+Das chemische Gleichgewicht 
+
+   4.1.1 
+
+   Chemische Reaktionen 
+
+ 
+
+   4.1.2 
+
+ 
+
+   Der Gleichgewichtszustand 
+
+   4.1.3 
+
+   Das Massenwirkungsgesetz, Gleichgewichtskonstante K 
+
+ 
+
+   4.1.4 
+ 
+4.2 
+
+ 
+
+   Störung des Gleichgewichtes – Prinzip von Le Chatelier 
+
+Das chemische Potential 
+
+   4.2.1 
+
+   Das chemisches Potential 
+
+ 
+
+   4.2.2 
+
+   Chemisches Potential und chemisches Gleichgewicht 
+
+ 
+
+   4.2.3 
+    
+4.3 
+ 
+   4.3.1 
+
+ 
+
+   Chemisches Potential in Lösungen 
+
+Freie Enthalpie (Gibbs-Energie) und chem. Gleichgewicht 
+
+   Standardzustände 
+
+   4.3.2 
+
+   Freie Enthalpie und Gleichgewichtskonstante K 
+
+1 
+
+Walter de Gruyter, ISBN 3-11-009941-1  
+
+Literatur 
+ 
+Moore, Walter J. “Grundlagen der Physikalischen Chemie”, 1990,  
+ 
+ 
+Hoppe, Lohmann, Markl, Zieger (Hrsg.) „Biophysik“, 1977,  
+ 
+ 
+Adam, Läuger, Stark „Physikalische Chemie und Biophysik“ 2003,  
+ 
+
+Springer-Verlag, ISBN 3-540-07474-0  
+
+Springer-Verlag, ISBN 3-540-00066-6  
+
+2 
+
+4.1. Das chemische Gleichgewicht 
+
+4.1.1      Chemische Reaktionen 
+ 
+
+•  Chemische Reaktion, beschrieben durch eine allgemeine Gleichung: 
+ 
+
+ 
+
+mit   Ai : an der Reaktion beteiligten Komponenten (1,2 – Edukte; 3,4 – Produkte)  
+ 
+
+νi : stöchiometrische Koeffizienten 
+
+→  Umstellen der Gleichung: 
+
+(Konvention:   
+ Stöchiometrische Koeffizienten der Edukte erhalten negatives, die der Produkte positives Vorzeichen) 
+
+•  Beschreibung des Fortschrittes einer Reaktion über Umsatzvariable ξ (Xi): 
+
+ 
+
+ 
+ 
+
+○ Stoffmenge einer Komponente Ai zu Beginn einer Reaktion: ni,0  
+○ Stoffmenge im Laufe der Reaktion ni  ausgedrückt durch die Umsatzvariable: 
+
+•  Differentielle Änderung der Stoffmenge im Verlauf der Reaktion: 
+
+3 
+
+4.1. Das chemische Gleichgewicht 
+
+4.1.2      Der Gleichgewichtszustand 
+ 
+
+•  Betrachtung eines isolierten Systems (kein Materie- und Energie-Austausch) 
+
+ 
+
+→  innere Energie U und Volumen V sind konstant! 
+
+Für jede Zustandsänderung in einem solchen System gilt:       ΔS ≥ 0 
+ 
+d.h. Entropie eines Systems mit U, V = const.  kann nur zunehmen = spontaner Prozess läuft ab 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+     oder gleich bleiben = System im Gleichgewicht 
+
+  Gleichgewicht:  Die makroskopischen Eigenschaften des Systems unterscheiden sich zu 
+                                    zwei Zeitpunkten  t  und  t + Δt  nicht. 
+
+...aber:  Mikroskopisch ist das Gleichgewicht nicht statisch! 
+ 
+ 
+ 
+ 
+
+• Teilchen in Gasen und Flüssigkeiten bewegen sich weiterhin schnell,  
+• Teilchen in Festkörpern schwingen um ihre Gleichgewichtslage, und 
+• reversible chemische Reaktion werden weiterhin stattfinden. 
+
+  
+
+→  dynamisches Gleichgewicht (Fliess-Gleichgewicht) 
+
+4 
+
+4.1. Das chemische Gleichgewicht 
+
+4.1.2      Der Gleichgewichtszustand 
+ 
+
+Dynamisches Gleichgewicht (Fliess-Gleichgewicht) 
+
+Bei chemischen Reaktionen:   
+
+ 
+
+• Reaktionsgeschwindigkeit von Hin- und Rückreaktion sind gleich! 
+
+ 
+
+• Reaktionen finden auch im Gleichgewicht statt, aber die Zusammensetzung  
+   des Systems ändert sich nicht! 
+
+Beispiel: Reaktion zwischen molekularem Wasserstoff und Iod zu Iodwasserstoff: 
+
+Im Gleichgewicht werden in einem betrachteten Zeitraum gleich viele HI-Moleküle  
+gebildet wie auch wieder, unter Bildung der Edukte H2 und I2, zerfallen 
+ 
+ Anzahl aller beteiligten Komponenten bleibt im zeitlichen Mittel konstant. 
+
+5 
+
+4.1. Das chemische Gleichgewicht 
+
+4.1.3      Das Massenwirkungsgesetz 
+ 
+
+(erstmals 1863 von Cato Maximilian Guldberg und Peter Waage (Norwegen) formuliert) 
+
+Beispiel: Reaktion zwischen molekularem Wasserstoff und Iod zu Iodwasserstoff: 
+
+ 
+
+• Geschwindigkeit der Hinreaktion vhin  im Gleichgewicht:     vhin = khin · {H2}·{I2} 
+ 
+     mit den aktiven Massen {H2}, {I2} = Aktivitäten der Stoffe (→ Debye-Hückel-Theorie) 
+     Alternative (moderne) Schreibweise:  a(H2) 
+ 
+      (In den meisten Fällen – Reaktionen in verdünnten Lösungen – weichen die Aktivitäten nur 
+        unerheblich von den Konzentrationen ab, d.h. der Aktivitätskoeffizient  f ≈ 1 ,  (a = f·c) ). 
+ 
+ 
+
+ khin  ist die Reaktionsgeschwindigkeitskonstante der Hinreaktion 
+
+ 
+
+ 
+
+• Analog für die Rückreaktion vrück  im Gleichgewicht:     vrück = krück · {HI}·{HI}  
+ 
+ 
+ 
+ 
+
+ krück  ist die Reaktionsgeschwindigkeitskonstante der Rückreaktion 
+
+               = krück ·{HI}2 
+
+ 
+
+ 
+
+ 
+
+6 
+
+4.1. Das chemische Gleichgewicht 
+
+4.1.3      Das Massenwirkungsgesetz 
+ 
+
+(erstmals 1863 von Cato Maximilian Guldberg und Peter Waage (Norwegen) formuliert) 
+
+• Im Gleichgewicht (Index ‚eq‘) müssen beide Geschwindigkeiten gleich groß sein: 
+
+ 
+
+ 
+ 
+
+         vhin  =  vrück
+
+ 
+
+            und damit      khin · {H2}eq·{I2}eq =  krück · {HI}eq
+
+2 
+
+• Die Gleichgewichtskonstante der Reaktion ist der Quotient K  aus den Geschwindigkeits- 
+   Konstanten von Hin- und Rückreaktion: 
+
+• Allgemeine Formulierung des Massenwirkungsgesetzes: 
+ 
+   mit den Aktivitäten ai  und stöchiometrischen Koeffizienten νi (< 0 für Edukte, > 0 für Produkte). 
+
+• Für die allgemeine Reaktion 
+ 
+
+             ergibt sich damit 
+
+7 
+
+4.1. Das chemische Gleichgewicht 
+
+4.1.3      Das Massenwirkungsgesetz 
+ 
+
+(erstmals 1863 von Cato Maximilian Guldberg und Peter Waage (Norwegen) formuliert) 
+
+Eigenschaften der Gleichgewichtskonstanten K 
+
+• Die Lage des Gleichgewichtes und damit die Gleichgewichtskonstante K wird durch die 
+   Reaktionsbedingungen (T, p, Konzentrationen/Aktivitäten) festgelegt. 
+
+• Betrachtung des Massenwirkungsgesetzes zeigt: 
+ 
+    
+ 
+ 
+
+○  K < 1:  Gleichgewicht liegt auf der Seite der Edukte 
+
+○  K > 1:  Gleichgewicht liegt auf der Seite der Produkte 
+
+• Die Gleichgewichtskonstante gibt also an, auf welcher Seite einer chemischen Gleichung  
+   sich das Gleichgewicht befindet. 
+
+8 
+
+4.1. Das chemische Gleichgewicht 
+
+4.1.4      Störung des Gleichgewichts – Prinzip von Le Chatelier 
+ 
+
+(“Prinzip des kleinsten Zwanges”) 
+
+• Die Lage des Gleichgewichtes und damit die Gleichgewichtskonstante K wird durch die 
+   Reaktionsbedingungen (T, p, Konzentrationen/Aktivitäten) festgelegt. 
+
+• Wird für ein System im Gleichgewicht ein die Gleichgewichtslage bestimmender 
+   Parameter (T, p, ci ) geändert, wird das chemische Gleichgewicht gestört! 
+
+  Es läuft die Reaktion ab, die die Gleichgewichtslage wieder herstellt! 
+
+...bzw. welche die Störung beseitigt. 
+
+• Beispiel:    Allgem. Reaktion                                                                mit 
+
+- Konzentration (Aktivität a) des Reaktionsproduktes A3  wird (durch Zugabe) verdoppelt: 
+
+→ Da K  bei konstantem Druck und konstanter Temperatur ebenfalls konstant ist, ergibt sich: 
+
+       Zugabe eines Produktes der  
+       Reaktion verschiebt das Gleich- 
+  Gewicht auf die Seite der Edukte! 
+
+9 
+
+4.1. Das chemische Gleichgewicht 
+
+4.1.4      Störung des Gleichgewichts – Prinzip von Le Chatelier 
+ 
+
+(“Prinzip des kleinsten Zwanges”) 
+
+• Die Lage des Gleichgewichtes und damit die Gleichgewichtskonstante K wird durch die 
+   Reaktionsbedingungen (T, p, Konzentrationen/Aktivitäten) festgelegt. 
+
+• Wird für ein System im Gleichgewicht ein die Gleichgewichtslage bestimmender 
+   Parameter (T, p, ci ) geändert, wird das chemische Gleichgewicht gestört! 
+
+  Es läuft die Reaktion ab, die die Gleichgewichtslage wieder herstellt! 
+
+...bzw. welche die Störung beseitigt. 
+
+• Weitere Beispiele/Anmerkungen: 
+
+ 
+
+○ Erhöhung der Temperatur T  begünstigt die Wärme “verbrauchende” (endotherme) Reaktion 
+ 
+○ Volumen- oder Druckänderungen beeinflussen in der Regel nur Reaktionen in der Gasphase. 
+
+ 
+...dann:  Druckerhöhung verschiebt Gleichgewicht auf die Seite der Reaktionsgleichung mit 
+                kleinerer Teilchenzahl. 
+
+ 
+
+10 
+
+4.2. Das chemische Potential 
+
+4.2.1      Das chemische Potential 
+
+• Das chemische Potential μ  wurde 1875 als neue thermodynamische Funktion von 
+   J.. Willard Gibbs eingeführt. 
+
+• Analogie: 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+       - Gravitationspotential:     Massen fallen von Orten  
+ 
+ 
+ 
+
+höheren Potentials (“oben”) 
+zu Orten mit geringerem  
+Potential (“unten”). 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+       - chemisches Potential:     Chemische Substanzen streben 
+ 
+ 
+ 
+ 
+
+durch Diffusion oder durch  
+chemische Reaktionen  von 
+höheren zu niedrigeren 
+chemischen Potentialen. 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+= Triebkraft der Prozesse bei T, p = const. 
+
+11 
+
+4.2. Das chemische Potential 
+
+4.2.1      Das chemische Potential 
+
+• Betrachtung offener (= Stofftransport möglich) oder geschlossener Systeme. 
+
+• Bei chemischen Reaktionen ändern sich in beiden Fällen die Stoffmengen ni ! 
+
+ 
+
+→ damit ändern sich folgende extensiven Zustandsgrößen bzw. Zustandsfunktionen,  
+     da sie Funktionen der Stoffmengen ni  sind: 
+
+ die vollständigen Differentiale müssen  
+      zusätzlich Glieder mit ni  einschliessen.  
+  
+ Im Falle der freien Enthalpie ergibt sich: 
+
+Mit zwei Komponenten (A, B ) ergibt sich: 
+
+partielle Ableitung von G  nach Stoffmenge ni   
+der Komponente i  bei konstantem T, p  und  
+Stoffmengen nj (j ≠ i) der übrigen Komponenten 
+
+12 
+
+4.2. Das chemische Potential 
+
+4.2.1      Das chemische Potential 
+
+• Freie Enthalpie:   
+
+• Mit der Gleichung für die freie Enthalpie bei konstanten Stoffmengen 
+ 
+   ergibt sich:  
+
+• Analog lassen sich die vollständigen Differentiale dF, dH  und dU  formulieren. 
+
+Das chemische Potential ist mit den vollständigen Differentialen definiert: 
+
+13 
+
+4.2. Das chemische Potential 
+
+4.2.2     Chemisches Potential und chemisches Gleichgewicht 
+
+• Freie Enthalpie:   
+
+• System bei konstantem T und p                                                         
+
+• Beispiel:    Allgemeine Reaktion 
+
+ 
+
+(Vorzeichen gemäss Konvention: Produkte positiv, Edukte negativ) 
+
+• Mit differentieller Änderung der Stoffmenge in  
+  Abhängigkeit von der Umsatzvariablen ξ,                   : 
+
+• Mit  folgt für den Gleichgewichtszustand (dni = 0): 
+
+• Division durch ξ  bzw. dξ  liefert allgemeine Gleichgewichtsbedingung: 
+
+- Für die allgemeine Beispiel-Reaktion: 
+
+14 
+
+4.2. Das chemische Potential 
+
+4.2.3     Chemisches Potential in Lösungen 
+
+(Herleitung: siehe z.B. Adam, Läuger, Stark) 
+
+• Aus Betrachtung des chem. Potentials eines idealen Gases ergibt sich das  
+   chemische Potential in ideal verdünnter Lösung:   
+
+μ0: temperaturabhängiges chem. Potential bei Standarddruck (chemisches Standardpotential) 
+
+• Einbeziehung der Aktivität a liefert entsprechenden Ausdruck für nichtideale Lösungen:   
+
+15 
+
+4.3. Freie Enthalpie und chemisches Gleichgewicht 
+
+4.3.1     Standardzustände 
+
+• Erinnerung:  
+
+Standardbildungenthalpie ΔH0
+
+f (standard enthalpie of formation) einer Verbindung  
+
+ 
+
+=   Standardreaktionsenthalpie ΔH0
+
+r  ihrer Bildungsreaktion aus den entsprechenden  
+
+ 
+ 
+                         Elementen in ihrem Referenzzustand (p0 = 1 Standardatmosphäre = 101.32 kPa) 
+ 
+ 
+ Standardreaktionsenthalpie ΔH0
+      der stöchiometrischen Zahlen als Differenz zwischen ΔH0
+      der Edukte der Reaktion. 
+
+      unter Angabe der jeweiligen Reaktionstemperatur.  
+
+r  einer beliebigen Reaktion unter Berücksichtigung  
+
+f -Werten der Produkte und  
+
+• Definition von Null-Niveaus: 
+
+○ Null-Niveau der Entropie S (aus 3. Hauptsatz, s.o.): 
+     (physikalisch begründbar: Keine Bewegung = keine Entropie). 
+
+bei T = 0 K 
+
+○ Null-Niveaus für Enthalpie H und freie Enthalpie G  nicht physikalisch begründbar! 
+
+ 
+
+ 
+ 
+ 
+
+→   Festlegung durch internationale Konvention: 
+ 
+Standardenthalpie der Elemente bei 298.15 K gleich Null 
+
+16 
+
+4.3. Freie Enthalpie und chemisches Gleichgewicht 
+
+4.3.1     Standardzustände 
+
+• Mit Festlegung von                      ist mit                         auch für die freie Standardenthalpie 
+   festgelegt, dass sie für T = 298.15 K zu berechnen ist.   
+
+  Freie Standardbildungsenthalpie           einer Verbindung  
+
+ 
+
+ 
+
+ 
+                      im Standardzustand gebildet wird. 
+
+= freie Standardenthalpie          der Reaktion, bei der sie aus den Elementen 
+
+  Analog zur Standardreaktionenthalpie aus den Standardenthalpien lässt sich die 
+
+ 
+
+       freie Standardreaktionsenthalpie  oder Standard-Gibbsenergie          berechnen: 
+
+- 
+
+17 
+
+4.3. Freie Enthalpie und chemisches Gleichgewicht 
+
+4.3.2     Freie Enthalpie und Gleichgewichtskonstante 
+
+• Die Änderung der freien Enthalpie bei einer Reaktion 
+ 
+   ist gegeben durch:  
+
+(zu beachten: Stoffmengenänderungen dni sind über stöchiometrische Koeffizienten i  verknüpft!) 
+
+→  Betrachtung des Formelumsatzes    
+ 
+
+ 
+
+(1 Mole A1 reagieren mit 2 Molen A2 zu 3 Molen A3 und 4 Molen A4) 
+
+  damit verbundene Änderung der freien Enthalpie  
+
+        
+
+          ergibt sich durch Ersetzen der dni  durch i   
+          (...oder durch Setzen von d ξ = 1 in                         ) 
+
+  Einbeziehung des chemischen Potentials eines Stoffes in Lösung,                                     :  
+
+18 
+
+4.3. Freie Enthalpie und chemisches Gleichgewicht 
+
+4.3.2     Freie Enthalpie und Gleichgewichtskonstante 
+
+• Änderung der freien Enthalpie  
+
+Konzentrationsunabhängiger Teil  
+entspricht der freien Standardenthalpie  
+
+Umformung  mit  y·ln x = ln x y 
+
+ 
+
+Vergleich mit Massenwirkungsgesetz                                zeigt: 
+
+Mit                ergibt sich als  
+ 
+Beziehung zwischen freier Enthalpie  
+und Gleichgewichtskonstante:  
+
+bzw. 
+
+19 
+
+

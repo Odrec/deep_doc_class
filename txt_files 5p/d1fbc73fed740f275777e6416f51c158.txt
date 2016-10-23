@@ -1,0 +1,415 @@
+Bezugssysteme, Kreisbewegung
+
+und Schwerelosigkeit
+
+11. Dezember 2014
+
+Überblick
+
+Bezugssysteme
+
+Wann gelten die Newtonschen Gesetze?
+Was sind Inertialsysteme?
+Trägheitskräfte in beschleunigten Bezugssystemen
+
+Kreisbewegung
+
+Trägheitskraft in Bewegungsrichtung
+Trägheitskraft senkrecht zur Bewegungsrichtung
+
+Zentrifugalkraft
+Corioliskraft
+
+Schwerelosigkeit
+
+Was ist Schwerelosigkeit?
+Ist künstliche Schwerkraft herstellbar?
+
+Bezugs- und Koordinatensysteme
+Was ist ein Bezugssystem?
+
+Beispiel: Erdoberﬂäche
+
+Bezugssystem
+Ein Bezugssystem ist eine mit Uhren und Maßstäben ausgerüstete
+materielle Basis, die es dem Beobachter ermöglicht, zeitliche und räumliche
+Distanzen zwischen Ereignissen zu messen.
+
+Weitere Beispiele: Labortisch, Raumstation, Auto
+
+Bezugs- und Koordinatensysteme
+Was ist ein Koordinatensystem?
+
+Beispiel: Kugelkoordinaten
+
+Koordinatensystem
+Ein Koordinatensystem ordnet jedem Punkt des Bezugssystems
+Zahlenwerte für Ort und Zeit zu.
+
+Weitere Beispiele: Kartesische Koordinaten, Zylinderkoordinaten
+
+Inertialsysteme
+
+Inertialsystem
+Ein Inertialsystem ist (starres) Bezugssystem in dem sich jeder
+unbeeinﬂusste Körper gleichförmig bewegt.
+
+Inertialsysteme sind ausgezeichnet: Sie sind genau die Bezugssysteme, in
+denen alle Newtonschen Gesetze gelten.
+
+Gibt es Inertialsysteme?
+Inertialsysteme sind Idealisierungen, die sich nur näherungsweise
+realisieren lassen.
+
+Beschleunigte Bezugssysteme I
+
+In einem beschleunigtem Bezugssystem gilt zunächst keines der
+Newtonschen Axiome!
+
+Wechsel von Bezugssystemen
+
+In Inertialsystemen gelten die drei Newtonschen Gesetze (unter
+‘Alltagsbedingungen‘)
+Alle Inertialsysteme sind relativ zueinander ruhend oder gleichförmig
+bewegt
+In einem relativ zu einem Inertialsystem beschleunigten Bezugssystem
+werden unbeeinﬂußte Körper beschleunigt, d. h. das 1. Newtonsche
+Gesetz gilt nicht!
+Damit das 1. und 2. Newtonsche Gesetz gültig bleiben, müssen
+Scheinkräfte als Ursachen der Beschleunigungen postuliert werden:
+Beschleunigung eines unbeeinﬂußten Körpers:(cid:126)aSchein
+Trägheitskraft: (cid:126)FSchein = m·(cid:126)aSchein
+⇒ Trägheitskräfte sind proportional zur Masse des Körpers an dem sie
+angreifen!
+
+Trägheitskräfte in beschleunigten Bezugssystemen
+
+Jede relative Beschleunigung eines Bezugssystems kann als
+Kombination von Translation und Rotation aufgefasst werden.
+Durch geeignete Koordinatentransformationen können die auftretenden
+Beschleunigungen quantitativ berechnet werden. In der Regel ist dies
+aber für die Schule zu anspruchsvoll.
+Zum Teil können sie aber durch Betrachtung von Kräftegleichgewichten
+im beschleunigten System ermittelt werden.
+
+Fehlvorstellungen zu den wirkenden Kräften bei einer
+beschleunigten Bewegung
+
+Erfahrung
+Im beschleunigten System (z.B. Auto) wird man in den Sitz bzw. bei
+Kurvenfahrt nach außen gedrückt.
+
+Erklärung
+Das beschleunigte System wird als das ‘natürliche‘ angesehen. Die
+erfahrenen Kräfte im beschleunigten System existieren ‘objektiv‘.
+
+Resultierende fehlerhafte Vorstellungen:
+
+Wird man in eine Richtung beschleunigt, so drückt/zieht eine Kraft in die
+entgegengesetzte Richtung.
+Bei einer Kreisbewegung existiert eine Kraft, die den Körper vom
+Drehpunkt weg zu ziehen versucht.
+
+Fehlvorstellungen zu den wirkenden Kräften bei einer
+beschleunigten Bewegung
+
+Mögliche Fehler aufgrund des „Vermischens “von Inertial- und beschleunigtem
+System:
+
+Lineare Beschleunigung
+Fällt die äußere Kraft weg, wirkt doch immer noch die entgegengesetzt
+gerichtete Kraft → Körper werden langsamer auch wenn keine äußere Kraft
+wirkt.
+
+Kreisbewegung
+Fällt die nach innen wirkende Zentripetalkraft weg, wirkt doch immer noch
+die entgegengesetzt gerichtete Zentrifugalkraft → Körper ﬂiegen nicht
+tangetial weiter, sondern haben auch eine radial
+Geschwindigkeitskomponente.
+→ Freihandexperiment
+
+Linear beschleunigtes Bezugssystem
+
+Trägheitskraft der Translation
+
+Kreisbewegung
+
+Die Zentripetalkraft ist die im Inertialsystem wirkende Kraft, die den
+Körper auf die Kreisbahn zwingt:
+
+Video
+
+Experiment zur Messung der Zentripetalkraft
+Die Zentripetalkraft hat den Betrag
+
+Fz = m· v 2
+R
+
+und ist zum Mittelpunkt des Kreises gerichtet.
+
+Kreisbewegung - Aufgabe
+
+Rotierende Bezugssysteme - qualitativ
+
+Video
+
+Rotierende Bezugssysteme - quantitativ
+
+Rotierende Bezugssysteme - quantitativ
+
+Übung
+
+Woran erkenne ich eine Trägheitskraft?
+
+Linear beschleunigtes Bezugssystem:
+
+Für den Beobachter auf dem Boden (Max) zieht der Federkraftmesser an der Kugel und bewirkt so
+dessen beschleunigte Bewegung.
+Für den Beobachter auf dem Wagen (Moritz) ruht die Kugel. Es besteht ein Kräftegleichgewicht
+zwischen der Zugkraft des Federkraftmessers und einer Trägheitskraft, die keine erkennbare
+materielle Ursache hat. Für diese Kraft existiert kein Wechselwirkungspartner.
+
+Demonstration: Eisenbahnwaggon
+
+Woran erkenne ich eine Trägheitskraft?
+
+Rotierendes Bezugssystem: Zentrifugalkraft
+
+Für den Beobachter außerhalb der rotierenden Scheibe übt der Federkraftmesser die Zentripetalkraft
+auf die Kugel aus und zwingt sie so auf eine Kreisbahn. Für den mitrotierenden Beobachter besteht
+ein Kräftegleichgewicht zwischen der Zugkraft des Federkraftmessers und einer Trägheitskraft
+(Zentrifugalkraft), die keine erkennbare materielle Ursache hat. Für diese Kraft existiert kein
+Wechselwirkungspartner.
+
+Eine Trägheitskraft besitzt keine physikalische Ursache, d. h. kein materielles
+Objekt, das die Kraft ausübt1. Für sie gilt also nicht das 3. Newtonsche
+Gesetz.
+
+1Daher werden Trägheitskräfte auch oft als „Scheinkräfte “bezeichnet.
+
+Häuﬁg wird falsch argumentiert
+
+Erklärung der Kräfte bei der Kreisbewegung aus einer Physik-Formelsammlung für Studierende.
+
+Welche Fehler werden hier gemacht?
+
+Häuﬁg wird falsch argumentiert
+
+Kreisbahn und eingezeichnete Geschwindigkeit beziehen sich auf das
+Inertialsystem. Im mitrotierenden Bezugssystem ruht der Körper.
+Die Zentrifugalkraft ist nur im mitrotierenden Bezugssystem deﬁniert.
+Der Begriff Zentripetalkraft bezeichnet die Kraft, die einen Körper auf eine
+Kreisbahn zwingt. Er bezieht sich also auf das Inertialsystem.
+
+Corioliskraft
+
+Video Wurf
+
+Woran erkenne ich eine Trägheitskraft?
+
+Radiale Bewegung in einem rotierendes Bezugssystem:
+
+Der rote Ball wird auf der gelben Scheibe von der Mitte nach außen geworfen.
+Links: Die Scheibe rotiert relativ zu dem (grünen) Beobachter. Die blauen Klötze sind relativ zu ihm
+in Ruhe.
+Rechts: Der Beobachter rotiert mit der Scheibe mit. Die blauen Klötze rotieren relativ zu ihm.
+
+Woran erkenne ich eine Trägheitskraft?
+
+Radiale Bewegung in einem rotierendes Bezugssystem:
+
+Der Ball verfehlt die Empfängerin (pink).
+Links: Für den außenstehenden Beobachter bewegt sich der Ball geradlinig nach außen. Es wirkt
+keine Kraft auf ihn ein.
+Rechts: Für den Beobachter auf der Scheibe ﬂiegt der Ball auf einer gekrümmten Bahn. Es wirkt
+eine senkrecht zur Geschwindigkeit gerichtete Trägheitskraft, die Corioliskraft.
+
+Video: Experiment zur Corioliskraft
+
+Video Karussel
+
+Rotierende Bezugssysteme - Corioliskraft
+
+Richtung der Corioliskraft.
+
+Nordhalbkugel: Hurrikan Sandy
+(2012)
+Video
+
+Südhalbkugel: Zyklon Yasi
+(2011)
+Video
+
+Corioliskraft - Wirbelstürme
+
+Drehrichtung auf der Nordhalbkugel
+
+Drehrichtung auf der Südhalbkugel
+
+Video
+
+Internetseite Luftzirkulation auf der Erdoberﬂäche
+
+Corioliskraft - Golfstrom, Passatwinde; Foucault-Effekt
+
+Weitere Phänomene:
+
+Video Golfstrom
+
+Video Passatwinde
+
+Video Foucaultpendel
+
+Beim Abﬂuss in der Badewanne lässt sich das Wirken der Corioliskraft leider
+nicht beobachten (andere Störungen sind bedeutendeer)):
+
+Video Wasserstrudel
+
+Beschleunigte Bezugssystem in der Schule?
+
+Im Prinzip können alle Bewegungen vom Inertial- oder vom
+beschleunigten Bezugssystem aus beschrieben werden.
+Häuﬁg ist eine quantitative Beschreibung im beschleunigten
+Bezugssystem sogar einfacher.
+Die im beschleunigten Bezugssystem auftretenden Scheinkräfte sind
+jedoch „unpysikalisch“ in dem Sinne, dass ihnen keine Wechselwirkung
+zwischen zwei physikalischen Objekten zugrunde liegt. Insbesondere gilt
+das 3. Newtonsche Gesetz nicht mehr.
+Der Wechsel der Perspektive vom Inertial- zum beschleunigten
+Bezugssystem kann leicht zu begrifﬂicher Verwirrung führen und erfordert
+eine sorgfältige Behandlung. In der Schule fehlt dazu oftmals die Zeit.
+Dort ist daher in der Regel eine einheitliche Beschreibung (vom
+Intertialsystem aus) vorzuziehen.
+
+Künstliche Gravitation
+
+Schwerelosigkeit
+
+Was versteht man unter „Schwerelosgkeit“?
+Warum herrscht in einer Raumstation Schwerelosgkeit?
+Lässt sich „künstliche Gravitation“ in einer Raumstation herstellen?
+
+Was versteht man unter „Schwerelosgkeit“?
+
+„Unter Schwerelosigkeit versteht man einen Zustand, in dem entweder keine
+Schwerkraft wirkt, oder deren Auswirkung nicht zu spüren ist. ...“
+(de.wikipedia.org)
+
+Warum herrscht in einer Raumstation Schwerelosgkeit?
+
+Video: Schwerelosigkeit
+
+Was versteht man unter „Schwerelosgkeit“?
+Warum herrscht in einer Raumstation Schwerelosgkeit?
+Lässt sich „künstliche Gravitation“ in einer Raumstation herstellen?
+
+Warum herrscht in einer Raumstation Schwerelosgkeit?
+
+Zwei häuﬁg (nicht nur bei Schülern) anzutreffende Vorstellungen:
+
+1
+
+2
+
+In der Raumstation herrscht Schwerelosgkeit, weil die Schwerkraft mit
+zunehmender Entfernung von der Erdoberﬂäche abnimmt und in der
+Raumstation nur noch ganz schwach vorhanden ist.
+In der Raumstation herrscht Schwerelosgkeit, weil sie auf einer
+Kreisbahn um die Erde rotiert und sich Schwerkraft und Zentrifugalkraft
+die Waage halten (Kräftegleichgewicht).
+
+Warum herrscht in einer Raumstation Schwerelosgkeit?
+
+Die Schwerkraft wird mit zunehmender Entfernung von der Erdoberﬂäche
+geringer, ist aber z. B. auf der ISS (350 km Höhe) lediglich 10 % geringer.
+Diese Abnahme ist also nicht der Grund der Schwerelosgkeit.
+
+Rechnung:
+Stärke der Schwerkraft auf der Erdobeﬂäche: G mErde
+r 2
+Erde
+Stärke der Schwerkraft auf der ISS-Raumstation: G
+Mit rErde ≈ 6000km ist das Verhältnis der beiden Kräfte
+
+(6000km)2
+
+(6000km+350km)2 ≈ 0,9
+
+mErde
+
+(rErde+350km)2
+
+Freier Fall
+
+Versuche:
+- Fallröhre
+- Wii
+- Freier Fall
+- Schiefer Wurf
+Video:
+- Flasche
+
+Video: Fallende Flasche
+
+Übung
+Versuch:
+- Becher
+Video:
+- Becher
+
+Video: Fallender Becher
+
+Freier Fall und Schwerelosgkeit
+
+Die Gravitationskraft auf einen Körper ist proportional zu seiner Masse m:
+
+(cid:126)FGrav = m(cid:126)g mit
+
+g = G mErde
+r 2
+
+.
+
+Nach dem 2. Newtonschen Gesetz ist die Beschleunigung eines Körpers
+
+umgekehrt proportional zu seiner Masse(cid:126)a = (cid:126)F /m also2 (cid:126)aGrav =(cid:126)g.
+Die Gravitationskraft greift an jedem Teil „jedem Massepunkt “) des
+
+Systems an.
+
+Konsequenz:
+Vom Inertialsystem aus betrachtet, erfahren in einem frei fallendem System
+aufgrund der Gravitationskraft alle Teile des Systems nahezu3 die gleiche
+Beschleunigung(cid:126)g.
+Im beschleunigten Bezugssystem bewirkt daher die Gravitation nahezu keine
+relative Beschleunigung zwischen den Teilen. Es herrscht ein
+Kräftegleichgewicht zwischen der Gravitationskraft und den Trägheitskraften.
+
+2Hierbei wird die Gleichheit von träger und schwerer Masse angenommen. Diese ist z. B. mit
+
+Fallexeprimenten mit hoher Genauigkeit geprüft.
+
+3Sofern das System so klein ist, dass(cid:126)g als konstant angenommen werden kann.
+
+Künstliche Gravitation?
+
+Video: 2001 - Künstliche Gravitation
+
+Künstliche Gravitation durch Rotation?
+
+Aufgabe
+
+1 Mit welcher Winkelgeschwindigkeit müsste sich eine Raumstation von
+
+etwa 100 m Durchmesser drehen, damit an ihrer Außenseite eine
+künstliche Gravitation von etwa 1 g herrscht (Abschätzung genügt)?
+
+2 Welche unerwünschten Effekte erwartet ihr infolge der Rotation?
+
+Lösung:
+1. ω = 0,4431/s bzw. T = 14,2s.
+2. Auswirkungen der Coriolis-Kraft ...
+
+Künstliche Gravitation
+
+

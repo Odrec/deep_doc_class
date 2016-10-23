@@ -1,0 +1,599 @@
+Ten years of the rational 
+
+analysis of cognition
+Nick Chater & Mike Oaksford (1999)
+
+Jennifer Wagner & Nhi Bui
+
+Outline
+
+Introduction: Explanation styles
+
+1.
+2. Rational Analysis (& its methodology)
+3. Applying RA
+3.1. Memory
+3.2. Reasoning (WST)
+
+4. Conclusion
+
+Mechanistic approach
+
+Purposive approach
+
+analyzes phenomena regarding their causal 
+structure
+
+explains phenomena by what problem they 
+solve i.e. function
+
+determine structure & algorithms for cognitive 
+phenomena
+
+assortment of random mechanisms (due to 
+neuroscience & experimental studies)
+
+Rational Analysis (RA) by Anderson (1990)
+→ ‘computational level’ (Marr) corresponds to 
+rational analysis
+
+(cognitive) system optimally adapted to task
+
+neglects purpose of cognitive functions
+
+use of probability theory (Bayes)
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+Methodology (RA)
+
+(1) Goals: specify goals of cognitive system
+(2) Environment: develop formal model of environment
+(3) Computational limitations: minimal assumptions about computational 
+
+limitations
+
+(4) Optimization: derive optimal behaviour function (see 1-3)
+(5) Data: examine empirical evidence → predictions of behaviour function 
+
+right?
+Iteration: repeat (1) - (5) → fine-tune theory
+
+(6)
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+Memory  … fails gradually over time. 
+
+- Structure of memory imperfect → storage problems → side effect (mechanistic)
+-
+
+Items recently read → more likely to be needed again → remembered better (RA)
+
+→ Forgetting curve corresponds to curve of need-probability function p 
+
+S   - memory item
+H   - history factor
+Q   - contextual cues
+
+S
+S
+
+p = P(H  ).a(Q  )S
+
+S
+
+Probability that S will be needed given its 
+usage history
+
+Probability of observing the cues when S is 
+needed → “strength of association”
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Memory) 
+(1) Goal: availability of item matches probability that it is needed (efficient retrieval)
+
+(2) Environment: environment determines need-probability p
+
+(3) Computational limitations: sequential search with cost C for each item
+
+(4) Optimization: stop retrieval if pG < C i.e. retrieval costs exceed expected gain;
+
+        p depends on context cues Q & item’s history usage H
+
+(5) Data: account for power law of forgetting & power law of practice
+
+(6)
+
+Iteration: test models empirically; role of context (recurrence in newspaper   
+
+                         headlines), manipulate need-probability → changes in forgetting curve 
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+Power law of forgetting
+memory items decay with time 
+exponentially; 
+→ need probability is decreasing  
+     power function of time
+
+Power law of practice
+faster recall for more frequent items; 
+→ need probability is increasing 
+     power function of frequency
+
+Power law of practice: reaction time decreases 
+
+exponentially
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+However...
+
+- Power law of forgetting: artifacts of averaging over individuals ?
+
+→ reply: also holds for individuals
+
+- Schooler (1998): empirical evidence for context & history determining need-
+
+probability 
+
+→ BUT (!): time elapsed relatively more important than contextual cues
+
+- Underlying processing mechanisms should be considered: e.g. capacity of 
+
+short term memory
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+The Wason Selection task
+
+- Participants are shown a set of cards and a rule
+
+- Task: turn the minimal amount of cards to check if the rule applies
+
+- Contains optimal data selection:
+
+- hypothesis (= rule)
+- deciding on experiments (= deciding which card to turn)
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+The Wason Selection task
+
+Rule: Whenever there is a vowel on one side of the card,
+
+there is an even number on the other side
+
+A
+
+7
+
+K
+
+2
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+WST - Strategy
+
+Popper’s falsificationist view on science:
+
+- not possible to verify rules, only falsify them
+- falsify rule by finding a contradiction between rule and data
+
+→ Strategy: find case in which the rule does not hold
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+WST - Strategy
+
+Rule: p → q (p → vowel, q → even number)
+
+Search for a case in which the
+ 
+      conditional is false (i.e. p ʌ ¬ q)
+
+p
+
+T
+
+T
+
+F
+
+F
+
+→
+
+T
+
+F
+
+T
+
+T
+
+q
+
+T
+
+F
+
+T
+
+F
+
+→ Logical solution: A (p)  & 7 (¬ q)
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+WST - Results
+
+Experimental results:
+
+p and q cards
+
+p card only
+
+p, q and ¬ q cards
+
+p and ¬ q cards
+
+46%
+
+33%
+
+7%
+
+4%
+
+logical 
+solution
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+Why do only 4% of the participants choose the logically 
+right answer?
+
+Is this a reason for doubting human rationality?
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+WST in everyday life
+
+Consider different example:
+
+“If a saucepan falls, then it clangs”
+
+p = a saucepan falls
+q = it clangs
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+WST in everyday life
+If a saucepan falls (p), 
+listen for a clang (q)
+
+- ¬ q falsifies rule
+- q makes the rule more plausible
+
+If a clang is heard (q), 
+check if saucepan has fallen (p)
+
+- p makes the rule more plausible
+
+p
+
+T
+
+T
+
+F
+
+F
+
+→
+
+T
+
+F
+
+T
+
+T
+
+q
+
+T
+
+F
+
+T
+
+F
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+WST in everyday life
+
+If no clang is heard (¬ q), 
+check if a saucepan has fallen (p)
+
+(p ʌ ¬ q) would falsify the rule
+
+-
+- but a saucepan falling is a rare event!
+
+p
+
+T
+
+T
+
+F
+
+F
+
+→
+
+T
+
+F
+
+T
+
+T
+
+q
+
+T
+
+F
+
+T
+
+F
+
+→ seems implausible to check for p in case of ¬ q,   
+     because ¬ p is way more likely
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+WST in everyday life
+
+(¬ p  ʌ ¬ q) gives no new information concerning the rule
+
+→ case of ¬ p is very likely
+
+→ Estimated information gain very small
+→ Apparent confirmation of rules: more informative 
+     than searching for contradictions if events are rare
+    → look for causal relations instead of falsification 
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reasoning - The Wason Selection Task) 
+
+Oaksford and Chater’s rational analysis:
+
+- based on optimal data selection (ODS) from Bayesian statistics 
+
+instead of Popper’s falsificationism
+
+- adaptive instead of normative rationality
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reason) 
+
+(1) Goal: selecting data with highest expected informativeness 
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reasoning) → Goals
+
+ODS model: participants are unsure of whether hypothesis is true
+
+→ equal probability for the case that rule (p → q) is true and the case that p and q are 
+independent
+
+→ Calculate uncertainty of HD after experiment (e):
+
+P(HD | D, e)
+
+D = Data
+HD = hypothesis is true
+
+P(HD) = 0.5  =  P(HI)  
+
+Probability of 
+hypothesis 
+being true
+
+Probability of 
+p and q being 
+independent
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reasoning) → Goals
+
+Likelihoods of outcomes when turning 2-card can be calculated by contingency tables used 
+in ODS model [P(A | 2, HD), P(K | 2, HD), P(A | 2, HI), P(K | 2, HI)]
+
+Then P(HD | A, 2)] can be calculated by Baye’s theorem
+
+→ One can use this probability to calculate uncertainty after turning the 2 | A 
+     card: 
+
+I(HD | A, 2)
+
+HD = hypothesis is true
+I = uncertainty
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reasoning) → Goals
+
+Participants can not really turn cards in WST → need expected value of uncertainty
+
+→ I(HD | A, 2) and I(HD | K, 2) are weighted by the expected value of P(K | 2) and P(A | 2)
+
+E[I(HD | 2)]
+
+HD = hypothesis is true
+E = expectation
+I = uncertainty
+
+Difference between uncertainty in the beginning I(HD) and expected uncertainty after 
+turning the cards E[I(HD | 2)] is the information gain Elg(e) one can expect from carrying 
+out the experiment (e):
+
+Elg(e) = I(HD) - E[I(HD | e)]
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reason) 
+
+(1) Goal: selecting data with highest expected informativeness 
+(2) Environment: rarity assumption: more plausible to check in case of rare event (q)
+
+(3) Computational limitations: assumed costs for examining data - as little as possible
+
+(4) Optimization: rarity assumption leads to an order of expected information gain: 
+
+Elg(p) > Elg(q) > Elg(¬ q)  > Elg(¬ p)
+
+(5) Data: human approximate bayesian statistics - turing ¬ q card is not worth the cost
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reasoning) → Optimization
+
+Elg(p) > Elg(q) > Elg(¬ q)  > Elg(¬ p)
+
+participants evaluate the costs, 
+decide how many cards to turn 
+and turn most informative cards in 
+the given order !
+
+p and q cards
+
+p card only
+
+p, q and ¬ q cards
+
+p and ¬ q cards
+
+46%
+
+33%
+
+7%
+
+4%
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reasoning) → Optimization
+
+Elg(p) > Elg(q) > Elg(¬ q)  > Elg(¬ p)
+
+participants evaluate the costs, 
+decide how many cards to turn 
+and turn most informative cards in 
+the given order !
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reason) 
+
+(1) Goal: selecting data with highest expected informativeness 
+(2) Environment: rarity assumption: more plausible to check in case of rare event (q)
+
+(3) Computational limitations: assumed costs for examining data - as little as possible
+
+(4) Optimization: rarity assumption leads to an order of expected information gain: 
+
+Elg(p) > Elg(q) > Elg(¬ q)  > Elg(¬ p)
+
+(5) Data: human approximate bayesian statistics - turing ¬ q card is not worth the cost
+
+(6)
+
+Iteration: predicts that selection task performance changes if rarity assumption 
+is violated 
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+RA (Reasoning) → Iteration
+
+Rule: Whenever somebody is drinking beer, 
+
+(s)he is at least 21 years old
+
+beer
+
+18
+
+soda
+
+25
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+Still doubt human rationality?
+- Systems / organisms (e.g. humans) are adapted to real world environments
+
+- Behaviour optimized for many different situations given certain costs
+
+→ approximate optimization due to uncertainty
+
+- But: non-optimal in specific situations (like experiments)
+
+-
+
+‘Irrational’ behavior: may be result of unnatural / “artificial” or unusual situations
+
+→  people don’t follow rules of logic (WST)
+
+→ “more correct” when rules framed in real-world scenarios 
+
+→ in real world: causal events are rare, experiments don’t consider
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+Conclusion
+- Traditional explanations neglect purpose of cognitive mechanisms
+- RA successful in explaining memory & reasoning → formalizes “intuition” (of human 
+
+behaviour)
+
+- System adapts to environment → optimal behavior explains why cognitive 
+
+mechanisms do the way they do
+
+- Constrains models & predicts possible outcomes → new directions for theory 
+
+development  
+
+Can RA be applied to every cognitive process?
+
+Introduction          Rational Analysis          Memory          Reasoning          Conclusion
+
+Trying hard to be funny...
+
+References
+
+CHATER, Nick; OAKSFORD, Mike. Ten years of the rational analysis of cognition. Trends 
+in Cognitive Sciences 3.2 (1999): 57-65.
+
+ANDERSON, John R. The place of cognitive architectures in a rational analysis. 
+Architectures for intelligence (1991): 1-24.
+
+Pictures
+http://www.antimoon.com/how/supermemo.htm
+
+

@@ -1,0 +1,373 @@
+Logistische Regressionsanalysen
+
+Marcus Schulz
+
+Gliederung
+
+• Logistisches Regressionsmodell
+• Logits
+• Logitkoeffizienten
+• Gütemaße für das Regressionsmodell
+• Prüfung der Merkmalsvariablen
+
+Wozu logistische Funktion?
+
+• Keine hinreichende Streuung in den 
+
+Werten der kategorialen Variablen
+
+• Verletzung der Annahme der 
+
+Normalverteilung der einfachen 
+linearen Regression
+
+• Unplausible Werte der 
+
+Schätzfunktion (Werte >1 oder <-1)
+
+-0,4-0,200,20,40,60,811,21,40123456Kategoriale VariableMetrische VariableWozu logistische Funktion?
+
+• Berechnung der Wahrscheinlichkeiten betrachteter 
+
+Ereignisse (kategorialer (nominaler) Variablen),
+
+• Bestimmung der Einflussgrößen dieser 
+
+Wahrscheinlichkeiten.
+
+• Abhängige Variable: 
+
+• Unabhängige Variablen: 
+
+nominal skaliert (ordinal
+codiert),
+nominal und/oder metrisch 
+skaliert.
+
+Anwendungsbeispiele:
+Wie groß ist die Wahrscheinlichkeit, dass Alkoholiker einen Tag lang 
+keinen Alkohol trinken? 
+
+Soll ich?
+
+Soll ich nicht?
+
+Geld
+
+Physis
+
+Durst
+
+Mentale 
+Stärke
+
+Anwendungsbeispiele:
+Welche Einflussgrößen bestimmen die Noten der Statistikklausur? 
+
+Mentale 
+Stärke
+
+Schlafmangel
+
+Der 
+
+Computer
+
+Begabung
+
+Drogen-
+konsum
+
+Fleiß
+
+Latente Variable ‚Z‘ (Logitvariable)
+
+• nicht empirisch beobachet,
+• aggregierte beeinflussende Variable,
+• erzeugt binäre Ausprägung der abhängigen Variablen Y in 
+
+Abhängigkeit der unabhängigen Variablen Xj
+
+0:, j:  Logitkoeffizienten
+uk: 
+zk:
+
+Störgröße
+Logits
+
+0,00,1kkkzfallszfallsyJjkjkjkuxz10Logistische Wahrscheinlichkeitsfunktion
+
+…stellt eine Wahrscheinlichkeitsbeziehung her zwischen dem 
+Ereignis y=1 und den unabhängigen Variablen Xj
+
+pk(y=1): 
+
+Wahrscheinlichkeit, dass 
+für das Objekt k gilt: y=1
+
+kzkeyp11)1(Logistische Wahrscheinlichkeitsfunktion
+
+00,10,20,30,40,50,60,70,80,91-6-5-4-3-2-10123456Wahrscheinlichkeit p(y)=1Ausprägung der z-Werte (Logits)Logistisches Regressionsmodell: Verknüpfungen
+
+unabhängige 
+Variable
+
+Xj
+
+linear
+
+Logit
+
+Z
+
+Odds:
+p(y=1)/p(y=0)
+
+eZ
+
+logistisch
+
+Eintritts-
+wahrscheinlichkeit
+
+p(y=1)
+
+exponentiell
+
+Schätzung des Modells (Logitkoeffizienten): Maximum Likelihood-Methode
+
+Verknüpfung unabhängiger 
+Ereignisse (Multiplikation der 
+Einzelwahrscheinlichkeiten)
+
+Logarithmierung (Vereinfachung)
+
+LogLikelihoodfunktion LL
+
+kkzzkeeyp11111)(kkkkyzyzkeeyp111111)(max!1111111kkkkyzyzKkeeLZuweisung der Objekte zu den Ereignissen
+
+Y = 1
+
+Y = 0
+
+00,10,20,30,40,50,60,70,80,91-6-5-4-3-2-10123456Wahrscheinlichkeit p(y)=1Ausprägung der z-Werte (Logits)Verlauf der logistischen Funktion bei alternativen Parameterschätzungen
+
+z = x
+
+00,10,20,30,40,50,60,70,80,91-6-4-20246Wahrscheinlichkeit P(y=1)Beobachtungswerte (x)Verlauf der logistischen Funktion bei alternativen Parameterschätzungen
+
+z = -3 + x
+
+00,10,20,30,40,50,60,70,80,91-6-4-20246Wahrscheinlichkeit P(y=1)Beobachtungswerte (x)Verlauf der logistischen Funktion bei alternativen Parameterschätzungen
+
+z = 3 + x
+
+00,10,20,30,40,50,60,70,80,91-6-4-20246Wahrscheinlichkeit P(y=1)Beobachtungswerte (x)Verlauf der logistischen Funktion bei alternativen Parameterschätzungen
+
+z = 2x
+
+00,10,20,30,40,50,60,70,80,91-6-4-20246Wahrscheinlichkeit P(y=1)Beobachtungswerte (x)Verlauf der logistischen Funktion bei alternativen Parameterschätzungen
+
+z = 0,5x
+
+00,10,20,30,40,50,60,70,80,91-6-4-20246Wahrscheinlichkeit P(y=1)Beobachtungswerte (x)Verlauf der logistischen Funktion bei alternativen Parameterschätzungen
+
+z = -x
+
+00,10,20,30,40,50,60,70,80,91-6-4-20246Wahrscheinlichkeit P(y=1)Beobachtungswerte (x)Odds (Chancenverhältnisse) zur Erleichterung der Interpretation
+= Verhältnis der Eintrittswahrscheinlichkeit zur Gegenwahrscheinlichkeit
+
+Wertebereich: 1 bis ∞
+
+ln(Odds) = Logit = Z
+
+Wertebereich: - ∞ bis ∞
+
+zeypypyOdds)1(1)1()1(Prüfung des Gesamtmodells (Gütemaße)
+
+• Auf der Basis der LogLikelihood-Funktion
+
+• Pseudo R-Quadrat-Statistiken
+
+• Beurteilung der Klassifizierungsergebnisse
+
+Chi-Quadrat-Verteilung
+mit n Freiheitsgraden (d.f.) beschreibt die Verteilung der Summe n unabhängiger 
+quadrierter standardnormalverteilter Zufallsvariablen
+
+Quelle: wirtschaftslexikon24.com
+
+Prüfung des Gesamtmodells: -2LogLikelihood-Wert (-2LL oder Devianz)
+
+-2LL ist annähernd chi-quadrat-verteilt.
+
+H0: Das Modell besitzt eine perfekte Anpassung
+H1: Das Modell besitzt keine perfekte Anpassung
+
+-2LL < theor. Chi-quadrat-Wert bedeutet: 
+• H0 kann nicht abgelehnt werden,
+• das Modell besitzt eine gute Anpassung. 
+
+Nachteil von -2LL:  Abhängigkeit von den Gruppengrößen/der Schiefe der 
+
+Verteilung der Beobachtungen auf die Kategorien
+
+Prüfung des Gesamtmodells: Likelihood Ratio-Test
+
+Maximierter LL-Wert wird nicht gegen 0 getestet, sondern gegen das 
+Nullmodell (alle Logit-Koeffizienten außer der konstante Term = 0).
+
+H0: Alle Logit-Koeffizienten sind gleich null.
+H1: Alle Logit-Koeffizienten sind ungleich null.
+
+• Testgröße = LL0 - LLv
+
+LL0: LogLikelihood des Nullmodells
+LLv: LogLikelihood des vollständigen Modells
+
+• Vorgehensweise wie bei einem Chi-Quadrat-Test
+
+Prüfung des Gesamtmodells: Pseudo-R-Quadrat-Statistiken
+
+• McFadden-r2
+Ab r2 > 0,3 liegt eine gute Anpassung vor.
+
+• Cox und Snell-r2
+
+• Nagelkerke-r2
+Ab r2 > 0,5 liegt eine gute Anpassung vor.
+
+n: 
+L0: 
+Lv: 
+
+Stichprobenumfang
+Likelihood des Nullmodells
+Likelihood des vollständigen Modells
+
+021LLLLrvnvLLr20212max22rrrnLr202max1Prüfung des Gesamtmodells: Beurteilung der Klassifikationsergebnisse
+
+vorhergesagt
+
+beobachtet
+
+Ereignis tritt nicht ein
+
+Ereignis tritt ein
+
+Prozent richtig
+
+Ereignis tritt nicht ein
+
+Ereignis tritt ein
+
+Prozent insgesamt
+
+10
+
+2
+
+50 %
+
+2
+
+10
+
+50 %
+
+83,3 %
+
+83,3 %
+
+83,3 %
+
+• Bereinigte Trefferquote: Lernstichprobe + Kontrollstichprobe
+• Vergleich mit a priori-Wahrscheinlichkeiten
+
+Prüfung des Gesamtmodells: Beurteilung der Klassifikationsergebnisse
+
+Press‘s Q: 
+• Vorgehensweise wie bei einem einem Chi-Quadrat-Test,
+• H0: Klassifikationsergebnisse sind von einer zufälligen Zuordnung nicht 
+
+verschieden.
+
+n: 
+G: 
+a: 
+
+Stichprobenumfang
+Anzahl der Kategorien
+Anzahl der korrekt klassifizierten Objekte
+
+12GnaGnnQPrüfung der Merkmalsvariablen: Likelihood Ratio-Test
+
+• Vorgehensweise wie bei einem Chi-Quadrat-Test
+• Test des vollständigen Modells gegen jeweils ein reduziertes Modell 
+
+(jeweils ein bj = 0)
+
+• Testgröße = LLR - LLv
+
+LLR: LogLikelihood des reduzierten Modells
+LLv: LogLikelihood des vollständigen Modells
+
+H0: Die Effekte von bj sind null.
+H1: Die Effekte von bj sind ungleich null.
+
+Prüfung der Merkmalsvariablen: Wald-Statistik
+
+• Vorgehensweise wie bei einem Chi-Quadrat-Test
+• Test des vollständigen Modells gegen jeweils ein reduziertes Modell 
+
+(jeweils ein bj = 0)
+
+• Testgröße: W
+
+H0: Die Effekte von bj sind null.
+H1: Die Effekte von bj sind ungleich null.
+
+sbj: Standardfehler von bj
+
+2jbjsbWFallspiel Alkoholismus
+
+Prüfung des gesamten Modells:
+Likelihood Ratio: 
+McFadden
+Cox und Snell
+Nagelkerke
+Press‘s Q
+Prüfung der Merkmalsvariablen:
+
+p = 0,023
+r2 = 0,412
+r2 = 0,462
+r2 = 0,564
+p = 0,004
+
+Merkmalsvariablen
+
+Likelihood Ratio-Test 
+(p-Wert)
+
+Wald-Statistik
+(p-Wert)
+
+Geld
+Durst
+mentale Stärke
+Physis
+
+0,214
+0,021
+0,0001
+0,003
+
+0,245
+0,034
+0,0012
+0,004
+
+?
+
+Soll ich?Soll ich nicht?DurstGeldMentale StärkePhysis

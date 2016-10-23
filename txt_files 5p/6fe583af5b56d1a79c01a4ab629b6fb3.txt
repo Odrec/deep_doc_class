@@ -1,0 +1,1152 @@
+Recap: Sinusoids
+
+• Example: sin(x)
+
+Amplitude
+
+1 Cycle
+
+0˚
+
+90˚
+
+180˚ 270˚
+
+360˚
+
+Phase
+In radians (0-2π)
+
+or degrees (0˚-360˚)
+
+Amplitude of a sinusoid
+
+• Example: sin(x) vs. 2*sin(x)
+
+Phase of sin(x)
+
+0˚(360˚)
+
+0(2π)
+
+270˚
+1.5π
+
+90˚
+0.5π
+
+180˚
+
+π
+
+-1
+
+0
+
+1
+
+Amplitude
+
+sin(x)
+
+Reminder: circumference of a unit circle = 2π = 360˚
+
+Phase of sin(x)
+
+0˚(360˚)
+
+0(2π)
+
+270˚
+1.5π
+
+90˚
+0.5π
+
+180˚
+
+π
+
+-1
+
+0
+
+1
+
+Amplitude
+
+sin(x)
+
+Reminder: circumference of a unit circle = 2π = 360˚
+
+Phase of sin(x)
+
+0˚(360˚)
+
+0(2π)
+
+270˚
+1.5π
+
+90˚
+0.5π
+
+180˚
+
+π
+
+-1
+
+0
+
+1
+
+Amplitude
+
+sin(x)
+
+Reminder: circumference of a unit circle = 2π = 360˚
+
+Phase of sin(x)
+
+0˚(360˚)
+
+0(2π)
+
+270˚
+1.5π
+
+90˚
+0.5π
+
+180˚
+
+π
+
+-1
+
+0
+
+1
+
+Amplitude
+
+sin(x)
+
+Reminder: circumference of a unit circle = 2π = 360˚
+
+Phase of sin(x)
+
+0˚(360˚)
+
+0(2π)
+
+270˚
+1.5π
+
+90˚
+0.5π
+
+180˚
+
+π
+
+-1
+
+0
+
+1
+
+Amplitude
+
+sin(x)
+
+Reminder: circumference of a unit circle = 2π = 360˚
+
+Phase of cos(x)
+
+Amplitude
+
+cos(x)
+
+0˚(360˚)
+
+0(2π)
+
+ 1
+
+0
+
+-1
+
+270˚
+1.5π
+
+90˚
+0.5π
+
+180˚
+
+π
+
+-1
+
+0
+
+1
+
+Amplitude
+
+sin(x)
+
+cos(x) = sin(x+0.5π)
+
+Phase of cos(x)
+
+Amplitude
+
+cos(x)
+
+0˚(360˚)
+
+0(2π)
+
+ 1
+
+0
+
+-1
+
+270˚
+1.5π
+
+90˚
+0.5π
+
+180˚
+
+π
+
+-1
+
+0
+
+1
+
+Amplitude
+
+sin(x)
+
+cos(x) = sin(x+0.5π)
+
+Phase of cos(x)
+
+Amplitude
+
+cos(x)
+
+0˚(360˚)
+
+0(2π)
+
+ 1
+
+0
+
+-1
+
+270˚
+1.5π
+
+90˚
+0.5π
+
+180˚
+
+π
+
+-1
+
+0
+
+1
+
+Amplitude
+
+sin(x)
+
+cos(x) = sin(x+0.5π)
+
+Phase of cos(x)
+
+Amplitude
+
+cos(x)
+
+0˚(360˚)
+
+0(2π)
+
+ 1
+
+0
+
+-1
+
+270˚
+1.5π
+
+90˚
+0.5π
+
+180˚
+
+π
+
+-1
+
+0
+
+1
+
+Amplitude
+
+sin(x)
+
+cos(x) = sin(x+0.5π)
+
+ Phase relationships
+
+• Signals in phase sum up:
+
+Signal 1
+
+Signal 2
+
+Signal 1 + Signal 2
+
+• Signals in counter phase
+
+(i.e. phase difference =
+π) cancel each other out:
+
+Signal 1
+
+Signal 2
+
+Signal 1 + Signal 2
+
+Relating sin(x) to time (t)
+
+• Example: to get one cycle per time unit (e.g.
+seconds) we have to multiply our time units
+with 2π
+
+sin(t) vs. sin(2π*t)
+
+1 cycle per time unit
+
+1 cycle per 2π
+
+Frequency
+
+• What if we want to have more(less) cycles per time
+
+unit t? We just multiply 2π*t with the desired
+frequency f:
+
+e.g. 3 cylces per time unit = 2π*3*t
+
+3 cycles
+
+General form of a sinusoid
+
+f(t) = A*sin(ω*t+ϕ)
+
+Amplitude
+
+2π*Frequency
+
+Phase
+(in radians)
+
+Frequency analysis
+
+• How similar/different are these signals?
+
+The Fourier transform
+
+Outline Fourier Transform
+
+• The Discrete Fourier Transform (DFT) decomposes
+
+a signal consisting of N samples into N sine and N
+cosine functions
+
+• The first sine and cosine have frequency k = 0, the
+
+second have k = 1, the third k = 2 … k = N-1
+
+• From these sine-cosine pairs we can determine the
+amplitude and the phase with which the frequencies
+k (k = 0,1,2,3,…N-1) are present in the signal
+
+• However, as we will see next time, we only can
+
+analyze the frequencies in the range from k=0 to
+k=N/2
+
+Note: For reasons
+discussed later, only
+the sine-cosine pairs
+with frequencies
+between k=0 and
+k=N/2 are shown in
+this example
+
+Signals and Frequency Spectra
+
+If we feed a signal with N data points (here N=100)
+into the Discrete Fourier Transform we obtain a
+spectrum containing N frequency points (here only the
+first 21 - ranging from 0 to 20 - are shown)
+
+DFT
+
+Signal 
+
+Spectrum 
+As we can see from the spectrum, our signal consists of a
+sinusoid with frequency 3 and amplitude 3 (note that the value in
+the spectrum is 150! We will see soon why that is)
+
+…N
+
+Signals and Frequency Spectra
+
+In this example we see that our signal consists of two sinusoids
+with the frequencies 3 and 5 and the amplitudes 3 and 2,
+respectively (again: we will see soon how we convert the
+amplitude values of the DFT  to the actual amplitude values of
+the signal)
+
+DFT
+
+Signal 
+
+…N
+
+Spectrum 
+
+The idea behind the Fourier
+
+Transform
+
+• How can we determine how strong a
+
+certain frequency is contained in a
+signal?
+
+• Example: sine wave
+
+– Amplitude (A) = 3
+
+– Frequency (k) = 3Hz
+– Phase (ϕ) = 0
+
+A first approach:
+
+• Multiply the original signal with a
+
+suitable ‘basis function’…
+
+A first approach:
+
+• …in this case a sine function with the
+
+frequency of interest (here 3 Hz) …
+
+A first approach:
+
+• …in this case a sine function with the
+
+frequency of interest (here 3 Hz) …
+
+A first approach:
+
+• …and sum the resulting data points:
+
+(cid:5)
+
+(cid:5)f(n) = 150
+
+A first approach:
+
+• This is also the value we would obtain using
+
+the Fourier transform
+
+• However, to get the actual amplitude of the
+
+signal we have to divide the value by the
+number of data points (N)
+
+• …and subsequently multiply it by 2 (because
+
+the average of the function we obtained by
+multiplying the signal with the ‘basis function’
+is only half of the signals amplitude)
+
+• Most signal processing tools, perform this
+
+“correction” (2*sum/N) by default.
+
+A first approach:
+
+• Amplitude conversion:
+
+(cid:5)
+
+(cid:5)f(n) = 150
+
+N = 100
+
+Conversion:
+2*150/N = 3
+
+The problem:
+
+• If the signal is phase shifted with
+
+respect to the basis function…
+
+The problem:
+
+• …multiplication leads to reduced
+
+values or even cancellation:
+
+The problem:
+
+• …multiplication leads to reduced
+
+values or even cancellation:
+
+(cid:5)
+
+(cid:5)f(n) = 0
+
+The solution:
+
+• Any function of the form
+
+  f(x)=A*sin(ωx+ϕ)
+
+with A = amplitude,
+ω=2π*frequency
+and ϕ=phase
+can be rewritten as a…
+
+The solution:
+
+• … difference of a sine and a cosine,
+
+which are weighted by their respective
+amplitudes a and b:
+
+ f(x)=A*sin(ωx+ϕ) = a*cos(ωx) - b*sin(ωx)
+
+The solution:
+
+• Thus we can circumvent the ‘phase problem’
+
+in our original function f(x) by separately
+multiplying it with two basis functions, a
+cosine and a sine function:
+• contribution of the cosine basis function to function f(x):
+
+a = (cid:5)(cid:4)(x)*cos(ωx)
+
+• contribution of the sine basis function to function f(x):
+
+b = (cid:5)(cid:4)(x)*sin(ωx)
+
+Amplitude:
+
+• Since cos(x) and sin(x) are orthogonal to each other, the overall
+
+amplitude A of our frequency in the signal can be calculated
+with the Pythagorean theorem (a2+b2 = A2):
+
+sin(x)
+
+b
+
+A = (cid:6)(cid:1)a2+b2)
+
+a
+
+cos(x)
+
+Phase:
+
+• Similarly, the phase ϕ can be computed as the angle given by
+
+the inverse tangent of b/a:
+
+sin(x)
+
+b
+
+ϕ = tan-1(b/a)
+
+a
+
+cos(x)
+
+Putting it all together:
+
+• We wanted to know how strong (i.e. with what
+
+amplitude) frequency k is contained in signal f(x).
+Therefore we multiplied f(x) with a sine and a cosine
+basis function that both had frequency k. The same
+principle is used for the Discrete Fourier Transform
+F(k) which can be written as:
+
+  F(k) = (cid:5)(cid:4)(n)*[cos(2*π*n*k/N) - i*sin(2*π*n*k/N)]
+
+N-1
+
+n=0
+
+Putting it all together:
+
+Interpreting the equation (ignore the i for the moment):
+
+N-1
+
+  F(k) = (cid:5)f(n)*[cos(2*π*n*k/N) - i*sin(2*π*n*k/N)]
+
+n=0
+
+Putting it all together:
+
+Interpreting the equation (ignore the i for the moment):
+
+N-1
+
+  F(k) = (cid:5)f(n)*[cos(2*π*n*k/N) - i*sin(2*π*n*k/N)]
+
+n=0
+
+To obtain the amplitude of frequency k in our signal
+
+Putting it all together:
+
+Interpreting the equation (ignore the i for the moment):
+
+N-1
+
+  F(k) = (cid:5)f(n)*[cos(2*π*n*k/N) - i*sin(2*π*n*k/N)]
+
+n=0
+
+To obtain the amplitude of frequency k in our signal
+
+the value of every sample n in the signal is multiplied
+
+Putting it all together:
+
+Interpreting the equation (ignore the i for the moment):
+
+N-1
+
+  F(k) = (cid:5)f(n)*[cos(2*π*n*k/N) - i*sin(2*π*n*k/N)]
+
+n=0
+
+To obtain the amplitude of frequency k in our signal
+
+the value of every sample n in the signal is multiplied
+
+with the corresponding value of a cosine and a sine basis
+function both having frequency k
+
+Putting it all together:
+
+Interpreting the equation (ignore the i for the moment):
+
+N-1
+
+  F(k) = (cid:5)f(n)*[cos(2*π*n*k/N) - i*sin(2*π*n*k/N)]
+
+n=0
+
+To obtain the amplitude of frequency k in our signal
+
+the value of every sample n in the signal is multiplied
+
+with the corresponding value of a cosine and a sine basis
+function both having frequency k
+
+Finally the values obtained for all samples n (n=0,1,2,…N-1) are summed up
+
+Putting it all together:
+
+• For every frequency k (remember that we have as
+
+many frequencies as samples and therefore
+k=n=0,1,2,3…N) the output of the Fourier transform
+F(k) contains two values: the amplitudes of the
+cosine (called the ‘real part’ of the Fourier transform)
+and the sine function (called the ‘imaginary part’ of
+the Fourier transform) at frequency k.
+
+• Note: The values for both, the real and the imaginary
+
+part, are contained in ONE number, a so-called
+complex number.
+
+Complex numbers
+
+• What does the i in the Fourier equation stand for?
+•
+•
+• A ‘real number’ + an ‘imaginary number’ result in a ‘complex
+
+i = (cid:6)(cid:3)1
+i multiplied with another number results in an ‘imaginary number’
+
+number’ Z
+Z = a + bi
+
+• where a = real part
+• and bi = imaginary part
+• Complex/imaginary numbers are nothing but a ‘mathematical
+
+trick’ that is introduced for convenience
+
+• Thus, the Fourier output F(k) for any given k is a complex number
+
+of the form F(k) = a + bi (i.e. something like: F(3) = 13 + i4.8)
+
+Complex numbers and polar
+
+• As we have seen before,
+
+from Z = a + bi we can
+obtain amplitude A and
+phase ϕ by ‘plotting’ the
+real part on the x-axis
+and the imaginary part
+on the y-axis.
+a = real part
+bi = imaginary part
+
+•
+•
+• Amplitude
+
+A = (cid:6)(cid:1)a2 + b2)
+
+• Phase
+
+ϕ = tan-1(b/a)
+
+notation
+
+ℑ
+
+A
+
+b
+
+ϕ
+
+a
+
+ℜ
+
+A  sin(ωx + ϕ)  =  a cos(ωx) -  b sin(ωx)
+
+The general form of the
+
+Fourier equation
+
+According to Euler’s formula
+
+eix = cos(x) + isin(x)
+
+and accordingly
+
+e-ix = cos(x) - isin(x)
+
+Thus, we can rewrite the Fourier equation as
+
+↑   ↑
+
+coefficients   basis functions
+
+The Fourier Transform  of
+
+continuous functions
+
+• Just for the sake of completeness: Of
+course the Fourier Transform can also
+be applied to continuous functions. In
+this case the sum operator ((cid:5)(cid:2) is
+replaced by an integral ((cid:7)(cid:2)
+
+↑   ↑
+
+coefficients   basis functions
+
+Time and Frequency Domains
+
+Time domain signals are noted in lower case and frequency
+domain signals in upper case letters.
+Of course we can reconstruct the time domain signal from the
+frequency domain information using Inverse Fourier Transform
+
+Inverse Fourier Transform
+
+continuous
+
+discrete
+
+↑   ↑
+
+coefficients   basis functions
+
+Example1: Signal being analyzed
+(signal length T = 1s; number of
+
+samples N = 100)
+
+• Signal
+
+Example1: Frequency spectrum
+
+Amplitude vs. Magnitude
+
+• The magnitude is
+
+the absolute
+value of the
+amplitude
+
+• The spectrum
+
+gives the
+magnitude (red)
+rather than the
+amplitude (blue)
+of the frequency
+
+Magnitude vs. Power
+
+Power
+
+• Power is the squared amplitude(or magnitude) and
+
+helps highlighting small magnitude differences.
+
+•
+
+If power differences between low and high
+frequencies become too big (1/f-characteristic of
+natural signals) a log-scale (dB) can be used to only
+highlight differences between neighboring
+frequencies
+
+DC-offset
+
+• The amplitude at frequency 0 holds the DC-offset of the signal (NOTE:
+Amplitude conversion 2*sum/N does not apply at frequency 0. Instead:
+sum/N)
+
+DC-offset = 1
+
+DC-offset
+
+• Why the offset is obtained at F(0) can
+
+be seen from the DFT equation:
+
+For k=0 the term holding the basis
+functions becomes e0 = 1 and thus
+drops out of the equation.
+
+↑   ↑
+
+coefficients   basis functions
+
+This leaves us with the sum of all values x in our signal. Divided
+by the number of sample points N we obtain the average value of
+the signal, i.e. the value around which the signal fluctuates: the
+DC-offset.
+
+The frequency spectrum is mirror
+
+symmetric (even symmetry)
+
+The magnitudes have even symmetry with regard to the N/2+1 sample
+point. The same is true for the first sample point (frequency 0).
+Therefore all information beyond these points is redundant. This also
+explains some issues we encountered in the context of A/D conversion.
+
+Remember Aliasing?
+
+How can Aliasing be avoided?
+
+• Any frequency higher than fs/2 (fs =
+
+sampling frequency) would „mirror“ in
+the lower half of the spectrum
+
+NYQUIST FREQUENCY:
+
+• The sampling rate (fs) has to be at
+least twice as high as the highest
+frequency that is present in the signal!
+
+• Nyquist Frequency (fnyquist ) = 0.5*fs
+• We only can analyse frequencies <=
+
+fnyquist
+
+• In practice an even higher fs is used
+
+(e.g. “Engineers Nyquist“ = 2/5*fs)
+
+Analog Low-Pass Filters
+
+• For the same reason all frequency
+components in the original (analog)
+signal that are bigger than fs/2 have to
+be removed BEFORE A/D conversion
+
+• Otherwise they would be present in the
+
+digital signal although they cannot be
+resolved
+
+The EEG System
+
+Example1: Phase spectrum
+
+The phases of the signal can be read from the respective
+frequency samples F(5) and F(14) in the phase spectrum. Values
+in the phase spectrum that have no amplitude in their respective
+frequency spectrum are meaningless in and can be thought of
+being 0.
+
+The phase spectrum is point symmetric
+
+(odd symmetry)
+
+Note that the phase spectrum is mirror symmetric around the
+N/2+1 sample point (green dot). Therefore, similar to the
+amplitude spectrum, all information above the Nyquist Frequency
+is redundant.
+
+Example1: Summary
+
+fnyquist
+
+From the first half of the spectrum we see that our example signal
+consists of two sinusoids with frequencies 5 and 14 and amplitudes 3
+and 1, respectively.  From F(0) we can see that the signal has a DC-
+offset of 1. As we saw from the phase spectrum, F(5) has phase π and
+F(14) phase 0.75* π .
+
+Example2: Same signal recorded 2 seconds
+
+(signal length T = 2s; number of samples
+
+N = 100)
+
+• Signal
+
+Example2: Frequency spectrum
+
+When recorded twice as long but with the same number of
+samples, the spectrum holds values at F(10) and F(28)
+instead of F(5) and F(14).
+
+Frequency resolution (fs), recording
+time (T) and number of samples (N)
+
+•
+
+fs in Hz is given by the number of samples per second (fs = N/T)
+
+• The highest frequency that can be resolved is given by the
+
+nyquist frequency (0.5*fs)
+
+• The frequency resolution (interval between frequency samples
+in the spectrum) in Hz is given by 1/T. This is because the DFT
+can only resolve frequencies that have an integer number of
+cycles during the recorded time. In one second recording time
+the lowest frequency that can be resolved is 1Hz (one full cycle
+in T=1). In two seconds the lowest frequency that can be
+resolved is 0.5 Hz (one full cycle in T=2).
+
+Example2: Frequency spectrum
+
+Here T=2 and thus the unit of frequency samples is 0.5 Hz,
+(i.e. F(1) = 0.5Hz, F(2)=1Hz, F(3)=1.5Hz…etc) Furthermore
+fs is given by N/T = 100/2 = 50Hz, and thus the signal can be
+analyzed up to F(50)= fnyquist = 25Hz.
+
+Exercises:
+
+• We record 0.5 seconds of a signal. We have
+a total number of 250 sampling points. What
+is the lowest and what the highest frequency
+we can resolve?
+
+• We want to analyze frequencies up to 100
+Hz. What minimum sampling frequency do
+we have to choose? If we obtain 600 sample
+points at that frequency, how long (in
+seconds) is our signal? What frequency in Hz
+is represented at the fourth frequency
+sample?
+
+Another problem...
+
+• What happens if the signal contains
+
+components that do not match the
+frequency of our basis functions?
+
+• Example:
+
+– Frequency resolution = 1 Hz
+
+– Signal components = 3 Hz + 7.5 Hz
+
+Leakage
+
+• The energy of the 7.5 Hz component
+
+„leaks“ into the neighboring frequencies
+
+The Continuous  Spectrum
+
+and Leakage
+
+The Continuous  Spectrum
+
+and Leakage
+
+One possible Solution?
+
+• Frequency resolution = 1/T (where T
+
+denotes the recorded time)
+
+• If we record twice as long we have
+
+enough frequency points in the
+spectrum to hold the 7.5 Hz component
+
+Zero Padding
+
+Zero Padding
+
+• With zero padding it is easier to see where the real
+
+peak of a sinusoid is located because it gives a
+„smoother“ picture of the spectrum
+
+• NOTE: This is just helpful for visualising peak
+
+locations but does not improve the leakage problem,
+especially if you want to estimate other frequencies
+located near by, because the overlapping side lobes
+add up and cannot be disentangled from the „true“
+power at the respective frequency
+
+The Problem
+
+• Natural signals (and thus EEG-signals)
+
+contain infinite many frequencies
+
+• To represent them all accurately we
+
+would have to record infinitely long
+
+• Another solution can be found if we
+
+look at leakage from a different
+perspective
+
+Jean Baptiste Joseph Fourier (1768 - 1830)
+
+Any periodic function can
+be rewritten as a weighted
+sum of sines and cosines
+of different frequencies.
+
+Periodic Functions
+If there is some a, for a function f(x), such that
+
+           f(x) = f(x + na)
+
+then function is periodic with the period a
+
+a
+
+2a
+
+3a
+
+0
+
+How can we use DFT for
+
+non-periodic signals?
+
+We just concatenate our
+signal!
+
+Another Way to Look at
+
+Leakage
+
+Another Way to Look at
+
+Leakage
+
+By concatenating
+signals with an
+offset we add a
+component that was
+not in the signal
+before
+
+Windowing
+
+• By multiplying with a window we can
+
+„force“ the signal into smooth transition
+when concatenated
+
+X
+
+=
+
+Windowing
+
+Windowing
+
+Windowing
+
+Windowing
+
+

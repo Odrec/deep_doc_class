@@ -1,0 +1,306 @@
+1
+
+Fachgebiet 
+Management
+Support und
+Wirtschaftsinformatik
+
+Management Support Systems III
+
+Artificial Intelligence
+
+WS 2014/2015
+
+Übung 13
+
+„Künstliche Intelligenz-Praktikum“
+
+Zwischentreffen III
+
+Gliederung der Veranstaltung
+
+2
+
+Vorlesung
+
+Übung
+
+Tool
+
+Beispiel
+
+Aufgabe
+
+Datum
+
+Wissensbasierte Systeme 
+
+Wissensbasierte Systeme 
+
+d3web / KnowWE
+
+Postbeispiel
+
+Postbeispiel
+
+15.10.2014 (SW1)
+
+Wissensrepräsentation
+
+Wissensrepräsentation
+in Ontologien
+
+Protégé (OWL)
+
+Pizzabeispiel
+
+Inferenzkomponente 
+
+Regelbasiertes Schließen
+
+Stift & Papier
+
+Postbeispiel
+
+Regelbasiertes Schließen
+mit d3web
+
+d3web / KnowWE
+
+Postbeispiel
+
+Ratgeber Reiseziel
+(OSTravel)
+Ratgeber Autotyp
+(OSCar)
+Ratgeber Autotyp
+(OSCar)
+
+22.10.2014 (SW2)
+
+29.10.2014 (SW3)
+
+05.11.2014 (SW4)
+
+Klassifikation / Diagnostik 
+
+Knowledge Engineering / 
+Wissensakquisition
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+Wissensakquisition
+
+WebGrid 5
+
+Autobeispiel
+
+Restaurantbeispiel
+
+12.11.2014 (SW5)
+
+Fallbasiertes Schließen
+
+Fallbasiertes Schließen
+
+myCBR
+
+Autovergleich
+
+Hauskauf 
+
+Künstliche Neuronale Netze
+
+Künstliche Neuronale Netze RapidMiner
+
+Autoklassifizierer
+
+Autopreisschätzer
+
+Data Mining
+
+Data Mining
+
+Wetterbeispiel
+
+Wetterbeispiel
+
+19.11.2014 (SW6)
+
+26.11.2014 (SW7)
+
+03.12.2014 (SW8)
+
+Text Mining
+
+9
+10 Gastvortrag Deloitte
+
+Montag, 15.12.2014, 10 Uhr
+
+Text Mining
+Künstliche Intelligenz-
+Praktikum Auftakttreffen
+
+Forschungsdatenbank Austauschmöglichkeiten
+
+10.12.2014 (SW9)
+
+Text Mining Projekt
+
+17.12.2014 (SW10)
+
+W e i h n a c h t s p a u s e
+
+11 Wissensmanagement
+
+12
+
+13
+
+14
+
+KI-Praktikum
+Zwischentreffen II
+
+KI-Praktikum
+
+KI-Praktikum Präsentation
+
+KI-Praktikum     (+Evaluation)
+Zwischentreffen I
+Gastvortrag RapidMiner
+Mittwoch, 14.01.2015, 11 Uhr
+KI-Praktikum
+Zwischentreffen III
+
+RapidMiner
+
+Text Mining Projekt
+
+14.01.2015 (SW12)
+
+07.01.2015 (SW11)
+
+21.01.2015 (SW13)
+
+28.01.2015 (SW14)
+
+RapidMiner
+
+RapidMiner
+
+RapidMiner
+
+KI-Praktikum
+
+Ablaufplan
+
+3
+
+Auftakttreffen
+ Bildung von Gruppen
+ Formulierung eines Projektziels sowie 
+gemeinsames Feedback & Diskussion
+
+ Bereitstellung der Daten
+ [Business Understanding] abgeschlossen
+
+2014 2015
+
+Zwischentreffen 2
+ [Data Understanding] abgeschlossen
+ [Data Preparation] in Bearbeitung
+ [Modeling] in Bearbeitung
+
+Zwischentreffen 3
+ [Data Preparation] abgeschlossen
+ [Modeling] in Bearbeitung/fertig
+ [Evaluation] in Bearbeitung
+
+17. Dezember 2014 
+
+07. Januar 2015 
+
+14. Januar 2015 
+
+21. Januar 2015 
+
+28. Januar 2015 
+
+Zwischentreffen 1
+ [Data Understanding] in Bearbeitung
+ Diskussion der ersten Ergebnisse
+
+Abschlusstreffen
+ Ca. 3-6 Seiten Dokumentation (am CRISP-DM 
+
+orientiert) je Gruppenmitglied
+
+ Ca. 10 Min. Präsentation je Gruppenmitglied
+
+KI-Praktikum
+
+Abgabe Dokumentation
+
+4
+
+ Deadline: Mi., 28. Januar 2015, 10:00 Uhr
+
+ Dokumentation
+
+ Inhalt: Plan, Methodenauswahl, Vorgehensweise, Ergebnisse, etc.
+ Strukturiert nach dem CRISP-DM
+ Formatvorlage muss genutzt werden
+ Höchstens zweite Gliederungsebene
+ Jegliche Dateien vom Prototyp bitte ebenfalls anhängen
+ ca. 3-6 Seiten pro Gruppenmitglied
+ Abgabe als DOC und PDF
+
+KI-Praktikum
+
+Abschlusspräsentation
+
+5
+
+ Termin: Mi., 28. Januar 2015, 10:00 bis ca. 14:00 Uhr
+
+ Präsentation
+
+ Vorstellung der Vorgehensweise & Ergebnisse (ggf. Prototyp)
+ Aufbau nach dem CRISP-DM
+ 20-30 Minuten pro Gruppe
+ Jeder muss vortragen
+ Im Anschluss jeweils 10 Minuten Diskussion
+
+KI-Praktikum WS14/15
+
+6
+
+Noch Fragen?
+
+Gesamte Veranstaltung MSS3
+
+7
+
+Noch Fragen?
+
+KI-Praktikum WS14/15
+
+8
+
+

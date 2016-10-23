@@ -1,0 +1,282 @@
+ 
+
+Wintersemester 2014/2015
+
+Übungen zu
+
+ Elemente der diskreten Mathematik
+
+Blatt 6  Lösungen
+
+Prof. Dr. Heinz Spindler 
+
+Abgabe bis Montag, den 24.11. 2014, 12.00 Uhr 
+
+ 
+
+(cid:1) Aufgabe 1
+Für welche paarweise verschiedenene Ecken a, b, c des Graphen G (cid:1) (cid:2)E, K(cid:3)  gilt die 
+Gleichung d(cid:2)a, c(cid:3) (cid:1) d(cid:2)a, b(cid:3)(cid:4) d(cid:2)b, c(cid:3)?
+a) G (cid:1) C2 n (cid:1) (cid:2)(cid:5) p1,
+..., p2 n(cid:6), (cid:5) p1 (cid:7) p2,
+b) G (cid:1) Q3.
+c) G (cid:1) Pn
+
+..., p2 n(cid:8)1 (cid:7) p2 n, p2 n (cid:7) p1(cid:6)(cid:3) 
+
+Lösung
+
+a) Der Kreis wird durch zwei Ecken a, c in zwei Bögen der Längen k und m mit 
+k (cid:4) m (cid:1) 2 n geteilt. Ist k (cid:1) m, so ist d(cid:2)a, c(cid:3) (cid:1) d(cid:2)a, b(cid:3)(cid:4) d(cid:2)b, c(cid:3) für alle b. Ist k (cid:9) m, so 
+ist d(cid:2)a, c(cid:3) (cid:1) d(cid:2)a, b(cid:3)(cid:4) d(cid:2)b, c(cid:3) genau dann, wenn b auf dem kürzeren Bogen liegt. 
+b) Die Metrik hat die folgende Form d(cid:2)x, y(cid:3) (cid:1) (cid:10)i(cid:1)1
+d(cid:2)x, z(cid:3) (cid:1) d(cid:2)x, y(cid:3)(cid:4) d(cid:2)y, z(cid:3) genau dann, wenn (cid:11)xi (cid:8) zi(cid:12) (cid:1) (cid:11)xi (cid:8) yi(cid:12)(cid:4)(cid:11)yi (cid:8) zi(cid:12) für i (cid:1) 1, 2, 3 
+
+(cid:11)xi (cid:8) yi(cid:12) : Es gilt also 
+
+3
+
+2
+
+Übungen zur diskreten Mathematik
+
+(cid:3)(cid:4) (cid:2)
+
+(cid:3)
+
+(cid:3) (cid:1) (cid:2)
+
+i (cid:8) i(cid:12) (cid:1) (cid:11) i (cid:8) i(cid:12)(cid:4)(cid:11)
+
+(cid:11)
+(cid:2)
+gilt und das ist genau denn der Fall, wenn yi zwischen xi und zi liegt, wenn also 
+xi (cid:13) yi (cid:13) zi oder  zi (cid:13) yi (cid:13) xi für i (cid:1) 1, 2, 3 gilt. 
+c) d (cid:2)a, c(cid:3) (cid:1) d (cid:2)a, b(cid:3)(cid:4) d (cid:2)b, c(cid:3) gilt genau dann, wenn b zwischen a und c liegt. 
+(cid:1) Aufgabe 2
+
+i (cid:8) i(cid:12)
+
+a) Wie viele zu Q3 isomorphe Teilgraphen hat der vierdimensionale Hyperwürfel Q4?
+
+b) Zeige: Qn ist bipartit. 
+
+Lösung
+
+a) Die Abbildungen (cid:14)i(cid:15) :(cid:5)0, 1(cid:6)3(cid:16)(cid:5)0, 1(cid:6)4 mit (cid:14)i(cid:15)(cid:2)x(cid:3) (cid:1) (cid:2)x1,
+isomorph auf den Würfel Qi(cid:15) (cid:1) x (cid:18) (cid:5)0, 1(cid:6)4 xi (cid:1) (cid:15) (cid:20) Q4 ab! Damit hat man acht 
+Teilwürfel im Hyperwürfel Q4 . 
+
+..., x3(cid:3) bildet Q3 
+
+..., (cid:15), xi,
+
+Behauptung: Mehr gibt es nicht.
+Beweis. Es sei (cid:14) :(cid:5)0, 1(cid:6)3(cid:16)(cid:5)0, 1(cid:6)4 ein Isomorphismus auf einen Teilgraphen G von 
+Q4. Wir zeigen, dass G (cid:1) Qi(cid:15) für ein i (cid:1) 1, 2, 3, 4 und ein (cid:15) (cid:1) 0, 1. 
+Es seine a, b, c, d (cid:18) (cid:5)0, 1(cid:6)3, so dass b, c, d die Nachbarpunkte von a sind. Weiter 
+seien e, f , g die Ecken in (cid:5)0, 1(cid:6)3, so dass (cid:2)a, b, c, e(cid:3), (cid:2)a, b, d, g(cid:3), (cid:2)a, c, d, g(cid:3) 
+Quadrate in Q3 sind. Da Kanten in Kanten abgebildet werden, gilt für die Bildpunkte 
+a' (cid:1) (cid:14)(cid:2)a(cid:3), b' (cid:1) (cid:14)(cid:2)b(cid:3), c' (cid:1) (cid:14)(cid:2)c(cid:3), d ' (cid:1) (cid:14)(cid:2)d) auch: b', c', d ' sind Nachbarpunkte von a' in 
+Q4. Der vierte Nachbarpunkt x von a' in Q4 gehört nicht zu G. Es sei ohne 
+Einschränkung
+ a' (cid:1) (cid:2)0, 0, 0, 0(cid:3) und b' (cid:1) (cid:2)1, 0, 0, 0(cid:3), c' (cid:1) (cid:2)0, 1, 0, 0(cid:3), d ' (cid:1) (cid:2)0, 0, 1, 0(cid:3). 
+(Ist das nicht so, so drehe man den Würfel Q4 geeignet!) 
+
+Weiter gilt dann für die Bildpunkte e', f ', g' von e, f , g :
+(*)   (cid:2)a', b', c', e'(cid:3), (cid:2)a', b', d ', g'(cid:3), (cid:2)a', c', d ', g'(cid:3) sind Quadrate in Q4 , also 
+e' (cid:1) (cid:2)1, 1, 0, 0(cid:3), f ' (cid:1) (cid:2)1, 0, 1, 0(cid:3), g' (cid:1) (cid:2)0, 1, 1, 0(cid:3). 
+In dieser Situation ist x (cid:1) (cid:2)0, 0, 0, 1(cid:3) und wir behaupten, dass G (cid:1) Q4
+0 gilt, also die 
+vierten Koordinaten aller Punkte von G gleich Null sind. Wäre das nicht so, so gäbe 
+es einen Punkt y (cid:1) (cid:2)y1, y2, y3, 1(cid:3) in G. Da d(cid:2)p, y(cid:3) (cid:21) 4 für alle  p (cid:18) G, und da 
+(cid:2)0, 0, 0, 0(cid:3) , (cid:2)1, 0, 0, 0(cid:3), (cid:2)0, 1, 0, 0(cid:3), (cid:2)0, 0, 1, 0(cid:3) (cid:18) G, folgt zunächst 
+
+Übungen zur diskreten Mathematik
+
+3
+
+y (cid:9) (cid:2)1, 1, 1, 1(cid:3), (cid:2)0, 1, 1, 1(cid:3), (cid:2)1, 0, 1, 1(cid:3), (cid:2)1, 1, 0, 1(cid:3) und da x (cid:1) (cid:2)0, 0, 0, 1(cid:3) (cid:22) G, 
+bleibt somit nur noch
+ (cid:2)y1, y2, y3(cid:3) (cid:18) (cid:5)(cid:2)1, 0, 0(cid:3), (cid:2)0, 1, 0(cid:3), (cid:2)0, 0, 1(cid:3)(cid:6) . 
+Aber dann ist d(cid:2)y, e'(cid:3) (cid:1) 4, falls y (cid:1) (cid:2)0, 0, 1, 1(cid:3), d(cid:2)y, f '(cid:3) (cid:1) 4, falls y (cid:1) (cid:2)0, 1, 0, 1(cid:3) und 
+d(cid:2)y, g'(cid:3) (cid:1) 4, falls y (cid:1) (cid:2)1, 0, 0, 1(cid:3). Wir haben einen Widerspruch und es folgt also, 
+dass G (cid:1) Q4
+0. 
+Damit ist die Behauptung beweisen.
+Wir haben im Beweis an der Stelle (*) benutzt, dass die die Seitenflächen in Qi(cid:15) (cid:23) Q j∆ 
+die einzigen Quadrate in Q4 sind! )
+b) Es sei E1 (cid:1) (cid:5)x (cid:18) (cid:5)0, 1(cid:6)n d(cid:2)0, x(cid:3) ist gerade(cid:6), E2 (cid:1) (cid:5)x (cid:18) (cid:5)0, 1(cid:6)n d(cid:2)0, x(cid:3) ist ungerade(cid:6). 
+Dann ist x (cid:1) x'(cid:4) z, y (cid:1) y'(cid:4) z , wobei z (cid:1) min(cid:2)x, y(cid:3). x' und y' sind dann 'disjunkt' und 
+es gilt:  d(cid:2)x, y(cid:3) (cid:1) d(cid:2)0, x'(cid:3)(cid:4) d(cid:2)0, y'(cid:3) ist gerade, wenn x, y beide in E1 oder beide in E2 
+liegen. Also ist Qn bipartit. 
+
+(cid:1) Aufgabe 3
+
+a) Bestimme die Matchingzahl von Q3
+b) Wie viele Matchings von E1 (cid:1) (cid:5)(cid:2)0, 0, 0(cid:3), (cid:2)0, 1, 1(cid:3), (cid:2)1, 0, 1(cid:3), (cid:2)1, 1, 0(cid:3)(cid:6) in Q3 gibt 
+es?
+
+c) Bestimme die Matchingzahl von 
+
+4
+
+Übungen zur diskreten Mathematik
+
+Lösung
+
+a) Die Matchingzahl m(cid:2)Q3(cid:3) ist kleiner oder gleich vier, weil Q3 acht Ecken hat. Sie ist 
+gleich 4, weil zum Beipiel M (cid:1) (cid:5)(cid:5)0, a, b(cid:3), (cid:2)1, a, b(cid:3)(cid:6) (cid:2)a, b(cid:3) (cid:18) (cid:5)0, 1(cid:6)2 ein Matching 
+mit (cid:11)M(cid:12) (cid:1) 4 ist. 
+b) Wir setzen 1 (cid:1) (cid:2)0, 0, 0(cid:3), 2 (cid:1) (cid:2)0, 1, 1(cid:3), 3 (cid:1) (cid:2)1, 0, 1(cid:3), 4 (cid:1) (cid:2)1, 1, 0(cid:3) und diagonal 
+dazu 1 (cid:1) (cid:2)1, 1, 1(cid:3), 2 (cid:1) (cid:2)1, 0, 0(cid:3), 3 (cid:1) (cid:2)0, 1, 0(cid:3), 4 (cid:1) (cid:2)0, 0, 1(cid:3). Ein Matching von 
+E1 (cid:1) (cid:5)1, 2, 3, 4(cid:6) in Q3 ist dann eine fixpunktfreie Permutation 
+Π :(cid:5)1, 2, 3, 4(cid:6)(cid:16)(cid:5)1, 2, 3, 4(cid:6), denn (cid:5)i, i(cid:6) ist keine Kante von Q3. 
+Nach der Vorlesung ist (cid:10)k(cid:1)0
+Also gibt es 9 (cid:1) 24(cid:8) 24(cid:4) 12(cid:8) 4(cid:4) 1 Matchings von E1 in Q3. 
+c) Die Matchingzahl kann höchstns 6 sein, da der Ikosaedergraph 12 Ecken hat. Es 
+gitl aber auch m(cid:2)G(cid:3) (cid:1) 6, wie die Graphik zeigt.
+
+k (cid:2)4(cid:8) k(cid:3)(cid:26) die Anzahl dieser Permutationen. 
+
+4
+
+(cid:2)(cid:8)1(cid:3)k 4
+
+Übungen zur diskreten Mathematik
+
+5
+
+1 = (0, 0, 0), 2 = (0, 1, 1), 3 = (1, 0, 1), 4 = (1, 1, 
+0)1 (cid:1) (cid:2)0, 0, 0(cid:3), 2 (cid:1) (cid:2)0, 1, 1(cid:3), 3 (cid:1) (cid:2)1, 0, 1(cid:3), 4 (cid:1) (cid:2)1, 1, 0(cid:3)
+
+(cid:1) Aufgabe 4
+
+a) Sei G ein Graph mit mindestens 2 Ecken. Zeige: Es gibt zwei Ecken vom selben 
+Grad.
+b) Bestimme die Graphen mit n (cid:27) 1 Ecken, die n(cid:8) 1 veschiedene Grade besitzen. 
+c) Konstruiere einen 3-regulären Graphen mit 10 Ecken 
+
+Lösung
+
+..., an seien die Ecken von G. Sei seien so angeordnet, dass 
+
+a) Es sei n (cid:27) 1 und a1,
+0 (cid:13) d(cid:2)a1(cid:3) (cid:13) d(cid:2)a2(cid:3) (cid:13) ... (cid:13) d(cid:2)an(cid:3). Da d(cid:2)an(cid:3) (cid:13) n(cid:8) 1, kann im Fall d(cid:2)a1(cid:3) (cid:28) 1  in der 
+Ungleichungskette nicht an allen Stellen die strikte Ungleichung auftreten. Es gibt 
+also ein i mit d(cid:2)ai(cid:3) (cid:1) d(cid:2)ai(cid:4)1(cid:3). Ist d(cid:2)a1(cid:3) (cid:1) 0, so ist a1 isoliert und somit muss in diesem 
+Fall sogar d(cid:2)an(cid:3) (cid:13) n(cid:8) 2 gelten und wir erhalten wieder ein i mit d(cid:2)ai(cid:3) (cid:1) d(cid:2)ai(cid:4)1(cid:3). (cid:29)
+b) Wir betrachten ohne Einschränkung nur zusammenhängende Graphen.  Wir 
+
+6
+
+Übungen zur diskreten Mathematik
+
+experimentieren zunächst ein wenig.
+
+Ist n (cid:27) 2 und ist der Graph zusammenhängend, so  gilt (cid:10)k(cid:1)1
+1 (cid:13) j (cid:13) n(cid:8) 1 der Grad ist, der doppelt vorkommt. Es gilt also 
+j (cid:1) 2(cid:11)K(cid:12)(cid:8) n(cid:2)n(cid:8)1(cid:3)
+
+, falls 4 n(cid:2)n(cid:8) 1(cid:3)
+ungerade , falls 4 (cid:31) n(cid:2)n(cid:8) 1(cid:3)
+
+2 (cid:1)  gerade
+
+n(cid:8)1 k (cid:4) j (cid:1) 2(cid:11)K(cid:12), wobei 
+
+2 findet man einen zusammenhängenden Graphen mit n Ecken und den 
+
+2 zweimal vorkommt. Die Matrix ai, j mit
+
+Mit  j (cid:1)  n
+Eckengraden 1 bis n(cid:8) 1, wobei der Grad  n
+ ai, j (cid:1) a j,i (cid:1)  1,
+
+falls i (cid:7) j
+sonst
+
+0,
+
+ 
+
+hat die Gestalt 
+
+0 0 0 0 0 0 0 1
+0 0 0 0 0 0 1 1
+0 0 0 0 0 1 1 1
+0 0 0 0 1 1 1 1
+0 0 0 1 0 1 1 1
+0 0 1 1 1 0 1 1
+0 1 1 1 1 1 0 1
+1 1 1 1 1 1 1 0
+
+ im Fall gerader Eckenanzahl (hier n (cid:1) 8) 
+
+ im Fall ungerader Eckenanzahl (hier n (cid:1) 7) 
+
+und 
+
+0 0 0 0 0 0 1
+0 0 0 0 0 1 1
+0 0 0 0 1 1 1
+0 0 0 0 1 1 1
+0 0 1 1 0 1 1
+0 1 1 1 1 0 1
+1 1 1 1 1 1 0
+
+($Adjazenzmatrix)
+Die Graphik zeigt die Graphen mit n Ecken für n (cid:1) 3, 5, 7, 9
+
+Übungen zur diskreten Mathematik
+
+7
+
+Die Graphik zeigt die Graphen mit n Ecken für n (cid:1) 4, 6, 8, 10
+
+Den Beweis, dass es (bis auf Isomorphie) nur einen zusammenhängenden Graphen 
+mit n Ecken und allen Eckengraden von 1 bis n(cid:8) 1 gibt, bleiben wir schuldig? Nee!
+Behauptung: Es gibt bis auf Isomorphie genau einen zusammenhängenden Graphen 
+Gn mit n Ecken und allen Eckengraden 1 bis n(cid:8) 1.
+Wir führen den Beweis durch Induktion nach n. 
+Für n (cid:1) 2 und n (cid:1) 3 ist einfach zu sehen, dass nur die Graphen G2 (cid:1) (cid:5)a (cid:7) b(cid:6) und 
+G3 (cid:1) (cid:5)a (cid:7) b (cid:7) c(cid:6) in Frage kommen. Es sei nun schon gezeigt, dass Gk für k (cid:21) n bis 
+
+8
+
+Übungen zur diskreten Mathematik
+
+k
+
+auf Isomorphie eindeutig bestimmt ist. Es sei jetzt G zusammenhängender Graph mit 
+n Ecken, in dem die Eckenordnungen 1 bis n(cid:8) 1 vorkommen, wobei n (cid:27) 3. a1 sei 
+Ecke der Ordnung 1 und an sei Ecke der Ordnung n(cid:8) 1. Es sei d(cid:2)ai(cid:3) (cid:13) d(cid:2)ai(cid:4)1(cid:3) für alle 
+i.  Wir entfernen an und a1 aus dem Graphen und alle Kanten, die von an ausgehen. 
+Dazu gehört natürlich auch die Kante, die von a1 ausgeht. Man erhält einen Teilgraph 
+G' mit n(cid:8) 2 Ecken a2,
+..., an(cid:8)1, Da die Kanten ai (cid:7) an entfernt worden sind, haben 
+die Ecken ai im Graphen G' die Eckenordnungen d '(cid:2)ai(cid:3) (cid:1) d(cid:2)ai(cid:3)(cid:8) 1 für 
+..., n(cid:8) 1. Die Eckenordnung n(cid:8) 2 kann nicht vorkommen, weil G' nur n(cid:8) 2 
+i (cid:1) 2,
+Ecken besitzt. Auch die Eckenordnung 0 kann nicht vorkommen, weil sonst in G 
+neben a1 auch a2 die Ordnung 1 hätte. Dann hätte der Graph 
+G'' (cid:1) (cid:2)E(cid:8)(cid:5)a1, a2(cid:6), K\(cid:5)a1 (cid:7) an, a2 (cid:7) an(cid:6)(cid:3) eine Kante mit der Ordnung n(cid:8) 2, weil 
+sich ja die Ordnungen d(cid:2)ai(cid:3) für i (cid:1) 3,
+..., n(cid:8) 1 gar nicht geändert haben. Das kann 
+aber nicht sein, weil G'' nur n(cid:8) 2 Ecken besitzt. Damit kommen in G' die Ordnungen 
+1 bis n(cid:8) 3 vor. Nach Induktionsvoraussetzung ist G' bis auf Isomorphie eindeutig 
+bestimmt, und da G aus G' durch Hinzufügen zweier Ecken a1, an und der Kanten 
+ai (cid:7) an für i (cid:1) 1,
+G ist natürlich auch klar! (cid:29)
+c) Das ist wieder einfach!
+Der Petersen Graph ist ein Beispiel ($Blatt 8) 
+
+..., n(cid:8) 1  entsteht, ist auch G eindeutig bestimmt. Die Existenz von 
+
+andere Beispiele 
+
+ 
+
+ 
+
+

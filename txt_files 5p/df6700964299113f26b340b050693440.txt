@@ -1,0 +1,391 @@
+Mobile Informationssysteme
+
+WS 2014/2015
+
+3
+
+3
+
+4. Seminartermin, 06.11.2014:
+
+2
+
+1
+
+App-Programmierung (Fortsetzung)
+
+Johannes Oehrlein / Prof. Dr.-Ing. Jan-Henrik Haunert
+
+Einbindung von OpenStreetMap
+Verwendung von OpenStreetMap-Daten ¨uber die osmdroid-Bibliothek
+
+Einbindung von OpenStreetMap
+Verwendung von OpenStreetMap-Daten ¨uber die osmdroid-Bibliothek
+
+Ben¨otigt werden zwei Pakete:
+
+osmdroid (https://github.com/osmdroid/osmdroid)
+SLF4J (http://www.slf4j.org/android/)
+
+Einbindung von OpenStreetMap
+Verwendung von OpenStreetMap-Daten ¨uber die osmdroid-Bibliothek
+
+Ben¨otigt werden zwei Pakete:
+
+osmdroid (https://github.com/osmdroid/osmdroid)
+SLF4J (http://www.slf4j.org/android/)
+
+osmdroid stellt die ben¨otigten Klassen und Methoden zur Verf¨ugung
+
+Einbindung von OpenStreetMap
+Verwendung von OpenStreetMap-Daten ¨uber die osmdroid-Bibliothek
+
+Ben¨otigt werden zwei Pakete:
+
+osmdroid (https://github.com/osmdroid/osmdroid)
+SLF4J (http://www.slf4j.org/android/)
+
+SLF4J ist ein Logging-Framework und wird von osmdroid ben¨otigt
+
+Struktur von osmdroid
+MapView
+
+Struktur von osmdroid
+MapView
+
+... wird entweder dynamisch oder statisch erzeugt:
+
+dynamisch als org.osmdroid.views.MapView-Objekt:
+MapView mapView
+
+= new MapView(context, tileSizePixels);
+
+statisch:
+<org.osmdroid.views.MapView
+
+android:id="@+id/mapview"
+android:layout width="match parent"
+android:layout height="0dp"
+android:layout gravity="top"
+android:layout weight="1"
+android:clickable="true" >
+
+</org.osmdroid.views.MapView>
+
+Struktur von osmdroid
+MapView
+
+... wird entweder dynamisch oder statisch erzeugt:
+
+dynamisch als org.osmdroid.views.MapView-Objekt:
+MapView mapView
+
+= new MapView(context, tileSizePixels);
+
+statisch:
+<org.osmdroid.views.MapView
+
+android:id="@+id/mapview"
+android:layout width="match parent"
+android:layout height="0dp"
+android:layout gravity="top"
+android:layout weight="1"
+android:clickable="true" >
+
+</org.osmdroid.views.MapView>
+
+Struktur von osmdroid
+MapView
+
+... wird entweder dynamisch oder statisch erzeugt:
+
+dynamisch als org.osmdroid.views.MapView-Objekt:
+MapView mapView
+
+= new MapView(context, tileSizePixels);
+
+statisch:
+<org.osmdroid.views.MapView
+... mit den ¨ublichen Layout-Parametern versehen und einer
+Parent-View zugewiesen bzw. als ContentView gesetzt.
+
+android:id="@+id/mapview"
+android:layout width="match parent"
+android:layout height="0dp"
+android:layout gravity="top"
+android:layout weight="1"
+android:clickable="true" >
+
+</org.osmdroid.views.MapView>
+
+Struktur von osmdroid
+MapView
+
+... wird entweder dynamisch oder statisch erzeugt:
+
+dynamisch als org.osmdroid.views.MapView-Objekt:
+MapView mapView
+
+= new MapView(context, tileSizePixels);
+
+statisch:
+<org.osmdroid.views.MapView
+
+android:id="@+id/mapview"
+android:layout width="match parent"
+android:layout height="0dp"
+android:layout gravity="top"
+android:layout weight="1"
+android:clickable="true" >
+
+</org.osmdroid.views.MapView>
+
+Struktur von osmdroid
+MapView
+
+... wird entweder dynamisch oder statisch erzeugt:
+
+dynamisch als org.osmdroid.views.MapView-Objekt:
+MapView mapView
+
+= new MapView(context, tileSizePixels);
+
+statisch:
+<org.osmdroid.views.MapView
+
+
+
+layout-
+abh¨angig
+
+android:id="@+id/mapview"
+android:layout width="match parent"
+android:layout height="0dp"
+android:layout gravity="top"
+android:layout weight="1"
+android:clickable="true" >
+
+</org.osmdroid.views.MapView>
+
+Struktur von osmdroid
+MapView
+
+verwaltet grundlegende Funktionen:
+
+Karten-Quelle
+Overlays
+MapController
+MapListener
+Festlegung von Grundeinstellungen wie Zoom- bzw.
+Scroll-Beschr¨ankungen, Auswahl der Zoom-Methode (Button
+und/oder Geste) oder Orientierung der Karte
+Abfrage dieser Einstellungen; außerdem z. B. Abfrage der
+BoundingBox des sichtbaren Bereichs
+
+Struktur von osmdroid
+MapView
+
+verwaltet grundlegende Funktionen:
+
+Karten-Quelle
+speziﬁziert die Quelle der Karten-Kacheln;
+Overlays
+TileSourceFactory enth¨alt diverse Online-Quellen als
+MapController
+Konstanten
+MapListener
+auch Zugriﬀ auf lokal gespeichertes Kartenmaterial m¨oglich
+Festlegung von Grundeinstellungen wie Zoom- bzw.
+Scroll-Beschr¨ankungen, Auswahl der Zoom-Methode (Button
+und/oder Geste) oder Orientierung der Karte
+Abfrage dieser Einstellungen; außerdem z. B. Abfrage der
+BoundingBox des sichtbaren Bereichs
+
+Struktur von osmdroid
+MapView
+
+verwaltet grundlegende Funktionen:
+
+Karten-Quelle
+Overlays
+getOverlays() liefert eine Liste der vorhandenen Overlays
+MapController
+(Schichten). Diese ist erweiterbar (beispielsweise um Markierungen
+MapListener
+anzubringen oder den eigenen Standort anzuzeigen)
+Festlegung von Grundeinstellungen wie Zoom- bzw.
+Scroll-Beschr¨ankungen, Auswahl der Zoom-Methode (Button
+und/oder Geste) oder Orientierung der Karte
+Abfrage dieser Einstellungen; außerdem z. B. Abfrage der
+BoundingBox des sichtbaren Bereichs
+
+Struktur von osmdroid
+MapView
+
+verwaltet grundlegende Funktionen:
+
+Karten-Quelle
+Overlays
+MapController
+erm¨oglicht den Zugriﬀ auf die Karte (Einstellen des Zoom-Levels,
+MapListener
+Positionswechsel)
+Festlegung von Grundeinstellungen wie Zoom- bzw.
+Scroll-Beschr¨ankungen, Auswahl der Zoom-Methode (Button
+und/oder Geste) oder Orientierung der Karte
+Abfrage dieser Einstellungen; außerdem z. B. Abfrage der
+BoundingBox des sichtbaren Bereichs
+
+Struktur von osmdroid
+MapView
+
+verwaltet grundlegende Funktionen:
+
+Karten-Quelle
+Overlays
+MapController
+MapListener
+bietet die M¨oglichkeit auf Karten-Bewegung des Nutzers zu
+Festlegung von Grundeinstellungen wie Zoom- bzw.
+reagieren: Methoden sind...
+Scroll-Beschr¨ankungen, Auswahl der Zoom-Methode (Button
+... .onScroll(ScrollEvent)
+und/oder Geste) oder Orientierung der Karte
+... .onZoom(ZoomEvent)
+Abfrage dieser Einstellungen; außerdem z. B. Abfrage der
+BoundingBox des sichtbaren Bereichs
+
+Struktur von osmdroid
+MapView
+
+verwaltet grundlegende Funktionen:
+
+Karten-Quelle
+Overlays
+MapController
+MapListener
+Festlegung von Grundeinstellungen wie Zoom- bzw.
+Scroll-Beschr¨ankungen, Auswahl der Zoom-Methode (Button
+und/oder Geste) oder Orientierung der Karte
+Abfrage dieser Einstellungen; außerdem z. B. Abfrage der
+BoundingBox des sichtbaren Bereichs
+
+Struktur von osmdroid
+MapView
+
+verwaltet grundlegende Funktionen:
+
+Karten-Quelle
+Overlays
+MapController
+MapListener
+Festlegung von Grundeinstellungen wie Zoom- bzw.
+Scroll-Beschr¨ankungen, Auswahl der Zoom-Methode (Button
+und/oder Geste) oder Orientierung der Karte
+Abfrage dieser Einstellungen; außerdem z. B. Abfrage der
+BoundingBox des sichtbaren Bereichs
+
+Ben¨otigte Zugriﬀsrechte
+
+ACCESS COARSE LOCATION
+ACCESS WIFI STATE
+ACCESS FINE LOCATION
+WRITE EXTERNAL STORAGE
+ACCESS NETWORK STATE
+INTERNET
+
+Eigene Position anzeigen
+
+MyLocationNewOverlay myLocNewOverlay
+
+= new MyLocationNewOverlay(this, mapView);
+
+myLocNewOverlay.enableMyLocation();
+mapView.getOverlays().add(myLocNewOverlay);
+
+Eigene Position anzeigen
+
+MyLocationNewOverlay myLocNewOverlay
+
+= new MyLocationNewOverlay(this, mapView);
+
+myLocNewOverlay.enableMyLocation();
+mapView.getOverlays().add(myLocNewOverlay);
+
+!
+
+Problem: Wechselt man die App ohne die laufende App zu
+beenden, wird die Position (im Hintergrund) weiterhin per GPS
+abgerufen und verbraucht somit Energie.
+
+Eigene Position anzeigen
+
+MyLocationNewOverlay myLocNewOverlay
+
+= new MyLocationNewOverlay(this, mapView);
+
+myLocNewOverlay.enableMyLocation();
+mapView.getOverlays().add(myLocNewOverlay);
+
+!
+
+Problem: Wechselt man die App ohne die laufende App zu
+beenden, wird die Position (im Hintergrund) weiterhin per GPS
+abgerufen und verbraucht somit Energie.
+
+L¨osung: Verwendung der Methoden onPause() und onResume() der
+Klasse Activity
+
+Eigene Position anzeigen
+
+MyLocationNewOverlay myLocNewOverlay
+
+= new MyLocationNewOverlay(this, mapView);
+
+myLocNewOverlay.enableMyLocation();
+mapView.getOverlays().add(myLocNewOverlay);
+
+!
+
+Problem: Wechselt man die App ohne die laufende App zu
+beenden, wird die Position (im Hintergrund) weiterhin per GPS
+abgerufen und verbraucht somit Energie.
+
+L¨osung: Verwendung der Methoden onPause() und onResume() der
+Klasse Activity
+@Override
+public void onPause() {
+
+super.onPause();
+myLocNewOverlay.disableMyLocation();
+
+}
+
+Eigene Position anzeigen
+
+MyLocationNewOverlay myLocNewOverlay
+
+= new MyLocationNewOverlay(this, mapView);
+
+myLocNewOverlay.enableMyLocation();
+mapView.getOverlays().add(myLocNewOverlay);
+
+!
+
+Problem: Wechselt man die App ohne die laufende App zu
+beenden, wird die Position (im Hintergrund) weiterhin per GPS
+abgerufen und verbraucht somit Energie.
+
+L¨osung: Verwendung der Methoden onPause() und onResume() der
+Klasse Activity
+@Override
+public void onPause() {
+
+super.onPause();
+myLocNewOverlay.disableMyLocation();
+
+}
+
+public void onResume() analog
+
+

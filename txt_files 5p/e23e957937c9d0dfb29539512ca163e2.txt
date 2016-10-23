@@ -1,0 +1,274 @@
+zur Vorlesung „Grundlagen der fachrichtungsbezogenen Chemie: Allgemeine und organische Chemie“ 
+
+Übungszettel Mathe-Grundlagen – Tutorium WS 14/15 
+
+LÖSUNGEN zu Mathe-Grundlagen - Beispielaufgaben 
+
+ 
+
+Falls ihr merkt, dass ihr größere Probleme mit diesen Beispielaufgaben habt, schaut 
+euch den entsprechenden Bereich noch einmal genauer an (Vorgehensweisen, wichtige 
+Rechenregeln, usw. werden auch sehr gut in Video-Tutorials erklärt, Aufgaben mit 
+Lösungen gibt es in vielen Lehrbüchern oder im Internet)! 
+
+1.  Gleichungssysteme: 
+
+I. 
+
+Tom und Susi möchten sich aus dem Internet Musik herunterladen. Tom hat einen Anbieter 
+gefunden, bei dem er eine Grundgebühr von 10 € zahlen muss und dann jedes Lied 1 € kostet. 
+Susi dagegen hat einen Anbieter gefunden, bei dem Sie keine Grundgebühr zahlt und dafür jedes 
+Lied 2 € kostet.  
+
+a.  Wie lauten die beiden Gleichungen (y=Gesamtkosten, x= Anzahl Lieder)? 
+
+ 
+y = 10 + 1*x 
+y= 2x 
+
+b.  Wie viele Lieder muss man herunterladen, damit beide Anbieter gleich teuer sind? 
+
+ 
+10 + 1x = 2x -> nach x auflösen 
+10 = 2x – 1x 
+10= x -> Wenn zehn Lieder gekauft werden, sind beide Anbieter gleich teuer 
+
+c.  Wie viel muss man für diese Anzahl Lieder (aus Frage b) dann bezahlen? 
+
+ 
+x=10 in die Gleichungen aus a einsetzen, da y = Gesamtkosten 
+y = 10 + 1*10 = 20 
+y = 2*10 = 20 
+-> Zehn Lieder kosten bei beiden Anbietern dann 20 €. 
+
+II.  Das Rosten von Eisen (Fe) an trockener Luft (O2) wird durch die Reaktionsgleichung  
+
+x · Fe + y ·  O2 → z ·  Fe2O3 beschrieben. Bestimme möglichst kleine natürliche Zahlen für die 
+Variablen x, y und z. 
+ 
+Abzuleitende Gleichungen aus der Reaktionsgleichung (links und rechts vom Reaktionspfeil muss 
+dieselbe Anzahl an Teilchen pro Element und auch insgesamt stehen): 
+(1) 
+(2) 
+(3) 
+Gleichungen (1) und (2) so umformen, dass sie für x und y in Gleichung (3) eingesetzt werden 
+können. Gleichung (3) nach z umformen: z = z (also kann man für z eine beliebige Zahl einsetzen 
+und man erhält eine Lösung. Hier suchen wir die kleinsten natürlichen Zahlen für x, y und z. Also 
+zuerst z = 1 setzen: 
+Dann ist x = 2 und y = 3/2 (-> keine natürliche Zahl, daher hier nicht die richtige Lösung) 
+
+1*x = 2 * z 
+2 *y = 3 * z 
+1*x + 2*y = 5*z 
+
+ 
+
+1 
+
+zur Vorlesung „Grundlagen der fachrichtungsbezogenen Chemie: Allgemeine und organische Chemie“ 
+
+Übungszettel Mathe-Grundlagen – Tutorium WS 14/15 
+
+ 
+
+ 
+Als nächstes z = 2 setzen: 
+Dann ist x = 4 und y = 3 -> alle drei Unbekannten sind natürliche Zahlen! 
+4 · Fe + 3 ·  O2 → 2 ·  Fe2O3 
+
+ 
+
+2.  Potenzen: 
+
+I. 
+
+Zehnerpotenzen verwenden: 
+
+a.  21000000 = 2,1 · 107 
+
+b.  0,0000042 = 4,2 · 10-6 
+
+c.  3300000000 = 3,3 * 109 
+
+d.  155000 = 1,55 * 105 
+
+e.  0,000058 = 5,8 * 10-5 
+
+f.  0,0092 = 9,2 * 10-3 
+
+II.  Welche Basis gehört zu der Potenz mit dem Exponenten 3, welche 27 ergibt? 3 
+
+III.  Welchen Exponenten hat die Potenz mit der Basis 4, die 64 ergibt? 3 
+
+IV.  Mit Potenzen rechnen: 
+
+a.  15 · 20 + 2 · 121 = 15 + 24 = 39 
+
+b.  7-4 : 7-6 = 7(-4 – (-6)) = 7(-4+6) = 72 = 49 
+
+c.  42 · 45 = 4(2+5) = 47 (= 16384) 
+
+d.  63 : 23 = (6/2)3 = 33 = 27 
+
+ 
+
+3.  Logarithmus 
+
+I. 
+
+Logarithmen berechnen (und umformen können): 
+
+a.  log216 = 4, denn 24 = 16 (in Worten: „Wie viel Mal muss ich 2 mit sich selbst multiplizieren 
+
+(mal nehmen), um auf 16 zu kommen“) 
+
+b.  log21024 = 10, denn 210 = 1024 
+
+c.  log39 = 2 
+
+d.  log2 ( 4 · 8 ) = log2 ( 4 ) + log2 ( 8 ) = 2 + 3 = 5 
+
+ 
+
+ 
+
+2 
+
+zur Vorlesung „Grundlagen der fachrichtungsbezogenen Chemie: Allgemeine und organische Chemie“ 
+
+Übungszettel Mathe-Grundlagen – Tutorium WS 14/15 
+
+II. 
+
+Logarithmus zur Basis 10 (lga x) 
+
+a.  lg 1000 = 3 
+
+ 
+
+b.  lg 0,01 = lg 10-2 = -2 , denn 10-2 = 0,01 
+
+c.  lg 1 = 0, denn 100 = 1 
+
+d.  – lg 10-7 = 7 (wie b, aber negatives Vorzeichen vor dem lg beachten!,  denn - - = +) 
+
+e.  – lg 10-14 = 14 
+
+ 
+
+4.  Dreisatz 
+
+I. 
+
+Ein Pkw verbraucht auf 100 km 9,6 Liter Benzin. Mit einer Tankfüllung kommt er 540 km weit. 
+Wie viel Liter fasst der Tank?  
+ 
+LÖSUNG: 
+100 km 
+540 km 
+-------------------------- 
+9,6 L 
+100 km 
+9,6 L/100 
+1 km 
+ 
+9,6 L/100 * 540 = 51,84 L 
+540 km 
+
+9,6 L 
+? L 
+
+II.  Um eine Fläche von 720 m2 zu pflastern, brauchen 7 Maurer 160 h.  
+
+Wie lange benötigen 5 Maurer für eine Fläche von 600 m2 ? Die Zeit ist in Stunden und Minuten 
+anzugeben. 
+ 
+LÖSUNG: 
+7 Maurer 
+5 Maurer 
+Zuerst wird über die Maurer, dann über die Fläche geschlossen: 
+7 Maurer 
+1 Maurer 
+5 Maurer 
+5 Maurer 
+5 Maurer 
+
+160 h 
+7 * 160 h 
+7 * 160 h / 5 
+(7 * 160 h / 5)/ 720 
+(7 * 160 h / 5)/ 720 * 600 = 186,667 h = 186 h 40 min 
+
+160 h 
+? h  
+
+720 m2  
+600 m2  
+
+720 m2  
+720 m2  
+720 m2  
+1 m2 
+ 
+600 m2  
+
+58,443 g NaCl enthalten 22,99 g Na. Wieviel g Na sind in 100 g NaCl? Wie groß sind dann die 
+Massenanteile von Na und Cl in den 100 g NaCl? 
+ 
+LÖSUNG: 
+58,443 g NaCl  
+100 g NaCl 
+ 
+-------------------------------------------- 
+
+22,99 g Na 
+? g Na 
+
+3 
+
+III. 
+
+ 
+
+zur Vorlesung „Grundlagen der fachrichtungsbezogenen Chemie: Allgemeine und organische Chemie“ 
+
+Übungszettel Mathe-Grundlagen – Tutorium WS 14/15 
+
+ 
+
+22,99 g Na 
+22,99 g Na/58,443 
+22,99 g Na/58,443 * 100 = 39,337 g Na 
+
+58,443 g NaCl  
+1 g NaCl 
+ 
+100 g NaCl 
+ 
+ 
+Massenanteile: 
+100 g 
+39,337 g 
+---------------------------- 
+100 % 
+100 g 
+100 %/100 
+1 g 
+100 %/100 * 39,337 = 39,337 % (Massenanteil Na) 
+39,337 g 
+ 
+Massenanteil Cl = 100 % - 39,337 % = 60,663 % 
+
+100 % 
+? % 
+
+ 
+
+ 
+ 
+
+ 
+
+4 
+
+

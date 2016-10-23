@@ -1,0 +1,766 @@
+ 
+ 
+ 
+
+GM-MB1 16, VERSUCH 3, KURS ___, GRUPPE ____ 
+
+  
+
+1.  FORMELLE ASPEKTE GESAMTPROTOKOLL UND TEXT 
+
+☐  Gliederung fehlt/unklar (Einführung/Zielsetzung, Methode/Durchführung, Ergebnisse, 
+
+Diskussion/Fehlerbetrachtung, ggf. Literatur) 
+
+☐  Seitenzahlen fehlen 
+☐  Wissenschaftliche Ausdrucksweise anpassen, Umgangssprache vermeiden, siehe Markierung 
+☐  Korrekte Schreibweise von Speziesbezeichnungen, Gen- und Proteinbezeichnungen beachten  
+☐  Allg. Rechtschreibung, siehe Markierung 
+☐  Einheit der Verdopplungszeit oder der spez. Wachstumskonstante fehlt 
+☐  _____________________________________________________________________________ 
+
+2.  FORMELLE ASPEKTE ABBILDUNGEN, LEGENDEN UND TABELLEN 
+
+☐  Nummerierung von Abb. und Tabellen fehlt 
+☐  Bezug zu Abb. und Tabellen fehlt im Text 
+☐  Legende zu Abb._______________________________ fehlt 
+☐  Legende zu Abb._______________________________ unvollständig, s.u. 
+☐  Tabellentitel fehlt, Tabelle________________________. 
+☐  Tabellenanmerkungen in Fußnoten, Tabelle________________________ 
+☐  Achsenbeschriftungen fehlen, Abb, ________________ 
+☐  Achsenbeschriftungen inkorrekt, Abb.________________ 
+☐  _____________________________________________________________________________ 
+☐  _____________________________________________________________________________ 
+
+3.  INHALTLICHE ASPEKTE 
+
+Interpretation der Ergebnisse unvollständig/fehlend 
+
+☐  Einführung unvollständig/Zielsetzung nicht vermittelt 
+☐  Darstellung Ergebnisse unvollständig 
+☐ 
+☐  Diskussion unvollständig/fehlend 
+☐  Fehlerbetrachtung unvollständig/fehlend 
+☐  Beantwortung der weiterführenden Fragen fehlt oder inkorrekt: 
+☐  Wissenschaftlicher Hintergrund fehlt oder mangelhaft 
+☐  Berechnungen nicht nachvollziehbar, Original Werte nicht angegeben 
+
+4.  SONSTIGE PUNKTE 
+
+☐  ______________________________________________________________________________ 
+☐  ______________________________________________________________________________ 
+☐  Detailliert und vollständig 
+ 
+
+☐  Korrekturen zur Kenntnisnahme, keine Überarbeitung nötig 
+☐  Überarbeitung mit Korrektur erforderlich 
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+	
+
+Versuch	3	
+
+Parameter	des	bakteriellen	Wachstums	
+
+	
+
+Inhaltsverzeichnis	
+1.	Einführung	
+
+2.	Methoden	
+
+3.	Ergebnisse	und	Diskussion	
+
+3.1	Wachstumsverhalten	von	E.coli	K12	mit	40mM	KNO3,	anaerob,	37°C	
+3.2	Bewertung	des	Wachstumsverhaltens	von	E.coli	K12	mit	40mM	KNO3,	anaerob,	37°C	
+3.3	Vergleich	des	Wachstums	von	E.coli	K12	unter	verschiedenen	Kultivierungsbedingungen	
+3.4	Bestimmung	der	Gesamtzellzahl	
+3.5	Bestimmung	der	Lebendzellzahl	
+3.6	Vergleich	zwischen	Gesamtzellzahl	und	Lebendzellzahl	
+
+4.	Literaturverzeichnis	
+	
+
+	
+
+	
+
+	
+
+2	
+
+2	
+
+3	
+3	
+5	
+6	
+7	
+8	
+9	
+
+10	
+
+1	
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+	
+
+ist	 es	 das	 Wachstumsverhalten	 von	 Bakterien	 unter	 verschiedenen	
+
+1.	Einführung	
+Ziel	 dieses	 Versuchs	
+Kultivierungsbedingungen	zu	beobachten	und	zu	bestimmen.	
+Dieser	Versuch	zeigt	beispielhaft	das	Wachstumsverhalten	von	E.coli	K12	in	Abhängigkeit	verschiedener	
+Parameter.	Zur	Darlegung	des	Wachstums	der	Bakterienkultur	werden	sowohl	Gesamtzellzahl	(GZZ)	und	
+Lebendzellzahl	 (LZZ)	 bestimmt.	 Die	 Gesamtzellzahl	 wird	 mikroskopisch	 durch	 die	 Thoma-	 Zählkammer	
+und	 die	 Lebendzellzahl	 durch	 Ausplattieren	 bestimmt.	 Beim	 Ausplattieren	 wird	 davon	 ausgegangen,	
+dass	 ein	 lebensfähiges	 Bakterium	 eine	 Kolonie	 bildet.	 Das	 Wachstum	 einer	 Bakterienkultur	 wird	
+gemessen	 als	 Zunahme	 der	 Zellzahl	 pro	 Volumeneinheit	 mit	 der	 Zeit.	 Die	 Wachstumsgeschwindigkeit	
+wird	 durch	 verschiedene	 Parameter	 wie	 Kultivierungsbedingungen,	 O2-Partialdruck,	 Temperatur,	
+Lichtintensität,	 pH-Wert	 etc.	 bestimmt.	 Charakteristischerweise	 zeigt	 die	 Wachstumskurve	 einer	
+Zellkultur	
+stationäre	 Phase,	
+Absterbephase.		
+Im	Folgenden	wird	das	Wachstumsverhalten	von	E.coli	K12	in	einem	LB	Vollmedium	bei	37°C,	anaerob	
+mit	40	mM	Kaliumnitrat	(KNO3)	dargestellt.		
+	
+	
+	
+
+folgenden	 Verlauf:	 Verzögerungsphase,	 exponentielle	 Phase,	
+
+2.	Methoden	
+Material	und	Durchführung	verlaufen	wie	im	Skript	zum	Grundmodul	Mikrobiologie	beschrieben.		
+	
+Bei	einer	LB	über	Nacht	E.	coli	Kultur,	die	bei	37°C	gewachsen	ist	wird	eine	optische	Dichte	von	1,256	
+gemessen.	 Zu	 Beginn	 des	 Versuchs	 soll	 eine	 OD	 von	 0,05	 mit	 50ml	 gegebenem	 Medium	 eingestellt	
+werden.	
+Berechnung	des	Volumens	an	Übernachtkultur,	das	mit	50	ml	Medium	beimpft	werden	muss,	um	eine	
+finale	OD578	=	0,05	zu	erreichen:		
+	
+x	ml	*	1,256	=	(50	+	x	ml)	*	0,05	
+	
+x	=	
+	
+Im	weiteren	Verlauf	werden	alle	30	min	die	OD-	Werte	der	Kultur	bestehend	aus		
+50	ml	Medium	+	2,07	ml	E.coli	der	Übernachtkultur	+	40	mM	KNO3	überschichtet	mit	Paraffinöl	bei	37°C	
+bestimmt.		
+	
+	
+	
+	
+	
+
+!,!!,!"#	=	2,07	ml	
+
+!" !"∗!,!"
+(!,!"#!!,!")	=	
+
+	
+
+	
+
+2	
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+	
+
+3.	Ergebnisse	und	Diskussion	
+
+3.1	Wachstumsverhalten	von	E.coli	K12	mit	40mM	KNO3,	anaerob,	37°C	
+
+Abb.	1:	Wachstumskurve	von	E.coli	K12	mit	40mM	KNO3,	anaerob,	37°C.	
+
+	
+
+	
+
+	
+3	
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+	
+
+	
+
+	
+	
+8
+7
+5
+D
+O
+
+10	
+
+1	
+
+0,1	
+
+0,01	
+
+Verzögerungs-
+
+phase	
+
+exponenfelle	Phase	
+
+stafonäre	Phase		
+
+0	
+
+30	 60	 90	 120	150	180	210	240	270	300	330	360	390	420	450	480	
+
+Zeit	in	min	
+
+Abb.	1a:	Wachstumskurve	von	E.coli	K12	mit	40mM	KNO3,	anaerob,	37°C.	
+	
+	
+
+Tbl.	1:	OD-	Messwerte	der	Kultur	von	E.coli	K12	mit	40mM	KNO3,	anaerob,	37°C.	
+
+Zeit	in	min	
+
+0	
+30	
+60	
+90	
+120	
+150	
+180	
+210	
+240	
+270	
+300	
+330	
+360	
+390	
+420	
+450	
+480	
+
+OD578	
+0,049	
+0,071	
+0,076	
+0,101	
+0,190	
+0,365	
+0,535	
+0,658	
+0,716	
+0,838	
+0,948	
+1,384	
+1,376	
+1,176	
+1,172	
+1,220	
+1,194	
+
+	
+	
+
+	
+
+4	
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+	
+
+!"#!
+
+	=	1,92																										
+
+In	 diesem	 Fall	
+
+liegt	 die	
+
+!"!!! 	=	2,367	
+
+!"# !,!"#!!"#!,!"#
+
+!"# !"#
+!,!" 	=	93,75	min	
+
+3.2	Bewertung	des	Wachstumsverhaltens	von	E.coli	K12	mit	40mM	KNO3,	anaerob,	
+37°C	
+	
+Berechnung	der	Generationszeit	n:		
+	
+n	=	
+	
+td	=	0,293	
+	
+Nach	
+jeder	 Generationszeit	 verdoppelt	 sich	 die	 Bakterienanzahl.	
+Verdopplungszeit	von	E.coli	K12	mit	KNO3,	anaerob,	37°C	bei	93,75	min.		
+	
+Berechnung	der	Wachstumsrate	μ:		
+Die	 Wachstumsrate	 ist	 die	 spezifische	 Wachstumskonstante	 für	 die	 Geschwindigkeit	 der	 Veränderung	
+der	Zellmasse.		
+	
+μ	=	
+	
+Bei	 E.coli	 K12	 handelt	 es	 sich	 um	 ein	 Gram-	 negatives	 Bakterium,	 das	 natürlicherweise	 im	 Darm	 von	
+Lebewesen	vorkommt.	Deshalb	liegt	das	Temperaturoptimum	bei	ca.	37°C.	Die	Stoffwechsellage	ist	im	
+Normalfall	aerob,	kann	aber	auch	fakultativ	anaerob	(Gärung)	sein.		
+Der	 Versuch	 zeigt,	 dass	 E.coli	 unter	 einer	 anaeroben	 Stoffwechsellage	 bei	 37°C	 mit	 40mM	 KNO3	 eine	
+veränderte	 Wachstumskurve	 aufweist	 (vgl.	 Abb.	 1,	 Tbl.	 1).	 Es	 ist	 anzumerken,	 dass	 das	 Wachstum	
+wesentlich	 verlangsamt	 ist,	 die	 Generationszeit	 liegt	 bei	 93,75	 min	 (s.o.).	 Dieses	 verlangsamte	
+Wachstum	 kann	 auf	 die	 anaerobe	 Stoffwechsellage	 zurückgeführt	 werden.	 In	 dieser	 Situation	 muss	
+E.coli	auf	die	Nitrat-	und	Fumaratatmung	zurückgreifen.	Zwar	sichert	diese	Art	der	Energiegewinnung	
+das	 Überleben	 des	 Bakteriums,	 aber	 die	 Energiebereitstellung	 ist	 nicht	 so	 effektiv	 wie	 unter	 aeroben	
+Bedingungen.		
+Einen	weiteren	Einflussfaktor	auf	das	Wachstumsverhalten	von	E.coli	stellt	die	Anwesenheit	von	KNO3	
+dar.	 Ebenso	 wie	 O2	 ist	 Nitrat	 ein	 Elektronenakzeptor.	 Ist	 im	 anaeroben	 Zustand	 Nitrat	 vorhanden,	 so	
+unterdrückt	Nitrat	alle	anderen	Atmungssysteme.	E.coli	greift	in	unserem	Versuch	somit	ausschließlich	
+auf	 die	 anaerobe	 Nitratatmung	 zurück.	 Dies	 erklärt,	 dass	 sich	 die	 Anlaufphase	 und	 die	 exponentielle	
+Phase	stark	verlängern,	da	die	Bakterien	erst	vom	aeroben	auf	den	anaeroben	Stoffwechsel	umschalten	
+müssen.	 In	 jeder	 Lage	 wird	 stets	 auf	 das	 Stoffwechselsystem	 zurückgegriffen,	 das	 die	 höchste	 ATP-	
+Ausbeute	 liefert.	 Des	 Weiteren	 ist	 Nitrat	 wichtig	 als	 Grundlage	 verschiedener	 Reaktionen,	 wie	
+beispielsweise	die	Aminosäuresynthese.		
+Der	 vorliegende	 E.coli	 Stamm	 wurde	 unter	 erschwerten	 Bedingungen	 gezüchtet,	 was	 erklärt,	 weshalb	
+die	Wachstumskurve	flacher	und	die	Generationszeit	länger	ausfällt	als	im	Vergleich	zu	anderen	E.coli	
+Stämmen	unter	angenehmeren	Bedingungen.	
+	
+	
+
+	
+
+	
+
+5	
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+	
+
+3.3	Vergleich	des	Wachstums	von	E.coli	K12	unter	verschiedenen	
+Kultivierungsbedingungen	
+	
+
+10	
+1	
+0,1	
+0,01	
+
+	
+	
+8
+7
+5
+D
+O
+
+0	 30	60	90	120	150	180	210	240	270	300	330	360	390	420	450	480	
+
+Zeit	in	min	
+
+LB	Vollmedium,	37°C,	
+aerob	
+Minimalmedium,	37°C,	
+aerob	
+LB	Vollmedium,	30°C,	
+aerob	
+LB	Vollmedium,	37°C,	
+anaerob	
+LB	Vollmedium,	37°C,	
+anaerob	mit	40mM	
+KNO3	
+
+	
+
+Abb.	2:	Wachstum	von	E.coli	unter	verschiedenen	Kultivierungsbedingungen.		
+	
+Abb.	2	zeigt	das	Wachstumsverhalten	von	E.	coli	K12	unter	verschiedenen	Kultivierungsbedingungen.	Es	
+ist	deutlich,	dass	das	Wachstum	unter	aeroben	Bedingungen	wesentlich	effektiver	und	schneller	verläuft	
+als	unter	anaeroben	Bedingungen.	Die	Kulturen	im	LB	Vollmedium	bei	37°C	und	30°C	zeigen	eine	stark	
+ausgeprägte	exponentielle	Wachstumsphase,	wobei	das	Wachstum	bei	37°C	besser	ist	als	bei	30°C.	Dies	
+ist	 durch	 das	 Temperaturoptimum	 von	 E.coli	 bei	 37°C	 zu	 erklären.	 Ein	 deutlicher	 Unterschied	 des	
+Wachstumsverhaltens	ist	bei	der	Kultur	im	Minimalmedium	zu	erkennen.	Obwohl	E.coli	unter	aeroben	
+Bedingungen	 kultiviert	 wird,	 verläuft	 das	 Wachstum	 sehr	
+ist	 die	
+Stagnationsphase	 noch	 nicht	 erreicht,	 da	 nicht	 ausreichend	 Nährstoffe	 im	 Medium	 zur	 Verfügung	
+stehen.	 Das	 Wachstum	 der	 beiden	 Kulturen	 unter	 anaeroben	 Bedingungen	 ähnelt	 sich	 stark.	 Die	
+Wachstumskurven	 fallen	 sehr	 flach	 aus,	 da	 das	 exponentielle	 Wachstum	 stark	 eingeschränkt	 ist.	 Dies	
+kann	durch	sehr	lange	Generationszeiten	erklärt	werden.	Unter	anaeroben	Bedingungen	muss	E.coli	auf	
+Gärung	 (Nitrat-	 und	 Fumaratatmung)	 zurückgreifen,	 um	 lebenswichtige	 Energie	 herzustellen.	 Die	
+Energiebereitstellung	 unter	 aeroben	 Bedingungen	 ist	 jedoch	 um	 ein	 Vielfaches	 effizienter	 als	 die	
+Gärungsprozesse,	was	in	Abb.	2	sehr	gut	veranschaulicht	ist.	Das	Wachstum	der	Kultur	unter	anaeroben	
+Bedingungen,	 der	 zusätzlich	 40mM	 KNO3	 hinzugefügt	 wurden,	 verläuft	 zunächst	 langsamer	 als	 das	
+Wachstum	der	Kultur	unter	anaeroben	Bedingungen	ohne	KNO3	(vgl.	Abb.	2).	In	der	stationären	Phase	
+liegt	die	Bakterienzahl	der	Kultur	mit	Kaliumnitrat	jedoch	höher	als	die	Bakterienzahl	der	Kultur	ohne	
+Kaliumnitrat,	anaerob.	Dies	ist	dadurch	zu	erklären,	dass	in	Anwesenheit	von	KNO3	der	E.coli-	Stamm	auf	
+Nitratatmung	 zurückgreifen	 kann.	 Die	 Nitratatmung	 ist	 effektiver,	 liefert	 also	 mehr	 ATP,	 als	 die	
+Fumaratatmung,	auf	die	die	andere	Kultur	ohne	KNO3	angewiesen	ist.		
+	
+	
+
+langsam.	 Auch	 nach	 8h	
+
+	
+
+	
+
+6	
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+	
+
+3.4	Bestimmung	der	Gesamtzellzahl	
+	
+Berechnung	zur	Bestimmung	der	Gesamtzellzahl	mit	der	Thoma-	Zählkammer:		
+Vf	=	
+	
+stationäre	Phase	der	Übernachtkultur:	
+cb2	=	
+	
+
+!"!!"!	
+! [!"] 	*10!	=	2,5	*	10!	[B/ml]	
+!"" [!]
+!"" [!]
+!∗!"!![!"]	=	
+cb1	=	1,256	*	1,1	*	10!	=	1,3816	*	10!	[B/ml]	
+!,!"#$!,! 	*	10!!!	=	0,55	*	10!	=	55	
+!,!"#$ ∗ !"! [!/!"]
+!,! ∗ !"! [!/!"]
+! [!"] 	*10!	=	2,5	*	10!	[B/ml]	
+!"" [!]
+!"" [!]
+!∗!"!![!"]	=	
+cb1	=	0,365	*	1,1	*	10!	=	0,4015	*	10!	=	4,015	*	10![B/ml]	
+!,!"#!,! 	*	10!!!	=	1,606	*	10	=	16,06	
+!,!"# ∗ !"![!/!"]
+!,! ∗ !"! [!/!"] 	=	
+
+	
+Vf	=	
+	
+	
+exponentielle	Phase:		
+cb2	=	
+	
+
+	=	
+
+	
+Vf	=	
+	
+Auszählung	der	Gesamtzellzahl	der	Bakterien	mittels	der	Thoma-	Zählkammer:		
+	
+stationäre	Phase	der	Übernachtkultur:	
+30,	40,	39,	25	
+	
+exponentielle	Phase:		
+74,	81,	65,	77	
+	
+Das	Auszählen	der	Gesamtzellzahl	der	Bakterien	mittels	der	Thoma-	Zählkammer	zeigt,	dass	nicht	die	
+berechnete	Anzahl	von	100	Bakterien	pro	Großquadrat	erreicht	wird,	weder	in	der	stationären	noch	in	
+der	exponentiellen	Phase	(s.o.).	Dieses	unerwünschte	Ergebnis	lässt	sich	darauf	zurückführen,	dass	die	
+Bakterien	 unter	 erschwerten	 Bedingungen	
+(KNO3-	 Anwesenheit,	 anaerobe	 Stoffwechsellage)	
+angezüchtet	werden.	Dies	führt	dazu,	dass	die	Vermehrung	der	Bakterien	langsam	verläuft	bzw.	viele	
+Bakterien	den	Bedingungen	nicht	standhalten	und	absterben.		
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+7	
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+	
+
+	=	
+
+3.5	Bestimmung	der	Lebendzellzahl	
+	
+Berechnung	zur	Bestimmung	der	Lebendzellzahl	durch	Ausplattieren:	
+Vf	=	
+	
+stationäre	Phase	der	Übernachtkultur:	
+cb2	=	
+	
+
+!,!"#! 	*	10!!!	=	3,768	*	10!		
+
+!"!!"!	
+!"" !! 	=	2	*	10!	[B/ml]	
+!"" [!]
+cb1	=	1,256	*	6	*	10!	=	7,536	*	10!	[B/ml]	
+!,!"# ∗ !"! [!/!"]
+! ∗ !"! [!/!"]
+!"" !! 	=	2	*	10!	[B/ml]	
+!"" [!]
+cb1	=	0,365	*	6	*	10!	=	2,19	*	10!	[B/ml]	
+!,!"! 	*	10!!!	=	1,095	*	10!		
+!,!" ∗ !"! [!/!"]
+! ∗ !"! [!/!"] 	=	
+
+	
+Vf	=	
+	
+	->	10	μl	Bakterien	+	380	μl	LB	
+	
+exponentielle	Phase:	
+cb2	=	
+	
+
+	
+Vf	=	
+	
+->	20	μl	Bakterien	+	220	μl	LB	
+	
+Auszählung	der	Lebenszellzahl	durch	Ausplattieren:		
+	
+Tbl.	2:	Lebendzellzahlbestimmung	der	stationären	Phase	der	Übernachtkultur.	
+
+Verdünnung	
+
+	
+Tbl.	3:	Lebendzellzahlbestimmung	der	exponentiellen	Phase.	
+
+Verdünnung	
+
+!"!!	
+!"!!	
+!"!!	
+!"!!	
+!"!!	
+!"!!	
+
+Kolonien	
+
+5	
+0/	0	
+0	
+
+Kolonien	
+
+357	
+23/	27	
+
+7	
+
+-	
+-	
+
+Bakterien	pro	ml	
+
+50	B/ml	*	10!	
+3570	B/ml	*	10!	
+250	B/ml	*	10!	
+70	B/ml	*	10!	
+
+Bakterien	pro	ml	
+
+	
+	
+Das	 Auszählen	 der	 Lebendzellzahl	 der	 Bakterien	 zeigt	 in	 der	 stationären	 Phase	 keine	 auswertbaren	
+
+Ergebnisse	 (vgl.	 Tbl.	 2).	 Sowohl	 in	 der	10!!-	 und	10!!-	 Verdünnung	 wachsen	 auf	 der	 LB-	 Agarplatte	
+berechneten	 200	 bei	 der	10!!-	 Verdünnung	 vorzufinden	 sind,	 da	 die	 Bakterien	 unter	 erschwerten	
+
+keine	 Bakterien.	 Diese	 Tatsache	
+ist	 höchstwahrscheinlich	 darauf	 zurückzuführen,	 dass	 ein	
+Verdünnungsfehler	 unterlaufen	 ist.	 Es	 ist	 zwar	 durchaus	 denkbar,	 dass	 weniger	 Bakterien	 als	 die	
+
+Bedingungen	 (KNO3-	 Anwesenheit,	 anaerobe	 Stoffwechsellage)	 	 wachsen.	 Trotzdem	 sind	 gar	 keine	
+Bakterien	ein	nicht	glaubwürdiges	Ergebnis.		
+
+	
+
+8	
+
+	
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+Ergebnis	zu	den	erwarteten,	berechneten	Ergebnissen	(vgl.	Tbl.	3).	In	der	10!!-	Verdünnung	sind	statt	
+den	 erwarteten	 200	 Bakterien	 250	 Bakterien	 zu	 finden.	 Sowohl	 in	 der	10!!-	 und	10!!-	 Verdünnung	
+
+Das	 Auszählen	 der	 Lebendzellzahl	 der	 Bakterien	 zeigt	 in	 der	 exponentiellen	 Phase	 ein	 passendes	
+
+liegen	 die	 Anzahl	 der	 Bakterien	 etwas	 über	 den	 berechneten	 Ergebnissen	 (vgl.	 Tbl.	 3).	 Dies	 ist	 ein	
+verwunderliches	 Ergebnis,	 da	 aufgrund	 der	 schwierigen	 Bedingungen,	 denen	 der	 E.coli	 Stamm	
+ausgesetzt	ist,	eher	eine	geringere	Lebendzellzahl	der	Bakterien	denkbar	wäre.		
+	
+	
+	
+
+3.6	Vergleich	zwischen	Gesamtzellzahl	und	Lebendzellzahl	
+	
+Tbl.	 4:	 Auszählung	 der	 Gesamtzellzahl	 mittels	 Thoma-	 Zählkammer	 und	 der	 Lebendzellzahl	 mittels	
+Ausplattieren.		
+	
+
+Kolonien/	Platte	(20er,		
+200er,	2000er)	
+
+	
+OD578	
+1,256	
+
+	
+Vf	(GZZ)	
+55	
+
+	
+Bakterien/	Gq	(4x)	
+30,	40,	39,	25	
+	
+
+0,365	
+
+16,06	
+
+74,	81,	65,	77	
+	
+
+stationäre	
+Phase	
+
+exponentielle	
+Phase	
+
+	
+Vf	(LZZ)	
+
+3,768	*	10!	
+1,095	*	10!	
+
+5	
+0/	0	
+0	
+357	
+23/	27	
+
+7	
+
+	
+Es	kann	davon	ausgegangen	werden,	dass	die	Gesamtzellzahl	stets	größer	ist	als	die	Lebendzellzahl.	Dies	
+ist	deutlich,	da	bei	der	Gesamtzellzahl	auch	tote	Bakterien	mitgezählt	werden,	bei	der	Lebendzellzahl	
+hingegen,	 werden	 ausschließlich	 lebende	 Organismen	 ausgezählt.	 Die	 Tabelle	 4	 zeigt	 den	 Vergleich	
+zwischen	Lebend-	und	Gesamtzellzahl	von	E.coli	K12	mit	40mM	KNO3,	anaerob,	37°C	in	der	stationären	
+und	exponentiellen	Phase.	Es	wird	deutlich,	dass	die	Lebendzellzahl	in	der	exponentiellen	Phase	höher	
+liegt	 als	 die	 Gesamtzellzahl.	 Zwischen	 diesen	 beiden	 Tatsachen	 kann	 kein	 Zusammenhang	 hergestellt	
+werden,	weshalb	von	einem	Fehler	ausgegangen	werden	muss.	Leider	ist	in	der	stationären	Phase	kein	
+Rückschluss	auf	die	Lebendzellzahl	möglich,	da	die	Ergebnisse	nicht	auswertbar	sind.	Nichtsdestotrotz	
+kann	 festgehalten	 werden,	 dass	 die	 Ergebnisse	 des	 Versuchs	 nicht	 den	 Erwartungen	 bezüglich	 der	
+Anzahl	von	Lebend-	und	Gesamtzellzahl	entsprechen.		
+	
+	
+
+	
+
+	
+
+9	
+
+Universität	Osnabrück,	Abteilung	Mikrobiologie,	Grundmodul	2016	Kurs:___B__	Gruppe:	___16__	
+Name,	Vorname:	Stielow,	Simone	Katharina	
+Name,	Vorname:	Warneke,	Lara	
+	
+	
+
+Matrikelnummer:	962993	
+Matrikelnummer:	965090	
+
+	
+
+4.	Literaturverzeichnis	
+	
+Abteilung	 Mikrobiologie	 (2016):	 Skript	 zum	 Grundmodul	 Mikrobiologie	 –	 Übungen.	 Hrsg:	 Fachbereich	
+Biologie/	Chemie	der	Universität	Osnabrück.		
+	
+Madigan,	 M.	 T;	 Martinko,	 J.M	 (2009):	 Brock	 Mikrobiologie.	 11	 Auflage.	 München:	 Pearson	 Aducation	
+Deutschland	GmbH.	
+	
+Schmitz,	S.	(2007):	Der	Experimentator:	Zellkutur.	München:	Elsevier	GmbH.		
+
+	
+
+10	
+
+

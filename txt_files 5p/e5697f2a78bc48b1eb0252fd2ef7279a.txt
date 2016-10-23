@@ -1,0 +1,88 @@
+Spitzweck/Heine/Soud`eres/M¨ahr/Mengler/Uliczka
+
+12. Januar 2015
+
+Lineare Algebra I
+Tutoriumsvorschl¨age
+
+1. Berechnen Sie die Determinanten dieser Matrizen!
+
+(cid:19)
+
+(cid:18) −4 7
+
+1
+
+5
+
+a)
+
+b)
+
+(cid:19)
+
+(cid:18) 2 −4
+
+8
+
+7
+
+ 6
+
+2 −4
+7 −8 11
+−3 −1
+2
+
+
+
+c)
+
+2. L¨osen Sie unter Verwendung von Determinanten die folgenden Gleichungssysteme (das ist
+
+mit Hilfe der Cramerschen Regel).
+(1)
+
+−x + y =1
+−2x + y =− 2
+
+(2)
+
+−x + z =− 2z + 1
+−x− y + z =y− 2z− 1
+
+−y + z =y + 2z
+
+3. F¨ur welche Zahlen a ∈ R existiert die Inverse der folgenden Matrix A? Geben Sie in diesem
+
+Fall A−1 an.
+
+Benutzen Determinanten und die komplement¨aren Matrizen.
+
+4. Berechnen Sie die inversen Matrizen mit Hilfe der komplement¨aren Matrix:
+
+
+
+0
+6 −(a− 2) −2
+−6 (3a− 6) −4
+
+ 3 −(a− 2)
+ 1 0 2
+
+
+
+a)
+
+2 3 4
+3 0 2
+
+5. Seien v = (x1,y1) und w = (x2,y2) zwei Vektoren, und P das Parallelogramms auf v und w
+
+getragt. Zeigen Sie, dass der Fl¨acheninhalt von P
+
+A = |det(v,w)| = |x1y2 − x2y1|
+
+ist.
+
+

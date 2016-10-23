@@ -1,0 +1,248 @@
+MINDS, BRAINS, AND PROGRAMS
+Presentation by Helena Wasle & Julia Wippermann
+
+OVERVIEW
+➤ Who is Searle? 
+➤ What is his general position in the Philosophy of Mind? 
+➤ Minds, brains, and programs 
+➤ What is intentionality 
+➤ Strong AI and its appeal 
+➤ Why AI can’t produce intentionality 
+➤ The Chinese Room experiment 
+➤ Criticism to Searles theory 
+
+➤ Personal remarks 
+➤ Questions & Discussion
+
+WHO IS SEARLE?
+➤ John Rogers Searle (*1932) 
+➤ started University in 1949 (University of Wis- 
+
+consin) 
+
+➤ Interested mostly in philosophy of speech and 
+
+mind, metaphysics and social ontology 
+
+➤ professor at University of California, Berkeley since 1959 
+➤ published 28 books, translated into 21 languages 
+➤ supporter of the Free Speech Movement in 1964
+
+WHAT IS SEARLES GENERAL POSITION IN THE PHILOSOPHY OF MIND
+
+➤ intentionality is a basic requirement 
+➤ intentionality can not be assigned to robots or computers 
+➤ Turing-Test is not suﬃcient to test intelligence 
+➤ pro naturalism (→ the brain is only a biological phenomenon) 
+➤ against reductionism (→ everything can be explained by 
+
+looking at the components) 
+
+➤ Searle argues that reductionism is not able to explain 
+
+qualia 
+
+➤ argues against dualism
+
+MINDS, BRAINS, AND PROGRAMS: WHAT IS INTENTIONALITY?
+
+➤ „Intentionality is the power of minds to be about, to represent, or to 
+
+stand for, things, properties and states of aﬀairs.“  
+ - Stanford Encyclopedia of Philosophy 
+
+➤ „Intentionality in human beings (and animals) is a product of causal 
+
+features of the brain. […] Certain brain processes are suﬃcient for 
+intentionality.“ 
+ - Searle, Minds, brains, and programs p. 419
+
+MINDS, BRAINS, AND PROGRAMS: STRONG AI AND ITS APPEAL
+
+➤    
+
+Weak AI
+
+Strong AI
+
+AI and programs as a tool to test 
+
+psychological hypotheses
+
+Programs can be said to produce 
+cognitive states by themselves
+
+Searle: 👍
+
+Searle: „The distinction between 
+the program and its realization 
+[…] proves fatal to the claim that 
+simulation could be duplication“
+
+➤ Reasons for the appeal of AI according to Searle: 
+
+➤ Confusion about the notion of „information processing“ 
+
+➤ computers don’t do information processing as the human brain does, but 
+
+formal symbol manipulation 
+
+➤ Residual behaviorism and operationalism 
+➤ dualism in AI
+
+MINDS, BRAINS, AND PROGRAMS: WHY AI CAN’T PRODUCE INTENTIONALITY
+
+➤ Artiﬁcial intelligence concerns itself only with programs, not their 
+
+implementation 
+
+➤ (1) intentionality is dependent on causal powers 
+➤ (2) causal powers are dependent on the physical composition of the 
+
+machine 
+
+➤ (3) programs do not have a physical composition 
+➤ (∴) programs cannot produce intentionality 
+
+➤ Strong AI can never build a program that by itself is capable of 
+
+producing mental states (intentionality)
+
+MINDS, BRAINS, AND PROGRAMS: THE CHINESE ROOM EXPERIMENT
+
+http://theness.com/neurologicablog/wp-content/uploads/2015/10/c-room.gif
+
+➤ Though the output suggests that the man understands Chinese he does 
+
+not know anything about the semantics of the responses he gives 
+→ programs do not think but apply simple rule manipulation 
+→ the composition of the system is not suﬃcient to produce 
+     understanding
+
+MINDS, BRAINS, AND PROGRAMS: CRITICISM TO SEARLES THEORY
+
+➤ The systems reply 
+
+➤ though the man in the room does not understand anything, the system 
+
+as a whole does understand Chinese. 
+
+➤ Searle: Why should the conjunction of two elements 
+
+understand when neither of them does by itself? 
+
+➤ The robot reply 
+
+➤ If we designed a program to operate a humanoid robot which processes 
+
+‚sensory‘ information etc., this robot would have cognitive states 
+
+➤ Searle: The addition of perceptual and motor capacities adds 
+
+nothing to the capability of understanding; the Chinese 
+Room experiment still applies
+
+MINDS, BRAINS, AND PROGRAMS: CRITICISM TO SEARLES THEORY
+
+➤ The brain simulator reply 
+
+➤ A program that simulates what is happening in the brain at the level of 
+
+neurons can’t be any diﬀerent from our understanding 
+
+➤ a simulation of a process does not produce what the process by 
+
+itself produces (→ the simulation of a cow does not produce 
+real milk) 
+
+➤ The combination reply 
+
+➤ A robot which operates like a human and whose brain-shaped computer 
+
+is programmed with all the neurons of a human brain would be much 
+more convincing 
+
+➤ We would attribute intentionality to it but only as long as we 
+
+knew nothing about the insides and program of the robot
+
+MINDS, BRAINS, AND PROGRAMS: CRITICISM TO SEARLES THEORY
+
+➤ The other minds reply 
+
+➤ How can you know that other people understand Chinese? We 
+attribute understanding based on behavior therefore it must be 
+linked to it 
+
+➤ „In cognitive science one presupposes the reality and 
+
+knowability of the mental in the same way that in 
+physical science one has to presuppose the reality and 
+knowability of physical objects.“ (Searle: p.422)
+
+MINDS, BRAINS, AND PROGRAMS: CRITICISM TO SEARLES THEORY
+
+➤ The many mansions reply 
+
+➤ „Eventually we will be able to build devices that have these 
+
+causal processes, and that will be artiﬁcial intelligence“ (Searle p. 
+422) 
+
+➤ This completely dismantles what AI is all about - 
+
+separating the software from its realization - but in 
+theory this complies with the theory
+
+PERSONAL REMARKS
+➤ His answer to e.g. the systems reply is rather unconvincing, 
+he does not explain why the conjunction of two elements can 
+not understand something that each individual part does not 
+(fully) understand 
+
+➤ The Chinese Room experiment doesn’t really apply in the case 
+
+of the brain simulator reply 
+
+➤ Searle never explains what he imagines the „causal powers“ 
+
+he sees as fundamental for intentionality to be
+
+QUESTIONS
+➤ Is the Chinese room experiment a useful tool in discussing 
+
+Artiﬁcial intelligence? Is it realistic? 
+
+➤ In his criticism to Searles text, Robert P. Abelson writes:  
+
+„The computer is merely crunching away on statements in program code 
+producing other statements in program code which are applauded by 
+outside observers for being […] perhaps even clever. What kind of 
+understanding is that? It is […] very much the kind of understanding 
+that people display in exposure to new content via language or other 
+symbol systems.“  
+What are your thoughts on this argument? 
+
+➤ Do you agree with Searle? Is it impossible for Artiﬁcial 
+
+Intelligence to succeed?
+
+REFERENCES
+➤ http://ist-socrates.berkeley.edu/~jsearle/ 
+➤ http://plato.stanford.edu/entries/intentionality/ 
+
+visited on 19.5.16 
+
+visited on 19.5.16 
+
+➤ photo of Searle: http://3.bp.blogspot.com/_jQhfH-_kwQI/
+
+S7l6ahjJwDI/AAAAAAAADbY/3y8zEfJnQ_g/s1600/
+searle.jpg 
+visited on 19.5.16 
+
+➤ John Searle: “Minds, Brains, and Programs.” Behavioral and 
+
+Brain Sciences, 1980, 3, 417–424.
+
+

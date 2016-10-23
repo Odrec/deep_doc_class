@@ -1,0 +1,243 @@
+Übungen zur "Einführung in die Physik" im WS14/15
+
+Reyher, 25.11.14
+
+Blatt 7
+
+Zur Vorlesung 1 bis 13
+
+Wenn Sie finden, eine Multiple-Choice-Frage sei nicht genau zu beantworten, so kreuzen Sie „keines“
+an und erläutern ganz kurz in Stichworten, warum. Bei reinen Verständnisfragen werden immer die 
+naheliegenden Antworten als richtig angesehen, auch wenn bei spitzfindiger Argumentation etwas 
+dagegen sprechen mag. Es ist nahezu unmöglich, Verständnisfragen zu stellen, ohne eine gewisse 
+„Genauigkeitstoleranz“ vorauszusetzen. 
+
+Richtige Antwort(en) ankreuzen.
+1 Wenn ein Vesikel in einer Zentrifuge zum Boden des Zentrifugenröhrchens hin, also nach 
+außen bewegt wird, so gilt: Die physikalische Natur der treibenden Kraft resultiert aus
+a)
+
+b)
+
+c)
+der Oberflächen-
+
+d)
+der Massenträgheit keines von a) - d)
+
+e)
+
+dem
+
+Röhrchenmaterial
+
+der Viskosität
+
+spannung
+
+2 Im „Spiegel“ stand kürzlich der Satz: „...das Solarpanel hat eine Leistung von 4 Watt pro 
+Stunde“. Welche Leistung hat es in 24 Stunden?
+a)
+
+b)
+
+d)
+
+c)
+
+96 Watt
+
+6 Watt
+
+1.66 Watt
+
+24 Watt
+
+e)
+keines von a) - d)
+
+3 Eine Fledermaus sendet Schallwellen von 41kHz während 1ms aus. Welche Zeit braucht 
+der Schallpuls für den Weg zu einer Beute in 480cm Abstand? (Schallgeschwindigkeit in Luft
+= 340 m/s)
+a)
+
+b)
+
+d)
+
+c)
+
+0.001 s
+
+41000 s
+
+41 s
+
+0.041 s
+
+e)
+keines von a) - d)
+
+4 Ein leichtes Samenkorn schwebt langsam von einer Pflanze auf den Boden. Die geringe 
+Geschwindigkeit kommt von 
+a)
+
+d)
+
+b)
+der Viskosität der
+
+c)
+der Luftreibung
+
+der geringen
+
+Größe
+
+Luft
+
+e)
+keines von a) - d)
+
+der geringen
+
+Fallhöhe
+
+5 Die isolierende Fettschicht einer Robbe vermindert in erster Linie die 
+a)
+die Wärmeleitung
+
+b)
+die Wärmestrahlung die Wärme
+
+d)
+die Konvektion
+
+c)
+
+e)
+keines von a) - d)
+
+6 Wegen der Einheiten kann die Ausbreitungsgeschwindigkeit c einer Welle mit ihrer 
+Wellenlänge λ und Frequenz f nur folgendermaßen zusammenhängen
+a)
+c= λ f
+
+b)
+c= f λ
+
+e)
+keines von a) - d)
+
+c)
+c= λ
+f
+
+d)
+c= f
+λ
+
+4 −T U
+
+4 ) . Dabei ist  T K  die Körpertemperatur in 
+
+7) Die Wärmestrahlung, welche ein Körper der Oberfläche A bei einer Umgebungstemperatur
+T U  abgibt, hat die Leistung  P=σ ε A(T K
+Kelvin, ebenso wie  T U . σ ist die Stefan-Boltzmann-Konstante mit dem Wert  5.67⋅10−8  W 
+m-2 K-4.
+Ein Mensch besitzt für die betreffende Strahlung den Emissionsgrad ε=1.
+a) Welche Energie gibt ein ruhender Mensch mit 2 m2 Hautoberfläche und einer 
+Hauttemperatur von 30° C alleine durch Wärmestrahlung in einem 18° C warmen Raum in 
+einer Stunde ab? Dabei soll die Kleidung ignoriert werden.
+b) Etwa 80% der Stoffwechselrate  P S  (in Watt gemessen) geht während der Ruhe in Wärme 
+über. Diese Wärme soll unter den oben genannten Bedingungen abgegeben werden, also ohne
+andere Wärmetransportmechanismen. Wie groß ist  P S ?
+c) Welche Mechanismen der Wärmeabgabe treten zur Strahlung hinzu. 
+
+8) Im folgenden Beispiel betrachten wir nur die Wärmeleitung.
+Durch unterschiedliche Wärmeleitungskoeffizienten
+λ stellt sich in bei zwei verschiedenen Isolations-
+schichten ein Temperaturverlauf von innen,  T i , 
+nach außen,  T a , wie rechts dargestellt ein.
+Die Temperatur  T x  beim Übergang Haut-Fell ist 
+unbekannt.
+Ansatz: Kontinuitätsbedingung – der Wärmefluss
+Φ= ΔQ
+Δt
+
+ ist für Haut- und Fell-Schicht gleich, also 
+
+λh
+Lh
+
+λ f
+L f
+
+Φ=
+
+A(T i−T x)=
+
+A(T x−T a)  (1)
+
+ L kennzeichnet die Dicke der 
+jeweiligen Schicht.
+
+a) Lösen Sie Gleichung (1) nach der unbekannten Temperatur  T x  auf. Gerne dürfen Sie 
+hierzu einen Taschenrechner mit Computeralgebra verwenden.
+b) Bei nordamerikanischen Bären im Winterschlaf wurde  T i=31° C  und  T a=2.5° C  
+gemessen. Die Haut entspricht einer Speckschicht von  Lh=4 cm mit  λh=0.2 W m-1 K-1, das 
+Fell einer Schicht Luft mit  L f =3 cm und  λh=0.024 W m-1 K-1. Wie groß ist die Temperatur 
+an der äußeren Hautschicht  T x ?
+c) Der Wärmeleitungskoeffizient des Fells entspricht dem von Luft. Weshalb muss man dann 
+die Wärmeleitung durch Luft auf die Felldicke beschränken und kann sie nicht bis zur 
+Höhlenwand fortsetzen?
+
+9) In der Zeitschrift Sciene, VOL 337, p. 595 (2012) findet man einen Artikel über die 
+Produktion von Infraschall durch Elefanten, Titel: „How Low Can You Go? Physical 
+Production Mechanism of Elephant Infrasonic Vocalizations“ (Ch. T. Herbst et al.).
+Dabei ist nicht das „Trompeten“ der Elefanten gemeint, sondern Töne die der Mensch nicht 
+hört. Es werden zwei Entstehungsmechanismen diskutiert. MEAD (myoelastic-aerodynamic) 
+entspricht dem Flattern eines elastischen Stimmbandes im Atemstrom, wie bei der 
+menschlichen Stimme. AMC (active nuscular contraction) bedeutet eine periodische 
+Unterbrechung des Luftstroms durch Kontraktionen eines Schließmuskels, gut bekannt als 
+Schnurren der Katzen.  MEAD erlaubt sehr hohe Frequenzen, AMC nicht. Das Bild unten 
+
+zeigt eine gewisse Korrelation zwischen Körpermasse und Frequenz des Kommunikations-
+schalls einiger Lebewesen. 
+Das Diagramm zeigt, dass man auf diese Weise leider nicht klären kann, zu welcher Linie der
+Elefant gehört – dies zeigen die Autoren auf andere Weise. Wir wollen das Bild lediglich 
+nutzen, um zu üben, wie man die Zahlenwerte in der doppelt logarithmischen Darstellung 
+abliest.
+a) Lesen Sie den Bereich für Masse und Schallfrequenz für Fledermäuse grob ab.
+b) Lesen Sie die Masse und die Schallfrequenz des Elefanten möglichst genau ab. Hilfe: 
+Wenn ein Punkt auf einer logarithmischen Skala zwischen zwei Marken liegt, so liest man 
+seinen Wert wie unten dargestellt ab: 
+
+Der Wert für x am Ort des Pfeils berechnet 
+sich zu  x=100⋅10
+log10(x) liest (obere Beschriftung).
+
+a
+s , wenn man die Skala als 
+
+Benutzt man die untere Beschriftung in x, so findet man  x=1⋅10
+Lineal abzulesen. In diesem Beispiel beginnt a bei 0 (obere Beschriftung) bzw. bei 1 (untere 
+Beschriftung). Für andere Fälle ist der Anfangswert entsprechend anzupassen.
+
+a
+s . a und s sind mit dem 
+
+10) Schall ist eine Druckwelle. Eine reine sinusförmige Schallwelle erzeugt für unser Gehör 
+einen reinen Sinuston. Unten sehen Sie die Graphen von Schallwellen  p(x) . Sortieren Sie 
+die Felder A bis D nach wachsender Lautstärke und nach wachsender Tonhöhe.
+
+A
+
+C
+ 
+
+B
+
+D
+
+

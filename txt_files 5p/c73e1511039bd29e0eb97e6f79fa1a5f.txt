@@ -1,0 +1,2515 @@
+Prozessorientierte  
+Informationssysteme 
+
+ 
+
+Lehrveranstaltung 
+
+an der Universität Osnabrück,  
+
+Wintersemester 2014/15 
+
+Dozenten: Dr. Michael Fellmann (Vorlesung), 
+
+Christina Niemöller, M. Sc., Dirk Metzger, M. Sc. with honors (Übung) 
+
+Fachgebiet Informationsmanagement und Wirtschaftsinformatik 
+
+ 
+ 
+
+  
+
+Prof. Dr. Oliver Thomas 
+
+ 
+
+Universität Osnabrück 
+
+ 
+
+Agenda 
+
+Semantische Prozessmodellierung mit BPMN 2.0  
+
+– Historie und Charakterisierung von BPMN 
+
+– Basiskonstrukte für einfache Modelle 
+
+– Verfeinerung der Basiskonstrukte 
+
+– Erweiterte Ereignisbehandlung und Fehlermanagement  
+
+– Kollaboration, Choreographie und Konversation 
+
+– Weiterführendes: Metamodell und Abbildung auf BPEL 
+
+ 
+
+ 
+
+Hinweis: Alle Beispielabbildungen in dieser Präsentation sind bis auf gekennzeichnete Ausnahmen der BPMN-Spezifikation 
+entnommen (Dokument-ID: formal/2011-01-03), die unter http://www.omg.org/spec/BPMN/2.0/ eingesehen werden kann. 
+Als Quellenangabe wird lediglich die Abbildungs- oder Tabellennummer aus der BPMN-Spezifikation verwendet.  
+
+ProzIS 14/15 | Michael Fellmann 
+
+2  
+
+Einführung 
+Warum BPMN? 
+
+Quelle: Freund, Jakob; Rücker, Bernd (2012): Praxishandbuch BPMN 2.0. In: Praxishandbuch BPMN 2.0:XIII. 
+
+ProzIS 14/15 | Michael Fellmann 
+
+3  
+
+BPMN > Historie und Charakterisierung 
+
+Ziele der „Business Process Model and Notation“ (BPMN) 
+Ein Zitat aus der Spezifikation 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+„The primary goal of BPMN is to provide a notation that is readily 
+
+understandable by all business users, from the business analysts that create 
+
+the initial drafts of the processes, to the technical developers responsible for 
+
+implementing the technology that will perform those processes, and finally, to 
+
+the business people who will manage and monitor those processes.“  
+
+– BPMN 2 Spezifikation, S. 1 
+
+ProzIS 14/15 | Michael Fellmann 
+
+4  
+
+BPMN > Historie und Charakterisierung 
+
+Historische Betrachtung 
+Entwicklung des Standards im Zeitverlauf 
+
+Sprachen der Informationsmodellierung > Verhaltensbeschreibung > BPMN 
+
+Historie 
+ 
+
+– 2002:  
+
+Entwicklung durch den IBM-Mitarbeiter Stephen A. White, veröffentlicht 
+
+ 
+
+ 
+
+ 
+
+– 2005:  
+
+   
+
+ 
+
+durch die Business Process Management Initiative (BPMI) 
+
+Die Object Management Group (OMG) übernimmt die Spezifikation, 
+die BPMI fusioniert mit der OMG  BPMN gilt als Standard der OMG. 
+
+– 2006:  
+
+Verabschiedung von BMPN 1.0 als offizieller Standard der OMG; 
+
+ 
+
+ 
+
+ 
+
+BPMN wird von der Software-Industrie sehr gut angenommen.  
+
+– 2010:  
+
+Verabschiedung von BPMN 2.0  
+
+ 
+
+ 
+
+(nach Weiterentwicklung und Erweiterung der ersten Version). 
+
+www.omg.org/spec/BPMN/2.0/ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+5  
+
+BPMN > Historie und Charakterisierung 
+
+Historische Betrachtung 
+Neuerungen in der BPMN-Version 2.0 
+
+Semantische Erweiterungen 
+
+Sprachen der Informationsmodellierung > Verhaltensbeschreibung > BPMN 
+
+– Definition von Choreographie-Diagrammen 
+
+– Definition von Konversationsdiagrammen 
+
+– Erweiterungen für menschliche Interaktionen 
+
+Semantische Verfeinerungen 
+
+– Für Ereignisse  
+
+• Kombination mehrerer Ereignisse, nicht-unterbrechende Ereignisse 
+
+• Event-Subprozesse für einen Prozess 
+
+– Definition von Erweiterungsmöglichkeiten 
+
+• Erweiterung von Prozessen um grafische Elemente 
+
+Konkretisierung der Spezifikation 
+
+– Definition eines Metamodels, Formalisierung der Ausführungssemantik 
+
+– Auflösung von bekannten Inkonsistenzen und Unklarheiten 
+
+ProzIS 14/15 | Michael Fellmann 
+
+6  
+
+BPMN > Historie und Charakterisierung 
+
+Charakterisierung von BPMN 
+Eingrenzung des Gegenstandsbereichs 
+
+Fokus von BPMN  
+
+– Konstrukte, die in einem engen und unmittelbaren Zusammenhang 
+
+mit den Geschäftsprozessen stehen, wie  
+
+• Durchzuführende Aktivitäten und ihre zeitliche und logische Abfolge 
+
+• Beteiligte Organisationseinheiten und Daten 
+
+ 
+
+Nicht Fokus von BPMN 
+
+– Keine Unterstützung für 
+
+• Ressourcen und Organisationale Strukturen 
+
+• Strategiemodelle 
+
+– Nur rudimentäre Unterstützung für 
+
+• Datenmodelle 
+
+• Funktionale Zerlegungen 
+
+• Geschäftsregeln 
+
+ProzIS 14/15 | Michael Fellmann 
+
+7  
+
+BPMN > Basiskonstrukte 
+
+Agenda 
+
+Semantische Prozessmodellierung mit BPMN 2.0  
+
+– Historie und Charakterisierung von BPMN 
+
+– Basiskonstrukte für einfache Modelle 
+
+– Verfeinerung der Basiskonstrukte 
+
+– Erweiterte Ereignisbehandlung und Fehlermanagement  
+
+– Kollaboration, Choreographie und Konversation 
+
+– Weiterführendes: Metamodell und Abbildung auf BPEL 
+
+ 
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+8  
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Vorüberlegungen 
+
+Konfliktäre Designziele  
+
+– Einfache, intuitiv verständliche Notation. 
+
+– Beherrschung der mit der Ausführung von Geschäftsprozessen einhergehenden fach-
+
+lichen und technischen Komplexität, insbesondere bei der Behandlung von 
+
+Ausnahmen. 
+
+ Problem: Wie kann beides kombiniert werden? 
+
+ 
+
+Auflösung der Widersprüche 
+
+– Notations-Kategorien zur Reduktion der grafischen Vielfalt der Sprachkonstrukte. 
+
+   Intuitive Verständlichkeit, zumindest der Grundbedeutung eins Modells 
+
+– Verfeinerungen der Konstrukte durch geringfügige Notations-Modifikationen. 
+
+   Erhöhung  der Ausdrucksstärke, Präzisierung der Semantik  
+
+– Attributierung zur Ergänzung ausführungsrelevanter technischer Informationen. 
+
+   Vermeidung einer Überfrachtung der grafischen Darstellung 
+
+ProzIS 14/15 | Michael Fellmann 
+
+9  
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Notationskategorien 
+
+Die vier grundlegenden Kategorien sind: 
+
+  
+
+ 
+
+Flow Objects,  Connecting Objects,  Swimlanes  und  Artifacts  
+
+Beispiele für Flussobjekte: 
+
+ 
+
+• Ereignis 
+
+• Aktivität 
+
+• Gateway  
+
+ 
+
+Beispiele für 
+
+Verbindungsobjekte: 
+
+ Flussobjekte sind die 
+
+ 
+
+Knoten im Graph  
+
+• Sequenzfluss 
+
+• Nachrichtenfluss 
+
+• Assoziation  
+
+ 
+
+ Flussobjekte sind die 
+
+Kanten im Graph 
+
+Beispiele für Artefakte: 
+
+ 
+
+• Datenobjekt 
+
+• Gruppe 
+
+• Annotation 
+
+ 
+
+ Erweiterung des Modells  
+
+Beispiele für Schwimmbahnen: 
+
+ 
+
+• Pools 
+
+• Lanes 
+
+ 
+
+ Strukturierung des Modells 
+
+ProzIS 14/15 | Michael Fellmann 
+
+10  
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Ereignis 
+
+Semantik 
+
+– Ein Ereignis ist etwas, das im Rahmen eines Geschäftsprozesses passiert. Ereignisse 
+
+wirken sich auf den Fluss innerhalb des Prozesses aus und haben 
+
+• eine Ursache (Auslöser) oder 
+
+• eine Wirkung (Ergebnis).  
+
+ 
+
+– Es gibt drei Typen von Ereignissen, je nachdem wann sie im Fluss auftreten: 
+
+Start-Ereignisse, Zwischen-Ereignisse und End-Ereignisse.  
+ 
+
+Notation 
+
+ 
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+Startereignis 
+
+Zwischenereignis 
+
+Endereignis 
+
+ProzIS 14/15 | Michael Fellmann 
+
+11  
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Aktivität 
+
+Semantik 
+
+– Aktivitäten können atomar (nicht sinnvoll weiter zerlegbar) oder nicht-atomar sein und 
+
+unterschieden werden in Prozesse, Sub-Prozesse und Tasks. 
+
+– Die Verfeinerung einer Aktivität stellt einen Subprozess dar. Der Sequenzfluss kann die 
+
+Begrenzung des Subprozess nicht überschreiten. 
+
+Notation 
+
+– Während Prozesse in Pools dargestellt werden, werden Tasks und Sub-Prozesse mit 
+
+abgerundeten Rechtecken dargestellt. 
+
+– Enthält eine Aktivität einen Subprozess, so kann dieser verborgen und durch ein „+“ 
+
+gekennzeichnet werden.  
+
+ 
+
+2
+
+.
+
+Zugeklappter 
+Unterprozess 
+
+Aufgeklappter 
+Unterprozess 
+
+5
+2
+
+.
+
+0
+1
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+12  
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+;
+
+6
+2
+0
+1
+
+.
+
+ 
+,
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Gateway 
+
+Semantik 
+
+– Der Terminus des „Gate“ ist angelehnt an die in elektronischen Schaltungen 
+
+vorkommenden logischen Gatter. 
+
+– Ein Gate wird benutzt, um das Auseinander- und Zusammenlaufen des Kontrollflusses 
+
+zu steuern. 
+
+– Über Gates können Abzweigungen, Aufspaltungen, Verschmelzungen und 
+
+Zusammenführungen von Pfaden realisiert werden.  
+
+– Interne Marker zeigen den Typ der Verhaltenssteuerung an. 
+
+ 
+
+Notation 
+
+ProzIS 14/15 | Michael Fellmann 
+
+13  
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Datenbasiertes exklusives Gateway (XOR-Split, XOR-Join) 
+
+Semantik 
+
+– Bei einer Verzweigung (XOR-Split) lässt das Gate den Kontrollfluss (die Tokens) 
+
+abhängig von Verzweigungsbedingungen an genau einer ausgehenden Kante passieren.  
+
+– Bei einer Zusammenführung (XOR-Join) wird auf eine der eingehenden Kante gewartet, 
+
+um den ausgehenden Sequenzfluss zu aktivieren. 
+
+ 
+
+Notation (mit Kontext, XOR-Split) 
+
+ 
+
+ 
+
+6
+0
+1
+
+.
+
+0
+1
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+Der Marker „X“ kann auch entfallen 
+
+Standardfluss 
+(siehe die Verfeinerungen des 
+Sequenzfluss-Konstrukts) 
+
+ProzIS 14/15 | Michael Fellmann 
+
+14  
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Verbindungsobjekte 
+
+Semantik 
+
+– Sequenzfluss: Zeigt die Reihenfolge, in der Aktivitäten ausgeführt werden. 
+
+– Nachrichtenfluss: Zeigt den Fluss von Nachrichten zwischen Teilnehmern  
+
+(z.B. Geschäftspartnern), die sich in separaten Pools befinden können und deren 
+
+Prozesse Aktivitäten zum Senden und empfangen enthalten.  
+
+– Assoziation: Eine gerichtete Kante, welche die Zuordnung von Datenobjekten zu 
+
+Flussobjekten erlaubt.  
+ 
+
+Notation 
+
+ 
+
+Sequenzfluss 
+
+Nachrichtenfluss 
+
+Assoziationen 
+
+ 
+
+1
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+15  
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Zulässige Verbindung zwischen Objekten: Sequenzflussregeln  
+
+ 
+
+3
+
+.
+
+7
+
+ 
+.
+
+ 
+
+b
+a
+T
+2
+N
+M
+P
+B
+n
+
+ 
+
+i
+ 
+,
+
+n
+o
+
+i
+t
+
+a
+k
+i
+f
+i
+z
+e
+p
+S
+
+-
+2
+
+.
+
+ 
+
+1
+N
+M
+P
+B
+
+ 
+:
+
+e
+
+l
+l
+
+e
+u
+Q
+
+Ausnahmen, d.h. nicht erlaubt: 
+
+• Verbindungen zwischen Aktivitäten verschiedener Pools 
+
+• Verbindungen zwischen zugeklapptem Unterprozess und Umgebung   
+
+ 
+
+= Verbindung erlaubt 
+
+ProzIS 14/15 | Michael Fellmann 
+
+16  
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Schwimmbahnen 
+
+Semantik 
+
+– Pools: Ein Pool repräsentiert einen Teilnehmer in einem Prozess. Er fungiert als ein 
+
+graphischer Container, der eine Menge von Aktivitäten bzw. Prozessen in Partitionen 
+
+zerlegt. Der Sequenzfluss darf Poolgrenzen nicht überschreiten. 
+
+– Lanes: „Schwimmbahnen“ sind Sub-Partitionen von Pools und unterteilen diese über 
+
+die gesamte Länge, horizontal oder vertikal. Lanes werden verwendet, um Aktivitäten 
+
+zu organisieren und kategorisieren. 
+
+ 
+
+Notation  
+
+Pool 
+
+ 
+
+1
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+Lane 
+
+Lane 
+
+ProzIS 14/15 | Michael Fellmann 
+
+17  
+
+BPMN > Basiskonstrukte 
+
+Konstrukte der BPMN 
+Artefakte 
+
+Typen und Nutzung  
+
+– Artefakte werden benutzt, um zusätzliche Informationen zur Verfügung zu stellen.  
+
+– Neben durch die BPMN-Spezifikation standardisierten Artefakten können 
+
+Modellierungswerkzeuge beliebige weitere Artefakte hinzufügen. 
+
+Semantik     
+
+– Data Object: Datenobjekte stellen Informationen darüber bereit, welche Informationen 
+
+eine Aktivität zur Ausführung benötigt und/oder produziert. 
+
+– Group: Erlaubt die Zusammenfassung von Aktivitäten, welche sich in der gleichen 
+
+Kategorie befinden, zu Gruppen. Sie dienen der Dokumentation / Analyse.  
+
+– Annotation: Text-Annotationen erlauben die Angabe beliebiger, weitere Informationen.  
+
+ 
+
+Notation 
+
+ 
+
+1
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+Informationsobjekt 
+
+Gruppe 
+
+Text-Annotation 
+
+ProzIS 14/15 | Michael Fellmann 
+
+18  
+
+BPMN > Basiskonstrukte 
+
+Beispielprozess 
+Bestellabwicklung 
+
+ 
+
+4
+9
+
+.
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+19  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Agenda 
+
+Semantische Prozessmodellierung mit BPMN 2.0  
+
+– Historie und Charakterisierung von BPMN 
+
+– Basiskonstrukte für einfache Modelle 
+
+– Verfeinerung der Basiskonstrukte 
+
+– Erweiterte Ereignisbehandlung und Fehlermanagement  
+
+– Kollaboration, Choreographie und Konversation 
+
+– Weiterführendes: Metamodell und Abbildung auf BPEL 
+
+ 
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+20  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung der Aktivitäten 
+Hinzufügung eines Aktivitätstyps (kleine Symbole oben links) 
+
+ 
+
+.
+
+9
+2
+1
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+Alternative Verfeinerungen: 
+
+• Aktivitäten, die Ereignis-Unterprozesse repräsentieren, können durch den Typ sie 
+
+auslösender Ereignisse verfeinert werden. (vgl. Tab. 12.16) 
+
+• Aktivitäten, die global definierte Aktivitäten aufrufen (Aufruf-Aktivitäten) werden durch die 
+  Angabe des Aktivitätstyps, den sie aufrufen, verfeinert. (vgl. Tab. 12.18)   
+
+ProzIS 14/15 | Michael Fellmann 
+
+21  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Aktivitäts-Konstrukts 
+Schleifen-, Mehrfachinstanz-, Ad-hoc- und Kompensations-Aktivität 
+
+Semantik 
+
+– Durch Attribut-Hinterlegungen kann für Tasks und Sub-Prozesse bestimmt werden, ob 
+
+diese wiederholt oder nur einmalig auszuführen sind. 
+
+• Die wiederholte Ausführung kann sowohl durch Schleifen-Aktivitäten als auch 
+
+durch mehrere Instanzen (Mehrfachinstanz-Aktivitäten) realisiert werden.  
+
+• Während Schleifen sequenziell ausgeführt werden, kann bei mehrfachen 
+
+Instanzen die Ausführung wahlweise auch parallel erfolgen.  
+
+– Ad-hoc-Sub-Pozesse enthalten ausschließlich Tasks. Diese Tasks können beliebig oft 
+
+ausgeführt werden. Ein Ad-hoc-Prozess endet, wenn die Endbedingung erfüllt ist. 
+
+– Kompensations-Aktivitäten dienen dem „Rückgängigmachen“ von Aktivitäen.  
+
+Notation 
+
+ 
+
+ 
+
+Schleife 
+
+Mehrfachinstanz 
+parallel 
+
+Mehrfachinstanz 
+sequentiell 
+
+Ad-hoc- 
+Prozess 
+
+Kompensation 
+
+ 
+
+3
+1
+-
+2
+1
+2
+1
+
+.
+
+ 
+;
+
+8
+
+.
+
+2
+1
+
+ 
+;
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+22  
+
+~BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Aktivitäts-Konstrukts 
+Kombination von Verfeinerungen 
+
+Es sind prinzipiell die gleichzeitige Verwendung mehrerer Aktivitäts-Konstrukt-
+
+Verfeinerungen, die durch Marker am unteren Rand angezeigt werden, zulässig. 
+
+Ausnahme: Schleife und mehrfache Instanz dürfen nicht zusammen auftreten. 
+
+6
+2
+0
+1
+
+.
+
+ 
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+23  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Aktivitäts-Konstrukts 
+Choreographie-Aktivität 
+
+Semantik  
+
+– Die Verfeinerung der Aktivität gibt Aufschluss über die involvierten Partner. 
+
+– Partner, die die Aktivität initiieren, werden ohne Schattierung dargestellt. 
+
+ 
+
+Notation 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+Choreographie-Aktivität mit 
+zugeklapptem Unterprozess 
+ 
+
+ 
+ 
+
+Choreographie-Aktivität mit 
+aufgeklapptem Unterprozess 
+
+Es sind zusätzliche Verfeinerungen wie Parallelausführung  
+
+und ein- und ausgehende Nachrichten möglich, Notation siehe rechts. 
+
+ 
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+.
+
+3
+3
+2
+1
+-
+7
+2
+2
+1
+
+.
+
+ 
+.
+
+ 
+
+b
+a
+T
+
+ProzIS 14/15 | Michael Fellmann 
+
+24  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Gate-Konstrukts 
+Abbildung (nicht nur) logischer Operationen  
+
+Übersicht 
+
+ 
+
+3
+2
+
+.
+
+2
+1
+
+ 
+;
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+25  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Gate-Konstrukts 
+Paralleles Gateway, verzweigend (AND-Split), explizit und implizit 
+
+Semantik 
+
+– Bei der Verzweigung werden alle ausgehenden Kanten simultan aktiviert, d.h. das 
+
+Gate schickt zu jeder ausgehenden Kante ein Token heraus (AND-Split).  
+
+ 
+
+Notation (mit Kontext, AND-Split) 
+
+ 
+
+ 
+
+0
+1
+1
+
+.
+
+0
+1
+
+ 
+;
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ Semantisch äquivalent 
+
+Achtung: Die entsprechenden zus.führenden Konstrukte sind semantisch NICHT äquivalent! 
+
+ProzIS 14/15 | Michael Fellmann 
+
+26  
+
+BPMN > Basiskonstrukte 
+
+Verfeinerung des Gate-Konstrukts 
+Paralleles Gateway, zusammenführend (AND-Join), explizit 
+
+Semantik 
+
+Hinweis: 
+
+– Bei der Zusammenführung wird gewartet, 
+
+bis auf allen eingehenden Kanten ein  
+
+Token eingetroffen ist, erst dann wird  
+
+zum Ausgang ein Token geschickt  
+
+(AND-Join). 
+ 
+
+Notation (mit Kontext, AND-Join) 
+
+ 
+
+Semantisch äquivalent zum 
+
+XOR- oder OR-Gate 
+
+ 
+
+1
+1
+1
+
+.
+
+0
+1
+
+ 
+;
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ Wenn bei der Zusammenführung  
+synchronisiert werden soll, muss  
+dies explizit durch ein AND-Gate  
+angezeigt werden 
+
+ProzIS 14/15 | Michael Fellmann 
+
+27  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Gate-Konstrukts 
+Datenbasiertes inklusives Gateway (OR-Split/Join), explizit und implizit 
+
+Semantik 
+
+– Bei einer Verzweigung (OR-Split) prüft das Gate anhand von 
+
+Verzweigungsbedingungen für jede ausgehende Kante separat, ob diese zu aktivieren 
+
+ist oder nicht, d.h. es können null, eine mehrere ausgehende Kanten aktiviert werden.  
+
+– Bei einer Vereinigung (OR-Join) wird auf alle aktiven eingehenden Kanten gewartet, 
+
+d.h. für die der Empfang von Tokens möglich ist. 
+
+ 
+
+Notation (mit Kontext, OR-Split) 
+
+ 
+
+ 
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ Semantisch äquivalent 
+
+ProzIS 14/15 | Michael Fellmann 
+
+28  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Ereignis-Konstrukts 
+Präzisierung der Semantik 
+
+Weitere Gliederung der Ereignisse  
+
+ 
+
+ 
+
+– nach dem  Typ  
+
+ 
+
+Der Typ spezifiziert die Ursache des 
+
+Auslösens eines Ereignisses, wie 
+
+bspw. Nachrichten, Zeit, Fehler etc. 
+
+– nach  eintretenden  („catch“) Ereignissen und  auslösenden  („throw“) sowie nach  
+
+ 
+
+                      unterbrechenden/nicht unterbrechenden        Ereignissen. 
+
+Reaktion auf ein Signal.   
+
+Auftreten bei Startereignissen und 
+
+Zwischenereignissen. 
+
+Erzeugung eines Signals. 
+
+Auftreten bei Zwischenereignissen und 
+
+Endereignissen. 
+
+Steuerung des Ablaufs. 
+
+Nicht-unterbrechende Ereignisse 
+
+können bspw. zur Überwachung 
+
+laufender Aktivitäten eingesetzt werden.  
+
+ProzIS 14/15 | Michael Fellmann 
+
+29  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Ereignis-Konstrukts 
+Übersicht über die Ereignis-Typen 
+
+ 
+
+2
+2
+
+.
+
+2
+1
+
+ 
+;
+
+3
+9
+0
+1
+
+.
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+30  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Ereignis-Konstrukts 
+Übersicht über die Ereignis-Typen 
+
+ 
+
+2
+2
+
+.
+
+2
+1
+
+ 
+;
+
+3
+9
+0
+1
+
+.
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+31  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung des Ereignis-Konstrukts 
+Beispiel: Semantische Präzisierung des Nachrichten-Ereignisses  
+
+Eintretend 
+
+Auslösend 
+
+ 
+
+2
+2
+
+.
+
+2
+1
+
+ 
+;
+
+3
+9
+0
+1
+
+.
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+Start-Ereignis, das eine 
+
+neue Prozessinstanz 
+
+oder einen Event-
+
+Subprozess startet. 
+
+Start-Ereignis eines Ereignis-
+
+Unterprozesses, das den 
+
+Hauptprozess nicht stoppt. 
+
+Zwischen-Ereignis. In Prozess eingebettet: 
+
+Fortsetzung nach Empfang einer Nachricht. 
+
+An Aktivität angeheftet: Abbruch der Aktivität 
+
+bei Empfang einer Nachricht.  
+
+End-Ereignis, das mit 
+
+dem Senden einer 
+
+Nachricht einhergeht.  
+
+Zwischenereignis, das mit 
+
+dem Senden einer Nachricht 
+
+einhergeht. Danach wird der 
+
+Prozess fortgesetzt. 
+
+Nicht-unterbrechendes 
+
+Zwischenereignis, das an Aktivitäten 
+
+angeheftet werden kann, um auf 
+
+eingehende Nachrichten während der 
+
+Aktivitätsausführung zu reagieren. 
+
+ProzIS 14/15 | Michael Fellmann 
+
+32  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung der Verbindungskonstrukte 
+Präzisierung der Sequenz-, Nachrichten- und Assoziationstypen 
+
+ 
+
+5
+3
+2
+1
+
+.
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ Implizite Gruppierung ähnlicher Verbindungsobjekte über den Linien- und Pfeiltyp 
+
+ProzIS 14/15 | Michael Fellmann 
+
+33  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Verfeinerung der Datenobjekt- und Pool-Konstrukte  
+Präzisierung durch Hinzufügung von Symbolen zu den Basis-Shapes 
+
+t 
+
+Tab. 12.21; 12.26 
+
+Tab. 12.26 
+
+ProzIS 14/15 | Michael Fellmann 
+
+34  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Nachrichtenfluss-Verbindungsregeln 
+Zulässige Kommunikation zwischen verschiedenen Objekten 
+
+ 
+
+4
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+Ausnahmen, d.h. nicht erlaubt: Nachrichten zwischen Objekten im gleichen Pool.   
+
+= Nachrichtenfluss erlaubt 
+
+ProzIS 14/15 | Michael Fellmann 
+
+35  
+
+BPMN > Verfeinerung der Basiskonstrukte 
+
+Aufgabe 
+Interpretation eines BPMN-Diagramms 
+
+Erläutern Sie den Ablauf mit Ihren eigenen Worten! 
+
+ 
+
+1
+
+.
+
+0
+1
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+36  
+
+BPMN > Ereignisbehandlung und Fehlermanagement 
+
+Agenda 
+
+Semantische Prozessmodellierung mit BPMN 2.0  
+
+– Historie und Charakterisierung von BPMN 
+
+– Basiskonstrukte für einfache Modelle 
+
+– Verfeinerung der Basiskonstrukte 
+
+– Erweiterte Ereignisbehandlung und Fehlermanagement  
+
+– Kollaboration, Choreographie und Konversation 
+
+– Weiterführendes: Metamodell und Abbildung auf BPEL 
+
+ 
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+37  
+
+BPMN > Ereignisbehandlung und Fehlermanagement 
+
+Angeheftete Zwischenereignisse 
+Initiierung von Ausnahmeflüssen 
+
+Semantik 
+
+– Allgemein werden angeheftete Zwischen-Ereignisse entsprechend der Ereignis-
+
+Typdimension extern (z.B. Zeit) oder durch die Ausführung einer Aktivität ausgelöst 
+
+(z.B. Fehler). 
+
+– Im Falle des angeheftete Fehler-Zwischenereignisses wird dieses ausgelöst, wenn ein 
+
+Fehler bei der Aktivitätsausführung auftritt (Analogie: Sog. „Exception-Handling“ in 
+
+etablierten Programmiersprachen).  
+
+ 
+
+Notation (mit Kontext) 
+
+ 
+
+Angeheftetes Zwischen-Ereignis 
+
+ 
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+Ausnahmefluss 
+
+Ausnahmebehandlung 
+
+ProzIS 14/15 | Michael Fellmann 
+
+38  
+
+BPMN > Ereignisbehandlung und Fehlermanagement 
+
+Angeheftete Zwischenereignisse 
+Initiierung von Kompensationen 
+
+Semantik 
+
+– In manchen Situationen müssen die Effekte einer Aktivität rückgängig gemacht 
+
+werden, etwa beim Scheitern einer Transaktion. Der Bedarf zur Rückgängigmachung 
+
+wird durch ein angeheftetes Kompensations-Zwischenereignis detektiert.  
+
+– Das Kompensations-Zwischenereignis setzt ein Token in die Kompensations-
+
+Assoziation; diese tritt außerhalb des Sequenzflusses auf. Das Ziel der Assoziation 
+
+muss als Kompenations-Aktivität markiert sein (Rückwärtspfeil ähnlich wie bei Medien-
+
+Abspielgeräten). 
+
+ 
+
+Notation (mit Kontext) 
+
+ 
+
+ 
+
+Kompensations-Assoziation 
+
+Kompensierungs-Aktivität 
+
+ 
+s
+a
+d
+
+ 
+t
+l
+
+h
+e
+
+f
+ 
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+n
+
+ 
+
+I
+(
+ 
+1
+2
+
+.
+
+0
+1
+
+ 
+;
+
+2
+
+.
+
+7
+
+ 
+.
+
+b
+a
+T
+
+ 
+
+ 
+)
+t
+ä
+
+t
+i
+v
+i
+t
+k
+A
+
+-
+s
+n
+o
+
+i
+t
+
+a
+s
+n
+e
+p
+m
+o
+K
+
+ 
+r
+e
+d
+
+ 
+i
+
+e
+b
+
+ 
+l
+
+o
+b
+m
+y
+S
+
+ProzIS 14/15 | Michael Fellmann 
+
+39  
+
+BPMN > Ereignisbehandlung und Fehlermanagement 
+
+Ereignis-Unterprozesse 
+Initiierung von lokal in einer Aktivität spezifizierten Unterprozessen durch Ereignisse  
+
+Beispiel 1 
+
+ 
+
+2
+2
+1
+
+.
+
+0
+1
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+Ereignis- 
+Unterprozess 
+
+ProzIS 14/15 | Michael Fellmann 
+
+40  
+
+BPMN > Ereignisbehandlung und Fehlermanagement 
+
+Ereignis- 
+Unterprozesse 
+
+Beispiel 2 
+
+Durch die drei Ereignis- 
+Unterprozesse können 
+verschiedene Dinge 
+erreicht werden:  
+Status-Updates, 
+Rückabwicklung im 
+Falle des Scheiterns und 
+Fehlerbehandlung. 
+
+ 
+
+2
+3
+
+.
+
+0
+1
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+41  
+
+BPMN > Ereignisbehandlung und Fehlermanagement 
+
+Transaktionen  
+Grundform 
+
+Semantik 
+
+– Eine Transaktion ist eine Sub-Prozess bestehend aus Aktivitäten, die logisch 
+
+zusammengehören. 
+
+– Zu einer Transaktion kann ein Protokoll mitgeführt werden, aus dem hervorgeht, ob alle 
+
+an der Transaktion beteiligten Parteien der weiteren Ausführung oder dem Abbruch 
+
+zustimmen. 
+
+ 
+
+Notation 
+
+ 
+
+5
+1
+-
+4
+1
+2
+1
+
+.
+
+ 
+.
+
+b
+a
+T
+
+Zugeklappter  
+Transaktions-Unterprozess 
+
+Aufgeklappter  
+Transaktions-Unterprozess 
+
+ProzIS 14/15 | Michael Fellmann 
+
+42  
+
+BPMN > Ereignisbehandlung und Fehlermanagement 
+
+Transaktionen 
+Transaktion mit Ereignisbehandlung  
+
+Beispiel: Bestellung maßgefertigter Produkte 
+
+– Ein Abbruch an beliebiger Stelle im Prozess mittels eines auslösenden Abbruch-
+
+Ereignisses führt zum Auslösen des Transaktionsabbruchs. 
+
+– Der Transaktionsabbruch führt zur Auslösung der in der Transaktion spezifizierten 
+
+Kompensations-Zwischenereignisse, die nun die Kompensationsaktivitäten starten. 
+
+ 
+
+Material 
+bestellen 
+
+Bestellung 
+zurückrufen 
+
+ProzIS 14/15 | Michael Fellmann 
+
+Quelle: Eigene Erstellung 
+
+43  
+
+Abbruch des BestellvorgangsErfolgDaten des Bestellvorgangs löschenAuftrag abwickelnVerbindlichen Kundenwunsch abfragenMaterial bestellenBestellung zurückrufenProdukt konfigurierenZeitlimit überschrittenAbbruch...BPMN > Kollaboration, Choreographie und Konversation 
+ 
+
+Agenda 
+
+Semantische Prozessmodellierung mit BPMN 2.0  
+
+– Historie und Charakterisierung von BPMN 
+
+– Basiskonstrukte für einfache Modelle 
+
+– Verfeinerung der Basiskonstrukte 
+
+– Erweiterte Ereignisbehandlung und Fehlermanagement  
+
+– Kollaboration, Choreographie und Konversation 
+
+– Weiterführendes: Metamodell und Abbildung auf BPEL 
+
+ 
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+44  
+
+BPMN > Kollaboration, Choreographie und Konversation 
+ 
+
+Abstrakte Prozesse 
+Auch verstehbar als Modellierung „einseitig“ betrachteter Kollaborationen 
+
+Charakterisierung 
+
+– Der abstrakte Prozess zeigt die Reihenfolge benötigter Nachrichten. 
+
+– Lediglich diejenigen Aktivitäten, die zur Kommunikation eines internen Prozesses mit 
+
+seiner Umwelt erforderlich sind sowie die erforderlichen Kontrollflüsse sind im 
+
+abstrakten Prozessmodell enthalten.   
+
+ 
+
+2
+7
+
+.
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+45  
+
+BPMN > Kollaboration, Choreographie und Konversation 
+ 
+
+Kollaborationen 
+Modellierung von Interaktion zwischen Partnern 
+
+Charakterisierung 
+
+– Eine Kollaboration zeigt die Interaktionen zwischen zwei oder mehreren Geschäfts-
+
+entitäten anhand der Abfolge der zwischen ihnen ausgetauschten Nachrichten.  
+
+ 
+
+3
+7
+
+.
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+46  
+
+BPMN > Kollaboration, Choreographie und Konversation 
+ 
+
+Choreographien 
+Modellierung der in Kollaborationen notwendigen Aktivitäten 
+
+Charakterisierung: Choreographien fokussieren Tätigkeiten ohne zentrale Kontrolle. 
+
+Beispiel einer Kollaboration 
+
+Mit der Kollaboration korrespondierende 
+Choreographie 
+
+ProzIS 14/15 | Michael Fellmann 
+
+ Abb. 11.40-41 
+
+47  
+
+BPMN > Kollaboration, Choreographie und Konversation 
+ 
+
+Choreographien 
+Verbindung einer Choreographie mit einem abstrakten und einem privaten Prozess 
+
+ProzIS 14/15 | Michael Fellmann 
+
+ 
+.
+
+b
+b
+A
+
+48  
+
+ 
+
+2
+3
+9
+
+.
+
+BPMN > Kollaboration, Choreographie und Konversation 
+ 
+
+Konversationen 
+Beschreibung abstrakter Prozesse 
+
+Charakterisierung 
+
+– Konversationen sind vereinfachte Kollaborationen. Sie zeigen die Zusammenarbeit der 
+
+beteiligten Partner über Nachrichtenaustäusche auf einer aggregierten Ebene auf. 
+
+ 
+
+ 
+
+Beispiel 
+
+(zusammen- 
+
+geklappt) 
+
+ 
+
+ 
+
+ 
+
+Beispiel 
+
+(expandiert)  
+
+ 
+
+0
+4
+
+.
+
+1
+1
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+1
+4
+
+.
+
+1
+1
+
+ 
+.
+
+b
+b
+A
+
+Weitere Details zur Notation auch in Tab. 12.34 
+
+ProzIS 14/15 | Michael Fellmann 
+
+49  
+
+BPMN > Kollaboration, Choreographie und Konversation 
+ 
+
+Konversationen 
+Erweitertes Beispiel 
+
+ 
+
+5
+7
+
+.
+
+ 
+.
+
+b
+b
+A
+
+ProzIS 14/15 | Michael Fellmann 
+
+50  
+
+BPMN > Kollaboration, Choreographie und Konversation 
+ 
+
+Konversationen 
+Verbindung einer Konversation  
+mit einem privaten Prozess 
+
+ 
+
+8
+2
+9
+
+.
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+51  
+
+BPMN > Metamodell, BPEL 
+
+Agenda 
+
+Semantische Prozessmodellierung mit BPMN 2.0  
+
+– Historie und Charakterisierung von BPMN 
+
+– Basiskonstrukte für einfache Modelle 
+
+– Verfeinerung der Basiskonstrukte 
+
+– Erweiterte Ereignisbehandlung und Fehlermanagement  
+
+– Kollaboration, Choreographie und Konversation 
+
+– Weiterführendes: Metamodell und Abbildung auf BPEL 
+
+ 
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+52  
+
+BPMN > Metamodell, BPEL 
+
+Ausschnitt aus dem Metamodell 
+Beispiel: Verortung  der abstrakten Klasse „Event“ im Metamodell 
+
+ 
+)
+t
+t
+i
+
+n
+h
+c
+s
+s
+u
+A
+
+(
+ 
+0
+2
+8
+
+.
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+Verfeinerung auf nächster Folie 
+
+Klassennamen in Kursivschnitt sind abstrakte Klassen, also nicht direkt instanziierbar 
+
+ProzIS 14/15 | Michael Fellmann 
+
+53  
+
+BPMN > Metamodell, BPEL 
+
+Ausschnitt aus dem Metamodell 
+Subklassen der abstrakten Klasse „Event“ 
+
+Verfeinerung auf nächster Folie 
+
+ Abb. 8.20 (Ausschnitt) 
+
+ProzIS 14/15 | Michael Fellmann 
+
+54  
+
+BPMN > Metamodell, BPEL 
+
+Ausschnitt aus dem Metamodell 
+Abstrakte Klasse „EventDefinition“ als Basis zur Ereignistyp-Charakterisierung 
+
+ 
+
+3
+7
+
+.
+
+0
+1
+
+ 
+.
+
+b
+b
+A
+
+ 
+
+ BPMN ist selbst eine Art Modell. Dafür steht das „M“ in BPMN 
+
+ProzIS 14/15 | Michael Fellmann 
+
+55  
+
+BPMN > Metamodell, BPEL 
+
+Spezifikation einer Abbildung von BPMN auf BPEL 
+Am Beispiel der Schleifenaktivität 
+
+BPEL = Business 
+Process Execution 
+Language 
+
+ 
+
+4
+5
+4
+
+ 
+.
+
+S
+
+ 
+,
+.
+c
+e
+p
+S
+N
+M
+P
+B
+
+-
+
+ 
+
+ Das Mapping auf BPEL behebt einen großen Kritikpunkt der BPMN-Version 1.0 
+
+ProzIS 14/15 | Michael Fellmann 
+
+56  
+
+BPMN 
+
+Abschließende Bemerkung 
+Vor- und Nachteile, kritische Würdigung 
+
+Vorteile von BPMN 
+
+– Einfachheit (zumindest in der Grundform) durch Notations-Kategorien. 
+
+– Hohe Ausdrucksstärke und Präzision bei der Beschreibung des Systemverhaltens 
+
+hinsichtlich Fehler- und Ausnahmezuständen. 
+
+– Sprache erlaubt eine schrittweise Detaillierung durch die Verfeinerungen der 
+
+Basiskonstrukte und die Hinterlegung mit Attributen.   
+
+– Gute Akzeptanz in der Praxis, da OMG-Standard. 
+
+ 
+
+Nachteile von BPMN 
+
+– Komplexität der Sprache bei Ausnutzung aller Verfeinerungen hoch.  
+
+– Sprache deckt keine fachlichen Aspekte wie Ressourcen oder Ziele ab.  
+
+ 
+
+ProzIS 14/15 | Michael Fellmann 
+
+57  
+
+Notationsübersicht 
+
+Sprachen der Informationsmodellierung > Verhaltensbeschreibung > BPMN 
+
+ 
+
+www.bpmb.de/images/BPMN2_0_Poster_DE.pdf 
+
+ProzIS 14/15 | Michael Fellmann 
+
+58  
+
+Prozessorientierte  
+Informationssysteme 
+
+ 
+
+Lehrveranstaltung 
+
+an der Universität Osnabrück,  
+
+Wintersemester 2014/15 
+
+Dozenten: Dr. Michael Fellmann (Vorlesung), 
+
+Christina Niemöller, M. Sc., Dirk Metzger, M. Sc. with honors (Übung) 
+
+Fachgebiet Informationsmanagement und Wirtschaftsinformatik 
+
+ 
+ 
+
+  
+
+Prof. Dr. Oliver Thomas 
+
+ 
+
+Universität Osnabrück 
+
+ 
+
+

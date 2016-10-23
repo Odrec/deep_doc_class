@@ -1,0 +1,1322 @@
+Praxis Fernerkundung
+
+Analoge Bildauswertung
+
+Bastian Siegmann
+
+Universität Osnabrück
+
+Institut für Informatik
+
+Arbeitsgruppe Fernerkundung
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+1
+
+Analoge Bildauswertung
+
+ Luftbildphotographie
+ Zentralprojektion und Höhenversatz
+ Verzerrungsursachen
+ Interpretation
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+2
+
+Photographie
+
+ passives Verfahren
+
+ photographischen Prozesse sprechen auf Wellenlängen des 
+elektromagnetischen Spektrums zwischen 0,3 und 1,0 µm an
+
+ mittleres und thermisches Infrarot können mit keinem
+photographischen Prozess direkt festgehalten werden
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+3
+
+(Albertz 2001; verändert)
+
+Sonderstellung der Luftbildphotographie
+
+Luftbildphotographie
+
+Vorteile
+
+Nachteile
+
+ einziges Verfahren, bei dem 
+das strahlungsempfindliche 
+Material zugleich als 
+Speichermedium dient
+
+ erlaubt die gleichzeitige 
+
+flächenhafte Aufnahme sowie 
+die Speicherung riesiger 
+Datenmengen auf kleinem 
+Raum bei geringen Kosten
+
+ vielseitige 
+
+Auswertungsmöglichkeiten
+
+ radiometrische Kalibrierung 
+
+photographischer Systeme ist 
+schwierig und unsicher
+
+ photographisch erfassbare 
+
+Spektralbereich ist relativ eng 
+
+ photographischer Prozess 
+
+stellt einen unzweckmäßigen 
+Zwischenschritt dar, wenn die 
+aufgenommenen Daten 
+rechnerisch verarbeitet 
+werden sollen 
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+4
+
+Langenburg:
+
+Panchromatisches Luftbild
+
+(Feut 1998)
+
+Langenburg:
+
+Luftbild im NIR-Bereich
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+(Feut 1998)
+
+5
+
+Infrarotfarbfilme
+
+ Infrarotfarbfilme spielen eine große Rolle in der Luftbildinterpretation 
+
+(insbesondere für Vegetationsuntersuchungen)
+
+ Nutzung der Tatsache, dass spezifische Reflexionseigenschaften der 
+
+Vegetation im nahen Infrarot in direktem Zusammenhang mit dem 
+Vitalitätszustand der Pflanzen stehen
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+6
+
+(Lillesand et al. 2004)
+
+Im panchromatischen Bereich zeigen 
+Gras und künstlicher Rasen ähnliche 
+Farbtöne ...
+
+… während sie sich im nahen 
+Infrarot deutlich unterscheiden.
+
+(Lillesand et al. 2004)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+7
+
+Senkrecht- vs. Schrägbild
+
+Senkrechtluftbild
+
+Schrägluftbild
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+8
+
+Kartenerstellung mit Luftbildern
+
+Input: Luftbild
+
+Output: Karte
+
+(ITC-Lehrmaterial)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+9
+
+Kartierung von Erdbebenschäden
+
+Armenia (Kolumbien) vor dem Erdbeben
+
+Armenia (Kolumbien) nach dem Erdbeben
+
+(ITC Lehrmaterialien; verändert)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+10
+
+Informationsextraktion und -visualisierung
+
+(ITC Lehrmaterialien; verändert)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+11
+
+Visuelle Bildinterpretation
+
+ komplexer Gesamtprozess der Bildinterpretation läßt sich im wesentlichen 
+
+in zwei mehr oder weniger deutlich voneinander getrennte Stufen 
+unterscheiden:
+
+(Feut 1998)
+
+Erkennen von Objekten
+(beruht im wesentlichen auf den Erfahrungen, die ein Beobachter auf dem 
+Gebiet der optischen Wahrnehmung mitbringt)
+
+Interpretieren
+(bei dem aufgrund der erkannten Objekte Schlussfolgerungen gezogen werden; 
+dabei steht das bewusste Kombinieren mit speziellen Vorkenntnissen im 
+Vordergrund)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+12
+
+Interpretationsvorgang: Verschiedene Prozesse
+
+Spontanes Erkennen
+(Spontaneous recognition)
+
+INTER-
+
+PRETATION
+
+Logisches Ableiten
+
+(Logical Inference)
+
+Externe Information
+
+(External Information)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+13
+
+Spontanes Erkennen
+
+(Buddenbaum 2007)
+
+?
+
+?
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+14
+
+?
+
+Logisches Ableiten
+
+?
+
+Landsat TM 30.7.1984, FCC 432 
+
+Orthophoto Giessen, 1995
+
+(Buddenbaum 2007)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+15
+
+Externe Information
+
+Kaserne
+
+?
+
+?
+
+?
+
+?
+
+?
+
+?
+
+Bildmaterial:
+Ausschnitt eines
+Orthophotos von Gießen,
+Originalmaßstab 1 : 10.000
+Flug 5/95, Bild 7804
+
+(Buddenbaum 2007)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+16
+
+Fachwissen / Lokalkenntnisse (1)
+
+Traditionelle vs. moderne Landwirtschaft
+
+SW-Luftbild aus Somalia (Bild 3604), Originalmaßstab 1 : 30.000, f = 88 mm 
+
+(Buddenbaum 2007)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+17
+
+Fachwissen / Lokalkenntnisse (2)
+
+Luftbild: Eingezäuntes Gehöft (Somalia) 
+
+?
+
+SW-Luftbild aus Somalia (Bild 3604), 
+Originalmaßstab 1 : 30.000, f = 88 mm 
+
+(Buddenbaum 2007)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+18
+
+Fachwissen / Lokalkenntnisse (3)
+
+‚Toter‘ Mäander mit Landwirtschaft
+
+SW-Luftbild, Somalia (Bild 3266, 26-1-1983), Originalmaßstab 1 : 30.000, f = 153 mm 
+
+(Buddenbaum 2007)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+19
+
+Fachwissen / Lokalkenntnisse (4)
+
+Luftbild: Teeplantage (Sri Lanka)
+
+Unterkünfte der
+Plantagenarbeiter?
+
+SW-Luftbild, Sri Lanka,
+Originalmaßstab ca. 1 : 30.000 
+
+Teefabrik?
+
+(Buddenbaum 2007)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+20
+
+?
+
+?
+
+?
+
+?
+
+„Abgrenzung“ vs. „Identifizierung“
+
+Zwei (simultane) Prozesse: 
+
+• Abgrenzen („Delineation“)
+
+• Erkennen (Identifizierung, 
+
+„Identification“)
+
+Vier Möglichkeiten:
+
+1. Objekt klar identifizierbar und
+
+klar abgrenzbar.
+
+2. Objekt klar identifizierbar, aber 
+
+schwer abgrenzbar.
+
+Wasserflächen
+
+???
+
+3. Objekt klar abgrenzbar, aber 
+
+Felder
+
+???
+
+nicht identifizierbar.
+
+4. Objekt ist wahrnehmbar, aber 
+
+Bilddaten:
+Landsat TM, 30. Juli 1984, RGB CC 754
+
+nicht identifizierbar und 
+schwer abgrenzbar.
+
+(Buddenbaum 2007)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+21
+
+Interpretationsfaktoren
+
+Zum Erkennen von Objekten und Sachverhalten trägt eine Reihe von 
+Einzelfaktoren bei, die in oft unterschiedlicher Weise für die Interpretation in 
+Wert zu setzen sind:
+
+ Grauton, Farbton (tone, colour)
+
+ ermöglicht Abgrenzung von Raumeinheiten
+
+ Form, Umriss (shape)
+
+ Größe, Höhe (size)
+
+ Textur (texture)
+
+ Feinstrukturen / Variationen des Grautons innerhalb einer Fläche
+
+ Muster (pattern)
+
+ räumliche Anordnung von Objekten (z.B. Landnutzungsmuster)
+
+ Schattenwurf (shadow)
+
+ Lage im Gelände (site)
+
+ Vergesellschaftung mit anderen Objekten
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+22
+
+Helligkeitsunterschiede (Grautonunterschiede) sind in starkem Maß von den 
+Reflexions- bzw. den thermalen oder Rückstreuungseigenschaften der Objekt-
+oberflächen abhängig; außerdem abhängig von anderen Einflussfaktoren wie 
+Beleuchtungsverhältnissen, Atmosphärenzustand und Sensoreigenschaften.
+
+Grauton, Farbe
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+23
+
+(Feut 1998)
+
+Grauton und Flecken
+
+dunkler Grauton  Wald
+
+hellere Grautöne  Felder
+
+Flecken in den helleren 
+Teilen
+ unterschiedliche
+
+Bodenfeuchtigkeit
+
+Luftbild
+
+(ITC Lehrmaterialien; verändert)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+24
+
+Form und Größe von Objekten
+
+Die Form von Objekten wird dadurch sichtbar, dass sich zwischen Flächen 
+unterschiedlicher Schwärzung bzw. Farbgebung Grenzlinien bilden, die 
+Umrisse und Kanten in der jeweiligen Abbildungsgeometrie nachzeichnen
+(z.B. Grundriss).
+
+Längsdünensystem in der nördlichen Negev-Wüste
+(Echtfarben-Luftbild)
+
+(Feut 1998)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+25
+
+Form und Größe
+
+charakterist. ‚Flußform‘ 
+
+charakterist. rechteckige 
+Form von Feldern 
+
+Luftbild Fluß Ebro in Spanien
+
+(ITC Lehrmaterialien; verändert)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+26
+
+Form und Größe
+
+Barchan-Dünen
+(Sicheldünen)
+
+Transversal-Dünen
+(Querdünen)
+
+Nebenkanal:
+schmaler, gerade
+
+Feldweg:
+schmal, hell,
+90° Kurven
+
+Straße:
+hell, kurvig
+
+Hauptkanal:
+breit, gerade,
+dunkel, Brücken
+
+Luftbild 1 : 40.000 (vergrößert)
+
+(van Zuidam & van Zuidam-Cancelado 1979)
+
+Luftbild
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+27
+
+ Unter Textur versteht man die 
+
+Strukturierung einer Fläche, die 
+sich im Bild ergibt, wenn mehr oder 
+weniger regelmäßige Einzelobjekte 
+im Bildmaßstab nicht mehr getrennt 
+wahrgenommen werden. 
+
+ Auftreten von Texturen ist deshalb 
+eng mit dem Bildmaßstab verknüpft
+
+ Texturen stellen ein wichtiges 
+
+Kriterium zum Erkennen 
+verschiedenartiger Objekte dar
+
+Textur
+
+(Albertz 2004)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+28
+
+Muster
+
+ besondere Formen der relativen Lage drücken sich in Objektmustern aus
+
+ für manche Interpretationsaufgaben sehr nützlich
+
+ Klassisches Beispiel sind Entwässerungsnetze, die sich durch die Art der 
+
+Gliederung, sowie die Dichte und Orientierung der Entwässerungslinien 
+unterscheiden
+ oft mit strukturellen und lithologischen Eigenschaften des
+
+Untergrundes korreliert
+
+ ermöglichen Rückschlüsse auf
+
+Gesteinstypen, tektonischen
+Bau des Untergrundes,
+das Erosionsverhalten oder
+ähnliches
+
+(Albertz 2004, nach Schneider 1974)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+29
+
+Dendritisches Netz auf tonigen Gesteinen in 
+Utah.
+
+Radiales Netz an einem Vulkankegel in 
+Neuseeland
+
+(Albertz 2004)
+
+Entsprechend können Rückschlüsse aus Vegetationsmustern, 
+Siedlungsmustern, Verkehrswegenetzen o.ä. gezogen werden.
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+30
+
+Muster
+
+jüngere, größere Felder
+
+Siedlungen
+
+alte Felder
+
+(small-scale Agriculture)
+
+Landsat TM 4 Nil-Delta (Ausschnitt)
+
+(ITC Lehrmaterialien; verändert)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+31
+
+Muster
+
+typisches 
+
+Terrassenmuster
+
+Luftbild Montalban / Spanien
+
+(ITC Lehrmaterialien; verändert)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+32
+
+Muster
+
+Dendritisches
+Gewässernetz
+
+Luftbild Savannengebiet in W-Afrika
+
+(ITC Lehrmaterialien; verändert)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+33
+
+Schatten / Relief
+
+Schatten ‚modelliert‘ das
+
+Relief heraus!
+
+Steilhang
+
+Vulkankrater
+
+(ITC Lehrmaterialien; verändert)
+
+Ausliegerberge
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+34
+
+Interpretationselemente: Übersicht
+
+(Grau-)Ton (Tone)
+bzw. Farbe (Colour)
+
+Flecken (Mottling)
+
+Form (Shape)
+
+Relief (Relief)
+
+Textur (Texture)
+
+BILD-
+
+CHARAK-
+TERISTIKA
+
+Größe (Size)
+
+Muster (Pattern)
+
+Lage (Site)
+
+Schatten (Shadow)
+
+(Buddenbaum 2007)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+35
+
+Interpretationselemente
+
+ Visuelle Auswertung basiert i.d.R. auf der simultanen Auswertung mehrerer 
+
+Interpretationselemente.
+
+ Ein Bildpixel wird dabei nicht einzeln, sondern immer als Teil einer größeren 
+
+Kartierungseinheit (z.B. „Wald“) erfaßt.
+
+ Diese Zuordnung erfolgt i.d.R. auf Grund mehrerer Interpretationselemente 
+
+(‚converging evidence‘).
+
+ Interpretationselemente sind: Farbe / Grauton, Textur, Form, Muster, Lage, 
+
+Assoziation, Relief (vor allem bei Luftbildern!). 
+
+ Visuelle Interpretation ist ein weit komplexerer Prozess, als die - relativ 
+
+‚primitive‘ - monokriterielle Pixel-by-Pixel Zuordnung einer digitalen 
+Klassifizierung!
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+36
+
+Interpretationsschlüssel
+
+ bezeichnen eine systematische Zusammenstellung  von 
+
+charakteristischen Merkmalen der in Luft- und Satellitenbildern zu 
+interpretierenden Objekte
+
+ bieten den Vorteil, daß sie mehr Objektivität in den weitgehend von 
+
+subjektiven Faktoren bestimmten Interpretationsvorgang bringen
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+37
+
+(Albertz 2001)
+
+Farbinfrarotbild
+(1 = Eiche/Buche (Jungwuchs); 2 = Eiche/Buche; 3 = vorw. Eiche;
+4 = vorw. Buche; 5 = Fichtengruppe; 6 = Pappel/Erle)
+
+(Albertz 2001)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+38
+
+Interpretationsschlüssel
+
+Ein gutes Beispiel dazu bietet die 
+Erfassung von Waldschäden aus 
+Luftbildern, für die spezifische 
+Interpretationsschlüssel erarbeitet 
+wurden.
+
+Kronendichteskala zum Schätzen des 
+Kronenschlussgrades durch visuellen 
+Vergleich des Bestandes mit der Skala
+(Albertz 2001)
+
+(Albertz 2001)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+39
+
+Reihenmesskammer
+
+ meisten Luftbilder werden mit Kameras aufgenommen, die speziell zu 
+
+diesem Zweck gebaut sind (sog. Kammer)
+
+ zur Aufnahme von Senkrechtluftbildern, insbesondere bei der 
+
+systematischen Aufnahme größerer Flächen benutzt man die sog. 
+Reihenmesskammern
+
+ Reihenmesskammern sind Einzelobjektivkameras, mit denen eine extrem 
+
+genaue Bildgeometrie erreicht wird (auch als metric camera bekannt)
+
+ heute weisen nur wenige Ausnahmen nicht das einheitliche Bildformat
+
+23 x 23 cm2 auf
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+40
+
+Rahmenmarke
+
+Hilfsabbildungen
+
+Rahmenmarke
+
+Bildbasis b’
+
+Bildhauptpunkt
+
+übertragener
+
+Bildhauptpunkt
+
+Nadirpunkt (N): zum 
+Aufnahmezeitpunkt senkrecht 
+unter dem Kameraobjektiv 
+gelegener Punkt; bei 
+Senkrechtaufnahmen abgebildet 
+als
+
+Bildhaupt-/-mittelpunkt (M, N): 
+wichtigster Bildpunkt, muss 
+zuerst ermittelt werden
+
+Rahmenmarken
+
+Übertragener Bildhauptpunkt
+
+Brennweite (f): bei RMK = 
+Kammerkonstante
+
+Flughöhe (H)
+
+Aufnahmebasis (b): der 
+Abstand zweier benachbarter 
+Nadirpunkte (Flugstrecke)
+
+Bildbasis (b’): Aufnahmebasis 
+entsprechende Abbildung auf 
+dem Luftbild
+
+Zusätzlich befinden sich auf jedem Bild wichtige Nebenabbildungen (Kammernummer, Kammer-
+konstante, Bildnummer, Flughöhe, Uhrzeit, Graukeil, Dosenlibelle, evt. INS-Angaben usw.).
+
+(Feut 1998)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+41
+
+Geometrische Eigenschaften photographischer Bilder stehen im Mittelpunkt der 
+Photogrammetrie.
+
+Grundlagen für photogrammetrische Auswertungen sind
+
+ das geometrische Modell der
+
+Zentralperspektive und
+
+ die Beziehungen zwischen
+
+den Gelände- und Bild- bzw.
+Modellkoordinaten abgebildeter
+Geländepunkte. 
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+42
+
+(Lillesand et al. 2004)
+
+ Sind zwei Grundbedingungen (ebenes Gelände, Aufnahmerichtung 
+
+senkrecht zur Geländeebene) gegeben, lässt sich der Bildmaßstab direkt 
+aus Kammerkonstante (ck) und Flughöhe (Hg) ableiten: 
+
+Luftbildmaßstab
+
+ Sind Kammerkonstante und/oder Flughöhe unbekannt, kann mb aus dem 
+
+Verhältnis einer Bildstrecke s‘ zur Kartenstrecke s bestimmt werden. 
+Aufnahmeneigungen und Geländehöhenunterschiede führen dazu, dass der 
+Bildmaßstab uneinheitlich ist. 
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+43
+
+ssHchHfmgKb'1Beispielmm:,01522780500115000Parallelprojektion vs. Zentralprojektion
+
+ in einer Karte ist das Gelände senkrecht auf eine horizontale Bezugsebene 
+
+projiziert; das Luftbild ist im Gegensatz dazu eine zentralperspektivische 
+Abbildung
+
+(Albertz 2004)
+
+ in der Karte als senkrechte Parallelprojektion werden die Lotfußpunkte 
+
+unabhängig von der Höhe der Punkte dargestellt
+
+ im Luftbild wird die Lage der entsprechenden Bildpunkte durch die Neigung 
+
+der Strahlen im zentral-perspektivischen Bündel bestimmt
+
+ Gelände- und Objektpunkte, die über der Bezugsfläche liegen, werden vom 
+
+Bildmittelpunkt (Nadir) radial nach außen versetzt, darunter liegende nach 
+innen; vertikale Objektlinien konvergieren daher stets zur Bildmitte hin
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+44
+
+Radialer Bildpunktversatz
+
+(Feut 1998)
+
+(Feut 1998)
+
+Ist r’ der “kartengerechte” Soll-Abstand des Bildpunktes vom Nadirpunkt, so ist 
+Dr’ seine radiale Verschiebung.
+
+Dieser radiale Bildpunktversatz ist umso stärker, je größer der 
+Abbildungswinkel bzw. der Abstand von der Bildmitte ist; in der 
+Bildmitte (Hauptpunkt) verschwindet die radiale Versetzung.
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+45
+
+Radialer Bildpunktversatz
+
+(Albertz 2004)
+
+Der radiale Bildpunktversatz:
+
+ nimmt zu mit der relativen Höhe des Objekts und der Entfernung vom 
+
+Bildmittelpunkt zu
+
+ nimmt ab mit zunehmender Flughöhe
+
+ kein Versatz findet statt, wenn r’ (= Abstand vom Bildhauptpunkt) oder
+
+Dh (= Lage oberhalb der Bezugsebene) gleich Null sind
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+46
+
+Verzerrungen eines Luftbildes
+
+ Verwendung von Senkrechtluftbildern zur photogrammetrischen Auswertung
+
+ Abweichung von der Lotrechten verursacht Verzerrungen im Luftbild
+
+Verzerrung des Luftbildgrundrisses bei Querneigung (w), Längsneigung (j) 
+und Verkantung (k) des Flugzeuges bzw. der Aufnahmekammer im Moment 
+der Aufnahme. 
+
+(Albertz 2004)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+47
+
+ Abweichungen von der Lotrechten können in verschiedenen Richtungen 
+
+Verzerrungen eines Luftbildes
+
+auftreten:
+
+- Verkantung (Gierbewegung; Abdriften 
+
+vom Kurs): Kappa (k)
+
+- Rollbewegung (Kippung um die 
+
+Längsachse): Omega (w)
+
+- Nickbewegung (Anheben/Senken der 
+
+Flugzeug“nase“): Phi (j)
+
+ Nick- und Rollbewegungen verursachen Verzerrungen und 
+
+Maßstabsveränderungen
+ können nur durch photogrammetrische Geräte ausgeglichen werden,
+
+die Bilder in Lage zueinander bringen, wie es bei der Aufnahme der
+Fall war
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+48
+
+Reihenbefliegung
+
+ Senkrechtaufnahmen werden in der Regel in reihenförmigen Serien in 
+
+Flugrichtung aufgenommen
+
+ Überlappung benachbarter Aufnahmen in Flugrichtung von mindestens 60 % 
+
+ermöglicht stereoskopische Betrachtung der Luftbilder
+
+Bei einer Befliegung wird 
+nur unter sehr günstigen 
+Bedingungen die 
+Längsachse des 
+Flugzeuges immer 
+genau mit seinem Kurs 
+übereinstimmen
+
+(Feut 1998)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+49
+
+Stereoskopisches Sehen
+
+ Fixiert ein Beobachter den Punkt P1 eines Körpers, drehen sich zunächst 
+beide Augen so, dass sich die Sehachsen in diesem Punkt schneiden; der 
+Winkel zwischen den beiden Achsen heißt Konvergenzwinkel (g) und ist 
+ein Maß für die räumliche Entfernung des Objekts von der Augenbasis (b).
+
+ Dann wird durch die Ziliarmuskeln die
+
+Brennweite beider Augenlinsen so
+verändert, dass die Bilder auf den
+Netzhäuten scharf gestellt werden
+(Akkomodation).
+
+ Die Strecke p zwischen P1’’ und P2’’
+
+hängt offensichtlich von dem
+Entfernungsunterschied der Punkte P1
+und P2 und vom Augenabstand b ab.
+Man nennt  p bzw. den zugehörigen
+Winkel e die Stereoskopische Parallaxe.
+
+g
+
+b
+
+e
+
+p
+
+(Albertz 2004)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+50
+
+Stereoskopische Sehschwelle
+
+ Grenzen des räumlichen Wahrnehmungsvermögens sind durch Dimension 
+
+und Abstand der Augen bestimmt
+
+ sinkt Konvergenzwinkel g unter einen bestimmten Grenzwert 
+
+(stereoskopische Sehschwelle), so
+ist keine räumliche Wahrnehmung mehr
+möglich
+
+ Bei einem Augenabstand von 65 mm
+
+entspricht dies einer Entfernung
+zwischen 530 und 1340 m (Radius
+des stereoskopischen Feldes)
+
+ außerhalb liegende Gegenstände
+
+werden nicht mehr räumlich gesehen
+
+g
+
+b
+
+e
+
+p
+
+(Albertz 2004)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+51
+
+ bei stereoskopischen Luftbild-
+
+Aufnahmen wird Prinzip des
+3-D-Sehens simuliert
+
+ aus der Luft aufgenommene 
+
+Photos überlappen sich in 
+Flugrichtung (i.d.R. ca. 60%).
+
+ Überlappungsgebiet wird also 
+aus unterschiedlichen Winkeln 
+aufgenommen
+
+ mittels ‚Stereoskops‘ wird bei 
+der Auswertung jeweils einem 
+Auge eines der beiden Bilder  
+zugeführt
+
+ Das Gehirn rekonstruiert 
+
+daraus das ‚3D-Modell‘
+
+Stereoskopische Luftbilder
+
+(Löffler 1994; verändert)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+52
+
+Überlappungsbereich kann3-dimensional gesehen werdenBild 2Bild 1linkes Bild
+
+rechtes Bild
+
+(Löffler 1994; verändert)
+
+Spiegelstereoskop
+
+ca. 60 mm
+
+ca. 270 mm 
+
+Instrumentenbasis
+
+(Löffler 1985; verändert)
+
+ mit Hilfe des Spiegelstereoskops werden die beiden Luftbilder von ca. 65 mm 
+(Augenabstand beim Menschen) auf ca. 240 bis 270 mm (Instrumentenbasis) 
+‚auseinandergezogen‘
+
+ tatsächlich zu benutzende Instrumentenbasis hängt neben der Gerätebauart 
+
+auch vom individuellen Augenabstand ab!
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+53
+
+3D-Eindruck
+
+(Quelle: ITC-Lehrmaterial; verändert)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+54
+
+Künstliches Stereoskopisches Sehen
+
+ zum stereoskopischen Sehen müssen die Luftbildpaare
+
+• getrennt den Augen zugeführt werden
+• mit parallelen Augenachsen betrachtet werden
+
+ dazu müssen die Augen des Betrachters
+
+• bei ca. 25 cm akkomodieren
+• nach Unendlich konvergieren
+
+ Hilfsmittel notwendig!
+
+Taschenstereoskop
+
+Spiegelstereoskop
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+55
+
+´
+´
+H2
+H2
+
+´
+H1
+´
+H1
+
+´´
+H2
+
+´´
+H1
+
+´
+H1
+
+´
+H2
+
+´´
+H2
+
+´´
+H1
+
+Spiegel-
+
+stereoskop
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+56
+
+Anaglyphenverfahren
+
+Leichter ist das stereoskopische Sehen 
+mit Hilfsmitteln, die den Akkomodations-
+zwang aufheben
+(z.B. das mit Farbfiltern arbeitende
+Anaglyphenverfahren)
+
+Zur Betrachtung wird eine Anaglyphenbrille
+(rot-grün-Brille) benötigt.
+
+(Albertz 2004)
+
+SoSe 2016
+
+Th. Jarmer / B. Siegmann
+
+57
+
+

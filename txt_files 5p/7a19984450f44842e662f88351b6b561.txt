@@ -1,0 +1,4389 @@
+The Definite Determiner and the Inalienable Constructions in French and in English
+Author(s): Jean-Roger Vergnaud and Maria Luisa Zubizarreta
+Source: Linguistic Inquiry, Vol. 23, No. 4 (Autumn, 1992), pp. 595-652
+Published by: The MIT Press
+Stable URL: http://www.jstor.org/stable/4178791
+Accessed: 09/12/2008 12:13
+
+Your use of the JSTOR archive indicates your acceptance of JSTOR's Terms and Conditions of Use, available at
+http://www.jstor.org/page/info/about/policies/terms.jsp. JSTOR's Terms and Conditions of Use provides, in part, that unless
+you have obtained prior permission, you may not download an entire issue of a journal or multiple copies of articles, and you
+may use content in the JSTOR archive only for your personal, non-commercial use.
+
+Please contact the publisher regarding any further use of this work. Publisher contact information may be obtained at
+http://www.jstor.org/action/showPublisher?publisherCode=mitpress.
+
+Each copy of any part of a JSTOR transmission must contain the same copyright notice that appears on the screen or printed
+page of such transmission.
+
+JSTOR is a not-for-profit organization founded in 1995 to build trusted digital archives for scholarship. We work with the
+scholarly community to preserve their work and the materials they rely upon, and to build a common research platform that
+promotes the discovery and use of these resources. For more information about JSTOR, please contact support@jstor.org.
+
+The MIT Press is collaborating with JSTOR to digitize, preserve and extend access to Linguistic Inquiry.
+
+http://www.jstor.org
+
+Jean-Roger Vergnaud 
+Maria Luisa Zubizarreta 
+
+Iis 
+
+The Definite Determiner and 
+te  Ina ienable Constructions 
+in French and in English 
+
+In this article we examine some central aspects of the inalienable constructions in French 
+and in English and argue that an adequate account of these constructions requires making 
+a distinction between definite referential expressions that give rise to a type interpretation 
+and those that give rise to a token interpretation. This constitutes our flrst basic hy- 
+pothesis. The distinction between types and tokens is  defined at a level of  sentence 
+grammar that we call L-Structure and that we identify with domain D in the sense of 
+Chomsky (1981, 324). Given domain D, it is possible to define a notion of expletive with 
+respect to that level: an expletive in that sense is a category that has no representation 
+in domain D. We then use this notion of expletive to characterize the syntactic categories 
+that are not opaque for a certain relation central to the account of inalienable structures. 
+Our second basic hypothesis is that the relation between domain D so defined and syn- 
+tactic structure is governed by a Correspondence Law: a token in domain D corresponds 
+to a DP headed by a nonexpletive determiner, whereas a type corresponds either to a 
+bare NP or to a DP headed by an expletive determiner. An important topic discussed 
+in this article is the existence of systematic differences between French and English in 
+the realm of inalienable constructions. We locate these differences in the status of the 
+definite determiner: in French, but not in English, the definite determiner may function 
+as an expletive from the point of view of domain D.  We offer independent evidence 
+based on the behavior of generics in support of this hypothesis. Our analysis is developed 
+within the general framework of Government-Binding Theory. To the extent that it is 
+successful, it can then be viewed as a defense and illustration of the fundamental concepts 
+and principles of that theory. 
+
+[Editor's note: The authors' names are alphabetical, but this in no way reflects the primacy of authorship.] 
+Preliminary versions of this article were presented at the syntax seminar at the University of Southern 
+California (Fall 1989), at Cornell University (Fall 1989), at the Laax Workshop on Phrase Structure (June 1990), 
+at Trondheim University (February 1991), at the Ier Coloquio de Gramatica Generativa at Miraflores/Madrid 
+(March 1991), and at Universite de Geneve (May 1991). We thank all of the participants for their reactions 
+and comments. Special thanks are due to J. Aoun, A. Belletti, R. Huybregts, the late 0.  Jaeggli, L. Johnsen, 
+M. Prinzhorn, H. van Riemsdijk, L. Rizzi, A. Rouveret, B. Schein, T. Stowell, and A. Szabolsci, for useful 
+discussions, as well as to G. Carlson for written comments on an earlier draft. Our gratitude to B. Schein and 
+T. Stowell for discussion of some of the English data and to F. Dell, Y. Mathieu, and A. Rouveret for discussion 
+of some of the French data. 
+
+Linguistic  Inquiry, Volume  23,  Number 4,  Fall  1992 
+595-652 
+(D 1992 by The  Massachusetts  Institute  of Technology 
+
+595 
+
+596 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+The article is organized as follows. In section 1 we examine two inalienable con- 
+structions in French and discuss their properties. In section 2 we introduce the type/ 
+token distinction on which our analysis is based. In section 3 we analyze the syntax and 
+the interpretation of the inalienable constructions presented in section 1, and in section 
+4 we  analyze the differences between French and English with respect to inalienable 
+constructions, as well as to generics. In section 5 we deal with generics again and some 
+residual issues. 
+
+1.  Properties of the French Inalienable Constructions 
+As is well known, there are some intriguing differences between inalienable constructions 
+in French and in English. Consider the examples in (1). 
+
+(1) a.  Les enfants ont leve la main. 
+b.  The children raised the hand. 
+
+The French example in (la)  is ambiguous between an inalienable interpretation and an 
+alienable interpretation. In the inalienable interpretation, la main is understood as re- 
+ferring to  an integral part of each of  the individuals referred to by the argument les 
+enfants in subject position. Under this interpretation, the sentence in (1) can be para- 
+phrased as Each of the children raised his or her hand. The English counterpart to (la) 
+in (lb)  lacks this interpretation. (lb) has only the alienable interpretation, in which the 
+hand is understood as referring to an object that is not part of the children's bodies. 
+
+The notion inalienable possession referred to in the above description is, in essence, 
+a notion of semantic dependency. An inalienable object is a dependent entity in the sense 
+that it is inherently defined in terms of another object, of which it is a part. For example, 
+human body parts are defined with respect to  a typical individual "human," which 
+consists of a nose, two eyes, a mouth, a stomach, two hands, two arms, and so on. We 
+shall assume that the semantic dependency of inalienable possession is reflected in formal 
+grammar as an argumental dependency in lexical representations. Specifically, our hy- 
+pothesis is that: 
+
+(2)  An inalienable noun, but not an alienable one, takes a possessor argument. 
+
+Given this hypothesis, a body-part noun like nose or hand is then lexically ambiguous. 
+It corresponds in reality to two distinct lexical entries: one that defines an inalienable 
+entity and takes a possessor argument, and another one that defines an alienable entity 
+and does not take a possessor argument.' To illustrate, a word such as gorge 'throat' 
+will  be  analyzed  lexically  as  one  of  the two  items  in (3).2 
+
+1 Authier (1988) and Tellier (1988) have also reached the conclusion that an inalienable noun takes a 
+
+possessor argument. An alienable noun, by contrast, does not take a possessor argument. 
+
+2  As we shall demonstrate in section 3, the external argument of inalienable nouns must be syntactically 
+realized. Basic nominals thus contrast with derived nominals, whose external argument need not be syntact- 
+ically  present  (e.g.,  the  (government's)  destruction  of  the documents).  We can  speculate  that the  optionality 
+of the external argument in derived nominals is due to the addition of a morphological head. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH  AND 
+
+IN  ENGLISH 
+
+597 
+
+(3) a.  gorge(x) 
+
+b.  gorge 
+
+We assume that the two lexical entries in (3) are grammatically related by a lexical 
+redundancy rule. According to this view, then, the relationship between the alienable 
+and the inalienable versions of a body-part noun is formally comparable to the relation- 
+ship between, for example, the causative verb sink (which is transitive) and the inchoative 
+verb sink (which is intransitive). As we shall demonstrate, the characteristic semantic 
+property of inalienables formally construed as above has far-reaching grammatical con- 
+sequences. Although it is an inherent, universal property of body-part nouns that they 
+may function as inalienables (i.e.,  as semantically dependent entities), there are other 
+nouns that may function as inalienables only by extension. In that category are nouns 
+for clothes,  kinship terms, picture nouns, and still others, like computer and car. As 
+might be expected, there is much variation among speakers concerning the membership 
+in the class of extended inalienables. For example, some speakers may be able to treat 
+computer as an inalienable, but others may not. Extended inalienables will turn out to 
+be instrumental in understanding inherent inalienables. They will be discussed in section 
+2. 
+
+We shall call a structure such as (la),  in which an argument may be interpreted as 
+an  inalienable dependent of  another argument that is  external to  it,  an  ext(ernal)- 
+poss(essor) construction. Besides the structure illustrated in (la), French exhibits a sec- 
+ond kind of ext-poss construction, illustrated in (4) and (5). 
+
+(4) a.  Le medecin leur 
+
+a radiographie 1' 
+
+the doctor  to them X-rayed 
+'The doctor X-rayed their stomachs.' 
+
+estomac. 
+SING DEF  DET stomach 
+
+b.  Le medecin leur 
+
+gorge. 
+the doctor  to them examined SING DEF  DET throat 
+'The doctor examined their throats.' 
+
+a examine la 
+
+(5) a.  Le medecin a radiographie I' 
+
+estomac aux enfants. 
+
+the doctor  X-rayed 
+'The doctor X-rayed the children's stomachs.' 
+
+SING DEF  DET  stomach to the children 
+
+b.  Le medecin a examine la 
+
+gorge aux enfants. 
+
+the doctor  examined SING DEF  DET throat to the children 
+'The doctor examined the children's throats.' 
+
+In this type of ext-poss construction, as in the first, the inalienable argument is a direct 
+object. The two types differ, however, in that the possessor argument in the second type 
+is realized, not as a subject, but as a dative complement of the verb that governs the 
+inalienable argument. In (4) that dative complement surfaces as a clitic on the verb, and 
+
+598 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+in (5) it surfaces in postverbal position as a full-fledged nonpronominal argument. No 
+comparable construction exists in English.3 
+
+In this section we examine the properties of the ext-poss construction in French. 
+
+We shall contrast this construction with the one illustrated in (6). 
+
+(6) a.  Le medecin a radiographie [leurs 
+
+the doctor  X-rayed 
+
+estomacs]. 
+Poss(3RD  PERS PL)IPOSS-ED(PL)  stomachs 
+
+b.  Le medecin a examine [leurs 
+
+gorges]. 
+the doctor  examined  Poss(3RD  PERS PL)/POSS-ED(PL)  throats 
+
+The structures in (6) are also inalienable constructions involving an inalienable argument 
+in direct object position. However, contrary to what is the case in the ext-poss con- 
+struction illustrated in (1), (4), and (5), the possessor argument in the structures in (6) 
+is  not a  separate argument of the verb governing the inalienable, but is realized in a 
+position internal to the nominal phrase headed by the inalienable noun. We shall refer 
+to  such  structures  as  those  in (6) as  int(ernal)-poss(essor)  constructions.4 
+
+1.1.  Interpretation  and  Grammatical  Number 
+
+There is a subtle but important aspect of the interpretation of the ext-poss construction 
+that has hitherto remained unnoticed. Consider the examples in (4) and (5) again. The 
+singular inalienable "body-part" argument in these examples is associated with a plural 
+possessor  argument.  We observe  a distributivity effect  in the following  sense.  Although 
+the inalienable argument estomac 'stomach' in (4a) and (5a) is singular, the interpretation 
+of (4a) or (Sa) nevertheless implies the existence of a plurality of stomachs X-rayed, by 
+virtue of the inalienable phrase being associated with the plural possessor argument. 
+Similarly, although the inalienable noun gorge 'throat' in (4b) and (5b) is singular, the 
+
+3 In some cases the dative clitic is strongly preferred: 
+(i) a. 
+
+a fr6le  la tete. 
+
+La balancoire leur 
+the swing 
+'The swing brushed their heads.' 
+
+to them brushed the head 
+
+b.  ??La balancoire a fr6ld  la tete  aux enfants. 
+
+the swing 
+'The swing brushed the children's heads.' 
+
+brushed the head to the children 
+
+We omit from this discussion deictic inalienable phrases, which do not require a possessor within the 
+sentence (see (ii)), as well as the generic examples discussed by Authier (1988, 248-251) (see (iiia), which 
+contrasts with (iiib)). 
+
+(ii)  Le medecin (lui) 
+
+a radiographid ce bras,  et ensuite cette jambe. 
+
+the doctor  (to him) X-rayed 
+
+this arm, and then this leg 
+
+(iii) a.  Pendant le saut, les mains ne doivent pas toucher les cuisses. 
+the thighs 
+
+during the dive, the hands must not touch 
+b. *Pendant le saut, les mains ont dui toucher 
+
+les cuisses. 
+during the dive, the hands must have touched the thighs 
+
+Note that (iiib) becomes acceptable when it is uttered in a situation in which the definite inalienable phrase is 
+used deictically (as in a report on a particular parachute test, for example). See footnote 13 for further discussion 
+of the deictic and generic examples. 
+
+4 The inalienable phrase in this construction may also coexist with a dative benefactive/malefactive com- 
+
+plement: for example, La sorciere (lui) a voM sa voix 'The witch (to her) stole her voice'. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH  AND 
+
+IN  ENGLISH 
+
+599 
+
+interpretation of (4b) or (5b) implies the existence of a plurality of throats examined. 
+That such implied pluralities are indeed properties of the structural description of the 
+sentences is shown by the fact that there are speakers for whom implied pluralities may 
+be manifested as plural pronouns in subsequent sentences. For example, for those speak- 
+ers, (4a) can be followed by a sentence in which a plural pronoun refers back to a plurality 
+of stomachs, as shown in (7a), and (4b) can be followed by a sentence in which a plural 
+pronoun refers back to a plurality of throats, as shown in (7b).5 
+
+(7) a.  Le medecin leur 
+
+a radiographie 1' 
+
+estomac 'a toutes 
+
+to  them X-rayed 
+
+the  doctor 
+et il a constate qu'ils avaient des images normales. 
+and he saw 
+
+that they looked normal 
+
+SING  DEF  DET stomach  to  all 
+
+b.  Le  medecin  leur 
+
+a examine  la 
+
+gorge  'a tous 
+the doctor  to them examined SING  DEF  DET throat to all 
+et il a constate qu'elles etaient tres rouges. 
+and he found  that they were very red 
+
+Note that the phenomenon of "implied coreference" illustrated in (7) is strictly cross- 
+sentential. In other words, the implied plural in (4) or (5) is not part of the set of referents 
+associated with the sentence. This is shown by the ungrammaticality of the following 
+example, where the intended interpretation is the one in which the italicized pronoun 
+refers back to a plurality of throats: 
+
+(8) *Le medecin leur 
+
+a examine la 
+
+gorge a tous 
+the doctor  to them examined SING  DEF  DET throat to all 
+parce qu'il pensait  qu'elles pouvaient etre infectees. 
+because he thought that they could be infected 
+
+The distributive interpretation illustrated in (7) may also be observed in examples 
+
+like (9), in which the inalienable body-part phrase is plural. 
+
+(9)  On leur 
+
+mains. 
+we  to  them washed  PL  DEF  DET hands 
+
+a lave 
+
+les 
+
+Here, the distributivity effect is manifested in the interpretive relation that holds between 
+the two  plural categories leur and les  mains. Suppose, for example, that the dative 
+
+5Not  all speakers accept these sentences. We attribute this to the fact that some speakers have difficulty 
+
+perceiving inalienable body parts as referentially independent entities. 
+
+Those speakers who accept the forms in (7) also accept examples such as those in (i)-(ii). 
+(i)  Le mddecin leur 
+
+estomac a toutes et il a constate 
+
+a radiographid 1' 
+
+SING  DEF  DET  stomach  to all 
+
+and he saw 
+
+the doctor  to them X-rayed 
+qu'aucun n'avait une image normale. 
+that none looked normal 
+
+(ii)  Le medecin leur 
+
+a examine la 
+
+the doctor  to them examined SING  DEF  DET  throat to all  and he saw 
+qu'aucune n'dtait vraiment rouge. 
+that none was very red 
+
+gorge a tous et il a constate 
+
+600 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+complement leur in (9) refers to a set of three individuals {ij,k}.  Then (9) means that 
+for each individual i, j,  k, both hands were washed. It cannot be the case that one hand 
+was washed per individual, nor can the sentence have a vague interpretation (one hand 
+or two hands having been washed for any one individual). 
+
+The distributivity effect that characterizes the ext-poss construction is reminiscent 
+of what one observes in structures where a universally quantified phrase has scope over 
+a singular nominal expression. Compare the examples in (7a-b) to the discourse in (10). 
+
+(10)  Every woman brought a pet to the party. Surprisingly, they were all mammals. 
+
+The first sentence in (10) is interpreted with the universal quantifier having wide scope 
+over the indefinite a pet. That interpretation implies the existence of a plurality of pets, 
+which plurality is manifested as a plural pronoun in the second sentence. As in the case 
+of the ext-poss construction, the phenomenon of "implied coreference" at play in (10) 
+is strictly cross-sentential: the implied plural in (10) is not part of the set of referents 
+associated with the first sentence. This is shown by the ungrammaticality of (11), where 
+the intended interpretation is the one in which the italicized pronoun refers back to a 
+plurality of cats. 
+
+(11) *Every woman brought a cat to the party so that they could chase the mice. 
+
+(11) is on a par with (8). Note that the plural pronouns in (10) and in (7a-b) are comparable 
+to E-type pronouns in the sense of Evans (1980), illustrated in (12). 
+
+(12)  There is a sailor at the front door. He is wearing a red shirt. 
+
+Like an E-type pronoun, the plural pronoun in (10), (7a), or (7b) refers to a set of referents 
+"created" or "induced" by a previous sentence. 
+
+What is particularly puzzling about the distributivity effect found in the ext-poss 
+construction is that, contrary to what is the case in a structure with a universal quantifier, 
+it does not seem that it can be ascribed to any scopal dependency. For example, the 
+inalienable phrase in such structures as (1), (4), and (5) can be pronominalized backward: 
+
+(13) a.  Parce qu'elle est en general tres sensible, le medecin a decide de 
+the doctor decided to 
+tete  d'une cagoule. 
+
+because it is generally very sensitive, 
+leur 
+to them protect 
+
+proteger la 
+
+SING DEF  DET head with a hood 
+
+b.  Parce qu'il doit toujours etre protege des radiations, le medecin 
+because it must always be protected from radiations, the doctor 
+leur 
+front  d'un masque. 
+to them covered  SING DEF DET front  with a mask 
+
+a couvert  le 
+
+As is well known, backward pronominalization may only arise with referential expres- 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+601 
+
+sions.6 Thus, the structures in (14a-b), where the antecedents are nonreferential, are ill 
+formed.7 
+
+(14) a.  *Because she had overheard laughs, a woman came in that was dressed as 
+
+a clown. 
+
+b.  *Because he has the winning sweepstakes ticket, someone is going to be a 
+
+very rich man. 
+
+By the test of backward pronominalization given in (13a-b), then, the inalienable ar- 
+gument in such examples as (1), (4), and (5) unambiguously qualifies as referential, which 
+seems to preclude any account in terms of a standard scopal dependency. Still, we shall 
+argue in section 2 that the possessor and the inalienable arguments in the ext-poss con- 
+struction are tied by a dependency that is of the same general form (referential properties 
+apart) as that existing between a universally quantified expression and nonreferential 
+phrases within its scope. To wit, we  shall argue that the inalienable argument is syn- 
+tactically bound to the possessor argument.8 
+
+Besides the "distributivity effect," an inalienable phrase in the ext-poss construction 
+displays another interesting property, which has to do with grammatical number. As 
+noted by Kayne (1975, 164-169), an inalienable body-part noun like 'stomach', 'throat', 
+'nose',  'mouth' in the ext-poss construction is obligatorily singular, whether it is asso- 
+
+6 We should emphasize here that the notion of "reference" used in the text is a strictly grammatical 
+notion. In particular, it should be distinguished from the notion of "reference" found in the philosophical 
+tradition. The latter tradition in essence espouses Russell's view (see for example Russell (1905)) and defines 
+a referential expression as an "object-dependent" expression (as opposed to quantified expressions, which 
+are "object-independent"). See Neale (1990) for discussion of the notion of reference within that tradition. 
+A referential expression in our sense is grammatically defined as an expression that has scope over the 
+entire sentence (see Fodor and Sag (1982), Hornstein (1984)) and may therefore give rise to backward pro- 
+nominalization (this definition treats sentences with psychological predicates as exceptional). Within gram- 
+matical theory, referentiality may be characterized as an S-Structure property by postulating a special kind 
+of root scope marker that binds referential expressions at this level of representation. For further discussion 
+of backward anaphora as a test for referentiality, see Hornstein (1984), Vergnaud and Zubizarreta (1990), 
+Zubizarreta and Vergnaud (1992), and Wasow (1972). Note that Neale (1990) questions the reality of the 
+correlation between referentiality and backward pronominalization (see Neale (1990, chap. 5, n. 30)). We reply 
+to Neale's criticism in forthcoming work. 
+7  In a presentational sentence such as (14a) in which a constituent of the subject has been extraposed, 
+(14b) is from Wasow (1972). The specific (referential) and nonspecific (nonreferential) interpretations are 
+not equally available with this example (see Fodor and Sag (1982) for discussion). The nonspecific interpretation 
+is strongly favored over the specific interpretation. This is why (14b) is perceived as ill formed. 
+
+that subject must be nonspecific (nonreferential). 
+
+between the inalienable argument and the possessor argument. 
+
+8  Specifically, we  shall argue that the relation of Predication, construed as a binding relation, holds 
+Our remark concerming the analogy between the dependencies at play in the ext-poss construction and in 
+a structure with a universal quantifier requires some comment. The formalization of scopal dependency that 
+is presupposed here is slightly different from that put forth by the current avatars of Chomsky's original proposal 
+(see Chomsky (1976)). Specifically, we assume that the relative scope of a phrase is represented, not by applying 
+the rule of "Quantifier Raising," but by means of an indexing procedure. The notation proposed is reminiscent 
+of that introduced originally by Skolem (1928), as well as of that proposed by Van Riemsdijk and Williams 
+(1980). 
+
+602 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+ciated with a singular or a plural possessor. Compare the forms in (15), where the plurality 
+of the inalienable phrase gives rise to infelicity, with those in (4). 
+
+(15)  a.  *Le  medecin  leur 
+
+a radiographie [les 
+
+the doctor  to them X-rayed 
+
+estomacs]. 
+[PL  DEF  DET stomachs] 
+
+b.  *Le  medecin  leur 
+
+gorges]. 
+the doctor  to them examined [PL  DEF  DET throats] 
+
+a examine  [les 
+
+In the int-poss construction, by contrast, the inalienable body-part noun may be 
+singular or plural when it is associated with a plural possessor (Kayne (1975)). The forms 
+in (16) thus alternate freely with those in (6).9 
+
+(16) a.  Le medecin a radiographie [leur 
+
+the doctor  X-rayed 
+
+estomac]. 
+[Poss(3RD  PERS PL)/POSS-ED(SING)  stomach] 
+
+b.  Le medecin a examine [leur 
+
+gorge]. 
+the doctor  examined [Poss(3RD  PERS PL)/POSS-ED(SING)  throat] 
+
+As  in the case of the ext-poss construction, the examples in (16) may give rise to an 
+implied plurality. The examples in (17) are comparable to the ones in (7). 10 
+
+(17) a.  Le medecin a radiographie leur 
+
+the doctor  X-rayed 
+Poss(3RD  PERS  PL)/POSS-ED(SING) 
+et il a constate  qu'ils avaient une apparence normale. 
+and he observed that they had a normal appearance 
+
+estomac 
+stomach 
+
+b.  Le medecin a examine leur 
+
+gorge 
+the doctor  examined Poss(3RD  PERS PL)IPOSS-ED(SING)  throat 
+et il a constate  qu'elles etaient tres rouges. 
+and he observed that they were very red 
+
+Interestingly, the int-poss construction does not impose a strictly distributive in- 
+
+terpretation in cases like (18), which thus contrasts with (9). 
+
+(18)  On a lave 
+
+leurs  mains. 
+we  washed  their  hands 
+
+In effect, if there is no pragmatic context biasing the interpretation of (18), then it has 
+a meaning in which the number of hands washed per individual is vague: it may be the 
+case that for each individual i, j,  k only one hand was washed, or it may be the case 
+that both hands were washed, or it may be the case that for some individuals only one 
+hand was washed and for other individuals both hands were washed. 
+
+I  We have questioned a substantial number of native speakers, and we have found that French speakers 
+living in an English-speaking community have a strong preference for (6) over (16). We attribute this to the 
+influence of English, which disallows forms comparable to (16). We are grateful to F. Dell for this observation. 
+See section 4 for further discussion of the English facts. 
+
+'1 Those speakers who do not accept (7a-b) do not accept (17a-b) either. See footnote 5. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+603 
+
+1.2.  Modifiers 
+Kayne (1975) noted that although there are no restrictions on the sort of adjective that 
+may modify the inalienable noun in the int-poss construction (as shown in (19)), there 
+are restrictions on the sort of adjective that may modify the inalienable noun in the ext- 
+poss construction (as shown in (20)). 
+
+(19) a.  Le coiffeur 
+
+a peigne ses cheveux soyeux. 
+
+the hairdresser combed her silky hair 
+
+b.  Pierre a lave 
+
+ses  mains  sales. 
+Pierre washed  his dirty hands 
+
+(20)  a.  *Le  coiffeur  lui a peigne  les  cheveux  soyeux. 
+
+b.  *Pierre lui a lave  les  mains  sales. 
+
+Authier (1988, 173-176) suggests that the constraint should be formulated in terms 
+of  appositive versus restrictive modifiers: an inalienable in the ext-poss construction 
+may be  modified by  a  restrictive adjective, but not by  an appositive adjective. The 
+ungrammaticality of (20) thus contrasts with the grammaticality of (21). In (20) the ad- 
+jective is construed as an appositive modifier, whereas in (21) the adjective is construed 
+as a restrictive modifier. (21a) implies that not all of the fingers were frozen and (21b) 
+implies that only one of the two cheeks was dirty. The adjectives geles and sale pick 
+out a subset of fingers and cheeks, respectively, in (21). 
+
+(21)  a. 
+
+a bande 
+
+Il  lui 
+les  doigts  geles. 
+he  to  himlher bandaged the fingers  frozen 
+'He bandaged his/her frozen fingers.' 
+
+b.  Elle lui 
+
+a nettoye la  joue  sale  avec un mouchoir. 
+
+she  to himlher cleaned  the cheek dirty with a  handkerchief 
+'She cleaned his/her dirty cheek with a handkerchief.' 
+
+The constraint on modification applies strictly to the ext-poss construction. It does not 
+apply to the int-poss construction, whether the inalienable is plural or singular." This 
+is illustrated by the contrast in (22). In (22a) the singular inalienable is associated with 
+an internal plural possessor and can be modified, whereas in (22b) the singular inalienable 
+is associated with an external plural possessor and cannot be modified. 
+
+(22) a.  Le medecin a examine leur 
+
+the doctor  examined Poss(3RD  PERS PL)/POSS-ED(SING) 
+estomac  rempli de jus  d'orange. 
+stomach  full  of  orange juice 
+
+b.  *Le medecin  leur 
+
+a examine l' 
+
+estomac 
+the doctor  to them examined SING DEF DET stomach 
+rempli de jus  d'orange. 
+full  of  orange juice 
+
+lThis  difference, which was made clear to us in a discussion with F. Dell, has reshaped to some extent 
+
+our view of French inalienable phrases, as readers of earlier versions of this article will notice. 
+
+604 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+It appears, then, that although inalienables in the int-poss construction may be modified 
+by restrictive or appositive adjectives, inalienables in the ext-poss construction may be 
+modified only by restrictive adjectives.12"13 
+
+To summarize, we have examined a cluster of properties that differentiate the ext- 
+
+poss construction from the int-poss construction in French: 
+
+(23)  a.  The distributive interpretation 
+
+A strictly distributive interpretation obtains in the ext-poss construction, 
+but not necessarily in the int-poss construction. 
+
+b.  Grammatical  number 
+
+Certain inalienable body-part nouns (like 'stomach', 'throat', and 'nose') 
+are obligatorily singular in the ext-poss construction, whether they have 
+a plural possessor or not, whereas they may be singular or plural in the 
+corresponding context in the int-poss construction. 
+
+c.  Modification 
+
+The inalienable phrase in the ext-poss construction may only be modified 
+by a restrictive adjective, whereas there are no restrictions on the kinds 
+of adjectives that may modify the inalienable phrase in the int-poss con- 
+struction. 
+
+In the next section we introduce a system of hypotheses that provides a basis for a formal 
+account of the properties summarized in (23). 
+
+12 Based on the grammaticality of (i), Authier (1988, 175, fn. 3) concludes that the constraint applies only 
+
+to adjectives and must therefore be syntactic in nature. 
+
+(i)  Pierre lui 
+
+a lave 
+
+les 
+
+mains,  qui pourtant  etaient  propres. 
+
+Pierre to him/her washed PL  DEF  DET  hands, which however were clean 
+'Pierre washed his/her hands, although they were clean.' 
+
+Note that examples with an appositive relative located between the inalienable subject and the VP are worse 
+than (i): 
+
+(ii)  ??Les  yeux,  que  le  medecin  lui avait examines, 
+
+lui piquent. 
+
+the  eyes,  which  the doctor  to himlher examined,  to  him/her itch 
+
+(iii)  ?Le  pied droit,  qui etait  reste  longtemps  immobile, 
+
+lui demangeait. 
+
+the  right foot,  which had  remained  immobile for  a  long  time,  to  him/her was  itching 
+
+This difference might result from the fact that an appositive at the end of the sentence can be reanalyzed as 
+a continuative relative (in the sense of Jespersen (1924)). But it is not clear to us whether the distinction is of 
+a grammatical or a processing nature. 
+
+13 When inalienables are used deictically as discussed in footnote 3, it seems that appositive modification 
+
+is possible: 
+
+(i)  Voyons 
+
+cette gorge enflammee. 
+
+let us look at that swollen throat 
+
+This further confirms that deictic inalienables must be analyzed differently from the cases discussed in this 
+article. On the other hand, in the generic examples discussed by Authier (1988) in which the possessor is 
+absent (see footnote 3), the inalienable phrase may not be modified by an appositive adjective (Authier (1988, 
+256)): 
+
+(ii)  Le visage (*sale/*noirci au bouchon) doit rester au ras du sol 
+
+quand on rampe. 
+
+the face  (dirty/cork blackened)  must remain close to the ground when crawling 
+
+This suggests that the inalienable phrase in such structures is related to a phonologically null generic dative 
+clitic. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+605 
+
+2.  Toward an Analysis of the French Inalienable Constructions: On Types and Tokens 
+To gain some insight into the properties of the French inalienable constructions discussed 
+in section 1, it is useful to look at other kinds of singular nominal phrases in French that 
+are not inherently inalienables, yet give rise to an implied plurality in certain contexts. 
+
+2.1.  Syntactic Constraints on the Distributivity Effect and the TypelToken Distinction 
+Consider the following examples:'4 
+
+(24)  On 
+
+a donne le 
+
+meme ordinateur 
+SING  DEF DET same  computer 
+
+someone gave 
+a Sophie, a Justine, et a Clea. 
+to Sophie, to Justine, and to Clea 
+
+(25)  On 
+
+a donne le 
+
+meme chemisier 
+
+someone gave 
+a Sophie, a Justine, et a Clea. 
+to Sophie, to Justine, and to Clea 
+
+SING DEF DET same  blouse 
+
+Both of these sentences are ambiguous. Let us consider (24). Under one interpretation, 
+this sentence means that there is one physical computer that was given to Sophie, to 
+Justine, and to Clea. Consequently, these three persons will be competing for the own- 
+ership of a single computer or will own that one computer at different times. Under a 
+second interpretation, the preferred one in the absence of any other context, (24) has 
+no such implication and is compatible with a situation in which Sophie, Justine, and Clea 
+have been given three distinct physical computers, which happen to be of the same type, 
+that is,  of the same brand and make. This interpretation can be paraphrased as On a 
+donne le meme type d'ordinateur a Sophie, a Justine, et a' Clea 'Sophie, Justine, and 
+Clea were given the same kind of computer'. Under the first interpretation the nominal 
+expression le meme ordinateur is construed as referring to a token, whereas under the 
+second interpretation the same noun phrase is  construed as referring to  a type. In a 
+similar fashion, we can distinguish two interpretations of (25). Under the token inter- 
+pretation of le chemisier, the meaning of (25) corresponds to a situation in which there 
+is one single blouse, for which Sophie, Justine, and Clea may be competing or which 
+they will own at different times. Under the type interpretation, the meaning of (25) is 
+compatible with a situation in which there may be a plurality of blouses, which are of 
+the same kind and appearance. As in the case of the ext-poss construction, the distrib- 
+utive interpretation that is  observed in such examples as (24) or (25) under the type 
+interpretation must be treated as a property of the structural description of the sentence. 
+This is evidenced by the fact that there are speakers for whom the plurality implied by 
+the distributive interpretation in such examples may be manifested as a plural pronoun. 
+
+14 In this article we consider only nominal phrases that do not contain bound pronouns or quantified 
+phrases. Any development and any statement that concerns definite noun phrases should be understood with 
+this proviso in mind. 
+
+606 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+For example, for these speakers, (24) and (25) could be continued as in (26) and (27), 
+respectively. 15 
+(26)  On 
+
+a donne le 
+
+meme ordinateur 
+SING  DEF  DETsame  computer 
+
+someone  gave 
+'a Sophie, a Justine, et a Clea, 
+to Sophie, to Justine, and to Clea, and I suspect 
+qu'ils sont tres vite tombes en panne. 
+that they rapidly broke down 
+
+et je crois savoir 
+
+(27)  On 
+
+a donne le 
+
+meme chemisier 
+
+SING  DEF  DET  same  blouse 
+
+someone  gave 
+a Sophie, a Justine, et a Clea, 
+to Sophie, to Justine, and to Clea, and I suspect 
+qu?ils  ont  retreci au premier lavage. 
+that they shrank at the first wash 
+
+et je crois savoir 
+
+We then have a generalization of the following form: 
+
+(28)  Given the right context, a nominal expression that has the type interpretation 
+gives rise to a distributivity effect that is similar to the one found in the ext- 
+poss construction or to the one found with a universal quantifier. 
+
+Two central questions arise at this point: 
+
+(29) a.  What is the source of the correlation between the type interpretation and 
+the distributive interpretation observed in such structures as (26) and (27)? 
+b.  What are the syntactic environments in which a nominal expression that 
+
+has the type interpretation may give rise to a distributivity effect? 
+
+We consider question (29b) first. To answer this question, we  shall examine the 
+acceptability judgments of those speakers who accept forms like (26) and (27), that is, 
+
+Is We give more examples in (i)-(iii) with the noun ordinateur. 
+(i)  On 
+
+a donnd le 
+
+meme ordinateur a Sophie, a Justine, et a Clda, 
+
+someone gave 
+et je  crois  savoir  qu'aucun  (d'entre  eux) n'a marche. 
+and I suspect 
+
+that none (of them) worked 
+
+SING  DEF  DET  same  computer  to Sophie, to Justine, and to Clea, 
+
+(ii)  On 
+
+a donne le 
+
+meme ordinateur a Sophie, a Justine, et a Clda, 
+
+someone gave 
+et je crois savoir que chacun (d'eux) a eu des problemes. 
+and I suspect 
+
+that each one (of them) had problems 
+
+SING  DEF  DET  same  computer  to Sophie, to Justine, and to Clea, 
+
+(iii)  On 
+
+a donne le 
+
+meme ordinateur a Sophie, a Justine, et a Clea, 
+
+someone gave 
+et je crois 
+and I believe that they were IBM PCs from the same store 
+
+que c'etaient des IBM PC qui venaient du meme magasin. 
+
+SING  DEF  DET  same  computer  to Sophie, to Justine, and to Clda, 
+
+Speakers' judgments vary depending on the choice of noun. Thus, certain speakers will accept (i)-(iii) as 
+grammatical, as well as (26) and (27). Others will reject the examples with the noun chemisier, while accepting 
+those with the noun ordinateur. Possibly, others will reject all examples. These variations are expected and 
+have to do with the variable extension of the class of lexical items to which the characteristic grammatical 
+property of inalienables can be attributed, as mentioned in section 1. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH  AND 
+
+IN  ENGLISH 
+
+607 
+
+speakers who can express the implied pluralities perceived in such structures as (24) 
+and (25) as overt pronouns in later sentences. Let us call that class of speakers S. The 
+study of the dialect of S shows that a singular definite expression gives rise to an implied 
+plurality only when it is associated with a plural argument that is not "too far away." 
+To illustrate, consider (30) under the interpretation where meme is understood as related 
+to the subject Sophie, Justine, et Clea in the higher clause. 
+
+(30)  Sophie, Justine, et Clea  ont demande a Paul d'acheter le 
+
+Sophie, Justine, and Clea asked Paul to buy 
+meme ordinateur. 
+same  computer 
+
+SING DEF DET 
+
+This example is grammatical under the assumed interpretation (with either the token or 
+the type reading). However, it does not give rise to any implied plurality, as is shown 
+by the fact that (31) is infelicitous for S. 
+
+(31) *Sophie, Justine, et Clea  ont demande a Paul d'acheter le 
+
+Sophie, Justine, and Clea asked Paul to buy 
+meme ordinateur, et je crois savoir qu'ils sont tres vite tombes en panne. 
+same  computer  and I suspect 
+
+that they rapidly broke down 
+
+SING DEF DET 
+
+In fact, it turns out that an implied plurality may arise only when a strictly local structural 
+relation holds between the singular definite phrase and the associated plural argument. 
+Compare (32), which is ungrammatical in the dialect of S, to (26), which is grammatical 
+in the same dialect. 
+
+(32) *Sophie, Justine, et Clea  ont donne le 
+
+Sophie, Justine, and Clea gave 
+a Paul,  et je crois savoir qu'ils sont tres vite tombes en panne. 
+to Paul, and I suspect 
+
+that they rapidly broke down 
+
+meme ordinateur 
+SING DEF DETsame  computer 
+
+The contrast between (26) and (32) suggests that the distributive interpretation can arise 
+only if some specific grammatical relation holds between the singular definite argument 
+and the plural one, such as the relation that ties together the two complements of a verb 
+like donner 'to give'. The paradigm in (33)-(34) confirms that it is a specific grammatical 
+relation, and not mere linear ordering of categories, that provides the context for the 
+distributive interpretation. Compare (33) with (26) and (34) with (32). 
+
+(33)  Le 
+
+me&me ordinateur a ete remis par Paul 
+SING DEF  DET same  computer was handed by Paul 
+a Sophie, a Justine, et a Clea, 
+et je crois savoir 
+to Sophie, to Justine, and to Clea, and I suspect 
+qu'ils sont tres vite tombes en panne. 
+that they rapidly broke down 
+
+(34) *Le 
+
+meme ordinateur a ete remis a Paul 
+
+SING  DEF  DET same  computer was handed to Paul 
+
+608 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+par Sophie, par Justine, et par Clea, et je crois savoir 
+by Sophie, by Justine, and by Clea,  and I suspect 
+qu'ils sont tres vite tombes en panne. 
+that they rapidly broke down 
+
+On the basis of the paradigm constituted by the examples (26), (27), (31), (32), (33), and 
+(34), and of similar data in the dialect of S, we propose the following hypothesis: 
+
+(35)  A singular definite nominal expression may give rise to a distributive inter- 
+pretation only if it is associated with a plural expression by the Predication 
+relation. 16 
+
+The Predication relation mentioned in (35) is the grammatical relation that may hold in 
+syntax between a subject-taking category and its subject (the external argument in the 
+sense of Williams (1981)). Following Williams (1980), we assume (36). 
+
+(36)  Predication is a binding relation. 
+
+The theory behind (36) stems from the observation that there is no unique structural 
+relation in syntax that is associated with the relation subject-of. Sometimes the external 
+argument is realized in [Spec,X], where X is the argument-taking predicate. However, 
+there is often no direct structural relation in syntax between a category and its subject; 
+instead, the relation is indirect, mediated either by a functional node like Inflection or 
+by a morpheme like the nominative Case marker or the dative Case marker. It follows 
+that, contrary to what happens in the case of a governed argument, the saturation relation 
+between a category and its subject is not always "visible" as a particular constituent 
+structure configuration and must be marked otherwise. It is the role of the binding relation 
+that constitutes Predication to function as the syntactic projection of the subject-of re- 
+lation in such cases. In essence, then, there are two cases: either the subject is realized 
+within the maximal projection of the argument-taking category as the Specifier of that 
+category, in which case Predication does not apply; or the subject is realized outside 
+the maximal projection of  the argument-taking category and Predication does apply, 
+binding that maximal projection to its subject. Thus, with Williams (1980), we assume 
+that only maximal projections give rise to Predication, because it is only in such cases 
+that the notion of subject is not identified as a particular constituent structure configu- 
+ration. (See also the discussion in section 3.2.)"7 
+
+Note that the theory just sketched does not state that there is no structural constraint 
+on Predication. It merely states that there exists no particular constituent structure con- 
+
+16 This statement is to be construed with the proviso in footnote 14. 
+17 We should note that the interpretation of Predication proposed in the text in fact differs to some extent 
+from that in Williams (1980). The latter work assumes that there is a primitive notion "predicate" and defines 
+Predication as the relation between a predicate and its subject. By contrast, we are not postulating any primitive 
+notion of "predicate." We recognize the existence of such objects as "predicates," but take "predicate" to 
+be defined derivatively in terms of more primitive notions. See the discussion in section 3.4. Accordingly, we 
+assume that "Predication" is not a relation restricted to predicates so defined. It really is what we say in the 
+text, namely, the syntactic "signature" of the lexical argumental relation subject-of. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+609 
+
+figuration that would uniformly function as the syntactic projection of subject-of. There 
+are actually tight locality constraints on Predication (see Williams (1980)): 
+
+(37)  Given a subject-taking category YP(u) and its subject XPu such that Predication 
+holds between YP(u) and XPu, YP(u) and XPu must m-command each other. '8 
+In other words, no maximal projection may intervene between two categories related 
+by Predication. Note that the locality defined above should be understood in an extended 
+sense. Specifically, nodes that may be separated by projections of nonlexical categories, 
+such as  Inflection, governed Case markers (like dative), governed prepositions, and 
+determiners with no denotational content ("expletive determiners"), will nevertheless 
+qualify as m-commanding each other. Given our construal of "Predication" as a non- 
+primitive notion (see footnote 17), the locality constraint in (37) really is a condition on 
+the syntactic realization of the subject outside the maximal projection of the subject- 
+taking head. That is, (37) entails that, given a subject-taking maximal projection YP(u) 
+and its subject XPu, YP(u) and XPu must m-command each other. 
+
+The import of defining Predication as a binding relation in the present context derives 
+from the following general account of distributive interpretations, which we adopt in 
+this article: 
+
+(38)  A distributive interpretation is the interpretation that arises when a singular 
+nominal expression is bound to a plural one or to a universally quantified one 
+at S-Structure.19 
+
+Note that the above hypothesis is intended as a "reductionist" explanation of the phe- 
+nomenon of distributive interpretation. What we are claiming is that a distributive in- 
+terpretation merely is the phenomenological correlate of the existence of a certain binding 
+relation in syntax, and that this syntactic relation in fact exhausts the content of the 
+phenomenon. In particular, (38), together with (35), means that the distributive inter- 
+pretation that is found in forms such as (26) and (27) is merely an effect of the particular 
+binding relation at play in Predication. 
+
+To summarize, we adopt the reductionist account of distributive interpretations in 
+(38) and the generalization in (35) concerning the interpretation of singular definite nom- 
+inal phrases.20 With Williams (1980), we assume that Predication is defined as the binding 
+relation that holds between a subject-taking category and its subject (see (36)) when the 
+
+18 In a previous version of this article, we characterized the locality restriction on Predication as a sis- 
+terhood requirement on the two related categories. In the present version, we adopt a suggestion by L. Rizzi, 
+using mutual m-command instead of sisterhood as the proper locality requirement for Predication. M-command 
+is defined as follows: 
+
+(i)  x m-commands y iffx does not dominate y and every maximal projection z that dominates x dominates 
+
+y- 
+
+See Chomsky (1986, 8), Aoun and Sportiche (1983). Nothing crucial hinges on this particular choice of the 
+locality restriction for Predication (but see footnotes 34, 48, and 49). 
+
+19 This general hypothesis of course assumes a nonstandard view of the formalization of relative scopes; 
+
+see footnote 8. 
+
+20 Again keeping in mind the proviso in footnote 14. 
+
+610 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+latter is  realized outside the maximal projection of the former.21 Furthermore, Predi- 
+cation is governed by the m-command constraint (see (37)). 
+
+Having provided a  description of  the  syntactic context that permits distributive 
+interpretations in general, as well as in the more particular case of definite expressions, 
+we now turn to the central question in (29a), repeated here. 
+
+(29) a.  What is the source of the correlation between the type interpretation and 
+the distributive interpretation observed in such structures as (26) and (27)? 
+This question in fact concerns the relation between the form and the interpretation of 
+nominal phrases. Therefore, we shall divide our discussion into two parts. In section 
+2.2 we shall discuss and formalize the interpretive notions "token" and "type," and in 
+section 2.3 we shall turn to the basic syntax of nominal phrases and its relation to the 
+token/type distinction. 
+
+2.2.  On  Types and  Tokens 
+We shall assume that the distinction between type interpretation and token interpretation 
+is described in terms of an autonomous level of representation of sentence grammar that 
+we shall call L-Structure. L-Structure is defined as follows: 
+
+(39)  L-Structure  is a set  of elements  D  =  {i,j,k,  .  .  .} such that each  element  of D 
+
+is associated with some nominal phrase in the sentence. 
+
+Following Zubizarreta and Vergnaud (1992), we shall call the elements of L-Structure 
+denotata. For concreteness, we may assume that denotata are integers, or letters, or 
+both (see below). Given some nominal expression XP in a sentence s  such that XP is 
+associated with the denotatum n in the L-Structure representation of s, we say that "XP 
+denotes n." 22  As an illustration, consider (40). 
+
+(40)  The children dislike Disneyland. 
+
+The L-Structure representation associated with this sentence is  the set of  indices in 
+(41a), where i and j  are integers and where the mapping between nominal expressions 
+and denotata is as shown in (41b). 
+
+(41) a. 
+b. 
+
+{i, j} 
+
+{([NP 
+
+the children],i), ([NP  Disneyland],j)} 
+
+Thus,  in (40) the  children denotes  i and Disneyland  denotes j. 
+
+21 The view that Predication is a binding relation obviously requires some expounding. Note that this view 
+has implications for the treatment of anaphors (in the technical sense of that notion; see Chomsky (1981)). 
+Specifically, the coindexing of a subject and its predicate will be excluded by the i-within-i Condition (see 
+Chomsky (1981, 212)) whenever that subject binds an anaphor. 
+
+22 The term denotation defined here then has a different meaning from the one (ones) found in the philo- 
+sophical tradition. There, the word denotation has been used to express a variety of relations between linguistic 
+and nonlinguistic entities. On the contrary, the notion in the text refers to a relation among linguistic entities. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+611 
+
+It appears, then, that L-Structure will in fact function as an indexing of nominal 
+categories. We argue elsewhere that L-Structure is to be identified with domain D  in 
+the sense of Chomsky (1981); see Zubizarreta and Vergnaud (1992). Henceforth, we shall 
+then refer to L-Structure as domain D. We should point out, however, that the notion 
+of denotation assumed here is more abstract than the one assumed in relation to the 
+usual and intuitive notion of domain D. In fact, the notion of denotation assumed here 
+is intended to be independent of the notion of reference: there are nonreferential denoting 
+expressions  as  well as  referential ones.  Although the distinction between  denotation  and 
+referentiality will not play a central role in this article, we mention it for the sake of 
+precision (but see the analysis of the "PP construction" at the end of section 4). This 
+of  course raises the  question of  which nominal expressions denote. To  answer that 
+question would take us far beyond the scope of this article. Suffice it to say that the 
+class of denoting expressions includes referential expressions and possibly certain non- 
+referential definite and indefinite expressions.23 
+
+As things now stand, an elementary formalization such as the one in (41) is a no- 
+tational variant of one that would include no notion of domain D,  but instead would 
+postulate a syntactic feature [D] and assign that feature to expressions that denote in 
+the above sense. The import of domain D derives from the existence of relations between 
+denotata that cannot be reduced to S-Structure relations. Of particular relevance is the 
+distinction between types and tokens. We assume that we are dealing here with a dis- 
+tinction among elements in domain D.  Specifically, domain D is partitioned into two 
+classes  of  entities, entities of the kind "type" and entities of the kind "token."  We 
+postulate that: 
+
+(42)  The typeltoken distinction is a primitive distinction within grammatical theory 
+
+that is represented in domain D. 
+
+Given our assumptions, types and tokens are mental entities, in fact grammatical entities. 
+We are not dealing here in any way with the question of how these entities are associated 
+with objects in the world. Clearly, a complete theory of mental capacities will have to 
+consider this issue.  Here we  shall note only that whereas tokens may or may not be 
+
+23 The status of domain D with respect to sentence grammar has never been precisely defined. Our hy- 
+
+pothesis means that domain D should be construed as a level of representation of sentence grammar. 
+
+The distinction between reference and denotation pointed out in the text is reflected as a difference in 
+theoretical status within the present model. Although a special level is allocated to the formalization of de- 
+notation, there is no equivalent level for reference. In fact, we assume that: 
+
+(i)  Grammar does not include any autonomous level of representation that would be the set of entities 
+
+referred to by the nominal expressions in the sentence. 
+
+See footnote 6 as well. 
+
+At an abstract level, there is some similarity between positing the notion of domain D that is assumed 
+here and introducing a notion of discourse domain, in the sense of Kamp (1984) and Heim (1982). Note however 
+that domain D in the sense of the text is intended as a level of sentence grammar and not, strictly speaking, 
+as a discourse representation. There are other significant differences between the notion of domain of denotata 
+in the sense of the text and that of discourse representation, which have to do with the representation of 
+quantified expressions. We discuss these points in further detail in forthcoming work. 
+
+612 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+directly associated with objects in the world, types may not be so associated. A type 
+may be associated with an object in the world only indirectly, by instantiation as a token: 
+
+(43)  Instantiation is a primitive relation between tokens and types in domain D. 
+
+Each token is an instantiation of some type. 
+
+The distinction between types and tokens has been argued to be grammatically relevant 
+by Carlson (1977). Roughly, Carlson argues that, in English, generic bare plural noun 
+phrases refer to  "kinds" (e.g.,  Whales are mammals), whereas existential bare plural 
+noun phrases refer to temporal/spatial "stages" of kinds (e.g.,  Whales are swimming in 
+my pool). Here, we extend the notion of "kind" or "type" to subsume such nongeneric 
+noun phrases as those discussed in section 2.1 and some of the inalienable noun phrases 
+that we shall analyze in section 3. 24 
+
+2.3.  The Structure  of Nominal  Expressions  and  the Correspondence  Law 
+
+Following Abney (1987), Brame (1981; 1982), Chomsky (1986), Fukui and Speas (1986), 
+Hellan (1986), Kolb and Thiersch (1986), Thiersch (1985), and others, we assume that 
+the  category D(eterminer), like  other functional categories such as  I(nflection) and 
+C(omplementizer), falls under the X-bar schema. More precisely, we assume that D is 
+a  head  giving  rise  to  a  maximal projection and  taking the  NP  projection as  a 
+complement. This hypothesis is embodied in the diagram in (44). 
+
+(44) 
+
+DP 
+
+D 
+
+NP 
+
+Second, we  shall assume that the Correspondence Law in (45) governs the rela- 
+tionship between syntactic categories and semantic types in the case of nonpronominal 
+definite nominal expressions.25 
+
+(45)  Correspondence  Law 
+
+When a DP or an NP denotes, the DP denotes a token and the NP denotes a 
+type.26 
+
+In a structure of the form in (44), the DP may bear a token-index and the NP may bear 
+
+24  See Zubizarreta and Vergnaud (1992) for further discussion of generic nominal expressions, as well as 
+for a discussion of the differences and similarities between our type/token distinction and Carlson's. See also 
+section 5 below for a brief discussion of generics. 
+
+25  Stowell (1987) has also proposed a correspondence law for DPs and NPs. He suggests that DPs are 
+referential arguments, whereas NPs are nonreferential predicates. This hypothesis provides an elegant and 
+insightful account of certain structures. We believe, however, that the behavior of French inalienables as well 
+as the behavior of certain generics in English (briefly discussed in section 5) supports a Correspondence Law 
+along the lines of (45) over the version that Stowell proposes. 
+
+26 Given the existence of the Correspondence Law, one might question the necessity of the hypothesis 
+in (42), according to which the distinction between types and tokens is a primitive one within domain D. We 
+shall argue in section 5 that, indeed, that distinction cannot be reduced to a syntactic one (between DPs and 
+NPs). 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+613 
+
+a type-index. We shall use numbers (1, 2, 3,  . . .) to designate tokens and lower-case 
+letters  (i, j,  k,  .  .  .)  to  designate  types.  To  illustrate,  (46)  is  the  indexed  constituent 
+structure for the token-denoting (nonpronominal) definite nominal expression ce  chat 
+'this cat'. 
+
+(46) 
+
+DP, 
+
+DI 
+
+ce 
+
+NPj 
+
+chat 
+
+Although it is generally assumed that the complementation relation between a lexical 
+head and its sister encodes a thematic relation, what semantic relation, if any, is encoded 
+by the complementation relation between D and NP is often left undiscussed. Our hy- 
+pothesis is that the complementation relation between D and NP in structures like (46) 
+is the projection of the instantiation relation that holds in domain D between the token 
+I denoted by DP and the type j denoted by NP. In (46) the token I instantiates the type 
+chat  'cat'.  We are thus claiming that the NP  contained within a token-denoting DP 
+denotes and, furthermore, that it denotes a type. This claim finds motivation in examples 
+of backward pronominalization like (47). 
+
+(47)  Parce que leurs griffes peuvent devenir acerees avec l'age, Marie 
+Marie 
+
+because their nails can become sharp with age, 
+a decide d'acheter des chaussettes a ce chaton. 
+decided to buy socks for this kitten 
+
+Recall that we assume that the pronoun in a backward pronominalization structure re- 
+quires a referential antecedent (see footnote 6 and the discussion of (13) and (14)). In 
+(47) the generic pronoun leursltheir has as antecedent the referential NP chatonlkitten 
+contained within the DP ce chatonlthis kitten. Since a referential expression necessarily 
+denotes, (47) establishes that the NP component in ce chaton denotes.27 
+
+27  (i) and (ii) give other examples illustrating that an NP contained within a DP may pronominalize back- 
+
+ward. 
+
+(i)  Because they are usually well illustrated, every child bought a book on animals. 
+(ii)  Because they are usually well illustrated, John decided to buy the book on animals on the shelf. 
+
+Note that the pronoun in (47) and in (i)-(ii) is plural despite the fact that the NP antecedent is singular. Such 
+examples contrast with the ones in (iii)-(iv), where a singular generic NP pronominalizes backward as a singular 
+pronoun. 
+
+(iii)  Quand il est affamd, le lionlun lion peut etre dangereux. 
+(iv)  When it is hungry, the tionla lion can be dangerous. 
+
+An additional relevant fact is that an NP associated with a genitive possessor may not pronominalize backward: 
+(v)  *Parce qu'ils ont beaucoup de succes aupres des enfants, on a ddcide d'acheter le livre de Gallimard 
+
+(vi) *Because they are usually popular with children, we decided to buy Gallimard's book on animals for 
+
+sur les animaux pour notre fils. 
+
+our son. 
+
+We address these issues in forthcoming work. 
+
+614 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+As a further illustration, consider (24) again. 
+
+(24)  On 
+
+a donne le 
+
+meme ordinateur 
+SING DEF DETsame  computer 
+
+someone gave 
+'a Sophie,  'a Justine,  et  'a Cle'a. 
+to Sophie, to Justine, and to Clea 
+
+Recall that this sentence is ambiguous between a token and a type interpretation. Under 
+the token interpretation, the DP l'ordinateur in (24) denotes a token that instantiates the 
+type denoted by the NP ordinateur (for the sake of simplicity, we ignore the adjective 
+meme). The denotational relations associated with such a token-denoting expression can 
+be depicted by means of the diagram in (48), where the arrow a 
+d  b represents the 
+relation "a denotes b" and where the arrow a 
+b represents the relation "b instan- 
+tiates a." 
+
+(48) 
+
+i 
+
+d ( 
+
+/d 
+
+[DP  le 
+
+[NP  ordinateur]] 
+
+By contrast, under the type interpretation of (24), the nominal expression l'ordinateur 
+denotes the type "computer" but is not associated with any token instantiation of that 
+type, by definition. Given the Correspondence Law, it must then be the case that, under 
+the type  interpretation of  l'ordinateur, the definite determiner le  does  not bear any 
+denotational index. In other words, under the type interpretation, le functions as an 
+expletive from the point of view of denotation. The corresponding constituent and de- 
+notational structure of the nominal phrase l'ordinateur in (24) is depicted in (49). 
+
+(49) 
+
+i 
+
+d 
+
+[DP  le  [NP  ordinateur]] 
+
+Since the determiner D in (49) bears no denotational index (does not denote), there is 
+no instantiation relation within domain D that could license the head/complement relation 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+615 
+
+between D and NP in (49) by projection.28 The question then is, What licenses the head/ 
+complement relation in such a structure? We would like to suggest that (49) is a case 
+where the complementation relation between D and NP is morphologically licensed, by 
+the overt person, number, and gender agreement relation that holds between the deter- 
+miner and its complement NP (as in the case of Agr and VP). If correct, this hypothesis 
+makes some interesting predictions concerning cross-linguistic variations, which we shall 
+discuss in section 4. 
+
+We have just put forth a hypothesis that will turn out to be crucial for our account 
+of  the correlation between the type interpretation and the distributive interpretation 
+observed with such structures as (26) and (27). We restate this hypothesis in (50). 
+
+(50)  In French the definite determiner le may function as an expletive from the 
+
+point of view of denotation. 
+
+We are now in a position to answer the first question in (29): Why is there a correlation 
+between the type interpretation and the distributive reading (as in (26) and (27))? Recall 
+that in section 1 we suggested that inalienables are subject-taking nouns. Other nouns 
+like ordinateur and chemisier may function as inalienables by extension. This means 
+that they may be analyzed as  taking an external argument. We represent the corre- 
+sponding structure for ordinateur in (51).29 
+
+(51) 
+
+DP 
+
+D 
+
+NP(x) 
+
+N(x) 
+
+le 
+
+ordinateur(x) 
+
+formal level of description: both items fail to denote. 
+
+28  Note that the definite determiner in a type-denoting expression is comparable to a quantifier at this 
+In a previous version of this article, we had assumed that the grammatical relation holding between an 
+expletive determiner and the NP was different from that holding between a denotational determiner and the 
+NP. Namely, we had assumed that, whereas a denotational determiner governs the NP, an expletive determiner 
+is adjoined to it; see Vergnaud and Zubizarreta (1990). We have abandoned this hypothesis, essentially because 
+we could not find any independent evidence to support it. 
+
+29 The alternative analysis in (i) is excluded because a determiner is not an argument-taking category. 
+(i) 
+
+DP(x) 
+
+D(x) 
+I 
+le(x) 
+
+NP 
+I 
+
+ordinateur 
+
+616 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+Given the representation in (51), the VP in (26) will then be analyzed as in (52), with 
+the category DP, binding NPj(x).30 We choose here to represent the VP as a left-binary- 
+branching structure. At this point, nothing essential hinges on this particular decision 
+(but see section 3.4 for further discussion, as well as footnotes 34, 48, and 49). We use 
+a slash index to indicate binding.3' 
+
+(52) 
+
+VP 
+
+V 
+
+' 
+
+V 
+
+DP 
+
+PPdat 
+
+/\\\\NPNj(x)/, 
+
+D> 
+
+P, 
+
+D 
+I 
+le 
+
+donner 
+
+Nj(x) 
+I 
+
+ordinateur(x) 
+
+dative 
+I 
+a 
+
+Sophie, etc. 
+
+By (37), the structure in (52) will be well formed to the extent that the DP Sophie, Justine, 
+et Clea and the NP ordinateur m-command each other. As a nonlexical category, the 
+dative Case marker in (52) does not define a barrier for m-command.32 But what about 
+the determiner le in the direct object l'ordinateur? For mutual m-command to obtain 
+between the dative complement and the NP ordinateur in (52), that determiner must be 
+an expletive from the point of  view of  denotation (i.e.,  it must bear no denotational 
+index). This means, by the Correspondence Law, that the nominal expression in direct 
+object position must receive the type interpretation. Conversely, the structure in (52) 
+would be ill formed under the token interpretation. Under that interpretation, the de- 
+terminer would bear a denotational index and Predication would fail to apply, by failure 
+of  mutual m-command. As  a  consequence, the argument-variable of  the  inalienable 
+phrase would not receive any interpretation: the structure would be ruled out by the 
+Principle of Full Interpretation (see Chomsky (1986)). 
+
+30 It is not necessarily the case that the subject-of relation will hold between the complements of a verb 
+
+such as donner 'give'. Consider the following example: 
+
+(i)  La France a vendu le 
+
+meme char a l'Iran et a l'Irak. 
+SING  DEF  DET  same  tank to Iran and to Iraq 
+
+France 
+
+sold 
+
+In the absence of any other context, this sentence clearly has the type interpretation. On the other hand, 
+contrary to what happens in (24) or (25), it does not give rise to any distributive interpretation. On our view, 
+this reflects the fact that no argument relation holds between the direct object and the dative complement in 
+(i). 
+
+31  For convenience, we have omitted the adjective meme from the direct object of donner. 
+32 The term barrier here should be understood in its everyday sense, not in the technical sense defined 
+
+in Chomsky (1986). 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+617 
+
+To summarize so far, we have identified a remarkable property of certain definite 
+phrases in French, which we have analyzed as inalienable phrases in an extended sense. 
+These are phrases headed by lexical items such as the kinship terms mother, uncle, sister 
+.  . .,  as well  as  computer,  car,  office,  house,  bedroom  .  . 
+,  shirt, shoes  .  .  .,  picture, 
+portrait..  .  Such phrases in the singular will give rise to an implied plurality by virtue 
+of being associated with a plural possessor. We have provided an analysis of this property 
+based on three basic hypotheses: 
+
+(53) a.  A singular definite expression (see the proviso in footnote 14) will give rise 
+to an implied plurality only if it has the type interpretation: a singular phrase 
+that gives rise to an implied plurality is a type-denoting expression. 
+
+b.  A singular definite expression (see the proviso in footnote 14) will give rise 
+to an implied plurality only if a semantic dependency obtains: a singular 
+phrase that gives rise to an implied plurality is a semantically dependent 
+phrase (i.e.,  a phrase with an unsaturated argument-variable). 
+
+c.  A Correspondence Law holds, which implies that a type-denoting expres- 
+sion cannot be analyzed as a denoting DP. The definite determiner in a 
+type-denoting expression is then an expletive from the point of view of 
+denotation. 
+
+Given the above hypotheses, if a definite phrase in direct object position denotes a type, 
+its determiner will have the status of an expletive and will be transparent to the rule of 
+Predication. The NP  complement of  the expletive determiner (or more precisely, its 
+argument-variable) will then become accessible to binding-via  Predication-by  an ar- 
+gument external to the direct object (namely, by the dative complement of the verb). 
+Our central claim is then that the distributive interpretation arises as a consequence of 
+the binding relation that exists between the dative argument of the verb and the variable 
+contained in the definite phrase in direct object position. 
+
+3.  The Syntax and Interpretation of the Inalienable Constructions 
+We now turn to constructions with inalienable body-part phrases. In section r we pointed 
+out that some of these constructions give rise to the distributivity effect. In section 2 
+we examined other constructions that give rise to the same effect. Instead of body-part 
+nouns, the latter constructions contain nouns that we classify as "extended inalienables' 
+(because, like body-part nouns, they may be analyzed as taking an external argument). 
+On the basis of the "extended inalienable" constructions, we have motivated an analysis 
+of the distributivity phenomenon that is founded on the central hypothesis that definite 
+nominal phrases that give  rise to  the distributivity effect are type-denoting nominal 
+phrases concatenated with an expletive determiner (i.e.,  a determiner with no denota- 
+tional content). According to this analysis, type-denoting expressions but not token- 
+
+3  Tellier (1988) also argues, on the basis of an analysis of a different phenomenon, that such nouns may 
+
+be analyzed as inalienables by extension. 
+
+618 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+denoting expressions may give rise to the distributivity effect. This analysis leads to the 
+following conjecture concerning inalienable constructions: 
+
+(54)  In those cases in which the inalienable construction gives rise to the distrib- 
+utivity effect, the inalienable phrase denotes a type. In the other cases,  the 
+inalienable phrase denotes a token. 
+
+We  shall now proceed to  flesh  out the above conjecture. We examine the ext-poss 
+construction in section 3.1 and the int-poss construction in section 3.2. In section 3.3 
+we analyze the behavior of modifiers in the different constructions. 
+
+3.1.  The Ext-Poss  Construction 
+We showed in section 1 that the inalienable phrase in the ext-poss construction gives 
+rise to the distributivity effect (see (7)). According to (54), this implies that the inalienable 
+phrase denotes a type. The logic of the analysis of the "extended inalienable" cases in 
+section 2 applies to the ext-poss construction in exactly the same way. As an example, 
+consider  the  VP  structure  (55) of  the  example  in (Sb): Le  medecin  a  examine' la  gorge 
+aux enfants. (We shall not discuss the status of the dative complement in such examples 
+here.  Kayne (1975) shows that this complement is  to  be  analyzed as  a  malefactive/ 
+benefactive complement of the verb (i.e.,  a complement affected by the action or state 
+referred to), and not as a possessor moved out of the direct object and into the VP. We 
+shall use a "small clause" representation. At this point, nothing hinges on this particular 
+choice, but see section 3.4 for discussion.)34 
+
+(55) 
+
+V 
+
+VP 
+
+DP 
+
+SCdat 
+
+PPdat 
+
+examiner 
+
+D 
+
+NP3(x)/1 
+
+Pdat 
+
+DP, 
+
+NA(x) 
+
+a 
+
+les enfants 
+
+la 
+
+gorge(x) 
+
+3  L. Rizzi (personal communication) points out that a small clause analysis will possibly explain the fixed 
+order between the direct object and the dative complement in a structure like (55). Thus, the following form 
+is ungrammatical, contrasting with (5): 
+
+(i)  *Le medecin a examine aux enfants 
+
+gorge. 
+the doctor  examined to the children SING  DEF  DET  throat 
+
+la 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH  AND 
+
+IN  ENGLISH 
+
+619 
+
+Recall that Case markers (like the dative preposition) and expletive elements (like the 
+indexless determiner in la gorge) do not constitute "barriers" for Predication. Therefore, 
+Predication may associate the NP gorge with the dative complement in (55). Thus, NPj(x) 
+is interpreted as bound to DP,. This binding relation creates or gives rise to a new token 
+denotatum, which is a plurality of instantiations of the inalienable type ('stomach' in (4) 
+and 'throat' in (5)). This plurality of inalienable tokens is not part of the domain D of 
+the given sentence, but is part of the domain D of subsequent sentences, as illustrated 
+by the fact that, for some speakers, such sentences may contain pronouns manifesting 
+the implied plurality (see the contrast between (7) and (8)). 
+
+As in (52), the inalienable phrase in direct object position may not be analyzed as 
+a token-denoting DP. If it were so analyzed, the denoting determiner would block the 
+Predication relation between NPj(x) and the dative complement. The argument-variable 
+of the inalienable phrase would remain uninterpreted and the structure would then be 
+ill formed. 
+
+Independent motivation for analyzing the inalienable phrase in the ext-poss con- 
+struction as a type-denoting expression is provided by another property of this construc- 
+tion discussed in section 1. Recall that, as attested by the ungrammaticality of (15), in 
+the ext-poss construction an inalienable phrase headed by a noun like estomac 'stomach' 
+or gorge  'throat' is necessarily singular, whether it is associated with a singular or a 
+plural possessor.  We believe that this is due to the inherent semantics of human in- 
+alienable body parts as types. As we noted at the outset, inalienables are semantically 
+dependent  entities.  Specifically,  human  inalienable  body-part  types  are  defined  with 
+respect  to a typical individual "human,"  which has two hands, two arms, two legs,  etc., 
+but one stomach, one throat, one nose, etc. This means, in particular, that the number 
+of a body-part noun is regulated by its interpretability with respect to the typical indi- 
+vidual "human": a body-part noun in the singular (resp. plural) will be well formed if 
+and only if the corresponding singular (resp. plural) denotation is defined as a body-part 
+type within the mental representation of  the typical individual "human." Thus, the 
+singular form hand and the plural form hands are both interpretable because both denote 
+body-part types: there is a body part called hand, as well as one called hands. By contrast, 
+a plural form such as stomachs cannot be interpreted as denoting a plural type, because 
+there is no part of the human body that is so called within the mental representation of 
+the individual "human" (a plural such as stomachs will show up only in association with 
+a plural token-denoting determiner; see the agreement rule (72) in section 3.2.2). In other 
+words, inalienable types  such as  estomac 'stomach', gorge  'throat', nez 'nose',  and 
+bouche 'mouth' are inherently singular, whereas inalienable body parts such as main 
+'hand', bras 'arm', and jambe 'leg' may be either singular or plural. Note that the body 
+
+The behavior of the dative in the ext-poss construction thus differs from that of the dative complement of a 
+verb like donner 'to give'. The latter can be permuted around the direct object: 
+
+(ii)  On 
+
+a donne a Sophie et a Justine 
+
+le 
+
+someone gave 
+
+to Sophie and to Justine SING  DEF  DET  same  computer 
+
+meme ordinateur. 
+
+620 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+part denoted by the plural form mains 'hands' is the indivisible set of two hands in the 
+mental representation of the individual "human." This explains the observation that we 
+made with respect to the interpretation of (9), repeated here as (56). 
+
+(56)  On leur a lave  les  mains. 
+
+Since the plural form les mains denotes a type, it is understood as denoting an indivisible 
+set of two hands, which, when bound to a plurality of possessors, must be indivisibly 
+distributed among them. For example, if there are three token possessors, the inalienable 
+type denoted by les mains implies three instantiations of a pair of hands. 
+
+If we are correct that the binding relation between the inalienable phrase and the 
+possessor is established via Predication in the ext-poss construction, then we expect 
+that this construction will obey strict locality constraints. The local nature of the con- 
+struction has, in effect, been extensively discussed in the literature (see Kayne (1975), 
+Gueron (1985), Authier (1988), and Tellier (1988), among others). This point is illustrated 
+by the ill-formedness of the examples in (57). 
+
+(57) a.  *Pierre est tombe et 
+
+la 
+
+tete  a heurte le trottoir.35 
+
+Pierre fell 
+
+and SING  DEF  DET  head hit 
+
+the curb 
+
+b.  *Pierre pense  que le 
+
+bras est casse. 
+
+Pierre thinks that SING  DEF  DET  arm  broke 
+
+c.  *La 
+
+main lui 
+
+a semble etre tres enflee. 
+
+SING  DEF  DET  hand to him seemed  to be very much swollen 
+
+Predication adequately captures the local nature of the ext-poss construction. In other 
+words, the  inalienable phrase and the  associated possessor  must m-command each 
+other.36 
+
+3  But see section 5 and footnote 63 for further discussion. 
+36 As noted by Kayne (1975), the dative complement that is construed with the inalienable internal argument 
+
+of the verb may be provided by a higher causative verb such as faire. Compare (i) and (ii). 
+
+(i)  Le soleil lui 
+
+a fait rougir la peau. 
+the sun  to him made redden the skin 
+
+(ii) *La peau lui 
+
+a rougi. 
+
+the skin to him reddened 
+
+This phenomenon is possible only to the extent that faire and the verb embedded under it undergo reanalysis. 
+
+Examples like (iii) are presumably unaccusative constructions, as suggested by Gudron (1985). 
+(iii)  La tete  lui 
+
+tourne. 
+
+the head to him spins 
+'His head spins.' 
+
+Thus, the mutual m-command relation between the dative and the inalienable phrase would be established at 
+D-Structure, as in passive structures like (iv). 
+
+(iv)  La dent cariee 
+
+a etd arrachee par le dentiste. 
+the decayed tooth to him was pulled out by the dentist 
+
+lui 
+
+But the facts are somewhat more complex, as the following contrast (noted by Authier (1988, 184-185)) 
+
+shows: 
+
+(v)  *La tete  lui 
+
+a heurte le plafond du cockpit. 
+
+the head to him hit 
+
+the ceiling of the cockpit 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+621 
+
+There is  however one type of prima facie counterexample to the Predication hy- 
+pothesis-namely,  the example in (la), where the subject is interpreted as the possessor 
+of the inalienable phrase in object position. But as noted by Kayne (1975) and Gueron 
+(1985), this construction is lexically restricted. In French it is found only with verbs that 
+denote body movements, such as lever 'raise', bouger 'move', ouvrir 'open', claquer 
+'snap', and froncer 'frown'. Thus, compare the examples in (58), which are well formed, 
+with the ones in (59), which are ill formed. 
+
+(58) a.  Les hommes ont lev6 le 
+
+the men 
+
+raised 
+
+bras. 
+SING  DEF  DET  arm 
+
+b.  Les hommes ont claque les 
+
+c.  Les hommes ont ouvert les 
+
+b.  *Les hommes ont rase la 
+
+c.  *Les hommes ont casse la 
+
+(59) a.  *Les hommes ont lave le 
+
+visage. 
+
+the men 
+
+the men 
+
+the men 
+
+the men 
+
+the men 
+
+doigts. 
+snapped  PL  DEF  DETfingers 
+yeux. 
+PL  DEF  DET  eyes 
+
+opened 
+
+washed  SING  DEF  DET  face 
+
+barbe. 
+shaved  SING  DEF  DET  beard 
+tete. 
+SING  DEF  DET  head 
+
+broke 
+
+Following Gueron (1985), we may assume that the verbs in (58) differ from those in (59) 
+in that they trigger reanalysis. The reanalysis hypothesis coupled with the hypothesis 
+that the definite determiner in French may have the status of an expletive (and as such 
+is transparent to the rule of Predication) gives rise to the appropriate structural con- 
+figuration for Predication to relate the subject not only to the verb but also to the in- 
+alienable noun in object position. For example, consider the VP lever le bras in (58a). 
+The determiner le is an expletive and is therefore transparent with respect to Predication. 
+Furthermore, because of reanalysis, the VP is interpreted as a projection of the complex 
+
+(vi)  Les genoux lui 
+
+ont heurtd le menton. 
+
+the knees 
+
+to him hit 
+
+the chin 
+
+We will not attempt to account for (v)-(vi) here; we simply note that the "closeness" of the dative clitic to 
+the inalienable phrase in subject position is a necessary (but not sufficient) prerequisite for the well-formedness 
+of (vi). The dative clitic is  probably attached to Infl (as suggested by Authier (1988)) and thus counts as 
+m-commanding the subject. This observation is supported by the ill-formedness of (vii), where les  genoux  is 
+interpreted as belonging to Pierre. 
+
+(vii) *Les genoux ont heurte le menton de Pierre. 
+the chin  of Pierre 
+
+the knees  hit 
+
+As one reviewer points out, the structure in (vi) is reminiscent of constructions with parasitic gaps, in the 
+sense that there is one binder (lui)  for two bindees (genoux  and menton).  The import of the observation is 
+weakened by the fact that clitics are known not to license parasitic gaps (see Chomsky (1982)). 
+
+See also section 4 for a discussion of PP constructions of the kind in (viii). 
+
+(viii)  Marie a embrasse les enfants  sur la joue. 
+
+Marie kissed 
+
+the children on the cheek 
+
+622 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+predicate lever le bras. Predication then binds the external argument-variable of lever 
+le bras to the subject les hommes, giving rise to the distributivity effect.37 
+
+3.2.  The Int-Poss  Construction 
+As we observed in section 1. 1, an int-poss construction with a plural possessor does not 
+necessarily give rise to a distributivity effect. We shall present the analysis of the struc- 
+ture that gives rise to the distributivity effect in section 3.2.1, and the analysis of the 
+structure that lacks this property in section 3.2.2. We shall claim that the inalienable 
+phrase in the former structure denotes a type, and we shall refer to the corresponding 
+structure as the type construction. On the other hand, we shall claim that the inalienable 
+phrase in the latter structure denotes a token, and we shall refer to the corresponding 
+structure as the token construction. 
+
+We begin with some general preliminaries concerning the analysis of prenominal 
+
+possessors in French. Consider the following forms: 
+chevaux 
+
+leurs 
+Poss(3RD  PERS PL)/POSS-ED(PL)  horses 
+
+(60) a. 
+
+b. 
+
+cheval 
+leur 
+Poss(3RD  PERS PL)/POSS-ED(SING)  horse 
+
+In French the pronominal possessor is morphologically marked for two distinct number 
+features: the number corresponding to the possessor and the number corresponding to 
+the possessed object. This can be clearly seen in the paraphrases given in (61), where 
+the possessor and the object of possession are realized as distinct morphemes. 
+
+(61) a. 
+
+b. 
+
+chevaux a 
+
+eux 
+les 
+PL  DEF  DET horses  DAT their 
+eux 
+le 
+SING  DEF  DET horse  DAT their 
+
+cheval a 
+
+37 In Norwegian the class of verbs that trigger reanalysis is somewhat different from that in French. In 
+Norwegian there is a class of verbs that allow the short form of the reflexive (the clitic seg).  As in Dutch, 
+these verbs can be characterized as the verbs that take an "affected" object (see Zubizarreta (1987)). It is this 
+class of verbs that allow for a definite inalienable phrase in direct object position (we owe this observation to 
+L. Johnsen): 
+
+(i)  De  vasket  seg/ansiktet. 
+they washed self/the face 
+
+(ii)  De  barberte seg/skjegget. 
+they shaved  self/the beard 
+
+(iii)  De  reiste seg/hodet. 
+
+they raised self/the head 
+
+Compare these examples with (iv)-(v). 
+(iv)  Han stolte pa seg selv/*seg. 
+trusted  himself/*self 
+
+he 
+
+(v)  Han stolte pa sitt hode/*hodet. 
+trusted  his head/*the head 
+
+he 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+623 
+
+In (60a) the possessor and the possessed arguments are both plural, as shown by the 
+paraphrase in (61a). In (61a) the plural possessor surfaces in postnominal position as a 
+dative. Plurality of the possessed argument is indicated by the plurality of the determiner, 
+as well as by the plurality of the noun with which it agrees. In (60b) the possessor is 
+plural, but the possessed argument is singular. This is shown by the paraphrase in (61b), 
+where the plural possessor is realized as a postnominal dative. The singularity of the 
+possessed argument is indicated by the singular mark on the noun and on the agreeing 
+determiner.3 
+
+The paraphrases in (61) suggest that the prenominal possessive determiner illustrated 
+in (60) should be analyzed as the product of a transformation that conflates the definite 
+determiner (which carries the token index of the possessed argument) and the genitive 
+pronominal possessor in [Spec,DP]. Accordingly, we shall posit the rule of morphological 
+conflation in (62), which we shall call Suppletion. 
+
+(62)  IDP pronoun [D'  determiner]] --> suppleted form 
+
+To illustrate, (60a) will be analyzed as in (63a) and (60b) as in (63b). Suppletion spells 
+out eux  +  les  as leurs and eux  ?  le as leur. 
+
+(63) a. 
+
+DP, 
+
+b. 
+
+DP, 
+
+Spec 
+
+D 
+
+SpecD' 
+
+eux2 
+
+DI 
+
+les 
+
+NPj 
+
+N 
+
+chevaux 
+
+eux2 
+
+DI 
+
+le 
+
+NPj 
+
+N 
+
+cheval 
+
+38 The following table gives the complete paradigm for the pronominal possessor in French (Foss  stands 
+
+for possessor and Foss-ed  for object of possession): 
+
+Sing  Foss-ed 
+
+Sing Poss 
+
+P1 Poss 
+
+1  mon 
+2 
+ton 
+3 
+son 
+1  notre 
+2  votre 
+3 
+leur 
+
+FI Foss-ed 
+mes 
+tes 
+ses 
+
+nos 
+vos 
+leurs 
+
+624 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+In French (as in other Romance languages) prenominal possessors are always pronom- 
+inal. Full-fledged lexical possessors appear only in postnominal position. This could be 
+attributed to the fact that in French (as in other Romance languages) genitive Case is 
+not assigned to the left; it is assigned to the right of the nominal head. The morphological 
+conflation rule could then be seen as a rule that allows the prenominal pronominal pos- 
+sessor in the [Spec,DP] position to escape the Case Filter. Because of this suppletion 
+process, the pronoun is  exempted from the Case Filter.39 Of course, nonpronominal 
+lexical items, which constitute an open class, cannot undergo such a suppletion process 
+by definition. In order to reduce the number of possible analyses, we shall assume that, 
+in  the  unmarked case,  functional categories license  Case by  Spec-head agreement, 
+whereas lexical categories license Case under government.40 Accordingly, we assume 
+that, in French, genitive Case is assigned to an XP either if it is the complement of N 
+or if it is in the [Spec,DP]. We formulate the rule in (64) (genitive Case surfaces as the 
+preposition de). 
+
+(64)  Genitive  Case  Assignment 
+
+Genitive Case is assigned to XP if XP is to the right of D/N and either XP is 
+in the [Spec,DP] or XP is governed by N. 
+
+It is reasonable to assume that a possessor 0-role is never realized as an internal argument 
+of the noun, just as an agent 0-role is never realized as an internal argument of the verb 
+(due to general mapping constraints). This mapping constraint, in conjunction with the 
+structural conditions on the rule of genitive Case assignment formulated in (64), implies 
+that a possessor is unambiguously analyzed as the [Spec,DP]. More precisely, it is never 
+analyzed as the [Spec,NP] at S-Structure. Furthermore, given the directionality of gen- 
+itive Case assignment, a nonpronominal lexical possessor will surface to the right of D. 
+This is illustrated in (65). 
+
+(65)  a. 
+
+b. 
+
+chevaux  des  enfants 
+
+les 
+PL  DEF  DET  horses 
+le 
+SING  DEF  DET  horse  of  the children 
+
+cheval  des  enfants 
+
+of  the  children 
+
+Note that in the structures in (63) the noun is analyzed as an alienable noun (i.e., 
+
+3  Italian differs from French and other Romance languages in this respect. In Italian a prenominal pos- 
+
+sessor coexists with the determiner: 
+
+(i) 
+
+la 
+SING  DEF  DET  POSS  FEM  3RD  SING/PL  house 
+
+sualloro 
+
+casa 
+
+It could be that Italian uses a process of "possessor incorporation" instead of morphological suppletion. Thus, 
+in Italian the determiner and the possessor would both be dominated by the node D. This idea is supported 
+by the fact that no lexical material may intervene between the determiner and the prenominal possessor in 
+Italian. It remains to be seen what the implications of such a hypothesis are for the structure of noun phrases 
+in that language. We thank A. Belletti for a discussion of this point. 
+
+40 We assume that X governs YP if the first branching node that dominates X dominates YP and no maximal 
+
+projection intervenes. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+625 
+
+it does not take an argument). The pronoun in [Spec,DP] is not semantically related to 
+the noun; instead, it is interpreted as bearing a semantic relation of  "possessor" with 
+the DP token index (a relation that has often been identified in the literature as the 
+"POSS relation"; see Williams (1981), Rappaport (1983), Zubizarreta (1987), and Grim- 
+shaw (1990), among others). This thematic position, however, is  not one to  which a 
+lexical role is assigned, since a determiner has no argument structure. Rather, the Spec- 
+ifier of a token DP must be assumed to be a position of structural role assignment. 
+3.2.1.  The Type Construction  What we  call the type construction  is exemplified  in (16), 
+repeated here as (66). 
+
+(66) a.  Le medecin a radiographie leur estomac. 
+
+b.  Le medecin a examine leur gorge. 
+
+In these examples the singular inalienable nouns estomac and gorge are construed with 
+a plural possessor leur, implying a plural set of tokens, which can be manifested as a 
+plural pronoun in a subsequent sentence (see (17)). The presence of a distributive effect 
+suggests that the determiner that underlies such inalienable phrases has no denotational 
+content. The structure of these phrases is then as shown in (67). 
+
+(67) 
+
+DP 
+
+Spec 
+
+D' 
+
+eux1  D 
+
+NPj(x) 
+
+le 
+
+estomac(x) 
+
+Given the status of the determiner as an expletive, Predication can associate the in- 
+alienable NP with the pronoun in [Spec,DP]. Thus, eux1 binds NPj(x), giving rise to an 
+implied plurality of inalienable tokens. 
+
+We assume that an analysis that involves movement from [Spec,NP] to [Spec,DP] 
+rather than Predication (as in (68)) is excluded by the Law of the Economy of Derivation 
+(Chomsky (1991)). Following Chomsky, we assume that if there is an analysis A that 
+involves movement and an analysis B that does not, then B is chosen over A, all other 
+things being equal.4" 
+
+41 Assuming the approach to the relation subject-of advocated in this article, we expect a situation anal- 
+ogous to the one described in the text with respect to the type construction to arise with clauses. That is, we 
+should encounter clauses in which the external argument of the verb is realized directly outside the maximal 
+projection of the verb and is identified by the relation of Predication. Duffield (1991) argues that such cases 
+are attested in Irish. 
+
+626 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+(68)  * 
+
+DP 
+
+Spec 
+
+Dr 
+
+eux1 
+
+D 
+
+NPj(x) 
+
+le 
+
+Spec 
+
+N 
+
+t, 
+
+estomac 
+
+The examples in (66) have counterparts with a postnominal possessor. As expected, 
+the definite expletive determiner (which is overt in this case) is singular, since the NP 
+type is singular: 
+
+(69)  a.  Le  medecin  a radiographie 1' 
+
+estomac  des  enfants. 
+
+the  doctor  X-rayed 
+
+SING  DEF  DET  stomach  of  the children 
+
+b.  Le  medecin  a examine  la 
+
+gorge  des  enfants. 
+
+the  doctor  examined  SING  DEF  DET  throat of  the children 
+
+There also exist  "extended inalienables" that follow the pattern of the type con- 
+struction. Thus, leur echarpe 'Poss(3RD PERS PL)/POSS-ED(SING)  scarf  and leur voiture 
+'Poss(3RD  PERS PL)/POSS-ED(SING)  car' may be interpreted as denoting a plurality of to- 
+kens-"scarves" 
+
+and  "cars,"  respectively. 
+
+3.2.2.  The Token Construction  We now turn to the sentences in (6), repeated here as 
+(70), which exemplify what we call the token construction. 
+
+(70) a.  Le medecin a radiographie leurs estomacs. 
+
+b.  Le medecin a examine leurs gorges. 
+
+The striking property of this construction is that the inalienable nouns estomac 'stomach' 
+and gorge 'throat' appear in the plural form. As noted earlier, however, these nouns are 
+inherently singular. We would like to suggest that, in these examples, the inalienable 
+nouns estomac and gorge are semantically singular but grammatically plural. Specifi- 
+cally, in such structures, in which the DP denotes a plural token, the NP agrees with 
+the determiner in number by virtue of a purely formal agreement process. The inalienable 
+phrases in (70) will then have the structure in (71), in which 2, 1, and j are denotational 
+indices. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+627 
+
+(71) 
+
+DP, 
+
+Spec 
+
+D' 
+
+eux2  DI 
+
+NPj 
+
+les 
+
+Spec 
+
+N' 
+
+t2 
+
+estomac(x) 
+
+In (71) the DP denotes a token-namely,  1-that  instantiates the inalienable type es- 
+tomac(x),  represented as j.  The pronoun eux2 cannot be associated with the argument 
+of estomac(x)  via Predication. The determiner bears a denotational index and therefore 
+blocks Predication from applying between the pronoun in [Spec,DP] and NPj. The pro- 
+noun eux2 is construed as the argument of estomac(x)  by virtue of being linked to the 
+trace in the [Spec,NPj]. Note that the noun estomac  is singular in (71) (recall that this 
+is an inherent property of inalienable nouns like 'throat', 'stomach', 'nose',  'mouth'). 
+The reason that these inalienable nouns surface in the plural in (70) is that the NP agrees 
+with the determiner in grammatical number in these cases. In other words, if D denotes, 
+then it determines grammatical number, and reciprocally. We make this explicit in the 
+following Agreement Rule:42 
+
+42  The statement in (72) expresses a syntactic generalization, not a principle of formal grammar. A formal 
+account of (72) would presumably have to refer to the functional category [number], introduced by Ritter 
+(1991). Adopting Ritter's account, we might posit the structure in (i) for a DP, where nb is the functional head 
+[number] and nbP is the maximal projection of that category. 
+
+(i) 
+
+DP 
+
+Spec 
+
+D 
+
+nbP 
+
+nb 
+
+Spec 
+
+NP 
+
+Assuming the structure in (i), agreement between NP and D will ultimately arise via Spec-head agreement 
+between nb and its Specifier and head movement of nb to D. The inherent number specification of NP will 
+be represented as a lexical feature on N. The adoption of a representation such as (i) would involve further 
+hypotheses concerning the relation between morphological form and syntactic structure and would take us 
+beyond the scope of this article. 
+
+628 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+(72)  If D and NP are sisters and D denotes, then NP agrees with D in number. 
+
+Otherwise, D agrees with NP. 
+
+In conclusion, then, the inalienable nouns in (70) are semantically singular, but gram- 
+matically plural. 
+
+Our analysis of the construction exemplified in (70) implies that this construction 
+should not give rise to a distributivity effect. The reason is that the possessor and the 
+inalienable noun phrase are not associated via Predication. Recall that it is Predication, 
+as a binding relation, that gives rise to distributivity. Interestingly, the prediction is borne 
+out. This can be shown with forms like the one in (18), repeated here in (73).43 
+
+(73)  On a lave  leurs mains. 
+
+As mentioned in section 1, (73) differs from (56) in that the former does not impose a 
+distributive interpretation. Given the formalization proposed here, a form such as (73) 
+has multiple possible underlying structures. The inalienable noun can be a semantically 
+plural noun (i.e., it may denote an indivisible pair of type "hands") concatenated either 
+with an expletive determiner or with a denoting determiner. But according to the analysis 
+sketched in the previous paragraph, the inalienable noun in (73) can also be semantically 
+singular, with its overt grammatical number derived by (72) in the context of a plural 
+token-denoting determiner. In this second situation, the underlying structure of (73) is 
+as shown in (74). 
+
+(74) 
+
+DP, 
+
+Spec 
+
+D' 
+
+euX2  DI 
+
+NPj 
+
+les 
+
+Spec 
+
+t2 
+
+N' 
+
+N 
+
+main(x) 
+
+43 Even though the plural morpheme is not phonetically overt in (73), native speakers are perfectly able 
+to establish a grammatical distinction between that form and its singular counterpart On  a  lave  leur  main 
+'Someone washed their hand' when they read. Speakers contrast the two cases exactly as they would if the 
+plural number were phonetically marked, as in On a  lave  leur aissellelleurs  aisselles  'Someone washed their 
+armpits'. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+629 
+
+The plural DP in (74) instantiates the singular type "main." It therefore denotes a plu- 
+rality of individual hands (rather than of pairs of hands). Furthermore, the pronoun eux 
+in (74) is interpreted as the argument of main by virtue of being linked to the [Spec,NP] 
+position, rather than by being construed with the NP via Predication. The structure in 
+(74), which is well formed, thus contrasts with the one in (68), which is excluded by the 
+Law of Economy of Derivation. Since the subject-of relation is identified structurally 
+in (74), rather than via Predication, there is no binding relation between eux2 and main(x). 
+This means that the semantic relation that holds between eux2 and the plurality of in- 
+dividual tokens "hand" (represented by the token index 1) is merely an instance of the 
+POSS relation and should not give  rise to  any distributivity effect  (since there is  no 
+binding). In other words, the set of token possessors may be construed freely (in fact, 
+globally rather than distributively) with the set of token hands (one or two hands may 
+be construed with any one individual possessor). We thus obtain the "vague" interpre- 
+tation described in section 1.44 
+
+Note that if the determiner were singular in (74), the structure would give rise to 
+an anomalous interpretation. The DP would denote a singular inalienable hand belonging 
+to a plurality of individuals, an impossible situation since an inalienable "body part" 
+may belong to one and only one individual. In that respect, a body-part noun differs 
+from a kinship term like, say, mother. Strictly speaking, this property is independent of 
+the formal model developed in this article. It seems to have to do with a selectional 
+restriction on the argument of the dependent noun. In the case of a body-part noun, the 
+argument-variable x  of that noun represents the typical individual "human" (see  the 
+remark at the end of section 5.1), so that one instantiation of that body part should be 
+associated with one instantiation of the typical individual "human." No such restriction 
+holds in the case of a kinship term such as mother. 
+
+Finally, note that the sentences in (70) have counterparts with a postnominal pos- 
+
+sessor and that, as expected, the definite determiner is plural in these cases.45 
+
+(75) a.  Le medecin a radiographie les 
+
+estomacs des enfants. 
+
+the doctor  X-rayed 
+
+PL  DEF  DET stomachs of the children 
+
+b.  Le medecin a examine les 
+
+gorges des enfants. 
+
+the doctor  examined PL  DEF  DET throats of the children 
+
+As expected, the example in (76a) has the same vague interpretation as (73) and thus 
+contrasts with both (56) and (76b), which have a strictly distributive interpretation. 
+
+(76)  a.  On a lave 
+
+les 
+
+mains  des  enfants. 
+
+we  washed  PL  DEF  DET  hands  of  the children 
+
+44 We might want to assume that structural roles (like Poss), unlike lexical roles, are assigned at S-Struc- 
+ture, rather than at D-Structure. The reason is that at D-Structure the pronoun in constructions like (74) is 
+not in [Spec,DP] but in [Spec,NP], from where it is moved between D-Structure and S-Structure. 
+
+45 Some speakers have a  strong preference for the singular form over the plural form to express the 
+inalienable meaning. This means that such speakers prefer the type-analysis over the token-analysis to express 
+the inalienable relation in French. This is also true for many Spanish speakers. 
+
+630 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+b.  On a lave 
+
+la 
+
+main des  enfants. 
+
+we  washed  SING  DEF  DET  hand of  the children 
+
+3.3.  Modifiers 
+In section 1 we pointed out that there are constraints on the kind of adjective that may 
+modify the inalienable phrase in the ext-poss construction (analyzed in section 3.1). As 
+illustrated below, restrictive adjectives (see (78)), but not appositive adjectives (see (77)), 
+may modify the inalienable phrase in this construction. 
+
+(77) a.  *Le medecin leur 
+
+belle bouche. 
+the doctor  to them examined SING  DEF  DET pretty mouth 
+
+a examine la 
+
+b.  *La fille leur 
+
+a lave 
+
+le 
+
+visage sale. 
+
+the girl to them washed SING  DEF  DET dirty face 
+
+(78) a.  Le medecin leur 
+
+a examine le 
+
+doigt coupe. 
+
+the doctor  to them examined SING  DEF  DET cut finger 
+
+b.  La fille leur 
+
+main sale. 
+the girl to them washed SING  DEF  DET dirty hand 
+
+a lave 
+
+la 
+
+On the other hand, no constraint exists with respect to the kind of adjective that may 
+modify the inalienable phrase in the int-poss construction, either in the type construction 
+or in the token construction. In particular, appositive adjectives may modify the in- 
+alienable phrase in these cases. Thus, compare (77) with (79) and (80) (type construction), 
+on the one hand, and with (81) and (82) (token construction), on the other. 
+
+(79) a.  Le dentiste a examine leur 
+
+the dentist  examined their(Poss[PL]/PoSS-ED[SING]) 
+
+b.  Le dentiste a examine la 
+
+belle bouche des enfants. 
+
+the dentist  examined SING DEF  DET pretty mouth of the children 
+
+belle bouche. 
+pretty  mouth 
+
+(80) a.  La fille a lave 
+
+leur 
+
+the girl washed their(Poss[PL]/PoSS-ED[SING]) 
+
+visage sale. 
+dirty face 
+visage sale des enfants. 
+
+b.  La fille a lave 
+
+le 
+
+the girl washed SING  DEF  DET dirty face  of the children 
+
+(81) a.  Le dentiste a examine leurs 
+
+the dentist  examined their(Poss[PL]/Poss-ED[PL])pretty 
+
+b.  La fille a lave 
+
+leurs 
+
+the girl washed their(Poss[PL]/PoSS-ED[PL]) 
+
+visages sales. 
+dirty faces 
+
+(82) a.  Le dentiste a examine les 
+
+belles bouches des enfants. 
+
+the dentist  examined PL DEF  DET pretty mouths  of the children 
+
+b.  La fille a lave 
+
+les 
+
+visages sales des enfants. 
+
+the girl washed PL  DEF  DET dirty faces 
+
+of the children 
+
+belles bouches. 
+mouths 
+
+The analyses of the ext-poss and int-poss constructions presented in the previous sections 
+provide the basis for an account of the phenomenon observed above with respect to 
+adjectival modifiers. Note that the phenomenon seems to be independent of the type/ 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+631 
+
+token distinction, as shown by the grammaticality of the forms in (79)-(82). Rather, the 
+restriction seems to be sensitive to the "open" versus "closed" nature of the nominal 
+expression the adjective modifies. Specifically, it appears that the appositive adjectives 
+may modify the inalienable phrases in (79)-(82) because these phrases are "closed" 
+expressions, their argument-variables being saturated within the DP. On the other hand, 
+the appositive adjectives may not modify the inalienable phrases in (77) because these 
+phrases are "open" expressions, their argument-variables not being saturated within the 
+DP. Note,  incidentally, that an analysis of the ext-poss construction based on control 
+would fail to capture such a property (even if it can be made to express the strictly local 
+nature of the construction), since such an analysis would describe the inalienable phrase 
+in the ext-poss construction as "closed," and thus on a par with the int-poss construction. 
+A possible way of formally capturing the generalization expressed above is by as- 
+suming that appositive adjectives are argument-taking predicates (as in Higginbotham 
+(1985)): sale(x), belle(x), and so on. The inalienable phrases in the ext-poss construction 
+are "open" expressions and therefore cannot function as arguments, whereas the in- 
+alienable phrases in the int-poss construction are "closed" expressions and therefore 
+can function as arguments. Such an analysis implies that restrictive adjectives are not 
+argument-taking predicates, since they can modify the inalienable phrase in the ext-poss 
+construction (as shown in (78)). The mechanisms of modification would then be different 
+for restrictive adjectives. The relation between modifier and modified element would 
+not be an argument relation in that case, but would be on a par with compounding: the 
+meaning of the restrictive modifier is "compounded" with that of the modified element, 
+thus creating a new denotatum.46 
+
+3.4.  Conclusion 
+We have shown that the analysis presented in section 2 (based on the three hypotheses 
+in (53)) can be extended to the inalienable body-part phrases in the ext-poss construction. 
+From the interpretive point of view, the inalienable phrase in that construction denotes 
+a type. Syntactically, the inalienable phrase is headed by an expletive determiner that 
+is transparent to Predication. This analysis was extended to the inalienable body-part 
+phrases in the int-poss construction that exhibits the distributivity property (the type 
+construction). On the other hand, an inalienable body-part phrase in the token construc- 
+tion does not give rise to the distributive interpretation because it is a token-denoting 
+DP. Furthermore, we have shown that the above analysis of inalienable phrases provides 
+the basis for an account of the restriction on adjectival modification found in the ext- 
+poss construction, as well as for the lack of such a restriction in the case of the int-poss 
+construction (in both its type and its token version), based on the notions "open" versus 
+"closed" expressions. Appositive adjectives may modify "closed" expressions (the in- 
+alienable phrase in the int-poss construction) but not "open" expressions. We suggested 
+
+46  Accordingly, an adjective that is semantically compounded with an NP gives rise to a new type. 
+
+632 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+that this constraint can be attributed to the fact that appositive adjectives function as 
+argument-taking predicates and that only "closed" expressions can function as argu- 
+ments. 
+
+It is worthwhile to state clearly the implications of our analysis with respect to the 
+relation between the property of being an "open" expression and the notion of reference 
+(as defined in this article), on the one hand, and the notion of argumenthood, on the 
+other hand. In the ext-poss construction, the inalienable phrase is an "open" expression 
+(i.e., it contains an unsaturated argument-variable). Still, such an inalienable phrase can 
+license backward coreference, which means that it has scope over the entire sentence. 
+This shows that an "open" expression may be referential.47 With respect to the notion 
+of argumenthood, we note that our analysis of the ext-poss construction as involving a 
+small clause is compatible with the "strong" position, namely, the position that only 
+closed expressions may function as arguments. Under that analysis, it is the small clause, 
+rather than the inalienable phrase, that functions as the syntactic complement of the 
+verb;48 and the argument-variable of the inalienable noun is saturated within that small 
+clause complement (by the dative complement). Indeed, the restrictions on modification 
+discussed in section 3.3 (and mentioned in the previous paragraph) would seem to argue 
+in favor of the "strong" position. On the other hand, the analysis given for the com- 
+plements of a verb like donner is not compatible with the "strong" position (see footnote 
+34). One could accommodate the case of donner by relativizing the property open versus 
+closed  to  the  syntactic domain of  the argument-taking category. Specifically, for an 
+adjective within some NP, open versus closed would be defined with respect to the NP 
+that it modifies, whereas an argument of a verb would count as closed to the extent that 
+it would be closed within a projection of that verb.49 
+
+A general and fundamental question arises at this point, namely, whether the dis- 
+tinction between types and tokens argued for in sections 2 and 3 is required at all. For 
+example, one could propose that the constructions that do and do not exhibit the dis- 
+tributivity effect differ in that the inalienable DP in the former is really a predicate, and 
+not a true argument, whereas the inalienable DP in the latter is a true argument. Call 
+this the predicate hypothesis. Despite the prima facie appeal of such a hypothesis, we 
+
+47 The reason why an open inalienable phrase may function as a referential expression is probably related 
+to the fact that estomac(x) denotes the type "stomach" (defined with respect to the typical individual I) 
+independently of the value assigned to x. This requires that the relation between "denotation" and "reference" 
+be further articulated. 
+
+48  Note however that this analysis implies that the relation between thematic structure and syntactic 
+structure is not as transparent as the Projection Principle would suggest (see Chomsky (1981)). It could be 
+claimed that the dative argument of a verb like examiner in the ext-poss construction has the status of an 
+added argument and, for that reason, may be syntactically realized as the subject of a small clause complement. 
+On the other hand, the dative argument of a verb like donner 'give' cannot be analyzed as an added argument. 
+The small clause hypothesis in such cases would therefore require a more indirect relation between thematic 
+structure and syntactic structure. For further differences between examiner and donner, see footnote 34. 
+
+49 Alternatively, one could analyze the complements of donner as constituting a small clause and thus 
+preserve the "strong" position. One would then have to derive the contrast between donner and the ext-poss 
+construction mentioned in footnote 34 (the contrast concerning the relative ordering of the complements) from 
+some other property of the structures. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+633 
+
+believe that it is incorrect for the following reasons. First, within the general descriptive 
+framework assumed standardly in the syntactic literature, predicates are characteristi- 
+cally nonreferential, unlike true arguments. Since the inalienable phrase in the ext-poss 
+construction can be referential, as its behavior with respect to backward pronominali- 
+zation in examples like (13) shows, it follows that such a phrase could not in general be 
+analyzed as a predicate in the standard sense.50 Second, the semantic number of the 
+
+50 Of relevance here is the following contrast, brought to our attention by R. Clark (personal communi- 
+
+cation): 
+
+(i) *Pauli is hisi enemy. 
+(ii) a.  Pauli is hiss worst enemy. 
+b.  Pauli is hisi only enemy. 
+c.  Pauli is hisi own enemy. 
+
+Suppose that the standard characterization of predicative nominals as nonreferential holds. More precisely, 
+let us assume the following: 
+
+(iii)  A predicative nominal has no independent reference and must be coindexed with its subject. 
+
+Since the expression his enemy in (i) is most naturally construed as a predicative nominal, it must be coindexed 
+with Paul by (iii). Then the ungrammaticality of (i) will follow from the i-within-i Condition (see Chomsky 
+(1981, 212)). (i) contrasts with (iv). 
+
+(iv)  Pauli is hisi father's only son. 
+
+The sentence in (iv) is an equative sentence. The postcopular nominal expression his father's only son is 
+construed as having an independent denotation and does not require any coindexing with the subject: the form 
+in (iv) is interpreted as asserting that two elements that are denotationally distinct within the structural de- 
+scription of the sentence correspond to the same entity in the world (see Vergnaud and Zubizarreta (1990)). 
+We claim that the forms in (ii) are on a par with (iv). In these forms, the postcopular noun phrase can naturally 
+be construed as having an independent denotation, and it does not require any coindexing with the subject. 
+The nonreferential character of his enemy in a structure such as (i) is confirmed by the oddness of the 
+
+form in (v). 
+
+(v)  ?His enemy is Mary. 
+
+Compare (v) with (vi). 
+
+(vi) a.  His worst enemy is Mary. 
+b.  His only enemy is Mary. 
+
+The acceptability of (v) is improved when the pragmatic context forces an interpretation in which there is one 
+relevant enemy, and only one. In the same context, (i) becomes felicitous. 
+
+Note that elements that are used as "propredicates" such as so  or the null string also behave like non- 
+
+referential elements. The examples in (vii) illustrate the propredicative use of so. 
+
+(vii) a.  Peter is clever, but Mary is so to a greater degree. 
+
+b.  Because Peter was so to a lesser degree, John appeared more determined than he is. 
+
+That the interpretation of the propredicative so  does not involve any relation of coreference is shown by the 
+fact that, contrary to elements that are clearly referential or anaphoric, so  may not enter into "circular de- 
+pendencies" of the kind illustrated in (viii) (on circular readings, see Brody (1980)). For example, the forms 
+in (ix), with the readings corresponding to the anaphoric dependencies indicated, contrast with those in (viii). 
+
+(viii) a.  The man that wanted it got the prize he deserved. 
+
+b.  A boy that wanted one got a prize another one deserved. 
+c.  Max saw the movies you did. 
+
+(ix) a.  *To be (x pleased to be soy) is better than to be (y proud to be sox). 
+
+b. *Max was (x pleased to discover that you were sox). 
+
+At first sight, a construction such as the French one in (x), where a clitic definite pronoun-le-appears 
+to stand for a predicate, might seem to raise a problem for the standard assumption concerning predicates. 
+
+(x)  Max est stupide et 
+
+ils 
+
+le sont aussi. 
+
+Max is  stupid  and they it-are  too 
+'Max is stupid and so are they.' 
+
+634 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+inalienable phrase in the constructions that give rise to the distributivity effect is certainly 
+determined by extra syntactic properties, since it is governed by the properties of the 
+typical individual on which the inalienable body part depends and accordingly varies 
+within the class of inalienable nouns. This is an unexpected feature under the predicate 
+hypothesis, if one considers that predicates typically have no inherent number and, in 
+the absence of agreement, acquire an invariant unmarked grammatical number. Finally, 
+it is  commonly assumed that predicates are "open" expressions and arguments are 
+"closed" expressions. But we have shown in section 3.3 that the distributivity property 
+cuts across this distinction. In effect, the DP inalienable phrase in the int-poss construc- 
+tion is a "closed" expression. This is shown by the lack of restrictions on the kinds of 
+adjectival modifiers that modify the inalienable phrase in this construction. Still, the int- 
+poss construction may give rise to the distributivity effect under certain conditions (as 
+discussed  in section  3.2.1).51 
+
+4.  The English Definite Determiner and the Inalienable Construction 
+
+4.1.  On the English  Definite  Determiner 
+We have shown that in French the definite determiner may or may not bear a denotational 
+index. If the definite determiner is an expletive, the nominal expression denotes a type. 
+We have suggested that, in such a case, the government relation between the determiner 
+and the NP is licensed, not by semantic interpretation, but by morphophonological in- 
+terpretation (see section 2.3): an agreement relation holds between the determiner and 
+the NP. If this analysis is on the right track, we might expect that in a language in which 
+the definite determiner is morphologically invariant, it could not function as an expletive, 
+
+Note however that the propredicative clitic pronoun le, like the propredicative so in English, does not enter 
+into circular dependencies. For example, the forms in (xi) are ungrammatical with the readings corresponding 
+to the anaphoric dependencies indicated. 
+
+(xi) a.  *Max est (x content que tu lex sois). 
+that you are so 
+
+Max is 
+
+glad 
+
+b. *Etre (x soucieux  de l'yetre) vaut mieux qu'etre (y fier de lx'etre). 
+is better than to be  proud to be so 
+
+to be  concerned to be so 
+
+This suggests that the propredicative clitic le,  like the propredicative so,  is not a referential element. The 
+definite clitic pronoun here really behaves as a formal marker identifying an empty category. 
+
+The hypothesis that the propredicative le in such structures as (x) or (xi) is not a referential element 
+anaphorically linked to the antecedent predicate is supported by the fact that, in general, a predicate cannot 
+be the antecedent of a definite pronoun. For example, the English forms in (xii) are ungrammatical. 
+
+(xii) a.  *Peter is not the fool  that you said, and nobody actually believes that he is himlit. 
+
+b. *Peter is your best friend, and everybody knows that he is himlit. 
+
+51  Tellier (1988) proposes an analysis of the ext-poss construction based on Predication. But her analysis 
+of the inalienable phrase is fundamentally different from ours. In essence, it treats the inalienable phrase in 
+the ext-poss construction as an operator-headed predicate (analogous to an operator-headed CP such as a 
+relative clause, for instance). Thus, her analysis is subject to the criticism against the predicate hypothesis 
+summarized in this section. Furthermore, it is unclear how Tellier's analysis would extend to the type con- 
+struction (discussed in section 3.2.1), or how it would account for the differences between French and English 
+(see section 4). 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+635 
+
+since the government relation between D and NP would then receive no interpretation. 
+We believe that this case is exemplified by English. 
+
+First, note that the definite determiner is  absent in the following type-denoting 
+
+expressions: 
+
+(83) a.  Dogs are mammals. 
+
+b.  Whales are becoming extinct. 
+
+Second, there is a remarkable difference between the French definite determiner 
+and the  English definite determiner. Compare the French sentence in (84a) with its 
+English counterpart in (84b). 
+
+(84) a.  Les baleines sont en train de disparaitre. 
+
+b.  The whales are becoming extinct. 
+
+The French example in (84a) is ambiguous. The plural noun phrase in this example may 
+be interpreted either as denoting the species "whales" or as denoting the set of sub- 
+species of  "whales" (white whale or beluga, California grey whale, Greenland whale, 
+etc.). Of course, the two interpretations are truth-conditionally equivalent. Still, native 
+speakers have a clear intuition that they are distinct interpretations and that they are 
+both available. On the other hand, the plural noun phrase in the English example in (84b) 
+lacks the "species interpretation"; it has only the "subspecies interpretation." For ex- 
+ample, if we assume that the subspecies "grey whale" is not further classifiable into 
+subsubspecies, then (85b) is definitely odd. Only the bare plural option (85a) is available. 
+
+(85)  a.  Grey whales are becoming extinct in California. 
+
+b.  *The grey whales are becoming extinct in California. 
+
+By contrast, since the presence of the definite determiner in French does not impose 
+the subspecies interpretation, the French sentence corresponding to (85b) is perfectly 
+fine: 
+
+(86) Les baleines grises sont en train de disparaitre des cotes californiennes. 
+
+The difference between French and English here would seem to reside in the status of 
+the definite determiner. We would like to  suggest that the definite determiner the in 
+(84b) and (85b) gives rise only to the subspecies interpretation because it cannot function 
+as an expletive determiner. Whereas the species interpretation arises via direct deno- 
+tation to a type, the subspecies interpretation arises via denotation of a token within a 
+prototype, a notion that we introduce and develop to some extent in section 5. For the 
+moment, the hypothesis that we  want to propose is that the above contrast between 
+French and English is due to the following parameter: 
+
+(87) The definite determiner may function as an expletive from the point of view 
+
+of denotation in French but not in English. 
+
+In other words, in English the definite determiner must be absent in a type-denoting 
+
+636 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+expression.52 The presence of a definite determiner in English generally indicates that 
+the nominal expression denotes a token (but see below for discussion of bound deter- 
+miners).53 
+
+We suggest furthermore that (87) accounts for the contrast between (la) and (lb), 
+as well as for the contrast between (88) and (89). Like (lb),  the examples in (89) lack 
+the inalienable interpretation. 
+
+(88) a.  Les enfants ont leve la main. 
+
+b.  Les enfants ont ouvert les yeux. 
+c.  Les enfants ont bouge le bras. 
+(89) a.  The children raised the hand. 
+b.  The children opened the eyes. 
+c.  The children moved the arm. 
+
+Structures such as  (lb)  and (89) in English cannot be interpreted as inalienable con- 
+structions. Because the definite determiner may not be an expletive in English, an ar- 
+gument-variable contained within the definite direct object in (lb)  or (89) cannot be 
+associated with a possessor external to that direct object (whether reanalysis between 
+the verb and the direct object takes place or not) and will then remain uninterpreted, 
+violating the Principle of Full Interpretation; see section 3.54 
+
+The hypothesis that the lack of inalienable interpretation in (89) is due to the pres- 
+ence of the definite determiner is confirmed by the examples in (90). The indefinite deter- 
+miner, unlike the definite determiner, does not block the inalienable interpretation.55 
+
+(90) a.  The children raised a hand. 
+b.  The children opened an eye. 
+c.  The children moved an arm. 
+
+52  In a language like French a definite determiner may cooccur with an unmodified proper name. For 
+example, the proper name Marie in French may be preceded by the determiner la, as in la Marie 'SING  DEF 
+DET  Mary'. The same phenomenon is found in Portuguese and German. These languages thus contrast with 
+English, where such structures may not arise. One might assume that an unmodified proper name denotes a 
+type that is instantiated by exactly one token and that this property precludes cooccurrence with a denotational 
+definite determiner. 
+
+5  Our generalization concerning the English definite determiner is not compromised by superlative nominal 
+expressions  such as the one found in There is the fattest  man in town in this restaurant.  These  may be analyzed 
+as nonreferential token-denoting expressions. 
+
+5" Examples like those in (5) are excluded in English independently of the fact that the cannot function 
+as an expletive  (cf.  *The doctor  examined  the throat tolfor the children).  Whereas the dative  preposition  a in 
+French is a Case marker with the status of a functional head, the dative preposition to/for in English actually 
+functions as a full-fledged lexical head (see Vergnaud (1974), Jaeggli (1982)). Therefore, Predication could not 
+apply between the object of tolfor and a sister constituent of the indirect object. 
+
+5S We discuss indefinite and quantified inalienables in detail in forthcoming work. Gudron (1985) also 
+attributes the contrast between (88) and (89) to the difference in status between the French and English definite 
+determiners. In particular, she argues that the definite determiner in French, but not in English, can function 
+as an anaphoric pronoun. As an anaphoric pronoun, the definite determiner falls under the theory of control. 
+As noted in section 3.3, an analysis based on control cannot account for the restrictions on modification, nor 
+does it say anything about the "distributivity property" of the inalienable phrase in the ext-poss construction 
+(section 3.1) and the type construction (section 3.2.1). 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+637 
+
+In English the only construction in which a definite inalienable phrase can be found 
+
+in direct object position is the int-poss construction with a prenominal possessor: 
+
+(91) a.  The children raised their hands. 
+b.  The children opened their eyes. 
+c.  The children moved their arms. 
+
+Recall that in French there are two kinds of int-poss construction: the type construction 
+(92a) and the token construction (92b). 
+
+(92) a.  Le medecin a radiographie leur estomac. 
+
+b.  Le medecin a radiographie leurs estomacs. 
+
+As shown in section 3.2, the inalienable phrase in the type construction is a type-denoting 
+expression with an expletive definite determiner, whereas the inalienable phrase in the 
+token construction is  a token-denoting expression with a denoting determiner. Given 
+the hypothesis that English lacks an expletive definite determiner, we predict that this 
+language should also lack the type construction. The prediction is borne out. Only the 
+token construction exists in English. In that construction the plural possessor must be 
+associated with a grammatically plural inalienable noun:56 
+
+(93) a.  *The doctor X-rayed their stomach. 
+b.  The  doctor  X-rayed  their stomachs. 
+
+As expected, lexical nouns that are analyzed as inalienables by extension (kinship 
+terms, picture, clothes, house, office, etc.) cannot give rise to the distributivity effect 
+in English either. Thus, the French example in (94) contrasts with the English example 
+in (95). In the English example the singular phrase in direct object position (their scarf) 
+cannot give rise to an interpretation that involves a plurality of tokens; therefore, there 
+is no "implied plurality" that could be manifested by a plural pronoun in a subsequent 
+sentence. 
+
+(94)  Les invites ont mis leur e'charpe dans la penderie. Quelques minutes plus tard, 
+
+on s'est apergu qu'elles avaient toutes disparu. 
+
+(95) *The guests hung their scarf in the closet. Minutes later, we realized that they 
+
+had all disappeared. 
+
+The question arises at this point why bare plurals in English, which can function 
+as type-denoting expressions, cannot show up in the ext-poss construction. For example, 
+the following forms are ungrammatical: 
+(96) a.  *The children raised hands. 
+b.  *The children opened eyes. 
+c.  *The children moved arms. 
+
+56 English also lacks postnominal possessors, probably because genitive Case via Spec-head agreement 
+
+applies leftward in English: 
+
+(i)  The doctor X-rayed the children's stomachs. 
+(ii) *The doctor X-rayed the stomachs of the children. 
+
+638 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+We would like to suggest that bare plurals, as type-denoting expressions, are mass nouns. 
+In fact, Chierchia (1982) has argued that mass nouns (water, gold, etc.) and bare plurals 
+have similar semantics.57 On the other hand, inalienable body-part nouns are not in- 
+herently mass or count nouns. As we have argued, an inalienable body-part noun is a 
+semantically dependent lexical item, and whether such a noun is mass or count will then 
+depend on the typical individual with respect to which it is defined. Inalienable nouns 
+like hand(s), eye(s), arm(s) are count, but hair and blood are mass. The suggestion then 
+is that the sentences in (96) are ungrammatical because bare nouns are necessarily mass 
+nouns, whereas hands, eyes, and arms, being inalienable nouns, must be analyzed as 
+count nouns. Then, whereas the forms in (96) are ill formed as ext-poss constructions 
+because of the dependent count character of the inalienable noun involved, there do 
+exist corresponding well-formed ext-poss constructions with an inalienable mass noun 
+in direct object position, as predicted:58 
+
+(97) a.  John has white hair. 
+b.  Peter has  bad  blood. 
+
+4.2.  The PP  Construction 
+More seriously, our explanation for the ungrammaticality of (89) under the inalienable 
+reading would seem to be challenged by examples like those in (98). Verbs like kiss, 
+punch, tickle, touch allow their inalienable argument to surface as a locative prepositional 
+complement associated with the direct object. 
+
+(98) a.  John kissed the children on the cheek. 
+
+b.  John hit/punched the children on the nose. 
+c.  John tickled/touched the children on the foot. 
+
+Of course, the inalienable reading with these verbs can also be expressed by means of 
+the int-poss construction: 
+
+(99) a.  John kissed the children's cheeks. 
+
+b.  John hit/punched the children's noses. 
+c.  Mary tickled/touched the children's feet. 
+
+57 More precisely, Chierchia argues that bare plurals and mass nouns are property-denoting expressions 
+
+transformed into proper names. 
+
+58  In constructing the examples, one must also choose the verb with care. For example, a verb like to 
+lose (perdre in French) imposes an existential interpretation on its inalienable direct object. Therefore, unlike 
+the direct objects in (97), the direct objects in (i) have only an existential interpretation. 
+
+(i)  John lost hairlblood. 
+
+The contrast is directly accessible in French: 
+
+(ii)  Jean a perdu des cheveuxl*les cheveux. 
+
+'Jean lost hair/*the hair.' 
+
+Compare also (ii) and (iii). 
+
+(iii)  Pierre a des cheveux blancslles cheveux blancs. 
+
+'Pierre has white hair/*the white hair.' 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+639 
+
+On the other hand, the verbs in (89), raise, open, move, and others like snap, stretch, 
+wash, examine, and X-ray do not allow their inalienable argument to appear in the PP 
+construction, as shown by the contrast between (100) and (101). 
+
+(100) a.  John raised the children's hands. 
+
+b.  John examined/X-rayed the children's stomachs. 
+c.  John stretched the children's legs. 
+d.  John washed the children's faces. 
+
+(101) a.  *John raised the children at the hand(s). 
+
+b.  *John examined/X-rayed the children in/at the stomach(s). 
+c.  *John stretched the children on/at the leg(s). 
+d.  *John washed the children on/at the face(s). 
+
+The same contrast that we find in English between (98) and (101) exists in French. 
+Verbs like embrasser 'kiss', frapper 'hit',  chatouiller 'tickle' may appear in the PP 
+construction, whereas verbs like lever 'raise', laver 'wash', examiner 'examine' may 
+not: 
+
+(102) a.  Pierre a embrasse les enfants sur la joue. 
+
+b.  Pierre a frappe les enfants sur le nez. 
+c.  Pierre a chatouille les enfants sur le pied. 
+
+(103) a.  *Pierre a leve les enfants dans/sur le/au bras. 
+b.  *Pierre a lave les enfants dans/sur/a la figure. 
+c.  *Pierre a examine les enfants dans/sur le/au pied. 
+
+We shall refer to the construction illustrated in (98) and (102) as the PP construction. 
+It appears that the direct object in that construction saturates the argument-variable of 
+the inalienable NP inside the PP and binds that NP. That the inalienable phrase in the 
+PP construction is indeed an "open" expression (i.e.,  one saturated from outside the 
+DP) is shown by the fact that it cannot be modified by an appositive adjective; see the 
+discussion in section 3.3. This property is illustrated by the contrast in (104). In (104a) 
+the adjective is interpreted as a restrictive modifier, whereas in (104b) the adjective is 
+interpreted as an unrestrictive modifier. The same contrast is found in English, as shown 
+in (105). 
+
+(104) a.  Pierre a embrasse les enfants sur la joue gauchelsale. 
+
+b.  *Pierre a embrasse les enfants sur le nez sale. 
+
+(105) a.  John kissed the children on the leftldirty cheek. 
+
+b.  *John kissed the children on the dirty nose. 
+
+The contrasts between (98)/(102) and (101)/(103) show that some verbs, but not 
+others, allow the complement of a locative preposition to be associated with the direct 
+object via Predication. We would like to suggest that the verbs that can appear in the 
+PP construction are verbs that license metonymy. More precisely, such verbs allow the 
+part (the PP complement) to be identified with the whole (the direct object). Thus, there 
+
+640 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+is an entailment relation between the propositions expressed by the sentences in (98) 
+and (99) and those expressed by the corresponding sentences in (106) (the same is true 
+in French). 
+
+(106) a.  John kissed the children. 
+
+b.  John hit/punched the children. 
+c.  Mary tickled/touched the children. 
+
+On the other hand, there is  no such entailment relation between an example in (100) 
+(involving a verb like raise, stretch, or wash) and the corresponding example in (107). 
+A  sentence in (107) implies that the "whole" was raised/stretched/washed, not just a 
+"part of the whole" (the same is true in French).59 
+
+(107) a.  John raised the children. 
+
+b.  John stretched the children. 
+c.  John washed the children. 
+
+We shall propose a syntactic analysis of the PP construction that embodies the idea of 
+metonymic licensing. Concretely, we  suggest that the inalienable phrases in (98) and 
+(102) have a different analysis from the ones in (4), (5), and (88). Observing that a definite 
+determiner, like a pronoun, may be free or bound, we shall assume that in (98) and (102) 
+the inalienable  phrase  is a DP  bound to the direct object.  The import of the  metonymic 
+relation is  that it is a constraint on the establishment of  such a binding relation. We 
+express this in (108). 
+
+(108)  A D that heads an inalienable phrase is bound to the category denoting the 
+whole if and only if a metonymic relation holds at the interpretive level be- 
+tween the inalienable part and the whole. 
+
+To illustrate, consider (98a). The VP in this example has the structure in (109). Once 
+more we assume a small clause analysis of the verbal complement (but see the discussion 
+in section 3.4). 
+
+59 Examine and X-ray are problematic. Thus, prima facie, (i) may be used when (ii) holds. 
+(i)  The doctor X-rayed/examined the children. 
+(ii)  The doctor X-rayed/examined the children's stomachs. 
+
+Interestingly, in Norwegian the counterpart to the English example in (lOlb) is well formed: 
+
+(iii)  Doktoren unders0kte barna 
+
+i magen. 
+
+the doctor examined  the children in the stomach 
+
+Possibly, then, the ill-formedness of the English and French examples is a lexical idiosyncrasy. 
+
+In Norwegian the counterpart to the English example in (lOld) is also well formed: 
+(iv)  John wasket barna 
+
+i ansiktet. 
+John washed the children in the face 
+
+But here Norwegian differs from English and French in another respect. In Norwegian John wasket barna 
+'John washed the children' may mean that only a specific part of the children's body (for example, the hands) 
+was washed. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+641 
+
+(109) 
+
+VP 
+
+V 
+
+DP, 
+
+v~ 
+
+PP 
+
+~~~ I 
+
+P 
+
+PP 
+
+DP2 
+
+kiss 
+
+the children 
+
+on 
+
+D2/1 
+
+NPj(x)/ 
+
+N(x) 
+
+cheek 
+
+the 
+
+Our assumption concerning the English definite determiner (see  (87)) entails that the 
+determiner D in the expression the cheek in (109) must denote. The relation between 
+the inalienable and its  possessor is  established via binding. The D  that governs the 
+inalienable phrase in (109), then, is not referential, but is bound to the direct object. 
+Note  that this binding relation has a special character, since it involves categories at 
+distinct bar levels: the binder is a maximal projection, whereas the bindee is a head. 
+Such a metonymic binding chain has two crucial aspects: 
+
+(110) a.  By definition, the elements in a metonymic binding chain are equivalent 
+from the point of view of binding relations. Hence, one can speak of the 
+binding properties of the chain as a whole. 
+
+b.  The elements in a metonymic binding chain are not equivalent from the 
+point of view of argument relations. Hence, a metonymic binding chain 
+is not an argument chain. 
+
+It follows from (110) that the metonymic binding chain in a structure like (109) has the 
+following properties: 
+
+(111) a.  Predication may hold between NPj(x) and any element in the chain in- 
+dexed 1, because one element of the chain 1, namely D2,1, is in the relation 
+of  mutual m-command with the  argument-taking category NPj(x); see 
+(1 lOa). 
+
+b.  The argument-variable x is not satisfied within the DP, since the external 
+argument is the direct object and the chain is not an equivalence class 
+for argument satisfaction; see (1 10b). 
+
+642 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+It is the existence of a Predication relation between the inalienable NP and the plural 
+direct object that gives rise to the distributivity effect in (109). Let us emphasize again 
+that the analysis of the PP construction just sketched is lexically governed. The binding 
+chain at play in that analysis is only available to the extent that the structure is headed 
+by a verb that licenses metonymy.60 Note that the proposed description in fact provides 
+a syntactic formalization of the notion "metonymy." Indeed, in a structure such as (109) 
+the whole (denoted by the phrase the children,) is interpreted as instantiating the part 
+(denoted by the phrase cheekj). This is because NPj in (109) is the complement of D,l, 
+a relation that reflects the instantiation relation in domain D. It is this particular relation 
+between the inalienable phrase and its possessor argument that may be responsible for 
+a puzzling property of the PP construction, namely, the fact that despite the existence 
+of an implied plural (e.g.,  a plural set of token "cheeks") at the interpretive level, the 
+implied plurality is only marginally manifested as a pronoun in a subsequent sentence. 
+Thus, speakers seem to have a hard time accepting such discourses as the one in (112). 
+We attribute this to the metonymic relation that the prepositional complement entertains 
+with the direct object (in other words, to the denotational relation that exists between 
+a part and the whole in such cases). 
+
+(112)  ??Le pretre a embrasse les lepreux sur la joue. 
+
+the priest kissed 
+Elles etaient toutes tres  froides. 
+they  were  all 
+
+very cold 
+
+the lepers  on the cheek 
+
+To conclude, the inalienable phrase in the PP construction has a different analysis from 
+the inalienable phrase in direct object position. The relation between the possessor (ex- 
+ternal to the PP) and the inalienable phrase (within the PP) is indirectly established via 
+D(eterminer) binding, a process that requires metonymic licensing by the verb. 
+
+4.3.  Summary 
+We have shown in this section that there is a fundamental difference between the definite 
+determiner in French and the definite determiner in English. In French, but not in En- 
+'  French also has a more complex structure (noted by Gross (1986)) involving an inalienable within a PP 
+
+complement associated with a dative possessor that cooccurs with an independent direct object: 
+
+(i)  Marie lui 
+
+a noue  une echarpe autour du cou. 
+
+Marie to him wrapped a scarf 
+
+around SING  DEF  DET  neck 
+
+It remains to be seen whether the hypothesis that a small clause is formed by the dative and the PP is viable 
+in this case. 
+
+The structure in (ii) is comparable to the one illustrated in (58). 
+(ii)  Marie a mis le 
+
+doigt  dans la tarte. 
+
+Marie put  SING  DEF  DET  finger into the pie 
+
+As in the case of (58), we assume that the verb mettre 'to put' in (ii) triggers reanalysis. Note that the structures 
+in (i) and (ii) are combined in the following example: 
+
+(iii)  Marie leur 
+
+a mis le 
+
+oeil. 
+Marie to them put  SING  DEF  DET  finger into  SING  DEF  DET  eye 
+'Marie put her finger into their eyes.' 
+
+doigt  dans 1' 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+643 
+
+glish, the definite determiner may function as an expletive from the point of view of 
+denotation. We argued that this property of the English definite determiner explains why 
+the inalienable phrase in direct object position cannot be bound by an external possessor 
+and why the distributivity effect is absent in examples such as (95). Furthermore, we 
+suggested that the same parameter should account for the lack of ambiguity in (84b), as 
+well as for the oddness of (85b) (we return to this issue in the next section). The inalien- 
+able phrase in the prepositional construction, which appeared to be problematic for our 
+analysis, was accounted for via a process of determiner binding. Finally, we argued that 
+this process requires metonymic licensing by the verb. Note that given the logic of our 
+analysis, a bound determiner must be analyzed as a denoting category. In effect, the 
+existence of the PP construction in English is compatible with the basic assumptions of 
+our analysis concerning the differences between French and English if and only if bound 
+determiners (like bound pronouns) denote, although they do not refer. This implies that, 
+as suggested in section 2.2, the notion of reference (i.e.,  the property of having scope 
+over the entire sentence; see  footnote 6) should be distinguished from the notion of 
+denotation (see also footnote 53). 
+
+5.  Some Residual Issues 
+
+5.1.  Prototypes 
+We have argued that the definite determiner cannot function as a denotational expletive 
+in English. What, then, are the denotational properties of the singular definite nominal 
+expressions in the following sentences? 
+
+(113) a.  The owl is common in this forest. 
+
+b.  The Bengal tiger is fast disappearing/becoming extinct. 
+
+Carlson (1977) argues that the subject of predicates such as to be common, to be fast 
+disappearing, to become extinct denotes a kind or a type. We would add that the subject 
+of these predicates must furthermore denote a species. This is shown by the contrast 
+between  (1 13b) and (114).  Whereas  the Bengal  tiger is a  species,  the  wounded  tiger  is 
+not. 
+
+(114) *The wounded tiger is fast disappearing/becoming extinct around here. 
+
+The feature [ + species] of these noun phrases suggests to us that the facts in (113) should 
+be accommodated by introducing the notion of prototype in domain D. More precisely, 
+both tokens and types may be classified as [+ species], but [+ species] tokens give rise 
+to prototypes. A  prototype can be an innate structure (like the prototype for the in- 
+alienable parts of the human body) or a cognitive structure produced by a particular 
+cultural environment. Often, the elements in a prototype will share some generic prop- 
+erty, like "being an animal," "being a mammal," "being a whale," or "being part of 
+a human body." We may think of a prototype as a subdomain of tokens organized as a 
+classificatory tree. For example, in a prototype of animals, the classificatory tree will 
+
+644 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+contain kinds of animals represented by token labels such as "owl," "whale," "Bengal 
+tiger," "mammal," and "bird." 
+
+The crucial property that distinguishes a token in a prototype from a nonprototypical 
+
+token is that the former can be taken as standingfor  the type it instantiates.  A prototype 
+in fact is a particular model for a class of types. Formally, given a prototype K, there 
+is a one-to-one mapping PK between K and the class of types instantiated in K such that 
+PK preserves denotation. We accordingly revise the definition of the denotation relation 
+as follows: 
+
+(115)  Let e be a nominal expression and K a prototype such that e denotes a token 
+X in K. Let i be the instantiation mapping and n be the type instantiated by 
+X: X  =  i(n). Let PK  be the one-to-one mapping between tokens and types 
+that defines K as a prototype. We have the relation in (a). 
+
+(a)  n  =  PK(X) 
+
+Then, by definition, the nominal expression e also denotes n. In other words, 
+we have the relation in (b), where d is the denotation mapping, "i"  is the 
+composition of mappings, and "<"  is the inclusion relation between map- 
+pings. 
+
+(b)  d*P  <  d 
+
+The significance of the relation in (b) in (115) is that the mapping P really defines the 
+prototype as  an image  of  a  class of  [+ species] types.  A  token in a prototype then 
+functions as a mediator between the denoting expression and the associated type. Within 
+a complete model, the relation "d*P <  d"  should of course follow from the definition 
+of the mappings P and d. We are not in a position to provide such a demonstration at 
+this stage, and we must take the relation as an axiom. 
+
+Then, a token-denoting expression may be interpreted as a generic if its denotatum 
+belongs to a prototype. A necessary condition to be a member of a prototype is to be 
+[+species].  This is why the form in (114) is ungrammatical: "wounded tiger" is not a 
+species. For the same reason, the forms in (116) do not allow for the generic reading 
+('Any tiger, when it is wounded, is dangerous'): 
+(116) a.  The wounded tiger is dangerous. 
+
+b.  The wounded tigers are dangerous. 
+
+The forms in (1 16a) and (1 16b) contrast with the French sentences in (1 17a) and (1 17b), 
+respectively, which do have the generic interpretation. 
+
+(117) a.  Le tigre blesse est dangereux. 
+
+b.  Les tigres blesses sont dangereux. 
+
+Again, the contrast between French and English is to be traced back to the difference 
+between the English and the French definite determiners. The generic reading is available 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+645 
+
+in each of the forms in (117), because the definite determiner can be analyzed as an 
+expletive in these forms, thus permitting direct denotation of a type. 
+
+To illustrate the relation "d*P <  d"  in (115), consider the interpretive structure 
+associated with the DP the owl in (1 13a) (where the letter indices have the same meaning 
+as in (115)). 
+
+(118) 
+
+P 
+
+1 
+
+j 
+
+d 
+
+d 
+
+d 
+
+[DP  the 
+
+[NP  owl]] 
+
+Given the above extension of the notion of denotation, we must slightly revise the Cor- 
+respondence Law in (45). For we must now distinguish two kinds of denotation. On the 
+one  hand, there is  what we  can call direct denotation, which is the case  where the 
+denotation relation cannot be decomposed into more elementary mappings. This is the 
+normal situation when no prototype is involved. On the other hand, there is  indirect 
+denotation, which arises when an expression denotes a type via a prototypical token. 
+We then revise the Correspondence Law as follows: 
+
+(119)  When a DP or an NP denotes, the DP directly denotes a token and the NP 
+
+directly denotes a type. 
+
+We may now say that the DP subjects in (113) directly denote a token and indirectly 
+denote a type, via the prototypical interpretation. The selectional properties of the predi- 
+cates  to  be  common,  to  be fast  disappearing,  to  become  extinct  are  thus  satisfied  in 
+(113). In this manner, the facts in (113) can be reconciled with our hypothesis that the 
+definite determiner in English is never an expletive from the point of view of denotation. 
+Note that the extension of the notion of denotation proposed in (115) requires that the 
+distinction between tokens and types be taken as a primitive distinction within domain 
+D, as was postulated in (42), because this distinction cannot be reduced to a syntactic 
+one between DPs and NPs (see footnote 26). 
+
+An important aspect of the distinction between tokens and types that we shall not 
+analyze here is the fact that plurality is not realized in the same way with tokens and 
+with types  (among the  alienable denotata). A  plural type is  a  type with the feature 
+[+ plural], whereas a plural token is a set of singular tokens. In other words, plurality 
+
+646 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+is intensional for types and extensional for tokens (see Vergnaud and Zubizarreta (1990) 
+for some discussion). Since a plural token is necessarily a set of tokens, it follows that 
+a token that is not a set is necessarily singular. Consider in this light the following pair 
+of sentences: 
+
+(120) a.  The owls are common in this forest. 
+
+b.  *The Bengal tigers are fast disappearing/becoming extinct. 
+
+The form in (120a) is felicitous, with the "subspecies interpretation," whereas the form 
+in (120b) is infelicitous (see the discussion of (84) and (85)). It is easy to show that these 
+facts follow from the framework sketched in this article. Let us note first that the generic 
+reading required by the predicates  to be common,  to be fast  disappearing,  to be extinct 
+is obtained in (120) by means of a prototypical construal. Second, by definition, a pro- 
+totype for the class of animals contains only one token instantiating the type "Bengal 
+tiger" and, similarly, the same prototype or a prototype for the class of birds contains 
+only one token instantiating the type "owl." This is because a prototype is an image of 
+a class of types, and there is one type "Bengal tiger" and one type "owl," by definition. 
+And, as noted earlier, such a token is necessarily singular. It therefore follows that the 
+owls in (120a) (the plural counterpart to (1 13a)) cannot denote in the prototype for ani- 
+mals or birds, but must denote in the prototype for owls-hence  the lack of  species 
+interpretation in (120a). Whereas (120a) and (1 13a) are truth-conditionally identical, they 
+have different semantics. The owl in (1 13a) denotes the species owl, whereas the owls 
+in (120a) denotes the set of subspecies of owls within the prototype of owls. This analysis 
+is  confirmed by the ill-formedness of  (120b). For the same reasons given above,  the 
+Bengal tigers in (120b) cannot denote in the prototype for animals, and must denote in 
+the prototype for Bengal tigers. To the extent that the subspecies "Bengal tiger" is not 
+further subdivided into subsubspecies, the plural form the Bengal tigers then lacks a 
+denotatum.61'62 
+
+The forms in (121) contrast with those in (120). 
+(121) a.  Owls are common in this forest. 
+
+b.  Bengal tigers are fast disappearing/becoming extinct. 
+
+A bare plural in English differs from a nominal expression headed by the definite de- 
+terminer the in that it is analyzed as an NP that may directly denote a type. As expected, 
+then, the bare plural counterpart to (113a) has the species interpretation: owls in (121a) 
+directly denotes the [+species]  type "owls."  In the same way, the bare plural coun- 
+
+61 As  expected,  the form  *The wounded  tigers  are  common  around here is  also  ungrammatical. 
+62  B. Schein (personal communication) points out that (120b) becomes possible if the adjective is focused: 
+The BENGAL  tigers  (as  opposed  to the MADRAS  whales)  are becoming  extinct.  As  noted  by Higgins  (1973), 
+focus is typically associated with a list interpretation. One could then speculate that focus here facilitates the 
+construction of a "prototype" of tigers, despite the fact that the noun tigers is plural. It is as if, in that sentence 
+and for that speaker, the feature [ + species] was borne by Bengal, but not by tigers. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+647 
+
+terpart to (1 13b) is well formed: Bengal tigers in (12 ib) directly denotes the [+ species] 
+type "Bengal tigers." 
+
+To conclude this section, we examine inalienable body-part nouns in the context of 
+the notion of prototype. Inalienable body-part nouns may be classified [ + species] and, 
+as  such, will give rise to  a prototype. The prototype of inalienable body-part nouns 
+contains the tokens "head," "eye,"  "nose," "mouth," "ear(s)," "arm(s)," "hand(s)," 
+"leg(s)," and so on. These are interpreted as inalienable possessions of the prototypical 
+individual "human." The notion of prototype might help us understand a peculiar fact 
+concerning inalienables (brought to our attention by T. Stowell). Consider the examples 
+in (122). 
+
+(122) a.  John cut his finger. 
+
+b.  John punished his dog. 
+
+Like definite expressions in general, his dog in (122b) must refer to a unique, identifiable 
+dog (that belongs to John or someone else). By contrast, his finger in (122a) may refer 
+to any one of John's (or someone else's) fingers. This fact will follow if one assumes 
+that the inalienable phrase is interpreted as denoting the token finger in the prototype. 
+The referent of his will be identified with the prototypical individual (the possessor of 
+finger in the prototype) by transitivity. 
+
+5.2.  Residual  Cases 
+
+More intriguing are perhaps the examples noted by Ebert (1982). We cite two of her 
+texts in (123)-(124). 
+
+(123)  He was the most pitiful object that you could set eyes on. His head was big 
+and his body terribly small and thin, the elbows and knees stood out like 
+knots on a stick and both his legs were covered with deep running sores from 
+the thigh to the heel.... 
+In his flat,  angular, harassed,  and infinitely patient 
+face, the eyes were without glance, dim like the eyes of a dead person. 
+
+(124)  If the injured person is in imminent danger, it is far safer to leave him lying 
+where he is. A rolled-up jersey or coat placed under the head, and a coat or 
+blanket over him is the best treatment you can give while waiting for help. 
+If the person is unconscious, loosen the clothing, especially around the neck. 
+The cases illustrated here (which we shall call the "residual" cases) are in complemen- 
+tary distribution with the ones discussed in earlier sections (which we  shall call the 
+"core"  cases).  In the core  cases,  the body-part phrase  and its possessor  are part  of the 
+same  nuclear  sentence  (or argument complex)  (where  "argument complex"  includes  all 
+and only those constituents that are arguments within the same clause). In the residual 
+cases,  by contrast, the body-part phrase is construed with a possessor contained in a 
+preceding sentence or within an adjunct (like an if-clause or a locative). The question 
+
+648 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+arises whether the body-part phrases in the residual cases function as inalienables (i.e., 
+as argument-taking nouns). The test based on modification suggests that they do not. 
+Thus, we observe that, in the residual cases, the body-part noun may be modified by 
+an appositive adjective (as in the case of deictics mentioned in footnote 13): 
+
+(125) 
+(126)  "A rolled-up jersey or coat placed under the injured head . .  ." 
+
+. the bonylbloody  elbows  and knees  stood out like knots on a stick  ..." 
+
+... 
+
+The understood relation between the whole and the part in such cases will be derived 
+presumably by the same pragmatic mechanism that relates a French restaurant and the 
+chef in the following sentence: 
+
+(127)  We went to a French restaurant last night. To our surprise, the chef turned 
+
+out to be Chinese. 
+
+It remains of  course to  characterize the exact discourse context that allows for the 
+residual cases.63 
+
+6.  Conclusion 
+A central objective of this article was to provide an analysis of the French inalienable 
+construction that explains the following clusterings of properties: 
+
+(128)  a. 
+
+b. 
+
+(129) a. 
+
+In  ext-poss  constructions  and  type int-poss  constructions  (with prenom- 
+inal  or  postnominal  possessor):  Only  the  distributive  interpretation  is 
+available and an inherently singular inalienable noun must be grammat- 
+ically singular. 
+In  token int-poss  constructions  (with prenominal  or postnominal  posses- 
+sor): The set (nondistributive) interpretation for plurals is available and 
+an inherently singular inalienable noun may surface as grammatically plu- 
+ral. 
+In ext-poss constructions: There are constraints on modification. 
+
+b.  In int-poss constructions: There are no constraints on modification. 
+
+The proposed analysis is based on the interaction of two hypotheses. On the one hand, 
+we argued that two kinds of arguments are to be distinguished among nonpronominal 
+definite concrete nominal expressions: those that denote types and those that denote 
+tokens. On the other hand, we suggested that there is a correspondence between this 
+interpretive notion and syntactic form: when denotational, DPs (directly) denote tokens 
+and NPs (directly) denote types (see the Correspondence Law in (45)). Among the in- 
+
+63 Note that the form in (i) is not as acceptable as the examples in the text. 
+(i)  ?Un vieillard est tombe. La tete  a heurte le trottoir. 
+
+an old man fell 
+
+the head hit 
+
+the curb 
+
+However, (i) is better than (ii), where the antecedent of the body part is definite. 
+
+(ii) *Le vieillard est tombe. La tete  a heurte le trottoir. 
+
+the old man fell 
+
+the head hit 
+
+the curb 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH  AND 
+
+IN  ENGLISH 
+
+649 
+
+alienable constructions mentioned above, we found that the inalienable phrase in the 
+ext-poss construction is  a  type-denoting phrase headed by  an expletive determiner, 
+whereas the inalienable phrase in the int-poss construction may be analyzed either as a 
+token-denoting phrase headed by a denotational determiner or as a type-denoting phrase 
+headed by an expletive determiner. 
+
+This analysis has the following important implications: 
+(130) a.  The type/token distinction cuts across the generic/nongeneric distinction. 
+There are type-denoting expressions that do not give rise to  a generic 
+interpretation. 
+
+b.  The subject-predicate relation in the sense of the standard literature (see, 
+for example, Higginbotham (1987)) is insufficient to characterize the re- 
+lations between determiners and their NP complement. The relation of 
+instantiation emerges as fundamental in characterizing the cases discussed 
+in this article. 
+
+A  second objective of this article was to explain why English lacks the ext-poss 
+inalienable construction. We argued that the difference between French and English is 
+located in the status of the definite determiner. In English the definite determiner can 
+never function as an expletive. This entails the required property, since the inalienable 
+phrase in the ext-poss construction must be headed by an expletive determiner. Among 
+the int-poss constructions, the type construction is also headed by an expletive deter- 
+miner. And, as predicted, English also lacks the type construction. We showed that the 
+hypothesis that the definite determiner cannot function as an expletive in English is 
+further supported by the syntax and interpretation of definite generic phrases in this 
+language. Perhaps the well-known fact that the "definiteness effect" in the cases  of 
+extraction out of nominal phrases is stronger in English than in Romance can also be 
+related to the same parameter (e.g.,  ??The person  who you  bought  the picture  of vs. La 
+personne  dont  tu as  achete  la photo). 
+
+Finally, we argued that the inalienable phrase in the prepositional construction in 
+French and English involves a bound determiner, which must be licensed by metonymy. 
+Metonymic licensing in this construction is lexically governed by the verb. This analysis 
+implies that definite determiners function like pronominal elements in cases in which 
+the instantiation relation between the determiner and the NP is licensed by metonymy. 
+An important implication of the proposed analysis of the PP construction is  that the 
+notion of  denotation must be  distinguished from the notion of  reference: the bound 
+determiner in a PP construction denotes, but is not necessarily referential (cf. The Rev- 
+erend Dodgson  kissed  every  girl on  the forehead).  The ultimate  implication  is  that the 
+usual and intuitive notion of domain D must be revised and that a more abstract view 
+of denotation must be taken. This is the position we take here: see footnote 23. As we 
+hint in that footnote, although grammar allocates a special level to the denotata in the 
+abstract sense of our theory, it does not provide any such level for the referents in a 
+sentence. 
+
+Cambridge, Massachusetts. 
+
+Massachusetts. 
+
+Southern California, Los Angeles. 
+
+Aoun, J. and D. Sportiche (1983) "On the Formal Theory of Government," ms., MIT, Cambridge, 
+
+Authier, J.-M. (1988) The Syntax of  Unselective Binding, Doctoral dissertation, University of 
+
+Brame, M. (1981) "The General Theory of Binding and Fusion," Linguistic Analysis 7, 277-325. 
+Brame, M. (1982) "The Head-Selector Theory of Lexical Specifications and the Nonexistence of 
+
+Coarse Categories," Linguistic Analysis 10, 321-325. 
+
+Brody,  M.  (1980)  "On  Circular Readings,"  Journal  of Linguistic  Research  1, 95-105. 
+Carlson, G. (1977) Reference to Kinds in English, Doctoral dissertation, University of Massa- 
+
+chusetts, Amherst. 
+
+650 
+
+References 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+Abney,  S.  (1987)  The English  Noun  Phrase  in Its  Sentential  Aspect,  Doctoral  dissertation,  MIT, 
+
+Chierchia, G. (1982) "Bare Plurals, Mass Nouns, and Nominalization," in Proceedings of  the 
+First  West Coast  Conference  on Formal Linguistics,  Linguistics  Department,  Stanford Uni- 
+versity, Stanford, California. 
+
+Chomsky, N. (1970) "Remarks on Nominalization," in R. Jacobs and P. Rosenbaum, eds., Read- 
+
+ings  in English  Transformational  Grammar, Ginn,  Waltham,  Massachusetts. 
+
+Chomsky, N.  (1976) "Conditions on Rules of Grammar," Linguistic Analysis 2, 303-351. 
+Chomsky,  N.  (1981) Lectures  on  Government  and Binding,  Foris,  Dordrecht. 
+Chomsky,  N.  (1982) Some  Concepts  and Consequences  of the Theory of Government and Binding, 
+
+MIT Press, Cambridge, Massachusetts. 
+
+Chomsky,  N.  (1986) Knowledge  of Language:  Its Nature,  Origin, and  Use,  Praeger,  New  York. 
+Chomsky, N. (1991) "Some Notes on Economy of Derivation and Representation," in R. Freidin, 
+ed.,  Principles  and  Parameters  in  Comparative  Grammar,  MIT Press,  Cambridge,  Mas- 
+sachusetts. 
+
+Duffield, N.  (1991) Particles and Projections, Doctoral dissertation, University of Southern Cal- 
+
+ifornia, Los Angeles. 
+
+Ebert, K. H.  (1970) Referenz,  Sprechsituation  und die bestimmten Artikel in einem nordfriesischen 
+Dialekt, Doctoral dissertation, Christian-Albrechts-Universitat zu Kiel, published in the 
+series  Studien  und Materialien  veroffentlicht  im Nordfriisk Instituut Nr.  4. 
+
+Ebert,  K.  H.  (1982) "The  Definite Articles with Inalienables in  English and German," in 
+W.  Lohnes  and E.  Hopkins,  eds.,  The Contrastive  Grammar of English  and  German,  Ka- 
+roma Publishers, Ann Arbor, Michigan. 
+
+Evans, G. (1980) "Pronouns," Linguistic Inquiry 11, 337-362. 
+Fodor, J. D.  and I.  Sag (1982) "Referential and Quantificational Indefinites," Linguistics and 
+
+Philosophy  5,  355-398. 
+
+Frege,  G.  (1879) Begriffsschrift,  eine der arithmetischen  nachgebildete  Formelsprache  des  reinen 
+Denkens, L.  Nebert, Halle. Translated by T. W. Bynum as Conceptual Notation,  1972, 
+Oxford University Press, Oxford. 
+
+Frege,  G.  (1893)  "Uber  Sinn  und  Bedeutung,"  Zeitschrift fur  Philosophie  und  Philosophische 
+Kritik, 25-50.  Translated by H.  Feigl as  "On Sense and Nominatum," in H.  Feigl and 
+W.  Sellars,  eds.  (1949) Readings  in Philosophical  Analysis,  Appleton  Century Crofts. 
+
+Fukui, N. and M. Speas (1986) "Specifiers and Projections," in MIT Working Papers in Linguistics 
+
+6, Department of Linguistics and Philosophy, MIT, Cambridge, Massachusetts. 
+
+Giorgi, A.  and G. Longobardi (in press)  The Syntax of Noun Phrases:  Configuration,  Parameters, 
+
+and Empty Categories, Cambridge University Press, Cambridge. 
+
+THE  DEFINITE 
+
+DETERMINER 
+
+IN  FRENCH 
+
+AND 
+
+IN  ENGLISH 
+
+651 
+
+Grimshaw, J. (1990) Argument  Structure,  MIT Press, Cambridge, Massachusetts. 
+Gross, M. (1986) Grammaire transformationnelle  dufrancais:  Syntaxe de l'adverbe,  Asstril, Paris. 
+Gueron, J.  (1985) "Inalienable Possession, PRO-Inclusion and Lexical Chains," in J.  Gueron, 
+H.-G. Obenauer, and J.-Y. Pollock, eds., Grammatical Representation,  Foris, Dordrecht. 
+Heim, I. (1982) The Semantics  of  Definite  and  Indefinite  Noun  Phrases,  Doctoral dissertation, 
+
+University of Massachusetts, Amherst. 
+
+Hellan, L. (1986) "The Headedness of NPs in Norwegian," in P. Muysken and H. van Riemsdijk, 
+
+eds., Features  and Projections,  Foris, Dordrecht. 
+
+Higginbotham, J. (1985) "On Semantics," Linguistic  Inquiry 16, 547-593. 
+Higginbotham, J. (1987) "Indefiniteness and Predication," in E. Reuland and A. ter Meulen, eds., 
+
+The Representation  of  (In)definiteness,  MIT Press, Cambridge, Massachusetts. 
+
+Higgins, F. R. (1973) The Pseudo-cleft  Construction in English,  Doctoral dissertation, MIT, Cam- 
+
+bridge, Massachusetts. 
+
+Hornstein, N.  (1984) Logic  as  Grammar, MIT Press, Cambridge, Massachusetts. 
+Husserl, E. (1922) Logische  Untersuchungen:  Untersuchungen  zur Phanomenologie  und Theorie 
+der Erkenntnis,  rev. ed.,  Halle. In Husserliana  XIX, vol.  1, 1984, Martinus Nijhoff, The 
+Hague. 
+
+Jaeggli, 0.  (1982) Topics  in Romance  Syntax,  Foris, Dordrecht. 
+Jespersen, 0.  (1924) The Philosophy  of  Grammar, George Allen & Unwin, London. 
+Kamp, H. (1984) "A Theory of Truth and Semantic Representation," in J. Groenendijk, T. M. V. 
+Janssen, and M. Stokhof, eds.,  Truth, Interpretation,  and Information,  Foris, Dordrecht. 
+
+Kayne, R. (1975) French  Syntax,  MIT Press, Cambridge, Massachusetts. 
+Kolb, H.-P. and C. Thiersch (1986) "Strict X-Bar Parsing," ms., University of Brabant. 
+Neale, S. (1990) Descriptions,  MIT Press, Cambridge, Massachusetts. 
+Rappaport, M. (1983) "On the Nature of Derived Nominals," in L.  Levin, M. Rappaport, and 
+A.  Zaenen, eds.,  Papers  in Lexical-Functional  Grammar, Indiana University Linguistics 
+Club, Bloomington. 
+
+Riemsdijk, H. van and E. Williams (1980) "NP-Structure," The Linguistic  Review  1, 171-217. 
+Ritter, E. (1991) "Evidence for Number as a Nominal Head," in GLOW Newsletter  26. 
+Rizzi, L. (1990) Relativized  Minimality,  MIT Press, Cambridge, Massachusetts. 
+Russell, B. (1905) "On Denoting," Mind  14, 479-493. 
+Skolem, T.  (1928) "Uber die mathematische Logik," Norsk  Matematisk  Tidskrift 10, 125-142. 
+Translated in J. van Heijenoort, ed. (1966) Source Book in Mathematical  Logic,  1879-1931, 
+Harvard University Press, Cambridge, Massachusetts. 
+
+Stowell, T.  (1987) "Subjects, Specifiers, and X-Bar Theory," ms., UCLA, Los Angeles, Cali- 
+
+Tellier, C.  (1988)  Universal  Licensing:  Implications  for  Parasitic  Gap  Constructions,  Doctoral 
+
+dissertation, McGill University, Montreal, Quebec. 
+
+Thiersch, C.  (1985) "VP and Scrambling in the German Mittelfeld," ms.,  University of  Con- 
+
+fornia. 
+
+necticut, Storrs. 
+
+sachusetts. 
+
+sachusetts. 
+
+Vergnaud, J.-R. (1974) French  Relative  Clauses,  Doctoral dissertation, MIT, Cambridge, Mas- 
+
+Vergnaud, J.-R. and M. L. Zubizarreta (1990) "On the Form and Interpretation of Definite Noun 
+
+Phrases," ms., University of Southern California, Los Angeles. 
+
+Wasow, T. (1972) Anaphoric  Relations  in English,  Doctoral dissertation, MIT, Cambridge, Mas- 
+
+Williams, E. (1980) "Predication," Linguistic  Inquiry 11, 203-238. 
+Williams, E. (1981) "Argument Structure and Morphology," The Linguistic  Review  1, 81-114. 
+
+652 
+
+JEAN-ROGER 
+
+VERGNAUD 
+
+AND  MARIA 
+
+LUISA 
+
+ZUBIZARRETA 
+
+Williams, E. (1982) "The NP Cycle," Linguistic Inquiry 13, 277-295. 
+Zubizarreta,  M.  L.  (1987)  Levels  of  Representation  in  the  Lexicon  and  in  the  Syntax,  Foris, 
+
+Dordrecht. 
+
+Zubizarreta, M. L. and J.-R. Vergnaud (1992) "Generics and Existentials in French and in En- 
+
+glish," paper presented at the 1992 GLOW Colloquium, Lisbon. 
+
+Department  of Linguistics 
+University  of  Southern  California 
+University Park 
+Los  Angeles,  California  90089-1693 
+Vergnaud@ USCVM.BITNET 
+Zubizarr@ USCVM.BITNET 
+
+

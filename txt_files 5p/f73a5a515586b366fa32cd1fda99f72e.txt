@@ -1,0 +1,885 @@
+Informatik D: Einführung in die Theoretische Informatik
+
+VO 8
+
+Kontextfreie Sprachen: Determinismus
+
+Kellerautomaten
+
+Prof. Dr. Markus Chimani
+
+Theoretische Informatik, Uni Osnabrück
+
+Sommersemester 2016
+
+Kontextfreie Sprachen
+
+Wiederholung
+
+L = {w ∈ (a|b|c)∗ | w ist ein Palindrom}
+= {w ∈ (a|b|c)∗ | w = wR}
+
+wobei wR := Umkehrung von w
+
+1 Welche Wörter generiert diese Sprache?
+
+ε, abba, ccacc, babab, baccaaaccab, ...
+
+2 Ist sie regulär? Nein!
+
+Pumping Lemma: Wähle z = anban.
+→ z = uvw,|v| = (cid:96) ≥ 1,|uv| ≤ n → uv ∈ a∗
+→ uw = an−(cid:96)ban ∈ L → Widerspruch!
+
+3 Ist sie kontextfrei? Ja!
+
+Immer nur eine Variable pro linker Seite einer Regel
+S → ε | A,
+
+A → aAa | bAb | cAc | a | b | c | aa | bb | cc
+
+Wiederholung
+
+Geklammerte Ausdrücke
+
+Kontextfreie Sprachen ≈ „korrekt geklammerte Ausdrücke“
+
+(cid:73) Klammerfolgen (()(()()))
+
+aber nicht ())()(()
+(cid:73) HTML, XML, etc.:
+
+<html>
+
+<head>...</head>
+<body>
+
+<h1>Text</h1>
+<ul>
+
+<it> auch ohne
+<it> end-tags
+
+</ul>
+</body>
+
+</html>
+
+(cid:73) Arithmetische Ausdrücke
+
+u.ä.: 3 + (2 − 1) ∗ 7
+
+(cid:73) Programmiersprachen (?):
+
+IF clown != white THEN
+
+REPEAT
+
+laugh()
+
+UNTIL act.done()
+
+ELSE
+
+leaveCircus()
+
+ENDIF
+(cid:73) u.v.m.
+
+Kontextfreie Sprachen
+
+Determinismus vs.
+
+Nicht-Determinismus
+
+Kontextfreie Sprachen Determinismus vs. Nicht-Determinismus
+
+VO 8 — 113
+
+Arithmetische Ausdrücke
+
+Alle korrekt geklammerten arithmetische Ausdrücke sind
+kontextfreie Sprachen!
+(Sei (cid:104)Zahl(cid:105) = (1|2| . . .|9)(0|1| . . .|9)∗ als Grammatik gegeben;
+vrgl. Übung.)
+
+Grammatik G1:
+(cid:104)Ausdruck(cid:105) → (cid:104)Ausdruck(cid:105) „+“ (cid:104)Ausdruck(cid:105) |
+(cid:104)Ausdruck(cid:105) „*“ (cid:104)Ausdruck(cid:105) |
+„(“ (cid:104)Ausdruck(cid:105) „)“ |
+(cid:104)Zahl(cid:105)
+
+Grammatik G2:
+
+(cid:104)Ausdruck(cid:105) → (cid:104)Additiv(cid:105)
+
+(cid:104)Additiv(cid:105) → (cid:104)Additiv(cid:105) „+“ (cid:104)Multiplikativ(cid:105) | (cid:104)Multiplikativ(cid:105)
+
+(cid:104)Multiplikativ(cid:105) → (cid:104)Multiplikativ(cid:105) „*“ (cid:104)Term(cid:105) | (cid:104)Term(cid:105)
+
+(cid:104)Term(cid:105) → „(“ (cid:104)Additiv(cid:105) „)“ | (cid:104)Zahl(cid:105)
+
+Was ist der wesentliche Unterschied der Varianten?
+
+Kontextfreie Sprachen Determinismus vs. Nicht-Determinismus
+
+VO 8 — 114
+
+Syntaxbaum (=Parse-Tree)
+⇒
+
+A → A+A | A∗A | (A) | (cid:104)Zahl(cid:105)
+
+w = 3 + 2 ∗ 4 + 2 ∗ (1 + 5)
+
+Mit der Grammatik lässt sich die Formel auf verschiedene
+Arten zerlegen. → Syntaxbäume → Was macht man damit?
+
++
+
+3
+
+2 ∗ 4 + 2 ∗ (1 + 5)
+
+3
+
+∗
+
+2
+
+2
+
+4 + 2 ∗ (1 + 5)
+
+4
+
+4
+
++
+
+2
+
+2
+
+2 ∗ (1 + 5)
+∗
+
+(1 + 5)
+
+(.)
+
+1 + 5
+
++
+
+1
+
+1
+
+5
+
+5
+
++
+
+3 + 2 ∗ 4
+∗
+
+2 ∗ (1 + 5)
+∗
+
+3 + 2
+
+4
+
+2
+
+(1 + 5)
+
+4
+
+2
+
++
+
+3
+
+3
+
+2
+
+2
+
+(.)
+
+1 + 5
+
++
+
+1
+
+1
+
+5
+
+5
+
+Anwendung:
+Ausdruck zerlegen („parsen“)
+→ „verstehen“ & auswerten.
+
+Kontextfreie Sprachen Determinismus vs. Nicht-Determinismus
+
+VO 8 — 115
+
+Syntaxbaum – Problem
+
+Aufgabenstellung: Was ergibt 3 + 2 ∗ 4 + 2 ∗ (1 + 5)?
+Berechne von den Blättern nach oben.
+
++
+
+3
+
+∗
+
++
+
+∗
+
+∗
+
+2
+
++
+
++
+
+4
+
+2
+
+3
+
+2
+
+∗
+
+4
+
+2
+
+(.)
+
++
+
+1
+
+5
+
+1 + 5 = 6; 2 ∗ 6 = 12; 4 + 12 = 16;
+2 ∗ 16 = 32; 3 + 32 = 35
+
+(.)
+
++
+
+1
+
+5
+
+1 + 5 = 6; 2 ∗ 6 = 12; 3 + 2 = 5;
+5 ∗ 4 = 20; 20 + 12 = 32
+Autsch! Jeder Syntaxbaum
+stellt eine andere Klammerung
+dar! → kein Punkt-vor-Strich,...
+
+Kontextfreie Sprachen Determinismus vs. Nicht-Determinismus
+
+VO 8 — 116
+
+Syntaxbaum für Grammatik G2
+
+A → A+M | M
+M → M∗T | T
+T → (A) | (cid:104)Zahl(cid:105)
+
+w = 3 + 2 ∗ 4 + 2 ∗ (1 + 5)
+
++
+
+3 + 2 ∗ 4
+
++
+
+3
+
+3
+
+2 ∗ 4
+∗
+
+2
+
+2
+
+4
+
+4
+
+2 ∗ (1 + 5)
+∗
+
+2
+
+(1 + 5)
+
+2
+
+(.)
+
+1 + 5
+
++
+
+1
+
+1
+
+5
+
+5
+
+Beobachtung:
+
+(cid:73) Syntaxbaum ist
+
+eindeutig!
+(cid:73) Bottom-up
+Berechnung
+funktioniert: 23!
+
+Kontextfreie Sprachen Determinismus vs. Nicht-Determinismus
+
+VO 8 — 117
+
+Unterschied zwischen den Grammatiken
+
+Grammatik G1
+B → B+B | B∗B | (B) | (cid:104)Zahl(cid:105)
+
+Grammatik G2
+
+A → A+M | M
+M → M∗T | T
+T → (A) | (cid:104)Zahl(cid:105)
+
+(cid:73) G1 kann ein Wort auf verschiedene Arten generieren.
+(cid:73) Eine dieser Arten ist die von G2
+⇒ G1 ist nicht eindeutig
+(cid:73) (G2 funktioniert algebraisch korrekt.)
+(cid:73) G2 kann ein Wort nur auf eine Art generieren.
+⇒ G2 ist eindeutig
+(cid:73) Für jede deterministische kontextfreie Sprache existiert
+
+eine eindeutige Grammatik.
+
+(cid:73) ABER: Es gibt Sprachen mit eindeutiger Grammatik die
+
+nicht deterministisch sind!
+
+Kontextfreie Sprachen Determinismus vs. Nicht-Determinismus
+
+VO 8 — 118
+
+Chomsky & DKF
+
+Einschränkungen für Regel x → y:
+Typ 2: Kontextfrei
+(nicht-deterministisch)
+x ∈ V, |y| ≥ 1
+(links eine einzelne Variable)
+
+DKF: Deterministisch kontextfrei
+Keine „schöne“ Klassiﬁkation :-(
+
+Typ 3: Regulär
+
+x ∈ V, y ∈ Σ ∪ ΣV
+(rechts ein Symbol, ggf.
+gefolgt von einer Variable)
+
+Insbesondere:
+Es gibt kontextfreie Sprachen, die nicht
+DKF sind. (z.B. Palindrome, siehe später)
+
+Typ 0
+Rekursiv aufzählb.
+
+Typ 1
+Kontextsensitiv
+
+Typ 2
+Kontextfrei
+
+(DKF)
+
+Typ 3
+Regulär
+
+Kontextfreie Sprachen
+
+Anwendungen: Programmiersprachen
+
+Kontextfreie Sprachen Anwendungen: Programmiersprachen
+
+VO 8 — 120
+
+DKF und Programmiersprachen
+
+Wofür benötigt man kontextfreie Sprachen?
+(Tendenziell falsche) Standardaussage:
+
+(cid:73) Beschreiben die Struktur von algebraischen Ausdrücken,
+
+Programmiersprachen,...
+
+Tatsachen:
+
+(cid:73) „Reine“ Grammatik von Programmiersprachen ist DKF!
+
+Für Menschen leichter (eindeutig) lesbar.
+Für Computer schneller zu parsen (linear statt kubisch).
+
+(cid:73) Programmiersprachen sind eigentlich kontextsensitiv!
+
+(z.B. Variablen vor Benutzung deklarieren, etc.)
+KS-Sprachen viel schwerer zu parsen → Parsen der
+„reinen“ DKF-Grammatik und prüfen der weiteren
+Bedingungen danach mit Hilfe des Syntaxbaums.
+Ausnahmen bestätigen Regel: Prolog ist tatsächlich DKF.
+
+Kontextfreie Sprachen Anwendungen: Programmiersprachen
+
+VO 8 — 121
+
+Kontextfrei statt DKF in der VO
+
+Warum betrachten wir also auch Kontextfreie (KF) statt nur
+DKF Sprachen in der Vorlesung?
+
+(cid:73) DKF-Grammatiken lassen sich formal nur sehr
+
+aufwendig korrekt deﬁnieren/fassen. KF ist leichter („eine
+Variable auf der linken Seite von Regeln“).
+
+(cid:73) Aus komplexitätstheoretischer Sicht ist KF nicht viel
+schwerer als DKF, aber mächtiger/ausdrucksstärker.
+
+(cid:73) Unterschied zwischen Determinismus und
+
+Nicht-Determinismus kennenlernen (bei regulären
+Sprachen gab es den ja nicht).
+
+Kontextfreie Sprachen
+
+Kellerautomaten
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 123
+
+Wortproblem
+
+Wortproblem. Gegeben eine (D)KF Grammatik G und ein
+Wort w. Ist w ∈ L(G)?
+
+Lösungsmöglichkeit 1.
+Direktes Berechnen mittels der Grammatik
+(falls G in „Chomsky Normalform“ vorliegt, siehe später):
+
+(cid:73) DKF: Mit (kompliziertem!) Algorithmus in O(|w| · |G|) Zeit,
+
+also linear in der Wortlänge.
+→ (leider) keine Details in dieser VO, da sehr komplex.
+(cid:73) KF: Mit CYK-Algorithmus (dynam. Programmierung) in
+
+O(|w|3 · |G|) Zeit, also kubisch in der Wortlänge.
+(Oft Inhalt von Basisvorlesungen der theoretischen
+Informatik... aber wozu? Allg. KF-Sprachen interessieren
+niemand in der Praxis...).
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 124
+
+Wortproblem → Kellerautomaten
+
+Wortproblem. Gegeben eine (D)KF Grammatik G und ein
+Wort w. Ist w ∈ L(G)?
+
+Lösungsmöglichkeit 2.
+Mittels Kellerautomaten, engl. Pushdown Automata.
+Automaten, ähnlich den endlichen Automaten die wir kennen.
+Wir erweitern die Fähigkeiten der endlichen Automaten um
+einen Keller, damit sie (D)KF-Sprachen entscheiden können.
+
+Keller?
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 125
+
+Schwäche der endlichen Automaten
+
+Warum kann ein gewöhnlicher endlicher Automat das
+Wortproblem für Palindrome nicht entscheiden?
+
+(cid:73) Zu jedem Zeitpunkt „kennt“ der Automat nur seinen
+
+Zustand (einer von endlich vielen), aber nicht wie er da
+hin kam.
+
+(cid:73) Nach dem Lesen der „vorderen Hälfte“ eines
+
+(vermeintlichen) Palindroms, weiß der Automat nicht
+mehr welche Zeichen bisher kamen (i.A. mehr als |Z|)
+
+(cid:73) Der EA kann also nicht entscheiden ob er nun genau die
+invertierte Zeichenkombination liest, oder irgendetwas
+anders.
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 126
+
+Kellerautomaten
+
+Idee: Erweitere den EA um einen Speicher.
+
+(cid:73) Keller = alter Ausdruck für Stapel bzw. Stack
+(cid:73) Keller speichert Symbole aus einem Alphabet Γ
+
+(meist Γ ≈ Σ)
+
+(cid:73) Keller-Operationen:
+
+zu entfernen)
+
+(cid:73) top(): Liest das oberste Symbol des Stacks (ohne es
+(cid:73) push(a): Legt das Symbol a ∈ Γ oben auf den Stack
+(cid:73) pop(): Entfernt das oberste Symbol vom Stack
+
+(cid:73) Der Stack enthält am Anfang immer ein vorgegebenes
+
+Symbol (falls nicht anders angegeben das spezielle
+Symbol # ∈ Γ \ Σ).
+
+(cid:73) Keller-Interpretation als Zeichenkette: der aktuelle
+Kellerzustand ist ein Wort ∈ Γ ∗ bei dem wir stets vorne
+anfügen/löschen.
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 127
+
+Nicht-deterministischer Kellerautomat (NDKA)
+
+Übergangsfunktion δ : Z × (Σ ∪ {ε}) × Γ → P(Z × Γ ∗)
+abhängig vom Zustand des Kellers:
+
+Zi
+
+a, b/x
+
+Zj
+
+Falls von der Eingabe nichts (a = ε) oder das Symbol a ∈ Σ
+gelesen wird, und falls top() = b ∈ Γ das oberste (linkeste)
+Element des Kellers ist: Übergang von Zustand Zi zu Zustand
+Zj, wobei b vom Keller entfernt (pop()) und stattdessen x ∈ Γ ∗
+(vorne) hinzugefügt wird.
+(Beispiel x = cde: push(e), push(d), push(c) ⇒ Falls der Keller
+zuvor bffff war, so ist er nun cdeffff .)
+
+Nicht-Determinismus: Man kann ggf. zwischen mehreren
+zulässigen Übergängen wählen.
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 128
+
+Deterministischer Kellerautomat (DKA)
+
+Übergangsfunktion δ : Z × (Σ ∪ {ε}) × Γ → Z × Γ ∗ (nun keine
+Potenzmenge mehr) muss eindeutige Übergänge deﬁnieren.
+Das heißt:
+
+(cid:73) Für ein Paar von a, b (a ∈ Σ, b ∈ Γ ) gibt es pro Zustand
+
+nur maximal einen Übergang.
+
+(cid:73) Es gibt ε-Übergänge, also Übergänge für ε, b (b ∈ Γ ).
+Allerdings darf dann kein anderer Übergang für dieses
+oberste Kellersymbol an diesem Zustand existieren! (Da
+man sonst nicht wüsste, ob ε-Schritt oder Eingabezeichen
+lesen.)
+
+(cid:73) Wenn ein notwendiger Übergang nicht existiert (oder der
+Keller leer ist, das Wort jedoch noch nicht fertig gelesen),
+bricht der Automat nicht-akzeptierend ab (bzw. geht
+implizit wieder in die Falle). Dies gilt auch für NDKA!
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 129
+
+Akzeptieren in einem Kellerautomat
+
+Es gibt (für DKA und NDKA) zwei Akzeptanzarten:
+
+Ein Wort wird als Element der vom KA codierenden Sprache
+akzeptiert falls nach dem Lesen des Eingabewortes...
+
+(cid:73) ...ein Endzustand erreicht ist
+
+→ Akzeptanz durch Endzustand (AdEZ)
+
+(cid:73) ...der Stack leer ist
+
+(auch das initiale, unterste Element ist gelöscht)
+→ Akzeptanz durch leeren Keller (AdLK)
+
+Wir werden sehen:
+
+(cid:73) Für NDKA sind beide Varianten gleich mächtig.
+(cid:73) Für DKA gibt es einen Unterschied:
+
+DKA-AdEZ kann mehr Sprachen darstellen.
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 130
+
+Automaten vs. Sprachen
+
+Theorem.
+Kontextfreie (KF) Sprachen sind genau jene, für die ein
+akzeptierender NDKA-AdEZ (bzw. äquivalent NDKA-AdLK)
+existiert.
+
+Beweis. Folgt später.
+
+Deﬁnition.
+Deterministisch kontextfreie (DKF) Sprachen sind genau
+jene, für die ein akzeptierender DKA-AdEZ (Deterministischer
+Kellerautomat, Akzeptierend durch Endzustand) existiert.
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 131
+
+Kellerautomat, Spezialfälle und Kurznotationen
+
+(cid:73) ε ∈ Γ ∗ → Element vom Stack entfernen.
+
+Zi
+
+a, b/ε
+
+Zj
+
+(cid:73) (cid:63) ∈ S = beliebiges Symbol aus Symbol(teil)menge S.
+
+Zi
+
+a, (cid:63) ∈ Γ/ε
+
+Zj
+
+Löschen des Kellersymbols, egal welches es ist.
+
+(cid:73) (cid:63) kann entlang der Kante benutzt werden.
+
+Übergang falls top() ∈ {a, c}; Symbol wird wieder auf den
+Stack gelegt → Keller ändert sich nicht.
+
+a, (cid:63) ∈ {a, c}/(cid:63)
+
+Zj
+
+Zi
+
+◦ ∈ Σ, (cid:63) ∈ Γ/ ◦ (cid:63)
+(cid:73) Notation auch für Eingabewort zulässig. Von Eingabe
+
+Zi
+
+Zj
+
+gelesenes Zeichen oben auf den Stack legen.
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 132
+
+Beispiel NDKA
+
+L = {w wR | w ∈ (a|b|c)∗} = Palindrome gerader Länge.
+→ Als NDKA-AdEZ und gleichzeitig als NDKA-AdLK:
+
+a, #/a#
+b, #/b#
+c, #/c#
+a, a/aa
+b, a/ba
+c, a/ca
+
+a, b/ab
+b, b/bb
+c, b/cb
+a, c/ac
+b, c/bc
+c, c/cc
+
+start
+
+Z1
+
+ε, #/#
+ε, a/a
+ε, b/b
+ε, c/c
+
+a, a/ε
+b, b/ε
+c, c/ε
+
+ε, #/ε
+
+Z2
+
+◦ ∈ Σ, (cid:63) ∈ Γ/ ◦ (cid:63)
+
+◦ ∈ Σ,◦/ε
+
+start
+
+Z1
+
+ε, (cid:63) ∈ Γ/(cid:63)
+
+ε, #/ε
+
+Z2
+
+Z3
+
+Z3
+
+Kontextfreie Sprachen Kellerautomaten
+
+VO 8 — 132
+
+Beispiel NDKA
+
+L = {w wR | w ∈ (a|b|c)∗} = Palindrome gerader Länge.
+→ Als NDKA-AdEZ und gleichzeitig als NDKA-AdLK:
+
+a, b/ab
+Automat ist nicht-deterministisch, da wir
+b, b/bb
+den Zustand Z1 zu einem beliebigen Zeit-
+c, b/cb
+punkt verlassen können, aber nicht müssen.
+a, c/ac
+Tatsächlich kann man L nicht mit einem DKA
+b, c/bc
+beschreiben!
+c, c/cc
+
+a, a/ε
+b, b/ε
+c, c/ε
+
+a, #/a#
+b, #/b#
+c, #/c#
+a, a/aa
+b, a/ba
+c, a/ca
+
+start
+
+Z1
+
+ε, #/#
+ε, a/a
+ε, b/b
+ε, c/c
+
+ε, #/ε
+
+Z2
+
+◦ ∈ Σ, (cid:63) ∈ Γ/ ◦ (cid:63)
+
+◦ ∈ Σ,◦/ε
+
+start
+
+Z1
+
+ε, (cid:63) ∈ Γ/(cid:63)
+
+ε, #/ε
+
+Z2
+
+Z3
+
+Z3
+
+Beispiel DKA
+
+Ausblick
+
+L = {w wR | w ∈ (a|b|c)∗} = Palindrome gerader Länge.
+→ Als NDKA-AdEZ und gleichzeitig als NDKA-AdLK:
+
+◦ ∈ Σ, (cid:63) ∈ Γ/ ◦ (cid:63)
+
+◦ ∈ Σ,◦/ε
+
+start
+
+Z1
+
+ε, (cid:63) ∈ Γ/(cid:63)
+
+Z2
+
+ε, #/ε
+
+Z3
+
+L(cid:48) = {wdwR | w ∈ (a|b|c)∗} = Palindrome mit einem d genau in
+der Mitte und sonst nur Symbolen a, b, c.
+→ Als DKA-AdEZ und gleichzeitig als DKA-AdLK:
+◦ ∈ Σ,◦/ε
+
+◦ ∈ Σ \ {d}, (cid:63) ∈ Γ/ ◦ (cid:63)
+
+start
+
+Z1
+
+d, (cid:63) ∈ Γ/(cid:63)
+
+Z2
+
+ε, #/ε
+
+Z3
+
+

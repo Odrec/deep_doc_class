@@ -1,0 +1,270 @@
+Tutorial 2
+
+Eyetracking
+
+Matlab Exercises WS14/15
+
+Kay Hartmann & Ann-Christin Meisener
+
+Institute of Cognitive Science
+
+ 
+
+ 
+
+Outline
+
+● Topic & application (slides 2-4)
+
+● This weeks homework (slides 5-7)
+
+● New MatLab know-how for you (slides 8-12)
+
+ 
+
+ 
+
+Where do people look?
+
+●  the makeup of an image determines where we look at
+● Eyetracking helps to study and understand visual effects 
+
+ 
+
+ 
+
+Are there low level features?
+
+Do we look at high contrast? Luminance? Color?
+
+ →To answer we can look at e.g. contrast 
+distributions of whole images and compare it with  
+distributions of fixations
+
+ 
+
+ 
+
+Image and Fixations
+
+ 
+
+ 
+
+Contrast and Luminance 
+Distributions  - how it should look like
+
+R e d   /   G re e n
+
+B lu e   /   Y e llo w
+
+L u m in a n c e
+
+ 
+
+ 
+
+Global Contrast vs. fixated contrast
+
+- how it should look like
+
+ 
+
+ 
+
+MatLab Newcomers of the week
+
+● New data loading functions
+
+i = imread();    % loads .png and .bmp
+
+● New plotting functions like 
+
+subplot(r,c,i);  % beautiful systemic plot  
+
+imagesc(img);    % plots an image 
+
+hist(Y);         % plots an histogram 
+
+see help hist !!!
+
+see help imagesc     Tip (default y-axis) 
+
+ 
+
+ 
+
+MatLab Newcomers of the week
+
+Figure 1
+2x3 subplot
+
+figure(1)
+subplot(2,3,1);
+hist(X, min:max);
+
+.
+
+.
+
+.
+
+subplot(2,3,5);
+
+hist(Y, min:max);
+
+ 
+
+ 
+
+MatLab Newcomers of the week
+
+●   These may will be useful
+
+round(X); 
+
+double(); 
+
+% rounds the elements of X to the 
+  nearest integers
+
+% converts any numerical type into 
+  type double 
+
+reshape(A,r,c); % shapes A column-wise to r x c  
+
+sub2ind(size(A),R,C); % Gets indeces for cells     
+                              (R(1),C(1)), (R(2),C(2))   
+                              and so on in Matrix A
+Note: 
+n = hist(Y) will save the results in n without plotting them
+
+● Improve your plot's appearance
+
+ 
+
+xlim(); or ylim()  % sets axes to given limits 
+
+ 
+
+Indexing
+
+A = [1 2 3 4 5];
+
+A(3);
+
+1
+
+1
+
+A([1 4]);
+
+1
+A(2:4);
+A([2 3 4]);
+
+1
+
+2
+
+2
+
+2
+
+2
+
+3
+
+3
+
+3
+
+3
+
+ 
+
+ 
+
+4
+
+4
+
+4
+
+4
+
+5
+
+5
+
+5
+
+5
+
+Indexing
+
+A = [1 3 5;
+     2 4 6];
+
+A(2,3);
+
+1
+2
+
+1
+2
+
+3
+
+4
+
+3
+
+4
+
+5
+
+6
+
+5
+
+6
+
+More about indexing:
+http://www.mathworks.de/
+company/newsletters/arti
+cles/matrix-indexing-in-
+matlab.html
+
+A([1 2],[1 3]); % Columns 1 and 3 in rows 1 and 2
+
+1
+2
+
+3
+
+4
+
+5
+
+6
+
+idx = sub2ind(size(A), [1 2], [1 3])
+A(idx);                       % Creates indeces for     
+                                         cells 1,1 and 2,3
+ 
+
+3
+
+ 
+
+5
+
+6
+
+1
+2
+
+4
+
+

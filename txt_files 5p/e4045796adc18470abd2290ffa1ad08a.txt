@@ -1,0 +1,71 @@
+SS 2016
+
+Praxis GIS II
+
+M.Sc. Bastian Albers
+
+Leistungsnachweis 01
+
+Die folgende angewandt-planerische Aufgabe, die  in dieser prinzipiellen Form bei vielen
+Trassenfindungsprozessen Anwendung  findet,   soll  nur   mit   dem   Open  Source  Programm
+QGIS bearbeitet werden.
+Ist die Ost- oder die Westumgehung des Dorfes Gisdorf „günstiger“?
+1.1
+
+Diskutieren   Sie   in   der   Seminarsitzung   die  Aufgabenstellung.   Wie   ist   der   Begriff
+„günstiger“   zu   operationalisieren?   Zur   Vereinfachung   soll   hier   lediglich   der
+Flächenverbrauch aufgrund der angeführten Tabelle verglichen und bewertet werden.
+Ergänzen Sie hierzu die fehlenden Werte in der Tabelle.
+Schätzen Sie die Zahl der Betroffenen, die in den vier Zonen liegen. Nehmen Sie
+hierzu eine Normgröße von 1.000 Einwohnern in der gesamten Flächenkategorie
+ODL1 an.
+
+1.2
+
+Westumgehung
+
+Ostumgehung
+
+20m Buffer beidseits 
+der Straße ohne 
+Straße selbst
+
+80m Buffer beidseits 
+der Straße ohne 
+20m Buffer und 
+Straße selbst
+
+20m Buffer beidseits 
+der Straße ohne 
+Straße selbst
+
+80m Buffer beidseits 
+der Straße ohne 
+20m Buffer und 
+Straße selbst
+
+Kategorien
+
+Biotop (B_Code)
+AL
+AS
+WL
+WX
+Siedlung (S_Code)
+ODL1
+ODL2
+Betroffene Bürger
+
+Abzugeben in einem Dokument (nachname_ss16_aufg01.pdf) sind:
+- die ausgefüllte Tabelle
+- zwei Screenshots, die den Bearbeitungsprozess dokumentieren (d.h. Screenshot in QGIS
+mit Menüs) 
+- ein Screenshot in QGIS mit dem Endergebnis
+
+Laden Sie die PDF in Stud.IP unter „Aufgaben“ bis zum 22.04.2016 16 Uhr hoch.
+
+Do, 07. April 2016
+
+1/1
+
+

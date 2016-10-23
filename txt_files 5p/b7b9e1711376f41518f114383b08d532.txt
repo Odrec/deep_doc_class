@@ -1,0 +1,147 @@
+AG Technische Informatik
+
+Topics for Presentations 
+
+• ISA-Principles
+
+• Modern Pipelining Principles 
+
+• Sophisticated Cache Principles 
+
+• VLIW/EPIC-Architectures 
+
+• Multi-core and Operating System
+
+• Program & Compiler Optimization
+
+• (Embedded) Systems-on-Chip
+
+RAK 
+
+Presentation Topics
+
+AG Technische Informatik
+
+1
+
+ISA-Principles
+
+Topics for Presentations 
+Topic
+
+(embedded vs. high performance)
+
+2
+
+Modern Pipelining Principles
+
+(high performance)
+
+3
+
+Sophisticated Cache Principles
+
+(high performance)
+
+Topics of Interest 
+
+emphasis on specific requirements and 
+differences of processor classes 
+(Desktop/server versus embedded systems), 
+reasons for differences (from applicational
+point of view)
+ design and architectural consequences 
+examples (Pentium P4,) IA64 Itanium/core i7 
+versus ARM  
+implementation at micro-architecture level in 
+more detail, examples, e.g. Intel Pentium 5 / 
+Itanium/core i7 vs. ARM, may be also MIPS 
+R4000 (App. A page 37++),
+- performance / problems  limitations of 
+ILP, e.g., exception/interrupt-handling, multi-
+cycle execution 
+In single and multi-processor/core systems 
+- advanced cache optimization 
+- example(s), e.g. Itanium/core i7/Xeon vs. 
+ARM
+- may be differences in multi-processors vs. 
+multi-core systems
+
+RAK 
+
+Presentation Topics
+
+AG Technische Informatik
+
+Topics for Presentations 
+
+4
+
+VLIW/EPIC-Architectures
+
+(high performance)
+
+5
+
+Multi-core and Operating System 
+
+(high performance & embedded)
+
+- problems, limitations 
+- examples & design considerations 
+- especially (global) scheduling for VLIW / 
+EPIC (e.g. Itanium/core i7) 
+- reasons why not in widespread use 
+- comparing efficiency to software-
+scheduling  may be by the example of IA-
+64 / EPIC 
+
+OS support by ISA and CPU-HW
+- boot routine, process management 
+- effect of scheduling on pipelining/cache
+- virtualization support 
+- support/utilization of multiple cores 
+- storage handling, shut down process 
+? example , e.g. Itanium/core i7/Xeon vs. 
+ARM
+
+RAK 
+
+Presentation Topics
+
+AG Technische Informatik
+
+Topics for Presentations 
+
+6
+
+Program & Compiler Optimization 
+
+(embedded vs. high performance)
+
+7
+
+Embedded Systems-on-Chip 
+
+(high performance embedded systems) 
+
+optimization for fetches, branches, 
+vectorization, cache/memory access, 
+SIMD instruction usage,  multi core, 
+hyper-threading, power
+- example, e.g. Itanium/core i7 vs. ARM
+
+ARM-based SoC with on-chip GPUs for  
+smart systems like smartphones, 
+embedded control systems
+- motivation, use cases & design issues
+- principles, solutions, e.g. to OS/ISA-
+integration and power optimization 
+- problems, limitations
+- examples 
+
+RAK 
+
+Presentation Topics
+
+

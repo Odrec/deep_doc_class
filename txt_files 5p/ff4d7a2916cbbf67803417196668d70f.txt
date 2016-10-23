@@ -1,0 +1,1358 @@
+Chromosoma (2014) 123:225–237
+DOI 10.1007/s00412-014-0460-2
+
+REVIEW
+
+Chromatin as dynamic 10-nm fibers
+
+Kazuhiro Maeshima & Ryosuke Imai & Sachiko Tamura &
+Tadasu Nozaki
+
+Received: 15 January 2014 / Revised: 18 March 2014 / Accepted: 20 March 2014 / Published online: 16 April 2014
+# The Author(s) 2014. This article is published with open access at Springerlink.com
+
+Abstract Since Flemming described a nuclear substance in
+the nineteenth century and named it “chromatin,” this sub-
+stance has fascinated biologists. What is the structure of
+chromatin? DNA is wrapped around core histones, forming
+a nucleosome fiber (10-nm fiber). This fiber has long been
+assumed to fold into a 30-nm chromatin fiber and subsequent-
+ly into helically folded larger fibers or radial loops. However,
+several recent studies, including our cryo-EM and X-ray scat-
+tering analyses, demonstrated that chromatin is composed of
+irregularly folded 10-nm fibers, without 30-nm chromatin
+fibers, in interphase chromatin and mitotic chromosomes.
+This irregular folding implies a chromatin state that is physi-
+cally less constrained, which could be more dynamic com-
+pared with classical regular helical folding structures. Consis-
+tent with this, recently, we uncovered by single nucleosome
+imaging large nucleosome fluctuations in living mammalian
+cells (∼50 nm/30 ms). Subsequent computational modeling
+suggested that nucleosome fluctuation increases chromatin
+accessibility, which is advantageous for many “target
+searching” biological processes such as transcriptional regu-
+lation. Therefore, this review provides a novel view on chro-
+matin structure in which chromatin consists of dynamic and
+disordered 10-nm fibers.
+
+K. Maeshima : R. Imai : S. Tamura : T. Nozaki
+Biological Macromolecules Laboratory, Structural Biology Center,
+National Institute of Genetics, Mishima, Shizuoka 411-8540, Japan
+
+K. Maeshima (*) : R. Imai
+Department of Genetics, School of Life Science,
+Graduate University for Advanced Studies (Sokendai),
+Mishima, Shizuoka 411-8540, Japan
+e-mail: kmaeshim@nig.ac.jp
+
+T. Nozaki
+Institute for Advanced Biosciences, Keio University,
+Fujisawa 252-8520, Japan
+
+Introduction
+
+There are 60 trillion cells in the human body. Each cell
+contains 2 m of genomic DNA in a small nucleus with an
+approximately 10-μm diameter (a volume of only ∼100 fL to
+1 pL), and yet, it is able to search and read the information in
+its genomic DNA to execute diverse cellular functions. There-
+fore, it is important to understand how this long genomic
+DNA is organized in the nucleus. In the nineteenth century,
+W. Flemming described a nuclear substance that was clearly
+visible after staining with a basic dye using primitive light
+microscopes and named it “chromatin.” This is now thought
+to be the basic unit of genomic DNA organization (Olins and
+Olins 2003). Since then, even before the discovery of the
+structure of DNA (Watson and Crick 1953), chromatin has
+attracted significant interest from biologists. In this review
+article, we assess the available data to provide a novel view
+of chromatin in which “chromatin is a dynamic and disordered
+10-nm fiber.”
+
+DNA and nucleosomes
+
+Deoxyribonucleic acid (DNA) is a negatively charged poly-
+mer that produces electrostatic repulsion between adjacent
+DNA regions. Therefore, it would be difficult for a long
+DNA molecule alone to fold into a small space like the
+nucleus (Bloomfield 1996; Yoshikawa and Yoshikawa
+2002). To overcome this problem, the long, negatively
+charged polymer is wrapped around a basic protein complex
+known as a core histone octamer, which consists of the histone
+proteins H2A, H2B, H3, and H4, to form a nucleosome
+(Fig. 1) (Olins and Olins 1974; Kornberg 1974; Woodcock
+et al. 1976). The structure of a nucleosome is well known at
+atomic resolution (1.9 Å) (Davey et al. 2002): 147 base pairs
+(bp) of DNA are wrapped in 1.7 left-handed superhelical turns
+
+226
+
+Chromosoma (2014) 123:225–237
+
+fibers “30-nm chromatin fibers” (Figs. 1 and 2a, b) (Finch and
+Klug 1976). In their structural model of the 30-nm fibers
+called “solenoids,” consecutive nucleosomes are located ad-
+jacent to one another in the fiber and folded into a simple
+“one-start helix” (Fig. 2a). Subsequently, a second model of
+the “two-start helix” was proposed based on microscopic
+observations of isolated nucleosomes (Fig. 2b) (Woodcock
+et al. 1984). The second model assumed that nucleosomes
+were arranged in a zigzag manner, where a nucleosome in the
+fiber was bound to the second neighbor (Bassett et al. 2009)
+(Fig. 2b). In addition to these two famous structural models,
+many other structural variations of 30-nm chromatin fibers
+have been proposed (van Holde and Zlatanova 2007).
+
+Fig. 1 Old and novel views of chromatin structure. A long DNA mole-
+cule with a diameter of ∼2 nm is wrapped around a core histone octamer
+and forms a nucleosome with a diameter of 11 nm (Alberts et al. 2007).
+The nucleosome has long been assumed to fold into 30-nm chromatin
+fibers (left) and subsequently into the higher order organization of inter-
+phase nuclei or mitotic chromosomes. The right panel shows the novel
+hypothesis of irregularly folded nucleosome fibers
+
+around a histone octamer, whose surface is positively charged.
+Each nucleosome particle is connected by linker DNA (20–
+80 bp) to form repetitive motifs of ∼200 bp; this was described
+originally to resemble “beads on a string” (Fig. 1) (Olins and
+Olins 2003). This nucleosome fiber is also known as the 10-
+nm fiber (Fig. 1). A single histone octamer in the nucleosome
+has ∼220 positively charged lysine and arginine residues and
+∼74 negatively charged aspartic acid and glutamic acid resi-
+dues. There are also 400 negative charges in the phosphate
+backbone of 200 bp of DNA. Because only about half of the
+negative charges in the DNA are neutralized, the remaining
+charge must be neutralized by other factors (e.g., linker his-
+tone H1, cations, and other positively charged molecules) for
+further folding.
+
+Discovery of 30-nm chromatin fibers in vitro
+
+In 1976, Finch and Klug first found, under transmission
+electron microscopy (EM), that purified nucleosome fibers
+(10-nm fibers) with linker histone H1 or Mg2+ ions were
+folded into fibers with a diameter of 30 nm. They named these
+
+Fig. 2 Two classical models of 30-nm chromatin fibers and higher order
+chromatin structures. a One-start helix (solenoid), b two-start helix
+(zigzag). (Top) A scheme of the two different topologies of chromatin fibers
+is shown (Robinson and Rhodes 2006). Positions from the first (N1) to the
+eighth (N8) nucleosome are labeled. c Two classical higher order chromatin
+structure models: the hierarchical helical folding model (Sedat and
+Manuelidis 1978) and the radial loop model (Laemmli et al. 1978). In the
+radial loop model, many loop structures of the 30-nm fiber (red) wrap
+around the scaffold structure (gray) (Laemmli et al. 1978), which consists
+of condensin and topoisomerase IIα (Maeshima and Laemmli 2003)
+
+Chromosoma (2014) 123:225–237
+
+227
+
+Although 30-nm chromatin fibers have been studied exten-
+sively using various techniques, including biochemistry, bio-
+physics, X-ray crystallography, conventional EM, cryo-EM,
+and small-angle X-ray scattering (SAXS) (Finch and Klug
+1976; Woodcock et al. 1984; Widom and Klug 1985; Dorigo
+et al. 2004; Schalch et al. 2005; Robinson et al. 2006; Bordas
+et al. 1986; Langmore and Paulson 1983; Hansen 2002;
+Gilbert et al. 2004; Bystricky et al. 2004; Kruithof et al.
+2009), their definitive structure remains elusive (van Holde
+and Zlatanova 2007; Tremethick 2007; for more recent
+reviews, see Grigoryev and Woodcock 2012; Ghirlando and
+Felsenfeld 2013; Bian and Belmont 2012). Defining a specific
+structure for the 30-nm chromatin fibers may not be valid for
+several reasons. First, the Rhodes group suggested that the
+solenoid or zigzag method of compaction was defined by the
+length of the nucleosomal linker DNA (Routh et al. 2008).
+Second, Grigoryev et al. demonstrated that two-start zigzag
+and one-start solenoids could be present simultaneously in a
+30-nm chromatin fiber under certain conditions (Grigoryev
+et al. 2009; Grigoryev and Woodcock 2012). It should be
+emphasized that even a variation in linker DNA length of
+1 bp will correspond to a 36° rotation of one nucleosome with
+respect to its neighbor and will cause significant structural
+changes in the fiber (van Holde and Zlatanova 2007).
+
+Although the defined structure of 30-nm chromatin fibers
+remains unclear, it has long been assumed that the 10-nm
+nucleosome fibers form a 30-nm chromatin fiber and, subse-
+quently, the higher order chromatin structures of interphase
+nuclei and mitotic chromosomes. Several models have been
+proposed to describe the structure of higher order chromatin.
+The “hierarchical helical folding model” suggests that a 30-nm
+chromatin fiber is folded progressively into larger fibers, includ-
+ing ∼100-nm and then ∼200-nm fibers, to form large interphase
+chromatin fibers (chromonema fibers) or mitotic chromosomes
+(Fig. 2c) (Sedat and Manuelidis 1978; Belmont et al. 1989;
+Belmont and Bruce 1994; for a review, see Horn and Peterson
+2002). In contrast, the “radial loop model” assumes that a 30-nm
+chromatin fiber folds into radially oriented loops to form mitotic
+chromosomes (Fig. 2c) (Paulson and Laemmli 1977; Laemmli
+et al. 1978; Marsden and Laemmli 1979).
+
+Does the 30-nm chromatin fiber exist in vivo?
+The cryo-EM study
+
+In 1986, the Dubochet group performed a pioneering study to
+visualize native cellular structures using cryo-EM (Dubochet
+et al. 1986). Mammalian mitotic cells were frozen rapidly,
+sectioned, and observed directly under a cryo-EM with no
+chemical fixation or staining (cryo-EM of vitreous sections,
+CEMOVIS). The Dubochet group first observed “native”
+mammalian chromosomes in these sections. Mitotic chromo-
+somal regions were apparent because they were excluded
+
+from electron-dense ribosomes and, therefore, were distin-
+guishable from the cytoplasmic regions, which are full of
+ribosomes (Dubochet et al. 1986; see also Maeshima and
+Eltsov 2008). Surprisingly, the chromosomes had a homoge-
+neous, grainy texture with ∼11-nm spacing. No higher order
+or periodic structures, including 30-nm fibers, were observed.
+This suggested that the basic structure of the chromosome was
+a liquid-like compact aggregation of 10-nm, not 30-nm, nu-
+cleosome fibers (Dubochet et al. 1988).
+
+Interphase chromatin has also been visualized using cryo-
+EM. Although the chromatin regions in interphase nuclei are
+not as obvious as those in mitotic chromosomes because there
+is no efficient chromatin marker in interphase nuclei, it was
+suggested that interphase nuclei in most higher eukaryote cells
+might not contain 30-nm chromatin fibers (Dubochet and
+Sartori Blanc 2001; Bouchet-Marquis et al. 2006; Fakan and
+van Driel 2007). For example, typical heterochromatin re-
+gions in plant or mammalian nuclei resembled mitotic chro-
+mosomes by cryo-EM, forming a homogeneous texture with-
+out 30-nm structures (Bouchet-Marquis et al. 2006; Fakan and
+van Driel 2007).
+
+On the other hand, it is unclear whether the absence of 30-nm
+structures in cryo-EM images truly demonstrates a lack of 30-nm
+chromatin fibers because when researchers capture cryo-EM
+images, they use a technique called “defocusing” to produce
+high-contrast images. This process results in artificial amplifica-
+tion or suppression of the signal intensity, which affects different
+structural features depending on the defocus value (contrast
+transfer function [CTF] effect; for a review, see Frank 2006). It
+is thus possible that the degree of defocusing needed to image
+chromosomes or chromatin with high contrast prevents the
+visualization of 30-nm chromatin fibers. To solve this problem,
+we collaborated with Eltsov, Frangakis, and Dubochet to com-
+pensate for the CTF effect by merging several images taken at
+different levels of defocus into a single image (Conway and
+Steven 1999). Even after this correction, we were unable to
+detect 30-nm structures in the chromosomal areas. In addition,
+the detection of periodic structures in the chromosomal region by
+power spectral (Fourier transform) analysis revealed a prominent
+peak at 11 nm, but not at 30 nm. This cryo-EM study suggested
+that 30-nm chromatin fibers were essentially absent from mitotic
+chromosomes; therefore, we proposed that 10-nm nucleosome
+fibers exist in a highly disordered, interdigitated state similar to a
+“polymer melt” (Figs. 1 and 4) (Eltsov et al. 2008; Maeshima
+et al. 2010a).
+
+Small-angle X-ray scattering analyses revealed no 30-nm
+chromatin structures in interphase nuclei and mitotic
+chromosomes
+
+Although our cryo-EM study did not detect any 30-nm struc-
+tures in mitotic chromosomes, it might be impossible to
+
+228
+
+Chromosoma (2014) 123:225–237
+
+observe potential hierarchical regular structures because
+only a small number of 50-nm sections were examined
+(Eltsov et al. 2008). Langmore and Paulson (Langmore and
+Paulson 1983; Paulson and Langmore 1983) detected a 30-nm
+structure in interphase nuclei and mitotic chromosomes using
+small-angle X-ray scattering (SAXS) analysis, which can
+detect bulky periodic structures in non-crystal materials in
+solution without chemical fixation or staining (Fig. 3a, b)
+(Roe 2000). Therefore, this study provided evidence for the
+existence of 30-nm chromatin fibers in interphase chromatin
+and mitotic chromosomes (Langmore and Paulson 1983;
+Paulson and Langmore 1983). Because these findings were
+inconsistent with the cryo-EM findings described above, we
+performed a comprehensive investigation of the structure of
+interphase nuclei and mitotic chromosomes using SAXS and
+cryo-EM (Nishino et al. 2012; Joti et al. 2012; for a review, see
+Hansen 2012). Isolated human interphase nuclei and
+mitotic chromosomes were exposed to synchrotron X-ray
+beams (Fig. 3a). A typical scattering pattern of interphase
+
+nuclei and mitotic chromosomes exhibited three peaks at
+30-, weakly at 11-, and 6-nm (Fig. 3c, left) (Nishino et al.
+2012; Joti et al. 2012). This was consistent with the previous
+findings of Langmore and Paulson (1983), who suggested
+that the 6- and 11-nm peaks were derived from the face-to-
+face and edge-to-edge positioning of nucleosomes, respec-
+tively. They concluded that the 30-nm peak represented the
+side-by-side packaging of 30-nm chromatin fibers. However,
+this fails to explain why the 30-nm structures were not
+observed in interphase chromatin and mitotic chromosomes
+using cryo-EM.
+
+To understand the nature of the 30-nm peak observed using
+SAXS, isolated chromosomes were examined using cryo-EM
+(Nishino et al. 2012; Joti et al. 2012). Again, no 30-nm
+chromatin fibers were observed in chromosomes. However,
+the cryo-EM images revealed that the surface of the chromo-
+some was coated with electron-dense granules the size of
+ribosomes. Subsequent immunostaining and Western blotting
+confirmed that the chromosome surface was contaminated
+
+Fig. 3 Small angle X-ray
+scattering (SAXS) analysis of
+chromatin structure. a
+Experimental design. The
+chromosome pellet in a quartz
+capillary tube was exposed to
+synchrotron X-ray beams, and the
+scattering patterns were recorded
+using the imaging plate (Nishino
+et al. 2012). b When non-crystal
+materials were irradiated with X-
+rays, scattering at small angles
+generally reflected periodic
+structures. Images a and b were
+reproduced from Joti et al. (2012),
+with some modifications. c Upper
+left Typical SAXS patterns of
+purified mitotic HeLa
+chromosome fractions. Three
+peaks at ∼6, ∼11 (weak), and
+∼30 nm were detected (arrows).
+(Upper right) After the removal
+of ribosome aggregates, the 30-
+nm peak disappeared, whereas the
+other peaks remained. (Bottom) A
+model whereby the 30-nm peak in
+SAXS results from regularly
+spaced ribosome aggregates and
+not from the chromosomes.
+Image c was reproduced from
+Nishino et al. (2012), with some
+modification
+
+Chromosoma (2014) 123:225–237
+
+229
+
+with ribosomes. The ribosomes were stacked regularly at ∼30-
+nm intervals, which could explain the ∼30-nm peak observed
+using SAXS. To test this hypothesis, we removed ribosomes
+from the surface of the chromosome by washing with an
+isotonic buffer-containing polyamine and EDTA (Lewis and
+Laemmli 1982) while maintaining the size and shape of the
+chromosomes and then analyzed mitotic chromosomes using
+SAXS. Importantly, no 30-nm peaks were detected (Fig. 3c,
+right), but the 11- and 6-nm peaks resulting from the internal
+structure of the nucleosomes remained (Fig. 3c, right). Simi-
+larly, when we examined the nuclei after ribosome removal,
+the 30-nm peak in the SAXS pattern disappeared (Joti et al.
+2012). These results suggested the absence of a 30-nm chro-
+matin fiber in interphase chromatin and mitotic chromosomes.
+Next, we investigated the larger scale chromatin structure
+of interphase nuclei and mitotic chromosomes using a newly
+developed apparatus for ultra-small-angle X-ray scattering
+(USAXS) (Nishino et al. 2009). Consistent with our previous
+observations, there were no regular periodic structures be-
+tween ∼30- and 1,000-nm in interphase nuclei and mitotic
+chromosomes. This contradicts the hierarchical helical folding
+model (Fig. 2c) (Nishino et al. 2012; Joti et al. 2012). The
+scattering properties also suggested the existence of a scale-
+free structure or fractal nature up to ∼275-nm in interphase
+chromatin and ∼1,000-nm in mitotic chromosomes. This sug-
+gests that interphase and mitotic chromatin share the common
+structural features of up to ∼275 nm of condensed and irreg-
+ularly folded 10-nm nucleosome fibers without 30-nm struc-
+tures (discussed below). Taken together, the cryo-EM, SAXS,
+and USAXS data suggest that irregularly folded 10-nm nucle-
+osome fibers form the bulk structure of human interphase
+chromatin and mitotic chromosomes (Nishino et al. 2012;
+Joti et al. 2012). Nevertheless, it is possible that short stretches
+of 30-nm fibers or other regularly folded hierarchies occur in
+human interphase chromatin and mitotic chromosomes.
+
+microscopy with an energy filter. ESI makes it possible to
+perform phosphorus and nitrogen mapping in cells with high
+contrast and resolution (Ahmed et al. 2009; Fussner et al.
+2011a, b). The signals from phosphorus and nitrogen, which
+are the main components of DNA, may be used to assess the
+folding of genomic DNA and can distinguish 10- from 30-nm
+fibers. They observed that pluripotent cells were characterized
+by a highly dispersed mesh of 10-nm, but not 30-nm, fibers
+(Fussner et al. 2011a, b, 2012). In contrast, differentiated cells
+form compact chromatin domains leave a large space in the
+nucleus that is devoid of DNA. Surprisingly, ESI combined
+with tomography methods revealed that condensed hetero-
+chromatin domains such as chromocenters consisted of 10-
+nm, rather than 30-nm, chromatin fibers (Fussner et al. 2012;
+for a review, see Quenet et al. 2012), consistent with the
+observations using cryo-EM. Furthermore, Gan et al. investi-
+gated the picoplankton Ostreococcus tauri, the smallest
+known free-living eukaryote, using cryo-EM tomography of
+ice sections and subsequent computational analysis (Gan et al.
+2013). They demonstrated that O. tauri chromatin resembles a
+disordered assembly of nucleosomes without the 30-nm chro-
+matin structure compatible with the polymer melt model.
+Therefore, several lines of evidence suggest the absence of
+regular 30-nm chromatin fibers in eukaryotic cells.
+
+The absence of a 30-nm chromatin fiber in native chroma-
+tin may not be a surprise. Generally, native chromatin does not
+have regularly spaced nucleosomes, so linker DNA lengths
+vary. As pointed out by van Holde and Zlatanova (2007), even
+the addition of a single base to linker DNA changes the
+relative orientation of one nucleosome to the next by 36°.
+Unless nucleosome-nucleosome interactions are sufficient to
+overcome such variations, the formation of a regular chroma-
+tin fiber is impossible.
+
+Other evidence supporting the absence of 30-nm
+chromatin fibers
+
+Dekker (2008) used the chromosome-conformation-capture
+(3C) technique to investigate the folding of a specific genomic
+DNA region within yeast cells. He measured the average
+distance between two loci in the genome by confocal micros-
+copy and the flexibility of the intervening chromatin fiber by
+the 3C technique. In combination with polymer modeling, the
+mass density of the chromatin fiber was determined. His
+conclusion was that yeast chromatin in a transcriptionally
+active domain did not form a compact 30-nm chromatin fiber
+but rather was extended with a loose arrangement of 10-nm
+nucleosome fibers.
+
+More recently, Bazett-Jones et al. used electron spectro-
+scopic imaging (ESI), a process that involves electron
+
+Why can 30-nm chromatin fibers be observed in vitro?
+
+Although the near absence of 30-nm chromatin fibers in
+eukaryotic cells was suggested, these structures are shown in
+EM images in molecular biology textbooks. We propose that
+most 30-nm chromatin fibers in EM images are in vitro arti-
+facts caused by the low-salt buffer conditions. The formation
+of 30-nm chromatin fibers requires the selective binding of
+nucleosomes, which are close neighbors on the DNA strand,
+via intra-fiber nucleosomal association (Fig. 4a). In low-salt
+buffer conditions of <1 mM MgCl2 or <100 mM NaCl,
+nucleosomal fibers gently repel each other due to their nega-
+tive charges. This “isolation of nucleosome fibers” facilitates
+the intra-fiber nucleosomal association and the subsequent
+formation of stable 30-nm chromatin fibers (Fig. 4a, b). In
+conventional EM imaging studies, these 30-nm fibers might
+be stabilized through chemical cross-linking (such as
+
+230
+
+Chromosoma (2014) 123:225–237
+
+This leads to the polymer melt (Maeshima et al. 2010a) or
+“self-oligomer” state (for a review, see Hansen 2002; Hansen
+2012) (Fig. 4a, b). In addition, inter-fiber nucleosome inter-
+actions increase significantly in the presence of >2 mM Mg2+
+ions (Zheng et al. 2005; Kan et al. 2009). However,
+it is important to note that the tail domain of histone H4
+mediates both 30 nm fiber formation (Dorigo et al. 2003)
+and inter-fiber nucleosome association (Kan et al. 2009).
+Consequently, inter-fiber nucleosome association can prevent
+the formation of 30-nm fibers by sequestering the H4 tail
+domain (Hansen 2012).
+
+Presence of 30-nm chromatin fibers in specific cells
+
+Although inter-fiber nucleosome associations supposedly
+dominate within cells, there are some specific cell types
+whose nuclei contain apparent 30-nm chromatin fibers, for
+example chicken erythrocytes (Langmore and Schutt 1980;
+Woodcock 1994; Scheffer et al. 2011) and starfish sperm
+(Woodcock 1994; Scheffer et al. 2012). These cells are
+terminally differentiated, and so, transcription is almost
+silenced. In mouse rod cells, a large dense heterochromatin
+domain is located in the center of the nucleus. The hetero-
+chromatin at the periphery of the domain is formed by
+closely packed 30-nm fibers, whereas such fibers have not
+been detected in the centermost domain (Kizilyaprak et al.
+2010). We propose that the stable formation of 30-nm chro-
+matin fibers in these cells could play a role in robust gene
+silencing. Nevertheless, there must be a unique mechanism
+to facilitate intra-fiber nucleosome association in these spe-
+cific cells. One possibility is the presence of a larger number
+of linker histones. Consistent with this, linker histones could
+stabilize 30-nm chromatin fibers in vitro (for a review, see
+Hansen 2002). In chicken erythrocytes, linker histone H5 is
+deposited in the chromatin fibers at ∼1.4 molecules/
+nucleosome (for a review, see Kowalski and Palyga 2011),
+whereas starfish sperm chromatin has ∼1.7 H1 molecules per
+nucleosome; in contrast, various somatic cells have 0.5
+−0.8 H1 per nucleosome (Woodcock et al. 2006). Specific
+histone modifications or the binding of specific proteins might
+also be involved in the formation of stable 30-nm fibers for
+robust gene silencing (Kowalski and Palyga 2011). Interest-
+ingly, the 30-nm fibers of peripheral heterochromatin in
+mouse rod photoreceptor cells contain acetylated histones,
+which are usually associated with active transcription and
+de-condensed (Kizilyaprak et al. 2010). Histone acetylation
+might induce the isolation of nucleosome fibers (Fig. 4a)
+and subsequent intra-fiber nucleosomal association to form
+stable 30-nm chromatin fibers because histone acetylation
+seems to inhibit inter-fiber nucleosome association by repel-
+ling the increasingly negative charge of the nucleosomes
+(Szerlong et al. 2010; Liu et al. 2011).
+
+Fig. 4 Polymer melt model. a Under low-salt conditions, nucleosome
+fibers could form 30-nm chromatin fibers via intra-fiber nucleosome
+associations. An increase in salt (cation) concentration results in inter-
+fiber nucleosomal contacts that interfere with intra-fiber nucleosomal
+associations, leading to a polymer melt scenario. Note that in these
+illustrations, we show a highly simplified two-dimensional nucleosome
+model. Arrows and dotted lines show repulsion forces and interactions,
+respectively. b During the melting process, the 30-nm chromatin fibers
+become irregularly folded nucleosome fibers
+
+glutaraldehyde fixation) and then shrunk further after alcohol
+dehydration during sample preparation (Maeshima et al.
+2010b).
+
+Polymer melt
+
+It is important to assess chromatin structure under more
+physiological salt conditions. Under these conditions, inter-
+fiber nucleosome interactions become increasingly dominant
+(Fig. 4a, b) (Maeshima et al. 2010a). Nucleosome fibers
+(10 nm) are forced to interdigitate, which interferes with
+the formation and maintenance of 30-nm chromatin fibers.
+
+Chromosoma (2014) 123:225–237
+
+231
+
+Higher order interphase chromatin structures
+
+As described above, several studies have demonstrated that
+irregular folded 10-nm nucleosome fibers form the bulk struc-
+ture of interphase chromatin and mitotic chromosomes. Nev-
+ertheless, the higher order structure of chromatin must also be
+considered. Based on the available data, including studies
+from our laboratory, we propose that interphase chromatin
+forms numerous condensed chromatin domains consisting of
+irregularly folded 10-nm nucleosome fibers that resemble
+“chromatin liquid drops” (Fig. 5a) (Maeshima et al. 2010a;
+Joti et al. 2012). These domains can be considered to be drops
+of viscous chromatin, which could be formed by the macro-
+molecular crowding effect (Asakura and Oosawa 1954) and
+
+Fig. 5 Higher order structure of interphase chromatin. a Condensed
+chromatin domains. Active chromatin regions are transcribed on the
+surfaces of chromatin domains with transcriptional complexes (purple
+spheres) and RNA polymerase II (green spheres). NPC nuclear pore
+complex, NE nuclear envelope. b (Left) Condensed chromatin is more
+resistant to radiation damage or chemical attack. (Right) Reactive radicals
+arising from the radiolysis of water molecules by irradiation can damage
+decondensed chromatin; decondensed chromatin is also more accessible
+to chemicals (labeled “Ch”)
+
+other specific proteins such as cohesin (Nasmyth and Haering
+2005; Hirano 2006) and/or condensin II (Ono et al. 2013;
+Thadani et al. 2012). Similar chromatin domains were pro-
+posed in the chromosome territory-interchromatin compart-
+ment (CT-IC) model (Cremer et al. 2000; Cremer and Cremer
+2001), where each CT is built from a series of interconnected
+1 Mb-sized chromatin domains. These domains were identi-
+fied originally using pulse labeling of DNA replication foci
+(Nakamura et al. 1986; Schermelleh et al. 2001; Berezney
+et al. 2005; Albiez et al. 2006) that persisted stably in subse-
+quent cell generations (Jackson and Pombo 1998; Ma et al.
+1998; Zink et al. 1999). Several recent reports have used the
+Hi-C and chromosome conformation capture carbon copy
+(5C) methods to investigate the three-dimensional architecture
+of genomic DNA within cells, and they have proposed the
+physical packaging of genomic DNA. The DNA packing units
+were termed “topologically associating domains (TADs)”
+(Nora et al. 2012), “topological domains” (Dixon et al.
+2012), or “physical domains” (Sexton et al. 2012). Recent
+studies have reported that TADs, which can be hundreds of
+kilobases in size, were identified in fly, mouse, and human
+cells, suggesting that TADs could be universal building blocks
+of chromosomes. Loci located within TADs tend to interact
+frequently with each other, but they interact much less fre-
+quently with loci located outside their domain.
+
+What is the advantage of these condensed chromatin do-
+mains? A number of biological implications have been pro-
+posed for TADs (Nora et al. 2013). For instance, TADs were
+found to correspond to lamin-associated chromatin domains
+(LADs) in nuclei (Guelen et al. 2008). Most DNA replication
+domains, where DNA replication takes place in a nearly
+synchronous manner, overlap with multiple TADs (Ryba
+et al. 2010). Changes in timing during cell differentiation
+typically involve TAD-sized regions. Regarding transcription-
+al regulation, enhancer-promoter interactions produced by
+looping might be limited to elements located within the same
+TAD (Shen et al. 2012). TADs might also be defined by
+genetically encoded boundary elements (Nora et al. 2012).
+
+In addition, we reported recently that condensed chromatin
+is more resistant to radiation damage than the decondensed
+form (Fig. 5b), presumably because condensed chromatin has
+a lower level of reactive radical generation after ionizing irra-
+diation (Takata et al. 2013). The condensed state also protects
+genomic DNA from chemical attack. These findings suggest
+that condensed chromatin domains play an important role in
+maintaining genomic integrity (see also Falk et al. 2008).
+
+Mitotic chromosome structure
+
+Nucleosome fibers (10-nm) are somehow organized into mi-
+totic chromosomes. Condensins and topoisomerase IIα,
+which are essential for chromosome condensation, form an
+
+232
+
+Chromosoma (2014) 123:225–237
+
+axis in the chromosome in various cell types (Hirano 2012;
+Thadani et al. 2012; Ohta et al. 2010; Belmont 2006;
+Maeshima and Eltsov 2008). Although it was claimed that
+the condensin axis was observed only in fixed and not living
+cells (Thadani et al. 2012), we observed clear axial structures
+of the condensin structures kleisin β- and γ-EGFP in chro-
+mosomes in living mammalian cells (Fig. 6a–c). Therefore,
+we hypothesized that condensins hold 10-nm nucleosome
+fibers around the chromosome center creating loops, as
+
+proposed in the radial loop/scaffold model (Figs. 2c and 6d)
+(Laemmli et al. 1978; Maeshima and Eltsov 2008; Nishino
+et al. 2012). Locally, nucleosome fibers are folded in an
+irregular manner towards the center of the chromosome
+(Fig. 6d) (Nishino et al. 2012). An immuno-EM study of
+condensins revealed a traceable condensin array near the
+center of chromosome cross-sections (Maeshima et al.
+2005), suggesting the oligomerization or self-assembly struc-
+ture of condensins, which capture nucleosome fibers.
+
+Fig. 6 Mitotic chromosome structure. Axial localizations of condensins I
+and II in mitotic chromosomes in live mammalian cells. For DNA
+staining, DM (Indian Muntjac cells) cells stably expressing EGFP-
+Kleisin γ (condensin I) and EGFP-Kleisin β (condensing II) were stained
+with Hoechst 33342. Live-cell imaging was performed using a Delta
+Vision microscope (applied precision). a Clear axial signals of EGFP-
+Kleisin γ in mitotic chromosomes are shown. b End-on-view of mitotic
+chromosomes. The upper panel shows DM cells expressing EGFP-
+Kleisin γ, whereas the lower panel shows DM cells expressing EGFP-
+Kleisin β stably. Restricted dot signals from two types of EGFP-Kleisin
+
+in the cross-section of a chromosome body (DNA staining) are shown. c
+Quantitative data using line-profile analysis (blue line, DNA; red line,
+Kleisin signals) is shown. There is clear axial localization of condensins I
+and II in mitotic chromosomes in live mammalian cells. d Chromosomes
+consist of irregularly folded 10-nm nucleosome fibers. Condensins (blue)
+hold the nucleosome fibers (red) around the center of the chromosome.
+Locally, the nucleosome fibers are folded in an irregular or disordered
+manner, forming loop structures that collapse towards the center of the
+chromosome center (blue). The collapsed fiber (red) then forms a domain
+
+Chromosoma (2014) 123:225–237
+
+233
+
+Condensins can also aggregate in the presence of DNA
+(Yoshimura et al. 2002; see also Hirano 2012). In our model,
+the orientation of nucleosome fibers in chromosomes is iso-
+tropic (Fig. 6d). This suggests that a specific locus of the
+genome is randomly incorporated into a wide ranging, but
+not reproducibly specific, region of the chromosome (Nishino
+et al. 2012). This is consistent with data reported using fluo-
+rescent labeling of specific chromosomal sites (Strukov and
+Belmont 2009).
+
+Naumova et al. (2013) recently performed 5C and Hi-C
+analyses to understand the three-dimensional folding of geno-
+mic DNA in mitotic chromosomes. In human cells from G1 to
+S to G2 phase, they identified large chromatin structures
+called “chromosome compartments” (multi-megabases) and
+TADs (hundreds of kilobases), both of which were found in
+previous studies (Lieberman-Aiden et al. 2009; Nora et al.
+2012; Dixon et al. 2012; Sexton et al. 2012). However, these
+structures were not found during mitosis; instead, they found
+homogenous folding of genomic DNA, which seems to be
+consistent with our view that chromosomes consist of irregu-
+larly folded nucleosome fibers.
+
+Using polymer simulations, they found that the obtained
+data for mitotic chromosomes are inconsistent with the classic
+hierarchical helical folding model (Fig. 2c) and are, instead,
+best described by a linearly organized longitudinally com-
+pressed array of consecutive chromatin loops (Naumova
+et al. 2013), which is essentially similar to the radial
+loop/scaffold model (Fig. 2c) (Laemmli et al. 1978; for a
+review, see Kleckner et al. 2013).
+
+Dynamic 10-nm fibers in living mammalian cells
+
+The original liquid chromatin model proposed by Dubochet
+(McDowall et al. 1986; Dubochet et al. 1988) and our polymer
+melt model (Eltsov et al. 2008; Maeshima et al. 2010a) both
+imply a less physically constrained chromatin state and a more
+locally dynamic state; the 10-nm nucleosome fibers fluctuate
+locally. Therefore, we attempted to visualize local nucleosome
+fluctuation. Previous studies of chromatin dynamics
+employed very large chromatin regions such as the LacO array
+that encompasses 20−50 nucleosomes (Straight et al. 1996;
+Belmont et al. 1999; Heun et al. 2001; Vazquez et al. 2001;
+Chubb et al. 2002; Levi et al. 2005; Hajjoul et al. 2013). The
+motion of these large regions in living mammalian cells was
+measured by monitoring the movement of the GFP-LacI
+signal bound to the LacO array at specific chromatin regions.
+To observe and analyze more local nucleosome dynamics,
+we performed single nucleosome imaging in living mamma-
+lian cells (Fig. 7) (Hihara et al. 2012; Nozaki et al. 2013). We
+fused histone H4 with photoactivatable (PA)-GFP and
+expressed the fusion protein in mammalian cells at a very
+low level (Fig. 7a). We then used an oblique illumination
+
+Fig. 7 Single nucleosome imaging. a A small portion of PA-GFP-H4
+was activated spontaneously without laser activation and was used for
+single nucleosome imaging. b Single nucleosome image of a DM cell
+(Indian Muntjac cell) nucleus that expresses PA-GFP-H4. PA-GFP-H4 is
+observed as a bright dot using oblique illumination microscopy. The dots
+were fitted to an assumed Gaussian point spread function to determine the
+precise center of signals with higher resolution. Bar=5 μm. c Represen-
+tative three trajectories of fluorescently tagged single nucleosomes. d
+Chromatin fluctuations as a basis for scanning genome information. In
+cells, nucleosome fibers (red spheres and lines) are folded irregularly. The
+nucleosomes fluctuate, and these nucleosome dynamics facilitate chro-
+matin accessibility. The images were reproduced from (Hihara et al. 2012;
+Nozaki et al. 2013) with some modification
+
+microscope to illuminate a limited thin area within the cell
+for single nucleosome imaging (Hihara et al. 2012; Nozaki
+et al. 2013; for principle, see Tokunaga et al. 2008). Generally,
+PA-GFP shows green fluorescence only after activation with a
+405-nm laser (Lippincott-Schwartz and Patterson 2009). Sur-
+prisingly, we observed that a small fraction of H4-PA-GFP
+and PA-GFP-H4 in the cells was activated spontaneously
+without laser stimulation (Fig. 7a). Figure 7b shows a typical
+single nucleosome image of a living mammalian cell. Each
+bright dot in the nucleus represents a single H4-PA-GFP (PA-
+GFP-H4) within the single nucleosome. Strikingly, we ob-
+served significant nucleosome fluctuation ( ∼50 nm
+
+234
+
+Chromosoma (2014) 123:225–237
+
+movement/30 ms) in both interphase chromatin and mitotic
+chromosomes (Fig. 7c), which is likely caused by the
+Brownian motion (Hihara et al. 2012; Nozaki et al. 2013).
+Mean square displacement (MSD) plots, measuring the spatial
+extent of the random motion, and fitting to an anomalous
+diffusion curve suggested a restricted nucleosome movement.
+The McNally group also published single nucleosome track-
+ing data using H2B-EGFP (Mazza et al. 2012), which appears
+to be consistent with our single nucleosome tracking results
+using PA-GFP-H4.
+
+Local fluctuation of nucleosomes as a basis for scanning
+genome information
+
+Some computational modeling studies, including our own,
+have suggested that nucleosome fluctuations facilitate the
+mobility of diffusing proteins in the chromatin environment
+(Fig. 7d) (Hihara et al. 2012; see also Wedemeier et al. 2009;
+Fritsch and Langowski 2011). Such nucleosome fluctuations
+may also contribute to the frequent exposure of genomic DNA
+sequences. Because both facilitating protein mobility and
+DNA exposure increase chromatin accessibility, these local
+dynamics may be advantageous in template-directed biologi-
+cal processes such as transcriptional regulation, DNA replica-
+tion, and DNA repair/recombination. Therefore, we propose
+that the local fluctuation of nucleosomes forms the basis for
+scanning genome information (Fig. 7d).
+
+We consider that nucleosome fluctuations are involved in
+various cellular functions. Hinde et al. (2012) examined the
+chromatin dynamics in human ES cells based on signal inten-
+sity fluctuations of DAPI or H2B-EGFP, and they found that
+the intensity of the fluctuations in ES cells was drastically
+impaired during differentiation, suggesting that such fluctua-
+tions correlate with pluripotency. A dynamic chromatin state
+may be required for high transcriptional competency to main-
+tain pluripotency. Elucidation of the spatio-temporal regula-
+tion of nucleosome fluctuations would be an intriguing next
+step.
+
+Conclusions
+
+The traditional view of chromatin is changing from one of
+static regular structures including 30-nm chromatin fibers to a
+dynamic irregular folding structure of 10-nm nucleosome
+fibers. Although the term “irregular” or “disordered” might
+give the impression that the organization is functionally irrel-
+evant, the irregular folding results in less physical constraint
+and increased dynamism, increasing the accessibility of the
+DNA (Fig. 7d). This dynamic state may be essential for
+various genome functions, including transcription, replication,
+and DNA repair/recombination.
+
+A new paper (Eltsov M, Sosnovski S, Olins AL, Olins DE:
+Chromosoma. 2014 Feb 26. [Epub ahead of print]) published
+after this article went to press. The authors studied nuclear
+envelope-limited chromatin sheets (ELCS) by cryo-EM. They
+found that the 30-nm chromatin fibers could only be observed
+following aldehyde fixation; none were seen in cryo-sections,
+suggesting that the 30-nm chromatin fibers in ELCS visualized
+by conventional EM could be an artifact structure.
+
+Acknowledgments We are grateful to Dr. Eltsov for stimulating dis-
+cussions and Drs. T. Sutani, M. Shimura, M. Sasai, K. Fujimura, S. Ide,
+C.-F. Kao, H. Masumoto, A. Sasaki, and H. Takata for critically reading
+the manuscript. We would like to thank all our collaborators who con-
+tributed to our studies. We thank T. Cremer and I. Hiratani for the helpful
+discussions and support. We must also apologize to our colleagues in the
+chromatin field for citing a limited number of their papers due to space
+constraints. A grant-in-aid for a MEXT grant, JST CREST, Yamada
+Science Foundation, and Takeda Science Foundation supported this
+work. T. N. is a JSPS fellow.
+
+Open Access This article is distributed under the terms of the Creative
+Commons Attribution License which permits any use, distribution, and
+reproduction in any medium, provided the original author(s) and the
+source are credited.
+
+References
+
+Ahmed K, Li R, Bazett-Jones DP (2009) Electron spectroscopic imaging
+
+of the nuclear landscape. Methods Mol Biol 464:415–423
+
+Alberts B, Johnson A, Lewis J, Raff M, Roberts K, Walter P (2007)
+
+Molecular biology of the Cell, 5th edn. Garland, New York
+
+Albiez H, Cremer M, Tiberi C, Vecchio L, Schermelleh L, Dittrich S,
+Kupper K, Joffe B, Thormeyer T, von Hase J, Yang S, Rohr K,
+Leonhardt H, Solovei I, Cremer C, Fakan S, Cremer T (2006)
+Chromatin domains and the interchromatin compartment form struc-
+turally defined and functionally interacting nuclear networks.
+Chromosome Res 14:707–733
+
+Asakura S, Oosawa F (1954) On interaction between two bodies im-
+mersed in a solution of macromolecules. J Chem Phys 22:1255–
+1256
+
+Bassett A, Cooper S, Wu C, Travers A (2009) The folding and unfolding
+
+of eukaryotic chromatin. Curr Opin Genet Dev 19:159–165
+
+Belmont AS (2006) Mitotic chromosome structure and condensation.
+
+Curr Opin Cell Biol 18:632–638
+
+Belmont AS, Bruce K (1994) Visualization of G1 chromosomes: a
+folded, twisted, supercoiled chromonema model of interphase chro-
+matid structure. J Cell Biol 127:287–302
+
+Belmont AS, Braunfeld MB, Sedat JW, Agard DA (1989) Large-scale
+chromatin structural domains within mitotic and interphase chromo-
+somes in vivo and in vitro. Chromosoma 98:129–143
+
+Belmont AS, Li G, Sudlow G, Robinett C (1999) Visualization of large-
+scale chromatin structure and dynamics using the lac operator/lac
+repressor reporter system. Methods Cell Biol 58:203–222
+
+Berezney R, Malyavantham KS, Pliss A, Bhattacharya S, Acharya R
+(2005) Spatio-temporal dynamics of genomic organization and
+function in the mammalian cell nucleus. Adv Enzym Regul 45:
+17–26
+
+Bian Q, Belmont AS (2012) Revisiting higher-order and large-scale
+
+chromatin organization. Curr Opin Cell Biol 24:359–366
+
+Bloomfield VA (1996) DNA condensation. Curr Opin Struct Biol 6:334–
+
+341
+
+Chromosoma (2014) 123:225–237
+
+235
+
+Bordas J, Perez-Grau L, Koch MH, Vega MC, Nave C (1986) The
+superstructure of chromatin and its condensation mechanism. I.
+Synchrotron radiation X-ray scattering results. Eur Biophys J 13:
+157–173
+
+Bouchet-Marquis C, Dubochet J, Fakan S (2006) Cryoelectron micros-
+copy of vitrified sections: a new challenge for the analysis of
+functional nuclear architecture. Histochem Cell Biol 125:43–51
+
+Bystricky K, Heun P, Gehlen L, Langowski J, Gasser SM (2004) Long-
+range compaction and flexibility of interphase chromatin in budding
+yeast analyzed by high-resolution imaging techniques. Proc Natl
+Acad Sci U S A 101:16495–16500
+
+Chubb JR, Boyle S, Perry P, Bickmore WA (2002) Chromatin motion is
+constrained by association with nuclear compartments in human
+cells. Curr Biol 12:439–445
+
+Conway JF, Steven AC (1999) Methods for reconstructing density maps
+of “single” particles from cryoelectron micrographs to
+subnanometer resolution. J Struct Biol 128:106–118
+
+Cremer T, Cremer C (2001) Chromosome territories, nuclear architecture
+and gene regulation in mammalian cells. Nat Rev Genet 2:292–301
+Cremer T, Kreth G, Koester H, Fink RH, Heintzmann R, Cremer M,
+Solovei I, Zink D, Cremer C (2000) Chromosome territories,
+interchromatin domain compartment, and nuclear matrix: an inte-
+grated view of the functional nuclear architecture. Crit Rev Eukaryot
+Gene Expr 10:179–212
+
+Davey CA, Sargent DF, Luger K, Maeder AW, Richmond TJ (2002)
+Solvent mediated interactions in the structure of the nucleosome
+core particle at 1.9 a resolution. J Mol Biol 319:1097–1113
+
+Dekker J (2008) Mapping in vivo chromatin interactions in yeast suggests
+an extended chromatin fiber with regional variation in compaction. J
+Biol Chem 283:34532–34540
+
+Dixon JR, Selvaraj S, Yue F, Kim A, Li Y, Shen Y, Hu M, Liu JS, Ren B
+(2012) Topological domains in mammalian genomes identified by
+analysis of chromatin interactions. Nature 485:376–380
+
+Dorigo B, Schalch T, Bystricky K, Richmond TJ (2003) Chromatin fiber
+folding: requirement for the histone H4 N-terminal tail. J Mol Biol
+327:85–96
+
+Dorigo B, Schalch T, Kulangara A, Duda S, Schroeder RR, Richmond TJ
+(2004) Nucleosome arrays reveal the two-start organization of the
+chromatin fiber. Science 306:1571–1573
+
+Dubochet J, Sartori Blanc N (2001) The cell in absence of aggregation
+
+artifacts. Micron 32:91–99
+
+Dubochet J, Adrian M, Schultz P, Oudet P (1986) Cryo-electron micros-
+copy of vitrified SV40 minichromosomes: the liquid drop model.
+EMBO J 5:519–528
+
+Dubochet J, Adrian M, Chang JJ, Homo JC, Lepault J, McDowall AW,
+Schultz P (1988) Cryo-electron microscopy of vitrified specimens.
+Q Rev Biophys 21:129–228
+
+Eltsov M, Maclellan KM, Maeshima K, Frangakis AS, Dubochet J
+(2008) Analysis of cryo-electron microscopy images does not sup-
+port the existence of 30-nm chromatin fibers in mitotic chromo-
+somes in situ. Proc Natl Acad Sci U S A 105:19732–19737
+
+Fakan S, van Driel R (2007) The perichromatin region: a functional
+compartment in the nucleus that determines large-scale chromatin
+folding. Semin Cell Dev Biol 18:676–681
+
+Falk M, Lukasova E, Kozubek S (2008) Chromatin structure influences
+the sensitivity of DNA to gamma-radiation. Biochim Biophys Acta
+1783:2398–2414
+
+Finch JT, Klug A (1976) Solenoidal model for superstructure in chroma-
+
+tin. Proc Natl Acad Sci U S A 73:1897–1901
+
+Frank J (2006) Three-dimensional electron microscopy of macromolec-
+
+ular assembly. Oxford University, New York
+
+Fritsch CC, Langowski J (2011) Chromosome dynamics, molecular
+crowding, and diffusion in the interphase cell nucleus: a Monte
+Carlo lattice simulation study. Chromosome Res 19:63–81
+
+Fussner E, Djuric U, Strauss M, Hotta A, Perez-Iratxeta C, Lanner F,
+Dilworth FJ, Ellis J, Bazett-Jones DP (2011b) Constitutive hetero-
+chromatin reorganization during somatic cell reprogramming.
+EMBO J 30:1778–1789
+
+Fussner E, Strauss M, Djuric U, Li R, Ahmed K, Hart M, Ellis J, Bazett-
+Jones DP (2012) Open and closed domains in the mouse genome are
+configured as 10-nm chromatin fibres. EMBO Rep 13:992–996
+
+Gan L, Ladinsky MS, Jensen GJ (2013) Chromatin in a marine
+picoeukaryote is a disordered assemblage of nucleosomes.
+Chromosoma 122:377–386
+
+Ghirlando R, Felsenfeld G (2013) Chromatin structure outside and inside
+
+the nucleus. Biopolymers 99:225–232
+
+Gilbert N, Boyle S, Fiegler H, Woodfine K, Carter NP, Bickmore WA
+(2004) Chromatin architecture of the human genome: gene-rich
+domains are enriched in open chromatin fibers. Cell 118:555–566
+Grigoryev SA, Woodcock CL (2012) Chromatin organization—the
+
+30 nm fiber. Exp Cell Res 318:1448–1455
+
+Grigoryev SA, Arya G, Correll S, Woodcock CL, Schlick T (2009)
+Evidence for heteromorphic chromatin fibers from analysis of nu-
+cleosome interactions. Proc Natl Acad Sci U S A 106:13317–13322
+Guelen L, Pagie L, Brasset E, Meuleman W, Faza MB, Talhout W, Eussen
+BH, de Klein A, Wessels L, de Laat W, van Steensel B (2008)
+Domain organization of human chromosomes revealed by mapping
+of nuclear lamina interactions. Nature 453:948–951
+
+Hajjoul H, Mathon J, Ranchon H, Goiffon I, Mozziconacci J, Albert B,
+Carrivain P, Victor JM, Gadal O, Bystricky K, Bancaud A (2013)
+High-throughput chromatin motion tracking in living yeast reveals
+the flexibility of the fiber throughout the genome. Genome Res 23:
+1829–1838
+
+Hansen JC (2002) Conformational dynamics of the chromatin fiber in
+solution: determinants, mechanisms, and functions. Annu Rev
+Biophys Biomol Struct 31:361–392
+
+Hansen JC (2012) Human mitotic chromosome structure: what happened
+
+to the 30-nm fibre? EMBO J 31:1621–1623
+
+Heun P, Laroche T, Shimada K, Furrer P, Gasser SM (2001) Chromosome
+dynamics in the yeast interphase nucleus. Science 294:2181–2186
+Hihara S, Pack CG, Kaizu K, Tani T, Hanafusa T, Nozaki T, Takemoto S,
+Yoshimi T, Yokota H, Imamoto N, Sako Y, Kinjo M, Takahashi K,
+Nagai T, Maeshima K (2012) Local nucleosome dynamics facilitate
+chromatin accessibility in living mammalian cells. Cell Rep 2:1645–
+1656
+
+Hinde E, Cardarelli F, Chen A, Khine M, Gratton E (2012) Tracking the
+mechanical dynamics of human embryonic stem cell chromatin.
+Epigenetics Chromatin 5:20
+
+Hirano T (2006) At the heart of the chromosome: SMC proteins in action.
+
+Nat Rev Mol Cell Biol 7:311–322
+
+Hirano T (2012) Condensins: universal organizers of chromosomes with
+
+diverse functions. Genes Dev 26:1659–1678
+
+Horn PJ, Peterson CL (2002) Molecular biology. Chromatin higher order
+
+folding–wrapping up transcription. Science 297:1824–1827
+
+Jackson DA, Pombo A (1998) Replicon clusters are stable units of
+chromosome structure: evidence that nuclear organization contrib-
+utes to the efficient activation and propagation of S phase in human
+cells. J Cell Biol 140:1285–1295
+
+Joti Y, Hikima T, Nishino Y, Kamada F, Hihara S, Takata H, Ishikawa T,
+Maeshima K (2012) Chromosomes without a 30-nm chromatin
+fiber. Nucleus 3:404–410
+
+Kan PY, Caterino TL, Hayes JJ (2009) The H4 tail domain participates in
+intra- and internucleosome interactions with protein and DNA dur-
+ing folding and oligomerization of nucleosome arrays. Mol Cell Biol
+29:538–546
+
+Kizilyaprak C, Spehner D, Devys D, Schultz P (2010) In vivo chromatin
+organization of mouse rod photoreceptors correlates with histone
+modifications. PLoS ONE 5:e11039
+
+Fussner E, Ching RW, Bazett-Jones DP (2011a) Living without 30 nm
+
+Kleckner N, Zickler D, Witz G (2013) Molecular biology. Chromosome
+
+chromatin fibers. Trends Biochem Sci 36:1–6
+
+capture brings it all together. Science 342:940–941
+
+236
+
+Chromosoma (2014) 123:225–237
+
+Kornberg RD (1974) Chromatin structure: a repeating unit of histones
+
+and DNA. Science 184:868–871
+
+Kowalski A, Palyga J (2011) Chromatin compaction in terminally differ-
+entiated avian blood cells: the role of linker histone H5 and non-
+histone protein MENT. Chromosome Res 19:579–590
+
+Kruithof M, Chien FT, Routh A, Logie C, Rhodes D, van Noort J (2009)
+Single-molecule force spectroscopy reveals a highly compliant he-
+lical folding for the 30-nm chromatin fiber. Nat Struct Mol Biol 16:
+534–540
+
+Laemmli UK, Cheng SM, Adolph KW, Paulson JR, Brown JA,
+Baumbach WR (1978) Metaphase chromosome structure: the role
+of nonhistone proteins. Cold Spring Harb Symp Quant Biol 42:351–
+360
+
+Langmore JP, Paulson JR (1983) Low angle x-ray diffraction studies of
+chromatin structure in vivo and in isolated nuclei and metaphase
+chromosomes. J Cell Biol 96:1120–1131
+
+Langmore JP, Schutt C (1980) The higher order structure of chicken
+
+erythrocyte chromosomes in vivo. Nature 288:620–622
+
+Levi V, Ruan Q, Plutz M, Belmont AS, Gratton E (2005) Chromatin
+dynamics in interphase cells revealed by tracking in a two-photon
+excitation microscope. Biophys J 89:4275–4285
+
+Lewis CD, Laemmli UK (1982) Higher order metaphase chromosome
+structure: evidence for metalloprotein interactions. Cell 29:171–181
+Lieberman-Aiden E, van Berkum NL, Williams L, Imakaev M, Ragoczy
+T, Telling A, Amit I, Lajoie BR, Sabo PJ, Dorschner MO, Sandstrom
+R, Bernstein B, Bender MA, Groudine M, Gnirke A,
+Stamatoyannopoulos J, Mirny LA, Lander ES, Dekker J (2009)
+Comprehensive mapping of long-range interactions reveals folding
+principles of the human genome. Science 326:289–293
+
+Lippincott-Schwartz J, Patterson GH (2009) Photoactivatable fluorescent
+proteins for diffraction-limited and super-resolution imaging. Trends
+Cell Biol 19:555–565
+
+Liu Y, Lu C, Yang Y, Fan Y, Yang R, Liu CF, Korolev N, Nordenskiold L
+(2011) Influence of histone tails and H4 tail acetylations on
+nucleosome-nucleosome interactions. J Mol Biol 414:749–764
+
+Ma H, Samarabandu J, Devdhar RS, Acharya R, Cheng PC, Meng C,
+Berezney R (1998) Spatial and temporal dynamics of DNA replica-
+tion sites in mammalian cells. J Cell Biol 143:1415–1425
+
+Maeshima K, Eltsov M (2008) Packaging the genome: the structure of
+
+mitotic chromosomes. J Biochem (Tokyo) 143:145–153
+
+Maeshima K, Laemmli UK (2003) A two-step scaffolding model for
+
+mitotic chromosome assembly. Dev Cell 4:467–480
+
+Maeshima K, Eltsov M, Laemmli UK (2005) Chromosome structure:
+improved immunolabeling for electron microscopy. Chromosoma
+114:365–375
+
+Maeshima K, Hihara S, Eltsov M (2010a) Chromatin structure: does the
+
+30-nm fibre exist in vivo? Curr Opin Cell Biol 22:291–297
+
+Maeshima K, Hihara S, Takata H (2010b) New insight into the mitotic
+chromosome structure: irregular folding of nucleosome fibers with-
+out 30-nm chromatin fiber. Cold Spring Harb Symp Quant Biol 75:
+439–444
+
+Marsden MP, Laemmli UK (1979) Metaphase chromosome structure:
+
+evidence for a radial loop model. Cell 17:849–858
+
+Mazza D, Abernathy A, Golob N, Morisaki T, McNally JG (2012) A
+benchmark for chromatin binding measurements in live cells.
+Nucleic Acids Res 40:e119
+
+McDowall AW, Smith JM, Dubochet J (1986) Cryo-electron microscopy
+
+of vitrified chromosomes in situ. EMBO J 5:1395–1402
+
+Nakamura H, Morita T, Sato C (1986) Structural organizations of replicon
+domains during DNA synthetic phase in the mammalian nucleus.
+Exp Cell Res 165:291–297
+
+Nasmyth K, Haering CH (2005) The structure and function of SMC and
+
+kleisin complexes. Annu Rev Biochem 74:595–648
+
+Naumova N, Imakaev M, Fudenberg G, Zhan Y, Lajoie BR, Mirny LA,
+Dekker J (2013) Organization of the mitotic chromosome. Science
+342:948–953
+
+Nishino Y, Takahashi Y, Imamoto N, Ishikawa T, Maeshima K (2009)
+Three-dimensional visualization of a human chromosome using
+coherent X-ray diffraction. Phys Rev Lett 102:18101–18104
+
+Nishino Y, Eltsov M, Joti Y, Ito K, Takata H, Takahashi Y, Hihara S,
+Frangakis AS, Imamoto N, Ishikawa T, Maeshima K (2012) Human
+mitotic chromosomes consist predominantly of irregularly folded
+nucleosome fibres without a 30-nm chromatin structure. EMBO J
+31:1644–1653
+
+Nora EP, Lajoie BR, Schulz EG, Giorgetti L, Okamoto I, Servant N,
+Piolot T, van Berlum NL, Meisig J, Sedat JW, Gribnau J, Barillot E,
+BLüthgen N, Dekker J, Heard E (2012) Spatial partitioning of the
+regulatory landscape of the X-inactivation centre. Nature 485:381–
+385
+
+Nora EP, Dekker J, Heard E (2013) Segmental folding of chromosomes: a
+basis for structural and regulatory chromosomal neighborhoods?
+Bioessays 35:818–828
+
+Nozaki T, Kaizu K, Pack CG, Tamura S, Tani T, Hihara S, Nagai T,
+Takahashi K, Maeshima K (2013) Flexible and dynamic nucleo-
+some fiber in living mammalian cells. Nucleus 4:349–356
+
+Ohta S, Wood L, Bukowski-Wills JC, Rappsilber J, Earnshaw WC (2010)
+
+Building mitotic chromosomes. Curr Opin Cell Biol 23:114–121
+
+Olins AL, Olins DE (1974) Spheroid chromatin units (v bodies). Science
+
+183:330–332
+
+Olins DE, Olins AL (2003) Chromatin history: our view from the bridge.
+
+Nat Rev Mol Cell Biol 4:809–814
+
+Ono T, Yamashita D, Hirano T (2013) Condensin II initiates sister
+
+chromatid resolution during S phase. J Cell Biol 200:429–441
+
+Paulson JR, Laemmli UK (1977) The structure of histone-depleted meta-
+
+phase chromosomes. Cell 12:817–828
+
+Paulson JR, Langmore JP (1983) Low angle x-ray diffraction studies of
+HeLa metaphase chromosomes: effects of histone phosphorylation
+and chromosome isolation procedure. J Cell Biol 96:1132–1137
+
+Quenet D, McNally JG, Dalal Y (2012) Through thick and thin: the
+conundrum of chromatin fibre folding in vivo. EMBO Rep 13:
+943–944
+
+Robinson PJ, Rhodes D (2006) Structure of the ‘30 nm’ chromatin fibre: a
+
+key role for the linker histone. Curr Opin Struct Biol 16:336–343
+
+Robinson PJ, Fairall L, Huynh VA, Rhodes D (2006) EM measurements
+define the dimensions of the “30-nm” chromatin fiber: evidence for
+a compact, interdigitated structure. Proc Natl Acad Sci U S A 103:
+6506–6511
+
+Roe R-J (2000) Methods of X-ray and neutron scattering in polymer
+
+science. Oxford University, New York
+
+Routh A, Sandin S, Rhodes D (2008) Nucleosome repeat length and
+linker histone stoichiometry determine chromatin fiber structure.
+Proc Natl Acad Sci U S A 105:8872–8877
+
+Ryba T, Hiratani I, Lu J, Itoh M, Kulik M, Zhang J, Schulz TC,
+Robins AJ, Dalton S, Gilbert DM (2010) Evolutionarily con-
+served replication timing profiles predict
+long-range chromatin
+interactions and distinguish closely related cell types. Genome
+Res 20:761–770
+
+Schalch T, Duda S, Sargent DF, Richmond TJ (2005) X-ray structure of a
+tetranucleosome and its implications for the chromatin fibre. Nature
+436:138–141
+
+Scheffer MP, Eltsov M, Frangakis AS (2011) Evidence for short-range
+helical order in the 30-nm chromatin fibers of erythrocyte nuclei.
+Proc Natl Acad Sci U S A 108:16992–16997
+
+Scheffer MP, Eltsov M, Bednar J, Frangakis AS (2012) Nucleosomes
+stacked with aligned dyad axes are found in native compact chro-
+matin in vitro. J Struct Biol 178:207–214
+
+Schermelleh L, Solovei I, Zink D, Cremer T (2001) Two-color fluores-
+cence labeling of early and mid-to-late replicating chromatin in
+living cells. Chromosome Res 9:77–80
+
+Sedat J, Manuelidis L (1978) A direct approach to the structure of
+eukaryotic chromosomes. Cold Spring Harb Symp Quant Biol
+42(Pt 1):331–350
+
+Chromosoma (2014) 123:225–237
+
+237
+
+Sexton T, Yaffe E, Kenigsberg E, Bantignies F, Leblanc B, Hoichman M,
+Parrinello H, Tanay A, Cavalli G (2012) Three-dimensional folding
+and functional organization principles of the Drosophila genome.
+Cell 148:458–472
+
+Shen Y, Yue F, McCleary DF, Ye Z, Edsall L, Kuan S, Wagner U, Dixon J,
+Lee L, Lobanenkov VV, Ren B (2012) A map of the cis-regulatory
+sequences in the mouse genome. Nature 488:116–120
+
+Straight AF, Belmont AS, Robinett CC, Murray AW (1996) GFP tagging
+of budding yeast chromosomes reveals that protein-protein interac-
+tions can mediate sister chromatid cohesion. Curr Biol 6:1599–1608
+Strukov YG, Belmont AS (2009) Mitotic chromosome structure: repro-
+ducibility of folding and symmetry between sister chromatids.
+Biophys J 96:1617–1628
+
+Szerlong HJ, Prenni JE, Nyborg JK, Hansen JC (2010) Activator-
+dependent p300 acetylation of chromatin in vitro: enhancement of
+transcription by disruption of repressive nucleosome-nucleosome
+interactions. J Biol Chem 285:31954–31964
+
+Takata H, Hanafusa T, Mori T, Shimura M, Iida Y, Ishikawa K, Yoshikawa
+K, Yoshikawa Y, Maeshima K (2013) Chromatin compaction protects
+genomic DNA from radiation damage. PLoS ONE 8:e75622
+
+Thadani R, Uhlmann F, Heeger S (2012) Condensin, chromatin crossbarring
+
+and chromosome condensation. Curr Biol 22:R1012–R1021
+
+Tokunaga M, Imamoto N, Sakata-Sogawa K (2008) Highly inclined thin
+illumination enables clear single-molecule imaging in cells. Nat
+Methods 5:159–161
+
+Tremethick DJ (2007) Higher-order structures of chromatin: the elusive
+
+30 nm fiber. Cell 128:651–654
+
+van Holde K, Zlatanova J (2007) Chromatin fiber structure: where is the
+
+problem now? Semin Cell Dev Biol 18:651–658
+
+Vazquez J, Belmont AS, Sedat JW (2001) Multiple regimes of
+constrained chromosome motion are regulated in the interphase
+Drosophila nucleus. Curr Biol 11:1227–1239
+
+Watson JD, Crick FH (1953) Molecular structure of nucleic acids: a
+
+structure for deoxyribose nucleic acid. Nature 171:737–738
+
+Wedemeier A, Merlitz H, Wu CX, Langowski J (2009) How proteins
+squeeze through polymer networks: a Cartesian lattice study. J
+Chem Phys 131:064905–064907
+
+Widom J, Klug A (1985) Structure of the 300A chromatin filament: X-ray
+
+diffraction from oriented samples. Cell 43:207–213
+
+Woodcock CL (1994) Chromatin fibers observed in situ in frozen hydrat-
+ed sections. Native fiber diameter is not correlated with nucleosome
+repeat length. J Cell Biol 125:11–19
+
+Woodcock CL, Safer JP, Stanchfield JE (1976) Structural repeating units
+in chromatin. I. Evidence for their general occurrence. Exp Cell Res
+97:101–110
+
+Woodcock CL, Frado LL, Rattner JB (1984) The higher-order structure of
+chromatin: evidence for a helical ribbon arrangement. J Cell Biol 99:
+42–52
+
+Woodcock CL, Skoultchi AI, Fan Y (2006) Role of linker histone in
+chromatin structure and function: H1 stoichiometry and nucleosome
+repeat length. Chromosome Res 14:17–25
+
+Yoshikawa K, Yoshikawa Y (2002) Compaction and condensation of
+
+DNA
+
+Yoshimura SH, Hizume K, Murakami A, Sutani T, Takeyasu K, Yanagida
+M (2002) Condensin architecture and interaction with DNA: regu-
+latory non-SMC subunits bind to the head of SMC heterodimer.
+Curr Biol 12:508–513
+
+Zheng C, Lu X, Hansen JC, Hayes JJ (2005) Salt-dependent intra-
+and internucleosomal interactions of the H3 tail domain in a
+model oligonucleosomal array. J Biol Chem 280:33552–
+33557
+
+Zink D, Bornfleth H, Visser A, Cremer C, Cremer T (1999) Organization
+of early and late replicating DNA in human chromosome territories.
+Exp Cell Res 247:176–188
+
+

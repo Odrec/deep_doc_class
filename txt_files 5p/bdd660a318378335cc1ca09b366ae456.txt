@@ -1,0 +1,487 @@
+Introduction to Artiﬁcial Intelligence
+
+Tutorium 01 SS16
+
+Vincent Siedeberg@uos.de
+
+April 13, 2016
+
+Institute of Cognitive Science
+
+Outline
+
+1. Organizational Matters
+
+The Course
+
+The Tutorial
+
+The Strategy
+
+2. Prolog! Prolog?
+
+Download and Installation
+
+Logic Programming
+
+3. Syntax
+
+Syntax: Simple Terms
+
+Syntax: Clauses
+
+Errors and Warnings
+
+1/19
+
+Outline
+
+Organizational Matters
+
+The Course
+
+The Tutorial
+
+The Strategy
+
+Prolog! Prolog?
+
+Download and Installation
+
+Logic Programming
+
+Syntax
+
+Syntax: Simple Terms
+
+Syntax: Clauses
+
+Errors and Warnings
+
+2/19
+
+The Course
+
+• reach at least 50% of the points in each homework block
+
+• A homeworks groups consist of max 4 people and submit one
+
+solution
+
+• assignments need to be uploaded in the Stud.IP environment and are
+
+due to the following Monday, 08:00am
+
+• reach at leach 50% of the relative points in midterm and ﬁnal exam
+• ﬁnal grade: 30% each exam, 20% each homework block
+
+3/19
+
+The Tutorial
+
+• Repetition of the basic concepts presented in the lecture. (my part)
+• Discuss homework problems and solve open questions. (our part)
+• Show links between course content, general AI Problems and current
+
+applications (again, my part)
+
+• Preparation for upcoming homeworks and exams (our part as well :P)
+
+Do not hesitate to ask me questions!
+
+(Im here to support your learning progress)
+
+4/19
+
+The Strategy
+
+What can make you succeed:
+
+• participate actively in the lecture and tutorial
+• don’t let yourself be carried by other group members for homework
+
+assignments
+
+• don’t cheat on your homeworks or ...
+• comment your code, explain the steps of your program.
+• If you struggle with an exercise submit a partial solution and explain
+
+your problems
+
+5/19
+
+Outline
+
+Organizational Matters
+
+The Course
+
+The Tutorial
+
+The Strategy
+
+Prolog! Prolog?
+
+Download and Installation
+
+Logic Programming
+
+Syntax
+
+Syntax: Simple Terms
+
+Syntax: Clauses
+
+Errors and Warnings
+
+6/19
+
+Download and Installation
+
+Prolog Distribution used in this course SWI Prolog
+stick to the 32-bit version even if you use 64-bit OS!
+
+• Windows: http://www.swi-prolog.org/download/stable
+• Mac:
+
+• Install MacPorts (package manager)
+• Install’XCode’
+• Command: ’port install swi-prolog’
+
+• Linux:
+
+terminal: sudo apt-get install swi-prolog
+
+• Note that problems can occur if you work on diﬀerent operating
+
+sytems/environments
+
+7/19
+
+Integrated Development Environments
+
+• Stud.IP VIP Environment:
+
+Here you can submit your homework and test your programs
+
+• Windows: Swi-Prolog-Editor (free, best choice):
+
+http://lakk.bildung.hessen.de/netzwerk/faecher/informatik/swiprolog/indexe.html
+
+• Eclipse + Prolog-Plugin (free):
+
+http://eclipse.ime.usp.br/projetos/grad/plugin-prolog/index.html
+
+• SWISH (free): here
+
+http://swish.swi-prolog.org/
+
+8/19
+
+Questions?
+
+8/19
+
+Division of Labour
+
+Your Part:
+
+• provide Prolog with knowledge (data base)
+
+thats why prolog is declarative not procedural
+
+• ask Prolog a question (query)
+
+Prolog’s Part:
+
+• logically deduces new facts from the knowledge you provided
+• returns its deduction as answer
+
+9/19
+
+Logic Programming
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+1
+
+2
+
+We solve problems by providing:
+a database
+
+l i k e l o g i c ( c h r i s ) . %F a c t s .
+l i k e l o g i c ( anna ) .
+l i k e l o g i c ( m y s e l f ) .
+l i k e l o g i c ( p i c k a c h u ) .
+
+f u n a t c o d i n g ( m y s e l f ) .
+f u n a t c o d i n g ( p i c k a c h u ) .
+
+r e a s o n s ( b e c a u s e v a d e r )
+
+and inference rules
+
+l o v e p r o l o g (X) :− r e a s o n s (X) .
+l o v e p r o l o g (X) :− l i k e l o g i c (X) , f u n a t c o d i n g (X) .
+
+10/19
+
+Outline
+
+Organizational Matters
+
+The Course
+
+The Tutorial
+
+The Strategy
+
+Prolog! Prolog?
+
+Download and Installation
+
+Logic Programming
+
+Syntax
+
+Syntax: Simple Terms
+
+Syntax: Clauses
+
+Errors and Warnings
+
+11/19
+
+Syntax: Terms
+
+Terms
+
+Simple Terms
+
+Complex Terms
+
+Constants
+
+Variables
+
+Atoms
+
+Numbers
+
+12/19
+
+Syntax: Terms
+
+Simple Terms:
+• Variables
+
+• X
+• Variable
+• myVar
+• Constants
+
+• Atoms: john, ’Uni Osna’
+• Numbers: Integers and Floats
+
+13/19
+
+Syntax: Complex Terms
+
+complex terms consists of functor and arguments (just like in math)
+
+• functor needs to be an atom
+• arguments are separated by coma
+• the number of arguments of a functor is called arity
+• diﬀerenciate predicates by name and arity
+• complex terms can be nested inside of complex terms
+
+14/19
+
+Syntax: Clauses
+
+% f a c t = a r u l e w i t h a empty body
+
+% ’ : − ’ backward i m p l i c a t i o n
+
+f a c t .
+head (X , Y) :−
+s u b g o a l 1 (X) , % ’ , ’ = c o n j u n c t i o n
+s u b g o a l 2 (Y) ; % ’ ; ’ = d i s j u n c t i o n
+s u b g o a l 3 ( Z ) . % ’ . ’ = c l a u s e end
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+Translation into Classic Logic:
+
+subgoal1(X ) ∧ subgoal2(Y ) ∨ subgoal3(Z ) → head(X , Y )
+
+• via Modus Ponens the head of the clause is derivable, if the
+subgoals are in the knowledge base and variables instantiable
+
+• Remark: using ’;’ is not recommended
+• Smart Solution for ’or’: create another rule!
+• Remember: all clauses are universally quantiﬁed!
+
+15/19
+
+Syntax: Example
+
+Database ﬁle:
+
+l o g i c ( tom ) .
+
+%F a c t Base
+l i k e s
+f u n a t c o d i n g ( max ) .
+f u n a t c o d i n g ( tom ) .
+
+%R u l e Base
+l o v e p r o l o g (X) :− l i k e l o g i c (X) , f u n a t c o d i n g (X) .
+
+Command line:
+
+%Q u e r i e s :
+?− l o v e p r o l o g ( max ) . %y i e l d s
+?− l o v e p r o l o g ( tom ) . %y i e l d s
+?− l o v e p r o l o g (X) .
+%y i e l d s
+
+f a l s e
+t r u e
+t r u e , X=tom
+
+1
+
+2
+
+3
+
+4
+
+5
+
+1
+
+2
+
+3
+
+1
+
+2
+
+3
+
+4
+
+5
+
+16/19
+
+Errors and Warnings
+
+• Singleton variable: [X]
+
+Variable name used only once inside fact or rule. Check for spelling
+of variable, prex or replace variable with to suppress warning.
+
+• Clauses of X are not together in source-le:
+
+Some rules and facts for predicate X are seperated by clauses of
+other predicates. Write down clauses for the same predicate
+together.
+
+• No permission to modify static procedure:
+
+One predicates name was the same as for some built-in argument.
+Simply rename it.
+
+17/19
+
+Errors and Warnings
+
+• The predicate X/n is undened:
+
+One of the predicates called by your query or in a rule does not exist
+in your program. Check its spelling and arity!
+
+• Syntax error: Operator expected:
+
+Some comma is missing, there is a space after a predicate name, you
+mixed up dots and commas, there are too many or too few
+brackets...
+
+Hints:
+
+• check the scope of ; (and its surrounding parentheses)
+• check for lower-case variables or upper-case constants
+• check for missing dots
+
+Remember to debug your code before submitting, it shouldnt generate
+errors or warnings.
+
+18/19
+
+Current Homework
+
+•1 q u e r y (
+
+’Who a r e t h e p a r e n t s o f Luke and Lea ? ’ ,
+
+2
+3 ( t h e a c t u a l q u e r y c l a u s e ( i n p a r a t h e s i s ) ) ,
+4 ( F = v a d e r , Y = l u k e ; % S o l u t i o n s e p a r a t e d by ” ; ”
+5 F = v a d e r , Y = l e a ;
+6 F = papme , X = l u k e ;
+7 F = papme , X = l e a ) ;
+8 F = papme , X = l e a ) ) . % T h i s
+
+s o l u t i o n i s
+
+r e d u n d a n t .
+
+9
+
+• Try to reduce redundancies
+• Look up www.learnprolognow.org if you need additional exercises
+
+19/19
+
+WHAT DO YOU GET WHEN YOU PUT
+
+ROOT BEER IN A SQUARE GLASS?
+
+19/19
+
+BEER.
+
+19/19
+
+

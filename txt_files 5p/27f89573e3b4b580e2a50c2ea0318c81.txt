@@ -1,0 +1,483 @@
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Viele Problemstellungen weisen Ähnlichkeiten bzgl. Strukturen und 
+Vorgehensweise bei der Lösungssuche auf. In der Theorie wurden deshalb 
+Klassen oder Typen der (wissensbasierten) Problemlösung gebildet, für 
+die spezielle (wieder verwendbare) Problemlösungs-Methoden entwickelt 
+und in spezialisierten Werkzeugen implementiert wurden, sog. 
+Applikations-Shells. Diese Methoden gehen weit über die Basis-Inferenz-
+Strategien (Vorwärts-/Rückwärts-Verkettung, ...) hinaus.
+In diesem Block wird detailliert auf den in der Praxis am meisten 
+eingesetzten Problemlösungstyp der Klassifikation oder Diagnose
+eingegangen. 
+Nach einer Beschreibung der Eigenschaften, die ein Problem als 
+Klassifikations-Problem charakterisieren und Beispielen, wird auf die 
+speziellen Problemlösungs-Methoden und Unterfälle des Problemlösungs-
+Typs Klassifikation eingegangen.
+
+Seite 1
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Nach Puppe* bezeichnet KLASSIFIKATION (DIAGNOSE) den 
+Lösungsprozess für Probleme mit folgenden Eigenschaften:
+
+• Der Problembereich besteht aus zwei endlichen, disjunkten Mengen 
+von Problem-Merkmalen (M) und Problem-Lösungen (L) sowie aus 
+typischerweise unsicherem Wissen über die Beziehungen zwischen 
+Problemmerkmalen und Problemlösungen.
+• Ein Problem ist durch eine evtl. unvollständig gegebene Teilmenge 
+von Problemmerkmalen charakterisiert.
+• Das Ergebnis der Klassifikation ist die Auswahl einer oder mehrerer 
+der Problemlösungen.
+• Wenn die Qualität der Problemlösung durch Erfassung zusätzlicher 
+Problemmerkmale verbessert werden kann, so ist es eine Teilaufgabe 
+der Klassifikation, zu bestimmen, ob und welche zusätzlichen 
+Problemmerkmale angefordert werden sollen.
+
+* Puppe, F.: Problemlösungsmethoden in Expertensystemen.
+
+Springer Verlag, 1990, S. 42 ff.
+
+Seite 2
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Im Folgenden werden ausgehend von den Symptomen und Diagnosen
+verschiedener Anwendungsbereiche Anforderungen an spezielle 
+Problemlösungs-Methoden abgeleitet, um schließlich daraus Klassen von 
+Klassifikations-Problemen zu beschreiben.
+Detaillierte Beschreibungen von Beispielsystemen (s.o.) resp. eine 
+umfassendere Übersicht über Anwendungsbeispiele sind zu finden bei:
+Mertens, P./Borkowski, V./Geis, W.: Betriebliche Expertensystem-
+Anwendungen - eine Materialsammlung. 2. Aufl., Springer Verlag, 1990. 
+
+Seite 3
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+In der Literatur finden sich verschiedenste Ansätze zur Typisierung von 
+Klassifikations-Problemen. Stefik/Hayes-Roth unterscheiden bspw. 
+Interpretation, Überwachung, Diagnose und Debugging. Puppe 
+differenziert detaillierter aus Anwendersicht:
+
+• Bei der statischen/dynamischen Fehlersuche wird die Ursache 
+zeit-in/varianter Fehler eines (meist technischen) Systems ermittelt, 
+mit dem Ziel Vorschläge zur Fehlerbehebung abzuleiten.
+• Bei der Bewertung geht es meist um Aussagen über Objekte oder 
+Prozesse bezüglich mehrerer, gewichteter binärer Kriterien, z.B. 
+Kreditvergabe ja/nein, Qualitätskontrolle gut/schlecht oder 
+Fertigungsprozess Alarm/kein Alarm. Bei multipler Bewertung sind 
+die Skalen der Kriterien mehrstufig, z.B. Kreditwürdigkeit ohne 
+Einschränkung/bis zu 10 TEUR/nur mit Bürgschaft/nie und nimmer.
+• Die Präzedenzauswahl liegt im Grenzbereich zur Konfiguration, da 
+hierbei "am besten geeignete" Lösungen für vorgegebene 
+Anforderungen oder Wünsche gesucht werden, die ohne Modifikation 
+(Abstriche) nicht erfüllt werden können. Beispiele: Anlageberatung, 
+Katalogauswahl
+• Die Objekt-Identifikation zielt darauf, (physikalische) Objekte 
+aufgrund beobachteter Merkmale einer Objektklasse zuzuordnen. Sie 
+geht einen Schritt weiter bzw. ist abstrakter als die (multiple) 
+Bewertung. Beispiel: "DV-Anwender ist Anfänger oder Experte", 
+"Manager ist Patriarch, Kommunikator, ..." oder "Objekt auf Photo ist 
+
+Seite 4
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Mensch, Tier oder Auto".
+
+Seite ‹Nr.›
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Für die Auswahl bzw. Entwicklung spezieller, besonders geeigneter 
+Problemlösungs-Methoden für Klassifikations-Probleme muss von 
+typischen Eigenschaften dieser Probleme ausgegangen werden:
+• zumeist kann von Merkmalen nicht eindeutig auf Lösungen 
+geschlossen werden
+• die beobachteten/vorgebrachten Merkmale sind unsicher, veränderlich 
+(da subjektive Wünsche) oder falsch; in allen Fällen sind sie zumeist 
+nicht "objektiv" überprüfbar; als Folge sind auch die abgeleiteten 
+Lösungen unsicher.
+• die Merkmale sind zwar sicher, ändern sich jedoch über die Zeit, z.B. 
+Messwerte von Fertigungs-Prozessen. Häufig stellt die Art der 
+Veränderung im Zeitverlauf auch selbst wichtiges Wissen für die 
+Problemlösung dar, z.B. (wellenartig) ansteigender Druck
+• zu Beginn der Lösungssuche fehlen Merkmale: nach einer 
+Kosten/Nutzen-Abschätzung müssen im Dialog weitere, evtl. 
+bedeutsame Merkmale nachgefragt werden, möglichst so frühzeitig im 
+Problemlösungs-Prozess, dass möglichst wenige der bis dahin 
+gezogenen Schlussfolgerungen rückgängig gemacht werden müssen.
+
+Seite 5
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+• Typischerweise besteht keine direkte Beziehung zwischen Merkmalen 
+und Lösungen. Vielmehr existieren eine oder mehrere (auch begrifflich 
+fundierte) "Zwischenlösungen". Die Extraktion dieser 
+Problemlösungsstufen ist von großer Bedeutung für die Qualität und 
+Wartbarkeit des Expertensystems. Man nennt diese schrittweise 
+Aufspaltung diagnostischer Mittelbau.
+Beispiel: zuerst wird ermittelt, welchen Typ von Pumpe ein Kunde 
+aufgrund seines Fördergutes benötigt (Lösungsklasse: 
+Kreiselpumpen), dann erst wird die Dimensionierung aufgrund der 
+Förderhöhe ermittelt, zuletzt wird über die Antriebsleistung 
+entschieden.
+• Bei hoher Ähnlichkeit von Merkmalsgruppen bietet sich eine 
+Parametrisierung oder Instanziierung an, z.B. bei der Fehlerdiagnose 
+von Motoren mit mehreren Zylindern, die einzeln zu überprüfen sind.
+• Insbesondere bei Fehlersuche und Bewertung können mehrere 
+Lösungen zusammen verantwortlich sein oder zutreffen (UND), nicht 
+zu verwechseln mit mehreren (unterschiedlich wahrscheinlichen) 
+konkurrierenden Lösungen (ODER).
+• Bei Mehrfachlösungen (zusammengesetzt oder konkurrierend) 
+müssen die daraus ableitbaren Lösungsvorschläge (Therapien) 
+aufeinander abgestimmt werden.
+
+Seite 6
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Als Basis-Strategien kommen im einfachsten Fall Vorwärts- und 
+Rückwärts-Verkettung in Betracht:
+
+• Bei der Vorwärts-Verkettung werden einfach alle möglichen Lösungen 
+aufgrund der vorgegebenen Merkmale gesucht. Dies kann und sollte 
+durch Abstraktionen (Zwischenlösungen) schrittweise erfolgen; 
+Voraussetzung für einen Erfolg ist jedoch, dass alle relevanten 
+Merkmale zu Beginn vollständig bekannt sind.
+• Die Rückwärts-Verkettung kann helfen, evtl. relevante zusätzliche 
+Merkmale abzufragen. Hierzu ist es notwendig, (einige in Frage 
+kommende) Ziele vorzugeben, sogenannte Verdachts-Hypothesen. 
+Andernfalls müssten alle möglichen Lösungen (Diagnosen) "blind" und 
+ineffizient abgesucht werden, z.B. in der Reihenfolge ihrer Eintritts-
+Wahrscheinlichkeit (apriori-Wahrscheinlichkeit). 
+• Effizient erweist sich eine Kombination beider Suchstrategien, bei der 
+im Zuge von Vorwärts-Verkettung gefundene, aber aufgrund noch 
+fehlender Prämissen-Argumente nicht anwendbare Regeln eine 
+temporäre Rückwärts-Verkettung initiieren; andererseits könnten im 
+Zuge der Rückwärts-Verkettung erschlossene Fakten eine lokale 
+Vorwärts-Verkettung auslösen, um Mehrfachlösungen zu finden. 
+
+Seite 7
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Verfeinerungen und Festlegungen bezüglich der Kombination von 
+Vorwärts- und Rückwärts-Verkettung führten zu folgenden, weiteren Basis-
+Problemlösungs-Methoden:
+
+• Bei der Establish-Refine-Strategie wird die Lösungsmenge 
+hierarchisch strukturiert. Auf jeder Ebene wird die "beste" Alternative 
+ausgewählt (etabliert); dies kann durch direkte Fragen auf Basis von 
+Entscheidungsbäumen oder durch Rückwärts-Verkettung geschehen. 
+Für die etablierte Alternative wird dann wieder die beste Alternative 
+aller Nachfolger in der Hierarchie ausgewählt, usw..
+Voraussetzungen sind also, dass die Lösungen sich hierarchisch 
+anordnen lassen, und dass je Stufe eine (beste) Alternative bestimmt 
+werden kann.
+• Die Hypothesize-and-Test-Strategie vermeidet diese 
+Voraussetzungen. Hierbei werden zunächst durch Vorwärts-
+Verkettung in Frage kommende Lösungen bestimmt (verdächtigt), die 
+dann sukzessive durch Rückwärts-Verkettung zu bestätigen versucht 
+werden.
+Dies ist die am häufigsten verwendete Strategie bei Klassifikations-
+Problemen.
+
+Seite 8
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+In einer weiteren Stufe der Spezialisierung von XPS-Werkzeugen werden die 
+Basis-Problemlösungs-Methoden mit Gruppen von Problem-Eigenschaften 
+(Wissensarten) kombiniert. Die Abbildung stellt die resultiernden Klassi-
+fikationsarten mit den Anforderungen an die Wissensarten (Problem-Eigen-
+schaften) dar:
+
+• Bei sicheren Merkmalen kann das Problemlösungs-Wissen als Ent-
+scheidungs-Bäume oder (änderungsfreundlichere) Entscheidungs-Tabellen 
+repräsentiert werden. Aufgrund der hierarchischen Struktur kann bei 
+Entscheidungsbäumen die Establish-Refine-Strategie eingesetzt werden, 
+bei Entscheidungstabellen genügen Vor-/Rückwärts-Verkettung.
+• Unsicherheit wird zumeist durch Regel-Wahrscheinlichkeiten repräsentiert. 
+Hinzukommen müssen dann ein (statistisches) Verrechnungs-Schema der 
+Wahrscheinlichkeiten sowie die Hypothesize-and-Test-Strategie, bei der die 
+jeweils wahrscheinlichste Alternative weiter verfolgt wird. Trotz ihrer 
+methodischen Mängel ist diese heuristische Klassifikation die mit Abstand 
+erfolgreichste Klassifikations-Methode (einfach!).
+• Modellbasierte (kausale) Klassifikation geht umgekehrt vor: nicht von 
+Merkmalen zu Lösungen, sondern von Lösungen zu (verursachenden) 
+Merkmalen. Die Frage lautet: "Welche Lösung erklärt (überdeckt) die 
+Merkmale am besten?" Für (technische) Fehlerdiagnosen eignen sich 
+besonders Funktionsmodelle, in denen die am besten übereinstimmende 
+Fehlersimulation gesucht wird. 
+• Die statistische Klassifikation basiert auf Korrelationen zwischen Merk-
+malen und Lösungen aufgrund einer Falldatenbank. Die fallvergleichende 
+Klassifikation sucht dagegen direkt ähnlichste Fälle in der Falldatenbank 
+(s. auch Block Fallbasiertes Schließen)
+
+Seite 9
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Die Tabelle zeigt, welche Basis-Problemlösungs-Strategie für welchen 
+Klassifikationstyp (Wissensart) geeignet ist. In Klammern genannte 
+Kombinationen sind nur bedingt einsetzbar.
+Establish-Refine kommt nur in Betracht, wenn die Lösungs-Menge 
+hierarchisch strukturierbar ist, was bei Entscheidungsbäumen (sichere 
+Klassifikation) qua definitione gegeben ist.
+Im übrigen beweist sich die "überlegene", universelle Verwendbarkeit der 
+Hypothesize-and-Test-Strategie.
+
+Seite 10
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Die Tabelle belegt, dass alle Wissensarten (Repräsentationen) praktisch 
+für alle Problemtypen geeignet sind. Lediglich die Klassifikation auf Basis 
+von Funktionsmodellen ist auf die Fehlersuche beschränkt.
+
+Seite 11
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Bei Entscheidungsbäumen repräsentieren die Knoten "Fragen" und die 
+Kanten "Antwort-Alternativen". Als Folge-Aktion einer Antwort können 
+weitere Fragen, ganze andere Entscheidungsbäume (mit einer 
+Einstiegsfrage) oder Lösungen (Diagnosen) ausgelöst werden (dies ist der 
+"Inhalt" der Regeln).
+Sie sind einfach zu implementieren (und keine Besonderheit von 
+Expertensystemen), erfordern keine/kaum besondere KI-Techniken 
+(Problemlösungs-Komponente). Im Prinzip handelt es sich um nichts 
+anderes als tief verschachtelte IF-THEN-ELSE-Konstrukte.
+Zwar kann das Problem in kleine Teilbäume zerlegt werden, schwierig ist 
+die Pflege dennoch, da Änderungen eines Knotens alle nachfolgenden 
+Knoten betreffen (können).
+
+Seite 12
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Nicht viel anders ist es bei Entscheidungs-Tabellen, lediglich die 
+Darstellung ist anders: die Regeldarstellung tritt auf Kosten der 
+sequentiellen Dialogsteuerung in den Vordergrund.
+Legende:
+• x = ja
+• - = nein
+• leer = nicht relevant
+
+Die Regel-Prämissen sind (typischerweise) mit UND verknüpft.
+Die Änderungsfreundlichkeit ist höher, dafür muss die Problemlösungs-
+Komponente mehr leisten, nämlich die Regel-(Frage-)Sequenz (den 
+Baum) zur Laufzeit (dynamisch) generieren.
+Entscheidungs-Bäume und -Tabellen werden auch bei vielen 
+konventionellen Systemen eingesetzt.
+
+Seite 13
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Bei der heuristischen Klassifikation werden die Zuordnungsregeln 
+zwischen Merkmalen und Lösungen um Wahrscheinlichkeiten (auch: 
+Evidenzen, Sicherheitsfaktoren, certainty factors, Punktzahlen) erweitert. 
+Dabei werden zwei Bewertungstypen unterschieden:
+
+• der positive Vorhersagewert (Pro) gibt an, wie stark ein vorhandenes 
+Merkmal auf eine Lösung hindeutet,
+• der negative Vorhersagewert (Kontra) gibt an, wie stark das Fehlen 
+eines Merkmals gegen eine Lösung spricht.
+
+Beinhaltet die Prämisse einer (Zuordnungs-)Regel mehrere Merkmale oder 
+führt der Weg von Merkmalen zu Lösungen über mehrere 
+Zwischenlösungen, müssen die Wahrscheinlichkeiten verrechnet werden. 
+Die gebräuchlichsten Verrechnungs-Schemata sind:
+
+• Summieren von Punkten mit Schwellwert-Vergleich, z.B. im XPS-
+System INTERNIST, und
+• Verrechnen von Prozentzahlen, z.B. im XPS-System MYCIN.
+
+Dieses Verrechnen, d.h. Berücksichtigen von Unsicherheit im 
+Schlussfolgerungs-Prozess, wird unter dem Begriff Probabilistisches 
+Schließen (später) behandelt.
+
+Seite 14
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Die Regel-Wahrscheinlichkeit, d.h. mit welcher Sicherheit von bestimmten 
+Merkmalen auf bestimmte Lösungen geschlossen werden kann, muss vom 
+Experten geschätzt werden. Dies ist schwierig und ungenau, wenn viele 
+Faktoren (gleichzeitig) berücksichtigt werden müssen, die sich zudem 
+gegenseitig beeinflussen (können).
+Deshalb ist es notwendig, den Schlussfolgerungs-Prozess (der Zuord-
+nung) in Schritte zu zerlegen. Diese Zerlegung wird als diagnostischer 
+Mittelbau bezeichnet. In den Zwischenstufen werden dann 
+
+• Merkmale zu abstrakteren Merkmals-Begriffen (aggregierte Konstrukte 
+im Sinne des Konstruktgitter-Verfahrens) und 
+• Lösungen zu abstrakteren Lösungsklassen (aggregierte Konzepte im 
+Sinne des Konstruktgitter*-Verfahrens) 
+
+zusammengefasst. Diese abstrakten Begriffe lassen sich häufig in der 
+Fachsprache des Experten wiederfinden. 
+
+* siehe Foliensatz 05b-Wissensakquisition
+
+Seite 15
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Merkmals-Aggregate sind häufig von definitorischem Charakter und sicher 
+herleitbar, z.B. arithmetische Berechnungen (Fahrleistung pro Jahr) oder 
+Skalenumsetzungen (Tachykardie = Puls > 90/Min.).
+Das Schließen von Lösungsklassen zu (konkreten) Lösungen bleibt 
+unsicher und mit Wahrscheinlichkeiten behaftet. Beispiele für 
+Lösungsklassen sind "Infektion" ohne Aussage, welche genau, oder Fehler 
+in der Einspritzanalge ohne Aussage, wo genau.
+
+Seite 16
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Bei der Abstraktion auf Seite der Lösungen entstehen Lösungs-
+Hierarchien. Dabei gibt es häufig keine eindeutige Hierarchie sondern 
+Alternativen, je nachdem, an welchem Kriterium sich die Zusammen-
+fassung/Zerlegung orientiert. Beispiele für Abstraktions-Kriterien sind
+
+• örtlich (Leber, Elektrik, Montage, ...)
+• kausal (Infektion, ...)
+• funktional (Stoffwechsel, ...)
+
+Formal können die Hierarchien unterschieden werden in
+
+• streng, wenn jeder Nachfolger höchstens einen Vorgänger hat,
+• multipel, wenn ein Nachfolger mehrere Vorgänger haben kann, aber 
+keine Schleifen existieren, und
+• netzwerkartig, wenn zusätzlich Schleifen vorkommen können.
+
+Die Hierarchie-Form hat unmittelbar Auswirkungen auf den zu 
+bewältigenden Komplexitäts-Grad der (benötigten) Schlussfolgerungs-
+Komponente. Hinzu kommt die Frage, ob von Anfang an alle Merkmale 
+bekannt und vorgegeben sind, oder ob während des Schlussfolgerungs-
+Prozesses Nachfragen nötig sind bzw. erlaubt sein sollen.
+Je nach Lage dieser Dinge können dann bspw. zum Einsatz kommen:
+• Vorwärts-Verkettung (alle Merkmale bekannt, keine Nachfragen)
+• Rückwärts-Verkettung (Nachfragen)
+
+Seite 17
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+• Establish-Refine (strenge Hierarchie)
+• Hypothesize-and-Test (Heterarchien).
+
+Seite ‹Nr.›
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Die Vorgehensweise bei der Wissens-Akquisition für Klassifikations-
+Probleme kann grundsätzlich in zwei Richtungen erfolgen:
+
+• Lösungs-orientiert (top-down)
+Gut geeignet, um schnell Prototypen zu entwickeln, schlecht in Bezug 
+auf Weiterentwicklung und Wartung, da zusätzliche Lösungen die 
+Merkmalsstruktur stark tangieren.
+• Merkmals-orientiert (bottom-up)
+Aufwendiger und länger bis zum ersten Prototyp, dafür Änderungs-
+freundlicher, da geringere Auswirkungen auf die Merkmalsstruktur 
+beim Hinzufügen neuer Lösungen.
+
+Seite 18
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Zusammenfassend können die möglichen Stadien während der Lösung 
+eines heuristischen Klassifikations-Problems wie in der Abbildung 
+dargestellt unterschieden werden.
+"Erwartet" bezieht sich immer auf eine konkrete, gerade überprüfte 
+Lösung. Die Merkmale können unbekannt, beobachtet (bekannt), nicht 
+beobachtet (unbekannt) oder noch nicht überprüft sein. Ferner können sie 
+für oder gegen die Lösung sprechen (Pro/Kontra-Wahrscheinlichkeit), 
+neutral (irrelevant) sein, oder zusätzliche Untersuchungen induzieren.
+
+Seite 19
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Im Gegensatz zur klassischen Logik, die nur "wahre" oder "falsche" 
+Aussagen kennt, erfordern Expertensysteme zumeist "Zwischenwerte". 
+Beim probabilistischen Schließen wird hierzu jede Aussage mit einer 
+Wahrscheinlichkeit versehen, die den Grad der Unsicherheit ausdrücken 
+soll.
+Grundsätzlich können Unsicherheiten bei Klassifikations-/Diagnose-
+Problemen aus drei Quellen stammen:
+
+• Bei der Symptom-Erhebung, d.h. der Frage, welche Merkmale wie 
+sicher vorliegen oder beobachtet werden, kann der Benutzer 
+Evidenzen (Wahrscheinlichkeiten) angeben.
+• Vom Experten geschätzte Übergangs-Wahrscheinlichkeiten geben an, 
+wie sicher von Symptomen auf Diagnosen geschlossen werden kann. 
+Alternativ können diese Wahrscheinlichkeiten auch durch statistische 
+Auswertung (von Fällen) gewonnen werden.
+• Schließlich können durch die (zumeist) einfachen, statistischen 
+Maßstäben nicht Stand haltenden Verrechnungs-Schemata der 
+Wahrscheinlichkeiten Fehler auftreten. In der Regel sind die 
+notwendigen Voraussetzungen, insbesondere Unabhängigkeit der 
+Einzelwahrscheinlichkeiten von mit UND verknüpften Symptomen, 
+nicht erfüllt bzw. erfüllbar.
+
+Seite 20
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+In der Theorie wird eine Vielzahl von Verrechnungs-Schemata diskutiert. 
+Allen ist gemeinsam, dass sie starke, zumeist in der Praxis nicht erfüllbare 
+Anforderungen, stellen. 
+
+• Das Theorem von Bayes versucht, relative Wahrscheinlichkeiten für 
+eine Diagnose aus ihrer apriori-Wahrscheinlichkeit (P(D)) sowie den 
+bedingten Wahrscheinlichkeiten (P(S/D)), d.h. wie häufig unter der 
+Annahme der Diagnose D das Symptom S auftritt, zu ermitteln.
+
+Es setzt u.a. voraus, dass die Symptome nur von der Diagnose 
+abhängen und untereinander unabhängig sind, dass sich die 
+Diagnosen gegenseitig ausschließen, die Diagnosemenge vollständig 
+ist und die Wahrscheinlichkeiten konstant sind.
+• In anderen Ansätzen werden diese Annahmen zum Teil durch 
+Zusatzkonstruktionen aufgehoben, die jedoch häufig zu Lasten der 
+praktischen Erhebbarkeit und des Rechenaufwands gehen.
+
+Untersuchungen, z.B. am Expertensystem MYCIN, haben jedoch gezeigt, 
+dass geringe Variationen (<30%) an den Evidenzen das Ergebnis (die 
+Diagnose) nicht beeinflussen. Wichtiger scheint eine möglichst genaue 
+(tiefe) Repräsentation des Wissens zu sein. 
+Dementsprechend wird zunehmend mit modell-basierten Ansätzen der 
+Wissens-Repräsentation und anderen Schlussfolgerungsformen, z.B. 
+mittels Ausnahme-Regeln, experimentiert.
+
+Seite 21
+
+© FB9-IMU-MSWI / Rieger, MSS3-04: Klassifikation/Diagnose
+
+Eine für Klassifikations-Probleme gebräuchliche Kombination bzw. 
+Einschränkung sieht wiefolgt aus:
+
+• Der Benutzer bewertet beobachtete Merkmale bei der Eingabe auf 
+einer Skala von +1 bis -1 oder von 0% bis 100%
+• Der Experte benennt Regelwahrscheinlichkeiten (auf die gleiche 
+Weise)
+• Enthält die Prämisse von Regeln mehrere Merkmale, wird eine 
+Gesamt-Wahrscheinlichkeit der Prämisse je nach Art der Verknüpfung 
+ermittelt, z.B. durch Multiplikation der Einzel-Wahrscheinlichkeiten bei 
+UND-Verknüpfung. Im MYCIN-Modell wird alternativ das Minimum 
+aller Einzel-Wahrscheinlichkeiten verwendet.
+• Analog kann bei der Verrechnung zwischen Regeln vorgegangen 
+werden. Alternativ wird ein Schwellenwert verwendet, bei dessen 
+Überschreiten die Schlussfolgerung (zugleich Prämisse einer 
+Folgeregel) als erfüllt angesehen wird. 
+
+Seite 22
+
+

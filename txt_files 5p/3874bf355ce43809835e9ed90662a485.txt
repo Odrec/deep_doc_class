@@ -1,0 +1,919 @@
+ 
+
+   Abteilung Mikrobiologie Fachbereich Biologie/Chemie   Protokoll zum Mastermodul Mikrobiologie I „Mikrobielle Pathogenität“ Sommersemester 2016 Versuch 4 – Analyse der intrazellulären Replikation der Pathogene  Gruppe B: Nathalie Sander 953133 Protokolle zu den Versuchen: V1, V2, V4 Felix Scharte 951397 Protokolle zu den Versuchen: V1, V3, V5   Betreuung: Michael Hensel, Jörg Deiwick, Alexander Kehl, Janina Noster, Viktoria Liss, Carina Kommnick, Tatjana Reuter   Abgabe des Protokolls, Datum:_______________________________________ Rückgabe zur Korrektur, Datum:______________________________________ Abgabe korr. Fassung, Datum:________________________________________ Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+Inhalt 
+1. Einleitung ........................................................................................................................................... 3 
+
+2. Material und Methoden .................................................................................................................... 5 
+
+2.1 Verwendete Stämme .................................................................................................................... 5 
+
+2.2 Verwendete Zelllinie ..................................................................................................................... 5 
+
+2.3 Zellkultivierung ............................................................................................................................. 5 
+
+2.3.1 Aussaat RAW264.7 ................................................................................................................ 5 
+
+2.4 Replikationsversuch...................................................................................................................... 6 
+
+3. Ergebnisse .......................................................................................................................................... 8 
+
+4. Diskussion ........................................................................................................................................ 10 
+
+5. Literaturverzeichnis ......................................................................................................................... 13 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+1. Einleitung 
+ 
+
+Das  Enterobakterium  Salmonella  enterica  serovar  Typhimurium  kann  über  kontaminiertes  Wasser 
+
+oder kontaminierte Nahrungsmittel in den menschlichen Körper gelangen und durch Invasion in die 
+
+polarisierten Darmepithelzellen eine selbstlimitierende Brechdurchfallsymptomatik hervorrufen. Das 
+
+Pathogen  zeichnet  sich  aus  durch  die  Fähigkeiten  in  polarisierte  M(Microfold)-Zellen  des  Wirts 
+
+invadieren  zu  können  und  sich  in  diesen  replizieren  zu  können  (Haraga,  Ohlson  et  al.  2008).    Die 
+
+Pathogenese von Salmonella Typhimurium wird durch Virulenzgene reguliert, die eng gruppiert auf 
+
+sogenannten Pathogenitätsinseln liegen. Im speziellen Fall von Salmonella Typhimurium werden diese 
+
+Salmonella Pathogenicity Islands (SPI) genannt. So wird für die Adhäsion an polarisierte Zellen zunächst 
+
+das von der SPI4 codierte Typ-1-Sekretionssystem (T1SS) benötigt und für die darauffolgende Invasion 
+
+das  T3SS und  seine Effektorproteine, die von  der SPI1 codiert sind  (Abb. 1)  (Gerlach, Claudio  et al. 
+
+2008).  Durch  Translokation  der  Effektorproteine  der  SPI1  kommt  es  zur  Ausbildung  von 
+
+Membranruffles  und  letztendlich  zur Aufnahme des Pathogens  (Barlag  and Hensel 2015).  Nach  der 
+
+Aufnahme erreichen die Salmonellen das lymphatische Gewebe und können dort über Phagozytose – 
+
+eine  durch  die  Immunzellen  gesteuerte  Aufnahme  ohne  Beteiligung  des  Pathogens  –  von 
+
+Makrophagen, dendritischen oder anderen Zellen des Immunsystems aufgenommen werden (Holzer 
+
+and  Hensel  2012).  In  den  Wirtszellen  verbleibt  die  Salmonelle  in  dem  membrangebundenen 
+
+Kompartiment,  der  Salmonella  containing  vacuole  (SCV)  (Abb.  1).  S. enterica  kann  sich  in  diesem 
+
+Kompartiment erfolgreich replizieren (Popp, Noster et al. 2015). Um die Entstehung der SCV und die 
+
+erfolgreiche Replikation gewährleisten zu können wird ein weiteres T3SS benötigt (Figueira and Holden 
+
+2012). Durch die Ansäuerung und den entstehenden Phosphatmangel im Phagosomen wird die SPI2 
+
+induziert (Deiwick, Nikolaus et al. 1999) und die Gene des T3SS und seiner Effektorproteine exprimiert.  
+
+Abbildung  1:  Darstellung  der  Invasion  und  intrazellulären 
+Lebensweise von Salmonella enterica. Nach erster vermittelter 
+Adhäsion  durch  das  T1SS  der  SPI4,  kommt  es  durch 
+Translokation  von  Effektorproteinen  über  das  SPI2-codierte 
+T3SS zu Aktinumlagerungen in der Wirtzelle und der Ausbildung 
+von  Membranruffles  und 
+letztendlich  zur  Aufnahme  des 
+Pathogens. Ein zweites T3SS, codiert auf der SPI2 sorgt für die 
+Translokation weiterer Effektorproteine über die Membran der 
+Salmonella  containing  vacuole  (SCV),  die  zu  Umlagerungen  in 
+der  Wirtszelle  führen  und  es  kommt  zur  Ausbildung  tubulärer 
+Strukturen, den Salmonella inducing filaments (SIFs). (Liss and 
+Hensel 2015) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+Durch  Translokation  dieser  Effektorproteine,  vor  allem  durch  SifA,  kommt  es  zur  Ausbildung 
+
+dynamischer  tubulärer  Strukturen,  die  als  Salmonella  inducing  filaments  (SIFs)  bezeichnet  werden 
+
+(Abb. 1). SifA ist zudem für die Aufrechterhaltung der SCV verantwortlich (Popp, Noster et al. 2015). 
+
+Die  SIFs  sind  vermutlich  verantwortlich  für  eine  Nährstoffversorgung  in  der  Vakuole  und  eine 
+
+erfolgreiche Replikation (Liss and Hensel 2015). 
+
+Durch  Einbringung  von  Genunterbrechungen  und  Deletionen  von  Genen  kann  die  Genfunktion 
+
+beziehungsweise  die  Proteinfunktion  unter  bestimmten  Bedingungen  und  zu  verschiedenen 
+
+Zeitpunkten der Pathogenese bestimmt werden. In diesem Versuch standen die Gene artJ, purD und 
+
+proC im Vordergrund. Das Gen artJ codiert dabei für ein periplasmatisches Argininbindeprotein des 
+
+Arginin-ABC-Transporters ArtPIQMJ (Wissenbach, Six et al. 1995). Arginin als Aminosäure ist wichtig 
+
+für den Aufbau von Proteinen und spielt eine Rolle bei der Proteinbiosynthese. Das von purD codierte 
+
+Protein  hat  seine  Funktion  in  der  DNA-Synthese.  Eine  Deletion  führt  dabei  zu  Defiziten  in  der 
+
+Phosphoribosylamin-Glycin-Ligase,  die  für  die  Neusynthese  von  Purinnukleotiden  benötigt  wird 
+
+(Holzer and Hensel 2012). Das Gen proC codiert für eine Pyrrolin-5-Carboxylat-Reduktase, die wichtig 
+
+für die Prolinbioynthese ist (Popp, Noster et al. 2015) .  
+
+Ziel  des  Versuches  war  es  die  Auswirkungen  der  Deletionen  von  artJ,  purD  und  proC  auf  die 
+
+intrazelluläre 
+
+Replikation 
+
+zu 
+
+überprüfen 
+
+und 
+
+somit 
+
+Rückschlüsse 
+
+über 
+
+die 
+
+Aminosäurebiosynthesewege  ziehen  zu  können.  Für  eine  erfolgreiche  Replikation  ist  es  für  das 
+
+Pathogen essentiell, die benötigten Aminosäuren entweder selber synthetisieren zu können oder sie 
+
+aber vom Wirt beziehen zu können. Diese Annahmen sollten mittels Ermittlung der Replikationsraten 
+
+in Abhängigkeit der Deletionen überprüft werden. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+2. Material und Methoden 
+ 
+
+Die  generelle  Durchführung  erfolgte  nach  dem  Basic  Protocol  38  Intracellular  replication  assay  of 
+
+Salmonella  in  RAW  cells.  Alle  durchgeführten  Rechnungen  und  Änderungen  sind  im  Folgenden 
+
+beschrieben. 
+
+2.1 Verwendete Stämme 
+ 
+
+Tabelle 1: Eingesetzte Stämme 
+
+Stamm 
+WT 
+ΔssaV 
+ΔartJ 
+ΔpurD 
+ΔproC 
+
+ 
+
+2.2 Verwendete Zelllinie 
+ 
+
+Proteinfunktion 
+ 
+Teil des SPI2-T3SS 
+Arginin-ABC-Transporter 
+Purinsynthese 
+Prolinsynthese 
+
+Für  das  Replikationsassay  wurden  RAW264.7  verwendet,  die  aus  einem  Abelson-Maus-Leukämie-
+
+Virusinduzierten-Tumor  der  Maus  stammen  und  morphologisch  den  Makrophagen  zugeordnet 
+
+werden. 
+
+2.3 Zellkultivierung 
+ 
+
+Wie Im angegebenen Basic Protocol beschrieben wurden die RAW264.7 mit neuem Medium versorgt 
+
+und einen Tag vor der Infektion ausgesät. 
+
+2.3.1 Aussaat RAW264.7 
+ 
+
+Es  wurden  RAW264.7  der  Passage  21  für  die  Aussaat  verwendet.  Die  Zellen  wurden  wie  im 
+
+angegebenen  Basic  Protocol  beschrieben  ausgezählt  und  die  Zellen/ml  bestimmt.  Es  wurden 
+
+157,5 Zellen ausgezählt.  
+
+  Berechnung Zellen/ml: 
+
+157,5  Zellen  x  10  (Verdünnungsfaktor  Tryptanblau)  x  104  (Kammerfaktor  der 
+
+Neubauer-Zählkammer) = 157,5 x 105 Zellen/ml 
+
+Die  Aussaat  erfolgte  in  zwei  24-Well-Plates.  Es  wurden  pro  Platte  5x3  Wells  mit  jeweils  500µl 
+
+DMEM+iFCS und 200.000 Zellen/Well ausgesät.  
+
+ 
+
+ 
+
+5 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  Berechnung für die Aussaat von 200.000 Zellen/Well: 
+
+157,5 x 105 Zellen/ml 
+
+     4 x 105 Zellen/ml  
+
+= 39,375 (Verdünnungsfaktor) 
+
+ 
+
+ 
+
+20 ml  
+
+39,375 
+
+= 0,508 ml 
+
+Es wurden 19,5 ml des Mediums DMEM+iFCS mit 0,5 ml der Zellsuspension vermischt und 500 µl von 
+
+diesem  Mastermix 
+
+in 
+
+jedes  der  Wells  pipettiert,  um  400.000  Zellen/ml  beziehungsweise 
+
+200.000 Zellen/Well zu erhalten. 
+
+2.4 Replikationsversuch 
+ 
+
+Wie zuvor beschrieben erfolgte einen Tag vor der Infektion die Aussaat der 200.000 Zellen/Well. Diese 
+
+wurden nicht mit Interferon-ɣ induziert. Ebenso wurden die verwendeten Stämme angeimpft und über 
+
+Nacht bei 37 °C inkubiert. Die Vorbereitungen und die Infektion am nächsten Tag erfolgten wie im Basic 
+
+Protocol beschrieben. Anhand der Bestimmung der OD und der Einstellung einer OD von 0,2 in 1 ml 
+
+PBS (3 x 108 Bakterien/ml) konnte der Infektionsmix mit einer definierten MOI (Multiplicity of infection) 
+
+hergestellt werden. Es sollte mit einer MOI von 1 infiziert werden, das heißt eine Salmonelle pro Zelle 
+
+der RAW264.7-Zelllinie bei der Infektion.   
+
+  Berechnung Infektionsmix: 
+
+ 3 x 10 8 Bakterien/ml 
+
+ 8 x 10 5 Bakterien/ml 
+
+=375 (Verdünnungsfaktor) 
+
+4 ml 
+
+375 
+
+ 
+
+= 10,67 µl (Bakterien für einen Infektionsmix von 4 ml) 
+
+Um mit einer MOI1 infizieren zu können wurden 10,67 µl des PBS-Gemischs mit einer OD 0,2 in 4 ml 
+
+des  Mediums  gegeben  und  jeweils  500  µl  in  jedes  der  sechs  Wells  gefüllt.  Die  Platten  wurden 
+
+anschließend für 5 min bei 500 x g zentrifugiert und danach für 25 min bei 37 °C inkubiert. Die weitere 
+
+Durchführung  erfolgte  nach  dem Basic Protocol,  mit dem Unterschied  der ersten  Zelllyse  nach  der 
+
+Behandlung  mit  100µg/ml  Gentamycin  nach  1  h.    Optional  ist  es  möglich  nach  einer  weiteren 
+
+einstündigen Behandlung mit 10 µg/ml Gentamycin die erste Lyse nach 2 h durchzuführen. Lediglich 
+
+die  16  h-Lyse-Platte  wurde  mit  10  µg/ml  Gentamycin  behandelt  und  weitere  15  h  inkubiert.  Die 
+
+ 
+
+6 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+Infektionsmixe wurden bis zu 10-3 verdünnt und 100 µl davon auf Mueller-Hinton-Platten ausplattiert 
+
+und  über  Nacht  bei  37  °C  inkubiert.  Anhand  der  Auszählungen  dieser  Verdünnungen  wurden  am 
+
+nächsten Tag die durchzuführenden Verdünnungen für die 16 h-Lyse (x-fache Replikation) abgeschätzt. 
+
+Von diesen Verdünnungen wurden ebenfalls 100 µl ausplattiert und über Nacht inkubiert, sodass am 
+
+darauffolgenden Tag die Bestimmung der Phagozytoserate und der Replikationsrate erfolgen konnte. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+  Berechnung der Phagozytoserate: 
+
+     CFU 1 h 
+
+CFU Inokulum 
+
+x 100 = Phagozytoserate (%) 
+
+  Berechnung der Replikationsrate: 
+
+CFU 16 h 
+
+ CFU 1 h 
+
+= x-fache Replikation 
+
+ 
+
+7 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+3. Ergebnisse  
+ 
+
+Nach  der  Phagozytose  von  Salmonella  enterica  serovar  Typhimurium  durch  Immunzellen  wie 
+
+Makrophagen  oder  dendritische  Zellen,  schafft  das  Pathogen  es,  sich  durch  Translokation  von 
+
+Effektorproteinen  eines  T3SS,  codiert  durch  die  SPI2,  erfolgreich  in  der  entstehenden  SCV  im 
+
+Phagosom zu replizieren (Holzer and Hensel 2012). Im Folgenden kommt es zur Ausbildung tubulärer 
+
+Strukturen, sogenannten SIFs, das ein endosomales Netzwerk für die Versorgung darstellt (Schroeder, 
+
+Mota  et  al.  2011).  Für  das  intrazelluläre  Überleben  ist  es  von  größter  Bedeutung  mit  den 
+
+stressinduzierenden Nährstofflimitierungen in der SCV zu überleben und es konnte gezeigt werden, 
+
+dass Stämme, die auxotroph für bestimmte Aminosäuren sind, sich nicht mehr erfolgreich replizieren 
+
+können (Hoiseth and Stocker 1981, Sigwart, Stocker et al. 1989). 
+
+Unter  dem  Einsatz  von  nicht-induzierten  RAW264.7,  einer  Makrophagen-Zelllinie,  kann  die 
+
+Notwendigkeit bestimmter Aminosäuren und ihrer transportierenden und synthetisierenden Proteine 
+
+für die erfolgreiche intrazelluläre Replikation in der SCV getestet werden. Von besonderem Interesse 
+
+waren in diesem Versuch das periplasmatische Argininbindeprotein ArtJ, codiert durch artJ, das unter 
+
+anderem  für  die  Prolinbiosynthese  verantwortliche  ProC,  codiert  durch  proC  und  das  für  die 
+
+Purinbiosynthese  verantwortliche  PurD,  codiert  durch  purD.  Durch  eine  Deletion  der  codierenden 
+
+Gene konnte die Phagozytose- (Abb. 2) und Replikationsrate (Abb. 3) in Abhängigkeit dieser Proteine 
+
+getestet werden. Als Negativkontrolle diente der Stamm ΔssaV. Das Protein SsaV ist Teil des SPI2-T3SS 
+
+(Browne, Hasegawa et al. 2008) und eine Deletion führt somit zum funktionalen Verlust des T3SS und 
+
+der Fähigkeit zur intrazellulären Replikation. 
+
+ 
+
+ 
+
+e
+t
+a
+r
+e
+s
+o
+t
+y
+z
+o
+g
+a
+h
+P
+
+)
+
+l
+
+m
+u
+u
+k
+o
+n
+
+I
+ 
+
+m
+o
+v
+%
+
+ 
+
+(
+
+Phagozytoserate
+
+3
+
+2,5
+
+2
+
+1,5
+
+1
+
+0,5
+
+0
+
+Abbildung  2:  Phagozytoserate  der  verwendeten  Stämme  in  RAW264.7  Makrophagen.  Auf  der  Y-Achse  ist  die 
+Phagozytoserate (% vom Inokulum) der auf der X-Achse dargestellten Stämme nach 1 h gezeigt. Die dargestellten Werte sind 
+dabei  Mittelwerte  aus  drei  technischen  Replikaten  pro  Stamm.  Die  Durchführung  erfolgte  dabei  wie  im  Basic  Protocol  38 
+bezeihungsweise in Material und Methoden beschrieben.   
+
+ 
+
+ 
+
+8 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+Es  konnte  beobachtet  werden,  dass  der  Wildtyp  eine  Phagozytoserate  von  1  %  aufwies  (Abb.  2). 
+
+Ebenso  zeigte  die  für  intrazelluläre  Replikation  dienende  Negativkontrolle  ΔssaV  eine  solche 
+
+Phagozytoserate von 1 %. Der Stamm ΔartJ lag mit 1,25 % dabei etwas darüber und der Stamm ΔproC 
+
+mit 0,75  % geringfügig  darunter  (Abb. 2).  Eine Deletion  von  purD  führte zu  einer 2,5-fach  höheren 
+
+Phagozytoserate, als beim Wildtyp (Abb. 2). 
+
+Die  Replikationsraten  zeigten  beim  Wildtyp,  der  Positivkontrolle,  eine  110-fache  Replikation  im 
+
+Gegensatz  zur  Negativkontrolle  ΔssaV,  die  lediglich  eine  10-fache  Replikation  in  Abhängigkeit  der 
+
+Phagozytoserate aufwies (Abb. 3). Die Mutanten ΔartJ und ΔpurD zeigten dabei eine mit dem Wildtyp 
+
+vergleichbare Replikationsrate mit 100-facher Replikation (Abb. 3). Eine Deletion von proC führte zu 
+
+einem  höchstsignifikanten  Abfall  der  Replikationserate  und  so  lag  sie  mit  der  Negativkontrolle 
+
+vergleichbar bei einer 10-fachen Replikation (Abb. 3). 
+
+ 
+
+160
+
+140
+
+Replikationsrate
+
+n
+o
+i
+t
+a
+k
+
+120
+
+100
+
+i
+l
+
+ 
+
+p
+e
+R
+e
+h
+c
+a
+f
+-
+x
+
+80
+
+60
+
+40
+
+20
+
+0
+
+Abbildung 3: Replikationsraten der eingesetzten Stämme in RAW264.7 Makrophagen. Dargestellt ist die x-fache Replikation 
+in Abhängigkeit von der Phagozytoserate der unterschiedlichen Stämme. Gezeigt ist dabei der Mittelwert von drei technischen 
+Replikaten  pro  Stamm.  Die  Durchführung  erfolgte  wie  im  Basic  Protocol  38  beziehungsweise  in  Material  und  Methoden 
+beschrieben.  
+
+ 
+
+ 
+
+Alles  in  allem  war  zu  beobachten,  dass  eine  Deletion  von  purD  zu  einer  2,5-fach  erhöhten 
+
+Phagozytoserate im Gegensatz zum Wildtyp führte (Abb. 2), die Replikationsrate dabei auf Wildtyp-
+
+Niveau  lag  (Abb.  3).  Die  Stämme  ΔartJ  und  ΔproC  zeigten  tendenziell  eine  mit  dem  Wildtyp 
+
+vergleichbare Phagozytoserate (Abb. 2). Es schien, als habe eine Deletion von artJ dabei keinen Einfluss 
+
+auf die Replikation, eine Deletion von proC dagegen jedoch schwerwiegend (Abb. 3). 
+
+ 
+
+ 
+
+9 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+4. Diskussion 
+ 
+
+Nach erfolgreicher Invasion von Salmonella enterica in die Wirtszellen mittels des SPI1-T3SS, kommt 
+
+es durch Translokation der Effektorproteine über das SPI2-T3SS, wie zum Beispiel SifA, zur Ausbildung 
+
+der SCV und der SIFs. S. enterica kann sich trotz Nährstofflimitierung erfolgreich in der SCV replizieren 
+
+(Popp,  Noster  et  al.  2015).  Es  ist  bekannt,  dass  fakultative  intrazelluläre  Pathogene  wie  Legionella 
+
+pneumophila,  die  für  manche  Aminosäuren  auxotroph  sind,  Strategien  entwickelt  haben,  um  die 
+
+intrazelluläre  Verfügbarkeit  von  freien  Aminosäuren  zu  steigern  (Isberg,  O'Connor  et  al.  2009). 
+
+Salmonella Typhimurium scheint sich unabhängig von der Wirtszelle replizieren zu können. Dies jedoch 
+
+nur, wenn es alle essentiellen metabolischen und biosynthetischen Wege für alle Aminosäuren besitzt 
+
+(Popp, Noster et al. 2015). Durch Mechanismen der Immunabwehr des Wirtes, wie beispielsweise der 
+
+Produktion von Stickstoffmonoxid, kann es möglicherweise zur Auxotrophie für die Aminosäuren Lysin 
+
+und Methionin kommen. Dies bedingt eine Abhängigkeit der Aufnahme dieser Aminosäuren vom Wirt 
+
+(Richardson, Payne et al. 2011). Im Fokus dieses Versuchs stand die Abhängigkeit der intrazellulären 
+
+Replikation  von  der  Aminosäurebiosynthese  von  Salmonella  enterica.  Anhand  der  Deletionen  von 
+
+Genen aus der Arginin-, Prolin- und Purinbiosynthese sollte dies überprüft werden. 
+
+Zunächst  wurden  die  Phagozytoseraten  für  die  Betrachtung  herangezogen,  um  anhand  dieser  die 
+
+Replikationsraten  bestimmen  zu  können.  Aus  der  Literatur  ist  bekannt,  dass  die  Phagozytoseraten 
+
+beim Wildtyp und Mutanten bei 1 % liegen sollten (Holzer and Hensel 2012). Die Phagozytoseraten 
+
+lagen auch in dieser Versuchsdurchführung bei ca. 1 % (Abb. 2). Auffällig war dabei die 2,5-fach höhere 
+
+Phagozytoserate  bei  ΔpurD  (Abb.2).  Da  die  Phagozytose  im  Gegensatz  zur  Invasion  eine  von  der 
+
+Wirtszelle gesteuerte Aufnahme ist, kann eine Begründung dafür nicht in der Mutation des Stammes 
+
+liegen. Diese Hypothese wird dadurch gestützt, dass Übernachtkulturen verwendet wurden und eine 
+
+Expression der Gene der SPI1 für eine erfolgreiche Invasion unwahrscheinlich war, da das Maximum 
+
+der Expression der Gene der  SPI1 nach ca. 3,5 h  erreicht ist. Die Phagozytoserate von ΔpurD sollte 
+
+somit  auch  bei  1  %  liegen  (Holzer  and  Hensel  2012).  Fehlerquellen  können  in  der  OD-Messung, 
+
+Einstellung einer OD 0,2 in 1 ml PBS, Durchmischen des Infektionsmixes oder in der Lyse der Zellen 
+
+liegen. 
+
+Bei den Replikationsraten zeigte der Wildtyp mit einer 110-fachen Replikation eine deutlich erhöhte 
+
+Replikationsrate  (Abb.  3).  Aus  der  Literatur  ist  bekannt,  dass  der  Wildtyp  nach  14  h  eine 
+
+Replikationsrate von ungefähr 40-facher Replikation erreicht (Holzer and Hensel 2012). Ebenso zeigte 
+
+der Stamm ΔssaV eine dreimal höhere Replikation als aus der Literatur bekannt  (Holzer and Hensel 
+
+2012), lag mit einer 10-fachen Replikationsrate aber dennoch höchst signifikant unter dem Wildtyp 
+
+(Abb. 3). Zu beachten ist dabei jedoch, dass die von Holzer durchgeführten Replikationsanalysen eine 
+
+ 
+
+10 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+Zeitspanne von 14 h in Betracht ziehen und in dieser Durchführung die Lyse der Zellen erst nach 16 h 
+
+durchgeführt wurde.  
+
+Eine  Deletion  des  periplasmatischen  Argininbindeproteins  ArtJ  scheint  keinen  Effekt  auf  die 
+
+Replikation  der  Salmonellen  in  der  SCV  haben.  Das  lässt  vermuten,  dass  es  weitere  Wege  für  die 
+
+Argininbiosynthese  zu  geben  scheint.  Ein  weiteres  bekanntes  Aufnahmesystem  für  Arginin  in 
+
+Salmonella  enterica  und  E.coli  ist  das  argT  hisJQMP  System.  E.coli  besitzt  noch  mindestens  einen 
+
+dritten Arginintransporter (Wissenbach, Six et al. 1995). Arginin hat zudem nicht nur Bedeutung für 
+
+die Proteinbiosynthese, sondern stellt auch ein wichtiges Signal während der Infektion dar, da infolge 
+
+der  Wahrnehmung  von  Arginin  die  Konzentration  des  second  messenger  c-di-GMP  ansteigt  (Mills, 
+
+Petersen et al. 2015).  
+
+Es ist unwahrscheinlich, dass die hier beobachtete Replikationsrate von ΔpurD auf dem  Niveau des 
+
+Wildtyps,  richtig  ist  (Abb.  3).  Die  Replikationsrate  liegt  entgegengesetzt  dieser  Beobachtung 
+
+nachweislich  unter  der  der  Negativkontrolle  ΔssaV  (Holzer  and  Hensel  2012).  Im  Anbetracht  der 
+
+Funktion für die Purinbiosynthese ist ein Verlust der Fähigkeit zur Replikation wahrscheinlich, da Purin 
+
+für die DNA-Synthese  benötigt  wird.  Eine  geringe Replikationsrate lässt vermuten, dass  der Stamm 
+
+ΔpurD anfälliger für die Abtötungsmechanismen in den Makrophagen ist (Holzer and Hensel 2012). Da 
+
+dieser Stamm auch eine erhöhte Phagozytoserate aufwies, ist eine der zuvor genannten Fehlerquellen 
+
+im  Bereich  der  OD-Messung  bzw.  -einstellung  oder  der  Lyse  wahrscheinlich  und  kann  verworfen 
+
+werden. Der Versuch müsste dementsprechend wiederholt werden. 
+
+Es ist bekannt, dass die Deletion eines der die Prolinbiosynthese katalysierenden Proteine ProB, ProA 
+
+oder ProC zu einer Prolinauxotrophie führt, da die drei Proteine sequentiell aufeinander folgen und es 
+
+keinen  alternativen  Weg  für  die  Synthese  gibt  (Popp,  Noster  et  al.  2015).  Die  in  diesem  Versuch 
+
+beobachtete  Replikationsrate  einer  12-fachen  Replikation  konnte  in  diesem  Maße  bereits  zuvor 
+
+ermittelt werden (Popp, Noster et al. 2015). Prolin wird von allen Organismen verwendet, nicht nur als 
+
+Proteinbestandteil, sondern auch als Kohlenstoff-, Energie- und Stickstoffquelle für das Wachstum und 
+
+ebenso dient es als Osmoprotektant (Wood 1988). Es scheint als könne Salmonella Typhimurium nur 
+
+geringe Mengen oder kein freies Prolin vom Wirt aufnehmen, wenn man den Prolinbiosyntheseweg 
+
+unterbricht.  
+
+Abschließend 
+
+ist  zu  sagen,  dass  S.  enterica  bei  Deletion  oder  Störung  bestimmter 
+
+Aminosäurebiosynthesewege  nur  bedingt  in  der  Lage  ist,  die  benötigte  Aminosäure  vom  Wirt 
+
+aufzunehmen oder auf anderem Wege zu synthetisieren. Ein Defekt in der Argininbiosynthese kann 
+
+dabei  scheinbar  toleriert  werden,  da  es  eine  andere  Aufnahmemöglichkeit  zu  geben  scheint.  Ein 
+
+Verlust  der  Purin-  oder  Prolinbiosynthese  kann  jedoch  nicht  durch  die  Aufnahme  vom  Wirt 
+
+ 
+
+11 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+kompensiert werden und es kann keine erfolgreiche Replikation mehr stattzufinden. Interessant sind 
+
+in  dem  Zusammenhang  sicherlich  die  Biosynthesewege  der  anderen  Aminosäuren  unter  den 
+
+Bedingungen der Nährstofflimitierung in der SCV. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+12 
+
+Analyse der intrazellulären Replikation der Pathogene 
+
+ 
+5. Literaturverzeichnis 
+ 
+
+Barlag, B. and  M. Hensel (2015).  "The  giant adhesin  SiiE  of  Salmonella enterica."  Molecules  20(1): 
+1134-1150. 
+Browne,  S.  H.,  P.  Hasegawa,  S.  Okamoto,  J.  Fierer  and  D.  G.  Guiney  (2008).  "Identification  of 
+Salmonella  SPI-2  secretion  system  components  required  for  SpvB-mediated  cytotoxicity 
+in 
+macrophages and virulence in mice." FEMS Immunol Med Microbiol 52(2): 194-201. 
+Deiwick, J., T. Nikolaus, S. Erdogan and M. Hensel (1999). "Environmental regulation of Salmonella 
+pathogenicity island 2 gene expression." Mol Microbiol 31(6): 1759-1773. 
+Figueira, R. and D. W. Holden (2012). "Functions of the Salmonella pathogenicity island 2 (SPI-2) type 
+III secretion system effectors." Microbiology 158(Pt 5): 1147-1161. 
+Gerlach, R. G., N. Claudio, M. Rohde, D. Jackel, C. Wagner and M. Hensel (2008). "Cooperation of 
+Salmonella  pathogenicity  islands  1  and  4  is  required  to  breach  epithelial  barriers."  Cell  Microbiol 
+10(11): 2364-2376. 
+Haraga,  A.,  M.  B.  Ohlson  and  S.  I.  Miller  (2008).  "Salmonellae  interplay  with  host  cells."  Nat  Rev 
+Microbiol 6(1): 53-66. 
+Hoiseth,  S.  K.  and  B.  A.  Stocker  (1981).  "Aromatic-dependent  Salmonella  typhimurium  are  non-
+virulent and effective as live vaccines." Nature 291(5812): 238-239. 
+Holzer,  S.  U.  and  M.  Hensel  (2012).  "Divergent  roles  of  Salmonella  pathogenicity  island  2  and 
+metabolic traits during interaction of S. enterica serovar typhimurium with host cells." PLoS One 7(3): 
+e33220. 
+Isberg, R. R., T. J. O'Connor and M. Heidtman (2009). "The Legionella pneumophila replication vacuole: 
+making a cosy niche inside host cells." Nat Rev Microbiol 7(1): 13-24. 
+Liss, V. and M. Hensel (2015). "Take the tube: remodelling of the endosomal system by intracellular 
+Salmonella enterica." Cell Microbiol 17(5): 639-647. 
+Mills, E., E. Petersen, B. R. Kulasekara and S. I. Miller (2015). "A direct screen for c-di-GMP modulators 
+reveals a Salmonella Typhimurium periplasmic L-arginine-sensing pathway." Sci Signal 8(380): ra57. 
+Popp, J., J. Noster, K. Busch, A. Kehl, G. Zur Hellen and M. Hensel (2015). "Role of host cell-derived 
+amino acids in nutrition of intracellular Salmonella enterica." Infect Immun 83(12): 4466-4475. 
+Richardson, A. R., E. C. Payne, N. Younger, J. E. Karlinsey, V. C. Thomas, L. A. Becker, W. W. Navarre, 
+M. E. Castor, S. J. Libby and F. C. Fang (2011). "Multiple targets of nitric oxide in the tricarboxylic acid 
+cycle of Salmonella enterica serovar typhimurium." Cell Host Microbe 10(1): 33-43. 
+Schroeder,  N.,  L.  J.  Mota  and  S.  Meresse  (2011).  "Salmonella-induced  tubular  networks."  Trends 
+Microbiol 19(6): 268-277. 
+Sigwart,  D.  F.,  B.  A.  Stocker  and  J.  D.  Clements  (1989).  "Effect  of  a  purA  mutation  on  efficacy  of 
+Salmonella live-vaccine vectors." Infect Immun 57(6): 1858-1861. 
+Wissenbach,  U.,  S.  Six,  J.  Bongaerts,  D.  Ternes,  S.  Steinwachs  and  G.  Unden  (1995).  "A  third 
+periplasmic  transport  system  for  L-arginine  in  Escherichia  coli:  molecular  characterization  of  the 
+artPIQMJ genes, arginine binding and transport." Mol Microbiol 17(4): 675-686. 
+Wood, J. M. (1988). "Proline porters effect the utilization of proline as nutrient or osmoprotectant for 
+bacteria." J Membr Biol 106(3): 183-202. 
+
+ 
+
+ 
+
+13 
+
+

@@ -1,0 +1,116 @@
+Quantitative Methoden (Master) 
+Universität Osnabrück, Fachbereich Kultur- und Sozialwissenschaften 
+Sommersemester 2016 
+Golsch 
+ 
+
+ 
+
+Übung 7 - Nicht-lineare und nicht-additive 
+Zusammenhänge  
+
+ 
+
+Aufgabe 
+
+Verwenden  Sie  für  diese  Aufgabe  die  Datei  soep2007.dta,  ein  Datenauszug  aus  dem 
+Sozio-ökonomischen  Panel.  Abhängige  Variable  für  alle  folgenden  Regressionsmodelle 
+soll die Wahrscheinlichkeit eines beruflichen Aufstiegs sein.  
+ 
+
+ 
+
+ 
+
+1.  Laden  Sie  den  Datensatz  soep2007.dta  und  machen  Sie  sich  mit  den  Variablen 
+
+vertraut.  
+
+2.  Formulieren 
+
+Sie 
+
+Hypothesen 
+
+zum 
+
+Zusammenhang 
+
+zwischen 
+
+der 
+
+Aufstiegswahrscheinlichkeit und 
+
+(cid:173)  dem Alter  
+
+(cid:173)  der Bildung  
+
+(cid:173)  der Dauer der Betriebszugehörigkeit 
+
+(cid:173)  dem Geschlecht.  
+
+3.  Erzeugen Sie eine Dummy Variable frau für das Geschlecht. Diese neue Variable soll 
+
+den Wert 1 für Frauen und den Wert 0 für Männer annehmen.   
+
+ 
+
+1 
+
+4.  Wir  beginnen  mit  einem  multiplen,  linear-additivem  Regressionsmodell.  Dazu 
+betrachten  wir  zunächst  den  Einfluss  von  drei  metrischen  Variablen  (Alter, 
+Bildungsjahre, Betriebszugehörigkeit).  
+
+a.  Schätzen Sie ein Regressionsmodell. Verwenden Sie die Originalvariablen des 
+
+Übungsdatensatzes (alter bilzeit erwzeit). Interpretieren Sie die Ergebnisse.   
+
+b.  Erweitern Sie das Regressionsmodell um die Variable frau, die Sie in Aufgabe 
+
+3 generiert haben. Interpretieren Sie die Ergebnisse.  
+
+5. 
+
+Jetzt wenden wir uns einem Beispiel für Nicht-Additivität zu. Dazu überprüfen wir 
+die Annahme, dass  der Effekt der unabhängigen Variablen  Bildung  davon  abhängt, 
+welche Werte die unabhängige Variable Geschlecht annimmt.  
+
+a.  Berechnen Sie einen Interaktionsterm. Dazu multiplizieren Sie die Werte der 
+
+Variablen frau und bilzeit.  Also z.B.: generate bilzeit_frau = bilzeit * frau 
+
+b.  Erweitern  Sie  nun  das  multiple  Regressionsmodell  aus  Aufgabe  4  (mit  den 
+Variablen  alter  bilzeit  erwzeit  frau)  um  den  Interaktionsterm.  Interpretieren 
+Sie die Ergebnisse. 
+
+6. 
+
+Im Folgenden geht es um ein Beispiel für Nicht-Linearität. Dazu überprüfen wir die 
+Annahme, dass der Effekt der unabhängigen Variablen Bildung nicht linear ist. 
+
+a.  Erstellen Sie eine neue Variable Bildung zum Quadrat:                                               
+
+Also z.B.: generate bilzeit_2 = bilzeit * bilzeit 
+
+b.  Erweitern Sie das Regressionsmodell aus Aufgabe  4 (mit den Variablen alter 
+bilzeit  erwzeit  frau)  um  diese  neue  Variable  Bildung  zum  Quadrat  und 
+schätzen  Sie  noch  ein  letztes  Mal  ein  multivariates  Regressionsmodell. 
+Interpretieren Sie die Ergebnisse.  
+
+ 
+ 
+ 
+ 
+ 
+Datensatzbeschreibung  
+
+ 
+
+ 
+
+ 
+
+2 
+
+     Note:  dataset has changed since last savedSorted by:                                                                                                                                 alter           float   %9.0g                 Alter der Befragungspersonenlabgro          long    %10.0g                Akt. Bruttoerwerbseink.(gen) in Euroerwzeit         float   %9.0g                 Dauer der Betriebszugehoerigkeitbilzeit         float   %9.0g                 Dauer der Ausbildung, in Jahrenaufstieg        byte    %25.0g     xp2703     Berufl Aufstieg in Betrieb in naechsten 2 Jahrennetto           byte    %72.0g     xnetto     Befragungsstatus 2007gebjahr         int     %8.0g                 Geburtsjahr -4Steller-sex             byte    %22.0g     sex        Geschlechtpersnr          long    %12.0g                Unveraenderliche Personennummerhhnr            long    %12.0g                Ursprungshaushaltsnummer                                                                                                                               variable name   type    format     label      variable label              storage   display    value                                                                                                                                size:       242,846                           vars:            10                          15 Apr 2014 14:43  obs:         8,374                          Übungsdaten, SOEP Lehrversion, 2007Contains data from soep2007.dta

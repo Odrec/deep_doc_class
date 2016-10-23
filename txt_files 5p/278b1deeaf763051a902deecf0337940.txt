@@ -1,0 +1,580 @@
+Analyse räumlich hochauflösender 
+
+Fernerkundungsdaten 
+2 Sensoren und Daten 
+
+ 
+ 
+ 
+
+Christine Pohl 
+
+Universität Osnabrück 
+Institut für Informatik 
+
+Arbeitsgruppe Fernerkundung 
+
+Content 
+
+n  Definitions 
+n  Resolution 
+n  Review of sensor developments 
+n  Sensors 
+n  Processing 
+n  Outlook and Challenges 
+
+Heute 
+
+ 
+
+ Organisatorisches 
+  
+
+  
+
+2  Sensoren und Daten 
+ GSD  1- 16 m 
+
+ 2.1  
+
+ 2.2  
+
+ GSD weniger als 1 m 
+
+Organisatorisches 
+
+Presentation Topics 
+
+n  Sensors & Technology (1) 
+n  High Res Radar (2) 
+n  Applications (3) 
+n  Challenges (4) 
+
+Sensors & Technology (1) 
+
+n  Overview on operational high resolution VIR sensors 
+n  Description of sensor and operation principles 
+n  List of sensor specific parameters and image characteristics 
+n  Example images their interpretation and analysis 
+
+Selection of sensors 
+
+w  IKONOS-1/2 
+w  QuickBird-1/2 
+w  SPOT-5 
+w  GeoEye-1 
+w  WorldView-2/3 
+
+High Res Radar (2) 
+
+n  Development of spatial resolution in SAR sensors 
+n  List of high resolution SAR sensors and platforms 
+n  Operating modes (single satellite / constellations) 
+n  Applications 
+n  Limitations 
+
+Applications (3) 
+
+n  Land use / land change (LULC) mapping 
+n  3rd Dimension (Digital terrain models, 3D modeling) 
+n  Urban applications 
+n  Hazards and disasters 
+n  Agriculture/forestry 
+n  Coastal zones 
+n  Others? 
+
+Challenges (4) 
+
+n  Quality 
+
+n  Big data 
+
+w  Achievable horizontal and vertical accuracy 
+w  Mapping challenges in aspects of detail and data quality 
+w  Radiometric quality 
+
+w  Data volumes 
+w  Data handling 
+w  Processing hard- and software 
+
+n  Physics and modeling 
+
+w  Requirements for high resolution RS image understanding 
+w  Sensor calibration 
+w  Application-oriented aspects 
+
+n  Signal and image processing 
+
+w  Needs for algorithm modifications 
+w  Classification of high resolution RS images 
+w  Limitations 
+
+Kontext: 
+
+Räumliche Auflösung 
+
+http://www.edc.uri.edu/nrs/classes/NRS409/RS/Lectures/HowRemoteSensonWork.pdf 
+
+http://www.edc.uri.edu/nrs/classes/NRS409/RS/Lectures/HowRemoteSensonWork.pdf 
+
+http://www.edc.uri.edu/nrs/classes/NRS409/RS/Lectures/HowRemoteSensonWork.pdf 
+
+http://www.edc.uri.edu/nrs/classes/NRS409/RS/Lectures/HowRemoteSensonWork.pdf 
+
+http://www.edc.uri.edu/nrs/classes/NRS409/RS/Lectures/HowRemoteSensonWork.pdf 
+
+http://www.edc.uri.edu/nrs/classes/NRS409/RS/Lectures/HowRemoteSensonWork.pdf 
+
+http://www.edc.uri.edu/nrs/classes/NRS409/RS/Lectures/HowRemoteSensonWork.pdf 
+
+http://www.edc.uri.edu/nrs/classes/NRS409/RS/Lectures/HowRemoteSensonWork.pdf 
+
+2 
+
+Sensoren und Daten 
+
+Introduction 
+
+n  Operational VIR satellites with high resolution sensors 
+became available in 1986 with the launch of SPOT-1. 
+
+n  Most high resolution satellites offer stereo image acquisition 
+
+capabilities. 
+w  Side-looking 
+w  Multiple orbit acquisitions 
+w  Multiplatform acquisitions (constellations) 
+w  Multisensor acquisitions 
+
+n  Push-broom scanning technology 
+
+Orbits: Altitude and Scale 
+
+Active vs Passive Sensors 
+
+Passive 
+
+Active 
+
+Spatial Resolution 
+
+Resolution vs Re-Visit Time 
+
+Comparison of Spatial Resolutions 
+
+Swath vs Spatial Resolution 
+
+Multi-spectral scanners 
+
+Sensor scanners 
+
+w  Highest ground resolution:  WorldView-3 0.31 m 
+w  Lowest: Landsat (1-5) - TM band 6 (IR): 120 m  
+
+Scanning systems: 
+
+terrain 
+
+w  Across track (Landsat) : Rotating mirror sweeping across 
+
+w  Along track (SPOT): Line arrays of scanners per resolution cell 
+
+Spectral bands: 
+
+w  Each band detects a specific part of the EM spectrum 
+w  Each sensor has different combination of bands  
+
+Scanner Principles 
+
+Scanning Principal - Line Scanner 
+
+Scanning Principal - Push-broom 
+
+SPOT 
+
+(SPOT IMAGE) 
+
+w  Area covered by one scene 60 * 60 
+w  Temporal resolution:  
+
+- vertical look angle: 26 days 
+- oblique look angle: 4 days  
+
+w  Orbit nearly polar and sun-synchronic (823 km 
+
+high) 
+
+w  Average spectral resolution: 
+
+- 3 bands in XS mode  (0.50 - 0.89 um) 
+- 1 band in panchromatic mode (0.50 - 0.75 um) 
+
+w  Average spatial  resolution: 
+
+- XS mode : 20 m 
+- Panchromatic mode: 10 m 
+
+w  Stereo capabilities 
+
+(http://www.spotimage.fr) 
+
+SPOT 
+
+(SPOT IMAGE) 
+
+Stereoscopy 
+
+Stereoscopic Viewing 
+
+(a) Different orbits 
+
+(b) Stereoscopic system 
+
+SPOT-5 supermode (2.5 m) 
+
+(Dowman et al. 2012) 
+
+Multi-spectral scanners 
+
+Advantages of multi-spectral scanner data: 
+
+w high spectral resolution 
+w moderate temporal resolution 
+w good processing software on the market 
+w different sensors spectrally good compatible 
+
+Disadvantages of multi-spectral scanner data: 
+
+w recent data relative expensive 
+w long ordering time 
+w cloud coverage 
+
+GSD 1 - 16 m 
+
+ 
+
+ 
+
+ 1986, 1990, 
+ 1993, 1998 
+ 1993 
+ 1996 
+ 1995, 1997 
+
+ 
+
+ France 
+ 
+ 
+
+  
+ PAN 10 m 
+ 
+ 
+ 
+ PAN 4.5 m  Germany  
+ PAN 6 m  
+ Germany  
+ PAN 4.8 m  India  
+  
+ VNIR 15 m  USA, Japan  1999 
+ 
+ UK 
+ 1999 
+ PAN 10 m 
+ 1999 
+ PAN 15 m 
+ USA  
+ PAN 1.8 m  Israel  
+ 2000 
+ 2002 
+  France  
+ PAN 5 m  
+ 2005 
+ PAN 2.5 m  India  
+ PAN 2.5 m  Japan  
+ 2006 
+ 2008 
+ PAN 5 m  
+
+  
+  
+  
+  
+  
+  
+ Germany  
+
+ 
+
+ 
+
+ 
+
+n  SPOT 1-4  
+ 
+ 
+ 
+n  MOMS-02  
+ 
+n  MOMS-02P  
+n  IRS-1C/D  
+ 
+n  ASTER 
+ 
+ 
+n  UoSAT12  
+ 
+n  Landsat-7  
+ 
+n  EROS A1  
+ 
+n  SPOT 5 
+ 
+ 
+n  CartoSAT-1
+ 
+n  ALOS  
+ 
+ 
+n  RapidEye (5)
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ PAN 2 m  
+ PAN 1.5 m  France 
+ PAN 15 m 
+ USA  
+ PAN 1.5 m  France 
+ 
+ VIR 20 m  
+ 
+ VIR 20 m  
+
+ Thailand  
+  
+  
+  
+  
+  
+
+ EU 
+ EU 
+
+GSD 1 - 16 m 
+
+ 2008 
+ 2012 
+ 2013 
+ 2014 
+ 2015 
+ 2016 
+
+n  THEOS 
+ 
+n  SPOT 6 
+ 
+n  Landsat-8  
+n  SPOT 7 
+ 
+n  Sentinel-2A 
+n  Sentinel-2B 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+2.2 
+
+Räumliche Auflösung < 1 m 
+
+  
+  
+  
+  
+
+GSD ≤ 1 m 
+ 1999 
+ PAN 0.82 m  USA  
+ 2001 
+ PAN 0.65 m  USA  
+ 2003 
+ PAN 1.0 m  USA  
+ 2006 
+ PAN 0.7 m  Israel  
+ PAN 1.0 m  South Korea  2006 
+ PAN 0.45 m  USA  
+ 2007 
+ 2008 
+ PAN 0.41 m  USA  
+ 2009 
+ PAN 0.46 m  USA  
+ PAN 0.82 m  India  
+ 2007-2010 
+ 2011 
+ PAN 0.5 m  USA  
+ 2012 
+ PAN 0.5 m  USA  
+ PAN 0.9 m   USA   
+ 2013 
+ 2014 
+ PAN 0.9 m   USA   
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+n  IKONOS-2  
+ 
+n  QuickBird  
+ 
+n  OrbView-3  
+ 
+n  EROS B  
+ 
+n  KOMPSAT-2  
+n  WorldView-1  
+n  GeoEye-1  
+ 
+n  WorldView-2  
+n  Cartosat-2/A/B 
+n  Pleiades-1A  
+n  Pleiades-1B  
+n  SkySat-1  
+ 
+n  SkySat-2  
+ 
+  
+ 
+
+ 
+
+ 
+
+ 
+
+GSD ≤ 1 m 
+
+n  WorldView-3  
+n  Kompsat-3 
+ 
+n  Kompsat-3A  
+n  TripleSat
+ 
+ 
+n  GeoEye-2  
+ 
+ 
+ 
+
+ 2014 
+  
+ PAN 0.31 m  USA  
+ PAN 0.7 m  Sout Korea
+ 2012 
+ PAN 0.55 m  South Korea  2015 
+ 2015 
+ PAN 1 m  
+ India  
+ PAN 0.34 m  USA  
+ 2016 
+
+  
+  
+
+GeoEye 
+
+Examples 
+
+IKONOS 
+
+Examples 
+
+Pleiades 
+
+Examples 
+
+SPOT 
+
+Examples 
+
+SPOT-5 
+2.5 m 
+
+SPOT-6 
+1.5 m 
+
+SPOT-7 
+1.5 m 
+
+WorldView-2 
+
+Examples 
+
+SkySat-1 
+
+Examples 
+
+SkySat-1 
+
+0.9 m 
+
+Sensors - Exercise 
+
+n  Visit the website http://www.satimagingcorp.com or others 
+n  Analyse sensor details of operational satellites, in particular 
+
+multispectral capabilities 
+w  1 – 16 m GSD 
+w  ≤ 1 m GSD 
+
+n  Collect example images for one specific application 
+
+w  Hazards and disasters 
+w  Events 
+w  Mapping 
+w  Urban infrastructure 
+w  Etc. 
+
+n  Illustrate the differences 
+
+References 
+
+n  Dowman et al. (2012): High resolution optical satellite 
+
+imagery. 1st Edition, Whittles Publishing 
+
+n  Lecture Notes 
+http://www.edc.uri.edu/nrs/classes/NRS409/RS/Lectures/
+
+HowRemoteSensonWork.pdf 
+
+

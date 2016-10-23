@@ -1,0 +1,1022 @@
+Vorlesung
+
+Regelbasierte Modelle
+
+Geeske Scholz
+
+Anpassungs- und Lernprozesse(II)/
+
+(Soziale) Netzwerke 
+
+02.12.2014
+
+Wiederholung: Akteursmodelle
+
+– Stimulus-Response Modell
+– Ökonomie: rationaler Akteur (homo oeconomicus)
+– Ökonomie/Psychologie: Prospect Theory
+– Psychologie: Heuristiken
+– Sozialpsychologie: Theory of Reasoned Action
+– Soziologie: homo sociologicus
+– Artificial Intelligence: BDI (Belief, Desire, Intention)
+
+Wiederholung: Adaptivität
+
+• Ein System passt sich seiner 
+
+Umgebung an durch:
+– „eingebaute“ Flexibilität (z.B. 
+
+Ameisenstraße)
+
+Fokus
+
+– Veränderung in einzelnen 
+
+Systemteilen (z.B. 
+Immunsystem: Immunzellen 
+lernen)
+
+– Veränderung der Interaktionen 
+
+(z.B. Ökosystem: Räuber weicht 
+auf weniger attraktive Beute aus, 
+wenn Hauptnahrungsquelle zu 
+gering vorhanden)
+
+– Veränderung in der 
+
+Zusammensetzung des Systems 
+(z.B. Gesellschaft: Entstehen 
+von Nichtregierungs-
+Organisationen als Antwort auf 
+soziale/ökologische Schieflagen) 
+
+Anpassung durch 
+
+Veränderung in Elementen 
+
+(individuelles Lernen)
+
+•
+
+Individuen sind fähig ihre Handlungen anzupassen (zu 
+lernen)
+
+• Es gibt mehrere Möglichkeiten, z.B.:
+
+– Vorhalten mehrerer Strategien und Wahl der jeweils besten
+– Entwickeln neuer Strategien
+– Imitation anderer Agenten
+– Erlernen / Verbesserung von Fähigkeiten
+
+Individuelles Lernen – Imitation
+
+• Voraussetzung: Agenten haben Fähigkeit zu 
+
+Beobachtung und Reflektion
+
+• Können Strategien anderer Agenten erkennen, 
+
+einschätzen und übernehmen
+
+• Bsp.: Affen knacken Nüsse
+• Bsp.: Bauern die Feldfrüchte
+
+anbauen
+
+•
+
+•
+
+Imitation – Bsp. für Umsetzung
+
+Imitation des erfolgreichsten Agenten
+– Besorge Liste aller / sichtbarer Agenten
+– Prüfe Erfolg dieser Agenten und merke den erfolgreichsten
+– Ermittle Strategie des erfolgreichsten Agenten
+– Übernehme diese Strategie
+
+Imitation der Mehrheit
+– Besorge Liste aller / sichtbarer Agenten
+– Lege Liste/Map an in der für jede Strategie deren Häufigkeit 
+
+vermerkt ist
+
+– Gehe über Agenten und erhöhe Zähler bei entsprechender 
+
+Strategie
+
+– Übernehme die Strategie mit dem höchsten Zähler
+
+Individuelles Lernen –
+Verbessern von Fähigkeiten
+
+• Agenten können über die Zeit besser darin werden, 
+
+etwas zu tun.
+– Z.B. Bauer kann Ertrag steigern
+– Z.B. Jäger kann Fangquote erhöhen
+– Z.B. Unternehmen kann Produktqualität erhöhen
+
+• Asymptotisches Lernen:
+
+s(t+1) = s(t) + (1-s(t))/m
+
+(cid:1) s=1 : perfektes Können
+(cid:1) s=0 : gar keine Kenntnisse
+(cid:1) m: Lernrate
+
+Bsp. Für m=2, s(0) = 1/2 :
+(cid:1) s(1) = 1/2 + (1/2)/2 = 0,75
+(cid:1) s(2) = 0,875
+(cid:1) …
+(cid:1) s(t(cid:2)∞)=1
+
+Anpassung durch Veränderung 
+der Interkationen
+
+•
+
+•
+
+Interaktionen können sich ändern, wenn sich die 
+beteiligten Agenten verändern (evolutionärer Wandel, 
+Lernen)
+Interaktionen können sich auch ändern, wenn die 
+Interaktion gewissen Regeln unterliegt und diese sich 
+ändern (z.B. durch Handlungen dritter Agenten)
+– Z.B. Finanztransaktionssteuer bzw. Gesetzgebung und 
+
+Regulierung allgemein
+
+– Z.B. Label/Siegel auf Produkten die 
+
+zusätzliche Information liefern (außer Preis)
+
+Anpassung durch evolutionären 
+Wandel der Systemelemente
+
+Modellierung evolutionärer 
+Wandel der Systemelemente
+
+• Systemelemente (Agenten) werden variiert und selektiert
+• Modellierung mit Hilfe eines Genetischen Algorithmus (cid:2)
+
+für Selektion explizite Definition einer Fitness-Funktion
+
+• Andere Möglichkeit: Selektion durch Überleben und 
+
+Reproduktionserfolg, emergent aus Simulation, Bsp.: 
+Sexuelle Reproduktion auf der Sugarscape
+– Variation durch Vererbung
+– Implizite Selektion „fitter“
+Agenten durch längeres 
+Überleben und Fortpflanzung
+
+Literatur
+
+• Arthur, B.W., 1994. Inductive Reasoning and Bounded 
+Rationality. Complexity in Economic Theory. American 
+Economic Review, 82(2), pp. 406-411.
+
+• Axelrod, R., 1987. The Evolution of Strategies in the 
+
+Iterated Prisoner's Dilemma. 
+
+Vorlesung
+
+Regelbasierte Modelle
+
+(Soziale) Netzwerke
+
+Soziales Netzwerk
+
+Straßen-Netzwerk
+
+Protein-Netzwerk
+
+Nahrungs-Netz
+
+Relevanz von Netzwerken
+
+•
+
+•
+
+Interaktion sind häufig weder rein zufällig noch rein 
+durch räumliche Entfernung bestimmt
+Interaktionen haben eine gewisse Konstanz über die Zeit
+Interagierende Elemente bilden Netzwerke
+
+•
+•
+• Netzwerkstruktur relevant für die Ausbreitung (von z.B. 
+Informationen) und für die Reaktion eines Systems auf 
+einen Stimulus 
+(Mögliche) Quelle von Nicht-linearitäten im 
+Systemverhalten 
+
+• Spielen Netzwerk-Effekte eine wesentliche Rolle werden 
+
+Systeme meist regelbasiert abgebildet
+
+Semantik von Netzwerken
+
+• Netzwerk bildet i.d.R. eine 
+
+Interaktionsstruktur 
+bezüglich einer 
+bestimmten Form von 
+Interaktionen ab
+
+• Netzwerke zwischen den 
+selben Knoten (Akteuren) 
+können demnach 
+unterschiedlich aussehen, 
+wenn verschiedene 
+Fragestellungen zu Grunde 
+liegen
+
+G
+
+H
+
+B
+
+C
+
+E
+
+A
+
+D
+
+F
+Freundschaften
+
+G
+
+H
+
+B
+
+E
+
+A
+
+C
+
+D
+
+F
+
+Berufliche Kontakte
+
+Arten von Interaktionen
+
+•
+
+•
+
+Inhalte der Interaktion:
+– Bekanntschaft 
+– Freundschaft 
+– Beruflich 
+– Interessen / Hobby
+– Austausch von Ressourcen (z.B. Geld, Wissen, Personal)
+– Informationsaustausch
+– Körperliche Interaktion
+– gemeinsame Aktionen / Teilnahme an gleichen Veranstaltungen
+– Fressen / gefressen werden
+– …
+Intensität
+– Frequenz
+– Regelmässigkeit
+– Zeitdauer
+– Wichtigkeit für beteiligte Knoten/Akteure
+– Menge an ausgetauschten Ressourcen, Information etc.
+– …
+
+• Richtung
+
+– Beidseitig (Fokus in dieser Vorlesung auf beidseitigen Interaktionen)
+– gerichtet
+
+Argument zur Relevanz der Wahl der 
+
+Interaktionsart
+
+Granovetter, M. 1982. 'The Strength of Weak Ties.' American Journal of Sociology 78 
+
+(6):1360-80.
+
+• Verschieden Arten von Interaktion können unterschiedliche Rollen in 
+
+sozialen Netzwerken spielen, z.B. bzgl. Diffusion von Innovationen
+
+• „Starke“ Verbindungen:
+
+– Freundschaften, emotionale Verbindungen, viel gemeinsame Zeit
+– (cid:2) Clustering, Bildung von Cliquen
+– Gegenseitige Bestätigung und Anpassung
+– Ggf. Abgeschlossenheit gegen Neues
+
+• „Schwache“ Verbindung
+
+– Bekanntschaften
+– Informationskanäle
+– „Brücken“ zwischen Netzwerkteilen / Cliquen (s. nächste Folie)
+
+(cid:3) Eine Beschränkung auf „starke“ Verbindungen (z.B. in empirischen 
+
+Studien) würde evtl. wesentliche Verbindungen vernachlässigen
+
+Starke Verbindung
+
+Schwache Verbindung
+
+B
+
+A
+
+C
+
+These: Haben zwei Akteure je eine starke 
+Verbindung mit demselben dritten, so haben sie 
+i.d.R. auch eine (zumindest schwache) 
+Verbindung untereinander. Diese Triade ist daher 
+empirisch unwahrscheinlich.
+
+Abb. aus Granovetter 1973
+
+Konsequenz: (Lokale) „Brücken“ zwischen Netzwerkteilen werden i.d.R. von 
+schwachen Verknüpfungen gebildet.
+
+• Bei der (empirischen) Ermittlung eines Netzwerks ist die 
+
+Fragestellung wesentlich zur Identifikation von Kanten
+
+• Z.B.: über welche Netzwerke (z.B. beruflich, privat) sich 
+eine Neuigkeit verbreitet hängt ggf. auch von der Art der 
+Neuigkeit ab 
+
+• Der Systemwissenschaftler muss daher immer mit einem 
+
+Experten für das jeweilige Themenfeld arbeiten (siehe 
+Rollen nach Salamon)
+
+Netzwerke: Definition und Darstellung
+
+Ein Netzwerk ist eine Menge von Knoten und eine Menge von 
+Beziehungen zwischen ihnen. 
+
+Soziogramm
+
+Soziomatrix
+
+A
+
+C
+
+B
+
+D
+
+C
+
+1
+
+D
+
+1
+
+1
+
+A
+
+1
+
+1
+
+1
+
+B
+
+1
+
+1
+
+A
+
+B
+
+C
+
+D
+
+Gute Visualisierung
+
+Einsatz von Algebra möglich
+
+Weitere Definitionen
+
+• Triade: (Teil-)Netzwerk aus drei 
+
+Knoten 
+
+• Ego-Netzwerk: Alle Knoten die 
+mit einem bestimmten Knoten Ki
+verknüpft sind bilden das Ego-
+Netzwerk von Ki
+
+• Clique: Eine Menge von Knoten in 
+
+der jeder Knoten mit jedem 
+anderen verbunden ist bildet eine 
+Clique
+
+Maße zur Beschreibung von ganzen 
+
+Netzwerken und zur Beschreibung von 
+
+Eigenschaften von Knoten
+
+•
+
+(Große) Netzwerke lassen sich i.d.R. nicht empirisch 
+erheben
+
+• Netzwerkstruktur kann für Dynamik relevant sein
+• Maße zur Beschreibung von Netzwerken und Knoten 
+
+helfen Strukturähnlichkeit zwischen empirischen und 
+modellierten Netzwerken zu gewährleisten
+
+Maß für Knoten (Akteure) in einem Netzwerk -
+
+Zentralität
+
+• Degree centrality
+
+(Zahl unmittelbarer Nachbarn)
+
+CD(x) = Anzahl Kanten an a
+
+• Closeness centrality
+
+(Nähe zu anderen Akteuren)
+
+d(x,y)=minimale Pfadlänge (x,y)
+
+• Betweenness centrality
+
+(Rolle als Verknüpfungsknoten)
+
+shortest
+of#
+
+paths
+shortest
+
+y
+
+between
+paths
+
+and
+z
+through
+y
+and
+between
+
+x
+
+z
+
+)x(C
+
+C
+
+∑=
+
+z;y
+
+of#
+
+Quelle: J. Newig, RBM 08/09
+
+Example
+
+Source: http://www.orgnet.com/sna.html
+Quelle: J. Newig, RBM 08/09
+
+Anmerkung: Verwendet werden hier relative Maße
+
+Maße für Netzwerke - Zentralisierung
+
+• Zentralisierung
+
+– Maß inwieweit ein Netzwerk um einen Akteur zentriert ist 
+– Berechnung abhängig von Maß für Zentralität einzelner Akteure (s.o.)
+– Zentralität des Netzwerks: (Maximale Zentralität – minimale 
+
+Zentralität)/(max mögliche Differenz)
+
+– Ring: Zentralisierung = 0%                      Stern: Zentralisierung = 100%
+
+Quelle: J. Newig, RBM 08/09
+
+Maße für Netzwerke - Dichte
+
+• Netzwerk Dichte
+
+– Anzahl Verbindungen / max. mögliche Anzahl Verbindungen
+
+88
+
+88
+
+Quelle: J. Newig, RBM 08/09
+
+Maße für Netzwerke – Clustering
+
+• Clustering-Koeffizient C: wie viele Nachbarn eines 
+
+Knotens sind durchschnittlich miteinander verknüpft (vgl. 
+Clique)
+
+=
+
+C
+
+N
+
+n
+
+a
+
+1
+
+n
+
+a
+
+∑ ∑ ∑
+
+(
+
+=
+1
+
+a
+
+=
+1
+
+i
+
++=
+1
+i
+
+j
+
+d
+
+),(
+j
+i
+
+1
+
+(
+nn
+a
+a
+
+2/)1
+
+/)
+
+N
+
+),(d
+j
+
+i
+
+1
+=
+
+
+
+falls
+
+Kante
+0
+
+zwischen
+sonst
+
+i
+
+und
+
+j
+
+Quelle: wikipedia
+
+N: Anzahl Knoten
+
+a: Knotennummer 
+
+i,j: Nachbarn des Knoten a
+na: Anzahl Nachbarn a
+
+-
+-
+Maße für Netzwerke –
+
+Charakteristische Pfadlänge
+
+• Charakteristische Pfad-Länge L: wie weit sind Knoten voneinander 
+
+entfernt
+
+/(),(
+
+NNbad
++=
+1
+ab
+
+(
+
+=
+1
+
+)2/)1
+
+N
+
+N
+
+= 1
+
+∑ ∑
+
+L
+
+a
+
+=bad
+),(
+
+Länge
+ des
+ 
+
+kürzesten 
+
+Pfads
+
+ von 
+
+ a
+
+nach 
+b
+
+N: Anzahl Knoten
+
+a,b: Knotennummern
+
+i,j: Nachbarn des Knoten a
+na: Anzahl Nachbarn a
+
+-
+-
+Analyse von Eigenschaften sozialer 
+
+Netzwerke
+
+Zusammenhang zwischen Charakteristika sozialer 
+Netzwerke (bzw. Akteuren in einem Netzwerk) und den 
+Eigenschaften des sozialen Systems, z.B.:
+• Rolle von Akteuren (Macht etc.)
+
+Analyse von Eigenschaften sozialer 
+
+Netzwerke
+
+Zusammenhang zwischen Charakteristika sozialer 
+Netzwerke (bzw. Akteuren in einem Netzwerk) und den 
+Eigenschaften des sozialen Systems, z.B.:
+• Rolle von Akteuren (Macht etc.)
+• Beziehung zwischen Netzwerkstruktur und 
+
+Systemeigenschaften (z.B. Anpassungsfähigkeit)
+
+(cid:2) Einsatz von agentenbasierten Modellen um Hypothesen 
+zu testen oder zu generieren
+
+Wie würdet ihr vorgehen, um folgende Hypothese 
+
+zu testen?
+
+Netzwerke mit hoher Zentralisierung können 
+
+Informationen schneller weiterleiten
+
+Generische Netzwerk-Modelle
+
+Strukturen sozialer Netzwerke
+
+• Empirische Erfassung und exakte Abbildung nur bei 
+
+kleinen Netzen mit wenigen Akteuren möglich
+
+• Für größere Netzwerke werden zur Modellierung 
+
+•
+
+•
+
+generische Netzwerk-Strukturen benötigt
+Im folgenden einige generische Netzwerkmodelle:
+– zufällige Graphen
+– geordnete Graphen
+– Small-world Netzwerke
+– Skalenfreie Netzwerke
+(Annahme in diesen Modellen: ungerichtete 
+Verknüpfungen)
+
+Einfache Netzwerk-Modelle (I) –
+
+zufällige Graphen
+
+• Zufällige Graphen:
+
+– N Knoten
+– K Kanten, die zufällig zwischen 
+
+je zwei Knoten gelegt werden
+
+• Eigenschaften:
+
+– kurze Charakteristische 
+
+Pfadlänge 
+
+– niedriger Clustering-Koeffizient
+– Niedrige Zentralisierung
+
+Einfache Netzwerk-Modelle (II) –
+
+geordnete Graphen
+
+• Geordnete Graphen (z.B. 
+
+Gitter, Ring)
+– räumliche Anordnung (1D, 2D, 
+
+3D,…)
+
+– jeder Knoten ist mit k 
+benachbarten Knoten 
+verbunden
+
+• Eigenschaften:
+
+– häufig: hoher Clustering-
+
+Koeffizient
+
+– lange Charakteristische 
+
+Pfadlänge
+
+Ring
+
+1-dimensional
+
+k = 4
+
+“Small worlds”
+
+• Empirisch gefundene Eigenschaften der Struktur großer (sozialer) 
+
+Netzwerke
+– kurze Entfernungen (bzgl. Verbindungen zwischen zwei Akteuren) 
+– Cliquen: Überlappung von Bekanntenkreisen (hohes Clustering)
+
+• Milgrams Experiment (“six degrees of separation”):
+
+– Zufällig ausgewählte Einwohner einer Stadt (USA) sollen einen Brief 
+
+übermitteln an eine ihnen unbekannte Zielperson in einer anderen 
+Stadt
+
+– Übermittlung nur an Bekannte (Kriterium “per Du” sein), von denen 
+
+man ausgeht, dass sie “näher dran” (geographisch, sozial, beruflich) 
+sind.
+
+– Diese Bekannten übermitteln ebenso an weitere Bekannte etc.
+– Die Briefe die ankamen durchliefen im Schnitt 5-6 Stationen
+
+Small-world Netzwerke
+
+Quelle: Watts D. und Strogatz S. (1998)
+
+Small-world Netzwerke: Charakteristische 
+
+Pfadlänge und Clustering-Koeffizient
+
+Abb. aus: Watts D. und Strogatz S. (1998)
+
+Netlogo „Small-worlds“*
+
+*Models library (cid:2) Sample Models (cid:2) Networks (cid:2) Small worlds
+
+Small-world Netzwerke
+
+• Finden Verwendung in der Modellier-Praxis
+• Bilden zwei wichtige Eigenschaften sozialer Netzwerke 
+
+ab: Clustering + kurze Pfadlängen
+
+• Andere Möglichkeiten “Small-World” Netzwerke zu 
+
+konstruieren existieren. Z.B. in einen geordneten 
+Graphen zusätzliche Knoten einfügen, die zufällig mit 
+anderen verbunden sind oder zusätzlich einige zufällige 
+Links einfügen.
+
+Skalenfreie Netzwerke
+
+Was heißt „skalenfrei“?
+
+Abb. aus : Barbarasi and Bonabeu (2003)
+
+• Wenige Knoten haben sehr viele Verknüpfungen
+• Die meisten Knoten haben wenige Verknüpfungen
+• Es gibt (anders als bei zufälligen Netzen) keine „typische“ (=mittlere) 
+
+Anzahl von Verknüpfungen 
+In diesem Sinne hat das Netz keine (mittlere) Skala
+
+•
+
+Abb. aus : Barbarasi and Bonabeu (2003)
+
+Woher kommt es, dass Netzwerke aus so verschiedenen Bereichen 
+eine ähnliche Struktur aufweisen?
+
+Entstehung skalenfreier Netze
+
+• Skalenfreie Netze enstehen, wenn der folgende einfache 
+
+Mechanismus greift: 
+– Knoten kommen nach und nach dazu und verbinden sich mit 
+
+einem bereits bestehenden Knoten 
+
+– Verbindung mit bestehen Knoten zufällig und proportional zu 
+Anzahl bereits bestehender Verknüpfungen dieses Knotens 
+
+Netlogo „Preferential Attachment“*
+
+*Netlogo (cid:2) Models library (cid:2) Networks (cid:2) Preferential Attachment
+
+Relevanz skalenfreier Netze
+
+•
+
+„Hubs“ (Knoten mit sehr vielen Verknüpfungen) extrem 
+wichtig für Verbreitung von Information, Krankheiten, 
+Viren,…
+
+• z.B. Pharmakologie: Medikamente auf wichtige Proteine 
+
+(Hubs) von Krankheitserregern abstimmen
+
+• z.B. Ausbreitung von Krankheiten: Impfung auf 
+
+Menschen mit vielen Kontakten fokussieren
+
+• z.B. PC-Viren: Auch einfache Viren verbreiten sich 
+
+schnell im Internet da jeder erst-infizierte Rechner nah 
+an einem Hub ist und der Hub viele weitere Rechner 
+infiziert
+
+• z.B. Firmen: Marketing neuer Produkte auf „Hubs“ 
+
+konzentrieren
+
+Abb. aus : 
+Barbarasi and 
+Bonabeu (2003)
+
+Skalenfreie Netzwerke mit Clustering
+
+Abb. aus : Barbarasi 
+and Bonabeu (2003)
+
+Wann welches Netzwerk?
+
+• Abhängig von Bedeutung der Verknüpfung
+
+– z.B. „Bekanntschaft“ 
+
+(cid:2) ggf. Skalenfreies Netz
+
+– z.B. „Freundschaft“ 
+
+(cid:2) ggf. Small-world Netz
+
+– z.B. Straßensystem 
+
+(cid:2) zufälliges / räumlich strukturiertes Netz
+
+– z.B. Flugverkehr 
+
+(cid:2) Skalenfreies Netz
+
+• Expertenmeinung / empirisches Wissen erforderlich, um 
+
+angemessene Wahl treffen zu können 
+
+Dynamische Netzwerke (I)
+
+Interaktionen können temporär begrenzt sein
+
+•
+• Z.B.
+
+– Projektbezogene Zusammenarbeit in Wirtschaft, Wissenschaft, 
+
+Unterhaltungsindustrie
+
+– Freundeskreise / Bekanntschaften ändern sich (z.B. Wechsel 
+
+der Lebensphase)
+
+– Webseiten werden vom Netz genommen, Verknüpfungen 
+
+aktualisiert und verändert
+
+• Neue und wegfallende Beziehungen können zu einer 
+
+Neu-Austarierung im Netzwerk führen
+
+Dynamische Netzwerke (II)
+
+• Die relativen Geschwindigkeiten der Dynamik von 
+
+Änderungen im Netzwerk und von Prozessen die auf 
+dem Netzwerk ablaufen führen ggf. zu unterschiedlichen 
+Dynamiken
+– zeitliche Entkopplung: Prozess auf dem Netz viel schneller als 
+
+Veränderungen im Netz (cid:2) Prozess kommt zwischen 
+Veränderungen im Netz ins Gleichgewicht (cid:2) „Sprünge“ 
+zwischen Gleichgewichten
+
+– zeitliche Ähnlichkeit: die Dynamik von auf dem Netz ablaufenden 
+
+Prozessen wird durch Veränderungen in der Netzstruktur 
+beeinflusst
+
+Netlogo „Diffusion on a directed Network“
+
+*Models library (cid:2) Sample Models (cid:2) Networks (cid:2) Diffusion on a directed Network
+
+Dynamische Netzwerke (III)
+
+• Dynamische Netzwerke sind in der Modellierpraxis 
+
+(bisher) eher die Ausnahme 
+
+• Sie erhöhen die Komplexität der Modell-Dynamik ggf. 
+
+beträchtlich
+
+• Sollte ggf. berücksichtigt werden bei zeitlicher 
+
+Ähnlichkeit der Prozesse auf dem Netzwerk und der 
+Veränderungsdynamik im Netzwerk
+
+• Leit-Fragen zur Erstellung dynamischer Netzwerke:
+
+– wann werden Verknüpfungen erstellt?
+– wie entstehen neue Verknüpfungen (zufällig, über gemeinsame 
+
+Bekannte,…)?
+
+– Wann lösen sich Verknüpfungen?
+
+

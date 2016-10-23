@@ -1,0 +1,594 @@
+Prospect Theory:
+
+A very, very short introduction
+
+1
+
+Outline
+
+2
+
+1. Expected Utility Theory
+
+2. Gambling Time
+
+“Destructive Part”
+
+3. Prospect Theory
+
+“Constructive Part”
+
+4. Implications
+
+1. Expected Utility Theory
+
+3
+
+• Utility = function 
+
+of Expected 
+Outcomes (EO)
+Final states only
+
+•
+• Gambles = 
+
+lotteries
+
+• Certainty 
+
+equivalents
+
+• Concave: 
+
+decreasing marginal 
+utility & risk 
+aversion
+
+EUT: Risk Aversion
+
+4
+
+ Utility function U(w)=sqrt(w) 
+ Choice between:
+X
+1€
+
+Y
+10€ with a probability of .10
+
+ Expected outcome for both: 1€
+
+However,
+for w =  1 €, U gives u = 1
+
+EUT: Risk Aversion
+
+5
+
+Risk averse
+(concave)       (linear)
+
+ Risk neutral
+
+Risk seeking
+
+(convex)
+
+2. Empirical Evidence: Gambles
+
+6
+
+Gamble I
+
+Problem 1: Choose between
+A
+4000 with probability 0.80
+
+7
+
+B
+3000
+
+C
+Problem 2: Choose between
+4000 with probability 0.20
+
+D
+3000  with probability 0.25
+
+The Certainty Effect
+
+8
+
+Problem 1:
+
+A
+4000 with probability 0.80
+(EO = 3200)
+
+B
+3000
+(EO = 3000)
+
+20%
+
+80%
+
+Take both 
+times .25
+
+Problem 2:
+
+C = A * 0.25
+4000 with probability 0.20
+(EO = 800)
+
+D = C * 0.25
+3000 with probability 0.25
+(EO = 750)
+
+65%
+
+35%
+
+The Certainty Effect
+
+9
+
+Why does this violate EUT?
+ Odds for EO are the same in both cases:
+
+3000/3200 = 750/800 = 15/16
+
+ Hence, resulting utility should be consistent with the 
+
+same relation of probabilities.
+
+ Violates substitution (independence) axiom.
+
+Gamble II
+
+10
+
+Problem 3: Choose between
+E
+6.000 with probability 0.45
+
+F
+3000 with probability 0.90
+
+G
+Problem 4: Choose between
+6.000 with probability 0.001 3000 with probability 0.002
+
+H
+
+High vs. Low Probabilities
+
+11
+
+Problem 3:
+
+E
+6.000€ with probability 0.45
+(EO: 2700)
+
+F
+3000€ with probability 0.90
+(EO: 2700)
+
+14%
+
+86%
+
+Preferences change with magnitude of p
+
+G
+6.000€ with probability 0.001
+(EO: 6)
+
+Problem 4:
+
+H
+3000€  with probability 0.002
+(EO: 6)
+
+73%
+
+27%
+
+Gamble III
+
+12
+
+Problem 5: Choose between
+E
+-4.000 with probability 0.80 -3000
+
+F
+
+G
+Problem 6: Choose between
+-4.000 with probability 0.20 -3000 with probability 0.25
+
+H
+
+The Reflection Effect
+
+Problem 5:
+E = -A
+-4.000 with probability 0.80
+
+92%
+[A: 20%]
+
+13
+
+F = -B
+-3000
+
+8%
+[B: 80%]
+
+  
+
+G = -C
+-4.000 with probability 0.20
+Problem 6:
+42%
+[C: 65%] 
+
+H = -D
+-3000  with probability 0.25
+
+58%
+[D: 35%]
+
+Risk aversion for gains; Risk seeking for losses
+
+The Certainty Effect
+
+14
+
+Why does this violate EUT?
+
+
+
+
+
+
+
+
+
+Consider again U(w) = sqrt(w).
+
+If you have 10€ and can either 
+
+A) Loose 1 € for sure or 
+
+B) Loose 10€ with probability 0.10
+
+U(9) = 3
+
+U(10) = 3.16 * 0.9 (+ 0*0.1) = 2.84 
+
+ It remains risk averse, as it only considers final states!
+
+Gamble IV
+
+15
+
+Problem 7:
+Consider the following two-stage game. In the first stage, 
+there is a probability of .75 to end the game without winning 
+anything, and a probability of .25 to move into the second 
+stage. If you reach the second stage you have a choice 
+between 
+
+I: 4.000 with probability 0.80 and 
+J: 3000€ for sure.
+
+Your choice must be made before the game starts, i.e. before 
+the outcome of the first stage is known.
+
+The Isolation Effect
+
+16
+
+Problem 7:
+
+I
+4.000€ with probability 0.80 * 
+0.25 (EO = 800)
+
+J
+3000€.*0.25
+(EO = 750)
+
+22%
+
+78%
+
+Problem 2:
+
+C 
+4000 with probability 0.20
+(EO = 800)
+
+D
+3000 with probability 0.25
+(EO = 750)
+
+65%
+
+35%
+
+Presentation of a problem influences preferences
+
+The Isolation Effect
+
+Problem 2:
+
+First step in 
+problem 7 is often 
+ignored.
+
+Problem 7:
+
+17
+
+Empirical Evidence: Summary
+
+18
+
+EUT fails to account for…
+- The certainty effect
+- The High- vs. Low Probability effect
+- The Reflection effect
+- The Isolation Effect
+
+ An alternative account is needed for a descriptive 
+model of how people make decisions under risk.
+
+3. Prospect Theory
+
+19
+
+Structure
+Two phases of decision making:
+1. Editing Phase 
+2. Evaluation Phase
+ Value function υ
+ Weighting function π 
+
+Two scales
+
+Goal
+To account for the observed effects.
+
+3.1 Editing Phase
+
+20
+
+Different operations „translate“ prospects depending 
+on context and presentation of problem.
+
+Coding
+Combination
+Segregation
+Cancellation
+Simplification
+Detection of Dominance
+
+3.2 Evaluation Phase
+
+21
+
+Value function
+Assigns a subjective value υ(x) to changes in wealth/ 
+welfare x. 
+
+Three important properties:
+-It has a reference point  distinguishes gains &
+       losses.
+-It is S-shaped (gains: concave; losses: convex).
+-Slope is steeper for losses than for gains.
+
+3.2.1 Value Function
+
+22
+
+Gains: 
+Concave
+
+Losses:
+
+Convex & Steep
+
+Reference
+
+Point
+
+3.2. Evaluation Phase
+
+23
+
+Weighting function
+Gives decision weight π(p) as a  function of each given 
+probability p.
+
+Important properties:
+-NOT a measure of believe / probability.
+-Leads to undercertainty.
+-“Not well behaved at extremes”
+-  over-weighting / disregarding of very low probabilities
+
+3.2.2 Weighting Function
+
+24
+
+Fuzzy extremes
+
+Undercertainty
+
+Fuzzy extremes
+
+Prospect Theory
+
+25
+
+Putting it all together - The overall value of a regular prospect:
+
+V (x, p; y,q) = π(p) υ(x) +  π(q) υ(y)
+
+x, y = outcomes
+p,q = probabilities
+
+ π(p), π(q) = weighting functions
+
+ υ(x), υ(y) = value functions
+
+Gamble V (backup)
+
+26
+
+Problem 8: In addition to whatever you own, you have been given 1000€.
+
+You are now asked to choose between
+J
+500€.
+
+I
+1.000€ with probability 0.50 and
+
+Problem 9: In addition to whatever you own, you have been given 2000€.
+
+L
+-500€.
+
+K
+-1.000€ with probability 0.50 and
+
+You are now asked to choose between
+
+Framing: Gains vs. Losses
+
+27
+
+Problem 8: In addition to whatever you own, you have been given 1000€.
+
+You are now asked to choose between
+J
+500€.
+
+I
+1.000€ with probability 0.50 and
+
+16%
+
+84%
+
+Problem 9: In addition to whatever you own, you have been given 2000€.
+
+L
+-500€.
+
+K
+-1.000€ with probability 0.50 and
+
+You are now asked to choose between
+
+69%
+
+31%
+
+4. Implications
+
+28
+
+How are the reported effects accounted for?
+
+Effect
+
+Factor
+
+Certainty Effect
+
+Subcertainty (weighting function); editing
+
+Reflection
+
+Reference Point; S-shape of value function
+
+High vs low 
+probability effect
+Isolation effect
+
+Weighting function (extreme ends); editing
+
+Editing
+
+Loss aversion
+
+Steepness of value function
+
+4. Implications
+
+29
+
+(Historical) Impact:
+ Lead to Cumultative Prospect Theory (1992).
+
+ High impact on psychology & behavioral 
+
+economics.
+
+
+
+(Sort of a) paradigm shift from analytical to 
+synthetic theory-building in decision making.
+
+4. Implications
+
+30
+
+Rationality: “The Spock Quiz“
+
+Choice combination
+B-D
+E-G
+A-E
+C-G
+C-I
+
+A-C
+F-H
+B-F
+D-H
+D-J
+
+Some sort of normativity is implied!
+
+Last Slide
+
+31
+
+ Prospect Theory:
+
+ Editing Phase  Evaluation Phase
+ Two scales: value function & weighting function
+ Reference point  gains vs. losses
+
+ Destructive arguments agains EUT as descriptive model 
+
+of decision making under risk based on empirical 
+evidence.
+
+ Descriptive model for risk
+
+Resources
+
+32
+
+

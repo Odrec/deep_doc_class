@@ -1,0 +1,558 @@
+Grundlagen der physikalischen Chemie
+
+Adsorptionsisotherme
+
+24.11.2014
+
+1.Abgabe – 2.12.2014
+
+Gruppe 17 - Sören Vinke, Zunhao Wang, Niklas Schweinitz
+
+E-Mail: nschweinitz@uos.de
+
+Versuchsbetreuer: Brigitte Hartmann
+
+Aufgabenstellung:
+
+1.
+Untersucht   werden   die   Adsorptionseigenschaften   von   Aktivkohle   für   ein   Gemisch   aus
+Essigsäure   und   Wasser.   Bestimmt   werden   die   Adsorptionsisothermen   für   zwei
+Temperaturen, genauer Raumtemperatur (20°C) und 60°C. Im Anschluss an der Messung
+werden die Adsorptionsisothermen mit den Näherungen nach Freundlich und Langmuir
+überprüft und eine Auswertung zu beiden Theorien angefertigt.
+
+Durchführung:
+
+2.
+Zunächst wird eine Messreihe aus der 1 M Essigsäure hergestellt und gut homogenisiert. In
+Schraubdeckelgläschen werden jeweils  3g  Aktivkohle abgewogen, es werden 10 Gläser für
+zwei Versuchsreihen benötigt. Zur Aktivkohle werden jeweils 30ml der unterschiedlichen
+Konzentration der Essigsäure gegeben. Für die Versuchsreihe bei Raumtemperatur (20°C)
+werden die Gläser kontinuierlich per Hand geschüttelt, die Gläser der Versuchsreihe bei
+60°C werden in ein auf die gewünschte Temperatur eingestelltes Wasserbad gestellt und ab
+und zu kurz geschüttelt. Nach etwa 10 Minuten werden die Lösungen mit Faltenfilter
+abgefiltert, sodass keine Aktivkohle mehr in der Lösung ist. Nun wird mit 1 M und 0,1M
+Natronlauge (NaOH) titriert um die Konzentration  Cnach  der Essigsäure nach der Reaktion
+zu bestimmen. Die Werte werden notiert und die adsorbierte Menge an Essigsäure  α
+berechnet (siehe Messprotokollkopie im Anhang).
+
+Auswertung:
+
+3.
+Zur besseren Veranschaulichung wird die Auswertung in 5 Aufgabenteile (a bis e) aufgeteilt.
+Im ersten Teil a) werden die Werte der adsorbierten Menge  α gegen die Konzentration
+(nach der Reaktion) aufgetragen und anschließend diskutiert, sowohl für die Werte der
+Versuchsreihe bei Raumtemperatur (20°C), als auch für die Werte der Versuchsreihe bei
+60°C. Die graphische Veranschaulichung ist im Anhang unter Graph 1 zu finde.
+
+a) Wie in  Graph 1  zu sehen ist, liegt die Adsorptionsisotherme der höheren Temperatur
+unter der bei Raumtemperatur erzeugten Isotherme. Der Grund für diese Varition ist die
+Tatsache , das der Vorgang der Adsorption exotherm ist. Durch eine Temperaturerhöhung
+verschiebt sich nach dem Prinzip von Le Chatelier das Gleichgewicht auf die Eduktseite. In
+diesem Fall beudeutet es , dass bei erhöhter Temperatur der Anteil der Desorption steigt.
+
+In Aufgabenteil b) wird jede einzelne adsorptionsisotherme nach Langmuir untersucht,
+indem   die   reziproken   Werte   (die   Kehrwerte)   der   adsorbierten   Menge   und   der
+Konzentration nach der Reaktion gegeneinander Aufgetragen werden und anschließend
+diskutiert werden.
+
+b) Der Messpunkte aus  Graph 2  und  Graph 3  werden durch lineare Regression zu einer
+Geraden vereinheitlicht. Dabei erhält man aus der Geradengleichung die Werte für K und
+α∞ , nach der Formel :  α= α∞∗c
++ 1
+α∞ .
+Die Werte werden in Tabelle 1 zusammengefasst.
+
+K +c ≡ 1
+
+α= K
+α∞c
+
+Tabelle 1:  Bestimmung der Konstanten K und  α∞  aus Graph 2 und 3
+
+K(mol/l)
+0,016
+0,049
+
+α∞(mol/g)
+2,25*10-3
+2,65*10-3
+
+20°C
+60°C
+
+20°C
+60°C
+
+Analog zu Aufgabenteil b) wird in Aufgabenteil c) ebenfalls durch lineare Regression die
+Konstanten   der   Freundlichisothermen   bestimmt.   Hierbei   werden   die   Werte   der
+absorbierten Menge und Konzentration logarithmiert und gegeneinander aufgetragen.
+
+c) Die Messpunkte aus  Graph 4 und  Graph 5 werden durch die Regression ausgeglichen
+und aus der Steigung sowie dem y-Achsenabschnit erhalten wir die Werte der Konstanten k
+und n.  α=k∗c
+Die Werte sind mit folgender Tabelle zusammengefasst:
+
+n≡ln αk+ 1
+n
+
+1
+
+lnc
+
+Tabelle 2: Bestimmung der Konstanten k und n aus Graph 4 und 5
+
+k
+3,74*10-3
+3,59*10-3
+
+n
+2,86
+2,38
+
+In   Aufgabenteil   d)   werden   alle   Adsorptionsisothermen   zusammen   in   ein   graphisches
+System überführt und anschließend in Aufgabenteil e) diskutiert.
+
+d) Tabelle 3: Zusammenfassung der Adsorptionsisothermen nach Langmuir, Freundlich und
+den experimentellen Werten für 20°C
+Konzentration c
+480*10^-3
+275*10^-3
+78*10^-3
+12*10^-3
+4*10^-3
+
+αL
+0,002178
+0,002128
+0,001871
+0,000971
+0,000455
+
+αF
+0,002893
+0,002381
+0,001533
+0,000797
+0,000543
+
+αEx
+0.00270
+0.00225
+0.00172
+0.00088
+0.00046
+
+Tabelle 4: Zusammenfassung der Adsorptionsisothermen nach Langmuir, Freundlich und
+den experimentellen Werten für 60°C
+Konzentration c
+440*10^-3
+300*10^-3
+101*10^-3
+15*10^-3
+10*10^-3
+
+αL
+0,002384
+0,002278
+0,001784
+0,000621
+0,000449
+
+αF
+0,002807
+0,002455
+0,001678
+0,000861
+0,000747
+
+αEx
+0.00260
+0.00200
+0.00144
+0.00085
+0.00040
+
+Die Graphen 6 und 7 sind im Anhang zu finden.
+
+e) Die Freundlich-Isotherme ist bei   Raumtemperatur als auch bei der anderen Probe
+insgesamt näher an den experimentel gemessenen Daten 
+Die   Adsorptionsisotherme   nach   Freundlich   ist   sehr   Präzise   und   ist   daher   für   unsere
+Versuche geeignet. Dabei spiegelt sie auch die Experimentell ermittelten werte präziser
+wieder als die Langmuir-Isotherme. 
+ 
+Es kann daher davon ausgegangen werden , dass die Freundlich-Isotherme die bessere von
+beiden Darstellungen ist.
+
+4.
+
+Fehlerbetrachtung:
+
+Da beide Isotherme abweichen , muss man auf die Randbedingungen eingehen die den
+Beziehungen zu Grunde legen und somit als systematische Fehler gesehen werden können.
+Für   die   Langmuir-Isotherme   wurden   die   Annahmen   getroffen,   dass   es   nur   zu   einer
+Monolage adsorbierter Teilchen kommt , sowie das zwischen den adsorbierten Teilchen
+keine Wechselwirkung bestehen. Diese Annahmen scheinen im Experiment vor allem bei
+höheren   Temperaturen   nicht   zuzutreffen.   Was   man   auch   aus   dem   Bestimmheitsmaß
+herleiten kann.
+Die Bestimmtheitsmaße der reziproken Linearisieungen bei Raumtemperatur ist näher an
+eins und somit besser als die logaritmischen Linearisierungen. Für höhere Temperaturen
+dreht sich dieser Effekt um.  
+
+Tabelle 5: Bestimmtheitsmaß
+
+20°C
+60°C
+
+reziprok
+0,99
+0,90
+
+logarithmisch
+0,97
+0,92
+
+Die Langmuir-Isotherme asymptiert gegen einen Grenzwert,durch die Bedingungen die ihr
+zugrunde liegen.Grade bei höheren Konzentrationen enstpricht die Freundlich-Isotherme
+eher dem Verlauf der Experimentellen Werte.
+
+5. Anhang:
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+g
+
+/
+l
+
+o
+m
+n
+
+ 
+
+i
+ 
+
+α
+
+0
+
+0,1
+
+0,2
+
+0,3
+
+0,4
+
+0,5
+
+0,6
+
+c(nach) in mol/l
+
+Graph 1: Adsorbierte Menge α der Essigsäure
+
+b) 20
+
+f(x) = 7,06x + 444,35
+R² = 0,99
+
+20°C
+60°C
+
+20°C
+Linear (20°C)
+
+2500
+
+2000
+
+1500
+
+/
+
+α
+1
+
+1000
+
+500
+
+0
+
+0
+
+50
+
+100
+
+150
+
+1/c
+
+200
+
+250
+
+300
+
+Graph 2: Regression der reziproken Werte bei Raumtemperatur 20°C
+
+b) 60
+
+f(x) = 18,48x + 377,89
+R² = 0,9
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+1/c in l/mol
+
+3000
+
+2500
+
+2000
+
+1500
+
+1000
+
+500
+
+0
+
+0
+
+l
+
+o
+m
+g
+n
+
+ 
+
+/
+
+i
+ 
+
+/
+
+α
+1
+
+Graph 3: Regressionsgerade der reziproken Werte für 60°C
+
+c) 20
+
+-6
+
+-5
+
+-4
+
+-3
+
+-2
+
+-1
+
+ 
+
+α
+n
+
+l
+
+f(x) = 0,35x - 5,59
+R² = 0,97
+
+0
+
+0
+-1
+-2
+-3
+-4
+-5
+-6
+-7
+-8
+-9
+
+60°C
+Linear (60°C)
+
+20°C
+Linear (20°C)
+
+Graph 4: Regressionsgerade der logarithmierten Werte für Raumtemperatur 20°C
+
+ln c
+
+c) 60 
+
+-5
+
+-4,5
+
+-4
+
+-3,5
+
+-3
+
+-2,5
+
+-2
+
+-1,5
+
+-1
+
+ 
+
+α
+n
+
+l
+
+f(x) = 0,42x - 5,63
+R² = 0,92
+
+ln c
+
+0
+-0,5
+-1
+-2
+-3
+-4
+-5
+-6
+-7
+-8
+-9
+
+60°C
+Linear (60°C)
+
+Graph 5: Regressionsgerade der logarithmierten Werte für 60°C
+
+d) 20 
+
+Vergleich der Adsorptionisothermen
+
+0
+0
+0
+0
+0
+0
+0
+0
+
+α
+
+αEx
+αL
+αF
+
+0
+
+0,1
+
+0,2
+
+0,3
+
+c
+
+0,4
+
+0,5
+
+0,6
+
+Graph 6: Vergleich der Adsorptionsisothermen für 20°C nach Langmuir, Freundlich und
+
+der eigenen Beobachtung (Experiment)
+
+ 
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+α
+
+d) 60 Vergleich Adsorptionsisothermen
+
+αEx
+αL
+αF
+
+0
+
+0,05
+
+0,1
+
+0,15
+
+0,2
+
+0,25
+
+0,3
+
+0,35
+
+0,4
+
+0,45
+
+0,5
+
+c
+
+Graph 7: Vergleich der Adsorptionsisothermen für 60°C nach Langmuir, Freundlich und
+
+der eigenen Beobachtung (Experiment)
+
+

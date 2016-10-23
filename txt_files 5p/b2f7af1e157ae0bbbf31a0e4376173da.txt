@@ -1,0 +1,391 @@
+Recap - Last session
+Minutes from “A Functional Approach To Automatic Melody 
+Harmonisation” Koops et al (2013)
+
+Description-Based 
+Design of Melodies
+
+Pachet (2009)
+
+Robert Goß, Tobias Petri, Hiroshi Sawada, Marc Vidal.
+
+Outline
+
+Introduction
+Tagging
+Melody Categories
+The Experiment
+Discussion
+
+Introduction
+
+Introduction
+
+Current approaches in CAC (Computer-Aided Composition)
+
+◦ Building musical objects by connecting components 
+
+through different construction tools
+
+◦ 2 types: 
+
+▫ Time-lined Sequencers
+▫ Advanced Programming Languages and Libraries
+
+In favor → Control all dimensions of the work
+
+Against → Fine understanding of technicalities requirement
+
+Introduction
+
+Examples
+
+Introduction
+
+Solutions? → Alternative Systems
+◦ Attempt to escape from technical requirements
+
+Elody (Letz, Orlarey, and Fober 1998) 
+◦ Arbitrary abstractions creation by selecting 
+musical material and dimension of the music 
+◦ Con → user must keep in mind a model of the 
+
+abstraction algorithm at work 
+
+Introduction
+
+Melody Morphing Method (Hamanaka et al. 2008) 
+◦ Based on GTTM (Generative Theory of Tonal Music)
+◦ Melodies created as interpolations between two given 
+
+melodies
+
+◦ Con: Limited by GTTM, arbitrary categories not applicable
+
+Introduction
+
+Description-based design
+
+Successor
+
+The Continuator
+
+Goal
+◦ Creating simple musical objects (unaccompanied 
+
+melodies)
+
+▫ Remove the need of technical requirements
+
+Introduction
+
+How does DBDM work?
+1. Randomly object generation by the system
+2. Tagging of the objects using words
+3. Selection of starting object and a previous tag
+4. Asking the system to produce a “closer” object to the 
+
+selected by choosing more or less of the tag
+
+5. Addition of the new new object to the system palette 
+
+Melody categories
+
+5 Melody Types
+
+Tonal
+Have a clear tonal center
+
+Brown
+Only small intervalls
+
+Serial
+All pitches occur with equal 
+frequency
+
+Long/Short
+Depended on the number of 
+notes
+
+Sample sequences
+
+(a) - tonal
+(b) - serial
+(c) - brown
+
+Tagging
+
+Description-Based Design Approach
+
+Phase 1:
+Objects (Melodies) are created
+
+(either randomly or according to specific generators)
+
+User tags melodies with one or more words 
+(for example “dissonant”, “harmonic”, “jumpy”)
+
+Phase 2:
+
+User selects a starting object and a tag
+
+(for example “more jumpy”)
+
+The system then produces an object that satisfies being 
+“close” to the starting object while increasing the 
+probability of the new object to belong to the specified 
+tag
+
+Object Generator
+
+Technical features that describe objects (feature space):
+◦ Number of Notes
+◦ Mean value of the pitch sequence
+◦ Mean value of the “pitch interval” sequemce
+◦ Mean value of the velocity (MIDI information)
+◦ Tonal weight (Indication of tonality, “pitch profile” 
+
+algorithm)
+
+◦ Pitch compressability ratio (Measure of repetition)
+◦
+
+Interval compressability ratio 
+
+Objects (MIDI files) are generated either randomly or with 
+specific generators
+
+Feature selection algorithm
+
+Feature selection algorithm:
+
+Information Gain Ratio 
+-> selects most informative features for each class
+
+A Machine Learning Tagging System
+
+Support Vector Machine (SVM)
+◦ Binary classifier
+◦ Builds optimal hyperplane that maximizes the margin between 
+
+classes
+
+◦ New objects are classified according to geometrical distance
+◦ Classes are recomputed after each tagging
+◦ Classifier yields a probability (Inverse of the distance)
+◦ Accuracy depends on feature set and number of training 
+
+examples
+
+A Machine Learning Tagging System
+
+Support Vector Machine (SVM)
+
+A Combinatorial Generator
+
+Maximize:
+
+Increase/Decrease probability to belong to a class/tag:
+
+Usage of SVM-class propabilities
+
+Closeness to initial object:
+
+SVM-distances between objects not meaningful
+
+Use domain dependent differences instead
+
+Possible extension via compound commands:
+
+For example “less tonal AND more long”
+
+The Experiment
+
+Prerequisites
+
+◦ For each category, 72 samples 
+
+are created
+
+◦ Accomplished by generators, 
+
+according to the tags
+
+◦ Sequences of 0-16 notes 
+
+randomly created
+
+Generators
+
+Tonal
+
+Serial
+
+Brown
+
+Random notes 
+from a random 
+scale
+
+Random pitch 
+from initial list of 
+all pitches
+If list is empty, it 
+is refilled
+
+Random pitch, 
+next note 
+randomly drawn 
+from [-1,+1] 
+intervall
+
+Ex
+C - major
+
+Ex
+The 12 tone scale
+
+Ex
+C - C# - D - C#
+
+Variation generator
+
+◦ Variation added by using a 
+
+variation generator
+
+◦ Randomly:
+
+- modify pitch of a random note
+- insert a random note
+- remove a random note
+
+◦ Result is stored with its features
+
+Training
+
+◦ Examples are generated 
+◦ Classifiers trained with 
+
+examples and tags:
+
+- 72 positive and negative
+- negative examples -> 
+  random sequences from other
+  category
+
+‘Tonalizing’ a serial melody
+
+First experiment: 
+Making a serial sequence more tonal
+
+Concept:
+◦ Classifier selects non - tonal notes
+◦ Replaces them with tonal notes
+◦ Result: Higher probability of the 
+
+sequence being tonal
+
+◦ Command:
+More tonal
+
+‘Tonalizing’ a serial melody
+
+I
+II
+III
+IV
+V
+VI
+
+Initial probability:  5.7 %
+
+‘Tonalizing’ a serial melody
+
+In B - flat major, this melody is now 
+perfectly tonal!
+
+Final probability of being tonal:
+96 %
+
+Stretching a tonal melody
+
+◦ Stretching a tonal melody
+-> Adding more notes to it
+
+◦ Long and short features are 
+
+used
+
+◦ Command: 
+more long
+
+Stretching a tonal melody
+
+    initial
+
+Stretching a tonal melody
+
+◦ Stretching a tonal melody while 
+
+keeping tonality
+
+-> Adding more notes to it
+-> keeping the scale
+
+◦ Command: 
+
+more long AND as tonal
+
+ Making a Tonal Melody More Brown
+
+ Making a Tonal Melody More Brown
+
+Result
+
+Discussion
+
+Further Development plan (Discussion) from the author
+
+◦ Decision tree can substitute SVM.
+◦ GA is often used for creating Variations 
+
+but more difficult to control.
+
+◦ This system can be used for analyzing 
+
+chord, chord progression, and 
+harmonized melody.
+
+◦ Tone color tagging with FM synthesize 
+
+would be applied in this scheme.
+
+Criticism & Discussion
+
+◦ The evaluation of the tags used for the 
+
+experiments can be also be 
+deterministically defined without 
+training.
+
+◦ The tags for experiments was too simple 
+
+to say capability of this tool.
+
+◦ How much extent did the authors take 
+
+into account knowledge of one of music 
+form : Theme and its Variations?
+
+◦ https://www.youtube.com/watch?v=-jDR14y19fQ
+
+Application (Replication)
+
+https://music-emotion-face.herokuapp.com/
+
+Questions & answers
+
+Thanks for your attention.
+
+

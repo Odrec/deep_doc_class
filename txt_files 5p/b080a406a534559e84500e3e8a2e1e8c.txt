@@ -1,0 +1,759 @@
+The Functional Neuroanatomy of  
+
+Speech Perception  
+
+ 
+
+Insights from Electrocorticography on an Epilepsy Patient 
+
+Watching a Movie 
+
+P h i l i p p   K u h n ke   –   p k u h n ke @ u o s . d e  
+
+Electrocorticography (ECoG) 
+
+3 
+
+Research Questions 
+
+5 
+
+Which brain regions distinguish  
+ 
+ 
+ 
+and when do they do this (time course)? 
+
+(1) speech from non-speech sounds 
+(2) speech with seen lip movements of the speaker from 
+      speech without seen lips 
+
+Thesis Structure 
+
+6 
+
+1.
+
+2.
+
+3.
+
+Introduction 
+Speech Processing in the Brain 
+Experiment 
+1. Methods 
+
+
+
+
+
+
+
+Participant 
+Apparatus 
+Stimulus Material 
+
+2.
+
+Analysis 
+Results 
+Discussion 
+4. Conclusion 
+
+3.
+
+4.
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Speech Processing in the Brain 
+
+7 
+
+Language-relevant areas of the cerebral cortex 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Evidence from Aphasias 
+
+8 
+
+Broca‘s Aphasia 
+
+a.
+
+b.
+
+It’s hard to eat with a spoon. 
+… har eat … wit … pun. 
+
+ speech production impaired 
+
+ 
+
+Wernicke‘s Aphasia 
+
+E: How are you today, Mrs. A? 
+A: Yes. 
+E: Have I ever tested you before? 
+A: No. I mean I haven’t. 
+E: Can you tell me what your name is? 
+A: No, I don’t I… right I’m right now here. 
+E: What is your address? 
+A: I cud if I can help these this like you know… to 
+make it. We are seeing for him. That is my father. 
+
+ speech comprehension impaired 
+
+Transcortical Sensory Aphasia 
+ very similar to Wernicke‘s 
+ BUT: repetition intact 
+ post-phonemic deficit 
+      (pITL: MTG & ITG) 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Wernicke-Geschwind Model 
+
+9 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Problems: Wernicke-Geschwind Model 
+
+10 
+
+ Broca‘s area is not exclusively expressive,  
+
+Wernicke‘s area is not exclusively receptive 
+ 
+
+ regions other than Wernicke‘s & Broca‘s area involved 
+
+ 
+
+ different subregions perform different functions  
+
+ functional subdivision necessary 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Stages in Speech Perception 
+
+11 
+
+1.
+
+Initial processing of all sounds (speech & non-speech) in PAC 
+
+ 
+
+2. Sound-based representations of speech 
+
+ speech identified & discriminated from non-speech  
+
+ 
+
+3.
+
+Linguistic components analyzed for larger structures  
+(phonemes  syllables  words  sentences) 
+ Syntactic, Semantic, and Prosodic Processes 
+
+ 
+
+4. Discourse processing 
+
+ 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Hickok & Poeppel (2000, 2004): Dorsal & Ventral Streams 
+
+12 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Friederici (2012): Auditory Sentence Processing 
+
+13 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Discourse Processing 
+
+14 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Audiovisual Speech Perception 
+
+15 
+
+(a) visual cortex  (b) STG  (c) pSTS & IPL  (d) IFG  (e) motor cortex 
+
+Observation of lip movements: 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Experiment 
+
+16 
+
+Participant 
+ 19-year old male 
+ English native speaker 
+ ambidextrous (wrote with right hand) 
+ medically refractory epilepsy 
+
+ ECoG 
+ 
+
+ 
+
+  
+Inferior temporal gyrus 
+Middle temporal gyrus 
+Superior temporal gyrus (lateral aspect) 
+
+Superior temporal gyrus (temporal plane) 
+
+Superior temporal sulcus 
+Supramarginal gyrus 
+Angular gyrus 
+Superior parietal lobe 
+Fusiform gyrus 
+Medial wall 
+Middle occipital gyrus 
+Inferior occipital gyrus and sulcus 
+Superior occipital gyrus 
+Occipital pole  
+Collateral and lingual sulcus 
+Lingual gyrus 
+Parahippocampal gyrus 
+Cuneus 
+Precuneus 
+Cingulate gyrus (posterior-dorsal part) 
+Cingulate isthmus 
+SUM 
+
+Electrodes 
+
+4 
+10 
+4 
+
+1 
+
+2 
+3 
+6 
+2 
+7 
+3 
+5 
+1 
+3 
+3 
+1 
+8 
+5 
+7 
+35 
+16 
+4 
+
+130 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Analysis 
+
+17 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Speech vs. Non-Speech 
+
+18 
+
+Samples: 1299 speech, 152 non-speech sounds 
+
+ 
+
+Controls 
+
+1.
+
+Faces 
+
+2.
+
+3.
+
+ excluded all samples with faces  
+
+ 80 speech, 56 non-speech sounds 
+Loudness 
+
+ loudness threshold (80dB) s.th. mean loudness as 
+
+similar as possible 
+ 75 speech, 42 non-speech sounds 
+Spectral Frequency (Pitch) 
+
+ for each non-speech sound: picked speech sample 
+most similar in spectral frequency (Discrete Fourier 
+Transform) 
+ 42 speech, 42 non-speech sounds 
+
+Loudness Distributions 
+
+non-speech 
+
+speech 
+
+Results: Speech vs. Non-Speech 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Results: Speech vs. Non-Speech 
+
+20 
+
+Regions 
+
+Differentiation times  
+(start time of first significant difference period for each electrode) 
+
+Superior parietal lobe 
+
+2.392f = 99,7ms 
+
+7.288f = 303.7ms  
+
+Angular gyrus 
+
+3.316f = 138.2ms 
+
+  
+
+  
+
+  
+
+Cingulate isthmus 
+
+3.856f = 160.7ms 
+
+4.696f = 195.7ms 
+
+5.26f = 219.2ms 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Precuneus 
+
+Cuneus 
+
+4.408f = 183.7ms 
+
+4.528f = 188.7ms 
+
+5.176f = 215.7ms 
+
+5.788f = 241.2ms 
+
+11.92f = 496.7ms 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+4.636f = 193.2ms 
+
+Supramarginal gyrus 
+
+5.032f = 209.7ms 
+
+STG (planum temporale) 
+
+5.08f = 211.7ms 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Fusiform gyrus 
+
+5.152f = 214.7ms 
+
+15.16f = 631.7ms 
+
+15.712f = 654.7ms 
+
+18.556f = 773.2ms 
+
+Medial wall 
+
+5.32f = 221.7ms 
+
+Occipital pole 
+
+6.316f = 263.2ms 
+
+  
+
+  
+
+MTG 
+
+8.848f = 368.7ms  
+
+18.4f = 766.7ms 
+
+  
+
+  
+
+  
+
+Lingual gyrus 
+
+10.216f = 425.7ms 
+
+12.292f = 512.2ms 
+
+18.628f = 776.2ms 
+
+  
+
+  
+
+  
+
+  
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Speech with Lips vs. Speech without Lips  
+
+Samples: 894 with lips, 233 without lips 
+
+21 
+
+ 
+
+Controls 
+
+1.
+
+Faces 
+
+ in 133 samples without lips: could see face 
+
+2.
+
+Loudness 
+
+ unnecessary: similar distributions & mean loudness 
+
+3.
+
+Spectral Frequency (Pitch) 
+
+ for each sample without lips: sample with lips 
+
+closest in spectral frequency 
+ 233 with lips, 233 without lips 
+
+Loudness Distributions 
+
+without lips 
+
+with lips 
+
+Results: Speech with Lips vs. Speech without Lips 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Results: Speech with Lips vs. Speech without Lips 
+
+Regions 
+
+MTG 
+
+23 
+
+Differentiation times  
+(start time of first significant difference period for each electrode) 
+
+3.928f = 163.7ms 
+
+10.888f = 453.7ms 
+
+13.912f = 579.7ms 
+
+17.152f = 714.7ms  17.44f = 726.7ms 
+
+STG (planum temporale) 
+
+5.428f = 226.2ms 
+
+  
+
+  
+  
+
+  
+  
+
+Precuneus 
+
+5.908f = 246.2ms 
+
+9.064f = 377.7ms 
+
+9.328f = 388.7ms 
+
+STG (lateral aspect) 
+
+6.16f = 256.7ms 
+
+15.508f = 646.2ms  
+
+  
+
+Cingulate isthmus 
+
+8.776 = 365.7ms 
+
+9.544f = 397.7ms 
+
+11.536f = 480.7ms  
+
+Angular gyrus 
+
+10.072f = 419.7ms 
+
+Cingulate gyrus  
+(posterior-dorsal part) 
+
+10.18f = 424.2ms 
+
+  
+
+Superior occipital gyrus 
+
+11.164f = 465.2ms 
+
+  
+
+  
+
+  
+
+Inferior temporal gyrus 
+
+11.404f = 475.2ms  15.088f = 628.7ms  
+
+Middle occipital gyrus 
+
+12.616f = 525.7ms 
+
+STS 
+
+15.088f = 628.7ms 
+
+Fusiform gyrus 
+
+15.172f = 632.2ms 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Discussion: Speech vs. Non-Speech 
+
+24 
+
+ Regions involved in speech processing stages beyond PAC 
+
+ STG: sound-based representations, aSTG: ventral stream, pSTG: dorsal stream 
+ MTG: conceptual-semantic representations 
+ Angular Gyrus: semantic processing  easily predictable words 
+ Cingulate Isthmus & Precuneus: discourse processing 
+
+ Exceptions 
+
+ Lingual gyrus: often disregarded as reflecting different cognitive mechanism (visual) 
+
+ lingual gyrus might be important 
+
+ Superior Parietal Lobe: more strongly activated during phonetic judgment task than 
+
+during passive speech perception 
+ active, attentional aspects of speech perception 
+
+ Cuneus & Occipital Pole: traditional visual areas 
+
+ visual cortex can be selectively activated by speech (native language) 
+ but: possible that due to confounding visual factor 
+
+ 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Discussion: Speech with Lips vs. Speech without Lips 
+
+25 
+
+ STS (& lateral aspect of STG): site of audiovisual integration 
+ Planum Temporale (of STG): PT not restricted to early auditory processing 
+ Angular Gyrus: maps visual information onto representations of language 
+
+ maps visual information on speaker‘s lip movements onto speech representations 
+ 
+
+ Less clear: MTG, ITG, Precuneus & Posterior Cingulate, Fusiform Gyrus, Superior & 
+
+Middle Occipital Gyrus 
+ many of them: speech processing regions 
+
+ visual information on the speaker's lip movements significantly  
+      influences speech processing 
+ there may be a „common code“ underlying both auditory & visual speech info, 
+     BUT visual info treated differently than auditory 
+
+ 
+ 
+
+Speech Processing   –   Experiment   –   Discussion 
+
+Discussion: Time Course 
+
+26 
+
+ may reflect information flow  connectivity analysis 
+
+ 
+
+ strong differences in differentiation times across electrodes in same region 
+
+1.
+
+2.
+
+speech vs. non-speech: superior parietal lobe, precuneus, MTG, lingual gyrus and 
+fusiform gyrus 
+speech with lips vs. speech without lips: MTG, lateral aspect of STG and ITG  
+(also: precuneus & cingulate isthmus) 
+
+ same region = part of different functional networks / pathways 
+ functional subdivision necessary 
+
+ 
+ 
+
+Thanks for 
+listening! 
+
+

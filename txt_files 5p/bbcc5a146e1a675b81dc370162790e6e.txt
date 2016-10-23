@@ -1,0 +1,3345 @@
+IT-Assurance 
+
+Methoden der IT-Revision 
+
+Summer School, Osnabrück, 15.08.2016 
+
+Summer School 2016 Agenda 
+
+Tag 1  Kick-off 
+ 
+ 
+
+Begrüßung, Vorstellung & Aufteilung in Gruppen 
+Fallstudie IT-Assurance 
+
+Tag 2  Fallstudie IT-Sourcing 
+ 
+ 
+
+EY Career – Unternehmenspräsentation 
+Social Event – Gemeinsames Grillen 
+
+Tag 3  Fallstudie IT-Benchmarking 
+ 
+
+Fallstudie Projektrisikomanagement (Vorstellung) 
+
+Tag 4  Anreise von Osnabrück nach Hannover 
+ 
+ 
+ 
+
+EY Begrüßungsrede 
+Fallstudie Projektrisikomanagement Gruppenpräsentationen 
+Closing – Rückblick, Feedback, Verabschiedung & Rückreise 
+
+2 
+
+15. August 2016 
+
+IT-Assurance 
+
+Agenda 
+
+1. Begriff der Revision 
+
+2. IT-Ordnungsmäßigkeit und Jahresabschlussprüfung 
+
+3. Interne Kontrolle / Internes Kontrollsystem 
+
+4. Gesetzliche Grundlagen und Standards 
+
+5. Prüfungsrisiko und Prüfungsstrategie 
+
+6. Kontrollen und Prüfungshandlungen 
+
+7. Einsatz von Prüfsoftware 
+
+3 
+
+15. August 2016 
+
+IT-Assurance 
+
+Begriff der Revision 
+
+Revidere lat. re „wieder, zurück“ und videre „ansehen“: - Überprüfen 
+
+Prüfen heißt: 
+
+1. Ist-Zustand  
+aufnehmen 
+
+2. Soll-Zustand 
+
+ableiten 
+
+3. über 
+
+Abweichungen 
+berichten und ggf.  
+Empfehlungen  
+abgeben 
+
+Soll-System 
+“Normen” 
+
+Ist-System 
+
+Abweichung 
+
+Quelle: HWP 3.11 
+
+4 
+
+15. August 2016 
+
+IT-Assurance 
+
+Begriffsabgrenzung 
+Kontrolle / Aufsicht / Revision 
+
+Kontrolle 
+
+Aufsicht 
+
+Revision 
+
+gegenwartsbezogen 
+
+gegenwarts- / 
+vergangenheitsbezogen 
+
+vergangenheits- / 
+zukunftsbezogen 
+
+ständig 
+
+periodisch im Ermessen der 
+Aufsichtsstelle, bei 
+Abweichungen 
+
+unregelmäßig 
+
+ 
+
+am Arbeitsablauf 
+
+beteiligt, weisungsberechtigt 
+
+nicht am Arbeitsablauf beteiligt, 
+weisungsberechtigt 
+
+nicht am Arbeitsablauf beteiligt, 
+nicht weisungsberechtigt, nicht 
+weisungsgebunden 
+
+Einflussnahme durch 
+Motivation,  
+Anordnungen, Sanktionen 
+
+Einflussnahme durch 
+Weisungen an leitende Organe, 
+Sanktionen 
+
+Einflussnahme durch Mitteilung 
+an leitende Organe oder 
+Aufsichtsgremien 
+
+Fachvorgesetzte, 
+Linienvorgesetzte 
+
+Audit Comittee, Aufsichtsrat, 
+etc. 
+
+Revisionsstelle 
+
+Beispiele 
+
+Erreichen von Zielsetzungen, 
+Einhalten von 
+Handlungsanweisungen 
+
+Quelle: HWP 3.11 
+
+Einhaltung Richtlinien, Gesetze,  
+Statuten 
+
+Abschlussprüfung, Post-
+Investment-Prüfung 
+
+ 
+
+5 
+
+15. August 2016 
+
+IT-Assurance 
+
+Begriffsabgrenzung 
+Interne / Externe Revision 
+
+Interne Revision 
+
+Externe Revision 
+
+„Freiwillig bzw. Bankengesetz“ 
+
+Im Auftrag des Verwaltungsrates 
+
+Gesetzlich abgestützt, klare 
+Anforderungen an Kompetenz und 
+Unabhängigkeit 
+
+Wahl durch GV, nicht 
+weisungsgebunden 
+
+Breites Tätigkeitsfeld: IKS, Prozesse, 
+Reporting, Geschäftsführung, Schutz der 
+Vermögenswerte 
+
+Vorwiegend Abschlussprüfung 
+
+ 
+
+Interne Unabhängigkeit 
+
+Unterliegt Organhaftung, formelle und 
+substanzielle Unabhängigkeit 
+
+6 
+
+15. August 2016 
+
+IT-Assurance 
+
+Agenda 
+
+1. Begriff der Revision 
+
+2. IT-Ordnungsmäßigkeit und Jahresabschlussprüfung 
+
+3. Interne Kontrolle / Internes Kontrollsystem 
+
+4. Gesetzliche Grundlagen und Standards 
+
+5. Prüfungsrisiko und Prüfungsstrategie 
+
+6. Kontrollen und Prüfungshandlungen 
+
+7. Einsatz von Prüfsoftware 
+
+7 
+
+15. August 2016 
+
+IT-Assurance 
+
+Einordnung der IT in das Geschäftsmodell 
+
+Unternehmensziele, -strategie 
+
+Risikomanagement 
+
+Unternehmenskommunikation 
+
+Management- 
+prozesse 
+
+Strategisches Controlling / Internes Kontrollsystem (IKS) 
+
+Identifikation kritischer Erfolgsfaktoren 
+
+Kern- 
+prozesse 
+
+Vertrieb / 
+techn. 
+Kunden-
+beratung / 
+Marketing 
+
+Planung / 
+Steuerung 
+
+Einkauf 
+
+Produktion 
+
+Logistik 
+
+Finanzen (Rechnungswesen / Controlling /Treasury) 
+
+Qualitätsmanagement / Verbesserungsprozesse 
+
+Unterstützungs- 
+prozesse 
+
+Personal 
+
+Interne Dienste 
+
+Organisation / Informatik 
+
+Gesell- 
+schafter 
+
+Kunden 
+
+Umfeld 
+
+Infrastruktur 
+
+Anwendungen 
+
+IT-Prozesse 
+
+►Konzepte 
+►Kontrollen 
+►Organisation 
+
+►Hardware 
+►Netzwerke 
+►IT-Betrieb 
+
+ 
+
+►Betriebssystem 
+►Sicherheitskonzept 
+
+►SAP FI/CO 
+►SAP HR 
+►Sonstige 
+
+ 
+
+►Datenbanken 
+►Warenwirtschaft 
+
+►Datenherkunft 
+►Datenverarbeitung 
+►Datenübergabe 
+
+IT 
+
+8 
+
+15. August 2016 
+
+IT-Assurance 
+
+Auswirkung von IT auf die JA-Prüfung 
+
+► IT ist integraler Bestandteil vieler wesentlicher Prozesse 
+
+► Steigende Komplexität von IT Umgebungen in Unternehmen 
+
+► Erwartung des Mandanten in Bezug auf technologische Risiken ist 
+
+zu adressieren 
+
+► Fast alle Mandanten weisen IT-bezogene Risiken auf 
+
+► Die Prüfungsteams benötigen Verständnis für 
+
+► IT-Konzepte 
+
+► IT-bezogene Risiken 
+
+► wirksame Kontrollen für IT-bezogene Risiken 
+
+► wirksame Tests IT-bezogener Kontrollen 
+
+ 
+
+IT-spezifische Kenntnisse sind für eine Jahresabschlussprüfung essentiell! 
+
+ 
+
+ 
+9 
+
+ 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT-relevante Bereiche 
+
+IT Umgebung 
+
+Eingabe 
+
+Anwendung 
+
+Ausgabe 
+
+Basissystem / Daten 
+
+Netzwerk 
+
+Betriebssystem 
+
+Hardware 
+
+10 
+
+15. August 2016 
+
+IT-Assurance 
+
+Rolle des IT-Prüfers in der JA-Prüfung 
+
+Reguläre 
+Prüfung 
+
+IT Prüfung 
+
+►
+
+►
+
+►
+
+►
+
+Identifikation der relevanten IT-Systeme und der relevanten 
+Informationsflüsse 
+
+Identifikation systemseitig bestehender Risiken 
+
+Beurteilung der Wirksamkeit systemseitig existierender Kontrollen 
+
+Unter Berücksichtigung regulatorischer Anforderungen, wie GoBS, FAIT I 
++ II und PS330 
+
+11 
+
+15. August 2016 
+
+IT-Assurance 
+
+Anforderungen an den IT-Prüfer (I) 
+
+Unabhängigkeit 
+
+► Unabhängigkeit von der zu prüfenden Organisation / Instanz 
+► Direktes Reporting an die höchsten Instanzen 
+
+ 
+
+Kompetenz 
+
+► Kenntnisse im breiten Spektrum von IT-Prozessen, IT-Architekturen, 
+
+Anwendungs- und Betriebssystemen 
+
+► Planungstechniken 
+► Audit Tools 
+► Technisch und systematisch up to date (steter Wandel) 
+► Fähigkeit generelle Kontrollziele in einer bestimmten IT-Umgebung zu 
+
+konkretisieren, deren Einhaltung zu prüfen und Kontrollrisiken 
+abzuschätzen 
+ 
+
+12 
+
+15. August 2016 
+
+IT-Assurance 
+
+Anforderungen an den IT-Prüfer (II) 
+
+Anforderungen an die Persönlichkeit des Prüfers: 
+
+Phasen 
+
+Dominierende Eigenschaft 
+
+Einarbeitung 
+
+(Familiarization) 
+
+Tatsachenermittlung 
+
+(Verification) 
+
+Bewertung 
+
+(Evaluation) 
+
+Empfehlung 
+
+(Recommendation) 
+
+Berichterstattung 
+
+(Reporting) 
+
+13 
+
+15. August 2016 
+
+IT-Assurance 
+
+Neugier, Kontaktfreudigkeit, 
+Diplomatie, Lernfähigkeit 
+
+Fachliches Können, berufliche 
+Erfahrung, Beharrlichkeit, Systematik 
+
+Objektivität, kritisches Urteil, 
+wirtschaftliches Denken 
+
+Phantasie, Innovationsfreudigkeit, 
+Organisationstalent 
+
+Überzeugungsfähigkeit, Sinn für 
+Proportionen, klar im Ausdruck 
+
+Kernelemente der Ordnungsmäßigkeit 
+
+8 Kriterien 
+
+3 Funktionen 
+
+(1) vollständig              (5) nachvollziehbar 
+
+(1) Belegfunktion 
+
+(2) richtig (wahr)          (6) berechtigt 
+
+(3) geordnet                 (7) unveränderlich  
+
+(4) periodengerecht     (8) authentisch 
+
+ 
+ 
+ 
+
+Existenz und Verarbeitungsberechtigung 
+Nachvollziehbarkeit Urbeleg -> Abschluss 
+Definition „gilt als gebucht“ 
+
+ 
+
+(2) Journalfunktion 
+ 
+ 
+
+zeitliche Entstehung / Ordnung der GeV 
+Verhinderung Veränderung / Löschung 
+
+(3) Kontenfunktion (sachliche Ordnung) 
+
+Internes Kontrollsystem 
+
+Sicherstellung, dass alle Geschäftsvorfälle ordnungsgemäß dokumentiert und 
+ordnungsgemäß verarbeitet werden können. 
+
+14 
+
+15. August 2016 
+
+IT-Assurance 
+
+Agenda 
+
+1. Begriff der Revision 
+
+2. IT-Ordnungsmäßigkeit und Jahresabschlussprüfung 
+
+3. Interne Kontrolle / Internes Kontrollsystem 
+
+4. Gesetzliche Grundlagen und Standards 
+
+5. Prüfungsrisiko und Prüfungsstrategie 
+
+6. Kontrollen und Prüfungshandlungen 
+
+7. Einsatz von Prüfsoftware 
+
+15 
+
+15. August 2016 
+
+IT-Assurance 
+
+Internes Kontrollsystem 
+
+► Ziel des IKS: 
+
+► Das interne Kontrollsystem unterstützt und sichert 
+
+►  eine ordnungsgemässe und effiziente Geschäftsführung, 
+
+►  die Einhaltung geschäftspolitischer Grundsätze, 
+
+►  den Schutz des Geschäftsvermögens, 
+
+►  die Verminderung und Aufdeckung von Fehlern und 
+
+Unregelmässigkeiten, 
+
+►  die Zuverlässigkeit und Vollständigkeit der Buchführung, 
+
+►  die zeitgerechte Rechnungslegung mit zuverlässigen finanziellen 
+
+Informationen.  
+
+ 
+
+Kontrolle: 
+
+► Interne Kontrolle umfasst alle überwachenden Massnahmen, welche in 
+
+die betrieblichen Arbeitsläufe integriert sind 
+
+ 
+
+16 
+
+15. August 2016 
+
+IT-Assurance 
+
+Ausgestaltung des IKS durch das 
+Unternehmen 
+
+ 
+
+n
+e
+
+t
+i
+
+i
+
+e
+h
+n
+e
+s
+n
+e
+m
+h
+e
+n
+r
+e
+
+t
+
+n
+U
+
+ 
+
+n
+e
+t
+n
+e
+n
+o
+p
+m
+o
+K
+
+Kontrollumfeld 
+
+Risikobeurteilungen 
+
+Kontrollaktivitäten 
+
+ 
+ 
+-
+o
+
+i
+t
+k
+n
+u
+f
+s
+n
+e
+m
+h
+e
+n
+r
+e
+
+t
+
+n
+U
+
+Information und Kommunikation 
+
+Überwachung des IKS 
+
+17 
+
+15. August 2016 
+
+IT-Assurance 
+
+ 
+
+e
+s
+s
+e
+z
+o
+r
+p
+-
+ 
+d
+n
+u
+n
+e
+n
+
+ 
+
+Agenda 
+
+1. Begriff der Revision 
+
+2. IT-Ordnungsmäßigkeit und Jahresabschlussprüfung 
+
+3. Interne Kontrolle / Internes Kontrollsystem 
+
+4. Gesetzliche Grundlagen und Standards 
+
+5. Prüfungsrisiko und Prüfungsstrategie 
+
+6. Kontrollen und Prüfungshandlungen 
+
+7. Einsatz von Prüfsoftware 
+
+18 
+
+15. August 2016 
+
+IT-Assurance 
+
+Gesetzliche Grundlagen und Standards 
+
+Rechtliche 
+
+Anfor-
+
+derungen 
+
+GoB 
+
+GoBS 
+
+HGB 
+
+AO 
+
+Grundsätze ordnungsmäßiger Buchführung: 
+Kein Gesetzesbuch, umfasst aber eine Vielfalt von allgemeinen Grundlagen und 
+Standards  
+
+Grundsätze ordnungsmäßiger DV-gestützter Buchführungssysteme 
+
+Handelsgesetzbuch 
+§ 238 Buchführungspflicht 
+§ 239 Führung der Handelsbücher 
+§ 257 Aufbewahrung von Unterlagen, Aufbewahrungsfristen 
+ 
+Abgabenordnung 
+§ 145 Allgemeine Anforderungen an Buchführung und Aufzeichnungen  
+§ 146 Ordnungsvorschriften für die Buchführung und für Aufzeichnungen  
+§ 147 Ordnungsvorschriften für die Aufbewahrung von Unterlagen 
+
+GdPDU 
+
+Grundsätze zum Datenzugriff und zur Prüfbarkeit digitaler Unterlagen 
+
+Prüfungs-
+standards 
+des IDW 
+
+PS 330 
+
+RS FAIT1  
+
+RS FAIT2  
+
+ 
+IDW Prüfungsstandard: Abschlussprüfung bei Einsatz von IT 
+ 
+IDW Stellungnahme zur Rechnungslegung: GoB bei Einsatz von 
+
+Informationstechnologie 
+
+IDW Stellungnahme zur Rechnungslegung: GoB bei Einsatz von Electronic 
+
+Commerce 
+
+Sowie fachliche Stellungnahmen (FAMA etc.) bzw. ausländische regulatorische Anforderungen 
+(SOX/J-SOX)  
+
+19 
+
+15. August 2016 
+
+IT-Assurance 
+
+Gegenüberstellung von 
+IT Internal Control Frameworks 
+
+Zielgruppe 
+
+Wird beschrieben 
+über 
+
+Organisatorische 
+Ziele 
+
+CobiT 
+Management, IS-Prüfer, 
+Anwender 
+
+Reihe von Prozessen: 
+Regeln, Abläufe, 
+Methoden & 
+Organisationsstrukturen 
+
+Effektives & effizientes  
+IT-Prozess Management; 
+
+Vertraulichkeit, Integrität & 
+Verfügbarkeit von 
+Informationen; Compliance 
+mit Gesetzen und Regeln 
+
+IDW PS 330 
+IS-Prüfer 
+
+Regelwerk für IT-
+Systemprüfung 
+
+ITIL 
+Operatives  
+IT-Management 
+
+COSO 
+Management 
+
+Standardisierte Prozesse, 
+Abläufe & Best Practice 
+Bibliothek 
+
+Operative Prozesse, 
+Risikopraktiken 
+
+Beurteilung des  
+IT-gestützten 
+Rechnungslegungs-
+system: Infrastruktur-, 
+Anwendungs- und 
+Geschäftsprozessrisi-
+ken; inhärente und 
+Kontrollrisiken 
+
+Effektive & effiziente IT- 
+Abläufe; 
+
+Effektive & effiziente 
+Management Abläufe; 
+
+Zuverlässiges System; 
+Compliance mit 
+technischer Best Practice 
+und Industriestandards für 
+Sicherheit und Kontinuität 
+
+Zuverlässiges Reporting; 
+Abstimmung der 
+operativen Abläufe mit 
+Risikomanagement und 
+rechtlicher Compliance 
+
+Komponenten/ 
+Domänen 
+
+Planung & Organisation, 
+Beschaffung & Einführung 
+
+Auslieferung & Unter-
+stützung, Überwachung 
+
+IT-Umfeld,  
+
+IT-Organisation,  
+
+IT-Infrastruktur,  
+
+IT-Anwendungen,  
+
+IT-Geschäftsprozesse 
+
+Kontrollumgebung, 
+Manuel & automatisch, 
+Systemkontrollabläufe 
+
+Kontrollumgebung, 
+Risikomanagement 
+Kontrolle, Aktivitäten- & 
+Kommunikations-
+überwachung 
+
+Fokus 
+
+IT-spezifisch, risikoorientiert 
+
+Performanceorientiert 
+
+Allumfassend 
+
+CobiT: 
+IDW: 
+
+International akzeptierter, ganzheitlicher, prozessorientierter Ansatz  
+Nationaler, komponentenbasierter Prüfungsstandard 
+
+20 
+
+15. August 2016 
+
+IT-Assurance 
+
+ 
+
+7
+0
+0
+2
+
+ 
+,
+
+h
+c
+r
+a
+e
+s
+e
+R
+ 
+y
+r
+t
+s
+u
+d
+n
+
+I
+ 
+r
+e
+n
+
+t
+r
+a
+G
+
+ 
+:
+
+ 
+
+n
+a
+g
+n
+u
+n
+h
+e
+n
+A
+n
+
+l
+
+ 
+
+I
+
+Agenda 
+
+1. Begriff der Revision 
+
+2. IT-Ordnungsmäßigkeit und Jahresabschlussprüfung 
+
+3. Interne Kontrolle / Internes Kontrollsystem 
+
+4. Gesetzliche Grundlagen und Standards 
+
+5. Prüfungsrisiko und Prüfungsstrategie 
+
+6. Kontrollen und Prüfungshandlungen 
+
+7. Einsatz von Prüfsoftware 
+
+21 
+
+15. August 2016 
+
+IT-Assurance 
+
+Prüfungsrisiko (I) 
+
+Prüfungsrisiko 
+
+Geschäfts- 
+
+Risiko 
+
+Risiko fehlerhafter 
+Rechnungslegung 
+
+Inhärentes  
+
+Risiko 
+
+Kontrollrisiko 
+
+Risiko  
+
+unentdeckter 
+
+Fehler 
+
+Aufdeckungs- 
+
+risiko 
+
+Risiko durch ineffektive 
+
+Kontrollen 
+
+Risiko, dass ein 
+
+wesentlicher Fehler nicht 
+
+entdeckt wird 
+
+Unabhängig vom 
+Kontrollsystem des 
+
+Mandanten 
+
+Wahrscheinlichkeit für das 
+
+Auftreten wesentlicher 
+
+Fehler 
+
+22 
+
+15. August 2016 
+
+IT-Assurance 
+
+Prüfungsrisiko (II) 
+Audit Risk Model 
+
+Prüfungs- 
+
+risiko 
+
+= 
+
+Inhärentes  
+
+Risiko 
+
+x 
+
+Kontroll- 
+
+risiko 
+
+x 
+
+Aufdeckungs- 
+
+risiko 
+
+Kombinierte Risikobewertung 
+
+Kontrollrisiko 
+
+ Minimum             Moderate              Maximum 
+   (Test)            (Walk-Through)       (Ineffective) 
+
+Minimum        Moderate        Maximum 
+
+Minimal 
+
+Low 
+
+Moderate 
+
+Low 
+
+Moderate 
+
+High 
+
+Lower 
+
+Higher 
+
+ 
+ 
+
+s
+e
+t
+n
+e
+r
+ä
+h
+n
+
+I
+
+ 
+
+i
+
+o
+k
+s
+R
+
+i
+
+Beispiel:  Ein geringes inhärentes Risiko bzgl. der rechnungslegungsrelevanten Teile der IT i.V. mit einem 
+
+geringen IT-Kontrollrisiko führen zu einem minimalen IT-Fehlerrisiko, während das IT-Fehlerrisiko 
+bei gleichem inhärenten Risiko, aber hohem IT-Kontrollrisiko lediglich als moderat eingeschätzt 
+werden kann. 
+
+23 
+
+15. August 2016 
+
+IT-Assurance 
+
+Prüfungsrisiko (II)  
+Sicherheitsbeiträge einzelner Prüfungshandlungen 
+
+Prüfungssicherheit 
+
+95% 
+
+Prüfungssicherheit 
+
+Systemprüfung 
+
+(Prüfung der allg. IT-
+Kontrollen und der 
+
+Anwendungskontrollen) 
+
+Analytische              
+
+Prüfungshandlungen 
+(z.B. Datenanalysen) 
+
+Risikoanalyse 
+(IT-Komplexität 
+und Dynamik) 
+
+95% 
+
+Einzelfallprüfungen 
+
+Systemprüfung 
+
+Analytische              
+
+Prüfungshandlungen 
+
+Einzelfallprüfungen 
+
+Risikoanalyse 
+
+Prüfungsaufwand 
+
+Prüfungsaufwand 
+
+Kombination von Prüfungshandlungen führt zur angestrebter Prüfungssicherheit von 95%! 
+
+24 
+
+15. August 2016 
+
+IT-Assurance 
+
+Mögliche Prüfungszeitpunkte 
+
+SW-Entwickler/Anwender 
+
+Prüfer 
+
+Anwender 
+
+Entwicklung 
+
+Maintenance 
+
+Anwender 
+
+Produktion 
+
+25 
+
+15. August 2016 
+
+IT-Assurance 
+
+Projektbe- 
+gleitende 
+Prüfung 
+
+ 
+
+Software- 
+Zertifizie- 
+
+rung 
+
+Applika- 
+
+tions- 
+
+Prüfung 
+
+Agenda 
+
+1. Begriff der Revision 
+
+2. IT-Ordnungsmäßigkeit und Jahresabschlussprüfung 
+
+3. Interne Kontrolle / Internes Kontrollsystem 
+
+4. Gesetzliche Grundlagen und Standards 
+
+5. Prüfungsrisiko und Prüfungsstrategie 
+
+6. Kontrollen und Prüfungshandlungen 
+
+7. Einsatz von Prüfsoftware 
+
+26 
+
+15. August 2016 
+
+IT-Assurance 
+
+Kontrolltypen 
+
+ 
+l
+
+ 
+
+e
+v
+e
+L
+e
+t
+a
+r
+o
+p
+r
+o
+C
+
+ 
+l
+
+e
+v
+e
+L
+
+ 
+
+n
+o
+i
+t
+a
+c
+
+i
+l
+
+p
+p
+A
+
+IT Control Framework 
+
+IT Controls at the Company Level 
+
+• Organization,  
+IT Governance 
+•
+• Corporate Policies 
+
+  IT-bezogenen Fragen auf  dem Unternehmens-Level , Bsp.: 
+
+IT General Controls * 
+
+IT Application Controls 
+
+Manual IT Dependent Controls 
+
+  IT-Prozesse und abhängige Kontrollen, welche eine  
+
+andauernde Effektivität der Application und IT Dependent 
+Controls sicherstellen: 
+
+• Change Management, 
+• System Development, 
+• Computer Operations, 
+•
+
+IT Security/ Access Controls 
+
+  Innerhalb der Anwendungen einprogrammierte Kontrollen wie 
+
+Datenvalidierung und Bearbeitungsprüfungen, 
+Konfigurationskontrollen. Bsp.: 
+
+• Autom. Systemschnittstellen und Abgleichroutinen 
+• Datenqualitätsprüfungen (‘scrubbing’) 
+• Funktionstrennung ↔ User-Zugangsbeschränkung 
+
+  Manuelle Kontrollen, welche auf IT basieren, Bsp.: 
+
+• Nachverfolgung der Punkte im computererzeugten 
+
+Ausnahmereport 
+
+• Überprüfung der vom System erzeugten 
+
+„Umschlagshäufigkeitsliste“ 
+
+• Qualitätsmanagementbewertung der Effizienzreports 
+
+* Abhängig von dem IT-Organisationsaufbau (zentralisiert vs. dezentralisiert) kann die Beschaffenheit der ITGCs enger mit 
+dem Entity-Level oder den Anwendungskontrollen verbunden sein. 
+
+27 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT General Controls 
+
+ 
+l
+
+ 
+
+e
+v
+e
+L
+e
+t
+a
+r
+o
+p
+r
+o
+C
+
+ 
+l
+
+e
+v
+e
+L
+
+ 
+
+n
+o
+i
+t
+a
+c
+
+i
+l
+
+p
+p
+A
+
+IT Control Framework 
+
+IT Controls at the Company Level 
+
+• Organization,  
+IT Governance 
+•
+• Corporate Policies 
+
+  IT-bezogenen Fragen auf  dem Unternehmens-Level , Bsp.: 
+
+IT General Controls * 
+
+IT Application Controls 
+
+Manual IT Dependent Controls 
+
+  IT-Prozesse und abhängige Kontrollen, welche eine  
+
+andauernde Effektivität der Application und IT Dependent 
+Controls sicherstellen: 
+
+• Change Management, 
+• System Development, 
+• Computer Operations, 
+•
+
+IT Security/ Access Controls 
+
+  Innerhalb der Anwendungen einprogrammierte Kontrollen wie 
+
+Datenvalidierung und Bearbeitungsprüfungen, 
+Konfigurationskontrollen. Bsp.: 
+
+• Autom. Systemschnittstellen und Abgleichroutinen 
+• Datenqualitätsprüfungen (‘scrubbing’) 
+• Funktionstrennung ↔ User-Zugangsbeschränkung 
+
+  Manuelle Kontrollen, welche auf IT basieren, Bsp.: 
+
+• Nachverfolgung der Punkte im computererzeugten 
+
+Ausnahmereport 
+
+• Überprüfung der vom System erzeugten 
+
+„Umschlagshäufigkeitsliste“ 
+
+• Qualitätsmanagementbewertung der Effizienzreports 
+
+* Abhängig von dem IT-Organisationsaufbau (zentralisiert vs. dezentralisiert) kann die Beschaffenheit der ITGCs enger mit 
+dem Entity-Level oder den Anwendungskontrollen verbunden sein. 
+
+28 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT General Controls – Definitionen 
+
+Change Management: 
+
+► Nur entsprechend autorisierte, getestete und formal freigegebene 
+
+Änderungen werden ausgeführt. 
+
+ 
+
+Logical Access: 
+
+► Nur autorisierte Personen haben Zugang zum System und können 
+
+speziell genehmigte Funktionen ausführen. 
+
+ 
+
+Other IT General Controls (inklusive IT Operations): 
+
+► Prozess zur Bestimmung, dass IT-Ressourcen und Applikationen im 
+
+Zeitablauf wie beabsichtigt funktionieren. 
+
+29 
+
+15. August 2016 
+
+IT-Assurance 
+
+Change Management (I) 
+
+► Entwicklung und Kauf von Applikationen 
+
+ 
+
+► Änderungen an Applikationen 
+
+ 
+
+► Notfalländerungen an Applikationen 
+
+ 
+
+► Wartung von IT-Systemen 
+
+ 
+
+► Konfigurationsänderungen 
+
+ 
+
+► Änderung von Sicherheitseinstellungen 
+
+ 
+
+30 
+
+15. August 2016 
+
+IT-Assurance 
+
+Change Management (II) 
+
+► Applikationen 
+
+ 
+
+► Schnittstellen 
+
+ 
+
+► Datenbanken 
+
+ 
+
+► Betriebssysteme 
+
+31 
+
+15. August 2016 
+
+IT-Assurance 
+
+Change Management (III) 
+
+Änderungen wurden: 
+
+► autorisiert, 
+
+► getestet und 
+
+► formal für die Produktion 
+
+freigegeben. 
+
+32 
+
+15. August 2016 
+
+IT-Assurance 
+
+Logical Access (I) 
+
+► Einrichtung von neuen Benutzern 
+
+ 
+
+► Änderung von Zugriffsrechten 
+
+ 
+
+► Löschen von Benutzern 
+
+33 
+
+15. August 2016 
+
+IT-Assurance 
+
+Logical Access (II) 
+
+34 
+
+15. August 2016 
+
+IT-Assurance 
+
+Autorisierter Zugriff auf: 
+
+► Applikationen 
+
+► Datenbanken 
+
+► Betriebssysteme 
+
+► Netzwerk 
+
+► Remote Access 
+
+Logical Access (III) 
+
+► Sicherheitseinstellungen 
+
+►  Minimale Passwortlänge 
+
+►  Maximales Passwortalter 
+
+►  Passwortkomplexität 
+
+►  Passworthistorie 
+
+►  Anzahl fehlgeschlagener Anmeldeversuche 
+
+► Security-Audit-Log (SAP) 
+
+► Systemspezifische Einstellungen 
+
+► Zugriffsrechte von Benutzern mit weitreichenden Berechtigungen 
+
+35 
+
+15. August 2016 
+
+IT-Assurance 
+
+Other ITGCs 
+
+36 
+
+15. August 2016 
+
+IT-Assurance 
+
+► Backup & Recovery 
+
+ 
+
+► Physical Security 
+
+ 
+
+► Scheduling von Jobs und 
+
+Programmen 
+
+ 
+
+► Problem & Incident 
+
+Management 
+
+ITGC Testing - Vorgehen 
+
+► Walkthroughs 
+
+Durchführung zur Bestätigung… 
+► unseres Verständnisses über Vorgangsabwicklung 
+
+► unseres Verständnisses über relevante Kontrollen 
+
+► dass relevante Kontrollen eingeführt wurden und das Design dieser 
+Kontrollen als effektiv beurteilt werden kann (vorläufige Beurteilung) 
+
+► unserer Dokumentation des Vorjahres 
+
+ 
+
+► Auswertung von Systemeinstellungen und Logfiles 
+
+► Analyse relevanter Parameter 
+
+► Stichproben von Berechtigungsänderungen und 
+
+Programmänderungen 
+
+► Beurteilung der operativen Effektivität, Sicherstellung der 
+
+unterjährigen Gültigkeit 
+
+ 
+15. August 2016 
+
+37 
+
+IT-Assurance 
+
+Beispiel: Passworteinstellungen SAP 
+
+ 
+
+38 
+
+15. August 2016 
+
+IT-Assurance 
+
+Profilparameter – Login-Parameter 
+
+► Login/fails_to_user_lock 
+
+Anzahl fehlerhafter Anmeldeversuche bevor der Benutzerstammsatz für den aktuellen Tag 
+gesperrt wird. Sperre wird automatisch am nächsten Tag aufgehoben, Parameter 
+login/failed_user_auto_unlock  deaktiviert die Aufhebung. Auswertung der gesperrten Benutzer 
+über SAP Report RSUSR006. EY Best Practice für Anmeldesperre = 5-6 
+
+► Rdisp/gui_auto_logout 
+
+Zeitdauer in Sekunden bis zur automatischen Abmeldung vom System. Weitere Möglichkeit zum 
+Zugriffschutz über passwortgeschützte Screensaver. EY Best Practice = 3600 Sekunden (2 
+Stunden) 
+
+► Login/fails_to_sessions_end 
+
+Anzahl der möglichen Anmeldeversuche bevor die Session geschlossen wird und die Verbindung 
+zum Applikationsserver neu aufgebaut werden muss. EY Best Practice = 3 
+
+► Login/password_expiration_time 
+
+Gültigkeitszeitdauer in Tagen für Benutzerpasswörter. Nach Ablauf muss das Passwort vom 
+Benutzer neu gesetzt werden. 
+EY Best Practice = 30-90 Tage 
+
+► Login/disable_multi_gui_login 
+
+Deaktivierung der Möglichkeit sich an mehreren Arbeitsplatz-Rechnern mit der selben Kennung 
+am System anzumelden. 
+EY Best Practice = 1 (Mehrfachanmeldung deaktiviert) 
+
+39 
+
+15. August 2016 
+
+IT-Assurance 
+
+Profilparameter – Login-Parameter und 
+Berechtigungsprüfung 
+
+► Login/min_password_lng 
+
+Mindestzeichenlänge für Passwörter. EY Best Practice = 6 
+
+► Login/no_automatic_user_sapstar 
+
+Der Standard- und Superuser SAP* wird systemseitig nach Löschung automatisch am 
+nächsten Tag mit Standardpasswort neu angelegt. Dieser Parameter verhindert bei 
+Aktivierung die Neuanlage. EY Best Practice = 1 (Neuanlage deaktiviert) 
+
+► auth/no_check_on_tcode 
+
+Die Prüfung des Berechtigungsobjektes S_TCODE beim Ausführen einer Transaktion kann 
+über diesen Parameter deaktiviert werden. EY Best Practice = No (volle 
+Berechtigungsprüfung) 
+
+► auth/no_check_in_some_cases 
+
+Über diesen Parameter kann die über die Prüfung beim Ausführen einer Transaktion 
+hinausgehende Berechtigungsprüfung für definierte Transaktionen deaktiviert werden. Die 
+Transaktionen zur Deaktivierung werden dabei mittels der Transaktion SU24 bestimmt. EY 
+Best Practice = No (volle Berechtigungsprüfung) 
+
+► Angabe ungültiger Passwörter 
+
+Ungültige und triviale Passwörter (bspw. der Unternehmensname) können systemseitig 
+ausgeschlossen werden. Die ungültigen Wörter werden hierfür in Tabelle USR40 hinterlegt. 
+Die Angabe von Platzhalterzeichen (bspw. *SAP*) ist möglich. 
+
+40 
+
+15. August 2016 
+
+IT-Assurance 
+
+Beispiel: Vergabe kritischer Berechtigungen 
+
+► Die unterjährige, temporäre Vergabe der folgenden kritischen 
+
+Berechtigungsprofile an Dialog- oder Serviceuser ist zu 
+begründen und zu genehmigen: 
+1) S_A.SYSTEM 
+2) S_A.ADMIN 
+3) S_A.DEVELOP  
+
+► Selektion via SA38, Report RSUSR100 
+
+41 
+
+15. August 2016 
+
+IT-Assurance 
+
+Rsusr100.txtAuswirkung der ITGCs auf Application 
+Controls 
+
+Effektive IT General Controls: 
+
+► Unterstützen bei der Sicherstellung der dauerhaften Effektivität der 
+
+Application Controls 
+
+ 
+
+Ineffektive IT General Controls: 
+
+► Application Controls können dennoch effektiv funktionieren  
+
+► Beeinflusst Abschlussprüfungsstrategie und Internal Controls 
+Prüfungsstrategie; Art, Zeitintervall und Ausmaß der Tests der 
+Application Controls 
+
+42 
+
+15. August 2016 
+
+IT-Assurance 
+
+Ansatz zur Evaluation von ITGCs 
+
+R 
+
+Control Evaluation 
+
+R 
+
+ITGC Evaluation For IT-Dependent  
+Manual Or Application Control 
+
+Effective 
+
+Not Support 
+Not Support 
+Support 
+
+Manage Change  
+
+Logical Access  
+
+Other ITGCs  
+
+Ineffective 
+Ineffective 
+
+Effective 
+Effective 
+Effective 
+
+Effective 
+Effective 
+
+ITGC 
+
+ITGC 
+
+ITGC 
+
+ITGC 
+
+ITGC 
+
+ITGC 
+
+Effective 
+Effective 
+
+Ineffective 
+Ineffective 
+
+Effective 
+Effective 
+Effective 
+
+Effective 
+Effective 
+Effective 
+
+Effective 
+Effective 
+
+Effective 
+Effective 
+
+ITGC 
+
+Effective 
+Effective 
+
+ITGC 
+
+ITGC 
+
+Effective 
+Effective 
+Effective 
+
+Effective 
+Effective 
+Ineffective 
+
+R 
+
+Rationale required if higher layer 
+evaluation is Effective or Support and 
+lower layer contains an Ineffective or Not 
+Support evaluation. 
+
+43 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT-Dependent 
+Manual or 
+Application Control 
+Evaluation 
+
+Aggregate 
+ITGC 
+Evaluation 
+
+ITGC 
+Category 
+Evaluations 
+
+ITGC 
+Evaluations 
+
+Bedeutung von ITGCs  
+
+Ähnlich wie ein kontrollorientierter Prüfungsansatz die Prüfungseffizienz durch Reduktion der 
+substantiellen Prüfungshandlungen verbessern kann, kann der Test der ITGCs die Effizienz der 
+Kontrolltests für application und IT dependent manual controls verbessern.  
+
+Entscheidungsbaum zur Prüfungsstrategie 
+
+Aufwand je Applikation 
+
+Ausreichende Prozesssicherheit? 
+
+Hohes Transaktionsvolumen? 
+
+nein 
+
+ja 
+
+Substantieller 
+Prüfungsansatz 
+
+Ggf. substantieller Test 
+
+einzelner Kontrollen 
+
+Kontrollorientierter 
+
+Prüfungsansatz 
+
+Signifikante Anzahl an ITACs 
+
+und IT dependent manual 
+controls pro Applikation? 
+
+nein 
+
+ja 
+
+Substantielle Prüfung 
+
+der Kontrollen, z.B. 
+
+Test of 25 
+
+Historische Be-
+lege für ITACs 
+nicht verfügbar 
+
+Test der ITGC 
+
+ermöglicht Test of one 
+
+Strategie- 
+änderung 
+
+Prüfungs-
+aufwand 
+
+ITGC 
+
+test of 25 
+
+ITGC 
+
++ 
+
+test of 1 
+
+Anzahl 
+IT-Kontrollen 
+
+Mögliche Steigerung der Prüfungseffizienz abhängig von der Mandantensituation 
+
+Die jeweils sinnvollste Strategie muss 
+pro Applikation entschieden werden! 
+
+44 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT General Controls 
+
+ 
+l
+
+ 
+
+e
+v
+e
+L
+e
+t
+a
+r
+o
+p
+r
+o
+C
+
+ 
+l
+
+e
+v
+e
+L
+
+ 
+
+n
+o
+i
+t
+a
+c
+
+i
+l
+
+p
+p
+A
+
+IT Control Framework 
+
+IT Controls at the Company Level 
+
+• Organization,  
+IT Governance 
+•
+• Corporate Policies 
+
+  IT-bezogenen Fragen auf  dem Unternehmens-Level , Bsp.: 
+
+IT General Controls * 
+
+IT Application Controls 
+
+Manual IT Dependent Controls 
+
+  IT-Prozesse und abhängige Kontrollen, welche eine  
+
+andauernde Effektivität der Application und IT Dependent 
+Controls sicherstellen: 
+
+• Change Management, 
+• System Development, 
+• Computer Operations, 
+•
+
+IT Security/ Access Controls 
+
+  Innerhalb der Anwendungen einprogrammierte Kontrollen wie 
+
+Datenvalidierung und Bearbeitungsprüfungen, 
+Konfigurationskontrollen. Bsp.: 
+
+• Autom. Systemschnittstellen und Abgleichroutinen 
+• Datenqualitätsprüfungen (‘scrubbing’) 
+• Funktionstrennung ↔ User-Zugangsbeschränkung 
+
+  Manuelle Kontrollen, welche auf IT basieren, Bsp.: 
+
+• Nachverfolgung der Punkte im computererzeugten 
+
+Ausnahmereport 
+
+• Überprüfung der vom System erzeugten 
+
+„Umschlagshäufigkeitsliste“ 
+
+• Qualitätsmanagementbewertung der Effizienzreports 
+
+* Abhängig von dem IT-Organisationsaufbau (zentralisiert vs. dezentralisiert) kann die Beschaffenheit der ITGCs enger mit 
+dem Entity-Level oder den Anwendungskontrollen verbunden sein. 
+
+45 
+
+15. August 2016 
+
+IT-Assurance 
+
+Ziele des IT Application Control Testings 
+
+Zur Bestätigung: 
+
+► unseres Verständnis über relevante Kontrollen 
+
+► dass relevante Kontrollen eingeführt wurden und ordnungsgemäß 
+
+funktionieren 
+
+► unserer Dokumentation des Vorjahres 
+
+ 
+
+Nach dem Testen führen wir eine Auswertung durch in Bezug auf: 
+
+► das Design der Kontrollen 
+
+► die operative Wirksamkeit der Kontrollen 
+
+ 
+
+Falls Application, IT-Dependent Manual oder Manual Controls fehlen 
+bzw. nicht wie beabsichtigt funktionieren, werden alternative Kontrollen 
+benötigt. 
+
+Ansonsten ist das abhängige Kontrollrisiko als „maximal“ einzustufen. 
+
+46 
+
+15. August 2016 
+
+IT-Assurance 
+
+Application Control Testing Methoden  
+ 
+
+Methoden zum Sammeln von Nachweisen während des 
+Testens: 
+► Befragen des Mandanten 
+
+► Untersuchen der Auswirkungen von Kontrollen 
+
+► Begutachten der Dokumentation des Mandaten 
+
+► Betrachten der Reports, welche zur Überwachung der Kontrollen 
+
+verwendet werden  
+
+► Beobachten, ob der Prozesseigentümer oder andere entsprechend 
+
+den Ergebnissen der Kontrolle agieren 
+
+► Wiederholen von Berechnungen, um deren Korrektheit zu überprüfen 
+
+► Durchführen von Stichproben  
+
+► Prüfen von Systemparametern 
+
+47 
+
+15. August 2016 
+
+IT-Assurance 
+
+Testing of IT-dependent Controls 
+
+Beim Auswerten von computererzeugter Information 
+bezüglich Vollständigkeit und Richtigkeit: 
+
+► identifizieren wir die Informationsquelle, 
+
+► identifizieren wir Kontrollen, um sicherzustellen, dass 
+
+Informationen vollständig und richtig sind. 
+
+ 
+
+Werden computererzeugte Information für (manuelle) 
+aufdeckende Kontrollen herangezogen, können weitere 
+Prüfungshandlungen erforderlich sein. Dadurch wird 
+gewährleistet, dass die Information, welche bei der 
+Durchführung der Kontrollen verwendet wird, vollständig 
+und verlässlich ist. 
+
+48 
+
+15. August 2016 
+
+IT-Assurance 
+
+Application Control Überlegungen 
+
+Prüfungsthemen 
+
+Eingabe 
+von nicht-
+
+Trans-
+aktionen 
+
+autorisierten  
+
+werden auf 
+
+Trans-
+aktionen 
+
+falschen 
+Konten 
+erfasst 
+
+Erfasste 
+Trans-
+aktionen 
+gleichen 
+sich nicht 
+
+aus 
+
+Trans-
+aktionen 
+
+werden mit 
+
+falschen 
+Buchungs-
+
+datum 
+erfasst 
+
+Trans-
+aktionen 
+gehen im 
+System 
+verloren 
+
+oder 
+
+wurden 
+
+nicht 
+
+übermittelt 
+
+Trans-
+aktionen 
+wurden im 
+System  
+mehrfach 
+verbucht 
+
+Trans-
+aktionen 
+
+sind 
+
+wertmäßig 
+
+falsch 
+erfasst 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+4 
+
+Kontrollkomponenten 
+
+Application Controls 
+
+Konfiguration 
+
+Datenzugriff 
+
+Umgehen von Kontrollen 
+
+Funktionstrennung 
+
+4 
+
+4 
+
+Schnittstellen 
+
+IT General Controls 
+
+4 
+
+4 
+
+4 
+
+4 
+
+49 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT Application Controls 
+- in SAP verfügbare Kontrollen - 
+
+Business Objectives (Control, Certification & Risk Management) 
+
+ 
+t
+n
+e
+r
+e
+h
+n
+
+I
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+l
+
+e
+b
+a
+r
+u
+g
+i
+f
+n
+o
+C
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+g
+n
+i
+t
+r
+o
+p
+e
+R
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+y
+t
+i
+r
+u
+c
+e
+S
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+ 
+l
+
+ 
+l
+
+a
+r
+u
+d
+e
+c
+o
+r
+P
+&
+
+ 
+
+mySAP Business Suite 
+
+SAP NetWeaver 
+
+a
+u
+n
+a
+M
+
+Technology 
+
+People 
+
+50 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT Application Controls  
+Inherent Controls (I) 
+
+Business Objectives (Control, Certification & Risk Management) 
+
+Inherent Controls 
+
+► Prinzip der doppelten 
+
+ 
+
+ 
+t
+n
+e
+r
+e
+h
+n
+
+I
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+l
+
+ 
+
+ 
+
+l
+
+Buchführung / keine 
+e
+b
+s
+einseitigen Buchungen / 
+a
+o
+r
+Buchungsüberwachung 
+u
+r
+t
+g
+n
+i
+o
+f
+n
+C
+Belegprinzip 
+o
+C
+
+g
+n
+i
+t
+r
+o
+p
+e
+R
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+► Echtzeit-Verarbeitung und 
+
+ 
+
+y
+t
+i
+r
+u
+c
+e
+S
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+ 
+l
+
+a
+r
+u
+d
+e
+c
+o
+r
+P
+&
+
+ 
+
+ 
+l
+
+a
+u
+n
+a
+M
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+People 
+
+► Belegvorerfassung und 
+
+Freigabe 
+
+mySAP Business Suite 
+► Transaktionsprinzip, 
+
+Programmänderungsverfahre
+SAP NetWeaver 
+n, Versionierung und 
+Änderungshistorie  
+
+► Monitoring der internen 
+
+Kontrollstrukturen 
+Technology 
+
+51 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT Application Controls  
+Inherent Controls (II) 
+
+► Nur ausgeglichene Buchungen können erfasst / verarbeitet 
+
+werden 
+
+► Integration von Nebenbüchern in Hauptbücher 
+
+► Aktuelles Datum ist Standarddatum 
+
+► Unmittelbare Erstellung der Belege bei Buchung 
+
+► Eindeutige Belegnummernvergabe 
+
+► Stammdaten (z.B. Lieferanten, Kunden, Hauptbuchkonten) 
+
+müssen bestimmte Voraussetzungen erfüllen, bevor sie 
+angelegt oder aktualisiert werden 
+
+52 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT Application Controls  
+Configurable Controls 
+
+Business Objectives (Control, Certification & Risk Management) 
+
+► Wählbare Prüfungen und 
+
+Configurable Controls 
+
+Toleranzgrenzen 
+
+ 
+t
+n
+e
+r
+e
+h
+n
+
+I
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+l
+
+e
+b
+a
+r
+u
+g
+i
+f
+n
+o
+C
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+► Kann/Muss-Eingaben, 
+
+ 
+
+ 
+
+ 
+
+ 
+
+l
+
+g
+n
+systemseitig berechnete 
+i
+t
+Felder 
+r
+o
+p
+e
+R
+
+s
+o
+r
+t
+n
+o
+C
+
+y
+t
+i
+r
+u
+c
+e
+S
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+► Definierter Stammdatenzugriff 
+
+► Fehler-Codes 
+
+► Benutzerdefinierte Fehler-
+
+mySAP Business Suite 
+
+meldungen und Warnungen 
+
+► Buchung anhand 
+
+SAP NetWeaver 
+
+Buchungsschlüssel und 
+Kontenfindung 
+
+► Workflow 
+
+ 
+
+ 
+l
+
+a
+r
+u
+d
+e
+c
+o
+r
+P
+&
+
+ 
+
+ 
+l
+
+a
+u
+n
+a
+M
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+Technology 
+
+People 
+
+53 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT Application Controls  
+Reporting Controls (I) 
+
+Business Objectives (Control, Certification & Risk Management) 
+
+► Überwachung des 
+
+Reporting Controls 
+
+ 
+t
+n
+e
+r
+e
+h
+n
+
+I
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+l
+
+e
+b
+a
+r
+u
+g
+i
+f
+n
+o
+C
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+g
+n
+i
+t
+r
+o
+p
+e
+R
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+mySAP Business Suite 
+
+SAP NetWeaver 
+
+ 
+l
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+y
+t
+i
+r
+u
+c
+e
+S
+
+► Ausgelieferte 
+
+Standardreports im 
+Berichtsbaum 
+
+zeitnahen 
+Abschlussprozesses 
+a
+r
+u
+d
+e
+c
+o
+r
+P
+&
+
+s
+o
+r
+► Kontextabhängige Hilfe 
+t
+n
+o
+C
+Prüfungsunterstützung 
+
+► Systemsbasierte 
+
+ 
+
+l
+
+ 
+
+ 
+
+ 
+
+ 
+l
+
+a
+u
+n
+a
+M
+
+► Audit trails 
+
+► Belegänderungsübersicht 
+
+► Belegfluss 
+
+Technology 
+
+People 
+
+54 
+
+15. August 2016 
+
+IT-Assurance 
+
+IT Application Controls  
+Security Controls (I) 
+
+Business Objectives (Control, Certification & Risk Management) 
+
+Security Controls 
+
+ 
+t
+n
+e
+r
+e
+h
+n
+
+I
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+ 
+
+l
+
+ 
+
+ 
+
+l
+
+e
+b
+a
+r
+u
+g
+i
+f
+n
+o
+C
+
+► Flexible Strukturen der 
+Zugriffsberechtigungen 
+auf Programme, 
+Transaktionen, Tabellen 
+und Felder 
+
+s
+o
+r
+t
+n
+o
+► Unterstützung bei der 
+C
+berechtigungsseitigen 
+Umsetzung von Aspekten 
+der Funktionstrennung 
+mySAP Business Suite 
+
+g
+n
+i
+t
+r
+o
+p
+e
+R
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+► Überwachung und 
+
+Prävention 
+unautorisierter Zugriffe 
+
+SAP NetWeaver 
+
+► Profilgenerator zur 
+Unterstützung der 
+Berechtigungspflege 
+
+Technology 
+
+55 
+
+15. August 2016 
+
+IT-Assurance 
+
+ 
+
+y
+t
+i
+r
+u
+c
+e
+S
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+ 
+l
+
+a
+r
+u
+d
+e
+c
+o
+r
+P
+&
+
+ 
+
+ 
+l
+
+a
+u
+n
+a
+M
+
+ 
+
+l
+
+s
+o
+r
+t
+n
+o
+C
+
+ 
+
+People 
+
+IT Application Controls  
+Security Controls (II) 
+
+Beispiel: Matrix zur Ableitung der notwendigen Funktionstrennung 
+
+56 
+
+15. August 2016 
+
+IT-Assurance 
+
+AP Voucher EntryAP PaymentsAP Release Blocked InvAP Clear Vendor Acct.Vendor Mast. Maint. FIVendor Mast. Maint. MMVendor Mast. Maint. CENBank ReconciliationAR Cash ApplicationAR Clear Customer Acct.Material Master Maint.Service Master Maint.RequisitioningRelease RequisitionPurchase Order EntryTask Group DescriptionGrp123456789101112131415AP Voucher Entry1XXXXXXXAP Payments2XXXXXXAP Release Blocked Inv3X XAP Clear Vendor Acct.4XXVendor Mast. Maint. FI5XXXXVendor Mast. Maint. MM6XXXXVendor Mast. Maint. CEN7XXXBank Reconciliation8XXAR Cash Application9XAR Clear Customer Acct.10Material Master Maint.11XXService Master Maint.12XXRequisitioning13XXXXRelease Requisition14XXPurchase Order Entry15XXXXXXXXXXXApplication Control Testing 
+- Beispiel: 3-way match (I) - 
+
+Kontrollbeschreibung:  
+
+► Das SAP-System vergleicht die Rechnungen mit Einkaufsaufträgen und 
+
+Warenbelegen und verhindern weitere Transaktionen, sofern Differenzen 
+vorliegen 
+
+Prozess:  
+
+► Material Allocation / Invoice Verification 
+
+ 
+
+System:  
+
+► SAP R/3 
+
+ 
+
+Type: Application (Preventive) 
+
+ 
+
+57 
+
+15. August 2016 
+
+IT-Assurance 
+
+Application Control Testing 
+- Beispiel: 3-way match (II) - 
+
+Testing Procedure: 
+
+► Durch Interviews mit den Verantwortlichen verschafft man sich ein 
+
+Verständnis über die zu prüfenden Prozesse 
+
+► Nachprüfung erfasster Rechungsprüfungsparameter über die SAP 
+
+Tabelle “T169G” 
+
+► “Test of One”-Durchführung, um sicherzustellen, dass SAP 
+
+Rechnungsbeträge mit Einkaufsaufträgen und den dazugehörigen 
+Warenbelegen vergleicht und bei mengenmäßigen oder preislichen 
+Abweichungen die automatische Verbuchung verhindert 
+
+► Sicherstellung, dass Benutzerautorisierungen, mit denen Rechnungen 
+
+bearbeitet / freigegeben werden dürfen, restriktiv vergeben werden 
+
+58 
+
+15. August 2016 
+
+IT-Assurance 
+
+Summary Quote 
+ 
+
+What we have to learn, we learn by doing 
+
+Aristotle 
+
+(Philosopher, 384 – 322 BCE) 
+
+70 
+
+15. August 2016 
+
+IT-Assurance 
+
+

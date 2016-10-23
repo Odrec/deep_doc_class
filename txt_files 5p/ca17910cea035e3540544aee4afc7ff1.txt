@@ -1,0 +1,191 @@
+Table of Contents
+Task: Reverse Correlation ..................................................................................................... 1
+1. setup .............................................................................................................................  1
+3. Run the function on the given kernel and plot it .................................................................... 1
+4. Compute the response of the kernel to the stimuli from all time steps. .......................................  2
+5. Compute the spike-triggered average (STA) .........................................................................  3
+
+Task: Reverse Correlation
+
+% Marie Sindermann, Anna-Lena Popkes, Philipp Hummel and Philipp Wicke
+% msindermann(952428), apopkes(951791), phummel(954941), pwicke(954242)
+
+1. setup
+
+clear all;
+close all;
+
+3. Run the function on the given kernel and
+plot it
+
+k = [1 -2 1; -2 4 -2; 1 -2 1]/6;
+
+[spikes, stimuli, proj] = revcor(100,k);
+
+imagesc(k);
+colormap(gray);
+title('center-surround kernel')
+
+1
+
+4. Compute the response of the kernel to the
+stimuli from all time steps.
+
+% a) Plot the different inputs, the overall input and the spike train
+
+figure
+
+subplot(3,1,1)
+colormap(jet(200))
+plot(stimuli)
+title('Input')
+
+subplot(3,1,2)
+plot(proj)
+title('Response')
+
+subplot(3,1,3)
+title('Spikes')
+for time = 1:100
+    line([time time], [0 spikes(time)], 'Color', 'k');
+end
+
+% b) Is there a relationship between response/overall input and spikes?
+
+2
+
+% The probabilty that the neuron fires is higher if the response is high.
+% So we can observe spikes more often at timepoints where the response is
+% high. Since the anonymous function assigns the probabilities randomly,
+% there are also some spikes when the response is not so high.
+
+5. Compute the spike-triggered average (STA)
+
+Rescale it to have unit norm and reshape it to a 3x3 matrix
+% To compute the STA, take the average of all stimuli that induced a spike
+
+STA = zeros(1,9);
+n_spikes = 0;
+
+for i = 1:100
+
+    if spikes(i) == 1
+       STA = STA + stimuli(i,:);
+       n_spikes = n_spikes + 1;
+    end
+
+end
+
+STA = STA / n_spikes;
+
+% Rescale it to have unit norm
+
+3
+
+s = 0;
+
+for i = 1:9
+    s = s + STA(i).^2;
+end
+
+s = sqrt(s)
+
+for i = 1:9
+    STA(i) = STA(i)/s;
+end
+
+STA = reshape(STA,[3,3]);
+
+figure
+colormap(gray)
+subplot(1,2,1)
+imagesc(k)
+title('kernel')
+
+subplot(1,2,2)
+imagesc(STA)
+title('STA')
+
+s =
+
+    1.3363
+
+4
+
+Published with MATLAB® R2014b
+
+5
+
+Table of Contents
+Task: Fourier Transform ....................................................................................................... 1
+1. setup .............................................................................................................................  1
+2. Generate a signal with sampling frequency t of 100 that is linearly ...........................................  1
+3. We now want to determine the frequency spectrum of the signal and ........................................  1
+
+Task: Fourier Transform
+
+% Marie Sindermann, Anna-Lena Popkes, Philipp Hummel and Philipp Wicke
+% msindermann(952428), apopkes(951791), phummel(954941), pwicke(954242)
+
+1. setup
+
+clear all;
+close all;
+
+2. Generate a signal with sampling frequency t
+of 100 that is linearly
+
+composed of 3 sinusoids with different frequencies (5, 12, 20), weighted by 1/freq
+% first create a time vector
+t = linspace(0,2*pi);
+
+% create a sample signal y
+
+y = 1/5*sin(5*t) + 1/12*sin(12*t)+ 1/20*sin(20*t);
+
+3. We now want to determine the frequency
+spectrum of the signal and
+
+plot of the frequencies against their amplitudes.
+% a) compute the Fourier transform
+
+fourier = fft(y);
+
+% use abs()on the result to get the amplitudes
+
+amplitudes = abs(fourier);
+
+% To get the real amplitudes, divide the Fourier transform by the number of
+% data points of y
+
+amplitudes = amplitudes/100;
+
+1
+
+% b) The amplitudes begin at 0 and end at the Nyquist limit, which is
+% half the sampling rate of the signal.
+
+amplitudes = amplitudes(1:50);
+
+% c) Plot the signal and its frequency spectrum.
+
+figure
+
+subplot(2,1,1)
+xlabel('signal')
+ylabel('amplitude')
+plot(y)
+
+subplot(2,1,2)
+xlabel('Freq/Ampl. Plot of Signal ')
+ylabel('amplitude, unnormalized')
+stem(amplitudes)
+
+% d) Where are your peaks located?
+% They are located at 5,12,20 so exactly at our frequencies.
+
+Published with MATLAB® R2014b
+
+2
+
+

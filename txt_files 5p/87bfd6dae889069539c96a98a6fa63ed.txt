@@ -1,0 +1,1193 @@
+R E V I E W
+
+G E N E T I C S
+
+Replicating nucleosomes
+
+Srinivas Ramachandran1,2 and Steven Henikoff1,2*
+
+2015 © The Authors, some rights reserved;
+
+exclusive licensee American Association for
+
+the Advancement of Science. Distributed
+
+under a Creative Commons Attribution
+
+NonCommercial License 4.0 (CC BY-NC).
+
+10.1126/sciadv.1500587
+
+Eukaryotic replication disrupts each nucleosome as the fork passes, followed by reassembly of disrupted nu-
+cleosomes and incorporation of newly synthesized histones into nucleosomes in the daughter genomes. In this
+review, we examine this process of replication-coupled nucleosome assembly to understand how characteristic
+steady-state nucleosome landscapes are attained. Recent studies have begun to elucidate mechanisms involved in
+histone transfer during replication and maturation of the nucleosome landscape after disruption by replication. A
+fuller understanding of replication-coupled nucleosome assembly will be needed to explain how epigenetic
+information is replicated at every cell division.
+
+INTRODUCTION
+
+Animals and plants develop from a single-celled zygote to a multicel-
+lular organism with scores of different cell types that perform a multitude
+of unique functions and yet carry the same genome. This diversity in
+cellular identity during development and adulthood is achieved by dif-
+ferential gene activation and repression in distinct cell types. Gene ex-
+pression is influenced by nucleosomes, which mediate accessibility and
+hence all biochemical activities on the genome. The overall inhibitory
+role of nucleosomes on genomic access is modulated by posttransla-
+tional modifications of histones in the nucleosome and the replace-
+ment of canonical histones in the nucleosome by histone variants.
+Thus, the pattern of differential gene expression that contributes to
+cellular identity is reflected in features that differentiate nucleosomes
+along the genome, the “nucleosome landscape.” The major histone
+modifications classically associated with repressed chromatin domains
+include H3K9 trimethylation (H3K9me3), which is found in consti-
+tutive heterochromatin, and H3K27 trimethylation (H3K27me3), which
+is found in facultative heterochromatin. The major histone variants
+include H3.3, H2A.Z, and the centromeric H3 variant, cenH3. In meta-
+zoans, H3.3 and H2A.Z are broadly distributed throughout the ge-
+nome, but are differentially enriched at particular regions including
+actively transcribed regions, whereas cenH3 is rarely found outside
+of centromeres.
+
+The nucleosome landscape of different cell types is established in
+large part through processes that disrupt and replace nucleosomes,
+mainly transcription, chromatin remodeling, and replication. Exam-
+ples of transcription and remodeling establishing the cell type–specific
+nucleosome landscape include widespread transcription at enhancers
+(1), remodeling (2), and nucleosome turnover (3) at Polycomb response
+elements (PREs) in Drosophila, which are sites required for maintain-
+ing cell type–specific transcriptional programs through several cell divi-
+sions during development.
+
+For eukaryotic development to proceed, the nucleosome landscape
+must be reproduced by default in daughter cells after DNA replication,
+which proceeds bidirectionally from origins bound by the origin recog-
+nition complex. The replication fork consists minimally of the mini-
+chromosome maintenance (MCM) helicase and DNA polymerase,
+both of which are loaded at replication origins at the beginning of re-
+plication, and the replicative processivity clamp, PCNA. The MCM
+complex forms a channel around a single strand of DNA (the leading
+
+1Howard Hughes Medical Institute, Seattle, WA 98109, USA. 2Basic Sciences Division,
+Fred Hutchinson Cancer Research Center, Seattle, WA 98109, USA.
+*Corresponding author. E-mail: steveh@fhcrc.org
+
+strand of replication) and unwinds DNA in front of it (4). An MCM
+channel translocating on single-stranded DNA will result in the com-
+plete disruption of the nucleosome. Thus, over a few seconds of passage
+of the helicase and the replication machinery behind, there is massive
+disruption that dissociates the prereplication nucleosome landscape.
+
+After the new strand of DNA is synthesized by the polymerase, as-
+sembly factors reconstitute old nucleosomes and assemble new nucleo-
+somes behind the replication fork. Because there is a doubling of genetic
+material during replication, cells require double the amount of the ge-
+nome packing material, namely, the histones. To provide sufficient
+material at S phase, there is massive synthesis of the four canonical
+histones, which form the nucleosome core that wraps 147 base pairs
+(bp) of DNA, and the linker histone H1, which cements an additional
+~20-bp DNA wrap to the nucleosome surface. Newly replicated chro-
+matin must incorporate both the preexisting histones disrupted by the
+replication fork and the newly synthesized histones. The main ques-
+tions for elucidating the inheritance of nucleosome features during rep-
+lication are as follows: How are old and new histones incorporated
+during replication-coupled nucleosome assembly? How is the nucleo-
+some landscape altered during replication?
+
+Stable inheritance of epigenetic information through replication is
+exemplified by cytosine methylation at CG dinucleotides in most
+animals and plants. At CG dinucleotides, methylation is symmetric,
+that is, the cytosine on both strands is methylated. At replication, each
+daughter CG dinucleotide inherits one of the two symmetrically methy-
+lated cytosines from the parental strand, base-paired to an unmethylated
+cytosine on the newly synthesized strand, that is, a hemimethylated CG
+dinucleotide. The Dnmt1 methyltransferase recognizes the hemi-
+methylated CG dinucleotide and methylates the cytosine on the newly
+synthesized strand. Thus, the methylation status of parental CG dinu-
+cleotides is inherited by the daughter chromosomes through the hemi-
+methylated state. In this review, we describe examples where
+nucleosomes are “replicated” on the daughter chromosomes analogous
+to cytosine methylation at CG dinucleotides, with the goal of delineat-
+ing the underlying mechanisms.
+
+NUCLEOSOME INHERITANCE THROUGH REPLICATION
+
+To understand how nucleosomes are inherited through replication, we
+need to first consider the constraints posed by the structure of the nu-
+cleosome. The nucleosome core consists of the centrally located H3-H4
+tetramer flanked on either side by an H2A-H2B dimer. Nucleosomal
+DNA enters at the “proximal” H2A-H2B dimer and exits at the “distal”
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+1 of 9
+
+R E V I E W
+
+H2A-H2B dimer. The twofold mirror symmetry of the nucleosome
+means that half the length of nucleosomal DNA (73 bp) wraps one-half
+of the histone octamer consisting of one each of the H2A-H2B and
+H3-H4 dimers. DNA-histone contacts at the entry and exit sites of the
+nucleosome are the most labile, and these contacts can be lost during
+normal thermal fluctuations, resulting in transient unwrapping of nu-
+cleosomes (5). This results in H2A-H2B dimers being more susceptible
+to loss and replacement than H3-H4. In contrast, the central location of
+the H3-H4 tetramer is expected to restrain its turnover, which in exper-
+imental measurements is markedly lower than that of H2A-H2B (6).
+Tracking nucleosome inheritance then becomes primarily a problem
+of tracking the H3-H4 tetramer through replication.
+
+The nucleosome landscape as defined by the identity of H3 and H4
+would be marked by H3 variants H3.1/H3.2 or H3.3 and posttransla-
+tional modifications on H3 and H4. Posttranslational modifications
+associated with active chromatin are predominantly found on H3.3
+compared to H3.1/H3.2, whereas modifications that are part of the
+machinery involved in repression (H3K27me and H3K9me) are pre-
+dominantly found on H3.1/H3.2 (7). Inheritance of a silenced region
+through replication would in some scenarios involve inheritance of
+H3-bearing modifications associated with repression at the same ge-
+nomic location. Alternatively, the silenced region could be set up afresh
+each time after replication. Of the several modes of nucleosome assembly,
+replication-coupled assembly is distinguished by the fact that the canon-
+ical H3 (H3.1 and H3.2, hereinafter referred to as H3) is incorporated
+into chromatin only through this pathway (8). Replication-independent
+pathways of nucleosome assembly strictly incorporate only H3.3 (8).
+
+Given alternative pathways and mechanisms to maintain the nu-
+cleosome landscape, we need to determine what is the relative signif-
+icance of replication-coupled assembly in maintaining the nucleosome
+landscape through inheritance. Whereas histones are essential, disrup-
+tion of replication-coupled assembly is not lethal in the budding yeast,
+Saccharomyces cerevisiae, indicating that nucleosome assembly path-
+ways are largely redundant in this organism. However, disruption of
+replication-coupled assembly results in derepression of silent loci (9–12).
+A requirement for replication-coupled assembly to maintain silencing
+is also seen in the worm, Caenorhabditis elegans, where deletion of 11
+residues in the H3 C terminus in 1 of 24 H3 genes results in the loss of
+asymmetry in the identities of a neuron pair (13). Deletion of these re-
+sidues in H3 is predicted to destabilize the nucleosome due to loss of
+contacts that stabilize the H3-H4 tetramer interface. The H3 C-terminal
+deletion is phenocopied by disruption of replication-coupled assembly,
+which suggests that impaired replication-coupled assembly can affect
+developmental decisions. Here, similar to the situation in budding yeast,
+inefficient assembly or assembly of destabilized nucleosomes (with mu-
+tant H3) results in replication-independent assembly pathways filling
+in the “holes” in the nucleosome landscape with H3.3 after replication.
+The replication-coupled assembly pathway is also essential for devel-
+opment in plants (Arabidopsis thaliana) (14, 15) and in flies (Drosophila
+melanogaster) (16, 17), even in the presence of alternate nucleosome assem-
+bly pathways. In cultured human cells, disruption of replication-coupled
+assembly results in increased replication-independent incorporation of
+H3.3 (18). Because old H3.3 is enriched in histone modifications that
+are primarily associated with active chromatin, it is possible that
+spurious incorporation of H3.3 could disrupt silencing at inactive
+regions.
+
+The importance of replication-coupled nucleosome assembly in
+maintaining silent chromatin states in yeast and for proper devel-
+
+opment in worms, flies, and plants suggests a role for this pathway in
+epigenetic inheritance. Direct evidence for the essentiality of the main-
+tenance of histone variants through replication is exemplified by cenH3,
+the histone variant that replaces H3 at centromeres. Loss of cenH3 main-
+tenance through replication can result in loss of centromere identity (19).
+
+TRACKING CHROMATIN INHERITANCE
+THROUGH REPLICATION
+
+Nucleosome inheritance would involve not only the transfer of old
+histone variants and posttranslational modifications to the newly syn-
+thesized chromosomes but also preservation of the genomic location
+of the old histones. In principle, we can track nucleosome inheritance
+at multiple levels: in bulk, at the level of genomes or chromosomes, at
+the level of large chromatin domains (~10 kb), and at the single nu-
+cleosome level. Currently, we have solid evidence for chromatin inher-
+itance only at the bulk level.
+
+Several methods have been developed recently to temporally track
+proteins associated with replication forks by isolating newly replicated
+chromatin labeled with nucleotide analogs (20–22). Combining the
+isolation of newly replicated chromatin with differential labeling of
+old and new histones with stable isotopes has enabled the quantifica-
+tion of the extent of transfer of old, modified histones and histone
+variants at the replication fork (23). This method also has high tem-
+poral resolution, enabling pulse-chase experiments to track the matu-
+ration of newly assembled chromatin over time. In cultured human
+cells, this method showed that only a small fraction of old H2A.Z is
+retained in the newly replicated chromatin and that H2A.Z is incor-
+porated much later than fork progression, indicating little or no inher-
+itance of H2A.Z during replication. H3.3 levels in newly replicated
+chromatin are the same as in bulk chromatin, indicating fast incorpo-
+ration of both old and new H3.3 into the newly replicated chromatin.
+Thus, with respect to histone variants, H3.3 levels drop twofold immedi-
+ately after replication, indicative of random segregation to both daughter
+chromosomes, whereas H2A.Z levels drop much more, indicating loss of
+H2A.Z in the daughter chromosomes. With respect to histone mod-
+ifications, the newly replicated chromatin has half the levels of
+H3K27me3 and H3K9me3 compared to total H3. This could be
+attributed to equal distribution of old H3K27me3 and H3K9me3 be-
+tween the daughter chromosomes, as evidenced by the lack of these
+methylation marks in newly synthesized H3.
+
+H3K27me3 is deposited by the Polycomb repressive complex 2
+(PRC2) (24, 25). H3K27me3 is part of the machinery that maintains
+transcriptional repression of large chromatin domains over successive
+cell divisions (26). In the embryonic germ line of worm hermaphro-
+dites, H3K27me3 is maintained by PRC2 on maternal chromosomes
+but remains absent from previously unmodified paternal chromosomes
+(27). Conversely, in a PRC2 null embryo, H3K27me3 containing pater-
+nal chromosomes retain the modified nucleosomes during twofold
+dilution at each cell division. This provides direct evidence of post-
+translationally modified histone inheritance through successive cell
+divisions (27).
+
+Spatially restricted inheritance of old histones has also been ob-
+served in germline stem cells in fly testes (28). These stem cells are at-
+tached to a cellular structure called the hub, and the daughter cells that
+go on to differentiate can be clearly distinguished from the stem cells
+spatially. When the fates of old and newly synthesized histones were
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+2 of 9
+
+R E V I E W
+
+Active genes/enhancers
+
+Nucleosome destabilizing sequences
+
+RNA polymerase
+
+Short tandem repeats
+
+telomeric repeats
+
+intergenic CpG islands
+
+H3.3-containing
+
+nucleosomes
+
+H3-containing
+nucleosomes
+
+H3.3/H2A.Z-containing
+
+nucleosomes
+
+H3/H2A-containing
+
+nucleosomes
+
+Fig. 1. Distinct mechanisms of incorporation of H3.3 at active and silent regions of the genome. At transcriptionally active regions, nucleo-
+somes are disrupted by RNA polymerase or nucleosome remodelers, resulting in occasional nucleosome loss, with replacement by nucleosomes
+containing H3.3, which unlike H3 is present throughout the cell cycle. At regions of unusual base composition, which include telomeres, CpG
+islands, and short-period satellite repeats, the lack of nucleosome-stabilizing sequences results in relatively frequent nucleosome loss, with replace-
+ment by H3.3 nucleosomes.
+
+traced over mitosis, there was a striking observation that old histones
+are preferentially retained in the chromosomes that segregated to the
+stem cell. Similarly, histones newly synthesized during the most recent
+S phase are preferentially retained in the chromosomes that segregate
+to the differentiating daughter cell. Thus, retention of old histones cor-
+relates with stem cell identity in the fly testes.
+
+In summary, in ordinary cell divisions, there is equal distribution
+of old H3, H3.3, H3K27me3, and H3K9me3 to daughter chromosomes.
+Newly synthesized H3 lacks these methyls when deposited, resulting in
+a dilution of cellular levels of methylated H3 right after replication (23).
+At least in the case of H3K27me3, this distribution to daughter chro-
+mosomes occurs locally in worm embryos, thus preserving the genomic
+location of the old H3K27me3 (27). Similarly for cenH3, genomic loca-
+tion is preserved after replication in multiple organisms, and the total
+levels are diluted to one-half after replication (29). In budding yeast,
+there is no inheritance of cenH3, because the single cenH3 nucleosome
+at each centromere is lost during replication (30).
+
+MECHANISMS FOR INHERITING NUCLEOSOME STATES
+THROUGH REPLICATION
+
+Different genomic regions feature distinct mechanisms to maintain
+chromatin states after nucleosome disruption and dilution due to re-
+plication. Transcriptionally active regions are enriched for nucleosomes
+containing H3.3 and H2A.Z, both of which are exclusively incor-
+porated by replication-independent nucleosome assembly pathways.
+H3.3 incorporation mirrors nucleosome turnover (3), presumably be-
+cause, outside of replication, canonical H3 is not synthesized, and so
+H3.3 is the only substrate available to replace the H3 that is lost. H3.3-
+specific chaperones include DAXX (31, 32) and HIRA (33), both of
+which selectively bind H3.3 over canonical H3. Thus, transcriptionally
+active regions and other sites that feature elevated rates of nucleosome
+turnover would accumulate H3.3 (34). Accumulation of H2A.Z at pro-
+moters and gene bodies has been proposed to be driven by disruption of
+H2A-H2B dimers from the nucleosome during transcription (35). Simi-
+larly, enhancers feature high nucleosome remodeler activity (36) and
+transcription (1), which is also reflected by high nucleosome turnover
+
+(37), explaining the enrichment of H3.3 and H2A.Z at these sites. Tran-
+scriptionally silent regions of unusual base composition that lack
+nucleosome-stabilizing features, such as short period tandem repeats,
+telomeric repeats, and intergenic CpG islands, also show evidence of
+high nucleosome turnover (38–41). Thus, the context of H3.3 incor-
+poration dictates whether H3.3 is associated with active or silent chroma-
+tin states (Fig. 1). In summary, events outside of replication can overcome
+dilution of H3.3 and H2A.Z during replication-coupled assembly and
+dynamically maintain H3.3 and H2A.Z landscapes.
+
+Histone modifications are diluted by half during replication. Hence,
+it is interesting to determine whether the modified histone levels imme-
+diately before replication or immediately after replication are required
+for their biological function. The replenishment of H3K27me3 and
+H3K9me3 landscapes is a slow process, completing only before the
+next round of replication, which indicates that lower postreplication
+levels are enough for the biological function of these modified histones
+(23). This suggests that methylation of newly synthesized histones
+before the subsequent S phase exists primarily to prevent further di-
+lution of these landscapes over the next round of replication rather than
+to maintain silencing in the absence of replication. In vitro (42) and in
+vivo (43), evidence suggest that the diluted, old H3K27me3 can target
+methylating machinery to nearby nucleosomes containing newly syn-
+thesized histones. The PRC2 complex includes a catalytic subunit and
+an EED subunit (Esc in fly). Structural and biochemical characteriza-
+tions of EED have revealed its ability to bind H3K27me3, a modifica-
+tion that is catalyzed by the EZH2 subunit of the PRC2 complex (42).
+When EED binds H3K27me3, the enzymatic activity of EZH2 increases
+sevenfold in vitro (42), leading to a template-binding model (Fig. 2)
+where binding of EED to old H3K27me3 could stimulate the activity
+of EZH2 on nucleosomes with newly synthesized histones that are
+not yet methylated. This model requires faithful inheritance of old his-
+tones on daughter chromosomes close to their original location on the
+parent chromosome and is yet to be directly demonstrated in vivo. A
+subunit of PRC2 in the budding yeast Cryptococcus neoformans, Ccc1,
+also binds H3K27me3 (43). The specific binding of Ccc1 to H3K27me3 is
+required for the maintenance of H3K27me3 and silencing of genes at sub-
+telomeric regions. The action of Ccc1 might be explained in either of two
+ways: Ccc1 binding old H3K27me3 could direct PRC2 to methylate
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+3 of 9
+
+R E V I E W
+
+Template binding
+
+Histone 
+
+methylation
+
+Old H3
+
+Constitutive
+
+Histone 
+
+methylation
+
+H3.3
+
+Old H3
+
+Bridging
+
+PRC1
+
+Old histones
+
+Catalytic
+domain
+
+Product 
+
+binding domain
+
+Newly synthesized
+
+histones
+
+ATRX5/6
+
+Catalytic
+domain
+
+Newly synthesized
+
+H3
+
+Newly synthesized
+
+histones
+
+Fig. 2. Three models of propagating histone modifications through replication. In the template-binding model (42), adjacent nucleosomes are
+modified by a histone-modifying enzyme that binds the modified residue on a nearby tail. In the constitutive model (47), H3K27 methylation is
+restored by recognition of H3A31 but not H3.3T31 by ATXR5/6, such that only replication-coupled (H3) nucleosomes, not replication-independent
+(H3.3) nucleosomes, are methylated on H3K27. In the bridging model (48), PRC1 bridges nucleosomes across daughter chromatids.
+
+nearby nucleosomes with newly synthesized histones, or alternately,
+Ccc1 could be required for protection of H3K27me3 deposited by PRC2
+from demethylation. The deposition of H3K27me3 in newly synthe-
+sized histones has been shown to occur during the G1-S transition in cul-
+tured fly cells (44) and at a slow rate over the whole cell cycle in human
+cultured cells (23). Thus, after dilution during replication, the old
+H3K27me3 in conjunction with the EED subunit of PRC2 might lead
+to the methylation of the same or nearby nucleosome tails containing
+unmethylated H3.
+
+The levels and localization of PRC2 could play important roles in
+maintaining H3K27 methylation levels through replication as evidenced by
+the up-regulation of PRC2 subunits during S phase in human cells (45)
+and rapid localization of PRC2 components to newly replicated chro-
+matin in fly embryos (46) and in human cells (21). Another possible
+
+way to maintain H3K27 methylation after replication at silent do-
+mains would be for the histone methyltransferase to travel with the
+replication fork and methylate newly assembled nucleosomes. This
+mechanism has been most definitively worked out in plants (47). His-
+tone methyltransferases ATRX5/6 are essential for heterochromatin
+condensation in plants. The crystal structure of ATRX5 with H3 shows
+that one of the amino acid differences between H3 and H3.3, Ala31
+(compared to Thr31 of H3.3, a difference that is conserved between
+plants and animals), is critical for recognition of the H3 tail by
+ATRX5/6. Replacement of alanine by threonine at position 31 of H3
+abrogates the ability of ATRX5 to methylate H3. Thus, one of the four
+amino acid differences between H3 and H3.3 is used by ATRX5/6 to
+specifically methylate H3 and not H3.3. During replication, ATRX5
+can monomethylate newly synthesized H3, whereas active regions
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+4 of 9
+
+R E V I E W
+
+Inherited 
+through 
+replication
+
+Mode of 
+
+inheritance
+
+Old histones
+
+DNA replication
+
+Newly synthesized
+
+H3
+
+Subnucleosome
+
+Single nucleosome
+
+Nucleosome array
+
+Semiconservative
+
+Conservative
+
+Semiconservative
+
+Conservative
+
+Observed?
+
+X
+
+X
+
+Cultured human cells, 
+
+C. elegans embryo
+
+Germline stem cells 
+
+in D. melanogaster testis 
+
+Fig. 3. Different modes of inheritance of old H3 and newly synthesized H3 on newly replicated DNA.
+
+containing H3.3 are protected because of ATRX5/6’s specificity for
+H3. Thus, a key histone modification that is needed for hetero-
+chromatin compaction is specified only by the replication-coupled
+H3 variant, where the methylated form of Lys27 is constitutively spec-
+ified by Ala31 (Fig. 2). Notably, protein methyltransferases are still being
+discovered in metazoans, and a mechanism similar to that adopted by
+ATRX5/6 may yet be found in the animal kingdom.
+
+Maintenance of chromatin states through replication could also be
+dependent on the action of non-histone chromatin proteins at the rep-
+lication fork. The bridging model (48) requires a non-histone chromatin
+protein to have the ability both to bind nucleosomes and to oligomer-
+ize (Fig. 2). For example, PRC1 compacts chromatin by forming clus-
+ters with nucleosomes and other PRC1 complexes. In vitro, PRC1
+clusters have been found to bridge old nucleosomes in front of the fork
+with newly assembled nucleosomes behind the fork, thus transferring
+the seed for compaction from the old chromosome to the daughter
+chromosome (48). PRC1 has been further shown to bridge the two
+daughter chromosomes also, which would ensure that the nucleosomes
+on the Okazaki fragment are also bound by PRC1 (Fig. 2), even though
+they are assembled by a fork that does not encounter PRC1 (48).
+
+In summary, the dilution of posttranslationally modified histones
+during replication may be mitigated by distinct mechanisms in distinct
+contexts: (i) gradual replenishment during the remainder of the cell
+cycle, (ii) replenishment just during the G1-S transition as seen in cultured
+animal cells, (iii) by concurrent modification of histones during replica-
+tion fork movement as seen in plants, and (iv) bridging of non-histone
+chromatin proteins across the fork and between the two daughter chro-
+mosomes. The current mechanisms proposed for propagating nu-
+cleosome landscapes through replication can be encapsulated into three
+models: template binding, constitutive, and bridging (Fig. 2). In the
+template-binding model, the modifying machinery recognizes old nu-
+cleosomes and then modifies the nearby nucleosomes that contain
+newly synthesized histones. In the constitutive model that is exemplified
+by action of ATRX5/6 at the replication fork, the mode of assembly of
+
+H3 would determine its ultimate fate. This model posits that replication-
+independent assembly incorporates H3.3, which would acquire modifi-
+cations associated with the chromatin state where it is being
+incorporated, whereas replication-coupled H3 is assembled by default
+in a neutral or silenced state. In the bridging model, non-histone chro-
+matin proteins bridge replication forks and the two daughter chromo-
+somes to maintain compact chromatin states through fork passage. The
+mechanisms of transfer of histones and non-histone proteins at replication
+forks will ultimately determine which model is involved in maintaining
+nucleosome landscapes at different genomic locations.
+
+THE UNIT OF CHROMATIN THAT IS INHERITED
+THROUGH REPLICATION
+
+The discontinuity and asymmetry of replication have implications for
+old nucleosome disruption and assembly of new nucleosomes onto
+daughter chromosomes. The helicase that unwinds DNA proceeds on
+the leading strand, on which DNA synthesis is performed by polymer-
+ase h (49). DNA unwinding leaves a lagging strand that is initially rep-
+licated by polymerase a and then by polymerase d in discontinuous
+steps to produce the so-called Okazaki fragments (49). With respect to
+chromatin, leading strand synthesis involves nucleosome disruption,
+thus having first access to old histones, whereas Okazaki synthesis
+does not encounter old histones during fork passage. Thus, one could
+imagine an asymmetry in the extent of old histones in nucleosome
+arrays assembled by leading and lagging strands, with the old histones
+being retained on the leading strand and the new histones on the
+lagging strand. As multiple origins fire bidirectionally over the length
+of the chromosome, asymmetry between old nucleosome retention and
+new nucleosome assembly would average out over the whole chromo-
+some. Early experiments suggested that under most circumstances, his-
+tones are symmetrically distributed between leading and lagging
+strands. Electron microscopy of S-phase chromatin from rapidly dividing
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+5 of 9
+
+R E V I E W
+
+Drosophila blastoderm nuclei visualized closely spaced replication bubbles
+(50). In these images, one could not distinguish any difference in the
+presence of free DNA in the leading and lagging strand. All studies to
+date have detected no more than 200 bp of nucleosome-free DNA
+behind the replication fork. Furthermore, independent labeling of DNA
+and histones through several generations of cells in culture has shown
+that there is no preference for old histones on either leading or lagging
+strands (51). Thus, these studies suggest that there is no leading-versus-
+lagging strand bias in the distribution of old-versus-new nucleosomes.
+DNA replication and CG methylation are both semiconservative
+processes, in which each parental strand templates its newly synthe-
+sized complement. In the case of nucleosomes, the issue of semicon-
+servative versus conservative replication (Fig. 3) has been a matter of
+continuing debate since shortly after the discovery of nucleosomes in
+1974 (52, 53). By differentially labeling old and newly synthesized his-
+tones with dense amino acids, several studies have shown that octamers
+contain either only old histones or only new histones, that is, newly
+synthesized histones are not combined with old histones to form nucleo-
+somes during replication-coupled assembly in bulk (54–57). The con-
+servative transfer of histones was further narrowed down to H3-H4
+specifically, when it was observed that old H2A-H2B could be part of
+nucleosomes that contained either old H3-H4 or newly synthesized
+H3-H4 (58, 59). These studies were confirmed by an orthogonal method
+that involved incorporation of fluorescently labeled H3 in the species
+Physarum microplasmodia (60). When two labeled H3 molecules were
+part of the same nucleosome, there would be a fluorescence resonance
+energy transfer (FRET) signal. Initial incorporation resulted in nucleo-
+somes containing two copies of labeled H3. Then, the fluorescence
+was tracked in the absence of any new incorporation of labeled H3,
+which would mean that after one cell cycle, all the labeled H3 would
+represent the old H3. Over several cell cycles, the FRET signal persisted
+over the fluorescence of a single H3, indicating that the old H3 re-
+mained in the same (H3-H4)2 even after replication, confirming the
+bulk isotope labeling studies. Thus, H3-H4 is transferred conservative-
+ly during replication. In contrast to bulk chromatin, active chromatin
+has been characterized to have a mixture of old and new histones form-
+ing the octamer, indicating that nucleosome assembly during active pro-
+cesses independent of replication involves mixing of old and newly
+synthesized nucleosomes (61).
+
+These early studies demonstrating a lack of mixing of old H3-H4
+with newly synthesized H3-H4 were confirmed by differential labeling
+of old and new histones followed by mass spectrometry (MS), which
+offers an unambiguous identification of the proteins forming nucleo-
+somes (8, 62). Amino acid substitutions of H3 toward H3.3 are enough
+for it to be incorporated by replication-independent pathways, indicat-
+ing the separation of incorporation pathways to be inherent to the
+histone variant. Compared to earlier studies in bulk that looked at
+transfer of old histones during replication, a major advance of the re-
+cent mass spectroscopy analysis was the ability to distinguish H3 and
+H3.3 (62). The MS analysis of newly assembled nucleosomes revealed
+that whenever a nucleosome contained an old H3 subunit, both H3 sub-
+units were old. Thus, in line with the early studies, it was confirmed that
+the canonical H3 is not inherited through a half-nucleosome template.
+The same study found that 20% of the nucleosomes containing one
+old replication-independent variant H3.3 subunit contained a newly syn-
+thesized H3.3 as the other subunit. A follow-up study that mapped the
+genome-wide locations of nucleosomes containing one copy of old
+H3.3 and one copy of newly synthesized H3.3 found them predom-
+
+inantly at enhancers (37). The differential behavior of H3 and H3.3 is
+reflective of their distinct modes of incorporation into chromatin.
+
+What can we conclude about replication-coupled nucleosome as-
+sembly based on the observation that individual nucleosomes generally
+replicate conservatively? One possibility is that old H3-H4 tetramers
+or whole octamers are transferred intact from the parental chromosome
+to the daughter chromosome (Fig. 3, single nucleosome). Another pos-
+sibility is that nucleosomes are disassembled and reassembled to accom-
+modate passage of the replication fork, which is suggested by the action
+of Asf1, a histone chaperone that binds an H3-H4 dimer and facilitates
+histone octamer disruption. The fact that the binding interface between
+Asf1 and H3-H4 precludes H3-H4 tetramer formation (63, 64) and that
+Asf1 is required for fork passage (65) suggests that the histone octamer
+is disrupted ahead of the fork into histone dimers. Similar to Asf1, the
+other H3-H4 chaperone, Caf1, also binds H3-H4 dimers (66). Hence,
+although old nucleosomes are disrupted to dimers during fork passage,
+the old H3-H4 dimers do not mix with newly synthesized H3-H4 di-
+mers when incorporated into nucleosomes. However, old and new his-
+tones make up equal parts of the newly replicated chromatin in bulk.
+Thus, nucleosomes with all-old H3-H4 or all-new H3-H4 could be as-
+sembled at random on each daughter chromatid, leading to equal dis-
+tribution of nucleosomes with solely old H3-H4 or new H3-H4 over a
+nucleosome array (Fig. 3, semiconservative nucleosome array).
+
+1
+
+0.75
+
+e
+c
+n
+a
+
+t
+i
+r
+e
+h
+n
+
+i
+ 
+l
+
+u
+
+f
+
+h
+
+t
+i
+
+a
+
+f
+ 
+f
+
+o
+
+ 
+y
+t
+i
+l
+i
+
+b
+a
+b
+o
+r
+P
+
+0.5
+
+10
+
+% Old nucleosomes 
+inherited in the array
+
+33%
+36%
+40%
+44%
+49%
+50%
+
+54
+
+100
+
+1000
+
+10,000
+
+Number of contiguous nucleosomes (log scale)
+
+Fig. 4. Probability of faithful inheritance at various thresholds of old
+histone segregation. Given that old (H3-H4)2 is segregated randomly to
+daughter chromosomes during replication, we can think of each nucleo-
+some assembled as a Bernoulli trial, with the probability of a daughter
+chromosome assembling a nucleosome with old (H3-H4)2 the same as
+the probability of assembling a nucleosome with new (H3-H4)2, both of
+which would be 0.5. We can then ask, what is the probability that at least
+a given percentage of old (H3-H4)2 in a nucleosome array of a given size is
+obtained by a daughter chromosome? The x axis of this plot represents the
+different nucleosome array sizes. The y axis represents the probability of
+the daughter chromosome getting at least a given percentage of old
+(H3-H4)2. We define this binomial probability as the probability of faithful
+inheritance. The dashed gray line represents the minimum size of the nu-
+cleosome array that would ensure faithful inheritance of at least 33% of old
+(H3-H4)2.
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+6 of 9
+
+R E V I E W
+
+The inheritance of a mixture of old and new nucleosomes over a
+nucleosome array has implications for distinguishing between the
+template model and the assembly model. The minimal region required
+for stable inheritance of silenced domains through replication has been
+best characterized in flies, where PREs are required for stable silencing
+of homeotic genes through replication. PREs are ~700 bp, only enough
+for about three nucleosomes, but the silenced domains are in the scale
+of kilobases. If we look at the inheritance of nucleosomes at PREs alone
+through replication, based on the inheritance model we have described,
+during one of eight instances of the replication of a PRE, the newly rep-
+licated PRE will have all three nucleosomes consisting of newly synthe-
+sized H3-H4. Hence, if the epigenetic information were carried through
+old histones, this would be completely lost in one of eight times at the
+PRE (67). We can extend this idea to explore the minimum number of
+contiguous nucleosomes that could be inherited faithfully through
+replication. At maximum, only 50% of the time can daughter chromo-
+somes faithfully acquire 50% or more of old nucleosomes (Fig. 4).
+Hence, 50% of the time, there will be loss of inheritance. At least 33%
+of old nucleosomes can be faithfully acquired by daughter chromo-
+somes if the domain size is at least 54 nucleosomes (or ~10 kb). That
+is, 10 kb is the minimum size of a nucleosome domain in which at
+least 33% of nucleosomes can be faithfully inherited. This estimate
+agrees with the size of silent domains that are maintained around PREs
+through several rounds of replication during fly development. So for
+replication-coupled H3, the template model could operate over re-
+gions that span tens of kilobases of DNA and would involve the faith-
+ful inheritance of ~40% or fewer of old nucleosomes every time that
+region is replicated. In contrast, the template model could apply at a
+single nucleosome level for H3.3, where old H3.3 mixes with new H3.3
+to form single nucleosomes at least 20% of the time in bulk. The pos-
+sibility of such inheritance is highlighted by the fact that the mixing of
+old and new H3.3 occurs at cell type–specific enhancers (37) and that
+H3.3 is enriched at PREs relative to surrounding regions (68).
+
+The conservative inheritance of H3, together with the high prob-
+ability that old histones with modifications would be lost at short
+segments, argues against the simplest version of the template-binding
+model for short regulatory sequences. In contrast, the constitutive mod-
+el is not affected by any of the constraints of the replication-coupled
+histone transfer process, because all H3s, but no H3.3s, will be modified.
+The bridging model remains an attractive possibility that is not mutu-
+ally exclusive with the constitutive model, insofar as recruitment of
+PRC1 is known not to depend on H3K27 methylation (69, 70).
+
+CONCLUSION
+
+We have described the diverse cellular strategies that are observed in the
+reconstitution of the steady-state nucleosome landscape after disrup-
+tion and dilution of old nucleosomes during replication. In organisms
+with large and complex genomes, where a particular cell type requires
+that only a fraction of the genome is active, there needs to be a means
+of packaging and repressing the inactive majority of the genome during
+every cell division. To accomplish this feat during the brief passage of the
+replication fork, a choreographed process has evolved around replication-
+coupled assembly to propagate the silent state. This involves clusters of
+replication-coupled histone genes that are highly transcribed only dur-
+ing S phase, stem-loop binding protein, which protects the 3′ ends of
+histone mRNAs from cleavage and polyadenylation to channel histone
+
+mRNA into the specialized U7 SNURP RNA 3′-end processing ma-
+chinery, and a dedicated replication-coupled nucleosome assembly
+pathway (71, 72). Outside of replication, nucleosome assembly relies
+on the replication-independent H3.3 variant, which is incorporated
+when nucleosomes are lost due to either active processes or the in-
+ability of the underlying DNA to stably wrap nucleosomes. Yeast lacks
+H3K27 methylation, and the H3 variant is absent, so that a single
+H3.3-like variant has become the substrate for both replication-coupled
+and replication-independent pathways.
+
+Apart from an inherent tendency of replication-coupled assembly
+to impose basal silencing, inheritance of posttranslationally modified
+histones at silent domains could play additional roles in maintenance
+of silent states. However, as we have discussed above, inheritance of old
+H3 alone is sufficiently reliable only for large chromatin domains (tens
+of kilobases) due to the histones being randomly transferred to daugh-
+ter chromosomes during replication. Alternatively, by splitting H3.3-
+containing nucleosomes, inheritance of old H3.3 could be sufficient
+to maintain chromatin states at short regulatory sequences through
+replication. We anticipate that future research will focus on the extent
+of inheritance of old H3 required for stable maintenance of epigenetic
+states and the molecular mechanisms involved in inheritance of his-
+tone modifications when nucleosomes with one old H3.3 and one new
+H3.3 are formed.
+
+REFERENCES AND NOTES
+
+1. T. K. Kim, M. Hemberg, J. M. Gray, A. M. Costa, D. M. Bear, J. Wu, D. A. Harmin, M. Laptewicz,
+K. Barbara-Haley, S. Kuersten, E. Markenscoff-Papadimitriou, D. Kuhl, H. Bito, P. F. Worley,
+G. Kreiman, M. E. Greenberg, Widespread transcription at neuronal activity-regulated en-
+hancers. Nature 465, 182–187 (2010).
+
+2. A. Mohd-Sarip, F. Venturini, G. E. Chalkley, C. P. Verrijzer, Pleiohomeotic can link polycomb
+
+to DNA and mediate transcriptional repression. Mol. Cell. Biol. 22, 7473–7483 (2002).
+
+3. R. B. Deal, J. G. Henikoff, S. Henikoff, Genome-wide kinetics of nucleosome turnover
+
+determined by metabolic labeling of histones. Science 328, 1161–1164 (2010).
+
+4. Y. V. Fu, H. Yardimci, D. T. Long, T. V. Ho, A. Guainazzi, V. P. Bermudez, J. Hurwitz, A. van Oijen,
+O. D. Schärer, J. C. Walter, Selective bypass of a lagging strand roadblock by the eukaryotic
+replicative DNA helicase. Cell 146, 931–941 (2011).
+
+5. V. Böhm, A. R. Hieb, A. J. Andrews, A. Gansen, A. Rocker, K. Tóth, K. Luger, J. Langowski,
+Nucleosome accessibility governed by the dimer/tetramer interface. Nucleic Acids Res. 39,
+3093–3102 (2011).
+
+6. L. Louters, R. Chalkley, Exchange of histones H1, H2A, and H2B in vivo. Biochemistry 24,
+
+3080–3085 (1985).
+
+7. E. McKittrick, P. R. Gafken, K. Ahmad, S. Henikoff, Histone H3.3 is enriched in covalent mod-
+ifications associated with active chromatin. Proc. Natl. Acad. Sci. U.S.A. 101, 1525–1530
+(2004).
+
+8. K. Ahmad, S. Henikoff, The histone variant H3.3 marks active chromatin by replication-
+
+independent nucleosome assembly. Mol. Cell 9, 1191–1200 (2002).
+
+9. S. Enomoto, P. D. McCune-Zierath, M. Gerami-Nejad, M. A. Sanders, J. Berman, RLF2, a subunit
+of yeast chromatin assembly factor-I, is required for telomeric chromatin function in vivo.
+Genes Dev. 11, 358–370 (1997).
+
+10. P. D. Kaufman, R. Kobayashi, B. Stillman, Ultraviolet radiation sensitivity and reduction of
+telomeric silencing in Saccharomyces cerevisiae cells lacking chromatin assembly factor-I.
+Genes Dev. 11, 345–357 (1997).
+
+11. E. K. Monson, D. de Bruin, V. A. Zakian, The yeast Cac1 protein is required for the stable in-
+heritance of transcriptionally repressed chromatin at telomeres. Proc. Natl. Acad. Sci. U.S.A. 94,
+13081–13086 (1997).
+
+12. S. Enomoto, J. Berman, Chromatin assembly factor I contributes to the maintenance, but not
+the re-establishment, of silencing at the yeast silent mating loci. Genes Dev. 12, 219–232
+(1998).
+
+13. S. Nakano, B. Stillman, H. R. Horvitz, Replication-coupled chromatin assembly generates a
+
+neuronal bilateral asymmetry in C. elegans. Cell 147, 1525–1536 (2011).
+
+14. H. Kaya, K. I. Shibahara, K. I. Taoka, M. Iwabuchi, B. Stillman, T. Araki, FASCIATA genes for chro-
+matin assembly factor-1 in Arabidopsis maintain the cellular organization of apical meristems.
+Cell 104, 131–142 (2001).
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+7 of 9
+
+R E V I E W
+
+15. T. Ono, H. Kaya, S. Takeda, M. Abe, Y. Ogawa, M. Kato, T. Kakutani, S. O. Mittelsten, T. Araki,
+K. Shibahara, Chromatin assembly factor 1 ensures the stable maintenance of silent chromatin
+states in Arabidopsis. Genes Cells 11, 153–162 (2006).
+
+16. Y. Song, F. He, G. Xie, X. Guo, Y. Xu, Y. Chen, X. Liang, I. Stagljar, D. Egli, J. Ma, R. Jiao, CAF-1
+is essential for Drosophila development and involved in the maintenance of epigenetic
+memory. Dev. Biol. 311, 213–222 (2007).
+
+17. B. Klapholz, B. H. Dietrich, C. Schaffner, F. Hérédia, J. P. Quivy, G. Almouzni, N. Dostatni,
+CAF-1 is required for efficient replication of euchromatic DNA in Drosophila larval endo-
+cycling cells. Chromosoma 118, 235–248 (2009).
+
+18. D. Ray-Gallet, A. Woolfe, I. Vassias, C. Pellentz, N. Lacoste, A. Puri, D. C. Schultz, N. A. Pchelintsev,
+P. D. Adams, L. E. T. Jansen, G. Almouzni, Dynamics of histone H3 deposition in vivo reveal
+a nucleosome gap-filling mechanism for H3.3 to maintain chromatin integrity. Mol. Cell 44,
+928–941 (2011).
+
+19. M. Bui, M. P. Walkiewicz, E. K. Dimitriadis, Y. Dalal, The CENP-A nucleosome: A battle be-
+
+tween Dr Jekyll and Mr Hyde. Nucleus 4, 37–42 (2013).
+
+20. C. Alabert, J. C. Bukowski-Wills, S. B. Lee, G. Kustatscher, K. Nakamura, A. F. de Lima, P. Menard,
+J. Mejlvang, J. Rappsilber, A. Groth, Nascent chromatin capture proteomics determines chro-
+matin dynamics during DNA replication and identifies unknown fork components. Nat. Cell
+Biol. 16, 281–293 (2014).
+
+21. K. H. Leung, M. Abou El Hassan, R. Bremner, A rapid and efficient method to purify proteins
+
+at replication forks under native conditions. Biotechniques 55, 204–206 (2013).
+
+22. B. M. Sirbu, F. B. Couch, J. T. Feigerle, S. Bhaskara, S. W. Hiebert, D. Cortez, Analysis of
+protein dynamics at active, stalled, and collapsed replication forks. Genes Dev. 25,
+1320–1327 (2011).
+
+23. C. Alabert, T. K. Barth, N. Reverón-Gómez, S. Sidoli, A. Schmidt, O. N. Jensen, A. Imhof, A. Groth,
+Two distinct modes for propagation of histone PTMs across the cell cycle. Genes Dev. 29,
+585–590 (2015).
+
+24. J. Müller, C. M. Hart, N. J. Francis, M. L. Vargas, A. Sengupta, B. Wild, E. L. Miller, M. B. O’Connor,
+R. E. Kingston, J. A. Simon, Histone methyltransferase activity of a Drosophila Polycomb group
+repressor complex. Cell 111, 197–208 (2002).
+
+25. A. Kuzmichev, K. Nishioka, H. Erdjument-Bromage, P. Tempst, D. Reinberg, Histone methyl-
+transferase activity associated with a human multiprotein complex containing the Enhancer
+of Zeste protein. Genes Dev. 16, 2893–2905 (2002).
+
+26. L. Ringrose, R. Paro, Epigenetic regulation of cellular memory by the Polycomb and Trithorax
+
+group proteins. Annu. Rev. Genet. 38, 413–443 (2004).
+
+27. L. J. Gaydos, W. Wang, S. Strome, Gene repression. H3K27me and PRC2 transmit a memory
+of repression across generations and during development. Science 345, 1515–1518 (2014).
+28. V. Tran, C. Lim, J. Xie, X. Chen, Asymmetric division of Drosophila male germline stem cell
+
+shows asymmetric histone distribution. Science 338, 679–682 (2012).
+
+29. P. Hemmerich, S. Weidtkamp-Peters, C. Hoischen, L. Schmiedeberg, I. Erliandri, S. Diekmann,
+Dynamics of inner kinetochore assembly and maintenance in living cells. J. Cell Biol. 180,
+1101–1114 (2008).
+
+30. J. Wisniewski, B. Hajj, J. Chen, G. Mizuguchi, H. Xiao, D. Wei, M. Dahan, C. Wu, Imaging the
+fate of histone Cse4 reveals de novo replacement in S phase and subsequent stable
+residence at centromeres. Elife 3, e02203 (2014).
+
+31. P. Drané, K. Ouararhni, A. Depaux, M. Shuaib, A. Hamiche, The death-associated protein
+DAXX is a novel histone chaperone involved in the replication-independent deposition of
+H3.3. Genes Dev. 24, 1253–1265 (2010).
+
+32. P. W. Lewis, S. J. Elsaesser, K. M. Noh, S. C. Stadler, C. D. Allis, Daxx is an H3.3-specific histone
+chaperone and cooperates with ATRX in replication-independent chromatin assembly at telo-
+meres. Proc. Natl. Acad. Sci. U.S.A. 107, 14075–14080 (2010).
+
+33. D. Ray-Gallet, J. P. Quivy, C. Scamps, E. M. Martini, M. Lipinski, G. Almouzni, HIRA is critical
+for a nucleosome assembly pathway independent of DNA synthesis. Mol. Cell 9, 1091–1100
+(2002).
+
+34. Y. Mito, J. G. Henikoff, S. Henikoff, Genome-scale profiling of histone H3.3 replacement
+
+patterns. Nat. Genet. 37, 1090–1097 (2005).
+
+35. C. M. Weber, J. G. Henikoff, S. Henikoff, H2A.Z nucleosomes enriched over active genes are
+
+homotypic. Nat. Struct. Mol. Biol. 17, 1500–1507 (2010).
+
+36. G. Hu, D. E. Schones, K. Cui, R. Ybarra, D. Northrup, Q. Tang, L. Gattinoni, N. P. Restifo, S. Huang,
+K. Zhao, Regulation of nucleosome landscape and transcription factor targeting at tissue-
+specific enhancers by BRG1. Genome Res. 21, 1650–1658 (2011).
+
+37. C. Huang, Z. Zhang, M. Xu, Y. Li, Z. Li, Y. Ma, T. Cai, B. Zhu, H3.3-H4 tetramer splitting events
+
+feature cell-type specific enhancers. PLOS Genet. 9, e1003558 (2013).
+
+38. J. I. Schneiderman, A. Sakai, S. Goldstein, K. Ahmad, The XNP remodeler targets dynamic
+
+chromatin in Drosophila. Proc. Natl. Acad. Sci. U.S.A. 106, 14472–14477 (2009).
+
+39. J. I. Schneiderman, G. A. Orsi, K. T. Hughes, B. Loppin, K. Ahmad, Nucleosome-depleted
+chromatin gaps recruit assembly factors for the H3.3 histone variant. Proc. Natl. Acad.
+Sci. U.S.A. 109, 19721–19726 (2012).
+
+40. A. D. Goldberg, L. A. Banaszynski, K.-M. Noh, P. W. Lewis, S. J. Elsaesser, S. Stadler, S. Dewell,
+M. Law, X. Guo, X. Li, D. Wen, A. Chapgier, R. C. DeKelver, J. C. Miller, Y.-L. Lee, E. A. Boydston,
+M. C. Holmes, P. D. Gregory, J. M. Greally, S. Rafii, C. Yang, P. J. Scambler, D. Garrick, R. J. Gibbons,
+
+D. R. Higgs, I. M. Cristea, F. D. Urnov, D. Zheng, C. D. Allis, Distinct factors control histone variant
+H3.3 localization at specific genomic regions. Cell 140, 678–691 (2010).
+
+41. H. P. Voon, J. R. Hughes, C. Rode, I. A. De LaRosa-Velázquez, T. Jenuwein, R. Feil, D. R. Higgs,
+R. J. Gibbons, ATRX plays a key role in maintaining silencing at interstitial heterochromatic
+loci and imprinted genes. Cell Rep. 11, 405–418 (2015).
+
+42. R. Margueron, N. Justin, K. Ohno, M. L. Sharpe, J. Son, W. J. Drury III, P. Voigt, S. R. Martin,
+W. R. Taylor, V. De Marco, V. Pirrotta, D. Reinberg, S. J. Gamblin, Role of the polycomb
+protein EED in the propagation of repressive histone marks. Nature 461, 762–767
+(2009).
+
+43. P. A. Dumesic, C. M. Homer, J. J. Moresco, L. R. Pack, E. K. Shanle, S. M. Coyle, B. D. Strahl,
+D. G. Fujimori, J. R. Yates III, H. D. Madhani, Product binding enforces the genomic spec-
+ificity of a yeast polycomb repressive complex. Cell 160, 204–218 (2015).
+
+44. C. Lanzuolo, F. Lo Sardo, A. Diamantini, V. Orlando, PcG complexes set the stage for ep-
+igenetic inheritance of gene silencing in early S phase before replication. PLOS Genet. 7,
+e1002370 (2011).
+
+45. A. P. Bracken, D. Pasini, M. Capra, E. Prosperini, E. Colli, K. Helin, EZH2 is downstream of the
+pRB-E2F pathway, essential for proliferation and amplified in cancer. EMBO J. 22, 5323–5335
+(2003).
+
+46. S. Petruk, Y. Sedkov, D. M. Johnston, J. W. Hodgson, K. L. Black, S. K. Kovermann, S. Beck, E. Canaani,
+H. W. Brock, A. Mazo, TrxG and PcG proteins but not methylated histones remain associated
+with DNA through replication. Cell 150, 922–933 (2012).
+
+47. Y. Jacob, E. Bergamin, M. T. A. Donoghue, V. Mongeon, C. LeBlanc, P. Voigt, C. J. Underwood,
+J. S. Brunzelle, S. D. Michaels, D. Reinberg, J.-F. Couture, R. A. Martienssen, Selective methylation
+of histone H3 variant H3.1 regulates heterochromatin replication. Science 343, 1249–1253
+(2014).
+
+48. S. M. Lo, N. E. Follmer, B. M. Lengsfeld, E. V. Madamba, S. Seong, D. J. Grau, N. J. Francis, A
+bridging model for persistence of a polycomb group protein complex through DNA replica-
+tion in vitro. Mol. Cell 46, 784–796 (2012).
+
+49. M. A. Reijns, H. Kemp, J. Ding, S. M. de Procé, A. P. Jackson, M. S. Taylor, Lagging-strand repli-
+
+cation shapes the mutational landscape of the genome. Nature 518, 502–506 (2015).
+
+50. S. L. McKnight, O. L. Miller Jr., Electron microscopic analysis of chromatin replication in the
+
+cellular blastoderm Drosophila melanogaster embryo. Cell 12, 795–804 (1977).
+
+51. E. Fowler, R. Farb, S. El-Saidy, Distribution of the core histones H2A.H2B.H3 and H4 during
+
+cell replication. Nucleic Acids Res. 10, 735–748 (1982).
+
+52. R. D. Kornberg, J. O. Thomas, Chromatin structure: Oligomers of the histones. Science 184,
+
+865–868 (1974).
+
+53. A. L. Olins, D. E. Olins, Spheroid chromatin units (v bodies). Science 183, 330–332 (1974).
+I. M. Leffak, Stability of the conservative mode of nucleosome assembly. Nucleic Acids Res.
+54.
+11, 2717–2732 (1983).
+I. M. Leffak, Conservative segregation of nucleosome core histones. Nature 307, 82–85
+(1984).
+I. M. Leffak, R. Grainger, H. Weintraub, Conservative assembly and segregation of nucleo-
+somal histones. Cell 12, 837–845 (1977).
+
+56.
+
+55.
+
+57. H. Weintraub, S. J. Flint, I. M. Leffak, M. Groudine, R. M. Grainger, The generation and propa-
+gation of variegated chromosome structures. Cold Spring Harb. Symp. Quant. Biol. 42 (Pt. 1),
+401 (1978).
+
+58. K. Yamasu, T. Senshu, Conservative segregation of tetrameric units of H3 and H4 histones
+
+during nucleosome replication. J. Biochem. 107, 15–20 (1990).
+
+59. V. Jackson, Deposition of newly synthesized histones: New histones H2A and H2B do
+not deposit in the same nucleosome with new histones H3 and H4. Biochemistry 26,
+2315–2325 (1987).
+
+60. C. P. Prior, C. R. Cantor, E. M. Johnson, V. G. Allfrey, Incorporation of exogenous pyrene-labeled
+histone into Physarum chromatin: A system for studying changes in nucleosomes assembled
+in vivo. Cell 20, 597–608 (1980).
+
+61. S. Kumar, M. Leffak, Assembly of active chromatin. Biochemistry 25, 2055–2060 (1986).
+
+62. M. Xu, C. Long, X. Chen, C. Huang, S. Chen, B. Zhu, Partitioning of histone H3-H4 tetramers
+
+during DNA replication–dependent chromatin assembly. Science 328, 94–98 (2010).
+
+63. C. M. English, M. W. Adkins, J. J. Carson, M. E. Churchill, J. K. Tyler, Structural basis for the
+
+histone chaperone activity of Asf1. Cell 127, 495–508 (2006).
+
+64. R. Natsume, M. Eitoku, Y. Akai, N. Sano, M. Horikoshi, T. Senda, Structure and function of the
+histone chaperone CIA/ASF1 complexed with histones H3 and H4. Nature 446, 338–341
+(2007).
+
+65. A. Groth, A. Corpet, A. J. Cook, D. Roche, J. Bartek, J. Lukas, G. Almouzni, Regulation of
+replication fork progression through histone supply and demand. Science 318, 1928–1931
+(2007).
+
+66. H. Tagami, D. Ray-Gallet, G. Almouzni, Y. Nakatani, Histone H3.1 and H3.3 complexes mediate
+nucleosome assembly pathways dependent or independent of DNA synthesis. Cell 116, 51–61
+(2004).
+
+67. S. Henikoff, T. Furuyama, K. Ahmad, Histone variants, nucleosome assembly and epigenetic
+
+inheritance. Trends Genet. 20, 320–326 (2004).
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+8 of 9
+
+R E V I E W
+
+68. Y. Mito, J. G. Henikoff, S. Henikoff, Histone replacement marks the boundaries of cis-regulatory
+
+72. W. F. Marzluff, E. J. Wagner, R. J. Duronio, Metabolism and regulation of canonical histone
+
+domains. Science 315, 1408–1411 (2007).
+
+mRNAs: Life without a poly(A) tail. Nat. Rev. Genet. 9, 843–854 (2008).
+
+69. S. Cooper, M. Dienstbier, R. Hassan, L. Schermelleh, J. Sharif, N. P. Blackledge, V. De Marco,
+S. Elderkin, H. Koseki, R. Klose, A. Heger, N. Brockdorff, Targeting polycomb to pericentric
+heterochromatin in embryonic stem cells reveals a role for H2AK119u1 in PRC2 recruit-
+ment. Cell Rep. 7, 1456–1470 (2014).
+
+70. N. P. Blackledge, A. M. Farcas, T. Kondo, H. W. King, J. F. McGouran, L. L. Hanssen, S. Ito, S. Cooper,
+K. Kondo, Y. Koseki, T. Ishikura, H. K. Long, T. W. Sheahan, N. Brockdorff, B. M. Kessler, H. Koseki,
+R. J. Klose, Variant PRC1 complex-dependent H2A ubiquitylation drives PRC2 recruitment and
+polycomb domain formation. Cell 157, 1445–1459 (2014).
+
+71. Z. Dominski, L. X. Zheng, R. Sanchez, W. F. Marzluff, Stem-loop binding protein facilitates
+3′-end formation by stabilizing U7 snRNP binding to histone pre-mRNA. Mol. Cell. Biol. 19,
+3561–3570 (1999).
+
+Acknowledgments: We thank P. Talbert for the critical reading of the manuscript. Funding:
+Support is from the Howard Hughes Medical Institute. Author contributions: S.R. and S.H. wrote
+the paper. Competing interests: The authors declare that they have no conflicts of interest.
+
+Submitted 10 May 2015
+Accepted 24 June 2015
+Published 7 August 2015
+10.1126/sciadv.1500587
+
+Citation: S. Ramachandran, S. Henikoff, Replicating nucleosomes. Sci. Adv. 1, e1500587 (2015).
+
+Ramachandran and Henikoff Sci. Adv. 2015;1:e1500587
+
+7 August 2015
+
+9 of 9
+
+

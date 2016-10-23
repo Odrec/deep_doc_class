@@ -1,0 +1,913 @@
+Erregbarkeit von Nervenzellen
+Erregbarkeit von Nervenzellen
+
+Elektrochemischer Gradient
+
+für Na+ und K+
+
+Na+/K+- ATPase
+
+Ionenpumpe
+
+Ionenkanal
+
+Natrium – Kaliumpumpe
+
+extrazellulär
+
+intrazellulär
+
+Natrium - Kaliumpumpe
+
+extrazellulär
+
+E1P
+
+E2P
+
+P
+
+ATPADP
+
+intrazellulär
+
+P
+
+P
+
+Bindung
+
+ADP- Ablösung
+
+Freisetzung
+
+Phosphorylierung
+
+occlusion
+
+Natrium - Kaliumpumpe
+
+extrazellulär
+
+E2P
+
+P
+
+intrazellulär
+
+ATP
+
+K+ Aufnahme Dephosphorylierung
+
+ATP-Bindung
+
+occlusion
+
+Freisetzung
+
+Natrium - Kaliumpumpe
+
+extrazellulär
+
+P
+
+ATPADP
+
+intrazellulär
+
+Bindung
+
+Phosphorylierung
+
+Die Natrium – Kalium - Pumpe
+
+• Natriumionen katalysieren die Phosphorylierung
+
+des Enzyms nach ATP Hydrolyse 
+
+• Abspaltung von ADP initiiert die Öffnung der
+
+Natriumbindetasche (“occlusion“)   
+
+• Freisetzung der Natriumionen nach erneuter 
+
+Konformationsänderung
+
+• Bindung von Kaliumionen auf der extrazellulären Seite
+• Dephosphorylierung öffnet die Kaliumbindetasche auf 
+
+der extrazellulären Seite  („occlusion“)
+
+• durch ATP Anlagerung werden Kaliumionen auf der 
+
+intrazellulären Seite freigesetzt
+
+Berechnung des Membranpotentials
+
+Nernstgleichung
+
+Vm=
+
+o]
+R . T        [K+
+z . F        [K+
+i] 
+
+ln
+
+Goldman-Hodgkin-Katz-Gleichung
+
+Vm =
+
+R . T        pK+ [K+
+z . F         pK+ [K+
+
+ln
+
+o] + pNa+[Na+
+i] + pNa+[Na+
+
+o] + pCl- [Cl-
+i] + pCl- [Cl-
+
+i] 
+o] 
+
+R  Gaskonstante
+T  abs. Temperatur
+F  Faradaykonstante
+z  Zahl der Ladungen
+
+o] extrazelluläre 
+
+[X+
+Konzentration von Ion X
+[X+
+Konzentration von Ion X
+
+i] intrazelluläre 
+
+Diffusionspotentiale
+
+EK = 58 log [K]o/[K]i
+EK = 58 log 10-1
+EK = 58 log 10-2
+
+1.0
+
+0.1
+o/ K+
+
+i
+
+K+
+
+0. 01
+
+Diffusionspotentiale
+
+mV
+
+ppKK[K[Koo]]
+
++ pNa[Na[Naoo]]
+
+ppKK [Ko]
+
++ pNa[Na[Naoo]]
+
+Messwerte
+
+Nernst-Gl.
+
+Extrazelluläre K+ - Konzentration
+
+Äquivalenz--Schaltkreis
+Schaltkreis
+Äquivalenz
+
+extrazellulär
+
+Widerstand
+
+Kondensator
+
+Batterie
+
+Ladegerät ?
+
+intrazellulär
+
+Das Aktionspotential
+
+AllesAlles--oder
+
+oder--Nichts Antwort
+Nichts Antwort
+
+Schwelle
+Ruhepotential
+
+hyperpolarisierendes
+Nachpotential
+
+2 ms
+
++20
+
+0
+
+-20
+
+-40
+
+)
+
+V
+m
+
+(
+ 
+l
+
+ 
+
+a
+i
+t
+n
+e
+t
+o
+p
+e
+n
+a
+r
+b
+m
+e
+m
+
+)
+
+20
+
+A
+n
+(
+ 
+t
+n
+e
+r
+r
+u
+c
+s
+u
+u
+m
+20s
+
+0
+
+ 
+
+l
+
+i
+t
+
+Die Natrium-Hypothese
+
+(cid:190) elektrische Reizung verursacht eine plötzliche 
+
+Zunahme der Natriumpermeabilität
+
+(cid:190) dies führt zu einem schnellen Natriumeinstrom, der 
+
+die Membran depolarisiert
+
+äußere Na+- Konzentration   
+
+reduziert
+
++20
+
+0
+
+-20
+
+-40
+
+)
+
+V
+m
+
+(
+ 
+l
+
+ 
+
+a
+i
+t
+n
+e
+t
+o
+p
+e
+n
+a
+r
+b
+m
+e
+m
+
+)
+
+A
+n
+(
+ 
+t
+n
+
+20
+
+Prinzip der Spannungsklemme
+
+Zelle
+
+Kompensations
+
+-strom
+
+Rückkopplungs-
+
+verstärker
+
+Spannungs
+messung
+
+Testspannung
+
+Membranströme
+
+Spannungsklemme
+
+K+ - Strom
+
+äußere Na+- Ionen-
+
+konzentration
+
+reduziert
+Subtraktions-
+
+ 
+t
+n
+e
+r
+r
+u
+c
+
+ 
+
+e
+n
+a
+r
+b
+m
+e
+m
+
+1
+
+0
+
+-1
+
+-70 mV
+
+strom
+
+Na+ - Strom
+
+Inaktivierung
+
+-10 mV
+
+1 ms
+
+-70 mV
+
+-60 mV
+
+Strom
+
+Originalregistrierung
+
++90 mV
+
+Pulsprotokoll
+
+90
+70
+50
+30
+10
+-10
+-30
+
+Stromspuren bei 
+unterschiedlichen 
+Testpulsen
+
+Inaktivierung
+
+Zeit (ms)
+
+Strom-Spannungskennlinie
+
+Natriumstrom
+
+Schwelle
+
+Stromumkehr
+
+ENa= 58 log 400
+50
+
+ENa= 58 log 8
+
+ENa= 58 x 0.90
+
+ENa= + 52 mV
+
+Umkehrpotential
+
+Umkehrpotential
+
++ 52 mV
+
++ 70 mV
+
+Gleichgewichtspotential
+
+Natriumausstrom
+
+Membran-
+spannung
+
+- -
+
++ +
+
+- -
+
+- -
+
++ +
+
++ +
+
+- -
+
++ +
+
+Konzentrations-
+
+gefälle
+
+E  =  VM - VG
+E  =  +70mV - 52mV
+
+Umkehrpotential
+
++ 52 mV
+
++ 30 mV
+
+Gleichgewichtspotential
+
+Natriumeinstrom
+
+Membran-
+spannung
+
+- -
+
++ +
+
+- -
+
+- -
+
++ +
+
++ +
+
+- -
+
++ +
+
+Konzentrations-
+
+gefälle
+
+E  =  VM - VG
+E  =  +30mV - 52mV
+
+Umkehrpotential
+
++ 52 mV
+
+- 30 mV
+
+Gleichgewichtspotential
+
+Natriumeinstrom
+
+Membran-
+spannung
+
+- -
+
++ +
+
+- -
+
++ +                    + +
+
++ +
+
+- -
+
+- -
+
+Konzentrations-
+
+gefälle
+
+E  =  -30mV - 52mV
+
+Strom-Spannungskennlinie
+
+Kaliumstrom
+
+Natriumstrom
+
+Schwelle
+
+EK= 58 log 20
+400
+
+EK= 58 log 0.005
+
+EK= - 75 mV
+
+Stromumkehr
+
+Umkehrpotential ?
+
+Natriumkanal Blocker
+
+Tetrodotoxin, TTX
+, TTX
+Tetrodotoxin
+
+Pufferfisch
+
+Pharmakologie der Ionenströme
+
+Kontrolle
+
+Kontrolle
+
+TTX
+
+TEA
+
+Reinigung des Natriumkanalproteins
+
+GelGel--Elektrophorese
+Elektrophorese
+
++
+
+oberes Pufferreservoir
+
+staining of 
+proteins
+
+Flachgel
+
+-
+
+unteres Pufferreservoir
+
+Aufreinigung des Natriumkanalproteins
+
+William Catterall
+
+125J-Saxitoxin
+
+260 kD
+
+36 kD
+33 kD
+
+Membrantopologie
+
+Glykophorin
+
++
+
+x
+e
+d
+n
+
+i
+
+i
+
+y
+t
+i
+c
+b
+o
+h
+p
+o
+r
+d
+y
+h
+
+_
+
+hydrophob
+
+20 amino
+acids
+
+hydrophil
+
+50
+
+0
+amino acid position
+
+100
+
+1 Transmembransegment
+
+αα--HelixHelix
+
+Spannungsgesteuerte Ionenkanäle
+
+Wichtigste funktionelle Elemente:    
+
+I            II         III         IV
+
+NH2
+
+COOH
+
+S1
+
+S1 S2 S3
+S2 S3 S4
+
+S4
+S5
+
+S5
+
+S6
+S6
+
+geladenes 
+S4 Segment
+
+Modelle der 3D-Struktur
+
+Porenregion
+
+Heterologe Expressionssysteme
+Expressionssysteme
+Heterologe
+
+Frosch-Oocyten
+
+Krallenfrosch
+
+Heterologe Expression in 
+Heterologe
+
+Expression in Oocyten
+Oocyten
+
+in vitro
+
+Transkription
+
+Ionenkanal 
+Ionenkanal 
+
+cDNA
+cDNA
+
+mRNA
+Injektion
+
+Elektrophysiologie
+
+Plasmid
+
+mRNA
+
+Protein-
+
+Biosynthese
+
+Two-microelectrode voltage clamp
+
+whole cellcell
+whole
+current
+current
+
+Struktur der Porenregion
+
+TTXTTX
+
+DEKA – Na+ selektiv
+EEEE – Ca2+ selektiv
+
+äußerer Ring
+M
+
+innerer Ring
+
+I
+II
+III
+IV
+
+-
+
+E
+
+D
+
+-
+
+-
+A
+
+E
+-
+
+E
+
+K
+
+-
+
+D
+
+DD = Aspartat, EE = Glutamat
+
+Voltage-dependent gating of ion channels
+
+S4 Segment
+
+geschlossen
+
+geöffnet
+
+Inaktivierungstor – Wirkung von Pronase
+
++ Pronase
+
+Lokalisierung des Inaktivierungspartikels
+
+I           II           III         IV
+
+NH2
+
+inactivation
+
+particle
+
+IleIle--PhePhe--MetMet
+
+COOH
+
+Inaktivierung von Natriumkanälen
+
+geöffnet
+
+inaktiviert 
+
+Inaktivierungs-
+
+partikel
+
+Spannungsgesteuerte Ionenkanäle
+
+Wichtigste funktionelle Elemente:    
+
+•• Spannungssensor :
+Spannungssensor :
+•• Selektivitätsfilter :
+Selektivitätsfilter :
+
+• Inaktivierungstor :
+Inaktivierungstor :
+
+S4 - Segment
+Haarnadelschleife 
+zwischen S5 and S6 
+(Pore)
+intrazelluläre Schleife  
+zwischen DIII und DIV
+
+Akzessorische β-Untereinheiten
+
+β2
+
+β1
+
+I       II        III     IV
+
+NH2
+
+COOH
+
+Verteilungsmuster
+
+Immunfluoreszenz
+
+Anfangs-
+segment
+
+Ranvier‘sche
+Schnürringe
+
+Natrium-
+kanäle
+
+Natrium-
+kanäle
+
+Ankyrin-Spektringerüst
+
+Spektrin
+
+Ankyrin G
+
+Akkumulation von Na+-Kanälen an 
+
+Ranvier‘schen Schnürringen
+
+Neurofascin
+
+6 Adhäsions-
+
+domänen
+
+β-Untereinheit
+
+Schwann Zelle
+
+Gliomedin
+
+Schwann Zelle
+
+Gliomedin
+
+Neurofascin
+
+Ankyrin G
+
+Spektrin
+
+Aktin
+
+Gliomedin
+Gliomedin
+
+
