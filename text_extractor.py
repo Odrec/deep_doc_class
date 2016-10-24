@@ -8,6 +8,7 @@ import bow_pdf_test
 from Text_Score_Module import TextScore
 import csv
 import os
+import sys
 import threading
 try:
     from cStringIO import StringIO
@@ -54,17 +55,19 @@ def extract_text(filenames, target,source,pages = 1):
     :param pages:     number of pages per file
     :return:          True if done, else False
     """
-    b = bow_pdf_test.BoW_Text_Module()
+    b = TextScore()
     global c
     for f in filenames:
         try:
             c += 1
             print(str(c)+'/'+str(len(filenames)),end='\r')
             fp = open(source+f+'.pdf','rb')
-            tf = open(target+f+'.txt','w')
-            txt = b.convert_pdf_to_txt(fp,-1)
+            tf = open(target+f+'.txt','w+')
+            txt = b.convert_pdf_to_txt(fp,pages)
             tf.write(txt)
         except:
+            e = sys.exc_info()[0]
+            print(e)
             fp.close()
             tf.close()
             #print("Troubleshooting")
@@ -90,28 +93,29 @@ with open('classification.csv','r') as classes:
         if first:
             first = False
             continue
-        name = row[0]
+        name = row[0]+'.pdf'
         filenames.append(name)
         classification.append(row[2])
-        if c%200 == 0:
-            tl.append(filenames)
-            filenames = list()
-    tl.append(filenames)
-thread_list = list()
+       # if c%200 == 0:
+            #tl.append(filenames)
+           # filenames = list()
+    #tl.append(filenames)
+#thread_list = list()
 global c
 c = 0
 
+"""
 for i in range(len(tl)):
-    t = threading.Thread(target=extract_text,args=(tl[i],target,source,5))
+    t = threading.Thread(target=extract_text,args=(tl[i],target,source,-1))
     thread_list.append(t)
     t.start()
-for t in tl:
+for t in thread_list:
     t.join()
-
-#extract_text(filenames,target,source,5)
 """
+#extract_text(filenames,target,source,5)
 t = TextScore(True)
 b = bow_pdf_test.BoW_Text_Module(True)
+
 
 print("start training...")
 t.train(filenames,classification)
@@ -119,11 +123,29 @@ print("finished text score training...")
 b.train(filenames,classification)
 print("done.")
 #extract_text(filenames,target,source)
+savefile = open('save.txt','w')
 
-for file in os.listdir("./files"):
-    if file.endswith(".pdf"):
-        #print(file)
-        filenames.append(file)
+t_old = TextScore()
+b_old = bow_pdf_test.BoW_Text_Module()
 
-"""
+for i in range(len(filenames)):
+    try:
+   # if True:
+        c += 1
+        print(c, end='\r')
+        if c == 100:
+            break
+        with open('./files/'+filenames[i],'rb') as fp:
+            txt_score = t.get_function(fp)
+            bag_score = b.get_function(fp)
+            t_old_score = t_old.get_function(fp)
+            b_old_score = b_old.get_function(fp)
+            savefile.write(str(txt_score)+" "+str(bag_score)+'\t'+str(t_old_score)+" "+str(b_old_score)+"\n")
+    except:
+        continue
+
+savefile.close()
+
+
+
 

@@ -18,10 +18,10 @@ import csv
 
 class BoW_Text_Module:
 
-    def __init__(self,txt=False, mode = 'full'):
+    def __init__(self,txt=False, mode = ''):
         self.txt = txt
         self.lib = self.load_lib(mode)
-        self.path = 'txt_files_1p'
+        self.path = 'txt_files_full'
         return
 
     def sanitize(self,txt):
@@ -99,9 +99,17 @@ class BoW_Text_Module:
         #print(path)
         fp_txt = open(path,'r')
         txt = ''
-        for lines in fp_txt.readline():
-            txt += lines
+        while(True):
+            try:
+                tmp = fp_txt.read(1000)
+                if tmp == '':
+                    break
+                txt += tmp
+            except:
+                break
+        fp_txt.close()
         return txt
+
     def get_bow(self,txt):
         """
         @param txt:     the pdf-content as a string
@@ -122,8 +130,6 @@ class BoW_Text_Module:
         return score
 
     def load_lib(self,mode = 'full'):
-        if self.txt:
-            return eval(open('bow_train_p1.txt','r').read())
         if(mode == 'full'):
             return eval(open('bow_train_full.txt','r').read())
         elif(mode == 'train'):
@@ -141,7 +147,7 @@ class BoW_Text_Module:
             return 0.0
         txt = self.sanitize(txt)
         bow = self.get_bow(txt)
-        score = self.get_score(bow,self.lib)
+        score = float(self.get_score(bow,self.lib))
         return score
 
     def train(self,filenames,classes,metalist = None):

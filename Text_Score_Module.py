@@ -38,7 +38,7 @@ class TextScore:
             self.std = 124.842470114
         if  not self.load_data():
             print("loading data for textscore failed, using default values instead...")
-        self.path = 'txt_files_1p'
+        self.path = 'txt_files_full'
         return
         
     # @param pages number of pages to transform to text starting from the first
@@ -77,8 +77,15 @@ class TextScore:
         #print(path)
         fp_txt = open(path,'r')
         txt = ''
-        for lines in fp_txt.readline():
-            txt += lines
+        while(True):
+            try:
+                tmp = fp_txt.read(1000)
+                if tmp == '':
+                    break
+                txt += tmp
+            except:
+                break
+        fp_txt.close()
         return txt
 
     def load_data(self):
@@ -94,7 +101,10 @@ class TextScore:
     #@param metapointer a pointer to the metadata, this parameter is not used
     #@return float64 [0 1] probabiliy for the pdf  beeing copyright protected     
     def get_function(self,filepointer, metapointer = None):
-        x = len(self.convert_pdf_to_txt(filepointer,-1))
+        if(self.txt):
+            x = len(self.get_txt(filepointer))
+        else:
+            x = len(self.convert_pdf_to_txt(filepointer,-1))
         return s.norm.pdf(self.mean,self.std,x)
 
 
@@ -121,7 +131,7 @@ class TextScore:
                 continue
             self.mean = np.mean(len_list)
             self.std = np.std(len_list)
-            fp = open('txtscore_pdf.txt','w')
+            fp = open('txtscore_pdf.txt','w+')
             fp.write(str(self.mean)+'\n')
             fp.write(str(self.std)+'\n')
         print(len(len_list))
