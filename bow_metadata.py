@@ -151,7 +151,7 @@ class Bow_Metadata():
     # @ToDo: create functions for if-construct-body
     def get_function(self,filepointer, metapointer=None):
         clean_data=[]
-        file=re.sub('[^a-zA-Z0-9]','',filepointer)      # get rid of //.*
+        file=re.sub('[^a-zA-Z0-9]','',filepointer.name)      # get rid of //.*
         file=file[5:-3]                               # cut out 'files' and 'pdf' from pointer str
 
         # @ToDo: non existing files in classification catch
