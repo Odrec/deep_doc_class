@@ -1,0 +1,308 @@
+A SOCIAL PERSONALIZED ADAPTIVE E-LEARNING 
+ENVIRONMENT:
+A Case Study in Topolor
+
+Authors
+
+Renato Garita
+
+Lei Shi
+Alexandra I. Cristea
+Jonathan J. K. Fox
+Dana Al Qudah
+Alaa Qaffas
+
+Agenda
+
+● Introduction
+
+● Background
+
+● TOPOLOR
+
+● Case Study
+
+● Discussion
+
+● Conclusion and 
+
+Future Work
+
+● What could this 
+
+study be missing?
+
+Introduction
+● Social Media (SM)
+
+○ Apply social media features to e-learning systems: 
+
+sharing, tagging, rating, commenting.
+
+○ New opportunities for collaboration, communication 
+
+and active participation.
+
+○ Collaboration and participative learning practice 
+
+provide educational benefits.
+
+Introduction
+
+● Adaptive Educational Hypermedia (AEH)
+
+○ Tailor online courses to the needs of the individual user.
+○ Definition and maintenance of an User Model (constantly refined).
+○ Take into account background knowledge, learning goals and 
+
+preferences.
+
+○ Personalization techniques:
+
+■ Content adaptation techniques.
+■ Adaptive presentation techniques.
+■ Adaptive navigation techniques.
+
+Introduction
+● None of these techniques take into account 
+
+the information about the user’s social 
+connections.
+
+● Integration of SM and AEH only marginally 
+
+explored.
+
+Introduction
+
+● Hypothesis: extensive social features, personalized 
+
+recommendations and Facebook-like appearance of a 
+system increase the usefulness and usability of the 
+system.
+
+● Focus: study usefulness and ease of use of an adaptive 
+
+personalized social e-Learning environment (Topolor).
+
+Background
+
+● Theoretical
+
+○
+
+Learning is a social endeavour (social constructivism, 
+
+situated cognition, social learning).
+
+○ Unsolved problem: from face-to-face to computerized 
+
+domain keeping effectiveness and efficiency.
+
+● Practical
+
+○ GRAPPLE/GALE
+○ MOT2.0
+
+● Problems
+
+○ Gap for extending and evaluating social interaction tools.
+○
+○
+
+Familiarity of the user with social media is not taken into account.
+Features remain missing like sharing status/notes or question-answering exchanges.
+
+TOPOLOR
+
+● Social Personalized Adaptive E-Learning Environment 
+
+(SPAEE).
+
+● Social Interaction Toolset (3 sub-systems)
+
+○ Topolor-Home: chronological list of posts shared by the students.
+○ Module Center: warehouse of online modules. Provides recommendations 
+
+for learning content, for learning path, for learning peers and interaction 
+tools.
+
+○ Q&A Center: lists of questions/answers related to the contents. Provides 
+adaptive recommendations for questions, concepts and expert learners.
+■ Quiz service: generates quizzes automatically when the learner is at a 
+
+concept page.
+
+TOPOLOR
+
+Home
+
+Module 
+Centre
+
+[2]
+
+Q&A 
+Center
+
+TOPOLOR
+
+Quiz 
+Service
+
+[2]
+
+Quiz 
+Service
+
+TOPOLOR
+
+Learner Recommendations
+
+[2]
+
+Case Study
+
+The Experiment
+
+○
+○
+
+21 students and a lecturer from a postgraduate module of the University of Warwick.
+Two hour experiment where students learned about “Collaborative Filtering” and 
+familiarized with the social interaction toolset.
+
+○ A to-do list with the set of features was handed. The choice of features and which feature 
+
+to use when was up to the students.
+
+Case Study
+The Questionnaire
+
+[2]
+
+Case Study
+Analysis and Results
+
+● 10 students of 21 responded to 18 questions to test usefulness and 18 
+
+to test ease of use for a total of 36 questions.
+
+Usefulness
+
+Ease of use
+
+[2]
+
+Case Study
+
+Analysis and Results
+
+[2]
+
+Discussion
+
+● Results from the questionnaire
+
+○ 15 out of 18 features rated as useful (mean >= 4)
+○ 14 out of 18 features rated as easy to use (mean >= 4)
+○ The qualitative analysis by the students regarded it as 
+
+easy to use because of the social media design and 
+included some suggestions for improvement.
+
+Discussion
+
+● Analysis of the status feature
+
+○ Students rated high the possibility to comment on 
+
+statuses.
+
+○ For students it also decreased social anxiety by allowing 
+them to interact without the need for formal introductions.
+○ Students rated low favoriting statuses because they didn’t 
+
+understand their purpose (usefulness) and because of 
+design issues (ease of use).
+
+Discussion
+
+● Analysis of the messaging feature
+
+○ Scored low on ease of use due to design issues.
+
+● Analysis of the asking and answering questions features
+○ Answering question was the highest rated feature and also the most 
+
+favourable qualitatively.
+
+○ Asking questions was also rated very high.
+○ Adding and editing tags of questions was rated low possibly because 
+
+of redundancy.
+
+○ Editing a question was rated the lowest due to design issues. Possibly 
+
+more time is needed to get used to it.
+
+Conclusion and Future Work
+
+● This study was complemented by 3 others
+
+○ Participatory Design for a new SPAEE.
+○ Evaluation of usability of various features in Topolor.
+○ Learning behaviour pattern analysis in Topolor.
+
+● Features to improve or add (some already implemented):
+
+○ Favoriting
+○ Sharing statuses
+○ Tagging
+○ Messaging and notifying
+○ Gamification
+
+What could improve?
+
+● Social learning theories are very complex and 
+could provide implementation or evaluation ideas 
+(e.g. perspectives, cognitive artifacts, zone of proximal 
+development, network analysis for peer recommendations).
+
+[1]
+
+● Very focused on quantitative analysis. Ethnometodological studies can enrich 
+the study a lot by analysing the interaction and generation of new knowledge 
+within the system.
+
+What could improve?
+
+● A term inherited from Computer-Supported Collaborative 
+
+Learning is Group Cognition. Why not create models of 
+groups and not just individuals?
+
+● Some IA could help by abstracting the user model of 
+
+interaction with the system and making analogies with other 
+users’ models or generating common models. Also natural 
+language analysis can be used to suggest relevancy of 
+interventions.
+
+Questions or comments?
+
+Thank you very much!
+
+References
+
+[1] Social Constructivism. http://educ1049blogs43218790.blogspot.de/2013/05/social-constructivism.html
+[2] Shi, Lei, Cristea, Alexandra I., Foss, Jonathan G. K., Al Qudah, Dana and Qaffas, Alaa. (2013) A social personalized adaptive 
+e-learning environment : a case study in Topolor. IADIS International Journal on WWW/Internet, Volume 11 (Number 3). pp. 1-17. 
+ISSN 1645-7641 
+[3] Social Constructivism -- Wikipedia. en.wikipedia.org/wiki/Social_constructivism
+[4] Wenger Social Theory Learning. http://pagi.wikidot.com/wenger-social-theory-learning
+[5] Stahl, G. (2014). The constitution of group cognition. In L. Shapiro (Ed.), Handbook of embodied cognition. Routledge.
+[6] Stahl, G. (2006). Group Cognition: Computer Support for Building Collaborative Knowledge (Acting with Technology). The MIT 
+Press.
+
+

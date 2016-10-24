@@ -1,0 +1,272 @@
+Genetik Grundpraktikum 
+
+Grundmodul Genetik I., Polymerasekettenreaktion: 
+ 
+Betreuer: Stefan Walter 
+ 
+1. Versuchsinhalt 
+ 
+Polymerasekettenreaktion, Agarosegelektrophorese 
+ 
+Zwei verschiedene Plasmide werden als Template für eine Polymerasekettenreaktion 
+eingesetzt. Die Produkte sollen gelelektrophoretisch aufgetrennt und ihre Größen bestimmt 
+werden.  
+ 
+ 
+ 
+2. Grundlagen 
+ 
+PCR wurde 1984 zuerst beschrieben und hat seitdem vielfache Anwendung gefunden (Kary 
+Mullis, Nobelpreis 1993). 
+Die breite Verwendung dieser Methode basiert auf der Einfachheit ihrer Durchführung. Mit 
+dieser Methode können kleine DNA Fragmente in relativ kurzer Zeit vermehrt werden. 
+Die Grundlage der Methode ist die Verwendung einer hitzestabilen DNA-Polymerase, z. B. 
+der  Taq Polymerase aus Thermus aquaticus. Dieses thermophile Eubakterium lebt bei 75-
+80°C in heißen Quellen (z. B. Yellowstone Nationalpark). Die hieraus isolierte DNA-
+Polymerase ist sehr stabil gegen hohe Temperaturen (95°C). Die Halbwertszeiten (50 % 
+Restaktivität) betragen 130 min bei 92,5 °C, 40 min bei 95°C und 5 min bei 97,5°C. 
+ 
+ 
+Im ersten Schritt der PCR (Denaturierung) werden die komplementären DNA Stränge bei 
+94°C getrennt. Im zweiten Schritt (Annealing) wird die Probe auf eine Temperatur abgekühlt 
+(42 – 68°C), um die Anlagerung (Hybridisierung) von kleinen synthetischen 
+Oligonukleotiden („Primer“, 15 – 30 Nukleotide lang) an das zu amplifizierende Fragment 
+(Zielsequenz oder Matrizensequenz) zu ermöglichen.  
+Im dritten Schritt (Extension) wird die Temperatur auf 72°C erhöht und die Polymerase fügt 
+Nukleotide an die 3‘-Enden der Primer und vervollständigt so einen neuen komplementären 
+DNA Strang des Zielmoleküls. Diese drei Schritte entsprechen einem sogenannten Zyklus 
+(Cycle). Diese Zyklen werden typischerweise zwischen 20 – 50 mal wiederholt. Theoretisch 
+entspricht dies ab dem 3. Zyklus einer exponentiellen DNA Vermehrung,  also etwa 1010 fach 
+nach 34 Zyklen (2n , n= Nummer des Zyklus). 
+
+Genetik Grundpraktikum 
+
+Genetik Grundpraktikum 
+
+ 
+3. Versuchsdurchführung 
+ 
+Ziele: 
+ 
+-  Grundlagen der Polymerasekettenreaktion 
+-  Grundlagen der DNA-Trennung und Analyse über Agarosegele 
+ 
+ 
+ 
+Benötigte Chemikalien und Plasmide: 
+ 
+
+Plasmide 
+pUC18 
+pKJL702A 
+ 
+Chemikalien: 
+dNTP Mix  (je 2,5mM, Stocklsg.)   
+Immolase DNA Polymerase (ggf. anderes Enzym) 
+Reaktionspuffer (10x) 
+Immolase DNA Polymerase (2,5 u/µl) 
+Primer univ./rev. (10 pmol/µl) 
+
+-20°C 
+-20°C 
+-20°C 
+
+-20°C 
+
+ 
+
+ 
+
+ 
+
+ 
+Geräte und weiteres Zubehör: 
+ 
+
+-  Agarose 
+-  Elektrophoresepuffer (1xTBE) 
+-  Auftragspuffer (5xGLB) 
+-  1,5 ml Mikrozentrifugengefäße („Eppis“) 
+-  0,5 ml PCR Tubes 
+-  Thermocycler 
+-  Horizontal Gelelektrophoresekammer 
+-  Gleichstrom Spannungsquelle (D.C. Power Supply) 
+-  Mikrozentrifuge 
+-  UV Transilluminator 
+-  UV-Photoeinrichtung 
+-  Mikropipetten ( 20µl) mit Spitzen 
+-  Mikrowelle 
+-  Handschuhe 
+-  UV- Sicherheitsbrille/Schild 
+-  Schott Flaschen 
+
+ 
+ 
+
+Genetik Grundpraktikum 
+
+ 1. Tag: DNA-Amplifikation 
+ 
+ 
+1.  Jede  Gruppe  erhält  ein  0,5ml  Eppendorftube  welches  bereits  alle  Komponenten  für  die 
+PCR  enthält  (siehe  Tabelle).  Jede  Gruppe  beschriftet  das  Cup  mit  der  entsprechenden 
+Gruppennummer.  
+
+2.  Anschließend  verdünnt  jede  Gruppe  die  Plasmid  DNA  vom  Versuch  Transformation 
+(entweder  pUC18  oder  pKJL702A)  1:500.  Hierzu  werden  2  µl  Plasmid  DNA  in  ein 
+vorbereitetes Cup mit 998µl H2O pipettiert und gut gemischt. 
+
+3.  Von der Verdünnung werden nun 5 µl in den PCR Ansatz pipettiert 
+4.  Der PCR-Ansatz lautet: 
+     
+
+Reagenz 
+
+Wasser 
+10 x PCR Puffer ** 
+dNTP-Mix (je 2 mM) 
+univ. Primer (10 pmol/µll) 
+rev. Primer (10 pmol/µl) 
+Immolase-Polymerase (5u/µl) 
+MgCl2 (50mM Stocklsg.) 
+Isolierte DNA (1:500) 
+
+Menge 
+22,5 µl 
+5.0 µl 
+5.0 µl 
+5.0 µl 
+5.0 µl 
+0,5 µl 
+2,0µl 
+5 µl 
+
+ 
+
+**      10x PCR Puffer: 200 mM Tris-HCl, pH 8,3; 500 mM KCl;  
+
+ 
+5.  Die Probenvolumina sind relativ klein, zentrifugieren Sie deshalb die Proben kurz in der 
+
+Mini-Zentrifuge für PCR Cups an. 
+
+ 
+6.  Die Proben werden in einem Thermocycler parallel bearbeitet.  
+ 
+7.  Reaktionszyklen  
+
+1. Schritt 
+
+10 min 
+
+95°C 
+
+Denaturieren 
+
+ 
+2.Schritt 
+ 
+ 
+3.Schritt 
+4. Schritt 
+
+1 min 
+1 min 
+1,5 min 
+5 min 
+ 
+
+94°C 
+50°C 
+72°C 
+72°C 
+15°C 
+
+ Dauer: ca. 2,5 Stunden 
+
+Denaturieren 
+Annealing 
+Elongation 
+Elongation 
+ 
+
+ 
+ 
+
+DNA, Aktivierung der 
+Immolase 
+
+Dieser Schritt wird 34 
+x wiederholt 
+
+ 
+ 
+
+Genetik Grundpraktikum 
+
+3. Tag: Gelelektrophorese und Auswertung  
+ 
+ 
+ 
+1.  0,7g Agarose in einem 200 ml Schott-Flasche abwiegen und 100 ml 1xTEB Puffer 
+
+zugeben. Die Höhe der Lösung mit dem Marker markieren. 
+
+ 
+2.  In der Mikrowelle aufkochen bis die Agarose vollständig gelöst ist. 
+ 
+3.  Lösung etwas Abkühlen lassen (gegebenenfalls die Lösung mit Wasser bis zur 
+
+Markierung auffüllen) dann möglichst luftblasenfrei in eine vorbereitete Form mit Kamm 
+gießen und etwa 30 min verfestigen lassen. 
+
+ 
+4.  In der Zwischenzeit werden die Proben vorbereitet. Jeweils 5 µl der PCR Reaktionen 
+
+werden mit 2µl Auftragspuffer (5xGLB) in einem 1,5 ml Eppendorftube gemischt und 
+kurz in der Mikrozentrifuge anzentrifugiert. 
+
+ 
+5.  Aus dem ausgehärteten Gel wird vorsichtig der Kamm gezogen und das Gel wird in die 
+
+mit 1xTBE Puffer befüllte Elektrophoresekammer gelegt 
+
+ 
+6.  Jeweils 5 µl der Proben werden auf das Gel aufgetragen . Zusätzlich werden in einige 
+
+Geltaschen 5 µl eines Standardmarkers aufgetragen. 
+
+ 
+7.  Nach dem Auftragen der Proben wird der Deckel auf die Kammer gesetzt und der Strom 
+eingeschaltet (auf richtige Polung achten!). Die Elektrophorese  wird bei etwa 150 Volt 
+durchgeführt  und zwar solange, bis der blaue Farbstoff  etwa 2 cm vor dem Ende des 
+Gels angelangt ist (etwa 1,5 Stunden). 
+
+ 
+8.  Das Gel wird aus dem Puffer genommen, mit Ethidiumbromid gefärbt und unter UV-Licht 
+
+fotografiert.  
+
+ 
+ 
+Vorsicht: UV Licht kann die Netzhaut beschädigen. Nicht ohne UV-Augenschutz 
+arbeiten.  
+ 
+ 
+ 
+Fragen und Auswertung 
+ 
+Die Wanderung der DNA Moleküle in Agarose ist umgekehrt proportional zum log10 des 
+Molekulargewichts (Größe oder Länge in Basenpaaren). 
+ 
+1. Bestimmen Sie eine Standardkurve mit Hilfe der Markerbanden bekannter Länge. 
+Bestimmen Sie die Entfernung (in mm) jeder Markerbande von der Startposition (Geltasche). 
+Übertragen Sie die Messpunkte auf halb-logarithmisches Papier und konstruieren Sie die 
+Kurve. 
+ 
+2. Welche Form hat die Kurve? 
+ 
+3 . Bestimmen Sie die Länge der amplifizierten DNA Fragmente. 
+ 
+
+

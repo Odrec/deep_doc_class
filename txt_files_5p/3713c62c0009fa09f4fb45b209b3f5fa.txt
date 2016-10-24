@@ -1,0 +1,2952 @@
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+URTEIL DES GERICHTS (Zweite Kammer)
+
+27. Juni 2012(*)
+
+„Wettbewerb – Missbrauch einer beherrschenden Stellung – Betriebssysteme für Client-PCs
+
+– Betriebssysteme für Arbeitsgruppenserver – Weigerung des marktbeherrschenden
+
+Unternehmens, Interoperabilitätsinformationen zu liefern und ihre Nutzung zu gestatten –
+
+Erfüllung der Verpflichtungen aus einer Entscheidung, mit der eine Zuwiderhandlung
+
+festgestellt wird und verhaltensorientierte Abhilfemaßnahmen auferlegt werden –
+
+Zwangsgeld“
+
+In der Rechtssache T-167/08
+
+Microsoft  Corp.
+Prozessbevollmächtigte: Rechtsanwalt J.-F. Bellis und I. Forrester, QC,
+
+  mit Sitz in Redmond,
+
+ Washington (Vereinigte Staaten),
+
+Klägerin,
+
+unterstützt durch
+
+The Computing Technology Industry Association, Inc.,
+Illinois (Vereinigte Staaten),  Prozessbevollmächtigte: Rechtsanwälte G. van Gerven und
+T. Franchoo,
+
+ mit Sitz in Oakbrook Terrace,
+
+und durch
+
+Association for Competitive Technology, Inc.,  mit Sitz in Washington, DC (Vereinigte
+Staaten),  Prozessbevollmächtigte: zunächst D. Went und H. Pearson,  Solicitors,  dann
+H. Mercer, QC,
+
+Europäische Kommission,  vertreten durch T. Christoforou, V. Di Bucci, F. Castillo de la
+Torre und N. Khan als Bevollmächtigte,
+
+gegen
+
+Beklagte,
+
+unterstützt durch
+
+Free Software Foundation Europe e.V. mit Sitz in Hamburg (Deutschland) und
+
+Samba Team mit Sitz in New York, New York (Vereinigte Staaten),
+
+Prozessbevollmächtigte: Rechtsanwälte C. Piana und T. Ballarino,
+
+durch
+
+Software &  Information Industry Association
+Prozessbevollmächtigte: T. Vinje und D. Dakanalis,  Solicitors,  sowie Rechtsanwalt
+A. Tomtsis,
+
+ mit  Sitz in Washington,  DC,
+
+1 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+durch
+
+European Committee for Interoperable Systems (ECIS)
+Prozessbevollmächtigte: T. Vinje, Solicitor, sowie Rechtsanwälte M. Dolmans, N. Dodoo und
+A. Ferti,
+
+ mit Sitz in Brüssel (Belgien),
+
+durch
+
+International Business Machines Corp.
+Staaten), Prozessbevollmächtigte: Rechtsanwälte M. Dolmans und T. Graf,
+
+ mit Sitz in Armonk,  New York (Vereinigte
+
+durch
+
+Red Hat Inc.
+Prozessbevollmächtigte: Rechtsanwälte C. -D. Ehlermann und S. Völcker sowie C. O’Daly,
+Solicitor,
+
+ mit  Sitz in Wilmington, Delaware (Vereinigte  Staaten),
+
+und durch
+
+Oracle Corp.
+Prozessbevollmächtigte: T. Vinje, Solicitor, und Rechtsanwalt D. Paemen,
+
+ mit Sitz in Redwood Shores, Kalifornien (Vereinigte Staaten),
+
+betreffend eine Klage auf  Nichtigerklärung der Entscheidung K(2008) 764 endg.  der
+Kommission vom 27. Februar 2008 zur Festsetzung der endgültigen Höhe des mit der
+Entscheidung K(2005) 4420 endg.  gegen die Microsoft Corp.  verhängten Zwangsgelds
+(Sache COMP/C-3/37.792 – Microsoft) sowie, hilfsweise, Aufhebung oder Herabsetzung des
+Zwangsgelds
+
+Streithelfer,
+
+erlässt
+
+DAS GERICHT (Zweite Kammer)
+
+unter  Mitwirkung des Präsidenten N. J. Forwood (Berichterstatter) sowie  der  Richter
+F. Dehousse und J. Schwarcz,
+
+Kanzler: N. Rosner, Verwaltungsrat,
+
+aufgrund des schriftlichen Verfahrens und auf die mündliche Verhandlung vom 24. Mai 2011
+
+folgendes
+
+Urteil
+
+ Vorgeschichte des Rechtsstreits
+
+1        Die Microsoft Corp., eine  Gesellschaft  mit Sitz in Redmond, Washington (Vereinigte
+
+Staaten), entwirft, entwickelt und vermarktet ein breites Spektrum von Software-Produkten
+für  verschiedene Arten von EDV-Geräten.  Zu diesen Produkten gehören u. a.
+Betriebssysteme für Personal Computer von Endnutzern (im Folgenden: Client-PCs) und
+Betriebssysteme für Arbeitsgruppenserver.
+
+2 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+2        Am 24. März 2004 erließ die Kommission die Entscheidung 2007/53/EG in einem Verfahren
+
+gemäß Artikel 82 [EG] und Artikel 54 EWR-Abkommen gegen die Microsoft Corp. in der
+Sache COMP/C-3/37.792 – Microsoft (ABl. 2007, L 32, S. 23, im Folgenden: Entscheidung
+von 2004).
+
+3        Der Entscheidung von 2004 zufolge hat Microsoft durch den Missbrauch einer
+
+beherrschenden Stellung in zwei Fällen gegen Art. 82 EG und Art. 54 EWR
+verstoßen, deren erster – um den allein es in der vorliegenden Rechtssache geht – darin
+bestehe,  dass sich Microsoft von Oktober  1998 bis zum Zeitpunkt der  Zustellung der
+Entscheidung von 2004 geweigert
+„Interoperabilitätsinformationen“ zur Verfügung zu stellen und deren Nutzung für die
+Entwicklung und den Vertrieb von Produkten zu gestatten, die mit Microsoft-Produkten auf
+dem Markt der Betriebssysteme für Arbeitsgruppenserver konkurrierten (Art. 2 Buchst. a der
+Entscheidung von 2004).
+
+ habe, ihren Wettbewerbern
+
+-Abkommen
+
+4        „Interoperabilitätsinformationen“ im Sinne der Entscheidung von 2004 sind die
+„vollständigen und genauen Spezifikationen für  alle Protokolle, die in Windows-
+Betriebssystemen für Arbeitsgruppenserver implementiert  und von Windows-
+Arbeitsgruppenservern genutzt werden, um den Windows-Arbeitsgruppennetzwerken Daten-
+und Druckdienste sowie Gruppen- und Nutzerverwaltungsdienste einschließlich der Dienste
+Windows-Domänenkontrolle, Active Directory und Group Policy zur Verfügung zu stellen“
+(Art. 1 Nr. 1 der Entscheidung von 2004).
+
+5        Ein „Windows-Arbeitsgruppennetzwerk“ wird definiert als „jede Gruppe von Windows-
+
+Client-PCs  und Windows
+miteinander verbunden sind“ (Art. 1 Nr. 7 der Entscheidung von 2004).
+
+-Arbeitsgruppenservern, die über  ein Computernetzwerk
+
+6        Ein „Protokoll“ wird definiert als „ein Regelwerk für die gegenseitige Verbindung und
+
+Interaktion zwischen mehreren Windows -Betriebssystemen für Arbeitsgruppenserver und
+Windows-Client-PC-Betriebssystemen, die in einem Windows -Arbeitsgruppennetzwerk auf
+verschiedenen Rechnern installiert sind“ (Art. 1 Nr. 2 der Entscheidung von 2004).
+
+7        Die  Kommission hebt in der  Entscheidung von 2004 hervor,  dass sich die  fragliche
+
+Weigerung nicht auf Teile des „Quellcode“ von Microsoft beziehe, sondern ausschließlich
+auf Spezifikationen der betreffenden Protokolle, d. h. auf eine eingehende Beschreibung
+dessen, was von der fraglichen Software erwartet werde, und nicht auf Implementierungen,
+mit  denen der  Code auf  dem Rechner umgesetzt  werde (Randnrn. 24 und 569 der
+Entscheidung von 2004). Insbesondere  sei  „nicht  daran gedacht, von Microsoft zu
+verlangen,  das Kopieren von Windows durch Dritte zuzulassen“ (Randnr. 572 der
+Entscheidung von 2004).
+
+8        Die beiden in der Entscheidung von 2004 festgestellten Missbräuche wurden mit einer
+Geldbuße in Höhe von 497 196 304 Euro geahndet (Art. 3 der Entscheidung von 2004).
+
+9        Als Abhilfemaßnahme für die in Art. 2 Buchst. a der Entscheidung von 2004 festgestellte
+
+missbräuchliche  Weigerung wird Microsoft in Art. 5 der  Entscheidung Folgendes
+aufgegeben:
+
+„a)      Microsoft … stellt binnen 120 Tagen ab Zustellung dieser Entscheidung allen
+
+ die  ein Interesse daran haben,
+
+Unternehmen,
+Arbeitsgruppenserver zu entwickeln und zu vertreiben, Interoperabilitätsinformationen
+zur  Verfügung und gestattet diesen Unternehmen unter  angemessenen und nicht
+
+ Betriebssysteme für
+
+3 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+diskriminierenden Bedingungen die Nutzung der Interoperabilitätsinformationen für die
+Entwicklung und den Vertrieb von Betriebssystemen für Arbeitsgruppenserver.
+
+b)      Microsoft … gewährleistet,
+
+Interoperabilitätsinformationen kontinuierlich und unverzüglich aktualisiert werden.
+
+ dass  die zur
+
+ Verfügung gestellten
+
+c)      Microsoft … richtet binnen 120 Tagen ab Zustellung dieser Entscheidung einen
+
+Bewertungsmechanismus ein, der es interessierten Unternehmen in praktikabler Weise
+ermöglicht, sich Kenntnis vom  Umfang und den Nutzungsbedingungen der
+Interoperabilitätsinformationen zu verschaffen; Microsoft … darf angemessene und
+nicht diskriminierende Bedingungen festlegen, um sicherzustellen, dass der in diesem
+Rahmen gewährte Zugang zu den Interoperabilitätsinformationen nur  zu
+Bewertungszwecken genutzt wird.
+
+d)      Binnen 60 Tagen vom Datum der Zustellung dieser Entscheidung an legt Microsoft …
+
+der Kommission die  Maßnahmen vor,  die  es zu ergreifen beabsichtigt,  um den
+Anordnungen unter Buchstaben (a), (b) und (c) Folge zu leisten. Diese Vorlage muss so
+ausführlich sein, dass die Kommission eine vorläufige Beurteilung treffen kann,
+inwieweit die geplanten Maßnahmen die  wirksame Einhaltung der Entscheidung
+gewährleisten werden.  Microsoft … wird insbesondere die Konditionen für die
+Nutzung der Interoperabilitätsinformationen sehr genau aufführen.
+
+…“
+
+10      Art. 7 der Entscheidung von 2004 bestimmt:
+
+„Binnen 30 Tagen ab Zustellung dieser  Entscheidung unterbreitet Microsoft … der
+Kommission einen Vorschlag für  die  Schaffung eines  geeigneten Mechanismus  zur
+Unterstützung der Kommission bei der Überwachung der Einhaltung dieser Entscheidung
+durch Microsoft … Zu diesem Mechanismus gehört ein von Microsoft … unabhängiger
+Überwachungsbeauftragter.
+
+Für  den Fall,  dass  die  Kommission den von Microsoft … vorgeschlagenen
+Überwachungsmechanismus nicht für geeignet hält, behält sie sich das Recht vor, einen
+solchen Mechanismus durch Entscheidung vorzuschreiben.“
+
+11      Mit Klageschrift, die am 7. Juni 2004 bei der Kanzlei des Gerichts einging, erhob Microsoft
+
+eine Klage gegen die Entscheidung von 2004.
+
+12      Mit besonderem Schriftsatz, der am 25. Juni 2004 in das Register der Kanzlei des Gerichts
+eingetragen wurde, beantragte Microsoft gemäß Art. 242 EG, den Vollzug von Art. 4, Art. 5
+Buchst. a bis c und Art. 6 Buchst. a der Entscheidung von 2004 auszusetzen.
+
+13      Mit Beschluss vom 22. Dezember 2004, Microsoft/Kommission (T -201/04 R, Slg. 2004,
+
+II-4463), wies der Präsident des Gerichts diesen Antrag zurück.
+
+14      Mit der Entscheidung K(2005) 2988 endg. vom 28. Juli 2005 in einem Verfahren gemäß
+
+Art. 82 [EG] (Sache COMP/C-3/37.792 – Microsoft) schrieb die Kommission den in Art. 7
+der Entscheidung von 2004 vorgesehenen Mechanismus vor. Am 4. Oktober 2005 ernannte
+die Kommission den unabhängigen Überwachungsbeauftragten.
+
+15      Mit Entscheidung vom 10. November 2005 (im Folgenden: Entscheidung von 2005), durch
+
+die gemäß Art. 24 Abs. 1 der Verordnung (EG) Nr. 1/2003 des Rates vom 16. Dezember
+
+4 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+2002 zur Durchführung der in den Artikeln 81 [EG] und 82 [EG] niedergelegten
+Wettbewerbsregeln (ABl. 2003,  L 1,  S. 1) ein Zwangsgeld verhängt  wurde, stellte  die
+Kommission fest, dass die  von Microsoft am 20. Oktober 2005 vorbereitete technische
+Dokumentation mit  Interoperabilitätsinformationen weder genau noch vollständig sei
+(Randnr. 101 der Entscheidung von 2005). Sie war außerdem der Auffassung, dass die von
+Microsoft für den Zugang zu den Interoperabilitätsinformationen und die Gestattung ihrer
+Nutzung geforderten Vergütungssätze nicht angemessen seien (Randnrn. 161 und 193 der
+Entscheidung von 2005). Aus diesen Gründen gab sie Microsoft unter Androhung eines
+Zwangsgelds von 2 Mio. Euro für jeden Tag des Verzugs auf, den Verpflichtungen aus Art. 5
+Buchst. a und c der Entscheidung von 2004 bis spätestens 15.  Dezember 2005
+nachzukommen.
+
+16      Mit Entscheidung vom 12.  Juli 2006 (im Folgenden: Entscheidung von 2006)  zur
+
+Festsetzung der  endgültigen Höhe  des mit  Entscheidung K(2005) 4420 endg. gegen
+Microsoft verhängten Zwangsgelds  (Sache COMP/C -3/37.792 – Microsoft) (ABl. 2008,
+C 138, S. 10) stellte die Kommission fest, dass die von Microsoft bis zum 20. Juni 2006
+vorbereitete technische Dokumentation mit Interoperabilitätsinformationen weder  genau
+noch vollständig sei (Randnr. 232 der  Entscheidung von 2006).  Sie  verhängte  gegen
+Microsoft daher ein Zwangsgeld von 280,5 Mio. Euro mit der Begründung, dass diese im
+Zeitraum vom 16. Dezember 2005 bis zum 20. Juni 2006 nicht Art. 5 Buchst. a und c der
+Entscheidung von 2004 nachgekommen sei. Ferner erhöhte sie das Zwangsgeld, das nach der
+Entscheidung von 2005 verhängt werden konnte, mit Wirkung vom 31. Juli 2006 auf
+3 Mio. Euro je Tag.
+
+17      Mit Klageschrift, die  am 2. Oktober 2006 bei der Kanzlei des Gerichts einging, focht
+
+Microsoft die Entscheidung von 2006 an.
+
+18      Mit Urteil vom 17. September 2007, Microsoft/Kommission (T-201/04, Slg. 2007, II-3601),
+
+erklärte das Gericht Art. 7 der Entscheidung von 2004 für nichtig und wies die Klage im
+Übrigen ab. In Nr. 1 des Tenors des Urteils Microsoft/Kommission heißt es:
+
+„1.      Art. 7 der Entscheidung 2007/53/EG der Kommission vom 24. März 2004 in einem
+Verfahren gemäß Artikel 82 [EG] und Artikel 54 EWR-Abkommen gegen … Microsoft …
+(Sache COMP/C-3/37.792 – Microsoft) wird für nichtig erklärt, soweit
+
+–        Microsoft aufgegeben wird, einen Vorschlag für die Schaffung eines Mechanismus zu
+unterbreiten, zu dem die Einsetzung eines unabhängigen Überwachungsbeauftragten
+gehören muss,  der  befugt ist,  unabhängig von der  Kommission Zugang zur
+Unterstützung, zu Informationen, zu Unterlagen, zu den Geschäftsräumen und zu den
+Mitarbeitern von Microsoft sowie zum Quellcode der einschlägigen Microsoft-
+Produkte zu erhalten;
+
+–        verlangt wird, dass der Vorschlag für die Schaffung dieses Mechanismus vorsieht, dass
+
+alle mit  der  Einsetzung des  Überwachungsbeauftragten verbundenen Kosten
+einschließlich seiner Vergütung von Microsoft getragen werden;
+
+–        der Kommission das Recht vorbehalten wird, einen Mechanismus der im ersten und im
+
+zweiten Gedankenstrich genannten Art durch Entscheidung vorzuschreiben.“
+
+19      Mit Schreiben, das am 24. Oktober 2007 bei der Kanzlei des Gerichts einging, nahm
+Microsoft ihre Klage gegen die Entscheidung von 2006 (oben in Randnr. 17 angeführt)
+zurück.
+
+5 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+ Angefochtene Entscheidung
+
+20      Mit  der Entscheidung K(2008) 764 endg. vom 27. Februar 2008 zur  Festsetzung der
+
+endgültigen Höhe des mit Entscheidung K(2005) 4420 endg. gegen Microsoft verhängten
+Zwangsgelds (Sache  COMP/C -3/37.792 – Microsoft)  (ABl. 2009, C 166, S. 20,  im
+Folgenden: angefochtene Entscheidung) verhängte die Kommission gegen Microsoft  ein
+Zwangsgeld von 899 Mio. Euro mit der Begründung, dass diese im Zeitraum vom 21. Juni
+2006 bis  zum 21. Oktober 2007 nicht den Verpflichtungen aus Art. 5 Buchst. a der
+Entscheidung von 2004 nachgekommen sei.
+
+21      Aus Randnr. 14 der angefochtenen Entscheidung geht hervor, dass diese ausschließlich die
+
+Verpflichtung von Microsoft  aus Art. 5 Buchst. a der Entscheidung von 2004 betrifft,
+Zugang zu den Interoperabilitätsinformationen zu gewähren und unter angemessenen und
+nicht diskriminierenden Bedingungen deren Nutzung zu gestatten.
+
+ Protokollprogramm für Arbeitsgruppenserver
+
+22      Den Randnrn. 21 bis 23 der angefochtenen Entscheidung ist zu entnehmen, dass Microsoft
+mit Schreiben vom 29. Oktober 2004 der Kommission zwei Entwürfe von Vereinbarungen
+vorlegte, die  sie  ihren Wettbewerbern im Rahmen eines „Work Group Server Protocol
+Program“ (Programm für Arbeitsgruppenserver-Protokolle) anbieten wollte. Es handelte sich
+zum einen um den Entwurf einer Vereinbarung über die Erteilung einer Lizenz für Rechte
+des geistigen Eigentums an den fraglichen Protokollen und zum anderen um den Entwurf
+einer Vereinbarung über die Bewertung dieser Protokolle.
+
+23      Mit Schreiben vom 20. Mai 2005 und im Rahmen des ständigen Austauschs mit der
+
+Kommission legte Microsoft fünf Arten von Vereinbarungen (im Folgenden zusammen:
+WSPP-Vereinbarungen) vor, und zwar:
+
+–        das Microsoft Work Group Server Protocol Program License Agreement (All IP) for
+
+Development and Product Distribution (Work Group Server  Operating System
+Software) (Lizenzvereinbarung [All IP] für die Entwicklung und den Vertrieb von
+Software-Produkten für Betriebssysteme für Arbeitsgruppenserver im Rahmen des
+Programms für  Arbeitsgruppenserver
+-Protokolle  von Microsoft,  im Folgenden:
+All-IP-Vereinbarung);
+
+–        das  Microsoft Communications Protocol Program  Agreement for  Evaluation of
+
+Technical Documentation (3-Day) (Vereinbarung für die Bewertung der technischen
+Dokumentation im Rahmen des Programms für  Kommunikations
+-Protokolle von
+Microsoft [3 Tage]);
+
+–        das  Microsoft Communications Protocol Program  Agreement for  Evaluation of
+
+Technical Documentation (30-Day) (Vereinbarung für die Bewertung der technischen
+Dokumentation im Rahmen des Programms für  Kommunikations
+-Protokolle von
+Microsoft [30 Tage]);
+
+–        das Microsoft Work Group Server Protocol Program License Agreement (No Patents)
+
+for Development and Product Distribution (Work Group Server Operating System
+Software) (Lizenzvereinbarung [No Patents] für die Entwicklung und den Vertrieb von
+Software-Produkten für Betriebssysteme für Arbeitsgruppenserver im Rahmen des
+Programms für  Arbeitsgruppenserver
+-Protokolle  von Microsoft,  im Folgenden:
+No-Patent-Vereinbarung);
+
+6 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+–        das Microsoft Work Group Server Protocol Program Patent Only License Agreement
+for Development and Product Distribution (Lizenzvereinbarung [Patents Only] für die
+Entwicklung und den Vertrieb von Software-Produkten im Rahmen des Programms für
+Arbeitsgruppenserver-Protokolle
+Patent-Only-Vereinbarung) (Randnrn. 32 und 33 der angefochtenen Entscheidung).
+
+ von Microsoft,
+
+ im Folgenden:
+
+24      Den Randnrn. 33, 37, 39, 40, 44, 57, 59, 66, 92 und 103 der angefochtenen Entscheidung ist
+
+zu entnehmen, dass Microsoft im Rahmen des ständigen Austauschs mit der Kommission
+vom 20. Mai 2005 bis zum 21. Mai 2007 13 aufeinanderfolgende überarbeitete Fassungen
+der  WSPP -Vereinbarungen einschließlich Vergütungsregelungen vorlegte.  Eine  am 22.
+Oktober 2007 vorgelegte  Vergütungsregelung sieht
+No-Patent-Vereinbarung vor, mit der der Zugang zu der die Interoperabilitätsinformationen
+enthaltenden technischen Dokumentation und deren Nutzung gegen Zahlung eines
+Pauschalbetrags von 10 000 Euro gestattet werden. Ferner ist auch eine Lizenzvereinbarung
+für patentierte Technologien gegen eine Vergütung verfügbar, die auf der Grundlage der
+Nettoeinnahmen des  Vertragspartners  von Microsoft berechnet  wird (Randnr. 102 der
+angefochtenen Entscheidung).
+
+ den Abschluss einer
+
+25      Gemäß Randnr. 39 der angefochtenen Entscheidung enthielt die Fassung der
+
+WSPP-Vereinbarungen, die Microsoft der Kommission am 31. Mai 2005 unterbreitet hatte,
+auch Grundsätze für die Preisfindung in Bezug auf die Interoperabilitätsinformationen (im
+Folgenden: WSPP-Preisfindungsgrundsätze), die nach Verhandlungen zwischen den beiden
+Parteien ausgearbeitet worden waren. Diese Grundsätze  sollten den unabhängigen
+Überwachungsbeauftragten nicht nur im Rahmen der Erstellung von Gutachten, sondern
+auch dann leiten, wenn ein Vertragspartner von Microsoft sich an ihn wendet, damit er über
+die Angemessenheit des jeweiligen Vergütungssatzes befindet, wobei seine Entscheidung
+vom High Court of  Justice  (England & Wales)  für  vollstreckbar  erklärt werden kann
+(Randnrn. 47 und 113 der angefochtenen Entscheidung).
+
+ Mitteilung der Beschwerdepunkte
+
+26      Am 1. März 2007 richtete die Kommission eine Mitteilung der Beschwerdepunkte an
+
+Microsoft (Randnr. 73 der angefochtenen Entscheidung).
+
+27      Mit Schreiben vom 2. März 2007 bat Microsoft die Kommission um Mitteilung der genauen
+Vergütungssätze, die sie verlangen solle, damit ihr Handeln als mit den Verpflichtungen aus
+der Entscheidung von 2004 vereinbar angesehen werde. Mit Schreiben vom 8. März 2007
+antwortete die Kommission, dass es nicht ihre Aufgabe sei, die genauen Vergütungssätze
+festzulegen, sondern sich zu vergewissern, dass jegliche von Microsoft geforderte Vergütung
+im Einklang mit Art. 5 Buchst. a  der  Entscheidung von 2004 angemessen und nicht
+diskriminierend sei (Randnr. 75 der angefochtenen Entscheidung).
+
+28      Mit  Schreiben vom  23.  April 2007 beantwortete Microsoft die Mitteilung der
+Beschwerdepunkte. Am 24. Juli 2007 sandte die Kommission ein „Schreiben zum
+Sachverhalt“ an Microsoft,  mit dem dieser  Gelegenheit gegeben werden sollte,
+Beweismaterial  zu kommentieren, das  die Kommission nach der  Mitteilung der
+Beschwerdepunkte gesammelt hatte. Microsoft gab am 31. August 2007 eine Stellungnahme
+ab (Randnrn. 82, 98 und 99 der angefochtenen Entscheidung).
+
+ Prüfung der Einhaltung der mit Art. 5 Buchst. a der Entscheidung von 2004 auferlegten
+Verpflichtungen
+
+7 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+ Kriterien für die Prüfung der Angemessenheit der von Microsoft verlangten Vergütungssätze
+
+29      In Randnr. 105 der angefochtenen Entscheidung wies die Kommission darauf hin, dass nach
+Randnr. 1003 der Entscheidung von 2004 jegliche als Gegenleistung für den Zugang zu den
+Interoperabilitätsinformationen und deren Nutzung geforderte Vergütung den Nutzern dieser
+Informationen ermöglichen müsse, nachhaltig mit dem Betriebssystem für
+Arbeitsgruppenserver von Microsoft zu konkurrieren. Ferner dürfe Randnr. 1008 Ziff. ii der
+Entscheidung von 2004 zufolge eine solche Vergütung nicht den strategischen Wert der
+Macht  von Microsoft auf dem  Markt  für Betriebssysteme  für  Client
+Betriebssysteme für Arbeitsgruppenserver widerspiegeln.
+
+-PCs oder für
+
+30      Unter diesen Umständen stellte die Kommission fest, dass eine von Microsoft auferlegte
+
+Bedingung, die potenziell eine Einschränkung des Zugangs  zu den
+Interoperabilitätsinformationen und deren Nutzung bewirke, immer nur dann im Sinne von
+Art. 5 Buchst. a der Entscheidung von 2004 angemessen sein könne, wenn sie im Hinblick
+auf die legitimen Interessen von Microsoft, die mit ihr geschützt werden sollten, erforderlich
+und verhältnismäßig sei. Um objektiv gerechtfertigt zu sein, dürfe jegliche von Microsoft
+verlangte Vergütung daher allein den gegebenenfalls vorhandenen eigenständigen Wert der
+jeweiligen Informationen widerspiegeln, nicht aber den strategischen Wert, der sich aus der
+damit eröffneten bloßen Möglichkeit ergebe, mit den Betriebssystemen von Microsoft zu
+interoperieren. Es sei an Microsoft, hierfür den Nachweis zu erbringen (Randnrn. 106 und
+107 der angefochtenen Entscheidung).
+
+31      Nach Ansicht der Kommission entsprachen die WSPP -Preisfindungsgrundsätze (oben in
+
+Randnr. 25 angeführt) den in den Randnrn. 1003 und 1008 Ziff. ii der Entscheidung von
+2004 genannten Zielen.  So sähen diese Grundsätze zum einen vor, dass die
+Vergütungsregelung den Nutzern der  Interoperabilitätsinformationen ermöglichen müsse,
+nachhaltig mit Microsoft zu konkurrieren und zum anderen, dass für die Feststellung, ob die
+Interoperabilitätsinformationen einen eigenständigen Wert aufwiesen, d. h. einen Wert, der
+nicht in dem oben in Randnr. 29 beschriebenen strategischen Wert bestehe, erstens zu
+prüfen sei, ob es sich bei den betroffenen Protokollen um Schöpfungen von Microsoft
+handele, zweitens zu untersuchen sei, ob diese Schöpfungen innovativ seien, und drittens zu
+berücksichtigen sei,  was eine Marktbewertung vergleichbarer  Technologien – unter
+Ausschluss des strategischen Werts aufgrund ihrer gegebenenfalls beherrschenden Stellung –
+ergebe (Randnrn. 117 und 118 der angefochtenen Entscheidung).
+
+32      Die Kommission erklärte  außerdem  in den Randnrn. 119 und 158 der angefochtenen
+
+Entscheidung, dass sie anhand der oben in Randnr. 31 dargelegten Kriterien prüfen werde,
+ob die von Microsoft geforderten Vergütungssätze angemessen seien.
+
+33      Die Kommission führte ferner aus, dass sie ihrer Prüfung für den Zeitraum bis zum 21.
+
+Oktober 2007 die am 21. Mai 2007 vorgelegte Fassung der WSPP -Vereinbarungen (oben in
+Randnr. 24 angeführt) zugrunde legen werde. Da die in dieser Fassung der
+WSPP-Vereinbarungen enthaltene Vergütungsregelung niedrigere Vergütungssätze vorsehe,
+als sie in den vorhergehenden Fassungen vorgesehen gewesen seien,  gälten die
+Feststellungen der Kommission erst recht für diese  älteren Fassungen (Randnr. 103 der
+angefochtenen Entscheidung).
+
+34      Zum ersten oben in Randnr. 31 dargelegten Kriterium gab die Kommission an, dass es nicht
+
+erfüllt sei,  wenn Microsoft Public
+angefochtenen Entscheidung).
+
+-Domain-Protokolle  verwende  (Randnr. 129 der
+
+8 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+35      Zum zweiten oben in Randnr. 31 angeführten Kriterium führte die Kommission aus, wenn
+die fraglichen Technologien nicht neu seien, weil sie vom Stand der Technik umfasst seien
+oder sich für einen Fachmann offensichtlich aus dem Stand der Technik ergäben, habe
+Microsoft keinen Anspruch auf eine  Vergütung. Die Kriterien der Neuheit  und der
+Nichtoffensichtlichkeit  seien sachgerecht, da es sich im Bereich des  gewerblichen
+Rechtsschutzes um gängige  Begriffe handele (Randnrn. 130 und 138 der angefochtenen
+Entscheidung). In diesem Zusammenhang stellte sie fest, dass geringfügige Ergänzungen oder
+Verbesserungen, deren Wert für die Adressaten der Interoperabilitätsinformationen zu
+vernachlässigen sei, im Rahmen der Durchführung der Entscheidung von 2004 nicht als
+innovativ eingestuft werden könnten (Randnr. 144 der angefochtenen Entscheidung).
+
+36      Die Kommission ergänzte  hierzu, soweit Microsoft Patente auf Protokoll
+
+-Technologien
+geltend mache, die mit der technischen Dokumentation offengelegt würden, gehe sie für die
+Zwecke der angefochtenen Entscheidung vorläufig davon aus, dass diese Technologien
+innovativ seien (Randnr. 132 der angefochtenen Entscheidung).
+
+37      Zum dritten oben in Randnr. 31 dargelegten Kriterium gab die Kommission an, dass damit
+
+geprüft werden solle, ob die von Microsoft verlangten Vergütungssätze mit einer
+Marktbewertung vergleichbarer  Technologien vereinbar seien (Randnr. 139 der
+angefochtenen Entscheidung).
+
+ Prüfung der Angemessenheit der von Microsoft verlangten Vergütungssätze
+
+–       Allgemeiner Rahmen
+
+38      In den Randnrn. 159 bis 164 der angefochtenen Entscheidung fasste die Kommission den
+
+allgemeinen Rahmen für die von Microsoft vorgeschlagene Vergütungsregelung zusammen.
+
+39      Hierzu führte sie aus, dass Microsoft im Rahmen der WSPP -Vereinbarungen verschiedene
+
+Arten des Zugangs  zu den Interoperabilitätsinformationen vorschlage.  In diesem
+Zusammenhang biete Microsoft Zugang zu Protokollen für fünf Szenarien in Bezug auf den
+Dienst der gemeinsamen Nutzung von Dateien und Druckern, für 16 Szenarien in Bezug auf
+den Dienst der Verwaltung von Nutzern und Gruppen von Nutzern sowie für den „General
+Networking“-Dienst.
+
+40      Vier Arten von Vereinbarungen gewährten Zugang zu Interoperabilitätsinformationen.
+
+41      Erstens ermöglichte die No
+
+-Patent-Vereinbarung den Adressaten der
+
+Interoperabilitätsinformationen, Betriebssysteme für  Arbeitsgruppenserver auf  der
+Grundlage der technischen Dokumentation zu entwickeln und zu vertreiben.
+
+42      Zweitens erteilte Microsoft aufgrund der Patent
+
+-Only-Vereinbarung eine Lizenz auf den
+Inhalt von Patenten, unter die nach ihren Angaben die Technologie fällt, die nötig ist, um mit
+Windows-Betriebssystemen für Client-PCs und für Arbeitsgruppenserver zu interoperieren.
+
+43      Drittens erteilte Microsoft aufgrund der All -IP-Vereinbarung nicht nur eine Lizenz auf den
+Inhalt von Patenten, unter die nach ihren Angaben die Technologie fällt, die nötig ist, um mit
+Windows-Betriebssystemen für Client-PCs und für Arbeitsgruppenserver zu interoperieren,
+sondern gewährte auch den Zugang zu der technischen Dokumentation und das Recht auf
+Nutzung dieser Dokumentation.
+
+44      Viertens gewährte Microsoft aufgrund der Vereinbarung mit der Bezeichnung „Interface
+
+9 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Definition Language Only“ den Zugang zu der technischen Dokumentation für diese Dateien
+und das Recht auf Nutzung dieser Dokumentation.
+
+45      Aus Randnr. 160 der angefochtenen Entscheidung geht außerdem hervor, dass Microsoft für
+
+die meisten Szenarien je nach Art der in Betracht gezogenen Vereinbarung verschiedene
+Vergütungssätze forderte und diese Sätze mit einer Unter
+- und einer Obergrenze versah.
+Vergütungssätze waren ferner vorgesehen für die nach Dienst geordneten Szenarien sowie
+für sämtliche  Szenarien innerhalb der drei oben in Randnr. 39 erwähnten Dienste. Die
+verlangte  Vergütung war  entweder als Prozentsatz der  Nettoeinnahmen ihres
+Vertragspartners aus dem Verkauf der die fraglichen Protokolle implementierenden Produkte
+oder als Pauschalbetrag je verkauften Server ausgedrückt.
+
+46      Den Randnrn. 166, 167 und 297 der  angefochtenen Entscheidung schließlich ist zu
+
+entnehmen, dass  sich die  Kommission auf die  Angemessenheit der Vergütungssätze
+konzentrierte, die  Microsoft für die  nicht patentierte  Technologie  forderte, die in der
+technischen Dokumentation enthalten war und im Rahmen der No
+offengelegt wurde.
+
+-Patent-Vereinbarung
+
+–       Innovativer  Charakter  der  in der  technischen Dokumentation beschriebenen
+Protokolle, zu denen Microsoft aufgrund der No-Patent-Vereinbarung Zugang gewährt
+
+47      Randnr. 169 der angefochtenen Entscheidung zufolge machte Microsoft im Rahmen von
+zwei der Kommission am 31. Juli bzw. am 24. August 2006 vorgelegten Berichten geltend,
+dass 173 Protokolle nicht patentierte Innovationen enthielten.
+
+48      Zur  Begründung ihrer Beurteilung habe  Microsoft erstens überprüft, ob die  fragliche
+
+Technologie von ihr oder in ihrem Auftrag entwickelt worden sei, zweitens das mit dieser
+Technologie gelöste Problem beschrieben, drittens dargelegt, welche zum Stand der Technik
+gehörenden Technologien berücksichtigt worden seien, um den innovativen Charakter des
+jeweiligen Protokolls nachzuweisen, und viertens angegeben, wo diese Innovationen in der
+überarbeiteten technischen Dokumentation zu finden seien.
+
+49      Des Weiteren ergibt sich aus den Randnrn. 62, 69 und 171 der angefochtenen Entscheidung,
+
+dass der  unabhängige  Überwachungsbeauftragte  auf  Ersuchen der  Kommission die
+Beurteilung von Microsoft hinsichtlich der nicht patentierten Technologie nach der oben in
+Randnr. 48 beschriebenen Methodik überprüft hat und dass die Kommission in Bezug auf die
+Szenarien „File Replication Service“, „Directory Replication Service“ und „Network Access
+Protection“ das gleiche Ersuchen an ein spezialisiertes Unternehmen – TAEUS – gerichtet
+hat. Die Berichte von TAEUS und des unabhängigen Überwachungsbeauftragten wurden der
+Kommission am 15. Dezember 2006 bzw. 27. Februar 2007 vorgelegt.
+
+50      Laut Kommission kam der unabhängige Überwachungsbeauftragte zu dem Schluss, dass
+
+wenig von dem Material, das Microsoft im Rahmen der  technischen Dokumentation
+vorgelegt habe, innovativ sei und deshalb eine Vergütung rechtfertige. Zudem habe TAEUS
+festgestellt, dass keine der 21 Technologien, die in den drei von ihr untersuchten Szenarien
+enthalten gewesen, innovativ sei (Randnrn. 171 bis 174 der angefochtenen Entscheidung).
+Nach Fn. 197 der angefochtenen Entscheidung änderte die Antwort von Microsoft auf die
+Mitteilung der Beschwerdepunkte, in deren Folge der unabhängige
+Überwachungsbeauftragte  zwei Berichte und TAEUS einen Bericht erstellten, nichts an
+diesem Ergebnis.
+
+51      Die Kommission folgerte hinsichtlich der 173 Technologien für Protokolle, die Microsoft als
+innovativ dargestellt hatte, dass 166 Technologien dem Stand der Technik entsprächen oder
+
+10 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+sich für  einen Fachmann offensichtlich aus dem Stand der  Technik ergäben und
+7 Technologien innovativ seien (Randnrn. 175 und 219 der angefochtenen Entscheidung).
+
+52      Die  173 fraglichen Technologien sind in einer  Tabelle im Anhang zur  angefochtenen
+
+Entscheidung dargestellt, die eine kurze Beschreibung jeder Technologie enthält sowie für
+die meisten Technologien Informationen über das Datum ihrer Entwicklung, der Nutzen, der
+sich nach Ansicht  von Microsoft daraus  ergibt, einen Verweis  auf die von Microsoft
+vorgelegte Akte, eine kurze Bewertung, einen Verweis auf den Stand der Technik und einen
+Verweis auf die Quellen, die nach Auffassung der Kommission die betreffende Bewertung
+und die Angaben zum Stand der Technik rechtfertigen. Bei den fraglichen Quellen handelt es
+sich um zwei Berichte des unabhängigen Überwachungsbeauftragten vom 3. März bzw. 8.
+Juli 2007 sowie eine Stellungnahme des European Committee for Interoperable Systems
+(ECIS)  vom 8.  Mai 2007 zur Antwort von Microsoft auf  die Mitteilung der
+Beschwerdepunkte.
+
+53      In den Randnrn. 187 bis 218 der angefochtenen Entscheidung legte die Kommission dar,
+
+wie sie den innovativen Charakter von acht Technologien für Protokolle beurteilt, die unter
+das zum Dienst der Verwaltung von Nutzern und Gruppen von Nutzern gehörende Szenario
+„Directory & Global Catalog Replication“ fallen, und von elf Technologien für Protokolle,
+die unter das zum Dienst der gemeinsamen Nutzung von Dateien und Druckern gehörende
+Szenario „File  Replication Service“ fallen. Abgesehen von den Ausführungen zur
+„File Staging“-Technologie wies die Kommission das Vorbringen von Microsoft, dass diese
+Technologien innovativen Charakter  hätten, zurück (Randnr. 219 der  angefochtenen
+Entscheidung).
+
+–       Marktbewertung vergleichbarer Technologien
+
+54      In den Randnrn. 220 bis 279 der angefochtenen Entscheidung legte die Kommission ihre
+
+Beurteilung in Bezug auf eine Marktbewertung von Technologien dar, die mit den im
+Rahmen der No
+-Patent-Vereinbarung offengelegten nicht patentierten Technologien
+vergleichbar sind. Danach werden vergleichbare Technologien sowohl von Microsoft als
+auch von anderen Unternehmen kostenlos angeboten, weshalb die Marktbewertung zeige,
+dass die von Microsoft geforderten Vergütungssätze unangemessen seien.
+
+ Zwangsgeld
+
+55      Die Kommission führte in Randnr. 285 der angefochtenen Entscheidung aus, dass diese
+
+ausschließlich den Zeitraum vom 21. Juni 2006 bis zum 21. Oktober 2007 betreffe. In
+Randnr. 298 der angefochtenen Entscheidung stellte sie klar, dass die von Microsoft am 22.
+Oktober 2007 beschlossene Vergütungsregelung (oben in Randnr. 24 angeführt) nicht auf
+Einwände  hinsichtlich der Angemessenheit der darin enthaltenen Vergütungssätze stoße.
+Dementsprechend setzte  die  Kommission die  endgültige  Höhe  des Zwangsgelds für den
+betreffenden Zeitraum auf 899 Mio. Euro fest (Randnrn. 299 und 300 der angefochtenen
+Entscheidung).
+
+ Verfahren und Anträge der Beteiligten
+
+56      Mit am 9. Mai 2008 bei der Kanzlei des Gerichts eingegangener Klageschrift hat Microsoft
+
+die vorliegende Klage erhoben.
+
+57      Mit am 16. August 2008 bei der Kanzlei des Gerichts eingegangenem Schriftsatz haben der
+
+Free Software Foundation Europe e.V. (im Folgenden: FSFE) und Samba Team  im
+
+11 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+vorliegenden Verfahren die Zulassung als Streithelfer zur Unterstützung der Anträge der
+Kommission beantragt.
+
+58      Mit am 19. August 2008 bei der Kanzlei des Gerichts eingegangenen Schriftsätzen haben die
+
+Software & Information Industry Association (im Folgenden: SIIA)  und ECIS im
+vorliegenden Verfahren die Zulassung als Streithelfer zur Unterstützung der Anträge der
+Kommission beantragt.
+
+59      Mit am 25. August 2008 bei der Kanzlei des Gerichts eingegangenen Schriftsätzen haben die
+
+International Business Machines Corp. (im Folgenden: IBM) und die  Red Hat Inc. im
+vorliegenden Verfahren die Zulassung als Streithelferinnen zur Unterstützung der Anträge
+der Kommission beantragt.
+
+60      Mit am 26. August 2008 bei der Kanzlei des Gerichts eingegangenem Schriftsatz hat die
+
+Oracle Corp. im vorliegenden Verfahren die Zulassung als Streithelferin zur Unterstützung
+der Anträge der Kommission beantragt.
+
+61      Mit am 25. bzw. 26. August 2008 bei der Kanzlei des Gerichts eingegangenen Schriftsätzen
+haben The Computing Technology Industry Association, Inc. (im Folgenden: CompTIA) und
+die Association for Competitive Technology, Inc. (im Folgenden: ACT) im vorliegenden
+Verfahren die Zulassung als Streithelferinnen zur Unterstützung der Anträge von Microsoft
+beantragt.
+
+62      Mit Beschluss vom 20. November 2008 hat der Präsident der Siebten Kammer des Gerichts
+
+diese Streitbeitritte zugelassen.
+
+63      Die Streithelfer haben ihre Schriftsätze fristgerecht eingereicht, und die Parteien haben
+
+hierzu fristgerecht Stellung genommen.
+
+64      Im  Zuge  einer Änderung der Zusammensetzung der Kammern des  Gerichts  ist der
+
+Berichterstatter  der  Zweiten Kammer  zugeteilt worden,  der  die  Rechtssache
+dementsprechend zugewiesen worden ist.
+
+65      Auf Bericht des Berichterstatters hat das Gericht beschlossen, das mündliche Verfahren zu
+eröffnen, und im Rahmen prozessleitender Maßnahmen die Parteien aufgefordert, bestimmte
+Unterlagen vorzulegen und weitere Informationen zu erteilen.
+
+66      Microsoft beantragt,
+
+–        die angefochtene Entscheidung für nichtig zu erklären;
+
+–        hilfsweise, das Zwangsgeld aufzuheben oder herabzusetzen;
+
+–        der Kommission und ihren Streithelfern die Kosten des Verfahrens aufzuerlegen.
+
+67      Die Kommission beantragt,
+
+–        die Klage abzuweisen;
+
+–        Microsoft die Kosten aufzuerlegen.
+
+68      FSFE, Samba Team, SIIA, ECIS, IBM, Red Hat und Oracle beantragen,
+
+–        die Klage abzuweisen;
+
+12 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+–        Microsoft die ihnen durch den Beitritt als Streithelfer  entstandenen Kosten
+
+aufzuerlegen.
+
+69      CompTIA beantragt,
+
+–        die angefochtene Entscheidung für nichtig zu erklären;
+
+–        die ihr durch den Beitritt als Streithelferin entstandenen Kosten der Kommission
+
+aufzuerlegen.
+
+70      ACT beantragt,
+
+–        die angefochtene Entscheidung für nichtig zu erklären;
+
+–        hilfsweise,  das  gegen Microsoft verhängte Zwangsgeld aufzuheben oder
+
+herabzusetzen;
+
+–        die ihr durch die Streithilfe entstandenen Kosten der Kommission aufzuerlegen.
+
+ Rechtliche Würdigung
+
+71      Mit ihren Klagegründen rügt Microsoft erstens,  dass es rechtswidrig gewesen sei,  ein
+
+Zwangsgeld zu verhängen, bevor ihre Verpflichtungen aus Art. 5 der Entscheidung von 2004
+hinreichend konkretisiert worden seien, zweitens, dass die  Kommission hinsichtlich der
+Unangemessenheit der  Vergütungssätze für die No
+begangen habe, drittens,  dass  der  Kommission ein Fehler  in Bezug auf die  Kriterien
+unterlaufen sei, anhand deren sie den innovativen Charakter der Technologien für Protokolle
+geprüft habe,  die Gegenstand der No
+-Patent-Vereinbarung seien,  viertens,  dass die
+Heranziehung der Berichte des unabhängigen Überwachungsbeauftragten rechtswidrig sei,
+fünftens, dass die Verteidigungsrechte verletzt worden seien, und sechstens, dass es für die
+Verhängung eines Zwangsgelds keine Rechtsgrundlage gebe und das Zwangsgeld überhöht
+und unverhältnismäßig sei.
+
+-Patent-Vereinbarung einen Fehler
+
+72      Ferner macht Microsoft im Rahmen der Klagegründe 1, 2, 3 und 6 geltend, dass die
+
+angefochtene Entscheidung unzureichend begründet sei.
+
+ Zum ersten Klagegrund: Rechtswidrigkeit der Verhängung eines Zwangsgelds, bevor die
+Verpflichtungen von Microsoft aus  Art.  5 Buchst. a der Entscheidung von 2004
+konkretisiert worden seien
+
+ Vorbringen der Beteiligten
+
+73      Microsoft stützt ihren ersten Klagegrund auf insgesamt vier Rügen.
+
+74      Erstens habe die Kommission ihre Verpflichtung verletzt, ausdrücklich zu erklären, was
+
+Microsoft unternehmen müsse,  um Art. 5 Buchst. a  der  Entscheidung von 2004
+nachzukommen. Wie sich nämlich aus ihrer Entscheidungspraxis ergebe, sei die Kommission
+in der Lage gewesen, in der Entscheidung von 2004 anzugeben, auf welche Vergütungssätze
+Microsoft Anspruch habe. Der Begriff „angemessene Sätze“ schließe Sätze unterschiedlicher
+Höhe ein. Mit dieser Feststellung werde weder die Rechtmäßigkeit der Entscheidung von
+2004 in Frage gestellt noch in Abrede gestellt, dass es möglich sei, Bestimmungen zu
+erfüllen, die unbestimmte Rechtsbegriffe enthielten, sondern das  Recht  bestritten, ein
+Zwangsgeld wegen Verletzung der oben genannten Bestimmung festzusetzen, bevor die sich
+
+13 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+aus ihr ergebenden Verpflichtungen konkretisiert worden seien.
+
+75      Um die betreffenden Verpflichtungen zu konkretisieren, bevor die Anordnung an Microsoft
+
+ergehe, ihnen nachzukommen,  habe die  Kommission das  in Art. 5 Buchst. d der
+Entscheidung von 2004 vorgesehene Verfahren geschaffen. Wie die Kommission in ihren
+Mitteilungen der Beschwerdepunkte an Microsoft von August 2000 und August 2003 erklärt
+habe und aus Randnr. 995 der Entscheidung von 2004 hervorgehe, habe sie sich für den Fall,
+dass die von Microsoft  vorgeschlagenen Maßnahmen nicht  zufriedenstellend seien,
+vorbehalten, die  nötigen Maßnahmen im Wege  einer  Entscheidung anzuordnen.  Die
+Kommission habe  sich jedoch hartnäckig geweigert,  zu konkretisieren,  was sie  unter
+„angemessenen Vergütungssätzen“ verstehe, obwohl sie im Hinblick auf die Obliegenheiten,
+die sie aufgrund von Art. 5 der Entscheidung von 2004 übernommen habe, Microsoft im
+Wege einer Entscheidung ausdrücklich formulierte Konditionen hätte vorschreiben müssen.
+Da  die WSPP -Preisfindungsgrundsätze  nur Leitlinien bereitstellten, aus denen sich kein
+genauer  Satz ergebe,  könnten sie hierfür nicht als  ausreichend erachtet  werden.  Das
+Vorbringen,  mit  dem  den Interoperabilitätsinformationen ein eigenständiger  Wert
+abgesprochen und behauptet werde, dass diese Informationen üblicherweise kostenlos zur
+Verfügung gestellt würden, sei sachlich unzutreffend und in Anbetracht des Abschlusses von
+Lizenzvereinbarungen nach der Vergütungsregelung von Microsoft nicht plausibel.
+
+76      Zweitens macht Microsoft geltend, dass die Vorgehensweise der Kommission gegen Art. 24
+
+der Verordnung Nr. 1/2003 verstoße, da die Verhängung eines Zwangsgelds, mit dem eine
+Person zu einem bestimmten Verhalten gezwungen werden solle, voraussetze, dass die
+Verpflichtungen der betreffenden Person genau festgelegt seien, und die Verhängung des
+Zwangsgelds andernfalls die Grundrechte  verletze.  Im  vorliegenden Fäll hätte die
+Kommission, die nicht zur Einleitung des Verfahrens des Art. 24 der Verordnung Nr. 1/2003
+berechtigt sei, wenn sie nicht genau wisse, was Microsoft tun müsse, um der Entscheidung
+von 2004 nachzukommen,  den unabhängigen Überwachungsbeauftragten hinzuziehen
+können, um die Verpflichtungen von Microsoft im erforderlichen Maß zu konkretisieren.
+
+77      Unterstützt von CompTIA führt Microsoft drittens aus, die Kommission habe dadurch, dass
+
+sie ein Zwangsgeld verhängt  habe,  bevor sie die Verpflichtungen von Microsoft im
+erforderlichen Maß konkretisiert  habe,  gegen den Grundsatz der  ordnungsgemäßen
+Verwaltung verstoßen. Hierzu trägt CompTIA vor, dass das Handeln der Kommission durch
+einen Mangel an Transparenz, Objektivität und Fairness gekennzeichnet sei, während das
+verhängte Zwangsgeld willkürlich und im Hinblick auf die Umstände des vorliegenden Falles
+unverhältnismäßig sei. Das Verhalten der Kommission, so CompTIA weiter, sei eine Quelle
+von Gefahren und von Unsicherheit, die zum Nachteil der Verbraucher die Motivation für
+Innovationen untergrabe.
+
+78      Schließlich trägt Microsoft viertens vor,  die Kommission habe  dadurch,  dass sie sich
+
+geweigert habe,  eine  rechtsbehelfsfähige  Entscheidung zu erlassen,  mit der die
+Verpflichtungen aus Art. 5 Buchst. a  der Entscheidung von 2004 hinsichtlich der
+Vergütungssätze konkretisiert würden, de facto Microsoft gezwungen, ihre Aufforderungen
+-Vereinbarungen zu befolgen, ohne
+zur Senkung der Vergütungssätze  für  alle WSPP
+deswegen die Rechtmäßigkeit der fraglichen Aufforderungen gerichtlich prüfen lassen zu
+können. Damit sei Microsoft ihr Recht auf effektiven gerichtlichen Rechtsschutz gegen diese
+– immer noch „vorläufigen“ – Beurteilungen durch die Kommission genommen worden.
+Selbst wenn sich Microsoft geweigert hätte, ihre Vorschläge  zu überarbeiten, oder eine
+Schadensersatz- oder Untätigkeitsklage erhoben hätte, hätten darüber hinaus diese Klagen
+die  Kommission nicht zu einer  Entscheidung veranlasst, mit der  ein angemessener
+Vergütungssatz festgelegt worden wäre.
+
+14 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+79      Da Microsoft  diese Ausführungen im Lauf des Verwaltungsverfahrens  wiederholt
+
+vorgetragen habe, ohne jedoch eine Antwort zu erhalten, auch nicht in der angefochtenen
+Entscheidung, sei Letztere zudem unzureichend begründet.
+
+80      ACT macht geltend, dass Microsoft die am besten geeigneten Methoden angewandt habe,
+
+um ihre Verpflichtungen aus Art. 5 Buchst. a der Entscheidung von 2004 zu definieren,
+während sich die Kommission darauf beschränkt habe, die Ergebnisse der hierauf bezogenen
+Untersuchungen zurückzuweisen,  ohne wenigstens die Klarstellungen vorzunehmen, die
+Microsoft benötigt habe, um den fraglichen Verpflichtungen nachzukommen. Außerdem
+habe die Kommission nur von den Unternehmen, die ihren Standpunkt unterstützt hätten,
+Auskünfte erbeten.
+
+81      Die Kommission und die sie unterstützenden Streithelfer halten den vorliegenden
+Klagegrund für  unbegründet und fügen hinzu,  dass sich Microsoft im Rahmen der
+vorliegenden Klage nicht auf eine angebliche Ungenauigkeit der Entscheidung von 2004 in
+Bezug auf die Festlegung ihrer Verpflichtungen berufen könne.
+
+ Würdigung durch das Gericht
+
+82      Von vornherein zurückzuweisen ist das Vorbringen der Kommission, wonach Microsoft die
+
+Rechtmäßigkeit der Entscheidung von 2004 in Frage stelle. Wie nämlich den Schriftsätzen
+von Microsoft zu entnehmen ist, stützen sich ihre Erwägungen nicht auf eine angebliche
+Rechtswidrigkeit von Art. 5 Buchst. a  dieser  Entscheidung, sondern darauf, dass die
+Kommission kein Zwangsgeld wegen Verletzung der  fraglichen Bestimmung gegen sie
+verhängen dürfe, ohne zuvor im Wege einer rechtsbehelfsfähigen Entscheidung festgestellt
+zu haben, welchen Vergütungssatz sie  für angemessen halte. Diese  Problematik betrifft
+offensichtlich die  Rechtmäßigkeit der  angefochtenen Entscheidung, aufgrund deren das
+Zwangsgeld verhängt wurde.
+
+83      Sodann ist darauf hinzuweisen, dass, wie aus Randnr. 280 der angefochtenen Entscheidung
+hervorgeht, das fragliche Zwangsgeld mit der Begründung verhängt wurde, dass Microsoft
+unter Verstoß gegen die in Art. 5 Buchst. a  der Entscheidung von 2004 aufgestellte
+Verpflichtung weder den Zugang zu Interoperabilitätsinformationen, die unter die
+No-Patent-Vereinbarung fielen,  gewährt noch deren Nutzung zu „angemessenen
+Bedingungen“ gestattet habe.
+
+84      Zu der zuletzt genannten Bestimmung ist festzustellen, dass die Anordnung der gesetzlich
+
+vorgesehenen Abhilfemaßnahmen nicht deshalb unmöglich wird, weil zur Formulierung von
+Regeln, deren Verletzung die zivilrechtliche, verwaltungsrechtliche oder sogar strafrechtliche
+Haftung des Zuwiderhandelnden auslöst, unbestimmte Rechtsbegriffe herangezogen werden,
+sofern der Rechtsunterworfene anhand des Wortlauts der einschlägigen Bestimmung und
+nötigenfalls mit Hilfe ihrer  Auslegung durch die Gerichte  erkennen kann,  welche
+Handlungen und Unterlassungen seine Haftung begründen (vgl. in diesem Sinne Urteile des
+Gerichtshofs vom 3. Mai 2007, Advocaten voor de Wereld, C -303/05, Slg. 2007, I -3633,
+Randnr. 50, und vom 22. Mai 2008, Evonik Degussa/Kommission, C -266/06 P, nicht in der
+amtlichen Sammlung veröffentlicht, Randnr. 39).
+
+85      Insoweit ist nach einer ständigen Rechtsprechung (Beschluss des Gerichtshofs vom 10. Juli
+2001, Irish Sugar/Kommission, C-497/99 P, Slg. 2001, I-5333, Randnr. 15, sowie Urteile des
+Gerichts vom 11. März 1999, Eurofer/Kommission, T -136/94, Slg. 1999, II -263, Randnr.
+271, und vom 10. April 2008, Deutsche Telekom/Kommission, T -271/03, Slg. 2008, II-477,
+Randnr. 252) der verfügende Teil der Entscheidung von 2004 im Licht ihrer Begründung zu
+
+15 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+lesen und auszulegen. Nach ihrer Randnr. 1003 soll mit dieser Entscheidung gewährleistet
+werden, dass die Wettbewerber von Microsoft, indem sie die offengelegten Spezifikationen
+implementieren,  Produkte entwickeln können,  die mit der im marktbeherrschenden
+Windows-Betriebssystem für Client-PCs nativ unterstützten Windows-Domänenarchitektur
+interoperieren und dadurch nachhaltig mit dem Betriebssystem für Arbeitsgruppenserver von
+Microsoft konkurrieren können. Ferner darf Randnr. 1008 Ziff. ii der Entscheidung von 2004
+zufolge jegliche Vergütung,  die  Microsoft als  Gegenleistung für  den Zugang zu den
+Interoperabilitätsinformationen und deren Nutzung verlangen könnte,  keinesfalls  den
+strategischen Wert der  Macht  von Microsoft auf dem Markt für  Betriebssysteme  für
+Client-PCs oder dem Markt für Betriebssysteme für Arbeitsgruppenserver widerspiegeln.
+
+86      In diesem Zusammenhang nahm Microsoft nach Verhandlung mit der  Kommission
+
+(Randnrn. 39, 111 und 113 der angefochtenen Entscheidung) im Mai  2005 die
+WSPP-Preisfindungsgrundsätze in die WSPP -Vereinbarungen auf. So erklärt Microsoft in
+Section 7.5 der No-Patent-Vereinbarung (in ihrer Fassung vom 21. Mai 2007), dass sie diese
+Preisfindungsgrundsätze  bei der Ausarbeitung der Tabelle ihrer Vergütungen angewandt
+habe, und gibt an,  dass  nach Section 7.7(d)  derselben Vereinbarung der unabhängige
+Überwachungsbeauftragte und der High Court of Justice befugt seien, sie zum Handeln zu
+zwingen, wenn sie gegen die betreffenden Preisfindungsgrundsätze verstoße.
+
+87      Zum Inhalt  der oben in Randnr. 31 erläuterten WSPP
+
+-Preisfindungsgrundsätze ist
+festzustellen, dass sie kumulative und hinreichend genaue Kriterien vorsehen, anhand deren
+Microsoft beurteilen kann, ob eine  bestimmte  Technologie  einen eigenständigen Wert
+besitzt, der sich von ihrem strategischen Wert unterscheidet, wie er in Randnr. 1008 Ziff. ii
+der Entscheidung von 2004 und den genannten Preisfindungsgrundsätzen beschrieben ist.
+Zudem lässt nichts darauf schließen, dass diese  auf Art. 5 der Entscheidung von 2004
+gestützten Preisfindungsgrundsätze sich für  eine  Anwendung durch den unabhängigen
+Überwachungsbeauftragten und den High Court of Justice eignen, aber nicht genügen, damit
+sich Microsoft dieser Bestimmung entsprechend verhält oder die Kommission ihre Aufgabe
+wahrnimmt, dieses Verhalten zu überwachen.
+
+88      Folglich war  die Kommission berechtigt, gegen Microsoft ein Zwangsgeld wegen
+
+Nichteinhaltung der Verpflichtungen aus Art. 5 Buchst. a der Entscheidung von 2004 zu
+verhängen, da diese Bestimmung die oben in Randnr. 84 erläuterten Bedingungen erfüllt.
+
+89      Hinzuzufügen ist, dass die Kommission in einem Schreiben vom 18. April 2005 Microsoft
+dargelegt hat, dass jegliche Vergütung pauschal sein müsse und nicht im Verhältnis zu den
+Einnahmen aus  dem Verkauf  der von den Wettbewerbern von Microsoft verkauften
+Produkte stehen dürfe. Wie SIIA vorträgt, hat zudem am 1. März 2007 Herr B., Senior Vice
+President,  General Counsel and Corporate  Secretary von Microsoft,  im Rahmen einer
+Pressekonferenz, deren Transkript sich auf der Website von Microsoft findet, erklärt, dass
+die WSPP-Preisfindungsgrundsätze zwar recht komplex, aber „sehr klar“ seien.
+
+90      Das Vorbringen von Microsoft,  wonach die  Kommission im Wege  einer
+
+rechtsbehelfsfähigen Entscheidung selbst den angemessenen Vergütungssatz hätte festlegen
+müssen, bevor sie ein Zwangsgeld habe verhängen dürfen, ist ebenfalls unbegründet.
+
+91      Wie sich nämlich aus der obigen Randnr. 84 ergibt, hindert die Verwendung unbestimmter
+
+Rechtsbegriffe in einer  Bestimmung nicht an der Feststellung der  Haftung des
+Zuwiderhandelnden. Wie die Kommission bemerkt, könnte andernfalls ein Verstoß gegen die
+Art. 101 oder 102 AEUV, die  ihrerseits mit Hilfe  unbestimmter Rechtsbegriffe, wie der
+Verfälschung des Wettbewerbs oder  dem „Missbrauch“ einer  beherrschenden Stellung,
+
+16 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+abgefasst sind, nicht mit einer Geldbuße geahndet werden, bevor eine die Zuwiderhandlung
+feststellende Entscheidung erlassen worden ist.
+
+92      Entgegen den Ausführungen von Microsoft (siehe oben in Randnr. 75) hat Art. 5 Buchst. d
+
+der Entscheidung von 2004 ausschließlich zum Ziel, das Unternehmen zu zwingen, die
+Maßnahmen zu beschließen und der Kommission mitzuteilen, die es ergreifen will, um seinen
+Verpflichtungen aus den Buchst. a bis c derselben Bestimmung nachzukommen. Dieser
+Artikel  begründet  also eine Verpflichtung, mit der es, wie darin dargelegt  wird, der
+Kommission ermöglicht werden soll, vor Ablauf der in Buchst. a vorgeschriebenen Frist von
+120 Tagen die Maßnahmen zu beurteilen, die Microsoft zu ergreifen beabsichtigt, um die
+Zuwiderhandlung abzustellen. Somit ergibt sich weder aus Art. 5 Buchst. d der Entscheidung
+von 2004 und erst recht nicht aus ihrer Randnr. 995, dass sich die Kommission in welcher
+Art und Weise auch immer  verpflichtet hätte, im Wege einer Entscheidung einen
+angemessenen Vergütungssatz festzulegen, bevor sie ein Zwangsgeld verhängt.
+
+93      Zu ergänzen ist insoweit, dass das aufgrund der angefochtenen Entscheidung verhängte
+
+Zwangsgeld den Zeitraum vom 21. Juni 2006 bis zum 21. Oktober 2007 abdeckt. Wie sich
+aber aus Randnr. 101 der Entscheidung von 2005 und Randnr. 232 der Entscheidung von
+2006 (oben in Randnrn. 15 und 16 angeführt) ergibt, hatte Microsoft bis zum 20. Juni 2006
+nicht einmal eine genaue und vollständige Fassung der Interoperabilitätsinformationen
+vorgelegt, so dass es der Kommission, selbst wenn sie es für angezeigt gehalten hätte,
+angemessene Vergütungssätze festzulegen, unmöglich gewesen wäre, dies zu tun.
+
+94      Des Weiteren ist die Unterscheidung zwischen einer Geldbuße und einem Zwangsgeld, die
+
+Microsoft einzuführen versucht  (siehe oben in Randnr. 76),  für  die im Rahmen des
+vorliegenden Klagegrundes aufgeworfene Frage ohne Bedeutung. Denn zum einen sind eine
+aufgrund von Art. 23 der Verordnung Nr. 1/2003 verhängte Geldbuße und ein endgültiges
+Zwangsgeld wie das hier in Rede stehende, das gemäß Art. 24 Abs. 2 derselben Verordnung
+verhängt wird, jeweils Folgen einer Zuwiderhandlung gegen die Art. 101 oder 102 AEUV
+sowie  einer  Entscheidung,  mit der  aufgegeben wird,  die fragliche  Zuwiderhandlung
+abzustellen, und gegebenenfalls verhaltensorientierte Abhilfemaßnahmen auferlegt werden.
+Zum anderen beziehen sich die Geldbuße und das Zwangsgeld beide auf das Verhalten des
+Unternehmens,  wie es  in der Vergangenheit  zutage getreten ist, und müssen beide
+abschreckende Wirkung haben, um zu verhindern, dass die Zuwiderhandlung sich wiederholt
+oder fortgesetzt wird. In Anbetracht dieser Gemeinsamkeit der Merkmale und Ziele ist eine
+Unterscheidung in Bezug auf den Grad der Genauigkeit dessen, was ein Unternehmen zu tun
+oder zu lassen hat, um die Wettbewerbsregeln einzuhalten, bevor an das Unternehmen eine
+Entscheidung ergeht, mit der eine Geldbuße verhängt wird, oder aber eine Entscheidung, mit
+der ein Zwangsgeld auferlegt wird, durch nichts gerechtfertigt.
+
+95      Microsoft hat durchaus recht mit ihrer Ansicht, dass mehrere  Sätze unter den Begriff
+
+„angemessene  Vergütungssätze“ fallen könnten.  Diese  Auffassung bestätigt jedoch die
+Begründetheit der  These  der Kommission,  wonach es nicht an ihr  sei,  unter  den
+angemessenen Vergütungssätzen im Sinne der Entscheidung von 2004 einen bestimmten Satz
+zu wählen und ihn Microsoft vorzuschreiben. Denn die Kommission ist zwar befugt, eine
+Zuwiderhandlung festzustellen und den betroffenen Parteien aufzugeben, sie abzustellen,
+doch steht es ihr nicht zu, den Parteien ihre eigene Wahl unter den verschiedenen möglichen
+Verhaltensweisen aufzuzwingen,  die  allesamt dem Vertrag oder  einer  Entscheidung
+entsprechen, mit der verhaltensorientierte Abhilfemaßnahmen vorgeschrieben werden, wie
+der angefochtenen Entscheidung von 2004 (vgl. in diesem Sinne Urteil des Gerichts vom 18.
+September 1992, Automec/Kommission, T-24/90, Slg. 1992, II -2223, Randnr. 52). Hat das
+Unternehmen eine dieser möglichen Verhaltensweisen gewählt, darf die Kommission folglich
+
+17 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+weder eine Zuwiderhandlung feststellen noch ein Zwangsgeld verhängen, nur weil sie eine
+andere Verhaltensweise vorzieht. Demnach ist es Sache von Microsoft, Rechte auf Zugang
+zu den Interoperabilitätsinformationen und deren Nutzung zu angemessenen
+Vergütungssätzen im Sinne von Art. 5 Buchst. a der Entscheidung von 2004 zu gewähren,
+ohne dass die Kommission ein Zwangsgeld gegen sie verhängen kann, falls sie der Ansicht
+sein sollte, dass die fraglichen Sätze angemessen sind, aber andere, möglicherweise „noch
+angemessenere“ Sätze hätten vorgeschlagen werden sollen.
+
+96      Unter diesen Umständen ist das Vorbringen, mit dem Microsoft einen Verstoß gegen den
+
+Grundsatz der  ordnungsgemäßen Verwaltung rügt  (siehe oben in Randnr. 77),
+zurückzuweisen.
+
+97      Schließlich kann Microsoft auch mit ihrem Vorbringen in Bezug auf eine Verletzung des
+Rechts auf effektiven gerichtlichen Rechtsschutz keinen Erfolg haben. Insoweit genügt die
+Feststellung, dass sich Microsoft  im  Rahmen des vorliegenden Verfahrens gegen die
+Beurteilung der  Kommission in Bezug auf den innovativen Charakter  der  fraglichen
+Technologien und daraus folgend auf die Angemessenheit der geforderten Vergütungssätze
+wendet. Die Rüge von Microsoft besteht daher im Kern darin, dass sie diese Beurteilung
+früher hätte beanstanden können, wenn die Kommission im Wege einer Entscheidung den
+angemessenen Satz festgelegt hätte. Wenn dies aber der Wille von Microsoft gewesen wäre,
+hätte sie, anstatt einen langen Dialog mit der Kommission aufzunehmen und die verlangten
+Sätze nach und nach zu senken, zunächst  so schnell wie  möglich eine genaue  und
+vollständige Fassung der Interoperabilitätsinformationen übermitteln und anschließend die
+von ihr für angemessen erachteten Vergütungssätze endgültig beschließen können. In diesem
+Fall wäre, wenn die Kommission die fraglichen Sätze für unangemessen gehalten hätte, eine
+Entscheidung wie die hier angefochtene früher ergangen. Das Recht von Microsoft auf
+effektiven gerichtlichen Rechtsschutz ist daher  in keiner  Art und Weise  beeinträchtigt
+worden.
+
+98      Der Teil des vorliegenden Klagegrundes, mit dem eine Verletzung der Begründungspflicht
+
+geltend gemacht wird,  weil  die Kommission auf  diese, auch während des
+Verwaltungsverfahrens vorgetragenen Argumente nicht  eingegangen sei,  ist ebenfalls
+zurückzuweisen.
+
+99      Nach ständiger Rechtsprechung muss die in Art. 253 EG vorgeschriebene Begründung der
+
+Natur des  betreffenden Rechtsakts  angepasst sein und die Überlegungen des
+Gemeinschaftsorgans, das den Rechtsakt erlassen hat, so klar und eindeutig zum Ausdruck
+bringen, dass die Betroffenen ihr die Gründe für die erlassene Maßnahme entnehmen können
+und der Gerichtshof seine Kontrollaufgabe wahrnehmen kann. Das Begründungserfordernis
+ist nach den Umständen des Einzelfalls, insbesondere nach dem Inhalt des Rechtsakts, der
+Art der angeführten Gründe und nach dem Interesse zu beurteilen, das die Adressaten oder
+andere durch den Rechtsakt unmittelbar und individuell  betroffene Personen an
+Erläuterungen haben können. In der Begründung brauchen nicht alle tatsächlich oder
+rechtlich einschlägigen Gesichtspunkte genannt zu werden, da die Frage, ob die Begründung
+eines Rechtsakts  den Erfordernissen des  Art. 253 EG genügt, nicht  nur  anhand ihres
+Wortlauts, sondern auch anhand ihres Kontexts sowie sämtlicher Rechtsvorschriften auf
+dem betreffenden Gebiet zu beurteilen ist (Urteil des Gerichtshofs vom 30. März 2000,
+VBA/Florimex u. a., C-265/97 P, Slg. 2000, I-2061, Randnr. 93).
+
+100    Wie sich aus der vorausgehenden Prüfung ergibt, hindern die Rechtsvorschriften auf dem
+
+betreffenden Gebiet keineswegs an der  Verhängung eines Zwangsgelds ohne vorherige
+Festlegung des  Vergütungssatzes,  der  aus Sicht der  Kommission im Sinne von Art. 5
+
+18 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Buchst. a der Entscheidung von 2004 angemessen wäre. Unter diesen Umständen erfüllt die
+Kommission ihre Begründungspflicht, wenn sie klar und eindeutig darlegt, aus welchen
+Gründen die  von Microsoft  verlangten Vergütungssätze  nicht angemessen waren; eine
+Begründung speziell zu der Befugnis, ohne vorherige Festlegung des angemessenen Satzes
+durch die Kommission ein Zwangsgeld zu verhängen, ist hierfür nicht erforderlich.
+
+101    Der erste Klagegrund ist somit zurückzuweisen.
+
+ Zum zweiten Klagegrund: Fehler der Kommission hinsichtlich der Unangemessenheit der
+Vergütungssätze für die No -Patent-Vereinbarung
+
+ Vorbringen der Beteiligten
+
+102    Microsoft trägt vor,  angesichts der  Unbestimmtheit des Begriffs der angemessenen
+
+Vergütung und der  Weigerung der Kommission,  die Verpflichtungen von Microsoft  zu
+konkretisieren, habe sich Microsoft bereit erklärt, einen Mechanismus zu schaffen, der es
+ermögliche, die Vergütungssätze mit potenziellen Lizenznehmern auszuhandeln, und sich der
+schiedsrichterlichen Zuständigkeit des unabhängigen Überwachungsbeauftragten zu
+unterwerfen.  Außerdem  habe Microsoft auf  Ersuchen der Kommission sogar
+Vergütungssätze festgelegt, die wesentlich niedriger gewesen seien als diejenigen, die die
+weltbekannte Wirtschaftsprüfungsgesellschaft PricewaterhouseCoopers, gestützt  auf die
+Bewertung der zutreffend als vergleichbar angesehenen Technologien und aufgrund weltweit
+anerkannter Methoden vorgeschlagen habe. Wie jedoch allgemein bekannt sei, dienten selbst
+diese  Sätze nur als  Ausgangspunkt  für die Verhandlungen mit den potenziellen
+Vertragspartnern und könne, falls keine Einigung erzielt werde, der  unabhängige
+Überwachungsbeauftragte  angerufen werden,
+WSPP-Preisfindungsgrundsätze einen angemessenen Satz zu bestimmen. Selbst wenn die
+Kommission nicht mit der Beurteilung durch die externen Fachleute einverstanden sei, die
+Microsoft in gutem Glauben und mit dem Ziel, der Entscheidung von 2004 nachzukommen,
+beauftragt habe, könne nicht angenommen werden, dass Microsoft unangemessene oder gar
+diskriminierende Vergütungssätze angewandt habe, da keiner ihrer Vertragspartner es für
+angezeigt gehalten habe, den unabhängigen Überwachungsbeauftragten anzurufen, nicht
+einmal während der Verhandlungen, obwohl die Stellung von Microsoft wegen der Drohung
+mit einem sehr hohen Zwangsgeld geschwächt gewesen sei. Jedenfalls stelle die Einführung
+dieses  Streitbeilegungsmechanismus  mit dem Einverständnis von Microsoft  sicher, dass
+jegliche letztlich gezahlte Vergütung den vom  Überwachungsbeauftragten angewandten
+WSPP-Preisfindungsgrundsätzen entspreche und damit angemessen sei.
+
+ um  in Anwendung der
+
+103    Folglich liege  der Grund,  aus  dem  einige Unternehmen nicht  einmal  mit Microsoft
+
+verhandelt und auch nicht den unabhängigen Überwachungsbeauftragten angerufen hätten,
+nicht darin, dass die von ihr vorgeschlagenen Vergütungssätze unangemessen gewesen seien,
+sondern darin, dass sie nicht dem Argument gefolgt seien, wonach die fraglichen Protokolle
+nicht innovativ seien.
+
+104    Microsoft weist auch das Vorbringen, wonach die Unternehmen, die Lizenzvereinbarungen
+
+geschlossen hätten, für den strategischen Wert der fraglichen Technologien bezahlt hätten
+und keine Wettbewerber von Microsoft seien, als sachlich unzutreffend zurück.
+
+105    Dass die mit Microsoft geschlossenen Vereinbarungen die All-IP-Vereinbarung beträfen, sei
+nicht von Bedeutung, da sich hieraus nicht ergebe, dass die für die No -Patent-Vereinbarung
+vorgeschlagenen Vergütungssätze unangemessen seien, und die technische Dokumentation in
+beiden Fällen identisch sei.
+
+19 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+106    Nachdem Microsoft diese  Argumente  im Lauf  des Verwaltungsverfahrens  wiederholt
+vorgetragen habe, ohne jedoch eine Antwort zu erhalten, auch nicht in der angefochtenen
+Entscheidung, sei diese Entscheidung auch mangelhaft begründet.
+
+107    Angesichts der Weigerung der Kommission, zu konkretisieren, welche Vergütungssätze sie
+für angemessen halte, habe sich Microsoft zudem verpflichtet, rückwirkend ab dem Tag, an
+dem die Entscheidung von 2004 erlassen worden sei, jedweden Satz anzuwenden, der bei
+Beendigung des Austauschs mit der Kommission als angemessen festgelegt werde, so dass
+die eventuellen Lizenznehmer sicher sein könnten, letztlich nur einen angemessenen Preis zu
+zahlen. Soweit die Kommission behaupte, dass die von Microsoft nur vorgeschlagenen und
+nicht „angewandten“ Vergütungssätze abschreckende Wirkung hätten, handele es sich bloß
+um eine nicht durch Beweise gestützte Unterstellung.
+
+108    Wenn die Kommission es für so wichtig halte, dass die potenziellen Lizenznehmer die
+Kosten für die Lizenzen genau kalkulieren könnten, hätte sie eine Entscheidung erlassen
+müssen, in der der höchste angemessene Satz bestimmt sei, anstatt  einen
+Schiedsmechanismus vorzuschreiben.
+
+109    Unterstützt von CompTIA führt Microsoft aus, dass das Ergebnis der Verhandlungen mit
+
+Wirtschaftsteilnehmern, die nicht mit  Microsoft verbunden seien, der zuverlässigste
+Indikator  für die Angemessenheit eines  bestimmten Vergütungssatzes sei.  Schon vier
+Unternehmen hätten aus eigenem Antrieb Vereinbarungen über  den Zugang zu den
+Interoperabilitätsinformationen selbst zu einem Preis geschlossen, der über demjenigen liege,
+den die Kommission für  unangemessen halte,  was nicht zugunsten theoretischer  und
+abstrakter Bewertungskonstruktionen übergangen werden dürfe. Ferner ist  es CompTIA
+zufolge  im Verhandlungsstadium unmöglich, zu wissen, ob die fraglichen Unternehmen
+konkurrierende Technologien zu denen von Microsoft entwickeln wollten, was im Hinblick
+auf den Gegenstand der Entscheidung von 2004 ohnehin nicht von Bedeutung sei.
+
+110    Microsoft ergänzt, dass die Entscheidung von 2004 ihr weder verbiete, Vergütungssätze zu
+fordern, die im Verhältnis zu den Einnahmen der Lizenznehmer stünden, noch vorschreibe,
+sich dem Geschäftsmodell jedes ihrer potenziellen Vertragspartner anzupassen.
+
+111    Schließlich habe die Kommission verkannt, dass die No -Patent-Vereinbarung ungeachtet
+
+ihres Namens  den Interessenten das Recht einräume, die  von Microsoft patentierten
+Innovationen zu nutzen. Wenn die  Kommission der Meinung sei, dass die Zusage  von
+Microsoft,  keine Rechte  aus den zugehörigen Patenten geltend zu machen,  nicht die
+gewünschte Wirkung habe, solle sie dies im Rahmen des vorliegenden Verfahrens klar zum
+Ausdruck bringen.
+
+112    Die Kommission und die sie unterstützenden Streithelfer halten diesen Klagegrund für
+
+unbegründet.
+
+ Würdigung durch das Gericht
+
+113    Soweit Microsoft vorträgt,  dass die in dem von der  angefochtenen Entscheidung
+
+abgedeckten Zeitraum verlangten Vergütungssätze nur Vorschläge gewesen seien, die der
+Aufnahme von Verhandlungen gedient hätten, an deren Ende angemessene Sätze stünden, ist
+ihr Vorbringen ohne Weiteres zurückzuweisen. Mit Art. 5 Buchst. a der Entscheidung von
+2004 soll Microsoft nämlich nicht nur verpflichtet werden, Verhandlungen mit jedem
+Unternehmen aufzunehmen, das Betriebssysteme für Arbeitsgruppenserver zu entwickeln
+und zu vertreiben beabsichtigt, sondern auch gezwungen werden, ihm zu angemessenen und
+nicht diskriminierenden Bedingungen die Interoperabilitätsinformationen offenzulegen und
+
+20 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+deren Nutzung zu diesem Zweck zu gestatten.
+
+114    Folglich war Microsoft mit Ablauf der durch Art. 5 Buchst. a der Entscheidung von 2004
+
+gewährten Frist von 120 Tagen verpflichtet, solche Bedingungen von sich aus vorzuschlagen.
+Darauf, dass die Vergütungssätze, die Microsoft in dem von der angefochtenen Entscheidung
+abgedeckten Zeitraum vorschlug, niedriger gewesen sein sollen als diejenigen, zu denen
+PricewaterhouseCoopers in ihrem Bericht vom 23. April 2007 geraten hätte, kommt es
+dementsprechend nicht an, umso mehr, als dieser Bericht keine Untersuchung in Bezug auf
+den innovativen Charakter der fraglichen Technologien enthält. Was ferner die fehlende
+Definition des Begriffs der angemessenen Vergütung und die Pflichten betrifft, die die
+Kommission insoweit treffen, ist auf die  Erwägungen oben in den Randnrn. 84 bis 95
+hinzuweisen.
+
+115    Dem Argument von Microsoft, dass die Einführung des Mechanismus des unabhängigen
+
+Überwachungsbeauftragten mit ihrem Einverständnis sicherstelle, dass jede letztlich gezahlte
+Vergütung den vom Überwachungsbeauftragten angewandten
+WSPP-Preisfindungsgrundsätzen entspreche und damit angemessen sei, kann nicht gefolgt
+werden. Wie oben in den Randnrn. 113 und 114 ausgeführt, bestand nämlich die Microsoft
+mit der  Entscheidung von 2004 auferlegte  Verpflichtung darin,  von sich aus zu
+angemessenen und nicht diskriminierenden Bedingungen die Interoperabilitätsinformationen
+offenzulegen und deren Nutzung zu gestatten. Unter diesen Umständen sollen durch die
+Existenz eines Schiedsmechanismus, mit dem ein unabhängiger Überwachungsbeauftragter
+betraut ist, allenfalls die Folgen gemildert werden, die sich ergeben, falls das beherrschende
+Unternehmen bei seinem  missbräuchlichen Verhalten bleibt,  damit gegebenenfalls
+auftretende Meinungsverschiedenheiten schnell und vor allem  unter Ausnutzung eines
+besonders hohen Niveaus an Fachwissen geschlichtet werden. Die Einführung eines solches
+Mechanismus  kann jedoch nicht sicherstellen, dass die Wettbewerbssituation so
+wiederhergestellt wird, wie sie gewesen wäre, wenn Microsoft von sich aus zu angemessenen
+Bedingungen einen Zugang zu den Interoperabilitätsinformationen vorgeschlagen hätte.
+Diese Feststellung gilt umso mehr im Rahmen von Märkten, die sich schnell entwickeln und
+in denen die Entwicklung von Produkten wie den hier in Rede stehenden von Investitionen
+abhängt, deren Fixkosten sehr hoch sind und von den Interessenten im Voraus kalkuliert
+werden können müssen. Wie die Kommission in Beantwortung einer schriftlichen Frage des
+Gerichts ausgeführt  hat,  ohne dass Microsoft dem entgegengetreten wäre, konnten die
+Interoperabilitätsinformationen zudem erst am 23. November 2006 in dem Sinne als in einer
+genauen und vollständigen Fassung offengelegt betrachtet werden, dass ein Entwurf für die
+Entwicklung eines  Software -Produkts auf diese  Informationen gestützt werden konnte.
+Demnach fehlte dem unabhängigen Überwachungsbeauftragten wenigstens bis zu diesem
+Datum weitgehend schon die Grundlage für seine Aufgabe  als Schiedsrichter über  die
+Angemessenheit der von Microsoft vorgeschlagenen Preise. Die Existenz eines erst nach
+Abschluss einer No-Patent-Vereinbarung zum Zuge kommenden Schiedsmechanismus kann
+daher nicht als Faktor gesehen werden, der geeignet wäre, die mit der Nichteinhaltung der
+Verpflichtungen aus Art. 5 Buchst. a  der  Entscheidung von 2004 verbundenen Folgen
+vollständig zu beheben.
+
+116    Das  Gleiche gilt für die Klausel „Beschleunigtes Verfahren zur Beilegung von
+
+Streitigkeiten“ in den Fassungen der Vereinbarungen für die Bewertung der technischen
+Dokumentation von Oktober 2005 und Februar 2006 (siehe oben in Randnr. 23), auf die in
+Fn. 136 der angefochtenen Entscheidung Bezug genommen wird. Wie sich nämlich aus
+ihrem Wortlaut ergibt, der laut Microsoft in den Fassungen von Februar 2007 identisch ist,
+muss im Fall einer Meinungsverschiedenheit zwischen Microsoft und einem potenziellen
+Lizenznehmer über die Vereinbarkeit der geforderten Preise oder der Kategorisierung der
+
+21 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Technologien mit den WSPP -Preisfindungsgrundsätzen oder gar über die Bestimmungen
+einer WSPP -Vereinbarung der Lizenznehmer Microsoft schriftlich mitteilen, aus welchen
+Gründen er der Auffassung ist, dass Microsoft nicht ihren Verpflichtungen nachkommt. Wird
+innerhalb einer Frist von 15 Arbeitstagen keine Einigung erzielt, kann sich der potenzielle
+Lizenznehmer an den unabhängigen Überwachungsbeauftragten wenden, der ermächtigt ist,
+eine  Stellungnahme zu dieser  Frage abzugeben.  In einem  solchen Fall soll Microsoft
+verpflichtet sein, innerhalb einer Frist von zwei Wochen schriftlich mitzuteilen, aus welchen
+Gründen die betreffenden Preise oder Bestimmungen aus ihrer Sicht gerechtfertigt sind.
+
+117    Aus der Klausel „Beschleunigtes Verfahren zur Beilegung von Streitigkeiten“ geht eindeutig
+
+ dass der darin vorgesehene Mechanismus dem unabhängigen
+
+hervor,
+Überwachungsbeauftragten keine Befugnis verleiht, nach einer Vorabkontrolle im Hinblick
+auf den zukünftigen Abschluss einer
+WSPP-Preisfindungsgrundsätzen entsprechende Vergütungssätze vorzuschreiben, sondern
+nur die Befugnis, eine Stellungnahme hierzu abzugeben, und dass Microsoft unter Darlegung
+der Gründe für ihre Entscheidung ihren Standpunkt aufrechterhalten kann. Selbst wenn man
+davon absieht, dass Microsoft nach Art. 5 Buchst. a der Entscheidung von 2004 verpflichtet
+war, von sich aus angemessene und nicht diskriminierende Bedingungen vorzuschlagen, ist
+somit festzustellen, dass der betreffende Mechanismus nicht geeignet war, ein Ergebnis zu
+gewährleisten, das dem von der genannten Bestimmung angestrebten Resultat gleichkommt.
+
+ WSPP
+
+-Vereinbarung den
+
+118    Ferner ändert der Umstand, dass Microsoft sich verpflichtet hat, rückwirkend die von der
+
+Kommission als angemessen akzeptierten Sätze anzuwenden, nichts daran, dass diese Sätze
+in dem durch die angefochtene Entscheidung abgedeckten Zeitraum, d. h. deutlich nach
+Ablauf der in Art. 5 Buchst. a der Entscheidung von 2004 gesetzten Frist, den Unternehmen,
+die  Betriebssysteme für  Arbeitsgruppenserver  entwickeln und vertreiben wollten,  von
+Microsoft nicht angeboten wurden.
+
+119    Dass einige Unternehmen Vereinbarungen mit Microsoft zu den von ihr verlangten Sätzen
+geschlossen haben, ohne sich an den unabhängigen Überwachungsbeauftragten zu wenden,
+genügt im Übrigen nicht, um die  Stichhaltigkeit der  Ausführungen zum innovativen
+Charakter der fraglichen Technologien in den Randnrn. 165 bis 219 der angefochtenen
+Entscheidung in Frage zu stellen. Denn erstens handelt es sich, wie Microsoft einräumt, bei
+den fraglichen Vereinbarungen um solche des Typs All IP, was bedeutet, dass sie auch von
+Microsoft patentierte Technologien betreffen, deren innovativen Charakter die Kommission
+nicht bezweifelt hat. Selbst wenn die Tatsache, dass die fraglichen Vereinbarungen solche
+des  Typs All IP sind, nicht beweist, dass die  von Microsoft im Rahmen der
+No-Patent-Vereinbarung geforderten Vergütungssätze unangemessen sind, beweist sie also
+auch nicht das Gegenteil. Angenommen, die Verantwortlichen dieser Gesellschaften wären
+vom innovativen Charakter der fraglichen Technologien überzeugt gewesen, lautet zweitens
+die entscheidende Frage, ob die Prüfung, die die Kommission insoweit vorgenommen hat,
+objektiv den in diesem Bereich anwendbaren Regeln entspricht; dieser  Frage  wird im
+Rahmen des dritten Klagegrundes nachgegangen.
+
+120    Zudem ist klarzustellen, dass die Entscheidung von 2004 Microsoft zwar nicht verbietet,
+
+Vergütungssätze zu fordern, die im Verhältnis zu den Einnahmen der Lizenznehmer stehen,
+solche Sätze aber nur verlangt werden dürfen, wenn sie einen anderen Wert repräsentieren
+als den strategischen Wert  der fraglichen Technologien (vgl. Randnr. 1008 Ziff. ii  der
+Entscheidung von 2004).  Die  von der  Kommission im Rahmen der  angefochtenen
+Entscheidung vorgenommene Prüfung bezieht sich aber gerade auf diesen zuletzt genannten
+Aspekt.  Ferner  ist festzustellen, dass  die Entscheidung von 2004 – vorbehaltlich der
+Verpflichtung,
+ die  Interoperabilitätsinformationen unter  nicht diskriminierenden
+
+22 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Bedingungen zur Verfügung zu stellen – hinsichtlich der  Möglichkeit eines jeglichen
+potenziellen Vertragspartners von Microsoft,  je nach seinem Geschäftsmodell  eine
+Vereinbarung mit ihr  zu schließen,  neutral ist.  Das  Gleiche gilt erst recht für die
+angefochtene Entscheidung, und zwar in dem Sinne, dass das Verhalten von Microsoft auf
+der Grundlage des innovativen Charakters der fraglichen Technologien untersucht wird und
+nicht  der Möglichkeit für jeden der  potenziellen Vertragspartner, je  nach seinem
+Geschäftsmodell  eine  Vereinbarung mit ihr  zu schließen. Das  oben in Randnr. 110
+zusammengefasste Vorbringen von Microsoft ist daher als ins Leere gehend zurückzuweisen.
+
+121    Soweit Microsoft vorträgt,  dass die No
+
+-Patent-Vereinbarung Interessierten das Recht
+
+einräume,  patentierte Technologien zu nutzen, genügt  die Feststellung, dass  nach
+Section 1.14 dieser Vereinbarung der Begriff „Microsoft licensed intellectual property“ das
+Know-how, Betriebs
+-  und Geschäftsgeheimnisse,  vertrauliche  Informationen und
+Urheberrechte  mit ausdrücklicher Ausnahme aller Rechte, für die  ein Patent oder eine
+anhängige Patentanmeldung existiert, einschließt. Was die einseitige Zusage von Microsoft
+angeht, keine Rechte in Verbindung mit Patenten geltend zu machen, ist mit der Kommission
+festzustellen, dass sie erst am 24. Oktober 2007 abgegeben wurde, d. h. nach Ende des von
+der angefochtenen Entscheidung abgedeckten Zeitraums. Darüber hinaus erstreckt sich, wie
+Microsoft in ihrer Stellungnahme zu den Streithilfeschriftsätzen einräumt, diese Zusage nur
+auf die  nicht kommerzielle Vermarktung, während „Open source“
+-Entwickler, die
+kommerziell  vermarkten, ausgenommen sind. Schließlich ist festzustellen, dass  die im
+Rahmen der  No
+-Patent-Vereinbarung gegebenenfalls erfolgende  Offenlegung der
+Informationen in Bezug auf patentgeschützte Technologien, d. h. andere als die im Anhang
+zur angefochtenen Entscheidung aufgeführten Technologien, keineswegs mit einem Recht
+für den Vertragspartner von Microsoft  verbunden sind, sie  so anzuwenden, dass die
+fraglichen Patente verletzt werden. Wie die Kommission darlegt, sind diese Informationen
+nämlich im  Rahmen des  erteilten Patents öffentlich verfügbar, ohne dass es einem
+Entwickler dadurch erlaubt würde, das Patent zu nutzen. Unter diesen Umständen ist im
+Hinblick auf die Unterscheidung zwischen patentierten und nicht patentierten
+Interoperabilitätsinformationen (vgl. Randnrn. 161 bis 164 der angefochtenen Entscheidung)
+nicht zu folgern, dass die No -Patent-Vereinbarung den Vertragspartnern von Microsoft das
+Recht einräumt, patentierte  Technologien anzuwenden, die sie nach eigenem Bekunden
+zudem für die Entwicklung von Betriebssystemen für Arbeitsgruppenserver nicht benötigen.
+
+122    Zu der von Microsoft erhobenen Rüge einer unzureichenden Begründung ist festzustellen,
+dass, wie die Kommission in den Randnrn. 122 bis 127 und 273 bis 278 der angefochtenen
+Entscheidung geltend macht, diese auf  das Vorbringen eingegangen ist,  das  auf  den
+Abschluss von Vereinbarungen mit bestimmten Wirtschaftsteilnehmern gestützt wird. Selbst
+wenn Microsoft während des Verwaltungsverfahrens geltend gemacht haben sollte, dass sie
+jederzeit bereit  sei, über die in ihren Vergütungsregelungen angeführten Preise zu
+verhandeln, geht darüber aus Randnr. 116 der angefochtenen Entscheidung eindeutig hervor,
+dass die WSPP
+vorgeschlagene und/oder festgelegte Vergütung“ eingehalten werden mussten. Dass sich eine
+Vergütung, die sich an die fraglichen Grundsätze hält, eventuell aus Verhandlungen mit
+Microsoft ergeben könnte, ist folglich nach derselben Randnummer ohne Bedeutung für die
+Wahrung der Verpflichtungen aus Art. 5 Buchst. a der Entscheidung von 2004. Somit ist
+diese Rüge ebenso wie der zweite Klagegrund insgesamt zurückzuweisen.
+
+-Preisfindungsgrundsätze im Hinblick auf  jegliche „von Microsoft
+
+ Zum dritten Klagegrund: Fehler der Kommission in Bezug auf die  Kriterien für die
+Prüfung des innovativen Charakters der Technologien, die Gegenstand der
+No-Patent-Vereinbarung sind
+
+23 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+ Vorbringen der Beteiligten
+
+123    Microsoft wiederholt, dass  die Kommission den Wert  der patentierten Innovationen
+
+verkannt habe, die in der No -Patent-Vereinbarung beschrieben seien, und fügt hinzu, dass
+die  Anwendung eines Kriteriums der  Patentierbarkeit bei der  Prüfung des innovativen
+Charakters der nicht patentierten Technologien einen offensichtlichen Beurteilungsfehler
+darstelle. Außerdem sei die angefochtene Entscheidung unzureichend begründet.
+
+124    Der vorliegende Klagegrund gehe keineswegs ins Leere, denn Microsoft halte die Analyse
+der Kommission in Bezug auf das dritte Kriterium der WSPP -Preisfindungsgrundsätze nach
+wie vor für falsch. Diese Analyse beruhe nämlich auf einem fehlerhaften Verständnis des
+Begriffs der Innovation, was sich zwangsläufig auf die Wahl der  als vergleichbar
+betrachteten Technologien auswirke. CompTIA führt aus, dass die von der Kommission als
+vergleichbar  gewählten Technologien zu einem anderen Geschäftsmodell gehörten als
+demjenigen, dem Microsoft folge, so dass  die von der Kommission vorgenommene
+Marktbewertung fehlerhaft sei.
+
+125    Der Standpunkt, dass Microsoft nur für neue und nicht offensichtliche Technologien im
+
+-Preisfindungsgrundsätzen noch im Recht im
+
+Sinne des Patentrechts  eine Vergütung beanspruchen könne, finde weder in der
+Entscheidung von 2004 noch in den WSPP
+Allgemeinen eine Stütze. Microsoft  habe  die  Anwendung dieser Kriterien durch die
+Kommission oder den unabhängigen Überwachungsbeauftragten nicht als im vorliegenden
+Fall sachgerecht akzeptiert. Denn Geschäftsgeheimnissen könne, führt Microsoft unterstützt
+von CompTIA und ACT aus, ein hoher Wert zukommen, der grundsätzlich den Fixkosten für
+Entwicklung geschuldet sei; dies gelte unabhängig davon, ob sie außerdem patentierbar oder
+schon patentgeschützt seien, da das betreffende Unternehmen in der Entscheidung, wie es
+insoweit verfahre, frei bleiben müsse. Entgegen den Angaben von IBM sei die Funktionalität
+des Protokolls „File Replication Service“ von kapitaler Bedeutung, weshalb einer seiner
+Aspekte in den Vereinigten Staaten patentiert sei. Die Kommission habe nicht erläutert,
+inwiefern das von ihr angewandte Kriterium  der  Patentierbarkeit im Einklang mit
+Randnr. 1008 Ziff. ii der Entscheidung von 2004 gerade den strategischen Wert der
+Technologien von Microsoft ausschließen solle. Nach Auffassung von ACT hätte nur eine
+Prüfung des Werts,  den die  Interoperabilitätsinformationen in Abwesenheit jedweder
+beherrschender  Wirtschaftsteilnehmer  hätten,  es ermöglicht,  die von Microsoft
+vorgeschlagenen Sätze im Licht der Entscheidung von 2004 zu bewerten.
+
+126    Unterstützt von ACT macht Microsoft geltend, dass die  Kommission die Kriterien der
+Neuheit und der  Nichtoffensichtlichkeit zu restriktiv und daher  sogar dem Patentrecht
+zuwider  angewandt habe.  So könnten entgegen den von der  Kommission in anderen
+Bereichen aufgestellten Prüfungsregeln nur echte Pioniererfindungen, die vollständig vom
+Stand der  Technik abwichen, im vorliegenden Kontext als neu eingestuft werden. Die
+Existenz von Verweisen auf den Stand der Technik, die sich auf Konzepte bezögen, die den
+von Microsoft  angewandten Konzepten ähnelten, bedeute jedoch nicht,  dass die
+Technologien, auf die sich die angefochtene Entscheidung beziehe, allesamt offensichtlich
+seien,  zumal ihre  Wettbewerber  nicht  imstande gewesen seien,  sie  zu entwickeln, wie
+CompTIA und ACT bestätigen. CompTIA meint, der Markt und nicht die Kommission müsse
+über die  beste  Technologie entscheiden. Die  Kommission gehe  so weit, in ihrer
+Klagebeantwortung die Angemessenheit des Kriteriums der Neuheit, wie es im Rahmen des
+gewerblichen Rechtsschutzes angewandt werde, zu leugnen, so dass für Microsoft unklar sei,
+welches Kriterium in der angefochtenen Entscheidung letztlich angewandt worden sei.
+
+127    Ferner schließe die punktuelle Herangehensweise in der angefochtenen Entscheidung jede
+
+24 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+nicht offensichtliche Kombination bekannter Elemente aus dem Begriff der Innovation aus.
+Nach der Rechtsprechung der Beschwerdekammern des Europäischen Patentamts (EPA) sei
+die entscheidende  Frage  jedoch nicht, ob ein Fachmann eine  solche Kombination hätte
+vornehmen können, sondern ob er es in Erwartung eines Fortschritts tatsächlich getan hätte.
+ACT bemerkt, dass  die  Kommission den innovativen Charakter  einiger von der
+angefochtenen Entscheidung betroffener Technologien zugestanden habe, und führt aus,
+dass eine Technologie als innovativ eingestuft werden müsse, wenn sie in einer Kombination
+neuer und nicht offensichtlicher Elemente mit nicht patentierbaren Elementen bestehe. Es
+sei nicht ersichtlich, dass die Kommission die technologischen Kombinationen von Microsoft
+als solche wirklich geprüft habe.
+
+128    Microsoft habe während des Verwaltungsverfahrens mehrere Berichte eingereicht, die die
+Wahrhaftigkeit ihrer Behauptungen hinsichtlich der Neuheit und Nichtoffensichtlichkeit der
+in der technischen Dokumentation enthaltenen nicht patentierten Erfindungen belegten und
+die von der Kommission zurückgewiesen worden seien. Es gebe daher keinen Grund, die
+dem Gericht vorliegenden Akten weiter anwachsen zu lassen; die entscheidende Frage laute,
+ob die Herangehensweise der Kommission mit der Entscheidung von 2004 vereinbar sei.
+
+129    Die angefochtene Entscheidung sei zudem unzureichend begründet, da sie nicht auf die
+
+Untersuchung in einem Bericht eingehe, den ein Professor und Barrister – ein ehemaliges
+Mitglied der  Beschwerdekammer des EPA – erstellt habe und der im Detail die
+patentrechtlichen Fehler  der  Kommission darlege  und dadurch die  Wahrhaftigkeit der
+Behauptungen von Microsoft bestätige. Des Weiteren gehe aus diesem Bericht hervor, dass
+die Kommission und der unabhängige Überwachungsbeauftragte die Patentierbarkeit der
+Technologien unter Berücksichtigung des Standes der Technik im Jahr 2007 geprüft hätten
+und nicht in dem Zeitpunkt, in dem Microsoft die Erteilung eines Patents beantragt habe, so
+dass  sie  Technologien berücksichtigt hätten, die  nach der  ersten Implementierung der
+Schlüsseltechnologien von Microsoft erschienen seien. Nach dieser Logik könne jedoch kein
+Unternehmen beweisen, dass seine Technologie neu und nicht offensichtlich sei, während es
+eine willkürliche Unterscheidung zwischen den verschiedenen Technologien gebe, je
+nachdem,  ob Microsoft beschlossen habe,  ein Patent zu beantragen oder  nicht.  Die
+angefochtene Entscheidung enthalte ferner nur vage Verweise ohne spezifischen Vergleich
+zwischen den Patentansprüchen dieser Technologien und denen der zum Stand der Technik
+gehörenden Technologien.
+
+130    Unabhängig von konkreten Beispielen sei die Untersuchung der Kommission aufgrund der
+
+von Microsoft aufgezeigten fundamentalen Fehler insgesamt mangelhaft, so dass das Gericht
+im Rahmen der  ihm obliegenden umfassenden Kontrolle die  Rechtswidrigkeit der
+angefochtenen Entscheidung feststellen müsse. Dass es auf  übergeordneter  Ebene
+Innovationen gebe, ergebe sich jedenfalls daraus, dass die Kommission in der angefochtenen
+Entscheidung ihre Beurteilung geändert und die Auffassung vertreten habe, dass Microsoft
+das Recht habe,  eine  Vergütung für  Lizenzen zu verlangen,  die  im Rahmen anderer
+Vereinbarungen als  der No
+-Patent-Vereinbarung erteilt  würden. Die technische
+Dokumentation sei jedoch im Rahmen aller WSPP-Vereinbarungen identisch.
+
+131    ACT ergänzt, dass die Herangehensweise der Kommission die Weitergabe hochwertiger
+
+Technologien zu ungewöhnlich niedrigen Preisen begünstige, Investitionen in die Forschung
+durch pauschale Abwertung der  gewerblichen Schutzrechte verhindere und das
+„Open source“-Modell  zu Lasten innovativer  kleiner und mittlerer Unternehmen
+unverhältnismäßig bevorzuge.
+
+132    Unterstützt von SIIA und Oracle trägt die Kommission vor, dass der vorliegende Klagegrund
+
+25 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+ins Leere gehe, da der verfügende Teil der angefochtenen Entscheidung nicht nur auf der
+Prüfung des innovativen Charakters der fraglichen Technologien beruhe, sondern auch auf
+dem Ergebnis der Marktbewertung für vergleichbare Technologien. Microsoft habe die oben
+in Randnr. 54 wiedergegebene Feststellung jedoch nicht bestritten, und deren schlichte
+Zurückweisung im Stadium der Erwiderung erfülle nicht die Voraussetzungen des Art. 44
+Abs. 1 Buchst. c oder des Art. 48 Abs. 2 der Verfahrensordnung des Gerichts. Außerdem sei,
+wie sich aus den Randnrn. 165, 220, 221 und 280 der angefochtenen Entscheidung ergebe,
+die Untersuchung des innovativen Charakters unabhängig von derjenigen, die sich auf die
+Marktbewertung beziehe. Hilfsweise tragen die Kommission und die sie unterstützenden
+Streithelfer vor, dass der vorliegende Klagegrund unbegründet sei.
+
+ Würdigung durch das Gericht
+
+133    Zunächst einmal ist die Auffassung der Kommission zurückzuweisen, dass der vorliegende
+
+Klagegrund ins Leere gehe.
+
+134    Auch wenn es zutrifft, dass die drei Kriterien, die zu den WSPP -Preisfindungsgrundsätzen
+gehören, kumulativ erfüllt sein müssen, sind das zweite und das dritte Kriterium begrifflich in
+dem Sinne verbunden, dass, wenn die fraglichen Technologien als innovativ angesehen
+werden, dem Erfordernis, dass sich die Marktbewertung auf „vergleichbare“ Technologien
+bezieht, nicht schon deshalb Genüge getan ist, weil die zuletzt genannten Technologien die
+Interoperabilität betreffen.
+
+135    Wenn die  Technologien, die die  Interoperabilitätsinformationen umfassen, als innovativ
+betrachtet werden, aber eine Marktbewertung in Bezug auf nicht innovative Technologien
+der Interoperabilität zeigt, dass diese kostenlos verfügbar sind, müsste insoweit, damit der
+Vergleich sinnvoll bleibt, zusätzlich ausgeschlossen werden, dass dieser Umstand dem nicht
+innovativen Charakter der fraglichen Technologien geschuldet ist.
+
+136    Erweisen sich die Feststellungen der Kommission zum innovativen Charakter der von der
+
+No-Patent-Vereinbarung erfassten Technologien als unzutreffend,  kann das folglich die
+Prämissen der in den Randnrn. 222 bis 237 der angefochtenen Entscheidung erläuterten
+Marktbewertung beeinträchtigen, da diesen Randnummern nicht zu entnehmen ist, das sich
+die fragliche Untersuchung auf innovative Technologien bezogen hat.
+
+137    Diese Schlussfolgerung wird durch Randnr. 237 der angefochtenen Entscheidung, wonach
+
+der unabhängige Überwachungsbeauftragte in seinem Bericht vom 27. Februar 2007 (oben in
+Randnr. 51 angeführt) die mit den innovativen Technologien von Microsoft vergleichbaren
+Technologien benannt hat, nicht in Frage gestellt. Anders als die Berichte vom 3. März und
+8. Juli 2007, von denen ausgehend die Tabelle im Anhang zur angefochtenen Entscheidung
+erstellt wurde, gehören nämlich die einschlägigen Feststellungen dieses Berichts nicht zu den
+Gründen der angefochtenen Entscheidung. Unter  diesen Umständen lässt sich nicht
+überprüfen, ob die Technologien, mit denen sich der unabhängige Überwachungsbeauftragte
+befasst hat,  auch dann mit den von der  Kommission für nicht  innovativ befundenen
+Technologien vergleichbar sind, wenn sich dieser Befund der Kommission als falsch erwiese.
+Das Gleiche gilt für die  Hinweise  in den Randnrn. 223 und 231 der angefochtenen
+Entscheidung, wonach die vergleichbaren Technologien „in bestimmten Fällen“ patentierte
+Technologien einschließen. Derartige Beispiele für Technologien für Protokolle werden in
+den Randnrn. 224 und 232 der angefochtenen Entscheidung gegeben. Gleichwohl ergibt sich
+aus dieser summarischen Darstellung nicht, dass diese Technologien in funktioneller Hinsicht
+mit allen Technologien für die betroffenen Protokolle vergleichbar sind.
+
+138    Was die Begründetheit des vorliegenden Klagegrundes angeht, ist zunächst festzustellen,
+
+26 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+dass die  Unterscheidung zwischen dem strategischen und dem eigenständigen Wert der
+Technologien, die Gegenstand der angefochtenen Entscheidung sind, eine  fundamentale
+Prämisse für die Beurteilung der Angemessenheit jeglicher Vergütung darstellt, die Microsoft
+für den Zugang zu den erwähnten Interoperabilitätsinformationen und deren Nutzung
+verlangt.
+
+139    Insoweit ist darauf hinzuweisen, dass ein Unternehmen, das über ein Recht des geistigen
+
+Eigentums verfügt und den Zugang zu Erzeugnissen oder Dienstleistungen verweigert, die für
+eine bestimmte Tätigkeit unerlässlich sind, bereits dann missbräuchlich handelt, wenn drei
+Bedingungen kumulativ erfüllt sind: Die  Weigerung muss das Auftreten eines neuen
+Erzeugnisses verhindern, nach dem eine potenzielle Nachfrage der Verbraucher besteht, sie
+darf nicht gerechtfertigt sein und sie muss geeignet sein, jeglichen Wettbewerb auf einem
+abgeleiteten Markt auszuschließen (Urteil des Gerichtshofs vom 29. April 2004, IMS Health,
+C-418/01, Slg. 2004, I-5039, Randnr. 38).
+
+140    Im vorliegenden Fall wurde  festgestellt,  dass die  oben in Randnr. 139 erwähnten drei
+
+kumulativen Bedingungen erfüllt waren und die Weigerung von Microsoft, Zugang zu den
+Interoperabilitätsinformationen zu gewähren und ihre  Nutzung zu gestatten, daher
+missbräuchlich war (vgl. in diesem Sinne Urteil Microsoft/Kommission, oben in Randnr. 18
+angeführt, Randnrn. 711 und 712).
+
+141    In diesem Zusammenhang musste jede Abhilfemaßnahme, mit der Microsoft gezwungen
+
+werden soll, die Interoperabilitätsinformationen offenzulegen und ihre Nutzung durch andere
+Wirtschaftsteilnehmer zum Zweck der Entwicklung und des Vertriebs von Betriebssystemen
+für Arbeitsgruppenserver zu gestatten, sicherstellen, dass Microsoft keine Gegenleistungen
+erhalten konnte, die mit den Vorteilen, die sie aus der missbräuchlichen Ausnutzung ihrer
+beherrschenden Stellung auf dem Markt für  Betriebssysteme  für Client
+-PCs zog,
+vergleichbar waren.
+
+142    Wenn Microsoft erlaubt wird, Vergütungssätze zu verlangen, die den Wert widerspiegeln,
+
+der sich aus der bloßen Möglichkeit ergibt, mit den Betriebssystemen von Microsoft zu
+interoperieren, d. h. den strategischen Wert der Macht, über die sie auf dem Markt für
+Betriebssysteme für Client-PCs oder für Betriebssysteme für Arbeitsgruppenserver verfügt,
+ist das außerdem so, als ob ihr das Recht eingeräumt wird, die Vorteile des Missbrauchs in
+eine  Vergütung für die Erteilung von Lizenzen umzuwandeln. Die Anerkennung eines
+solches Rechts liefe der Natur der Sache nach dem in Randnr. 1003 der angefochtenen
+Entscheidung genannten Ziel zuwider, nachhaltigen Wettbewerb mit dem Betriebssystem für
+Arbeitsgruppenserver von Microsoft zu ermöglichen, da Microsoft in der Lage wäre, von
+jedem  potenziellen Wettbewerber  prohibitive Vergütungssätze zu fordern. Solche Sätze
+können daher,  wie in den Randnrn. 106 und 107 der  angefochtenen Entscheidung
+angegeben, nicht als angemessen im Sinne der Randnr. 1008 Ziff. ii und des Art. 5 Buchst. a
+der Entscheidung von 2004 betrachtet werden.
+
+143    Wie in Randnr. 118 der angefochtenen Entscheidung festgestellt, ist die Anwendung der
+WSPP-Preisfindungsgrundsätze  (oben in Randnr. 31 angeführt)  – und insbesondere  das
+Kriterium  des  innovativen Charakters der betreffenden Technologien – außerdem ein
+geeigneter Indikator dafür, ob die von Microsoft verlangten Vergütungssätze den
+eigenständigen Wert einer Technologie widerspiegeln und nicht ihren strategischen Wert.
+Der eigenständige Wert von Produkten wie den in Rede stehenden besteht nämlich in ihrem
+innovativen Charakter. Dass diese  Technologien aufgrund der von Microsoft verfolgten
+Politik Geschäftsgeheimnisse gewesen sein sollen, lässt demgegenüber nicht erkennen, dass
+sie außer dem strategischen Wert noch einen anderen Wert haben.
+
+27 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+144    Muss überdies jeglicher strategische  Wert der fraglichen Technologien, wie  er oben in
+
+Randnr. 142 sowie in den Randnrn. 105 und 107 der angefochtenen Entscheidung dargelegt
+worden ist, ausgeschlossen werden (siehe oben in den Randnrn. 29 und 30), dann ist auch
+eine Marktbewertung vergleichbarer Technologien der oben in den Randnrn. 134 und 135
+dargestellten Art zwingend, weil  auch ausgeschlossen werden muss,  dass solche
+Technologien im  Geschäftsverkehr üblicherweise  gegen erheblich niedrigere
+Vergütungssätze, als Microsoft sie fordert, oder sogar kostenlos angeboten werden. Gerade
+eine  solche Methode ermöglicht es im Endeffekt,  zu prüfen,  welchen Wert  die
+Interoperabilitätsinformationen hätten, wenn es keinen beherrschenden
+Wirtschaftsteilnehmer gäbe, wie  ACT dies fordert. Ohne  Innovation hingegen stellt die
+Tatsache, dass etwas geheim ist, für sich allein für einen Lizenznehmer nichts als einen
+strategischen Wert dar, während die Fixkosten für die Entwicklung selbst nach der in einem
+Bericht vom 24. August 2006 geäußerten Ansicht des von Microsoft als Sachverständigen
+benannten Unternehmens  PricewaterhouseCoopers  keine zutreffende Grundlage  für  die
+Bewertung des geistigen Eigentums sind.
+
+145    Folglich genügt die  Anwendung der  WSPP
+
+-Preisfindungsgrundsätze  objektiv und
+
+unabhängig von jeglicher  Vereinbarung zwischen Microsoft und ihren potenziellen
+Vertragspartnern,  um  beurteilen zu können, ob die von Microsoft  verlangten
+Vergütungssätze im Sinne der Randnr. 1008 Ziff. ii  und des  Art. 5 Buchst. a der
+Entscheidung von 2004 angemessen sind.
+
+146    Soweit Microsoft vorträgt, dass die WSPP -Preisfindungsgrundsätze der Verwendung durch
+die Parteien eines möglichen Lizenzvertrags, dem unabhängigen Überwachungsbeauftragten
+und dem High Court of Justice vorbehalten seien,  die  Kommission aber  hiervon
+ausgenommen sei, kann dem nicht gefolgt werden. Die Kommission ist nämlich durch nichts
+daran gehindert, die fraglichen Grundsätze heranzuziehen, wenn sie der Durchführung von
+Art. 5 Buchst. a der Entscheidung von 2004 dienlich sind.
+
+147    Diese Feststellung beantwortet jedoch noch nicht,  ob die betreffenden Grundsätze
+
+zutreffend angewandt wurden, was Microsoft ebenfalls bestreitet. Insoweit ist zu betonen,
+dass Microsoft nicht die Beurteilung des innovativen Charakters einer oder mehrerer von
+den 166 für nicht innovativ befundenen Technologien durch die Kommission beanstandet,
+sondern sich generell gegen die Definition der Kriterien wendet, anhand deren geprüft
+wurde, ob eine Innovation vorliegt.
+
+148    Hierzu ist zunächst zu bemerken,  dass,  wie aus Randnr. 138 der  angefochtenen
+
+Entscheidung hervorgeht,  die  Kommission zur  Prüfung des innovativen Charakters der
+betreffenden Technologien die Begriffe der Neuheit und der Nichtoffensichtlichkeit „als
+geläufige Begriffe im Bereich des gewerblichen Rechtsschutzes“ herangezogen hat. Diesem
+Zitat ist zu entnehmen,  dass die  Kommission den Begriffen der  Neuheit und der
+Nichtoffensichtlichkeit die Bedeutung beigemessen hat, die sie im Bereich des gewerblichen
+Rechtsschutzes haben.
+
+149    In diesem Zusammenhang ist zu bemerken, dass die Kommission gemäß Randnr. 138 der
+angefochtenen Entscheidung als „neu“ eine Technologie definiert hat, die nicht zum Stand
+der Technik gehört, und als „nicht offensichtlich“ eine Technologie, die für einen Fachmann
+nicht naheliegend ist.  Diese  Definitionen entsprechen denen der Neuheit und der
+erfinderischen Tätigkeit in Art. 54 bzw. Art. 56 des Übereinkommens über die  Erteilung
+europäischer Patente vom 5. Oktober 1973 in geänderter Fassung. Da das in einer Prüfung
+des  innovativen Charakters  der  Technologien von Microsoft bestehende Vorgehen der
+Kommission als legitim anerkannt wird (vgl.  oben, Randnrn. 133 bis 146),  kann der
+
+28 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Kommission nicht das Recht abgesprochen werden,  den innovativen Charakter  dieser
+Technologien unter Bezugnahme  auf dessen Bestandteile  zu untersuchen, nämlich die
+Neuheit  und die – unter den Begriff der erfinderischen Tätigkeit fallende  –
+Nichtoffensichtlichkeit. Zudem erklärt Microsoft in einem Schreiben vom 4. Mai 2006, dass
+die Innovation nach den Kriterien der Neuheit und der erfinderischen Tätigkeit beurteilt
+werden müsse, auch wenn die Beurteilung des innovativen Charakters ihrer Ansicht nach
+das  Recht auf Wahrung des  Geschäftsgeheimnisses nicht verdrängen kann. In einem
+Schreiben vom 31.  Juli 2006 (oben in Randnr. 47 angeführt)  hat Microsoft außerdem
+anerkannt, dass das Kriterium der Innovation als „den strategischen Wert zurückhaltender
+Filter“ die Bedeutung habe, die ihm im Patentrecht beigemessen werde, und ihre Berichte
+über die Innovation unter Zugrundelegung dieser Definition einreicht.
+
+150    Wenn im Rahmen der vorliegenden Rechtssache der innovative Charakter der
+
+Technologien, die Gegenstand der angefochtenen Entscheidung sind, unter Bezugnahme auf
+die Neuheit und die erfinderische Tätigkeit beurteilt wird, hat dies, anders als Microsoft
+meint, nicht zur Folge, dass die Rechte am geistigen Eigentum, Geschäftsgeheimnisse oder
+andere vertrauliche Informationen pauschal entwertet werden, und erst recht nicht, dass
+dieser  Charakter generell eine  Voraussetzung dafür  wird,  dass ein Produkt oder  eine
+Information unter ein solches Recht fällt oder ein Geschäftsgeheimnis darstellt. Aus den
+vorstehenden Erwägungen ergibt sich nämlich, dass eine derartige Prüfung die Anwendung
+von Art. 5 Buchst. a der Entscheidung von 2004 ermöglichen soll, der, verstanden im Licht
+der Randnrn. 1003 und 1008 Ziff. ii derselben Entscheidung, im Hinblick auf den hier
+festgestellten Missbrauch jegliche von Microsoft verlangte  Vergütung verbietet, die  den
+strategischen Wert der betreffenden Technologien widerspiegelt. Dieses Ziel wird in den
+WSPP-Preisfindungskriterien,  die im  Anschluss  an die Verhandlungen zwischen der
+Kommission und Microsoft ausgearbeitet wurden, ausdrücklich erklärt (siehe oben in den
+Randnrn. 25, 31 und 87).
+
+151    Da Microsoft ferner keinen sachgerechteren Gehalt für die Begriffe der Neuheit und der
+
+Nichtoffensichtlichkeit vorgeschlagen hat,  der  ebenfalls geeignet wäre,  jeglichen
+strategischen Wert dieser Technologien auszuschließen, bringt ihre Argumentation keinen
+Fehler zum Vorschein, der die Rechtmäßigkeit der angefochtenen Entscheidung in Frage
+stellt, soweit die Kommission angegeben hat, dass sie die Begriffe der Neuheit und der
+Nichtoffensichtlichkeit herangezogen habe.
+
+152    Auch wenn im Rahmen der Anwendung des  Übereinkommens  über  die Erteilung
+
+europäischer Patente  die  Große  Beschwerdekammer  des  Europäischen Patentamts  der
+Ansicht ist, dass die  Prüfung der Nichtoffensichtlichkeit nur bei Ansprüchen betreffend
+computerimplementierte Programme vorzunehmen sei, die technischen Charakter hätten
+(vgl.  in diesem Sinne  Stellungnahme  G 3/08, ABl. EPA 2011, 1,  Nr. 10.13 der
+Entscheidungsgründe), macht Microsoft zudem nicht geltend, dass es undenkbar sei, die
+Nichtoffensichtlichkeit der  betreffenden Technologien in einem anderen Kontext zu
+beurteilen als dem der Erteilung eines Patents, ohne zuvor ihren technischen Charakter zu
+untersuchen.  Ferner  stellt in rechtlicher  Hinsicht die  Untersuchung des technischen
+Charakters  der Ansprüche betreffend computerimplementierte Programme eine
+Vorgehensweise dar, die dem Verfahren zur Erteilung eines Patents eigen ist, da Programme
+für Datenverarbeitungsanlagen „als solche“ nicht patentfähig sind (vgl. z. B. Art. 52 Abs. 2
+und 3 des Übereinkommens über die Erteilung europäischer Patente).
+
+153    Ebenso wenig Erfolg hat Microsoft mit  ihrem Vorbringen,  dass die Kommission die
+
+Kriterien der Neuheit und der erfinderischen Tätigkeit zu restriktiv und daher sogar dem
+Patentrecht zuwider angewandt habe, so dass „nur echte Pioniererfindungen, die vollständig
+
+29 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+vom Stand der Technik abweichen“, als innovativ eingestuft würden und die Existenz von
+Verweisen auf den Stand der Technik, die sich auf Konzepte bezögen, die den von Microsoft
+angewandten Konzepten ähnelten, mit der Offensichtlichkeit der von der angefochtenen
+Entscheidung erfassten Technologien gleichzusetzen sei (siehe  oben in Randnr. 126).
+Abgesehen von pauschalen Behauptungen trägt Microsoft  nämlich nichts vor, was die
+konkreten Feststellungen zum innovativen Charakter der betreffenden Technologien in Frage
+stellen und es dem Gericht ermöglichen würde, die Begründetheit dieses Vorwurfs zu prüfen.
+
+154    Da sämtliche Technologien, die Microsoft  als innovativ präsentiert hat, eine nach der
+
+anderen untersucht worden sind und die Kommission jede von ihnen auf ihren innovativen
+Charakter geprüft hat, kann Microsoft ferner nicht mit Erfolg geltend machen, dass ihr
+innovativer Charakter wegen einer angeblich fehlerhaften Anwendung der Kriterien der
+Neuheit und der erfinderischen Tätigkeit pauschal verneint worden sei.
+
+155    Das Gleiche  gilt  für die Beurteilung der angeblich innovativen Kombinationen von
+
+Technologien, die jeweils einzeln betrachtet keine erfinderische Tätigkeit erkennen ließen.
+Insoweit wurden den Randnrn. 146 bis 156 der angefochtenen Entscheidung zufolge die von
+Microsoft angeführten Kombinationen von Technologien sehr wohl als solche untersucht
+und für nicht innovativ befunden. Dies wird bestätigt durch die Seiten 1, 5, 8, 13, 21, 22, 29,
+31, 34, 39, 61, 64 und 68 der Tabelle im Anhang zur angefochtenen Entscheidung, aus denen
+hervorgeht, dass die Kommission den innovativen Charakter von 19 Kombinationen von
+Technologien eine nach der anderen geprüft hat. Nach der Darstellung auf diesen Seiten der
+genannten Tabelle in Verbindung mit den Seiten 4, 8, 14, 15, 16, 17, 18, 19, 28, 29, 39, 40,
+41,  43, 58,  66, 70,  111, 120 und 129 des Berichts  des unabhängigen
+Überwachungsbeauftragten vom 8. Juli 2007 und den Seiten 7, 73 und 78 des ebenfalls von
+ihm erstellten Berichts vom 3. März 2007 (oben in Randnr. 52 angeführt), hat Microsoft
+während des Verwaltungsverfahrens weder Einzelheiten genannt noch Beweise oder andere
+Belege vorgelegt, aus denen auf einen innovativen Charakter von 18 der 19 fraglichen
+Kombinationen von Technologien geschlossen werden könnte. Außerdem wird in diesen
+Berichten auch festgestellt,  dass die  Technologien,  aus denen die betreffenden
+Kombinationen bestünden, zum Stand der Technik gehörten. Unter diesen Umständen war es
+an Microsoft,  im Einzelnen anzugeben, warum die  Kombination der  nicht innovativen
+Technologien innovativ sein soll, denn es kann nicht  Aufgabe  des unabhängigen
+Überwachungsbeauftragten oder  der Kommission sein, zu spekulieren, womit Microsoft
+begründen will, dass eine Innovation vorliegt.
+
+156    Wie sich aus Seite 7 der Tabelle im Anhang zur angefochtenen Entscheidung ergibt, hat die
+
+Kommission überdies die Beurteilung des unabhängigen Überwachungsbeauftragten auf
+Seite 32 seines Berichts vom 8. Juli 2007 bestätigt, mit der der innovative Charakter der
+Technologie  „Referral  Management“ anerkannt wird, die  in einer  neuen Kombination
+verschiedener Metriken in einem komplexen Algorithmus besteht.
+
+157    Im Rahmen ihrer Klage  begründet Microsoft nicht, inwiefern die auf die  Berichte des
+
+unabhängigen Überwachungsbeauftragten gestützte Beurteilung des innovativen Charakters
+einer oder mehrerer dieser Kombinationen von Technologien durch die Kommission mit
+konkreten Fehlern behaftet sein soll. Unter diesen Umständen können die – wie oben in
+Randnr. 153 festgestellt – pauschalen Behauptungen zur angeblich punktuellen
+Herangehensweise  der  Kommission mangels konkreter,
+substantiierender Beispiele nur zurückgewiesen werden.
+
+ diese  Behauptungen
+
+158    Soweit  Microsoft  in ihrer Antwort auf eine schriftliche Frage des Gerichts behauptet,
+während des Verwaltungsverfahrens darauf  hingewiesen zu haben,  dass der  innovative
+Charakter der zu den Protokollen „File Replication Service“ und „Directory Replication
+
+30 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Service“ gehörenden Technologien auf der „Ebene“ dieser Protokolle beurteilt werden
+müsse, ist festzustellen, dass, wie den Seiten 13, 21 und 22 der Tabelle im Anhang zur
+angefochtenen Entscheidung zu entnehmen ist, die Kommission den innovativen Charakter
+von sieben Kombinationen von Technologien in diesen Protokollen geprüft hat. Anhand der
+Ausführungen von Microsoft lässt sich jedoch weder nachvollziehen, inwiefern in dieser
+Prüfung nicht auf die von ihr behaupteten Innovationen eingegangen worden sein soll, noch,
+aus welchen konkreten Gründen eine andere Prüfung geboten gewesen wäre.
+
+159    Anders als Microsoft geltend macht (vgl. oben, Randnr. 130), hat die Kommission daher
+
+keinen „fundamentalen Fehler“ begangen, der ihre Untersuchung unabhängig von konkreten
+Beispielen für einen solchen einer Beurteilung anhaftenden Fehler insgesamt wertlos werden
+ließe.
+
+160    Dem  Argument von Microsoft, dass die Kommission gegen die Berechnung von
+
+Vergütungssätzen für im Rahmen anderer Vereinbarungen als der No -Patent-Vereinbarung
+erteilter Lizenzen keine Einwände erhoben habe, woraus folge, dass es Innovationen auf
+weniger „punktuellen“ Ebenen gegeben habe, da die technische Dokumentation im Rahmen
+aller WSPP-Vereinbarungen identisch sei, kann nicht gefolgt werden. Den Randnrn. 132 und
+162 bis 164 der  angefochtenen Entscheidung ist nämlich zu entnehmen, dass die
+Kommission für andere Vereinbarungen als die No
+Anspruch auf  eine  nicht nur symbolische  Vergütung zugestanden hat,  da infolge  der
+fraglichen Vereinbarungen Lizenzen für Patente auf die zur technischen Dokumentation
+gehörende Technologie erteilt werden, und zwar unbeschadet der Gültigkeit der fraglichen
+Patente. Wie oben in Randnr. 121 ausgeführt, schließt der Begriff „Microsoft licensed
+intellectual property“ im Rahmen der No -Patent-Vereinbarung das Know-how, Betriebs -
+und Geschäftsgeheimnisse, vertrauliche Informationen und Urheberrechte mit ausdrücklicher
+Ausnahme aller  Rechte  ein,  für  die  ein Patent  oder eine anhängige  Patentanmeldung
+existiert.
+
+-Patent-Vereinbarung Microsoft einen
+
+161    Aus dem Vorstehenden ergibt sich, dass es Microsoft nicht gelungen ist, die Feststellungen
+der Kommission hinsichtlich des fehlenden innovativen Charakters der Technologien und der
+Kombinationen von Technologien zu erschüttern.  Im Übrigen genügt die  allgemeine
+Bezugnahme auf Unterlagen, die im Verwaltungsverfahren eingereicht worden seien und in
+denen die von der Kommission insoweit begangenen Fehler offengelegt worden seien (vgl.
+oben, Randnr. 128), hierfür offensichtlich nicht.
+
+162    Soweit Microsoft eine angeblich unzureichende Begründung in Bezug auf die Prüfung des
+
+innovativen Charakters der fraglichen Technologien rügt (vgl. oben, Randnr. 129), ergibt
+sich aus  der oben in Randnr. 99 angeführten Rechtsprechung, dass die Kommission
+verpflichtet ist, klar und verständlich darzulegen, aus welchen Gründen sie der Ansicht ist,
+dass die jeweilige Technologie innovativ ist oder nicht. Dieses Erfordernis bedeutet nicht,
+dass die Kommission über die Umstände, auf die sie ihre Beurteilung stützt, hinaus darlegen
+müsste,  warum im Verwaltungsverfahren dargelegte Umstände  oder  Argumente ihre
+Schlussfolgerung nicht in Frage stellen. Die Frage, ob in Anbetracht dieser Umstände oder
+Argumente die Folgerungen der Kommission für unhaltbar zu erklären sind, betrifft die
+Begründetheit der angefochtenen Entscheidung, wobei es Microsoft freisteht, sie vor dem
+Gericht geltend zu machen und auf dieser Grundlage die Nichtigerklärung der angefochtenen
+Entscheidung zu beantragen.
+
+163    Das  Argument von Microsoft,  dass die Kommission und der unabhängige
+
+Überwachungsbeauftragte  den innovativen Charakter  der  Technologien unter
+Berücksichtigung des Standes der Technik im Jahr 2007 untersucht hätten und nicht in dem
+
+31 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Zeitpunkt, in dem sie die Erteilung eines Patents beantragt habe (vgl. oben, Randnr. 129), ist
+sachlich unzutreffend.  Denn nach Fußnote 149 der  angefochtenen Entscheidung haben
+sowohl die Kommission als auch der unabhängige Überwachungsbeauftragte auf das von
+Microsoft verlangte Datum  abgestellt. Microsoft trägt jedoch nichts vor, was diese
+Feststellung in Frage stellen könnte, und nennt keine konkreten Fälle, in denen auf einen
+späteren Stand der Technik verwiesen würde als den, der an dem von Microsoft jeweils
+verlangten Datum bestanden hat.
+
+164    Daher ist der dritte Klagegrund zurückzuweisen.
+
+ Zum vierten Klagegrund: Rechtswidrige Heranziehung der Berichte des unabhängigen
+Überwachungsbeauftragten
+
+ Vorbringen der Beteiligten
+
+165    Microsoft trägt vor, infolge der Nichtigerklärung von Art. 7 der Entscheidung von 2004
+durch das Urteil Microsoft/Kommission (oben in Randnr. 18 angeführt) seien sämtliche
+Handlungen des unabhängigen Überwachungsbeauftragten rechtswidrig, wie  etwa  die
+Anforderung und Entgegennahme von Dokumenten und anderen Materialien, die
+unmittelbar von Microsoft stammten, und die Erstellung der Berichte auf der Grundlage
+dieser Dokumente und Materialien.  Im vorliegenden Fall  habe die Kommission die
+angefochtene  Entscheidung in vollem Umfang auf  die Berichte  des unabhängigen
+Überwachungsbeauftragten gestützt,  der  Beweisstücke  aufgrund einer  rechtswidrigen
+Ermächtigung erhalten habe.  Die  Kommission habe  somit nicht alle  erforderlichen
+Maßnahmen ergriffen, um dem Urteil Microsoft/Kommission (oben in Randnr. 18 angeführt)
+nachzukommen.
+
+166    Unabhängig von der Frage, ob der unabhängige Überwachungsbeauftragte  von den
+
+Befugnissen Gebrauch gemacht habe, die ihm rechtswidrig übertragen worden seien, beruhe
+die Entscheidung vom 28. Juli 2005 (oben in Randnr. 14 angeführt) zweifellos auf der vom
+Gericht beanstandeten Delegation, so dass die Kommission die angefochtene Entscheidung
+nicht auf diese Berichte habe stützen dürfen.
+
+167    Unter diesen Umständen seien die Fragen, ob Microsoft den Ersuchen des unabhängigen
+
+Überwachungsbeauftragten habe  Folge  leisten müssen und ob die Kommission vom
+unabhängigen Überwachungsbeauftragten oder von Microsoft rechtmäßig Zugang zu den
+fraglichen Informationen erhalten habe,  ohne  Belang,  da  der  unabhängige
+Überwachungsbeauftragte im Rahmen der Befugnisse gehandelt habe, die ihm von der
+Kommission übertragen worden seien.
+
+168    Da TAEUS, wie sich auch aus dem Anhang zur angefochtenen Entscheidung ergebe, nicht
+dieselben Aufgaben wahrgenommen habe wie der unabhängige Überwachungsbeauftragte,
+sei schließlich deren Beteiligung in diesem Zusammenhang nicht von Bedeutung.
+
+169    Die Kommission macht mit Unterstützung ihrer Streithelfer geltend, dass dieser Klagegrund
+
+unbegründet sei.
+
+ Würdigung durch das Gericht
+
+170    Art. 7 der Entscheidung von 2004 wurde für nichtig erklärt, soweit Microsoft aufgegeben
+wird, einen Vorschlag für die Schaffung eines Mechanismus zu unterbreiten, zu dem die
+Einsetzung eines unabhängigen Überwachungsbeauftragten gehören muss, der befugt ist,
+unabhängig von der  Kommission Zugang zur  Unterstützung,  zu Informationen,  zu
+
+32 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Unterlagen, zu den Geschäftsräumen und zu den Mitarbeitern von Microsoft sowie zum
+Quellcode der einschlägigen Microsoft-Produkte zu erhalten (vgl. oben, Randnr. 18).
+
+171    Außerdem ist den Randnrn. 1268 und 1271 des Urteils Microsoft/Kommission (oben in
+
+ 18 angeführt)  zu entnehmen, dass die auf  den unabhängigen
+
+Randnr.
+Überwachungsbeauftragten übertragenen und oben in Randnr. 170 beschriebenen Rechte
+viel weiter gehen, als wenn die Kommission ihren eigenen Sachverständigen eingesetzt hätte,
+da  Art. 7 der Entscheidung von 2004 dem  unabhängigen Überwachungsbeauftragten
+Befugnisse verleiht, die nur die Kommission ausüben durfte.
+
+172    Anders  als Microsoft meint, ist  die  Tatsache, dass Randnr. 33 und Art. 3 Nr. 2 der
+Entscheidung vom 28. Juli 2005 (oben in Randnr. 14 angeführt)  auf die  fraglichen
+Befugnisse  des unabhängigen Überwachungsbeauftragten gestützt werden,  nicht von
+Bedeutung, da dieser Umstand allenfalls die Rechtmäßigkeit  dieser  Entscheidung
+beeinträchtigen könnte,  die an Microsoft gerichtet war und gegen die  sie keinen
+Rechtsbehelf eingelegt hat.
+
+173    Zur Frage, ob der unabhängige Überwachungsbeauftragte aufgrund von Art. 3 Nr. 2 der
+
+Entscheidung vom 28. Juli 2005 Ersuchen an Microsoft gerichtet hat, macht die Kommission
+geltend, dass dieser weder von der betreffenden Befugnis Gebrauch gemacht noch den von
+Microsoft erhaltenen Quellcode für  das  Abfassen seiner Berichte verwendet habe.
+Außerdem sei  die gesamte Korrespondenz zwischen Microsoft und dem  unabhängigen
+Überwachungsbeauftragten im Einklang mit Art. 4 Nr. 1 der Entscheidung vom 28. Juli 2005
+auf freiwilliger Basis geführt worden.
+
+174    Hierzu ist festzustellen, dass der unabhängige Überwachungsbeauftragte nach Art. 3 Nr. 2
+der Entscheidung vom 28. Juli 2005 u. a. Auskunftsersuchen an Microsoft richten kann. Des
+Weiteren steht es  Microsoft gemäß Art. 4 Nr. 1 derselben Entscheidung frei,  auf die
+Ersuchen des unabhängigen Überwachungsbeauftragten zu antworten, während sich die
+Kommission das Recht vorbehält, ihre Befugnisse aufgrund der Verordnung Nr. 1/2003
+auszuüben, falls auf freiwilliger Basis keine Antwort erteilt wird.
+
+175    Demnach wird Art. 3 Nr. 2 der Entscheidung vom 28. Juli 2005 in Verbindung mit ihrem
+Art. 4 Nr. 1 durch die teilweise Nichtigerklärung von Art. 7 der Entscheidung von 2004 in
+Nr. 1 erster Gedankenstrich des Tenors des Urteils Microsoft/Kommission (oben in Randnr.
+18 angeführt) nicht berührt, da  diese  Bestimmungen es dem unabhängigen
+Überwachungsbeauftragten lediglich ermöglichen, in unmittelbaren Kontakt zu Microsoft zu
+treten, um seine Aufgabe zu erledigen, ohne ihm die Befugnis zu übertragen, eine
+Zwangsmaßnahme zu treffen; Letzteres ist ausdrücklich der Kommission vorbehalten.
+
+176    Zudem hat  der unabhängige Überwachungsbeauftragte die von Microsoft  erlangten
+
+Informationen im vorliegenden Fall unbestritten verwendet, um Berichte zu erstellen, auf
+deren Grundlage die  Kommission die Feststellungen in der angefochtenen Entscheidung
+getroffen hat.
+
+177    Zu ergänzen ist noch, dass die Kommission den einzig möglichen Weg gewählt hat, um im
+
+Rahmen von Art. 233 EG die Situation an das Urteil Microsoft/Kommission (oben in Randnr.
+18 angeführt)  anzupassen,  und zwar, indem sie  gemäß Art. 18 Abs. 2 der Verordnung
+Nr. 1/2003 von Microsoft verlangt hat, der  Kommission alle Dokumente und anderen
+Materialien zu übermitteln, zu denen der unabhängige Überwachungsbeauftragte unmittelbar
+Zugang gehabt hatte.
+
+178    Deshalb ist der vierte Klagegrund zurückzuweisen.
+
+33 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+ Zur fünften Klagegrund: Verletzung der Verteidigungsrechte
+
+ Vorbringen der Beteiligten
+
+179    Microsoft macht geltend, dass die Zusendung der Mitteilung der Beschwerdepunkte am 1.
+März 2007, d. h. sieben Monate vor dem Ende des Zeitraums, den die Kommission für die
+Feststellung der Nichterfüllung des Art. 5 der Entscheidung von 2004 berücksichtigt habe
+(22. Oktober 2007), Microsoft daran gehindert habe, ihren Standpunkt zu allen ihr
+entgegengehaltenen Umständen darzulegen.  Denn sowohl die Mitteilung der
+Beschwerdepunkte als auch das Schreiben zum Sachverhalt enthielten nur  vorläufige
+Beurteilungen im  Sinne von Art. 5 Buchst. d der Entscheidung von 2004 und gäben
+Microsoft keine  Gelegenheit, ihre Ansicht  zu sämtlichen für die  Verhängung des
+Zwangsgelds berücksichtigten Tatsachen vorzubringen, mit dem ein anderes Ziel verfolgt
+werde als mit einer Geldbuße. So habe Microsoft nicht zur Begrenzung des Gegenstands der
+angefochtenen Entscheidung Stellung nehmen können, die sich allein auf die Vereinbarkeit
+mit Art. 5 Buchst. a  der  Entscheidung von 2004 nur  unter  dem  Aspekt der
+No-Patent-Vereinbarung konzentriert habe und zeige, dass die Kommission den innovativen
+Charakter von drei weiteren Technologien im Vergleich zum Standpunkt in der Mitteilung
+der Beschwerdepunkte eingeräumt habe. Diese Umstände seien entscheidend im Hinblick
+auf Art. 24 Abs. 2 der Verordnung Nr. 1/2003. Ferner habe Microsoft weder vortragen
+können, dass  die Vereinbarkeit  ihres Verhaltens  mit  den Verpflichtungen aus der
+Entscheidung von 2005 zu einer erheblichen Herabsetzung des Zwangsgelds hätte führen
+müssen,  noch die  Dauer des  von der  Kommission gewählten Zeitraums kommentieren
+können. Schließlich habe Microsoft  keine Möglichkeit gehabt, auf  bestimmte  sachliche
+Fehler der Kommission hinzuweisen, wie etwa, dass das Zwangsgeld bis zum 22. Oktober
+2007 berechnet worden sei, obwohl Microsoft den für angemessen befundenen Vorschlag
+am 9. Oktober 2007 vorgelegt habe.
+
+180    Dadurch habe die Kommission zudem die Rolle des Beratenden Ausschusses für Kartell
+und Monopolfragen untergraben, den sie nach Art. 14 der Verordnung Nr. 1/2003 hören
+müsse.
+
+-
+
+181    Die Kommission bestreitet die Begründetheit dieses Klagegrundes.
+
+ Würdigung durch das Gericht
+
+182    Nach der Rechtsprechung müssen die  Beschwerdepunkte in der  Mitteilung der
+
+Beschwerdepunkte, sei es auch nur in gedrängter Form, so klar abgefasst sein, dass die
+Betroffenen tatsächlich erkennen können, welches Verhalten ihnen die Kommission zur Last
+legt. Nur unter dieser Voraussetzung kann die Mitteilung der Beschwerdepunkte nämlich den
+ihr durch die Gemeinschaftsverordnungen zugewiesenen Zweck erfüllen, der darin besteht,
+den Unternehmen alle erforderlichen Angaben zur Verfügung zu stellen, damit sie  sich
+sachgerecht verteidigen können, bevor die Kommission eine endgültige Entscheidung erlässt
+(vgl. Urteil des Gerichts vom 15. März 2006, BASF/Kommission, T-15/02, Slg. 2006, II-497,
+Randnr. 46 und die dort angeführte Rechtsprechung).
+
+183    Diesem Erfordernis ist Genüge getan, wenn den Betroffenen in der Entscheidung keine
+
+anderen als die in der Mitteilung der Beschwerdepunkte genannten Zuwiderhandlungen zur
+Last gelegt und nur Tatsachen berücksichtigt werden, zu denen sie sich äußern konnten (vgl.
+Urteil BASF/Kommission,  oben in Randnr. 182 angeführt, Randnr. 47 und die dort
+angeführte Rechtsprechung).
+
+184    Außerdem stellt die Mitteilung der Beschwerdepunkte gegenüber der zum Abschluss des
+
+34 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Verwaltungsverfahrens ergehenden Entscheidung eine vorbereitende  Verfahrenshandlung
+dar. Bis zum Erlass  einer  endgültigen Entscheidung kann daher die Kommission in
+Anbetracht  insbesondere  der schriftlichen oder mündlichen Äußerungen der Beteiligten
+entweder einzelne oder auch sämtliche bis dahin gegen diese erhobenen Beschwerdepunkte
+fallen lassen und damit ihre Auffassung zugunsten der Beteiligten ändern oder umgekehrt
+beschließen,  neue  Beschwerdepunkte  hinzuzufügen,  sofern sie  den betreffenden
+Unternehmen Gelegenheit gibt, hierzu Stellung zu nehmen (Urteil des Gerichts vom 30.
+September  2003, Atlantic Container Line  u. a./Kommission,  T
+T-214/98, Slg. 2003, II-3275, Randnrn. 114 und 115).
+
+-191/98,   T-212/98 bis
+
+185    Zur Ausübung der Verteidigungsrechte in Bezug auf die Verhängung von Geldbußen geht
+
+aus einer ständigen Rechtsprechung hervor, dass die Kommission ihre Verpflichtung zur
+Wahrung des Anhörungsrechts der Unternehmen erfüllt, wenn sie  in der Mitteilung der
+Beschwerdepunkte  ausdrücklich darauf hinweist,  dass sie  prüfen wird,  ob gegen die
+betreffenden Unternehmen Geldbußen festzusetzen sind, und die für die etwaige Festsetzung
+einer Geldbuße wesentlichen tatsächlichen und rechtlichen Gesichtspunkte wie Schwere und
+Dauer der vermuteten Zuwiderhandlung sowie den Umstand anführt, ob diese vorsätzlich
+oder fahrlässig begangen wurde. Damit macht sie gegenüber den Unternehmen die Angaben,
+die  diese  für  ihre  Verteidigung nicht nur gegen die  Feststellung der Zuwiderhandlung,
+sondern auch gegen die Festsetzung einer Geldbuße benötigen (vgl.  Urteil
+BASF/Kommission, oben in Randnr. 182 angeführt, Randnr. 48 und die dort angeführte
+Rechtsprechung).
+
+186    Wenn schließlich die Kommission in der Mitteilung der Beschwerdepunkte oder
+
+irgendeinem anderen ihr nachfolgenden Dokument, mit dem den beschuldigten Unternehmen
+die Möglichkeit  gegeben werden soll, tatsächlich in Erfahrung zu bringen, welche
+Verhaltensweisen ihnen vorgeworfen werden, angibt, dass die Zuwiderhandlung noch nicht
+beendet sei, darf sie für die Bemessung der Geldbuße die Zeit berücksichtigen, die zwischen
+der Mitteilung der Beschwerdepunkte und dem Erlass der Entscheidung verstrichen ist, mit
+der  das Verwaltungsverfahren beendet wird, sofern sie  nur  diejenigen Tatsachen
+berücksichtigt, zu denen die Betroffenen die Gelegenheit hatten, sich zu äußern (vgl. in
+diesem Sinne Urteil des Gerichts vom 15. März 2000, Cimenteries CBR u. a./Kommission,
+T-25/95, T-26/95, T-30/95 bis T-32/95, T-34/95 bis T-39/95, T-42/95 bis T-46/95, T-48/95,
+T-50/95 bis T-65/95, T-68/95 bis T-71/95, T-87/95, T-88/95, T-103/95 und T -104/95, Slg.
+2000, II-491, Randnrn. 575 und 576).
+
+187    Aus den oben in Randnr. 94 dargelegten Gründen gelten die vorstehenden Erwägungen in
+
+vollem Umfang im Zusammenhang mit den nach Art. 24 der  Verordnung Nr. 1/2003
+verhängten Zwangsgeldern. Außerdem handelt es sich, anders als Microsoft meint, bei der
+Mitteilung der Beschwerdepunkte und dem Schreiben zum Sachverhalt um Mitteilungen im
+Sinne von Art. 27 Abs. 1 der Verordnung Nr. 1/2003 und nicht um vorläufige Beurteilungen
+im Sinne von Art. 5 Buchst. d der Entscheidung von 2004 (oben in Randnr. 9 angeführt).
+
+188    Im vorliegenden Fall ist den Randnrn. 267 und 276 der Mitteilung der Beschwerdepunkte zu
+
+entnehmen, dass die Kommission der Ansicht war, dass das Verhalten von Microsoft am 1.
+März 2007 nicht die Verpflichtungen aus Art. 5 Buchst. a  der Entscheidung von 2004
+erfüllte, und dass sie beabsichtigte, die endgültige Höhe des Zwangsgelds für den Zeitraum
+vom 16.  Dezember 2005 bis  zum Tag des Erlasses  der endgültigen Entscheidung
+festzusetzen.
+
+189    Zudem geht aus dem dritten Absatz des Schreibens zum Sachverhalt und Randnr. 54 seines
+
+Anhangs I  hervor,  dass nach Auffassung der  Kommission ihre  Beschwerdepunkte  im
+
+35 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Hinblick auf die am 21. Mai 2007 vorgelegte Vergütungsregelung (vgl. oben, Randnrn. 24
+und 33) gültig blieben.
+
+190    Da sich das Microsoft aufgrund der angefochtenen Entscheidung zur Last gelegte Verhalten
+
+nicht von demjenigen unterscheidet, das in der Mitteilung der Beschwerdepunkte und dem
+Schreiben zum Sachverhalt  beschrieben wird, ist  daher festzustellen, dass die
+Verteidigungsrechte von Microsoft insoweit nicht verletzt worden sind.
+
+191    Zu dem Umstand,  dass die  Kommission den Gegenstand ihrer  Untersuchung auf  die
+No-Patent-Vereinbarung begrenzt und nach der  Mitteilung der  Beschwerdepunkte  den
+innovativen Charakter von sieben Technologien eingeräumt hat, genügt die Feststellung, dass
+eine Ergänzung der Mitteilung der Beschwerdepunkte nur dann erforderlich ist, wenn sich
+die  Kommission aufgrund des  Ermittlungsergebnisses  veranlasst sieht,  den betroffenen
+Unternehmen neue  Handlungen zur Last zu legen oder den Nachweis bestrittener
+Zuwiderhandlungen auf eine erheblich geänderte Grundlage zu stellen, und nicht, wenn die
+Kommission ihrer  Pflicht nachkommt,  Beschwerdepunkte fallen zu lassen,  die  sich im
+Hinblick auf die Antworten auf die Mitteilung der Beschwerdepunkte als nicht ausreichend
+begründet erwiesen haben (vgl. in diesem Sinne Urteil des Gerichtshofs vom 7. Januar 2004,
+Aalborg Portland u. a./Kommission,  C -204/00 P,  C -205/00 P,  C -211/00 P,  C -213/00 P,
+C-217/00 P und C-219/00 P, Slg. 2004, I-123, Randnrn. 67 und 192).
+
+192    Was den sachlichen Fehler betrifft, den Microsoft der Kommission nicht habe mitteilen
+
+können (vgl. oben, Randnr. 179 a. E.), ist festzustellen, dass sich dieser Fehler nie ausgewirkt
+hat. Aufgrund der Pflicht von Microsoft, ihren potenziellen Wettbewerbern angemessene
+Vergütungssätze  vorzuschlagen (vgl.  oben, Randnr. 114), konnte  nämlich nur das
+tatsächliche Angebot dieser Sätze  die  Zuwiderhandlung beenden, während die  bloße
+Mitteilung von Vergütungssätzen an die  Kommission zum Zweck der  Prüfung ihrer
+Angemessenheit nicht den Verpflichtungen aus Art. 5 Buchst. a der Entscheidung von 2004
+genügte.
+
+193    Schließlich ist einem Schreiben vom 15. November 2007 zu entnehmen, dass der Beratende
+
+Ausschuss für Kartell -  und Monopolfragen die Mitteilung der  Beschwerdepunkte, das
+Schreiben zum Sachverhalt und die  Antworten von Microsoft zu diesen Dokumenten
+erhalten hat, so dass er von den Tatsachen, die Microsoft zur Last gelegt wurden, Kenntnis
+nehmen konnte.
+
+194    Der fünfte Klagegrund ist daher zurückzuweisen.
+
+ Zum sechsten Klagegrund:  Fehlende Rechtsgrundlage für die Verhängung eines
+Zwangsgelds, das außerdem überhöht und unverhältnismäßig sei
+
+ Vorbringen der Beteiligten
+
+195    Microsoft macht erstens geltend, dass die Kommission kein Zwangsgeld gegen sie habe
+
+verhängen dürfen, ohne zuvor genau definiert zu haben, wie Microsoft sich hätte verhalten
+müssen, um der Entscheidung von 2004 nachzukommen. Außerdem könne Microsoft nicht
+zur Erfüllung von Art. 5 Buchst. a dieser Entscheidung verpflichtet gewesen sein, bevor das
+in Buchst. d derselben Bestimmung beschriebene Verfahren abgeschlossen gewesen sei.
+
+196    Zweitens  habe die Kommission mit  der  angefochtenen Entscheidung Microsoft nur
+hinsichtlich derjenigen Vergütungssätze einen Verstoß zur Last gelegt, die sich auf die
+No-Patent-Vereinbarung bezögen und als Ausgangspunkt für Verhandlungen vorgeschlagen
+
+36 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+worden seien. Es sei jedoch absurd, einer WSPP -Vereinbarung Vorrang zu geben, obwohl
+bei allen Vereinbarungen angenommen worden sei, dass sie für die Wettbewerber von
+Microsoft unerlässliche Informationen beträfen.
+
+197    Drittens gehe aus der Entscheidung von 2006 hervor, dass die Kommission 75 % des
+
+Höchstbetrags des Zwangsgelds für die Verpflichtung von Microsoft berechnet habe, eine
+klare und vollständige Fassung der Interoperabilitätsinformationen vorzulegen, und 25 % für
+die Verpflichtung, angemessene und nicht diskriminierende Vergütungssätze vorzuschlagen.
+Indem die Kommission im vorliegenden Fall rund 60 % des Höchstbetrags des Zwangsgelds
+wegen Verletzung des ersten Teils der an zweiter Stelle genannten Verpflichtung verhängt
+habe, sei sie jedoch unerklärlicherweise von ihrer ursprünglichen Gewichtung abgegangen
+und habe dadurch gegen den Grundsatz des Vertrauensschutzes verstoßen. Außerdem habe
+die Kommission weder die Methode zur Berechnung des täglichen Zwangsgelds noch die
+Grundsätze  erläutert, nach denen sie die Ermäßigungen berechnet habe, so dass die
+angefochtene Entscheidung insoweit unzureichend begründet sei. Daraus ergebe sich zudem,
+dass  die  Kommission in Wirklichkeit  keine kohärente Gewichtung der verschiedenen
+Formen von Verstößen nach ihrer Bedeutung vorgenommen habe.
+
+198    Viertens führt Microsoft aus, dass von den 488 Tagen, die vom Zwangsgeld abgedeckt
+seien, 306 der Prüfung der Vorschläge  von Microsoft durch die  Kommission gewidmet
+worden seien, was Zweifel an deren Standpunkt begründe, wonach offensichtlich sei, welche
+Maßnahmen Microsoft hätte ergreifen müssen,  und die Unfairness  des verhängten
+Zwangsgelds belege.
+
+199    Fünftens wiederholt Microsoft, unterstützt von ACT, dass sie unter Berücksichtigung der
+
+Weigerung der Kommission, ihr durch Angabe der angemessenen Höhe der Vergütungssätze
+substanziell zu helfen, alle ihr zur Verfügung stehenden Maßnahmen ergriffen habe, um der
+Entscheidung von 2004 nachzukommen.
+
+200    Sechstens sei das Zwangsgeld 40 mal so hoch wie die Vergütung,  auf  die  Microsoft
+
+Anspruch gehabt hätte, wenn alle ihre Wettbewerber No -Patent-Vereinbarungen zu den von
+der Kommission für unangemessen befundenen Sätzen geschlossen hätten, und gehe weit
+über alle Geldbußen hinaus, die in letzter Zeit wegen Verletzung der Wettbewerbsregeln
+verhängt worden seien.
+
+201    Siebtens habe die Kommission unberücksichtigt gelassen, dass Microsoft schließlich der
+Entscheidung von 2004 nachgekommen sei, und es unterlassen, aus diesem Grund gemäß
+Art. 24 Abs. 2 der Verordnung Nr. 1/2003 das Zwangsgeld herabzusetzen.
+
+202    Achtens schließlich wiederholt Microsoft, dass der Zeitraum der Zuwiderhandlung am 9.
+
+Oktober 2007 geendet habe (vgl. oben, Randnr. 179).
+
+203    Die Kommission trägt vor,  dass sich das Zwangsgeld für  die  488 Tage, die  von der
+
+angefochtenen Entscheidung erfasst seien, auf 1,423 Milliarden Euro hätte belaufen können.
+Da  erstens die  von Microsoft am 22.  Oktober 2007 beschlossene  Regelung keinen
+Einwänden hinsichtlich der Angemessenheit der darin enthaltenen Vergütungssätze begegne,
+zweitens Microsoft seit 21. Mai 2007 erheblich niedrigere Sätze angewandt habe und drittens
+die  angefochtene  Entscheidung nur die  No -Patent-Vereinbarung betreffe, habe sich das
+verhängte Zwangsgeld auf rund 63 % des Höchstbetrags  des Zwangsgelds belaufen.
+Allerdings betreffe die Ermäßigung auch den Zeitraum vor dem 21. Mai 2007, habe sich aber
+nicht auf den gesamten betroffenen Zeitraum zu erstrecken. Das Zwangsgeld setze sich
+zusammen aus 2 Mio. Euro pro Tag für den Zeitraum vom 21. Juni 2006 bis zum 20. Mai
+
+37 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+2007 und 1,5 Mio. Euro pro Tag für den Zeitraum vom 21. Mai bis zum 21. Oktober 2007.
+Nach ständiger Rechtsprechung sei Art. 253 EG keine Verpflichtung zu entnehmen, in der
+Entscheidung der Kommission Zahlenangaben zur Berechnung einer Geldbuße machen; die
+gleiche Regel gelte für Zwangsgelder. Unter diesen Umständen enthielten die Randnrn. 281
+bis 299 der angefochtenen Entscheidung insoweit eine angemessene Begründung.
+
+204    Im  Übrigen bestreiten die Kommission und die sie unterstützenden Streithelfer die
+
+Begründetheit des Vorbringens von Microsoft.
+
+ Würdigung durch das Gericht
+
+205    Das oben in Randnr. 195 erläuterte erste Argument von Microsoft deckt sich mit dem ersten
+
+Klagegrund und ist daher aus den oben in den Randnrn. 82 bis 97 dargelegten Gründen
+zurückzuweisen. Soweit Microsoft vorträgt, dass sie nicht zur Erfüllung von Art. 5 Buchst. a
+der Entscheidung von 2004 verpflichtet gewesen sein könne, bevor das in Art. 5 Buchst. d
+beschriebene  Verfahren abgeschlossen gewesen sei,  genügt  die  Feststellung, dass diese
+Herangehensweise Microsoft ein Vetorecht hinsichtlich der Durchführung der Entscheidung
+von 2004 gäbe. Microsoft könnte nämlich schon dadurch, dass sie nicht ihre – im Übrigen
+eindeutig andere – Verpflichtung aus Art. 5 Buchst. d der Entscheidung von 2004 erfüllt, die
+Bestimmungen des Art. 5 Buchst. a unerfüllbar werden lassen.
+
+206    Zu den Ausführungen von Microsoft betreffend die Ausübung der unbeschränkten
+
+Nachprüfungsbefugnis durch das Gericht ist Folgendes festzustellen.
+
+207    Zu dem oben in Randnr. 196 dargelegten Argument von Microsoft ist zu bemerken, dass die
+Kommission die Begrenzung des Gegenstands ihrer Untersuchung gebührend berücksichtigt
+hat, indem sie  das Zwangsgeld deutlich unterhalb der Höhe festgesetzt hat, die in der
+Entscheidung von 2006 vorgesehen war (vgl. oben, Randnr. 203).
+
+208    Im  Hinblick auf die Bedeutung der  No
+
+-Patent-Vereinbarung in Fällen, in denen die
+
+potenziellen Vertragspartner von Microsoft nicht an Lizenzen für Patente interessiert waren,
+spricht zudem, wie auch die Kommission und SIIA ausführen, nichts dagegen, die endgültige
+Höhe  des Zwangsgelds auf  einem Niveau wie  dem des Zwangsgelds festzusetzen, das
+aufgrund der angefochtenen Entscheidung verhängt worden ist.
+
+209    Auch wenn Microsoft diesem Argument keine besondere Bedeutung für die Begründung
+ihres Antrags auf Überprüfung der Höhe des Zwangsgelds durch das Gericht beimisst, ist
+insoweit  ihr Vorbringen zurückzuweisen, dass  die Kommission nicht die Befugnis  von
+Microsoft in Frage gestellt habe, die No
+anzubieten, die bereits eine Lizenz für bestimmte patentierte Technologien erworben hätten.
+
+-Patent-Vereinbarung nur Lizenznehmern
+
+210    Genauer gesagt wies die Kommission, wie aus den Randnrn. 28, 29 und 38 bis 41 eines
+Schreibens der Kommission vom 17. März 2005 hervorgeht, Microsoft darauf hin, dass
+mehrere  potenzielle  Begünstigte der  Entscheidung von 2004 annähmen, dass sie  keine
+Lizenzen für die patentierten Technologien von Microsoft benötigten, um Betriebssysteme
+für Arbeitsgruppenserver zu entwickeln, die mit den Betriebssystemen für Client
+Microsoft kompatibel seien. Daher wies die  Kommission den Vorschlag von Microsoft
+zurück, eine einzige Art von Lizenz anzubieten, mit der gleichzeitig patentierte und nicht
+patentierte Technologien zur Verfügung gestellt werden sollten, da ein solcher
+Kopplungsverkauf nicht objektiv gerechtfertigt sei und Microsoft Erwerber einer Lizenz für
+nicht patentierte Technologien immer noch vor  den zuständigen nationalen Gerichten
+verfolgen könne, falls sie diese Technologien unter Verletzung der Patente von Microsoft
+anwendeten, für die sie keine Lizenz erworben hätten.
+
+-PCs von
+
+38 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+211    Im  selben Zusammenhang schlug die  Kommission mit Schreiben vom 18.  April 2005
+
+Microsoft u. a. einen Entwurf für eine No
+-Patent-Vereinbarung vor, die ohne vorherige
+Erteilung einer Lizenz für patentierte Technologien verfügbar sein sollte, wobei die Rechte
+von Microsoft aus ihren Patenten im oben erwähnten Sinne ausdrücklich vorbehalten waren.
+Ferner legte die Kommission in Beantwortung eines Schreibens von Microsoft vom 2. Mai
+2005 mit Schreiben vom 28. Juni 2005 erneut dar, dass Microsoft, um die Anordnung von
+„Zwangslizenzen“ für patentierte Technologien, an denen ihre Wettbewerber kein Interesse
+hätten, zu vermeiden, eine Vereinbarung über nicht patentierte Technologien – unbeschadet
+ihrer  Patentrechte  – verfügbar machen müsse.  Unter  diesen Umständen sei es an den
+Betroffenen, diejenigen nicht patentierten oder patentierten Technologien zu wählen, die sie
+für nötig hielten, um ihre Produkte zu entwickeln. Dementsprechend wies die Kommission
+im selben Schreiben die Fassung von Section 2.4(b) des von Microsoft vorgeschlagenen
+Entwurfs für  eine No
+Vereinbarung nur  für Inhaber einer Lizenz für Patentansprüche, die durch die
+Implementierung von zu den Interoperabilitätsinformationen gehörender, nicht patentierter
+Technologien „zwingend verletzt“ werden, verfügbar sein sollte.
+
+-Patent-Vereinbarung vom 7. Juni 2005 zurück,  wonach diese
+
+212    Mit Schreiben vom 8. Juli 2005 schlug Microsoft u. a. vor, in die No -Patent-Vereinbarung
+
+einen Satz einzufügen, wonach der Betroffene nicht verpflichtet sein sollte, eine Lizenz für
+patentierte Elemente zu erwerben, wenn den nicht patentierten Elementen, die er in Lizenz
+nehmen will,  kein „zwingender  Anspruch“ entspricht. Im selben Schreiben erklärte
+Microsoft, sie hoffe, dass diese Klarstellung den Einwand der Kommission entkräfte.
+
+213    Mit Schreiben vom 13. Juli 2005 antwortete  die  Kommission Microsoft, dass die
+
+Klarstellung willkommen sei, ganz besonders im Licht von „Section 11.4[a], wo eindeutig
+bestimmt ist, dass, wenn der Lizenznehmer die zwingenden Ansprüche bestreitet, Microsoft
+nicht aus diesem Grund die Lizenz kündigen kann“.
+
+214    Wie schließlich dem Protokoll eines Treffens zu entnehmen ist, das am 31. Januar und 1.
+
+Februar 2007 in London stattfand, hat sich während dieses Treffens herausgestellt, dass
+Microsoft die oben in Randnr. 212 erwähnte  Klarstellung dahin ausgelegt hat, dass der
+potenzielle  Erwerber einer No -Patent-Lizenz im Fall einer Meinungsverschiedenheit mit
+Microsoft über die Existenz „zwingender Ansprüche“ nach wie vor verpflichtet sei, eine
+Lizenz für die Patente zu erwerben, die sich auf diese Ansprüche bezögen. Hierzu geht aus
+einem Schreiben von Microsoft vom 12. Februar 2007 hervor, dass IBM in einem Dokument
+mit dem Titel „Comments“ vom 28. Januar 2007 die Aufmerksamkeit auf diesen Punkt
+gelenkt hatte und dass Microsoft von da an die betreffende Auslegung aufgab.
+
+215    Der Zusammenfassung des Schriftverkehrs und des Protokolls oben in den Randnrn. 210 bis
+
+214 ist zu entnehmen, dass die Kommission von Anfang an Microsoft in klaren Worten
+dargelegt hat, dass der gekoppelte Verkauf von Lizenzen für nicht patentierte und patentierte
+Technologien mangels objektiver Rechtfertigung für eine solche Kopplung nicht mit ihren
+Verpflichtungen aus Art. 5 der Entscheidung von 2004 vereinbar sei. Die Kommission hat
+außerdem klargestellt, dass es einem potenziellen Lizenznehmer, wenn er glaube, keine
+Lizenz für patentierte Technologien von Microsoft zu benötigen,  um mit den
+Betriebssystemen für  Client -PCs von Microsoft interoperable  Produkte  entwickeln zu
+können, freistehen müsse, keine solche Lizenz zu erwerben, auch wenn er Gefahr laufe, vor
+den nationalen Gerichten verklagt zu werden, falls er derartige Patente verletzen sollte.
+Unter diesen Umständen gab die Zustimmung, die die Kommission im Anschluss an eine
+Klarstellung von Microsoft (vgl. oben, Randnrn. 212 und 213) äußerte, nur der Auslegung
+der  Kommission Ausdruck, wonach mit der fraglichen Klarstellung potenziellen
+Lizenznehmern das Recht eingeräumt wurde, zu wählen, welche Elemente sie in Lizenz
+
+39 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+nehmen wollen, ohne dass ihre Weigerung, patentierte Elemente in Lizenz zu nehmen, eine
+Weigerung von Microsoft nach sich ziehen darf, nicht patentierte Elemente in Lizenz zu
+geben. Dass die Frage im Januar 2007 wieder auftrat, liegt demnach ausschließlich daran,
+dass  Microsoft  ihre  Klarstellung weiterhin in einer Art und Weise auslegte, die der
+Auslegung durch die Kommission und die potenziellen Lizenznehmer entgegensetzt war, und
+nicht an einer am 13. Juli 2005 angeblich von der Kommission erteilten Zustimmung.
+
+216    Auch soweit Microsoft in ihrem Schriftverkehr mit der Kommission zu ihrer Rechtfertigung
+anführt, dass der Erwerb einer Lizenz für „zwingende Ansprüche“ als Voraussetzung für die
+Verfügbarkeit einer No-Patent-Vereinbarung die Erwerber vor jeglicher Klage von Microsoft
+vor den nationalen Gerichten schütze, kann ihr nicht gefolgt werden. Denn unabhängig
+davon, dass die Lizenznehmer eher als Microsoft in der Lage sind, die für den Schutz ihrer
+Interessen am besten geeignete Wahl zu treffen, haben sie auf eigene Gefahr zu beurteilen,
+ob im Rahmen der Entwicklung von Produkten, die mit denen von Microsoft interoperabel
+sind, Patentansprüche zwingend sind. Die Kommission hat  jedoch von Anfang an klar
+gemacht, dass die Erteilung von Lizenzen im Rahmen der No
+Rechte von Microsoft aufgrund ihrer Patente unberührt lässt (vgl. oben, Randnrn. 210 und
+211).
+
+-Patent-Vereinbarung die
+
+217    Zu dem oben in Randnr. 197 dargelegten Argument genügt die Feststellung,  dass die
+
+Kommission, selbst wenn sie im vorliegenden Fall von der Gewichtung abgegangen sein
+sollte, die sie in der Entscheidung von 2006 vorgenommen hatte, durch nichts verpflichtet
+ist, sie  für jede  nachfolgende  Entscheidung zu befolgen. Hatte  Microsoft anfangs nicht
+einmal eine genaue und vollständige Fassung der Interoperabilitätsinformationen offengelegt,
+war es nämlich in diesem Stadium nur folgerichtig, ein Zwangsgeld zu verhängen, das
+insbesondere eher diesen Aspekt des Verhaltens berücksichtigte als die Frage, inwiefern die
+Umstände angemessen waren, unter denen die Offenlegung erfolgen sollte. Was die Methode
+zur Berechnung des Zwangsgelds angeht, kann die Befugnis des Gerichts zu unbeschränkter
+Nachprüfung die Vorlage und Heranziehung zusätzlicher Informationen erfordern, die an
+sich nicht in der  Entscheidung erwähnt zu werden brauchen,  damit diese dem
+Begründungserfordernis gemäß Art. 253 EG genügt (vgl. in diesem  Sinne Urteil  des
+Gerichtshofs vom 16. November 2000,  KNP BT/Kommission,   C
+-248/98 P, Slg.  2000,
+I-9641, Randnr. 40). Da der endgültig festgesetzte Betrag des Zwangsgelds unter dem in der
+Entscheidung von 2006 vorgesehenen Höchstbetrag liegt und die oben in Randnr. 203
+enthaltenen Angaben genügen, um seine Berechnung nachzuvollziehen, hat Microsoft mit
+ihrem Vorbringen keinen Erfolg.
+
+218    Selbst wenn die Gründe, die die Kommission dazu veranlasst haben, die endgültige Höhe
+des Zwangsgelds für den Zeitraum vom 1. August 2006 bis zum 20. Mai 2007 in Höhe von
+zwei Dritteln des mit der Entscheidung von 2006 verhängten Zwangsgelds festzusetzen, auch
+für die Berechnung der endgültigen Höhe des Zwangsgelds für den Zeitraum vom 21. Juni
+bis zum 31. Juli 2006 gelten, war es zudem sachgerecht, für den zuletzt genannten Zeitraum
+einen – dem Gesamtbetrag des mit der  Entscheidung von 2005 verhängten täglichen
+Zwangsgelds entsprechenden – Betrag von 2 Mio. Euro festzusetzen. Das Verhalten von
+Microsoft war nämlich seiner Art nach in beiden Zeiträumen gleich, so dass ein identisches
+tägliches Zwangsgeld gerechtfertigt ist.
+
+219    Zu dem oben in Randnr. 198 erläuterten Argument von Microsoft genügt die Feststellung,
+
+dass Microsoft verpflichtet war,  ihren potenziellen Vertragspartnern angemessene
+Vergütungssätze anzubieten (vgl. oben, Randnr. 114), weshalb die Tatsache, dass ein Teil
+des Zwangsgelds auf  Zeiträume  entfällt,  in denen Microsoft auf  die  Beurteilung eines
+angeblich von ihr unterbreiteten neuen Vorschlags durch die Kommission wartete, nicht die
+
+40 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Auswirkungen der Nichteinhaltung der Entscheidung von 2004 durch Microsoft lindert und
+somit keinen mildernden Umstand darstellt. Dem oben in Randnr. 199 dargelegten Argument
+von Microsoft kann aus denselben Gründen wie oben in Randnr. 114 erst recht nicht gefolgt
+werden.
+
+220    Zu den oben in den Randnrn. 200 und 201 zusammengefassten Argumenten von Microsoft
+
+ist erstens festzustellen, dass Microsoft keinen Beweis dafür liefert, dass das verhängte
+Zwangsgeld 40 mal höher sei als die Vergütung, auf die sie Anspruch gehabt hätte, wenn alle
+-Patent-Vereinbarungen zu den von der  Kommission für
+ihre  Wettbewerber No
+unangemessen befundenen Sätzen geschlossen hätten.  Zweitens  trägt jedenfalls in
+Anbetracht der Größe von Microsoft gemessen am Umsatz, des Verzugs, mit dem sie eine
+genaue und vollständige Fassung der Interoperabilitätsinformationen vorgelegt hat, und des
+zusätzlichen Verzugs  bei der Unterbreitung eines  angemessenen Vergütungssatzes,
+einschließlich aller Vorteile, die diese Umstände in Form von Marktanteilen mit sich bringen,
+die von der Kommission gewährte Herabsetzung des Zwangsgelds (vgl. oben, Randnr. 203)
+sowohl der nötigen Abschreckungswirkung der  Höhe  des Zwangsgelds als auch der
+Tatsache, dass Microsoft zu guter Letzt ihren Verpflichtungen aus Art. 5 Buchst. a der
+Entscheidung von 2004 nachgekommen ist, gebührend Rechnung.
+
+221    Darüber hinaus beendete, wie oben in Randnr. 192 dargelegt, nur das tatsächliche Angebot
+
+angemessener Vergütungssätze die Zuwiderhandlung, während die  bloße Mitteilung von
+Vergütungssätzen an die Kommission zwecks  Prüfung ihrer Angemessenheit nicht den
+Verpflichtungen aus Art. 5 Buchst. a der Entscheidung von 2004 genügte. Das oben in
+Randnr. 202 wiedergegebene Vorbringen ist daher zurückzuweisen.
+
+222    Im Rahmen der  Ausübung der Befugnis zu unbeschränkter  Nachprüfung,  mit  der das
+
+Gericht aufgrund von Art. 31 der Verordnung Nr. 1/2003 ausgestattet ist und die die Vorlage
+und Heranziehung zusätzlicher  Informationen erfordern kann,  die  an sich nicht in der
+Entscheidung erwähnt zu werden brauchen (Urteil KNP BT/Kommission, oben in Randnr.
+217 angeführt, Randnr. 40), ist allerdings noch ein Schreiben des Generaldirektors der
+Generaldirektion (GD) „Wettbewerb“ an Microsoft vom 1. Juni 2005 zu berücksichtigen.
+Dieses Schreiben, das nach mündlicher Anhörung der Beteiligten zu den Akten genommen
+wurde,  betrifft die  Frage,  ob im Rahmen der  Entscheidung von 2004 Microsoft ihren
+Wettbewerbern verbieten durfte, die mit den Betriebssystemen für Client
+interoperablen und zwischenzeitlich von ihnen entwickelten Produkte in Form  von
+Quellcode zu vertreiben. Hierzu vertrat die Kommission die Auffassung, dass Microsoft
+aufgrund von Art. 5 der Entscheidung von 2004 verpflichtet sei, den Vertrieb von Software,
+die die Wettbewerber auf Basis der Protokolle von Microsoft entwickelt hätten, in Form von
+Quellcode zu gestatten, soweit die in dieser Software angewandten Protokolle von Microsoft
+nicht innovativ seien. Die Kommission führte allerdings auch aus, dass Microsoft zwar einen
+solchen Vertrieb bis zur Verkündung des Urteils in der Rechtssache Microsoft/Kommission
+(oben in Randnr. 18 angeführt) verhindern dürfe, aber in der Zwischenzeit alle
+erforderlichen Maßnahmen ergreifen müsse, um sich zu vergewissern, dass sie, falls die
+Klage von Microsoft in Bezug auf Art. 5 der Entscheidung von 2004 zurückgewiesen werde,
+ihrer Verpflichtung aus dieser  Bestimmung sofort und in vollem Umfang nachkommen
+könne.
+
+-PCs
+
+223    Folglich war dieses Schreiben geeignet, Microsoft glauben zu lassen, dass  sie  die
+
+Beschränkungen beim Vertrieb der Produkte, die ihre Wettbewerber auf Basis der weder
+unter ein Patent fallenden noch innovativen Interoperabilitätsinformationen entwickelt
+hatten, bis  zur Verkündung des Urteils Microsoft/Kommission (oben in Randnr. 18
+angeführt), d. h. bis zum 17. September 2007, aufrechterhalten durfte.
+
+41 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+224    Die Kommission hat hierzu in der mündlichen Verhandlung von Microsoft unbestritten
+
+vorgetragen, dass mit diesem Schreiben letztlich versucht worden sei, die Tatsache, dass nun
+einmal  eine  Zeit  von zwei bis  drei  Jahren nötig sei, damit  ein auf den
+Interoperabilitätsinformationen beruhendes Konkurrenzprodukt entwickelt werden könne,
+auf der einen Seite mit dem legitimen Interesse, das Microsoft an der Wiederherstellung des
+status quo ante  für den Fall habe, dass Art. 5 der Entscheidung von 2004 vom Gericht im
+Rahmen der Rechtssache Microsoft/Kommission (oben in Randnr. 18 angeführt) für nichtig
+erklärt  werde,  auf der anderen Seite in Einklang zu bringen.  Da nach den seinerzeit
+verfügbaren Indizien damit gerechnet worden sei, dass das Gericht sein Urteil ungefähr bei
+Ablauf des Zeitraums  fällen werde, der für die Entwicklung eines auf den
+Interoperabilitätsinformationen beruhenden Konkurrenzprodukts nötig sei,  habe sie
+angenommen, auf diese Art und Weise die verschiedenen Interessen, die damals in der
+Rechtssache betroffen gewesen seien, korrekt abzuwägen.
+
+225    Festzustellen ist, dass das Schreiben der Kommission vom 1. Juni 2005 einen Aspekt der
+Durchführung von Art. 5 der Entscheidung von 2004 betrifft, und zwar den Zugang zu den
+Interoperabilitätsinformationen unter nicht diskriminierenden Bedingungen, der nicht die
+Grundlage der angefochtenen Entscheidung ist. So hat die Kommission zwar während des
+Verwaltungsverfahrens auf die Praxis Bezug genommen, das Entwicklungsmodell „Open
+source“ wegen bestimmter Klauseln in den von Microsoft vorgeschlagenen Vereinbarungen
+auszuschließen (vgl. z. B. Randnrn. 65 bis 70 des Anhangs zum Schreiben der Kommission
+vom 17. März 2005), doch wird die angefochtene Entscheidung mit der Unangemessenheit
+der Preise begründet, die Microsoft für den Zeitraum vom 21. Juni 2006 bis zum 21. Oktober
+2007 vorgeschlagen habe (siehe oben in Randnr. 55).
+
+226    Hat  die Kommission aber im Hinblick auf einen anhängigen Rechtsstreit unter
+
+Berücksichtigung der  Art der durch Art. 5 der  Entscheidung von 2004 auferlegten
+Verpflichtungen und der Folgen, die  sich aus einer möglichen Nichtigerklärung ergeben
+können,  Microsoft erlaubt,  zeitweise  eine Praxis anzuwenden, die  möglicherweise
+wettbewerbswidrige Auswirkungen hat, die mit der Entscheidung von 2004 beseitigt werden
+sollen, dann kann dieser Umstand im Rahmen der Festsetzung der Höhe des Zwangsgelds in
+Rechnung gestellt werden.
+
+227    Bei der betreffenden Prüfung sind verschiedene Gesichtspunkte zu berücksichtigen. Erstens
+hat Microsoft ungeachtet der Reichweite des Schreibens vom 1. Juni 2005, das sich auf den
+Vertrieb der von ihren Wettbewerbern entwickelten Produkte beschränkte, in der Praxis den
+„Open source“-Entwicklern weiterhin jeglichen Zugang zu den
+Interoperabilitätsinformationen verweigert, was in diesem Schreiben nicht  als legitime
+Möglichkeit anerkannt worden war. Seinem Sinn nach gestattete das fragliche Schreiben
+Microsoft nämlich allenfalls, diesen Entwicklern beim Vertrieb ihrer  Produkte  bis  zur
+Verkündung des Urteils des Gerichts im Rahmen der Rechtssache Microsoft/Kommission
+(oben in Randnr. 18 angeführt) Beschränkungen aufzuerlegen.
+
+228    Zweitens zählen, wie in Randnr. 68 des Anhangs zum Schreiben der Kommission vom 17.
+
+März 2005 erwähnt  und in der mündlichen Verhandlung wiederholt dargelegt, die
+„Open source“-Entwickler zu den Hauptwettbewerbern von Microsoft.
+
+229    Drittens wurde aufgrund des Verzugs, mit dem Microsoft eine genaue und vollständige
+
+Fassung der Interoperabilitätsinformationen zur Verfügung stellt (vgl. oben, Randnr. 115),
+die  Wahrscheinlichkeit,  dass ein Konkurrenzprodukt vor der  Verkündung des  Urteils
+Microsoft/Kommission (oben in Randnr.  18 angeführt) entwickelt  werden konnte,  rein
+theoretisch, was die  oben in Randnr. 224 dargelegte Beurteilung durch die Kommission
+
+42 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+bestätigt.
+
+230    Viertens genügte die von Microsoft angewandte Praxis in Bezug auf die bis zum 21. Oktober
+
+2007 vorgeschlagenen Preise schon als solche,  um  Art. 5 der Entscheidung von 2004
+gegenüber den „Open source“-Entwicklern seine Wirksamkeit zu nehmen.
+
+231    Fünftens hat Microsoft nichts dafür  vorgelegt,  inwieweit die  wettbewerbswidrigen
+
+Auswirkungen des mit der angefochtenen Entscheidung geahndeten Verhaltens eingetreten
+wären, wenn sie sich so verhalten hätte, wie im Schreiben vom 1. Juni 2005 beschrieben,
+aber ihrer  Verpflichtung nachgekommen wäre, für weder  patentierte  noch innovative
+Technologien angemessene Preise vorzuschlagen. Es gibt in Anbetracht der Ausführungen
+oben in den Randnrn. 224 und 229 keine Hinweise darauf, dass die Auswirkungen in diesem
+Fall mehr als nur geringfügig gewesen wären.
+
+232    Unter diesen Umständen ist die Höhe des gegen Microsoft verhängten Zwangsgelds auf
+
+860 Mio. Euro festzusetzen.
+
+ Kosten
+
+233    Nach Artikel 87 § 2 der Verfahrensordnung ist die unterliegende  Partei auf Antrag zur
+
+Tragung der Kosten zu verurteilen. Nach Artikel 87 § 3 kann das Gericht die Kosten teilen
+oder beschließen, dass jede Partei ihre eigenen Kosten trägt, wenn jede Partei teils obsiegt,
+teils unterliegt oder wenn ein außergewöhnlicher Grund vorliegt.
+
+234    Da Microsoft mit ihren ersten fünf Klagegründen unterlegen ist, aber im Rahmen des
+sechsten Klagegrundes eine  Herabsetzung des Zwangsgelds gewährt  worden ist, trägt
+Microsoft ihre eigenen Kosten, 95 % der Kosten der Kommission mit Ausnahme der Kosten,
+die  der Kommission im Zusammenhang mit der  Streithilfe von CompTIA und ACT
+entstanden sind, sowie 80 % der Kosten von FSFE, Samba Team, SIIA, ECIS, IBM, Red Hat
+und Oracle.
+
+235    Die Kommission trägt 5 % ihrer eigenen Kosten mit Ausnahme der Kosten, die ihr im
+
+Zusammenhang mit der Streithilfe von CompTIA und ACT entstanden sind.
+
+236    CompTIA und ACT tragen ihre eigenen Kosten und die Kosten, die im Zusammenhang mit
+
+ihrer Streithilfe der Kommission entstanden sind.
+
+237    FSFE, Samba Team, SIIA, ECIS, IBM, Red Hat und Oracle tragen 20 % ihrer eigenen
+
+Kosten.
+
+Aus diesen Gründen hat
+
+DAS GERICHT (Zweite Kammer)
+
+für Recht erkannt und entschieden:
+
+1.      Die Höhe des Zwangsgelds, das in Art. 1 der Entscheidung K(2008) 764 endg. der
+Kommission vom 27. Februar 2008 zur Festsetzung der endgültigen Höhe des mit
+der Entscheidung K(2005)  4420 endg.  gegen  die Microsoft  Corporation
+verhängten  Zwangsgelds  (Sache COMP/C  3/37.792 – Microsoft)  gegen  die
+Microsoft Corp. verhängt worden ist, wird auf 860 Mio. Euro festgesetzt.
+
+2.      Microsoft  trägt  ihre eigenen  Kosten, 95 % der Kosten der  Europäischen
+
+43 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+Kommission mit Ausnahme der Kosten, die der Kommission im Zusammenhang
+mit der Streithilfe von The Computing Technology Industry Association, Inc. und
+der Association for Competitive Technology, Inc. entstanden sind, sowie 80 % der
+Kosten der  Free  Software  Foundation Europe  e.V.,  von Samba Team, der
+Software & Information  Industry Association, des European  Committee for
+Interoperable Systems, der International Business Machines Corp., der Red Hat
+Inc. und der Oracle Corp.
+
+3.      Die Kommission trägt 5 % ihrer eigenen Kosten mit Ausnahme der Kosten, die
+
+ihr im Zusammenhang mit der Streithilfe von The Computing Technology
+Industry Association, Inc. und der Association for Competitive Technology, Inc.
+entstanden sind.
+
+4.      The Computing Technology Industry Association  und die  Association  for
+
+Competitive  Technology tragen  ihre eigenen Kosten  und die  Kosten,  die  im
+Zusammenhang mit ihrer Streithilfe der Kommission entstanden sind.
+
+5.      Die Free Software Foundation  Europe und  Samba Team,
+
+ die
+
+Software & Information Industry Association, das European Committee  for
+Interoperable Systems, International Business Machines, Red Hat und Oracle
+tragen 20 % ihrer eigenen Kosten.
+
+ForwoodDehousseSchwarcz
+
+Verkündet in öffentlicher Sitzung in Luxemburg am 27. Juni 2012.
+
+Unterschriften
+
+Inhaltsverzeichnis
+
+Vorgeschichte des Rechtsstreits
+
+Angefochtene Entscheidung
+
+Protokollprogramm für Arbeitsgruppenserver
+
+Mitteilung der Beschwerdepunkte
+
+Prüfung der Einhaltung der mit Art. 5 Buchst. a der Entscheidung von 2004 auferlegten
+Verpflichtungen
+
+Kriterien für die Prüfung der Angemessenheit der von Microsoft verlangten Vergütungssätze
+
+Prüfung der Angemessenheit der von Microsoft verlangten Vergütungssätze
+
+– Allgemeiner Rahmen
+
+– Innovativer Charakter der in der technischen Dokumentation beschriebenen Protokolle, zu
+denen Microsoft aufgrund der No-Patent-Vereinbarung Zugang gewährt
+
+44 von 4529.05.2013 10:13
+
+InfoCuria
+
+http://curia.europa.eu/juris/document/document_print.jsf?doclang...
+
+– Marktbewertung vergleichbarer Technologien
+
+Zwangsgeld
+
+Verfahren und Anträge der Beteiligten
+
+Rechtliche Würdigung
+
+Zum ersten Klagegrund: Rechtswidrigkeit der Verhängung eines Zwangsgelds, bevor die
+Verpflichtungen von Microsoft aus Art. 5 Buchst. a der Entscheidung von 2004 konkretisiert
+worden seien
+
+Vorbringen der Beteiligten
+
+Würdigung durch das Gericht
+
+Zum zweiten Klagegrund: Fehler der Kommission hinsichtlich der Unangemessenheit der
+Vergütungssätze für die No-Patent-Vereinbarung
+
+Vorbringen der Beteiligten
+
+Würdigung durch das Gericht
+
+Zum dritten Klagegrund: Fehler der Kommission in Bezug auf die Kriterien für die Prüfung des
+innovativen Charakters der Technologien, die Gegenstand der No-Patent-Vereinbarung sind
+
+Vorbringen der Beteiligten
+
+Würdigung durch das Gericht
+
+Zum vierten Klagegrund: Rechtswidrige Heranziehung der Berichte des unabhängigen
+Überwachungsbeauftragten
+
+Vorbringen der Beteiligten
+
+Würdigung durch das Gericht
+
+Zur fünften Klagegrund: Verletzung der Verteidigungsrechte
+
+Vorbringen der Beteiligten
+
+Würdigung durch das Gericht
+
+Zum sechsten Klagegrund: Fehlende Rechtsgrundlage für die Verhängung eines Zwangsgelds, das
+außerdem überhöht und unverhältnismäßig sei
+
+Vorbringen der Beteiligten
+
+Würdigung durch das Gericht
+
+Kosten
+
+* Verfahrenssprache: Englisch.
+
+45 von 4529.05.2013 10:13
+
+

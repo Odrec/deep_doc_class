@@ -1,0 +1,737 @@
+Dezimalbrüche
+Seminar: 
+Mathematikdidaktik 
+Seminar B
+Referenten: Jonas Rieken 
+und Valentina Krusin
+
+Gliederung
+
+Inhaltlicher Einstieg: Stellenwertsysteme, Stellenwerttafel
+Erweiterung der Stellenschreibweise
+Sprechweisen
+Fehlerstrategien
+Untersuchungen
+Zu beachten
+Kerncurriculum 
+Arbeitsphasen
+Kernideen
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
+Kommazahl
+
+Dezimalsystem
+
+Dezimalbruchzahl
+
+Ziffern
+
+Stellen
+
+Dezimalzahl
+
+Was ist eigentlich
+
+ eine Zahl?
+
+Stellenwertsystem
+
+Bruch
+
+Unechter Dezimalbruch
+
+Dezimalbruch
+
+ 
+
+ 
+
+Periodischer
+Dezimalbruch
+
+Dezimalen
+
+Basis
+
+Zahlbereiche
+
+„Zahlen“
+
+Darstellungsformen
+
+Menge der 
+natürlichen 
+Zahlen  ℕ
+
+Menge der 
+ganzen 
+ℤ
+Zahlen 
+
+Menge der 
+rationalen 
+ℚ
+Zahlen 
+
+...
+
+Elemente eines 
+Zahlbereiches
+
+15
+
+15
+1
+
+15,00
+
+XV
+
+[1111]2
+
+[ F ]16
+
+ 
+
+ 
+
+Stellenwertsysteme
+
+ 
+
+ 
+
+Das eingebrannte Dezimalsystem
+
+Dezimalsystem für uns selbstverständlich
+
+Auch bei SuS als selbstverständlich vorausgesetzt
+
+Keine eigene explizite Auseinandersetzung mit dem Dezimalsystem
+
+Können wir es dann überhaupt vermitteln?
+
+Unsere Erklärungen basieren auf dem Dezimalsystem 
+Das Dezimalsystem mit dem Dezimalsystem 
+erklären??
+
+ 
+
+ 
+
+Stellenwertsysteme
+
+● Darstellung von Zahlen mit Hilfe von Ziffern, Vorzeichen  und 
+
+Trennzeichen nach dem Bündelungsprinzip
+
+● Bündeln = Elemente einer Menge zu gleich großen Gruppierungen 
+
+      zusammenfassen
+
+● Basis definiert Bündelungseinheit
+● Wert der Zahl ergibt sich aus Anordnung der Ziffern.
+
+          2 Informationen: Ziffernwert und Stellenwert
+
+Anzahl der 
+Bündel
+
+„Stufe der 
+Bündelung“
+
+187 = 1⋅100 + 8⋅10 + 7⋅1 = 1⋅102 + 8⋅101 + 7⋅100
+
+ 
+
+ 
+
+Stellenwerttafel
+
+1000
+
+100
+
+10
+
+1
+
+1
+10
+
+1
+100
+
+1
+
+1000
+
+1
+
+8
+
+7
+
+187 = 1⋅100 + 8⋅10 + 7⋅1
+
+ 
+
+ 
+
+Stellenwerttafel
+
+1000
+
+100
+
+10
+
+1
+
+1
+10
+
+1
+100
+
+1
+
+Rationale Zahlen?
+
+1000
+
+z
+10n
+
+mit n , z ∈ ℕ
+
+ 
+
+ 
+
+Stellenwerttafel
+
+⋅10
+
+⋅10
+
+⋅10
+
+1000
+
+100
+
+10
+
+1
+
+1
+10
+
+1
+100
+
+1
+
+1000
+
+ 
+
+ 
+
+Stellenwerttafel
+
+:10
+
+:10
+
+:10
+
+1000
+
+100
+
+10
+
+1
+
+1
+10
+
+1
+100
+
+1
+
+1000
+
+ 
+
+ 
+
+Stellenwerttafel
+
+:10
+:10
+:10:10:10:10
+:10:10
+
+:10
+:10
+
+:10
+:10
+
+:10:10
+
+1000
+1000
+
+10
+100
+
+10
+10
+
+1
+1
+
+:10:10
+
+:10:10
+
+1
+100
+
+1
+
+1000
+
+1
+10
+
+ 
+
+ 
+
+Stellenwerttafel
+
+:10
+:10
+:10:10:10:10
+:10:10
+
+:10
+:10
+
+:10
+:10
+
+:10:10
+
+1000
+1000
+
+100
+
+10
+10
+
+1
+1
+
+9
+
+:10:10
+
+:10:10
+
+1
+100
+
+1
+
+1000
+
+0
+
+2
+
+1
+10
+
+3
+
+9,302 = 9⋅1 + 3⋅
+
+1
+10 + 0⋅
+
+1
+100 + 2⋅
+
+1
+1000 =
+
+9302
+1000
+
+ 
+
+ 
+
+Charakteristika der erweiterten Stellenschreibweise
+
+●
+
+Jeder Stellenwert ist (unverändert) der zehnte Teil des benachbarten 
+
+linken Stellenwertes, bzw. das Zehnfache des benachbarten rechten 
+Stellenwertes.
+
+● Stellenwerte lassen sich beliebig weiter fortsetzen, jetzt aber in beide 
+
+Richtungen.
+
+Änderung des Bezugspunktes:                                                               
+Das Komma markiert die Stelle der Einer. Besteht eine Zahl nur aus 
+Dezimalen, steht eine Null an der Einerstelle.
+
+Endnullen können rechts vom Komma angehängt oder gestrichen 
+
+werden, ohne dass sich der Wert ändert.
+
+Anzahl der Nachkommastellen gibt keinen direkten Rückschluss auf die 
+
+Größe der Zahl.
+
+Stellenwertbezeichnungen ähneln sich.
+
+ 
+
+ 
+
+Sprechweisen
+
+•
+
+Inhaltliche Sprechweise
+• „Drei 25 Hundertstel oder 325 Hundertstel“
+
+• Formale Sprechweise
+
+• „Drei-Komma-zwei-Fünf“
+
+• Problematische Sprechweise
+
+• „Drei-Komma-Fünfundzwanzig“
+
+3,25
+
+Sprechweisen
+
+Die Problematische Sprechweise kann im Verlauf der 
+Dezimalbruchrechnung Fehler verursachen:
+
+• Kürzen / Erweitern: 0,20 ≠ 0,2, da 20 ≠ 2
+
+• Größenvergleich: 0,4 < 0,17, da 4 < 17
+
+• Addieren: 0,38 + 0,7 = 0,45, da 38 + 7 = 45
+
+• Subtrahieren: 0,68 – 0,3 = 0,65, da 68 – 3 =65
+• Scheinstellenwert:
+
+• 0,5 (Null-Komma-Fünf)
+
+• 0,51 (Null-Komma-Einundfünfzig)
+
+• 0,521 (Null-Komma-Fünfhunderteinundzwanzig)
+
+Fehlerstrategien
+
+1.
+
+Kein-Komma-Strategie
+• SuS ordnen die Dezimalbrüche ohne Berücksichtigung des 
+
+Kommas wie natürliche Zahlen an:
+
+• Beispiel: 0,38 < 0,246; denn 38 < 246
+                    2,34 < 1,235; denn 234 < 1235
+Komma-Trennt-Strategie
+
+•
+
+•
+
+Für diese SuS besteht der Dezimalbruch aus zwei 
+natürlichen Zahlen, die durch ein Komma getrennt 
+werden
+Beispiel: 3,2 < 3,15; da 2 < 15
+
+Fehlerstrategien
+
+Je-mehr-Dezimalen-desto-kleiner-Strategie
+
+3.
+
+•
+
+•
+
+Die Zahl, die mehr Dezimalen hat, ist die kleinere bzw. die 
+Zahl, die weniger Dezimalen hat, ist die größere
+Beispiel: 0,375 < 0,25
+
+Untersuchungen
+
+• Untersucht wurden 6 Klassen des 6. Schuljahres aus 3 verschiedenen 
+
+Realschulen
+
+Aufgabe: 
+
+Markiere 
+
+die Zehntel in 7,654
+
+die Hundertstel in 7,654
+
+a)
+
+b)
+
+Ergebnis:
+
+Anteil der SuS, die die Zahlen vor und nach dem Komma als natürliche 
+Zahlen auffassen
+
+Nach der Bruch- und vor der 
+
+Dezimalbruchrechnung
+
+Nach der 
+
+Dezimalbruchrechnung
+
+Klasse A
+Klasse B
+
+33 %
+40 %
+
+50 %
+9 %
+
+Untersuchungen
+
+• Untersucht wurden 6 Klassen des 6. Schuljahres aus 3 
+
+verschiedenen Realschulen
+
+Ergebnisse des gesamten Tests:
+Anteil der SuS mit systematischer KT-Strategie:
+
+Nach der Bruch- und vor der 
+
+Dezimalbruchrechnung
+
+Nach der 
+
+Dezimalbruchrechnung
+
+Klasse C
+Klasse D
+
+47 %
+38 %
+
+41 %
+14 %
+
+Zu beachten
+
+• Den Bruch- und Dezimalbruchbegriff nicht als zwei getrennte 
+
+Blöcke thematisieren
+
+• Ziffernweise Sprechweise: „drei Komma zwei fünf“
+• Exaktes Untereinanderschreiben bei Rechenoperationen
+• Mit Nullen auffüllen
+
+• Überschlagen, um Ergebnisse einordnen zu können
+
+Zu beachten
+
+• Benutzen des Stellenwerttafel
+
+• Bedeutung von Endnullen wird deutlicher
+
+• Durchführung von Größenvergleich, Addition und Subtraktion 
+
+werden einsichtig
+
+• Genügend Zeit in die Erweiterung des Stellenwertsystems 
+
+investieren
+
+• Unterschiede zu den natürlichen Zahlen deutlich machen
+• Material zur Veranschaulichung
+
+Dezimalzahlen - Intention
+
+• „Ausgehend vom Alltagswissen der Schülerinnen und Schüler 
+
+steht der Aufbau verschiedener angemessener 
+Zahlvorstellungen im Vordergrund. Hieran anknüpfend werden 
+– mit deutlichem Realitätsbezug und anhand überschaubarer 
+Zahlenbeispiele – die Rechenregeln erkundet. Das Rechnen 
+mit Dezimalzahlen erfolgt mit den Grundrechenarten und 
+angemessen kleinen bzw. einfachen Operanden unter 
+angemessener Anwendung des Stellenwertsystems. Die 
+Verbindung zwischen den Dezimalzahlen und den Brüchen 
+wird hergestellt.“
+
+(Quelle: Niedersächsisches Kultusministerium 2015, S. 41)
+
+Dezimalzahlen - Intention
+
+• Beim Umrechnen der Einheiten werden sinnvolle 
+
+Beispiele für die Größen Zeit, Masse, Geld, Längen, 
+Flächen- und Rauminhalte gewählt. Das wichtige 
+heuristische Verfahren des Schätzens bzw. die 
+Ermittlung von Näherungswerten und 
+Überschlagsrechnungen wird zur Überprüfung und 
+für Plausibilitätsüberlegungen verwendet. Im Sinne 
+vom Messen als Vergleich mit einer vereinbarten 
+Basiseinheit werden die Einheiten miteinander 
+verglichen.
+
+Dezimalzahlen - Kern
+
+• „Dezimalzahlen auf der Zahlengeraden, im Stellenwertsystem 
+
+und als Bruch darstellen
+
+• mit Dezimalzahlen rechnen
+
+• Grundrechenarten in alltagsrelevanten Zahlenräumen anwenden 
+und mit dem Wissen über das Rechnen mit Brüchen verknüpfen
+
+• Grundrechenarten umkehren, um einfache Gleichungen zu lösen
+• Rechenregeln in Sachzusammenhängen erläutern und zum 
+
+vorteilhaften Rechnen verwenden
+
+• Zusammenhänge zwischen den Grundrechenarten auch bei 
+
+Sachproblemen nutzen
+
+• runden und schätzen
+• Größen umrechnen“
+
+Zehnerblöcke
+
+Arbeitsphase 1
+
+Wie kann man Zehnerblöcke beim Thema 
+Dezimalbrüche einsetzen?
+
+Welche Vor- und Nachteile bringen 
+Zehnerblöcke in diesem Zusammenhang mit 
+sich?
+
+Arbeitsphase 2
+
+Spiele das Spiel in deiner Gruppe und bearbeite 
+anschließend folgende Fragen:
+
+• Würdest du das Spiel im Unterricht einsetzen? Begründe.
+• Wann könnte man das Spiel einsetzen?
+• Eignet sich das Spiel, um effektiv gegen die 
+
+Fehlstrategien vorzugehen?
+
+• Wie lässt sich das Spiel verbessern?
+
+Kernideen
+
+• Erweiterung des Zahlenbereichs und Schließen der Lücken auf 
+
+der Zahlengerade
+
+• Darstellungsmöglichkeit von Zahlen
+• Rückgriff auf bekannte Rechenverfahren
+• Koordinatensystem, Kreis (Pi), Wahrscheinlichkeitsrechnung
+• Umgang mit Preisen, Nährwertkennzeichnungen, Sport, etc.
+• Steht im Kerncurriculum.
+
+Literatur
+
+• Niedersächsisches Kultusministerium (2015). Kerncurriculum 
+
+für das Gymnasium Schuljahrgänge 5-10. Mathematik. 
+Abrufbar unter: 
+http://db2.nibis.de/1db/cuvo/datei/ma_gym_si_kc_druck.pdf; 
+zuletzt abgerufen am: 17.06.2016.
+
+• Padberg, F. (2009). Didaktik der Bruchrechnung. Heidelberg: 
+
+Spektrum Akademischer Verlag.
+
+Prüfungsfragen
+
+• Erläutere die Probleme, die bei SuS beim Behandeln der 
+
+Dezimalbruchrechnung auftreten können, und Möglichkeiten 
+diese zu beheben.
+
+• Warum kann „das Eingebrannte Dezimalsystem“ 
+
+problematisch sein?
+
+Danke für eure 
+Aufmerksamkeit!
+
+Der Mathematiker
+
+Es war sehr kalt, der Winter dräute,
+Da trat – und außerdem war´s glatt – 
+
+Professor Wurzel aus dem Hause,
+
+Weil er was einzukaufen hat.
+
+Kaum tat er seine ersten Schritte, 
+als ihn das Gleichgewicht verließ,
+
+Er rutschte aus und fiel und bracht sich
+
+Die Beine und noch das und dies.
+
+Jetzt liegt er nun, völlig gebrochen,
+Im Krankenhaus in Gips und spricht:
+„Ich rechnete schon oft mit Brüchen,
+
+Mit solchen Brüchen aber nicht!“
+
+

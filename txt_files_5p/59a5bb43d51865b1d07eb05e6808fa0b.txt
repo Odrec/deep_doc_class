@@ -1,0 +1,449 @@
+Anwendungen von GIS: 
+
+ 
+
+Höhenmodelle 
+
+ 
+ 
+
+M.Sc. Florian Hillen 
+
+Übung: ASCII-Daten 
+
+ Kopieren Sie die Dateien lidar.las, reithalle.txt, 
+
+westerberg.txt und lastools.zip aus dem 
+Seminarordner (Höhendaten) in Ihr Verzeichnis 
+ Suchen Sie bei Google nach den „LAStools“ und 
+
+finden Sie heraus wie sie die .las Datei in eine .txt 
+Datei konvertieren können 
+
+ Öffnen Sie die .txt Dateien im Texteditor. Finden Sie 
+
+heraus um welches Koordinatensystem es sich 
+handeln könnte und vergleichen Sie die 
+verschiedenen Dateien. Was fällt auf? 
+
+ Importieren Sie die drei Dateien in GRASS 
+
+Was fällt auf? 
+
+Arbeiten mit „fertigen“ Höhendaten 
+
+ Höhendaten werden i.d.R. im Rasterformat 
+
+gespeichert, da Punktwolken schwerer zu 
+handhaben sind 
+
+ Von Behörden bekommt man Höhendaten daher 
+
+meist auch direkt im Rasterformat 
+
+ Übung: 
+
+ Kopieren Sie das DGM von Osnabrück aus dem 
+
+Seminarordner (Höhendaten) in ihr Verzeichnis und laden 
+Sie die Datei in GRASS GIS und in ArcGIS 
+
+ Erstellen Sie in GRASS dazu eine neue Location  
+
+ 
+
+Ergebnis 
+
+Ableitbare Produkte 
+
+ Folgende Produkte, die aus Höhendaten abgeleitet 
+
+werden können, sollen im folgenden erstellt werden: 
+ Höhenlinien 
+ Schummerung 
+ Neigung 
+ TIN 
+ nDOM 
+ Potentielle PV-Eignung von Hausdächern (Ansätze) 
+
+ 
+
+Höhenlinien 
+
+ In GRASS 
+
+ r.contour oder Raster | Kontourlinien erzeugen 
+
+ 
+
+ In ArcGIS 
+
+ Toolbox | Spatial Analyst Tools | Surface | Contour 
+
+ 
+
+ Übung: 
+
+ Erstellen Sie sowohl mit GRASS GIS als auch mit ArcGIS 
+
+Höhenlinien für das DGM der Stadt Osnabrück mit einem 
+Abstand von 2 Meter. 
+
+ Vergleichen Sie die Ergebnisse 
+
+Ergebnis 
+
+Schummerung 
+
+ In GRASS 
+
+ r.shaded.relief oder Raster | Reliefanalyse | 
+
+Reliefschattierung 
+ 
+
+ In ArcGIS 
+
+ Toolbox | Spatial Analyst Tools | Surface | Hillshade 
+
+ 
+
+ Übung: 
+
+ Erstellen Sie sowohl mit GRASS GIS als auch mit ArcGIS 
+
+Schummerungsbilder des DGMs für die Stadt Osnabrück. 
+Achten Sie drauf, dass die Parameter gleich sind! 
+
+ Vergleichen Sie die Ergebnisse 
+
+Ergebnis 
+
+Ergebnis 
+
+ In GRASS 
+
+ r.slope.aspect oder Raster | Reliefanalyse | Hangneigung 
+
+Neigung 
+
+und -exposition 
+ 
+
+ In ArcGIS 
+
+ Toolbox | Spatial Analyst Tools | Surface | Aspect  
+ Toolbox | Spatial Analyst Tools | Surface | Slope 
+
+ 
+
+ Übung: 
+
+ Berechnen Sie sowohl mit GRASS GIS als auch mit ArcGIS 
+
+Slope und Aspect für das DGM der Stadt Osnabrück. 
+
+Ergebnis Slope 
+
+Ergebnis Aspect 
+
+Ergebnis Aspect 
+
+TIN 
+
+ In GRASS 
+
+ 1. Schritt: Raster zu Vektor konvertieren. Darauf achten, 
+
+dass man die Rasterwerte als Z-Koordinate schreiben lässt 
+
+ 2. Schritt: Ausdünnen / Vereinfachen (!) 
+ 3. Schritt: Delaunay Triangulation 
+
+ In ArcGIS 
+
+ Toolbox | 3D Analyst Tools | Konvertierung | Von Raster | 
+
+Raster zu TIN 
+
+ Übung: 
+
+ Erstellen Sie mit ArcGIS ein TIN auf Grundlage des DGM 
+
+der Stadt Osnabrück 
+
+ Z-Toleranz = 2 
+
+Ergebnis 
+
+Übung: nDOM 
+
+ Im Seminarordner (Höhendaten) finden Sie ein DSM 
+
+(DOM) von der Osnabrücker Innenstadt. 
+
+ Erstellen Sie aus dem DGM der Stadt Osnabrück in 
+ArcGIS einen Ausschnitt, der den gleichen Bereich 
+(Innenstadt) abdeckt wie das DSM 
+
+ Subtrahieren Sie mit ArcGIS DOM und DGM um ein 
+
+nDOM zu erhalten 
+
+ Was fällt auf und was muss gemacht werden? 
+
+ArcGIS Ergebnis 
+
+Was wünschen wir uns? 
+
+Übung: nDOM 
+
+ Überführen Sie den DGM Ausschnitt der Innenstadt 
+
+nach GRASS oder erstellen Sie den Ausschnitt in 
+GRASS neu 
+
+ Erstellen Sie in GRASS ebenfalls ein nDOM durch 
+
+Subtraktion 
+
+ Wie sieht das Ergebnis aus? 
+
+ 
+
+Ähnlich schlecht! 
+
+Übung: nDOM 
+
+ Zeigen Sie die Region an 
+ Passen Sie anschließend die Region an das DSM an 
+
+und geben Sie die Region erneut aus 
+
+ Was fällt auf? 
+
+ 
+
+ Berechnen Sie nochmals ein nDOM 
+
+Geht doch! 
+
+Übung: nDOM 
+
+ Exportieren Sie das nDOM als TIFF um es auch in 
+
+ArcGIS öffnen zu können 
+ Alternative: DGM der Innenstadt mit höherer Auflösung 
+
+speichern und das nDOM in ArcGIS berechnen! 
+
+Potentielle PV-Eignung 
+
+ Was brauch man für eine solche Karte? 
+
+ Gebäudehöhen 
+
+ DOM / nDOM  CHECK! 
+
+ Ausrichtung des Dachs (Südseite, usw.) 
+
+ Aspect  CHECK! 
+
+ Dachneigung (Flachdach weniger geeignet, usw.) 
+
+ Slope  CHECK! 
+ Gebäudegrundrisse 
+
+ ALK-Daten  SEMINARORDNER! 
+
+ Verschattung 
+
+ Schummerung  CHECK! 
+
+Übung: Potentielle PV-Eignung 
+
+ Benutzen Sie die Gebäudegrundrisse der ALK um nur 
+
+für die Gebäude die Dachneigung und die 
+Dachausrichtung zu erhalten 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ Nun fehlt „nur noch“: evtl. „Verklumpen“ und 
+
+Klassenbildung 
+
+ Auch DTM (digital terrain model = DGM) und DSM 
+
+DGM / DOM 
+
+(digital surface model = DOM) 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ Wie werden die beiden unterschiedlichen Modelle 
+
+erstellt? 
+
+Übung: Multiple returns 
+
+ Starten Sie GRASS in der Location nc_spm_08 
+ Laden Sie den Rasterlayer „ortho_2001_t792_1m“ 
+ Fügen Sie nun 4 mal den Vektorlayer 
+
+„elev_lidrural_mrpts“ hinzu und visualisieren Sie: 
+ Return 1: rot, size 2 
+ Return 2: green, size 3 
+ Return 3: blau, size 4 
+ Return 4: yellow, size 5 
+
+ Welche Beobachtungen machen Sie? 
+
+Ergebnis 
+
+NVIZ 
+
+ NVIZ = Visualisierungs- und Animationstool von 
+
+GRASS 
+
+ Stellt Daten dreidimensional dar 
+
+ Datei |NVIS (erfordert Tcl/Tk) 
+
+NVIZ 
+
+Ansicht zeichnen 
+
+Überhöhung 
+
+Betrachterhöhe 
+
+Betrachterentfernung 
+
+Drehung 
+
+Navigation im Raum / Betrachterposition 
+
+NVIZ 
+
+Konfiguration von Rasterflächen 
+
+NVIZ 
+
+Auflösung der Ausgabe 
+
+Auswahl von Topographie / Höhe / usw. 
+
+NVIZ 
+
+Konfiguration von Punktdaten 
+
+NVIZ 
+
+Auswahl des Punktlayers 
+
+Generelle Visualisierung 
+
+Darstellung als wirkliche 3D Punkte 
+
+Darstellung auf Oberfläche 
+
+Übung: Multiple returns 
+
+ Schreiben Sie die ersten und letzten (in diesem Fall 
+
+die zweiten) Returns in eigene Vektorlayer 
+(v.extract) 
+
+ Visualisieren Sie die Vektorlayer in NVIZ 
+
+Ergebnis 
+
+LiDAR Funktionen 
+
+ LiDAR Rohdaten = Punktwolken  
+   Alle Vektorfunktionen sind somit im Prinzip auch 
+
+LiDAR Funktionen 
+
+ Es gibt extra Funktionen speziell für LiDAR: 
+
+ Vektor | Lidar Analyse 
+
+ 
+ 
+
+ Ebenfalls wichtig ist die B-Spline Interpolation, 
+
+v.surf.bspline oder 
+ Raster | Interpoliere Oberflächen | Bilinear und Bikubisch 
+
+aus Vektorpunkten 
+
+Übung: DSM Generierung 
+
+ Interpolieren Sie ein DSM (digital surface model) mit 
+der B-Spline Methode. Überlegen Sie welche Punkte 
+Sie für die Interpolation verwenden müssen! 
+ Visualisieren Sie das DSM mit dem Orthofoto 
+
+„ortho_2001_t792_1m“ als „Farbe“ in NVIS 
+ 
+
+Ergebnis 
+
+Übung: DTM Generierung 
+
+ Die Erstellung eines DTM (digital terrain model) 
+
+gestaltet sich deutlich schwieriger!  
+
+ Generelle Schritte: 
+
+ 
+ 
+
+1.
+2. 
+3. 
+
+ 1. Führen Sie eine Kantenerkennung mit der 
+
+gesamten Punktwolke „elev_lidrural_mrpts“ durch  
+
+ 2. Führen Sie die Innenraumerkennung aus 
+
+Übung: DTM Generierung 
+
+ 3. Die Korrektur muss doppelt durchgeführt werden 
+ Nach dem ersten Durchlauf erhalten Sie die korrigierten 
+
+Daten sowie die Geländepunkte 
+
+ Führen Sie die Korrektur erneut aus (Eingabe sind jetzt die 
+
+korrigierten Daten vom 1. Schritt) und Sie erhalten als 
+Geländepunkte die tatsächlichen Punkte für das DTM 
+(klassifizierte Ausgabe = Punkte für ein DSM!) 
+
+ Interpolieren Sie nun das DTM mit der bekannten   
+
+B-Spline Methode. 
+
+ Visualisieren Sie das DTM mit dem Orthofoto 
+
+„ortho_2001_t792_1m“ als „Farbe“ in NVIS 
+ 
+
+Ergebnis 
+
+

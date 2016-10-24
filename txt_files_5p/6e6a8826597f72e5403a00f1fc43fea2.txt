@@ -1,0 +1,1056 @@
+Patterns of Walkability, Transit, and
+
+Recreation Environment for
+
+Physical Activity
+
+Marc A. Adams, PhD, MPH,1 Michael Todd, PhD,2 Jonathan Kurka, MS,1 Terry L. Conway, PhD,3
+
+Kelli L. Cain, MA,3 Lawrence D. Frank, PhD,4 James F. Sallis, PhD3
+
+Introduction: Diverse combinations of built environment (BE) features for physical activity (PA)
+are understudied. This study explored whether patterns of GIS-derived BE features explained
+objective and self-reported PA, sedentary behavior, and BMI.
+Methods: Neighborhood Quality of Life Study participants (N¼2,199, aged 20–65 years, 48.2%
+female, 26% ethnic minority) were sampled in 2001–2005 from Seattle / King County WA and
+Baltimore MD / Washington DC regions. Their addresses were geocoded to compute net residential
+density, land use mix, retail ﬂoor area ratio, intersection density, public transit, and public park and
+private recreation facility densities using a 1-km network buffer. Latent proﬁle analyses (LPAs) were
+estimated from these variables. Multilevel regression models compared proﬁles on accelerometer-
+measured moderate to vigorous PA (MVPA) and self-reported PA, adjusting for covariates and
+clustering. Analyses were conducted in 2013–2014.
+
+Results: Seattle region LPAs yielded four proﬁles, including low walkability/transit/recreation
+(L-L-L); mean walkability/transit/recreation (M-M-M); moderately high walkability/transit/
+recreation (MH-MH-MH); and high walkability/transit/recreation (H-HH). All measures were
+higher in the HHH than the LLL proﬁle (difference of 17.1 minutes/day for MVPA, 146.5
+minutes/week for walking for transportation, 58.2 minutes/week for leisure-time PA, and 2.2
+BMI points; all po0.05). Baltimore region LPAs yielded four proﬁles, including L-L-L; M-M-M;
+high land use mix, transit, and recreation (HLU-HT-HRA); and high intersection density, high
+retail ﬂoor area ratio (HID-HRFAR). HLU-HT-HRA and L-L-L differed by 12.3 MVPA
+minutes/day; HID-HRFAR and L-L-L differed by 157.4 minutes/week for walking for trans-
+portation (all po0.05).
+Conclusions: Patterns of environmental features explain greater differences in adults’ PA than the
+four-component walkability index.
+(Am J Prev Med 2015;49(6):878–887) & 2015 American Journal of Preventive Medicine
+
+From the 1Exercise Science and Health Promotion, School of Nutrition and
+Health Promotion, Arizona State University, Phoenix, Arizona; 2College of
+Nursing and Health Innovation, Arizona State University, Phoenix,
+Arizona; 3Department of Family and Preventive Medicine, School of
+Medicine, University of California, San Diego, California; and 4Schools
+of Population and Public Health and Community and Regional Planning,
+University of British Columbia, Vancouver, British Columbia, Canada
+
+Address correspondence to: Marc A. Adams, PhD, MPH, Exercise
+Science and Health Promotion, School of Nutrition and Health Promotion,
+Arizona State University, 500 N. Third Street (Mail Code 3020), Phoenix
+AZ 85004. E-mail: marc.adams@asu.edu.
+
+0749-3797/$36.00
+http://dx.doi.org/10.1016/j.amepre.2015.05.024
+
+Introduction
+
+M ost Americans do not meet physical activity
+
+(PA) guidelines.1 People live in neighbor-
+hoods that are mosaics of modiﬁable2,3 built
+environment (BE) features (e.g., walkability, access to
+public transportation, public park, private recreation
+facilities).4–7 Such features have been individually and
+consistently linked to PA among adults8–13 and have
+shown behavior-speciﬁc associations with different
+domains of PA (e.g., recreation, transportation).8,13–17
+Mixed evidence exists for relations of BEs with sedentary
+behaviors and obesity.18–22
+
+878 Am J Prev Med 2015;49(6):878–887
+
+& 2015 American Journal of Preventive Medicine  Published by Elsevier Inc.
+
+Adams et al / Am J Prev Med 2015;49(6):878–887
+
+879
+design of NQLS has been described previously.4,37 First, Census
+block groups in each region were screened based on the BE
+construct of walkability—deﬁned by GIS-derived measures of net
+residential density, land use mix, street connectivity, and retail
+ﬂoor area ratio (RFAR). Block groups were classiﬁed according to
+deciles of walkability scores and Census-derived median house-
+hold income, which were used to form a 2 (high versus low
+walkability) X 2 (high income versus low income) matrix, with
+eight neighborhoods per cell in each region.4 Second, participants
+(N¼2,199, aged 20–65 years, 48.2% female, 26% racial/ethnic
+minority) were systematically sampled and recruited across all four
+cells simultaneously over 12 months in each region to prevent
+seasonal bias. IRBs from participating institutions approved the
+study. Participants provided written informed consent.
+
+Emerging evidence suggests greater diversity of BE
+features23,24 and unique combinations of features25 may
+explain differences in PA and obesity better than
+individual features. Combinations of diverse neighbor-
+hood features have not been studied as often as single
+features in relation to PA domains.26 Capturing complex
+patterns of diverse features that include walkability,
+transportation, and recreation features is a challenge.
+
+Modern geodemographic methods23 for characterizing
+patterns of BE features in neighborhoods include factor
+analysis,27–29 modeling statistical interactions,30 or clas-
+sifying individuals into subgroups based on multidimen-
+sional patterns with techniques such as latent proﬁle
+analysis (LPA).25,31 LPA is a probability-based approach
+for grouping individuals based on patterns of responses
+across variables. LPA can help identify patterns of
+features that show functionally different relationships
+with PA and other health outcomes.
+
+Few studies have explored patterns of BE features. Two
+studies of adults found that patterns of perceived BE
+features supportive of PA had the highest moderate to
+vigorous PA (MVPA) and walking for transportation and
+recreation levels compared with unsupportive pat-
+terns.25,32 Studies suggest that certain combinations of
+self-reported BE features were more strongly related to
+meeting PA guidelines in adults than any single fac-
+tor.33,34 Three studies examined objectively measured BE
+features for adolescents’ PA,31,35,36 but none examined
+objectively measured features for adults’ PA.
+
+The current study examined whether unique patterns
+of BE features could be derived from a combination of
+seven GIS-measured indicators using LPA among adult
+residents in two metropolitan regions. Based on previous
+research,25,32 we hypothesized that multiple proﬁles
+would emerge, with at least one in each region reﬂecting
+an overall PA-supportive pattern. Our second aim was to
+examine how proﬁles related to accelerometer-measured
+PA and sedentary time, as well as self-reported PA,
+sedentary time, and BMI, after adjusting for covariates.
+We hypothesized that participants in neighborhoods
+characterized by an overall activity-supportive proﬁle,
+compared with the other proﬁles, would have the highest
+PA and lowest sedentary time and BMI.
+
+Methods
+Study Sample
+
+This analysis used data collected between 2001 and 2005 from the
+Neighborhood Quality of Life Study (NQLS),37 an observational
+study of BEs and health-related outcomes (e.g., PA, BMI)
+conducted in 32 neighborhoods from metropolitan Seattle / King
+County WA and Baltimore MD / Washington DC regions (here-
+after referred to as “Seattle” and “Baltimore,” respectively). The
+
+December 2015
+
+Neighborhood Environment Measures
+Because proximal environments around participants’ homes may
+be more important than the overall block group environment,18
+ESRI’s ArcGIS, version 10.0, was used to geocode participants’
+residences and measure seven features within 1-km street–network
+buffers uniquely for each residence.
+
+Neighborhood walkability4 represents an indicator of
+
+local
+
+accessibility and destinations near home, composed of
+
+1. net residential density—ratio of residential dwelling units to
+
+land area devoted to residential land use;
+
+2. street connectivity—number of intersections with three or
+land area—higher intersection
+more legs divided by total
+density corresponds to more direct paths between destinations;
+3. land use mix—diversity and evenness of accessible destinations
+based on ﬁve land use types (residential, retail/commercial,
+entertainment, food-related, and civic/institutional—including
+medical and government); values ranged from 0 (single land
+use) to 1 (even distribution across all ﬁve types); and
+
+4. RFAR—ratio of retail building ﬂoor areas divided by retail
+parcel land areas—low RFAR is a marker for areas with retail
+development likely accompanied by substantial parking space,
+whereas high RFAR is a marker for buildings with smaller set-
+backs from the street, indicating pedestrian-oriented design.
+
+Individual walkability components were included as four
+
+separate indicators in LPAs.
+
+Access to public transportation has differed strongly between
+neighborhoods and is predictive of PA,32,38,39 suggesting its impor-
+tance for characterizing neighborhoods. Transit and bus stop
+locations were obtained from transit providers and regional planning
+agencies. Transit density (combined bus and rail) was deﬁned as the
+number of stops/stations in a buffer divided by its land area.
+
+A comprehensive enumeration of parks, ﬁtness centers, com-
+munity recreation centers, swimming pools, and yoga and ball-
+room dance studios was conducted using information from park
+departments, parcel databases, and online and print business
+listings. Parks were deﬁned as freely accessible, improved, and
+unimproved green spaces based on these sources. Private recre-
+ation facilities included places where PA could occur and required
+payment (e.g., golf courses, ﬁtness facilities, dance studios).
+Separate park density and private recreation density variables
+were calculated as the number of locations divided by the buffer’s
+land area.
+
+880
+Measures
+
+Adams et al / Am J Prev Med 2015;49(6):878–887
+
+Participants wore ActiGraph accelerometers (Pensacola, FL; model
+7164 or 71256) on their right hip using an elastic belt during
+waking hours for 7 days to measure MVPA. Participants were
+asked to re-wear the accelerometer if o5 valid days or o66 valid
+hours across 7 days were obtained. Accelerometer data were scored
+using MeterPlus, version 4.0 (www.meterplussoftware.com), and a
+“valid day” was deﬁned as Z8 valid hours of wear, with non-wear
+deﬁned as Z30 consecutive minutes of zero activity counts. On
+valid days, within valid wearing time, each minute r100 counts
+was summed to compute total sedentary minutes. The duration of
+MVPA minutes was based on the 1-minute epochs and the
+Freedson 3-MET cut point for adults (Z1,952 counts).40 Average
+minutes of sedentary time and MVPA per valid wearing day, plus a
+dichotomous indicator of attaining 430 minutes/day of MVPA
+(approximating the 150 minutes/week guideline) were used in
+analyses. ActiGraph accelerometers have produced reliable and
+valid estimates of sedentary time41 and MVPA42 in adults.
+
+Participants completed the International Physical Activity
+Questionnaire (IPAQ) long form assessing walking for trans-
+portation, leisure-time PA, and sitting time over the last 7 days
+(IPAQ; www.ipaq.ki.se). Sitting time (minutes/week) was esti-
+mated from asking about time usually spent sitting on a weekday
+and on a weekend day and was operationalized as the weighted
+sum of ﬁve times the usual sitting minutes/day on weekdays plus
+two times the usual minutes/day on weekend days. Leisure-time
+PA (minutes/week) was operationalized as the sum of frequency
+(days/week) X duration (minutes/day) of walking, moderate-
+intensity PA, and vigorous-intensity PA. A similar measure was
+computed for usual minutes/week (i.e., days/week X minutes/day)
+of walking for transportation. IPAQ reliability (ρ¼0.80) and
+validity (ρ¼0.30) was similar to other self-reported PA measures
+when compared to accelerometers.43 Self-reported weight and
+height were used to calculate BMI.
+
+Participants answered questionnaire items assessing sex; age
+(years); race/ethnicity (non-Hispanic white versus non-white or
+Hispanic); annual household income (11 levels from o10,000 to
+4100,000); educational attainment (seven levels from seventh
+grade to completed graduate degree); number of motor vehicles
+and eligible drivers in household (continuous); marital or cohab-
+itation status (married or living together versus other); number of
+people in household (continuous); and years at current address
+(continuous).
+
+Statistical Analysis
+
+We used LPA to derive mutually exclusive proﬁles of observa-
+tions (i.e., patterns) that maximized between-class variance and
+minimized within-class variance across seven continuous indi-
+cators of neighborhood features. Adjustments were made for
+block group–level clustering via TYPE¼COMPLEX speciﬁcation
+under Mplus, version 7.11. LPA models were estimated sepa-
+rately in each region (Seattle, n¼1,287; Baltimore, n¼912) using
+net residential density, land use mix, intersection density, RFAR,
+transit density, park density, and private recreation density.
+Derived solutions ranged from one to ﬁve proﬁles or until model
+convergence was not obtained. Selection of proﬁle solutions was
+based on substantive interpretability, indices of model ﬁt, and
+within-proﬁle sample sizes. Relative model ﬁt and quality was
+
+judged using sample size–adjusted Bayesian information crite-
+rion (BIC) values. Upon selection of an appropriate and
+interpretable LPA solution for each region, respondents were
+assigned to the proﬁle for which their analytically derived
+probability of membership was highest.
+
+Next, using generalized linear mixed models in SAS, version 9.3,
+
+we examined relations of proﬁle membership to:
+
+1. meeting MVPA recommendations (PROC GLIMMIX);
+2. log-transformed accelerometer-measured MVPA and seden-
+
+tary minutes/day (2-4 PROC MIXED);
+
+3. log-transformed self-reported PA minutes/week (i.e., walking
+for transportation, leisure-time) and sitting time minutes per
+week; and
+
+4. BMI.
+
+As in the LPA step, analyses were conducted separately by
+region, and individual respondents were treated as nested within
+block groups. Block group–level
+intercepts were modeled as
+random effects. All analyses adjusted for the aforementioned
+demographic variables and accelerometer wear time when appro-
+priate. Figures present model-adjusted means, and for analyses of
+log-transformed measures, ﬁgures show anti-logged means and SE
+bars. The Appendix describes sedentary and BMI results. Analyses
+were conducted between 2013 and 2014.
+
+Results
+Table 1 presents descriptive statistics separately for
+Seattle and Baltimore region participants on demo-
+graphic and personal characteristics, PA and sedentary
+times, and neighborhood environment factors.
+Model ﬁt values indicated that a ﬁve-proﬁle solution
+(BIC¼30,800.7) was better than a four-proﬁle solution
+(BIC¼31,424.3) in Seattle;
+for Baltimore, ﬁve-proﬁle
+(BIC¼25,942.8) and four-proﬁle (BIC¼26,491.0) solu-
+tions were better
+solution
+(BIC¼27,853.6). Based on interpretability and the pres-
+ence of very small proportions and potentially unreliable
+estimates of the region’s sample in ﬁve-proﬁle solutions,
+four-proﬁle solutions for both Seattle and Baltimore were
+more plausible. Figures 1A and 1B present ﬁnal proﬁles
+and their variable patterns, with variable means stand-
+ardized to z-scores in each region.
+
+three-proﬁle
+
+than a
+
+For Seattle, the most common proﬁle, characterized by
+a combination of low values for residential density, land
+use mix, and intersection density, with relatively low
+values on public transit access and limited access to parks
+and private recreational facilities (“L-L-L”), comprised
+36.0% (n=463) of participants. The next most common
+proﬁle, characterized by mean (near 0) z-score values for
+walkability, transit access, and recreation access (“M-M-
+M”), comprised 35.8% (n=461) of participants. The third
+most common proﬁle, characterized by moderately
+positive z-score values (near 1.0) for walkability (except
+for residential density), transit access, and recreation
+
+www.ajpmonline.org
+
+Adams et al / Am J Prev Med 2015;49(6):878–887
+
+Table 1. Sample Descriptive Statistics and Participant Characteristics by
+Study Region
+
+Characteristic
+
+Seattle region
+
+Baltimore region
+
+Participant demographics and other
+characteristics
+
+M (SD) or %
+
+M (SD) or %
+
+Age (years)
+
+% Female
+
+% Hispanic non-white
+
+Highest education level (%)
+
+Less than high school diploma/GED
+
+Completed high school
+
+Some college or vocational training
+
+Completed college or university
+
+Completed graduate degree
+
+% Married/cohabiting
+
+Annual household income (in $1,000)
+
+Vehicles per adult in household
+
+Number of people in household
+
+Length of time at current residence
+(years)
+
+BMI
+
+Accelerometer measures
+
+44.0 (11.0)
+
+46.6 (10.7)
+
+45.2
+
+18.0
+
+1.6
+
+7.0
+
+28.8
+
+37.7
+
+25.3
+
+63.2
+
+52.3
+
+62.6
+
+2.5
+
+7.4
+
+22.9
+
+30.5
+
+36.7
+
+60.5
+
+60–69a (30–39,
+
+90–99b)
+
+1.1 (0.6)
+
+2.6 (1.4)
+
+9.3 (9.2)
+
+70–79a (40–49,
+
+100þb)
+1.0 (0.5)
+
+2.7 (1.4)
+
+10.3 (8.9)
+
+26.6 (5.5)
+
+27.2 (5.9)
+
+Sedentary time (minutes/day)
+
+494.4 (106.4)
+
+506.8 (105.2)
+
+MVPA (minutes/day)
+
+35.9 (24.9)
+
+28.7 (21.8)
+
+IPAQ
+
+Sitting time (minutes/week)
+
+2555.0 (1230.5)
+
+2553.7 (1253.4)
+
+Walking for transportation
+(minutes/week)
+
+174.0 (359.4)
+
+171.4 (302.8)
+
+Leisure time PA (minutes/week)
+
+255.4 (363.1)
+
+220.4 (324.0)
+
+GIS-measured features
+
+Residential density
+
+Land use mix
+
+Intersection density
+
+Retail ﬂoor area ratio
+
+Transit density
+
+Recreation density
+
+Park density
+
+3085.4 (3687.0)
+
+2500.5 (2326.2)
+
+0.2 (0.1)
+
+71.0 (22.6)
+
+0.4 (0.3)
+
+16.0 (9.8)
+
+1.6 (2.0)
+
+2.6 (1.7)
+
+0.2 (0.1)
+
+54.8 (27.9)
+
+0.4 (0.4)
+
+16.9 (13.5)
+
+1.3 (2.2)
+
+1.7 (1.5)
+
+aMedian value.
+b50th and 75th percentile values.
+GED, General Education Development; IPAQ, International Physical Activity Questionnaire; MVPA,
+moderate to vigorous physical activity; PA, physical activity.
+
+881
+access (“MH-MH-MH”), comprised
+21.8% (n=280) of participants. The
+least common proﬁle, characterized
+by high values (z-scores above or near
+2.0) for residential density, land use
+mix, RFAR,
+intersection density,
+transit access, and access to ﬁtness
+facilities and parks (“H-H-H”), com-
+prised 6.4% (n=83) of participants.
+
+Similar to Seattle, the most com-
+mon proﬁle for Baltimore had low
+walkability,
+low transit access, and
+low recreation access (“L-L-L”) and
+comprised 53.6% (n=489) of partic-
+ipants. The next most common pro-
+ﬁle, characterized by near mean levels
+of walkability, transit, and recreation
+access (“M-M-M”) for the region,
+included 36.6% (n=334) of partici-
+pants. The third proﬁle, characterized
+most prominently by high land use
+mix, high transit access, and high
+recreation access (“HLU-HT-HRA”),
+included 6.9% (n=63) of participants.
+The smallest proﬁle included 2.9%
+(n=26) of participants and also had
+high residential density, but was dis-
+tinguished from other proﬁles by very
+high intersection density and RFAR
+(“HID-HRFAR”) values.
+
+Figure 2 presents model-adjusted
+means
+for accelerometer-measured
+MVPA across latent proﬁles for Seat-
+tle and Baltimore regions, along with
+pairwise comparisons of means. For
+Seattle, tests of overall between-proﬁle
+differences were signiﬁcant for meet-
+ing PA recommendations and MVPA
+minutes per week. H-H-H partici-
+pants had an average of 49.2 MVPA
+minutes/day, and 77% attained at
+least 30 MVPA minutes/day on aver-
+age
+compared with 32.1 MVPA
+minutes/day and 43% in L-L-L par-
+ticipants, a signiﬁcant difference. M-
+M-M and MH-MH-MH participants
+did not differ signiﬁcantly from each
+other, but did differ signiﬁcantly from
+L-L-L participants. For Baltimore,
+HLU-HT-HRA participants differed
+signiﬁcantly on MVPA minutes from
+
+December 2015
+
+882
+
+Adams et al / Am J Prev Med 2015;49(6):878–887
+
+Figure 1. A. Four latent proﬁle derived neighborhood patterns for the Seattle-King County WA region. B. Four latent proﬁle
+derived neighborhood patterns for the Baltimore MD / Washington DC region.
+A z-score equal to ⫾1 reﬂects an indicator value ⫾ 1 SDs from the average value of that indicator in the region. L-L-L, low walkability, low transit
+access, and low recreation access; M-M-M, medium levels of walkability, transit access, and recreation access; MH-MH-MH, moderately high levels of
+walkability, transit access, and recreation access; H-H-H, high levels of walkability, transit access, and recreation access; HLU-HT-HRA, high land use
+mix, high transit access, and high recreation access; HID-HRFAR, very high intersection density and retail ﬂoor area ratio.
+
+L-L-L and M-M-M participants. However, HLU-HT-
+HRA and HID-HRFAR participants did not differ
+signiﬁcantly from each other, nor did L-L-L and M-M-
+M. HLU-HT-HRA participants had 40.7 MVPA minutes/
+day and 56% attained Z30 MVPA minutes/day on
+average compared with 28.4 MVPA minutes/day and
+35% in L-L-L participants.
+
+Figure 3 shows that minutes/week of walking for
+transportation differed across proﬁles in both regions
+(po0.05). Seattle L-L-L participants reported signiﬁcantly
+
+fewer minutes of walking for
+transportation (13.7
+minutes/week) than M-M-M (28.0 minutes/week) and
+MH-MH-MH (60.8 minutes/week) participants, which
+were all signiﬁcantly lower than H-H-H participants
+(160.2 minutes/week). The same relative ordering was
+seen across Baltimore proﬁles, with L-L-L participants
+(18.2 minutes/week) reporting signiﬁcantly fewer minutes
+of walking for transportation than HLU-HT-HRA (107.1
+minutes/week) and HID-HRFAR (175.6 minutes/week)
+participants. No signiﬁcant differences were observed
+
+www.ajpmonline.org
+
+Adams et al / Am J Prev Med 2015;49(6):878–887
+
+883
+
+Figure 2. Adjusted means for accelerometer-derived MVPA by latent proﬁle in Seattle WA and Baltimore MD / Washington DC regions.
+Note: Accelerometer-derived MVPA recommendations and minutes per day adjusted for accelerometer wear time and sex, age, race/ethnicity, annual household
+income, educational attainment, number of motor vehicles and eligible drivers in household, marital or cohabitation status, number of people in household, and
+years at current address; Within each panel, non-signiﬁcant comparisons are reﬂected across proﬁles by bars with matching colors or matching patterns. Values
+reﬂect anti-logged model-adjusted means and SE bars.
+
+between L-L-L and M-M-M participants or between
+HLU-HT-HRA and HID-HRFAR participants in Balti-
+more. Leisure-time PA minutes/week differed signiﬁ-
+cantly in Seattle but not Baltimore. In Seattle, H-H-H
+(117.3 minutes/week) and MH-MH-MH (88.5 minutes/
+week) participants differed signiﬁcantly from L-L-L (59.1
+minutes/week) and M-M-M (54.8 minutes/week) partic-
+ipants. Figure 4 presents adjusted BMI values across
+proﬁles in each region after adjusting for covariates.
+
+Discussion
+Meaningful activity-supportive proﬁles emerged from
+seven GIS-measured environmental variables and were
+positively and strongly related to accelerometer-derived
+MVPA; walking for transportation; leisure-time PA; and
+BMI (albeit less consistently). Relations between proﬁles
+and sedentary time were not supported.
+
+In contrast to the main NQLS outcome analysis,37 the
+current analysis examined patterns and a more-diverse
+set of objective features within regions. In the main
+NQLS analysis, participants from block groups ranked as
+high versus low on GIS-measured walkability differed
+signiﬁcantly by a maximum of 5.8 minutes/day for
+accelerometer-measured MVPA, 31.5 minutes/week for
+walking for transportation, 4.3 minutes/week for leisure-
+time PA, and non-signiﬁcantly by 0.4 points for BMI.37
+In the current analysis, Seattle region proﬁles differed by
+as much as 17.1 minutes/day for accelerometer-
+measured MVPA, 147.0 minutes/week for walking for
+transportation, 57.6 minutes/week for leisure-time PA,
+and 2.2 points for BMI. Baltimore proﬁles differed by as
+much as 12.3 accelerometer-measured MVPA minutes/
+day and 157.2 minutes/week for walking for trans-
+portation. Relative to the main NQLS analyses, the
+latent proﬁles explained at least a twofold difference in
+
+December 2015
+
+884
+
+Adams et al / Am J Prev Med 2015;49(6):878–887
+
+Figure 3. Latent proﬁles and self-reported physical activity in Seattle WA and Baltimore MD / Washington DC regions.
+Note: Walking for transportation and leisure-time PA adjusted for sex, age, race/ethnicity, annual household income, educational attainment, number
+of motor vehicles and eligible drivers in household, marital or cohabitation status, number of people in household, and years at current address;
+Within each panel, non-signiﬁcant comparisons are reﬂected across proﬁles by bars with matching colors or matching patterns. Values reﬂect anti-
+logged model-adjusted means and SE bars.
+
+MVPA minutes/day, approximately ﬁvefold difference
+in both walking for transportation minutes/week and
+BMI, and 13-fold difference in leisure activity minutes/
+week.
+
+Differences between current and main NQLS results
+
+could be explained by
+
+1. operationalizing neighborhood as a 1-km network
+buffer (versus block group), as block groups can
+include features made inaccessible by barriers like
+freeways or rivers and can exclude accessible features
+just across block group boundaries;
+
+2. inclusion of transit, parks, and recreation facilities,
+allowing for more-complex BE patterns to emerge and
+contributing to a more-comprehensive picture of
+neighborhoods;
+
+3. speciﬁc feature patterns resulting from the LPA
+
+methodology; or
+
+4. some combination of these methodologic components.
+
+In sum, region-speciﬁc latent proﬁles explained greater
+differences in PA than the four-component block group
+walkability index.37
+
+There were regional similarities and differences in
+emergent proﬁles. In both regions, we identiﬁed activity-
+unsupportive proﬁles (i.e., L-L-L) and a type of activity-
+supportive proﬁle (i.e., H-H-H or HLU-HT-HRA). In
+both regions,
+the largest proportion of participants
+resided in PA-unsupportive neighborhoods, whereas
+the fewest resided in activity-supportive neighborhoods.
+This is not surprising, as U.S. cities are known to have a
+high prevalence of sprawl and limited recreation and
+transit access compared with other countries.24,44,45
+Proﬁles suggest that improving pedestrian access to
+destinations, transit, public parks, and recreation facili-
+ties may result
+in progressively higher MVPA and
+walking for transportation in both regions compared
+with neighborhoods with fewer walkable, transit, and
+recreation features (e.g., L-L-L). For leisure-time PA and
+
+www.ajpmonline.org
+
+Adams et al / Am J Prev Med 2015;49(6):878–887
+
+885
+
+Figure 4. Adjusted means for BMI by latent proﬁle in Seattle WA and Baltimore MD / Washington DC regions.
+Note: BMI adjusted for sex, age, race/ethnicity, annual household income, educational attainment, number of motor vehicles and eligible drivers in
+household, marital or cohabitation status, number of people in household, and years at current address; Within each panel, non-signiﬁcant
+comparisons are reﬂected across proﬁles by bars with matching colors or matching patterns. Values reﬂect model-adjusted means and SE bars.
+
+BMI, the signiﬁcant differences in Seattle and lack of
+differences in Baltimore across proﬁles are difﬁcult to
+explain, but may be a function of speciﬁc feature
+combinations in “activity-supportive” proﬁles, relatively
+lower street connectivity in HLU-HT-HRA, or unmeas-
+ured aspects such as lack of amenities, trafﬁc, or safety
+concerns modulating use of recreation environments or
+lack of nutrition environments for BMI. Results for
+sedentary behavior support previous mixed ﬁndings.18–22
+LPA studies of self-reported feature combinations among
+U.S. adults,25 older adults,32 and international samples34
+parallel the current analysis by including perceived indicators
+of walkability, public transit, and recreation features, but
+differ by including aspects difﬁcult to measure objectively
+such as aesthetics, crime and trafﬁc safety, and pedestrian/
+cycling facilities. Latent proﬁle/class analyses based on self-
+reported measures also have identiﬁed activity-unsupportive
+and -supportive proﬁles across a diverse set of measures.
+Consistent with present
+results, perceived activity-
+unsupportive proﬁles had the greatest proportion of people
+and lowest PA levels compared with higher levels of
+supportive features. LPA using self-reported and objective
+BE measures agree that more-comprehensive characteriza-
+tions of environments strengthen associations with both
+objective and self-reported PA. BMI results are inconsistent,
+perhaps because of lack of nutrition environment measures.
+
+Limitations
+Similar results for objective and self-reported PA
+measures
+limit concerns of common source bias.
+Analyses controlled for design effects and several
+
+December 2015
+
+variables,
+
+robust
+
+suggesting
+
+confounding
+results.
+Because cross-sectional designs do not allow for evalu-
+ation of cause–effect relations, future studies should
+examine the utility of
+latent proﬁles for predicting
+changes to PA and incidence of health outcomes.
+Residential self-selection was not accounted for, and
+we could not conﬁrm that participants engaged in PA
+inside of neighborhoods. Previous studies suggest self-
+selection may attenuate, but not extinguish, the effect of
+the BE on PA. Amenities available in parks, transit
+service levels, and other microscale and qualitative
+features (e.g., sidewalks or safety from trafﬁc and crime)
+could have produced a different number or pattern of
+proﬁles; unfortunately, objective measures of
+these
+aspects were unavailable.
+
+Conclusions
+Current results add to growing evidence that more-
+comprehensive characterizations of BE strengthen
+associations with PA. Walkability, recreation, and
+transit features of neighborhood environments should
+be measured and considered in planning and policy
+decisions.
+
+Support provided by American Heart Association’s Beginning
+Grant in Aid (12BGIA9280017 PI: Adams) and the National
+Heart, Lung, and Blood Institute (HL67350). The study
+sponsors had no role in manuscript preparation or the decision
+to submit for publication.
+
+No ﬁnancial disclosures were reported by the authors of
+
+this paper.
+
+886
+
+Adams et al / Am J Prev Med 2015;49(6):878–887
+
+References
+1. Troiano RP, Berrigan D, Dodd KW, Masse LC, Tilert T, McDowell M.
+Physical activity in the United States measured by accelerometer. Med
+Sports Exerc. 2008;40(1):181–188. http://dx.doi.org/10.1249/
+Sci
+mss.0b013e31815a51b3.
+
+2. King AC, Sallis JF, Frank LD, et al. Aging in neighborhoods differing in
+walkability and income: associations with physical activity and obesity
+in older adults. Soc Sci Med. 2011;73(10):1525–1533. http://dx.doi.org/
+10.1016/j.socscimed.2011.08.032.
+
+3. Ding D, Gebel K. Built environment, physical activity, and obesity: what
+have we learned from reviewing the literature? Health Place. 2012;18
+(1):100–105. http://dx.doi.org/10.1016/j.healthplace.2011.08.021.
+
+4. Frank LD, Sallis JF, Saelens BE, et al. The development of a walkability
+index: application to the Neighborhood Quality of Life Study. Br J
+Sports Med. 2010;44(13):924–933. http://dx.doi.org/10.1136/bjsm.
+2009.058701.
+
+5. Leslie E, Coffee N, Frank L, Owen N, Bauman A, Hugo G. Walkability of
+local communities: using geographic information systems to objectively
+assess relevant environmental attributes. Health Place. 2007;13(1):111–
+122. http://dx.doi.org/10.1016/j.healthplace.2005.11.001.
+
+6. Frank LD, Schmid TL, Sallis JF, Chapman J, Saelens BE. Linking
+objectively measured physical activity with objectively measured urban
+form: ﬁndings from SMARTRAQ. Am J Prev Med. 2005;28(2 suppl 2):
+117–125. http://dx.doi.org/10.1016/j.amepre.2004.11.001.
+
+7. Frank LD, Engelke PO, Schmid TL. Health and Community Design:
+The Impact of the Built Environment on Physical Activity. Washington,
+DC: Island Press; 2003.
+
+8. Kaczynski AT, Henderson KA. Parks and recreation settings and active
+living: a review of associations with physical activity function and
+intensity. J Phys Act Health. 2008;5(4):619–632.
+
+9. Kaczynski AT, Henderson KA. Environmental correlates of physical
+activity: a review of evidence about parks and recreation. Leisure Sci.
+2007;29(4):315–354. http://dx.doi.org/10.1080/01490400701394865.
+
+10. Besser LM, Dannenberg AL. Walking to public transit: steps to help
+meet physical activity recommendations. Am J Prev Med. 2005;29(4):
+273–280. http://dx.doi.org/10.1016/j.amepre.2005.06.010.
+
+11. Forsyth A, Oakes JM, Schmitz KH, Hearst M. Does residential density
+increase walking and other physical activity? Urban Stud. 2007;44
+(4):679–697. http://dx.doi.org/10.1080/00420980601184729.
+
+12. MacDonald JM, Stokes RJ, Cohen DA, Kofner A, Ridgeway GK. The effect
+of light rail transit on body mass index and physical activity. Am J Prev
+Med. 2010;39(2):105–112. http://dx.doi.org/10.1016/j.amepre.2010.03.016.
+13. Saelens BE, Handy SL. Built environment correlates of walking: a
+review. Med Sci Sports Exerc. 2008;40(7 suppl):S550–S566. http://dx.
+doi.org/10.1249/MSS.0b013e31817c67a4.
+
+14. Gebel K, Bauman AE, Petticrew M. The physical environment and
+physical activity: a critical appraisal of review articles. Am J Prev Med.
+2007;32(5):361–369. http://dx.doi.org/10.1016/j.amepre.2007.01.020.
+
+15. Sallis JF, Kerr J. Physical activity and the built environment. In: Young D,
+Pangrazi RP, Ainsworth BE, eds. President’s Council on Physical Fitness
+and Sports Research Digest. 2006.
+
+16. Heath GW, Brownson RC, Kruger J, Miles R, Powell KE, Ramsey LT.
+Task Force on Community Preventive Services. The effectiveness of
+urban design and land use and transport policies and practices to
+increase physical activity: a systematic review. J Phys Act Health. 2006;
+3(suppl 1):S55–S76.
+
+17. Giles-Corti B, Timperio A, Bull F, Pikora T. Understanding physical
+activity environmental correlates: increased speciﬁcity for ecological
+models. Exerc Sport Sci Rev. 2005;33(4):175–181. http://dx.doi.org/
+10.1097/00003677-200510000-00005.
+
+18. Feng J, Glass TA, Curriero FC, Stewart WF, Schwartz BS. The built
+environment and obesity: a systematic review of the epidemiologic
+evidence. Health Place. 2010;16(2):175–190. http://dx.doi.org/10.1016/
+j.healthplace.2009.09.008.
+
+19. Durand CP, Andalib M, Dunton GF, Wolch J, Pentz MA. A systematic
+review of built environment factors related to physical activity and obesity
+risk: implications for smart growth urban planning. Obes Rev. 2011;12(5):
+e173–e182. http://dx.doi.org/10.1111/j.1467-789X.2010.00826.x.
+
+20. Sugiyama T, Salmon J, Dunstan DW, Bauman AE, Owen N.
+Neighborhood walkability and TV viewing time among Australian
+adults. Am J Prev Med. 2007;33(6):444–449. http://dx.doi.org/10.1016/
+j.amepre.2007.07.035.
+
+21. Van Dyck D, Cerin E, Conway TL, et al. Associations between perceived
+neighborhood environmental attributes and adults’ sedentary behavior:
+ﬁndings from the U.S.A., Australia and Belgium. Soc Sci Med. 2012;74
+(9):1375–1384. http://dx.doi.org/10.1016/j.socscimed.2012.01.018.
+
+22. Van Dyck D, Cardon G, Deforche B, Owen N, Sallis JF, De
+Bourdeaudhuij I. Neighborhood walkability and sedentary time in
+Belgian adults. Am J Prev Med. 2010;39(1):25–32. http://dx.doi.org/
+10.1016/j.amepre.2010.03.004.
+
+23. Singleton AD, Spielman SE. The past, present and future of geodemo-
+graphic research in the United States and United Kingdom. Prof Geogr.
+2014;66(4):558–567. http://dx.doi.org/10.1080/00330124.2013.848764.
+24. Sallis JF, Bowles HR, Bauman A, et al. Neighborhood environments
+and physical activity among adults in 11 countries. Am J Prev Med.
+2009;36(6):484–490. http://dx.doi.org/10.1016/j.amepre.2009.01.031.
+
+25. Adams MA, Sallis JF, Kerr J, et al. Neighborhood environment proﬁles
+related to physical activity and weight status: a latent proﬁle analysis. Prev
+Med. 2011;52(5):326–331. http://dx.doi.org/10.1016/j.ypmed.2011.02.020.
+26. Ewing R, Cervero R. Travel and the built environment. J Am Plann Assoc.
+
+2010;76(3):265–294. http://dx.doi.org/10.1080/01944361003766766.
+
+27. Cerin E, Conway TL, Saelens BE, Frank LD, Sallis JF. Cross-validation
+of the factorial structure of the Neighborhood Environment Walk-
+ability Scale (NEWS) and its abbreviated form (NEWS-A). Int J Behav
+Nutr Phys Act. 2009;6:32. http://dx.doi.org/10.1186/1479-5868-6-32.
+
+28. Cervero R, Duncan M. Walking, bicycling, and urban landscapes:
+evidence from the San Francisco Bay Area. Am J Public Health. 2003;
+93(9):1478–1483. http://dx.doi.org/10.2105/AJPH.93.9.1478.
+
+29. Messer LC, Laraia BA, Kaufman JS, et al. The development of a
+standardized neighborhood deprivation index. J Urban Health. 2006;
+83(6):1041–1062. http://dx.doi.org/10.1007/s11524-006-9094-x.
+
+30. Ding D, Adams MA, Sallis JF, et al. Perceived neighborhood environ-
+ment and physical activity in 11 countries: do associations differ by
+country? Int J Behav Nutr Phys Act. 2013;10:57. http://dx.doi.org/
+10.1186/1479-5868-10-57.
+
+31. Norman GJ, Adams MA, Kerr J, Ryan S, Frank LD, Roesch SC. A latent
+proﬁle analysis of neighborhood recreation environments in relation to
+adolescent physical activity, sedentary time, and obesity. J Public
+Health Manag Pract. 2010;16(5):411–419. http://dx.doi.org/10.1097/
+PHH.0b013e3181c60e92.
+
+32. Adams MA, Sallis J, Conway T, et al. Neighborhood environment
+proﬁles related to physical activity and weight status among seniors:
+a latent proﬁle analysis. Am J Health Behavior. 2012;36(6):757–769.
+http://dx.doi.org/10.5993/AJHB.36.6.4.
+
+33. Troped PJ, Tamura K, Whitcomb HA, Laden F. Perceived built
+environment and physical activity in U.S. women by sprawl and
+region. Am J Prev Med. 2011;41(5):473–479. http://dx.doi.org/10.1016/
+j.amepre.2011.07.023.
+
+34. Adams MA, Ding D, Sallis JF, et al. Patterns of neighborhood
+environment attributes related to physical activity across 11 countries:
+a latent class analysis. Int J Behav Nutr Phys Act. 2013;10:34. http://dx.
+doi.org/10.1186/1479-5868-10-34.
+
+35. Wall MM, Larson NI, Forsyth A, et al. Patterns of obesogenic
+neighborhood features and adolescent weight: a comparison of
+statistical approaches. Am J Prev Med. 2012;42(5):e65–e75. http://dx.
+doi.org/10.1016/j.amepre.2012.02.009.
+
+36. McDonald K, Hearst M, Farbakhsh K, et al. Adolescent physical activity
+and the built environment: a latent class analysis approach. Health Place.
+2012;18(2):191–198. http://dx.doi.org/10.1016/j.healthplace.2011.09.004.
+
+www.ajpmonline.org
+
+Adams et al / Am J Prev Med 2015;49(6):878–887
+
+887
+
+37. Sallis JF, Saelens BE, Frank LD, et al. Neighborhood built environment
+and income: examining multiple health outcomes. Soc Sci Med. 2009;68
+(7):1285–1293. http://dx.doi.org/10.1016/j.socscimed.2009.01.017.
+
+38. Saelens BE, Vernez Moudon A, Kang B, Hurvitz PM, Zhou C. Relation
+between higher physical activity and public transit use. Am J Public
+Health. 2014;104(5):854–859. http://dx.doi.org/10.2105/AJPH.2013.
+301696.
+
+39. Zwald ML, Hipp JA, Corseuil MW, Dodson EA. Correlates of walking
+for transportation and use of public transportation among adults in St
+Louis, Missouri, 2012. Prev Chronic Dis. 2014;11:E112. http://dx.doi.
+org/10.5888/pcd11.140125.
+
+40. Freedson PS, Melanson E, Sirard J. Calibration of the Computer Science
+and Applications, Inc. accelerometer. Med Sci Sports Exerc. 1998;30
+(5):777–781. http://dx.doi.org/10.1097/00005768-199805000-00021.
+
+41. Kozey-Keadle S, Libertine A, Lyden K, Staudenmayer J, Freedson PS.
+Validation of wearable monitors for assessing sedentary behavior. Med
+Sci Sports Exerc. 2011;43(8):1561–1567. http://dx.doi.org/10.1249/
+MSS.0b013e31820ce174.
+
+42. Welk GJ, Schaben JA, Morrow Jr. Reliability of accelerometry-based
+activity monitors: a generalizability study. Med Sci Sports Exerc.
+2004;36(9):1637–1645.
+
+43. Craig CL, Marshall AL, Sjostrom M, et al. International Physical
+Activity Questionnaire: 12-country reliability and validity. Med Sci
+Sports Exerc. 2003;35(8):1381–1395. http://dx.doi.org/10.1249/01.
+MSS.0000078924.61453.FB.
+
+44. Ewing R, Schmid T, Killingsworth R, Zlot A, Raudenbush S. Relation-
+ship between urban sprawl and physical activity, obesity, and morbid-
+ity. Am J Health Promot. 2003;18(1):47–57. http://dx.doi.org/10.4278/
+0890-1171-18.1.47.
+
+45. Adams MA, Frank LD, Schipperijn J, et al. International variation in
+neighborhood walkability,
+transit, and recreation environments
+using geographic information systems: the IPEN adult study. Int
+J Health Geogr. 2014;13(1):43. http://dx.doi.org/10.1186/1476-072X-
+13-43.
+
+Appendix
+Supplementary data
+
+Supplementary data associated with this article can be found at,
+http://dx.doi.org/10.1016/j.amepre.2015.05.024.
+
+December 2015
+
+

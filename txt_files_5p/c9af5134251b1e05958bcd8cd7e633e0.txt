@@ -1,0 +1,1124 @@
+Grundlagen der physikalischen Chemie 
+
+Praktikum
+
+Leitfähigkeit starker und schwacher Elektrolyte
+
+28.10.2014
+
+2. Abgabe – 04.11.2014
+
+Gruppe 17 - Sören Vinke, Zunhao Wang, Niklas Schweinitz
+
+Email: nikson@gmx.de
+
+Versuchsbetreuer: Felix Alexander Henkel, Hendrik Vorwerk
+
+Aufgabenstellung
+
+ 1.
+Ziel   des   Versuch   ist   es   die   Geschwindigkeitskonstante   k   der   Verseifung   von 
+Essigsäureethylester zu bestimmen. Dies soll durch die Protokollierung der spezifischen 
+Leitfähigkeit in kurzen Zeitabständen geschehen. Durch den Verlauf des resultierenden 
+Graphen sollen nun Rückschlüsse auf den Mechanismus der Reaktion und die Werte für die 
+Aktivierungsenergie, Aktivierungsenthalpie und Aktivierungsentropie gemacht werden.
+
+ 2. Durchführung
+Bevor wir mit der eigentlichen Messung beginnen, wird das Leitfähigkeitsmessgerät durch 
+eine   wässrige   KCL-Eichlösung   kalibriert.   Das   Messgerät   korrigiert   die   Werte   mit   der 
+Zellkonstante   Z ,   welche   der   Umrechnungsfaktor   und   somit   der   Unterschied   des 
+gemessenen Wertes und dem Sollwert ist. Ist das Messgerät kalibriert wird eine Nulllösung 
+angesetzt, da wir den Anfangswert für die Leitfähigkeit kaum bestimmen können, weil eine 
+rasche Reaktion zu Beginn der Messung ein genaues Ablesen des Messwertes verhindert. 
+Dazu werden 40ml NaOH (0,1 mol/l) mit 60ml Wasser vermischt und die Leitfähigkeit 
+gemessen. Dieser Wert steht für die Sekunde  Null.  Danach wird das Messgerät erneut 
+Gewaschen und
+mit einer Klammer über ein Becherglas fixiert. In dieses Becherglas wird 20ml Wasser 
+gegeben, dann wird gleichzeitig 40ml NaOH und 40ml Esterlösung hinzugegeben. Mit einer 
+Stopuhr werden in 15 Sekunden Abständen die Leitfähigkeit gemessen, nach 5 Minuten 
+wird der Zeitintervall auf 30 Sekunden erweitert, nach weiteren 5 Minuten auf 1 Minuten 
+Intervalle.
+
+Auswertung
+
+ 3.
+Für   die   Rechnungen   sind   viele   Werte   zu   kennen.   Hier   sind   die   Wichtigsten   kurz 
+zusammengefasst.   Das   Messgerät   selber   korrigiert   die   Leitfähigkeit   so,   dass   wir   die 
+Temperatur  T =20°C  annehmen können.
+
+Zellkonstante und Anfangsleitfähigkeit:
+
+Endleitfähigkeit:
+
+Ionenbeweglichkeit und Faradaykonstante:
+
+Z=1,067 ;
+κb=9,41 mS
+cm
+
+κa=5,84 mS
+cm
+
+uNa=4,5∗10−4 cm 2
+sV ;
+uOH=18,0∗10−4 cm2
+sV ;
+u Ac=3,6∗10−4 cm2
+sV ;
+F≈9,65∗104 C
+mol
+
+Mit diesen Werten ist es nun möglich die Anfangskonzentrationen b (für Hydroxydionen) 
+und a (für Acetationen) zu errechnen. Man nimmt die Formel der spezifischen Leitfähigkeit, 
+welche   die   Faradaykonstante   mit   der   Summe   der   Konzentrationen   und   den 
+Ionenbeweglichkeiten der beteildigten Ionen multipliziert. 
+
+κ=F∗∑ (ci∗ui) [1]
+
+Für die Leitfähigkeit zu Beginn können wir daher die Anzahl der Acetationen als  Null 
+annehmen,   d.h.   in  Formel   1  kann   die   momentane   Konzentration   x   und   die 
+Ionenbeweglichkeit   u Ac   von   den   Ac-Ionen   vernachlässigt   werden   und   wir   erhalten 
+folgenden Ausdruck:
+
+κb=F∗b∗(uNa+uOH ) [2].
+
+Stellen wir die  Formel 2  nach der Konzentration der Hydroxylionen   b   um, erhalten wir 
+folgendnen Ausdruck:
+
+b=
+
+κ b
+
+F∗(u Na+uOH ) [3]
+
+Mit Einsetzen der Werte erhalten wir die Konzentration der OH-Ionen:
+
+b=
+
+9,41 mS
+cm
+sV +18,0∗10−4 cm2
+mol ∗(4,5∗10−4 cm2
+sV )
+
+=
+
+9,41∗10−3 A
+Vcm
+9,65∗22,5 Acm2
+Vmol
+
+9,65∗104 As
+Für   die   Konzentration   der   Acetationen,   nehmen   wir   die   Funktion   der   momentanen 
+Konzentration:
+
+=43,34∗10−6 mol /cm3=43,34 mmol /l
+
+x Ac=
+
+κb−κ
+
+F∗(uOH−uAc) [4]
+
+, mit   κ als unsere Werte der Leitfähigkeitsmessung. Für die Konzentration der Ac-Ionen 
+nehemen wir die Endleitfähigkeit  κa=κ , da dort die höchste Konzentration  a  an Teilchen 
+ist:
+
+a=
+
+κb−κa
+
+F∗(uOH−u Ac) [5].
+
+Setzen wir die Werte ein erhalten wir die Konzentration der Ac-Ionen:
+
+a=
+
+(9,41−5,84 mS
+cm )
+sV −3,6∗10−4 cm2
+mol ∗(18,0∗10−4 cm2
+sV )
+
+9,65∗104 As
+
+=
+
+ 
+3,57∗10−3 A
+Vcm
+9,65∗14,4 Acm2
+Vmol
+
+=25,69∗10−6 mol /cm3=25,69mmol /l
+
+Im Anhang finden sie die Messergebnisse für die Leitfähigkeitsmessung (Tabelle 1, Graph 
+1) und die Werte für die Ac-Ionenkonzentration in Abhängigkeit von der Zeit  t (Tabelle 2, 
+Graph 2). Für die Werte der Tabelle 2 wird für jeden Leitfähigkeitswert  κ  aus Tabelle 1 die 
+Formel 4 angewand.
+
+Für die weitere Auswertung ist die Bestimmung der Geschwindigkeitskonstante  k  nötig. 
+Hierzu sehen wir uns das Geschwindigkeitsgesetz der Esterverseifung an.
+
+dcOH
+dt =−k∗cOH∗cE [6]
+
+cOH  ist hier nicht als die Anfangskonzentration  b  von den Hydroxydionen zu verstehen. 
+Sondern vielmehr diesem Ausdruck ähnlich:
+
+cOH=b−x [7].
+
+dcOH
+dt =
+
+−dx
+dt
+
+[8] , da   b   zeitlich konstant ist und nur   x   sich im Verlauf der 
+Damit wird  
+Reaktion ändert. Wir setzen nun Formel 7 sowie Formel 8 in Formel 6 ein und erhalten 
+eine neue Formel für das Geschwindigkeitsgesetz mit bekannten Variablen:
+
+dx
+dt =k∗(a – x)∗(b−x)
+
+[9].
+
+Im letzten Schritt der Umformung integrieren wir die Funktion aus Formel 9 :
+
+ln[
+
+(a – x)b
+(b – x)a ]=k∗(a−b)∗t
+
+[10].
+
+Wenn wir die Funktion nach  k∗t  umstellen, können wir sehen, dass mit Linken Term auf 
+unsere   Messergebnisse   und   errechneten   Werte   angewendet   wir   eine   Art 
+Geradengleichung bekommen:
+
+f (x )=m∗t .
+
+(a – x)b
+(b – x)a ]
+(a−b)
+
+Hier ist   m   unsere Steigung der Geraden und gleich dem Term   k .   f (x ) ist unser Term 
+ln[
+
+ . Tragen wir  f (x )  gegen  t in Graph 3 (siehe Anhang) auf erhalten wir mit der 
+Steigung die Geschwindigkeitskonstante   k . Die Werte für   f (x )   sind in  Tabelle 3  im 
+Anhang zusammengefasst. 
+Aus der Ausgleichsgeraden in Graph 3 können wir die Steigung festlegen und somit auch 
+die Geschwindigkeitskonstante.
+
+m=k≈0,0502
+
+l
+
+mmol∗s
+
+Mit der ermittelten Geschwindigkeitskonstante und der Arrhenius Gleichung können wir 
+nun die Aktivierungsenergie bestimmen. Dazu stellen wir die Gleichung um sodass auf der 
+einen Seite nur die Energie steht.
+
+Arrhenius-Gl.:  k= A∗e
+=> [ln(A)−ln (k )]R T =E A [11]
+
+−E A
+R∗T
+
+Wir   nehmen   an,   dass   sich   mit   100%iger   Wahrscheinlichkeit   zwei   Edukte   stoßen   und 
+reagieren, d.h. der Präexponentielle Faktor  A ist gleich Eins . Mit T = 293,15 K, R = 8,3145 
+J/K mol und k = 2,41 können wir die Aktivierungsenergie  E A  berechnen.
+K ∗293,15 K =7,292 kJ
+
+E A=[ln (1)−ln(2,41)]∗8,3145 J
+
+Für die Aktivierungsenthalpie  Δ H  nehmen wir die Eyring-Theorie zur Hilfe, sie postuliert 
+eine   Formel   mit   der   eine   genauere   Betrachtung   des   Potentialwalls   einer   Reaktion 
+(Aktivierungsenergie) möglich ist. Aus der Theorie folgt:
+
+k =κ∗(
+
+k B∗T
+h
+
+−Δ G
+RT
+
+)∗e
+
+[12]
+
+Aus der Kinetik wissen wir, dass wir mit der Legrange-Transformation   ΔG=Δ H −T Δ S
+(Gibbs-Helmholtz-Gl.) wir die Formel 12 umschreiben können:
+
+k =κ∗(
+
+k B∗T
+h
+
+Δ S
+R ∗e
+
+−Δ H
+RT
+
+)∗e
+
+[13]
+
+Formel 13 (auch Formel 12) erinnert stark an die Arrhenius Gleichung, d.h. durch ähnliche 
+Umformung (siehe oben) können wir folgende Gleichung aufstellen:
+
+Δ H =E A−RT [14].
+
+Einsetzten der Werte liefert uns für die Aktivierungsenthalpie
+
+  Δ H =7,292 kJ −8,3145 J
+
+K ∗293,15 K=4,855kJ . 
+
+Desweiteren   können   wir  Formel   14  in  Formel   13  einsetzten   um   die   Entropie   Δ S zu 
+bestimmen.
+
+k =κ∗(
+
+k B∗T
+h
+
+RT
+RT∗e
+
+−E A
+RT ∗e
+
+ΔS
+R
+
+)∗e
+
+[15]
+
+Sezten   wir   nun  Formel   15  mit   der  Arrehnius-Gleichung  gleich   können   wir   geschickt 
+umformen:
+
+A=e∗κ∗(
+
+k B∗T
+h
+
+ΔS
+R
+
+)e
+
+Δ S =R∗ln[
+
+=> 
+
+Ah
+e κ k B T ]
+
+[16]
+
+Ein letztes Einsetzten der Werte (mit h=6,626∗10−34 Js ,   k B=1,381∗10−13 J / K ,   κ=1 ) gibt 
+uns die Aktivierungsentropie 
+Δ S =8,3145 J
+
+1∗6,626∗10−34
+
+]=−253,10 J
+K .
+
+K ∗ln [
+
+e∗1∗1,381∗10−13∗293,15
+
+Im letzten Teil der Auswertung wird der Reaktionsmechanismus genauer beschrieben. Die 
+Esterverseifung ist eine Hydrolysereaktion. Wasser reagiert unter aufspaltung in Ionen mit 
+dem Ester welches sich auflöst zur seinen Carbonsäure-Teil und Alkohol-Teil.  Wasser  ist 
+amphot und reagiert sowohl als Säure als auch als Base. Es spaltet sich in zwei Ionen auf:
+
+H 2O+H 2 O⇔ H 3O+¿+OH −¿ [17]
+
+sp2
+
+Das   Wasser   steht   dabei   mit   den   Ionen   im   Gleichgewicht.   Es   ist   daher   möglich   eine 
+Hydrolyse   sowohl   im   sauren,   als   auch   im   basischen   Gleichgewicht   durchzuführen. 
+Hinzufügen der Säure oder Base katalysiert in demit die Reaktion, da die Ionenproduktion 
+dadurch begünstigt ist. In diesem Fall wird mit einer verdünnten Natronlauge gearbeitet, 
+was   eine   höhere   Hydroxydionenkonzentration   zur   Folge   hatt.  
+  Es   findet   eine 
+Substitutionsreaktion statt, genauer  S N 2t - Substitution. Die Hydroxydionen in der Lösung 
+orientieren sich am Ester an das ungesättigte Kohlenstoffatom der Estergruppe, welches 
+-   hybridisiert   ist.   Es   ensteth   eine   Zwischenstufe   der   Auftrennung   indem   das 
+Sauerstoffatom, welches mit einer doppelbindung an das Kohlenstoffatom gebunden ist, 
+eine   Bindung   aufbricht   und   so   eine   freiliegendes   Elektron   am   Kohlenstoffatom   eine 
+Bindung für das angreifenden Hydroxydionen ermöglicht. Dabei wird das Sauerstoffatom 
+negativ   geladen,   Zwecks   eines   überschüssigem   Elektrons.   Das   nun   tertiäre  
+sp3 – 
+hybridisierte Kohlenstoffatom ist am stabilsten und spaltet sich von dem Alkoholation ab, 
+indem   das   negativgeladene   Sauerstoffatom   die   Bindungselektronen   zum   Alkoholation 
+unter Ausbildung einer Doppelbindung voneinander trennt. Das Alkoholation  C 2 H 5O−¿
+trägt  nun die negative Ladung und geht geht in Lösung und das Carbonsäuremolekül 
+ebenso, das Kohlenstoffatom der Carboxylgruppe ist nun wieder  
+- hybridisiert. Im 
+letzten Schritt bezieht das Alkoholation ein Proton von der Carbonsäure unter Ausbildung 
+von stabilen Carbocationen und dem Alkohol.
+
+sp2
+
+S N 2t – Mechanismus der Esterverseifung
+
+Fehlerbetrachtung
+
+ 4.
+Die Messung der Leitfhähigkeit hat bis relativ zum Ende hin, immer langsamer aber denoch 
+sichtbare, Änderungen in der Leitfähigkeit gezeigt. Es ist daher anzunehmen dass auch mit 
+dem letzten Wert  κb
+ die Endleitfähigkeit nicht erreicht wurde. Dies Beeinflusst natürlich 
+alle weiteren Rechnungen zu der Konzentration und der Geschwindigkeitskonstante. An 
+und für sich sind die Ergebnisse in einem nachvollziehbaren Rahmen und nicht unmöglich. 
+Allerdings sticht die Aktivierungsentropie aus den Ergebnissen heraus, da sie negativ ist 
+und das sehr untypisch ist.
+
+Anhang: Tabelle 1: Messergebnisse für die Leitfähigkeit  κ .
+t
+
+k 
+
+t
+
+Zeit t in 
+Sekunden
+
+Leitfhähigkeit
+k in mS/cm²
+
+k
+
+5,89
+5,89
+5,88
+5,87
+5,87
+5,87
+5,86
+5,85
+5,85
+5,84
+5,84
+5,84
+5,84
+5,84
+5,84
+5,84
+5,84
+5,84
+5,84
+
+ 5.
+
+0
+15
+30
+45
+60
+75
+90
+105
+120
+135
+150
+165
+180
+195
+210
+225
+240
+255
+270
+285
+300
+330
+360
+390
+420
+450
+480
+510
+540
+570
+600
+660
+720
+780
+840
+900
+960
+1020
+1080
+1140
+1200
+1260
+1320
+1380
+1440
+1500
+
+9,41
+8,95
+8,8
+8,66
+8,53
+8,44
+8,32
+8,22
+8,11
+8,02
+7,94
+7,86
+7,79
+7,72
+7,65
+7,58
+7,52
+7,48
+7,42
+7,37
+7,32
+7,24
+7,19
+7,07
+7
+6,95
+6,89
+6,84
+6,8
+6,76
+6,71
+6,63
+6,58
+6,52
+6,48
+6,43
+6,4
+6,36
+6,33
+6,29
+6,27
+6,26
+6,23
+6,22
+6,19
+6,19
+
+4320
+4380
+4440
+4500
+4560
+4620
+4680
+4740
+4800
+4860
+4920
+4980
+5040
+5100
+5160
+5220
+5280
+5340
+5400
+
+1560
+1620
+1680
+1740
+1800
+1860
+1920
+1980
+2040
+2100
+2160
+2220
+2280
+2340
+2400
+2460
+2520
+2580
+2640
+2700
+2760
+2820
+2880
+2940
+3000
+3060
+3120
+3180
+3240
+3300
+3360
+3420
+3480
+3540
+3600
+3660
+3720
+3780
+3840
+3900
+3960
+4020
+4080
+4140
+4200
+4260
+
+6,17
+6,16
+6,15
+6,14
+6,13
+6,11
+6,1
+6,1
+6,09
+6,07
+6,07
+6,06
+6,06
+6,05
+6,04
+6,04
+6,03
+6,03
+6,02
+6,01
+6,01
+6,01
+6,01
+6
+5,99
+5,99
+5,99
+5,98
+5,97
+5,96
+5,96
+5,96
+5,95
+5,95
+5,94
+5,94
+5,93
+5,93
+5,93
+5,93
+5,92
+5,92
+5,91
+5,9
+5,9
+5,9
+
+x
+
+25,33
+25,33
+25,4
+25,47
+25,47
+25,47
+25,54
+25,62
+25,62
+25,69
+25,69
+25,69
+25,69
+25,69
+25,69
+25,69
+25,69
+25,69
+25,69
+
+Tabelle 2: Werte für die momentane Konzentration  x  der Ac-Ionen.
+t
+
+Konzentration x 
+
+t
+
+x
+
+Zeit t in 
+Sekunden
+
+in mmol/l
+
+0
+15
+30
+45
+60
+75
+90
+105
+120
+135
+150
+165
+180
+195
+210
+225
+240
+255
+270
+285
+300
+330
+360
+390
+420
+450
+480
+510
+540
+570
+600
+660
+720
+780
+840
+900
+960
+1020
+1080
+1140
+1200
+1260
+1320
+1380
+1440
+1500
+
+0
+3,31
+4,39
+5,4
+6,33
+6,98
+7,84
+8,56
+9,36
+10
+10,58
+11,15
+11,66
+12,16
+12,67
+13,17
+13,6
+13,89
+14,32
+14,68
+15,04
+15,62
+15,98
+16,84
+17,34
+17,7
+18,13
+18,49
+18,78
+19,07
+19,43
+20,01
+20,37
+20,8
+21,09
+21,45
+21,66
+21,95
+22,16
+22,45
+22,6
+22,67
+22,88
+22,96
+23,17
+23,17
+
+4320
+4380
+4440
+4500
+4560
+4620
+4680
+4740
+4800
+4860
+4920
+4980
+5040
+5100
+5160
+5220
+5280
+5340
+5400
+
+1560
+1620
+1680
+1740
+1800
+1860
+1920
+1980
+2040
+2100
+2160
+2220
+2280
+2340
+2400
+2460
+2520
+2580
+2640
+2700
+2760
+2820
+2880
+2940
+3000
+3060
+3120
+3180
+3240
+3300
+3360
+3420
+3480
+3540
+3600
+3660
+3720
+3780
+3840
+3900
+3960
+4020
+4080
+4140
+4200
+4260
+
+23,32
+23,39
+23,46
+23,53
+23,6
+23,75
+23,82
+23,82
+23,89
+24,04
+24,04
+24,11
+24,11
+24,18
+24,25
+24,25
+24,32
+24,32
+24,4
+24,47
+24,47
+24,47
+24,47
+24,54
+24,61
+24,61
+24,61
+24,68
+24,76
+24,83
+24,83
+24,83
+24,9
+24,9
+24,97
+24,97
+25,04
+25,04
+25,04
+25,04
+25,12
+25,12
+25,19
+25,25
+25,25
+25,25
+
+Tabelle 3: Werte für  f (x) .
+f(x)
+
+Zeit t in 
+Sekunden
+
+0
+15
+30
+45
+60
+75
+90
+105
+120
+135
+150
+165
+180
+195
+210
+225
+240
+255
+270
+285
+300
+330
+360
+390
+420
+450
+480
+510
+540
+570
+600
+660
+720
+780
+840
+900
+960
+1020
+1080
+1140
+1200
+1260
+1320
+1380
+1440
+1500
+
+t
+
+f(x)
+
+t
+
+f(x)
+
+4320
+4380
+4440
+4500
+4560
+4620
+4680
+4740
+4800
+4860
+4920
+4980
+5040
+5100
+5160
+5220
+5280
+5340
+5400
+
+192,05
+192,05
+204,08
+219,51
+219,51
+219,51
+240,98
+283,91
+283,91
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+0
+3,3 * 10^-3
+4,57
+5,83
+7,08
+8,01
+9,33
+10,49
+11,89
+13,08
+14,21
+15,4
+16,51
+17,67
+18,91
+20,2
+21,26
+22,08
+23,35
+24,46
+25,63
+27,63
+28,95
+32,39
+34,61
+36,32
+38,5
+40,45
+42,11
+43,87
+46,19
+50,3
+53,13
+56,84
+59,57
+63,26
+65,59
+69,06
+71,78
+75,85
+78,13
+79,24
+82,74
+84,16
+88,1
+88,1
+
+1560
+1620
+1680
+1740
+1800
+1860
+1920
+1980
+2040
+2100
+2160
+2220
+2280
+2340
+2400
+2460
+2520
+2580
+2640
+2700
+2760
+2820
+2880
+2940
+3000
+3060
+3120
+3180
+3240
+3300
+3360
+3420
+3480
+3540
+3600
+3660
+3720
+3780
+3840
+3900
+3960
+4020
+4080
+4140
+4200
+4260
+
+91,16
+92,76
+94,32
+95,93
+97,59
+101,38
+103,26
+103,26
+105,22
+109,7
+109,7
+111,96
+111,96
+114,32
+116,8
+116,8
+119,41
+119,41
+122,59
+125,54
+125,54
+125,54
+125,54
+128,68
+132,02
+132,02
+132,02
+135,61
+140,04
+144,26
+144,26
+144,26
+148,85
+148,85
+153,9
+153,9
+159,47
+159,47
+159,47
+159,47
+166,67
+166,67
+173,87
+180,93
+180,93
+180,93
+
+Graph 1: Leitfähigkeitsmessung
+
+Graph 2: Konzentration der Carbocationen
+
+Graph 3: Bestimmung der Geschwindigkeitskonstante
+
+

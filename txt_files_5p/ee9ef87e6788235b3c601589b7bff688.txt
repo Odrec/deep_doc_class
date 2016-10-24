@@ -1,0 +1,517 @@
+GPC Praktikum
+
+Versuch: Leitfähigkeit
+
+Versuchsdatum: 06.11.2014
+
+Betreuer:
+
+Felix Alexander Henkel
+
+Praktikanten:  Gruppe 13
+
+Alexander Holtmeyer 
+Anna Lena Jeroschewski
+
+Abgabedatum:  15.11.2014
+Abgabestatus:  1. Abgabe
+
+E-Mail:  aholtmeyer@uni-osnabrueck.de
+
+ajeroschewsk@uni-osnabrueck.de
+
+Aufgabenstellung:
+
+Der Dissoziationsgrad α und die Dissoziationskonstante K von wässrigen 
+Essigsäurelösungen unterschiedlicher Konzentrationen soll durch 
+Leitfähigkeitsmessungen an wässrigen HCl-, NaCl-, NaAc- und HAc-
+Lösungen bestimmt werden.
+
+Durchführung:
+
+Zunächst wurden die verdünnten Lösungen von HCl, NaCl, NaAc und HAc
+angesetzt und das Leitfähigkeitsmessgerät mit einer 0,01M KCl-Lösung 
+justiert . Mit der Leitfähigkeitsmessung von reinem Lösemittel (Wasser) 
+wurde begonnen. Anschließend folgten die verdünnten Lösungen.
+
+Messergebnisse und Auswertung:
+
+Um ndie tätsächlichen Zellkonstanten der Lösungen zu erhalten, muss von 
+den gemessenen Zellkonstanten noch die des reinen Wasser subtrahiert 
+werden. Also ist k=k gemessen−k H 2O
+
+k(NaCl)
+in μs/cm
+
+k(NaAc) 
+in μs/cm
+
+k(HCl) in 
+μs/cm
+
+k(HAc) in 
+μs/cm
+
+4⋅10−3 M
+
+2⋅10−3 M
+
+475,2
+
+330,2
+
+---
+
+239,2
+
+169,3
+
+857,2
+
+1⋅10−3 M
+
+120,8
+
+5⋅10−4 M
+
+2,5⋅10−4 M
+
+1,25⋅10−4 M
+
+59,9
+
+30,4
+
+---
+
+84,7
+
+41,8
+
+20,6
+
+---
+
+418,2
+
+206,2
+
+95,4
+
+40,2
+
+Tab. I und II: Zellkonstanten k der verdünnten Lösungen
+
+4⋅10−3 M
+
+8⋅10−4 M
+
+1,6⋅10−4 M
+
+3,2⋅10−5 M
+
+1,6⋅10−5 M
+
+96,9
+
+37,7
+
+11,5
+
+2
+
+0,6
+
+Anschließend werden die Λev
+aufgetragen:
+Λev= k
+
+z⋅c mit z = 1
+
+-Werte wie folgt berechnet und gegen √c
+
+Λev von 
+NaCl *
+
+Λev vo
+n NaAc * 
+
+Λev vo
+n HCl *
+
+118,8
+
+82,55
+
+---
+
+119,6
+
+84,65
+
+428,6
+
+84,7
+
+83,6
+
+82,4
+
+---
+
+418,02
+
+412,4
+
+381,6
+
+321,6
+
+4⋅10−3 M
+
+2⋅10−3 M
+
+1⋅10−3 M
+
+5⋅10−4 M
+
+120,9
+
+119,8
+
+2,5⋅10−4 M
+
+121,6
+
+1,25⋅10−4 M
+
+---
+
+Λev
+
+ 
+von HAc *
+
+4⋅10−3 M
+
+8⋅10−4 M
+
+24,23
+
+47,13
+
+1,6⋅10−4 M
+
+71,88
+
+3,2⋅10−5 M
+
+1,6⋅10−5 M
+
+62,5
+
+37,5
+
+-Werte der NaCl-, NaAc- HCl- und HAc-Lösungen                      * jeweils in s⋅cm2
+mol
+
+o
+m
+
+Tab. III: Λev
+122
+121,5
+121
+120,5
+120
+119,5
+119
+118,5
+118
+117,5
+117
+
+2
+^
+m
+c
+*
+s
+[
+ 
+
+i
+ 
+v
+e
+Λ
+
+[
+/
+]
+
+]
+l
+
+n
+
+f(x) = 47,21x + 118,47
+
+0,04
+
+0,03
+√c in mol/l
+
+0,05
+
+0,06
+
+0,07
+
+f(x) = -21,71x + 84,35
+
+0,04
+
+0,03
+√c in mol/l
+
+0,05
+
+0,06
+
+0,07
+
+0
+
+0,02
+Graph I: Auftragung von NaCl
+
+0,01
+
+85
+84,5
+84
+83,5
+83
+82,5
+82
+81,5
+81
+
+]
+l
+
+o
+m
+
+[
+/
+]
+
+2
+^
+m
+c
+*
+s
+[
+ 
+
+n
+
+i
+ 
+v
+e
+Λ
+
+0
+
+0,02
+Graph II: Auftragung von NaAc
+
+0,01
+
+440
+420
+400
+380
+360
+340
+320
+300
+
+0
+
+]
+l
+
+o
+m
+
+[
+/
+]
+
+2
+^
+m
+c
+*
+s
+[
+ 
+
+n
+
+i
+ 
+v
+e
+Λ
+
+0,02
+Graph III: Auftragung von HCl
+
+0,01
+
+f(x) = 2677,16x + 325,35
+
+0,04
+
+0,03
+√c in mol/l
+
+0,05
+
+0,06
+
+0,07
+
+Daraus ergeben sich die folgenden Λ∞ -Werte:
+
+NaCl-Lösung
+
+NaAc-Lösung
+
+HCl-Lösung
+
+118,5
+
+84,3
+
+325,4
+
+Λ∞ in s⋅cm2
+mol
+
+Tab. IV: Λ∞ -Werte der NaCl-, NaAc- und HCl-Lösungen
+
+Nun lässt sich auch der Λ∞ -Wert der HAc-Lösung leicht berechnen:
+Λ∞ (HAc) = Λ∞ (NaAc) + Λ∞ (HCl) – Λ∞ (NaCl) 
+
+= 84,3 + 325,4 – 118,5
+= 291,2 [ s⋅cm2
+mol
+
+]
+
+Der Dissoziationsgrad α der Essigsäure wird mit Hilfe der folgenden 
+Formel bestimmt:
+α (HAc) = Λev
+Λ∞
+
+ 
+
+α1
+
+α2
+
+α3
+
+α4
+
+α5
+
+8⋅10−2
+
+16⋅10−2
+
+25⋅10−2
+
+22⋅10−2
+
+13⋅10−2
+
+Tab. V: Dissoziationsgrad α der Essigsäure in Abhängigkeit von c0
+
+Schließlich wird die Dissoziationskonstante K der Essigsäure nach
+K = C2
+c0−C berechnet und die Werte gemittelt. Dabei ist C=α⋅c0
+
+. 
+
+Anschließend wird die Dissoziationskonstante mit dem Literaturwert 
+verglichen.
+
+c0
+
+in mol/l
+
+α
+
+C in mol/l
+
+K in mol/l
+
+4⋅10−3
+
+8⋅10−4
+
+8⋅10−2
+
+32⋅10−5
+
+28⋅10−6
+
+16⋅10−2
+
+12,8⋅10−5
+
+24⋅10−6
+
+1,6⋅10−4
+
+25⋅10−2
+
+3,2⋅10−5
+
+22⋅10−2
+
+4⋅10−5
+
+7⋅10−6
+
+1,6⋅10−5
+
+13⋅10−2
+
+1,6⋅10−6
+
+13⋅10−6
+
+19⋅10−7
+
+18⋅10−8
+
+Tab VI: Dissoziationskonstante K der Essigsäure in Abhängigkeit von c0
+
+Mittelt man die Werte für K, ergibt sich eine Dissoziationskonstante der 
+Essigsäure von 14⋅10−6 mol/l.
+
+Diskussion der Messergebnisse:
+
+Literaturwert K(HAc) = 1,8⋅10−5 = 18⋅10−6
+Dies entspricht einer Abweichung von 4⋅10−6 bzw. 29 %.
+
+

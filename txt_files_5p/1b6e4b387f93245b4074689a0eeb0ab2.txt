@@ -1,0 +1,359 @@
+Einführung in die Wirtschafts- 
+
+und Sozialstatistik
+
+Tutorium 1
+
+Donnerstags 12:00–14:00 Uhr
+
+Raum: 15/E27
+
+Rabea Mette 
+
+ramette@uni-osnabrueck.de
+
+Ablaufplan
+
+Do, 14.04.2016 Häufigkeiten und Lagemaße
+
+Do, 21.04.2016 Streuung und Streuungsmaße
+
+Do, 28.04.2016 Tabellenanalyse I
+
+Do, 05.05.2016 Tabellenanalyse II
+
+Do, 19.05.2016 Korrelation
+
+Do, 26.05.2016 Lineare Regression
+
+Do, 02.06.2016 Drittvariablenkontrolle
+
+Do, 09.06.2016 Grundgesamtheit und Stichprobe
+
+Do, 16.06.2016 Schätzen
+
+Do, 23.06.2016 Testen
+
+Do, 30.06.2016 Wiederholung und Fragen
+
+Di, 05.07.2016 Klausur
+
+Aufgabe 1
+
+Was versteht man unter einer symmetrischen Fragestellung bzw. einer symmetrischen 
+Beziehung zwischen zwei Variablen X und Y?
+
+eine Ursache-Wirkungsbeziehung
+
+Variablen X und Y bedingen sich gegenseitig
+ Y ← → X
+Beide Merkmale werden als gleichwertig betrachtet
+
+Beispiel: Sind Personen, die eine staatliche Verantwortung in der Arbeitsmarktpolitik sehen, 
+auch der Meinung, dass der Staat für die Familien- und Alterssicherung zuständig sein sollte?
+
+Aufgabe 1
+
+Was versteht man unter einer symmetrischen Fragestellung bzw. einer 
+symmetrischen Beziehung zwischen zwei Variablen X und Y?
+
+• Keine Ursache-Wirkungsbeziehung
+• Variablen X und Y bedingen sich gegenseitig
+•  Y ← → X
+• Beide Merkmale werden als gleichwertig betrachtet
+
+Beispiel: Sind Personen, die eine staatliche Verantwortung in der 
+Arbeitsmarktpolitik sehen, auch der Meinung, dass der Staat für die Familien- und 
+Alterssicherung zuständig sein sollte?
+
+Aufgabe 2
+
+Wann spricht man von einer asymmetrischen Fragestellung bzw. einer 
+asymmetrischen Beziehung zwischen zwei Variabeln X und Y?
+
+Ursache-Wirkungsbeziehung
+Unabhängige/erklärende Variable  und abhängige/zu erklärende Variable 
+X → Y
+
+Trennung zwischen Zielvariable und unabhängiger Variable
+
+Beispiel: Sind Frauen durchschnittlich häufig in den niedrigen Lohngruppen vertreten?
+
+Aufgabe 2
+
+Wann spricht man von einer asymmetrischen Fragestellung bzw. einer 
+asymmetrischen Beziehung zwischen zwei Variabeln X und Y?
+
+• Ursache-Wirkungsbeziehung
+• Unabhängige/erklärende Variable X und abhängige/zu erklärende Variable Y 
+• X → Y
+Trennung zwischen Zielvariable und unabhängiger Variable
+
+Beispiel: Sind Frauen durchschnittlich häufig in den niedrigen Lohngruppen vertreten?
+
+Aufgabe 3
+
+In der nachfolgenden Tabelle ist der subjektive Gesundheitszustand von 
+2250 Personen differenziert nach dem Geschlecht wiedergegeben.
+
+Aufgabe 3a)
+
+Wie viel Prozent der befragten Männer haben einen zufriedenstellenden 
+Gesundheitszustand?
+
+ 
+
+32,14% der befragten Männer haben einen zufriedenstellenden Gesundheitszustand.
+
+Aufgabe 3a)
+
+Wie viel Prozent der befragten Männer haben einen zufriedenstellenden 
+Gesundheitszustand?
+
+ 
+
+32,14% der befragten Männer haben einen zufriedenstellenden Gesundheitszustand.
+
+Aufgabe 3b)
+
+Wie viele Personen haben insgesamt einen schlechten 
+Gesundheitszustand?
+
+73 Personen haben insgesamt einen schlechten Gesundheitszustand.
+
+Aufgabe 3b)
+
+Wie viele Personen haben insgesamt einen schlechten 
+Gesundheitszustand?
+
+73 Personen haben insgesamt einen schlechten Gesundheitszustand.
+
+Aufgabe 3c)
+
+Wie hoch ist der Frauenanteil in der Gruppe der Befragungspersonen, die 
+insgesamt einen sehr guten Gesundheitszustand haben?
+
+51,08% der befragten Personen mit einem sehr guten Gesundheitszustand sind Frauen.
+
+Aufgabe 3c)
+
+Wie hoch ist der Frauenanteil in der Gruppe der Befragungspersonen, die 
+insgesamt einen sehr guten Gesundheitszustand haben?
+
+51,08% der befragten Personen mit einem sehr guten Gesundheitszustand sind Frauen.
+
+Aufgabe 4
+
+Im folgenden Beispiel geht es um den Zusammenhang zwischen 
+Wahlbeteiligung und Konfession.
+
+Aufgabe 4a)
+
+Überlegen Sie, welche der beiden Variablen – Teilnahme an der 
+Bundestagswahl oder Konfessionslosigkeit – als abhängige Variable und 
+welche als unabhängige Variable betrachtet werden soll.
+
+Konfessionslosigkeit als Ursache = unabhängige Variable
+Wahlbeteiligung als Wirkung  = abhängige Variable
+
+Aufgabe 4a)
+
+Überlegen Sie, welche der beiden Variablen – Teilnahme an der 
+Bundestagswahl oder Konfessionslosigkeit – als abhängige Variable und 
+welche als unabhängige Variable betrachtet werden soll.
+
+• Konfessionslosigkeit als Ursache = unabhängige Variable
+• Wahlbeteiligung als Wirkung  = abhängige Variable
+
+Aufgabe 4b)
+
+Welchen Zusammenhang erwarten Sie zwischen der Teilnahme an der 
+Bundestagswahl und Konfessionslosigkeit? Formulieren Sie eine 
+Hypothese.
+
+Beispiel: Die Wahlbeteiligung ist unter Konfessionslosen in Deutschland 
+geringer.
+
+(Parteien stehen für christliche Werte etc.)
+
+Aufgabe 4b)
+
+Welchen Zusammenhang erwarten Sie zwischen der Teilnahme an der 
+Bundestagswahl und Konfessionslosigkeit? Formulieren Sie eine 
+Hypothese.
+
+Beispiel: Die Wahlbeteiligung ist unter Konfessionslosen in Deutschland 
+geringer.
+
+(Parteien stehen für christliche Werte etc.)
+
+Aufgabe 4c)
+
+•  
+
+Aufgabe 4c)
+
+Berechnen Sie die für Ihre Hypothese geeigneten Anteilswerte und fassen Sie die Ergebnisse Ihrer 
+Auswertung in ein paar kurzen Sätzen zusammen.
+
+ Anteil der konfessionellen Nicht-Wähler
+
+ 
+
+ Anteil der konfessionellen Wähler
+
+ 
+
+ Anteil der konfessionslosen Nicht-Wähler
+
+ 
+
+ Anteil der konfessionslosen Wähler
+
+In beiden Gruppen überwiegen deutlich die Wähler gegenüber den Nicht-Wählenden. Da es lediglich 5% 
+mehr konfessionelle Wähler als konfessionslose gibt, falsifizieren wir die Hypothese. Für genauere 
+Aussagen benötigen wir repräsentativere Daten.
+
+Aufgabe 4c)
+
+Berechnen Sie die für Ihre Hypothese geeigneten Anteilswerte und fassen Sie die Ergebnisse Ihrer 
+Auswertung in ein paar kurzen Sätzen zusammen.
+
+ Anteil der konfessionellen Nicht-Wähler: 714/5146 * 100 = 13,87%
+
+ 
+
+ Anteil der konfessionellen Wähler: 4432/5146 * 100 = 86,13%
+
+ 
+
+ Anteil der konfessionslosen Nicht-Wähler: 436/2364 * 100 = 18,44%
+
+ 
+
+ Anteil der konfessionslosen Wähler: 1928/2364 * 100 = 81,56%
+
+In beiden Gruppen überwiegen deutlich die Wähler gegenüber den Nicht-Wählenden. Da es lediglich 5% 
+mehr konfessionelle Wähler als konfessionslose gibt, falsifizieren wir die Hypothese. Für genauere 
+Aussagen benötigen wir repräsentativere Daten.
+
+Prozentsatzdifferenz
+
+•  
+
+.
+
+.
+
+Tabellenbeschriftung
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Aufgabe 4d)
+
+•  
+
+ 
+
+ 
+
+.
+
+.
+
+Der Anteil der konfessionellen Wähler ist um 4,57 Prozentpunkte höher 
+als der Anteil der konfessionslosen Wähler. Die Konfession hat somit 
+einen Einfluss auf die Wahlbeteiligung.
+
+Aufgabe 4d)
+
+•  
+
+ 
+
+ 
+
+Aufgabe 4e)
+
+Berechnen Sie nun die konditionalen Odds und das 
+Kreuzproduktverhältnis (Odds Ratio) OR. Interpretieren Sie Ihre 
+Ergebnisse.
+
+ 
+
+Odds
+
+• Größenverhältnisse zwischen Ereignis und Gegenereignis
+• Wertebereich von 0 bis +
+
+• = 1  beide Kategorien treten gleich häufig auf
+• > 1  das interessierende Ereignis tritt häufiger auf
+• < 1  das interessierende Ereignis tritt seltener auf
+
+Odds   =
+
+Häufigkeit Ereignis
+
+Häufigkeit Gegenereignis
+
+=
+
+f11
+
+f21
+
+Odds Ratio
+
+•  
+
+Aufgabe 4e)
+
+Berechnen Sie nun die konditionalen Odds und das 
+Kreuzproduktverhältnis (Odds Ratio) OR. Interpretieren Sie Ihre 
+Ergebnisse.
+
+ 
+
+Aufgabe 4e)
+
+•  
+
+ 
+
+Aufgabe 4e)
+
+•  
+
+ 
+
+ 
+
+Aufgabe 4e)
+
+•  
+
+ 
+
+ 
+
+

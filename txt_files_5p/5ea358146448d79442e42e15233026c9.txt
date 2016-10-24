@@ -1,0 +1,982 @@
+IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS—II: EXPRESS BRIEFS, VOL. 58, NO. 8, AUGUST 2011
+
+537
+
+Robust Quasi-Newton Adaptive Filtering Algorithms
+
+Md. Zulﬁquar Ali Bhotto, Student Member, IEEE, and Andreas Antoniou, Life Fellow, IEEE
+
+Abstract—Two robust quasi-Newton (QN) adaptive ﬁltering al-
+gorithms that perform well in impulsive-noise environments are
+proposed. The new algorithms use an improved estimate of the in-
+verse of the autocorrelation matrix and an improved weight-vector
+update equation, which lead to improved speed of convergence and
+steady-state misalignment relative to those achieved in the known
+QN algorithms. A stability analysis shows that the proposed
+algorithms are asymptotically stable. The proposed algorithms
+perform data-selective adaptation, which signiﬁcantly reduces the
+amount of computation required. Simulation results presented
+demonstrate the attractive features of the proposed algorithms.
+
+Index
+
+Terms—Adaptive
+
+in
+adaptive ﬁlters, quasi-Newton algorithms, robust adaptation
+algorithms.
+
+impulsive
+
+ﬁlters,
+
+noise
+
+I. INTRODUCTION
+
+K NOWN approaches for improving the performance of
+
+adaptive ﬁlters in impulsive-noise environments involve
+the use of nonlinear clipping [1], [2], robust statistics [3]–[5],
+or order statistics. The common step in the adaptive ﬁlters
+reported in [1]–[5] is to detect the presence of impulsive noise
+by comparing the magnitude of the error signal with the value of
+a threshold parameter, which is a scalar multiple of the variance
+of the error signal, and then either stop or reduce the learning
+rate of the adaptive ﬁlter. In [1], the variance of the error
+signal is estimated by averaging the square of its instantaneous
+values, but this approach is not robust with respect to impulsive
+noise. In [2]–[5], improved robustness is achieved by estimating
+the variance of the error signal using the median absolute
+deviation [6].
+
+The adaptation algorithms in [1] and [3] use the Huber
+mixed-norm M-estimate objective function [6], and the algo-
+rithms in [4] and [5] use the Hampel three-part redescending
+M-estimate objective function [6]. The Huber function uses the
+L1 norm to measure the amplitude of the error signal when the
+absolute error is larger than the threshold. The Hampel function,
+on the other hand, assigns a constant value to the error signal
+when the absolute error becomes larger than the threshold.
+Algorithms based on the Huber and Hampel functions of-
+fer similar performance. The nonlinear recursive least-squares
+(NRLS) algorithm in [2] uses nonlinear clipping to control the
+learning rate and offers better performance in impulsive-noise
+
+Manuscript received October 1, 2010; revised December 31, 2010 and
+March 16, 2011; accepted May 14, 2011. Date of publication July 22, 2011;
+date of current version August 17, 2011. This work was supported by the
+Natural Sciences and Engineering Research Council of Canada. This paper was
+recommended by Associate Editor Z. Lin.
+
+The authors are with the Department of Electrical and Computer Engi-
+neering, University of Victoria, Victoria, BC V8W 3P6, Canada (e-mail:
+zbhotto@ece.uvic.ca; aantoniou@ieee.org).
+
+Color versions of one or more of the ﬁgures in this paper are available online
+
+environments than the conventional RLS algorithm. The recur-
+sive least-mean (RLM) algorithm reported in [4] offers faster
+convergence and better robustness than the NRLS algorithm
+in impulsive-noise environments. The quasi-Newton algorithm
+(QN) in [7] is not robust against impulsive noise. Simulation re-
+sults in [5] show that the recursive QN (RQN) algorithm offers
+faster convergence and improved robustness in impulsive-noise
+environments relative to the QN algorithm in [7]. Algorithms
+of the Newton family such as those in [2], [4], [5], and [7]
+converge much faster than algorithms of the steepest-descent
+family [8]. The RLS, RLM, and RQN algorithms exponentially
+forget past input signal vectors in the estimate of the autocor-
+relation matrix, and therefore, the positive deﬁniteness of the
+inverse of the autocorrelation matrix can be lost [9], [10]. As a
+result, this type of adaptive ﬁlter can become unstable in ﬁnite-
+precision implementations. This form of explosive divergence
+in RLS adaptive ﬁlters is well documented in the literature, and
+ways and conditions to stabilize these ﬁlters are addressed in
+[9] and [10]. The QN algorithm reported in [7] is shown to be
+robust in terms of explosive divergence, as compared with RLS
+adaptive ﬁlters.
+
+In this brief, we propose two new robust QN algorithms
+that perform data-selective adaptation in updating the inverse
+of the autocorrelation matrix and the weight vector. The new
+algorithms are essentially enhancements of the algorithms we
+reported in [16] for applications that entail impulsive noise. A
+stability analysis shows that the proposed algorithms are as-
+ymptotically stable. Furthermore, simulation results show that
+the proposed algorithms offer improved performance relative
+to two known QN (KQN) algorithms with respect to robust-
+ness, steady-state misalignment, computational efﬁciency, and
+tracking capability.
+
+This brief is organized as follows. In Section II, the proposed
+robust QN algorithms are described. In Section III, stability
+issues of the algorithms are discussed, and in Section IV, some
+practical issues concerning the implementation of the proposed
+algorithms are examined. Simulation results are presented in
+Section V, and conclusions are drawn in Section VI.
+
+II. PROPOSED ROBUST QN ALGORITHMS
+
+Two slightly different robust QN algorithms are possible, one
+using a ﬁxed threshold and the other using a variable threshold,
+as will now be demonstrated.
+
+A. RQN Algorithm with a Fixed Threshold
+
+The objective of the proposed adaptation algorithm is to
+generate a series of weight vectors that would eventually solve
+the optimization problem
+
+(dk − wT xk)2
+
+(1)
+
+at http://ieeexplore.ieee.org.
+
+Digital Object Identiﬁer 10.1109/TCSII.2011.2158722
+
+minimize
+
+w
+
+E
+
+1549-7747/$26.00 © 2011 IEEE
+
+(cid:2)
+
+(cid:3)
+
+538
+
+IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS—II: EXPRESS BRIEFS, VOL. 58, NO. 8, AUGUST 2011
+
+recursively, where E[·] is the expected value of [·], xk is a
+vector of dimension M representing the input signal, dk is the
+desired signal, and w is the weight vector, which is also of
+dimension M. An approximate solution of the problem in (1)
+can be obtained by using the weight-vector update equation
+
+wk = wk−1 + 2μkSk−1xkek
+
+(2)
+
+where μk is the step size, Sk−1 is a positive deﬁnite matrix of
+dimension M × M, and
+
+ek = dk − yk
+
+(3)
+
+k−1xk. If Sk−1
+is the a priori error for the output signal yk = wT
+in (2) is chosen as the M × M identity matrix, then the update
+equation in (2) would minimize the objective function
+
+(cid:4)
+
+(cid:5)2
+
+Jwk−1 =
+
+dk − wT
+
+k−1xk
+
+with respect to the steepest-descent direction, and a series of
+updates would eventually yield an approximate solution of the
+problem in (1). Other choices of Sk−1 would entail different
+search directions but would serve the same purpose as long as
+Sk−1 is positive deﬁnite. In order to use an approximation of
+the Newton direction Sk−1 in (2), we obtain Sk−1 by using the
+gradient of Jwk−1 in (4) in the rank-one update formula of the
+classical QN optimization algorithm [11], which is given by
+
+Sk = Sk−1 − (δk−Sk−1ρk)(δk − Sk−1ρk)T
+
+(δk − Sk−1ρk)T ρk
+
+where
+
+δk = wk − wk−1
+
+ρk =
+
+∂e2
+k+1
+∂wk
+
+− ∂e2
+∂wk−1
+
+k
+
+.
+
+(4)
+
+(5)
+
+(6)
+
+(7)
+
+value of the prespeciﬁed error bound, i.e.,
+k = γ · sign(ek)
+
+we obtain ∇2
+
+k = 0, and hence from (7), we have
+
+ρk = 2ekxk.
+
+(12)
+
+(13)
+
+Vector δk, which is linearly dependent on Sk−1xk, can be
+obtained by using (2) and (6). Since the equality in (12) is
+satisﬁed for each update, we can use the a posteriori error to
+obtain
+
+δk = 2γ · sign(ek)Sk−1xk
+
+(14)
+
+instead of the a priori error used in the KQN algorithm reported
+in [8]. Now, substituting ρk and δk given by (13) and (14) in (5),
+we obtain an update equation for matrix Sk for the proposed
+robust QN algorithm as
+
+Sk = Sk−1 − αk
+
+Sk−1xkxT
+
+k Sk−1
+
+k Sk−1xk
+xT
+
+.
+
+(15)
+
+Substituting μk given by (10) in (2), we obtain the correspond-
+ing weight-vector update equation as
+
+wk = wk−1 + αk
+
+Sk−1xk
+k Sk−1xk
+xT
+
+ek.
+
+(16)
+
+In order to achieve robust performance against impulsive noise,
+we choose error bound γ as
+
+(cid:6)|ek| − υθk,
+
+γ =
+
+γc,
+
+if |ek| > θk
+otherwise
+
+√
+
+(17)
+
+5σv, where
+where γc is a prespeciﬁed error bound chosen as
+v is the variance of the measurement noise, 0 ≤ υ (cid:4) 1 is a
+σ2
+scalar, and θk is a threshold parameter, which is estimated as
+
+θk = 1.98σk
+
+(18)
+
+This formula satisﬁes the Fletcher QN condition Skρk = δk
+[12]. From (3), we note that ek+1 would require future data
+xk+1 and dk+1. To circumvent this problem, we use the a
+posteriori error
+
+where
+
+k = dk − xT
+
+k wk
+
+(8)
+
+in place of ek+1 in (7). As a ﬁrst step in the proposed algo-
+rithm, we obtain a value of step size μk in (2) by solving the
+optimization problem
+
+(cid:6)(cid:7)(cid:7)dk − xT
+
+k wk
+
+(cid:7)(cid:7) − γ,
+
+if |ek| > γ
+otherwise
+
+(9)
+
+minimize
+
+μk
+
+0,
+
+where γ is a prespeciﬁed error bound. The solution of this
+problem can be obtained as
+
+μk = αk
+
+1
+2τk
+
+(10)
+
+(cid:6)
+
+where τk = xT
+
+k Sk−1xk, and
+
+1 − γ|ek| ,
+0,
+
+if |ek| > γ
+otherwise.
+
+αk =
+
+(11)
+In effect, step size μk is chosen to force equality |k| = γ
+whenever |ek| > γ. Since μk in (10) forces k to assume the
+
+(19)
+
+···
+
+k−1 + (1 − λ) min(gk)
+k + 
+
+k = λσ2
+σ2
+with 0 (cid:4) λ < 1, gk = [ e2
+k−P +1 +  ] is a vector
+e2
+of dimension P , where  is a small scalar. Whenever |ek| < γ,
+no update is applied. Consequently, the amount of computation
+and the required storage are signiﬁcantly reduced since Sk is
+not evaluated in every iteration. A similar weight-vector update
+strategy has been used in set-membership adaptation algorithms
+[13]–[15], but the mathematical framework of those algorithms
+is very different from that of the proposed robust QN algorithm.
+The estimator in (19) is robust to outliers. A large σ2
+0 would
+cause |ek| to be less than θk during the transient state, and
+therefore, the algorithm would work with error bound γc, which
+would increase the initial rate of convergence. For a sudden
+system disturbance, θk would also be very large, in which case
+we obtain γc < |ek| < θk, and thus, the algorithm would again
+use error bound γc, and therefore, the tracking capability of the
+algorithm would be retained. For an impulsive noise-corrupted
+error signal, θk would not increase, in which case the error
+bound would be θk = |ek| − υθk, and this would suppress the
+impulsive noise.
+
+BHOTTO AND ANTONIOU: ROBUST QUASI-NEWTON ADAPTIVE FILTERING ALGORITHMS
+
+539
+
+B. RQN Algorithm With a Variable Threshold
+
+III. STABILITY ANALYSIS
+
+(cid:8)
+(cid:4)
+
+(cid:9)
+
+(cid:7)(cid:7)
+
+(cid:7)(cid:7)d2
+(cid:5)
+
+k
+
+− y2
+d2
+k
+
+k
+
+The RQN algorithm with a variable threshold is essentially
+the same as before except that the error bound γc in (17) is
+estimated as
+
+(20)
+
+ξk−1,
+
+(cid:10)
+
+ˆσ2
+k−1, σ2
+k
+
+ξk = βξk−1 + (1 − β) min
+k−1 + (1 − β) min
+ˆσ2
+k = βˆσ2
+ξkγc,0 + 1.12 [1 + sign(1 − ξk)] ˆσk
+γc,k =
+
+(21)
+(22)
+where γc,0 is a rough estimate of σv, and ξ0 (cid:5) 1. During
+steady state, we obtain ξk ≈ 0 and ˆσ2
+v, and hence, γc,k
+(cid:10)
+would be 2.24σv, and this would yield reduced steady-state
+misalignment. In the transient state, ξk ≈ ξ0, and therefore, the
+algorithm would work with γc,k =
+ξkγc,0, and this would
+yield faster convergence. The parameters in (20) and (21) are
+robust with respect to outliers as each is based on the minimum
+of its two most recent values.
+
+≈ σ2
+
+k
+
+The variance is estimated as
+
+k = λσ2
+σ2
+
+k−1 + (1 − λ)median(gk).
+
+(23)
+
+For Gaussian signals, the median of the squares of the signal
+samples in the variance estimator usually gives a more accurate
+estimate of the variance of the signal than the instantaneous
+values of the squares of the signal samples.
+
+The use of the median operation in adaptive ﬁlters was
+introduced by Zou et al. in [4] and was later used by other
+researchers, e.g., in [18].
+
+A variable threshold γc is useful in applications where the
+
+noise variance σ2
+
+v is unknown.
+
+C. Discussion
+In the proposed algorithms, we obtain 0 ≤ αk < 1 for both
+values of γ in (17), and hence, the estimated Sk in (15) would
+remain positive deﬁnite indeﬁnitely if Sk is initialized with a
+positive deﬁnite matrix [16]. The RLS-type robust algorithms in
+[17] and [18] are implemented using a fast transversal ﬁlter im-
+plementation [8] to reduce their computational complexity from
+order M 2, which is denoted by O(M 2), to O(M), and there-
+fore, both algorithms would inherit the problems associated
+with the RLS algorithms of order M 2. Moreover, the Huber
+function used in [17] does not have a closed-form solution, and
+hence, the solution obtained can be suboptimal, and in addition,
+its tracking capability can be compromised [18]. The solution
+obtained in [18] can also be suboptimal, as shown in [18]. The
+adaptation algorithm in [18] is robust in the sense that it returns
+to the true solution without losing its initial convergence speed
+after being subjected to impulsive noise. Similarly, the proposed
+robust QN algorithms are robust with respect to impulsive noise
+in the sense that they return to the true solution faster than
+the initial convergence. The KQN and known RQN (KRQN)
+algorithms do not employ a variable step size. However, the
+KRQN algorithm requires an additional amount of computation
+of O[M log2(M)] per iteration, as compared with the KQN al-
+gorithm and the proposed QN algorithm with a ﬁxed threshold.
+
+Here, we address stability issues associated with the pro-
+posed RQN algorithms. For purposes of analysis, we assume
+that the desired response for the adaptive ﬁlter is generated as
+
+dk = xT
+
+k wopt
+
+(24)
+
+where wopt is the weight vector of an FIR ﬁlter. We establish
+the convergence behavior of the proposed RQN algorithm by
+examining the behavior of the weight-error vector, which is
+deﬁned as
+
+(cid:7)wk = wopt − wk.
+
+(25)
+
+Using (24) and (25), the error signal in (3) can be expressed as
+
+ek = xT
+k
+
+(cid:7)wk−1.
+
+(26)
+
+Subtracting wopt from both sides of (16) and using the above
+relations, we obtain
+(cid:7)wk =
+
+(cid:7)wk−1
+
+(cid:11)
+
+(cid:12)
+
+I − αk
+
+Sk−1xkxT
+k
+k Sk−1xk
+xT
+= P k(cid:7)wk−1.
+
+(27)
+
+The global asymptotic convergence of the weight-error vector
+can be assured if and only if E[P k] is time invariant and its
+eigenvalues are strictly inside the unit circle. However, certain
+strong independence assumptions have to be made to obtain a
+time-invariant description of a system such as that represented
+by (27). As an alternative, conditions for convergence with
+probability 1 can be achieved by using a system based on
+(cid:7)wk rather than E[(cid:7)wk]. A similar approach has been used
+to demonstrate the stability of other algorithms, such as, for
+example, the KQN algorithm in [7] and the constrained afﬁne
+projection algorithm in [13]. Before considering the stability
+of the proposed RQN algorithm, we apply the matrix inversion
+lemma [8] to (15) to obtain
+
+Rk = S
+
+−1
+k = Rk−1 +
+
+αk
+
+(1 − αk)τk
+
+xkxT
+k
+
+(28)
+
+k Sk−1xk. Since 0 < αk < 1 in each update,
+where τk = xT
+matrices Sk and Rk remain positive deﬁnite and bounded
+indeﬁnitely [16], and therefore, the following theorem can be
+established.
+
+Theorem 1: If the input signal is persistently exciting, then
+the system in (27) is asymptotically stable, and consequently,
+the proposed RQN algorithms are also asymptotically stable.
+
+Proof: Since matrices Sk and Rk are bounded and in-
+vertible according to Lemma 1 in [7], an equivalent system
+of equations (in the Lyapunov sense) for (cid:7)wk in (27) can be
+obtained as
+
+(cid:7)wk = R1/2
+
+k
+
+(cid:7)wk
+
+(29)
+
+k R1/2
+
+where Rk = RT /2
+k . If the system represented by (29) is
+stable or unstable, then the system represented by (27) is also
+stable or unstable, as appropriate. Taking the Euclidean norm
+of both sides of (29), we obtain
+
+(cid:8)(cid:7)wk
+
+(cid:8)2 = (cid:7)wT
+
+k Rk(cid:7)wk.
+
+(30)
+
+540
+
+IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS—II: EXPRESS BRIEFS, VOL. 58, NO. 8, AUGUST 2011
+
+Substituting (cid:7)wk given by (27) in (30), we get
+
+(cid:8)(cid:7)wk
+
+(cid:8)2 = (cid:7)wT
+
+k−1P T
+
+k RkP k(cid:7)wk−1.
+
+(31)
+
+On the other hand, substituting Rk given by (28) in (31), we
+have
+(cid:8)(cid:7)wk
+
+k Rk−1P k(cid:7)wk−1
+· (cid:7)wT
+k xkxT
+
+k−1P T
+
+k P k(cid:7)wk−1.
+
+(cid:8)2 = (cid:7)wT
+k−1P T
+αk
+(1 − αk)τk
+It is easy to verify that
+
++
+
+k Rk−1P k = Rk−1 − (2 − αk) αk
+P T
+τk
+P T
+k xkxT
+
+k P k = (1 − αk)2xkxT
+k .
+
+xkxT
+k
+
+(32)
+
+(33)
+
+(34)
+
+Now, if we use (33) and (34) in (32) and then use (30), we have
+
+(cid:8)(cid:7)wk
+
+(cid:8)2 = (cid:8)(cid:7)wk−1
+
+k−1xkxT
+k
+Since αk ⊂ (0, 1) and τk > 0 for all k, we obtain
+
+(cid:8)2 − αk
+τk
+
+(cid:7)wT
+
+(cid:7)wk−1.
+
+(cid:8)(cid:7)wk
+
+(cid:8)2 ≤ (cid:8)(cid:7)wk−1
+
+(cid:8)2.
+
+(35)
+
+(36)
+
+(cid:8)2 = (cid:8)(cid:7)wk−1
+
+The left-hand side in (36) would be equal to the right-hand
+side in an interval [k1, k2] if and only if xk remains orthogonal
+to (cid:7)wk−1 for all k ∈ [k1, k2]. However, in such a situation,
+we would obtain (cid:7)wk = (cid:7)wk−1 for all k ∈ [k1, k2] in (27).
+Therefore, (cid:8)(cid:7)wk
+(cid:8)2 would hold true if and only
+if (cid:7)wk1 = (cid:7)wk1+1 = ··· = (cid:7)wk2 = (cid:7)w. However, if the
+input signal is persistently exciting, then there is an inﬁnite
+number of sets Si = {xk1,i, . . . xk2,i} with M ≤ k2,i − k1,i <
+such that each set Si completely spans (cid:12)M for some ﬁnite
+M
+> 0 [7], [14]. Thus, it would be impossible for
+value of M
+(cid:7)wk−1 to be orthogonal to xk for all xk ∈ Si, and as a result,
+(cid:8)(cid:7)wk
+(cid:8)2, which proves that the system in (27)
+and, in turn, the proposed RQN algorithms are stable. As the
+number of sets is inﬁnite, it follows that (cid:8)(cid:7)wk
+(cid:8)2 → 0 for
+k → ∞, and therefore, the system in (27) and the proposed
+RQN algorithms are both stable and asymptotically stable. (cid:2)
+
+(cid:8)2 < (cid:8)(cid:7)wk−1
+
+(cid:11)
+
+(cid:11)
+
+IV. PRACTICAL CONSIDERATIONS
+
+In low-cost ﬁxed-point hardware implementations, the accu-
+mulation of roundoff errors can cause Sk to lose its positive
+deﬁniteness. This problem can be eliminated by periodically
+reinitializing Sk using the identity matrix. This is also done in
+k Sk−1xk < 10−3 for the
+the QN algorithm in [7] whenever xT
+case of a ﬁxed-point implementation and also in the classical
+optimization context. However, very frequent reinitializations
+could slow the convergence of the algorithm. A compromise
+number of reinitializations can be achieved by reinitializing
+Sk whenever |ek| > 2.576σk, in which case the probability of
+reinitialization in a given iteration assumes the value of 0.01.
+Reinitialization of other parameters is not required. In ﬂoating-
+point arithmetic, reinitialization is unnecessary.
+
+The variance estimator of the error signal in (19) should be
+initialized with a large value to ensure that the probability that
+γ = γc in the transient state is increased. Although a rough
+choice of σ2
+v, where
+0 < c1 < 1 is a positive constant. This choice yields good
+
+0 would work, we have used σ2
+
+0 = c1M/σ2
+
+results. The forgetting factors in (19) and (21) are chosen as
+λ = 1 − 1/(c2M) and β = 1 − 1/(c3M), respectively, where
+c2 and c3 are positive scalars [18]. The length P of vector gk
+should be greater than the duration of the impulsive noise. A re-
+duced υ in (17) would yield reduced steady-state misalignment
+and improved robustness with respect to impulsive noise. On
+the other hand, an increased γc and θk would reduce the number
+of updates and yield reduced steady-state misalignment. How-
+ever, the convergence speed would be compromised in such a
+situation.
+
+V. SIMULATION RESULTS
+
+In order to evaluate the performance of the proposed RQN
+algorithms with ﬁxed and variable γc, which are designated as
+the PRQN-I and PRQN-II algorithms, respectively, a system
+identiﬁcation application was considered, as detailed below. For
+the sake of comparison, simulations were carried out with the
+KQN and KRQN algorithms in [5] and [7], respectively.
+
+The adaptive ﬁlter was used to identify a 36th-order low-pass
+FIR ﬁlter with a normalized cutoff frequency of 0.3. The input
+signal was generated by ﬁltering a white Gaussian noise signal
+with zero mean and unity variance through a recursive ﬁlter
+with a single pole at 0.95. The measurement noise added to
+the desired signal was a white Gaussian noise signal with zero
+mean and variances of 10−3 and 10−6 (signal-to-noise ratios
+(SNRs) of 30 and 60 dB, respectively). The impulse response
+of the FIR ﬁlter was multiplied by −1 at iteration 2000 to
+check the tracking capability of the algorithm. Impulsive noise
+with a maximum duration of 3Ts, where Ts is the sampling
+duration, was added to the desired signal at iterations 1000,
+1300, and 3300 using a Bernoulli trial with probability 0.001
+[19]. All algorithms were initialized with S0 = I, and w0 = 0.
+The parameters for the PRQN-I and PRQN-II algorithms were
+set to υ = 0.30, P = 5, c1 = 1/(2M), c2 = 0.5 and υ = 0.30,
+P = 15, ξ0 = 10, ˆσ2
+
+0 = 10, c3 = 2, respectively.
+
+We have explored two options for the evaluation of Sk in the
+
+implementation of the KRQN algorithm, ﬁrst using
+
+(cid:14)
+
+(cid:15)
+
+(cid:6)(cid:13)
+
+Sk = λSk−1 +
+
+(cid:13)
+
+and then using
+
+Sk = λSk−1 +
+
+q(ek)τ 2
+k
+
+1 − λq(ek)τk
+(cid:14)(cid:16)
+
+1 − λq(ek)τk
+
+q(ek)τ 2
+k
+
+Sk−1xk
+
+k Sk−1
+xT
+
+(37)
+
+(cid:17)
+
+.
+
+(38)
+
+Sk−1xkxT
+
+k Sk−1
+
+Although (37) and (38) are equivalent, the implementation of
+(37) was subject to numerical ill-conditioning, which caused
+instability. On the other hand, the implementation of (38) was
+found to be more robust, although it requires increased com-
+putational effort. We have used (38) in our implementation of
+the KRON algorithm. The parameters for the KRQN algorithm
+were set to the values suggested in [5].
+
+The learning curves obtained from 1000 independent trials
+by using the KQN, KRQN, PRQN-I, and PRQN-II algorithms
+are illustrated in Fig. 1(a) and (b). As shown, the PRQN-I
+and PRQN-II algorithms offer robust performance with respect
+to impulsive noise and yield signiﬁcantly reduced steady-state
+misalignment relative to those in the other algorithms. On
+the other hand, the KQN algorithm is seriously compromised
+
+BHOTTO AND ANTONIOU: ROBUST QUASI-NEWTON ADAPTIVE FILTERING ALGORITHMS
+
+541
+
+Fig. 1. Learning curves for system-identiﬁcation application. (a) SNR = 30 dB. (b) SNR = 60 dB.
+
+by impulsive noise in terms of both robustness and tracking
+capability. The KRQN algorithm also offers robust performance
+with respect to impulsive noise, but its tracking performance
+is not as good as those of the PRQN-I and PRQN-II algo-
+rithms. The total numbers of updates required by the PRQN-I
+and PRQN-II algorithms were 2230 and 1356 for an SNR of
+30 dB, and 2070 and 1207 for an SNR of 60 dB, respectively,
+as compared with 4000 in the other algorithms. Note that two
+systems were identiﬁed in this experiment, one before iteration
+2000 and the other after iteration 2000. Otherwise, the number
+of updates would be reduced to half.
+
+VI. CONCLUSION
+
+Two new robust QN adaptation algorithms have been de-
+veloped on the basis of the mathematical framework of the
+classical QN optimization algorithm, which lead to an im-
+proved estimate of the inverse of the Hessian. Like the data-
+selective QN algorithm we described in [16], the proposed
+RQN algorithms incorporate data-selective adaptation, which
+signiﬁcantly reduces the number of adaptations required. A
+stability analysis shows that the proposed RQN algorithms are
+asymptotically stable.
+
+Simulation results obtained in the case of a system identiﬁca-
+tion application demonstrate that the proposed RQN algorithms
+converge faster than the KQN algorithms in [7] for medium to
+high SNRs. In addition, they offer improved robustness against
+impulsive noise, as well as improved computational efﬁciency
+and tracking relative the KRQN algorithm reported in [5].
+
+REFERENCES
+
+[1] S. Koike, “Adaptive threshold nonlinear algorithm for adaptive ﬁlters with
+robustness against impulsive noise,” IEEE Trans. Signal Process., vol. 45,
+no. 9, pp. 2391–2395, Sep. 1997.
+
+[2] J. F. Weng and S. H. Leung, “Adaptive nonlinear RLS algorithm for robust
+ﬁltering in impulse noise,” in Proc. IEEE Inter. Symp. Circuits Syst.,
+Jun. 1997, pp. 2337–2340.
+
+[3] P. Petrus, “Robust Huber adaptive ﬁlter,” IEEE Trans. Signal Process.,
+
+vol. 47, no. 4, pp. 1129–1133, Apr. 1999.
+
+[4] Y. Zou, S. C. Chan, and T. S. Ng, “A recursive least M-estimate (RLM)
+adaptive ﬁlter for robust ﬁltering in impulse noise,” IEEE Signal Process.
+Lett., vol. 7, no. 11, pp. 324–326, Nov. 2000.
+
+[5] Y. Zou and S. C. Chan, “A robust quasi-Newton adaptive ﬁltering algo-
+rithm for impulse noise suppression,” in Proc. IEEE Inter. Symp. Circuits
+Syst., May 2001, pp. 677–680.
+
+[6] P. J. Rousseeuw and A. M. Leroy, Robust Regression and Outlier Detec-
+
+tion. NewYork: Wiley, 1987.
+
+[7] M. L. R. de Campos and A. Antoniou, “A new quasi-Newton adaptive
+ﬁltering algorithm,” IEEE Trans. Circuits Syst. II, Analog Digit. Signal
+Process., vol. 44, no. 11, pp. 924–934, Nov. 1997.
+
+[8] P. S. R. Diniz, Adaptive Filtering: Algorithms and Practical Implementa-
+
+tion, 3rd ed. NewYork: Springer-Verlag, 2008.
+
+[9] A. P. Liavas and P. A. Regalia, “On the numerical stability and accuracy
+of the conventional recursive least squares algorithm,” IEEE Trans. Signal
+Process., vol. 47, no. 1, pp. 88–96, Jan. 1999.
+
+[10] G. E. Bottomley and S. T. Alexander, “A novel approach for stabilizing
+recursive least squares ﬁlters,” IEEE Trans. Signal Process., vol. 39, no. 8,
+pp. 1770–1779, Aug. 1991.
+
+[11] A. Antoniou and W. S. Lu, Practical Optimization. New York: Springer-
+
+Verlag, 2007.
+
+[12] R. Fletcher, Practical Methods of Optimization. Hoboken, NJ: Wiley,
+
+1980.
+
+[13] S. Werner, J. A. Apolinario, M. L. R. de Campos, and P. S. R. Diniz, “Low
+complexity constrained afﬁne-projection algorithms,” IEEE Trans. Signal
+Process., vol. 53, no. 12, pp. 4545–4555, Dec. 2005.
+
+[14] P. S. R. Diniz and S. Werner, “Set-membership binormalized data-reusing
+LMS algorithms,” IEEE Trans. Signal Process., vol. 51, no. 1, pp. 124–
+134, Jan. 2003.
+
+[15] S. Werner and P. S. R. Diniz, “Set-membership afﬁne projection algo-
+rithm,” IEEE Signal Process. Lett., vol. 8, no. 8, pp. 231–235, Aug. 2001.
+[16] M. Z. A. Bhotto and A. Antoniou, “Improved quasi-Newton adaptive
+ﬁltering algorithm,” IEEE Trans. Circuits Syst. I, Reg. Papers, vol. 57,
+no. 8, pp. 2109–2118, Aug. 2010.
+
+[17] S. C. Chan and Y. Zou, “A recursive least M-estimate algorithm for
+robust adaptive ﬁltering in impulsive noise: Fast algorithm and conver-
+gence analysis,” IEEE Trans. Signal Process., vol. 52, no. 4, pp. 975–991,
+Apr. 2004.
+
+[18] L. R. Vega, H. Rey, J. Benesty, and S. Tressens, “A fast robust recursive
+least-squares algorithm,” IEEE Trans. Signal Process., vol. 57, no. 3,
+pp. 1209–1216, Mar. 2009.
+
+[19] P. Z. Peebles, Probability, Random Variables and Random Signal Princi-
+
+ples. NewYork: McGraw-Hill, 2000.
+
+

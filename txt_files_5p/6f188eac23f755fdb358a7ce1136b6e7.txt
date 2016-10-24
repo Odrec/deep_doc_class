@@ -1,0 +1,5279 @@
+GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+Border Crossings: Colicins
+and Transporters
+Karen S. Jakes1,∗ and William A. Cramer2
+
+1Department of Physiology and Biophysics, Albert Einstein College of Medicine, Bronx,
+New York 10461; email: karen.jakes@einstein.yu.edu
+2Department of Biological Sciences, Purdue University, West Lafayette, Indiana 47907;
+email: waclab@purdue.edu
+
+Annu. Rev. Genet. 2012. 46:209–31
+
+First published online as a Review in Advance on
+August 28, 2012
+
+Keywords
+outer membrane receptor, outer membrane translocator
+
+The Annual Review of Genetics is online at
+genet.annualreviews.org
+
+This article’s doi:
+10.1146/annurev-genet-110711-155427
+Copyright c(cid:2) 2012 by Annual Reviews.
+All rights reserved
+
+0066-4197/12/1201-0209$20.00
+∗Corresponding author
+
+Abstract
+Colicins are protein toxins produced by Escherichia coli to kill related
+bacteria. They must cross the target cell outer membrane (OM), and
+some must also cross the inner membrane (IM). To accomplish cel-
+lular import, colicins have parasitized E. coli nutrient transporters as
+well as IM and periplasmic proteins normally used to maintain cell wall
+integrity or provide energy for nutrient uptake through transporters.
+Colicins have evolved to use both transporters and other membrane
+proteins through mechanisms different from those employed in phys-
+iological substrate uptake. Extended receptor-binding domains allow
+some colicins to search by lateral diffusion for binding sites on their
+OM translocators while bound to their primary OM receptor. Trans-
+port across the OM is initiated by entry of the unstructured N-terminal
+translocation domain into the translocator. Periplasmic and IM net-
+works subsequently accomplish insertion of the colicin cytotoxic do-
+main into or across the IM.
+
+209
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+stress
+
+INTRODUCTION
+Escherichia coli bacteria can engage in biological
+warfare against related bacteria by making
+plasmid-encoded protein toxins called colicins,
+which efﬁciently kill closely related bacteria
+that would otherwise compete for
+scarce
+nutrients under conditions of
+(77).
+Colicins have different modes of cytotoxicity;
+some make ion-conducting channels in the
+cytoplasmic (inner) membrane (IM) of suscep-
+tible cells, thereby deenergizing those cells,
+whereas others enzymatically degrade RNA
+or DNA in the cytoplasm or peptidoglycan
+precursors
+in the periplasm. Nonetheless,
+all colicins must bind to and cross the outer
+membrane (OM) of target E. coli. In order to
+accomplish that, the colicins have parasitized
+a small group of OM proteins (OMPs) whose
+normal role in the life of E. coli is to serve as
+transporters for essential nutrients, such as
+metals (e.g., siderophore-bound iron), vitamins
+(e.g., cobalamin), and sugars, or, in the case
+of the porins, to allow small molecules to pass
+while acting as a permeability barrier against
+large foreign molecules. The mechanisms by
+which these large protein toxins have co-opted
+systems normally used for the transport of small
+molecules across the cell envelope have been
+the subject of extensive genetic, biochemical,
+and structural studies, which are reviewed here.
+With the exception of colicin M, which acts
+in the periplasm (38), the colicins act enzymat-
+ically as nucleases in the cytoplasm of sensitive
+cells or as pores in the IM. The nucleases must
+therefore also cross the IM barrier.
+
+Regardless of their mode of killing, all
+twenty or so colicins that have been identiﬁed
+thus far share a common modular domain
+structure (Figure 1a). (For recent reviews,
+including details of killing mechanisms, which
+are not within the scope of this review, see
+References 14, 30, 58, 60, 72, 74, 85, 117.) In
+the order of the steps required for invasion
+and cytotoxicity, the speciﬁc functions of the
+domains are (a) the middle domain, responsible
+for receptor-binding (R), which binds with
+high afﬁnity to cell surface receptors, thereby
+
+Jakes· Cramer
+
+IM: inner membrane
+OM: outer membrane
+OMP: outer
+membrane protein
+Tol: tolerant
+
+210
+
+to
+
+extracellular milieu
+
+transferring the colicin from the three-
+dimensional
+the
+two-dimensional surface of the OM; (b) the
+N-terminal translocation (T) domain, which
+functions in transferring the colicin from its
+initial binding site on the OM to or through
+the periplasm; and (c) the C domain (cat-
+alytic, carboxy-terminal, or channel-forming),
+which carries the cytotoxicity function—pore-
+forming or enzymatic (2, 50, 103, 109, 113,
+121).
+
+Colicins are divided into groups using crite-
+ria related to all three of the basic steps in the
+killing process (Table 1): (a) the receptor used
+to bind at the cell surface (e.g., E colicins use
+BtuB as their primary receptor); (b) the group
+of IM and periplasmic proteins used to effect
+translocation from the OM into the periplasm
+and IM, either Tol (tolerant) A,B,Q,R (group
+A colicins) (31) or TonB, ExbB, ExbD (group
+B colicins) (32); and (c) their killing mechanism
+(e.g., RNase, DNase, peptidoglycan degrading,
+or pore forming). Recently, as they have been
+identiﬁed, colicins have also been characterized
+by the target cell translocator used to cross the
+OM after binding to their primary receptor.
+
+CRYSTAL STRUCTURES
+OF COLICINS
+Crystal structures have been obtained of the
+colicins B, Ia, N, E3, and M (Figure 1b–
+f ). These colicins exert three different cyto-
+toxic functions: pore formation/depolarization
+of the cytoplasmic membrane (Ia, B, and N)
+(50, 109, 113), endoribonuclease (E3) (103),
+and periplasmic phosphatase (M) (121). Struc-
+tures have also been obtained of an iso-
+lated C-terminal 175–200-residue layered he-
+lical channel-forming domain of colicin A (86)
+and E1 (39) and of the catalytic domain of the
+tRNase colicin D complexed with its immunity
+protein (46).
+
+The extended helical coiled-coil 160- ˚A-long
+R domain of colicin Ia (113), the 100- ˚A-long
+R domain of E3 (103), and the 74- ˚A single
+helix R domain of colicin B (50) (Figure 1)
+are prominent features of the structures of the
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+T
+
+R
+
+C
+
+COOH
+
+c  Colicin Ia
+
+a
+
+H2N
+
+b  Colicin E3
+
+Imm
+mm
+
+d  Colicin M
+
+e  Colicin N
+
+f  Colicin B
+f Colicin B
+
+Figure 1
+Ribbon diagrams of solved structures of colicins. (a) Typical domain arrangement of colicins. T, translocation domain (blue); R,
+receptor-binding domain ( green); C, catalytic or channel-forming domain (red ). All structures shown have their domains colored
+according to the arrangement in panel a. (b) Colicin E3 (pdb, 1JGH; resolution, 3.02 ˚A), an rRNase, is shown with its tightly bound
+immunity protein (Imm) in yellow (103). (c) Colicin Ia (pdb, 1CII; resolution, 3.00 ˚A) is a channel-forming colicin (113). (d ) Colicin M
+(pdb, 2XMX; resolution, 1.67 ˚A) is a periplasmic phosphatase (121). (e) Colicin N (pdb, 1N87; resolution, 3.10 ˚A) is a channel-forming
+colicin (109). ( f ) Colicin B (pdb, 1RH1; resolution, 2.50 ˚A) is a channel-forming colicin (50). Note the extended coiled-coil R domains
+of colicins E3 and Ia and the shorter single α-helical R domain of colicin B.
+
+intact colicins. The functional signiﬁcance of
+this structure, unusual for a receptor-binding
+domain, is discussed below. The N-terminal
+peptide domain of all ﬁve colicins shown in
+Figure 1 is disordered and is involved in
+translocation across the OM (52, 53, 85), as
+discussed below. Colicin E1 is an exception;
+
+only 40 residues of its 190-residue N-terminal
+domain that binds to its TolC translocator
+have a disordered secondary structure, but they
+display tertiary structure (119). The nuclease
+colicin E3 is unique among the set of ﬁve
+colicins shown here in having an extremely
+tightly bound immunity protein (Kd ≈ 10−14
+
+www.annualreviews.org • Colicins and Transporters
+
+211
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+Table 1 Host protein requirements and killing mechanisms used for classiﬁcation of colicins
+
+Colicin
+E1
+E2, E7, E8, E9
+E3, E4, E6
+E5
+A
+K
+5, 10
+B
+D
+Ia, Ib
+N
+M
+
+Outer membrane
+primary receptor
+BtuB
+BtuB
+BtuB
+BtuB
+BtuB
+Tsx
+Tsx
+FepA
+FepA
+Cir
+OmpF
+FhuA
+
+Translocator
+TolC
+OmpF
+OmpF
+OmpF
+OmpF
+OmpF
+TolC
+??
+??
+Cir
+OmpF
+??
+
+Translocation
+
+“machine”
+
+TolA,R
+TolA,B,Q,R
+TolA,B,Q,R
+TolA,B,Q,R
+TolA,B,Q,R
+TolA,B,Q,R
+TonB, ExbB,D
+TonB, ExbB,D
+TonB, ExbB,D
+TonB, ExbB,D
+TolA,Q,R
+TonB,ExbB,D
+
+S4
+
+OmpW
+
+OmpF
+
+TolA,B,Q,R
+
+Mode of killing
+
+Pore-forming
+DNase
+rRNase
+tRNase
+Pore-forming
+Pore-forming
+Pore-forming
+Pore-forming
+tRNase
+Pore-forming
+Pore-forming
+Peptidoglycan
+precursor
+degradation
+Pore-forming
+
+Note that this table reﬂects requirement by E1 only of TolA and R, but not TolQ. This is in contradiction to results
+described earlier (8, 75, 105); careful studies with gene knockouts by Sharma et al. explain discrepancies (96).
+
+M) (85, 103), which is removed upon entry of
+the colicin into the OM through a mechanism
+that, although unknown in detail, is energy
+dependent (108).
+
+Most colicins use as their primary, high-
+afﬁnity OM receptor one of a few OM proteins
+called TonB-dependent transporters (TBDTs),
+namely BtuB, Cir, FepA, and FhuA (Table 1)
+(69, 81, 114). These proteins are 22-stranded β-
+barrels with a plug formed by the ﬁrst 160 or so
+residues folded inside the barrel (Figure 2a,b).
+Near their amino termini, all of those recep-
+tors have a sequence, the TonB box, that inter-
+acts with the IM-anchored, periplasm-spanning
+protein TonB at the periplasmic side of the OM
+(87, 100). The interaction of the TonB box with
+TonB is necessary for uptake of the natural sub-
+strate of the receptors—ferric siderophores for
+FepA and FhuA, 2,3-dihydroxybenzoylserine
+or 2,3-dihydroxybenzoic acid for Cir (48, 80),
+or cobalamin in the case of BtuB. TonB and its
+IM and periplasmic partners, ExbB and ExbD,
+somehow interact via their IM-anchored do-
+mains to provide the energy for substrate up-
+take. These interactions and those of the cor-
+responding Tol proteins are discussed below.
+Somewhat paradoxically, the E colicins and
+
+Jakes· Cramer
+
+colicin A, which include both enzymatic and
+pore-forming colicins, although using a TonB-
+dependent receptor, BtuB (Table 1), as their
+primary high-afﬁnity receptor, do not have a
+TonB box and do not need the interaction with
+TonB to kill. Instead, they have, near their N
+termini, a short sequence or sequences (TolA
+box and TolB box) that bind to TolA and TolB
+(Table 1) (20). For these colicins, mutation of
+the Tol box reduces or abolishes killing activ-
+ity, although the mutant colicins still bind their
+receptor (11, 12). E. coli bearing mutations in
+any of the proteins involved in the translocation
+step of a particular colicin—TolA, TolB, TolQ,
+TolR, TonB, ExbB, or ExbD—are termed tol
+for tolerant; they can tightly bind that colicin on
+their OM but are not killed and do not demon-
+strate reduced killing-associated activity (92).
+
+A caveat regarding the structure of the TonB
+box in BtuB is that it is dependent on the
+method of crystallization. Thus, the orientation
+of the TonB box, starting with Asp6-Thr7, is
+in the opposite direction in the structure ob-
+tained by crystallization in detergent (27) com-
+pared with crystallization done in the lipid cu-
+bic phase (LCP) (26). The conformation of
+the TonB box in the complex of BtuB and the
+
+TBDT:
+TonB-dependent
+transporter
+LCP: lipid cubic
+phase
+
+212
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+a
+
+b
+
+c
+
+d
+
+e
+
+Figure 2
+TonB-dependent transporter structures. (a) The side view of BtuB in lipid cubic phase (pdb, 2GUF; resolution, 1.95 ˚A) (26), with
+22-stranded β barrel shown in green, the N-terminal plug domain shown in red, and the TonB box shown in blue. (b) The view of
+BtuB from the top (i.e., outside of the cell). (c) The BtuB structure with bound E3R domain (pdb, 1UJW; resolution, 2.75 ˚A) (71).
+(d ) The BtuB with bound E2R domain (pdb, 2YDU; resolution, 3.50 ˚A) (97). (e) The Cir structure with bound Ia R domain (pdb,
+2HDI, resolution, 2.50 ˚A) (16). Note that in none of the latter three structures has the plug domain moved appreciably out of the barrel.
+
+receptor-binding R domain of colicin E3 (71)
+is superimposable with the LCP structure with-
+out the colicin peptide.
+
+TolA, TonB, AND ENERGY
+SOURCES FOR COLICIN
+TRANSPORT
+TolA, B, Q, R and TonB, ExbB, and ExbD are
+two homologous groups of proteins involved
+in maintaining membrane integrity in E. coli
+and in transducing energy from the IM to ef-
+fect substrate uptake through the TBDT. They
+
+have been cannibalized by colicins to assist in
+their entry into the periplasm. Both TolA (421
+residues) and TonB (239 residues) (94) are an-
+chored in the IM by a single transmembrane
+segment at their N termini (33); they extend
+across the periplasm to varying extents to in-
+teract with OMPs at or near the periplasmic
+side of the OM (69, 94).
+
+One key difference between the Tol sys-
+tem and the TonB trio is that there are two
+additional proteins involved in the Tol sys-
+tem: TolB and Pal. TolB is a 44-kDa soluble
+periplasmic protein consisting of two domains:
+
+www.annualreviews.org • Colicins and Transporters
+
+213
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+ ˜μH+:
+transmembrane proton
+electrochemical
+potential gradient
+(units, kcal mol−1),
+also described as
+proton motive
+force (pmf)
+
+214
+
+an N-terminal α/β domain and a six-bladed β-
+propeller domain (1, 19). Pal (peptidoglycan-
+associated lipoprotein) is an OM lipoprotein
+that can bind either to the peptidoglycan or
+to TolB (10); dynamic Tol-Pal complexes are
+part of the cell division machinery (43), but
+they have been co-opted by colicins to assist
+in their uptake. Colicins, such as E3 or E9,
+that use TolB can competitively displace TolB
+from Pal, although colicin A cannot (9), and
+then TolB can associate with TolA to provide
+the energy necessary for the uptake steps dis-
+cussed below. By contrast, TonB plays the roles
+of both TolB and TolA for TonB-dependent
+colicins: It can bind to an OM receptor pro-
+tein through the TonB box of the receptor (87,
+100) and can also bind directly to the colicin
+via the TonB box of the colicin, as discussed
+below.
+
+TolQ and ExbB are both IM proteins pre-
+dicted to have three transmembrane domains;
+TolR and ExbD are inferred to each have a sin-
+gle transmembrane domain. Under certain con-
+ditions, mutants of members of one pair can be
+complemented by overexpression of plasmid-
+encoded proteins of the other (13, 73). Dynamic
+interactions between the members of each trio
+harvest energy from the IM  ˜μH+ and transfer
+it to TolA or TonB to power colicin translo-
+cation. Homologies to the ﬂagellar motor sys-
+tem have been described (22). Mutational and
+cross-linking studies have identiﬁed how part-
+ners interact—most likely as oligomers—and
+the dependence of those interactions on the
+energized state of the IM (21, 44, 73, 82, 83,
+90, 122). It was recently shown that, as with
+TolA, TonB does not leave the IM, or shuttle,
+to transduce energy to the OM (47). There are
+some fundamental differences between TolA
+and TolB, however. No OMP is known to have
+a TolA box comparable to the TonB boxes on
+TBSTs. In fact, it seems that, in contrast to
+TonB function, TolA does not need to span
+the periplasm in all instances. Although full-
+length TolA is needed to maintain membrane
+integrity, cytotoxicity of colicins E1, E3, N, and
+A is barely affected by deletion of approximately
+half the periplasmic domain of TolA (94).
+
+Jakes· Cramer
+
+Further details on these systems are contained
+in the references cited.
+
+THE OUTER MEMBRANE
+CONUNDRUM
+Until the ﬁrst structures of colicin receptor-
+binding domains bound to their cognate recep-
+tors were solved, the problem of how such large
+molecules might pass through the OM seemed
+relatively simple. The plugged β-barrels have
+a relatively wide extracellular-side diameter
+when the plug is removed [an elliptical opening
+of ∼25 ˚A × 35 ˚A for Cir (16), and ∼28 ˚A ×
+37 ˚A for BtuB, measured between backbone
+atoms (26)]. Thus, models for OM transloca-
+tion included proposals that binding of the R
+domain would somehow trigger the exit of the
+plug domain, and the colicin would simply pass
+through the barrel in an unfolded state (113).
+However, once there were crystal structures of
+colicin R domains bound to their receptors, the
+problem became more complicated (Figure 2c–
+e) (16, 71, 97). BtuB binds colicin E3 through
+a “Venus ﬂy-trap mechanism” exerted by its
+disordered extramembrane extracellular loops,
+which show a conformational change upon the
+binding of the R domain (71), resulting in a tight
+binding with a Kd ≤ 10−9 M for the R domain of
+colicin E3 (71) and E9 (89). However, in none of
+the solved structures did the plug domain move
+appreciably, and no path was exposed minimally
+wide enough (>10 ˚A) for a protein with an un-
+folded structure. Using the case of Cir, even
+with the plug removed, colicin Ia could not
+pass through the barrel without signiﬁcant un-
+folding, as dramatically illustrated in Figure 3.
+These structures also explained earlier in vivo
+experiments (18) that suggested colicin bind-
+ing does not lead to movement of the plug out
+of the barrel. Whereas addition of cobalamin,
+its natural substrate, exposed the N-terminal
+plug of BtuB to a labeling reagent, addition of
+the colicin E3 R domain caused no such in-
+creased exposure. In light of the crystal struc-
+tures of BtuB with a bound E2 or E3 R domain
+(71, 97), these results make sense because the
+plug doesn’t move upon colicin binding. The
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+a  Cir
+
+b  β-domain
+
+c  DHBS
+
+d  Colicin Ia
+
+e
+
+f
+
+g
+
+h
+
+i  Cir/colicin Ia overlay
+
+Colicin Ia
+
+Cir β-domain
+
+Figure 3
+Colicin Ia cannot ﬁt through its Cir receptor even with the plug removed. (Top row) Space-ﬁlling depictions,
+as seen from outside the cell, of (a) the Cir 22-stranded β barrel in green with the plug domain in yellow
+(16), (b) Cir with plug domain removed, (c) a natural substrate of Cir, dihydroxybenzoylserine (DHBS), and
+(d) colicin Ia (113) in pink. (Second row) Ribbon depictions as seen from the membrane of (e) Cir, with its
+barrel domain in green and its plug domain in yellow, ( f ) the Cir barrel with the plug removed, ( g) DHBS,
+and (h) colicin Ia. It is obvious that DHBS cannot ﬁt through the pore of Cir without some rearrangement of
+the plug domain; the bottom ﬁgure (i ) shows that even removing the plug entirely would not allow passage
+of the colicin without considerable unfolding of its tertiary and possibly secondary structure.
+
+orientation of the coiled-coil R domain bound
+to the receptor, 45◦ relative to the plane of the
+membrane, suggested an answer to the prob-
+lem, at least for the two Tol-dependent colicins,
+E2 and E3 (Figure 2c,d) (71, 97).
+
+RECEPTOR-BOUND
+COLICIN SEARCHES
+FOR A TRANSLOCATOR:
+TOL-DEPENDENT COLICINS
+For all of the Tol-dependent (Group A) col-
+icins, E. coli mutations had been identiﬁed in
+proteins required for killing, which were dis-
+tinct from both the primary receptor and the
+Tol pathway. For colicins A and E2–E9 (23,
+
+52, 91), the trimeric porin, OmpF, is required
+(Figure 4a); for E1, TolC is required, solely or
+in addition to BtuB. The role of these proteins,
+sometimes referred to as coreceptors, was ob-
+scure. It was clear from in vivo experiments that
+the colicin could still bind to ompF mutants, for
+instance, but killing was nonetheless impaired
+(91). The extended (≥100 ˚A) length of the R
+domain of colicin E2 or E3 (Figure 1) was pro-
+posed to be relevant to the mechanism of OM
+import through a “ﬁshing pole” mechanism, by
+which the extended colicin, bound to its pri-
+mary receptor, can use its T domain as a ﬁshing
+hook to ﬁnd its translocator, OmpF in this case,
+in the OM (71) (Figure 2c,d and Figure 4c).
+
+www.annualreviews.org • Colicins and Transporters
+
+215
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+a
+
+c
+
+b
+
+Colicin
+
+R
+
+OmpF
+
+T
+
+BtuB
+
+TolC
+
+Outer membrane
+
+Peptidoglycan
+
+Periplasm
+
+Inner membrane
+
++
+
+_
+
+TolB
+
+TolARQ
+
+Figure 4
+OmpF is the translocator for enzymatic E colicins. (a) The OmpF trimer, a
+16-stranded antiparallel β barrel, seen from the top (cell exterior) and from the
+membrane (29). (b) The side view of an OmpF monomer showing the inserted
+segment of colicin E3 T83 N-terminal peptide (115). (c) Colicin E3 searches
+for its OmpF translocator after binding, via its R domain, to BtuB. The
+intrinsically disordered part of the T domain searches for OmpF and initiates
+translocation through one of its pores, after which the TolB box displaces TolB
+from Pal and binds TolA, which leads ultimately to uptake of the colicin into
+the periplasm. TolC, which forms a homotrimeric transperiplasmic “channel
+tunnel” (68) and serves as the translocator for colicin E1, is also shown; colicin
+E1 does not require TolB for cytotoxicity.
+
+diffusion
+
+Single-molecule
+
+experiments
+with ﬂuorescently labeled colicin bound to
+BtuB showed that colicin bound to BtuB can
+search the OM landscape for its translocator.
+The effective diffusion coefﬁcient over short
+distances is ≈10−9 cm2 s−1(104), implying that,
+in the absence of a barrier, in one second, the
+colicin-BtuB complex can move a net distance
+of approximately 0.5 μm, a signiﬁcant fraction
+of the length of an E. coli cell.
+
+Jakes· Cramer
+
+216
+
+This mechanism also explains experiments
+in which mutating the TonB box of BtuB re-
+duced the efﬁciency of cobalamin uptake by
+several orders of magnitude while not affecting
+sensitivity to colicins E1 or E3 (17). Because
+no interaction of the plug domain of BtuB with
+TonB is needed once the colicin has bound to
+the receptor and can search for its translocator,
+Tol-dependent colicin killing is not affected by
+mutations to the TonB box of their receptor.
+However, this is very different from the effect of
+TonB box mutations on the Group B, or TonB-
+dependent, colicins as discussed below.
+
+Occlusion of OmpF channels in planar lipid
+bilayer membranes by the T domain of colicin
+E3 (116) implied that the T domain could bind
+to, and possibly insert into, the OmpF porin.
+This was conﬁrmed by cocrystallization and
+subsequent crystal structures obtained for a
+complex of OmpF and disordered N-terminal
+domains of the RNase colicin E3 (115) and
+the DNase colicin E9 (53). Electron density
+consistent with a seven-residue segment of
+the colicin E3 T domain, whose sequence was
+not determined in the original study (115),
+overlapped a 15-residue T domain peptide
+of colicin E9 that spans the aqueous channel
+(Figure 4b).
+running through OmpF (53)
+These structures deﬁne the anchor formed by
+these colicins with the OmpF porin protein
+through which their cytotoxic C-terminal seg-
+ment must presumably be inserted. The ability
+of the E3 C-terminal domain to also insert
+into OmpF was shown by occlusion of OmpF
+channels by an immunity protein-depleted 96-
+residue C-terminal peptide, but this insertion,
+discussed at greater length below, is not known
+to be relevant to cytotoxicity (120).
+
+By four criteria, colicin E1, which has
+traditionally been placed in a group with other
+Tol-dependent colicins (Table 1) (31), differs
+from the other colicins in this group: (a) Its
+afﬁnity for BtuB is lower by 1–2 orders of mag-
+nitude (106); (b) deletion of residues 54–287
+of TolA, virtually its entire periplasmic helical
+domain, has relatively little effect on the cyto-
+toxicity of E1 or E1-induced K+ efﬂux, whereas
+these activities are drastically reduced for
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+colicins E3, A, and N (94); (c) in contrast
+to colicins E3 and E9, as well as Ia, the N-
+terminal T domain, consisting of 190 residues,
+has a mostly ordered structure, as shown
+by far/near-UV circular dichroism spectra
+(119); and (d ) the OM passage of an ordered
+N-terminal domain of E1 seems allowed by
+its unique utilization of TolC, which has a
+much larger OM aperture than OmpF (4, 88),
+as its translocator. The accessible entry portal
+from the OM is approximately 27 × 27 ˚A,
+signiﬁcantly larger than the OmpF pore, which
+is <11 ˚A (29). Thus, the helical N-terminal
+domain of colicin E1 can enter the TolC portal.
+However, the putative colicin exit portal of
+TolC is much smaller, ≈5 ˚A. Mechanisms for
+a closed-to-open transition of this portal to
+allow drug export have been proposed (88).
+In the case of colicin, exit at this site must be
+driven by cellular energy. Use by colicin E1
+of TolC, a transperiplasmic “channel tunnel,”
+normally involved in drug efﬂux from E. coli,
+(68) apparently obviates the requirement for
+the periplasmic TolB protein, required by the
+other E colicins, for its uptake (Table 1) and
+ultimate engagement with TolA.
+
+What Happens After Nuclease
+Colicins Find the OmpF
+Translocator? What is Translocated?
+One can imagine two scenarios by which the
+initial contact/embedding of the T domain
+with OmpF initiates the necessary transloca-
+tion of the colicin C domain. The ﬁrst scenario
+involves an N-terminal peptide that is translo-
+cated through the OmpF pore and forms a
+complex with TolB in the periplasm (53, 84);
+the whole colicin, with C domain trailing,
+is then pulled through that pore into the
+periplasm, from which it interacts with the IM
+TolQRA complex that allows it to reach the IM
+(Figure 4c). A major problem with this sce-
+nario is the formidable energy requirement,
+in addition to the unknown energy required
+for translocation of the T domain through
+OmpF, which is necessary to free colicin that
+is very tightly bound to BtuB via its R domain
+
+(Figure 4c) (discussed further below). The sec-
+ond scenario involves the occlusion in vitro of
+OmpF channels by the unfolded C domain of
+colicin E3 (120), which suggests the possibility
+that the C domain itself, after cleavage (possibly
+by OmpT protease at the outer surface of the
+OM or OmpF), would be translocated through
+a second porin unit of the trimeric porin after
+that OmpF was located and anchored by the
+T domain. On the one hand, this two-pore
+mechanism would avoid the energy crisis
+implied by the total thread mechanism in the
+ﬁrst scenario and discussed below; on the other
+hand, there are no known signaling sequences
+in the C-terminal peptide, comparable with
+the TolA, TolB, or OmpF binding sites that
+have been identiﬁed in the T domain, to direct
+it to the IM TolQRA guiding system.
+
+TonB-DEPENDENT COLICINS:
+HOW DO THEY TRANSLOCATE?
+Until recently, no second receptor or translo-
+cator had been identiﬁed genetically for any of
+the TonB-dependent colicins, such as Ia, B, D,
+or M. Mutant E. coli lacking OmpF, OmpC,
+and TolC are all sensitive to colicin Ia (16).
+For these colicins, after binding to their high-
+afﬁnity cell surface receptor, it was inferred that
+two distinct interactions with the TonB protein
+are required for killing the target cell. If either
+the TonB box of the receptor or the TonB box
+on the colicin itself was mutated, binding of the
+colicin to the OM occurred normally, but cy-
+totoxicity was impaired. The in vitro channel-
+forming killing activity and receptor binding of
+these mutant colicins were shown to be normal
+(7, 16, 79), leading to the conclusion that they
+were impaired in the translocation step. Cer-
+tain compensatory tonB mutations could restore
+a degree of colicin sensitivity (7, 95). Thus, it
+was suggested that the receptor and the colicin
+must each interact with TonB (14, 16).
+
+For colicin Ia with its receptor, the Cir
+protein, it was recently shown that the colicin
+uses two copies of Cir for killing—one copy
+as the primary high-afﬁnity binding site and
+a second copy as its translocator (57). Hybrid
+
+www.annualreviews.org • Colicins and Transporters
+
+217
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+colicins, in which the R domain of colicin Ia
+was replaced by the R domain of colicin E3,
+became dependent on the E3 receptor, BtuB, to
+kill target cells. btuB mutant strains were killed
+much less efﬁciently than wild-type strains but
+still retained measurable activity (∼0.01% of
+the activity on wild-type cells). However, the
+chimeric colicin IaE3R still absolutely required
+the Cir protein for killing, suggesting that Cir
+plays another role in addition to that of primary
+receptor. The residual level of killing of btuB
+mutants by the IaE3R protein suggested that
+the T domain of Ia could initiate binding to
+Cir, albeit with much lower efﬁciency because
+the isolated C, or pore-forming, domain has no
+in vivo toxicity by itself (57). In fact, a deletion
+mutant of colicin Ia that was missing its entire R
+domain killed wild-type E. coli with low, but still
+signiﬁcant, efﬁciency, demonstrating that the T
+domain could initiate killing. Cloned T domain
+by itself was shown to protect E. coli from killing
+by intact colicin Ia, conﬁrming that, indeed,
+T domain must bind to Cir, although the data
+suggest that the binding is much weaker than
+the primary binding of the R domain to Cir (57).
+Taken together, all of these experiments
+suggest a model (Figure 5) in which the col-
+icin Ia R domain binds with high afﬁnity to
+one copy of Cir on the OM. From its perch
+there, at an angle of approximately 45◦ rela-
+tive to the membrane plane (16), the very same
+pitch as that of the R domain of colicins E2
+and E3 (71, 97), the largely unstructured part
+of the T domain searches for another nearby
+copy of Cir, to which it also binds. Although the
+geometry of the complex of colicin Ia bound,
+via its R domain, would place the T domain
+∼100 ˚A above the OM surface (Figure 2e) (16,
+98), the unstructured N terminus of the T do-
+main should be long enough to reach the mem-
+brane (6), particularly if thermal motion is al-
+lowed. Then, in a reaction that is postulated
+to mimic the action of binding of the natural
+substrate, the T domain triggers movement of
+the plug domain of Cir (Figure 5). That move-
+ment would allow the TonB box of Cir to bind
+to an energized copy of the TonB protein in
+the periplasm, which would move the Cir plug
+
+Jakes· Cramer
+
+either partially or entirely out of the barrel, al-
+lowing the unstructured N terminus of the T
+domain to pass through the Cir barrel. Once
+that has happened, the TonB box of the colicin
+is available on the periplasmic face of the OM
+and can either displace the same copy of TonB
+from its complex with Cir or bind a second copy
+of TonB.
+
+As discussed in other sections, energy trans-
+duced from the IM via the interactions of TonB
+with ExbB and ExbD is assumed to unwind
+the colicin and is inferred to pull the entire
+molecule through the barrel of Cir. Then, the
+channel-forming domain at the other end of
+the polypeptide chain from the TonB box ends
+up in the periplasm where, as inferred from in
+vitro experiments, it can spontaneously insert in
+the IM, form a channel, and kill its target (58,
+64). At least for the case of colicin Ia, a second
+copy of its primary receptor, Cir, plays the role
+that OmpF and TolC play for the enzymatic E
+colicins and colicin E1, respectively. Thus, the
+colicin would pass through Cir from its seat on
+the outside of the OM to reach the periplasm
+and interact with the protein machinery that en-
+ergizes the rest of the translocation across the
+membrane. The energy requirement to pull Ia
+off its receptor (67) is formidable, as it is for
+the enzymatic E colicins. For group B colicins,
+as for group A colicins, the role of the high-
+afﬁnity primary receptors to which the R do-
+mains of colicins bind is to transfer the colicins
+from the three-dimensional extracellular milieu
+to the OM surface, allowing their T domains
+to search for their cognate translocator protein
+(Figure 4c and Figure 5). As was recently
+shown for E9, which has two binding sites for
+OmpF in its disordered T domain (53), such
+sites should exist in the T domain of Ia for Cir
+and in colicin E1 for TolC.
+
+Studies on this problem (57) have not an-
+swered the question of whether a single copy of
+TonB energizes the whole translocation pro-
+cess (Figure 5c,d ), or whether two separate
+copies of TonB bind, one to the TonB box of
+the receptor and a second to the TonB box of
+the colicin (Figure 5a,b). TonB has been shown
+to form dimers in vivo (62, 63, 93).
+
+218
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+Colicin Ia 
+
+Cir 
+
+Cir 
+
+Cir plug 
+
+a
+
+OM 
+
+Periplasm 
+
+b
+
+c
+
+d
+
+TonB
+protein
+
+One  TonB
+protein
+
+Two  TonB
+proteins
+
+Figure 5
+Diagram model for colicin Ia binding and translocation through Cir. Two models of colicin Ia translocation
+and the binding of TonB boxes of colicin Ia and Cir to TonB. (a) Colicin Ia has bound via its R domain
+( green) to one copy of Cir, and the unstructured N terminus of its T domain (red ) has found a nearby second
+copy of Cir. (b) One copy of TonB (orange) has bound to the N-terminal plug domain of Cir ( purple trans-Cir
+domain) via the TonB box on Cir ( green cylinder), causing the plug to rearrange and allow passage of the
+N-terminal end of Ia through the barrel of Cir, where its own TonB box ( green cylinder) has found a second
+copy of TonB. In a different model, (c) the N terminus of Ia ﬁnds a second copy of Cir, triggering the
+rearrangement of Cir’s plug ( purple trans-Cir domain) and binding of its TonB box ( green cylinder) to TonB.
+(d ) Further pmf-driven rearrangement allows the T domain of the colicin to pass through Cir, where its own
+TonB box displaces that of Cir from the same copy of TonB. Note that this is simply a cartoon model; the
+relative sizes and angles of the colicin, Cir, and TonB molecules are not accurate and are represented by
+shapes, not actual solved structures.
+
+Do Other TonB-Dependent
+Colicins Also Use a Second Copy
+of Their Primary Receptor as
+Their Translocator, as Colicin Ia
+Does? Insights from Colicin N,
+a Tol-Dependent Colicin
+As does colicin Ia, other TonB-dependent
+colicins, such as B, D, and M, have a TonB box
+sequence near their N termini and depend on
+an interaction both of their receptor with TonB
+and of the colicin itself with TonB for efﬁcient
+killing. Experiments with colicin Ia in which
+very high colicin-to-receptor concentrations
+inhibit killing in liquid culture were explained
+by the idea that if all of a cell’s copies of Cir
+are occupied by colicin Ia tightly bound via
+its R domain, then there are no free copies of
+Cir available to bind the T domain and act as
+
+translocators (57). Similar experiments were
+performed with both colicin M (K.S. Jakes,
+unpublished data) and colicin B (K. Postle,
+unpublished data). In neither case did very high
+concentrations of the colicin inhibit efﬁcient
+killing of the target bacteria. These exper-
+iments, although not decisive, suggest that
+neither colicin M nor colicin B (and probably
+also not colicin D, which is nearly identical to
+B in its T and R domains) uses a second copy of
+its receptor as its translocator. As is clear from
+other examples discussed in this review, colicins
+have evolved different ways to use the same or
+related machinery for their uptake. Colicin M
+has a very compact structure with only a short
+(∼35 residues) T domain (121) (Figure 1);
+colicin B, although it has a better separated
+dumbbell-like three-domain structure (50)
+(Figure 1),
+lacks the very long coiled-coil
+
+www.annualreviews.org • Colicins and Transporters
+
+219
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+that separates the R domain from the T and
+C domains that is seen in the structures of
+colicins E3 and Ia. Thus, neither colicin M nor
+colicin B may be able to use the ﬁshing rod
+search mechanism for the T domain to reach a
+translocator remote from its primary receptor
+envisioned for colicin Ia or the E colicins.
+
+Perhaps colicins M and B are more like
+the more compact colicin N (109) (Figure 1),
+which uses the porin OmpF as both its recep-
+tor and as its translocator (Table 1) (40, 42).
+We suggest that there are likely two different
+interactions of colicin N with OmpF—one in
+which the R domain of the colicin binds at one
+site on OmpF and a second in which the un-
+structured T domain reaches around and ini-
+tiates a pathway, either through another pore
+of the trimeric OmpF, analogous to E3 or E9,
+as discussed above, or, alternatively, down the
+outside of the OmpF trimers, through the lipid-
+lipopolysaccharide bilayer of the OM. Thus,
+the OmpF translocator mechanism employed
+by colicin N may be different than that used by
+other OmpF-dependent colicins.
+
+There is now genetic, crystallographic, and
+electrophysiological evidence that the T do-
+mains of the enzymatic E colicins and colicin
+A move through the inside of the OmpF pore,
+as described above (53, 61, 115, 116, 120), and
+that colicin E1 moves through the TolC chan-
+nel (78, 116). The G119D mutation that nar-
+rows the pore inside OmpF signiﬁcantly re-
+duces killing by colicin N relative to wild-type
+OmpF (61). However, those experiments failed
+to distinguish whether the mutation inhibited
+binding of the colicin to the cell surface or in-
+hibited killing at some step beyond initial bind-
+ing, i.e., moving through or alongside of the
+translocator, and the crystal structure of colicin
+N is inconsistent with its R domain reaching
+as deep inside OmpF as the location of G119
+(109). If, in fact, colicin N can bind normally to
+the mutant G119D OmpF and is inhibited at
+some later stage of killing, then that would sup-
+port the notion that translocation occurs via the
+inside of the pore, in the way that the enzymatic
+E colicins have been shown to do. Studies with
+other mutants in the same L3 loop of OmpF,
+
+Jakes· Cramer
+
+with both colicins N and A, also support the idea
+that at least some part of the colicin must move
+into the open pore channel (15, 101). However,
+the fact that colicin N does not require TolB
+for translocation (45) (Table 1) also supports
+the idea that there is, indeed, something unique
+about the mechanism of its OmpF-dependent
+translocation.
+
+It has recently been shown, using electron
+microscopy analysis of 2D crystals (3) and
+neutron scattering (28), that some part of the
+colicin N molecule binds on the outside of
+OmpF trimers. The colicin appears to displace
+lipopolysaccharide from the OM when it binds
+to OmpF, consistent with a genetic screen that
+identiﬁed LPS core biosynthesis as having a
+role in colicin N activity (96). Clifton et al.
+(28) propose a model in which the density seen
+in the membrane and in the spaces between
+OmpF trimers is the C domain of colicin
+N. However, their data may also support a
+different mechanism in which the R domain
+binds at the opening formed by one of the
+trimer pores and provides a seat from which the
+unstructured T domain then seeks a pathway
+to move down the outside of the OmpF trimer
+through the membrane, thus allowing its TolA
+box to contact TolA in the periplasm, which
+transduces energy to move the rest of the
+colicin molecule across the OM (45, 92). The
+existence of a thinner membrane near part of
+OmpF, discussed in detail for the case of BtuB
+(26, 41), is an example in the OM of hydropho-
+bic mismatch (66) and could facilitate the
+insertion of colicin N through the membrane
+adjacent to OmpF, as proposed in the neutron
+diffraction studies of this complex (28).
+
+A similar mechanism could be imagined for
+colicins B and M in which their R domains
+bind their respective TonB-dependent recep-
+tors, FepA and FhuA, anchoring the colicin at
+the cell surface and allowing their T domains
+to move down the outside of the receptor bar-
+rel, through the membrane, to initiate contact
+with TonB. However, for these colicins, such
+a model does not explain the role of the TonB
+box of the receptor itself, which is necessary
+for colicin cytotoxicity (14, 16). There are also
+
+220
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+conﬂicting experiments to determine whether
+or not colicin B causes signiﬁcant movement
+of the FepA plug domain. Signiﬁcant TonB-
+dependent movement of the FepA plug induced
+by colicin B has been reported (34), whereas
+studies with different conditions and a differ-
+ent labeling reagent found no colicin B–induced
+movement of the plug into the periplasm (102).
+The very different architectures of colicin Ia
+and colicins B and M may be associated with
+different modes of translocation. However, the
+fact that high concentrations of neither colicin
+B nor M inhibit killing supports the notion that
+killing and translocation may proceed through
+the same molecule of the receptor for these
+colicins, distinguishing them from colicin Ia.
+Certainly, the much more compact structures
+of both colicins B and M place their T do-
+mains much closer to the opening of the recep-
+tor, once bound via the R domain. Determin-
+ing crystal structures of these colicins bound to
+their cognate receptors might deﬁne their mode
+of translocation.
+
+Obviously, experiments must be designed
+to resolve these uncertainties: (a) whether the
+plug domain of any of the TonB-dependent col-
+icins actually fully or partially exits the recep-
+tor or merely rearranges within the barrel in
+order to open a passageway for the colicin and
+(b) whether any of the TonB-dependent colicins
+or colicin N uses the outside of its receptor as a
+pathway through the membrane to reach the cy-
+toplasm, which would obviate the need for the
+plug to rearrange. However, the latter mecha-
+nism would require some other explanation for
+the role of the TonB box of the receptor in col-
+icin intoxication.
+
+CROSSING THE INNER
+MEMBRANE: THE NUCLEASE
+COLICINS
+Based on planar lipid bilayer experiments, it is
+inferred that after crossing the OM into the
+periplasm, the pore-forming colicins sponta-
+neously bind to the IM, where the hydrophobic
+hairpin, which is a common feature, can sponta-
+neously insert into the membrane (65, 76). The
+
+transmembrane potential of the IM drives in-
+sertion of the additional transmembrane helices
+needed for channel formation (58) and opens
+the channel that ultimately depolarizes and kills
+the target bacteria. Thus, there is no require-
+ment for further involvement of any target cell
+proteins in the killing process. In contrast, the
+nuclease colicins, both DNases and RNases, act
+in the cytoplasm, and therefore must also some-
+how cross the IM.
+
+When and How is the Immunity
+Protein Removed?
+All E. coli strains that produce a colicin produce
+a second protein encoded by the same plasmid,
+the immunity protein, which protects the
+synthesizing population speciﬁcally from the
+effects of the toxin it produces but not from
+other colicins. The immunity proteins of the
+pore-forming colicins are membrane proteins,
+with either three or four membrane-spanning
+domains, that prevent the opening of lethal
+channels in the producing cultures (reviewed
+in 20); they are not discussed further in this
+review. Because the nuclease colicins act on
+substrates, either DNA, rRNA, or tRNA, that
+reside in the cytoplasm, synthesizing cells must
+protect themselves against the lethal activity
+of their own making. Their immunity proteins
+are small, highly acidic proteins that bind
+exceptionally tightly to their cognate colicin
+with equilibrium dissociation constants in the
+femtomolar range. The immunity proteins ei-
+ther bind to the catalytic site of the colicin itself
+or block access to the site (85). These colicins
+leave the producing cells as heterodimers with
+their tightly bound immunity protein (59, 85).
+Thus, for the colicin to act, the immunity pro-
+tein must be removed from the colicin at some
+point before it reaches its substrate in target
+cells. Given that it takes only one or very few
+molecules of colicin to kill a cell, until recently
+it was impossible to determine the fate of the
+immunity protein during actual lethal events in
+vivo, although there was evidence of release of
+the immunity protein of the Enterobacter cloacae
+toxin DF13, which is highly homologous to
+
+www.annualreviews.org • Colicins and Transporters
+
+221
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+colicin E3,
+into the culture medium (70).
+Recently, using more sensitive methods and
+a ﬂuorescently labeled immunity protein to
+colicin E2, it was shown that the immunity
+protein is released into the culture medium and
+that its release requires both a functional BtuB
+receptor and translocation through OmpF or
+OmpC (36). In addition to functional TolA and
+TolB proteins, energy must be supplied, via the
+ ˜μH+, in order for the immunity protein to be
+released (108). It has been shown that immunity
+protein dissociation, although dependent on
+colicin unfolding and the proton-conducting
+pathway of the TolQRA complex, is not rate
+limiting for cell killing (36, 107, 123). Despite
+an expected dissociation time on the order
+of days, colicin E3 and its immunity protein
+diffuse apart on agarose plates (59), and the
+complex dissociates quite readily upon strong
+anion exchange chromatography (120). The
+latter study also revealed that the colicin C
+domain free of its immunity protein becomes
+extensively unfolded, which surely plays a role
+in translocation of that domain across both the
+OM and IM.
+
+Are Colicins Cleaved Prior to
+Entering the Periplasm or Cytoplasm?
+Colicins may need to be cleaved at some point
+during or after their translocation into target
+cells, freeing the active C terminus from the
+rest of the molecule that guides it into its target.
+Given that the primary receptors are in the OM,
+it is tempting to speculate that such cleavage
+might occur at the OM, so only the C domain
+would need to enter the cell, although such a
+model is inconsistent with known T domain in-
+teractions in the periplasm (52, 53, 84). OmpT,
+an OM protease, was shown to cleave colicins A,
+E1, E2, and E3, with release of the products into
+the culture medium (24). The tightly bound
+E2 immunity protein protects colicin E2 from
+OmpT cleavage, which is dependent upon prior
+binding of the colicin by BtuB (37), and colicin
+E7 is cleaved in vitro in an OmpT-dependent
+reaction that requires residue R447 (99), all of
+which made OmpT an attractive candidate to
+
+Jakes· Cramer
+
+participate in freeing the C domain for entry
+into the cell. However, it was shown that OmpT
+cleavage is really an epiphenomenon that is not
+required for colicin killing (78). Rather, it is a
+means by which E. coli seek to protect them-
+selves from assault by exogenous toxins such
+as colicins by degrading them while they are
+bound at the cell surface. In fact, ompT deletion
+mutants are still fully sensitive to high concen-
+trations of colicins, although OmpT cleavage
+and inactivation of dilute colicin solutions ap-
+pear protective (78).
+
+Processing and Transport
+of Enzymatic Colicins at
+the Inner Membrane
+It has been suggested that there should exist
+mutants of E. coli that are sensitive to pore-
+forming colicins but are tolerant to killing by
+enzymatic colicins that use the same receptor
+and Tol or TonB family of translocators (56).
+Thus, one might imagine a mutant that is killed
+normally by colicin B, a pore former that uses
+FepA as its receptor and TonB/ExbB and ExbD
+for translocation, and is not killed by colicin D,
+a tRNase that uses the same proteins for binding
+and translocation and is 96% identical to col-
+icin B in its ﬁrst 313 residues. Such a mutation
+should identify a protein involved in a step re-
+quired for transfer of the whole enzymatic col-
+icin or the enzymatic moiety across the IM, a
+step not needed for the activity of pore-forming
+colicins. Such a mutation has been identiﬁed
+(35): E. coli bearing a nonlethal mutation in lepB,
+an essential gene that is a signal peptide pepti-
+dase, are not killed by colicin D but are killed
+normally by colicin B. Wild-type LepB protein
+was shown to be necessary, but not sufﬁcient,
+for processing of colicin D in vitro to gener-
+ate a C-terminal enzymatic fragment from col-
+icin D from which the immunity protein had
+been previously removed. Another unidentiﬁed
+component from extracts of E. coli was shown in
+that work to be required for in vitro processing
+(35). One puzzling aspect of the requirement
+for LepB was that it was not essential for killing
+by other enzymatic colicins, such as colicin E3.
+The puzzle has now been resolved.
+
+222
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+FtsH appears to be the elusive protein re-
+sponsible for the last step of enzymatic col-
+icin processing and transport across the IM.
+FtsH is an essential ATP-dependent protease
+required for degradation and dislocation back
+into the cytoplasm of misfolded membrane pro-
+teins. It is a homohexameric transmembrane
+protein that is postulated to form a channel
+in the IM into a cytoplasmic chamber bear-
+ing the protease activity (55). Wild-type FtsH
+was shown to be required for in vivo activity
+of a variety of enzymatic colicins that act in
+the cytoplasm, including E3, E9, and D, but
+is not required for sensitivity to pore-forming
+colicins or colicin M, an enzyme that acts in the
+periplasm (110). More recently, processed C-
+terminal fragments of both colicin D and col-
+icin E3, presumably bearing catalytic activity,
+were isolated from cytoplasmic extracts from in
+vivo colicin-treated E. coli by ﬁshing for the cog-
+nate colicin domain with His6-tagged immunity
+protein expressed in the treated cells (25); those
+fragments detected in vivo were larger than
+fragments generated in vitro by the combined
+presence of LepB and OmpT protease. Inter-
+estingly, FtsH acts only on unfolded proteins,
+supporting the idea that colicin molecules must
+unfold as they transit through their transloca-
+tors from the OM into the periplasm. The role
+of LepB in colicin D killing is proposed to be
+that of an anchor at the IM to bring the colicin
+close to FtsH, which then processes it (25). Ad-
+ditionally, a role for the anionic charge on the
+membrane has been identiﬁed in promoting the
+attraction of the positively charged colicin en-
+zymatic domains to the IM (110), a concept pre-
+viously invoked for pore-forming colicins (49,
+118). ftsH was not identiﬁed in a genome-wide
+screen for E. coli mutants that are necessary for
+colicin killing (96) because deleting the gene
+without also inactivating another gene that af-
+fects fatty acid biosynthesis is lethal (110). It is
+important to note that FtsH-based processing
+of nuclease colicins and transport across the IM
+occur both with TonB-dependent colicins (col-
+icin D) and with Tol-dependent colicins (E3)
+(25). As such, it plays a more universal role in
+colicin transport in which the mechanism by
+
+which the colicin ﬁrst crosses the OM is not
+relevant.
+
+It has been inferred from various lines of ev-
+idence detailed above that considerable unfold-
+ing occurs during colicin transport across the
+OM. There is more direct evidence of unfold-
+ing for colicin M. The periplasmic peptidyl-
+prolyl-cis-trans-isomerase/chaperone FkpA is
+required for colicin M activity in vivo (54),
+even when the colicin is engineered to be ex-
+ported directly into the periplasm (5). If the
+enzymatic domain alone was exported directly
+into the periplasm, FkpA was not required, sug-
+gesting that passage through the FhuA/TonB-
+dependent import machinery unfolds the col-
+icin in such a way as to render it inactive unless
+it is assisted in refolding by FkpA (5).
+
+ENERGY COST TO TARGET
+ESCHERICHIA COLI TO ALLOW
+ITSELF TO BE KILLED BY
+COLICIN
+Several categories of events in colicin import
+are documented or inferred to require energy
+derived from the  ˜μH+ (Table 2), depending
+on whether the colicin is a nuclease that must
+be freed from its bound immunity protein. For
+most of the energy-requiring events, energy is
+supplied via the TolAQR or TonB/ExbB/ExbD
+groups of proteins described above. These
+events are (a) release from the receptor; for
+group A nuclease colicins, the Kd for R domain
+binding is <10−9 M (71), so at 37◦C the energy
+required is approximately 12.5 kcal mol−1 and
+for a group B colicin such as Ia, with Kassoc ∼
+1010 M−1 (67), the energy required is approxi-
+mately 14 kcal mol−1; (b) for a nuclease colicin,
+extracellular release of immunity protein with a
+Kd of 10−14 M represents a binding free energy
+of −20 kcal mol−1, a minimum for this class of
+colicins, some of which have even more tightly
+bound immunity proteins, implying a binding
+energy as large as −24 kcal mol−1 (36, 51,
+108, 111, 112); and (c) transfer of the colicin
+polypeptide through its translocator—OmpF
+for E nuclease colicins, TolC for colicin E1,
+and Cir for colicin Ia—with concomitant
+
+www.annualreviews.org • Colicins and Transporters
+
+223
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+Table 2 Energy-requiring steps in the cellular import of colicins
+
+Estimated energy requirementG0
+
+(kcal mol−1, 37◦C)
+
+Step
+Extracellular shedding of immunity protein
+Release of nuclease colicins from BtuB
+Release of pore-forming colicin Ia from Cir
+Translocation of nuclease colicins through OmpF
+Translocation of colicin E1 through TolC
+Translocation of nuclease colicin through inner membrane
+FtsH
+
+−20
+−12.5
+−14
+Unknown
+Unknown
+Unknown
+
+energy requirements for unwinding colicin
+structure and the need to open the cytoplas-
+mic aperture of TolC for E1 (88). These three
+energy-requiring events are inferred, from the
+genetic and biochemical experiments cited,
+to depend on mechanical energy transduction
+from the IM by the Tol proteins or TonB group
+described above. An additional energy require-
+ment derives from the translocation across the
+IM by FtsH, the ATP-dependent protease (55)
+discussed above.
+
+The major component of the  ˜μH+ at
+pH 7 is an electrical potential across the IM of
+approximately −120 mV (inside negative) and
+a pH gradient of 0.5 (alkaline inside) for E. coli,
+for a molar free energy  ˜μH+ ≈ 3.5 kcal mol−1.
+
+Thus, there would appear to be a consider-
+able disparity between the  ˜μH+ and the in-
+ferred energy requirements for colicin uptake
+(Table 2). This disparity may be reconciled by
+the fact that the energy is applied to only one or
+a few colicin molecules required to kill a single
+cell.
+
+In summary, an understanding of the bio-
+chemical and biophysical mechanisms involved
+in cellular import of colicins is presumably
+relevant to many of the processes that are fun-
+damental to a general understanding of the
+membrane crossing mechanisms of other
+macromolecules, such as toxins, as well of the
+natural substrates of the transporters they have
+co-opted for their uptake.
+
+SUMMARY POINTS
+1. Colicins parasitize E. coli OM nutrient transporters as their cell surface receptors.
+2. After binding to their receptors, colicins search for another OM protein, either a second
+
+copy of the receptor or a different protein, that serves as their translocator.
+
+3. Solved crystal structures of ﬁve different colicins have provided information on the molec-
+ular basis of the three functional domains that were originally deﬁned by genetic analysis.
+4. The extended (≥100 ˚A) receptor-binding domain is a prominent feature of three solved
+colicin structures complexed with their receptors and suggests a ﬁshing pole mechanism
+by which the colicin ﬁnds its translocator.
+
+5. The colicin translocation network usually includes a protein in the periplasm, such as
+TolB, that binds the N terminus of the colicin and presumably facilitates its transfer
+across the OM.
+
+6. Cellular import of colicins requires a high level of energy input for at least two steps,
+including release from the OM receptor, transfer across the OM through the translocator,
+and, for nuclease colicins, shedding of tightly bound immunity protein.
+
+Jakes· Cramer
+
+224
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+7. Transport of colicins across the OM involves interactions between colicin-handling
+proteins—TolA, TolB, and TonB—in the periplasm and the interaction of those proteins
+with IM-embedded protein complexes—TolQ and TolR, or ExbB and ExbD.
+8. Colicin E1 is unique in the use of the drug export protein TolC for its import.
+
+FUTURE ISSUES
+1. Do Tol-dependent colicins cross the OM as a single unfolded chain through their trans-
+
+porter (either OmpF or TolC)?
+
+2. For colicin Ia, does the whole colicin polypeptide pass through its Cir translocator, and
+does the plug domain of Cir exit the barrel or merely rearrange to allow passage of the
+colicin?
+
+3. What is the mechanism by which a colicin or a domain is ratcheted through the narrow
+
+pore provided by a translocator such as OmpF or Cir?
+
+4. What are the molecular mechanisms by which energy is transduced from the IM to the
+
+OM or to colicin in the periplasm?
+
+5. Does TonB-dependent colicin translocation involve a single copy of the TonB protein
+binding to both the plug’s TonB box and to the colicin’s TonB box, or are two separate
+TonB molecules involved?
+
+6. Do the other TonB-dependent colicins use a second copy of their receptor as a translo-
+
+cator, as colicin Ia does?
+
+7. Does colicin N translocate through the lipid bilayer adjacent to its OmpF recep-
+
+tor/translocator, and if so, what is the driving force for this translocation?
+
+8. How does colicin E1 exit its TolC translocator, and at what point does it interact with
+
+an IM-proximal domain of TolA?
+
+DISCLOSURE STATEMENT
+The authors are not aware of any afﬁliations, memberships, funding, or ﬁnancial holdings that
+might be perceived as affecting the objectivity of this review.
+
+ACKNOWLEDGMENTS
+We are grateful to Drs. Nicolas Noinaj (NIH/NIDDK), Onkar Sharma (Harvard Medical School),
+Eshwar Udho (Albert Einstein College of Medicine), and Mr. Rodney McPhail for invaluable help
+preparing the ﬁgures and for helpful discussions. We thank Dr. Kathleen Postle (Pennsylvania
+State University) for sharing unpublished results; Dr. Colin Kleanthous for sharing results in
+press; S.D. Zakharov, M.V. Zhalnina, and Dr. Alan Finkelstein for helpful discussions; and Dr.
+Alan Finkelstein for critically reading the manuscript.
+
+This work was supported by R01AI091633 from the National Institute of Allergy and Infectious
+Diseases to K.S.J., and by R01-GM018457 from NIH General Medical Sciences and the Henry
+Kofﬂer Professorship to W.A.C. The content is solely the responsibility of the authors and does
+not necessarily represent the ofﬁcial views of the NIAID or the NIH.
+
+www.annualreviews.org • Colicins and Transporters
+
+225
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+LITERATURE CITED
+
+1. Abergel C, Bouveret E, Claverie JM, Brown K, Rigal A, et al. 1999. Structure of the Escherichia coli TolB
+
+protein determined by MAD methods at 1.95 ˚A resolution. Structure 7:1291–300
+
+2. Arnold T, Zeth K, Linke D. 2009. Structure and function of colicin S4, a colicin with a duplicated
+
+receptor-binding domain. J. Biol. Chem. 284:6403–13
+
+3. Baboolal TG, Conroy MJ, Gill K, Ridley H, Visudtiphole V, et al. 2008. Colicin N binds to the periphery
+
+of its receptor and translocator, outer membrane protein F. Structure 16:371–79
+
+4. Balakrishnan L, Hughes C, Koronakis V. 2001. Substrate-triggered recruitment of the TolC channel-
+
+tunnel during type I export of hemolysin by Escherichia coli. J. Mol. Biol. 313:501–10
+
+5. Barneoud-Arnoulet A, Barreteau H, Touze T, Mengin-Lecreulx D, Lloubes R, Duche D. 2010. Toxicity
+of the colicin M catalytic domain exported to the periplasm is FkpA independent. J. Bacteriol. 192:5212–19
+6. Basilio D, Jennings-Antipov LD, Jakes KS, Finkelstein A. 2011. Trapping a translocating protein within
+the anthrax toxin channel: implications for the secondary structure of permeating proteins. J. Gen. Physiol.
+137:343–56
+
+7. Bell PE, Nau CD, Brown JT, Konisky J, Kadner RJ. 1990. Genetic suppression demonstrates interaction
+
+of TonB protein with outer membrane transport proteins in Escherichia coli. J. Bacteriol. 172:3826–29
+
+8. Benedetti H, Frenette M, Baty D, Lloubes R, Geli V, Lazdunski C. 1989. Comparison of the uptake
+systems for the entry of various BtuB group colicins into Escherichia coli. J. Gen. Microbiol. 135:3413–20
+9. Bonsor DA, Grishkovskaya I, Dodson EJ, Kleanthous C. 2007. Molecular mimicry enables competitive
+
+recruitment by a natively disordered protein. J. Am. Chem. Soc. 129:4800–7
+
+10. Bouveret E, Derouiche R, Rigal A, Lloubes R, Lazdunski C, Benedetti H. 1995. Peptidoglycan-associated
+lipoprotein-TolB interaction. A possible key to explaining the formation of contact sites between the
+inner and outer membranes of Escherichia coli. J. Biol. Chem. 270:11071–77
+
+11. Bouveret E, Rigal A, Lazdunski C, Benedetti H. 1997. The N-terminal domain of colicin E3 interacts
+
+with TolB which is involved in the colicin translocation step. Mol. Microbiol. 23:909–20
+
+12. Bouveret E, Rigal A, Lazdunski C, Benedetti H. 1998. Distinct regions of the colicin A translocation
+domain are involved in the interaction with TolA and TolB proteins upon import into Escherichia coli.
+Mol. Microbiol. 27:143–57
+
+13. Braun V, Herrmann C. 1993. Evolutionary relationship of uptake systems for biopolymers in Escherichia
+coli: cross-complementation between the TonB-ExbB-ExbD and the TolA-TolQ-TolR proteins. Mol.
+Microbiol. 8:261–68
+
+14. Braun V, Patzer SI, Hantke K. 2002. Ton-dependent colicins and microcins: modular design and evo-
+
+lution. Biochimie 84:365–80
+
+15. Bredin J, Simonet V, Iyer R, Delcour AH, Pages JM. 2003. Colicins, spermine and cephalosporins: a
+
+competitive interaction with the OmpF eyelet. Biochem. J. 376:245–52
+
+16. Buchanan SK, Lukacik P, Grizot S, Ghirlando R, Ali MM, et al. 2007. Structure of colicin I receptor
+
+bound to the R-domain of colicin Ia: implications for protein import. EMBO J. 26:2594–604
+
+17. Cadieux N, Bradbeer C, Kadner RJ. 2000. Sequence changes in the Ton box region of BtuB affect its
+
+transport activities and interaction with TonB protein. J. Bacteriol. 182:5954–61
+
+18. Cadieux N, Phan PG, Caﬁso DS, Kadner RJ. 2003. Differential substrate-induced signaling through the
+
+TonB-dependent transporter BtuB. Proc. Natl. Acad. Sci. USA 100:10688–93
+
+19. Carr S, Penfold CN, Bamford V, James R, Hemmings AM. 2000. The structure of TolB, an essential
+component of the Tol-dependent translocation system, and its protein-protein interaction with the
+translocation domain of colicin E9. Structure 8:57–66
+
+20. Cascales E, Buchanan SK, Duche D, Kleanthous C, Lloubes R, et al. 2007. Colicin biology. Microbiol.
+
+Mol. Biol. Rev. 71:158–229
+
+21. Cascales E, Gavioli M, Sturgis JN, Lloubes R. 2000. Proton motive force drives the interaction of the
+
+inner membrane TolA and outer membrane Pal proteins in Escherichia coli. Mol. Microbiol. 38:904–15
+
+22. Cascales E, Lloubes R, Sturgis JN. 2001. The TolQ-TolR proteins energize TolA and share homologies
+
+with the ﬂagellar motor proteins MotA-MotB. Mol. Microbiol. 42:795–807
+
+23. Cavard D, Lazdunski C. 1981. Involvement of BtuB and OmpF proteins in binding and uptake of colicin
+
+A. FEMS Microbiol. Lett. 12:311–16
+
+Jakes· Cramer
+
+226
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+24. Cavard D, Lazdunski C. 1990. Colicin cleavage by OmpT protease during both entry into and release
+
+from Escherichia coli cells. J. Bacteriol. 172:648–52
+
+25. Chauleau M, Mora L, Serba J, de Zamaroczy M. 2011. FtsH-dependent processing of RNase colicins D
+and E3 means that only the cytotoxic domains are imported into the cytoplasm. J. Biol. Chem. 286:29397–
+407
+
+26. Cherezov V, Yamashita E, Liu W, Zhalnina M, Cramer WA, Caffrey M. 2006. In meso structure of the
+
+cobalamin transporter, BtuB, at 1.95 ˚A resolution. J. Mol. Biol. 364:716–34
+
+27. Chimento DP, Mohanty AK, Kadner RJ, Wiener MC. 2003. Substrate-induced transmembrane signaling
+
+in the cobalamin transporter BtuB. Nat. Struct. Biol. 10:394–401
+
+28. Clifton LA, Johnson CL, Solovyova AS, Callow P, Weiss KL, et al. 2012. Low resolution structure and
+
+dynamics of a colicin-receptor complex determined by neutron scattering. J. Biol. Chem. 287:337–46
+
+29. Cowan SW, Schirmer T, Rummel G, Steiert M, Ghosh R, et al. 1992. Crystal structures explain functional
+
+properties of two E. coli porins. Nature 358:727–33
+
+30. Cramer WA, Heymann JB, Schendel SL, Deriy BN, Cohen FS, et al. 1995. Structure-function of the
+
+channel-forming colicins. Annu. Rev. Biophys. Biomol. Struct. 24:611–41
+
+31. Davies JK, Reeves P. 1975. Genetics of resistance to colicins in Escherichia coli K-12: cross-resistance
+
+among colicins of group A. J. Bacteriol. 123:102–17
+
+32. Davies JK, Reeves P. 1975. Genetics of resistance to colicins in Escherichia coli K-12: cross-resistance
+
+among colicins of group B. J. Bacteriol. 123:96–101
+
+33. Derouiche R, Benedetti H, Lazzaroni JC, Lazdunski C, Lloubes R. 1995. Protein complex within Es-
+cherichia coli inner membrane. TolA N-terminal domain interacts with TolQ and TolR proteins. J. Biol.
+Chem. 270:11078–84
+
+34. Devanathan S, Postle K. 2007. Studies on colicin B translocation: FepA is gated by TonB. Mol. Microbiol.
+
+65:441–53
+
+35. de Zamaroczy M, Mora L, Lecuyer A, Geli V, Buckingham RH. 2001. Cleavage of colicin D is necessary
+
+for cell killing and requires the inner membrane peptidase LepB. Mol. Cell 8:159–68
+
+36. Duche D, Frenkian A, Prima V, Lloubes R. 2006. Release of immunity protein requires functional
+
+endonuclease colicin import machinery. J. Bacteriol. 188:8593–600
+
+37. Duche D, Issouf M, Lloubes R. 2009. Immunity protein protects colicin E2 from OmpT protease. J.
+
+Biochem. 145:95–101
+
+38. El Ghachi M, Bouhss A, Barreteau H, Touze T, Auger G, et al. 2006. Colicin M exerts its bacteriolytic
+effect via enzymatic degradation of undecaprenyl phosphate-linked peptidoglycan precursors. J. Biol.
+Chem. 281:22761–72
+
+39. Elkins P, Bunker A, Cramer WA, Stauffacher CV. 1997. A mechanism for toxin insertion into membranes
+
+is suggested by the crystal structure of the channel-forming domain of colicin E1. Structure 5:443–58
+
+40. el Kouhen R, Fierobe HP, Scianimanico S, Steiert M, Pattus F, Pages JM. 1993. Characterization of the
+
+receptor and translocator domains of colicin N. Eur. J. Biochem. 214:635–39
+
+41. Ellena JF, Lackowicz P, Mongomery H, Caﬁso DS. 2011. Membrane thickness varies around the cir-
+
+cumference of the transmembrane protein BtuB. Biophys. J. 100:1280–87
+
+42. Fourel D, Hikita C, Bolla JM, Mizushima S, Pages JM. 1990. Characterization of ompF domains involved
+
+in Escherichia coli K-12 sensitivity to colicins A and N. J. Bacteriol. 172:3675–80
+
+43. Gerding MA, Ogata Y, Pecora ND, Niki H, de Boer PA. 2007. The trans-envelope Tol-Pal complex
+is part of the cell division machinery and required for proper outer-membrane invagination during cell
+constriction in E. coli. Mol. Microbiol. 63:1008–25
+
+44. Goemaere EL, Cascales E, Lloubes R. 2007. Mutational analyses deﬁne helix organization and key
+
+residues of a bacterial membrane energy-transducing complex. J. Mol. Biol. 366:1424–36
+
+45. Gokce I, Raggett EM, Hong Q, Virden R, Cooper A, Lakey JH. 2000. The TolA-recognition site of
+colicin N. ITC, SPR and stopped-ﬂow ﬂuorescence deﬁne a crucial 27-residue segment. J. Mol. Biol.
+304:621–32
+
+46. Graille M, Mora L, Buckingham RH, van Tilbeurgh H, de Zamaroczy M. 2004. Structural inhibition
+
+of the colicin D tRNase by the tRNA-mimicking immunity protein. EMBO J. 23:1474–82
+
+47. Gresock MG, Savenkova MI, Larsen RA, Ollis AA, Postle K. 2011. Death of the TonB shuttle hypothesis.
+
+Front. Microbiol. 2:206
+
+www.annualreviews.org • Colicins and Transporters
+
+227
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+48. Hantke K. 1990. Dihydroxybenzoylserine: a siderophore for E. coli. FEMS Microbiol. Lett. 55:5–8
+49. Heymann JB, Zakharov SD, Zhang YL, Cramer WA. 1996. Characterization of electrostatic and non-
+
+electrostatic components of protein-membrane binding interactions. Biochemistry 35:2717–25
+
+50. Hilsenbeck JL, Park H, Chen G, Youn B, Postle K, Kang C. 2004. Crystal structure of the cytotoxic
+
+bacterial protein colicin B at 2.5 ˚A resolution. Mol. Microbiol. 51:711–20
+
+51. Housden NG, Kleanthous C. 2011. Thermodynamic dissection of colicin interactions. Methods Enzymol.
+
+488:123–45
+
+52. Housden NG, Loftus SR, Moore GR, James R, Kleanthous C, et al. 2005. Cell entry mechanism of
+enzymatic bacterial colicins: porin recruitment and the thermodynamics of receptor binding. Proc. Natl.
+Acad. Sci. USA 102:13849–54
+
+53. Housden NG, Wojdyla JA, Korczynska J, Grishkovskaya I, Kirkpatrick N, et al. 2010. Directed epitope
+delivery across the Escherichia coli outer membrane through the porin OmpF. Proc. Natl. Acad. Sci. USA
+107:21412–17
+
+54. Hullmann J, Patzer SI, Romer C, Hantke K, Braun V. 2008. Periplasmic chaperone FkpA is essential
+
+for imported colicin M toxicity. Mol. Microbiol. 69:926–37
+
+55. Ito K, Akiyama Y. 2005. Cellular functions, mechanism of action, and regulation of FtsH protease. Annu.
+
+Rev. Microbiol. 59:211–31
+
+56. Jakes KS. 2001. The importance of being cleaved: an essential step in killing by enzymatic colicins. Mol.
+
+Cell 8:4–6
+
+57. Jakes KS, Finkelstein A. 2010. The colicin Ia receptor, Cir, is also the translocator for colicin Ia. Mol.
+
+Microbiol. 75:567–78
+
+58. Jakes KS, Kienker PK, Finkelstein A. 1999. Channel-forming colicins: translocation (and other deviant
+
+behaviour) associated with colicin Ia channel gating. Q. Rev. Biophys. 32:189–205
+
+59. Jakes KS, Zinder ND. 1974. Highly puriﬁed colicin E3 contains immunity protein. Proc. Natl. Acad. Sci.
+
+USA 71:3380–84
+
+60. James R, Penfold CN, Moore GR, Kleanthous C. 2002. Killing of E. coli cells by E group nuclease
+
+colicins. Biochimie 84:381–89
+
+61. Jeanteur D, Schirmer T, Fourel D, Simonet V, Rummel G, et al. 1994. Structural and functional al-
+terations of a colicin-resistant mutant of OmpF porin from Escherichia coli. Proc. Natl. Acad. Sci. USA
+91:10675–79
+
+62. Khursigara CM, De Crescenzo G, Pawelek PD, Coulton JW. 2004. Enhanced binding of TonB to a
+ligand-loaded outer membrane receptor: role of the oligomeric state of TonB in formation of a functional
+FhuA·TonB complex. J. Biol. Chem. 279:7405–12
+
+63. Khursigara CM, De Crescenzo G, Pawelek PD, Coulton JW. 2005. Kinetic analyses reveal multiple
+
+steps in forming TonB-FhuA complexes from Escherichia coli. Biochemistry 44:3441–53
+
+64. Kienker PK, Jakes KS, Finkelstein A. 2000. Protein translocation across planar bilayers by the colicin Ia
+
+channel-forming domain: Where will it end? J. Gen. Physiol. 116:587–98
+
+65. Kienker PK, Qiu X, Slatin SL, Finkelstein A, Jakes KS. 1997. Transmembrane insertion of the colicin
+
+Ia hydrophobic hairpin. J. Membr. Biol. 157:27–37
+
+66. Killian JA. 1998. Hydrophobic mismatch between proteins and lipids in membranes. Biochim. Biophys.
+
+Acta 1376:401–15
+
+67. Konisky J, Cowell BS. 1972. Interaction of colicin Ia with bacterial cells. Direct measurement of Ia-
+
+receptor interaction. J. Biol. Chem. 247:6524–29
+
+68. Koronakis V, Andersen C, Hughes C. 2001. Channel-tunnels. Curr. Opin. Struct. Biol. 11:403–7
+69. Krewulak KD, Vogel HJ. 2011. TonB or not TonB: Is that the question? Biochem. Cell Biol. 89:87–97
+70. Krone WJ, de Vries P, Koningstein G, de Jonge AJ, de Graaf FK, Oudega B. 1986. Uptake of cloacin
+DF13 by susceptible cells: removal of immunity protein and fragmentation of cloacin molecules. J.
+Bacteriol. 166:260–68
+
+71. Kurisu G, Zakharov SD, Zhalnina MV, Bano S, Eroukova VY, et al. 2003. The structure of BtuB with
+
+bound colicin E3 R-domain implies a translocon. Nat. Struct. Biol. 10:948–54
+
+72. Lakey JH, Slatin SL. 2001. Pore-forming colicins and their relatives. Curr. Top. Microbiol. Immunol.
+
+257:131–61
+
+Jakes· Cramer
+
+228
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+73. Larsen RA, Thomas MG, Postle K. 1999. Protonmotive force, ExbB and ligand-bound FepA drive
+
+conformational changes in TonB. Mol. Microbiol. 31:1809–24
+
+74. Lazdunski CJ. 1995. Colicin import and pore formation: a system for studying protein transport across
+
+membranes? Mol. Microbiol. 16:1059–66
+
+75. Lazzaroni JC, Dubuisson JF, Vianney A. 2002. The Tol proteins of Escherichia coli and their involvement
+
+in the translocation of group A colicins. Biochimie 84:391–97
+
+76. Lindeberg M, Zakharov SD, Cramer WA. 2000. Unfolding pathway of the colicin E1 channel protein
+
+on a membrane surface. J. Mol. Biol. 295:679–92
+
+77. Majeed H, Gillor O, Kerr B, Riley MA. 2011. Competitive interactions in Escherichia coli populations:
+
+the role of bacteriocins. ISME J. 5:71–81
+
+78. Masi M, Vuong P, Humbard M, Malone K, Misra R. 2007. Initial steps of colicin E1 import across the
+
+outer membrane of Escherichia coli. J. Bacteriol. 189:2667–76
+
+79. Mende J, Braun V. 1990. Import-defective colicin-B derivatives mutated in the TonB box. Mol. Microbiol.
+
+4:1523–33
+
+80. Nikaido H, Rosenberg EY. 1990. Cir and Fiu proteins in the outer membrane of Escherichia coli catalyze
+transport of monomeric catechols: study with β-lactam antibiotics containing catechol and analogous
+groups. J. Bacteriol. 172:1361–67
+
+81. Noinaj N, Guillier M, Barnard TJ, Buchanan SK. 2010. TonB-dependent transporters: regulation,
+
+structure, and function. Annu. Rev. Microbiol. 64:43–60
+
+82. Ollis AA, Manning M, Held KG, Postle K. 2009. Cytoplasmic membrane protonmotive force energizes
+
+periplasmic interactions between ExbD and TonB. Mol. Microbiol. 73:466–81
+
+83. Ollis AA, Postle K. 2012. ExbD mutants deﬁne initial stages in TonB energization. J. Mol. Biol. 415:237–
+
+47
+
+84. Papadakos G, Housden NG, Lilly KJ, Kaminska R, Kleanthous C. 2012. Kinetic basis for the competitive
+recruitment of TolB by the intrinsically disordered translocation domain of colicin E9. J. Mol. Biol.
+418:269–80
+
+85. Papadakos G, Wojdyla JA, Kleanthous C. 2011. Nuclease colicins and their immunity proteins. Q. Rev.
+
+Biophys. 45:1–47
+
+86. Parker MW, Pattus F, Tucker AD, Tsernoglou D. 1989. Structure of the membrane-pore-forming
+
+fragment of colicin A. Nature 337:93–96
+
+87. Pawelek PD, Croteau N, Ng-Thow-Hing C, Khursigara CM, Moiseeva N, et al. 2006. Structure of
+
+TonB in complex with FhuA, E. coli outer membrane receptor. Science 312:1399–402
+
+88. Pei XY, Hinchliffe P, Symmons MF, Koronakis E, Benz R, et al. 2011. Structures of sequential open
+states in a symmetrical opening transition of the TolC exit duct. Proc. Natl. Acad. Sci. USA 108:2112–17
+89. Penfold CN, Garinot-Schneider C, Hemmings AM, Moore GR, Kleanthous C, James R. 2000. A 76-
+residue polypeptide of colicin E9 confers receptor speciﬁcity and inhibits the growth of vitamin B12–
+dependent Escherichia coli 113/3 cells. Mol. Microbiol. 38:639–49
+
+90. Pramanik A, Hauf W, Hoffmann J, Cernescu M, Brutschy B, Braun V. 2011. Oligomeric structure of
+ExbB and ExbB-ExbD isolated from Escherichia coli as revealed by LILBID mass spectrometry. Biochem-
+istry 50:8950–56
+
+91. Pugsley AP. 1985. Escherichia coli K12 strains for use in the identiﬁcation and characterization of colicins.
+
+J. Gen. Microbiol. 131:369–76
+
+92. Raggett EM, Bainbridge G, Evans LJ, Cooper A, Lakey JH. 1998. Discovery of critical Tol A-binding
+
+residues in the bactericidal toxin colicin N: a biophysical approach. Mol. Microbiol. 28:1335–43
+
+93. Sauter A, Howard SP, Braun V. 2003. In vivo evidence for TonB dimerization. J. Bacteriol. 185:5747–54
+94. Schendel SL, Click EM, Webster RE, Cramer WA. 1997. The TolA protein interacts with colicin E1
+
+differently than with other group A colicins. J. Bacteriol. 179:3683–90
+
+95. Schofﬂer H, Braun V. 1989. Transport across the outer membrane of Escherichia coli K12 via the FhuA
+receptor is regulated by the TonB protein of the cytoplasmic membrane. Mol. Gen. Genet. 217:378–83
+96. Sharma O, Datsenko KA, Ess SC, Zhalnina MV, Wanner BL, Cramer WA. 2009. Genome-wide screens:
+
+novel mechanisms in colicin import and cytotoxicity. Mol. Microbiol. 73:571–85
+
+www.annualreviews.org • Colicins and Transporters
+
+229
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+97. Sharma O, Yamashita E, Zhalnina MV, Zakharov SD, Datsenko KA, et al. 2007. Structure of the complex
+of the colicin E2 R-domain and its BtuB receptor: the outer membrane colicin translocon. J. Biol. Chem.
+282:23163–70
+
+98. Sharma O, Zakharov SD, Zhalnina MV, Yamashita E, Cramer WA. 2012. Colicins. In Handbook of
+
+Biologically Active Peptides, ed. AJ Kastin. San Diego, CA: Academic
+
+99. Shi Z, Chak KF, Yuan HS. 2005. Identiﬁcation of an essential cleavage site in ColE7 required for import
+
+and killing of cells. J. Biol. Chem. 280:24663–68
+
+100. Shultis DD, Purdy MD, Banchs CN, Wiener MC. 2006. Outer membrane active transport: structure of
+
+the BtuB:TonB complex. Science 312:1396–99
+
+101. Simonet V, Mallea M, Pages JM. 2000. Substitutions in the eyelet region disrupt cefepime diffusion
+
+through the Escherichia coli OmpF channel. Antimicrob. Agents Chemother. 44:311–15
+
+102. Smallwood CR, Marco AG, Xiao Q, Trinh V, Newton SM, Klebba PE. 2009. Fluoresceination of FepA
+
+during colicin B killing: effects of temperature, toxin and TonB. Mol. Microbiol. 72:1171–80
+
+103. Soelaiman S, Jakes K, Wu N, Li CM, Shoham M. 2001. Crystal structure of colicin E3: implications for
+
+cell entry and ribosome inactivation. Mol. Cell 8:1053–62
+
+104. Spector J, Zakharov S, Lill Y, Sharma O, Cramer WA, Ritchie K. 2010. Mobility of BtuB and OmpF in
+the Escherichia coli outer membrane: implications for dynamic formation of a translocon complex. Biophys.
+J. 99:3880–86
+
+105. Sun TP, Webster RE. 1987. Nucleotide sequence of a gene cluster involved in entry of E colicins and
+single-stranded DNA of infecting ﬁlamentous bacteriophages into Escherichia coli. J. Bacteriol. 169:2667–
+74
+
+106. Taylor R, Burgner JW, Clifton J, Cramer WA. 1998. Puriﬁcation and characterization of monomeric
+
+Escherichia coli vitamin B12 receptor with high afﬁnity for colicin E3. J. Biol. Chem. 273:31113–18
+
+107. Vankemmelbeke M, Healy B, Moore GR, Kleanthous C, Penfold CN, James R. 2005. Rapid detection
+of colicin E9-induced DNA damage using Escherichia coli cells carrying SOS promoter-lux fusions. J.
+Bacteriol. 187:4900–7
+
+108. Vankemmelbeke M, Zhang Y, Moore GR, Kleanthous C, Penfold CN, James R. 2009. Energy-dependent
+immunity protein release during Tol-dependent nuclease colicin translocation. J. Biol. Chem. 284:18932–
+41
+
+109. Vetter IR, Parker MW, Tucker AD, Lakey JH, Pattus F, Tsernoglou D. 1998. Crystal structure of a
+
+colicin N fragment suggests a model for toxicity. Structure 6:863–74
+
+110. Walker D, Mosbahi K, Vankemmelbeke M, James R, Kleanthous C. 2007. The role of electrostatics in
+
+colicin nuclease domain translocation into bacterial cells. J. Biol. Chem. 282:31389–97
+
+111. Wallis R, Leung KY, Pommer AJ, Videler H, Moore GR, et al. 1995. Protein-protein interactions in
+colicin E9 DNase-immunity protein complexes. 2. Cognate and noncognate interactions that span the
+millimolar to femtomolar afﬁnity range. Biochemistry 34:13751–59
+
+112. Wallis R, Moore GR, James R, Kleanthous C. 1995. Protein-protein interactions in colicin E9 DNase-
+immunity protein complexes. 1. Diffusion-controlled association and femtomolar binding for the cognate
+complex. Biochemistry 34:13743–50
+
+113. Wiener M, Freymann D, Ghosh P, Stroud RM. 1997. Crystal structure of colicin Ia. Nature 385:461–64
+114. Wiener MC. 2005. TonB-dependent outer membrane transport: going for Baroque? Curr. Opin. Struct.
+
+Biol. 15:394–400
+
+115. Yamashita E, Zhalnina MV, Zakharov SD, Sharma O, Cramer WA. 2008. Crystal structures of the
+
+OmpF porin: function in a colicin translocon. EMBO J. 27:2171–80
+
+116. Zakharov SD, Eroukova VY, Rokitskaya TI, Zhalnina MV, Sharma O, et al. 2004. Colicin occlusion of
+
+OmpF and TolC channels: outer membrane translocons for colicin import. Biophys. J. 87:3901–11
+
+117. Zakharov SD, Kotova EA, Antonenko YN, Cramer WA. 2004. On the role of lipid in colicin pore
+
+formation. Biochim. Biophys. Acta 1666:239–49
+
+118. Zakharov SD, Rokitskaya TI, Shapovalov SL, Antonenko YN, Cramer WA. 2002. Tuning the membrane
+
+surface potential for efﬁcient toxin import. Proc. Natl. Acad. Sci. USA 99:8654–59
+
+119. Zakharov SD, Zhalnina M, Cramer WA. 2012. Insertion of colicin E1 into Omp TolC is mediated by
+
+the ordered segment of translocation domain. Biophys. J. 102:524a
+
+Jakes· Cramer
+
+230
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46CH10-Jakes
+
+ARI
+
+3 October 2012
+
+17:51
+
+120. Zakharov SD, Zhalnina MV, Sharma O, Cramer WA. 2006. The colicin E3 outer membrane translocon:
+Immunity protein release allows interaction of the cytotoxic domain with OmpF porin. Biochemistry
+45:10199–207
+
+121. Zeth K, Romer C, Patzer SI, Braun V. 2008. Crystal structure of colicin M, a novel phosphatase specif-
+
+ically imported by Escherichia coli. J. Biol. Chem. 283:25324–31
+
+122. Zhang XY, Goemaere EL, Seddiki N, Celia H, Gavioli M, et al. 2011. Mapping the interactions between
+
+Escherichia coli TolQ transmembrane segments. J. Biol. Chem. 286:11756–64
+
+123. Zhang Y, Vankemmelbeke MN, Holland LE, Walker DC, James R, Penfold CN. 2008. Investigating
+early events in receptor binding and translocation of colicin E9 using synchronized cell killing and
+proteolytic cleavage. J. Bacteriol. 190:4342–50
+
+www.annualreviews.org • Colicins and Transporters
+
+231
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46-FrontMatter
+
+ARI
+
+10 October 2012
+
+7:42
+
+Contents
+
+Annual Review of
+Genetics
+
+Volume 46, 2012
+
+Noncoding Transcription at Enhancers: General Principles and
+
+Functional Models
+Gioacchino Natoli and Jean-Cristophe Andrau p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p 1
+
+Transposable Elements: An Abundant and Natural Source
+
+of Regulatory Sequences for Host Genes
+Rita Rebollo, Mark T. Romanish, and Dixie L. Mager p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Disentangling the Many Layers of Eukaryotic
+
+Transcriptional Regulation
+Katherine M. Lelli, Matthew Slattery, and Richard S. Mann p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Biosynthesis and Function of Posttranscriptional Modiﬁcations
+
+of Transfer RNAs
+Basma El Yacoubi, Marc Bailly, and Val´erie de Cr´ecy-Lagard p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Genetics of Reproduction and Regulation of Honeybee
+
+(Apis mellifera L.) Social Behavior
+Robert E. Page Jr, Olav Rueppell, and Gro V. Amdam p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p21
+
+p43
+
+p69
+
+p97
+
+Chromosome Replication and Segregation in Bacteria
+
+Rodrigo Reyes-Lamothe, Emilien Nicolas, and David J. Sherratt
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Genetics of Aggression
+
+Robert R.H. Anholt and Trudy F.C. Mackay p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+The Unfolded Protein Response in Secretory Cell Function
+
+Kristin A. Moore and Julie Hollien p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Genetics of Climate Change Adaptation
+
+Steven J. Franks and Ary A. Hoffmann p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Border Crossings: Colicins and Transporters
+
+Karen S. Jakes and William A. Cramer p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p 121
+
+p 145
+
+p 165
+
+p 185
+
+p 209
+
+The Biosynthetic Capacities of the Plastids and Integration Between
+
+Cytoplasmic and Chloroplast Processes
+Norbert Rolland, Gilles Curien, Giovanni Finazzi, Marcel Kuntz, Eric Mar´echal,
+
+Michel Matringe, St´ephane Ravanel, and Daphn´e Seigneurin-Berny p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p 233
+
+v
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46-FrontMatter
+
+ARI
+
+10 October 2012
+
+7:42
+
+Fusion and Fission: Interlinked Processes Critical
+
+for Mitochondrial Health
+David C. Chan p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Regeneration and Transdetermination in Drosophila Imaginal Discs
+
+Melanie I. Worley, Linda Setiawan, and Iswar K. Hariharan p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+The CRISPRs, They Are A-Changin’: How Prokaryotes Generate
+
+Adaptive Immunity
+Edze R. Westra, Daan C. Swarts, Raymond H.J. Staals, Matthijs M. Jore,
+
+Stan J.J. Brouns, and John van der Oost
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Evolutionary Implications of Horizontal Gene Transfer
+
+Michael Syvanen p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Plant Virus Metagenomics: Biodiversity and Ecology
+
+Marilyn J. Roossinck p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Probing Mechanisms That Underlie Human Neurodegenerative
+
+Disease in Drosophila
+M. Jaiswal, H. Sandoval, K. Zhang, V. Bayat, and H.J. Bellen p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Uncovering the Molecular and Cellular Mechanisms of Heart
+
+Development Using the Zebraﬁsh
+David Staudt and Didier Stainier p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p 265
+
+p 289
+
+p 311
+
+p 341
+
+p 359
+
+p 371
+
+p 397
+
+5-Methylcytosine DNA Demethylation: More Than Losing
+
+a Methyl Group
+Don-Marc Franchini, Kerstin-Maike Schmitz, and Svend K. Petersen-Mahrt
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p 419
+
+RNA as a Structural and Regulatory Component of the Centromere
+
+Jonathan I. Gent and R. Kelly Dawe p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Mutations Arising During Repair of Chromosome Breaks
+
+Anna Malkova and James E. Haber
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Recessively Inherited Forms of Osteogenesis Imperfecta
+
+Peter H. Byers and Shawna M. Pyott
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Neural Regeneration in Caenorhabditis elegans
+Rachid El Bejjani and Marc Hammarlund p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Genetics of Borrelia burgdorferi
+
+Dustin Brisson, Dan Drecktrah, Christian H. Eggers,
+
+and D. Scott Samuels p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Dosage Compensation of the Sex Chromosomes
+
+Christine M. Disteche
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Memories from the Polycomb Group Proteins
+
+Chiara Lanzuolo and Valerio Orlando p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p 443
+
+p 455
+
+p 475
+
+p 499
+
+p 515
+
+p 537
+
+p 561
+
+vi
+
+Contents
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.GE46-FrontMatter
+
+ARI
+
+10 October 2012
+
+7:42
+
+Understanding the Relationship Between Brain Gene Expression and
+
+Social Behavior: Lessons from the Honey Bee
+Amro Zayed and Gene E. Robinson p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Identity by Descent Between Distant Relatives: Detection and
+
+Applications
+Sharon R. Browning and Brian L. Browning p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Paleopopulation Genetics
+
+Jeffrey D. Wall and Montgomery Slatkin p
+
+Active Transposition in Genomes
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Cheng Ran Lisa Huang, Kathleen H. Burns, and Jef D. Boeke
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Rules of Engagement: Molecular Insights from Host-Virus Arms Races
+
+Matthew D. Daugherty and Harmit S. Malik p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Brassinosteroid Signaling Network and Regulation
+
+of Photomorphogenesis
+Zhi-Yong Wang, Ming-Yi Bai, Eunkyoo Oh, and Jia-Ying Zhu p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+p
+
+Errata
+
+An online log of corrections to Annual Review of Genetics articles may be found at
+http://genet.annualreviews.org/errata.shtml
+
+p 591
+
+p 617
+
+p 635
+
+p 651
+
+p 677
+
+p 701
+
+Contents
+
+vii
+
+Annu. Rev. Genet. 2012.46:209-231. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 12/02/13. For personal use only.

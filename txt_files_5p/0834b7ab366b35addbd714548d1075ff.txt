@@ -1,0 +1,101 @@
+Monotemporale visuelle Interpretation
+
+eines Satellitenbildausschnittes
+
+Renat Itkulov
+Matrikel-Nummer: 962478
+Sommersemester 2016
+
+Einleitung:
+
+- Aufgabe:
+
+Der Satellitenbildausschnitt des Sensors Landsat-TM4 vom 18.05.1992 soll 
+visuell interpretiert werden. Ziel ist die Gliederung der Landschaft in 
+unterschiedliche (Teil)Landschafträume. Diese sollen anhand des 
+Satellitenbildes abgegrenzt und in Form einer Karte dargestellt werden. In einer
+zweiten Karte soll die aktuelle Landnutzung dargestellt werden. Die 
+ausgegliederten Landschaftsräume sollen auf Basis des Satellitenbildes kurz 
+beschrieben und die Abgrenzungskriterien zu den anderen Räumen erläutert 
+werden (z.B., Farben, Formen, Erkennbarkeit in bestimmten 
+Kanalkombinationen,...). Hierbei ist auch auf die vorherrschende 
+Landnutzung(en) in den einzelnen Landschaftsräumen einzugehen. Dabei sind 
+die kartierten Landnutzungstypen anhand des Satellitenbildes und/oder spektral 
+zu begründen. 
+
+- Darstellung der Aufgabe:
+
+Der Satellitenbildausschnitt des Sensors Landsat-TM4 vom 18.05.1992 enthält 6
+Kanale (3 visuelle (RGB) , nah IR, IR und mittlere IR )
+Das erste Bild wird in Kombination 3;2;1. dargestellt  und nach unterschiedliche
+Landschafträume gegliedert.
+Das   zweite   Bild   wird   in   Kombination   4;2;3.   präsentiert   und   nach   Laubwald   ,
+Nadelwald und gemischter Wald gegliedert.
+Das dritte Bild mit erkennbaren Objekten wird in Kombination 3;2;1. präsentiert.
+
+Bild 1
+
+Im Bild 1 sind die Landschafträume in folgender Rehe gegliedert :
+
+1. ist ein natürlicher Raum mit starke Vegetation (größtenteils Nadelwald,der wegen 
+seiner Geometrie viel Licht von der Sonnenstrahlung absorbiert). In der Mitte kann 
+man deutlich einen schneebedeckten Gipfel erkennen, der in allen Kanälen in weißer 
+Farbe gezeigt wird. Das heißt, dass die Zone „1“ in einer Gebirge liegt.Dazu spricht 
+das Form des Reliefes. Dendristische Abwasserungssysteme in dem Raum ist ein 
+Zeichen von der Naturschutzgebiet, denn bei einer wirtschaftlichen Nutzung wird es 
+am meisten künstlich geändert.
+Auf dem Bild rechts vom schneebedeckten Gipfel ist ein See (das Licht wird stark 
+absorbiert – ein Tiefsee). Der See ist auch von den Wirtschaftlichen Formationen 
+unberührt geblieben, was auch als ein Zeichen einer Naturschutzgebiet dient.
+
+2. ist ein Raum mit einem Fluss und einem Kanal (Binnenkanal). In der Zone“2“ 
+links liegt ein Fluss, der wegen seines Form natürlich aussieht und wegen seiner 
+blaue Farbe im panchromatischen Spektr seicht ist. Rechts in der Zone“2“  liegt ein 
+Kanal, der in allen Kanälen des Sensors Landsat-TM4 sehr dunkel ist. Auch wegen 
+seines Formes erkennt man einen künstlichen Objekt, sowohl es konstante Breite 
+gibt, als auch tief ist. Das ermöglicht Güterschiffe über dem Kanal zu transportieren.
+An  den Uferlinien vorherrschen natürliche Flächen.
+
+3. ist ein Raum für Landwirtschaflichenutzung mit einer administrative Zentrale auf 
+dem Bild oben links. Am meisten sind es große Acker in IR und n.IR ohne Vegetation
+(vermutlich ist es zum 18.05.1992 noch nicht eingepflanzt wurde) .
+
+4. ist der Raum mit intensiven Wohnflächen(Siedlungen). Die Siedlungen haben gar 
+keine Vegetation und haben eine deutliche Struktur (Straßen und Grundstücke).
+In der Mitte der Zone“4“ am Kanal erkennt man die Struktur eines Flughafens (Start- 
+und Landebahn mit Flugzeughallen). Das heißt, dass die Zone“4“ auf einer platten 
+Ebene ist. 
+Das Landwirtschaft in der Zone“4“ ist zum Vergleich zur Zone“3“  ganz 
+unterschiedlich. Die Felder sind deutlich kleiner und am meisten haben Vegetation. 
+Es entspricht zu kleinen Bauernhöfen gegenüber landwirtschaftlichen Komplexen aus
+der Zone“3“.Es könnte auch sein, dass die Zone“3“ weit weg von der Stadt ist und 
+über dem Fluss liegt. Oder hinter der Grenze eines anderen Bundesland liegt, wo es 
+andere Gesetze für die Landwirtschaft gibt.
+
+5. ist der Raum mit vielen kleinen Siedlungen und kleinen Feldern. Zum Unterschied 
+zur Zonen 3;4 hat die Zone“5“ starke Vegetation( und liegt in einer Gebirge (das 
+könnte man vom Relief ablesen). Das heißt, dass Gemüsekulturen oder Obstbäume 
+einmalig eingepflanzt sind und nur geerntet würden.
+ 
+
+Bild 2
+
+Aus dem Bild 2 können wir sehen: 1.Nadelwald;
+2.Laubwald;
+3.Gemischte Wald.
+Laubwald wird deutlich heller und Nadelwald dunkler dargestellt.
+
+Bild 3
+
+Auf dem Bild 3 kann man deutlich sehen, die erkennbare Objekte von ihren Form 
+und Struktur: Flüsse (Kanäle), Städte (Dorfe, Siedlungen), Felder und Acker,
+Eisgipfel, Seen ,Flughafen (Flugplätze) und die Objekte mit administrativer 
+Bedeutung. Die Berge kann man von ihrem Relief sehen.
+
+Bei der Interpretation des Satellitenbildausschnitts des Sensors Landsat-TM4 vom 
+18.05.1992 gab es Schwierigkeiten wegen nicht ausreichender Bildauflösung 
+und meiner nicht ausreichender Erfahrung über mehreren Objekten ,die  auf 
+dem Bild präsentiert sind. Man konnte nur vermuten, was genau für Objekte es 
+sind, wenn man selber endliche Objekte noch nicht gekannt hatte. 
+
+

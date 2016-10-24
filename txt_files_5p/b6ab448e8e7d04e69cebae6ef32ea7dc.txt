@@ -1,0 +1,442 @@
+ 
+Neurodynamics (L3) 
+
+Prof. Dr. Gordon Pipa  
+Institute of Cognitive Science University of Osnabrück 
+
+ 
+
+Changes in Structure of the Tutorial 
+ 
+Objectives 
+• Maximize Person contact  hours with tutors 
+•
+• No Entry conditions for exam anymore 
+• Rely on self-discipline and YOUR motivation  
+• Transparency of learning material and goals 
+•
+
+Individualize the tutoring 
+
+Learn at your own pace 
+ 
+
+ 
+NEW Implementation  
+ 
+We have tutorials that are as follows :  
+
+• Twice a week – Monday 2-4 and Friday 8-10 
+• Tutors will answer your question in smaller groups upon your request  
+• During the tutorial we will collect important issues and will present them at the 
+
+end of the tutorial for the entire group  
+
+• We will upload all exercises including the solutions early in the semester – This 
+allows you to learn at your own speed. BUT forces you to not only learn to copy 
+the solutions if you want to really want to understand.  
+
+ 
+
+ 
+ 
+
+Voltage-gated channels 
+
+Two gate types of voltage-gated channels: 
+ 
+• gates that activate or open a channel,  
+
+ 
+ 
+
+  m(t) is the probability that an activation  
+  gate is in the open state  
+ 
+• gates that inactivate or close channels. 
+
+ 
+ 
+
+  h(t) is the probability that an inactivation  
+  gate is in the open state 
+ 
+ 
+ 
+ 
+Persistent versus transient channels: 
+
+ 
+
+• transient channel (a > 0  and b > 0) 
+  inactivates automatically 
+
+ 
+
+• persistent channel (b =0) 
+  no automatic inactivation 
+
+The Hodgkin-Huxley model 
+
+Is the Hodgkin-Huxley model a good model ? 
+
+ 
+
+• Yes, it is a wonderful model to understand the principles of spike-generation. 
+
+ 
+
+• No, it isn’t a good model for predicting spikes, because it can hardly be fit to data: 
+
+ 
+
+ 
+
+ 
+
+  The model has 11 parameters, and is nonlinearly dependent on 6 functions of V . 
+
+Examples of the voltage 
+dependent functions: 
+
+See also the matlab code on the course webpage and CD: Run_Hodgkin_Huxley.m 
+
+Izhikevich’ resonate and fire model 
+
+A simple 2 dimensional model (see module 2 for details on the phase portraits) 
+
+• It is based on a fast voltage variable V and a slow recovery variable u.  
+
+ 
+
+ 
+
+ 
+
+• Original Hodgkin-Huxley: 
+
+ 
+
+ 
+
+• Izhikevich model : 
+
+ 
+
+ 
+
+ 
+
+• The Izhikevich model uses a quadratic approximation of the voltage dependence. 
+
+• Sum of all slow currents are described by one recovery variable u.  
+
+matlab code on the course webpage and CD: Izhikevich_demo.m 
+
+Highlights of the dynamical repertoire of the Izhikevich model 
+
+Matlab code to generate a similar figure available on: www.izhikevich.com 
+
+Neurodynamics Lecture  
+ 
+ 
+Topics: 
+ 
+1D systems, Concept of an attractor and 
+stability 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+1D system - Attractors  
+
+A 1d system has only 
+one varaible, but may 
+have many constants 
+
+cf Eugene M. Izhikevich , ‘Dynamical Systems in Neuroscience:  The Geometry of Excitability and Bursting’, The MIT Press, 2007  
+
+Stable and unstable attractors  
+
+A 1d system has only 
+one varaible, but may 
+have many constants 
+
+Attractor, Equilirium 
+condition 
+
+cf Eugene M. Izhikevich , ‘Dynamical Systems in Neuroscience:  The Geometry of Excitability and Bursting’, The MIT Press, 2007  
+
+Role of unstable attractors in spike dynamics 
+
+A 1d system has only 
+one varaible, but may 
+have many constants 
+
+Attractor, Equilirium 
+condition 
+
+cf Eugene M. Izhikevich , ‘Dynamical Systems in Neuroscience:  The Geometry of Excitability and Bursting’, The MIT Press, 2007  
+
+Bifurcation 
+
+Bifurcation theory is the mathematical 
+study of changes in the qualitative or 
+topological structure of a given family.  
+ 
+Examples of such families are the 
+integral curves of a family of vector 
+fields, and the solutions of a family of 
+differential equations.  
+Most commonly applied to the 
+mathematical study of dynamical 
+systems, a bifurcation occurs when a 
+small smooth change made to the 
+parameter values (the bifurcation 
+parameters) of a system causes a 
+sudden 'qualitative' or topological 
+change in its behaviour.[1] 
+ 
+Bifurcations occur in both continuous 
+systems (described by ODEs, DDEs or 
+PDEs), and discrete systems (described 
+by maps).  
+ 
+Different types of bifurcations: 
+• Saddle-node (fold) bifurcation 
+• Transcritical bifurcation  
+• Pitchfork bifurcation 
+• Period-doubling (flip) bifurcation  
+• Hopf bifurcation 
+ 
+
+cf Eugene M. Izhikevich , ‘Dynamical Systems in Neuroscience:  The Geometry of Excitability and Bursting’, The MIT Press, 2007  
+
+This equation causes ALL of us 
+real headage ! We have a 
+solution that we cannot 
+interpret.  
+
+Instead we can use a graphical interpretation 
+ 
+First we describe the dynamics qualitatively  
+
+Instead we can use a graphical interpretation 
+ 
+First we describe the dynamics qualitatively  
+
+Speed of change changes with 
+time.  
+ 
+Speed is given by the 
+differential equation  
+
+Questionnaire 
+
+Solve (use separation of variables ) 
+
+Start 
+
+ 
+r
+e
+m
+T
+
+i
+
+Stop 
+
+0()dVVVdt()()dVfVdtgtNeuroinformatics - Prof. Dr. Gordon Pipa 
+
+dVVdt()()dVfVdtgtdVdtV1dVdtV0tcVVe0ln()ln()VVtcThe Bifurcation 
+(1d dynimcal system) 
+
+Bifurcation 
+
+Bifurcation theory is the mathematical 
+study of changes in the qualitative or 
+topological structure of a given family.  
+ 
+Examples of such families are the 
+integral curves of a family of vector 
+fields, and the solutions of a family of 
+differential equations.  
+Most commonly applied to the 
+mathematical study of dynamical 
+systems, a bifurcation occurs when a 
+small smooth change made to the 
+parameter values (the bifurcation 
+parameters) of a system causes a 
+sudden 'qualitative' or topological 
+change in its behaviour.[1] 
+ 
+Bifurcations occur in both continuous 
+systems (described by ODEs, DDEs or 
+PDEs), and discrete systems (described 
+by maps).  
+ 
+Different types of bifurcations: 
+• Saddle-node (fold) bifurcation 
+• Transcritical bifurcation  
+• Pitchfork bifurcation 
+• Period-doubling (flip) bifurcation  
+• Hopf bifurcation 
+ 
+
+Example Logistic map: 
+
+ 
+ 
+ 
+ 
+ 
+The bifurcation diagram nicely shows 
+the forking of the possible periods of 
+stable orbits from 1 to 2 to 4 to 8 etc. 
+Each of these bifurcation points is a 
+period-doubling bifurcation. The ratio of 
+the lengths of successive intervals 
+between values of r for which bifurcation 
+occurs converges to the first 
+Feigenbaum constant. 
+ 
+
+Bifurcation Diagram 
+ 
+
+The bifurcation parameter r is shown on the 
+horizontal axis of the plot and the vertical axis 
+shows the possible long-term population values 
+of the logistic function. Only the stable solutions 
+are shown here, there are many other unstable 
+solutions which are not shown in this diagram. 
+
+Logistic Map in Matlab 
+
+R= 2.6 – initial values of x range between 0 and 1 
+
+ 
+
+n
+x
+
+Converges to a single value 
+
+Timestep (n) 
+
+051015202500.10.20.30.40.50.60.70.80.91Logistic map: 
+
+ 
+ 
+ 
+ 
+ 
+The bifurcation diagram nicely shows 
+the forking of the possible periods of 
+stable orbits from 1 to 2 to 4 to 8 etc. 
+Each of these bifurcation points is a 
+period-doubling bifurcation. The ratio of 
+the lengths of successive intervals 
+between values of r for which bifurcation 
+occurs converges to the first 
+Feigenbaum constant. 
+ 
+
+At r approximately 3.57 is the onset 
+of chaos, 
+
+Bifurcation Diagram 
+ 
+
+The bifurcation parameter r is shown on the 
+horizontal axis of the plot and the vertical axis 
+shows the possible long-term population values 
+of the logistic function. Only the stable solutions 
+are shown here, there are many other unstable 
+solutions which are not shown in this diagram. 
+
+Convergence behaviour 
+
+Matlab code to generate this figure available on studip: Logistic_Map_1.m 
+
+Stable Patterns 
+
+Matlab code to generate this figure available on studip: Logistic_Map_1.m 
+
+Bifurcation Diagram 
+ 
+
+Logistic map: 
+
+ 
+ 
+ 
+ 
+ 
+The bifurcation diagram nicely shows 
+the forking of the possible periods of 
+stable orbits from 1 to 2 to 4 to 8 etc. 
+Each of these bifurcation points is a 
+period-doubling bifurcation. The ratio of 
+the lengths of successive intervals 
+between values of r for which bifurcation 
+occurs converges to the first 
+Feigenbaum constant. 
+ 
+
+The bifurcation parameter r is shown on the 
+horizontal axis of the plot and the vertical axis 
+shows the possible long-term population values 
+of the logistic function. Only the stable solutions 
+are shown here, there are many other unstable 
+solutions which are not shown in this diagram. 
+
+Matlab code to generate this figure available on studip: Logistic_Map_2.m 
+
+Questionnaire 
+
+Discuss the concept of an Bifurcation with your neighbors. 
+ 
+Explain the bifurcation parameter and its importance for the type of 
+dynamics  
+  
+
+Start 
+
+ 
+r
+e
+m
+T
+
+i
+
+r 
+
+Stop 
+
+Convergence behaviour 
+
+Matlab code to generate this figure available on studip: Logistic_Map_1.m 
+
+Abifurcation in a simple model  (I Na,p  model ) 
+
+Bifurcation in neuron models 
+
+Potential : 
+
+(0)()VOPVFVdVBifurcation in neuron models 
+
+Potential : 
+
+(0)()VOPVFVdVZoom arround bifurcation point 
+
+Bifurcation in neuron models 
+
+Potential : 
+
+(0)()VOPVFVdVBifurcation Diagramm  
+
+2d systems 
+
+

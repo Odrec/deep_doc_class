@@ -1,0 +1,69 @@
+%HM9
+%Maria Marchante Fernandez
+%970157
+
+function [spikes, stimuli, proj] = revcor(duration, kernel)
+
+% simulation of a supersimple reverse correlation experiment.
+% kernel: spatial weight vector that will be applied at each time step,
+% duration: the number of time steps (= number of shown stimuli)
+% spikes:  vector indicating which stimuli induced spikes
+% stimuli: a matrix, rows are Gaussian noise simuli for each time step.
+
+Kernel = [1 -2 1; -2 4 -2; 1 -2 1]/6;
+stimuli = randn(duration, length(kernel)); % White noise stimulus
+proj = stimuli * kernel; % Activation
+duration = 100 %there is something wrong here but it looked logical to me
+
+% A simple anonymous function which calculates us the probability of a
+% spike given the activation
+n = @(proj) 0.5 * (1 + erf(2*(proj-1)));
+
+spikes = rand(size(proj)) < n(proj) ;
+
+pcolor kernel %plot the checkerboard of the kernel
+colormap(gray(2))
+axis ij
+axis square
+
+Error using HM9 (line 14)
+Not enough input arguments.
+
+STA
+
+all_spikes = length(spikes); % number of spikes
+
+% calculate spike-triggered average
+all_stim = zeros(duration,all_spikes);
+
+% overall of spikes (the ones that fire)
+avg_stim = mean(all_stim, 2);
+
+STA= flipud((avg_stim - mean(size(proj))) ./ size(proj));
+
+% normalize spike-triggered average to match units for kernel
+
+norm_STA=(STA-mean(STA))./mean(STA);
+
+pcolor STA %plot the checkerboard of the STA
+colormap(gray(2))
+
+1
+
+axis ij
+axis square
+
+imagesc + reshape (avg_stim, duration,-5:5)
+title('Input');
+
+imagesc + reshape (all_stim,duration,-5:5)
+title('Response');
+
+imagesc + reshape (STA,duration,0:1)
+title('Spikes');
+
+Published with MATLAB® R2014b
+
+2
+
+

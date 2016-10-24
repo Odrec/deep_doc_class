@@ -1,0 +1,323 @@
+Remarks
+This week
+
+Foundations of Logic Week 5
+
+Marie Sindermann
+
+University of Osnabrueck
+
+msindermann@uos.de
+
+November 28, 2014
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Overview
+
+1 Remarks
+
+Old homework
+Quick Recap
+
+2 This week
+
+Lecture 3
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Old homework
+Quick Recap
+
+Common Mistakes/Remarks
+
+Exercise 1.4 / 2.1
+
+if two truth tables are identical, they have the same
+DNFs/CNFs
+
+Exercise 3.3
+
+a DNF/CNF can also: be a tautology/contradiction, a single
+literal, a single disjunct/conjunct
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Old homework
+Quick Recap
+
+What you should know
+
+(Disjunctive/Conjunctive) Normal Form
+
+Optimal DNF/CNF
+
+(Karnaugh Maps if you want)
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Important New Stuﬀ
+
+Syntactic Proofs
+
+Derivation Rules of GLC
+
+Proof Strategies
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Syntactic Proofs
+
+derivation: chain of wﬀs (derivation scheme) such that
+transitions result from applying one of the derivation rules
+
+syntactically derivable: if listed in the last line of a derivation
+scheme with the assumption list only featuring lines of actual
+assumptions
+
+syntactically proven: if it is syntactically derivable using only
+the derivation rules
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Calculus
+
+two of the most important concepts in logic ever:
+
+a calculus is sound iﬀ whenever we can derive ψ from some
+φ1...φn in our calculus then ψ is also semantically entailed in
+φ1...φn
+a calculus is complete iﬀ whenever φ1...φn semantically entails
+ψ then we can show that ψ is derivable from φ1...φn in our
+calculus
+GLCs is sound and complete
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Derivation Rules
+
+already seen:
+
+A (Assumption Introduction)
+
+MPP (Modus Ponendo Ponens)
+
+MTT (Modus Tollendo Tollens)
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Derivation Rules
+
+easy:
+∧I / ∧E (Conjunction Introduction/Elimination)
+∨I (Disjunction Introduction)
+↔I / ↔E (Biconditional Introduction/Elimination)
+¬¬I / ¬¬E (Double Negation Introduction/Elimination)
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Derivation Rules
+
+harder/less intuitive
+∨E (Disjunction Elimination)
+→I (Conditional Introduction)
+RAA (Reductio Ad Absurdum)
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Auxiliary Assumptions
+
+there can be no auxiliary assumption in the assumption set in
+the end
+
+three ways to get rid of them:
+→I: assume the antecedent of the implication you need
+derive the consequent using the antecedent
+discharge the assumption by applying →I
+RAA: assume the negation of a formula you need
+
+derive a contradiction using the assumption
+
+discharge the assumption by applying RAA
+
+vE:assume both disjuncts of a disjunction
+
+derive some twice, using each disjunct once
+discharge both assumptions by applying ∨E
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Proof Strategies
+
+assume all premises of the argument
+
+check if what you need is already in your assumptions, check
+what you need to get it
+
+for the conclusion of the argument and all other formulas you
+need to derive, check their type and see following strategies
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+sentence letter φ : assume ¬φ, derive contradiction, use
+RAA+DNE
+¬φ (any negation) : assume φ, derive contradiction, use RAA
+conjunction: derive both conjuncts, use ∧I
+disjunction: derive one disjunct, use ∨I or assume the
+negation of the disjunction, derive contradiction, use RAA
+implication: assume antecedent, derive consequent, use →I
+biconditional: derive both implications, use ↔I
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Examples!
+
+(P → R) ∧ (Q → R) (cid:96) P ∨ Q → R
+(A ∧ B) ∨ (C ∧ ¬D),¬R → ¬C , A ∧ B → R ∨ T ∴ R ∨ T
+C → (D → H), D ∧ ¬H,¬T → C ∴ ¬C ∧ T
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Solution Example 1
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Solution Example 2
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Solution Example 3
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+That’s it for today
+
+Time for your questions :)
+
+Marie Sindermann
+
+Foundations of Logic
+
+

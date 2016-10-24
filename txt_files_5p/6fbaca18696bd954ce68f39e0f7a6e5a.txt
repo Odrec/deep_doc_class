@@ -1,0 +1,49 @@
+Beispiel: Kalkulation von Kreditzinsen mit dem 
+Unternehmenswertmodell von Merton (1974)
+
+Ein bislang rein eigenfinanziertes Unternehmen möchte zur Finanzierung eines 
+größeren Investitionsprojektes einen Bankkredit aufnehmen. Das Unternehmen 
+wünscht einen Kredit mit 5 Jahren Laufzeit ohne zwischenzeitliche Zins- und 
+Tilgungszahlungen. Der Rückzahlungsbetrag in 5 Jahren soll 10 Mio. € sein.
+a) Mit welchem heutigen Kreditauszahlungsbetrag kann das Unternehmen 
+rechnen, wenn ihre Hausbank den aktuellen Marktwert der Unternehmensaktiva 
+auf 15 Mio. € schätzt, die Volatilität der Unternehmenswertrendite mit 20 % p. a. 
+beziffert und die Bank das Merton-Modell anwendet?
+Als zusätzliche Kreditvertragsklausel verpflichtet die Bank das Unternehmen, 
+während der Kreditlaufzeit keine Gewinne an die Eigentümer auszuschütten 
+und auch kein zusätzliches (gleichrangiges oder sogar bevorrechtigtes) 
+Fremdkapital aufzunehmen.
+Der risikolose Zinssatz (stetige Verzinsungsrate) liegt bei 5 % p. a. Es besteht 
+eine flache und im Zeitablauf konstante Zinsstrukturkurve.
+b) Welcher nominelle (risikoadjustierte effektive) Kreditzins ergibt sich?
+c) Wie hoch ist die geforderte Risikoprämie (Credit Spread)?
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+Beispiel: Kalkulation von Kreditzinsen mit dem 
+Unternehmenswertmodell von Merton (1974)
+
+Aufgabenerweiterung:
+Unterstellen Sie nun, dass die Bank nicht das Merton-Modell zur Kreditkalkulation 
+sondern einen sog. RAROC-Ansatz verwendet und dass die Laufzeit des Kredits 
+nur ein Jahr beträgt. Der nominelle (ohne (Dis-) Agio vergebende) Kreditbetrag 
+sei 10 Mio. €. Die Bank schätzt die einjährige Ausfallwahrscheinlichkeit (PD) des 
+Unternehmens nach Kreditaufnahme zu 1 %. Der Loss-given-Default (LGD) wird 
+zu 40 % geschätzt. Unterstellen Sie eine Betriebskosten- und Gewinnmarge der 
+Bank von insgesamt 20 Basispunkten. Die laufzeitkongruenten Refinanzierungs-
+kosten der Bank entsprechen dem risikolosen Zinssatz von 5 % p. a., weil die 
+Bank über eine erstklassige Bonität verfügt (AAA-Rating). Die erforderlichen 
+regulatorischen Eigenmittel (ermittelt nach dem Kreditrisiko-Standardansatz der 
+EU-BankenV  s. Teil Bankmanagement) für den vergebenen Unternehmens-
+kredit betragen 0,8 Mio. € (KSA-Risikogewicht des Schuldners: 100 %; 
+Eigenmittelunterlegungssatz: 8 %). Die Bank will einen RAROC von mindestens 
+10 % p. a. erzielen. 
+Welcher Kreditzins ergibt sich nun?
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+

@@ -1,0 +1,968 @@
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR *
+
+- Motivation -
+
+Trotz Vorschriften wie der LiqV waren Zahlungsschwierigkeiten der Banken 
+einer der Hauptprobleme der Finanzmarktkrise 2007-2009:
+• Banken haben eine hohes Maß an Fristentransformation betrieben
+• Das dabei bestehende Refinanzierungsrisiko wurde teilweise schlagend, weil 
+die Banken sich in der Krise untereinander misstrauten und Geld horteten, 
+anstatt es auf dem Interbankenmarkt als Kredite zu vergeben (Bankrun auf 
+sog. Wholesale-Markt)
+• Die Möglichkeiten zur Liquiditätsbeschaffung durch Verpfändung von 
+Wertpapieren verschlechterten sich ebenfalls, weil Sicherheitsabschläge 
+(sog. Haircuts) stark anstiegen oder bestimmte Wertpapiere gar nicht mehr   
+als Sicherheiten akzeptiert wurden
+
+* Zu diesem Abschnitt vgl. insb. BCBS (2010): Basel III: Internationale Rahmenvereinbarung über Messung, Standards und Überwachung in Bezug auf 
+das Liquiditätsrisiko; BCBS (2013): Mindestliquiditätsquote und Instrumente zur Überwachung des Liquiditätsrisikos; Delegierte Verordnung der 
+Kommission vom 10.10.2014 zur Ergänzung der Verordnung (EU) Nr. 575/2013 in Bezug auf die Liquiditätsdeckungsanforderung an Kreditinstitute; BCBS 
+(2014): Basel III: the net stable funding ratio; Hartmann-Wendels, T. (2012): Regulatorische Folgen der Finanzkrise – Auswirkungen auf die Leasing-
+Branche, in: Leasing Wissenschaft & Praxis, Jg. 10/2012, Nr. 1, Forschungsinstitut für Leasing, Universität zu Köln; Hanenberg, L. (2014): Anwendung der 
+LCR und Finalisierung der Vorgaben der NSFR, in: Zeitschrift für das gesamte Kreditwesen, Sonderausgabe Bundesbank Symposium 2014, 
+Bankenaufsicht im Dialog, S. 22-25.
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+
+- Motivation -
+
+Trotz Vorschriften wie der LiqV waren Zahlungsschwierigkeiten der Banken 
+einer der Hauptprobleme der Finanzmarktkrise 2007-2009:
+• Zudem hatten zahlreiche Banken Kredit- und Liquiditätslinien vergeben, 
+insb. für Zweckgesellschaften im Rahmen von Verbriefungstransaktionen
+• Der Verkauf von Vermögensgegenständen zur Generierung von liquiden 
+Mitteln löste teilweise eine Abwärtsspirale bei den Preisen für diese 
+Vermögensgegenstände (insb. Verbriefungsprodukte) aus, so dass deren 
+Verkauf immer weniger liquide Mittel einbrachte
+
+Neue, international harmonisierte Liquiditätsvorschriften (insb. die 
+quantitativen Liquiditätskennzahlen LCR und NSFR) sollen die 
+jederzeitige Zahlungsfähigkeit der Banken auch in Stress-Szenarien 
+sicherstellen und das Ausmaß der Fristentransformation begrenzen
+( gesetzliche Grundlage sind grundsätzlich die Artikel 411-428 der 
+CRR, welche durch sog. Delegierte Rechtsakte der EU-Kommission 
+präzisiert werden)
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+
+- Liquidity Coverage Ratio (LCR): Berechnung -
+
+• 10.10.2014: EU-Kommission erlässt auf Basis von Artikel 460 Abs. 1 CRR einen 
+Delegierten Rechtsakt zur Konkretisierung der LCR (Artikel 412 Abs. 1 CRR) 
+• bis September 2015: reine Beobachtungskennzahl, die mind. monatlich zu melden ist
+• ab Oktober 2015 bis 1.1.2018 schrittweise Einführung der LCR (beginnend mit 
+Schwellenwert S von 60%) (Artikel 460 Abs. 2 CRR)
+
+Bestand an HQLA
+
+e 1 Aktiva (mind. 30 
+
+
+Bereinigung für maximale
+Anrechnung der Stufe 2a 
+Aktiva (max. 40 Prozent
+der HQLA dürfen Stufe 2-
+Aktiva sein); ggf. Anrech-
+ener Stufe 
+nung vorhand
+Unbereinigter Bestand qualitativ 
+
+2b-Aktiva
+
+hochwertiger liquider Aktiva (HQLA)
+Korrektur
+Stufe
+Stufe a Stufe b
+1
+2
+Stufe a
+2
+
+*
+t
+30
+
+
+
+
+
+
+s t
+
+
+Bereinigung für maximale 
+Anrechnung der gedeckten
+Schuldverschreibungen als 
+Stuf
+Prozent der HQLA müssen 
+Aktiva der Stufe 1 ohne die 
+gedeckten Schuldver- 
+
+schreibungen sein)
+Korrektur
+Stufe
+1
+
+
+
+
+Bereinigung für maximale
+Anrechnung der Stufe 2b 
+Aktiva (max. 15 
+Prozent der
+HQLA dürfen Stufe 2b-Aktiva
+
+sein)
+Korrektur
+Stufe b
+2
+30
+
+
+
+Auszahlungen min
+
+
+
+Einzahlungen ;0,75
+
+Auszahlungen
+
+t
+
+
+
+30
+
+
+
+s t
+
+
+t
+
+
+
+
+
+2
+
+
+
+
+
+
+
+Erwarteter Netto-Zahlungsmittelabfluss inne
+
+rhalb von 30 Tagen in Stress-Situation
+
+s
+
+s
+
+s t
+
+
+s
+
+S
+
+LCR
+
+
+
+* Möglichkeit bestimmte Einzahlungen von der Anrechnungsbeschränkung auszunehmen
+
+Quelle: Delegierte Verordnung der Kommission vom 10.10.2014 zur Ergänzung der Verordnung (EU) Nr. 575/2013 in Bezug auf die 
+Liquiditätsdeckungsanforderung an Kreditinstitute
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+Liquidity Coverage Ratio (LCR):
+Anrechnungsfaktoren für HQLA
+
+Bestand an hochwertigen liquiden Aktiva (HQLA)
+
+Posten
+A. Aktiva der Stufe 1
+• Münzen und Banknoten
+• Anrechenbare Zentralbankguthaben
+• Sonstige anrechenbare Forderungen gegenüber Zentralbanken und öffentlichen Stellen von EU‐
+
+Mitgliedsstaaten oder die von diesen besichert worden sind
+
+• Sonstige anrechenbare Forderungen gegenüber Zentralbanken und öffentlichen Stellen von EU‐
+Mitgliedsstaaten oder die von diesen besichert worden sind und die ein ECAI‐Rating von 1 haben 
+
+• Anrechenbare von Kreditinstituten emittierte Schuldtitel
+• Anrechenbare gedeckte Schuldverschreibungen mit einem ECAI‐Rating von 1
+
+Faktor
+
+100%
+
+max. 93%
+
+B. Aktiva der Stufe 2
+Aktiva der Stufe 2a
+• Anrechenbare Forderungen gegenüber öffentlichen Stellen, die ein KSA‐Risikogewicht von höchstens
+
+20 % aufweisen oder die von diesen besichert worden sind
+
+• Anrechenbare gedeckte Schuldverschreibungen mit einem ECAI‐Rating von 2 oder besser
+• Anrechenbare Unternehmensschuldtitel von Nicht‐Finanzunternehmen mit einem ECAI‐Rating von 1
+
+max. 85%
+
+Aktiva der Stufe 2b
+• Anrechenbare Verbriefungen 
+• Anrechenbare Unternehmensschuldtitel von Nicht‐Finanzunternehmen mit einem ECAI‐Rating von
+
+3 oder besser
+
+• Anrechenbare Aktien und Anteile
+• Anrechenbare Liquiditätsfazilitäten (durch EZB bereitgestellt)
+• Anrechenbare Anteile an OGA
+Gesamtwert des Bestands an hochwertigen liquiden Aktiva
+
+75% , 65%
+
+50%
+50%
+50%
+
+45% ‐ 100%
+
+Quelle: Delegierte Verordnung der Kommission vom 10.10.2014 zur Ergänzung der Verordnung (EU) Nr. 575/2013 in Bezug auf die 
+Liquiditätsdeckungsanforderung an Kreditinstitute
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+Liquidity Coverage Ratio (LCR):
+
+Rückzugsraten (Run-off Faktoren) für Zahlungsmittelabflüsse
+
+Mittelabflüsse
+
+Faktor
+
+Mittelabflüsse (Fortsetzung)
+
+10% ‐ 20 %
+
+3%
+5%
+
+0%
+
+40%
+
+20%
+100%
+
+25%
+
+5%
+
+25%
+
+Marktwertveränderungen bei Derivativgeschäften (größter absoluter Nettofluss von Sicherheiten 
+innerhalb von 30 Tagen, der in den vorgangegangenen 24 Monaten stattgefunden hat
+Bewertungsveränderung auf für Derivate gestellte Sicherheiten, die nicht der Stufe 1 angehören
+Überschüssige Sicherheiten, die von einer Bank im Zusammenhang mit Derivativgeschäften 
+gehalten werden und die von der Gegenpartei vertraglich jederzeit zurückgerufen werden können
+Liquiditätsabfluss aus innerhalb von 30 Tagen zu liefernden leerverkauften Wertpapieren
+Liquiditätsbedarf im Zusammenhang mit Sicherheiten für Derivativgeschäfte, die von der 
+berichtenden Bank vertraglich geschuldet sind
+Erhöhter Liquiditätsbedarf im Zusammenhang mit Derivativgeschäften, die  eine Substitution der 
+Sicherheiten durch Nicht‐HQLA erlauben
+ABCP, strukturierte Anlageinstrumente, Durchlaufvehikel, Zweckgesellschaften usw.:
+• Verbindlichkeiten aus fällig werdenden ABCP, instrumenten, Zweckgesellschaften usw. 
+(anwendbar auf fälligstrukturierten Anlagewerdende Beträge und zurückzugebende 
+Vermögenswerte)
+• Forderungsunterlegte Wertpapiere (einschl. gedeckter Schuldverschreibungen), anwendbar auf 
+fällig werdende Beträge
+Nicht beanspruchte fest zugesagte Kredit‐ und Liquiditätsfazilitäten an
+• Privatkunden und Kleinunternehmen
+• Nichtfinanzunternehmen, Staaten, Zentralbanken, sonstige öffentliche Stellen und multilaterale 
+Entwicklungsbanken
+• Liquiditätsfinanzierung im institutionellem Netzwerk (sofern beim Zentralinstitut mit 25% 
+anrechenbar)
+• Der Bankenaufsicht unterstehende Kreditinstitute
+
+Posten
+A. Einlagen von Privatkunden und KMU
+Sicht‐ und Termineinlagen (Restlaufzeit < 30 Tage)
+• Stabile Einlagen (Einlagensicherungssystem erfüllt zusätzliche  Kriterien)
+• Stabile Einlagen
+• Weniger stabile Privatkundeneinlagen
+Termineinlagen (Restlaufzeit > 30 Tage)
+B. Unbesicherte, von Großkunden bereitgestellte Finanzmittel
+Operative Einlagen im Zusammenhang mit Clearing‐, Verwahrungs‐ und Cash‐
+Management‐Dienstleistungen
+• Durch Einlagensicherung gedeckter Anteil
+Genossenschaftsbanken in institutionellem Netzwerk (anrechenbare Einlagen 
+beim Zentralinstitut)
+Nichtfinanzunternehmen,  Staaten, Zentralbanken, sonstige öffentliche Stellen 
+und multilaterale Entwicklungsbanken
+• Wenn Gesamtbetrag vollständig durch Einlagensicherung gedeckt
+Sonstige juristische Personen
+C. Besicherte Finanzierungen
+• Besicherte Finanzierungsgeschäfte mit einer Zentralbank als Gegenpartei 
+bzw. mit allen Gegenparteien, wenn sie durch Aktiva der Stufe 1 gedeckt sind, 
+die keine gedeckten Schuldverschreibungen der Stufe 1 darstellen
+• Besicherte Finanzierungsgeschäfte, wenn sie durch gedeckte 
+Schuldverschreibungen der Stufe 1 gedeckt sind 
+• Besicherte Finanzierungsgeschäfte, die durch Aktiva der Stufe 2a gedeckt 
+sind, mit allen Gegenparteien
+• Gedeckt durch RMBS, die den Aktiva der Stufe 2b anrechenbar sind
+• Besicherte Finanzierungsgeschäfte, die mit Aktiva unterlegt sind, die nicht 
+der Stufe 1 oder der Stufe 2a anrechenbar sind, mit dem eigenen Staat, 
+inländischen PSE oder multilateralen Entwicklungsbanken als Gegenpartei 
+• Besicherte Finanzierungsgeschäfte, die durch ausgewählte Darlehen und 
+Kreditfazilitäten besichert sind und die als Aktiva der Stufe 2a gelten
+• Gedeckt durch andere Aktiva der Stufe 2b
+• Alle übrigen besicherten Finanzierungsgeschäfte
+D. Zusätzliche Anforderungen
+Liquiditätsbedarf (z. B. Sicherheitenanforderungen) im Zusammenhang mit 
+Finanzierungsgeschäften, Derivaten und sonstigen Kontrakten
+Quelle: Delegierte Verordnung der Kommission vom 10.10.2014 zur Ergänzung der Verordnung (EU) Nr. 575/2013 in Bezug auf die 
+Liquiditätsdeckungsanforderung an Kreditinstitute
+© Univ.-Prof. Dr. Peter Grundke
+
+• Sonstige juristische Personen, Kredit‐ und Liquiditätsfazilitäten
+Sonstige Eventualverpflichtungen zur Mittelbereitstellung (wie Garantien, Akkreditive, 
+wiederrufliche Kredit‐ und Liquiditätsfazilitäten usw.)
+• Handelsfinanzierung
+Jegliche sonstigen vertraglichen Abschlüsse
+Nettoabflüsse aus Derivaten
+Jegliche sonstigen vertraglichen Mittelabflüsse
+Mittelaflüsse insgesamt
+
+• Nichtbankfinanzinstitute (einschl. Wertpapierhäuser, Versicherungen)
+
+Ratingherabstuf‐
+ung um 3 Stufen
+
+35%
+
+50%
+100%
+
+0%
+
+7%
+
+15%
+
+25%
+
+Vorlesung Bankmanagement
+
+Vergangenheitsbezogener 
+
+Ansatz
+10%, 20%
+
+100%
+100%
+
+100%
+
+100%
+
+100%
+
+100%
+
+5%
+
+10% Kreditfa.
+
+10%, 30%, 40% Liquiditätsfa.
+
+75%
+
+40% Kreditfa. 
+
+40% Liquiditätsfa.
+100% Kreditfa.  
+100% Liquiditätsfa.
+
+100%
+
+nationaler
+
+Ermessensspielraum
+
+0‐5%
+100%
+100%
+100%
+
+Liquidity Coverage Ratio (LCR): 
+
+Anrechnungsfaktoren für Zahlungsmittelzuflüsse
+
+Posten
+
+Faktor
+
+Mittelzuflüsse
+
+Innerhalb der nächsten 30 Tage fällig werdende besicherte 
+Kreditgeschäfte, die durch folgende Sicherheiten gedeckt sind
+• HQLA‐Aktiva
+
+• Nicht‐HQLA‐Aktiva
+
+Der berichtenden Bank gewährte Kredit‐ oder Liquiditätsfazilitäten
+
+Operative Einlagen bei anderen Finanzinstituten (einschl. Einlagen beim 
+Zentralinstitut in einem Netzwerk von Genossenschaftsbanken)
+Sonstige Zuflüsse innerhalb der nächsten 30 Tage nach Gegenpartei
+• Tilgungszahlungen aus unbesicherten Forderungen gegenüber 
+
+Nichtfinanz‐Großkunden
+
+• Zahlungen aus unbesicherten Forderungen  gegenüber Finanzinstituten 
+
+und Zentralbanken, aus anderen Geschäften als den in den obigen 
+Zuflusskategorien aufgeführten
+
+• Alle sonstigen Aktiva
+• Restlaufzeitlose Vermögenswerte, sofern sie jederzeit liquidiert werden 
+
+können
+
+Nettozuflüsse aus Derivaten
+Mittelzuflüsse insgesamt
+
+0% bis zur Höhe des Marktwertes des 
+
+Besicherung;
+
+100% über den Marktwert der 
+
+Besicherung hinausgehender Betrag
+
+100%
+0%
+
+5%
+
+max. 50%
+
+100%
+
+100%
+
+20%
+
+100%
+
+Quelle: Delegierte Verordnung der Kommission vom 10.10.2014 zur Ergänzung der Verordnung (EU) Nr. 575/2013 in Bezug auf die 
+Liquiditätsdeckungsanforderung an Kreditinstitute
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+Liquidity Coverage Ratio (LCR): Wichtige Aspekte
+
+• Die LCR soll die kurzfristige Liquidität von Kreditinstituten sicherstellen 
+• Der Bestand an unbelasteten, hochwertigen liquiden Aktiva (HQLA) soll 
+
+ausreichen, um eine 30-tägige Stressperiode (sowohl bankindividuelle als 
+auch systemweite Stress-Situation) zu überstehen (ohne Zentralbank-
+unterstützung oder sonstige öffentliche Hilfen)
+In Krisenzeiten darf die LCR 100% unterschreiten, d. h. die Puffer-HQLA
+können genutzt werden ( unverzügliche Anzeige gegenüber der 
+Bankenaufsicht und umgehende Vorlage eines Plans für die rasche 
+Wiedereinhaltung der Liquiditätsanforderung erforderlich (Artikel 414 CRR))
+• Festlegung eines regulatorisch vorgegebenen Stress-Szenarios durch 
+
+•
+
+Zuweisung von Rückzugsraten bzw. Anrechnungsfaktoren zu einzelnen 
+Bilanzpositionen
+
+• Doppelzählungen von Positionen sind nicht zulässig: Vermögenswerte, 
+die dem Bestand an HQLA zugerechnet werden, dürfen nicht gleichzeitig 
+auch als Zahlungsmittelzuflüsse (innerhalb der nächsten 30 Tage) gezählt 
+werden
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+Liquidity Coverage Ratio (LCR): Wichtige Aspekte
+
+• HQLA sollen qualitative und operative Vorgaben erfüllen, um 
+
+angerechnet werden zu dürfen 
+
+- Beispiele für qualitative Vorgaben:
+
++ Geringes Ausfall-/Marktrisiko eines Vermögenswertes,
++ geringe Korrelation mit risikobehafteten Aktiva,
++ einfache/sichere Bewertbarkeit
++ Notierung an einer entwickelten und anerkannten Börse
+
+- Beispiele für operative Vorgaben:
+
++ Vermögenswerte sollen „lastenfrei“ sein, 
++ zeitweises Testen der Liquidierbarkeit einzelner Vermögenswerte    
+
+durch Eingehen von Repo-Geschäften oder direkten Verkauf
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+Liquidity Coverage Ratio (LCR): Wichtige Aspekte
+
+LCR-Erfüllungsgrad gemäß EU-Basel-III-Monitoring per 30.6.2013
+(umfasst knapp 90 deutsche Banken):*
+• durchschnittliche LCR von Banken der Gruppe 1: 104%
+• durchschnittliche LCR von Banken der Gruppe 2: 132%
+• ca. 2/3 der Banken wiesen LCR > 100% auf
+• ca. 14% der Banken besaßen eine LCR < 60%
+• relativ große Streuung der LCR je nach Geschäftsmodell
+• EU-Definition der LCR gemäß CRR bzw. Delegiertem Rechtsakt wird zu 
+tendenziell höheren LCR-Werten führen
+• LCR-Offenlegungspflicht und Marktdruck wird bei sich über den Kapital-
+markt refinanzierenden (Groß-) Banken dazu führen, dass diese schon vor 
+Ende der Übergangsfrist 2018 eine LCR > 100% besitzen werden
+
+* Zitiert nach Hanenberg (2014, S. 24).
+** Banken der Gruppe 1: international aktive Banken mit Mindest-Kernkapital; Banken der Gruppe 2: alle anderen Banken.
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+- Net Stable Funding Ratio (NSFR): Berechnung und wichtige Aspekte -
+
+NSFR 
+
+Verfügbarer Betrag stabiler Refinanzierung
+Erforderlicher Betrag stabiler Refinanzierung
+
+
+
+1
+
+• Ziele:
+
+- Begrenzung der positiven Fristentransformation: Aktiva, die länger 
+als ein Jahr auf der Bilanz bleiben, sollen unter Berücksichtigung ihrer 
+Liquidierbarkeit durch Mittel refinanziert werden, die der Bank länger als 
+ein Jahr zur Verfügung stehen  Prinzip der „Goldenen Bankregel“
+(Artikel 413 Abs. 1 CRR) 
+
+- Kreditinstitute sollen unabhängiger von kurzfristiger Refinanzierung über 
+
+den Interbankenmarkt bzw. den Geldmarkt werden
+
+- Zudem Entgegenwirken von Anreizen, die LCR zu umgehen, indem 
+
+Verbindlichkeiten aufgenommen werden, deren Laufzeiten knapp über 
+dem 30-Tage Zeithorizont liegen („Klippeneffekt“)
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+- Net Stable Funding Ratio (NSFR): Berechnung und wichtige Aspekte -
+
+• Aber: Nach wie vor erhebliche positive Fristentransformation möglich (z. B. 
+
+durch hohe ASF-Faktoren für Einlagen mit einer RLZ < 1 Jahr oder durch 
+Fokussierung auf 1-Jahres-Horizont (Bsp.: Refinanzierung eines 20-jährigen 
+Kredits durch eine zweijährige Termineinlage))
+
+• Erstmalige Anwendung für den 1.1.2018 geplant
+• Vorschlag für die strukturelle Liquiditätsquote NSFR stammt (wie für die 
+
+kurzfristige Liquiditätsquote LCR) vom Baseler Ausschuss für 
+Bankenaufsicht (2010, 2014)
+
+• Umsetzung in der EU bislang noch unsicher
+• NSFR ist zunächst eine reine Beobachtungskennzahl, die mind. 
+
+quartalsweise zu melden ist; über ihre bindende Einführung soll auf Basis 
+eines EBA-Berichts an die EU-Kommission, der bis zum 31.12.2015 zu 
+erstellen ist, entschieden werden ( Auswirkungen der NSFR insb. auf die 
+Geschäftsmodelle der Banken und die Kreditvergaben an KMU?)
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+Net Stable Funding Ratio (NSFR): Anrechnungs-
+faktoren für verfügbare stabile Refinanzierung
+
+Verfügbare stabile Refinanzierung
+
+Posten
+• Regulatorische Eigenmittel (Kern‐ und Ergänzungskapital), ohne Ergänzungskapital mit einer 
+
+Restlaufzeit < 1 Jahr
+
+• Sonstige Kapitalinstrumente und Verbindlichkeiten mit einer effektiven Restlaufzeit ≥ 1 Jahr
+
+• Stabile Einlagen von Privatkunden und Kleinunternehmen 
+
+mit Restlaufzeit < 1 Jahr
+
+• Weniger stabile Einlagen von Privatkunden und Kleinunternehmen
+
+mit Restlaufzeit < 1 Jahr
+
+• Großkundenmittel von Nichtfinanzunternehmen, Staaten, Zentralbanken, multilateralen 
+
+Entwicklungsbanken und sonstigen öffentlichen Stellen mit Restlaufzeit < 1 Jahr
+
+• Großkundenmittel von Finanzinstituten und Zentralbanken mit Restlaufzeit von ≥ 6 Monaten und
+
+• Operative Einlagen
+• Alle übrigen Verbindlichkeiten und Eigenkapitalinstrumente, die nicht oben 
+
+< 1 Jahr
+
+aufgeführt sind
+
+Faktor
+
+100%
+
+95%
+
+90%
+
+50%
+
+0%
+
+Gesamtwert des Bestands an verfügbarer stabiler Refinanzierung
+
+Quelle: BCBS (2014): Basel III: the net stable funding ratio, S. 6.
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+Net Stable Funding Ratio (NSFR): Anrechnungs-
+faktoren für erforderliche stabile Refinanzierung
+
+Posten
+• Barmittel und Zentralbankreserven
+• Sonstige Forderungen gegenüber Zentralbanken mit einer Restlaufzeit  < 6 Monate
+• Forderungen aus Wertpapierhandels‐, Währungs‐ und Rohstoffgeschäften
+• Lastenfreie HQLA der Stufe 1 (ohne Barmittel und Zentralbankreserven)
+• Lastenfreie und mit HQLA der Stufe 1 besicherte Kredite an Finanzinstitute mit einer Restlaufzeit < 6 Monate, bei der das Kreditinstitut die Kreditbesicherung 
+
+Erforderliche stabile Refinanzierung
+
+weiterverpfänden darf
+
+• Sonstige lastenfreie Kredite an Finanzinstitute mit einer Restlaufzeit < 6 Monate 
+• Lastenfreie HQLA der Stufe 2a
+• Marktwert derivativer Verbindlichkeiten
+• Lastenfreie HQLA der Stufe 2b
+• Belastete HQLA aller Stufen, wenn die Restlaufzeit der Belastung  ≥ 6 Monate und < 1 Jahr
+• Kredite an Finanzinstitute mit einer Restlaufzeit ≥ 6 Monate und < 1 Jahr
+• Operative Einlagen bei anderen Finanzinstituten
+• Sonstige Aktiva mit einer Restlaufzeit < 1 Jahr
+• Lastenfreie Kredite für den Erwerb von Wohneigentum sowie sonstige lastenfreie Kredite ohne Kredite an Finanzinstitute, mit Restlaufzeit  ≥ 1 Jahr, die ein 
+KSA‐Risikogewicht von 35% oder weniger erhalten würden
+
+• Aktiva, die als Sicherheiten (initial margin) für Derivate hinterlegt wurden
+• Lasten‐ und störungsfreie Kredite ohne Kredite an Finanzinstitute, mit Restlaufzeit  ≥ 1 Jahr, die ein
+KSA‐Risikogewicht > 35% erhalten würden
+
+• Lastenfreie Schuldtitel, die keine HQLA darstellen, sich nicht im Ausfallzustand befinden und eine Restlaufzeit > 1 Jahr aufweisen sowie börsennotierte Aktien
+• Physisch gehandelte Rohstoffe und Gold
+• Belastete Aktiva, wenn die Restlaufzeit der Belastung  ≥ 1 Jahr beträgt
+• Wert, um den die Summe der Marktwerte der aktivisch bilanzierten Derivate die Summe der Marktwerte der passivisch bilanzierten Derivate übersteigt
+
+• Alle sonstigen Aktiva
+Außerbilanzielle Positionen
+• Nicht beanspruchter Betrag unwiderruflich und bedingt widerruflich zugesagter Kredit‐ und Liquiditätsfazilitäten
+• Sonstige Eventualverpflichtungen zur Mittelbereitstellung
+
+Gesamtwert des Bestands an erforderlicher stabiler Refinanzierung
+
+Quelle: BCBS (2014): Basel III: the net stable funding ratio, S. 11-12.
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+Faktor
+
+0%
+
+5%
+10%
+
+15%
+20%
+
+50%
+
+65%
+
+85%
+
+100%
+
+100%
+
+5%
+
+nationaler 
+
+Ermessensspielraum
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+
+- Vergleich LCR vs. LiqV -
+
+• Strukturelle Ähnlichkeit von LCR und der bislang in der LiqV
+
+verwendeten Liquiditätskennzahl:
+
+Liquiditaetskennzahl der LiqV
+
+
+
+Verfügbare Zahlungsmittel Zahlungsmittelzuflüsse
+
+
+
+Zahlungsmittelabflüsse
+
+
+
+1
+
+LCR 
+
+Bestand an HQLA
+
+Netto-Zahlungsmittelabflüsse
+
+
+
+1
+
+• Beide Kennzahlen beziehen sich auf Zahlungsströme innerhalb eines
+
+30-Tage-Horizonts
+
+• Formal ähnliche Konstruktion, einziger Unterschied: Bei der LCR werden 
+
+die Zuflüsse bei den Abflüssen in Abzug gebracht; bei der Liquiditäts-
+kennzahl der LiqV werden die Zuflüsse den bestehenden Zahlungsmitteln 
+hinzugerechnet
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+
+- Vergleich LCR vs. LiqV -
+
+• Deutliche Unterschiede bestehen bei der inhaltlichen Ausgestaltung, weil 
+
+die LiqV auf den „Normalfall“ ausgelegt ist und die LCR auf „Stress-
+Situationen“ abstellt. Entsprechend bestehen Unterschiede bei
+
+- den HQLA bzw. verfügbaren Zahlungsmitteln, z. B.
+
+ höhere Anforderungen (vgl. qualitative und operative Vorgaben) zur
+
+Anrechnung liquider Aktiva als Liquiditätspuffer bei LCR, z. B.
+
++ keine Anerkennung von Investmentanteilen (bei LiqV: 
+
+Anrechnung zu 90% als Liquidität 1. Klasse (= verfügbare 
+Zahlungsmittel)
+
++ höhere Anforderungen für Anrechnung von durch nicht-
+
+öffentliche Stellen begebene Schuldverschreibungen 
+(Mindestrating, Abzug eines Haircuts, Beschränkung auf
+40% der HQLA sowie strengere Maßstäbe zur Messung der 
+Marktliquidität dieser Titel)
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+
+- Vergleich LCR vs. LiqV -
+
+• Deutliche Unterschiede bestehen bei der inhaltlichen Ausgestaltung, weil 
+
+die LiqV auf den „Normalfall“ ausgelegt ist und die LCR auf „Stress-
+Situationen“ abstellt. Entsprechend bestehen Unterschiede bei
+
+- den Zahlungsmittelzuflüssen (innerhalb der nächsten 30 Tage), z. B.
+
+ konservativere Annahmen über die erwarteten Zahlungsmittel-
+
+eingänge bei der LCR, z. B.
+
++ keine Anerkennung von anderen Banken erhaltener 
+
+unwiderruflicher Kreditzusagen (bei LiqV: Anrechnung zu 
+100% als Liquidität 1. Klasse (= verfügbare Zahlungsmittel))
+
++ z. T. Zuflussquoten < 100 % (u. a. bei unbesicherten
+
+Forderungen an Nichtfinanz-Großkunden oder bei mit 
+HQLA-Aktiva besicherten Forderungen)
+
++ insgesamt sehr viel detailliertere Zuweisung von 
+
+Anrechnungsfaktoren
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+
+- Vergleich LCR vs. LiqV -
+
+• Deutliche Unterschiede bestehen bei der inhaltlichen Ausgestaltung, weil 
+
+die LiqV auf den „Normalfall“ ausgelegt ist und die LCR auf „Stress-
+Situationen“ abstellt. Entsprechend bestehen Unterschiede bei
+
+- den Zahlungsmittelabflüssen (innerhalb der nächsten 30 Tage), z. B.
+
+ konservativere Annahmen über die erwarteten Zahlungsmittel-
+
+abflüsse bei der LCR, z. B.
+
++ Berücksichtigung von Abflüssen aus Derivaten
++ insgesamt sehr viel detailliertere Zuweisung von 
+
+Gewichtungsfaktoren (z. B. bei Einlagen Differenzierung 
+nach stabilen und weniger stabilen Einlagen und nach 
+Gläubigerart)
+
++ durchschnittlich höhere unterstellte Inanspruchnahmen
+
+(Run-off-Faktoren) von bereitgestellten Kredit- und 
+Liquiditätsfaziliäten
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+
+- Auswirkungen von LCR und NSFR auf Kreditinstitute -
+
+•
+
+(vermutete) Auswirkungen der Einhaltung von LCR und NSFR auf die
+Portfoliostrukturierung von Banken:
+
+Passivseite:
+1.
+
+Höhere Attraktivität von Sicht-, Spar- und Termineinlagen von 
+Privatpersonen, KMU und Nichtfinanzunternehmen
+ Höhere Einlagenzinsen aufgrund stärkeren Wettbewerbs um 
+
+diese Einlagen?
+
+2.
+
+3.
+
+ Niedrigere Zinsmargen und damit Ertragseinbußen bei den 
+Banken; Weitergabe der höheren Refinanzierungskosten an 
+den Kunden in Form höher Kreditzinsen? 
+
+Geringere Attraktivität von kurzfristigen (RLZ < 6 Monate) 
+Einlagen von Banken (Run-off-Faktor 100 % bei LCR und ASF-
+Faktor 0 % bei NSFR)
+Stärkere Notwendigkeit zur längerfristigen (RLZ > 1 Jahr) Refinan-
+zierung (Kreditaufnahmen, Emission von Bankschuldverschreib-
+ungen ( höhere Refi-Kosten bei normaler Zinsstruktur)
+Vorlesung Bankmanagement
+
+© Univ.-Prof. Dr. Peter Grundke
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+
+- Auswirkungen von LCR und NSFR auf Kreditinstitute -
+
+•
+
+(vermutete) Auswirkungen der Einhaltung von LCR und NSFR auf die
+Portfoliostrukturierung von Banken:
+
+Aktivseite:
+1.
+
+Höhere Attraktivität von Staatsanleihen, gedeckten Schuldver-
+schreibungen und von bonitätsmäßig erstklassigen Nichtfinanz-
+unternehmen emittierte Anleihen (Anerkennung als HQLA bei 
+LCR und geringer RSF-Faktor bei NSFR), welche jedoch nur eine 
+relativ geringe Rendite/Effektivverzinsung aufweisen
+ Kompensation der Ertragseinbußen durch höhere Kreditzinsen
+ Geringere Kreditvergabevolumina?
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+2.2.5.3 Quantitative Liquiditätskennzahlen unter Basel III / CRR
+
+- Auswirkungen von LCR und NSFR auf Kreditinstitute -
+
+•
+
+(vermutete) Auswirkungen der Einhaltung von LCR und NSFR auf die
+Portfoliostrukturierung von Banken:
+
+Aktivseite:
+2.
+
+(Weiter) abnehmende Attraktivität von längerfristigen (RLZ > 1 
+Jahr) Unternehmenskrediten (Zuflussquote von nur 50 % der 
+innerhalb des 30-Tages-Horizontes fällig werdenden Tilgungs-
+zahlungen bei LCR (sofern unbesicherte Forderung ggü. 
+Nichtfinanz-Großkunden ) und RSF-Faktor von 100 % bei NSFR)
+ Höhere Kreditzinsen bzw. geringere Kreditvergabevolumina?
+ Alternative Finanzierungsformen gewinnen an Bedeutung für    
+
+Unternehmen (z. B. Emission von Anleihen bei Unternehmen 
+mit Kapitalmarktzugang, Leasing/Factoring als sog. 
+Kreditsubstitute)?
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Bankmanagement
+
+

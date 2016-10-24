@@ -1,0 +1,1012 @@
+Mobile Informationssysteme
+
+WS 2014/2015
+
+9. Vorlesung, 11.12.2014:
+Analyse von Trajektorien
+
+Prof. Dr.-Ing. Jan-Henrik Haunert
+
+3
+
+3
+
+2
+
+1
+
+Analyse von Tierbewegungen
+
+Titel von Beitr¨agen zur Konferenz
+TRACKING ANIMALS WITH GPS (2001):
+
+Evaluating elk habitat interactions with GPS collars
+
+Using GPS to study the eﬀect of human disturbance on the behaviour
+of red deer stags on a highland estate in Scotland
+
+Measuring diet composition and food intake by moose in the Swedish
+boreal forest: integrating GPS and faecal marker technologies
+
+Evaluation of GPS technology for tracking mountain ungulates:VHF
+transmitters or GPS collars?
+
+A very lightweight ﬂight recorder for homing pigeons based on GPS
+
+Performance of store-on-board GPS collars on elk, mule deer and
+mountain lions in Wyoming, USA
+
+GPS collars with remote download facilities, for studying the
+economics of moose hunting and moose-wolf interactions .
+
+Analyse von Tierbewegungen
+
+Local Communication Link
+Satellite Link
+Store-On-Board
+
+Analyse von Tierbewegungen
+
+Local Communication Link
+– GPS-Daten werden per Funk mit mobiler
+
+¨Uberwachungsstation (Gel¨andewagen, Flugzeug)
+ausgetauscht
+
+– Kommunikation in beide Richtungen (z.B. um
+
+GPS-Messrate anzupassen)
+
+– Reichweite ca. 15 km (UHF-Band)
+– Tiere oft mit zus¨atzlicher UKW-Funkbake ausgestattet,
+
+um Aufsp¨uren zu erleichtern
+
+Satellite Link
+Store-On-Board
+
+Analyse von Tierbewegungen
+
+Local Communication Link
+Satellite Link
+– ARGOS-System erm¨oglicht das Senden von
+
+Positionsdaten an Satelliten und Verteilen an Nutzer
+
+– betrieben von internationalen
+Organisationen mit dem Ziel
+der Umwelt¨uberwachung
+
+– Nutzer m¨ussen sich
+
+registrieren und ihre Ziele
+detailliert beschreiben
+
+– Stromverbrauch limitiert
+
+Anwendungen;
+typisch: 1 Position pro Tag,
+Lebenszeit 1 Jahr
+
+Store-On-Board
+
+NOAA = U.S. National Oceanic
+and Atmospheric Administration
+
+Analyse von Tierbewegungen
+
+Local Communication Link
+Satellite Link
+Store-On-Board
+– Daten werden auf der mobilen Einheit gespeichert
+– Zugriﬀ durch Fang des Tieres oder automatischen
+– keine Funktechnik erforderlich → sehr kleine Systeme
+
+Abwurf
+
+(ca. 70 g)
+
+– oft mit zus¨atzlicher UKW-Funkbake ausgestattet, um
+
+Aufsp¨uren zu erleichtern
+
+Analyse von Tierbewegungen – Viehzucht
+Ganskopp (2001):
+
+Vieh bevorzugt bestimmte Teile der Weide (z.B. N¨ahe zu
+Wasserstelle, Salzstein)
+Weide wird ungleichm¨aßig abgegrast/beansprucht.
+Pﬂanzen k¨onnen sich in manchen Bereichen nicht regenieren.
+
+Analyse von Tierbewegungen – Viehzucht
+Ganskopp (2001):
+
+Vieh bevorzugt bestimmte Teile der Weide (z.B. N¨ahe zu
+Wasserstelle, Salzstein)
+Weide wird ungleichm¨aßig abgegrast/beansprucht.
+Pﬂanzen k¨onnen sich in manchen Bereichen nicht regenieren.
+
+Ziel:
+
+gleichm¨aßige Auslastung
+der Weide durch Versetzen
+von Wasserstelle oder
+Salzstein
+
+Analyse von Tierbewegungen – Viehzucht
+Ganskopp (2001):
+
+Vieh bevorzugt bestimmte Teile der Weide (z.B. N¨ahe zu
+Wasserstelle, Salzstein)
+Weide wird ungleichm¨aßig abgegrast/beansprucht.
+Pﬂanzen k¨onnen sich in manchen Bereichen nicht regenieren.
+
+Ziel:
+
+gleichm¨aßige Auslastung
+der Weide durch Versetzen
+von Wasserstelle oder
+Salzstein
+
+Frage:
+
+Wie wirkt sich Versatz
+von Wasser und/oder
+Salzstein auf Verteilung
+des Viehs aus?
+
+Analyse von Tierbewegungen – Viehzucht
+Ganskopp (2001):
+
+Vieh bevorzugt bestimmte Teile der Weide (z.B. N¨ahe zu
+Wasserstelle, Salzstein)
+Weide wird ungleichm¨aßig abgegrast/beansprucht.
+Pﬂanzen k¨onnen sich in manchen Bereichen nicht regenieren.
+
+Ziel:
+
+gleichm¨aßige Auslastung
+der Weide durch Versetzen
+von Wasserstelle oder
+Salzstein
+
+Frage:
+
+Wie wirkt sich Versatz
+von Wasser und/oder
+Salzstein auf Verteilung
+des Viehs aus?
+
+→ GPS-basierte Bewegungsanalyse
+
+Analyse von Tierbewegungen – Viehzucht
+Test:
+
+Burn, Oregon (arides
+Klima), Juni/Juli 1999
+
+Ergebnisse:
+
+f¨ur eine Kuh: s. Abb.
+insgesamt:
+– Versetzung von
+Wasser wirksam
+– Versetzung von
+Salz unwirksam
+
+1 km
+
+Analyse von Tierbewegungen – Viehzucht
+
+Anderson (2007):
+“every conventional fence
+that I have ever built has
+been in the wrong place the
+next year”
+
+virtuelle Z¨aune
+
+Vieh wird durch
+Stimuli (Schall und
+elektrische Impulse)
+auf Weide gehalten.
+
+Video:
+www.youtube.com/watch?feature=player_embedded&v=JbFhxT3Surc
+
+Analyse von Tierbewegungen – Viehzucht
+
+Anderson (2007):
+“every conventional fence
+that I have ever built has
+been in the wrong place the
+next year”
+
+virtuelle Z¨aune
+
+Vieh wird durch
+Stimuli (Schall und
+elektrische Impulse)
+auf Weide gehalten.
+
+Video:
+www.youtube.com/watch?feature=player_embedded&v=JbFhxT3Surc
+
+Analyse von Tierbewegungen – Viehzucht
+
+virtuelle Z¨aune
+
+Vorteile:
+
+virtuelle Z¨aune sind ﬂexibler
+– gleichm¨aßiges Abweiden und tempor¨arer Schutz
+
+ausgew¨ahlter Bereiche m¨oglich
+
+– mehrere Viehbesitzer k¨onnen sich einen Fl¨achenpool f¨ur
+
+ihre Herden teilen
+
+Steuerung der Herde aus der Ferne m¨oglich
+
+Analyse von Tierbewegungen – Viehzucht
+
+virtuelle Z¨aune
+
+Vorteile:
+
+virtuelle Z¨aune sind ﬂexibler
+– gleichm¨aßiges Abweiden und tempor¨arer Schutz
+
+ausgew¨ahlter Bereiche m¨oglich
+
+– mehrere Viehbesitzer k¨onnen sich einen Fl¨achenpool f¨ur
+
+ihre Herden teilen
+
+Steuerung der Herde aus der Ferne m¨oglich
+
+Nachteile:
+
+virtueller Zaun ist von Menschen nicht wahrnehmbar
+keine absolute Garantie f¨ur Wirksamkeit der Umz¨aunung
+K¨uhe reagieren unterschiedlich auf Stimuli → Eingrenzung
+ist unscharf
+Energieversorgung (insbesondere f¨ur GPS) stellt Problem dar
+
+Bewegungsanalyse f¨ur Menschen
+
+Detektierung verd¨achtiger Personen
+Analyse von Einkaufsverhalten
+Analyse von Verhalten bei Massenpanik
+Verkehrsplanung
+Generierung von Routenvorschl¨agen
+Analyse von Spielabl¨aufen im Manschaftssport
+Management von Fahrzeugﬂotten
+
+Bewegungsanalyse f¨ur Menschen
+
+Detektierung verd¨achtiger Personen
+Analyse von Einkaufsverhalten
+Analyse von Verhalten bei Massenpanik
+Verkehrsplanung
+Generierung von Routenvorschl¨agen
+Analyse von Spielabl¨aufen im Manschaftssport
+Management von Fahrzeugﬂotten
+
+Beispiel
+T-Drive: Driving Directions based on Taxi Traces
+Grundlage: 6 Monate, GPS-Tracks von 30.000
+Taxis in Peking, 855 Mio Punkte
+durchschnittliche Ersparnis: 5 Minuten pro Trip
+(durchschnittliche L¨ange 30 Minuten)
+
+http://research.microsoft.com/en-us/projects/tdrive/
+
+Bewegungsanalyse f¨ur Menschen
+
+Detektierung verd¨achtiger Personen
+Analyse von Einkaufsverhalten
+Analyse von Verhalten bei Massenpanik
+Verkehrsplanung
+Generierung von Routenvorschl¨agen
+Analyse von Spielabl¨aufen im Manschaftssport
+Management von Fahrzeugﬂotten
+
+http://www.sportal.de/, 27.6.2011
+
+Bewegungsanalyse f¨ur Menschen
+
+Detektierung verd¨achtiger Personen
+Analyse von Einkaufsverhalten
+Analyse von Verhalten bei Massenpanik
+Verkehrsplanung
+Generierung von Routenvorschl¨agen
+Analyse von Spielabl¨aufen im Manschaftssport
+Management von Fahrzeugﬂotten
+
+www.fleetilla.com/
+
+Bewegungsmuster von Gruppen
+
+Viele Fragen beziehen sich auf eine Menge von Trajektorien:
+
+Welcher Wolf in einem Rudel ist das
+Alphatier?
+
+Bewegungsmuster von Gruppen
+
+Viele Fragen beziehen sich auf eine Menge von Trajektorien:
+
+Welcher Wolf in einem Rudel ist das
+Alphatier?
+
+Gibt es ein Anzeichen von Schwarmintelligenz
+in einer Bewegungssimulation mit mehreren
+Agenten?
+
+Bewegungsmuster von Gruppen
+
+Viele Fragen beziehen sich auf eine Menge von Trajektorien:
+
+Welcher Wolf in einem Rudel ist das
+Alphatier?
+
+Gibt es ein Anzeichen von Schwarmintelligenz
+in einer Bewegungssimulation mit mehreren
+Agenten?
+
+Welche Fußballmannschaft hat die beste
+Viererabwehrkette?
+
+Bewegungsmuster von Gruppen
+
+Viele Fragen beziehen sich auf eine Menge von Trajektorien:
+
+Welcher Wolf in einem Rudel ist das
+Alphatier?
+
+Gibt es ein Anzeichen von Schwarmintelligenz
+in einer Bewegungssimulation mit mehreren
+Agenten?
+
+Welche Fußballmannschaft hat die beste
+Viererabwehrkette?
+
+Welchen Verlauf wird ein Hurricane in der
+Zukunft wahrscheinlich nehmen, gegeben
+die Verl¨aufe fr¨uherer Hurricanes?
+
+Detektierung von Bewegungsmustern
+
+Patrick Laube, Marc van Kreveld, Stephan Imfeld:
+Finding REMO – Detecting Relative Motion Patterns in
+Geospatial Lifelines.
+Developments in Spatial Data Handling 2005, Seiten 201–215
+
+Detektierung von Bewegungsmustern
+
+Patrick Laube, Marc van Kreveld, Stephan Imfeld:
+Finding REMO – Detecting Relative Motion Patterns in
+Geospatial Lifelines.
+Developments in Spatial Data Handling 2005, Seiten 201–215
+
+Einfache Bewegungsmuster
+
+Konstanz (constance)
+Ein Objekt beh¨alt Geschwindigkeit und/oder
+Richtung ¨uber l¨angeren Zeitraum bei
+Gleichzeitigkeit (concurrence)
+Mehrere Objekte haben zu einem Zeitpunkt gleiche
+Geschwindigkeit und/oder gleiche Bewegungsrichtung
+
+Trendsetter (trend-setter)
+auf Konstanz folgt Gleichzeitigkeit
+
+(Laube et al. 2005)
+
+Einfache Bewegungsmuster
+
+Konstanz (constance)
+Ein Objekt beh¨alt Geschwindigkeit und/oder
+Richtung ¨uber l¨angeren Zeitraum bei
+Gleichzeitigkeit (concurrence)
+Mehrere Objekte haben zu einem Zeitpunkt gleiche
+Geschwindigkeit und/oder gleiche Bewegungsrichtung
+
+Trendsetter (trend-setter)
+auf Konstanz folgt Gleichzeitigkeit
+
+(Laube et al. 2005)
+
+REMO-Matrix
+
+Einfache Bewegungsmuster
+
+Konstanz (constance)
+Gleichzeitigkeit (concurrence)
+Trendsetter (trend-setter)
+→ nur interessant, wenn Objekte (relativ oder absolut) nah
+
+zueinander sind
+
+Einfache Bewegungsmuster
+
+Kriterien f¨ur r¨aumliche N¨ahe
+
+Summe der Distanzen zu gemeinsamem Zentrum
+darf Schwellenwert nich ¨uberschreiten
+
+Einfache Bewegungsmuster
+
+Kriterien f¨ur r¨aumliche N¨ahe
+
+Summe der Distanzen zu gemeinsamem Zentrum
+darf Schwellenwert nich ¨uberschreiten
+
+Objekte m¨ussen ¨uber nat¨urliche Nachbarschaft
+(Delaunay Triangulierung) verbunden sein.
+
+Einfache Bewegungsmuster
+
+Kriterien f¨ur r¨aumliche N¨ahe
+
+Summe der Distanzen zu gemeinsamem Zentrum
+darf Schwellenwert nich ¨uberschreiten
+
+Objekte m¨ussen ¨uber nat¨urliche Nachbarschaft
+(Delaunay Triangulierung) verbunden sein.
+
+Gr¨oße von
+– Bounding Box,
+– kleinstem einschließenden Kreis oder
+– kleinster einschließender Ellipse
+darf Schwellenwert nicht ¨uberschreiten.
+
+Einfache Bewegungsmuster
+
+Kriterien f¨ur r¨aumliche N¨ahe
+
+Summe der Distanzen zu gemeinsamem Zentrum
+darf Schwellenwert nich ¨uberschreiten
+
+Objekte m¨ussen ¨uber nat¨urliche Nachbarschaft
+(Delaunay Triangulierung) verbunden sein.
+
+Gr¨oße von
+– Bounding Box,
+– kleinstem einschließenden Kreis oder
+– kleinster einschließender Ellipse
+darf Schwellenwert nicht ¨uberschreiten.
+
+L¨ange des Randes der konvexen H¨ulle darf
+Schwellenwert nicht ¨uberschreiten
+
+Komplexere Bewegungsmuster
+
+r¨aumliches Kriterium erf¨ullt?
+
+ja
+
+nein
+
+Spur (track):
+Konstanz +
+r¨aumliches Kriterium
+Schwarm (ﬂock):
+Gleichzeitigkeit +
+r¨aumliches Kriterium
+F¨uhrung (leadership):
+Trendsetter +
+r¨aumliches Kriterium
+
+(Laube et al. 2005)
+
+Komplexere Bewegungsmuster
+
+Konvergenz (convergence)
+Zu einem bestimmten Zeitpunkt t
+streben mehrere Objekte auf
+denselben Punkt p zu.
+
+Komplexere Bewegungsmuster
+
+Konvergenz (convergence)
+Zu einem bestimmten Zeitpunkt t
+streben mehrere Objekte auf
+denselben Punkt p zu.
+
+Komplexere Bewegungsmuster
+
+Konvergenz (convergence)
+Zu einem bestimmten Zeitpunkt t
+streben mehrere Objekte auf
+denselben Punkt p zu.
+
+Zusammentreﬀen (encounter)
+Spezialfall von Konvergenz:
+Extrapoliert man die Bewegungen zum Zeitpunkt t
+mit den vorliegenden Geschwindigkeiten,
+treﬀen die Objekte zeitgleich in p ein.
+
+Komplexere Bewegungsmuster
+
+Konvergenz (convergence)
+Zu einem bestimmten Zeitpunkt t
+streben mehrere Objekte auf
+denselben Punkt p zu.
+
+Zusammentreﬀen (encounter)
+Spezialfall von Konvergenz:
+Extrapoliert man die Bewegungen zum Zeitpunkt t
+mit den vorliegenden Geschwindigkeiten,
+treﬀen die Objekte zeitgleich in p ein.
+
+Divergenz (divergence) und Trennung (breakup) analog zu
+Konvergenz und Zusammentreﬀen
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+r¨aumliches Kriterium:
+Gr¨oße des kleinsten einschließenden Kreises darf
+Schwellenwert nicht ¨uberschreiten
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+r¨aumliches Kriterium:
+Gr¨oße des kleinsten einschließenden Kreises darf
+Schwellenwert nicht ¨uberschreiten
+
+Spur (track):
+Konstanz + r¨aumliches Kriterium
+1. Finde jede Konstanz
+
+konstante Richtung
+
+konstante Geschwindigkeit
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+r¨aumliches Kriterium:
+Gr¨oße des kleinsten einschließenden Kreises darf
+Schwellenwert nicht ¨uberschreiten
+
+Spur (track):
+Konstanz + r¨aumliches Kriterium
+1. Finde jede Konstanz
+
+konstante Richtung
+
+konstante Geschwindigkeit
+
+2. F¨ur jede Konstanz: Teste, ob es Kreis gibt, der alle Punkte
+
+enth¨alt und klein genug ist.
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+r¨aumliches Kriterium:
+Gr¨oße des kleinsten einschließenden Kreises darf
+Schwellenwert nicht ¨uberschreiten
+
+Spur (track):
+Konstanz + r¨aumliches Kriterium
+1. Finde jede Konstanz
+
+konstante Richtung
+
+konstante Geschwindigkeit
+
+2. F¨ur jede Konstanz: Teste, ob es Kreis gibt, der alle Punkte
+
+enth¨alt und klein genug ist.
+
+→ inkrementeller Algorithmus nach de Berg et al. (2008):
+
+erwartete Laufzeit O(n) f¨ur n Punkte
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+Grundidee:
+r¨aumliches Kriterium:
+F¨uge Punkte in zuf¨alliger Reihenfolge in eine Menge ein und halte
+Gr¨oße des kleinsten einschließenden Kreises darf
+den kleinsten umschließenden Kreis aufrecht.
+Schwellenwert nicht ¨uberschreiten
+
+Spur (track):
+Konstanz + r¨aumliches Kriterium
+1. Finde jede Konstanz
+
+konstante Richtung
+
+konstante Geschwindigkeit
+
+2. F¨ur jede Konstanz: Teste, ob es Kreis gibt, der alle Punkte
+
+enth¨alt und klein genug ist.
+
+→ inkrementeller Algorithmus nach de Berg et al. (2008):
+
+erwartete Laufzeit O(n) f¨ur n Punkte
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+Grundidee:
+r¨aumliches Kriterium:
+F¨uge Punkte in zuf¨alliger Reihenfolge in eine Menge ein und halte
+Gr¨oße des kleinsten einschließenden Kreises darf
+den kleinsten umschließenden Kreis aufrecht.
+Schwellenwert nicht ¨uberschreiten
+
+Spur (track):
+Konstanz + r¨aumliches Kriterium
+1. Finde jede Konstanz
+Fall a: Neuer Punkt liegt im bisherigen Kreis → keine
+Fall b: Neuer Punkt p liegt außerhalb → neuer Kreis l¨auft
+2. F¨ur jede Konstanz: Teste, ob es Kreis gibt, der alle Punkte
+
+konstante Richtung
+¨Anderung n¨otig
+
+konstante Geschwindigkeit
+
+durch p (und 1 oder 2 alte Punkte)
+
+enth¨alt und klein genug ist.
+
+→ inkrementeller Algorithmus nach de Berg et al. (2008):
+
+erwartete Laufzeit O(n) f¨ur n Punkte
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+Grundidee:
+r¨aumliches Kriterium:
+F¨uge Punkte in zuf¨alliger Reihenfolge in eine Menge ein und halte
+Gr¨oße des kleinsten einschließenden Kreises darf
+den kleinsten umschließenden Kreis aufrecht.
+Schwellenwert nicht ¨uberschreiten
+
+Fall b ist teuer, tritt aber eher selten ein!
+
+Spur (track):
+Konstanz + r¨aumliches Kriterium
+1. Finde jede Konstanz
+Fall a: Neuer Punkt liegt im bisherigen Kreis → keine
+Fall b: Neuer Punkt p liegt außerhalb → neuer Kreis l¨auft
+2. F¨ur jede Konstanz: Teste, ob es Kreis gibt, der alle Punkte
+
+konstante Richtung
+¨Anderung n¨otig
+
+konstante Geschwindigkeit
+
+durch p (und 1 oder 2 alte Punkte)
+
+enth¨alt und klein genug ist.
+
+→ inkrementeller Algorithmus nach de Berg et al. (2008):
+
+erwartete Laufzeit O(n) f¨ur n Punkte
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+r¨aumliches Kriterium:
+Gr¨oße des kleinsten einschließenden Kreises darf
+Schwellenwert nicht ¨uberschreiten
+
+Schwarm (ﬂock):
+Gleichzeitigkeit + r¨aumliches Kriterium
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+r¨aumliches Kriterium:
+Gr¨oße des kleinsten einschließenden Kreises darf
+Schwellenwert nicht ¨uberschreiten
+
+Schwarm (ﬂock):
+Gleichzeitigkeit + r¨aumliches Kriterium
+1. F¨ur jeden Zeitpunkt t und jede der acht Richtungen r :
+
+Finde alle Objekte mit Richtung r zu Zeit t.
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+r¨aumliches Kriterium:
+Gr¨oße des kleinsten einschließenden Kreises darf
+Schwellenwert nicht ¨uberschreiten
+
+Schwarm (ﬂock):
+Gleichzeitigkeit + r¨aumliches Kriterium
+1. F¨ur jeden Zeitpunkt t und jede der acht Richtungen r :
+
+Finde alle Objekte mit Richtung r zu Zeit t.
+
+2. Teste, ob es K Punkte gibt, die innerhalb eines Kreises mit
+
+Radius R liegen.
+→ Voronoi Diagramm der Ordnung K
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Bekannt:
+einfache Voronoi-Diagramme
+(= Voronoi-Diagramme der Ordnung 1)
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Bekannt:
+einfache Voronoi-Diagramme
+(= Voronoi-Diagramme der Ordnung 1)
+
+n Eingabepunkte
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Bekannt:
+einfache Voronoi-Diagramme
+(= Voronoi-Diagramme der Ordnung 1)
+
+n Eingabepunkte
+f¨ur jeden Punkt der Ebene:
+Welches ist der n¨achste
+Eingabepunkt?
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Bekannt:
+einfache Voronoi-Diagramme
+(= Voronoi-Diagramme der Ordnung 1)
+
+n Eingabepunkte
+f¨ur jeden Punkt der Ebene:
+Welches ist der n¨achste
+Eingabepunkt?
+
+Neu (?):
+Voronoi-Diagramme der Ordnung K
+
+n Eingabepunkte
+f¨ur jeden Punkt der Ebene:
+Welches sind die K n¨achsten
+Eingabepunkte?
+→ eindeutige Antwort innerhalb einer Zelle
+
+K = 2
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Schwarm (ﬂock):
+Gleichzeitigkeit + r¨aumliches Kriterium
+1. F¨ur jeden Zeitpunkt t und jede der acht Richtungen r :
+
+Finde alle Objekte mit Richtung r zu Zeit t.
+
+2. Teste, ob es K Punkte gibt, die innerhalb eines Kreises mit
+
+Radius R liegen.
+
+→ Voronoi Diagramm der Ordnung K
+
+F¨ur jede Zelle:
+Konstruiere kleinsten umschließenden
+Kreis der zugeh¨origen Eingabepunkte und
+teste, ob Radius hinreichend klein ist.
+Gesamtlaufzeit: O(nT K 2 + nT log n); T = Anzahl Zeitpunkte
+
+K = 2
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+F¨uhrung (leadership):
+Gleichzeitigkeit + r¨aumliches Kriterium
+1. F¨ur jeden Zeitpunkt t und jede der acht Richtungen r :
+
+Finde alle Objekte mit Richtung r zu Zeit t.
+
+2. Teste, ob es K Punkte gibt, die innerhalb eines Kreises mit
+
+Radius R liegen.
+
+→ Voronoi Diagramm der Ordnung K
+
+F¨ur jede Zelle:
+Konstruiere kleinsten umschließenden
+Kreis der zugeh¨origen Eingabepunkte und
+teste, ob Radius hinreichend klein ist.
+Gesamtlaufzeit: O(nT K 2 + nT log n); T = Anzahl Zeitpunkte
+
+K = 2
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+F¨uhrung (leadership):
+Gleichzeitigkeit + r¨aumliches Kriterium
+1. F¨ur jeden Zeitpunkt t und jede der acht Richtungen r :
+
+Finde alle Objekte mit Richtung r zu Zeit t.
+
+2. Teste, ob es K Punkte gibt, die innerhalb eines Kreises mit
+
+Radius R liegen.
+
+→ Voronoi Diagramm der Ordnung K
+
+mit ≥ 1 Objekt, das zuvor
+F¨ur jede Zelle:
+gleiche Richtung hatte
+Konstruiere kleinsten umschließenden
+Kreis der zugeh¨origen Eingabepunkte und
+teste, ob Radius hinreichend klein ist.
+Gesamtlaufzeit: O(nT K 2 + nT log n); T = Anzahl Zeitpunkte
+
+K = 2
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+Zu einem bestimmten Zeitpunkt t
+streben mehrere Objekte auf
+denselben Punkt p zu.
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+Zu einem bestimmten Zeitpunkt t
+streben mehrere Objekte auf
+denselben Punkt p zu.
+
+Kreis R mit gegebenem Radius r
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+1. Selektiere einen Zeitpunkt
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+1. Selektiere einen Zeitpunkt
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+1. Selektiere einen Zeitpunkt
+2. Konstruiere Strahl (Breite 2r )
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+1. Selektiere einen Zeitpunkt
+2. Konstruiere Strahl (Breite 2r )
+3. Berechne Arrangement
+
+→ Sweep-Line-Algorithmus
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+1. Selektiere einen Zeitpunkt
+2. Konstruiere Strahl (Breite 2r )
+3. Berechne Arrangement
+
+→ Sweep-Line-Algorithmus
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+1. Selektiere einen Zeitpunkt
+2. Konstruiere Strahl (Breite 2r )
+3. Berechne Arrangement
+
+→ Sweep-Line-Algorithmus
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+1. Selektiere einen Zeitpunkt
+2. Konstruiere Strahl (Breite 2r )
+3. Berechne Arrangement
+
+→ Sweep-Line-Algorithmus
+→ Breitensuche
+
+4. Suche tiefste Zelle im Arrangement
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+1. Selektiere einen Zeitpunkt
+2. Konstruiere Strahl (Breite 2r )
+3. Berechne Arrangement
+
+→ Sweep-Line-Algorithmus
+→ Breitensuche
+
+4. Suche tiefste Zelle im Arrangement
+
+Laufzeit (pro Zeitschritt): O(n2)
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Konvergenz (convergence):
+1. Selektiere einen Zeitpunkt
+2. Konstruiere Strahl (Breite 2r )
+3. Berechne Arrangement
+
+→ Sweep-Line-Algorithmus
+→ Breitensuche
+
+4. Suche tiefste Zelle im Arrangement
+
+Laufzeit (pro Zeitschritt): O(n2)
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Zusammentreﬀen (encounter):
+
+Zeit
+
+r¨aumliche Abstraktion: Zeit als dritte
+Dimension
+
+Y
+
+X
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Zusammentreﬀen (encounter):
+
+Zeit
+
+r¨aumliche Abstraktion: Zeit als dritte
+Dimension
+Bei Extrapolation m¨ussen Strahlen
+horizontale Kreisscheibe mit
+vorgegebenem Radius durchstoßen
+
+Y
+
+X
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+Zusammentreﬀen (encounter):
+
+Zeit
+
+r¨aumliche Abstraktion: Zeit als dritte
+Dimension
+Bei Extrapolation m¨ussen Strahlen
+horizontale Kreisscheibe mit
+vorgegebenem Radius durchstoßen
+
+Y
+
+X
+
+Laufzeit (pro Zeitschritt): O(n4)
+
+Algorithmen f¨ur komplexere Bewegungsmuster
+
+¨Uberblick
+
+Muster
+Spur (track)
+
+Laufzeit
+O(T n)
+
+Schwarm (ﬂock) O(nT K 2 + nT log n)
+F¨uhrung (leadership) O(nT K 2 + nT log n)
+
+Konvergenz (convergence)
+Zusammentreﬀen (encounter)
+
+O(T n2)
+O(T n4)
+
+T = Anzahl der Zeitschritte
+n = Anzahl der Objekte
+K = minimale Anzahl an Objekten in Muster
+
+

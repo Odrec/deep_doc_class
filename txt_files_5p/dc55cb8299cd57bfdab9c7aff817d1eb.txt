@@ -1,0 +1,730 @@
+Biodivers Conserv
+DOI 10.1007/s10531-010-9957-z
+
+O R I G I N A L P A P E R
+
+Monitoring population and gene pool dynamics
+of the annual species Capsella bursa-pastoris
+(Brassicaceae): a review of relevant species traits
+and the initiation of a long-term genetic monitoring
+programme
+
+Barbara Neuffer • Karl-Georg Bernhardt • Herbert Hurka •
+Matthias Kropf
+
+Received: 27 August 2009 / Accepted: 22 November 2010
+Ó Springer Science+Business Media B.V. 2010
+
+Abstract Species that colonise habitats on an annual basis are important for studying and
+understanding evolutionary changes and adaptations in the course of environmental shifts,
+caused, for instance, by global change phenomena. These species are characterised by a
+weedy ecology enabling them to react fast to environmental changes. As a model species,
+we selected Capsella bursa-pastoris (Brassicaceae, Shepherd’s Purse), which is annual to
+biennial, predominantly selﬁng and closely related to the genetic model plant Arabidopsis
+thaliana. Differentiation and adaptation in C. bursa-pastoris are shortly reviewed. Based
+on this knowledge, two Botanical Gardens are currently arranging long-term sites char-
+acterised by annual ploughing for the genetic monitoring of C. bursa-pastoris. Demo-
+graphic parameters will be monitored as well, i.e. different life-cycle phases such as
+ﬂowering, fruiting, and the soil seed bank. Furthermore, seeds of at least 20 individuals
+will be sampled per year. Isozyme analyses, ﬂow cytometry, AFLPs, SNPs as well as
+microsatellites will be utilised to characterise changes in genetic diversity patterns over
+time. In general, the objective of our genetic monitoring of C. bursa-pastoris is to address
+the following questions: In the light of future research, our objectives are to study whether
+the genetic structure and diversity of C. bursa-pastoris alter over time, whether a possible
+invasion of ecotypes/genotypes of Sheperd’s purse is traceable using genetic markers, and
+whether it is possible to relate variation in reproductive patterns to respective candidate
+genes, which may be useful for monitoring.
+
+B. Neuffer  H. Hurka
+Institute of Botany, University of Osnabrueck, Barbarastr. 11, 49076 Osnabrueck, Germany
+
+K.-G. Bernhardt (&)
+Institute of Botany, University of Natural Resources and Applied Life Sciences,
+Gregor Mendel-Str. 33, 1180 Vienna, Austria
+e-mail: karl-georg.bernhardt@boku.ac.at
+
+M. Kropf
+Institute of Integrative Nature Conservation Research, University of Natural Resources and Applied
+Life Sciences, Gregor Mendel-Str. 33, 1180 Vienna, Austria
+
+123
+
+Keywords Colonising species  Annual weeds  Global change  Genetic monitoring 
+Ecotypic differentiation  Flowering time  Molecular markers  Permanent plots
+
+Biodivers Conserv
+
+Abbreviations
+AFLP Ampliﬁed fragment length polymorphism
+a.s.l.
+SC
+SI
+SNP
+
+Above sea level
+Self-compatible
+Self-incompatible
+Single nucleotide polymorphism
+
+Introduction
+
+Colonising species play an important role in evolutionary studies because they provide
+convenient experimental material and often exhibit rapid evolutionary change (see for
+instance Baker 1974; McNeill 1976; Brown and Marshall 1981; Silvertown and Charles-
+worth 2007). In particular, ruderal plants and agricultural weeds are characterised by high
+phenotypic plasticity and genetic adaptability, optimally adapted to open disturbed habitats
+(Adahl et al. 2006). As such, these plants are good target and model species for analysing
+adaptations to changing environmental conditions (cf. Hurka and Neuffer 1991; Pigliucci
+and Noah 1998).
+
+Consequences of recent climatic changes on plant distributions and on natural systems
+in general, are already recognisable worldwide (Parmesan and Yohe 2003; Root et al.
+2003; Walther 2008). Many plants of predominantly Mediterranean to sub-Mediterranean
+origin, most notably agricultural weeds (cf. Essl and Rabitsch 2002), have expanded in
+like Crambe hispanica
+distribution range and are immigrating into Central Europe,
+(Bernhardt and Laubhann 2006), Diplotaxis erucoides and Capsella rubella (Bernhardt
+et al. 2008) into Austria. Also, Central European winter annuals have already been
+observed forming a second generation within one year, and summer annuals persist
+throughout the winter until the next vegetation season, or the differentiation between
+summer and winter annuals has disappeared completely, at
+locally/regionally
+(Bernhardt, personal observation).
+
+least
+
+To analyze both, (i) the spreading of plant species and/or their ecotypes/genotypes in
+relation to ongoing environmental change, and (ii) the impact of this colonisation process
+on the gene pool and population structure, long-term biomonitoring experiments are highly
+desirable. Here, we propose species of the genus Capsella (Brassicaceae) as appropriate
+model plants, and outline adequate experiments. Capsella bursa-pastoris is listed as one of
+the most common plants on earth (Coquillat 1951; Zhou et al. 2001), and biosystematic
+aspects of Capsella species are well studied, as will be shown below.
+
+Our study questions include the following:
+
+(1) How do the genetic structure and diversity of C. bursa-pastoris alter over time and to
+
+(2)
+
+what extent is such a change related to ecological factors?
+Is a possible invasion of ecotypes/genotypes of C. bursa-pastoris preferring warmer
+climate conditions, and/or of its close relative C. rubella traceable using genetic
+markers?
+
+123
+
+Biodivers Conserv
+
+(3) Can we relate variation in reproductive patterns to respective candidate genes which
+
+may then be used for monitoring?
+
+Capsella as a model for long-term monitoring experiments
+
+The genus Capsella
+
+Capsella Medikus is a small genus within the mustard family (Brassicaceae) closely
+related to the genetic model plant Arabidopsis (DC.) Heynh. (Franzke et al. 2009; German
+et al. 2009). Capsella comprises a few species but no clear cut species concept exists. For
+our present purposes we have adopted a rather conservative view and recognize three
+species which differ in ploidy level, breeding system, and distribution range. Capsella
+grandiﬂora (Fauche´ and Chaub.) Boiss. and C. rubella Reut. are both diploids with
+2n = 2x = 16 (Fig. 1, photos upper part). C. grandiﬂora is an obligate outbreeder; its
+genetically based self-incompatibility system (SI) has been recently characterized at the
+molecular level (Paetsch et al. 2006). The distribution range of C. grandiﬂora is restricted
+to Albania and western Greece, and additionally the species has been locally introduced to
+northern Italy. The other diploid species, Capsella rubella, is self-compatible (SC) and a
+phylogenetically young derivative of C. grandiﬂora in which the SI system broke down
+(Foxe et al. 2009; Guo et al. 2009). Coinciding with the transition from SI to SC, C. rubella
+widened its range from the European Mediterranean to nearly all Mediterranean climatic
+regions worldwide (Fig. 1 upper part).
+
+The tetraploid Capsella bursa-pastoris (L.) Medik. (2n = 4x = 32) is predominantly
+inbreeding and characterized by greatest colonising ability (Hurka and Neuffer 1997;
+Hurka et al. 2003). It is one of the most wide-spread ﬂowering plants on earth (Coquillat
+1951) and is regarded as the second most common weed worldwide (Zhou et al. 2001). It
+originated in Eurasia and spread to the New World and Australasia/New Zealand only in
+historic times with European colonists (Fig. 1, lower part, greatly supported by mucilag-
+inous seeds––dispersal via myxospermy, photos lower part).
+
+The occurrence and habitat range of the three species overlap within the respective
+species speciﬁc distribution areas, and they may even occur together in one and the same
+population. Natural hybrids have been observed between C. grandiﬂora and C. rubella, and
+between C. rubella and C. bursa-pastoris. The latter hybrid, described as C. gracilis Green
+in the literature, is triploid and sterile but backcrosses and introgression of characters from
+one species into the other are possible (Slotte et al. 2006, 2008).
+
+Recently, range expansion of C. rubella towards the north has been observed (Jalas
+et al. 1996; Bernhardt et al. 2008). In Germany records of this species are consistently
+increasing in number (e.g., Bomble, personel communication; Hurka unpublished).
+However, the determination of C. rubella is critical and has to be veriﬁed by ploidy levels
+or isozyme analyses because all morphological characters of C. rubella are within the
+phenotypic variability of C. bursa-pastoris. Nevertheless, given this recent range expan-
+sion, C. rubella may act as a biological key indicator for climate change.
+
+Differentiation and adaptation in Capsella bursa-pastoris
+
+It has been shown that the life history traits of C. bursa-pastoris exhibit a complex variation
+pattern characterised by a multitude of interacting factors, and therefore, patterns of
+
+123
+
+Biodivers Conserv
+
+Fig. 1 Distribution ranges of the three Capsella species. Inset upper part: C. grandiﬂora is characterised
+by large petals, C. rubella by small petals. Inset lower part: C. bursa-pastoris is characterised by the ability
+of long-distance dispersal by myxospermy as an adaptation to epizoochory and has successfully colonised
+nearly all regions of the world in historical times
+
+variation in the wild may often be patchy and random. The overall phenotypic variation
+revealed macro geographic patterns (Fig. 2, Table 1) superimposed by patchiness
+depending partly on microhabitat conditions (e.g., ﬁeld versus trampled habitats, Neuffer
+and Meyer-Walf 1996). These micro geographic patterns were often reﬂected in sharp
+differentiation among some local populations within a particular geographic region (Fig. 3).
+However, climatic, edaphic, biotic, and historical factors strongly interplay with each other
+and variation can be inﬂuenced randomly by genetic drift, which plays an important role in
+small local populations. Population variability of C. bursa-pastoris may also be inﬂuenced
+by the soil seed bank and may depend on the disturbance of the habitat (Bosbach et al. 1982;
+Hurka and Haase 1982; Hurka and Neuffer 1991). Nevertheless, C. bursa-pastoris displays
+ecotypic variation as reviewed by Hurka and Neuffer (1997) and Table 1.
+
+For short-lived colonising plants, germination and the start of ﬂowering are important
+ﬁtness traits. In cases of bad timing of germination and ﬂowering the individual plant risks
+death or at least reproduction failure.
+
+123
+
+Biodivers Conserv
+
+Fig. 2 Under various growth conditions early ﬂowering provenances from Scandinavia (grey bars) and late
+ﬂowering provenances from the Alps (white bars) clearly demonstrate the ﬂowering ecotypic differentiation
+on a macro geographic scale. Experimental design: average start of ﬂowering under various temperature and
+day length conditions in growth chambers and under natural conditions in the ﬁeld (F common garden ﬁeld
+experiments in the Botanical Garden in Mu¨nster, Germany, T transplantation experiment with sister plants
+in, CH Schynige Platte, Switzerland, 2000 m a.s.l., and D Osnabru¨ck, Germany, 90 m a.s.l.). Numbers of
+individuals tested are given in brackets. For detailed analyses see Neuffer and Hurka (1986); Neuffer (1990),
+and Neuffer and Bartelheim (1989)
+
+Table 1 General differentiation of C. bursa-pastoris ﬂowering ecotypes under ﬁeld conditions in
+Osnabrueck Botanical Gardens in relation to their geographic origin at a large scale
+
+Geographic origin
+
+Flowering ecotype
+
+Scandinavia
+
+Alps/valley
+
+Very early to middle (Neuffer and Hurka 1986)
+
+Early (Neuffer 1990; Neuffer and Bartelheim 1989)
+
+Alps/mountain to alpine regions
+
+Late to biennial in altitudinal transect (Neuffer 1990;
+
+Central Europe
+
+Spain/valley
+
+Neuffer and Bartelheim 1989)
+
+Early to middle (agro-ecotypes)
+
+(Neuffer and Meyer-Walf 1996)
+
+Early (Neuffer and Hoffrogge 2000)
+
+Spain/mountains (not Pyrenees)
+
+Early (Neuffer and Hoffrogge 2000)
+
+Spain/Pyrenees
+
+Late (Neuffer and Hoffrogge 2000)
+
+North America/California/Central Valley
+
+Early (Neuffer and Hurka 1999)
+
+North America/California/mountains
+
+Late (Neuffer and Hurka 1999)
+
+Australia/southeast
+
+South America/subtropical
+
+South America/Patagonia
+
+Early, unpublished data
+
+Early (Neuffer et al. 1999)
+
+Early to middle (Neuffer et al. 1999)
+
+Latitudinal transect through Europe
+
+Quadratic correlation (Neuffer 2011, Fig. 3)
+
+123
+
+Biodivers Conserv
+
+Fig. 3 In two parallel experiments with provenances representing an European north–south-transect the
+relationship between the start of ﬂowering and geographic latitude is shown by a quadratic curve ﬁtting.
+n = number of individuals tested in the experimental ﬁeld of the Botanical Garden in Osnabru¨ck, Germany;
+P \ 0.001 in both cases (modiﬁed after Neuffer 2011, modiﬁed after Encarta Weltatlas 2001, Microsoft)
+
+The germination strategy of C. bursa-pastoris has been intensively studied (Neuffer and
+Hurka 1988; Baskin and Baskin 1989; Baskin et al. 2004). Some populations revealed
+pronounced temperature optima for germination capacity; others germinated equally well
+over the entire temperature range. This indicates genetic heterogeneity between and also
+within populations. However, no correlation between germinability and any environmental
+pattern has been established so far (Neuffer and Hurka 1988; Neuffer and Bartelheim 1989;
+Hurka and Neuffer 1991). Our data suggest that germination of C. bursa-pastoris in the
+ﬁeld is mainly regulated by factors contributing to the inception and breaking of dormancy,
+which depend on preharvest (maternal effects, Neuffer and Koch 1996) and postharvest
+conditions. Since dormancy inception and release is highly inﬂuenced by environmental
+factors, this appears to be a satisfactory way to regulate seedling emergence, in time and
+space, for Capsella, which occupies a wide range of soil types and climatic conditions and
+
+123
+
+Biodivers Conserv
+
+which has to cope with the unpredictability of its habitats. Such a strategy comes close to a
+‘‘general–purpose genotype’’. However, it would appear that endogenous yearly activity
+rhythms are also involved (Neuffer and Schultes 1990). In Fig. 4 the germination strategy
+over a period of one year is shown. Samples were sown every second week at 5°C (night)/
+25°C (day) and 9 h photoperiod in a growth chamber. Even under controlled conditions
+germination capacity showed obvious differences over the year which might point to an
+endogenous rhythm in connection with seed dormancy effects (see also Baskin and Baskin
+1989; Baskin et al. 2004). This may be one reason for the ‘‘intermittent germination’’
+strategy detected by Salisbury (1963) for Capsella.
+
+It appears from open-ﬁeld and growth chamber experiments that Capsella bursa-pas-
+toris displays intraspeciﬁc genetic variation in the time required before ﬂowering. Genetic
+
+Fig. 4 Germination capacity of
+four populations seeded in
+fourteen-day intervals over a
+whole year. % = percentage of
+germinated seeds. Each sowing
+has been replicated ﬁve times
+(black dots) with 50 seeds each of
+the cloned progeny of ﬁve
+different individuals of the
+population. Dashes show the
+arithmetical mean. Origin of
+populations: 83 Germany, 151
+Norway, 575 Switzerland, 716
+USA; seed material was stored at
+minus 20°C until sowing (after
+Neuffer and Schultes 1990)
+
+123
+
+Biodivers Conserv
+
+adaptations of certain traits to local ecological conditions were evident. Populations also
+varied in the amount and pattern of plasticity, and it appeared that phenotypic plasticity
+may also be controlled by selection. There is pronounced ecotypic variation in time to
+ﬂowering between ‘‘early’’ and ‘‘late’’ genotypes (summarized in Table 1).
+
+Flowering of C. bursa-pastoris is basically inﬂuenced by temperature conditions
+(Steinmeyer et al. 1985; Neuffer and Hurka 1986) and by day length (Hurka et al. 1976). It
+might be assumed that vernalisation sensitive ﬂowering time genes (e.g. FLC or FRI,
+Lempe et al. 2005; Shindo et al. 2006) are responsible for ecotypic differentiation in
+Capsella. The results of Slotte et al. (2007), however, showed that FLC is not as important
+for their Capsella data set as compared to A. thaliana (Lempe et al. 2005; Shindo et al.
+2006). Therefore, these authors concluded, ‘‘that genes involved in regulation of the cir-
+cadian clock, such as CCA1 and TOC1, are strong candidates for the evolution of adaptive
+ﬂowering time variation in C. bursa-pastoris’’.
+
+In Capsella, Linde et al. (2001) mapped a population created by crosses between an early
+and a late ﬂowering ecotype. 13 phenotypic characters were explained by 48 QTLs; three of
+them explaining the variability for the character ‘‘onset of ﬂowering’’. Ceplitis et al. (2007)
+repeated this experiment with AFLP markers instead of RAPDs and they were able to establish
+ﬂowering time genes known from the model plant A. thaliana (Fig. 5). All these mapped genes
+(GA1, LD6, FCA, FRI) are located on chromosome number IV in A. thaliana. However, in
+
+Fig. 5 Genetic map by Ceplitis et al. (2007), modiﬁed after Slotte (2007): AFLP-markers are indicated with
+an ‘‘E’’-preﬁx. Gene-based markers (ﬂowering time genes known from A. thaliana) are in boldface and
+marked with a circle; AFLP-markers close to ﬂowering QTLs are marked by arrows. Distances are in cM
+
+123
+
+Biodivers Conserv
+
+Capsella these genes were located on various linkage groups indicating chromosomal
+re-arrangements which are generally known in comparison of Arabidopsis lyrata and
+C. rubella (Koch and Kiefer 2005). Epigenetic effects may also be involved in ﬂowering time
+variation in Capsella as has been detected, for instance, in Arabidopsis (Shindo et al. 2006).
+
+Ongoing reciprocal transplantation experiments
+
+Recently, a reciprocal transplantation experiment with about 200 lines representing more
+than 20 provenances originated from across Europe has been established (Fig. 6). Utilised
+Capsella lines are characterised by a known isozyme multilocus genotype. Based on
+harvested seeds of sister material ripened under these different environmental conditions,
+conclusions on epigenetic or maternal effects inﬂuencing the ﬂowering behaviour will
+become possible.
+
+To get deeper insights into the adaptation strategy of a successful colonising taxon in a
+changing world, a long-term ﬁeld experiment at various sites is highly desirable. In two of
+the above-mentioned ﬁeld sites (see Fig. 6, Vienna and Osnabrueck) such experiments
+already started and scientists responsible for two more ﬁeld stations expressed their interest
+in this cooperation (Kuopio, Finland; Barnaul, Russia). Furthermore, our experiment will
+offer the opportunity to observe within-species shifts of ecotypes under speciﬁc regional
+conditions, which are so far largely neglected.
+
+Outline of monitoring experiments on permanent plots: phenotypic studies
+
+In Vienna and Osnabrueck we established a 10 9 10 m2 experimental ﬁeld inoculated with
+the 200 Capsella lines mentioned above. In Vienna, demographic parameters will be
+monitored, i.e. different life-cycle phases. Therefore, dates of ﬁrst ﬂowering and harvesting
+will be reported as well as later in the respective vegetation season, how many plants are still
+ﬂowering and/or fruiting. We will also include soil seed bank samples from the permanent
+plots in our analysis, as the seeds stored in the soil likely act as a source for (selected)
+speciﬁc above-ground genotypes (e.g., Cabin 1996; Manda´k et al. 2006). Seeds of 20
+individual plants will be harvested and subsequently the plots will be ploughed once a year
+to create open soils. The seed material will be stored at minus 20°C (equipment is available
+in Osnabrueck and Vienna). For subsequent genetic analyses plants will be grown from the
+seeds harvested under standardised conditions (in greenhouses) and speed of germination
+and times of the ﬁrst ﬂowering will be reported. As the species under study are characterised
+by a high selﬁng rate (between 80 and 99%), seed material therefore mirrors on one hand the
+respective origin of genotypes and on the other hand the degree of outcrossing.
+
+Outline of monitoring experiments on permanent plots: genetic studies
+
+For the genetic characterisation during the long-term monitoring studies we would like to
+perform at least three different studies:
+
+At ﬁrst, detection and discrimination of diploid C. rubella individuals from tetraploid
+C. bursa-pastoris individuals will be done using ﬂow cytometry (Dolezel et al. 2007)
+utilising Petroselinum crispum (Apiaceae) characterised by a DNA content of 4.46 pg
+(cf. Yokoya et al. 2000) as an internal standard (Fig. 7).
+
+123
+
+Biodivers Conserv
+
+Fig. 6 Reciprocal transplantation experimental ﬁelds (in 2009) with sister material of more than 20 European
+provenances. Two of these ﬁelds will already form part of the ten years genetic monitoring experiment. Above
+Osnabrueck, Germany, middle left Kuopio, Finland, middle right South Siberian Botanical Garden Barnaul,
+Russia, below left BOKU Vienna, Austria, below right Nagens near Flims 2200 m a.s.l., Switzerland
+
+Secondly, we would like to use isozyme analysis as a taxonomic tool (Fig. 8). The
+analyses should be carried out for one offspring of each of the 20 sampled individuals per
+year and experimental plot by polyacrylamid gel electrophoresis following the protocols of
+Hurka et al. (1989) for AAT, Hurka and Neuffer (1997) for LAP, and Hurka and Du¨ring
+(1994) for GDH. The enzyme AAT (aspartate amino transferase; EC 2.6.1.1) is a dimeric
+enzyme encoded by three nucleic loci but expressed in different cell compartments. The
+LAP (leucine aminopeptidase; EC 3.4.11.1) is a monomeric enzyme and is encoded by
+three loci in diploid Capsella species (Hurka and Neuffer 1997). The GDH (glutamate
+dehydrogenase; EC 1.4.1.4) is homohexameric, and two loci could be analyzed for diploid
+Capsella species (Hurka and Du¨ring 1994). All loci are duplicated in the tetraploid
+
+123
+
+Biodivers Conserv
+
+Fig. 7 Based on ﬂow cytometry different genome sizes of Capsella species are detectable. G1 and G2 show
+the genome sizes during different stages of the cell cycle during mitosis of C. rubella and C. bursa-pastoris,
+respectively. As a standard (G3) we used Petroselinum crispum. For this analysis fresh leaf material was
+used. The experiment was performed by Carina Titel, Osnabrueck, Germany
+
+C. bursa-pastoris (Hurka and Neuffer 1997). Isozyme multilocus genotypes display geo-
+graphic distribution patterns, and may trace colonisation history (Hurka and Neuffer 1997;
+Neuffer and Hurka 1999; Neuffer et al. 1999). Some of the isozyme loci are linked to
+‘‘onset of ﬂowering’’ QTL (Linde et al. 2001) and, therefore, isozymes appear as promising
+tools for recording changes in genotype frequencies.
+
+Thirdly, we would like to establish AFLPs, SNPs closely related to ﬂowering time
+genes, and microsatellites. As C. rubella is presently included in a genome sequencing
+project (www.jgi.doe.gov/sequencing/why/3066.html) we may have the opportunity to
+develop suitable markers close to the adaptive trait ‘‘start of ﬂowering’’ which is of high
+importance for the successful colonisation of new habitats and for changing ecotypic
+compositions in times of global change.
+
+123
+
+Biodivers Conserv
+
+Fig. 8 Isozyme systems and all alleles detected so far in the two Capsella species which will be studied in
+the ten years genetic monitoring experiment. As an example one picture of a LAP gel with C. grandiﬂora,
+C. rubella, C. bursa-pastoris, and C. gracilis, the hybrid between C. rubella and C. bursa-pastoris, is shown
+
+In general, within-species differentiation will be characterised and with new molecular
+methods (e.g., respective SNPs) we should be able to differentiate between individual
+genotypes during the coming years.
+
+The differences between the molecular genotypic compositions at each experimental
+station over at least ten years of monitoring could be an excellent possibility to observe
+ongoing intraspeciﬁc biodiversity changes in a climatically changing world.
+
+Conclusions
+
+Several studies (see for instance, Thomas et al. 2004) elucidated possible consequences of
+global change on biological diversity. These include range expansion (e.g., Walther et al.
+2007, Trachycarpus fortunei within the lower forest zone of the European Alps),
+
+123
+
+Biodivers Conserv
+
+hybridisation between invasive and native species (e.g., Bleeker and Matthies 2005,
+Rorippa species in Germany), and shifts in ﬂowering times (e.g. Parmesan and Yohe
+2003). Although each of these investigations is needed for a better understanding of the
+various inﬂuences of global change on biodiversity, the predictability of future develop-
+ments of life on earth still seems to be limited. In particular, little is known about the
+intraspeciﬁc (genetic) changes caused by climatic shifts (cf. Root et al. 2003). Sheperd’s
+purse is particular useful for climatic change studies as this species is one of the most
+common ﬂowering plants in the world, has a short life cycle, and its adaptation to various
+climatic environments is well studied. Beyond that the species is closely related to the
+genetic model plant A thaliana and therefore an enormous number of molecular genetic
+tools are available. In our experimental setting we are planning to study these intraspeciﬁc
+details, i.e. the shifting of within-species variability based on a long-term study. The
+importance of random effects and sampling errors may therefore decrease compared to
+snap-shot studies describing genetic patterns within a single year, and the predictability for
+the future processes and the generalisation for advanced questions may be strengthened.
+Therefore, we will build up a network of Botanical Gardens interested in joining the
+present experimental approach. For further details on joining the present experimental
+approach, contact Karl-Georg Bernhardt.
+
+Acknowledgments We would like to thank all people involved in previous analyses and in the present
+monitoring; in particular, Karin Fohringer, Rudi Grupe and Gerhard Wagner for ﬁeld work, Claudia
+Gieshoidt for isozyme analyses, Carina Titel for performing the ﬂow cytometry, Lucille Schmieding for
+correcting the English, and last but not least, the staff of the Botanical Gardens in Osnabrueck and Vienna.
+We would like to express our thanks to the reviewers for their valuable comments. Financial support by the
+DFG and the DAAD is greatly appreciated.
+
+References
+
+Adahl E, Lundberg P, Jonzan N (2006) From climate change to population change: the need to consider
+
+annual life cycles. Glob Change Biol 12:1627–1633
+
+Baker H-G (1974) The evolution of weeds. Ann Rev Ecol Syst 5:1–24
+Baskin JM, Baskin CC (1989) Germination response of buried seeds of Capsella bursa-pastoris exposed to
+
+seasonal temperature changes. Weed Res 29:205–212
+
+Baskin CC, Milberg P, Andersson L, Baskin JM (2004) Germination ecology of seeds of the annual weeds
+Capsella bursa-pastoris and Descurainia sophia originating from high northern latitudes. Weed Res
+44:60–68
+
+Bernhardt K-G, Laubhann D (2006) Crambe hispanica, der Spanische Meerkohl (Brassicaceae) als Kul-
+
+turbegleiter. Neilreichia 4:121–124
+
+Bernhardt K-G, Laubhann D, Kropf M (2008) Chorispora tenella, Diplotaxis erucoides und Capsella
+
+rubella (Brassicaceae) in Wien und Niedero¨sterreich. Neilreichia 5:211–216
+
+Bleeker W, Matthies A (2005) Hybrid zones between invasive Rorippa austriaca and native R. sylvestris
+
+(Brassicaceae) in Germany: ploidy levels and patterns of ﬁtness in the ﬁeld. Heredity 94:664–670
+
+Bosbach K, Hurka H, Haase R (1982) The soil seed bank of Capsella bursa-pastoris (Cruciferae): its
+
+inﬂuence on population variability. Flora 172:47–56
+
+Brown AHD, Marshall DR (1981) Evolutionary changes accompanying colonization in plants. In: Scudder
+GGE, Reveal JL (eds) Evolution today. Proceedings of second International Congress of System and
+Evolution Biology. Carnegie-Mellon University Press, Pittsburgh, pp 351–363
+
+Cabin RJ (1996) Genetic comparison of seed bank and seedling populations of the desert mustard
+
+Lesquerella fendleri. Evolution 50:1830–1841
+
+Ceplitis A, Slotte T, Neuffer B, Linde M, Kraft T, Lascoux M (2007) QTL mapping of ﬂowering time using
+AFLP and candidate gene markers in the tetraploid Capsella bursa-pastoris (Brassicaceae). Evolution
+of ﬂowering time in the tetraploid Capsella bursa-pastoris (Brassicaceae). Acta Universitatis Upsal-
+iensis, Uppsala, pp 25–29
+
+123
+
+Biodivers Conserv
+
+Coquillat M (1951) Sur les plantes les plus communes a´ la surface du globe. Bull Mensuel Soc Linn Lyon
+
+20:165–170
+
+Dolezel J, Greilhuber J, Suda J (2007) Flow cytometry with plant cells. Wiley-VCH Verlag, Weinheim
+Essl F, Rabitsch W (2002) Neobiota in O¨ sterreich. Umweltbundesamt, Vienna
+Foxe JP, Slotte T, Stahl E, Neuffer B, Hurka H, Wright SI (2009) Recent speciation associated with the
+
+evolution of selﬁng in Capsella. PNAS 106:5241–5245
+
+Franzke A, German D, Al-Shehbaz IA, Mummenhoff K (2009) Arabidopsis family ties: molecular phy-
+
+logeny and age estimates in the Brassicaceae. Taxon 58:425–437
+
+German DA, Friesen N, Neuffer B, Al-Shehbaz I, Hurka H (2009) Contribution to ITS phylogeny of the
+
+Brassicaceae, with a special reference to some Asian taxa. Plant Syst Evol 283:33–56
+
+Guo Y-L, Bechsgaard JS, Slotte T, Neuffer B, Lascoux M, Weigel D, Schierup MH (2009) Recent speci-
+ation of Capsella rubella from Capsella grandiﬂora, associated with loss of self-compatibility and an
+extreme bottleneck. Proc Natl Acad Sci 106:5246–5251
+
+Hurka H, Du¨ring S (1994) Genetic control of plastid L-glutamate dehydrogenase isozymes in the genus
+
+Capsella (Brassicaceae). Heredity 72:126–131
+
+Hurka H, Haase R (1982) Seed ecology of Capsella bursa-pastoris (Cricuferae). Dispersal mechanisms and
+
+the soil seed bank. Flora 172:34–45
+
+Hurka H, Neuffer B (1991) Colonizing success in plants: genetic variation and phenotypic plasticity in life
+history traits in Capsella bursa-pastoris. In: Esser G, Overdieck D (eds) Modern ecology: basic and
+applied aspects. Elsevier, Amsterdam, pp 77–96
+
+Hurka H, Neuffer B (1997) Evolutionary processes in the genus Capsella (Brassicaceae). Plant Syst Evol
+
+206:295–316
+
+Hurka H, Krauss R, Reiner T, Wo¨hrmann K (1976) Das Blu¨hverhalten von Capsella bursa-pastoris
+
+(Brassicaceae). Plant Syst Evol 125:87–95
+
+Hurka H, Freundner S, Brown AHD, Plantholt U (1989) Aspartate aminotransferase isozymes in the genus
+Capsella (Brassicaceae) suncellular location, gene duplication and polymorphism. Biochem Genet
+27:77–90
+
+Hurka H, Bleeker W, Neuffer B (2003) Evolutionary processes associated with biological invasions in the
+
+Brassicaceae. Biol Invasions 5:281–292
+
+Jalas J, Suominin J, Lampinen R (1996) Atlas Florae Europaeae, 11, Cruciferae (Ricotia to Raphanus).
+
+Helsinki University Printing House, Helsinki
+
+Koch M, Kiefer M (2005) Genome evolution among cruciferous plants: a lecture from the comparison of the
+genetic maps of three diploid species: Capsella rubella, Arabidopsis lyrata ssp. petraea, and
+Arabidopsis thaliana. Am J Bot 92:761–767
+
+Lempe J, Balasubramanian S, Sureshkumar S, Singh A, Schmid M, Weigel D (2005) Diversity of ﬂowering
+
+responses in wild Arabidopsis thaliana strains. PLoS Genetics 1:109–118
+
+Linde M, Diel S, Neuffer B (2001) Flowering ecotypes of Capsella bursa-pastoris (L.) Medik. (Brassica-
+ceae) analysed by a cosegregation of phenotypic characters (QTL) and molecular markers. Ann Bot
+87:91–99
+
+Manda´k B, Bı´mova´ K, Mahelka V, Plackova´ I (2006) How much genetic variation is stored in the seed
+
+bank? A study of Atriplex tatarica (Chenopodiaceae). Mol Ecol 15:2653–2663
+
+McNeill J (1976) The taxonomy and evolution of weeds. Weed Res 16:339–413
+Neuffer B (1990) Ecotype differentiation in Capsella. Vegetation 89:165–171
+Neuffer B (2011) Native range variation in Capsella bursa-pastoris (Brassicaceae) along a 2500 km lati-
+
+tudinal transect. Flora 206
+
+Neuffer B, Bartelheim S (1989) Gen-ecology of Capsella bursa-pastoris from an altitudinal transect in the
+
+Alps. Oecologia 81:521–527
+
+Neuffer B, Hoffrogge R (2000) Ecotypic and allozyme variation of Capsella (Brassicaceae) along an
+
+altitudinal gradient on the Iberian Peninsula. Anales del Jardin Botanico de Madrid 57(2):299–315
+
+Neuffer B, Hurka H (1986) Variation and development time until ﬂowering in national populations of
+
+Capsella bursa-pastoris (Cruciferae). Plant Syst Evol 152:277–296
+
+Neuffer B, Hurka H (1988) Germination behaviour in populations of Capsella bursa-pastoris (Cruciferae).
+
+Plant Syst Evol 161:35–47
+
+Neuffer B, Hurka H (1999) Colonisation history and introduction dynamics of Capsella bursa-pastoris
+
+(Brassicaceae) in North America: isozymes and quantitative traits. Mol Ecol 8:1667–1681
+
+Neuffer B, Koch K (1996) Maternale effekte bei populationen von Capsella bursa-pastoris (L.) Med aus
+Skandinavien und den Alpen––Abha¨ngigkeit des Samengewichtes und des Keimverhaltens von den
+Reifebedingungen im Flachland und im Gebirge. Biol Zentbl 115:337–352
+
+Neuffer B, Meyer-Walf M (1996) Ecotypic variation in relation to man made habitats in Capsella: ﬁeld and
+
+trampling area. Flora 191:49–57
+
+123
+
+Biodivers Conserv
+
+Neuffer B, Schultes J (1990) Das Keimverhalten der annuellen Unkraut- und Pionierpﬂanze Capsella bursa-
+pastoris (L.) Med––Maternale Effekte und endogene Rhythmik. In: Riewenherm S, Lieth H (eds).
+Verhandlungen der Gesellschaft fu¨r O¨ kologie 19, pp 70–74
+
+Neuffer B, Hirschle S, Ja¨ger S (1999) The colonizing history of Capsella in Patagonia (South America)–
+
+Molecular and adaptive signiﬁcance. Folia Geobot 34:435–450
+
+Paetsch M, Mayland-Quellhorst S, Neuffer B (2006) Evolution of the self-incompatibility system in the
+Brassicaceae: identiﬁcation of S-locus receptor kinase (SRK) in self-incompatible Capsella bursa-
+pastoris. Heredity 97:283–290
+
+Parmesan C, Yohe G (2003) A globally coherent ﬁngerprint of climate change impacts across natural
+
+systems. Nature 421:37–42
+
+Pigliucci M, Noah B (1998) Genetics and evolution of phenotypic plasticity of nutrient stress in Arabid-
+
+opsis: drift, constraints or selection? Biol J Linn Soc 64:17–40
+
+Root TL, Price JT, Hall KR, Schneider SH, Rosenzweig C, Pounds JA (2003) Fingerprints of global
+
+warming on wild animals and plants. Nature 421:57–60
+
+Salisbury EJ (1963) Intermittent germination of Capsella. Nature 199:1303–1304
+Shindo C, Lister C, Crevillen P, Nordborg M, Dean C (2006) Variation in the epigenetic silencing of FLC
+
+contributes to natural variation in Arabidopsis vernalization response. Genes Dev 20:3079–3083
+
+Silvertown J, Charlesworth D (2007) Plant population biology. Blackwell, Oxford
+Slotte T (2007) Evolution of ﬂowering time in the tetraploid Capsella bursa-pastoris (Brassicaceae). Digital
+Comprehensive Summaries of Uppsala Dissertations from the Faculty of Science and Technology 367,
+Uppsala, p 40
+
+Slotte T, Ceplitis A, Neuffer B, Hurka H, Lascoux M (2006) Intrageneric phylogeny of Capsella (Brass-
+icaceae) and the origin of the tetraploid C. bursa-pastoris based on chloroplast and nuclear DNA
+sequences. Am J Bot 93:1714–1724
+
+Slotte T, Holm K, McIntyre LM, Lagercrantz U, Lascoux M (2007) Differential expression of genes
+
+important for adaptation in Capsella bursa-pastoris (Brassicaceae). Plant Phys 145:160–173
+
+Slotte T, Huang H, Lascoux M, Ceplitis A (2008) Polyploid speciation did not confer instant reproductive
+
+isolation in Capsella (Brassicaceae). Mol Biol Evol 25:1472–1481
+
+Steinmeyer B, Wo¨hrmann K, Hurka H (1985) Pha¨notypenvariabilita¨t und Umwelt bei Capsella bursa-
+
+pastoris (Cruciferae). Flora 177:323–334
+
+Thomas CD, Cameron A, Green RE et al (2004) Extinction risk from climate change. Nature 427:145–148
+Walther G-R (2008) Klimatisch bedingte Vera¨nderungen der Flora in Mitteleuropa und daraus resultierende
+Aufgaben fu¨r den Arten- und Naturschutz. Osnabru¨cker Naturwissenschaftliche Mitteilungen
+33(34):125–132
+
+Walther G-R, Gritti ES, Berger S, Hickler T, Tang Z, Sykes MT (2007) Palms tracking climate change.
+
+Global Ecol Biogeogr 16:801–809
+
+Yokoya K, Roberts A, Mottley J, Lewis R, Brandham P (2000) Nuclear DNA amounts in roses. Ann Bot
+
+85:557–561
+
+Zhou TY, Lu LL, Yang G, Al-Shehbaz IA (2001) Brassicaceae (Cruciferae). In: Wu ZY, Raven PH (eds)
+
+Flora of China 8. Science Press/Missouri Botanical Garden Press, Beijing/St Louis, pp 1–193
+
+123
+
+

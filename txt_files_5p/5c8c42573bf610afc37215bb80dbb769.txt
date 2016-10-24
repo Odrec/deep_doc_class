@@ -1,0 +1,292 @@
+Organizational Stuﬀ
+Remarks
+This week
+
+Foundations of Logic Week 8
+
+Marie Sindermann
+
+University of Osnabrueck
+
+msindermann@uos.de
+
+December 18, 2014
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Overview
+
+1 Organizational Stuﬀ
+
+Remaks
+
+2 Remarks
+
+Old homework
+Quick Recap
+
+3 This week
+
+Lecture 7
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Remaks
+
+at the Pfoertner: there is a Tacker and you can (ask him to)
+open the window to just put your homework in the right
+folder thing
+
+so idk, do that if you want, he’d appreciate it I guess :)
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Old homework
+Quick Recap
+
+Common Mistakes/Remarks
+
+the identical sign (exercise 1.3 and 1.5)
+∀y (y = b ∧ Gby ) and
+∃x∀y (Gaax ∧ (∃z(F → Hz) ∨ Fxy = Gddc))
+pay attention to the order of arguments / to the designation
+of argument positions (exercise 2)
+∀x(Gx ∧ ¬Hax → Fx)
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Old homework
+Quick Recap
+
+Common Mistakes/Remarks
+
+exercise 3
+
+’diﬀerence in translation’ refers to possible ambiguity of the
+sentence, not of diﬀerent formalizations of the same sentence
+meaning
+
+let’s take a look at the Musterloesung and try to understand,
+what the thinking process is...
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Old homework
+Quick Recap
+
+What you should know
+
+Syntax of Lpred
+Translating
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Lecture 7
+
+Important New Stuﬀ
+
+Semantics of Lpred
+interpretation of an Lpred sentence (”assignment in truth
+table”)
+
+expansion of a formula in some universe
+semantic tree method or Lpred
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Lecture 7
+
+Interpretation and Universes
+
+interpretation in Lpred consists of:
+
+set of all elements called Universe or Domain
+assignment of exactly one element of the universe to each
+proper name
+assignment of a set for each predicate, which contains tuples
+of elements that render that predicate true
+truth values of all literals
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Lecture 7
+
+Example Interpretation
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Lecture 7
+
+Extension of formulas
+
+basically: get rid of all quantiﬁers by correctly assigning
+elements from the universe
+
+with interpretation + extension one can determine the truth
+value of the formula under that interpretation
+
+examples!
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Lecture 7
+
+∃y∀x((Fxy ∨ Hxy ) ∧ Gyx)
+
+U: {c1, c2, c3}
+F: {< c1, c3 >, < c2, c3 >, < c1, c1 >}
+G: {< c1, c2 >, < c2, c2 >, < c3, c1 >, < c3, c2 >, < c3, c3 >}
+H: {< c3, c3 >}
+∀x∃y (Fxy → Gyx)
+U: {c1, c2, c3}
+F: {< c1, c2 >, < c2, c3 >, < c3, c1 >}
+G: {< c2, c1 >, < c2, c2 >, < c3, c3 >}
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Lecture 7
+
+Semantic Tree Method
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Lecture 7
+
+Four new rules
+
+Universal (U)
+
+∀xS(x)
+S(a)
+replace all occurences of x with the same name
+
+Existential (E)
+
+∃xS(x)
+S(a)
+name must not have occured on a previous line in the branch
+
+Negated Universal/Existential
+
+¬∀xS(x)
+∃x¬S(x)
+¬∃xS(x)
+∀x¬S(x)
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Lecture 7
+
+Remarks on Semantic Trees
+
+always reduce negated quantiﬁers ﬁrst
+
+then reduce existential quantiﬁers
+
+for universal quantiﬁers: smartly choose names that have
+already occured
+
+if it doesn’t work: no conclusion possible, might just be our
+mistake
+
+method cannot be used for formulas featuring ’=’
+
+for that, you’ll learn an extension of GLC
+
+Marie Sindermann
+
+Foundations of Logic
+
+Organizational Stuﬀ
+Remarks
+This week
+
+Lecture 7
+
+That’s it for this year!
+
+Have a great Christmas break and Merry Christmas of course!
+
+Marie Sindermann
+
+Foundations of Logic
+
+

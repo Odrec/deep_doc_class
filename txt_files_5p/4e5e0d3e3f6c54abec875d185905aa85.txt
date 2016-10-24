@@ -1,0 +1,3115 @@
+Reduktionsmodelle
+
+(synonym Intensitätsmodelle)
+
+Grundidee:
+• Es erfolgt keine modellendogene Bestimmung des Insolvenzzeitpunktes;
+keine ökonomische Erklärung eines Ausfalls
+• Der Ausfallprozess wird als sog. Sprungprozess modelliert
+• Die Marktpreise ausfallbedrohter Finanzierungstitel des Unternehmens (bzw. 
+von Unternehmen einer Risikoklasse) gehen zunächst als Input in das Modell 
+ein, anhand derer die Parameter des Modells geschätzt werden
+• Die Bewertung von derivativen Finanztiteln, wie z. B. Kreditderivaten, Optionen 
+auf (ausfallbedrohte) Unternehmensanleihen oder Marktpreisderivaten mit 
+Kontrahentenausfallrisiko, erfolgt dann relativ zu den als gegeben betrachteten 
+Preisen der ausfallbedrohten Finanzierungstitel des Unternehmens
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+1
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Modellannahmen (1/2) (zeitdiskretes Modell):
+
+• Vollkommener Kapitalmarkt, insb. keine Transaktionskosten, keine Steuern, 
+
+beliebige Teilbarkeit aller Finanztitel, Zulässigkeit unbeschränkter Leerverkäufe 
+usw.
+
+• Handelszeitpunkte sind T*={0, 1, 2, ... , T}
+• Gehandelt werden ausfallrisikolose und ausfallbedrohte Nullkuponanleihen (NKA) 
+
+eines Unternehmens (oder von Unternehmen derselben Risikoklasse) mit 
+Fälligkeiten 1, ... , T; der Rückzahlungsbetrag aller NKA sei Eins.
+
+• Die laufzeitspezifischen Zinssätze i(t,T) für die sichere Anlage/Verschuldung je 
+
+Periode schwanken im Zeitablauf zufällig; sie sind jedoch (annahmegemäß) 
+unabhängig vom Ausfallrisiko bzw. dem Ausfallzeitpunkt (i(t,T): im Zeitpunkt t 
+beobachtbarer Zinssatz für sichere Anlagen/Kreditaufnahmen (je Periode) für den 
+Zeitraum [t,T])
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+2
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Modellannahmen (2/2) (zeitdiskretes Modell):
+
+• Ein Ausfall des Schuldners ist in jedem Zeitpunkt t{1, ... , T} möglich
+• Kommt es zu einem Ausfall des Schuldners, erhalten alle Gläubiger von 
+
+ausfallbedrohten Nullkuponanleihen, deren Fälligkeitszeitpunkt gleich oder größer 
+dem Ausfallzeitpunkt ist, im Fälligkeitszeitpunkt einen modellexogen 
+vorgegebenen (konstanten) Anteil  (recovery rate) des Nominalwertes der NKA 
+von Eins
+
+• Der Ausfallzustand ist ein sog. absorbierender Zustand, d.h. eine spätere 
+
+Gesundung des Schuldners ist ausgeschlossen
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+3
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Beispiel: 2-Perioden-Modell
+
+1. Modellierung der Preise p(t,T) der risikolosen NKA mit Fälligkeiten T{1,2} 
+
+im Zeitablauf t{0,1,2}:
+t=0
+
+t=1
+
+p
+p
+
+(0,1)
+(0,2)
+
+1
+
+i
+i
+1 
+1
+
+(0,1)
+(0,2)
+
+1
+p
+
+1
+p
+
+(1,2)u
+
+i
+
+(1,2)u
+
+(1,2)d
+
+i
+
+(1,2)d
+
+t=2
+
+1
+
+1
+
+1 :
+
+Wahrscheinlichkeit für eine Marktpreissenkung (= Zinssteigerung) der risikolosen NKA mit 
+Fälligkeit t=2 am Ende der 1. Periode unter dem ÄMM (Annahme: p(1,2)u<p(1,2)d)
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+© Univ.-Prof. Dr. Peter Grundke
+
+4
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Beispiel: 2-Perioden-Modell
+
+Es gelten die folgenden Zusammenhänge:
+
+p
+
+(0,1)
+
+
+
+1
+
+
+
+p
+
+(0,2)
+
+
+
+
+1
+
+1
+i
+(0,1)
+1
+(0,2)
+
+i
+
+
+
+
+
+i
+
+(0,1)
+
+
+
+1
+(0,1)
+
+p
+
+
+
+1
+
+
+
+i
+
+(0,2)
+
+
+
+2
+
+1
+(0,2)
+
+p
+
+
+
+1
+
+p
+
+(1,2)
+
+u
+
+
+
+1
+
+
+
+i
+
+p
+
+(1,2)
+
+d
+
+
+
+1
+
+
+
+i
+
+u
+
+1
+(1,2)
+1
+(1,2)
+
+
+
+i
+
+(1,2)
+
+
+
+u
+
+p
+
+
+
+i
+
+(1,2)
+
+
+
+d
+
+d
+
+u
+
+1
+(1,2)
+1
+(1,2)
+
+p
+
+
+
+1
+
+
+
+1
+
+d
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+5
+
+Das Modell von Jarrow und Turnbull (1995)
+
+„Kalibrierung“ (= Bestimmung der unbekannten Parameter) des Modells?
+
+Allgemeine Strategie:
+1. Bestimme auf Basis der Martingaleigenschaft der diskontierten Preise der 
+
+gehandelten Finanztitel (hier: ausfallrisikolose und ausfallbedrohte Nullkupon-
+anleihen unterschiedlicher Fälligkeiten) unter dem äquivalenten Martingalmaß
+Darstellungen für die Modellpreise der ausfallrisikolosen und 
+ausfallbedrohten Finanztitel
+
+2. Ersetze die Modellpreise durch die (annahmegemäß) real beobachtbaren 
+
+Marktpreise der ausfallrisikolosen und ausfallbedrohten Finanztitel
+Löse die Darstellung aus Schritt 1 nach den (noch) unbekannten Parametern 
+des Modells auf
+
+3.
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+6
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Anmerkungen zur Kalibrierungsstrategie:
+• Die unbekannten Parameter des Modells werden derart bestimmt, dass die 
+Modellpreise für die annahmegemäß bereits gehandelten Finanztitel mit den 
+realen Marktpreisen für diese Finanztitel übereinstimmen
+• Je nach Modell kann ggf. keine vollständige Übereinstimmung von Modell- und 
+Marktpreisen durch eine geeignete Parametrisierung hergestellt werden; in 
+diesem Fall werden die Parameter derart gewählt, dass eine (vom Anwender zu 
+spezifizierende) Fehlergröße minimiert wird
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+7
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Beispiel: 2-Perioden-Modell
+
+Herleitung der Wahrscheinlichkeit für eine Zinsaufwärtsbewegung unter dem ÄMM 
+zum Ende der ersten Periode aus den Preisen für ausfallrisikolose NKA:
+
+Es muss gelten:
+
+1.
+
+p
+
+(0,2)
+
+
+
+1
+i
+(0,1)
+
+1
+
+
+
+
+
+
+
+1
+
+
+
+p
+
+(1,2)
+
+u
+
+(1
+ 
+
+
+1
+
+)
+
+
+
+p
+
+(1,2)
+
+
+
+d
+
+
+
+p
+(0,2) 1
+ 
+
+i
+
+(0,1)
+
+
+
+
+
+
+1
+
+
+1
+
+
+1
+
+p
+(1,2)
+u
+p
+(1,2)
+
+u
+
+p
+(1,2)
+
+
+
+
+(1
+)
+ 
+
+1
+p
+(1,2)
+
+d
+p
+(1,2)
+
+
+u
+
+p
+(1,2)
+d
+p
+(1,2)
+
+
+
+1
+
+p
+(1,2)
+
+
+d
+
+d
+
+d
+
+
+
+
+1
+
+
+
+p
+
+
+(0,2) 1
+ 
+p
+(1,2)
+
+
+
+i
+
+u
+
+(0,1)
+p
+
+
+
+p
+
+(1,2)
+
+d
+
+d
+
+(1,2)
+
+
+
+
+p
+
+(1,2)
+d
+
+p
+
+p
+
+(1,2)
+
+
+1
+(0,2)
+ 
+p
+(1,2)
+
+
+d
+
+
+
+i
+
+u
+
+(0,1)
+
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+8
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Beispiel: 2-Perioden-Modell
+
+2. Modellierung des Ausfallzeitpunktes und der Recovery Rate im Falle eines 
+
+Ausfalls
+t=0
+
+1
+
+1
+
+1 
+1
+
+t=1
+
+
+
+1
+
+2
+
+1 
+2
+
+t=2
+
+
+
+
+
+1
+
+1 :
+2 :
+
+Wahrscheinlichkeit für einen Ausfall am Ende der 1. Periode unter dem ÄMM
+Wahrscheinlichkeit für einen Ausfall am Ende der 2. Periode unter dem ÄMM unter der 
+Bedingung, dass am Ende der 1. Periode noch kein Ausfall eingetreten ist
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+9
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Beispiel: 2-Perioden-Modell
+
+3. Modellierung der Preise v(t,T) der ausfallbedrohten NKA mit Fälligkeiten 
+
+T{1,2} im Zeitablauf t{0,1,2}:
+t=0
+t=1
+
+Vereinfachende 
+
+Annahme: 
+
+Unabhängigkeit von 
+Zins- und Kreditrisiko
+
+v
+(0,1)
+v
+(0,2)
+
+
+
+
+
+
+
+
+
+
+1
+
+(1
+)
+ 
+1
+
+(1
+
+(1
+
+
+
+
+1
+
+) (1
+ 
+
+1 
+1
+
+
+
+
+
+
+
+
+
+) 
+1
+
+
+
+
+
+)
+
+1
+
+
+
+1
+
+v
+
+v
+
+v
+
+(1,2)
+1
+
+u i
+,
+
+(1,2)u s
+,
+
+d i
+,
+
+(1,2)
+1
+
+v
+
+(1,2)d s
+,
+
+
+
+
+
+
+
+
+
+(1,2)
+
+u
+
+(1,2)
+
+d
+
+
+p
+
+
+
+
+
+
+p
+
+
+
+
+
+
+
+2
+
+1 
+2
+
+2
+
+1 
+2
+
+t=2
+
+
+
+1
+
+
+
+
+1
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+10
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Beispiel: 2-Perioden-Modell
+
+Herleitung der Wahrscheinlichkeit 2 für einen Ausfall innerhalb der 2. Periode
+(gegeben Solvenz am Ende der 1. Periode) unter dem ÄMM aus den Preisen für 
+ausfallrisikolose und ausfallbedrohte NKA:
+
+Es muss gelten:
+
+2.
+
+ 
+
+(1
+  
+
+2
+
+
+2
+
+
+) 1
+
+
+
+
+v
+
+ 
+
+
+2
+
+v
+
+u
+
+u s
+,
+
+
+
+
+
+u s
+,
+
+
+
+(1,2)
+
+1
+i
+(1,2)
+1
+
+
+
+i
+(1,2)
+(1,2)
+1
+
+ 
+u
+u s
+,
+
+i
+v
+(1,2)
+1
+(1,2)
+ 
+1)
+(
+
+
+1
+(1,2)
+d
+
+1
+ 
+)
+
+
+
+1
+
+(1,2)
+
+(1,2)
+
+d s
+,
+(1
+
+
+
+
+
+1
+
+d s
+,
+
+v
+
+
+
+
+
+i
+
+3.
+
+v
+
+ 
+
+
+2
+
+2
+
+
+
+1
+  
+1 1
+
+
+
+1) 1
+(
+    
+ 
+
+i
+1
+(1,2)
+ 
+)
+
+
+
+
+2
+2
+v
+(1,2)
+
+
+
+
+
+u
+
+
+
+u
+
+u s
+,
+(1
+
+) 1
+
+
+ 
+
+(1
+  
+
+2
+
+
+2
+
+i
+
+(1,2)
+
+
+
+d
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+11
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Beispiel: 2-Perioden-Modell
+
+Herleitung der Wahrscheinlichkeit 1 für einen Ausfall innerhalb der 1. Periode
+unter dem ÄMM aus den Preisen für ausfallrisikolose und ausfallbedrohte NKA:
+Es muss gelten:
+4.
+
+  
+
+) 1 (1
+  
+
+(1
+  
+
+) (1
+ 
+
+
+   
+1
+
+ 
+
+(1
+ 
+
+
+1
+
+
+1
+
+
+
+v
+
+)
+
+
+
+
+
+
+
+1
+
+1
+
+1
+
+1
+
+
+1
+
+
+) 1
+
+
+1
+
+1
+
+
+
+
+
+
+
+(0,1)
+
+1
+i
+(0,1)
+1
+i
+(0,1)
+1
+i
+(0,1)
+1
+i
+1
+(0,1)
+
+(0,1) 1
+ 
+)
+
+
+© Univ.-Prof. Dr. Peter Grundke
+
+ 
+
+
+1
+
+(1
+
+
+
+
+
+
+
+
+
+
+
+1
+
+1
+
+v
+
+
+
+
+  
+
+(1
+  
+
+
+
+1
+
+1
+
+   
+1
+
+ 
+
+
+
+1
+
+1
+
+)
+
+(1
+ 
+
+
+1
+
+) 1 (1
+  
+
+
+1
+
+) (1
+ 
+
+
+1
+
+
+) 1
+
+
+
+
+
+
+
+
+
+
+ 
+
+(1
+  
+
+1
+
+
+1
+
+
+) 1
+
+
+ 
+
+
+
+(
+
+1
+
+
+1) 1
+ 
+
+i
+
+(0,1)
+
+
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+12
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Beispiel: 2-Perioden-Modell
+
+Herleitung der Wahrscheinlichkeit 2 für einen Ausfall innerhalb der 2. Periode
+(gegeben Solvenz am Ende der 1. Periode) unter dem ÄMM aus den Preisen für 
+ausfallrisikolose und ausfallbedrohte NKA:
+Es muss gelten:
+
+5.
+
+
+
+v
+
+1
+
+
+
+(0,2)
+1
+i
+(0,1)
+
+1
+i
+(0,1)
+
+
+
+1
+
+
+
+
+
+
+
+
+ 
+1
+
+
+
+1
+
+(1
+ 
+
+
+ 
+
+1
+
+
+
+
+1
+
+
+
+v
+
+(1,2)
+
+
+
+
+1
+
+(1
+ 
+
+)
+
+1
+
+
+
+v
+
+(1,2)
+
+u s
+,
+
+u i
+,
+
+)
+
+1
+
+
+
+
+
+ 
+1
+
+i
+(1,2)
+
+
+
+1
+
+
+
+v
+
+(1,2)
+
+(1
+ 
+
+
+1
+
+d i
+,
+
+
+
+
+1
+
+(1
+ 
+
+)
+
+1
+
+u
+
+Einsetzen für 1 und 1
+und Auflösen nach 2
+
+v
+
+(1,2)
+
+d s
+,
+
+
+
+
+
+) (1
+)
+
+ 
+1
+1
+(1,2)
+
+
+
+1
+
+i
+
+
+
+ 
+
+(1
+  
+
+2
+
+
+2
+
+
+) 1
+
+
+
+
+
+
+u
+
+(1
+ 
+
+ 
+1
+
+
+
+1
+
+)
+
+
+
+1
+
+
+
+
+i
+(1,2)
+
+d
+
+(1
+ 
+
+
+1
+
+) (1
+ 
+
+)
+
+1
+
+
+
+1
+(1,2)d
+
+
+
+
+
+1
+
+
+
+i
+
+ 
+
+(1
+  
+
+2
+
+
+2
+
+
+) 1
+
+
+
+
+
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+13
+
+Das Modell von Jarrow und Turnbull (1995)
+
+Beispiel: 2-Perioden-Modell
+
+Lassen sich aus den Marktpreisen für ausfallrisikolose und ausfallbedrohte NKA 
+verschiedener Fälligkeiten eindeutige Größen 1, 1, 2  (0,1) ermitteln, so ist der
+Markt vollständig und arbitragefrei.
+Diese Wahrscheinlichkeiten für Zinsbewegungen und Ausfälle unter dem ÄMM 
+können nun zur Bewertung anderer Finanzierungstitel, die vom Zinsrisiko und/oder
+dem Kreditrisiko des Unternehmens abhängen, verwendet werden.
+
+Beispiel:
+Credit Default Swap mit der ausfallbedrohten NKA des Unternehmens
+mit Fälligkeit T=2 als Basisinstrument
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+14
+
+Credit Default Swap
+
+• Basisinstrument (Referenz-Asset): Vermögensgegenstand, dessen 
+
+Kreditrisiko transferiert werden soll (z.B. Kredit, Anleihe, Korb von 
+kreditrisikobehafteten Titeln)
+
+• Credit event: Ereignis, das die aus einem Kreditderivat resultierende 
+
+Zahlung auslöst (z.B. Ausfall, Downgrade, Credit-Spread-Ausweitung)
+
+• Credit event payment: Betrag, der nach einem credit event zur Erfüllung 
+
+des Kontraktes fällig wird. Verschiedene Varianten (hier: für CDS):
+
+ Zahlung zu pari, also zum Nennwert (Nominalbetrag), im Austausch 
+gegen Lieferung des Basisinstrumentes (physical delivery)
+
+ Zahlung des Nominalbetrages minus dem Marktpreis, den das 
+Basisinstrument nach dem Eintritt eines credit events besitzt 
+(Zeitraum: bis zu drei Monate nach dem credit event) (cash settlement)
+
+ Zahlung eines festen Betrages (Digital-CDS)
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+15
+
+Kreditnehmer/
+Referenz-Asset
+
+
+
+
+
+Risiko-
+verkäufer
+
+Credit Default Swap
+
+ Kreditauszahlung
+ Zins- und Tilgungszahlungen
+
+Prämienzahlung
+
+Ausgleichszahlung Default
+
+kein Default: 
+keine Zahlung
+
+Risiko-
+käufer
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+16
+
+Bewertung eines Credit Default Swaps im
+
+2-Perioden-Modell von Jarrow und Turnbull (1995)
+
+• Credit Default Swap mit der ausfallbedrohten NKA des Unternehmens
+mit Fälligkeit T=2 als Basisinstrument
+• Credit Event: Ausfall des Unternehmens im Zeitpunkt t{1,2}
+• Credit Event Payment: Zahlung der Differenz zwischen dem Nominalwert (1) und 
+der Befriedigungszahlung () der ausgefallenen Anleihe im Fälligkeitszeitpunkt T=2
+• Laufzeit des CDS: 2 Perioden
+
+Was ist die „faire“ (= arbitragefreie) Höhe der einmaligen (upfront) 
+Prämie PCDS im Zeitpunkt t=0 für obigen Credit Default Swap?
+
+PCDS
+
+=
+
+Marktwert (in t=0) der zustandsabhängigen 
+Zahlungen, die der Risikokäufer leisten muss
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+17
+
+Bewertung eines Credit Default Swaps im
+
+2-Perioden-Modell von Jarrow und Turnbull (1995)
+
+PCDS
+
+=
+
+Marktwert (in t=0) der zustandsabhängigen 
+Zahlungen, die der Risikokäufer leisten muss
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+18
+
+Bewertung eines Credit Default Swaps im
+
+2-Perioden-Modell von Jarrow und Turnbull (1995)
+
+Es lässt sich zeigen, dass die upfront-Prämie PCDS (sinnvollerweise!) der Diff-
+erenz zwischen dem Wert p(0,2) der ausfallrisikolosen NKA mit Fälligkeit T=2 
+und dem Wert v(0,2) der ausfallbedrohten NKA mit Fälligkeit T=2 entspricht!
+
+(0,2)
+
+1
+ 
+
+
+1
+
+1 (
+ 
+
+
+1
+
+p
+
+(0,2)
+
+
+
+
+
+
+
+
+1
+
+
+
+i
+
+
+1
+
+
+
+i
+
+
+1
+
+
+
+i
+
+v
+
+
+1
+(0,2)
+1
+(0,2)
+1
+(0,2)
+
+2
+
+
+
+2
+
+
+
+2
+
+
+
+1
+(0,2)
+
+2
+
+
+
+
+
+i
+
+
+
+
+
+ 
+
+(1
+  
+
+1
+
+  
+
+(1 (
+  
+
+)
+
+
+
+1
+
+2
+
+
+1
+
+(1
+ 
+
+ 
+2
+
+
+
+1
+
+)
+
+
+)) 1
+
+
+(1
+ 
+
+  
+
+1 (
+  
+
+)
+
+)
+
+
+
+1
+
+2
+
+
+1
+
+(1
+ 
+
+ 
+2
+
+
+
+1
+
+)
+
+)
+
+
+
+
+
+
+
+
+1
+
+(1
+ 
+
+ 
+2
+
+
+
+1
+
+)
+
+ 
+1
+ 
+
+
+
+
+CDS
+
+
+
+P
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+19
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+Nachteile des Modells von Jarrow und Turnbull (1995):
+• Es werden nur die beiden Zustände Solvenz und Insolvenz modelliert
+• Schrittweise Verschlechterungen der Bonität des Schuldners vor der Insolvenz
+( Erhöhung der Ausfallwahrscheinlichkeit
+ Credit Spread des Schuldners steigt
+ Marktwert der zustandsabhängigen Zahlungen aus dem Kredit sinkt)
+
+werden nicht berücksichtigt
+• Beispielsweise können Kreditderivate, bei denen das Kreditereignis als Ver-
+schlechterung der Bonität des Schuldners unterhalb einer spezifizierten Schwelle 
+definiert ist, innerhalb solcher Modelle nicht bewertet werden
+• Die bedingten Ausfallwahrscheinlichkeiten des Schuldners je Periode (unter dem 
+ÄMM) sind bereits heute mit Sicherheit bekannt. Dies entspricht nicht der Realität!
+
+Modell von Jarrow, Lando und Turnbull (1997): Modellierung 
+verschiedener Bonitätszustände durch Ratingklassenzugehörigkeiten
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+20
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+Modellannahmen (1/3  (fast) identisch zu JT (95)):
+
+• Vollkommener Kapitalmarkt, insb. keine Transaktionskosten, keine Steuern, belie-
+
+bige Teilbarkeit aller Finanztitel, Zulässigkeit unbeschränkter Leerverkäufe usw.
+
+• Handelszeitpunkte sind T*={0, 1, 2, ... , T}
+• Gehandelt werden ausfallrisikolose und ausfallbedrohte Nullkuponanleihen (NKA) 
+
+mit Fälligkeiten 1, ... , T und Emittentenratings i{1, 2, ... , K-1};
+der Rückzahlungsbetrag aller NKA sei Eins.
+
+• Die laufzeitspezifischen Zinssätze i(t,T) für die sichere Anlage/Verschuldung je 
+
+Periode schwanken im Zeitablauf zufällig; sie sind jedoch (annahmegemäß) 
+unabhängig vom Kreditrisiko bzw. den Zeitpunkten, an denen Bonitäts-
+änderungen stattfinden (i(t,T): im Zeitpunkt t beobachtbarer Zinssatz für 
+sichere Anlagen/Kreditaufnahmen (je Periode) für den Zeitraum [t,T])
+
+• Ein Ausfall des Schuldners oder eine Ratingveränderung sind in jedem 
+
+Zeitpunkt {1, ... , T} möglich
+
+• Kommt es zu einem Ausfall des Schuldners, erhalten alle Gläubiger von 
+
+ausfallbedrohten Nullkuponanleihen, deren Fälligkeitszeitpunkt gleich oder größer 
+dem Ausfallzeitpunkt ist, im Fälligkeitszeitpunkt einen modellexogen 
+vorgegebenen (konstanten) Anteil  des Nominalwertes der NKA von Eins
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+© Univ.-Prof. Dr. Peter Grundke
+
+21
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+Modellannahmen (2/3):
+
+• Modellierung der Bonitätsentwicklung eines Schuldners im Zeitablauf mit Hilfe einer 
+
+sog. homogenen Markov Kette (t)tT* mit Zustandsraum E={1, 2, ..., K-1, K}
+und 1-Schritt-Übergangsmatrix Q (unter dem realen Wahrscheinlichkeitsmaß P):
+
+Q q
+(
+i j
+,
+
+
+
+)
+1 ,
+
+
+i j K
+
+
+
+
+
+q
+1,1
+
+
+q
+
+K
+1,1
+
+0
+
+
+
+
+
+
+
+
+
+q
+1,2
+
+q
+
+K
+1,2
+
+0
+
+
+
+
+
+
+K
+
+q
+1,
+
+
+q
+
+K
+
+K
+
+1,
+
+1
+
+
+
+
+
+
+
+
+
+Wahrscheinlichkeit an, dass 
+der Schuldner innerhalb einer 
+Periode von der Ratingklasse
+
+i in die Ratingklasse j 
+
+qi,j gibt die (reale) 
+
+wechselt
+
+mit
+
+und
+
+jq
+i
+,
+K
+
+
+j
+
+1
+
+
+
+
+0
+
+
+
+i
+
+,
+
+j E
+
+
+q
+i j
+,
+
+
+
+1
+
+ 
+
+i E
+
+Ausfallwahrscheinlichkeit je 
+
+Ratingklasse 1, 2, ... , K
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+22
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+Modellannahmen (3/3):
+
+• Es wird unterstellt, dass der folgende Zusammenhang zwischen den Über-
+
+gangswahrscheinlichkeiten qi,j unter dem realen Wahrscheinlichkeitsmaß P und 
+den Übergangswahrscheinlichkeiten q*i,j(t,t+1) unter dem für Bewertungszwecke 
+relevanten äquivalenten Martingalmaß P* besteht:
+
+P
+
+q
+1,2
+
+
+q
+1,1
+
+
+q
+
+K
+1,1
+
+0
+
+q
+
+K
+1,2
+
+0
+
+Q
+
+
+
+
+
+
+
+
+
+
+
+
+
+K
+
+q
+1,
+
+
+q
+
+K
+
+K
+1,
+
+1
+
+
+
+
+
+
+
+
+
+
+
+0
+
+
+
+i
+
+,
+
+j E
+
+
+q
+i j
+,
+
+
+
+1
+
+ 
+
+i E
+
+jq
+i
+,
+K
+
+
+j
+
+1
+
+
+q
+t q
+t t
+1) :
+( )
+( ,
+*
+
+
+
+
+i j
+i
+i j
+,
+,
+j
+i j E i
+,
+,
+ 
+
+T
+t
+{0,1,...,
+ 
+q t t
+( ,
+1)
+*
+
+i i
+,
+K
+
+
+: 1
+ 
+
+t t
+( ,
+
+q
+*
+i j
+,
+
+1}
+
+1)
+
+
+
+
+
+j
+1,
+
+j
+i
+
+i E
+ 
+t
+ 
+
+{0,1,...,
+
+T
+
+
+
+1}
+
+P*
+
+1)
+
+q
+*
+1,2
+
+t t
+( ,
+
+
+
+1)
+
+
+
+1)
+
+q
+
+*
+K
+
+1,2
+
+
+
+
+1)
+
+t t
+( ,
+0
+
+
+
+Q t t
+*( ,
+1)
+
+q t t
+( ,
+*
+
+1,1
+
+
+
+
+t t
+( ,
+
+
+0
+
+
+1,1
+
+
+
+
+q
+
+*
+K
+
+q
+*
+1,
+
+K
+
+q
+
+*
+K
+
+1,
+
+
+
+
+
+
+
+t t
+( ,
+
+t t
+( ,
+1
+
+K
+
+
+
+1)
+
+
+
+1)
+
+
+
+
+
+
+
+
+
+Die i(t) sind
+- nicht-negative,
+- (ausgangs-) ratingklassenspezifische,
+- zeitabhängige,
+- deterministische
+Adjustierungsparameter!
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+23
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+Problem:
+
+Die Adjustierungsparameter i(t) (i{1, ... , K-1}, t{0, 1, … , T-1) sind zunächst 
+unbekannt!
+
+Aufgrund  der  Martingaleigenschaft
+für 
+ausfallbedrohte  NKA  aller  Fälligkeiten  unter  P*  können  die  Parameter  i(t)
+iterativ für  jeden  Zeitpunkt  t  bestimmt  werden,  falls  folgende  Daten zur 
+Verfügung stehen:
+
+der  diskontierten  Preise 
+
+ aktuelle (t=0) Preise für ausfallrisikolose und ausfallbedrohte NKA aller
+Fälligkeiten {1, 2, ... , T} für alle Emittentenratings i{1, ... , K-1}
+ konstante Recovery Rate 
+ (reale) Übergangsmatrix Q
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+24
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+Notation:
+iv t T
+( ,
+
+) :
+
+*
+
+)
+
+(
+t T 
+t
+:
+i jq
+t T
+, ( ,
+*
+
+:
+
+) :
+
+Preis einer ausfallbedrohten NKA mit Fälligkeit T und Nominalwert 
+Eins im Zeitpunkt t, deren Emittent sich in t im Bonitätszustand iE
+befindet
+Rating (Bonitätszustand) eines Schuldners im Zeitpunkt t
+Insolvenzzeitpunkt (= min { tT* : t = K })
+Wahrscheinlichkeit unter dem ÄMM P*, im Zeitintervall [t,T] vonder 
+Ratingklasse i in die Ratingklasse j zu wechseln
+
+gegeben alle Informationen bis zum Zeitpunkt t
+
+
+
+
+
+v t T
+( ,
+i
+
+)
+
+
+
+
+
+
+
+
+
+p t T E
+( ,
+
+)
+
+
+
+P
+
+P
+
+
+
+)
+
+p t T
+( ,
+
+p t T E
+( ,
+
+) 1
+
+
+
+
+p t T
+( ,
+
+)
+
+
+
+
+
+
+ 
+
+*
+
+*
+
+
+
+
+
+1 1
+
+
+
+
+T
+
+
+
+
+1 1
+
+
+
+
+T
+
+
+
+P
+*
+ 
+t
+(1
+*
+ 
+
+
+T
+
+)
+
+
+P
+
+
+
+
+
+
+
+1
+
+T
+
+
+
+
+
+
+  
+
+ 
+t
+
+1
+
+T
+
+
+
+
+
+T
+
+i
+
+
+
+
+ 
+
+
+t
+
+i
+
+
+
+
+
+
+ 
+t
+
+
+
+T
+
+
+
+i
+
+P
+
+*
+
+
+
+
+
+i
+
+
+
+
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+25
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+Da  die  Insolvenz  ein  absorbierender  Zustand  ist,  sind  die  Ereignisse  {>T}  und 
+{TK} äquivalent!
+
+*
+Daher gilt:
+ 
+t
+
+
+t
+
+K
+
+P
+
+T
+
+
+
+i
+
+
+
+i
+
+
+
+
+
+
+
+
+
+
+
+T
+q
+*
+i j
+,
+
+
+
+P
+*
+K
+1
+
+
+j
+1
+
+1
+ 
+
+
+
+t T
+( ,
+
+)
+
+q
+*
+i K
+,
+
+t T
+( ,
+
+)
+
+Daraus folgt:
+
+v t T
+( ,
+i
+
+)
+
+
+
+p t T
+( ,
+
+)
+
+
+
+
+
+
+(1
+ 
+
+
+
+
+) 1
+ 
+
+q
+*
+i K
+,
+
+t T
+( ,
+
+)
+
+
+
+
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+26
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+Iterationsverfahren zur Bestimmung der Adjustierungsparameter i(t)
+(je (Ausgang-) Ratingklasse i{1, ... , K-1} und je Periode [t,t+1]):
+
+i
+
+v
+
+p
+
+
+
+
+
+
+
+
+
+(0,1)
+
+(0,1)
+
+1. Iterationsschritt: Periode [0,1]
+ 
+q
+1
+*
+
+ 
+i K
+,
+
+
+
+1
+
+ 
+
+
+q
+(0,1)
+*
+
+
+i K
+,
+
+
+
+1
+ 
+
+
+
+1
+(0,1)
+
+ 
+
+
+1
+(0,1) 1
+  
+
+1
+   
+
+q
+*
+i K
+,
+
+(0,1)
+
+
+
+
+p
+p
+
+
+
+
+
+(0,1)
+
+
+
+(0,1)
+
+q
+*
+i K
+,
+
+
+
+
+
+v
+(0,1) 1
+i
+p
+(0,1)
+v
+(0,1)
+
+p
+
+
+
+
+1
+
+
+
+i
+
+ 
+
+
+
+
+
+1
+
+
+
+
+
+1
+
+
+
+p
+(0,1)
+
+)
+(1
+
+
+
+
+v
+p
+
+(0,1)
+i
+(0,1)
+
+
+
+q
+*
+i K
+,
+
+(0,1)
+
+
+
+
+i
+
+(0)
+
+
+
+q
+i K
+,
+
+(0,1)
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+27
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+1. Iterationsschritt: Periode [0,1]
+
+p
+(0,1)
+
+)
+(1
+
+
+
+
+v
+p
+
+(0,1)
+i
+(0,1)
+
+
+
+
+i
+
+(0)
+
+q
+ 
+i K
+,
+
+
+i
+
+(0)
+
+
+
+(1
+
+i
+
+p
+v
+(0,1)
+
+p
+(0,1)
+)
+
+
+
+
+(0,1)
+q
+i K
+,
+
+
+
+
+
+i
+
+
+
+{1,2,...,
+
+K
+
+
+
+
+1}
+
+
+ 
+2
+
+(0),
+
+1
+
+(0),
+
+ 
+K
+
+,
+
+1
+
+(0)
+
+
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+28
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+2. Iterationsschritt: Periode [1,2]
+ 
+q
+1
+*
+ 
+
+i K
+,
+
+
+1
+ 
+
+p
+
+v
+
+i
+
+(0,2)
+
+p
+(0,2)
+(1
+)
+
+
+
+
+
+
+
+(0,2)
+
+
+v
+(0,2)
+i
+p
+(0,2)
+
+
+
+
+
+q
+*
+i K
+,
+
+(0,2)
+
+
+Chapman
+
+Kolmogorov
+
+K
+
+
+
+(0,2)
+  
+(1,2)
+q
+(1)
+
+
+
+q
+(0,1)
+*
+i
+,
+j
+q
+(
+(0)
+
+
+i
+j
+i
+*
+j
+q
+(0,1) (
+
+i i
+,
+
+q
+
+
+j
+
+i
+)
+
+i
+)
+
+*
+j K
+,
+
+1
+
+
+j K
+,
+
+
+
+
+
+j
+
+j
+
+
+
+,
+
+
+
+i
+
+
+
+{1,2,...,
+
+K
+
+
+
+
+1}
+
+(1),
+K-1 Gleichungen und K-1 Unbekannte
+Auflösen des linearen Gleichungssystems liefert die 
+Adjustierungsparameter für die Periode [1,2]
+Analoge Iterationsschritte für jede weitere Periode
+
+
+ 
+2
+
+(1),
+
+1
+
+ 
+K
+
+,
+
+1
+
+(1)
+
+
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+29
+
+Das ratingbasierte Modell von
+
+Jarrow, Lando und Turnbull (1997)
+
+Nachteile des Modells von Jarrow, Lando und Turnbull (1997):
+
+• Fehlende stochastische Übergangswahrscheinlichkeiten
+
+• Fehlende stochastische Recovery Rates
+
+• Fehlende Volatilität des (durchschnittlichen) Credit Spreads je Ratingklasse
+
+• Fehlende Korrelation stochastischer Größen, insb. zwischen ausfallrisikolosen 
+Zinssätzen und Ausfallzeitpunkt
+
+• Fehlende Erfassung nicht-markov‘scher Merkmale des Bonitätszustandsprozesses
+
+© Univ.-Prof. Dr. Peter Grundke
+
+Vorlesung Kapitalmarkt- und Finanzierungstheorie
+
+30
+
+

@@ -1,0 +1,592 @@
+ 
+
+ 
+ 
+
+ 
+
+Klausur im Fach: 
+
+ 
+
+Prüfer: 
+
+ 
+
+Datum: 
+
+ 
+
+AUFGABENHEFT 
+
+ 
+
+Business Taxation B I 
+
+ 
+
+Prof. Dr. Michael Wosnitza 
+
+ 
+
+09.10.2015 
+
+Zugelassene Hilfsmittel: 
+
+ 
+  Unkommentierte Ausgabe von Steuer- und Wirtschaftsgesetzen und Steuerrichtlinien. 
+ 
+  Ein der Positivliste des Prüfungsamts entsprechender „einfacher Taschenrechner“. 
+ 
+Weitere  Hilfsmittel  sind  nicht  erlaubt,  insbesondere  darf  kein  eigenes  Konzeptpapier  mitgebracht  und 
+
+verwendet  werden.  Weiterhin  wird  ausdrücklich  darauf  hingewiesen,  dass  jegliche  Ergänzung  der  ver-
+
+wendeten  Gesetzes-  und  Richtlinientexte  mit  Ausnahme  von  Hervorhebungen  des  Textes  durch  An-
+
+streichen oder Unterstreichen unzulässig ist und als Täuschungsversuch gewertet wird. Unzulässig sind 
+
+damit ebenfalls Register zur Trennung von Einzelgesetzen oder Paragraphengruppen. 
+
+ 
+ 
+
+ 
+Diese Klausur besteht aus einem Pflichtteil mit den beiden Aufgaben 1 und 2 sowie einem Wahlteil mit 
+
+Hinweise zur Bearbeitung der Klausur: 
+
+den beiden Aufgaben 3 und 4. 
+
+Zu  bearbeiten  sind  insgesamt  drei  Aufgaben,  beide  Aufgaben  des  Pflichtteils  und  eine  Aufgabe  des 
+
+Wahlteils. Werden im Wahlteil beide Aufgaben bearbeitet, wird die Lösung zu Aufgabe 4 nicht gewertet. 
+ 
+Bitte  orientieren  Sie  die  Länge  Ihrer  Aufgabenlösungen  an  der  für  jede  Aufgabe  verfügbaren  Zeit 
+
+(1 Punkt = 1 Minute). 
+ 
+Aufgabenlösungen dürfen ausschließlich im zugehörigen Lösungsheft erfolgen. Vergessen Sie nicht, auf 
+
+dessen  erster  Seite  Ihren  Namen  und  Ihre  Matrikel-Nr.  einzutragen.  Die  Heftung  des  Lösungshefts 
+
+darf nicht gelöst werden; Zuwiderhandlungen werden als Täuschungsversuch gewertet. 
+ 
+Das Aufgabenheft muss mit abgegeben werden. 
+ 
+
+Klausur zu Business Taxation B I, SS 2015, 2. Prüfungstermin 
+
+Seite 2 von 7 
+
+ 
+
+ 
+
+ 
+ 
+
+PFLICHTTEIL 
+
+Aufgabe 1:   Einzelfragen zum Modulteil „Steuersystematik und Einkommensteuer“  (45 Punkte) 
+
+ 
+a)  Einkommensteuertarif des § 32a EStG 
+ 
+
+In  den  folgenden  Aufgabenteilen  wird  der  deutsche  Einkommensteuertarif  des  § 32a  EStG  des  Veran-
+
+lagungszeitraums 2014  betrachtet.  Dessen  Absatz 1  enthält  in  formaler  Darstellung  die  folgende  Tarif-
+
+funktion: 
+
+ESt  = 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+{
+
+0
+
+974,58 ∙ y2 + 1.400 ∙ y
+
+228,74 ∙ z2 + 2.397 ∙ z + 971
+ 
+
+für 
+
+0,42 ∙ X − 8.239
+
+0,45 ∙ X − 15.761
+
+0 ≤ x ≤ 8.354 €
+
+8.355 € ≤ x ≤ 13.469 €
+
+13.470 € ≤ x ≤ 52.881 €
+
+ 
+
+52.882 € ≤ x ≤ 250.730 €
+
+250.731 € ≤ x
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+{
+
+mit: 
+
+x:  Auf einen vollen €-Betrag abgerundetes zu versteuerndes Einkommen 
+
+ 
+
+ 
+
+ 
+
+(Bemessungsgrundlage) 
+
+y  =  
+
+x−8.354
+
+10.000
+
+, 
+
+z  =  
+
+x−13.469
+
+10.000
+
+ 
+
+Sich aus der Anwendung der obigen Tarifformel ergebende Steuerzahlungen sind jeweils auf den nächs-
+
+ten vollen €-Betrag abzurunden. 
+
+Bitte beantworten Sie zu dieser Tariffunktion die folgenden Fragen: 
+
+a1)  Stellen  Sie  den  Verlauf  der  Grenzsteuersatzfunktion  der  obigen  Tariffunktion  in  einem  x-
+
+dESt
+
+dx
+
+-
+
+Diagramm dar.  (9 Punkte) 
+
+a2)  Warum  wird  der  deutsche  Einkommensteuertarif  als  „linear-progressiver“  Tarif  bezeichnet?  
+
+(3 Punkte) 
+
+a3)  Formulieren  Sie  die  Bedingung  für  die  Grenzsteuersatzfunktion  der  dritten  Tarifzone  (zweite 
+
+Progressionszone) und berechnen Sie den Grenzsteuersatz für ein  zu versteuerndes Einkommen in 
+
+Höhe von x=31.022 €. Runden Sie Ihr Ergebnis auf einen vollen Prozentpunkt.  (7,5 Punkte) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+(Fortsetzung auf der nächsten Seite) 
+
+ 
+
+ 
+
+Klausur zu Business Taxation B I, SS 2015, 2. Prüfungstermin 
+
+Seite 3 von 7 
+
+ 
+
+Aufgabe 1:   Fortsetzung 
+ 
+
+a4)  Berechnen Sie, ausgehend von einem zu versteuernden Einkommen von x=31.022 €, den Differenz-
+
+steuersatz für eine Erhöhung des zu versteuernden Einkommens um  21.859 €, also auf einen Wert 
+
+von 52.881 €. Runden Sie Ihr Ergebnis auf einen vollen Prozentpunkt.  (7,5 Punkte) 
+
+ 
+b)  Bitte beantworten Sie für die folgenden Einkunftserzielungstatbestände jeweils die folgenden Fragen: 
+
+  Zu welcher Einkunftsart gehören die entsprechenden Einkünfte? Bitte begründen Sie Ihre Antwor-
+
+ten stichwortartig und geben Sie, wenn möglich, auch die jeweils relevanten Gesetzesvorschriften des 
+
+Einkommensteuergesetzes an. 
+
+  Welcher Tarifvorschrift des Einkommensteuergesetzes unterliegt der jeweilige Einkunftstatbestand? 
+
+Falls ein Wahlrecht besteht, geben Sie bitte alle in Frage kommenden Alternativen an und nennen Sie 
+
+auch die entsprechenden relevanten Gesetzesvorschriften des Einkommensteuergesetzes. 
+
+Gehen Sie in allen Aufgabenteilen von der Annahme aus, dass die jeweils betrachteten Steuerpflichtigen 
+
+in Deutschland der unbeschränkten Einkommensteuerpflicht unterliegen. 
+
+Im Rahmen dieser Aufgabe kommen die folgenden Rechtsformen von Unternehmen vor: 
+
+GbR:  Gesellschaft bürgerlichen Rechts (= Personengesellschaft) 
+
+KG: 
+
+Kommanditgesellschaft (= Personenhandelsgesellschaft) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Herr L  ist  ledig  und  verbeamteter  Biologielehrer  an  einem  Osnabrücker  Gymnasium.  Im  einkommen-
+
+steuerlichen Veranlagungszeitraum 2014 hat er die folgenden Einkünfte erzielt: 
+
+b1)  Von  seinem  Arbeitgeber,  dem  Land  Niedersachsen,  erhielt  er  ein  Jahresgehalt  von  50.000 €.  
+
+(4 Punkte) 
+
+b2)  Nebenberuflich  war  Herr L  als  Dozent  bei  der  Volkshochschule  Osnabrück  tätig.  Für  mehrere  in 
+
+eigener  Verantwortung  durchgeführte  ornithologische  Vorträge  und  frühmorgendliche  Vogelfüh-
+
+rungen erhielt er ein Gesamthonorar von 3.000 €.  (4 Punkte) 
+
+b3)  Vor  einigen  Jahren  hat  Herr L  gemeinsam  mit  seiner  Schwester,  Frau S,  von  seinen  verstorbenen 
+
+Eltern  ein  Mehrfamilienhaus  in  Osnabrück  geerbt.  Dieses  Haus  haben  die  beiden  Geschwister  ins 
+
+Betriebsvermögen  der  L-S-GbR  eingebracht,  an  der  sie  zu  jeweils  50%  beteiligt  sind.  Als  aus-
+
+schließliche Tätigkeit vermietet die L-S-GbR das Haus an mehrere private Mietparteien. Aus seiner 
+
+Beteiligung erzielte Herr L im Jahr 2014 Einkünfte in Höhe von 10.000 €.  (5 Punkte) 
+
+b4)  Schließlich ist Herr L Kommanditist einer Familien-KG mit Sitz ebenfalls in Osnabrück, die in der 
+
+Automobil-Zulieferindustrie  tätig  ist  und  verschiedene  Karosserieteile  für  VW  produziert.  Der 
+
+Gewinnanteil von Herrn L aus der Kommanditbeteiligung betrug im Jahr 2014 25.000 €.  (5 Punkte) 
+
+ 
+
+Klausur zu Business Taxation B I, SS 2015, 2. Prüfungstermin 
+
+Seite 4 von 7 
+
+ 
+
+Aufgabe 2:   Einzelfragen zum Modulteil „Steuerliche Gewinnermittlung“  (45 Punkte) 
+
+ 
+a)  Bewertungsabschlag nach § 6b EStG: 
+ 
+
+Der  zur  Aufstellung  einer  Handelsbilanz  und  einer  derivativen  Steuerbilanz  verpflichtete  gewerbliche 
+
+Osnabrücker  Einzelunternehmer E  (Wirtschaftsjahr = Kalenderjahr)  verkaufte  im  Juli 2014  eine  seit 
+
+ihrer Anschaffung im Jahr 2004 in seinem Betriebsvermögen enthaltene Beteiligung an der börsennotier-
+
+ten Z-AG zu einem Verkaufspreis von 300.000 €. Zum Zeitpunkt des Verkaufs betrug der Buchwert die-
+
+ser Beteiligung 200.000 €. Durch den Verkauf wollte E seine Liquidität verbessern, um Anfang August 
+
+eine  Erweiterungsinvestition  in  Form  einer  maschinellen  Produktionsanlage  für  seine  Osnabrücker 
+
+Betriebsstätte mit  Eigenmitteln  finanzieren zu können. Die neue maschinelle Anlage hatte einen Kauf-
+
+preis  von  350.000 €  ohne  Umsatzsteuer  (USt  ist  aus  Vereinfachungsgründen  zu  vernachlässigen).  Die 
+
+Zahlung an den Lieferanten der maschinellen Anlage erfolgte durch Banküberweisung. 
+
+a1)  Gehen Sie in diesem Aufgabenteil davon aus, dass im vorliegenden Fall alle Voraussetzungen des 
+
+§ 6b Abs. 4 S. 1 EStG erfüllt sind. Prüfen Sie ausführlich und sorgfältig, ob dies auch für alle weite-
+
+ren  notwendigen  Voraussetzungen  für  die  Inanspruchnahme  des  § 6b  EStG  gilt.  Geben  Sie  dabei 
+
+auch  die  jeweils  relevanten  Rechtsgrundlagen  der  einzelnen  zu  prüfenden  Voraussetzungen  an.  
+
+(13 Punkte) 
+
+a2)  Gehen  Sie  unabhängig  von  Ihrem  Ergebnis  unter  a)  in  diesem  Aufgabenteil  davon  aus,  dass  die 
+
+Voraussetzungen für die Inanspruchnahme des § 6b EStG erfüllt sind. Welche genaue Möglichkeit 
+
+besteht  nach  § 6b  EStG  im  vorliegenden  Fall  des  Verkaufs  der  Beteiligung  an  der  Z-AG  und  des 
+
+Erwerbs des Ersatzwirtschaftsguts in  Form der maschinellen Anlage? Geben Sie für den Veräuße-
+
+rungs- und den anschließenden Anschaffungsvorgang den einheitlichen Buchungssatz an und kom-
+
+mentieren Sie diesen Buchungssatz.  (14 Punkte) 
+
+ 
+
+ 
+
+ 
+
+b)  Geben Sie für die folgenden Sachverhalte unter Angabe der entsprechenden gesetzlichen Vorschrift(en) 
+
+in  Stichworten die handels- und steuerbilanzielle Behandlung zum  relevanten Bilanzstichtag sowie die 
+
+Stellung im Rahmen des Systems des Maßgeblichkeitsprinzips an. Gehen Sie dazu bitte jeweils in den 
+
+folgenden Einzelschritten vor: 
+
+ 
+
+(Fortsetzung auf der nächsten Seite) 
+ 
+ 
+
+ 
+
+Klausur zu Business Taxation B I, SS 2015, 2. Prüfungstermin 
+
+Seite 5 von 7 
+
+ 
+
+Aufgabe 2:   Fortsetzung 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  Bilanzielle  Charakterisierung  des  vorliegenden  Sachverhalts  (nicht  in  den  Aufgabenteilen b2)  und 
+
+b3), weil dort bereits in der Aufgabenstellung gegeben) 
+
+  Behandlung in der Handelsbilanz 
+
+  Behandlung in der Steuerbilanz 
+
+  Beurteilung  im  System  des  Maßgeblichkeitsprinzips:  Geben  Sie  hier  bitte  ggf.  auch  die  jeweiligen 
+
+Konsequenzen der unterschiedlichen  Interpretationsmöglichkeiten des im Rahmen des Bilanzrechts-
+
+modernisierungsgesetzes (BilMoG) neu gefassten § 5 Abs. 1 S. 1 EStG an. 
+
+b1)  Anfang Dezember 2014  hatte die im Rohstoffhandel  tätige  R-AG ein  Rohöl-Termingeschäft abge-
+
+schlossen,  welches  sie  zum  1. März 2015  zur  Lieferung  von  1 Mio. Barrel  Rohöl  zum  Preis  von 
+
+55 €/Barrel an einen Kunden verpflichtete. Am Bilanzstichtag hatte die R-AG den für die künftige 
+
+Lieferung  erforderlichen  Rohölbestand  (noch)  nicht  am  Lager.  Der  Einkaufspreis  für  Rohöl  war 
+
+aufgrund der unsicheren politischen Weltlage inzwischen auf 65 €/Barrel gestiegen.  (8 Punkte) 
+
+b2)  Die  gewerbliche  F-G-OHG  (Wirtschaftsjahr  =  Kalenderjahr)  möchte  am  Bilanzstichtag,  den 
+
+31.12.2014, ihr Vorratsvermögen mit einem Verbrauchsfolgeverfahren bewerten.  (5 Punkte) 
+
+b3)  Die  V-GmbH  hat  Anfang  des  Wirtschaftsjahrs  (= Kalenderjahr)  2014  ein  neue  maschinelle  Ferti-
+
+gungsanlage zu einem Netto-Anschaffungspreis (ohne Umsatzsteuer) von 600.000 € angeschafft. In 
+
+der Bilanzabteilung wird überlegt, mit welcher Methode die neue Anlage planmäßig abgeschrieben 
+
+werden soll.  (5 Punkte) 
+
+ 
+(Aufgaben des Wahlteils auf den nächsten Seiten!) 
+
+ 
+ 
+
+ 
+
+Klausur zu Business Taxation B I, SS 2015, 2. Prüfungstermin 
+
+Seite 6 von 7 
+
+ 
+
+ 
+
+ 
+
+ 
+
+WAHLTEIL 
+
+Aufgabe 3:   Einzelfragen zum Modulteil „Steuersystematik und Einkommensteuer“  (30 Punkte) 
+
+ 
+Vorbemerkung: In dieser Aufgabe kommen die folgenden Rechtsformen vor: 
+
+OHG: 
+
+Offene Handelsgesellschaft (= Personengesellschaft) 
+
+GmbH: 
+
+Gesellschaft mit beschränkter Haftung (= Kapitalgesellschaft) 
+
+ 
+Einkommensteuerliche Besteuerung von Veräußerungsgewinnen: 
+
+Wie  werden  im  deutschen  Einkommensteuerrecht  die  folgenden  Veräußerungssachverhalte  behandelt? 
+
+Bitte beantworten Sie jeweils die folgenden Einzelfragen: 
+
+  Ist der Veräußerungssachverhalt steuerpflichtig? 
+
+  Bei gegebener Steuerpflicht: Welcher Einkunftsart ist der Veräußerungssachverhalt zuzuordnen? 
+
+  Bei gegebener Steuerpflicht: Welcher Tarifvorschrift unterliegt der Veräußerungssachverhalt? 
+
+Geben  Sie  zu  Ihren  Antworten  jeweils  auch  die  relevante(n)  einkommensteuerliche(n)  Gesetzesvor-
+
+schrift(en) an. Alle betrachteten Veräußerungen finden im Veranlagungszeitraum 2014 statt. 
+
+ 
+a)  Gewinn aus der Veräußerung ein Beteiligung an einer gewerblichen OHG.  (6 Punkte) 
+ 
+b)  Gewinn  aus  der  Veräußerung  einer  10%-igen,  im  Privatvermögen  gehaltenen  Beteiligung  an  einer 
+
+GmbH.  (9 Punkte) 
+
+ 
+c)  Gewinn  aus  der  Veräußerung  eines  im  Privatvermögen  gehaltenen  Mietshauses.  Das  Haus  wurde  im 
+
+Jahr 1990 erworben. Seitdem hatte der Eigentümer, Herr E, das Haus vermietet und damit Einkünfte aus 
+
+Vermietung und Verpachtung nach § 21 Abs. 1 Nr. 1 EStG erzielt.  (7,5 Punkte) 
+
+ 
+d)  Gewinn aus der Veräußerung festverzinslicher Wertpapiere (Bundesanleihen).  (7,5 Punkte) 
+
+Hinweis:  Bei  Anleihen  handelt  es  sich  im  Unterschied  zu  Aktien  nicht  um  Eigenkapital-,  sondern  um 
+
+Fremdkapitalpapiere,  d.h.  ihr  Eigentümer  besitzt  keine  gesellschaftsrechtliche  Beteiligungs-,  sondern 
+
+eine schuldrechtliche Gläubigerposition gegenüber dem Emittenten. 
+
+ 
+ 
+
+(Aufgabe 4 auf der nächsten Seite) 
+
+ 
+
+ 
+
+ 
+
+Klausur zu Business Taxation B I, SS 2015, 2. Prüfungstermin 
+
+Seite 7 von 7 
+
+ 
+ 
+Aufgabe 4:   Einzelfragen zum Modulteil „Steuerliche Gewinnermittlung“  (30 Punkte) 
+
+ 
+Nach welchen Aufwandabgrenzungsgrundsätzen werden die mit den folgenden Sachverhalten verbundenen 
+
+Aufwendungen zugeordnet? Bitte erläutern Sie nur einmal bei der ersten Nennung auch den  Inhalt des je-
+
+weils  relevanten  Abgrenzungsgrundsatzes  und  begründen  Sie  in  allen  Aufgabenteilen,  warum  der  ange-
+
+sprochene  Sachverhalt  unter  diesen  Abgrenzungsgrundsatz  fällt  und  wie  der  betreffende  Aufwand  in  der 
+
+aktuellen Abrechnungsperiode konkret behandelt wird. 
+
+ 
+a)  In zukünftigen Wirtschaftsjahren zu erwartenden Ansprüche von Kunden in Form von Gewährleistungs-
+
+verpflichtungen im Zusammenhang mit Schadensfällen an gelieferten Produkten oder Waren innerhalb 
+
+der gesetzlichen Gewährleistungsfristen  (6,5 Punkte) 
+
+ 
+b)  Produktionsaufwand  das  abgelaufene  Wirtschaftsjahr  für  auf  Lager  produzierte  Fertigerzeugnisse  bei 
+
+Anwendung der GuV-Variante des Umsatzkostenverfahrens  (6,5 Punkte) 
+
+ 
+c)  Verbuchung einer negativen Inventurdifferenz, verursacht vermutlich durch Diebstahl  (9,5 Punkte) 
+
+ 
+d)  Im Zusammenhang mit einem unbedingten Rohstoff-Termingeschäft besteht am Bilanzstichtag ein nega-
+
+tiver Verpflichtungsüberhang, d.h. der mit dem Kunden fest vereinbarte Verkaufspreis für die im nächs-
+
+ten Wirtschaftsjahr zu liefernde und noch nicht vorhandene Rohstoffmenge ist niedriger als der aktuelle 
+
+Einkaufspreis am Bilanzstichtag.  (7,5 Punkte) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AUFGABENLÖSUNGEN 
+
+AUSSCHLIESSLICH 
+
+IM GESONDERTEN LÖSUNGSHEFT! 
+
+ 
+
+VIEL ERFOLG! 
+
+ 
+
+

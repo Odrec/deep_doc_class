@@ -1,0 +1,2453 @@
+Neural substrates of cognitive capacity limitations
+
+Timothy J. Buschmana,1, Markus Siegela,b, Jefferson E. Roya, and Earl K. Millera
+
+aThe Picower Institute for Learning and Memory and Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge,
+MA 02139; and bCentre for Integrative Neuroscience, University of Tübingen, 72076 Tübingen, Germany
+
+Edited by Robert Desimone, Massachusetts Institute of Technology, Cambridge, MA, and approved May 23, 2011 (received for review March 23, 2011)
+
+Cognition has a severely limited capacity: Adult humans can retain
+only about four items “in mind”. This limitation is fundamental to
+human brain function: Individual capacity is highly correlated with
+intelligence measures and capacity is reduced in neuropsychiatric
+diseases. Although human capacity limitations are well studied,
+their mechanisms have not been investigated at the single-neuron
+level. Simultaneous recordings from monkey parietal and frontal
+cortex revealed that visual capacity limitations occurred immedi-
+ately upon stimulus encoding and in a bottom-up manner. Capacity
+limitations were found to reﬂect a dual model of working memory.
+The left and right halves of visual space had independent capacities
+and thus are discrete resources. However, within each hemiﬁeld,
+neural information about successfully remembered objects was re-
+duced by adding further objects, indicating that resources are shared.
+Together, these results suggest visual capacity limitation is due to
+discrete, slot-like, resources, each containing limited pools of neural
+information that can be divided among objects.
+slot model | interference model | attention | hemisphere
+Despite the remarkable power and ﬂexibility of human cog-
+
+nition, our working memory—the “online” workspace that
+most cognitive mechanisms depend upon—is surprisingly lim-
+ited. An average adult human has a capacity to retain only four
+items at a given time (1–3). This capacity is fundamental to
+cognition: Individual variability in capacity is highly correlated
+with ﬂuid intelligence (4–6) and patients with neuropsychiatric
+disorders often have a reduced capacity (7, 8). Because it is so
+basic to cognition, capacity limitation has been well studied in
+humans (9), particularly the capacity limitation of visual short-
+term working memory (for reviews see refs. 1 and 4). This work
+has led to several competing theories about the neural basis of
+capacity limitations. “Discrete” models suggest that capacity limi-
+tations reﬂect a limit in the number of objects that can be simul-
+taneously represented (3, 10, 11). “Flexible resource” models
+predict that only the total amount of information available is
+limited, with information divided among all represented objects
+(12–14). It is also not clear whether the limitation is in stimulus
+encoding or in maintenance (15).
+
+To better understand the neural basis of capacity limitations
+we simultaneously recorded from single neurons in the pre-
+frontal and parietal cortex of two monkeys trained to perform
+a typical human test of cognitive capacity: change localization
+(Fig. 1A). Two arrays of objects (colored squares) were sepa-
+rated by a short memory delay. In the second array, the color of
+a randomly chosen object (the target) was changed. Monkeys
+were trained to detect this change and make a saccade to it.
+Cognitive load was increased by varying the number of objects in
+the arrays from two to ﬁve. We recorded simultaneously from
+multiple electrodes in the frontal cortex [lateral prefrontal cortex
+(LPFC) and frontal eye ﬁelds (FEF)] and the parietal cortex
+[lateral intraparietal area (LIP)]. These areas were chosen as
+they are critical for short-term memory (16–19) and human
+studies implicate them in capacity limitations (20–22).
+
+Results
+Like in humans, increasing the number of objects decreased per-
+formance (84.8% correct with 2 objects to 66.5% with 5 objects,
+Fig. 1B). The amount of information the monkeys had about
+
+the objects in the array, calculated from their behavior (SI Mate-
+rials and Methods), increased from 2 to 4 objects, but then satu-
+rated, reﬂecting a limited capacity (Fig. 1C; 2 < 3, P < 10−15; 3 < 4,
+P < 10−15; 4 < 5, P = 0.12, two-tailed permutation test). A capacity-
+limited model ﬁtted the animals’ information signiﬁcantly better
+than a simpler linear model (P = 0.026, validation test, see SI
+Materials and Methods for details). Both monkeys’ capacities were
+similar (3.88 monkey Sp, 3.87 monkey Si), with an overall average
+of 3.88 objects [95% conﬁdence interval (CI): 3.82–3.93; SI
+Materials and Methods]. In similar paradigms the capacity of an
+average adult human is typically around 4 items (1).
+
+Closer examination of the monkeys’ behavior revealed that
+their total capacity was composed of two independent, smaller,
+capacities in the right and left halves of visual space (hemiﬁelds).
+Adding objects to the same hemiﬁeld as the target strongly de-
+graded performance (Fig. 2A, rows), whereas adding objects in the
+opposite hemiﬁeld had no impact (Fig. 2A, columns; ipsilateral
+effect, P = 5.0 × 10−11; contralateral effect, P = 0.23; ANOVA).
+The number of same-hemiﬁeld objects accounted for >95% of the
+behavioral effect of the total number of objects. Behavioral per-
+formance was not signiﬁcantly different between the two hemi-
+ﬁelds, suggesting similar capacity in each hemisphere (target
+hemiﬁeld effect, P = 0.74; ANOVA). The information the animals
+had about each hemiﬁeld increased with a second object, but then
+saturated, suggesting each hemiﬁeld’s capacity was ∼2 objects
+(Fig. 2C; 2 > 1, P < 10−15; 3 > 2, P = 0.58, two-tailed permutation
+test). Again, a nonlinear, capacity-limited model ﬁt signiﬁcantly
+better than a linear one (P = 4.4 × 10−4, validation test). The es-
+timated per-hemiﬁeld capacity was 1.6 objects (95% CI: 1.60–1.64;
+capacity of 1.74 for Sp and 1.51 for Si, Fig. S1).
+
+Neural activity also showed independent capacities for each
+visual hemiﬁeld. For example, average object information in
+LPFC neurons during the sample period decreased with increasing
+number of objects in the same hemiﬁeld (Fig. 2D, Left), but not
+the opposite hemiﬁeld (Fig. 2D, Right; ipsilateral effect, P = 1.4 ×
+10−4; contralateral effect, P = 0.51; two-way ANOVA). We found
+the same effect during the memory delay [ipsilateral effect (Ipsi),
+P = 2.6 × 10−6; contralateral effect (Contra), P = 0.53; two-way
+ANOVA] as well as in the LIP and FEF (Ipsi, P = 0.026 and P =
+0.029; Contra, P = 0.52 and P = 0.19; two-way ANOVA; see SI
+Materials and Methods for details). This result cannot reﬂect
+attention to one hemiﬁeld or switching attention between them;
+the monkeys could not predict which object would change and
+performance was well above that expected from those strategies.
+Is the brain’s capacity limit a bottom–up failure to perceptu-
+ally encode objects or a top–down failure to retain objects in
+memory? A perceptual encoding failure predicts that, when ca-
+pacity is exceeded, object information is lost during neurons’
+sensory responses and in lower-order before higher-order cortex.
+
+Author contributions: T.J.B. and E.K.M. designed research; T.J.B. and J.E.R. performed
+research; T.J.B. and M.S. analyzed data; and T.J.B. and E.K.M. wrote the paper.
+
+The authors declare no conﬂict of interest.
+
+This article is a PNAS Direct Submission.
+
+Freely available online through the PNAS open access option.
+1To whom correspondence should be addressed. E-mail: buschman@mit.edu.
+This article contains supporting information online at www.pnas.org/lookup/suppl/doi:10.
+1073/pnas.1104666108/-/DCSupplemental.
+
+11252–11255 | PNAS |
+
+July 5, 2011 | vol. 108 | no. 27
+
+www.pnas.org/cgi/doi/10.1073/pnas.1104666108
+
+A
+
+Fixation
+(500 ms)
+
+Sample
+(800 ms)
+
+Memory Delay
+(800 - 1000 ms)
+
+Test
+Array
+
+A
+
+ 
+i
+l
+
+Behavioral Performance for All Possible Displays
+
+100%
+
+t
+e
+g
+r
+a
+T
+ 
+o
+t
+ 
+l
+a
+r
+e
+t
+a
+
+l
+i
+
+s
+p
+I
+
+u
+m
+
+i
+t
+
+S
+
+ 
+f
+o
+ 
+#
+ 
+g
+n
+s
+a
+e
+r
+c
+n
+I
+
+i
+
+B
+
+100
+
+)
+
+%
+
+(
+ 
+e
+c
+n
+a
+m
+r
+o
+f
+r
+e
+P
+
+80
+
+60
+
+40
+
+80%
+
+60%
+
+40%
+
+20%
+
+3
+
+Time
+
+C
+
+)
+s
+t
+i
+
+ 
+
+n
+o
+
+i
+t
+
+a
+m
+r
+o
+n
+
+f
+
+I
+ 
+l
+
+a
+u
+
+t
+
+u
+M
+
+b
+(
+ 
+y
+t
+i
+t
+
+n
+e
+d
+
+I
+ 
+t
+
+e
+g
+r
+a
+T
+
+ 
+t
+
+u
+o
+b
+a
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+Information 
+
+Plateaus
+
+2
+
+3
+
+4
+
+5
+
+# of Total Objects in Display
+
+B
+
+)
+
+%
+
+(
+ 
+
+e
+c
+n
+a
+m
+r
+o
+
+f
+r
+e
+P
+
+90
+
+80
+
+70
+
+60
+
+2
+
+50
+# of Total Objects
+
+3
+
+4
+
+5
+
+in Display
+
+Fig. 1.
+(A) Task timeline. Animals ﬁxated (indicated by red circle) to start
+trial. A sample array was presented for 800 ms, consisting of two to ﬁve
+objects (ranging from zero to three in each hemiﬁeld). After a brief memory
+delay (800–1,000 ms) a test array was displayed that was identical to the
+sample, except one object (the target) had changed color. (B) Behavioral
+performance decreased as the number of objects in the stimulus array was
+increased. (C) The information the animal had about the entire stimulus
+array (derived from behavioral performance) increased until four or more
+objects were in the array, indicating the animal’s capacity was between
+three and four objects. All error bars indicate 95% conﬁdence intervals.
+
+A memory failure predicts a loss later (after encoding) and in
+higher cortical areas ﬁrst. We found the former. Below capacity
+(one object per hemiﬁeld), object information appeared in LIP
+early after sample array onset [193 ms (95% conﬁdence interval,
+149–229 ms); Fig. 3A], followed by LPFC [317 ms (249–359 ms);
+Fig. 3B] and FEF [291 ms (249–339 ms); Fig. 3C, LIP < the
+LPFC, P < 10−3; LIP < FEF, P = 0.003, randomization test],
+consistent with a bottom–up ﬂow of sensory information from
+parietal to frontal cortex. By comparing below- to above-capacity
+activity, we computed the latency for information loss (Fig. 3,
+compare blue curve to red/green curves). Information loss began
+soon after array onset and immediately in LIP activity [191 ms
+(139–249 ms); Fig. 3A, black square], earlier than in the LPFC
+[341 ms (289–379 ms); Fig. 3B, black square] and FEF [658 ms
+(599–709 ms); Fig. 3C, black square, LIP < LPFC, P < 10−3; LIP <
+FEF, P < 10−3; LPFC < FEF, P < 10−3, randomization test]. In
+fact, when capacity was exceeded (two to three objects per
+hemiﬁeld), information in the LIP was weak and did not reach
+signiﬁcance until after the LPFC and FEF (all P < 10−3, Fig. 3
+A–C and SI Materials and Methods). Individual neurons showed
+similar effects, with >85% of neurons selective in both below-
+and above-capacity displays showing a decrease in information
+when displays were above capacity (P = 4 × 10−8 across all areas;
+Fig. S3 and SI Materials and Methods). Information loss above
+capacity carried through the memory delay (Fig. 3 A–C, Right)
+with the LPFC showing a further reduction of information for
+three vs. two objects late in the delay (P = 0.047, randomization
+test). One possibility is that this delayed difference between two-
+and three-item displays reﬂects an unbounded (or less limited)
+source of information available during sample presentation but
+lost during the memory delay (e.g., iconic memory, ref. 2).
+
+A limited capacity to represent multiple objects was evident on
+a behavioral and neural
+level. However, what is the neural
+mechanism underlying this bottleneck? Two main hypotheses
+have been put forth. First, objects could compete for encoding
+within a limited number of discrete “slots”, with each object
+being either successfully or unsuccessfully encoded (3, 10, 11).
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+T
+
+Increasing # of Stimuli Contralateral to Target
+
+C
+
+ 
+n
+o
+i
+t
+a
+m
+r
+o
+f
+n
+I
+ 
+l
+a
+u
+t
+u
+M
+
+)
+s
+t
+i
+b
+(
+ 
+y
+t
+i
+t
+n
+e
+d
+I
+ 
+t
+e
+g
+r
+a
+T
+
+ 
+t
+u
+o
+b
+a
+
+0.45
+
+0.40
+
+0.35
+
+0.30
+
+0.25
+
+0.20
+
+2
+
+1
+# of Stimuli 
+
+3
+
+Ipsilateral to Target
+
+Below
+Capacity
+
+Above
+Capacity
+
+1
+
+2
+
+# of Stimuli
+
+Ipsilateral to Target
+
+D
+
+)
+
+V
+E
+P
+ω
+
+(
+ 
+n
+o
+i
+t
+a
+m
+r
+o
+f
+n
+I
+
+y
+t
+i
+t
+n
+e
+d
+I
+ 
+t
+c
+e
+b
+O
+
+j
+
+ 
+t
+u
+o
+b
+a
+
+Average LPFC Information about Object
+Identity during Sample Period (100 - 800 ms)
+
+x10-1
+
+15
+
+10
+
+5
+
+1
+
+2
+
+3
+
+# Ipsilateral Stimuli
+
+0
+
+1
+
+2
+
+3
+
+# Contralateral Stimuli
+
+Fig. 2.
+(A) Behavioral performance (indicated by the color of the border/
+background) for all possible stimulus displays. Adding objects to the same
+side (ipsilateral) as the target (marked with a “T”) impaired performance
+(rows), whereas adding objects to the other side (contralateral) had no ef-
+fect. This result argues for separate capacities in each hemisphere. (B) Be-
+havioral performance decreased as the number of objects ipsilateral to the
+target was increased and (C) the information the animal had about the ip-
+silateral stimulus array (derived from behavioral performance) increased
+until two or more objects, reﬂecting the animal’s capacity was between one
+and two objects in each hemiﬁeld. (D) Information was lost in lateral pre-
+frontal cortex (LPFC) neurons over the sample period (100–800 ms after
+stimulus array onset) as items were added ipsilateral to the encoded object
+(Left). However, adding contralateral items (Right) had no impact on neural
+information, matching the observed behavioral effects. All error bars in-
+dicate 95% conﬁdence intervals.
+
+E
+C
+N
+E
+I
+C
+S
+O
+R
+U
+E
+N
+
+Alternatively, capacity limitations could reﬂect a limited in-
+formation “pool” that is ﬂexibly divided among objects, and so
+adding objects reduces the information allotted to each encoded
+object (12–14). Our behavioral and neural data suggest that the
+two hemiﬁelds act like two slots. We tested whether encoding
+was also slot-like within a hemiﬁeld.
+
+A pure slot-like model predicts that encoding an object is all
+or none: If successfully remembered, there should be an equal
+amount of information about it regardless of how many other
+objects are in the array. If an object is forgotten, there should be
+no information about it. In contrast, we found that even when
+a given target object was successfully encoded and retained, in-
+formation about that speciﬁc object was reduced in all three
+areas when another object was added to its hemiﬁeld (Fig. 4A,
+1 > 2 objects: LIP, P = 0.033, 150–350 ms after array onset;
+LPFC, P = 0.001, at 350–800 ms; FEF, P = 0.041 at 450–800 ms,
+permutation tests; time windows selected on the basis of periods
+
+Buschman et al.
+
+PNAS |
+
+July 5, 2011 | vol. 108 | no. 27 | 11253
+
+Object Identity Information in LIP  
+
+Sample Period (n=68)  
+
+x10-1
+
+Delay (n=61)  
+
+5
+
+0
+
+200
+
+0
+Time from Sample Onset (ms)
+
+400
+
+600
+
+*
+
+800
+
+Early
+
+Late
+
+1 item
+
+2 items
+
+3 items
+
+Object Identity Information in LPFC 
+
+x10-1
+
+Sample Period (n=189)  
+
+Delay (n=195)  
+
+5
+
+0
+
+200
+
+0
+Time from Sample Onset (ms)
+
+400
+
+600
+
+*
+
+**
+
+*
+
+800
+
+Early
+
+Late
+
+Object Identity Information in FEF
+
+Sample Period (n=97)  
+
+x10-1
+
+Delay (n=102)  
+
+15
+
+10
+
+A
+
+)
+
+V
+E
+P
+ω
+
+(
+ 
+
+n
+o
+
+i
+t
+
+a
+m
+r
+o
+n
+
+f
+
+I
+
+y
+t
+i
+t
+
+n
+e
+d
+
+I
+ 
+t
+c
+e
+b
+O
+
+j
+
+ 
+t
+
+u
+o
+b
+a
+
+15
+
+10
+
+B
+
+)
+
+V
+E
+P
+ω
+
+(
+ 
+
+n
+o
+
+i
+t
+
+a
+m
+r
+o
+n
+
+f
+
+I
+
+y
+t
+i
+t
+
+n
+e
+d
+
+I
+ 
+t
+c
+e
+b
+O
+
+j
+
+ 
+t
+
+u
+o
+b
+a
+
+15
+
+10
+
+C
+
+)
+
+V
+E
+P
+ω
+
+(
+ 
+n
+o
+i
+t
+a
+m
+r
+o
+f
+n
+I
+
+y
+t
+i
+t
+n
+e
+d
+I
+ 
+t
+c
+e
+b
+O
+
+j
+
+ 
+t
+u
+o
+b
+a
+
+5
+
+0
+0
+
+200
+
+400
+
+600
+
+800
+
+Early
+
+Late
+
+Time from Sample Onset (ms)
+
+Fig. 3. Average information about object identity for object-selective neu-
+rons in (A) the lateral intraparietal cortex (LIP), (B) the lateral prefrontal cortex
+(LPFC), and (C) the frontal eye ﬁelds (FEF). Information about an encoded
+object is shown when the object was presented alone (blue), with another
+object (two total items, green), and with two other objects (three total objects,
+red). The shaded region indicates SEM. (A–C, Left) Information is shown over
+time for the sample period. The time at which information about the object
+was above baseline is indicated for one, two, and three items as blue, green,
+and red squares with associated lines depicting 95% CI. Information is lost in all
+three areas when the stimulus array is above the animal’s capacity (i.e., in-
+formation with two and three objects is less than with one object). Signiﬁcant
+difference between one and two or three objects is indicated by black bars
+(thin bars, P < 0.05; thick bars, P < 0.01). The time to ﬁrst signiﬁcant loss (P <
+0.05) is shown as a black square at the top of each section, with horizontal lines
+indicating 95% CI. We computed the neural latency for object selectivity as the
+time of the steepest rise in neural information around when it ﬁrst became
+signiﬁcant. This statistic is resistant to changes in statistical power, allowing for
+comparison across areas (SI Materials and Methods). The timing of in-
+formation loss (ﬁrst in LIP, followed by LPFC, and then FEF) suggests in-
+formation is lost in a bottom–up manner. (A–C, Right) Information over early
+(ﬁrst 400 ms) and late (second 400 ms) in the delay period. Dark shading of
+circles indicates signiﬁcant information above baseline. Signiﬁcant differences
+between one or two and two or three objects are indicated in black above.
+
+of selectivity; Fig. 3). Further, when the change to an object was
+not detected, it was not completely missing from neural activity:
+There was still signiﬁcant information in LPFC neurons during
+the presentation of the sample array (Fig. 4B, P = 0.0052, per-
+mutation test), albeit signiﬁcantly reduced from correct trials
+(Fig. 4B, P = 0.008, permutation test) that continued into the
+memory delay (P < 0.001, permutation test).
+
+Discussion
+We report three main results. First, capacity limits were seen in the
+initial sensory encoding and not as a memory failure. When ca-
+pacity was exceeded, information was lost during the initial neural
+
+Correct (Remembered) Trials
+
+A
+
+y
+t
+i
+t
+
+n
+e
+d
+
+I
+ 
+t
+
+e
+g
+r
+a
+T
+
+ 
+t
+
+u
+o
+b
+a
+
+)
+
+V
+E
+P
+ω
+
+(
+ 
+
+n
+o
+
+i
+t
+
+a
+m
+r
+o
+
+f
+
+n
+
+I
+
+**
+
+x10-1
+
+*
+
+***
+
+***
+
+15
+
+10
+
+5
+
+0
+
+*
+
+***
+
+**
+
+***
+
+B
+15
+
+x10-1
+***
+
+**
+
+10
+
+5
+
+0
+
+**
+
+LIP
+
+(150-350 ms)
+
+LPFC
+(300-800 ms)
+
+1 Object in Array
+
+FEF
+
+(450-800 ms)
+2 Objects
+
+Correct Error
+
+LPFC
+(300-800 ms)
+
+Fig. 4.
+(A) Neural information about the identity of the target is signiﬁcantly
+lower with a second object, even when the animal correctly identiﬁed the
+change at the target. (B) Signiﬁcant information about target identity is found
+even on error trials when the animal did not detect the target change, al-
+though it is signiﬁcantly lower than during correct trials. All error bars indicate
+SEM and signiﬁcance is as follows: *P < 0.05; **P < 0.01; and ***P < 0.001.
+
+response to the stimulus and in parietal before frontal cortex. This
+result is supported by previous work showing that a subject’s ability
+to attentively ﬁlter information is a major factor in their effective
+capacity size (15, 23). It is also consistent with our second main
+result of two independent capacities in the right and left half of
+visual space. The bottleneck begins in posterior cortex where
+neural receptive ﬁelds are more restricted to one hemiﬁeld than
+in prefrontal cortex. Human studies report varying degrees of
+hemiﬁeld independence (24–27). In our task, the need to localize
+the changed object may emphasize this independence. Indeed, the
+strongest evidence for human hemiﬁeld independence comes
+from divided-attention tasks like multiple-object tracking (28, 29).
+Discrete-resource models suggest that capacity depends on
+a limited number of slot-like, independent resources (3, 10, 11)
+whereas ﬂexible-resource models suggest a resource pool that
+can be subdivided among items (12–14). Our results suggest both
+mechanisms are at play. The two hemiﬁelds act like discrete
+resources, whereas within a hemiﬁeld neural information is di-
+vided among objects in a graded fashion. This model is sup-
+ported by human psychophysical experiments indicating graded
+information resources within slots (30, 31). It is also consistent
+with observations that information about multiple objects mul-
+tiplexes in PFC neurons as if the objects are shared among them
+(32, 33). One intriguing possibility is that the neural mechanism
+underlying the observed decay in information is similar to the
+competition observed during inattention (34–36), although here
+the animal’s task is to attend to and remember all of the stimuli.
+The fact that contralateral stimuli had little impact on neural
+representations (Fig. 2D) suggests an independence at the neural
+level, possibly reﬂecting competition within contralaterally bi-
+ased receptive ﬁelds (even in the lateral prefrontal cortex) (18,
+37). Interestingly, parietal neurons seem to have a more severe
+capacity limitation than frontal regions. Indeed, there were no
+above-capacity responses until after activation of frontal cortex,
+suggesting top–down inﬂuences may be needed to partially
+overcome capacity limits. This ﬁnding also necessitates that in-
+formation reaches prefrontal cortex from sources other than
+parietal. An obvious candidate is the ventral stream, suggesting
+further experiments are needed to fully understand the dynamics
+of capacity limits throughout the visual system.
+
+In sum, our results suggest that visual capacity limits result
+from competition for encoding within independent, but limited
+pools of neural information that can each be divided among
+multiple objects.
+
+Materials and Methods
+Please see SI Materials and Methods for a detailed description of all mate-
+rials and methods.
+
+11254 | www.pnas.org/cgi/doi/10.1073/pnas.1104666108
+
+Buschman et al.
+
+Animals and Recordings. Two adult rhesus monkeys (Macaca mulatta) were
+trained to perform a change localization task (Fig. 1A). After a short ﬁxation
+period (500 ms) an array of colored squares was presented for 800 ms (the
+sample period). A long sample period was chosen to ensure the animal had
+enough time to fully attend to and process all of the items in the array.
+Following the sample period the stimuli were removed for a memory delay
+that ranged from 800 to 1,000 ms. A second array was then presented that
+was identical to the sample array except the color of a single randomly
+chosen object (the target) was changed. The animal was rewarded for
+making a single, direct, saccade to it. Six new stimulus locations were chosen
+each day, ranging from ±75 angular degrees from the horizontal meridian
+and between 4° and 6° of visual angle (dva) from ﬁxation. Stimuli were
+colored squares 1 dva on a side. Two colors were randomly chosen for each
+location every day, preventing the monkeys from adopting any long-term
+memorization strategies. An infrared-based eye-tracking system monitored
+eye position at 240 Hz (ISCAN). Behavioral control of the paradigm was done
+with the Monkeylogic program (www.monkeylogic.net) (38, 39).
+
+Simultaneous recordings were made from single neurons in prefrontal
+cortex (LPFC, 584 neurons; FEF, 325 neurons) and the parietal cortex (LIP, 284
+neurons). All procedures followed the guidelines of the Massachusetts
+Institute of Technology Committee on Animal Care and the National Insti-
+tutes of Health. Epoxy-coated tungsten electrodes (FHC) were used for re-
+cording. Electrodes were lowered using a custom-built microdrive assembly
+with 1-mm spacing.
+
+Estimating Behavior Capacity. The animal’s behavioral capacity was estimated
+using an information theoretic approach. This method fully accounts for
+chance behavior and makes no assumption about the animal’s strategy in
+solving the task. First, the animal’s information about each display was de-
+termined from its behavioral performance (see SI Materials and Methods for
+details). By combining these we could determine the information the animal
+had about displays with a given total number of objects (Fig. 1C). Hemiﬁeld
+information was determined by decomposing the total
+information in
+a given array into each hemiﬁeld’s display (SI Materials and Methods).
+Again, this information can be combined for displays of a given size to es-
+timate the animal’s capacity in each hemiﬁeld (Fig. 2C).
+
+Neural Information About Stimulus Identity. We quantiﬁed the information
+each neuron’s ﬁring rate carried about the identity (color) of each object in
+the hemiﬁeld contralateral to the recorded hemisphere using a bias-corrected
+percentage of explained variance (ωPEV) statistic (Fig. S2 and SI Materials and
+Methods). To ensure our analysis was unbiased, all well-isolated neurons were
+recorded and our analysis made no a priori assumptions about the structure of
+color or location information in neural activity across time or display con-
+ditions. We report all neurons that showed signiﬁcant information (i.e., object
+selectivity) to any stimulus in the sample array (68 neurons in LIP, 189 neurons
+in LPFC, and 97 neurons in FEF). Information was averaged across all selective
+neurons and all attempted trials, unless speciﬁed otherwise (such as for the
+correct or error-only trials, Fig. 4).
+
+Timing of Information Loss. Two different latencies were of interest: When did
+neurons ﬁrst encode information about a stimulus and when was this in-
+formation degraded due to capacity limitations? For the former, we asked
+when the amount of information in a neuron population signiﬁcantly
+exceeded baseline. For the latter, we determined the latency of a signiﬁcant
+difference in neural information between below- and above-capacity con-
+ditions (e.g., one vs. two objects). For both measures we deﬁned the latency
+as the time point of maximum rise in the difference function. The maximum
+rise statistic was used as it is resistant to differences in statistical power: Vary-
+ing the number of neurons in a population will change the threshold of
+signiﬁcance, but will not a priori affect the shape of the function and
+therefore will not change the point of maximum slope. The search for the
+point of maximum rise was limited to a 150-ms window around the ﬁrst time
+a signiﬁcant difference was found (e.g., 191 ms in LIP for greater information
+in below-capacity trials compared with above-capacity trials). Uncertainty
+about the time to signiﬁcance was determined by bootstrapping the pop-
+ulation of neurons and redetermining the point of maximum slope.
+
+ACKNOWLEDGMENTS. We thank S. Henrickson and M. Wicherski for com-
+ments on the manuscript; W. Asaad, K. Maccully, and D. Ouellette for
+technical and other support; and V. Yorgan, R. Meyer, and S. Greenman for
+assistance with training. E.K.M. and co-workers are supported by National
+Science Foundation CELEST OMA-0835976 and National Institute of Mental
+Health Grant 1R01MH091174-01.
+
+E
+C
+N
+E
+I
+C
+S
+O
+R
+U
+E
+N
+
+1. Cowan N (2001) The magical number 4 in short-term memory: A reconsideration of
+
+20. Todd JJ, Marois R (2005) Posterior parietal cortex activity predicts individual differences
+
+mental storage capacity. Behav Brain Sci 24:87–114, discussion 114–185.
+
+in visual short-term memory capacity. Cogn Affect Behav Neurosci 5:144–155.
+
+2. Sperling G (1960) The information available in brief visual presentations. Psychol
+
+21. Todd JJ, Marois R (2004) Capacity limit of visual short-term memory in human
+
+Monogr 74:1–29.
+
+3. Luck SJ, Vogel EK (1997) The capacity of visual working memory for features and
+
+conjunctions. Nature 390:279–281.
+
+4. Fukuda K, Vogel E, Mayr U, Awh E (2010) Quantity, not quality: The relationship
+between ﬂuid intelligence and working memory capacity. Psychon Bull Rev 17:
+673–679.
+
+5. Cowan N, et al. (2005) On the capacity of attention: Its estimation and its role in
+
+working memory and cognitive aptitudes. Cognit Psychol 51:42–100.
+
+6. Engle RW, Tuholski SW, Laughlin JE, Conway AR (1999) Working memory, short-term
+memory, and general ﬂuid intelligence: A latent-variable approach. J Exp Psychol Gen
+128:309–331.
+
+7. Lee EY, et al. (2010) Visual working memory deﬁcits in patients with Parkinson’s
+disease are due to both reduced storage capacity and impaired ability to ﬁlter out
+irrelevant information. Brain 133:2677–2689.
+
+8. Karatekin C, Asarnow RF (1998) Working memory in childhood-onset schizophrenia
+
+and attention-deﬁcit/hyperactivity disorder. Psychiatry Res 80:165–176.
+
+9. Marois R, Ivanoff J (2005) Capacity limits of information processing in the brain.
+
+Trends Cogn Sci 9:296–305.
+
+10. Awh E, Barton B, Vogel EK (2007) Visual working memory represents a ﬁxed number
+
+of items regardless of complexity. Psychol Sci 18:622–628.
+
+11. Fukuda K, Awh E, Vogel EK (2010) Discrete capacity limits in visual working memory.
+
+Curr Opin Neurobiol 20:177–182.
+
+12. Wilken P, Ma WJ (2004) A detection theory account of change detection. J Vis 4:
+
+1120–1135.
+
+13. Bays PM, Husain M (2008) Dynamic shifts of limited working memory resources in
+
+human vision. Science 321:851–854.
+
+14. Alvarez GA, Cavanagh P (2004) The capacity of visual short-term memory is set both
+
+by visual information load and by number of objects. Psychol Sci 15:106–111.
+
+15. Vogel EK, McCollough AW, Machizawa MG (2005) Neural measures reveal individual
+
+differences in controlling access to working memory. Nature 438:500–503.
+
+16. Xu Y, Chun MM (2006) Dissociable neural mechanisms supporting visual short-term
+
+memory for objects. Nature 440:91–95.
+
+17. Fuster JM, Alexander GE (1971) Neuron activity related to short-term memory.
+
+Science 173:652–654.
+
+18. Funahashi S, Bruce CJ, Goldman-Rakic PS (1989) Mnemonic coding of visual space in
+
+the monkey’s dorsolateral prefrontal cortex. J Neurophysiol 61:331–349.
+
+posterior parietal cortex. Nature 428:751–754.
+
+22. Palva JM, Monto S, Kulashekhar S, Palva S (2010) Neuronal synchrony reveals working
+memory networks and predicts individual memory capacity. Proc Natl Acad Sci USA
+107:7580–7585.
+
+23. Vogel EK, Machizawa MG (2004) Neural activity predicts individual differences in
+
+visual working memory capacity. Nature 428:748–751.
+
+24. Delvenne JF (2005) The capacity of visual short-term memory within and between
+
+hemiﬁelds. Cognition 96:B79–B88.
+
+25. Delvenne JF, Kaddour LA, Castronovo J (2010) An electrophysiological measure of visual
+short-term memory capacity within and across hemiﬁelds. Psychophysiology 48:333–336.
+26. Voytek B, Knight RT (2010) Prefrontal cortex and basal ganglia contributions to visual
+
+working memory. Proc Natl Acad Sci USA 107:18167–18172.
+
+27. Barceló F, Suwazono S, Knight RT (2000) Prefrontal modulation of visual processing in
+
+humans. Nat Neurosci 3:399–403.
+
+28. Alvarez GA, Cavanagh P (2005) Independent resources for attentional tracking in the
+
+left and right visual hemiﬁelds. Psychol Sci 16:637–643.
+
+29. Cavanagh P, Alvarez GA (2005) Tracking multiple targets with multifocal attention.
+
+Trends Cogn Sci 9:349–354.
+
+30. Zhang W, Luck SJ (2008) Discrete ﬁxed-resolution representations in visual working
+
+memory. Nature 453:233–235.
+
+31. Anderson DE, Vogel EK, Awh E (2011) Precision in visual working memory reaches
+a stable plateau when individual item limits are exceeded. J Neurosci 31:1128–1138.
+32. Ninokura Y, Mushiake H, Tanji J (2003) Representation of the temporal order of visual
+
+objects in the primate lateral prefrontal cortex. J Neurophysiol 89:2868–2873.
+
+33. Warden MR, Miller EK (2007) The representation of multiple objects in prefrontal
+
+neuronal delay activity. Cereb Cortex 17 (Suppl 1):i41–i50.
+
+34. Moran J, Desimone R (1985) Selective attention gates visual processing in the
+
+extrastriate cortex. Science 229:782–784.
+
+35. Heeger DJ (1992) Normalization of cell responses in cat striate cortex. Vis Neurosci 9:
+
+181–197.
+
+36. Reynolds JH, Heeger DJ (2009) The normalization model of attention. Neuron 61:168–185.
+37. Rainer G, Asaad WF, Miller EK (1998) Memory ﬁelds of neurons in the primate
+
+prefrontal cortex. Proc Natl Acad Sci USA 95:15008–15013.
+
+38. Asaad WF, Eskandar EN (2008) A ﬂexible software tool for temporally-precise
+
+behavioral control in Matlab. J Neurosci Methods 174:245–258.
+
+19. Curtis CE, D’Esposito M (2003) Persistent activity in the prefrontal cortex during
+
+39. Asaad WF, Eskandar EN (2008) Achieving behavioral control with millisecond resolution
+
+working memory. Trends Cogn Sci 7:415–423.
+
+in a high-level programming environment. J Neurosci Methods 173:235–240.
+
+Buschman et al.
+
+PNAS |
+
+July 5, 2011 | vol. 108 | no. 27 | 11255
+
+Supporting Information
+Buschman et al. 10.1073/pnas.1104666108
+SI Materials and Methods
+Two male rhesus monkeys, Sp and Si, weighing 13 and 6 kg, re-
+spectively, were trained on a visual working memory task (Fig. 1A).
+All procedures followed the guidelines of the Massachusetts In-
+stitute of Technology Committee on Animal Care and the Na-
+tional Institutes of Health. Animals were prepared using standard
+procedures (1, 2). Chambers were stereotaxically placed over
+frontal and parietal cortices (in the same hemisphere), using
+structural MRI scans. Unique software was developed in Matlab
+that produced 3D models of each animal’s skull and brain in ste-
+reotaxic coordinates. This method allowed accurate placement of
+electrode penetrations into lateral prefrontal cortex, frontal eye
+ﬁelds, and lateral intraparietal cortex simultaneously. Epoxy-
+coated tungsten electrodes (FHC) were used for recording as well
+as for microstimulation. Electrodes were lowered using a custom-
+built microdrive assembly that lowered electrodes in pairs from
+a single screw. The microdrive assembly was designed to allow for
+a high density of electrodes (1-mm spacing) to maximize the
+number of simultaneously recorded neurons across our three re-
+gions of interest. The electrodes were acutely lowered through an
+intact dura at the beginning of every recording session and allowed
+to settle for a minimum of 2 h before recording. This process en-
+sured stable isolation of the activity single neurons. After each
+recording session, the electrodes were retracted and the micro-
+drive assembly was removed from the well.
+
+Spiking activity was recorded across a maximum of 50 elec-
+trodes simultaneously. Both spiking activity and local ﬁeld
+potentials were referenced to ground. The signal from each
+electrode was divided into spiking activity and a local ﬁeld po-
+tential by ﬁltering between 154 Hz and 8.8 kHz for spikes and
+between 3.3 and 88 Hz for the local ﬁeld potential. Only spiking
+data were analyzed for this paper. Waveforms were stored and
+single neural activity was sorted from the raw spiking activity
+signal off-line using a combination of principal component
+analysis of waveform traces along with other properties of the
+recorded waveforms (amplitude, trough/peak latency, etc). An
+infrared-based eye-tracking system monitored eye position at
+240 Hz. Behavioral control of the paradigm was handled by the
+Monkeylogic program (www.monkeylogic.net) (3, 4). All analysis
+code was custom written in Matlab or C.
+
+Behavioral Task. The trial was initiated when the animal ﬁxated on
+a point at the center of the screen. Fixation was required within
+1.75° of visual angle (dva) of the ﬁxation point. After a short
+ﬁxation period (500 ms), the animal was presented with an array
+of colored squares for 800 ms. A long stimulus period was chosen
+to ensure the animal had enough time to fully attend to and
+process all of the items in the array. After the sample period the
+stimuli were removed and the animal was required to maintain
+ﬁxation for a memory delay that ranged from 800 to 1000 ms.
+Following the memory delay, a test array was presented. The test
+array was identical to the sample array except that the color of
+a single stimulus was changed. The animal’s task was to make
+a single, direct, saccade to the changed object.
+
+Six new stimulus locations were chosen each day. There were
+always three locations in each visual hemiﬁeld, ranging from ±75
+angular degrees from the horizontal meridian and between 4 and
+6 dva from ﬁxation. Stimuli were colored squares 1 dva on a side.
+Two colors were chosen for each location every day. Both the
+location and colors were changed each day, to prevent monkeys
+from adopting any long-term memorization strategy. The colors
+were drawn from a predeﬁned population of 14 colors in a ran-
+
+dom manner as long as 2 colors were not too difﬁcult to dis-
+criminate at a particular location (i.e., red and pink were never
+paired). This process ensured a large degree of variety in the
+stimuli used on a particular day and thus required the animals to
+encode and hold in memory the array presented on each trial
+and detect its change rather than memorizing ﬁxed stimulus-
+response associations. The location of the target item (which
+was the stimulus that ﬂipped from one of the color pair in the
+sample array to the other in the test array) was chosen randomly
+on each trial.
+
+The total number of stimuli in the visual array varied from two
+to ﬁve items on each trial. Early in training the number of total
+stimuli in the array was chosen randomly. However, we noticed
+both animals showed behavioral evidence of independent capacities
+in each hemiﬁeld (Fig. 2). Anticipating the need to compare trials
+with one, two, and three objects in a hemisphere, we then equalized
+the number of trials in each of these conditions. Therefore, the con-
+stellation of the stimuli used was pseudorandomly chosen such
+that both the distribution of trials with one, two, or three items in
+the target’s hemiﬁeld and the distribution of total number of stimuli
+in a trial were ﬂattened. This process did not alter the probability of
+the target location.
+
+The animals performed a minimum of 720 correct trials during
+recording sessions, ensuring at least 20 trials for each target, color,
+and number of ipsilateral stimuli conditions. Both monkeys per-
+formed the task well above chance and with similar capacities (Fig.
+S1). Only trials during which the animal was consistently at-
+tempting the task were used: Three of ﬁve trials in any given period
+had to be attempted to be included. Nonattempted trials were
+failing to initiate the trial or broken ﬁxation before the trial was
+completed. For the main analysis (Figs. 2D and 3), all attempted
+trials (correct or error) were used, regardless of the target location.
+For correct/error analyses, only trials where the animal correctly/
+incorrectly identiﬁed a change at a given object were used.
+
+Estimating Information from Behavior. To understand how capacity
+limitations are reﬂected in neural activity, we ﬁrst must estimate
+the animal’s behavioral capacity. An information theoretic ap-
+proach was used to fully account for chance behavior and make
+no assumptions about the animal’s strategy in solving the task.
+We were interested in knowing how much information the ani-
+mal had about a given stimulus display. As the animal uses this
+information to make its behavioral choice, this is equivalent to
+asking how much information the animal’s choice gives us about
+where the target is located: I(target; behavior) = H(target) – H
+(target | choice), where HðxÞ ¼ − ∑N
+i pðxiÞ × log2 pðxiÞ is the un-
+certainty of x. The uncertainty of the location of the target, H
+(target), was determined directly from the likelihood of the
+target appearing at each possible location in the display (i.e.,
+a ﬂat distribution). The uncertainty of the target, given the ani-
+mal’s choice, was equal to the probability the target was at each
+position given that the animal chose a particular location.
+
+This process determines the information for a whole stimulus
+array (Fig. 1C), but we were also interested in the information
+the animal had about stimuli in each hemiﬁeld. The animal’s
+behavior and neural activity showed the two hemispheres were
+independent. Therefore, the information the animal had about
+the overall display can be decomposed into the sum of the two
+independent hemiﬁelds. This process allows us to estimate the
+information for the display in each hemiﬁeld directly from the
+total display: I(display) = I(left display) + I(right display). For
+example, given a particular display:
+
+Buschman et al. www.pnas.org/cgi/content/short/1104666108
+
+1 of 6
+
+X
+
+X1A ¼ I0@
+
+
+
+X 1A þ0@
+
+
+X
+
+X1A:
+
+X
+
+I0@
+
+As there were 56 unique total stimulus displays, and 8 unique
+displays for the left and right sides, we can solve the set of linear
+equations to estimate the information for each hemiﬁeld. These
+estimates are then used to estimate the average information
+given the number of stimuli in the hemiﬁeld (Fig. 2C and Fig.
+S1B) and show that both animals had a capacity limit between
+one and two items in each hemiﬁeld. Matlab code for using this
+information theoretic approach to behavioral analysis is gladly
+shared upon request.
+
+Determining Whether Behavioral Information Was Capacity Limited.
+To determine whether the information the animals had about the
+display (Figs. 1C and 2C) was capacity limited we use a model
+selection approach. The observed information was modeled with
+both a linear curve, I = β1x + β0, and a capacity-limited curve,
+
+I ¼ β1x þ β0; x < c
+β1c þ β0; x ≥ c:
+
+We compared the goodness-of-ﬁt using both a validation test and
+the Bayesian information criterion (BIC). For the validation test
+a randomly selected subset of the trials (70%) was used to es-
+timate the parameters of each model in turn. The predicted values
+from each model were then compared with the reserved trials to
+measure the error in the model ﬁt. This process “validates” how
+well the model captures the data without overﬁtting. By re-
+peating this process multiple times a distribution of the differ-
+ence in errors for our two models can be generated. The
+validated errors for the capacity-limited model were signiﬁcantly
+lower than those for the linear model for the information about
+the total display (Fig. 1C, P = 0.026). This difference was even
+greater for the ipsilateral information (Fig. 2C, P = 4.4 × 10−4).
+Alternatively, one can use the BIC to test how well models ﬁt the
+observed data while correcting for differences in the number of
+free parameters (5, 6). As with the validation test, the capacity-
+limited model was found to ﬁt better (have a lower BIC) for both
+the total (BIClinear = −24.9, BICcap-lim = −31.0) and ipsilateral
+displays (BIClinear = −17.4, BICcap-lim = −21.8). Both of these
+tests conﬁrm that the capacity-limited model ﬁts the observed
+behavioral data better than a simpler linear model, suggesting
+the monkeys’ behavior was indeed capacity limited.
+
+Estimating Capacity from Behavior. Although estimating the in-
+formation available to the animal from their behavioral perfor-
+mance fully accounts for chance levels and alternative strategies
+it is difﬁcult to directly compare with previous human psycho-
+physical work. Therefore, we also computed the capacity for each
+animal using a behavioral model similar to that previously used in
+human capacity limitation studies. The animals were modeled to
+correctly remember c objects worth of information on a given
+trial (their capacity). This limit was not necessarily discrete and
+partial object information was allowed (e.g., 3.7 items). The
+animals’ baseline performance was taken to be b to compensate
+for ﬁxation breaks, periods of inattention, etc. Using these two
+parameters, we modeled their likelihood of getting a trial correct as
+
+pðnÞ ¼( b;
+
+b
+
+n ≤ c
+c
+n; n > c;
+
+where n is the number of objects in the visual array (either within
+a hemiﬁeld or across the entire visual scene depending on
+whether we were estimating the hemiﬁeld or total capacity).
+Conﬁdence intervals were estimated by a bootstrapping pro-
+
+cedure: a new population of trials (from the >42,000 recorded)
+was randomly selected (with replacement) and the parameters
+were reestimated. Repeating this process 1,000 times resulted in
+a distribution for each parameter from which 95% conﬁdence
+intervals (95% CI) were determined. However,
+it should be
+noted that this model-based approach does not fully accommo-
+date for alternative strategies (such as an exclusionary strategy)
+or guessing. This problem is typically corrected in human psy-
+chophysical work by subtracting the false alarm rate from the hit
+rate (7), but this process becomes complicated when capacities
+between hemiﬁelds are independent but guessing is not (as the
+animal can make only one choice). However, our estimate from
+this simple behavioral model is well aligned with the plateau
+observed in the information theoretic analysis (which fully
+compensates for any of these strategies), suggesting the animals
+were not adopting a complicated behavioral strategy.
+
+Recording Locations. A total of 50 electrodes were implanted into
+parietal and frontal cortex simultaneously, up to 25 in each an-
+atomical area. Data are presented from 28 sessions (14 each for Si
+and Sp). A total of 1,334 neurons were recorded across all three
+anatomical regions in two monkeys (339 from the lateral intra-
+parietal area, LIP; 640 neurons from lateral prefrontal cortex,
+LPFC; and 355 neurons from the frontal eye ﬁelds, FEF). We
+chose to record from frontal and parietal cortex as both regions
+have been implicated in working memory (8–11) and capacity
+limitations (12–14). Furthermore, all three regions have been
+previously shown to encode stimulus color, particularly when
+task relevant (15, 16). A total of 540 neurons were recorded from
+monkey Si and 794 neurons from monkey Sp. Similar behavioral
+and electrophysiological results were obtained from each animal
+alone (Figs. S1 and S2), so they are combined for presentation.
+The LIP recording well was placed at ∼4 mm posterior from
+the interaural plane and was placed using structural MRIs. To
+identify LIP neurophysiologically, we trained the animals on
+a delayed saccade task. During central ﬁxation, a brief spot of
+light was ﬂashed in the periphery. After a memory delay, the
+ﬁxation point was extinguished and the animal made a saccade to
+the remembered location of the light spot. This has been used to
+isolate LIP from surrounding regions, as it is the only region in
+the parietal cortex that shows spatially selective memory delay
+activity (17). The animals performed the delayed saccade task at
+the beginning of every recording session. Electrodes were con-
+sidered to be within LIP for that session only if a neuron isolated
+from that electrode showed memory delay activity selective for
+the remembered location (P < 0.05 using the ωPEV statistic).
+
+The frontal recording well was placed at ∼32 mm anterior from
+the interaural plane. Microstimulation was used to demarcate
+the frontal eye ﬁelds from dorsolateral prefrontal cortex. An
+Isolated Pulse Stimulator (Model 2100; A-M Systems) was used
+for electrical stimulation. Stimulation was delivered as a 200-ms
+train of biphasic pulses with a width 400 μs and an interpulse
+frequency of 330 Hz, using the same electrodes used for re-
+cording. Current level was started at 150 μA and reduced to ﬁnd
+the threshold at which an eye movement vector was elicited 50%
+of the time. Only sites that had thresholds of stimulation am-
+plitudes <50 μA were classiﬁed as belonging to the frontal eye
+ﬁelds (18). Anterior sites were classiﬁed as belonging to the
+LPFC. In general, stimulation at LPFC sites did not elicit eye
+movements even at the highest current amplitude tested (150 μA).
+For the analysis of the overall loss of information (Fig. 3), we
+required each neuron’s activity to have been recorded for a
+minimum of 30 trials for each object location. This restriction
+yielded a population of 284 LIP neurons, 584 LPFC neurons,
+and 325 FEF neurons. However, this requirement was relaxed to
+15 trials for the correct-alone (Fig. 4A) and 5 trials for correct vs.
+error (Fig. 4B) analyses, as these analyses required the analyzed
+object to be the eventual target. In addition, only selective
+
+Buschman et al. www.pnas.org/cgi/content/short/1104666108
+
+2 of 6
+
+neurons (assessed across all trials, see below) were used. This
+restriction yielded 41 selective LIP neurons, 130 selective LPFC
+neurons, and 67 selective FEF neurons included in the correct/
+error analysis (Fig. 4).
+
+Information from Individual Neuron Firing Rates. The factor of in-
+terest was the color identity of each object in the array, which was
+not known to the monkey before the trial began. The key question
+was how neural information about color identity of the objects
+changed as the number of objects to be encoded and remembered
+was increased. We assessed selectivity for the identity of each
+stimulus for each neuron using a percentage of explained variance
+(PEV) statistic (for example, neurons, Fig. S2). The PEV reﬂects
+how much of the variance in a neuron’s ﬁring rate can be explained
+by the color identity of a particular stimulus. Typically, PEV is
+expressed as η2, η2 ¼ SSBetween Groups=SSTotal; where SSTotal ¼
+∑N
+i ðxi − xÞ2 and SSBetween Groups ¼ ∑G
+group ngroup ðxgroup − xÞ2: Un-
+fortunately, for smaller sample sizes, the η2 statistic has a strong
+positive bias. Therefore, for all of our statistics in this paper we
+used the ω2 statistic (ωPEV),
+
+SSBetween Groups − df × MSE
+
+;
+
+SSTotal þ MSE
+
+ω2 ¼
+
+where df is the degrees of freedom (i.e., the number of groups,
+G, − 1) and MSE is
+the mean squared error, MSE ¼
+∑N
+i ðxi − xgroupÞ2: ω2 is an unbiased measure (19), resulting in
+a zero-mean statistic when there is no information (e.g., see
+baselines of Fig. S2, Lower row). For this reason, and as ω2 is not
+computationally expensive to compute, we prefer ωPEV over the
+more prevalent η2 form. However, it is important to note that
+although the mean of ω2 is unbiased, the distribution of observed
+values still varies with the number of observations (i.e., the skew
+of the distribution). Therefore, for all of our comparisons, con-
+ditions were balanced for the number of trials in each group.
+Balancing was accomplished by stratifying the number of trials in
+each group to a common value: A random subset of trials was
+drawn (equal to the minimum trial number across groups) and the
+statistic was calculated. This process was repeated 25 times and the
+overall statistic was taken to be the mean of the stratiﬁed values.
+To determine whether and when the observed level of ωPEV
+was signiﬁcantly different from chance, we used a randomization
+test. The association between neural activity and stimulus iden-
+tity was randomly shufﬂed and the ωPEV was recalculated. By
+repeating this process 500 times a null distribution was con-
+structed. The observed ωPEV was then compared with this null
+distribution to determine the likelihood of the observed ωPEV.
+The time course of ωPEV was calculated in windows of 100 ms,
+slid every 10 ms. Neurons were independently tested for selec-
+tivity within the sample period (0–800 ms from the onset of the
+visual array) and the delay period (0–800 ms from the offset of
+the visual array).
+
+The signiﬁcance threshold for the amount of information was
+determined for each window by dividing the typical signiﬁcance
+threshold (P ≤ 0.05) by the number of comparisons made across
+each window. A neuron was considered selective for object
+identity if its likelihood reached this signiﬁcance threshold for
+two independent windows of time (i.e., two consecutive 100-ms
+windows). This process corrected for multiple comparisons
+across time and reduced the chance that the selective responses
+were due to nonphysiological anomalies.
+
+As used here the ωPEV statistic makes one assumption:
+Neurons encode stimuli by modulating their average ﬁring rate
+within the analyzed window of time. Importantly, it does not
+make any assumption about the consistency of neural response
+over time or between displays of different sizes. The ωPEV
+statistic allows us to take an agnostic approach to decoding in-
+
+formation about stimulus identity in different conditions (and
+across time), capturing as much of the selectivity as possible and
+avoiding any bias across conditions.
+
+Testing for Independent Hemispheres in Neural Activity. As noted
+in the main text, we found behavioral evidence that the two
+hemispheres of visual space had independent capacities. To
+determine whether this effect extended to the neural level, we
+determined the degree of object selectivity for neurons in LPFC,
+LIP, and FEF for each display used (as shown in Fig. 2A). We
+then determined the impact of adding objects to the ipsilateral
+and contralateral hemiﬁelds, using a two-way ANOVA. As seen
+in Fig. 2D, LPFC neurons showed a reduction in selectivity with
+the addition of stimuli in the ipsilateral hemiﬁeld but not when
+adding objects to the contralateral hemiﬁeld during the sample
+period (100–800 ms after sample onset) and memory delay (100–
+800 ms after sample offset). Similar results were also seen in LIP,
+LPFC, and FEF for the time periods of interest highlighted in
+Fig. 4 (150–350 ms for LIP, 300–800 ms in LPFC, 450–800 ms for
+FEF; P values for LIP and FEF in main text; LPFC, ipsilateral
+effect, P = 0.0011, and contralateral effect, P = 0.73).
+
+Testing for Signiﬁcance on Neuron Population Level. We determined
+when the amount of average object information across the neuron
+population reached signiﬁcance (above baseline) by a nonpa-
+rametric, paired, Wilcoxon signed rank test. As we examine only
+neurons whose ﬁring rate carried signiﬁcant object information,
+the population will necessarily be biased above zero. To com-
+pensate for this bias, we chose the ﬁrst 50 ms as our baseline period,
+averaged over all three conditions (i.e., ignoring the number of
+stimuli in the array). As this time period fell within our time
+window of selection, any bias due to selecting the neurons alone
+was corrected. Furthermore, as our baseline is averaged across
+all three conditions this process should not lead to any bias in
+our observed timing differences for each condition (see below for
+this procedure).
+
+Signiﬁcant differences between below-capacity and above-
+capacity conditions were determined using a randomization test.
+Brieﬂy, the association between observed information (in a given
+100-ms window) and the number of stimuli on the screen was
+broken by randomly shufﬂing conditions. The average difference
+in population information was determined for each random
+shufﬂe. This process was repeated 1,000 times and the observed
+difference in information was compared with the population of
+randomized values to determine the likelihood of seeing our
+observed value by chance. The ﬁrst time this likelihood fell below
+5% for both 1 vs. 2 and 1 vs. 3 was taken as our time-to-ﬁrst
+signiﬁcance. However, as this measure can be biased by statistical
+power, we used a different statistic to measure the time to sig-
+niﬁcant deviation: the point of maximum rise in the difference
+function (below capacity minus above capacity). This statistic is
+explained next.
+
+Details of the Latencies of Neural Information. As noted in the main
+text, the time point at which selectivity for the identity of an object
+exceeded baseline depended on whether the displays were above
+or below capacity. When the display was below the animal’s ca-
+pacity (i.e., one object in the hemiﬁeld), object information ap-
+peared in LIP at 193 ms after the onset of the visual array (95%
+conﬁdence interval, 149–229 ms). LIP selectivity was followed by
+responses in LPFC (317 ms; 95% CI, 249–359 ms) and FEF (291
+ms; 95% CI, 249–339 ms). This result is consistent with a bottom–
+up ﬂow of sensory inputs from posterior to anterior cortex (LIP <
+LPFC, P < 10−3; LIP < FEF, P = 3 × 10−3, randomization test).
+There was no signiﬁcant difference between the two frontal re-
+gions (FEF < LPFC, P = 0.23, randomization test).
+
+Information about the object’s identity was seen in the reverse
+order when the display was above capacity (two or three objects
+
+Buschman et al. www.pnas.org/cgi/content/short/1104666108
+
+3 of 6
+
+per hemiﬁeld): ﬁrst in LPFC and FEF, followed by LIP. Signif-
+icance in LPFC occurred at 315 ms (95% CI, 249–339 ms) and
+318 ms (95% CI, 259–359 ms) after visual array onset for two
+and three items, respectively. FEF was at approximately the
+same time: 322 ms (95% CI, 289–409 ms) and 290 ms (95% CI,
+249–309 ms) for two and three items, respectively. Signiﬁcant
+information about two or more objects was not observed in LIP
+until 527 ms (95% CI, 439–549 ms) and 474 ms (95% CI,
+399–539 ms) after the array onset. Information was signiﬁcantly
+earlier in LPFC and FEF than in LIP (LPFC < LIP, P < 10−3;
+FEF < LIP, P < 10−3, by randomization test for both two and
+three objects). Again, there was no signiﬁcant difference be-
+tween the frontal regions (LPFC < FEF, P = 0.49 for two items;
+FEF < LPFC, P = 0.23 for three items).
+
+This pattern of results suggests top–down input may be im-
+portant for representing object identity information when the
+visual array is above the animal’s capacity. Indeed, the difference
+in selectivity in LIP was signiﬁcantly later in above-capacity trials
+compared with below-capacity trials (1 < 2, P < 10−3; 1 < 3, P <
+10−3, randomization test). However, there was no signiﬁcant
+difference in the timing of selectivity for above-capacity con-
+ditions in LIP (3 < 2, P = 0.09) or for any condition in either
+LPFC (2 < 1, P = 0.38; 1 < 3, P = 0.35; 2 < 3, P = 0.38, ran-
+domization test) or FEF (1 < 2, P = 0.48; 3 < 1, P = 0.30; 3 < 2,
+P = 0.49, randomization test).
+
+Loss of Information Between Two- and Three-Item Displays. The
+shared resource hypothesis predicts that an information source
+is divided among the objects currently remembered. Therefore,
+information about a stimulus in a three-item display should
+be reduced from when that stimulus is in a two-item display.
+Whereas this pattern is seen late in the delay period for LPFC
+neurons (Fig. 3B, Right), no signiﬁcant difference was observed
+during the sample period. As noted in the main text, one in-
+teresting hypothesis is that this difference in information loss
+reﬂects a difference in capacity between these two time periods.
+For example, when the stimuli are present (or were recently
+present), the visual trace may provide a source of information
+that is less limited (or even unlimited). However, this argument
+extends from a negative ﬁnding (that there was no signiﬁcant
+difference between two and three objects), making it difﬁcult to
+interpret. As the expected difference in information per stimulus
+decreases with added items (i.e., from 1 unit of information
+compared with 1/2 and then from 1/2 compared with 1/3), our
+ability to resolve the difference is reduced, possibly leading to an
+inability to observe a signiﬁcant difference. However, this con-
+cern is mitigated by the fact that we are able to resolve the dif-
+ference late in the trial.
+
+Loss of Information for Individual Neurons. The loss of information
+above capacity is clear on a population level (Figs. 3 and 4). How-
+ever, this loss either could be an effect at the population level
+(e.g., differential recruitment of neuron groups) or could occur
+
+for individual neurons. To investigate this we isolated neurons
+that were signiﬁcantly selective (P < 0.05) for the same object in
+both below-capacity and above-capacity displays. Although this
+process greatly reduced the number of neurons in our population
+(38 from LPFC, 13 from FEF, and 4 from LIP; Fig. S3), the large
+majority of neurons in all three regions showed a decrease in
+selectivity during above-capacity trials in comparison with below-
+capacity trials (32 of 38 in LPFC, 11 of 13 in FEF, and all 4 in
+LIP). This difference was signiﬁcantly above chance across all
+three areas (P = 4.0 × 10−8) as well as for LPFC (P = 1.2 × 10−5),
+FEF (P = 0.011), and trending for LIP (P = 0.0625, limited by
+small sample size surviving the multiple selection).
+
+Selectivity on Correct and Error Trials. As noted in the main text, we
+observed a signiﬁcant reduction in object information in all three
+areas (for our time periods of interest) when a second object was
+added to the visual display. To perform this analysis only in-
+formation about the correctly identiﬁed target was used. Un-
+fortunately, this restriction, coupled with the decaying behavior
+with three items in a hemiﬁeld, did not allow for analysis of three-
+item displays in the correct-only analyses.
+
+In addition to LPFC neurons, FEF neurons also carried sig-
+niﬁcant object information during error trials with two items in
+the display (average of 0.83% explained variance, bias corrected;
+P = 0.024, permutation test). Although information in error
+trials trended toward less than during correct trials (which had
+a 1.2% explained variance, bias corrected) the difference did not
+reach signiﬁcance (P = 0.31). In contrast, as noted in the main
+text, LPFC neurons carried signiﬁcantly less information during
+error trials than during correct trials (P = 0.008). Although this
+difference may be due to differences in sample size (130 neurons
+for LPFC, 67 for FEF) it may also reﬂect a stronger correlation
+between LPFC neurons and behavior in comparison with FEF,
+suggesting LPFC plays a larger role in directing behavior during
+a working memory task. LIP neurons did not carry any signiﬁcant
+information about stimuli during two-item conditions (Fig. 4A).
+As noted in the main text we observed a signiﬁcant amount of
+object information in selective LPFC neurons during error trials
+alone (for both the sample, Fig. 4B, and delay, main text). We
+also tested this across the entire population of LPFC neurons by
+determining whether there were a signiﬁcant number of neurons
+carrying signiﬁcant object information using error trials alone.
+As for the correct–error comparison, we limited our analysis to
+the two-item condition (where there were sufﬁcient error trials).
+The information criterion was the same used for all trials (i.e.,
+selectivity in two independent 100-ms windows, see above). As
+before, we found a signiﬁcant number of LPFC neurons con-
+veying object information during the sample period (P = 0.0056)
+with a trend continuing into the delay period (P = 0.0534). This
+result conﬁrms our original ﬁnding of object identity informa-
+tion, even when that object is “forgotten”.
+
+1. Buschman TJ, Miller EK (2007) Top-down versus bottom-up control of attention in the
+
+9. Fuster JM, Alexander GE (1971) Neuron activity related to short-term memory. Science
+
+prefrontal and posterior parietal cortices. Science 315:1860–1862.
+
+173:652–654.
+
+2. Buschman TJ, Miller EK (2009) Serial, covert shifts of attention during visual search are
+reﬂected by the frontal eye ﬁelds and correlated with population oscillations. Neuron
+63:386–396.
+
+3. Asaad WF, Eskandar EN (2008) A ﬂexible software tool for temporally-precise
+
+behavioral control in Matlab. J Neurosci Methods 174:245–258.
+
+4. Asaad WF, Eskandar EN (2008) Achieving behavioral control with millisecond resolution
+
+in a high-level programming environment. J Neurosci Methods 173:235–240.
+
+5. Schwarz GE (1978) Estimating the dimension of a model. Ann Stat 6:461–464.
+6. Raftery AE (1995) Bayesian model selection in social research. Sociol Methodol 25:
+
+111–163.
+
+7. Cowan N (2001) The magical number 4 in short-term memory: A reconsideration of
+
+mental storage capacity. Behav Brain Sci 24:87–114, discussion 114–185.
+
+10. Funahashi S, Bruce CJ, Goldman-Rakic PS (1989) Mnemonic coding of visual space in
+
+the monkey’s dorsolateral prefrontal cortex. J Neurophysiol 61:331–349.
+
+11. Curtis CE, D’Esposito M (2003) Persistent activity in the prefrontal cortex during
+
+working memory. Trends Cogn Sci 7:415–423.
+
+12. Todd JJ, Marois R (2005) Posterior parietal cortex activity predicts individual
+differences in visual short-term memory capacity. Cogn Affect Behav Neurosci 5:
+144–155.
+
+13. Todd JJ, Marois R (2004) Capacity limit of visual short-term memory in human
+
+posterior parietal cortex. Nature 428:751–754.
+
+14. Palva JM, Monto S, Kulashekhar S, Palva S (2010) Neuronal synchrony reveals working
+memory networks and predicts individual memory capacity. Proc Natl Acad Sci USA
+107:7580–7585.
+
+8. Xu Y, Chun MM (2006) Dissociable neural mechanisms supporting visual short-term
+
+15. Toth LJ, Assad JA (2002) Dynamic coding of behaviourally relevant stimuli in parietal
+
+memory for objects. Nature 440:91–95.
+
+cortex. Nature 415:165–168.
+
+Buschman et al. www.pnas.org/cgi/content/short/1104666108
+
+4 of 6
+
+16. Bichot NP, Schall JD, Thompson KG (1996) Visual feature selectivity in frontal eye
+
+18. Bruce CJ, Goldberg ME (1985) Primate frontal eye ﬁelds:
+
+I. Single neurones
+
+ﬁelds induced by experience in mature macaques. Nature 381:697–699.
+
+discharging before saccades. J Neurophysiol 53:607–635.
+
+17. Barash S, Bracewell RM, Fogassi L, Gnadt JW, Andersen RA (1991) Saccade-related
+activity in the lateral intraparietal area. I. Temporal properties; comparison with area
+7a. J Neurophysiol 66:1095–1108.
+
+19. Olejnik S, Algina J (2003) Generalized eta and omega squared statistics: Mea-
+sures of effect size for some common research designs. Psychol Methods 8:434–
+447.
+
+A
+
+B
+
+100
+
+80
+
+60
+
+40
+
+)
+
+%
+
+(
+ 
+e
+c
+n
+a
+m
+r
+o
+f
+r
+e
+P
+
+i
+
+ 
+l
+a
+r
+o
+v
+a
+h
+e
+B
+
+)
+s
+t
+i
+b
+(
+ 
+t
+
+e
+g
+r
+a
+T
+
+ 
+t
+
+u
+o
+b
+a
+n
+o
+
+ 
+
+i
+t
+
+a
+m
+r
+o
+n
+
+f
+
+I
+
+0.50
+
+0.45
+
+0.40
+
+0.35
+
+0.30
+
+0.25
+
+Monkey Si/Sp
+
+1
+
+2
+
+3
+
+# of Stimuli Ipsilateral
+
+to Target
+
+Monkey Si
+Monkey Sp
+Combined
+
+1
+3
+# of Stimuli Ipsilateral
+
+2
+
+to Target
+
+Fig. S1.
+
+(A) Behavioral performance for both monkeys. (B) Information in each hemisphere for both monkeys.
+
+A
+
+20
+
+Example LPFC Neuron
+(Sp/02-22-10/ch43u1)
+
+i
+
+)
+s
+/
+s
+e
+k
+p
+s
+(
+ 
+e
+a
+R
+g
+n
+i
+r
+i
+F
+
+ 
+
+t
+
+10
+
+0
+
+B
+
+16
+
+12
+
+8
+
+4
+
+0
+
+Example FEF Neuron
+(Si/07-24-10/ch34u2)
+
+Example LIP Neuron
+(Si/07-17-10/ch13u2)
+
+C
+
+10
+
+6
+
+2
+
+Preferred Color
+
+Non-Preferred
+
+1 item
+
+2 items
+
+3 items
+
+)
+
+V
+E
+P
+ω
+
+n
+e
+d
+
+I
+ 
+t
+c
+e
+b
+O
+
+j
+
+ 
+t
+
+u
+o
+b
+a
+
+(
+ 
+
+n
+o
+
+i
+t
+
+a
+m
+r
+o
+n
+
+f
+
+I
+
+y
+t
+i
+t
+
+12
+
+8
+
+4
+
+0
+
+0
+
+800
+Time from Sample Onset (ms)
+
+200
+
+400
+
+600
+
+20
+
+15
+
+10
+
+5
+
+0
+800
+Time from Sample Onset (ms)
+
+200
+
+600
+
+400
+
+0
+
+5
+4
+3
+2
+1
+0
+
+0
+
+800
+Time from Sample Onset (ms)
+
+200
+
+600
+
+400
+
+Fig. S2. Example (A) LPFC, (B) FEF, and (C) LIP neurons. (Upper) The ﬁring rate response to preferred and nonpreferred colors at each neuron’s preferred
+object location. (Lower) The bias-correct percentage of explained variance (ωPEV) derived from ﬁring rate response.
+
+Buschman et al. www.pnas.org/cgi/content/short/1104666108
+
+5 of 6
+
+l
+
+i
+
+s
+y
+a
+p
+s
+D
+ 
+y
+t
+i
+c
+a
+p
+a
+C
+-
+e
+v
+o
+b
+A
+
+)
+
+V
+E
+P
+ω
+
+(
+ 
+
+n
+o
+
+i
+t
+
+a
+m
+r
+o
+
+f
+
+n
+
+I
+
+LPFC - 32/38 neurons (p=1.2x10−5)
+FEF - 11/13 neurons (p=0.011)
+LIP - 4/4 neurons (p=0.0625)
+
+6
+1
+
+2
+1
+
+8
+
+4
+
+ 
+r
+o
+
+f
+
+0
+
+0
+
+8
+
+4
+Information (ωPEV)
+
+12
+
+16
+
+for Below-Capacity Displays
+
+Fig. S3. Distribution of information for stimuli when the entire display is below (x axis) or above (two and three items, y axis) capacity. Only neurons that are
+selective for stimulus identity in both conditions are presented. Signiﬁcance is determined by a binomial test.
+
+Buschman et al. www.pnas.org/cgi/content/short/1104666108
+
+6 of 6
+
+

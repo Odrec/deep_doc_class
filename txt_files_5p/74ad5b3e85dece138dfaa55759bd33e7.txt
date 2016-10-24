@@ -1,0 +1,884 @@
+Logik & 
+Argumentationstheorie 
+
+Sommersemester 2016 
+Nikola Kompa 
+
+21.06.2016 
+
+Gültige Schlüsse? 
+
+Jedes Mensaessen wird von Spitzenköchen gekocht. 
+Kein Spitzenkoch kocht Grünkohl-Nudelauflauf mit 
+
+Zigeunersoße.  
+
+Also: Grünkohl-Nudelauflauf mit Zigeunersoße ist kein 
+
+Mensaessen. 
+
+Kein Kollege kommt zur Konferenz. 
+Otto ist ein Kollege 
+Otto kommt nicht zur Konferenz.  
+
+21.06.2016 
+
+1 
+
+21.06.2016 
+
+Gültige Schlüsse? 
+
+Prädikatenlogik 
+
+Jemand fängt an zu singen.  
+Jeder, der anfängt zu singen, hört irgendwann zu singen auf.  
+Also: Jemand hört irgendwann zu singen auf.  
+
+Alle werden langsam älter.  
+Anna wird langsam älter. 
+
+Der letzte Gast möchte Kaffee. 
+Mindestens einer möchte Kaffee. (Rosenkranz 2006, 103&106) 
+
+  Zu unterscheiden: Singuläre Terme und generelle 
+
+Terme/Prädikate.  
+  Eigennamen & Kennzeichnungen 
+  Einstellige und mehrstellige Prädikate – n-stellige 
+
+Prädikate.  
+
+  Singuläre Aussagen: Sokrates schläft. 
+  Universelle Aussagen: Alle Studierenden im Kurs 
+
+langweilen sich.   
+
+  Existenzaussagen: Es gibt mindestens einen 
+
+interessierten Studierenden.  
+
+21.06.2016 
+
+3 
+
+21.06.2016 
+
+2 
+
+4 
+
+1 
+
+Allquantor 
+
+Allquantor 
+
+1. Alle sind glücklich.  
+1'. Jeder ist glücklich.  
+Für jedes Individuum/Ding x gilt: x ist glücklich.  
+1F. ∀xGx 
+2. Alle Diamanten sind Edelsteine. 
+Für jedes Individuum/Ding x gilt: Wenn x ein Diamant ist, dann 
+
+ist x ein Edelstein.   
+
+2F. ∀x (Dx → Ex)   
+3.  Nichts funktioniert.  
+3F. ∀x¬Fx 
+
+21.06.2016 
+
+4. Kein Diamant ist ein Edelstein.  
+4F.  ∀x(Dx → ¬Ex) 
+5. Niemand kommt zur Konferenz. 
+5F. ∀x¬Kx 
+6. Kein Student kommt zur Konferenz.  
+6F. ∀x(Sx → ¬Kx) 
+
+In all diesen Formalisierungen ist der Bereich, über den die 
+
+Variable läuft, nicht explizit beschränkt!  
+
+5 
+
+21.06.2016 
+
+Existenzquantor 
+
+Bereichserweiterung 
+
+7. Jemand kommt zum Fest.    
+Es gibt mindestens ein x, so dass gilt: x kommt zum Fest.  
+7F. ∃xFx 
+
+8. Mindestens einer möchte Tee.  
+Es gibt mindestens ein x, so dass gilt: x möchte Tee. 
+8F. ∃xTx 
+
+9. Einige Frösche haben gelbe Hälse.  
+9F. ∃x(Fx & Gx)  
+
+21.06.2016 
+
+Bereichserweiterung Existenzquantor: 
+„Forme die ursprüngliche Bereichsangabe des 
+
+Existenzquantors um und bilde die Konjunktion mit dem 
+schon verwendeten Prädikat.“ (HH S. 185).  
+
+Bereichserweiterung Allquantor: 
+„Forme die ursprüngliche Bereichsangabe des Allquantors in 
+
+ein Prädikat um und setze es als Vorderglied des 
+Konditionals mit dem schon verwendeten Prädikat als 
+Hinterglied ein.“ (HH S. 186).  
+
+7 
+
+21.06.2016 
+
+21.06.2016 
+
+6 
+
+8 
+
+2 
+
+Das Vokabular von PL1I besteht 
+aus: 
+
+1. 
+2. 
+
+3. 
+
+4. 
+5. 
+6. 
+
+eine (abzählbar) unendliche Menge von Variablen;   
+eine höchstens (abzählbar) unendliche Menge von 
+(Individuen)konstanten;   
+für jede natürlich Zahl n ≥O aus einer höchstens 
+(abzählbar) unendlichen Menge von n-stelligen 
+Prädikatkonstanten;  
+der Menge der logischen Junktoren, sowie „∃“ und „∀“; 
+dem Identitätssymbol “=„;  
+den Klammersymbolen “(„ und „)“. (Vgl. Link 225/226) 
+
+21.06.2016 
+
+Definition: Formel von LPL1I 
+
+1. 
+2. 
+
+3. 
+
+4. 
+
+Sind t und s Individuenterme, so ist t=s eine Formel.  
+Es seien n ≥O eine natürliche Zahl, Pn eine n-stellige 
+Prädikatkonstante und t0..tn-1 n Individuenterme; dann ist 
+auch Pn t0..tn-1 eine Formel;  
+Sind φ und ψ Formeln, so sind auch –φ,  (φ v ψ),  
+(φ ∧ψ), (φψ) und (φ↔ψ) Formeln.  
+Ist φ und x eine Variable, so sind auch „∃xφ“ und 
+„∀xφ Formeln.  
+
+5.  Nicht ist eine Formel, was nicht durch endlich viele 
+
+Anwendungen der Regeln 1 bis 4 entstanden ist. (Vgl. 
+Link 226) 
+
+21.06.2016 
+
+9 
+
+21.06.2016 
+
+10 
+
+Beispiel 1: Formalisierung 
+
+Beispiel 3: Formalisierung 
+
+Peter liest ein Buch und denkt darüber nach. 
+EF: Es gibt ein x so dass (x ist ein Buch) und (Peter liest 
+x) und (Peter denkt nach über x) 
+LF:  ∃x (Px & Qax & Rax) 
+Legende:  
+P: ... ist ein Buch 
+Q: ...liest ... 
+R: ... denkt nach über ... 
+A: Peter 
+
+Jeder Logiker kennt ein Problem, für das ihm keine Lösung 
+einfällt. 
+EF: Für all x: (wenn x ein Logiker) dann gibt es ein y, so daß: (y 
+ist ein Problem) und (x kennt y) und es ist nicht der Fall, daß es 
+gibt ein z so daß (z ist eine Lösung für y) und (z fällt x ein).   
+LF: ∀x(Px → ∃y(Qy & Rxy &  ¬ ∃z(Szy & Tzx))) 
+Legende:  
+Px: … ist ein Logiker. 
+Q: ... ist ein Problem. 
+R: ... kennt .... 
+S: ... ist eine Lösung für ....  
+T...: ... fällt ein ....  
+
+21.06.2016 
+
+11 
+
+21.06.2016 
+
+12 
+
+3 
+
+PL1I – Prädikatenlogik erster 
+Stufe mit Identität 
+(Eindeutigkeit) Es gibt höchstens ein Objekt mit der 
+Eigenschaft P:  
+∀x∀y (Px & Py → x = y)  
+(Einzigkeit: Existenz + Eindeutigkeit): Es gibt genau ein 
+Objekt mit der Eigenschaft P:  
+∃xPx & ∀x∀y (Px & Py → x = y)  
+Es gibt mindestens zwei Objekte mit der Eigenschaft P:  
+∃x∃y (Px & Py & x ≠ y)  
+
+PL-Form 
+
+Definition 3.8 (HH 197): Eine prädikatenlogische 
+Form einer Aussage entsteht durch Abstraktion 
+vom Inhalts des Individuenbereichs (Art und 
+Anzahl der Individuen), vom Sinn der Prädikate 
+und vom Sinn der Individuenkonstanten; jedoch 
+gehören die Stellenzahl der Prädikate sowie 
+Gleichheit und Verschiedenheit von Individuen 
+dun Prädiakten mit zur p.l. Form. 
+
+21.06.2016 
+
+13 
+
+21.06.2016 
+
+14 
+
+Geltungsbereich & offene Formeln 
+
+Definition 3.10: Der nach einem Quantor 
+stehende Formelteil, auf den sich der Quantor 
+bezieht, heißt sein Geltungsbereich.  
+
+Definition 3.11: PL- Formeln, die (ungebundene) 
+schematische Individuenbuchstaben enthalten, 
+heißen offene Formeln, sonst geschlossene 
+Formeln.  
+
+21.06.2016 
+
+15 
+
+Extensionale Semantik 
+
+Die Extension eines singulären Terms ist der 
+Gegenstand, den er bezeichnet.  
+Die Extension eines 1-stelligen Prädikats ist die 
+Menge der Gegenstände, auf die es zutrifft. 
+Die Extension eines n-stelligen Prädikats ist die 
+Menge von n-Tupeln von Gegenständen, die das 
+Prädikat erfüllen.   
+Die Extension eines (Aussage)Satzes ist sein 
+Wahrheitswert.  
+>   
+
+21.06.2016 
+
+16 
+
+21.06.2016 
+
+4 
+
+Interpretation 
+
+Definition 3.12: Eine intensionale Interpretation einer p.l. Formel 
+besteht aus der Angabe eines Individuenbereichs, der Zuordnung 
+von Individuennamen zu den Individuenbuchstaben und von 
+Prädikatintensionen zu den Prädikatbuchstaben; dabei müssen 
+gleichen Buchstaben gleiche Individuennamen bzw. 
+Prädikatintensionen zugeordnet werden.  
+Definition 2.6: Eine extensionale Interpretation einer p.l. Formel 
+besteht aus der Angabe einer (endlichen oder unendlichen) Menge B 
+als Individuenbereich, der Zuordnung von Elementen aus B zu den 
+Individuenbuchstaben und der Zuordnung von Prädikatextensionen 
+zu den Prädikatbuchstaben; dabei müssen gleichen Buchstaben 
+gleiche Elemente bzw. Teilmengen zugeordnet werden.  
+
+21.06.2016 
+
+17 
+
+Beispiel 4: Ext. Interpretation 
+
+1. Alle Kollegen kommt zur Konferenz.  
+2. Otto ist ein Kollege 
+Also: Otto kommt zur Konferenz.  
+AUFGABE: Versuchen Sie eine extensionale Interprettaion 
+für den Schluss zu geben, die ihn als ungültig ausweist. (∀x
+(Fx →Gx) & Fm) → Gm 
+1. Alle Kollegen kommen zur Konferenz.  
+2. Otto ist kein Kollege.  
+Also: Otto kommt nicht zur Konferenz 
+AUFGABE: wie oben 
+
+21.06.2016 
+
+ 
+
+ 
+
+  
+
+18 
+
+PL-Wahrheit & PL-Folgerung 
+
+Prädikatenlogische Äquivalenz 
+
+Definition 3.14: Eine pl-Form(el) heißt genau dann  
+logisch wahr (tautologisch), wenn sie für alle 
+extensionalen Interpretationen mit nicht-leeren 
+Bereichen wahr ist.  
+Eine Aussage heißt prädikatenlogische wahr, gdw. sie 
+eine logisch wahre pl-Form hat. (H.-H. 222)  
+Definition 3.16ʻ: Seien A und B Aussagen oder pl-
+Formeln. Der Schluß von A auf B heißt 
+prädikatenlogisch korrekt genau dann, wenn A → B 
+prädikatenlogisch wahr ist. (HH 231) 
+
+Definition 2.12: "Seien A und B Aussagen oder al- 
+
+Formeln. A und B heißen prädikatenlogisch äquivalent 
+genau dann, wenn A ↔ B prädikatenlogisch wahr 
+ist." (H.-H. 235) 
+
+ Vier wichtige Äquivalenzen: 
+
+ ~ ∃xPx ↔ ∀x~Px 
+ ~∀xPx ↔ ∃x~Px 
+ ~ ∃x~ Px ↔ ∀xPx 
+ ~∀x~Px ↔ ∃xPx 
+
+21.06.2016 
+
+19 
+
+21.06.2016 
+
+20 
+
+21.06.2016 
+
+5 
+
+Äquivalenzumformungen 
+
+Regeln für den Allquantor 
+
+ Schreiben Sei einmal mit dem ∀-Quantor, einmal mit 
+dem ∃-Quantor: 
+
+Jeder Mensch ist glücklich.  
+Alle Menschen sind unglücklich.  
+Kein Mensch ist glücklich.  
+Kein Mensch ist unglücklich.  
+Einige Menschen sind glücklich. 
+Einige Menschen sind unglücklich.  
+
+X ├ ∀xFx 
+------------- 
+X ├ Fa  
+
+X ├ ∀xFx 
+------------- 
+X ├ Fm  
+
+X ├ Fa 
+------------- 
+X ├ ∀xFx 
+
+Gilt nur mit Vorbehalt; und 
+nur, wenn in der Menge von 
+Annahme, von denen Fa 
+abhängt, keine Annahme zu 
+finde ist, in der „a“ vorkommt.   
+
+21.06.2016 
+
+21 
+
+21.06.2016 
+
+22 
+
+Ein Beweis 
+
+Kein Kollege kommt zur Konferenz. 
+Otto ist ein Kollege. 
+Otto kommt nicht zur Konferenz.   
+
+1
+2
+1
+1,2  (4) ~Gm  
+
+ (1) ∀x(Fx →~Gx)
+ (2) Fm
+ 
+ (3) Fm →~Gm  
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ Annahme 
+ Annahme 
+ 1, All-Beseitigung 
+ 2,3, MPP  
+  
+
+Regeln für den Existenzquantor 
+
+X ├ Fm 
+------------- 
+X ├ ∃xFx  
+
+X ├ Fa 
+------------- 
+X ├ ∃xFx  
+
+X ├ ∃xFx; Y, Fa ├ C 
+-------------------------- 
+X, Y ├ C   
+
+Sofern „a“ weder in Y noch in 
+
+C vorkommt.  
+
+21.06.2016 
+
+23 
+
+21.06.2016 
+
+24 
+
+21.06.2016 
+
+6 
+
+  
+
+Mehrere Quantoren 
+ ∃x∀y(x hat y gestohlen)  
+Es gibt jemanden, der alles gestohlen hat. 
+ ∀x∃y(x hat y gestohlen)
+Jeder hat etwas gestohlen. 
+ ∃x∃y(x hat y gestohlen)
+Es gibt jemanden, der etwas gestohlen hat. 
+ ∀x∀y(x hat y gestohlen)
+Alle haben alles gestohlen. 
+
+  
+
+  
+
+  
+
+21.06.2016 
+
+Zusammenfassung PL1I 
+
+  Definitionen 
+  Pl-Formalisierung 
+
+  Beweisen 
+
+finden...  
+
+21.06.2016 
+
+  Arten von Aussagen;  
+  Probleme beim Formalisieren lösen können; Klammernkonventionen 
+  Regeln für die Bereichserweiterung 
+  Identität 
+  Mehrere Quantoren – Interdefinition 
+  Extensionale Interpretation  
+
+  Kalkül/Regeln kennen 
+  Einfach Beweise; Beweisschritte nachvollziehen können, Fehler 
+
+27 
+
+21.06.2016 
+
+Beweis – Übung 21 
+
+ ~∀x~Fx ├ ∃xFx 
+ (1) ~∀x~Fx   
+1
+ 
+ 
+ (2) ~∃xFx
+2
+ 
+ 
+ (3) Fa  
+3
+ 
+3
+ (4) ∃xFx
+ 
+ 
+ (5) ∃xFx & ~∃xFx  
+2,3
+ 
+ (6) ~Fa
+2
+ 
+ (7) ∀x~Fx  
+2
+ 
+1,2
+ (8) ∀x~Fx & ~∀x~Fx 
+ (9) ~~∃xFx  
+1
+1
+ (10) ∃xFx
+ 
+
+ 
+ 
+
+ Annahme 
+ Annahme 
+ Annahme 
+ 3, Ex-Einführung 
+ 2, 4 &-Einführung   
+ 3, 5, RAA 
+ 6, All-Einführung 
+ 1,7, &-Einführung 
+ 2,8, RAA 
+ 9, DN-Beseitigung 
+
+25 
+
+21.06.2016 
+
+26 
+
+Induktive Schlüsse 
+
+Alle beobachteten F sind G 
+Alle F sind G 
+
+n % der bisher beobachteten F sind G. 
+n % aller F sind G. (EI) 
+
+n % der F sind G. 
+X ist ein F.  
+X ist ein G. (StSy) 
+
+n % der beobachteten F sind G. 
+X ist ein F.  
+X ist ein G. (PI) 
+
+21.06.2016 
+
+28 
+
+7 
+
+Deduktive Schlüsse in der Nähe 
+
+Alle Raben sind schwarz.  
+Edgar ist eine Rabe 
+Also: Edgar ist schwarz.  
+
+Alle F in diesem Behälter sind G. 
+X ist eine F aus diesem Behälter. 
+Also: X ist G.  
+
+21.06.2016 
+
+ Induktive Logik 
+
+  Sie erweitern unsere Erkenntnis – Gehalt der 
+
+Konklusion geht über Gehalt der Prämissen hinaus.  
+
+  Auch ein gutes induktives Argument kann wahre 
+Prämissen und eine falsche Konklusion haben.  
+
+  Prämissen stützen Konklusion, machen sie 
+
+wahrscheinlich - aber Stützung ist eine graduelle 
+Angelegenheit. 
+
+  Das Hinzunehmen weiterer Prämissen ist relevant 
+dafür, inwieweit die ursprünglichen Prämissen die 
+Konklusion stützen (Nicht-Monotonie).  
+
+21.06.2016 
+
+29 
+
+21.06.2016 
+
+30 
+
+Argumente – gut & schlecht 
+
+X behauptet, dass p. (Autorität) 
+Also p.  
+
+X ist bezüglich p eine verlässliche Autorität.  
+X behauptet, dass p. 
+Also: p. 
+
+X behauptet dass, p. 
+Also non-p. (ad hominem) 
+
+21.06.2016 
+
+Analogieschlüsse 
+
+Dinge der Art X besitzen Eigenschaften G, H,.. 
+Dinge der Art  Y besitzen Eigenschaften G, H,… 
+Dinge der Art X besitzen Eigenschaft F. 
+Also: Dinge der Art Y besitzen Eigenschaft F. 
+
+Wozu machen wir Analogieschlüsse? Wie gut sind 
+Analogieschlüsse? Wovon hängt das ab? Worauf 
+muss man achten?  
+
+31 
+
+21.06.2016 
+
+32 
+
+8 
+
+Normative Argumente 
+
+Aussagen 
+
+deskriptiv 
+
+normativ 
+
+evaluativ 
+
+präskriptiv 
+
+Gebote 
+
+Verbote 
+
+Sein-Sollen-Fehlschluss 
+
+[B6] 
+P1 Jeder in unserem Dorf außer Kurt spendet für die 
+
+Armen der Welt. 
+
+P2 Kurt wohnt in unserem Dorf. 
+K Also: Auch Kurt soll für die Armen der Welt 
+
+spenden. 
+
+B6 scheint genauso aufgebaut zu sein wie ein 
+deduktives Argument, weicht aber darin ab, dass in 
+der Konklusion ein wichtiges Wort auftaucht, das in 
+den Prämissen nicht enthalten ist: das Wort ‚soll’.  
+
+21.06.2016 
+
+33 
+
+21.06.2016 
+
+34 
+
+Die Bedeutung von ‚gut‘ 
+
+[B7] 
+P1 Gut ist, was evolutionär nützlich ist. 
+P2 Handlung F ist evolutionär nützlich. 
+K  Also: F ist gut.  
+
+Das Argument von der offenen Frage 
+
+Deduktive normative 
+Argumente? 
+[B8] 
+P1 Das Töten von Menschen ist (moralisch) verboten! 
+P2 Handlung H ist das Töten eines Menschen. 
+K  Also: Handlung H ist verboten.  
+
+[B9] 
+P1 Versprechen soll man halten! 
+P2 Der Fahneneid eines Soldaten ist ein Versprechen zum 
+
+Gehorsam. 
+
+K  Also: Soldaten sind zum Gehorsam verpflichtet.  
+
+21.06.2016 
+
+35 
+
+21.06.2016 
+
+36 
+
+21.06.2016 
+
+9 
+
+Folgenargumente 
+
+Verkettung von Argumenten 
+
+[B10] 
+P1  Nikola ist heute mit 70 km/h durch die Fußgängerzone gebrettert. 
+P2  Dadurch hat sie Fußgänger in Gefahr gebracht. 
+P3  Es ist unmoralisch, andere Menschen in Gefahr zu bringen. 
+K  Also: Nikola hat unmoralisch gehandelt 
+
+[B11] 
+P1  Die Abtreibung untergräbt den Respekt vor dem Leben. 
+P2  Dadurch geraten auch kranke oder alte Menschen in Gefahr. 
+P3  Was andere Menschen in Gefahr bringt, muß verboten werden. 
+K  Also: Die Abtreibung ist zu verbieten. 
+
+  
+
+[B16]
+P1
+
+ Alle bisher beobachteten Raben waren 
+ schwarz. 
+
+K/P1 (Also:) Alle Raben sind schwarz.  
+P2 
+K2
+
+ Fritz ist ein Rabe.  
+ Also: Fritz ist schwarz.  
+
+21.06.2016 
+
+37 
+
+21.06.2016 
+
+38 
+
+Einige Fehlschlüsse 
+
+Noch mehr Fehlschlüsse 
+
+Statistische/induktive Fehlschlüsse 
+  Fehlschluss der unzureichenden Statistik. 
+  Fehlschluss der voreingenommen Statistik.  
+  Fehlschluss des unvollständigen Erfahrungsdatums.  
+Kausale Fehlschlüsse 
+  Fehlschluss Post hoc ergo propter hoc.  
+  Fehlschluss der Verwechslung von Ursache und 
+
+Wirkung. 
+
+  Fehlschluss der gemeinsamen Ursache.  
+
+  Ad hominem 
+  Schlechte Analogien: 
+
+  
+
+  Qualitätskriterien für Analogieschlüsse 
+
+  Naturalistischer Fehlschluss 
+
+  Sein/Sollen 
+
+  Wahrscheinlichkeiten falsch berechnen 
+
+  Gambler‘s fallacy  
+  conjunction fallacy 
+
+  Schlechte Heuristiken  
+
+  Availability heuristics 
+
+21.06.2016 
+
+39 
+
+21.06.2016 
+
+40 
+
+21.06.2016 
+
+10 
+
+Noch mehr Fehler und 
+Fehlschlüsse 
+  Äquivokation 
+  Deduktive Fehlschlüsse 
+  Disjunktiver Fehlschluss 
+  Affirming the Consequent 
+  Denying the Antecedent 
+  Schwarz-Weiß-Fehlschluss 
+  Petitio principii/Zirkularität 
+
+  P, also p 
+▶ Qualitätskriterien für Argumente 
+
+21.06.2016 
+
+Überzeugen vs. Überreden 
+
+Ein überzeugendes Argument:  
+ Gibt uns Gründe für die Konklusion:  
+
+  Deduktiv: zwingende Gründe/Wahrheitstransfer 
+  Induktiv: gute Gründe/Wahrscheinlichkeit 
+
+ Ist logisch gültig/korrekt 
+ Hat wahre Prämissen 
+ Hat Überzeugungskraft (-ist nicht zirkulär) 
+Grenzen des Argumnetierens! 
+
+21.06.2016 
+
+41 
+
+21.06.2016 
+
+42 
+
+11 
+
+

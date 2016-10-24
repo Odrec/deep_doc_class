@@ -1,0 +1,57 @@
+Matlab for Cognitive Science
+
+Homework #1
+
+Please turn in your homework in your group folder on Friday Oct 31st. The docu-
+ment needs to contain your name(s), matriculation number(s) as well as your Mat-
+Lab code and all required ﬁgures.
+
+Task : Compute a Orientation Tuning Curve
+
+1. Get the ﬁle Extracellular_Recording_trials_1.mat from Stud.IP.
+
+Load the data into MatLab.
+
+• In this data matrix you’ll ﬁnd recordings of the response of one neuron in
+V1. 8 different bars with a speciﬁc orientation were shown; meanwhile
+the activity of the neuron was recorded (see ﬁgure A). The orientations
+are equally spaced and range from 0° to 157.5°. Each recording contains
+100 samples over the time intervall of 1000ms in 10 trials. 1 represents
+the occurrence of a spike at this sample, while 0 indicates that no spike
+has occcurred.
+
+• The ﬁrst dimension of the matrix corresponds to the different orienta-
+tions, the second dimension to trials and the third dimension is the ac-
+tivity
+
+1
+
+2. Compute an orientation tuning curve.
+
+• A tuning curve is a way to characterize the response properties of a neu-
+ron. Stimuli that vary only in one attribute (here: orientation) are pre-
+sented over a certain time range, the number of action potentials that oc-
+curs during the presentation of one particular stimulus is recorded. The
+tuning curve corresponds to the mapping of a function: f(orientation) =
+response rate.
+Figure B shows an example tuning curve of a neuron which shows the
+highest activity at 0°. The unit on the y-axis is Hz, that means at 0° ap-
+proximately 50 spikes occured in the time interval of 1 second.
+
+• In our case for computing the tuning curve, you ﬁrst have to compute
+the average spike count for each orientation over the trials. For this ﬁrst
+count the spikes for each orientation and then take the mean count over
+the trials.
+
+3. Visualize your data. Make sure to label all axes and assign a title.
+
+4. Fit a curve through your data points.
+
+• As there are only 8 orientations, your tuning curve will be very coarse
+in resolution. Use MatLabs curving ﬁtting abilities to ﬁt a function into
+your tuning curve data points, like in Figure B. (Hint: Look at the docu-
+mentation of polyfit.)
+
+2
+
+

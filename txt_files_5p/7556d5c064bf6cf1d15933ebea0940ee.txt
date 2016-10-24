@@ -1,0 +1,409 @@
+Spez./Molare Wärme-
+kapazitäten von Gasen
+
+25/1
+
+5
+3
+
+7
+5
+
+8
+6
+
+Cp – CV = R
+
+Vier-Takt-
+Otto-Motor
+
+0
+
+1. Takt: Ansaugen, 0 ‐> 1
+2. Takt: Verdichten, 1 ‐> 2 und Wärmezufuhr durch Verbrennung, 2 ‐> 3
+3. Takt: Expansion (Arbeitstakt), 3 ‐> 4 und Öffnen des Auslassventils, 4 ‐> 1
+4. Takt: Ausschieben der Abgase, 4 ‐> 0
+
+25/2
+
+Vier-Takt-
+Otto-Motor
+
+25/3
+
+adiabatische Kompression
+
+adiabatische Expansion
+
+ΔQ
+ΔQ
+
+12 =
+34 =
+
+0
+
+0
+
+Q
+Δ
+23
+
+=Δ=
+
+Tc
+V
+
+Q
+Δ
+23
+
+=Δ=
+
+Tc
+V
+
+V
+
+pc
+pc
+
+V
+
+3
+
+1
+
+Wirkungsgrad:
+
+η
+
+1
+= −
+
+γ Adiabatenkoeffizient 
+(Isentropenexponent)
+
+⎛
+⎜
+⎝
+
+V
+1
+V
+2
+
+p
+
+p
+
+−
+R
+−
+R
+1
+γ
+−
+⎞
+⎟
+⎠
+
+2
+
+4
+
+V
+2
+
+V
+1
+
+=
+
+1
+−
+γ
+ε
+
+figure of merit: Verdichtungsverhältnis ε
+
+ε=
+
+V
+1
+V
+2
+
+Kreisprozesse
+
+25/4
+
+Isothermen
+Isochoren
+
+Adiabaten
+Isochoren
+
+T2
+
+Isothermen
+Adiabaten
+
+T1
+
+maximaler Wirkungsgrad
+
+=
+η
+
+W
+Q
+Δ
+
+=
+
+Q
+Δ
+− Δ
+2
+Q
+Δ
+2
+
+Q T S T S
+Δ − Δ
+1
+1
+T S
+Δ
+2
+
+=
+
+2
+
+=
+
+T
+1
+
+T
+2
+
+−
+T
+2
+
+Zustandsdiagramme
+des Idealen Gases
+
+Isothermen und Isochoren auf der 
+Zustandsfläche  p(V, T) des idealen Gases 
+und schematisierter Arbeitszyklus der 
+Sterling‐Maschine.
+
+Isothermen und Adiabaten auf der 
+Zustandsfläche  p(V, T) des idealen Gases 
+und schematisierter Arbeitszyklus der 
+Carnot‐Maschine.
+
+25/5
+
+Stirlingmotor
+α-Konfiguration
+
+permanentes Heizen 
+des oberen Zylinders 
+und
+permanentes Kühlen 
+des unteren Zylinders
+
+25/6
+
+Isothermen (1,3)
+Isochoren (2,4)
+
+maximaler Wirkungsgrad
+
+W
+cycl
+Q
+Δ
+
+.
+
+=
+
+cycl
+
+.
+
+T
+1
+
+T
+2
+
+−
+T
+2
+
+η
+=
+
+4.
+
+1.
+
+Q
+
+2.
+
+3.
+
+Q
+
+Eigenschaften von
+Stirlingmotoren
+
+• Die Wärmeerzeugung muss nicht notwendigerweise auf Verbrennung beruhen, sondern es kann 
+
+jede Wärmequelle (Solarenergie beim Solar‐Stirling, Erdwärme o. ä.) genutzt werden.
+• Es gibt Stirlingmotoren, die nur wenige Kelvin Temperaturdifferenz benötigen, z. B. der 
+
+Flachplatten‐Stirlingmotor von Prof. Ivo Kolin (Universität Zagreb 1982).
+
+• Wenn die Wärmeerzeugung durch Verbrennung erfolgt, sind beliebige Brennstoffe möglich. 
+
+Außerdem kann die Verbrennung kontinuierlich und von außen erfolgen und erlaubt so günstige 
+Abgaswerte.
+
+• Stirlingmotoren haben eine geringe Geräuschentwicklung, da sie weder Explosions‐ noch 
+
+Auspuffgeräusche produzieren.
+
+• Der Verbrauch an Schmieröl ist gering.
+• Die Leistungsänderung durch Steuerung des Wärmestromes ist sehr langsam und deshalb für 
+
+Kraftfahrzeuge nicht geeignet. Andere Methoden der Leistungsregelung sind möglich, jedoch in 
+der Regel aufwändiger. So kann die Leistung eines Stirlingmotors über den mittleren 
+Betriebsdruck (Abblasen oder Zupumpen von Arbeitsgas) oder über die Phasenverschiebung der 
+Kolben geregelt werden.
+
+• Stirlingmotoren arbeiten mit hohen Drücken, benötigen große Wärmeübertrager und sind 
+
+• Der Stirlingmotor kann schon als Einzylindermotor ohne zusätzliche Ausgleichswellen völlig frei 
+
+deshalb schwer.
+
+von Massenkräften laufen.
+
+• Es gibt sehr viele verschiedene Bauformen, was vielseitige Anwendbarkeit und 
+
+Weiterentwickelbarkeit ermöglicht.
+
+• Stirlingmotoren erzeugen hohe Drehmomente vor allem bei niedrigen Drehzahlen.
+• Bestimmte Bauformen können selbstständig unter Last anlaufen.
+
+25/7
+
+Stirlingmotor
+α-Konfiguration
+
+25/8
+
+http://commons.wikimedia.org/wiki/Category:Stirling_engines
+
+Mehrzylinder-Stirlingmotor
+β-Konfiguration
+
+25/9
+
+http://commons.wikimedia.org/wiki/Category:Stirling_engines
+
+Stirlingmotor
+Anwendungen
+
+http://www.kockums.se/en/products‐services/submarines/stirling‐aip‐system/
+
+Stirling Block‐
+heizkraftwerk mit 
+elektrischer 
+Leistung vom 
+2 – 7,5 kW und 
+die thermischer 
+Leistung von
+8 – 22 kW. 
+Gesamtwirkungs‐
+grad 92 – 96%.
+
+25/10
+
+http://www.bine.info/publikationen/basisenergie/
+publikation/kraft‐und‐waerme‐koppeln/bhkw‐mit‐
+stirlingmotoren/
+
+Stirling‐Motor im 
+militärischen Einatz.  
+Strom‐ und 
+Wärmeerzeuger  
+höchster Laufruhe 
+im U‐Boot. Betrieb 
+über Hochdruck‐
+verbrennung von 
+Dieselkraftstoff mit 
+flüssigem 
+Sauerstoff. 
+
+β‐Stirling‐Motor mit 
+Rhombengetriebe für größte 
+Laufruhe.
+http://de.wikipedia.org/wiki/
+Stirlingmotor
+
+Stirlingmotor
+Anwendungen
+
+Glückliche Familien dank Stirling‐Motor im Betrieb zur ökonomischen und ökologischen Stromerzeugung 
+und Wärmegewinnung nach dem Prinzip dr Kraft‐Wärme‐Kopplung. 
+http://www.senertec‐mainburg.de/referenzen/privat.html
+
+25/11
+
+Stirlingmotor
+Anwendungen
+
+http://solarcellcentral.com/csp_page.html
+
+http://www.ripassoenergy.com/suitable.html
+
+25/12
+
+Dish Stirling Systems  Concentrated Solar Power (CSP) 
+systems uses direct sunlight also called beam radiation. This 
+is the sunlight that reaches the Earth’s surface in parallel 
+beams. Suitable sites are those that have an annual solar 
+insolation of approximately 2000 kWh/m². Sites with the 
+highest insolation values may have up to 2800 kWh/m² 
+annually. 
+Due to the high efficiency of a Ripasso CSP plant, an area of 
+300 km by 400 km in the Sahara desert is sufficient for a 
+Ripasso CSP plant to supply the entire world’s electricity 
+demand. 
+
+Stirlingmotor
+Anwendungen
+
+Stirling‐Motor als Antrieb zur Kühlung eine PC‐Prozessors. Der Motor läuft selbstregulierend (hohe Kühlleistung 
+(Drehzahl) bei hohem Wärmeanfall) mit der Abwärme des Prozessors und benötigt keinen elektrischen Anschluß. 
+
+http://www.greenoptimistic.com/2008/03/01/msi‐to‐make‐self‐cooled‐stirling‐engine‐motherboards/
+
+25/13
+
+Lehrevaluation
+Ausfüllhinweise
+
+25/14
+
+

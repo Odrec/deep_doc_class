@@ -1,0 +1,2122 @@
+Statistik I
+
+Prof. Dr. Thomas Staufenbiel
+
+Universität Osnabrück
+
+Forschungsmethodik, Diagnostik & Evaluation
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+Statistik I
+
+Grundlagen der Inferenzstatistik I: 
+Punkt und Intervallschätzungen
+
+"Die Statistik ist das Märchen der 
+
+Vernunft." Martin Kessel (1901 ‐ 1990) 
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+2
+
+Grundlagen der Inferenzstatistik I: Gliederung
+
+1 Einführung
+
+2 Stichprobenkennwerteverteilungen 
+
+und Standardfehler
+
+3 Punktschätzungen
+
+4 Intervallschätzungen
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+3
+
+Grundlagen der Inferenzstatistik I: Literatur
+
+Einführende Literatur
+ Bortz, J. & Schuster, Ch. (2010). Statistik für Human‐ und Sozialwissenschaftler (7. Auflage). 
+
+Berlin: Springer. [Kap. 6]
+
+ Eid, M., Gollwitzer, M. & Schmitt, M. (2010). Statistik und Forschungsmethoden. Weinheim: 
+
+Beltz. [Kap. 8, v.a. 8.5]
+
+Weiterführende Literatur
+ Levy, P. S. & Lemeshow, S. (2008). Sampling of populations. Methods and applications (4th
+
+ed.). Hoboken, NJ: Wiley.
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+4
+
+Inferenzstatistik: Einführung
+
+ Die Inferenzstatistik (schließende Statistik) beschäftigt sich mit der Frage, wie man auf‐
+grund von Daten, die an einer Stichprobe erhoben wurden, Schlüsse auf die Population
+(d.h. die Grundgesamtheit aller Personen) ziehen kann. 
+
+ Wir wollen also verallgemeinerte Aussagen über die untersuchten Personen hinaus treffen. 
+Dabei werden sich die Ergebnisse von Stichprobe zu Stichprobe unterscheiden und von den 
+Ergebnissen in der Population abweichen (Stichprobenfehler, sampling error).
+
+ Zwei Teilbereiche der Inferenzstatistik:
+
+• Schluss auf Parameter in der Population, z.B. wollen wir wissen, wie hoch die 
+
+Lesekompetenzen (der Population) aller 15‐jährigen Schüler in Deutschland im 
+Durchschnitt sind. Der Punktwert, ermittelt in der PISA‐Studie 2009 anhand einer 
+Stichprobe von knapp 5000 Schülerinnen und Schülern, betrug 497. 
+
+• Hypothesentesten, z.B. die Hypothese, dass sich Schülerinnen und Schüler in diesen 
+Kompetenzen unterscheiden (Unterschiedshypothese; in der Stichprobe waren die 
+Mädchen um 40 Punkte besser) oder dass ein Zusammenhang zwischen der Kompetenz 
+und der sozialen Herkunft der Schülerinnen und Schüler besteht (Zusammenhangs‐
+hypothese; r = 0.35 in der Stichprobe).
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+5
+
+Inferenzstatistik: Einführung
+
+ Eine Population  ist die Menge aller N Person (bzw. allgemeiner: Untersuchungseinheiten, 
+auch: eineiige Zwillinge, Ratten, Glühbirnen usw.), über die eine Aussage gemacht werden 
+soll. Populationen können auch hypothetischer Natur sein. 
+
+ Beispiele für Populationen: alle Menschen; alle Patienten mit Lungenkrebs; alle Studieren‐
+
+den der Universität Osnabrück; alle Menschen, bei denen Therapie A angewendet wird bzw. 
+alle, bei denen das nicht der Fall ist. 
+
+ Eine Stichprobe ist die Teilmenge der Population, die in die Untersuchung tatsächlich 
+
+eingeht, d.h. diejenigen n Untersuchungseinheiten, an denen Messwerte erhoben wurden.
+
+ Stichproben können auf verschiedene Weisen aus der Population gezogen werden. Wir 
+gehen im Folgenden von der Ziehung einer einfachen Zufallsstichprobe aus (zu anderen 
+Stichproben vgl. Vorlesung Forschungsmethoden): Aus einer Grundgesamtheit werden n
+Personen zufällig gezogen, d.h. die Wahrscheinlichkeit in die Stichprobe zu gelangen, ist für 
+jede Person aus der Population gleich.
+
+ Wir interessieren uns dabei für eine (oder auch mehrere) Variablen X.  Man kann X als 
+
+Zufallsvariable ansehen: Je nachdem, welches    zufällig gezogen wird, nimmt X einen 
+anderen Wert an. Dasselbe gilt für Kennwerte, die über Personen bestimmt werden, z.B. 
+den Mittelwert über die n unabhängigen Zufallsvariablen X1, X2, …, Xn der Stichprobe. 
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+6
+
+Inferenzstatistik: Einführung
+
+ Nehmen wir an, wir interessieren uns für den Mittelwert (als Beispiel für einen Kennwert) 
+
+eines Merkmals X in der Grundgesamtheit, haben dazu aus der interessierenden Population 
+eine einfache Zufallsstichprobe der Größe n gezogen und den Mittelwert     bestimmt.
+ Wir interessieren uns also für den Schluss von dem Stichprobenkennwert     auf den 
+
+x
+x
+
+Populationsparameter . Diesen Schluss bezeichnet man auch als Schätzen (estimation).
+ Man schreibt auch             („mue geschätzt“), und bei anderen Kennwerten entsprechend 
+
+ˆ
+x 
+
+2
+
+r
+z.B.                         . 
+
+ˆ
+ 
+
+2 ˆ
+,s
+
+ 
+
+ Beispiel: Wir interessieren uns für die durchschnittliche Intelligenz aller Studierenden in 
+Deutschland. Dazu haben wir eine einfache Zufallsstichprobe von n = 200 Studierenden 
+gezogen und bei ihnen die Intelligenz gemessen. Empirisch liegt nun der Mittelwert der 
+108
+Intelligenz dieser Stichprobe vor, z.B.                .
+
+x 
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+7
+
+Stichprobenkennwerteverteilung
+
+ Frage: Wie brauchbar ist der an der Stichprobe erhobene Mittelwert     für den Schluss auf 
+
+x
+
+den Mittelwert  in der Population? Wie gut schätzt     den Parameter ?
+
+x
+
+ Wir stellen dazu folgende Überlegung an. Nehmen wir an, wir ziehen zufällig eine Stich‐
+probe des Umfangs n und berechnen   . Dann ziehen wir erneut zufällig eine Stichprobe 
+derselben Größe n und berechnen wieder   , usw. Die dabei resultierenden    können mehr 
+oder weniger stark untereinander und von  abweichen.
+
+x
+
+x
+
+x
+
+ Ziehen wir theoretisch unendlich viele Stichproben einer konstanten Größe n, so bezeich‐
+net man die resultierende theoretische Verteilung des an diesen Stichproben berechneten 
+Kennwertes als Stichproben(kennwerte)verteilung (sampling distribution) des Kennwertes 
+(hier: des Mittelwertes).
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+8
+
+Stichprobenkennwerteverteilung
+
+Variable X in Population mit N = 20 und 
+
+Parametern  = 100.0 und  = 14.5
+
+Stichprobenziehung 
+
+mit n = 3
+
+Ziehung k = 1:  S = {3, 9, 19}
+
+Vp
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+X
+96.4
+101.6
+71.0
+88.5
+99.2
+101.3
+98.9
+108.0
+129.3
+98.9
+
+Vp
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+X
+
+116.7
+94.9
+117.4
+106.0
+82.8
+109.2
+112.3
+109.9
+88.0
+70.5
+
+
+8
+
+
+17
+
+
+
+12
+12
+
+
+19
+19
+
+
+15
+
+
+1
+1
+
+
+11
+
+
+6
+
+
+5
+
+
+13
+
+
+
+7
+7
+
+
+
+20
+20
+
+
+
+9
+9
+
+
+14
+
+
+
+10
+10
+
+
+
+4
+4
+
+
+2
+
+
+16
+
+
+18
+
+
+
+3
+3
+
+x
+1
+
+
+
+71.0 129.3 88.0
+
+
+
+
+
+3
+
+
+
+96.10
+
+Ziehung k = 2:  S = {1, 4, 20}
+
+x
+2
+
+
+
+96.4 88.5 70.5
+
+
+
+
+
+3
+
+
+
+85.13
+
+Ziehung k = 3:  S = {7, 10, 12}
+
+x
+3
+
+
+
+f x
+( )
+
+98.9 98.9 94.9
+
+
+
+
+
+3
+
+
+
+97.57
+
+5
+
+4
+
+3
+
+2
+
+1
+
+0
+
+Stichprobenkenn‐
+werteverteilung
+
+70
+
+80
+
+90
+
+100
+
+120
+
+130
+
+140
+
+x
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+Stichprobenkennwerteverteilung
+
+Variable X in Population mit N = 20 und 
+
+Parametern  = 100.0 und  = 14.5
+
+Vp
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+X
+96.4
+101.6
+71.0
+88.5
+99.2
+101.3
+98.9
+108.0
+129.3
+98.9
+
+Vp
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+X
+
+116.7
+94.9
+117.4
+106.0
+82.8
+109.2
+112.3
+109.9
+88.0
+70.5
+
+8
+f x
+( )
+6
+
+5
+
+4
+
+3
+
+2
+
+1
+
+0
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+70
+
+80
+
+90
+
+100
+
+110
+
+120
+
+1·
+
+
+
+1·
+
+130
+x
+
+(…)
+Ziehung k = 1140:  S = {2, 6, 9}
+101.6 101.3 129.3 110.73
+
+
+
+
+
+
+
+
+
+x
+1140
+
+3
+
+Stichprobenziehung 
+
+mit n = 3
+
+
+
+
+
+20
+3
+
+
+
+
+
+
+
+1140
+
+150
+f x
+( )
+
+100
+
+50
+
+0
+
+70
+
+80
+
+90
+
+100
+
+110
+
+120
+
+130
+
+X
+
+1
+ 
+
+X
+(Stand 01.12.2014)
+
+1
+ 
+
+X
+
+x
+
+Stichprobenkennwerteverteilung
+
+ Es ist wichtig, die folgenden drei Verteilungen nicht zu verwechseln:
+
+ Die Verteilung des Merkmals in der Population mit ihrem Mittelwert  und der 
+
+Standardabweichung .
+
+ Die Stichprobenkennwerteverteilung eines bestimmten Kennwertes (z.B. des Mittel‐
+
+wertes, der Varianz, der Produkt‐Moment Korrelation …), die entstehen würde, wenn 
+wir immer wieder Stichproben einer konstanten Größe n aus der Population ziehen und 
+den Kennwert an der Stichprobe berechnen würden. Der Mittelwert wird hier als
+und die Standardabweichung als       bezeichnet.
+
+x
+
+X
+
+ Die Verteilung des Merkmals in einer Stichprobe mit Mittelwert     und Standardab‐
+
+x
+
+weichung s. 
+
+f(x)
+
+
+
+f x
+( )
+
+
+
+f x
+( )
+
+
+
+
+
+
+
+
+
+x
+
+X
+
+X
+
+X
+
+x
+
+s
+
+s
+
+x
+
+x
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+11
+
+Stichprobenkennwerteverteilung
+
+ Der Erwartungswert der Stichprobenkennwerteverteilung des Mittelwertes entspricht (un‐
+abhängig von n) dem Erwartungswert der Verteilung des Merkmals X  in der Population :
+E(
+
+X    
+
+)
+
+X
+
+ Die Varianz der Stichprobenkennwerteverteilung des Mittelwertes ist um den Faktor n
+
+kleiner als die Varianz der Verteilung des Merkmals X in der Population 2:
+
+Var(
+
+X
+
+)
+
+  
+
+2
+X
+
+2
+
+n
+
+ Statt der Varianz der Stichprobenkennwerteverteilung des Mittelwertes verwendet man 
+
+häufiger deren Standardabweichung, die auch als Standardfehler des Mittelwertes 
+bezeichnet wird:
+
+ 
+
+X
+
+
+n
+
+ Der Standardfehler ist ein Maß für die Präzision der Schätzung. Je kleiner      , desto genauer 
+schätzt    den Parameter . Die Präzision können wir durch die Erhöhung von n vergrößern 
+(entsprechend den Stichprobenfehler verringern); auf  haben wir keinen Einfluss.
+
+X
+
+x
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+12
+
+Stichprobenkennwerteverteilung
+
+ Wenn man also den Erwartungswert und die Varianz der Verteilung des Merkmals in der 
+Population kennt, kann man also auch den Erwartungswert der Stichprobenkennwertever‐
+teilung des Mittels sowie den Standardfehler bestimmen (ohne die Verteilungsform des 
+Merkmals zu kennen).
+
+ Was weiß man noch über die Verteilungsform der Stichprobenkennwerteverteilung?
+
+ Ist die Verteilung des Merkmals in der Population eine Normalverteilung, so kann man 
+zeigen, dass auch die Stichprobenkennwerteverteilung eine Normalverteilung aufweist 
+(unabhängig von n):
+X
+X
+
+  
+
+~ N( ,
+
+)
+
+~ N( ,
+
+ 
+
+)X
+
+ Ist die Verteilung des Merkmals in der Population keine Normalverteilung, so geht die 
+Stichprobenkennwerteverteilung des Mittelwertes mit wachsendem n in eine Normal‐
+verteilung über (zentrales Grenzwerttheorem oder zentraler Grenzwertsatz, central limit
+theorem).
+Ab n > 30 ist die Annäherung für die meisten Zwecke „ausreichend gut“.
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+13
+
+Stichprobenkennwerteverteilung
+
+ Beispiel 1: Ziehen von 1000 Zufallsstichproben der Größe n = 16 aus einer normalverteilten 
+
+Population mit  = 16 und  = 5.
+
+1000 Ziehungen des 
+
+Stichprobenumfangs n = 16
+
+Verteilung des 
+Merkmals in der 
+Population N(16, 5)
+
+Stichprobenkenn‐
+werteverteilung 
+
+des Mittels
+
+Simulationsprogramm unter: http://onlinestatbook.com/stat_sim/sampling_dist/index.html
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+14
+
+Stichprobenkennwerteverteilung
+
+ Beispiel 2: Ziehen von 1000 Zufallsstichproben der Größe n = 16 aus einer Population mit 
+
+einer linkssteilen (nicht normalen) Verteilung mit  = 8.1 und  = 6.2.
+
+1000 Ziehungen des 
+
+Stichprobenumfangs n = 16
+
+Verteilung des 
+Merkmals in der 
+
+Population
+
+Stichprobenkenn‐
+werteverteilung 
+
+des Mittels
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+15
+
+Stichprobenkennwerteverteilung
+
+ Beispiel 3: Ziehen von 1000 Zufallsstichproben der Größe n = 16 aus einer Population mit 
+
+einer bimodalen Verteilung mit  = 14 und  = 9.1.
+
+1000 Ziehungen des 
+
+Stichprobenumfangs n = 16
+
+Verteilung des 
+Merkmals in der 
+
+Population
+
+Stichprobenkenn‐
+werteverteilung 
+
+des Mittels
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+16
+
+Stichprobenkennwerteverteilung
+
+Beispiel 2: Linkssteile 
+
+Verteilung des 
+Merkmals in der 
+
+Population
+
+Annäherung der 
+
+Verteilungsform der 
+Stichprobenkenn‐
+werteverteilung 
+des Mittels an die 
+Normalverteilung 
+mit wachsendem n.
+
+n = 2
+
+n = 5
+
+n = 25
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+17
+
+Standardfehler
+
+ Kennen wir (wie fast immer) den Erwartungswert und die Standardabweichung in der 
+
+Population nicht, so lassen sich beide durch die Stichprobenkennwerte    und s schätzen. 
+Xs
+Entsprechend resultiert dann als Schätzung für den Standardfehler des Mittelwertes     :
+
+x
+
+ˆ X
+ 
+
+s
+
+X
+
+
+
+s
+n
+
+ Für andere Kennwerte können ebenfalls Standardfehler abgeleitet werden. So wird z.B. als 
+Standardfehler für eine relative Häufigkeit                 des Auftretens eines Ereignisses k (den 
+Anteil) bei ausreichend großem n häufig herangezogen (vgl. Walter, 2010):
+
+h n
+/k
+
+ˆ
+p
+
+
+
+s
+
+p
+
+
+
+ˆ
+p
+
+)
+
+ˆ
+p
+
+(1
+ 
+n
+
+ Beispiel: Bei einer Meinungsumfrage bei n = 800 Personen haben 20% der Befragten eine 
+
+bestimmte Frage positiv beantwortet. Der Standardfehler für diese Variable beträgt:
+
+ps
+
+
+
+0.20 (1 0.20)
+
+ 
+800
+
+
+
+0.014
+
+ Für andere Arten der Ziehung von Stichproben (z.B. der geschichtete Zufallsauswahl) 
+
+ergeben sich ebenfalls andere Standardfehler (vgl. Levy & Lemeshow, 2008).
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+18
+
+Standardfehler
+
+ Bei der Ableitung des Standardfehlers wird eine Zufallsziehung mit Zurücklegen zugrunde 
+gelegt (oder unendlich große Population). In der Regel ziehen wir aber Stichproben ohne 
+Zurücklegen aus endlichen Populationen, da wir nicht Personen mehrfach in der Stichprobe 
+haben (und untersuchen) wollen.
+
+ Für den Fall, dass die Population „sehr viel“ größer als die Stichprobe ist, also das Verhältnis
+n / N hinreichend klein, so spielt das praktisch keine große Rolle. (Das ist meistens der Fall.)
+
+ Ist hingegen n / N > 0.05 (sind also mehr als 5% der Population in der Stichprobe enthalten), 
+
+so sollte der Standardfehler des Mittelwertes mit dem folgenden Korrekturfaktor multipli‐
+ziert werden (Endlichkeitskorrektur; finite population correction, fpc): 
+
+f
+
+
+
+N n
+
+N
+1
+
+
+
+
+n
+1
+  bei  
+
+
+
+1
+
+ Beispiel: In einer Mitarbeiterbefragung in einem Unternehmen wird die Hälfte aller 200 
+Beschäftigten danach befragt, wie zufrieden sie mit ihrer Bezahlung sind. Die Standard‐
+abweichung der Antworten auf die Frage beträgt s = 1.2. 
+Durch die Endlichkeitskorrektur verringert sich der Standardfehler 
+von                                                    auf 0.12 · 0.71 = 0.085.
+
+200 100
+
+200 1
+
+
+0.12
+
+
+
+1.2 / 100
+
+s
+
+/
+
+
+
+f
+
+
+
+
+
+0.71
+
+xs
+
+n
+
+
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+19
+
+Qualitätsmerkmale von Punktschätzern
+
+ Die an einer Stichprobe gewonnenen Kennwerte wie fk,    , s2, r etc. werden also nicht nur 
+
+zur Beschreibung einer Stichprobe verwendet, sondern auch zur Schätzung von Parametern 
+P(k), , ,  etc. der Population.
+
+x
+
+ Bei der Entscheidung, welcher Kennwert am besten zur Schätzung eines Parameters geeig‐
+net ist, können folgende Qualitätskriterien herangezogen werden: Konsistenz, Erwartungs‐
+treue, Effizienz und Suffizienz.
+
+ Ein Kennwert ist konsistent, wenn er sich bei wachsendem Stichprobenumfang n immer 
+
+mehr dem zu schätzenden Parameter annähert. Dies ist anders ausgedrückt dann der Fall, 
+wenn der Standardfehler des Schätzers für n  ∞ gegen 0 geht. 
+
+ Beispiel:      , s und s2 sind konsistente Schätzer für ,  und 2. Ebenso hk / n für k = P(k).
+
+x
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+20
+
+Qualitätsmerkmale von Punktschätzern
+
+ Ein Schätzer ist erwartungstreu (unverzerrt, unbiased), wenn der Erwartungswert der 
+
+Stichprobenkennwertever‐teilung des Schätzers dem Parameter entspricht. 
+Eine bestehende Abweichung von beiden bezeichnet man als Verzerrung oder Bias. Tritt 
+Bias auf, so wird der Parameter also systematisch über‐ oder unterschätzt.
+
+ Beispiel:     und s2 sind erwartungstreue Schätzer für  und 2 (nicht aber s für ). Bei einer 
+symmetrischen Populationsverteilung ist auch der Md ein erwartungstreuer Schätzer für .
+
+x
+
+ Gegenbeispiel: Die mittlere quadratische Abweichung zur Erfassung der Variabilität
+
+n
+
+
+
+i
+
+1
+
+
+2
+
+x
+
+)
+
+(
+
+
+
+x
+i
+n
+
+MQA
+
+
+
+ist keine erwartungstreue Schätzung für 2. Der Verschätzungsfaktor beträgt n / (n  1). 
+(MQA ist aber ein konsistenter Schätzer, da für n  ∞ der Bias gegen 0 geht.)
+
+ Daher haben wir in der deskriptiven Statistik auch die Varianz einer Stichprobe definiert als
+
+n
+
+
+
+i
+
+1
+
+
+2
+
+s
+
+
+
+(
+
+x
+i
+
+
+
+2
+
+x
+
+)
+
+n
+
+
+
+1
+
+
+
+MQA
+
+
+
+n
+
+
+1
+
+n
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+21
+
+Qualitätsmerkmale von Punktschätzern
+
+ Die Effizienz eines Schätzers gibt an, wie genau bzw. präzise ein Kennwert den Parameter 
+
+schätzt. Bei erwartungstreuen Schätzern ist der Standardfehler (oder die Varianz der 
+Stichprobenkennwerteverteilung) ein Maß für die Effizienz.
+
+ Beispiel: Bei vorliegender Normalverteilung in der Population sind der Mittelwert    und der 
+Median Md erwartungstreue und konsistente Schätzer des Populationsmittelwertes . Die 
+Varianz der Stichprobenkennwerteverteilung des Medians ist aber um den Faktor 1.56 größer 
+als die des Mittelwertes. Der Mittelwert ist also der effizientere Schätzer.
+
+x
+
+ Zum Vergleich wird häufiger die relative Effizienz zweier erwartungstreuer Schätzer a und b
+durch den Quotienten der beiden quadrierten Standardfehler                           ausgedrückt. 
+Im obigen Beispiel ist dann die relative Effizienz des Medians zum Mittelwert 1 / 1.56 · 100%
+= 64%. Dies kann so interpretiert werden, dass der Median einer Stichprobe von n = 100
+den Parameter  genauso präzise schätzt wie der Mittelwert einer Stichprobe von n = 64.
+
+2
+  
+b
+
+100%
+
+2
+a
+
+/
+
+ Beispiel für  = 15, n = 50
+
+ 
+
+2
+X
+
+2
+
+n
+
+
+
+15
+2
+50
+
+
+
+4.50
+
+ 
+
+2
+Md
+
+2
+
+n
+
+1.56 7.08
+
+
+
+
+
+2
+
+X
+2
+
+Md
+
+
+
+4.50
+7.08
+
+
+
+0.64
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+22
+
+Qualitätsmerkmale von Punktschätzern, Intervallschätzung
+
+ Ein Schätzer wird dann als suffizient (erschöpfend) bezeichnet, wenn er alle in der Stich‐
+
+probe vorliegenden Informationen bezüglich des Parameters verwendet.
+
+ Beispiel:    und s2 sind suffiziente Schätzer für  und 2, da alle n Werte in ihren konkreten 
+
+x
+
+Ausprägungen in die Berechnungen eingehen. Dies trifft beispielweise nicht für den Median 
+zu.
+
+ Die Schätzung von Populationsparametern durch einen einzelnen Kennwert/Schätzer aus 
+
+den Stichprobendaten bezeichnet man auch als Punktschätzung.
+
+ Wenngleich diese Schätzungen hinsichtlich der genannten Kriterien die bestmöglichen sind, 
+
+so werden sie doch von Stichprobe zu Stichprobe Schwankungen unterliegen.
+
+ Daher ist es informativer, einen Bereich anzugeben, in dem der unbekannte Parameter mit 
+
+einer gewissen statistischen Sicherheit liegt. Einen solchen Bereich bezeichnen wir als 
+Konfidenzintervall (Vertrauensintervall, Mutungsintervall) und sprechen dann auch von 
+Intervallschätzung.
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+23
+
+Grundlagen der Inferenzstatistik I: Gliederung
+
+1 Einführung
+
+2 Stichprobenkennwerteverteilungen 
+
+und Standardfehler
+
+3 Punktschätzungen
+
+4 Intervallschätzungen
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+24
+
+Intervallschätzung
+
+ Bei der Intervallschätzung will man beispielsweise wissen, innerhalb welcher Grenzen der 
+
+Parameter  mit einer gewissen Wahrscheinlichkeit liegt.
+
+ Gehen wir zunächst davon aus, das betrachtete Merkmal X sei normalverteilt und die 
+
+Standardabweichung  bekannt. Dann ist die Stichprobenkennwerteverteilung ebenfalls 
+n
+normalverteilt mit Erwartungswert  und Standardfehler                       .
+
+  
+
+/
+
+X
+
+ Dann wissen wir ferner aus der Kenntnis der Eigenschaft der Normalverteilung, dass 
+
+x
+
+zwischen plus und minus       um  68.3% der Fläche liegen. In 68.3% der Fälle fällt also ein 
+Stichprobenmittelwert in diesen Bereich, 
+was man formal schreiben kann als
+P
+
+(
+        
+
+) 0.683
+
+x
+
+x
+
+68.3%
+
+x
+
+X
+
+ Stellen wir innerhalb der Klammer um, so gilt auch:
+
+P x
+(
+
+       
+
+) 0.683
+
+x
+
+X
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+X
+
+X
+
+X
+ 
+
+x
+
+In 68.3% der Fälle fällt 
+x
+  
+in das Intervall
+X
+
+(Stand 01.12.2014)
+
+25
+
+Intervallschätzung
+
+ Anschaulich bedeutet
+
+P x
+(
+
+       
+
+) 0.683
+
+x
+
+X
+
+X
+
+x
+
+dass wenn     in dieses Intervall fällt (in 68.3% der 
+Fälle),     niemals weiter als 
+in diesen 68.3% der Fälle  im Intervall              liegt.
+
+von  entfernt ist, also 
+
+x  
+
+X
+
+x
+
+X
+
+ Zieht man also immer wieder eine Zufallsstichprobe 
+]
+und berechnet  und das Intervall                               , 
+so liegt  in 68.3% der Fälle in diesem Intervall.
+
+ 
+
+ 
+
+x
+
+x
+
+x
+
+[
+
+,
+
+X
+
+X
+
+68.3%
+
+X
+
+  
+
+X
+
+X
+
+x  
+
+X
+
+x
+
+x  
+
+X
+
+i
+
+W
+e
+d
+e
+r
+h
+o
+l
+t
+e
+Z
+u
+f
+a
+
+ 
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+l
+l
+s
+s
+t
+i
+c
+h
+p
+r
+o
+b
+e
+n
+
+In 68.3% der Fälle fällt 
+x
+  
+in das Intervall
+X
+x  
+und  in das Intervall 
+
+X
+
+(Stand 01.12.2014)
+
+26
+
+Intervallschätzung
+
+ In der Regel wird man wollen, dass  mit einer größeren Wahrscheinlichkeit als 68.3% im 
+
+Vertrauensintervall liegt. Üblicherweise wählt man als Konfidenzkoeffizienten einen 
+höheren Wert, z.B. 95% und entsprechend als Wahrscheinlichkeit, mit der der Parameter 
+außerhalb des Intervalls liegt, auch als Irrtumswahrscheinlichkeit bezeichnet,  = 0.05 (5%).
+
+ Zwischen welchen Werten liegen 95% der 
+
+Fläche einer Normalverteilung? Der Standard‐
+normalverteilungstabelle entnimmt man, dass 
+außerhalb der z‐Werte von ±1.96 jeweils 2.5%
+der Fläche liegen (z0.975 = 1.96 = z0.025).
+
+ Entsprechend gilt für das 95%‐Konfidenzintervall:
+
+P x
+(
+
+
+
+1.96
+
+    
+
+x
+
+X
+
+1.96
+
+ 
+
+) 0.95
+
+X
+
+/ 2 =
+
+0.025 (2.5%)
+
+1 –  = 0.95
+
+(95%)
+
+/ 2 =
+
+0.025 (2.5%)
+
+1.96
+
+z 
+1
+
+/ 2
+
+
+X
+
+
+X
+
+
+
+1.96
+
+z 
+1
+
+/ 2
+
+
+X
+
+
+x
+
+X
+
+bzw. allgemein
+P x
+(
+
+z
+1
+
+
+
+
+/ 2
+
+X
+
+    
+
+x
+
+z
+1
+
+
+/ 2
+
+   
+
+) 1
+
+X
+
+ Das Konfidenzintervall wird immer breiter, also die Vorhersage unpräziser, je kleiner die 
+
+Irrtumswahrscheinlichkeit , je kleiner n und je größer die Streuung des Merkmals .
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+27
+
+Intervallschätzung
+
+ Beispiel: Bei einem Intelligenztest seien die Werte in der Population normalverteilt mit 
+
+ = 15. In einer Stichprobe von 400 Studierenden wird ein mittlerer IQ‐Wert von 108
+bestimmt. Wie groß ist das 95%‐Konfidenzintervall?
+Für den Konfidenzkoeffizienten 95% mit  = 0.05 ist z1/2 = 1.96 (z‐Wert für p‐Wert 0.975)
+Ferner ist:
+  
+X
+z 
+1.96 0.75 1.47
+
+
+1
+x
+108 1.47
+
+
+
+[106.53,109.47]
+
+15 / 400
+
+n
+
+
+
+0.75
+
+
+
+
+
+
+
+
+
+
+
+/
+
+
+
+/2
+z
+1
+
+
+X
+
+/2
+
+X
+
+Man kann also schließen, dass bei einer großen Zahl von Wiederholungen dieser Studie mit 
+x
+n = 400 etwa 95% der berechneten Konfidenzintervalle mit 1.47 Intelligenzpunkten um    
+den Mittelwert  der Population enthalten. Man sagt auch, der Mittelwert der Population 
+liegt mit einer 95%en Sicherheit in dem Intervall [106.53, 109.47] .
+
+ Beispiel: Wie sieht das Konfidenzintervall bei 99%iger Sicherheit aus?
+
+Für den Konfidenzkoeffizienten 99% mit  = 0.01 ist z1/2 = 2.58 (z‐Wert für p‐Wert 0.995)
+Entsprechend ist  
+
+[106.07,109.94]
+
+ 
+
+2.58
+
+0.75
+
+108
+
+
+
+
+
+
+
+x
+
+
+
+z 
+1
+
+/2
+
+X
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+28
+
+Intervallschätzung
+
+ Ist die Variable in der Population normalverteilt, die Standardabweichung  aber 
+
+unbekannt, so lässt sich das Konfidenzintervall wie folgt bestimmen:
+
+x
+
+
+
+t
+
+n
+
+1;1
+ 
+
+/ 2
+
+
+
+s
+
+x
+
+ 
+
+x
+
+t
+
+n
+
+1;1
+ 
+
+/ 2
+
+
+
+s
+n
+
+tn1;12 bezeichnet den t‐Wert einer t‐Verteilung, der bei df = n  1 Freiheitsgraden 1  /2
+der Verteilung abschneidet.
+
+ Beispiel: An einer Stichprobe von n = 25 Bewerbern auf einen Job als Auszubildende in der 
+Metallverarbeitung wurde das mechanisch‐technische Verständnis erfasst. Es ergab sich ein 
+Mittelwert von 24.4 und eine Standardabweichung von 5.0. Das Merkmal sei in der Popula‐
+tion normalverteilt. Wie groß ist das 99%‐Konfidenzintervall?
+Für  = 0.01 ist t251;1/2 = 2.80 (t‐Wert für p‐Wert 0.995 und df = 24 aus Tabelle für t‐
+Verteilung).
+Entsprechend ist:  
+
+24.4
+
+
+
+.
+2 80
+
+
+
+5.0
+2
+5
+
+
+
+[21.6,27.2]
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+29
+
+Intervallschätzung
+
+ Aufgrund des zentralen Grenzwertsatzes geht bei großem n (n > 30) die Stichprobenkenn‐
+
+werteverteilung in eine Normalverteilung über, so dass in diesem Fall ohne Annahmen über 
+die Verteilungsform des Merkmals das Konfidenzintervall wie folgt bestimmt werden kann 
+(bei unbekannten ):
+
+x
+
+
+
+z
+1
+
+
+/ 2
+
+
+
+s
+
+x
+
+ 
+
+x
+
+z
+1
+
+
+/ 2
+
+
+
+s
+n
+
+ Ist die Stichprobe klein, die Verteilung des Merkmals nicht normal und  unbekannt, 
+müssen hier nicht näher dargestellte alternative Methoden der Konfidenzintervallbe‐
+stimmung herangezogen werden (vgl. z.B. Walter, 2010).
+
+ Konfidenzintervalle lassen sich auch für andere Statistiken, z.B. Varianzen, Korrelationen etc. 
+
+bestimmen. Das Konfidenzintervall um den Anteil
+
+ˆp
+
+lautet bei ausreichend großem n:
+
+ˆ
+p z
+
+1
+
+
+/ 2
+
+ˆ
+ˆ
+p z
+  
+1
+
+
+p
+
+/ 2
+
+
+
+ˆ
+p
+
+)
+
+ˆ
+p
+
+(1
+ 
+n
+
+Anders als beim Mittelwert hängt die Breite des Konfidenzintervalls hier vom Kennwert ab 
+und ist am größten, wenn                   maximal ist. Dies ist bei                der Fall. 
+
+(1
+ 
+
+ˆ
+p 
+
+0.5
+
+ˆ
+p
+
+ˆ
+p
+
+)
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+30
+
+Intervallschätzung
+
+ Man kann die obigen Zusammenhänge auch nutzen, um für eine gewünschte Präzision und 
+Irrtumswahrscheinlichkeit den erforderlichen Stichprobenumfang zu bestimmen. Die Breite 
+des Konfidenzintervalls beträgt beim Mittelwert:
+
+
+
+n
+
+2
+
+/
+
+
+
+z
+1
+
+
+/ 2
+
+ Soll diese Breite maximal  betragen, so erhält man durch Auflösen nach n:
+
+n
+
+
+ 
+
+
+2 z
+
+1
+
+
+
+
+
+/ 2
+
+2
+
+
+
+
+
+bzw. bei Schätzung durch s:
+
+n
+
+
+
+
+
+s
+
+/ 2
+
+2
+
+
+
+z
+1
+
+
+
+
+
+
+
+2
+
+
+
+
+
+4
+
+
+
+
+
+z
+2
+1
+/ 2
+
+2
+
+
+2
+
+
+
+s
+
+ˆp
+ bzw. analog für den Anteil      :
+
+4
+
+
+
+z
+2
+1
+
+
+/ 2
+
+n
+
+
+
+ˆ
+p
+
+2
+
+
+(1
+ 
+
+ˆ
+p
+
+)
+
+ Beispiel: Wie groß muss die Stichprobe in einer Meinungsumfrage sein, damit die Prozent‐
+
+werte (bei  = 5%) maximal eine Fehlermarge von ±3 Prozentpunkten aufweisen?
+4 1.96 0.50 (1 0.50) 1067
+
+
+Wir gehen von dem ungünstigsten Fall aus 
+und setzen                 ein:
+
+ 
+2
+
+0.50
+
+ˆ
+p 
+
+
+
+
+
+n
+
+2
+
+
+
+0.06
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+31
+
+Inferenzstatistik I: Zitierte Quellen
+
+Zitierte Quellen
+ Walter, O. B. (2010). Konfidenzintervalle. In H. Holling & B. Schmitz (Hrsg.), Handbuch Statistik, Methoden und 
+
+Evaluation (S. 335‐349). Göttingen: Hogrefe.
+
+Vorlesung »Statistik I« (WS 2014/2015)
+Prof. Dr. Thomas Staufenbiel
+
+(Stand 01.12.2014)
+
+32
+
+

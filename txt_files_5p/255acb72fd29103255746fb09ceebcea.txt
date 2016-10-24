@@ -1,0 +1,1185 @@
+Introduction to EPR, Part 2 
+
+  The Electron Spin 
+
+  The Electron Spin in a Magnetic Field: The Concept of Magnetic Resonance 
+
+  The Resonance Condition 
+
+ The g-Factor    
+
+ Interaction of the Electron Spin with Nuclear Spins: Hyperfine Interaction 
+
+  Interaction between two Electron Spins 
+
+  Some more aspects... 
+
+  EPR @ Different Microwave Frequencies 
+
+An Introduction to EPR Spectroscopy 
+
+We can explain our first EPR spectrum ! 
+
+  The Resonance Condition 
+
+n  9.5 GHz (X band) 
+
+hn = g b B  
+hn = g b B  
+
+In  most  EPR  machines  the  1st 
+derivative  of 
+absorption 
+spectrum is recorded ! 
+(→ Field Modulation) 
+
+the 
+
+DPPH (Diphenylpikrylhydrazyl) 
+A common standard for field calibration in EPR →  g = 2.0036+/-0.0002 
+
+An Introduction to EPR Spectroscopy 
+
+328033003320334033603380-40000-2000002000040000EPR signalField / Gauss DPPHFree atom 
+
+The g-Factor 
+
+In the presence 
+of a crystal field 
+
+(Landé-Factor) 
+
+  Orbital momentum is quenched 
+
+In the presence of a B-field, this  
+quenching is partly cancelled 
+(small) orbital magnetic moment, 
+which adds to the spin magnetic 
+moment 
+ g + Dg  
+Dg depends on orientation 
+g-Tensor 
+Spectral anisotropy 
+
+An Introduction to EPR Spectroscopy 
+
+SLJ=JgJJb=)1(2)1()1()1(1JJSSLLJJgJ                         Some more aspects... 
+
+Anisotropy 
+
+Binding of an unpaired electron to a molecular 
+system causes a shift away from the free electron 
+g-value   (e.g. DPPH: g = 2.0036 ↔ ge = 2.0023) 
+
+    hn = (ge+Dg) b B  
+    hn = (ge+Dg) b B  
+
+Dg  = contribution from the orbital momentum 
+ 
+ Dg  is largely determined by 
+       the nitrogen atoms of the porphyrin plane, if the magnetic field is along the X axis 
+       the His nitrogen and Met sulfur, if the magnetic field is along the Z axis 
+
+The model system: 
+a cytochrome c with a low-spin ferric iron 
+
+  different resonance positions (g values) for the X and Z orientation:   gx  gz 
+  different resonance positions (g values) for the X and Z orientation:   gx  gz 
+
+...but it does’nt matter, if the magnetic field axis is along X or Y 
+
+  the same resonance positions (g values) for the X and Y orientation:   gx = gy 
+  the same resonance positions (g values) for the X and Y orientation:   gx = gy 
+
+axial anisotropy 
+axial anisotropy 
+
+An Introduction to EPR Spectroscopy 
+
+                         Some more aspects... 
+
+Anisotropy 
+
+In a normal EPR sample we have about 1011-1015 randomly oriented molecules. 
+ 
+  Many molecules with the magnetic field direction anywhere in their XY plane 
+
+ 
+...but... 
+ 
+very few molecules with the magnetic field parallel to the unique Z axis 
+
+gz  or g  
+
+gx ,gy  or g  
+
+ 
+
+axial intensity pattern 
+
+axial absorption spectrum 
+axial 1st derivative spectrum 
+
+axial anisotropy 
+axial anisotropy 
+
+An Introduction to EPR Spectroscopy 
+
+zeBB0=                         Some more aspects... 
+
+Anisotropy 
+
+If we make one of the Fe-coordinating nitrogens  
+inequivalent to the others (protein structure !)   
+
+  the X axis and the Y axis become inequivalent: 
+  the X axis and the Y axis become inequivalent: 
+
+ gx  gy  gz 
+ gx  gy  gz 
+
+rhombic anisotropy 
+rhombic anisotropy 
+
+ 
+
+rhombic absorption spectrum 
+
+rhombic 1st derivative spectrum 
+
+An Introduction to EPR Spectroscopy 
+
+...most EPR spectra have more then one line... 
+
+  The Resonance Condition 
+
+  another submolecular magnet comes into play: 
+ 
+ 
+
+the nucleus with its nuclear spin I 
+
+ 
+
+Multiplicity: 
+MI = 2I + 1 
+MI = 2I + 1 
+
+Transition metal ions in biological systems 
+
+Ligand atoms 
+
+Metal 
+
+Isotope 
+
+Spin 
+
+Multiplicity 
+
+Ligand 
+
+Isotope 
+
+Spin 
+
+Multiplicity 
+
+Mn 
+
+55 
+
+5/2 
+
+Fe 
+
+Co 
+
+Cu 
+
+Mo 
+
+54,56,57,
+58 
+
+59 
+
+63, 65 
+
+92,94,95,
+96,97,98,
+100 
+
+1/2 (2%) 
+
+7/2 
+
+3/2 
+
+5/2 
+
+6 
+
+2 
+
+8 
+
+4 
+
+6 
+
+H 
+
+C 
+
+N 
+
+O 
+
+P 
+
+Cl 
+
+1, 2 
+
+1/2, 1 (0.02%) 
+
+2, 3 
+
+12, 13 
+
+14, 15 
+
+16,17,18 
+
+31 
+
+35,37 
+
+1/2 (1.1%) 
+
+1, 1/2  
+
+5/2 
+
+1/2 
+
+3/2 
+
+2 
+
+3, 2 
+
+6 
+
+2 
+
+4 
+
+An Introduction to EPR Spectroscopy 
+
+Types of Interactions 
+
+  The Resonance Condition 
+
+EPR spectra can reflect many different magnetic interactions,  
+giving rise to (sometimes complicated) multi-line spectra. 
+ 
+...but (good news)... 
+
+We can describe and analyse most of the spectra just by considering 
+We can describe and analyse most of the spectra just by considering 
+pairwise interactions between magnets of three types: 
+pairwise interactions between magnets of three types: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+1.  electron spins 
+ 
+1.  electron spins 
+ 
+ 
+2.  nuclear spins 
+2.  nuclear spins 
+3.  laboratory magnets 
+3.  laboratory magnets 
+
+S 
+S 
+I 
+I 
+B 
+B 
+
+...and (even better news)... 
+ 
+This results in five basic types of interactions, from which two are usually 
+so weak, that we can ignore them ! 
+
+An Introduction to EPR Spectroscopy 
+
+Types of Interactions 
+
+  The Resonance Condition 
+
+S 
+electron spins   
+S 
+electron spins   
+nuclear spins   
+I 
+I 
+nuclear spins   
+laboratory magnets  B 
+laboratory magnets  B 
+
+Interaction 
+
+Phenomenon 
+
+Example 
+
+S g B 
+
+S A I 
+
+S D S 
+
+I x I 
+
+I x B 
+
+Zeeman Interaction 
+
+Hyperfine Interactions 
+
+Zero-Field Interactions 
+
+Dipolar Interactions 
+
+Basic EPR Pattern 
+
+(inhomogeneous broadening) 
+
+Metal hyperfine (e.g.  Cu (I=3/2)) 
+
+“Ligand” hyperfine (1H (I=½), 14N (I=1)) 
+
+Quadrupole Interaction 
+
+Mn (I = 5/2) 
+
+Nuclear Zeeman 
+
+Interaction 
+
+Double Resonance Spectra (ENDOR) 
+
+and NMR !! 
+
+An Introduction to EPR Spectroscopy 
+
+The EPR Spectrum of a Nitroxide 
+
+Zeeman Splitting and Hyperfine Interaction 
+
+14N: I =1,  mI = -1, 0, +1 
+
+B = B0 +Blocal = B0 +amI 
+
+0 
+
+SpinSpin--Hamiltonian
+
+Hamiltonian       
+         
+
+HH = b S g(W) B  
+
+      + S A(W) I 
+      
+
+.
+
+ 
+)
+e
+v
+i
+t
+a
+v
+i
+r
+e
+d
+1
+(
+ 
+n
+o
+i
+t
+p
+r
+o
+s
+b
+a
+R
+P
+E
+
+ 
+
+10 
+
+B 
+
+ BCNExyzSpectral Shape: Anisotropic Hyperfine Interaction 
+
+14N: I =1,  mI = -1, 0, +1 
+
+B = B0 +Blocal = B0 +amI 
+
+11 
+
+BCNExyzSpectral Shape: Anisotropic Hyperfine Interaction 
+
+14N: I =1,  mI = -1, 0, +1 
+
+B = B0 +Blocal = B0 +amI 
+
+Axx 
+
+gxx 
+
+Azz 
+
+12 
+
+BCNExyzSpectral Shape: Anisotropic Hyperfine Interaction 
+
+14N: I =1,  mI = -1, 0, +1 
+
+B = B0 +Blocal = B0 +amI 
+
+Axx 
+
+gxx 
+
+Azz 
+
+13 
+
+BCNExyzSpectral Shape: Anisotropic Hyperfine Interaction 
+
+14N: I =1,  mI = -1, 0, +1 
+
+B = B0 +Blocal = B0 +amI 
+
+Axx 
+
+gxx 
+
+Azz 
+
+14 
+
+BCNExyzTypes of Interactions 
+
+  The Resonance Condition 
+
+S 
+electron spins   
+S 
+electron spins   
+nuclear spins   
+I 
+I 
+nuclear spins   
+laboratory magnets  B 
+laboratory magnets  B 
+
+Interaction 
+
+Phenomenon 
+
+Example 
+
+S g B 
+
+S A I 
+
+S D S 
+
+I x I 
+
+I x B 
+
+Zeeman Interaction 
+
+Hyperfine Interactions 
+
+Zero-Field Interactions 
+
+Dipolar Interactions 
+
+Basic EPR Pattern 
+
+(inhomogeneous broadening) 
+
+Metal hyperfine (e.g.  Cu (I=3/2)) 
+
+“Ligand” hyperfine (1H (I=½), 14N (I=1)) 
+
+ 
+ 
+
+Quadrupole Interaction 
+
+Mn (I = 5/2) 
+
+Nuclear Zeeman 
+
+Interaction 
+
+Double Resonance Spectra (ENDOR) 
+
+and NMR !! 
+
+An Introduction to EPR Spectroscopy 
+
+Interaction between two Electron Spins  
+
+S x S 
+S x S 
+
+  Interaction between two Electron Spins 
+
+  between electrons on a high-spin metal 
+ 
+
+ 
+
+Zero-Field Interactions (Zero-Field Splitting) 
+Zero-Field Interactions (Zero-Field Splitting) 
+
+ 
+  between electrons of different paramagnetic centers  
+     (metal centers, spin label, ...)  
+     in a polymer, protein, protein-ligand or protein-protein complex 
+
+Dipolar Interactions 
+Dipolar Interactions 
+
+Distance determination 
+Distance determination 
+
+An Introduction to EPR Spectroscopy 
+
+Zero-Field Interactions (Zero-Field Splitting) 
+Zero-Field Interactions (Zero-Field Splitting) 
+
+S x S 
+S x S 
+
+The mutual interaction between unpaired electrons at the same nucleus (transition metal ions with S > 1/2)  
+is independent of an external magnetic field → zero-field interaction 
+
+  Interaction between two Electron Spins 
+
+In zero field, the sublevels of half-integer spin multiplets group in pairs (Kramer pairs), 
+In zero field, the sublevels of half-integer spin multiplets group in pairs (Kramer pairs), 
+which are seperated by energy spacings DE >> hn  →   zero-field splittings (ZFS). 
+which are seperated by energy spacings DE >> hn  →   zero-field splittings (ZFS). 
+
+The doublets of integer spin systems are usually split even in zero field →  non-Kramer pairs 
+The doublets of integer spin systems are usually split even in zero field →  non-Kramer pairs 
+
+Analyses  of  zero-field  splittings 
+Analyses  of  zero-field  splittings 
+
+afford  a  detailed  characterization 
+afford  a  detailed  characterization 
+
+of  the  coordination  of  high-spin 
+of  the  coordination  of  high-spin 
+
+metal ions in proteins etc. 
+metal ions in proteins etc. 
+
+An Introduction to EPR Spectroscopy 
+
+Dipolar Interactions 
+Dipolar Interactions 
+
+Hamiltonian describing the dipole-dipole interaction, SDS 
+
+  Interaction between two Electron Spins 
+
+S x S 
+S x S 
+
+^ 
+
+^ 
+S1 and S2: spin operators  
+      for electrons 1 and 2. 
+
+...with a simple message: 
+
+The dipolar interaction between two electrons is proportional to  r3, 
+The dipolar interaction between two electrons is proportional to  r3, 
+r  being the distance between the two electrons. 
+r  being the distance between the two electrons. 
+
+Quantification of the dipolar interaction allows us to determine the  
+Quantification of the dipolar interaction allows us to determine the  
+distance between two paramagnetic centers 
+distance between two paramagnetic centers 
+
+...how to quantify ? ... 
+
+An Introduction to EPR Spectroscopy 
+
+Dipolar Interaction 
+
+Pake pattern 
+
+19 
+
+Dipolar Interaction 
+
+Pake pattern 
+
+20 
+
+Dipolar Interaction 
+
+Pake pattern 
+
+21 
+
+Dipolar Interaction 
+
+dipolar frequency wdd 
+
+Pake pattern 
+
+22 
+
+3201)1cos3(2rgB=Db3012rgBPakeb=DInter-Spin Distance Determination 
+
+CW: Convolution with the Pake Pattern 
+
+SpinSpin--Hamiltonian       
+Hamiltonian         
+
+HH = b S g(W) B  
+
+      + S A(W) I 
+      
+
+       + S D(W) S  
+
+23 
+
+Inter-Spin Distance Determination  
+
+CW: Convolution with the Pake Pattern 
+
+SpinSpin--Hamiltonian       
+Hamiltonian         
+
+HH = b S g(W) B  
+
+      + S A(W) I 
+      
+
+       + S D(W) S  
+
+24 
+
+Inter-Spin Distance Determination 
+
+CW: Convolution with the Pake Pattern 
+
+SpinSpin--Hamiltonian       
+Hamiltonian         
+
+HH = b S g(W) B  
+
+      + S A(W) I 
+      
+
+       + S D(W) S  
+
+25 
+
+Inter-Spin Distance Distribution 
+
+CW: Convolution with the Pake Pattern 
+
+MD Simulations 
+
+r 
+
+EPR Spectra Simulations 
+
+26 
+Simulation/fitting with DIPFIT (Steinhoff et al.), SmallDistances (Altenbach et al.) 
+
+Puls EPR Methods for Interspin Distance 
+
+Determination 
+
+ 
+
+Pulse Electron Double Resonance (PELDOR) or 
+Double Electron-Electron Resonances (DEER) 
+
+27 
+
+Spin-Echo Experiment 
+
+Hahn-echo sequence 
+
+bw=pt1Inter-Spin Distance Determination 
+
+Double Electron-Electron Resonance (DEER) and MD on Vinculin 
+
+w1  w2 
+
+w1 
+
+w2 
+
+Jeschke, G. (2002) ChemPhysChem 3, 927-932. 
+
+direct 
+transformation 
+
+P(d) 
+
+nm 
+d/nm 
+
+Abé et al. (2011) Biophys J 101:1772-1780 
+
+0.3150.3200.3250.330B / Tesla2AzzTypes of Interactions 
+
+  The Resonance Condition 
+
+S 
+electron spins   
+S 
+electron spins   
+nuclear spins   
+I 
+I 
+nuclear spins   
+laboratory magnets  B 
+laboratory magnets  B 
+
+Interaction 
+
+Phenomenon 
+
+Example 
+
+S g B 
+
+S A I 
+
+S D S 
+
+I x I 
+
+I x B 
+
+Zeeman Interaction 
+
+Hyperfine Interactions 
+
+Zero-Field Interactions 
+
+Dipolar Interactions 
+
+Basic EPR Pattern 
+
+(inhomogeneous broadening) 
+
+Metal hyperfine (e.g.  Cu (I=3/2)) 
+
+“Ligand” hyperfine (1H (I=½), 14N (I=1)) 
+
+Quadrupole Interaction 
+
+Mn (I = 5/2) 
+
+Nuclear Zeeman 
+
+Interaction 
+
+Double Resonance Spectra (ENDOR) 
+
+and NMR !! 
+
+An Introduction to EPR Spectroscopy 
+
+ 
+ 
+ 
+
+                         Some more aspects... 
+
+Some more aspects... 
+
+ 
+
+  Homogeneous and inhomogeneous lines 
+
+  Motional narrowing 
+
+  Relaxation 
+
+  Different microwave frequencies 
+
+An Introduction to EPR Spectroscopy 
+
+Homogeneous and inhomogeneous lines 
+
+                         Some more aspects... 
+
+The Heisenberg uncertainty DE in the energy of the excited state relative to the ground state 
+ 
+ 
+ 
+leads to a statistical distribution of the energy difference between the two states  
+
+DEDt  >  h/2 
+DEDt  >  h/2 
+
+  Distribution in frequency required for resonance. 
+  Distribution in frequency required for resonance. 
+
+In all forms of spectroscopy this is observed as an intrinsic lineshape with a width G > 0. 
+In all forms of spectroscopy this is observed as an intrinsic lineshape with a width G > 0. 
+
+The line shape is described by the Lorentz distribution. 
+The line shape is described by the Lorentz distribution. 
+
+Due to the Heisenberg uncertainty inequality the energy distribution increases with decreasing time,  
+
+which is the life time of the excited state,  
+
+i.e. the linewidth is inversely proportional to the relaxation time t. 
+
+GLorentz  1/t 
+GLorentz  1/t 
+
+The Lorentzian lineshape is also frequently called the homogeneous line shape. 
+The Lorentzian lineshape is also frequently called the homogeneous line shape. 
+...because it applies for a completely homogeneous sample in which all molecules are absolutely identical 
+
+An Introduction to EPR Spectroscopy 
+
+                         Some more aspects... 
+
+Homogeneous and inhomogeneous lines 
+
+...but...real sample are not completely homogeneous ! 
+
+Samples of proteins come with a distribution of conformations. 
+ 
+  each molecule is slightly different 
+
+ 
+
+  the spin in each molecule has a slightly different structural surrounding and thus a 
+      slightly different g value ! 
+
+This is reflected in the inhomogeneous line shape. 
+This is reflected in the inhomogeneous line shape. 
+
+Experimentally  we find, that this lineshape is well reproduced by the Gaussian distribution. 
+
+homogeneous line with 
+
+lorentzian shape 
+
+inhomogeneous line composed of multiple  
+homogeneous lines, having a Gaussian shape 
+
+An Introduction to EPR Spectroscopy 
+
+Reorientational 
+
+Motion 
+
+Motional Narrowing 
+
+34 
+
+Reorientational 
+
+Motion 
+
+Motional Narrowing 
+
+35 
+
+Reorientational 
+
+Motion 
+
+Motional Narrowing 
+
+36 
+
+Motional Narrowing 
+
+fast motional limit 
+
+slow motional limit 
+
+rigid limit 
+
+37 
+
+Molecular Dynamics and EPR Spectroscopy 
+
+38 
+
+Spin Label Dynamics and Protein Structure 
+
+ 
+)
+e
+v
+i
+t
+
+a
+v
+i
+r
+e
+d
+
+ 
+t
+s
+1
+(
+ 
+l
+
+i
+
+a
+n
+g
+s
+ 
+R
+P
+E
+
+B-field 
+
+Beier and Steinhoff (2006) 
+
+Biophys. J. 91:2647-2664  39 
+
+                         Some more aspects... 
+
+Relaxation 
+
+In EPR we excite transitions      we force the system away from thermal equilibrium ! 
+ 
+
+(we transfer spin from the ground state to the excited state) 
+
+Relaxation processes  are responsible for the return of the excited system back to thermal equilibrium! 
+Relaxation processes  are responsible for the return of the excited system back to thermal equilibrium! 
+
+Note: without relaxation , excitation of EPR transitions could only be performed up to 
+          equilibration of the population difference between the two states  =  Saturation 
+ 
+ 
+
+  Recording of an EPR spectrum would not be possible. 
+
+Two types of relaxation: 
+
+Spin-lattice relaxation:    causes changes in ms and therefore in the energy of the spin system 
+
+  In solids:  energy transfer through fluctuations of local B fields               
+ 
+  In liquids:  fluctuations induced by molecular motions and collisions 
+
+   caused by lattice vibrations 
+
+  spin-lattice  or  longitudinal relaxation time T1 
+
+Spin-spin relaxation: 
+
+  does not require exchange of energy  with the environment 
+  type of interaction e.g. an energy conserving  spin flip-flop of two spins 
+
+  spin-spin  or  transverse relaxation time T2 
+
+An Introduction to EPR Spectroscopy 
+
+Relaxation 
+
+The spin-lattice relaxation time T1 has a direct influence on the spectral linewidth !! 
+The spin-lattice relaxation time T1 has a direct influence on the spectral linewidth !! 
+
+                         Some more aspects... 
+
+  homogeneous linewidth 
+
+DEDt  >  h/2 
+DEDt  >  h/2 
+
+If the life time of an excited state is known accurately, 
+its energy is uncertain    line broadening ! 
+
+Relaxation times decrease with increasing temperature 
+Relaxation times decrease with increasing temperature 
+
+Temperature dependence of relaxation times  
+for a sample of spin-labelled plant light harvesting  
+complex IIb. (Jeschke et al., PCCP 9, 1895 (2007)) 
+
+If spin-lattice relaxation is very fast (at “high” temperatures), the excited state life time becomes very short  
+If spin-lattice relaxation is very fast (at “high” temperatures), the excited state life time becomes very short  
+
+ the uncertainty in the excited state energy becomes very large 
+ the uncertainty in the excited state energy becomes very large 
+
+ if the excited state life time approaches zero, the EPR spectrum is broadened beyond detection. 
+ if the excited state life time approaches zero, the EPR spectrum is broadened beyond detection. 
+
+In some cases (esp. metal ions) you have to measure at low temperatures to see EPR signals at all ! 
+In some cases (esp. metal ions) you have to measure at low temperatures to see EPR signals at all ! 
+
+An Introduction to EPR Spectroscopy 
+
+Different microwave frequencies: Why ? 
+
+Magnetic field / mT 
+
+  EPR @ Different Microwave Frequencies 
+
+Resolution increases with increasing frequency 
+
+...but...just for interactions that are linear in frequency 
+
+g factor anisotropy               Yes  
+
+hyperfine interactions          No  
+
+ 
+ 
+
+An Introduction to EPR Spectroscopy 
+
+Magnetic field / mT 
+
+Different microwave frequencies: 
+
+Common frequency bands for EPR spectroscopy 
+
+  EPR @ Different Microwave Frequencies 
+
+Band 
+
+L 
+S 
+X 
+K 
+Q 
+W 
+D 
+G 
+J 
+
+ typical frequency 
+
+Wavelength / 
+
+/ GHz 
+
+1 
+
+3 
+
+9-10 
+
+24 
+
+35 
+
+95 
+
+130 
+
+180 
+
+270 
+
+mm 
+
+300 
+
+100 
+
+30 
+
+13 
+
+9 
+
+3 
+
+2.3 
+
+1.7 
+
+1.1 
+
+An Introduction to EPR Spectroscopy 
+
+Resonance field 
+at g = 2 / Tesla 
+
+0.0036 
+
+0.11 
+
+0.35 
+
+0.86 
+
+1.3 
+
+3.4 
+
+4.6 
+
+6.4 
+
+9.6 
+
+

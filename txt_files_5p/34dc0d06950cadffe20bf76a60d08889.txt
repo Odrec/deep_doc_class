@@ -1,0 +1,906 @@
+Seminar:
+
+Praxis Digitaler Bildverarbeitung
+
+Multispektrale Transformation 
+
+von Bilddaten Teil II
+
+WS 2014/15
+
+13.10.2014
+
+Ausfall (Dienstreise)
+
+20.10.2014
+
+Einführung & ERDAS IMAGINE 2014 Teil I (Vertretung)
+
+27.10.2014
+
+ERDAS IMAGINE 2014 Teil II (Vertretung)
+
+03.11.2014
+
+Radiometrische Verarbeitung
+
+10.11.2014
+
+Geometrische Entzerrung Teil I
+
+17.11.2014
+
+Geometrische Entzerrung Teil II
+
+24.11.2014
+
+Digitale Filterung
+
+01.12.2014
+
+Multispektrale Transformation von Bilddaten I
+
+08.12.2014
+
+Multispektrale Transformation von Bilddaten II
+
+15.12.2014
+
+Klassifikation Teil I - Unüberwachte Klassifikation
+
+05.01.2015
+
+Klassifikation Teil II - Trainingsgebiete
+
+12.01.2015
+
+Klassifikation Teil III - Überwachte Klassifikation
+
+19.01.2015
+
+Klassifikation Teil IV - Hybride Klassifikation
+
+26.01.2015
+
+Klassifikation Teil V - Accuracy Assessment
+
+02.02.2015
+
+Übung I / Abschlussaufgabe 
+
+WS 2014/15
+
+Transformation multispektraler Daten
+
+Multispektrale Fernerkundungsdaten können mittels spezieller Transformationen in neue
+Bilddatensätze überführt werden. Die daraus resultierenden neuen Datensätze repräsen-
+tieren eine alternative Beschreibung des Originaldatensatzes, wobei der transformierte
+Grauwertevektor durch eine lineare Transformation mit den ursprünglichen Helligkeitswerten
+verknüpft ist.
+
+ transformiertes Bild zeigt möglicherweise Details, die im Originaldatensatz nicht bzw. nicht 
+
+so deutlich zu erkennen sind.
+
+ transformierte Kanäle sind nicht untereinander korreliert
+
+(ggf. Vorteil für Weiterverarbeitung)
+
+ Datentransformationen bieten die Möglichkeit, den wirklich wichtigen Informationsgehalt 
+
+des Bilddatensatzes mit einer geringeren Anzahl von Ausgabekanälen darzustellen   
+(Vorteil für visuelle Bewertung in dreikanaligen Bildschirmdarstellungen, Farbdrucke, 
+Datentransmission und Datenspeicherung)
+
+WS 2014/15
+
+Hauptkomponententransformation
+
+Die Hauptkomponententransformation ist eine Standardmethode zur Datenreduktion und
+Dekorrelation von multispektralen (d.h., multivariaten) Datensätzen. Die Haupt-
+komponenten lassen sich wieder als Multispektralbild farbig darstellen und enthalten
+statistisch mehr Information als jede andere Dreierkombination der ursprünglichen Kanäle.
+
+Ausgangspunkt der Betrachtung seien bivariate
+Beobachtungen (z.B. Reflexionswerte in zwei 
+Spektralkanälen). Die Varianz in Kanal 1 beträgt 20,3 
+und 24,1 in Kanal 2; die Kovarianz zwischen beiden 
+Kanälen beträgt 15,6. 
+
+Bei einer geometrischen Betrachtung des mehr-
+dimensionalen Merkmalsraums repräsentiert die 
+entsprechende Varianz-Kovarianz-Matrix  
+nichts als eine Serie von Vektoren im Raum;
+
+Vektor 2
+
+Vektor 1
+
+(Davis 1986)
+
+dabei repräsentiert jede Spalte der Matrix die 
+Koordinaten eines vom Nullpunkt ausgehenden 
+Vektors.
+
+WS 2014/15
+
+5.0015.0025.000.0010.0020.0030.00Band 15.0015.0025.000.0010.0020.0030.00Band 21,246,156,153,202sHauptkomponententransformation
+
+Vektor 2
+
+I
+
+Vektor 1
+
+II
+
+(Davis 1986)
+
+Diese Vektoren können gleichzeitig als 
+Achsen eines m-dimensionalen Ellipsoids 
+betrachtet werden; die Eigenvektoren der 
+Varianz-Kovarianz-Matrix definieren dabei 
+die Richtung der Halbachsen dieses 
+Ellipsoids, die Eigenwerte ihre Länge.
+
+Die  Hauptkomponentenanalyse ist somit 
+darauf ausgerichtet, die Richtung und Länge 
+der Achsen dieses Ellipsoids zu berechnen.
+
+ aus der Matrix s2 können m 
+
+Eigenvektoren mit m Eigenwerten 
+berechnet werden
+
+ da die Varianz-Kovarianz-Matrix eine 
+
+symmetrische Matrix ist, stehen die m 
+Eigenvektoren senkrecht aufeinander
+
+WS 2014/15
+
+5.0015.0025.000.0010.0020.0030.00Band 15.0015.0025.000.0010.0020.0030.00Band 21,246,156,153,202sHauptkomponenten (Principle Components)
+
+ 1. Hauptkomponente (PC) zeigt in Richtung der größten Ausdehnung des Datenclusters
+
+ 2. Hauptkomponente zeigt in die Richtung der zweitgrößten Ausdehnung des Datenclusters 
+
+und zwar orthogonal zur Richtung der 1. HK
+
+2-dimensionaler Raum
+
+3-dimensionaler Raum
+
+WS 2014/15
+
+Nach Berechnung der Eigenvektoren der 2x2 Varianz-Kovarianz-Matrix ergibt sich (in 
+standardisierter Form) 
+
+Hauptkomponententransformation
+
+Vektor 2
+
+I
+
+Vektor 1
+
+II
+
+(Davis 1986)
+
+d.h. der Vektor, der der ersten 
+Hauptachse entspricht, steigt um 0,66 
+Einheiten (Kanal 1) für jeweils 0,75 
+Einheiten in Kanal 2-Richtung. Die 
+Werte für die senkrecht aufeinander 
+stehenden Eigenvektoren sind 37,9 
+bzw. 6,5
+( Länge der ersten und zweiten 
+Hauptachse).
+
+WS 2014/15
+
+66,075,075,066,0IIundI5.0015.0025.000.0010.0020.0030.00Band 15.0015.0025.000.0010.0020.0030.00Band 2Hauptkomponententransformation
+
+Vektor 2
+
+I
+
+Vektor 1
+
+II
+
+(Davis 1986)
+
+Die Gesamtvarianz eines Datensatzes lässt sich 
+entsprechend als die Summe der individuellen 
+Varianzbeträge in den unterschiedlichen 
+Dimensionen des Datensatzes ausdrücken. Da die 
+Varianz der jeweiligen Kanäle in der Diagonalen 
+der Varianz-Kovarianz-Matrix angeordnet sind, 
+ergibt sich für das Beispiel:
+
+Gesamte Varianz = 20,3 + 24,1 = 44,4
+
+Die erste Variable (Kanal 1) steuert
+dabei 46 % (d.h. 20,3/44,4) zur
+gesamten Varianz des Datensatzes
+bei, die zweite Variable (Kanal 2)
+die übrigen 54 % .
+
+WS 2014/15
+
+5.0015.0025.000.0010.0020.0030.00Band 15.0015.0025.000.0010.0020.0030.00Band 21,246,156,153,202sHauptkomponententransformation
+
+Die Summe der Eigenwerte einer Matrix entspricht immer der Summe ihrer diagonalen 
+Elemente (Längen der Hauptachsen), d.h.  
+
+37,9 + 6,5 = 44,4
+
+Da die Eigenwerte der Länge der beiden Hauptachsen I und II entsprechen, repräsentieren 
+diese Achsen auch die Gesamtvarianz des neuen (d.h. des transformierten) Datensatzes. 
+Jede Hauptachse belegt damit einen Varianzanteil des Datensatzes, der dem Verhältnis 
+seines Eigenvektors zur Summe der diagonalen Matrixelemente entspricht, d.h.
+
+I    = 
+II   =   
+
+37,9 / 44,4 
+6,5 / 44,4 
+
+( 86 % )
+( 14 % )
+
+Es ist damit vorgegeben, dass zumindest eine der beiden Hauptachsen in Bezug auf die 
+Gesamtvarianz des Datensatzes eine höhere Effizienz aufweist als irgendeine der 
+ursprünglichen Variablen.
+
+Die Hauptkomponententransformation ist damit besonders gut zur Reduktion der 
+Datenmenge geeignet. Im Vergleich zur Eliminierung einer der Originalvariablen (Verlust 
+von 46% bzw. 54% der Varianz) führt die zweite Hauptkomponente nur zu einem Verlust 
+von 14% der Varianz.
+
+WS 2014/15
+
+Zur Berechnung der neuen Werte der Daten werden die ursprünglichen bivariaten
+Beobachtungen mit Hilfe der Eigenvektoren auf die neuen Hauptachsen projiziert.
+
+Hauptkomponententransformation
+
+Die Elemente der Eigenvektoren (principal component loadings), die zur Berechnung der
+neuen Werte
+linearen
+Transformation. In Matrixform ergibt sich [PC] = [E] ·[B], d.h. im betrachteten Fall errechnen
+sich die neuen Werte des transformierten Datensatzes (principal component scores) mit:
+
+repräsentieren also Koeffizienten einer
+
+genutzt werden,
+
+Projektion der Datenpunkte auf die 
+Hauptachsen. Die Varianz der Daten in 
+Komponente I ist 37.9., diejenige in 
+Komponente II beträgt nur 6.5 
+
+WS 2014/15
+
+(Davis 1986)
+
+PCXXiii112066075..PCXXiii212075066..Hauptkomponententransformation
+
+ Aufgabe: Hauptkomponententransformation in ERDAS IMAGINE
+
+• Führen Sie eine Hauptkomponententransformation anhand des Landsat 8 Subsets
+
+von Osnabrück in ERDAS IMAGINE durch.
+
+• Wählen Sie dabei die gleiche Anzahl an Hauptkomponenten wie die Anzahl der 
+
+Kanäle des Eingabedatensatzes.
+
+• Speichern Sie den Eigen Matrix- und Eigen Value File ab.
+
+• Führen Sie eine Rücktransformation mit allen 7 und mit nur 3 Hauptkomponenten 
+
+durch.
+
+• Vergleichen Sie die Ergebnisse mit dem Ausgangsdatensatz.
+
+WS 2014/15
+
+Hauptkomponententransformation
+
+ Raster → Spectral → Principal Component
+
+WS 2014/15
+
+Die aus der Transformation resultierenden PC-Kanäle:
+
+Hauptkomponententransformation
+
+PC1
+
+PC2
+
+PC3
+
+PC5
+
+PC7
+
+PC4
+
+WS 2014/15
+
+PC6
+
+Hauptkomponententransformation
+
+Bildstatistik
+
+Band
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+Min.
+
+6411
+
+6295
+
+6040
+
+5273
+
+5020
+
+4882
+
+5015
+
+Max.
+
+65535
+
+59156
+
+65535
+
+65535
+
+65535
+
+65535
+
+61272
+
+Mean
+
+Std.
+
+Varianz
+
+Varianz in %
+
+9688.64
+
+8931.33
+
+8469.08
+
+623.78
+
+389101.488
+
+761.35
+
+579653.823
+
+972.20
+
+945172.84
+
+1.67 %
+
+2.50 %
+
+4.07 %
+
+8034.65
+
+1524.66
+
+2324588.12
+
+10.01 %
+
+17773.67
+
+3063.93
+
+9387667.04
+
+40.41 %
+
+12176.76
+
+2468.54
+
+6093689.73
+
+26.23 %
+
+8887.80
+
+1874.19
+
+3512588.16
+
+15.12 %
+
+Eigenvektoren
+
+PC
+
+Kanal 1
+
+Kanal 2
+
+Kanal 3
+
+Kanal 4
+
+Kanal 5
+
+Kanal 6
+
+Kanal 7
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+0.0977
+
+-0.1023
+
+0.2921
+
+0.4538
+
+-0.3667
+
+0.2337
+
+-0.7069
+
+0.1354
+
+-0.1307
+
+0.3533
+
+0.3252
+
+-0.3330
+
+0.3812
+
+0.6912
+
+0.2098
+
+-0.1353
+
+0.4218
+
+0.0730
+
+-0.1632
+
+-0.8499
+
+0.0734
+
+0.3162
+
+-0.2603
+
+0.5466
+
+-0.6086
+
+0.2646
+
+0.2765
+
+-0.1293
+
+0.3792
+
+0.8950
+
+0.1997
+
+0.0554
+
+0.1047
+
+0.0347
+
+-0.0019
+
+0.6813
+
+-0.1082
+
+-0.4984
+
+-0.2447
+
+-0.4644
+
+0.0052
+
+-0.0106
+
+0.4692
+
+-0.2714
+
+-0.1574
+
+0.4997
+
+0.6568
+
+-0.0007
+
+0.0190
+
+Eigenwerte
+
+PC 1
+
+PC  2
+
+PC 3
+
+PC 4
+
+PC 5
+
+PC 6
+
+PC 7
+
+12170785.07 9474288.12 1198246.50
+
+267117.51
+
+90180.59
+
+25674.70
+
+5436.90
+
+52.39 %
+
+40.78 %
+
+5.16 %
+
+1.15 %
+
+0.39 %
+
+0.11 %
+
+0.02 %
+
+WS 2014/15
+
+Hauptkomponententransformation
+
+RGB: OLI5-OLI4-OLI3
+
+RGB: PC3-PC2-PC1
+
+ RGB-Kombination aus den Hauptkomponentenkanälen 1, 2 und 3 beinhaltet eine 
+
+höhere Informationsdichte als jede andere, aus den Originalkanälen zu erzeugende 
+Farbkombination.
+
+WS 2014/15
+
+Welche Komponenten berücksichtige ich bei der Rücktransformation in den 
+ursprünglichen Datenraum ?
+
+Hauptkomponententransformation
+
+14000000.00
+
+12000000.00
+
+10000000.00
+
+8000000.00
+
+6000000.00
+
+4000000.00
+
+2000000.00
+
+0.00
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+Eigenwerte
+
+PC 1
+
+PC  2
+
+PC 3
+
+PC 4
+
+PC 5
+
+PC 6
+
+PC 7
+
+12170785.07 9474288.12 1198246.50
+
+267117.51
+
+90180.59
+
+25674.70
+
+5436.90
+
+52.39 %
+
+40.78 %
+
+5.16 %
+
+1.15 %
+
+0.39 %
+
+0.11 %
+
+0.02 %
+
+WS 2014/15
+
+Hauptkomponententransformation
+
+ Hauptkomponenten-Rücktransformation
+
+WS 2014/15
+
+Hauptkomponententransformation
+
+ Vergleich Hauptkomponenten-Rücktransformation mit 7 und mit nur 3 
+
+Hauptkomponenten
+
+WS 2014/15
+
+Tasseled Cap-Transformation
+
+Die Hauptkomponententransformation projiziert multispektrale Originaldaten in ein neues 
+Koordinatensystem, das durch die statistischen Eigenschaften der Originaldaten (im 
+wesentlichen ihre Kovarianz) bestimmt wird. Die neuen Komponenten resultieren dabei 
+aus einer linearen Kombination der ursprünglichen Spektralinformation.
+
+ selbstverständlich sind auch andere lineare Transformationen möglich
+
+Eine der wichtigsten Transformationen ist die sogenannte “Tasseled Cap”- Transformation, 
+die bereits während der 70er Jahre entwickelt wurde, um multispektrale Informationen für 
+landwirtschaftliche Anwendungen der Fernerkundung optimiert darzustellen und sich 
+
+zunächst auf Landsat-MSS-Daten bezog.
+
+PVI
+
+Soil Line
+
+Die Tasseled Cap Transformation ist konzeptionell mit dem 
+PVI verwandt, der zur Bestimmung eines Vegetationsindex 
+in einem zweidimensionalen Messraum den senkrechten 
+Abstand zur “soil line” benutzt.
+
+(http://fern39.uni-trier.de/feut/studium/ 
+kurse_dbv_vl.html)
+
+WS 2014/15
+
+2,,2,,NIRvegNIRsoilredvegredsoilPVITasseled Cap-Transformation
+
+Die ursprünglich im vierdimensionalen Koordinatenraum des Landsat-MSS-Systems 
+definierten Achsen des neuen (“Tasseled Cap”-) Koordinatensystems orientierten sich daran, 
+die im Laufe der Jahreszeiten bei landwirtschaftlichen Kulturen als Folge phänologische 
+Veränderungen auftretende Variabilität der 
+Spektraleigenschaften optimiert darzustellen. 
+
+Die neuen Achsen bezeichneten Kauth & Thomas
+als:
+
+Brightness: vor allem Albedo-Variationen,
+z.B. durch unterschiedlich helle Böden hervorgerufen
+
+Greenness: korreliert mit unterschiedlichen Anteilen und 
+Typen von photosynthetischer Vegetation (entspricht somit 
+einem Vegetationsindex)
+
+Yellowness: Variabilität der abgestorbenen (“senescent”) 
+bzw. Trockenvegetation
+
+Non-Such: nicht eindeutig, atmosphärische Effekte (?)
+
+Entsprechend der dafür eingesetzten Berechnungsmethode 
+sind diese Achsen nicht korreliert und zueinander 
+orthogonal.
+
+WS 2014/15
+
+(Kauth & Thomas 1976)
+
+Tasseled Cap Koeffizienten-Matrix (MSS)
+
+810.0543.0012.0223.0194.0039.0522.0829.0491.0600.0562.0290.0264.0586.0632.0433.0RTasseled Cap-Transformation
+
+Die Bedeutung dieses Transformationskonzepts liegt darin, einen konsistenten 
+Bewertungsrahmen zur Interpretation von Satellitendaten bereitzustellen, die 
+unterschiedliche Wachstumsphasen landwirtschaftlicher Kulturen erfassen. Im Gegensatz 
+zu Hauptkomponenten wird die Koeffizientenmatrix der „Tasseled Caps“ nicht durch die 
+individuelle Bildstatistik (d.h. wechselnde Bildinhalte) bestimmt, sondern bleibt für jede 
+Szene gleich.
+
+Crist (1983) und Crist & Cicone (1984) 
+modifizierten schließlich die Tasseled Cap 
+Transformation im Hinblick auf die 
+Spektralkanäle des mittlerweile verfügbaren 
+Landsat-TM. Dabei stellte sich heraus, dass 
+TM-Daten signifikante Informationen in 
+einer dritten Datendimension enthielten 
+(offensichtlich durch die zusätzlichen 
+Spektralkanäle des mittleren Infrarot 
+bedingt), die man als “Wetness” 
+bezeichnete.
+
+(nach Mather 1987)
+
+WS 2014/15
+
+Tasseled Cap-Transformation
+
+Die Achsen des Tasseled Cap Koordinatensystems werden nicht durch die individuelle 
+Bildstatistik bestimmt. Daher bilden sie einen konsistenten, im weiteren Sinne physikalisch-
+basierten Interpretationsrahmen zur Interpretation multitemporaler Satellitendaten.
+
+Auch bei den Tasseled Caps werden die vorhandenen Grauwerte ähnlich wie
+bei der Hauptkomponententransformation lediglich in einer anderen Perspektive dargestellt. 
+Im transformierten Merkmalsraum werden durch die Verknüpfung
+der Achsen mit thematischen Bezügen („brightness“, „greenness“, „wetness“) 
+Datenstrukturen hervorgehoben, die unmittelbare Rückschlüsse auf die physikalischen 
+Eigenschaften wichtiger Bildinhalte erlauben.
+
+Crist et al. 1986, verändert)
+
+WS 2014/15
+
+Tasseled Cap-Transformation
+
+Die thematischen Bezüge der Tasseled Caps haben 
+sich bei der thematischen Interpretation 
+multitemporaler Satellitendaten und  dabei 
+besonders bei landwirtschaftlichen 
+Fragestellungen bewährt.
+
+(Richards 2006)
+
+Die Tasseled Cap Transformation bewahrt 
+euklidische Distanzen im Merkmalsraum
+und ihre drei thematischen Kanäle 
+(„Brightness“, „Greenness“, „Wetness“) 
+umfassen zumeist etwa 95 % der Gesamt-
+varianz. Die nicht spezifizierten
+Kanäle („lesser features“) sind stark 
+rauschgeprägt.
+
+(Hill 1993)
+
+WS 2014/15
+
+Tasseled Cap-Transformation
+
+ Aufgabe: Tasseled Cap-Transformation in ERDAS IMAGINE
+
+• Führen Sie eine Tasseled Cap-Transformation anhand des Landsat 8 Subsets von 
+
+Osnabrück in ERDAS IMAGINE durch.
+
+• Löschen Sie vorher den 1 Kanal der Szene, um den Lansat 8 Datensatz an die 
+
+Konfiguration von Landsat 5 anzupassen.
+
+• Vergleichen Sie das Ergebnisse mit dem Ergebnis der Hauptkomponenten-
+
+transformation (Wählen Sie jeweils die Kombination Kanal 3/2/1).
+
+WS 2014/15
+
+Tasseled Cap-Transformation
+
+ Raster → Spectral → Tasseled Cap
+
+WS 2014/15
+
+Brightness (TC 1)
+
+Greenness (TC 2)
+
+Wetness (TC 3)
+
+Tasseled Cap-Transformation
+
+TC 4
+
+TC 5
+
+TC 6
+
+WS 2014/15
+
+PCA vs.Tasseled Cap
+
+ Vergleich PCA und Tasseled Cap
+
+WS 2014/15
+
+

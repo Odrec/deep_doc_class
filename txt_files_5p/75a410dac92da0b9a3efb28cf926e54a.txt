@@ -1,0 +1,134 @@
+Abteilung Mikrobiologie/Grundmodul 2016 Kurs B Gruppe 12 Versuch 6
+Name, Vorname: Schmidt, Nicole
+Name, Vorname: Salow, Julia  
+
+ Matrikelnummer: 958328
+Matrikelnummer: 959716
+
+Versuch 6: Chemotaxis
+
+Einführung: Erläutern Sie den Begriff Chemotaxis und beschreiben Sie das Ziel des Versuchs 
+
+Chemotaxis ist eine gerichtete Veränderung der Bewegungsrichtung von frei beweglichen Organismen, die durch einen 
+Konzentrationsgradienten von chemischen Stoffen hervorgerufen wird. Man unterscheidet dabei positive und negative 
+Chemotaxis: Positive Chemotaxis durch Lockstoffe (Attraktantien) bewirkt Anlockung, negative durch Schreckstoffe 
+(Repellantien) bewirkt Abstoßung.
+Die Motilität von E.coli ist durch seine peritriche Begeißelung gegeben. Die Bewegung erfolgt über die Rotation der 
+Bakteriengeißel, wobei die Drehbewegung durch einen Protonengradienten angetrieben wird. Dabei bilden die 
+Flagellen ein propellerartiges Bündel, das sich gegen den Uhrzeigersinn dreht und so ein gleichmäßiges 
+Geradeausschwimmen ermöglicht. Bei Rotation im Uhrzeigersinn löst sich das Bündel aus Flagellen, und es kommt zu 
+einer Taumelbewegung, bei der das Bakterium an einer Stelle hält und rotiert, um so die Richtung ändern zu können. 
+Ohne chemotaktische Signale kommt es zu wiederkehrenden, zufälligen Umkehrungen der Flagellenrotation und 
+dadurch abwechselnd zu geraden Schwimmbewegungen und Taumeln. Ist ein Lockstoff vorhanden, wird die 
+Umkehrung unterdrückt, und das Bakterium schwimmt gerade. Bei abnehmender Konzentration des Lockstoffs treten 
+erneut Taumelbewegungen auf. Je höher die Konzentration des Lockstoffs, umso geringer ist das Auftreten der 
+Taumelbewegung.
+Ziel des Versuchs ist die Untersuchung zweier E.coli-Stämme (E.coli RP 437 che+ und E.coli  RP  437 ΔcheZ) auf ihr 
+chemotaktisches Verhalten. In Teil A wird diese durch Ausbildung von Wachstumsringen auf Weichagarplatten verfolgt. 
+In Teil C sollen Substanzen auf ihre Eigenschaft als Lock- oder Schreckstoff untersucht werden.
+
+Methoden:
+siehe Skript
+In Teilversuch A haben wir je eine Kultur (aus 1:100 Verdünnung) von E.coli RP437 und E.coli RP437 ΔcheZ auf je 
+eine Weichagarplatte gebracht und die Wachstumsringe vermessen.
+In Teilversuch B wurden für die Flagellenfärbung frische Kulturen von LB-Medium mit der üN Kultur (1:10) von 
+jeweils E.coli Stämme LJ110 und Δfli I  beimpft, um nach der Inkubation gut bewegliche Bakterien zu haben.
+Es wurden außerdem in Teilversuch C auf eine weitere Weichagarplatte 4 Proben verschiedener Substanzen aufgebracht
+1: Agavendicksaft
+2: Schimmelentferner
+3: Zitronensaft
+4: Eukalyptusöl
+
+Ergebnisse:
+
+Abbildung 1: E.coli RP437 
+ΔcheZ 08.07. 8:00 Uhr 
+
+Abbildung 2: E.coli RP437 
+08.07. 8:00 Uhr 
+
+Abbildung 3: E.coli RP437 
+Abschlussmessung 08.07. 13 
+Uhr
+
+In den Abbildungen 2 und sieht man das Wachstum von E.coli RP437. Man kann erkennen, wie
+
+sich das Bakterium in dem Weichagar ausbreitet. Im Gegensatz dazu hat sich RP 437 ΔcheZ (Abbildung 1)
+nicht wirklich ausgebreitet, was aber auch zu erwarten war. Hier ist das Gen defekt, welches für die Unterdrückung der 
+Umkehrung der Flagellenrotation verantwortlich ist. Daher kann sich die Zelle nicht mehr gezielt geradeaus bewegen 
+sondern nur noch taumeln.  Bei der mikroskopischen Betrachtung konnte man die Bewegung bei E.coli RP437 
+erkennen, bei der sich Flagellenschlag und Taumeln abgewechseld haben. Bei der Mutante war lediglich ein Taumeln zu
+erkennen.
+
+Tabelle 1: Größe der Wachstumsringe
+Uhrzeit E.coli RP437
+
+Datum 
+06.07.16
+07.07.16
+07.07.16
+07.07.16
+08.07.16
+08.07.16
+
+08:00
+13:00
+17:00
+08:30
+13:00
+
+0,5 cm
+1,3 cm
+1,5 cm
+1,8 cm
+3,9 cm
+4,4 cm
+
+E.coli RP437 ΔcheZ WT E.coli RP437 cheZ+
+
+0,5 cm
+0,5 cm
+0,5 cm
+0,5 cm
+0,7 cm
+0,7 cm
+
+0,5 cm
+1,2 cm, leichtes Wachstum Richtung 4
+1,6 cm, Wachstum Richtung 4
+1,8 cm, Wachstum Richtung 2 und 4
+3,8 cm, 1 und 2 überwachsen, an 4 näher als an 3
+4,4 cm, 1 und 2 überwachsen, an 4 näher als an 3
+
+Abbildung 4: WT 07.07. 8:00 Uhr
+
+Abbildung 5: WT 08.07. 8:30 Uhr
+
+Abbildung 6: WT 08.07. 13Uhr
+
+In Teilversuch C sollte getestet werden, inwiefern von uns ausgewählte Stoffe chemotaktisch wirksam sind, also ob sie 
+als Lockstoffe bzw. Schreckstoffe wirken und somit Einfluss auf die Chemotaxis der Bakterien nehmen. Zuerst konnte 
+ein Wachstum Richtung Eukalyptusöl beobachtet werden. Wie man in Abbildung 5 und 6 sehen kann, ist die Kultur am 
+Ende der Beobachtungszeit allerdings bei Agavendicksaft (1) und Schimmelentferner (2) am stärksten gewachsen, bei 
+Eukalyptusöl (4) etwas stärker als bei Zitronensaft (3). Um die Werte aussagekräftig vergleichen zu können bräuchte 
+man jedoch identische Bedingungen für jeden Ansatz, den Vergleich zu einem Schreck- und einem Lockstoff und
+gleiche Konzentrationen je Testsubstanz sowie die genaue Zusammensetzung der einzelnen Testsubstanzen.
+
+Abbildung 7: Flagellenfärbung E.coli LJ 437
+
+Bei der Flagellenfärbung kann man ganz leicht die Flagellen erkennen. Bessere Bilder waren aber leider nicht möglich.
+
+Diskussion:
+In Teilversuch A ist das eingetreten, was zu erwarten war: RP937 hat sich nach und nach durch den Weichagar bewegt, 
+die RP937 ΔcheZ Mutante jedoch nicht. Bei ihr könnte man die leichte Größenzunahme durch normales Wachstum 
+erklären, da das cheZ – Gen für die Flagellenrotation gegen den Uhrzeigersinn, also das Geradeausschwimmen 
+zuständig ist. Wenn es fehlt, taumelt das Bakterium nur und kann sich nicht gerichtet geradeaus bewegen.
+Bei Teilversuch C  haben wir erwartet, dass der Schimmelentferner (Reinigungsmittel) und der Zitronensaft (sauer) eher
+als Schreckstoffe, Agavendicksaft (Nahrungsquelle) und Eukalyptusöl (ätherische Öle) eher als Lockstoffe wirken. 
+Jedoch konnte zuerst ein Wachstum Richtung Zitronensaft, erst später Richtung Agavendicksaft und Schimmelentferner
+beobachtet werden. Laut unserem Ergebnis sind wirkt Zitronensaft tatsächlich als Schreckstoff und Agavendicksaft eher
+als Lockstoff, aber auch der Schimmelentferner ist chemotaktisch als Lockstoff wirksam. Es macht deutlich, dass 
+Stoffe, die für uns als Mensch ungenießbar sind, für Bakterien hingegen als Lockstoffe agieren können und man nicht 
+subjektiv von Vornherein verallgemeinern kann, welche Substanzen als Lock- und Schreckstoffe wirken.
+
+

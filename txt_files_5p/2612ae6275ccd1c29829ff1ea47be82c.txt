@@ -1,0 +1,288 @@
+Statistik
+
+Optimale Nahrungsaufnahme
+
+Auswertung: 2 Möglichkeiten
+
+• Zwei verschiedene Brottypen, wie viel 
+
+gefressen, wieviel nicht  Frequenz-Test
+• Mehrere Messungen, z.B. Entfernung, Zeit 
+
+ Mittelwert Vergleich
+
+Auswertung: 2 Möglichkeiten
+
+Frequenzen
+
+1-dimensional
+Beobachtet-erwartet
+
+2-dimensional
+Beobachtet-beobachtet
+
+Binomialtest: 
+2 Kategorien
+Analysieren 
+nicht-parametrisch 
+ Binomial
+
+2 sample 
+Kologorov-
+Smirnoff-Test: 
+viele Kategorien
+Analysieren 
+nicht-parametrisch 
+ 2 unabhängige 
+Stichproben
+
+1 sample 
+Kologorov-
+Smirnoff-Test: 
+viele Kategorien
+Analysieren 
+nicht-parametrisch 
+ 1-K-S 
+
+Chi-Quadrat-Test: 
+wenig Kategorien
+Deskriptive 
+Statistiken 
+Kreuztabellen
+
+Chi-Quadrat-Test: 
+wenig Kategorien
+Analysieren 
+nicht-parametrisch 
+ Chi-Quadrat
+
+Auswertung: 2 Möglichkeiten
+
+2 Mittelwerte
+
+Nicht-gepaart
+Unabhängige Daten
+
+gepaart
+Abhängige Daten
+
+Mann-Whitney U: 
+Nicht- parametrisch
+Analysieren 
+nicht-parametrisch  
+2 unabhängige 
+Stichprobe
+
+Gepaarter t-Test: 
+parametrisch
+Analysieren 
+Mittelwerte   t-test 
+bei gepaarten 
+Daten
+
+Wilcoxon: 
+Nicht- parametrisch
+Analysieren 
+nicht-parametrisch  
+2 abhängige 
+Stichprobe
+
+Student t-Test: 
+parametrisch
+Analysieren 
+Mittelwerte  
+Unabhängige 
+Stichprobe
+
+Auswertung: 2 Möglichkeiten
+
+>2 Mittelwerte
+
+1 Faktor
+
+2 Faktoren
+
+One-way ANOVA: 
+parametrisch
+Analysieren 
+Mittelwerte   one 
+way ANOVA
+
+Kruskall-Wallis: 
+Nicht- parametrisch
+Analysieren 
+nicht-parametrisch  
+k unabhängige 
+Stichprobe
+
+Two-way ANOVA: 
+parametrisch
+Analysieren  Allgemein 
+lineares Modell  
+univariat
+
+Dateneingabe
+
+Variablen
+
+Wertelabels
+Nur Zahlen 
+eingeben, keine 
+Wörter
+
+Variablen-
+ansicht
+
+Dateneingabe
+
+Wertelabel 
+an/aus
+
+Pro Stück Brot, 
+das gefressen 
+wurde
+
+Datenansicht
+
+Dateneingabe
+
+Frequenzen
+ Daten  Fälle 
+gewichten 
+Frequenz
+
+Datenansicht
+
+Binomialtest
+
+Analysieren  Nicht-
+Parametrische Tests 
+Binomial
+
+1:1  beide Fälle gleich 
+wahrscheinlich 
+(Nullhypothese)
+
+Exact  Exact anklicken
+
+Binomialtest
+
+Kein signifikanter 
+Unterschied
+
+Im Protokoll angeben als: „…der Unterschied war nicht signifikant 
+(Binomialtest, Nungefärbt = 14, Ngelb = 11, exaktes P = 0,69)“
+
+Chi2-Test
+
+Analysieren  Nicht-
+Parametrische Tests 
+Chi-Quadrat
+
+alle Fälle gleich 
+wahrscheinlich 
+(Nullhypothese)
+
+Exact  Exact anklicken
+
+Chi2-Test
+
+Im Protokoll angeben als 
+„Blaues Brot wird signifikant seltener gefressen (Chi-
+Quadrat, χ2 = 8,667, df = 2, exaktes P = 0,013)“
+Falls SPSS schreibt P = 0,000, dann heißt das P < 
+0,001
+In welche Richtung geht der Unterschied? Abbildung!
+
+Testwert χ2
+
+Freiheitsgrad
+
+Exaktes P
+
+Mittelwerte
+
+Mittelwerte Analysieren  nicht-
+
+parametrisch  2 
+unabhängige Stichproben
+
+Variable (was 
+gemessen wurde)
+
+Faktor (teilt die 
+Gruppen ein)
+
+Faktor muss noch 
+definiert werden 
+(Wertelabels)
+
+Ausgabe-Editor
+
+Veröffentlichung: …unterschieden 
+sich nicht signifikant voneinander 
+(Mann-Whitney U, U = 0,0, NRisiko 
+= 3, NKontrolle = 3, P = 0,10) 
+
+Mittelwerte
+
+• Falls jeweils die exakt gleiche Gruppe mit 
+
+beiden Behandlungsgruppen getestet: 
+gepaarte Daten
+
+Datenpunkte, die 
+voneinander 
+abhängen 
+nebeneinander
+
+Analysieren  nicht-
+parametrisch  2 
+verbundene Stichproben
+
+Zu vergleichende 
+Variablen anklicken 
+und auf Pfeil klicken
+
+Veröffentlichung: …unterschieden sich nicht 
+signifikant voneinander (Wilcoxon, Z = -1,60, 
+N = 3, P = 0,25) 
+
+3 Mittelwerte
+
+3 Gruppen
+
+Variable
+Faktor (teilt in Gruppen ein)
+Bereich definieren 
+(Wertelabels
+
+Veröffentlichung: Es gibt einen Trend, dass 
+Weibchen mit Nachkommen sich nicht so 
+weit vom Wasser entfernen (Kruskall-Wallis, 
+χ2 = 5,535, df = 2, P = 0,054) 
+
+Graphen
+
+• Grafiken  veraltete Dialogfelder
+• Frequenz  Balken
+
+Faktor 
+(teilt die 
+Gruppe 
+ein)
+
+• Mittelwerte  Boxplots
+
+Variable
+
+Faktor
+
+Boxplot
+
+Verteilung 
+der Daten
+
+Median
+
+

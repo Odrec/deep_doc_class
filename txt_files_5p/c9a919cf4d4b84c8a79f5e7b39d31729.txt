@@ -1,0 +1,682 @@
+Klausur Aufbaumodul „Kinetik“ 
+
+SoSe 2013, 11. Dezember 2013 
+
+Bearbeitungszeit: 60 Minuten 
+
+Vorname + Nachname in Blockschrift: 
+
+_________________________________________ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Matrikelnummer: 
+
+_________________________________________ 
+
+Die Benutzung elektronischer Geräte 
+
+(Taschenrechner, Smartphones etc.) ist nicht gestattet. 
+
+Es darf nur das ausgegebene Papier verwendet 
+
+werden. Anderes Papier darf nicht ausgepackt werden. 
+
+Schreiben Sie Ihren Namen auf jede Seite. 
+
+Geben Sie alle ausgegebenen Blätter wieder ab. 
+
+ 
+
+ 
+
+ 
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+ 
+1 Geschwindigkeits- und Zeitgesetze 
+ 
+Gezeigt ist die Geschwindigkeit, mit der ein Ausgangsstoff A reagiert, als Funktion der 
+Reaktionszeit: 
+
+)
+1
+-
+n
+m
+
+i
+
+*
+1
+-
+L
+*
+l
+o
+M
+
+ 
+
+(
+ 
+t
+
+d
+
+/
+]
+
+A
+d
+
+[
+
+0.05
+
+0.04
+
+0.03
+
+0.02
+
+0.01
+
+0.00
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+Zeit (min)
+
+ 
+
+1a) Geben Sie das Geschwindigkeitsgesetz mit konkreten Zahlen und Einheiten für die darin 
+auftretenden Größen an. (2P) 
+ 
+ 
+ 
+ 
+ 
+1b) Geben Sie die Reaktionsordnung an. (2P) 
+ 
+ 
+
+ 
+
+2 
+
+ 
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+ 
+1c) Zeichnen Sie das Konzentrations-Zeit-Profil für Ausgangsstoff A in das unten dargestellte 
+Diagramm ein. Dabei soll A nach 30 Minuten vollständig umgesetzt sein. (6P)  
+ 
+
+)
+L
+
+/
+l
+
+o
+M
+
+(
+ 
+n
+o
+
+ 
+
+i
+t
+
+a
+r
+t
+n
+e
+z
+n
+o
+K
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+0
+
+5
+
+10
+
+15
+20
+Zeit (min)
+
+25
+
+30
+
+35
+
+ 
+
+ 
+
+3 
+
+ 
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+2. Isochore Wärmekapazitäten CV 
+ 
+Gegeben sind folgende Substanzen: Ar, SO2, C16H34, N2, H2O, C8H18, He, CO2. Ordnen Sie 
+diese Substanzen nach abnehmender molarer isochorer Wärmekapazität CV,m unter der 
+Annahme, dass alle Bewegungsfreiheitsgrade vollständig aktiv sind. Ordnen Sie der 
+Verbindung mit dem größten CV,m-Wert Rang 1 und der Verbindung mit dem kleinsten CV,m-
+Wert die höchste Rangnummer zu. Sollten zwei Verbindungen dieselbe molare isochore 
+Wärmekapazität besitzen, gehen Sie wie in folgendem Beispiel vor:  
+CV,m(A) > CV,m(B) = CV,m(C) > CV,m(D) 
+ 
+Rang 
+1 
+2 
+3 
+4 
+ 
+ 
+
+Verbindungen 
+A 
+B,C 
+D 
+leer 
+
+Rang  Verbindungen 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+7 
+
+8 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+Pro Verbindung mit korrekter relativer Rangzuweisung 2 Punkte; Gesamtpunktzahl 16. 
+ 
+ 
+ 
+ 
+
+ 
+
+4 
+
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+3 Geschwindigkeitsmessungen 
+ 
+In einer Begegnungszone, in der Schrittgeschwindigkeit vorgeschrieben ist, wurden folgende 
+Geschwindigkeiten von Autos gemessen:  
+ 
+Geschwindigkeitsintervall 
+2,5 km/h – 7,49 km/h 
+7,5 km/h – 12,49 km/h 
+12,5 km/h – 17,49 km/h 
+17,5 km/h – 22,49 km/h 
+22,5 km/h – 27,49 km/h 
+ 
+3a) Stellen Sie im Diagramm unten die kumulative Häufigkeitsverteilung der gemessenen 
+Fahrzeuggeschwindigkeiten dar. (3P) 
+
+Anzahl Fahrzeuge 
+
+7 
+4 
+2 
+1 
+1 
+
+t
+i
+
+e
+k
+g
+
+i
+f
+
+u
+ä
+H
+e
+v
+i
+t
+
+ 
+
+ 
+
+l
+
+a
+u
+m
+u
+K
+
+16
+14
+12
+10
+8
+6
+4
+2
+0
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+35
+
+Geschwindigkeit (km/h)
+
+3b) Berechnen Sie das arithmetische Mittel der Fahrzeuggeschwindigkeiten. Verwenden Sie 
+hierfür die in der Mitte der Geschwindigkeitsintervalle liegenden Geschwindigkeiten von 5 
+km/h, 10 km/h, 15 km/h, 20 km/h und 25 km/h. (3P) 
+ 
+
+ 
+
+ 
+
+5 
+
+ 
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+4 Arrhenius-Gleichung 
+ 
+Die Arrhenius-Gleichung kann auch so angepasst werden, dass diese statt der Abhängigkeit 
+der Geschwindigkeitskonstante von Aktivierungsenergie und Temperatur die Abhängigkeit 
+der Halbwertszeit von Aktivierungsenergie und Temperatur angibt. Die Form ist ähnlich: 
+Halbwertszeit ist gleich präexponentieller Faktor mal Exponentialterm.  
+ 
+Geben Sie die Arrhenius-Gleichung in einer Form an, die die Abhängigkeit der Halbwertszeit 
+von Aktivierungsenergie und Temperatur ausdrückt. Geben Sie tabellarisch an, welche 
+Bedeutung die verwendeten Symbole beziehungsweise Abkürzungen besitzen. Erläutern Sie 
+in maximal drei Sätzen die physikalisch-chemische Bedeutung des präexponentiellen Faktors. 
+Geben Sie an, ob die Aktivierungsenergie eine molare Aktivierungsenergie ist oder die 
+Aktivierungsenergie eines einzelnen Reaktionsereignisses. (8P) 
+ 
+
+ 
+
+6 
+
+ 
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+ 
+5 Maxwell-Boltzmann-Verteilung der Molekülgeschwindigkeiten (I) 
+ 
+Gezeigt sind die Wahrscheinlichkeitsdichtefunktionen der x-Komponente der 
+Geschwindigkeitsvektoren von CO2 bei 100 K, 500 K und 900 K. Ordnen Sie die 
+Temperaturen den Kurven zu.  (6P) 
+ 
+
+t
+i
+
+e
+k
+h
+c
+
+i
+l
+
+i
+
+n
+e
+h
+c
+s
+r
+h
+a
+W
+
+0.0030
+
+0.0025
+
+0.0020
+
+0.0015
+
+0.0010
+
+0.0005
+
+0.0000
+
+-1200
+
+-800
+
+-400
+
+0
+
+400
+
+800
+
+1200
+
+Temperatur 
+
+100 K 
+500 K 
+900 K 
+
+ 
+
+ 
+
+vx (m/s)
+
+ 
+
+Farbe 
+
+ 
+ 
+ 
+
+Pro richtiger Zuordnung 2 Punkte, pro falscher Zuordnung einen Punkt Abzug, 
+Mindestpunktzahl 0 Punkte.  
+
+ 
+
+7 
+
+ 
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+ 
+6 Maxwell-Boltzmann-Verteilung der Molekülgeschwindigkeiten (II) 
+
+ 
+
+Gezeigt sind, jeweils mit der Maxwell-Boltzmann-Verteilung der Molekülgeschwindigkeiten 
+berechnet, der quadratisch gemittelte Mittelwert des Betrages des Geschwindigkeitsvektors 
+von CO2,  der häufigste Wert des Betrages des Geschwindigkeitsvektors von CO2 sowie der 
+arithmetische Mittelwert des Betrages des Geschwindigkeitsvektors von CO2 als Funktion der 
+Temperatur. Ordnen Sie zu.  (6P) 
+
+ 
+
+)
+s
+/
+m
+
+(
+ 
+v
+
+800
+700
+600
+500
+400
+300
+200
+100
+0
+
+200
+
+0
+
+ 
+
+400
+
+600
+
+T (K)
+
+quadratisch gemittelter Mittelwert 
+
+häufigster Wert 
+
+arithmetischer Mittelwert 
+
+ 
+
+800
+
+1000
+
+ 
+
+Farbe 
+
+ 
+ 
+ 
+
+Pro richtiger Zuordnung 2 Punkte, pro falscher Zuordnung einen Punkt Abzug, 
+Mindestpunktzahl 0 Punkte.  
+ 
+
+ 
+
+8 
+
+ 
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+7 Gleichgewichtsreaktionen 
+ 
+Betrachtet wird folgende Gleichgewichtsreaktion:  
+ 
+A
+ 
+7a) Skizzieren Sie schematisch die Reaktionsgeschwindigkeiten der Hin- und Rückreaktionen 
+als Funktion der Reaktionsdauer bis zur Einstellung des dynamischen Gleichgewichts. (6P) 
+
+B
+
+ 
+
+Reaktionsge-
+schwindigkei-
+
+Hin/Rückreak-
+
+ten 
+
+tion 
+
+ 
+ 
+ 
+
+ 
+
+Reaktionsdauer 
+
+ 
+
+9 
+
+ 
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+7b) Skizzieren Sie schematisch die Abhängigkeiten der Stoffmengen des Ausgangsstoffes A 
+und des Produktes B von der Reaktionsdauer bis zur Einstellung des dynamischen 
+Gleichgewichts unter der Annahme, dass die Gleichgewichtskonstante kleiner 1 ist. (6P) 
+
+Stoffmenge 
+
+Ausgangsstoff 
+A / Stoffmenge 
+
+Produkt B 
+
+Reaktionsdauer 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+10 
+
+ 
+ 
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+8 Quasistationaritätsprinzip 
+Markieren Sie die zutreffenden Aussagen. Für jede markierte zutreffende Aussage gibt es 2 
+Punkte. Für jede markierte nichtzutreffende Aussage gibt es 2 Punkte Abzug. 
+Maximalpunktzahl 10, Mindestpunktzahl 0.   
+ 
+
+ 
+
+11 
+
+Name:______________________________________________________________________ 
+ 
+Klausur Kinetik, SoSe 2013, 11. Dezember 2013 
+ 
+Fortsetzung Aufgabe „8 Quasistationaritätsprinzip“ 
+ 
+
+ 
+
+12 
+
+

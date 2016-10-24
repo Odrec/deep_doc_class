@@ -1,0 +1,74 @@
+Anwendungen von GIS: 
+
+ 
+
+Aufgabe: 
+
+Map Algebra 
+
+M.Sc. Florian Hillen 
+
+ 
+ 
+
+Aufgabe Map Algebra 
+
+ Aufgabe: Berechnen Sie den 
+  Layer WindExposure aus  
+  dem Seminar mit Hilfe von  
+  GRASS GIS 
+
+ 
+
+ 
+ Dokumentieren Sie Ihre Arbeitsschritte in 
+
+Berichtform (max. 2-3 Seiten) und senden Sie diesen 
+bis zum 11.02.2015 an: fhillen@igf.uos.de 
+ Dateiname: „aufg4_nachname_matrikelnr.pdf“ 
+
+Aufgabe Map Algebra 
+
+ Zur Erinnerung: 
+
+ WindExposure = LocalRating of Altitude and Vegetation 
+
+with 0 for 290 … on 0 with 1 for 290 … on 1 … 3 with 2 for 
+… 289 on 0 1 3 with 3 for … 289 on 2 
+
+ 0 = uplandfields  
+  2 = lowlandnonsoftwoods 
+
+ 
+
+1 = uplandforest 
+3 = lowlandsoftwoods 
+
+ Die Höhengrenze soll nicht bei 290m sondern bei 
+
+1250m gesetzt werden 
+
+ Geben Sie im Bericht für jeden Zwischenschritt den 
+Sie durchführen wenn möglich den entsprechenden 
+Map Algebra Befehl von Tomlin an 
+ 
+ 
+
+Aufgabe Map Algebra 
+
+ Verwenden Sie in GRASS GIS die Layer vegcover und 
+
+elevation.dem aus der Location spearfish60 
+
+ Reklassifizieren Sie zunächst vegcover um die 
+
+Klassen des Vegetationslayers aus der MapBox zu 
+erhalten: 
+ 0 openland 
+ 1 hardwoods 
+ 2 softwoods 
+ 3 mixedwoods 
+
+ 
+
+

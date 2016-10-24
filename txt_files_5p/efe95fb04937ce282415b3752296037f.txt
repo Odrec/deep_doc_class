@@ -1,0 +1,679 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+Thermal analysis of crystallization and melting  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Dr. G. T. Rengarajan 
+
+Institut für Chemie 
+
+Universitaet Osnabrück 
+
+ 
+ 
+
+Tel.: +49-541-969-2275 
+
+E-mail: gtrichyr@uni-osnabrueck.de 
+
+ 
+ 
+
+1 
+
+1. Differential scanning calorimetry 
+ 
+DCS is a widely used experimental technique to measure thermal and thermodynamic prop-
+erties of a wide range of materials. DSC measures heat flow rates to the samples as a func-
+tion of the temperature, unlike heat flow itself as in the case of classical calorimetry. To this 
+end,  the  heat  flow  to  the  sample  required  maintaining  constant  preset  heating  or  cooling 
+rates or the heat flow required to keep the sample temperature constant is measured. There 
+are two types of commercially available DSCs, namely 
+ 
+
+•  heat flux DSCs 
+•  power-compensated DSCs 
+
+ 
+
+We  will  use  a  Perkin  Elmer  DSC  8500  which  makes  use  of  the  power  compensation  tech-
+nique, as discussed in section 1.2. 
+ 
+1.1. Heat flux DSC 
+ 
+Heat flux DSCs contain a heated thermoelectric disk. Sample and reference are placed on the 
+thermoelectric  disk  at  their  designated  positions.  The  temperatures  of  the  sample  and  the 
+reference  are  measured  constantly  by  thermocouples  placed  directly  beneath  them.  The 
+instrumental  signal  is derived  from  the  temperature  difference between sample  and  refer-
+ence. Hence, thermal properties of the samples are indirectly acquired.   
+ 
+1.2. Power Compensated DSC 
+ 
+A scheme of a power compensated DSC is shown in Figure 1. The basic setup of the instru-
+ment consists of two identical microfurnaces consisting of platinum-iridium alloy.  
+ 
+
+ 
+
+Figure 1. Power-compensated Differential Scanning Calorimeter. 
+
+ 
+One of the furnaces contains a reference pan with heat capacity C3, while the other furnace 
+contains  the  sample  pan  with  heat  capacity  C4.  The  sample  pan  contains  the  sample  to  be 
+investigated  with  heat  capacity  CS.  Since  both  the  microfurnaces  and  the  pans  can  be  con-
+sidered as being identical, their heat capacities can be considered as being equal: C3 = C4 if T3 
+=  T4.    Reference  and  sample  furnaces  are  connected  via  the  heat  resistances  of  reference 
+furnace R1 and sample furnace R2 with R2 = R1. The furnaces are separated from each other 
+
+ 
+
+2 
+
+and  are  surrounded  by  aluminum  blocks  maintained  at  a  constant  temperature.  Both  fur-
+naces  are  equipped  with  sensitive  temperature  sensors  detecting  temperatures  T1  (refer-
+ence furnace) and T2 (sample furnace), as well as with heaters supplying electrical powers P1 
+to the reference furnace and P2 to the sample furnace. Disturbances from outside will affect 
+both furnaces equally and will, therefore, not influence the difference in heating power be-
+tween sample furnace and reference furnace ΔP = P2 - P1. ΔP is the quantity to be measured 
+since  it  represents  mass  and  specific  heat  capacity  Cs  of  the  sample  material.  Assuming  a 
+constant  pressure  p,  Qp  is  the  heat  transferred  from  or  to  the  sample  material,  Hp  its  en-
+thalpy change and CS = (δH/δT)p its heat capacity: 
+ 
+
+                                         
+=
+
+P
+
+p
+
+dQ
+dt
+
+=
+
+dH
+dt
+
+p
+
+=
+
+C
+S
+
+dT
+dt
+
+                                                                                 
+
+(1)   
+
+ 
+If  the  sample  material  does  not  undergo  transitions,  ΔP  during  a  heating  scan  is  positive 
+since additional power is required to heat the sample material. During endothermic transi-
+tions such as melting, ΔP shows a positive peak (“melting endotherm”). During exothermic 
+transitions such as crystallization, ΔP becomes smaller and shows a “negative” peak (“crys-
+tallization  exotherm”).  Above  the  glass  transition  temperature,  the  sample  material  has  a 
+higher heat capacity than below as additional types of molecular motions become active for 
+storage of thermal energy. Thus, ΔP increases as the glass transition is passed upon heating.  
+ 
+2. Model system 
+ 
+Acetaminophen, a widely used pharmaceutical (Paracetamol) will be employed to exempla-
+rily  demonstrate  how  crystallization  kinetics  and  thermodynamics  can  be  investigated  by 
+means of DSC. 3 – 5 mg acetaminophen will be placed in hermetically sealed DSC pans. Iden-
+tical empty pans are used as reference to subtract the baseline contribution.  
+ 
+3.  DSC heating scan of amorphous acetaminophen 
+ 
+Non-isothermal  DSC  measurements,  in  which  the  sample  is  heated or  cooled  at  a  constant 
+rate  (typically  10-20  K/min),  allow  identifying  the  temperature  ranges  in  which  transitions 
+take place. First-order phase transitions typically appear as peaks, second-order phase tran-
+sitions as steps. Moreover, the dynamic glass transition appears as a step as the heat capac-
+ity of a glass is commonly below that of a mobile melt. Note that the dynamic glass transition 
+is NOT a second-order phase transition. A DSC pan containing acetaminophen and an empty 
+pan are placed in the DSC instrument. The acetaminophen is heated to 180 °C, kept at this 
+temperature for 3 minutes, and then quenched to -40°C at a rate of 200 K/min to make sure 
+that crystallization is prevented. The amorphous sample is then heated to 180 °C at a heat-
+ing  rate  of  10  K/min.  The  enthalpies  ΔtransH  of  the  apparent  transitions  occurring  between 
+temperatures TL and TH can be calculated as follows:  
+
+ 
+
+                                                                   
+ 
+
+dTTC
+
+trans
+
+H
+
+)
+
+(
+
+S
+
+T
+
+H
+
+∫=
+
+T
+
+L
+
+(2) 
+
+ 
+The transition entropies ΔtransS can be calculated as the differences of the entropies S(TL) and 
+S(TH):  
+
+ 
+
+3 
+
+(cid:215)
+D
+D
+     
+ 
+
+TS
+(
+H
+
+=
+
+)
+
++
+
+)
+
+H
+
+∫
+
+L
+
+dQ
+T
+
+TS
+(
+L
+ 
+
+=
+
+TS
+(
+L
+
+)
+
++
+
+D⇒
+   
+
+                                                          
+dQ
+T
+
+TSS
+(
+H
+
+TS
+(
+L
+
+trans
+
+=
+
+=
+
+∫
+
+)
+
+)
+
+H
+
+L
+
+ 
+
+ 
+
+ 
+ 
+
+(3) 
+
+T
+H
+
+∫
+
+T
+L
+
+C
+S
+T
+
+dT
+
+=
+
+T
+H
+
+∫
+
+T
+L
+
+C
+S
+T
+
+dT
+
+ 
+
+1.  Plot specific enthalpy Hp, specific entropy S and specific heat capacity CS as a function 
+
+of temperature.  
+
+2.  Determine  the  specific  transition  enthalpies  ΔtransH  and  the  specific  transition  entro-
+
+pies ΔtransS of the apparent transitions. 
+
+3.  Discuss  the  origins  of  the  apparent  transitions  and  compare  their  relative  specific 
+
+transition enthalpies. 
+
+ 
+4. Melting point depression (Gibbs-Thomson effect) 
+ 
+Perfect crystals have infinite size, i.e., any atom of the crystal is incorporated into a defect-
+free  crystalline  lattice.  However,  real  crystals  are  finite  and  have,  therefore,  surfaces.  The 
+surface  energy  is  a  destabilizing  contribution  to  the  total  Gibbs  free  energy  G  of  a  crystal 
+counteracting its internal energy. Surface energy γ (also called surface tension) is the change 
+in G per change in surface area A while Temperature T, pressure p, and the amount of sub-
+stance n are kept constant:  
+
+ 
+=g
+                                                                           
+ 
+
+G
+npTA
+,
+
+
+
+
+
+
+
+
+
+,
+
+(4) 
+
+ 
+
+A  common  observation  is  that  small  particles  of  a  thermodynamically  stable  phase  sur-
+rounded  by  a  metastable  phase  are  less  stable  than  larger  particles  of  the  thermodynami-
+cally stable phase surrounded by the metastable phase. This finding is referred to as Gibbs-
+Thomson effect. As a consequence of the Gibbs-Thomson effect, crystals with dimensions in 
+the sub-100-nm range show melting point depression. Melting temperatures depend, there-
+fore,  on  the  crystallite  size  (in  the  case  of  polymeric  lamella  crystals  on  the  lamella  thick-
+ness). Neglecting possible shape anisotropy of the crystals and the presence of crystal faces 
+different in their surface energies, the crystallites can be modeled as spherical entities with a 
+diameter d. Melting occurs at temperatures Tm(d) significantly below the equilibrium melting 
+temperature  Tm(∞)    of  a  perfect,  infinite  crystal.  The  melting  point  depression  can  be  de-
+scribed by a Gibbs-Thomson equation having the form: 
+
+ 
+
+)
+
+(
+dT
+
+
+                                                                           
+
+ 
+
+
+s4
+Hd
+
+
+1
+
+
+
+T
+m
+
+=
+
+(
+
+)
+
+r
+
+m
+
+cl
+
+m
+
+c
+
+ 
+
+(5) 
+
+ 
+
+with σcl being the surface tension between crystal and liquid melt, ΔHm the heat of melting 
+and ρc the density of the crystalline phase. A possibility to reliably control crystal sizes is to 
+confine the crystallizing material to nanopores with a diameter d.  
+ 
+
+ 
+
+4 
+
+-
+¶
+¶
+(cid:215)
+D
+(cid:215)
+-
+(cid:215)
+¥
+  A data set containing melting points TM(d) of acetaminophen (maxima of the melting 
+peaks  in  DSC  heating  curves  measured  at  heating  rates  of  10  K/min)  confined  to 
+nanoporous matrices with different diameters d will be provided by the lab instructor.  
+
+ 
+1.  Plot  TM(d)  vs.  reciprocal  pore  diameter  d  as  linear  fit  of the  experimentally  obtained 
+
+data points. 
+
+2.  Determine TM(∞) and compare the value obtained with that apparent from DSC  the 
+
+heating run (section 3). 
+
+ 
+5. Isothermal crystallization kinetics 
+ 
+The crystallinity 
+
+c
+
+of a crystallization process is therefore equivalent to the rate at which 
+
+f  is the portion of the crystallizing material that is crystalline. The kinetics 
+f  changes. Crystalli-
+zation kinetics is usually investigated by means of isothermal crystallization experiments, in 
+f  is determined as a function of the crystallization time t at a preset, constant crys-
+which 
+f  can be estimated from isothermal DSC meas-
+
+tallization temperature Tc. The crystallinity 
+
+c
+
+c
+
+c
+
+urements using the following relationship: 
+ 
+
+=f
+c
+
+( )
+tH
+m
+o
+H
+m
+
+, 
+
+ 
+
+where 
+
+( )tHm
+
+ is the enthalpy of melting of a sample crystallized for a time t and 
+
+(6) 
+
+mHD
+
+0
+
+ the 
+
+0
+
+/
+
+mHD
+
+( )tHm
+
+enthalpy of melting of an ideal 100 % crystalline sample. To this end, ΔP required to keep the 
+sample material at the preset crystallization temperature Tc is measured. Owing to the exo-
+thermic nature of crystallization, the heat flow rate to the sample pan is lower than that to 
+the  reference  pan  so  that  crystallization  is  indicated  by  an  exothermic  peak.  The  ratios 
+ are equivalent to the ratios of the peak areas between t = 0 and t = tc (tc is a 
+specific crystallization time) and between t = 0 and t = ∞ (practically the crystallization time 
+after which the heat flow rate reaches a constant limit). Alternatively, crystallinity can also 
+be  estimated  from  the  strengths  of  the  glass  transition  steps  ΔCp(t)  of  samples  crystallized 
+for specific crystallization times t. ΔCp(t) can be determined from heating scans taken after 
+isothermal  crystallization  since  below  the  glass  transition  temperature  processes  changing 
+crystallinity, first and  foremost  cold  crystallization,  are  commonly  so  slow  that they  can be 
+neglected. The following relationship can be used to derive crystallinities: 
+ 
+
+-=f
+1
+c
+
+tC
+)(
+p
+C
+
+p
+
+0,
+
+, 
+
+  (7) 
+
+ 
+where 
+
+0,pCD
+
+ = 0.7 J g-1 K-1 is the glass transition step height for a 100 % amorphous sample.  
+
+ 
+Crystallization  kinetics  is  usually  well  described  by  the  Avrami  model  (Avrami,  M.  J.  Chem. 
+Phys. 1939, 7, 1103-1112). The Avrami model allows predicting the volume fraction occupied 
+by  entities  showing  one-dimensional,  two-dimensional  or  three-dimensional  growth  as  a 
+function  of  time.  Moreover,  one  can  distinguish  scenarios  in  which  growth  of  all  growing 
+objects  starts  instantaneously  (corresponding  to heterogeneous  nucleation)  from  scenarios 
+
+ 
+
+5 
+
+D
+D
+D
+D
+D
+D
+in which growth of the growing objects starts sporadically (corresponding to homogeneous 
+nucleation).  Assuming  that  crystals  originate  from  germs  and  grow  more  and  more  at  the 
+expense of the surrounding metastable melt, the volume the crystals occupy can be consid-
+f . Hence, the volume the crystalline material occupies indicates the 
+ered as a measure of 
+
+c
+
+relative progress of a crystallization process. The Avrami equation reads as follows: 
+ 
+
+1-=f
+
+c
+
+exp
+
+(kt n
+
+)
+
+, 
+
+(8) 
+ 
+
+where k is the crystallization rate constant including contributions of the crystal growth rate, 
+the nucleation rate and the number of nuclei. The Avrami exponent n can be considered as 
+the  sum  of  two  contributions:  n  =  nd  +  nnucl.  The  spatial  dimensionality  of  crystal  growth  is 
+represented  by  nd.  A  value  nd  =  3  corresponds  to  unrestricted  three-dimensional  crystal 
+growth, as it is the case if spherulites develop. Lower values of nd are indicative of geometric 
+constraint imposed on the growing crystals. An nd value of 2 indicates crystal growth in two 
+dimensions, such as in thin-film configurations, whereas an nd value of 1 indicates ideal one-
+dimensional growth, for example inside a capillary. The second parameter nnucl is related to 
+nucleation kinetics. Whereas nnucl = 0 indicates simultaneous nucleation of all growing crys-
+tals, nnucl = 1 is indicative of sporadic nucleation at a constant rate. Taking the double natural 
+logarithm of both sides of equation 8 yields: 
+ 
+
+[
+ln
+
+1ln(
+
+]
+
+=
+
+f
+
+tc
+(
+
+))
+
++
+
+ln
+
+tnk
+ln
+
+ 
+
+(9) 
+ 
+
+ for different isothermal crys-
+
+  A data set containing glass transition step heights 
+
+0,pCD
+tallization times t will be provided by the lab instructor.  
+ 
+
+1)  Estimate the crystallinity for five different crystallization times t at a crystallization tem-
+
+perature Tc = 48 °C using equation 7. 
+ 
+
+2)  Prepare  the  Avrami  plot  for  the  same  temperature  and  for  crystallization  times 
+1680 s ≤ t ≤ 8400 s. Plotting the left side of equation 9 as a function of ln(t) should yield a 
+straight line for the considered range of crystallization times. By using a simple linear fit, 
+the Avrami exponent n can be estimated. Discuss what can be concluded from the value 
+obtained for n.  
+
+ 
+
+6. Further reading 
+ 
+1. H.-J. Flammersheim, W. F. Hemminger, G. W. H. Höhne, Differential Scanning Calorimetry: 
+An Introduction for Practitioners, Springer, Berlin, 2. Auflage 2003. 
+2. B. Wunderlich, Thermal Analysis of Polymeric Materials, Springer, Berlin 2005. Available as 
+e-book from the University network at the following URL: 
+http://www.springerlink.com/content/978-3-540-23629-0/  
+3.  Differential  scanning  calorimetry  (DSC)  of  semicrystalline  polymers.  C.  Schick,  Anal.  Bio-
+anal. Chem. 2009, 395, 1589-1611. 
+
+ 
+
+6 
+
+-
+-
+

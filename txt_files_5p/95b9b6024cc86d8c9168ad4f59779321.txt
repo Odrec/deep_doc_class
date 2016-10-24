@@ -1,0 +1,684 @@
+Multivariate Statistik
+
+Vorüberlegungen:
+Operationalisierung
+
+Thomas Jarmer
+
+Universität Osnabrück
+Institut für Informatik
+
+AG Fernerkundung & DBV
+
+SoSe 2016
+
+Th. Jarmer
+
+1
+
+Operationalisierung
+
+leitet die Ausgangsüberlegungen der Fragefindung, Fragestellung und
+Hypothesenbildung in ein theoretisch begründetes, empirisches, zu 
+erforschendes und zu prüfendes Modell über.
+Die Fragestellung wird durch die Operationalisierung somit erforschbar, die 
+Hypothesen werden in den Forschungsprozess übergeführt.
+
+(E. H. (6.1.2004): Objektivität – Werturteil - Fragestellungen und Operationalisierung - Zitate und knappe Hinweise)
+
+SoSe 2016
+
+Th. Jarmer
+
+2
+
+Unter diesen Vorgang fallen sämtliche festzulegende und einzugrenzende 
+Definitionen und Maßnahmen, die nötig sind um die Fragestellung und die mit 
+ihr verbundenen Hypothesen und theoretischen Aspekte empirisch sowie 
+analytisch untersuchen zu können.
+
+Des Weiteren befasst sich der Vorgang der Operationalisierung mit der 
+Auswahl des geeigneten (Untersuchungs-/Forschungs-) Instruments und der 
+geeigneten Variablen und Verfahren.
+
+(E. H. (6.1.2004): Objektivität – Werturteil - Fragestellungen und Operationalisierung - Zitate und knappe Hinweise)
+
+SoSe 2016
+
+Th. Jarmer
+
+3
+
+SoSe 2016
+
+Th. Jarmer
+
+4
+
+(Bahrenberg, Giese, Nipper 1999)
+
+1. Inhaltliche Fragestellung / Hypothesenbildung
+Die zu untersuchende Fragestellung hängt vom jeweiligen Themengebiet oder 
+Forschungszweig ab. In der Regel ergeben sich diese Fragestellungen aus der 
+subjektiven Wahrnehmung der gesellschaftlichen Umwelt wodurch eine 
+objektive Untersuchung nötig wird.
+
+Hypothesen sollen u. a. folgenden Eigenschaften genügen:
+ Eine Hypothese soll eine Aussage, keine Frage, kein Befehl sein.
+ Die Aussage soll widerspruchsfrei sein, d.h. die Begriffe schließen sich 
+
+gegenseitig semantisch nicht aus.
+ Die Aussage soll falsifizierbar sein.
+
+SoSe 2016
+
+Th. Jarmer
+
+5
+
+Beispiel einer Hypothese:
+„Die Gefahr, die von Naturgefahren ausgeht, hängt nicht nur von deren 
+Intensität, sondern auch von deren Eintretenswahrscheinlichkeit ab.“
+
+Formulierung der Gegenhypothese:
+„Nur die Eintretenswahrscheinlichkeit / Intensität bestimmt die Gefahr, 
+die von Naturgefahren ausgeht.“
+
+SoSe 2016
+
+Th. Jarmer
+
+6
+
+SoSe 2016
+
+Th. Jarmer
+
+7
+
+(Bahrenberg, Giese, Nipper 1999)
+
+2. Präzisierung der Begriffe
+ Da die Hypothese in der Regel häufig in der Fachsprache einer einzelnen 
+
+Disziplin verfasst wird, bedarf es der konkreten Erläuterung der verwendeten 
+Begriffe, um Nachvollziehbarkeit und Reproduzierbarkeit zu gewährleisten.
+
+ Ferner müssen die Variablen bzw. Indikatoren erfasst werden, die den Begriff 
+
+beschreiben oder charakterisieren.
+
+ Variablen sind die verschiedenen Ausprägungen einer Eigenschaft, sie 
+
+werden unterschieden in:
+
+ dichotome Variablen (bestanden/nicht bestanden)
+ diskrete Variablen (Lehre/Hochschule/Weiterbildung)
+ kontinuierliche Variablen (Notenskala)
+
+ In der Praxis müssen diejenigen Variablen identifiziert werden, welche als 
+
+Indikatoren/Variablen praktikabel sind.
+
+(nach: Atteslander 2003)
+
+SoSe 2016
+
+Th. Jarmer
+
+8
+
+Beispiel: Größe eines Kundeneinzugsgebietes (eines Geschäftes)
+
+Frage 1: Was wollen wir unter „Kunden“ verstehen?
+ Personen, die sich das (die) Schaufenster des Geschäfts ansehen.
+ Personen, die das Geschäft wenigstens betreten.
+ Personen, die in dem Geschäft tatsächlich etwas kaufen.
+ Personen, die sich selbst als „Kunden“ des Geschäfts bezeichnen.
+
+Frage 2: Wie sollen wir die Entfernung messen?
+ als Luftlinienentfernung.
+ als straßenkilometrische Entfernung.
+ als Zeitaufwand (mit Pkw von der Wohnung + Fußwege + Parkplatzsuche, 
+
+etc.).
+
+ als Zeitaufwand (ÖPNV von der Wohnung + Fußwege).
+
+(Bahrenberg, Giese, Nipper 1999)
+
+SoSe 2016
+
+Th. Jarmer
+
+9
+
+Beispiel: Größe eines Kundeneinzugsgebietes (eines Geschäftes)
+
+Frage 3: Wie können wir die einzelnen Entfernungen zu einem Maß 
+
+aggregieren, das die Gesamtheit aller Entfernungen und damit die Größe des 
+Einzugsbereichs charakterisiert?
+Denkbare Maße sind:
+
+ die durchschnittliche Entfernung aller Kunden.
+ die Entfernung desjenigen Kunden, der am weitesten vom Geschäft entfernt 
+
+wohnt.
+
+ die Entfernung zwischen dem Geschäft und demjenigen Stadtteil, aus dem 
+
+die meisten Kunden kommen.
+
+SoSe 2016
+
+Th. Jarmer
+
+10
+
+(Bahrenberg, Giese, Nipper 1999)
+
+Beispiel zur Präzisierung von Begriffen:
+
+Naturgefahr
+Art
+Rutschung,
+Sturz, Fließen, Hochwasser etc.
+
+Gefahr
+
+Zerstörungspotential
+Verletzungsrisiko
+
+an Gebäuden
+
+von Menschen & Tieren
+
+ Begriff: 
+ Variablen:
+
+
+Indikatoren:
+
+ Begriff:
+ Variablen:
+
+
+
+
+
+Indikatoren:
+
+Energiegehalt,
+Schaden
+
+innerhalb v. Gebäuden,
+außerhalb v. Gebäuden
+
+SoSe 2016
+
+Th. Jarmer
+
+11
+
+Beispiel zur Präzisierung von Begriffen:
+
+ Begriff: 
+ Variablen:
+
+
+Indikatoren:
+
+ Begriff:
+ Variablen:
+
+
+
+Indikatoren:
+
+Intensität
+Dauer
+Ausmaß, Energiefreisetzung
+
+Eintretenswahrscheinlichkeit
+Jährlichkeit, Wiederholzeitraum, 
+Eintreten in bestimmter Nutzungsperiode
+
+stumme Zeugen, Zeitzeugen,
+aktive Vorgänge
+
+SoSe 2016
+
+Th. Jarmer
+
+12
+
+Gegenstandsbenennung
+ Sind sämtliche in der Hypothese verwendeten Begriffe definiert worden, 
+
+folgt die Gegenstandsbenennung.
+
+ Da die Erfassung der natürlichen Wirklichkeit nur in Ausschnitten erfolgen 
+
+kann, muss eine genaue Gegenstandsbegrenzung bzw. 
+Gegenstandsbenennung erfolgen.
+
+ In der Regel erfolgt diese Abgrenzung über folgende Kriterien:
+
+• Zeit: Welcher Zeitabschnitt soll erfasst werden? Momentaufnahme, 
+
+Veränderungen in einem bestimmten Zeitraum?
+
+• Gegenstandsbereich: Für welchen Raum / Personenkreis soll die zu 
+
+untersuchende Hypothese gelten?
+
+• Feldzugang: Sind die zu untersuchenden Bereiche zugänglich oder 
+
+müssen die benötigten Daten aus anderen Quellen abgeleitet werden?
+
+SoSe 2016
+
+Th. Jarmer
+
+13
+
+Beispiel zur Gegenstandsbenennung:
+ Hypothese: „Die Gefahr, die von Naturgefahren ausgeht, hängt nicht nur von 
+
+deren Intensität, sondern auch von deren Eintretenswahrscheinlichkeit ab“
+
+ Gegenstandsbenennung: Die Hypothese soll für den gesamten vom 
+
+Menschen besiedelten Alpen- bzw. Gebirgsraum gelten.
+Zweckdienlich ist es hier einen längeren Zeitraum zu untersuchen.
+Auf Grund der physischen Gegebenheiten ist der Feldzugang möglicherweise 
+in steilem Relief erschwert oder nicht möglich.
+
+SoSe 2016
+
+Th. Jarmer
+
+14
+
+Gegenstandsbenennung
+ Bei der Gegenstandsbenennung wird explizit oder implizit von Modellen 
+
+ausgegangen. Diese Modelle bilden Gegenstände und Vorgänge der 
+Wirklichkeit ab. (Atteslander, 2003)
+
+ Je nach Forschungsabsicht sowie Kenntnisstand über das zu 
+untersuchende Phänomen kann man verschiedene Modelle 
+heranziehen.
+
+Definition eines Modells:
+
+„…ein Abbild eines Objekts oder Objektbereichs unter 
+Hervorhebung für wesentlich erachteter Eigenschaften und 
+Außer-Acht-Lassen als nebensächlich angesehener Aspekte. 
+Ein Modell stellt also ein vereinfachtes Abbild der Wirklichkeit dar.
+Es ist ein Mittel zur Beschreibung der Realität, zur Bildung
+von charakterisierenden Begriffen und Grundlage von 
+Voraussagen über künftiges Verhalten des erfassten Bereichs.“
+
+(BROCKHAUS 2002)
+
+SoSe 2016
+
+Th. Jarmer
+
+15
+
+Modelltypen
+
+MODELS
+
+Scale
+models
+
+Mathematical
+models
+
+Conceptual
+models
+
+Statistical models
+
+Stochastic
+models
+
+Deterministic
+models
+
+(Krumbein et al. 1965, verändert)
+
+SoSe 2016
+
+Th. Jarmer
+
+16
+
+Skalenmodelle
+ Die zu untersuchenden Objekte werden mittels Maßstab verkleinert oder 
+
+vergrößert dargestellt.
+
+ Die Modellgröße vereinfacht die Forschung und Vergleichbarkeit.
+
+Upscaling
+
+Downscaling
+
+i
+
+a
+d
+e
+p
+k
+W
+
+i
+
+i
+
+ 
+:
+e
+
+l
+l
+
+e
+u
+Q
+
+n
+n
+o
+B
+
+ 
+i
+n
+U
+
+ 
+:
+e
+
+l
+l
+
+e
+u
+Q
+
+SoSe 2016
+
+Th. Jarmer
+
+17
+
+Mathematische Modelle
+ Sie stellen eine Vereinfachung der physikalischen Wirklichkeit dar, in 
+der Objekte, Kräfte, Vorgänge etc. durch Variablen oder Parameter 
+ersetzt werden.
+
+(Krumbein et al. 1965, verändert)
+
+Die Unterteilung der mathematischen Modelle erfolgt ferner in:
+
+a) deterministische Modelle und
+b) stochastische Modelle
+
+SoSe 2016
+
+Th. Jarmer
+
+18
+
+Deterministische Modelle
+Sie beruhen auf der Grundlage physikalischer Gesetzmäßigkeiten, die in 
+mathematisch-physikalischen Gleichungen ihren Ausdruck finden. Daher 
+liefern deterministische Modelle aufgrund der mathematischen Formulierung 
+bei gleichem Input auch gleichen Output.
+
+(Egner 1999 & Schmidt 1984)
+
+Stefan-Boltzmann-Gesetz
+
+P = σ * A * T4
+
+mit
+
+P:   Strahlungsleistung
+σ:   Stefan-Boltzmann-Konstante
+A:  Fläche
+T:  Temperatur
+
+SoSe 2016
+
+Th. Jarmer
+
+19
+
+Stochastische Modelle
+Stochastische Modelle werden angewendet, wenn nur wenige Informationen 
+vorliegen. Es werden daher Zufallsvariablen hinzugefügt, weil:
+a) die Ursache – Wirkungsbeziehung unbekannt sind oder
+b) Input-Daten fehlen, welche durch synthetische Daten ersetzt werden
+
+müssen.
+
+(Egner 1999 & Schmidt 1984)
+
+SoSe 2016
+
+Th. Jarmer
+
+20
+
+Orbitalmodell
+Aufenthaltswahrscheinlichkeiten der 
+Elektronen als Elektronenwolken um 
+den Atomkern dargestellt
+
+(Mortimer et al. 2003)
+
+SoSe 2016
+
+Th. Jarmer
+
+21
+
+Empirische Modelle
+Sie beruhen auf experimentell (empirisch) ermittelten Erkenntnissen und 
+nicht auf theoretischem Wissen um das System selbst. (Egner 1999)
+
+ Empirische Modelle beschreiben die Prozesse nicht selbst, sondern 
+stellen nur Input und Output dar und werden somit auch Black Box 
+Modelle genannt.
+
+Y = S * x
+
+mit 
+
+S:   System (S ≠ 1)
+Y:  Output
+x:   Input
+
+SoSe 2016
+
+Th. Jarmer
+
+22
+
+SoSe 2016
+
+Th. Jarmer
+
+23
+
+(Bahrenberg, Giese, Nipper 1999)
+
+3. Stichprobenauswahl
+ Beschränkung der Grundgesamtheit auf einen Teil aller in Betracht 
+
+kommenden Elemente (z.B. aus Zeit- und Kostengründen)
+
+ um von der Stichprobe Aussagen auf die Grundgesamtheit erschließen zu 
+
+können, muss sie repräsentativ bezüglich der für die Untersuchung 
+relevanten Parameter ausgewählt sein
+ Ist das nicht der Fall, kommt man im Ergebnis zu Fehlschlüssen.
+
+Anhaltspunkte für Stichprobenumfänge (Bahrenberg, Giese, Nipper 1999):
+ Je stärker die Werte der untersuchten Variablen streuen, desto größer 
+
+sollte der Stichprobenumfang sein.
+
+ Stichprobenumfänge < 30 gelten allgemein als zu klein
+ Für die Repräsentativität einer Stichprobe ist weniger der relative Anteil der 
+Stichprobengröße an Größe der Grundgesamtheit von Bedeutung, sondern 
+vielmehr die absolute Größe der Stichprobe.
+
+SoSe 2016
+
+Th. Jarmer
+
+24
+
+Stichprobenauswahl
+ Reine Zufallsstichprobe
+
+ Elemente ziehen, Zufallszahlen,…
+
+ Systematische Stichprobe:
+
+ Elemente in eine Rangordnung bringen  jedes x-te Element auswählen
+
+ Geschichtete Stichprobe
+
+ Klassen bilden  aus jeder Klasse reine Zufallsstichprobe ziehen
+z.B. Freizeitverhalten der Bevölkerung: Altersklassen
+
+ Klumpenstichprobe
+
+Voraussetzung: Grundgesamtheit ist schon gleichsam in „natürliche“ 
+Gruppen aufgeteilt
+ Stichprobe wird aus einer dieser Gruppen (Klumpen) gewählt und anhand 
+
+dieser auf alle Gruppen geschlossen
+z.B. Freizeitverhalten deutscher Großstädter
+ Bewohner einer Großstadt als Stichprobe
+
+ Klumpenstichproben weichen am stärksten von reinen Zufallsstichproben 
+
+ab und sind selten repräsentativ
+
+SoSe 2016
+
+Th. Jarmer
+
+25
+
+SoSe 2016
+
+Th. Jarmer
+
+26
+
+(Bahrenberg, Giese, Nipper 1999)
+
+4. Statistische Methoden
+ Hat man nun in der aktiven Feldarbeit die vorher definierten Variablen und 
+
+Indikatoren erfasst, müssen sie mit geeigneten Methoden ausgewertet 
+werden.
+
+ Bei großen Datenmengen empfiehlt es sich beispielsweise vor der 
+
+Auswertung eine Clusteranalyse vorzunehmen, um somit Objekte zu 
+gruppieren und eine Datenreduktion zur besseren Überschaubarkeit zu 
+erhalten.
+
+ Im vorgestellten Beispiel der Naturgefahren ist ebenfalls eine 
+
+Regressionsanalyse denkbar, um den Zusammenhang der Intensität
+und Eintretenswahrscheinlichkeit von Naturgefahren und deren 
+Gefahrenpotential zu untersuchen.
+
+ Zu berücksichtigen ist, dass die Übersetzung der inhaltlichen Fragestellung 
+
+in eine formalisierte, in diesem Fall statistische Sprache, davon abhängt 
+über welche Kenntnisse der Forscher von vornherein verfügt.
+
+SoSe 2016
+
+Th. Jarmer
+
+27
+
+SoSe 2016
+
+Th. Jarmer
+
+28
+
+(Bahrenberg, Giese, Nipper 1999)
+
+5. Darstellung der Ergebnisse
+ Wurden die erhobenen Daten nun ausreichend bearbeitet und analysiert, gilt 
+
+es, die gewonnenen Ergebnisse darzustellen.
+
+ Anhand dieser Ergebnisse kann die zu Beginn getroffene Hypothese nun 
+
+belegt oder falsifiziert werden.
+
+ Im vorliegenden Beispiel muss die gestellte Hypothese für richtig befunden 
+
+werden, da beide Parameter, Intensität und Eintretenswahrscheinlichkeit, das 
+Gefahrenpotential von Naturgefahren charakterisieren.
+Dieser Umstand wird in der Realität z.B. dahingehend umgesetzt, dass in so 
+genannten Gefahrenzonenkarten der Raumplanung Zonen der 
+Restgefährdung ausgeschieden werden.
+
+In diesen Zonen ist in der Regel mit einer sehr geringen 
+Eintretenswahrscheinlichkeit zu rechnen, dann in der Regel aber mit einer 
+hohen Intensität, so dass auch diese Gefahrenzonen berücksichtigt werden 
+müssen.
+
+SoSe 2016
+
+Th. Jarmer
+
+29
+
+ Das die getroffene Aussage jedoch nicht für alle Naturgefahren 
+
+gleichermaßen gilt ist der unten dargestellten Graphik zu entnehmen.
+ Bei Fels und Bergstürzen fliest die Eintretenswahrscheinlichkeit in die 
+
+Gefahrenbewertung nicht mit ein, da wegen der hohen Intensität immer eine 
+hohe Gefahr von diesen Ereignissen ausgeht. Rutschungen hingegen 
+werden nur nach ihrer Intensität bewertet.
+
+(Lateltin / BUWAL-LHG 1997) 
+
+SoSe 2016
+
+Th. Jarmer
+
+30
+
+SoSe 2016
+
+Th. Jarmer
+
+31
+
+(Bahrenberg, Giese, Nipper 1999)
+
+

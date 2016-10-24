@@ -1,0 +1,714 @@
+Foundations of Logic:
+
+The Formal Language Lprop
+
+Carlos Zednik, PhD
+
+Universität Osnabrück
+
+22.10.2014
+
+Recap/addendum to last week
+
+• An argument is a series of sentences that includes a set of 
+
+premises and a conclusion.
+– The set of premises may be empty!
+
+• An argument is valid iff it is impossible for the conclusion to be 
+
+false when the premises are all true.
+
+• An argument is sound iff it is valid and all of its premises are true.
+
+• Can an argument with no premises be valid and/or sound?
+• Yes, if the conclusion is a tautology, i.e. necessarily true.
+
+– These arguments are valid, because it is impossible for the conclusion to 
+
+be false no matter what!
+
+– They are also sound, because none of the premises are false (and 
+
+therefore, all of them are true!)
+
+10/22/2014
+
+1
+
+Natural vs. Formal Languages
+
+• Natural languages such as English and German have culturally 
+
+evolved over long periods of time, and continue to do so. 
+Their interpretation is context-sensitive and both their syntax 
+and semantics are complex, and often give rise to ambiguities 
+and vagueness. However, natural languages have a very high 
+expressive power.
+– Natural languages are the subject matter of linguistics.
+
+• Formal languages have been purposefully designed during 
+short periods of time. Their syntax and semantics is simple, 
+defined precisely, and unambiguous. The interpretation of 
+formal languages does not depend on context. However, 
+formal languages have a very low expressive power.
+– Formal languages are the subject matter of logic.
+
+Syntax, Semantics and Pragmatics
+• All languages, natural or formal, are characterized by three 
+
+aspects (although only the first two are of interest to logicians).
+
+• Syntax: fixes the vocabulary and grammar of the language.
+
+– Syntax determines which signs the language consists of and how they may 
+be combined. If you know the syntax of a language, you can decide which 
+sequences of signs are well-formed expressions of the language.
+
+• Semantics: fixes the meaning of expressions in the language.
+
+– Semantics analyzes how the meaning of complex expressions is 
+
+determined by the meaning of the simpler expressions contained therein. 
+If you know the semantics of a language, you can understand well-formed 
+expressions of the language and determine their meaning.
+
+• Pragmatics: fixes the way linguistic expressions are used in a 
+
+specific context.
+
+10/22/2014
+
+2
+
+The Syntax of Lprop
+
+• Let’s invent a formal language! 
+
+• The vocabulary of Lprop includes three kinds of symbols:
+
+– Sentence letters:
+
+A, B, C,…, Z
+A0,…, Z0, A1,…, Z1,… An,…, Zn
+
+– Sentential connectives:
+
+∧
+∨
+
+¬
+
+(negation, ‘not’)
+(conjunction, ‘and’)
+(disjunction, ‘or’)
+→
+(material conditional, ‘if … then’)
+↔ (biconditional, ‘if and only if’, ‘iff’)
+
+– Parentheses:
+
+),(
+
+The Syntax of Lprop
+
+• Note
+
+discussed last week.
+
+– Sentence letters can stand for (English) sentences in the sense 
+
+e.g. ‘~’ instead of ‘¬’, ‘&’ instead of ‘∧’, ‘⊃’ instead of ‘→’, and ‘≡’ 
+
+– Other textbooks may use other symbols for sentential connectives, 
+
+instead of ‘↔’. But these are not a part of the vocabulary we will use.
+– We will also sometimes use sentence variables such as ‘Φ’ and ‘Ψ’ to 
+
+stand for sentences of Lprop. Note that these are not actually part of 
+the vocabulary of Lprop.
+
+10/22/2014
+
+3
+
+The Syntax of Lprop
+
+• The grammar of Lprop is specified by a recursive definition.
+
+• Definition
+
+A well-formed formula (wff) is any expression (a series of 
+Lprop-symbols) that accords with the following rules:
+1.
+2.
+3.
+
+If Φ and Ψ are both wff, then (Φ∧Ψ), (Φ∨Ψ), (Φ→Ψ), and (Φ↔Ψ)
+
+If Φ is a sentence letter, then Φ is a wff.
+If Φ is a wff, then ¬Φ is a wff.
+
+are all wff.
+
+4. No other expression is a wff.
+
+The Syntax of Lprop
+
+Which of the following expressions are wffs?
+
+• Example
+
+(P → ¬(Q  ∨ (R∧ T)))
+(Q∧ (P ↔ (Q → ¬(R ∧ T))))
+(R ¬∧ ¬(P∨ ¬¬¬(Q → ¬R)))
+¬¬¬(P∨ Q)
+(R∧ (Q ∧ ¬Q)))
+((R ∧ (Q ∧ ¬Q))
+
+wff
+
+wff
+
+not a wff
+
+wff
+
+not a wff
+
+not a wff
+
+10/22/2014
+
+4
+
+10/22/2014
+
+The Syntax of Lprop
+
+• Note on parentheses
+
+– For ease of reading, it is often convenient to drop parentheses from a 
+
+wff as long as this does not result in ambiguity.
+
+– In general, parentheses may be dropped whenever they surround a 
+relatively strongly bound wff, i.e. one that is more strongly bound 
+than a “neighboring” wff. 
+
+• Parentheses-dropping conventions
+
+– Parentheses surrounding a whole formula may be dropped.
+– ‘¬’ binds more strongly than any other connective.
+
+– ‘∧’ and ‘∨’ bind equally strongly, but more strongly than ‘→’.
+– Parentheses in conjunctions (‘∧-sentences’) containing more than two 
+conjuncts and in disjunctions (‘∨-sentences’) containing more than 
+‘∧’ and ‘∨’ are mixed within one formula!
+
+two disjuncts may be dropped. Note that this rule is not applicable if 
+
+– ‘→’ binds more strongly than ‘↔’.
+
+• Examples
+
+The Syntax of Lprop
+
+can be re-written as 
+
+A ∧ B → C
+((A ∧ B) → C) 
+A ∧ B ∧ C
+((A ∧ B) ∧ C) 
+A ∧ (B → C) 
+A ∧ B → C
+(A ∧ B) → C and A ∧ (B → C) express diﬀerent statements.
+(A ∨ (B ∧ C)) 
+A ∨ B ∧ C
+This is ambiguous between (A ∨ (B ∧ C)) and ((A ∨ B) ∧ C).
+
+can not be re-written as 
+
+can not be re-written as 
+
+can be re-written as 
+
+(A ↔ (B → C)) 
+
+can be re-written as 
+
+(A → (B → C)) 
+
+can not be re-written as 
+
+A → B → C
+
+A ↔ B → C
+
+This is ambiguous between (A → (B → C)) and ((A → B) → C).
+
+5
+
+The Semantics of Lprop
+
+• So far, we have considered the syntax of Lprop
+
+– Its vocabulary and its grammar.
+
+• But what is the semantics of Lprop?
+
+– What do its sentences stand for (i.e. mean)?
+
+• Sentences (wffs) stand for truth values: true (T) or false (F).
+
+• Sentence letters are themselves truth-valued sentences.
+
+• Sentential connectives are truth-functions.
+
+The Semantics of Simple Sentences
+• Note on functions
+
+– In general, functions map elements of an input set (the domain) onto 
+
+elements of an output set (the range).
+
+– For instance, the function x2 is a function that maps numbers onto their 
+
+square, x+y is function that maps two numbers onto their sum, and 
+Temperature (x,y,t) is a function that maps a latitude x, a longitude y 
+and a time t onto the temperature at that point in space-time.
+
+– The elements of the input set are called arguments, elements of the 
+
+output set are called values.
+
+• Definition:
+
+A truth-function maps elements of the set {T,F} onto elements 
+of the set {T,F}. They may have several arguments, but only one 
+value.
+
+10/22/2014
+
+6
+
+10/22/2014
+
+The Semantics of Simple Sentences
+
+• Truth-functions are specified by truth tables that represent how 
+
+elements from the input set are mapped onto elements of the 
+output set.
+• Negation:
+
+• Conjunction, disjunction, material conditional, biconditional: 
+
+A∧B
+
+T
+F
+F
+F
+
+A
+T
+T
+F
+F
+
+B
+T
+F
+T
+F
+
+A
+T
+T
+F
+F
+
+B
+T
+F
+T
+F
+
+A→B
+
+T
+F
+T
+T
+
+A
+T
+T
+F
+F
+
+B
+T
+F
+T
+F
+
+A↔B
+
+T
+F
+F
+T
+
+The Semantics of Simple Sentences
+
+• Note on disjunction
+
+– Disjunction is inclusive.
+– Do not confuse disjunction with the ‘exclusive or’ function!
+
+A
+T
+F
+
+¬A
+F
+T
+
+A
+T
+T
+F
+F
+
+B
+T
+F
+T
+F
+
+A∨B
+
+T
+T
+T
+F
+
+A∨B
+
+T
+T
+T
+F
+
+A
+T
+T
+F
+F
+
+B
+T
+F
+T
+F
+
+A
+T
+T
+F
+F
+
+B
+T
+F
+T
+F
+
+A xor B
+
+F
+T
+T
+F
+
+7
+
+The Semantics of Simple Sentences
+
+• Note on the material conditional
+
+– The truth table of (material) implication is not very intuitive.
+– But because all sentences of Lprop have a truth value,
+
+we say that A→B is T iff it is not the case that A is true and B is false,
+i.e. iff the “promise” of the material conditional has not been “broken”.
+
+A
+T
+T
+F
+F
+
+B
+T
+F
+T
+F
+
+A→B
+
+T
+F
+?
+?
+
+A
+T
+T
+F
+F
+
+B
+T
+F
+T
+F
+
+A→B
+
+T
+F
+T
+T
+
+– In A→B, A is the antecedent and B the consequent.
+– If A→B is T, A is a sufficient condition for B. If A is true, B is true too.
+– If A→B is T, B is a necessary condition of A. If B is false, A is false too.
+
+The Semantics of Complex Sentences
+
+• So far, we have considered only simple sentences, i.e. 
+
+sentences with (at most) one sentential connective.
+
+• The meaning of a complex sentence, i.e. a sentence with 
+
+more than one sentential connective, is defined recursively, 
+through the meanings of its constituent simple sentences. 
+
+• To determine the meaning of any sentence, simple or 
+
+complex, construct its truth table.
+
+• When constructing the truth table for a complex sentence, 
+
+start with its sentence letters and its most binding sentential 
+connective(s), and work your way “out” to the least binding 
+ones.
+
+10/22/2014
+
+8
+
+The Semantics of Complex Sentences
+
+Determine the meaning of ‘A∨¬B’.
+
+• Example
+
+• Step 1: Construct a truth table for all sentence letters.
+• Step 2: Identify the most binding connective, and construct its 
+
+truth table.
+
+• Step 3: Identify the next most binding connective, if any,  and 
+
+construct its truth table.
+
+A∨¬B
+
+T
+T
+F
+T
+
+A
+A
+T
+T
+T
+T
+F
+F
+F
+F
+
+B
+B
+T
+T
+F
+F
+T
+T
+F
+F
+
+¬B
+¬B
+F
+F
+T
+T
+F
+F
+T
+T
+
+Φ∨Ψ
+
+T
+T
+T
+F
+
+Φ
+T
+F
+
+¬Φ
+F
+T
+
+Φ
+T
+T
+F
+F
+
+Ψ
+T
+F
+T
+F
+
+The Semantics of Complex Sentences
+
+• Note on truth tables for complex sentences
+
+– Since every sentence has two possible truth-values (T,F), and since 
+sentence letters are themselves truth-valued sentences, the truth 
+table for a sentence with n sentence letters will have 2n rows—one 
+for every possible assignment of T or F to each of its sentence letters.
+
+• Definition
+
+An assignment is a mapping of every sentence letter in an 
+Lprop sentence to one of the truth values ‘T’ or ‘F’.
+
+• Note
+
+– An assignment satisfies a sentence iff the sentence is true under that 
+
+assignment.
+
+10/22/2014
+
+9
+
+Tautology, Contradiction, Contingency
+
+• Definition
+
+A tautology is a sentence that is true under every assignment.
+A contradiction is a sentence that is false under every 
+assignment.
+All other sentences are contingent sentences.
+
+• Note
+
+– We say that tautologies and contradictions are logically determined.
+– So, a sentence is contingent iff it is not logically determined.
+
+Tautology, Contradiction, Contingency
+
+• Example
+
+Determine the meaning of ‘A → B ↔ ¬B → ¬A’.
+
+A
+T
+T
+F
+F
+
+B
+T
+F
+T
+F
+
+¬A
+F
+F
+T
+T
+
+¬B
+F
+T
+F
+T
+
+A → B  ¬B → ¬A
+
+A → B ↔ ¬B → ¬A
+
+T
+F
+T
+T
+
+T
+F
+T
+T
+
+T
+T
+T
+T
+
+10/22/2014
+
+10
+
+10/22/2014
+
+Summary
+
+• Natural vs. formal languages
+• The formal language Lprop
+• The syntax of Lprop
+
+– wffs
+– Parentheses-dropping conventions
+
+• The semantics of Lprop
+
+– Truth tables
+– Simple sentences
+– Complex sentences
+
+• Tautology, contradiction, contingency
+
+• Next week:
+
+– Translating between natural and formal languages
+– Proving argument validity
+
+11
+
+

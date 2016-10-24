@@ -1,0 +1,2221 @@
+Journal of Molecular and Cellular Cardiology 61 (2013) 68–76
+
+Contents lists available at SciVerse ScienceDirect
+
+Journal of Molecular and Cellular Cardiology
+
+j o u r n a l h o me p a g e : w ww . e l s e v i e r . c om / l o c a t e / y j mc c
+
+Review article
+Regulation of the cardiac Na +/H + exchanger in health and disease
+Shigeo Wakabayashi ⁎, Takashi Hisamitsu, Tomoe Y. Nakamura
+Department of Molecular Physiology, National Cerebral and Cardiovascular Center Research Institute, Fujishirodai 5-7-1, Suita, Osaka 565-8565, Japan
+
+a r t i c l e
+
+i n f o
+
+a b s t r a c t
+
+Article history:
+Received 21 December 2012
+Received in revised form 7 February 2013
+Accepted 11 February 2013
+Available online 18 February 2013
+
+Keywords:
+Na+/H+ exchanger
+Hormonal regulation
+Calcineurin B homologous protein
+Calmodulin
+Calcineurin
+Cardiac hypertrophy
+
+Contents
+
+The Na+ gradient produced across the cardiac sarcolemma by the ATP-dependent Na+-pump is a constant
+source of energy for Na+-dependent transporters. The plasma membrane Na+/H+ exchanger (NHE) is one
+such secondary active transporter, regulating intracellular pH, Na+ concentration, and cell volume. NHE1,
+the major isoform found in the heart, is activated in response to a variety of stimuli such as hormones and
+mechanical stress. This important characteristic of NHE1 is intimately linked to heart diseases, including mal-
+adaptive cardiac hypertrophy and subsequent heart failure, as well as acute ischemic-reperfusion injury.
+NHE1 activation results in elevation of pH and intracellular Na+ concentration, which potentially enhance
+downstream signaling cascades in the myocardium. Therefore, in addition to determining the mechanism un-
+derlying regulation of NHE1 activity, it is important to understand how the ionic signal produced by NHE1 is
+transmitted to the downstream targets. Extensive studies have identiﬁed many accessory factors that interact
+with NHE1. Here, we have summarized the recent progress on understanding the molecular mechanism un-
+derlying NHE1 regulation and have shown a possible signaling pathway leading to cardiac remodeling, which
+is initiated from NHE1. This article is part of a Special Issue entitled “Na+ Regulation in Cardiac Myocytes”.
+© 2013 Elsevier Ltd. All rights reserved.
+
+.
+
+.
+
+.
+
+.
+.
+.
+
+.
+.
+
+.
+.
+.
+
+.
+.
+
+1.
+2.
+3.
+
+.
+.
+.
+Calcineurin B homologous protein .
+Calmodulin .
+.
+.
+.
+Lipids
+.
+
+.
+Introduction
+.
+Na+/H+ exchanger molecule .
+.
+.
+Regulation of NHE1
+.
+.
+3.1.
+.
+.
+3.2.
+.
+3.3.
+.
+Involvement of NHE1 in cardiac disease .
+.
+Downstream signaling leading to cardiac hypertrophy and heart failure .
+.
+Conclusion
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+4.
+5.
+6.
+Acknowledgments
+Conﬂicts of interest
+References
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+
+.
+
+.
+.
+.
+.
+
+.
+
+.
+.
+.
+.
+
+.
+.
+
+.
+.
+.
+.
+
+.
+
+.
+
+.
+.
+
+.
+.
+.
+.
+
+.
+
+.
+
+.
+.
+
+.
+.
+.
+.
+
+.
+
+.
+
+.
+.
+
+.
+.
+.
+.
+
+.
+
+.
+
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+.
+.
+.
+.
+
+1. Introduction
+
+The plasma membrane Na+/H+ exchanger (NHE) catalyzes acid
+extrusion by electroneutral ion exchange, using the energy support
+
+Abbreviations: CaM, calmodulin; CaMKII, Ca2 +/CaM-dependent protein kinase II;
+CaN, calcineurin; CHP, calcineurin B homologous protein; DAG, diacylglycerol; IP3,
+inositol 1,4,5-trisphosphate; HDAC, histone deacetylase; LID, lipid-interacting do-
+main; NCX, Na+/Ca2 + exchanger; NFAT, nuclear factor of activated T cells; NHE,
+Na+/H+ exchanger; pHi, intracellular pH; PIP2, phosphatidylinositol 4,5-bisphosphate;
+PIP3, phosphatidylinositol (3,4,5)-trisphosphate; SHR, spontaneously hypertensive rat;
+TM, transmembrane.
+
+⁎ Corresponding author. Tel.: +81 6 6833 5012x2519; fax: +81 6 6835 5314.
+
+E-mail address: wak@ri.ncvc.go.jp (S. Wakabayashi).
+
+0022-2828/$ – see front matter © 2013 Elsevier Ltd. All rights reserved.
+http://dx.doi.org/10.1016/j.yjmcc.2013.02.007
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+. 68
+. 69
+. 69
+. 69
+. 70
+. 71
+. 71
+. 72
+. 74
+. 74
+. 74
+. 74
+
+provided by Na+–K+-ATPase. The housekeeping isoform NHE1 is a
+key regulator of intracellular pH (pHi), Na+ concentration, and cell vol-
+ume in virtually all tissues [1]. In cardiac muscles, intracellular acidosis
+results in Na+-overload via NHE1, followed by a sustained increase in
+the cytosolic Ca2+ concentration via cardiac Na+/Ca2+ exchanger. In
+addition, acidosis itself seriously reduces myoﬁbrilar Ca2+ sensitivity,
+resulting in contractile dysfunction. Therefore, it is important for cardiac
+muscles to rapidly remove acid load during contraction, particularly
+under pathological conditions such as ischemia.
+
+NHE1 has also been implicated in cardiac hypertrophy and chronic
+heart disease. In various diseased animal models, the NHE1 inhibitor
+had a highly beneﬁcial effect [2]. The involvement of NHE1 in chronic
+disease is strongly linked to the ﬁnding that NHE1 is activated in
+
+S. Wakabayashi et al. / Journal of Molecular and Cellular Cardiology 61 (2013) 68–76
+
+69
+
+response to hormones such as endothelin-1 and norepinephrine, as
+well as mechanical stress like stretching; these factors are all inducers
+of cardiac remodeling. In studies on NHE1, 2 fundamental questions
+arise: 1) How is NHE1 regulated? and 2) What does NHE1 regulate?
+Many upstream and downstream targets of NHE1 have been identiﬁed.
+In this review, we will brieﬂy summarize the basic knowledge on the
+NHE1 molecule and then report the recent progress on several accesso-
+ry factors of NHE1, which play critical roles in the regulation of NHE1 ac-
+tivity. Finally, we will discuss the ampliﬁcation of downstream signaling
+pathways by NHE1 activation, leading to cardiac remodeling. The
+structure–function relationship and pathological aspects of this trans-
+port system have been extensively reviewed earlier [2–9]. Interested
+readers should also refer to these reviews.
+
+2. Na+/H+ exchanger molecule
+
+In 1989, Sardet et al. ﬁrst cloned the human Na+/H+ exchanger
+cDNA by genetic complementation of exchanger-deﬁcient cells [10].
+This protein is ubiquitously expressed in all tissues and is now known
+as NHE1. Since the initial identiﬁcation of NHE1, 9 isoforms have been
+discovered, referred to as NHE1–NHE9. NHE1–NHE5 are expressed in
+the plasma membrane, while NHE6–NHE9 localize to the intracellular
+membranes such as the Golgi apparatus and endosomes [11]. In contrast
+to the ubiquitous expression of NHE1, NHE2–NHE5 show a restricted ex-
+pression pattern: for example, NHE2–NHE4 is predominantly expressed
+in the epithelial cells of the kidney, small intestine and stomach, and
+NHE5 is mainly expressed in the brain. In addition to NHE1–NHE9, at
+least 3 different exchangers or exchanger-like proteins (NHA1–2 and
+sperm-NHE) are known [12,13]. Interestingly, human NHA2, which
+shares homology with the bacterial Na+/H+ antiporter NhaA, is an
+amiloride-insensitive and phloretin-inhibitable cation-H+ exchanger
+that may be involved in essential hypertension [14,15]. Sperm-NHE is
+critical for male fertility and sperm motility [16]. It contains a potential
+voltage sensor and a consensus cyclic nucleotide-binding motif [16] and
+has been shown to be important for bicarbonate regulation of adenylate
+cyclase [17].
+
+NHE1 is the major isoform found in cardiac muscle. NHE1 can be sep-
+arated into the amino (N)-terminal transmembrane domain (~500 resi-
+dues) catalyzing ion transport and the carboxy (C)-terminal hydrophilic
+cytoplasmic domain (~300 residues) mediating the regulation of ex-
+change activity. Derivatives of the NHE1 inhibitor amiloride are known
+to interact with the N-terminal domain of NHE1 [18–20]. Initial cysteine
+accessibility analysis allowed us to construct a topology model of NHE1
+consisting of 12 transmembrane spanning segments with some
+membrane-protruding regions (Fig. 1A) [21]. The 3-dimensional structur-
+al model [22,23], based on the structure of NhaA [24], predicts the cation-
+and inhibitor-binding sites provided by several transmembrane helices
+(TMs 4 and 9). The predicted topology model [23] is slightly different
+from the previously described model of NHE1 [21]. At least in part of
+the NHE1 overexpressed in ﬁbroblasts, the N-terminal tail just prior to
+the ﬁrst hydrophobic segment (or the ﬁrst putative transmembrane do-
+main, TM1) was detected as a part of the mature molecule [21],
+suggesting that the N-terminus is not cleaved. However, in vitro topology
+analysis later showed the presence of a signal sequence, suggesting the
+possible cleavage of the N-terminus [25]. Recent amino acid sequencing
+analysis of NHE1 puriﬁed from ﬁbroblasts or SF9 insect cells revealed
+that cleavage indeed occurs between Gly-36 and Leu-37 just behind
+TM1 (cleavage site in Fig. 1A) (Wakabayashi, S., unpublished observa-
+tion). Therefore, the initial experiment [21] might instead detect a
+minor fraction of NHE1 in which the N-tail remained under forced
+expression.
+
+NHE1 exists as a homodimer in the plasma membrane [26–28],
+with a compact globular domain assigned to the transmembrane do-
+main [29]. Although dimerization essentially occurs between the
+N-terminal transmembrane domains of 2 subunits [28], there is evi-
+dence that the cytoplasmic domains also contribute to dimer formation
+
+[27]. While dimerization with a catalytically inactive NHE1 mutant
+markedly reduced the exchange activity of the wild-type NHE1 through
+an acidic shift of the pHi dependence [30], such dominant negative effect
+was not observed when the cytoplasmic H+ concentration was sufﬁ-
+ciently high [28,30]. These observations support the view that dimeriza-
+tion of 2 active subunits is required for NHE1 to possess exchange
+activity in the neutral pHi range, although each subunit is capable of cat-
+alyzing transport in the acidic pHi range. This notion is supported by the
+kinetic data obtained using oscillating pH electrodes combined with
+whole cell patch clamp and can be explained by the “coupled dimer
+model,” in which 2 Na+ and 2 H+ ions are transported per cycle [31].
+
+NHE1 catalyzes an electroneutral exchange of Na+ and H+ across the
+membrane. In contrast to external pH dependence, the concentration
+dependence of cytosolic H+ on Na+/H+ exchange is much steeper,
+with a Hill coefﬁcient of >2. Such pHi dependence suggests the existence
+of more than 1 H+ binding site. Activation of the exchange activity by cy-
+tosolic H+ is explained by the presence of additional H+-binding site(s)
+(H+-modiﬁer site or H+-sensor) [32,33]. However, a recent study
+reported that H+ activation of NHE1 is best explained by an allosteric
+model for a dimer transporter without considering an additional H+ sen-
+sor site [34]. Such a model is well ﬁtted to the activation of NHE1 in re-
+sponse to mitogens and osmotic stress [34,35]. Although a deﬁnitive
+conclusion for the mechanism underlying H+ activation awaits detailed
+mapping of H+-binding sites on the NHE1 molecule, several critical
+amino acid residues such as Glu-131, Arg-327, and Arg-440 have been
+identiﬁed as important determinants of the pHi dependence of NHE1
+[34,36,37]. It is generally accepted that acute activation of NHE1 occurs
+via an increase in the afﬁnity of cytoplasmic H+ for NHE1, rather than
+an increase in the maximal exchange activity (Vmax).
+
+3. Regulation of NHE1
+
+NHE1 is activated in response to various extracellular stimuli. This is
+thought to occur via the interaction of accessory proteins or bioactive sub-
+stances with the cytoplasmic domain by a phosphorylation-dependent or
+phosphorylation-independent mechanism. The cytoplasmic domain of
+NHE1 has been reported to interact with various proteins, including
+Ca2+-binding proteins, protein kinases, phosphatases, and cytoskeletal
+proteins [38–48]. In addition, NHE1 is known to be phosphorylated at
+Ser-703 by p90 ribosomal S6 kinase [49] and at Ser-648 by protein kinase
+B/Akt [50,51]. Furthermore, the distal cytoplasmic region of NHE1 is phos-
+phorylated at multiple sites [52–54]. Identiﬁcation of many accessory fac-
+tors and multiple phosphorylation sites has suggested that regulation of
+NHE1 occurs through a complex process. However, the precise binding
+sites of accessory factors on NHE1 have been determined in only a few ex-
+amples. In addition, a previous serial deletion mutant study [55] showed
+that the pHi sensitivity of NHE1 was largely affected only by the deletion
+of 2 cytoplasmic subdomains, the juxtamembrane cytoplasmic domain
+with ~100 residues (amino acid [aa] 500–600) and the autoinhibitory
+middle region (aa 636–659). Therefore, accessory factors linked to these
+2 subdomains may have a larger impact on the acute regulation of ex-
+change activity. Here, we have summarized research progress on the 3 ac-
+cessory factors that have been studied most extensively: Calcineurin B
+homologous protein (CHP), calmodulin (CaM), and phospholipids
+interacting with these subdomains.
+
+3.1. Calcineurin B homologous protein
+
+Of the accessory proteins that interact with the exchangers, the
+greatest attention has been focused on calcineurin B homologous
+proteins (CHPs) [56]. CHPs were identiﬁed at nearly the same time
+by 4 separate groups by using different strategies: phage library
+screening [39]; yeast 2-hybrid screening [57] (personal communica-
+tion from Dr. Hiroshi. Kanazawa, 1996); immunoprecipitation with
+NHE1 [58], as an NHE1-interacting protein; and biochemical meth-
+odology, as a protein (p22) involved in vesicular transport [59].
+
+70
+
+S. Wakabayashi et al. / Journal of Molecular and Cellular Cardiology 61 (2013) 68–76
+
+A
+
+EL1 
+
+cleavage 
+
+EL2 
+
+EL4 
+
+EL5 
+
+EL3 
+
+EL6 
+
+1 
+
+2  3 
+
+4 
+
+5 
+
+6 
+
+7 
+
+8 
+
+9 
+!"
+
+10 11 12 
+
+R-loop 
+
+IL2 
+
+IL3 
+
+IL4 
+
+500 
+IL5 
+
+PIP2 
+M1 
+
+CHP 
+
+PIP2 
+M2 
+
+LID 
+
+600 
+
+Out 
+
+In 
+
+NH2 
+
+IL1 
+
+815 
+
+HOOC 
+
+720 
+
+715 
+
+686 
+
+656 
+
+636 
+
+site B 
+
+site A 
+
+CaN-A 
+
+N-lobe 
+
+C-lobe 
+
+D
+
+CaN-A
+
+N
+
+P
+
+I
+
+V
+T
+
+I
+
+D
+
+C
+
+NHE1
+
+CaN-B
+
+CaN-B 
+
+CaN-A
+
+C
+
+N-lobe
+
+CaM 
+
+B
+
+N-lobe
+
+CHP
+
+C-lobe
+
+NHE1
+
+N
+
+CaM
+
+C-lobe
+
+N
+
+C
+
+C
+
+C
+
+flexible loop
+
+N
+
+NHE1
+
+Fig. 1. (A) Topology model of NHE1 and 3-dimensional structure of accessory proteins in complex with NHE1-derived peptides. NHE1 is separated into 2 large domains, the
+N-terminal transmembrane domain (~500 residues) containing membrane-spanning helices and the C-terminal cytoplasmic domain (~300 residues) interacting with various cy-
+tosolic factors. Binding sites of calcineurin B homologous protein (CHP), calmodulin (CaM), and calcineurin A (CaN-A) in the NHE1 cytoplasmic domain have been indicated. Struc-
+tural models for the CHP2–NHE1 peptide (B) and CaM–NHE1 peptide (C) were created from protein data (pdb ID: 2BEC[65] and 2YGG[79], respectively). The green spheres indicate
+Ca2+ ions. (D) The structure of the CaN–NHE1-peptide complex was modeled using PD-FAMS Ligand & Complex [141] by replacing PHPVIVITGPHEE with the NHE1-derived se-
+quence DLPVITIDPASPQ based on the reference structure (pdb ID: 2P6B) [137]. Only part of the overall structure (2CaN-A/2CaN-B/NHE1-peptide complex) is represented in this
+ﬁgure. NHE1-derived peptide forming β-strand (ball-stick representation) is sandwiched by β-sheets of 2 CaN-A molecules. LID, lipid-interacting domain; PIP2, phosphatidylinositol
+4,5-bisphosphate; M1 and M2, PIP2-binding sites.
+
+Three isoforms are known, which share homology with the B subunit of
+calcineurin. CHP1 is expressed in virtually all tissues, including the
+heart, while the expression of CHP2 is limited to intestinal epithelia
+[60] and malignant tumor cells [61]. The third isoform, CHP3 (also
+called as tescalcin), was initially identiﬁed in the mouse testis [62,63],
+and its expression is reported to be limited to restricted tissues such
+as the heart, brain, and stomach, in addition to the testis [64].
+
+CHP is a Ca2+-binding protein with EF-hand motifs and is
+myristoylated at the N-terminus (Gly2). CHP1 and CHP2 (and probably
+CHP3 too) interact with the juxtamembrane domain of the plasma
+membrane Na+/H+ exchangers (see Fig. 1A). Three-dimensional struc-
+ture determination showed that the cytoplasmic α-helix (Arg-516 to
+His-540) of NHE1 is inserted into the hydrophobic cleft formed by the
+N- and C-lobes of CHP1 or CHP2 in the C- to N-terminus orientation of
+the α-helix (Fig. 1B) [65,66]. Formation of multiple hydrogen bonds pre-
+cisely determines the orientation for insertion of the α-helix [65,66].
+Since the Ca2+ afﬁnity of CHP1 and CHP2 is extremely high (nanomolar
+order) upon interaction with NHE1, EF-hands together with bound Ca2+
+ions may be more important structurally than as a Ca2+ sensor [65,67].
+NHE1 lacking the CHP-binding domain can be expressed in the plasma
+membrane, but it exhibits very low exchange activity [68,69] and
+shows greatly shifted pHi dependence of the exchange to the acidic
+side [67]. Furthermore, such NHE1 mutants show shorter half-lives in
+the plasma membrane [69]. Importantly, deﬁciency of CHP1 drastically
+impairs plasma membrane expression of NHE1 [70], suggesting that
+CHP1 is required for optimal surface expression of NHE1. Similar to
+CHP1, CHP3 also increases the retention of NHE1 in the plasma
+
+membrane [71,72]. Thus, the primary function of CHP1 (and probably
+of other CHP isoforms too), as an essential subunit, appears to be stabi-
+lization of the NHE1 structure in the physiologically relevant conforma-
+tion for optimal surface expression and exchange activity. Indeed, the
+expression of endogenous CHP1 increases with increasing amount of
+NHE1 [67,73] and CHP1 is copuriﬁed with NHE1 from ﬁbroblasts at
+nearly 1:1 stoichiometry [48]. Taken together, these results suggest
+that NHE1 primarily forms a complex with CHP1 in the plasma mem-
+brane. CHP1 is phosphorylated in cells [39]; however, the role of this
+phosphorylation awaits further investigation. Although EF-hands and
+the ﬂexible loop connecting the N- and C-lobes of CHP (see Fig. 1B) at
+least partly contribute to the pHi sensitivity of basal exchange activity
+[65,67], it is not clear whether or how CHP is involved in the external
+stimulus-induced activation of NHE1. In cardiac muscles, both CHP1
+and CHP3 are expressed; however, it is not yet known how cardiac
+NHE1 is differentially regulated via interaction with these distinct CHP
+isoforms.
+
+3.2. Calmodulin
+
+Stimulation of Gq-coupled receptors induces hydrolysis of phos-
+phatidylinositol 4,5-bisphosphate (PIP2) by phospholipase C, which
+in turn produces 2 second messengers: diacylglycerol (DAG), which
+is a protein kinase C activator, and inositol 1,4,5-trisphosphate (IP3),
+which leads to the release of calcium from the endoplasmic or sarco-
+plasmic reticulum through the IP3 receptor [74]. Ca2+ mobilization is
+known to activate NHE1. This Ca2+-induced activation of NHE1 is
+
+S. Wakabayashi et al. / Journal of Molecular and Cellular Cardiology 61 (2013) 68–76
+
+71
+
+attributable to direct interaction of Ca2+/calmodulin (CaM) with
+NHE1 [75]. Abundantly expressed CaM is known to directly bind to
+the 2 neighboring regions in the middle of the cytoplasmic domain
+of NHE1 (Fig. 1A), i.e., aa 637–656 (site A) with high afﬁnity (Kd =
+~20 nM) and aa 657–700 (site B) with intermediate afﬁnity (Kd =
+~350 nM) in the presence of Ca2+[38]. Mutations that prevent
+CaM binding to the high-afﬁnity site A render NHE1 constitutively
+active and Ca2+ activation-defective [75]; it was proposed that in
+the resting state, when NHE1 is not bound to CaM, NHE1 activity is
+suppressed by reduction of cytoplasmic H+ afﬁnity and that Ca2+-
+induced activation of NHE1 occurs via displacement of this autoin-
+hibitory domain from the putative H+-sensor site due to direct bind-
+ing of Ca2+/CaM [76,77]. The importance of both site A and site B in the
+regulation of NHE1 was supported by a recent study using mutants of
+these regions [78]. The crystal structure of the NHE1 cytoplasmic region
+in complex with Ca2+/CaM was recently solved [79]. Surprisingly,
+according to the crystal structure, the C- and N-lobes of just 1 CaM mol-
+ecule, but not 2 CaM molecules, bind site A and site B, respectively
+(Fig. 1C). The NHE1 helices and the Ca2+-bound CaM are in an elongat-
+ed form, resembling the unliganded conformation of CaM. This repre-
+sents a new mode of CaM interaction with the target molecule. The
+second N-lobe binding site B may play a role in facilitating the release
+of the autoinhibitory C-lobe binding site A, which would not be easily
+accessible in the resting state.
+
+A serine residue (Ser-648) within the ﬁrst CaM-binding site was iden-
+tiﬁed as a substrate for phosphorylation by protein kinase B/Akt [51].
+Phosphorylation of Ser-648 resulted in the abrogation of CaM binding
+and reduction of NHE1 activity following intracellular acidosis in
+cardiomyocytes [51]. In cardiac cells, intracellular acidosis increases
+[Ca2+]i and would thus facilitate Ca2+/CaM binding to NHE1, leading to
+activation of exchange activity. Therefore, the inhibition of NHE1 activity
+by protein kinase B would become more remarkable under such acidic
+conditions [51]. This may provide a possible mechanism for the protec-
+tive effect of protein kinase B during myocardial ischemia-reperfusion.
+In ﬁbroblasts, however, the impact of phosphorylation of Ser-648
+on NHE1 activity appears to be different [50]. Tyrosine phosphoryla-
+tion of CaM by Janus kinase 2 was proposed to activate NHE1 under
+hyperosmotic stress via increased CaM binding to NHE1 [80]. Such links
+among CaM, Janus kinase 2, and NHE1 were also suggested in the activa-
+tion of NHE1 via bradykinin B2 [81] or 5-hydroxytrptamine-1A receptors
+[82]. However, the mechanism by which tyrosine phosphorylation of
+CaM by Janus kinase 2 enhances its interaction with NHE1 at the molec-
+ular level remains unclear.
+
+3.3. Lipids
+
+Since the discovery of the essential role of Phosphatidylinositol
+4,5-bisphosphate (PIP2) in the regulation of Na+/Ca2+ exchanger and
+K+ channel by Hilgemann et al. [83], the regulation of transporters and
+ion channels by PIP2 has been an exciting ﬁeld in the physiological sci-
+ences. Aharonovitz et al. [84] ﬁrst demonstrated that NHE1 contains the
+regions interacting with PIP2 in its juxtamembrane cytoplasmic domain.
+Two cationic regions (M1 and M2) harboring a CHP-binding domain
+were identiﬁed as potential PIP2-binding sites (Fig. 1A) [84]. Interaction
+of NHE1 with PIP2 was found to be required for basal exchange activity,
+and dephosphorylation of PIP2 was hypothesized to be a mechanism for
+NHE1 inhibition induced by ATP-depletion [84,85]. Measurement of the
+extracellular H+ gradient during a whole-cell patch clamp experiment
+with perfusion of the cell interior suggested that PIP2 is indeed a direct ac-
+tivator of NHE1 [86]. A subsequent experiment showed that these cationic
+regions of NHE1 have a signiﬁcant afﬁnity for other phosphoinositides
+such as phosphotidylinositol (3,4,5)-trisphosphate [PIP3] [87]. Such cat-
+ionic regions also exist in NHE3, which has a signiﬁcant homology with
+NHE1, and have been shown to interact with PIP2 and PIP3[88]. Neutrali-
+zation of basic residues by mutagenesis or perturbation interfering with
+charge interaction inhibited the NHE3 exchange activity, suggesting that
+
+electrostatic interaction between the basic residues and the membrane
+surface charge is required for the activity [89].
+In addition to
+polyphosphoinositides, cationic regions from NHE1 [90] or NHE3 [89]
+appear to widely interact with acidic phospholipids such as
+phosphatidylserine. This broad lipid speciﬁcity of exchangers becomes
+important when we consider the abundance of these acidic phospho-
+lipids in the inner leaﬂet of the plasma membrane [91].
+
+The region from the C-terminus to the second cationic region (M2)
+in NHE1 is followed by a region enriched with hydrophobic residues
+(e.g., 573LIAFY577) that are predicted to bind lipids. Similar to the cationic
+regions, deletion or mutation of these residues resulted in a marked re-
+duction in NHE1 activity concomitant with the acidic shift of pHi depen-
+dence. The relatively long segment (aa 542–598) containing 57 residues
+(designated as the lipid-interacting domain [LID]), including the second
+PIP2-binding site, was suggested to directly interact with phorbol esters,
+which are strong PKC activators [90]. Interestingly, GFP-labeled LID
+within the cells translocated to the plasma membrane in response to
+phorbol esters, a membrane-permeable diacylglycerol (DAG) analog,
+and a G-protein-coupled receptor agonist, likely via increasing the afﬁn-
+ity of LID to the membrane, and these stimuli all induced the activation
+of NHE1 [90]. However, mutation of hydrophobic residues inhibited
+such LID translocation and abolished activation of NHE1 [90]. This
+suggested a new mechanism for hormonal activation of NHE1 via di-
+rect interaction of DAG, followed by a more stable association with
+acidic membrane lipids [90].
+
+4. Involvement of NHE1 in cardiac disease
+
+There is ample evidence suggesting that NHE1 mediates cardiac
+injuries induced by ischemia-reperfusion [92]. This is based on stud-
+ies indicating that NHE1 inhibitors such as cariporide [93], eniporide
+[94] and zoniporide [95] afford signiﬁcant protection against these in-
+juries in many animal models and in patients undergoing coronary
+interventions [96,97]. Evidence that mice lacking the Nhe1 gene are
+resistant to ischemia-reperfusion injury further supports the poten-
+tial involvement of NHE1 in these injuries [98]. However, in a recent
+report, paradoxical resistance to myocardial ischemia-reperfusion injury
+was observed in transgenic mice overexpressing NHE1, likely due to the
+ER stress response rather than NHE1 activation [99].
+
+NHE1 is also implicated in the cardiac hypertrophy and heart failure
+that often result from post-infarction remodeling. In addition to causing
+dysregulation of intracellular Ca2+ homeostasis, enhanced activities
+and/or expression levels of NHE1 mRNA and protein are thought to
+be responsible for the cardiac remodeling observed in various animal
+models. In addition, treatment with NHE1 inhibitors reduced the path-
+ological phenotypes of these animals. For example, enhanced activity of
+the Na+/H+ exchanger was detected in the spontaneously hyperten-
+sive rat (SHR) [100], in the Goto-Kakizaki rat model of type 2 diabetes
+[101], and in the guanylyl cyclase A knockout (GC-A KO) mouse [102],
+all of which exhibited pathological hypertrophy. The inhibition of Na+/
+H+ exchange prevented hypertrophy, ﬁbrosis, and heart failure in
+β1-adrenergic receptor transgenic mice in which cardiac NHE1 was
+upregulated at both the mRNA (140%) and protein (42%) levels [103].
+A similar protective effect of cariporide was reported in pacing-induced
+heart failure in rabbits [104] and in the SHRs [105]. Furthermore, in
+both animal and human hearts, sarcolemmal NHE activity was demon-
+strated to be signiﬁcantly elevated during chronic end-stage heart
+failure [106].
+
+Because many signal transduction pathways are activated in
+these models, it is not clear whether activation of NHE1 alone is suf-
+ﬁcient to induce hypertrophy. This question was directly addressed
+by characterizing transgenic mice overexpressing an activated form of
+human NHE1 in a cardiac-speciﬁc manner [73,107]. This form of NHE1
+lacks the CaM-binding autoinhibitory domain (aa 637–656) [75], which
+results in an alkaline shift of pHi-dependence and hence mimics the
+pathological states where hormonal stimulation occurs. It has been
+
+72
+
+S. Wakabayashi et al. / Journal of Molecular and Cellular Cardiology 61 (2013) 68–76
+
+demonstrated that activation of NHE1 is sufﬁcient to initiate cardiac hy-
+pertrophy and heart failure via activation of Ca2+-dependent
+prohypertrophic signaling pathways (see Fig. 2), and possibly via
+acceleration of Ca2+-induced cell death. Such detrimental effects
+of NHE1 overexpression are largely prevented by administration
+of cariporide [73].
+
+5. Downstream signaling leading to cardiac hypertrophy and heart
+failure
+
+NHE1 is activated in response to various hormones such as
+endothelin-1 [108], angiotensin II [109], and α1-adrenergic agonists
+[110], as well as mechanical stimuli like stretching [111–113], all of
+which contribute to cardiac remodeling [2,108,114]. Stretch-induced
+NHE1 activation may occur via hormone receptor activation caused by
+an autocrine–paracrine mechanism [115]. NHE1 couples H+ efﬂux to
+Na+ inﬂux under the driving force of a Na+ gradient formed by the
+Na+-pump. Therefore, activation of NHE1 is thought to increase [Na+]i,
+if we assume constant Na+-pump activity. In addition, NHE1 activation
+primarily occurs through the alkaline shift of pHi dependence of the ex-
+change activity, i.e., decrease in the pHi threshold (or increase in the pH
+setpoint). Thus, NHE1 activation results in long-lasting intracellular alka-
+linization, most prominent in the absence of bicarbonate. Therefore, we
+need to consider 2 cytosolic ionic changes caused by NHE1 activation:
+1) increase in [Na+]i and 2) increase in pHi, both of which serve as im-
+portant initial events for the downstream signaling leading to cardiac
+remodeling.
+
+In the myocardium, Na+ homeostasis is closely linked to intracellular
+Ca2+ handling via the Na+/Ca2+ exchanger (NCX), the principal mech-
+anism for Ca2+ efﬂux from cardiomyocytes. NCX catalyzes the electro-
+genic Na+/Ca2+ exchange at a stoichiometry of 1 Ca2+:3 Na+ across
+the sarcolemma and works in the reverse mode (Ca2+ inﬂux mode)
+under depolarization [116]. Increased [Na+]i by NHE1 activation induces
+
+a sustained increase in cytosolic Ca2+ concentration by decreasing the
+forward and/or increasing the reversed mode of NCX [117]. In fact, the
+relative importance of increased [Na+]i has been reported in the failing
+myocardium [118–121]. Given the 1:3 stoichiometry of NCX, an increase
+of only 25% in [Na+]i is expected to result in a 2-fold increase in
+[Ca2+]i. Such NHE-induced increase in Ca2+ entry through the NCX
+has been suggested in several experimental models, such as stretched
+ventricular muscles [111,112], heart failure with volume and pressure
+overload [122], and endothelin-1-induced hypertrophy [121]. Fluores-
+cence measurement with the null-point method has shown that [Na+]i
+is almost 1.5-fold higher in NHE1 transgenic mice than in wild-type
+mice [73]. Furthermore, both diastolic and systolic Ca2+ levels have
+been found to increase (Fig. 2B) as a consequence of Na+-induced Ca2+
+overload followed by enhanced sarcoplasmic reticulum Ca2+-pumping
+via Ca2+/CaM-dependent protein kinase II (CaMKII)-dependent phos-
+phorylation of phospholamban [73].
+
+An increase in the cytosolic Ca2+ concentration activates 2 im-
+portant Ca2+-dependent prohypertrophic signaling molecules, CaMKII
+and calcineurin (CaN) [123]. CaMKII is known to induce nuclear export
+of histone deacetylase (HDAC) by its phosphorylation, thereby pro-
+moting cardiomyocyte hypertrophy by blocking HDAC-dependent
+inhibition of target gene transcription [124]. On the other hand,
+CaN induces nuclear translocation of the nuclear factor of activated
+T cells (NFAT) by its dephosphorylation and consequently activates
+hypertrophic gene expression [123]. Both signaling pathways are
+highly activated in NHE1 transgenic mice [73]. Activation of CaMKII
+has also been reported to be a major NHE1-dependent hypertrophic
+molecule in guanylyl cyclase A knockout mice [102]. NHE1 inhibitor
+induces regression of cardiac hypertrophy with concomitant reduc-
+tion of CaN/NFAT signaling in SHRs with cardiac hypertrophy [125],
+and more recently, ginseng, a medicinal plant, has been reported to
+inhibit hormone-induced cardiomyocyte hypertrophy and heart failure
+via NHE1 inhibition and attenuation of the CaN pathway [126].
+
+A
+
+WT
+
+Tg
+
+C
+
+NFATc4-GFP
+
+anti-HA
+
+control
+
+NHE1-2HA
+
+10 µm
+
+10 µm
+
+B
+
+1.1
+
+0.9
+
+0.7
+
+WT
+
+Tg
+
+D
+
+Fig. 2. NHE1-induced cardiac hypertrophy and nuclear translocation of NFAT in cardiomyocytes. (A). Outstanding cardiac hypertrophy in the hearts from transgenic (Tg) mice
+overexpressing the active form of NHE1, compared to the wild-type (WT) mice. (B) Diastolic and systolic intracellular Ca2+ concentrations were much higher in cardiomyocytes
+isolated from adult Tg mice than from WT mice. Intracellular Ca2+ levels were measured using the Ca2+ indicator Indo-1 upon electric stimulation at 1 Hz. (C) Overexpression of
+NHE1 facilitates the nuclear translocation of NFATc4-GFP. Neonatal rat ventricular myocytes were transfected with plasmids carrying the extracellular HA-tagged NHE1 construct
+and then infected with adenovirus carrying NFATc4-GFP. Myocytes expressing the exogenous HA-tagged NHE1 were identiﬁed by extracellular HA-antibody staining. (D) Amino
+acid sequence alignment of CaN-A binding motifs among human NHE1 and human NFATc isoforms. PVIVIT is the model peptide sequence that strongly interacts with CaN-A. PxIxIT
+indicates the consensus motif sequence.
+
+S. Wakabayashi et al. / Journal of Molecular and Cellular Cardiology 61 (2013) 68–76
+
+73
+
+Fig. 3. Relationship of NHE1 with upstream and downstream target proteins leading to cardiac hypertrophy. Stimulation of Gq-coupled receptors (GPCR) with hormones such as
+norepinephrine (NE) or endothelin-1 (ET1) induces hydrolysis of phosphatidylinositol 4,5-bisphosphate (PIP2) by phospholipase C (PLC), which in turn produces 2 second mes-
+sengers: diacylglycerol (DAG), which is a protein kinase C (PKC) activator, and inositol 1,4,5-trisphosphate, which releases Ca2+ from Ca2+ stores via IP3 receptors. Ca2+/calmod-
+ulin (CaM) activates NHE1 via direct interaction. DAG is also suggested to directly activate NHE1 via interaction with its lipid-interacting domain. The role of PKC is unknown
+because it does not directly phosphorylate NHE1. NHE1 activation results in elevation of [Na+]i and pHi. [Na+]i increase leads to sustained increase in [Ca2+]i by the inhibition
+of Ca2+ efﬂux or acceleration of Ca2+ inﬂux via the Na+/Ca2+ exchanger (NCX). Elevated [Ca2+]i activates at least 2 Ca2+-dependent prohypertrophic signaling molecules,
+Ca2+/CaM-dependent kinase II (CaMKII) and calcineurin (CaN). Activation of CaMKII phosphorylates histone deacetylase (HDAC) and induces derepression of myocyte enhancer
+factor 2 (MEF2), while CaN dephosphorylates nuclear factor of activated T cells (NFAT) and enhances hypertrophic gene transcription upon binding to the transcription factor
+GATA. Activated CaMKII also causes the phosphorylation of phospholamban (PLB) and the ryanodine receptor (RyR). These changes lead to acceleration of sarcoplasmic reticulum
+Ca2+ uptake via the Ca2+ pump (SERCA) and Ca2+ release via RYR, and thereby enhance the Ca2+-handling process. On the other hand, NHE1 activation results in pHi increase in
+the vicinity of NHE1 and thereby sensitizes CaN bound to NHE1 by increasing its catalytic activity and Ca2+ sensitivity to CaM. In this ﬁgure, it should be noted that signaling from
+only the Gq-coupled receptor is illustrated, although regulation of NHE1 would be more complex.
+
+Furthermore, the [Na+]i rise was recently postulated to activate
+salt-inducible kinase 1, which potentiates hypertrophic gene expres-
+sion [127]. Thus, [Na+]i and subsequent [Ca2+]i increase by NHE1 acti-
+vation appears to play a role in cardiac remodeling by promoting ionic
+change.
+
+In addition to [Na+]i elevation, increase in pHi is another impor-
+tant ionic event caused by NHE1 activation and may also contribute
+to cardiac remodeling. Elevated pHi activates various enzymes, in-
+cluding protein kinases and phosphatases, and is therefore generally
+expected to promote hypertrophic responses such as protein syn-
+thesis. The pHi in cardiomyocytes is ﬁnely regulated by various pH-
+
+regulating transporters, including acid extruders and acid loaders
+[128]. Therefore, in the presence of bicarbonates, H+ extrusion ac-
+celerated by NHE1 is rapidly compensated by acid loading through
+other anion transporters; NHE1-induced cytoplasmic alkalinization
+may thus be negligible. Indeed, bulk pHi elevation was hardly detected
+in cardiomyocytes isolated from NHE1 transgenic mice with physiolog-
+ical buffer containing bicarbonate [73], further supporting that pHi
+increase does not appear to contribute largely to NHE1-dependent
+hypertrophy. However, rapid H+ extrusion by activated NHE1 may
+produce a high-pH microenvironment in the vicinity of NHE1, dis-
+tinct from the bulk pHi. Several studies have reported that NHE1
+
+74
+
+S. Wakabayashi et al. / Journal of Molecular and Cellular Cardiology 61 (2013) 68–76
+
+exists at least in part as a cluster in lipid rafts in the plasma membrane
+[48,129–133] and produces a high pH microdomain in oligodendrites
+[134]. Further, NHE1 has been proposed to function as a plasma mem-
+brane scaffold in the assembly of signaling complexes [135]. In fact,
+NHE1 can produce a local pHi gradient of up to 0.2 pH units in
+cardiomyocytes [128]. This gradient would be more prevalent at par-
+ticular sites such as lipid rafts expressing clustered NHE1 [48,129–133]
+or at the intercalated disc regions of the cardiomyocytes showing the
+high-density expression of NHE1 [136]. Therefore, pH-sensitive en-
+zymes that directly bind to NHE1 or exist in close contact with NHE1,
+such as Ca2+-sensitive adenylyl cyclase [131], may be efﬁciently con-
+trolled through local pH elevation produced by NHE1, as compared to
+enzymes in the bulk space.
+
+Recently, the Ca2+-dependent signaling molecule CaN was identi-
+ﬁed as a direct binding partner for NHE1 [48]. The CaN-A subunit inter-
+acts with the 6-residue motif 715PVITID720 within the distal cytoplasmic
+domain of NHE1, which shares homology with the CaN-A binding site of
+NFATs (CaN-A binding consensus motif, PxIxIT) (Figs. 1A and 2D). This
+6-residue motif, which forms the β-strand, interacts with the edge of
+the β-sheet of 2 CaN-A molecules based on the structural model
+constructed from the previously solved structure [137] (Fig. 1D). This
+relatively loose interaction would allow CaN to easily separate from
+NHE1 and to move to other targets such as NFATs. The importance of
+the moderate afﬁnity of CaN against targets has recently been reported
+in the case of the scaffold protein AKAP150/79, which ampliﬁes NFAT
+signaling via direct interaction with CaN [138]. Surprisingly, CaN has re-
+markable pH sensitivity; upon pH increase from 7 to 8, CaN activity was
+found to be enhanced 8-fold in the presence of sufﬁcient Ca2+/CaM,
+while Ca2+-sensitivity to CaN increased 5-fold [48]. Overexpression of
+NHE1 enhanced the NFAT promoter activity, facilitated nuclear translo-
+cation of NFAT (Fig. 2C), and promoted cardiomyocyte hypertrophy, but
+deletion of the CaN-binding site signiﬁcantly reduced these responses
+[48], suggesting that the direct signal relay between NHE1 and CaN at
+least partly contributes to NHE1-dependent NFAT signaling. Thus,
+NHE1 appears to have a dual effect on CaN activation: 1) activation of
+bulk CaN via [Na+]i increase, followed by [Ca2+]i increase; and 2) acti-
+vation of NHE1-bound CaN by a local increase in pH, which increases
+the sensitivity of CaN to Ca2+ (Fig. 3).
+
+6. Conclusion
+
+A large body of evidence has indicated the contribution of NHE1 in
+cardiac remodeling and heart failure. In Fig. 3, we have summarized
+the relationship between NHE1 and its upstream and downstream
+target proteins leading to cardiac hypertrophy. Activation of NHE1
+can modulate Ca2+-dependent prohypertrophic signaling via changes
+in [Na+]i and pHi. The cytoplasmic domain of NHE1 appears to play 2
+important roles in this regulation: 1) regulation of NHE1 activity by re-
+ceiving upstream input signals and 2) downstream transmission of the
+ionic signal. This second role as a signal platform appears to be at-
+tributable to the distal cytoplasmic domain. Indeed, in contrast to
+the membrane-proximal cytoplasmic region, the distal region of
+NHE1 with ~130 residues (aa 686–815) is nonconservative among
+NHE isoforms, is intrinsically disordered [139], and does not have a
+great impact on the exchange activity [140]. Speciﬁc intervention
+between NHE1 and target molecules may be useful as a new thera-
+peutic strategy against heart failure because this intervention does
+not inhibit the basal exchange activity, which would be needed for
+physiological maintenance of ionic homeostasis.
+
+Acknowledgments
+
+We thank Dr. Yuji Arai for the production of transgenic mice, and
+Dr. Soichi Takeda for crystal structure determination. We also thank
+all collaborators who participated in our studies. The studies cited
+from the authors' group are supported by grants from the Ministry
+
+of Health, Labour and Welfare; the Ministry of Education, Culture,
+Sports, Science and Technology; and the National Institute of Biomed-
+ical Innovation.
+
+Conﬂicts of interest
+
+None.
+
+References
+
+[1] Wakabayashi S, Shigekawa M, Pouyssegur J. Molecular physiology of vertebrate
+
+Na+/H+ exchangers. Physiol Rev 1997;77:51–74.
+
+[2] Karmazyn M, Kilic A, Javadov S. The role of NHE-1 in myocardial hypertrophy
+
+and remodelling. J Mol Cell Cardiol 2008;44:647–53.
+
+[3] Lee BL, Sykes BD, Fliegel L. Structural analysis of the Na+/H+ exchanger isoform 1
+(NHE1) using the divide and conquer approach. Biochem Cell Biol 2011;89:189–99.
+[4] Fliegel L. Molecular biology of the myocardial Na+/H+ exchanger. J Mol Cell
+
+Cardiol 2008;44:228–37.
+
+[5] Pedersen SF, Darborg BV, Rentsch ML, Rasmussen M. Regulation of mitogen-activated
+protein kinase pathways by the plasma membrane Na+/H+ exchanger, NHE1. Arch
+Biochem Biophys 2007;462:195–201.
+
+[6] Orlowski J, Grinstein S. Diversity of the mammalian sodium/proton exchanger
+
+SLC9 gene family. Pﬂugers Arch 2004;447:549–65.
+
+[7] Donowitz M, Li X. Regulatory binding partners and complexes of NHE3. Physiol
+
+Rev 2007;87:825–72.
+
+[8] Casey JR, Grinstein S, Orlowski J. Sensors and regulators of intracellular pH. Nat
+
+Rev Mol Cell Biol 2010;11:50–61.
+
+[9] Boedtkjer E, Bunch L, Pedersen SF. Physiology, pharmacology and pathophysiol-
+ogy of the pH regulatory transport proteins NHE1 and NBCn1: similarities, dif-
+ferences, and implications for cancer therapy. Curr Pharm Des 2012;18:1345–71.
+[10] Sardet C, Franchi A, Pouyssegur J. Molecular cloning, primary structure, and expression
+
+of the human growth factor-activatable Na+/H+ antiporter. Cell 1989;56:271–80.
+
+[11] Ohgaki R, van ISC, Matsushita M, Hoekstra D, Kanazawa H. Organellar Na+/H+
+exchangers: novel players in organelle pH regulation and their emerging func-
+tions. Biochemistry (Mosc) 2011;50:443–50.
+
+[12] Orlowski J, Grinstein S. Na+/H+ exchangers of mammalian cells. J Biol Chem
+
+1997;272:22373–6.
+
+[13] Brett CL, Donowitz M, Rao R. Evolutionary origins of eukaryotic sodium/proton
+
+exchangers. Am J Physiol Cell Physiol 2005;288:C223–39.
+
+[14] Kondapalli KC, Kallay LM, Muszelik M, Rao R. Unconventional chemiosmotic
+coupling of NHA2, a mammalian Na+/H+ antiporter, to a plasma membrane
+H+ gradient. J Biol Chem 2012;287:36239–50.
+
+[15] Xiang M, Feng M, Muend S, Rao R. A human Na+/H+ antiporter sharing evolu-
+tionary origins with bacterial NhaA may be a candidate gene for essential hyper-
+tension. Proc Natl Acad Sci U S A 2007;104:18677–81.
+
+[16] Wang D, King SM, Quill TA, Doolittle LK, Garbers DL. A new sperm-speciﬁc
+Na+/H+ exchanger required for sperm motility and fertility. Nat Cell Biol
+2003;5:1117–22.
+
+[17] Wang D, Hu J, Bobulescu IA, Quill TA, McLeroy P, Moe OW, et al. A sperm-speciﬁc
+Na+/H+ exchanger (sNHE) is critical for expression and in vivo bicarbonate reg-
+ulation of the soluble adenylyl cyclase (sAC). Proc Natl Acad Sci U S A 2007;104:
+9325–30.
+
+[18] Counillon L, Franchi A, Pouyssegur J. A point mutation of the Na+/H+ exchanger
+gene (NHE1) and ampliﬁcation of the mutated allele confer amiloride resistance
+upon chronic acidosis. Proc Natl Acad Sci U S A 1993;90:4508–12.
+
+[19] Counillon L, Noel J, Reithmeier RA, Pouyssegur J. Random mutagenesis reveals a
+novel site involved in inhibitor interaction within the fourth transmembrane
+segment of the Na+/H+ exchanger-1. Biochemistry (Mosc) 1997;36:2951–9.
+
+[20] Orlowski J, Kandasamy RA. Delineation of transmembrane domains of the Na+/H+
+exchanger that confer sensitivity to pharmacological antagonists. J Biol Chem
+1996;271:19922–7.
+
+[21] Wakabayashi S, Pang T, Su X, Shigekawa M. A novel topology model of the
+
+human Na+/H+ exchanger isoform 1. J Biol Chem 2000;275:7942–9.
+
+[22] Nygaard EB, Lagerstedt JO, Bjerre G, Shi B, Budamagunta M, Poulsen KA, et al.
+Structural modeling and electron paramagnetic resonance spectroscopy of the
+human Na+/H+ exchanger isoform 1, NHE1. J Biol Chem 2011;286:634–48.
+
+[23] Landau M, Herz K, Padan E, Ben-Tal N. Model structure of the Na+/H+ exchanger
+1 (NHE1): functional and clinical implications. J Biol Chem 2007;282:37854–63.
+[24] Williams KA. Three-dimensional structure of the ion-coupled transport protein
+
+NhaA. Nature 2000;403:112–5.
+
+[25] Miyazaki E, Sakaguchi M, Wakabayashi S, Shigekawa M, Mihara K. NHE6 protein
+possesses a signal peptide destined for endoplasmic reticulum membrane and
+localizes in secretory organelles of the cell. J Biol Chem 2001;276:49221–7.
+
+[26] Fliegel L, Haworth RS, Dyck JR. Characterization of the placental brush border
+membrane Na+/H+ exchanger: identiﬁcation of thiol-dependent transitions in
+apparent molecular size. Biochem J 1993;289(Pt 1):101–7.
+
+[27] Hisamitsu T, Pang T, Shigekawa M, Wakabayashi S. Dimeric interaction between
+the cytoplasmic domains of the Na+/H+ exchanger NHE1 revealed by symmet-
+rical intermolecular cross-linking and selective co-immunoprecipitation. Bio-
+chemistry (Mosc) 2004;43:11135–43.
+
+[28] Fafournoux P, Noel J, Pouyssegur J. Evidence that Na+/H+ exchanger isoforms
+NHE1 and NHE3 exist as stable dimers in membranes with a high degree of spec-
+iﬁcity for homodimers. J Biol Chem 1994;269:2589–96.
+
+S. Wakabayashi et al. / Journal of Molecular and Cellular Cardiology 61 (2013) 68–76
+
+75
+
+[29] Moncoq K, Kemp G, Li X, Fliegel L, Young HS. Dimeric structure of human Na+/H+ ex-
+changer isoform 1 overproduced in Saccharomyces cerevisiae. J Biol Chem 2008;283:
+4145–54.
+
+[30] Hisamitsu T, Ben Ammar Y, Nakamura TY, Wakabayashi S. Dimerization is crucial
+for the function of the Na+/H+ exchanger NHE1. Biochemistry (Mosc) 2006;45:
+13346–55.
+
+[31] Fuster D, Moe OW, Hilgemann DW. Steady-state function of the ubiquitous
+mammalian Na/H exchanger (NHE1) in relation to dimer coupling models
+with 2Na/2H stoichiometry. J Gen Physiol 2008;132:465–80.
+
+[32] Aronson PS, Nee J, Suhm MA. Modiﬁer role of internal H+ in activating the Na+–H+
+
+exchanger in renal microvillus membrane vesicles. Nature 1982;299:161–3.
+
+[33] Wakabayashi S, Hisamitsu T, Pang T, Shigekawa M. Kinetic dissection of two dis-
+tinct proton binding sites in Na+/H+ exchangers by measurement of reverse
+mode reaction. J Biol Chem 2003;278:43580–5.
+
+[34] Lacroix J, Poet M, Maehrel C, Counillon L. A mechanism for the activation of the
+Na/H exchanger NHE-1 by cytoplasmic acidiﬁcation and mitogens. EMBO Rep
+2004;5:91–6.
+
+[35] Lacroix J, Poet M, Huc L, Morello V, Djerbi N, Ragno M, et al. Kinetic analysis of
+the regulation of the Na+/H+ exchanger NHE-1 by osmotic shocks. Biochemistry
+(Mosc) 2008;47:13674–85.
+
+[36] Wakabayashi S, Hisamitsu T, Pang T, Shigekawa M. Mutations of Arg440 and
+Gly455/Gly456 oppositely change pH sensing of Na+/H+ exchanger 1. J Biol Chem
+2003;278:11828–35.
+
+[37] Hisamitsu T, Yamada K, Nakamura TY, Wakabayashi S. Functional importance of
+charged residues within the putative intracellular loops in pH regulation by
+Na+/H+ exchanger NHE1. FEBS J 2007;274:4326–35.
+
+[38] Bertrand B, Wakabayashi S, Ikeda T, Pouyssegur J, Shigekawa M. The Na+/H+
+exchanger isoform 1 (NHE1) is a novel member of the calmodulin-binding
+proteins. Identiﬁcation and characterization of calmodulin-binding sites. J Biol
+Chem 1994;269:13703–9.
+
+[39] Lin X, Barber DL. A calcineurin homologous protein inhibits GTPase-stimulated
+
+Na–H exchange. Proc Natl Acad Sci U S A 1996;93:12631–6.
+
+[40] Denker SP, Huang DC, Orlowski J, Furthmayr H, Barber DL. Direct binding of the
+Na–H exchanger NHE1 to ERM proteins regulates the cortical cytoskeleton and
+cell shape independently of H+ translocation. Mol Cell 2000;6:1425–36.
+
+[41] Lehoux S, Abe J, Florian JA, Berk BC. 14-3-3 binding to Na+/H+ exchanger
+isoform-1 is associated with serum-dependent activation of Na+/H+ exchange.
+J Biol Chem 2001;276:15794–800.
+
+[42] Li X, Alvarez B, Casey JR, Reithmeier RA, Fliegel L. Carbonic anhydrase II binds to and
+
+enhances activity of the Na+/H+ exchanger. J Biol Chem 2002;277:36085–91.
+
+[43] Yan W, Nehrke K, Choi J, Barber DL. The Nck-interacting kinase (NIK) phosphor-
+ylates the Na+–H+ exchanger NHE1 and regulates NHE1 activation by platelet-
+derived growth factor. J Biol Chem 2001;276:31349–56.
+
+[44] Xue J, Zhou D, Yao H, Gavrialov O, McConnell MJ, Gelb BD, et al. Novel functional
+interaction between Na+/H+ exchanger 1 and tyrosine phosphatase SHP-2. Am J
+Physiol Regul Integr Comp Physiol 2007;292:R2406–16.
+
+[45] Simonin A, Fuster D. Nedd4-1 and beta-arrestin-1 are key regulators of Na+/H+
+exchanger 1 ubiquitylation, endocytosis, and function. J Biol Chem 2010;285:
+38293–303.
+
+[46] Jung YS, Kim HY, Kim J, Lee MG, Pouyssegur J, Kim E. Physical interactions and
+functional coupling between Daxx and sodium hydrogen exchanger 1 in ische-
+mic cell death. J Biol Chem 2008;283:1018–25.
+
+[47] Karki P, Li X, Schrama D, Fliegel L. B-Raf associates with and activates the NHE1
+
+isoform of the Na+/H+ exchanger. J Biol Chem 2011;286:13096–105.
+
+[48] Hisamitsu T, Nakamura TY, Wakabayashi S. Na+/H+ exchanger 1 directly binds to
+calcineurin A and activates downstream NFAT signaling, leading to cardiomyocyte
+hypertrophy. Mol Cell Biol 2012;32:3265–80.
+
+[49] Takahashi E, Abe J, Gallis B, Aebersold R, Spring DJ, Krebs EG, et al. p90(RSK) is a
+serum-stimulated Na+/H+ exchanger isoform-1 kinase. Regulatory phosphorylation
+of serine 703 of Na+/H+ exchanger isoform-1. J Biol Chem 1999;274:20206–14.
+
+[50] Meima ME, Webb BA, Witkowska HE, Barber DL. The sodium-hydrogen ex-
+changer NHE1 is an Akt substrate necessary for actin ﬁlament reorganization
+by growth factors. J Biol Chem 2009;284:26666–75.
+
+[51] Snabaitis AK, Cuello F, Avkiran M. Protein kinase B/Akt phosphorylates and in-
+
+hibits the cardiac Na+/H+ exchanger NHE1. Circ Res 2008;103:881–90.
+
+[52] Khaled AR, Moor AN, Li A, Kim K, Ferris DK, Muegge K, et al. Trophic factor
+withdrawal: p38 mitogen-activated protein kinase activates NHE1, which in-
+duces intracellular alkalinization. Mol Cell Biol 2001;21:7545–57.
+
+[53] Malo ME, Li L, Fliegel L. Mitogen-activated protein kinase-dependent activation
+of the Na+/H+ exchanger is mediated through phosphorylation of amino acids
+Ser770 and Ser771. J Biol Chem 2007;282:6292–9.
+
+[54] Grenier AL, Abu-ihweij K, Zhang G, Ruppert SM, Boohaker R, Slepkov ER, et al.
+Apoptosis-induced alkalinization by the Na+/H+ exchanger isoform 1 is medi-
+ated through phosphorylation of amino acids Ser726 and Ser729. Am J Physiol
+Cell Physiol 2008;295:C883–96.
+
+[55] Ikeda T, Schmitt B, Pouyssegur J, Wakabayashi S, Shigekawa M. Identiﬁcation of
+cytoplasmic subdomains that control pH-sensing of the Na+/H+ exchanger
+(NHE1): pH-maintenance, ATP-sensitive, and ﬂexible loop domains. J Biochem
+1997;121:295–303.
+
+[56] Di Sole F, Vadnagara K, Moe OW, Babich V. Calcineurin homologous protein: a
+multifunctional Ca2+-binding protein family. Am J Physiol Renal Physiol 2012;303:
+F165–79.
+
+[57] Matsumoto M, Miyake Y, Nagita M, Inoue H, Shitakubo D, Takemoto K, et al. A
+serine/threonine kinase which causes apoptosis-like cell death interacts with a
+calcineurin B-like protein capable of binding Na+/H+ exchanger. J Biochem
+2001;130:217–25.
+
+[58] Goss G, Orlowski J, Grinstein S. Coimmunoprecipitation of a 24-kDa protein with
+NHE1, the ubiquitous isoform of the Na+/H+ exchanger. Am J Physiol 1996;270:
+C1493–502.
+
+[59] Barroso MR, Bernd KK, DeWitt ND, Chang A, Mills K, Sztul ES. A novel Ca2+-binding
+protein, p22, is required for constitutive membrane trafﬁc. J Biol Chem 1996;271:
+10183–7.
+
+[60] Inoue H, Nakamura Y, Nagita M, Takai T, Masuda M, Nakamura N, et al. Calcineurin
+homologous protein isoform 2 (CHP2), Na+/H+ exchangers-binding protein, is
+expressed in intestinal epithelium. Biol Pharm Bull 2003;26:148–55.
+
+[61] Pang T, Wakabayashi S, Shigekawa M. Expression of calcineurin B homologous
+protein 2 protects serum deprivation-induced cell death by serum-independent ac-
+tivation of Na+/H+ exchanger. J Biol Chem 2002;277:43771–7.
+
+[62] Perera EM, Martin H, Seeherunvong T, Kos L, Hughes IA, Hawkins JR, et al.
+Tescalcin, a novel gene encoding a putative EF-hand Ca2+-binding protein,
+Col9a3, and renin are expressed in the mouse testis during the early stages of go-
+nadal differentiation. Endocrinology 2001;142:455–63.
+
+[63] Mailander J, Muller-Esterl W, Dedio J. Human homolog of mouse tescalcin asso-
+
+ciates with Na+/H+ exchanger type-1. FEBS Lett 2001;507:331–5.
+
+[64] Gutierrez-Ford C, Levay K, Gomes AV, Perera EM, Som T, Kim YM, et al. Characteri-
+zation of tescalcin, a novel EF-hand protein with a single Ca2+-binding site:
+metal-binding properties, localization in tissues and cells, and effect on calcineurin.
+Biochemistry (Mosc) 2003;42:14553–65.
+
+[65] Ammar YB, Takeda S, Hisamitsu T, Mori H, Wakabayashi S. Crystal structure of
+CHP2 complexed with NHE1-cytosolic region and an implication for pH regula-
+tion. EMBO J 2006;25:2315–25.
+
+[66] Mishima M, Wakabayashi S, Kojima C. Solution structure of the cytoplasmic re-
+gion of Na+/H+ exchanger 1 complexed with essential cofactor calcineurin B ho-
+mologous protein 1. J Biol Chem 2007;282:2741–51.
+
+[67] Pang T, Hisamitsu T, Mori H, Shigekawa M, Wakabayashi S. Role of calcineurin B ho-
+mologous protein in pH regulation by the Na+/H+ exchanger 1: tightly bound Ca2+
+ions as important structural elements. Biochemistry (Mosc) 2004;43:3628–36.
+
+[68] Pang T, Su X, Wakabayashi S, Shigekawa M. Calcineurin homologous protein as
+an essential cofactor for Na+/H+ exchangers. J Biol Chem 2001;276:17367–72.
+[69] Matsushita M, Tanaka H, Mitsui K, Kanazawa H. Dual functional signiﬁcance of
+calcineurin homologous protein 1 binding to Na+/H+ exchanger isoform 1.
+Am J Physiol Cell Physiol 2011;301:C280–8.
+
+[70] Matsushita M, Sano Y, Yokoyama S, Takai T, Inoue H, Mitsui K, et al. Loss of
+calcineurin homologous protein-1 in chicken B lymphoma DT40 cells destabilizes
+Na+/H+ exchanger isoform-1 protein. Am J Physiol Cell Physiol 2007;293:C246–54.
+[71] Zaun HC, Shrier A, Orlowski J. Calcineurin B homologous protein 3 promotes the
+biosynthetic maturation, cell surface stability, and optimal transport of the
+Na+/H+ exchanger NHE1 isoform. J Biol Chem 2008;283:12456–67.
+
+[72] Zaun HC, Shrier A, Orlowski J. N-myristoylation and Ca2+ binding of calcineurin
+B homologous protein CHP3 are required to enhance Na+/H+ exchanger NHE1
+half-life and activity at the plasma membrane. J Biol Chem 2012;287:36883–95.
+[73] Nakamura TY, Iwata Y, Arai Y, Komamura K, Wakabayashi S. Activation of
+Na+/H+ exchanger 1 is sufﬁcient to generate Ca2+ signals that induce cardiac
+hypertrophy and heart failure. Circ Res 2008;103:891–9.
+
+[74] Taylor CW. Controlling calcium entry. Cell 2002;111:767–9.
+[75] Wakabayashi S, Bertrand B, Ikeda T, Pouyssegur J, Shigekawa M. Mutation of
+calmodulin-binding site renders the Na+/H+ exchanger (NHE1) highly H+-sen-
+sitive and Ca2+ regulation-defective. J Biol Chem 1994;269:13710–5.
+
+[76] Wakabayashi S, Bertrand B, Shigekawa M, Fafournoux P, Pouyssegur J. Growth fac-
+tor activation and “H+-sensing” of the Na+/H+ exchanger isoform 1 (NHE1). Evi-
+dence for an additional mechanism not requiring direct phosphorylation. J Biol
+Chem 1994;269:5583–8.
+
+[77] Wakabayashi S, Ikeda T, Iwamoto T, Pouyssegur J, Shigekawa M. Calmodulin-binding
+autoinhibitory domain controls “pH-sensing” in the Na+/H+ exchanger NHE1
+through sequence-speciﬁc interaction. Biochemistry (Mosc) 1997;36:12854–61.
+
+[78] Eguti DM, Thieme K, Leung GP, Mello-Aires M, Oliveira-Souza M. Regulation of
+Na+/H+ exchanger isoform 1 (NHE1) by calmodulin-binding sites: role of angio-
+tensin II. Cell Physiol Biochem 2010;26:541–52.
+
+[79] Koster S, Pavkov-Keller T, Kuhlbrandt W, Yildiz O. Structure of human Na+/H+
+exchanger NHE1 regulatory region in complex with calmodulin and Ca2+. J
+Biol Chem 2011;286:40954–61.
+
+[80] Garnovskaya MN, Mukhin YV, Turner JH, Vlasova TM, Ullian ME, Raymond JR.
+Mitogen-induced activation of Na+/H+ exchange in vascular smooth muscle cells in-
+volves Janus kinase 2 and Ca2+/calmodulin. Biochemistry (Mosc) 2003;42:7178–87.
+[81] Mukhin YV, Vlasova T, Jaffa AA, Collinsworth G, Bell JL, Tholanikunnel BG, et al.
+Bradykinin B2 receptors activate Na+/H+ exchange in mIMCD-3 cells via Janus
+kinase 2 and Ca2+/calmodulin. J Biol Chem 2001;276:17339–46.
+
+[82] Turner JH, Garnovskaya MN, Coaxum SD, Vlasova TM, Yakutovich M, Leﬂer DM, et al.
+Ca2+-calmodulin and Janus kinase 2 are required for activation of sodium-proton ex-
+change by the gi-coupled 5-hydroxytryptamine1a receptor. J Pharmacol Exp Ther
+2007;320:314–22.
+
+[83] Hilgemann DW, Ball R. Regulation of cardiac Na+, Ca2+ exchange and KATP
+
+potassium channels by PIP2. Science 1996;273:956–9.
+
+[84] Aharonovitz O, Zaun HC, Balla T, York JD, Orlowski J, Grinstein S. Intracellular pH
+regulation by Na+/H+ exchange requires phosphatidylinositol 4,5-bisphosphate. J
+Cell Biol 2000;150:213–24.
+
+[85] Aharonovitz O, Demaurex N, Woodside M, Grinstein S. ATP dependence is not an
+intrinsic property of Na+/H+ exchanger NHE1: requirement for an ancillary fac-
+tor. Am J Physiol 1999;276:C1303–11.
+
+[86] Fuster D, Moe OW, Hilgemann DW. Lipid- and mechanosensitivities of
+sodium/hydrogen exchangers analyzed by electrical methods. Proc Natl Acad Sci
+U S A 2004;101:10482–7.
+
+76
+
+S. Wakabayashi et al. / Journal of Molecular and Cellular Cardiology 61 (2013) 68–76
+
+[87] Abu Jawdeh BG, Khan S, Deschenes I, Hoshi M, Goel M, Lock JT, et al. Phosphoinositide
+binding differentially regulates NHE1 Na+/H+ exchanger-dependent proximal tu-
+bule cell survival. J Biol Chem 2011;286:42435–45.
+
+[88] Mohan S, Tse CM, Gabelli SB, Sarker R, Cha B, Fahie K, et al. NHE3 activity is de-
+pendent on direct phosphoinositide binding at the N terminus of its intracellular
+cytosolic region. J Biol Chem 2010;285:34566–78.
+
+[89] Alexander RT, Jaumouille V, Yeung T, Furuya W, Peltekova I, Boucher A, et al.
+Membrane surface charge dictates the structure and function of the epithelial
+Na+/H+ exchanger. EMBO J 2011;30:679–91.
+
+[90] Wakabayashi S, Nakamura TY, Kobayashi S, Hisamitsu T. Novel phorbol ester-binding
+motif mediates hormonal activation of Na+/H+ exchanger. J Biol Chem 2010;285:
+26652–61.
+
+[91] van Meer G, Voelker DR, Feigenson GW. Membrane lipids: where they are and
+
+how they behave. Nat Rev Mol Cell Biol 2008;9:112–24.
+
+[92] Karmazyn M, Gan XT, Humphreys RA, Yoshida H, Kusumoto K. The myocardial
+Na+–H+ exchange: structure, regulation, and its role in heart disease. Circ Res
+1999;85:777–86.
+
+[93] Scholz W, Albus U, Counillon L, Gogelein H, Lang HJ, Linz W, et al. Protective ef-
+fects of HOE642, a selective sodium-hydrogen exchange subtype 1 inhibitor, on
+cardiac ischaemia and reperfusion. Cardiovasc Res 1995;29:260–8.
+
+[94] Gumina RJ, Mizumura T, Beier N, Schelling P, Schultz JJ, Gross GJ. A new
+sodium/hydrogen exchange inhibitor, EMD 85131, limits infarct size in dogs
+when administered before or after coronary artery occlusion. J Pharmacol Exp
+Ther 1998;286:175–83.
+
+[95] Knight DR, Smith AH, Flynn DM, MacAndrew JT, Ellery SS, Kong JX, et al. A novel
+sodium-hydrogen exchanger isoform-1 inhibitor, zoniporide, reduces ischemic
+myocardial injury in vitro and in vivo. J Pharmacol Exp Ther 2001;297:254–9.
+
+[96] Avkiran M. Protection of the myocardium during ischemia and reperfusion:
+Na+/H+ exchange inhibition versus ischemic preconditioning. Circulation
+1999;100:2469–72.
+
+[97] Clements-Jewery H, Sutherland FJ, Allen MC, Tracey WR, Avkiran M. Cardioprotective
+efﬁcacy of zoniporide, a potent and selective inhibitor of Na+/H+ exchanger isoform
+1, in an experimental model of cardiopulmonary bypass. Br J Pharmacol 2004;142:
+57–66.
+
+[98] Wang Y, Meyer JW, Ashraf M, Shull GE. Mice with a null mutation in the NHE1
+Na+–H+ exchanger are resistant to cardiac ischemia-reperfusion injury. Circ
+Res 2003;93:776–82.
+
+[99] Cook AR, Bardswell SC, Pretheshan S, Dighe K, Kanaganayagam GS, Jabr RI, et al.
+Paradoxical resistance to myocardial ischemia and age-related cardiomyopathy
+in NHE1 transgenic mice: a role for ER stress? J Mol Cell Cardiol 2009;46:225–33.
+[100] Perez NG, Alvarez BV. Camilion de Hurtado MC, Cingolani HE. pHi regulation in
+myocardium of the spontaneously hypertensive rat. Compensated enhanced ac-
+tivity of the Na+–H+ exchanger. Circ Res 1995;77:1192–200.
+
+[101] Darmellah A, Baetz D, Prunier F, Tamareille S, Rucker-Martin C, Feuvray D. En-
+hanced activity of the myocardial Na+/H+ exchanger contributes to left ventric-
+ular hypertrophy in the Goto-Kakizaki rat model of type 2 diabetes: critical role
+of Akt. Diabetologia 2007;50:1335–44.
+
+[102] Kilic A, Velic A, De Windt LJ, Fabritz L, Voss M, Mitko D, et al. Enhanced activity
+of the myocardial Na+/H+ exchanger NHE-1 contributes to cardiac remodeling
+in atrial natriuretic peptide receptor-deﬁcient mice. Circulation 2005;112:
+2307–17.
+
+[103] Engelhardt S, Hein L, Keller U, Klambt K, Lohse MJ. Inhibition of Na+–H+ ex-
+change prevents hypertrophy, ﬁbrosis, and heart failure in beta1-adrenergic re-
+ceptor transgenic mice. Circ Res 2002;90:814–9.
+
+[104] Aker S, Snabaitis AK, Konietzka I, Van De Sand A, Bongler K, Avkiran M, et al.
+Inhibition of the Na+/H+ exchanger attenuates the deterioration of ventric-
+ular function during pacing-induced heart failure in rabbits. Cardiovasc Res
+2004;63:273–82.
+
+[105] Garciarena CD, Caldiz CI, Portiansky EL. Chiappe de Cingolani GE, Ennis IL. Chronic
+NHE-1 blockade induces an antiapoptotic effect in the hypertrophied heart. J Appl
+Physiol 2009;106:1325–31.
+
+[106] Yokoyama H, Gunasegaram S, Harding SE, Avkiran M. Sarcolemmal Na+/H+ ex-
+changer activity and expression in human ventricular myocardium. J Am Coll
+Cardiol 2000;36:534–40.
+
+[107] Mraiche F, Oka T, Gan XT, Karmazyn M, Fliegel L. Activated NHE1 is required to
+induce early cardiac hypertrophy in mice. Basic Res Cardiol 2011;106:603–16.
+[108] Khandoudi N, Ho J, Karmazyn M. Role of Na+–H+ exchange in mediating effects of
+endothelin-1 on normal and ischemic/reperfused hearts. Circ Res 1994;75:369–78.
+[109] Matsui H, Barry WH, Livsey C, Spitzer KW. Angiotensin II stimulates sodium-hydrogen
+
+exchange in adult rabbit ventricular myocytes. Cardiovasc Res 1995;29:215–21.
+
+[110] Wallert MA, Frohlich O. Alpha 1-adrenergic stimulation of Na–H exchange in
+
+cardiac myocytes. Am J Physiol 1992;263:C1096–102.
+
+[111] Cingolani HE, Perez NG, Pieske B, von Lewinski D, Camilion de Hurtado MC.
+Stretch-elicited Na+/H+ exchanger activation: the autocrine/paracrine loop
+and its mechanical counterpart. Cardiovasc Res 2003;57:953–60.
+
+[112] von Lewinski D, Stumme B, Maier LS, Luers C, Bers DM, Pieske B. Stretch-dependent
+slow force response in isolated rabbit myocardium is Na+ dependent. Cardiovasc
+Res 2003;57:1052–61.
+
+[113] Cingolani HE, Alvarez BV, Ennis IL, Camilion de Hurtado MC. Stretch-induced al-
+kalinization of feline papillary muscle: an autocrine–paracrine system. Circ Res
+1998;83:775–80.
+
+[114] Karmazyn M. The role of the myocardial sodium-hydrogen exchanger in mediat-
+ing ischemic and reperfusion injury. From amiloride to cariporide. Ann N Y Acad
+Sci 1999;874:326–34.
+
+[115] Alvarez BV, Perez NG, Ennis IL, Camilion de Hurtado MC, Cingolani HE. Mecha-
+nisms underlying the increase in force and Ca2+ transient that follow stretch
+of cardiac muscle: a possible explanation of the Anrep effect. Circ Res 1999;85:
+716–22.
+
+[116] Bers DM, Barry WH, Despa S. Intracellular Na+ regulation in cardiac myocytes.
+
+Cardiovasc Res 2003;57:897–912.
+
+[117] Baartscheer A, van Borren MM. Sodium ion transporters as new therapeutic tar-
+
+gets in heart failure. Cardiovasc Hematol Agents Med Chem 2008;6:229–36.
+
+[118] Perez NG, de Hurtado MC, Cingolani HE. Reverse mode of the Na+–Ca2+ exchange
+after myocardial stretch: underlying mechanism of the slow force response. Circ
+Res 2001;88:376–82.
+
+[119] Schafer M, Schafer C, Michael Piper H, Schluter KD. Hypertrophic responsive-
+ness of cardiomyocytes to alpha- or beta-adrenoceptor stimulation requires
+sodium-proton-exchanger-1 (NHE-1) activation but not cellular alkalization.
+Eur J Heart Fail 2002;4:249–54.
+
+[120] Baartscheer A. Chronic inhibition of Na+/H+-exchanger in the heart. Curr Vasc
+
+Pharmacol 2006;4:23–9.
+
+[121] Dulce RA, Hurtado C, Ennis IL, Garciarena CD, Alvarez MC, Caldiz C, et al.
+Endothelin-1 induced hypertrophic effect in neonatal rat cardiomyocytes: in-
+volvement of Na+/H+ and Na+/Ca2+ exchangers. J Mol Cell Cardiol 2006;41:
+807–15.
+
+[122] Baartscheer A, Schumacher CA, van Borren MM, Belterman CN, Coronel R, Fiolet JW.
+Increased Na+/H+-exchange activity is the cause of increased [Na+]i and underlies
+disturbed calcium handling in the rabbit pressure and volume overload heart fail-
+ure model. Cardiovasc Res 2003;57:1015–24.
+
+[123] Heineke J, Molkentin JD. Regulation of cardiac hypertrophy by intracellular sig-
+
+nalling pathways. Nat Rev Mol Cell Biol 2006;7:589–600.
+
+[124] Backs J, Song K, Bezprozvannaya S, Chang S, Olson EN. CaM kinase II selectively
+signals to histone deacetylase 4 during cardiomyocyte hypertrophy. J Clin Invest
+2006;116:1853–64.
+
+[125] Ennis IL, Garciarena CD, Escudero EM, Perez NG, Dulce RA, Camilion de Hurtado
+MC, et al. Normalization of the calcineurin pathway underlies the regression of
+hypertensive hypertrophy induced by Na+/H+ exchanger-1 (NHE-1) inhibition.
+Can J Physiol Pharmacol 2007;85:301–10.
+
+[126] Guo J, Gan XT, Haist JV, Rajapurohitam V, Zeidan A, Faruq NS, et al. Ginseng in-
+hibits cardiomyocyte hypertrophy and heart failure via NHE-1 inhibition and at-
+tenuation of calcineurin activation. Circ Heart Fail 2011;4:79–88.
+
+[127] Popov S, Venetsanou K, Chedrese PJ, Pinto V, Takemori H, Franco-Cereceda A,
+et al. Increases in intracellular sodium activate transcription and gene expres-
+sion via the salt-inducible kinase 1 network in an atrial myocyte cell line. Am J
+Physiol Heart Circ Physiol 2012;303:H57–65.
+
+[128] Vaughan-Jones RD, Spitzer KW, Swietach P. Intracellular pH regulation in heart. J
+
+Mol Cell Cardiol 2009;46:318–31.
+
+[129] Park JH, Ryu JM, Yun SP, Kim MO, Han HJ. Fibronectin stimulates migration
+through lipid raft dependent NHE-1 activation in mouse embryonic stem cells:
+involvement of RhoA, Ca2+/CaM, and ERK. Biochim Biophys Acta 1820;2012:
+1618–27.
+
+[130] Yi YH, Ho PY, Chen TW, Lin WJ, Gukassyan V, Tsai TH, et al. Membrane
+targeting and coupling of NHE1-integrinalphaIIbbeta3-NCX1 by lipid rafts fol-
+lowing integrin-ligand interactions trigger Ca2+ oscillations. J Biol Chem 2009;284:
+3855–64.
+
+[131] Willoughby D, Masada N, Crossthwaite AJ, Ciruela A, Cooper DM. Localized Na+/H+
+exchanger 1 expression protects Ca2+-regulated adenylyl cyclases from changes in
+intracellular pH. J Biol Chem 2005;280:30864–72.
+
+[132] Tekpli X, Huc L, Lacroix J, Rissel M, Poet M, Noel J, et al. Regulation of Na+/H+ ex-
+changer 1 allosteric balance by its localization in cholesterol- and caveolin-rich
+membrane microdomains. J Cell Physiol 2008;216:207–20.
+
+[133] Bullis BL, Li X, Singh DN, Berthiaume LG, Fliegel L. Properties of the Na+/H+ exchang-
+er protein. Detergent-resistant aggregation and membrane microdistribution. Eur J
+Biochem 2002;269:4887–95.
+
+[134] Ro HA, Carson JH. pH microdomains in oligodendrocytes. J Biol Chem 2004;279:
+
+37115–23.
+
+[135] Baumgartner M, Patel H, Barber DL. Na+/H+ exchanger NHE1 as plasma mem-
+brane scaffold in the assembly of signaling complexes. Am J Physiol Cell Physiol
+2004;287:C844–50.
+
+[136] Petrecca K, Atanasiu R, Grinstein S, Orlowski J, Shrier A. Subcellular localization
+of the Na+/H+ exchanger NHE1 in rat myocardium. Am J Physiol 1999;276:
+H709–17.
+
+[137] Li H, Zhang L, Rao A, Harrison SC, Hogan PG. Structure of calcineurin in complex
+with PVIVIT peptide: portrait of a low-afﬁnity signalling interaction. J Mol Biol
+2007;369:1296–306.
+
+[138] Li H, Pink MD, Murphy JG, Stein A, Dell'Acqua ML, Hogan PG. Balanced interac-
+tions of calcineurin with AKAP79 regulate Ca2+-calcineurin-NFAT signaling.
+Nat Struct Mol Biol 2012;19:337–45.
+
+[139] Norholm AB, Hendus-Altenburger R, Bjerre G, Kjaergaard M, Pedersen SF,
+Kragelund BB. The intracellular distal tail of the Na+/H+ exchanger NHE1 is in-
+trinsically disordered: implications for NHE1 trafﬁcking. Biochemistry (Mosc)
+2011;50:3469–80.
+
+[140] Wakabayashi S, Fafournoux P, Sardet C, Pouyssegur J. The Na+/H+ antiporter cy-
+toplasmic domain mediates growth factor signals and controls “H+-sensing”.
+Proc Natl Acad Sci U S A 1992;89:2424–8.
+
+[141] Takeda-Shitaka M, Terashi G, Chiba C, Takaya D, Umeyama H. FAMS complex: a
+fully automated homology modeling system for protein complex structures.
+Med Chem 2006;2:191–201.
+
+

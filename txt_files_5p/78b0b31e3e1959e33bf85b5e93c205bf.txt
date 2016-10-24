@@ -1,0 +1,1162 @@
+168 
+
+7  Die  Beschreibung 
+
+von 
+
+Verteilungen 
+
+Kuchendiagramme  sind  in   Stata  ähnlich  wie  Balkendiagramme 
+
+i m p l e m e n t i e r t.  W ie 
+bei  Balkendiagrammen   m ü s s en  z u n ä c h st   D u m m y - V a r i a b l en  erzeugt  werden.  Sie   k ö n n en 
+auch  hier  m it  der  O p t i on  b y ()  Kuchendiagramme 
+anfordern. 
+
+für  unterschiedliche  T e i l g r u p p en 
+
+. graph pie pid*,  by(sex) 
+
+7.2.2.4  Dot-Chart 
+
+Dot-Charts  wurden  von  Cleveland  (1984)  zur  grafischen  Darstellung  von  D a t en  m it  l a n(cid:173)
+gen  Value-Labeln  entwickelt.  In  Experimenten   haben  Sie  sich  im  Vergleich  zu  B a l k e n-
+Diagrammen  in   verschiedener  Hinsicht  als  vorteilhaft  erwiesen.  Dennoch  werden  D o t-
+Charts  nur  selten  in  der  wissenschaftlichen  L i t e r a t ur   oder  der  Presse  verwendet.  Dies 
+liegt  wahrscheinlich  daran,  dass  Dot-Charts 
+mentiert  sind. 
+
+in  vielen  Software-Paketen  nicht  i m p l e(cid:173)
+
+Das  Grundprinzip  von  Dot-Charts  ist   ähnlich  wie  das  der  Balkendiagramme.  D er 
+Unterschied  ist,  dass Dot-Charts  einen  P u n k t,  Bar-Charts  einen  Balken  zur  D a r s t e l l u ng 
+der  Statistik  verwenden.  Der   Ähnlichkeit  der  Grafiken  entspricht  die   Ä h n l i c h k e it   i h r er 
+Implementation  in   Stata.  Im  Wesentlichen  reicht  es,  das  G r a f i k - U n t e r k o m m a n do  b ar 
+mit  d ot  zu   ersetzen. Allerdings brauchen  w ir  auch  hier,  wie bei  den  B a l k e n d i a g r a m m e n, 
+Dummy-Variablen  zur  Darstellung.  E in   erster  Versuch: 
+
+. graph dot pid* 
+
+oo 
+
+° 
+
+.1 
+
+.2 
+
+.3 
+
+.4 
+
+•  meanofpidl 
+•  meanofpldS 
+*  mean ol pld5 
+o meanofpld7 
+
+•  mean of pld2 
+*  maanofpIcH 
+'  mean of pld6 
+<> mean of pida 
+
+Keine  Frage,  diese  Grafik  ist  nicht  optimal.  Aber  bevor  w ir  die  Darstellung   v e r s c h ö(cid:173)
+nern  noch  ein  allgemeiner  Hinweis.  Die  A b b i l d u ng  zeigt  für
+  jede  M a ß z a hl   ein  S y m b ol 
+auf  einer  gepunkteten  Linie.  Das  Symbol   ganz  rechts  (der  ausgefüllte  D i a m a n t)  zeigt 
+den  M i t t e l w e rt  der  Variablen  p i d 2,  was  dem   A n t e il   der  Befragten  entspricht,  die  der 
+C D U / C SU   nahestehen.  Die  anderen  Symbole  werden   entsprechend  interpretiert.  N a(cid:173)
+türlich  wäre   es  besser,  wenn  die   verschiedenen  Symbole  jeweils  auf   einer  eigenen  L i n ie 
+lägen.  W ir sollten jedoch   z u n ä c h st   festhalten,  dass man  durch  die  Verwendung  v on  S y m(cid:173)
+bolen  mehrere  Werte  auf   einer  Linie  abtragen  kann.  S p ä t e r,   wenn  w ir  die  D a r s t e l l u ng 
+von  metrischen  Variablen   beschreiben,  werden  w ir   diese  sogenannte  „ S u p e r p o s i t i o n" 
+nutzen.  Sie  eignet  sich  hervorragend  für  den  Vergleich  von  Verteilungen.  N un   aber  zu 
+
+7.3  Variablen  mit  vielen 
+
+Ausprägungen 
+
+169 
+
+dem  Verbesserungsvorschlag:  Die  O p t i on   a s c a t e g o ry   b e w i r k t,   dass  die  angegebenen 
+Variablen  als  Gruppierungsvariable  verwendet  werden.  Das  Ergebnis  sieht  dann  so  aus: 
+
+. graph dot pid*,  ascategory 
+
+meanofpidl 
+
+maan of pld2 
+
+mean ot pid3 
+
+meanofpld4 
+
+meanofpid5 
+
+meanofpld6 
+
+• 
+
+meanolpld7  • • 
+
+meanofpld8  • 
+0 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+^ 
+
+2 
+
+3 
+
+.4 
+
+A uf   der  Basis  dieser  Darstellung  kann  ein  Vergleich  zwischen   verschiedenen  Vertei(cid:173)
+lungen  wie  b e im  B a l k e n d i a g r a mm  m it  den  Optionen  o v e rO   oder  b y ()  vorgenommen 
+werden: 
+
+. graph dot pid*,  ascategory  over(sex) 
+. graph dot pid*,  ascategory  by(sex) 
+
+7.3  Variablen  mit  vielen  Ausprägungen 
+
+Zur  Darstellung  der  Verteilung  von  Variablen  m it  vielen   A u s p r ä g u n g en   werden  Tabel(cid:173)
+len,  M a ß z a h l en   oder  Grafiken  verwendet.  Bei  der  Darstellung  in  tabellarischer  Form 
+m ü s s en   die  Variablen   z u n ä c h st   gruppiert  werden.  Was  Sie  bei  der  Gruppierung  von  Va(cid:173)
+riablen  beachten  m ü s s e n,   u nd  wie  Sie  Ihre  Daten  sinnvoll gruppieren   k ö n n e n,   e r l ä u t e rn 
+wir  I h n en  in  A b s c h n i tt   7.3.1. 
+
+Im   darauf  folgenden  A b s c h n i tt   (7.3.2)  nennen  w ir  die   gängigsten  M a ß z a h l en   für  den 
+Vergleich  v on  Verteilungen  u nd  zeigen  Ihnen,  wie  Sie   diese  M a ß z a h l en   beim  Vergleich 
+von  Verteilungen  in  tabellarischer  F o rm  verwenden   k ö n n e n. 
+
+F ür   die  Darstellung  u nd  den  Vergleich  der  Verteilungen  von  Variablen  m it  vielen 
+
+A u s p r ä g u n g en   sind  Grafiken   besonders  gut  geeignet.  Einige  Beispiele  finden  Sie  in 
+A b s c h n i tt   7.3.3. 
+
+7.3.1  Häufigkeitsverteilung  gruppierter Daten 
+V a r i a b l en  m it  vielen   A u s p r ä g u n g en  k ö n n en   nur  schlecht  in  Form  von   Häufigkeitsver(cid:173)
+teilungen  dargestellt  werden.  D u r ch 
+
+.  tabulate  income 
+
+170 
+
+7  Die  Beschreibung 
+
+v o n J V ^ ^ ^n 
+
+sehen  Sie  warum:  Die   entstehenden  Tabellen  solcher  Variablen  w e r d en  zu  
+o ß  u nd 
+die  absoluten   Häufigkeiten  der  einzelnen   A u s p r ä g u n g en   zu  niedrig,  als   dass  m an   dar(cid:173)
+aus  einen  guten   Überblick  ü b er   die  V e r t e i l u ng bekommen   k ö n n t e.   F ür  die  tabellarische 
+Darstellung  einer  solchen  Verteilung  muss deshalb  erst  eine  G r u p p i e r u ng  der  M e r k m a l s(cid:173)
+a u s p r ä g u n g en   vorgenommen  werden.  D a b ei  werden   ä h n l i c he  A u s p r ä g u n g en   zusammen(cid:173)
+gefasst.  Beim  Einkommen  k ö n n te   dies  z.B.  h e i ß e n,   statt  der   H ä u f i g k e it   der  einzelnen 
+A u s p r ä g u n g en   die  Häufigkeit  der  Einkommensintervalle  [0 -  1000),  [1000  -  2000)  usw. 
+zu  betrachten.  Dies   w i rd   im  Folgenden  als   H ä u f i g k e i t s v e r t e i l u ng   g r u p p i e r t er  D a t en  be(cid:173)
+zeichnet. 
+
+g
+
+r
+
+Die  Darstellung  gruppierter  D a t en  erfolgt  in  zwei  Schritten: 
+
+1.  Erzeugung  einer  gruppierten  Version  der  darzustellenden  V a r i a b l e n. 
+
+2.  Darstellung  der  gruppierten  Version  wie  eine  Variable  m it  w e n ig   A u s p r ä g u n g e n. 
+
+Die  Erzeugung  der  gruppierten  Variablen  kann  d u r ch  die  in   K a p i t el   5  vorgestellten 
+Techniken  erfolgen.   Zusätzlich  existieren  aber  spezielle  Werkzeuge  für  diesen  Zweck. 
+Bevor  w ir Ihnen  die  Werkzeuge  vorstellen,  erlauben  Sie  uns  jedoch  einige  Bemerkungen 
+konzeptioneller  A r t. 
+
+Vorbemerkung  zur  Gruppierung  von  Variablen 
+
+Die  Gruppierung  einer  Variablen   führt  zu  einem  Informationsverlust,  der  Unterschiede 
+zwischen  Verteilungen  betonen  oder  verschleiern  kann.  Die  Entscheidung   ü b er   die  A rt 
+der  Zusammenfassung  w i ll   d a r um   sorgfältig  ü b e r l e gt   sein,  u nd  m an  sollte  sich   über 
+die  Auswirkungen  der  Gruppierung  im  K l a r en  sein.  M a n c h m al
+  h ö rt   m an  Regeln,  wie 
+z.B.  die,  „stets  gleich  große  Intervalle  zu  bilden"  oder   „keine  kategorialen  V a r i a b l en  zu 
+gruppieren". 
+
+In   der  Praxis  sind  solche  Regeln  nicht   hilfreich.  T a t s ä c h l i ch  h ä n gt   es  v on  der  Fra(cid:173)
+gestellung  einer  Analyse  ab,  ob  der  Informationsverlust  d u r ch  eine  G r u p p i e r u ng  als 
+problematisch  angesehen  werden  muss  oder  nicht.  Geht  es  z.B.  um  die  Entdeckung 
+von  Fehlern  bei  der  Dateneingabe,   g e n ü g en  häufig   die  h ö c h s t en   u nd  niedrigsten  Wer(cid:173)
+te,  und  man  kann  alle  m i t t l e r en  W e r te  zu  einem   Intervall  zusammenfassen.  Geht  es 
+darum,  die  Verteilung des  Einkommens  von  Arbeitslosen  in  D e u t s c h l a nd  m it
+  denen  in 
+Frankreich  zu  vergleichen,   w i rd   m an  v e r m u t l i ch alle  E i n k o m m en   ü b er   e i n em  bestimm(cid:173)
+ten  Betrag  zu  einer  einzigen   A u s p r ä g u ng   zusammenfassen  u nd  niedrigere  E i n k o m m en 
+relativ  feingliedrig unterteilen.   Dasselbe  gilt  auch  für  kategoriale  V a r i a b l en  m it  vielen 
+A u s p r ä g u n g e n.   Die  Variable   N a t i o n a l i t ät   kann  in  einer  Stichprobe  der   W o h n b e v ö l k e(cid:173)
+rung  der  B RD  von  hinreichender   G r ö ße   schnell  eine  A n z a hl  v on  20-30   A u s p r ä g u n g en 
+erreichen.  Auch  derartige  Variablen   lassen  sich  gruppieren,  etwa  i n d em  m an  nur  Deut(cid:173)
+sche und  Nicht-Deutsche  Befragte  unterscheidet.  Ob   diese  G r u p p i e r u ng   z w e c k m ä ß ig   ist 
+oder  nicht,  entscheidet  sich  anhand  der  Fragestellung. 
+
+Spezielle  Techniken  zur  Gruppierung  von  Variablen 
+
+Bei  der  Gruppierung  von  Variablen   muss  m an  zwischen  k o n t i n u i e r l i c h en  u nd  katego(cid:173)
+rialen  Variablen  unterscheiden.   W ä h r e nd   bei  kategorialen  V a r i a b l en  ( z . B.  N a t i o n)  die 
+
+7.3  Variablen  mit  vielen 
+
+Ausprägungen 
+
+171 
+
+Reihenfolge  der  A u s p r ä g u n g en   keine  inhaltliche Bedeutung   aufweist,  ist dies bei konti(cid:173)
+nuierlichen  Variablen  (z.B. E i n k o m m e n)   der  Fall.  Bei kategorialen  Variablen  muss m an 
+darum  für jede  A u s p r ä g u ng   einzeln  entscheiden,   ob sie m it  einer  anderen  A u s p r ä g u ng 
+zusammengefasst  werden  kann  oder  nicht.   D ie  Zusammenfassung  erfolgt  dann   m it  den 
+Techniken,  die  in   K a p i t el   5  beschrieben  wurden.   B ei  kontinuierlichen Variablen  kann 
+man  dagegen  ganze  Bereiche  aufeinanderfolgender  A u s p r ä g u n g en   gemeinsam  anspre(cid:173)
+chen.  D a f ür   stehen  eine  Reihe  spezieller  Techniken   zur  Verfügung. 
+
+Gruppierung  an den  Quantilen  M a n c h m al   m ö c h te   m an  eine  Verteilung  so  gruppie(cid:173)
+ren,  dass jede  G r u p pe   u n g e f ä hr   gleichviel Beobachtungen   e n t h ä l t.   Dies  geschieht  durch 
+Gruppierung  einer  Variablen entlang   sog.  „ Q u a n t i l e"  (vgl. Abschn.   7.3.2.1).  Hierzu  dient 
+der  Befehl   x t i l e.   Z ur  Erzeugung  einer  Variablen   m it  vier  etwa  gleich  besetzten  Grup(cid:173)
+pen  verwendet   m an  z . B. 
+
+.  x t i le   inc_4 = income,  nquantiles(4) 
+
+H ä t t en   w ir die   O p t i on  n q u a n t i l es   ( 1 0)   verwendet,  w ü r de   die neu   gebildete  Variable 
+10  Intervalle  m it  jeweils  a n n ä h e r nd   gleicher  Fallzahl  enthalten   usw. 
+
+Da   die neue  Variable  nur vier  A u s p r ä g u n g en   hat, k ö n n en   Sie diese  Variable wie eine 
+
+H ä u f i g k e i t s v e r t e i l u ng   einer  Variablen   m it  wenig  A u s p r ä g u n g en   darstellen,  z.B.  m i t: 
+
+.  tabulate  inc_4 
+
+Gruppierung in Intervalle mit gleicher  Klassenbreite  Bei der Gruppierung  m it  Quan(cid:173)
+tilen  soll  die gruppierte  Variable   m ö g l i c h st   gleich viele  Beobachtungen   in  jeder  A u s p r ä(cid:173)
+gung  enthalten.  D a b ei   entstehen  Intervalle  unterschiedlicher  Intervallbreiten,  d.h., die 
+Differenz  zwischen  der  Klassenobergrenze  eines  Intervalls Cj  u nd der   Klassenobergren-
+ze  des  darunterliegenden  Intervalls C j _i   unterscheidet  sich  zwischen   den  entstehenden 
+Intervallen. 
+
+A n s t a tt   die  G r u p p i e r u ng   an  gleichen  G r u p p e n g r ö ß en   zu  orientieren,  k ö n n t en   Sie 
+auch  an   etwa  gleichen  Intervallbreiten interessiert  sein.   So ließen  sich  z.B.   die Einkom(cid:173)
+mensvariablen  so  gruppieren,  dass  alle  Personen  m it  0-5.000€  Einkommen   das  erste 
+Intervall,  alle  Personen  m it   5.001-10.000€  das  zweite  Intervall  bilden;  für  alle  übri(cid:173)
+gen  Intervalle   w ü r d en   dann  entsprechend  Intervalle  der  Breite  5.000 €  gebildet,  bis der 
+h ö c h s te   W e rt   des  Einkommens  ü b e r s c h r i t t en   ist. 
+
+Allgemein   formuliert  handelt  es  sich  um  eine  Gruppierung,   bei welcher  der  Wertebe(cid:173)
+reich  einer  Variablen   in k   G r u p p en   m it  gleicher  Klassenbreite   dj  = cj  — C j _i   unterteilt 
+w i r d.   Technisch  lässt  sich  dies  m it der   r e c o d e O-  oder   der  a u t o c o d e Q - F u n k t i on  errei(cid:173)
+chen  ( v g l.  S. 90). 
+
+Lassen  Sie uns  m it  einem  Beispiel  beginnen.  D u r ch   den  Befehl 
+
+.  generate  inc.gl = recode(income,5000,10000,15000,20000,25000,30000,60000) 
+
+w i rd   die neue  Variable  i n c . gl   erzeugt,  die für  alle  Beobachtungen   m it  einem  E i n k o m(cid:173)
+m en  unter   5.000 €  ( d . h.  zwischen  0€  u nd   5.000€)  den W e rt   5.000,  für  alle  Fälle m it 
+einem  E i n k o m m en  zwischen   5.001 €  u nd  10.0006  den W e rt   10.000  usw. e n t h ä l t.   Beob(cid:173)
+achtungen  m it  einem  E i n k o m m en   ü b er   30.000 6  erhalten  den W e rt   60.000 6,   das  höchs-
+
+7.3  Variablen  mit  vielen 
+
+Ausprägungen 
+
+179 
+
+Schließlich  k ö n n en   bis  zu   vier  „Superzeilen"  spezifiziert  werden.  Sie  erfüllen  dieselbe 
+F u n k t i on   wie  die  Superspalten,  nur   dass  sie  untereinander  statt  nebeneinander  darge(cid:173)
+stellt  werden.  Superzeilen  werden  d u r ch  die   O p t i on   b y ()  angefordert: 
+
+.  table «orOl sex emp,  by(mar) 
+Marital  Status of 
+Individual and 
+Worried  about 
+economic  development 
+Married 
+
+-  f u ll  time  
+Male  Female 
+
+Very  concerned 
+Somewhat  concerned 
+Not  concerned at  a ll 
+Refusal 
+
+423 
+408 
+26 
+3 
+
+136 
+185 
+21 
+1 
+
+2 
+5 
+
+62 
+44 
+4 
+
+13 
+12 
+1 
+
+Single 
+
+Very  concerned 
+Somewhat  concerned 
+Not  concerned at  a ll 
+Refusal 
+
+Widowed 
+
+Very  concerned 
+Somewhat  concerned 
+Not  concerned at  a ll 
+Refusal 
+
+Divorced 
+
+Very  concerned 
+Somewhat  concerned 
+Not  concerned at  a ll 
+Refusal 
+
+Separated 
+
+Very  concerned 
+Somewhat  concerned 
+Not  concerned at  a ll 
+Refusal 
+
+Refusal 
+
+Very  concerned 
+Somewhat  concerned 
+Not  concerned at  a ll 
+Refusal 
+
+Status of Employment and Gender 
+
+part  time ~ — irregular 
+Male Female 
+
+Male  Female 
+
+not  emplo  _ 
+Male Female 
+
+15 
+11 
+1 
+
+12 
+20 
+3 
+
+1 
+
+1 
+
+10 
+19 
+2 
+
+4 
+15 
+3 
+
+3 
+2 
+
+1 
+
+195 
+195 
+16 
+
+18 
+30 
+6 
+1 
+
+8 
+6 
+1 
+
+31 
+24 
+
+6 
+3 
+
+74 
+63 
+2 
+
+307 
+272 
+30 
+
+10 
+30 
+5 
+1 
+
+3 
+4 
+
+10 
+5 
+1 
+
+1 
+2 
+
+62 
+120 
+31 
+4 
+
+39 
+44 
+8 
+
+26 
+28 
+6 
+
+8 
+4 
+3 
+
+313 
+361 
+26 
+3 
+
+66 
+113 
+24 
+1 
+
+125 
+125 
+15 
+1 
+
+53 
+46 
+6 
+
+6 
+4 
+3 
+
+144 
+145 
+12 
+
+110 
+135 
+16 
+4 
+
+8 
+5 
+
+52 
+41 
+2 
+
+7 
+12 
+1 
+
+1 
+
+Die  Tabelle  definiert  die  G r u p p e n,  zwischen denen  eine   Verteilung  verglichen werden 
+
+soll.  F ür  diesen   Vergleich  b e n ö t i gt   m an  jedoch  noch   zwei  weitere  Informationen: 
+
+•  D ie   Verteilung,  die  beschrieben  werden   soll  u nd 
+
+•  die  M a ß z a h l,   m it  deren   Hilfe  die  Beschreibung  erfolgen   soll. 
+
+Beide  I n f o r m a t i o n en   werden m it der   O p t i on   c o n t e n t sO  angegeben.  In der   K l a m m er 
+
+v on   c o n t e n ts   w i rd   zuerst  eine   M a ß z a hl   genannt  u nd  danach  der  Name  der  zu  beschrei-
+
+80  
+
+1
+
+7  Die  Beschreibung 
+
+v o n j y ^ ^ h j a g gg 
+
+benden  Verteilung.  M it  c o n t e n ts  (mean 
+m it   dem  durchschnittlichen  E i n k o m m en  der  jeweiligen  G r u p pe   gefüllt. 
+
+i n c o m e)
+
+  w ü r d en   die  Zellen  der  T a b e l le  z - B -
+
+Lassen  Sie  uns  die  Funktionsweise  v on  t a b le  anhand  einiger  Beispiele  i l l u s t r i e r e n. 
+
+Beginnen  w ir  damit,  die  vorangegangenen  Tabellen  m it  t a b le  zu  r e p r o d
+U z i e r e n . 
+Vergleich  des  Einkommens  v on   M ä n n e rn   u nd  Frauen  entsprechend  d em   V o r g e b e»  
+Seite  176  w ü r de   m it  t a b le  wie   folgt  aussehen: 
+
+D er 
+
+a
+
+uf 
+
+table sex, contents(count income mean income sd income) 
+
+Das  durchschnittliche  E i n k o m m en  nach  Geschlecht  u nd  B u n d e s l a nd 
+
+(
+
+V gl   g.  177) 
+
+erhält  man  durch 
+
+. table  State  sex, contents(mean  income) 
+
+Sie  misstrauen  dem  M i t t e l w e rt   des  E i n k o m m e ns  u nd   wollen  lieber  eine  B e s c h r e i be 
+
+der  Quartile?   Voilä: 
+
+. table  sex, contents(p25 income p50 income p75 income) 
+
+Ein  anderes  Thema:  N e h m en  Sie  an,  es  geht  um  M i e t en  v on  W o h n u n g
+
+en   m it
+
+  unter(cid:173)
+
+schiedlichen  Ausstattungsprofilen.  W ie  hoch  sind  z.B.  die  M i e t en  in  W o h n u n g en 
+Zentralheizung,  einem  B a l k on  b z w.  einer   Terrasse  u nd  einem  K e l l er  im  V e r g l e i ch 
+denjenigen  ohne  diese  M e r k m a l e?  D u r ch 
+
+n
+
+üi 
+
+M 
+
+. table eqphea eqpter eqpbas,  contents(mean  rent) 
+
+werden  Sie  feststellen,   dass  die  E r s t en  im  D u r c h s c h n i tt  m o n a t l i ch  656 €,  d ie  Zweiten 
+278 €  kosten.  Bei der  I n t e r p r e t a t i on  solcher  mehrdimensionalen  T a b e l l en  s o l l t en  Sie  sich 
+immer  auch  die  Fallzahl   ansehen,  die  bei  der  Berechnung  der  W e r te  jeder  Tabellenzelle 
+verwendet  wird: 
+
+. table eqphea eqpter eqpbas,  contents(mean  rent  n  rent) 
+
+Je  mehr  Zellen  Ihre  Tabelle   e n t h ä l t,   desto  eher  sollten  Sie  d a r a uf  achten,  w ie  viele 
+Fälle  in die  Berechnung  des  Z e l l e n m i t t e l w e r ts eingehen.  B ei  k l e i n en   Z e l l e n b e s e t z u i i g e» 
+können  Ausreißer   ihr  Ergebnis  e m p f i n d l i ch  v e r ä n d e r n.   W ir   k ö n n en   hier  sehen,  dass  die 
+Miete  von  278 €  in  der  obigen  Tabelle   lediglich  a uf  acht  Beobachtungen  b e r u h t. 
+
+Die  Möglichkeiten  des 
+
+t a b l e - B e f e h ls  sind  m it  diesen  Beispielen  
+
+l ä n g st   n i c ht  er(cid:173)
+
+schöpft.  Insbesondere  g i bt  es  weitere  Statistiken  u nd  eine  Reihe  v on  O p t i o n en  zur 
+optischen  Gestaltung  der  Tabellen;  mehr  dazu  unter  [R]  t a b le  u nd  h e lp 
+
+t a b l e. 
+
+Grafische  Darstellungen  von  zusammenfassenden  M a ß z a h l en   D r ei   W e r k z e u ge  zur 
+grafischen  Darstellung  v on   M a ß z a h l en   stehen  zur  V e r f ü g u n g:   B a l k e n d i a g r a m m e,  K u(cid:173)
+chendiagramme  u nd  D o t - C h a r t s.  Technisch   gesehen  s i nd  sich  die  d r ei  Darstellungsfor(cid:173)
+men  sehr  ähnlich,  doch  sind  D o t - C h a r ts  den  beiden   anderen  beiden  T e c h n i k en  in vieler 
+Hinsicht  überlegen  (Cleveland  1994:221-269).  W ir  werden  uns  in  der  D a r s t e l l u ng
+  des(cid:173)
+halb  auf  Dot-Charts  konzentrieren.  Sollten  Sie  an  B a r-  oder  P i e - C h a r ts 
+
+interessiert 
+
+7.3  Variablen  mit  vielen 
+
+Ausprägungen 
+
+181 
+
+sein,  g e n ü gt   es  in der   Regel,  wenn   Sie das  Grafik-Unterkommando  d ot   durch  b ar   oder 
+p ie   ersetzen. 
+
+Z u n ä c h st   wollen  w ir  das  arithmetische  M i t t el   für das   E i n k o m m en   in den   verschiede(cid:173)
+nen  B u n d e s l ä n d e rn   betrachten  D er  Befehl  beginnt   m it  g r a ph   d o t, dem  Kommando zur 
+Erzeugung  eines  D o t - C h a r t.   D ie  g e w ü n s c h t en  M a ß z a h l en   werden  in  K l a m m e rn   gesetzt. 
+Im   Fall  des  arithmetischen  M i t t e l w e r ts  verwendet   m an  das   K e n n w o rt  mean,  welches 
+aber  auch  weggelassen  werden  kann,   da  die  Voreinstellung ist. Eine  vollständige  Liste 
+aller  v e r f ü g b a r en  M a ß z a h l en   erhalten  Sie  m it   h e lp  g r a p h _ d o t.  Hinter   die  M a ß z a hl 
+w i rd   die  Variable  geschrieben,   für  die die   M a ß z a hl   berechnet  werden  soll.  Schließlich 
+kann  innerhalb   der  K l a m m e rn   der  O p t i on  o v e r ()   der  Name  derjenigen  Variablen  an(cid:173)
+gegeben  werden,  für deren  A u s p r ä g u n g en   die Werte  verglichen  werden  sollen: 
+
+. graph dot (mean) income,  over(state) 
+
+Berlin 
+Schloswig-Hols. -
+Hamburg/Bremen  • 
+LowerSaxony  • 
+N-Rheln-Westfa.  • 
+Hessen  -
+
+R-PlaIz,Saat1. 
+Baden-Wuerttemb. 
+
+Bavarla  • 
+Mecktenburg-V. -
+Brandenburg  -
+Saxony-Anhalt 
+Thueringen 
+Saxony 
+
+0 
+
+10,000 
+
+20,000 
+
+mean of Income 
+
+In   der  A b b i l d u ng  ist für  jedes  Bundesland  das  Durchschnittseinkommen  durch  einen 
+P u n kt   r e p r ä s e n t i e r t.   Es  w i rd   schnell  deutlich,   dass  Schleswig-Holstein  u nd  Hessen  das 
+h ö c h s te   Durchschnittseinkommen  aufweisen   u nd  Sachsen  das  niedrigste.  Bei genauerer 
+B e t r a c h t u ng   w i rd   auffallen,  dass  das  durchschnittliche  Einkommen   in den   B u n d e s l ä n(cid:173)
+dern  im  Osten  Deutschlands  niedriger   ist als im   Westen. 
+
+Dennoch,  die  A b b i l d u ng  ist  alles  andere  als  o p t i m al   -  selbst  wenn  m an sie nur für 
+Datenanalysezwecke  u nd   nicht  für  eine  P u b l i k a t i on  erstellt.   Unsere  A b b i l d u ng   folgt 
+first".  Dies  ist  eine  Regel   zur  schlechten  Darstellung  von  Grafi(cid:173)
+der  Regel   „ A l a b a ma  
+ken  (Wainer  1984),   die besagt:  Sortiere  die Ergebnisse  alphabetisch  oder  nach  einem 
+anderen  K r i t e r i u m,   das  nichts  m it den   inhaltlichen  Ergebnissen   zu t un hat.   Falls  Sie 
+um   eine  gute  grafische  Darstellung  Ihrer  D a t en   b e m ü ht   sind,  sollten   Sie  nach  einem 
+inhaltlichen  K r i t e r i um   sortieren.  B ei  Dot-Charts  verwendet   m an  dazu  die Unteroption 
+s o r tO   der  o v e r O - O p t i o n.  Innerhalb   der  K l a m m e rn   v on  s o r t ()   w i rd   der  Name  ei(cid:173)
+ner  Variablen  oder  eine  F u n k t i on  einer  Variablen  spezifiziert,
+  m it der  die   Reihenfolge 
+festgelegt  w i r d.   Nachfolgend  haben  w ir uns   entschieden,  die  Daten  nach   dem Durch(cid:173)
+schnittseinkommen  zu  sortieren:  s o r t ( ( m e a n) 
+i n c o m e ).  Beachten   Sie, dass  s o rt  eine 
+U n t e r o p t i on   v on  o v e rO   ist u nd  nicht  eine  O p t i on   von g r a ph   d o t. 
+. graph dot (mean) income, over(state,  sort((mean)  income) ) 
+
+182 
+
+7  Die  Beschreibung 
+
+von 
+
+Verteiln^^ 
+
+Um   die  M a ß z a h l en   einer  Variablen  für  verschiedene   A u s p r ä g u n g en   einer  weit 
+
+Variablen  darzustellen,  kann  die   O p t i on   b y ()  verwendet  werden.  D o t - C h a r ts   e r l g ^^ 
+d a r ü b er   hinaus  die   „ S u p e r p o s i t i o n ",   die  w ir  im  Folgenden  zur  D a r s t e l l u ng  des  D ^ h-
+schnittseinkommens  von   M ä n n e rn   u nd  Frauen  in  den  verschiedenen   B u n d e s l ä n d er  
+wenden  wollen. 
+
+v ^ r , 
+
+In   Dot-Charts k ö n n en   mehrere  M a ß z a h l en   a uf eine   L i n ie   gezeichnet  w e r d e n.  W e^  0\
+
+Q 
+
+eine  zweite Verteilung  angeben,  werden  deren   M a ß z a h l en   d u r ch  ein  zweites  S y m b oj   ^ u f 
+jeder  Linie  r e p r ä s e n t i e r t.   Um  die  D u r c h s c h n i t t s e i n k o m m en  v on   M ä n n e rn   u nd  F Y ^ en 
+getrennt  zu  berechnen,   bilden  w ir   z u n ä c h st   zwei  neue  E i n k o m m e n s v a r i a b l e n,   e i ü e 
+die  M ä n n er   u nd  eine  für  die  Frauen.   H i e r zu   verwendet  m an  entweder 
+
+. generate  incl = income  if   sex == 1 
+. generate  inc2 = income  if   sex == 2 
+
+oder  m it  einem  einzigen   Befehl: 
+. separate income,  by(sex) 
+
+N un   kann  m an  die  getrennten  V a r i a b l en an  Stelle  der  a l t en  im  D o t - C h a rt  e i n s e t
+
+Z e n. 
+Zusätzlich  steht  eine  Entscheidung   d a r ü b er   an,  nach  welcher  der  b e i d en   V a r i a b l en 
+wir  die  B u n d e s l ä n d er   sortieren  wollen.  Hier   haben  w ir  uns  für  das  E i n k o m m en  j er 
+M ä n n er   entschieden,  aber  w ir  h ä t t en  n a t ü r l i ch   auch  das  der  Frauen  n e h m en   k ö n n e n,   ^^s 
+Gesamteinkommen  oder  irgendeine   andere  Variable,  die  m it  der  i n h a l t l i c h en  Aussage 
+in  Verbindung  steht. 
+
+. graph dot (mean) incomel  income2,  over(state,  sort(Cmean)  incomel)) 
+
+Saxony 
+Berlin 
+Mecklenburg-V. 
+Brandenburg 
+Saxony-Anhalt 
+Thueringen 
+Hamburg/Bremen 
+Lower Saxony 
+R-Plalz.Saarl. 
+N-Rheln-Westfa. 
+Schleswlg-Hols. 
+Bavarfa 
+Baden-Wuerttemb. 
+Hessen 
+
+•  mean of Incomel 
+
+•  mean of income2 
+
+7.3.3  Grafische  Verfahren 
+
+Zusammenfassende  M a ß z a h l en   betonen  b e s t i m m te  Eigenschaften  einer   V e r t e i l u n g,   w ä h(cid:173)
+rend  ü b er   andere  Eigenschaften  vereinfachende  Annahmen 
+gemacht  werden.  So   b l e i bt 
+z um  Beispiel bei  der  Beschreibung  einer   V e r t e i l u ng   m it   M i t t e l w e rt   u nd  Standardab(cid:173)
+weichung  die  Information  ü b er   die  Schiefe  einer   V e r t e i l u ng   u n b e r ü c k s i c h t i g t.   Solange 
+Verteilungen  symmetrisch  sind  (oder  zumindest   gleich  schief)  lassen  sie  sich  m it   M i t(cid:173)
+telwert  u nd  Standardabweichung  vergleichen.  Ist  die  A n n a h me  einer  symmetrischen 
+Verteilung  dagegen  nicht   erfüllt,  sind  die   M a ß z a h l en   nicht  i n f o r m a t i v. 
+
+7.3  Variablen  mit  vielen  Ausprägungen 
+
+183 
+
+In   diesem  A b s c h n i tt  wollen  w ir  uns m it  Techniken zur Beschreibung  von Verteilungen 
+befassen,  die weniger  A n n a h m en  treffen   als die  bisher  verwendeten.  Weniger  Annahmen 
+bedeutet,  dass  mehr  Informationen  dargestellt  werden   m ü s s e n.   Dazu  verwenden  w ir 
+Grafiken.  Anders  als  im  vorangegangenen  A b s c h n i tt  stellen   diese  Grafiken  aber  nicht 
+M a ß z a h l en   dar,  die  unter  b e s t i m m t en  A n n a h m en  berechnet  wurden.  Vielmehr geht
+  es 
+nun  d a r u m,   die Verteilung selbst   m ö g l i c h st   ohne  A n n a h m en  darzustellen. 
+
+7.3.3.1  Box-Plots 
+
+In   A b s c h n i tt   7.3.2 w u r de   die  Beschreibung  v on  Verteilungen  m it  Hilfe  von  M i n i m u m, 
+M a x i m um   u nd  den   Q u a r t i l en  vorgenommen.  Eine  grafische  Darstellung  dieser  Fünf-
+Punkte-Beschreibung  ist der   „Box-Plot". 
+
+Box-Plots  bestehen  aus  einer  „Box",  zwei sog. „Whiskern",  zwei „Zäunen"  u nd aus ei(cid:173)
+nigen  Markersymbolen. Der untere  R a nd   der B ox ist das   1. Q u a r t i l,   der obere  Rand  ist 
+das  3.  Q u a r t i l;   die H ö he   der  B ox  entspricht  d a m it   d em  Interquartilsabstand.  Der  Me(cid:173)
+dian  u n t e r t e i lt   teilt  die B ox in  zwei  H ä l f t e n.   Zwei  senkrechte  Striche,   die sog. Whisker, 
+unter  b z w.  ü b er   der  B ox  werden  d u r ch  horizontale  Striche   -  den  Z ä u n en   -  begrenzt. 
+Der  obere  Zaun  ist  der   h ö c h s te   W e rt   der  Verteilung, der  kleiner  oder  gleich   dem 3. 
+Q u a r t il   +  d em  1,5-fachen  Quartilsabstand   ist. Der  untere  Zaun   ist der  niedrigste  Wert, 
+der  g r ö ß er   oder  gleich   dem  1.  Q u a r t il   -  d em   1,5-fachen  Quartilsabstand   ist. 
+
+Bei  einem  B o x - P l ot   der  Einkommensvariablen  ist die B ox  kaum  zu  erkennen: 
+
+. graph box income 
+
+D ie   resultierende  Grafik  w i rd   d u r ch  eine  Reihe   von  Markersymbolen  beherrscht,   die 
+v om   oberen  bis  z um   unteren  Ende   der  Grafik  reichen.  Diese  Markersymbole  zeigen 
+die  h ö c h s t en   E i n k o m m e n,   u nd  sie   beherrschen  die  Anzeige,  weil  sie  umso  vieles  h ö(cid:173)
+her  sind   als praktisch  alle  anderen  Werte.   F ür  Datenanalysen  ist diese  Eigenschaft  der 
+E i n k o m m e n - V e r t e i l u ng   eine  wichtige  Information,  u nd es  ist gut, dass  die  Grafik  diese 
+Eigenschaft  deutlich  macht.  Allerdings  u n t e r d r ü c k en   die extremen  Werte   des  Einkom(cid:173)
+mens  grundlegende  Eigenschaften   der  nachfolgend  dargestellten  grafischen  Verfahren 
+u nd   machen  es  uns  dadurch  schwierig,   diese  Eigenschaften  zu  e r l ä u t e r n.   W ir  verwen(cid:173)
+den  daher  nachfolgend  eine  modifizierte Einkommensvariable,   die nur  Werte  unterhalb 
+
+184 
+
+7  Die  B ^ ^ & b u n g v ^ ^ t ^ ^ ^. 
+
+von  200.000 €  e n t h ä l t.   Um  den   Einfluss  v on   A u s r e i ß e rn   bei  grafischen  D a r s t e l l u n g 6 11 
+erkennen  zu   können,  empfehlen  w ir  I h n en  jedoch,  die  Befehle  m it  beiden  V a r i a b l en  zu 
+testen 
+
+. gen income_notop = income if  income < 200000 
+. graph box income_notop 
+
+Box-Plots stellen  eine  Reihe  v on  A s p e k t en  einer  V e r t e i l u ng gleichzeitig dar.  D ie  Lage 
+einer  Verteilung ergibt  sich  u n m i t t e l b ar  aus  der  Position  entlang  der  y-Achse. 
+50  Pro(cid:173)
+zent  der  Beobachtungen  haben  W e r te  zwischen  der  Ober-  u nd  Untergrenze  der  B o x.  Die 
+Streuung  der  Verteilung ergibt  sich  aus  der   H ö he   der  B o x,  der   L ä n ge   der  W h i s k er  u nd 
+der  Position  der   Ausreißer.  D a r ü b er   hinaus  lässt  sich  die  S y m m e t r ie  einer  V e r t e i l u ng 
+beurteilen:  Box-Plots, bei  denen  der  M e d i an  gleichweit v om  oberen  u nd  u n t e r en  R a n" 
+der  Box entfernt  ist  u nd  die  zudem  nach  oben  u nd  u n t en  gleichlange  Zaune  aufweisen, 
+sind  symmetrisch.  Je  mehr  sich  die  B ox  nach  unten  verlagert  u nd  je
+Whisker  im  Vergleich z um  unteren  ist,
+ist  die  V e r t e i l u n g. Je  mehr 
+sich  die  Box  nach  oben  verlagert  u nd  je   l ä n g er   der  untere  W h i s k er  im  V e r g l e i ch  z um 
+oberen  ist,  desto  linksschiefer  die  Verteilung. Die  V e r t e i l u ng des  E i n k o m m e ns  i st  also 
+rechtsschief. 
+
+  desto  rechtsschiefer 
+
+  l ä n g er   der  obere 
+
+Box-Plots  eignen  sich  hervorragend  z um  Vergleich  v on  Verteilungen.  H i e r zu  wer(cid:173)
+den  die  Optionen  over  oder  b y ()  verwendet.  Im  folgenden  Beispiel  vergleichen  w '
+die  Verteilung der  E i n k o m m en  zwischen  den   B u n d e s l ä n d e r n.   Beachten  Sie  die  Unter(cid:173)
+option  l a b e l ( a n g l e ( 4 5 ))  der  o v e r ( ) - O p t i o n;  m it  i hr
+  w i rd   vermieden,  dass  sich  die 
+Beschriftungen  an  der  x-Achse  gegenseitig  im  W eg   stehen. 
+
+r 
+
+graph box income_notop,  over(state,  label(angle(45))) 
+
+7.3  Variablen  mit  vielen  Ausprägungen 
+
+185 
+
+7.3.3.2  Histogramme 
+
+Das  Standardverfahren  zur  grafischen  Darstellung  von  Verteilungen m it  vielen   A u s p r ä(cid:173)
+gungen  ist  das  H i s t o g r a m m.  H i s t o g r a m me  sind  grafische  Darstellungen  einer  gruppier(cid:173)
+ten  H ä u f i g k e i t s v e r t e i l u n g.   F ür   jedes  Intervall  j  der  gruppierten   Häufigkeitsverteilung 
+w i rd   ein  Rechteck  m it  der   H ö he 
+
+/  =  3* 
+
+(7-2) 
+und  der  B r e i te dj  gezeichnet,  wobei  rij  die  absolute   Häufigkeit  und dj =  Cj -  C j -i 
+die  Klassenbreite  des  Intervalls  j  darstellt,  fj 
+  „Dichte".  Beachten  Sie,  dass 
+die  Dichte  fj  nicht  das  gleiche  ist  wie  die  relative   Häufigkeit  fj.  Relative  Häufigkeiten 
+liegen  stets  zwischen  0  u nd  1,   w ä h r e nd   die  Dichte  eine  beliebige  positive  Zahl  darstellt. 
+In   H i s t o g r a m m en  sind  die   F l ä c h en   p r o p o r t i o n al zur   Häufigkeit  des  jeweiligen Intervalls, 
+w ä h r e nd   die  H ö he   der  Rechtecke  die  Dichte  im jeweiligen  Intervall  r e p r ä s e n t i e r t. 
+
+ist  die  sog.
+
+In   Stata  sind  H i s t o g r a m me  derart  implementiert,   dass  die  Klassenbreite   sämtlicher 
+Intervalle  der  gruppierten   H ä u f i g k e i t s v e r t e i l u ng   konstant  bleibt.  Anders   a u s g e d r ü c k t: 
+H i s t o g r a m me  in   Stata  sind  grafische  Darstellungen  einer  m it  der  Funktion  a u t o c o d eO 
+(vgl.  S.  172)  gruppierten   H ä u f i g k e i t s v e r t e i l u n g.  Aus  diesem  G r u nd  ist  in  diesen  H i(cid:173)
+stogrammen  auch  die   H ö he   der  Rechtecke  proportional  zur  relativen   Häufigkeit  des 
+jeweiligen  Intervalls: je   h ö h er   das  Rechteck,   desto  häufiger  die  jeweilige  Klasse. 
+
+H i s t o g r a m me  werden  d u r ch  den  Befehl  h i s t o g r a mm  angefordert.  Hinter  den  Befehl 
+
+schreiben  Sie  den  N a m en  der  Variablen,  die  Sie  darstellen   m ö c h t e n.   Die  Grafik  zeigt 
+wieder  die  Schiefe  bei  der  Einkommensverteilung.  W ir
+  sehen  auch,  dass  es  einige  sehr 
+niedrige  W e r te  g i b t,  die  recht   häufig  vorkommen. 
+
+histogram  income_notop 
+
+100000 
+
+Income^notop 
+
+200000 
+
+In  vielen Fällen  werden  Sie  m it  dem  Ergebnis   dieses  einfachen 
+
+^ 
+
+v o^  
+
+\ v a lu 
+
+ 
+
+können.  Beachten  Sie  allerdings,   dass  das  Aussehen   eines  nistogr 
+des  Ursprungs  und  der  Breite  der  verwendeten  Intervalle  
+b ^ n ° rs
+weiter  angeben,  w ä h lt   Stata  selbst   entsprechende  W e r te  a u s - AB  
+Stata  stets  das  M i n i m um   der  Verteilung,  u nd  die  Intervallbreite 
+Formel  zur  Bestimmung  der  o p t i m a l en  A n z a hl  v on  Rechtecken,  D 
+Verteilung verwendet  Stata  37 Rechtecke,  d.h.,  Stata  g r u p p i e rt  die 
+in  37 Gruppen  m it gleicher  Klassenbreite.  Probieren  Sie  das   Vorgeh er 
+selbst  aus 
+d i s c r e t e - O p t i on   verwenden: 
+
+indem  Sie  die  a u t o c o d e O - F u n k t i on  u nd  den  Befehl  h i s t og  ^ 
+
+^ 
+
+u
+
+ng
+
+a
+
+ 
+
+der 
+
+tg 
+
+L T I EN   *™ 
+
+ 
+
+*  det 
+^ 
+v o ^ - n d en 
+m 
+
+Hege 
+n S v ar 
+£ ta 
+
+m lt 
+
+. generate  inc37 = autocode(income_notop,37,0,200000) 
+. histogram  inc37,  discrete 
+
+Die  Anzahl der  Rechtecke  in  einem  H i s t o g r a mm  sollte  so   g e w ä h lt Jerde*> dass 
+
+notwendigen  Charakteristika der  V e r t e i l u ng in der   Grafik  zu  s e h « n 
+fälligkeiten  nicht  zu  stark  betont  werden.  A ls  Faustregel  für  die
+wurden  1 0 1 o g 1 0 n,  
+Bei  4.757  gültigen  F ä l l en   für  i n c o m e . n o t op  ergeben   diese  Vorschlage  37  138  oder 
+Klassen  als  optimale   Anzahl.  Stata  verwendet  min(2y/h t 
+bei 
+u  die 
+erwähnten  37  Klassen  ergibt.  
+
+2 > /n   u nd  1  +   l o g 2 n  vorgeschlagen  (Emerson  u nd  H o a g h n 
+
+  ^ ^ 4. ^ * ^ 3 ). 
+^ 
+
+^ „ r i i i h r p it  
+
+10  * l o g 10  
+
+^A 
+
+^ 
+
+Wie  gesagt,  h ä n gt   das  Aussehen  v on  H i s t o g r a m m en  v on  der   IntervaiiD  m e  ab 
+
+er   OpüQ 
+ihrerseits  eine  F u n k t i on der  A n z a hl  der  verwendeten  Rechtecke  sind.  Mi  d
+b i n ()   können  Sie  die  A n z a hl  der  Rechtecke  auch  selbst  spezifizieren  
+*^ 
+„
+einfach  die  gewünschte  Zahl  zwischen  die  K l a m m e rn  ein.   Hier  sind  die   » i s t o g r a n» 
+mit  13  und  138  Rechtecken: 
+
+8
+
+»
+
+. histogram  income.notop,  bin(13) 
+. histogram  income.notop,  bin(138) 
+
+Der  Vergleich  von  Verteilungen  m it  H i s t o g r a m m en   erfolgt  m it  der  
+
+b
+
+Nachfolgendes  Beispiel  zeigt  die  V e r t e i l u ng  des  Einkommens  für  M a n n er  u nd
+en: 
+
+y ° - ° P £ 0 "' 
+  tta, 
+
+histogram  income.notop,  by(sex) 
+
+7.3  Variablen  mit  vielen 
+
+Ausprägungen 
+
+187 
+
+Male 
+
+Female 
+
+0 
+
+50000 
+
+100000  150000  200000  I 
+
+50000 
+
+100000  150000  200000 
+
+W ir   wollen  die  Darstellung  hier  nicht  weiter  interpretieren.
+
+  Stattdessen  wollen  w ir 
+Sie  nochmals  daran  erinnern,   dass  das  Aussehen  von  Histogrammen  vom  Ursprung 
+u nd   der  Intervallbreite   a b h ä n g t.   Z u d em  ergibt  sich  aus  der  Gruppierung  eine  oft
+  sehr 
+sprunghafte  Verteilungsform   -  betrachten  Sie  als  Beispiel   hierfür  einmal  die  Histo(cid:173)
+gramme  des  Einkommens  für  die   B u n d e s l ä n d er   Bremen  u nd  Hamburg.  Eine  grafische 
+Darstellung,  m it  der  solche  Probleme  teilweise  umgangen  werden   können,  sind  sog. 
+„ K e r n - D i c h t e - S c h ä t z e r ",   die  w ir  im  Folgenden  beschreiben. 
+
+7.3.3.3  Kern-Dichte-Schätzer 
+
+Bei  der  Darstellung  einer  V e r t e i l u ng m it  einem  H i s t o g r a mm  ist  man   prinzipiell  an  der 
+Frage  interessiert,  wie hoch  die  Dichte  für  beliebige  Werte  der  Verteilung ist.  Das
+  heißt, 
+w ir   interessieren  uns  für  die  Frage,  wie  hoch  die  Dichte  von   Personen  m it  einem  Wert 
+von  x  ist.  H i s t o g r a m me  berechnen  diesen  W e r t,  indem  ein   Intervall  gewählt  w i r d,   das 
+x  e n t h ä l t,   u nd  dann  der   A n t e il   von  Personen  in  diesem   Intervall  ermittelt  w i r d.   Den 
+Nachteil  eines  solchen  Vorgehens   sehen  Sie  in  A b b i l d u ng   7.2. 5 
+
+Die  A b b i l d u ng  zeigt  einen  Ausschnitt  aus  einem  Histogramm.  Es  gibt  darin  drei 
+W e r te  v on  besonderem   Interesse,  x\,  x2  u nd  x.  Nehmen  Sie  an,  Sie  interessieren  sich 
+für  die  D i c h te  der  V e r t e i l u ng  an  der  Stelle  x.  Die   H ö he   des  Rechtecks  am  Punkt  x 
+basiert  auf  d em   A n t e il   von  Beobachtungen  im   Intervall  um  x.  W ie  Sie  der  A b b i l d u ng 
+entnehmen  k ö n n e n,   haben  Beobachtungen  m it  dem  Wert  xi  keinen  Einfluss  auf  die H ö(cid:173)
+he  des  Rechtecks  an  der  Stelle  x,   wohl   aber  die  weiter  von  x  entfernten  Beobachtungen 
+m it   d em  W e rt  x 2.  Um  den   A n t e il   der  F ä l le   zu  bestimmen,  die  einen  Wert  von   ungefähr 
+x  haben,  w ä re   es  somit  sinnvoller,  ein   Intervall  zu  verwenden,  das  x  in  der   M i t te   hat. 
+Das  h e i ß t,   m an  sollte  ein   Intervall  verwenden,  das  von  x   -  h  bis  x +  h  geht.  Die  Dichte 
+an  der  Stelle  x   w ä re   dann  wie  in  Gleichung   (7.2)  die  Anzahl  von  Beobachtungen  in 
+diesem  Intervall,  geteilt  d u r ch   dessen  Klassenbreite  2h. 
+
+M an   k a nn  n un  für  jede  beliebige  Stelle  x  auf
+
+  diese  Weise  die  Dichte  bestimmen. 
+T r ä gt   m an  die  W e r te  entlang  der  y-Achse 
+in eine   Grafik  ein,  e r h ä lt   man  ein   „gleitendes 
+H i s t o g r a m m ".   Gleitende  H i s t o g r a m me   g e h ö r en   zur  Gruppe  der   Kern-Dichte-Schätzer, 
+
+5Wir  haben  die  Abbildung von  Fahrmeir et  al. (1997:99)  übernommen. 
+
+186 
+
+7  Die  Beschreibung 
+
+von 
+
+Verteilunge^ 
+
+• TlTh-rrt. 
+
+50000 
+
+i 00000 
+
+lncorne_notop 
+
+150000 
+
+In   vielen  Fällen  werden  Sie  m it  dem  Ergebnis   dieses  einfachen  Befehls  zufrieden  sein 
+können.  Beachten  Sie  allerdings,   dass  das  Aussehen   eines  H i s t o g r a m ms  v on  der  W a hl 
+des  Ursprungs  u nd  der  Breite  der  verwendeten  Intervalle   a b h ä n g t.   W e nn  Sie  nichts 
+weiter  angeben,  w ä h lt   Stata  selbst  entsprechende  W e r te  aus.  A ls  U r s p r u ng  verwendet 
+Stata  stets  das  M i n i m um   der  Verteilung,  u nd  die  Intervallbreite  resultiert  aus  einer 
+Formel  zur  Bestimmung  der  optimalen  A n z a hl  v on  Rechtecken.  B ei  der  vorliegenden 
+Verteilung verwendet  Stata  37 Rechtecke,  d.h.,   S t a ta   g r u p p i e rt  die  Einkommensvariable 
+in  37  Gruppen  m it gleicher  Klassenbreite.  Probieren  Sie  das  Vorgehen  v on   S t a ta   einmal 
+selbst  aus,  indem  Sie  die  a u t o c o d e O - F u n k t i on  u nd  den  Befehl  h i s t o g r am  m it  der 
+d i s c r e t e - O p t i on  verwenden: 
+
+. generate  inc37 = autocode(income_notop,37,0,200000) 
+. histogram  inc37,  discrete 
+
+Die  Anzahl  der  Rechtecke  in  einem  H i s t o g r a mm  sollte  so   g e w ä h lt   werden,  dass  alle 
+notwendigen  Charakteristika  der  Verteilung in  der   Grafik  zu  sehen  sind  u nd  kleine   Auf(cid:173)
+fälligkeiten  nicht  zu  stark  betont  werden.  A ls  Faustregel  für  die  A n z a hl  der  Rechtecke 
+wurden  1 0 1 o g 1 0 n,  2y/n  u nd  1  +  l o g 2 n  vorgeschlagen 
+(Emerson  u nd  H o a g l in  1983). 
+Bei  4.757  gültigen  F ä l l en   für  income_notop   ergeben  diese  V o r s c h l ä ge   37,  138  oder  13 
+Klassen  als  optimale  A n z a h l.   Stata  verwendet  min{2^ </n, 
+10  * l o g 10   n ),  was  die  bereits 
+e r w ä h n t en   37  Klassen  ergibt. 
+
+Wie  gesagt,  h ä n gt   das  Aussehen  v on  H i s t o g r a m m en  v on  der  Intervallbreite  ab,  die 
+ihrerseits  eine  F u n k t i on  der  A n z a hl  der  verwendeten  Rechtecke  sind.  M it  der  O p t i on 
+b i n ()   k ö n n en   Sie  die  A n z a hl  der  Rechtecke  auch   selbst  spezifizieren.  D a zu   geben  Sie 
+einfach  die  g e w ü n s c h te   Zahl  zwischen  die  K l a m m e rn  ein.  Hier  sind  die  H i s t o g r a m me 
+mit  13  u nd  138  Rechtecken: 
+
+. histogram  income_notop,  bin(13) 
+. histogram  income_notop,  bin(138) 
+
+Der  Vergleich  von  Verteilungen  m it  H i s t o g r a m m en  erfolgt  m it  der  b y ( ) - O p t i o n. 
+
+Nachfolgendes  Beispiel  zeigt  die  Verteilung  des  E i n k o m m e ns  für   M ä n n er   u nd  Frau(cid:173)
+en: 
+
+histogram  income_notop,  by(sex) 
+
+7.3  Variablen  mit  vielen 
+
+Ausprägungen 
+
+187 
+
+50000 
+
+100000  150000  200000 0 
+
+50000  100000  150000  200000 
+
+Graph» by Ganctef 
+
+lncome__notop 
+
+W ir   wollen  die  Darstellung  hier  nicht  weiter  interpretieren.
+
+  Stattdessen  wollen  w ir 
+Sie  nochmals  daran  erinnern,   dass  das  Aussehen  von  Histogrammen  v om  Ursprung 
+und  der  Intervallbreite   a b h ä n g t.   Z u d em  ergibt  sich  aus  der  Gruppierung  eine  oft
+  sehr 
+sprunghafte  Verteilungsform   -  betrachten  Sie  als  Beispiel   hierfür  einmal  die  Histo(cid:173)
+gramme  des  E i n k o m m e ns  für  die   B u n d e s l ä n d er   Bremen  u nd  Hamburg.  Eine  grafische 
+Darstellung,  m it  der  solche  Probleme 
+teilweise  umgangen  werden   können,   sind  sog. 
+„ K e r n - D i c h t e - S c h ä t z e r ",   die  w ir  im  Folgenden  beschreiben. 
+
+7.3.3.3  Kern-Dichte-Schätzer 
+
+Bei  der  Darstellung  einer  Verteilung m it  einem  H i s t o g r a mm  ist  man   prinzipiell  an  der 
+Frage  interessiert,  wie  hoch  die  Dichte  für  beliebige  Werte  der  Verteilung ist.  Das
+  heißt, 
+wir  interessieren  uns  für  die  Frage,  wie  hoch  die  Dichte  von   Personen  m it  einem  Wert 
+von  x  ist.  H i s t o g r a m me   berechnen  diesen  W e r t,  indem  ein   Intervall  gewählt  w i r d,   das 
+x  e n t h ä l t,   u nd  d a nn  der   A n t e il   v on   Personen  in  diesem   Intervall  ermittelt  w i r d.   Den 
+Nachteil  eines  solchen  Vorgehens   sehen  Sie  in  A b b i l d u ng   7.2. 5 
+
+Die  A b b i l d u ng  zeigt  einen  Ausschnitt  aus  einem  Histogramm.  Es  gibt  darin  drei 
+Werte  v on   besonderem  Interesse,  x i, x 2  u nd  x.  Nehmen  Sie  an,  Sie  interessieren  sich 
+für  die  D i c h te  der  V e r t e i l u ng  an  der  Stelle  x.  Die   H ö he   des  Rechtecks  am  P u n kt  x 
+im   Intervall  um  x.  W ie  Sie  der  A b b i l d u ng 
+basiert  auf  d em   A n t e il   von  Beobachtungen 
+entnehmen  k ö n n e n,   haben  Beobachtungen  m it  dem  Wert  Xi  keinen  Einfluss  auf  die Hö(cid:173)
+he  des  Rechtecks  an  der  Stelle  x,   w o hl  aber  die  weiter  von  x  entfernten  Beobachtungen 
+m it   d em  W e rt  x 2 .  Um  den   A n t e il   der  F ä l le   zu  bestimmen,  die  einen  Wert  von   ungefähr 
+x  haben,  w ä re   es  somit  sinnvoller,  ein   Intervall  zu  verwenden,  das  x  in  der   M i t te   hat. 
+Das  h e i ß t,   m an  sollte  ein   Intervall  verwenden,  das  von  x   -  h  bis  x  +  h  geht.  Die  Dichte 
+an  der  Stelle  x   w ä re   d a nn  wie  in  Gleichung   (7.2)  die  Anzahl  von  Beobachtungen 
+in 
+diesem  I n t e r v a l l,  geteilt  d u r ch   dessen  Klassenbreite  2h. 
+
+M an   k a nn  n un  für  jede  beliebige  Stelle  x  auf
+
+  diese  Weise  die  Dichte  bestimmen. 
+T r ä gt   m an  die  W e r te  entlang  der  y-Achse 
+in  eine   Grafik  ein,  e r h ä lt   man  ein   „gleitendes 
+H i s t o g r a m m ".   Gleitende  Histogramme   g e h ö r en   zur  Gruppe  der   K e r n - D i c h t e - S c h ä t z e r, 
+
+BWir  haben  die  Abbildung von  Fahrmeir  et  al.  (1997:99)  übernommen. 
+
+

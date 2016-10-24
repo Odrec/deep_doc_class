@@ -1,0 +1,2112 @@
+MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+E
+
+R
+
+V
+
+I E
+
+W
+
+S
+
+I
+
+N
+
+A D V
+
+E
+C
+
+N
+
+A
+
+Annu. Rev. Microbiol. 2014. 68:415–38
+
+The Annual Review of Microbiology is online at
+micro.annualreviews.org
+
+This article’s doi:
+10.1146/annurev-micro-092412-155725
+Copyright c(cid:2) 2014 by Annual Reviews.
+All rights reserved
+
+Bacterial Type III Secretion
+Systems: Specialized
+Nanomachines for Protein
+Delivery into Target Cells
+
+Jorge E. Gal´an,1 Maria Lara-Tejero,1
+Thomas C. Marlovits,2,3,4 and Samuel Wagner5
+1Department of Microbial Pathogenesis, Yale University School of Medicine, New Haven,
+Connecticut 06536; email: jorge.galan@yale.edu
+2Center for Structural Systems Biology, University Medical Center Hamburg-Eppendorf and
+Deutsches Elektronen-Synchrotron, 20246 Hamburg, Germany
+3Institute of Molecular Biotechnology GmbH, and 4Research Institute of Molecular Pathology,
+Austrian Academy of Sciences, A-1030 Vienna, Austria
+5Interfaculty Institute of Microbiology and Infection Medicine, University of T ¨ubingen,
+72076 T ¨ubingen, Germany
+
+Keywords
+protein secretion, bacterial pathogenesis, molecular machines
+
+Abstract
+One of the most exciting developments in the ﬁeld of bacterial pathogenesis
+in recent years is the discovery that many pathogens utilize complex nanoma-
+chines to deliver bacterially encoded effector proteins into target eukaryotic
+cells. These effector proteins modulate a variety of cellular functions for the
+pathogen’s beneﬁt. One of these protein-delivery machines is the type III
+secretion system (T3SS). T3SSs are widespread in nature and are encoded
+not only by bacteria pathogenic to vertebrates or plants but also by bacteria
+that are symbiotic to plants or insects. A central component of T3SSs is
+the needle complex, a supramolecular structure that mediates the passage of
+the secreted proteins across the bacterial envelope. Working in conjunction
+with several cytoplasmic components, the needle complex engages speciﬁc
+substrates in sequential order, moves them across the bacterial envelope, and
+ultimately delivers them into eukaryotic cells. The central role of T3SSs in
+pathogenesis makes them great targets for novel antimicrobial strategies.
+
+415
+
+Review in Advance first posted online  on June 18, 2014. (Changes may  still occur before final publication  online and in print.) Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+Contents
+INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 416
+EVOLUTIONARY ORIGINS OF THE T3SS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 416
+THE NEEDLE COMPLEX AND ASSOCIATED ELEMENTS . . . . . . . . . . . . . . . . . . 418
+General Architecture of the Needle Complex . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 418
+Structural Organization of the Needle Complex . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 418
+NEEDLE COMPLEX ASSEMBLY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 424
+SUBSTRATE RECOGNITION BY THE TYPE III
+
+PROTEIN SECRETION MACHINE. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 428
+ENERGIZING THE TYPE III SECRETION SYSTEM . . . . . . . . . . . . . . . . . . . . . . . . . . 429
+SENSING AND FIRING: TYPE III SECRETION MACHINES IN ACTION . . . . 430
+OUTSTANDING QUESTIONS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 431
+
+INTRODUCTION
+Many bacteria have evolved specialized machines to deliver effector proteins into target eukaryotic
+cells with the capacity to modulate a variety of cellular activities (7, 59, 94). Type III protein
+secretion systems (T3SSs) are arguably the best characterized of these protein injection machines
+(20, 32, 62). In the pregenomic era, these systems were most often identiﬁed in the context of
+searches for genes involved in intimate host-pathogen interactions (60, 68, 112). However, in the
+postgenomic era, it is now clear that T3SSs are widespread in nature, playing important roles not
+only in pathogenic but also in symbiotic interactions in the context of vertebrate, plant, or insect
+hosts (21, 34, 129). Although the secretion machine is highly conserved across bacterial species, the
+effector proteins that it delivers are speciﬁc for each pathogen or symbiont that encodes them (59).
+In this article, we describe the main components of these fascinating nanomachines and discuss
+what is known about their function. We do not attempt to comprehensively review the literature.
+Rather, we describe what in our view are the most important aspects of the structure and function
+of these machines. This article focuses on T3SSs involved in protein delivery into eukaryotic cells,
+which we view as substantially different in many important aspects from related systems involved
+in motility (53). In addition, we do not cover the diverse activities mediated by the effector proteins
+delivered by these machines. Finally, we recognize that the nomenclature of the genes involved
+in T3SS in different bacteria can be confusing and can hamper comparisons between different
+systems. Therefore to facilitate the reading of this article we provide a table (Table 1) listing
+the nomenclature of homologs in the most-studied systems as well as a previously introduced
+unifying nomenclature (70). When necessary, we provide gene or protein names, with emphasis
+on homologs from T3SSs of Salmonella, Shigella, and Yersinia spp., which are arguably the most
+studied.
+
+EVOLUTIONARY ORIGINS OF THE T3SS
+Recent phylogenetic analyses support the notion that T3SSs are an evolutionary exaptation of
+the ﬂagellar apparatus (114) and that this process may have proceeded in two steps (1). The ﬁrst
+step, the products of which can still be detected in Myxococcales spp. (80), led to a structure that
+is competent for protein secretion although it is no longer able to carry out motility functions.
+The second step, which may have occurred more than once, involved the recruitment of secretins,
+
+416
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+Table 1 Nomenclature of type III secretion components in different bacteriaa
+
+Yersinia
+spp.
+YscC
+
+Shigella
+spp.
+MxiD
+
+Salmonella enterica
+
+SPI-1
+
+InvG
+
+SPI-2
+
+SsaC
+
+Pseudomonas
+syringae
+HrcC
+
+Sct common
+nomenclatureb
+SctC
+
+Flagellar
+apparatus
+−
+
+MxiG
+
+PrgH
+
+SsaD
+
+HrpQ
+
+HrcJ
+
+HrcR
+
+HrcS
+
+HrcT
+
+HrcU
+
+HrcV
+
+HrpD
+HrcQA + B
+
+HrpE
+
+HrcN
+HrpO
+
+HrpA
+
+HrpB
+HrpP
+
+HrpK
+
+SsaJ
+
+SsaR
+
+SsaS
+
+SsaT
+
+SsaU
+
+SsaV
+
+−
+
+SsaQ
+
+SsaK
+
+SsaN
+SsaO
+
+SsaG
+
+SsaI
+SsaP
+
+−
+
+SseC
+SseD
+−
+
+SctD
+
+SctJ
+
+SctR
+
+SctS
+
+SctT
+
+SctU
+
+SctV
+
+SctK
+
+SctQ
+
+SctL
+
+SctN
+SctO
+
+SctF
+
+SctI
+SctP
+
+−
+
+−
+−
+
+−
+
+−
+
+FliP
+
+FliQ
+
+FliR
+
+FlhB
+
+FlhA
+
+−
+
+FliM +
+FliN
+FliH
+
+FliI
+−
+
+−
+
+−
+FliK
+
+−
+
+−
+−
+−
+
+−
+
+Proposed function
+Needle complex outer
+rings
+Needle complex inner
+rings
+Needle complex inner
+rings
+Export apparatus (protein
+channel?)
+Export apparatus (protein
+channel?)
+Export apparatus (protein
+channel?)
+Export apparatus;
+substrate switching
+Export apparatus (proton
+channel?)
+Cytoplasmic sorting
+platform
+Cytoplasmic sorting
+platform
+Links ATPase to sorting
+platform (?)
+ATPase
+Cytoplasmic component;
+function unknown
+Needle ﬁlament
+component
+Inner rod component
+Inner rod assembly;
+substrate switching
+Tip complex; translocase
+deployment
+Effector translocase
+Effector translocase
+Pilotin (assembly of outer
+rings)
+Controls translocase
+secretion
+
+YscD
+
+YscJ
+
+YscR
+
+YscS
+
+YscT
+
+YscU
+
+YscV
+
+YscK
+
+YscQ
+
+YscL
+
+YscN
+YscO
+
+YscF
+
+YscI
+YscP
+
+LcrV
+
+YopB
+YopD
+YscW
+
+YopN
+
+MxiJ
+
+Spa24
+
+Spa9
+
+Spa29
+
+Spa40
+
+MxiA
+
+MxiK
+
+Spa33
+
+MxiN
+
+Spa47
+Spa13
+
+MxiH
+
+MxiI
+Spa32
+
+IpaD
+
+IpaB
+IpaC
+MxiM
+
+MxiC
+
+PrgK
+
+SpaP
+
+SpaQ
+
+SpaR
+
+SpaS
+
+InvA
+
+OrgA
+
+SpaO
+
+OrgB
+
+InvC
+InvI
+
+PrgI
+
+PrgJ
+InvJ
+
+SipD
+
+SipB
+SipC
+InvH
+
+InvE
+
+SsaL
+
+HrpJ
+
+SctW
+
+aAbbreviations: −, homolog not present; SPI, Salmonella pathogenicity island.
+bPreviously proposed common nomenclature (70).
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+417
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+a family of outer membrane proteins that are involved in phage release or protein secretion.
+Composed of more than 20 proteins, T3SSs are among the most complex protein secretion
+systems known. Such complexity may have emerged from the need to modulate complex cellular
+processes requiring the delivery of several bacterial proteins to the same eukaryotic cell. The
+delivery of multiple proteins to the same cell in a coordinated fashion demands adaptations much
+more complex than those that have evolved, for example, to deliver a single exotoxin to a target
+cell.
+
+THE NEEDLE COMPLEX AND ASSOCIATED ELEMENTS
+The core component of the T3SS is the needle complex, a 3.5-MD multiring structure that
+spans the bacterial envelope (82) (Figure 1). Originally identiﬁed in Salmonella Typhimurium
+(82), this structure has been subsequently visualized in many other bacteria (17, 38, 128) with a
+highly conserved architecture. In recent years, high-resolution cryo–electron microscopy (cryo-
+EM) combined with the molecular docking of the atomic structures of some of its components
+has provided a remarkable high-resolution view of this structure (58, 95, 98, 99, 126, 127, 132)
+(Figure 1). In addition to the structure embedded in the bacterial envelope, several cytoplasmic
+components associate with the needle complex in a dynamic fashion to mediate speciﬁc steps
+of the secretion process. Finally, passage of effector proteins through the target eukaryotic cell
+membrane requires the assembly of a protein channel (the translocon), composed of proteins
+deployed by the T3SS itself.
+
+General Architecture of the Needle Complex
+The needle complex is composed of a base substructure embedded in the bacterial envelope and
+a needle-shaped extension that protrudes from the bacterial surface (24, 81, 95, 98, 99, 118,
+148). The base itself is approximately 25 nm wide and 30 nm long and is composed of two rings
+associated with the inner membrane, inner rings 1 (IR1) and 2 (IR2), which connect to two outer
+membrane rings, outer rings 1 (OR1) and 2 (OR2), through a neck (Figure 1). The needle itself is
+approximately 50 nm in length and is linked to the base through the inner rod, which docks into
+a socket-like structure within the base. The entire structure is traversed by a channel ∼20 A˚ in
+diameter that serves as a conduit for proteins traveling this pathway (118). In addition to the core
+needle complex, there are other substructures often lost during its biochemical isolation. At the tip
+of the needle there is the tip complex, presumably involved in the sensing of the target cell and in the
+deployment of the protein translocases (see below) (52, 110). A group of inner membrane proteins
+(the export apparatus) located at the center of the inner rings presumably serves as a channel that
+mediates the passage of type III secreted proteins through the inner membrane (139). Finally,
+several cytoplasmic proteins are linked to the cytoplasmic side of the needle complex, presumably
+forming a deﬁned structure, as recently suggested by electron tomographic visualization of the
+needle complex in situ (2, 76, 84).
+
+Structural Organization of the Needle Complex
+The base. Despite its architectural complexity, the core needle complex is composed of a rela-
+tively small number of proteins (82). The lower rings (IR1 and IR2) are composed of two proteins
+[PrgK/YscJ/MxiJ and PrgH/YscD/MxiG in Salmonella, Yersinia, and Shigella spp., respectively
+(Table 1)], whereas the outer rings (OR1 and OR2) and neck are composed of just one protein
+(InvG/YscC/MxiD), a member of the secretin family of outer membrane proteins (Figure 1). In
+
+418
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+b
+
+Tunnel (20 Å)
+
+Substrate
+
+Atrium (40 Å)
+
+Channel (10 Å)
+
+Portal (15 Å > 10 Å)
+
+Surface view
+
+Tilted surface
+
+view (45˚)
+
+Secretion path
+
+Extracellular, helical
+needle filament (PrgI)
+
+Periplasmic 
+PrgH/K ring
+
+Inner
+rod
+
+Export
+apparatus
+
+a
+
+t
+n
+e
+m
+a
+l
+i
+F
+
+Outer
+Outer
+
+membrane
+membrane
+
+Outer
+ring 1
+
+Outer
+ring 2
+
+e
+s
+a
+B
+
+Neck
+
+Inner
+Inner
+
+membrane
+membrane
+
+Inner
+ring 1
+
+Inner
+ring 2
+
+c
+
+PrgI
+
+InvG (N-terminal)
+PrgK (N-terminal)
+
+PrgH (C-terminal)
+
+PrgH (N-terminal)
+
+Central section
+
+Lower neck 
+
+(N-terminal InvG)
+
+Cytoplasmic 
+
+PrgH ring
+
+Figure 1
+Needle complex structure from Salmonella Typhimurium. (a) Surface views of the 3-D reconstruction of the cryo–electron microscopy
+(cryo-EM) map of the S. Typhimurium needle complex. The different substructures are noted. (b) Surface view of a half-sectioned
+needle complex containing a trapped substrate within the central tunnel (118). Relevant structural details and dimensions are noted.
+(c) Docking of the atomic structures of the different needle complex components onto the 3-D cryo-EM map.
+
+Salmonella spp., the needle complex exhibits a threefold symmetry in which 15 subunits of the
+outer ring and neck connect to 24 subunits of the inner membrane ring (127). This observation
+implies that there is a local symmetry mismatch between the neck and inner ring subunits. A
+different stoichiometry has been proposed for needle complexes from Shigella spp. (69), although
+it is unclear whether this represents real differences in the organization of needle complexes from
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+419
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+different bacteria. PrgH and PrgK are assembled into two concentric rings 27 and 18 nm in diam-
+eter, respectively (126, 132) (Figure 1). PrgK is composed of a larger N-terminal lipid-anchored
+periplasmic domain separated from a short (and in some homologs absent) cytoplasmic domain
+by a transmembrane segment. PrgH shares a similar architecture of two domains separated by a
+single transmembrane segment but with an inverted topology. However, its cytoplasmic domain
+is much larger than PrgK’s and forms the IR2 ring of the needle complex. The secretin that forms
+the outer rings of the needle complex possesses a long periplasmic domain that makes the neck of
+the base substructure and directly contacts the inner rings (126).
+
+The atomic structures of the soluble domains of the base components revealed that these three
+proteins share a small domain with an αββαβ conﬁguration (132). The fact that all these three
+proteins organize in a ringlike fashion has led to the proposal that this domain may be responsible
+for ring formation. This hypothesis was suggested by the observation that one of these protein
+homologs, EscJ (homolog of PrgK), crystalized as a superhelical structure that, when collapsed in
+its axis, results in a ring of dimensions compatible with those predicted for the smaller ring within
+IR2 (126, 132). However, this domain is present in proteins that do not form rings, and, more
+important, this domain has been shown to be dispensable for ring formation (2). Therefore the
+relationship between the presence of this domain and ring formation is still unclear.
+The needle. The needle substructure is assembled from multiple (∼100) copies of a single ∼80-
+residue subunit, PrgI/YscF/MxiH, arranged in a helical fashion (31, 63, 83, 95) (Figure 1). In
+its native form, the length of the needle ranges from 30 to 70 nm, and its width ranges from 10
+to 13 nm. The crystal structures of needle protomers from different T3SSs show a conserved
+organization consisting of an α-helical hairpin made of two α-helices of roughly the same size
+linked by a short segment most often containing two prolines separated by two amino acids (the
+so-called PXXP motif) (40, 117, 152). The structure of the in vitro assembled PrgI needle ﬁlament
+from Salmonella spp. obtained by solid-state nuclear magnetic resonance (NMR) spectroscopy and
+Rossetta modeling has provided a high-resolution view of this substructure. The NMR structure
+shows an ∼80-A˚ -wide ﬁlament with an ∼25-A˚ -diameter lumen with a right-handed helical orga-
+nization consisting of ∼5.7 subunits per turn and a helical pitch of ∼24 A˚ (95). The assembled
+subunits show a short (5 amino acids) N-terminal extended domain followed by an α-helix, the
+PXXP loop (pointing toward the tip), and a C-terminal α-helix. The subunits are stabilized by
+multiple intersubunit and intrasubunit contacts resulting in a rather rigid structure. Of note is the
+presence of a small kink (residues Val-20 through Asn-22 in PrgI) that interrupts the N-terminal
+α-helix that is not observed in the crystal structure of the soluble protomer. It is tempting to
+hypothesize that this structure may be involved in signal transduction upon activation of the se-
+cretion machine (see below). The solid-state NMR structure shows that the N-terminal domain
+of PrgI faces the exterior of the needle ﬁlament whereas the C-terminus faces the lumen. Residues
+that line the lumen of the channel are highly conserved and mostly polar, and analysis of their
+electrostatic potential reveals alternating positive- and negative-charge regions. Although the sig-
+niﬁcance of this observation remains to be determined, it is intriguing to hypothesize that such
+alternating charge distribution may be important for substrate progression within the channel.
+Although a different organization was proposed for the needle structure of Shigella (57), a recent
+solid-state NMR study has conﬁrmed that the Shigella and Salmonella needles exhibit the same
+architecture (43).
+The inner rod. The inner rod is also built from a single ∼90-amino-acid subunit, PrgJ/YscI/MxiI
+in Salmonella/Yersinia/Shigella spp., respectively (98). The atomic structure solved by NMR of
+the PrgJ monomer from Salmonella is available, but in its soluble form this protein is largely
+
+420
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+unfolded (153). However, PrgJ is predicted to have a similar structure to the needle subunit PrgI,
+and in silico modeling has shown that these two proteins share a similar α-helical hairpin shape
+ﬂanked by ﬂexible regions. In fact, the two monomeric structures align very well around critical
+domains required for ﬁlament assembly (91). The modeled structure of the inner rod (based on
+the needle ﬁlament) suggests that, because of signiﬁcant divergence at its amino terminus, the
+inner rod may not be able to elongate beyond two turns of the helix (∼11 subunits). However, this
+structure has not been visualized at high resolution, and its actual length is currently unknown.
+
+Inner membrane export apparatus. All T3SSs contain ﬁve highly conserved inner membrane
+proteins that are essential for their function (InvA, SpaP, SpaQ, SpaR, and SpaS in Salmonella
+spp.) (6, 57, 61, 65, 66, 116). Recent cryo-EM studies have correlated the presence of a deﬁned
+density in the lumen of the inner rings of the needle complex with the presence of the inner
+membrane export apparatus (139). These results indicate that at least a subset of these inner
+membrane proteins are located within the needle complex, presumably serving as a protein channel
+to facilitate the export of target proteins through the inner membrane. Although these proteins
+are usually considered as a group, it is likely that they perform specialized functions. For example,
+one of these membrane proteins (InvA in Salmonella spp.) has a large cytoplasmic domain that, as
+shown by structural studies, can form a circular nonamer (2). Indeed, the presence of this protein
+has been correlated with the presence of a toroidal density immediately below the cytoplasmic IR2
+of the needle complex. Although the functional signiﬁcance of this observation is unknown, it is
+tempting to hypothesize that this ring structure may aid the preparation of substrates before their
+translocation through the inner membrane channel. Another member of this group of membrane
+proteins (SpaS in Salmonella spp.) has a unique C-terminal domain that functions as a protease
+for its own autocatalytic processing (49, 56, 88, 105). This processing event has been linked to
+altered secretion; therefore, this protein has been postulated to play a role in the establishment of
+the secretion hierarchy (see below).
+
+Cytosolic components. There are several cytosolic proteins that are essential for secretion and
+are conserved across all T3SSs (29, 30, 51, 57, 109, 145) (Figure 2). Although interactions among
+some of these components have been detected (73, 87, 131), the organization of these proteins
+within the bacterial cytoplasm remains poorly understood. In the ﬂagellar apparatus, some of these
+components form a deﬁned structure known as the C ring, which is involved in switching the
+direction of ﬂagellar rotation (48, 78). However, there is no deﬁnitive evidence of the existence of
+a stable C ring equivalent in T3SSs, and lack of a C-ring-like structure has been recently observed
+in tomographic reconstructions of T3SSs from different bacteria in situ (76, 84, 118). In fact,
+homologs of the ﬂagellar C ring component (FliG) that anchors this structure to the ﬂagellar
+body are absent from T3SSs. Nevertheless, it is likely that the homologs of C ring components
+form a complex that may dynamically associate with the needle complex. In fact, evidence for
+such a complex or platform has been obtained (87) (see below). Although some densities seen in
+tomograms of needle complexes in situ have been assigned to these components (2, 76, 84), there
+is still no direct demonstration of how these complexes are organized in the three-dimensional
+space. Another highly conserved cytosolic component is an ATPase with structural similarity to
+F0F1 ATPases (51, 145) that is thought to be involved in substrate recognition and unfolding (4)
+(see below). Low-resolution tomograms of T3SS needle complexes and associated structures in
+situ have correlated the presence of a density beneath the needle complex with the ATPase (2,
+76, 84). Although it is certainly expected that the ATPase associates with the needle complex at
+least at some point during its functional cycle, the data available are not sufﬁcient to establish
+its precise subcellular location. Indeed, at least in the ﬂagellar system evidence is accumulating
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+421
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+Host 
+membrane
+
+Outer
+membrane
+
+Inner
+membrane
+
+Chaperones
+
+SctN
+
+Effectors
+
+Translocon
+
+Needle tip
+
+SctF (needle)
+
+SctC
+SctI (inner rod)
+Socket
+SctD
+SctJ
+
+SctRST
+SctU
+SctK
+SctV
+SctQ
+SctO (?)
+
+SctL
+
+Figure 2
+Diagram of the needle complex and associated structures. A previously suggested common nomenclature
+(70) was used to indicate the potential localization of the different components and facilitate comparison
+across different systems.
+
+that the location of some of the cytoplasmic components is dynamic (42, 92), and therefore it
+is possible that the location of the ATPase may change during its functional cycle. An attractive
+model is that a linker protein (OrgB in Salmonella spp.) recruits the ATPase to the sorting platform
+(SpaO/OrgA in Salmonella spp.), which may bring it in close proximity to the needle complex
+and export apparatus. In support of this model, interactions among the relevant proteins have
+been demonstrated (46, 73, 87, 131). An alternative hypothesis implicates another cytoplasmic
+component (InvI in Salmonella spp.), which would work in a manner analogous to the stalk that
+links F0F1 ATPases to the plasma membrane. This proposal is largely (but not solely) based
+on the observation that the crystal structure of FliJ (the homolog in ﬂagella) exhibits structural
+similarity with the stalk protein (72). However, the structural feature that led to this proposal
+is in essence a coiled-coil domain, a feature not distinctive enough to extend functional analogy
+to these proteins. Indeed, the coiled-coil domain of FliJ shows greater similarity to coiled-coil
+
+422
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+domains of functionally unrelated proteins. Therefore more studies are needed to ascertain how
+much the analogy to ATP synthases can be extended to the T3SSs components.
+
+The needle tip structure and needle extension. The needle ﬁlament is either capped at its tip
+by a single protein (52, 110) or extended by yet another ﬁlament that is longer than the needle
+itself (79). Based on their structure similarities the tip proteins can be classiﬁed in two related
+groups: the SipD/IpaD (from Salmonella and Shigella spp.) and the LcrV/PcrV (from Yersinia
+and Pseudomonas spp.) families (Figure 3). The SipD/IpaD family displays a distinct domain
+organization: an N-terminal α-helical hairpin, a central coiled-coil domain, and a C-terminal
+region composed of mixed structural elements (54, 74). The LcrV/PcrV family has the conserved
+central coiled-coil domain but lacks the N-terminal α-helical hairpin and has an extended globular
+domain at is amino terminus that is absent from the SipD/IpaD family (44). Speciﬁc functions
+have been proposed for some of these deﬁned structural elements. For example, it is thought that
+the highly conserved central coiled coil links the tip proteins to the end of the needle ﬁlaments,
+presumably through interactions that in many ways may resemble those that link the needle
+protomers in the needle ﬁlament (96, 119, 151). The α-helical hairpin has been proposed to
+function as a self-chaperone preventing the self-oligomerization of IpaD/SipD within the bacterial
+cytoplasm (74). In the LcrV/PcrV family, which lacks this domain, the chaperone function is
+thought to be carried out by a cytoplasmic protein (LcrG/PcrG) (41, 100) that is absent in bacteria
+encoding members of the IpaD/SipD family. Under low-resolution EM the LcrV needle tip shows
+a “head, neck and base” conﬁguration (19). In contrast, the IpaD tip complex visualized by low-
+resolution cryo-EM exhibits a ﬁvefold symmetric scepter-like structure with a diameter of 78 A˚ at
+its widest point (52). Docking of the crystal structure of the IpaD monomer was possible only if a
+large conformation change of the C-terminal domain was introduced into the model, suggesting
+that the tip protein may undergo signiﬁcant conformational changes upon assembly into the tip
+complex.
+
+A substantial variation in the structure at the tip of the needle ﬁlament occurs in T3SSs from
+some pathogenic strains of Escherichia coli. In these T3SSs the needle extends into a long ﬁlament
+that presumably serves as a link between the bacteria and its target cell (79). In E. coli the ﬁlament
+is made of a single protein, EspA, which is structurally similar to the ﬂagellar protein FliC and
+assembles into a helical structure similar to the needle ﬁlament (149). However, in contrast to the
+rigid needle, the helical ﬁlament extension appears to be ﬂexible because despite having a ﬁxed
+twist of 5.6 subunits per turn, its axial rise varies substantially, from 3.6 A˚ to 5.6 A˚ (141). The
+functional signiﬁcance of this observation is currently unknown.
+
+The translocon. The last step in the T3SS-mediated delivery of effector proteins into eukaryotic
+cells is their passage through the target host cell membrane (see below). This process is mediated
+by the protein translocases (SipB/SipC, IpaB/IpaC, and YopB/YopD in Salmonella, Shigella, and
+Yersinia spp., respectively) (28, 121). After secretion by the T3SS, the translocases insert into the
+target host cell membrane, where they presumably form a protein channel (16, 111). Although
+the protein translocases are not well conserved at the primary amino acid sequence level, they
+are all α-helical proteins with transmembrane helices (71, 108, 123). The crystal structures of the
+amino terminus of IpaB and SipB revealed the presence of a trimeric coiled-coil domain formed
+by three antiparallel α-helices, an organization reminiscent of other membrane-active proteins
+such as colicins or viral envelope glycoproteins (13). The mechanism by which the translocases
+insert in the membrane is not understood, although it is likely that it is orchestrated by the tip
+complex. Indeed, in the absence of the tip protein, the translocases cannot insert into the host
+target membrane, although they can be efﬁciently secreted (28, 67, 97, 138).
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+423
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+a
+
+Tip-class-1
+
+Tip-class-2
+
+SipD
+
+IpaD
+
+BipD
+
+LcrV
+
+LcrG
+
+Coiled coil
+Antiparallel 
+β-sheet
+Mixed α/β
+N-terminal 
+self-chaperone
+
+90˚
+
+Salmonella
+Typhimurium
+
+Shigella
+flexneri
+
+Burgholderia
+pseudomallei
+
+Yersinia
+pestis
+
+b
+
+IpaD
+
+Deoxycholate
+
+Cell contact ?
+
+Figure 3
+The tip complex of type III secretion systems. (a) Crystal structures of tip proteins from different bacteria. Rel-
+evant structural features are noted. (b) Conformational changes in the IpaD tip protein induced by the binding
+of deoxycholate, which is thought to mimic the activation event that occurs upon contact with target cells.
+
+NEEDLE COMPLEX ASSEMBLY
+Assembly of the needle complex and associated structures occurs in a step-wise fashion (46, 47,
+135, 139) (Figure 4). The sec machinery mediates the export or membrane insertion of all the
+base and inner membrane export apparatus components prior to their assembly into the ﬁnal base
+substructure. Assembly starts at the inner membrane with the formation of a complex of a subset
+
+424
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+Outer
+membrane
+
+Export apparatus
+
+assembly
+
+Inner
+membrane
+
+Linkage of
+
+outer and inner
+
+rings
+
+Recruitment of
+
+cytoplasmic
+components
+(SctKLNOQ)
+
+Inner rod and 
+needle assembly
+
+(SctFI)
+
+Outer ring
+assembly
+
+(SctC)
+
+Inner ring
+assembly
+
+SctRT
+
++ SctS
+
++ SctUV
+
++ SctJ
+
++ SctCD
+
+Sec-mediated membrane insertion/
+
+translocation of components
+
+Sorting
+platform 
+(SctKLQ)
+
+ATPase
+(SctN)
+
+SctO (?)
+
+Early substrates
+
+(SctFIP)
+
+Figure 4
+Model for the assembly of the type III secretion needle complex and associated structures. To facilitate comparison of the assembly
+pathway in different type III secretion systems, a previously suggested nomenclature of the different components was used (70) (see
+Table 1).
+
+of the export apparatus components (SpaP and SpaR in Salmonella spp.) (139), followed by the
+incorporation of additional export apparatus components, which ﬁnally template the assembly of
+the lower rings, ﬁrst the inner ring of IR1 (made of PrgK in Salmonella spp.) and then the outer
+rings of IR1 and IR2 made of PrgH (see Figure 4). Several observations support this model.
+Although assembly of the needle complex can occur in the absence of the inner membrane export
+apparatus, the efﬁciency of assembly is drastically reduced. Furthermore, at least four of the ﬁve
+inner membrane apparatus components (SpaP, SpaQ, SpaR, and SpaS in Salmonella spp.) cannot be
+incorporated into previously assembled bases, indicating that functional needle complexes cannot
+be assembled without the prior deployment of the export apparatus (139). The outer rings and neck
+are formed by a single protein of the secretin family (InvG in Salmonella spp.), a process that in most
+(but not all) systems requires the assistance of an accessory lipoprotein of the pilotin family (InvH
+in Salmonella spp.). The outer and inner rings of the base substructure can assemble independently,
+although their stability in the absence of one another is compromised (46). Therefore, it is likely
+that these two structures are assembled independently but are rapidly linked to one another to
+form a stable structure.
+
+Once the base substructure is assembled, several cytoplasmic proteins must be recruited so that
+the base can become competent for type III secretion. Although this process is poorly understood,
+the available evidence suggests that some of these cytoplasmic factors may be preassembled into a
+complex prior to their recruitment to the base. For example, it is likely that the components of the
+sorting platform (OrgA and SpaO) exist in the cytoplasm in a preassembled state (87). Whether
+the ATPase is part of that preassembled complex is unclear, but it is known that the recruitment
+of the ATPase to the needle complex requires the components of the sorting platform (2, 46).
+How the sorting platform is recruited to the needle complex and even what speciﬁc interactions
+bring this cytoplasmic complex to that site are not known. Although it has been proposed
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+425
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+that the cytoplasmic domain of the InvA family of proteins is involved in the recruitment of
+cytoplasmic components (107), recent electron tomography studies suggest otherwise (2). Most
+likely, components of the needle complex itself serve as an anchor for this recruitment given that
+in its absence there is no recruitment of cytoplasmic components to the membrane.
+
+Once the cytoplasmic components are recruited, the base substructure can function as a limited-
+speciﬁcity type III protein secretion machine that can only recognize the inner rod and needle
+protomers as well as an accessory protein required for proper needle complex assembly (InvJ/YscP
+in Salmonella and Yersinia spp.). As with ﬂagella, assembly of the needle substructure occurs by
+sequential addition of subunits at the growing tip (37, 117). Unlike ﬂagella, however, assembly
+of the T3SS needle does not require a capping protein that facilitates addition of the subunits at
+the tip. Assembly of the inner rod is less well understood but, unlike assembly of the needle sub-
+structure, it requires the function of an accessory protein (InvJ in Salmonella spp.), which like the
+ﬂagellar capping proteins does not form part of the ﬁnal structure and is discarded in the culture
+supernatant (91, 98). In the absence of InvJ, assembly of the inner rod does not take place, although
+needles of improper length (see below) can efﬁciently assemble. At some point during the assem-
+bly process the type III secretion machine switches substrate speciﬁcity so that it can no longer
+recognize the early substrates (needle and inner rod protomers) and becomes competent for the
+secretion of middle (i.e., the tip protein and translocases) and late substrates (i.e., effector proteins).
+The mechanisms by which the secretion machine is reprogrammed are incompletely understood,
+although the accessory protein InvJ/YscP is required for this process. In its absence, the needle
+complex assembles abnormally long needles because it is unable to switch substrates (83). The
+function of this accessory protein is incompletely understood and the subject of some controversy.
+For example, YscP has been proposed to function as a molecular ruler, measuring the length of the
+needle and triggering substrate switching once an appropriate length of the needle is achieved (75)
+(Figure 5). How this protein would measure the length is not understood, but it has been proposed
+that the fully extended form of YscP located within the lumen of the secretion channel performs
+the measuring by interacting with proteins at the tip and at the base of the needle complex (YscU
+in Yersinia spp., see below), triggering substrate switching. Support for this model comes from
+the observation that alterations in the length of YscP result in needles of different lengths (75). A
+signiﬁcant caveat for these experiments is that measurements were not made with isolated needle
+complexes but on shed needles, which can be subject to artifacts. In addition, artiﬁcial elongation of
+YscP could result in partial loss of function that could lead to longer needles (see below), which can
+further complicate the interpretation of these results. Finally, this model is not compatible with the
+fact that needle length in wild-type needle complexes varies substantially, following a rather broad
+length distribution (98). This distribution would not be expected if a molecular ruler mechanism
+were involved in length determination and, instead, it suggests a stochastic process. An alternative
+model has been proposed based on the observation that InvJ is required for the assembly of the
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−→
+
+Figure 5
+Proposed models for the mechanism of substrate switching and needle-length control in the assembly
+pathway of the needle complex. In the molecular ruler model, a regulatory protein, depicted in red, is
+engaged by the secretion machine while remaining tethered to the cytoplasmic side and the tip of the needle
+complex by its termini. Once fully extended, the regulatory protein triggers conformational changes on the
+cytoplasmic side of the secretion machine that lead to substrate switching. In the timer model, the regulatory
+protein (depicted in red ) facilitates the assembly of the inner rod and its ﬁrm anchoring to the base, which
+results in a conformational change on the cytoplasmic side of the needle complex leading to substrate
+switching. In this model, the termination of assembly of the inner rod determines substrate switching. See
+the text for a more detailed discussion.
+
+426
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+a   Ruler model
+
+Outer
+membrane
+
+Inner
+membrane
+
+SctU
+
+SctF (needle)
+
+SctP
+
+Early substrates
+
+b   Timer model
+
+Outer
+membrane
+
+Inner
+membrane
+
+Needle-length
+
+measuring
+
+Switch
+induction
+
+Later substrates
+
+9
+
+12
+
+6
+
+3
+
+Inner rod
+assembly
+timing
+
+Switch
+induction
+
+SctF (needle)
+
+SctI (inner rod)
+
+SctP
+
+Early substrates
+
+Later substrates
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+427
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+inner rod, a process that leads to the ﬁrm anchoring of the needle ﬁlament to the base (91, 98)
+(Figure 5). Anchoring of the needle results in substantial conformational changes on the cytoplas-
+mic face of the needle complex (98, 99), which is hypothesized to, directly or indirectly, trigger
+substrate switching. Therefore in this model the termination of the assembly of the inner rod is the
+critical event that determines substrate switching. In this case the role of InvJ in needle determi-
+nation is indirect, through its role in inner rod assembly. It has been proposed that SpaS/YscU, a
+component of the export apparatus, may also be involved in the mechanisms of substrate switching
+(18, 49, 120, 147). As discussed above, the SpaS/YscU protein family possesses a long cytoplasmic
+domain with autocatalytic protease activity (56). Mutations in the catalytic site result in a strain
+that is competent for secretion of effectors but unable to secrete the protein translocases (49). It has
+been proposed that the autoproteolitic cleavage of SpaS, which is hypothesized to be triggered by
+its putative interaction with InvJ/YscP, may determine substrate switching. Although there is no
+question that the catalytic mutant of SpaS exhibits altered secretion, needle length control is unaf-
+fected in this mutant, which is inconsistent with its proposed role in needle length determination.
+
+SUBSTRATE RECOGNITION BY THE TYPE III
+PROTEIN SECRETION MACHINE
+Proteins destined to travel the type III secretion pathway are targeted to the secretion machine by
+a set of secretion signals that ensure speciﬁcity (11). One of the secretion signals encompasses the
+ﬁrst 20–25 amino acids (104, 130). This signal is highly variable in sequence and can often tolerate
+signiﬁcant changes without affecting function (10, 122), an observation that led to the proposition
+that the 5(cid:4) mRNA of some type III secreted proteins was responsible for their targeting (8, 9).
+However, it is now believed that the amino acid sequence acts as the targeting element and that
+the tolerance for mutagenesis stems from the fact that the targeting signal is indeed unstructured.
+Furthermore, bioinformatic analyses have identiﬁed different common features in this amino acid
+sequence (101). These features include enrichment in serine and threonine and depletion of charge
+and hydrophobic residues such as leucine. A second signal, at least in some type III secreted pro-
+teins, serves as a binding site for speciﬁc chaperones and spans from residues ∼25–100 (26, 130,
+142, 143). Unlike other chaperones, such as the GroEL and DnaK/Hsp70 protein family, T3SS-
+associated chaperones lack nucleotide-binding or hydrolysis activities. T3SS chaperones exhibit
+limited primary amino acid sequence similarity to one another, although they share structural sim-
+ilarity as well as some physical properties, such as small size and an acidic pI (134). Based on their
+tertiary structure and speciﬁcity of binding, these chaperones have been classiﬁed in two general
+groups referred to as class I and class II (33, 115, 136). An additional distinction is usually made
+among class I chaperones, between those that bind a single protein (unicargo) and those that bind
+several (multicargo). T3SS chaperones usually form homodimers along a helical interface and ex-
+hibit extended hydrophobic patches and a large hydrophobic groove that accommodates the amino
+terminal region of their cognate effectors (14, 133). A notable feature of this interaction is that
+the chaperone-bound effector domain is completely nonglobular, although it retains signiﬁcant
+amounts of secondary structure. Because substrates are transported in at least a partially unfolded
+state (118), it is believed that this conﬁguration aids the secretion process. Although the primary
+sequence of chaperone-binding domains varies greatly, some common motifs have been identi-
+ﬁed. For example, a β-strand motif is present at the amino-terminal region of many effectors, and
+a conserved chaperone-binding domain consensus sequence [(LMIF)1XXX(IV)5XX(IV)8XN10]
+that overlaps with the β-motif has also been identiﬁed (35, 93). Multicargo chaperones exhibit a
+similar interacting interface with their cognate effectors although usually burying less surface (93).
+In the absence of chaperones, particularly those with a single cargo, the cognate effector proteins
+
+428
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+are degraded within the bacterial cytoplasm (102, 143). This is often not the case for effectors
+chaperoned by multicargo chaperones (50, 89). In this case it is possible that the stability of these
+effectors in the absence of cognate chaperone may be necessary to facilitate complex assembly
+given that they are usually encoded away from their cognate chaperones. This is most often not
+the case for single-cargo chaperones, which not only are encoded in the immediate vicinity of their
+cognate cargo but also, in some instances, have speciﬁc translation regulatory mechanisms in place
+to coordinate their synthesis with that of their effector (22). It is now well accepted that the main
+function of these chaperones is to target their cognate effectors to the secretion pathway. Absence
+of these chaperones results in lack of secretion of their corresponding effectors. Furthermore,
+removal of the chaperone-binding domain also prevents secretion through their cognate type III
+secretion pathway (124, 146), although mistargeting to the ﬂagellar secretion pathway (by the
+amino-terminal secretion sequence) can occur (90). Class II chaperones usually interact with pro-
+tein translocases and, in some T3SSs, with protomers of the needle or of the extended appendages
+such as EspA (36, 102). The structural feature that characterizes this type of chaperones is the pres-
+ence of tetratricopeptide repeats (23). Although it is clear that these chaperones stabilize or prevent
+detrimental interactions of their cognate target proteins, their role in secretion is still unclear.
+
+The mechanisms by which substrates of the type III secretion systems are ultimately recognized
+are poorly understood. The chaperone-effector complexes are most likely recognized and targeted
+to the secretion machinery by a group of cytoplasmic proteins that are associated with the needle
+complex such as the sorting platform (see above). It has also been shown that the ATPase interacts
+with chaperone/effector complexes (64) and that it is able to dissociate them (4), a necessary step
+before secretion given that the chaperones remain in the cytoplasm after secretion of the cognate
+effector. Furthermore, chaperones are essential for the recruitment of the secreted proteins to the
+sorting platform (87). It is therefore possible that the chaperones are involved in the establishment
+of the secretion hierarchy, perhaps by exhibiting different afﬁnity to the relevant sorting platform
+components. Subsequent to their recognition by the secretion machine, proteins must be at least
+partially unfolded prior to or simultaneously with their delivery to the secretion channel, which is
+too narrow to accommodate folded proteins. The ATPase is capable of unfolding effector proteins
+in vitro, so it is possible that it plays an equivalent role in vivo (4).
+
+ENERGIZING THE TYPE III SECRETION SYSTEM
+Although there are no reliable measurements of the speed at which proteins are moved through
+individual type III secretion machines, the available estimates suggest that the process must be
+fast (125). Furthermore, the type III secretion machine is able to deliver proteins that have been
+engaged on the bacterial cytoplasm directly into the host target cell. Undoubtedly these activities
+must demand a signiﬁcant amount of energy. There are at least two possible sources of energy
+for this system. One source is likely derived from the hydrolysis of ATP by the conserved T3SS-
+associated ATPase, because it is known that its catalytic activity is essential for secretion (51,
+145). How ATP hydrolysis could be coupled to the secretion process is incompletely understood.
+However, given that at least in vitro these ATPases can unfold the effector proteins (3), it is possible
+that the energy stored in the unfolded proteins contributes to the progression of substrates through
+the secretion channel. Several pieces of evidence indicate that the proton motive force (PMF) is
+also required for type III secretion (144). However, how the PMF is potentially coupled to the
+secretion process is unknown. It has been proposed that a conserved component of the inner
+membrane export apparatus in the ﬂagellar system can function as a proton-protein antiporter
+that uses the two components of proton motive force, ψ and pH, for protein export (106).
+However, deﬁnitive demonstration of this hypothesis awaits further investigation. Recently a
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+429
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+radically different mechanism has been proposed to explain the movement of ﬂagellar subunits
+within the ﬂagellar channel (55). This model proposes a pulling mechanism derived from the
+crystallization of subunits at the growing ﬂagellar tip that would harness the entropic energy of
+the unfolded subunits. In this model, subunits would be linked in a head-to-tail conﬁguration
+within the ﬂagellar channel so that the crystallization of subunits at the tip would pull all the
+subunits in the channel. Although this model could potentially account for the movement of the
+subunits that are destined to form the needle substructure of the needle complex, it is unclear how
+this model could explain the movement of effector proteins. Effector proteins do not crystalize
+at the tip, and their diversity makes the proposed head-to-tail arrangement within the secretion
+channel hard to accommodate. Furthermore, this model is at odds with previous thermodynamic
+calculations, which led to the conclusion that diffusion could account for the movement of ﬂagellar
+subunits within the ﬂagellar channel (137, 150). Therefore, more experiments will be required to
+explore the universality and validity of this new proposal.
+
+SENSING AND FIRING: TYPE III SECRETION MACHINES IN ACTION
+Type III secretion machines require an activating signal before they can be competent for protein
+secretion and delivery. Although the activation process is poorly understood, there is compelling
+evidence that activation occurs upon contact with target cells (103, 154). Such a mechanism
+presumably ensures that effector proteins are delivered directly to target cells and not to the
+extracellular space, where they would be functionally irrelevant. How cell contact activates the
+secretion machine is unknown, but most likely the tip complex is involved in the sensing process
+(15). In fact, some compounds that bind the tip complex, such as bile salts or Congo red, can
+stimulate type III secretion (12, 113), presumably by introducing speciﬁc conformational changes
+in the tip protein that probably resemble those induced by cell contact (25, 45, 140) (Figure 3).
+The signal presumably sensed by the tip complex must be transduced to the cytoplasmic side of
+the secretion machine, a process most likely mediated by conformational changes in the needle
+and inner rod substructures of the needle complex (15). In support of this hypothesis, several
+mutations in the needle and inner rod proteins have been identiﬁed, which result in derepressed
+and/or otherwise altered patterns of protein secretion (27, 39, 77, 91, 138). Activation of the
+T3SS ultimately leads to the deployment of the translocases on the target cell membrane, which
+in turn will mediate the passage of effectors through the target cell plasma membrane. In this
+model, the secretion machine must engage the translocases prior to the effectors, a mechanism
+that most likely involves a cytoplasmic sorting platform. Consistent with this model, prior to
+activation of the secretion machine, only the translocases are found on the sorting platform, and
+it is only in the absence of the translocases that effector proteins can be detected at this location
+(87). Deployment of the translocases leads to intimate attachment of the bacteria to the target
+host cell, which presumably aids the translocation process (86). An alternative two-step model has
+been proposed in which effector proteins are ﬁrst delivered to the bacterial surface and a second
+step, akin to the mechanisms of AB toxins, in which the effectors are moved through the plasma
+membrane by the protein translocases (5). This model was proposed based on the observations
+that, under certain conditions, effectors are seen on the surface of Yersinia spp. and effector proteins
+artiﬁcially deposited on the bacterial surface can be translocated into eukaryotic cells. However,
+in other bacteria no effectors are seen on the bacterial surface prior to target cell contact (85, 103,
+154). Furthermore, it is possible that the observed translocation of exogenously applied effector
+proteins (5) is the result of the artiﬁcial capture of translocation intermediates on the bacterial
+surface. More experiments will be required to support this model, which is inconsistent with a
+substantial amount of available data.
+
+430
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+OUTSTANDING QUESTIONS
+Although a great deal is known about the structure of the type III secretion machine, there are still
+protein densities observed in the high-resolution cryo-EM map that are unaccounted for. Some of
+these densities are likely to represent transmembrane domains of export apparatus components,
+whose crystal structures are not yet available. Short of solving the atomic structure of the entire
+needle complex, the solution of the atomic structures of these membrane proteins is clearly one of
+the major challenges for the future. The actual mechanism of secretion is still poorly understood,
+and there are many outstanding questions that are likely to guide and inspire future research. How
+is the host cell sensed and how is the signal transduced to the secretion machinery, in particular
+to its cytoplasmic components? If the needle and inner rod are indeed the signal transducers,
+how do they accomplish this function? Are they as rigid as their structures suggest, or do they
+transduce signals by yet-undetected conformational changes? How does the sorting platform select
+its substrates and deliver them to the secretion channel? Are there differences in the recognition
+mechanisms of translocases and effectors? How do the substrates move through the secretion
+channel, and what is the source of energy that drives the secretion process? How do the effectors
+traverse the target cell plasma membrane? The last 10 years have seen remarkable progress in the
+understanding of the structure and organization of the type III secretion machine. However this
+knowledge has been largely focused on snapshots of the machine, with limited studies focusing on
+the dynamic aspects of the secretion process. With the availability of powerful live-imaging tools,
+it is expected that during the next few years we will be able to catch the type III secretion machine
+in action. Finally, the central role of the T3SS in the pathogenesis of several bacterial pathogens
+of great importance to public health has stimulated efforts to develop novel therapeutic strategies
+targeted to this machine. It is expected that during the next 10 years these efforts may begin to
+translate into effective therapeutics.
+
+DISCLOSURE STATEMENT
+The authors are not aware of any afﬁliations, memberships, funding, or ﬁnancial holdings that
+might be perceived as affecting the objectivity of this review.
+
+ACKNOWLEDGMENTS
+We apologize to our colleagues that due to the strict limits imposed on the length of the manuscript
+and the limited number of references that can be cited, we have not been able to discuss or cite
+important papers. Research in the Gal´an laboratory related to work discussed in this article is
+supported by Grants AI030492 and AI055472 from the National Institutes of Health.
+
+LITERATURE CITED
+
+1. Abby S, Rocha EPC. 2012. The non-ﬂagellar type III secretion system evolved from the bacterial ﬂag-
+
+ellum and diversiﬁed into host-cell adapted systems. PLoS Genet. 8:e1002983
+
+2. Abrusci P, Vergara-Irigaray M, Johnson S, Beeby M, Hendrixon D, et al. 2013. Architecture of the major
+
+component of the type III secretion system export apparatus. Nat. Struct. Mol. Biol. 20:99–104
+
+3. Akeda Y, Gal´an JE. 2004. Genetic analysis of the Salmonella enterica type III secretion-associated ATPase
+
+InvC deﬁnes discrete functional domains. J. Bacteriol. 186:2402–12
+
+4. Akeda Y, Gal´an JE. 2005. Chaperone release and unfolding of substrates in type III secretion. Nature
+
+437:911–15
+
+5. Akopyan K, Edgren T, Wang-Edgren H, Rosqvist R, Fahlgren A, et al. 2011. Translocation of surface-
+
+localized effectors in type III secretion. Proc. Natl. Acad. Sci. USA 108:1639–44
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+431
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+6. Allaoui A, Woestyn S, Sluiters C, Cornelis GR. 1994. YscU, a Yersinia enterocolitica inner membrane
+
+protein involved in Yop secretion. J. Bacteriol. 176:4534–42
+
+7. Alvarez-Martinez C, Christie P. 2009. Biological diversity of prokaryotic type IV secretion systems.
+
+Microbiol. Mol. Biol. Rev. 73:775–808
+
+8. Anderson DM, Fouts DE, Collmer A, Schneewind O. 1999. Reciprocal secretion of proteins by the
+bacterial type III machines of plant and animal pathogens suggests universal recognition of mRNA
+targeting signals. Proc. Natl. Acad. Sci. USA 96:12839–43
+
+9. Anderson DM, Schneewind O. 1997. A mRNA signal for the type III secretion of Yop proteins by
+
+Yersinia enterocolitica. Science 278:1140–3
+
+10. Anderson DM, Schneewind O. 1999. Yersinia enterocolitica type III secretion: an mRNA signal that
+
+couples translation and secretion of YopQ. Mol. Microbiol. 31:1139–48
+
+11. Arnold R, Jehl A, Rattei T. 2010. Targetting effectors: the molecular recognition of type III secreted
+
+proteins. Microbes Infect. 12:346–58
+
+12. Bahrani FK, Sansonetti PJ, Parsot C. 1997. Secretion of Ipa proteins by Shigella ﬂexneri: inducer molecules
+
+and kinetics of activation. Infect. Immun. 65:4005–10
+
+13. Barta ML, Dickenson NE, Patil M, Keightley A, Wyckoff GJ, et al. 2012. The structures of coiled-coil
+domains from type III secretion system translocators reveal homology to pore-forming toxins. J. Mol.
+Biol. 417:395–405
+
+14. Birtalan SC, Phillips RM, Ghosh P. 2002. Three-dimensional secretion signals in chaperone-effector
+
+complexes of bacterial pathogens. Mol. Cell 9:971–80
+
+15. Blocker A, Deane J, Veenendaal A, Roversi P, Hodkinson J, et al. 2008. What’s the point of the type III
+
+secretion needle? Proc. Natl. Acad. Sci. USA 105:6507–13
+
+16. Blocker A, Gounon P, Larquet E, Niebuhr K, Cabiaux V, et al. 1999. The tripartite type III secretion
+
+of Shigella ﬂexneri inserts IpaB and IpaC into host membranes. J. Cell Biol. 147:683–93
+
+17. Blocker A, Jouihri N, Larquet E, Gounon P, Ebel F, et al. 2001. Structure and composition of the Shigella
+
+ﬂexneri “needle complex”, a part of its type III secretion. Mol. Microbiol. 39:652–63
+
+18. Botteaux A, Kayath C, Page A, Jouihri N, Sani M, et al. 2010. The 33 carboxyl-terminal residues of
+Spa40 orchestrate the multi-step assembly process of the type III secretion needle complex in Shigella
+ﬂexneri. Microbiology 156:2807–17
+
+19. Broz P, Mueller CA, Muller SA, Philippsen A, Sorg I, et al. 2007. Function and molecular architecture
+
+of the Yersinia injectisome tip complex. Mol. Microbiol. 65:1311–20
+
+20. Buttner D. 2012. Protein export according to schedule: architecture, assembly, and regulation of type III
+
+secretion systems from plant- and animal-pathogenic bacteria. Microbiol. Mol. Biol. Rev. 76:262–310
+
+21. Buttner D, He S. 2009. Type III protein secretion in plant pathogenic bacteria. Plant Physiol. 150:1656–64
+22. Button JE, Gal´an JE. 2011. Regulation of chaperone/effector complex synthesis in a bacterial type III
+
+secretion system. Mol. Microbiol. 81:1474–83
+
+23. Cerveny L, Straskova A, Dankova V, Hartlova A, Ceckova M, et al. 2013. Tetratricopeptide repeat motifs
+
+in the world of bacterial pathogens: role in virulence mechanisms. Infect. Immun. 81:629–35
+
+24. Chatterjee S, Battaile K, Lovell S, Plano G, De Guzman R. 2013. Structure and biophysics of type III
+
+secretion in bacteria. Biochemistry 52:2508–17
+
+25. Chatterjee S, Zhong D, Nordhues B, Battaile K, Lovell S, De Guzman RN. 2011. The crystal struc-
+ture of the Salmonella type III secretion system tip protein SipD in complex with deoxycholate and
+chenodeoxycholate. Portein Sci. 20:75–86
+
+26. Cheng LW, Anderson DM, Schneewind O. 1997. Two independent type III secretion mechanisms for
+
+YopE in Yersinia enterocolitica. Mol. Microbiol. 24:757–65
+
+27. Cherradi Y, Schiavolin L, Moussa S, Megharoui A, Meksem A, et al. 2013. Interplay between pre-
+dicted inner-rod and gatekeeper in controlling substrate speciﬁcity of the type III secretion system. Mol.
+Microbiol. 87:1183–99
+
+28. Collazo C, Gal´an JE. 1997. The invasion-associated type III system of Salmonella typhimurium directs
+
+the translocation of Sip proteins into the host cell. Mol. Microbiol. 24:747–56
+
+29. Collazo CM, Gal´an JE. 1996. Requirement for exported proteins in secretion through the invasion-
+
+associated type III system of Salmonella typhimurium. Infect. Immun. 64:3524–31
+
+432
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+30. Collazo CM, Zierler MK, Gal´an JE. 1995. Functional analysis of the Salmonella typhimurium invasion
+genes invl and invJ and identiﬁcation of a target of the protein secretion apparatus encoded in the inv
+locus. Mol. Microbiol. 15:25–38
+
+31. Cordes FS, Komoriya K, Larquet E, Yang S, Egelman EH, et al. 2003. Helical structure of the needle
+
+of the type III secretion system of Shigella ﬂexneri. J. Biol. Chem. 9:17103–7
+
+32. Cornelis G. 2006. The type III secretion injectisome. Nat. Rev. Microbiol. 4:811–25
+33. Cornelis GR, van Gijsegem F. 2000. Assembly and function of type III secretory systems. Annu. Rev.
+
+Microbiol. 54:735–74
+
+34. Correa V, Majerczak D, Ammar E-D, Merighi M, Pratt R, et al. 2012. The bacterium Pantoea stewartii
+uses two different type III secretion systems to colonize its plant host and insect vector. Appl. Environ.
+Microbiol. 78:6327–36
+
+35. Costa S, Schmitz A, Jahufar F, Boyd J, Cho M, et al. 2012. A new means to identify type 3 secreted effec-
+tors: functionally interchangeable class IB chaperones recognize a conserved sequence. MBio 3:e00243–11
+36. Creasey E, Friedberg D, Shaw R, Umanski T, Knutton S, et al. 2003. CesAB is an enteropathogenic
+Escherichia coli chaperone for the type III translocator proteins EspA and EspB. Microbiology 149:469–77
+37. Crepin V, Shaw R, Abe C, Knutton S, Frankel G. 2005. Polarity of enteropathogenic Escherichia coli
+
+EspA ﬁlament assembly and protein secretion. J. Bacteriol. 187:2881–89
+
+38. Daniell S, Takahashi N, Wilson R, Friedberg D, Rosenshine I, et al. 2001. The ﬁlamentous type III
+
+secretion translocon of enteropathogenic Escherichia coli. Cell Microbiol. 3:865–71
+
+39. Davis A, Mecsas J. 2010. Mutations in the Yersinia pseudotuberculosis type III secretion system needle
+
+protein, YscF, that speciﬁcally abrogate effector translocation into host cells. J. Bacteriol. 189:83–97
+
+40. Deane JE, Roversi P, Cordes F. 2006. Molecular model of a type III secretion system needle: implications
+
+for host-cell sensing. Proc. Natl. Acad. Sci. USA 103:12529–33
+
+41. DeBord K, Lee V, Schneewind O. 2001. Roles of LcrG and LcrV during type III targeting of effector
+
+Yops by Yersinia enterocolitica. J. Bacteriol. 183:4588–98
+
+42. Delalez N, Wadhams G, Rosser G, Xue Q, Brown M, et al. 2010. Signal-dependent turnover of the
+
+bacterial ﬂagellar switch protein FliM. Proc. Natl. Acad. Sci. USA 107:11347–51
+
+43. Demers J, Sgourakis N, Gupta R, Loquet A, Giller K, et al. 2013. The common structural architecture
+
+of Shigella ﬂexneri and Salmonella typhimurium type three secretion needles. PLoS Pathog. 9:e1003245
+
+44. Derewenda U, Mateja A, Devedjiev Y, Routzahn KM, Evdokimov AG, et al. 2004. The structure of
+Yersinia pestis V-antigen, an essential virulence factor and mediator of immunity against plague. Structure
+12:301–6
+
+45. Dickenson NE, Zhang L, Epier C, Adam P, Picking W, Picking WD. 2011. Conformational changes
+in IpaD from Shigella ﬂexneri upon binding bile salts provide insight into the second step of type III
+secretion. Biochemistry 50:172–80
+
+46. Diepold A, Amstutz M, Abel S, Sorg I, Jenal U, Cornelis G. 2010. Deciphering the assembly of the
+
+Yersinia type III secretion injectisome. EMBO J. 29:1928–40
+
+47. Diepold A, Wiesand U, Cornelis G. 2011. The assembly of the export apparatus (YscR,-S,-T,-U,-V)
+of the Yersinia type III secretion apparatus occurs independently of other structural components and
+involves the formation of an YscV oligomer. Mol. Microbiol. 82:502–14
+
+48. Driks A, DeRosier D. 1990. Additional structures associated with bacterial ﬂagellar basal body. J. Mol.
+
+Biol. 211:669–72
+
+49. Edqvist P, Olsson J, Lavander M, Sundberg L, Forsberg A, et al. 2003. YscP and YscU regulate substrate
+
+speciﬁcity of the Yersinia type III secretion system. J. Bacteriol. 185:2259–66
+
+50. Ehrbar K, Friebel A, Miller S, Hardt W. 2003. Role of the Salmonella pathogenicity island 1 (SPI-1)
+protein InvB in type III secretion of SopE and SopE2, two Salmonella effector proteins encoded outside
+of SPI-1. J. Bacteriol. 185:7279–84
+
+51. Eichelberg K, Ginocchio C, Gal´an JE. 1994. Molecular and functional characterization of the Salmonella
+typhimurium invasion genes invB and invC: homology of InvC to the F0F1 ATPase family of proteins.
+J. Bacteriol. 176:4501–10
+
+52. Epier C, Dickenson N, Bullitt E, Picking W. 2012. Ultrastructural analysis of IpaDa at the tip of the
+
+nascent MxiH type III secretion apparatus of Shigella ﬂexneri. J. Mol. Biol. 420:29–39
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+433
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+53. Erhardt M, Namba K, Hughes K. 2010. Bacterial nanomachines: the ﬂagellum and type III injectisome.
+
+Cold Spring Harb. Perspect. Biol. 2:a000299
+
+54. Erskine PT, Knight MJ, Ruaux A, Mikolajek H, Wong Fat Sang N, et al. 2006. High resolution structure
+of BipD: an invasion protein associated with the Type III secretion system of Burkholderia pseudomallei.
+J. Mol. Biol. 363:125–36
+
+55. Evans L, Poulter S, Terentjev E, Hughes C, Fraser G. 2013. A chain mechanism for ﬂagellar growth.
+
+Nature 504:287–90
+
+56. Ferris H, Furukawa Y, Minamino T, Kroetz M, Kihara M, et al. 2005. FlhB regulates ordered export of
+57. Fields KA, Plano GV, Straley SC. 1994. A low-Ca2+ response (LCR) secretion ( ysc) locus lies within the
+
+ﬂagellar components via autocleavage mechanism. J. Biol. Chem. 280:41236–42
+
+lcrB region of the LCR plasmid in Yersinia pestis. J. Bacteriol. 176:569–79
+
+58. Fuji T, Cheung M, Blanco A, Kato T, Blocker A, Namba K. 2012. Structure of a type III secretion needle
+at 7 A˚ resolution provides insight into its assembly and signaling mechanisms. Proc. Natl. Acad. Sci. USA
+109:4461–66
+
+59. Gal´an J. 2009. Common themes in the design and function of bacterial effectors. Cell Host Microbe
+
+5:571–79
+
+60. Gal´an JE, Curtiss R III. 1989. Cloning and molecular characterization of genes whose products allow
+
+Salmonella typhimurium to penetrate tissue culture cells. Proc. Natl. Acad. Sci. USA 86:6383–87
+
+61. Gal´an JE, Ginocchio C, Costeas P. 1992. Molecular and functional characterization of the Salmonella
+
+invasion gene invA: homology of InvA to members of a new protein family. J. Bacteriol. 17:4338–49
+
+62. Gal´an JE, Wolf-Watz H. 2006. Protein delivery into eukaryotic cells by type III secretion machines.
+
+Nature 444:567–73
+
+63. Galkin V, Schmied W, Schriadt O, Marlovits T, Egelman E. 2010. The structure of the Salmonella
+typhimurium type III secretion system needle shows divergence from the ﬂagellar system. J. Mol. Biol.
+396:1392–97
+
+64. Gauthier A, Finlay BB. 2003. Translocated intimin receptor and its chaperone interact with ATPase of
+
+the type III secretion apparatus of enteropathogenic Escherichia coli. J. Bacteriol. 185:6747–55
+
+65. Ginocchio CC, Gal´an JE. 1995. Functional conservation among members of the Salmonella typhimurium
+
+InvA family of proteins. Infect. Immun. 63:729–32
+
+66. Groisman EA, Ochman H. 1993. Cognate gene clusters govern invasion of host epithelial cells by
+
+Salmonella typhimurium and Shigella ﬂexneri. EMBO J. 12:3779–87
+
+67. Harmon D, Murphy J, Davis A, Mecsas J. 2013. A mutant with aberrant extracellular LcrV-YscF inter-
+actions fails to form pores and translocate Yop effector proteins but retains the ability to trigger Yop
+secretion in response to cell contact. J. Bacteriol. 195:2244–54
+
+68. Hensel M, Shea JE, Gleeson C, Jones MD, Dalton E, Holden DW. 1995. Simultaneous identiﬁcation
+
+of bacterial virulence genes by negative selection. Science 269:400–3
+
+69. Hodgkinson JL, Horsley A, Stabat D, Simon M, Johnson S, et al. 2009. Three-dimensional recon-
+struction of the Shigella T3SS transmembrane regions reveals 12-fold symmetry and novel features
+throughout. Nat. Struct. Mol. Biol. 16:477–85
+
+70. Hueck CJ. 1998. Type III protein secretion systems in bacterial pathogens of animals and plants. Microbiol.
+
+Mol. Biol. Rev. 62:379–433
+
+71. Hume PJ, McGhie EJ, Hayward RD, Koronakis V. 2003. The puriﬁed Shigella IpaB and Salmonella SipB
+
+translocators share biochemical properties and membrane topology. Mol. Microbiol. 49:425–39
+
+72. Ibuki T, Imada K, Minamino T, Kato T, Miyata T, Namba K. 2011. Common architecture of the
+ﬂagellar type III protein export apparatus and F- and V- type ATPases. Nat. Struct. Mol. Biol. 18:277–82
+73. Jackson M, Plano G. 2000. Interactions between type III secretion apparatus components from Yersinia
+
+pestis detected using the yeast two-hybrid system. FEMS Microbiol. Lett. 186:85–90
+
+74. Johnson S, Roversi P, Espina M, Olive A, Deane JE, et al. 2007. Self-chaperoning of the type III secretion
+
+system needle tip proteins IpaD and BipD. J. Biol. Chem. 282:4035–44
+
+75. Journet L, Agrain C, Broz P, Cornelis GR. 2003. The needle length of bacterial injectisomes is deter-
+
+mined by a molecular ruler. Science 302:1757–60
+
+76. Kawamoto A, Morimoto Y, Miyata T, Minamino T, Hughes K, et al. 2013. Common and distinct
+
+structural features of Salmonella injectisome and ﬂagellar basal body. Sci. Rep. 3:3369
+
+434
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+77. Kenjale R, Wilson J, Zenk S, Saurya S, Picking W, et al. 2005. The needle component of the type III
+
+secretion of Shigella regulates the activity of the secretion apparatus. J. Biol. Chem. 280:42929–37
+
+78. Khan I, Reese T, Khan S. 1992. The cytoplasmic component of the bacterial ﬂagellar motor. Proc. Natl.
+
+Acad. Sci. USA 89:5956–60
+
+79. Knutton S, Rosenshine I, Pallen MJ, Nisan I, Neves BC, et al. 1998. A novel EspA-associated surface
+organelle of enteropathogenic Escherichia coli involved in protein translocation into epithelial cells. EMBO
+J. 17:2166–76
+
+80. Konovalova A, Petters T, Sagaard-Andersen L. 2010. Extracellular biology of Mycococcus xanthus. FEMS
+
+Microbiol. Rev. 34:89–106
+
+81. Kosarewicz A, Konigsmaier L, Marlovits T. 2012. The blueprint of the type 3 injectisome. Philos. Trans.
+
+R. Soc. Lond. B 367:1140–54
+
+82. Kubori T, Matsushima Y, Nakamura D, Uralil J, Lara-Tejero M, et al. 1998. Supramolecular structure
+
+of the Salmonella typhimurium type III protein secretion system. Science 280:602–5
+
+83. Kubori T, Sukhan A, Aizawa SI, Gal´an JE. 2000. Molecular characterization and assembly of the needle
+complex of the Salmonella typhimurium type III protein secretion system. Proc. Natl. Acad. Sci. USA
+97:10225–30
+
+84. Kudryashev M, Stenta M, Schmelz S, Amstutz M, Wiesand U, et al. 2013. In situ structural analysis of
+
+the Yersinia enterocolitica injectisome. Elife 2:e00792
+
+85. Lara-Tejero M, Gal´an JE. 2009. Salmonella enterica serovar Typhimurium pathogenicity island 1-encoded
+type III secretion system translocases mediate intimate attachment to nonphagocytic cells. Infect. Immun.
+77:2635–42
+
+86. Lara-Tejero M, Gal´an JE. 2009. The Salmonella typhimurium SPI-1 type III secretion translocases me-
+
+diate intimate attachment to non-phagocytic cells. Infect. Immun. 77:2635–42
+
+87. Lara-Tejero M, Kato J, Wagner S, Liu X, Gal´an JE. 2011. A sorting platform determines the order of
+
+protein secretion in bacterial type III systems. Science 331:1188–91
+
+88. Lavander M, Sundberg L, Edqvist P, Lloyd S, Wolf-Watz H, Forsberg A. 2002. Proteolytic cleavage of
+the FlhB homologue YscU of Yersinia pseudotuberculosis is essential for bacterial survival but not for type
+III secretion. J. Bacteriol. 184:4500–9
+
+89. Lee SH, Gal´an JE. 2003. InvB is a type III secretion-associated chaperone for the Salmonella enterica
+
+effector protein SopE. J. Bacteriol. 185:7279–84
+
+90. Lee SH, Gal´an JE. 2004. Salmonella type III secretion-associated chaperones confer secretion-pathway
+
+speciﬁcity. Mol. Microbiol. 51:483–95
+
+91. Lefevre M, Galan J. 2014. The inner rod protein controls substrate switching and needle length in a
+
+Salmonella type III secretion system. Proc. Natl. Acad. Sci. USA 2:817–22
+
+92. Lele P, Branch R, Nathan V, Berg H. 2012. Mechanism for adaptive remodeling of the bacterial ﬂagellar
+
+switch. Proc. Natl. Acad. Sci. USA 109:20018–22
+
+93. Lilic M, Vujanac M, Stebbins C. 2006. A common structural motif in the binding of virulence factors to
+
+bacterial secretion chaperones. Mol. Cell 21:653–64
+
+94. Llosa M, Roy C, Dehio C. 2009. Bacterial type IV secretion systems in human disease. Mol. Microbiol.
+
+73:141–51
+
+95. Loquet A, Sgourakis N, Gupta R, Giller K, Riedel D, et al. 2012. Atomic model of the type III secretion
+
+system needle. Nature 486:276–79
+
+96. Lunelli M, Hurwitz R, Lambers J, Kolbe M. 2011. Crystal structure of PrgI-SipD: insight into a secretion
+competent state of the type three secretion system needle tip and its interaction with host ligands. PLoS
+Pathog. 7:e1002163
+
+97. Marenne M, Journet L, Mota L, Cornelis G. 2003. Genetic analysis of the formation of the Ysc-Yop
+translocation pore in macrophages by Yersinia enterocolitica: role of LcrV, YscF and YopN. Microb. Pathog.
+35:243–58
+
+98. Marlovits TC, Kubori T, Lara-Tejero M, Thomas D, Unger VM, Gal´an JE. 2006. Assembly of the
+
+inner rod determines needle length in the type III secretion injectisome. Nature 441:637–40
+
+99. Marlovits TC, Kubori T, Sukhan A, Thomas DR, Gal´an JE, Unger VM. 2004. Structural insights into
+
+the assembly of the type III secretion needle complex. Science 306:1040–42
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+435
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+100. Matson JS, Nilles ML. 2001. LcrG-LcrV interaction is required for control of Yops secretion in Yersinia
+
+pestis. J. Bacteriol. 183:5082–91
+
+101. McDermott J, Corrigan A, Peterson E, Oehmen C, Niemann G, et al. 2011. Computational prediction
+
+of type III and IV secreted effectors in gram-negative bacteria. Infect. Immun. 79:23–32
+
+102. M´enard R, Sansonetti P, Parsot C, Vasselon T. 1994. Extracellular association and cytoplasmic parti-
+
+tioning of the IpaB and IpaC invasins of S. ﬂexneri. Cell 4:515–25
+
+103. M´enard R, Sansonetti PJ, Parsot C. 1994. The secretion of the Shigella ﬂexneri Ipa invasins is induced
+
+by the epithelial cell and controlled by IpaB and IpaD. EMBO J. 13:5293–302
+
+104. Michiels T, Cornelis GR. 1991. Secretion of hybrid proteins by the Yersinia Yop export system.
+
+J. Bacteriol. 173:1677–85
+
+105. Minamino T, Macnab R. 2000. Domain structure of Salmonella FlhB, a ﬂagellar export component
+
+responsible for substrate speciﬁcity switching. J. Bacteriol. 182:4906–14
+
+106. Minamino T, Morimoto Y, Hara N, Namba K. 2011. An energy transduction mechanism used in bacterial
+
+ﬂagellar type III protein export. Nat. Commun. 2:475–83
+
+107. Minamino T, Shimada M, Okabe M, Saijo-Hamano Y, Imada K, et al. 2010. Role of the C-terminal
+
+cytoplasmic domain of FlhA in bacterial ﬂagella type III protein export. J. Bacteriol. 192:1929–36
+
+108. Montagner C, Arquint C, Cornelis GR. 2011. Translocators YopB and YopD from Yersinia enterocolitica
+form a multimeric integral membrane complex in eukaryotic cell membranes. J. Bacteriol. 193:6923–28
+109. Morita-Ishihara T, Ogawa M, Sagara H, Yoshida M, Katayama E, Sasakawa C. 2006. Shigella Spa33 is
+
+an essential C-ring component of type III secretion machinery. J. Biol. Chem. 281:599–60
+
+110. Mueller C, Broz P, M ¨uller S, Ringler P, Erne-Brand F, et al. 2005. The V-antigen of Yersinia forms a
+
+distinct structure at the tip of injectisome needles. Science 310:674–76
+
+111. Neyt C, Cornelis GR. 1999. Insertion of a Yop translocation pore into the macrophage plasma membrane
+by Yersinia enterocolitica: requirement for translocators YopB and YopD, but not LcrG. Mol. Microbiol.
+33:971–81
+
+112. Ochman H, Soncini FC, Solomon F, Groisman EA. 1996. Identiﬁcation of a pathogenicity island required
+
+for Salmonella survival in host cells. Proc. Natl. Acad. Sci. USA 93:7800–4
+
+113. Olive A, Kenjale R, Espina M, Moore D, Picking W, Picking W. 2007. Bile salts stimulate recruitment
+of IpaB to the Shigella ﬂexnei surface, where it colocalizes with IpaD at the tip of the type III secretion
+needle. Infect. Immun. 75:2626–29
+
+114. Pallen M, Beatson S, Bailey C. 2005. Bioinformatics, genomics and evolution of non-ﬂagellar type-III
+
+secretion systems: a Darwinian perspective. FEMS Microbiol. Rev. 29:201–29
+
+115. Parsot C, Hamiaux C, Page A-L. 2003. The various and varying roles of speciﬁc chaperones in type III
+
+secretion systems. Curr. Opin. Microbiol. 56:7–14
+
+116. Plano GV, Barve SS, Straley SC. 1991. LcrD, a membrane-bound regulator of the Yersinia pestis low-
+
+calcium response. J. Bacteriol. 173:7293–303
+
+117. Poyraz O, Schmidt H, Seidel K, Delissen F, Ader C, et al. 2010. Protein refolding is required for assembly
+
+of the type three secretion needle. Nat. Struct. Mol. Biol. 17:788–92
+
+118. Radics J, Konigsmaier L, Marlovits T. 2014. Structure of a pathogenic type 3 secretion system in action.
+
+Nat. Struct. Mol. Biol. 21:82–87
+
+119. Rathinavelan T, Tang C, De Guzman RN. 2011. Characterization of the interaction between the
+Salmonella type III secretion system tip protein SipD and the needle protein PrgI by paramagnetic
+relaxation enhancement. J. Biol. Chem. 286:4922–30
+
+120. Riordan KE, Schneewind O. 2008. YscU cleavage and the assembly of Yersinia type III secretion machine
+
+complexes. Mol. Microbiol. 68:1485–501
+
+121. Rosqvist R, Persson C, Hakansson S, Nordfeldt R, Wolf-Watz H. 1995. Translocation of the Yersinia
+YopE and YopH virulence proteins into target cells is mediated by YopB and YopD. Contrib. Microbiol.
+Immunol. 13:230–34
+
+122. Russmann H, Kubori T, Sauer J, Gal´an J. 2002. Molecular and functional analysis of the type III secretion
+
+signal of the Salmonella enterica InvJ protein. Mol. Microbiol. 46:769–79
+
+123. Ryndak MB, Chung H, London E, Bliska JB. 2005. Role of predicted transmembrane domains for type III
+translocation, pore formation, and signaling by the Yersinia pseudotuberculosis YopB protein. Infect. Immun.
+73:2433–43
+
+436
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+124. Schesser K, Frithz-Lindsten E, Wolf-Watz H. 1996. Delineation and mutational analysis of the Yersinia
+pseudotuberculosis YopE domains which mediate translocation across bacterial and eukaryotic cellular
+membranes. J. Bacteriol. 178:7227–33
+
+125. Schlumberger M, Muller A, Ehrbar K, Winnen B, Duss I, et al. 2005. Real time imaging of type III
+
+secretion: Salmonella SipA injection into host cells. Proc. Natl. Acad. Sci. USA 102:12548–53
+
+126. Schraidt O, Lefebre M, Brunner M, Schmied W, Schmidt A, et al. 2010. Topology and organization of
+
+the Salmonella typhimurium type III secretion needle complex components. PLoS Pathog. 6:e1000824
+
+127. Schraidt O, Marlovits T. 2011. Three-dimensional model of Salmonella’s needle complex at subnanome-
+
+ter resolution. Science 331:1192–95
+
+128. Sekiya K, Ohishi M, Ogino T, Tamano K, Sasakawa C, Abe A. 2001. Supermolecular structure of the
+enteropathogenic Escherichia coli type III secretion system and its direct interaction with the EspA-sheath-
+like structure. Proc. Natl. Acad. Sci. USA 98:11638–43
+
+129. Silver A, Kikuchi Y, Fadl A, Sha J, Chopra A, Graf J. 2007. Interaction between innate immune cells
+and a bacterial type III secretion system in mutualistic and pathogenic associations. Proc. Natl. Acad. Sci.
+104:9481–86
+
+130. Sory M-P, Boland A, Lambermount I, Cornelis G. 1995. Identiﬁcation of the YopE and YopH domains
+required for secretion and internalization into the cytosol of macrophages, using the cyaA gene fusion
+approach. Proc. Natl. Acad. Sci. USA 92:11998–2002
+
+131. Spaeth K, Chen Y, Valdivia R. 2009. The Chlamydia type III secretion system C-ring engages a chaperone-
+
+effector protein complex. PLoS Pathog. 5:e1000579
+
+132. Spreter T, Yip CK, Sanowar S, Andr´e I, Kimbrough TG, et al. 2009. A conserved structural motif
+mediates formation of the periplasmic rings in the type III secretion system. Nat. Struct. Mol. Biol.
+16:468–76
+
+133. Stebbins CE, Gal´an JE. 2001. Maintenance of an unfolded polypeptide by a cognate chaperone in
+
+bacterial type III secretion. Nature 414:77–81
+
+134. Stebbins CE, Gal´an JE. 2003. Priming virulence factors for delivery into the host. Nat. Rev. Mol. Cell
+
+Biol. 4:738–43
+
+135. Sukhan A, Kubori T, Wilson J, Gal´an JE. 2001. Genetic analysis of assembly of the Salmonella enterica
+
+serovar Typhimurium type III secretion-associated needle complex. J. Bacteriol. 183:1159–67
+
+136. Thomas N, Ma I, Preasad M, Rafuse C. 2012. Expanded roles for multicargo and class 1B effector
+
+chaperones in type III secretion. J. Bacteriol. 194:3767–73
+
+137. Turner L, Stern A, Berg H. 2012. Growth of ﬂagellar ﬁlaments of Escherichia coli is independent of
+
+ﬁlament length. J. Bacteriol. 194:2437–42
+
+138. Veenendaal A, Hodkinson J, Schwarzer L, Stabat D, Zenk S, Blocker A. 2007. The type III secretion
+system needle tip complex mediates host cell sensing and translocon insertion. Mol. Microbiol. 63:1719–30
+139. Wagner S, K ¨onigsmaier L, Lara-Tejero M, Lefebre M, Marlovits T, Gal´an J. 2010. Organization and
+coordinated assembly of the type III secretion export apparatus. Proc. Natl. Acad. Sci. USA 107:17745–50
+140. Wang Y, Nordhues B, Zhong D, De Guzman R. 2010. NMR characterization of the interaction of the
+
+Salmonella type III secretion system protein SipD and bile salts. Biochemistry 49:4220–26
+
+141. Wang Y, Yu X, Yip C, Strynadka N, Egelman E. 2006. Structural polymorphism in bacterial EspA
+ﬁlaments revealed by cryo-EM and an improved approach to helical reconstruction. Structure 14:75–81
+142. Wattiau P, Bernier B, Desl´ee P, Michiels T, Cornelis GR. 1994. Individual chaperones required for Yop
+
+secretion by Yersinia. Proc. Natl. Acad. Sci. USA 91:10493–97
+
+143. Wattiau P, Cornelis GR. 1993. SycE, a chaperone-like protein of Yersinia enterocolitica involved in the
+
+secretion of YopE. Mol. Microbiol. 8:123–31
+
+144. Wilharm G, Lehmann V, Krauss K, Lehnert B, Richter S, et al. 2004. Yersinia enterocolitica type III
+secretion depends on the proton motive force but not on the ﬂagellar motor components MotA and
+MotB. Infect. Immun. 72:4004–9
+
+145. Woestyn S, Allaoui A, Wattiau P, Cornelis GR. 1994. YscN, the putative energizer of the Yersinia Yop
+
+secretion machinery. J. Bacteriol. 176:1561–69
+
+146. Woestyn S, Sory MP, Boland A, Lequenne O, Cornelis GR. 1996. The cytosolic SycE and SycH
+chaperones of Yersinia protect the region of YopE and YopH involved in translocation across eukaryotic
+cell membranes. Mol. Microbiol. 20:1261–71
+
+www.annualreviews.org • Bacterial Type III Secretion Systems
+
+437
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.MI68CH22-Galan
+
+ARI
+
+9 June 2014
+
+16:27
+
+147. Wood S, Jin J, Lloyd S. 2008. YscP and YscU switch the substrate speciﬁcity of the Yersinia type III
+
+secretion system by regulating export of the inner rod protein YscI. J. Bacteriol. 190:4252–62
+
+148. Worral L, Lameignere E, Strynadka N. 2011. Structural overview of the bacterial injectisome. Curr.
+
+Opin. Microbiol. 14:3–8
+
+149. Yip C, Finlay B, Strynadka N. 2005. Structural characterization of a type III secretion system ﬁlament
+
+protein in complex with its chaperone. Nat. Struct. Mol. Biol. 12:75–81
+
+150. Yuan J, Berg H. 2010. Thermal and solvent-isotope effects on the ﬂagellar rotary motor near zero load.
+
+Biophys. J. 98:21212126
+
+151. Zhang L, Wang Y, Olive AJ, Smith ND, Picking WD, et al. 2007. Identiﬁcation of the MxiH needle
+protein residues responsible for anchoring invasion plasmid antigen D to the type III secretion needle
+tip. J. Biol. Chem. 282:32144–51
+
+152. Zhang L, Wang Y, Picking WL, Picking WD, De Guzman RN. 2006. Solution structure of monomeric
+
+BsaL, the type III secretion needle protein of Burkholderia pseudomallei. J. Mol. Biol. 359:322–30
+
+153. Zhong D, Lefebre M, Kaur K, McDowell MA, Gdowski C, et al. 2012. The Salmonella type III secretion
+
+system inner rod protein PrgJ is partially folded. J. Biol. Chem. 287:25303–11
+
+154. Zierler MK, Gal´an JE. 1995. Contact with cultured epithelial cells stimulates secretion of Salmonella
+
+typhimurium invasion protein InvJ. Infect. Immun. 63:4024–28
+
+438
+
+Gal´an et al.
+
+Changes may still occur before final publication online and in printAnnu. Rev. Microbiol. 2014.68. Downloaded from www.annualreviews.orgby WIB6113 - Universitaet Osnabrueck on 08/04/14. For personal use only.

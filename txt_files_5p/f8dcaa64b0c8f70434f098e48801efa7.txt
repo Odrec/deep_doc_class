@@ -1,0 +1,1093 @@
+Foundations of Cognitive Science
+
+Lecture XI: Logic and Reasoning
+
+Frank Jäkel
+
+Uni Osnabrück
+
+Jan/06/15
+
+Logic and Thought
+
+1. Logic formalizes the “Laws of Thought” [Boole, 1854]
+2. We do not think logically since logic is hard to learn and
+
+we make errors
+
+Logic and Thought
+
+(cid:73) The rules of logic come from somewhere: They can be
+
+thought of as attempts to formalize thinking
+
+(cid:73) Everyone will agree that classical logic is reasonable if the
+
+whole setting is accepted
+
+(cid:73) Does logic apply to everyday reasoning?
+(cid:73) Do we prefer plausibility over logical validity?
+(cid:73) Can we explain away errors by processing limitations,
+
+misunderstandings, pragmatic factors, etc.?
+
+(cid:73) Is there a competence-performance distinction?
+(cid:73) Does logic deal with how we should reason and
+
+psychology how we do (normative vs descriptive)?
+
+(cid:73) Do we reason by a non-classical logic?
+(cid:73) What is the relation between formal logic and everyday
+
+reasoning?
+
+Everyday Inferences
+
+“Person A asks: Where’s the university?
+Person B replies: Some of those people are from there.
+Person A goes up to the group of people indicated by B and
+asks them the same question.”
+
+“The ability to reason [...] lies at the heart of human
+mentality: Homo sapiens is a rational creature, and there are
+many occasions in life that call for inferential skills.”
+
+[Johnson-Laird, 1983, p. 23]
+
+Logical Puzzles
+
+People do “logic” (constraint satisfaction problems) for fun!
+
+[Wikimedia]
+
+Wason Selection Task: Fruitﬂy of Reasoning
+
+Below is depicted a set of four cards, of which you can see
+only the exposed face but not the hidden back. On each card,
+there is a number on one of its sides and a letter on the other.
+Also below there is a rule which applies only to the four cards.
+Your task is to decide which if any of these four cards you
+must turn in order to decide if the rule is true. Don’t turn
+unnecessary cards. Tick the cards you want to turn.
+
+Rule: If there is a vowel on one side, then there is an even
+number on the other side.
+
+A
+
+K
+
+4
+
+7
+
+“Correct” Reasoning
+
+Rule: p → q (this is equivalent to ¬q → ¬p, proof?)
+
+Truth-table for material implication:
+
+→ f
+f
+t
+t
+t
+
+t
+f
+t
+
+Cards:
+p
+
+¬p
+
+q
+
+If rule is true other sides are:
+p∨¬p
+
+q∨¬q
+
+q
+
+¬q
+
+¬p
+
+To falsify the rule you want to turn the p and ¬q cards
+
+Typical Results
+
+p,q
+p
+p,¬q
+other
+total
+
+59
+42
+5
+22
+128
+
+56
+8
+4
+42
+110
+
+This is very basic propositional logic. Why is it so hard?
+
+[Wason and Shapiro, 1971, Stenning and van Lambalgen, 2004]
+
+Abstract vs Concrete
+
+Cards: City on one side, means of transportation on the other.
+Every card is one trip that I made.
+
+Claim: Every time I go to Manchester I travel by car1
+
+Manchester
+
+Leeds
+
+car
+
+train
+
+Claim: Every card with a D on one side has a 3 on the other
+
+D
+
+E
+
+3
+
+4
+
+Concrete, “thematic” material leads to higher number of
+correct responses.
+
+[Wason and Shapiro, 1971]
+
+1not strictly propositional
+
+More Realistic Material
+
+Rule: If an envelope is sealed, then it has a 50 lire stamp on it.
+
+realistic
+
+symbolic
+
+p,q
+p
+p,¬q
+other
+total
+
+1
+1
+21
+1
+24
+
+14
+4
+2
+4
+24
+
+[Johnson-Laird et al., 1972]
+
+Familiarity?
+
+Failed replication with American students:
+
+realistic
+
+symbolic
+
+p,q
+p
+p,¬q
+other
+total
+
+4
+5
+0
+15
+24
+
+7
+4
+0
+13
+24
+
+British students were familiar with the rule and that is why
+they could solve it?
+
+[Griggs and Cox, 1982]
+
+Familiarity?
+
+Rule for American students: If a person is drinking beer, then
+the person must be over 19 years of age.
+
+realistic
+
+symbolic
+
+p,q
+p
+p,¬q
+other
+total
+
+5
+0
+14
+1
+20
+
+8
+3
+0
+8
+20
+
+Familiarity seems to play some role. But what about the
+city-transport data? They could not replicate it.
+
+[Griggs and Cox, 1982]
+
+Pragmatic Reasoning Schemas
+
+(cid:73) Idea: We have diﬀerent reasoning schemas (aka logics) that apply
+
+to diﬀerent scenarios
+
+(cid:73) Example 1: “If two particles have like electrical charges, then they
+repel each other”, in a physics class modus tollens is appropriate
+(cid:73) Example 2: “If I have a headache, then I should take an aspirin”,
+
+modus tollens is useless
+
+(cid:73) Example 3: “If you do that again, you will be grounded”, how
+
+surprised would you be if you were grounded even though you didn’t
+do anything?
+
+(cid:73) Candidates for pragmatic reasoning schemas for if-then are:
+
+Permissions, obligations, causations
+
+(cid:73) For each situation we need to decide—based on the context and
+
+our knowledge—which reasoning schemas are appropriate
+
+(cid:73) Abstract versions of Wason’s task or concrete versions that don’t
+
+provide enough context are hard since we don’t know which logic to
+reason with
+
+[Cheng and Holyoak, 1985]
+
+Pragmatic Reasoning Schemas
+
+You are an immigration oﬃcer at the International Airport in
+Manila, capital of the Philippines. Among the documents you
+have to check is a sheet called Form H. One side of this form
+indicates whether the passenger is entering the country or in
+transit, while the other side of the form lists names of [tropical
+diseases] [inoculations the passenger had had in the last 6
+months. This is to ensure that entering passengers are
+protected against the disease]. You have to make sure that if
+the form says ’ENTERING’ on one side, then the other side
+includes cholera among the list of diseases.
+
+ENTERING
+
+TRANSIT
+
+cholera
+typhoid
+hepatitis
+
+typhoid
+hepatitis
+
+[Cheng and Holyoak, 1985]
+
+Abstract Permissions
+
+Suppose you are an authority checking whether or not people
+are obeying certain regulations. The regulations all have the
+general form, “If one is to take action A, then one must ﬁrst
+satisfy precondition P.” In other words, in order to be
+permitted to do A, one must ﬁrst satisfy precondition P.
+
+taken action
+
+taken action
+
+has
+
+A
+
+has not
+
+A
+
+has
+
+fulﬁlled
+
+P
+
+has not
+fulﬁlled
+
+P
+
+Performance in this task is high compared to the classic card
+problem.
+
+[Cheng and Holyoak, 1985]
+
+Factual vs Deontic
+
+Rule 1: If there is a vowel on one side, then there is an even
+number on the other side.
+Rule 2: If a person is drinking beer, then the person must be
+over 19 years of age.
+
+(cid:73) Rule 1 and 2 are not of the same form: One is factual
+
+and the other deontic
+
+(cid:73) A factual rule describes the state of aﬀairs: If there are
+
+no counterexamples the sentence is true
+
+(cid:73) A deontic rule does not have a truth value: It is in place
+irrespective of whether someone violates the rule or not
+
+[Stenning and van Lambalgen, 2004]
+
+The 2-Rule Version
+
+U
+
+I
+
+8
+
+3
+
+If there is a U on one side, then there is an 8 on the other side
+If there is an I on one side, then there is an 8 on the other side
+One of the two rules is true and the other false
+
+[Stenning and van Lambalgen, 2004]
+
+The 2-Rule Version
+
+U
+
+I
+
+8
+
+3
+
+If there is a U on one side, then there is an 8 on the other side
+
+8
+
+3∨8
+
+U∨I
+
+I
+
+If there is an I on one side, then there is an 8 on the other side
+
+3∨8
+
+8
+
+U∨I
+
+U
+
+One of the two rules is true and the other false
+⇒You should only turn the 3.
+
+[Stenning and van Lambalgen, 2004]
+
+What Is Truth?
+
+“I wouldn’t look at this one [3] because it wouldn’t give me
+appropriate information about the rules; it would only tell me
+if those rules are wrong, and I am being asked which of those
+rules is the correct one. Does that make sense?”
+
+Is not-false the same as true? In classical logic it is. But you
+can also reason non-classically.
+
+And in a three-valued logic:
+
+∧ f
+f
+f
+f
+?
+t
+f
+
+?
+f
+?
+?
+
+t
+f
+?
+t
+
+[Stenning and van Lambalgen, 2004]
+
+Cards as a Sample from a Larger Domain
+
+(cid:73) Instructions say explicitly: “below there is a rule which
+
+applies only to the four cards”
+
+(cid:73) Non-classical, three-valued reasoning would make sense if
+you assume that the rule has to be true for all cards of a
+larger domain (say a whole stack) and not just the four
+samples that you got
+
+(cid:73) In this case seeing a counterexample falsiﬁes the rule but
+not seeing any counterexamples does not mean that the
+rule is true in general
+
+(cid:73) This is a more natural interpretation of the word “rule”: A
+rule that just applies to four instances is not really a rule
+
+[Stenning and van Lambalgen, 2004]
+
+What Is the Domain of Discourse?
+
+(cid:73) An inﬁnite domain of potential cards?
+(cid:73) A stack of cards?
+(cid:73) Only the four cards in front of the S? (This is the
+
+interpretation intended by E)
+
+(cid:73) Each card independently? (“Truth of the card”)
+
+[Stenning and van Lambalgen, 2004]
+
+“Truth of the Card”
+
+1. If there is a U on one side, then there is an 8 on the other
+
+side
+
+2. If there is an I on one side, then there is an 8 on the other
+
+side
+
+3. One of the two rules is true and the other false
+
+U
+
+I
+
+8
+
+3
+
+“E. If you found an 8 on this card [I], what would it say? S. It
+would say that rule two is true, and if the two cannot be true
+then rule one is wrong...”
+Interpretation: Either rule 1 or 2 applies to each card, hence if
+rule 1 is true of one card it is true of all (note that I/8 satisﬁes
+1 and 2)
+
+[Stenning and van Lambalgen, 2004]
+
+Rules and Exceptions
+
+“S. [Turns 3 and ﬁnds U] OK ... well no ... well that could be
+an exception you see. E. The U? S. The U could be an
+exception to the other rule. [...] E. You’d have to look at the
+other ones? S. Yes.”
+
+(cid:73) What if the Ss interpret the rule as a rule with exceptions?
+(cid:73) This is clearly a reasonable reading of everyday statements
+
+[Stenning and van Lambalgen, 2004]
+
+What Is Falsity?
+
+“E. So you’re saying that if the statement is true, then the
+number [on the back of A] will be 4... What would happen if
+the statement were false? S. Then it would be a number other
+than 4.”
+
+(cid:73) What if p → q is false?
+(cid:73) Classically: p ∧¬q is true
+(cid:73) Common interpretation (strong falsity): p → ¬q is true
+(cid:73) Example: What is the negation of “If he goes to
+
+Amsterdam, he will get stoned”?
+
+[Stenning and van Lambalgen, 2004]
+
+Reasoning and Planning
+
+“E. Same for the I, what if there is an 8 on the back? S. If
+there is an 8 on the back, then it means that rule two is right
+and rule one is wrong. E. So do we turn over the I or not? S.
+Yes. Unless I’ve turned the U already.”
+
+(cid:73) Presentation suggests that you can turn cards
+(cid:73) But you have to do the task without ﬁnding out about
+
+the backs
+
+(cid:73) In the standard Wason task: If I start with the p-card and
+I ﬁnd ¬q I’ll be done and don’t have to look at any other
+cards
+
+[Stenning and van Lambalgen, 2004]
+
+The Meaning of If
+
+(cid:73) Ss read if p then q as p ↔ q (“If you do that again, you
+
+will be grounded”)
+
+(cid:73) Ss read if p then q as p ∧ q (>50% paraphrase the
+
+instructions in this way)
+
+Rule: If there is a vowel on one side, then there is an even
+number on the other side.
+
+A
+
+K
+
+4
+
+7
+
+(cid:73) Under the conjunctive reading you don’t need to turn any
+
+cards
+
+(cid:73) Ss reinterpretation: Check which cards satisfy the rule
+
+[Stenning and van Lambalgen, 2004]
+
+An Aside: Counterfactuals
+
+(cid:73) We often use if in counterfactuals (“If you hadn’t done
+
+this, that wouldn’t have happened”)
+
+(cid:73) Counterfactuals clearly behave diﬀerently from material
+
+implication
+
+(cid:73) “If I were David Bowie then I would have been in the
+
+movie Labyrinth”
+
+(cid:73) “If I were David Bowie then I would not have been in the
+
+movie Labyrinth”
+
+(cid:73) “If 1+1=3 then 1+1=2” (If this was a material
+
+implication it would be true)
+
+Wason Selection Task
+
+(cid:73) Wason’s selection task is the fruitﬂy of reasoning research
+(cid:73) This simple task is surprisingly diﬃcult to understand
+(cid:73) For subjects and experimenters alike
+(cid:73) There is no doubt that people make mistakes in reasoning
+
+even if they use the right reasoning schema
+
+(cid:73) The problem seems to lie in inferring from context and
+
+knowledge which reasoning schema is appropriate
+
+(cid:73) Distinguish between [Stenning and van Lambalgen, 2004]
+
+(cid:73) Reasoning from an interpretation
+(cid:73) Reasoning for an interpretation
+
+Rules vs Models
+
+(cid:73) Logic as the laws of thought seems to suggest that we
+
+reason in a formal calculus
+
+(cid:73) Simple example: “All men are mortal”, “Socrates is a
+
+man” therefore “Socrates is mortal”
+
+(cid:73) One way to arrive at this conclusion is by applying an
+
+abstract rule: p → q,p therefore q
+
+(cid:73) No doubt that we can do this, in fact, you learn how to
+
+do this correctly in your logic class
+
+(cid:73) Alternative view: You construct a model and reason from
+
+the model (also formal processes!), e.g., using Euler
+circles or Venn diagrams
+
+(cid:73) What is the representation that Ss use? Can it explain
+
+competence and performance?
+
+Syllogistic Reasoning
+
+Syllogisms are deductions based on two premises. Each
+premise and conclusion is in one of four forms:
+
+(cid:73) All X are Y
+(cid:73) Some X are Y
+(cid:73) No X are Y
+(cid:73) Some X are not Y
+
+All X are Y
+All X are Z
+∴Some Y are Z
+
+[Johnson-Laird, 1983, chapter 4]
+
+Syllogistic Reasoning
+
+Some of the artists are barkeepers
+All of the barkeepers are chemists
+∴?
+
+All of the bankers are athletes
+None of the councilors are bankers
+∴?
+
+[Johnson-Laird, 1983, chapter 4]
+
+Syllogistic Reasoning
+
+All of the bankers are athletes
+None of the councilors are bankers
+∴?
+
+1. Some of the athletes are not councilors
+2. Some of the councilors are not athletes
+3. None of the athletes is a councilor
+4. None of the councilors is an athlete
+5. There is no valid conclusion of interest
+
+[Johnson-Laird, 1983, chapter 4]
+
+Mental Models
+
+All the artists are barkeepers
+All the barkeepers are chemists
+∴?
+
+a = b
+a = b
+a = b
+(b)
+(b)
+
+(a)
+
+=⇒
+
+a = b = c
+a = b = c
+a = b = c
+(b) = (c)
+(b) = (c)
+(c)
+
+(a)
+
+[Johnson-Laird, 1983, chapter 5]
+
+Mental Models
+
+None of the authors are burglars
+Some of the chefs are burglars
+∴?
+
+a
+a
+a
+
+a
+a
+a =
+
+(a)
+
+=⇒
+
+b
+b
+b
+
+b = c
+b = c
+(b)
+(c)
+
+[Johnson-Laird, 1983, chapter 5]
+
+Mental Models
+
+None of the authors are burglars
+Some of the chefs are burglars
+∴?
+
+a
+a
+a
+
+=⇒
+
+b
+b
+b
+
+(a)
+
+a
+a
+a = =
+
+c
+b = c
+b = c
+(b)
+
+[Johnson-Laird, 1983, chapter 5]
+
+Mental Models
+
+None of the authors are burglars
+Some of the chefs are burglars
+∴?
+
+a
+a
+a
+
+=⇒
+
+b
+b
+b
+
+=
+a
+a
+=
+a = =
+
+c
+c
+c
+b = c
+b = c
+(b)
+
+(a)
+
+[Johnson-Laird, 1983, chapter 5]
+
+Mental Models
+
+None of the authors are burglars
+Some of the chefs are burglars
+∴Some of the chefs are not authors
+
+=
+
+a
+a
+a
+
+(a)
+
+b
+b
+(b)
+
+=
+=
+
+c
+c
+(c)
+
+a
+a
+a
+
+(a)
+
+c
+
+= c
+= c
+
+=
+
+=
+
+b
+b
+(b)
+
+=
+
+a
+a
+a
+
+(a)
+
+c
+c
+c
+
+= c
+= c
+
+=
+=
+=
+
+b
+b
+(b)
+
+[Johnson-Laird, 1983, chapter 5]
+
+Mental Models
+
+(cid:73) The premises of diﬀerent syllogisms are consistent with
+
+varying numbers of models
+
+(cid:73) The diﬃculty of syllogistic reasoning is a function of the
+number of mental models you have to construct to come
+to a valid conclusion (percent valid inferences):
+
+one model
+
+two models
+
+three models
+
+46%
+20%
+20%
+
+92%
+80%
+62%
+
+Experiment 1
+Experiment 2
+Experiment 3
+
+27%
+9%
+3%
+(cid:73) The idea of reasoning by constructing mental models
+generalizes to other reasoning tasks (e.g., the Wason
+selection task) and other forms of representations (e.g.,
+images)
+
+[Johnson-Laird, 1983, chapter 5]
+
+Beyond Deduction
+
+(cid:73) Deduction: Reason from premises to valid conclusions
+(cid:73) All men are mortal, Socrates is a man, therefore he is
+
+mortal
+
+(cid:73) Induction: Reason from premises to plausible conclusions
+
+(in particular to general rules)
+
+(cid:73) I’ve seen 42 black ravens and guess that all ravens are
+
+black
+
+(cid:73) Abduction: Give a plausible explanation of an event
+
+(cid:73) The grass is wet hence it is likely that it rained during
+
+the night
+
+Wason’s other task
+
+“You will be given three numbers which conform to a simple
+rule that I have in mind. This rule is concerned with a relation
+between any three numbers and not with their absolute
+magnitude, i.e. it is not a rule like all numbers above (or
+below) 50, etc. Your aim is to discover this rule by writing
+down sets of three numbers, together with reasons for your
+choice of them. After you have written down each set, I shall
+tell you whether your numbers conform to the rule or not, and
+you can make a note of this outcome on the record sheet
+provided. There is no time limit but you should try to discover
+this rule by citing the minimum sets of numbers. Remember
+that your aim is not simply to ﬁnd numbers which conform to
+the rule, but to discover the rule itself. [...]”
+
+2 4 6 conforms to the rule...
+
+[Wason, 1960]
+
+Summary
+
+(cid:73) Logic traditionally seeks a normative theory of reasoning
+(cid:73) Cognitive science seeks also a descriptive theory of
+
+reasoning (that may be logical, too)
+
+(cid:73) There is a diﬀerence between competence and
+
+performance
+
+(cid:73) Wason’s selection task is the fruitﬂy of reasoning research
+(cid:73) Choosing a reasoning schema for a given situation is hard
+(cid:73) Mental models theory assumes that we construct a model
+
+of the situation that we want to reason about
+
+(cid:73) Problems in reasoning stem from the number of models
+
+that are consistent with the premises
+
+Recommended Thinking
+
+(cid:73) Solve a Sudoku puzzle. Which inference rules do you use? Think aloud.
+(cid:73) Open up a random page in your favorite novel. Read a paragraph and try to
+explicitly ﬁll in all the premises and inferences that you have to do in order to
+understand what you are reading. How do you know to whom or what the
+pronouns refer to?
+
+(cid:73) What is the relationship between rationality and logic?
+(cid:73) Spock or Kirk? Do emotions play any role in everyday reasoning? Should they?
+(cid:73) Three gods A, R, and C are called, in some order, True, False, and Random.
+
+True always speaks truly, False always speaks falsely, but whether Random
+speaks truly or falsely is a completely random matter. Your task is to determine
+the identities of A, R, and C by asking three yes-no questions; each question
+must be put to exactly one god. The gods understand English, but will answer
+all questions in their own language, in which the words for “yes” and “no” are
+“da” and “ja,” in some order. You do not know which word means which.
+[Boolos, 1996]
+
+(cid:73) Clariﬁcations: It could be that some god gets asked more than one question
+(and hence that some god is not asked any question at all). What the second
+question is, and to which god it is put, may depend on the answer to the ﬁrst
+question. (And of course similarly for the third question). Whether Random
+speaks truly or not should be thought of as depending on the ﬂip of a coin
+hidden in his brain: if the coin comes down heads, he speaks truly; if tails,
+falsely. Random will answer da or ja when asked any yes-no question.
+[Boolos, 1996]
+
+www.xkcd.com/246/
+
+Recommended Reading
+
+Johnson-Laird has a recent pop science book that I can recommend
+[Johnson-Laird, 2008]. I ﬁnd it a little long and some chapters are more interesting
+than others but it is also useful as a general intro to cognitive science and issues of
+representation. In addition, the book covers some of the aspects that we will get to in
+the next two lectures: Judgment and problem solving. The main thrust of the book
+comes from Johnson-Laird’s own theory: Mental models. If you are into logic and
+want to see what role logic can still play in cognitive science, it’s worthwhile to have a
+look at Human Reasoning and Cognitive Science [Stenning and van Lambalgen, 2008],
+although the book is a bit rough for beginners. Chapters 3 and 4 follow closely the
+paper that I followed in the lecture [Stenning and van Lambalgen, 2004]. The other
+chapters in Part I and the last chapter of the book are an interesting description of the
+relationship between logic and human reasoning. Chapter 10 also covers syllogisms
+and a logical reconstruction of Johnson-Laird’s mental models. Most cognitive
+psychology textbooks cover syllogistic reasoning and the Wason selection task.
+
+References I
+
+Boole, G. (1854).
+An Investigation Of The Laws of Thought.
+Number 15114. Projekt Gutenberg.
+
+Boolos, G. (1996).
+The hardest logic puzzle ever.
+Harvard Review of Philosophy, 6:62–65.
+
+Cheng, P. W. and Holyoak, K. J. (1985).
+Pragmatic rasoning schemas.
+Cognitive Psychology, 17:391–416.
+
+Griggs, R. A. and Cox, J. R. (1982).
+The elusive thematic-materials eﬀect in Wason’s selection task.
+British Journal of Psychology, 73:407–420.
+
+Johnson-Laird, P. M. (1983).
+Mental Models: Towards a Cognitive Science of Language, Inference, and Consciousness.
+Cambridge University Press.
+
+Johnson-Laird, P. M. (2008).
+How We Reason.
+Oxford University Press, Oxford.
+
+Johnson-Laird, P. M., Legrenzi, P., and Legrenzi, M. S. (1972).
+Reasoning and a sense of reality.
+British Journal of Psychology, 63(3):395–400.
+
+References II
+
+Stenning, K. and van Lambalgen, M. (2004).
+A little logic goes a long way: Basing experiment on semantic theory in the cognitive science of
+conditional reasoning.
+Cognitive Science, 28:481–529.
+
+Stenning, K. and van Lambalgen, M. (2008).
+Human reasoning and cognitive science.
+MIT Press.
+
+Wason, P. C. (1960).
+On the failure to eliminate hypotheses in a conceptual task.
+Quarterly Journal of Experimental Psychology, 12(3):129–140.
+
+Wason, P. C. and Shapiro, D. (1971).
+Natural and contrived experience in a reasoning problem.
+Quarterly Journal of Experimental Psychology, 23(1):63–71.
+
+

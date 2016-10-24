@@ -1,0 +1,826 @@
+Kapitel 3: Aggregiertes Angebot 
+
+ 
+
+Leitfragen:  
+• Welche Faktoren bestimmen das aggregierte Angebot? 
+• Wie bestimmen die aggregierte Nachfrage und das aggregierte 
+
+Angebot gemeinsam das BIP? 
+
+• Wie wirkt eine Erhöhung der Staatsausgaben auf das BIP und 
+
+das Preisniveau? 
+
+• Wie entsteht Inflation? 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+1 
+
+Literatur:  
+• Blanchard und Illing (2009): Makroökonomik, Kapitel 7 
+• Mankiw (2011): Makroökonomik: Mit vielen Fallstudien, Kapitel  9 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+2 
+
+3.1. Die Produktionsfunktion 
+ 
+• Die Güterproduktion findet statt in Unternehmen, die miteinander im 
+Wettbewerb  stehen. Wir nehmen an, dass Unterschiede zwischen den 
+Unternehmen genügend klein sind, so dass es ausreicht, ein 
+„repräsentatives Unternehmen“ zu studieren.  
+
+• Die Produktionstechnologie des repräsentativen Unternehmens ist 
+charakterisiert durch eine Produktionsfunktion. Sie beschreibt das 
+technische Wissen der Volkswirtschaft.   
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+3 
+
+• Die Produktionsfunktion gibt an, welche Gütermenge y (Output) maximal 
+
+aus einer bestimmten Menge eingesetzter Produktionsfaktoren (Inputs) 
+hergestellt werden kann (effiziente Produktion). 
+
+• Wir fassen die Produktionsfaktoren zu zwei Gruppen zusammen: Arbeit l 
+(die Arbeitszeit aller Beschäftigten des Unternehmens) und Kapital k (der 
+physische Produktionsapparat: Maschinen, Werkzeuge...).   
+
+• Beide Faktoren werden von den Haushalten angeboten und von den 
+
+Unternehmen (gegen Entlohnung) eingesetzt. 
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+4 
+
+     y=f(l,k) 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+5 
+
+• Die Unternehmen produzieren ein homogenes Gut y. Das Gut y kann 
+sowohl als Konsumgut dienen (d.h. an den Haushaltssektor verkauft 
+werden) als auch als Investitionsgut (d.h. in der nächsten Periode zum 
+Kapitalbestand hinzugefügt werden).  
+
+• Die Produktionsfunktion eines Unternehmens y=f(l , k) hat folgende 
+
+Eigenschaften:   
+ f(l, k) hat positive, aber abnehmende Grenzerträge / 
+
+Grenzproduktivitäten bezüglich beider Faktoren.   
+
+ f(l, k) hat konstante Skalenerträge 
+ f(l, k) ist konkav und zweimal stetig differenzierbar. 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+6 
+
+Die Produktionsfunktion 
+ y
+
+l
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+k
+
+7 
+
+ 
+
+ 
+
+ 
+
+Positive, abnehmende Grenzerträge der Funktion f(l,k): 
+ 
+ 
+ 
+ 
+ 
+•
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+Interpretation: Jede zusätzlich eingesetzte Faktormenge (Arbeitsstunde, 
+Maschine) erhöht den Output, aber der Zuwachs pro Faktoreinheit ist umso 
+geringer, je mehr von dem Faktor bereits eingesetzt wird.   
+
+• Grafisch: positive, aber abnehmende Steigung in Richtung höheren 
+
+Einsatzes eines Faktors (bei konstantem Einsatz des anderen) 
+
+• Fallende Faktornachfragefunktionen der Unternehmen. 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+8 
+
+Grafisch: Partielle Faktorvariation (l sei der variierte Faktor, während k 
+konstant gehalten wird). 
+
+ 
+y
+
+Y=f(l,k)
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+l
+
+9 
+
+Konstante Skalenerträge (= lineare Homogenität) bedeutet, dass eine 
+
+Erhöhung aller Faktoreinsatzmengen um denselben Faktor die produzierte 
+Menge um denselben Faktor erhöht. 
+
+  
+ 
+Interpretation: Die Durchschnittskosten der Produktion sind unabhängig von 
+
+der Unternehmensgröße. Bei steigenden Skalenerträgen fallen die 
+Durchschnittskosten mit wachsender Unternehmensgröße. Wenn das der 
+Fall wäre, würde in jedem Markt nur ein Unternehmen überleben.  
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+10 
+
+Stetig und zweifach differenzierbar 
+ 
+Interpretation:  Voraussetzung zur Anwendung von Gewinnmaximierung und 
+
+einfach handhabbaren Güterangebots- und 
+Faktornachfragefunktionen.  
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+11 
+
+Die Arbeitsnachfrage der Unternehmen 
+• Wir nehmen an, dass die Unternehmen in vollständiger Konkurrenz stehen: 
+
+Alle Unternehmen sind Preisnehmer auf den Güter- und Faktormärkten.  
+
+• Das Ziel eines typischen Unternehmens sei es, den Gewinn zu maximieren. 
+
+Der Gewinn ist die Differenz zwischen Umsatz und Produktionskosten.   
+
+• Der Umsatz entsteht durch Verkauf des Gutes y zum Preis von p pro 
+
+Einheit; Kosten entstehen durch Einsatz von Arbeit l zum Lohnsatz w und 
+von Kapital k zum Zins r.  
+
+• Wir betrachten zunächst Arbeit als variablen Faktor und Kapital als fixen 
+
+Faktor, d.h. der Kapitalstock des Unternehmens ist vorgegeben. 
+
+• Da Kapital aus dem Gut y besteht, ist der Preis des eingesetzten Kapitals 
+
+gleich dem Preis in der Vergangenheit, p-1 
+
+• Der Unternehmensgewinn g ist  
+ 
+
+g = py –  wl – rp-1k 
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+12 
+
+• Bei der angestrebten Maximierung des Gewinns g muss das Unternehmen 
+
+die Produktionsfunktion als Nebenbedingung berücksichtigen.  
+
+• Entscheiden kann das Unternehmen nur über die Menge an Arbeit, die es 
+
+einsetzen will.  
+
+• Das Unternehmen löst also das Problem:  
+  max{l} g = pf(l,k) – wl – rp-1k. 
+• Die Bedingung erster Ordnung für das Gewinnmaximums lautet 
+
+•
+
+ 
+ 
+Interpretation: Ein Gewinnmaximum kann erst dann erreicht sein, wenn der 
+zusätzliche Umsatz durch Beschäftigung einer weiteren Faktoreinheit 
+gleich den zusätzlichen Kosten hierfür ist. 
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+13 
+
+• Folge: Im Gewinnmaximum entspricht die Grenzproduktivität der Arbeit 
+
+dem realen (d.h. in Gütereinheiten ausgedrückten) Lohn: 
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+14 
+
+Ein Beispiel: Wenn die Produktionsfunktion die Gestalt einer „Cobb-Douglas 
+
+ 
+•
+
+Funktion“ hat, 
+y = la k1-a, mit 0 < a < 1 
+Ist die gewinnmaximale Arbeitsnachfrage  
+ 
+
+ 
+ 
+ 
+ 
+• Die Arbeitsnachfrage des Unternehmens steigt bei fallendem Reallohn. 
+• Die Arbeitsnachfrage des Unternehmens fällt bei steigendem Reallohn. 
+• Die Arbeitsnachfrage des Unternehmens steigt bei steigendem 
+
+Kapitalstock. 
+
+• Bei gegebenem Nominallohn w steigt die Arbeitsnachfrage des 
+
+Unternehmens bei steigendem Outputpreis. 
+ 
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+15 
+
+Aggregation und gesamtwirtschaftliche Arbeitsnachfrage 
+• Unter den hier getroffenen Annahmen können wir die 
+
+Produktionsentscheidungen und die Arbeitsnachfrage aller Unternehmen 
+addieren.  
+
+• Es existiert eine aggregierte Produktionsfunktion 
+  mit positiven und abnehmenden Grenzprodukten 
+ 
+ 
+• Hier ist Y die gesamtwirtschaftliche Produktion, L die gesamte, in der 
+Volkswirtschaft eingesetzte Arbeitsmenge und K der Kapitalstock der 
+Volkswirtschaft. Die aggregierte Produktionsfunktion ist ebenfalls linear 
+homogen. 
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+16 
+
+• Für die aggregierte Arbeitsnachfrage gilt: 
+  
+
+ 
+ 
+
+  Hier ist P das Preisniveau der Volkswirtschaft. 
+• Beispiel: Cobb-Douglas Produktionsfunktion, 
+  Y = La K1-a, mit 0 < a < 1 
+• Die gesamtwirtschaftliche Arbeitsnachfrage folgt aus  
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+17 
+
+Warum verwenden wir eine Cobb-Douglas Funktion? 
+Paul Douglas (Amherst College, später Universität Chicago) beobachtete in 
+seinen Arbeiten über gesamtwirtschaftliche Produktion in den 1920er Jahren, 
+dass in den Jahren von 1899 – 1922 der Anteil der aggregierten 
+Wertschöpfung, der als Lohneinkommen ausgezahlt wurde, fast konstant bei 
+74% lag, obwohl das Verhältnis von Arbeit zu Kapital variierte. Bei einem 
+Mittagessen fragte er seinen Freund und Kollegen Charles Cobb, ob es eine 
+mathematische Beschreibung dieses Phänomens gebe.  
+ 
+Cobbs Antwort war: Y = ALaK1-a mit 0 < a < 1. 
+  
+Cobb und Douglas stellten ihre empirische Arbeit erstmals 1927 vor („A 
+Theory of Production“, American Ec. Review 18:1, 139-165). Sie schätzten a 
+= 0.75. 
+ 
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+18 
+
+In seiner Presidential Address 1947 („Are there Laws of Production“, Am. Ec. 
+Rev. 38:1, 1948, 1-41) berichtete Douglas von insgesamt 29 empirischen 
+Studien für die USA, Kanada, Australien, Neuseeland und Südafrika, die das 
+ursprüngliche Ergebnis durch Zeitreihen und Querschnittsanalysen bestätigten. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Paul H. Douglas (1892-1976), Ökonom und US Senator für Illinois 1949-1967 
+ 
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+ 
+
+19 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+20 
+
+ 
+
+The Economist, 02. November 2013 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+21 
+
+3.2. Die aggregierte Angebotsfunktion 
+• Die Kurve des aggregierten Angebots (AS-Kurve) stellt den 
+
+Zusammenhang zwischen dem aggregiertem Preisniveau und dem 
+aggregierten Angebot an Gütern und Dienstleistungen dar. 
+
+• Wir unterscheiden zwischen der „kurzen Frist“ und der „langen Frist“. 
+• Kurze und lange Frist unterscheiden sich im Verhalten des Nominallohns 
+
+und des Arbeitsangebots der Haushalte. 
+ Kurzfristig ist der Nominallohn gegeben. Der Reallohn fällt bei 
+steigendem Preisniveau und steigt bei fallendem Preisniveau.  
+ Kurzfristig bieten die Haushalte bei gegebenem Lohn w jede 
+
+Arbeitsmenge an, die die Unternehmen nachfragen. Die Unternehmen 
+produzieren immer mit ihrer optimalen Arbeitsnachfrage. 
+
+ Langfristig passt sich der Nominallohn an das Preisniveau an und der 
+
+Reallohn ist gegeben.  
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+22 
+
+ Langfristig wird der Reallohn durch das Gleichgewicht von 
+
+Arbeitsnachfrage der Unternehmen und Arbeitsangebot der Haushalte 
+am Arbeitsmarkt bestimmt. (Mehr dazu später)   
+
+• Wir betrachten noch einmal die optimale Arbeitsnachfrage der 
+
+Unternehmen. 
+ 
+
+ 
+ 
+• Bei gegebenem Nominallohn beschreibt diese Bedingung die Beziehung 
+zwischen der Arbeitsnachfrage der Unternehmen und dem Outputpreis: 
+ 
+
+ 
+  mit 
+  
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+23 
+
+Arbeitsnachfrage in Abhängigkeit vom Preisniveau; Nominallohn als 
+Verschiebungsparameter  
+
+P
+P
+
+N
+
+L1
+
+LN
+
+W↑
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+L
+
+24 
+
+• Die Unternehmen setzen die nachgefragte Arbeitsmenge in der Produktion 
+
+ein. Gemäß der Produktionsfunktion ist also das Güterangebot 
+
+  
+  
+•
+  
+
+ Das Güterangebot steigt bei steigendem Outputpreis. 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+25 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+26 
+
+• Beispiel: Cobb-Douglas Produktionsfunktion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+• Diese Angebotsfunktion hat die konstante Preiselastizität von : 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+27 
+
+• Langfristig passt sich der Nominallohn an Änderungen des Preisniveaus 
+
+an.  
+ 
+ 
+ 
+Der Nominallohn steigt mit derselben Rate wie das Preisniveau.  
+Die Steigung der langfristigen Angebotsfunktion ist daher: 
+
+ 
+ 
+ 
+•
+
+ Die langfristige Angebotsfunktion ist vertikal. 
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+28 
+
+Aggregierte Angebotsfunktion: kurz- und langfristig 
+
+P
+P
+
+AS (langfr.)
+AS (langfr.)
+
+AS (kurzfr.)
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+Y=F(K,L)
+
+Y
+Y
+
+29 
+
+3.3. Output und Preisniveau im gesamtwirtschaftlichen Gleichgewicht 
+• Die aggregierte Nachfragefunktion bestimmt das Niveau der 
+
+gesamtwirtschaftlichen Nachfrage nach Gütern und Dienstleistungen in 
+Abhängigkeit vom Preisniveau. 
+ Konstruktionsgemäß stellt die aggregierte Nachfragefunktion sicher, 
+
+dass die Volkswirtschaft ihre Budgetbedingung erfüllt (IS Kurve) 
+
+ und dass Haushalte und Firmen über die Menge an Zahlungsmitteln 
+
+verfügen, die sie zur Tätigung ihrer gewünschten Käufe von 
+Dienstleistungen und Gütern sowie Arbeitsleistungen und Kapital 
+benötigen (LM Kurve).    
+
+• Die aggregierte Angebotsfunktion bestimmt das Niveau des 
+
+gesamtwirtschaftlichen Angebots an Gütern und Dienstleistungen in 
+Abhängigkeit vom Preisniveau. 
+ Konstruktionsgemäß stellt die aggregierte Angebotsfunktion sicher, 
+
+dass die Unternehmen die gewinnmaximierende Menge an Arbeit 
+beschäftigen. 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+ 
+
+30 
+
+• Wir bestimmen nun das Niveau der gesamtwirtschaftlichen Produktion und 
+
+das Preisniveau durch die Bedingung, dass gesamtwirtschaftliche 
+Nachfrage und Angebot gleich sein müssen.  
+ Wir suchen also das Preisniveau, für das AS = AD. 
+ Zu diesem Preisniveau sind die Produktionspläne der Unternehmen 
+
+kompatibel mit den Konsumplänen der Haushalte, den 
+Investitionsplänen der Unternehmen und den Ausgabeplänen des 
+Staates. 
+
+ Der Begriff „Gleichgewicht“ bedeutet nicht, dass diese Situation in 
+
+irgendeinem Sinn wünschenswert ist. Es handelt sich lediglich um ein 
+analytisches Konzept. 
+
+• Wir finden das gesamtwirtschaftliche Gleichgewicht als Schnittpunkt der 
+aggregierten Nachfragefunktion und der aggregierten Angebotsfunktion.  
+ Hier spielt wiederum die Unterscheidung zwischen der kurzen und der 
+
+langen Frist eine Rolle.  
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+31 
+
+Gesamtwirtschaftliches Gleichgewicht: kurze Frist 
+
+P
+P
+
+AS (kurzfr.)
+
+AD 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+Y
+Y
+
+32 
+
+Gesamtwirtschaftliches Gleichgewicht: lange Frist 
+
+P
+P
+
+AS (langfr.)
+AS (langfr.)
+
+AD 
+
+Y=F(K,L)
+
+Y
+Y
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+33 
+
+• Anhand des AS-AD Modells können wir einerseits die kurz- und 
+
+langfristigen Auswirkungen von wirtschaftspolitischen Maßnahmen 
+(Erhöhung der Staatsausgaben, Erhöhung der Geldmenge, 
+Steuersenkungen, etc.) analysieren. 
+
+• Anderseits können wir das AS-AD Modell einsetzen, um die Frage nach 
+einer geeigneten wirtschaftspolitischen Reaktion auf exogene Schocks zu 
+beantworten. 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+34 
+
+Fall 1: Eine Erhöhung der Staatsausgaben 
+• Wie wir bereits in Kapitel 2 erklärt haben, verschiebt die Erhöhung der 
+
+Staatsausgaben die AD-Kurve nach rechts. Bei gegebenem Preisniveau ist 
+die Nachfrage höher als zuvor. Bei gegebenem Output muss nun das 
+Preisniveau steigen, um die Nachfrage zu senken.  
+In der kurzen Frist führt der Anstieg der Preise zu einer Zunahme des 
+gesamtwirtschaftlichen Angebots. (Beachte: In diesem Prozess steigt die 
+von den Haushalten erbrachte Arbeitsleistung). 
+Im neuen kurzfristigen Gleichgewicht erhalten wir ein höheres Niveau der 
+Produktion zusammen mit einem gestiegenen Preisniveau. 
+
+•
+
+•
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+35 
+
+P
+
+AS (kurzfr.)
+
+AD1
+AD
+
+Y
+
+Y1
+
+Y
+
+36 
+
+• Mit der Zeit werden die Nominallöhne steigen. Dadurch verlagert sich die 
+Angebotsfunktion nach links. Die gesamtwirtschaftliche Nachfrage fällt. 
+• Langfristig passen sich die Nominallöhne vollständig an den Anstieg des 
+Preisniveaus an. Das ursprüngliche Produktionsniveau stellt sich neu ein. 
+Wir erhalten einen Anstieg des Preisniveaus ohne eine Veränderung des 
+Niveaus der gesamtwirtschaftlichen Produktion. 
+Im Ergebnis hat sich 
+ kurzfristig der Output bei gestiegenen Preisen erhöht, 
+ langfristig das Preisniveau bei konstantem Output erhöht. 
+
+•
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+37 
+
+AS (langfr.)
+
+P
+
+P1
+
+P
+
+AS1 (kurzfr.)
+AS (kurzfr.)
+
+AD1
+AD
+
+Y
+
+Y1
+
+Y
+
+38 
+
+Fall 2: Eine Erhöhung der Geldmenge 
+
+ Wie in Kapitel 2 erklärt, führt die Erhöhung der Geldmenge zu einer 
+Rechtsverschiebung der gesamtwirtschaftlichen Nachfragefunktion. 
+
+ Das Preisniveau steigt. 
+ In der kurzen Frist steigt das gesamtwirtschaftliche Angebot entlang der 
+
+kurzfristigen Angebotsfunktion. 
+
+ Langfristig passen sich die Nominallöhne an.  
+ Wir erhalten einen Anstieg des Preisniveaus ohne Veränderung des 
+
+Niveaus der Produktion.  
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+39 
+
+Fall 3: Eine Verschlechterung des Geschäftsklimas 
+
+ Wie in Kapitel 2 erklärt, führt die Verschlechterung der Erwartungen 
+der Unternehmer zu einer Verringerung der Investitionsnachfrage und 
+einer Linksverschiebung der gesamtwirtschaftlichen 
+Nachfragefunktion. 
+
+ Das Preisniveau fällt. 
+ In der kurzen Frist fällt das gesamtwirtschaftliche Angebot entlang der 
+
+kurzfristigen Angebotsfunktion. 
+
+ Langfristig passen sich die Nominallöhne an.  
+ Wir erhalten einen Fall des Preisniveaus ohne Veränderung des Niveaus 
+
+der Produktion. 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+40 
+
+Fall 4: Veränderungen auf der Angebotsseite. 
+• Beispiele: abrupte Änderungen der Energiepreise, Entdeckung neuer 
+Energiequellen, neue Technologien, Umweltschutzmaßnahmen, etc… 
+Welche dieser Schocks können wir als positive Angebotsschocks 
+Bezeichnen? Bei welchen handelt es sich um negative Angebotsschocks?  
+• Betrachten wir einen negativen Angebotsschock: Die kurzfristige und die 
+
+langfristige Angebotskurve verschieben sich nach links. 
+
+• Wenn die aggregierte Nachfragekurve unverändert bleibt, verringert sich 
+das gesamtwirtschaftliche Einkommen und das Preisniveau steigt. Eine 
+solche Situation wird auch als Stagflation bezeichnet. 
+ In der kurzen Frist ist die Abnahme der Produktion geringer als in der 
+
+langen Frist. 
+
+ Frage: Was kann der Staat in einer solchen Situation tun? 
+
+ 
+
+Makroökonomik II - WS 2014/2015 - Prof. Dr. Valeriya Dinger 
+ 
+
+41 
+
+Angebotsschock im AS-AD Modell 
+
+42 
+
+43 
+
+44 
+
+

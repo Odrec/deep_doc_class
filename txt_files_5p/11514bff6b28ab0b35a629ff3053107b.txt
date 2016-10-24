@@ -1,0 +1,549 @@
+Algorithmen II
+
+VO 1
+
+Organisatorisches
+
+Grundlagen
+
+Prof. Dr. Markus Chimani
+
+Theoretische Informatik, Uni Osnabrück
+
+Wintersemester 2014/15
+
+Einleitung
+
+Einleitung
+
+Organisatorisches
+
+Einleitung Organisatorisches
+
+Vorlesung
+
+Vorlesung
+
+VO 1 — 4
+
+(cid:73) Termin: wöchentlich, Montag, 10:15 – 11:45 @ 69/E18
+(cid:73) Unterlagen:
+
+(cid:73) Diese Folien, online → Stud.IP
+(cid:73) Einschlägige Algorithmenbücher, z.B.:
+
+Cormen/Stein/Leiserson/Rivest: „Introduction to
+Algorithms“
+(Deutscher Titel: „Algorithmen - Eine Einführung“)
+
+Prüfung
+
+(cid:73) Zulassung: Erfolgreiches Bestehen der Übung
+
+→ siehe nächste Folie
+
+(cid:73) Prüfungsmodus (voraussichtlich):
+
+Mündliche Prüfung, ca. 30min
+
+Einleitung Organisatorisches
+
+Übung
+
+VO 1 — 5
+
+(cid:73) alle 2 Wochen
+(cid:73) Freitag, 12:30 – 14:00 @ 69/E18
+(cid:73) Erster Termin: 24. Oktober
+
+(cid:73) Übungsblatt: immer ca. 2 Wochen vorab → Stud.IP
+(cid:73) „Kreuzchenübung“:
+
+Ankreuzen welche Aufgaben gelöst.
+Pseudozufällige Auswahl, wer es an der Tafel vorrechnet.
+
+(cid:73) Bestehen der Übung:
+
+(cid:73) mindestens 70% der Übungsaufgaben angekreuzt.
+(cid:73) Bei zu unrecht angekreuzter Aufgabe:
+
+1. Vergehen: Keine Bewertung des Übungsblatts.
+2. Vergehen: Kein Bestehen der Übung.
+
+Einleitung
+
+Thema der Vorlesung
+
+Einleitung Thema der Vorlesung
+
+VO 1 — 7
+
+Inhalt von Algorithmen II
+
+∗ heute?
+
+(cid:73) Formale Grundlagen: Landau-Symbole ∗
+(cid:73) Sortieren&Co: CountingSort, RadixSort ∗
+(cid:73) Suchen: weitere Suchbäume, Skiplisten, Intervallsuchen
+(cid:73) Heaps: Binomial, Fibonacci, Radix
+(cid:73) Hashing: Cuckoo-Hashing
+(cid:73) Strings: Suche, Alignment
+(cid:73) Flüsse/Schnitte:
+
+MaxFlow/MinCut, Ford-Fulkerson, Menger-Theorem
+
+(cid:73) Geometrische Algorithmen:
+Konvexe Hülle, Voronoi, Scanline
+(cid:73) Mathematische Algorithmen:
+
+Matrizenmultiplikation, Primzahl-Test
+
+(cid:73) Angewandte Algorithmen:
+
+Zip-Kompression, Schnelle Fourier-Transformation
+
+Warm Up: Formale
+
+Grundlagen & Sortieren
+
+Warm Up: Formale
+
+Grundlagen & Sortieren
+
+Landau-Symbole
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+VO 1 — 10
+
+O-Notation
+
+Das wichtigste Landau-Symbol kennen Sie schon: O
+Laufzeiten: O(n), O(n log n), O(n2m + m1.5),...
+Deﬁnition (Groß-O-Notation). Sei f (n) : Nk → N eine Funktion.
+Parameter n is dabei ein k-stelliger Vektor.
+O(f ) := { g : Nk → N | ∃c > 0,∃n0 ∈ Nk,∀n ≥ n0 : g(n) ≤ c · f (n) }
+
+Diese Menge bezeichnet alle Funktionen die asymptotisch maximal
+so schnell wachsen wie f (n). Die Funktion f (n) ist also eine
+asymptotische obere Schranke für jede Funktion g(n).
+
+Dies ist gleichbedeutend mit:
+
+g ∈ O(f ) ⇐⇒ ∃c > 0,∃n0 ∈ Nk, sodass ∀n ≥ n0 : g(n) ≤ c · f (n)
+
+In der Informatik schreiben wir (wenn auch formal fragwürdig) i.d.R.
+g = O(f ) statt g ∈ O(f ).
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+VO 1 — 11
+
+O-Notation als Kurve; Beispiele
+
+(n + 1)!
+
+2n
+
+3
+
+2 n + 3
+
+4
+
+10 n2 + 8
+
+5 n + 11
+
+10
+
+1
+
+f (n) = n
+40 n3 − 3
+log2 n + 2
+39
+10
+
+1
+
+2 n + 1
+
+4
+
+1
+
+20 n2 + 1
+
+2
+
+grün ∈ O(f )
+rot (cid:54)∈ O(f )
+
+n
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+VO 1 — 12
+
+O-Notation als Kurve; Beispiele (transformiert)
+
+(n + 1)!
+
+2n
+
+5( 1
+
+20 n2 + 1
+2 )
+
+6
+
+40 n3 − 3
+
+5 ( 1
+f (n) = n
+
+10 n2 + 8
+
+5 n + 11
+10 )
+
+1
+
+2 ( 3
+
+2 n + 3
+4 )
+
+39
+10
+
+1
+
+2 n + 1
+
+4
+
+1
+2 ( log2 n + 2)
+
+grün ∈ O(f )
+rot (cid:54)∈ O(f )
+
+n
+
+n0
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+VO 1 — 13
+
+Untere Schranken
+
+O-Notation gibt eine asympt. obere Schranke für eine Funktion an.
+„Algorithmus XY hat eine Laufzeit O(n2).“
+→ Er benötigt maximal quadratisch viel Zeit in der Eingabegröße.
+
+Analog können wir deﬁnieren:
+
+(cid:73) Asymptotische untere Schranke Ω (großes griech. Omega)
+
+„Algorithmus XY hat eine Laufzeit Ω(n2).“
+→ Er benötigt mindestens quadratisch viel Zeit.
+
+(cid:73) Asymptotisch scharfe Schranke Θ (großes griech. Theta)
+
+„Algorithmus XY hat eine Laufzeit Θ(n2).“
+→ Er benötigt immer quadratisch viel Zeit.
+
+Das bedeutet:
+
+Θ(f ) = O(f ) ∩ Ω(f )
+g = Θ(f ) ⇐⇒ g = O(f ) ∧ g = Ω(f )
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+VO 1 — 14
+
+Dominierende Schranken
+
+Und dann gibt es noch:
+
+(cid:73) Asymptotisch dominiert o (klein O)
+
+„Algorithmus XY hat eine Laufzeit o(n2).“
+→ Er benötigt echt weniger als quadratisch viel Zeit.
+
+(cid:73) Asymptotisch dominierend ω (klein omega)
+
+„Algorithmus XY hat eine Laufzeit ω(n2).“
+→ Er benötigt echt mehr als quadratisch viel Zeit.
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+VO 1 — 15
+
+Schranken, formal
+
+(cid:73) g ∈ o(f ): f dominiert (asymptotisch) g:
+
+„g < f “ ∀c > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : g(n) ≤ c · f (n)
+
+(cid:73) g ∈ O(f ): f ist eine asymptotische obere Schranke für g:
+
+„g ≤ f “ ∃c > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : g(n) ≤ c · f (n)
+
+(cid:73) g ∈ Θ(f ): f ist eine asymptotisch scharfe Schranke für g:
+
+„g = f “ ∃c(cid:48), c > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : c(cid:48) · f (n) ≤ g(n) ≤ c · f (n)
+
+(cid:73) g ∈ Ω(f ): f ist eine asymptotische untere Schranke für g:
+
+„g ≥ f “ ∃c(cid:48) > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : c(cid:48) · f (n) ≤ g(n)
+
+(cid:73) g ∈ ω(f ): f wird (asymptotisch) dominiert von g:
+„g > f “ ∀c(cid:48) > 0,∃n0 ∈ Nk, so dass ∀n ≥ n0 : c(cid:48) · f (n) ≤ g(n)
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+VO 1 — 16
+
+Eigenschaften
+
+Es gelten u.a. die folgenden einfachen Zusammenhänge:
+
+(cid:73) ω(f ) ⊂ Ω(f )
+(cid:73) o(f ) ⊂ O(f )
+(cid:73) Ω(f ) ∩ O(f ) = Θ(f )
+(cid:73) ω(f ) ∩ o(f ) = ∅
+(cid:73) Ω(f ) \ Θ(f ) = ω(f ), ω(f ) ∪ Θ(f ) = Ω(f )
+(cid:73) O(f ) \ Θ(f ) = o(f ), o(f ) ∪ Θ(f ) = O(f )
+(cid:73) O(f ) ∪ ω(f ) = o(f ) ∪ Ω(f )
+
+(cid:73) g = O(f ) ⇐⇒ f = Ω(g)
+(cid:73) g = o(f ) ⇐⇒ f = ω(g)
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+VO 1 — 17
+
+Laufzeitschranken beim Sortieren
+
+Sortieren von n Elementen.
+
+(cid:73) InsertionSort:
+(cid:73) SelectionSort:
+(cid:73) MergeSort:
+(cid:73) QuickSort:
+(cid:73) HeapSort:
+
+O(n2)
+O(n2)
+
+Ω(n),
+Ω(n2),
+Ω(n log n), O(n log n) ⇒ Θ(n log n)
+Ω(n log n), O(n2)
+Ω(n),
+
+O(n log n)
+
+⇒ Θ(n2)
+
+(heterogene Daten) Ω(n log n), O(n log n) ⇒ Θ(n log n)
+
+(cid:73) BubbleSort:
+
+Ω(n),
+
+O(n2) pfui...
+
+Achtung!
+
+(cid:73) InsertionSort:
+(cid:73) SelectionSort:
+(cid:73) MergeSort:
+(cid:73) QuickSort:
+(cid:73) HeapSort:
+
+Θ(n2)
+Θ(n2)
+
+Best case Worst case Any case
+Θ(n)
+Θ(n2)
+Θ(n log n) Θ(n log n) Θ(n log n)
+Θ(n log n) Θ(n2)
+Θ(n)
+
+Ω(n log n)∩O(n2)
+Θ(n log n) Ω(n) ∩ O(n log n)
+
+Ω(n) ∩ O(n2)
+Θ(n2)
+
+(heterogene Daten) Ω(n log n) O(n log n) Θ(n log n)
+
+Warm Up: Formale Grundlagen & Sortieren Landau-Symbole
+
+VO 1 — 18
+
+„Groberes“ Landausymbol
+
+˜O = „soft O“
+
+= O-Notation bei der logarithmische Faktoren ignoriert werden.
+
+g = ˜O(f ) ⇐⇒ ∃k : g = O(f logk f )
+
+Beachte: logk n = o(n(cid:96)) für alle Konstanten k, (cid:96) > 0!
+„Logaritmische Dinge wachsen immer langsamer als Polynome“
+
+z.B.
+
+3n log n
+
+√
+
+3n2
+4n log5 n
+4n log5 2n
+4n log5 n2
+
+= O(n2.5 log n)
+= O(n log5 n)
+= O(n log5 n)
+= O(n log5 n)
+
+= ˜O(n2.5)
+= ˜O(n)
+= ˜O(n)
+= ˜O(n)
+
+Warm Up: Formale
+
+Grundlagen & Sortieren
+
+CountingSort
+
+Warm Up: Formale Grundlagen & Sortieren CountingSort
+
+VO 1 — 20
+
+Linearzeit Sortierverfahren
+
+Wir erinnern uns: Untere Schranke beim Sortieren: Ω(n log n)
+⇒ Gilt nur für vergleichsbasierte Sortierprobleme.
+Oft sortiert man Objekte, die man nicht nur auf
+kleiner/gleich/größer miteinander vergleichen kann, z.B.:
+
+(cid:73) Sortiere eine Menge von n natürlichen Zahlen mit Werten ≤ k.
+(cid:73) Sortiere eine Menge von n Objekten gemäß ihrem Indexwert
+
+(z.B. Primary Key?) der zwischen 1 und n liegt.
+
+(cid:73) Sortiere eine Menge von n Fliesskommazahlen, wobei nur die
+
+Werte {1, 1.3, π, π3, 9.003, 12.456} vorkommen.
+
+⇒ Wir kennen a priori eine beschränkte Menge der potentiell
+
+vorkommenden Schlüsselwerte.
+
+Verfahren aus Info-A: BucketSort
+
+Warm Up: Formale Grundlagen & Sortieren CountingSort
+
+VO 1 — 21
+
+BucketSort
+
+Gegeben: Objektmenge O = {o1, o2, . . . , on} und Schlüsselfolge
+S = (cid:104)s1, s2, . . . , sk(cid:105). Jedes Objekt oi, 1 ≤ i ≤ n, enthält einen
+Schlüssel key(oi) ∈ S.
+Gesucht: Liste der Objekte O, sortiert gemäß der Schlüsselfolge S.
+
+Im Allgemeinen haben also mehrere Objekte den selben Schlüssel!
+
+Algorithmus BucketSort:
+
+Sei L ein k-elementiges Array von leeren Listen („Buckets“)
+for all i = 1 . . . n:
+
+L[key(oi)].append(oi)
+
+// sortiere Objekte in Buckets
+
+Sei R eine leere Liste
+for all i = 1 . . . k:
+R.append(L[i])
+
+return R
+
+// hänge Buckets aneinander
+
+Laufzeit: Θ(n + k). Falls k = O(n) ⇒ Laufzeit Θ(n)
+
+Warm Up: Formale Grundlagen & Sortieren CountingSort
+
+VO 1 — 22
+
+BucketSort, Pros & Cons ⇒ CountingSort
+
+Vorteil: Sehr einfach zu beschreiben, implementieren und
+Korrektheit einzusehen. — BucketSort ist stabil (Elemente mit
+gleichem Schlüssel behalten ihre vorige relative Reihenfolge bei).
+
+Nachteil: Speicheroverhead durch Listenverwaltung. Wenn
+Implementierung mit Arrays: Θ(nk) Speicher (Jeder Bucket muss
+Platz für bis zu n Elemente bieten)⇒ plötzlich Θ(nk) Laufzeit :-(
+
+Alternative: CountingSort
+
+Idee: Verwalte die Objekte zwischenzweitlich nicht in Buckets,
+sondern zähle nur mit, wieviele Objekte jeweils in einem Bucket
+landen würden. Daraus können wir folgern, an welcher
+Indexposition im Lösungsarray ein Bucket beginnt bzw. endet.
+Beispiel: O = {α3, β1, γ2, δ1}, S = (cid:104)1, 2, 3(cid:105)
+⇒ Bucketgrößen: C[1] = 2, C[2] = 1, C[3] = 1
+⇒ (vorläuﬁges) Ergebnisarray (nur Schlüssel): ?1, ?1, ?2, ?3
+⇒ Ablaufen der Eingabe, um die korrekten Objekte einzusetzen
+(stabiles Sortierverfahre!): β1, δ1, γ2, α3
+
+Warm Up: Formale Grundlagen & Sortieren CountingSort
+
+VO 1 — 23
+
+CountingSort
+
+Algorithmus:
+Sei C ein k-elementiges Integerarray, mit 0en initialisiert.
+for all i = 1 . . . n:
+
+C[key(oi)] += 1
+for all i = 2 . . . k:
+C[i] += C[i − 1]
+
+// Erhöhe entspr. „Bucketgröße“ um 1
+
+// Errechne Endindex des i-ten Buckets
+
+Sei R ein n-elementiges Objektarray, anfangs leer.
+for all i = n . . . 1:
+
+// Von hinten nach vorne!
+
+R[ C[key(oi)] ] = oi
+C[key(oi)] –= 1
+
+return R
+
+// Bucket-Endindex nach vorne schieben.
+
+Laufzeit: Θ(n + k). Falls k = O(n) ⇒ Laufzeit Θ(n)
+Selbe O-Notation wie BucketSort, aber auf Arrays statt Listen.
+
+Sowohl BucketSort als auch CountingSort sind stabil.
+
+

@@ -1,0 +1,2495 @@
+Computers in Industry 62 (2011) 213–226
+
+Contents lists available at ScienceDirect
+
+Computers in Industry
+
+j o u r n a l h o m e p a g e : w w w . e l s e v i e r . c o m / l o c a t e / c o m p i n d
+
+Survey paper
+
+A survey on industrial applications of fuzzy control
+
+Radu-Emil Precup a,*, Hans Hellendoorn b
+a ‘‘Politehnica’’ University of Timisoara, Faculty of Automation and Computers, Department of Automation and Applied Informatics,
+Bd. V. Parvan 2, 300223 Timisoara, Romania
+b Delft University of Technology, Delft Center for Systems and Control, Mekelweg 2, 2628 CD Delft, The Netherlands
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Article history:
+Received 25 July 2008
+Received in revised form 24 August 2010
+Accepted 1 October 2010
+Available online 28 October 2010
+
+Fuzzy control has long been applied to industry with several important theoretical results and successful
+results. Originally introduced as model-free control design approach, model-based fuzzy control has
+gained widespread signiﬁcance in the past decade. This paper presents a survey on recent developments
+of analysis and design of fuzzy control systems focused on industrial applications reported after 2000.
+ß 2010 Elsevier B.V. All rights reserved.
+
+Keywords:
+Adaptive fuzzy control
+Mamdani fuzzy controllers
+Predictive control
+Stable design
+Takagi-Sugeno fuzzy controllers
+
+Contents
+
+1.
+2.
+
+3.
+
+4.
+
+5.
+
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Control systems with Mamdani fuzzy controllers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+PI-, PD- and PID-fuzzy control . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.1.
+2.2.
+Sliding mode fuzzy control. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3.
+2-DOF fuzzy control . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Control systems with Takagi-Sugeno fuzzy controllers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Stable design of model-based fuzzy control systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.1.
+3.2.
+Tensor product model transformation and fuzzy control systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Adaptive fuzzy control, supervision and optimization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.1.
+Adaptation of the size of the membership functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Adaptation of the position of the membership functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2.
+Adaptation of the rule base . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.3.
+Adaptation of the link values . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.4.
+4.5.
+Fuzzy model-based predictive control . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Acknowledgements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+213
+215
+216
+216
+216
+217
+217
+218
+219
+219
+220
+221
+221
+221
+222
+222
+222
+
+* Corresponding author. Tel.: +40 256 5032 29/26/30/40; fax: +40 256 403214.
+
+E-mail address: radu.precup@aut.upt.ro (R.-E. Precup).
+
+0166-3615/$ – see front matter ß 2010 Elsevier B.V. All rights reserved.
+doi:10.1016/j.compind.2010.10.001
+
+1. Introduction
+
+Classical engineering approaches to the characterization of
+real-world problems are based on essentially qualitative and
+quantitative technique based on more or less accurate mathemat-
+ical modelling. In such approaches expressions like ‘‘medium
+temperature’’, ‘‘big humidity’’, ‘‘small pressure’’, ‘‘very big speed’’,
+
+214
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+related to the variables speciﬁc to the behaviour of a controlled
+process (CP), are subject to relatively difﬁcult interpretations from
+the quantitative point of view. This interpretation is difﬁcult
+because classical automation handles variables/information, pro-
+cessed with well-speciﬁed numerical values. Therefore the
+elaboration of the control strategy and its implementation in
+the control equipment requires an as accurate as possible
+quantitative modelling of the CP. Advanced control strategies
+may require the permanent reassessment of the models and of the
+values of the parameters characterizing the (parametric) models.
+Process control based on fuzzy set theory or fuzzy logic) – referred
+to as fuzzy control or fuzzy logic control – is more pragmatically
+with this regard because use is made of the linguistic characteri-
+zation of the quality of CP dynamics and of the adaptation of this
+characterization as function of the concrete conditions of CP
+operation.
+
+Zadeh set the basics of fuzzy set theory by a paper that seemed
+to be just mathematical entertainment about four decades ago
+[1]. The boom in computer science opened in the seventies the
+ﬁrst prospects for applications of the meanwhile built theory in
+various ﬁelds ranging from control engineering, qualitative
+modelling, pattern recognition, signal processing, information
+processing, machine intelligence, decision making, management,
+ﬁnance, medicine, and so on. In particular, fuzzy control, as one of
+the earliest branches and applications of fuzzy sets and systems,
+has become one of the most successful applications. Fuzzy
+control has proven to be a successful control approach to many
+complex nonlinear systems or even nonanalytic ones. It has been
+suggested as an alternative approach to conventional control
+techniques in many situations. This paper will be focused on
+industrial applications, and the analysis is dedicated to the period
+after 2000.
+
+The ﬁrst fuzzy control application belongs to Mamdani and
+Assilian [2,3], where control of a small steam engine is
+considered. The reference applications of fuzzy control, associ-
+ated by experiments, deal with a warm water plant [4] and with a
+small scale heat exchanger [5]. Afterwards, during the eighties in
+Japan, USA, and later, in Europe, a so-called fuzzy boom took
+place in the ﬁeld of fuzzy control applications to several domains
+beginning with electrical household industry and consumer
+electronics up to other industries like mechanical and robotic
+systems, power plants and systems, telecommunications, trans-
+portation systems, automotive systems, chemical processes and
+nuclear reactors. This boom was caused partly by the spectacular
+development of electronic technology and computer systems
+that enables:
+
+- the manufacturing of circuits with very high speed of information
+processing, dedicated (by construction and usage) to a certain
+purpose including fuzzy information processing and resulting in
+embedded systems,
+
+- the development of computer-aided design programs, which
+allow the control system designer to use efﬁciently a large
+amount of information concerning the CP and the control
+equipment.
+
+The industrial applications of fuzzy control reported until now
+emphasize two important aspects related to this control strategy:
+
+- In some situations (for example, the control of processes with
+functional nonlinearities which subjected to difﬁcult mathemat-
+ical modelling and the control of ill-deﬁned processes), fuzzy
+control can be viewed as a viable alternative to classical, crisp
+control (conventional control),
+
+- Compared to conventional control, fuzzy control can be strongly
+based and focused on the experience of a human operator, and a
+
+fuzzy controller can model more accurately this experience (in
+linguistic manner) versus a conventional controller.
+
+The main features of fuzzy control can be organised as follows:
+
+- Fuzzy control employs the so-called fuzzy controllers (FCs) or
+fuzzy logic controllers ensuring a nonlinear input–output static
+map that can be inﬂuenced/modiﬁed based on designer’s option.
+- Fuzzy control can process several variables from the CP, hence it
+can be considered as belonging to the class of multi-input–multi-
+output (MIMO) systems with interactions. Therefore the FC can
+be considered as a multi-input controller (eventually, a multi-
+output one, too), similar to linear or nonlinear state-feedback
+controllers.
+
+- FCs do not possess dynamics, but the applications and perform-
+ance of FCs and fuzzy control systems (FCSs) can be enlarged
+signiﬁcantly by inserting dynamics (i.e., derivative and/or
+integral components) to fuzzy controller structures resulting
+in the so-called fuzzy controllers with dynamics.
+
+- FCs are ﬂexible with regard to the modiﬁcation of the transfer
+features (by input–output static maps). Thus the possibility to
+develop a large variety of adaptive control system structures is
+offered.
+
+The control approach based on human experience is acting in
+FCs by expressing the control requirements and elaborating the
+control signal in terms of the natural IF–THEN rules which belong
+to the set of rules
+
+:::
+IF ðantecedentÞ THEN ðconsequentÞ;
+:::
+
+(1)
+
+where the antecedent (premise) refers to the found out situation
+concerning the CP dynamics (compared usually with the desired/
+imposed dynamics), and the consequent (conclusion) refers to the
+measures which should be taken – under the form of the control
+signal u – in order to fulﬁl the desired dynamics. The set of rules (1)
+makes up the rule base of the FC.
+
+Research results obtained in studying the behaviour of the
+human expert emphasize that the expert has a speciﬁc strongly
+nonlinear behaviour accompanied by anticipative, derivative,
+integral and predictive effects and by adaptation to the concrete
+operating conditions. Colouring the linguistic characterization of
+CP dynamics (and, accordingly, of fuzzy mathematical characteri-
+zation) based on experience and translating it to the control signal
+elaboration and the analysis of CP dynamics will be characterized
+by parameters that enable the modiﬁcation of FC features. From
+this point of view the FCSs can be regarded as belonging to the
+general framework of intelligent control systems.
+
+The block diagram of principle (considered as classical in the
+literature) of an FCS is presented in Fig. 1. The FCS is considered as a
+single input system with respect to the reference input r and as a
+
+Fig. 1. Basic fuzzy control system structure.
+
+[
+(
+)
+T
+D
+$
+F
+I
+G
+]
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+215
+
+single output system with respect to the controlled output y. The
+second input fed to the CP/FCS is the disturbance input d.
+
+Fig. 1 highlights also the operation principle of an FC in its
+classical version, characterizing Mamdani FCs, with the following
+variables and modules:
+
+(1) the crisp inputs,
+(2) the fuzziﬁcation module,
+(3) the fuzziﬁed inputs,
+(4) the inference module,
+(5) the fuzzy conclusions,
+(6) the defuzziﬁcation module,
+(7) the crisp output.
+
+The essential, already mentioned, particular feature of FCSs
+concerns the multiple interactions regarded from the process to
+the controller by the auxiliary variables ya, gathered in the input
+vector e0
+e0 ¼ ½ e yT
+
+en T :
+
+a  ¼ ½ e1
+
+e2
+
+:::
+
+(2)
+
+These variables are direct or indirect inputs to the fuzzy
+controller. No matter how many inputs to the FC are, the FC should
+possess at least one input variable e1 that corresponds to the
+control error e
+e1 ¼ e ¼ r   y:
+
+(3)
+
+According to Fig. 1, the operation principle of a Mamdani FC
+
+involves the sequence of operations (a), (b) and (c):
+
+(a) The crisp input information – the measured variables, the
+reference input (the set point), the control error – is converted
+into fuzzy representation. This operation is called fuzziﬁcation
+of crisp information.
+
+(b) The fuzziﬁed information is processed using the rule base,
+composed of the fuzzy IF-THEN rules referred to as fuzzy
+control rules of type (1) that must be well deﬁned in order to
+control the given process. The principles to evaluate and
+process the rule base represent the inference mechanism/
+engine and the result is the ‘‘fuzzy’’ form of the control signal u,
+the fuzzy control signal.
+
+(c) The fuzzy control signal must be converted into a crisp
+formulation, with well-speciﬁed physical nature, directly
+understandable and usable by the actuator in order to be
+capable of controlling the process. This operation is known
+under the name of defuzziﬁcation.
+
+The three operations described brieﬂy here characterize the
+three modules in the structure of an FC (Fig. 1), the fuzziﬁcation
+module (2), the inference module (4) and the defuzziﬁcation
+module (6). All three modules are assisted adequate databases.
+
+In the majority of applications an FC is used for direct feedback
+control or on the low level
+in hierarchical control system
+structures. However, it can be used on the supervisory level, for
+example in adaptive control system structures. Nowadays fuzzy
+control is no longer only used to directly express the knowledge on
+the CP or, in other words, to do model-free fuzzy control. An FC can
+be calculated from a fuzzy model obtained in terms of system
+identiﬁcation techniques, and thus it can be regarded in the
+framework of model-based fuzzy control. Most often used are:
+
+- Mamdani fuzzy controllers, referred to also as linguistic FCs, with
+either fuzzy consequents that represent type-I fuzzy systems
+according to the classiﬁcations given in [6] or singleton
+consequents belonging to the type-II fuzzy systems. These FCs
+are usually used as direct closed-loop controllers.
+
+- Takagi-Sugeno (T-S) fuzzy controllers, known also as type-III
+fuzzy systems especially when afﬁne consequents are employed,
+and typically used as supervisory controllers.
+
+Several excellent books and tutorial articles on fuzzy control
+are well-acknowledged [7–24]. Several survey and position
+papers highlight speciﬁc topics in fuzzy control, make character-
+izations and present points of view. A good survey on fuzzy
+modelling for control is done in [25]. The stability analysis
+methods for type-II fuzzy control systems are analyzed in detail in
+[6]. A very good survey on neuro-fuzzy rule generation in a rather
+general setting of soft computation is given in [26]. The fusion of
+computational intelligent methodologies, including fuzzy logic
+and sliding mode control,
+is thoroughly discussed in [27].
+Conclusions of great wisdom regarding the perspectives of fuzzy
+control systems are pointed out in [28]. An excellent survey on
+analysis and design methods of model based fuzzy control
+systems is given in [29].
+
+This paper is focused on industrial applications of fuzzy
+control with application ﬁelds that include but are not limited to
+manufacturing, robotics, automotive and process industry, and
+control of servo systems and actuators as well. A large part of
+these applications can be viewed in the framework of
+mechatronic systems. The authors are aware of the fact that
+the publications on the topic of fuzzy logic control are so huge
+that an exhaustive list is impossible. Selected papers are given in
+the end of this paper. Many excellent works are unfortunately
+missed. In addition, this survey paper is not able to cover all
+categories of industrial applications of fuzzy logic control in
+detail.
+
+The paper addresses the following topics. Industrial applica-
+fuzzy controllers
+tions of control systems with Mamdani
+are discussed in Section 2. Next, Section 3 is focused on
+control systems with Takagi-Sugeno fuzzy controllers. The stable
+design of model-based fuzzy control systems and aspects
+concerning the tensor product (TP) model transformation are
+considered. Applications of adaptive and predictive fuzzy control
+dealing with supervision and optimization, i.e., multi-level fuzzy
+control systems, are presented in Section 4. Section 5 gives
+concluding remarks, perspectives and challenges of
+fuzzy
+control.
+
+2. Control systems with Mamdani fuzzy controllers
+
+The design of FCSs with Mamdani FCs is usually performed by
+heuristic means incorporating human skills and experience, and it
+is often carried out by a model-free approach. The immediate
+shortcoming resulted from the model-free design and FC tuning
+concerns the lack of general-purpose design methods. Although
+the performance indices of such control systems are generally
+satisfactory, a major problem is the analysis of the structural
+properties possessed by the FCSs including stability, controlla-
+bility, parametric sensitivity and robustness [19,22–24,28]. In
+addition, the design of such control systems suffers from the lack
+of systematic approaches. Therefore much research attention has
+been devoted to the stability analysis. Actual trends make use of
+Lyapunov’s approach [30], Krasovskii’s approach [31],
+the
+describing function method [19], Krasovskii-LaSalle’s invariant
+set
+the small gain theorem [33], algebraic
+approaches [34] including the vector norms approach [35,36],
+applicable to Mamdani FCs but also with minor modiﬁcations to T-
+S FCs. The common idea of all these approaches is to regard the FC
+as a nonlinear controller with Lurie-Postnikov nonlinearity, the CP
+with crisp model (linear or not) and embed the stability problem
+of FCSs into the stability theory of conventional nonlinear
+systems.
+
+theorem [32],
+
+216
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+Several applications of FCSs with Mamdani FCs are reported
+in manufacturing. They include control of industrial weigh belt
+feeders [37], the realization of speciﬁc controllers [38,39],
+control of machining processes [40–43], laser tracking systems
+[44], plastic injection molding [45] and vibration suppression
+[46]. The manufacturing area is related to robotics. Mamdani FCs
+concern control of both manipulators and mobile robots [47–
+60].
+
+The automotive industry is one special successful area of
+Mamdani FCs. Problems and practical issues related to suspension
+control are discussed in [61]. The control of hybrid electric vehicles
+is treated in [62] and the complexity of all related control strategies
+is emphasized in [63]. The control of anti-lock braking systems is
+analyzed in [64,65].
+
+Process industries include Mamdani
+
+fuzzy control. The
+applications reported in this context tackle the control of furnaces
+[66,67], ﬁltration processes [68], air conditioning [69,70], heat
+exchangers [71] or forging machines [72].
+
+Control systems should exhibit generally very good steady-
+state, dynamic performance and robustness as well. Hence they
+require high quality servo systems that ensure both stabilization
+and tracking. The same problem is in case of complex control
+systems where the actuators can be viewed as local control
+systems with high needs as the performance is concerned. Servo
+systems are widely used in mechatronics applications charac-
+terized by tight coupling of different implementation techniques
+including hydraulics, mechanics, electro-mechanics, electronics
+and software [73–75]. Applications of these servo systems can
+be found in electro-hydraulic systems, actuators in robots or
+automotive systems, etc., where the CPs can be well character-
+ized in simpliﬁed forms by benchmark systems [76–83]. One of
+the actual trends in control systems for mechatronics is that
+newer generations shall always be smaller, cheaper and/or
+provide additional functionality [75]. One difﬁcult and chal-
+lenging task coming from this is to devise cost-effective
+solutions
+these
+systems. Fuzzy control has recently been applied to a variety
+of servo systems and actuators in mechatronics [84–93].
+
+that guarantee improved performance of
+
+Aircraft, missile autopilot and helicopter control represent also
+areas where fuzzy control
+is applied ensure performance
+improvements. The results outlined in these areas [94–102] can
+be connected well to those dedicated to servo systems.
+
+2.1. PI-, PD- and PID-fuzzy control
+
+functionalities including anti-windup,
+
+PI, PD and PID controllers are still the most widely used in
+industrial control loops worldwide because they have simple
+structures, can be designed easily and offer good control system
+performance at acceptable cost [103]. The CS performance indices
+provided by these PID controllers depend not only on the tuning
+parameters, but also on the necessary implementation of
+additional
+feedforward
+action, and set point ﬁltering [104]. However, PI, PD and PID
+controllers might not ensure satisfactory control system perform-
+ance if the mathematical model of the CP is highly nonlinear,
+subjected to parameter variance, and/or uncertainties. On the
+other hand, conventional fuzzy control is known for its ability to
+cope with nonlinearities and uncertainties.
+Introduction of
+dynamic fuzzy controller structures with the aim of control
+system performance improvement leads to PI-, PD- or PID-fuzzy
+controllers [105–108]. Several Mamdani PI-fuzzy controllers (PI-
+FCs), PD-fuzzy controllers (PD-FCs) and PID-fuzzy controllers (PID-
+FCs) [109–111] as well as Takagi-Sugeno PI-FCs, PD-FCs and PID-
+FCs [17,90,100,111] are developed.
+
+PI-FCs, PD-FCs, and PID-FCs can be designed and tuned using
+
+two approaches:
+
+- the ﬁrst is based on the fact that under some well-stated
+conditions, the approximate equivalence between linear and
+fuzzy controllers is generally acknowledged [37,112–114],
+
+- the second relies on the consideration of these fuzzy controllers
+(FCs) as nonlinear PD, PI, or PID controllers with variable gains
+[115–118].
+
+The ﬁrst approach is considered as the direct action type of PI-
+FCs, PD-FCs and PID-FCs [110] since the inference module
+calculates the control signal (action) directly to control a system.
+The second approach is viewed as gain scheduling [119,120].
+
+Industrial implementations of PI-, PD- or PID-fuzzy controllers
+involve both approaches although the gain scheduling was ﬁrst
+accepted from industry [121]. Applications of PI-FCs, PD-FCs and
+PID-FCs were classiﬁed and pointed out at the beginning of this
+section. Other applications are reported in [118,122–128]. Several
+topics of interest regarding PI-FCs, PD-FCs or PID-FCs, which are
+well identiﬁed in [29], concern the industrial applications FC
+tuning [117], optimal FCs by inserting genetic algorithms
+[122,124,129–134] or neural networks [29,135–137], and robust
+FCs [29,93,138–140].
+
+2.2. Sliding mode fuzzy control
+
+It is well acknowledged that sliding mode control exhibits
+robustness properties [141]. So a natural direction is to embed this
+property in fuzzy control. This will lead to the alleviation of the
+negative effects due to the chattering phenomenon speciﬁc to
+sliding mode control systems and the combination between the
+two techniques, sliding mode and fuzzy control,
+leads to
+complementing the advantages of both ones.
+
+Usual approaches to sliding mode control are:
+
+- The sliding mode controller handles linguistic information
+modelled by means of fuzzy processing with the elimination
+of the chattering phenomenon by the creation of fuzzy boundary
+layers [142–145].
+
+- Supervisory sliding mode controller
+
+is inserted to fuzzy
+controller structures leading to the guarantee of stability and
+improvement of robustness [146–150].
+
+These approaches ensure the convenient treatment of FCS
+stability analysis and design in the framework of the well
+developed methods dedicated to sliding mode control. Symmetri-
+cal FCs (as to their deﬁnition in an input–output matrix) can be
+regarded as sliding mode controllers with multiple sliding lines.
+
+2.3. 2-DOF fuzzy control
+
+Since the main tasks in control, the achievement of high
+performance in set-point tracking and the regulation in the
+presence of disturbance inputs are difﬁcult to be accomplished by
+means of PI and PID controllers, one typical approach is to design
+two-degree-of-freedom (2-DOF) controllers which have advan-
+tages over the one-degree-of-freedom ones [151–153]. But, the
+main drawback of 2-DOF controllers is that although they ensure
+the regulation, the reduction of overshoot is paid by slower set-
+point responses because the 2-DOF structures can be reduced to
+feedforward controllers with set-point weighting.
+
+The control performance enhancement with respect to the
+modiﬁcations of set-point and of load disturbance inputs ensured
+by the FCs in connection with the overcome of the above
+mentioned drawback of 2-DOF controllers leads to the idea of 2-
+DOF fuzzy controllers [154–158]. Very good control system
+performance with respect to the set-point and disturbance input
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+217
+
+Fig. 2. Set-point ﬁlter 2-DOF control system structure (a), feedforward 2-DOF control system structure (b), feedback 2-DOF control system structure (c), component-separated
+2-DOF PI control system structure (d), deﬁnition of load disturbance input scenarios (e).
+
+can be obtained if the process with the transfer function of the
+controlled process P(s) is included to the generic 2-DOF control
+system structures presented in Fig. 2, referred to as the set-point
+ﬁlter structure (Fig. 2(a)), the feedforward structure (Fig. 2(b)), the
+feedback structure (Fig. 2(c)) and the component-separated
+structure exempliﬁed for the 2-DOF PI controller (Fig. 2(d)),
+where: r – the set-point, y – controlled output, e = r   y or e = r1   y
+– the control error, u – the control signal, r1, u2, u2 and u4 – the
+outputs of the blocks F(s), C(s) (in Fig. 2(b)), C*(s) and CI(s),
+respectively, and d1, d2 and d3 – several load disturbance inputs
+deﬁned in Fig. 2(e).
+
+Some of the controller blocks in Fig. 2 can be fuzziﬁed in order to
+improve the control system performance [158]. Similar structures
+can be formulated under the form of state-feedback control
+systems to be treated in the following sections.
+
+3. Control systems with Takagi-Sugeno fuzzy controllers
+
+T-S fuzzy models represent fuzzy dynamic models or fuzzy
+systems [25,28,159,160]. This brings a twofold advantage. First,
+any model-based technique (including a nonlinear one) can be
+applied to the fuzzy dynamic models. Second, the controller itself
+can be considered as a fuzzy system. Since the fuzzy model of the
+nonlinear process is usually based on a set of local linear models
+which are smoothly merged by the fuzzy model structure, a natural
+and straightforward approach is to design one local controller for
+each local model of the process. This idea is known as parallel
+distributed compensation [18]. In parallel distributed compensa-
+tion (PDC) the structure of the FC model matches the structure of
+the fuzzy model of the CP.
+
+The identiﬁcation of T-S fuzzy models is of great importance
+generally for T-S FC designs and strictly necessary for PDC. Many
+good results and applications with this respect are reported in
+[16,18,29,161–166] where use is made of two approaches. The ﬁrst
+one is to linearize the nonlinear model of the process in the vicinity
+of important operating points assuming that the model of the
+process is known for example in its ﬁrst principle form. The second
+one, applied when the model of the process is unknown, is to make
+use of the data generated (analytically or experimentally) from the
+original nonlinear process. The second approach consists of two
+steps, the structure identiﬁcation and the parameter estimation,
+and it employs various techniques to solve the optimization
+problem with the aim in ﬁtting the models to the pairs of input–
+output data.
+
+The industrial applications of T-S FCs were presented in the
+previous section in close connection to those of Mamdani FCs.
+However, due to the model-based design, most references offer
+results concerning the stabilization of T-S fuzzy models.
+
+3.1. Stable design of model-based fuzzy control systems
+
+The following continuous Takago-Sugeno fuzzy model of the
+
+process is considered in the state-space form
+
+rB
+
+X
+hiðzðtÞÞðAixðtÞ þ BiuðtÞÞ;
+X
+hiðzðtÞÞCixðtÞ;
+
+i¼1
+rB
+
+i¼1
+
+˙xðtÞ ¼
+
+yðtÞ ¼
+
+where rB is the number of rules, z(t) is the vector of measurable
+variables of the process, x(t) is the state vector, u(t) is the control
+signal (input) vector, y(t) is the output vector, and
+hiðzðtÞÞ  0;
+
+i ¼ 1; rB;
+
+(5)
+
+are the degrees of fulﬁlment of the rules satisfying the convex sum
+
+propertyX
+hiðzðtÞÞ ¼ 1:
+
+rB
+
+i¼1
+
+(4)
+
+(6)
+
+(7)
+
+(8)
+
+The local linear models of the process
+
+˙xðtÞ ¼ AixðtÞ þ BiuðtÞ;
+yðtÞ ¼ CixðtÞ;
+
+i ¼ 1; rB;
+
+are supposed to be observable and controllable. In discrete T-S
+˙xðtÞ is replaced by x(t + 1) in the models (4) and (7).
+fuzzy models,
+
+The PDC controller for the system (4) is
+
+X
+uðtÞ ¼  
+hiðzðtÞÞFixðtÞ:
+
+rB
+
+i¼1
+
+The goal of the control design problem is to obtain the gain
+i ¼ 1; rB, of the nonlinear state-feedback control law
+matrices Fi;
+(8) such that the closed-loop system modelled by Eqs. (2) and (8) is
+stable and eventually robust. Many design problems derive the
+least conservative conditions [28] that fulﬁl the condition
+
+X
+X
+hiðzðtÞÞh jðzðtÞÞGi j < 0; Gi j ¼ GT
+i j:
+
+rB
+
+rB
+
+(9)
+
+i¼1
+
+j¼1
+
+The ﬁrst results consider the quadratic Lyapunov function
+
+candidate [167]
+VðxÞ ¼ xTðtÞPxðtÞ; P ¼ PT > 0:
+
+(10)
+
+The calculation of the derivative of the function deﬁned in (10)
+along the trajectories of the FCS characterized by Eqs. (2) and (8)
+
+[
+(
+)
+T
+D
+$
+F
+I
+G
+]
+218
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+leads to the result
+Gi j ¼ ðAi   BiF jÞT P þ PðAi   BiF jÞ < 0;
+
+i; j ¼ 1; rB;
+
+for continuous T-S models or
+Gi j ¼ ðAi   BiF jÞT PðAi   BiF jÞ   P < 0;
+
+i; j ¼ 1; rB:
+
+(11)
+
+(12)
+
+for discrete T-S fuzzy models:
+
+The main approach to solve the system of Eqs. (9) and (11)
+makes use of linear matrix inequality (LMI)-based techniques
+[168]. Popular approaches employ quadratic, piecewise quadratic,
+non-quadratic, parameter-dependent, polynomial and fuzzy Lya-
+punov functions [169–182], and they show the constant effort to
+reduce the conservativeness of the stability conditions. Although
+the LMIs are computationally solvable they require numerical
+algorithms embedded in well acknowledged software tools.
+
+The LMIs can be applied to other control system structures with
+T-S FCs and models. They include the cascade control systems
+[183] eventually with fuzzy observers [184] which are validated by
+experiments and/or simulations.
+
+3.2. Tensor product model transformation and fuzzy control systems
+
+One of the current trends in fuzzy control is to derive less
+conservative conditions to prove the stability and the performance
+of FCSs [19,28,185]. The fuzzy partitions are the combinations of
+the products of rather simple arguments expressed as membership
+functions. In real-world applications one particular case concerns
+fuzzy modelling of nonlinear systems under the form of TP fuzzy
+systems. The expression of TP fuzzy systems can be understood in
+terms of operations on multi-dimensional arrays [185].
+
+The TP model transformation is capable of transforming a
+dynamic system model, given over a bounded domain, into the TP
+model form, including polytopic or T-S fuzzy model forms. The TP
+model transformation may be deﬁned as one numerical method
+capable of
+transforming the linear parameter-varying (LPV)
+dynamic models into parameter-varying weighted combination
+of parameter independent (constant) system models under the
+form of linear time-invariant (LTI) systems. This transformation of
+LPV models is uniform in both theoretical and algorithmic
+execution and it considers different optimization constraints.
+The main advantage of TP model transformation in modifying the
+given LPV models to varying convex combinations of LTI models is
+that the LMI-based control design frameworks can be applied
+immediately to the resulting afﬁne models in order to get a
+tractable and improved performance of the FCSs.
+
+The widely applied transfer function of the product decision
+operator-based T-S fuzzy models and the function of the TP model
+is the same from the analytical point of view in widely general
+cases. The main philosophical difference between them is that the
+T-S fuzzy model originally means a fuzzy combination of locally
+linearized LTI models, where the locality is expressed by the shape
+of the antecedent fuzzy sets, for instance, by triangular fuzzy sets
+where the location of the fuzzy set is readily determinable.
+However in case of TP model the weighting functions (which
+correspond to the membership functions in the fuzzy models) may
+not have locality, they spread in the whole interval of interest, so as
+the LTI components of the model cannot readily be assigned to a
+deﬁnite operation point. They are mostly vertexes of a polytopic
+structure. In conclusion, the T-S fuzzy model originally is a fuzzy
+combination of linearized operation points (LTI systems are close
+to local models), while the TP model is originally a polytopic
+structure (LTI systems are the vertex models of a convex hull of the
+model, they may be relatively far from any linearized operation
+points). In other words, an LTI system affects a fuzzy local area in
+case of T-S models. In the case of TP models an LTI system affects
+
+the whole operation domain, but according to the weighting
+functions. As a matter of fact, in today systems these two original
+ideas are combined in both T-S and TP models, therefore the
+difference is not important.
+
+The TP model transformation generates two kinds of polytopic
+models. Initially, it reconstructs the high order singular value
+decomposition (HOSVD)-based canonical form of the LPV models.
+The major outcome of the recently developed HOSVD comes from
+its ability in decomposing a given N-dimensional tensor into a full
+orthonormal system in a special ordering of higher order singular
+values.
+
+Regarding the variety of well acknowledged and implemented
+identiﬁcation techniques, it is difﬁcult to derive the uniform
+representation of the designed LPV model forms and the forms
+resulted from the identiﬁcation. Hence the TP model transforma-
+tion might be a possible solution for that situation, and an
+immediate link between the model transformation and the LMIs
+should be determined.
+
+A key advantage of the TP model transformation is that it allows
+the modiﬁcation of the parameter varying convex combination
+according to the designer’s option. The type of the convex
+combination considerably inﬂuences the further LMI design and
+resulting control performance. Therefore the design can be based
+on the manipulation of the convex hull beside the manipulation of
+the LMIs.
+
+Based on the core theory of the TP model transformation that is
+coming from the singular value decomposition (SVD) methods
+[186] the TP model transformation is capable of reducing the
+complexity of TP structured functions like T-S fuzzy models or B-
+spline models and so on. The multilinear generalizations of the SVD
+and the investigation on how the tensor symmetries affect the
+decomposition are discussed in [187]. The HOSVD has been
+developed since the existing framework of vector and matrix
+algebra; it appeared to be insufﬁcient as increasing number of
+signal processing problems involved the manipulation of quanti-
+ties of which the elements are addressed by more than two indices,
+i.e., higher-order tensors. Use is made of higher-order tensors to
+describe the transformations in the same way as the matrices
+describe linear transformations between vector spaces.
+
+Making use of the TP model transformation, different optimi-
+zation and convexity constraints can be considered and the
+transformations can be executed as well without any analytical
+interactions within less time. Thus, the transformation replaces the
+usual analytical conversions.
+
+Accepting an N-dimensional bounded parameter vector p(t)
+
+and considering the LPV model
+
+˙xðtÞ ¼ AðpðtÞÞxðtÞ þ BðpðtÞÞuðtÞ;
+yðtÞ ¼ CðpðtÞÞxðtÞ þ DðpðtÞÞuðtÞ;
+
+
+the system matrix
+
+
+
+SðpðtÞÞ ¼ AðpðtÞÞ BðpðtÞÞ
+CðpðtÞÞ DðpðtÞÞ
+
+2 ROI
+
+(13)
+
+(14)
+
+is a parameter-varying object. The convex state-space TP model
+describes the LPV state-space model for any parameter vector p(t)
+as the convex combination of LTI system matrices
+
+ 
+
+!
+
+ 
+
+!
+
+˙xðtÞ
+yðtÞ
+
+¼ S
+N
+
+n¼1wnðpnðtÞÞ xðtÞ
+uðtÞ
+
+;
+
+(15)
+
+where the row matrix wn(pn(t)) contains one bounded variable and
+its continuous weighting functions, and N indicates the tensor’s
+dimension. The (ﬁnite element) TP model deﬁned in (15) is convex
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+219
+
+only if the weighting functions fulﬁl the condition
+X
+wn;iðpnðtÞÞ 2½0; 1;
+wn;iðpnðtÞÞ ¼ 1;
+
+8 n; i; pnðtÞ;
+8 n; pnðtÞ:
+
+In
+
+i¼1
+
+(16)
+
+The LMI-based controller design methods can immediately be
+applied after the transformation of the LPV model (14) given in
+HOSVD-based canonical form to the TP model form expressed in (15)
+and (16). In other words, the TP model transformation is to be used
+and executed before utilizing the LMI design, i.e., when the LMI
+design is started the global weighting functions are already deﬁned.
+A short presentation of the applications of TP model transfor-
+mation, well connected to T-S FCSs, is presented in [188] and
+accompanied by a temperature control application. An attractive
+control design method accompanied by application is given
+[189,190] to stabilize parameter varying nonlinear state-space
+models. It is based on two numerical steps. In the ﬁrst step the TP
+model transformation is executed. In the second step LMIs are
+solved under the PDC framework. The ﬁrst step consists in
+transforming a given model into a TP, so that the design techniques
+of the PDC framework can be employed. The operations associated
+to the second step produce a controller according to various control
+speciﬁcations. The advantages of this method are twofold. First, the
+controller can be derived automatically, regardless of analytic
+derivations. Second, the identiﬁed model can be deﬁned either by
+analytical equations or by other soft computing techniques.
+
+A popular TP model application deals with controlling the TORA
+system [191] where a nonlinear controller has been designed
+making use of the TP model transformation and a LMI-based
+controller design technique. The results show that both numerical
+methods, the TP model transformation and the LMIs, can be
+accomplished numerically without analytical derivations, leading
+to fast controller designs.
+
+A case study regarding the TP model transformation behaviour
+in real-world applications is discussed in [192] with focus on the
+single pendulum gantry system. A generalization of the double
+fuzzy summation results to multiple summations with a TP
+structure is emphasized in [185]. This is meant to replace the well
+accepted common structure in many fuzzy models. A simulated
+application concerning the inverted pendulum system is included.
+A Matlab toolbox for TP model transformation, the TP Tool, is
+implemented and described in [193]. The toolbox is applied to
+several benchmark systems and to the real-time control of the
+liquid levels in a three tank system [194].
+
+An excellent application of the TP model transformation deals
+with offering a control solution for the aeroelastic wing section
+problem that was considered as unsolved previously [195,196].
+This is the ﬁrst convincing well detailed example of applying TP
+model transformation with PDC design framework. It shows the
+observer design as well.
+
+4. Adaptive fuzzy control, supervision and optimization
+
+There are many formations for the FC in FCSs similarly to the
+different control schemes focused on PI controllers presented in
+Fig. 2. An adaptive FC has one extra component, a supervisory
+module, as shown in Fig. 3. The supervisory module has
+
+Fig. 3. An adaptive fuzzy controller with a supervisory system.
+
+Fig. 4. Changing the side slopes of a group of membership functions. The modal
+values (centres) stay at the same position.
+
+understanding of the process and of the controller, and has access
+to all input and usually also to all output signals. The supervisory
+module can modify several components of the fuzzy controller like
+the size of the membership functions of the fuzzy sets, the position
+of the membership functions, the rule weights and/or the link
+values. These four items will be discussed below. A predictive FC
+will be also described. That controller does not change the
+parameters of the underlying FC, but it chooses every time the best
+control signal based on a performance measure expressed in terms
+of an objective function. The goal is to minimize the objective
+function.
+
+4.1. Adaptation of the size of the membership functions
+
+The supervisor can change the size of the membership functions
+of the fuzzy sets corresponding to the linguistic terms of the FC,
+e.g., increase or decrease the support (width) of an individual
+membership functions or change the width to the left-hand or
+right-hand side, like in Fig. 4, applicable to both input and output
+linguistic variables of
+the fuzzy controller. The triangular
+membership functions of the linguistic terms LT1, Lt2, LT3 and
+LT4 were chosen in Fig. 4, with the parameters li; ri; i ¼ 1; 4.
+Likewise, the spread s of Gaussian fuzzy sets can be adapted.
+
+Actually, the adaptation means that the supervisor can change
+the partitioning of the membership functions on the universe of
+discourse. An example of this is a controller for the cruise control of
+a car [197]. With cruise control the driver ﬁxes the speed of the car.
+If the car goes uphill or downhill the cruise system controls the
+throttle in such a way that the car keeps its velocity, if the driver
+touches the break pedal or the ‘‘coach button’’ the cruise system
+will stop working until the ‘‘resume button’’ is touched. By then,
+the car will accelerate until it returns to the desired speed.
+Depending on the load of the car and the weather conditions this
+can lead to too fast or too slow acceleration and overshoot. The
+supervisor should ‘‘learn’’ the load of the car and adapt the cruise
+control to the current situation.
+
+In [197] the system is described as in Fig. 5. The error in the
+velocity is calculated from the vehicle and the reference speed, the
+same holds for the ﬁrst and second derivative of the speed. The FC
+calculates the throttle opening, passes it on to the actuator which
+applies it to the vehicle. If the throttle opening is too slow or too
+fast, i.e., the car accelerates too slow or to fast, the supervisor
+changes the membership functions of the fuzzy sets corresponding
+
+[
+(
+)
+T
+D
+$
+F
+I
+G
+]
+[
+(
+)
+T
+D
+$
+F
+I
+G
+]
+220
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+Fig. 5. Logical scheme of an adaptive fuzzy system for cruise control. EAV is the error
+average value, UAV is the average value of the throttle opening, Verr is the maximum
+value of the error [197].
+
+to the linguistic terms of the fuzzy controller. The supervisor has
+four inputs: the error average value (EAV) and its ﬁrst derivative
+(DEAV), the maximum value of the error (Verr) and the average
+value of the throttle opening (UAV). The error average value and its
+derivative give an indication how long it takes to bring the car back
+to its desired speed. If the car accelerates too slow this means, for
+example, that the car is fully loaded and the membership functions
+in the controller should be adapted to this situation.
+
+4.2. Adaptation of the position of the membership functions
+
+Another method to tune an FC or a fuzzy decision system is by
+the fuzzy sets
+repositioning the membership functions of
+corresponding to the linguistic terms of the fuzzy controller.
+Usually this is done in combination with a data clustering method.
+In a high dimensional system the data points are normally not
+evenly distributed over the whole data space, but occur in groups.
+If one uses a clustering algorithm to identify the data clusters then
+one can position the membership functions of the fuzzy sets in
+such a way that they correspond exactly to the data clusters. This
+enables one to work with a minimal number of fuzzy sets whose
+membership functions are well positioned to deal with the data.
+Fig. 6 illustrates this information processing, where v1 and v2 are
+the inputs, mk1 and mk2 are the membership functions of the input
+linguistic terms, k ¼ 1; 5. Overviews on data-driven clustering
+methods for adaptive fuzzy control are given in [198,199].
+
+An example of this method is a fuzzy system for forecasting the
+number of empty places in a number of parking garages downtown
+[200]. The system has a large number of inputs like weather data,
+time information and trafﬁc information as shown in Fig. 7. The
+
+Fig. 7. Structure of fuzzy parking system.
+
+Table 1
+Parking garages and the prediction quality of the adapted fuzzy system.
+
+Parking garage
+
+Prediction quality July
+
+Prediction quality August
+
+PG1
+PG2
+PG3
+PG4
+PG5
+PG6
+
+0.9548
+0.9147
+0.9298
+0.9415
+0.9147
+0.9415
+
+0.9239
+0.9086
+0.9272
+0.9051
+0.8849
+0.9374
+
+weather is supposed to inﬂuence the number of people that go
+downtown for shopping or to visit the theatre, hence the three
+weather inputs (temperature, rainfall and sunshine) inﬂuence the
+number of cars downtown. Time information concerns the time of
+the day, the day of the week, the season and special days like
+holidays or large events. Together with the weather information
+they will give a forecast of the number of cars that will go
+downtown in the next hours. Trafﬁc information concerns the
+trafﬁc density, and therefore the time people need to arrive at the
+parking garage, and the time people need to enter the parking
+garage, as many of them have narrow passages and long waiting
+times when other people are manoeuvring through the garage.
+When one considers data points over a longer period of time for
+each parking garage separately, different patterns of data will lead
+to a different positioning of the membership functions and
+therefore to different fuzzy rule bases. In six different parking
+garages in Du¨ sseldorf, Germany, the initial prediction quality of the
+described system was around 80%. After repositioning and resizing
+the membership functions of the fuzzy sets with a neural network,
+the prediction quality changed as described in Table 1.
+
+Fig. 6. Repositioning fuzzy sets such that they ﬁt to clusters of input data.
+
+[
+(
+)
+T
+D
+$
+F
+I
+G
+]
+[
+(
+)
+T
+D
+$
+F
+I
+G
+]
+[
+(
+)
+T
+D
+$
+F
+I
+G
+]
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+221
+
+4.3. Adaptation of the rule base
+
+A third adaptation method option is to change the rule weights
+depending on the contribution of each rule to the performance of
+the fuzzy control system. Each rule has a rule weight ri, usually
+these ri’s are initially 1. If a control action was successful the rule
+weights of the involved rules in this action are increased. If an
+action was unsuccessful the weights of the involved rules are
+decreased. Rules that after some time have rule weight 0 are not
+involved anymore and will be removed.
+
+This is an easy and straightforward method. Of course the
+quality of this method highly depends on the performance
+measure and the selection of the training data. One should always
+check which rules were removed, in some cases these rules
+concern exception cases and should be reintroduced by hand. This
+method is used in identifying and controlling a large paper mill
+[201], and in trafﬁc modelling and control [202].
+
+4.4. Adaptation of the link values
+
+A fourth adaptation method is to change the link values. This is
+derived from neural networks and is actually not natural for fuzzy
+systems. It means the following. Consider a rule base with two
+inputs X1 and X2 and one output Y, and three fuzzy sets P, Z, and N,
+on each input domain. One can translate the fuzzy system to a
+neural network as described in Fig. 8. If one takes, for example, the
+ﬁfth node in the Inference column, this corresponds to the rule ‘‘if
+X1 is N and X2 is P then Y is Z’’. According to [203,204], the
+logarithms and exponentials are needed in this scheme to cope
+with several neural network properties.
+
+Now one can feed the neural network with input and output
+data pairs and train the network. Consider, for example, the rule ‘‘if
+X1 is Z and X2 is P then Y is P’’, corresponding to the lowest node in
+the Inference column of Fig. 8. After training the network this may
+have become ‘‘if (0.5 X1 is Z) and (0.3 X2 is P) then (0.8 Y is P)’’,
+because the neural network has adapted the link values. This rule is
+hard to interpret but will probably describe the situation exactly.
+This method is, for example, used in a system with many
+sensors in a car that had to diagnose the kind of road and trafﬁc
+conditions the car was driving in [204]. There was an initial rule
+base describing the logical relation between the sensors and the
+driving situation. Test data were generated by driving the car with
+a video camera several days in all kinds of situations. The test data
+were categorized to several driving situations. After translating the
+rule base to a neural network all rule weights, the positions of the
+membership functions and the link weights were adapted which
+resulted in a much improved fuzzy rule base. The customer
+demanded a rule base that could be checked by hand afterwards
+
+instead of a black box neural network. The combination of a neural
+network learning system and a readable fuzzy rule base is perfect
+for automotive industry.
+
+The neuro-fuzzy control systems can identify fuzzy control
+rules and tune membership functions of the fuzzy controller
+making use of the learning algorithms speciﬁc to neural networks
+due to the well accepted functional equivalence between certain
+classes of fuzzy systems and certain architectures of neural
+networks [161]. Neuro-fuzzy control is in fact fuzzy control that
+ensures enhanced control system performance due to the learning
+capabilities and parallel processing brought by the neural net-
+works. ANFIS [205] is the most popular approach with this regard.
+Industrial applications of adaptive fuzzy control can be found in
+batch processes [206–210], robotics [58,137,211–213], aircrafts
+[214–217] or servo systems and electrical drives [218–221]. An
+attractive application concerning the development of an intelligent
+distributed and supervised control system for high-volume
+production systems is suggested in [222]. A neural-fuzzy-based
+force model for controlling band sawing process in the framework
+of an intelligent adaptive control and monitoring system is given in
+[223]. An adaptive control solution for a ventilating and air-
+conditioning (HVAC) system is proposed in [224].
+
+Topics of interest in adaptive fuzzy control include robust
+adaptive control, the combination with sliding mode control and
+the inclusion of derivative-free optimization techniques to
+minimize the objective function that speciﬁes the performance
+measure of the FCS. The derivative-free optimization techniques
+are needed in industrial applications due to the complicated
+expression of the objective function with several possible local
+minima and to the speciﬁc constraints associated to the
+optimization problem. Several fuzzy rule interpolation techniques
+can be used in real-time applications which have sparse or
+incomplete rule bases [225–227].
+
+4.5. Fuzzy model-based predictive control
+
+One illustrative industrial application of fuzzy model-based
+predictive control is presented in [228]. A predictive controller is
+suggested to modify the parameters of a T-S FC using the prediction
+of the future process output. Use is made of the fact that if you have
+a fuzzy model, you can test assumed future situations by putting
+data into the model. It is possible to compare the outcomes of
+different control inputs and take the best to proceed with. The
+results presented in [228] involve a fuzzy model of a chemical
+plant under the form of the following six fuzzy rules:
+
+R j : IF CAðkÞ IS A j THEN CAðk þ 1Þ
+
+¼  a1 jCAðkÞ   a2 jCAðk   1Þ þ b1 jqcðk   TDmÞ þ r j; j ¼ 1; 6;
+
+(17)
+
+where CA is the measured product concentration and T Dm is the
+temperature. It is possible to rewrite these under the classical form
+xmðk þ 1Þ ¼ ¯AmxmðkÞ þ ¯Bmuðk   T DmÞ þ ¯Rm;
+ymðkÞ ¼ ¯CmxmðkÞ:
+
+(18)
+
+The system output is calculated as follows for H steps ahead:
+
+ymðk þ HÞ ¼ ¯Cm½ ¯AH
+þ ¯RmÞ;
+
+mxmðkÞ þ ð ¯AH
+
+m   IÞð ¯Am   IÞ 1ð ¯BmuðkÞ
+
+(19)
+
+Fig. 8. A neural network translation from a fuzzy rule base.
+
+and it compares the output with the output of a reference model. It
+then calculates which parameters force the output to reach the
+reference trajectory in the best way and uses these parameters in
+the next control step. Other industrial applications of fuzzy model-
+based predictive control are reported in [229–236].
+
+[
+(
+)
+T
+D
+$
+F
+I
+G
+]
+222
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+5. Conclusions
+
+Acknowledgements
+
+The paper addresses a brief survey on industrial applications of
+fuzzy control. The following classiﬁcation of the control systems
+has been proposed with this regard:
+
+- control systems with Mamdani fuzzy controllers,
+- control systems with Takagi-Sugeno fuzzy controllers,
+- adaptive and predictive control systems.
+
+Although the literature makes a distinction between model-
+based and model-free fuzzy control, the model-based design of
+fuzzy control outlined in [237] is needed. The authors’ opinion is
+that all fuzzy control applications should be tackled in the model-
+based design manner. This is the way that enables systematic
+analyses of the structural properties of the FCSs such as stability,
+controllability, parametric sensitivity and robustness. Further-
+more, this is the only solution to guarantee the desired/imposed
+control system performance indices in several operating regimes,
+and it represents one of the perspectives of fuzzy control.
+
+A lot of industrial applications of fuzzy control are known and
+reported today. This paper has highlighted just part of them. It
+contains both mathematics and concrete applications thus
+emphasizing the concrete connection between the industrial
+applications of fuzzy control and the necessity of understanding
+the basics of operating principle and mathematical characteriza-
+tions of fuzzy controllers. The presentation of rather real-time
+experiments instead of digital simulation results is another
+perspective of fuzzy control. In this context the popularity of
+fuzzy control will increase only if future applications will exhibit
+signiﬁcantly better performance compared to the non-fuzzy ones.
+There are several challenges which deserve more study when
+fuzzy control is regarded from the point of view of its applicability:
+
+- the design of rather general fuzzy controllers for well deﬁned
+classes of systems instead of the particular controllers dedicated
+to certain narrow applications,
+
+- the use of iterative tuning and learning techniques that start with
+initial fuzzy control systems and ensure next the performance
+enhancement making use of the variables measured from those
+closed-loop systems during their real-time operation [32,91],
+
+- the identiﬁcation of Takagi-Sugeno fuzzy models with trade-off
+to transparency, approximation accuracy and controller design
+possibility,
+
+- the connection between the parameter settings and tuning of the
+fuzzy controller, and the imposed control system performance in
+terms of performance indices like overshoot and settling time,
+- the alleviation of the conservatism and sufﬁcient conditions-like
+character in the stable design of fuzzy control systems in case of
+Lyapunov’s approach in connection with LMIs,
+
+- the need for low-cost fuzzy controllers from the points of view of
+design in tuning transparency as well as implementation costs,
+- the need for smooth control signals to be elaborated by all fuzzy
+
+controllers,
+
+- the use of the additional parameterization offered by type-2
+fuzzy logic in handling the uncertainties speciﬁc to industrial
+processes [238–244].
+
+These challenges will attract the researchers and practitioners.
+The immediate results will be reﬂected in more industrial
+applications of fuzzy control illustrated in conference and journal
+publications. The 244 reference positions cited here present a
+sample of the results reported in the literature, and they can be
+viewed as a guarantee that future successful applications will be
+constructed.
+
+The support from the CNMP and CNCSIS of Romania is kindly
+acknowledged. The research was supported by the ETOCOM
+project (TA´ MOP-4.2.2-08/1/KMR-2008-0007) through the Hun-
+garian National Development Agency in the framework of Social
+Renewal Operative Programme supported by EU and co-ﬁnanced
+by the European Social Fund. The authors thank Prof. Robert
+Babusˇka for setting the structure of the paper, participating in its
+early stage and giving the idea to extend it up to a journal paper.
+The authors would also like to thank the colleagues and friends
+Prof. Stefan Preitl, Prof. Peter Baranyi, Prof. Igor Sˇkrjanc, Assoc. Prof.
+Sasˇo Blazˇicˇ and Dr. Marius L. Tomescu for their fruitful co-
+operation, contribution and discussions.
+
+References
+
+[1] L.A. Zadeh, Fuzzy sets, Information and Control 8 (3) (1965) 338–353.
+[2] E.H. Mamdani, Applications of fuzzy algorithms for control of a simple dynamic
+
+plant, in: Proceedings of the IEE 121, vol. 12, 1974, pp. 1585–1588.
+
+[3] E.H. Mamdani, S. Assilian, An experiment in linguistic synthesis with a fuzzy
+logic controller, International Journal of Man–Machine Studies 7 (1) (1975) 1–13.
+[4] W.J.M. Kickert, H.R. Van Nauta Lemke, Application of a fuzzy logic controller in a
+
+warm water plant, Automatica 12 (4) (1976) 301–308.
+
+[5] J.J. Ostergaard, Fuzzy logic control of a heat exchanger process, in: M.M. Gupta,
+G.N. Saridis, B.R. Gaines (Eds.), Fuzzy Automata and Decision Processes, North-
+Holland, Amsterdam, 1977, pp. 285–320.
+
+[6] M. Sugeno, On stability of fuzzy systems expressed by fuzzy rules with singleton
+
+consequents, IEEE Transactions on Fuzzy Systems 7 (2) (1999) 201–224.
+
+[7] C.C. Lee, Fuzzy logic in control systems: fuzzy logic controller—Part I, IEEE
+
+Transactions on Systems, Man, and Cybernetics 20 (2) (1990) 404–418.
+
+[8] C.C. Lee, Fuzzy logic in control systems: fuzzy logic controller—Part II, IEEE
+
+Transactions on Systems, Man, and Cybernetics 20 (2) (1990) 419–435.
+
+[9] D. Driankov, H. Hellendoorn, M. Reinfrank, An Introduction to Fuzzy Control,
+
+Springer-Verlag, Berlin, Heidelberg, New York, 1993.
+
+[10] W. Pedrycz, Fuzzy Control and Fuzzy Systems, Research Studies Press, Taunton,
+
+1993.
+
+[11] R.R. Yager, D.P. Filev, Essentials of Fuzzy Modeling and Control,
+
+John Wiley &
+
+Sons, New York, 1994.
+
+[12] C.W. De Silva, Intelligent Control: Fuzzy Logic Applications, CRC Press, New York,
+
+1995.
+
+[13] J.M. Mendel, Fuzzy logic systems for engineering: a tutorial, in: Proceedings of
+
+the IEEE 83, vol. 2, 1995, pp. 345–377.
+
+[14] R. Palm, D. Driankov, H. Hellendoorn, Model Based Fuzzy Control, Springer-
+
+Verlag, New York, 1996.
+
+[15] L.X. Wang, A Course in Fuzzy Systems and Control, Prentice-Hall, London, 1997.
+[16] R. Babusˇka, Fuzzy Modeling for Control, Kluwer Academic Publishers, Boston,
+
+MA, 1998.
+
+[17] K. Passino, S. Yurkovich, Fuzzy Control, Addison-Wesley, Reading, MA, 1998.
+[18] K. Tanaka, H.O. Wang, Fuzzy Control Systems Design and Analysis: A Linear
+
+Matrix Inequality Approach,
+
+John Wiley & Sons, New York, 2001.
+
+[19] K. Michels, F. Klawonn, R. Kruse, A. Nu¨ rnberger, Fuzzy Control: Fundamentals,
+Stability and Design of Fuzzy Controllers, Springer-Verlag, Berlin, Heidelberg,
+New York, 2006.
+
+[20] Z. Kovacˇic´, S. Bogdan, Fuzzy Controller Design: Theory and Applications, CRC
+
+Press, Boca Raton, FL, 2006.
+
+[21] H. Zhang, D. Liu, Fuzzy Modeling and Fuzzy Control, Birkha¨user, Boston, MA,
+
+2006.
+
+[22] J. Jantzen, Foundations of Fuzzy Control,
+John Wiley & Sons, Chichester, 2007.
+[23] J. Kluska, Analytical Methods in Fuzzy Modeling and Control, Springer-Verlag,
+
+Berlin, Heidelberg, 2009.
+
+[24] G. Feng, Analysis and Synthesis of Fuzzy Control Systems: A Model-Based
+
+Approach, CRC Press, Boca Raton, FL, 2010.
+
+[25] R. Babusˇka, H.B. Verbruggen, An overview on fuzzy modelling for control, Control
+
+Engineering Practice 4 (11) (1996) 1593–1606.
+
+[26] S. Mitra, Y. Hayashi, Neuro-fuzzy rule generation: survey in soft computing
+
+framework, IEEE Transactions on Neural Networks 11 (3) (2000) 748–768.
+
+[27] O. Kaynak, K. Erbatur, M. Ertugrul, The fusion of computationally intelligent
+methodologies and sliding-mode control—a survey, IEEE Transactions on Indus-
+trial Electronics 48 (1) (2001) 4–17.
+
+[28] A. Sala, T.M. Guerra, R. Babusˇka, Perspectives of fuzzy systems and control, Fuzzy
+
+Sets and Systems 156 (3) (2005) 432–444.
+
+[29] G. Feng, A survey on analysis and design of model-based fuzzy control systems,
+
+IEEE Transactions on Fuzzy Systems 14 (5) (2006) 676–697.
+
+[30] M. Sugeno, T. Taniguchi, On improvement of stability conditions for continuous
+Mamdani-like fuzzy systems, IEEE Transactions on Systems, Man, and Cyber-
+netics—Part B 34 (1) (2004) 120–131.
+
+[31] E. Tian, C. Peng, Delay-dependent stability analysis and synthesis of uncertain T-
+S fuzzy systems with time-varying delay, Fuzzy Sets and Systems 157 (4) (2006)
+544–559.
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+223
+
+[32] R.-E. Precup, S. Preitl, I.J. Rudas, M.L. Tomescu, J.K. Tar, Design and experiments
+for a class of fuzzy controlled servo systems, IEEE/ASME Transactions on
+Mechatronics 13 (1) (2008) 22–35.
+
+[33] B.M. Mohan, A. Sinha, Analytical structure and stability analysis of a fuzzy PID
+
+controller, Applied Soft Computing 8 (1) (2008) 749–758.
+
+[34] J.M. Andu´ jar, J.M. Bravo, A. Peregrı´n, Analysis and synthesis of multivariable
+fuzzy systems using interval arithmetic, Fuzzy Sets and Systems 148 (3) (2004)
+337–353.
+
+[35] P. Borne, M. Benrejeb, On the representation and the stability study of large scale
+systems, International Journal of Computers, Communications & Control 3
+(Suppl. S) (2008) 55–66.
+
+[36] A. Sakly, B. Zahra, M. Benrejeb, Stability analysis of continuous PI-like fuzzy
+control systems based on vector norms approach, in: Proceedings of Joint 2009
+International Fuzzy Systems Association World Congress and 2009 European
+Society of Fuzzy Logic and Technology Conference (IFSA-EUSFLAT 2009), Lisbon,
+Portugal, (2009), pp. 1655–1660.
+
+[62] N.J. Schouten, M.A. Salman, N.A. Kheir, Fuzzy logic control for parallel hybrid
+vehicles, IEEE Transactions on Control Systems Technology 10 (3) (2002) 460–468.
+[63] F.R. Salmasi, Control strategies for hybrid electric vehicles: evolution, classiﬁca-
+tion, comparison, and future trends, IEEE Transactions on Vehicular Technology
+56 (5) (2007) 2393–2404.
+
+[64] A. Mirzaei, M. Moallem, B. Mirzaeian, B. Fahimi, Design of an optimal fuzzy
+controller for antilock braking systems, in: Proceedings of 2005 IEEE Confer-
+ence on Vehicle Power and Propulsion, Chicago, IL, USA, (2005), pp. 823–828.
+[65] Z. Zhao, Z. Yu, Z. Sun, Research on fuzzy road surface identiﬁcation and logic
+control for anti-lock braking system, in: Proceedings of International Conference
+on Vehicular Electronics and Safety (ICVES 2006), Shanghai, China, (2006), pp.
+380–387.
+
+[66] U.-C. Moon, K.Y. Lee, Hybrid algorithm with fuzzy system and conventional PI
+control for the temperature control of TV glass furnace, IEEE Transactions on
+Control Systems Technology 11 (4) (2003) 548–554.
+
+[67] M. Ramı´rez, R. Haber, V. Pen˜a, I. Rodrı´guez, Fuzzy control of a multiple hearth
+
+[37] Y. Zhao, E.G. Collins Jr., Fuzzy PI control design for an industrial weigh belt
+
+furnace, Computers in Industry 54 (1) (2004) 105–113.
+
+feeder, IEEE Transactions on Fuzzy Systems 11 (3) (2003) 311–319.
+
+[38] A. Dvora´ k, H. Habiballa, V. Nova´ k, V. Pavliska, The concept of LFLC 2000—its
+speciﬁcity, realization and power of applications, Computers in Industry 51 (3)
+(2003) 269–280.
+
+[39] S. Galichet, L. Foulloy, Integrating expert knowledge into industrial control
+
+structures, Computers in Industry 52 (3) (2003) 235–251.
+
+[40] R.E. Haber, J.R. Alique, A. Alique, J. Herna´ ndez, R. Uribe-Etxebarria, Embedded
+fuzzy-control system for machining processes: results of a case study, Compu-
+ters in Industry 50 (3) (2003) 353–366.
+
+[41] A.K. Nandi, J.P. Davim, A study of drilling performances with minimum quantity
+
+of lubricant using fuzzy logic rules, Mechatronics 19 (2) (2009) 218–232.
+
+[42] R.E. Haber, R. Haber-Haber, A. Jime´ nez, R. Gala´ n, An optimal fuzzy control system
+in a network environment based on simulated annealing. An application to a
+drilling process, Applied Soft Computing 9 (3) (2009) 889–895.
+
+[43] R.E. Haber, R.M. del Toro, A. Gajate, Optimal fuzzy control system using the cross-
+entropy method. A case study of a drilling process, Information Sciences 180 (14)
+(2010) 2777–2792.
+
+[44] B. Ying, H. Zhuang, Z.S. Roth, Fuzzy logic control to suppress noises and coupling
+effects in a laser tracking system, IEEE Transactions on Control Systems Tech-
+nology 13 (1) (2005) 113–121.
+
+[45] M.-Y. Chen, H.-W. Tzeng, Y.-C. Chen, S.-C. Chen, The application of fuzzy theory
+for the control of weld line positions in injection-molded part, ISA Transactions
+47 (1) (2008) 119–126.
+
+[46] M. Marinaki, Y. Marinakis, G.E. Stavroulakis, Fuzzy control optimized by PSO for
+vibration suppression of beams, Control Engineering Practice 18 (6) (2010) 618–
+629.
+
+[47] P. Dassanayake, K. Watanabe, K. Kiguchi, K. Izumi, Robot manipulator task
+control with obstacle avoidance using fuzzy behavior-based strategy, Journal
+of Intelligent and Fuzzy Systems 10 (3–4) (2001) 139–158.
+
+[48] I. Baturone, F.J. Moreno-Velo, S. Sanchez-Solano, A. Ollero, Automatic design of
+fuzzy controllers for car-like autonomous robots, IEEE Transactions on Fuzzy
+Systems 12 (4) (2004) 447–465.
+
+[49] J. Xiao, J.Z. Xiao, N. Xi, R.L. Tummala, R. Mukherjee, Fuzzy controller for wall-
+climbing microrobots, IEEE Transactions on Fuzzy Systems 12 (4) (2004) 466–
+480.
+
+[50] S.X. Yang, H. Li, M.Q.H. Meng, P.X. Liu, An embedded fuzzy controller for a
+behavior-based mobile robot with guaranteed performance, IEEE Transactions
+on Fuzzy Systems 12 (4) (2004) 436–446.
+
+[51] P. Saeedi, P.D. Lawrence, D.G. Lowe, P. Jacobsen, D. Kusalovic, K. Ardron, P.H.
+Sorensen, An autonomous excavator with vision-based track-slippage control,
+IEEE Transactions on Control Systems Technology 13 (1) (2005) 67–84.
+
+[52] Y.X. Su, C.H. Zheng, B.Y. Duan, Fuzzy learning tracking of a parallel cable
+manipulator for the square kilometre array, Mechatronics 15 (6) (2005) 731–
+746.
+
+[53] A. Green, J.Z. Sasiadek, Heuristic design of a fuzzy controller for a ﬂexible robot,
+
+IEEE Transactions on Control Systems Technology 14 (2) (2006) 293–300.
+
+[54] Z. Sakr, E.M. Petriu, Hexapod robot locomotion using a fuzzy controller, in:
+Proceedings of IEEE International Workshop on Robotic and Sensors Environ-
+ments (ROSE 2007), Ottawa, ON, Canada, (2007), pp. 63–67.
+
+[55] F.M. Raimondi, M. Melluso, Fuzzy motion control strategy for cooperation of
+multiple automated vehicles with passengers comfort, Automatica 44 (11)
+(2008) 2804–2816.
+
+[56] M.S. Alam, M.O. Tokhi, Hybrid fuzzy logic control with genetic optimisation for a
+single-link ﬂexible manipulator, Engineering Applications of Artiﬁcial Intelli-
+gence 21 (6) (2008) 858–873.
+
+[57] I. Harmati, K. Skrzypczyk, Robot team coordination for target tracking using
+fuzzy logic controller in game theoretic framework, Robotics and Autonomous
+Systems 57 (1) (2009) 75–86.
+
+[58] P.R. Vundavilli, D.K. Pratihar, Dynamically balanced optimal gaits of a ditch-
+crossing biped robot, Robotics and Autonomous Systems 58 (4) (2010) 349–361.
+[59] S.G. Tzafestas, K.M. Deliparaschos, G.P. Moustris, Fuzzy logic path tracking
+control for autonomous non-holonomic mobile robots: design of system on a
+chip, Robotics and Autonomous Systems 58 (8) (2010) 1017–1027.
+
+[60] J. Lin, R.-J. Lian, Stability indices for a self-organizing fuzzy controlled robot: a
+case study, Engineering Applications of Artiﬁcial Intelligence 23 (6) (2010)
+1019–1034.
+
+[61] R. Caponetto, O. Diamante, G. Fargione, A. Risitano, D. Tringali, A soft computing
+approach to fuzzy sky-hook control of semiactive suspension, IEEE Transactions
+on Control Systems Technology 11 (6) (2003) 786–798.
+
+[68] M. Onat, M. Dogruel, Fuzzy plus integral control of the efﬂuent turbidity in direct
+ﬁltration, IEEE Transactions on Control Systems Technology 12 (1) (2004) 65–74.
+[69] M. Eftekhari, L. Marjanovic, P. Angelov, Design and performance of a rule-based
+controller in a naturally ventilated room, Computers in Industry 52 (3) (2003)
+299–326.
+
+[70] J.N. Lygouras, V.S. Kodogiannis, T. Pachidis, K.N. Tarchanidis, C.S. Koukourlis,
+Variable structure TITO fuzzy-logic controller implementation for a solar air-
+conditioning system, Applied Energy 85 (4) (2008) 190–203.
+
+[71] A. Maidi, M. Diaf, J.-P. Corriou, Optimal linear PI fuzzy controller design of a heat
+exchanger, Chemical Engineering and Processing: Process Intensiﬁcation 47 (5)
+(2008) 938–945.
+
+[72] Y.-H. Lee, R. Kopp, Application of fuzzy control for a hydraulic forging machine,
+
+Fuzzy Sets and Systems 118 (1) (2001) 99–108.
+
+[73] J. Van Amerongen, P.C. Breedveld, Modelling of physical systems for the design and
+control of mechatronic systems, Annual Reviews in Control 27 (1) (2003) 87–117.
+Springer-Verlag, Berlin,
+
+[74] R. Isermann, Mechatronic Systems: Fundamentals,
+
+Heidelberg, New York, 2003.
+
+[75] W. Dieterle, Mechatronic systems: automotive applications and modern design
+
+methodologies, Annual Reviews in Control 29 (2) (2005) 273–277.
+
+[76] K.-J. A˚ stro¨ m, T. Ha¨gglund, Benchmark systems for PID control, in: Preprints of
+
+IFAC PID’00 Workshop, Terrassa, Spain, (2000), pp. 181–182.
+
+[77] K.-M. Lee, D. Zhou, A real-time optical sensor for simultaneous measurement of
+3-DOF motions, IEEE/ASME Transactions on Mechatronics 9 (3) (2004) 499–507.
+[78] L. Horva´ th, I.J. Rudas, Modelling and Solving Methods for Engineers, Elsevier,
+
+Academic Press, Burlington, MA, 2004.
+
+[79] J. Vasˇcˇa´ k, Fuzzy cognitive maps in path planning, Acta Technica Jaurinensis,
+
+Series Intelligentia Computatorica 1 (3) (2008) 467–479.
+
+[80] D. Hla´ dek, J. Vasˇcˇa´ k, P. Sincˇa´ k, Multi-robot control system for pursuit-evasion
+
+problem, Journal of Electrical Engineering 60 (3) (2009) 143–148.
+
+[81] L. Monostori, T. Kis, J. Va´ ncza, B. Ka´ da´ r, G.F. Erdo˝ s, Real-time, cooperative
+enterprises for customised mass production, International Journal of Computer
+Integrated Manufacturing 22 (1) (2009) 55–68.
+
+[82] A. Ridluan, M. Manic, A. Tokuhiro, EBaLM-THP—a neural network thermohy-
+draulic prediction model of advanced nuclear system components, Nuclear
+Engineering and Design 239 (2) (2009) 308–319.
+
+[83] L. Monostori, B.C. Csa´ ji, B. Ka´ da´ r, A. Pfeiffer, E. Ilie-Zudor, Z. Keme´ ny, M.
+Szathma´ ri, Towards adaptive and digital manufacturing, Annual Reviews in
+Control 34 (1) (2010) 118–128.
+
+[84] L. Reznik, Fuzzy Controllers, Newnes-Butterworth-Heinemann, Oxford, 1997.
+[85] M.S. Ahmed, U.L. Bhatti, F.M. Al-Sunni, M. El-Shafei, Design of a fuzzy servo-
+
+controller, Fuzzy Sets and Systems 124 (2) (2001) 23–247.
+
+[86] S.-K. Cho, H.-H. Lee, A fuzzy-logic antiswing controller for three-dimensional
+
+overhead cranes, ISA Transactions 41 (2) (2002) 235–243.
+
+[87] R.-E. Precup, S. Preitl, G. Faur, PI predictive fuzzy controllers for electrical drive
+speed control: methods and software for stable development, Computers in
+Industry 52 (3) (2003) 253–270.
+
+[88] H. Schulte, H. Hahn, Fuzzy state feedback gain scheduling control of servo-
+
+pneumatic actuators, Control Engineering Practice 12 (5) (2004) 639–650.
+
+[89] X. Gao, Z.-J. Feng, Design study of an adaptive fuzzy-PD controller for pneumatic
+
+servo system, Control Engineering Practice 13 (1) (2005) 55–65.
+
+[90] R.-E. Precup, S. Preitl, PI-fuzzy controllers for integral plants to ensure robust
+
+stability, Information Sciences 177 (20) (2007) 4410–4429.
+
+[91] R.-E. Precup, S. Preitl, J.K. Tar, M.L. Tomescu, M. Taka´ cs, P. Korondi, P. Baranyi,
+Fuzzy control system performance enhancement by iterative learning control,
+IEEE Transactions on Industrial Electronics 55 (9) (2008) 3461–3475.
+
+[92] M. Kalyoncu, M. Haydim, Mathematical modelling and fuzzy logic based position
+control of an electrohydraulic servosystem with internal leakage, Mechatronics
+19 (6) (2009) 847–858.
+
+[93] K.K. Ahn, D.Q. Truong, Online tuning fuzzy PID controller using robust extended
+
+Kalman ﬁlter, Journal of Process Control 19 (6) (2009) 1011–1023.
+
+[94] H.R. Berenji, S. Saraf, P.-W. Chang, S.R. Swanson, Pitch control of the space shuttle
+training aircraft, IEEE Transactions on Control Systems Technology 9 (3) (2001)
+542–551.
+
+[95] S.-F. Wu, C.J.H. Engelen, Q.-P. Chu, R. Babusˇka, J.A. Mulder, G. Ortega, Fuzzy logic
+based attitude control of the spacecraft X-38 along a nominal re-entry trajectory,
+Control Engineering Practice 9 (7) (2001) 699–707.
+
+[96] S.-F. Wu, C.J.H. Engelen, R. Babusˇka, Q.-P. Chu, J.A. Mulder, Fuzzy logic based full-
+envelope autonomous ﬂight control for an atmospheric re-entry spacecraft,
+Control Engineering Practice 11 (1) (2003) 11–25.
+
+224
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+[97] S.Y. Lee, H.S. Cho, A fuzzy controller for an electro-hydraulic ﬁn actuator using
+
+phase plane method, Control Engineering Practice 11 (6) (2003) 697–708.
+
+[98] B. Kadmiry, D. Driankov, A fuzzy ﬂight controller combining linguistic and
+
+model-based fuzzy control, Fuzzy Sets and Systems 146 (3) (2004) 313–347.
+
+[99] A.V. Lovato, E. Araujo, J.D.S. da Silva, Fuzzy decision in airplane speed control, in:
+Proceedings of IEEE International Conference on Fuzzy Systems (FUZZ-IEEE
+2006), Vancouver, BC, Canada, (2006), pp. 1578–1583.
+
+[100] E.N. Sanchez, H.M. Becerra, C.M. Velez, Combining fuzzy, PID and regulation
+control for an autonomous mini-helicopter, Information Sciences 177 (10)
+(2007) 1999–2022.
+
+[101] C.-H. Cheng, S.-L. Shu, P.-J. Cheng, Attitude control of a satellite using fuzzy
+
+controllers, Expert Systems with Applications 36 (3) (2009) 6613–6620.
+
+[102] P.J. Costa Branco, J.A. Dente, Design and experimental evaluation of a fuzzy logic
+pressure controller for the Airbus 310/320 braking control system, Engineering
+Applications of Artiﬁcial Intelligence 23 (6) (2010) 989–999.
+
+[103] K.-J. A˚ stro¨ m, T. Ha¨gglund, The future of PID control, Control Engineering Practice
+
+9 (11) (2001) 1163–1175.
+
+[104] K.-J. A˚ stro¨ m, T. Ha¨gglund, PID Controllers Theory: Design and Tuning,
+
+[130] M. Mahfouf, M.F. Abbod, D.A. Linkens, Online elicitation of Mamdani-type fuzzy
+rules via TSK-based generalized predictive control, IEEE Transactions on Sys-
+tems, Man, and Cybernetics—Part B 33 (3) (2003) 465–475.
+
+[131] K. Belarbi, F. Titel, W. Bourebia, K. Benmahammed, Design of Mamdani fuzzy
+logic controllers with rule base minimisation using genetic algorithm, Engineer-
+ing Applications of Artiﬁcial Intelligence 18 (7) (2005) 875–880.
+
+[132] G.L.O. Serra, C.P. Bottura, Multiobjective evolution based fuzzy PI controller
+design for nonlinear systems, Engineering Applications of Artiﬁcial Intelligence
+19 (2) (2006) 157–167.
+
+[133] S.M. Homayouni, T.S. Hong, N. Ismailm, Development of genetic fuzzy logic
+controllers for complex production systems, Computers & Industrial Engineer-
+ing 57 (4) (2009) 1247–1257.
+
+[134] R.L. Navale, R.M. Nelson, Use of genetic algorithms to develop an adaptive fuzzy
+logic controller for a cooling coil, Energy and Buildings 42 (5) (2010) 708–716.
+[135] S.-M. Kim, W.-Y. Han, Induction motor servo drive using robust PID-like neuro-
+
+fuzzy controller, Control Engineering Practice 14 (5) (2006) 481–487.
+
+[136] H.-C. Lu, J.-C. Chang, M.-F. Yeh, Design and analysis of direct-action CMAC PID
+
+Instru-
+
+controller, Neurocomputing 70 (16–18) (2007) 2615–2625.
+
+ment Society of America, Research Triangle Park, NC, 1995.
+
+[105] F. Zheng, Q.-G. Wang, T.H. Lee, X. Huang, Robust PI controller design for
+nonlinear systems via fuzzy modeling approach, IEEE Transactions on Systems,
+Man, and Cybernetics—Part A 31 (6) (2001) 666–675.
+
+[106] M. Gu¨ zelkaya, I˙. Eksin, I. Yes¸ il, Self-tuning of PID-type fuzzy logic controllers
+coefﬁcients via relative rate observer, Engineering Applications of Artiﬁcial
+Intelligence 16 (3) (2003) 227–236.
+
+[107] H. Ying, Deriving analytical input–output relationship for fuzzy controllers using
+arbitrary input fuzzy sets and Zadeh fuzzy AND operator, IEEE Transactions on
+Fuzzy Systems 14 (5) (2006) 654–662.
+
+[108] A. Mannan, H.A. Talebi, A fuzzy Lyapunov-based control strategy for a macro-
+micro manipulator: experimental results, IEEE Transactions on Control Systems
+Technology 15 (2) (2007) 375–383.
+
+[137] S. Alavandar, M.J. Nigam, New hybrid adaptive neuro-fuzzy algorithms for
+manipulator control with uncertainties—comparative study, ISA Transactions
+48 (4) (2009) 497–502.
+
+[138] P. Stewart, D.A. Stone, P.J. Fleming, Design of robust fuzzy-logic control systems
+by multi-objective evolutionary methods with hardware in the loop, Engineer-
+ing Applications of Artiﬁcial Intelligence 17 (3) (2004) 275–284.
+
+[139] F.M. Raimondi, M. Melluso, A new fuzzy robust dynamic controller for autono-
+mous vehicles with nonholonomic constraints, Robotics and Autonomous Sys-
+tems 52 (2–3) (2005) 115–131.
+
+[140] Z. Sun, R. Xing, C. Zhao, W. Huang, Fuzzy auto-tuning PID control of multiple
+
+joint robot driven by ultrasonic motors, Ultrasonics 46 (4) (2007) 303–312.
+
+[141] V.I. Utkin, Sliding Modes in Control and Optimization, Springer-Verlag, Berlin, 1992.
+[142] R. Palm, Robust control by fuzzy sliding mode, Automatica 30 (9) (1994) 1429–
+
+[109] F.L. Lewis, K. Liu, Towards a paradigm for fuzzy logic control, Automatica 32 (2)
+
+1437.
+
+(1996) 167–181.
+
+[110] G.K.I. Mann, B.G. Hu, R.G. Gosine, Analysis of direct action fuzzy PID controller
+structures, IEEE Transactions on Systems, Man, and Cybernetics—Part B 29 (3)
+(1999) 371–388.
+
+[111] N.B. Hui, V. Mahendar, D.K. Pratihar, Time-optimal, collision-free navigation of a
+car-like mobile robot using neuro-fuzzy approaches, Fuzzy Sets and Systems
+177 (16) (2006) 2171–2204.
+
+[112] B.S. Moon, Equivalence between fuzzy logic controllers and PI controllers for
+
+single input systems, Fuzzy Sets and Systems 69 (2) (1995) 105–113.
+
+[113] S. Galichet, L. Foulloy, Fuzzy controllers: synthesis and equivalences, IEEE
+
+[143] S. Glower, J. Munighan, Designing fuzzy controllers from a variable structures
+
+standpoint, IEEE Transactions on Fuzzy Systems 5 (1) (1997) 138–144.
+
+[144] Q.P. Ha, Q.H. Nguyen, D.C. Rye, H.F. Durrant-Whyte, Fuzzy sliding mode con-
+trollers with applications, IEEE Transactions on Industrial Electronics 48 (1)
+(2001) 38–46.
+
+[145] H. Lee, E. Kim, H.-J. Kang, M. Park, A new sliding-mode control with fuzzy
+
+boundary layer, Fuzzy Sets and Systems 120 (1) (2001) 135–143.
+
+[146] F.-J. Lin, R.-J. Wai, Adaptive and fuzzy neural network sliding-mode controllers
+for motor-quick-return servomechanism, Mechatronics 13 (5) (2003) 477–506.
+[147] R.-J. Wai, C.-M. Lin, C.-F. Hsu, Adaptive fuzzy sliding-mode control for electrical
+
+Transactions on Fuzzy Systems 3 (2) (1995) 140–148.
+
+servo drive, Fuzzy Sets and Systems 143 (2) (2004) 295–310.
+
+[114] Y. Ding, H. Ying, S. Shao, Typical Takagi-Sugeno PI and PID fuzzy controllers:
+analytical structures and stability analysis, Information Sciences 151 (2003)
+245–262.
+
+[115] W.Z. Qiao, M. Mizumoto, PID type fuzzy controller and parameter adaptive
+
+method, Fuzzy Sets and Systems 78 (1) (1996) 23–35.
+
+[116] C.-L. Chen, S.-N. Wang, C.-T. Hsieh, F.-Y. Chang, Theoretical analysis of crisp-type
+fuzzy logic controllers using various t-norm sum-gravity inference methods,
+IEEE Transactions on Fuzzy Systems 6 (1) (1998) 122–136.
+
+[117] G.K.I. Mann, B.G. Hu, R.G. Gosine, A systematic study of fuzzy PID controllers—
+function based evaluation approach, IEEE Transactions on Fuzzy Systems 9 (5)
+(2001) 699–712.
+
+[118] J. Zheng, S. Zhao, S. Wei, Application of self-tuning fuzzy PID controller for a SRM
+direct drive volume control hydraulic press, Control Engineering Practice 17 (12)
+(2009) 1398–1404.
+
+[119] A. Haj-Ali, H. Ying, Structural analysis of fuzzy controllers with nonlinear input
+fuzzy sets in relation to nonlinear PID control with variable gains, Automatica 40
+(9) (2004) 1551–1559.
+
+[120] Z.Y. Zhao, M. Tomizuka, S. Isaka, Fuzzy gain-scheduling of PID controllers, IEEE
+
+Transactions on Systems, Man, and Cybernetics 23 (5) (1993) 1392–1398.
+
+[121] P. Sarma, Multivariable gain-scheduled fuzzy logic control of an exothermic
+reactor, Engineering Applications of Artiﬁcial Intelligence 14 (4) (2001) 457–471.
+[122] K.S. Tang, K.F. Man, G. Chen, S. Kwong, An optimal fuzzy PID controller, IEEE
+
+Transactions on Industrial Electronics 48 (4) (2001) 757–765.
+
+[123] G.M. Khoury, M. Saad, H.Y. Kanaan, C. Asmar, Fuzzy PID control of a ﬁve DOF
+robot arm, Journal of Intelligent and Robotic Systems 40 (3) (2004) 299–320.
+[124] H.X. Li, L. Zhang, K.Y. Cai, G.R. Chen, An improved robust fuzzy-PID controller
+with optimal fuzzy reasoning, IEEE Transactions on Systems, Man, and Cyber-
+netics—Part B 35 (6) (2005) 1283–1294.
+
+[125] A. Aceves-Lopez, J. Aguilar-Martin, Simpliﬁed version of Mamdani’s fuzzy
+controller: the natural logic controller, IEEE Transactions on Fuzzy Systems
+14 (1) (2006) 16–30.
+
+[126] A. Bouaﬁa, F. Krim, J.-P. Gaubert, Design and implementation of high perform-
+ance direct power control of three-phase PWM rectiﬁer, via fuzzy and PI
+controller for output voltage regulation, Energy Conversion and Management
+50 (1) (2009) 6–13.
+
+[127] C. Wakabayashi, M. Embiruc¸u, C. Fontes, R. Kalid, Fuzzy control of a nylon
+polymerization semi-batch reactor, Fuzzy Sets and Systems 160 (4) (2009) 537–
+553.
+
+[128] H.M. Genc, E. Yesil, I. Eksin, M. Guzelkaya, O.A. Tekin, A rule base modiﬁcation
+scheme in fuzzy controllers for time-delay systems, Expert Systems with
+Applications 36 (4) (2009) 8476–8486.
+
+[129] P.P. Angelov, Evolving Rule-based Models: A Tool for Design of Flexible Adaptive
+
+Systems, Springer-Verlag, Heidelberg, New York, 2002.
+
+[148] C.-L. Hwang, H.-M. Wu, C.-L. Shih, Fuzzy sliding-mode underactuated control for
+autonomous dynamic balance of an electrical bicycle, IEEE Transactions on
+Control Systems Technology 17 (3) (2009) 658–670.
+
+[149] C.-Y. Chen, T.-H.S. Li, Y.-C. Yeh, EP-based kinematic control and adaptive fuzzy
+sliding-mode dynamic control for wheeled mobile robots, Information Sciences
+179 (1–2) (2009) 180–195.
+
+[150] M.-K. Chang, An adaptive self-organizing fuzzy sliding mode controller for a 2-
+DOF rehabilitation robot actuated by pneumatic muscle actuators, Control
+Engineering Practice 18 (1) (2010) 13–22.
+
+[151] G. Prashanti, M. Chidambaram, Set-point weighted PID controllers for unstable
+
+systems, Journal of The Franklin Institute 337 (2–3) (2000) 201–215.
+
+[152] M. Araki, H. Taguchi, Two-degree-of-freedom PID controllers, International
+
+Journal of Control, Automation and Systems 1 (4) (2003) 401–411.
+
+[153] A. Visioli, A new design for a PID plus feedforward controller, Journal of Process
+
+Control 14 (4) (2004) 457–463.
+
+[154] C.M. Liaw, S.Y. Cheng, Fuzzy two-degrees-of-freedom speed controller for motor
+
+drives, IEEE Transactions on Industrial Electronics 42 (2) (1995) 209–216.
+
+[155] A. Visioli, Fuzzy logic based set-point weight tuning of PID controllers, IEEE
+Transactions on Systems, Man, and Cybernetics—Part A 29 (6) (1999) 587–592.
+[156] R.K. Barai, K. Nonami, Optimal two-degree-of-freedom fuzzy control for loco-
+motion control of a hydraulically actuated hexapod robot, Information Sciences
+177 (8) (2007) 1892–1915.
+
+[157] R.-E. Precup, S. Preitl, P. Korondi, Fuzzy controllers with maximum sensitivity for
+servosystems, IEEE Transactions on Industrial Electronics 54 (3) (2007) 1298–
+1310.
+
+[158] R.-E. Precup, S. Preitl, E.M. Petriu, J.K. Tar, M.L. Tomescu, C. Pozna, Generic two-
+degree-of-freedom linear and fuzzy controllers for integral processes, Journal of
+the Franklin Institute 346 (10) (2009) 980–1003.
+
+[159] S.G. Cao, N.W. Rees, G. Feng, Analysis and design of fuzzy control systems using
+
+dynamic fuzzy global models, Fuzzy Sets and Systems 75 (1) (1995) 47–62.
+
+[160] L.T. Ko´ czy, Fuzzy If-Then rule models and their transformation into one another,
+IEEE Transactions on Systems, Man, and Cybernetics—Part A 26 (5) (1996) 621–
+637.
+
+[161] J.-S.R. Jang, C.-T. Sun, E. Mizutani, Neuro-Fuzzy and Soft Computing. A Compu-
+tational Approach to Learning and Machine Intelligence, Prentice Hall, Upper
+Saddle River, NJ, 1997.
+
+[162] T.A. Johansen, R. Shorten, R. Murray-Smith, On the interpretation and identiﬁ-
+cation of dynamic Takagi-Sugeno models, IEEE Transactions on Fuzzy Systems 8
+(3) (2000) 297–313.
+
+[163] J. Abonyi, Fuzzy Model Identiﬁcation for Control, Birkha¨user, Boston, 2003.
+[164] S. Mollov, R. Babusˇka, J. Abonyi, H.B. Verbruggen, Effective optimization for fuzzy
+model predictive control, IEEE Transactions on Fuzzy Systems 12 (5) (2004)
+661–675.
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+225
+
+[165] S. Blazˇicˇ, I. Sˇkrjanc, S. Gerksˇicˇ, G. Dolanc, S. Strmcˇnik, M.B. Hadjiski, A. Stathaki,
+Online fuzzy identiﬁcation for an intelligent controller based on a simple
+platform, Engineering Applications of Artiﬁcial Intelligence 22 (4–5) (2009)
+628–638.
+
+Proceedings of 2010 IEEE/ASME International Conference on Advanced Intelli-
+gent Mechatronics (AIM 2010), Montreal, Canada, (2010), pp. 768–773.
+
+[195] P. Baranyi, Tensor-product model-based control of two-dimensional aeroelastic
+
+system, Journal of Guidance, Control, and Dynamics 29 (2) (2006) 391–400.
+
+[166] H.K. Ahn, H.P.H. Anh, Inverse double NARX fuzzy modeling for system identiﬁ-
+
+[196] P. Baranyi, Output feedback control of 2-D aeroelastic system, Journal of
+
+cation, IEEE/ASME Transactions on Mechatronics 15 (1) (2010) 136–148.
+
+Guidance, Control, and Dynamics 29 (3) (2006) 762–767.
+
+[167] K. Tanaka, M. Sugeno, Stability analysis and design of fuzzy control systems,
+
+Fuzzy Sets and Systems 12 (2) (1992) 135–156.
+
+[168] S.P. Boyd, L. El Ghaoui, E. Ferron, Linear Matrix Inequalities in Systems and
+
+Control Theory, SIAM, Philadelphia, PA, 1994.
+
+[169] G. Feng, Stability analysis of discrete time fuzzy dynamic systems based on
+piecewise Lyapunov functions, IEEE Transactions on Fuzzy Systems 12 (1)
+(2004) 22–28.
+
+[170] T.M. Guerra, L. Vermeiren, LMI-based relaxed non-quadratic stabilization con-
+ditions for nonlinear systems in Takagi-Sugeno’s form, Automatica 40 (5) (2004)
+823–829.
+
+[171] A. Kruszewski, T.M. Guerra, New approaches for the stabilization of discrete
+Takagi-Sugeno fuzzy models, in: Proceedings of 44th IEEE Decision and Control
+and 2005 European Conference, Seville, Spain, (2005), pp. 3255–3260.
+
+[172] B.J. Rhee, S. Won, A new fuzzy Lyapunov function approach for a Takagi-Sugeno
+fuzzy control system design, Fuzzy Sets and Systems 157 (9) (2006) 1211–1228.
+[173] I. Abdelmalek, N. Golea, A non-quadratic fuzzy stabilization and tracking ap-
+proach to a two-link robot manipulator control, in: Proceedings of 6th Interna-
+tional Conference on Intelligent Systems Design and Applications,
+Jinan,
+Shandong, China, (2006), pp. 109–114.
+
+[174] C. Lin, Q.-G. Wang, T.H. Lee, Y. He, Fuzzy weighting-dependent approach to H1
+ﬁlter design for time-delay fuzzy systems, IEEE Transactions on Signal Proces-
+sing 55 (6) (2007) 2746–2751.
+
+[175] A. Kruszewski, A. Sala, T.M. Guerra, C. Arino, Sufﬁcient and asymptotic necessary
+conditions for the stabilization of Takagi-Sugeno model, in: Preprints of 3rd IFAC
+Workshop on Advanced Fuzzy and Neural Control, Valenciennes, France, (2007),
+p. 6, CD-ROM, paper index MO4-4.
+
+[176] T. Zhang, G. Feng, J. Lu, W. Xiang, Robust constrained fuzzy afﬁne model
+predictive control with application to a ﬂuidized bed combustion plant, IEEE
+Transactions on Control Systems Technology 16 (5) (2008) 1047–1056.
+
+[177] L.A. Mozelli, R.M. Palhares, F.O. Souza, E.M.A.M. Mendes, Reducing conserva-
+tiveness in recent stability conditions of TS fuzzy systems, Automatica 45 (6)
+(2009) 1580–1583.
+
+[178] H. Gao, Y. Zhao, T. Chen, H1 fuzzy control of nonlinear systems under unreliable
+communication links, IEEE Transactions on Fuzzy Systems 17 (2) (2009) 265–
+278.
+
+[179] A. Poursamad, A.H. Davaie-Markazi, Robust adaptive fuzzy control of unknown
+
+chaotic systems, Applied Soft Computing 9 (3) (2009) 970–976.
+
+[180] H.K. Lam, M. Narimani, Stability analysis and performance design for fuzzy-
+model-based control system under imperfect premise matching, IEEE Transac-
+tions on Fuzzy Systems 17 (4) (2009) 949–961.
+
+[181] K. Tanaka, H. Yoshida, H. Ohtake, H.O. Wang, A sum-of-squares approach to
+modeling and control of nonlinear dynamical systems with polynomial fuzzy
+systems, IEEE Transactions on Fuzzy Systems 17 (4) (2009) 911–922.
+
+[182] B.-C. Ding, Development of stability research on Takagi-Sugeno fuzzy control
+systems and approximation of the necessary and sufﬁcient conditions, Fuzzy
+Information and Engineering 1 (4) (2009) 367–383.
+
+[183] Z. Lendek, R. Babusˇka, B. De Schutter, Stability of cascaded fuzzy systems and
+
+[197] S. Boverie, B. Demaya, R. Ketata, A. Titli, Performance evaluation of fuzzy
+controller, in: Proceedings of IFAC Symposium on Intelligent Components
+and Instruments for Control Applications (SICICA’92), Malaga, Spain, (1992),
+pp. 105–110.
+
+[198] M. Setnes, Complexity reduction in fuzzy systems, Ph.D. thesis, Delft University
+
+of Technology, The Netherlands, 2001.
+
+[199] J.A. Roubos, M. Setnes, J. Abonyi, Learning fuzzy classiﬁcation rules from labeled
+
+data, Information Sciences 150 (1–2) (2003) 77–93.
+
+[200] H. Hellendoorn, R. Baudrexl, Fuzzy-neural trafﬁc control and forecasting, in:
+Proceedings of FUZZ-IEEE/IFES International Conference, Yokohama, Japan,
+(1995), pp. 1511–1518.
+
+[201] H. Hellendoorn, Fuzzy logic for paper and pulp management,
+
+in: H.B.
+Verbruggen, R. Babusˇka (Eds.), Fuzzy Logic Control Advances in Applications,
+vol. 23, World Scientiﬁc Series in Robotics and Intelligent Systems, 1999, pp.
+173–191.
+
+[202] H. Hellendoorn, Fuzzy logic for trafﬁc management and control,
+
+in: H.B.
+Verbruggen, R. Babusˇka (Eds.), Fuzzy Logic Control Advances in Applications,
+vol. 23, World Scientiﬁc Series in Robotics and Intelligent Systems, 1999, pp.
+259–273.
+
+[203] W. Hauptmann, K. Heesche, A prototype of an integrated fuzzy-neuro system, in:
+Proceedings of 2nd European Congress on Fuzzy and Intelligent Technologies
+(EUFIT’94), Aachen, Germany, (1994), pp. 1101–1104.
+
+[204] W. Hauptmann, K. Heesche, A neural net topology for bidirectional fuzzy-neuro
+transformation, in: Proceedings of FUZZ-IEEE/IFES International Conference,
+Yokohama, Japan, (1995), pp. 2187–2194.
+
+[205] J.-S.R. Jang, ANFIS: adaptive network-based fuzzy inference system, IEEE Trans-
+
+actions on Systems, Man, and Cybernetics 23 (3) (1993) 665–685.
+
+[206] C.W. Frey, H.B. Kuntze, A neuro-fuzzy supervisory control system for industrial
+
+batch processes, IEEE Transactions on Fuzzy Systems 9 (4) (2001) 570–577.
+
+[207] J. Zhang, Modeling and optimal control of batch processes using recurrent
+neuro-fuzzy networks, IEEE Transactions on Fuzzy Systems 13 (4) (2005)
+417–426.
+
+[208] M. Huang, J. Wan, Y. Ma, Y. Wang, W. Li, X. Sun, Control rules of aeration in a
+submerged bioﬁlm wastewater treatment process using fuzzy neural networks,
+Expert Systems with Applications 36 (7) (2009) 10428–10437.
+
+[209] J.M. Escan˜o, C. Bordons, C. Vilas, M.R. Garcı´a, A.A. Alonso, Neurofuzzy model
+based predictive control for thermal batch processes, Journal of Process Control
+19 (9) (2009) 1566–1575.
+
+[210] A. Das, J. Maiti, R.N. Banerjee, Process control strategies for a steel making
+furnace using ANN with Bayesian regularization and ANFIS, Expert Systems with
+Applications 37 (20) (2010) 1075–1085.
+
+[211] J.S. Wang, C.S.G. Lee, Self-adaptive recurrent neuro-fuzzy control of an autono-
+mous underwater vehicle, IEEE Transactions on Robotics and Automation 19 (2)
+(2003) 283–295.
+
+[212] K. Kiguchi, T. Tanaka, T. Fukuda, Neuro-fuzzy control of a robotic exoskeleton
+with EMG signals, IEEE Transactions on Fuzzy Systems 12 (4) (2004) 481–490.
+[213] P.A. Phan, T.J. Gale, Direct adaptive fuzzy control with a self-structuring algo-
+
+observers, IEEE Transactions on Fuzzy Systems 17 (3) (2009) 641–653.
+
+rithm, Fuzzy Sets and Systems 159 (8) (2008) 871–899.
+
+[184] Z. Lendek, J. Lauber, T.M. Guerra, R. Babusˇka, B. De Schutter, Adaptive observers
+for TS fuzzy systems with unknown polynomial inputs, Fuzzy Sets and Systems
+161 (15) (2010) 2043–2065.
+
+[185] C. Arino, A. Sala, Relaxed LMI conditions for closed-loop fuzzy systems with
+tensor-product structure, Engineering Applications of Artiﬁcial Intelligence 20
+(8) (2007) 1036–1046.
+
+[186] Y. Yam, P. Baranyi, C.T. Yang, Reduction of fuzzy rule base via singular value
+
+decomposition, IEEE Transactions on Fuzzy Systems 7 (2) (1999) 120–132.
+
+[187] L. De Lathauwer, B. De Moor, J. Vandewalle, A multilinear singular value
+decomposition, SIAM Journal on Matrix Analysis and Applications 21 (4)
+(2000) 1253–1278.
+
+[188] R.-E. Precup, S. Preitl, I.-B. Ursache, P.A. Clep, P. Baranyi, J.K. Tar, On the
+combination of tensor product and fuzzy models, in: Proceedings of 2008 IEEE
+International Conference on Automation, Quality and Testing, Robotics, Cluj-
+Napoca, Romania, vol. 2, (2008), pp. 48–53.
+
+[189] P. Baranyi, D. Tikk, Y. Yam, R.J. Patton, From differential equations to PDC
+controller design via numerical transformation, Computers in Industry 51 (3)
+(2003) 281–297.
+
+[190] P. Baranyi, TP model transformation as a way to LMI based controller design,
+
+IEEE Transactions on Industrial Electronics 51 (2) (2004) 387–400.
+
+[191] Z. Petres, P. Baranyi, P. Korondi, H. Hashimoto, Trajectory tracking by TP model
+transformation: case study of a benchmark problem, IEEE Transactions on
+Industrial Electronics 54 (3) (2007) 1654–1663.
+
+[192] F. Kolonic´, A. Poljugan, Experimental control design by TP model transformation,
+in: Proceedings of 2006 International Conference on Mechatronics (ICM 2006),
+Budapest, Hungary, (2006), pp. 666–671.
+
+[193] S. Nagy, Z. Petres, P. Baranyi, TP Tool—A Matlab toolbox for TP model transfor-
+mation, in: Proceedings of 8th International Symposium of Hungarian Research-
+ers on Computational Intelligence and Informatics (CINTI 2007), Budapest,
+Hungary, (2007), pp. 483–495.
+
+[194] R.-E. Precup, L.-T. Dioanca, E.M. Petriu, M.-B. Ra˘dac, S. Preitl, C.-A. Dragos¸ , Tensor
+product-based real-time control of the liquid levels in a three tank system, in:
+
+[214] C.M. Lin, C.F. Hsu, Supervisory recurrent fuzzy neural network control of wing
+rock for slender delta wings, IEEE Transactions on Fuzzy Systems 12 (5) (2004)
+733–742.
+
+[215] Z.L. Liu, Reinforcement adaptive fuzzy control of wing rock phenomena, IEE
+
+Proceedings—Control Theory and Applications 152 (6) (2005) 615–620.
+
+[216] D.M. Liu, G. Naadimuthu, E.S. Lee, Trajectory tracking in aircraft landing opera-
+tions management using the adaptive neural fuzzy inference system, Computers
+& Mathematics with Applications 56 (5) (2008) 1322–1327.
+
+[217] S. Kurnaz, O. Cetin, O. Kaynak, Adaptive neuro-fuzzy inference system based
+autonomous ﬂight control of unmanned air vehicles, Expert Systems with
+Applications 37 (2) (2010) 1229–1234.
+
+[218] P. Melin, O. Castillo, Intelligent control of a stepping motor drive using an
+Information Sciences 170 (2–4)
+
+adaptive neuro-fuzzy inference system,
+(2005) 133–151.
+
+[219] Y.-S. Kung, M.-H. Tsai, FPGA-based speed control IC for PMSM drive with
+adaptive fuzzy control, IEEE Transactions on Power Electronics 22 (6) (2007)
+2476–2486.
+
+[220] D. Bellomo, D. Naso, R. Babusˇka, Adaptive fuzzy control of a non-linear servo-
+drive: theory and experimental results, Engineering Applications of Artiﬁcial
+Intelligence 21 (6) (2008) 846–857.
+
+[221] S.V. Ustun, M. Demirtas, Modeling and control of V/f controlled induction motor
+using genetic-ANFIS algorithm, Energy Conversion and Management 50 (2)
+(2009) 786–791.
+
+[222] K. Tamani, R. Boukezzoula, G. Habchi, Intelligent distributed and supervised ﬂow
+control methodology for production systems, Engineering Applications of Arti-
+ﬁcial Intelligence 22 (7) (2009) 1104–1116.
+
+[223] I˙. Asiltu¨ rk, A. U¨ nu¨ var, Intelligent adaptive control and monitoring of band sawing
+using a neural-fuzzy system, Journal of Materials Processing Technology 209 (5)
+(2009) 2302–2313.
+
+[224] S. Soyguder, H. Alli, Fuzzy adaptive control for the actuators position control and
+modeling of an expert system, Expert Systems with Applications 27 (3) (2010)
+2072–2080.
+
+226
+
+R.-E. Precup, H. Hellendoorn / Computers in Industry 62 (2011) 213–226
+
+[225] P. Baranyi, L.T. Ko´ czy, T.D. Gedeon, A generalized concept for fuzzy rule inter-
+
+polation, IEEE Transactions on Fuzzy Systems 12 (6) (2004) 820–837.
+
+[226] Z.C. Johanya´ k, S. Kova´ cs, Fuzzy rule interpolation based on polar cuts, in: B.
+Reusch (Ed.), Computational Intelligence, Theory and Applications, Springer-
+Verlag, Berlin, Heidelberg, New York, 2006, pp. 499–511.
+
+[227] Z.C. Johanya´ k, D. Tikk, S. Kova´ cs, K.K. Wong, Fuzzy rule interpolation Matlab
+toolbox—FRI toolbox, in: Proceedings of 15th International Conference on Fuzzy
+Systems (FUZZ-IEEE’06), Vancouver, Canada, (2006), pp. 1427–1433.
+
+[228] S. Blazˇicˇ, I. Sˇkrjanc, Design and stability analysis of fuzzy model-based predictive
+control—a case study, Journal of Intelligent and Robotic Systems 49 (3) (2007)
+279–292.
+
+[229] J. Abonyi, L. Nagy, F. Szeifert, Fuzzy model-based predictive control by instanta-
+
+neous linearization, Fuzzy Sets and Systems 120 (1) (2001) 109–122.
+
+[230] S. Blazˇicˇ, I. Sˇkrjanc, D. Matko, Globally stable direct fuzzy model reference
+
+adaptive control, Fuzzy Sets and Systems 139 (1) (2003) 3–33.
+
+[231] H. Sarimveis, G. Bafas, Fuzzy model predictive control of non-linear processes
+
+using genetic algorithms, Fuzzy Sets and Systems 139 (1) (2003) 59–80.
+
+[232] A. Flores, D. Saez, J. Araya, M. Berenguel, A. Cipriano, A fuzzy predictive control of
+a solar power plant, IEEE Transactions on Fuzzy Systems 13 (1) (2005) 58–68.
+[233] K. Belarbi, F. Megri, A stable model-based fuzzy predictive control based on fuzzy
+dynamic programming, IEEE Transactions on Fuzzy Systems 15 (4) (2007) 746–
+754.
+
+[234] J.-C. de Barros, A.L. Dexter, On-line identiﬁcation of computationally undemand-
+ing evolving fuzzy models, Fuzzy Sets and Systems 158 (18) (2007) 1997–2012.
+[235] S. Ertugrul, Predictive modeling of human operators using parametric and
+neuro-fuzzy models by means of computer-based identiﬁcation experiment,
+Engineering Applications of Artiﬁcial Intelligence 21 (2) (2008) 259–268.
+
+[236] A. Nu´ n˜ez, D. Sa´ ez, S. Oblak, I. Sˇkrjanc, Fuzzy-model-based hybrid predictive
+
+control, ISA Transactions 48 (1) (2009) 24–31.
+
+[237] Z. Preitl, Model based design methods for speed control applications, Ph.D.
+
+thesis, ‘‘Politehnica’’ University of Timisoara, Timisoara, Romania, 2008.
+
+[238] J.M. Mendel, Uncertain Rule-Based Fuzzy Logic Systems: Introduction and New
+
+Directions, Prentice-Hall, Upper-Saddle River, NJ, 2001.
+
+[239] O. Castillo, P. Melin, Type-2 Fuzzy Logic Theory and Applications, Springer-
+
+Verlag, Berlin, Heidelberg, New York, 2008.
+
+[240] H.A. Hagras, A hierarchical type-2 fuzzy logic control architecture for autono-
+mous mobile robots, IEEE Transactions on Fuzzy Systems 12 (4) (2004) 524–539.
+[241] D. Wu, W.W. Tan, A simpliﬁed type-2 fuzzy logic controller for real-time control,
+
+ISA Transactions 45 (4) (2006) 503–516.
+
+[242] R. Sepu´ lveda, O. Castillo, P. Melin, A. Rodrı´guez-Dı´az, O. Montiel, Experimental
+study of intelligent controllers under uncertainty using type-1 and type-2 fuzzy
+logic, Information Sciences 177 (10) (2007) 2023–2048.
+
+[243] M.-Y. Hsiao, T.-H.S. Li, J.-Z. Lee, C.-H. Chao, S.-H. Tsai, Design of interval type-2
+fuzzy sliding-mode controller, Information Sciences 178 (6) (2008) 1696–1716.
+[244] C.-F. Juang, C.-H. Hsu, Reinforcement ant optimized fuzzy controller for mobile-
+robot wall-following control, IEEE Transactions on Industrial Electronics 56 (10)
+(2009) 3931–3940.
+
+Radu-Emil Precup was born in Lugoj, Romania, in
+1963. He received the Dipl.Ing. (Hons.) degree in
+Automation and Computers from ‘‘Traian Vuia’’ Poly-
+technic Institute of Timisoara, Timisoara, Romania, in
+1987, the Diploma in Mathematics from the West
+University of Timisoara, in 1993, and the Ph.D. degree in
+Automatic Systems from the ‘‘Politehnica’’ University of
+Timisoara (PUT), Timisoara, in 1996. From 1987 to
+1991, he was with Infoservice S.A., Timisoara. He is
+currently with the PUT, where he became a Professor in
+the Department of Automation and Applied Infor-
+matics in 2000, and he is currently a Doctoral
+Supervisor of Automation and Systems Engineering. He is also an Honorary
+Professor and a Member of the Doctoral School of Applied Informatics with the
+
+O´ buda University (previously named Budapest Tech Polytechnical Institution),
+Budapest, Hungary. He is currently the Deputy Director of the Research Centre in
+Automation and Computers with the PUT, the Director of the Automation and
+Applied Informatics Division, and the Head of the Students Information and
+Counselling Ofﬁce (OICS) with the Faculty of Automation and Computers, PUT.
+From 1999 to 2009, he held research and teaching positions with the Universite´
+de Savoie, Chambe´ ry and Annecy, France, Budapest Tech Polytechnical
+Institution, Budapest, Hungary, Vienna University of Technology, Vienna,
+Austria, and Budapest University of Technology and Economics, Budapest,
+Hungary. He has been an Editor-in-Chief of the International Journal of Artiﬁcial
+Intelligence since 2008 and he is also on the editorial board of several other
+prestigious journals. He is the author or coauthor of more than 120 papers
+published in various scientiﬁc journals, refereed conference proceedings, and
+contributions to books. His research interests include mainly development and
+analysis of intelligent control systems, theory and applications of soft computing,
+computer-aided design of control systems, modelling, and optimization. Prof.
+Precup is a Senior Member,
+the Subcommittee on
+Computational Intelligence as part of the IEEE Industrial Electronics Society,
+the Task Force on Educational aspects of standards of Computational Intelligence
+as part of the Technical Committee on Standards in the IEEE Computational
+Intelligence Society, the Virtual Reality Task Force of the Intelligent Systems
+Applications Technical Committee of the IEEE Computational
+Intelligence
+Society, the International Federation of Automatic Control (IFAC) Technical
+Committee on Computational
+(previously named
+Cognition and Control), the European Society for Fuzzy Logic and Technology
+(EUSFLAT), the Hungarian Fuzzy Association, and the Romanian Society of
+Control Engineering and Technical Informatics. He was the recipient of the
+‘‘Grigore Moisil’’ Prize from the Romanian Academy in 2005 for his contribution
+on fuzzy control.
+
+Intelligence in Control
+
+IEEE, a member of
+
+Hans Hellendoorn was born in 1964. He studied
+computer science at the Delft University of Technology
+(TU Delft). Next, he did Ph.D.-research in Delft and at
+the National Aerospace Laboratory in Amsterdam
+resulting, in 1990, in a Ph.D. thesis ‘‘Reasoning with
+Fuzzy Logic’’. From 1990 to 1997, he worked as
+department head in a research group on fuzzy control
+at Siemens R&D in Munich, Germany, with many
+practical applications, from power plants to cars and
+from chips to telecommunication networks. From 1997
+to 2000, he was department head for training simula-
+tion at Siemens in the Netherlands. From 2001 to 2009,
+he was responsible for innovation management. In 1999 he was appointed as a Part
+Time Professor for Control Theory at the Faculty for Electrical Engineering. Since
+2004, he is a Professor at the Delft Center for Systems and Control (DCSC), TU Delft.
+He is the co-author of three scientiﬁc books and the author and co-author of more
+than 140 scientiﬁc publications on computational intelligence and control. He has
+supervised more than 60 M.Sc. students and 15 Ph.D. students in Germany, The
+Netherlands and France. His research interests include multi-agent control of large-
+scale hybrid systems, such as urban or national trafﬁc networks, electricity
+networks, water networks and logistic networks, road trafﬁc control, such as trafﬁc
+light control, intelligent speed systems and dynamic trafﬁc management, and
+control and monitoring of harbor cranes. Prof. Hellendoorn was the president of the
+European Chapter of the International Fuzzy Systems Association (IFSA) and the
+coordinator of the Working Group on Fuzzy Sets (EUROFUSE) of the Association of
+European Operational Research Societies (EURO). He is a member of the board of
+many scientiﬁc and social foundations.
+
+

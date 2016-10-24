@@ -1,0 +1,1089 @@
+ 
+Neuroinformatics Lecture (L7) 
+
+Prof. Dr. Gordon Pipa  
+Institute of Cognitive Science University of Osnabrück 
+
+ 
+
+Probability Distributions 
+ 
+
+We defined probability as: 
+(probability that the random variable X takes the Value xi)  
+ 
+
+•
+
+A Discrete Probability Distribution:  
+
+Rehearsal 
+
+𝑝(𝑋 = 𝑥𝑖) 
+
+A distribution is discrete if the random variable X is discrete, such that 
+the range of X is finite or countably infinite. 
+
+ 
+
+e.g. Poisson distribution, Bernoulli distribution, binomial distribution, 
+geometric distribution, negative binomial distribution 
+
+ 
+
+•
+
+A Continuous Probability Distribution :  
+
+A distribution of a random variable X is called continuous if the range of 
+X is uncountably infinite. 
+
+ 
+
+e.g. normal, uniform, chi-squared, and others. 
+
+ 
+
+ 
+
+Summary: Bernoulli Distribution 
+
+Rehearsal 
+
+Distribution:           𝑝 𝑥 µ = µ𝑥 1 − µ 1−𝑥  
+
+Expected value: 
+ 
+
+ 𝐸 𝑥 = µ 
+
+Variance:             𝑣𝑎𝑟 𝑥 = µ(1 − µ) 
+
+11/5/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Summary: Binomial Distribution 
+
+Rehearsal 
+
+11/5/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Neuroinformatics Lecture  
+ 
+ 
+Topics: 
+ 
+Probability Distributions 
+ 
+ 
+
+11/5/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+5 
+
+Discrete Distributions 
+
+  
+
+• Bernoulli Distribution 
+
+• Binomial Distribution  
+
+• Poisson Distribution 
+
+ 
+
+ 
+
+Continuous Distributions 
+
+ 
+
+• Normal (Gauss) 
+
+• Gamma Distribution 
+
+• chi^2 Distribution 
+
+11/5/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Suppose we observe a spiking neuron in 
+many trials.  
+
+     
+
+We are now interested in the probability to 
+have a certain number of spikes in a fixed 
+interval T. 
+ 
+
+ 
+
+ 
+
+1  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+
+  0                                               T 
+
+If we make the bin very small, we can 
+approximate the binomial distribution 
+(k events in N bins) with a Poisson 
+distribution. 
+
+Individual and population responses of dopamin-
+ergic substantia nigra neurons to an aversive 
+electrical stimulus. B, PSTH and raster plot showing 
+the inhibition of an individual dopaminergic neuron 
+in response to stimulus delivery. 
+ 
+c.f. The Journal of Neuroscience, 4 March 2009, 29(9): 
+2915-2925; doi: 10.1523/​JNEUROSCI.4423-08.2009  
+ 
+
+Binary Variables  
+
+We begin by considering the standard binomial distribution  
+
+ 
+
+Probability to get k heads for N flips given that the probability of a 
+single flip is µ  
+
+ 
+
+ 
+
+𝑝 𝑘 µ, 𝑁 =
+
+𝑁
+𝑘
+
+⋅ µ𝑘 1 − µ 𝑁−𝑘  
+
+ 
+ 
+ 
+We rewrite the binomial as the product of four terms (using 𝜆 = 𝑁µ): 
+ 
+
+We start with the binomial coefficient: 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+  
+
+ 
+
+ 
+
+𝑁
+𝑘
+
+=
+
+𝑁!
+
+ 
+ 
+𝑘! 𝑁 − 𝑘 !
+
+=  
+
+=
+
+ 
+=
+
+1 ⋅ 2 ⋅ … ⋅ 𝑁
+
+𝑘! ⋅ (1 ⋅ 2 ⋅ … ⋅ 𝑁 − 𝑘 )
+
+ 
+
+ 
+
+ 
+ 
+
+  N>K 
+
+(𝑁 − 𝑘 + 1) ⋅ (𝑁 − 𝑘 + 2) ⋅ … ⋅ 𝑁
+
+𝑘!
+
+ 
+
+𝑁 − 𝑘 + 1 ⋅ … ⋅ (𝑁 − 1)   ⋅ 𝑁
+
+𝑘!
+
+ 
+
+Binary Variables  
+
+So far: standard binomial distribution  
+
+ 
+
+ 
+
+ 
+
+ 
+
+𝑝 𝑘 µ, 𝑁 =
+
+𝑁
+𝑘
+
+⋅ µ𝑘 1 − µ 𝑁−𝑘 =
+
+𝑁 − 𝑘 + 1 ⋅ … ⋅ (𝑁 − 1)   ⋅ 𝑁
+
+𝑘!
+
+  ⋅ µ𝑘 1 − µ 𝑁−𝑘
+
+ 
+
+ 
+We rewrite the dependence on µ using  𝜆 = 𝑁µ: 
+ 
+
+ 
+µ𝑘 1 − µ N−k =
+ 
+ 
+ 
+ 
+
+𝜆𝑘
+𝑁𝑘 1 −
+
+𝜆
+𝑁
+
+𝑁−𝑘
+
+=
+
+𝜆𝑘
+𝑁𝑘 1 −
+
+𝜆
+𝑁
+
+𝑁
+
+−𝑘
+
+ 
+
+1 −
+
+𝜆
+𝑁
+
+Combining both: 
+
+ 
+
+ 
+ 
+ 𝑝 𝑘 µ, 𝑁 =
+ 
+ 
+
+ 
+
+𝑁 − 𝑘 + 1 ⋅ … ⋅ (𝑁 − 1)   ⋅ 𝑁
+
+𝑘!
+
+𝜆𝑘
+𝑁𝑘 1 −
+
+𝜆
+𝑁
+
+⋅
+
+𝑁
+
+−𝑘
+
+ 
+
+1 −
+
+𝜆
+𝑁
+
+ 
+
+ 
+
+ 
+
+11/5/2014 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+𝑁 − 𝑘 + 1 ⋅ … ⋅ (𝑁 − 1)   ⋅ 𝑁
+
+𝑘!
+
+𝜆𝑘
+𝑁𝑘 1 −
+
+𝜆
+𝑁
+
+⋅
+
+𝑁
+
+−𝑘
+
+ 
+
+1 −
+
+𝜆
+𝑁
+
+So far:  
+
+𝑝 𝑘 µ, 𝑁 =
+
+ 
+
+ 
+
+ 
+
+ 
+
+Now we assume that we use this model to describe a spike train using very small 
+temporal bins to describe the spike train via a binary process.  
+
+ 
+
+ 
+
+1  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+
+ 
+
+ 
+
+        0                                               T 
+
+We now reduce the bin size to a arbitrary small value which is reducing the 
+probability per bin ( limes of p going to zero).  
+
+At the same time the number of bin must grow if we want to cover the same 
+temporal range between 0 and T (limes of N going to infinity).  
+
+Moreover, we know that, irrespective of the bin size and the number of bins, the 
+expected value of events in the time interval from 0 to T stays the same.  
+
+ 
+
+We achieve this by making N large, µ small and keeping the product of µ and N 
+constant at the same time.  
+
+ 
+
+ 
+
+So far:  
+ 
+ 
+
+𝑝 𝑘 µ, 𝑁 =
+
+ 
+
+𝑁 − 𝑘 + 1 ⋅ … ⋅ (𝑁 − 1)   ⋅ 𝑁
+
+𝑘!
+
+𝜆𝑘
+𝑁𝑘 1 −
+
+𝜆
+𝑁
+
+⋅
+
+𝑁
+
+−𝑘
+
+ 
+
+1 −
+
+𝜆
+𝑁
+
+Independent of N and p, 
+given l is constant  
+
+Np0npconkstklimk!k!lllSo far:  
+ 
+ 
+
+𝑝 𝑘 µ, 𝑁 =
+
+ 
+
+𝑁 − 𝑘 + 1 ⋅ … ⋅ (𝑁 − 1)   ⋅ 𝑁
+
+𝑘!
+
+𝜆𝑘
+𝑁𝑘 1 −
+
+𝜆
+𝑁
+
+⋅
+
+𝑁
+
+−𝑘
+
+ 
+
+1 −
+
+𝜆
+𝑁
+
+Independent of N and p given 
+l is constant  
+
+If the factorial grows, it becomes  
+~ N to the power of k  
+
+Np0npconkstklimk!k!lllNkN(N1)··(Nlimk1)1NSo far:  
+ 
+ 
+
+𝑝 𝑘 µ, 𝑁 =
+
+ 
+
+𝑁 − 𝑘 + 1 ⋅ … ⋅ (𝑁 − 1)   ⋅ 𝑁
+
+𝑘!
+
+𝜆𝑘
+𝑁𝑘 1 −
+
+𝜆
+𝑁
+
+⋅
+
+𝑁
+
+−𝑘
+
+ 
+
+1 −
+
+𝜆
+𝑁
+
+Independent of N and p given 
+l is constant  
+
+If the factorial grows, it becomes  
+~ N to the power of k  
+
+known limit  (see textbook)  
+
+Np0npconkstklimk!k!lllNkN(N1)··(Nlimk1)1NNNpcnNostlime1NlllSo far:  
+ 
+ 
+
+𝑝 𝑘 µ, 𝑁 =
+
+ 
+
+𝑁 − 𝑘 + 1 ⋅ … ⋅ (𝑁 − 1)   ⋅ 𝑁
+
+𝑘!
+
+𝜆𝑘
+𝑁𝑘 1 −
+
+𝜆
+𝑁
+
+⋅
+
+𝑁
+
+−𝑘
+
+ 
+
+1 −
+
+𝜆
+𝑁
+
+Independent of N and p, given 
+l is constant  
+
+If the factorial grows, it becomes  
+~ N to the power of k  
+
+known limit  (see textbook)  
+
+l over N becomes zero for  
+constant k 
+
+Np0npconkstklimk!k!lllNkN(N1)··(Nlimk1)1NNnpcnNostlime1NlllNnpcnkostlim11NllSo far:  
+ 
+ 
+
+𝑝 𝑘 µ, 𝑁 =
+
+ 
+
+𝑁 − 𝑘 + 1 ⋅ … ⋅ (𝑁 − 1)   ⋅ 𝑁
+
+𝑘!
+
+𝜆𝑘
+𝑁𝑘 1 −
+
+𝜆
+𝑁
+
+⋅
+
+𝑁
+
+−𝑘
+
+ 
+
+1 −
+
+𝜆
+𝑁
+
+Np0npkkconstp(k|,N)·1·e·1ek!kl!imlllllBinary Variables 
+
+Poisson Distribution: probability of k events given that l events are expected 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+𝑝 𝑘 𝜆 =
+
+𝜆𝑘
+𝑘!
+
+𝑒−𝜆 
+
+ With k=0,1,2, …. (discrete)   and l >0 (parameter is continuous) 
+
+ E(k)  
+
+= l 
+
+ var(k)   = l 
+
+Example:   p(k) spikes in an interval between 0 and T, if l spikes are  
+expected 
+
+   
+
+ 
+
+  
+
+Y = poisspdf(X,lambda)  
+ 
+computes the Poisson pdf at each of the values in X using the corresponding parameters in lambda. The 
+parameters in lambda must all be positive. 
+
+Lecture Advanced Neuroinformatics - Cognitive Science Osnabrück - Dr. G. Pipa 
+
+11/5/2014 
+
+Neuroinformatics Questionnaire  
+
+1. How many parameters does the Binominal and Poisson distribution have 
+
+ 
+
+2. What is/are the basic limit/s that we used for the derivation of the Poisson 
+
+distribution 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+? 
+
+3. What the limit of  
+ 
+
+? 
+
+Timer (5min):  
+
+Start 
+
+Stop 
+
+Neuroinformatics - Prof. Dr. Gordon Pipa 
+
+Np0npkkconstp(k|,N)·1·e·1ek!kl!imlllllNnpcnkostlim11Nll1. How many parameters does the Binominal and Poisson distribution have 
+
+Poisson Distribution: probability of k events given that l events are expected 
+
+ 
+
+ 
+
+𝑝 𝑘 𝜆 =
+ 
+
+ 
+
+ 
+
+ 
+
+𝜆𝑘
+𝑘!
+
+𝑒−𝜆 
+
+      With k=0,1,2, …. and l >0 (parameter is continuous) 
+
+Binominal Distribution: probability of m events with N events expected 
+
+ 
+
+ 
+
+2. What is/are the basic limit/s that we used for the derivation of the Poisson 
+
+distribution 
+
+3. What the limit of  
+
+Np0npkkconstp(k|,N)·1·e·1ek!kl!imlllllNnpcnkostlim11Nll11/5/2014 
+
+20 
+
+How does the brain compute ? 
+
+1 
+           hypothesis : single cell code 
+
+ 
+
+
+
+ 
+
+information is coded by single neuron   
+
+(e.g. rate of spikes ) 
+
+Statistical Hypothesis:  patterns across neurons occur by chance 
+
+            hypothesis : assembly code 
+
+2 
+
+ 
+
+
+
+
+
+Information is coded by groups of neurons - assemblies 
+
+Relationship between members of an assembly is expressed by 
+
+coordinated spiking activity → intrinsic pattern generation 
+
+Statistical Hypothesis: patterns across neurons occur more frequently  
+
+ 
+
+ 
+
+  than expected by chance 
+
+1) Hebb (1949) : ‘Organisation of behaviour. A neurophysiological theory’ , New York: John Wiley & Sons  
+2) Singer et al (1997): ‘Neuronal assemblies: Necessity, signature and detectability’, Trends in Cognitive Science, 252-261 
+
+Dynamic relation between neurons 
+
+Gray, Singer 
+
+Hypothesis test 
+
+Significance Test  
+
+ 
+
+H0 – Hypothesis :  pattern occur by chance 
+ 
+ 
+H1 – Hypothesis :  pattern occur more frequently 
+ 
+
+             than expected by chance 
+
+H0: probability distribution p(w) required 
+
+Unitary Events Method: Parametric Test  
+
+ 
+
+Assumption : Spiketrains → Bernoulli process  
+ 
+
+Approximation for  P<< 1 : 
+
+H0 : Poisson distributed  p(w)  
+
+parameterized by : 
+
+Grün et al (2002) : ‘Unitary Events in multiple single neuron activity I / II’ , Neural Comp. 14, I:43-81; II:82-119 
+
+spikeno1spike1iiiiNiippwithPPTwHypothesis test 
+
+Data        :  monkey primary motor cortex - 38 trials: delayed-pointing task         
+Analysis :  coincidence window: 5ms       - test level: 5% 
+
+ 
+
+                     Riehle, Grün, Diesmann, Aertsen (1997)  Science 278: 1950-1953 
+
+Impact of Auto-structure on distribution of joint firing (coincidences) 
+
+The Dispute: Rate versus Synchrony 
+
+                Pro temporal coordination 
+ 
+ 
+Gray (89): Stimulus-specific neuronal oscillations 
+in orientation columns of cat visual cortex.  
+ 
+“The results demonstrate that local neuronal 
+populations in the visual cortex engage in stimulus-
+specific synchronous oscillations resulting from an 
+intracortical mechanism. “ 
+ 
+ 
+Baker (2001): Synchronization in monkey motor 
+cortex during a precision grip task. I. Task-
+dependent modulation in single-unit synchrony.  
+ 
+“This study provides strong support for assemblies of 
+neurons being synchronized during specific phases of 
+a complex task …” 
+ 
+ 
+Castelo-Branco (2002) Neural synchrony 
+correlates with surface segregation rules 
+ 
+„…Thus, dynamic changes in synchronization could 
+encode, in a context-dependent way, relations among 
+simultaneous responses to spatially superimposed 
+contours …“ 
+ 
+
+              Contra temporal coordination 
+ 
+ 
+Shadlen (98):  The Variable Discharge of 
+Cortical Neurons: Implications for Connectivity, 
+Computation, and Information Coding 
+ 
+“Detailed information about the temporal pattern of 
+synaptic inputs cannot be recovered from the 
+pattern of output spikes, …” 
+ 
+ 
+Baker (2000): Precise spatiotemporal repeating 
+patterns in monkey primary and supplementary 
+motor areas occur at chance levels.  
+ 
+„The task dependence of pattern occurrence is 
+explicable as an artifact of the modulation of neural 
+firing rate.“ 
+ 
+ 
+Brody (99): Correlations without synchrony 
+“Peaks in spike train correlograms are usually taken 
+as indicative of spike timing synchronization 
+between neurons. Strictly speaking, however, a 
+peak merely indicates that the two spike trains were 
+not independent.”  
+
+How can that happen? Principles of statistical inference 
+
+Inference based on a significance test: 
+
+H0 :  
+
+Cells fire  
+independently 
+
+Evidence for H1 ?  
+
+Yes 
+
+H1: 
+
+Firing is  
+synchronized  
+
+H0 :  
+
+Cells fire  
+independently 
+
+Evidence for H1 ?  
+
+No 
+
+H1: 
+
+Firing is  
+synchronized 
+
+H1
+
+’:  Rate co-variation  
+
+ The significance test must be designed to allow for only one alternative hypothesis. 
+
+Hypothesis test 
+
+Data        :  monkey primary motor cortex - 38 trials: delayed-pointing task         
+Analysis :  coincidence window: 5ms       - test level: 5% 
+
+ 
+
+                     Riehle, Grün, Diesmann, Aertsen (1997)  Science 278: 1950-1953 
+
+ Non-Parametric Significance test  
+
+H0 – Hypothesis :   
+ 
+Deriving H0 that reflects p(w) based on experimental data 
+→ considering original spike-train structure 
+
+C S R – Method 
+
+Combined Shuffling and Resampling 
+
+principle 
+
+1 
+ Trial shuffling 
+
+2 
+
+Resampling 
+
+Intentional destruction of 
+
+intrinsic pattern  
+
+Estimation of statistical significance (a)  
+
+based on shuffled data  
+
+1 
+
+    Trial shuffling : 
+
+ 
+
+Intentional destruction of intrinsic pattern 
+
+1 
+
+    Trial shuffling : Destruction of intrinsic pattern 
+
+simultaneous trials 
+
+shuffling 
+
+shuffled trials     
+
+Two Data classes 
+
+W 
+
+potentially correlated : 
+(simultaneous) 
+
+W0 
+
+uncorrelated : 
+(shuffled) 
+
+ 
+
+2  Monte Carlo  
+Resampling 
+
+ 
+ 
+ 
+
+Estimate statistical significance based on shuffled trials 
+
+ 
+
+2 
+
+    Monte-Carlo based significance estimation 
+
+Statistical significance of c based on H0  Hypothesis 
+
+W 
+
+Frequencies of a pattern occurred  
+in M tuples of spike trains 
+
+W0 
+
+Frequencies of a pattern occurred  
+in M tuples of shuffled spike trains  
+
+statistical significance : 
+
+Resampling of W0  
+
+Monte-Carlo estimation 
+
+1  2  3  4  5 
+
+M 
+
+random-sample 1 
+
+9  5  3  7  7 
+
+random-sample 2 
+
+1  1  1  1  1 
+
+random-sample x 
+
+5  5  9  7  1 
+
+3 
+
+1 
+
+1 
+
+Estimated significance : 
+( x Bootstrap-samples )  
+
+Elfron and Tibshirani : ‘An Introduction to the Bootstrap’, Chapmann and Hall / CRC, 1998 
+
+*xw*1w*2wxww)(#)(αˆ**ccp)(α*cpwWiMiiwithcww101*WiMiiwithwwwVideo : Resampling data class W0 
+
+x 
+
+ 
+
+CSR-Method vs. Poisson based 
+
+ 
+
+Experimental data : CSR vs. Poisson based significance test 
+
+0 
+0 
+
+1500 
+
+1500 
+
+0 
+
+1500 
+
+Data :    monkey primary motor cortex   
+38 trials: delayed-pointing task  
+ 
+
+ 
+ 
+
+ 
+  
+
+Analysis : coincidence window: 5 ms 
+  
+
+test level: 5% 
+
+ 
+
+Riehle, Grün, Diesmann, Aertsen (1997)  Science 278: 1950-1953          
+
+x=20000 ↔ afp= 0.05% 
+
+CSR Method : significant epochs are slightly more prominent 
+
+

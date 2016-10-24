@@ -1,0 +1,316 @@
+Experimental Psychology Lab I 
+
+Practical Course 
+Institute of Cognitive Science 
+University of Osnabrück 
+January 12, 2015 
+
+Interior Space Perception: Effects of Furniture, 
+
+Color, and Lighting
+
+Wednesday, 14 January 2015, 5 pm (sharp) 32/110
+
+Abstract
+
+ 
+Virtual  interior  spaces  have  become  part  of  our  everyday 
+lives. We become immersed in them in the movie theater or 
+when we pull out our smart-phones and delve into an app. 
+However,  surprisingly  little  is  known  about  the  factors  that 
+determine  the  perception  of  interior  space,  and  whether 
+real  and  virtual  interior  spaces  follow  similar  laws.  We 
+report  a  series  of  experiments  investigating  the  role  of 
+lighting  and  furniture  on  perceived  spatial  dimensions  and 
+roominess of virtual and genuine rooms. Movie stills, virtual 
+rooms,  and  a  room  with  a  hoisting  platform  served  as 
+stimuli.
+
+IKW Colloquium
+Institute of Cognitive Science
+
+Prof. Dr. Heiko Hecht
+
+Head of the Department of 
+
+General & Experimental 
+
+Psychology
+
+Johannes Gutenberg-
+
+University Mainz
+
+ 
+
+Aims Today 
+
+§  ANOVA 
+
+§  Concepts 
+§  Basic approach 
+§  Post-hoc tests 
+§  Text blocks 
+
+§  R/Rcommander 
+
+§  Run R 
+§  Install and run Rcommander 
+§  Read in data 
+
+Previous Assignment 
+
+§  Reading: Howitt & Cramer (2011), pp. 55-74 
+
+§  Write a short summary of key concepts (also include in portfolio) à 
+
+bullet points 
+
+§  Analysis: Prepare data file with raw data. Ideally, one file with all 
+
+relevant variables à trial level (as “raw” as possible). 
+
+§  Figure: Create “ideal” figure for main result of your experiment. 
+§  Git: Create folder for Data Analysis. Include the raw data file and commit 
+
+stage. Document your commit message in the PDF. 
+§  Tutorial: https://www.codeschool.com/paths/git (e.g., TryGit) 
+
+Miscellaneous 
+
+§  Poster 
+
+§  Template on Stud.IP (maybe use landscape) 
+
+§  .png file à with pictures 
+§  .svg file à Inkscape (without pictures) 
+
+§  Start working on text parts and figures (Inkscape and 
+
+Gimp) 
+
+§  Faculty of 1000 Posters (http://f1000.com/posters) 
+
+§  Reminder Portfolio 
+§  Reminder Self-Study Nov. 10, 2014 
+
+Statistics/Analysis 
+
+ANOVA – Factors and Levels 
+
+§  Dependent Variable: feature of interest that is 
+measured and considered for analysis à output 
+e.g., reaction times, questionnaire data 
+
+§  Factors/Independent Variables: feature of 
+interest that is manipulated to influence the 
+dependent variable à input 
+e.g., set size, target 
+
+§  Factor Levels: specific value on the factor 
+
+dimension à set size (1, 2, 4) 
+
+§  Multifactorial Designs: more than one factor 
+can be combined in a single design (one-way 
+ANOVA, two-way ANOVA, xxx-way ANOVA) 
+
+SPSS – ANOVA Results 
+
+Sternberg - main effects “Set” and “Probe” 
+
+ANOVA – Main Effects and Interactions 
+
+§  Main Effects: Mean differences between levels 
+
+of a factor (ignoring the other factors) 
+à Not all level means are from same population 
+
+§  Interactions: Level of Factor A has an impact 
+
+on effect of Factor B 
+à The main effects don’t just add up 
+
+§  Post-hoc Tests: Testing differences between 
+
+different level combinations (cells) 
+à What drives the main and interaction effects 
+
+ANOVA – Main Effects and Interactions 
+
+2 x 2 Design 
+
+[ms] 
+
+400 
+
+200 
+
+0 
+
+[ms] 
+
+400 
+
+200 
+
+0 
+
+[ms] 
+
+400 
+
+200 
+
+0 
+
+Main Effect  
+
+without Interaction 
+
+Interaction 
+
+without Main Effect 
+
+(One) Main Effect  
+plus Interaction 
+
+Results Attentional Blink 
+
+Results Attentional Blink 
+
+We computed a two-way repeated-
+measures ANOVA on the percent 
+correct responses with the factors 
+‘distance’ (separation between first and 
+second target) and ‘target’ (first vs. 
+second target letter). There was a main 
+effect of ‘distance’ (F(3,51) = 23.60, p < 
+0.001), but no effect for ‘target’ (F(1,17) 
+= 0.94, p = 0.35). The interaction 
+between ‘distance’ and ‘target’ was 
+also significant (F(3,51) = 30.53, p < 
+0.001). 
+
+Results Post-Hoc Tests 
+
+Comparing percent correct for first and second target separately for the 
+different target separations, we found that accuracy for the first target was 
+higher with the two smaller distance separations (distance ‘2’: t(17) = 
+4.48, p < 0.001; distance ‘4’: t(17) = 2.84, p = 0.01), but lower for the two 
+larger distance separations (distance ‘6’: t(17) = -4.11, p = 0.001; distance 
+‘8’: t(17) = -4.36, p < 0.001). 
+
+R Statistics Package 
+
+R Interfaces 
+
+§  R with console (http://www.r-project.org) 
+
+§  minor functionality 
+
+§  RStudio 
+
+§  enhanced functionality 
+§  à like R console 
+
+§  Rcommander 
+
+§  perform operations with menus 
+§  à like SPSS 
+
+§  Very nice R Tutorial (Quick-R): 
+
+§  http://www.statmethods.net 
+
+Test Run R 
+
+§  help(), help(cor), ??correlation!
+
+§  Get help: 
+
+§  Simple analysis 
+
+§  mtcars!
+§  cor(mtcars)!
+
+§  Simple graph 
+
+§  attach(mtcars)!
+§  plot(wt, mpg)!
+§  abline(lm(mpg~wt))!
+
+R Basics 1/2 
+
+§  Get and set present working directory 
+
+§  getwd()!
+§  setwd(dir)!
+
+§  List files in current working directory 
+
+§  list.files()!
+
+§  List objects in the working environment 
+
+§  Show contents of “var” 
+
+§  ls()!
+
+§  var!
+
+§  Summarize contents of variable “var” 
+
+§  summary(var)!
+
+R Basics 2/2 
+
+§  List the structure of variable “var” 
+
+§  str(var)!
+
+§  List the variables in “var” 
+
+§  names(var)!
+
+§  Get dimensions of variable “var” 
+
+§  dim(var)!
+
+§  Get class of “var” 
+
+§  class(var)!
+
+§  Print first 10 rows of “var” 
+
+§  head(var, n=10)!
+
+§  Print last 5 rows of “var” 
+
+§  tail(var, n=5)!
+
+R Commander 
+
+Command menus 
+
+R script input 
+
+OR 
+
+R markdown input 
+
+Command output 
+
+Assignment 
+
+§  Data: Prepare raw data file and send it to me (with some explanation if 
+
+necessary). Tell me if you have problems collecting the raw data. 
+
+Next Session 
+
+§  Analyze your data 
+§  Bring your laptops (if possible) 
+§  Complete Assignments 
+
+

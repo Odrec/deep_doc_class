@@ -1,0 +1,6775 @@
+Brit. J. Phil. Sci. 61 (2010), 729–768
+
+Insights and Blindspots of the
+Cognitivist Theory of Emotions
+
+Andrea Scarantino
+
+ABSTRACT
+
+Philosophical cognitivists have argued for more than four decades that emotions are
+special types of judgments. Anti-cognitivists have provided a series of counterexamples
+aiming to show that identifying emotions with judgments overintellectualizes the emo-
+tions. I provide a novel counterexample that makes the overintellectualization charge
+especially vivid. I discuss neurophysiological evidence to the effect that the fear system
+can be activated by stimuli the subject is unaware of seeing. To emphasize the analogy
+with blindsight, I call this phenomenon blindfright. Cognitivists may reply that blind-
+fright is nothing but an unconscious judgment subcortically elicited. This reply is in line
+with the strategy commonly employed by cognitivists against their critics. I call it the
+Elastic Strategy, because it consists of ‘stretching’ the notion of judgment in order to
+accommodate counterexamples. This strategy, I argue, turns cognitivism into a theory
+that is at worst unfalsiﬁable and at best trivially true. The ﬁnal portion of my article aims
+to rescue cognitivism from the damage done by the Elastic Strategy. I distinguish three
+varieties of cognitivism, one concerned with what emotions essentially are (Constitutive
+Cognitivism), one concerned with what causes emotions (Etiological Cognitivism) and
+one concerned with what emotions represent (Representational Cognitivism). I conclude
+that what cognitivism has to offer to emotion theory are primarily insights concerning the
+causes and representational content of emotions. The constitutive identiﬁcation of emo-
+tions with judgments, on the other hand, does more harm than good.
+
+1.
+
+Introduction
+
+2. The Emergence of Cognitivism
+
+3. Blindfright
+
+4. The Master Argument Against Cognitivism
+
+5. The Elastic Strategy
+
+6. Three Varieties of Cognitivism
+
+6.1 Constitutive Cognitivism
+
+6.2 Etiological Cognitivism
+
+6.3 Representational Cognitivism
+
+7. Conclusion
+
+ß The Author 2010. Published by Oxford University Press on behalf of British Society for the Philosophy of Science. All rights reserved.
+doi:10.1093/bjps/axq011
+For permissions, please email: journals.permissions@oxfordjournals.org
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+730
+
+Andrea Scarantino
+
+1 Introduction
+
+Philosophical cognitivists have long argued that emotions are special types of
+judgments (Solomon [1976], [2003]; Nussbaum [2001]).1 This thesis has been
+widely criticized, because judgments appear to have distinguishing properties
+emotions lack (e.g., cognitive sophistication) and lack distinguishing proper-
+ties emotions have (e.g., motivational power) (cf. Deigh [1994]; Grifﬁths
+[1997]; DeLancey [2001]; D’Arms and Jacobson [2003]; Prinz [2004]).
+Cognitivists have been largely unfazed by criticisms of this sort. Their stand-
+ard reaction is to ﬁne-tune the notion of judgment, and reply that, relative to
+such notion, emotions are indeed judgments. The purpose of this article is to
+move beyond this standard dialectic, which mixes terminological disputes on
+what judgments are with substantive disagreements on the nature of emotions.
+The paper can be divided into three parts. In the ﬁrst, I present a new
+counterexample to cognitivism, an emotion I call blindfright. Blindfright is a
+type of fear elicited without awareness of the eliciting stimulus, in circum-
+stances analogous to those in which blindsight is manifested. Besides being an
+interesting phenomenon in its own right, blindfright is a striking example of
+what is wrong with the identiﬁcation of emotions with judgments, under the
+understanding of judgment presupposed by anti-cognitivists. Cognitivists,
+however, reject such an understanding, and adopt what I call the Elastic
+Strategy. The strategy consists of stretching the notion of ‘judgment’ in
+order to accommodate counterexamples. Blindfright is bound to lead cogni-
+tivists to add the notion of a subcortical judgment to the already motley crew of
+items that qualify as judgments by cognitivists’ lights.
+
+In the second part of my paper, I explain what is wrong with the Elastic
+Strategy. In a nutshell, it has turned cognitivism into a theory that is (at best)
+trivially true. Furthermore, the Elastic Strategy has led cognitivists and
+anti-cognitivists to talk past each other; while they respectively afﬁrm and
+deny that emotions are judgments, they mean different things by ‘judgment’.
+Finally, the Elastic Strategy has prevented anti-cognitivists from gaining an
+appreciation of the insights of the cognitivist research program.
+
+In the third part of my paper, I try to rescue cognitivism from the damage
+done by the Elastic Strategy. I distinguish between three varieties of cognitiv-
+ism that have been historically important in philosophy and in the sciences of
+mind. One is concerned with the essential nature of emotions (Constitutive
+
+1 Other versions of cognitivism in philosophy are less radical (see, e.g., Deigh [1994] for further
+discussion). Greenspan ([1998]), for example, offers a cognitivist theory that makes room for the
+feeling dimension of emotions by suggesting that emotions are feelings of comfort or discomfort
+towards a stimulus-directed thought. Marks ([1984]) offers a belief and desire theory which
+makes room for the motivational dimension of emotions, proposing that an emotion results
+from the conjunction of a belief and a strong desire. I will disregard varieties of philosophical
+cognitivism distinct from pure judgmentalism in what follows.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+731
+
+Cognitivism), one with the cause of emotions (Etiological Cognitivism), and
+one with the representational content of emotions
+(Representational
+Cognitivism). This richer taxonomy will allow me to distinguish the genuine
+insights of cognitivism from some of its ﬂaws or blindspots.
+
+Here is how I will proceed. I begin with a brief history of the cognitivist
+theory of emotions (Section 2). Next, I discuss the scientiﬁc evidence for
+blindfright (Section 3), and show how blindfright can ground a new argument
+against cognitivism (Section 4). I then illustrate the Elastic Strategy cognitiv-
+ists have developed to respond to counterexamples, and explain what is wrong
+with it (Section 5). Finally, I assess three cognitivist theses about the essence,
+cause and representational content of emotions (Section 6).
+
+2 The Emergence of Cognitivism
+
+The current form of the cognitivist theory of emotions emerged in philosophy
+in the 1970s and 1980s as an alternative to feeling theories of emotion.2
+At the time, the most popular feeling theory was still William James’
+([1884], [1890]), according to which emotions are feelings, understood as per-
+ceptions of autonomic bodily changes. What is left of fear, James famously
+asked, when we subtract from it the bodily changes that typically characterize
+it, such as heightened heart beats, trembling, sweaty palms, and so on? His
+answer was: nothing at all, because fear, just like every other emotion, is
+essentially the feeling generated by perceiving a suite of autonomic bodily
+changes.
+
+The cognitivists begged to differ. Firstly, they argued, emotions sometimes
+do not involve feelings at all. As ﬁrst emphasized by behaviorists such as
+Watson ([1913], [1925]), Skinner ([1953]) and Ryle ([1949/1990]), emotion
+terms sometimes refer to dispositions to behave. Love for one’s long-term
+partner, for instance, can be instantiated by virtue of a disposition to
+behave in loving ways towards such partner, rather than by virtue of any
+occurrent feeling of love. One may bracket dispositional emotions as a special
+case, or argue that they still involve, perhaps necessarily, dispositions to per-
+ceive autonomic bodily changes (Prinz [2004]). The trouble is that even non-
+dispositional emotions sometimes do not seem to involve the perception of
+autonomic bodily changes.
+
+2 Cognitivism broadly understood also counts representatives in psychology (e.g., Arnold [1960];
+Schachter and Singer [1962]; Lazarus [1991]; Ortony et al. [1988]). As I argue in Section 6.2,
+psychological cognitivism is different from philosophical cognitivism in that it only aims to
+identify the cognitive causes of emotions, without assuming that such causes identify what
+emotions essentially are.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+732
+
+Andrea Scarantino
+
+Consider the sort of unconscious emotions dynamic psychotherapy tries to
+unveil, say fear of failing in life, hatred for a dependent parent, or envy to-
+wards a more successful sibling. The emoter is unable to report that she is
+undergoing them, yet their ascription appears to explain a wide range of be-
+haviors. It appears quite possible that such emotions may be instantiated
+without the perception of any autonomic bodily changes. One may respond
+by calling into question the very construct of unconscious emotion
+(Hatzimoysis [2007]), or by allowing perceptions of bodily changes to be un-
+conscious (Damasio [1994], [1999]). Counterexamples, however, keep coming.
+Consider what we may call calm emotions, namely garden variety emotions
+which are conscious and occurrent, but ‘more known by their effects than by
+the immediate feeling or sensation’ (Hume [1739/1992], p. 471). Examples
+may include delight at the sight of art work (which may lead you to buy it),
+fear that a certain politician will win the elections (which may lead you to vote
+for his opponent), anger at the injustices of the world (which may lead you to
+donate to Oxfam), or guilt about having missed a friend’s birthday (which
+may lead you to make an apologetic phone call). It seems that one could
+undergo such emotions in a genuine sense, but in the absence of any perceiv-
+able autonomic bodily changes. If this is the case, emotions cannot be essen-
+tially perceptions of autonomic bodily changes.3
+
+Cognitivists had a further worry with respect to the feeling theory. They
+argued that feelings are not normatively assessable the way emotions are.
+Anthony Kenny emphasized one dimension of normative assessment in par-
+ticular: ‘If the emotions were internal impressions [i.e. feelings] [ . . .] there
+would be no logical restrictions on the type of object which each emotion
+could have [ . . .] In fact, each emotion is appropriate—logically, and not
+just morally appropriate—only to certain restricted objects’ (Kenny [1963],
+p. 192). Kenny labeled these restricted objects formal objects, distinguishing
+them from the material objects of the emotion. Whereas ‘anything which can
+be ed is a material object of ing’, he wrote, the ‘formal object of ing is the
+object under that description which must apply to it if it is to be possible to  it’
+(Kenny [1963], p. 189).
+
+3 A standard attempt to incorporate calm emotions within the purview of the feeling theory of
+emotions is to propose, as Neo-Jamesians do, that autonomic bodily changes need not be actual,
+but only mirrored by the differential activation of the somatosensory brain regions which are
+responsible for autonomic bodily changes (Damasio [1999] calls these ‘as if’ bodily changes). It
+is an open question whether emotions always differentially activate somatosensory regions. The
+current evidence is inconclusive (see Barrett and Wager [2006] for a review). If it turned out that
+they do, the thesis that emotions are essentially perceptions of autonomic bodily changes would
+hold in such watered down form that many radical anti-feeling theorists would happily endorse
+it. This is to say that after a certain number of reﬁnements, the notion of perception of bodily
+changes becomes so broad that all distinctions between opposing camps get lost. For a different
+contemporary version of the feeling theory, see (Robinson [2004]).
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+733
+
+For instance, whereas the material object of anger may be any speciﬁc object
+(one’s girlfriend), event (the event of being called a jerk) or state of affairs (the
+state of affairs constituted by the inequitable distribution of wealth) one is
+angry about, the formal object of anger is that description of the material
+object which must be true of it in order for anger to be appropriately instan-
+tiated (we can think of the formal object of anger as an offence of some kind).
+Material and formal objects constitute two aspects of the intentionality of
+emotions. According to the picture advanced by Kenny ([1963]), emotions
+are about material objects and they are about formal objects.
+
+A standard move in the philosophy of emotions (e.g., Prinz [2004]; Salmela
+[2006]) is to describe formal objects in terms of what Lazarus ([1991]) labelled
+core relational themes. I will follow this practice and adopt the following
+working taxonomy of formal objects.4
+
+Emotion 
+
+Sadness 
+
+Anger 
+
+Fear 
+
+Guilt 
+
+Shame 
+
+Pride 
+
+Formal Object
+
+Having experienced an irrevocable loss 
+
+A demeaning offense against me and mine 
+
+Danger 
+
+Having transgressed a moral imperative 
+
+Failing to live up to an ego ideal 
+Enhancement of one’s ego identity by taking credit for a 
+valued object or achievement, either one’s own or that of 
+someone or group with whom we identify 
+
+Figure 1. Examples of characteristic formal objects for some common emotions
+
+On this view, whereas one can in principle be sad, or angry, or afraid, or
+guilty, or ashamed, or proud about anything, each of these emotions is logic-
+ally appropriate, to use Kenny’s expression, only when the material objects of
+these emotions constitute, respectively, a loss, an offence, a danger, a moral
+transgression, a failure to live up to an ego ideal, and an enhancement of one’s
+ego identity.
+
+The difﬁculties encountered by the feeling theory eventually led to the emer-
+gence of cognitivism. In its most paradigmatic formulation, the positive thesis
+
+4
+
+I consider the description of core relational themes provided by Lazarus ([1991]) to be highly
+perfectible. But to provide a better account is not a job for this article. What matters for my
+purposes is that there exist good descriptions of formal objects, roughly approximated by
+Lazarus’ ([1991]) preliminary descriptions. On this issue, see also (D’Arms and Jacobson [2003]).
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+734
+
+Andrea Scarantino
+
+of cognitivism in philosophy is that emotions are judgments.5 ‘I still hold the
+claim that emotions are judgments’, states Solomon ([2003], p. 210).
+Nussbaum ([2001], p. 4) writes that ‘[e]motions are appraisals or value judg-
+ments’. The following passage illustrates what kinds of judgments emotions
+are supposed to be:
+
+‘I am angry at John for taking [ . . .] my car’ entails that I believe that John
+has somehow wronged me [ . . .] My anger is that judgment [ . . .] If I do not
+ﬁnd my situation awkward, I cannot be ashamed [ . . . ] If I do not judge
+that I have suffered a loss, I cannot be sad [ . . . ] to have an emotion is to
+hold a normative judgment about one’s situation (Solomon [2003], p. 8)
+
+Solomon’s ([2003]) suggestion is that anger is the judgment that a demean-
+ing offence against me and mine has been perpetrated, shame is the judgment
+that I failed to live up to an ego ideal, sadness is the judgment that I have
+experienced an irrevocable loss, fear is the judgment that something danger-
+ous is present, guilt is the judgment that I transgressed a moral imperative, and
+so on.6
+
+The thesis that emotions are judgments in this sense seemed to provide a
+solution to the perceived problems of the feeling theory. Firstly, in the absence
+of perceptions of autonomic bodily changes, emotions can still be instantiated
+as long as the appropriate judgments are instantiated. Second, judgments
+seem to make sense of the intentionality of emotions. If my anger that John
+took my car amounts to my judgment that John’s taking my car is an offence
+against me or mine, then my anger is about whatever my judgment is about:
+John’s taking my car (material object) and an offence against me or mine
+(formal object).
+
+In light of these comparative advantages, the cognitivist theory of emotions
+soon became very popular. The success of cognitivism, however, has not gone
+unchallenged.
+
+3 Blindfright
+
+The rallying cry of the anti-cognitivism movement is that the assimilation of
+emotions with judgments overintellectualizes the emotions. My ﬁrst objective
+is to give the overintellectualization charge the best run for its money. In this
+section, I present a new counterexample to cognitivism consisting of a case of
+fear elicited without so much as awareness of the eliciting stimulus. I expect
+cognitivists to ﬁnd my counterexample inconclusive. But this is precisely the
+
+5 This is the version of cognitivism I call Constitutive Cognitivism. In Section 6, I will discuss
+
+other varieties of cognitivism.
+I used Lazarus’ ([1991]) descriptions of core relational themes instead of Solomon’s original ones.
+
+6
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+735
+
+problem. If even fear without awareness of what one is afraid of qualiﬁes as a
+judgment, hardly anything will convince a cognitivist that there exist emotions
+that are not judgments. This will lead me to argue that the standard argumen-
+tative strategy put in place to explain away counterexamples amounts to a
+pyrrhic victory for cognitivism.
+
+Anti-cognitivists have often considered the fact that emotions can be trig-
+gered quickly and automatically to be a problem for cognitivism. As James
+put it, ‘[i]f we abruptly see a dark moving form in the woods, our heart stops
+beating, and we catch our breath instantly and before any articulate idea of
+danger can arise’ (James [1884], p. 196). Cognitivists have responded to this
+sort of criticism by pointing out that judgments can also be triggered quickly
+and automatically. For instance, the judgment that setting a human being on
+ﬁre is wrong can be elicited as quickly and automatically as fear of a dark
+moving form in the woods.
+
+I want to push the standard anti-cognitivist line one step further, and argue
+that fear can be triggered not only quickly and automatically, but also by
+stimuli emoters are unaware of seeing.7 This presents cognitivism with a po-
+tentially harder case to handle. What is missing in the sort of fear I describe is
+not just the laborious cognitive processing of fearful objects of awareness (the
+‘dark moving form in the woods’ case). More radically, it is the very presence
+of awareness of fearful objects.
+
+Let blindfright be the activation of the fear system in response to visually
+presented information registered without awareness. I understand awareness
+as the ability to make a verbal report in forced choice situations. Registering
+visually presented information without awareness is therefore registering in-
+formation through the sense of vision without being able to report on the
+information registered even when forced to guess. I picked the word ‘blind-
+fright’ to emphasize that what is being elicited is a variety of fear in circum-
+stances analogous to those in which blindsight is manifested (see below).8
+
+Fear is a member of the family of basic emotions, biologically based and
+pan-cultural suites of short-term, coordinated, and automated responses that
+include measurable physiological changes, stereotyped facial expressions, and
+action tendencies (Ekman [1999]; Grifﬁths [1997]).9 Unlike other basic
+
+7
+
+I want to thank an anonymous referee for pressing me to emphasize the differences between
+merely automatic emotions and the affective phenomenon I describe below.
+
+8 Blindfright is not really a kind of fright, i.e., intense fear. The terminological imprecision of
+calling a form of fairly mild fear (blind)fright is a price worth paying in order to emphasize the
+important analogies between blindfright and blindsight.
+
+9 There are forms of fear which do not ﬁt the ‘basic emotion’ paradigm. For instance, fear that one
+will lose a chess match, progressively developed in the course of the game and lasting for several
+hours would not qualify as a basic emotion.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+736
+
+Andrea Scarantino
+
+emotions, fear is fairly well understood at the neurobiological level (LeDoux
+[1996]; Davis [2000]). For instance, it has consistently been reported that
+fear-relevant stimuli generate differential amygdala activation (Aggleton
+[1992]; Adolphs et al. [2005]; Barrett et al. [2007]).10 It has also been convin-
+cingly argued that there are dedicated neural pathways for at least some forms
+of fear (Le Doux [1996]).
+
+For purposes of scientiﬁc investigation, the category of basic fear is still too
+broad. Fear scientists distinguish between different forms of fear associated
+with the detection of different degrees of threat imminence. Fanselow ([1994]),
+for
+instance, distinguished between preencounter, postencounter and
+circa-strike fear, characterized by partially distinct physiological proﬁles.
+Preencounter fear is the sort of fear a prey animal experiences when foraging
+for food in an area where a predator has attacked in the past. The environment
+is continuously scanned, skin conductance responses (SCRs) increase, heart
+rate (HR) decreases, and orienting behaviors are manifested. When the pres-
+ence of an actual predator is registered, postencounter fear ensues, character-
+ized by further increase of SCRs, decrease of HR, emergence of a potentiated
+startle reﬂex and of a freezing behavioral response. When the predator ﬁnally
+attacks, the sympathetic nervous system takes over, SCRs and HRs show a
+dramatic boost, and the prey animal displays the ﬁght-or-ﬂight behaviors
+commonly associated with fear.
+
+Here is the key point: enhanced SCRs, potentiated startle reﬂex and differ-
+ential amygdala activation can be elicited by visual stimuli registered without
+awareness. This is to say that there is such a thing as blindfright: subjects can
+register fear-relevant properties of a stimulus and become afraid of it without
+being aware of seeing it, just as in blindsight one can register the color and
+shape of a stimulus without being aware of seeing it.
+
+Blindfright has been detected in both normal subjects and brain-damaged
+patients. This is important, because it suggests that the phenomenon is not
+simply a by-product of a dysfunctional vision system. The experimental set-
+ting that applies to normal subjects is that of backward masking experiments
+(Marcel [1983]), where a target stimulus and a masking stimulus are presented
+in rapid succession. When the interval between the two presentations is 30 ms
+or less, the masking stimulus masks the target stimulus entirely. In response
+to questions, normal subjects report that they are not aware of being exposed
+to the masked visual stimulus, and perform at chance level when forced to
+guess.
+
+The second experimental setting concerns patients with damaged primary
+visual cortex. As it is widely known, some such patients maintain an
+
+10 Fear is not the only emotion to produce differential amygdala activation. See (Whalen and
+Phelps [2009]) for a state-of-the-art account of the role of the human amygdala in emotional
+processing.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+737
+
+impressive range of abilities with respect to force-guessing the position, color,
+shape, and orientation of visual stimuli in their blindﬁeld (Weiskrantz [1986];
+Stoerig and Cowey [1997]). In the last few years, a whole new range of residual
+affective abilities has been discovered in blindsighted patients.11
+
+What is emerging from this converging body of research is that fear can be
+elicited both when normal subjects are exposed to masked fear-relevant sti-
+muli and when brain-damaged patients are exposed to fear-relevant stimuli in
+their blindﬁeld. For example, it has been demonstrated that a snake-phobic
+subject exposed to masked pictures of snakes produces enhanced SCRs,
+whereas this effect does not occur with neutral stimuli (O¨ hman and Soares
+[1993]).12 In addition, a normal subject who acquired a conditioned fear re-
+sponse to images of spiders, snakes and threatening faces will also maintain
+enhanced SCRs to such images when masked (Esteves et al. [1994]; O¨ hman
+and Soares [1998]). Furthermore, subjects who have acquired a conditioned
+fear response to images of angry faces show amygdala activation under mask-
+ing, whereas in the absence of fear-conditioning the same masked angry faces
+produce no amygdala activation (Morris et al. [1999]). Amygdala activation is
+also detected when subjects are exposed to masked fearful faces, whereas
+masked happy faces do not have a differential impact on the amygdala
+(Whalen et al.
+[1998]). Finally, subjects can acquire a conditioned fear
+response—as revealed by enhanced SCRs—to masked images of spiders,
+snakes and threatening faces (Esteves et al. [1994]; O¨ hman and Soares [1998]).
+These results are nicely complemented by ﬁndings on patients with
+damaged primary visual cortex. These patients show amygdala activation
+when an angry face to which they have been fear conditioned is presented in
+their blindﬁeld, but no such activation is detected with respect to the same
+‘unseen’ angry faces in the absence of conditioning (Morris et al. [2001]).
+Similarly, amygdala activation is detected when fearful faces are presented
+in the blindﬁeld, an effect disappearing when happy faces are shown instead
+(Morris et al. [2001]). An especially interesting experiment concerned a patient
+with Anton’s syndrome, the combination of bilateral blindsight with agnosia.
+The patient ‘was unable to grasp objects held into his visual ﬁeld and did not
+orient to new visual stimuli, even when asked to do so’ (Hamm et al. [2003],
+p. 269). Despite failing to manifest the abilities commonly displayed by blind-
+sighted patients, the patient did acquire a conditioned fear response—as re-
+vealed by a potentiated startle reﬂex—to a neutral stimulus, i.e., the image of
+
+11 De Gelder et al. ([1999]) refer to this body of literature with the term ‘affective blindsight’, to
+indicate that the experimental conditions are similar to those of blindsight, but the abilities
+detected are affective in nature.
+
+12 Altered SCRs, potentiated startle reﬂex, and altered HR are considered to be the main physio-
+logical changes characterizing fear. See (O¨ hman and Wiens [2003]) for a defense of this view.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+738
+
+Andrea Scarantino
+
+an airplane, visually presented in his bilaterally blind ﬁeld (Hamm et al.
+[2003]).
+
+The experiments on masked and blind exposure to fear-relevant stimuli
+seem to me to provide strong support for the thesis that the fear system can
+be activated by means of information acquired visually, but without aware-
+ness. A few objections, however, could be raised against this interpretation.
+The ﬁrst may be that blindfright is not really fear because there is no dis-
+tinctive phenomenology attached to it. On this view, blindfright is a set of
+neurophysiological responses similar to those of fear, but it is not really fear.
+My ﬁrst response is that it is not clear that blindfright lacks a phenomenology
+entirely. Experimenters have generally not reported data on the subjective
+experience associated with being mask exposed or blind-exposed to fear-
+relevant stimuli. This being said, the limited data available suggest that ex-
+perimental subjects may become aware of being afraid, without being aware of
+the reason why they are afraid. For instance, after exposure to masked images
+of the objects of their phobias, phobic subjects in (O¨ hman and Soares [1993])
+state they feel high arousal, high disliking, and lack of control. Notably, the way
+phobics rate their feelings on the arousal/disliking/control scale when
+exposed to, respectively, unmasked and masked phobic images are very similar.
+In the masked case, bodily feedback presumably informs them that their
+bodies are primed to deal with a threat they are unaware of.
+
+My second response is that, even if there is nothing it is like to undergo
+blindfright (at least on some occasions), lack of phenomenology does not
+necessarily entail lack of emotion. To think otherwise is to subscribe to
+what is at this point a minority view on the relation between emotion and
+feeling. Most leading theories of emotions—e.g. cognitivism, affect program
+theory, Neo-Jamesianism—now allow for the possibility that some instances
+of emotion may have no experiential qualities. If this is right, blindfright can
+still qualify as a genuine form of fear in the absence of blindfright qualia,
+provided it fulﬁls properties of fear other than its characteristic phenomen-
+ology.13
+
+A second objection is that blindfright not only lacks a phenomenology, but
+it also lacks other key properties of prototypical fear episodes. This may be
+another reason to think that blindfright has some similarities with fear, but is
+not really fear. The objection presupposes that the instantiation of emotions
+
+13 To conclude that blindfright is not a form of fear because it lacks a phenomenology would be
+like concluding that blindsight is not a form of sight because it lacks a phenomenology. In both
+cases, an opportunity to study what happens to mental states when conscious experience and
+ecological function come apart would be lost. As there is more to sight than what it is like to see,
+there is more to fear than what it is like to fear, namely a danger-detecting and danger-coping
+role.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+739
+
+commonly involves many, if not all, of their prototypical properties. On this
+view, fear episodes involve a suite of coordinated neurophysiological, phe-
+nomenological, and behavioral responses. On the contrary, emotion scientists
+have argued that ‘behavioral and physiological measurements in emotion
+often bear little relationship to each other, and are in turn poorly correlated
+with a verbal report of the subjective state’ (Lang [1993], p. 18). In other
+words, the degree to which the prototypical neurophysiological, phenomeno-
+logical, and behavioral responses of an emotion are co-instantiated is signiﬁ-
+cantly lower than our pre-theoretic intuitions would suggest (Barrett [2006]).
+The instantiation of an emotion by virtue of a small subset of its prototypical
+characteristics is the norm rather than the exception.14
+
+The point is that the characteristics of blindfright are remarkably similar to
+those of one of the scientiﬁc explications of fear, namely postencounter fear
+(Fanselow [1994]). Just like postencounter fear, blindfright is characterized by
+differential amygdala activation, enhanced SCRs and potentiated startle ac-
+tivation.15 It would be inconsistent to deny that blindfright is a form of fear
+while holding that postencounter fear is a form of fear. And to deny the latter
+because postencounter fear differs from a prototypical fear episode would
+amount to allowing ordinary intuitions about prototypical fear episodes to
+set the boundaries for the scientiﬁc exploration of fear. As convincingly
+argued by Grifﬁths ([1997]), emotion theory should not be hostage of ordinary
+language intuitions about the extension of emotion terms. The dissimilarity of
+postencounter fear (and blindfright) from prototypical fear episodes is not a
+good reason to conclude that emotion scientists, who routinely refer to post-
+encounter fear and what I have called blindfright as instances of fear, are either
+not speaking literally, or have changed the subject.16
+
+14 A pathological example of poor correlation between physiological, behavioral, and verbal
+indexes is offered by patients afﬂicted by alexithymia (Lane et al. [1997]). Such patients are
+systematically unable to report on how they feel, failing to distinguish whether they feel, say,
+afraid or angry, even though they display physiological and behavioral manifestations charac-
+teristic of, respectively, fear or anger. I mention alexithymia because Lane et al. ([1997]) claim
+that it may be the ‘emotional equivalent of blindsight’. The analogy is very thin, because
+alexythimics are unaware of their emotions, whereas it is an open question whether blindfright
+subjects are similarly unaware. More importantly, there isn’t any similarity between the circum-
+stances of elicitation of alexythimia and blindsight, whereas there is remarkable similarity be-
+tween the circumstances of elicitation of blindsight and blindfright. The emotional equivalent of
+blindsight, I suggest, is blindfright rather than alexithymia.
+
+15 I am not aware of data concerning the behavioral changes associated with blindfright. This
+being said, it is likely that a subject who describes her feelings in terms of high arousal, high
+disliking, and lack of control (O¨ hman and Soares [1993]) will manifest behavioral changes. My
+prediction is that experimental subjects will show orienting behaviors and possibly the beginning
+of a freezing response, even though these responses are likely to be weaker than the ones shown
+in postencounter fear with respect to ‘seen’ stimuli.
+
+16 A further possible objection, recently presented by Starkey ([2007]), is that the conditions of
+elicitation of the experiments on emotional triggering without awareness are artiﬁcial, and
+consequently not relevant to ﬁgure out what emotions are like in cases in which they fulﬁll
+their proper functions. I disagree that experimental circumstances creating unusual eliciting
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+740
+
+Andrea Scarantino
+
+I conclude that blindfright, despite its differences from a prototypical fear
+episode, is indeed a form of fear. If so, it can qualify as a counterexample to
+the cognitivist theory of emotions.
+
+4 The Master Argument Against Cognitivism
+
+A great many counterexamples to cognitivism are best understood as substi-
+tution instances of what I call the Master Argument Against Cognitivism:
+
+(1) For all p, judging that p presupposes that the judger satisﬁes re-
+quirements R1, . . ., Rn
+
+(2) One can have emotion E without satisfying requirements R1, . . ., Rn
+
+Therefore,
+
+(3) To have emotion E is not necessarily to judge that p
+
+Premise (1) determines a set of requirements for the activity of formulating
+judgments. Premise (2) provides an example of an emotion E instantiated in
+violation of such requirements. The conclusion is that E is not necessarily a
+judgment that something is the case: there are tokens of emotion E that are not
+judgments. Notice that anti-cognitivists do not need to show that no emotions
+are judgments. Since cognitivism aims to tell us what all emotions are like,
+anti-cognitivists only need one counterexample. Over the last forty years, the
+debate between cognitivists and anti-cognitivists has focused on whether the
+Master Argument Against Cognitivism is sound once we ﬂesh it out with
+speciﬁc propositions p, requirements R1, . . ., Rn and emotions E.
+
+Premise (1) has turned out to be the most contentious. Anti-cognitivists
+generally endorse a conservative understanding of judgment, according to
+which judging is engaging in a mental operation of assent with respect to a
+proposition p. The historical origin of this understanding of judgment can be
+traced back to the Stoic distinction between an impression (phantasia), a
+seeming that something is the case, and a judgment (krisis), a mental act of
+taking something to be the case (Sorabji [2000]). Whereas children, animals
+and adult humans are all capable of experiencing impressions, the Stoics
+argued, only human adults can judge, because judging requires the capacity
+
+conditions for emotions do not shed light on what emotions are like in functionally normal
+eliciting conditions. The point of the experimental setting is precisely to bring up features of
+emotional processing which are hard to notice in normal cases, for instance that awareness of
+the stimuli can only explain part of the mechanism of emotional elicitation, since the emotion is
+triggered even without awareness. Moreover, even artiﬁcial eliciting conditions should count
+towards falsifying a theory aiming to describe what all emotions are like, without restrictions on
+their circumstances of elicitation. Insofar as blindfright counts as an emotion, a point Starkey
+([2007]) would presumably not contest, we can use it as a counterexample against theories which
+aim to ﬁll in the blank in universal statements such as ‘for all emotions x, x is___’.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+741
+
+to assent (or withhold assent) to impressions which only comes with the fac-
+ulty of reason (logos) (Sorabji [2000]).17 For instance, one may have the visual
+impression that two lines have different length in a Mu¨ ller-Lyer illusion, but
+refrain from judging that they have different length, because assent to the
+visual impression is withheld in light of background knowledge.
+
+There are a number of distinctions between proponents of the conservative
+understanding of judgment that I won’t get into. For my purposes, the con-
+servative understanding of judgment can be broadly characterized by the as-
+sumptions that a judgment that p (a) is an expression of linguistic abilities, (b)
+presupposes conscious assent to p, (c) requires possession of the concepts
+featured in p18 and it (d) affects behavior through practical reasoning by
+being combined with conative attitudes (Searle [1983]).19
+
+If ‘judgment’ is understood along these lines, blindfright is a spectacular
+counterexample to cognitivism, because it appears to have none of the marks
+commonly associated with the conservative understanding of judgment. Far
+from being an expression of the truth-aiming linguistic ability to give or with-
+hold conscious assent to concept-involving propositions, blindfright is an ex-
+pression of the neural architecture of the fear system. There is growing
+evidence that some forms of fear rely on a quick and dirty neural pathway
+which by-passes the neo-cortex, projecting directly from the sensory cortex to
+the amygdala (LeDoux [1996]). Blindfright is likely to exploit such a pathway,
+the existence of which provides anatomical evidence that there are forms of
+fear, and consequently emotion, which do not presuppose any of the neo-
+cortical capacities associated with the conservative notion of judgment (e.g.,
+language mastery, consciousness, concept possession, practical reasoning,
+etc.).
+
+Blindfright, I conclude, represents a new substitution instance of the Master
+
+Argument Against Cognitivism:
+
+(1) Judging that danger is at hand presupposes language mastery, con-
+scious assent, the possession of the concept of danger, and the ability
+to engage in practical inferences involving the danger concept.
+
+17 The Stoics thought that logos is acquired by humans at the age of fourteen (Sorabji [2000]).
+18 A common way to cash out the notion of concept possession is offered by Gareth Evans’ ([1982])
+Generality Constraint. According to this constraint, a subject S can be credited with possession
+of an object concept ‘a’ and of property concept ‘P’ insofar as S can exercise a and P in thought by
+entertaining, respectively, indeﬁnitely many propositions of the form Pa, Qa, Ra for any prop-
+erty P, Q, R, . . . the subject can conceive of, and indeﬁnitely many propositions of the form Pa,
+Pb, Pc for any object a, b, c, . . . the subject can conceive of.
+
+19 For instance, the judgment that Paris is the capital of France may lead one to going to Paris if
+combined with the desire to go to the capital of France, but it may lead one to refraining from
+going to Paris if combined with the desire to stay away from all European capitals. I will come
+back to the distinction between cognitive and conative attitudes in Section 6.3.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+742
+
+Andrea Scarantino
+
+(2) Blindfright is a form of fear which does not presuppose either lan-
+guage mastery, or conscious assent, or the possession of the concept
+of danger, or the ability to engage in practical inferences involving
+the danger concept.
+
+Therefore,
+
+(3) Fear is not necessarily the judgment that danger is at hand.
+
+The argument is valid, so I expect cognitivists to call its soundness into
+question. One option would be to reject premise (2), and argue either that
+blindfright is not fear, or that blindfright does presuppose the abilities listed in
+premise (2). Arguing that blindfright is not really fear is not a viable strategy,
+for reasons I considered in Section 3. Arguing that blindfright presupposes
+language mastery, conscious assent, concept possession, and the ability to
+engage in practical inferences strikes me as an equally hopeless strategy.
+There is no evidence that the neo-cortex, with which such abilities are asso-
+ciated, plays any role in the elicitation of blindfright.
+
+This leaves open to the cognitivist camp a second option: to deny premise
+(1). A cognitivist may propose that, relative to a more liberal understanding of
+judgment, blindfright is the judgment that danger is at hand. The cognitivist
+may ask: Why shouldn’t we think of blindfright as a nonlinguistic, uncon-
+scious assent to the proposition that danger is present, relax our requirements
+on concept possession and accept that a judgment can be intrinsically motiv-
+ational? On this view, blindfright is nothing more than an interesting example
+of how the judgment that something is dangerous can go subcortical. What
+neurobiologists have discovered, the cognitivist may suggest, is not that cog-
+nitivism is a ﬂawed theory of the emotions, but rather that the judgment that
+danger is at hand can be formulated without relying on any of the abilities
+associated with the neo-cortex.
+
+5 The Elastic Strategy
+
+The strategy of ﬁne-tuning the notion of ‘judgment’ has been the standard
+strategy employed to protect cognitivism from counterexamples. I call it the
+Elastic Strategy, to emphasize that the conservative notion of judgment
+described in the previous section is progressively ‘stretched’ to accommodate
+counterexamples. The failure to explain what is wrong with the Elastic
+Strategy strikes me as a central weakness of the anti-cognitivist movement.
+I intend to remedy it in two steps. Firstly, I provide textual evidence that the
+Elastic Strategy is the key tool developed by cognitivists to reject substitution
+instances of the Master Argument Against Cognitivism. Second, I argue that
+the Elastic Strategy makes cognitivism at best trivially true, and at worst
+unfalsiﬁable. To appreciate the extent to which the notion of ‘judgment’ has
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+743
+
+been stretched in order to deal with counterexamples, let us consider a roster
+of ﬁve inﬂuential anti-cognitivist arguments:20
+
+(1) Animals and infants can have emotions, but they do not have the
+language mastery required for giving or withholding assent to the
+impression that something is the case. Therefore, emotions are not
+judgments.
+
+(2) Emotions often display a distinctive bodily phenomenology, but
+there is no distinctive way it is like to judge that something is the
+case. Therefore, emotions are not judgments.
+
+(3) Emotions are causally efﬁcacious on their own, whereas judgments
+need to be accompanied by a desire in order to impact behavior.
+Therefore, emotions are not judgments.
+
+(4) Emotions can be elicited unconsciously and without deliberation,
+whereas judgments are deliberate and conscious. Therefore, emo-
+tions are not judgments
+
+(5) Emotions can be insensitive to judgments about what it is the case,
+whereas judgments are sensitive to other judgments about what is the
+case. Therefore, emotions are not judgments.
+
+Argument (1) moves from the realization that creatures without language
+emote, from which it follows that emotions cannot be judgments, if judgments
+presuppose language mastery. The cognitivist reply to (1) is to afﬁrm that
+judgments do not require language mastery. Solomon ([2003], p. 187), for
+instance, writes: ‘I take it as uncontroversial that animals make all sorts of
+judgments (e.g., whether something is worth eating, or worth chasing, or worth
+courting), but none of these are articulated or “spelled out”, nor are they
+subject to reﬂection’. Nussbaum ([2001], p. 37), who begins from a general
+endorsement of the Stoic account of judgment according to which ‘a judgment
+is an assent to an appearance’, ends up liberalizing the notion of assent to
+accommodate the case of nonlinguistic (and prelinguistic) creatures: ‘When
+we understand assent in [a] broader way [ . . . ] we [. . .] will ultimately be able
+to ascribe emotions to young children and nonhuman animals, who, to a
+greater or lesser extent, lack the capacity to withhold assent from the appear-
+ances with which life confronts. Whenever they accept a way the world seems
+as the way it is, they can be said to have judgment in my sense’ (pp. 38–9).
+
+Argument (2) moves from the realization that emotions often involve
+distinctive bodily feelings, from which it follows that emotions cannot
+be judgments, if judgments do not have a distinctive bodily phenomenology.
+
+20 See (De Sousa [1987]; Greenspan [1988]; Deigh [1994]; Grifﬁths [1997]; Goldie [2000]; DeLancey
+[2001]; D’Arms and Jacobson [2003]; Roberts [2003]; Robinson [2004]; Prinz [2004]) for more
+extended discussions of the various arguments.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+744
+
+Andrea Scarantino
+
+The cognitivist reply to (2) is to afﬁrm that judgments can encompass a dis-
+tinctive bodily phenomenology. The most striking formulation of this point
+can be found in Solomon, who writes that ‘[o]ne can, and sometimes must,
+speak of bodily judgments’ (Solomon [2003], p. 213). Nussbaum ([2001], p. 45)
+echoes this position: ‘I am conceiving of judging as dynamic, not static [. . .] So
+why would such a dynamic faculty be unable to house, as well, the disorderly
+motions of [emotion]?’. The disorderly motions of emotion Nussbaum refers
+to are what the Stoics called the ‘movements of the soul’, which included
+contractions and expansions, to be understood as physiological discharges
+and bodily sensations (Cooper [1999], pp. 453–61).
+
+Argument (3) moves from the realization that emotions have a constitutive
+motivational dimension, from which it follows that emotions cannot be judg-
+ments, if judgments lack a constitutive motivational dimension. The cognitivist
+reply to (3) is to afﬁrm that judgments can have a constitutive motivational
+dimension. Solomon is once again the most explicit on this matter. He writes
+that ‘judgments in emotions are judgments which have a quasi conceptual
+connection with desires’, adding that ‘one might analyze the various emotions
+as judgmental structures enclosing a core desire which is both their motivation
+and their “conatus” ’ (Solomon [2003], pp. 105–6). The idea here is that the
+sorts of judgments which emotions are always come accompanied by a
+desire—hence the quasi-conceptual connection—which takes care of the mo-
+tivational aspect of emotions.
+
+Argument (4) moves from the realization that emotions can be elicited un-
+consciously and without deliberation, from which it follows that emotions
+cannot be judgments, if judgments are deliberate and conscious. The cognitivist
+reply to (4) is to afﬁrm that judgments can also be nondeliberate and uncon-
+scious. According to Solomon, judgments are not ‘necessarily conscious or
+deliberative or even articulate’ (Solomon [2003], p. 210). Nussbaum points
+out that assent to an impression ‘is not to be imagined as an act that we
+always deliberately perform’ ([2001], p. 38) and emphasizes that by calling
+her theory of emotions cognitive ‘I do not mean to imply the presence of
+elaborate calculation, of computation, or even of reﬂexive self-awareness’
+([2001], p. 23).
+
+Argument (5) moves from the realization that emotions are sometimes cog-
+nitively impenetrable, namely not sensitive to judgments about what is the
+case, from which it follows that emotions cannot be judgments, if judgments
+are not cognitively impenetrable. The cognitivist reply to (5) is to afﬁrm that
+judgments can also be cognitively impenetrable. Nussbaum ([2001], p. 35)
+acknowledges that ‘[i]t appears that people sometimes change their minds
+about the beliefs that underlie their emotions, but continue to have the emo-
+tions nonetheless’. She gives the example of Sandra, who used to be ‘terriﬁed
+by a dog during childhood’, and subsequently learns that ‘dogs are no
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+745
+
+danger to her well being’, while nonetheless still being afraid of them.
+Anti-cognitivists take this to show that fear is not the judgment that danger
+is at hand, because the emotion can co-exist with the judgment that danger is
+not at hand. Nussbaum, on the other hand, argues that examples such as the
+one of Sandra ‘do not support such a conclusion, for the simple reason that we
+often hold contradictory beliefs’ ([2001], p. 35). Under this view, Sandra holds
+two contradictory beliefs, one that dogs are not dangerous (when asked to
+assent to the proposition) and the other than dogs are dangerous (when inter-
+acting with dogs).
+
+The point of this roster of anti-cognitivist arguments and cognitivist rebut-
+tals is to show that the Elastic Strategy is indeed the primary tool used by
+cognitivists to defend their theory from counterexamples. In general terms, the
+Elastic Strategy works as follows. The anti-cognitivist brings up a property P
+that emotions have (e.g., being causally efﬁcacious, as per argument (3)) and
+judgments conservatively understood lack, or a property Q that judgments
+conservatively understood have (e.g., requiring language possession, as per
+argument (1)) and emotions lack. On this basis, the anti-cognitivist concludes
+that emotions are not judgments, and that cognitivism is therefore falsiﬁed as
+a general theory of emotions. The Elastic Strategy consists of arguing that,
+under a liberal understanding of judgment, judgments also have property P
+(they can be causally efﬁcacious, as per Solomon’s reply to argument (3)), or
+lack property Q (they do not require language possession, as per Nussbaum’s
+reply to argument (1)).
+
+Crucially, the addition of property P and the subtraction of property Q do
+not derive from a preexisting theory of judgment. Rather, they are offered in a
+piecemeal fashion in response to anti-cognitivist pressures, with the only jus-
+tiﬁcation that the notion of ‘judgment’ is allegedly ﬂexible enough to allow for
+them. As Solomon puts it, ‘[j]udgments seem to me to be, all in all, the most
+versatile candidate in the cognitive analysis of emotion’ ([2003], p. 188). The
+versatility at hand amounts to the ability to acquire whatever property P
+emotions may be found to have and lose whatever property Q emotions
+may be found to lack while still qualifying as a judgment.
+
+There are two main problems with the Elastic Strategy. The ﬁrst is that it
+has generated a massive amount of talking at cross purposes between cogni-
+tivists and anti-cognitivists, who have gone back and forth for decades re-
+spectively afﬁrming and denying that emotions are judgments while meaning
+different things by ‘judgment’. This impasse can be exempliﬁed in miniature
+form with respect to blindfright. Relative to the conservative understanding of
+judgment endorsed by anti-cognitivists, blindfright is a counterexample to the
+thesis that emotions are judgments, because it lacks all marks commonly
+associated with judgments. Relative to the liberal understanding of judgment
+endorsed by cognitivists, blindfright is an example of how the judgment that
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+746
+
+Andrea Scarantino
+
+danger is at hand can be instantiated in the absence of awareness of the
+eliciting stimulus and without the involvement of the neo-cortex.
+
+The second and more substantive problem is that the Elastic Strategy has
+insulated cognitivism from counterexamples at a high price, namely making it
+at best trivially true, and at worst unfalsiﬁable.21 Consider ﬁrst what would be
+required to falsify the thesis that emotions are judgments of a certain type T.
+One would have to either ﬁnd a judgment of type T which is not an emotion,
+or an emotion which is not a judgment of type T. To do so, however, one
+would need a theory of what it is to be a judgment of type T that is independ-
+ent of the cognitivist theory of emotions.
+
+To the best of my knowledge, cognitivists have not offered a substantive
+theory of what it is to be a judgment of type T independent of their theory of
+emotions. They occasionally endorse a broad understanding of, say, judgment
+as the assent to an impression (e.g. Nussbaum [2001]), but they ultimately
+explain what counts as assenting to an impression in light of what they take
+an emotion to be.
+
+If emotions do not require language, have a distinctive phenomenology,
+comprise a motivational dimension, are cognitively impenetrable, and so
+forth, the same is true of assents to impressions. What drives the understanding
+of judgment are whatever properties emotions are found to have. Notably, the
+properties emotion-judgments end up acquiring are not exportable to any
+other species of the genus ‘judgment’.
+
+But here is the rub: if the type of judgment T that an emotion is supposed to
+be is described in light of a pre-existing theory of emotions and progressively
+modiﬁed in response to counterexamples, the thesis that emotions are judg-
+ments becomes irrefutable. The historical record of the debate between cogni-
+tivists and anti-cognitivists shows that all instances of emotions eventually
+manage to ﬁnd room in the unboundedly malleable and arguably unprincipled
+notion of judgment presupposed by cognitivists. As Nussbaum ([2001], p. 44)
+explicitly puts it, ‘if the emotion is not there, we are entitled to say that the
+judgments are not fully or not really there’. Conversely, if the emotion is there,
+so is the judgment. How are we going to be able to falsify a theory so conceived?
+Cognitivists may retort that the malleability of the notion of judgment is
+neither unprincipled nor unbounded, and reject the irrefutability charge. They
+may propose that even though animals and infants can formulate judgments
+under the liberal understanding of judgment they recommend, trees and rocks
+cannot. And they may further add that, even though judgments may be non-
+deliberate, unconscious and subcortical, they still require a brain, so unicel-
+lular organisms could not possibly issue them. Limitations of this sort may
+
+21 I want to thank an anonymous referee for suggesting that I consider the triviality option along-
+
+side the unfalsiﬁability one.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+747
+
+indicate that cognitivism is not literally an irrefutable thesis. If a tree or a
+unicellular organism were shown to have an emotion, the cognitivist theory
+would be falsiﬁed even under the liberal notion of judgment cognitivists have
+so far proposed.
+
+I am not sure cognitivists would react to the alleged counterexamples by
+giving in. They may well suggest that there is a sense in which trees and uni-
+cellular organisms also make judgments (e.g., they ‘judge’ that the light comes
+from a certain direction). These sorts of modiﬁcations to the notion of judg-
+ment do not strike me as signiﬁcantly more radical than those already pro-
+posed in response to arguments (1)–(5).
+
+But let us accept for the sake of argument that there can be counterexamples
+to the thesis that emotions are judgments, even under the notion of judgment
+proposed by cognitivists. If this is the case, cognitivism can be upgraded from
+being unfalsiﬁable to being trivially true. If judgments are the sorts of things
+that animals and infants (but not trees, rocks and unicellular organisms) can
+formulate, then they can be bodily, unconsciously elicited, directly motiv-
+ational, cognitively impenetrable, and subcortical,
+it is hard to imagine
+anyone disagreeing with the thesis that emotions are, in this extremely liberal
+sense, judgments.
+
+As I will argue, cognitivism has much more to offer than a trivial truth.
+To appreciate its genuine insights, we need to get rid of the Elastic Strategy,
+and make a number of distinctions cognitivists have failed to draw.
+
+6 Three Varieties of Cognitivism
+
+My analysis at this point of the article broadens; I want to include in my
+discussion not only the version of cognitivism prevalent in philosophy, but
+also versions of the cognitivist theory of emotions proposed in the sciences of
+mind. Whereas cognitivist philosophers discuss emotions primarily in terms of
+‘judgments’, psychologists and neurobiologists discuss them in terms of ‘ap-
+praisals’ or ‘cognitions’.
+
+The assimilation of emotions with judgments/appraisals/cognitions has
+had three basic functions in the history of cognitivism. Failure to keep them
+distinct has led to much confusion. The ﬁrst is to account for the essential
+nature of emotions, the second is to account for the cause of emotions, and the
+third is to account for the representational content of emotions. My objective is
+to sort insights from blindspots of each variety of cognitivism.
+
+6.1 Constitutive Cognitivism
+
+Constitutive Cognitivism is the thesis that emotions are judgments of a par-
+ticular sort. It is the variety of philosophical cognitivism I have focused on so
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+748
+
+Andrea Scarantino
+
+far, and the one the Master Argument Against Cognitivism attempts to falsify.
+The basic thesis of Constitutive Cognitivism is the following:
+
+Constitutive Cognitivism: For all emotions E, E is theoretically identiﬁed
+with the judgment that the formal object of E is instantiated (by some
+material object O)22
+
+For example, according to Constitutive Cognitivism to judge that a bear is
+running towards you and that this constitutes danger is to fear the bear, to
+judge that your grandmother died and that this constitutes an irrevocable loss
+is to be sad about her death, to judge that you have been caught in bed with a
+woman other than your wife and that this constitutes a failure to live up to an
+ego ideal is to be ashamed about being caught in bed with a woman other than
+your wife, and so on.
+
+Constitutive Cognitivism is what philosophical cognitivists generally have
+in mind when they assimilate emotions with judgments. After having defended
+her liberalized notion of judgment, Nussbaum ([2001], pp. 43–4) writes that
+‘we are in a position to conclude not only that judgments of the sort we have
+described are necessary constituent elements in the emotion, but also that they
+are sufﬁcient’. Solomon ([2003], p. 8) mirrors this position when he writes that
+‘[m]y anger-at-John-for-stealing-my-car is inseparable from my judgment that
+John in so doing wronged me [ . . .] My anger is my judgment that John has
+wronged me’.
+
+Constitutive Cognitivism is afﬂicted by what I call the Problem of Multiple
+Components. Consider an episode of intense anger directed by a scholar to-
+wards the colleague who informed her that she was denied tenure. At ﬁrst
+blush, we can distinguish in the complex phenomenon that is anger several
+parts: an evaluative component (e.g., evaluating being denied tenure as a
+slight), a physiological component (e.g., increased heart rate and blood pres-
+sure), a phenomenological component (e.g., an unpleasant feeling), an expres-
+sive component (e.g., ﬁxed stare, loud voice, erected body), a physical action
+component (e.g., insulting, storming out of the room), and a mental action
+component (e.g., focusing attention, planning an appeal, remembering previ-
+ous slights).
+
+In the presence of this multiplicity of heterogeneous parts, the identiﬁcation
+of emotions with judgments leads to two equally undesirable alternatives.
+If judgments are conservatively understood, as suggested by anti-cognitivists,
+
+22 The parenthetical is due to the fact that, even though emotions generally have material objects,
+they do not have them all the time. In objectless anxiety, for instance, the world at large appears
+to be threatening, without any object in particular appearing to be threatening. Cases of this sort
+can be handled in one of three ways. Objectless emotions can be handed out to a theory of
+moods, or they can be considered to be emotions with peculiar material objects (e.g., the world
+at large), or they can be considered to be emotions without material objects. The discussion of
+which alternative is best lies outside the scope of this article.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+749
+
+Constitutive Cognitivism is falsiﬁed on a grand scale, both for its overintel-
+lectualization of the evaluative component (think of the evaluative component
+of blindfright, which does not even involve awareness), and for its inability to
+capture all nonevaluative components of emotions (think of the physiological
+discharges of blindfright). If judgments are understood as proposed by cog-
+nitivists, on the other hand, evaluative and nonevaluative components are
+squeezed by ﬁat into the notion of judgment. As I have argued in the previous
+section, the price to pay for judgments to become subcortical, bodily, uncon-
+scious, cognitively impenetrable, and so on is that Constitutive Cognitivism
+becomes (at best) trivially true.
+
+A cognitivist may ask: why is this so bad? Shouldn’t we gladly accept that in
+this limited sense Constitutive Cognitivism is true? The trouble with settling
+for the thesis that emotions are judgments very broadly conceived is that we
+get little understanding of the emotions out of it. When we search for a the-
+oretical identiﬁer for emotion E, we are not looking for a placeholder to des-
+ignate the complex condition C whose fulﬁlment makes something an instance
+of E. We are looking for that very condition C, in all of its complexity.
+Introducing a seemingly unitary construct such as judgment (or appraisal or
+cognition for that matter), and turning it into a mongrel of evaluative, physio-
+logical, phenomenological, expressive, behavioral and mental components
+leads us to lose track of the way in which such components contribute
+toward something being an emotion E. It becomes unclear what really is ne-
+cessary and sufﬁcient, if anything, for E to be instantiated.23
+
+Cognitivists such as Nussbaum ([2001], p. 196) are fond of saying that
+emotions can ‘be deﬁned in terms of judgment alone’. But this qualiﬁes as
+false advertisement, because we are not told which complex of evaluative,
+physiological, phenomenological, expressive, behavioral, and mental compo-
+nents must be fulﬁlled in order to be a judgment of that type. This is the
+equivalent of saying that to be water it is necessary and sufﬁcient to be X,
+list a number of properties X has (e.g., it is transparent) and a number of
+properties X lacks (e.g., it is not combustible), keep silent on what condition
+must be fulﬁlled for being X, and conclude that one has deﬁned water ‘in terms
+of X alone’.
+
+Constitutive Cognitivism, I conclude, faces a Placeholder Blindspot fatal to
+its prospects of success. This is the ﬂaw of wrongly assuming that the identi-
+ﬁcation of emotions with judgments—understood as placeholders of unspeci-
+ﬁed logical form for a heterogeneous collection of component parts—can
+
+23 There are good Wittgensteinian reasons to be sceptical about the possibility that the logical form
+of the condition of membership C for ordinary emotion categories such as fear, shame, guilt, etc.
+will take the form of a set of individually necessary and jointly sufﬁcient properties for being E.
+For alternative proposals grounded in the prototype theory of concepts, see (Fehr and Russell
+[1984]; Ben-Ze’ev [2000]).
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+750
+
+Andrea Scarantino
+
+really tell us what emotions are. Constitutive Cognitivism does not shed more
+light on what emotions are than a mere list of prototypical emotion compo-
+nents would do.
+
+The main novelty of my argument against Constitutive Cognitivism is that
+it cannot be evaded through the application of the Elastic Strategy. This is
+because I have argued that the Elastic Strategy is not the solution to cogni-
+tivism’s problems. The Elastic Strategy is the problem.
+
+6.2 Etiological Cognitivism
+
+In the sciences of mind, the notion at the core of cognitivist accounts of the
+emotions is that of ‘appraisal’ (or ‘cognitive appraisal’ or ‘cognition’). Broadly
+speaking, an appraisal is ‘an evaluation of the personal signiﬁcance of what is
+happening in an encounter with the environment’ (Lazarus [2001], p. 40).
+Whereas ‘judgment’
+is commonly taken by philosophical cognitivists to
+refer to the emotion as a whole, ‘appraisal’ designates only its evaluative
+component. This leads me to introduce a second variety of cognitivism
+whose basic tenet is the following:
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+Etiological Cognitivism: for all E, emotion E is caused by the appraisal
+that the formal object of E is instantiated (by some material object O)
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+Consider fear, sadness and shame once again. According to Etiological
+Cognitivism, appraising that danger is instantiated by a bear running towards
+you is the cause of fear, appraising that your grandmother’s death instantiates
+an irrevocable loss is the cause of sadness, and appraising that your being
+caught in bed with another woman by your wife instantiates a failure to live up
+to an ego ideal is the cause of shame. For Etiological Cognitivism, appraisals
+are causes and possibly component parts of emotions, rather than their es-
+sence as proposed by Constitutive Cognitivism.
+
+Whereas Constitutive Cognitivism is the standard bearer of the cognitivist
+research program in philosophy, Etiological Cognitivism has been cham-
+pioned and developed primarily by psychologists.24 The notion of appraisal,
+
+24 This being said, Etiological Cognitivism is hinted at in the philosophical literature as well,
+without being clearly distinguished from Constitutive Cognitivism. For instance, Solomon
+writes: ‘All emotions presuppose or have as their preconditions, certain sorts of cognitions—an
+awareness of danger in fear, recognition of an offense in anger [. . .] if a person is demonstrably
+ignorant of a certain state of affairs or facts, he or she cannot have certain emotions’ (Solomon
+[1993], p. 11). Cognitions of danger or offense are in this case conceived as causal preconditions
+for emotions, rather than as theoretical identiﬁers of, respectively, fear and anger. Nussbaum
+also refers to an interpretation of her theory along the lines of Etiological Cognitivism in this
+passage: ‘To call an emotion cognitive [. . .] is just to say that it involves processing of informa-
+tion, and in the case of my theory some sort of rudimentary appraisal of the situation relative to
+the agent’s goals’ (Nussbaum [2001], p. 115). The rudimentary appraisal of the situation relative
+to the agent’s goals is to be understood as the cause of the emotional response, not what is
+necessary and sufﬁcient for having the emotion as stated by Constitutive Cognitivism.
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+751
+
+implicitly present in the work of a great many emotion theorists since
+Aristotle, became the object of scientiﬁc investigation with the work of psych-
+[1991]).25
+ologists Magda Arnold ([1960]) and Richard Lazarus ([1964],
+Arnold ([1960], p. 171) wrote that ‘[t]o arouse an emotion, the object must
+be appraised as affecting me in some way, affecting me personally as an indi-
+vidual with my particular experience and my particular aims’. She proceeded
+to identify the properties of emotional appraisal, describing it as ‘direct, im-
+mediate, nonreﬂective, nonintellectual, automatic, “instinctive”, “intuitive” ’
+(p. 175).26 Call this form of emotional appraisal primitive.
+
+Lazarus ([1991], [2001]) added to Arnold’s ([1960]) picture the idea that
+appraisal is a structured process made of parts.27 Lazarus organized such
+parts under two headings: primary appraisal, which aims to determine whether
+any of the subject’s goals are at stake, and secondary appraisal, which aims to
+determine how to cope with the speciﬁc form taken by the furthering or
+thwarting of the subject’s goals.
+
+More speciﬁcally, primary appraisal comprises three components: (i) an
+appraisal of goal-relevance, aiming to establish ‘whether an encounter is
+viewed by a person as relevant to well-being’ (Lazarus [2001], p. 55), (ii) an
+appraisal of goal-congruence and incongruence, aiming to establish ‘whether
+the conditions of an encounter facilitate or thwart what the person wants’, and
+(iii) an appraisal of type of ego-involvement, aiming to establish what kind of
+involvement of the ego is at stake, including ‘self- and social esteem, moral
+values, ego-ideals, meanings and ideas, other persons and their well-being, life
+goals’ (p. 57).
+
+Secondary appraisal also comprises three components: (iv) an appraisal of
+blame or credit, aiming to establish ‘who or what is responsible for a harm,
+threat, challenge or beneﬁt’ (p. 56), (v) an appraisal of coping potential, aiming
+to establish whether and how the person can ‘ameliorate or eliminate a harm
+or threat or bring to fruition a challenge’ (p. 56), and (vi) an appraisal of future
+
+25 All appraisal theories that have appeared in the last forty years are ‘based, at least in part, on the
+
+pioneering efforts of Arnold and Lazarus’ (Scherer et al. [2001], p. 28).
+
+26 Arnold also compared appraisals with ‘sense judgments’, and contrasted them with ‘intellectual
+judgments’: ‘When the elephant tests the ground with his foot, he makes a sense judgment. When
+the physicist tests a hypothesis by an experiment, he makes intellectual judgments. What we call
+appraisal or estimate is close to such a sense judgment’ (Arnold [1960], p. 175).
+
+27 In one of the earliest experiments on the nature of appraisal, Speisman et al. ([1964]) showed that
+subjects exposed to a ﬁlm depicting what looked like a painful ritual operation on the genitalia
+of the young members of an African tribe found the movie stressful to different degrees depend-
+ing on its commentary. A trauma commentary, which emphasized the pain of the subjects
+involved, was associated with more stress than a denial commentary, which suggested that no
+pain was involved, which in turn was associated with more stress than an intellectualization
+commentary, which encouraged subjects to take a detached attitude on the events portrayed.
+Lazarus took this experiment to show that between a stressor event and the experience of stress
+there must be an intervening process, which in this case was assumed to be that which the
+commentary allowed to be manipulated experimentally.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+752
+
+Andrea Scarantino
+
+expectancy, aiming to establish whether the ‘troubled person-environment
+relationship will change for better or worse’ (p. 57).
+
+Lazarus’ thesis is that each emotion E is caused by a speciﬁc conﬁguration of
+the six components of primary and secondary appraisals which combine to
+form the appraisal that the formal object of E is instantiated (by some material
+object O). Under the interpretation offered by Etiological Cognitivism,
+the formal object (or core relational theme) of E is ‘a terse synthesis of the
+separate appraisal components into a complex, meaning-centered whole’
+(Lazarus [2001], p. 64). Here are some examples of conﬁgurations of appraisal
+components corresponding to distinct emotions:
+
+Emotion 
+
+Sadness 
+
+Anger 
+
+Fear 
+
+Guilt 
+
+Shame 
+
+Pride 
+
+Primary and Secondary Appraisal Components 
+Goal relevance, goal incongruence, ego involvement of some kind, low 
+coping potential, no blame, unfavorable coping potential (open: future 
+expectancy) 
+Goal relevance, goal incongruence, involvement of self or social esteem, 
+blame (open: coping potential and future expectancy) 
+Goal relevance, goal incongruence (open: ego involvement, coping 
+potential, blame or credit, coping potential, future expectancy) 
+Goal relevance, goal incongruence, involvement of moral transgression, 
+blame to oneself (open: coping potential and future expectancy) 
+Goal relevance, goal incongruence, involvement of ego-ideal, blame to 
+oneself (open: coping potential and future expectancy) 
+Goal relevance, goal congruence, enhancement of self- or social esteem, 
+credit to self (open: coping potential and future expectancy) 
+
+Figure 2. Examples of the conﬁgurations of appraisal components underlying the
+causation of some common emotions.
+
+Consider sadness. According to Lazarus’ ([1991], [2001]) theory, my sadness
+about my grandmother’s death, due to cancer, is caused by the primary ap-
+praisals that her death is relevant to my well being (goal relevance), that it
+thwarts what I want (goal incongruence), that it involves the well-being of a
+person dear to me (ego involvement), and by the secondary appraisals that
+no one is to blame for her death (no blame), and that there is nothing I can do
+about it (low coping potential) (with various possible future expectancy
+appraisals concerning whether my situation with respect to this event will
+change for better or for worse in the future).28 There are several other theories
+
+28 The idea that appraisals are structured into component parts is echoed in the work of philo-
+sophical cognitivists. Solomon ([2004], p. 83) argues that an emotion ‘is a complex of judg-
+ments’, by which he means judgments roughly along the lines of primary and secondary
+appraisals. Nussbaum ([2001], pp. 27–8) points out that ‘[i]n order to have fear—as Aristotle
+already saw—I must believe that bad events are impending; that they are not trivially, but
+seriously bad; and that I am not entirely in control of warning them off. In order to have
+anger, I must have an even more complex set of beliefs: that some damage has occurred to
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+753
+
+concerning the structure of appraisal, the discussion of which lies outside the
+scope of this paper (see Scherer et al. [2001] for a recent collection of papers on
+appraisal).
+
+Now, is Etiological Cognitivism a good theory of emotional causation? This
+version of the cognitivist theory of emotions has been harshly criticized for
+characterizing appraisals as necessary for emotional causation.29 Zajonc
+([1980], [1984]) has inﬂuentially argued there are many instances of emotions
+not caused by what he labeled ‘cognitive appraisals’.30 Consider a rabbit con-
+fronted by a snake. ‘If the rabbit is to escape’, Zajonc remarked, ‘the action
+must be undertaken long before the completion of even a simple cognitive
+process—before, in fact, the rabbit has fully established and veriﬁed that a
+nearby movement might reveal a snake in all its coiled glory’ ([1980], p. 156,
+emphasis added). Zajonc’s critique presupposes that ‘cognitive appraisal’ is a
+sophisticated form of information processing involving laborious cognitive
+engagement and requiring language possession. We can call this form of
+emotional appraisal sophisticated.
+
+Zajonc’s point was that emotions are often caused so quickly that a sophis-
+ticated appraisal of the eliciting stimulus simply does not have the time to
+occur. Zajonc ([1980]) also pointed out that infants and animals have emo-
+tions but lack the resources to engage in sophisticated forms of information
+processing. With remarkable prescience, he also suggested that there may be
+neural pathways speciﬁcally dedicated to affect, a hypothesis that has received
+some degree of conﬁrmation in recent years (see Phan et al. [2002] for a
+meta-analysis of the available evidence). For all these reasons, Zajonc con-
+cluded that Etiological Cognitivism is a false theory of emotional causation:
+appraisals are not needed to cause emotions.
+
+Zajonc’s argument, however, involves a problematic assumption, namely
+that appraisals must necessarily be sophisticated. In point of historical fact,
+Zajonc’s understanding contrasts with the one proposed by Arnold, who
+conceived of appraisals as primitive (i.e., direct, immediate, nonreﬂective,
+nonintellectual, automatic, instinctive, intuitive, etc.). What I am suggesting,
+however, is not that we should follow Arnold in thinking of appraisals as
+
+me or to something or someone close to me; that the damage is not trivial but signiﬁcant; that is
+was done by someone; probably, that is was done willingly’. Notice the resemblance between
+these judgments and the species of primary and secondary appraisals proposed by Lazarus
+([1991]).
+
+29 The sufﬁciency of appraisal is more commonly accepted. See (Siemer et al. [2007]) for a discus-
+
+sion of the evidence on the necessity and sufﬁciency of appraisal as a cause of emotion.
+
+30 See (Lazarus [1982], [1984]) for a response to Zajonc ([1980], [1984]). Zajonc’s critique, mutatis
+mutandis, has been reformulated in recent years by other psychologists (e.g., Frijda and
+Zeelenberg [2001]).
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+754
+
+Andrea Scarantino
+
+primitive. Etiological Cognitivism would be a false theory of emotional caus-
+ation whether we think of appraisals as primitive, as suggested by Arnold
+([1960]), or as sophisticated, as suggested by Zajonc ([1980]). This is because
+it is neither the case that emotion-causing appraisals are always primitive nor
+the case that they are always sophisticated. In the case of a rabbit noticing a
+snake, the fear-producing appraisal is indeed primitive. In the case of Othello
+becoming jealous of Cassio, however, the jealousy-producing appraisal is
+sophisticated, and it involves laborious cognitive engagement with the infor-
+mation provided by Iago.
+
+A viable Etiological Cognitivism, I suggest, needs to conceive of ‘appraisal’
+as lying on a continuum between primitive and sophisticated forms of infor-
+mation processing. Understood in these terms, Etiological Cognitivism con-
+tains an important insight: stimuli cause emotions not per se, but contingently
+upon how they are interpreted. Call this the Perspectival Insight of Etiological
+Cognitivism.
+
+Etiological Cognitivism provides the best explanation for three related phe-
+nomena: (a) events of the same type can generate an emotion in some indi-
+viduals but not in others, (b) events of the same type can generate different
+emotions in different individuals, (c) events of the same type can generate
+different emotions in the same individual in different circumstances. The ex-
+planation for (a)–(c) is that what causes emotions are not events in themselves,
+but events under some perspectival interpretation. Flying on airplanes causes
+no emotion in some people, elation in others, fear in others, and different
+emotions at different times in the same individual (e.g., before and after a
+class in panic management). The best explanation for these facts is that the
+event of ﬂying on an airplane is appraised in different ways by different people
+and by the same person at different times.
+
+I have argued that Etiological Cognitivism can be preserved from falsity if
+we think of appraisal as lying on a continuum. A few more wrinkles, however,
+have to be considered. Even though emotions are commonly caused by ap-
+praisals, there are exceptions. There is some evidence that emotions can be
+chemically induced, brought about by brain manipulations, and generated by
+simple facial feedback (Izard [1993]). The evidence is not conclusive at present,
+but there is no reason for a principled exclusion of forms of emotional caus-
+ation other than appraisal.31 This problem can be easily solved. The scope of
+
+31 Emotions fulﬁl their functions when they are elicited in some circumstances rather than in
+others. The appraisal process has precisely the job of matching emotions and circumstances
+of elicitation. Mechanisms of elicitation such as chemical induction, direct brain stimulation or
+facial feedback, on the other hand, do not represent the outcome of an evaluation of circum-
+stances, so they are likely to constitute a residual case.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+755
+
+Etiological Cognitivism should be restricted. Instead of being a theory about
+all instances of emotional causation (‘for all E’), Etiological Cognitivism is
+best interpreted as a theory about standard instances of emotion causation
+(‘for most E’).
+
+The main problem faced by Etiological Cognitivism in this restricted form is
+what I call the Problem of Levels of Appraisal. In order to encompass all
+standard cases of emotional causation, appraisal needs to be understood as
+occurring at different levels of cognitive complexity. As a result, the class of
+appraisals becomes very heterogeneous. Notice that the problem is not simply
+that there are important difference between, say, fear appraisal and jealousy
+appraisal, but that there are important differences within the classes of fear
+appraisals and jealousy appraisals themselves.
+
+Consider for instance the appraisal of danger, identiﬁed by Etiological
+Cognitivism as the cause of fear. In the case of blindfright, the appraisal of
+danger is extremely quick (it occurs in less than 30 ms), mandatory, uncon-
+scious, insulated from higher forms of cognition, mediated by subcortical and
+evolutionarily old neural pathways, and most likely homologous to forms of
+appraisal of danger available to nonlinguistic and prelinguistic creatures.
+
+Compare blindfright with the kind of fear experienced by a pilot who no-
+tices his airplane is becoming lighter, checks on several cockpit instruments,
+consults with his co-pilot, calls the control tower, performs some mathemat-
+ical calculations, and eventually conﬁrms that the airplane will exhaust its fuel
+reservoir within ten minutes while still ﬂying over the ocean. In the case of the
+airplane pilot, the appraisal of danger is slower, nonmandatory, fully inte-
+grated with higher forms of cognition, verbally reportable, served by
+neo-cortical and evolutionarily younger neural pathways, and unavailable
+to nonlinguistic and prelinguistic creatures.
+
+Describing the cause of fear in both cases as the appraisal of danger glosses
+over the important differences between lower and higher levels of information
+processing in terms of speed and automaticity, neural pathways, evolutionary
+history, insulation from higher thought processes, and so on.32 Some prelim-
+inary work has been done on distinguishing between levels of appraisal (e.g.,
+Leventhal and Scherer [1987]; van Reekum and Scherer [1997]; Teasdale
+[1999]), but much remains to be understood concerning how many levels of
+emotional appraisals there are, what distinguishes them from one another,
+and how they interact.
+
+32 This problem would not be solved by knowing the structure of the appraisal process, namely the
+components into which it breaks. For instance, knowing that sadness appraisal breaks down
+into six kinds of primary and secondary appraisal does not tell us at what distinct levels of
+cognitive complexity these six appraisals can be performed, and how appraisals at different
+levels interact.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+756
+
+Andrea Scarantino
+
+The Problem of Levels of Appraisal is analogous to, but less crippling than,
+the Problem of Multiple Components faced by Costitutive Cognitivism. In
+Constitutive Cognitivism, the notion of judgment stands for a heterogeneous
+variety of component parts that are evaluative, physiological, phenomeno-
+logical, expressive, behavioral, and mental. The notion of appraisal, on the
+other hand, only stands for a heterogeneous variety of forms of evaluation.
+The degree of heterogeneity of ‘judgment’ (as understood by constitutive cog-
+nitivists) is several orders of magnitude higher than the degree of heterogeneity
+of ‘appraisal’ (as understood by etiological cognitivists). Besides including all
+dimensions of heterogeneity affecting the evaluative component of an emo-
+tion, it also includes all dimensions of heterogeneity affecting the physiologic-
+al, phenomenological, expressive, behavioral and mental components of
+emotions.
+
+I
+
+This is why I have recommended the sound rejection of Constitutive
+recommend the development of Etiological
+Cognitivism, whereas
+Cognitivism. What future Etiological Cognitivism needs to achieve is the elim-
+ination of its own Placeholder Blindspot, which emerges from wrongly assum-
+ing that the identiﬁcation of the cause of emotions with appraisals of formal
+objects—understood as placeholders for a variety of levels of information
+processing—can truly shed light on how emotions come about. Eliminating
+this blindspot demands accounting for what cognitive resources are mobilized
+at different levels of appraisal, and for how appraisals performed at different
+levels cooperate and compete in adaptive functioning.
+
+6.3 Representational Cognitivism
+
+There is a third important variety of cognitivism often confused with the
+previous two. Its basic tenet is the following:
+
+Representational Cognitivism: for all E, emotion E represents the formal
+object of E (as instantiated by some material object O)
+
+Representational Cognitivism is the thesis that emotions have representa-
+tional content. Consider fear, sadness and shame one more time. According to
+Representational Cognitivism, fear represents danger (as instantiated by a
+bear running towards you), sadness represents loss (as instantiated by your
+grandmother’s death), and shame represents that one has failed to live up to
+an ego ideal (as instantiated by being caught by your wife in bed with another
+woman). Whereas Constitutive Cognitivism and Etiological Cognitivism iden-
+tify the essence of emotions and the cause of emotions with, respectively, the
+judgment and the appraisal that the formal object of the emotion is instan-
+tiated, Representational Cognitivism states that emotions, whatever they are
+and however they are caused, are intentional states of a particular sort.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+757
+
+The focus here is neither on the identity nor on the causal history of emo-
+tions, but on their intentionality. In this article, I understand intentionality as
+follows:
+
+Every intentional state consists of a representative content in a certain
+psychological mode [ . . . ] to say that [X] is a representation is simply to
+say that it has a propositional content and a psychological mode, that its
+propositional content determines a set of conditions of satisfaction under
+certain aspects, that its psychological mode determines a direction of ﬁt
+of its propositional content. (Searle [1983], p. 11)
+
+These distinctions can be exempliﬁed with respect to propositional atti-
+tudes, which are paradigmatic intentional states. For instance, the propos-
+itional attitude of believing that p is satisﬁed when p is the case, because its
+psychological mode determines a mind-to-world direction of ﬁt for p. This is to
+say that the belief is satisﬁed when what the mind believes, namely p, ﬁts the
+world. The propositional attitude of desiring that p, on the other hand, is
+satisﬁed when p is brought about, because its psychological mode determines
+a world-to-mind direction of ﬁt for p. This is to say that the desire is satisﬁed
+when the world ﬁts what the mind desires, namely p.
+
+On this view, danger, loss and failure to live up to an ego ideal describe the
+conditions of satisfaction of, respectively, fear, sadness and shame in the par-
+ticular psychological mode characteristic of each. What Representational
+Cognitivism is committed to, on this understanding of intentionality, is that
+emotions have conditions of satisfaction under a particular psychological
+mode.
+
+Representational Cognitivism originated in philosophy, but it is at this
+point a widely shared position in emotion theory (e.g., Damasio [1999]).33
+In one of the earliest cognitivist papers in philosophy, Broad ([1954]) made
+the connection between cognition and intentionality explicit. He wrote: ‘Every
+emotion is an [ . . .] intentional experience, i.e. it is always a cognition, either
+veridical or wholly or partly delusive’ (Broad [1954], p. 286). According to
+Broad ([1954]), cognitions differ from pure feelings because, whereas the key
+question to ask about the former is ‘How does it feel?’, the key question to ask
+about the latter is ‘What is it about?’. Nussbaum pointed out that emotions
+are ‘not about their objects merely in the sense of being pointed at them and let
+go, the way an arrow is released towards its target’, but in the sense that ‘[t]heir
+aboutness is more internal, and embodies a way of seeing’ (Nussbaum [2001],
+p. 27).
+
+33 Ratcliff ([2005]) has recently argued that, contrary to common belief, even William James con-
+sidered the intentionality of emotions essential to understanding them. For two sophisticated
+attempts to show that the intentionality of emotions can be reconciled with a feeling-centered
+approach, see (Prinz [2004]; Goldie [2000]).
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+758
+
+Andrea Scarantino
+
+They are internal because the connection between an emotion and its formal
+object is a necessary rather than a contingent connection. Emotions are con-
+tingently directed towards their targets (or material objects) the way arrows
+are, but they necessarily embody a way of seeing because they must represent a
+certain formal object in order to be the types of emotion they are (Kenny
+[1963]). Solomon makes the conceptual nature of the restriction at hand ex-
+plicit in the following passage: ‘What emotions are “about”, as in beliefs, can
+be identiﬁed only under certain descriptions, and those descriptions are deter-
+mined by the emotion itself [ . . .] the connection between my being angry and
+what I am angry about is a conceptual and not causal connection’ (Solomon
+[2003], p. 5).
+
+In the same way in which a belief would not be a belief if it did not consti-
+tutively aim at truth, and a desire would not be a desire if it did not constitu-
+tively aim at being realized, fear would not be fear if it did not constitutively
+aim at dangers, sadness would not be sadness if it did not constitutively aim at
+losses, shame would not be shame if it did not constitutively aim at failures to
+live up to an ego ideal and so on.34 Obviously, episodes of fear can be elicited
+in the absence of danger, episodes of sadness in the absence of loss and epi-
+sodes of shame in the absence of failure to live up to an ego ideal. The point is
+that when they do, they do not fulﬁl their conditions of satisfaction, just like
+beliefs do not fulﬁl their conditions of satisfaction when they are false, and
+desires do not fulﬁl their conditions of satisfaction when they are unrealized.
+Representational Cognitivism contains a fundamental insight. I call it the
+Representational Insight: emotions have aboutness or the ability to represent.
+This insight has been largely neglected in the history of emotion theory. An
+explicit denial of the intentionality of emotions can be found in Hume, the
+most inﬂuential feeling theorist of the eighteenth century. Hume ([1739/1992],
+p. 415), who referred to the emotions as passions, argued that ‘a passion is an
+original existence, or, if you will, modiﬁcation of existence, and contains not
+any representative quality, which renders it a copy of any other existence or
+modiﬁcation’. Hume was wrong on two accounts. Emotions have representa-
+tive qualities with respect to both their material objects and their formal ob-
+jects. The anger of the scholar denied tenure represents being denied tenure,
+and it represents an offence against me or mine.
+
+In recent writings, Solomon ([2004]) has suggested that the central job
+played by the concept of ‘judgment’ in cognitivism is precisely to highlight
+the aboutness of emotions: ‘Emotions are about the world. With my concept of
+judgment I had tried to make clear that this was not a marginal fact about
+
+34 I will qualify the sense in which emotions constitutively aim at their formal objects shortly.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+759
+
+(some) emotions but the essence of all of them’ (Solomon [2004], p. 77). The
+problem with this line of reasoning is that the intentionality of emotions is
+assimilated with the intentionality of judgments. If we understand judgments
+as
+suggested by cognitivists, namely through the Elastic Strategy,
+Representational Cognitivism faces its own version of the Placeholder
+Blindspot. In other words, if we say that emotions represent the way judg-
+ments represent, but then turn the way in which judgments represent into a
+placeholder for a heterogeneous variety of ways of representing, we have not
+really shed light on the intentionality of emotions.
+
+But if we understand judgments as anti-cognitivists propose, i.e., as pre-
+supposing language mastery, conscious assent, the possession of concepts, and
+the ability to engage in practical inferences, Representational Cognitivism
+collapses into what I call Conceptualist Representational Cognitivism. This
+understanding of emotional intentionality is also to be rejected. The ﬁrst
+problem with Conceptualist Representational Cognitivism is that it neglects
+to account for the fact that the content of (some) emotions is nonconceptual.
+For simplicity of reference, let us refer to the nonconceptual content of emo-
+tions as affective content.35 The difference in kind between affective content
+and the content of judgments can be defended in a variety of ways. I sketch
+two reasons to conclude that affective content differs in kind from the content
+of judgments: the phenomenological richness of affective content, and its lack
+of inferential articulation.36
+
+Consider a phenomenologically salient emotion episode (not all emotion
+episodes are), for instance the one I mentioned before of the scholar denied
+tenure. Imagine now moving from this complex anger experience to a judg-
+ment about what is the case comprising a long conjunction of propositions.
+If the anger content were of the same kind as the content of a judgment, the
+judgment would be able to capture the content of anger in its entirety, at least
+in principle. But the anger content appears to be more ﬁne-grained than the
+judgment content in the following sense: it is the sort of content such that there
+is always more of it than can be captured by any judgment.
+
+The scholar is engaged in an experience involving many features that con-
+cepts can hardly begin to describe. The experience has a multidimensional
+richness that includes the expression of embarrassment mixed with pity of
+the colleague, the familiar contours of the ofﬁce soon to be abandoned, the
+
+35 I am not committed to the claim that every instance of every emotion has nonconceptual con-
+tent. Nor am I committed to the claim that having non-conceptual content precludes having
+other types of content. I am committed to the following claim: there are emotions with
+non-conceptual content, namely a content differing in kind from judgment content. I add
+that most instances of emotion have non-conceptual content, but I will not argue for this
+point in this article.
+
+36 These two reasons have often been invoked to explain why perception has nonconceptual con-
+
+tent (see Bermu´ dez [2003] for a map of the nonconceptual content literature).
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+760
+
+Andrea Scarantino
+
+ﬂeeting image of the department chair saying not to worry about the outcome
+of the tenure review, the recent memory of a sleepless night spent dreading the
+possibility of being denied tenure, and so on. These elements are all part of the
+way the scholar’s anger feels, but they escape capture into a judgment that
+something is the case. Too many details appear to go into the experience for it
+to be fully judge-able and fully say-able. The scholar may ﬁnd herself at a loss
+for concepts suitable to describe the experiential details of what she is going
+through.37 More importantly, there does not seem to be any speciﬁc judgment
+that corresponds to the experience in full. The transition from what is felt to
+what is judged always appears to leave a remainder. This may explain why
+emoters often give up on trying to put their emotional experiences into words.
+They commonly say: ‘no words can really capture how I feel’.
+
+Besides being phenomenologically richer than judgment contents, affective
+contents lack the inferential articulation of judgment contents. Consider a
+phobic patient, who represents a snake held in a cage as dangerous by fearing
+it. Imagine now moving from fearing the snake to judging that the snake is
+dangerous. Judging that the snake is dangerous is inferentially articulated in
+the sense that it introduces the judged content into a wide network of infer-
+ential relations of incompatibility and logical consequence. For instance, jud-
+ging that ‘this snake is dangerous’ is not compatible with judging that ‘this
+snake is not dangerous’, it follows from judging that ‘either this snake is
+dangerous or this turtle is dangerous, and this turtle is not dangerous’, and
+it implies judging that ‘there is at least one dangerous reptile’.
+
+If the fear content were of the same kind as the content of the judgment, the
+two contents would have the same inferential articulation. But they do not.
+The phobic patient by fearing the snake does not introduce the feared content
+into the same wide network of inferential relations of incompatibility and
+logical consequence that characterize judged contents. For instance, fearing
+the snake is compatible with judging that ‘this snake is not dangerous’,38 it
+does not follow from judging that ‘either this snake is dangerous or this turtle
+is dangerous, and this turtle is not dangerous’, and it does not imply judging
+that ‘there is at least one dangerous reptile’.
+
+The intentionality of emotions does not differ from the intentionality of
+judgments merely on account of the nonconceptual nature of affective con-
+tent. It also differs from the intentionality of judgments on account of the
+speciﬁc psychological mode of emotions. The second problem of Conceptualist
+
+37 See (McDowell [1994]; Brewer [2005]) for a defence of the idea that the problem can solved by
+demonstrative concepts, and (Heck [2000]; Kelly [2001]) for some reasons why this solution
+should be rejected.
+
+38 The fact that emotions are often in contradiction with judgments has historically been one of the
+main grounds of anti-cognitivist dissatisfaction with the cognitivist program, and it is at the
+foundation of the dichotomy between reason and passion.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+761
+
+Representational Cognitivism is that it neglects to account for the fact that
+entertaining emotion content differs from entertaining judgment content in
+terms of direction of ﬁt. Consider once again the phobic patient, who repre-
+sents a snake held in a cage as dangerous by fearing it. Imagine now moving
+from fearing the snake to judging that the snake is dangerous. Judging that the
+snake is dangerous has a mind-to-world direction of ﬁt, in the sense that it is
+satisﬁed when what the mind judges ﬁts the world, i.e., when the snake is
+dangerous.
+
+This judgment will motivate only when joined with a mental state with a
+world-to-mind direction of ﬁt, and it will motivate in different ways depending
+on the content of the world-to-mind mental state. For instance, the judgment
+that the snake is dangerous will motivate to avoid the snake when joined with
+the desire to avoid dangerous snakes. On the other hand, the same judgment
+will motivate to approach the snake when combined with the desire to ap-
+proach dangerous things.
+
+If fearing that the snake is dangerous and judging that the snake is danger-
+ous shared their psychological mode, they would determine the same direction
+of ﬁt for their contents. But they do not. By fearing the snake the phobic
+patient neither engages in a mental state that will motivate only when
+joined with a mental state with a world-to-mind direction of ﬁt, nor engages
+in a mental state that will motivate in different ways depending on the content
+of the world-to-mind mental state with which it is conjoined. On the contrary,
+representing the snake as dangerous by fearing it is sufﬁcient for being moti-
+vated in a speciﬁc way, namely to avoid it.39
+
+The psychological mode of emotions merges the directions of ﬁt of cognitive
+propositional attitudes, which represent contents as obtaining, and conative
+propositional attitudes, which represent contents as to be made to obtain.
+This Janus-faced psychological mode cannot be captured by a conjunction
+of the psychological modes of cognitive attitudes and conative attitudes.40
+A conjunction of a cognitive attitude and a conative attitude presupposes
+that each conjunct has an existence separate from the other. In contrast, in
+emotion the representation of what obtains is inseparable from the represen-
+tation of what is to be made to obtain. From fearing a snake it does not even
+follow that one judges the snake to be dangerous, a striking example of the
+fact that the cognitive component of fear is not freely employable in practical
+inferences. Similarly, being motivated to get away from a snake while fearing
+it is inseparable from representing it as dangerous and not freely employable
+in practical inferences, as the desire to get away from a snake would be.
+
+39 This is not to say that this motivation will be expressed, because fear can be inhibited.
+40 As we saw earlier, this is what Solomon ([2003], p. 106) suggested when he wrote that ‘one might
+analyze the various emotions as judgmental structures enclosing a core desire which is both their
+motivation and their “conatus” ’.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+762
+
+Andrea Scarantino
+
+To capture the psychological mode of emotions, I introduce the notion of
+an affective psychological mode, understood as a mode that determines what I
+call a mind-to-world-to-mind direction of ﬁt for emotion content.41 A mental
+state S has a mind-to-world-to-mind direction of ﬁt when it is satisﬁed just in
+case what is made to obtain ﬁts what obtains. This in turn requires that what S
+represents as obtaining actually obtains (the mind-to-world part), and that
+what S represents as to be made to obtain is actually made to obtain (the
+world-to-mind part). The central intuition is that a state S with a mind-to-
+world-to-mind direction of ﬁt aims to vary as the world varies so as to direct
+behaviors appropriate to the presence of the properties it tracks.
+
+On this view, emotions do not merely represent formal objects as obtaining,
+they also represent what is to be made to obtain when formal objects obtain.
+This gives us a new understanding of what it is for an emotion to be satisﬁed.
+An emotion is satisﬁed when what it successfully represents as to be made to
+obtain ﬁts what it successfully represents as obtaining. In such case, the emo-
+tion fulﬁlls both it cognitive job (by occurring when the appropriate state of
+affairs is instantiated), and its conative job (by guiding behavior appropriately
+with respect to the state of affairs represented as being instantiated).
+
+For example, we can think of fear as being satisﬁed when it motivates the
+emoter to avoid dangers, of anger as being satisﬁed when it motivates the
+emoter to get back at slights, of shame as being satisﬁed when it motivates
+the emoter to repair failures to live up to an ego ideal, of disgust as being
+satisﬁed when it motivates the emoter to expel noxious substances, and so on.
+Conversely, an emotion E can be unsatisﬁed because it fails to occur when the
+appropriate state of affairs is instantiated, or because it fails to guide behavior
+appropriately with respect to the state of affairs represented as being instan-
+tiated. An episode of fear occurring in the absence of danger instantiates a
+cognitive failure, whereas an episode of fear not conducive to the avoidance of
+danger (for instance because the emoter faints) instantiates a conative failure.
+In both case, we can speak of fear as being unsatisﬁed.
+
+Conceptualist Representational Cognitivism, I conclude, is a problematic
+theory of the intentionality of emotions. It faces the Affective Content
+Blindspot, which consists in the erroneous identiﬁcation of the representation-
+al content of emotions with the representational content of judgments (con-
+servatively understood), and the Affective Mode Blindspot, which consists in
+the erroneous identiﬁcation of the psychological mode of emotions with the
+psychological mode of judgments (conservatively understood). The process of
+conceptualization of emotions into judgments, I have argued, misrepresents
+turns
+the intentionality of emotions by transforming it
+
+in kind.
+
+It
+
+41 This account is inspired by Millikan’s theory of pushmi-pullyu representations ([1996], [2000],
+
+[2004]).
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+763
+
+nonconceptual into conceptual content and affective psychological mode into
+cognitive psychological mode.
+
+To circumvent the Affective Content and Affective Mode Blindspots and
+develop the Representational Insight that emotions have representational
+content, Representational Cognitivism will have to develop a positive
+theory of affective content and an understanding of the norms governing
+states with a mind-to-world-to-mind direction of ﬁt.
+
+7 Conclusion
+
+The three varieties of cognitivism I have distinguished in this article have been
+confused with one another ever since cognitivism emerged in the 1970s and
+1980s as the dominant force in emotion theory. For instance, Solomon tells us
+at the same time that ‘[m]y anger is my judgment that John has wronged me’
+(Solomon [2003], p. 8) (Constitutive Cognitivism), that ‘[a]ll emotions presup-
+pose or have as their preconditions, certain sorts of cognitions [such as] rec-
+ognition of an offense in anger’
+(Etiological
+Cognitivism) and that ‘the connection between my being angry and what I
+am angry about is conceptual’ (Solomon [2003], p. 5) (Representational
+Cognitivism). These are three orthogonal theses. Whether or not anger is
+the judgment that an offence has been committed is a separate issue from
+whether or not anger is caused by the appraisal that an offence has been
+committed, which is a separate issue from whether anger is satisﬁed when
+an offence against me or mine has been committed.
+
+(Solomon [1993], p. 11)
+
+Constitutive Cognitivism, which aims to tell us what emotions are essen-
+tially, is probably the most popular variety of cognitivism. My argument
+against this variety of cognitivism, differently from previous arguments,
+cannot be evaded through what I called the Elastic Strategy. If ‘judgment’ is
+understood conservatively, as anti-cognitivists recommend, Constitutive
+Cognitivism is massively falsiﬁed. I have provided a further counterexample
+to Constitutive Cognitivism in this article, namely the emotion of blindfright.
+If judgments are understood through the lenses of the Elastic Strategy, as the
+cognitivists recommend in response to counterexamples such as blindfright,
+emotions are assimilated to a mongrel of heterogeneous components, but no
+fruitful theory of what emotions are is actually provided.
+
+Etiological Cognitivism, on the other hand, contains the important insight
+that stimuli cause emotions depending on how they are appraised. To develop
+Etiological Cognitivism, what is needed is an analysis of the different levels of
+appraisals, and of their basic causal structures. Representational Cognitivism,
+ﬁnally, contains what I consider the most signiﬁcant insight of cognitivism,
+which is that emotions have intentionality. A central task for future emotion
+theory will be to understand the nature and origin of emotional
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+764
+
+Andrea Scarantino
+
+representations, which, I have argued, differ in kind from conceptual repre-
+sentations on account of both their content and psychological mode.
+
+It is my hope that the long debate between cognitivists and anti-cognitivists,
+dogged by absence of clarity on the theses at stake and by terminological
+disputes on what judgments are, will be eclipsed in favor of debates between
+constitutive cognitivists and anti-cognitivists, etiological cognitivists and
+anti-cognitivists, and representational cognitivists and anti-cognitivists. My
+guess is that, once the options are clearly on the table, most anti-cognitivists
+will
+embrace both
+Etiological Cognitivism and Representational Cognitivism. At that point,
+cognitivism will have exhausted its historical function. The debate between
+different theoretical factions will take place within shared cognitivist bound-
+aries, and all interesting distinctions will be drawn between varieties of etio-
+logical cognitivism and varieties of representational cognitivism.
+
+conclusively reject Constitutive Cognitivism, but
+
+Department of Philosophy
+Neuroscience Institute
+Georgia State University
+P.O. Box 4089
+Atlanta, GA 30302-4089, USA
+ascarantino@gsu.edu
+
+Acknowledgements
+
+I would like to thank Eddy Nahmias, Ben Sheredos and several anonymous
+referees for helpful comments on previous drafts of this paper.
+
+References
+
+Adolphs, R., Tranel, D. and Buchanan, T. W. [2005]: ‘Amygdala Damage Impairs
+Emotional Memory for Gist but not Details of Complex Stimuli’, Nature
+Neuroscience, 8, pp. 512–8.
+
+Aggleton, J. (ed.) [1992]: The Amygdala: Neurobiological Aspects of Emotion, Memory,
+
+and Mental Dysfunction, New York: Wiley.
+
+Arnold, M. B. [1960]: Emotion & Personality, New York: Columbia University Press.
+Barrett, L. F. [2006]: ‘Emotions as Natural Kinds?’, Perspectives on Psychological
+
+Science, 1, pp. 28–58.
+
+Barrett, L. F. and Wager, T. D. [2006]: ‘The Structure of Emotion: Evidence from
+Neuroimaging Studies’, Current Directions in Psychological Science, 15, pp. 79–83.
+Barrett, L. F., Bliss-Moreau, E., Duncan, S. L., Rauch, S. L. and Wright, C. I. [2007]:
+‘The Amygdala and the Experience of Affect’, Social Cognitive, and Affective
+
+Neuroscience, 2, pp. 73–83.
+
+Ben-Ze’ev, A. [2000]: The Subtlety of Emotions, Cambridge, MA: MIT Press.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+765
+
+Bermu´ dez,
+
+J.
+
+[2003]:
+
+in E. Zalta (ed.),
+Stanford Encyclopedia of Philosophy, <plato.stanford.edu/entries/content-
+nonconceptual/>.
+
+‘Nonconceptual Mental Content’,
+
+Brewer, B. [2005]: ‘Do Sense Experiential States have Conceptual Content?’, in E. Sosa
+
+and M. Steup (eds), Contemporary Debates in Epistemology, Oxford: Blackwell,
+
+pp. 217–30.
+
+Broad, C. D. [1954]: ‘Emotion and Sentiment’, The Journal of Aesthetics and Art
+
+Criticism, 13, pp. 203–14.
+
+Cooper, J. M. [1999]: Reason and Emotion, Princeton: Princeton University Press.
+D’Arms, J. and Jacobson, D. [2003]: ‘The Signiﬁcance of Recalcitrant Emotions (Or
+
+Anti-Quasi Judgmentalism)’, in A. Hatzimoysis (ed.), Philosophy and the Emotions,
+
+Cambridge: Cambridge University Press, pp. 163–80.
+
+Damasio, A. [1994]: Descartes’ Error: Emotion, Reason, and the Human Brain, New
+
+York: Grossett/Putnam.
+
+Damasio, A. [1999]: The Feeling of what Happens: Body and Emotion in the Making of
+
+Consciousness, New York: Harcourt Brace and Co.
+
+Davis, M. [2000]: ‘The Role of the Amygdala in Conditioned and Unconditioned Fear
+
+and Anxiety’, in J. P. Aggleton (ed.), The Amygdala, a Functional Analysis, Oxford:
+
+Oxford University Press, pp. 213–87.
+
+De Gelder, B., Vroomen, J., Pourtois, G. and Weiskrantz, L. [1999]: ‘Non-conscious
+
+Recognition of Affect
+
+in the Absence of Striate Cortex’, Neuroreport, 10,
+
+pp. 3759–63.
+
+Deigh, J. [1994]: ‘Cognitivism in the Theory of Emotions’, Ethics, 104, pp. 824–54.
+Delancey, C.
+
+[2001]: Passionate Engines: What Emotions Reveal about Mind and
+
+Artiﬁcial Intelligence, New York: Oxford University Press.
+
+de Sousa, R. [1987]: The Rationality of Emotion, Cambridge, MA: MIT Press.
+Ekman, P. [1999]: ‘Basic Emotions’, in T. Dalgleish and M. J. Power (eds), Handbook of
+
+Cognition and Emotion, Chichester: John Wiley and Sons, pp. 45–59.
+
+Esteves, F., Parra, C., Dimberg, U. and O¨ hman, A. [1994]: ‘Nonconscious Associative
+Learning: Pavlovian Conditioning of Skin Conductance Responses to Masked
+
+Fear-relevant Facial Stimuli’, Psychophysiology, 31, pp. 375–85.
+
+Evans, G. [1982]: Varieties of Reference, Oxford: Oxford University Press.
+Fanselow, M. S. [1994]: ‘Neural Organization of the Defensive Behavior System
+
+Responsible for Fear’, Psychonomic Bulletin and Review, 1, pp. 429–38.
+
+Fehr, B. and Russell, J. A.
+
+[1984]:
+
+‘Concept of Emotion Viewed from a
+
+Prototype Perspective’, Journal of Experimental Psychology: General, 113,
+
+pp. 464–86.
+
+Frijda, N. H. and Zeelenberg, M.
+
+‘Appraisal: What
+
+is the Dependent?’,
+
+in
+
+(Scherer et al.
+
+[2001], pp. 141–55).
+
+Goldie, P.
+
+[2000]: The Emotions: A Philosophical Exploration, Oxford: Oxford
+
+University Press.
+
+Greenspan, P. [1988]: Emotions and Reasons: an Inquiry into Emotional Justiﬁcation,
+
+New York: Routledge, Chapman and Hall.
+
+Grifﬁths, P. E. [1997]: What Emotions Really Are: The Problem of Psychological
+
+Categories, Chicago: University of Chicago Press.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+766
+
+Andrea Scarantino
+
+Hamm, A. O., Weike, A. I., Schupp, H. T., Treig, T., Dressel, A. and Kessler, C. [2003]:
+
+‘Affective Blindsight: Intact Fear Conditioning to a Visual Cue in a Cortically Blind
+
+Patient’, Brain, 126, pp. 267–75.
+
+Hatzimoysis, A. [2007]: ‘The Case Against Unconscious Emotions’, Analysis, 67,
+
+pp. 292–9.
+Heck, R. G.
+
+[2000]:
+
+‘Non-Conceptual Content and the “Space of Reasons” ’,
+
+Philosophical Review, 109, pp. 483–523.
+
+Hume, D. [1739/1992]: A Treatise of Human Nature, Buffalo: Prometheus Books.
+Izard, C. E. [1993]: ‘Four Systems for Emotion Activation: Cognitive and Noncognitive
+
+Processes’, Psychological Review, 100, pp. 68–90.
+
+James, W. [1884]: ‘What is an Emotion?’, Mind, 9, pp. 188–205.
+James, W. [1890/1950]: The Principles of Psychology, New York: Dover Publications.
+Kelly, S. D. [2001]: ‘Demonstrative Concepts and Experience’, Philosophical Review,
+
+110, pp. 397–420.
+
+Kenny, A. [1963]: Action, Emotion and Will, London: Routledge and Kegan Paul.
+Lane, R. D., Ahern, G. L., Schwartz, G. E. and Kaszniak, A. W. [1997]: ‘Is Alexithymia
+
+the Emotional Equivalent of Blindsight?’, Biological Psychiatry, 42, pp. 834–44.
+
+Lang, P. J. [1993]: ‘The Three-System Approach to Emotion’, in N. Birbaumer and
+
+A. Ohman (eds), The Structure of Emotion, Seattle: Hogrefe and Huber Publishers,
+
+pp. 18–30.
+
+Lazarus, R. S. [1982]: ‘Thoughts on the Relations Between Emotion and Cognition’,
+
+American Psychologist, 37, pp. 1019–24.
+
+Lazarus, R. S. [1984]: ‘On the Primacy of Cognition’, American Psychologist, 39,
+
+pp. 124–9.
+
+Lazarus, R. S. [1991]: Emotion and Adaptation, New York: Oxford University Press.
+Lazarus, R. S. ‘Relational Meaning and Discrete Emotions’, in (Scherer et al. [2001],
+
+pp. 37–67).
+
+LeDoux, J. E. [1996]: The Emotional Brain, New York: Simon and Schuster.
+Leventhal, H. and Scherer, K. [1987]: ‘The Relationship of Emotion to Cognition: A
+
+Functional Approach to a Semantic Controversy’, Cognition and Emotion, 1,
+
+pp. 3–28.
+
+Marcel, A. J. [1983]: ‘Conscious and Unconscious Perception: An Approach to the
+
+Relations Between Phenomenal Experience and Perceptual Processes’, Cognitive
+
+Psychology, 15, pp. 238–300.
+
+Marks, J. [1982]: ‘A Theory of Emotion’, Philosophical Studies, 42, pp. 227–42.
+McDowell, J. [1994]: Mind and World, Cambridge, MA: Harvard University Press.
+Millikan, R. G.
+
+‘Pushmi-Pullyu Representations’,
+
+in J. Tomberlin (ed.),
+
+[1996]:
+
+Philosophical Perspectives, Volume 9, Atascadero, CA: Ridgeview, pp. 185–200.
+
+Millikan, R. G. [2000]: On Clear and Confused Ideas: an Essay about Substance
+
+Concepts, Cambridge: Cambridge University Press.
+
+Millikan, R. G. [2004]: Varieties of Meaning: the 2002 Jean Nicod Lectures, Cambridge,
+
+MA: MIT Press.
+
+Morris, J. S., Ohman, A. and Dolan, R. J. [1999]: ‘A Subcortical Pathway to the Right
+
+Amygdala Mediating “Unseen” Fear’, Proceedings of National Academy of Science,
+
+96, pp. 1680–5.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+Cognitivist Theory of Emotions
+
+767
+
+Morris, J. S., De Gelder, B., Weiskrantz, L. and Dolan, R. J. [2001]: ‘Differential
+
+Extrageniculostriate and Amygdala Responses to Presentation of Emotional
+
+Faces in a Cortically Blind Field’, Brain, 124, pp. 1241–52.
+
+Nussbaum, M. [2001]: Upheavals of Thought: The Intelligence of Emotions, Cambridge:
+
+Cambridge University Press.
+
+O¨ hman, A. and Soares, J. J. F.
+
+[1993]:
+
+‘On the Automaticity of Phobic Fear:
+
+Conditioned Skin Conductance Responses to Masked Phobic Stimuli’, Journal of
+
+Abnormal Psychology, 102, pp. 121–32.
+
+O¨ hman, A. and Soares, J. J. F.
+
+[1998]:
+
+‘Emotional Conditioning to Masked
+
+Stimuli: Expectancies
+
+for Aversive Outcomes Following Nonrecognized
+
+Fear-Relevant Stimuli’, Journal of Experimental Psychology: General, 127,
+
+pp. 69–82.
+
+O¨ hman, A. and Wiens, S. [2003]: ‘On the Automaticity of Autonomic Responses in
+Emotion: An Evolutionary Perspective’, in R. J. Davidson, K. R. Scherer and
+
+H. Hill Goldsmith (eds), Handbook of Affective Sciences, Oxford: Oxford
+
+University Press, pp. 256–75.
+
+Ortony, A., Clore, G. L. and Collins, A. [1988]: The Cognitive Structure of Emotions,
+
+New York: Cambridge University Press.
+
+Phan, K. L., Wager, T. D., Taylor, S. F. and Liberzon, I.
+
+[2002]:
+
+‘Functional
+
+Neuroanatomy of Emotion: A Meta-analysis of Emotion Activation Studies in
+
+PET and fMRI’, NeuroImage, 16, pp. 331–48.
+
+Prinz, J. [2004]: Gut Reactions: A Perceptual Theory of Emotion, Oxford: Oxford
+
+University Press.
+
+Ratcliff, M. [2005]: ‘William James on Emotions and Intentionality’, International
+
+Journal of Philosophical Studies, 13, pp. 179–202.
+
+Roberts, R. C. [2003]: Emotions: an Essay in Aid of Moral Psychology, Cambridge:
+
+Cambridge University Press.
+
+Robinson, J.
+
+[2004]:
+
+‘Emotion: Biological Fact or Social Construction?’,
+
+in R.
+
+C. Solomon (ed.), Thinking About Feeling: Contemporary Philosophers on
+
+Emotions, Oxford: Oxford University Press, pp. 28–43.
+
+Ryle, G. [1949/1990]: The Concept of Mind, London: Penguin Books.
+Salmela, M. [2006]: ‘True Emotions’, The Philosophical Quarterly, 56, pp. 382–405.
+Schachter, S. and Singer, J. E. [1962]: ‘Cognitive, Social and Physiological Determinant
+
+of Emotional State’, Psychological Review, 69, pp. 379–99.
+
+Scherer, K. R., Schorr, A. and Johnstone, T. [2001]: Appraisal Processes in Emotion:
+
+Theory, Methods, Research, New York: Oxford University Press.
+
+Searle, J. R. [1983]: Intentionality, Cambridge: Cambridge University Press.
+Skinner, B. F. [1953]: Science and Human Behavior, New York: The Free Press.
+Siemer, M., Gross, J. and Mauss, I. [2007]: ‘Same Situation—Different Emotions: How
+
+Appraisals Shape Our Emotions’, Emotion, 7, pp. 592–600.
+Solomon, R. C. [1976]: The Passions, New York: Doubleday.
+Solomon, R. C. [1993]: ‘The Philosophy of Emotions’, in M. Lewis and J. M. Haviland-
+
+Jones (eds), Handbook of Emotions, 2nd edition, New York: Guilford Press,
+
+pp. 173–91.
+
+Solomon, R. C. [2003]: Not Passion’s Slave, Oxford: Oxford University Press.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+768
+
+Andrea Scarantino
+
+Solomon, R. C. [2004]: ‘Emotions, Thoughts, and Feelings: Emotions as Engagements’,
+
+in R. C. Solomon (ed.), Thinking About Feeling: Contemporary Philosophers on
+
+Emotions, Oxford: Oxford University Press, pp. 76–88.
+
+Sorabji, R. [2000]: Emotion and Peace of Mind, Oxford: Oxford University Press.
+Speisman, J. C., Lazarus, R. S., Mordkoff, A. and Davison, L. [1964]: ‘Experimental
+
+Reduction of Stress Based on Ego-defense Theory’, Journal of Abnormal and Social
+
+Psychology, 68, pp. 367–80.
+
+Starkey, C. [2007]: ‘Manipulating Emotion: the Best Evidence for Non-cognitivism in
+
+the Light of Proper Function’, Analysis, 67, pp. 230–7.
+
+Stoerig, P. and Cowey, A. [1997]: ‘Blindsight in Man and Monkey’, Brain, 120,
+
+pp. 535–59.
+
+Teasdale, J. D. [1999]: ‘Multi-level Theories of Cognition-Emotion Relations’, in
+
+T. Dalgleish and M. J. Power (eds), Handbook of Cognition and Emotion,
+
+Chichester: John Wiley and Sons, pp. 665–81.
+
+van Reekum, C. and Scherer, K. R. [1997]: ‘Levels of Processing in Emotion-antecedent
+
+Appraisal’, in G. Matthews (ed.), Cognitive Science Perspectives on Personality and
+
+Emotion, Amsterdam: Elsevier, pp. 259–300.
+
+Watson, J. B. [1913]: ‘Psychology as the Behaviorist Views it’, Psychological Review, 20,
+
+pp. 158–77.
+
+Watson, J. B. [1925]: Behaviorism, New York: Harpers.
+Weiskrantz, L. [1986]: Blindsight: A Case Study and Implications, Oxford: Oxford
+
+University Press.
+
+Whalen, P. J., Rauch, S. L., Etcoff, N. L., McInerney, S. C., Lee, M. B. and Jenike,
+
+M. A. [1998]: ‘Masked Presentations of Emotional Facial Expressions Modulate
+
+Amygdala Activity Without Explicit Knowledge’, Journal of Neuroscience, 18,
+
+pp. 411–18.
+
+Whalen, P. J. and Phelps, E. A. (eds) [2009]: The Human Amygdala, New York:
+
+Guilford.
+
+Zajonc, R. B. [1980]: ‘Feeling & Thinking: Preferences Need no Inference’, American
+
+Psychologist, 35, pp. 151–75.
+
+Zajonc, R. B. [1984]: ‘On the Primacy of Affect’, American Psychologist, 39, pp. 117–23.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+ 
+f
+r
+o
+m
+b
+p
+s
+.
+
+ 
+
+j
+
+o
+x
+f
+
+j
+
+o
+r
+d
+o
+u
+r
+n
+a
+s
+.
+
+l
+
+o
+r
+g
+a
+
+ 
+
+t
+ 
+
+G
+e
+o
+r
+g
+a
+S
+a
+
+ 
+
+t
+
+i
+
+t
+
+i
+
+ 
+
+e
+U
+n
+v
+e
+r
+s
+i
+t
+y
+ 
+
+ 
+
+o
+n
+N
+o
+v
+e
+m
+b
+e
+r
+ 
+3
+0
+
+,
+ 
+
+2
+0
+1
+0
+
+

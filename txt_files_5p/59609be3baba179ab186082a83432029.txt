@@ -1,0 +1,116 @@
+segmentingwordsfromaconti
+uousstreamisnotatrivialtaska
+tallespeciallyifyouarenotfami
+liarwiththelanguageyouaree
+xposedtoinyourenvironment
+
+Cognitive and Neurophysiological Basis 
+of Language Acquisition
+
+Word segmentation and word 
+recognition
+
+Jutta L. Mueller
+
+Institute for Cognitive Science
+University of Osnabrück
+Germany
+
+Word segmentation problem
+
+• How many words can you find here?
+
+What‘s available
+
+(1) Acoustic/visual features, phonemes, syllables
+
+(2) Lexical Representation
+
+(3) Context-based expectations (semantic, syntactic, pragmatic…)
+
+Naive learners have only access to (1)
+
+Possible word segmentation mechanisms: Statistics
+
+• Statistics: Transitional probablities indicate word boundaries: pre ty ba by
+
+TP= P (Y|X)=Frequency (XY) / Frequency (X)
+
+• Classic study: Saffran, Newport & Aslin 1996
+
+100 .33
+
+Possible word segmentation mechanisms: Statistics
+
+• Statistical mechanisms – analysis of distributional and contingency
+
+information in the sound stream
+– Problem: Which statistics to use? Danger of computational explosion
+
+Possible word segmentation mechanisms: Acoustic cues
+
+• Acoustic cues, e.g. word stress, intonational cues to phrasal boundaries
+
+• How do infants know their language specific stress pattern?
+
+•
+
+•
+
+Jusczyk, Houston & Newsome (1999):
+7 ½ month olds use trochaic stress to segment words
+KINGdom easier than guiTAR
+At the age of 10 ½ month weak-strong words are segmented
+
+Possible word segmentation mechanisms: Acoustic cues
+
+• How do infants which stress patterns indicate word
+
+boundaries?
+– innate trochaic bias
+– experience from single words
+– initial use of different segmentation mechanism
+
+(e.g. statistics)
+
+Possible word segmentation mechanisms: Acoustic cues
+
+• Thiessen & Saffran (2003): Statistical cues override stress cues at the age of
+
+6-7 months while stress cues override statistical ones at 9 months
+
+Iambic:     diTI#buGO#daPU#doBI…
+
+Trochaic: DIti#BUgo#DApu#DObi…
+
+9 month-olds (familiarity preference)
+
+7 month-olds (novelty preference)
+
+Possible word segmentation mechanisms: Other cues
+
+• Allophonic cues (e.g. nitrates vs. night rates, Jusczyk, Hohne & Bauman, 
+
+1999) 
+
+• Familiar lexical items (e.g. occurrence babies own name leads to
+
+segmentation of subsequent word, Bortfeld et al. 2005)
+
+• Phonotactic cues (e.g. consonant clusters that typically occur within or
+
+between words
+
+Many open questions
+
+• When do infants start to use statistical information to segment words?
+
+• When and how do they recognize words that they heard before?
+
+• What are the neural processes supporting these very first stages of word
+
+learning?
+
+Possible answers by: Maksims Ivanovs, Malin Moik, Tim Wichelmann
+
+

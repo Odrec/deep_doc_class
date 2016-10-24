@@ -1,0 +1,2476 @@
+BIO-EMM-MZB1 
+
+Molecular Cell Biology: 
+
+Discoveries and Current Developments 
+
+Origin of Recombinant DNA Technology – part 1 
+
+Joost Holthuis | holthuis@uos.de 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+Lecture 2  
+
+Lecture outline 
+ 
+ 
+      Definition of recombinant DNA technology 
+ 
+    Race for DNA and other historical milestones 
+ 
+    Discovery of restriction-modification systems 
+ 
+    Production of recombinant protein 
+ 
+    Gene therapy 
+ 
+    Construction and screening of DNA libraries 
+ 
+    	
+
+
+part 1 
+
+part 2 
+
+Recombinant DNA technology 
+
+ 
+ 
+ 
+
+A series of steps used to join together (ligate) DNA 
+segments of different origin, creating a hybride molecule 
+(recombinant DNA) that can be replicated in a host cell & 
+isolated (cloning) for further analysis and manipulation  
+
+DNA cloning 
+flow diagram 
+
+1DNA of a virus or plasmid that 
+can replicate in a host cell 
+independently of chromosomal 
+DNA 
+
+Vector1 + DNA fragment (gene) 
+
+ 
+
+ligation 
+Recombinant DNA 
+
+ 
+
+transformation 
+
+Replication of recombinant 
+
+DNA in host cell 
+
+amplification 
+Sequence analysis & further 
+
+ 
+
+manipulation 
+
+Applications  
+
+Isolation of a gene or region in a genome (DNA cloning)  
+
+Production of specific RNA or protein molecules in large 
+amounts (e.g. recombinant insulin)  
+
+Modification of a protein’s structure and function to create 
+a product with novel, improved properties  
+(protein engineering) 
+
+Modification of an organism so that it acquires a novel 
+property not encoded by the genome  
+(genetic modification, transgenic mice)  
+
+Correction of genetic defects (gene therapy) 
+
+genomics 
+
+proteomics 
+
+recombinant  
+
+DNA technology 
+
+protein 
+engineering 
+
+gene therapy 
+
+aptamer 
+technology 
+
+Historical milestones 
+
+ 
+1865 - Gregor Mendel - shows that the inheritance of certain traits 
+in pea plants is determined by pairs of factors (“genes”) that are 
+transferred independently onto reproductive cells 
+ 
+1869 - Frederich Meischner - isolates “nucleine” from nuclei of 
+white blood cells harvested from pus-soaked bandages obtained 
+from nearby hospital: nucleïne contains phosphor, but no sulfur 
+(hence distinct from protein)  
+ 
+ 
+1910 - Thomas Hunt Morgan - shows that “genes” are part of 
+“chromosomes” by localizing a gene on a specific chromosome 
+ 
+1928 - Fred Griffith - discovers the principal of “bacterial 
+transformation”  
+ 
+
+1800’s	
+
+
+early 
+1900’s	
+
+
+1928 Fred Griffith discovers bacterial transformation 
+
+Pneumococcus: S strain & R strain 
+
+Injection 
+
+Mouse 
+healthy 
+
+Smooth (S) strain 
+= virulent 
+
+Heat 
+
+Heat-killed  
+S strain 
+
+Injection	
+
+
+Mouse  
+dies 
+
+Rough (R) strain 
+= non-virulent 
+
+Living R strain 
+
+Mixture of  
+heat-killed S strain 
+and living R strain 
+
+Living cells of  
+S strain isolated 
+from dead mouse 
+
+Identity “transforming agent” unknown; minds were focused on protein 
+rather than DNA 
+
+1944 Oswald Avery and colleagues provide evidence 
+that Griffith’s transforming agent is DNA 
+
+filtrate of  
+heat-killed S cells 
+
+treat with  
+DNase 
+
+treat with  
+RNase 
+
+treat with  
+protease 
+
+R cells +  
+
+DNase-treated 
+
+S filtrate 
+
+assay for 
+
+transformation 
+R cells +  
+
+RNase-treated 
+
+S filtrate 
+
+R cells +  
+
+protease-treated 
+
+S filtrate 
+
+R cells  
+
++  
+
+S filtrate 
+
+No transformation 
+
+occurs 
+
+Transformation 
+
+occurs 
+
+Transformation 
+
+occurs 
+
+Transformation 
+
+occurs 
+
+Only R  
+cells 
+
+Conclusion: 
+active factor  
+
+is DNA 
+
+R + S  
+cells 
+Conclusion: 
+active factor  
+is not RNA 
+
+R + S  
+cells 
+Conclusion: 
+active factor  
+is not protein 
+
+R + S  
+cells 
+Conclusion: 
+
+S filtrate contains 
+
+active factor 
+
+Historical milestones (continued…) 
+
+1940s 
+
+1944 - Oswald Avery - provides first evidence that Griffith’s 
+transforming agent is DNA  
+
+1950s 
+
+ 
+
+1952 - Erwin Chargaff - discovers Chargaff rules: A=T & G=C in DNA, 
+but (A+T)/(G+C) does not equal 1, and varies among different species 
+
+ 
+
+1952 - Alfred Hershey & Martha Chase - “Waring blender” 
+experiment with bacteriophages shows DNA is the carrier of genetic 
+information 
+
+ 
+
+1952 - Salvador Luria -  describes bacterial restriction-modification 
+systems, providing a basis for the discovery of restriction enzymes 
+
+ 
+
+1953 - James Watson & Francis Crick - publish “double helix” model 
+of DNA, using Röntgen diffraction data of Rosalin Franklin 
+
+ 
+
+1953 - Fred Sanger - develops method to determine amino acid 
+sequence of proteins; determines the amino acid sequence of insuline 
+
+ 
+
+1957 - Arthur Kornberg - isolates DNA polymerase I from E. coli; 
+shows that DNA synthesis requires a ‘template’ and a ‘primer’ 
+
+Research on bacteriophages boosted DNA research  
+
+Bacteriophage T2 
+
+Head 
+
+Tail 
+
+Tail 
+fibers 
+
+100 nm 
+
+phage 
+
+E. coli 
+
+The American “phage-group”: Max Delbrück, Salvador Luria, Alfred Hershey  
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Life cycle of bacteriophages 
+
+lytic cycle!
+
+plaque 
+
+lawn of E. coli 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Life cycle of bacteriophages 
+
+lytic cycle!
+lytic cycle!
+
+λ Phage genome 	
+
+
+lysogenic cycle!
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+1952 Hershey & Chase “Waring Blender” experiment:  
+DNA - not protein - is the carrier of genetic information 
+
+Phage T2 (unlabeled) 
+
+Phage added to E. coli 
+in radioactive medium 
+
+32P    or    35S  
+
+32P 
+
+35S 
+
+Progeny phages  
+become labeled 
+
+Labeled phage added 
+
+to unlabeled E. coli 
+
+Labeled phage added 
+
+to unlabeled E. coli 
+
+Separation of phage  
+
+“ghosts” from bacterial cell 
+
+using blender 
+
+Centrifugation 
+
+Centrifugation 
+
+Phage “ghosts” 
+are unlabeled 
+
+Infected bacteria 
+are labeled with 32P 
+
+Phage “ghosts” are 
+
+labeled with 35S 
+
+Infected bacteria 
+are unlabeled 
+
+Viable phage produced 
+
+labeled with 32P 
+
+Viable unlabeled 
+phage produced 
+
+32P 
+
+The Hershey-Chase results  
+
+reinforced the conclusion of Avery: 
+
+ DNA carries the genetic code! 
+
+Yet, still important details remained  
+
+to be uncovered… 
+
+How does DNA… 
+ 
+1) store information? 
+2) duplicate itself? 
+
+These questions would be answered by 
+discovering DNA’s structure... 
+
+The race to discover DNA’s structure 
+
+See also “The race for DNA”: http://osulibrary.orst.edu/specialcollections/coll/pauling/dna/narrative/page1.html 
+
+1953 Linus Pauling publishes DNA triple helix model  
+
+Q1: what elementary chemistry    
+       did Pauling overlook? 
+
+“At once I felt something 
+was not right. I realized 
+that …… a giant had 
+forgotten elementary 
+college chemistry.” 
+
+ 
+- James Watson 
+
+1952 Rosalind Franklin makes a critical breakthrough 
+
+English Chemist (1920 – 1958) 
+ 
+took the most beautiful X-ray 
+diffraction photograph of any 
+substance ever  
+made crucial contribution to the 
+solution of the structure of DNA  
+
+ 
+
+	
+
+
+1952 Rosalind Franklin makes a critical breakthrough 
+
+	
+
+
+English Chemist (1920 – 1958) 
+ 
+took the most beautiful X-ray 
+diffraction photograph of any 
+substance ever  
+made crucial contribution to the 
+solution of the structure of DNA  
+
+ 
+
+Crystallographic photo of DNA type B 
+"Photo 51" May 1952 
+ 
+focused pattern from DNA in its pure, 
+extended, wet form, showing twofold 
+symmetry and cross-like reflections  
+of a double helix - thus ruling out any 
+three-stranded structure!!!  
+
+1952 Rosalind Franklin makes a critical breakthrough 
+
+1950 The Chargaff’s rules 
+
+Erwin Chargaff 
+
+Q2: why do you think the  
+bases match up this way? 
+
+A=T and G=C 
+but (A+T)/(G+C) 
+does not equal 1 
+
+species 
+
+and varies 
+
+among different 
+
+1950 The Chargaff’s rules 
+
+purine 
+
+pyrimidine 
+
+Erwin Chargaff 
+
+A=T and G=C 
+but (A+T)/(G+C) 
+does not equal 1 
+
+species 
+
+and varies 
+
+among different 
+
+1950 The Chargaff’s rules 
+
+Purine + Purine = Too wide 
+
+Erwin Chargaff 
+
+Pyrimidine + Pyrimidine = Too Narrow 
+
+Purine + Pyrimidine = Perfect Fit from X-ray data 
+
+1953 Watson & Crick publish DNA double helix model  
+
+What they deduced from: 
+  
+Franklin’s X-ray data 
+• Double helix 
+• Uniform width of 2 nm (3.4 Å) 
+• Bases stacked 0.34 nm apart 
+ 
+Chargaff’s “rules” 
+• Adenine pairs with thymine 
+• Cytosine pairs with guanine  
+
+What they came up with on their own: 
+ 
+• Bases face inward, phosphates & sugars outward 
+• Hydrogen bonding 
+• Hinted at semi-conservative model for replication 
+
+1953 Watson & Crick publish DNA double helix model  
+
+How does DNA… 
+ 
+1) store information? 
+2) duplicate itself? 
+
+These questions would be answered by 
+discovering DNA’s structure... 
+
+How is DNA replicated?  
+
+DNA must replicate during each cell division 
+3 alternative models for DNA replication were hypothesized  
+
+CONSERVATIVE 
+
+SEMI-CONSERVATIVE 
+
+DISPERSIVE 
+
+PARENT 
+CELL 
+
+FIRST 
+REPLICATION 
+
+SECOND 
+REPLICATION 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+1958 Meselson-Stahl experiment 
+
+first 
+replication 
+
+1) Bacteria cultured in medium containing a heavy isotope of Nitrogen (15N) 
+2) Bacteria transferred to medium containing elemental Nitrogen (14N) 
+3) DNA sample centrifuged after first replication on density gradient 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+1958 Meselson-Stahl experiment 
+
+CONCLUSION 
+
+DNA replication is semi-conservative 
+
+first 
+replication 
+
+second 
+replication 
+
+1) Bacteria cultured in medium containing a heavy isotope of Nitrogen (15N) 
+2) Bacteria transferred to medium containing elemental Nitrogen (14N) 
+3) DNA sample centrifuged after first replication on density gradient 
+4) DNA sample centrifuged after second replication on density gradient 
+
+1952 Salvador Luria & collegues discover restriction – 
+modification systems in E. coli  
+
+bacteriophage  
+
+E.O.P. = 100% 
+
+strain C is  
+
+sensitive to phage 
+
+grown in either 
+strain K12 or C  
+
+E. coli 
+strain C	
+
+
+E.O.P. = 100%	
+
+
+Efficiency of Plating 
+
+E.O.P. = 100% 
+
+E. coli 
+
+strain K12 
+
+strain K12  
+
+is resistant to  
+phage grown  
+in strain C 
+
+restriction 
+
+E.O.P. = 0.02% 
+
+E.O.P. = 0% 
+
+door modificatie 
+
+1952 Salvador Luria & collegues discover restriction – 
+modification systems in E. coli  
+
+bacteriophage  
+
+E.O.P. = 100% 
+
+strain C is  
+
+ sensitive to phage  
+
+grown in either 
+strain K12 or C  
+
+E. coli 
+strain C	
+
+
+E.O.P. = 100%	
+
+
+Efficiency of Plating 
+
+E.O.P. = 100% 
+
+restriction 
+
+E.O.P. = 0.02% 
+
+E.O.P. = 0% 
+
+through modification 
+
+E. coli 
+
+strain K12 
+
+strain K12  
+
+is resistant to  
+phage grown  
+in strain C 
+
+Chemical modification discriminates 
+“own” from “foreign” DNA 
+
+DNA from phage grown on E. coli K12 strain 
+contains methylated bases on specific sites  
+
+CH3 
+
+N6 methyl 
+adenine 
+
+Strategy: mark “own” DNA and destroy “foreign” DNA 
+
+CH3 
+
+G A A T T C 
+C T T A A G 
+
+CH3 
+
+EcoRI 
+
+EcoRI 
+
+EcoR1 methylase modifies  
+host DNA on specific sites 
+
+EcoR1 restriction-endonuclease 
+cleaves foreign phage DNA, 
+but not methylated host DNA 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+bacteriophage  
+
+E.O.P. = 100% 
+
+Q3: what happens if bacterium    
+       looses its methylation gene? 
+
+E.O.P. = 100%	
+
+
+E. coli 
+strain C	
+
+Lacks  
+restriction/modification  
+system = r-/m- 
+
+Efficiency of Plating 
+
+E.O.P. = 100% 
+
+Q4: how could a bacteriophage   
+       escape from a restriction-    
+       modification system? 
+
+restriction 
+
+E. coli 
+
+strain K12 
+
+Constains  
+restriction/modification  
+system = r+/m+ 
+
+E.O.P. = 0.02% 
+
+E.O.P. = 0% 
+modification 
+
+Ligation of DNA fragments with complementary  
+“sticky ends” by bacteriophage T4 DNA ligase 
+
+*	
+
+
+*precut with EcoRI 
+
+*	
+
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Over 3,000 restriction endonucleases known 
+Table 6.1. Examples of restriction enzymes and their recognition sites
+Source microorganism
+Arthrobacter luteus
+Bacillus amyloiquefaciens H
+Escherichia coli
+Haemophilus gallinarum
+Haemophilus infulenzae
+Providencia stuartii 164
+Nocardia otitiscaviaruns
+Staphylococccus aureus 3A
+Serratia marcesans
+Thermus aquaticus
+
+Recognition site (5’-3’)
+AG/CT
+G/GATCC
+G/AATTC
+GACGC(N)5/
+A/AGCTT
+CTGCA/G
+GC/GGCCGC
+/GATC
+CCC/GGG
+T/CGA
+
+Enzyme
+AluI
+AluI 
+BamHI
+EcoRI
+EcoRI 
+HgaI
+HindIII
+PstI
+NotI
+Sau3A
+SmaI
+TaqI
+
+Ends produced
+blunt
+sticky (5’ overhang)
+sticky (5’ overhang)
+sticky (3’ overhang)
+sticky (5’ overhang)
+sticky (3’ overhang)
+sticky (5’ overhang)
+sticky (5’ overhang)
+blunt
+sticky (5’ overhang)
+
+EcoRI 
+
+Cleavage 
+
+Sticky ends 
+
+5’ 
+3’ 
+
+5’ 
+3’ 
+
+3’ 
+5’ 
+
+5’ 
+3’ 
+
+AluI 
+
+G A G C T C 
+C T C G A G  
+
+Cleavage 
+
+Blunt ends 
+
+3’ 
+5’ 
+
+3’ 
+5’ 
+
+5’ 
+3’ 
+
+G A G 
+C T C 
+
+C T C 
+G A G 
+
+3’ 
+5’ 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Cat-and-mouse game between bacteria  
+
+& phages created rich toolbox for  
+
+recombinant DNA technology 
+
+Historical milestones (continued…) 
+
+1960s	
+
+
+1970s 
+
+1960 - Jacques Monod & Francois Jacob - describe Lac operon in E.coli 
+and find that genes in cells are regulated by suppressors & inducers 
+ 
+
+1966 - Marshall Nirenberg, Robert Holley & Har Khorana - crack the 
+genetic code and discover how DNA is translated in protein 
+ 
+
+1968 - Stanley Cohen - discovers that bacteria carry antibiotic-resistance 
+genes on extra-chromosomal circular DNA (“plasmids”)  
+1970 - Herbert Boyer - identifies first restriction enzyme, EcoRI  
+
+ 
+
+1970 - Baltimore & Temin - discover reverse transcriptase in tumor virus 
+
+ 
+
+1972 - Paul Berg - produces 1st recombinant DNA molecule with DNA 
+fragments derived from SV40 virus and E. coli using T4 DNA ligase 
+
+ 
+
+1973 - Herbert Boyer & Stanley Cohen - clone frog DNA into E. coli 
+plasmid 
+
+ 
+
+1975 - Alan Maxam, Walter Gilbert & Fred Sanger - develop 2 methods 
+for DNA sequencing 
+ 
+
+1978 - Genentech Inc. - clone human insulin in E. coli 
+
+1960 - Jacques Monod & Francois Jacob describe 
+Lac operon in E. coli 
+
+H20 
+
+enzyme: 
+
+β-galactosidase 
+
+Glucose as carbon-source: < 10 enzymes per cell 
+
+Lactose as carbon-source: > 1000 enzymes per cell 
+
+→ Change in carbon-source leads to very rapid change 
+
+in β-galactosidase activitivity (minutes) 
+
+ 
+
+ 
+ 
+
+t
+
+h
+w
+o
+r
+g
+
+ 
+l
+l
+
+e
+c
+ 
+/
+ 
+
+/
+
+m
+a
+i
+r
+e
+t
+c
+a
+b
+g
+µ
+
+ 
+
+ 
+l
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+l
+
+m
+/
+s
+t
+i
+
+n
+u
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+i
+
+e
+s
+a
+d
+s
+o
+t
+c
+a
+a
+g
+-
+β
+
+l
+
+β-galactosidase 
+
+mRNA 
+
+growth 
+
+m
+R
+N
+A
+
+ 
+l
+
+e
+v
+e
+
+l
+ 
+
+1.000 
+
+100 
+
+10 
+
+1 
+
+0.1 
+
+0 
+addition of 
+
+inducer 
+(lactose) 
+
+5 
+
+10 
+removal of 
+
+inducer 
+
+15 
+
+time (min) 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Lac operon in E. coli 
+
+lacI	
+
+
+- lactose 
+
+RNA polymerase 
+
+Pol-σ70 
+
+lacI	
+
+
+encodes β-galactosidase 
+
++ lactose 
+
+lacI	
+ Pol-σ70 
+
+mRNA 
+
+β-galactosidase 
+
+Plasmid cloning vector 
+
+1 
+
+origin of replication 
+
+polylinker 
+
+3 
+
+antibiotic- 
+
+2 
+resistance gene 
+
+Antibiotic 
+Ampicillin	
+
+
+Kanamycin 
+
+Tetracyclin 
+
+Mode of action	
+
+inhibits formation peptidoglycan 
+cross-link in cell wall 
+causes misreading of mRNA by 
+binding to 30S ribosomal subunit 
+blocks binding aminoacyl-tRNA 
+to ribosome A site 
+
+Mode of resistance 
+Ampr: β-lactamase inactivates 
+ampicillin 
+Kanr: aminoglycoside acetyl- 
+transferase inactivates kan. 
+Tetr: decreases permeability 
+cell wall for tetracyclin 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Principle of DNA 
+cloning in E. coli 
+
+isolate recombinant  
+
+plasmid for 
+
+further manipulation 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Use of inducible Lac promotor for production of 
+recombinant protein in E. coli 
+
+isopropyl-β-thiogalactoside (IPTG) 
+
+G-CSF (human Granulocyte 
+Colony-Stimulating Factor) 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Use of inducible Lac promotor for production of 
+recombinant protein in E. coli 
+
+isopropyl-β-thiogalactoside (IPTG) 
+
+G-CSF (human Granulocyte 
+Colony-Stimulating Factor) 
+
+Q5: what are the advantages of an    
+inducable expression system? 
+
+ 
+   efficient production of recombinant protein on a large scale 
+   production of cytotoxic proteins (e.g. nuclease, protease) 
+ 
+
+E. coli pET expression system 
+
+ 
+
+ 
+
+Amplification of proteins production by coupling two expression  
+systems: 
+
+ 
+ 
+IPTG 
+
+ 
+ 
+
+1 
+
++	
+
+
+1 
+   Lac promotor system (E. coli) 
+2 
+   T7 promotor system (T7 bacteriophage)  
+
++	
+
+
+2 
+
+BIO-EMM-MZB1 
+
+Molecular Cell Biology: 
+
+Discoveries and Current Developments 
+
+Origin of Recombinant DNA Technology – part 2 
+
+Joost Holthuis | holthuis@uos.de 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+Lecture 3  
+
+Lecture outline 
+ 
+ 
+      Definition of recombinant DNA technology 
+ 
+    Race for DNA and other historical milestones 
+ 
+    Discovery of restriction-modification systems 
+ 
+    Production of recombinant protein 
+ 
+    Gene therapy 
+ 
+    Construction and screening of DNA libraries 
+ 
+    	
+
+
+part 1 
+
+part 2 
+
+Eukaryotic expression systems 
+ 
+Preferred over bacterial expression system for production of  
+eukaryotic proteins, such as “protein pharmaceuticals” 
+
+Q6: Why ? 
+
+Eukaryotic proteins often not correctly folded, leading to their 
+accumulation in bacterial‘inclusion bodies’> loss of bioactivity 
+ 
+Bioactivity of eukaryotic proteins often dependent on post-
+translational modifications by enzymes that are absent in 
+prokaryotes (e.g. N & O-glycosylation; amidation, acetylation) 
+ 
+Proteins purified from bacteria can be contaminated by toxic cell 
+wall components (e.g. lipopolysacchariden > septic shock) 
+
+Gene transfer in eukaryotic cells 
+Traditional methods (transfection) 
+
+DEAE dextran  – carbohydrate polymer coupled to positively-charged group 
+(diethylaminoethyl) forms complex with DNA; uptake by endocytosis 
+
+ 
+ 
+
+ 
+ 
+
+Calcium phosphate – forms insoluble complex with DNA; uptake by 
+endocytosis  
+
+Lipofectamine  –  DNA delivered in liposomes that fuse with the plasma 
+membrane 
+ 
+Electroporation  –  generation of transient pores in plasma membrane 
+allowing passage of DNA 
+ 
+Microinjection  –  DNA directly injected into cell nucleus 
+ 
+
+Virus-mediated gene transfer (infection) 
+By far the most efficient method for gene transfer! 
+(took millions of years of trial and error) 
+
+Frequently used viral expression sytems 
+
+SV40 virus 
+
+Baculovirus - large (200 kb) dsDNA virus that can infect 
+insect cells only. Very safe system.  
+ 
+Simian SV40 virus - dsDNA tumor virus. Primarily infects 
+monkey cells. 
+ 
+Vaccinia virus - large ssDNA virus. Infects a wide array of 
+mammalian cells.  
+ 
+Adenovirus - dsDNA tumor virus. Infects a wide array of 
+mammalian cells, including non-dividing cells such as 
+neurons. Frequently used in gene therapy trials.  
+ 
+Lentivirus - Retrovirus (e.g. HIV). ssRNA genome, which 
+is converted to dsDNA after infection of host. Infects 
+essentially every type of mammalian cell without lysing the 
+host. First choice vector system for gene therapy.  
+
+Adenovirus 
+
+HIV virus 
+
+Life cycle lentivirus (retrovirus) 
+
+3	
+
+
+4	
+
+
+5	
+
+
+6	
+
+
+LOSS OF "
+VIRAL CAPSID"
+2	
+
+
+1	
+
+
+7	
+
+
+"
+PLASMA MEMBRANE "
+HOST CELL"
+
+Molecular Biology of the Cell (© Garland Science 2008) 
+
+Lentiviral expression system 
+
+viral genome 
+
+packaging signal 
+
+capsid proteins 
+
+envelope glycoproteins 
+
+long terminal 
+
+repeat 
+
+lentiviral 
+genome 
+
+LTR 
+U3  R U5 
+
+Ψ	
+
+
+RTase & integrase 
+
+gag 
+
+pol 
+
+env 
+
+LTR 
+U3  R U5 
+
+LTRs flank lentiviral genome and serve a double role: 
+ 
+1.  Contain strong promotor for expression of gag/pol/env genes 
+2.  Mediate integration of lentiviral genome in DNA of host through 
+
+ a LTR-specific integrase 
+
+Lentiviral expression system 
+
+viral genome 
+
+packaging signal 
+
+capsid proteins 
+
+envelope glycoproteins 
+
+long terminal 
+
+repeat 
+
+lentiviral 
+genome 
+
+LTR 
+U3  R U5 
+
+Ψ	
+
+
+RTase & integrase 
+
+gag 
+
+pol 
+
+env 
+
+LTR 
+U3  R U5 
+
+Transfer vector 
+
+LTR 
+
+Ψ	
+
+
+gene X 
+
+LTR 
+
+      DNA 
+
+transfection 
+
+Packaging 
+cell line 
+
+Ψ	
+
+CMV 
+
+CMV 
+
+gene X 
+
+env 
+gag-pol 
+
+viral  
+packaging 
+proteins 
+
+Target 
+cells 
+
+    infection 
+
+production 
+recombinant 
+protein X 
+
+recombinant 
+
+lentivirus 
+
+(replication-defective!) 
+
+Gene therapy trials 
+Table 6.3. Examples of human gene therapy trials on monogenic diseases that have been conducted
+Condition
+Adenosine deaminase deficiency
+Melanoma
+Melanoma, glioblastoma, renal cell
+cancer
+Hemophilia B
+Hypercholesterolemia
+Melanoma, colorectal cancer, renal
+cell cancer
+
+Target cells
+Lymphocytes, bone marrow cells
+Autologous tumor cells
+Autologous tumor cells
+
+Autologous skin fibroblasts
+Autologous liver cells
+Tumor cells
+
+Tumor cells, T-cells
+Nasal and airway epithelia
+
+Blood CD34+ cells
+Tumor cells
+Autologous fibroblasts
+Encaplulated transduced
+xenogeneic cells
+Tumor cells
+
+Fanconi anemia C
+
+Bone marrow cells
+
+Therapy
+Adenosine deaminase
+Tumor necrosis factor
+Interleukine-2
+
+Factor IX
+LDL receptor
+Histocompatibility locus
+antigen class I-B7 plus
+beta 2 microglobulin
+HSV-TK
+Cystic fibrosis
+transmembrane receptor
+Multidrug resistance
+GM-CSF
+IL-1 receptor agonist
+Ciliary neurotrophic
+factor
+p53
+
+*	
+
+
+*	
+
+
+*	
+
+
+Glioblastoma, AIDS, ovarian cancer
+Cystic fibrosis
+
+Breast cancer
+Melanoma
+Arthritis
+Amyotrophic lateral sclerosis
+
+Head and neck squamous
+carcinoma
+Fanconi anemia
+
+Cystic fibrosis 
+Autosomal recessive disorder. Occurs in 1/3.000 children in Europe 
+ 
+CFTR gene codes for chloride channel in apical membrane of mucus- 
+producing epithelial cells; patient may die of respiratory failure 
+
+CFTR (Cystic Fibrosis Transmembrane 
+Conductance Regulator / ABC transporter) 
+
+wild type CFTR gen 
+
+Nose spray  with 
+recombinant 
+lentivirus 
+
+nucleus  
+epithelial cell  
+wild type  
+CFTR gen 
+
+ATP 
+
+Cl- 
+
+Historical milestones (continued…) 
+
+1982 - Michael Smith - develops “site-directed mutagenese” 
+
+ 
+
+1980s	
+
+
+1985 - Genentech Inc. - launches first recombinant biofarmaceutical - 
+ProTropin – on the market (growth hormone) to treat children having 
+growth hormone deficiency  
+ 
+
+1986 - Kary Mullis - develops Polymerase Chain Reaction (PCR) 
+
+ 
+
+1989 - Human Genome Project - start of ambitious plan to determine DNA 
+sequence of the humane genome by 2005 
+1990 - Gene therapy - 4 year-old boy suffering from adenosine deaminase 
+deficiency (FDA) undergoes first gene therapy 
+
+ 
+
+1990 - Gen Pharm International Inc. - generates transgenic cow 
+producing recombinant protein (human lactoferrin) in milk 
+
+ 
+
+1996 - Affymetrix Inc. - produces first commercial DNA microchip to 
+analyse expression profile of thousands of genes simultaneously 
+
+ 
+
+1997 - Creation of artificial human chromosome – to generate new 
+perspectives in making gene therapy safe 
+
+1990s 
+
+1986 Kary Mullis develops polymerase chain reaction 
+
+PCR reaction includes: 
+ 
+- template DNA 
+-  oligonucleotide primers 
+-  dATP, dGTP, dCTP, dTTP 
+-  DNA polymerase* 
+
+*Taq polymerase derived from 
+
+thermophilic bacterium T. aquaticus 
+
+Automated PCR reaction 
+
+FIRST CYCLE 
+
+5’ 
+3’ 
+
+1 
+
+denaturation 
+
+5’ 
+
+3’ 
+
+2 
+
+annealing 
+
+3’ 
+
+3’ 
+5’ 
+5’ 
+
+3 
+
+elongation 
+
+3’ 
+5’ 
+
+5’ 
+
+3’ 
+
+3’ 
+5’ 
+
+3’ 
+
+5’ 
+
+5’ 
+
+5’ 
+3’ 
+
+5’ 
+
+5’ 
+3’ 
+
+3’ 
+
+3’ 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+1986 Kary Mullis develops polymerase chain reaction 
+
+FIRST CYCLE 
+
+SECOND CYCLE 
+
+5’ 
+3’ 
+
+1 
+
+denaturation 
+
+5’ 
+
+3’ 
+
+2 
+
+annealing 
+
+3’ 
+
+3’ 
+5’ 
+5’ 
+
+3 
+
+elongation 
+
+3’ 
+5’ 
+
+5’ 
+
+3’ 
+
+3’ 
+5’ 
+
+3’ 
+
+5’ 
+
+5’ 
+
+5’ 
+3’ 
+
+5’ 
+
+5’ 
+3’ 
+
+3’ 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Q7: What do 3’ and 5’      
+       in DNA refer to? 
+
+3’ 
+
+1986 Kary Mullis develops polymerase chain reaction 
+
+FIRST CYCLE 
+
+5’ 
+3’ 
+
+1 
+
+denaturation 
+
+5’ 
+
+3’ 
+
+2 
+
+annealing 
+
+3’ 
+
+3’ 
+5’ 
+5’ 
+
+3 
+
+elongation 
+
+3’ 
+5’ 
+
+5’ 
+
+3’ 
+
+3’ 
+5’ 
+
+3’ 
+
+5’ 
+
+5’ 
+
+5’ 
+3’ 
+
+5’ 
+
+5’ 
+3’ 
+
+3’ 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+3’ 
+
+5 
+
+4 
+
+3 
+
+1 
+
+2 
+
+Applications of PCR 
+
+Cloning of genes based on (partial) nucleotide- or amino acid 
+sequence 
+
+Site-directed/random mutagenese (structure-function analysis) 
+
+Amplification of “ancient” DNA using “degenarate” primers 
+
+Detection of bacterial or viral infections (HIV test) 
+
+Prenatal diagnostics, detection of genetic disorders (i.e. cystic 
+fibrosis) 
+
+DNA profile analysis (forensic medicin) 
+
+DNA polymerase “proof-reading” activity 
+
+5’-to-3’  
+polymerase 
+
+activity 
+
+3’-to-5’  
+
+exonuclease 
+
+activity 
+
+DNA polymerase 
+
+thermostabile 
+
+exonuclease  
+
+activity 
+
+misincorporation 
+
+rate 
+
+E. coli Pol I 
+
+Thermus aquaticus 
+
+Pol (Taq) 
+
+Pyrococcus furiosis 
+
+Pol (Pfu) 
+
+no 
+
+yes 
+
+yes 
+
+yes 
+
+no 
+
+yes 
+
+1 in 109 nucl. 
+
+1 in 104 nucl. 
+
+1 in 106 nucl. 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Construction & screening of  
+
+DNA libraries 
+
+Genomic versus complementary DNA 
+
+promotor	
+
+
+β-Globin 
+genomic 
+DNA 
+
+protein-coding 
+
+non-coding 
+
+non-coding 
+
+m7Guanosine 
+
+5’ end of mRNA 
+
+5’ to 5‘  
+tri-P bridge 
+
+β-Globin 
+cDNA 
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Reverse transcription  
+(using retroviral enzyme) 
+
+Genomic versus complementary DNA 
+
+promotor	
+
+
+β-Globin 
+genomic 
+DNA 
+
+protein-coding 
+
+non-coding 
+
+non-coding 
+
+nucleus 
+
+cytosol 
+
+β-Globin 
+cDNA 
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Reverse transcription  
+(using retroviral enzyme) 
+
+Genomic versus complementary DNA library 
+
+gDNA library 
+ 
+    contains complete genome seq. 
+    (incl. intron & promotor seq.) 
+ 
+    genes evenly represented 
+ 
+     
+    starting material for studying  
+    organization and regulation of    
+    genes 
+
+cDNA library 
+ 
+    primarily contains protein-coding  
+    regions 
+ 
+    contains only sequences of 
+    transcriptionally active genes 
+ 
+    provides important reference for  
+    genome sequencing projects & 
+    starting material for production 
+    of recombinant protein 
+
+Vector systems for construction of DNA libraries 
+
+Vector type 
+Plasmid	
+
+Bacteriophage lambda (λ) 
+
+Cosmid 
+
+P1 phage 
+BAC (bacterial artificial 
+chromosome) 
+YAC (yeast artificial 
+chromosome) 
+
+Max. size of DNA insert (kb) 
+
+10 
+25 
+45 
+100 
+
+300 
+
+1000 
+
+e.g. cystic fibrosis gene: 250 kb 
+used in genome sequencing projects  
+ 
+
+Phage λ as vector system 
+
+Assembly of DNA-containing 
+λ  phage can be reconstituted  
+
+in vitro using lysates of 
+
+infected E. coli cells 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Production of genomic 
+DNA library 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Production of  
+cDNA library 
+
+mRNA 
+
+mixture of  
+cytoplasmic RNAs 
+
+tRNA 
+
+oligo dT matrix 
+
+rRNA 
+
+mix under hybridization 
+conditions 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+purified mRNA preparation 
+
+a). wash away 
+rRNA & tRNA 
+b). elute column 
+in low salt buffer 
+
+Production of  
+cDNA library 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+reverse transcriptase 
+
+terminal transferase 
+
+Production of  
+cDNA library 
+
+DNA polymerase 
+
+EcoRI methylase 
+
+T4 DNA ligase 
+
+EcoRI endonuclease 
+
+Production of  
+cDNA library 
+
+T4 DNA ligase 
+
+Screening of DNA libraries 
+ 
+
+ 1. Hybridization-screening (gDNA of cDNA library) 
+     - High-stringency screening 
+     - Low-stringency screening 
+
+ 
+
+ 2. Expression-screening (cDNA library) 
+     - Immuno-screening 
+     - Activity-based screening 
+
+Hybridization-screening 
+
+Preparation of DNA probe 
+
+γ 
+P 
+
+P 
+
+polynucleotide 
+
+kinase 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+“Low stringency” hybridization-screening	
+
+
+_  
+
+_  
+
+_  
+
+_  
+
+High stringency 
+-          salt 
+-          temp 
+-         formamide 
+
+Low stringency 
+-           salt 
+-           temp 
+-          formamide 
+
+_  
+
+_  
+
+_  
+
+_  
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Formamide: breaks hydrogen bridges between bases 
+
+“Low stringency” hybridization-screening	
+
+
+Q8: why “low stringency”    
+       hybridization screening? 
+_  
+
+_  
+1 
+
+_  
+
+to identify ortholog or  
+paralog genes 
+
+homologs 
+
+orthologs 
+
+_  
+
+paralogs 
+
+orthologs 
+
+gene duplication 
+
+High stringency 
+-  low salt 
+-  high temp (45-65°C) 
+- include formamide 
+
+Low stringency 
+-  high salt 
+-  low temp (37-45°C) 
+- exclude formamide 
+
+_  
+
+_  
+
+_  
+
+_  
+
+2 
+
+to identify genes 
+based on a partial 
+amino acid sequence 
+
+Screening DNA libraries 
+ 
+
+ 
+
+ 1. Hybridization-screening (gDNA or cDNA library) 
+     - High-stringency screening 
+     - Low-stringency screening 
+
+ 2. Expression-screening (cDNA library only) 
+     - Immuno-screening 
+     - Activity-based screening 
+
+Immuno-screening 
+ identification of gene with antibody against gene product 
+
+Applications 
+
+1 
+
+You purified a protein and want to search for the 
+corresponding gene 
+
+2 
+
+You purified an antibody and want to identify the 
+corresponding antigen  
+(e.g. for diagnostics and treatment of infectious diseases, 
+auto-immune disorders, cancer, etc) 
+
+Immuno-screening 
+ identification of gene with antibody against gene product 
+
+β-Galactosidase 
+5’ 
+
+3’ 
+
+phage λ DNA 
+
+lac promotor 
+
+EcoRI 
+
+Digest with EcoRI 
+
+cDNA 
+EcoRI 
+linker 
+
+Ligate 
+
+Fusion protein 
+
+EcoRI 
+EcoRI 
+In vitro packaging 
+Plate on bacterial lawn 
+
+Remove filter 
+
+Proteins bind to nitrocellulose 
+
+125I-labeled 
+secondary 
+antibody 
+ 
+primary 
+antibody 
+
+Incubate filter with primary 
+antibody and radiolabeled 
+secondary antibody 
+
+Fusion protein 
+bound to filter 
+
+Antibody identifies  
+specific plaques 
+
+Overlay nitrocellulose filter 
+
+Perform autoradiography 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+X-ray film 
+
+Activity-based screening 
+ 
+‘Brute force’ method for identification of genes for which 
+no sequence information exists 
+
+“gene X” codes for: 
+a.  bindings partner of another proteins  
+b.  transcription factor with a specific DNA sequence as  
+
+ bindings site 
+c. 
+ligand for a previously identified receptor  
+d.  receptor for a previously identified ligand  
+e. 
+
+ion channel or transporter the expression of which can 
+determined by electrophysiological methods 
+
+Activity-based screening 
+ 
+‘Brute force’ method for identification of genes for which 
+no sequence information exists 
+
+“gene X” codes for: 
+a.  bindings partner of another proteins  
+b.  transcription factor with a specific DNA sequence as  
+
+ bindings site 
+c. 
+ligand for a previously identified receptor  
+d.  receptor for a previously identified ligand  
+e. 
+
+ion channel or transporter the expression of which can 
+determined by electrophysiological methods 
+
+Activity-based screening  
+gene X codes for transcription factor 
+
+Cannabis receptor CB1 gene 
+promotor	
+
+
+transcription factor  
+binding site (TFBS) 
+
+5’ 
+3’ 
+
+3’ 
+5’ 
+
+1. Mix TFBS probe with  
+nuclear extract of neurons 
+ 
+2. DNA mobility shift assay  
+(analyse mixture by PAGE w/o SDS) 
+ 
+3. Autoradiography  
+
+nuclear extract, µg protein	
+
+
+ 
+
+polynucleotide kinase 
+
++ [γ-32P]-ATP	
+
+
+5’-P 
+3’ 
+
+3’ 
+P-5’ 
+
+dsDNA probe 
+
+(TFBS)	
+
+
+TFBS/protein  
+
+complex	
+
+free TFBS	
+
+
+wt TFBS	
+
+
+mutant TFBS	
+
+
+Activity-based screening  
+gene X codes for transcription factor 
+
+λ phage cDNA expression library 
+prepared from brain mRNA 	
+
+
+Overlay nitrocellulose filter 
+
+Remove filter 
+
+*	
+*	
+
+*	
+*	
+
+
+Incubate filter with 
+32P-labeled TFBS probe 
+(at low temp!) 
+
+*	
+*	
+
+
+*	
+*	
+
+
+Perform  
+autoradiography 
+
+Proteins bind to nitrocellulose 
+
+Molecular Cell Biology – 7th edition (© W.H. Freeman) 
+
+Positions of transcription 
+factor-expressing clones 
+
+Quiz 
+ 
+1) Bacteria use restriction-modification systems to protect themselves against  
+    infection with bacteriophages. Describe the molecular basis of these systems.     
+    Describe 2 strategies by which bacteriophages can escape from these systems. 
+ 
+2) Protein pharmaceuticals like recombinant growth hormone are preferentially  
+    produced in eukaryotic expression systems. Explain why.  
+ 
+3) What is a genomic DNA library? What is a cDNA library? Describe in what  
+    aspects these libraries differ from each other. 
+ 
+4) What is “low stringency” hybridization-screening? Describe how this method  
+    can help identify novel genes.  
+ 
+5) DNA polymerases display “proof-reading” activity. Explain what this means.  
+    Describe the molecular basis of this activity. Some organisms have DNA  
+    polymerases that lack proof-reading activity. What advantage could this have? 
+
+BIO-EMM-MZB1 
+
+Molecular Cell Biology: 
+
+Discoveries and Current Developments 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+Lecture 4  
+
+Cracking the genetic code 
+
+Joost Holthuis | holthuis@uos.de 
+
+

@@ -1,0 +1,831 @@
+Syntactic Theory: A Formal Introduction
+
+SS 2016
+Class 9
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+1
+
+Plan for today
+
+ Organisation of the Lexicon
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+2
+
+Exam Arrangements
+
+ Date: Monday 11th July 2016
+
+ Room: 69/127
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+3
+
+LEXICON
+
+06/06/2016
+
+4
+
+Overview
+
+ So far, the grammar has developed from having
+simple lexical entries and a complex set of rules
+(CFG), to having a simple set of rules and complex
+lexical entries
+
+ The grammar rules have been simplified by:
+a) stating some constraints as general principles
+b)
+
+locating lots of information in the lexicon.
+
+⇒ lexicon: the locus of arbitrariness in a language
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+5
+
+Lexical Entries: components
+
+phonological forms
+
+feature structures of type word
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+6
+
+Overview
+
+ However, lexical entries currently stipulate a lot of
+information that is common across many entries
+and should be stated only once
+
+(1) They run
+(2) He runs
+(3) The runner of the 50 mile race slept.
+(4) do, does, did, don't, doesn't, didn't, doing
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+7
+
+Lexemes: Morphological Paradigms
+an example of a morphological paradigm: 
+Modern Greek verbs
+
+‘I write’
+‘we write’
+‘I wrote’
+‘we wrote’
+
+grafo
+grafoume
+egrafa
+grafame
+(tha) grapso
+‘I (will) write’
+(tha) grapsoume
+‘we (will) write’
+
+‘yousing write’
+‘youpl write’
+‘yousing wrote’
+‘youpl wrote’
+
+grafis
+grafete
+egrafes
+grafate
+(tha) grapsis
+‘you (will) write’
+(tha) grapsete
+‘you (will) write’
+
+‘he/she/it writes’
+‘they write’
+‘he/she/it wrote’
+‘they wrote’
+
+grafi
+grafoun
+egrafe
+egrafan
+(tha) grapsi
+‘he/she/it (will) write’
+(tha) grapsoun
+‘they (will) write’
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+8
+
+The psychological reality of lexical rules
+
+ wugs
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+9
+
+The psychological reality of lexical generalisations
+
+ wugs
+ email, text, google, etc.
+ dictionaries
+
+
+language users know that there are systematic relations 
+between different forms of words
+
+How can we express this in HPSG?
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+10
+
+Lexicon
+
+ Ideally, particular lexical entries need only give 
+
+phonological form, the semantic contribution, and 
+any truly idiosyncratic constraints
+
+ How can we organize the HPSG lexicon to pull out 
+
+as many generalizations as possible? 
+
+ There are two domains for doing this: 
+
+(a) elaborating the type hierarchy (today) and 
+(b) specifying lexical rules associating different lexical entries 
+
+(next week)
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+11
+
+Lexemes
+
+ Lexeme: An abstract form (a “proto-word”)
+
+which gives rise to genuine words (by means of 
+lexical rules). 
+
+ We refer to lexemes by their ‘dictionary form’, 
+
+e.g. ‘the lexeme run’ or ‘the lexeme dog’. 
+
+ Lexeme captures the similarities among run, runs, 
+
+running, and run
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+12
+
+Lexemes vs. Words
+
+ Lexeme: An abstract form (a “proto-word”)
+
+which gives rise to genuine words (by means of 
+lexical rules). 
+ Lexemes capture the similarities among run, runs, 
+
+running, and run
+
+ Word: A particular pairing of form and meaning,
+
+e.g. running and ran are different words
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+13
+
+Lexemes vs. Words
+
+ Lexeme: An abstract form (a “proto-word”)
+
+which gives rise to genuine words (by means of 
+lexical rules). 
+
+ Word: A particular pairing of form and meaning,
+
+e.g. running and ran are different words
+ The feature structures labelling the (preterminal) nodes
+
+on the trees must be of type word.
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+14
+
+Revision of Type Hierarchy
+
+The feature structures labelling the (preterminal) nodes on the trees must be of type word.
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+word 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+expression 
+
+feat-struc 
+
+synsem 
+
+ 
+
+ 
+ 
+ 
+
+phrase 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+lexeme 
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+15
+
+The Type Hierarchy
+
+ Why do we classify feature structures into
+
+different types?
+
+ To avoid pointless feature specifications, 
+e.g. CASE on verbs, PER on prepositions
+
+ To let us impose constraints on whole types of
+
+elements, reducing stipulation
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+16
+
+The Type Hierarchy
+
+ The lexical type hierarchy captures the similarities 
+
+among:
+run, sleep, and laugh, 
+run, sleep, laugh and other verbs like devour and hand, 
+run, sleep, laugh, devour, hand, and other words like book
+ What do devour and book have in common?
+
+- The SHAC
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+17
+
+Type Hierarchy vs Lexical Rules
+
+ The lexical type hierarchy captures the similarities 
+
+among:
+run, sleep, and laugh, 
+run, sleep, laugh and other verbs like devour and hand, 
+run, sleep, laugh, devour, hand, and other words like book
+ What do devour and book have in common?
+ The SHAC
+
+ Lexical rules capture the similarities among runs, 
+
+sleeps, devours, hands,...
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+18
+
+The notion of subtyping
+
+In previous chapters:
+If T2 is a subtype of T1,  then 
+every feature appropriate for T1
+is also appropriate for T2, and
+every constraint associated with T1
+affects all instances of T2
+
+ i.e., inheritance of constraints is monotonic
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+19
+
+Default Inheritance
+
+ alternative to monotonicity of inheritance: 
+
+default inheritance
+ constraints on supertypes do not necessarily affect all
+
+instances of subtypes
+
+ we allow for some defeasible constraints 
+
+ i.e. constraints on a given type that hold by default
+
+unless contradicted by some other constraint that holds 
+at a more specific level. 
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+20
+
+Default Inheritance
+ we allow for some defeasible constraints 
+
+ i.e. constraints on a given type that hold by default unless 
+contradicted by some other constraint that holds at a more 
+specific level. 
+
+ contradictory information associated with a subtype 
+
+takes precedence over (or overrides) defeasible 
+constraints that would otherwise be inherited from a 
+supertype
+
+ two types of constraints: violable (defeasible) or 
+
+inviolable 
+
+ we use the symbol / to indicate that a certain 
+
+constraint is defeasible (so it can be overridden by a 
+conflicting specification)
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+21
+
+Default Inheritance
+
+ Why do we need default inheritance?
+ Generalisations with exceptions are common:
+
+ Most nouns in English are not marked for CASE, 
+
+ Most verbs in English only distinguish two agreement categories 
+
+but pronouns are.
+
+*Him slept 
+
+(3sing and non-3sing), 
+but be distinguishes more
+
+ Most nominal words in English are 3rd person, 
+
+but some (i.e. some pronouns) are 1st or 2nd person
+
+ Most proper nouns in English are singular, but some are plural
+(e.g. mountain range names, sports team names: The Andes,
+The Alps, The San Francisco Giants )
+
+*Hannibal crossed Alps
+
+
+
+Proper nouns do not usually take determiners, but some do
+(e.g. The Gambia)
+
+*the John, *Gambia is large
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+22
+
+How Default Inheritance Works
+
+ examples
+
+If a type says 
+ARG-ST / < NP >,
+
+and one of its subtypes says 
+ARG-ST     < >,
+
+If a type says 
+ARG-ST < NP >,
+
+and one of its subtypes says 
+ARG-ST < >,
+
+then the ARG-ST value of 
+instances of the subtype 
+is: < >
+
+then this subtype can have 
+no instances, since they 
+would have to satisfy 
+contradictory constraints.
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+23
+
+Complex defeasible constraints
+
+Example:
+Remember: 
+
+S =
+
+
+HEAD verb
+
+SPR
+
+
+COMPS
+
+
+
+
+
+
+
+
+ Suppose that a type of adverb says: MOD  / < S >, 
+
+and one of its subtypes says:  MOD  <  [SPR < NP> ]  >, then 
+the ARG-ST value of instances of the subtype is:
+
+MOD
+
+
+
+
+
+
+
+verb
+NP
+
+
+HEAD
+
+SPR
+
+COMPS
+
+
+
+/
+
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+ That is, default constraints are ‘pushed down’ (constraints that are not specifically
+
+contradicted remain in force)
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+24
+
+The Hierarchy (synsem branch)
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+verb-lxm 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+infl-lxm 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+lexeme 
+
+[ARG-ST] 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+siv-lxm 
+
+piv-lxm 
+
+tv-lxm 
+
+       cntn-lxm 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+stv-lxm 
+
+dtv-lxm 
+
+ptv-lxm 
+
+ 
+
+prepositional intransitive verb, e.g. rely
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+word 
+
+[ARG-ST] 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+const-lxm 
+
+ 
+
+ 
+
+expression 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+phrase 
+
+ 
+ 
+
+pn-lxm     pron-lxm 
+
+synsem 
+
+[SYN, SEM] 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+adj-lxm    conj-lxm   det-lxm    predp-lxm    argmkp-lxm 
+
+ 
+
+cn-lxm 
+
+ 
+ 
+
+ 
+
+     massn-lxm 
+
+ 
+ 
+ 
+ 
+prepositional transitive verb, e.g. put
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+25
+
+Next Week
+
+ Lexical Rules
+
+06/06/2016
+
+Eleni Gregoromichelaki - Cognitive Science Program, University of Osnabrück
+
+26
+
+

@@ -1,0 +1,176 @@
+EPL Self Study 5 – Malin Karstens
+Howitt&Cramer pp. 55-74
+
+The problems of generalisation and decision making in research
+•
+
+limits of generalisation from any data by sampling methods and statistical significance 
+testing 
+generalisation is an aspect of decision making by the researcher
+
+•
+• main issues:
+
+◦ rules of thumb for the decision-making process distort the reality of research
+◦ it is not simply a matter of failing to find support for a hypothesis in a particular 
+
+study but a decisionmaking process based not simply on basic statistical outcomes 
+but on a finer judgement as to whether the hypothesis had been given a fair chance in
+the research study.
+
+Universalism
+•
+
+assumptions imply to be universal “laws of human behavior” but they are viewpoint 
+dependent
+e.g. social status, cultural differences
+
+•
+
+•
+
+•
+•
+•
+•
+•
+•
+•
+•
+•
+
+Sampling  and generalisation
+•
+•
+
+sampling methods of participants are only part of the problem
+introspectionism (research at researcher as participant) was replaced by behaviourism in 
+the 20th century
+single case studies for rare cases = applying the independent variable at different random
+points in time
+ideal sample size: precision against variability 
+differences for study purpose (medical, training, pilot, etc)
+for averaging values with low error margin: more participants=better precision
+to find out relations/correlation fewer participants suffice
+convenience sample: (easy to get, e.g. students) acceptable for finding a relation
+however the representativeness is discussed, dependent on research subject
+difference between population of interest and sample
+participant rates can be very low
+random selection does not necessarily result in a random sample
+
+Statistics and generalisation
+•
+•
+
+crucial: significant testing and size of trend,relationship,..
+significant testing can overlook trends or make appear trends where there are none
+
+Chance findings and statistical significance
+•
+•
+
+bigger effects are more likely to be significant → larger sample size 
+significance: 5%= 0.5 or less that an effect of that size as found by the specific research 
+is found by chance, “insignificance” not the term for the opposite, but “ non-
+significance”
+small trends found in very large samples are likely not to generalise to small samples
+
+•
+
+alternative value of significance level: stricter 0.001 if this is required for the study
+
+•
+• Bonferroni adjustment for comparing several groups with overall significance level 0.5 
+
+→ set value for each comparison to 0.17
+for pilot studies: general trend important: 0.1
+
+Directional and non directional hypotheses
+•
+
+directional hypotheses require ignorance of the data and a strong evidence why the trend 
+is expected to go in one direction or replicating an experiment
+directional hypothesis is supported by weaker data than would be required by the non-
+directional hypothesis →  two tailed (2* 0.25%) and one tailed (1*0.5%) testings
+if the trend goes in opposite direction: reject hypothesis because opposite effect must be 
+chance finding
+try to avoid directional testing
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+One versus Two-tailed
+•
+
+standard deviation: sort of average of the amount scores in a sample differ from the 
+mean of the sample.
+Standard error: sort of measure of the variation of sample means drawn from the 
+population defined by the null hypothesis, tells us how likely each of the different 
+sample means are, the distribution of sample means
+If the null hypothesis is true, then samples that are unlike what would be expected on the
+basis of this null hypothesis are likely to be uncommon.
+
+Similaritiy between measures of effect and association
+•
+•
+
+often t-test and Pearson correlation coefficient 
+t  -test based on comparing the means of two samples, examines the size of the difference 
+between the two means relative to the variability in the data. 
+
+• The Pearson correlation coefficient (r) is a measure of the amount of  relationship 
+
+between two variables
+related testings
+
+• To be statistically significant at the two-tailed .05 level, the t value has to be 2.00 or 
+
+bigger for samples of more than 61 cases, less for bigger samples but 1,96 for infinite 
+samples
+
+• Bigger values of t generally indicate a bigger effect
+•
+
+Pearson’s correlation shows the size of an association between two quantitative variables
+
+•
+
+From -1 to 1: -1: negative correlation, 0: no LINEAR relationship, 1: positive correlation
+
+Sample size and size of association
+•
+
+the bigger the correlation is, the smaller the sample can be for that correlation to be 
+statistically significant
+
+Size of an association and its meaning
+•
+•
+
+bigger correlation than .8 is large, .3 low
+coefficient of determination = squared correlation value, as percentage (*100= shared 
+variance, the amount of variation explained by a correlation
+shared variance grows much faster than correlation coefficient
+simple statistical procedure for taking into account the unreliability of the measures 
+called the correction for attenuation
+
+•
+•
+
+Figure: Create “ideal” figure for main result of your experiment.
+
+Git: Create folder for Data Analysis. Include the raw data file and commit
+stage. Document your commit message in the PDF.
+
+

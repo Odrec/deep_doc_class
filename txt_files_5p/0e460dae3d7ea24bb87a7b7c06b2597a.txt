@@ -1,0 +1,1949 @@
+Copyright © 2007 by the author(s). Published here under license by the Resilience Alliance.
+Pahl-Wostl, C., J. Sendzimir, P. Jeffrey, J. Aerts, G. Berkamp, and K. Cross. 2007. Managing change
+toward adaptive water management through social learning. Ecology and Society 12(2): 30. [online] URL:
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Research, part of a Special Feature on New Methods for Adaptive Water Management
+Managing Change toward Adaptive Water Management through Social
+Learning
+
+Claudia Pahl-Wostl 1, Jan Sendzimir 2, Paul Jeffrey 3, Jeroen Aerts 4, Ger Berkamp 5, and 
+Katharine Cross 5
+
+ABSTRACT. The management of water resources is currently undergoing a paradigm shift toward a more
+integrated and participatory management style. This paper highlights the need to fully take into account
+the complexity of the systems to be managed and to give more attention to uncertainties. Achieving this
+requires adaptive management approaches that can more generally be defined as systematic strategies for
+improving management policies and practices by learning from the outcomes of previous management
+actions.  This  paper  describes  how  the  principles  of  adaptive  water  management  might  improve  the
+conceptual and methodological base for sustainable and integrated water management in an uncertain and
+complex world. Critical debate is structured around four questions: (1) What types of uncertainty need to
+be taken into account in water management? (2) How does adaptive management account for uncertainty?
+(3) What are the characteristics of adaptive management regimes? (4) What is the role of social learning
+in managing change? Major transformation processes are needed because, in many cases, the structural
+requirements, e.g., adaptive institutions and a flexible technical infrastructure, for adaptive management
+are  not  available.  In  conclusion,  we  itemize  a  number  of  research  needs  and  summarize  practical
+recommendations based on the current state of knowledge.
+
+Key Words: adaptive management; integrated water resources management; social learning; adaptive
+governance; change management; uncertainty
+
+INTRODUCTION
+
+In the past, water resources management focused
+on  well-defined  problems  that  grew  increasingly
+urgent during the 19th and 20th centuries as urban
+populations  became  more  concentrated  and
+industrial and agricultural productivity intensified.
+Public  health  problems  within  cities  and  the
+seemingly insatiable demand for more water drove
+major  efforts 
+in  urban  water  management.
+Eutrophication problems in lakes and coastal seas
+triggered  more  involved  research  and  legislation.
+Rivers were controlled to protect cities and dryland
+agriculture  from  flooding.  In  the  short  run,
+technological  fixes  proved  to  be  very  efficient  in
+solving  a  number  of  these  urgent  environmental
+problems,  e.g.,  the  increasing  sophistication  of
+wastewater  treatment  plants  addressing  problems
+related  to  hygiene  and  pollution.  However,  these
+problems were generally dealt with in isolation, and
+
+potentially  undesirable  long-term  consequences
+were  not  taken  into  consideration.  The  system
+paradigm on which traditional water management
+has been based has often been characterized as a
+“command-and-control” approach. System design
+was  typically  targeted  at  high  predictability  and
+controllability.
+
+For the past two decades, new and more integrated
+approaches  to  water  management  have  been
+developed  and  are  being  implemented  to  address
+perceived  shortcomings  in  earlier  approaches.
+During the last decade, the principle of integrated
+water  resources  management  (IWRM)  has,  for
+example,  been  used  as  a  framework  for  the
+implementation  of  such  integrated  approaches  to
+water management (GWP-TEC 2000). “Integrated”
+clearly indicates a desire to functionally engage a
+range  of  perspectives  by  formally  considering  a
+wide range of potential trade-offs at different scales
+
+1University of Osnabrueck, 2International Institute for Applied Systems Analysis, 3Cranfield University, 4Vrije Universiteit Amsterdam, 5IUCN - The World
+Conservation Union
+
+in  space  and  time.  Such  an  approach  attempts  to
+overcome  the  shortcomings  of  technical  end-of-
+pipe solutions that deal with individual problems in
+isolation  and  run  the  risk  of  causing  unexpected
+consequences  (Pahl-Wostl  2007a).  However,  the
+implementation  of  an  IWRM  approach  that  fully
+accounts for the complexity and interdependencies
+of human-technology-environment (HTE) systems
+has yet to be realized. The increasing awareness of
+the complexity of environmental problems and of
+HTE systems has encouraged the development of
+new management approaches based on the insight
+that the systems to be managed are, in broad terms,
+complex,  unpredictable,  and  characterized  by
+unexpected responses to intervention (Committee
+on Grand Canyon Monitoring and Research 1999,
+Pahl-Wostl 2002, Prato 2003, Pahl-Wostl 2007b; S.
+Light and K. Blann, unpublished manuscript). Such
+complex  adaptive  systems  are  characterized  as
+hierarchies  of  components  interacting  within  and
+across scales, with emergent properties that cannot
+be  predicted  by  knowing  the  components  alone
+(Lansing 2003). Control is distributed rather than
+central  (Allen  and  McGlade  1985,  Pahl-Wostl
+1995). Rather than trying to change the structure of
+complex,  adaptive  systems 
+them
+controllable  by  external  intervention,  innovative
+management approaches aim to make use of the self-
+organizing properties of the systems to be managed.
+
+to  make 
+
+Increasing awareness of complexity is a necessary
+but  not  a  sufficient  condition  for  changing  water
+management practices. Recent attempts (e.g., Pahl-
+Wostl 2002, Galaz 2005, Jeffrey and Gearey 2006,
+W.  Medema,  B.  McIntosh,  and  P.  Jeffrey,
+unpublished manuscript) to manage water systems
+have  revealed  that  major  knowledge  gaps  in  the
+following  areas  may 
+the  successful
+implementation of new management approaches.
+
+impede 
+
+The management paradigm
+
+Current  approaches  to  realizing  integrated  water
+management build on the heritage of a command-
+and-control paradigm that has been dominating the
+water management community for decades. Such a
+paradigm requires that system behavior be highly
+predictable.  The  failure  to  implement  integrated
+approaches  may  due  less  to  the  principle  of
+integration  itself  than  to  the  mental  models  that
+frame the process of its implementation.
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+The conceptual foundation
+
+An  understanding  of  the  concepts  involved  in
+system  change,  especially  when  this  occurs  in
+surprising and nonlinear ways, is needed to make
+researchers ask questions and think about ways to
+manage change. Basic concepts of this type capture
+insights into what blocks or foments change over
+what  area  and  for  how  long,  all  of  which  is  key
+information  for  management  decisions.  Concepts
+such  as  resilience,  vulnerability,  and  adaptive
+capacity can inspire new management approaches
+and  help  us  to  better  understand  and  express  the
+results of exploratory analyses of and experiments
+involving  complex  adaptive  systems.  These
+concepts  can  also  help  us  understand  how
+management  influences  system  change.  Concepts
+of  this  type  can  help  to  characterize  water
+management regimes, by accounting for both their
+components  and  their  interdependencies,  and  to
+analyze their performance under current and future
+drivers  in  terms  of,  e.g.,  reaching  management
+objectives and the ability of the management regime
+to  adapt  to  change.  This  conceptual  foundation
+would be greatly improved by better integrating the
+complexity and unpredictability of policy and social
+learning  processes.  The  implementation  of  water
+management  policies  in  a  given  river  basin  must
+take into account its political, economic, and social
+realities and thus requires a transparent and open
+discourse between scientists and policy makers
+
+Transition processes
+
+Current water management regimes have evolved
+over  decades,  and  changing  them  will  take  some
+time.  How  can  we  directly  study  and  analyze
+transition  processes  when  the  scale  of  change
+approaches or exceeds the time horizon of academic
+projects or careers? A better understanding of the
+transition processes and the barriers and facilitators
+for change is essential to catalyze change and foster
+the implementation of a transition process toward
+integrated  and  adaptive  resource  and  water
+management 
+failures,
+despite  superior  technology  and  well-financed
+central control, give rise to a key question: How can
+we improve understanding and trust through a social
+process of learning and negotiated change?
+
+regimes.  Management 
+
+We maintain that, in environmental, economic, and
+social terms, sustainable water management can be
+successfully implemented only if more attention is
+
+given to understanding and closing these knowledge
+gaps, including the need to deal with uncertainties.
+Numerous  technical  and  quantitative  approaches
+already exist to account for uncertainties in policy
+analysis  and  formulation  (Morgan  and  Henrion
+1990). Qualitative uncertainty can be tackled via a
+variety  of  participatory  approaches  targeted  at
+achieving social learning processes and negotiations
+to  reach  consensus  despite  different  perspectives
+(Gunderson et al. 1995, Newig et al. 2005; C. Pahl-
+Wostl, M. Craps, A. Dewulf, E. Mostert, D. Tabara,
+and T. Taillieu, unpublished manuscript).
+
+is  needed 
+
+to  account  for  all 
+
+However,  a  change  in  the  overall  management
+paradigm 
+the
+uncertainties in a more comprehensive fashion. This
+paper describes how the principles of adaptive water
+management  might  improve  the  conceptual  and
+methodological basis for achieving sustainable and
+integrated water management in an uncertain and
+complex world. Sections 2 through 5 address the
+following questions:
+ 
+
+l  What types of uncertainty need to be taken
+
+into account in water management?
+ 
+
+l  What is adaptive management, and how does
+
+l  What  are  the  characteristics  of  adaptive
+
+it account for uncertainty?
+ 
+
+management regimes?
+ 
+
+l  What  is  the  role  of  social  learning  in
+managing change in the context of adaptive
+management?
+
+WATER MANAGEMENT AND THE NEED
+TO TAKE UNCERTAINTIES INTO
+ACCOUNT
+
+Because of a tradition rooted in the hydrological and
+engineering sciences, water managers have a vast
+array of experiences, methods, and tools with which
+to  address  environmental  and  quantifiable
+uncertainties.  However, 
+the  knowledge  and
+methods needed to address uncertainties in learning
+and decision-making processes are largely lacking.
+Rogers  and  Hall  (2003)  make  plain  the  need  for
+governance systems to be more flexible and to take
+uncertainty into account. Rees (2003) addresses the
+need for new strategies to manage risks in integrated
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+water  resource  management  and  emphasizes  the
+need  to  consider  economic,  social,  and  political
+uncertainties, which are often of more importance
+than environmental uncertainties. By embracing a
+wider perspective, it is possible to distinguish the
+different types of uncertainty that need to be taken
+into  account  when  addressing  a  management
+problem (Funtowicz and Ravetz 1990, Pahl-Wostl
+et al. 1998, Oberkampf et al. 2001, Walker et al.
+2003).
+
+Types of uncertainty
+
+The  best-known  type  of  uncertainty  is  a  lack  of
+knowledge because of the limited availability and
+the  variability  of  data.  Quite  a  few  technical
+approaches  exist  to  include  such  uncertainties  in
+simulation models. Uncertainties may be captured
+by  including  uncertainty  bounds  in  results  from
+model  simulations  or  other  types  of  quantitative
+assessments.
+
+An equally important but often less recognized type
+of uncertainty is uncertainty in our understanding
+of the system itself, not only its historical trends but
+also the system elements and interactions, including
+nonlinearities,  feedback  loops,  and  delays,  that
+generate those trends. This applies in particular to
+socioeconomic  systems  and  human  behavior  in
+those cases in which there is more than one possible
+interpretation of the same phenomenon. Also, our
+understanding  of  ecosystems  is  not  as  well
+developed as that of hydrological systems, the home
+turf of many scientists and practitioners working in
+water management. Furthermore, integrated water
+management requires an understanding of the full
+complexity  of  coupled  human-environment-
+technology systems.
+
+Another  source  of  uncertainty  inherent  in  system
+behavior rather than in the knowledge about it is the
+unpredictability  of  certain  factors.  In  loosely
+coupled  systems,  the  trajectory  a  system  follows
+depends greatly on the original conditions around
+which it self-organizes. One prominent example is
+climate change and corresponding changes in nature
+and the likelihood of extreme events.
+
+Uncertainty may also arise from the diversity of the
+rules and underlying mental models that determine
+and possibly constrain stakeholder perceptions and
+actions.  Stakeholders  may  have  different  ideas
+about the causes of problems and appropriate and
+
+legitimate solutions, and use these ideas to construct
+quite different concepts of what is at stake, the goals
+to be achieved, the likelihood of the success of a
+particular measure, etc. The simultaneous presence
+of  multiple  frames  of  reference  when  seeking  to
+understand  a  phenomenon 
+is  also  called
+“ambiguity” (Dewulf et al. 2005).
+
+What  does  such  a  broad  understanding  of
+uncertainty  imply  for  the  different  steps  in  the
+management cycle, particularly in terms of the ways
+in  which  different  kinds  of  uncertainties  can  be
+assessed as part of the whole sequence of steps, from
+defining the problem to monitoring the performance
+of the management strategies implemented?
+
+Problem definition
+
+Ambiguity,  i.e.,  the  possibility  of  more  than  one
+interpretation, is often encountered when defining
+the  nature  of  the  problem  such  as  this:  Is  nitrate
+pollution of groundwater by agriculture caused by
+a profit-maximizing agricultural industry or by the
+refusal  of  consumers  to  pay  higher  prices  for
+agricultural  products?  Even  when  the  strategic
+management  goal  is  prescribed  by  law,  e.g.,  the
+European Water Framework Directive, the setting
+of operational targets in areas such as the desirable
+ecological  state  of  a  river  and  the  acceptable
+economic impacts of management measures is open
+to  interpretation.  Given  uncertainties  in  the  data,
+more  than  one  legitimate  interpretation  may  be
+compatible with the available body of knowledge.
+Different perceptions and conflicts of interest thus
+require  participatory  problem  definition  and  goal
+setting, although not by experts alone, plus a clear
+recognition of the uncertainties in this process.
+
+Choice of measures
+
+in 
+
+the  performance  of 
+
+The  outcomes  of  management  measures  are
+uncertain because of the complexity of the system
+to  be  managed  and  uncertainties 
+the
+environmental  and  socioeconomic  developments
+that  affect 
+the  chosen
+management strategies. As a result, robust strategies
+that perform well under a wide range of uncertain
+but possible future developments might be chosen
+over  strategies  that  perform  best  under  certain
+conditions but fail if those conditions are not met
+(J. C. J. H. Aerts, W. Botzen, A. Van der Veen, J.
+Krykrow, and S. Werners, unpublished manuscript).
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Implementation of measures and monitoring of
+performance
+
+New knowledge about system behavior or changes
+in environmental and/or socioeconomic conditions
+may  demand  changes  in  management  strategies.
+When  actors  behave  differently  than  expected,
+management  measures 
+to
+undesirable effects. The relevance and meaning of
+indicators  for  success  or  failure  may  be  judged
+differently  by  different  groups,  and  thus  lead  to
+different  assessments  of 
+the  performance  of
+management strategies.
+
+sometimes 
+
+lead 
+
+In  the  face  of  these  challenges,  ignorance  and/or
+negligence is not an appropriate way to deal with
+uncertainty  in  water  management.  Management
+first  needs  to  broaden  the  public  debate  and
+understanding  of  such  uncertainties  and 
+the
+consequences of failing to address them or learning
+to live with them. Adaptive management explicitly
+accounts for such uncertainties and also requires a
+basic rethinking of the role of management in an
+uncertain and changing world.
+
+ADAPTIVE MANAGEMENT
+
+Adaptive  management  can  more  generally  be
+defined  as  a  systematic  process  for  improving
+management policies and practices by learning from
+the outcomes of management strategies that have
+already  been 
+implemented.  Adaptive  water
+management aims to increase the adaptive capacity
+of the water system by putting in place both learning
+processes  and  the  conditions  needed  for  learning
+processes to take place. As pointed out by Bormann
+et al. (1993), “Adaptive management is learning to
+manage by managing to learn.” In this case, learning
+encompasses a wide range of processes that span
+the  ecological,  economic,  and  socio-political
+domains in the testing of hard and soft approaches
+(Pahl-Wostl  2002,  Gleick  2003).  In  this  respect,
+adaptive management emphasizes the importance
+of the management process rather than focusing on
+goals, but without claiming that the process is an
+end 
+that
+management strategies and even goals may have to
+be adapted during the process as new information
+becomes  available,  and  that  the  quality  of  the
+process,  e.g.,  who  is  involved  and  which  kind  of
+information is taken into account, is essential for the
+outcomes finally achieved.
+
+It  explicitly 
+
+recognizes 
+
+in 
+
+itself. 
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Among environmental scientists, adaptive management
+is generally best known because of its application
+in the field of ecosystem management. The idea of
+adaptive  management  has  been  discussed  in
+ecosystem  management  for  quite  some  time
+(Holling 1978, Walters 1986, Pahl-Wostl 1995, Lee
+1999).  Adaptive  management  acknowledges  that
+our ability to predict the future key drivers of any
+given ecosystem, as well as system behavior and
+responses,  is  inherently  limited.  As  a  result,
+management  must  include  the  ability  to  change
+management practices by incorporating the insights
+gained  from  past  experience.  A  most  influential
+publication on this topic was the seminal book of
+Walters  (1986),  who  claimed 
+that  scientific
+understanding  will  come  from  the  experience  of
+management  as  an  ongoing,  adaptive,  and
+experimental  process,  rather  than  through  basic
+research or the development of ecological theory.
+What has been perceived as the most effective form
+of adaptive management, known as active adaptive
+management, uses management programs that are
+designed 
+to  experimentally  compare  selected
+policies  or  practices  by  evaluating  alternative
+hypotheses about the system being managed (e.g.,
+Gunderson et al. 1995, Kiker et al. 2001, Richter et
+al.  2003).  This  implies  that  hypotheses  can  be
+generated  and 
+the  outcomes  of
+experiments. However, when extending management
+to social-ecological systems, we must recognize that
+testing hypotheses about human behavior is not the
+same as testing hypotheses about the dynamics of
+ecosystems.  Actors  may  change  the  rules  under
+which  they  operate  when  they  are  exposed  to  a
+model  of  themselves  and  confronted  with  the
+possible  consequences  of  their  behavior.  Here,
+experiments and the generation of hypotheses may
+support processes of social learning that develop the
+capacity of the actors to deal with uncertainties and
+to  learn  from  experience.  Adaptive  management
+supports reflexive governance, and the actors within
+the  system  adopt  the  strategy  of  rethinking  and
+renegotiating their assumptions.
+
+tested  via 
+
+Adaptive  management  includes  at  its  core  an
+assessment and learning cycle. Close inspection of
+an  AEAM  (Adaptive  Environmental  Assessment
+and Management) learning cycle (Fig. 1) shows that
+it can be portrayed as a recasting of the scientific
+method of hypothesis testing, coupled interactively
+with modeling, such that it is fully integrated with
+the formulation of policy and the implementation
+or  management  of  action  plans  based  on  policy.
+Hypotheses refer to working assumptions that make
+
+it  possible  to  structure  arguments  and  the  policy
+debate. Modeling permits careful elaboration of the
+system structure and quantitative relations implied
+in hypotheses such that participants in the process
+can  explore  the  dynamic  implications  of  each
+hypothesis under different scenarios. Policy within
+the scientific context is seen more as an expression
+of how to test the hypotheses or questions generated
+during  assessment.  This  experimental  framework
+relieves  decision  makers  of  the  responsibility  to
+deliver  policies  as  “solutions,”  but  it  challenges
+them  to  join  the  experiment  and  test,  rather  than
+defend, assumptions. Getting stuck with a policy,
+even  one  that  started  as  a  good  policy,  strangles
+innovation and understanding in a changing world.
+Therefore, striving to answer good questions, i.e.,
+inquiry,  is  as  important  as  implementing  good
+policy, i.e., management. The latter should be part
+of the former, and vice versa.
+
+To  take  into  account  the  different  kinds  of
+uncertainties (see Section 2) and to implement and
+sustain the capacity for change, the whole process
+of policy development and implementation requires
+a number of steps that are part of an iterative cycle
+as represented in Fig. 2. All of these steps should be
+participatory. In the definition of the problem (0),
+different perspectives need to be taken into account.
+The design of policies (1) should include scenario
+analyses  to  identify  key  uncertainties  and  find
+strategies that perform well under different possible,
+but initially uncertain, future developments; this is
+preferable to searching for the best strategy for very
+specific  conditions,  e.g.,  climate,  because  that
+strategy may not perform well if those conditions
+are not met. Policies must be understood as semi-
+open experiments that require a careful evaluation
+of  potential  positive  or  negative 
+feedback
+mechanisms by planning and implementing other
+related  policies  (1,  2).  Decisions  should  be
+evaluated  in  part  by  how  much  it  would  cost  to
+reverse  them.  Large-scale  infrastructure  or  rigid
+regulatory frameworks increase the costs of change,
+but costs may also be related to a loss of trust and
+credibility if uncertainties and the possible need for
+changes  are  not  addressed  by  the  competent
+authority during policy development (3). The design
+of monitoring programs should include processes
+that  can  pinpoint  undesirable  developments  at  an
+early  stage.  This  might  imply  different  kinds  of
+knowledge, including community-based monitoring
+systems (3). The policy cycle must include support
+for institutional settings in which actors assess the
+performance  of  management  strategies  and
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Fig. 1. Iterative process of model development linked to policy formulation whose evaluation stimulates
+reassessment of the problem (after Sterman 2000).
+
+implement  change  if  needed  (4).  Continuous
+replanning and reprogramming based on the results
+of  monitoring 
+should  be
+institutionalized (4).
+
+evaluation 
+
+and 
+
+Moberg and Galaz (2005) introduce “adaptive co-
+management”  as  a  new  term  that  emphasizes  the
+collaboration  between  agencies,  researchers,  and
+local stewards and contrast this concept with that of
+adaptive  management,  which  they  refer  to  as
+embracing  a  top-down  governance  approach.  We
+do not consider it necessary to introduce yet another
+term  and  concept.  The  definition  of  adaptive
+management is broad enough as it stands and in no
+
+way  excludes  a  polycentric  governance  approach
+(D. Huitema, W. Egas, S. Möllenkamp, E. Mostert,
+C.  Pahl-Wostl,  and  R.  Yalcin,  unpublished
+manuscript). Its implementation should be based on
+a  participatory  assessment  and  implementation
+process  that  takes  into  account  the  particular
+institutional, cultural, and socioeconomic contexts
+in a given river basin.
+
+Furthermore,  research  shows  the  importance  of
+managing uncertainty and unexpected shocks to a
+system  by  using  a  more  flexible  and  diverse
+management style. For example, Fraser et al. (2005)
+base  their  view  of  the  importance  of  portfolio
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Fig. 2. Iterative cycle of policy development and implementation in adaptive management.
+
+in 
+
+management  and  diversifaction 
+reducing
+vulnerability  in  agro-environmental  systems  on
+panarchy theory (Gunderson and Holling 2002). A
+number of researchers (J. C. J. H. Aerts, W. Botzen,
+A.  Van  der  Veen,  J.  Krykrow,  and  S.  Werners,
+unpublished  manuscript;  J.  C.  J.  H.  Aerts  and  S.
+Werners, unpublished manuscript) are working on
+concepts  applicable  to  portfolio  management  and
+diversification  in  water  management.  Extensive
+literature  on  diversification  in  management  as  a
+means  of  becoming  more  adaptive  is  found  in
+financial research (e.g., Markovitz 1952), and more
+recently in biodiversity research (Figge 2004).
+
+transition 
+
+Finally, integrating learning with changes in policy
+is possible only if the policies already implemented
+can  be  changed.  The 
+to  adaptive
+management  relies  on  increasing  the  adaptive
+capacity  of  the  (water)  system  by  meshing
+management  and  policy  with  learning.  Adaptive
+management  aims  to  design  integrated  systems
+based on an understanding of the interdependence
+between technologies, economic factors, and formal
+and informal institutions. The problem to be tackled
+is to increase the ability of the whole system to learn
+about  and  change  the  context  within  which  it
+responds  to  change,  rather  than  reacting  to
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+undesirable  impacts  of  change.  Institutionalizing
+this  learning  capability  over  the  long  term  will
+secure the adaptive foundation of management.
+
+Adaptiveness  suggests  a  diversity  of  means
+available to address a challenge. Confining one’s
+approach, even in the attempt to become adaptive,
+to  a  single  method  could  constrain  adaptiveness
+over  the  longer  term.  There  is  no  ideal  path  to
+adaptiveness.  Choosing 
+the  most  appropriate
+management approach may depend on how well it
+satisfies certain criteria at this stage of development
+(see van Eeten and Roe 2002 for other alternatives).
+For  example,  one  may  ask  if  current  water
+management regimes that have evolved under a very
+different  management  paradigm  possess 
+the
+structural  requirements  needed 
+implement
+adaptive management approaches.
+
+to 
+
+ADAPTIVE MANAGEMENT REGIMES
+
+to 
+
+technologies, 
+
+interconnected  and  essential 
+
+A  management  regime  is  here  referred  to  as  the
+whole  complex  of 
+institutions,
+environmental  factors,  and  paradigms  that  are
+highly 
+the
+functioning  of  the  management  system  that  is
+targeted to fulfill a societal function such as water
+supply  or  flood  protection.  It  is  noted  that
+“institution” is used to refer to the formal, e.g., laws,
+and informal, e.g., norms, rules that determine the
+behavior of actors, but not to the physical structures
+that are referred to as organizations. Because of their
+high  interconnectedness  and  internal  logic,  it  is
+assumed that the individual elements of the regime
+cannot be exchanged arbitrarily. A transition from
+centralized  water 
+to
+decentralized  technologies  at  household  scale
+requires, for example, major changes in the roles of
+actors,  legal  regulations,  consumer  habits,  etc.
+(Panebianco and Pahl-Wostl 2006). How a regime’s
+performance is influenced by these factors and their
+relationships can be one basis of analysis.
+
+technologies 
+
+treatment 
+
+Another approach is to assess a regime’s capacity
+to be adaptive based on how well its performance
+meets certain requirements that can be summarized
+as follows:
+ 
+
+l  New  information  must  be  available  and/or
+collected,  e.g.,  performance  indicators  and
+indicators  of  change  that  may  lead  to
+desirable  or  undesirable  effects,  and
+monitored over appropriate time scales that
+
+are generally longer than those mandated by
+short-term political objectives.
+ 
+
+l  The actors in the management system must
+be able to process this information and draw
+meaningful conclusions from it. This can be
+achieved if a learning cycle and negotiation
+process  unite  the  actors  in  all  phases  of
+assessment,  policy 
+implementation,  and
+monitoring. Because actors pursue different
+and changing political interests, transparency
+and  leadership  are  of  major  importance  to
+make such multiparty negotiation processes
+work.
+ 
+
+to  all 
+
+l  Change must be possible in ways that are open
+and  understandable 
+the  actors.
+Managers must be able to implement change
+based  on  new  information,  processed  in  a
+transparent manner, that makes it clear who
+decides  how 
+change
+management  practices  and  what  evidence
+was used to make this decision. To do this, it
+is  necessary  to  strike  a  balance  between
+continuity  and  flexibility,  because  some
+management strategies may take one or more
+decades to be implemented and tested.
+
+and  when 
+
+to 
+
+important  question 
+
+  An 
+is  whether  current
+management regimes allow the implementation of
+management approaches that meet the requirements
+listed above. If the regimes evolved under another
+management paradigm, then this is probably not the
+case. Some structural requirements that are likely
+to make a system adaptive have been summarized
+in  Table  1.  This  table  contrasts  two  regimes  that
+differ significantly in terms of five characteristics
+in the following table (Pahl-Wostl et al. 2005, Pahl-
+Wostl 2007b). Regime typologies generally reject
+the idea of an infinite variety of approaches and are
+based on the assumption that management regimes
+can be classified into different groups based on some
+internal  logic  of  coherent  characteristics.  The
+characteristics of integrated adaptive regimes are to
+be  regarded  as  working  hypotheses,  because  the
+change toward more adaptive regimes is slow and
+available  empirical  evidence  is  limited.  One
+possible  reason  for  this  lack  of  innovation  is  the
+strong  interdependence  of  the  factors  stabilizing
+current  management  regimes.  One  cannot,  for
+example,  move  easily 
+to
+participatory  management  practices  without
+changing  the  whole  approach  to  information  and
+risk  management.  Hence,  research  is  urgently
+
+top-down 
+
+from 
+
+needed to better understand the interdependence of
+key elements of water management regimes and the
+dynamics  of  transition  processes,  so  that  we  can
+compare  and  evaluate  alternative  management
+regimes  and  implement  and  support  transition
+processes if required.
+
+The transition from a prediction-and-control to an
+integrated adaptive regime is difficult. One reason
+for  this  is  the  obstacles  that  impede  the  practical
+implementation of adaptive management, such as
+the  high  costs  of  information  gathering  and
+monitoring, resistance from managers who may fear
+increased transparency and loss of control, political
+risks because of the uncertainty of future benefits,
+the lack of stable funding, and fear of failure (Lee
+1993). In an analysis of the implementation of the
+adaptive  management  framework  in  the  Florida
+Everglades,  Gunderson  (1999)  identified  three
+major barriers to the successful implementation of
+adaptive  management:  inflexibile  social  systems,
+ecological  systems  that  lack  resilience,  and  the
+technical  challenges  associated  with  designing
+experiments.
+
+Institutional  challenges  can  also  restrict 
+the
+usefulness  of  adaptive  management  approaches.
+For  example,  Lee  (1993)  identifies  complicated
+social  dynamics  and  institutional  rigidities  as
+possible barriers to the successful application of an
+adaptive management approach. Institutional needs
+for  information  are  an  associated  feature  here.
+Learning  is  information-intensive  and  requires
+active  stakeholder  participation  (Margoluis  and
+Salafsky  1998).  The  level  of  cooperation  that  is
+required  to  gather  the  information  needed  for
+adaptive management indicates that many different
+stakeholders need to maintain a commitment to the
+learning process.
+
+To initiate the transition to adaptive management,
+there must be widespread dissatisfaction with the
+current  or  anticipated  performance  of  existing
+management strategies, those involved must have
+the  ability  to  detect  and  monitor  potential  gaps
+between  the  achieved  and  desired  goals  of  the
+current  management  system,  and  those  involved
+must be willing to change. In this type of process,
+the  initial  phase  is  particularly  crucial,  and  the
+development  of  informal  actor  networks  can
+contribute  to  success  (Olsson  et  al.  2006,  Pahl-
+Wostl  et  al.  2006).  An  alternative  perspective  on
+policy and change is necessary in situations in which
+social  learning  processes  are  precursors  to  more
+adaptive management regimes.
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+PROCESSES OF CHANGE AND THE ROLE
+OF SOCIAL LEARNING
+
+The role of social learning in understanding
+and managing change
+
+Why is social learning needed in the transition to
+adaptive water management? 
+
+As pointed out in the previous section, there is often
+a mutual dependence among regime elements such
+as  technical  infrastructure,  e.g.,  large  technical
+infrastructure for flood protection; citizen behavior,
+e.g.,  expectations  regarding  safety  in  floodplains,
+risk  perception;  and  engineering  rules  of  good
+practice. In many cases they have co-evolved over
+a long period of time. Mutual relations of this type
+can develop into pathological path dependence or
+so-called  “lock-in”  situations  that  block  changes
+toward  new  resource  management  schemes  and
+require  collective  learning  and  decision-making
+processes  (Pahl-Wostl  2002).  To  escape  lock-in,
+actors  need  to  learn  to  recognize  how  their  own
+frames  of  reference  influence  and  constrain  their
+thinking  and  that  other  legitimate  frames  of
+reference exist. Collective action and the resolution
+of  conflicts  require  that  people  recognize  their
+interdependence and their differences and learn to
+deal with them constructively. Mutual recognition
+of  shared  paradigms  can  open  the  door  to
+compromise. The different groups need to learn and
+increase  their  awareness  of  their  biophysical
+environment  and 
+the  complexity  of  social
+interactions. This does not imply that a consensus
+must  be  achieved,  but  what  is  required  is  the
+development of a minimum level of trust as a basis
+for transparent and efficient communication. Social
+learning  in  river  basin  management  is  needed  to
+develop  and  sustain  the  capacity  of  different
+authorities, experts, interest groups, and the public
+to manage their river basins in a sustainable way
+and balance multiple and competing interests for the
+benefit of the social-ecological system as a whole.
+
+Social learning for adaptive management
+
+A  concept  for  social  learning  in  river  basin
+management has been developed in the context of
+the European project HarmoniCOP (Harmonizing
+COllaborative  Planning).  The  main  objectives  of
+HarmoniCOP (www.harmonicop.info)  were 
+to
+increase  the  understanding  of  participatory  river
+basin  management  in  Europe;  generate  practical,
+useful information about and improve the scientific
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Table  1.  Ideal-typical  characterizations  of  a  prediction-and-control  and  an  integrated  adaptive  water
+management regime.
+
+Characteristic
+
+Prediction-and-control regime
+
+Integrated adaptive regime
+
+Governance structure
+
+Sectoral integration
+
+Scale of analysis and
+operation
+
+Information management
+
+Governance is centralized and
+hierarchical, with narrow stakeholder
+participation.
+
+Sectors are separately analyzed,
+resulting in policy conflicts and the
+emergence of chronic problems.
+
+Transboundary problems arise when
+river sub-basins are the exclusive scale
+of analysis and management.
+
+Governance is polycentric and horizontal, with
+broad stakeholder participation.
+
+Cross-sectoral analysis identifies emergent
+problems and integrates policy implementation.
+
+Transboundary issues are addressed by multiple
+scales of analysis and management.
+
+Understanding is fragmented by gaps
+and the failure to integrate information
+sources that are proprietary.
+
+Comprehensive understanding is achieved by
+open, shared information sources that fill gaps
+and facilitate integration.
+
+Infrastructure
+
+A massive, centralized infrastructure has
+single sources of design, power, and
+delivery.
+
+A decentralized infrastructure on an appropriate
+scale has diverse sources of design, power, and
+delivery.
+
+Finances and risk
+
+Financial resources are concentrated in
+structural protection, i.e., sunk costs.
+
+Financial resources are diversified using a broad
+set of private and public financial instruments.
+
+base of social learning and the role of information
+and communication technology tools in river basin
+management; and support the implementation of the
+European  Water  Framework  Directive  The
+approach  adopted  by  the  HarmoniCOP  project  is
+characterized  by  a  broad  understanding  of  social
+learning  that  is  rooted  in  the  more  interpretative
+strands of the social sciences. Figure 3 represents
+the  framework  for  social  learning  developed  to
+account for learning processes in actor networks in
+water  resources  management  (Pahl-Wostl  2002,
+Craps et al. 2003, Bouwen and Taillieu 2004). The
+framework is structured into context, process, and
+outcomes,  plus  a  feedback  loop  to  account  for
+change  in  a  cyclic  and  iterative  learning  process.
+The context refers to the governance structure and
+the natural environment in a river basin. To improve
+the state of the environment implies in practice most
+often  a  change  in  the  governance  structure.  The
+process refers to multiparty interactions in formal
+or informal negotiations; processes of this type are
+at the heart of iterative policy cycles (see Fig. 2).
+
+Social learning is assumed to occur at two levels:
+(1) at short to medium time scales, it occurs at the
+level of processes between actors, and (2) at medium
+to long time scales, at the level at which structural
+context shifts the governance structure.
+
+One distinct feature is the emphasis on relational
+processes,  which  takes  into  account  the  fact  that
+dealing with factual information about a problem is
+always  embedded  in  a  context  of  negotiated
+meaning.
+
+The  process  concept  that  refers  to  multiparty
+interactions in actor networks has two pillars (Fig.
+3).  They  relate  to  the  processing  of  factual
+information  about  a  problem, 
+i.e.,  content
+management, and engaging in processes of social
+exchange, 
+involvement.  Social
+involvement refers to essential elements of social
+processes, such as the framing of the problem, the
+management  of  the  boundaries  between  different
+stakeholder  groups,  the  type  of  ground  rules  and
+
+social 
+
+i.e., 
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Fig. 3. Conceptual framework for social learning in resources management. In the center are multiparty
+processes that are influenced by the context in which they are embedded and that produce outcomes that
+may lead to changes in the context, and thus to a cyclic and iterative long-term process of change.
+
+negotiation  strategies  chosen,  or  the  role  of
+leadership in the process. As an example, the role
+of framing is explained in more detail.
+
+Framing 
+
+During the initial stages of dealing with a problem,
+the  framing  and  reframing  of  a  problem  domain
+determine  the  direction  of  the  overall  process.
+Frames  may  be  derived  from  the  culture,  social
+roles, scientific disciplines, etc. Actors have frames
+that determine how they make sense of and interpret
+
+their  physical  and 
+
+information  and 
+social
+environment. Differences in how an issue is framed
+are  among  the  key  reasons  for  problems  in
+communication  and  entrenched  conflicts  among
+actors.  The  framing  of  an  issue  includes,  for
+example, what is at stake, who should be included,
+and  which  roles  the  different  actors  should  play.
+Processes  of  framing  and  reframing  are  essential
+elements  of  group  social  dynamics  during  the
+negotiation of the meaning of key issues such as the
+goals to be achieved or how to measure management
+success.  Experienced  negotiators  know 
+that
+
+powerful  actors  often  impose  their  frames  or
+interpretations  of  an  issue  onto  a  process.  A
+relational practice may be a moderated role-playing
+game or policy exercise in which actors are willing
+to reflect and discuss their own perspectives as well
+as listen to others. This type of social learning does
+not necessarily lead to consensus, but develops the
+ability to deal with differences constructively when
+transparency makes clear everyone's intentions.
+
+A  central  hypothesis  of  the  concept  of  social
+learning  is  that  social  involvement  and  the
+management of content are strongly interdependent
+and cannot be separated. The overall process aims
+to  improve  both  technical  qualities,  such  as  the
+improvement of the state of the environment, and
+relational  qualities,  such  as  an  increase  in  the
+capacity of a stakeholder group to manage a problem
+and/or institutional change. This leads as well to a
+different  interpretation  of  the  role  of  information
+and  of  information  and  communication  tools  and
+the  ability  of  an  actor  network  to  use  new
+information  in  social  learning  processes  and  to
+determine collective action. Knowledge relevant for
+decision  making  cannot  be  reduced  to  objective
+facts devoid of context and subjective interpretation.
+The  development  of  joint  interpretations  and  the
+implementation  of  collective  action  need 
+to
+integrate tacit knowledge, which is not externalized
+and codified and can thus only be shared through
+joint  activities  that  require  physical  proximity
+(Nonaka  1991).  Participatory  methods  such  as
+group model building and role-playing games are
+based on relational practices and can thus support
+social learning in actor groups (Pahl-Wostl and Hare
+2004,  Maurel  et  al.  2007).  Such 
+learning
+environments  are  perceived  to  be  crucial  for  the
+adaptive  governance  of  social-ecological  systems
+(Folke  et  al.  2005,  Pahl-Wostl  2005).  Hence,  an
+entirely  new  element  of  monitoring  refers  to  the
+quality  of  the  communication  process  in  actor
+networks  and  the  appropriateness  of  the  chosen
+institutional setting.
+
+Such  multi-actor  processes  are  embedded  in  a
+structural  governance  context  that  has  a  strong
+influence and may constrain or facilitate learning
+processes (Tippett et al. 2005).
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Toward guidance for managing change
+
+The  discussion  in  the  previous  section  on  social
+learning in actor networks developed the image of
+dynamic  and  multilevel  policy  arenas  and
+highlighted  the  fact  that  there  may  be  barriers  to
+change, given the importance of context and path
+dependence. How can we guide and manage change
+to overcome such barriers?
+
+As  highlighted  in  Fig.  3,  decisions  and  the
+management of water resources do not take place
+in  isolation,  but  are  rather  complex  political
+processes  that  take  shape  at  different  semi-
+autonomous  political 
+this
+understanding to concrete political actions it may
+be  useful  to  distinguish  the  following  levels
+explicitly (Pahl-Wostl et al. 2006):
+ 
+
+levels.  To 
+
+link 
+
+l  The  context  level  incorporates  the  wider
+political  and  institutional  environment  that
+determines the governance structure.
+ 
+
+l  The network level refers to the policy arenas
+that  determine  the  participating  actors  and
+type of institutions, i.e., who is in and who is
+out  of  the  process,  and  thus  also  to  the
+boundaries and framing of the problems and
+solutions taken into account.
+ 
+
+l  The  social  interaction  or  game  level  deals
+with  the  institutions  and  rules  that  shape
+individual behavior and collective negotiation
+and 
+learning  and  decision-making
+processes.  Such  interactions  are  referred  to
+here as games in which rules determine the
+positions of the actors, the actions they can
+take, etc.
+
+the 
+
+  Understanding  how,  at  the  levels  of  context,
+networks, and games, actors and institutions create
+perceptions and make use of tools is critical for the
+adaptive  management  of  water  resources.  The
+hierarchical  levels  described  are  not  controlled
+through  top-down  authority,  but  operate  semi-
+independently through sets of interactions among
+variables operating on similar planes. For example,
+the context level would refer to decision spaces for
+adaptive  management  operating  over  decades,
+whereas the game level would shape management
+options  over  weeks  or  months.  The  coupling
+between the various levels shapes the outcome of
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+decisions about water management and investments
+and hence determines the adaptive capacity of the
+water sector or of a specific river basin.
+
+strongly  influence  policy  development  and
+implementation, an influence that should be
+made explicit.
+
+These ideas form the basis of a coherent framework
+for analyzing the political context within which an
+adaptive capacity needs to be developed for river
+basin management. Table 2 summarizes 12 political
+actions that actors need to consider if they wish to
+develop adaptive capacity for the management of a
+river  basin.  These  actions  require  active  social
+learning that involves perceptions, tools, actors, and
+institutions at the context, network, and game levels.
+In  the  following  subsections  the  different  actions
+are described in more detail.
+
+The context level 
+
+The context level refers to the wider context within
+which river basin management takes shape. It refers
+to societal views, national constitutions and laws,
+the approaches and tools used for management, and
+the existing landscape of actors and institutions that
+is  formed  over  long  periods  of  time.  It  typically
+affects  the  management  of  several  river  basins
+because  it  generally  constrains  and  determines
+practices at larger spatial scales, such as countries
+or socioeconomic regions. The two main activities
+that take place at the context level are:
+
+l 
+
+l 
+
+shaping and developing. Actors at the context
+level  can  shape  the  context  and  discourse
+(Olsson et al. 2006) within which networks
+are  managed  and  games  are  conducted  by
+using opportunities to change existing water
+policies.  New  tools  or  mechanism  can  be
+developed that can change the way networks
+and  policy  actors  find  solutions  to  water
+allocation problems.
+ 
+grouping and creating. Stakeholders in river
+basins and at national levels often cluster in
+different  groups  that  hold  similar  views  or
+interests.  Creating  or  (re-)grouping  actors
+either at national levels or within a river basin
+can help to change the way a policy network
+is managed or functions. Although different
+actors can cluster in different ways, another
+option 
+to  create  new  (groups  of)
+institutions. This often happens at the national
+level when a new water policy is developed
+and the existing institutional setup needs to
+be  brought 
+the  policy.
+Institutions also refer to social norms that may
+
+line  with 
+
+is 
+
+into 
+
+ The network level
+
+to 
+
+It  pertains 
+
+The network level refers primarily to the provincial
+context  of  river  basin  management,  even  though
+basins  span  continents. 
+the
+relationships  established  between  interdependent
+institutions and how they do or do not cooperate.
+The context level determines how the network level
+will be formed and function, and in turn the network
+level  determines  how  organizations  will  play  the
+game, i.e., their approach to decision making and
+their  attitudes  to  new  tools  for  river  basin
+management.  The  network  level  is  formed  over
+years and usually applies to the management of a
+regional river basin. At the network level, the actors
+focus on:
+
+l 
+
+l 
+
+reframing  and  selecting.  Social  learning
+includes the reframing of problems to make
+sense of available information and assess its
+use in adaptive river basin management. The
+network can also be used as a tool to bring
+forward ideas and reframe river management
+problems  into  a  more  manageable  form.
+Traditional  instruments,  such  as  existing
+regulations used for river basin management,
+may not be very effective within a network;
+instead,  instruments  must  be  selected  and
+altered  to  fit  the  frame  of  reference  of  the
+network. The tools selected and adapted for
+the network depend on the actors that make
+up the network and the relationships that exist
+between the actors (Kickert et al. 1999).
+ 
+activating  and  reforming.  Sometimes  new
+actors are activated, i.e., created or brought
+into a network to carry out functions needed
+to manage the network. New actors can be
+introduced  by  setting  up  or  reorganizing  a
+commission, recruiting them, or bringing in
+an advisor (Kickert et al. 1999). For example,
+an association of business owners could be
+created  to  take  part  in  public  discussions
+about floodplain management to ensure that
+the interests of the business community are
+represented. Introducing a new party into a
+network  does  not  automatically  solve
+problems and create new ideas; rather, new
+ideas  arise  as  a  result  of  the  interactions
+between the new and existing members of a
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Table 2. Water management hierarchies for adaptive management.
+
+Hierarchical levels
+
+Perceptions
+
+Tools
+
+Context level
+
+Network level
+
+Game level
+
+Shaping
+
+Reframing
+
+Convenanting
+
+Developing
+
+Selecting
+
+Using
+
+Actors
+
+Grouping
+
+Activating
+
+Switching
+
+Institutions
+
+Creating
+
+Reforming
+
+Arranging
+
+network. Reframing problems through such
+interactions  will  lead  to  actual  reformation
+through action. For example, institutions that
+are  created  or  activated  can  be  part  of  the
+reforming  process  in  a  network.  Network
+management steers the process of reforming
+as perceptions shift and actors enter and leave
+the network.
+
+ The game level
+
+Networks, which are the patterns of relationships
+between actors, are the context in which games take
+place. At the same time, games change and influence
+the  shape  of  networks.  Actors  within  networks
+choose  strategies,  i.e.,  policy-making  processes,
+that  seem  rational  according  to  the  network  they
+interact with, their individual goals, and the overall
+context of the policy-making process. Furthermore,
+the  actors  driving  river  basin  management  at  the
+game  level  are  influenced  by  other  forms  of
+management,  e.g.,  agricultural  management,  and
+the relationships developed in the network through
+present  and  past  interactions.  A  characteristic
+feature of a game is that the result derives from the
+interactions between the strategies of all the actors
+involved.  The  rules  of  the  game  interactions  put
+constraints on actors but are at the same time the
+product of their interactions (Kickert et al. 1999).
+The  game 
+individuals  and
+organizations that make decisions over periods of
+several months. Their essential activities include:
+
+includes 
+
+level 
+
+l 
+
+covenanting and using. Covenanting refers to
+a management strategy aimed at improving
+the consistency of the decisions made in the
+game  by  exploring  and  consolidating  the
+
+l 
+
+perceptions of the actors involved (Klijn and
+Teisman 1997). The covenanting concept is
+used to emphasize that specialized actors, e.
+g., network managers, have the potential to
+enrich new initiatives. These actors may need
+to be trained to use the tools they manipulate
+to effectively play the game. For example, a
+tool  kit  for  environmental  flows  can  be
+developed to guide river basin management,
+but it may be of little use unless the actors are
+trained in how to apply the knowledge from
+the tool kit. This learning can evolve over time
+through  interactions  with  other  actors  or
+through active training courses.
+ 
+switching on and arranging. Policy-making
+processes  can  be  improved  by  figuratively
+switching on specific participants. Selective
+activation  demands  that  managers  assess
+which  actors  are  essential  at  any  given
+moment in the policy process, whether or not
+they should be involved, and how to involve
+them.  The 
+through
+activating and deactivating actors depends on
+choosing the appropriate actors, as well as the
+willingness and ability of actors to invest time
+and resources in a policy process. Arranging
+refers  to  the  capacity  of  the  participants
+involved  to  develop  platforms  on  which
+games can be played and to their ability to
+develop  or  use 
+interaction.
+Arrangement as a management activity is the
+art of linking interdependent actors in such a
+way that rearrangements do not result in high
+transaction  costs  (Kickert  1999).  Different
+actors may be brought in or new relationships
+forged  to  change  the  status  quo  and  move
+forward on an issue.
+
+success  achieved 
+
+rules 
+
+for 
+
+CONCLUSIONS AND CHALLENGES
+
+A range of strong arguments supports the claim for
+a  paradigm  shift  in  water  management.  The
+emphasis on reducing complexity, externalizing the
+human dimension, and designing technical systems
+that can be controlled has resulted in quite rigid and
+inflexible management systems that do not perform
+well  in  times  of  uncertainty  and  change.  To
+implement integrated management approaches that
+take into account the complexity of the systems to
+be managed requires a change in the understanding
+of what management implies, how and which kinds
+of  uncertainties  are  addressed,  and  how  risks  are
+managed.  Complex  social-ecological  systems
+cannot  be  predicted  and  controlled,  and  a  more
+adaptive approach is required.
+
+However, integrated and adaptive water management
+approaches  cannot  be 
+implemented  without
+profound  structural  changes.  In  industrialized
+countries  with  a  strong  prediction-and-control
+tradition of water management, a complete system
+redesign  comprising  technologies,  organizational
+structure, regulations, and thus a major transition is
+needed. In many developing countries, the base for
+management has yet to be developed. The changes
+needed are no less profound, but these countries face
+entirely different problems. Many countries suffer
+from a lack of political stability and the absence of
+any  reliable  administration.  The  knowledge  base
+and  monitoring  capacity  for  implementing  water
+management  are  often  missing.  Building  the
+capacity to manage water has to be seen in a larger
+context  of  socioeconomic  development.  Given
+these  uncertainties,  an  adaptive  and  flexible
+management  approach  seems  to  be  mandatory.
+These  countries  need  to  develop  and  implement
+management strategies tailored to their needs and
+the political and environmental context rather than
+trying  to  adopt  blueprints  for  institutions  or
+technologies  that  may  be  entirely  unsuitable  for
+their situation.
+
+We  argue  that  change  and  the  design  and
+implementation of integrated and adaptive, and thus
+sustainable, water management regimes cannot be
+brought  about  by  top-down  implementation  but
+require a process of learning and change. This can
+be explored by recognizing how decisions evolve
+at the context, network, and game levels. Dynamic
+and flexible actor platforms are needed that allow
+different  perspectives  and  the  interpretation  and
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+negotiation  of 
+the  different  dimensions  of
+sustainability. As numerous analyses have shown,
+learning often occurs in shadow networks outside
+the  formal  water  management  context.  We  argue
+that  learning  cycles  should  be  implemented  as  a
+recognized and important element of the established
+management  regime.  Social  learning  is  of  major
+importance  to  initiate  change  in,  to  build,  and  to
+sustain the adaptive capacity of water management
+systems.  A  range  of  knowledge  gaps  still  exists.
+Nevertheless, 
+these
+recommendations  for  policy  makers  to  develop,
+implement,  and  sustain  adaptive  management
+practices to support sustainable water management
+in times of increased uncertainty because of global
+change:
+ 
+
+is  possible 
+
+to  make 
+
+it 
+
+l  The complex social-ecological nature of river
+basin  environments  and 
+inherent
+uncertainties associated with their management
+have  to  be  taken  into  account  in  policy
+development and implementation.
+ 
+
+the 
+
+l  Management strategies should be robust and
+perform well under a range of possible, but
+uncertain,  future  developments.  This  might
+imply  the  need  for  a  diversification  in
+management measures.
+ 
+
+l  The  design  of  transparent  and  open  social
+learning  processes  is  a  key  requirement  of
+sustainable water management regimes.
+ 
+
+l  Effort has to be devoted to building trust and
+social  capital  for  problem  solving  and
+collaborative governance.
+ 
+
+l  An  increase  in,  and  maintenance  of,  the
+flexibility  and  adaptive  capacity  of  water
+management  regimes  should  be  a  primary
+management goal.
+ 
+
+l  Entrenched  perceptions  and  beliefs  block
+innovation  and  change.  Space  has  to  be
+provided  for  creative  and  out-of-the-box
+thinking and experiments.
+ 
+
+l  There  is  a  significant  need  to  train  a  new
+generation of water management practitioners
+skilled  in  participatory  system  design  and
+implementation.
+
+the  capacity 
+
+Implementing these recommendations would help
+develop 
+to  devise  alternative
+management  strategies  and  to  choose  between
+alternatives based on sound deliberation. There are
+reasons to be optimistic that these recommendations
+will fall on fertile ground. For a long time, discourse
+on radical change in water management has taken
+place in shadow networks. However, the political
+recognition  and  increased  awareness  of  climate
+change and unprecedented experiences with failures
+of water management have opened up windows of
+opportunity in which the willingness to experiment
+with new approaches is much higher than it used to
+be. Future work on comparative analyses will still
+need to develop a sound classification of problems
+and associated uncertainties and processes suitable
+for 
+implementation  of
+management approaches that take into account the
+characteristics  of  the  environmental  and  societal
+context in which they are embedded.
+
+the  development  and 
+
+Responses to this article can be read online at:
+http://www.ecologyandsociety.org/vol12/iss2/art30/responses/
+
+Acknowledgments:
+
+We would like to thank our partners in the NeWater
+project for numerous inspiring discussions on the
+themes elaborated in this paper, and Georg Holtz
+and Art Dewulf for their critical review of an earlier
+draft of the current paper. The work presented in
+this  paper  was  financially  supported  by  the
+European  Commission  (Contract  No.  511179  -
+NEWATER). 
+
+LITERATURE CITED
+
+Allen,  P.,  and  J.  McGlade.  1985.  Modeling
+complexity: 
+the  dynamics  of  discovery  and
+exploitation in a fisheries example. Pages 49-76 in 
+I.  Prigogine  and  M.  Sangliere,  editors.  Laws  of
+nature and human conduct. Task Force on Research,
+Information  and  Study  of  Science,  Brussels,
+Belgium.
+
+Bormann,  B.  T.,  P.  G.  Cunningham,  M.  H.
+Brookes,  V.  W.  Manning,  and  M.  W.  Collopy. 
+1993.  Adaptive  ecosystem  management  in  the
+Pacific  Northwest.  U.S.  Forest  Service,  General
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Technical Report PNW-GTR-341.
+
+Bouwen,  B.,  and  T.  Taillieu.  2004.  Multiparty
+collaboration as social learning for interdependence:
+developing  relational  knowing  for  sustainable
+natural 
+Journal  of
+Community  and  Applied  Social  Psychology 
+14:137-153.
+
+resource  management. 
+
+Committee  on  Grand  Canyon  Monitoring  and
+Research. 1999. Downstream: adaptive management
+of  Glen  Canyon  Dam  and  the  Colorado  River
+ecosystem;  report  to  National  Research  Council. 
+National Academy Press, Washington, D.C., USA.
+Available online at: http://www.nap.edu/books/030
+9065798/html/R1.html.
+
+Craps, M., editor.  2003.  Social  learning  in  river
+basin management; report of workpackage 2 of the
+HarmoniCOP project. (http://www.harmonicop.uni-
+osnabrueck.de/_files/_down/SocialLearning.pdf).
+
+Dewulf, A., M. Craps, R. Bouwen, T. Taillieu, and
+C.  Pahl-Wostl.  2005.  Integrated  management  of
+natural resources: dealing with ambiguous issues,
+multiple actors and diverging frames. Water, Science
+and Technology 52:115-124.
+
+Figge, F. 2004. Bio-folio: applying portfolio theory
+to  biodiversity.  Biodiversity  and  Conservation 
+13:827-849.
+
+Folke, C., T. Hahn, P. Olsson, and J. Norberg. 
+2005.  Adaptive  governance  of  social-ecological
+systems.  Annual  Review  of  Environment  and
+Resources 30:441-473.
+
+Fraser, E. D. G., W. Mabee, and F. Figgre. 2005.
+A framework for assessing the vulnerabulity of food
+systems to future shocks. Futures  37:465-479.
+
+Funtowicz,  S.  O.,  and  J.  R.  Ravetz.  1990.
+Uncertainty  and  quality  in  science  for  policy. 
+Kluwer, Dordrecht, The Netherlands.
+
+Galaz,  V.  2005.  Does  the  EC  Water  Framework
+Directive  build  resilience?  Harnessing  socio-
+ecological 
+in  European  water
+management. Resilience and Freshwater Initiative
+Policy  Paper.  Swedish  Water  House,  Stockholm,
+Sweden.
+
+complexity 
+
+Gleick, P. 2003. Global freshwater resources: soft-
+path  solutions  for  the  21st  century.  Science 
+
+302:1524-1528.
+
+Global  Water  Partnership-Technical  Advisory
+Committee (GWP-TAC). 2000. Integrated water
+resources management. TAC Background Papers,
+No. 4. GWP, Stockholm, Sweden.
+
+Gunderson,  L.  1999.  Resilience,  flexibility  and
+adaptive  management—antidotes  for  spurious
+certitude?  Conservation  Ecology  3(1):7.  [online]
+URL: http://www.consecol.org/vol3/iss1/art7.
+
+Gunderson,  L.  H.,  and  C.  S.  Holling,  editors. 
+2002. Panarchy: understanding transformation in
+human  and  natural  systems. 
+Island  Press,
+Washington, D.C., USA.
+
+Gunderson, L. H., C. S. Holling, and S. S. Light,
+editors. 1995. Barriers and bridges to the renewal
+of ecosystems and institutions. Columbia University
+Press, New York, New York, USA.
+
+Holling, C. S., editor. 1978. Adaptive environmental
+assessment  and  management.  John  Wiley,  New
+York, New York, USA.
+
+Jeffrey, P., and M. Gearey. 2006. Integrated water
+resources  management:  lost  on  the  road  from
+ambition 
+to  realisation?  Water,  Science  and
+Technology 53(1):1-8.
+
+Kickert,  W.  J.  M.,  E.-H.  Klijn,  and  J.  F.  M
+Koppenjan.  1999.  Managing  complex  networks:
+strategies for the public sector. Sage, London, UK.
+
+Kiker, C. F., J. W. Milon, and A. W. Hodges. 2001.
+Adaptive  learning  for  science-based  policy:  the
+Everglades  restoration.  Ecological  Economics 
+37:403-416.
+
+Klijn, E.-H., and G. R. Teisman. 1997. Strategies
+and games in networks. Pages 98-118 in W. J .M.
+Kickert,,  E.-H.  Klijn,  and,  J.F.M  Koppenjan,
+editors. Managing complex networks: strategies for
+the public sector. Sage, London, UK.
+
+Lee,  K.  N.  1993.  Compass  and  gyroscope:
+integrating politics and science for the environment. 
+Island Press, Washington, D.C., USA.
+
+Lee, K. N., 1999, Appraising adaptive management.
+Conservation Ecology 3(2):3.
+[online] URL: http://www.ecologyandsociety.org/vol3/
+iss2/art3/.
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Margoluis, R., and N. Salafsky. 1998. Measures
+of  success:  designing,  monitoring  and  managing
+conservation  and  development.  Island  Press,
+Washington, D.C., USA.
+
+Markowitz, H. 1952. Portfolio selection. Journal
+of Finance 17:1.
+
+Maurel, P., M. Craps, F. Cernesson, R. Raymond,
+P. Valkering, and N. Ferrand.  2007. Concepts and
+methods  for  analysing  the  role  of  IC-tools  in  SL
+processes for river basin management. Environmental
+Modelling and Software 22:630-639.
+
+conventional 
+
+Moberg, F., and V. Galaz. 2005. Resilience: going
+from 
+freshwater
+management for human and ecosystem compatibility. 
+Swedish  Water  House  Policy  Brief,  No.  3.
+Stockholm International Water Institute, Stockholm,
+Sweden.
+
+to  adaptive 
+
+Morgan,  M.  G.,  and  M.  Henrion.    1990.
+Uncertainty: a guide to dealing with uncertainty in
+quantitative  risk  and  policy  analysis.  Cambridge
+University Press, Cambridge, UK.
+
+Newig, J., C. Pahl-Wostl, and K. Sigel. 2005. The
+role of public participation in managing uncertainty
+in  the  implementation  of  the  water  framework
+directive. European Environment 15:333-343.
+
+Newson, M. 1992. Land, water, and development:
+sustainable  management  of  river  basin  systems. 
+Routledge, London, UK.
+
+Nonaka, 
+company. Harvard Business Review 69:96-104
+
+I.  1991.  The  knowledge-creating
+
+Oberkampf, W. L., J. C. Helton, C. A. Joslyn, S.
+F. Wojtkiewicz, and S. Ferson. 2001. Challenge
+problems:  uncertainty  in  system  response  given
+uncertain  parameters,  Epistemic  Uncertainty
+Project. Available online at http://www.sandia.gov/
+epistemic/prob.statement.12-01.pdf.
+
+Olsson, P., L. H. Gunderson, S. R. Carpenter, P.
+Ryan, L. Lebel, C. Folke, and C. S. Holling. 2006.
+Shooting  the  rapids:  navigating  transitions  to
+adaptive governance of social-ecological systems.
+Ecology and Society 11(1):18 [online] URL: http://
+www.ecologyandsociety.org/vol11/iss1/art18/.
+
+Pahl-Wostl,  C.  1995.  The  dynamic  nature  of
+
+Ecology and Society 12(2): 30
+http://www.ecologyandsociety.org/vol12/iss2/art30/
+
+Technovation 26(9):1090-1100.
+
+Prato,  A.  2003  Adaptive  management  of  large
+rivers with special reference to the Missouri River.
+Journal  of 
+the  American  Water  Resources
+Association 39(4):935-946.
+
+Rees,  J.  2002.  Risk  and 
+integrated  water
+management.  TAC  Background  Papers,  No.  6.
+Global Water Partnership, Stockholm, Sweden.
+
+Richter, B. D., R. Mathews, D. L. Harrison, and
+R.  Wigington.    2003.  Ecologically  sustainable
+water  management:  managing  river  flows  for
+ecological 
+integrity.  Ecological  Applications 
+13:206-224.
+
+Rogers,  P.,  and  A.  Hall.  2003.  Effective  water
+governance.  TAC  Background  Papers,  No.  7.
+Global Water Partnership, Stockholm, Sweden.
+
+Sterman, J. D. 2000. Business dynamics: systems
+thinking  and  modeling  for  a  complex  world. 
+McGraw-Hill/Irwin, Boston, Massachusetts, USA.
+
+Tippet, J., B. Searle, C. Pahl-Wostl, and Y. Rees. 
+2005. Social learning in public participation in river
+basin  management.  Environmental  Science  &
+Policy 8(3):287-299.
+
+van Eeten, M. J. G., and E. Roe. 2002. Ecology,
+engineering, and management; reconciling ecosystem
+rehabilitation  and  service  reliability.  Oxford
+University Press, New York, New York, USA.
+
+Walker, W., P. Harremoës, J. Rotmans, J. Van der
+Sluijs, M. Van Asselt, P. Jansen, and M. P. Krayer
+von  Krauss.  2003.  Defining  uncertainty:  a
+conceptual  basis  for  uncertainty  management  in
+model-based  decision 
+Journal  of
+Integrated Assessment 4(1):5-17.
+
+support. 
+
+Walters,  C.  J.  1986.  Adaptive  management  of
+renewable  resources.  McGraw  Hill,  New  York,
+New York, USA.
+
+ecosystems:  chaos  and  order  entwined.  Wiley,
+Chichester, UK.
+
+Pahl-Wostl, C. 2002. Towards sustainability in the
+water sector: the importance of human actors and
+processes  of  social  learning.  Aquatic  Sciences 
+64:394-411.
+
+Pahl-Wostl,  C.  2006.  The  importance  of  social
+learning in restoring the multi-functionality of rivers
+and  floodplains.  Ecology  and  Society  11(1):10.
+[online] URL: http://www.ecologyandsociety.org/vol11/
+iss1/art10/.
+
+Pahl-Wostl,  C.  2007a.  The 
+implications  of
+complexity  for  integrated  resources  management.
+Environmental Modelling and Software 22:561-569.
+
+Pahl-Wostl, C. 2007b. Transition towards adaptive
+management  of  water  facing  climate  and  global
+change. Water Resources Management 21(1):49-62.
+
+Pahl-Wostl, C., G. Berkamp. and K. Cross. 2006.
+Adaptive  management  of  upland  rivers  facing
+global  change:  general 
+insights  and  specific
+considerations  for  the  Rhone  basin.  Available
+online at: http://rosenberg.ucanr.org/documents/
+Rosenberg_Paper_Pahl-Wostlcanada.pdf.
+
+Pahl-Wostl,  C.,  T.  Downing,  P.  Kabat,  P.
+Magnuszewski,  J.  Meigh,  M.  Schlueter,  J.
+Sendzimir,  and  S. Werners.  2005.  Transition  to
+adaptive water management; the NeWater Project.
+NeWater  Report,  No.  1.  NeWater  Project,
+University  of  Osnabrück,  Osnabrück,  Germany.
+Available online at: www.newater.info.
+
+Pahl-Wostl, C., and M. Hare. 2004. Processes of
+social learning in integrated resources management.
+Journal  of  Applied  and  Community  Psychology 
+14:193-206.
+
+Pahl-Wostl, C., C. C. Jaeger, S. Rayner, C. Schär,
+M. van Assel, D. M. Imboden, and A. Vckovski.
+1998.  Regional  integrated  assessment  and  the
+problem  of  indeterminacy.  Pages  435-497  in  P.
+Cebon,, U. Dahinden, H. C. Davies, D. M. Imboden,
+and  C.  C.  Jaeger,  editors.  Views  from  the  Alps:
+regional perspectives on climate change. MIT Press,
+Cambridge, Massachusetts, USA.
+
+Panebianco,  S.,  and  C.  Pahl-Wostl.  2006.
+Modelling  socio-technical 
+in
+wastewater treatment—a methodological proposal.
+
+transformations 
+
+

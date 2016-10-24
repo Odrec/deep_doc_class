@@ -1,0 +1,2422 @@
+R E V I E W S
+
+MAKING SENSE OF IT ALL:
+BACTERIAL CHEMOTAXIS
+
+George H. Wadhams and Judith P. Armitage
+
+Abstract | Bacteria must be able to respond to a changing environment, and one way to respond
+is to move. The transduction of sensory signals alters the concentration of small phosphorylated
+response regulators that bind to the rotary flagellar motor and cause switching. This simple
+pathway has provided a paradigm for sensory systems in general. However, the increasing
+number of sequenced bacterial genomes shows that although the central sensory mechanism
+seems to be common to all bacteria, there is added complexity in a wide range of species.
+
+In an ever-changing environment, it is essential that
+organisms  are  able  to  sense  these  changes  and  to
+respond appropriately. Possible responses include alter-
+ations in gene expression and/or active movement
+towards or away from an environment. Most sensory
+pathways in eukaryotic organisms rely on serine, threo-
+nine or tyrosine protein kinases, whereas the most com-
+mon  sensory  pathways 
+in  prokaryotes  use  a
+histidine–aspartate phosphorelay (HAP) system. HAP
+systems have at least two components — a dimeric
+histidine protein kinase (HPK) and a response regula-
+tor (RR)1. HAP systems are also found in many lower
+eukaryotes, in which they control processes such as
+osmoregulation in, for example, Saccharomyces cere-
+visiae 2, Candida  albicans3
+and  Dictyostelium
+discoideum4. They are also found in plants, in which
+they control, for example, ethylene-mediated fruit
+ripening5 and blue-light responses. The Arabidopsis
+thaliana genome has genes for 16 HPK and 24 RR
+homologues.
+
+Bacteria can sense a vast range of environmental
+signals, from the concentrations of nutrients and toxins
+to oxygen levels, pH, osmolarity and the intensity and
+wavelength of light. Genome sequencing has identified
+over 600 HAP systems and some individual bacterial
+species contain more than 130 (REF. 6) — for example,
+Myxococcus xanthus has about 140 HAP systems (J. R.
+Kirby, personal communication). Despite the extremely
+high homology between the components of HAP sys-
+tems, numerous pathways operate in individual bacteria
+
+without significant crosstalk. Although most of these
+HAP systems are involved in the regulation of gene
+expression, one of the most well-understood pathways
+regulates motile behaviour. Chemotaxis operates as part
+of a complex network of signals that balance to produce
+a physiological response that is suited to a specific envi-
+ronment (BOX 1). Here, we describe the basic bacterial
+chemosensory pathway, as well as some of the varia-
+tions of this system. However, first we provide a general
+overview of HAP systems.
+
+Histidine–aspartate-phosphorelay systems
+HAP systems rely on the trans-autophosphorylation of a
+His residue that resides in one monomer of the HPK
+dimer by the γ-phosphoryl group of an ATP molecule
+that  is  bound  to  the  kinase  domain  of the  other
+monomer. This phosphoryl group is then transferred to
+an Asp residue on a separate RR protein to alter its activ-
+ity and generate a response. Some systems incorporate
+several His–Asp phosphorylation steps, which possibly
+allows  for  complex  regulatory  control  as  discussed
+below7,8.
+
+Numerous HAP systems have been identified in
+different bacteria (FIG. 1). Most of the HPKs involved
+(for example, EnvZ; FIG. 1a) have an N-terminal region
+that spans the membrane twice, which results in an
+intervening periplasmic domain that can sense an
+extracellular  signal. The  C-terminal  cytoplasmic
+region comprises a linker or HAMP DOMAIN (‘histidine
+kinases, adenylyl cyclases, methyl-binding proteins
+
+HAMP DOMAIN
+(‘Histidine kinases, adenylyl
+cyclases, methyl-binding
+proteins and phosphatases’
+domain). A domain that is
+broadly conserved in histidine
+protein kinases, chemoreceptors
+and phosphatases. It contains
+two amphipathic helices, and is
+presumed to have a role in signal
+transduction.
+
+Department of
+Biochemistry,
+University of Oxford,
+Oxford OX1 3QU, UK.
+Correspondence to J.P.A.
+e-mail: judith.armitage@
+bioch.ox.ac.uk
+doi:10.1038/nrm1524
+
+1024 | DECEMBER 2004 | VOLUME 5
+
+www.nature.com/reviews/molcellbio
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+Box 1 | Chemotaxis as part of a complex network of signalling pathways
+
+Pathogenicity
+Motility and chemotaxis are required for many pathogenic species to colonize and invade a host. Bacteria sense a wide
+range of signals — including temperature and pH changes, nutrient concentrations, osmolarity and oxygen — and
+they integrate this information to generate the pathogenic response. Chemotaxis can, for example, guide Helicobacter
+pylori to the mucus lining of the stomach97, free-living Vibrio anguillarium to the surface of fish121, and Agrobacterium
+tumefaciens to wounded plants122. Each species responds to specific, relevant chemoattractants and other sensory
+signals then control the expression of virulence genes. Interestingly, it is not clear whether Vibrio cholera — which can
+live in biofilms in aquatic environments or in the human small intestine123, and has a spectacular range of
+histidine–aspartate-phosphorelay systems (~ 30), methyl-accepting chemotaxis proteins (~40) and chemotaxis
+protein (Che) homologues (3 CheW, CheA, CheB, CheR and CheV proteins, 4 CheY proteins and 1 CheZ protein) —
+uses chemotaxis to swim to the villi of the small intestine. However, motility is known to be essential for
+pathogenicity124.
+
+Symbiotic associations
+Chemotaxis probably guides free-living rhizobia to the environment around legume root hairs, which contains a higher
+concentration  of nutrients. The correct host–symbiont contact then triggers the formation of NODULES and the
+subsequent nitrogen fixation by bacteria125. In a different type of symbiotic association, the squid Euprymna scolopes
+uses bioluminescence to confuse preditors. The marine bacterium Vibrio fischeri is only bioluminescent at high cell
+densities (~1010 ml–1), and chemotaxis guides free-living bacteria to the squid light organs, in which the colony size
+increases. Eventually, the concentration of a diffusible autoinducer (N-acyl homoserine lactone) reaches the level that is
+required to induce the expression of bioluminescence genes126.
+
+Biofilms 
+Many bacterial species are not normally free living, but are associated with surfaces in complex polysaccharide
+biofilms, in which microcolonies of different species coexist and compete for diffusing nutrients127. Biofilms are
+involved in fouling — for example, on oil rigs, teeth and medical implants, and in the lungs of cystic-fibrosis
+patients128 — and they protect bacterial colonies from antimicrobial agents. Biofilm formation and development
+results from large numbers of interacting sensory signals — for example, QUORUM SENSING129, osmolarity and charge
+sensing, and also chemotaxis. In biofilms, many species lose flagella, but induce the expression of type-IV PILI, which
+allow them to ‘twitch’ along surfaces (BOX 2). Biofilms are far from static entities and they mature, develop and shed
+bacteria, which swim to new locations.
+
+and phosphatases’domain), a dimerization domain and a
+kinase domain that interacts with its cognate RR. Some
+HPKs lack the periplasmic and transmembrane domains,
+for example, CheA (chemotaxis protein A; FIG. 1c) and
+NtrB. CheA interacts with transmembrane receptors (see
+below), whereas NtrB interacts with cytoplasmic sensors.
+Some transmembrane HPKs have several transmem-
+brane regions, for example, PrrB (also known as RegB)
+has four transmembrane helices and KinB has six8,9
+(FIG. 1d). Other HPKs have further cytoplasmic domains
+— for example, aerobic-respiration-control sensor pro-
+tein-B (ArcB) has a cytoplasmic PAS (PER,ARNT, SIM) DOMAIN, a
+fused RR domain and an extra histidine-containing
+phosphotransfer (HPt) DOMAIN (FIG. 1b).
+
+HAP-system signalling is initiated by trans-autophos-
+phorylation within the HPK dimer. As mentioned above,
+the γ-phosphoryl group of an ATP molecule that is
+bound to the kinase domain of one monomer is trans-
+ferred to a His residue in the other monomer. The phos-
+phoryl group is then transferred to the conserved Asp
+residue of the relevant RR, which results in the activation
+of the output domain of the RR (FIG. 1). RRs can undergo
+spontaneous dephosphorylation by transferring the
+phosphoryl group to water, and the half-lives of the dif-
+ferent phosphoryl–Asp RRs vary from a few seconds to
+hours. However, in many cases, the half-life is reduced
+by the presence or activation of a phosphatase, which
+might be the HPK itself. More complex versions of
+HAP  systems  with  numerous  His–Asp–His–Asp
+
+phosphotransfer steps are widespread, particularly in
+eukaryotes, and such systems have been characterized
+in detail in relation to osmoregulation in S. cerevisiae, as
+well as sporulation in Bacillus subtilis 8 (FIG. 1d). HPt
+domains, which can add extra phosphotransfer steps,
+have no catalytic activity and the cognate RR functions to
+take or transfer the phosphoryl group from the HPt
+domain. The reason for numerous steps is unclear, but
+studies on the oxygen-sensing Arc pathway (FIG. 1b) indi-
+cate that it might assist in complex regulatory control8.
+
+Bacterial chemotaxis as a model system
+Bacterial chemotaxis is the biasing of movement
+towards regions that contain higher concentrations of
+beneficial, or lower concentrations of toxic, chemi-
+cals. The signalling pathway that is involved has been
+most  extensively  studied  in  the  enteric  bacteria
+Escherichia  coli and  Salmonella  enterica  serovar
+Typhimurium10,11. Structural and biochemical details
+are now available for every step of the pathway, which
+makes it one of the most well-understood of all sen-
+sory pathways.
+
+Most sequenced bacterial genomes include homo-
+logues of genes that are known to encode components
+of flagella and chemosensory pathways, which indicates
+that motility is widespread (BOX 2) and probably pro-
+vides a selective advantage, especially in non-homoge-
+neous, nutrient-limiting environments. However, all
+bacteria in which motility has been studied seem to be
+
+NODULE
+A swelling on the roots of
+nitrogen-fixing plants that
+contains symbiotic nitrogen-
+fixing bacteria.
+
+QUORUM SENSING
+The ability of bacteria to sense
+their own cell density by
+detecting the concentration of
+signalling molecules that have
+been released in their
+environment.
+
+PILI
+Short, polymerized-protein
+projections that protrude from
+the bacterial cell and are used for
+surface attachment and
+twitching motility.
+
+PAS DOMAIN
+(PER, ARNT, SIM domain).
+A domain that is involved in
+recognizing stimuli such as light,
+oxygen, redox potential, energy
+status and small ligands.
+
+HPt DOMAIN
+(Histidine-containing
+phosphotransfer domain). These
+domains are ~120 amino acids
+long and contain a histidine
+residue that can participate in
+phosphoryl-transfer reactions.
+They function as
+phosphoreceivers and
+phosphodonors, and can
+therefore be used to create
+multistep phosphorelay systems.
+
+NATURE REVIEWS | MOLECULAR CELL BIOLOGY
+
+VOLUME 5 | DECEMBER 2004 | 1 0 2 5
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+a Osmolarity 
+
+sensing 
+
+b Oxygen sensing
+
+c Chemosensory
+
+d Sporulation
+
+regulation
+
+P
+
+HAMP
+
+H
+
+NGFG
+
+EnvZ
+
+P
+
+PAS
+
+H
+
+NGFG
+
+ArcB
+
+P
+
+D
+
+P
+
+H
+
+P
+
+H
+
+P
+
+H
+
+NGFG
+
+KinB
+
+P2 P3
+
+NGFG
+
+P5
+
+CheA
+
+P
+
+D
+
+Spo0F
+
+P
+
+PAS
+
+PAS
+
+PAS
+
+H
+
+NGFG
+
+Periplasm
+
+Inner 
+membrane
+
+KinA
+
+Cytoplasm
+
+OmpR
+
+ArcA
+
+P
+
+D
+
+P
+
+D
+
+P
+
+D
+
+CheY
+
+P
+
+D
+
+P
+
+D
+
+CheB
+
+Spo0A
+
+P
+
+H
+
+Spo0B
+
+Transcription
+
+Transcription
+
+Motility
+
+Receptor
+adaptation
+
+Transcription
+
+Figure 1 | The domain organization of selected histidine–aspartate-phosphorelay systems. Some of the different
+combinations of histidine protein kinase (HPK) and aspartate response regulator (RR) domains in histidine–aspartate phosphorelay
+(HAP) systems. a | The EnvZ/OmpR pathway of Escherichia coli, which is involved in regulating the expression of the two outer-
+membrane porins OmpF and OmpC. A membrane-bound HPK (EnvZ) controls the activity of the RR OmpR in response to changes
+in osmolarity. b | The complex ArcB–ArcA HAP system of E. coli. The membrane-bound HPK ArcB senses changes in the redox
+state of components of the respiratory electron-transport chain through its PAS (PER, ARNT, SIM) domain. The phosphoryl group is
+then passed from the conserved His in the ArcB kinase domain to a fused RR domain, then to a fused histidine-containing
+phosphotransfer (HPt) domain and finally to a DNA-binding RR ArcA. ArcA regulates microaerophilic gene expression. c | The
+chemosensory pathway of E. coli. The soluble HPK chemotaxis protein (Che)A has five domains per monomer that are designated
+P1–P5 from the N terminus to the C terminus. CheA senses changes through transmembrane chemoreceptors, which induce the
+trans-autophosphorylation of dimeric CheA on a His residue of the HPt domain. Two RRs compete for this phosphoryl group: CheY,
+a single-domain, motor-binding protein, which controls flagellar motor switching, and CheB, which controls the adaptation of the
+chemoreceptors. d | Part of the complex system that regulates sporulation in Bacillus subtilis. A single-domain RR, Spo0F, is
+regulated by two HPKs, one of which has numerous transmembrane domains (KinB), the other of which is soluble with numerous
+PAS domains (KinA). Spo0F indirectly phosphorylates a DNA-binding RR, Spo0A, by way of a His residue in Spo0B. Throughout
+this figure, light-green rectangles highlight conserved, phosphorylatable His residues, light-blue rectangles highlight conserved,
+phosphorylatable Asp residues, and orange circles highlight phosphoryl (P) groups. NGFG represents the kinase domain and, with
+the exception of CheA, the conserved His residue that precedes the kinase domain is contained within the dimerization domain.
+Despite being dimeric in nature, HPKs are shown here as monomers for simplicity, and the HAMP domain (‘histidine kinases,
+adenylyl cyclases, methyl-binding proteins and phosphatases’ domain) is a linker domain. 
+
+chemotactic (although two sequenced Archaea with
+putative flagellar genes have no obvious chemosensory
+genes12). So, the ability to move is not, in itself, beneficial
+— it must be biased to result in the accumulation of
+bacteria  in  particular  environments. Bacteria  are
+thought to be too small to sense a concentration gradi-
+ent along their length and therefore use temporal sens-
+ing  to  bias  their  overall  direction  of movement13
+(although for a contrasting view, see REF. 14).
+
+E. coli swim by rotating their five to eight helical
+flagella anticlockwise, which causes them to come
+together into a bundle that propels the cell forwards.
+Switching the rotational direction of some flagellar
+motors to clockwise disrupts this bundle and causes the
+cell to tumble. When the motors return to anticlockwise
+
+rotation, the cell is reorientated and swims off in a new
+direction15 (BOX 3). In homogeneous environments,
+swimming bacteria change direction about once a sec-
+ond, which  produces  random  movement. In  non-
+homogeneous environments, the frequency of direction
+changing is controlled by positive or negative stimuli
+to bias the overall direction of movement. Although
+the number and location of flagella vary between bac-
+terial species, the biasing of swimming always relies
+on chemosensory regulation of the rotary activity of
+the flagella motor (switching, stopping or slowing
+down)16.
+
+Although it is slightly modified compared to the
+HAP systems that regulate transcription, the chemo-
+taxis pathway has long been viewed as a paradigm of
+
+1026 | DECEMBER 2004 | VOLUME 5
+
+www.nature.com/reviews/molcellbio
+
+©  2004 Nature  Publishing Group
+
+Box 2 | Bacterial motility
+
+a
+
+Most bacterial species are motile and move either by
+swimming through liquid environments or by moving
+across surfaces. Free-swimming bacteria use the
+electrochemical H+ (or Na+) gradient to power the rotation
+of transmembrane motors at speeds of up to 300 Hz (for H+)
+or 1300 Hz (for Na+)130,131. These motors drive the rotation
+of semi-rigid, helical flagella that move bacteria at speeds of
+15–100 µm s–1 (REF. 130) — that is, up to 100 body lengths per
+second (see figure, part a, which shows a micrograph of a
+swimming Rhodobacter sphaeroides cell). The number and
+position of flagella varies between species. The Reynold’s
+number — R = lvρ/η (where l = length, v = velocity,
+ρ = density and η = viscosity) — is ~100 for man but is 
+10–6 for microorganisms, which means that bacteria
+experience a high viscosity and almost no inertia. So, when
+bacteria stop, they stop immediately. They do not coast or
+displace liquid.
+
+R E V I E W S
+
+Helical
+flagella
+
+Cell body
+
+b
+
+Pili pull by
+disassembly
+
+Direction of cell gliding
+
+On surfaces, some species become HYPERFLAGELLATE, which
+allows movement as the flagella rotate together as numerous
+bundles. Other species use gliding or twitching to move over
+surfaces. This can involve type-IV pili, which extend from
+the poles (sometimes for several body lengths), bind to the
+surface and then retract, pulling the cell forward132. Other
+gliding bacteria seem to extrude slime through special pores
+at their poles, with only the rear pores being used at any one
+time to push the cells forward. The mechanisms behind this
+type of movement are less clear. Some species, for example,
+Myxococcus xanthus might use both pili and slime133 (see
+figure, part b). Unlike free-swimming cells, gliding cells
+move slowly (~1 µm min–1), and the fastest movement is the
+end-over-end movement of Flavobacterium johnsoniae134. Species of the Spiroplasma wall-less bacteria can move through
+viscous environments, using a dynamic internal cytoskeleton to induce movement through deformations in cell shape.
+This cytoskeleton is attached to the cytoplasmic membrane and is composed of a flat, monolayered ribbon, which is
+constructed from seven contractile fibrils that can change their length in a coordinated manner135. Part a of the figure 
+was modified with permission from REF. 136 © (1999) the American Society for Microbiology. Part b of the figure was
+modified with permission from Nature Reviews Microbiology REF. 133 © (2003) Macmillan Magazines Ltd.
+
+Slime 
+ribbons
+push by
+secretion
+
+HYPERFLAGELLATE
+An increased number of flagella.
+
+GAIN
+A parameter of chemotactic
+behaviour that describes the
+relationship between the
+stimulus and the response. It is
+defined as the fractional increase
+in anticlockwise motor bias
+divided by the fractional change
+in receptor occupancy.
+
+CHEMORECEPTOR
+A sensory receptor that responds
+to chemical stimuli. The term
+covers transmembrane receptors
+(such as the methyl-accepting
+chemotaxis proteins) and
+cytoplasmic receptors (such as
+transducer-like proteins).
+
+METHYL-ACCEPTING
+CHEMOTAXIS PROTEIN
+(MCP). A transmembrane
+chemoreceptor that shows
+methylation-dependent
+adaptation.
+
+HAP signalling and it is one of the most well-under-
+stood physiological processes in biology. This is proba-
+bly because it has been easy to isolate a wide range of
+behavioural mutants as they spread differently through
+soft nutrient agar17. The wealth of experimental data
+that has been obtained for the chemotaxis pathway pro-
+vides  details  of the  number  of molecules  of each
+chemosensory protein within the cell, the localization of
+each protein and their binding kinetics. From these data,
+cells can be mathematically or computationally simu-
+lated and concentrations of attractants or repellents var-
+ied. It is then possible to compare the behaviour of the
+model cell with experimental data and determine how
+well the model performs18. These models have led to the
+reinterpretation of data that were obtained using certain
+mutants, and have provided a basis for making other
+mutants. However, even though so much is understood,
+many aspects are still unclear, including details of how
+the  amazing  sensitivity, GAIN and  adaptation  are
+achieved. Testable models have been, and are being,
+developed to identify whether these aspects depend on,
+for example, receptor clustering, robust adaptation or
+motor kinetics19–21.
+
+The chemosensory system
+The E. coli chemotaxis pathway is so sensitive that it is
+able to sense a change in a few molecules — perhaps just
+a change in ligand binding to a single receptor — in the
+presence of background concentrations that can vary
+over at least five orders of magnitude22,23.
+
+Chemotactic signals are detected by dedicated trans-
+membrane  CHEMORECEPTORS —  the  METHYL-ACCEPTING
+CHEMOTAXIS PROTEINS (MCPs) and an MCP-like protein —
+rather than by a fused sensory domain of an HPK as is
+found for most HAP systems that regulate transcription.
+An adaptor protein, CheW, helps to link the MCPs to the
+cytoplasmic HPK, CheA, and two RRs compete for bind-
+ing to CheA (FIGS 1,2). One RR is a single-domain, flagel-
+lar-motor-binding protein, CheY (although see BOX 4),
+whereas the other, CheB, has two domains, one of which
+functions as a methylesterase and controls the adaptation
+of the MCPs24,25. Phosphorylated CheY (CheY–P) binds
+the switch protein FliM (see BOX 3 figure) on the flagellar
+motor and causes a reversal in the direction of motor
+rotation26,27. In E. coli, the phosphatase CheZ is required
+to increase the spontaneous dephosphorylation rate of
+CheY–P and allow rapid signal termination28 (FIG. 2).
+
+NATURE REVIEWS | MOLECULAR CELL BIOLOGY
+
+VOLUME 5 | DECEMBER 2004 | 1 0 2 7
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+Box 3 | The bacterial flagellar motor
+
+The bacterial flagellar motor is the most complex structure
+in a bacterial cell, with protein components in 
+the cytoplasm, across the cytoplasmic membrane, the
+periplasmic space, the outer membrane and in the external
+environment (see figure for the Escherichia coli structure). It
+is the product of the controlled expression of about 50
+genes137. Expression of the genes is tightly regulated to
+assure ordered protein assembly and whereas the early
+transmembrane proteins are transported through the
+classic Sec pathway, the later proteins, including those of the
+hook and filament, use a flagellar-specific export pathway
+that is closely related to that used for the type-III secretion
+of toxins by pathogenic species138.
+
+The filament assembles from the end that is distal to the
+
+Flagellar
+filament
+
+Hook-associated
+proteins
+
+Flagellar
+hook
+
+L-ring
+
+P-ring
+
+Outer membrane
+
+Peptidoglycan layer
+
+MotB
+(stator)
+MotA
+(stator)
+
+FliG
+(rotor)
+
+C-ring
+
+Periplasm
+
+Cytoplasm
+
+Inner membrane
+
+bacterium and forms a semi-rigid helix, the wavelength
+and handedness of which alters with changes in the
+direction of motor rotation. Protons move through
+roughly eight independent force-generating units (Mot
+complexes), which are anchored to the peptidoglycan
+layer to form the stator (the stationary part) of the motor.
+The protons interact with the ring of ~32 FliG proteins
+that are associated with the cytoplasmic component of the
+rotor, and this drives rotation. The mechanism by which
+the electrochemical gradient is coupled to mechanical
+rotation is unclear, but it probably involves electrostatic interactions between the stator and the rotor proteins130.
+Phosphorylated CheY, a chemotaxis response regulator, binds FliM proteins that are associated with the FliG rotor to
+bring about a switch in direction of motor rotation. The figure was modified with permission from REF. 139 © (2003)
+Elsevier.
+
+FliM
+(switch)
+
+MS-ring
+
+Recent in vivo imaging and fluorescence resonance
+energy transfer studies have started to identify the inter-
+action of the proteins in this sensory pathway inside liv-
+ing cells21,29. Combining in vivo data with mutational
+and in vitro data from the past 40 years indicates a spe-
+cific sequence of events (FIG. 2). A decreased concentra-
+tion of attractant results in decreased attractant binding
+to the MCPs, which stimulates CheA trans-autophos-
+phorylation. This results in an increase in the concentra-
+tion of CheY–P. CheY–P then binds to the flagellar
+motor and causes it to switch to clockwise rotation,
+which results in cell tumbling and direction change. The
+CheY–P signal is terminated by the phosphatase CheZ.
+CheB is also phosphorylated by CheA–P, which results
+in an increased methylesterase activity and an increased
+demethylation of the MCPs. Demethylated MCPs have
+a reduced ability to induce CheA autophosphorylation
+(even in the presence of a low concentration of attrac-
+tant), so the rate of CheA autophosphorylation and
+therefore the rate of direction changing returns to the
+pre-stimulus level. The system has now adapted and is
+primed to sense any subsequent increases or decreases
+in ligand binding.
+
+An increased concentration of attractant inhibits the
+autophosphorylation of CheA, which reduces the con-
+centration of CheY–P and therefore the frequency of
+motor switching. This causes the bacterium to swim in
+this positive direction for longer. CheB phosphorylation
+and therefore activity is also reduced, which allows
+the constitutive methyltransferase CheR to increase the
+
+methylation of the MCPs. Highly methylated MCPs are
+better able to stimulate CheA autophosphorylation,
+even in the continued presence of a chemoattractant, so
+this returns CheA autophosphorylation to the pre-stim-
+ulus level and the bacterium to a normal frequency of
+direction changing.
+
+The chemoreceptors
+The  number  of putative  chemoreceptor genes  in
+sequenced genomes ranges from 1 in Mezorhizobium
+loti, to 5 in E. coli, to more than 60 in Magnetospirillum
+magnetotacticum. So far, the data indicate that most
+species have more than 10 chemoreceptor genes and
+that many have more than 20. Whereas the sequences of
+the cytoplasmic domains of all these receptors are
+highly conserved (and are, in fact, used to identify these
+genes)30, the  sequences  of the  periplasmic  sensing
+domains vary significantly from species to species and
+from receptor to receptor. This is unsurprising, as each
+receptor  must  bind  different ligands and different
+species have different optimum niches.Why some species
+require over 50 different receptors is unclear, although
+different receptors might be expressed under different
+growth conditions and might tune behaviour to partic-
+ular environments.
+
+Escherichia coli methyl-accepting chemotaxis proteins.
+E. coli has four MCPs (the fifth E. coli chemoreceptor
+is  an  MCP-like  protein; see  below), which  form
+homodimers that span the bacterial cell membrane31
+
+1028 | DECEMBER 2004 | VOLUME 5
+
+www.nature.com/reviews/molcellbio
+
+©  2004 Nature  Publishing Group
+
+PBP
+
+Periplasm
+
+Inner membrane
+
+Cytoplasm
+
+P
+C
+M
+
+P
+P
+C
+C
+M
+M
+
+P
+C
+M
+
+P
+C
+M
+
+– CH3
+
++ CH3
+CheR
+
+CheW
+
+CheA
+
+CheZ
+
+P
+
+CheB
+
+CheY
+
+P
+
+P
+
+Flagellar motor
+
+Peptidoglycan layer
+
+Inner membrane
+Periplasm
+
+Outer membrane
+
+Figure 2 | Schematic diagram of the chemosensory
+system of Escherichia coli. Two dimeric chemoreceptors —
+methyl-accepting chemotaxis proteins (MCPs) — are shown,
+one of which is interacting with a periplasmic binding protein
+(PBP). In addition, two chemotaxis protein (Che)W monomers
+and a CheA dimer are shown interacting with the highly
+conserved signalling domain of the MCPs in the cytoplasm. It
+should be noted that, given the packing within MCP clusters
+and the calculations of the number of chemosensory proteins,
+the actual arrangement will be different. One CheA monomer
+will probably not interact with one MCP dimer, and instead a
+CheA dimer might span several receptors. A decrease in
+attractant concentration induces trans-autophosphorylation of
+the CheA dimer, which phosphorylates the response regulator
+CheY. Phosphorylated CheY then binds to the flagellar motor to
+bring about a change in direction. Phosphorylated CheA also
+phosphorylates another response regulator — the
+methylesterase CheB. Phosphorylated CheB competes with a
+constitutive methyltransferase, CheR, to control the degree of
+methylation of specific glutamates in the MCPs. This resets the
+signalling state of the receptors and allows them to adapt to the
+present concentration of attractant and to sense subsequent
+changes. The dephosphorylation of phosphorylated CheY is
+accelerated by the phosphatase CheZ. P, phosphoryl group.
+
+R E V I E W S
+
+(FIG. 2). X-ray crystallography of isolated periplasmic
+and cytoplasmic domains of MCPs shows that they are
+formed almost completely from α-helical coiled-coil
+structures32,33 (FIG. 3). An entire E. coli MCP is ~380-Å
+long, with an 80-Å periplasmic domain, a 40-Å trans-
+membrane domain and a 260-Å cytoplasmic domain.
+The periplasmic domains of the E. coli MCPs each con-
+sist of a four-helix bundle. However, the fold of the
+periplasmic domains of MCPs from other species tends
+to be highly diverse, which reflects the wide range of lig-
+ands that are sensed by these receptors.
+
+Ligands bind to the periplasmic domain of MCPs at
+the interface between the two monomers of the dimer34,
+and residues from both monomers are involved in
+ligand binding. Some MCPs, for example E. coli Tar, can
+bind to two different ligands — to one directly, and to
+the other through a periplasmic binding protein that
+can also interact with the appropriate transporters35.
+Ligand binding alters the interactions between the
+periplasmic domains of the MCPs, and also changes
+the interactions between the transmembrane four-helix
+bundle of the MCP dimer. Mutational analyses, trypto-
+phan-fluorescence and cysteine-crosslinking studies of
+the transmembrane domains, together with NMR mea-
+surements, indicated that a 1.4-Å ‘piston-like move-
+ment’ of one transmembrane helix against another in
+the MCP dimer occurs on ligand binding, which might
+be important for signal propagation across the bacterial
+membrane31,36–40. However, the propagation of such a
+small shift through such a large coiled-coil protein and
+the difference in the rapid kinetics of attractant binding
+and the slow kinetics of CheA autophosphorylation
+indicate that this might only be part of the signal.
+Isolated MCP cytoplasmic domains from E. coli can still
+activate CheA, which indicates that a change in the
+interactions of the periplasmic domains on ligand bind-
+ing probably also alters the packing of the highly con-
+served cytoplasmic domains to cause signalling41. In
+addition, many bacterial species seem to contain cyto-
+plasmic chemoreceptors, which lack transmembrane
+domains and are active in clusters42,43 (the role of recep-
+tor packing is discussed below). E. coli also responds to a
+range of repellents and will swim towards its optimum
+growth temperature. Although the mechanisms that are
+involved in these responses are unclear, data indicate
+that some signals might be sensed directly through the
+cytoplasmic signalling domain, rather than the periplas-
+mic domain, of the MCPs44.
+
+In MCPs, a structurally conserved HAMP domain
+links the transmembrane helices to the cytoplasmic
+signalling domain. This region is lacking in crystal
+structures and its relationship to the rest of the pro-
+tein structure remains unclear. However, disruption of
+this region results in a loss of signalling and the main-
+tenance of this structure is crucial in the production of
+chimeric signalling proteins45. The HAMP domain
+might therefore be important in regulating the coiled-
+coil interactions that seem to be involved in signal
+propagation46.
+
+The signalling domain contains two adaptation
+regions, each with four to six glutamate residues that can
+
+NATURE REVIEWS | MOLECULAR CELL BIOLOGY
+
+VOLUME 5 | DECEMBER 2004 | 1 0 2 9
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+FLAVIN ADENINE
+DINUCLEOTIDE
+(FAD). FAD functions as a redox
+centre in many proteins.
+
+SRC-HOMOLOGY-3 DOMAIN
+(SH3 domain). A 60-amino-acid
+domain that mediates the
+assembly of specific protein
+complexes through binding to
+proline-rich peptides. It is found
+in many proteins that are
+involved in signal transduction
+and membrane–cytoskeleton
+interactions.
+
+Box 4 | Do all putative chemosensory components control motility?
+
+Myxococcus xanthus is a social, gliding bacterium that displays two types of motility — social and adventurous. In
+addition, in response to starvation, M. xanthus cells aggregate to form multicellular fruiting bodies. Motility and
+chemotaxis are essential for these responses140, and require two chemotaxis operons — frz and dif 141. A third operon, che3,
+has been shown to be required for differentiation142. The latter apparent chemosensory pathway senses an environmental
+signal through a classic methyl-accepting chemotaxis protein (MCP)-like receptor that controls the phosphorylation of
+the chemotaxis protein (Che)A. Phosphorylated CheA phosphorylates either a CheB homologue or, rather than CheY,
+a transcriptional regulator, which drives the expression of genes that are required to switch the cells from a vegetative to a
+sporulation state. Similarly, one of the four Pseudomonas aeruginosa che operons seems to be essential for the expression
+of pathogenicity genes, and one operon in Pseudomonas fluorescens has been proposed to be involved in cellulose
+biosynthesis. Recent sequencing of the M. xanthus genome indicates that it might have as many as eight chemosensory
+operons in total. The role of these other operons remains to be elucidated (J. R. Kirby, personal communication).
+
+This indicates that analysing genome sequences without the use of supporting physiological data could lead to the
+misannotation of genes and to their subsequent misinterpretation. Do all species with four or five CheA proteins and
+numerous MCPs use all of them for chemotaxis? The roles of the numerous homologues of the other chemotaxis
+proteins that are found in many non-enteric bacteria remain an enigma. Many bacterial species live in diverse
+environments and it is possible that, under different conditions, different chemotaxis operons might be expressed to
+allow the bacteria to tune their chemotactic responses to their existing environment.
+
+be reversibly methylated47. Some of these glutamates
+are actually encoded as glutamines, which mimic
+methylated glutamates and probably ensure that newly
+translated MCPs are inserted into the membrane in a
+neutral signalling state. CheB is actually a dual-func-
+tion enzyme, as it can deamidate as well as demethylate
+MCPs. Deamidation of the glutamine residues to gluta-
+mates means that all of these residues become potential
+targets for methylation by CheR and, therefore, for
+adaptation48. A pentapeptide motif (NWETF) at the
+C terminus of the two most abundant E. coli MCPs, Tsr
+and Tar, recruits the methyltransferase CheR to the
+MCP to bring about methylation49. The two low-abun-
+dance E. coli MCPs, Trg and Tap, lack the NWETF
+motif and therefore require the presence of Tsr or Tar
+for adaptation to their ligands50. This indicates that the
+different receptors must be close enough to interact
+in vivo. Indeed, there is direct evidence for inter-dimer
+methylation51.
+
+Localization of methyl-accepting chemotaxis proteins.
+Transmembrane MCPs have been shown to cluster in
+patches that are thought to be ~200 nm in diameter and
+that might form higher-order arrays at the poles of
+cells52,53. Similar higher-order arrays of receptors and
+channels have been observed in eukaryotic cells, for
+example, in lymphocytes and neurons54, and significant
+efforts are underway to try to understand the implica-
+tions of such arrays for signal generation and processing
+in general.
+
+Clustering depends not only on the MCP itself —
+which might be targeted, to some extent, to the poles
+— but also on the MCP-associated cytoplasmic proteins
+CheW and CheA52,55,56. Structural and biochemical
+studies indicate that MCPs might pack as trimers of
+dimers33,57,58 (FIG. 4a). However, certain cryo-electron-
+microscopy studies and quantitative data indicate that
+the clusters could be formed from dimers that are
+packed into a higher-order array, which involves inter-
+actions between periplasmic domains and/or the swap-
+ping of anti-parallel strands of the individual MCPs
+
+within the cluster59. This packing pattern would allow
+the necessary CheW and CheA interactions at the base
+of the MCPs. It has been proposed that the clustering of
+MCPs might allow the high signal sensitivity and gain
+of receptors that is seen, as well as integration between
+receptors60 — the binding of a ligand to one receptor
+would influence neighbouring, unbound receptors.
+This model also postulates that the number of neigh-
+bouring receptors that are affected decreases as the over-
+all proportion of ligand-bound receptors increases. The
+model elegantly encompasses two of the key features of
+chemotaxis — the high degree of sensitivity in the sys-
+tem and the wide range of background concentrations
+over which differences can be sensed. Unfortunately, at
+present, there is little evidence to indicate how such
+lateral interactions might be established and altered
+within such a receptor cluster, although changing the
+charge  of the  receptors  through  methylation  and
+demethylation might have a key role.
+
+Using a lattice of interacting chemosensory proteins
+allows the integrated control of the output of relatively
+few CheA molecules61. The use of multivalent ligands to
+physically cluster MCPs in vivo showed that signalling
+information is transferred between MCPs in a cluster62.
+In vivo crosslinking has also proved that there are direct
+physical  interactions  between  different  MCPs  in  a
+cell58,63. Taken together, these data indicate that the
+receptor clusters are composed of signalling teams, pos-
+sibly of mixed trimers of MCP homodimers, with the
+different MCPs functioning collaboratively to regulate
+the activity of CheA molecules that are bound to the
+receptors (FIG. 4a). Interestingly, quantitative western-
+blot measurements of the number of the different
+chemosensory proteins in different strains of E. coli 64
+and of Rhodobacter sphaeroides (M. Gould and J.P.A.,
+unpublished data) under different growth conditions
+showed that, whereas the absolute concentrations of
+the different chemotaxis proteins vary significantly, the
+stoichiometries remain almost constant. This finding
+has  key  implications  for  our  understanding  of
+chemosensory signalling and for the modelling of these
+
+1030 | DECEMBER 2004 | VOLUME 5
+
+www.nature.com/reviews/molcellbio
+
+©  2004 Nature  Publishing Group
+
+Maltose-binding protein
+
+Periplasm
+Inner membrane
+
+Cytoplasm
+
+CheR
+
+CheW
+
+CheA dimer
+
+MCP dimer
+
+CheW
+
+CheY
+
+CheZ
+
+CheY
+
+CheB
+
+Figure 3 | The structures of components of the chemosensory system of
+Escherichia coli. The figure shows the structures of the components of the chemosensory
+system in the same stoichiometry and localization as is shown in FIG. 2 — that is, two
+methyl-accepting chemotaxis protein (MCP) dimers are shown interacting with two
+chemotaxis protein (Che)W monomers and a CheA dimer, and CheY, CheB and CheR are
+all depicted as monomers. The relevant Protein Data Bank accession numbers are:
+maltose-binding protein (1ANF); MCP periplasmic domain (1WAT) and cytoplasmic domain
+(1QU7); the CheA P1 domain (1I5N), P2 domain (1EAY) and P3–P5 domains (1B3Q); the
+CheW averaged NMR structure (1KOS); CheY (1EHC); CheR (1BC5); CheB (1A2O); and
+CheZ with phosphorylated CheY bound (1KMI). The figure is a graphical representation and
+is not meant to imply that the domains or proteins interact in the manner depicted or that
+their orientations are as shown. The dashed lines represent the transmembrane domains
+and the HAMP domains (‘histidine kinases, adenylyl cyclases, methyl-binding proteins and
+phosphatases’ domains), for which there are, as yet, no structures. This figure was
+prepared using the program MOLMOL143.
+
+R E V I E W S
+
+and possibly other biochemical pathways. In vitro, the
+maximum kinase activity occurs when there is a ratio of
+6 MCPs to 4 CheW molecules to 1 CheA molecule61.
+However, modelling predicts maximum activity when
+there is 1 trimer of MCP dimers (6 MCPs) to 3 CheW
+molecules to 1.5 CheA molecules65, and western-blot
+analysis indicates 3.4 MCP dimers (6.8 MCPs) to 1.6
+CheW  molecules  to  1  CheA  dimer64 (2  CheAs).
+Something  close  to  these  ratios  probably  exists  in
+extended arrays, possibly with non-integral stoichiome-
+tries and with CheW and CheA both interacting with
+the receptor tips. The formation of targeted local com-
+plexes that are composed of particular ratios of these
+proteins might turn out to be central to signalling regu-
+lation in this and other biochemical pathways.
+
+Variations within Escherichia coli. The fifth E. coli
+chemoreceptor is the MCP-like transmembrane protein
+Aer, which mediates aerotactic responses (that is, move-
+ment in response to changes in oxygen levels). This pro-
+tein has the conserved cytoplasmic signalling domain
+that is found in all MCPs, but it is fused to a cytoplasmic
+FLAVIN ADENINE DINUCLEOTIDE (FAD)-binding domain and a
+PAS domain and it lacks methylation sites66,67. This pro-
+tein seems to sense the rate of respiratory electron
+transport, which allows E. coli to respond to changes in
+oxygen concentrations. Oxygen was probably absent
+from the atmosphere when MCPs evolved, and the
+responses of different species to oxygen varies depend-
+ing  whether  they  are  aerobes, microaerophiles  or
+anaerobes. Different species have used different input
+modules to control the activity of the conserved cyto-
+plasmic signalling domain, including FAD (as men-
+tioned above), haem and cytochrome oxidase, which
+can either directly or indirectly detect oxygen levels68,69.
+
+Not all chemotactic responses in E. coli are mediated
+by chemoreceptors. E. coli also shows a chemotactic
+response towards carbohydrates that are transported
+by the phosphoenolpyruvate-dependent phospho-
+transferase  system. A  cytoplasmic  component, EI
+(enzyme I), which is common to all of the transporters
+of this system, transfers phosphate from phospho-
+enolpyruvate, by way of an E1–P intermediate, to the
+carbohydrate-specific EII and EIII transporters. This
+phosphate is then transferred to the carbohydrate dur-
+ing its transport into the cell. An increasing concentra-
+tion of carbohydrates outside the cell increases the rate
+of carbohydrate transport into the cell and therefore
+lowers  the  concentration  of EI–P  in  the  cell.
+Unphosphorylated EI interacts with CheA and pre-
+vents its autophosphorylation, which, in turn, reduces
+the amount of CheY–P and prolongs swimming in this
+positive direction70.
+
+Other chemotaxis proteins
+CheW. CheW is composed of two SRC-HOMOLOGY 3 (SH3)-
+like subdomains and is an 18-kDa protein that interacts
+with both the signalling domain of the MCP and the
+HPK CheA71 (FIGS 2,3). It is required for the formation of
+the quaternary MCP–CheW–CheA complex at the
+poles of cells52,56, and is essential for signal transduction.
+
+NATURE REVIEWS | MOLECULAR CELL BIOLOGY
+
+VOLUME 5 | DECEMBER 2004 | 1 0 3 1
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+a
+
+Periplasm
+
+Inner 
+membrane
+
+Methylation 
+sites
+
+Cytoplasm
+
+b
+
+MCP 
+dimer
+
+CheW
+
+CheA
+
+Figure 4 | Chemotaxis-protein localization. a | The possible pattern of interaction between
+different components of the chemosensory pathway at the poles of bacterial cells, which
+produces signalling clusters. The clusters are shown as being formed of mixed trimers of methyl-
+accepting chemotaxis protein (MCP) homodimers. These trimers might interact laterally through
+changes in their packing, as well as through alterations in their interactions with, and between, the
+chemotaxis protein (Che)W and CheA. The stoichiometry could be ~three MCP dimers to two
+CheW monomers to one CheA dimer, as is shown in the figure, but the exact stoichiometry is still
+unclear. The rough positions of the methylation sites are highlighted in yellow. b | The localization
+of chemotaxis proteins in vivo. Rhodobacter sphaeroides has two chemosensory pathways.
+Components of one pathway, which includes CheW3, localize to a polar cluster (green labelling in
+the first and third panels) that contains the transmembrane MCPs, whereas components of the
+other pathway, which includes CheW4, localize to a cytoplasmic cluster (purple labelling in the
+second and third panels) that contains the transducer-like proteins. The physical and biochemical
+separation of the components of these two signalling pathways (see the third, merged panel)
+might be important for preventing crosstalk between closely related proteins 
+in vivo. Part a was modified with permission from REF. 144 © the American Association 
+for the Advancement of Science. Part b was reproduced with permission from REF. 119 ©
+Blackwell Publishing Ltd. 
+
+CheW has no known catalytic activity and is therefore
+thought to be a scaffold protein that transduces the signals
+that are generated by the MCP to CheA. The structure of
+CheW from Thermotoga maritima has been solved by
+solution NMR and it has two five-stranded β-barrel
+domains with an extensive hydrophobic core72 (FIG. 3).
+This structure is very similar to that of the P5 domain
+of CheA, with  which  it  interacts  (CheA  has  five
+domains per monomer that are designated P1–P5 from
+the N terminus to the C terminus; FIGS 1,3; see below).
+
+Despite its supposedly simple scaffold role, the pri-
+mary sequence of CheW is highly conserved between
+species, and in many species there are several homo-
+logues that are involved in chemotaxis. Interestingly,
+there  does  not  seem  to  be  a  direct  relationship
+between the number of CheW homologues and the
+number of CheA homologues, which indicates that
+there is not just one specific CheW for each CheA.
+Some CheW proteins from the α-subgroup bacterium
+R. sphaeroides (Proteobacteria can be divided into five
+main subgroups) are capable of restoring switching in
+
+an E. coli cheW mutant73,74. So, as E. coli is a γ-subgroup
+bacterium, this indicates that the structure and function
+of CheW is conserved between different species. CheW
+might therefore have a more significant role in the
+process of signal transduction than just providing a
+static link between the MCPs and CheA.
+
+The histidine protein kinase CheA. CheA is an HPK
+that functions as a dimer, which comprises two 71-kDa
+monomers and, as mentioned above, it interacts with
+~three MCP dimers and ~two CheW monomers to
+form  oligomeric  complexes  at  the  poles  of cells.
+Although CheA is known to interact with CheW, and
+CheW is known to interact with the MCPs, there is also
+evidence for a direct CheA–MCP interaction75. The X-
+ray structures of the various domains of CheA have
+been determined76,77 (FIG. 3). Each CheA monomer has
+five domains that are separated by linker regions and
+hinges (FIG. 1c). Studies have shown that the P1 domain
+is structurally and functionally homologous to the HPt
+domains of hybrid kinases such as ArcB (FIG. 1). In the
+presence of ATP and Mg2+, the CheA dimer shows a
+basal  level  of trans-autophosphorylation, which
+increases significantly in the presence of receptors.
+MCPs and CheW bind to the P5 regulatory domain of
+CheA78,79, and can both inhibit and activate phosphory-
+lation relative to the basal level by controlling the access
+of the  P1  domain  of one  monomer  to  the  kinase
+the  other77. CheA  shows  increased
+domain  of
+autophosphorylation  in  response  to  a  decrease  in
+attractant binding or an increase in repellent binding to
+MCPs. Such stimulation results in the γ-phosphoryl
+group of ATP that is bound to the P4 kinase domain of
+one monomer being transferred to His48 of the HPt
+domain of the other monomer in a trans-autophos-
+phorylation reaction.
+
+CheY and CheB compete for binding to the P2
+domain of CheA, and the phosphoryl group is trans-
+ferred from His48 of CheA to Asp57 of CheY, or to
+Asp56 of CheB80,81. Interestingly, CheA that lacks a P2
+domain can still phosphorylate CheY, although this
+occurs  at  a  much  slower  rate  than  for  full-length
+CheA82. This indicates that the P1 domain of CheA
+might also contribute to the rate of phosphotransfer.
+Phosphotransfer to CheY is faster than to CheB, which
+ensures that a response is generated before adaptation
+occurs83. Deletion of either cheW or cheA in E. coli
+results in a smooth-swimming phenotype, because
+CheY remains unphosphorylated.
+
+The response regulator CheY. CheY is a single-domain,
+14-kDa RR protein. Several high-resolution crystal
+and NMR structures of CheY are now available84,85. In
+addition, there is a structure of CheY bound to the
+CheA P2 domain81 and a structure of the active con-
+formation of CheY, in which BeF3 was used to mimic
+the bound phosphoryl group86. CheY has the classic
+RR five-α-helix, five-stranded-β-sheet structure (FIG. 3).
+Phosphorylation  occurs  on  the  conserved  Asp57
+residue, which is in an acidic binding pocket that com-
+prises Asp12, Asp13 and Lys109. Phosphorylation of
+
+1032 | DECEMBER 2004 | VOLUME 5
+
+www.nature.com/reviews/molcellbio
+
+©  2004 Nature  Publishing Group
+
+this residue allows CheY to interact with FliM in the
+switch complex of the flagellar motor87–89 (BOX 3). The
+backbone structure of the protein does not change
+significantly on phosphorylation, but the exposed mole-
+cular surface can alter substantially. The binding of
+CheY–P to FliM promotes clockwise flagellar rotation,
+which causes the cell to tumble and change direction26,88.
+In vitro, CheY can be phosphorylated by small inorganic
+phosphodonors, such as acetyl phosphate90, and it is also
+subject to acetylation at numerous sites91. The potential
+biological relevance of acetylation and phosphorylation
+by such inorganic phosphodonors is not known, but
+mutants  in  acetyl-CoA  synthetase  show  abnormal
+behaviour91, which  indicates  that  some  aspects  of
+chemotactic behaviour might be modulated by meta-
+bolic activity.
+
+The phosphatase CheZ and signal termination. Signal
+termination is essential for chemotaxis. In the γ-sub-
+group of proteobacteria, CheZ is an allosteric activator
+of CheY dephosphorylation, which decreases the half-
+life of CheY–P from ~20 seconds to ~200 milliseconds
+— a rate that is required to allow temporal sensing. CheZ
+is probably a dimer, although large multimeric com-
+plexes might form in the presence of CheY–P (REF. 92).
+The activity of CheZ seems, at least in part, to be con-
+trolled by the concentration of its substrate, CheY–P
+(REF. 93). Co-crystals of CheZ and CheY bound to a
+phosphate analogue indicate that the Gln147 side
+chain of CheZ inserts into the CheY active site and
+might orientate a water molecule for nucleophilic
+attack94. E. coli mutants that lack CheZ have a ‘tum-
+bling’ phenotype, because they accumulate high con-
+centrations of CheY–P.
+
+Interestingly, CheZ seems to be restricted to the γ-
+subgroup of proteobacteria, so most species must use
+different mechanisms for signal termination. Several
+CheY homologues have been found in many species
+that lack CheZ, so they might function as phosphate
+sinks, as was shown for the two CheY proteins of
+Sinorhizobium meliloti. However, there are species that
+have both several CheY proteins and a CheZ homo-
+logue, so the story might be more complex. In S. meliloti,
+both  CheY  proteins  can  be  phosphorylated  by
+CheA–P, but only one of them binds to the flagellar
+motor. Reverse phosphotransfer from the motor-bind-
+ing CheY2–P, through CheA, to the second, non-motor
+binding CheY1 increases the rate of signal termina-
+tion95. Yet other species have CheY domains that are
+fused to other chemosensory proteins. For example,
+CheV is  a  CheW–CheY  fusion  that  is  found  in
+subtilis96,97, and  a
+Helicobacter  pylori and  B.
+CheA–CheY fusion protein has been identified in a
+number  of
+including  Rhodospirillum
+centenum98. Although the precise role of these fusion
+proteins is not known, the CheY domain cannot dif-
+fuse to the flagellar motor and might therefore func-
+tion as a phosphate sink. R. sphaeroides has six CheY
+homologues and, interestingly, these all have rapid
+dephosphorylation rates99, which might eliminate the
+need for CheZ.
+
+species,
+
+R E V I E W S
+
+Receptor adaptation. As mentioned above, bacteria
+must adapt to a background level of attractants and/or
+repellents by both rapid signal termination and by reset-
+ting the receptor proteins to a non-signalling state.
+Adaptation depends on the degree of methylation of
+specific, conserved glutamate residues in the cytoplas-
+mic signalling domain of an MCP. Methyl groups are
+transferred from a cytoplasmic pool of S-adenosyl
+methionine to an MCP by the constitutively active
+methyltransferase CheR100, and they are removed and
+released as methanol by the methylesterase CheB101,102.
+The crystal structure of CheR bound to S-adenosyl
+homocysteine (the methylation reaction product) has
+been determined in the presence103 and absence104 of the
+C-terminal NWETF motif from the E. coli MCP Tar.
+CheR has a small N-terminal domain that is linked to a
+large C-terminal domain (FIG. 3). The latter forms most
+of the interactions with S-adenosyl homocysteine. CheR
+is localized to MCP clusters mainly through hydropho-
+bic interactions between the β-subdomain of CheR and
+the CheR-docking NWETF motif in the E. coli MCPs
+Tar and Tsr. These interactions position CheR close to
+the sites that are to be methylated105. As the CheR:MCP
+ratio is thought to be about 1:100 (REF. 64), these interac-
+tions must be dynamic.
+
+The crystal structure of CheB has also been deter-
+mined  (FIG. 3). It  has  an  N-terminal  regulatory
+domain linked to a C-terminal catalytic domain106.
+Phosphorylation of the N-terminal domain causes a
+conformational change that exposes the active site in the
+catalytic  domain  to  its  substrate  and  stimulates
+methylesterase activity 100-fold106,107. The changes in the
+methylation level of the conserved glutamates of an
+MCP — which are brought about by changes in the
+level of phosphorylation and, therefore, the activity of
+CheB — reset the signalling state of an MCP and return
+CheA activity to the pre-stimulus level. The bacterium
+resumes its original pattern of swimming and the MCP
+can  now  respond  to  any  subsequent  increases  or
+decreases in chemoeffector concentration. The mecha-
+nism by which methylation exerts its effect on CheA
+activity remains unclear. However, the neutralization of
+the negative charges of the glutamate residues that
+occurs on methylation, and the subsequent return of
+these charges on demethylation, might affect helix pack-
+ing, and might therefore affect interactions within the
+oligomeric MCP clusters108.
+
+Other bacterial species: variations on a theme
+The E. coli chemosensory pathway forms the basis of
+our understanding of bacterial chemotaxis. However, it
+is becoming increasingly apparent that chemotaxis in
+other bacteria, although based on similar principles,
+might be far more complex. In particular, many species
+have far more putative chemoreceptors than the five that
+are present in E. coli. Some of these receptors lack obvi-
+ous transmembrane domains and have been shown to
+be cytoplasmic43. Other species also have further chemo-
+taxis proteins109. Although we have data on a wide range
+of species, two of the most well-studied will be used here
+to illustrate some aspects of this diversity — B. subtilis,
+
+NATURE REVIEWS | MOLECULAR CELL BIOLOGY
+
+VOLUME 5 | DECEMBER 2004 | 1 0 3 3
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+TRANSDUCER-LIKE PROTEIN
+(Tlp). Tlp proteins are
+cytoplasmic chemoreceptors
+that have the cytoplasmic
+domain of methyl-accepting
+chemotaxis proteins and lack
+transmembrane domains.
+
+because it has a single chemosensory pathway that con-
+tains the largest number of different types of chemosen-
+sory protein, and R. sphaeroides, because it has several
+chemosensory pathways.
+
+Chemotaxis in Bacillus subtilis. B. subtilis is one of the
+most well-studied Gram-positive bacteria and it seems
+to have more types of chemosensory protein than any
+other species that has been studied so far. This indicates
+either that the E. coli system represents a ‘streamlined’
+pathway, or that more proteins arose to refine the B. sub-
+tilis system during evolution. The B. subtilis pathway has
+a great deal in common with that of Archaea and might
+represent an alternative paradigm109. The chemorecep-
+tors are larger than those of E. coli and have a more
+complex cytoplasmic α-helical structure that is also
+conserved in Archaea. The phosphorylation reactions
+are reversed with respect to those in E. coli, with an
+increasing concentration of attractant resulting in an
+increased (rather than decreased) activity of CheA and
+therefore an increase (rather than a decrease) in CheY–P
+concentration. However, in B. subtilis, the binding of
+CheY–P to the flagellar motor decreases (rather than
+increases) the tumbling frequency and therefore pro-
+longs smooth swimming110.
+
+Unlike in E. coli, in which methylation simply com-
+pensates for a decreased CheA activity, methylation in
+B. subtilis is  more  subtle, with  different  glutamate
+residues carrying out specific roles. In McpB, Glu637
+methylation helps to bring about adaptation to the pres-
+ence of an attractant, whereas Glu630 methylation (with
+the accompanying demethylation of the nearby Glu637
+site) helps to bring about adaptation to the removal of an
+attractant111. So, although there is no change in the over-
+all level of methylation, methylation at each site has
+different consequences111. Methanol is released on both
+attractant addition and removal, which is unlike E. coli
+but is the same as in Archaea112–114. However, this only
+occurs when the attractant concentration is high, which
+reflects a nutrient-rich environment115. When attractant
+levels are low and the loss of methanol might be energet-
+ically costly, another relatively common system (in terms
+of genome sequences) can be used for adaptation96. In
+this system, CheV (a CheW–CheY fusion protein) can be
+phosphorylated by CheA–P. Furthermore, two other
+proteins — CheC and CheD — are present in B. subtilis,
+many other bacterial species and all Archaeal chemotaxis
+pathways116,117. CheC and CheD might interact to regu-
+late the adaptation pathway and CheC is also involved in
+the dephosphorylation of CheY–P, and therefore repre-
+sents yet-another signal-termination pathway.
+
+Chemotaxis in Rhodobacter sphaeroides. R. sphaeroides
+is  a  purple, non-sulphur, photoheterotrophic  bac-
+terium. It has three operons that potentially encode
+complete chemosensory pathways. Two of these oper-
+ons are essential for chemotaxis under laboratory con-
+ditions118, and DNA arrays and proteomic analysis have
+shown that both operons are expressed, but at different
+levels in aerobic versus anaerobic conditions (S. Kaplan,
+personal communication).
+
+R. sphaeroides has nine transmembrane chemore-
+ceptors  (MCPs)  and  four  putative  cytoplasmic
+chemoreceptors  (TRANSDUCER-LIKE  PROTEINS (Tlps)).
+These chemoreceptors localize to discrete regions of
+the bacterial cell — MCPs localize to the poles of the
+cell, whereas Tlps are found in a defined cluster in the
+bacterial cytoplasm43,53,119 (FIG. 4b). This indicates that
+clustering might be an essential part of chemoreceptor
+signalling for both membrane-localized and cytoplas-
+mic receptors. It also indicates that some bacteria might
+respond chemotactically to changes in the concentra-
+tion of internal compounds — which might reflect the
+general metabolic state of the cell — as well as to exter-
+nal compounds.
+
+R. sphaeroides has four CheA proteins — three of
+which are essential for chemotaxis — together with six
+CheY proteins and two CheB proteins118. In vitro phos-
+photransfer experiments have shown that the different
+CheA proteins can phosphotransfer to different sub-
+groups of RRs99. CheA2 phosphorylates all of the RRs,
+whereas CheA3 and CheA4 phosphorylate CheY6 and
+CheB2, which are all encoded by the same operon, as well
+as CheY1 from operon 1. CheA3 and CheA4 are highly
+unusual, as CheA3 contains P1 and P5 domains, whereas
+CheA4 contains P3, P4 and P5 domains, but no P1
+domain. Neither  CheA3 nor  CheA4 has  the  P2
+CheY/CheB-binding domain, and a CheA4 homodimer
+can phosphorylate the P1 domain of CheA3 (REF. 120).
+
+Although CheA2 can phosphotransfer to all of the
+RRs in vitro, it does not compensate for CheA3/CheA4
+deletions in vivo118. This might be because the proteins
+that  are  encoded  by  one  chemosensory  pathway
+(CheW2, CheW3, CheA2 and CheR2) localize with MCPs
+at  the  poles  of cells, whereas  the  proteins  that  are
+encoded by the other operon (CheW4, CheA3, CheA4
+and CheR3) localize with the cytoplasmic receptors in a
+discrete cluster in the cytoplasm119 (FIG. 4b). The cyto-
+plasmic cluster is actively segregated on cell division,
+and this process requires a protein homologue of a ParA
+type-1  DNA-partitioning  protein, PpfA, which  is
+encoded in the centre of the related chemosensory
+operon (S. R. Thompson, G.H.W. and J.P.A., unpub-
+lished data). This physical separation of the components
+of the two pathways might prevent crosstalk in vivo. It
+also provides intriguing evidence that proteins are tar-
+geted and segregated within the bacterial cytoplasm,
+which perhaps indicates a more complex bacterial
+cytoskeleton than was previously thought. Unlike in
+E. coli, the two CheB proteins do not seem to be specifi-
+cally localized in R. sphaeroides, whereas the CheR
+proteins are partially localized119. The physiological
+advantage  of physically  segregating  these  two
+chemosensory pathways and the structural basis for the
+kinase discrimination is unclear, but genome sequences
+indicate that this segregation of different pathways will
+not be uncommon in bacteria.
+
+Summary
+The numerous studies that have been carried out on
+the chemotaxis pathways of bacteria have provided us
+with invaluable data concerning the structure, kinetics
+
+1034 | DECEMBER 2004 | VOLUME 5
+
+www.nature.com/reviews/molcellbio
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+and regulation of signalling systems in biology. The vast
+array of physiological data that has been collected from
+assaying this system is now being combined with the
+biochemical data to allow mathematical models of
+chemotaxis and signal kinetics to be generated and
+evaluated. From these models, general principles are
+emerging that might be applicable to many other
+
+signalling pathways both in prokaryotes and in higher
+eukaryotes. Chemotaxis is just one of the sensing sys-
+tems that bacteria possess to monitor and respond to
+changes in their environment. The correct interplay
+between this system and other sensing systems is
+essential for numerous sensory signals to result in a
+balanced behavioural response.
+
+1.  West, A. H. & Stock, A. M. Histidine kinases and response
+
+regulator proteins in two-component signaling systems.
+Trends Biochem. Sci. 26, 369–376 (2001).
+A good review of the biochemical and structural
+aspects of chemotaxis and other two-component
+signalling systems.
+
+2.  Maeda, T., Wurglermurphy, S. M. & Saito, H. 
+
+A two-component system that regulates an osmosensing
+MAP kinase cascade in yeast. Nature 369, 242–245 (1994).
+
+3.  Nagahashi, S. et al. Isolation of CaSLN1 and CaNIK1, the
+genes for osmosensing histidine kinase homologues, from
+the pathogenic fungus Candida albicans. Microbiology 144,
+425–432 (1998).
+
+4.  Schuster, S. C., Noegel, A. A., Oehme, F., Gerisch, G. &
+
+Simon, M. I. The hybrid histidine kinase DokA is part of the
+osmotic response system of Dictyostelium. EMBO J. 15,
+3880–3889 (1996).
+
+5.  Wilkinson, J. Q., Lanahan, M. B., Yen, H. C., 
+
+Giovannoni, J. J. & Klee, H. J. An ethylene-inducible
+component of signal transduction encoded by never-ripe.
+Science 270, 1807–1809 (1995).
+
+References 21 and 22 use fluorescence resonance
+energy transfer to assay the interactions between
+chemoreceptors in E. coli and between CheY–P and
+CheZ to explain sensitivity and gain in the chemotaxis
+pathway.
+
+23. Kim, C., Jackson, M., Lux, R. & Khan, S. Determinants of
+chemotactic signal amplification in Escherichia coli. J. Mol.
+Biol. 307, 119–135 (2001).
+
+24. Hess, J. F., Oosawa, K., Kaplan, N. & Simon, M. I.
+
+Phosphorylation of three proteins in the signalling pathway
+of bacterial chemotaxis. Cell 53, 79–87 (1988).
+An early report showing that the phosphorylation of
+chemotaxis proteins is a mechanism for signal
+transduction.
+
+25.  Anand, G. S., Goudreau, P. N. & Stock, A. M. Activation of
+
+methylesterase CheB: evidence of a dual role for the
+regulatory domain. Biochemistry 37, 14038–14047 (1998).
+
+26.  Welch, M., Oosawa, K., Aizawa, S.-I. & Eisenbach, M.
+
+Phosphorylation-dependent binding of a signal molecule to
+the flagellar switch of bacteria. Proc. Natl Acad. Sci. USA
+90, 8787–8791 (1993).
+
+6.  Ashby, M. K. Survey of the number of two-component
+
+27.  Toker, A. S. & Macnab, R. M. Distinct regions of bacterial
+
+28.  McEvoy, M. M., Bren, A., Eisenbach, M. & Dahlquist, F. W.
+
+47.  Weis, R. M. & Koshland, D. E. Jr. Reversible receptor
+
+41.  Surette, M. G. & Stock, J. B. Role of α-helical coiled-coil
+
+interactions in receptor dimerization, signaling, and
+adaptation during bacterial chemotaxis. J. Biol. Chem. 271,
+17966–17973 (1996).
+
+42.  Storch, K. F., Rudolph, J. & Oesterhelt, D. Car: a
+
+cytoplasmic sensor responsible for arginine chemotaxis in
+the archaeon Halobacterium salinarum. EMBO J. 18,
+1146–1158 (1999).
+
+43.  Wadhams, G. H. et al. TlpC, a novel chemotaxis protein 
+
+in Rhodobacter sphaeroides, localizes to a discrete 
+region in the cytoplasm. Mol. Microbiol. 46, 1211–1221
+(2002).
+
+44.  Nishiyama, S., Maruyama, I. N., Homma, M. & Kawagishi, I.
+Inversion of thermosensing property of the bacterial receptor
+Tar by mutations in the second transmembrane region. 
+J. Mol. Biol. 286, 1275–1284 (1999).
+
+45.  Appleman, J. A., Chen, L. L. & Stewart, V. Probing
+conservation of HAMP linker structure and signal
+transduction mechanism through analysis of hybrid sensor
+kinases. J. Bacteriol. 185, 4872–4882 (2003).
+
+46.  Aravind, L. & Ponting, C. P. The cytoplasmic helical linker
+domain of receptor histidine kinase and methyl-accepting
+proteins is common to many prokaryotic signalling proteins.
+FEMS Microbiol. Lett. 176, 111–116 (1999).
+
+methylation is essential for normal chemotaxis of Escherichia
+coli in gradients of aspartic acid. Proc. Natl Acad. Sci. USA
+85, 83–87 (1988).
+
+48.  Kehry, M. R., Bond, M. W., Hunkapiller, M. W. & 
+
+Dahlquist, F. W. Enzymatic deamidation of methyl-accepting
+chemotaxis proteins in Escherichia coli catalyzed by the
+cheB gene product. Proc. Natl Acad. Sci. USA 80,
+3599–3603 (1983).
+
+49.  Wu, J. G., Li, J. Y., Li, G. Y., Long, D. G. & Weis, R. M. The
+receptor binding site for the methyltransferase of bacterial
+chemotaxis is distinct from the sites of methylation.
+Biochemistry 35, 4984–4993 (1996).
+
+50.  Barnakov, A. N., Barnakova, L. A. & Hazelbauer, G. L.
+
+Comparison in vitro of a high- and a low-abundance
+chemoreceptor of Escherichia coli: similar kinase activation
+but different methyl-accepting activities. J. Bacteriol. 180,
+6713–6718 (1998).
+
+51.  Le Moual, H., Quang, T. & Koshland, D. E. Jr. Methylation of
+
+the Escherichia coli chemotaxis receptors: intra- and
+interdimer mechanisms. Biochemistry 36, 13441–13448
+(1997).
+
+52.  Maddock, J. R. & Shapiro, L. Polar location of the
+
+chemoreceptor complex in the Escherichia coli cell. Science
+259, 1717–1723 (1993).
+The use of immunogold electron microscopy to show
+for the first time that chemoreceptors cluster at the
+poles of bacterial cells.
+
+53.  Wadhams, G. H., Martin, A. C. & Armitage, J. P.
+
+Identification and localization of a methyl-accepting
+chemotaxis protein in Rhodobacter sphaeroides. 
+Mol. Microbiol. 36, 1222–1233 (2000).
+
+54. Thomason, P. A., Wolanin, P. M. & Stock, J. B. Signal
+
+transduction: receptor clusters as information processing
+arrays. Curr. Biol. 12, R399–R401 (2002).
+
+55.  Sourjik, V. & Berg, H. C. Localization of components of the
+chemotaxis machinery of Escherichia coli using fluorescent
+protein fusions. Mol. Microbiol. 37, 740–751 (2000).
+
+56.  Martin, A. C., Wadhams, G. H. & Armitage, J. P. The roles of
+
+the multiple CheW and CheA homologues in chemotaxis
+and in chemoreceptor localization in Rhodobacter
+sphaeroides. Mol. Microbiol. 40, 1261–1272 (2001).
+57.  Homma, M., Shiomi, D., Homma, M. & Kawagishi, I.
+
+Attractant binding alters arrangement of chemoreceptor
+dimers within its cluster at a cell pole. Proc. Natl Acad. Sci.
+USA 101, 3462–3467 (2004).
+
+58.  Studdert, C. A. & Parkinson, J. S. Crosslinking snapshots of
+bacterial chemoreceptor squads. Proc. Natl Acad. Sci. USA
+101, 2117–2122 (2004).
+
+59.  Wolanin, P. M. & Stock, J. B. Bacterial chemosensing:
+cooperative molecular logic. Curr. Biol. 14, R486–R487
+(2004).
+
+flagellar switch protein FliM interact with FliG, FliN and CheY.
+J. Mol. Biol. 273, 623–634 (1997).
+
+Identification of the binding interfaces on CheY for 
+two of its targets, the phosphatase CheZ and the flagellar
+switch protein FliM. J. Mol. Biol. 289, 1423–1433 
+(1999).
+
+29.  Sourjik, V. & Berg, H. C. Binding of the Escherichia coli
+
+response regulator CheY to its target measured in vivo by
+fluorescence resonance energy transfer. Proc. Natl Acad.
+Sci. USA 99, 12669–12674 (2002).
+
+30.  Morgan, D. G., Baumgartner, J. B. & Hazelbauer, G. L.
+
+Proteins antigenically related to methyl-accepting
+chemotaxis proteins of Escherichia coli detected in a wide
+range of bacterial species. J. Bacteriol. 175, 133–140
+(1993).
+
+31.  Falke, J. J. & Hazelbauer, G. L. Transmembrane signaling in
+
+bacterial chemoreceptors. Trends Biochem. Sci. 26,
+257–265 (2001).
+
+32.  Yeh, J. I. et al. High resolution structures of the ligand
+binding domain of the wild type aspartate receptor. 
+J. Mol. Biol. 262, 186–201 (1996).
+
+33.  Kim, K. K., Yokota, H. & Kim, S. H. Four-helical-bundle
+
+structure of the cytoplasmic domain of a serine chemotaxis
+receptor. Nature 400, 787–792 (1999).
+
+receptor — crystal structures of the ligand domain of
+aspartate chemotaxis receptor with and without aspartate.
+Biochemistry 31, 2192 (1992).
+
+35.  Mowbray, S. L. & Koshland, D. E. Jr. Additive and
+
+independent responses to a single receptor: aspartate 
+and maltose stimuli on the Tar protein. Cell 50, 171–180
+(1987).
+
+36.  Beel, B. D. & Hazelbauer, G. L. Substitutions in the
+
+periplasmic domain of low-abundance chemoreceptor Trg
+that induce or reduce transmembrane signaling: kinase
+activation and context effects. J. Bacteriol. 183, 671–679
+(2001).
+Isaac, B., Gallagher, G. J., Balazs, Y. S. & Thompson, L. K.
+Site-directed rotational resonance solid-state NMR 
+distance measurements probe structure and 
+mechanism in the transmembrane domain of the serine
+bacterial chemoreceptor. Biochemistry 41, 3025–3036 
+(2002).
+
+38.  Murphy, O. J., Kovacs, F. A., Sicard, E. L. & Thompson, L. K.
+
+Site-directed solid-state NMR measurement of a ligand-
+induced conformational change in the serine bacterial
+chemoreceptor. Biochemistry 40, 1358–1366 (2001).
+
+39.  Ottemann, K. M., Xiao, W., Shin, Y. K. & Koshland, D. E. Jr.
+
+A piston model for transmembrane signaling of the
+aspartate receptor. Science 285, 1751–1754 (1999).
+
+40.  Ames, P. & Parkinson, J. S. Transmembrane signaling by
+bacterial chemoreceptors: E. coli transducers with locked
+signal output. Cell 55, 817–826 (1988).
+
+response regulator genes in the complete and annotated
+genome sequences of prokaryotes. FEMS Microbiol. Lett.
+231, 277–281 (2004).
+
+7.  Stock, A. M., Robinson, V. L. & Goudreau, P. N. 
+
+Two-component signal transduction. Annu. Rev. Biochem.
+69, 183–215 (2000).
+Inouye, M. & Dutta, R. Histidine Kinases in Signal
+Transduction (Academic Press, London, UK, 2003).
+
+8. 
+
+9.  Potter, C. A. et al. Expression, purification and
+
+characterisation of full-length histidine protein kinase RegB
+from Rhodobacter sphaeroides. J. Mol. Biol. 320, 201–213
+(2002).
+
+10.  Armitage, J. P. Bacterial tactic responses. Adv. Microb.
+
+Physiol. 41, 229–289 (1999).
+
+11.  Bren, A. & Eisenbach, M. How signals are heard during
+
+bacterial chemotaxis: protein–protein interactions in 
+sensory signal propagation. J. Bacteriol. 182, 6865–6873
+(2000).
+
+12.  Faguy, D. M. & Jarrell, K. F. A twisted tale: the origin and
+
+evolution of motility and chemotaxis in prokaryotes.
+Microbiology 145, 279–281 (1999).
+
+13.  Schnitzer, M. J., Block, S. M., Berg, H. C. & Purcell, E. M.
+
+Biology of the Chemotactic Response (Armitage, J. P. &
+Lackie, J. M. eds) 15–34 (Cambridge Univ. Press, UK,
+1990).
+
+sensing of chemical gradients: an experimental evidence.
+Proc. Natl Acad. Sci. USA 100, 5748–5753 (2003).
+
+15.  Turner, L., Ryu, W. S. & Berg, H. C. Real-time imaging of
+
+fluorescent flagellar filaments. J. Bacteriol. 182, 2793–2801
+(2000).
+
+16.  Armitage, J. P. & Schmitt, R. Bacterial chemotaxis:
+
+Rhodobacter sphaeroides and Sinorhizobium meliloti —
+variations on a theme? Microbiology 143, 3671–3682
+(1997).
+
+17.  Adler, J. Chemoreceptors in bacteria. Science 166,
+
+1588–1597 (1969).
+
+18.  Levin, M. D., Morton, F. C., Abouhamad, W. N., Bourret, R. B.
+
+& Bray, D. Origins of individual swimming behavior in
+bacteria. Biophys. J. 74, 175–181 (1998).
+
+19. Alon, U., Surette, M. G., Barkai, N. & Leibler, S. Robustness
+
+37. 
+
+in bacterial chemotaxis. Nature 397, 168–171 (1999).
+A mathematical consideration of the processes of
+adaptation and robustness in the bacterial
+chemotaxis pathway.
+
+20.  Kim, S. H., Wang, W. R. & Kim, K. K. Dynamic and
+clustering model of bacterial chemotaxis receptors:
+structural basis for signaling and high sensitivity. Proc. Natl
+Acad. Sci. USA 99, 11611–11615 (2002).
+
+21.  Sourjik, V. & Berg, H. C. Functional interactions between
+receptors in bacterial chemotaxis. Nature 428, 437–441
+(2004).
+
+22. Sourjik, V. & Berg, H. C. Receptor sensitivity in bacterial
+
+chemotaxis. Proc. Natl Acad. Sci. USA 99, 123–127 (2002).
+
+14.  Thar, R. & Kühl, M. Bacteria are not too small for spatial
+
+34.  Milburn, M. V. et al. Structural changes in a transmembrane
+
+NATURE REVIEWS | MOLECULAR CELL BIOLOGY
+
+VOLUME 5 | DECEMBER 2004 | 1 0 3 5
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+60. Bray, D., Levin, M. D. & Morton, F. C. Receptor clustering as
+
+82.  Stewart, R. C., Jahreis, K. & Parkinson, J. S. Rapid
+
+105. Shiomi, D., Zhulin, I. B., Homma, M. & Kawagishi, I. Dual
+
+a cellular mechanism to control sensitivity. Nature 393,
+85–88 (1998).
+One of the first papers to propose that
+chemoreceptor clustering could explain the sensitivity
+and gain in the chemotaxis pathway.
+
+phosphotransfer to CheY from a CheA protein lacking the
+CheY-binding domain. Biochemistry 39, 13157–13165 (2000).
+
+83.  Hess, J. F., Bourret, R. B. & Simon, M. I. Histidine
+
+phosphorylation and phosphoryl group transfer in bacterial
+chemotaxis. Nature 336, 139–143 (1988).
+
+61.  Levit, M. N., Grebe, T. W. & Stock, J. B. Organization of the
+
+84.  Halkides, C. J. et al. The 1.9 Å resolution crystal structure of
+
+receptor-kinase signaling array that regulates Escherichia
+coli chemotaxis. J. Biol. Chem. 277, 36748–36754 (2002).
+
+62.  Lamanna, A. C. et al. Conserved amplification of
+chemotactic responses through chemoreceptor
+interactions. J. Bacteriol. 184, 4981–4987 (2002).
+
+63.  Ames, P., Studdert, C. A., Reiser, R. H. & Parkinson, J. S.
+Collaborative signaling by mixed chemoreceptor teams in
+Escherichia coli. Proc. Natl Acad. Sci. USA 99, 7060–7065
+(2002).
+
+64. Li, M. & Hazelbauer, G. L. Cellular stoichiometries of the
+
+components of the chemotaxis signaling complex. 
+J. Bacteriol. 186, 3687–3694 (2004).
+A quantitative western-blot analysis of chemotaxis
+proteins in cells that were grown under different
+growth conditions, which showed that although the
+absolute numbers of the signalling components vary,
+the stoichiometry between them remains relatively
+constant.
+
+65.  Shimizu, T. S. et al. Molecular model of a lattice of signalling
+proteins involved in bacterial chemotaxis. Nature Cell Biol. 2,
+792–796 (2000).
+
+66.  Rebbapragada, A. et al. The Aer protein and the serine
+
+chemoreceptor Tsr independently sense intracellular energy
+levels and transduce oxygen, redox, and energy signals for
+Escherichia coli behavior. Proc. Natl Acad. Sci. USA 94,
+10541–10546 (1997).
+
+phosphono-CheY, an analogue of the active form of the
+response regulator, CheY. Biochemistry 39, 5280–5286
+(2000).
+
+85.  Lee, S. Y. et al. Crystal structure of activated CheY —
+
+comparison with other activated receiver domains. 
+J. Biol. Chem. 276, 16425–16431 (2001).
+
+86.  Cho, H. S. et al. NMR structure of activated CheY. 
+
+J. Mol. Biol. 297, 543–551 (2000).
+
+87.  Bren, A. & Eisenbach, M. The N terminus of the flagellar
+
+switch protein, FliM, is the binding domain for the
+chemotactic response regulator, CheY. J. Mol. Biol. 278,
+507–514 (1998).
+
+88. Sagi, Y., Khan, S. & Eisenbach, M. Binding of the
+
+chemotaxis response regulator CheY to the isolated, intact
+switch complex of the bacterial flagellar motor — lack of
+cooperativity. J. Biol. Chem. 278, 25867–25871 (2003).
+Showed that CheY–P binds to the switch component
+of the bacterial flagellar motor in a non-cooperative
+manner, which indicates that any amplification that
+occurs at the motor occurs after CheY–P binding.
+
+89.  Lee, S. Y. et al. Crystal structure of an activated response
+regulator bound to its target. Nature Struct. Biol. 8, 52–56
+(2001).
+
+90.  Da Re, S. S., Deville-Bonne, D., Tolstykh, T., Veron, M. &
+
+Stock, J. B. Kinetics of CheY phosphorylation by small
+molecule phosphodonors. FEBS Lett. 457, 323–326 (1999).
+
+recognition of the bacterial chemoreceptor by chemotaxis-
+specific domains of the CheR methyltransferase. J. Biol.
+Chem. 277, 42325–42333 (2002).
+
+106. Djordjevic, S., Goudreau, P. N., Xu, Q., Stock, A. M. & 
+West, A. H. Structural basis for methylesterase CheB
+regulation by a phosphorylation-activated domain. Proc.
+Natl Acad. Sci. USA 95, 1381–1386 (1998).
+
+107. Anand, G. S. & Stock, A. M. Kinetic basis for the stimulatory
+
+effect of phosphorylation on the methylesterase activity of
+CheB. Biochemistry 41, 6752–6760 (2002).
+
+108. Levit, M. N., Liu, Y. & Stock, J. B. Stimulus response
+coupling in bacterial chemotaxis: receptor dimers in
+signalling arrays. Mol. Microbiol. 30, 459–466 (1998).
+109. Szurmant, H. & Ordal, G. W. Diversity in chemotaxis
+
+mechanisms among the bacteria and Archaea. Microbiol.
+Mol. Biol. Rev. 68, 301–319 (2004).
+
+110. Bischoff, D. S., Bourret, R. B., Kirsch, M. L. & Ordal, G. W.
+Purification and characterization of Bacillus subtilis CheY.
+Biochemistry 32, 9256–9261 (1993).
+
+111. Zimmer, M. A., Tiu, J., Collins, M. A. & Ordal, G. W. Selective
+
+methylation changes on the Bacillus subtilis chemotaxis
+receptor McpB promote adaptation. J. Biol. Chemistry 275,
+24264–24272 (2000).
+
+112. Nordmann, B. et al. Identification of volatile forms of methyl
+
+groups released by Halobacterium salinarium. J. Biol.
+Chem. 269, 16449–16454 (1994).
+
+113. Thoelke, M. S., Kirby, J. R. & Ordal, G. W. Novel methyl
+
+transfer during chemotaxis in Bacillus subtilis. Biochemistry
+28, 5585–5589 (1989).
+
+114. Kirby, J. R., Kristich, C. J., Feinberg, S. L. & Ordal, G. W.
+
+Methanol production during chemotaxis to amino acids in
+Bacillus subtilis. Mol. Microbiol. 24, 869–878 (1997).
+
+67.  Bibikov, S. I., Barnes, L. A., Gitin, Y. & Parkinson, J. S.
+
+91.  Barak, R. & Eisenbach, M. Acetylation of the response
+
+115. Kirsch, M. L., Peters, P. D., Hanlon, D. W., Kirby, J. R. &
+
+Domain organization and flavin adenine dinucleotide-binding
+determinants in the aerotaxis signal transducer Aer of
+Escherichia coli. Proc. Natl Acad. Sci. USA 97, 5830–5835
+(2000).
+
+68.  Fu, R., Wall, J. D. & Voordouw, G. DcrA, a c-type heme-
+
+containing methyl-accepting chemotaxis protein from
+Desulfovibrio vulgaris Hildenborough, senses the oxygen
+concentration or redox potential of the environment. 
+J. Bacteriol. 176, 344–350 (1994).
+
+69.  Hou, S. et al. Myoglobin-like aerotaxis transducers in
+Archaea and bacteria. Nature 403, 540–544 (2000).
+
+70.  Lux, R. et al. Elucidation of a PTS-carbohydrate
+
+chemotactic signal pathway in Escherichia coli using a 
+time-resolved behavioral assay. Mol. Biol. Cell 10,
+1133–1146 (1999).
+
+71.  Boukhvalova, M., VanBruggen, R. & Stewart, R. C. CheA
+kinase and chemoreceptor interaction surfaces on CheW. 
+J. Biol. Chem. 277, 23596–23603 (2002).
+
+72.  Griswold, I. J. et al. The solution structure and interactions of
+
+CheW from Thermotoga maritima. Nature Struct. Biol. 9,
+121–125 (2002).
+
+73.  Shah, D. S. et al. Identification of a fourth cheY gene in
+Rhodobacter sphaeroides and interspecies interaction
+within the bacterial chemotaxis signal transduction pathway.
+Mol. Microbiol. 35, 101–112 (2000).
+
+74.  Hamblin, P. A., Bourne, N. A. & Armitage, J. P.
+
+Characterization of the chemotaxis protein CheW 
+from Rhodobacter sphaeroides and its effect on the
+behaviour of Escherichia coli. Mol. Microbiol. 24, 41–51
+(1997).
+
+75.  Morrison, T. B. & Parkinson, J. S. A fragment liberated from
+the Escherichia coli CheA kinase that blocks stimulatory, but
+not inhibitory, chemoreceptor signaling. J. Bacteriol. 179,
+5543–5550 (1997).
+
+76.  Mourey, L. et al. Crystal structure of the CheA histidine
+
+phosphotransfer domain that mediates response regulator
+phosphorylation in bacterial chemotaxis. J. Biol. Chem. 276,
+31074–31082 (2001).
+
+regulator, CheY, is involved in bacterial chemotaxis. 
+Mol. Microbiol. 40, 731–743 (2001).
+
+92.  Blat, Y. & Eisenbach, M. Oligomerization of the phosphatase
+
+CheZ upon interaction with the phosphorylated form of
+CheY — the signal protein of bacterial chemotaxis. 
+J. Biol. Chem. 271, 1226–1231 (1996).
+
+93.  Blat, Y. & Eisenbach, M. Mutants with defective
+
+phosphatase activity show no phosphorylation-dependent
+oligomerization of CheZ. The phosphatase of bacterial
+chemotaxis. J. Biol. Chem. 271, 1232–1236 (1996).
+
+94.  Zhao, R., Collins, E. J., Bourret, R. B. & Silversmith, R. E.
+
+Structure and catalytic mechanism of the E. coli chemotaxis
+phosphatase CheZ. Nature Struct. Biol. 9, 570–575 (2002).
+
+95. Sourjik, V. & Schmitt, R. Phosphotransfer between CheA,
+CheY1, and CheY2 in the chemotaxis signal transduction
+chain of Rhizobium meliloti. Biochemistry 37, 2327–2335
+(1998).
+Identified an alternative signal-termination
+mechanism, which uses a phosphate sink in a
+bacterial species that lacks CheZ.
+
+96.  Karatan, E., Saulmon, M. M., Bunn, M. W. & Ordal, G. W.
+
+Phosphorylation of the response regulator CheV is required
+for adaptation to attractants during Bacillus subtilis
+chemotaxis. J. Biol. Chem. 276, 43618–43626 (2001).
+
+97.  Pittman, M. S., Goodwin, M. & Kelly, D. J. Chemotaxis in the
+
+human gastric pathogen Helicobacter pylori: different roles
+for CheW and the three CheV paralogues, and evidence for
+CheV2 phosphorylation. Microbiology 147, 2493–2504
+(2001).
+
+98.  Jiang, Z. Y. & Bauer, C. E. Analysis of a chemotaxis operon
+
+from Rhodospirillum centenum. J. Bacteriol. 179,
+5712–5719 (1997).
+
+99. Porter, S. L. & Armitage, J. P. Phosphotransfer in
+
+Rhodobacter sphaeroides chemotaxis. J. Mol. Biol. 324,
+35–45 (2002).
+Showed that different CheA proteins from 
+R. sphaeroides differentially phosphorylate specific
+RRs.
+
+77.  Bilwes, A. M., Alex, L. A., Crane, B. R. & Simon, M. I.
+
+100. Springer, W. R. & Koshland, D. E. Jr. Identification of a
+
+Structure of CheA, a signal-transducing histidine kinase. 
+Cell 96, 131–141 (1999).
+
+78.  Bourret, R. B., Davagnino, J. & Simon, M. I. The carboxy-
+terminal portion of the CheA kinase mediates regulation of
+autophosphorylation by transducer and CheW. J. Bacteriol.
+175, 2097–2101 (1993).
+
+79.  Levit, M. N., Liu, Y. & Stock, J. B. Mechanism of CheA
+
+protein kinase activation in receptor signaling complexes.
+Biochemistry 38, 6651–6658 (1999).
+
+80.  Li, J. Y., Swanson, R. V., Simon, M. I. & Weis, R. M. The
+response regulators CheB and CheY exhibit competitive
+binding to the kinase CheA. Biochemistry 34, 14626–14636
+(1995).
+
+81.  Welch, M., Chinardet, N., Mourey, L., Birck, C. & 
+
+Samama, J. P. Structure of the CheY-binding domain of
+histidine kinase CheA in complex with CheY. Nature Struct.
+Biol. 5, 25–29 (1998).
+
+protein methyltransferase as the cheR gene product in the
+bacterial sensing system. Proc. Natl Acad. Sci. USA 74,
+533–537 (1977).
+
+101. Kehry, M. R. & Dahlquist, F. W. Adaptation in bacterial
+
+chemotaxis: CheB-dependent modification permits
+additional methylations of sensory transducing proteins. 
+Cell 29, 761–772 (1982).
+
+102. Kehry, M. R., Doak, T. G. & Dahlquist, F. W. Sensory
+adaptation in bacterial chemotaxis — regulation of
+demethylation. J. Bacteriol. 163, 983–990 (1985).
+103. Djordjevic, S. & Stock, A. M. Chemotaxis receptor
+
+recognition by protein methyltransferase CheR. Nature
+Struct. Biol. 5, 446–450 (1998).
+
+104. Djordjevic, S. & Stock, A. M. Crystal structure of the
+
+chemotaxis receptor methyltransferase CheR suggests a
+conserved structural motif for binding 
+S-adenosylmethionine. Structure 5, 545–558 (1997).
+
+Ordal, G. W. Chemotactic methylesterase promotes
+adaptation to high concentrations of attractant in Bacillus
+subtilis. J. Biol. Chem. 268, 18610–18616 (1993).
+
+116. Rosario, M. M. & Ordal, G. W. CheC and CheD interact to
+regulate methylation of Bacillus subtilis methyl-accepting
+chemotaxis proteins. Mol. Microbiol. 21, 511–518 (1996).
+
+117. Szurmant, H., Muff, T. J. & Ordal, G. W. Bacillus subtilis
+
+CheC and FliY are members of a novel class of CheY–P-
+hydrolyzing proteins in the chemotactic signal transduction
+cascade. J. Biol. Chem. 279, 21787–21792 (2004).
+Identified roles for extra chemotaxis proteins in 
+B. subtilis.
+
+118. Porter, S. L., Warren, A. V., Martin, A. C. & Armitage, J. P.
+
+The third chemotaxis locus of Rhodobacter sphaeroides is
+essential for chemotaxis. Mol. Microbiol. 46, 1081–1094
+(2002).
+
+119. Wadhams, G. H., Warren, A. V., Martin, A. C. & Armitage, J. P.
+
+Targeting of two signal transduction pathways to different
+regions of the bacterial cell. Mol. Microbiol. 50, 763–770
+(2003).
+Showed for the first time that the components of two
+chemotaxis pathways are physically separated within
+a bacterial cell.
+
+120. Porter, S. L. & Armitage, J. P. Chemotaxis in Rhodobacter
+sphaeroides requires an atypical histidine protein kinase. 
+J. Biol. Chem. 12 Oct 2004 (doi:10.1074/jbc.M408855200).
+
+121. O’Toole, R. et al. The chemotactic response of Vibrio
+anguillarum to fish intestinal mucus is mediated by a
+combination of multiple mucus components. J. Bacteriol.
+181, 4308–4317 (1999).
+
+122. Kim, H. & Farrand, S. K. Opine catabolic loci from
+
+Agrobacterium plasmids confer chemotaxis to their cognate
+substrates. Mol. Plant Microbe Interact. 11, 131–143
+(1998).
+
+123. Zhu, J. & Mekalanos, J. J. Quorum sensing-dependent
+
+biofilms enhance colonization in Vibrio cholerae. Dev. Cell 5,
+647–656 (2003).
+
+124. Butler, S. M. & Camilli, A. Both chemotaxis and net motility
+greatly influence the infectivity of Vibrio cholerae. Proc. Natl
+Acad. Sci. USA 101, 5018–5023 (2004).
+
+125. Pandya, S., Iyer, P., Gaitonde, V., Parekh, T. & Desai, A.
+
+Chemotaxis of Rhizobium SP.S2 towards Cajanus cajan root
+exudate and its major components. Curr. Microbiol. 38,
+205–209 (1999).
+
+126. Millikan, D. S. & Ruby, E. G. FlrA, a σ54-dependent
+
+transcriptional activator in Vibrio fischeri, is required for
+motility and symbiotic light-organ colonization. J. Bacteriol.
+185, 3547–3557 (2003).
+
+127. Stoodley, P., Sauer, K., Davies, D. G. & Costerton, J. W.
+
+Biofilms as complex differentiated communities. Annu. Rev.
+Microbiol. 56, 187–209 (2002).
+
+128. Costerton, J. W. Anaerobic biofilm infections in cystic
+
+fibrosis. Mol. Cell 10, 699–700 (2002).
+
+129. Taga, M. E. & Bassler, B. L. Chemical communication
+
+among bacteria. Proc. Natl Acad. Sci. USA 100,
+14549–14554 (2003).
+
+1036 | DECEMBER 2004 | VOLUME 5
+
+www.nature.com/reviews/molcellbio
+
+©  2004 Nature  Publishing Group
+
+R E V I E W S
+
+130. Berg, H. C. The rotary motor of bacterial flagella. 
+
+Annu. Rev. Biochem. 72, 19–54 (2003).
+A comprehensive review of the mechanism 
+of rotation of the bacterial flagellar motor.
+
+131. Atsumi, T., McCarter, L. & Imae, Y. Polar and lateral 
+
+flagellar motors of marine Vibrio are driven by 
+different ion-motive forces. Nature 355, 182–184 
+(1992).
+
+138. Hueck, C. J. Type III protein secretion systems in bacterial
+pathogens of animals and plants. Microbiol. Mol. Biol. Rev.
+62, 379–433 (1998).
+
+139. Oster, G. & Wang, H. Rotary protein motors. Trends Cell
+
+Biol. 13, 114–121 (2003).
+
+140. Shi, W., Kohler, T. & Zusman, D. R. Chemotaxis plays a role
+
+in the social behaviour of Myxococcus xanthus. 
+Mol. Microbiol. 9, 601–611 (1993).
+
+132. Mattick, J. S. Type IV pili and twitching motility. Annu. Rev.
+
+141. Shi, W. Y., Yang, Z. M., Sun, H., Lancero, H. & Tong, L. M.
+
+Microbiol. 56, 289–314 (2002).
+
+133. Kaiser, D. Coupling cell movement to multicellular
+
+development in Myxobacteria. Nature Rev. Microbiol. 1,
+45–54 (2003).
+
+134. McBride, M. J. Bacterial gliding motility: multiple
+
+mechanisms for cell movement over surfaces. Annu. Rev.
+Microbiol. 55, 49–75 (2001).
+
+135. Wolgemuth, C. W., Igoshin, O. & Oster, G. The motility of
+
+mollicutes. Biophys. J. 85, 828–842 (2003).
+
+136. Armitage, J. P., Pitta, T. P., Vigeant, M. A., Packer, H. L. &
+
+Ford, R. M. Transformations in flagellar structure of
+Rhodobacter sphaeroides and possible relationship to
+changes in swimming speed. J. Bacteriol. 181, 4825–4833
+(1999).
+
+137. Macnab, R. M. How bacteria assemble flagella. 
+
+Annu. Rev. Microbiol. 57, 77–100 (2003).
+A review of the process of bacterial flagella 
+assembly.
+
+Phenotypic analyses of frz and dif double mutants of
+Myxococcus xanthus. FEMS Microbiol. Lett. 192, 211–215
+(2000).
+
+142. Kirby, J. R. & Zusman, D. R. Chemosensory regulation of
+developmental gene expression in Myxococcus xanthus.
+Proc. Natl Acad. Sci. USA 100, 2008–2013 (2003).
+Provides an example of an operon that encodes
+chemotaxis-protein homologues that are not involved
+in the regulation of bacterial motility.
+
+143. Koradi, R., Billeter, M. & Wuthrich, K. MOLMOL: a program
+
+for display and analysis of macromolecular structures. 
+J. Mol. Graph. 14, 51–61 (1996).
+
+144. Bray, D. Genomics: molecular prodigality. Science 299,
+
+1189–1190 (2003).
+
+Acknowledgements
+We would like to thank the Biotechnology and Biological Sciences
+Research Council for funding the research on R. sphaeroides
+
+behaviour that has been carried out in our laboratory, and we apol-
+ogise to the many authors whose work we have not been able to
+include because of space restraints.
+
+Competing interests staement
+The authors declare no competing financial interests.
+
+Online links
+
+DATABASES
+The following terms in this article are linked online to:
+Entrez: http://www.ncbi.nlm.nih.gov/entrez
+ArcB | CheA | CheB | CheC | CheD | CheR | CheV | CheW | CheY |
+CheZ | FliM | KinB | McpB | NtrB | PrrB | Tap | Tar | Trg | Tsr
+Interpro: http://www.ebi.ac.uk/interpro/
+FAD-binding domain  | HAMP domain | HPt domain | PAS domain |
+SH3
+Protein Data Bank: http://www.rcsb.org/pdb/
+1A2O | 1ANF | 1B3Q | 1BC5 | 1EAY | 1EHC | 1I5N | 1KMI | 1KOS |
+1QU7 | 1WAT
+
+FURTHER INFORMATION
+Department of Energy Joint Genome Institute:
+http://www.jgi.doe.gov
+The Institute for Genomic Research: http://www.tigr.org
+Access to this links box is available online.
+
+NATURE REVIEWS | MOLECULAR CELL BIOLOGY
+
+VOLUME 5 | DECEMBER 2004 | 1 0 3 7
+
+©  2004 Nature  Publishing Group
+
+

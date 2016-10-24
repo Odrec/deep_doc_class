@@ -1,0 +1,1491 @@
+NeuroImage 106 (2015) 144–153
+
+Contents lists available at ScienceDirect
+
+NeuroImage
+
+j ou r n a l h o m e p a ge : w ww . e l s e v i e r . c o m / l oc a te / yn i mg
+
+Effective connectivity within the frontoparietal control network
+differentiates cognitive control and working memory
+Ian H. Harding a,b,⁎, Murat Yücel b, Ben J. Harrison a, Christos Pantelis a, Michael Breakspear c,d
+a Melbourne Neuropsychiatry Centre, Department of Psychiatry, University of Melbourne & Melbourne Health, Melbourne, Australia
+b Monash Clinical and Imaging Neuroscience, School of Psychological Sciences, Monash University, Melbourne, Australia
+c QIMR Berghofer Medical Research Institute, Brisbane, QLD, Australia
+d Metro North Mental Health Service, Brisbane, QLD, Australia
+
+a r t i c l e
+
+i n f o
+
+a b s t r a c t
+
+Article history:
+Accepted 18 November 2014
+Available online 22 November 2014
+
+Keywords:
+Cognitive control
+Working memory
+Dynamic causal modeling
+Frontoparietal
+Effective connectivity
+
+Cognitive control and working memory rely upon a common fronto-parietal network that includes the inferior
+frontal junction (IFJ), dorsolateral prefrontal cortex (dlPFC), pre-supplementary motor area/dorsal anterior cin-
+gulate cortex (pSMA/dACC), and intraparietal sulcus (IPS). This network is able to ﬂexibly adapt its function in
+response to changing behavioral goals, mediating a wide range of cognitive demands. Here we apply dynamic
+causal modeling to functional magnetic resonance imaging data to characterize task-related alterations in the
+strength of network interactions across distinct cognitive processes. Evidence in favor of task-related connectivity
+dynamics was accrued across a very large space of possible network structures. Cognitive control and working
+memory demands were manipulated using a factorial combination of the multi-source interference task and a
+verbal 2-back working memory task, respectively. Both were found to alter the sensitivity of the IFJ to perceptual
+information, and to increase IFJ-to-pSMA/dACC connectivity. In contrast, increased connectivity from the pSMA/
+dACC to the IPS, as well as from the dlPFC to the IFJ, was uniquely driven by cognitive control demands; a task-
+induced negative inﬂuence of the dlPFC on the pSMA/dACC was speciﬁc to working memory demands. These re-
+sults reﬂect a system of both shared and unique context-dependent dynamics within the fronto-parietal net-
+work. Mechanisms supporting cognitive engagement, response selection, and action evaluation may be shared
+across cognitive domains, while dynamic updating of task and context representations within this network are
+potentially speciﬁc to changing demands on cognitive control.
+
+© 2014 Elsevier Inc. All rights reserved.
+
+Introduction
+
+Cognitive control (CC) and working memory (WM) rely on neural
+processing within a common set of brain regions encompassing
+dorsomedial prefrontal, lateral prefrontal, and superior parietal regions
+of the human cortex (Fedorenko et al., 2013; Harding et al., in press;
+Niendam et al., 2012). This so-called “frontoparietal network” (FPN)
+represents a ﬂexible, superordinate system supporting adaptive behav-
+ioral control across a broad range of cognitive demands (Cocchi et al.,
+2013; Cole et al., 2013; Dosenbach et al., 2008). The inherent ﬂexibility
+of this system has been linked to rapid adjustments in neuronal re-
+sponse proﬁles as a function of changing behavioral goals or contextual
+cues (Kadohisa et al., 2013; Stokes et al., 2013). However, the neural
+mechanisms underlying such dynamic representation of unique behav-
+ioral goals and encoding of diverse contextual information remain
+unclear.
+
+⁎ Corresponding author at: School of Psychological Sciences, Building 17, Clayton
+
+Campus, Monash University, VIC 3800, Australia. Fax: +61 3 9348 0469.
+
+E-mail address: ian.harding@monash.edu (I.H. Harding).
+
+http://dx.doi.org/10.1016/j.neuroimage.2014.11.039
+1053-8119/© 2014 Elsevier Inc. All rights reserved.
+
+Functional neuroimaging research has established that activity in
+the regions forming the FPN demonstrate temporal coherence
+(i.e., functional connectivity) in human subjects at rest (Cole and
+Schneider, 2007; Power et al., 2011). The magnitude of these intrinsic
+inter-regional interactions has additionally been shown to selectively
+change in response to behavioral demands, as demonstrated most clear-
+ly in studies exploring the dynamic interplay between the dorsomedial
+and dorsolateral prefrontal cortices during cognitive control tasks
+(Carter and van Veen, 2007; Prado et al., 2011; Stephan et al., 2003).
+
+More recently, research has moved beyond the study of FPN
+connectivity using pair-wise correlations in brain signals, employing tech-
+niques that are sensitive to network-wide and directional interdepen-
+dencies (i.e., effective connectivity; Friston, 2011). Dynamic causal
+modeling (DCM) provides one means to infer neural interactions and
+their task-dependent changes within a brain network (Friston et al.,
+2003). In contrast to alternative effective connectivity modeling ap-
+proaches (e.g., Structural Equation Modeling), DCM models dynamics at
+the level of neuronal populations, as opposed to the measured hemody-
+namics, providing greater construct validity to derived models of network
+function (Daunizeau et al., 2011). Moreover, DCM does not depend on the
+temporal precedence of one regional time series relative to another (as in
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+145
+
+multivariate autoregressive models); reliance on temporal lag may be
+problematic to inference using fMRI data (Friston et al., 2013).
+
+Studies employing DCM to explore the FPN have identiﬁed sparse
+task-related connectivity dynamics on top of a foundation of widespread
+task-invariant “baseline” interactions, largely mirroring correlation-
+based work (Cieslik et al., 2011; Fan et al., 2008; Schlosser et al., 2008;
+Wang et al., 2010). In particular, Schlosser et al. (2010) report modula-
+tions of medial–lateral prefrontal interactions during performance of a
+Stroop task, while WM load has been associated with the transient gat-
+ing of, primarily, fronto-parietal connectivity (Deserno et al., 2012; Dima
+et al., 2014; Ma et al., 2012; Schmidt et al., 2014). These ﬁndings point to
+a well-integrated network whose interactions are selectively weighted
+in response to current behavioral demands, reﬂecting a potential mech-
+anism of adaptive coding within the FPN (Duncan, 2001). However, dis-
+similar experimental protocols and deﬁnitions of the FPN across
+available investigations preclude a more uniﬁed account of the response
+of this network across different cognitive domains.
+
+Here we utilize DCM to investigate task-related changes in the FPN
+as CC and WM demands are systematically co-varied within a single
+fMRI task. Task-related dynamics of the interactions between the visual
+system and the FPN are ﬁrst explored to assess the shared versus unique
+mechanisms underlying the selective engagement of higher-order cog-
+nitive processes. Context-dependent plasticity between the major re-
+gions of the FPN as a function of CC or WM demands is then assessed
+to distinguish their relative contributions to underlying connectivity
+dynamics.
+
+Materials & methods
+
+Participants
+
+Twenty-ﬁve right-handed healthy adults (14 males; mean age ±
+s.d. = 25.5 ± 4.4 years) with no history of psychiatric or neurologic ill-
+ness were recruited from the general community through advertise-
+ments in local electronic media. Exclusion criteria included a history
+of psychiatric or neurologic illness, substance dependence, signiﬁcant
+head injury, current use of psychotropic medications, or MRI incompat-
+ibility (e.g., cardiac pace-maker), as assessed using the Structured
+Clinical Interview for DSM-IV Axis-I Disorders (First et al., 2002) and
+self-report. Participants had completed an average of 14.8 ± 2.2 years
+of education and had a mean estimated full-scale IQ of 110 ± 10
+(Wechsler Abbreviated Scale of Intelligence; Wechsler, 1999). This par-
+ticipant sample is the same as that reported in Harding et al. (in press).
+The local research and ethics committee approved study conduct and all
+participants provided written informed consent.
+
+Behavioral paradigm
+
+CC and WM demands were respectively manipulated using the
+multi-source interference task (MSIT; Bush and Shin, 2006) and a verbal
+n-back working memory task (n = 0, 1, or 2; Baddeley, 2003), com-
+bined in a 2 × 3 factorial design. This design allowed for orthogonal ma-
+nipulation of CC and WM demands within a common task context. As
+illustrated in Fig. 1, and described in full detail elsewhere (Harding
+et al., in press), participants were presented with sets of three numbers
+ranging in value from ‘0’ to ‘3’, with one number distinct to the other
+two (e.g., ‘2 1 1’), and instructed to identify the distinct number by but-
+ton press (‘1’ = index; ‘2’ = middle; ‘3’ = ring ﬁngers). CC demands
+were manipulated by altering the composition of the number-sets:
+“congruent” trials featured the distinct number paired with zeros,
+which do not represent a response alternative, and spatially aligned
+with the corresponding response ﬁnger; conversely, “incongruent” tri-
+als featured both ‘Flanker’ interference introduced by distracter num-
+bers (Eriksen and Eriksen, 1974) and ‘Simon’ conﬂict based on spatial
+incongruence between the target digit and the corresponding response
+ﬁnger (Simon and Berbaum, 1990). Working memory demands were
+
+introduced by requiring participants to withhold a response if the cur-
+rent ‘distinct’ number was the same as that presented ‘n’ trials previous-
+ly (where n represents the working memory load: 1 or 2). Two trials in
+which this condition was met were included in each working memory
+block.
+
+The six conditions were presented in alternating blocks containing 8,
+9, or 10 stimuli for 0-Back, 1-Back, and 2-Back blocks, respectively. The
+ﬁrst stimulus in 1-Back blocks, and ﬁrst two in 2-Back blocks were
+discarded during analysis to account for ‘ramping-up’ of WM load.
+Each stimulus was presented for 2 s and separated by variable inter-
+stimulus intervals of between 3.6 s and 7.2 s. Four blocks of each condi-
+tion were presented across the experiment, each preceded by an
+instruction screen indicating the n of the subsequent block.
+
+fMRI data acquisition
+
+Images were obtained on a 3-Tesla Siemens Trio scanner equipped
+with a 32-channel head coil. Each functional run consisted of 354
+whole-brain gradient-echo echo-planar (GRE-EPI) images composed
+of 36 interleaved, contiguous axial slices (TR = 2400 ms; TE = 32 ms;
+ﬂip angle = 90°; slice thickness = 3 mm; in-plane resolution
+(matrix) = 3.3 × 3.3 mm (64 × 64); FOV = 210 × 210 mm). A high-
+resolution T1-weighted MPRAGE structural image was also acquired
+(176 sagittal slices; 0.9 mm isotropic voxels; TR = 1900 ms; TE =
+2.24 ms; FOV = 230 × 230 mm; matrix = 256 × 256).
+
+fMRI data analysis
+
+Analysis was performed using SPM8 software (Functional Imaging
+Laboratory, UCL, UK). Structural (T1-weighted) images from each indi-
+vidual were ﬁrst coregistered to the functional data and normalized to
+standard space (DARTEL; Ashburner, 2007). The estimated nonlinear
+transformation parameters were subsequently applied to the (rigid-
+body) motion-corrected functional data. The normalized data were in-
+terpolated to 2 mm isotropic voxels and spatially smoothed using a
+Gaussian kernel of 8 mm FWHM.
+
+For each individual, the six task conditions were coded as individual
+predictors in a general linear model, alongside nuisance regressors ac-
+counting for error trials, instruction periods, and working memory
+ramping effects (i.e., ﬁrst trial in 1-back blocks and ﬁrst two trials in 2-
+back blocks). Each stimulus event was coded as a delta (i.e., stick) func-
+tion and convolved with a canonical hemodynamic response function.
+Data were high-pass ﬁltered (1/128 s), and temporal autocorrelations
+were estimated using a ﬁrst-order autoregression model [AR(1)]. Pa-
+rameters corresponding to each predictor were estimated using a re-
+stricted maximum likelihood approach. Contrast images were created
+among the six conditions of interest to infer the main positive effects
+of CC and WM (voxel-level family-wise error corrected p b0.05) within
+a repeated-measures ANOVA framework.
+
+Dynamic causal modeling
+
+Deterministic, bilinear dynamic causal models (Friston et al., 2003)
+were used to assess large-scale neural interdependencies within the
+FPN using differential state equations comprised of three sets/matrices
+of parameters: A, context-invariant intrinsic inﬂuences between
+regions; B, context-dependent modulations of the intrinsic connections
+as a function of CC and WM demands; and C, exogenous visual inputs.
+Models of neuronal dynamics were combined with a hemodynamic
+model that describes the relationship between the (hidden) neuronal
+activity of the system and the measured fMRI signal (Friston et al.,
+2000). The parameters of the integrated model were estimated using
+a Bayesian inversion algorithm (Friston et al., 2003), as implemented
+in the DCM10 toolbox (Functional Imaging Laboratory, UCL, UK).
+
+We tested a broad variety of models (see below). Estimates of the
+posterior evidence of these models were derived during Bayesian
+
+146
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+Fig. 1. Experimental design. A, 2 × 3 factorial structure of the cognitive paradigm with examples of visual stimuli corresponding to low-demand (congruent) and high-demand (incongru-
+ent) cognitive control presented at the top. Given a sequential presentation, the appropriate response option to each stimulus is indicated for the three levels of working memory demand.
+B, Example timecourse of experimental presentation, including rest periods (gray ﬁxation) followed by an instruction screen and stimulus presentation with jittered interstimulus interval.
+Figure replicated from Harding et al. (in press).
+
+inversion (Friston et al., 2007). Utilizing these estimates, group-level
+random-effects Bayesian Model Selection (rfx-BMS) was employed to
+infer the relative likelihood that a model, or family of models sharing a
+common characteristic, best represented the neural system at the pop-
+ulation level (Penny et al., 2010; Stephan et al., 2009).
+
+Network analysis overview
+
+The overarching objective of this study was to disentangle the rela-
+tive impact of WM and CC on interactions between a closely associated
+set of cortical brain regions that are collectively responsive to a broad
+range of higher-order cognitive manipulations (Cole and Schneider,
+2007; Fedorenko et al., 2013; Niendam et al., 2012). These brain regions,
+representing the FPN, include the: (i) inferior frontal junction (IFJ),
+within the posterolateral prefrontal cortex; (ii) mid-dorsolateral pre-
+frontal cortex (dlPFC); (iii) dorsomedial prefrontal cortex bridging the
+pre-supplementary motor area and dorsal anterior cingulate cortex
+(pSMA/dACC); and (iv) intraparietal sulcus (IPS) within the superior
+parietal cortex.
+
+The number of ROIs included in network analyses was constrained
+by computational feasibility imposed by the extensive connectivity
+modeling approach employed (see below). Analyses were therefore re-
+stricted to a left-lateralized network, based on the relative weighting of
+task effects and greater consistency of individual-level activations with-
+in this hemisphere. In fact, individual-level activations in the right dlPFC
+and IFJ could not be reliably discriminated in all participants. Addition-
+ally, available evidence supports a left-lateralization of brain connectiv-
+ity dynamics underlying language-based (versus spatial) cognitive tasks
+(Stephan et al., 2003).
+
+Inference on network dynamics proceeded in a hierarchical fashion:
+First, the four regions forming the FPN (IFJ, dlPFC, pSMA/dACC, and IPS),
+as well as visual-perceptual areas, were identiﬁed in each individual.
+Second, inference was undertaken on task-dependent changes in
+bottom-up connectivity between the visual perceptual system and the
+cognitive FPN (i.e., perception–cognition interactions). Finally, task-
+dependent changes within the FPN were assessed. For computational
+feasibility, this step was initially undertaken on connections linking
+the IFJ, pSMA/dACC, and IPS; dlPFC interactions were then inferred.
+
+This inference procedure corresponds to a greedy search of model
+space, similar to that applied in other DCM protocols, e.g., (Schlosser
+et al., 2010; Vossel et al., 2012). A greedy heuristic serves to approxi-
+mate a global optimum solution by iteratively identifying local optima
+to subsets of the problem; each iteration builds on the previous step
+in a hierarchical fashion (Black, 2005). The greedy search employed
+here provides an approximation of optimal model structure while
+affording computational feasibility.
+
+Region-of-interest (ROI) selection
+
+The four ROIs forming the FPN (IFJ, dlPFC, pSMA/dACC, and IPS)
+were identiﬁed on the basis of the intersection (i.e., null conjunction)
+of the positive main effects of CC and WM (voxel-level FWE-corrected
+p b 0.05). In addition, a one-way ANOVA across all task conditions
+was used to localize peak activations related to perceptual processing
+in the visual cortex (V). Group activation foci served as a starting
+point to uniquely identify ROIs in each individual. For each individual,
+the global conjunction of the main CC and main WM effects was ﬁrst
+calculated, and the peak-voxel nearest to the group-maximum of each
+ROI was identiﬁed. The ﬁrst eigenvariate of the fMRI time-series was ex-
+tracted from all voxels exceeding the uncorrected signiﬁcance thresh-
+old of p b 0.05 within a 4 mm radius of the peak-voxel within each
+region. The timeseries were mean-centered and known variance of
+non-interest removed (e.g., task instruction periods; error trials).
+
+Perception–cognition interactions: model speciﬁcation and bayesian
+model selection
+
+In this experiment, the FPN was differentially responsive to the
+presentation of the same visual stimulus as a function of changing CC
+and WM demands. It stands to reason that the inﬂuence of perceptual
+processes on at least one region of the FPN must therefore change in re-
+sponse to shifting cognitive demands, providing a mechanism for selec-
+tive and ﬂexible engagement of higher-order cognitive processes. In
+other words, the bottom-up connectivity between the visual system
+and the FPN must be sensitive to cognitive demand. However, cognitive
+engagement has been localized to each of the four regions of the FPN
+considered herein in previous works (c.f., Banich, 2009; Brass et al.,
+2005a; Carter and van Veen, 2007; Kravitz et al., 2011). We disambigu-
+ate this issue through the use of a model comparison approach.
+
+First, we speciﬁed a model architecture in which stimulus presenta-
+tion (i.e., the driving input, ‘C’) elicited activity in the visual cortex. The
+driving input was not mean-centered in this study. Perceptual informa-
+tion subsequently propagated to each node of the FPN (i.e., through the
+unidirectional A matrix connectivity). Reciprocal interactions were in-
+cluded between the four regions of the FPN (i.e., a fully connected sub-
+graph of the A matrix between these nodes; c.f. Fig. 3). This architecture
+was then modulated to variously model the inﬂuence of CC and WM de-
+mands on the magnitude of the bottom-up interactions between the
+perceptual system and the nodes of the FPN (i.e., the B matrix). Modula-
+tory inputs were modeled as orthogonal main effects of CC or WM
+(i.e., Incongruent N Congruent; 2-Back N 0-Back). Speciﬁcation of all pos-
+sible combinations of CC and/or WM acting to modulate any or all of
+these connections resulted in 256 model architectures, which were
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+147
+
+subsequently estimated for each participant. As signiﬁcant WM × CC in-
+teraction effects were not evident in FPN fMRI activations (Harding
+et al., in press), interaction-related connectivity dynamics were not
+considered.
+
+Family rfx-BMS analysis was performed to infer the most likely
+model structure at each of the four bottom-up connections (Penny
+et al., 2010). Each of the 256 models was assigned to one of four ‘fami-
+lies’ based on the task effects at, for example, the V → IFJ interaction:
+i) no modulation, ii) CC only, iii) WM only, or iv) both CC and WM.
+Each family contained 64 models. As each family collectively differed
+only in the task-sensitivity of this one connection, pooled evidence in
+favor of the different modulatory conﬁgurations could be robustly esti-
+mated while integrating over the effect of all other parameters in the
+models (Penny et al., 2010). The optimal model structure was inferred
+based on estimated exceedance probabilities (xp), which represent the
+likelihood that each family had superior evidence to all others
+(Stephan et al., 2009). This process was replicated across each of the
+four bottom-up connections.
+
+FPN connectivity: model speciﬁcation and Bayesian model selection
+
+The FPN is thought to adaptively encode representations of both CC
+and WM (Duncan, 2001; Harding et al., in press). However, in order for a
+common neuronal substrate to ﬂexibly encapsulate diverse informa-
+tion, the system must be differentially tuned across changing contexts
+or goals. Differential interactions within this network may provide one
+mechanism underlying such context-speciﬁc encoding. To comprehen-
+sively test this idea, context-sensitive changes within the FPN were in-
+ferred in a comparable manner to perception–cognition interactions
+(above).
+
+Due to computational demands, connectivity between the four net-
+work nodes (necessitating estimation of 412 [N16 million] models)
+could not be considered in one step. On the basis of current theory,
+which highlights the importance of medial–lateral PFC dynamics to CC
+(e.g., Schlosser et al., 2010), and fronto-parietal dynamics to WM
+(e.g., Deserno et al., 2012), interactions between one node of the lateral
+PFC, the pSMA/dACC, and the IPS were ﬁrst assessed. As the principle
+site of FPN engagement (see below), inclusion of the IFJ (as opposed
+to the dlPFC) was investigated in the ﬁrst instance.
+
+All possible combinations of CC and WM acting at each of the six re-
+ciprocal interactions between the IFJ, pSMA/dACC, and IPS were ﬁrst de-
+ﬁned, resulting in 4096 model architectures, and estimated for each
+individual. For each of the six connections, the 4096 models were evenly
+partitioned into the same four families as above (no modulation, CC
+only, WM only, both CC and WM) and rfx-BMS inference was undertak-
+en. This procedure was then repeated for the six reciprocal interactions
+between the dlPFC and the other three nodes, requiring speciﬁcation
+and estimation of a further 4096 models per subject.
+
+The estimation of a large, comprehensive model space eschews spe-
+ciﬁc assumptions regarding model structure, and eliminates reliance on
+a single architecture for inference of neural dynamics, providing for
+more robust assessment of network characteristics (Penny et al.,
+2010). This procedure is particularly useful in the present setting
+where prior evidence provides little deﬁnitive guidance to specifying
+particular models due to a lack of clear consensus opinion,
+e.g., (Banich, 2009; Carter and van Veen, 2007).
+
+FPN connectivity: Bayesian Model Averaging
+
+Following speciﬁcation of a likely modulatory structure at each of
+the 12 connections within the FPN, quantiﬁcation and inference on
+the parameter magnitudes was undertaken. Using a random-effects
+Bayesian Model Averaging approach, the posterior distributions of the
+parameter magnitudes at each connection across all participants and
+all models within the most likely model-family were estimated, with
+the contribution of each model weighted by its relative model evidence
+
+(Penny et al., 2010). The probability that the parameter magnitude dif-
+fered from zero was assessed based on the proportion of the posterior
+distribution that lay above (or below) zero. A 95% posterior probability
+threshold was employed for reporting signiﬁcance. This approach is
+roughly analogous to a one-tailed frequentist threshold of p b0.05, in
+which the reported p-value is based on the proportion of the normal
+distribution that is more extreme than the estimated parameter. In
+both cases, probability is based on the size of the ‘tail’ of the distribution
+(e.g., Fig. 7B and 9B in Stephan et al., 2008). Using a Bayesian approach,
+inference is conditional on the estimated distribution of the actual data
+(which is approximately normally distributed), as opposed to a pro-
+posed ‘null’ distribution centered around zero. While the theoretical
+conceptualizations underlying the two approaches are distinct, they
+will yield roughly the same outcome in this instance, with distinctions
+primarily driven by deviations from exact normality in the data.
+
+Results
+
+Task-related fMRI activations and behavior
+
+The null conjunction of the group-level main CC and main WM ef-
+fects identiﬁed robust (FWE-corrected, voxel-level p b0.05), spatially-
+coincident activations in each of the four ROIs selected to represent
+the left FPN (Fig. 2): IFJ (group MNI coordinates: x, y, z = −42, 4, 28);
+dlPFC (−38, 30, 18); pSMA/dACC (0, 16, 46); and IPS (−30, −54,
+48); see Harding et al. (in press) for full, whole-brain results. No interac-
+tion effects between the two cognitive contexts were in evidence. The
+one-way ANOVA across all conditions additionally identiﬁed wide-
+spread activity in the visual cortex, centered (in the left-hemisphere)
+at MNI coordinates x, y, z = −26, −90, −2.
+
+Similarly, a repeated-measures ANOVA of reaction times revealed
+signiﬁcant main effects of both CC (F1,24 = 194.5, p b 0.001) and WM
+(F2,48 = 120.9, p b 0.001), but failed to support the presence of an in-
+teraction between the two (F(2,48) = 1.51, p = 0.23). Comparable re-
+sults were apparent with respect to error rates: both CC (Z = −2.24,
+p = 0.03) and WM (Z = −3.93, p b 0.001) elicited signiﬁcant main
+effects, but no signiﬁcant interaction was evident (Z = − 0.75, p =
+0.45). See Harding et al. (in press) for full behavioral results.
+
+Perception–cognition interactions
+
+The investigation of interactions between the visual cortex and FPN
+using family rfx-BMS indicated that both CC and WM likely modulated
+the inﬂuence of perceptual activity on the IFJ (xp = 0.72). The effective
+connections from the visual cortex to the other three nodes of the FPN
+remained context-insensitive (xp N 0.93; Fig. 3).
+
+It is important to note that, as a random-effects analysis, this result
+represents a weighted effect across models and participants. As such,
+
+Fig. 2. Task-related regions-of-interest. The group-level null conjunction of the main posi-
+tive cognitive control and working memory fMRI effects (FWE-corrected p b 0.05) high-
+lights spatially coincident neural activations. Regions representing the frontoparietal
+control network are indicated.
+
+148
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+Table 1
+Top 10 (of 256) perception–cognition interaction models.
+
+Rank
+
+Modulation of visual cortex to:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+SMA
+
+WM
+
+CC, WM
+
+WM
+
+IFJ
+
+CC, WM
+
+CC, WM
+CC
+CC
+
+dlPFC
+
+IPS
+
+WM
+CC
+CC, WM
+
+CC, WM
+
+CC
+
+WM
+
+xp
+
+0.079
+0.054
+0.031
+0.019
+0.016
+0.015
+0.015
+0.010
+0.009
+0.007
+
+CC = cognitive control; WM = working memory; xp = exceedance probability.
+
+provided corroborating evidence that the IFJ was indeed the most likely
+site of initial network engagement (xp = 0.49; Table 2).
+
+FPN connectivity: model selection
+
+Estimated exceedance probabilities at each of the 12 interactions
+within the FPN provided clear evidence in favor of one likely model
+structure at all connections, with the exception of the inﬂuence of the
+pSMA/dACC on the IPS (Fig. 4). A further analysis was therefore per-
+formed to disambiguate the result at this connection, as follows: As op-
+posed to dividing the model space into four equal families (see above),
+which allows for simultaneous inference on CC and WM, the inﬂuence
+of the two contexts were instead tested independently by dividing the
+full model space of 4096 structures into two families: i) modulation
+by CC at this connection, ii) no modulation by CC. This process was
+then repeated for WM. Evidence from all models in which CC acted to
+modulate this connection was found to be superior to those where it
+did not (xp = 0.76), while the opposite was true of WM (xp = 0.07).
+As such, the marginally winning family in the 4-partition analysis (mod-
+ulated by CC only) was corroborated.
+
+In summary, as depicted in Fig. 4, both CC and WM were found to
+likely modulate the inﬂuence of the IFJ and the IPS on the pSMA/dACC.
+Changes in effective connectivity were more extensive for CC than for
+WM. CC-unique modulations included outgoing connectivity from the
+pSMA/dACC to the IFJ and the IPS, as well as the inputs into the IFJ
+from the IPS and dlPFC. Modulations speciﬁc to WM were limited to
+the inﬂuence of the dlPFC on the pSMA/dACC. Interestingly, while
+
+Table 2
+Driving inputs into the frontoparietal network.
+
+Rank
+
+Driving inputs
+
+SMA
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+X
+
+X
+
+X
+X
+X
+
+X
+X
+X
+
+IFJ
+
+X
+
+X
+X
+X
+
+X
+X
+X
+
+X
+
+dlPFC
+
+IPS
+
+X
+
+X
+
+X
+
+X
+
+X
+X
+X
+X
+
+X
+
+X
+
+X
+X
+
+X
+X
+
+X
+X
+
+xp
+
+0.494
+0.302
+0.096
+0.035
+0.028
+0.012
+0.011
+0.005
+0.004
+0.004
+0.004
+0.002
+0.002
+0.001
+0.001
+
+‘X’ indicates the inclusion of a driving input into the indicated region; xp = exceedance
+probability.
+
+Fig. 3. Perception–cognition interactions. The most probable network structure governing
+the inﬂuence of the visual cortex on the frontoparietal network (FPN) is depicted (top)
+based on family Bayesian Model Selection (bottom; xp = exceedance probability). All pos-
+sible conﬁgurations of cognitive control (CC) and working memory (WM) acting on bot-
+tom-up inﬂuences (blue/green arrows) were compared. At this stage, interactions
+within the FPN (gray arrows) are held constant. V = visual cortex; dlPFC = dorsolateral
+prefrontal cortex; IFJ = inferior frontal cortex; pSMA/dACC = pre-supplementary motor
+area/dorsal anterior cingulate cortex; IPS = intraparietal sulcus.
+
+more subtle effects speciﬁc to individual models or participants may be
+integrated out of consideration. This result was therefore further inves-
+tigated by contrasting evidence in favor of each of the 256 individual
+models; that is, instead of pooling evidence across a number of models
+that share a common feature, all models were individually compared
+against all others. The single model in which CC and WM acted to mod-
+ulate the interaction between the visual cortex and the IFJ was also
+found to have the greatest likelihood (Table 1). However, several
+other models also had appreciable relative model evidence. Therefore,
+while there is robust and reliable evidence in favor of the IFJ as a candi-
+date site of FPN engagement, this analysis cannot rule out the additional,
+more circumscribed involvement of other network nodes in mediating
+perception–cognition interactions.
+
+To simplify models used to study contextual effects within the FPN
+and to reduce computational burden, the visual cortex was removed
+in subsequent steps and the exogenous driving input mapped directly
+onto the IFJ (c.f., Stephan et al., 2010). For validation, the 15 possible
+driving input conﬁgurations by which a single input vector could act
+at any of the four FPN regions (i.e., all combinations, with the exception
+of no input) were speciﬁed and estimated for each participant. BMS
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+149
+
+Fig. 4. Bayesian model selection: frontoparietal dynamics. The most probable network structure governing task-related modulation of interactions within the frontoparietal network (right),
+based on family Bayesian Model Selection (left; xp = exceedance probability). All possible conﬁgurations of cognitive control (CC) and working memory (WM) acting on each connection
+were compared. Model selection was performed independently at each connection to derive a composite model. dlPFC = dorsolateral prefrontal cortex; IFJ = inferior frontal cortex;
+pSMA/dACC = pre-supplementary motor area/dorsal anterior cingulate cortex; IPS = intraparietal sulcus.
+
+both contexts altered the sensitivity of the pSMA/dACC to nearly all in-
+puts in this region, CC alone elicited the same effect at the IFJ. With the
+exception of the inﬂuence of the pSMA/dACC on the IPS, the strength of
+all inputs into the dlPFC and IPS were task-independent.
+
+The process of interrogating the network through independent infer-
+ence at each connection was supplemented by comparing model evi-
+dence across the 4096 individual model structures (at both the 1st and
+2nd steps of the heuristic). The estimated exceedance probabilities
+assigned to any individual model were negligible in most cases, with
+even the top-ranked models reaching a probability of less than 0.003 of
+optimally representing the data, as compared to all other models. This
+ﬁnding is expected, given the diffusion of model-probability across the
+very large model space (i.e., chance probability = 1/4096 = 0.00024)
+and is one of the major factors motivating the use of family-level infer-
+ence (Penny et al., 2010; Stephan et al., 2010). However, there are still
+a small number of models for which the evidence in their favor is appre-
+ciably larger than the vast majority of other structures. Although these
+models cannot be reliably discriminated based on their estimated ex-
+ceedance probabilities alone, the composite models inferred based on
+family-level model comparison were found to conform to individual
+models found in the top 5 (of 4096) when evidence-ranked in their
+own right.
+
+While the family-level inference approach allowed for robust com-
+parison of CC and WM effects at each connection, this approach is insen-
+sitive to potential
+interactions between modulations across the
+network. As such, while the composite model (Fig. 4) represents valid
+outcomes for each connection independently, it may not fully encapsu-
+late the nature of the network as an integrated system. Conversely, al-
+though model-level comparison considers the properties of the full
+network, deﬁnitive inference is not possible due to the dispersion of in-
+dividual model evidences across the model space, as described above.
+We therefore also undertook an intermediate approach whereby the
+input/output structure of each region was assessed, and inference was
+performed separately for each of CC and WM (Supplementary Informa-
+tion). These analyses largely corroborated the structure of the composite
+network, suggesting that the impact of context on each connection
+largely outweighs the inﬂuence of any interactions among the modula-
+tory parameters (Figure S1). However, inconsistencies between family-
+level and region-level analyses on IFJ-IPS modulation by CC do point to
+important interdependencies that may be evident along this axis. Dis-
+ambiguation may require network description below the scale of
+family-level inference.
+
+FPN connectivity: parameter inference
+
+BMA across the models within the family having the highest like-
+lihood at each connection revealed that the magnitude of the task-
+independent (i.e., “baseline”; A matrix) efferents from the IFJ and
+pSMA/dACC were signiﬁcantly positive in all cases (Fig. 5; Table 3).
+The inﬂuence of the dlPFC on the IFJ was also positive, while a nega-
+tive inﬂuence of the dlPFC was found to act on the IPS, although this
+latter ﬁnding was the weakest in magnitude by an appreciable mar-
+gin. Notably, all efferents from the IPS failed to reach signiﬁcance
+threshold, suggesting a largely anterior-to-posterior ﬂow of infor-
+mation, while bi-directional interactions between frontal regions
+were nearly ubiquitous.
+
+With respect to task-dependent dynamics (i.e., B matrix), both CC and
+WM demands were found to further increase the facilitatory inﬂuence of
+the IFJ on the pSMA/dACC and to introduce a negative inﬂuence of the IPS
+on the pSMA/dACC (Fig. 5; Table 3). CC alone also induced enhancements
+of the positive connectivity between the pSMA/dACC and the IPS, and the
+dlPFC to the IFJ; a trend-level (p = 92%) reduction in the inﬂuence of the
+pSMA/dACC on the IFJ as also observed. WM acted uniquely to introduce
+a negative modulation of the inﬂuence of the dlPFC on the pSMA/dACC.
+All modulatory effects identiﬁed during model-space inference
+(above) were found to have signiﬁcantly non-zero magnitudes, with
+the exception of the impact of CC on IPS-to-IFJ connectivity and the
+trend-level result reported immediately previous. The inﬂuence of CC
+on IPS-IFJ interactions was also inconclusive in region-based analysis
+of network function (Supplementary Information). Interestingly, the ab-
+sence of the IPS-to-IFJ modulation yields the individual model structure
+having the highest evidence based on model-level BMS. This result sug-
+gests that while the modulation of IPS-to-IFJ connectivity is more repre-
+sentative of the data when integrating out all other network properties,
+its absence is more likely when considering the unique dependencies of
+an individual network structure. Taken together, the application of a
+combined model-space and parameter-space family-level inference
+procedure, in addition to model-level and region-level inference, pro-
+vide conﬁdence in the inferred model structure.
+
+Discussion
+
+This study provides novel insights into the shared and unique prop-
+erties of functional integration underlying CC and WM within a
+
+150
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+Fig. 5. Frontoparietal effective connectivity. Signiﬁcant (N95% posterior probability) task-independent intrinsic interactions (left), cognitive control related modulations (center), and work-
+ing memory related modulations (right), based on Bayesian Model Averaging. Color gradients represent parameter magnitudes and are scaled independently for each set of results; see
+Table 3 for empirical values.
+
+common network of higher-order cortical regions. While many proper-
+ties of the FPN were shared across CC and WM contexts, unique dynam-
+ics in effective connectivity were also found to discriminate these
+processes. First, of the brain regions representing the FPN, inputs into
+the IFJ were found to be the most responsive to changes in cognitive de-
+mand, regardless of context, possibly serving to adaptively engage
+higher-order processes. Second, task-invariant (baseline) effective
+
+Table 3
+Connectivity parameters.
+
+Source
+
+Target
+
+Estimate
+
+Intrinsic connectivity
+IFJ
+SMA
+IFJ
+IPS
+SMA
+IPS
+dlPFC
+SMA
+dlPFC
+IFJ
+dlPFC
+IPS
+
+SMA
+IFJ
+IPS
+IFJ
+IPS
+SMA
+SMA
+dlPFC
+IFJ
+dlPFC
+IPS
+dlPFC
+
+Cognitive control modulations
+IFJ
+SMA
+IPS
+SMA
+IPS
+dlPFC
+
+SMA
+IFJ
+IFJ
+IPS
+SMA
+IFJ
+
+Working memory modulations
+dlPFC
+IFJ
+IPS
+
+SMA
+SMA
+SMA
+
+0.46
+0.78
+0.40
+−0.032
+0.56
+−0.059
+−0.038
+0.50
+0.31
+0.29
+−0.10
+−0.025
+
+1.08
+−0.26
+0.030
+0.46
+−0.91
+0.34
+
+−1.32
+1.88
+−0.95
+
+SD
+
+0.056
+0.052
+0.051
+0.065
+0.051
+0.065
+0.059
+0.046
+0.056
+0.059
+0.056
+0.058
+
+0.11
+0.18
+0.17
+0.21
+0.21
+0.16
+
+0.14
+0.16
+0.15
+
+p
+
+1.00
+1.00
+1.00
+0.69
+1.00
+0.82
+0.74
+1.00
+1.00
+1.00
+0.96
+0.67
+
+1.00
+0.92
+0.58
+0.99
+1.00
+0.99
+
+1.00
+1.00
+1.00
+
+Estimate = maximum a posteriori value of the posterior distribution (parameter magni-
+tude estimate); SD = standard deviation; p = posterior probability; bold entries are sig-
+niﬁcant at a threshold of p N 95%.
+
+inﬂuences between prefrontal regions of the FPN were general bi-
+directional, while frontal-to-parietal interactions were hierarchical in
+nature. Finally, connectivity dynamics common to both contexts were
+evident at inputs into the pSMA/dACC, while CC additionally inﬂuenced
+rostral-to-caudal interactions within the lateral PFC and between the
+pSMA/dACC and IPS; WM-unique modulations were restricted to the
+inﬂuence of the dlPFC on the pSMA/dACC. Critically, network dynamics
+occur almost ubiquitously at interactions involving the pSMA/dACC,
+reﬂecting the core relevance of medial prefrontal interactions to the
+function and ﬂexibility of the FPN during cognitive performance.
+
+In line with current inference suggesting a primary role for the IFJ in
+engaging cognition, this region has been previously implicated in the
+encoding and updating of task-sets (e.g., targets of attention) relevant
+to current behavioral demands. Furthermore, this region sits at a nexus
+of bottom-up pathways governing stimulus-driven attention and top-
+down pathways supporting perceptual and behavioral control (Badre,
+2008; Brass and von Cramon, 2004; Brass et al., 2005a; Corbetta and
+Shulman, 2002; Derrfuss et al., 2004; Derrfuss et al., 2005). Contextual
+ambiguity and response uncertainty inherent to our CC and WM manip-
+ulations may therefore trigger, or augment, task representations encoded
+in the IFJ.
+
+It is relevant to note that the FPN does not receive direct afferents
+from the visual system. The bottom-up engagement of control resources
+in the IFJ instead likely occurs indirectly via the ventral attention/salience
+network, which includes regions of the temporo-parietal junction and the
+anterior insula (Corbetta and Shulman, 2002; Palaniyappan et al., 2013;
+Seeley et al., 2007; Vossel et al., 2012). Therefore, while visual perception
+occurs via a posterior-to-anterior processing stream (Kravitz et al., 2011),
+cognitive engagement instead relies on an indirect mechanism of pre-
+frontal engagement which, in turn, feeds-back to posterior structures,
+consistent with classical “top-down” control models (Gazzaley and
+Nobre, 2012). This interpretation is also consistent with electrophysiolog-
+ical evidence suggesting an earlier engagement of frontal as compared to
+parietal activity related to cognitive control processes (Brass et al., 2005b;
+Gobbele et al., 2008; Grent-'t-Jong and Woldorff, 2007; Liotti et al., 2000);
+but see also (Green and McDonald, 2008).
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+151
+
+Bi-directional, positive interactions between the three prefrontal re-
+gions of the FPN (IFJ, dlPFC, pSMA/dACC) were almost universally evi-
+dent, irrespective of task context, suggesting a highly interactive
+“baseline” exchange of information between these regions. This ﬁnding
+is consistent with resting-state connectivity studies supporting tight
+functional integration between these regions (Raichle, 2011), and
+electrophysiological signals evidencing signal propagation in both
+directions along the medial–lateral axis of the prefrontal cortex,
+e.g., (Hanslmayr et al., 2008; Markela-Lerenc et al., 2004; Silton et al.,
+2010). On top of this foundation, variations in the strength of these in-
+teractions as a function of task demands were sparse, yet almost exclu-
+sively conﬁned to interactions involving the pSMA/dACC. The robust
+upregulation of the inﬂuence of the IFJ on the pSMA/dACC by both CC
+and WM points to a common mechanism that may underlie initiation
+of action-selection, response preparation, outcome monitoring, and
+error prediction — processes localized to the pSMA/dACC (Alexander
+and Brown, 2011; Isoda and Hikosaka, 2007; Nachev et al., 2008;
+Rushworth et al., 2007) - in accordance with the context-relevant
+task-set represented in the IFJ (Brass et al., 2005a). Taken together, the
+engagement of the FPN via the lateral prefrontal cortex and the ob-
+served medial–lateral task-related dynamics within the network are
+broadly consistent with the ‘cascade-of-control’ model of behavioral
+control. This account posits that the postero-lateral PFC (i.e., IFJ) is re-
+sponsible for creating and maintaining a task-relevant attentional set
+while downstream medial areas serve to gate/select between compet-
+ing task responses and evaluate response outcomes (Banich, 2009;
+Silton et al., 2010). Our work hence lends weight to this model as a gen-
+eralizable framework governing higher-order brain function.
+
+Cognitive control demands were additionally associated with an up-
+regulation of anterior-to-posterior connectivity within the lateral PFC,
+consistent with hierarchical models of control-related function along
+the rostro-causal axis of the PFC (Badre and D'Esposito, 2009;
+Koechlin and Summerﬁeld, 2007). The dlPFC – the putative seat of
+sustained behavioral control and temporally-extended goal mainte-
+nance (Badre, 2008) – has been previously shown to dynamically bias
+more concrete and immediate task-sets in posterior areas, including
+the IFJ, as a function of control demands (Koechlin and Summerﬁeld,
+2007; Koechlin et al., 2003; Kouneiher et al., 2009). This effect may be
+speciﬁc to disambiguating competing stimulus–response tendencies
+or conﬂicting attentional sets, requirements speciﬁc to CC as compared
+to WM processes.
+
+In contrast to the reciprocal interactions deﬁning connectivity with-
+in the PFC, fronto-parietal interactions were hierarchical in nature and
+selectively gated by CC demands. While these interactions do not repre-
+sent ‘top-down’ relationships per se, as all areas of the FPN lie within as-
+sociation cortices, this ﬁnding does suggest that the representation of
+behavioral goals and outcome contingencies in prefrontal regions may
+serve to bias context representations and stimulus–response associa-
+tions encoded in the IPS (Bunge et al., 2002; Corbetta and Shulman,
+2002; Rushworth et al., 2001); as before, WM processes may not require
+such arbitration. Notably, however, fronto-parietal connectivity dynam-
+ics related to WM processes have been reported in previous studies
+(Edin et al., 2009; Honey et al., 2002; Sauseng et al., 2005), including
+several recent DCM investigations (Deserno et al., 2012; Dima et al.,
+2014; Ma et al., 2012; Schmidt et al., 2014). However, consensus has
+not yet emerged regarding the direction (frontal-to-parietal, or vice
+versa), laterality, or speciﬁc source/target regions that underlie ob-
+served WM-related modulations. Differences among studies may be at-
+tributable to distinct model structures (e.g., inputs into parietal vs.
+frontal regions), heuristics employed to facilitate inference, or the inclu-
+sion of different sets of cortical regions in network models. While the
+current study does not provide evidence in favor of changes to
+prefrontal-superior parietal connectivity as a function of WM demands,
+this line of inquiry clearly requires further attention.
+
+Finally, evidence of transient, task-related negative feedback from
+parietal and lateral prefrontal regions to the pSMA/dACC provides a
+
+putative mechanism for balancing the engagement of effortful cognitive
+resources, c.f., (Botvinick et al., 2001; MacDonald et al., 2000). As ab-
+stract task representations or sustained WM-related activity become
+established in the dlPFC, and context/intention maps in the IPS are aug-
+mented or updated in response to current demands, superordinate eval-
+uative processes in the pSMA/dACC may, in turn, be damped. Taken
+alongside the observation that all but one of the identiﬁed task-related
+modulations of FPN connectivity involved the pSMA/dACC, these results
+support a central role for the medial prefrontal cortex in directing CC
+and WM processes in the brain.
+
+Overall, this study builds substantially upon current knowledge re-
+garding functional integration in the FPN through the use of a compre-
+hensive modeling approach. By accruing evidence and undertaking
+inference across a large number of putative model structures, we es-
+chew speciﬁc assumptions regarding network characteristics. The
+present results are therefore robust to the idiosyncrasies that may char-
+acterize individual models, providing for greater conﬁdence when gen-
+eralizing these results. Moreover, this work moves beyond pair-wise
+interactions along the medial–lateral and rostro–caudal axes of the
+PFC, as well as anterior–posterior interactions across the cortex, that
+have predominated neurobiological models of CC and WM to date. We
+have also employed an experimental task design that allows for direct
+comparison of unique cognitive demands on a common neural
+framework.
+
+A number of limitations of the present study provide targets for fu-
+ture work. First, the network we characterized was limited to a few
+key regions. Future investigation of right-lateralized and inter-
+hemispheric interactions, as well as incorporation of other brain regions
+central to cognitive functioning, such as the anterior insula (Fan et al.,
+2014; Menon and Uddin, 2010), basal ganglia (Aron et al., 2007), and
+cerebellum (Georgiou-Karistianis et al., 2012) into modeling analyses
+may help further reﬁne descriptions of relevant neural dynamics. The
+top-down inﬂuence of cognitive systems on perceptual, motor, limbic,
+and mnemonic functions also remains of great interest to the ﬁeld of
+cognitive neuroscience (e.g., Feredoes et al., 2011; Zanto et al., 2011).
+Furthermore, while we have used well-established exemplars of CC
+and WM tasks, generalization of the current results to other behavioral
+demands and task contexts (e.g., response inhibition; spatial stimuli)
+will be essential for determining the task-general versus task-speciﬁc
+characteristics of dynamic FPN function. Finally, while family-level rfx-
+BMS provides for reliable and generalizable inference across models
+and individuals, more subtle properties of network function may be in-
+tegrated out of consideration. We have mitigated this issue by
+performing inference across different network scales (i.e., individual
+connections; individual nodes; individual models). However, future
+work will be necessary to disambiguate the inﬂuence of more
+circumscribed network characteristics over and above the robust foun-
+dation established herein.
+
+In sum, this work highlights shared and unique dynamics of the large-
+scale interconnectivity deﬁning the FPN across distinct cognitive de-
+mands. Common connectivity dynamics may underlie the engagement
+of action selection and performance evaluation processes. Conversely,
+the need to augment task and context representations may be speciﬁc
+to reallocating cognitive resources (i.e., cognitive control), as compared
+to actively maintaining and manipulating information in mind
+(i.e., working memory). Such ﬂexible functional integration may provide
+a mechanistic foundation that describes the adaptability of neural repre-
+sentations within this common system, underlining the extraordinary
+ﬂexibility inherent to human cognition.
+
+Acknowledgments
+
+This study was supported by funding from the Australian National
+Health and Medical Research Council (Project Grant 1008921; Program
+Grant 566529; Clinical Career Development Fellowship 628509 to B.J.H.;
+Senior Principal Research Fellowship 628386 to C.P.; Senior Research
+
+152
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+Fellowship 1021973 to M.Y.). The authors declare no competing ﬁnan-
+cial interests.
+
+Appendix A. Supplementary data
+
+Supplementary data to this article can be found online at http://dx.
+
+doi.org/10.1016/j.neuroimage.2014.11.039.
+
+References
+
+Alexander, W.H., Brown, J.W., 2011. Medial prefrontal cortex as an action-outcome pre-
+
+dictor. Nat. Neurosci. 14, 1338–1344.
+
+Aron, A.R., Durston, S., Eagle, D.M., Logan, G.D., Stinear, C.M., Stuphorn, V., 2007. Converg-
+ing evidence for a fronto–basal-ganglia network for inhibitory control of action and
+cognition. J. Neurosci. 27, 11860–11864.
+
+Ashburner, J., 2007. A fast diffeomorphic image registration algorithm. Neuroimage 38,
+
+95–113.
+
+Baddeley, A., 2003. Working memory: looking back and looking forward. Nat. Rev.
+
+Neurosci. 4, 829–839.
+
+Badre, D., 2008. Cognitive control, hierarchy, and the rostro–caudal organization of the
+
+frontal lobes. Trends Cogn. Sci. 12, 193–200.
+
+Badre, D., D'Esposito, M., 2009. Is the rostro–caudal axis of the frontal lobe hierarchical?
+
+Nat. Rev. Neurosci. 10, 659–669.
+
+Banich, M., 2009. Executive function: the search for an integrated account. Curr. Dir.
+
+Psychol. Sci. 18, 89–94.
+
+Black, P.E., 2005. Greedy algorithm. In: Black, P.E. (Ed.), Dictionary of Algorithms and Data
+
+Structures. U.S. National Institute of Standards and Technology.
+
+Botvinick, M.M., Braver, T.S., Barch, D.M., Carter, C.S., Cohen, J.D., 2001. Conﬂict monitoring
+
+and cognitive control. Psychol. Rev. 108, 624–652.
+
+Brass, M., von Cramon, D.Y., 2004. Decomposing components of task preparation with
+
+functional magnetic resonance imaging. J. Cogn. Neurosci. 16, 609–620.
+
+Brass, M., Derrfuss, J., Forstmann, B., von Cramon, D.Y., 2005a. The role of the inferior fron-
+
+tal junction area in cognitive control. Trends Cogn. Sci. 9, 314–316.
+
+Brass, M., Ullsperger, M., Knoesche, T.R., von Cramon, D.Y., Phillips, N.A., 2005b. Who
+comes ﬁrst? The role of the prefrontal and parietal cortex in cognitive control. J.
+Cogn. Neurosci. 17, 1367–1375.
+
+Bunge, S.A., Hazeltine, E., Scanlon, M.D., Rosen, A.C., Gabrieli, J.D., 2002. Dissociable contri-
+butions of prefrontal and parietal cortices to response selection. Neuroimage 17,
+1562–1571.
+
+Bush, G., Shin, L.M., 2006. The multi-source interference task: an fMRI task that reliably
+activates the cingulo–frontal–parietal cognitive/attention network. Nat. Protoc. 1,
+308–313.
+
+Carter, C.S., van Veen, V., 2007. Anterior cingulate cortex and conﬂict detection: an update
+
+of theory and data. Cogn. Affect. Behav. Neurosci. 7, 367–379.
+
+Cieslik, E.C., Zilles, K., Grefkes, C., Eickhoff, S.B., 2011. Dynamic interactions in the fronto-
+parietal network during a manual stimulus–response compatibility task. Neuroimage
+58, 860–869.
+
+Cocchi, L., Zalesky, A., Fornito, A., Mattingley, J.B., 2013. Dynamic cooperation and compe-
+tition between brain systems during cognitive control. Trends Cogn. Sci. 17, 493–501.
+Cole, M.W., Schneider, W., 2007. The cognitive control network: integrated cortical re-
+
+gions with dissociable functions. Neuroimage 37, 343–360.
+
+Cole, M.W., Reynolds, J.R., Power, J.D., Repovs, G., Anticevic, A., Braver, T.S., 2013. Multi-
+task connectivity reveals ﬂexible hubs for adaptive task control. Nat. Neurosci. 16,
+1348–1355.
+
+Corbetta, M., Shulman, G.L., 2002. Control of goal-directed and stimulus-driven attention
+
+in the brain. Nat. Rev. Neurosci. 3, 201–215.
+
+Daunizeau, J., David, O., Stephan, K.E., 2011. Dynamic causal modelling: a critical review of
+
+the biophysical and statistical foundations. Neuroimage 58, 312–322.
+
+Derrfuss, J., Brass, M., von Cramon, D.Y., 2004. Cognitive control in the posterior
+frontolateral cortex: evidence from common activations in task coordination, inter-
+ference control, and working memory. Neuroimage 23, 604–612.
+
+Derrfuss, J., Brass, M., Neumann, J., von Cramon, D.Y., 2005. Involvement of the inferior
+frontal junction in cognitive control: meta-analyses of switching and Stroop studies.
+Hum. Brain Mapp. 25, 22–34.
+
+Deserno, L., Sterzer, P., Wustenberg, T., Heinz, A., Schlagenhauf, F., 2012. Reduced
+prefrontal-parietal effective connectivity and working memory deﬁcits in schizo-
+phrenia. J. Neurosci. 32, 12–20.
+
+Dima, D., Jogia, J., Frangou, S., 2014. Dynamic causal modeling of load-dependent modu-
+lation of effective connectivity within the verbal working memory network. Hum.
+Brain Mapp. 35, 3025–3035.
+
+Dosenbach, N.U., Fair, D.A., Cohen, A.L., Schlaggar, B.L., Petersen, S.E., 2008. A dual-
+
+networks architecture of top-down control. Trends Cogn. Sci. 12, 99–105.
+
+Duncan, J., 2001. An adaptive coding model of neural function in prefrontal cortex. Nat.
+
+Rev. Neurosci. 2, 820–829.
+
+Edin, F., Klingberg, T., Johansson, P., McNab, F., Tegner, J., Compte, A., 2009. Mechanism for
+top-down control of working memory capacity. Proc. Natl. Acad. Sci. U. S. A. 106,
+6802–6807.
+
+Eriksen, B.A., Eriksen, C.W., 1974. Effects of noise letters upon the identiﬁcation of a target
+
+letter in a nonsearch task. Atten. Percept. Psychophys. 16, 143–149.
+
+Fan, J., Hof, P.R., Guise, K.G., Fossella, J.A., Posner, M.I., 2008. The functional integration of
+the anterior cingulate cortex during conﬂict processing. Cereb. Cortex 18, 796–805.
+
+Fan, J., Van Dam, N.T., Gu, X., Liu, X., Wang, H., Tang, C.Y., Hof, P.R., 2014. Quantitative char-
+acterization of functional anatomical contributions to cognitive control under uncer-
+tainty. J. Cogn. Neurosci. 26, 1490–1506.
+
+Fedorenko, E., Duncan, J., Kanwisher, N., 2013. Broad domain generality in focal regions of
+
+frontal and parietal cortex. Proc. Natl. Acad. Sci. U. S. A. 110, 16616–16621.
+
+Feredoes, E., Heinen, K., Weiskopf, N., Ruff, C., Driver, J., 2011. Causal evidence for frontal
+involvement in memory target maintenance by posterior brain areas during
+distracter interference of visual working memory. Proc. Natl. Acad. Sci. U. S. A. 108,
+17510–17515.
+
+First, M.B., Spitzer, R.L., Gibbon, M., Williams, J.B., 2002. Structured Clinical Interview for
+DSM-IV-TR Axis I Disorders, Research Version, Non-patient Edition. Biometrics Re-
+search, New York State Psychiatric Institute, New York.
+
+Friston, K.J., 2011. Functional and effective connectivity: a review. Brain Connect. 1,
+
+13–36.
+
+Friston, K.J., Mechelli, A., Turner, R., Price, C.J., 2000. Nonlinear responses in fMRI: the Bal-
+
+loon model, Volterra kernels, and other hemodynamics. Neuroimage 12, 466–477.
+
+Friston, K.J., Harrison, L., Penny, W., 2003. Dynamic causal modelling. Neuroimage 19,
+
+1273–1302.
+
+Friston, K., Mattout, J., Trujillo-Barreto, N., Ashburner, J., Penny, W., 2007. Variational free
+
+energy and the Laplace approximation. Neuroimage 34, 220–234.
+
+Friston, K., Moran, R., Seth, A.K., 2013. Analysing connectivity with Granger causality and
+
+dynamic causal modelling. Curr. Opin. Neurobiol. 23, 172–178.
+
+Gazzaley, A., Nobre, A.C., 2012. Top-down modulation: bridging selective attention and
+
+working memory. Trends Cogn. Sci. 16, 129–135.
+
+Georgiou-Karistianis, N., Akhlaghi, H., Corben, L.A., Delatycki, M.B., Storey, E., Bradshaw,
+J.L., Egan, G.F., 2012. Decreased functional brain activation in Friedreich ataxia using
+the Simon effect task. Brain Cogn. 79, 200–208.
+
+Gobbele, R., Lamberty, K., Stephan, K.E., Stegelmeyer, U., Buchner, H., Marshall, J.C., Fink,
+G.R., Waberski, T.D., 2008. Temporal activation patterns of lateralized cognitive and
+task control processes in the human brain. Brain Res. 1205, 81–90.
+
+Green, J.J., McDonald, J.J., 2008. Electrical neuroimaging reveals timing of attentional con-
+
+trol activity in human brain. PLoS Biol. 6, e81.
+
+Grent-'t-Jong, T., Woldorff, M.G., 2007. Timing and sequence of brain activity in top-down
+
+control of visual–spatial attention. PLoS Biol. 5, e12.
+
+Hanslmayr, S., Pastotter, B., Bauml, K.H., Gruber, S., Wimber, M., Klimesch, W., 2008. The
+electrophysiological dynamics of interference during the Stroop task. J. Cogn.
+Neurosci. 20, 215–225.
+
+Harding, I.H., Harrison, B.J., Breakspear, M., Pantelis, C., Yucel, M., 2014. Cortical represen-
+tations of cognitive control and working memory are dependent yet non-interacting.
+Cereb. Cortex (in press).
+
+Honey, G.D., Fu, C.H., Kim, J., Brammer, M.J., Croudace, T.J., Suckling, J., Pich, E.M., Williams,
+S.C., Bullmore, E.T., 2002. Effects of verbal working memory load on corticocortical
+connectivity modeled by path analysis of functional magnetic resonance imaging
+data. Neuroimage 17, 573–582.
+
+Isoda, M., Hikosaka, O., 2007. Switching from automatic to controlled action by monkey
+
+medial frontal cortex. Nat. Neurosci. 10, 240–248.
+
+Kadohisa, M., Petrov, P., Stokes, M., Sigala, N., Buckley, M., Gaffan, D., Kusunoki, M.,
+Duncan, J., 2013. Dynamic construction of a coherent attentional state in a prefrontal
+cell population. Neuron 80, 235–246.
+
+Koechlin, E., Summerﬁeld, C., 2007. An information theoretical approach to prefrontal ex-
+
+ecutive function. Trends Cogn. Sci. 11, 229–235.
+
+Koechlin, E., Ody, C., Kouneiher, F., 2003. The architecture of cognitive control in the
+
+human prefrontal cortex. Science 302, 1181–1185.
+
+Kouneiher, F., Charron, S., Koechlin, E., 2009. Motivation and cognitive control in the
+
+human prefrontal cortex. Nat. Neurosci. 12, 939–945.
+
+Kravitz, D.J., Saleem, K.S., Baker, C.I., Mishkin, M., 2011. A new neural framework for vi-
+
+suospatial processing. Nat. Rev. Neurosci. 12, 217–230.
+
+Liotti, M., Woldorff, M.G., Perez, R., Mayberg, H.S., 2000. An ERP study of the temporal
+course of the Stroop color-word interference effect. Neuropsychologia 38, 701–711.
+Ma, L., Steinberg, J.L., Hasan, K.M., Narayana, P.A., Kramer, L.A., Moeller, F.G., 2012. Work-
+ing memory load modulation of parieto-frontal connections: evidence from dynamic
+causal modeling. Hum. Brain Mapp. 33, 1850–1867.
+
+MacDonald III, A.W., Cohen, J.D., Stenger, V.A., Carter, C.S., 2000. Dissociating the role of
+the dorsolateral prefrontal and anterior cingulate cortex in cognitive control. Science
+288, 1835–1838.
+
+Markela-Lerenc, J., Ille, N., Kaiser, S., Fiedler, P., Mundt, C., Weisbrod, M., 2004. Prefrontal–
+cingulate activation during executive control: which comes ﬁrst? Brain Res. Cogn.
+Brain Res. 18, 278–287.
+
+Menon, V., Uddin, L.Q., 2010. Saliency, switching, attention and control: a network model
+
+of insula function. Brain Struct. Funct. 214, 655–667.
+
+Nachev, P., Kennard, C., Husain, M., 2008. Functional role of the supplementary and pre-
+
+supplementary motor areas. Nat. Rev. Neurosci. 9, 856–869.
+
+Niendam, T.A., Laird, A.R., Ray, K.L., Dean, Y.M., Glahn, D.C., Carter, C.S., 2012. Meta-
+analytic evidence for a superordinate cognitive control network subserving diverse
+executive functions. Cogn. Affect. Behav. Neurosci. 12, 241–268.
+
+Palaniyappan, L., Simmonite, M., White, T.P., Liddle, E.B., Liddle, P.F., 2013. Neural primacy
+
+of the salience processing system in schizophrenia. Neuron 79, 814–828.
+
+Penny, W.D., Stephan, K.E., Daunizeau, J., Rosa, M.J., Friston, K.J., Schoﬁeld, T.M., Leff, A.P.,
+2010. Comparing families of dynamic causal models. PLoS Comput. Biol. 6, e1000709.
+Power, J.D., Cohen, A.L., Nelson, S.M., Wig, G.S., Barnes, K.A., Church, J.A., Vogel, A.C.,
+Laumann, T.O., Miezin, F.M., Schlaggar, B.L., Petersen, S.E., 2011. Functional network
+organization of the human brain. Neuron 72, 665–678.
+
+Prado, J., Carp, J., Weissman, D.H., 2011. Variations of response time in a selective atten-
+tion task are linked to variations of functional connectivity in the attentional network.
+Neuroimage 54, 541–549.
+
+Raichle, M.E., 2011. The restless brain. Brain Connect. 1, 3–12.
+
+I.H. Harding et al. / NeuroImage 106 (2015) 144–153
+
+153
+
+Rushworth, M.F., Paus, T., Sipila, P.K., 2001. Attention systems and the organization of the
+
+Simon, J.R., Berbaum, K., 1990. Effect of conﬂicting cues on information processing: the
+
+human parietal cortex. J. Neurosci. 21, 5262–5271.
+
+Rushworth, M.F., Buckley, M.J., Behrens, T.E., Walton, M.E., Bannerman, D.M., 2007. Func-
+tional organization of the medial frontal cortex. Curr. Opin. Neurobiol. 17, 220–227.
+Sauseng, P., Klimesch, W., Schabus, M., Doppelmayr, M., 2005. Fronto-parietal EEG coher-
+ence in theta and upper alpha reﬂect central executive functions of working memory.
+Int. J. Psychophysiol. 57, 97–103.
+
+Schlosser, R.G., Wagner, G., Koch, K., Dahnke, R., Reichenbach, J.R., Sauer, H., 2008. Fronto-
+cingulate effective connectivity in major depression: a study with fMRI and dynamic
+causal modeling. Neuroimage 43, 645–655.
+
+Schlosser, R.G., Wagner, G., Schachtzabel, C., Peikert, G., Koch, K., Reichenbach, J.R., Sauer,
+H., 2010. Fronto-cingulate effective connectivity in obsessive compulsive disorder: a
+study with fMRI and dynamic causal modeling. Hum. Brain Mapp. 31, 1834–1850.
+
+Schmidt, A., Smieskova, R., Simon, A., Allen, P., Fusar-Poli, P., McGuire, P.K., Bendfeldt, K.,
+Aston, J., Lang, U.E., Walter, M., Radue, E.W., Riecher-Rossler, A., Borgwardt, S.J.,
+2014. Abnormal effective connectivity and psychopathological symptoms in the psy-
+chosis high-risk state. J. Psychiatry Neurosci. 39, 130102.
+
+Seeley, W.W., Menon, V., Schatzberg, A.F., Keller, J., Glover, G.H., Kenna, H., Reiss, A.L.,
+Greicius, M.D., 2007. Dissociable intrinsic connectivity networks for salience process-
+ing and executive control. J. Neurosci. 27, 2349–2356.
+
+Silton, R.L., Heller, W., Towers, D.N., Engels, A.S., Spielberg, J.M., Edgar, J.C., Sass, S.M.,
+Stewart, J.L., Sutton, B.P., Banich, M.T., Miller, G.A., 2010. The time course of activity
+in dorsolateral prefrontal cortex and anterior cingulate cortex during top-down at-
+tentional control. Neuroimage 50, 1292–1302.
+
+‘Stroop effect’ vs. the ‘Simon effect’. Acta Psychol. (Amst) 73, 159–170.
+
+Stephan, K.E., Marshall, J.C., Friston, K.J., Rowe, J.B., Ritzl, A., Zilles, K., Fink, G.R., 2003.
+Lateralized cognitive processes and lateralized task control in the human brain. Sci-
+ence 301, 384–386.
+
+Stephan, K.E., Kasper, L., Harrison, L.M., Daunizeau, J., den Ouden, H.E.M., Breakspear, M.,
+Friston, K.J., 2008. Nonlinear dynamic causal models for fMRI. Neuroimage 42, 649–662.
+Stephan, K.E., Penny, W.D., Daunizeau, J., Moran, R.J., Friston, K.J., 2009. Bayesian model
+
+selection for group studies. Neuroimage 46, 1004–1017.
+
+Stephan, K.E., Penny, W.D., Moran, R.J., den Ouden, H.E., Daunizeau, J., Friston, K.J., 2010.
+
+Ten simple rules for dynamic causal modeling. Neuroimage 49, 3099–3109.
+
+Stokes, M.G., Kusunoki, M., Sigala, N., Nili, H., Gaffan, D., Duncan, J., 2013. Dynamic coding
+
+for cognitive control in prefrontal cortex. Neuron 78, 364–375.
+
+Vossel, S., Weidner, R., Driver, J., Friston, K.J., Fink, G.R., 2012. Deconstructing the architec-
+ture of dorsal and ventral attention systems with dynamic causal modeling. J.
+Neurosci. 32, 10637–10648.
+
+Wang, L., Liu, X., Guise, K.G., Knight, R.T., Ghajar, J., Fan, J., 2010. Effective connectivity of
+the fronto-parietal network during attentional control. J. Cogn. Neurosci. 22,
+543–553.
+
+Wechsler, D., 1999. Wechsler Abbreviated Scale of Intelligence Manual. The Psychological
+
+Corporation, San Antonio.
+
+Zanto, T.P., Rubens, M.T., Thangavel, A., Gazzaley, A., 2011. Causal role of the prefrontal
+cortex in top-down modulation of visual processing and working memory. Nat.
+Neurosci. 14, 656–661.
+
+

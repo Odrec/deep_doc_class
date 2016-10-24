@@ -1,0 +1,886 @@
+Nachtrag letzte Vorlesung
+
+• Gaylord-Nishidate Nachbarschaft:
+
+•
+
+„So what“ - Sinn und Zweck von Sugarscape?
+
+Wiederholung: Zum Hintergrund
+
+• Soziale Systeme sind komplex, die Aufteilung in Disziplinen schwer 
+
+zu überwinden
+
+• Kontrollierte Experimente schwierig, Wiederholbarkeit von 
+
+Experimenten nahezu unmöglich 
+
+• Kleinste „Bausteine“ in den Sozialwissenschaften – Menschen –
+
+sind an sich schon höchst komplex
+
+• Vorhersage von Makro- Dynamiken aus Mikro-Verhalten schwierig 
+• Sugarscape als künstliches soziales Labor: Soziale Phänomene 
+
+(z.B. Soziale Strukturen, Gruppenverhalten) werden generiert 
+(Emergenz) – die Grundlagen ihrer Entstehung können so besser 
+verstanden werden
+
+• Vorteile: Integration verschiedener Bereiche, Experimente beliebig 
+
+wiederholbar, alle Elemente und Interaktionen sind bekannt
+
+Auf den Punkt gebracht
+
+• Einfache Regeln (cid:1) komplexes Verhalten (Emergenz: 
+
+z.B. Tragfähigkeit der Sugarscape, 
+Vermögensverteilung)
+
+• Exploration: Welche Regeln führen zu welchem 
+
+Modellverhalten?
+
+Nachteile?
+
+• Vereinfachung
+• Unsicherheiten
+• …
+
+• Auch bei anderen Methoden/Modellen
+• Unsicherheiten und Vereinfachungen klar thematisieren
+• Die Schwächen kennen um die Stärken zu erkennen
+• Oft gibt es keine klare (einfache, richtige…) Antwort!
+
+Vorlesung
+
+Regelbasierte Modelle
+
+Modellzweck / Modellkomplexität
+
+11.11.14
+
+„Clearly, modelling is an arts form.“ 
+
+(Holland, 1996) 
+
+„Developing good multi-agent 
+
+models is still something of an art, 
+
+rather than a science.”
+
+(Gilbert 2004)
+
+Vorbemerkungen (I)
+
+• Agentenbasierte Modellierung ist eine Methode, ein
+
+•
+
+Werkzeug
+“Was” und “wie” modelliert werden soll kann von ABM 
+nicht vorgeben werden, sondern muss geklärt werden
+anhand von :
+– Modellzweck / Fragestellung
+– Konzeptioneller Rahmen (Schwierigkeit bei
+
+sozialwissenschaftlichen Fragestellungen: es gibt eine grosse
+Zahl von Theorien über das Verhalten von Menschen!)
+
+– Existierendes Vorwissen (empirische Daten, Theorien, andere
+
+Modelle) für Modellspezifikation und Validierung
+
+Vorbemerkungen (II)
+
+• Die Komplexität des Modells und die Auswahl des 
+
+konzeptionellen Rahmens sollten dem Zweck und dem
+existierenden Vorwissen über ein System angepasst
+sein.
+
+• Das Ganze ist ein Abwägungsprozess
+• ABM lassen sich in vielen „Dimensionen“ unterschiedlich 
+
+gestalten (s.u.), dies muss in diesem Prozess 
+geschehen – idealerweise basierend auf guten 
+Argumenten
+
+(cid:2) Wichtig: Erfahrung, Lernen an Beispielen
+
+Dimensionen der Modellgestaltung
+
+• Modellzweck
+• Abstraktionsgrad
+• Modellkomplexität
+
+– Individuelle Komplexität
+– Funktionale Heterogenität
+– Interaktion
+
+Modellzweck
+
+Vier Arten von Modellzweck werden unterschieden:
+
+• Vorhersage
+• Exploration
+• Verständnis / Erklärung
+• Lernen / Verständigung
+
+Vorhersage
+
+• Spezifikation der Mikro-
+
+Ebene
+
+• Annahme diese 
+
+•
+
+Spezifikation ist korrekt
+Interessierendes 
+Ergebnis: Resultat auf 
+Makro-Ebene (in der 
+Zukunft)
+
+• Verschiedene Grade an 
+
+Genauigkeit der 
+Vorhersage
+
+Ergebnis
+
+Gegeben
+
+Vorhersage –
+
+3 verschiedene Abstufungen
+
+• Was für eine Art von Dynamik kann von einem solchen
+
+System erwartet werden?
+– Z.B. Erdbeben
+
+• Was für eine Art von Dynamik wird ein bestimmtes
+
+betrachtetes System in der nahen Zukunft aufzeigen?
+– Z.B. Wechsel der Jahreszeiten
+
+• Welchen Zustand wird ein bestimmtes betrachtetes
+
+System in der nahen Zukunft annehmen?
+– Z.B. Planetenbewegungen
+
+Beispiel Vorhersage: MATSim
+
+• Multi Agent Transport Simulation Toolkit
+• Toolbox zur Entwicklung von Verkehrssimulationen 
+(Anwendung u.a. Berlin, Zürich, Padang (Indonesien), Toronto 
+(Kanada))
+
+MATSIM - Zoom
+
+MATSIM – Zurich one day
+
+www.matsim.org
+
+MATSim - Aktivitätspläne
+
+• MATSim hält für jeden Agenten einen Aktivitätsplan vor
+• Ein Plan enthält alle Aktivitäten des Tages die der Agent 
+
+beabsichtigt durchzuführen, sowie die für 
+Ortsveränderungen notwendigen Wege
+
+• Agenten interagieren durch Nutzung der Straßen
+
+Agent Nr. 393241 ist männlich und 37 Jahre alt. Er verlässt sein 
+Zuhause um 7:00 in Richtung Arbeit. Der dafür zurückgelegte Weg 
+führt über vier Knoten (fünf Straßenabschnitte) und hat eine erwartete 
+Reisezeit von 25 Minuten. Der Agent bleibt 9 Stunden auf Arbeit, und 
+fährt danach über eine Route mit zwei Knoten wieder nach Hause.
+
+MATSim - Iteratives Suchen 
+
+stabiler Muster
+
+• Mehrere (3-6) Pläne pro Agent (Aktivitäten, Orte, Routen, zeitl. 
+
+Abfolge der Aktivitäten, usw.) 
+
+• Wiederhole bis Performance (Nutzen der Agenten) sich nicht mehr 
+
+wesentlich ändert:
+– Durchführen einer Verkehrssimulation (mit jeweils bestem Plan)
+– Teilmenge der Agenten (10%) löscht den schlechtesten Plan und erzeugt einen 
+
+neuen Plan durch Crossover und Mutation existierender Pläne
+
+– Bewerten aller Pläne anhand von Daten aus Verkehrssimulation (insbesondere 
+
+Verkehrsaufkommen)
+
+• Annahme: Das gefundene Gleichgewicht der Pläne spiegelt reale 
+
+Verkehrssituation wieder
+
+(cid:2) Vorhersage der Verkehrsflüsse bei Veränderung des Straßennetzes 
+
+möglich (durch Finden des zugehörigen Gleichgewichts)
+
+Exploration
+
+• Spezifikation der Mikro-
+
+Ebene
+
+• Variation dieser 
+
+•
+
+Spezifikation („was wäre 
+wenn“)
+Interessierendes 
+Ergebnis: Variation des 
+Resultats auf Makro-
+Ebene
+
+• Abgrenzung zu 
+
+Vorhersage unscharf
+
+Ergebnis
+
+Gegeben, Variation
+
+Beispiel Exploration: Sugarscape
+
+G1,{M,I,S}
+
+G1,{M,K}
+
+Verständnis / Erklärung
+
+• Ausgangspunkt: 
+
+Beobachtung auf Makro-
+Ebene (z.B. Muster)
+
+• Variation der Mikro-Ebene
+•
+
+Interessierendes 
+Ergebnis: mögliche 
+Erklärung für 
+Beobachtung auf Makro-
+Ebene (kann eine 
+Spezifikation der Mikro-Ebene 
+die Makro-Beobachtung 
+reproduzieren?)
+
+Ausgangspunkt, bekannt
+
+(teilweise) unbekannt, Variation
+
+Beispiele Verständnis: 
+
+Ameisenstraße, Rumor Mill
+
+o Kein Futter (cid:1)
+
+Zufallsbewegung
+
+o Kein Futter + Pheromonspur
+
+(cid:1) folge Spur zur Futterquelle
+o Futter (cid:1) gehe zum Nest und 
+
+schütte Pheromone aus 
+
+o Pheromon verdunstet
+
+o Geringe anfängliche 
+
+Verbreitung einer Neuigkeit
+
+o Gebe Neuigkeit an Nachbarn / 
+
+Bekannte weiter
+
+o Begrenzte Menge an Agenten 
+
+Vorhersage <-> Erklärung
+
+•
+
+Impliziert eine (korrekte) Vorhersage auch eine (richtige) 
+Erklärung?
+
+• Ermöglicht eine gute Erklärung auch eine Vorhersage?
+
+Lernen / Verständigung
+
+• Modellbildung als Mittel zur präzisen Kommunikation und 
+
+zur Eruierung von (impliziten) Kausalvorstellungen
+
+s. Vorlesung 
+„Partizipative Modellierung“
+
+Modellzweck bisheriger Modelle?
+
+• Stau
+
+• Sandhaufen (SOC)
+
+• Waldbrand
+
+• Heatbugs
+
+• Kultureller Austausch
+
+Abstraktionsgrad: konzeptionelle und 
+
+realistische Modelle
+
+• Konzeptionelle Modelle untersuchen
+
+typische Verhaltensmuster –
+reproduzieren “Stilisierte Fakten”, sind im
+Allgemeinen einfacher und erlauben eine
+umfassende Analyse des Verhaltens (z.B. 
+Rumor Mill, Waldbrand).
+
+• Realistische Modelle, die ein reales, 
+spezifisches System abbilden sind im
+allgemeinen komplizierter und haben
+Parameter, die auf Basis von empirischen
+Daten validiert werden (z.B. 
+Landnutzungsmuster in einer spezifischen
+Region, MATSim)
+
+Beispiele Abstraktionsgrad
+
+Rumor Mill
+
+Sand-
+
+haufen ZA
+
+Futtersuche
+
+Ameisen
+
+MATSim
+
+Konzeptionell
+
+Realistisch
+
+Dimensionen der Modellerstellung
+
+• Modellzweck
+• Abstraktionsgrad
+• Modellkomplexität
+
+– Individuelle Komplexität
+– Funktionale Heterogenität
+– Interaktion
+
+Modellkomplexität
+
+• Wie viele Agenten(-typen) und Interaktionen?
+• Wie komplex soll die Darstellung jeweils sein?
+•
+
+„Daumenregel“: so einfach wie möglich, so komplex wie 
+nötig
+
+• Eng verknüpft mit Abstraktionsgrad, i.d.R.
+
+– Konzeptionell: geringere Komplexität
+– Realistisch: höhere Komplexität
+– (die Details die einen spezifischen Fall von einem stilisierten 
+
+unterscheiden tauchen im Modell auf und erhöhen die 
+Komplexität) 
+
+Modellkomplexität
+
+Individuelle 
+Komplexität 
+
+Interaktion 
+
+Funktionale 
+Heterogenität 
+
+Individuelle Komplexität
+
+• Mit welchem Komplexitätsgrad sollen interne 
+
+Denkprozesse und Entscheidungsfindung abgebildet
+werden?
+
+• Welcher theoretische Rahmen soll genutzt werden, wenn
+
+überhaupt?
+
+• Es existiert eine ganze Bandbreite* an Ansätzen von 
+
+einfachen regelbasierten Automaten zu komplexen
+Agenten
+
+•
+
+Im Folgenden zwei (extreme) Beispiele
+
+*(s. auch Vorlesung zu Akteursmodellen)
+
+Schwellenwert-Modell kollektiven 
+Verhaltens (Granovetter, 1978)
+
+• Ansatz zur Erklärung kollektiven Verhaltens
+• Anwendung auf Situationen, in denen einzelne Akteure 
+zwischen zwei Handlungsalternativen wählen müssen 
+(binäre Entscheidung)
+
+• Akteure handeln rational (Nutzenmaximierung)
+• Vor- und Nachteile (Nutzen) der Alternativen hängen von 
+
+Wahl aller anderen Akteure ab 
+
+• Präferenzen werden als heterogen angenommen
+• Beispiele:  Entwicklung von Krawallen, Verbreitung von 
+
+Innovationen, Streiks, Mode
+
+Schwellenwert-Modell (II)
+
+• Schwelle: wie viele andere müssen ein bestimmtes 
+Verhalten zeigen, bevor der Akteur sich auch dafür 
+entscheidet (Vorteile überwiegen Nachteile)
+
+• Schwellen werden von verschiedenen Faktoren 
+
+beeinflusst, z.B.:
+– Persönlicher Hintergrund 
+– Soziale Klasse 
+– Erziehung 
+– Beruf 
+– Persönliche Präferenzen
+– Normen
+– Die spezifische Situation
+
+1
+ 
+n
+e
+t
+l
+a
+h
+r
+e
+V
+
+2
+ 
+n
+e
+t
+l
+a
+h
+r
+e
+V
+
+% andere Akteure, die 
+best. Verhalten zeigen
+
+• Schwellen sind eine extreme Reduktion vielfältiger Einflüsse 
+
+auf das für das Modell Wesentliche
+
+Schwellenwert-Modell (III)
+
+• Schwellen geben an, wie Präferenzen einzelner Agenten 
+
+miteinander interagieren
+
+• Das bloße Wissen über Präferenzen der Einzelnen reicht 
+
+nicht aus, um das kollektive Verhalten adäquat 
+beschreiben zu können 
+
+• Einzelne Schwellen der Akteure müssen noch aggregiert 
+
+werden, um Gleichgewichtszustand zu ermitteln: durch 
+Rekursion
+
+• Bsp.: 100 Menschen befinden sich auf einem Platz. Dies ist eine Situation 
+
+die unter geeigneten Umständen zu einem Krawall führen könnte. Die 
+Schwellen der einzelnen Personen seien gleichmäßig verteilt: Jeder hat 
+also eine andere Schwelle von 0 bis 99. Im ersten Schritt beginnt derjenige 
+mit der Schwelle 0 zu randalieren. Die Schwelle 1 ist überschritten und ein 
+weiterer beginnt zu randalieren. Ein Domino-Effekt setzt ein, bis schließlich 
+alle 100 Menschen randalieren.
+
+Schwellenwert-Modell (IV)
+
+• Schwellenwert-Modell erklärt scheinbar paradoxe Phänomene 
+
+kollektiven Verhaltens
+
+• Das Schwellen-Modell hat einen großen Beitrag zum besseren 
+
+Verständnis kollektiven Verhaltens geleistet 
+
+• Es spielt eine wichtige Rolle im Bestreben Mikro- und Makroebene 
+
+der Soziologie vermehrt zu vernetzen
+
+• Zweck des Modells: Aufzeigen dass zum Verständnis kollektiven 
+Verhaltens Heterogenität der Individuen und das Zusammenspiel 
+unterschiedlicher Ausprägungen wesentlich sind 
+
+• Für diesen Zweck ist eine extrem einfache Abbildung individuellen 
+
+Verhaltens durch eine Schwelle ausreichend und sinnvoll
+
+Beispiel für komplexes Konsumenten-
+
+Modell: Consumat Modell
+
+• Basiert auf einem konzeptuellem Modell von 
+
+Konsumentenverhalten, das verschiedene Annahmen
+integriert
+
+• Je nach dem Level von Bedürfnisbefriedigung und der 
+
+jeweiligen Unsicherheit wird einer von 4 
+Entscheidungmodi aktiviert
+– Deliberate (Bedürfnisbefriedigung niedrig, Unsicherheit niedrig) 
+– Social comparison (Bedürfnisbefriedigung niedrig, Unsicherheit hoch)
+– Imitation (Bedürfnisbefriedigung hoch, Unsicherheit hoch) 
+– Habitually repeat (Bedürfnisbefriedigung hoch, Unsicherheit niedrig)
+
+Consumat Modell Übersicht
+
+Quelle: Jager (2000)
+
+Consumats: wozu so komplex?
+
+• Ausgangspunkt: Gemeingüterprobleme und ähnliche 
+
+Fragestellungen
+– Empirische Beobachtungen und experimentelle Ökonomie zeigen 
+
+deutliche Abweichungen von Vorhersagen die auf rationalem Akteur 
+basieren 
+
+– Verschiedene psychologische Theorien beleuchten verschiedene 
+
+Aspekte, es gibt jedoch kein übergreifendes Framework 
+
+– Das Makro-Ebenen Phänomen (Gruppenverhalten) emergiert
+
+(möglicherweise) aus Interkation von Akteuren, die verschiedenen 
+Handlungs-Modi (überlegt, habituell) folgen
+
+– Einzelne Akteure ändern ihren Handlungsmodus situationsabhängig
+
+(cid:2) Das Consumat-Modell 
+
+- Vorschlag für einen integrierten Ansatz 
+
+kann vielfältige Einflüsse auf Verhalten aufgreifen
+
+- Kann Dynamik erfassen die aus Zusammenspiel und Wechsel von 
+
+Handlungsmodi erwächst
+
+-
+Modellkomplexität
+
+Individuelle 
+Komplexität 
+
+Interaktion 
+
+Funktionale 
+Heterogenität 
+
+Funktionale Heterogenität
+
+• Funktionale Heterogenität bezeichnet Unterschiede
+
+zwischen Agenten in deren Regelbasis (nicht nur
+Heterogenität aufgrund individueller Parameterwerte)
+
+• Funktionale Gruppen können begründet sein in:
+
+– Unterschiedliche “Rolle” der Agenten, z.B. Produzent-Konsument, 
+
+Räuber-Beute
+
+– Unterschiedliche Art wie diese Rolle erfüllt wird (z.B. verschiedene
+
+Konsumententypologien)
+
+• Funktionale Heterogenität und Interaktionen ergeben 
+
+sich oftmals aus Modellzweck, z.B. impliziert die Analyse 
+eines Marktgeschehens automatisch den Austausch von 
+Gütern und die beiden Seiten Angebot und Nachfrage 
+(funktionale Heterogenität)
+
+•
+
+In manchen Fällen können Agententypen mehr oder 
+weniger differenziert betrachtet werden: funktionale 
+Heterogenität hängt zusammen mit Abstraktionsgrad 
+(z.B. Konsumententypologie)
+
+Beispiel funktionale Heterogenität innerhalb 
+einer Rolle (Konsumenten): Sinus®-Milieus
+
+Quelle: Nina Schwarz „Agent-based modelling of the diffusion of environmental 
+innovations“, Paper for the 5ht International EMAEE conference on innovation
+
+• Sinus®-Milieus unterteilen die Bevölkerung in 
+
+Lebensstile
+
+• Beispiel entnommen aus einem Modell zur Diffusion von 
+umweltrelevanten Technologien (z.B. Wasser sparende 
+Duschköpfe)
+
+• Annahme: Verschiedene Lebensstile weisen 
+
+unterschiedliches Verhalten bei Verbreitung von 
+Innovationen auf, z.B. 
+– Postmaterialisten und „Social leader“ treffen immer eine 
+bewusste Entscheidung für oder gegen eine Innovation
+
+– Mainstream, Traditional und Hedonistic imitieren das Verhalten 
+
+anderer Agenten
+
+(cid:2) Unterschiedliche Repräsentation dieser Typen im Modell
+
+Modellkomplexität
+
+Individuelle 
+Komplexität 
+
+Interaktion 
+
+Funktionale 
+Heterogenität 
+
+Interaktion
+• Struktur der Agenten-Verknüpfung:
+
+– Globale Ebene vermittelt (z.B. Suche über Wurzel des Modellbaums
+
+nach Agenten mit bestimmten Eigenschaften)
+
+– Räumliche Nähe
+
+– Netzwerke (verschiedene Strukturen, statisch, dynamisch)
+
+– Zufällig
+
+• Komplexität der Interaktion selbst
+
+– Indirekt über Umwelt
+
+– Beobachtung
+
+– Kommunikation
+
+– Austausch von Ressourcen
+
+– …
+
+Struktur: Vergleich zweier ähnlicher Modelle
+
+Schwellenwert Modell 
+(Granovetter)
+
+Netzwerk-Modell zur 
+Diffusion (Valente)
+
+• Verhalten ändert sich wenn Verhalten der Bezugsgruppe eigenen 
+
+Schwellwert überschreitet
+• Heterogene Schwellwerte
+
+• Bezugsgruppe: alle
+
+• Bezugsgruppe: Ego-Netzwerk
+
+% andere 
+Akteure, die best. 
+Verhalten zeigen
+
+Annahmen der Modelle
+
+Schwellenwert Modell 
+(Granovetter)
+
+Netzwerk-Modell zur 
+Diffusion (Valente)
+
+• Sichtbarkeit: Verhalten aller 
+
+• Sichtbarkeit: Verhalten einiger 
+
+anderen
+
+Agenten
+
+• Alle anderen Agenten werden 
+
+• Und/oder: Berücksichtigung 
+
+identisch bewertet
+
+nur Verhalten einiger Weniger
+
+• Bsp.: Krawall auf Platz
+
+• Bsp.: Verbreitung einer 
+
+Therapie-Form unter Ärzten
+
+Wahl der geeigneten Interaktion hängt vom empirischen Tatbestand 
+(und Abstraktionsgrad) ab
+
+Komplexität der Interaktion am 
+
+Beispiel Handel 
+
+Einfaches Markt-Modell:
+• Produzent setzt Preis
+• Konsument entscheidet ob Preis 
+
+akzeptabel
+
+• Kommunikation: 
+
+– Produzent: Ansage Preis
+– Konsument: Zu-/Absage Kauf
+
+Sugarscape (Zucker, Gewürz)
+• Handel zwischen gleichen 
+
+Agenten
+
+• Preis berechnet sich nach relativer 
+
+Knappheit (Zeit bis zum Tod: 
+Menge/Metabolismus) beider Güter für 
+beide Agenten 
+
+• Verhandlung über:
+– Austausch ja/nein
+– Richtung des Austauschs
+– Menge 
+– Preis (Menge Gewürz pro Einheit 
+
+Zucker)
+
+• Annahme: Produzent hat Kosten + 
+
+Gewinn-Marge (cid:1) Preis
+
+• Keine externen Faktoren die Preis 
+
+bestimmen (cid:1) Verhandlung
+
+Aufgabe:
+
+Fragestellungen- was macht „Sinn“?
+
+• „kleinskalig/konkret“ 
+
+genug
+
+• Um klar benannte 
+
+Prozesse/Phänomene 
+zu verstehen
+
+• Nur ABM verwenden 
+
+wenn es sinnvoll ist 
+(nicht modellieren um 
+zu modellieren)
+
+• Aufgabe:
+Überlegt euch eine 
+sinnvoll mit ABM zu 
+bearbeitende 
+Fragestellung zu Politik 
+(z.B. zu Wahlen, 
+Koalitionen…)
+
+Fragestellung I
+
+• Wie wirkt sich das Wahlsystem auf das Wahlergebnis 
+
+aus?
+
+Fragestellung II
+
+• Wie wirken sich Wahlplakate an unterschiedlichen 
+
+Standpunkten und in unterschiedlicher Häufigkeit auf 
+das Wahlverhalten aus?
+
+Fragestellung II: Wie wirken sich 
+Wahlplakate an unterschiedlichen 
+
+Standpunkten und in unterschiedlicher 
+Häufigkeit auf das Wahlverhalten aus?
+
+• Modellzweck?
+
+– Exploration, Vorhersage
+
+• Abstraktionsgrad?
+
+– Realistisch
+
+• Modellkomplexität?
+
+– Hoch 
+
+Fragestellung I: Wie wirkt sich das 
+Wahlsystem auf das Wahlergebnis 
+
+aus?
+
+• Modellzweck?
+
+– Exploration
+
+• Abstraktionsgrad?
+
+– Konzeptionell
+
+• Modellkomplexität?
+
+– Gering
+
+WIRD IN DER NÄCHSTEN VORLESUNG 
+BESPROCHEN
+
+

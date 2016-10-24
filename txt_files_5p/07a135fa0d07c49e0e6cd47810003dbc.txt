@@ -1,0 +1,2210 @@
+A R T I C L E S
+
+A critical period for auditory thalamocortical connectivity
+Tania Rinaldi Barkat1, Daniel B Polley2 & Takao K Hensch1
+
+Neural circuits are shaped by experience during periods of heightened brain plasticity in early postnatal life. Exposure to acoustic 
+features produces age-dependent changes through largely unresolved cellular mechanisms and sites of origin. We isolated the 
+refinement of auditory thalamocortical connectivity by in vivo recordings and day-by-day voltage-sensitive dye imaging in an acute 
+brain slice preparation. Passive tone-rearing modified response strength and topography in mouse primary auditory cortex (A1) 
+during a brief, 3-d window, but did not alter tonotopic maps in the thalamus. Gene-targeted deletion of a forebrain-specific cell-
+adhesion molecule (Icam5) accelerated plasticity in this critical period. Consistent with its normal role of slowing spinogenesis, 
+loss of Icam5 induced precocious stubby spine maturation on pyramidal cell dendrites in neocortical layer 4 (L4), identifying a 
+primary locus of change for the tonotopic plasticity. The evolving postnatal connectivity between thalamus and cortex in the days 
+following hearing onset may therefore determine a critical period for auditory processing.
+
+Neural circuits are shaped by experience during periods of heightened 
+brain plasticity in early life1,2. Children raised in an English-speaking envi-
+ronment easily distinguish between the phonemes /la/ and /ra/, whereas 
+those growing up in Japan find it increasingly difficult3. Passive exposure 
+of young rodents to a variety of sound features reveals a cascading series 
+of developmental windows that open and close shortly after hearing onset 
+to define the persistent and specific influences of early experience on the 
+functional organization of auditory cortex4–6. The underlying sites of 
+plasticity along the auditory pathway, as well as potential mechanisms 
+engaged during such critical periods, remain unknown.
+
+Motivated  by  the  well  known  binocular  interactions  shaped  by 
+experience in developing visual cortex7–9, we used in vivo neurophysi-
+ological recordings to determine whether mouse A1 also exhibits a 
+critical period for tonotopic map plasticity induced through passive 
+tone exposure, and whether such plasticity is present in the auditory 
+thalamus (ventral medial geniculate body, MGBv). We then isolated 
+the  connection  between  MGBv  and  primary  auditory  cortex  (A1)  
+(ref. 10) in an acute brain slice preparation11 and used voltage-sensitive 
+dye imaging (VSDI) techniques in vitro. We mapped A1 responses to 
+electrical stimulation of discrete sites in MGBv across early postnatal 
+days (P8–20), following tone-rearing or gene manipulation. Our results 
+reveal a critical period for acoustically driven topographic plasticity at 
+thalamocortical connections in mouse A1.
+
+RESULTS
+Tone exposure modifies tonotopic maps in A1, but not MGBv
+The auditory system is tonotopically organized10 such that tones of 
+similar frequency activate neighboring neurons at each station along 
+the pathway. Given that rats show experience-dependent tonotopic map 
+reorganization following passive tone exposure during the second post-
+natal week2,12, we first used high-density in vivo mapping to delineate 
+A1 tonotopy in young adult mice13 that were reared either in typical 
+acoustic environments (Fig. 1a) or in the presence of pulsed 7-kHz tone 
+
+pips from P11 to P15 (Fig. 1b) or P16 to P20 (Fig. 1c). Comparison of 
+representative tonal receptive fields drawn from caudal, intermediate 
+and rostral map locations (Fig. 1d) revealed that tone-rearing from P11 
+to P15, but not P16 to P20, was sufficient to shift A1 best frequencies 
+toward the 7-kHz exposure frequency (P11–15 versus exposure, n = 5  
+mice and 93 sites for each group, P = 0.003; P16–20, 4 mice and 64 sites 
+versus no exposure, P = 1.0, Kolmogorov-Smirnov test; Fig. 1e). On 
+closer inspection, the expansion of best frequency representations near 
+the exposure frequency was attributable to topographically specific real-
+location of best frequencies in caudal and intermediate regions of the 
+tonotopic map proximal to where 7 kHz is normally represented, rather 
+than a shift in more rostral map areas that retain normal tuning to higher 
+frequencies (P = 0.009, 0.04 and 0.14 for P11–15 versus no exposure at 
+caudal, mid and rostral locations, respectively, t test; Fig. 1f,g).
+
+To determine whether remapping in A1 could be explained by a 
+shifted frequency representation in the principal subcortical input 
+source, we also examined best frequency distributions in the MGBv. 
+We inserted a multichannel silicon probe at an angle that matched 
+the plane of section used in subsequent thalamocortical slice experi-
+ments13 (Fig. 2a). This approach allowed us to sample the low-to-
+high,  lateral-to-medial  best  frequency  gradient  in  MGBv  in  vivo 
+(Fig. 2b) with a comparable multi-unit signal-to-noise ratio as in 
+our A1 recordings (Fig. 2c) while excluding recordings from audi-
+tory areas medial to MGBv (Fig. 2d and Online Methods). Although 
+7-kHz rearing from P11–15 induced a significant shift in A1 maps 
+(Fig. 1), we found no evidence for shifts in overall best frequency 
+distributions in MGBv (P11–15, n = 5 mice and 151 sites versus no 
+exposure, n = 4 mice and 101 sites; P = 0.99, Kolmogorov-Smirnov 
+test; Fig. 2e) or differences in mean best frequency at lateral (50 (cid:77)m  
+into MGBv), more medial (200 (cid:77)m into MGBv) or across all recording  
+sites (P = 0.44, 0.18 and 0.91 at lateral, medial and overall locations, 
+respectively, t test; Fig. 2f). In contrast, other auditory receptive  
+field changes, such as best frequency–specific reductions in tuning  
+
+1Center for Brain Science, Department of Molecular and Cellular Biology, Harvard University, Cambridge, Massachusetts, USA. 2Eaton-Peabody Laboratory, 
+Massachusetts Eye and Ear Infirmary, Department of Otology and Laryngology, Harvard Medical School, Boston, Massachusetts, USA. Correspondence should be 
+addressed to T.K.H. (hensch@mcb.harvard.edu).
+
+Received 1 April; accepted 6 June; published online 31 July 2011; doi:10.1038/nn.2882
+
+NATURE NEUROSCIENCE  VOLUME 14 | NUMBER 9 | SEPTEMBER 2011 
+
+1189
+
+© 2011 Nature America, Inc.  All rights reserved.© 2011 Nature America, Inc.  All rights reserved.A R T I C L E S
+
+Figure 1  Developmental cortical map reorganization 
+in mouse A1. (a–c) Representative A1 best frequency 
+maps from the left hemisphere of young adult mice 
+(P32–39) reared in a normal sound environment (a) 
+or after 7-kHz tone exposure between P11–15 (b) 
+or P16–20 (c). Circle denotes multi-unit recording 
+site and hue represents best frequency (color scale). 
+Triangles indicate non-A1 recording sites and x’s 
+indicate non-responsive sites. Scale bar represents 
+0.25 mm. Dark and light gray lines represent 
+branches of the middle cerebral artery and inferior 
+branches of the rhinal vein, respectively. (d) Sample 
+frequency response areas of normalized firing rates 
+as a function of tone frequency and level. Recordings 
+obtained from caudal, intermediate and rostral 
+zones of A1 from mice reared in a normal sound 
+environment (top) or with 7-kHz tones between 
+P11–15 (middle) or P16–20 (bottom). Vertical blue 
+lines indicate best frequency. (e) Percentage of 
+recording sites of all best frequency measurements 
+in normally reared mouse A1 (open bars; n = 18, 15, 
+12, 20, 26 and 2 sites for each of the six categories 
+(cat.)) or those reared with 7-kHz tones between 
+P11–15 (gray bars; n = 27, 18, 15, 19, 14 and 
+0 sites) or P16–20 (black bars, n = 14, 9, 9, 14, 
+16 and 2 sites). Best frequencies are grouped into 
+0.5-octave bins centered on the x axis frequency. 
+(f) Best frequency distributions segregated by 
+rearing condition and topographic location. The 
+percentages of best frequency sites are represented 
+by circle diameter. Scale bar denotes a diameter 
+equaling 50% of the distribution. (g) Best frequency 
+values (mean (cid:111) s.e.m.) for each rearing group and 
+topographic position. *P < 0.05 (t test).
+
+a
+
+b
+
+c
+
+d
+
+Caudal
+
+6
+
+Lateral
+12
+
+24
+
+48
+
+B
+e
+s
+t
+ 
+f
+r
+e
+q
+u
+e
+n
+c
+y
+ 
+(
+k
+H
+z
+)
+
+e
+
+f
+
+o
+
+ 
+
+t
+
+e
+g
+a
+n
+e
+c
+r
+e
+P
+
+s
+e
+
+t
+i
+s
+ 
+
+i
+
+g
+n
+d
+r
+o
+c
+e
+r
+
+f
+
+.
+t
+
+a
+c
+ 
+y
+c
+n
+e
+u
+q
+e
+r
+f
+ 
+t
+s
+e
+B
+
+)
+s
+e
+v
+a
+t
+c
+o
+
+ 
+
+5
+2
+
+.
+
+0
+±
+ 
+,
+z
+H
+k
+(
+
+Caudal
+
+Intermediate
+
+Rostral
+
+g
+
+L
+P
+S
+B
+d
+
+ 
+
+60
+40
+20
+0
+
+5.7 11.3 22.6
+Frequency (kHz)
+
+45.3
+
+Max
+
+S
+p
+k
+e
+
+i
+
+ 
+c
+o
+u
+n
+
+t0
+
+t
+s
+e
+b
+
+ 
+
+n
+a
+e
+M
+
+)
+z
+H
+k
+(
+ 
+y
+c
+n
+e
+u
+q
+e
+r
+f
+
+35
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+
+7
+
+10
+
+14
+
+Best frequency cat. (kHz, ±0.25 octaves)
+
+20
+
+28
+
+40
+
+40
+
+28
+
+20
+
+14
+
+10
+
+7
+
+45.3
+
+32.0
+
+22.6
+
+16.0
+
+11.3
+
+8.0
+
+5.7
+
+None
+P11–15
+P16–20
+
+Caudal
+
+Mid
+
+Rostral
+
+A1 tonotopic position
+
+*
+
+*
+
+Caudal
+
+Mid
+
+Rostral
+
+A1 tonotopic position
+
+bandwidth,  were  found  in  both  MGBv  recordings  (P11–15)  and 
+throughout A1 (P11–20) (Supplementary Fig. 1).
+
+A developmental time window for A1 response maturation
+In the rodent MGBv, the gradient of preferred sound from low (lateral)  
+to  high  (medial)  frequency  allows  us  to  mimic  tones  of  varying  
+frequency across the latero-medial axis in vitro13–15. We stimulated 
+
+a
+
+e
+
+s
+e
+
+t
+i
+s
+ 
+
+i
+
+g
+n
+d
+r
+o
+c
+e
+r
+ 
+f
+o
+ 
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+50
+
+40
+
+30
+
+20
+
+10
+
+0
+
+1190 
+
+Dorsal
+
+Medial
+
+None
+P11–15
+
+10
+
+7
+14 20 28 40
+Best frequency category
+
+(kHz, ±0.25 octaves)
+
+b
+
+L
+P
+S
+B
+d
+
+ 
+
+60
+40
+20
+0
+
+5.5 11
+22 44
+Frequency (kHz)
+
+0
+
+Spike count
+
+Max
+
+c
+
+d
+
+f
+
+)
+z
+H
+k
+(
+ 
+y
+c
+n
+e
+u
+q
+e
+r
+f
+ 
+t
+s
+e
+b
+ 
+n
+a
+e
+M
+
+45.3
+
+32.0
+
+22.6
+
+16.0
+
+11.3
+
+8.0
+
+5.7
+
+Lateral Medial Overall
+
+MGBv location
+
+the MGBv at six different loci along this dimension in brain slices, 
+preserving the thalamocortical connection to A1 (Fig. 3a)11, and used 
+VSDI to measure cortical response (Supplementary Fig. 2). Discrete 
+current pulses to MGBv yielded topographically distinct, maximal 
+responses across upper L4 of A1 that we used to derive a map of peak 
+amplitudes as function of stimulus site (L4 loci; Fig. 3a)13.
+
+In young animals (P8–12), responses to lateral MGBv loci were 
+significantly weaker than responses to medial stimuli (peak (cid:36)F/F at 
+locus 1, 0.30 (cid:111) 0.06; locus 6, 0.82 (cid:111) 0.05; n = 13 each, P < 0.00001,  
+t test; Fig. 3b). This inhomogeneous distribution of peak amplitudes 
+gradually disappeared with brain maturation. After P15, peak cortical 
+
+Figure 2  Thalamic tonotopy remains stable despite reorganization of A1 maps. 
+(a) In vivo recordings from MGBv (gray shading) with a multichannel silicon 
+probe inserted at an angle matching the plane of thalamocortical slices. Inset, 
+schematic depicting position of recording sites relative to cytoarchitectonic 
+boundaries of MGBv. (b) Representative frequency response areas recorded 
+from a lateral (left) and medial (right) recording site in MGBv. All conventions 
+match those in Figure 1d. (c) Examples of raw multi-unit traces recorded with a 
+tungsten microelectrode used for A1 mapping (upper) or silicon probe used for 
+MGBv mapping (lower). Spikes were registered when signal amplitude exceeded 
+a threshold line set at 4 s.d. from the mean of a 5-s running average (indicated 
+by gray line). Scale bars represent 1 s and 0.1 mV. (d) Images of coronal section 
+through MGBv reacted for cytochrome oxidase. High-power image depicts the 
+location of two lesions made inside and outside of the MGBv boundary (black 
+outline). Scale bars represent 0.5 mm. (e) Percentage of recording sites of all 
+best frequency measurements from normally reared mouse MGBv (open bars;  
+n = 9, 19, 10, 17, 41 and 5 sites for each of the six categories) and those 
+reared with 7-kHz tones between P11–15 (gray bars; n = 21, 21, 14, 31,  
+50 and 14 sites). (f) Best frequency values (mean (cid:111) s.e.m.) measured at lateral 
+(0.05 mm past the lateral MGBv boundary) or medial loci (0.2 mm past the 
+lateral MGBv boundary), as well as averaged overall.
+
+VOLUME 14 | NUMBER 9 | SEPTEMBER 2011  NATURE NEUROSCIENCE
+
+© 2011 Nature America, Inc.  All rights reserved.© 2011 Nature America, Inc.  All rights reserved.Figure 3  Topography and developmental window for A1 response 
+strengthening at P12–15. (a) Schematic of the six MGBv stimulus (stim) 
+sites (colored arrows) and 18 L4 locations analyzed in A1. Sample traces 
+of (cid:36)F/F at two different L4 loci (8 and 13) as a function of time following 
+a 1-ms stimulus pulse to MGBv site 1 (blue) or 5 (yellow). P12 control 
+mouse. Scale bars represent 100 ms and 0.1% (cid:36)F/F. (b) Normalized 
+(norm) peak (cid:36)F/F as a function of stimulus site for three age groups (mean  
+(cid:111) s.e.m.; P8–12, n = 13; P13–15, n = 16; P16–20, n = 16). *P < 0.05,  
+**P < 0.01 (t test) between dark gray and black. (c) Peak (cid:36)F/F location  
+in L4 as a function of MGBv stimulus site. Inset, topographic slope  
+(mean (cid:111) s.e.m.) for the three age groups.
+
+responses were similar across stimulus sites (Fig. 3b). Notably, the 
+adjustment of thalamocortical response strength occurred in 3 d, 
+between P12 and P15, coinciding with the emergence of adult-like 
+A1 neural response thresholds for airborne sound transmission6,16. 
+We validated these thalamocortical modifications over development 
+at synaptic resolution by direct patch-clamp recording from upper L4 
+pyramidal neurons in mice before P12 and comparing the results with 
+those from mice after P15 (Supplementary Fig. 3).
+
+Notably, the mapping of peak response in L4 as a function of MGBv 
+stimulus site did not change during the developmental period that we 
+studied (P8–20). As indicated by the linear relation of peak (cid:36)F/F position 
+in L4 to MGBv input (topographic slope; Fig. 3c), an orderly spatial layout 
+of this pathway was already present before hearing onset16, even as con-
+nection strengths were still maturing across the map (Fig. 3b).
+
+A critical period for thalamocortical connectivity
+Normal acoustic experience therefore did not modify the intrinsic 
+organization of thalamocortical input present at hearing onset. In 
+contrast, if the mice were exposed early to an abnormal acoustic  
+environment,  the  topography  was  markedly  altered.  Maximal  A1 
+responses along the rostro-caudal L4 axis in P16–20 mice were con-
+centrated near a single, middle MGBv input after continuous exposure 
+to 7-kHz tone pips from P8 (Fig. 4a,b). Although the strength of 
+a
+
+1.0
+
+1.0
+
+7 kHz exposed
+
+Control
+
+/
+
+F
+F
+∆
+
+ 
+.
+
+m
+r
+o
+N
+
+0.5
+
+0
+
+/
+
+F
+F
+∆
+
+ 
+.
+
+m
+r
+o
+N
+
+Caudal
+A1
+
+L4 location
+
+Rostral
+A1
+
+0.5
+
+0
+
+Caudal
+A1
+
+L4 location
+
+Rostral
+A1
+
+1.0
+
+Control
+
+1.0
+
+7 kHz exposed
+
+/
+
+F
+F
+∆
+
+ 
+.
+
+m
+r
+o
+N
+
+0.5
+
+0
+
+Caudal
+A1
+
+L4 location
+
+Rostral
+A1
+
+Caudal
+A1
+
+L4 location
+
+Rostral
+A1
+
+/
+
+F
+F
+∆
+ 
+k
+a
+e
+p
+
+ 
+f
+
+o
+
+ 
+
+n
+o
+
+i
+t
+
+a
+c
+o
+
+l
+ 
+
+4
+L
+
+e
+
+Control
+7 kHz 
+
+5
+
+6
+
+20
+
+l
+
+a
+r
+t
+s
+o
+R
+
+14
+
+10
+
+1
+
+6
+
+2
+
+1
+
+l
+
+a
+d
+u
+a
+C
+
+l
+
+i
+
+e
+p
+o
+s
+ 
+c
+h
+p
+a
+r
+g
+o
+p
+o
+
+0T
+
+*
+
+e
+p
+o
+S
+
+l
+
+2
+1
+0
+
+3
+
+2
+MGBv stimulus site
+
+4
+
+5
+
+6
+
+#
+
+#
+
+**
+
+None P8–11 P12–15 P16–19
+7-kHz exposure time window
+
+0
+
+1
+
+8
+
+10
+P8–11
+
+3
+
+4
+
+2
+MGBv stimulus site
+Postnatal day
+16
+12
+
+14
+
+18
+
+P12–15
+
+P16–19
+
+7-kHz exposure
+
+Recording
+
+0.5
+
+0
+
+1.0
+
+0.5
+
+b
+
+/
+
+F
+F
+∆
+
+ 
+.
+
+m
+r
+o
+N
+
+c
+
+)
+
+/
+
+m
+r
+o
+n
+(
+ 
+F
+F
+∆
+ 
+k
+a
+e
+P
+
+d
+
+a
+
+Stim
+site 1
+
+Stim
+site 5
+
+/
+
+F
+F
+∆
+
+b
+
+1.0
+
+)
+
+/
+
+m
+r
+o
+n
+(
+ 
+F
+F
+∆
+ 
+k
+a
+e
+P
+
+**
+
+0.5
+
+0
+
+1
+
+14
+
+l
+
+a
+r
+t
+s
+o
+R
+
+n
+o
+
+i
+t
+
+a
+c
+o
+
+l
+ 
+
+4
+L
+
+/
+
+F
+F
+∆
+ 
+k
+a
+e
+p
+
+ 
+f
+
+o
+
+10
+
+1
+
+10
+
+L4 locations
+
+18
+
+c
+
+Hippocampus
+
+1
+2
+MGBv
+3
+4
+5
+6
+
+LGB
+
+Lateral
+
+Stimulus sites
+
+Caudal
+
+6
+
+l
+
+a
+d
+u
+a
+C
+
+1
+
+A R T I C L E S
+
+**
+
+**
+
+*
+
+*
+
+P8–12
+P13–15
+P16–20
+
+2
+
+3
+
+4
+
+5
+
+6
+
+e
+p
+o
+
+2
+1
+0S
+
+l
+
+2
+
+3
+
+4
+
+5
+
+6
+
+MGBv stimulus site
+
+cortical  responses  retained  homogeneity  across  stimulus  sites,  a 
+clear flattening of topographic slope was evident in L4 (Fig. 4c). This 
+direct  functional  rearrangement  of  thalamocortical  response  was 
+confirmed by comparing the distributions of input strength for two 
+independent stimulus sites (1 and 6) (control, P = 0.003; exposed,  
+P  =  0.181;  ANOVA),  as  well  as  the  gradient  of  peak  locations  
+(P = 0.029, ANOVA), in control and exposed mice.
+
+We exposed mice to 7-kHz tones for shorter, 3-d intervals (P8–11, 
+P12–15 and P16–19; Fig. 4d) and found significant topographic reor-
+ganization only when mice were exposed from P12–15 (topographic 
+slope at P20, no exposure = 1.42 (cid:111) 0.37, n = 9; versus P12–15, expo-
+sure = 0.07 (cid:111) 0.13, n = 8; P = 0.026, Mann-Whitney U test; Fig. 4e). 
+This identified a critical period for mouse auditory thalamocortical 
+topography that coincides with the normal time window during which 
+this connection is maturing (Fig. 3b) and for tonotopic map changes 
+in vivo (Fig. 1). Topographic remapping was not restricted to 7 kHz, 
+as passive tone exposure to 20 kHz (from P12–15) produced a similar 
+topographic reorganization at a correspondingly more rostral A1 
+locus (Supplementary Fig. 4).
+
+Laminar shift of connectivity during the critical period
+We further examined the emergence of A1 responses along a cortical 
+column during postnatal development. As expected, the maximum 
+response amplitude to MGBv stimulation was located in upper L4 at 325 (cid:111)  
+75 (cid:77)m from the pial surface for all of the ages that we studied (Fig. 5a). 
+Although each thalamocortical preparation was unique, the variability 
+in geometry and size of various anatomical hallmarks relative to a refer-
+ence point (the rostral tip of the hippocampus; Supplementary Fig. 5) 
+was small across the developmental period studied (Supplementary 
+Fig. 5). Notably, changes in total cortical thickness across these ages 
+were negligible (<10 (cid:77)m per bin) with respect to the individual bin 
+sizes.  However,  the  location  of  shortest  response  latency  shifted  
+
+Figure 4  Critical period for experience-dependent topographic refinement  
+at P12–15. (a,b) Normalized (norm.) maximal (cid:36)F/F across L4 loci in 
+response to different MGBv stimulus sites for P16–20 mice raised in a 
+normal acoustic environment (left, n = 16) or exposed to a 7-kHz tone from 
+P8 (right, n = 13). Color code indicates MGBv stimulus site as in Figure 3a. 
+(c) Normalized peak (cid:36)F/F, defined as the maximum (cid:36)F/F amplitude 
+across all L4 loci, and location of L4 peak (cid:36)F/F in response to different 
+MGBv stimulus site for P16–20 control and 7-kHz exposed mice. Inset, 
+topographic slopes. Data are mean (cid:111) s.e.m., *P < 0.05 (t test). (d) Schedule 
+of tone exposure windows and recording (arrows). (e) Topographic slopes 
+(median (cid:111) s.e.m.) for control mice (none, n = 9) and those exposed to 7 kHz 
+during three time windows (P8–11, n = 8; P12–15, n = 8; P16–19, n = 5). 
+#P < 0.05, **P < 0.01 (Mann-Whitney U test).
+
+NATURE NEUROSCIENCE  VOLUME 14 | NUMBER 9 | SEPTEMBER 2011 
+
+1191
+
+© 2011 Nature America, Inc.  All rights reserved.© 2011 Nature America, Inc.  All rights reserved.A R T I C L E S
+
+Figure 5  Columnar shift of thalamocortical connectivity up to L4 through 
+the critical period. (a) Nissl stain of a P20 thalamocortical slice for columnar 
+analysis (red boxes). Black arrows denote approximate borders between layers 
+I/II, layers IV/V and layer VI/white matter. Scale bar represents 125 (cid:77)m. 
+Normalized (norm.) (cid:36)F/F and latency with distance from pia for three age 
+groups (mean (cid:111) s.e.m.; P8–12, n = 13; P13–15, n = 15; P16–20, n = 11). 
+*P < 0.05, **P < 0.01 (t test) between dark gray and black. (b) Sample 
+upper L4 cortical response at P10 in normal (black) and high X2+ (green) 
+ACSF. Scale bars represent 100 ms and 0.2% (cid:36)F/F. Response reduction 
+(median (cid:111) s.e.m.) in high X2+ for three age groups (P8–12, n = 6; P13–15,  
+n = 8; P16–20, n = 4). #P < 0.05 (Mann-Whitney U test).
+
+significantly upward along the column over the course of the critical 
+period for plasticity (minimum latency site, P8–11 = 900 (cid:111) 75 (cid:77)m, 
+P16–20 = 325 (cid:111) 75 (cid:77)m, P < 0.0001, t test; Fig. 5a). This was true across 
+the entire rostro-caudal extent of A1 (Supplementary Fig. 6).
+
+Moreover, when polysynaptic activity was weakened in a modified 
+(high divalent cation, X2+) artificial cerebrospinal fluid (ACSF)11, the  
+strong signal observed in upper L4 was significantly reduced at P8–12,  
+but not in older animals ((cid:36)F/Fnormal – (cid:36)F/Fhigh x(cid:18)(cid:11))/((cid:36)F/Fnormal):  
+P8–12,  0.40  (cid:111)  0.13,  n  =  6;  versus  P13–15,  0.01  (cid:111)  0.06,  n  =  8,  
+P = 0.020; versus P16–20, 0.01 (cid:111) 0.05, n = 4, P = 0.038, Mann-Whitney 
+U test; Fig. 5b). Tone exposure did not affect this upward translocation 
+of direct thalamocortical input to L4, as there was little reduction of 
+peak signal in high divalent cation ACSF for mice that were passively 
+exposed to 7 kHz (P16–20 = 0.11 (cid:111) 0.19, n = 4). These results indicate 
+that thalamic inputs initially target their synapses to deeper regions, 
+most probably the subplate (a transient zone in the developing neo-
+cortex)17–19, before invading L4 during the critical period.
+
+Forebrain-selective gene deletion accelerates plasticity
+To establish a thalamocortical mechanism for this critical period 
+plasticity, we analyzed a mouse model carrying a forebrain-specific 
+gene deletion of Icam5, which is an intercellular adhesion molecule 
+that is expressed exclusively in the telencephalon20 and is sorted into 
+dendrites of pyramidal cells to slow spine maturation21 (Fig. 6a). 
+Notably, Icam5 was not expressed in the MGBv or other subcortical 
+structures in wild-type animals, and was absent throughout the brain 
+of Icam5−/− mice (Fig. 6b).
+
+Consistent with Icam5 being a negative regulator of spine mat-
+uration, peak A1 response strength in upper L4 of Icam5−/− mice 
+matured rapidly to a homogeneous distribution in just 1 d, from P12 
+to P13 (Fig. 6c), unlike the typical 3 d that is needed in wild-type  
+mice  (Fig.  3b).  By  P13,  Icam5−/−  mice  already  exhibited  a  fully 
+
+Icam5–/–
+
+)
+
+/
+
+m
+r
+o
+n
+(
+ 
+F
+F
+∆
+ 
+k
+a
+e
+P
+
+d
+
+c 1.0
+
+0.5
+
+0
+
+2
+
+1
+
+l
+
+i
+
+e
+p
+o
+s
+ 
+c
+h
+p
+a
+r
+g
+o
+p
+o
+
+0T
+
+a
+
+Axon
+
+Dendrite
+
+b
+
+Control
+
+Icam5–/–
+
+1192 
+
+**
+
+**
+
+**
+
+P8–12
+P13–15
+P16–20
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+MGBv stimulus site
+*
+
+**
+
+*
+*
+
+P12–13
+
+P13–14
+
+P14–15
+
+–/–
+
+None W T
+None Icam5
+
+P12–13 W T
+
+Icam5 –/–
+7-kHz exposure time window
+
+a
+
+I
+
+II
+III
+IV
+
+V
+
+VI
+
+b
+
+*
+**
+
+**
+**
+
+*
+
+16
+
+Latency (ms)
+
+24
+
+#
+
+#
+
+P8–12
+P13–15
+P16–20
+
+0
+
+200
+
+400
+
+600
+
+800
+
+0
+
+200
+
+400
+
+600
+
+800
+
+)
+
+m
+µ
+(
+ 
+
+i
+
+ 
+
+a
+p
+m
+o
+r
+f
+ 
+
+e
+c
+n
+a
+
+t
+s
+D
+
+i
+
+1,000
+
+0
+
+0.5
+
+Norm. ∆F/F
+
+1,000
+
+1.0
+
+8
+
+Normal ACSF
+High X2+ ACSF
+
+n
+o
+
+i
+t
+c
+u
+d
+e
+r
+ 
+F
+F
+∆
+
+/
+
+ 
+
+F
+S
+C
+A
++
+2
+X
+h
+g
+h
+
+ 
+
+i
+
+ 
+
+n
+
+i
+
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+
+Stimulus
+
+P8–12
+
+P13–15 P16–20
+
+mature amplitude distribution that was comparable to that of P16 
+wild-type mice (Supplementary Fig. 7a). Moreover, the upward shift 
+of columnar response latencies occurred faster in Icam5−/− mice and 
+was also mature by P13 (Supplementary Fig. 7b). These animals 
+exhibit stronger long-term potentiation and hippocampal learning 
+behavior20, suggesting that a similar mechanism may be at work for 
+thalamocortical synapses in L4.
+
+As the period of normal circuit maturation corresponds to the criti-
+cal period for topographic changes in wild-type mice (Figs. 3b and 4e), 
+we tested whether plasticity would also be accelerated in Icam5−/− mice. 
+The topography of Icam5−/− mice was identical to that of wild-type 
+mice when they were raised in normal acoustic environments (Fig. 6d).  
+However, exposing the mice to 7-kHz tones for just 1 d (P12–13)  
+significantly altered topography at P16–20 in Icam5−/− mice, but not 
+in wild-type mice (topographic slope: wild type, 0.86 (cid:111) 0.20, n = 9; 
+Icam5−/−, 0.23 (cid:111) 0.10, n = 7; P = 0.014, Mann-Whitney U test; Fig. 6d). 
+Even 2 d of exposure were insufficient to yield topographic changes in 
+wild-type mice (P12–14 or P13–15; Supplementary Fig. 7c).
+
+Exposing Icam5−/− mice between P13–14 also altered topography, 
+but to a lesser extent than at P12–13 (topographic slope: Icam5−/− 
+not exposed, 0.97 (cid:111) 0.03, n = 9; Icam5−/− exposed between P13–14, 
+0.25 (cid:111) 0.22, n = 9; P = 0.048, Mann-Whitney U test; Fig. 6d). Even 
+later exposure between P14–15 (Fig. 6d) or before the typical critical 
+period (P8–11, Supplementary Fig. 7c) did not cause any significant 
+change in the topographic organization of Icam5−/− mice (P = 0.70  
+or 0.22 between non-exposed and P14–15 or P8–11 exposed, respec-
+tively; Mann-Whitney U test). Thus, the critical period itself is not 
+shifted earlier in time, but is instead shortened in duration in the absence 
+of forebrain-specific Icam5. These findings underscore indications from 
+
+Figure 6  Forebrain-specific gene deletion accelerates thalamocortical 
+plasticity. (a) Icam5 normally slows dendritic spine maturation21. (b) Icam5 
+expression at P13 in the auditory thalamocortical slice. Note the absence 
+of immunostaining in control MGBv and throughout Icam5−/− brain. Scale 
+bars represent 1 mm. (c) Normalized (norm.) peak (cid:36)F/F as a function of 
+MGBv stimulus site in Icam5−/− mice for three age groups (median (cid:111) s.e.m.; 
+P8–12, n = 8; P13–15, n = 10; P16–20, n = 9). **P < 0.01 (Mann-Whitney 
+U test) between dark gray and black. (d) Topographic slope (median (cid:111) s.e.m.) 
+for mice without (none; wild type (WT), n = 15; Icam5−/−, n = 9) or after  
+7-kHz exposure between P12–13 (wild type, n = 9; Icam5−/−, n = 7),  
+P13–14 (Icam5−/−, n = 9) or P14–15 (Icam5−/−, n = 9). *P < 0.05  
+(Mann-Whitney U test).
+
+VOLUME 14 | NUMBER 9 | SEPTEMBER 2011  NATURE NEUROSCIENCE
+
+© 2011 Nature America, Inc.  All rights reserved.© 2011 Nature America, Inc.  All rights reserved.a
+
+b
+
+Apical
+
+y
+t
+i
+s
+n
+e
+d
+e
+n
+p
+S
+
+ 
+
+i
+
+)
+
+1
+–
+m
+µ
+(
+
+Basal
+
+c
+
+WT
+
+Icam5–/–
+
+y
+t
+i
+s
+n
+e
+d
+e
+n
+p
+S
+
+ 
+
+i
+
+)
+
+1
+–
+m
+µ
+(
+
+0.6
+
+0.4
+
+0.2
+
+0
+
+0.6
+
+0.4
+
+0.2
+
+0
+
+P13 WT
+P13 Icam5–/–
+**
+
+**
+
+Mush-
+room
+
+Stubby
+
+P13 WT
+P16 WT
+
+**
+
+All
+
+spines
+
+**
+
+Mush-
+room
+
+Stubby
+
+All
+
+spines
+
+Figure 7  Stubby spine density increases through the critical period.  
+(a) Sample DiI-labeled upper L4 pyramidal cell. The white circle denotes a 
+radius of 100 (cid:77)m around the somata, in which spines were counted. Scale 
+bar represents 20 (cid:77)m (top). High-power image of dendrites at P13 revealing 
+mushroom (yellow arrows) and stubby spines (green arrows). Scale bar represents 
+5 (cid:77)m (bottom). (b) Spine density in P13 wild-type (n = 6) and Icam5−/− mice  
+(n = 7 neurons). (c) Spine density (median (cid:111) s.e.m.) in P13 (n = 6) and P16 
+wild-type mice (n = 7 neurons). **P < 0.01 (Mann-Whitney U test).
+
+wild-type mice that the tonotopic critical period directly reflects a tran-
+sition in the maturational state of thalamocortical connections22.
+
+Stubby spine density increases through the critical period
+Given that Icam5 slows filopodia-to-spine transitions21, we examined 
+whether enhanced spinogenesis might contribute to the accelerated 
+critical period plasticity in Icam5−/− mice. Dendritic spines in L4 in 
+a 100-(cid:77)m radius around cortical pyramidal cell somata have been 
+reported to receive direct thalamocortical input (Fig. 7a)23. Spines in 
+this region were significantly more dense at P13 in Icam5−/− mice than 
+in wild-type mice (spine density: wild type, 0.32 (cid:111) 0.02 (cid:77)m−1, n = 6 
+neurons and 1,777 spines; Icam5−/−, 0.42 (cid:111) 0.02 (cid:77)m−1, n = 7 neurons 
+and 2,567 spines; P = 0.0012, Mann-Whitney U test; Fig. 7b).
+
+Notably, this increase was significant only for stubby spines (wild-
+type density, 0.24 (cid:111) 0.02 (cid:77)m−1, n = 1,277 spines; Icam5−/− density, 0.33 (cid:111)  
+0.02 (cid:77)m−1, n = 1,992 spines; P = 0.001, Mann-Whitney U test), which are 
+preferentially targeted by MGBv thalamic afferents23. Similarly in wild-type 
+mice, a later increase in stubby spine density was eventually observed by 
+P16, marking the end of their typical critical period for tonotopic plasticity 
+(0.44 (cid:111) 0.03 (cid:77)m−1, n = 7 neurons and 2,534 spines; Fig. 7c). Thus, dendritic 
+spine maturation on thalamo-recipient cortical neurons is a likely locus 
+defining the temporal window for topographic map plasticity in A1.
+
+DISCUSSION
+We identified with ever-finer resolution a developmental plastic-
+ity occurring at thalamocortical connections related to tonotopy in 
+A1. Accelerated refinement in the absence of the forebrain-specific 
+molecule Icam5 and the stability of MGBv in vivo on tone exposure 
+both support the view that this critical period reflects dendritic spine 
+maturation on L4 neurons in A1.
+
+Previously, tonotopy has primarily been assessed by micro-electrode 
+recording of spiking activity in response to a given tone5,12. The result-
+ant best frequency maps exhibited relatively precise point-to-point  
+correlation  between  tone  frequency  and  its  preferred  site  in  the  
+cortical map (Figs. 1 and 2). In contrast, VSDI in a slice preparation 
+revealed that stimulation of a point in MGBv recruits peak activity 
+
+A R T I C L E S
+
+from a broad swath of the A1 map that reflects primarily subthreshold, 
+monosynaptic activation rather than polysynaptic intra-cortical exci-
+tation (Fig. 5b). The same discrepancy is observed in rodent barrel 
+cortex, where in vivo microelectrode recordings have suggested that 
+there is a highly focused mapping between a single whisker and its 
+corresponding barrel24, whereas in vivo VSDI or intrinsic signal imag-
+ing have shown that stimulation of a single whisker can evoke sub-
+stantial activity across a much broader area of the barrel cortex25–27.
+Both  somatosensory  imaging  studies  and  our  own  data  in  A1 
+(ref. 13) confirm that the spatial peak of the subthreshold activity 
+profile closely corresponds to the map of preferred stimuli obtained 
+with microelectrode mapping. This supports our use of VSDI peak 
+and its topographic slope to track developmental and experiential 
+changes in thalamocortical function and to relate these changes to 
+observations made through conventional mapping of best frequencies  
+(Figs. 1 and 2). At the single-cell level, direct whole-cell recordings 
+of synaptic strength across ages further corroborated the use of VSDI 
+peak measurements (Supplementary Fig. 3). Our imaging approach 
+therefore provides the appropriate spatial resolution for bridging the 
+gap between in vivo network and in vitro cellular observations of 
+plasticity mechanism in the developing auditory system.
+
+With its submillisecond time resolution, VSDI further revealed 
+the sequence of activation in a given zone; for example, across the 
+topographic extent of A1 (ref. 13) or along a cortical column. This 
+technique  can  therefore  resolve  fast  monosynaptic  connections 
+from  the  thalamus  and  slower,  polysynaptic  intracortical  inputs. 
+During maturation17,19, deeper regions consisting of the subplate, a 
+ transient neocortical structure present in several cortical areas early 
+in development, are largely replaced by the cortical plate, in particular 
+L6. Subplate neurons send strong excitatory projections up to L4, 
+which may regulate activity-dependent processes that catalyze the 
+ maturation and plasticity of the developing cortex19.
+
+At the cellular level, the mechanism of plasticity is related to stubby 
+spine maturation proximal to the soma. These spines have been iden-
+tified as the direct targets of thalamocortical axons23 and may under-
+lie the change in thalamocortical connection strength. The critical 
+period profile can be manipulated by acting on this process directly. 
+Our results support the idea that there is accelerated morphologi-
+cal and functional plasticity in the absence of Icam5. Our results are 
+consistent with the spine pruning and regrowth that are characteristic 
+of other critical periods, such as in the visual cortex28. Conversely, in 
+the latter system, GABA circuits have been implicated in the onset, 
+and various structural brakes, such as peri-neuronal nets or myelin-
+related signaling, in the closure of plasticity29. It will be interesting to 
+determine the extent to which these mechanisms apply in A1.
+
+Consistent  with  observations  made  for  brainstem  tonotopy30, 
+thalamocortical topography was already organized at hearing onset 
+(Fig. 3). Thus, topographic organization is established before sensory 
+experience. By VSDI of subthreshold input, topography in vitro is well 
+correlated with tonotopy in vivo13. As we found, both were modified 
+during a brief critical period from P12–15 in mice exposed to abnor-
+mal acoustic environments. In rats, such plasticity is known to impair 
+the perception of the over-represented frequency while improving the 
+discrimination of immediately adjacent frequencies31.
+
+The critical period for topographic plasticity defined here can be pre-
+dicted by examining the day-by-day development of connectivity in nor-
+mally reared animals. During this maturation process, the direct cortical 
+targets of thalamic input shift from deeper regions to L4 (Fig. 5), where 
+the number of stubby spines nearest the soma increased significantly  
+(P = 0.0004, Mann-Whitney U test). The temporal overlap of these changes 
+in L4 may largely contribute to the in vivo tonotopic map reorganization 
+
+NATURE NEUROSCIENCE  VOLUME 14 | NUMBER 9 | SEPTEMBER 2011 
+
+1193
+
+© 2011 Nature America, Inc.  All rights reserved.© 2011 Nature America, Inc.  All rights reserved.A R T I C L E S
+
+following passive tone exposure (Fig. 1), given the lack of tonotopic map 
+changes in the MGBv (Fig. 2). However, this does not preclude additional 
+changes at other intracortical sites during the critical period, such as poten-
+tial refinement of local excitatory-inhibitory balance32,33. Detailed analysis 
+of the developing cortical microcircuit, as has already been presented for 
+the mature auditory cortex34, will be informative.
+
+Isolating a developmental plasticity at the thalamocortical connec-
+tion does not preclude potential changes in other subcortical regions 
+reflecting auditory experience. Indeed, auditory plasticity has been 
+reported in the midbrain and brainstem circuits, but has typically 
+been associated with sensorineural hearing loss30,35 or prolonged 
+stimulus manipulations36–39. It has yet to be determined whether 
+subcortical reorganization occurs there de novo or is brought about 
+by changes first arising in A1 that are then reflected in midbrain or 
+brainstem nuclei via corticofugal inputs40,41. The auditory cortex itself 
+is known to exhibit sequential critical periods beyond tonotopy6,42,43. 
+For example, following the closure of a critical period for tonotopic 
+map reorganization, we continued to observe rearing-induced changes 
+in tuning bandwidth. Notably, the latter changes were observed not 
+only in A1, but also in the MGBv (Supplementary Fig. 1). Thus, it will 
+be important to understand how subsequent stages of plasticity are 
+related to the initial refinement of thalamocortical connections.
+
+METHODS
+Methods and any associated references are available in the online  
+version of the paper at http://www.nature.com/natureneuroscience/.
+Note: Supplementary information is available on the Nature Neuroscience website.
+ACKNOWLEDGMENTS
+Icam5−/− mice and antibody were kindly provided by M. Mishina (University of 
+Tokyo) and Y. Yoshihara (RIKEN BSI), respectively. We thank M. Nakamura,  
+A. Takesian, N. Gogolla, E.-J. Yang, K. Quast, M. Marcotrigiano, M. Kelly, R. Pavlyuk,  
+B. Jones O’Brien and V. Khatri for technical assistance and comments. This work 
+was supported by Core Research for Evolutional Science and Technology, Japan 
+Science and Technology Agency (T.K.H.), the Human Frontiers Science Program 
+(T.K.H.), the National Institute on Deafness and Other Communication Disorders 
+(grant 009836, D.B.P.) and the Harvard Society of Fellows (T.R.B.).
+
+AUTHOR CONTRIBUTIONS
+T.R.B. performed all of the in vitro experiments and analysis. D.B.P. performed or 
+supervised the in vivo experiments and analysis. T.R.B., D.B.P. and T.K.H. designed 
+the study and wrote the paper.
+
+COMPETING FINANCIAL INTERESTS
+The authors declare no competing financial interests. 
+
+Published online at http://www.nature.com/natureneuroscience/. 
+Reprints and permissions information is available online at http://www.nature.com/
+reprints/index.html.
+
+ 
+
+1.  Hensch, T.K. Critical period regulation. Annu. Rev. Neurosci. 27, 549–579 (2004).
+2.  Keuroghlian,  A.S.  &  Knudsen,  E.I.  Adaptive  auditory  plasticity  in  developing  and 
+
+adult animals. Prog. Neurobiol. 82, 109–121 (2007).
+
+3.  Werker, J.F. & Tees, R.C. Speech perception as a window for understanding plasticity and 
+commitment in language systems of the brain. Dev. Psychobiol. 46, 233–251 (2005).
+4.  Sanes,  D.H.  &  Bao,  S.  Tuning  up  the  developing  auditory  CNS.  Curr.  Opin.  
+
+Neurobiol. 19, 188–199 (2009).
+
+5.  de Villers-Sidani, E., Chang, E.F., Bao, S. & Merzenich, M.M. Critical period window for 
+spectral tuning deﬁned in the primary auditory cortex (A1) in the rat. J. Neurosci. 27,  
+180–189 (2007).
+
+6.  Insanally, M.N., Kover, H., Kim, H. & Bao, S. Feature-dependent sensitive periods in the 
+
+development of complex sound representation. J. Neurosci. 29, 5456–5462 (2009).
+
+7.  King,  A.J.  &  Nelken,  I.  Unraveling  the  principles  of  auditory  cortical  processing: 
+
+can we learn from the visual system? Nat. Neurosci. 12, 698–701 (2009).
+
+8.  Wiesel,  T.N.  &  Hubel,  D.H.  Comparison  of  the  effects  of  unilateral  and  bilateral  eye 
+closure on cortical unit responses in kittens. J. Neurophysiol. 28, 1029–1040 (1965).
+9.  Hensch, T.K. Critical period plasticity in local cortical circuits. Nat. Rev. Neurosci. 6,  
+
+877–888 (2005).
+
+10. Winer,  J.A.,  Miller,  L.M.,  Lee,  C.C.  &  Schreiner,  C.E.  Auditory  thalamo-cortical 
+
+transformation: structure and function. Trends Neurosci. 28, 255–263 (2005).
+
+11. Cruikshank,  S.J.,  Rose,  H.J.  &  Metherate,  R.  Auditory  thalamocortical  synaptic 
+
+transmission in vitro. J. Neurophysiol. 87, 361–384 (2002).
+
+12. Zhang,  L.I.,  Bao,  S.  &  Merzenich,  M.M.  Disruption  of  primary  auditory  cortex  by 
+synchronous auditory inputs during a critical period. Proc. Natl. Acad. Sci. USA 99, 
+2309–2314 (2002).
+
+13. Hackett,  T.A.,  Rinaldi  Barkat,  T.,  O’Brien,  B.J.,  Hensch,  T.K.  &  Polley,  D.B.  Linking 
+topography to tonotopy in mouse auditory cortex. J. Neurosci. 31, 2983–2995 (2011).
+14. Winer, J.A., Sally, S.L., Larue, D.T. & Kelly, J.B. Origins of medial geniculate body 
+projections  to  physiologically  deﬁned  zones  of  rat  primary  auditory  cortex.  
+Hear. Res. 130, 42–61 (1999).
+
+15. Kaur, S., Rose, H.J., Lazar, R., Liang, K. & Metherate, R. Spectral integration in 
+primary auditory cortex: laminar processing of afferent input, in vivo and in vitro. 
+Neuroscience 134, 1033–1045 (2005).
+
+16. Alford, B.R. & Ruben, R.J. Physiological, behavioral and anatomical correlates of 
+the development of hearing in the mouse. Ann. Otol. Rhinol. Laryngol. 72, 237–247 
+(1963).
+
+17. Allendoerfer, K.L. & Shatz, C.J. The subplate, a transient neocortical structure: its 
+role in the development of connections between thalamus and cortex. Annu. Rev. 
+Neurosci. 17, 185–218 (1994).
+
+18. Kanold, P.O. & Luhmann, H.J. The subplate and early cortical circuits. Annu. Rev. 
+
+Neurosci. 33, 23–48 (2010).
+
+19. Zhao, C., Kao, J.P.Y. & Kanold, P.O. Functional excitatory microcircuits in neonatal 
+
+cortex connect thalamus and layer 4. J. Neurosci. 29, 15479–15488 (2009).
+
+20. Nakamura,  K.  et  al.  Enhancement  of  hippocampal  LTP,  reference  memory  and 
+sensorimotor gating in mutant mice lacking a telencephalon-speciﬁc cell adhesion 
+molecule. Eur. J. Neurosci. 13, 179–189 (2001).
+
+21. Matsuno,  H.  et  al.  Telencephalin  slows  spine  maturation.  J.  Neurosci.  26,  
+
+1776–1786 (2006).
+
+22. de  Villers-Sidani,  E.  et  al.  Manipulating  critical  period  closure  across  different 
+
+sectors of the primary auditory cortex. Nat. Neurosci. 11, 957–965 (2008).
+
+23. Richardson,  R.J.,  Blundon,  J.A.,  Bayazitov,  I.T.  &  Zakharenko,  S.S.  Connectivity 
+patterns  revealed  by  mapping  of  active  inputs  on  dendrites  of  thalamo-recipient 
+neurons in the auditory cortex. J. Neurosci. 29, 6406–6417 (2009).
+
+24. Simons, D.J. Response properties of vibrissa units in rat SI somatosensory neocortex. 
+
+J. Neurophysiol. 41, 798–820 (1978).
+
+25. Masino,  S.A.,  Kwon,  M.C.,  Dory,  Y.  &  Frostig,  R.D.  Characterization  of  functional 
+organization within rat barrel cortex using intrinsic signal optical imaging through 
+a thinned skull. Proc. Natl. Acad. Sci. USA 90, 9998–10002 (1993).
+
+26. Kleinfeld,  D.  &  Delaney,  K.R.  Distributed  representation  of  vibrissa  movement  in 
+the  upper  layers  of  somatosensory  cortex  revealed  with  voltage-sensitive  dyes.  
+J. Comp. Neurol. 375, 89–108 (1996).
+
+27. Petersen,  C.C.,  Grinvald,  A.  &  Sakmann,  B.  Spatiotemporal  dynamics  of  sensory 
+responses in layer 2/3 of rat barrel cortex measured in vivo by voltage-sensitive dye 
+imaging  combined  with  whole-cell  voltage  recordings  and  neuron  reconstructions. 
+J. Neurosci. 23, 1298–1309 (2003).
+
+28. Mataga,  N.,  Mizuguchi,  Y.  &  Hensch,  T.K.  Experience-dependent  pruning  of 
+dendritic  spines  in  visual  cortex  by  tissue  plasminogen  activator.  Neuron  44,  
+1031–1041 (2004).
+
+29. Morishita, H. & Hensch, T.K. Critical period revisited: impact on vision. Curr. Opin. 
+
+Neurobiol. 18, 101–107 (2008).
+
+30. Kandler, K., Clause, A. & Noh, J. Tonotopic reorganization of developing auditory 
+
+brainstem circuits. Nat. Neurosci. 12, 711–717 (2009).
+
+31. Han, Y.K., Köver, H., Insanally, M.N., Semerdjian, J.H. & Bao, S. Early experience 
+
+impairs perceptual discrimination. Nat. Neurosci. 10, 1191–1197 (2007).
+
+32. Dorrn, A.L., Yavan, K., Barker, A.J., Schreiner, C.E. & Froemke, R.C. Developmental 
+sensory  experience  balances  cortical  excitation  and  inhibition.  Nature  465,  
+932–936 (2010).
+
+33. Sun, Y.J. et al. Fine-tuning of pre-balanced excitation and inhibition during auditory 
+
+cortical development. Nature 465, 927–931 (2010).
+
+34. Oviedo,  H.V.,  Bureau,  I.,  Svoboda,  K.  &  Zador,  A.M.  The  functional  asymmetry  
+of  auditory  cortex  is  reﬂected  in  the  organization  of  local  cortical  circuits.  
+Nat. Neurosci. 13, 1413–1420 (2010).
+
+35. Harris,  J.A.  &  Rubel,  E.W.  Afferent  regulation  of  neuron  number  in  the  cochlear 
+nucleus: cellular and molecular analyses of a critical period. Hear. Res. 216–217, 
+127–137 (2006).
+
+36. Smith, Z.D., Gray, L. & Rubel, E.W. Afferent inﬂuences on brainstem auditory nuclei 
+of the chicken: n. laminaris dendritic length following monaural conductive hearing 
+loss. J. Comp. Neurol. 220, 199–205 (1983).
+
+37. Seidl, A.H. & Grothe, B. Development of sound localization mechanisms in the mongolian 
+gerbil is shaped by early acoustic experience. J. Neurophysiol. 94, 1028–1036 (2005).
+38. Sanes, D.H. & Constantine-Paton, M. Altered activity patterns during development 
+
+reduce neural tuning. Science 221, 1183–1185 (1983).
+
+39. Mogdans, J. & Knudsen, E.I. Site of auditory plasticity in the brain stem (VLVp) of the 
+
+owl revealed by early monaural occlusion. J. Neurophysiol. 72, 2875–2891 (1994).
+
+40. Yan, W. & Suga, N. Corticofugal modulation of the midbrain frequency map in the 
+
+bat auditory system. Nat. Neurosci. 1, 54–58 (1998).
+
+41. Bajo, V.M., Nodal, F.R., Moore, D.R. & King, A.J. The descending corticocollicular path-
+way mediates learning-induced auditory plasticity. Nat. Neurosci. 13, 253–260 (2010).
+42. Popescu, M.V. & Polley, D.B. Monaural deprivation disrupts development of binaural 
+
+selectivity in auditory midbrain and cortex. Neuron 65, 718–731 (2010).
+
+43. Razak,  K.A.,  Richardson,  M.D.  &  Fuzessery,  Z.M.  Experience  is  required  for  the 
+maintenance  and  reﬁnement  of  FM  sweep  selectivity  in  the  developing  auditory 
+cortex. Proc. Natl. Acad. Sci. USA 105, 4465–4470 (2008).
+
+1194 
+
+VOLUME 14 | NUMBER 9 | SEPTEMBER 2011  NATURE NEUROSCIENCE
+
+© 2011 Nature America, Inc.  All rights reserved.© 2011 Nature America, Inc.  All rights reserved.ONLINE METHODS
+In vivo electrophysiology. All experimental procedures were carried out accord-
+ing to Harvard and Vanderbilt University animal care and use guidelines. A1 and 
+MGBv recordings were made from the left hemisphere at P28–40. Mice were 
+brought to a surgical plane of anesthesia using a combination of pentobarbital 
+sodium (50 mg per kg of body weight followed by 10–15 mg per kg supplements as 
+needed) and chlorprothixene (0.2 mg). Multi-unit responses were recorded from 
+the middle cortical layers of A1 (420–440 (cid:77)m from pial surface) with epoxylite-
+coated tungsten microelectrodes (2.0 M(cid:55) at 1 kHz, FHC) and from MGBv with 
+16-channel silicon probes (177-(cid:77)m2 contact area, 50-(cid:77)m inter-contact separa-
+tion, Neuronexus Technologies). Frequency response areas were measured with 
+pseudo-randomly presented tone pips of variable frequency (5.5 to 45.3 kHz in 
+0.1-octave increments, 20-ms duration, 5 ms raised cosine onset/offset ramps, 
+0.6-s intertrial interval, one presentation per unique tone/level combination) and 
+level (0–60 dB SPL in 5-dB increments) delivered from a free field electrostatic 
+speaker placed 12 cm from the contralateral ear.
+
+Best frequency was defined for each recording site as the tone frequency that 
+evoked the greatest number of spikes. A1 was readily identified by a clear caudal-
+to-rostral low-to-high best frequency gradient and was bounded by sharp best 
+frequency reversals or unresponsive sites as described previously13,44. A topo-
+graphic analysis of best frequencies was achieved by dividing the map into equal 
+thirds along the caudal-to-rostral extent and separately analyzing best frequen-
+cies in each sector (Figs. 1f,g and 2f). No significant differences were found in 
+the spatial sampling density in each sector of the map, justifying comparisons of 
+overall best frequency distributions between groups (P = 0.56 for P11–15 versus 
+no exposure and P = 0.29 for P16–20 versus no exposure, (cid:67)2 test).
+
+For MGBv, a multi-channel silicon probe was inserted under stereotaxic  
+guidance at the same dorsoventral angle used for the brain slice preparation to 
+effectively isolate it from other thalamic subdivisions. This was confirmed by 
+carefully noting a reversal in the best frequency gradient marking the medial 
+edge of MGBv and by post mortem reconstruction of electrode tracks and lesion 
+sites according to previously described methods13.
+
+Acute auditory thalamocortical slice preparation. C57BL/6J (Jackson Labs) or 
+Icam5−/− mice (P8–20, courtesy of M. Mishina, University of Tokyo) were rapidly 
+decapitated without anesthesia and placed in ice-cold ACSF. Slices were sectioned 
+on a vibratome (Microm HM 650V, Thermo Scientific) according to a previously 
+described method11. Briefly, 600-(cid:77)m-thick horizontal slices with the lateral end 
+raised 15°, were cut in ice-cold ACSF and incubated at 35 °C for at least 15 min, 
+before returning to 20–22 °C. One left hemisphere slice was used per animal. The 
+ACSF contained 125 mM NaCl, 25 mM glucose, 25 mM NaHCO3, 2.5 mM KCl, 
+2 mM CaCl2, 1.25 mM NaH2PO4 and 1 mM MgCl2 (315–328 mOsm).
+VSDI. The voltage-sensitive dye Di-4-ANEPPS (Invitrogen catalog #D-1199), 
+ dissolved at 0.01 mg ml−1 in dimethylsulfoxide stock solution, was diluted 
+(0.6 (cid:77)l ml−1) in ACSF to a final solution of 5 (cid:77)g l−1 Di-4-ANEPPS. Slices 
+were incubated for at least 90 min before transfer to an ACSF (20–22 °C) 
+recording chamber. Slices were imaged using an Olympus MVX10 microscope 
+with 1× 0.25 numerical aperture objective. Excitation light from a shuttered 
+150-W  halogen  lamp  (MHF-G150LR,  Moritex)  was  band-pass  filtered  
+(515 and 535 nm) and reflected toward the sample by a 570-nm dichroic 
+ mirror. Emitted fluorescence, reflecting a change in potential across neuronal 
+membranes45,46 (Supplementary Fig. 3), was long-pass filtered (590 nm) and 
+imaged using a MiCam Ultima CMOS-based camera (SciMedia). Fluorescent 
+changes (1-ms frame rate for 512-ms periods) were averaged across ten trials 
+and integrated across different regions of interest containing 5 × 5 pixels 
+ covering 125 × 125 (cid:77)m by spatial averaging and across different trials using 
+MiCam Ultima analysis software.
+
+Individual  time  course  traces  were  subsequently  exported  to  Igor  Pro 
+(WaveMetrics) to combine data for a number of slices. Fluorescence change 
+was normalized to resting fluorescence ((cid:36)F/F0). Stimulation was controlled by a 
+programmable pulse generator (MiCam Ultima software, SciMedia) linked to a 
+constant current stimulus isolation unit (Iso-Flex, A.M.P.I.). Discrete sites in the 
+MGBv were activated with an ACSF-filled patch pipette (0.5 mA, 1-ms pulse) at 
+100 ms after recording onset.
+
+Response amplitude was defined as maximum fluorescence change ((cid:36)F/F) 
+per trial at a given region of interest. Peak amplitude was defined as maximum 
+
+response amplitude across all L4 locations. Variations in daily preparation were 
+normalized by slice; all signals were divided by the maximum change in fluores-
+cence measured in a set of experiments:
+
+Normalized (cid:36)
+
+F F
+/
+
+(cid:29)
+
+(cid:36)
+F F
+/
+(cid:8)
+(cid:36)
+F F
+max
+/
+
+(cid:9)
+
+Response latency was defined as the time elapsed from stimulus pulse to half-
+maximal signal amplitude. As VSDI reports relative changes in fluorescence as 
+a function of membrane potential fluctuation45, the absolute changes in fluores-
+cence might reflect a number of technical, as well as biological, considerations 
+(such as differential staining and transparency). Thus, our VSDI results are pre-
+sented as normalized signals for comparison across ages and conditions.
+
+The strongest signals as a function of MGBv stimulus site were taken from 
+regions of interest along the rostro-caudal axis of A1 at a constant distance from an 
+anatomical landmark chosen as reference (most rostral point X of hippocampus 
+in Supplementary Fig. 5) and at constant depth from the pia, corresponding 
+to upper L4 on the basis of Nissl stains (Fig. 5a), covering a total distance of  
+2,250 (cid:77)m. The stimulating electrode was positioned on the rostral MGBv at 
+six discrete positions spaced at 100-(cid:77)m intervals along the medio-lateral axis  
+(landmark 4 for stimulus site 1; Supplementary Fig. 5)13.
+
+For columnar analysis, regions of interest in which the signal in upper L4 
+was strongest were chosen along the medio-lateral A1 axis orthogonal to the 
+pia, for a total distance of 1,000 (cid:77)m. The stimulating electrode was placed in the 
+most rostral part of the MGBv in which the stimulus could evoke the strongest 
+response in A1 (landmark 5; Supplementary Fig. 5). To assess any polysynaptic 
+contribution, we used a modified ACSF with high divalent cation (X2+) content11: 
+115 mM NaCl, 25 mM glucose, 25 mM NaHCO3, 2.5 mM KCl, 7.2 mM CaCl2 
+and 4.2 mM MgCl2 (315–325 mOsm). To confirm the synaptic nature of the 
+response, we added 40 (cid:77)M #(−)-2-amino-5-phosphonovaleric acid and 10 (cid:77)M 
+6-cyano-7-nitroquinoxaline-2,3-dione to the ACSF at the end of most experi-
+ments (Supplementary Fig. 2b).
+
+Sound exposure. Subsets of mouse pups and mothers were placed in a sound-
+attenuating chamber (IAC) and exposed to 7- or 20-kHz tones (100-ms pulses 
+at 5 Hz47,48 for 1 s, followed by 2 s of silence, 78 or 73 dB SPL, respectively).  
+A 7-kHz frequency was chosen as the middle of the sound spectrogram for mouse 
+pup wriggling calls49, and therefore ethological for mice of this age. Mice were 
+otherwise reared under standard conditions (12:12 h light:dark cycle, access to 
+water and food ab libitum) and moved about freely in their cage. Audible (7 kHz) 
+tones were generated by Audacity software (http://audacity.sourceforge.net/) and 
+amplified by speakers placed in two corners of the chamber. High-frequency 
+(20 kHz) tones were generated by Adobe Audition software and amplified by an 
+electrostatic speaker driver (ED1) and electrostatic speaker (ES1, Tucker Davis 
+Technologies) placed on top of the mouse cage.
+
+Subsets of mice were exposed to 7-kHz tones from P8 until recording (removed 
+less than 30 min before decapitation) around P20 (P19–21). Other subsets were 
+exposed for shorter time windows, P8 to P11, P12 to P15, P16 to P19, P12 to 
+P13, P13 to P14, P14 to P15, P12 to P14 or P13 to P15, and were then returned to 
+standard housing conditions until decapitation around P20 for VSDI.
+
+DiI labeling. C57BL/6J mice at P13 or P16 (Jackson Lab) or Icam5−/− mice at 
+P13 were anesthetized with nembutal (50 mg per kg) and killed by transcar-
+dial perfusion with 0.9% saline (wt/vol) and 4% paraformaldehyde (wt/vol) in  
+phosphate-buffered saline (PBS). Brains were trimmed and thalamocortical slices 
+were cut (200 (cid:77)m thick) for ‘DiOlistics’ labeling with lipophilic dye (DiI, Molecular 
+Probes) coated on tungsten particles (0.7-(cid:77)m diameter, Bio-Rad)50. Density of 
+labeling was controlled by gas pressure (200-psi helium) and no other filters. 
+Randomly labeled pyramidal neurons situated in upper L4 of A1 were selected 
+by confocal microscopy (40× air objective, 3× zoom; FluoView1000, Olympus). 
+Images at 0.25-(cid:77)m steps were acquired and stacked for three-dimensional recon-
+struction using FluoView software. Neurites were reconstructed in a radius of 
+100 (cid:77)m from the soma using Neurolucida (MicroBrightField). All protrusions 
+along apical and basal dendrites were counted. Those with distinct heads and 
+head diameter larger than neck diameter were classified as mushroom spines, 
+whereas dendritic protrusions without distinct heads were classified as stubby 
+spines23. Spines that were thinner than 0.3 (cid:77)m and longer than 2 (cid:77)m, defined as 
+filopodia or thin spines, were not counted.
+
+doi:10.1038/nn.2882
+
+NATURE NEUROSCIENCE
+
+© 2011 Nature America, Inc.  All rights reserved.© 2011 Nature America, Inc.  All rights reserved.Immunohistochemistry. Standard protocols were used to label thalamocortical 
+slices. Briefly, slices (600 and 100 (cid:77)m thick for Nissl and Icam5 staining, respec-
+tively) were kept in 4% paraformaldehyde overnight at 20–22 °C, washed in 
+PBS, solubilized, blocked in 0.8% Triton X-100 (wt/vol) and 20% bovine serum 
+albumin (BSA, wt/vol) in PBS (4 °C overnight), and incubated for Nissl stain with 
+NeuroTrace 435/455 (Molecular Probes) or rabbit polyclonal antibody to Icam5 
+(courtesy of Y. Yoshihara, RIKEN BSI)21 in 5% BSA in PBS (4 °C overnight), 
+followed by a fluorescent secondary antibody.
+
+In vitro patch-clamp recording. Slice preparation and stimulation protocols 
+were as described for the VSDI experiments. Whole-cell recordings of upper 
+L4 pyramidal neurons were amplified using Axopatch 200B amplifiers (Axon 
+Instruments,  Molecular  Devices).  Voltages  (in  current-clamp  mode)  were 
+recorded with pipettes containing 120 mM potassium gluconate, 10 mM KCl,  
+4 mM ATP-MG, 10 mM phosphocreatine, 0.3 mM GTP, 10 mM HEPES and 0.2% 
+biocytin (wt/vol, pH 7.3, 290 mOsm). For each slice, up to three cells per stimulus 
+site (1, 3 and 5) and L4 location (8, 10 and 13, respectively) were patched, and 
+the cell with the strongest response (average of 30 traces, clamped at −70 mV) 
+was used for the analysis.
+
+Statistical analyses. Results are reported as mean (cid:111) s.e.m. and compared across 
+groups using a two-tailed, unpaired Student’s t test with statistical significance 
+at P < 0.05 if n was bigger than 10, where n represents the number of animals 
+or neurons for Figures 1, 2 and 7, per experiment. For small data samples  
+
+(n < 10), or where the assumption of a Gaussian distribution could not be veri-
+fied, results were reported as median (cid:111) s.e.m., and the nonparametric two-tailed 
+Mann-Whitney U or Wilcoxon rank sum test was used (Figs. 4e, 5b, 6 and 7 and 
+Supplementary Fig. 3b) with statistical significance at P < 0.05. Input strength 
+distributions (Fig. 4a) and gradient of peak locations (Fig. 4c) were compared 
+with two-way ANOVA tests. Best frequency distributions (Figs. 1e and 2e) were 
+compared with two-sample Kolmogorov-Smirnov tests.
+
+44. Stiebler,  I.,  Neulist,  R.,  Fichtel,  I.  &  Ehret,  G.  The  auditory  cortex  of  the  house 
+mouse:  left-right  differences,  tonotopic  organization  and  quantitative  analysis  of 
+frequency representation. J. Comp. Physiol. [A] 181, 559–571 (1997).
+
+45. Grinvald,  A.  &  Hildesheim,  R.  VSDI:  a  new  era  in  functional  imaging  of  cortical 
+
+dynamics. Nat. Rev. Neurosci. 5, 874–885 (2004).
+
+46. Ferezou, I., Bolea, S. & Petersen, C.C.H. Visualizing the cortical representation of 
+whisker  touch:  voltage-sensitive  dye  imaging  in  freely  moving  mice.  Neuron  50, 
+617–629 (2006).
+
+47. Zhou,  X.,  Nagarajan,  N.,  Mossop,  B.J.  &  Merzenich,  M.M.  Inﬂuences  of  un-
+modulated acoustic inputs on functional maturation and critical-period plasticity of 
+the primary auditory cortex. Neuroscience 154, 390–396 (2008).
+
+48. Kim, H. & Bao, S. Selective increase in representations of sounds repeated at an 
+
+ethological rate. J. Neurosci. 29, 5163–5169 (2009).
+
+49. Geissler,  D.B.  &  Ehret,  G.  Auditory  perception  vs.  recognition:  representation  of 
+complex  communication  sounds  in  the  mouse  auditory  cortical  ﬁelds.  Eur.  J. 
+Neurosci. 19, 1027–1040 (2004).
+
+50. Gan,  W.B.,  Grutzendler,  J.,  Wong,  W.T.,  Wong,  R.O.  &  Lichtman,  J.W.  Multicolor 
+‘DiOlistic’ labeling of the nervous system using lipophilic dye combinations. Neuron 27,  
+219–225 (2000).
+
+NATURE NEUROSCIENCE
+
+doi:10.1038/nn.2882
+
+© 2011 Nature America, Inc.  All rights reserved.© 2011 Nature America, Inc.  All rights reserved.

@@ -1,0 +1,689 @@
+Universität Osnabrück
+
+AUSARBEITUNG
+
+zum Seminar
+
+Software Engineering
+
+im Wintersemester 2014/15
+
+Thema:
+
+Konﬁgurationsmanagement, Werkzeuge im Vergleich
+
+Erstellt am 29. November 2014
+
+Vorgelegt von:
+
+Johan von Behren
+954421
+Ertmanstraße 15
+49082 Osnabrück
+jvonbehren@uos.de
+
+Inhaltsverzeichnis
+1 Einführung
+
+1.1 Motivation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.2 Aufbau dieser Arbeit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+2 Versionsverwaltungssysteme
+
+2.3 Zentrale und verteilte Systeme
+
+2.1 Begriﬀe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.2 Zugriﬀsmethoden . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.2.1 Lock Modify Write . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.2.2 Copy Modify Merge . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3.1 Zentrale Systeme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3.2 Verteilte Systeme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4 Überblick . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4.1 CVS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4.2
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4.3 Mercurial
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.4.4 Git . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Subversion (SVN)
+
+1
+1
+2
+
+2
+2
+3
+3
+3
+4
+4
+4
+4
+4
+4
+5
+5
+
+5
+5
+5
+6
+
+3 Subversion
+
+3.1 Begriﬀe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.2 Funktionsweise und Besonderheiten . . . . . . . . . . . . . . . . . . . . . . . .
+3.3 Kommandos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4 Git
+
+7
+7
+7
+8
+9
+4.3 Kommandos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+4.1 Begriﬀe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2 Funktionsweise und Besonderheiten . . . . . . . . . . . . . . . . . . . . . . . .
+4.2.1 Fork-Pull Modell
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2.2 Exkurs: Gitﬂow . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+5 Subversion und Git im Vergleich
+
+6 Zusammenfassung
+
+A Abbildungsverzeichnis
+
+B Literatur
+
+11
+
+13
+
+14
+
+15
+
+i
+
+Konﬁgurationsmanagement, Werkzeuge im
+
+Vergleich
+Johan von Behren
+29. November 2014
+
+In dieser Ausarbeitung wird die Relevanz von Versionsverwaltungssystemen
+in dem Bereich Konﬁgurationsmanagement von Software dargestellt. Dem Leser
+wird ein Überblick über verbreitete Versionsverwaltungssysteme und deren An-
+wendungsbereiche gegeben. Die beiden Versionsverwaltungssysteme Subversion
+und Git werden detaillierter vorgestellt und anschließend verglichen. Aus dem
+Vergleich geht hervor, dass verteilte Systeme (im Beispiel Git) dem Entwickler
+mehr Möglichkeiten bieten, aber komplexer in der Anwendung sind. Die Ent-
+scheidung, welches Versionsverwaltungssystem eingesetzt wird, sollte demnach
+von den Präferenzen der Entwickler abhängen.
+
+1 Einführung
+Um auf das Thema Konﬁgurationsmanagement genauer eingehen zu können, muss zuerst
+geklärt werden, was mit einer Konﬁguration gemeint ist.
+
+”Eine Konﬁguration ist eine Momentaufnahme des Zustands aller Entwicklungsartefakte
+
+zu einem bestimmten Entwicklungsstand.” ([2], S. 5)
+
+In diesem Zitat wird schon das zentrale Problem des Konﬁgurationsmanagements deut-
+lich, eine Momentaufnahme aller Artefakte darzustellen. Von diesen Momentaufnahmen
+entstehen im Laufe der Entwicklung einer Software sehr viele, die zudem in Beziehung
+zueinanderstehen. Bei Momentaufnahmen, die zueinander in Beziehung stehen, kann von
+Versionen gesprochen werden. Diese Versionen werden im Konﬁgurationsmanagement über-
+wiegend mit verschiedenen Versionsverwaltungssystemen kontrolliert und gesteuert.
+
+1.1 Motivation
+In der Softwareentwicklung entstehen bei Projekten, an denen mehr als nur eine Person
+arbeitet, irgendwann immer eins oder mehrere der folgenden Probleme:
+
+1. Entwickler A arbeitet an einer Datei und Entwickler B muss zum gleichen Zeitpunkt
+
+an derselben Datei etwas ändern.
+
+1
+
+2. Eine Software ist momentan z. B. in der Version 1.5.0 vorhanden. Für einen Kunden
+wird allerdings eine ältere Version (z. B. 1.2.0) benötigt. Diese kann nicht mehr erstellt
+werden, da die Dateien für die alte Version nicht gesichert wurden.
+
+3. Entwickler A soll den Quellcode einer bestimmten Datei erweitern. Er versteht den
+bisherigen Quellcode allerdings nicht. Da er nicht weiß, wer den bisherigen Quellcode
+geschrieben hat, fehlt Ihm die Information, an wen er sich bei Fragen wenden soll.
+
+Um diese Probleme zu beheben, werden sogenannte Versionsverwaltungssysteme eingesetzt.
+Diese Systeme ermöglichen es dem Benutzer, verschiedene Versionen von Dateien und Ver-
+zeichnissen anzulegen. Zwischen diesen Versionen kann gewechselt werden und es können
+unterschiedliche Entwicklungsstränge eröﬀnet und später wieder zusammengeführt werden.
+
+1.2 Aufbau dieser Arbeit
+Nach der Einleitung gibt das zweite Kapitel einen Überblick über die weitverbreitetsten Ver-
+sionsverwaltungssysteme. Anschließend behandelt Kapitel 3 das Versionsverwaltungssystem
+Subversion und Kapitel 4 das Versionsverwaltungssystem Git. Am Ende des Kapitels zu Git
+wird ein Exkurs zu einem besonderen Branching-Model eingeschoben. In Kapitel 5 werden
+die beiden Versionsverwaltungssysteme in einem direkten Vergleich gegenübergestellt und
+bewertet. Abschließend folgt im sechsten Kapitel eine Zusammenfassung dieser Ausarbei-
+tung.
+
+2 Versionsverwaltungssysteme
+Zwei Möglichkeiten die Versionsverwaltungssysteme zu gliedern, sind die Art wie die ein-
+zelnen Entwickler untereinander vernetzt sind (zentrale und verteilte Systeme) und wie der
+Zugriﬀ auf die einzelnen Dateien erfolgt (Lock-Modify-Write und Copy-Modify-Merge). Im
+Folgenden wird auf den Unterschied zwischen zentralen und verteilten Systemen eingegan-
+gen und es werden die beiden Zugriﬀsmethoden Lock-Modify-Write und Copy-Modify-Merge
+erklärt.
+
+2.1 Begriﬀe
+Die folgenden Begriﬀe werden in dieser Ausarbeitung öfters benutzt und an dieser Stelle
+kurz erklärt.
+
+Repository Ein Repository ist eine Art Projektarchiv, in dem alle Dateien und Verzeich-
+nisse zu einem Projekt liegen. Ein Repository kann (je nach Versionsverwaltungssystem) auf
+den Rechner eines Entwicklers kopiert (siehe 2.1) werden und anschließend kann lokal mit
+den Dateien und Verzeichnissen gearbeitet werden. Alle Änderungen werden irgendwann
+(solange sie relevant sind) in das Repository zurückgeführt.
+
+Branch Ein Branch ist eine Art Zweig in einem Repository, zu dem bestimmte Versionen
+von Dateien und Verzeichnissen gehören. In einem Repository können beliebig viele Branches
+erstellt werden.
+
+2
+
+Commit Ein Commit ist eine Ansammlung von Änderungen an Dateien oder Verzeichnis-
+sen in einem Repository.
+
+Log Der Log bezeichnet die Versionsgeschichte eines Repositories. Sie umfasst alle Com-
+mits und Branches sowie Metadaten (z.B. Name und Datum des Commits).
+
+Tag Ein Tag ist eine Art Markierung, die einem Commit zugeordnet werden kann. Ein
+Tag repräsentiert allgemein einen bestimmten Stand in einer Versionshierarchie (z.B. eine
+Version der Software, die veröﬀentlicht wurde).
+
+Merge Wurde eine Datei oder ein Verzeichnis von zwei Entwicklern zur gleichen Zeit ver-
+ändert, müssen diese Änderungen zusammengeführt werden, bevor sie in das Repository
+übertragen werden können.
+
+Checkout Bezeichnet den Vorgang, einen bestimmten Stand eines Repositories anhand
+eines Commits oder eines Tags wiederherzustellen.
+
+Diﬀ Der Unterschied zwischen zwei Versionen einer oder mehrerer Dateien oder Verzeich-
+nisse.
+
+2.2 Zugriﬀsmethoden
+Alle Versionsverwaltungssysteme, die in dieser Ausarbeitung behandelt werden, benutzen
+eine der beiden folgenden Methoden, um den Zugriﬀ auf Dateien oder Verzeichnisse in dem
+Versionsverwaltungssystem zu ermöglichen.
+
+2.2.1 Lock Modify Write
+Die wohl einfachste Variante ist dabei die ”Lock Modify Write”-Methode (auch restriktives
+Modell genannt) [2]. Bei dieser Methode wird die zu versionierende Datei bei einem Zugriﬀ
+gesperrt. Sobald die Datei gesperrt ist (Lock), hat nur noch der Entwickler Zugriﬀ auf
+diese Datei, der das Sperren ausgelöst hat. Nun kann der Entwickler die Datei verändern
+(Modify) und danach speichern (Write). Nach dem Speichervorgang wird die Datei wieder
+freigegeben und andere Entwickler können sie sperren. Der Vorteil dieser Methode ist die
+Tatsache, dass nicht gleichzeitig zwei parallele neue Versionen einer Datei erstellt werden
+können. Der Nachteil ist allerdings, dass immer nur ein Entwickler an einer Datei arbeiten
+kann.
+
+2.2.2 Copy Modify Merge
+Die zweite Methode ist die ”Copy Modify Merge”-Methode (auch optimistisches Modell
+genannt) [2]. Diese Methode ermöglicht es mehreren Entwicklern parallel an der gleichen
+Datei zu arbeiten. Möchte ein Entwickler eine Datei verändern, wird eine Kopie (Copy) der
+besagten Datei angelegt. Die Datei kann nun von dem Entwickler verändert (Modify) werden
+und, weil die Ursprungsdatei noch existiert, von anderen Entwicklern ebenfalls kopiert und
+verändert werden. Sind die Veränderungen abgeschlossen, muss die neue Version mit der
+
+3
+
+alten Version der Datei zusammengeführt (Merge) werden. Dabei wird automatisch oder
+händisch überprüft, welche Änderungen aus der neuen Version übernommen werden sollen.
+
+2.3 Zentrale und verteilte Systeme
+Alle Versionsverwaltungssysteme, die in dieser Ausarbeitung behandelt werden, sind entwe-
+der sogenannte zentrale oder verteilte Systeme.
+
+2.3.1 Zentrale Systeme
+Zentrale Systeme arbeiten nach dem Client-Server-Prinzip [3]. Dadurch ist es möglich, das
+Versionsverwaltungssystem über ein Netzwerk zu erreichen und für mehrere Entwickler
+gleichzeitig zugänglich zu machen. Die zu versionierenden Dateien oder Verzeichnisse lie-
+gen zentral in einem Repository auf einem System, das als Server dient. Von diesem Server
+können sich die Entwickler (je nach Zugriﬀs-Methode) die Dateien kopieren oder direkt auf
+dem System verändern. Bei den meisten zentralen Versionsverwaltungssystemen liegt der
+Changelog nur in dem Repository, also auf dem Server.
+
+2.3.2 Verteilte Systeme
+Bei den verteilten Systemen kopiert sich jeder Entwickler das Repository und hat somit
+eine eigene Kopie aller Dateien und Verzeichnisse auf seinem Rechner (inklusive des Chan-
+gelogs) [3]. Dieses kopierte Repository kann nun mit jedem beliebigen anderen Repository
+abgeglichen werden. Trotz der verteilten Struktur wird oft ein Haupt-Repository (”origin”)
+eingerichtet, in welchem alle Entwickler ihre Änderungen sammeln und aus dem das fertige
+Softwareprodukt erstellt wird.
+
+2.4 Überblick
+Es gibt viele verschiedene Versionsverwaltungssysteme. Im folgenden werden vier davon vor-
+gestellt. Die vier Versionsverwaltungssysteme arbeiten alle nach der ”Copy Modify Merge”-
+Methode.
+
+2.4.1 CVS
+CVS steht für ”Concurrent Versions System”. Es ist ein zentrales Versionsverwaltungssystem
+und der Vorgänger von Subversion. CVS wird als freie Software vom sogenannten CVS
+Team unter der GNU General Public License veröﬀentlicht und ist hauptsächlich in C
+programmiert [7]. Mittlerweile wurde die Weiterentwicklung eingestellt und es wird nur
+noch von wenigen Firmen aktiv eingesetzt. Der größte Nachteil von CVS ist, dass es nicht
+ohne Probleme möglich ist, versionierte Dateien und Verzeichnisse umzubenennen, ohne den
+Log zu verlieren.
+
+2.4.2 Subversion (SVN)
+Subversion (oder auch SVN) ist der Nachfolger von CVS. Es ist ebenfalls ein zentrales Ver-
+sionsverwaltungssystem und wird von CollabNet als freie Software unter der Apache-Lizenz
+
+4
+
+2.0 veröﬀentlicht und ist hauptsächlich in C programmiert [4]. SVN ist schätzungsweise das
+am meisten genutzte zentrale Versionsverwaltungssystem.
+
+2.4.3 Mercurial
+Mercurial ist ein verteiltes Versionsverwaltungssystem. Es wird als freie Software unter der
+GPLv2+-Lizenz veröﬀentlicht und ist hauptsächlich in Python und C programmiert [6]. Es
+wurde am 19.04.2005 von Matt Mackall angekündigt und ab dem Jahr 2005 entwickelt. Aus-
+schlaggebender Grund für Matt Mackall Mercurial zu entwickeln, war die Ankündigung der
+Firma BitMover, das Versionsverwaltungssystem BitKeeper, nicht mehr in einer kostenlosen
+Version anzubieten. BitKeeper wurde für die Entwicklung des Linux-Kernels genutzt.
+
+2.4.4 Git
+Fast parallel zu der Ankündigung von Matt Mackall, kündigte Linus Torvalds das Versi-
+onsverwaltungssystem Git aus demselben Grund an. Git ist ein verteiltes Versionsverwal-
+tungssystem und wird als freie Software unter der GNU GPLv2-Lizenz veröﬀentlicht und
+ist hauptsächlich in C programmiert [3]. Es existieren sehr viele graﬁsche Oberﬂächen von
+Drittanbietern für alle gängigeren Betriebssysteme.
+
+3 Subversion
+In diesem Kapitel wird auf die Funktionsweise und Besonderheiten von Subversion einge-
+gangen.
+
+3.1 Begriﬀe
+Im Umgang mit Subversion sind folgende Begriﬀe relevant, die hier kurz erklärt werden.
+
+Update Bezeichnet den Vorgang des Synchronisierens der lokalen Änderungen mit dem
+Repository auf dem Server. Bei einem solchen Update können eventuelle Merges fällig wer-
+den.
+
+Changeset Als Changeset wird die Menge der geänderten Dateien in einem Commit be-
+zeichnet.
+
+Revision Ein neuer Zustand (Version) des Inhalts eines Repositories.
+
+3.2 Funktionsweise und Besonderheiten
+Da Subversion ein zentrales Versionsverwaltungssystem ist, wird für die Verwendung ein
+Server mit einem Repository benötigt [4]. Ist das Repository eingerichtet, kann ein Client
+(der die erforderlichen Rechte hat) die Dateien aus dem Repository auf seinen Rechner
+kopieren. Die kopierten Dateien und Verzeichnisse sind nun an das Repository auf dem Ser-
+ver gebunden. Es kann nun in den unterschiedlichen Branches des Repositories gearbeitet
+werden. Der Hauptbranch in einem SVN-Repository heißt ”trunk” [4]. Von diesem Branch
+
+5
+
+können neue Branches erstellt werden. Nach diesem Schritt können Dateien und Verzeichnis-
+se geändert, gelöscht, verschoben, umbenannt und hinzugefügt werden. Diese Änderungen
+können durch einen Commit bestätigt werden. Durch den Commit wird eine neue Revision
+des Repositories erzeugt. Diese Revision bekommt durch den Server eine Revisionsnummer
+vergeben, über die diese Revision eindeutig identiﬁziert werden kann [4]. Durch ein Update
+werden alle neuen Commits mit dem Repository auf dem Server synchronisiert.
+
+Abbildung 1: Grobe Darstellung der Arbeitsweise von Subversion.
+
+Subversion nutzt für die Speicherung der Dateien und deren Versionen ein Delta-basiertes
+Verfahren. Wird eine neue Version einer Datei erzeugt, werden nur die Änderungen zwischen
+den beiden Versionen ermittelt und dann gespeichert [4]. Dadurch entsteht beim Erzeugen
+einer neuen Version Rechenaufwand aber es wird Speicherplatz gespart.
+
+3.3 Kommandos
+In diesem Abschnitt werden einige Kommandos von Subversion aufgelistet und kurz erklärt.
+
+svn checkout Mit diesem Kommando wird ein bestimmter Branch (im Fall des Beispiels
+der trunk) von dem Repository z.B. auf den lokalen Rechner kopiert.
+Beispiel: ”svn checkout svn://svnrepo/trunk .”
+
+svn status Mit diesem Kommando wird der Status des lokalen Repositories angezeigt.
+Beispiel: ”svn status”
+
+svn add Mit diesem Kommando wird Subversion über die Existenz einer Datei oder eines
+Verzeichnisses informiert. Nach diesem Kommando kann die Datei oder das Verzeichnis in
+Subversion versioniert werden.
+Beispiel: ”svn add test.txt”
+
+svn commit Mit diesem Kommando werden Änderungen bestätigt.
+Beispiel: ”svn commit”
+
+svn update Mit diesem Kommando werden die lokalen Änderungen mit dem Repository
+auf dem Server synchronisiert.
+Beispiel: ”svn update”
+
+6
+
+svn log Mit diesem Kommando wird die Versionshierarchie des Repositories angezeigt.
+Beispiel: ”svn log”
+
+4 Git
+In diesem Kapitel wird auf die Funktionsweise und Besonderheiten von Git eingegangen.
+
+4.1 Begriﬀe
+Folgende Begriﬀe haben im Bezug auf Git eine besondere Bedeutung, die hier kurz erklärt
+wird.
+
+Clone Der Vorgang, ein Repository an einen anderen Ort (z.B. auf den lokalen Rechner)
+zu kopieren.
+
+Remote Ein entferntes Repository, mit dem das aktuelle Repository verglichen wird.
+
+Pull Der Vorgang, um die Änderungen von einem Remote auf das lokale Repository zu
+synchronisieren.
+
+Push Der Vorgang, die Änderungen im lokalen Repository auf ein Remote zu synchroni-
+sieren.
+
+Stage Eine virtuelle Zwischenstufe, in die Dateien oder Verzeichnisse geschoben werden
+können, deren Änderungen im nächsten Commit bestätigt werden sollen.
+
+Rebase Der Vorgang, an älteren Commits Änderungen durchzuführen.
+
+Dirty/Modiﬁed Sind Dateien oder Verzeichnisse, die verändert wurden, aber noch nicht
+in die Staging-Area verschoben wurden.
+
+4.2 Funktionsweise und Besonderheiten
+Da Git ein verteiltes Versionsverwaltungssystem ist, kann ein Repository auf einem Server
+oder direkt bei einem Client erzeugt werden [3]. Wurde das Repository bereits erzeugt und
+ein Client möchte Dateien oder Verzeichnisse aus diesem Repository verändern, muss das Re-
+pository geklont werden. In dem Repository existiert immer der Standard-Branch ”master”
+[3]. Neben diesem Branch können beliebig viele andere Branches erzeugt und zurückgeführt
+werden (siehe 4.2.2). Wurde ein neues Repository erzeugt, müssen zunächst Dateien oder
+Verzeichnisse hinzugefügt werden. Sobald Dateien oder Verzeichnisse in einem Repository
+vorhanden sind, können diese Dateien und Verzeichnisse geändert, gelöscht, verschoben und
+umbenannt werden. Sollen diese Änderungen zu einem späteren Zeitpunkt bestätigt werden,
+müssen sie zunächst mit dem ”add”-Befehl in die Staging-Area bewegt werden. Durch einen
+Commit können die bereitgestellten Änderungen (in der Staging-Area) bestätigt werden.
+Bei einem Commit wird von Git ein Hash-Wert aus dem gesamten Log von diesem Commit
+
+7
+
+generiert, der den aktuellen Commit eindeutig identiﬁziert [3]. Bevor die Änderungen per
+Push an den Remote gesendet werden können, sollte ein Pull von dem Remote erfolgen.
+Mit dem Pull wird sichergestellt, dass keine Modiﬁkationen auf dem Remote durch die ge-
+rade durchgeführten Änderungen beim Client überschrieben werden. Falls ältere Commits
+überarbeitet werden müssen, steht dem Entwickler das Rebase-Kommando zur Verfügung.
+
+Abbildung 2: Grobe Darstellung der Arbeitsweise von Git.
+
+Git speichert im Gegensatz zu Subversion keine Deltas, sondern ganze Snapshots (Mo-
+mentaufnahmen) der Dateien und deren Versionen ab [3]. Dieses Verfahren benötigt wenig
+Rechenaufwand, beansprucht aber mehr Speicherplatz. Um den Verbrauch des Speicher-
+platzes zu reduzieren, werden die Snapshots komprimiert gespeichert.
+
+4.2.1 Fork-Pull Modell
+Das Fork-Pull Modell ist ein weit verbreiterer Ansatz in der Open-Source-Szene, um exter-
+nen Entwicklern die Möglichkeit zu geben z.B. Features für eine Software unabhängig von
+dem Haupt-Repository zu entwickeln und sie später wieder in dieses Repository zurückzu-
+führen [5]. Das Vorgehen bei dem Fork-Pull Modell ähnelt dem Erstellen eines Branches in
+einem Repository. Der Unterscheid ist, dass kein neuer Branch erstellt wird, sondern das
+komplette Repository kopiert wird. Durch die Eigenschaften eines verteilten Versionsver-
+waltungssystems ist es möglich, in Git einen Fork eines Repositories durchzuführen. Dabei
+wird das durch den Fork zu erstellende Repository geklont und beim Entwickler abgelegt.
+In diesem Fork kann der Entwickler nun Änderungen unabhängig vom ursprünglichen Re-
+pository durchführen. Möchte der Entwickler seine Änderungen in dem Fork nun in das
+ursprüngliche Repository zurückführen, kann er einen Pull Request an das alte Reposito-
+ry stellen. Wird dieser Pull Request angenommen, synchronisiert das alte Repository alle
+Änderungen, die der Entwickler vorgenommen hat, in das ursprüngliche Repository.
+
+8
+
+Abbildung 3: Visualisierung eines Forks und eines Pull Requests. Die Linien von oben nach
+unten stellen die Branches in den unterschiedlichen Repositories dar und die
+Kreise auf den Linien die Commits.
+
+Das Fork-Pull Modell wird erst seit einer der letzten Versionen von Git unterstützt. Der
+Fork wird durch einen Clone vorgenommen und der Pull Request wird häuﬁg über andere
+Wege gestellt. Moderne Git-Repository-Provider wie z.B. GitHub oder Bitbucket bieten
+Systeme an, die dieses Modell unterstützen und so Forks und Pull Requests vereinfachen.
+
+4.2.2 Exkurs: Gitﬂow
+Gitﬂow ist ein Branchingmodell um den Softwareentwicklungsprozess zu vereinfachen und
+zu vereinheitlichen [1]. Durch die große Freiheit in Git, beliebig viele Branches zu erstellen
+und wieder zusammenzuführen, können Projekte sehr unübersichtlich werden. Gitﬂow sieht
+grundsätzlich genau zwei Branches vor: den üblichen ”master”-Branch und den sogenannten
+”develop”-Branch (siehe Abbildung 4). Konvention ist es laut Gitﬂow, dass in dem ”master”-
+Branch immer ein funktionierender Stand der Software existieren muss [1]. Alle Formen der
+Weiterentwicklung werden folglich zunächst in dem ”develop”-Branch vorgenommen (gelbe
+Punkte in Abbildung 4) und von dort aus (wenn sie getestet wurden und funktionieren) in
+den ”master”-Branch gemerged. Für größere Features soll laut Gitﬂow jeweils ein eigener
+”feature”-Branch aus dem ”develop”-Branch erstellt werden (pinke Punkte in Abbildung 4).
+Das Feature zu diesem Branch wird in dem Branch programmiert. Zwischendurch sollte
+nach Bedarf regelmäßig der ”develop”-Branch in den ”feature”-Branch gemerged werden.
+Ist das Feature abgeschlossen, wird der ”feature”-Branch wieder in den ”develop”-Branch
+gemerged [1]. Wenn ein Release ansteht, wird zuvor ein ”release”-Branch erstellt (grüne
+Punkte in Abbildung 4). In diesem Branch werden nur noch Bugﬁxes vorgenommen. Sind
+alle Bugs behoben, wird der Branch in den ”master”- und den ”develop”-Branch gemerged.
+Der ”master”-Branch wird an dem Commit mit der Versionsnummer des ”release”-Branches
+
+9
+
+mit einem Tag versehen (türkise Punkte in Abbildung 4). Wird in dem ”master”-Branch ein
+Bug gefunden, wird ein ”hotﬁx”-Branch erstellt (rote Punkte in Abbildung 4). In diesem
+Branch wird der Bug behoben und anschließend wird der Branch mit dem ”master”- und
+dem ”develop”-Branch zusammengeführt. An dieser Stelle bekommt der Commit in dem
+”master”-Branch auch wieder einen Tag mit der aktuellen Versionsnummer. [1]
+
+Abbildung 4: Visualisierung des Branchingmodells Gitﬂow. Die Linien von oben nach unten
+stellen die Branches dar und die Kreise auf den Linien die Commits. (Entnom-
+men aus [1])
+
+Da bei diesem Branchingmodell sehr viele Branches zusammengeführt werden müssen,
+gibt es ein Komandozeilen-Tool mit dem Namen gitﬂow, welches viele der benötigten Vor-
+gänge komplett automatisiert.
+
+10
+
+4.3 Kommandos
+In diesem Abschnitt werden einige Kommandos von Git aufgelistet und kurz erklärt.
+
+git clone Mit diesem Kommando wird ein Repository z.B. auf den lokalen Rechner kopiert.
+Beispiel: ”git clone git@github.com:Username/remote-repo.git local-repo”
+
+git checkout Mit diesem Kommando wird ein bestimmter Branch oder eine bestimmte
+Version wiederhergestellt.
+Beispiel: ”git checkout master”
+
+git init Mit diesem Kommando wird ein neues Repository initialisiert.
+Beispiel: ”git init .”
+
+git add Mit diesem Kommando werden Dateien oder Verzeichnisse zu einem Repository
+hinzugefügt oder, falls diese schon im Repository vorhanden sind, in die Staging-Area ver-
+schoben.
+Beispiel: ”git add test.txt”
+
+git commit Mit diesem Kommando werden Änderungen an Dateien oder Verzeichnissen,
+die sich in der Staging-Area beﬁnden, bestätigt.
+Beispiel: ”git commit”
+
+git push Mit diesem Kommando werden alle Änderungen an einem bestimmten lokalen
+Branch (im Fall des Beispiels ”master”) an ein entferntes Repository (im Fall des Beispiels
+”origin”) geschickt.
+Beispiel: ”git push origin master”
+
+git pull Mit diesem Kommando werden alle Änderungen an einem entfernten Repository
+in das lokale Repository übertragen.
+Beispiel: ”git pull”
+
+git status Mit diesem Kommando wird der Zustand des lokalen Repositories angezeigt.
+Beispiel: ”git status”
+
+git log Mit diesem Kommando wird die Versionshistorie des Repositories angezeigt.
+Beispiel: ”git log”
+
+5 Subversion und Git im Vergleich
+Der erste Unterschied zwischen Subversion und Git wird schon an der Textmenge zu dem
+jeweiligen Versionsverwaltungssystem in dieser Ausarbeitung deutlich. Subversion ist we-
+sentlich übersichtlicher und einfacher zu erlernen und bietet dabei die Standardfunktionali-
+tät eines modernen Versionsverwaltungssystems [4]. Durch die Freiheiten, die Git mit sich
+
+11
+
+bringt, werden die Branchingmodelle komplexer und die Lernkurve in der Einarbeitungs-
+phase steigt langsamer an [3].
+
+Für Anfänger könnte die Tatsache, dass Git primär für Linux entwickelt wurde eine weitere
+Hürde darstellen. Es gibt zwar native Portierungen für Windows, aber die Arbeitsweise und
+bestimmte Funktionen orientieren sich sehr stark an Linux-Prinzipien. Außerdem arbeitet
+Git unter Windows langsamer als auf einem Linux System. Subversion dagegen ist auf beiden
+Systemen annähernd gleich schnell und läuft unter Windows stabiler.
+
+Die Leistung beider Versionsverwaltungssysteme ist im Vergleich auf dem gleichen Be-
+triebssystem (z.B. unter Linux) allerdings sehr unterschiedlich. Durch die Tatsache, dass Git
+ein verteiltes Versionsverwaltungssystem ist, werden die meisten Operationen lokal durch-
+geführt und sind damit schneller. Subversion muss hingegen für viele Operationen auf den
+Server zurückgreifen. Die häuﬁge Kommunikation mit dem Server verlangsamt das System
+und den Arbeitsablauf. Weiterer Rechenaufwand entsteht bei Subversion durch das Erstel-
+len der Diﬀs zwischen den Versionen der Dateien [4]. Dieser Aufwand entfällt bei Git, da
+hier nur Snapshots der Dateien erstellt und danach komprimiert werden [3].
+
+Zu dem Geschwindigkeitsvorteil von Git, aufgrund der lokaleren Arbeitsweise, kommt die
+Tatsache, dass Git die Änderungen vor einer Synchronisation (Clone, Pull, Push) mit einem
+Remote komprimiert [3]. Dadurch müssen weniger Daten als bei Subversion übertragen
+werden und das Netzwerk wird nicht so stark beansprucht.
+
+Da Git ein verteiltes Versionsverwaltungssystem ist und somit wesentlich öfter Dateien
+zusammengeführt werden müssen, wurde bei der Entwicklung von Git ein großer Fokus auf
+den Merge-Prozess gelegt. Durch das Versionierungsmodell von Git (bei einem Commit wird
+nicht immer eine neue Version des gesamten Repositories erstellt wie bei Subversion) weiß
+Git, aus welchem Branch und damit woher die Änderungen an den Dateien kommen [3].
+Das Resultat ist ein wesentlich angenehmeres Verhalten beim Zusammenführen von Dateien.
+Subversion meldet in vielen Fällen Konﬂikte bei sich oﬀensichtlich nicht überschneidenden
+Änderungen. Git erkennt diese Konﬂikte überwiegend selbstständig und führt sie vollkom-
+men automatisch zusammen.
+
+Ein weiterer Vorteil von Git ist, dass es keinen Server benötigt. Ein Entwickler kann sich
+lokal ein Repository erzeugen und direkt damit arbeiten [3]. Es ist also kein permanenter
+Zugriﬀ zum Internet notwenig, um fast alle Funktionalitäten von Git zu verwenden. Bei
+Subversion hingegen wird bereits für das Anzeigen der Versionsgeschichte (wenn diese nicht
+schon im Cache des Clients liegt) ein Server benötigt [4].
+
+Da bei Subversion viele Informationen (z.B. die Versionsgeschichte) nur auf dem Server
+liegen, gibt es keine natürlichen, vollständigen Backups. Falls die Daten auf dem Server
+verloren gehen, ist folglich mindestens die Versionsgeschichte (der wichtigste Teil bei einem
+Versionsverwaltungssystem) nicht mehr vorhanden. Bei Git hingegen hat jeder Entwickler,
+der an einem Repository arbeitet, eine vollständige Kopie dieses Repositories auf seinem
+Rechner. Die Versionsgeschichte und alle Daten sind somit bei jedem Entwickler gesichert.
+Bei einem Datenverlust auf dem Remote muss also nur ein Push durchgeführt werden und
+alle Daten sind wieder hergestellt.
+
+Viele der Unterschiede sind auf die Tatsachen zurückzuführen, dass Git ein verteiltes und
+Subversion ein zentrales Versionsverwaltungssystem ist. Gerade bei Open Source Projek-
+ten, mit vielen unabhängigen Entwicklern, hat das Konzept eines verteilten Versionsverwal-
+tungssystems viele Vorteile, die bereits weiter oben genannt wurden. Git ermöglicht z.B. die
+Realisierung des Fork-Pull Modells.
+
+12
+
+6 Zusammenfassung
+In dieser Ausarbeitung wird ein Überblick über Versionsverwaltungssysteme gegeben. Es
+wurde der Unterschied zwischen dem restriktiven und dem optimistischen Modell erklärt.
+Die Versionsverwaltungssysteme CVS, Subversion, Mercurial und Git wurden in die Ka-
+tegorien zentrale und verteilte Versionsverwaltungssysteme einsortiert. Einige Begriﬀe, die
+im Umgang mit bestimmten Versionsverwaltungssystemen wichtig sind, wurden erklärt und
+den Systemen zugeordnet.
+
+Subversion wurde als zentrales Versionsverwaltungssystem vorgestellt. Es wurde hervor-
+gehoben, dass Subversion alle Grundfunktionalitäten eines modernen Versionsverwaltungs-
+systems bereitstellt und im Vergleich zu Git einfacher zu erlernen und übersichtlicher ist.
+Git wurde als verteiltes Versionsverwaltungssystem vorgestellt. Der Umfang und die damit
+einhergehende Komplexität wurde dargestellt und die grobe Funktionsweise erklärt.
+
+Im Vergleich der beiden Systeme wurde deutlich, dass es sich um zwei sehr unterschied-
+liche Systeme handelt. Subversion ist wesentlich übersichtlicher und einfacher zu erlernen
+und bietet die Grundfunktionalitäten eines modernen Versionsverwaltungssystems. Git ist
+umfangreicher und damit komplexer und unübersichtlicher, bietet aber mehr Komfort für
+den erfahrenen Entwickler und bringt mehr Leistung sowie optimierte Automatismen (z.B.
+das Merge-Tool) mit.
+
+Abschließend kann keines der beiden Systeme als besser oder schlechter als das jeweils an-
+dere dargestellt werden. Beide Systeme erfüllen unterschiedliche Anforderungen und sollten
+nach den jeweiligen Präferenzen der Entwickler gewählt werden.
+
+13
+
+Anhang
+A Abbildungsverzeichnis
+
+1
+2
+3
+
+4
+
+. . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . .
+
+Grobe Darstellung der Arbeitsweise von Subversion.
+Grobe Darstellung der Arbeitsweise von Git.
+Visualisierung eines Forks und eines Pull Requests. Die Linien von oben nach
+unten stellen die Branches in den unterschiedlichen Repositories dar und die
+Kreise auf den Linien die Commits. . . . . . . . . . . . . . . . . . . . . . . . .
+Visualisierung des Branchingmodells Gitﬂow. Die Linien von oben nach un-
+ten stellen die Branches dar und die Kreise auf den Linien die Commits.
+(Entnommen aus [1]) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+6
+8
+
+9
+
+14
+
+B Literatur
+[1] Driessen, Vincent: A successful Git branching model.
+
+a-successful-git-branching-model/. Version: 08.11.2014 14:16:00
+
+http://nvie.com/posts/
+
+[2] Grande, Marcus: 100 Minuten für Konﬁgurationsmanagement - Kompaktes Wissen
+nicht nur für Projektleiter und Entwickler. 1. Auﬂ. Berlin Heidelberg New York :
+Springer-Verlag, 2013. – ISBN 978–3–8348–2308–3
+
+[3] Loeliger, Jon ; McCullough, Matthew: Version Control with Git - Powerful Tools
+and Techniques for Collaborative Software Development. 2. Auﬂ. Sebastopol : O’Reilly
+Media, Inc., 2012. – ISBN 978–1–4493–1638–9
+
+[4] Popp, Gunther: Konﬁgurationsmanagement mit Subversion, Maven und Redmine -
+Grundlagen für Softwarearchitekten und Entwickler. 4., aktualisierte u. erw. Auﬂage.
+Heidelberg : Dpunkt-Verlag, 2013. – ISBN 978–3–86490–081–5
+
+[5] Support, GitHub:
+
+Using pull requests.
+
+using-pull-requests/. Version: 09.11.2014 17:23:00
+
+https://help.github.com/articles/
+
+[6] Support, Mercurial: Mercurial source control management.
+
+selenic.com/about. Version: 07.11.2014 19:11:00
+
+http://mercurial.
+
+[7] Team, CVS: CVS - Concurrent Versions System. http://www.nongnu.org/cvs/.
+
+Version: 07.11.2014 18:42:00
+
+15
+
+

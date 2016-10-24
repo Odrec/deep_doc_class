@@ -1,0 +1,1134 @@
+Messen, Skalen, Indizes 
+
+Einführung in die Methoden der empirischen Sozialforschung 
+
+Universität Osnabrück, Fachbereich Sozialwissenschaften  
+
+ 
+
+Wintersemester 2014/2015 
+
+ 
+
+Katrin Golsch  
+
+ 
+
+Inhalte der heutigen Sitzung  
+
+Messen 
+
+Messniveau  
+
+Skalen  
+
+Indizes 
+
+MESSEN 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+3 
+
+Operationalisierung und Messung 
+
+Operationalisierung  
+– Für eine konkrete Messung benötigt man genaue Anweisungen:  
+– Also eine genaue Frageformulierung und Antwortvorgaben 
+– Und eine Definition, wie die Untersuchungseinheiten den Kategorien einer 
+
+Variable zugewiesen werden sollen 
+
+ 
+
+Messung ist ein „Spezialfall“ der Operationalisierung  
+
+ 
+
+Messen bedeutet, dass nach zuvor festgelegten Regeln den einzelnen 
+Untersuchungsobjekten konkrete Zahlenwerte zugeordnet werden  
+
+ 
+
+Beispiele: 
+– Die Bildung von Personen kann über den allgemeinen Schulabschluss 
+
+(Hauptschulabschluss, Mittlere Reife, Abitur) gemessen werden.  
+
+– Die Statistikkenntnisse von Studierenden können anhand von Klausurnoten (sehr 
+
+gut bis ungenügend) gemessen werden.  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+4 
+
+Beispielfragen aus dem Allbus 2010 
+
+Katrin Golsch 
+
+Wirtschafts- und Sozialstatistik (SoSe 2014) 
+
+5 
+
+Datenorganisation 
+
+Katrin Golsch 
+
+Wirtschafts- und Sozialstatistik (SoSe 2014) 
+
+6 
+
+Datenorganisation 
+
+Variablen  
+
+Fall-Nr. 1 
+
+Schulbildung 
+
+V1 
+
+01 
+
+02 
+
+03 
+
+04 
+
+05 
+
+06 
+
+07 
+
+08 
+
+09 
+
+10 
+
+ 
+ 
+
+n
+e
+g
+n
+u
+g
+ä
+r
+p
+s
+u
+a
+s
+l
+a
+m
+k
+r
+e
+M
+
+V2 
+
+2 
+
+1 
+
+4 
+
+2 
+
+2 
+
+3 
+
+4 
+
+3 
+
+2 
+
+2 
+
+Beruf  
+V33 
+
+Werkzeugmacher 
+
+Verkäufer 
+
+Studienrätin 
+
+Kraftfahrer 
+
+Friseur 
+
+Programmiererin 
+
+Allgemeinmediziner 
+
+Journalistin 
+
+Sachbearbeiterin 
+
+Installateur  
+
+Einkommen  
+
+V4 
+
+2 400 
+
+1 700 
+
+3 600 
+
+2 200 
+
+1 600 
+
+3 100 
+
+8 400 
+
+4 500 
+
+99 999 
+
+99 999 
+
+ 
+ 
+
+ 
+
+n
+e
+n
+o
+s
+r
+e
+P
+=
+ 
+r
+e
+g
+ä
+r
+t
+s
+l
+a
+m
+k
+r
+e
+M
+
+Quelle: Diekmann (2012): 666. 
+
+Katrin Golsch 
+
+Wirtschafts- und Sozialstatistik (SoSe 2014) 
+
+7 
+
+Variablen I 
+
+•
+
+Variablen sind  
+
+– Namen (z.B. 'Geschlecht', Var1)  
+– für eine Menge von Merkmalsausprägungen (z.B. männlich, weiblich),  
+– die einzelnen Merkmalsträgern (z.B. Personen) zugeschrieben werden.  
+
+ 
+
+ 
+
+• Variablen haben mindestens zwei Ausprägungen.  
+
+ 
+Variablen sollten 
+
+•
+
+– disjunkt (keine Überlappungen)  
+– und erschöpfend sein (jedem Merkmalsträger sollte eine Ausprägung 
+
+zugewiesen werden).  
+
+ 
+
+Katrin Golsch 
+
+Wirtschafts- und Sozialstatistik (SoSe 2014) 
+
+8 
+
+Variablen II 
+
+Wenige oder viele Ausprägungen? 
+– Kategoriale Variablen haben nur eine begrenzte Anzahl von 
+
+Ausprägungen (Kategorien) (Beispiel: Familienstand) 
+
+– Kontinuierliche Variablen haben sehr vielen Ausprägungen, denen eine 
+
+kontinuierliche Eigenschaft zugrunde liegt (Beispiel: Ausbildung in Jahren).   
+
+ 
+
+Abzählbare oder unendlich viele Ausprägungen? 
+– Diskrete Variablen haben endlich viele / abzählbare Ausprägungen, keine 
+
+„Zwischenwerte“, nur „Sprünge“ (Beispiel: Kinderzahl) 
+
+– Stetige Variablen haben in jedem beliebig kleinen Intervall unendlich viele 
+
+Ausprägungen (Beispiel: Nettoeinkommen) 
+
+ 
+
+Individual- oder Kollektivmerkmal? 
+– Beispiel für Individualmerkmal: Alter oder Bildung einer Person 
+– Beispiel für Kollektivmerkmal: Prozentsatz CDU-Wähler 
+
+Katrin Golsch 
+
+Wirtschafts- und Sozialstatistik (SoSe 2014) 
+
+9 
+
+Variablen III 
+
+Position in der Hypothese 
+
+Bildung 
+
+Einkommen 
+
+Unabhängige Variable  
+Erklärende Variable  
+
+Abhängige Variable  
+
+Zu erklärende Variable  
+
+Als unabhängig werden Variablen 
+
+betrachtet, die einen Einfluss auf die 
+
+abhängige Variable ausüben.  
+
+Als abhängig werden Variablen 
+
+bezeichnet, die erklärt werden sollen. 
+ 
+
+Katrin Golsch 
+
+Wirtschafts- und Sozialstatistik (SoSe 2014) 
+
+10 
+
+Gütekriterien der Messung I 
+
+Zentral Fragen 
+ 
+•
+
+Inwieweit sind die Ergebnisse unabhängig von der Person, die das 
+Messinstrument verwendet?  
+ 
+ 
+Inwieweit können Messergebnisse zuverlässig reproduziert werden? 
+ 
+ 
+
+•
+
+• Wie genau misst ein Messinstrument das, was gemessen werden soll? 
+
+ 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+11 
+
+Gütekriterien II  
+
+Objektivität 
+• Unabhängigkeit der Messergebnisse von der Person, die das Instrument anwendet  
+• Durchführungsobjektivität (z.B. Interviewereffekte)  
+• Auswertungsobjektivität (z.B. Interpretation von qualitativen Interviews) 
+
+ 
+
+Reliabilität (Zuverlässigkeit) 
+• Maß für die Reproduzierbarkeit von Messergebnissen  
+
+– Paralleltest-Methode (Verschiedene Messinstrumente)  
+– Test-Retest-Methode (Wiederholte Messung)  
+– Methode der Testhalbierung (Aufteilung von Indikatoren in zwei Hälften)  
+
+ 
+
+Validität (Gültigkeit) 
+• Grad der Genauigkeit mit dem ein Instrument ein theoretisches Konstrukt misst 
+• Objektive und zuverlässige Messinstrumente müssen nicht valide sein! 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+12 
+
+MESSNIVEAU 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+13 
+
+Messniveaus (Skalenniveaus) 
+
+Ausprägungen sind Eigenschaften der Merkmalsträger. 
+ 
+Beispiele:  
+
+Variable 
+
+Schulabschluss 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+Einkommen 
+
+Familienstand 
+
+Ausprägungen 
+
+Realschulabschluss, Abitur, kein Abschluss usw. 
+
+5000€, 2500€, 2412€, 50€, 6400€, usw. 
+
+Ledig, verheiratet, geschieden, usw.  
+
+Das Skalenniveau gibt an, welche Vergleichsaussagen und welche 
+rechnerischen Operationen die Ausprägungen von Variablen zulassen!  
+
+ 
+
+Katrin Golsch 
+
+Wirtschafts- und Sozialstatistik (SoSe 2014) 
+
+14 
+
+Nominales Messniveau 
+
+Die Ausprägungen lassen sich nur daraufhin vergleichen ob sie bei zwei 
+Merkmalsträgern gleich /unterschiedlich sind. 
+
+Quelle: Aus dem SOEP Personenfragebogen, Befragungsjahr 2009.  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+15 
+
+Ordinales Messniveau  
+
+Ausprägungen lassen sich daraufhin vergleichen ob sie bei zwei 
+Merkmalsträgern gleich  /unterschiedlich sind und bilden eine Rangfolge. 
+
+ 
+
+Quelle: SOEP Personenfragebogen, Befragungsjahr 2009.  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+16 
+
+Quelle: Allbus,  
+Befragungsjahr 2010.  
+
+Metrisches Messniveau I 
+
+Ausprägungen lassen sich daraufhin vergleichen ob sie bei zwei 
+Merkmalsträgern gleich /unterschiedlich sind, bilden eine Rangfolge und die 
+Abstände zwischen Ausprägungen können interpretiert werden. 
+
+Quelle: Allbus, Befragungsjahr 2010.  
+
+Es gibt keinen natürlichen Nullpunkt! => Intervallskaliert  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+17 
+
+Metrisches Messniveau II 
+
+Ausprägungen lassen sich daraufhin vergleichen ob sie bei zwei 
+Merkmalsträgern gleich /unterschiedlich sind, bilden eine Rangfolge und die 
+Abstände zwischen Ausprägungen können interpretiert werden. 
+
+Quelle: Allbus, Befragungsjahr 2010.  
+
+Die Ausprägung 0 bedeutet, dass das Merkmal empirisch nicht vorhanden ist!  
+=> Verhältnisskaliert (Ratioskaliert) 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+18 
+
+Überblick 
+
+Skalenniveaus (Messniveaus) 
+
+Niveau 
+
+Identität 
+
+Ränge 
+
+Abstände 
+
+Nullpunkt 
+
+Nominal 
+
+Ordinal 
+
+Intervall 
+
+Ratio 
+
+ja 
+
+ja 
+
+ja 
+
+ja 
+
+nein 
+
+nein 
+
+nein 
+
+ja 
+
+ja 
+
+ja 
+
+nein 
+
+nein 
+
+ja 
+
+ja 
+
+nein 
+
+ja 
+
+Katrin Golsch 
+
+Wirtschafts- und Sozialstatistik (SoSe 2014) 
+
+19 
+
+Beispiel  
+
+Links-Rechts Selbsteinschätzung 
+
+Informationsgehalt einer Variablen hängt vom Messniveau ab! 
+ 
+Das Messniveau ist häufig wählbar, d.h. es wird bewusst festgelegt!  
+
+Quelle: Aus Dieter Roth(2008): Empirische Wahlforschung: Ursprung, Theorien, Instrumente und Methoden, Wiesbaden: VS Verlag  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+20 
+
+Beispiel  
+
+Links-Rechts Selbsteinschätzung 
+
+Quelle: Aus dem SOEP Personenfragebogen im Befragungsjahr 2009.  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+21 
+
+SKALEN 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+22 
+
+Beispiel: Berufswerte  
+
+Multi-Itemskalen 
+
+• Wichtigkeit verschiedener Merkmale beruflicher Arbeit 
+• Berufswerte mitentscheidend für die Berufswahl, da sie Interessen 
+
+bestimmen und Orientierung bieten  
+
+• Multi-Itemskala mit vier Dimensionen   
+
+– Intrinsische Berufswerte 
+– Extrinsische Berufswerte 
+– Soziale Berufswerte  
+– Work-Life-Balance 
+
+ 
+ 
+Fragetext  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+23 
+
+Beispiel: Berufswerte  
+
+Multi-Itemskalen 
+
+Extrinsisch 
+
+Intrinsisch 
+
+Sozial 
+
+External 
+
+Katrin Golsch 
+
+Q
+u
+e
+
+l
+l
+
+e
+:
+ 
+
+ 
+
+A
+u
+s
+ 
+d
+e
+m
+S
+O
+E
+P
+ 
+J
+u
+g
+e
+n
+d
+f
+r
+a
+g
+e
+b
+o
+g
+e
+n
+
+,
+ 
+
+B
+e
+f
+r
+a
+g
+u
+n
+g
+s
+j
+a
+h
+r
+ 
+2
+0
+0
+9
+
+.
+ 
+ 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+24 
+
+Einstellungsmessung 
+Likert Skala 
+
+• Grundidee  
+
+– Einstellung wird durch die Summe der jeweiligen Grade der 
+
+Zustimmung bezüglich einer Vielzahl von Aussagen (Items) erfasst  
+ 
+
+• Konstruktion einer Likert-Skala  
+
+– Sammlung einer großen Zahl von Items 
+– Pretest der Items  
+– Berechnung von Skalenwerten für jeden Befragten (additiver Index)  
+– Item-Analyse und Aussonderung ungeeigneter Items  
+
+• Items, die von Personen mit unterschiedlichem Skalenwert gleich 
+
+beantwortet werden,  
+
+• Items, die von Personen mit gleichem Skalenwert unterschiedlich 
+
+beantwortet werden  
+
+ 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+25 
+
+Beispiel  
+
+Einstellungen zur Berufstätigkeit der Frau  
+
+       1                              2                             3                               4 
+
+Beispiele für Items:  
+
+Katrin Golsch 
+
+A 
+
+B 
+
+C 
+
+D 
+
+Empirische Sozialforschung                                                                                
+
+Quelle: Allbus,  Befragungsjahr 2012. 
+26 
+
+(WS 2014/2015) 
+
+Einstellungen zur Berufstätigkeit der Frau  
+
+Beispiel  
+
+0.90
+
+0.80
+
+0.70
+
+0.60
+
+0.50
+
+0.40
+
+0.30
+
+0.20
+
+0.10
+
+0.00
+
+Westdeutschland
+
+Ostdeutschland
+
+1982
+
+1991
+
+1992
+
+1996
+
+2000
+
+2004
+
+2008
+
+2012
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+27 
+
+ 
+.
+g
+n
+u
+n
+h
+c
+e
+r
+e
+B
+e
+n
+e
+g
+e
+ 
+,
+
+i
+
+ 
+
+2
+1
+0
+2
+-
+2
+8
+9
+1
+
+ 
+,
+s
+u
+b
+
+l
+l
+
+A
+
+Das Semantische Differential / Polaritätsprofil  
+
+Einstellungsmessung 
+
+• Methode zur Erhebung und Darstellung charakteristischer 
+
+Merkmalsmuster von Objekten (Personen, Wörter, Gegenstände)  
+
+ 
+
+• Reihe von bi-polaren Adjektiven 
+
+ 
+
+• Beurteilung der Eigenschaftspaare erfolgt anhand einer Rating-Skala (z.B. 
+
+von 1 bis 7, oder von -3 über 0 bis +3)  
+
+ 
+
+• Verbindet man die einzelnen Bewertungspunkte miteinander, erhält man 
+
+zum Stimuluswort ein entsprechendes Profil  
+
+ 
+
+•
+
+Ziel:  
+– Unterschiede und/oder Ähnlichkeiten zwischen 
+
+Untersuchungsobjekten feststellen  
+
+– Charakteristische Kombination von Variablenwerten (Profil) 
+
+beschreiben 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+28 
+
+Charaktereigenschaften von Kleinkindern  
+
+Beispiel  
+
+Quelle: SOEP Fragebogen „Ihr Kind im Alter von 2 oder 3 Jahren“,  Befragungsjahr 2011. 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+29 
+
+INDIZES  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+30 
+
+Indizes  
+
+• Variable, deren Werte aus mehreren Variablen zusammengesetzt ist 
+
+ 
+
+• Unterschiedliche Rechenoperationen möglich (z.B.: Addition) 
+
+•
+
+ 
+Indizes werden üblicherweise verwendet, um unterschiedliche 
+Teildimensionen eines Konstrukts zu berücksichtigen  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+31 
+
+OECD Better Life Index  
+
+Besser leben – wie und wo? 
+
+•
+  
+•
+
+Beschreibt die allgemeine Lebensqualität 
+
+24 Einzelindikatoren 
+
+ 
+
+• Daten aus amtlichen Quellen (z.B.: Datenbanken 
+
+der OECD, Statistikämter einzelner Länder) 
+
+ 
+
+•
+
+•
+
+•
+
+„Materielle Lebensbedingungen“: Einkommen, 
+Vermögen, Beschäftigung, Arbeitslosigkeit und die 
+Wohnsituation  
+
+ 
+
+„Lebensqualität“: Gesundheit, das Verhältnis von 
+Arbeit zu Freizeit, Bildung, soziale Bindungen, 
+politische Beteiligung, Umweltqualität, Sicherheit 
+
+ 
+
+Spezifische Indikatoren für jeden Teilbereich. Für 
+Beschäftigung z.B. Beschäftigungsquote, 
+Erwerbseinkommen, Langzeitarbeitslosenquote 
+und Arbeitsplatzsicherheit 
+ 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+32 
+
+OECD Better Life Index  
+
+Besser leben – wie und wo? 
+
+Ein interaktives Instrument  
+ 
+Quelle: http://www.oecdbetterlifeindex.org/  
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+33 
+
+ZUM SCHLUSS 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+34 
+
+Literatur 
+
+Basistext 
+ 
+•
+
+Fragestellungen, Variablen, Hypothesen, Theorien 
+– S. 61-71; 116-140 in: Diekmann, Andreas (2012): Empirische 
+
+Sozialforschung. Grundlagen, Methoden, Anwendungen. Reinbek: 
+Rowohlt. 
+ 
+
+• Messen, Skalen, Indizes 
+
+– S. 230-261 in: Diekmann, Andreas (2012): Empirische Sozialforschung. 
+
+Grundlagen, Methoden, Anwendungen. Reinbek: Rowohlt. 
+ 
+
+Katrin Golsch 
+
+Empirische Sozialforschung                                                                                
+
+(WS 2014/2015) 
+
+35 
+
+Thema in der nächsten Woche 
+
+Forschungs- und Erhebungsdesigns  
+ 
+•
+
+Inhalt: 
+– Querschnitt- und Längsschnitterhebung  
+– Experimentelle und Quasiexperimentelle Designs  
+
+ 
+
+• Basistext:  
+
+– S. 303-312; 318-328; 329-350 in: Diekmann, Andreas (2012): 
+
+Empirische Sozialforschung. Grundlagen, Methoden, Anwendungen. 
+Reinbek: Rowohlt. 
+ 
+
+ 
+
+Katrin Golsch 
+
+Soziale Ungleichheit und Sozialstruktur                                                                         
+
+(WS 2014/2015) 
+
+36 
+
+

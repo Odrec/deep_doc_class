@@ -1,0 +1,1490 @@
+Information Sciences 180 (2010) 3434–3443
+
+Contents lists available at ScienceDirect
+
+Information Sciences
+
+j o u r n a l h o m e p a g e : w w w . e l s e v i e r . c o m / l o c a t e / i n s
+
+Covariance intersection based image fusion technique with
+application to pansharpening in remote sensing
+Qing Guo a,b, Siyue Chen b, Henry Leung b, Shutian Liu a,*
+a Harbin Institute of Technology, Department of Physics, Harbin 150001, PR China
+b Department of Electrical and Computer Engineering, University of Calgary, Calgary, Alberta, Canada T2N 1N4
+
+a r t i c l e
+
+i n f o
+
+a b s t r a c t
+
+Article history:
+Received 14 November 2009
+Received in revised form 29 April 2010
+Accepted 6 May 2010
+
+Keywords:
+Covariance intersection
+Image fusion
+Expectation maximization
+Multi-spectral image
+Panchromatic image
+Pansharpening
+
+1. Introduction
+
+Image fusion of multi-spectral images and panchromatic images has been widely applied
+to imaging sensors. Multi-spectral images are rich in spectral information whereas pan-
+chromatic images have relatively higher spatial resolution. In this paper, we consider the
+image fusion as an estimation problem, that is to estimate the ideal scene of multi-spectral
+images at the resolution of panchromatic images. We propose a method of combining the
+covariance intersection (CI) principle with the expectation maximization (EM) algorithm to
+develop a novel image fusion approach. In contrast to other fusion methods, the proposed
+scheme takes cross-correlation among data sources into account, and thus provides consis-
+tent and accurate estimates through convex combinations. Since the covariance informa-
+tion is usually unknown in practice, the EM method is employed to provide a maximum
+likelihood estimate (MLE) of the covariance matrix. Real multi-spectral and panchromatic
+images are used to evaluate the effectiveness of the proposed EM–CI method. The proposed
+algorithm is found to preserve both the spectral information of the multi-spectral image
+and the high spatial resolution information of the panchromatic image more effectively
+than the conventional image fusion techniques.
+
+Ó 2010 Elsevier Inc. All rights reserved.
+
+With the rapid growth of the internet and other electronic sources of information, the problem of coherent merging infor-
+mation from multiple sources has become an important issue [21,30,31]. As one type of information processing technique,
+the image fusion is widely used in many practical applications. Images captured by multiple sensors often contain comple-
+mentary and redundant information. An effective fusion process will result in an improved image, which contains more com-
+plete information and should be more suitable for human visual perception and object recognition [2,20]. In this study, we
+consider fusion of multi-spectral (MS) images and panchromatic (Pan) images, which are widely used in remote sensing. This
+fusion scheme is often referred as pansharpening [13]. The MS images, such as acquired by IKONOS and QuickBird satellites,
+usually have four bands of spectral information (i.e., red (R), green (G), blue (B), and near infrared (NIR)). Meanwhile, the Pan
+image has good spatial resolution. Therefore, the goal of fusing these images is to generate a high-resolution MS image,
+which can be used more effectively for applications, such as land classiﬁcation and road detection.
+
+Image fusion can be classiﬁed as pixel-level, feature-level and symbol-level [3]. Fusion of MS and Pan images at pixel-le-
+vel is traditionally handled by the intensity-hue-saturation (IHS) transform methods [4,6], the Brovey transform methods
+[7], the principal component analysis (PCA) methods [6,5,24], the highpass ﬁltering (HPF) method [25] and by the wavelet
+
+* Corresponding author. Tel./fax: +86 451 86418042.
+
+E-mail address: stliu@hit.edu.cn (S. Liu).
+
+0020-0255/$ - see front matter Ó 2010 Elsevier Inc. All rights reserved.
+doi:10.1016/j.ins.2010.05.010
+
+Q. Guo et al. / Information Sciences 180 (2010) 3434–3443
+
+3435
+
+transform (WT) method [9,14,23,33]. The IHS transform method ﬁrst transforms three MS bands from RGB color space to the
+spatial (I) and spectral (H, S) information space. Fusion is then performed by replacing the intensity components in the IHS
+space with the Pan image. The IHS method can preserve the spatial resolution of the Pan image, however, according to Prasad
+et al. [22], it severely distorts the spectral information of the MS image. The method based on Brovey transform is a simple
+color normalized method. It also usually introduces distortion to the spectral information. The same problem of spectral dis-
+tortion is also found in the PCA method because fusion is performed by replacing the ﬁrst principal component of the MS
+image with the Pan image, which results in a signiﬁcant loss of spectral information. The HPF method simply adds the
+high-frequency components of the Pan image to the MS image. However, choosing a proper ﬁlter size is difﬁcult in this
+method.
+
+The fusion method based on WT is also popular. Zhou et al. [33] employ WT to fuse landsat TM and SPOT Pan images. The
+SPOT image and each spectral band of the TM images are decomposed into an orthogonal wavelet representation at a given
+resolution, which consists of an approximation image and a set of spatially-oriented detailed images. Band by band, the
+approximation image from each TM band is combined with the detailed image from SPOT. Then the inverse WT is performed
+to obtain the fused image. The spectral and spatial quality of the fused image based on this method is better than those based
+on the IHS transform, PCA, and the Brovey transform [33].
+
+In this paper, our motivation is to generate a high resolution MS image with more information and better quality than
+those provided by individual sensor image alone. The image fusion problem is considered as a statistical estimation problem.
+More speciﬁcally, the objective is to estimate the ideal high-resolution MS image from the observed MS image and the ob-
+served Pan image. To this end, covariance intersection (CI), which has been widely used in radar track fusion [28], is em-
+ployed. CI can produce consistent estimate for any degree of cross-correlation between the input sources through convex
+combination [12,18]. In addition, CI enforces estimation consistency by means of convex combination of the inverse of
+covariance matrices. When CI is applied to image fusion, it treats the ideal high-resolution MS image as a linear combination
+of the ideal MS and Pan images and the fused coefﬁcients are selected through the convex combination of weight optimiza-
+tion. However, many image fusion methods, such as conventional WT, choose the fused coefﬁcients simply by selecting lar-
+ger or by replacement [32,19,15], without using any rigorous procedure.
+
+To use the convex combination in CI, the covariance information of the estimation error is required. But for most imaging
+applications, this information is not available. Here, we use the expectation maximization (EM) to give a maximum likeli-
+hood estimate (MLE) of the covariance information. Formalized by Dempster et al. [8], the EM algorithm is an iterative pro-
+cedure that estimates both the parameters and the missing or unobservable data during an iteration. The approach ﬁrst
+computes the approximation to the expectation of the log-likelihood function of the complete data conditioned on the cur-
+rent parameter estimate, which is referred as the expectation (E-step). In this step, the current incomplete data estimate is
+calculated. Next, a new parameter estimate is computed by ﬁnding the value of the parameter that maximizes the function
+found in the E-step. This is called the maximization step (M-step). In this study, the ideal MS and Pan images are treated as
+the missing data, and the covariances of them are treated as the parameters to be estimated by EM.
+
+The remainder of this paper is organized as follows. The problem of fusing the MS image and the Pan image is formu-
+lated in Section 2. This formulation justiﬁes the capability of CI to give a consistent and unbiased estimation for any de-
+gree of the cross-correlation, and can be used to optimally fuse the images. In Section 3, the EM is developed to help
+performing CI and the fast performing CI with weight in a suboptimal linear way to give the consistent estimation through
+convex combination is presented. Performance evaluation of the EM–CI method using real image sensory data is accom-
+plished in Section 4 and shows that the EM–CI method preserves the spectral information very well. Section 5 concludes
+this paper.
+
+2. Problem formulation
+
+The observed MS image and the observed Pan image are denoted as ~x1 and ~x2, respectively, which are the vectors com-
+posed of pixel values. To simplify the derivation, one band of the MS image as ~x1 is used for the derivation example, the other
+bands have the same expressions. Due to sensor distortion and noise in the capture process of MS and Pan images, the ob-
+served images can be modeled as ‘‘linear observation plus Gaussian noise” [10,16]. That is,
+
+i ¼ 1; 2;
+
+~xi ¼ Hixi þ ni;
+
+ð1Þ
+where xi denotes the vector of pixel values from an ideal image, Hi represents the linear observation operator which is a
+known observation matrix. Typical examples of the linear observation operator Hi include optical blur, motion blur, tomo-
+graphic projections. ni is assumed to be zero-mean white Gaussian noise with covariance
+Pxixi which is deﬁned in the next
+paragraph.
+
+b
+
+From (1), it is noted that neither the ideal image xi nor its statistics are available. However, the consistent estimate ^xi can
+
+be obtained. That is, if we deﬁne
+
+b
+Pxixi ¼ ð~xi   ^xiÞð~xi   ^xiÞT ;
+
+i ¼ 1; 2:
+
+and
+
+Pxixi ¼ E½ðxi   ^xiÞðxi   ^xiÞT;
+
+i ¼ 1; 2;
+
+ð2Þ
+
+ð3Þ
+
+3436
+
+Q. Guo et al. / Information Sciences 180 (2010) 3434–3443
+
+we have [11]
+
+b
+
+i ¼ 1; 2:
+
+Pxixi P Pxixi ;
+
+ð4Þ
+The inequality is in the sense of matrix positive deﬁniteness, i.e., A > B if and only if A   B is positive deﬁnite. It should be
+noted that the matrix ^Pxixi represents the estimation error covariance which is considered to be equivalent to the covariance
+matrix of the noise ni. We further deﬁne the cross-correlation as
+
+Px1x2 ¼ E½ðx1   ^x1Þðx2   ^x2ÞT:
+
+Our objective is to construct a linear, unbiased estimate ^x that combines ^x1 and ^x2, i.e.,
+
+^x ¼ M1^x1 þ M2^x2;
+
+so that
+
+E½x   ^x ¼ 0;
+
+provided that
+
+ð5Þ
+
+ð6Þ
+
+ð7Þ
+
+M1 þ M2 ¼ I:
+
+ð8Þ
+In addition, we want to determine a consistent estimate ^Pxx, for Pxx ðPxx ¼ E½ðx   ^xÞðx   ^xÞTÞ, and to ﬁnd a pair of M1 and M2
+such that the upper bound ^Pxx is optimal in the sense of minimal trace.
+
+According to the deﬁnition of Pxx, we have
+
+Pxx ¼ M1Px1x1MT
+
+1 þ M1Px1x2MT
+
+2 þ M2Px2x1MT
+
+1 þ M2Px2x2MT
+2:
+
+b
+
+b
+
+Pxx ¼ M1
+
+Px2x1MT
+If Px1x2 ¼ 0, for any given M1 and M2, the estimate
+
+Px1x2MT
+
+Px1x1MT
+
+1 þ M1
+
+2 þ M2
+
+1 þ M2
+
+Px2x2MT
+2:
+
+b
+b
+
+b
+
+b
+b
+
+Similarly,b
+b
+b
+
+Px2x2MT
+2
+
+Px1x1MT
+
+Pxx ¼ M1
+
+1 þ M2
+b
+will be consistent ð
+b
+b
+b
+x1x1 þ
+x2x2Þ 1;
+P 1
+P 1
+b
+b
+b
+Px1x1 þ
+x1x1 ¼
+Px2x2ð
+P 1
+Pxx
+Px1x1 þ
+Px1x1ð
+x2x2 ¼
+P 1
+Pxx
+
+Pxx ¼ ð
+M1 ¼
+M2 ¼
+
+b
+b
+b
+
+b
+b
+Px2x2Þ 1;
+Px2x2Þ 1:
+
+Pxx P PxxÞ as a direct consequence of (4). The trace of the above
+
+b
+
+Pxx is then minimized by
+
+ð9Þ
+
+ð10Þ
+
+ð11Þ
+
+ð12Þ
+
+Since the cross-correlation between x1 and x2 is generally non-zero and unknown, CI is employed here to deal with the sit-
+uation when Px1x2
+
+–0.
+
+3. EM–CI for image fusion
+
+By virtue of statistical property of noise ni in (1), we can compute the conditional probability density function (PDF) of ~xi
+
+as [1]
+
+
+b
+Pxixij 1=2 exp   1
+2
+b
+Pxixij   S
+2
+
+n
+
+b
+
+b
+
+
+
+o
+
+pð~xijxiÞ ¼ ð2pÞ S=2j
+
+½~xi   HixiT
+
+P 1
+xixi
+
+½~xi   Hixi
+
+;
+
+i ¼ 1; 2;
+
+ð13Þ
+
+where S denotes the number of pixels within the vector ~xi. Taking the logarithm of (13), the logarithmic likelihood function is
+thus
+
+b
+Lðxij~xiÞ ¼   1
+2
+Pxixi is the diagonal matrix under the white Gaussian noise assumption. The E-step of EM computes the
+
+logð2pÞ   1
+2
+
+xixi½~xi   Hixi
+P 1
+
+½~xi   HixiT
+
+i ¼ 1; 2:
+
+ð14Þ
+
+logj
+
+;
+
+In factor analysis,
+expected log-likelihood function, i.e.,
+
+½
+
+b
+EP ¼ E Lðxij~xiÞj~xi
+In the M-step, ^xi and
+lihood function are set as zero. With the constant term ignored, we have,
+
+;
+ð15Þ
+Pxixi are obtained by maximizing (15). More speciﬁcally, the partial derivatives of the expected log-like-
+
+i ¼ 1; 2:
+
+Q. Guo et al. / Information Sciences 180 (2010) 3434–3443
+
+i
+
+i ¼ 0;
+HT
+i þ Hi^xi^xT
+
+i ¼ 1; 2;
+þ 1
+2
+
+i HT
+i
+
+b
+Pxixi ¼ 0;
+
+i ¼ 1; 2:
+
+b
+
+b
+
+P 1
+xixi
+
+h
+
+i   Hi^xi
+HT
+
+~xi~xT
+
+i   2Hi^xi~xT
+b
+
+P 1
+xixi
+
+~xi;
+
+b
+
+@EP
+@xi
+@EP
+Pxixi
+@
+
+¼ ~xi
+P 1
+xixi
+¼   1
+2
+b
+
+Solving these equations generate
+
+^xi ¼ ðHT
+
+i
+
+P 1
+xixi
+
+HiÞ 1HT
+
+i
+
+i ¼ 1; 2;
+
+and
+
+b
+b
+Pxixi ¼ ~xi~xT
+i   2Hi^xi~xT
+i ¼ 1; 2:
+Based on ^xi and
+Pxixi, i = 1,2, we can combine ^x and
+of the points
+
+i þ Hi^xi^xT
+
+i HT
+i ;
+
+b
+
+ð19Þ
+Pxx using CI. For a covariance matrix P, the covariance ellipse is the locus
+
+3437
+
+ð16Þ
+
+ð17Þ
+
+ð18Þ
+
+BPðgÞ ¼ fx : ðx   xÞTP 1ðx   xÞ ¼ gg;
+
+ð20Þ
+where g is a constant and x is the mean of x. The covariance ellipse is a convenient way of visualizing the relative size of
+covariance matrices. If P1 < P2, BP1ðgÞ  BP2ðgÞ. From the geometric interpretation of (10), the covariance ellipse of
+Pxx always
+lies within the intersection of the covariance ellipses of
+Px1x2 , as shown in Fig. 1.
+Hence, a method which ﬁnds a
+Pxx which encloses the intersection region must be consistent even if there is no knowledge
+about Px1x2 [26,27]. When Px1x2 is unknown, in order to obtain an upper bound of (9), the inequality
+
+Px2x2 , for any possible choice of
+
+Px1x1 and
+
+b
+
+b
+
+b
+
+b
+
+b
+
+(
+
+
+ﬃﬃﬃ
+
+c
+
+p
+
+E
+
+M1ðx1   ^x1Þ   1ﬃﬃﬃ
+
+cp M2ðx2   ^x2Þ
+
+
+
+
+ﬃﬃﬃ
+
+c
+
+p
+
+M1ðx1   ^x1Þ   1ﬃﬃﬃ
+
+
+cp M2ðx2   ^x2Þ
+
+)
+
+is utilized, where c > 0 is a scalar. It follows that
+
+cM1Px1x1MT
+
+1 þ 1
+c
+
+M2Px2x2MT
+
+2 P M1Px1x2MT
+
+2 þ M2Px2x1MT
+1:
+
+From (4) and (22), a consistent estimate
+
+Pxx for Pxx can be obtained as
+
+b
+
+b
+
+
+
+
+1 þ 1 þ 1
+c
+
+b
+
+Pxx ¼ ð1 þ cÞM1
+
+Px1x1MT
+
+M2
+
+Px2x2MT
+2:
+
+The value of c is then chosen to minimize the trace of
+
+b
+
+Pxx. Note that
+
+b
+
+T
+
+P 0
+
+ð21Þ
+
+ð22Þ
+
+ð23Þ
+
+b
+
+Pxx always lies inside the intersection.
+
+Fig. 1. Covariance
+
+b
+
+3438
+
+Trð
+
+PxxÞ ¼ TrðM1
+
+Q. Guo et al. / Information Sciences 180 (2010) 3434–3443
+
+b
+
+b
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+q
+2Þ
+Px2x2MT
+
+b
+1Þ þ TrðM2
+
+b
+
+q
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+1Þ þ 1
+2Þ þ cTrðM1
+c
+1Þ
+Px1x1MT
+
+1ÞTrðM2
+
+Px1x1MT
+
+Px2x2MT
+
+Px1x1MT
+
+Px1x1MT
+
+TrðM1
+
+TrðM1
+
+b
+
+b
+
+¼
+
+b
+
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+q
+b
+2Þ P TrðM1
+2Þ
+Px2x2MT
+
+Px2x2MT
+
+TrðM2
+
+2
+
+;
+
+TrðM2
+
+þ
+
+b
+
+Px1x1MT
+
+1Þ þ TrðM2
+
+b
+b
+b
+P 1
+Pxx
+x1x1
+Pxx ¼
+
+b
+b
+; M2 ¼ x2
+Px2x2 ; c ¼ x2
+x1
+Pxxðx1
+x1x1 þ x2
+P 1
+Pxx;
+
+x2x2Þ
+P 1
+
+b
+
+b
+
+b
+
+b
+
+Pxx
+
+, (23) can be further written as
+
+b
+b
+b
+
+where the equality holds when
+
+þ 2
+
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+vuut
+2Þ
+Px2x2MT
+1Þ
+Px1x1MT
+
+TrðM2
+TrðM1
+
+:
+
+c ¼
+
+b
+
+b
+
+For a particular choice, i.e., if M1 ¼ x1
+P 1
+x2x2
+
+Pxx ¼ x1
+
+Pxx þ x2
+
+P 1
+x1x1
+
+Pxx
+
+Pxx
+
+b
+
+b
+b
+
+b
+b
+which is satisﬁed by
+x1x1 þ x2
+P 1
+b
+Meanwhile, (6) becomes
+
+xx ¼ x1
+P 1
+b
+
+P 1
+x2x2
+
+:
+
+b
+
+b
+
+^x ¼ x1
+
+Pxx
+
+P 1
+x1x1
+
+^x1 þ x2
+
+Pxx
+
+b
+
+P 1
+x2x2
+
+^x2
+
+b
+
+2Þ
+Px2x2MT
+
+ð24Þ
+
+ð25Þ
+
+ð26Þ
+
+ð27Þ
+
+ð28Þ
+
+ð29Þ
+
+ð30Þ
+
+ð31Þ
+
+ð32Þ
+
+with nonnegative coefﬁcients x1 and x2 obeying
+
+x1 þ x2 ¼ 1:
+
+Here, (27) and (28) as the CI equations are obtained.
+
+b
+
+The weighting coefﬁcients, x1 and x2, are usually chosen to minimize the trace of
+
+Pxx. The minimizing process requires
+b
+optimization of a nonlinear cost function which is convex with respect to x1 and x2 [18]. The minimized trace is obtained by
+b
+an exhaustive search of x1 and x2 within the range of [0,1]. This process has a high computational burden. Therefore a sub-
+b
+b
+optimal non-iterative linear algorithm is necessary. It is well known that the trace of the covariance matrix
+Pxixi , i = 1,2, pro-
+vides the uncertainty measure of the estimation on ^xi, i = 1,2. If Trð
+Px2x2Þ, it infers that ^x2 has a much larger
+estimation error than ^x1. We thus have ^x 
+Px2x2Þ,
+Px1x1Þ ¼ Trð
+it is expected that ^x  1
+2. Considering these, an additional linear
+Pxx
+constraint
+
+b
+Px1x1Þ  Trð
+P 1
+x1x1
+^x2. In other words, x1 ¼ x2 ¼ 1
+
+^x1, which implies x1  1 and x2  0. Similarly, if Trð
+
+^x1 þ 1
+
+b
+
+b
+
+b
+
+2
+
+is proposed. Substituting (29) into (30), it is obtained that
+
+x1Trð
+
+2
+
+Pxx
+
+b
+
+b
+
+P 1
+x1x1
+
+Pxx
+P 1
+x2x2
+
+b
+b
+b
+Px1x1Þ   x2Trð
+Px2x2Þ ¼ 0
+b
+b
+b
+b
+Px2x2Þ ¼ 0;
+Px1x1Þ   ð1   x1ÞTrð
+b
+Px1x1Þ   x2 Trð
+Px2x2Þ ¼ 0:
+b
+Px2x2Þ > 0, x1 and x2 can be computed by
+b
+Px2x2Þ
+b
+Px1x1Þ þ Trð
+b
+Px1x1Þ
+b
+Px1x1Þ þ Trð
+PxixiÞ P 0 ensure that 0 6 xi 6 1, i = 1,2.
+
+b
+Px2x2Þ ;
+b
+Px2x2Þ :
+
+Trð
+
+Trð
+
+Trð
+
+x1Trð
+b
+ð1   x2ÞTrð
+Px1x1Þ þ Trð
+Trð
+
+x1 ¼
+
+x2 ¼
+
+When Trð
+
+It is noted that Trð
+
+4. Performance evaluation
+
+We treat image fusion as an estimation problem in this paper. The observed images (MS and Pan images) are modeled as a
+linear transformation of the ideal images plus Gaussian noise. The goal is to recover the ideal images and combine them
+through convex combination of the inverse of covariance matrices. And we use the trace of the covariance matrix of the esti-
+mation error as the metric of image fusion performance. The expression of this metric cannot be derived, because there is no
+way to get the cross-correlation between x1 and x2. But its upper bound can be obtained due to the CI theory. To minimize
+the upper bound, the covariance matrix
+Pxi;xi and the unbiased estimate ^xi are estimated using the EM algorithm. The weights
+w1 and w2 for the observed images, respectively, are also obtained by an exhaustive search. Furthermore, to reduce the com-
+puting complexity required to ﬁnd w1 and w2, we also derived a suboptimal linear algorithm.
+
+b
+
+In this paper, QuickBird MS and Pan images are used to evaluate the performance of the proposed EM–CI method. The
+spatial resolution of the MS image is 2.8 m (meters) while it is 0.7 m for the Pan image. The low-resolution MS image is
+
+Q. Guo et al. / Information Sciences 180 (2010) 3434–3443
+
+3439
+
+re-sampled using cubic interpolation to the same size as the high-resolution Pan image, as shown in Figs. 2(a) and 3(a). The
+Pan images are shown in Figs. 2(b) and 3(b).
+
+Our objective is to increase the spatial resolution of MS image by injecting spatial details of the Pan image into the MS
+image, while preserving spectral information of the MS image as much as possible. It is known that the spatial detailed infor-
+mation of Pan image is mostly carried by its high-frequency components, while the spectral information of MS image is
+
+Fig. 2. Experiments on the ﬁrst pair of QuickBird images: (a) the re-sampled multi-spectral image; (b) the panchromatic image; (c) the fused image by EM–
+CI; (d) the fused image by WT; (e) the fused image by PCA.
+
+3440
+
+Q. Guo et al. / Information Sciences 180 (2010) 3434–3443
+
+Fig. 3. Experiments on the second pair of QuickBird images: (a) the re-sampled multi-spectral image; (b) the panchromatic image; (c) the fused image by
+EM–CI; (d) the fused image by WT; (e) the fused image by PCA.
+
+mostly carried by its low-frequency components. If the high-frequency components of the MS image are simply substituted
+by the high-frequency components of the Pan image [33,15], the spatial resolution is improved but with the loss of spectral
+information from the high-frequency components of MS image. To avoid this, WT is ﬁrst applied to the MS and Pan images to
+extract the spatial detailed information and spectral information, respectively. Then keeping the spectral information of MS
+image untouched, the spatial details of the MS and Pan images are fused using EM–CI. After the inverse WT, the fused images
+can be obtained, which are shown in Figs. 2(c) and 3(c). In order to further minimize the spectral distortion, histogram
+
+Q. Guo et al. / Information Sciences 180 (2010) 3434–3443
+
+3441
+
+matching [17] is applied to the Pan image to make its brightness and contrast best match that of each MS image band by
+band. The fusion process of Pan details is applied with a ﬁxed decomposition scale which is given by the spatial resolution
+of Pan and MS images (log2 of scale ratio).
+
+The performance of EM–CI is compared to two conventional methods. One is WT method. WT is ﬁrst applied to each MS
+band and Pan images. Band by band, the approximations are kept untouched and the spatial details are replaced by corre-
+sponding coefﬁcients of the Pan image. Then, the inverse WT is performed to obtain the fused images, which are shown in
+Figs. 2(d) and 3(d). Another method is based on PCA. The MS image is transformed with PCA, and the principle components
+are obtained. The ﬁrst principle component of the MS image is replaced with the histogram-matched Pan image. The fused
+images are obtained when the new ﬁrst principle component and the other principle components are transformed with the
+inverse PCA transform, and are shown in Figs. 2(e) and 3(e). In these ﬁgures, WT and EM–CI methods utilize the same WT
+decomposition scale.
+
+From these ﬁgures, it is observed that the fused images using EM–CI preserve most of the spectral information of MS
+images and improve the spatial resolution simultaneously. As for the fused images by WT, the spectral performance is a little
+inferior to that of EM–CI, and the spatial performance is improved. For the PCA results, they have serious spectral distortion,
+especially in the white areas of the fused image, also with the improved spatial details.
+
+Besides the subjective evaluation, the quantitative assessment of fusion performance is also necessary. Two sets of criteria
+are used in our study to evaluate the spectral and spatial performance, respectively. The spectral quality of the fused image
+can be measured by the correlation coefﬁcient (CC) and the spectral discrepancy (SPD). CC describes the correlation degree
+between two images, which provides a similarity measure of the spectral information between the fused image and the mul-
+ti-spectral image. For each band, the deﬁnition of CC can be written as
+
+P
+P
+P
+M
+m¼1
+n¼1½MSFðm; nÞ   l
+N
+
+q
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+P
+n¼1½MSRðm; nÞ   lMSR
+
+n¼1½MSFðm; nÞ   l½MSRðm; nÞ   lMSR
+
+P
+
+P
+
+M
+m¼1
+
+M
+m¼1
+
+N
+
+N
+
+CC ¼
+
+;
+
+ð33Þ
+
+where MSF(m, n) and MSR(m, n), respectively, denote the pixel value of the fused MS image and the reference image at the
+position (m, n), M  N is the image size, and l and lMSR are the intensity averages of MSF and MSR, respectively. Because we
+do not have any MS image at 0.7 m to compare with, following the Wald protocol [29], the original MS image at the reso-
+lution of 2.8 m is used as MSR. The fused image MSF is obtained by fusing the MS and Pan images at the degraded scale. More
+speciﬁcally, the original MS image at the resolution of 2.8 m is degraded to the one at the resolution of 11.2 m. Meanwhile,
+the resolution of the original Pan image is also reduced from 0.7 m to 2.8 m. Both the degraded MS image and the degraded
+Pan image are then fused to generate MSF at the resolution of 2.8 m. And CC is computed using MSF and MSR at a degraded
+scale, i.e., 2.8 m. The desirable value of CC is 1.
+
+:
+
+ð34Þ
+
+At each band, the SPD function is computed by
+
+P
+m;njMSFðm; nÞ   MSRðm; nÞj
+
+MN
+
+SPD ¼
+
+A small SPD indicates a good spectral performance.
+
+vuut
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+
+X
+
+
+
+RMSEðkÞ
+
+k¼K
+
+2
+
+lðkÞ
+
+k¼1
+
+ERGAS ¼ 100
+
+dh
+dl
+
+1
+K
+
+These indices deﬁned above only evaluate the spectral difference between corresponding bands of the original and fused
+images. In order to evaluate the global spectral quality, the following index is used. The ERGAS coefﬁcient is calculated as the
+global spectral quality description on all the fused multi-spectral bands. It is deﬁned as
+
+;
+
+ð35Þ
+
+where dh/dl is the ratio between resolutions of the high-resolution Pan image and the low-resolution MS image (for Quick-
+Bird data, dh/dl = 1/4), l(k) is the average value of the kth band and K is the number of bands. The RMSE(k) of each spectral
+band is computed by
+
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+vuut
+X
+X
+
+½ MSFkðm; nÞ   MSRkðm; nÞ2
+
+M
+
+N
+
+:
+
+RMSEðkÞ ¼ 1
+MN
+
+m¼1
+
+n¼1
+
+ð36Þ
+
+Lower values of the ERGAS coefﬁcient imply higher spectral quality for the fussed image. The desirable value of ERGAS is
+therefore 0.
+
+For the spatial quality evaluation, we use the average gradient (AG) index. AG describes the changing feature of image
+texture and the detailed information. Larger values of the AG index correspond to higher spatial resolution. The AG index
+of the fused images at each band can be computed by
+
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+h
+i
+
+i
+
+h
+
+AG ¼ 1
+MN
+
+@MSFðm;nÞ
+
+@m
+
+2 þ @MSFðm;nÞ
+2
+
+@n
+
+2
+
+:
+
+ð37Þ
+
+vuut
+
+X
+
+M
+
+X
+
+N
+
+m¼1
+
+n¼1
+
+3442
+
+Q. Guo et al. / Information Sciences 180 (2010) 3434–3443
+
+Table 1
+Objective evaluation of fusion performance using the ﬁrst pair of QuickBird images.
+
+Fusion method
+
+Band
+
+Spectral quality
+
+Spatial quality
+
+EM–CI
+
+WT
+
+PCA
+
+R
+G
+B
+
+R
+G
+B
+
+R
+G
+B
+
+CC
+
+0.9801
+0.9770
+0.9799
+
+0.9489
+0.9418
+0.9474
+
+0.8972
+0.8721
+0.8733
+
+SPD
+
+6.7148
+6.2489
+6.8925
+
+11.1940
+10.1281
+11.5785
+
+13.7137
+12.5861
+15.1401
+
+Table 2
+Objective evaluation of fusion performance using the second pair of QuickBird images.
+
+Fusion method
+
+Band
+
+Spectral quality
+
+EM–CI
+
+WT
+
+PCA
+
+R
+G
+B
+
+R
+G
+B
+
+R
+G
+B
+
+CC
+
+0.9775
+0.9762
+0.9792
+
+0.9463
+0.9428
+0.9478
+
+0.9117
+0.9226
+0.8977
+
+SPD
+
+6.7511
+6.7138
+6.9887
+
+10.8203
+10.5158
+11.3393
+
+13.2300
+11.9986
+14.7983
+
+ERGAS
+
+2.6290
+
+4.1885
+
+6.2148
+
+ERGAS
+
+3.4483
+
+5.3411
+
+6.7806
+
+AG
+
+25.3757
+20.9784
+25.7214
+
+28.1817
+23.6103
+28.9022
+
+25.3470
+23.4976
+26.0551
+
+Spatial quality
+
+AG
+
+23.5711
+21.0510
+24.1559
+
+26.3574
+23.3114
+27.4033
+
+24.6685
+23.7542
+25.9798
+
+The results of these objective evaluations on the two pairs of testing images are listed in Tables 1 and 2. From these values, it
+is obvious that the spectral distortion introduced by EM–CI is less than that of WT and PCA for both the local and global eval-
+uation of spectral quality. For the spatial performance, EM–CI has a slightly degraded performance comparing with WT and
+PCA. As human visual system is more sensitive to the spatial resolution than to the spectral one, results of EM–CI approach
+are not seem to be signiﬁcantly better than WT approach. The WT method preserves the detailed spatial information through
+the multi-scale decomposition and through the complete replacement by the Pan image at each discrimination scale. How-
+ever, due to this replacing process, the partial spectral information still contained in the high-frequency components of MS
+image is lost. For PCA, the simple replacement results in the serious loss of spectral information, because the ﬁrst principle
+component of the MS image, which contains much spectral information, is completely discarded.
+
+In contrast, EM–CI utilizes all the information from the two source images, while keeping the low-frequency components
+of MS image untouched. In addition, EM–CI uses convex combination and weight optimization to fuse two images in order to
+minimize the spectral distortion. This guarantees that EM–CI does not cause signiﬁcant spectral distortion in fusion. These
+two reasons explain the superior spectral performance of EM–CI over WT and PCA. Meanwhile, EM–CI optimally injects spa-
+tial details of the Pan image into the MS image. Thus, the detailed information from both images is preserved. Overall speak-
+ing, EM–CI is capable of enhancing the spatial quality of the MS image while preserving the spectral content to a greater
+extent. Comparing with WT and PCA methods, the proposed EM–CI method preserves more signiﬁcant spectral information
+at the cost of slightly lower improvement on spatial quality.
+
+5. Conclusions
+
+Covariance intersection, which combines multiple data sources through convex combinations for any degree of cross-cor-
+relation, is one of the most popular information fusion approach. In this paper, we propose a novel EM–CI approach for fusion
+of MS and Pan images. More speciﬁcally, the ideal MS and Pan images are estimated by EM along with the covariance matri-
+ces of the estimation error. Then, CI is applied to combine the two images and provide a consistent estimate of the high-res-
+olution MS image. The proposed method can accurately preserve both the spectral information and the high-resolution
+spatial information. Its effectiveness is demonstrated with the real remote sensing images.
+
+Acknowledgements
+
+This work was supported by the National Natural Science Foundation of China under Grant Nos. 10674038 and 10974039,
+and jointly supported by the State Scholarship of the China Scholarship Council for study abroad (Grant No. [2007]3020). Ms.
+
+Q. Guo et al. / Information Sciences 180 (2010) 3434–3443
+
+3443
+
+Qing Guo thanks Rob Edwards for his help with the English wording of the manuscript. The authors would like to thank the
+anonymous reviewers for their comments and suggestions.
+
+References
+
+[1] J.A. Bilmes, A gentle tutorial of the EM algorithm and its application to parameter estimation for Gaussian mixture and hidden Markov models,
+
+Technical Report, University of California, Berkeley, ICSI-TR-97-021, 1998.
+
+[2] F. Bovolo, L. Bruzzone, L. Capobianco, A. Garzelli, S. Marchesi, F. Nencini, Analysis of the effects of pansharpening in change detection on VHR images,
+
+IEEE Geoscience and Remote Sensing Letters 7 (1) (2010) 53–57.
+
+[3] D.M. Bulanona, T.F. Burksa, V. Alchanatisb, Image fusion of visible and thermal images for fruit detection, Biosystems Engineering 103 (2009) 12–22.
+[4] W.J. Carper, T.M. Lillesand, R.W. Kiefer, The use of intensity-hue-saturation transformations for merging SPOT panchromatic and multispectral image
+
+data, Photogrammetric Engineering and Remote Sensing 56 (1990) 459–467.
+
+[5] P.S. Chavez, A.Y. Kwarteng, Extracting spectral contrast in Landsat thematic mapper image data using selective component analysis, Photogrammetric
+
+Engineering and Remote Sensing 55 (1989) 339–348.
+
+[6] P.S. Chavez, S.C. Sildes, J.A. Anderson, Comparison of three different methods to merge multiresolution and multispectral data: Landsat TM and SPOT
+
+panchromatic, Photogrammetric Engineering and Remote Sensing 57 (1991) 295–303.
+
+[7] D.L. Civco, Y. Wang, J.A. Silander, Characterizing forest ecosystems in Connecticut by integrating Landsat TM and SPOT panchromatic data, Proceedings
+
+of the ACSM/ASPRS Annual Convention, Charlotte, NC, vol. 2, ASPRS, Reston, VA, 1995, pp. 216–224.
+
+[8] P. Dempster, N. Laird, D. Rubin, Maximum likelihood from incomplete data via the EM algorithm, Journal of the Royal Statistical Society Series B 39
+
+(1977) 1–38.
+
+[9] B.G. Duport, The use of multiresolution analysis and wavelet transform for merging Spot panchromatic and multispectral
+
+image Data,
+
+Photogrammetric Engineering and Remote Sensing 62 (1996) 1057–1066.
+
+[10] M.A.T. Figueiredo, R.D. Nowak, An EM algorithm for wavelet-based image restoration, IEEE Transactions on Image Processing 12 (8) (2003) 906–916.
+[11] A.H. Jazwinski, Stochastic Processes and Filtering Theory, Academic Press, 1970.
+[12] S.J. Julier, J.K. Uhlmann, A non-divergent estimation algorithm in the presence of unknown correlations, Proceedings of the American Control
+
+Conference 4 (1997) 2369–2373.
+
+[13] M.M. Khan, J. Chanussot, L. Alparone, Hyperspectral pansharpening using QNR optimization constraint, in: WHISPERS Conference, 2009.
+[14] H. Li, B.S. Manjunath, S.K. Mitra, Multisensor image fusion using the wavelet transform, Graphical Models and Image Processing 57 (1995) 235–245.
+[15] S. Li, J.T. Kwok, Y. Wang, Using the discrete wavelet frame transform to merge Landsat TM and SPOT panchromatic images, Information Fusion 3 (2002)
+
+17–23.
+
+[16] J.S. Lim, Two-Dimensional Signal and Image Processing, Prentice Hall Press, New Jersey, USA, 1990.
+[17] J. Morovic, J. Shaw, P.L. Sun, A fast, non-iterative and exact histogram matching algorithm, Pattern Recognition Letters 23 (2002) 127–135.
+[18] W. Niehsen, Information fusion based on fast covariance intersection ﬁltering, in: IEEE Proceedings of the Fifth International Conference on
+
+Information Fusion, vol. 2, 2002, pp. 901–904.
+
+[19] J. Núñez, X. Otazu, O. Fors, A. Prades, V. Palà, R. Arbiol, Multiresolution based image fusion with additive wavelet decomposition, IEEE Transactions on
+
+Geoscience and Remote Sensing 37 (1999) 1204–1211.
+
+[20] C. Pohl, J.L. Van Genderen, Multisensor image fusion in remote sensing: concepts, methods, and application, International Journal of Remote Sensing 19
+
+(1998) 823–854.
+
+[21] L.I. Perlovsky, Cognitive high level information fusion, Information Sciences 177 (2007) 2099–2118.
+[22] N. Prasad, S. Saran, S.P.S. Kushwaha, P.S. Roy, Evaluation of various image fusion techniques and imaging scales for forest features interpretation,
+
+Current Science 81 (2001) 1218–1224.
+
+[23] P. Scheunders, S.D. Baeker, Fusion and merging of multispectral images using multiscale fundamental forms, Journal of the Optical Society of America A
+
+18 (2001) 2468–2477.
+
+[24] V.P. Shah, N.H. Younan, R.L. King, An efﬁcient pan-sharpening method via a combined adaptive PCA approach and contourlets, IEEE Transactions on
+
+Geoscience and Remote Sensing 46 (5) (2008) 1323–1335.
+
+[25] V.K. Shettigara, A generalized component substitution technique for spatial enhancement of multispectral images using a higher resolution data set,
+
+Photogrammetric Engineering and Remote Sensing 58 (1992) 561–567.
+
+[26] J.K. Uhlmann, Dynamic map building and localization: new theoretical foundations, PhD Thesis, University of Oxford, 1995.
+[27] J. Uhlmann, General data fusion for estimates with unknown cross covariances, in: Proceedings of the SPIE Aerosense Conference, 1996, pp. 165–173.
+[28] N.G. Wah, Y. Rong, Comparison of decentralized tracking algorithms, in: Information Fusion, Sixth International Conference, 2003, pp. 107–113.
+[29] L. Wald, T. Ranchin, M. Mangolini, Fusion of satellite images of different spatial resolutions: assessing the quality of resulting images, Photogrammetric
+
+Engineering and Remote Sensing 63 (6) (1997) 691–699.
+
+[30] R.R. Yager, A framework for multi-source data fusion, Information Sciences 163 (2004) 175–200.
+[31] G. Yang, Y. Lin, P. Bhattacharya, A driver fatigue recognition model based on information fusion and dynamic Bayesian network, Information Sciences
+
+180 (2010) 1942–1954.
+
+[32] D.A. Yocky, Multiresolution wavelet decomposition image merger of Landsat Thematic Mapper and SPOT panchromatic data, Photogrammetric
+
+Engineering and Remote Sensing 62 (1996) 1067–1074.
+
+[33] J. Zhou, D.L. Civco, J.A. Silander, A wavelet transform method to merge Landsat TM and SPOT panchromatic data, International Journal of Remote
+
+Sensing 19 (1998) 743–757.
+
+

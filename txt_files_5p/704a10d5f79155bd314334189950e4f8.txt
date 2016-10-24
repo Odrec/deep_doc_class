@@ -1,0 +1,829 @@
+R E P O R T S
+
+Sparse Coding and
+
+Decorrelation in Primary Visual
+Cortex During Natural Vision
+
+William E. Vinje1,2 and Jack L. Gallant1,3*
+
+Theoretical studies suggest that primary visual cortex (area V1) uses a sparse
+code to efﬁciently represent natural scenes. This issue was investigated by
+recording from V1 neurons in awake behaving macaques during both free
+viewing of natural scenes and conditions simulating natural vision. Stimulation
+of the nonclassical receptive ﬁeld increases the selectivity and sparseness of
+individual V1 neurons, increases the sparseness of the population response
+distribution, and strongly decorrelates the responses of neuron pairs. These
+effects are due to both excitatory and suppressive modulation of the classical
+receptive ﬁeld by the nonclassical receptive ﬁeld and do not depend critically
+on the spatiotemporal structure of the stimuli. During natural vision, the
+classical and nonclassical receptive ﬁelds function together to form a sparse
+representation of the visual world. This sparse code may be computationally
+efﬁcient for both early vision and higher visual processing.
+
+Although area V1 has been studied for over
+40 years, little is known about how V1 en-
+codes complex natural scenes. Theoretical stud-
+ies suggest that natural scenes can be efficient-
+ly represented by a sparse code based on
+filters that resemble neurons found in area V1
+(1, 2). Sparse codes lie along a continuum
+ranging from dense codes, where neurons
+respond to most stimuli, to local codes, where
+neurons give extremely selective responses
+(3). Both of these extremes are inefficient in
+several important respects. Dense codes are
+highly redundant and each neural response
+carries little information, whereas local codes
+require an implausibly large number of neu-
+rons and are computationally intractable. In
+contrast, neurons that are tuned to match the
+sparsely distributed, informative components
+of the natural world can produce sparse codes.
+Sparse codes transmit information with min-
+imal redundancy and relatively few spikes.
+Consequently, they are both informationally
+and metabolically more efficient than dense
+codes (4). There have been a few studies of
+sparse coding in inferior temporal visual ar-
+eas (5). We have addressed this issue in area
+V1.
+
+Recent
+
+theoretical studies suggest
+
+that
+nonlinear interactions between neurons may
+increase coding sparseness in area V1 (2, 6).
+These interactions are predominantly reflect-
+ed in modulation of classical receptive field
+(CRF) responses by the surrounding nonclas-
+sical receptive field (nCRF) (7). Previous ex-
+
+1Program in Neuroscience, 2Department of Molecular
+and Cellular Biology, and 3Department of Psychology,
+University of California at Berkeley, Berkeley, CA
+94720 –1650, USA.
+*To whom correspondence should be addressed. E-
+mail: gallant@socrates.berkeley.edu
+
+periments have demonstrated that nCRF stim-
+ulation strongly modulates responses during
+free viewing of natural scenes (8). This report
+demonstrates that V1 employs a sparse code
+to represent natural scenes and shows that the
+nCRF plays a crucial role in this process.
+
+We have addressed this issue by using
+controlled stimuli that simulate natural vi-
+sion. The stimuli were sequences of images
+simulating the spatial and temporal patterns
+occurring in and around the CRF when an
+animal freely views a static natural scene (see
+Fig. 1A). Eye scan paths were generated with
+a statistical model of eye movements made
+during free viewing (9). Image patches were
+extracted from a natural scene along the sim-
+ulated scan path and converted to gray scale
+(10). Each natural vision movie was com-
+posed of a series of simulated fixations sep-
+arated by brief simulated saccadic transitions.
+In the experiments described here, we ma-
+nipulated the size of the extracted image
+patches. Patch size varied from one to four
+times the diameter of the CRF. To reduce
+potential boundary artifacts, the outer 10% of
+each image patch was blended smoothly into
+the neutral gray background. Data reported
+here are from 61 well-isolated neurons re-
+corded in area V1 of two awake behaving
+primates (11).
+
+The sparseness of V1 responses increases
+dramatically with larger natural image patch-
+es that encompass both the CRF and the
+nCRF. This effect is illustrated in Fig. 1,
+which compares responses obtained with
+stimuli confined to the CRF (Fig. 1B) with
+those obtained with stimuli four times the
+diameter of the CRF (Fig. 1C). To quantify
+sparseness we used a nonparametric statistic
+(12): S ⫽ {1 ⫺ [(⌺ri/n)2/⌺(ri
+2/n)]}/[1 ⫺ (1/n)],
+where ri is the response to the ith frame of a
+
+movie (averaged across trials) and n is the
+number of movie frames. Values of S near
+0% indicate a dense code, and values near
+100% indicate a sparse code.
+
+Distributions of S across the sample of
+neurons are shown in Fig. 2 for each stimulus
+size. As stimulus size increases, sparseness
+increases systematically (P ⬍ 0.01) (13). The
+sparseness statistic saturates when stimuli are
+three to four times the size of the CRF,
+consistent with the spatial extent of V1 nCRF
+modulation reported in other studies (7). The
+high sparseness values produced by large
+stimuli suggest that area V1 uses a sparse
+code during natural vision, when stimuli span
+the entire visual field.
+
+The simulated saccades in our natural vi-
+sion movies often produce large transient re-
+sponses followed by rapid adaptation during
+the course of the fixation. To assess the con-
+tribution of this fine temporal structure to
+sparseness, we recomputed the sparseness
+statistic after averaging all responses within
+each fixation. Absolute sparseness values are
+significantly lower in the fixation-based anal-
+ysis (P ⬍ 0.05), but sparseness still increases
+with increasing nCRF stimulation (14). Thus,
+transient responses and adaptation contribute
+to sparseness but do not account for all of the
+observed nCRF effects.
+
+We reanalyzed a subset of cells to deter-
+mine whether these sparsening effects were
+due to nCRF suppression, excitation, or both
+(n ⫽ 36 cells; stimuli four times the CRF
+diameter). Twenty-nine percent of all
+the
+frames in this sample are significantly mod-
+ulated (P ⬍ 0.05), and the ratio of suppres-
+sion to excitation is about 4.5 to 1. Excitation
+is often concentrated in the onset transients
+that occur after simulated saccades, whereas
+suppression reduces responses across an en-
+tire fixation. Thus, natural nCRF stimulation
+appears to increase sparseness by both en-
+hancing and suppressing specific epochs of
+the response.
+
+It
+
+is unlikely that
+
+these results are an
+artifact of incorrect CRF definition (15). We
+defined the CRF as the circular region cir-
+cumscribing all locations where stimuli evoked
+action potentials. Overestimation of CRF siz-
+es would cause inadvertent nCRF stimulation
+by movies confined to the nominal CRF,
+thereby increasing estimates of CRF sparse-
+ness and decreasing the apparent sparsening
+effects of nCRF stimulation.
+
+We also performed a control experiment
+to ensure that our sparseness estimates did
+not depend on the position of the patch
+boundary, which necessarily varied with patch
+size. The control stimulus consisted of a nat-
+ural vision movie four times the CRF diam-
+eter on which a sharp, white ring was super-
+imposed along the exterior boundary of the
+defined CRF. The ring provided a strong
+artificial edge to enhance the magnitude of
+
+www.sciencemag.org SCIENCE VOL 287 18 FEBRUARY 2000
+
+1273
+
+R E P O R T S
+
+modulation by extraretinal factors such as eye
+movements and attention (16). We examined
+how these extraretinal factors affect sparse-
+ness by comparing responses obtained during
+free viewing of natural scenes (17) to re-
+sponses obtained with natural vision movies
+that re-created the visual stimulation occur-
+ring in the CRF and the surround during the
+same free-viewing episodes (18). Both free-
+viewing and natural vision movie data were
+acquired in 11 V1 neurons (17 separate free-
+viewing episodes). Sparseness values ob-
+tained during free viewing and with natural
+vision movies are highly correlated (r ⫽
+0.91). However, the slope of the regression
+line is 1.2, which suggests that free viewing
+produces a slightly more sparse response than
+do natural vision movies simulating free
+viewing. Given that the movies may not fully
+stimulate the nCRF of some cells, this small
+
+difference is expected, but we cannot rule out
+the possibility of weak extraretinal effects.
+
+As a final control, we examined sparse-
+ness values obtained with dynamic grating
+sequences (n ⫽ 22 neurons) (19) to see if
+sparsening is specific to natural stimuli. To
+compare response sparseness for
+random
+grating sequences and natural vision movies,
+we computed S for both stimulus types and
+for stimuli one and two times the size of the
+CRF. The sparseness values obtained with
+gratings and natural vision movies are not
+significantly different from each other, which
+suggests that sparseness might be induced by
+oriented energy present in both natural stim-
+uli and grating sequences.
+
+The sparse coding hypothesis also pre-
+dicts that responses will be sparse when ex-
+amined across the population of neurons in
+V1. To investigate this, we evaluated the
+kurtosis of the response distribution (RD)
+obtained with each stimulus size. The RD is
+the histogram of responses (i.e., action poten-
+tials per movie frame) pooled over all cells
+and all stimuli; it is an estimate of the popu-
+lation response of V1 to an ensemble of
+
+any potential edge effects. Ring trials were
+randomly interleaved with non-ring trials.
+The addition of the CRF-diameter ring in-
+creases sparseness by an average of 8% (n ⫽
+12 neurons) relative to that observed without
+the ring. Thus, sparseness estimates for CRF-
+diameter stimuli may be inflated slightly be-
+cause of the presence of the sharp border,
+which suggests that our estimates of the
+sparsening effects of nCRF stimulation prob-
+ably underestimate the true size of this effect.
+The data presented above were acquired
+with controlled stimuli that simulate natural
+vision. During natural free viewing, V1 ac-
+tivity reflects both visual stimulation and
+
+A
+
+B
+
+e
+s
+n
+o
+p
+s
+e
+R
+
+C
+
+e
+s
+n
+o
+p
+s
+e
+R
+
+CRF
+
+4xCRF
+
+0
+
+1.5
+
+3.0
+
+Time (s)
+
+4.5
+
+Fig. 1. Natural vision movie and representative
+responses. (A) Example of a natural scene used
+as the source image for natural vision movies.
+White line represents simulated visual scan
+path. Image patches centered on the scan path
+were extracted to form the movie. Small white
+circle gives the CRF size; larger circle is four
+times the CRF diameter. (B) Raster plot of
+action potentials during 20 presentations of a
+movie conﬁned to the CRF. The number of
+action potentials during each 13.8-ms movie
+frame is indicated by intensity. Solid line is the
+peri-stimulus
+time histogram (PSTH). The
+sparseness of these data is 16%, which implies
+a dense distribution of responses across the
+stimulus set. (C) Raster plot of action potentials
+during 20 presentations of a movie with a
+stimulus size four times the CRF diameter. Dark
+line again gives the PSTH. Stimulation of the
+nCRF increases sparseness to 53%.
+
+Fig. 2. Stimulation of the nCRF increases
+sparseness in single neurons. Effects of stimulus
+size on distribution of the sparseness statistic
+across the sample of cells. Expressed as a per-
+centage, S is 0% when a neuron responds
+equally to all frames of a movie and 100%
+when a neuron responds to only a single frame.
+An increase in S indicates an increase in the
+sparseness of neural coding across the stimulus
+ensemble. Mean sparseness values are 41%,
+52%, 61%, and 62% for stimuli one, two, three,
+and four times the CRF diameter, respectively.
+To quantify sparseness changes in single neu-
+rons we computed the ratio of the observed
+shift in S to the maximum possible shift as a
+function of nCRF stimulation: Sshift ⫽ (SnCRF ⫺
+SCRF)/(1 ⫺ SCRF). Average Sshift values are 18%,
+32%, and 36% for stimuli two, three, and four
+times the CRF diameter, respectively. Neurons
+with statistically signiﬁcant (P ⬍ 0.01) shifts
+are black and are stacked on top of those with
+insigniﬁcant shifts.
+
+Fig. 3. Stimulation of the nCRF decorrelates
+responses across the population of neurons in
+area V1. (Upper) Distribution of upper limits of
+the separation angles between pairs of neurons
+tested with similar natural vision movies con-
+ﬁned to the CRF. Separation angle is inversely
+proportional to the similarity of responses be-
+tween randomly selected V1 neurons recorded
+in separate sessions [see text and (21) for de-
+tails]. The mean separation angle is 51°, indi-
+cating substantial response similarity. (Lower)
+Distribution of upper limits of the separation
+angles between neuron pairs obtained with
+natural vision movies four times the CRF diam-
+eter, plotted as in (Upper). The mean of this
+distribution is 67°, which is signiﬁcantly larger
+than the mean of the distribution obtained
+from CRF stimulation alone (P ⱕ 0.001). This
+increase in separation angle reﬂects decorrela-
+tion across the population of V1 responses.
+
+1274
+
+18 FEBRUARY 2000 VOL 287 SCIENCE www.sciencemag.org
+
+natural images. Kurtosis is the fourth moment
+of this distribution about its mean value. As
+the RD becomes more sparse the proportion
+of moderate responses decreases and the pro-
+portion of both small and large responses
+increases; this is reflected by an increase in
+RD kurtosis. For this reason, theorists have
+used kurtosis as an index of sparseness (2, 20,
+21).
+
+RD kurtosis is 4.1 when stimuli are con-
+fined to the CRF, consistent with theoretical
+studies suggesting that the CRF of V1 neurons
+produces a moderately sparse code (1). How-
+ever, when stimuli are two, three, or four
+times the CRF diameter, kurtosis values in-
+crease significantly to 5.2, 8.7, and 10.2,
+respectively (P ⱕ 0.001). This result further
+confirms that nonlinear nCRF interactions
+increase sparseness and demonstrates that
+this effect occurs across the population of
+cells in V1.
+
+We also tested whether nCRF stimulation
+increased the independence of responses across
+the population of V1 neurons. We accom-
+plished this by examining the similarity of
+responses between randomly selected pairs of
+neurons presented with nearly identical stim-
+uli during different recording sessions. This
+similarity reflects the distribution of correla-
+tions across the entire population of cells in
+V1. If neurons carry independent informa-
+tion, then randomly selected pairs will be
+weakly correlated, whereas if they carry re-
+dundant information responses will be strongly
+correlated.
+
+We selected neuron pairs stimulated with
+natural vision movies created from the same
+eye scan path and natural scene (patch sizes
+varied slightly because of differences in CRF
+size). For this analysis the average responses
+across movie frames were treated as a vector
+in a high-dimensional space. We quantified
+response similarity by computing the angle
+between the response vectors of each neuron
+
+R E P O R T S
+
+pair (22). Using this metric, cells with similar
+tuning properties have small separation an-
+gles and those with different tuning proper-
+ties have large separation angles.
+
+Figure 3 shows the distribution of separa-
+tion angles between neuron pairs recorded
+with natural vision movies confined to the
+CRF (Fig. 3, Upper) and four times larger
+than the CRF (Fig. 3, Lower). Stimulation of
+the nCRF significantly increases the separa-
+tion angle between cells (P ⱕ 0.001) (23).
+This is direct evidence that nCRF stimulation
+decorrelates responses between pairs of V1
+neurons and it suggests that one consequence
+of increasing sparseness is increased indepen-
+dence of the responses across cells.
+
+In a final experiment we investigated the
+nCRF mechanisms that might be responsible
+for sparsening and decorrelation. We accom-
+plished this by mapping the spatial domains
+of the nCRF via reverse correlation. The
+stimulus was a dynamic, compound grating
+sequence consisting of a CRF conditioning
+grating and an nCRF probe extending to two
+times the CRF size [see Fig. 4A and (24)].
+The strength, sign, and spatial distribution of
+nCRF domains vary widely across cells (n ⫽
+19 neurons) (see Fig. 4, B to D). Many cells
+have irregular nCRF domains (Fig. 4, B and
+C), although some have a fairly uniform
+structure (Fig. 4D). These patterns are similar
+to those reported recently for area 17 of the
+anesthetized cat (25). The diversity of the
+nCRF structure may be responsible for de-
+correlating the responses of V1 neurons dur-
+ing natural vision.
+
+Our experiments provide direct experi-
+mental evidence that V1 uses a sparse code
+matched to the underlying sparse structure of
+natural scenes. During natural vision, CRF
+and nCRF mechanisms function together as a
+single computational unit. Although CRF re-
+sponses during natural vision are already
+moderately sparse, nCRF stimulation elicits
+
+Fig. 4. Identiﬁcation of nCRF subdomains by reverse correlation. (A) Example of a single frame from
+the compound grating sequence. An optimal conditioning grating ﬁlled the CRF while a probe
+grating appeared in the annulus between the CRF and twice the CRF diameter. Probe position,
+orientation, spatial frequency, and phase varied randomly across frames (24). Spatial modulatory
+nCRF domains were identiﬁed by reverse correlation with respect to the position of the probe
+within the nCRF. (B) Anisotropic inhibitory nCRF modulation. Solid curves indicate mean response
+as a function of probe position. Dashed lines give mean responses to the conditioning grating alone.
+Plots are rotated so the preferred orientation of the CRF lies along the vertical axis. This cell is
+suppressed by nCRF stimulation; side suppression is larger than end suppression. (C) A cell that is
+enhanced by nCRF stimulation; side enhancement is larger than end enhancement. (D) A cell that
+is weakly and uniformly suppressed by nCRF stimulation. For all three neurons shown here, nCRF
+stimulation with natural vision movies signiﬁcantly increases sparseness (P ⬍ 0.01).
+
+nonlinear interactions (2, 6) that dramatically
+increase sparseness and decorrelate responses
+between neurons. Consequently, each neuron
+appears to carry statistically independent in-
+formation. Between the retina and lateral
+geniculate nucleus, the visual system encodes
+information to optimize information trans-
+mission given the limited bandwidth of the
+optic nerve (26). V1 then recodes this infor-
+mation into a sparse representation. One in-
+teresting possibility is that these cells repre-
+sent the independent components of natural
+scenes (20, 27). This would facilitate the
+development of associations between visual
+stimuli in higher visual areas and increase the
+efficiency of pattern recognition (1).
+
+Sparse coding provides a unifying frame-
+work for understanding the diverse functions
+claimed for the nCRF: such as contrast gain
+control; the potential representation of extended
+contours,
+junctions or corners; and figure-
+ground segmentation (28). Our studies demon-
+strate how experiments with natural images can
+complement those with conventional stimuli.
+When used carefully, natural stimuli allow us to
+test our current understanding of sensory sys-
+tems and to interpret known effects in terms of
+their natural function.
+
+References and Notes
+
+1. H. B. Barlow, in Sensory Communication, W. A. Rosen-
+blith, Ed. (MIT Press, Cambridge, MA, 1961), pp. 217–
+234; Neural Comput. 1, 295 (1989); J. G. Daugman,
+IEEE Trans. Biomed. Eng. 36, 107 (1989); D. J. Field, J.
+Opt. Soc. Am. A 4, 2379 (1987); Neural Comput. 6,
+559 (1994).
+
+2. B. A. Olshausen and D. J. Field, Nature 381, 607
+
+(1996); Vision Res. 23, 3311 (1997).
+
+3. P. Foldiak and M. P. Young, in The Handbook of Brain
+Theory and Neural Networks, M. A. Arbib, Ed. (MIT
+Press, Cambridge, MA, 1995), pp. 895–898.
+
+4. W. Levy and R. A. Baxter, Neural Comput. 8, 531
+(1996); S. B. Laughlin, R. R. de Ruyter van Steveninck,
+J. C. Anderson, Nat. Neurosci. 1, 36 (1998).
+
+5. M. P. Young and S. Yamane, Science 256, 1327
+(1992); E. T. Rolls and M. J. Tovee, J. Neurophysiol. 73,
+713 (1995); R. Baddeley et al., Proc. R. Soc. London
+Ser. B 264, 1775 (1997).
+
+6. E. P. Simoncelli and O. Schwartz,
+
+in Advances in
+Neural Information Processing Systems 11, M. I. Jor-
+dan, M. J. Kearns, S. A. Solla, Eds. (MIT Press, Cam-
+bridge, MA, 1998).
+
+7. J. Allman, F. Miezin, E. McGuinness, Annu. Rev. Neu-
+
+rosci. 8, 407 (1985) pp. 153–154.
+
+8. J. L. Gallant, C. E. Connor, D. C. Van Essen, Neurore-
+
+port 9, 2153 (1998).
+
+9. We generated saccadic eye scan paths by using a
+model of natural macaque eye movements. We ac-
+quired eye movement data from a scleral search coil
+during free-viewing experiments (8, 17). The model
+chose random saccade directions from a uniform
+distribution of angles. We chose saccade lengths
+randomly from a distribution based on a b-spline ﬁt
+to the measured distribution of free-viewing saccade
+lengths. The eye velocity versus time proﬁle for each
+saccade was obtained from a lookup table of b-spline
+ﬁts to actual velocity/time proﬁles (as a function of
+saccade length). We chose ﬁxation durations from a
+gaussian distribution (mean, 350 ms; standard devi-
+ation, 50 ms).
+
+10. We extracted image patches from 1280 ⫻ 1024 pixel
+images obtained from a high-resolution, commercial
+photo-CD library (Corel Inc.). Images included nature
+scenes as well as man-made objects and animals as
+well as humans. To avoid aliasing artifacts that might
+result from displaying movies on a monitor with
+
+www.sciencemag.org SCIENCE VOL 287 18 FEBRUARY 2000
+
+1275
+
+72-Hz refresh we used an antialiasing algorithm in
+which each 13.8-ms frame of a movie was construct-
+ed by averaging 14 images representing the position
+of the CRF at about 1-ms resolution.
+
+11. All animal procedures were approved by the Univer-
+sity of California, Berkeley, Animal Care and Use
+Committee and conformed to or exceeded all rele-
+vant National Institutes of Health and U.S. Depart-
+ment of Agriculture standards. Single neuron record-
+ings were made from two awake, behaving macaque
+monkeys (Macaca mulatta) with extracellular elec-
+trodes. Additional details about recording and surgi-
+cal procedures are given in [C. E. Connor et al.,
+J. Neurosci. 17, 3201 (1997)]. All data reported here
+were taken under conditions of excellent single-unit
+isolation. Eye position was monitored with a scleral
+search coil and trials were aborted if the eye deviated
+from ﬁxation by more than 0.35°. Movie duration
+varied from 5 to 10 s. During recording sessions each
+movie was divided into 5-s segments; segments were
+then shown in and around the CRF on successive
+trials while the animal performed a ﬁxation task for a
+juice reward. Each trial consisted of a stimulus of a
+single size with differently sized stimulus conditions
+randomly interleaved across trials.
+
+12. A well-established and useful description of how
+sparsely a neuron responds across stimuli is given by
+its activity fraction, A ⫽ ( ⌺ri/n)2/ ⌺(ri
+2/n). For further
+discussion see [E. T. Rolls and M. J. Tovee, J. Neuro-
+physiol. 73, 713 (1995)]. Our sparseness statistic is a
+convenient rescaling of A that ranges from 0% to
+100%: S ⫽ (1 ⫺ A)/(1 ⫺ AMIN) ⫽ (1 ⫺ A)/(1 ⫺ 1/n).
+13. Throughout this report we measured signiﬁcance
+with randomization tests using 1000 random permu-
+tations of the relevant data. For further discussion
+see [B. F. J. Manly, Randomization and Monte-Carlo
+Methods in Biology, (Chapman & Hall, New York,
+1991)].
+If responses are averaged within a ﬁxation, sparse-
+ness declines from 41 to 23%, 52 to 34%, 61 to 42%,
+and 62 to 45% for stimuli one, two, three, and four
+times the size of the CRF, respectively.
+
+14.
+
+15. The boundaries of the CRF were estimated with bar
+and grating stimuli whose characteristics were con-
+trolled interactively. For 38 of 61 neurons we con-
+ﬁrmed these manual estimates by reverse correlation
+on responses evoked by a dynamic sequence of small
+white squares distributed in and around the CRF
+(square positions were chosen randomly for each
+frame). Reliable CRF estimates were obtained with
+150 to 300 s of data (30 to 60 behavioral ﬁxation
+trials). Generally there is excellent agreement be-
+tween the CRF proﬁle estimates obtained with the
+two methods. Our CRF estimates ranged from about
+20 to 50 min of arc, which is entirely consistent with
+the range of receptive ﬁeld diameters obtained in
+awake behaving macaques by other researchers; for
+example, see [D. M. Snodderly and M. Gur, J. Neuro-
+physiol. 74, 2100 (1995)].
+
+16. S. J. Judge, R. H. Wurtz, B. J. Richmond, J. Neuro-
+physiol. 43, 1133 (1980); B. C. Motter, J. Neuro-
+physiol. 70, 909 (1993).
+
+17. Animals viewed high-resolution natural images digi-
+tized on commercial photo-CDs (Corel Corp.) and
+shown at a resolution of 1280 ⫻ 1024 pixels. Images
+were shown for 10 s each. Neural responses and eye
+position were recorded continuously during this free
+viewing (8). Natural vision movies that simulated
+these speciﬁc free-viewing episodes were construct-
+ed by using the eye position records to determine the
+position of the recorded CRF during free viewing. In
+six cells the diameter of the reconstructed movies
+was four times the CRF, and in 11 cells it was three
+times the CRF. These data have been combined in
+this report.
+
+18. Each free-viewing episode produced a single-spike
+train evoked by a unique pattern of exploratory eye
+movements. In contrast, natural vision movies were
+repeated many times. To obtain comparable sparse-
+ness estimates for these data, we separately analyzed
+the spike train evoked by each repetition of the
+natural vision movie. The average of this distribution
+of sparseness values was then compared with the
+single sparseness value obtained from the free-view-
+ing data. To ensure matched stimulus conditions, we
+
+R E P O R T S
+
+made all comparisons on a movie-by-movie basis.
+Note that sparseness values based on single-spike
+trains are biased upward because of the discrete
+nature of spike generation.
+
+19. The random sinusoidal grating sequence was similar
+to that used by D. L. Ringach, M. J. Hawken, R.
+Shapley [Nature 387, 281 (1997)]. The orientation,
+spatial frequency, and phase of the grating were
+chosen randomly on each video frame (at 72 Hz).
+Gratings were shown at a Michelson contrast of 0.5.
+Before analysis, stimuli were binned into 10° orien-
+tation steps and 6 to 12 spatial frequency steps.
+Responses were analyzed by parametric reverse cor-
+relation on orientation and spatial frequency, aver-
+aging over phase. The mean responses across stimu-
+lus bins (at the peak response latency) were used to
+estimate the sparseness statistic.
+
+20. A. J. Bell and T. J. Sejnowski, Vision Res. 37, 3327
+
+(1997).
+
+21. Several theoretical studies of sparse population cod-
+ing have reported the kurtosis of the distribution of
+responses observed across a set of linear ﬁlters, with
+respect to a particular stimulus ensemble (2, 20). This
+measure is not directly applicable to our data be-
+cause the responses of area V1 neurons are asym-
+metric: cells typically exhibit low spontaneous rates
+and appropriate stimuli elevate these rates. To esti-
+mate kurtosis we converted each response distribu-
+tion to a symmetric distribution by reﬂecting the
+data about the origin. The resulting symmetric dis-
+tributions are unimodal with zero mean and decrease
+smoothly to zero. Our kurtosis statistic is well be-
+haved and directly comparable to the results of the-
+oretical studies.
+
+22. Let P1 and P2 be the PSTH response vectors for a pair
+of neurons. Then cos(␪) ⫽ P1P2/㛳P1㛳 ⫻ 㛳P2㛳, where
+㛳Pn㛳 is the norm of the appropriate vector. This
+measure is sensitive to changes across the basis
+dimensions of the movie time stream and is insensi-
+tive to differences in absolute rate.
+It is difﬁcult to choose a scalar measure of response
+similarity appropriate for all situations; see [P. Di
+Lorenzo, J. Neurophysiol. 62, 823 (1989)]. To validate
+
+23.
+
+our results we performed two alternative versions of
+the population decorrelation analysis. For each neu-
+ron pair we also computed both the linear correlation
+coefﬁcient and the neural discrimination index of Di
+Lorenzo.
+In both cases, nCRF stimulation leads to
+signiﬁcant decorrelation (P ⱕ 0.001). To ensure that
+the slightly different stimulus sizes do not inﬂuence
+our results, we also performed all similarity analyses
+on a data set restricted to neuron pairs with identical
+CRF sizes (and thus identical stimulation). Under
+these conditions the decorrelating effect of the nCRF
+remains signiﬁcant (P ⱕ 0.001).
+
+24. The compound grating stimulus consisted of a CRF
+conditioning grating and a probe grating. We set the
+conditioning grating’s orientation and spatial fre-
+quency to the neuron’s preferred values [as deter-
+mined by reverse correlation on responses to a dy-
+namic grating sequence (19) presented in the CRF].
+The phase of the conditioning grating varied random-
+ly with each video frame. Both gratings were present-
+ed at a Michelson contrast of 0.5 and their edges
+were blended into one another and into the back-
+ground. We performed reverse correlation on the
+position of the probe grating within the nCRF annulus
+(collapsing over all other parameters). To measure
+baseline responses we presented interleaved trials
+containing only the conditioning grating.
+
+25. G. A. Walker et al., J. Neurosci. 19, 10536 (1999).
+26. Y. Dan, J. J. Atick, R. C. Reid, J. Neurosci. 16, 3351
+
+(1996).
+
+27. M. S. Lewicki and B. A. Olshausen, in Advances in
+Neural Information Processing Systems 10, M. I. Jor-
+dan, M. J. Kearns, S. A. Solla, Eds. (MIT Press, Cam-
+bridge, MA, 1997) pp. 815–821.
+
+28. D. J. Heeger, Visual Neurosci. 9, 181 (1992); C. D.
+Gilbert, Neuron 9, 1 (1992); A. M. Sillito et al., Nature
+378, 492 (1995); C. D. Gilbert et al., Proc. Natl. Acad.
+Sci. U.S.A. 93, 615 (1996); M. Carandini et al., J. Neu-
+rosci. 17, 8621 (1997); J. J. Knierim and D. C. Van
+Essen, J. Neurophysiol. 67, 961 (1992).
+
+20 August 1999; accepted 27 December 1999
+
+Mitochondrial FtsZ in a
+
+Chromophyte Alga
+
+Peter L. Beech,1,3* Thao Nheu,3†
+
+Thomas Schultz,3‡ Shane Herbert,1 Trevor Lithgow,4
+
+Paul R. Gilson,2,3 Geoffrey I. McFadden2,3
+
+A homolog of the bacterial cell division gene ftsZ was isolated from the alga
+Mallomonas splendens. The nuclear-encoded protein (MsFtsZ-mt) was closely
+related to FtsZs of the ␣-proteobacteria, possessed a mitochondrial targeting
+signal, and localized in a pattern consistent with a role in mitochondrial division.
+Although FtsZs are known to act in the division of chloroplasts, MsFtsZ-mt
+appears to be a mitochondrial FtsZ and may represent a mitochondrial division
+protein.
+
+Mitochondria are ubiquitous organelles that
+form networks, reticulae, or punctate struc-
+tures in eukaryotic cells. Mitochondria in
+many cells appear to constitutively fuse with
+one another and divide (1), but we know little
+about the proteins involved in these process-
+es, particularly mitochondrial division. Eu-
+karyotes depend on mitochondria for respira-
+tion and adenosine triphosphate synthesis and
+rely on them to divide before daughter mito-
+chondria can be apportioned to each new cell
+generation. In chloroplasts, homologs of the
+bacterial cell division protein FtsZ are essen-
+
+tial components of the organellar division
+machinery (2). FtsZ is found in nearly all
+prokaryotes, is structurally related to tubulin,
+and accumulates at the furrow between divid-
+ing cells, playing a critical role in cell divi-
+sion (3). No potential mitochondrial FtsZ has
+been identified in the complete genomes of
+Caenorhabditis elegans or Saccharomyces
+cerevisiae. However, because both mitochon-
+dria and chloroplasts arose from endosymbi-
+otic bacteria, we anticipated that early in
+evolution, mitochondrial division might also
+have been regulated by FtsZ. Here we de-
+
+1276
+
+18 FEBRUARY 2000 VOL 287 SCIENCE www.sciencemag.org
+
+

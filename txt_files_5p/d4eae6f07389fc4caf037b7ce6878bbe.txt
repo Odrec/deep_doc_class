@@ -1,0 +1,498 @@
+Table of Contents
+
+  ........................................................................................................................................   1
+Orientation Map .................................................................................................................. 1
+angles  ................................................................................................................................  2
+Difference between orientation map and activation map: ..........................................................  10
+
+% Maria Marchante Fernandez
+%950157
+%HM6
+
+Orientation Map
+
+%Importing data
+
+or_map = importdata('or.mat');
+
+% Plotting my figure
+
+Figure_1 = figure
+
+imagesc(or_map);
+
+axes ('Parent',Figure_1);
+
+xlabel({'Neurons X dimension'});
+ylabel({'Neurons Y dimension'});
+
+title ('Matrix of the orientation map');
+colorbar ('peer',axes)
+
+Figure_1 = 
+
+  Figure (1) with properties:
+
+      Number: 1
+        Name: ''
+       Color: [0.9400 0.9400 0.9400]
+    Position: [440 378 560 420]
+       Units: 'pixels'
+
+  Use GET to show all properties
+
+1
+
+angles
+
+%The standard X would be 0:179
+% but my X goes from -90 to 269!!!
+
+X = 0:359 % whole circle going from 0:179 and from 179:359 and not including the last one!?
+
+% Tuning curve for a neuron in row 2,column 7 with a response of 120
+% degrees (the standard deviation for all neurons is 15)
+
+Tuning_curve = (0<=X<89).*normpdf(X+179,or_map(2,7),15)+...
+(269<X<=359).*normpdf(X-179,or_map(2,7),15)+...
+normpdf(X,or_map(2,7),15)
+
+Figure_1= figure
+
+axes_1 = axes('Parent',Figure_1); % "Parent" for the colorbar
+
+plot (Tuning_curve)
+
+xlim(axes_1,[0 200]);
+ylim(axes_1,[0 0.1]); %scaled [0 0.1]
+
+xlabel({'angle of orientation'});
+
+2
+
+ylabel({'relative firing task'});
+title({'Neuron 2,7 - Tuning curve'});
+
+box(axes_1,'on'); %the boundary of the current axes
+box(axes_1,'all');
+
+hold on
+
+plot (120,Tuning_curve(120),'or_map');
+
+Y = or_map
+
+for i=1:25
+    for j=1:25
+
+        f = (0<=X<90).*normpdf(X+180,or_map(i,j),15)+...
+        (270<X<=360).*normpdf(X-180,or_map(i,j),15)+...
+         normpdf(X,or_map(i,j),15);
+
+        Y(i,j) = f(120)*5000;  % map into a colour range
+
+    end
+end
+
+figure
+imagesc(Y)
+title('activation map in colour for 135 degrees')
+colorbar;
+
+figure
+imagesc(Y)
+colormap('gray')
+title('activation map in grey for 135 degrees')
+colorbar;
+
+X =
+
+  Columns 1 through 13
+
+     0     1     2     3     4     5     6     7     8     9    10    11    12
+
+  Columns 14 through 26
+
+    13    14    15    16    17    18    19    20    21    22    23    24    25
+
+  Columns 27 through 39
+
+    26    27    28    29    30    31    32    33    34    35    36    37    38
+
+  Columns 40 through 52
+
+3
+
+    39    40    41    42    43    44    45    46    47    48    49    50    51
+
+  Columns 53 through 65
+
+    52    53    54    55    56    57    58    59    60    61    62    63    64
+
+  Columns 66 through 78
+
+    65    66    67    68    69    70    71    72    73    74    75    76    77
+
+  Columns 79 through 91
+
+    78    79    80    81    82    83    84    85    86    87    88    89    90
+
+  Columns 92 through 104
+
+    91    92    93    94    95    96    97    98    99   100   101   102   103
+
+  Columns 105 through 117
+
+   104   105   106   107   108   109   110   111   112   113   114   115   116
+
+  Columns 118 through 130
+
+   117   118   119   120   121   122   123   124   125   126   127   128   129
+
+  Columns 131 through 143
+
+   130   131   132   133   134   135   136   137   138   139   140   141   142
+
+  Columns 144 through 156
+
+   143   144   145   146   147   148   149   150   151   152   153   154   155
+
+  Columns 157 through 169
+
+   156   157   158   159   160   161   162   163   164   165   166   167   168
+
+  Columns 170 through 182
+
+   169   170   171   172   173   174   175   176   177   178   179   180   181
+
+  Columns 183 through 195
+
+   182   183   184   185   186   187   188   189   190   191   192   193   194
+
+  Columns 196 through 208
+
+   195   196   197   198   199   200   201   202   203   204   205   206   207
+
+  Columns 209 through 221
+
+   208   209   210   211   212   213   214   215   216   217   218   219   220
+
+4
+
+  Columns 222 through 234
+
+   221   222   223   224   225   226   227   228   229   230   231   232   233
+
+  Columns 235 through 247
+
+   234   235   236   237   238   239   240   241   242   243   244   245   246
+
+  Columns 248 through 260
+
+   247   248   249   250   251   252   253   254   255   256   257   258   259
+
+  Columns 261 through 273
+
+   260   261   262   263   264   265   266   267   268   269   270   271   272
+
+  Columns 274 through 286
+
+   273   274   275   276   277   278   279   280   281   282   283   284   285
+
+  Columns 287 through 299
+
+   286   287   288   289   290   291   292   293   294   295   296   297   298
+
+  Columns 300 through 312
+
+   299   300   301   302   303   304   305   306   307   308   309   310   311
+
+  Columns 313 through 325
+
+   312   313   314   315   316   317   318   319   320   321   322   323   324
+
+  Columns 326 through 338
+
+   325   326   327   328   329   330   331   332   333   334   335   336   337
+
+  Columns 339 through 351
+
+   338   339   340   341   342   343   344   345   346   347   348   349   350
+
+  Columns 352 through 360
+
+   351   352   353   354   355   356   357   358   359
+
+Tuning_curve =
+
+  Columns 1 through 7
+
+    0.0024    0.0020    0.0017    0.0015    0.0013    0.0011    0.0009
+
+  Columns 8 through 14
+
+5
+
+    0.0008    0.0006    0.0005    0.0004    0.0004    0.0003    0.0002
+
+  Columns 15 through 21
+
+    0.0002    0.0002    0.0001    0.0001    0.0001    0.0001    0.0001
+
+  Columns 22 through 28
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 29 through 35
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 36 through 42
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 43 through 49
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 50 through 56
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 57 through 63
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 64 through 70
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 71 through 77
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 78 through 84
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 85 through 91
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 92 through 98
+
+    0.0000    0.0000    0.0001    0.0001    0.0001    0.0001    0.0001
+
+  Columns 99 through 105
+
+    0.0002    0.0002    0.0002    0.0003    0.0004    0.0004    0.0005
+
+6
+
+  Columns 106 through 112
+
+    0.0006    0.0008    0.0009    0.0011    0.0013    0.0015    0.0018
+
+  Columns 113 through 119
+
+    0.0020    0.0024    0.0027    0.0032    0.0036    0.0041    0.0047
+
+  Columns 120 through 126
+
+    0.0053    0.0059    0.0067    0.0074    0.0082    0.0091    0.0100
+
+  Columns 127 through 133
+
+    0.0110    0.0120    0.0130    0.0140    0.0151    0.0162    0.0172
+
+  Columns 134 through 140
+
+    0.0183    0.0194    0.0204    0.0213    0.0222    0.0231    0.0239
+
+  Columns 141 through 147
+
+    0.0246    0.0252    0.0257    0.0261    0.0264    0.0265    0.0266
+
+  Columns 148 through 154
+
+    0.0265    0.0264    0.0261    0.0256    0.0251    0.0245    0.0238
+
+  Columns 155 through 161
+
+    0.0230    0.0222    0.0213    0.0203    0.0193    0.0182    0.0172
+
+  Columns 162 through 168
+
+    0.0161    0.0150    0.0140    0.0129    0.0119    0.0109    0.0099
+
+  Columns 169 through 175
+
+    0.0090    0.0082    0.0074    0.0066    0.0059    0.0052    0.0046
+
+  Columns 176 through 182
+
+    0.0041    0.0036    0.0031    0.0027    0.0024    0.0020    0.0017
+
+  Columns 183 through 189
+
+    0.0015    0.0013    0.0011    0.0009    0.0008    0.0006    0.0005
+
+  Columns 190 through 196
+
+    0.0004    0.0004    0.0003    0.0002    0.0002    0.0002    0.0001
+
+  Columns 197 through 203
+
+7
+
+    0.0001    0.0001    0.0001    0.0001    0.0000    0.0000    0.0000
+
+  Columns 204 through 210
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 211 through 217
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 218 through 224
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 225 through 231
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 232 through 238
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 239 through 245
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 246 through 252
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 253 through 259
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 260 through 266
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+  Columns 267 through 273
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0001
+
+  Columns 274 through 280
+
+    0.0001    0.0001    0.0001    0.0001    0.0002    0.0002    0.0002
+
+  Columns 281 through 287
+
+    0.0003    0.0004    0.0004    0.0005    0.0006    0.0008    0.0009
+
+  Columns 288 through 294
+
+    0.0011    0.0013    0.0015    0.0018    0.0020    0.0024    0.0027
+
+8
+
+  Columns 295 through 301
+
+    0.0032    0.0036    0.0041    0.0047    0.0053    0.0059    0.0067
+
+  Columns 302 through 308
+
+    0.0074    0.0082    0.0091    0.0100    0.0110    0.0120    0.0130
+
+  Columns 309 through 315
+
+    0.0140    0.0151    0.0162    0.0172    0.0183    0.0194    0.0204
+
+  Columns 316 through 322
+
+    0.0213    0.0222    0.0231    0.0239    0.0246    0.0252    0.0257
+
+  Columns 323 through 329
+
+    0.0261    0.0264    0.0265    0.0266    0.0265    0.0264    0.0261
+
+  Columns 330 through 336
+
+    0.0256    0.0251    0.0245    0.0238    0.0230    0.0222    0.0213
+
+  Columns 337 through 343
+
+    0.0203    0.0193    0.0182    0.0172    0.0161    0.0150    0.0140
+
+  Columns 344 through 350
+
+    0.0129    0.0119    0.0109    0.0099    0.0090    0.0082    0.0074
+
+  Columns 351 through 357
+
+    0.0066    0.0059    0.0052    0.0046    0.0041    0.0036    0.0031
+
+  Columns 358 through 360
+
+    0.0027    0.0024    0.0020
+
+Figure_1 = 
+
+  Figure (2) with properties:
+
+      Number: 2
+        Name: ''
+       Color: [0.9400 0.9400 0.9400]
+    Position: [440 378 560 420]
+       Units: 'pixels'
+
+  Use GET to show all properties
+
+9
+
+Error using box (line 63)
+Unknown command option.
+
+Error in HM6 (line 58)
+box(axes_1,'all');
+
+Difference between orientation map and activa-
+tion map:
+
+% Orientation map describes the preferred angle for every neuron with
+% respect to the relative firing rates, whereas the activation map
+% describes the activity of a group of neurons at one common angle.
+% They both measure spike activation rates in neurons, dependent on angles,
+% and coded in different colours.
+
+act_map = importdata('act.mat')
+
+for i=1:50;
+    for j=1:50;
+        max = 0;
+        bestk = 1;
+        for k=1:8
+            if act_map(i,j,k)>max,
+                max=act_map(i,j,k);
+                bestk=k+1
+            end
+        end
+        Z(i,j) = 22.5*(bestk-1)
+    end
+end
+
+figure
+imagesc(Z)
+title('preferred direction for all neurons from the data')
+colorbar;
+
+Published with MATLAB® R2014b
+
+10
+
+

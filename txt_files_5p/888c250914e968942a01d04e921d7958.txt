@@ -1,0 +1,594 @@
+Timo Bourdon, Andrea Olberding 
+
+ 
+
+Seminar zum GK Mathematik (SS 2016) 
+
+Hypothesentest 
+
+Inhaltliche Zusammenfassung 
+
+ 
+
+1.  Auflistung relevanter Kenntnisse 
+ 
+
+  Unterschied zwischen relativen und absoluten Häufigkeiten kennen. 
+  Binomialverteilung berechnen mit gegebenen Parametern n, p und k, wobei n der Anzahl der 
+
+Versuche,  p der Erfolgswahrscheinlichkeit und k der Anzahl der Erfolge entspricht. 
+
+  Berechnung von Erwartungswert, Varianz, Standardabweichung einer gegebenen 
+
+Binomialverteilung. 
+
+  Aufstellung von Hypothesen (insbesondere Null- und Alternativhypothese). 
+  Kenntnisse über Signifikanzniveau bzgl. des Annahme- und Ablehnungsbereichs eines Tests. 
+  Kenntnisse über die Anwendung des links-, rechts- und beidseitigen Tests. 
+  Fehler 1. und 2. Art 
+
+2.  Ausformulierung zentraler Aspekte 
+ 
+
+In der Schule ist der klassische Hypothesentest eine weit verbreitete wenn nicht sogar die Methode der 
+beurteilenden Statistik [1]. Der Hypothesentest führt zum einen Begriffe der Stochastik, zum anderen 
+Begriffe  aus  der  beschreibenden  Statistik  produktiv  zusammen  und  ist  wesentlich  für  den 
+wissenschaftlichen  Erkenntnisgewinn [3].  Die  grundlegende  Arbeitsweise  von  empirisch arbeitenden 
+Wissenschaftlern  kann  über  den  Hypothesentest  für  die  Schülerinnen  und  Schüler  exemplarisch 
+erfahrbar gemacht werden: 
+
+  Aufstellen von Null- und Alternativhypothese 
+  Analysieren von Stichproben 
+  Verwerfen bzw. vorläufiges Akzeptieren der Hypothesen 
+
+ 
+
+Selbstreguliertes Lernen beim Hypothesentest 
+
+ 
+Das  Konzept  des  Hypothesentest  ist  anspruchsvoll  nicht  zuletzt  auch  aufgrund  der  Begrifflichkeiten 
+(bspw.  Bedingte  Wahrscheinlichkeit,  Fehler  1.  Art  und  2.  Art,  Binomialverteilung,  etc.).  Oftmals  ist 
+die angemessene Interpretation der Ablehnungs- und Annahmebereiche selbst für Experten schwierig 
+und auch der Realitätsbezug macht die Problemsituation meist komplexer als transparenter [1]. Für ein 
+tiefreichendes  Verständnis  ist  der  Aufbau  von  tragfähigen  und  inhaltlichen  Begriffsvorstellungen 
+nötig,  genauso  wie  das  inhaltlich-anschauliche  Arbeiten,  da  häufig  das  Testen  von  Hypothesen  als 
+unverstandenes  Schema  abgearbeitet  wird  [3].  All  diese  Aspekte  sollen  im  hohen  Maße  von  hoher 
+Schüleraktivität begleitet werden [3]. Hier setzt das selbstregulierte Lernen ein: 
+
+„Kognitive  Komponenten:  Dieser  Funktionsbereich  umschreibt  konzeptionelles  und  strategisches 
+Wissen  ebenso  wie  die  Fähigkeit,  entsprechende  Strategien  (z.  B.  kognitive  Lernstrategien) 
+anzuwenden. 
+
+Motivationale  Komponenten:  Diese  Komponenten  umfassen  Aktivitäten,  die  der  Initiierung  (z.  B. 
+Selbstmotivierung)  und  Aufrechterhalten  (volitionale  Steuerung)  des  Lernens  dienen.  Auch  günstige 
+Ursachenzuschreibungen 
+die 
+
+und  Misserfolgen 
+
+sowie 
+
+(Attributionen) 
+
+von  Erfolgen 
+
+Timo Bourdon, Andrea Olberding 
+
+ 
+
+Seminar zum GK Mathematik (SS 2016) 
+
+Selbstwirksamkeitsüberzeugung  (Überzeugung,  wirksame  Handlungen  durchführen  zu  können)  einer 
+Person gehören zu diesem Bereich. 
+
+Metakognitive Komponenten: Dieser Bereich beinhaltet die Selbstbeobachtung, Planung und adaptive 
+Anpassung des Lernverhaltens in Bezug auf das angestrebte Lernziel.“ [2] 
+
+ 
+
+Beispiel zum Hypothesentest 
+
+Das Konzept des Hypothesentest sowie einige zentrale Aspekte werden am folgenden Beispiel explizit 
+gemacht: 
+
+„Bei  einem  fairen  Würfel  beträgt  die  Wahrscheinlichkeit  eine  ‚6‘  zu  würfeln  1/6.  Nach  120  Würfen 
+taucht  die  Augenzahl  ‚6‘  mit  29-mal  wesentlich  häufiger  als  erwartet  auf.  Ist  der  Würfel  gezinkt? 
+(gezinkt  bedeutet  hier,  dass  die  ‚6‘  häufiger  als  erwartet  auftritt.  Eine  geringere  Anzahl  an  ‚6‘ 
+betrachten wir nicht)“. 
+
+1.  Aufstellen einer Null- und Alternativhypothese 
+
+ 
+
+1
+Nullhypothese (H0): Die Wahrscheinlichkeit eine „6“ zu würfeln ist ≤ 
+6
+
+ 
+
+Alternativhypothese (H1): Die Wahrscheinlichkeit eine „6“ zu würfeln ist > 
+
+1
+6
+
+  
+
+ 
+
+2.  Erwartungswert, Varianz, Standardabweichung 
+
+ 
+Im  Folgenden  gibt  n  die  Gesamtanzahl  der  Würfe  an,  p  die  Wahrscheinlichkeit  eine  „6“  zu 
+würfeln und q = 1 - p die Gegenwahrscheinlichkeit. 
+ 
+Erwartungswert, Varianz und Standardabweichung werden zunächst bei der Durchführung des 
+Hypothesentests  nicht  benötigt, 
+späteren  Annäherung  der 
+Binomialverteilung  an  die  Normalverteilung,  weshalb  wir  diese  hier  bereits  berechnen.  Für 
+große n nähert sich die Binomialverteilung der Nomalverteilung an. Diese wird zur schnellen 
+Bestimmung der Wahrscheinlichkeit vieler Stufen der Binomialverteilung genutzt. 
+
+allerdings  bei  der 
+
+ 
+
+Erwartungswert: 
+
+Varianz: 
+ 
+
+ 
+Standardabweichung: 
+
+𝜇 = 𝑛 ∙ 𝑝 = 120 ∙
+
+1
+6
+
+= 20 
+
+𝑉(𝑋) = 𝑛 ∙ 𝑝 ∙ 𝑞 = 120 ∙
+
+1
+6
+
+∙
+
+5
+6
+
+=
+
+600
+36
+
+≈ 16,67 
+
+𝜎 = √𝑉(𝑋) = √16,67 ≈ 4,08 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Timo Bourdon, Andrea Olberding 
+
+ 
+
+Seminar zum GK Mathematik (SS 2016) 
+
+3.  Binomialverteilung 
+
+Beispielshafte Berechnung der Binomialverteilung 𝐵𝑛,𝑝(𝑘) für 𝑛 = 120, 𝑝 =
+k die Anzahl der geworfenen Sechsen angibt: 
+
+1
+6
+
+ und 𝑘 = 20, wobei 
+
+𝐵𝑛,𝑝(𝑘) = (
+
+) 𝑝𝑘 ∙ (1 − 𝑝)𝑛−𝑘 
+
+(20) = (
+
+120
+20
+
+𝐵
+
+120,
+
+1
+6
+
+) ∙ (
+
+𝑛
+𝑘
+1
+6
+
+20
+)
+
+∙ (1 −
+
+120−20
+)
+
+1
+6
+
+≈ 0,0973 
+
+ 
+
+Die folgende Tabelle und Grafik stellen die Binomialverteilung 𝐵120,
+
+(𝑘) für k = 0,…,120 dar: 
+
+1
+6
+
+Anzahl „k“ an Sechsen 
+
+0 
+1 
+… 
+17 
+18 
+19 
+20 
+21 
+… 
+120 
+
+Relative Häufigkeit 𝑩𝒏,𝒑(𝒌) = P(X=k) 
+3,1496E-10 
+7,559E-09 
+… 
+0,07840131 
+0,08972594 
+0,09633733 
+0,0973007 
+0,09266 
+… 
+4,1865E-94 
+
+ 
+
+ 
+
+t
+i
+e
+k
+g
+i
+f
+u
+ä
+H
+
+0,1
+
+0,09
+
+0,08
+
+0,07
+
+0,06
+
+0,05
+
+0,04
+
+0,03
+
+0,02
+
+0,01
+
+0
+
+0 4 8
+
+2
+1
+
+6
+1
+
+0
+2
+
+4
+2
+
+8
+2
+
+2
+3
+
+6
+3
+
+0
+4
+
+4
+4
+
+8
+4
+
+2
+5
+
+6
+5
+
+0
+6
+
+4
+6
+
+8
+6
+
+2
+7
+
+6
+7
+
+0
+8
+
+4
+8
+
+8
+8
+
+2
+9
+
+6
+9
+
+Anzahl an Sechsen
+
+0
+0
+1
+
+4
+0
+1
+
+8
+0
+1
+
+2
+1
+1
+
+6
+1
+1
+
+0
+2
+1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Timo Bourdon, Andrea Olberding 
+
+ 
+
+Seminar zum GK Mathematik (SS 2016) 
+
+4.  Signifikanzniveau 
+
+ 
+Intuitiv  würde  man  bereits  annehmen,  dass  bei  21-maligem  Auftauchen  der  Augenzahl  „6“ 
+eine  Ablehnung  der  Nullhypothese  erfolgt.  Es  würde  sich  somit  ein  Annahmebereich  von 
+{0,…,20} 
+Die 
+von 
+Ablehnungswahrscheinlichkeit der Nullhypothese würde 
+ 
+
+Ablehnungsbereich 
+
+{21,…,120} 
+
+und 
+
+ein 
+
+ergeben. 
+
+𝑃(𝑋 > 20) = 1 − 𝑃(𝑋 ≤ 20) = 1 − 0.56 = 0.44, 
+
+ 
+betragen, wobei 
+
+20
+
+𝑃(𝑋 ≤ 20) = ∑ 𝑃(𝑋 = 𝑘)
+
+= 0,56. 
+
+𝑘=0
+
+ 
+jedoch  zu  hoch.  Wir  wollen  unseren 
+Diese  Ablehnungswahrscheinlichkeit 
+Ablehnungsbereich  so  verkleinern,  dass  die  Nullhypothese  nur  in  5%  aller  Fälle  abgelehnt 
+wird  (Signifikanzniveau 𝛼 = 0.05).  Wir  berechnen  also,  ab  wie  vielen  Sechsen  nun  die 
+Nullhypothese verworfen wird (rechtsseitiger Test): 
+ 
+
+ist  uns 
+
+o  Möglichkeit 1: über die Binomialverteilung: 
+
+ 
+
+𝑘
+  𝑃(𝑋 > 𝑘) = 1 − ∑
+𝑚=0
+𝑘
+  𝑃(𝑋 ≤ 𝑘) = ∑
+𝑃(𝑋 = 𝑚) ≥ 0.95
+𝑚=0
+
+𝑛
+𝑃(𝑋 = 𝑚) = ∑
+𝑚=𝑘+1
+.  
+
+𝑃(𝑋 = 𝑚) ≤ 0.05
+
+ bzw. 
+
+ 
+
+o  Möglichkeit 2: über die Normalverteilung 𝒩(𝑥) =
+
+𝑛
+
+2
+
+𝑥−𝜇
+1
+(
+2
+
+𝜎
+
+)
+
+: 
+
+𝑒−
+
+1
+
+𝜎√2𝜋
+
+𝑃(𝑋 > 𝑘) = ∫ 𝒩(𝑥)𝑑𝑥 ≤ 0.05
+ 
+
+𝑘
+
+ 
+
+Für den gezinkten Würfel bedeutet dies: 
+
+𝑛
+
+𝑃(𝑋 > 26) = ∑ 𝑃(𝑋 = 𝑘) ≈ 0,059 > 0.05
+ 
+
+𝑘=27
+
+𝑛
+
+𝑃(𝑋 > 27) = ∑ 𝑃(𝑋 = 𝑘) ≈ 0,037 ≤ 0.05
+ 
+
+𝑘=28
+
+ 
+ 
+Somit nehmen wir an, dass ab 28 Sechsen bei 120 Würfen der Würfel nach unserer Definition 
+gezinkt  sein  muss,  der  Ablehnungsbereich  also  {28,….,120}  ist,  der  Annahmebereich 
+{0,…,27}. 
+
+ 
+
+5.  Fehlentscheidungen 
+
+Würfelt man mit einem fairen Würfel in 120 Versuchen also 29 Sechsen, so würde ein Fehler 
+1.  Art  vorliegen,  da  29  größer  als  27  ist  und  wir  somit  die  Nullhypothese  zu  Gunsten  der 
+Alternativhypothese verwerfen würden. Der Test würde den Würfel also als gezinkt ansehen. 
+
+ 
+
+Timo Bourdon, Andrea Olberding 
+
+ 
+
+Seminar zum GK Mathematik (SS 2016) 
+
+3.  Aspekte der Umsetzung in GeoGebra 
+ 
+
+Folgende Aspekte sollen in der Umsetzung in GeoGebra beherrscht werden: 
+
+  Verwendung der Tabellenansicht 
+
+o  Berechnung innerhalb einer Zelle durchführen 
+o  Rechnungen auf mehrere Zellen effizient übertragen 
+o  Fixierter Zellenbezug („$“-Zeichen) und variabler Zellenbezug 
+
+  Befehl zur Berechnung des Binomialkoeffizient 
+  Befehl zum Erstellen eines Balkendiagramms 
+  Befehl zur Erstellung des Graphen der Normalverteilungsfunktion 
+  Befehl zur Berechnung des Integrals unter einer Funktion (siehe Sitzung vom 30.05.2016) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Literatur 
+ 
+
+[1] 
+
+[2] 
+
+[3] 
+
+Roth,  J:  Didaktik  der  Stochastik,  Vorlesung  zur  Didaktik  der  Mathematik  an  der  Universität 
+Koblenz-Landau. 
+http://www.dms.uni-
+landau.de/roth/lehre/skripte/did_stochastik/did_stochastik_4_beurteilende_statistik.pdf 
+(25.06.2016) 
+
+Web-Quelle: 
+
+Perels, F.: Selbstreguliertes Lernen. Institut für Qualitätsentwicklung (IQ), 2011. Web-Quelle: 
+www.iq.hessen.de  
+
+Leuders,  T.:  Darf  das  denn  wahr  sein?  –  Eine  schüleraktive  Entdeckung  der  Grundidee  es 
+Hypothesentestens durch Simulation mit Tabellenkalkulation, PM - Praxis der Mathematik in 
+der  Schule  (Sek.  I  und  II),  Heft  4,  Den  Zufall  im  Griff,  Aulius  Verlag  Deubner,  Köln  und 
+Leipzig 
+
+

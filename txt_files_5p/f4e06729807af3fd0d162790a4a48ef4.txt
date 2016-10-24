@@ -1,0 +1,817 @@
+F oundations of Logic I
+
+Session XI
+
+Max Ilsen
+
+milsen@uos.de
+
+January 22, 2015
+
+Overview
+
+1 Previous Session/Homework
+
+Frequent Mistakes
+The Topics of the Course
+
+2 Argument Reconstruction
+
+Reconstructing Valid Arguments
+Reconstructing Invalid Arguments
+Reconstructing Arguments In General
+
+2 of 23
+
+Frequent Mistakes
+
+2.3
+∀xFx (cid:96) ¬∃x¬Fx
+
+assum.
+1
+2*
+3*
+4*
+4*
+3*,4*
+3*
+2*
+1,2*
+1
+
+no.
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+
+formula
+∀xFx
+∃x¬Fx
+¬Fa
+∀xFx
+Fa
+
+Fa ∧ ¬Fa
+¬∀xFx
+¬∀xFx
+
+∀xFx ∧ ¬∀xFx
+
+¬∃x¬Fx
+
+Φ Previous Session/Homework
+
+Argument Reconstruction
+
+rule
+A
+A
+A
+A
+4 ∀E
+3, 5 ∧I
+4, 6 RAA
+2, 3, 7 ∃E
+1, 8 ∧I
+2, 9 RAA
+
+3 of 23
+
+Frequent Mistakes
+Eliminating Quantiers
+
+Φ Previous Session/Homework
+
+Argument Reconstruction
+
+1 eliminate one quantier at a time
+
+2 only apply elimination rules on whole formulas,
+
+not on parts of formulas
+
+3 eliminate outer quantiers rst
+
+assum. no.
+(1)
+1
+(2)
+1
+1
+(3)
+(4)
+1
+1
+(5)
+
+formula
+
+∀x∀y (Fxy ∧ ∀zGxz)
+
+Faa ∧ ∀zGaz
+
+∀x∀y (Fxy ∧ Gxa)
+∀x(Fxa ∧ ∀zGxz)
+∀y (Fay ∧ ∀zGaz)
+
+rule
+A
+1 ∀E
+1 ∀E
+1 ∀E
+1 ∀E
+
+allowed?
+
+
+
+
+
+
+4 of 23
+
+Frequent Mistakes
+Introducing Quantiers
+
+Φ Previous Session/Homework
+
+Argument Reconstruction
+
+Pay attention to the constraints when using ∀I and ∃E !
+
+assum. no.
+(1)
+1
+(2)
+2*
+2*
+(3)
+(4)
+1
+
+formula
+∃xFx
+Fa
+∀xFx
+∀xFx
+
+rule
+A
+A
+2 ∀I
+1, 2, 3 ∃E
+
+allowed?
+
+
+
+To apply ∀I on 2, the eliminated name must not occur in any
+formula that 2 is based on. 2, however, is based on itself, and "a"
+occurs in it.
+
+5 of 23
+
+The Topics of the Course
+Discharging Normal Assumptions
+
+Φ Previous Session/Homework
+
+Argument Reconstruction
+
+You can discharge non-auxiliary assumptions with RAA and →I .
+This is not necessary for any proof, but it is allowed.
+
+formula
+A ∧ B
+A
+
+assum. no.
+rule
+(1)
+1*
+A
+1 ∧E
+(2)
+1*
+(3) A ∧ B → A 1, 2 →I
+(1)
+A
+1 ∧E
+(2)
+(3) A ∧ B → A 1, 2 →I
+(1)
+A
+1 ∧E
+(2)
+1 ∧E
+(3)
+2, 3 →I
+(4)
+
+A ∧ B
+A
+
+A ∧ B
+A
+B
+
+A → B
+
+1
+1
+
+1
+1
+1
+
+allowed?
+
+
+
+
+
+
+
+6 of 23
+
+The Topics of the Course
+
+Φ Previous Session/Homework
+
+Argument Reconstruction
+
+Any questions concerning any topic of any lecture
+
+so far?
+
+7 of 23
+
+Argument Reconstruction
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+An argument reconstruction consists of
+
+1 a corresponding argument scheme Φ0, Φ1, ..., Φn ∴ Ψ with
+
+a formalization (translation scheme) that assigns sentence
+letters to simple natural language sentence
+
+2 an assessment of the validity of Φ0, Φ1, ..., Φn ∴ Ψ
+
+To show that an argument is valid, we have to prove that the
+inference conditional Φ0 ∧ Φ1 ∧ ... ∧ Φn → Ψ is true under every
+interpretation.
+
+8 of 23
+
+Argument Reconstruction
+in Lpred
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+validity is a semantic notion, we want to prove that
+Φ0 ∧ Φ1 ∧ ... ∧ Φn → Ψ is tautologous
+but our semantic proof procedures in Lpred are lacking:
+we only learned how to deal with single nite interpretations,
+semantic trees cannot deal with the identity symbol and are
+inecient for large formulas
+so we prove Φ0, Φ1, ..., Φn (cid:96) Ψ syntactically and can infer
+from GLCQ's soundness that Φ0, Φ1, ..., Φn |= Ψ also holds
+
+9 of 23
+
+Argument Reconstruction
+Using Soundness and Completeness
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+A calculus C is sound i
+you can only derive formulas that also follow semantically.
+
+GLCQ is sound, so its rules are truth-preserving. A syntactic proof
+guarantees that the corresponding inference is also semantically
+correct.
+
+A calculus C is complete i
+you can derive all formulas that follow semantically.
+
+GLCQ is complete, so for every semantic proof there is a syntactic
+one in GLCQ.
+
+10 of 23
+
+Argument Reconstruction
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+Carlos and 80 Cent can't be both hustlin' gangsters, y'all. And
+man, if it's raining or not, Carlos is a gangster and a logic prof! All
+logic profs be hustlin'. So, dude, 80 Cent ain't even a hustlin'
+gangster!
+
+H: ... is hustling
+
+G : ... is a gangster
+
+L: ... is a logic professor
+
+R: It's raining.
+
+c: Carlos
+e: 80 Cent
+
+¬(Hc∧Gc∧He∧Ge), R∨¬R → Gc∧Lc,∀x(Lx → Hx) ∴ ¬(He∧Ge)
+
+11 of 23
+
+Argument Reconstruction
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+¬(Hc∧Gc∧He∧Ge), R∨¬R → Gc∧Lc,∀x(Lx → Hx) ∴ ¬(He∧Ge)
+
+assum.
+1
+2
+3
+
+2
+2
+2
+3
+2,3
+2,3
+1,2,3
+
+no.
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+(11)
+
+formula
+
+¬(Hc ∧ Gc ∧ He ∧ Ge)
+R ∨ ¬R → Gc ∧ Lc
+
+∀x(Lx → Hx)
+
+R ∨ ¬R
+Gc ∧ Lc
+
+Gc
+Lc
+
+Lc → Hc
+
+Hc
+
+Hc ∧ Gc
+¬(He ∧ Ge)
+
+rule
+A
+A
+A
+TI : LEM
+2, 4 MPP
+5 ∧E
+5 ∧E
+3 ∀E
+7, 8 MPP
+6, 9 ∧I
+1, 10 MPT
+
+12 of 23
+
+Reconstructing Invalid Arguments
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+Sometimes arguments are invalid.
+
+In Lpred , we cannot prove that an argument is invalid:
+
+semantic trees: if not all branches are closed, wrong instantial
+names may have been chosen
+
+syntactic proofs: if we cannot prove the argument, we may
+not have been able to think of the correct proof
+
+In this case you have to show that there is a counter-model, an
+interpretation such that the premises are true and the conclusion
+false.
+
+13 of 23
+
+Counter-Models
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+In this case you have to show that there is a counter-model, an
+interpretation such that the premises are true and the conclusion
+false.
+
+A nite Lpred interpretation of a set of Lpred sentences
+{Φ0 . . . Φn} consists of
+
+1 a universe: a nite non-empty set of objects
+
+2 an assignment of one object of the universe to each name
+
+3 an assignment of a set of tuples over objects of the
+
+universe to each predicate
+
+4 an assignment of truth values to each sentence letter
+
+14 of 23
+
+Reconstructing Invalid Arguments
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+The conlusion of argument A does not follow from anything.
+Argument A being valid is necessary and sucient for its
+conclusion to follow from its premises. All sound things are valid.
+Therefore, argument A is sound.
+
+F : ... follows from ...
+
+S: ... is sound
+V : ... is valid
+a: argument A
+
+c: conclusion of argument A
+p: premises of argument A
+
+∀x¬Fcx, Va ↔ Fcp,∀x(Sx → Vx) ∴ Sa
+
+15 of 23
+
+Reconstructing Invalid Arguments
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+∀x¬Fcx, Va ↔ Fcp,∀x(Sx → Vx) ∴ Sa
+
+Counter-Model:
+U = {c1, c2, c3}
+
+F = {}
+S = {}
+V = {}
+a = c1
+c = c2
+p = c3
+
+16 of 23
+
+Reconstructing Arguments
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+Assessing validity can be done in three ways:
+
+1 provide a syntactic derivation (valid)
+
+2 provide a semantic tree in which all branches are closed
+
+(valid)
+
+3 provide a counter-model (invalid)
+
+17 of 23
+
+Reconstructing Arguments
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+Mah homies, Carlos isn't in da Mu Tang Clan, but Eminem also
+ain't in there. There is at most one gangster who ain't in the Mu
+Tang Clan, though. And y'all know, Carlos and Eminem are some
+gangsters. So Carlos is Eminem, fo' sho', bro.
+
+G : ... is a gangster
+
+M: ... is a member of the Mu Tang Clan
+
+c: Carlos
+e: Eminem
+
+¬Mc∧¬Me,∀x∀y (Gx∧¬Mx∧Gy∧¬My → x = y ), Gc∧Ge ∴ c = e
+
+18 of 23
+
+Reconstructing Arguments
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+¬Mc∧¬Me,∀x∀y (Gx∧¬Mx∧Gy∧¬My → x = y ), Gc∧Ge ∴ c = e
+
+assum.
+1
+2
+3
+1
+1
+3
+3
+1,3
+1,3
+1,3
+2
+2
+1,2,3
+
+no.
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+(11)
+(12)
+(13)
+
+formula
+¬Mc ∧ ¬Me
+
+Gc ∧ Ge
+¬Mc
+¬Me
+Gc
+Ge
+
+Gc ∧ ¬Mc
+
+Gc ∧ ¬Mc ∧ Ge
+
+∀x∀y (Gx ∧ ¬Mx ∧ Gy ∧ ¬My → x = y )
+
+Gc ∧ ¬Mc ∧ Ge ∧ ¬Me
+
+∀y (Gc ∧ ¬Mc ∧ Gy ∧ ¬My → c = y )
+
+Gc ∧ ¬Mc ∧ Ge ∧ ¬Me → c = e
+
+c = e
+
+rule
+A
+A
+A
+1 ∧E
+1 ∧E
+3 ∧E
+3 ∧E
+4, 6 ∧I
+7, 8 ∧I
+5, 9 ∧I
+2 ∀E
+11 ∀E
+10, 12 MPP
+
+19 of 23
+
+Reconstructing Arguments
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+Irby and Jiggly are two pink cotton balls. Whenever Jiggly sings,
+Irby sleeps. A pink cotton ball cannot sing and sleep at the same
+time. So when Jiggly sleeps, Irby does not sleep.
+
+F : ... is a pink cotton ball
+
+G : ... sings
+H: ... sleeps
+
+i: Irby
+j: Jiggly
+
+Fi ∧ Fj, Gj → Hi,∀x(Fx → ¬(Gx ∧ Hx)) ∴ Hj → ¬Hi
+
+20 of 23
+
+Reconstructing Arguments
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+Fi ∧ Fj, Gj → Hi,∀x(Fx → ¬(Gx ∧ Hx)) ∴ Hj → ¬Hi
+
+Counter-Model:
+
+U = {c1, c2}
+
+i = c1
+j = c2
+
+H = {c1, c2}
+
+F = {c1, c2}
+
+G = {}
+
+21 of 23
+
+Reconstructing Arguments
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+Yo, if ther's a hustler, it's gettin' crazy up in a hood. Gangsters or
+guys in trouble be hustlin' for real. And although Carlos is rappin'
+or at least a gangster: Noone that ain't in trouble's rappin'. To me
+it's crystal clear that Carlos is da hustler and it be getting crazy up
+in da hood.
+
+C : It is getting crazy in the hood.
+
+H: ... is hustling
+
+G : ... is a gangster
+T : ... is in trouble
+R: ... is rapping
+
+∃xHx → C ,∀x(Gx ∨ Tx → Hx), Rc ∨ Gc,¬∃x(¬Tx ∧ Rx) ∴ Hc ∧ C
+
+c: Carlos
+
+22 of 23
+
+Reconstructing Arguments
+Exercise
+
+Previous Session/Homework
+
+Φ Argument Reconstruction
+
+∃xHx → C , ∀x(Gx ∨ Tx → Hx), Rc ∨ Gc, ¬∃x(¬Tx ∧ Rx) ∴ Hc ∧ C
+
+assum.
+1
+2
+3
+4
+4
+4
+4
+8*
+8*
+4,8*
+4,8*
+2
+2,4,8*
+14*
+14*
+2,14*
+2,3,4
+18*
+2,3,4,18*
+1,2,3,4
+1,2,3,4
+
+no.
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+(11)
+(12)
+(13)
+(14)
+(15)
+(16)
+(17)
+(18)
+(19)
+(20)
+(21)
+
+formula
+∃xHx → C
+
+∀x(Gx ∨ Tx → Hx)
+
+Rc ∨ Gc
+
+¬∃x(¬Tx ∧ Rx)
+∀x¬(¬Tx ∧ Rx)
+¬(¬Tc ∧ Rc)
+Tc ∨ ¬Rc
+
+Rc
+¬¬Rc
+Tc
+
+Gc ∨ Tc
+
+Gc ∨ Tc → Hc
+
+Hc
+Gc
+
+Gc ∨ Tc
+
+Hc
+Hc
+
+Hc → C
+
+C
+C
+
+Hc ∧ C
+
+rule
+A
+A
+A
+A
+4 Def ¬∃
+5 ∀E
+6¬ ∧ ∨
+A
+8 ¬¬I
+7, 9 MPT
+10 ∨I
+2 ∀E
+11, 12 MPP
+A
+14 ∨I
+12, 15 MPP
+3; 8, 13; 14, 16 ∨E
+A
+17, 18 MPP
+1, 18, 19 ∃E
+17, 20 ∧I
+
+23 of 23
+
+

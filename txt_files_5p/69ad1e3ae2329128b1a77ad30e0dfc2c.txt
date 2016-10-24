@@ -1,0 +1,419 @@
+Behavioural Tracking 
+
+presentation by
+ Quynh Nguyen & Sara Eustergerling
+
+18.11.2014
+Philosophical aspects of privacy & computer-aided surveillance
+Dr. Uwe Meyer
+
+ 
+
+ 
+
+Outline
+
+1. Behavioural tracking and targeting 
+
+● general information
+● who does it?
+● tracking, targeting and consent
+● profiling
+
+2. Phorm – an introduction
+
+● functional principle
+● (legal) issues  
+
+3. Phorm – rise and fall
+4. Regulation of behavioural tracking
+
+● USA
+● Europe
+● ways forward and rights-based solutions 
+
+ 
+
+ 
+
+Behavioural tracking and targeting 
+
+● Tracking: the monitoring of what a user is doing on the web
+
+● Targeting: using the infomation won by tracking to send 
+
+tailored advertisement and content 
+
+Important distinction between both processes:
+e.g. „Do Not Track“ initiative
+
+ 
+
+ 
+
+Who does it?
+
+● Google (AdSense), Yahoo!, AOL, Microsoft, etc
+
+● Mark Wilmot in Marketing Daily 2009:
+
+“Something amazing happens when marketing efforts are actually 
+relevant to people. We see this step as initiating that crucial dialogue. 
+And shoppers, for their part, are replying, essentially giving permission 
+to marketers to learn their habits and respond accordingly.“ 
+
+ 
+
+ 
+
+Tracking, targeting and consent
+
+● Both sides must benefit and must understand this benefit, and 
+
+consent to the process
+
+● Collaborate consent (see chapter 2)
+
+Two key aspects: 
+
+● Treats consent not as a discrete, on-off decision, but as a 
+
+process 
+
+● Looks at consent as a two-way process – a dialogue
+
+ → not only apt but only kind that is appropriate 
+
+ 
+
+ 
+
+Isn't it just about advertising?
+
+There are several issues: 
+
+●  “piggybacking“ on commercial efforts by governments and 
+
+criminals alike 
+
+● advertising will get much more successful and persuasive (e.g. 
+
+profiling, “pay-per-click“-basis)
+  
+
+ 
+
+ 
+
+Profiling 
+
+ 
+1. Profiling is a statistical effort 
+2. The bigger the database, the more accurate the profiling 
+3. The bigger databases, the more powerful must the computer 
+systems be
+ → much more accurate than “human expert“ profiling 
+
+e.g. Apple's iTunes Genius  
+
+ 
+
+ 
+
+Imperfect profiling
+
+● Despite the power of statistics profiling is still not 100% 
+
+accurate, there are still problems with 
+
+● imperfect identification, e.g. “surprise-advertising“ 
+● counter-criminal activities 
+
+● Regarding advertisement, imperfect profiling is not quite as 
+
+significant
+
+ 
+
+ 
+
+Predictive profiling
+
+● Profiling used to predict and control peoples' behaviour 
+● “Offline example“: 
+
+Harrah's casinos (assessing the “pain point“) 
+
+ 
+
+→
+
+ legal basis? 
+
+ → All this shows: it's not “just“ about advertising 
+
+ 
+
+ 
+
+Phorm 
+
+● Phorm is a digital technology company known for its contextual 
+
+advertising software
+
+● Toeing the line between adware und spyware
+
+ 
+
+● Phorm's Webwise: behavioural tracking and targeting service, and 
+
+“a personalised internet“
+
+● Webwise works in three phases:
+
+1. monitoring, tracking
+2. analysis 
+3. targeting 
+
+Phase 1: monitoring and tracking
+
+● Monitoring works by intercepting the user's instructions at ISP 
+
+level and filtering out the information that could be relevant
+
+● Involves putting a “false“ cookie onto the user's computer by 
+
+masquerading as the website the user wants to visit   
+
+● That cookie contains an individual, anonymous identifier (UID) 
+
+used to monitor the user 
+
+Phase 1: monitoring and tracking
+
+Since Phorm uses these UIDs they claim that the user will stay 
+anonymous. However, there are several loopholes during the 
+monitoring phase:
+ 
+
+● if the visited website uses HTTPS protocol for secure 
+
+browsing 
+
+→
+
+ webmaster can read the UID using Javascript
+
+● if the link between user and tracked information is “made in 
+
+the real world, not in the world of bits“ 
+
+→
+
+ shoulder-surfing
+
+Phase 2: Analysis 
+
+● The analysis works similiar to the one done by search engines
+
+  
+
+● Builts up the the profile of the user
+
+ 
+
+● After analysis of a page, the profile is packed into a short record 
+(containing e.g. top ten words which characterize the page and 
+the UID) 
+
+Phase 3: Targeting
+
+● different “channels“ (profiles) set up by Phorm with which the 
+
+short record is compared to 
+
+● when it fits into one of the channels, the UID becomes eligible for 
+
+an advertisement from that channel
+
+● a time-stamped record consisting of the name of the channel and 
+
+the UID is made; the earlier record is deleted
+
+● when a user visits a website, the previously chosen 
+
+advertisement from that channel will appear 
+
+(Legal) issues
+
+Legal issues:
+2008: legal analysis of Phorm by the Foundation for Information 
+Policy Research found these problems: 
+
+1. interception of communications (contrary to RIPA)
+2. fraud
+3. risk of committing civil wrongs 
+4. unlawful processing of sensible personal data (contrary to 
+DPA)
+
+Other issues: 
+
+● Phorm works on a “global“ scale
+● Only Phorm (and their clients) benefit from Webwise 
+
+ 
+
+ 
+
+Regulations of behavioural tracking & targeting 
+
+Phorm put attention on the whole ordeal of behavioural tracking 
+and targeting 
+
+In the EU this led to the Cookie Directive:
+
+The Cookie Law “is a piece of privacy legislation that requires 
+websites to get consent from visitors to store or retrieve any 
+information on a computer, smartphone or tablet.“
+
+ 
+
+ 
+
+Regulations of behavioural tracking & targeting 
+
+In the USA: Do Not Track initiative
+DNT is a technology and policy proposal that enables users to opt out of 
+tracking by websites
+Issues: 
+1. DNT-options are opt-out and not opt-in
+2. interpretation of “do not track“ as “do not target“
+3. only a short-term fix as there are always new ways of behavioural tracking
+    developing
+
+ → There are real gaps between what the industry wants, what the lawmaker 
+are proposing, and what might actually be useful to users 
+
+ 
+
+       
+
+ 
+
+Rights-based solutions
+
+Bernal's suggestions: 
+
+● A right to monitor the monitors 
+
+● Collaborative consent to behavioural tracking 
+
+● Future for behavioural tracking 
+
+ 
+
+ 
+
+Monitor the monitors
+
+● one key question: would monitoring of a person's internet 
+
+activities be acceptable even if it would be compliant with data 
+protection legislation? 
+ → shows one of the mayor problems of data protection: it 
+focuses on data instead of privacy
+
+● it should be a right not to be monitored 
+● Even more: if we are monitored, we should be allowed to 
+
+monitor the monitors and to control how and when monitoring 
+takes place
+
+ 
+
+ 
+
+Collaborative consent to behavioural tracking 
+
+“If a way can be found for the individuals concerned to have a real, 
+autonomous and consensual choice as to whether and how to 
+participate in programmes like these, all sides could benefit.“ 
+ → collaborative consent
+Consent: “a two-way, continuous and interactive process“
+
+ both monitor tracking cookies and allow the user to decide 
+
+Implementation attempts: Ghostery, DoNotTrackMe 
+→
+which ones may or may not track them 
+ 
+
+ 
+
+Future for behavioural tracking
+
+Bernal's suggestions: 
+
+● Profiling service where users volunteer to be profiled for premium 
+
+services 
+
+● Reshaping of the internet
+
+Do you have any suggestions?
+
+ 
+
+ 
+
+Discussion launchers
+
+● Do you have any questions or remarks?
+● We talked about predictive and imperfect profiling. How could you 
+imagine these techniques evolving in the future (e.g. in regards to 
+governments)?
+
+● Regarding the Harrah's casino example: how can predictive profiling 
+
+and manipulation disturb a person's autonomy? 
+
+● Would you even call that loss of freedom of will? Or loss of freedom 
+
+of action? 
+
+● The Phorm case showed the power of the users and advocacy groups
+
+—do you think this could be possible on an even larger scale? 
+
+ 
+
+ 
+
+Thank you for your attention!
+
+ 
+
+ 
+
+Bibliography
+
+● Internet Privacy Rights, chapter 6 – P. Bernal (2014)
+●  http://www.spychecker.com/spyware.html
+● http://www.cookielaw.org/the-cookie-law/
+● http://vesterncasino.blogspot.de/2011/10/harrahs-casino-online.html
+● https://www.youtube.com/watch?v=vMT7ylFHVEo&list=UUSLfVGSrDlFqQgRNjn_Qs
+
+gA
+
+● http://www.theregister.co.uk/2009/03/11/phorm_berners_lee_westminster/
+● https://www.privacyinternational.org/resources/privacy-101
+● https://www.openrightsgroup.org/campaigns/stop-phorm
+● https://cdt.org/
+● http://paulbernal.wordpress.com/2012/01/28/phorm-a-chapter-closes/
+
+ 
+
+ 
+
+

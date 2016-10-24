@@ -1,0 +1,4697 @@
+ 
+
+7.  REALISIERUNG VON STEUERWERKEN  
+
+ist  die  strikte  Aufteilung 
+
+7.1  Grundprinzip  
+ 
+Eine bewährte Entwurfsmethode bei komplexen Digitalsystemen 
+wie  Mikroprozessoren 
+in  einen 
+datenverarbeitenden und einen steuernden Teil (vgl. Kap. 6).  
+ 
+Ein  Steuerwerk  (Kontrolleinheit,  Control  Unit)  steuert  den 
+Ablauf in einem Operationswerk (Verarbeitungseinheit, Data 
+Processing Unit, Datenpfad, Data Path). Zusätzlich werden i. 
+Allg.  Kontrollsignale  (Start,  Stopp,  Fehler  etc.)  von  außen 
+verarbeitet bzw. nach außen generiert. 
+ 
+
+C’in
+
+Steuer-
+werk
+
+C’ out
+
+Cin
+
+Cout
+
+Eingabe-
+daten
+
+Operations-
+
+werk
+
+Ausgabe-
+daten
+
+ 
+
+ 
+Cin: 
+
+ 
+Cout: 
+
+ 
+C’in: 
+
+interne  Eingabesignale  (Kriterien),  die  die  Ablauf-
+steuerung im Steuerwerk beeinflussen 
+interne  Kontrollsignale 
+Steuerwerk an die Verarbeitungseinheit 
+externe  Eingabesignale  z.B.  von  anderen 
+geordneten) Kontrolleinheiten (z. B. BEGIN, RESET) 
+
+(Mikrooperationen)  vom 
+
+(über-
+
+ 
+C’out:  externe  Ausgabesignale  an  andere  Kontrolleinheiten  
+
+(z. B. BUSY, END) 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 1 
+
+AG Technische 
+Informatik 
+
+Das  Timing  von  Steuerwerk  und  Operationswerk  muss 
+sorgfältig abgestimmt werden, z. B. bei Moore-Timing: 
+ 
+
+-  positiv flankengetriggerte FFs für das Steuerwerk 
+ 
+-  negativ 
+
+flankengetriggerte 
+
+gesteuerte FFs für das Operationswerk 
+
+oder 
+
+zwei-zustands-
+
+ 
+ 
+Zweiphasen-Design:  
+ 
+
+Kontrollsignal(e) 
+        ausgeben 
+
+Folgezustand 
+             bestimmen 
+
+Aktivität im: 
+
+Steuerwerk 
+
+Operationswerk 
+
+Folgezust. 
+stabil 
+
+Aktion(en) 
+auslösen 
+
+Kriterium(en)
+stabil 
+
+Aktion(en) 
+auslösen 
+
+ 
+
+ 
+Gilt  für  andere  Steuerwerk-Implementierungen  mit  Mealy-
+Timing ganz analog. 
+ 
+ 
+Dieses  zweiphasige  Design  hat  den  Vorteil,  dass  laufzeit-
+bedingte Effekte (Hazards, Glitches) im Operationswerk bzw. 
+im  Steuerwerk  jeweils  bis  zum  Beginn  der  nächsten  Phase 
+abgeklungen sind (wenn die Taktphasen lang genug sind).  
+ 
+Steuerwerk  und  Operationswerk  arbeiten  also  immer  auf 
+stabilen Signalen.  
+ 
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 2 
+
+AG Technische 
+Informatik 
+
+Realisierungsprinzipien für Steuerwerke (mehr unten):  
+ 
+• 
+ 
+
+festverdrahtet (hardwired control) 
+
+-  Zustandstabellen-Verfahren (Moore- oder Mealy-Automat) 
+ 
+-  Verzögerungselemente (delay-element method) 
+ 
+-  Zählersteuerung (sequence-counter method) 
+ 
+  und andere Verfahren  
+
+ 
+ 
+•  mikroprogrammiert (microprogramming) 
+ 
+
+Die  Generierung  einer  Menge  von  aktivierten  Steuer-
+signalen wird als Mikrobefehl aufgefasst.  
+ 
+Die  Funktion  des  Steuerwerks  wird  dann  über  eine  Folge 
+von Mikrobefehlen, das Mikroprogramm, spezifiziert.  
+ 
+Dies  wird  in  einem  Mikroprogrammspeicher  abgelegt  und 
+von 
+(Ablaufsteuerung) 
+ausgeführt. 
+
+einem  Mikroprogrammwerk 
+
+ 
+ 
+ 
+Anmerkung:  Die im Folgenden für Steuerwerke vorgestellten 
+Methoden  sind  natürlich  auch  direkt  auf  die 
+Realisierung von Schaltwerken im Allgemeinen 
+anwendbar.  
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 3 
+
+AG Technische 
+Informatik 
+
+7.2  Festverdrahtete Steuerwerke 
+7.2.1  Beispiel: Steuerwerk für einen 
+
+Zweierkomplement-Multiplizierer 
+
+ 
+
+c0
+c10
+
+c10
+
+Sign
+logic
+
+F
+
+Accumulator
+
+A
+
+c1
+
+c5
+
+M(7)
+
+Multiplier register
+
+Q(0)
+
+Multiplicand register
+
+Q
+
+M
+
+c2
+
+c6
+
+8-bit
+data
+buses
+
+= 1
+
+Q(0)
+
+c8
+
+c9
+
+c3
+
+c4
+
+Parallel
+adder
+
+cin
+
+c7
+
+OUTBUS
+
+INBUS
+
+External
+control
+signals
+
+BEGIN
+
+END
+
+CLOCK
+
+Festlegung der Kontroll-
+signale und Kriterien  
+ 
+ 
+Input  
+__________________________________________ 
+BEGIN 
+Q(0)  
+CNT7 
+ 
+
+Start signal 
+LSB of Q 
+COUNT = 7 
+
+conditions 
+
+Universität 
+Osnabrück 
+
+CNT7
+
+Comparator
+7
+
+COUNT
+
+Control
+
+unit
+
+c10c11
+
+c5
+
+.
+.
+.
+
+c0
+c1
+
+c10
+
+Internal
+control
+signals
+
+ 
+
+Control 
+signal 
+c0 
+c1 
+c2 
+c3 
+c4 
+c5 
+c6 
+c7 
+c8 
+c9 
+c10 
+c11 
+END 
+
+Operation controlled 
+
+Set sign bit of A to F. 
+Right-shift register-pair A.Q. 
+Transfer adder output to A. 
+Transfer A to left input of adder. 
+Transfer M to right input of adder. 
+Perform subtraction (correction). Clear Q(0).
+Transfer A to OUTBUS. 
+Transfer Q to OUTBUS. 
+Transfer word on INBUS to Q. 
+Transfer word on INBUS to M. 
+Clear A, COUNT, and F registers. 
+Increment COUNT. 
+Completion signal 
+
+GTI 
+7 - 4 
+
+AG Technische 
+Informatik 
+
+Flussdiagramm für Zweierkomplement-Multiplikation 
+(siehe auch Kap. 6.7; beachten: andere Bitreihenfolge) 
+ 
+
+ 
+ 
+Diese  Darstellung  verdeutlicht,  dass  die  Multiplikation 
+in 
+verschiedenen (mehrphasigen) Schritten abläuft, die sich in den 
+auszuführenden  Operationen  und  zu  prüfenden  Bedingungen 
+unterscheiden.  
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 5 
+
+AG Technische 
+Informatik 
+
+          8 mögliche Eingabekombinationen 
+
+(externes Startsignal) 
+(rechtes Bit des Q-Registers) 
+(Count = 1112) 
+
+Zustandstabellen-Verfahren 
+ 
+Das Steuerwerk wird als Moore- oder Mealy-Automat nach 
+bekannten Verfahren der Schaltwerksynthese entworfen. 
+ 
+ 
+Eingabe:   BEGIN 
+(Kriterien)  Q(0) 
+ 
+CNT7 
+ 
+ 
+ 
+ 
+ 
+Ausgabe: 
+ 
+ 
+ 
+Zustände:  S0, ..., S7 
+ 
+ 
+ 
+ 
+ 
+Anmerkungen:  Vorgehen vgl. Entwurfsschema aus Kap. 6.3 
+ 
+
+(interne Kontrollsignale) 
+(externes Kontrollsignal) 
+
+Wie zuvor:  
+ 
+
+fest an den Zustand gebunden sind 
+
+-  Moore-Automat,  wenn  Ausgaben  nur
+ 
+ 
+-  Mealy-Automat,  wenn  Ausgaben  auch  
+   direkt von der Eingabe abhängen 
+
+c0, ..., c11 
+END 
+
+laut Flussdiagramm  
+
+ 
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 6 
+
+AG Technische 
+Informatik 
+
+Zustandstabelle (Moore-Automat) 
+ 
+Vereinfachung  durch  Zusammenfassen  von  Ausgaben,  die 
+immer gemeinsam auftreten, zu einem Kontrollsignal: 
+ 
+
+c0  für 
+c2  für 
+c9  für 
+
+{c0, c1, c11} 
+{c2, c3, c4} 
+{c9, c10} 
+
+ 
+ASSIGN  PS  NS  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  OUTPUTs* 
+
+ 
+ 
+ 
+
+000 
+001 
+010 
+011 
+100 
+101 
+110 
+111 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+1  0 
+ 
+- 
+- 
+ 
+- 
+- 
+ 
+S0  S1 S0 
+S1 
+S2 
+S3 
+S4 
+S5 
+S6 
+S7 
+
+- 
+- 
+-  1  0  1  0  0  1 
+- 
+-  1  1  0  0 
+- 
+- 
+- 
+- 
+-  S2 
+- 
+-  S3 S4
+- 
+- 
+- 
+-  S4 
+- 
+- 
+- 
+-  S5 S6 S4 S3
+- 
+- 
+-  S6 
+- 
+- 
+-  S7 
+-  S0 
+- 
+- 
+
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+
+- 
+- 
+- 
+
+- 
+- 
+- 
+- 
+- 
+
+- 
+- 
+- 
+- 
+
+- 
+- 
+- 
+
+- 
+- 
+- 
+- 
+
+- 
+- 
+- 
+
+- 
+- 
+- 
+- 
+
+- 
+- 
+- 
+
+ 
+ 
+ 
+00000001 
+00000010 
+00000100 
+01000000 
+10000000 
+01100000 
+00001000 
+00010000 
+
+INPUT-
+VARs 
+BEGIN
+Q(0) 
+CNT7 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+(Hier kompaktes Tabellenformat vom Designtool LogicAid mit: 
+
+Zustandscodierung,  
+Present State,  
+Next State 
+
+ASSIGN: 
+PS: 
+NS: 
+ 
+    *   Ausgangsvektor:  c0,c2,c5,c6,c7,c8,c9,END 
+   „-"  entspricht  Don’t  Care  für  Eingänge  bzw.  nicht  
+       spezifiziert für Zustände 
+
+  Hier liegt ein partiell definierter Automat vor, weil nicht 
+
+alle Folgezustände definiert sind. 
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 7 
+
+AG Technische 
+Informatik 
+
+Steuerwerk als Schaltwerk mit JK-Flipflop 
+
+ 
+
+BEGIN
+Q(0)
+CNT7
+
+END
+c0
+c1
+
+c9
+
+Z0
+
+0Z
+
+Z1
+
+1Z
+
+Z2
+
+2Z
+
+J
+
+K
+
+J
+
+K
+
+J
+
+K
+
+FF0
+
+FF1
+
+FF2
+
+1
+
+0
+
+1
+
+0
+
+1
+
+0
+
+Schalt-
+netz
+
+. 
+. 
+. 
+
+J0
+K0
+J1
+K1
+J2
+K2
+
+CLK
+
+ 
+Übergangs- und Ausgabegleichungen im Schaltnetz: 
+ 
+
+ 
+
++
+
++
+
+, 
+1Z2Z)0(Q1Z)0(Q1Z2Z
+, 
+2Z7
+
+CNT
+
++
+
+)0(Q2Z7
+,   
+
+ 
+
+CNT
+ 
+
+0K =  
+1
+2Z)0(Q1K
+
+=
+
++
+
+ 
+
+ 
+
+0Z
++
+
+=
+
++
+
+=
+
+=
+
+BEGIN
+
+)0(Q0Z
++
+
+0J
+1J
+0Z1Z1Z)0(Q2J
+ 
+0c =
+5c =
+7c =
+9c =
+
+0Z1Z2Z
+0Z1Z2Z
+0Z1Z2Z
+0Z1Z2Z
+
+,   
+,    
+,   
+,    
+
+=
+
+)0(Q2K
+
+CNT
+
+0Z1Z0Z1Z7
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
++
+
+0Z1Z2Z
+
+ 
+
+=
+
+2c
+6c =
+ 
+END =
+
+0Z1Z2Z
+ 
+0Z1Z2Z
+8c =
+0Z1Z2Z
+
+ 
+
+0Z1Z2Z
+
+ 
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 8 
+
+AG Technische 
+Informatik 
+
+7.2.2  Zweiphasensteuerung  
+ 
+Neues Sprachkonstrukt für RTeasy:  
+ 
+Zwei-Phasen-Timing bzw. Zweiflankensteuerung erlaubt beim 
+Moore-Automat  den  Folgezustand  von  einer  RT-Operation 
+abhängig  zu  machen,  die  im  gleichen  Takt  aktiviert  wird, 
+wenn die Kriterien bei der nächsten Taktflanke stabil sind. 
+ 
+D.  h.,  auf  der  zweiten  Flanke  werden  die  Kriterien  aus-
+gewertet, die sich als Reaktion auf die erste Flanke einstellen.  
+
+ 
+
+ 
+
+RT-Operat. | Ermittlung 
+
+     Folgezustand 
+
+links  vom 
+
+ 
+Der  „Pipe-Operator“  |  trennt  in  RTeasy  einen  Takt  derart  in 
+zwei  Phasen,  dass  die 
+|-Operator  stehende 
+Anweisungsliste in der ersten Taktphase, die rechts stehende 
+(bedingte)  Sprunganweisung 
+in  der  zweiten  Taktphase 
+ausgeführt wird.  
+ 
+|-Operator  kann  ein  RT-Programm  nicht  nur 
+Mit  dem 
+syntaktisch  einfacher  (schöner)  formuliert  werden.  Er  bietet 
+auch  die  Möglichkeit,  einen  Moore-Automat  so  zu 
+beschreiben, dass Takte eingespart werden können.  
+ 
+Beispiel:  
+ 
+ 
+ 
+                spart einen Takt im Vergleich zu: 
+ 
+ 
+ 
+
+Q ← INBUS; 
+if Q(0) = 0 then goto RSHIFT fi 
+
+Q ← INBUS | if Q(0) = 0 then goto RSHIFT fi 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 9 
+
+AG Technische 
+Informatik 
+
+ 
+
+Beschreibung der Multiplikation mit erweitertem RTeasy  
+(Kontrollsignale als Kommentar zugeordnet) 
+ 
+ 
+# Zweierkomplement-Multiplizierer (Moore, mit Pipe-Operator)  
+declare register F, A(7:0), Q(7:0), M(7:0), COUNT(2:0); 
+declare bus 
+ 
+START: 
+ 
+INPUT: 
+ 
+ 
+ 
+ADD: 
+RSHIFT: 
+ 
+ 
+ 
+ 
+ 
+CORRECT: 
+OUTPUT: 
+ 
+ 
+ 
+ 
+Die Verwendung des |-Operators vermeidet im Gegensatz zu 
+dem RTeasy-Programm aus Abschnitt 6.7 unnütze Leertakte 
+bei ADD und TEST für Q(0) = 0 bzw. COUNT <> 7. 
+
+BEGIN, END,                        # Ext. Kontrollsignale 
+INBUS(7:0), OUTBUS(7:0) 
+END <- 1 | if BEGIN = 0 then goto START fi; 
+ 
+A <- 0, COUNT <- 0, F <- 0, 
+M <- INBUS; 
+Q <- INBUS | 
+if Q(0) = 0 then goto RSHIFT fi; 
+A <- A + M, F <- (M(7) and Q(0)) or F;  # c2,c3,c4 
+A(7) <- F, A(6:0).Q <- A.Q(7:1),  
+COUNT <- COUNT + 1 | 
+if COUNT <> 7 then  
+    if Q(0) then goto ADD 
+               else goto RSHIFT fi 
+    else if Q(0) = 0 then goto OUTPUT fi fi; 
+A <- A - M, Q(0) <- 0; 
+OUTBUS <- Q; 
+OUTBUS <- A | goto START; 
+
+# c7 
+# c6 
+
+# END 
+
+# c9,c10 
+# c8 
+
+# c0,c1,c11 
+
+# c2,c3,c4,c5 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 10 
+
+AG Technische 
+Informatik 
+
+7.2.3  Steuerwerk als Mealy-Automat 
+ 
+
+ 
+
+S0 
+
+/ 
+BEGIN 
+BEGIN/c9 
+
+END 
+
+S1 
+
+-/c8 
+
+CNT 
+
+/ ) 0 ( Q 7 
+
+2 c 
+
+-/c0 
+/ ) 0 ( Q 7 
+/ ) 0 ( Q 7 
+
+CNT 
+CNT 
+
+5 c 2 c 
+7 c 
+
+-/END 
+
+S2 
+
+S3 
+
+CNT 
+
+/ ) 0 ( Q 7 
+
+0 c 
+
+S4 
+
+-/c6 
+
+S5 
+
+ 
+
+ 
+Weil  bei  einem  Mealy-Automat  abhängig  von  den  Eingangs-
+signalen  verschiedene  Aktionen  ausgeführt  werden  können, 
+während  der  Automat  in  einem  Zustand  bleibt,  sind  hier  nur  
+6  Zustände  erforderlich,  da  die  Ausgaben  den  Kanten 
+zugeordnet werden. 
+ 
+Allerdings  ist  die  Abarbeitungsstruktur  schlechter  erkennbar 
+und schlechter wartbar als beim Moore-Automat. 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 11 
+
+AG Technische 
+Informatik 
+
+RTeasy-Programm zum Mealy-Automat 
+ 
+# Zweierkomplement-Multiplizierer (Mealy, ohne Pipe-Operator)  
+declare register  F, A(7:0), Q(7:0), M(7:0), COUNT(2:0); 
+declare bus  BEGIN, END, 
+ 
+START: 
+ 
+INPUT:  Q <- INBUS; 
+TEST: 
+
+M <- INBUS else END <- 1, goto START fi; #S0 
+#S1 
+#S2 
+
+if BEGIN then A <- 0, COUNT <- 0, F <- 0, 
+
+if COUNT <> 7 then 
+  if Q(0) then A <- A + M, F <- (M(7) and Q(0)) or F, 
+                       goto RSHIFT 
+
+INBUS(7:0), OUTBUS(7:0); 
+
+#Zustaende 
+
+    else A(7) <- F, A(6:0).Q <- A.Q(7:1), 
+     COUNT <- COUNT + 1, goto TEST fi 
+
+    else if Q(0) then A <- A - M, Q(0) <- 0, goto TEST 
+
+           else OUTBUS <- Q fi fi; 
+ 
+
+OUTPUT:  OUTBUS <- A; 
+ 
+RSHIFT: 
+
+END <- 1, goto START; 
+A(7) <- F, A(6:0).Q <- A.Q(7:1), 
+COUNT <- COUNT + 1, goto TEST; 
+
+ 
+
+#S4 
+#S5 
+#S3 
+
+ 
+ 
+Entsprechend  den  Datenabhängigkeiten  sind  hier  keine 
+Leerzyklen nötig.  
+ 
+Durch verschachtelte IF-Schleife und „alleinstehende“ Befehle 
+(z. B. RSHIFT) ziemlich unübersichtlich. 
+ 
+Das  Mealy-Timing  ist  mit  RTeasy  ohne  das  |-Konstrukt 
+darstellbar,  d.  h.  Kriterien  werden  immer  erst  im  nächsten 
+Takt ausgewertet. 
+Dadurch  ist  ein  gemeinsamer  Takt  für  das  Steuer-  und  das 
+Operationswert möglich (kein 2-Phasen-Timing erforderlich). 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 12 
+
+AG Technische 
+Informatik 
+
+ 
+
+(One-Hot Design) 
+
+Andere Arten von Steuerwerken   
+
+7.3 
+ 
+7.3.1  Steuerwerke mit Verzögerungsketten  
+ 
+ 
+Ein  Ablauf  lässt  sich  allgemein  auch  als  eine  zeitliche  (und 
+bedingt verzweigte) Sequenz von Kontrollsignalen darstellen:  
+ 
+        Zeit: 
+ 
+ 
+ 
+ 
+Die  sequentielle  Aktivierung  der  Steuersignale  erfolgt  durch 
+eine Kette von n Flipflops als „Verzögerungselemente“. Dabei 
+wird  jedem  Zustand  ein  Flipflop  zugeordnet,  das  den  Wert  
+Q = 1 hat, wenn der Zustand aktiv ist.  
+
+t1  : activate {c1,j} 
+t2  : activate {c2,j} 
+ 
+tn  : activate {cn,j} 
+
+... 
+
+ Es ist immer genau ein Flipflop zu einem Zeitpunkt aktiv. 
+
+ One-Hot 
+
+ 
+Beispiel:  D-Flipflop als Verzögerungselement  
+ 
+ 
+
+(Delay element)  
+
+Input
+control
+pulse
+
+D
+
+Q
+
+Output
+control
+pulse
+
+Clock
+
+CLOCK Q
+
+ 
+Die  einzelnen  Ausgaben  (Kontrollsignale)  werden  einfach 
+durch  ODER-Verknüpfung  der  Ausgänge  von  den  Flipflops 
+generiert,  in  deren  Zustand  sie  ausgegeben  werden  sollen, 
+weil sie den Zuständen direkt zugeordnet sind.  
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 13 
+
+AG Technische 
+Informatik 
+
+Technische Umsetzung 
+ 
+Die  Aktivierung  des  Folgezustands/Flipflops  erfolgt  ggf. 
+abhängig von den Kriterien.  
+ 
+Ein  Flussdiagramm  oder  RT-Programm 
+unmittelbar 
+transformiert werden. 
+ 
+Sequenz: 
+
+kann  dann 
+in  eine  Kette  von  Verzögerungselementen 
+
+ 
+Verzweigung: 
+ 
+
+ 
+
+x
+
+x
+
+Is x = 1?
+
+No
+
+Yes
+
+ 
+Bei einer Verzweigung wird durch (komplementäre) Verriege-
+lungen  (UND-Verknüpfung)  mit  dem  Verzweigungskriterium 
+immer  genau  ein  nachfolgendes  Verzögerungselement 
+aktiviert.  
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 14 
+
+AG Technische 
+Informatik 
+
+Vereinigung: 
+ 
+
+. . .
+
+. . .
+
+fasst 
+
+ 
+
+ 
+Die  Vereinigung 
+im  Verarbeitungsablauf  mehrere 
+alternative  Zweige  für  die  Aktivierung  eines  nachfolgenden 
+Verzögerungselements zusammen (ODER-Verknüpfung).  
+ 
+ 
+Mit Verzögerungsketten kann sowohl Mealy- als auch Moore-
+Timing  implementiert  werden,  je  nachdem  ob  die  Eingaben 
+auch  Ausgaben  direkt  beeinflussen  können  oder  die 
+Ausgaben nur vom Zustand abhängen.  
+ 
+Beim Moore-Timing wirken die Eingaben nur auf die Weiter-
+schaltbedingung,  und  die  Ausgaben  hängen  nur  von  den 
+Zuständen der Verzögerungselemente ab.  
+ 
+Beim  Mealy-Timing  wirken  die  Eingaben  sowohl  auf  die 
+Weiterschalt-/Verzweigungsbedingungen  als  auch  über  das 
+Ausgabeschaltnetz auf die Ausgänge.  
+ 
+ 
+Im Vergleich zu einer konventionellen Schaltwerksrealisierung 
+sind  bei  Verzögerungsketten  zwar  mehr  Flipflops,  aber 
+weniger/einfachere Gatter erforderlich.  
+ 
+Das Übergangs- und das Ausgabeschaltnetz können prinzip-
+bedingt recht einfach bestimmt werden.  
+Universität 
+Osnabrück 
+
+AG Technische 
+Informatik 
+
+GTI 
+7 - 15 
+
+Beispielschema für Mealy-Timing: 
+ 
+
+1
+c
+
+2
+c
+
+3
+c
+
+...
+
+l
+
+y
+a
+e
+D
+
+t
+n
+e
+m
+e
+e
+
+l
+
+}
+j
+,
+6
+c
+{
+
+ 
+
+.
+ 
+.
+ 
+.
+
+}
+
+j
+,
+
+6
+
+c
+{
+
+}
+j
+,
+5
+c
+{
+
+}
+j
+,
+4
+c
+{
+
+}
+j
+,
+
+3
+c
+{
+
+2
+x
+
+1
+x
+
+ 
+
+o
+N
+
+ 
+
+?
+1
+=
+2
+
+ 
+
+ 
+
+x
+
+o
+N
+
+?
+ 
+1
+ 
+=
+1
+
+ 
+
+x
+
+s
+e
+Y
+
+s
+e
+Y
+
+}
+
+j
+,
+
+5
+
+c
+{
+
+}
+
+j
+,
+
+4
+
+c
+{
+
+}
+
+j
+,
+3
+
+c
+{
+
+}
+j
+,
+
+1
+c
+{
+
+i
+
+n
+g
+e
+B
+
+l
+
+y
+a
+e
+D
+
+t
+
+n
+e
+m
+e
+e
+
+l
+
+}
+j
+,
+
+2
+c
+{
+
+l
+
+y
+a
+e
+D
+
+t
+
+n
+e
+m
+e
+e
+
+l
+
+i
+
+n
+g
+e
+B
+
+}
+
+j
+,
+1
+
+c
+{
+
+}
+
+j
+,
+2
+
+c
+{
+
+ 
+Beachten:  Ausgaben {c3,j}, {c4,j}, {c5,j} sind hier auch direkt 
+
+von Eingaben x1 und x2 abhängig  Mealy  
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 16 
+
+AG Technische 
+Informatik 
+
+Beispiel:  Steuerwerk  des  Zweierkomplement-Multiplizierers 
+
+aus Verzögerungselementen mit Moore-Timing 
+
+ 
+
+Load Q
+
+BEGIN
+
+Load M
+Reset
+
+Delay
+element
+
+Delay
+element
+
+CNT7
+
+Q(0)
+
+Delay
+element
+Add
+
+Delay
+element
+
+Shift
+Inc
+
+COUNT
+
+Delay
+element
+
+Subtract
+
+Output Q
+
+Output A
+
+Delay
+element
+
+Delay
+element
+
+Delay
+element
+
+c8
+
+c9
+
+c10
+
+c0
+
+c1
+
+c11
+
+c2
+
+c3
+
+c4
+
+c5
+
+END
+
+c6
+
+c7
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 17 
+
+AG Technische 
+Informatik 
+
+7.3.2  Steuerwerke mit Zählersteuerung 
+ 
+Bei  einer  Zählersteuerung  wird  die  Verarbeitung  in  zwei 
+Ebenen  aufgeteilt,  nämlich  in  Schritte,  die  mehrere  Phasen 
+haben  können.  Ein  Modulo-k-Zähler  mit  Decoder  dient  zur 
+Erzeugung  von  k  eindeutigen  Phasensignalen  Φi  für  die 
+einzelnen Verarbeitungsschritte, von denen immer genau eins 
+aktiv  ist.  Ein  Zustand  wird  dann  durch  die  Kombination  von 
+Schritt und Phase festgelegt.  
+ 
+
+Begin
+
+End
+
+Clock
+
+Reset
+
+Begin
+End
+Clock
+Reset
+
+Modulo-k
+sequence
+counter
+. . .
+
+S
+
+R
+
+Q
+
+Q
+
+Count
+enable
+
+Reset
+
+Enable
+
+Clock
+period
+
+Modulo-k
+counter
+
+. .
+
+1/k
+
+decoder
+
+. . .
+
+1Φ
+
+2Φ
+
+kΦ
+
+1Φ
+
+2Φ
+
+kΦ
+
+des 
+
+ 
+ 
+Das  Weiterschalten  zwischen  den  Schritten  erfolgt  durch 
+Setzen 
+gleichzeitiges 
+Rücksetzen des (RS-)Flipflops für den aktuellen Schritt.  
+ 
+Falls  möglich  wird  dazu  ein  eindeutiges  Steuersignal  des 
+aktuellen  Schrittes  verwendet,  um  die  Logik 
+für  die 
+Generierung eines speziellen Weiterschaltsignals zu sparen.  
+
+Folge-(RS-)Flipflops 
+
+und 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 18 
+
+AG Technische 
+Informatik 
+
+Die  bedingte  Ausführung  von  Operationen  (z.  B.  ADD)  und 
+das  bedingte  Weiterschalten  erfolgt  durch  entsprechende 
+logische Verknüpfung mit Kriterien und externen Signalen.  
+ 
+
+Modulo-k
+sequence
+counter
+
+1Φ
+2Φ
+.
+.
+.
+kΦ
+
+Cout
+
+.
+.
+.
+
+Logic
+circuit
+
+N
+
+. . .
+
+Cin
+
+ 
+
+ 
+Um  aus  den  Phasensignalen  und  den  Kriterien  die  Kontroll-
+signale  zu  generieren  und  den  Ablauf  durch  Kriterien  zu 
+steuern,  ist  hier  nur  noch  ein  Schaltnetz  N  (kombinatorische 
+Logik) erforderlich.  
+ 
+Das  kann  ggf.  auch  den  Zähler  bei  einem  Weiterschalten  in 
+den nächsten Schritt zurücksetzen.  
+ 
+ 
+ 
+Bei  dem  folgenden  Beispiel  wirken  Kriterien  direkt  auf  die 
+Steuersignale  und  die  Weiterschaltbedingung.  D.  h.,  dieses 
+Steuerwerk  verwendet  Mealy-Timing,  aber  Leertakte,  falls 
+nicht addiert bzw. korrigiert wird (vermeidbar durch vorzeitiges 
+Rücksetzen  des  Zählers  über  eine  einfache  zusätzliche 
+Logik). 
+ 
+Innerhalb  der  Schritte  reicht  eine  Zählersteuerung  mit  einem 
+Zähler  für  die  maximale  Phasenzahl,  hier  ein  mod-2-Zähler 
+(Phasen Φ1, Φ2).  
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 19 
+
+AG Technische 
+Informatik 
+
+Beispiel: 
+
+ 
+
+Clock
+
+Steuerwerk  des  Zweierkomplement-Multiplizierers 
+mit Zählersteuerung 
+
+Begin
+End
+
+Reset
+
+Modulo-2
+sequence
+counter
+1Φ
+2Φ
+
+BEGIN
+
+S
+
+FF1
+
+R
+
+S
+
+FF2
+
+R
+
+Q(0)
+
+CNT7
+
+1
+
+0
+
+1
+
+0
+
+S
+
+FF3
+
+R
+
+1
+
+0
+
+Load M
+Reset A, COUNT, F
+
+Load Q
+
+Add
+
+Shift, Inc
+COUNT
+
+Subtract
+
+Output Q
+
+Output A
+
+c9
+c10
+
+c8
+
+c2
+c3
+c4
+c0
+c1
+c11
+
+c5
+
+c7
+
+c6
+
+END
+
+ 
+
+ 
+Der Ablauf wird mittels RS-Flipflops in 3 Schritte eingeteilt, die 
+jeweils mehrere Phasen haben können: 
+(1) Initialisierung,  Laden  von  Multiplikator  und  Multiplikand 
+
+(Cycle 0 in Kap. 7.2; S1 und S2 beim Automaten) 
+
+(2) Produktbildung, Multiplikation (ein Mult-bit pro Zyklus (Cycle  
+ 
+(3)  Ausgabe Q, END-Signal (Cycle 9; S7) 
+
+ 1 - 7; S3, S4), ggf. Korrektur, Ausgabe A (Cycle 8; S5, S6) 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 20 
+
+AG Technische 
+Informatik 
+
+Vergleich festverdrahteter Steuerwerke 
+
+7.4 
+ 
+Zustandstabellen-Verfahren 
+-  nur für kleine Zahl von Zuständen praktikabel 
+-  Struktur der Ablaufsteuerung (z. B. Schleifen) wird verdeckt 
+
+ 
+
+ 
+
+(bei Mealy- noch mehr als bei Moore-Automaten) 
+
+ 
+
+ 
+
+-  unterschiedliches Timing bei Moore- und Mealy-Automaten 
+-  schwierige Fehlersuche, schlecht wartbar  
+-  nicht sehr änderungsfreundlich   
+ 
+ 
+Verzögerungskette 
+-  einfacher  Entwurf,  der  die  Struktur  des  Flussdiagramms 
+
+ 
+
+ 
+
+ 
+
+unmittelbar wiedergibt 
+
+ 
+
+ 
+
+-  Timing wie Mealy- oder Moore-Automat möglich 
+-  geringer Aufwand an kombinatorischer Logik (Gatter) 
+-  hoher Aufwand an Verzögerungselementen (Flipflops): 
+             n statt log2 n bei n Zuständen 
+ 
+-  gut wartbar  
+ 
+ 
+Zählersteuerung 
+-  besonders für Algorithmen mit Schleifen geeignet 
+-  zusätzliche Logik zur Berücksichtigung von Kriterien 
+-  Timing wie Mealy-Automat 
+-   ohne vorzeitiges Rücksetzen des Zählers evtl. Leerzyklen 
+ 
+ 
+Anmerkung:  Die  Schaltnetze  können  natürlich  auch  wie 
+gehabt mittels programmierbarer Logik implementiert werden.  
+
+ 
+
+ 
+
+ 
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 21 
+
+AG Technische 
+Informatik 
+
+ 
+
+7.5  Mikroprogrammierte Kontrolleinheiten 
+7.5.1  Grundprinzip 
+ 
+Der  klassische  Entwurf  eines  Steuerwerks  für  komplexe 
+Digitalsysteme  (mit  vielen  Zuständen  sowie  Eingangsgrößen 
+und  Kriterien  des  Operationswerks)  wird  für  einen  Hand-
+entwurf  schnell  recht  aufwändig,  fehleranfällig  und  ist  wenig 
+flexibel  und  schlecht  wartbar,  denn  jede  Modifikation  und 
+Erweiterung bedingt einen komplett neuen Hardwareentwurf.  
+ 
+Anstelle einer festverdrahteten Kontrolleinheit wird deshalb oft 
+ein Mikroprogramm-Steuerwerk verwendet. 
+ 
+Der  Kontrollalgorithmus  wird  dabei  als  Mikroprogramm  in 
+einem  (Mikroprogramm-)Speicher  im  Steuerwerk  abgelegt 
+und (Mikro-)Befehl für (Mikro-)Befehl abgearbeitet.  
+ 
+Die Mikrobefehle sind wortweise organisiert (µ-Kontrollworte) 
+und enthalten parallel alle Steuersignale und Angaben für den 
+nächsten auszuführenden Mikrobefehl, d.h.:  
+ 
+
+-  Steuerimpulse  (Kontrollsignale,  Mikrooperationen)  für 
+
+die Datenverarbeitungseinheit (Operationswerk)  
+
+-  zu berücksichtigende Kriterien (z. B. AC = 0, AC < 0) für 
+
+bedingte Verzweigungen im Mikroprogramm 
+
+-  Adressinformation für die Generierung der Folgeadresse 
+in  der  Mikroprogrammsteuerung  (implizit  mittels  µ-
+Befehlzähler oder explizit angegeben) 
+
+ 
+D.  h.,  ein  Teil  der  Ausgangssignale  (des  Mikrobefehls)  wird 
+zur Steuerung der Adressiereinheit und damit des Ablaufs des 
+Mikroprogramms selbst verwendet.  
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 22 
+
+AG Technische 
+Informatik 
+
+Prinzip
+
+pieller A
+
+Aufbau 
+
+der  ei
+befehlen
+egt  ist, 
+program
+Inhalt 
+ängig.  
+
+Weil 
+Mikrob
+abgele
+Mikrop
+vom 
+unabhä
+ 
+chaltwe
+Das Sc
+einem R
+-  e
+einer 
+-  e
+n
+nächste
+
+ 
+Der  M
+progra
+
+igentlic
+n  spez
+muss 
+mms ste
+
+che 
+fun
+zifiziert 
+das  Sc
+euern u
+Mikrop
+
+nktions
+  und 
+chaltwe
+und wir
+program
+
+sbestim
+im  Mi
+erk  nur
+rd dadu
+mmspeic
+
+mende
+kroprog
+r  die  A
+urch rec
+chers 
+
+e  Teil 
+gramm
+Abarbeit
+cht einf
+weites
+
+des 
+
+ 
+in  de
+speich
+tung  de
+fach un
+stgehen
+
+en 
+er 
+es 
+nd 
+nd 
+
+erk bes
+Register
+Adress
+n ausz
+
+teht pri
+r für de
+sierungs
+uführen
+
+inzipiel
+en aktue
+seinhei
+nden M
+
+l aus: 
+ellen Zu
+it  zur
+Mikrobef
+
+ustand 
+r  Bes
+fehls  
+
+(Mikro
+stimmun
+
+  
+befehl)
+ng  de
+es 
+
+Mikropro
+ammiert
+
+ogramm
+ter Nur-
+
+mspeich
+-Lese-S
+
+her  ist 
+Speiche
+
+i.  d.  R
+er ("mik
+
+R.  ein 
+kroprog
+
+von  H
+grammi
+
+Herstell
+ert").  
+
+er 
+
+ät 
+Universitä
+Osnabrüc
+ck 
+
+GTI
+7 - 23
+
+G Technisc
+AG
+Informa
+
+che 
+atik 
+
+Die  Abarbeitung  des  Mikroprogramms  erfordert  eine 
+Adressierungseinheit,  die  die  Mikrobefehle  der  Reihe  nach 
+aktiviert (lineare Adressierung mittels "Mikro-Programmzähler" 
+µPC)  oder  ggf.  auch  Verzweigungen  ausführt  (z.  B.  durch 
+direktes Setzen der Adresse des gewünschten Mikrobefehls).  
+ 
+ 
+Über  Kriterien  als  die  Eingangssignale  der  Mikroprogramm-
+steuerung  kann  die  Abarbeitungsreihenfolge  der  Mikro-
+befehle, d. h. der Mikroprogrammablauf, beeinflusst werden.  
+ 
+ 
+ 
+ 
+Konsequenzen:  
+
+-  Mit einer relativ einfachen Hardware lässt sich ein recht 
+
+ 
+ 
+
+ 
+
+komplexer Funktionsumfang implementieren.  
+- Die  befehlsweise  Abarbeitung  ähnelt  einem  von 
+Neumann-Rechner.  In  der  Hierarchie  virtueller  Rechner 
+liegt  die  Mikroprogrammebene  aber  unterhalb  der 
+Maschinensprach-Ebene.  
+  D.h.,  ein  Maschinenbefehl  würde  bspw.  durch  eine 
+Sequenz 
+Mikrobefehlen 
+(Mikroprogramm) interpretiert.  
+
+elementaren 
+
+von 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 24 
+
+AG Technische 
+Informatik 
+
+7.5.2  Mikroprogrammwerk nach Wilkes (1951) 
+
+external
+address
+source
+
+clock
+
+CMAR
+
+1/8
+
+decoder
+
+Control memory
+
+S
+
+a2a1a0
+
+Address
+
+field
+
+c0
+
+c1c2c3c4c5c6c7c8
+
+Control
+signals
+
+External
+condition
+
+(Control  Memory)  wurde 
+
+Der  Mikroprogrammspeicher 
+ursprünglich als PLD-artige Diodenmatrix realisiert. 
+ 
+Ein  Mikrobefehl  (hier:  Zeile)  besteht  aus  Mikrooperationen 
+(Control  Signals)  und  dem  Adressfeld 
+(horizontale 
+Mikroprogrammierung). 
+ 
+Die  Adresse  des  aktuellen  Mikrobefehls  steht  im  Register 
+CMAR (Control Memory Address-Register).  
+ 
+Der  entsprechende  Mikrobefehl  (Zeile  im  Mikroprogramm-
+speicher) wird über den Decoder aktiviert. 
+
+ 
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 25 
+
+AG Technische 
+Informatik 
+
+Ein  Mikrobefehl  enthält  hier  noch  explizit  die  Folgeadresse 
+direkt 
+im  Mikroprogrammspeicher,  die  dann  bei  seiner 
+Ausführung ins CMAR geladen wird. 
+ 
+Die Folgeadresse kann von externen Bedingungen (Kriterien) 
+abhängig gemacht werden (bedingte Verzweigungen).  
+ 
+Bei  Wilkes  ist  die  dazu  gehörige  Hardware  unmittelbar  im 
+Mikroprogrammspeicher  abgelegt  und  steuert  die  Auswahl 
+der Folgeadresse direkt (Selektor S). 
+ 
+ 
+Das  CMAR  kann  auch  von  außen  geladen  werden 
+(Startadresse  der  Mikroprogramme,  z.  B.  über  Op-Code  aus 
+dem Instruktionsregister eines Mikroprozessors). 
+ 
+ 
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 26 
+
+AG Technische 
+Informatik 
+
+7.5.3  Moderne Variante des Mikroprogramm- 
+ 
+ 
+Ansatz:  Bestimmung der Folgeadresse außerhalb des Mikro-
+
+werks 
+
+programmspeichers 
+
+ 
+
+Typischer Ablaufzyklus: (nach einem Reset beim Start) 
+1.  Lesen  des  auszuführenden  Mikrobefehls  aus  dem  Mikro-
+
+programmspeicher Control memory CM initiieren  
+2.  Schreiben  des  auszuführenden  Mikrobefehls 
+
+in  das 
+
+Mikroinstruktionsregister µIR  
+
+3.  Ausgabe  der  Kontrollsignale  und  Ausführung  der  entspr. 
+Operationen  im  Operationswerk  sowie  Auswerten  der 
+internen und externen Bedingungssignale zur Bestimmung 
+des nächsten auszuführenden Mikrobefehls im Steuerwerk 
+4.  Adresse des nächsten auszuführenden Mikrobefehls in das 
+
+Mikrobefehlsregister µPC laden bzw. inkrementieren  
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 27 
+
+AG Technische 
+Informatik 
+
+Die  µ-Adressfortschaltung  wird  durch  einen  Mikrobefehls-
+zähler µPC wie folgt gesteuert: 
+ 
+ 
+
+-  Normaler  sequentieller  Befehlsablauf:  Erhöhen  um  1 
+
+(Increment) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-  Bedingte  und  unbedingte  Verzeigungen 
+
+-  Bei  Verzweigungen  wird  die  explizit  im  Mikrobefehl 
+angegebene Branch-Adresse in den µPC geladen (load). 
+(Branch) 
+werden  durch  Selektion  der  gewünschten, 
+im 
+Mikrobefehl  spezifizierten  Bedingungen  mittels  eines 
+Multiplexers (MUX) realisiert, z. B. 
+  s0  s1  Bedeutung 
+   0 
+   0 
+   1 
+   1 
+   
+   
+
+ 0  No Branching 
+ 1  Branch, if ν1 =1  MUX-Eingang xi wird auf Ausgang 
+ 0  Branch, if ν2 =1 
+ 1  Uncond. Branch  x0 = 0, x1= ν1, x2 = ν2, x3 = 1 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Typisches Mikrobefehlsformat („horizontal“)  
+
+s0, s1: Bedingungs-Bits im µ-Befehl 
+ν1, ν2: externe Kriterien 
+
+für das Laden des Mikroprogramm- 
+zählers bei LOAD = 1. 
+
+geschaltet, wenn i = (s0, s1)2 mit 
+
+ 
+ 
+
+ 
+
+Condition
+
+select
+
+Branch
+address
+
+Control 
+field
+
+ 
+
+Felder: 
+ 
+
+ 
+
+ 
+
+-  Bedingungsselektion  (Condition  select)  spezifiziert  die 
+
+Bedingungen (Kriterien) für (bedingte) Verzweigungen 
+
+-  Adressfeld  (Branch  address,  Address  field)  enthält  die 
+
+Folgeadresse bei Sprungbefehlen 
+
+-  Kontrollfeld  (Control  field)  enthält  die  Kontroll-  und 
+
+Ausgangssignale  
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 28 
+
+AG Technische 
+Informatik 
+
+Die  Ablaufsteuerung  bei  der  Mikroprogrammierung  ist  recht 
+universell,  weil  sie  vom 
+Inhalt  des  Mikroprogramms 
+unabhängig  ist.  Mikroprogramm-Sequenzer  sind  daher  auch 
+als integrierte Bausteine erhältlich, die die komplette Logik (z. 
+B.  Register  und  Steuerlogik)  zur  Mikroadressfortschaltung 
+enthalten (z. B. AMD 2909, TI 8835). 
+ 
+Sie enthalten i. Allg. noch zusätzliche Mechanismen wie z. B. 
+Stack für Rücksprungadressen von µ-Unterprogrammen. 
+ 
+
+ 
+
+Zur  Erweiterung  kann  eine  externe  Startadresse  (z.  B.  OP-
+Code  vom  auszuführenden  Maschinenbefehl)  über  das  IR-
+Register  direkt  in  den  µPC  geladen  werden,  um  von  außen 
+ein anderes im CM gespeichertes µ-Programm aufzurufen. 
+ 
+Verfahren  zur  Optimierung  von  Mikroprogrammen  bzgl.  des 
+Speicherbedarfs bekannt (Kompaktifizierung). 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 29 
+
+AG Technische 
+Informatik 
+
+7.5.4  Mikrobefehlsformate  
+ 
+Es sind eine Reihe verschiedener µ-Befehlsformate denkbar, 
+die in Hardware-, Speicher- und Laufzeitbedarf variieren. 
+ 
+Horizontale Mikroprogrammierung 
+ 
+
+Condition
+select 
+
+Branch
+address
+
+Control
+field
+
+Die einzelnen Bits eines Mikrobefehls entsprechen direkt den 
+Kontrollsignalen und wirken direkt auf die Kontrollpunkte ci.  
+Außerdem sind alle Angaben für die Bestimmung der Adresse 
+des  nächsten  Mikrobefehls  zusammen  mit  den  Sprung-
+bedingungen unmittelbar enthalten.  
+ 
+
+μPC
+
+40 - 200 Bits
+
+ 
+
+ 
+Das  Mikroprogramm  besteht  aus  wenigen,  aber  breiten 
+Mikrobefehlen.  Damit  können,  falls  ohne  Hardware-  oder 
+Daten-Konflikte  möglich,  alle  verfügbaren  Mikrooperationen 
+gleichzeitig gesteuert werden. 
+ 
+ 
+Kompakte horizontale Mikroprogrammierung 
+durch 
+Reduktion 
+Zusammenfassen  der  Kontrollsignale,  die  immer  gleichzeitig 
+auftreten  zu  einem  einzigen  Kontrollsignal,  das  mehrere 
+Kontrollpunkte gleichzeitig steuert.  
+
+der  Mikroprogrammspeichergröße 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 30 
+
+AG Technische 
+Informatik 
+
+Vertikale Mikroprogrammierung 
+ 
+In  der  Praxis  schließen  sich  zu  einem  Zeitpunkt  i.d.R.  viele 
+Kontrollsignale  gegenseitig  aus  und  werden  daher  niemals 
+gleichzeitig aktiviert, weil sie sich funktional ausschließen und 
+daher nicht gleichzeitig im Mikroprogramm aktiviert werden.  
+ 
+Die breiten Kontrollwörter eines horizontalen Mikroprogramms 
+sind  daher  meist 
+redundant,  da  nicht  alle  möglichen 
+Bitkombinationen in einer sinnvollen Steuerung vorkommen.  
+ 
+  Jede im Mikroprogramm vorkommende Kombination von 
+
+Steuersignalen erhält daher eine eigene Kennung.  
+
+ 
+
+   Codierung der Mikrobefehle  kürzere Kontrollwörter  
+   aber anschließende Decodierungsstufe nötig  
+ 
+
+17 Bit
+
+μPC
+
+Decodierung
+
+50 - 200 Bit
+
+ 
+
+Der  Mikroprogrammspeicher  wird  kleiner  (und  ist  etwas 
+schneller  auszulesen).  Aber  es  wird  zusätzliche  Hardware 
+und  (Lauf-)Zeit  für  die  Decodierung  (bei  jedem  Mikrobefehl) 
+benötigt. 
+ 
+ 
+Varianten der vertikalen Mikroprogrammierung:  
+ 
+ 
+ 
+Universität 
+Osnabrück 
+
+- Codierung nur des Kontrollteils  
+- Codierung der ganzen Mikrobefehle  
+
+AG Technische 
+Informatik 
+
+GTI 
+7 - 31 
+
+ 
+
+Mischform: Quasi-horizontale Mikroprogrammierung  
+ 
+Bei  der  rein  vertikalen  Mikroprogrammierung  werden  die 
+Decoder  sehr  aufwändig.  Mehrere  Felder  der  Mikrobefehle 
+können  daher  zusammengefasst  und  für  sich  vertikal  codiert 
+werden.  
+ 
+Sie  erhalten  dann  jeweils  eine  eigene,  aber  dafür  kleinere 
+(und schnellere) Decodierstufe.  
+ 
+In  der  Praxis  meist  diese  Art  der  quasi-horizontalen  Mikro-
+programmierung  
+ 
+
+ durch  zusätzliche  Decodierung  zwar  etwas  langsamer 
+als horizontale, dafür aber kleinere (und schnellere) µ-
+Programmspeicher  
+
+(Beispiel s. unten) 
+
+ 
+ 
+ 
+ 
+ 
+Variables Befehlsformat 
+ 
+Darüber  hinaus  können  Signalgruppen,  die  nicht  gleichzeitig 
+aktiviert  werden,  ein  gemeinsames  Feld  im  Mikroprogramm 
+nutzen.  Für  ein  solches  variables  Befehlsformat  muss  eine 
+Kennung in den Mikrobefehlen (Indikatorbits) vorhanden sein 
+oder  zusätzlich  eingefügt  werden,  die  das  Befehlsformat 
+anzeigt.  
+ 
+Z.  B.  kann,  anstatt  Folgeadresse  und  Kontrollbits  parallel  in 
+einem  Befehl  zu  speichern,  durch  ein  Indikatorbit  angezeigt 
+wird, ob es sich um einen Steuer- oder Sprungbefehl handelt.  
+ 
+ 
+
+(Beispiel s. unten) 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 32 
+
+AG Technische 
+Informatik 
+
+7.6  Mikroprogrammierte Multiplizierer-
+
+Kontrolleinheit 
+
+eine 
+
+einzige  Sprungadresse 
+
+aufnehmen 
+
+leicht 
+
+ 
+7.6.1  RT-Programme und Mikroprogramme 
+ 
+in  ein  Mikroprogramm 
+ist 
+Ein  RT-Programm 
+transformierbar,  weil 
+in  den  einzelnen  Zuständen  die 
+Kontrollsignale,  die  Verzweigungsbedingungen  und  der 
+Folgezustand  direkt  abgelesen  und  in  einen  Mikrobefehl 
+umgesetzt werden können.  
+ 
+Timing und Verzweigungen beachten! 
+ 
+Anmerkungen: 
+In  einem  Mikroprogramm  sind  nur  bedingte  2-fach-Verwei-
+gungen  (Sprung  /  kein  Sprung)  möglich,  weil  der  Adressteil 
+nur 
+bzw. 
+spezifizieren  kann.  D.h.  geschachtelte  IF-Abfragen  müssen 
+durch mehrere Mikrobefehle umgesetzt werden.  
+ 
+Deshalb kann hier keine Mehrfachverzweigung (wie z.B. beim 
+implementiert 
+Moore-Automat 
+werden.  Das  RT-Programm  muss 
+partiell 
+umgeschrieben werden.  
+ 
+Beim  folgenden  Beispiel  brauchen  die  Abfragen  in  TEST1 
+bzw. TEST2 deshalb je einen eigenen Takt. Die Multiplikation 
+dauert dadurch etwas länger.  
+ 
+ 
+Auch  aus  diesem  Grund  sind  mikrogrogrammierte  Steuer-
+werke i. Allg. langsamer als festverdrahtete.  
+ 
+
+(RSHIFT)  aus  Kap.  7.2) 
+
+daher 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 33 
+
+AG Technische 
+Informatik 
+
+Beispiel:  Umsetzung  des  Zweierkomplement-Multiplizierers 
+aus  Kap.  7.2  mit  dem  modernen  Mikroprogramm-
+werk aus Kap. 7.5.3  
+
+A <- A + M, F <- (M(7) and Q(0)) or F;    # c2,c3,c4 
+
+Der Start erfolge mit dem ersten Befehl bei BEGIN.  
+
+END,                                
+INBUS(7:0), OUTBUS(7:0) 
+
+      # Ext. Kontrollsignal  
+
+A <- 0, COUNT <- 0, F <- 0, END <- 0, 
+M <- INBUS;                                 
+Q <- INBUS;                                 
+
+# c9,c10 
+# c8 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+declare register  F, A(7:0), Q(7:0), M(7:0), COUNT(2:0) 
+declare bus   
+                     
+BEGIN: 
+ 
+ 
+TEST1:       if Q(0) = 0 then goto RSHIFT fi;             # no control action 
+ADD:  
+RSHIFT:  A(7) <- F, A(6:0).Q <- A.Q(7:1),  
+             
+          
+TEST2:  
+CORRECT: A <- A - M, Q(0) <- 0;                      
+OUTPUT:  OUTBUS <- Q;                                
+ 
+ 
+HALT: 
+ 
+ 
+ 
+Beachten:  Verschachtelte  IF-Abfrage  nicht  umsetzbar,  weil 
+
+COUNT <- COUNT + 1 |                          # c0,c1,c11 
+if COUNT <> 7 then goto TEST1 fi; 
+if Q(0) = 0 then goto OUTPUT fi;            # no control action 
+
+# c2,c3,c4,c5 
+# c6 
+# c7 
+# END 
+
+OUTBUS <- A;                    
+END <- 1 | goto HALT; 
+
+ 
+ 
+
+ 
+
+Universität 
+Osnabrück 
+
+nur 1 Sprungziel angegeben werden kann.  
+
+  Hier  Moore-Timing  mit  |-Konstrukt  für  2-Phasen-
+
+Timing 
+
+GTI 
+7 - 34 
+
+AG Technische 
+Informatik 
+
+ 
+
+(horizontales Format) 
+
+7.6.2  Multiplikations-Mikroprogramm  
+ 
+ 
+Für  die  Kontrolleinheit  des  Multiplizierers  können  die 
+verschiedenen  Mikrobefehlsformate  direkt  aus  dem  RT-
+Programm abgeleitet werden.  
+Hier zunächst horizontales Format. 
+ 
+Horizontales Mikrobefehlsformat 
+ 
+
+ 
+
+1)  00  Keine Verzweigung 
+2)  01  Verzweigung, falls Q(0) = 0 
+3)  10  Verzweigung, falls CNT7 = 1 
+4)  11  Unbedingte Verzweigung 
+
+ 
+Bedingungen (Condition Select s0, s1): 
+ 
+ 
+ 
+ 
+ 
+ 
+Die Branch-Adresse gibt die Folgeadresse als Sprungziel bei 
+Verzweigungen direkt an,  
+sonst erfolgt die Ausführung des nächsten Mikrobefehls.  
+
+ Inkrementieren des µPC 
+
+ 
+ 
+Damit  kann  das  Mikroprogramm  aus  der  RT-Darstellung 
+unmittelbar  anweisungsweise  codiert  werden.  (In  der  Praxis 
+meist  mittels  eigener  Mikro-Assembler,  die  sich  flexibel  für 
+das jeweilige Mikrobefehlsformat konfigurieren lassen.) 
+ 
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 35 
+
+AG Technische 
+Informatik 
+
+ 
+
+ 
+
+i
+
+ 
+)
+t
+r
+e
+d
+o
+c
+ 
+l
+a
+t
+n
+o
+z
+i
+r
+o
+h
+(
+ 
+
+m
+m
+a
+r
+g
+o
+r
+p
+o
+r
+k
+M
+-
+s
+n
+o
+
+i
+
+i
+t
+
+a
+k
+
+i
+l
+
+p
+
+i
+t
+l
+
+u
+M
+
+ 
+
+ 
+ 
+)
+0
+(
+Q
+d
+n
+a
+ 
+)
+7
+(
+M
+←
+F
+
+ 
+
+ 
+
+ 
+,
+
+ 
+
+ 
+
+M
++
+A
+←
+A
+
+ 
+
+ 
+
+ 
+;
+i
+f
+ 
+
+ 
+
+ 
+
+4
+o
+t
+o
+g
+n
+e
+h
+t
+ 
+0
+=
+ 
+)
+0
+(
+Q
+
+ 
+
+ 
+f
+i
+
+ 
+;
+
+F
+
+ 
+ 
+r
+o
+
+ 
+;
+
+S
+U
+B
+N
+
+I
+ 
+
+←
+Q
+
+ 
+
+ 
+,
+
+ 
+
+0
+←
+F
+
+ 
+
+ 
+,
+
+ 
+
+ 
+
+0
+←
+T
+N
+U
+O
+C
+
+ 
+,
+
+ 
+
+0
+←
+A
+
+ 
+
+ 
+;
+
+S
+U
+B
+N
+←
+M
+
+I
+
+ 
+
+s
+t
+n
+e
+m
+m
+o
+C
+
+ 
+ 
+
+   
+
+:
+
+ 
+ 
+,
+)
+1
+7
+(
+Q
+A
+←
+Q
+
+ 
+
+ 
+
+.
+
+.
+)
+0
+
+:
+
+6
+(
+A
+
+ 
+,
+
+ 
+
+F
+←
+
+ 
+)
+7
+(
+A
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+;
+i
+f
+ 
+2
+o
+t
+o
+g
+n
+e
+h
+t
+ 
+7
+>
+<
+T
+N
+U
+O
+C
+
+ 
+
+ 
+
+ 
+f
+i
+
+ 
+
+ 
+
+ 
+|
+1
++
+T
+N
+U
+O
+C
+←
+T
+N
+U
+O
+C
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+;
+i
+f
+ 
+7
+o
+t
+o
+g
+n
+e
+h
+t
+ 
+0
+=
+ 
+)
+0
+(
+Q
+
+ 
+
+ 
+f
+i
+
+ 
+;
+
+ 
+
+0
+←
+
+ 
+)
+0
+(
+Q
+
+ 
+,
+
+ 
+
+ 
+
+M
+–
+A
+←
+A
+
+ 
+
+ 
+
+ 
+;
+
+ 
+
+9
+o
+t
+o
+g
+
+ 
+
+ 
+|
+1
+←
+D
+N
+E
+
+ 
+
+ 
+;
+
+ 
+
+ 
+
+Q
+←
+S
+U
+B
+T
+U
+O
+
+ 
+;
+
+ 
+
+ 
+
+A
+←
+S
+U
+B
+T
+U
+O
+
+ 
+
+E
+
+ 
+
+ 
+
+N
+
+D
+
+ 
+1
+1
+c
+
+ 
+0
+1
+c
+
+ 
+9
+c
+
+ 
+8
+c
+
+ 
+7
+c
+
+ 
+6
+c
+
+ 
+5
+c
+
+ 
+4
+c
+
+ 
+3
+c
+
+ 
+2
+c
+
+ 
+1
+c
+
+ 
+0
+c
+
+ 
+.
+r
+d
+d
+a
+
+ 
+t
+c
+e
+e
+s
+
+l
+
+ 
+
+M
+C
+n
+
+ 
+
+i
+
+ 
+
+n
+o
+i
+t
+c
+u
+r
+t
+s
+n
+o
+r
+c
+M
+
+i
+
+i
+
+ 
+
+l
+
+s
+d
+e
+i
+f
+ 
+l
+
+o
+r
+t
+n
+o
+C
+
+ 
+
+h
+c
+n
+a
+r
+B
+
+ 
+.
+
+d
+n
+o
+C
+
+ 
+.
+r
+d
+d
+A
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+
+ 
+
+0
+0
+0
+0
+
+ 
+
+0
+0
+0
+0
+
+ 
+
+0
+0
+1
+0
+
+ 
+
+0
+0
+0
+0
+
+ 
+
+0
+1
+0
+0
+
+ 
+
+1
+1
+1
+0
+
+ 
+
+0
+0
+0
+0
+
+ 
+
+0
+0
+0
+0
+
+ 
+
+0
+0
+0
+0
+
+ 
+
+1
+0
+0
+1
+
+ 
+
+0
+0
+
+ 
+
+0
+0
+
+ 
+
+1
+0
+
+ 
+
+0
+0
+
+ 
+
+0
+1
+
+ 
+
+1
+0
+
+ 
+
+0
+0
+
+ 
+
+0
+0
+
+ 
+
+0
+0
+
+ 
+
+1
+1
+
+ 
+
+0
+0
+0
+0
+
+ 
+
+1
+0
+0
+0
+
+ 
+
+0
+1
+0
+0
+
+ 
+
+1
+1
+0
+0
+
+ 
+
+0
+0
+1
+0
+
+ 
+
+1
+0
+1
+0
+
+ 
+
+0
+1
+1
+0
+
+ 
+
+1
+1
+1
+0
+
+ 
+
+0
+0
+0
+1
+
+ 
+
+1
+0
+0
+1
+
+ 
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 36 
+
+AG Technische 
+Informatik 
+
+7.6.3  Mikroprogramm-Steuerwerk für den 
+
+Zweierkomplement-Multiplizierer 
+
+ 
+(vgl.  ’modernes’  Mikroprogrammwerk  aus  Kap.  7.5.3  für 
+horizontales Format) 
+ 
+
+ 
+BEGIN 
+
+0 
+) 0 ( Q 
+CNT7 
+1 
+
+0 
+1 
+2 
+3 
+
+MUX 
+
+Condition 
+
+select 
+
+2 
+
+4 
+
+END 
+
+Control
+logic 
+
+Branch 
+address 
+
+Increment 
+
+Load 
+
+µ PC 
+4 
+
+Reset 
+
+Control 
+memory 
+
+(10 X 19 bits) 
+
+19 
+
+12 
+
+µ IR
+
+Control lines { c i} to 
+data processing unit 
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 37 
+
+AG Technische 
+Informatik 
+
+befehlsformaten  
+
+7.6.4  Realisierung mit alternativen Mikro- 
+  
+ 
+Kompakteres horizontales Format 
+ 
+Zusammenfassung  von  stets  gemeinsam  auftretenden 
+Mikrooperationen (z. B. c0, c1): 
+ 
+
+ 
+
+ 
+
+Problem: 
+Es  sollten  nur  solche  Mikrooperationen  zusammengefasst 
+werden,  die  auch  bei  einer  evtl.  Änderung  oder  Erweiterung 
+des Mikroprogramms (oder der Hardware) später nicht einzeln 
+auftreten müssen (sonst Verlust an Flexibilität). 
+ 
+ 
+Quasi-horizontales Format (Gruppenweise Codierung) 
+ 
+
+Anmerkung: 
+END-Signal aus 
+Signalkombina-
+tion generiert  
+
+ 
+
+ 
+Bei  dieser  Realisierung  ist  zwar  ein  eigener,  aber  kleiner 
+Decoder für jede Gruppe erforderlich. Aber insgesamt ist die 
+Realisierung  günstiger  als  ein  großer  Decoder  bzgl.  Anzahl 
+und Größe der Gatter, Laufzeit und Verdrahtungsaufwand.  
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 38 
+
+AG Technische 
+Informatik 
+
+Beispiel für die Codierung der Gruppenfelder: 
+ 
+Control 
+field 
+
+Microoperations 
+specified 
+
+ 
+Code 
+
+Bits 
+used 
+
+Control 
+signals 
+activated 
+ - 
+c2, c3, c4 
+c2, c3, c4, c5 
+
+ 
+
+- 
+c0, c1 
+
+ 
+
+- 
+c10 
+c11 
+
+ - 
+c8 
+c9 
+
+ - 
+c6 
+c7 
+
+ ADDER 
+
+ 6, 7 
+
+ SHIFT 
+
+ 8 
+
+ 00 
+01 
+10 
+11 
+ 0 
+1 
+
+ COUNT 
+
+ INBUS 
+
+ OUTBUS 
+
+ 9, 10 
+
+ 00 
+01 
+10 
+11 
+ 11, 12  00 
+01 
+10 
+11 
+ 13, 14  00 
+01 
+10 
+11 
+
+ 
+
+ No operation 
+A ← A + M 
+A ← A – M, Q(0) ← 0 
+Unused 
+ No operation 
+Right-shift A.Q and 
+load A(7) 
+ No operation 
+Clear COUNT, A, F 
+COUNT ← COUNT + 1 
+Unused 
+ No operation 
+Q ← INBUS 
+M ← INBUS 
+Unused 
+ No operation 
+OUTBUS ← A 
+OUTBUS ← Q 
+Unused 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+Durch das Zusammenfassen von Kontrollsignalen ergibt sich 
+zwar  i.  allg.  ein  Gewinn  an  Speicherplatz  für  das  Mikro-
+programm, aber (im Vergleich zum vertikalen Format) 
+ 
+- zusätzlicher Zeitaufwand für die Decodierung der Gruppen, 
+ 
+- Gefahr des Verlustes an Flexibilität. 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 39 
+
+AG Technische 
+Informatik 
+
+Variables Mikrobefehlsformat 
+ 
+Hier exemplarisch für separate Branch-Befehle: 
+ 
+-  Format für Aktions-Mikrobefehl 
+
+ 
+-  Format für Branch-Mikrobefehl 
+
+ 
+
+ 
+
+ 
+(0  0  No branch;  Aktions-µBefehl vgl. oben)  
+ 0  1  Branch if Q(0) = 0  
+ 1  0  Branch if CNT7 = 1 
+ 1  1  Unconditional branch 
+
+ 
+ 
+Die Branch-Mikrobefehle sind ähnlich zu Sprungbefehlen auf 
+Maschinenprogrammebene.  Durch  sie  werden  hier  4  von  15 
+Bits eingespart. 
+ 
+Aber:  Branchbefehle  müssen  nun  in  einem  eigenen  Mikro-
+programmzyklus  ausgeführt  werden  und  sind  nicht 
+mehr mit Aktions-Befehlen kombinierbar. 
+  Erfordert  i.  Allg.  partielles,  aber  relativ  einfaches 
+lokales  Umschreiben  der  Mikroprogramme,  wenn 
+diese in Registertransfer-Notation vorliegen. 
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 40 
+
+AG Technische 
+Informatik 
+
+Multiplikations-Mikroprogramm mit separaten Branch-
+Befehlen 
+ 
+ 
+ 
+Addr. 
+
+Comments 
+ 
+
+Branch address or 
+
+Microinstruction 
+
+control bits 
+
+Condi-
+tion 
+select 
+
+in CM  0 
+
+1  0  2  5  6  7  8  9  1
+1 
+
+E
+N
+D
+0000  0  0  0  0  0  0  0 0 1 0 0
+
+ 
+
+A ← 0, COUNT ← 0, F ← 0, 
+M ← INBUS; 
+0001  0  0  0  0  0  0  0 1 0 0 0 Q ← INBUS; 
+0010  0  1  0  0  0  0  0 0 1 0 0
+0011  0  0  0  1  0  0  0 0 0 0 0
+
+if Q(0) = 0 then goto 4 fi; 
+A ← A + M,  
+F ← M(7) and Q(0) or F; 
+A(7) ← F , A(6:0).Q ← 
+A.Q(7:1), 
+COUNT ← COUNT + 1; 
+if COUNT <> 7 then goto 2 fi;
+if Q(0) = 0 then goto 8 fi; 
+A ← A – M, Q(0) ← 0; 
+
+0100  0  0  1  0  0  0  0 0 0 1 0
+
+0101  1  0  0  0  0  0  0 0 0 1 0
+0110  0  1  0  0  0  0  0 1 0 0 0
+0111  0  0  0  1  1  0  0 0 0 0 0
+1000  0  0  0  0  0  1  0 0 0 0 0 OUTBUS ← Q; 
+1001  0  0  0  0  0  0  1 0 0 0 0 OUTBUS ← A; 
+1010  0  0  0  0  0  0  0 0 0 0 1
+1011  1  1  0  0  0  0  0 1 0 1 0
+ 
+ 
+Kürzere  Mikrobefehle  durch  Einsparen  der  Branch-Adresse 
+bei Aktions-Befehlen, dafür aber längerer Ausführungszeit der 
+Programme durch separate Takte für Sprungbefehle. 
+ 
+
+END ← 1 ; 
+goto 11; 
+
+ 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 41 
+
+AG Technische 
+Informatik 
+
+Resümee Mikroprogrammierung 
+
+7.7 
+ 
+Vorteile:  
+ -  Systematischer  Entwurf  des  Steuerwerks  (arbeitet  ähnlich 
+einem  von  Neumann-Rechner,  nur  dass  Mikroprogramme 
+ausgeführt werden)   
+
+  -  einfacher  und  sicherer  zu  entwerfen  als  beim 
+
+konventionellen festverdrahteten Schaltwerksentwurf  
+
+-  mit einer relativ einfachen Hardware lässt sich ein recht 
+
+komplexer Funktionsumfang implementieren  
+
+-  durch den Austausch des Mikroprogramms ist es möglich, 
+die von außen sichtbare Funktionalität zu ändern, ohne den 
+Rest  der  Hardware  (Steuerwerk  zur  Abarbeitung  des 
+Mikroprogramms und ggf. auch Operationswerk) verändern 
+zu müssen 
+
+      Nachträgliche  Änderung 
+
+der 
+Ablaufsteuerung  leichter  durch  Änderung  der  Mikro-
+programme  möglich  (Wartbarkeit,  Flexibilität)  als  bei 
+festverdrahteter Logik 
+
+oder  Erweiterung 
+
+-  Regelmäßige, VLSI-freundliche Struktur (ROMs, PLDs). 
+-  Mikroprogrammierung 
+
+sehr  ähnlich  der  Assembler-
+programmierung  (Mikro-Assembler  als  Werkzeuge  zur 
+Übersetzung von Mikroprogrammen). 
+
+  Mikroprogramme  (Firmware)  können  als  Interpreter  für 
+
+einen Maschinenbefehlssatz angesehen werden. 
+
+ 
+Nachteile:  
+-  I.  Allg.  Ausführungszeit  oft  länger  als  bei  festverdrahteter 
+Logik (Anzahl und Dauer der Takte), weil (Mikroprogramm-
+)Speicherzugriff relativ lang,  
+
+-  größerer  Chipflächenbedarf  als  ein 
+
+Steuerwerk wegen Mikroprogrammspeicher 
+
+festverdrahtetes 
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 42 
+
+AG Technische 
+Informatik 
+
+Varianten mikroprogrammierter Systeme 
+ 
+Mikroprogrammierbare Systeme  
+ 
+Bei einem „mikropogrammierbaren“ System ist im Gegensatz 
+zu  einem  mikroprogrammierten  System  das  Mikroprogramm 
+vom  Anwender 
+veränderbar 
+(programmierbar), z.B. um andere Hardware zu emulieren.  
+ 
+ 
+
+fertigen  System 
+
+im 
+
+  Maschinenbefehle durch den Benutzer definierbar. 
+    
+ 
+
+(vgl. „mikroprogrammierbare“ Rechner) 
+
+Instruktionssatzes  zur  Laufzeit  durch 
+
+ 
+Dynamische Mikroprogrammierung: 
+ 
+Umschalten  des 
+Neuladen des µ-Programmspeichers. 
+ 
+ 
+ 
+ 
+Nano-Programmierung 
+ 
+Um  die  Größe  von  Mikroprogrammspeichern  zu  reduzieren, 
+werden Mikrooperationen bei der Nano-Programmierung nicht 
+direkt  codiert  und  ausgeführt,  sondern  greifen  auf  einen 
+zweiten  Kontrollspeicher  zu  (Nano-Programmspeicher),  wo 
+die  breiten  Kontrollworte  oder  sogar  für  (manche)  Mikro-
+befehle  wiederum  eine  Sequenz  von  Nano-Anweisungen 
+abgelegt ist, die die Hardware direkt kontrollieren (d. h. quasi 
+’zweistufige’ Mikroprogrammierung).  
+ 
+Die  Nano-Programmierung  wurde  z.  B.  bei  den  Mikro-
+prozessoren Motorola 68000 und 68020 angewendet.  
+
+Universität 
+Osnabrück 
+
+GTI 
+7 - 43 
+
+AG Technische 
+Informatik 
+
+

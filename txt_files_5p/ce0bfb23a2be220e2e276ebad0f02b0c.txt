@@ -1,0 +1,910 @@
+Kurzanleitung
+
+CorEx EasySense VISION
+
+Über dieses Handbuch
+Das beschriebene Produkt unterliegt ständiger Verbesserung. Änderungen er-
+folgen ohne Ankündigung. Für eventuelle Fehler oder Unterlassungen in dieser 
+Beschreibung schließen wir jegliche Haftung aus, desgleichen haften wir nicht 
+für Verluste oder Schäden, die in Zusammenhang mit den Informationen in die-
+sem Handbuch oder dem Gebrauch der Software entstehen könnten.
+Dieses Handbuch beschreibt die Handhabung des Datenloggers CorEx EasySense 
+VISION (Bestell-Nr. 74005). 
+Dieses  Handbuch  kann  für  den  Gebrauch  in  Ausbildungsstätten  des  Lizenz-
+trägers unter der Bedingung kopiert werden, dass es nicht verliehen, verkauft 
+oder außerhalb der Ausbildungsstätte verwendet wird.
+
+Software-Lizenz
+Sie sind berechtigt, die erworbene CorEx Sensing Science Software auf beliebig 
+vielen Computersystemen Ihrer Schule/Institution zu installieren.
+
+Hinweis
+Im Downloadbereich unter www.corex.de finden Sie die neusten Versionen 
+- der Sensing Science Software
+- des Firmware-Update
+- des Handbuchs
+
+©  2011 Cornelsen Experimenta, Berlin
+  Alle Rechte vorbehalten.
+
+Das Werk und seine Teile sind urheberrechtlich geschützt. 
+Jede Nutzung in anderen als den gesetzlich zugelassenen Fällen bedarf der vorherigen schriftlichen 
+Einwilligung von Cornelsen Experimenta. 
+Hinweise  zu  §§  46,  52a  UrhG:  Weder  das  Werk  noch  seine  Teile  dürfen  ohne  eine  solche 
+Einwilligung  eingescannt  und  in  ein  Netzwerk  eingestellt  oder  sonst  öffentlich  zugänglich 
+gemacht werden. 
+Dies gilt auch für Intranets von Schulen und sonstigen Bildungseinrichtungen. 
+Für Schäden, die durch die nicht bestimmungsgemäße Verwendung der Materialien verur-
+sacht wurden, über nehmen wir keine Haftung.
+
+2
+
+Inhalt
+
+Lieferumfang ................................................................................ 4
+
+Der EasySense VISION Datenlogger ............................................ 5
+Erste Schritte .................................................................................................6
+Aufladen ....................................................................................................... 6
+Einschalten ................................................................................................... 6
+Standby ........................................................................................................ 6
+Ausschalten ................................................................................................... 6
+Home-Menü .................................................................................................. 7
+Eine Messung starten .................................................................................... 7
+Die Messmöglichkeiten im Überblick ............................................................. 7
+Die Anwendungsstufe wählen ....................................................................... 8
+Bedienung .....................................................................................................8
+Verbinden des EasySense VISION  
+
+mit einem Beamer oder einem Monitor ..................................................8
+Menü „Sprache wählen“ ...............................................................................9
+Dateien speichern und mit dem PC austauschen ........................................9
+Speichern und Öffnen von Dateien ............................................................... 9
+Speichern und Öffnen von Einstellungen (Setups) ......................................9
+Dateien mit einem PC austauschen ............................................................10
+Automatisches Speichern bei niedrigem Batteriestand .............................10
+Drucken mit dem EasySense VISION ..........................................................10
+Menü „Systemeinstellungen“ .....................................................................11
+Der Li-Ion Akku ...........................................................................................12
+Technische Daten  .......................................................................................13
+Fehlerbehebung ..........................................................................................14
+Die SmartQ Sensoren................................................................. 15
+
+Die Messmöglichkeiten  ............................................................. 16
+
+Die Bildschirmaufteilung ........................................................... 18
+
+Das Kontext-Menü ..................................................................... 19
+
+Die Symbol-Leiste ...................................................................... 20
+
+Anleitung Firmware Update ...................................................... 22
+
+3
+
+Lieferumfang
+
+EasySense VISION Datenlogger
+
+Netzgerät
+
+USB- 
+Verbindungskabel
+
+lange Sensor-Verbindungskabel  
+(2 Stück)
+
+Gebrauchs-
+anleitung
+
+kurze Sensor-Verbindungs- 
+kabel (2 Stück)
+
+4
+
+Der EasySense VISION Datenlogger
+Der EasySense VISION ist ein tragbarer Datenlogger, welcher die Messwerte der 
+angeschlossenen Sensoren grafisch darstellen, aufzeichnen und auswerten kann.
+Das Gerät verfügt über einen Touchscreen zur Bedienung der geräteinternen 
+Sensing Science Software. Wenn Ihnen die PC-Software schon bekannt ist, wer-
+den Sie die meisten Programmpunkte wieder erkennen. 
+
+Sensoreingänge für  
+SmartQ Sensoren
+1:A/2:B zusätzlich  
+
+für digitale Sensoren  
+
+(Lichtschranke)
+
+Netzgeräte- 
+anschluss mit
+Betriebs-LED
+
+Ein/Aus  
+Schalter
+
+Bildschirm
+
+VGA Ausgang
+
+USB Ausgang
+•	 Zum Anschluss des 
+   EasySense VISION an  
+  den PC
+
+Rückansicht:
+4 Sensoreingänge  
+für SmartQ Sensoren
+
+Touchpen
+
+USB Eingang
+
+USB Ausgang
+
+VGA Ausgang
+
+USB Eingang
+Verbinden Sie den  
+VISION mit:
+•	 einer Maus
+•	 einer USB- 
+  Tastatur
+•	 einem USB- 
+  Speicherstick
+•	 einem USB- 
+  Drucker
+
+5
+
+Erste Schritte:
+
+Aufladen
+Laden Sie das Gerät vor der ersten Benutzung  komplett auf – am besten über 
+Nacht.  Dazu  schließen  Sie  das  mitgelieferte  Netzgerät  an  den  Netzgerätean-
+schluss an der Rückseite des Datenloggers an. Wenn der EasySense VISION mit 
+Strom versorgt wird, leuchtet die grüne Betriebs-LED.
+
+Einschalten
+•	 Zum Einschalten drücken und halten Sie den Ein/Aus Schalter, bis das Logo 
+
+von Cornelsen Experimenta auf dem Touchscreen erscheint.
+
+•	 Für einen Kaltstart (Gerät war komplett ausgeschaltet) benötigt der EasySense 
+
+VISION ca. 30 Sekunden. 
+
+Standby
+•	 Um das Gerät vorübergehend auszuschalten, drücken Sie den Ein/Aus Schalter 
+einmal kurz, bis der Bildschirm erlischt. Der EasySense VISION geht in einen 
+stromsparenden Standby-Modus. Um weiterzuarbeiten drücken Sie den Ein/
+Aus Schalter erneut kurz.
+
+•	 Der EasySense VISION geht automatisch in den Standby-Modus, wenn Sie 
+ihn länger als vier Minuten (bzw. sechs Minuten bei angeschlossener Strom-
+versorgung) nicht benutzen. Um weiterzuarbeiten, tippen Sie einmal kurz auf 
+den Touchscreen oder drücken Sie kurz den Ein/Aus Schalter.
+
+Ausschalten
+Zum  Ausschalten  drücken  und  halten  Sie  den  Ein/Aus  Schalter  –  es  erscheint 
+nach  ca.  1  Sekunde  ein  rotes  Ausschaltknopf-Symbol  –  nach  nochmals  ca.  
+1 Sekunde erlischt der Bildschirm und der EasySense VISION ist ausgeschaltet.
+
+6
+
+Home-Menü
+Dies ist die Startseite. Von hier aus können Sie alle Funktionen des EasySense 
+VISION starten. In der Mitte des Bildschirms sehen Sie die Messmöglichkeiten, die  
+Sie – abhängig von den Sensoren – nutzen können.
+
+ 
+
+                          Ansicht Home-Menü
+
+Eine Messung starten:
+1.  Schalten Sie den EasySense VISION ein. (siehe Seite 6, Einschalten)
+2.  Stecken Sie den/die Sensor/en ein. (siehe Seite 15, Die SmartQ Sensoren)
+3.  Wählen Sie eine der sechs Messmöglichkeiten. (z.B. EasyLog, siehe Seite 16,  
+  Messmöglichkeiten)
+4.  Stellen Sie gegebenenfalls zusätzliche Parameter ein.
+5.  Starten Sie die Messung mit dem grünen Start-Button.
+6.  Beenden Sie die Messung durch Drücken des roten Stopp-Buttons. 
+Das Gerät zeichnet die Messwerte auf und Sie können sie anschließend auswer-
+ten, speichern oder extern weiterverwenden.
+
+Die Messmöglichkeiten im Überblick:
+•	 Easy Log ist die Ein-Klick-Erfassungs-Option. 
+•	 Digimeter zeigt die Daten an simulierten Messinstrumenten.
+•	 Snapshot dient zur Datenerfassung einzelner Ereignisse.
+•	 Grafik ist die Option, bei der durch den Anwender Parameter wie Zeitspan-
+
+nen, Sensoren etc. eingegeben werden müssen.
+
+•	 Zeit messen dient zur Messung von Zeit, Geschwindigkeit, Beschleunigung 
+
+und Moment.
+
+•	 Oszilloskop stellt Ihnen ein einfach zu bedienendes Oszilloskop zur Verfügung.
+
+7
+
+Die Anwendungsstufe wählen
+Wenn Sie das erste Mal mit dem EasySense VISION arbeiten, wählen sie bitte eine 
+Anwendungsstufe.
+Je nach Erfordernis und Schwierigkeit der Messungen werden nicht alle Funkti-
+onen benötigt und man kann durch Heruntersetzen der Anwendungsstufe den 
+Umfang und die Einstellmöglichkeiten der Menüs entlasten. 
+
+Wählen Sie dazu im Home-Menü aus der Menü-Leiste den Punkt „Einstellun-
+gen“ und dann das Menü „Anwendungsstufe wählen“.
+
+Sie können zwischen drei Stufen wählen:
+•	 Stufe 1: Empfohlen für Versuche ab den Klassenstufen 5./6 oder für einen   
+
+ Neueinstieg – geringer Funktionsumfang.
+
+•	 Stufe 2: Empfohlen für Versuche ab der Sekundarstufe I. –  
+
+halber Funktionsumfang.
+
+•	 Stufe 3: Empfohlen für Versuche in der Sekundastufe I. und II. –  
+
+voller Funktionsumfang.
+
+Bedienung
+Der EasySense VISION kann über den Touchscreen mit dem Finger und dem 
+Touchpen oder mit einer USB-Maus (USB-Tastatur) bedient werden. Der Maus-
+zeiger ist nur bei angeschlossener USB-Maus aktiv.
+
+Verbinden des EasySense VISION mit einem Beamer oder einem Monitor
+Die Messwerte des Loggers lassen sich über den VGA-Ausgang auf beliebigen 
+externen Geräten darstellen: 
+•	 Schalten Sie den EasySense VISION ein
+•	 Schließen Sie eine USB-Maus an den USB-Eingang an
+•	 Verbinden Sie das VGA-Kabel mit dem EasySense VISION und dem einge-
+
+schalteten Beamer/Monitor
+
+8
+
+Der EasySense VISION schaltet automatisch auf das erkannte VGA-Gerät um. 
+Wenn der Logger das Gerät nicht erkannt hat und Sie manuell umschalten wol-
+len, gehen Sie wie folgt vor:
+•	 Gehen Sie im Home-Menü auf „Einstellungen“ >> „Systemeinstellungen“
+•	 Drücken Sie im Anzeige-Menü den Button „Wechseln“
+Der Logger schaltet nun auf den VGA-Ausgang um. 
+Hinweis: Sie müssen nach der manuellen Umschaltung innerhalb von 10 Se-
+kunden die Auswahl auf dem Beamer/Monitor durch Drücken des „OK“-Button 
+bestätigen. Ansonsten schaltet der Logger wieder auf den Touchscreen zurück.
+Wenn Sie den VGA-Ausgang nicht mehr benutzen wollen, wechseln Sie wieder 
+die Anzeige im System-Menü. Bei jedem Neustart ist automatisch der Touch-
+screen aktiv.
+
+Menü „Sprache wählen“
+Unter dem Menüpunkt „Sprache wählen“ (Home >> Einstellungen >> Sprache 
+wählen) können Sie die Menüsprache wählen. Die Voreinstellung ist „Deutsch“. 
+Es besteht die Möglichkeit, die Sprache auf „English“ umzustellen.  
+
+Dateien speichern und mit dem PC austauschen
+
+Speichern und Öffnen von Dateien
+•	 Wenn Sie Dateien (.ssl) auf dem internen Speicher sichern möchten, wählen 
+Sie  dazu  im  Datei-Menü  „Sichern  als“.  Der  voreingestellte  Speicherort  ist: 
+User Files >> Data Files
+
+•	 Geben Sie einen Namen ein und bestätigen Sie mit „OK“
+•	 Zum Öffnen einer Datei (.ssl) gehen Sie im Datei-Menü auf „Öffnen“ und 
+
+wählen Sie die Datei aus. Bestätigen Sie die Auswahl mit „OK“.
+
+Speichern und Öffnen von Einstellungen (Setups)
+•	 Wenn Sie eine bestimmte Einstellung speichern möchten, weil Sie diese im-
+mer wieder benutzen möchten um unterschiedliche Messwerte aufzuzeich-
+nen, wählen Sie im Datei-Menü „Einstellung sichern“. Geben Sie einen Na-
+men ein und bestätigen Sie mit „OK“.
+
+•	 Diese Einstellung wird als Setup-File (.sss) unter „CorEx Versuche >> Meine 
+
+Versuche“ abgelegt
+
+•	 Zum Öffnen einer Einstellung (.sss) gehen Sie im Datei-Menü auf „Einstellung 
+öffnen“ und wählen Sie die Einstellung (.sss) im Ordner „Meine Versuche“ 
+aus. Bestätigen Sie die Auswahl mit „OK“.
+
+9
+
+Dateien mit einem PC austauschen
+Die Sensing Science Software auf dem EasySense VISION und dem PC ist weit-
+gehend  identisch.  Dadurch  können  Messwerte/Dateien  problemlos  ausge-
+tauscht werden. 
+Möglichkeit 1: Schließen Sie den EasySense VISION mit dem beiliegenden USB-
+Kabel an den PC an. Wählen Sie im Home-Menü den Menüpunkt „PC Verbin-
+dung“. Wählen Sie „Disk Drive“. Der EasySense VISION wird nun von Ihrem PC 
+als Wechselfestplatte erkannt und Sie können die Dateien beliebig transferieren, 
+bearbeiten oder löschen.
+ 
+Der Wechselfestplatten-Modus wird durch folgendes Symbol signalisiert: 
+Nach dem Beenden des Dateitransfers melden Sie bitte den EasySense VISION am 
+PC (Hardware sicher entfernen) ab. Der EasySense VISION schaltet dann auto-
+matisch in den normalen Modus zurück.
+Möglichkeit  2:  Sie  speichern  die  benötigten  Dateien  auf  einem  USB-Stick  und 
+transportieren Sie damit zum PC. 
+1. Schließen Sie den USB-Stick an den EasySense VISION an. 
+2. Öffnen Sie die Datei und speichern Sie sie im Datei-Menü mit „Sichern als“ 
+
+auf dem USB-Stick (angezeigt als „Memory Stick“). 
+
+3. Im Datei-Menü unter „Öffnen“ finden Sie unter „Memory Stick“ die Dateien, 
+
+die auf dem USB-Stick gespeichert sind.  
+
+Automatisches Speichern bei niedrigem Batteriestand
+Wenn  die  verfügbare  Energie  unter  ein  bestimmtes  Level  sinkt,  speichert  der 
+Logger die Messdaten der aktuell laufenden Messung automatisch ab, bevor er 
+herunterfährt. Die gespeicherten Daten befinden sich in der Datei „Auto-Saved 
+Data.ssl“ (User Files >> Data Files). Bitte beachten Sie, dass Sie diese Daten unter 
+einem anderen Namen erneut speichern sollten, da bei der nächsten automati-
+schen Speicherung die letzten Daten überschrieben werden.
+
+Drucken mit dem EasySense VISION
+Sie können den EasySense VISION direkt mit einem PCL-kompatiblen Drucker 
+(die meisten verfügbaren Geräte) verbinden. Schließen Sie dazu das beiliegende 
+USB-Kabel  an  den  EasySense  VISION  und  den  Drucker  an.  Öffnen  Sie  die  zu 
+druckende  Datei  und  wählen  Sie  im  Datei-Menü  entweder  „Grafik  drucken“ 
+oder „Tabelle drucken“. 
+
+10
+
+Menü „Systemeinstellungen“
+
+Im Menü Systemeinstellungen (Home >> Einstellungen >> Systemeinstellungen) 
+können Sie folgende Einstellungen vornehmen:
+•	 Freier Speicher: Hier sehen Sie, wie viel Prozent des internen Speichers noch 
+frei  sind.  Mit  dem  Button  „Dateien  löschen“  unter  der  Anzeige  gelangen 
+Sie in das Dateiverzeichnis, in dem Sie dann nicht mehr benötigte Dateien 
+löschen können.
+
+•	 Anzeige:  Wenn  Sie  einen  Beamer  oder  externen  Monitor  mit  dem  VGA-Aus-
+gang des Loggers verbunden haben, können Sie mit dem Button „Wechseln“ 
+zwischen  dem  internen  Touchscreen  und  dem  VGA-Ausgang  umschalten.  Es 
+kann immer nur eine Darstellungsart gewählt werden. Wenn der VGA-Ausgang 
+benutzt wird, ist der Touchscreen deaktiviert. Stellen Sie sicher, dass sie eine 
+USB-Maus an den EasySense VISION angeschlossen haben, damit Sie die Soft-
+ware bedienen können. Wenn kein VGA-Gerät am VGA-Ausgang erkannt wird, 
+schaltet der Logger automatisch wieder auf den internen Touchscreen um.
+
+•	 Bildschirm kalibrieren: Kalibrieren Sie den Bildschirm, wenn die Eingabegenau-
+
+igkeit nachlässt oder Sie eine Kratzschutzfolie angebracht haben.
+
+•	 Datum  und  Zeit:  Vor  der  ersten  Benutzung,  nach  einem  Akku-Tausch  oder 
+
+nach einem Reset, können Sie hier die Zeit und das Datum einstellen.
+
+•	 Zurücksetzen:  Sollte  der  EasySense  VISION  einmal  nicht  ordnungsgemäß 
+funktionieren, können Sie ihn in diesem Menü zurücksetzen. Soft-Reset be-
+deutet  einen  Neustart,  ohne  dass  Einstellungen  und  gespeicherte  Dateien 
+gelöscht werden. Sollte ein Soft-Reset das Problem nicht beheben, können 
+Sie den EasySense VISION auch auf den Auslieferungszustand zurücksetzen. 
+Beachten Sie, dass dabei alle Einstellungen und gespeicherten Dateien verlo-
+ren gehen.
+
+•	 Systemupdate: Hiermit starten Sie das Firmware-Update. Beachten Sie dazu 
+
+die gesonderte Beschreibung zur Durchführung des Firmware-Updates.
+
+•	 Batteriespannung: In dieser Level-Anzeige sehen Sie die verbleibende Akku-
+kapazität. Beachten Sie, dass die Sensoren unterschiedlich viel Energie ver-
+brauchen. Dadurch kann die Laufzeit sehr stark variieren.
+
+11
+
+Der Li-Ion Akku
+Der EasySense VISION ist mit einem modernen, leistungsfähigen Akku ausge-
+stattet. Der Akku ist nahezu wartungsfrei und hat auch keinen Memory-Effekt. 
+Um eine möglichst lange Lebensdauer zu gewährleisten, beachten Sie bitte ei-
+nige einfache Regeln. 
+•	 Laden Sie den Akku regelmäßig auf. Li-Ionen Akkus vertragen bauartbedingt 
+keine Tiefentladung. Sie sollten den Akku also nicht jedes Mal komplett ent-
+laden, bevor Sie ihn wieder aufladen. Es ist kein Problem, wenn Sie den Akku 
+nach der Benutzung wieder aufladen, auch wenn die Kapazitätsanzeige noch 
+50 % oder mehr signalisiert.
+
+•	 Mit der jetzigen Firmware (Version 3.2) verfügt der EasySense VISION 
+noch nicht über den sogenannten „Sleep-Mode“ und kann nicht kom-
+plett abgeschaltet werden. Dadurch verbraucht das Gerät auch im aus-
+geschalteten  Zustand  eine  geringe  Menge  an  Energie,  wodurch  sich 
+der  Akku  entlädt.  Wenn  Sie  den  EasySense  VISION  längere  Zeit  nicht 
+benutzen, stellen Sie bitte sicher, dass er mindestens einmal im Monat 
+nachgeladen  wird  um  eine  schädliche  Tiefentladung  zu  vermeiden.  Für 
+das neueste Firmware-Update schauen Sie bitte unter www.corex.de nach.
+•	 Li-Ionen Akkus funktionieren am besten zwischen 10°–30 °C. Der zulässige 
+Temperaturbereich  ist  5°–50  °C.  Bei  Temperaturen  darüber  oder  darunter 
+lässt die Leistung stark nach und der Akku altert wesentlich schneller. Wenn 
+das Gerät höheren oder niedrigeren Temperaturen ausgesetzt war, lassen Sie 
+es vor Inbetriebnahme wieder akklimatisieren.  
+
+Aufladen des Akkus
+•	 Laden  Sie  den  EasySense  VISION  mit  dem  beiliegenden  Netzteil.  Bei  aus-
+geschaltetem  Gerät  beträgt  die  Ladezeit  für  eine  komplette  Ladung  ca.  
+8 Stunden. Befindet sich der EasySense VISION im Stand-By-Modus kann die 
+Ladezeit bis zu 24 Stunden betragen. Durch angeschlossene Sensoren kann 
+sich die Aufladezeit erheblich verlängern – entfernen Sie also alle Sensoren 
+und schalten Sie das Gerät aus, um eine schnellstmögliche Ladung zu garan-
+tieren. 
+
+•	 Wenn  der  EasySense  VISION  ausgeschaltet  ist,  kann  er  über  den  USB-An-
+schluss  aufgeladen  werden.  Dies  dauert  aber  ungleich  länger  als  mit  dem 
+Netzteil. Sobald der Logger eingeschaltet ist, reicht der Strom der USB-Ver-
+sorgung nicht mehr aus, um das Gerät in vertretbarer Zeit aufzuladen.
+
+Austauschen des Akkus
+•	 Wenn die Kapazität stark nachgelassen hat oder ein voll aufgeladener Akku 
+
+seine Energie schnell wieder verliert, sollte der Akku ersetzt werden. 
+
+•	 Der Li-Ionen Akku kann von Ihnen selbstständig ausgetauscht werden. Der 
+Akku hat die Bestellnummer 72036 und kann über www.corex.de bestellt 
+werden. (Eine genaue Anleitung zum Austausch liegt dem Ersatz-Akku bei) 
+
+12
+
+Technische Daten 
+
+Display
+
+Bedienung
+Sensoranschlüsse
+Eingebaute Sensoren
+Messgeschwindigkeit
+
+minimaler Messintervall
+Speicherkapazität
+Stromversorgung
+
+Hochauflösender, farbiger 4,3“ Touchscreen  
+(95 mm x 55 mm) 
+Touchscreen, Maus / Tastatur (über USB)
+4 Analoge (davon 2 digital-Kombinierte)
+--
+Bis zu 50.000 Messungen pro Sekunde,  
+Messauflösung analog: 12 bit 
+Analog: 20µs  Digital: 4µs
+5 MB intern; weitere Daten auf USB-Stick 
+Lithium-Ionen Akku (3,7 V; 4400 mAh),  
+Netzteil (5 V; 1,0 A; Polung: Außen – negativ; 
+Innen – positiv), USB-Schnittstelle
+160 x 113 x 54 mm, Masse 410 g
+
+Abmessungen
+Systemvoraussetzungen Windows 98 SE, 2000, XP, Vista oder Windows 7, 
+
+Sonstiges
+
+USB Schnittstelle ab V1.1,  
+MS Active Sync installiert
+2 USB-Anschlüsse, VGA-Ausgang
+
+Betriebshinweise
+•	 Der EasySense VISION ist nicht wasserdicht oder spritzwassergeschützt – be-
+handeln Sie das Gerät wie einen normalen Tablet-PC. Wenn die Umgebung 
+sehr feucht ist, treffen Sie Vorkehrungen, dass kein Wasser in das Gerät ein-
+dringen kann.
+
+•	 Reinigen Sie das Gerät nur mit einem trockenen Microfasertuch – benutzen 
+
+Sie keine scharfen Reinigungsflüssigkeiten.
+
+•	 Wenn Sie das Gerät häufiger benutzen, schützen Sie den Touchscreen mit ei-
+ner Schutzfolie. Am besten passen und funktionieren Schutzfolien, die für die 
+Sony PSP (Playstation Portable) (nicht PSP Go) entworfen sind. Diese erhalten 
+Sie in allen guten Elektronikfachmärkten.
+
+•	 Der EasySense VISION ist für den Einsatz im Unterricht entwickelt. Benutzen 
+Sie das Gerät in einem Temperaturbereich von 5° – 50 °C und 0 – 95 % rela-
+tiver Luftfeuchtigkeit (nicht kondensierend).
+
+•	 Wenn  das  Gerät  außerhalb  dieser  Bereiche  war,  lassen  Sie  es  mindestens  
+
+30 Minuten akklimatisieren, bevor Sie es wieder benutzen.
+
+13
+
+Fehlerbehebung
+Bevor Sie einen Fehler melden:
+•	 Versuchen  Sie  den  EasySense  VISION  zurückzusetzen  –  siehe  Systemmenü 
+
+(„Zurücksetzen“).
+
+•	 Installieren Sie das neueste Firmware-Update.
+•	 Installieren Sie die neueste Sensing Science Software auf dem PC (wenn der 
+
+Fehler im Zusammenhang mit dem PC auftrat).
+
+Wenn Sie einen Fehler melden, beschreiben Sie bitte folgende Dinge genau:
+•	 Unter welchen Umständen (Messmodus, Sensoren etc.) tritt der Fehler auf.
+•	 Welches Firmware-Update und welche Gerätenummer haben Sie (Home>> 
+
+Hilfe >> Über…)
+
+•	 Wenn das Problem im Zusammenhang mit einem PC auftrat: Welches Be-
+
+triebssystem und welche Software sind auf dem PC installiert.
+
+Bitte öffnen Sie unter keinen Umständen das Gerät (das Batteriefach ist hier-
+von ausgenommen), da dadurch der Garantieanspruch erlischt, und das Gerät 
+irreparabel beschädigt werden kann.
+
+14
+
+Die SmartQ Sensoren
+Es steht eine umfangreiche Auswahl von Smart Q Sensoren für die Verwendung 
+mit dem EasySense VISION bereit. Diese einzigartigen Smart Q Sensoren sind 
+mit einem hoch entwickelten Mikroprozessor ausgestattet, welcher die Genau-
+igkeit des Sensors, sowie die Präzision und Konsistenz der Messwerte deutlich 
+verbessert. Die automatische Erkennung der Sensoren vereinfacht die Handha-
+bung enorm und erlaubt mehr Flexibilität bei der Datenerfassung. Die vier Ein-
+gänge des Gerätes können mit analogen, sowie die Eingänge (1) und (2) auch 
+mit digitalen Sensoren benutzt werden. 
+
+Zum Anschluss der Sensoren gehen Sie bitte wie folgt vor: 
+1.  Halten Sie den Sensor so, dass der SmartQ-Aufdruck auf der Oberseite  
+  zu sehen ist.
+2. Stecken Sie das eine Ende des Sensor-Anschlusskabels in die DIN-Buchse des  
+  Sensorgehäuses. Dabei zeigt der Positionspfeil auf dem Kabel nach oben.
+3.  Das andere Ende des Kabels verbinden Sie mit der Eingangsbuchse des  
+  EasySense VISION (abgeflachte Seite nach unten zeigend).
+
+Man unterscheidet analoge und digitale Sensortypen:
+Analoge Sensoren:
+Ein analoger Sensor ist ein Gerät, das empfindlich auf Veränderungen in seiner 
+Umgebung reagiert. 
+Es gibt verschiedene Typen, die physikalische Größen wie Strom, Spannung, Be-
+leuchtungsstärke, Temperatur, Geräuschpegel, pH-Wert usw. messen können. 
+Dieser physikalische Wert wird in ein elektrisches Signal umgewandelt, das vom 
+EasySense VISION erfasst, ausgewertet und dargestellt wird.
+
+Digitale Sensoren:
+Diese Sensoren können An/Aus-Ereignisse, sowie die Zeit zwischen solchen Er-
+eignissen messen. Typische digitale Sensoren sind Lichtschranke, Schaltermatte 
+und Druckschalter. 
+SmartQ Sensoren sind nicht im Lieferumfang des Loggers enthalten. Sie können 
+bei Cornelsen Experimenta bestellt werden. Die aktuellen Sensoren finden Sie 
+unter www.corex.de.
+
+15
+
+Die Messmöglichkeiten 
+
+Easy  Log  –  ermöglicht  die  Benutzung  des  Loggers  ohne  Vor-
+einstellungen. Einfach die Sensoren anschließen, die Messung 
+starten und der EasySense VISION zeichnet dann so lange Da-
+ten  auf,  bis  die  Aufzeichnung  manuell  beendet  wird.  Dies  ist 
+ideal für Messungen, die keine bestimmte Messzeit erfordern. 
+Gleichzeitig erspart man sich die Einstellung von Messzeit und 
+Messintervall.
+
+Start 
+
+Messung 
+
+Stopp
+
+ 
+
+Fortlaufend bis zu 14 Tagen, 
+automatisch skalierend
+
+Digimeter – Diese einfache Darstellung der gemessenen Daten 
+mit simulierten Messgeräten kann für Einsteiger zur Einführung 
+in die Methoden der Datenerfassung verwendet werden. Digi-
+meter simuliert ein modernes Digital-Multimeter und kann als 
+Messwertanzeige  genutzt  werden,  wenn  keine  grafische  Aus-
+wertung der Daten benötigt wird. Die Daten können wahlweise 
+als Ziffern, an einer Skala mit Zeiger, als sich verändernder Bal-
+ken oder Farbwechsel angezeigt werden. In Messanzeigen erfass-
+te Daten können leicht in den Programmteil Grafik übernommen 
+werden.
+
+Start 
+
+Automatisch
+
+Messung 
+
+Stopp
+
+Automatisch im Hintergrund – 
+Transfer zu Grafik möglich
+
+Snapshot – Die Schnappschuss-Funktion bietet sich immer dann 
+an, wenn der zeitliche Verlauf der Messwerte unerheblich ist, 
+und eine Momentaufnahme der Sensormesswerte erfasst wer-
+den  soll.  Zum  Beispiel  wenn  bei  Versuchen  eine  Variable  ver-
+ändert wird und die sich ergebenden Auswirkungen (vorher – 
+nachher) protokolliert werden sollen.
+
+Start 
+
+Messung 
+
+Stopp
+
+Aufzeichnung eines  
+Messwertes durch Tippen in  
+das Grafikfenster
+
+16
+
+Grafik – ermöglicht die Aufzeichnung von Daten mit zuvor ein-
+gestellten Parametern. Es können unter anderem die aufzeich-
+nenden  Sensoren,  die  Messzeit  und  das  Messintervall  ausge-
+wählt  werden.  Umfangreiche  Triggeroptionen  erlauben  auch 
+das Erfassen von sehr kurzzeitigen Ereignissen.
+
+Messung 
+
+Stopp
+
+Über die festgelegte Messzeit
+
+Automatisch –  
+nach der festgelegten 
+Messzeit
+
+Start 
+
+manuell mit
+
+Automatisch  
+durch Trigger
+
+Zeit messen – Mit diesem Programmteil werden Messungen der 
+Zeit, Geschwindigkeit und Beschleunigung erfasst. Der Anwen-
+der kann dazu verschiedene digitale Sensoren wie Lichtschran-
+ken, Kontaktschalter oder Schaltermatten auswählen. 
+
+Start 
+
+Messung 
+
+Stopp
+
+Automatisch
+
+Oszilloskop  –  Ein  einfaches  Bildschirm-Oszilloskop,  mit  dem 
+schnelle Abläufe in Echtzeit dargestellt werden können. Beson-
+ders geeignet für die Demonstration eines EKG‘s, der Wellen-
+form eines Tons oder der Frequenz einer Welle.
+
+Start 
+
+Messung 
+
+Fortlaufend
+
+Stopp
+
+17
+
+Die Bildschirmaufteilung
+
+Messwertanzeige
+
+Menü-Leiste*
+
+Symbolleiste
+
+Grafikfenster
+
+*die genaue Beschreibung der Funktionen entnehmen Sie bitte der gesonderten Anleitung  
+  zur Sensing Science Software – im Download erhältlich unter www.corex.de
+
+18
+
+Das Kontext-Menü
+Nach der Messung können Sie die Grafik auswerten. Um bestimmte Abschnitte 
+größer oder kleiner darzustellen oder die Grafik automatisch anpassen zu lassen, 
+tippen Sie mit dem Touchpen für ca. 1 Sekunde in das Grafikfenster des Bild-
+schirms (siehe Bildschirmaufteilung). Es erscheint ein Punkte-Kreis und sobald 
+dieser vollständig ist, öffnet sich folgendes Menü:  
+
+•	 Sensoren wählen: Hier können Sie wählen, welche Messwerte angezeigt wer-
+den  und  welche  ausgeblendet  werden.  Die  nicht  angezeigten  Messwerte 
+werden  trotzdem  gespeichert  und  können  bei  Bedarf  wieder  sichtbar  ge-
+macht werden.
+
+•	 Zoom + / Zoom - / Zoom aus: Mit diesen Funktionen können Sie bestimmte 
+Abschnitte  des  Graphen  vergrößern  oder  verkleinern  um  die  Aussage  der 
+Messwerte zu verdeutlichen.
+
+•	 Skalierung... : Hiermit können Sie die Grafik nach verschiedenen Parametern 
+
+automatisch skalieren lassen.
+
+•	 Vorhersage / löschen: Zeichnen Sie eine Vorhersage in das Grafikfenster ein 
+und überprüfen Sie anschließend, wie genau Ihre Prognose mit den Mess-
+werten übereinstimmt bzw. entfernen Sie diese.
+
+•	 Text hinzufügen: Schreiben Sie einen Kommentar und platzieren Sie ihn im 
+
+Grafikfenster an einer beliebigen Stelle des Graphen.
+
+•	 Titel: Fügen Sie einen Titel in das Diagramm ein, um es später auf einen Blick 
+
+zuordnen zu können. 
+
+19
+
+Die Symbol-Leiste
+
+Start/Stopp
+
+orange: Analysefunktionen
+
+blau: Grundfunktionen
+
+gold: Zusatzfunktionen
+
+grau: nicht verfügbare Funktionen
+
+Start-Button – Starten Sie die Messungen mit dem  
+Start-Button.
+
+Stopp-Button – Beenden Sie die Messungen mit dem  
+Stopp-Button.
+
+Home-Button – Mit diesem Button gelangen Sie in das  
+Home-Menü
+
+Neu-Button – Starten Sie eine neue Messung 
+in demselben Messmodus
+
+Überlagerungs-Modus-Button – Überlagern Sie die Graphen 
+mehrerer Messvorgänge, um diese direkt zu vergleichen.
+
+Anzeigeoptionen-Button – Öffnet ein Menü, in dem Sie  
+viel fältige Anzeigeoptionen verändern können – z.B. Linien-  
+oder Balkengrafik, Linienstärke, Gitternetzlinien etc.
+
+Werte anzeigen-Button – Klicken Sie nach Beendi-
+gung der Messung in die Grafik, um einzelne Mess-
+werte –z.B. Höchst- oder Tiefstwerte – anzuzeigen.
+
+Intervall anzeigen-Button – Klicken und Ziehen Sie in der  
+Grafik, um die Werte in einem Intervall anzuzeigen. 
+
+20
+
+Differenz anzeigen-Button – Klicken und Ziehen Sie in der 
+Grafik, um die Differenz zwischen zwei Punkten anzuzeigen.
+
+Steigung anzeigen-Button – Mit dieser Funktion können Sie die 
+Steigung an einem beliebigen Punkt der Grafik bestimmen – 
+so können Sie z.B. aus einem Weg-Zeit-Diagramm direkt die 
+Geschwindigkeit ablesen.
+
+Integral berechnen-Button – Ermitteln Sie den Flächen-
+inhalt unter einer Kurve – z.B. um aus einem aufgezeich-
+neten Kraftstoß direkt den Impuls zu errechnen.
+
+Balkenanzeige-Button – (Digimeter-Modus) Stellen Sie die  
+aktuellen Messwerte in einer Balkenanzeige dar.
+
+Farbwechselanzeige-Button – (Digimeter-Modus) Stellen Sie die  
+aktuellen Messwerte in einer Farbwechselanzeige dar –  
+z.B. beim Temperatursensor von kalt/blau nach warm/rot.
+
+Zeigeranzeige-Button – (Digimeter-Modus) Stellen Sie die  
+aktuellen Messwerte in einer Zeigerskala dar,  
+ähnlich einem analogen Zeigerinstrument.
+
+Ziffernanzeige-Button – (Digimeter-Modus) Stellen Sie die  
+aktuellen Messwerte in einer digitalen Zifferanzeige dar.
+
+Text einfügen-Button – Versehen Sie die Grafik mit Erklärungen 
+und Kommentaren, um die Aussagekraft zu erhöhen.
+
+Messwerte löschen-Button – Wählen Sie fehlerhafte Messwerte 
+aus und löschen Sie diese durch einen Klick auf dieses Symbol.
+
+Transfer zu Grafik-Button – (Digimeter-Modus)  
+Transferieren Sie die Messwerte aus dem Digimeter in den 
+Grafik-Modus, um die Messdaten analysieren zu können.
+
+Zurück zu Digimeter-Button – (Digimeter-Modus)  
+Hiermit gelangt man wieder zurück in den Digimeter-Modus.
+
+21
+
+Anleitung Firmware Update
+Der EasySense VISION wird ständig weiterentwickelt um Ihnen eine bestmög-
+liche  Unterstützung  zu  bieten.  Die  neuesten  Updates  erhalten  Sie  immer  im 
+Downloadbereich unter www.corex.de. 
+
+Was Sie dafür benötigen:
+•	 Den EasySense Vision
+•	 Die Stromversorgung für den Vision
+•	 Einen PC mit Internetverbindung um die Datei unter www.corex.de herun-
+
+terzuladen
+
+•	 Einen neu formatierten USB-Stick (mindestens 16 Mb, formatiert im FAT oder 
+
+FAT32 Format – kein NTFS !)
+
+Vorbereitungen:
+1. Laden Sie sich die ZIP-Datei, die das Update enthält, auf ihren PC
+2. Entpacken Sie die ZIP-Datei direkt auf den USB-Stick (wenn der USB-Stick als  
+
+Laufwerk F:\ angezeigt wird, soll die Pfadangabe so aussehen: F:\Updates)
+
+Hinweis: Durch den Update-Prozess werden alle Daten und Einstellungen auf 
+dem Vision gelöscht! Stellen Sie sicher, dass Sie alle noch benötigten Dateien 
+etc. auf dem PC oder USB-Stick gesichert haben.
+
+Durchführung:
+1. Schließen Sie den Vision an die Stromversorgung an und schalten Sie ihn ein.
+2. Stecken Sie den USB-Stick in den Vision
+3. Wählen Sie im „Home-Menü“ das Menü „Einstellungen“ >> „Systemeinstel-
+
+lungen“
+
+4. Drücken Sie den Button „Systemupdate“ und bestätigen Sie mit „Yes“
+5. Drücken Sie den Button „Start Update“
+6. Wenn das Update abgeschlossen ist, drücken Sie auf „OK“ um den Vision neu 
+
+zu starten und die Änderungen zu übernehmen
+
+Hinweis:  Entfernen  Sie  auf  keinen  Fall  den  USB-Stick  während  des  Update- 
+Vorgangs.
+
+•	 Der Vision kann während des Updates mehrere Male neu Starten – dies ist 
+
+normal und stellt keinen Fehler dar.
+
+•	 Der Bildschirm kann während des Updates ausgehen – auch dies ist normal.
+•	 In  seltenen  Fällen  kann  es  vorkommen,  dass  das  Update  mehrmals  ausge-
+
+22
+
+führt werden muss: Gehen Sie dann wieder zu Schritt 3 über und starten das 
+Update erneut.
+
+•	 Wenn der Vision das Update unterbricht (keine Aktivität für über 5 Minuten) 
+setzen Sie das Gerät bitte zurück; halten Sie dazu den Ein/Aus-Schalöter für 
+ca. 6 Sekunden gedrückt. Starten Sie danach das Update erneut.
+
+Fehlerbehebung:
+Fehlermeldung: „Kein USB Laufwerk!“
+Lösung: Stellen Sie sicher, dass der USB-Stick richtig eingesteckt wurde und im 
+FAT oder FAT32 Format formatiert ist.
+
+Fehlermeldung: „Keine Daten für Update vorhanden“ 
+Lösung: Der USB-Stick wurde erkannt, aber die Update Dateien wurden nicht 
+gefunden. Stellen Sie sicher, dass sich die Dateien im Hauptpfad des USB-Sticks 
+befinden – z.B. F:\Updates.
+
+Arbeitsblätter zu Loggern und Sensoren können Sie kostenlos im Download-
+Bereich unter www.corex.de herunterladen.
+
+23
+
+Gebrauchsanleitung „CorEx EasySense VISION“ 
+Bestellnummer 740055
+
+Holzhauser Straße 76
+D-13509 Berlin
+
+Tel.: +49 (0)30 435 90 2-0
+Fax: +49 (0)30 435 90 2-22
+
+eMail: info@corex.de
+Internet: www.corex.de
+
+© 2011 Cornelsen Experimenta, Berlin 
+
+2.00
+
+

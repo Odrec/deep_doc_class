@@ -1,0 +1,655 @@
+APPLIED AND ENVIRONMENTAL MICROBIOLOGY, Mar. 2009, p. 1575–1580
+0099-2240/09/$08.00⫹0 doi:10.1128/AEM.02509-08
+Copyright © 2009, American Society for Microbiology. All Rights Reserved.
+
+Vol. 75, No. 6
+
+Rapid Oligonucleotide-Based Recombineering of the Chromosome
+
+of Salmonella enterica䌤†
+
+Roman G. Gerlach,‡ Daniela Ja¨ckel, Stefanie U. Ho¨lzer, and Michael Hensel*
+
+Infektionsbiologische Abteilung, Universita¨tsklinikum Erlangen, Erlangen, Germany
+
+Received 2 November 2008/Accepted 6 January 2009
+
+Recombinant engineering using Red recombinase-based approaches offers efﬁcient and rapid approaches to
+deletion and modiﬁcation of genes. Here we describe a novel application of Red recombinant engineering that
+enables direct manipulation of chromosomal loci by electroporation with short synthetic DNA molecules. We
+demonstrate the use of this approach for the generation of scarless in-frame deletions in chromosomal genes
+of Salmonella enterica. Furthermore, we describe rapid site-directed mutagenesis within bacterial chromosomes
+without any requirement for cloning and mutating genes in vitro or for reintroducing mutant alleles into the
+chromosome. This approach can be expected to facilitate mutational analysis in S. enterica and in other
+bacterial species able to support Red-mediated recombination.
+
+Functional genomics of bacteria frequently requires gene
+manipulations, such as in-frame deletion, site-directed mu-
+tagenesis, or insertion of foreign sequences. Various ap-
+proaches are available to perform such manipulations with
+cloned genes in vitro. However, the generation of strains with
+mutations in chromosomal genes remains the “gold standard”
+for functional analyses. Current approaches are tedious and
+time-consuming since construction of mutant alleles in vitro
+and replacement of wild-type alleles by mutant alleles are
+required. Recent advances in molecular genetics of enterobac-
+teria allow rapid and high-throughput approaches for the gen-
+eration of chromosomal in-frame deletions (1). Expression of
+the phage ␭ recombinase Red allows homologous recombina-
+tion of short (40-nucleotide) homologous sequences into the
+chromosome of Salmonella (3, 19). This has enabled rapid
+gene deletions and fusions using linear DNA constructs gen-
+erated by PCR (3, 6). It has also been shown that Red recom-
+binase can mediate recombination of synthetic oligonucleo-
+tides (4), and this approach has been utilized for recombinant
+engineering of bacterial artiﬁcial chromosomes (18) or viral
+genomes (14).
+
+Allelic exchange in wild-type bacteria requires the use of
+positively selectable markers. Usually, antibiotic resistance cas-
+settes are used for gene disruption. However, insertion of such
+cassettes is not compatible with in-frame deletions. For the
+generation of scarless chromosomal mutations, two systems of
+interest are (i) positive selection of tetracycline sensitivity (9)
+and (ii) use of homing endonuclease digestion for positive
+selection (16).
+
+Here we report a novel approach that allows direct mutagen-
+
+* Corresponding author. Mailing address: Infektionsbiologische
+Abteilung im Mikrobiologischen Institut, Universita¨tsklinikum Erlan-
+gen, Wasserturmstr. 3-5, D-91054 Erlangen, Germany. Phone: 49
+(0)9131 85 23640. Fax: 49 (0)9131 85 22531. E-mail: Michael.Hensel
+@uk-erlangen.de.
+
+‡ Present address: Robert Koch-Institut, Wernigerode Branch,
+
+Burgstr. 37, D-38855 Wernigerode, Germany.
+
+† Supplemental material for this article may be found at http://aem
+
+.asm.org/.
+
+䌤 Published ahead of print on 16 January 2009.
+
+esis of chromosomal genes by electroporation with short syn-
+thetic DNA fragments and Red recombinase-mediated recom-
+bination.
+
+MATERIALS AND METHODS
+
+Construction of tetAR insertions. Strains and plasmids used in this study are
+listed in Table 1. Salmonella enterica serovar Typhimurium NCTC12023 was used
+as the target strain for mutagenesis. To insert a gene cassette consisting of tetA
+and tetR into the target gene for mutagenesis, the tetAR fragment was ampliﬁed
+from genomic DNA of a strain harboring a Tn10dTc insertion using a high-
+ﬁdelity polymerase mixture (MBI Fermentas) and 60-mer oligonucleotides com-
+plementary to tetAR and the target gene.
+
+The PCR product was puriﬁed and used for electroporation of S. enterica
+serovar Typhimurium harboring pKD46 that was made competent and induced
+for expression of Red recombinase as described previously (6). After electropo-
+ration the cell suspension was plated onto LB plates containing tetracycline (20
+␮g ml⫺1) and incubated overnight at 37°C. Clones resistant to tetracycline
+were selected, and proper insertion of the tetAR cassette was conﬁrmed by
+colony PCR with oligonucleotides speciﬁc for tetA and the target gene for the
+mutagenesis (Fig. 1 and Table 2). The resulting Tetr clones were also tested
+for growth inhibition on Bochner-Maloy plates (11) for 24 h at 42°C. This
+selection procedure is not as effective as conventional selection by antibiotics.
+We observed different degrees of growth inhibition by tetracycline for clones
+obtained using a mutagenesis approach. Clones with the highest sensitivity on
+Bochner-Maloy plates were selected for further mutagenesis. The medium
+composition, detailed step-by-step protocols, and notes are provided in the
+supplemental material.
+
+Generation of double-stranded DNA for electroporation. Oligonucleotides
+were synthesized and puriﬁed using high-performance liquid chromatography by
+Thermo Scientiﬁc (Ulm, Germany). Lyophilized oligonucleotides were resus-
+pended in distilled H2O at a concentration of 500 pmol ml⫺1. A mixture (total
+volume, 20 ␮l) containing equal amounts of the forward and reverse oligonu-
+cleotides was prepared in a “Safelock” Eppendorf tube. The tube was incubated
+in a water bath at 95°C for 15 min, and the water bath was allowed to slowly cool
+to room temperature overnight. Proper annealing was veriﬁed by gel electro-
+phoresis of diluted samples of the mixture on 2% agarose gels.
+
+For electroporation, 2 to 3 ␮l of the annealed oligonucleotides or various
+dilutions of the mixture were used to transform pKD46-containing Tetr target
+strains to a Tets phenotype. After electroporation, various dilutions of the cell
+suspension were plated onto freshly prepared Bochner-Maloy plates and incu-
+bated for 24 h at 42°C. Tets clones were selected and streak puriﬁed on Bochner-
+Maloy plates with incubation for 24 h at 42°C. Selection at 42°C was necessary to
+obtain the strongest possible growth inhibition of Tetr clones. Puriﬁed clones
+were streaked in parallel onto LB plates without an antibiotic or containing
+tetracycline (20 ␮g ml⫺1). Clones were further conﬁrmed by colony PCR of the
+mutated loci. A detailed step-by-step protocol and further practical notes are
+provided in the supplemental material.
+
+1575
+
+1576
+
+GERLACH ET AL.
+
+APPL. ENVIRON. MICROBIOL.
+
+TABLE 1. Bacterial strains and plasmids used in this study
+
+Strain or plasmid
+
+Relevant characteristic(s)
+
+Reference or source
+
+S. enterica serovar
+
+Typhimurium strains
+
+NCTC121023
+
+EB231
+
+MvP599
+MvP812
+MvP781
+MvP990
+MvP991
+
+Wild type
+
+phsA::Tn10dTc
+
+⌬siiE::FRT
+⌬siiF::FRT
+⌬siiE6540-12493::FRT (⌬Ig21-40)
+⌬siiE6540-9541::FRT (⌬Ig21-30)
+⌬siiE6540-8038::FRT (⌬Ig21-25)
+
+NCTC, Colindale,
+United Kingdom
+B. C. Berks, Oxford,
+United Kingdom
+
+8
+8
+5
+5
+5
+
+tetAR insertion strains
+
+MvP1220
+MvP1287
+
+siiE deletion strains
+
+MvP1222
+MvP1226
+MvP1227
+
+siiE6540::tetAR
+siiF1506::tetAR
+
+⌬siiE6541-12492 (⌬Ig21-40)
+⌬siiE6541-9540 (⌬Ig21-30)
+⌬siiE6541-8037 (⌬Ig21-25)
+
+Site-directed mutagenesis
+
+strains
+MvP1311
+MvP1312
+MvP1313
+
+siiF(G500E)
+siiF(K506L)
+siiF SacI
+
+This study
+This study
+
+This study
+This study
+This study
+
+This study
+This study
+This study
+
+Plasmids
+pKD46
+
+pWSK29
+p3223
+
+Red-expressing plasmid,
+temperature sensitive
+
+Low-copy-number vector, Ampr
+Complementation of siiF
+
+3
+
+17
+5
+
+Sequence analyses. DNA sequencing and restriction analyses were performed
+
+with PCR products obtained by colony PCR of selected clones.
+
+Analyses of SiiE synthesis and secretion. SiiE was detected in cell lysates of
+various S. enterica serovar Typhimurium strains (5) and quantiﬁcation of SiiE
+secretion into the culture supernatant by various strains by an enzyme-linked
+immunosorbent assay (ELISA) (7) was performed as previously described.
+
+RESULTS AND DISCUSSION
+
+Rationale for oligonucleotide-based recombineering. Ho-
+mologous recombination mediated by the Red recombinase is
+a highly efﬁcient process that has allowed generation of dele-
+tions and gene fusions in various microbial organisms. Flank-
+ing regions as short as 40 bp are sufﬁcient to enable Red-
+mediated homologous recombination in Escherichia coli, S.
+enterica, and various other bacteria. We speculated that this
+speciﬁc feature might allow the use of short synthetic DNA for
+recombinant engineering of target genes directly in their
+genomic context.
+
+We devised a two-step procedure for construction of in-
+frame deletions and site-directed mutagenesis (Fig. 1). In the
+ﬁrst step, a cassette consisting of the tetAR genes was intro-
+duced into the target locus for mutagenesis by Red-mediated
+recombination (Fig. 1A). The resulting clones were selected by
+virtue of their resistance to tetracycline, and the proper posi-
+tion of the tetAR cassette was conﬁrmed by colony PCR. In the
+second step, conﬁrmed clones were electroporated with
+
+FIG. 1. Rationale of the oligonucleotide-based recombinant engineering approach. In the ﬁrst step, the tetAR cassette is inserted using Red
+recombinase-mediated recombination into the target locus, and Tetr strains are selected (A). Proper insertion of the tetAR cassette is conﬁrmed
+by colony PCR using primer TetAR-Del-Check-For (Check-For) and a target gene-speciﬁc primer (orfX-Rev) or primer TetAR-Del-Check-Rev
+(Check-Rev) and a target gene-speciﬁc primer (orfX-For). In the second step, conﬁrmed clones are transformed with the Red recombinase-
+expressing plasmid pKD46, and subsequently 80- to 88-bp DNA fragments are introduced by electroporation to generate in-frame deletions (B) or
+site-directed mutation or insertion of codons (C). Tets clones are selected on Bochner-Maloy plates. Finally, the mutations introduced by
+recombination are conﬁrmed by colony PCR using primers ﬂanking the deletion or by restriction analysis, as described in the legend to Fig. 3. RBS,
+ribosome binding site.
+
+VOL. 75, 2009
+
+Oligonucleotide
+
+CHROMOSOMAL RECOMBINEERING
+
+1577
+
+TABLE 2. Oligonucleotides used in this study
+Sequence
+
+Deletions in siiE
+
+SiiE-Del-Ig21-Tet-For......................5⬘-CGGCACGAAAGAGGTGCTGACGGCCACCAAAGACGCGACCTTAAGACCCACTTTCACA-3⬘
+SiiE-Del-Ig21-Tet-Rev .....................5⬘-CATCTGCCCATGTGCCGGTCGGTGTCACGCTCCAGTTGCCCTAAGCACTTGTCTCCTG-3⬘
+SiiE-Del6541-12492-For...................5⬘-CGGCACGAAAGAGGTGCTGCTGACGGCCACCAAAGACGCGACCGGCGAATGGAGTTGGA
+
+SiiE-Del6541-12492-Rev..................5⬘-CTGGCGCTAATACTGATGGCGGCGTCCAACTCCATTCGCCGGTCGCGTCTTTGGTGGCCGT
+
+SiiE-Del6541–9540-For....................5⬘-CGGCACGAAAGAGGTGCTGACGGCCACCAAAGACGCGACCGACGGCTGGCGCTATCGAC
+
+SiiE-Del6541–9540-Rev ...................5⬘-CGTCCGCCAAAGCAGAATCCGGTCGATAGCGCCAGCCGTCGGTCGCGTCTTTGGTGGCCG
+
+SiiE-Del6541-8037-For.....................5⬘-CGGCACGAAAGAGGTGCTGACGGCCACCAAAGACGCGACCGGGATCTGGGATTACACCT
+
+SiiE-Del6541-8037-Rev....................5⬘-CGTCGGTCACATCTTTCGGCCAGGTGTAATCCCAGATCCCGGTCGCGTCTTTGGTGGCCGT
+
+CGCCGCCATCAGTATTAGCGCCAG-3⬘
+
+CAGCACCTCTTTCGTGCCG-3⬘
+
+CGGATTCTGCTTTGGCGGACG-3⬘
+
+TCAGCACCTCTTTCGTGCCG-3⬘
+
+GGCCGAAAGATGTGACCGACG-3⬘
+
+CAGCACCTCTTTCGTGCCG-3⬘
+
+Site-directed mutagenesis
+
+of siiF
+
+SiiF502-503-TetAR-For ...................5⬘-CATACCTGCGGGGCAACGTGTCGCGGTGGTAGGCGAATGCTTAAGACCCACTTTCACAtt-3⬘
+SiiF502-503-TetAR-Rev ..................5⬘-GTAGCCAGATAGCATTCCCAGTAATGAGCTTTTTCCTGCTCCCTAAGCACTTGTCTCCTG-3⬘
+SiiF-TetSwap-G500E-For ................5⬘-GACATACCTGCGGGGCAACGTGTCGCGGTGGTAGaaGAATGCGGAGCCGGAAAAAGCTCA
+
+SiiF-TetSwap-G500E-Rev................5⬘-GTAGCCAGATAGCATTCCCAGTAATGAGCTTTTTCCGGCTCCGCATTCTTCTACCACCGCG
+
+SiiF-TetSwap-K506L-For.................5⬘-CATACCTGCGGGGCAACGTGTCGCGGTGGTAGGCGAATGCGGAGCCGGATTAAGCTCATT
+
+SiiF-TetSwap-K506L-Rev ................5⬘-AAAGGTAGCCAGATAGCATTCCCAGTAATGAGCTTAATCCGGCTCCGCATTCGCCTACCAC
+
+SiiF-TetSwap-SacI-For.....................5⬘-CATACCTGCGGGGCAACGTGTCGCGGTGGTAGGCGAATGCGGAGCCGGAAAGAGCTCAT
+
+SiiF-TetSwap-SacI-Rev ....................5⬘-AGGTAGCCAGATAGCATTCCCAGTAATGAGCTCTTTCCGGCTCCGCATTCGCCTACCACCG
+
+TTACTGGGAATGCTATCTGGCTAC-3⬘
+
+ACACGTTGCCCCGCAGGTATGTC-3⬘
+
+ACTGGGAATGCTATCTGGCTACCTTT-3⬘
+
+CGCGACACGTTGCCCCGCAGGTATG-3⬘
+
+TACTGGGAATGCTATCTGGCTACCT-3⬘
+
+CGACACGTTGCCCCGCAGGTATG-3⬘
+
+Control primers
+
+TetAR-Red-Check-For....................5⬘-GATCAAGAGCATCAAGTCGC-3⬘
+TetAR-Red-Check-Rev ...................5⬘-TCAGCAAGGTGCTTTACAGG-3⬘
+
+pKD46 and made competent for electroporation again. For
+electroporation, we used short synthetic DNA fragments that
+consisted of two complementary oligonucleotides (80 to 88
+nucleotides) that were allowed to form double strands prior to
+transformation. The design of these oligonucleotides allowed
+generation of scarless in-frame deletions (Fig. 1B) and site-
+directed mutagenesis (Fig. 1C), as well as insertion of foreign
+sequences (not shown).
+
+Generation of scarless in-frame deletions in the Salmonella
+chromosome. To test this approach for the generation of scar-
+less in-frame chromosomal deletions, we selected target genes
+within Salmonella pathogenicity island 4 (SPI4), a virulence
+locus of S. enterica that is essential for the adhesion to and
+invasion of polarized cells by S. enterica serovar Typhimurium
+(5). SPI4 contains a 17-kb gene encoding the giant adhesin SiiE
+and genes for a cognate type I secretion system consisting of
+SiiC, SiiD, and SiiF (8). The large size and repetitive nature of
+siiE make expression from episomal elements and genetic ma-
+nipulation extremely difﬁcult. We have previously performed
+Red-mediated mutagenesis to generate in-frame deletions in
+siiE of 200 to 1,984 codons and demonstrated that there is a
+correlation between the length of SiiE and its function as an
+adhesin (5). However, generation of in-frame deletions as de-
+scribed by Datsenko and Wanner (3) results in insertion of a
+27-codon “scar” sequence that may interfere with the function
+
+of the target in an unpredictable manner. In the work de-
+scribed here, we generated a set of in-frame deletion alleles of
+siiE by replacing the tetAR cassette by oligonucleotides (Fig.
+2A). For this purpose, a strain harboring a tetAR cassette in
+siiE was electroporated with short synthetic double-stranded
+DNA fragments (80 to 88 bp) with ﬂanks complementary to
+the ﬂanks of the deletion in the chromosomal gene (Fig. 1B).
+Red-mediated homologous recombination was induced and
+led to replacement of the tetAR cassette by the synthetic DNA
+fragment. Recombinant clones were selected by inhibition of
+Tetr clones by fusaric acid on Bochner-Maloy plates as previ-
+ously described (9). The transformation usually resulted in a
+large number (range, 101 to ⬎102) of colonies on selection
+plates. In contrast to other published approaches (4), the trans-
+formation with single-stranded oligonucleotides did not yield
+recombinants in our setting. Tets clones were further charac-
+terized by colony PCR to scan for the deletions introduced.
+About 33% of the Tets clones yielded PCR products of the
+predicted size and were further conﬁrmed by DNA sequenc-
+ing. Positive clones were analyzed for the expression of mutant
+alleles of siiE, and all clones conﬁrmed by PCR synthesized
+SiiE, as detected by ELISA and Western blotting (data not
+shown). The molecular weights of scarless SiiE variants in
+strains generated by oligonucleotide-mediated recombinant
+engineering were comparable to those of molecules in previ-
+
+1578
+
+GERLACH ET AL.
+
+APPL. ENVIRON. MICROBIOL.
+
+system for hemolysin secretion in E. coli showed that single
+amino acid exchanges in “Walker box A” of the ABC are
+sufﬁcient to eliminate the function of the transport ATPase
+and to prevent secretion (10).
+
+For mutagenesis of siiF, we inserted the tetAR cassette be-
+tween codons 502 and 503 of siiF. Oligonucleotides were de-
+signed that introduced a silent mutation resulting in a new
+restriction site for NlaIV, as well as G500E or K506L exchange
+(Fig. 3A). For control mutagenesis, we designed oligonucleo-
+tides that introduced the NlaIV site, and a new SacI site within
+the ABC motif was used as an additional silent mutation (Fig.
+3A). Since no change in the amino acid sequence was intro-
+duced, we expected that the resulting mutant strain would have
+a wild-type phenotype with respect to secretion of SiiE.
+
+Clones harboring the mutant alleles were screened by colony
+PCR, followed by digestion with NlaIV or SacI. We observed
+that 80 to 90% of the clones selected on the basis of sensitivity
+to tetracycline contained the newly introduced NlaIV site, as
+well as the additional SacI site in the case of the siiF SacI
+mutation (Fig. 3B and C). For each mutation selected clones
+were analyzed by DNA sequencing of the target region in
+siiF, which revealed that of the ﬁve clones analyzed, three
+siiE(G500E), two siiF(K506L), and all siiF SacI clones had
+error-free sequences with the desired mutations. Clones whose
+sequences were conﬁrmed were subjected to functional anal-
+yses by quantiﬁcation of the amount of secreted SiiE by ELISA
+(Fig. 3D). We observed that the G500E and K506L point
+mutations did not affect the synthesis of SiiE but eliminated
+secretion of the protein into the culture supernatant (Fig. 3D).
+The amounts of SiiE secreted by the strains with a point mu-
+tation in siiF were similar to those secreted by strain MvP812
+with the entire siiF gene deleted. Introduction of the SacI site
+affected neither the synthesis nor the secretion of SiiE. As
+expected from these results, we observed that adhesion to and
+invasion of polarized epithelial cells were highly reduced for
+strains MvP1311 [siiF(G500E)] and MvP1312 [siiF(K506L)]
+but not for strain MvP1313 (siiF SacI) (data not shown). These
+virulence defects could be restored by complementation with a
+plasmid-borne copy of siiF. These results demonstrate that
+oligonucleotide-based recombinant engineering allows direct
+site-directed mutagenesis of chromosomal target sequences.
+
+Concluding remarks. The method described here allows
+rapid mutagenesis of genes in bacterial chromosomes by
+means of Red-mediated recombination. Although the method
+was used for manipulation of virulence genes in S. enterica, it
+should basically be applicable to a larger number of bacteria,
+provided that Red-mediated recombination can be used in the
+strains or species and that selectable as well as counterselect-
+able markers are available. Our approach entirely eliminates
+the need for cloning target genes and for reintroduction of
+mutated genes into the chromosome of the target organism.
+Since no ampliﬁcation and cloning of target genes are re-
+quired, the overall error rate of this method is very low and
+depends mainly on the accuracy of the oligonucleotide syn-
+thesis.
+
+Although the two-step approach makes it necessary to in-
+troduce a Red recombinase-expressing plasmid twice, the
+tetAR-containing strains generated in the ﬁrst step can be uti-
+lized for different mutagenesis procedures at the same locus.
+We applied this approach to the mutagenesis of various
+
+FIG. 2. Oligonucleotide-based recombineering of SPI4-encoded
+SiiE. (A) Schematic representation of the domain organization of siiE
+encoding a giant nonﬁmbrial adhesin in S. enterica serovar Typhi-
+murium. Oligonucleotide-mediated recombinant engineering was per-
+formed to delete regions encoding the 5, 10, or 20 immunoglobulin (Ig)
+domain as indicated. Deletions between the Ig repeats were in frame
+without introduction of a scar or additional alterations. WT, wild type;
+sec., secretion. (B) Synthesis of SiiE and derivatives by Salmonella
+wild-type and various mutant strains harboring deletions of the entire
+siiE gene or in-frame deletions of the 5, 10, or 20 Ig domains. Bacterial
+cultures were subcultured in LB for 3.5 h. Equal amounts of cells,
+adjusted by using optical density at 600 nm, were harvested, and pro-
+teins were separated by sodium dodecyl sulfate-polyacrylamide gel
+electrophoresis on gradient gels. Proteins were transferred onto nitro-
+cellulose membranes, and SiiE was detected by incubation with anti-
+serum against SiiE (␣ SiiE). As loading controls, Western blots were
+probed with antiserum against DnaK (StressGen) (␣ DnaK). The sizes
+of SiiE variants from mutant strains (o) were described previously (5)
+and strains generated in this study (n) were compared. Lane M con-
+tained high-molecular-weight protein standards.
+
+ously generated mutant strains containing the “Red scar” (Fig.
+2B). It should be noted that the small difference in molecular
+mass (about 2.9 kDa) due to the presence or absence of the
+“Red scar” could not be resolved by the sodium dodecyl sul-
+fate- polyacrylamide gel electrophoresis analysis used here.
+The characteristics of the strains with scarless in-frame dele-
+tions in siiE with respect to adhesion to and invasion of polar-
+ized cells were in line with our previous observations (data not
+shown).
+
+Rapid site-directed mutagenesis of chromosomal genes. We
+next investigated if Red-mediated replacement of the tetAR
+cassette by oligonucleotides can be used for site-directed mu-
+tagenesis directly in the chromosome of the target strain. Here,
+the tetAR cassette was replaced by recombination with a short
+synthetic DNA fragment that introduced silent mutations and
+changes in the amino acid sequence (Fig. 1C). siiF was selected
+as a target gene that encodes the putative ATPase and ener-
+gizer of the type I secretion system for secretion of SiiE (5, 12).
+SiiF contains an ATP-binding cassette (ABC) motif, and pre-
+vious work on the putative homologue in the type I secretion
+
+VOL. 75, 2009
+
+CHROMOSOMAL RECOMBINEERING
+
+1579
+
+FIG. 3. Site-directed mutagenesis of chromosomal siiF in S. enterica serovar Typhimurium. (A) Sequence of the target region in siiF encoding
+the putative ABC and design of site-directed mutations and silent mutations. All manipulations resulted in a silent mutation that generated a novel
+NlaIV site at codons 503 and 504. In addition, mutations G500E and K506L resulted in amino acid changes in the ABC of SiiF. Mutation siiF SacI
+introduced an additional SacI site without altering the amino acid sequence of the ABC. Newly introduced restriction sites are underlined, and
+mutations resulting in amino acid changes are indicated by capital letters. WT, wild type. (B) Predicted restriction map for a 500-bp PCR product
+of siiF obtained for wild-type and various mutant strains. The gray box indicates the mutagenesis target region. (C) The PCR products for
+fragments of siiF from wild-type and representative clones of various mutant strains were subjected to restriction analyses with NlaIV or SacI as
+indicated. Lane M contained a DNA size marker. (D) The secretion of SiiE by Salmonella wild-type and various mutant strains was analyzed by
+an ELISA for SiiE. The Salmonella wild-type strain (black bar), mutant strains with deletions of the entire siiE or siiF gene, selected clones
+(indicated by number signs) with site-directed mutations in siiF (open bars), and mutant strains harboring the plasmid vector pWSK29 (vector)
+(gray bars) or plasmid p3223 for expression of wild-type siiF (comp.) (hatched bars) were grown in LB medium, and culture supernatants were
+collected for quantiﬁcation of SiiE by ELISA. The values for SiiE (optical density at 450 nm [OD450]) were normalized by using the culture density
+(optical density at 600 nm [OD600]).
+
+1580
+
+GERLACH ET AL.
+
+APPL. ENVIRON. MICROBIOL.
+
+chromosomal genes in S. enterica. One critical parameter was
+the efﬁciency of the selection of Tets clones on Bochner-Maloy
+plates, which was variable between clones with insertions in
+various loci. An interesting alternative could be selection of
+Tets clones based on the increased sensitivity of Tetr clones to
+nickel salts (15). Furthermore, the efﬁciency might be im-
+proved by the use of other positive selection strategies, such as
+the introduction of meganuclease restriction sites and selection
+by induction of double-strand breaks in the chromosome (2,
+16). An approach described by Olson et al. (13) may also be of
+interest, since a circular targeting construct is generated by
+PCR and integrated into the chromosome without Red-medi-
+ated recombination.
+
+Our novel approach should accelerate functional analyses of
+bacterial genes and enable new approaches for manipulation
+of bacterial genomes for research in bacterial pathogenesis, as
+well as for strain construction for vaccine development and
+industrial microbiology.
+
+ACKNOWLEDGMENTS
+
+This work was supported by grant HE1964 from the Deutsche For-
+
+schungsgemeinschaft and by a grant from Elitenetzwerk Bayern.
+
+We thank Joyce Karlinsey for providing crucial support for the
+
+Bochner-Maloy selection procedure.
+
+REFERENCES
+
+1. Baba, T., T. Ara, M. Hasegawa, Y. Takai, Y. Okumura, M. Baba, K. A.
+Datsenko, M. Tomita, B. L. Wanner, and H. Mori. 2006. Construction of
+Escherichia coli K-12 in-frame, single-gene knockout mutants: the Keio col-
+lection. Mol. Syst. Biol. 2:2006.0008.
+
+2. Cox, M. M., S. L. Layton, T. Jiang, K. Cole, B. M. Hargis, L. R. Berghman,
+W. G. Bottje, and Y. M. Kwon. 2007. Scarless and site-directed mutagenesis
+in Salmonella enteritidis chromosome. BMC Biotechnol. 7:59.
+
+3. Datsenko, K. A., and B. L. Wanner. 2000. One-step inactivation of chromo-
+somal genes in Escherichia coli K-12 using PCR products. Proc. Natl. Acad.
+Sci. USA 97:6640–6645.
+
+4. Ellis, H. M., D. Yu, T. DiTizio, and D. L. Court. 2001. High efﬁciency
+mutagenesis, repair, and engineering of chromosomal DNA using single-
+stranded oligonucleotides. Proc. Natl. Acad. Sci. USA 98:6742–6746.
+
+5. Gerlach, R. G., N. Claudio, M. Rohde, D. Ja¨ckel, C. Wagner, and M. Hensel.
+2008. Cooperation of Salmonella pathogenicity islands 1 and 4 is required to
+breach epithelial barriers. Cell. Microbiol. 10:2364–2376.
+
+6. Gerlach, R. G., S. U. Ho¨lzer, D. Ja¨ckel, and M. Hensel. 2007. Rapid engi-
+neering of bacterial reporter gene fusions by using Red recombination. Appl.
+Environ. Microbiol. 73:4234–4242.
+
+7. Gerlach, R. G., D. Ja¨ckel, N. Geymeier, and M. Hensel. 2007. Salmonella
+pathogenicity island 4-mediated adhesion is coregulated with invasion genes
+in Salmonella enterica. Infect. Immun. 75:4697–4709.
+
+8. Gerlach, R. G., D. Ja¨ckel, B. Stecher, C. Wagner, L. Lupas, W. D. Hardt, and
+M. Hensel. 2007. Salmonella pathogenicity island 4 encodes a giant non-
+ﬁmbrial adhesin and the cognate type 1 secretion system. Cell. Microbiol.
+9:1834–1850.
+
+9. Karlinsey, J. E., and K. T. Hughes. 2006. Genetic transplantation: Salmo-
+nella enterica serovar Typhimurium as a host to study sigma factor and
+anti-sigma factor interactions in genetically intractable systems. J. Bacteriol.
+188:103–114.
+
+16. Posfai, G., V. Kolisnychenko, Z. Bereczki, and F. R. Blattner. 1999. Mark-
+erless gene replacement in Escherichia coli stimulated by a double-strand
+break in the chromosome. Nucleic Acids Res. 27:4409–4415.
+
+17. Wang, R. F., and S. R. Kushner. 1991. Construction of versatile low-copy-
+number vectors for cloning, sequencing and gene expression in Escherichia
+coli. Gene 100:195–199.
+
+18. Warming, S., N. Costantino, D. L. Court, N. A. Jenkins, and N. G. Copeland.
+2005. Simple and highly efﬁcient BAC recombineering using galK selection.
+Nucleic Acids Res. 33:e36.
+
+19. Yu, D., H. M. Ellis, E. C. Lee, N. A. Jenkins, N. G. Copeland, and D. L.
+Court. 2000. An efﬁcient recombination system for chromosome engineering
+in Escherichia coli. Proc. Natl. Acad. Sci. USA 97:5978–5983.
+
+10. Koronakis, E., C. Hughes, I. Milisav, and V. Koronakis. 1995. Protein
+exporter function and in vitro ATPase activity are correlated in ABC-domain
+mutants of HlyB. Mol. Microbiol. 16:87–96.
+
+11. Maloy, S. R., V. L. Stewart, and R. K. Taylor. 1996. Genetic analysis of
+pathogenic bacteria. Cold Spring Harbor Laboratory Press, Cold Spring
+Harbor, NY.
+
+12. Morgan, E., A. J. Bowen, S. C. Carnell, T. S. Wallis, and M. P. Stevens. 2007.
+SiiE is secreted by the Salmonella enterica serovar Typhimurium pathoge-
+nicity island 4-encoded secretion system and contributes to intestinal colo-
+nization in cattle. Infect. Immun. 75:1524–1533.
+
+13. Olson, M. M., L. J. Templeton, W. Suh, P. Youderian, F. S. Sariaslani, A. A.
+Gatenby, and T. K. Van Dyk. 2007. Production of tyrosine from sucrose or
+glucose achieved by rapid genetic changes to phenylalanine-producing Esch-
+erichia coli strains. Appl. Microbiol. Biotechnol. 74:1031–1040.
+
+14. Oppenheim, A. B., A. J. Rattray, M. Bubunenko, L. C. Thomason, and D. L.
+Court. 2004. In vivo recombineering of bacteriophage lambda by PCR frag-
+ments and single-strand oligonucleotides. Virology 319:185–189.
+
+15. Podolsky, T., S. T. Fong, and B. T. Lee. 1996. Direct selection of tetracycline-
+
+sensitive Escherichia coli cells using nickel salts. Plasmid 36:112–115.
+
+

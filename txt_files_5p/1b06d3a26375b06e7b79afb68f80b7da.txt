@@ -1,0 +1,3789 @@
+16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+10.1146/annurev.clinpsy.1.102803.143833
+
+Annu. Rev. Clin. Psychol. 2005. 1:91–111
+doi: 10.1146/annurev.clinpsy.1.102803.143833
+Copyright c(cid:1) 2005 by Annual Reviews. All rights reserved
+First published online as a Review in Advance on December 17, 2004
+
+MOTIVATIONAL INTERVIEWING
+
+Jennifer Hettema, Julie Steele, and William R. Miller
+Department of Psychology, University of New Mexico, Albuquerque, New Mexico
+87131-1161; email: jhettema@unm.edu, jmsteele@unm.edu, wrmiller@unm.edu
+
+substance abuse, health behavior, treatment outcome, meta-analysis,
+
+Key Words
+counseling
+■ Abstract Motivational interviewing (MI) is a client-centered, directive therapeu-
+tic style to enhance readiness for change by helping clients explore and resolve am-
+bivalence. An evolution of Rogers’s person-centered counseling approach, MI elicits
+the client’s own motivations for change. The rapidly growing evidence base for MI
+is summarized in a new meta-analysis of 72 clinical trials spanning a range of target
+problems. The average short-term between-group effect size of MI was 0.77, decreas-
+ing to 0.30 at follow-ups to one year. Observed effect sizes of MI were larger with
+ethnic minority populations, and when the practice of MI was not manual-guided. The
+highly variable effectiveness of MI across providers, populations, target problems, and
+settings suggests a need to understand and specify how MI exerts its effects. Progress
+toward a theory of MI is described, as is research on how clinicians develop proﬁciency
+in this method.
+
+CONTENTS
+
+92
+94
+94
+95
+
+INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+META-ANALYTIC METHODS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Study Identiﬁcation and Coding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Computing Effect Sizes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Comparison of Problem Areas, Comparison Group, and Motivational
+Interviewing Purity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+95
+Analysis of Motivational Interviewing Efﬁcacy Across Time . . . . . . . . . . . . . . . . .
+96
+Homogeneity Analyses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+RESULTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+Characteristics of Included Trials . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+TREATMENT EFFECTS OF MOTIVATIONAL INTERVIEWING . . . . . . . . . . . . .
+99
+General Observations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+99
+Correlates of Effect Size . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+Effects of Motivational Interviewing by Problem Domain . . . . . . . . . . . . . . . . . . . 102
+DISCUSSION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+Treatment Adherence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+Immediacy of Effect . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+Are Manuals a Good Idea? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+Matching Indications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
+
+1548-5943/05/0427-0091$14.00
+
+91
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+92
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+TOWARD A THEORY OF MOTIVATIONAL INTERVIEWING . . . . . . . . . . . . . . . 105
+LEARNING MOTIVATIONAL INTERVIEWING . . . . . . . . . . . . . . . . . . . . . . . . . . . 108
+SUMMARY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
+
+INTRODUCTION
+
+Anyone who aspires to help others change will quickly discover that people are
+often less than “ready, willing, and able” to do so. The “able” part of this for-
+mula is comfortable territory for most cognitive-behavior therapists, who are quite
+prepared to help clients build self-efﬁcacy and learn how to change through a
+rich armamentarium of effective coping strategies. Less familiar is the terrain of
+readiness. Often clients are expected to come already prepared with sufﬁcient
+motivation for change. In substance abuse treatment, it was once common to tell
+less-motivated clients, “Come back when you’re ready.”
+
+Yet, hesitancy about change is human nature. To be sure, clients present with a
+wide range of readiness. Some do come already convinced that something has to
+change. Others come reluctantly or grudgingly, nudged through the door by loved
+ones or the courts. It is a safe assumption that most clients seeking treatment or
+change are ambivalent about it: They want it, and they don’t.
+
+Motivational interviewing (MI) was developed as a way to help people work
+through ambivalence and commit to change (Miller 1983). An evolution of client-
+centered therapy, MI combines a supportive and empathic counseling style (Rogers
+1959) with a consciously directive method for resolving ambivalence in the direc-
+tion of change. Drawing on Bem’s self-perception theory (Bem 1972) that people
+tend to become more committed to that which they hear themselves defend, MI
+explores the client’s own arguments for change. The interviewer seeks to evoke
+this “change talk”—expressions of the client’s desire, ability, reasons, and need
+for change—and responds with reﬂective listening. Clients thus hear themselves
+explaining their own motivations for change, and hear them reﬂected again by
+the counselor. Furthermore, the counselor offers periodic summaries of change
+talk that the client has offered, a kind of bouquet composed of the client’s own
+self-motivational statements (Miller & Rollnick 2002).
+
+The net effect of evoking change talk in an empathic and supportive manner is
+to strengthen the client’s commitment to change. Verbalized intention results in an
+increased probability of behavior change, particularly when it is combined with a
+speciﬁc plan for implementation (Gollwitzer 1999). In psycholinguistic analyses of
+MI sessions with drug dependent people, we found that the strength of commitment
+language predicted drug abstinence. Stated desire, ability, reasons, and need for
+change all contributed to subsequent strength of commitment language, but only
+commitment directly predicted behavior change (Amrhein et al. 2003). To say that
+one wants to, can, has cause to, or needs to change is not the same as making a
+commitment or stating the intention to change. MI is therefore differentiated into
+two phases: the ﬁrst is focused on increasing motivation for change, and the second
+on consolidating commitment (Miller & Rollnick 2002).
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+93
+
+MI is normally brief, provided in one to two sessions. It can be delivered as a
+freestanding intervention, or as a motivational prelude to other treatment. It has also
+been common to combine the clinical method of motivational interviewing with
+other intervention components, which have been called adaptations of MI (AMIs)
+(Burke et al. 2003). The most widely used AMI is motivational enhancement
+therapy (MET), which combines MI with personal feedback of assessment results
+(Miller et al. 1992).
+
+Like other psychotherapies, MI is a complex and skillful method that is learned
+over time. Counselors sometimes come to MI workshops expecting to learn tricks
+for getting people to do what counselors want them to do. On the contrary, MI
+is a systematic and collaborative method for helping people to explore their own
+values and motivations, and how these may be served by status quo or behavior
+change. It emphasizes and honors client autonomy, to choose whether, when and
+how to change. When done well, MI involves listening more than telling. It does
+not operate from a deﬁciency model that seeks to instill knowledge, insight, skills,
+correct thinking, or even motivation. Rather, the counselor seeks to evoke the
+client’s own motivation, with conﬁdence in the human desire and capacity to
+grow in positive directions. Instead of implying that “I have what you need,” MI
+communicates, “You have what you need.” In this way, MI falls squarely within
+the humanistic “third force” in the history of psychotherapy. Nevertheless, MI is
+compatible with a variety of other approaches and appears to amplify the efﬁcacy
+of treatment methods with which it is combined.
+
+Proﬁciency in MI is not readily acquired by reading about it, viewing videotapes,
+or attending a clinical workshop (Miller & Mount 2001). Proper training focuses
+instead on helping clinicians learn how to learn MI from their clients. Once coun-
+selors learn to recognize and evoke change talk and committing language, clients
+thereafter provide continuous and immediate in-session reinforcement for good
+practice. Client resistance, on the other hand, represents immediate feedback of
+dissonance and serves as a cue to shift strategies. Within MI, “resistance” is sim-
+ply client speech that defends and expresses commitment to status quo; in other
+words, it reﬂects the other side of the client’s ambivalence. Pushing against re-
+sistance tends to focus on and amplify it. Instead, the interviewer acknowledges
+and rolls with resistance, calling attention to both sides of the ambivalence and
+redirecting the emphasis toward change.
+
+MI differs from client-centered counseling in its directive intention. Some have
+maintained that Rogers himself was unconsciously directive, differentially attend-
+ing to and reinforcing certain types of client speech (Truax 1966). In MI, such
+differential response to change talk is conscious and strategic. This means, of
+course, that MI is appropriate when there is a clear desired direction for change.
+That direction may come from the client’s own expressed desires, from the coun-
+selor’s perspective, or from the context within which counseling occurs. Interesting
+ethical dilemmas can arise when therapists and clients disagree on the perception
+of a problem and the need to change. MI has been argued to lie on a continuum
+between passivity and coercion and seeks to resolve mismatches between clients
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+94
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+and counselors by evoking the clients’ intrinsic motivations (Miller 1994, Miller
+& Rollnick 2002).
+
+Research indicates that MI is particularly useful with clients who are less mo-
+tivated or ready for change, and who are more angry or oppositional. For these
+populations, action-oriented counseling with a goal of behavior change is likely
+to evoke resistance and reactance. From a transtheoretical perspective, this hap-
+pens because of a mismatch in stages of change: The counselor is working at the
+action stage, whereas the client is in the earlier precontemplation or contempla-
+tion stage (Prochaska & DiClemente 1984). In the case of clients who are less
+ready for change, MI meets them where they are and invites them to move along
+through contemplation, preparation, and action. For clients who indicate readiness
+to change, MI may be less useful, and some ﬁndings indicate that it can be coun-
+terproductive. If such clients subsequently show ambivalence in action-oriented
+counseling, one can always fall back to an MI style.
+
+The treatment outcome literature for MI is growing rapidly and has spread well
+beyond its original focus on addictive behaviors. Our primary purpose in this chap-
+ter is to provide an up-to-date summary of the evidence base for MI, drawing data
+primarily, but not exclusively, from controlled clinical trials. The ﬁndings that we
+summarize here are based on a new meta-analysis, the full scope of which is beyond
+the space limitations of this chapter. Full details of the meta-analysis and a compre-
+hensive bibliography of MI are available at http://www.motivationalinterview.org/.
+
+META-ANALYTIC METHODS
+
+Study Identiﬁcation and Coding
+
+In order to identify MI treatment outcome studies, we searched PsycINFO using
+the term “motivational interviewing,” and hand-searched bibliographies from the
+motivational interviewing web page (http://www.motivationalinterview.org/) and
+previous reviews (Burke et al. 2003, Dunn et al. 2001, Miller & Wilbourne 2003).
+Studies having (a) at least one group or individual intervention with components
+of MI, and (b) at least one posttreatment outcome measure were included in the
+overall pool for analyses investigating within-group effect sizes. In addition, studies
+contributing between-group effect sizes required (c) at least one control condition
+or comparison intervention without any components of MI, and (d) a procedure
+to provide pretreatment equivalence of groups (e.g., randomization, cohort, or
+sequential group assignment).
+
+All outcome studies were independently coded by the ﬁrst two authors (J.
+Hettema and J. Steele). The characteristics of included studies (type, goal, format,
+setting, intervention agent, treatment components, and sample characteristics) were
+categorized using a coding manual from prior treatment outcome reviews (Miller
+& Wilbourne 2003), with adaptations for the speciﬁc content of MI. Classiﬁcation
+discrepancies were resolved by consensus of the coders, with reference to the orig-
+inal article and coding manual. All studies were also rated using 12 methodological
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+95
+
+quality criteria from the same coding system, including method for assignment to
+groups, presence of quality control of treatment, follow-up rate, follow-up duration,
+type of follow-up data collection, collateral veriﬁcation of self-report, objective
+veriﬁcation of follow-up data, inclusion of treatment dropouts in analyses, con-
+sideration of cases lost to follow-up, masked follow-up data collection, acceptable
+statistical analyses, and the inclusion of multiple sites. Total methodological qual-
+ity scores were computed, with a possible range from 0 to 16. In addition, we coded
+information on the amount and type of MI training provided to interventionists,
+and speciﬁc components of MI reported to have been included in the interventions.
+
+Computing Effect Sizes
+
+For each study, effect sizes and conﬁdence intervals were computed for all outcome
+variables related to the target problem, and for which sufﬁcient information was
+provided. As feasible, study authors were contacted for missing information. When
+no other option was available, effect sizes reported in previously published meta-
+analyses were used (Bien et al. 1993, Burke et al. 2003, Dunn et al. 2001). When
+insufﬁcient information was provided to determine effect sizes and signiﬁcance
+tests indicated p > 0.05, zero effect sizes were assigned.
+
+When calculating within-group effect sizes, baseline mean values of all in-
+cluded variables were compared to every follow-up point. For between-group
+calculations, mean MI scores on every included variable were compared to every
+other investigated treatment condition at all follow-up points. When mean, standard
+deviation, and sample size information were reported, an unbiased estimator of
+effect size (g) was calculated using the following formula (Hedges & Olkin 1985):
+[g = J(N − 2) ∗ (YE − YC/s)], where J(N − 2) is a bias correction factor, YE and
+YC are the experimental and control group means, and s is the pooled sample stan-
+dard deviation. When mean, standard deviation, or sample size information was
+not provided, effect sizes were estimated from signiﬁcance tests. F, t, or chi-square
+statistics were transformed to r values and then converted to effect sizes (d) using
+the following formula (Rosenthal 1991): [d = 2r/SQRT(1 − r2)]. For all effect
+sizes, 95% conﬁdence intervals were then calculated using the following formula
+(Hedges & Olkin 1985, p. 86): σ 2 (d) = {(nE + nC)/(nE nC)} + {d2/2(nE + nC)}.
+In addition, we calculated for each study a combined effect size (dc), averaging all
+variables at each follow-up point using weighted linear combinations (Hedges &
+Olkin 1985, pp. 109–117). To minimize the variance of the combined effect sizes,
+weights that were inversely proportional to the variance of each effect size were
+assigned to each variable included in the analyses.
+
+Comparison of Problem Areas, Comparison Group,
+and Motivational Interviewing Purity
+
+This review includes studies across all behavior domains for which the efﬁcacy of
+MI has been investigated, and we report effect sizes by target behaviors. We further
+differentiated trials comparing MI to untreated control groups from those in which
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+96
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+MI was added to or compared with other types of active treatment. A previous
+meta-analysis reported slightly larger effects of MI when added to other treatment
+than when tested as a stand-alone intervention (Burke et al. 2003). Finally, we did
+our best to differentiate studies of “pure” MI from those in which MI was combined
+with another established treatment. We computed composite effect sizes to address
+each of these issues, using the combined effect size from each relevant study to
+determine the relative efﬁcacy of MI across problem areas, design types, and in
+studies with more “pure” forms of MI versus those in which MI was combined
+with another treatment. In all, we estimated more than 884 effect sizes in preparing
+this review.
+
+Analysis of Motivational Interviewing Efﬁcacy Across Time
+
+Most studies of MI have reported outcome data across several follow-up points.
+To provide cross-study consistency, we classiﬁed follow-ups as having occurred
+at posttreatment and at the following posttreatment intervals: 1–3 months, 4–6
+months, 7–12 months, 13–24 months, and longer than 2 years. Combined between-
+group effect sizes were calculated for all data during each of the follow-up intervals.
+In addition, combined within-group effect sizes for MI were calculated for each
+time interval, comparing each follow-up variable value with its baseline level.
+
+Homogeneity Analyses
+
+To determine the appropriateness of later statistical procedures, such as t-tests and
+multiple regression analyses, homogeneity analyses were conducted on groups
+of effect sizes that were entered into these analyses. T-tests and multiple regres-
+sion analyses assume homoscedasticity, or that nonsystematic variance is equal
+across observations, and little is known about the violation of this assumption on
+these conventional statistical methods (Hedges & Olkin 1985). A Q statistic was
+calculated and tested for signiﬁcance for each group that would be entered into
+a later analysis. A signiﬁcant Q statistic indicates that the group is statistically
+heterogeneous.
+
+RESULTS
+
+Characteristics of Included Trials
+
+STUDY DESIGN For full details of the characteristics of each trial, see the Sup-
+plemental Material link for Supplemental Table 1 in the online version of this
+chapter or at http://www.annualreviews.org/. Seventy-two studies met inclusion
+criteria for this meta-analysis. The studies tested the efﬁcacy of motivational in-
+terviewing within the following behavioral domains: alcohol (31), smoking (6),
+HIV/AIDS (5), drug abuse (14), treatment compliance (5), gambling (1), intimate
+relationships (1), water puriﬁcation/safety (4), eating disorders (1), and diet and
+exercise (4).
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+97
+
+t
+n
+e
+m
+t
+a
+e
+r
+T
+
+e
+v
+i
+t
+i
+
+d
+d
+A
+
+d
+e
+t
+a
+e
+r
+t
+n
+U
+
+s
+e
+i
+d
+u
+t
+s
+
+l
+l
+
+A
+
+t
+n
+e
+m
+t
+a
+e
+r
+T
+
+e
+v
+i
+t
+i
+
+d
+d
+A
+
+d
+e
+t
+a
+e
+r
+t
+n
+U
+
+s
+e
+i
+d
+u
+t
+s
+
+l
+l
+
+A
+
+s
+h
+t
+n
+o
+m
+e
+e
+r
+h
+t
+
+≤
+s
+p
+u
+-
+w
+o
+l
+l
+o
+f
+
+t
+a
+
+c
+d
+d
+e
+n
+b
+m
+o
+C
+
+i
+
+s
+t
+n
+
+i
+o
+p
+p
+u
+-
+w
+o
+l
+l
+o
+f
+
+l
+l
+a
+s
+s
+o
+r
+c
+a
+
+c
+d
+d
+e
+n
+i
+b
+m
+o
+C
+
+∗
+
+p
+u
+o
+r
+g
+n
+o
+s
+i
+r
+a
+p
+m
+o
+c
+d
+n
+a
+m
+e
+l
+b
+o
+r
+p
+
+t
+e
+g
+r
+a
+t
+
+y
+b
+
+)
+s
+l
+a
+v
+r
+e
+t
+n
+i
+
+e
+c
+n
+e
+d
+ﬁ
+n
+o
+c
+%
+5
+9
+
+,
+c
+d
+(
+
+s
+e
+z
+i
+s
+
+t
+c
+e
+f
+f
+e
+d
+e
+n
+i
+b
+m
+o
+C
+
+1
+E
+L
+B
+A
+T
+
+)
+1
+
+=
+
+)
+5
+6
+
+.
+
+0
+
+)
+2
+
+=
+
+N
+
+(
+3
+4
+
+.
+
+0
+
+,
+
+1
+2
+
+.
+
+0
+(
+
+N
+
+(
+1
+5
+
+.
+
+0
+
+)
+9
+0
+
+.
+
+1
+
+,
+
+1
+4
+
+.
+
+0
+(
+
+)
+6
+
+=
+
+)
+3
+5
+
+.
+
+0
+
+N
+
+(
+8
+3
+
+.
+
+0
+
+,
+
+3
+2
+
+.
+
+0
+(
+
+)
+3
+
+=
+
+N
+
+(
+8
+2
+
+.
+
+0
+
+)
+4
+5
+
+.
+
+0
+
+,
+
+3
+0
+
+.
+
+0
+(
+
+)
+1
+
+=
+
+)
+8
+1
+
+.
+
+0
+
+)
+1
+
+=
+
+,
+
+9
+0
+
+)
+2
+
+)
+5
+
+=
+
+N
+
+.
+
+(
+5
+0
+
+0
+−
+
+(
+
+.
+
+0
+
+.
+
+4
+
+,
+
+4
+
+.
+
+2
+(
+
+N
+
+(
+
+4
+
+.
+
+3
+
+N
+
+(
+2
+0
+
+0
+−
+
+(
+
+.
+
+0
+
+)
+3
+1
+
+.
+
+0
+
+,
+
+8
+0
+
+.
+
+)
+2
+
+)
+2
+1
+
+.
+
+)
+2
+
+=
+
+=
+
+N
+
+1
+
+,
+
+5
+0
+
+.
+
+(
+3
+5
+
+0
+−
+
+(
+
+N
+
+(
+5
+7
+
+.
+
+0
+
+)
+2
+
+.
+
+0
+
+)
+3
+
+)
+8
+2
+
+.
+
+)
+5
+
+=
+
+=
+
+=
+
+=
+
+=
+
+)
+9
+
+=
+
+)
+9
+5
+
+.
+
+0
+
+N
+
+(
+4
+4
+
+.
+
+0
+
+,
+
+0
+3
+
+.
+
+0
+(
+
+)
+1
+
+)
+0
+3
+
+.
+
+0
+
+,
+
+7
+2
+
+.
+
+N
+
+(
+1
+0
+
+0
+−
+
+(
+
+.
+
+0
+
+)
+2
+3
+
+.
+
+1
+
+)
+1
+
+)
+8
+4
+
+.
+
+0
+
+N
+
+(
+9
+6
+
+.
+
+0
+
+,
+
+5
+0
+
+.
+
+0
+(
+
+N
+
+(
+6
+1
+
+.
+
+0
+
+,
+
+6
+1
+
+.
+
+0
+(
+
+N
+
+(
+6
+4
+
+.
+
+0
+
+0
+
+,
+
+4
+0
+
+.
+
+N
+
+(
+2
+1
+
+0
+−
+
+(
+
+.
+
+0
+
+)
+4
+7
+
+.
+
+0
+
+,
+
+7
+1
+
+.
+
+0
+(
+
+)
+1
+6
+
+.
+
+0
+
+=
+
+=
+
+=
+
+=
+
+=
+
+)
+3
+1
+
+=
+
+)
+7
+1
+
+.
+
+0
+
+)
+2
+
+)
+6
+
+=
+
+=
+
+=
+
+)
+5
+2
+
+.
+
+0
+
+)
+6
+4
+
+.
+
+1
+
+N
+
+(
+1
+1
+
+.
+
+0
+
+,
+
+5
+0
+
+.
+
+0
+(
+
+N
+
+(
+7
+1
+
+.
+
+0
+
+,
+
+8
+0
+
+.
+
+0
+(
+
+N
+
+(
+4
+9
+
+.
+
+0
+
+,
+
+1
+4
+
+.
+
+0
+(
+
+N
+
+(
+2
+1
+
+0
+−
+
+(
+
+.
+
+0
+
+)
+0
+2
+
+.
+
+0
+
+,
+
+5
+0
+
+.
+
+)
+4
+4
+
+.
+
+0
+
+,
+
+3
+2
+
+.
+
+0
+(
+
+)
+5
+
+=
+
+N
+
+(
+3
+3
+
+.
+
+0
+
+)
+4
+1
+
+=
+
+)
+6
+5
+
+.
+
+0
+
+)
+2
+
+)
+2
+2
+
+.
+
+0
+
+N
+
+(
+8
+3
+
+.
+
+0
+
+,
+
+0
+2
+
+.
+
+0
+(
+
+N
+
+(
+3
+1
+
+.
+
+0
+
+,
+
+4
+0
+
+.
+
+0
+(
+
+)
+2
+
+)
+2
+1
+
+.
+
+)
+3
+
+=
+
+=
+
+1
+
+,
+
+5
+0
+
+.
+
+N
+
+(
+3
+5
+
+0
+−
+
+(
+
+N
+
+(
+0
+8
+
+.
+
+0
+
+.
+
+0
+
+)
+3
+
+)
+8
+2
+
+.
+
+)
+6
+
+0
+
+,
+
+4
+0
+
+.
+
+N
+
+(
+2
+1
+
+0
+−
+
+(
+
+.
+
+0
+
+)
+5
+
+)
+4
+7
+
+.
+
+0
+
+N
+
+(
+5
+4
+
+.
+
+0
+
+,
+
+6
+1
+
+.
+
+0
+(
+
+)
+1
+
+=
+
+)
+0
+4
+
+.
+
+0
+
+)
+4
+
+=
+
+N
+
+(
+4
+2
+
+.
+
+0
+
+,
+
+9
+0
+
+.
+
+0
+(
+
+N
+
+(
+0
+3
+
+.
+
+0
+
+)
+7
+9
+
+.
+
+0
+
+,
+
+4
+6
+
+.
+
+0
+(
+
+)
+2
+
+)
+6
+3
+
+.
+
+)
+1
+
+)
+4
+7
+
+.
+
+0
+
+,
+
+7
+1
+
+.
+
+0
+(
+
+N
+
+(
+6
+4
+
+.
+
+0
+
+)
+1
+
+0
+
+,
+
+5
+1
+
+.
+
+N
+
+(
+0
+1
+
+0
+−
+
+(
+
+.
+
+0
+
+)
+5
+
+)
+9
+8
+
+.
+
+0
+
+)
+1
+3
+
+=
+
+)
+3
+3
+
+.
+
+0
+
+)
+6
+
+)
+0
+2
+
+.
+
+0
+
+)
+3
+1
+
+)
+3
+4
+
+.
+
+0
+
+)
+1
+8
+
+.
+
+0
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+)
+4
+
+)
+2
+4
+
+.
+
+0
+
+N
+
+(
+6
+2
+0
+
+.
+
+,
+
+8
+1
+0
+(
+
+.
+
+N
+
+(
+4
+1
+0
+
+.
+
+,
+
+9
+0
+0
+(
+
+.
+
+N
+
+(
+3
+5
+
+.
+
+0
+
+,
+
+4
+2
+0
+(
+
+.
+
+N
+
+(
+9
+2
+
+.
+
+0
+
+,
+
+5
+1
+0
+(
+
+.
+
+N
+
+(
+2
+7
+
+.
+
+0
+
+,
+
+6
+5
+0
+(
+
+.
+
+N
+
+(
+9
+2
+0
+
+.
+
+,
+
+6
+1
+0
+(
+
+.
+
+N
+
+(
+0
+3
+
+.
+
+0
+
+l
+o
+h
+o
+c
+l
+A
+
+g
+n
+i
+k
+o
+m
+S
+
+V
+H
+
+I
+
+s
+g
+u
+r
+D
+
+e
+c
+n
+a
+i
+l
+p
+m
+o
+c
+
+t
+n
+e
+m
+t
+a
+e
+r
+T
+
+g
+n
+i
+l
+b
+m
+a
+G
+
+r
+e
+t
+a
+
+W
+
+)
+2
+7
+
+.
+
+0
+
+,
+
+0
+3
+
+.
+
+0
+(
+
+)
+2
+7
+
+.
+
+0
+
+,
+
+0
+3
+
+.
+
+0
+(
+
+)
+5
+5
+
+.
+
+0
+
+,
+
+5
+0
+
+.
+
+0
+(
+
+)
+5
+5
+
+.
+
+0
+
+,
+
+5
+0
+0
+(
+
+.
+
+/
+n
+o
+i
+t
+a
+c
+ﬁ
+i
+r
+u
+p
+
+)
+8
+1
+
+=
+
+)
+1
+5
+
+.
+
+0
+
+N
+
+(
+1
+4
+
+.
+
+0
+
+,
+
+1
+3
+
+.
+
+0
+(
+
+)
+2
+
+)
+6
+1
+
+.
+
+)
+4
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+)
+9
+
+)
+4
+
+)
+1
+
+)
+2
+
+)
+9
+1
+
+.
+
+1
+
+)
+0
+9
+
+.
+
+0
+
+)
+3
+6
+
+.
+
+0
+
+N
+
+(
+1
+7
+
+.
+
+0
+
+,
+
+4
+2
+
+.
+
+0
+(
+
+N
+
+(
+1
+5
+
+.
+
+0
+
+,
+
+3
+1
+
+.
+
+0
+(
+
+N
+
+(
+2
+4
+
+.
+
+0
+
+,
+
+1
+2
+
+.
+
+0
+(
+
+N
+
+(
+4
+4
+
+.
+
+0
+
+,
+
+7
+2
+
+.
+
+0
+(
+
+N
+
+(
+1
+5
+
+.
+
+0
+
+)
+1
+
+=
+
+N
+
+)
+6
+2
+
+.
+
+)
+1
+
+=
+
+0
+
+,
+
+2
+4
+
+.
+
+(
+7
+0
+
+.
+
+0
+−
+
+(
+
+0
+−
+
+N
+
+(
+4
+1
+
+0
+−
+
+.
+
+0
+
+0
+
+,
+
+8
+0
+
+.
+
+N
+
+(
+4
+0
+
+0
+−
+
+(
+
+.
+
+0
+
+)
+5
+
+)
+1
+
+=
+
+N
+
+)
+6
+2
+
+.
+
+)
+1
+
+=
+
+0
+
+,
+
+2
+4
+
+.
+
+(
+7
+0
+
+.
+
+0
+−
+
+(
+
+0
+−
+
+N
+
+(
+4
+1
+
+0
+−
+
+.
+
+0
+
+)
+4
+4
+
+.
+
+0
+
+,
+
+6
+1
+
+.
+
+(
+
+)
+4
+4
+
+.
+
+0
+
+,
+
+6
+1
+
+.
+
+(
+
+)
+6
+1
+
+.
+
+1
+
+,
+
+1
+4
+
+.
+
+0
+(
+
+)
+6
+1
+
+.
+
+1
+
+,
+
+1
+4
+0
+(
+
+.
+
+.
+)
+s
+e
+i
+r
+o
+g
+e
+t
+a
+c
+n
+o
+s
+i
+r
+a
+p
+m
+o
+c
+
+o
+w
+
+t
+
+n
+i
+
+s
+e
+l
+b
+a
+i
+r
+a
+v
+e
+m
+o
+c
+t
+u
+o
+d
+a
+h
+s
+e
+i
+d
+u
+t
+s
+
+e
+m
+o
+s
+(
+
+n
+e
+k
+a
+t
+
+e
+r
+e
+w
+s
+e
+l
+b
+a
+i
+r
+a
+v
+h
+c
+i
+h
+w
+m
+o
+r
+f
+
+s
+e
+i
+d
+u
+t
+s
+
+f
+o
+r
+e
+b
+m
+u
+n
+e
+h
+t
+
+s
+t
+n
+e
+s
+e
+r
+p
+e
+r
+
+N
+
+;
+5
+0
+
+.
+
+0
+<
+p
+
+:
+e
+t
+o
+N
+
+∗
+
+)
+1
+
+=
+
+N
+
+)
+6
+2
+
+.
+
+)
+4
+
+=
+
+0
+
+,
+
+2
+4
+
+.
+
+(
+7
+0
+
+.
+
+0
+−
+
+(
+
+0
+−
+
+N
+
+(
+8
+7
+
+.
+
+0
+
+)
+1
+
+=
+
+)
+6
+2
+
+.
+
+)
+4
+
+=
+
+0
+
+,
+
+2
+4
+
+.
+
+N
+
+(
+8
+7
+
+.
+
+0
+
+N
+
+(
+7
+0
+
+.
+
+0
+−
+
+(
+
+0
+−
+
+y
+t
+e
+f
+a
+s
+
+g
+n
+i
+t
+a
+E
+
+r
+e
+d
+r
+o
+s
+i
+d
+
+e
+s
+i
+c
+r
+e
+x
+e
+
+d
+n
+a
+
+t
+e
+i
+D
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+98
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+In the analyzed studies, MI was seldom given alone, but was typically combined
+with feedback and often some other form of treatment. In 41 studies, treatment
+groups received MI or MI plus feedback only, whereas in 31 studies, MI was com-
+bined with some other type of intervention, including education, self-help manu-
+als, relapse prevention, cognitive therapy, skills training, Alcoholics Anonymous,
+stress management, and treatment as usual for the particular setting. Comparison
+groups also differed widely across studies. In 21 studies, MI was compared to a
+no-treatment or placebo condition. Five studies investigated the additive effects
+of MI to standard treatment, whereas six studies directly contrasted MI with an
+unspeciﬁed standard treatment. Seven studies investigated the effects of MI when
+added to another established treatment, twenty-ﬁve studies contrasted MI with an-
+other established treatment, six studies had mixed designs, and two studies solely
+investigated within-group change.
+As discussed above, all studies were coded for 12 dimensions of methodological
+quality, yielding methodological quality scores that ranged from 4 to 16 (mean =
+10.76, SD = 2.43), slightly higher than the mean score (10.68) reported for 361
+alcoholism clinical trials in general (Miller & Wilbourne 2003). In comparison to
+these 361 trials, studies of MI were more likely to report some form of intervention
+quality control (78% versus 57%) and to be multisite trials (28% versus 5%), but
+were less likely to follow clients for 12 months or longer (18% versus 51%) or to
+complete follow-up with 70% or more of enrolled participants (45% versus 75%).
+The duration of follow-up ranged from 0 to 60 months posttreatment (mean =
+8.8, SD = 10.28).
+
+All outcome variables for which effect sizes could be calculated were enumer-
+ated for each study. The number of reported outcome variables ranged from 1 to
+12 (mean = 3.3, SD = 2.3). To avoid capitalization on chance by the number of
+statistical tests conducted, we combined effect sizes across all reported outcome
+variables in each study.
+
+CHARACTERISTICS OF MOTIVATIONAL INTERVIEWING For full details of the char-
+acteristics of MI for each trial see the Supplemental Material link for Supplemental
+Table 2 in the online version of this chapter or at http://www.annualreviews.org/.
+Characteristics of MI were also coded for all studies. As a rough index of the degree
+to which each study had implemented MI, we coded whether interventions were
+speciﬁed as including the following components of MI: being collaborative, being
+client centered, being nonjudgmental, building trust, reducing resistance, increas-
+ing readiness to change, increasing self-efﬁcacy, increasing perceived discrepancy,
+engaging in reﬂective listening, eliciting change talk, exploring ambivalence, and
+listening empathically. The total number of these strategies reported to have been
+implemented in interventions identiﬁed as MI ranged from 0 to 12 (mean = 3.6,
+SD = 2.8).
+
+The duration of MI interventions also varied. In 68 studies that reported these
+data, MI duration ranged from 15 minutes to 12 hours, with an average dose of about
+two sessions (mean = 2.24 hours, SD = 2.15). When MI was combined with
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+99
+
+other treatment components, “duration” included only the time committed to MI.
+Comparison group treatment durations ranged from 0 to 28 hours (mean = 2.89,
+SD = 5.57). The difference in treatment duration between MI and comparison
+groups ranged from−25 hours (the comparison treatment was 25 hours longer than
+MI) to +6 hours [MI was 6 hours longer than the no-treatment control (mean =
+−0.48, SD = 4.9)].
+
+Of the 72 studies included in the analyses, most (74%) reported that the MI
+intervention had been standardized by a manual or a speciﬁc training. For 13
+studies that reported amount of training time, a mean of 9.92 (SD = 7.35) hours
+was spent in training. Only 26 studies (29%) provided any kind of posttraining
+support (such as supervision) for therapists, and only 21 studies (36%) included
+any form of competency or ﬁdelity assessment after initial training.
+
+MI was delivered in a variety of settings, including aftercare/outpatient clinics
+(15), inpatient facilities (11), educational settings (6), community organizations
+(6), general practitioner ofﬁces (5), prenatal clinics (3), emergency rooms (2),
+employee assistance programs (2), halfway houses (2), over the telephone (3), in
+patients’ homes (1), in jail (1), in mixed settings (7), or in unspeciﬁed treatment
+settings (8). The agents implementing the MI, when speciﬁed, included paraprofes-
+sionals or students (8), master’s level counselors (6), psychologists (6), nurses (3),
+physicians (2), dieticians (1), and modally a mix of varying levels of professionals
+(22).
+
+CHARACTERISTICS OF STUDY SAMPLES For full details of the characteristics of
+each trial sample see the Supplemental Material link for Supplemental Table 3
+in the online version of this chapter or at http://www.annualreviews.org/. The 72
+studies enrolled between 21 and 952 participants (mean = 198.16, SD = 204.39),
+for a total of 14,267 clients. On average, the samples included 54.77% males
+(range: 0%–100%), and ranged in age from 16 to 62 (mean = 34.11, SD = 8.96).
+Only 37 studies speciﬁed ethnic composition, of which 16 samples (43%) were
+comprised primarily of participants from U.S. minority groups, including 10 with
+predominantly or entirely African American samples. Problem severity varied
+widely, and eight samples speciﬁcally recruited participants with concomitant
+substance use and mental disorders.
+
+TREATMENT EFFECTS OF MOTIVATIONAL
+INTERVIEWING
+
+General Observations
+
+Before examining MI effects by target problem areas, we offer some broad observa-
+tions from our analysis of 72 outcome studies. The effect sizes for each variable at
+every follow-up point is available at the Supplemental Material link for Supplemen-
+tal Table 4 in the online version of this chapter or at http://www.annualreviews.org/.
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+100
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+First of these observations is the wide variability in effect sizes across studies, even
+within problem areas. In studies of alcohol abuse, for example, although most tri-
+als have reported statistically signiﬁcant effects of MI, the observed effect sizes
+have varied from dc = 0 to more than 3.0 (where dc = 1.0 represents a between-
+group difference of one standard deviation). This means that in using ostensibly the
+same treatment method (MI) with the same target problem, very different effects
+are obtained across sites and populations. In Project MATCH, a nine-site study
+of treatments for alcohol use disorders, the relative efﬁcacy of an MI-based inter-
+vention varied signiﬁcantly across sites and therapists despite extensive efforts to
+standardize training and treatment procedures (Project MATCH Research Group
+1998). Thus, it appears that variation in the delivery of MI can have substantial
+impact on its outcome.
+
+A second broad observation is that an effect of MI tends to be seen early and to
+diminish across a year of follow-up. To examine this, we combined effects for all
+variables from all studies within speciﬁc follow-up period ranges. As displayed in
+Figure 1, relative effect sizes for MI decrease across time. Across all studies, dc
+was 0.77 (95% conﬁdence interval: 0.35, 1.19) at 0 to 1 month posttreatment, 0.39
+(0.27, 0.50) at >1 to 3 months, 0.31 (0.23, 0.38) at >3 to 6 months, 0.30 (0.16, 0.43)
+at >6 to 12 months, and 0.11 (0.06, 0.17) at follow-ups longer than 12 months. An
+interesting exception to this trend, seen in Figure 1, is found in studies where the
+additive effect of MI is tested. In these studies, clients are typically randomized to
+receive or not to receive MI at the beginning of a standard or speciﬁed treatment
+
+Figure 1 Combined effect sizes of motivational interviewing across follow-up
+intervals.
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+101
+
+program. In this case, the effect of MI in improving outcome is maintained or
+increased over time, hovering around dc = 0.60.
+
+Outcome variability, however, makes it difﬁcult to specify a meaningful average
+effect size for MI without regard to problem domain, population, interventionists,
+or follow-up duration. A full table of combined between-group effect sizes for each
+included study can be viewed online. See the Supplemental Material link in the
+online version of this chapter or at http://www.annualreviews.org/. The combined
+effect sizes (pooling across outcome variables and follow-up points) for individual
+studies ranged from −0.19 to 3.25 (mean = 0.43, SD = 0.62). Using dc for all
+reported outcome variables across all follow-up points, 38 of the studies (53%)
+showed a signiﬁcant effect favoring MI (p < 0.05).
+
+Correlates of Effect Size
+
+STUDY CHARACTERISTICS We also examined relationships between observed com-
+bined effect size (dc) and a number of study attributes as potential moderators of
+outcome. In regression as well as correlational analyses, we found no signiﬁ-
+cant relationship between dc and study characteristics including methodological
+quality, number of outcome variables, longest follow-up point, MI purity, type of
+comparison group, or problem area.
+
+In multiple regression analyses, we found that dc was not
+MI CHARACTERISTICS
+signiﬁcantly predicted by our measures of MI duration, purity, counselor training,
+or posttraining support. Of MI delivery characteristics, only the presence of a
+manual was signiﬁcantly related to outcome, predicting 8.5% of the variance in dc
+(β = −0.292, p < 0.05). The direction of this difference was such that studies not
+reporting use of a manual had a mean dc = 0.65 (SD = 0.62), whereas those
+standardizing treatment with a manual reported a mean dc = 0.37 (SD = 0.62). A
+follow-up independent sample t-test reﬂected this difference as a trend (t = 1.53,
+p = 0.28). It should be noted that no studies provided data allowing for within-
+study comparison of manual-guided versus nonmanual-guided MI. Because the
+evidence that manual-guided treatments are associated with smaller effect size
+comes solely from between-study comparisons, it is possible that other important
+differences between studies exist.
+
+SAMPLE CHARACTERISTICS Similarly, we regressed dc onto study sample charac-
+teristics including mean age, gender composition, ethnic composition, and problem
+severity. Only ethnic composition signiﬁcantly predicted dc, accounting for 19% of
+variance (β = 0.434, p < 0.05). A follow-up test (t = −0.39, p < 0.05) revealed
+that effects of MI were signiﬁcantly larger for minority samples (M dc = 0.79)
+than for non-minority white samples (M dc = 0.26).
+
+OUTCOME MEASURES Within behavioral domains, studies utilized a wide vari-
+ety of treatment outcome measures. Although most behavioral domains had too
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+102
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+few studies and too many different outcome variables to form meaningful groups,
+alcohol outcome variables could be divided into quantity, frequency, intoxica-
+tion (blood alcohol concentration, or BAC) level, and alcohol-related problems
+categories. Combined effect sizes were determined for each of these variables
+across studies and follow-up points. A dc = 0.30 (0.09, 0.52; p < 0.05) was found
+for quantity variables, dc = 0.31 (0.18, 0.44; p < 0.05) for frequency variables,
+dc = 0.22 (0.10, 0.34; p < 0.05) for BAC variables, and dc = 0.08 (−0.02, 0.19;
+p > 0.05) for alcohol-related problems. For smoking studies, a dc = 0.15 (−0.06,
+0.23; p < 0.05) was found for abstinence outcome variables, and dc = 0.11 (0.00,
+0.21; p > 0.05) for quit attempt variables. Variables from HIV studies could be
+divided into knowledge with dc = 1.46 (−0.54, 3.45; p > 0.05), behavioral inten-
+tions with dc = 0.88 (0.05, 1.72; p < 0.05), and sexual risk behaviors with dc =
+0.07 (−0.05, 0.19; p > 0.05).
+
+Effects of Motivational Interviewing by Problem Domain
+
+Table 1 provides a concise summary of effect sizes, combined across outcome
+variables, for studies of MI in various problem domains. In contrast to the above-
+reported analyses (Figure 1), which showed substantial reduction in dc over time,
+Table 1 provides separate dc means in the short-term (up to three-month follow-
+up), and then combined across all follow-up points. Combined effect sizes are
+further subdivided based on the nature of the comparison group: (a) MI versus no
+treatment or placebo, (b) MI versus no MI added to standard or speciﬁed treatment,
+or (c) MI contrasted with a standard or speciﬁed treatment. For studies with mixed
+comparisons, individual variables were selected based on comparison type, and
+were categorized appropriately.
+
+In terms of volume of studies, the strongest support by
+ADDICTIVE BEHAVIORS
+far for MI efﬁcacy is in the area for which it was originally designed: altering
+substance use (Miller 1983). A total of 32 trials have focused on alcohol abuse,
+yielding dc values ranging from −0.08 to 3.07, with a mean of 0.41 posttreat-
+ment, and 0.26 across all follow-up points. The largest effects (all >0.7) were
+reported in studies comparing MI with no treatment (Gentilello et al. 1999), a
+wait-list control (Kelly et al. 2000) or education (Graeber et al. 2003), or adding
+MI to standard treatment (Aubrey 1998, Brown & Miller 1993). An additional
+13 trials tested the between-group effect of MI in addressing illicit drug use,
+again with a large range of effects (0 to 1.81). Here effect sizes on average
+were larger at early than at later follow-ups (0.51 versus 0.29). Curiously, MI
+appears to have been largely unsuccessful to date in promoting smoking ces-
+sation. Six MI trials yielded only one small effect collapsing across outcome
+variables (Butler et al. 1999). We are aware, however, of several unpublished pos-
+itive trials that may soon alter this picture with regard to smoking. One study
+reported signiﬁcant effects of MI in treating pathological gambling (Hodgins et al.
+2001).
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+103
+
+HEALTH BEHAVIORS MI has also been tested with other health behaviors in the
+context of health promotion (Miller 2004). Large but inconsistent effects (dc from
+−0.19 to 3.25) have been reported in ﬁve trials of MI for HIV risk reduction.
+Thevos and colleagues have reported large effects of MI to encourage the adop-
+tion of water puriﬁcation/safety technology in rural African villages (Thevos et al.
+2000, 2002/2003). Encouraging effects have also been reported for MI in promot-
+ing adherence to diet and exercise programs. A single study found no difference
+between MI and brief behavior therapy in treating bulimia.
+
+TREATMENT ADHERENCE Finally, several studies have reported large effects of
+MI in promoting treatment engagement, retention, and adherence. As noted above,
+the effects of MI appear to persist or increase over time when added to an active
+treatment.
+
+DISCUSSION
+
+Across a growing array of problem areas, MI generally shows small to medium
+effects in improving health outcomes. As a stand-alone brief intervention, MI has
+been particularly well tested and found promising in addressing addictive behav-
+iors, with the notable exception (to date) of smoking cessation. Further research is
+needed to determine the reliability of and possible explanations for the discrepant
+ﬁndings observed for smoking behaviors. Applications to health behavior, partic-
+ularly in the management of chronic illnesses, have been expanding rapidly, and
+initial trials suggest similar beneﬁt to that observed with addictive behaviors.
+
+It is clear, however, that MI as practiced in trials to date does not consistently
+improve outcome. Even among studies focused on the same problem domain, high
+variability exists in effects across studies and therapists.
+
+An obvious research direction, therefore, is to identify factors that inﬂuence the
+effectiveness of MI, including speciﬁc factors that mediate and moderate its effects.
+With a reasonable base of clinical trials supporting speciﬁc efﬁcacy, research has
+recently turned to a search for “active ingredients” and aspects of MI delivery that
+inﬂuence outcomes. This search has been impeded, however, because few studies
+have detailed how interventionists were trained, provided documentation of the
+ﬁdelity of delivery of MI, or included process measures to relate to outcomes (Burke
+et al. 2002). In some cases (e.g., Kuchipudi et al. 1990), the brief descriptions of
+treatment delivered as MI appear to be inconsistent with the spirit and principles
+described by its progenitors (Rollnick & Miller 1995). Progress toward a theory
+of MI efﬁcacy is brieﬂy discussed in the ﬁnal section of this chapter.
+
+Treatment Adherence
+
+Several trends emerged from our meta-analysis. One is that relatively high effect
+sizes are often observed when MI is added at the outset of a treatment program,
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+104
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+including unspeciﬁed “treatment as usual” (Aubrey 1998, Brown & Miller 1993,
+Daley et al. 1998). This is somewhat counterintuitive, in that larger effect sizes
+might be expected when MI is compared with no treatment, rather than having
+to exert an additive effect above active treatment. Signiﬁcant improvement in
+treatment outcome when MI is added appears to be attributable to its effects on
+treatment retention and adherence. In a randomized trial, Brown & Miller (1993)
+found that therapists in an inpatient substance abuse treatment program who were
+unaware of which patients had received MI, reliably rated the MI group as more
+motivated and adherent and as having better prognosis. These therapist ratings, in
+turn, mediated the effect of MI in doubling posttreatment abstinence rates. Large
+effects are also reported when treatment retention and adherence are the speciﬁc
+targets of MI. Aubrey (1998) reported a doubling of outpatient substance abuse
+treatment sessions attended by adolescents given a single session of MI at intake,
+as well as a doubling of three-month abstinence rates.
+
+Immediacy of Effect
+
+Controlled trials also commonly report a rapid impact of MI, with a gradual de-
+crease of effect size across time. This is, of course, a common ﬁnding for dis-
+crete interventions. During eight weeks of drug administration, for example, a
+medication may yield signiﬁcant beneﬁts that subsequently fade after dosing is
+discontinued. In part, this decrease in between-group effects is attributable to a
+“catching up” of the control/comparison groups with which MI is compared. If
+MI is offered as a stand-alone intervention, long-term effects may be enhanced
+by booster sessions or stepped care. When MI is used as a prelude to treatment,
+however, its effects appear to endure across time, suggesting a synergistic effect
+of MI with other treatment procedures.
+
+Are Manuals a Good Idea?
+
+An unexpected ﬁnding of our meta-analysis was the relationship between effect
+size and the use of manuals to guide MI delivery. Our ﬁnding that manual-guided
+MI was associated with smaller effect sizes bears replication and further explo-
+ration.
+
+We have had, however, one salient experience related to manual-guided MI. Fol-
+lowing a series of ﬁndings that an early MI session improves treatment outcomes,
+we conducted a large randomized trial in two public substance abuse treatment
+programs (Miller et al. 2003). Clients were randomly assigned to receive or not to
+receive a single session of MI shortly after treatment intake. The MI was manual
+guided and participants were followed for one year. Contrary to prior trials, we
+found no signiﬁcant beneﬁt of MI.
+
+Subsequent psycholinguistic analyses of these MI sessions revealed an informa-
+tive pattern (Amrhein et al. 2003). Clients who subsequently abstained from drug
+use during follow-up had shown a characteristic pattern of increasing motivation for
+and commitment to abstinence over the course of the MI session. Nonresponders,
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+105
+
+in contrast, showed a similar increase in motivation and commitment, which sud-
+denly reversed in the ﬁnal minutes of the session and crashed back to zero. What
+happened? The treatment manual, designed to complete MI in one session, in-
+structed therapists to end the session by constructing a concrete behavior change
+plan regardless of whether the client seemed ready to do so. This would have the
+predictable (but unanticipated) effect, during the closing minutes of the session,
+of eliciting resistance from clients who were less ready for change, which in turn
+would be expected to undermine behavior change. The problem, it seems, is that
+the therapists did exactly what the manual instructed them to do, pressing forward
+to complete the change plan even if the client resisted, which is itself a violation
+of good MI practice.
+
+Matching Indications
+
+Another unexpected result of our meta-analysis was the ﬁnding of larger effects of
+MI with U.S. samples comprised primarily or exclusively of people from ethnic
+minority groups. We have no theoretical explanation for this ﬁnding, but it does
+converge with a recently completed reanalysis of data from a multisite alcoholism
+treatment trial (Villanueva et al. 2003). Analyzing treatment data for only Native
+American participants in Project MATCH, we found signiﬁcantly better outcome
+for those assigned to 4-session MI (motivational enhancement therapy) than for
+those assigned to 12-session cognitive-behavior therapy or 12-step facilitation
+therapy. Our informal experience in MI training with Native American populations
+suggests that the client-centered, supportive, and nonconfrontational style of MI
+may resemble the normative communication style of Indian populations, at least in
+the American Southwest, thereby representing a culturally congruent intervention.
+Similar analyses, however, failed to ﬁnd an advantage for MI in African American
+(Tonigan et al. 2003) or Hispanic American (Arroyo et al. 2003) clients.
+
+MI also appears to be differentially effective with clients who are more angry and
+resistant, or less ready for change (Heather et al. 1996, Project MATCH Research
+Group 1997). This is consistent with the original intent and theoretical rationale
+for MI. Conversely, MI may be contraindicated for clients who are already clearly
+committed to change and ready for action.
+
+TOWARD A THEORY OF MOTIVATIONAL
+INTERVIEWING
+
+The high variability of effect sizes combined with the frequency of observed sig-
+niﬁcant effects indicates that MI is an active treatment, but that the mechanisms
+of action are not well understood. Our crude measure of MI purity (the number
+of MI-particular components mentioned in an article) failed to predict effect size.
+Although there are clear therapist differences in effectiveness in delivering MI, we
+have been unsuccessful in predicting MI proﬁciency from personal characteristics
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+106
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+of counselors (Project MATCH Research Group 1998). This suggests that it may be
+fruitful to examine therapeutic processes occurring within MI sessions, as possible
+correlates of treatment outcome.
+
+In its origins (Miller 1983), MI was not derived from theory, but rather it
+arose from speciﬁcation of principles underlying intuitive clinical practice. The
+client-centered phenomenological perspective of Carl Rogers (1959), which was
+clearly inﬂuential as a guiding spirit of MI, emphasized empathic understanding
+and radical acceptance as triggers for change. Early conceptual ties were also made
+to cognitive dissonance (Festinger 1957) and self-perception theory (Bem 1972),
+based on the reasoning that when people verbally justify behavior change they are
+more likely to follow through with it (Miller & Rollnick 1991).
+
+MI places strong emphasis on eliciting the client’s own perceptions, values, and
+motivations for change. In Socratic fashion, it should be the client rather than the
+counselor who makes the arguments for change. The reasoning behind this is that
+people in need of change, including those who present for formal treatment, are
+normally also ambivalent about change. A counselor who advocates for change
+is likely to elicit from the client the opposite (resistance) side of the client’s own
+ambivalence. That might be harmless enough, except for the robust ﬁnding that
+people tend to become more committed to positions that they defend verbally (Bem
+1967). Thus, people can literally talk themselves out of (or into) behavior change.
+Therefore, counselors should act in a manner that calls forth the prochange side
+of client ambivalence, the side that elicits the client’s own motivations for change.
+Conversely, counselors should assiduously avoid the position in which they argue
+for change while the client argues against it. MI is, in essence, both a counseling
+style and a set of clinical strategies and skills for evoking change talk from clients,
+and for defusing resistance when it arises (Miller & Rollnick 2002).
+
+Over the two decades since MI was introduced, data have shaped an emergent
+theory of the inner workings of this approach. In simplest form, the theory is
+expressed in three hypotheses:
+
+1. Counselors who practice MI will elicit increased levels of change talk and
+decreased levels of resistance from clients, relative to more overtly directive
+or confrontational counseling styles.
+
+2. The extent to which clients verbalize arguments against change (resistance)
+during MI will be inversely related to the degree of subsequent behavior
+change.
+
+3. The extent to which clients verbalize change talk (arguments for change)
+during MI will be directly related to the degree of subsequent behavior
+change.
+
+We have found strong support for the ﬁrst two of these hypotheses. MI does
+roughly double the rate of change talk and halve the rate of resistance, relative to
+action-focused counseling or confrontation (Miller et al. 1993). The counseling
+skill of accurate empathy (Truax & Carkhuff 1967) has been particularly linked
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+107
+
+to improved outcomes in treating alcohol problems (Miller & Baca 1983, Miller
+et al. 1980, Valle 1981). We also have found that frequency of client resistance
+predicted continued drinking after treatment (Miller et al. 1993). Thus, client
+responses appear to be highly inﬂuenced by counselor style, and in turn predict
+treatment outcome.
+
+We consistently failed to ﬁnd support, however, for the third hypothesis—that
+increased client change talk would predict behavior change. Frequency of change
+talk statements, which we usually measured during the ﬁrst 20 minutes of an MI
+session, was unrelated to subsequent behavioral outcomes. This obviously posed
+a serious problem for the ﬂedgling theory of MI.
+
+Collaboration with psycholinguist Paul Amrhein led to a different approach
+to analyzing client speech. Amrhein suggested that we had been combining too
+many speech events in our single concept of change talk, and recommended disag-
+gregating it into natural language components: desire, ability, reasons, need, and
+commitment. He analyzed more than 100 entire MI sessions, meticulously coding
+each client utterance for these speech events. In addition to counting them (fre-
+quency), he also rated the strength of motivation reﬂected in the client’s speech.
+To say, “I’ll think about it,” or “I’ll try,” for example, reﬂects a much lower level
+of commitment than “I promise” or “I will.”
+
+The results were striking (Amrhein et al. 2003). Only one of the subtypes of
+change talk—commitment—predicted behavior change. Furthermore, it was not
+the frequency but rather the strength of commitment language, and more par-
+ticularly the pattern of commitment across the session, that robustly predicted
+behavioral outcomes, in this case, drug abstinence. Desire, ability, reasons, and
+need did not predict change, but all four did predict the emergence of commit-
+ment, which in turn was prognostic of change. His psycholinguistic ﬁndings gave
+substance to the early intuitive distinction between two phases of MI (Miller &
+Rollnick 1991). In phase 1 of MI, the goal is to enhance motivation for change
+by eliciting the client’s statements of desire, ability, reasons, and need for change.
+Then in phase 2, the focus shifts to strengthening commitment to change. Am-
+rhein’s ﬁndings also converge with the commonsense precept that people tend to
+ﬁnd their own verbalizations persuasive for guiding their behavior (Bem 1967,
+Hosford et al. 1995), and with more recent ﬁnding that stated implementation
+intentions predict behavioral follow-through, particularly when accompanied by
+a speciﬁc plan for carrying out the change (Gollwitzer 1999). These psycholin-
+guistic data provided a missing piece in the emergent theory of MI, supporting
+the link between client in-session speech and posttreatment outcomes. We had
+been measuring the wrong statistic (intercept rather than slope) for the wrong
+metric (frequency instead of intensity) of the wrong dependent variable (generic
+change talk rather than commitment), and in the wrong portion of MI sessions
+(beginning rather than ending). The client’s starting level of motivation in an MI
+session was unrelated to outcome; it was commitment strength during the ﬁnal min-
+utes of the session that most strongly predicted behavior change (Amrhein et al.
+2003).
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+108
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+LEARNING MOTIVATIONAL INTERVIEWING
+
+Finally, research has addressed the question of optimal methods for helping clin-
+icians to learn the intervention style of MI. Trainers are often asked to teach MI
+in periods varying from one hour to one day, and counselors sometimes attend
+such training in the hope of learning a few tricks to make clients do what they
+want them to do. MI is nothing of the sort. Rather, it is a complex clinical style for
+eliciting the client’s own values and motivations for change. It is far more about
+listening than telling, about evoking rather than instilling. MI communicates not,
+“I have what you need,” but instead, “You have what you need, and together we will
+ﬁnd it.”
+
+The most familiar vehicle for continuing professional education is the expert
+workshop, which in MI is often offered over the course of two full days. How
+effective are such workshops in increasing clinician proﬁciency in MI? This was the
+question addressed in an evaluation of a two-day workshop offered by Miller, with
+outcomes assessed not only by clinician self-report but also by practice samples
+obtained before and after training (Miller & Mount 2001). Participants submitted
+tape recordings of their counseling with actual clients prior to and several months
+after the workshop and interacted with a standard-patient actor to demonstrate
+their posttraining skill acquisition. After training, the clinicians showed modest
+albeit statistically signiﬁcant increases in MI-congruent practice behavior, but not
+enough to make any difference in how their clients responded. Clients showed no
+change in levels of resistance or change talk after the clinicians were trained. On
+self-report, however, workshop participants reported conﬁdence that they were now
+reasonably proﬁcient in MI and were implementing it in practice. Such glowing
+self-reports of beneﬁt from training are common (Rubel et al. 2000), but proved
+to be uncorrelated with actual increases in proﬁciency (Miller & Mount 2001).
+
+In a subsequent trial of training methods, clinicians who wanted to learn MI were
+randomly assigned to receive or not to receive, in addition to the two-day workshop,
+one or both of two aids for learning: speciﬁc proﬁciency feedback from practice
+tapes, and six expert coaching consultations by telephone (Miller et al. 2005).
+A wait-list control group was given the MI book and training videotapes (Miller
+et al. 1998) and asked to improve their MI skills on their own, prior to attending
+the workshop. Based on Amrhein’s ﬁndings reported above, we also changed our
+training to a learning-to-learn format. We instructed trainees that they would not
+be skillful in MI by the end of the workshop, but that if we were successful they
+would know how to learn MI from their clients. Speciﬁc emphasis was placed
+on recognizing client speech events (change talk, commitment, resistance) that
+are relevant to behavioral outcomes, and using these as differential cues to shape
+successful practice.
+
+As before, those receiving only the workshop showed modest gains in MI skills,
+and did not reach proﬁciency thresholds required for therapists in a clinical trial.
+Clinicians working on their own from MI tapes and book showed little improve-
+ment in skillfulness. Either or both of the training aids, however, signiﬁcantly
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+109
+
+improved post-workshop MI proﬁciency, and participants in these groups on av-
+erage reached levels required for clinical trial certiﬁcation.
+
+SUMMARY
+
+The evidence base for motivational interviewing is strong in the areas of addictive
+and health behaviors. Useful as a brief intervention in itself, MI also appears to
+improve outcomes when added to other treatment approaches. New research is
+clarifying the causal processes underlying the efﬁcacy of motivational interview-
+ing, and exploring optimal methods for helping practitioners to develop proﬁciency
+in this clinical method.
+
+The Annual Review of Clinical Psychology is online at
+
+http://clinpsy.annualreviews.org
+
+LITERATURE CITED
+
+Amrhein PC, Miller WR, Yahne CE, Palmer
+M, Fulcher L. 2003. Client commitment lan-
+guage during motivational interviewing pre-
+dicts drug use outcomes. J. Consult. Clin.
+Psychol. 71:862–78
+
+Arroyo JA, Miller WR, Tonigan JS. 2003. The
+inﬂuence of Hispanic ethnicity on long-term
+outcome in three alcohol treatment modali-
+ties. J. Stud. Alcohol 64:98–104
+
+Aubrey LL. 1998. Motivational interviewing
+with adolescents presenting for outpatient
+substance abuse treatment. Unpubl. doctoral
+dissert., Univ. New Mexico, Albuquerque
+
+Bem DJ. 1967. Self-perception: an alternative
+interpretation of cognitive dissonance phe-
+nomena. Psychol. Rev. 74:183–200
+
+Bem DJ. 1972. Self-perception theory. In Ad-
+vances in Experimental Social Psychology,
+ed. L Berkowitz, 6:1–62. New York: Aca-
+demic
+
+Bien TH, Miller WR, Tonigan JS. 1993. Brief
+interventions for alcohol problems: a review.
+Addiction 88:315–36
+
+Brown JM, Miller WR. 1993. Impact of mo-
+tivational interviewing on participation and
+outcome in residential alcoholism treatment.
+Psychol. Addict. Behav. 7:211–18
+
+Burke BL, Arkowitz H, Dunn C. 2002. The
+
+efﬁcacy of motivational interviewing on par-
+ticipation and outcome in residential alco-
+holism treatment. In Motivational Interview-
+ing: Preparing People for Change, ed. WR
+Miller, S Rollnick, 2:217–50. New York:
+Guilford. 2nd ed.
+
+Burke BL, Arkowitz H, Menchola M. 2003.
+The efﬁcacy of motivational interviewing: a
+meta-analysis of controlled clinical trials. J.
+Consult. Clin. Psychol. 71:843–61
+
+Butler CC, Rollnick S, Cohen D, Bachmann M,
+Russell I, et al. 1999. Motivational consult-
+ing versus brief advice for smokers in gen-
+eral practice: a randomized trial. Br. J. Gen.
+Pract. 49:611–16
+
+Daley DC, Salloum IM, Suckoff A, Kirisci L,
+Thase ME. 1998. Increasing treatment adher-
+ence among outpatients with depression and
+cocaine dependence: results of a pilot study.
+Am. J. Psychiatry 155:1611–13
+
+Dunn C, Deroo L, Rivara FP. 2001. The use
+of brief interventions adapted from moti-
+vational interviewing across behavioral do-
+mains: a systematic review. Addiction 96:
+1725–42
+
+Festinger L. 1957. A Theory of Cognitive Dis-
+sonance. Stanford, CA: Stanford Univ. Press
+Gentilello LM, Rivara FP, Donovan DM,
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+110
+
+HETTEMA (cid:1) STEELE (cid:1) MILLER
+
+Jurkovich GJ, Duranciang E, et al. 1999. Al-
+cohol interventions in a trauma center as a
+means of reducing the risk of injury recur-
+rence. Ann. Surg. 230:473–83
+
+Gollwitzer PM. 1999. Implementation inten-
+tions: simple effects of simple plans. Am.
+Psychol. 54:493–503
+
+Graeber DA, Moyers TB, Grifﬁth G, Guajardo
+E, Tonigan JS. 2003. A pilot study comparing
+motivational interviewing and an educational
+intervention in patients with schizophrenia
+and alcohol use disorders. Community Ment.
+Health J. 39:189–202
+
+Heather N, Rollnick S, Bell A, Richmond R.
+1996. Effects of brief counseling among
+heavy drinkers identiﬁed on general hospi-
+tal wards. Drug Alcohol Rev. 15:29–38
+
+Hedges LV, Olkin I. 1985. Statistical Meth-
+ods for Meta-Analysis. San Diego, CA: Aca-
+demic
+
+Hodgins DC, Currie SR, el-Guebaly N. 2001.
+Motivational enhancement and self-help
+treatments for problem gambling. J. Consult.
+Clin. Psychol. 69:50–57
+
+Hosford RE, Moss CS, Morrell G. 1995. The
+self-as-model technique: helping prison in-
+mates change. In Counseling Methods, ed. JD
+Krumboltz, CE Thoresen, pp. 487–95. New
+York: Holt, Rinehart & Winston
+
+Kelly AB, Halford WK, Young RM. 2000. Mar-
+itally distressed women with alcohol prob-
+lems: the impact of a short-term alcohol-
+focused intervention on drinking behaviour
+and marital satisfaction. Addiction 95:1537–
+49
+
+Kuchipudi V, Hobein K, Flickinger A. 1990.
+Failure of a 2-hour motivational interview
+to alter recurrent drinking behavior in alco-
+holics with gastrointestinal disease. J. Stud.
+Alcohol 51:356–60
+
+Miller WR. 1983. Motivational interviewing
+with problem drinkers. Behav. Psychother.
+11:147–72
+
+Miller WR. 1994. Motivational interviewing:
+III. On the ethics of motivational
+inter-
+vention. Behav. Cogn. Psychother. 22:111–
+23
+
+Miller WR. 2004. Motivational interviewing
+
+in the service of health promotion. Am. J.
+Health Promot. 18:1–10
+
+Miller WR, Baca LM. 1983. Two-year follow-
+up of bibliotherapy and therapist-directed
+controlled drinking training for problem
+drinkers. Behav. Ther. 14:441–48
+
+Miller WR, Beneﬁeld RG, Tonigan JS. 1993.
+Enhancing motivation for change in prob-
+lem drinking: a controlled comparison of two
+therapist styles. J. Consult. Clin. Psychol.
+61:455–61
+
+Miller WR, Mount KA. 2001. A small study of
+training in motivational interviewing: Does
+one workshop change clinician and client be-
+havior? Behav. Cogn. Psychother. 29:457–71
+Miller WR, Rollnick S. 1991. Motivational In-
+terviewing: Preparing People to Change Ad-
+dictive Behavior. New York: Guilford
+
+Miller WR, Rollnick S. 2002. Motivational In-
+terviewing: Preparing People for Change,
+Vol. 2. New York: Guilford
+
+Miller WR, Rollnick S, Moyers TB. 1998. Moti-
+vational interviewing (7-videotape ser.). Al-
+buquerque: Univ. New Mexico
+
+Miller WR, Taylor CA, West JC. 1980. Focused
+versus broad-spectrum behavior therapy for
+problem drinkers. J. Consult. Clin. Psychol.
+48:590–601
+
+Miller WR, Wilbourne PL. 2003. Mesa grande:
+a methodological analysis of clinical trials of
+treatments for alcohol use disorders. Addic-
+tion 97:265–77
+
+Miller WR, Yahne CE, Moyers TB, Martinez
+J, Pirritano M. 2005. A randomized trial of
+methods to help clinicians learn motivational
+interviewing. J. Consult. Clin. Psychol. In
+press
+
+Miller WR, Yahne CE, Tonigan JS. 2003. Moti-
+vational interviewing in drug abuse services:
+a randomized trial. J. Consult. Clin. Psychol.
+71:754–63
+
+Miller WR, Zweben A, DiClemente CC,
+Rychtarik C. 1992. Motivational Enhance-
+ment Therapy manual: a clinical research
+guide for therapists treating individuals with
+alcohol abuse and dependence. Vol. 2, Proj.
+MATCH Monogr. Ser. Rockville, MD: Natl.
+Inst. Alcohol Abuse Alcohol.
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.16 Feb 2005 17:3
+
+AR
+
+AR240-CP01-04.tex
+
+XMLPublishSM(2004/02/24)
+
+P1: JRX
+
+MOTIVATIONAL INTERVIEWING
+
+111
+
+Prochaska JO, DiClemente CC. 1984. The
+Transtheoritical Approach: Crossing Tradi-
+tional Boundaries of Therapy. Homewood,
+IL: Dow/Jones Irwin
+
+Proj. MATCH Res. Group. 1997. Project
+MATCH secondary a priori hypotheses. Ad-
+diction 92:1671–98
+
+Proj. MATCH Res. Group. 1998. Therapist ef-
+fects in three treatments for alcohol prob-
+lems. Psychother. Res. 8:455–74
+
+Rogers CR. 1959. A theory of therapy, person-
+ality, and interpersonal relationships as de-
+veloped in the client-centered framework. In
+Psychology: The Study of a Science, ed. P
+Koch, 3:184–256. New York: McGraw-Hill
+Rollnick S, Miller WR. 1995. What is mo-
+tivational interviewing? Behav. Cogn. Psy-
+chother. 23:325–34
+
+Rosenthal R. 1991. Meta-Analytic Procedures
+for Social Research. Newbury Park, CA:
+Sage
+
+Rubel EC, Sobell LC, Miller WR. 2000. Do
+continuing education workshops improve
+participants’ skills? Effects of a motivational
+interviewing workshop on substance abuse
+counselors’ skills and knowledge. Behav.
+Ther. 23:73–77
+
+Thevos AK, Olsen SJ, Rangel JM, Kaona FAD,
+Tembo M, et al. 2002/2003. Social market-
+
+ing and motivational interviewing as commu-
+nity interventions for safe water behaviors:
+follow-up surveys in Zambia. Int. Q. Com-
+munity Health Educ. 21:51–65
+
+Thevos AK, Quick RE, Yanjuli V. 2000. Moti-
+vational interviewing enhances the adoption
+of water disinfection practices in Zambia.
+Health Promot. Int. 15:207–14
+
+Tonigan JS, Miller WR, Daugherty M, Car-
+roll RL. 2003. Project MATCH treatment
+participation and outcome by race: a retro-
+spective analysis of African American treat-
+ment response. Alcohol. Clin. Exp. Res.
+27(Suppl.):A159
+
+Truax CB. 1966. Reinforcement and non-
+reinforcement in Rogerian psychotherapy. J.
+Abnorm. Psychol. 71:1–9
+
+Truax CB, Carkhuff RR. 1967. Toward Effective
+Counseling and Psychotherapy. Chicago:
+Aldine
+
+Valle SK. 1981. Interpersonal functioning of al-
+coholism counselors and treatment outcome.
+J. Stud. Alcohol 42:783–90
+
+Villanueva M, Tonigan JS, Miller WR.
+2003. A retrospective study of client-
+treatment matching: differential treatment re-
+sponse of Native American alcoholics in
+Project MATCH. Alcohol. Clin. Exp. Res.
+26(Suppl.):A83
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.P1: JRX
+February 26, 2005
+
+19:35
+
+Annual Reviews
+
+AR240-FM
+
+Annual Review of Clinical Psychology
+
+Volume 1, 2005
+
+CONTENTS
+
+A HISTORY OF CLINICAL PSYCHOLOGY AS A PROFESSION IN AMERICA
+
+(AND A GLIMPSE AT ITS FUTURE), Ludy T. Benjamin, Jr.
+
+STRUCTURAL EQUATION MODELING: STRENGTHS, LIMITATIONS,
+AND MISCONCEPTIONS, Andrew J. Tomarken and Niels G. Waller
+CLINICAL JUDGMENT AND DECISION MAKING, Howard N. Garb
+MOTIVATIONAL INTERVIEWING, Jennifer Hettema, Julie Steele,
+
+and William R. Miller
+
+STATE OF THE SCIENCE ON PSYCHOSOCIAL INTERVENTIONS FOR
+
+ETHNIC MINORITIES, Jeanne Miranda, Guillermo Bernal, Anna Lau,
+Laura Kohn, Wei-Chin Hwang, and Teresa La Fromboise
+
+CULTURAL DIFFERENCES IN ACCESS TO CARE, Lonnie R. Snowden
+
+and Ann-Marie Yamada
+
+COGNITIVE VULNERABILITY TO EMOTIONAL DISORDERS,
+
+Andrew Mathews and Colin MacLeod
+
+PANIC DISORDER, PHOBIAS, AND GENERALIZED ANXIETY DISORDER,
+
+Michelle G. Craske and Allison M. Waters
+
+DISSOCIATIVE DISORDERS, John F. Kihlstrom
+THE PSYCHOBIOLOGY OF DEPRESSION AND RESILIENCE TO STRESS:
+
+IMPLICATIONS FOR PREVENTION AND TREATMENT,
+Steven M. Southwick, Meena Vythilingam, and Dennis S. Charney
+
+STRESS AND DEPRESSION, Constance Hammen
+THE COGNITIVE NEUROSCIENCE OF SCHIZOPHRENIA, Deanna M. Barch
+CATEGORICAL AND DIMENSIONAL MODELS OF PERSONALITY
+
+DISORDER, Timothy J. Trull and Christine A. Durrett
+
+THE DEVELOPMENT OF PSYCHOPATHY, Donald R. Lynam
+
+and Lauren Gudonis
+
+CHILD MALTREATMENT, Dante Cicchetti and Sheree L. Toth
+PSYCHOLOGICAL TREATMENT OF EATING DISORDERS, G. Terence Wilson
+GENDER IDENTITY DISORDER IN CHILDREN AND ADOLESCENTS,
+
+Kenneth J. Zucker
+
+1
+
+31
+67
+
+91
+
+113
+
+143
+
+167
+
+197
+227
+
+255
+293
+321
+
+355
+
+381
+409
+439
+
+467
+
+vii
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.P1: JRX
+February 26, 2005
+
+19:35
+
+Annual Reviews
+
+AR240-FM
+
+viii
+
+CONTENTS
+
+THE DEVELOPMENT OF ALCOHOL USE DISORDERS, Kenneth J. Sher,
+
+Emily R. Grekin, and Natalie A. Williams
+
+DECISION MAKING IN MEDICINE AND HEALTH CARE, Robert M. Kaplan
+
+and Dominick L. Frosch
+
+PSYCHOLOGY, PSYCHOLOGISTS, AND PUBLIC POLICY,
+
+Katherine M. McKnight, Lee Sechrest, and Patrick E. McKnight
+
+COGNITIVE APPROACHES TO SCHIZOPHRENIA: THEORY AND THERAPY,
+
+Aaron T. Beck and Neil A. Rector
+
+STRESS AND HEALTH: PSYCHOLOGICAL, BEHAVIORAL, AND
+
+BIOLOGICAL DETERMINANTS, Neil Schneiderman, Gail Ironson,
+and Scott D. Siegel
+
+POSITIVE PSYCHOLOGY IN CLINICAL PRACTICE, Angela Lee Duckworth,
+
+Tracy A. Steen, and Martin E. P. Seligman
+
+INDEX
+
+Subject Index
+
+493
+
+525
+
+557
+
+577
+
+607
+
+629
+
+653
+
+Annu. Rev. Clin. Psychol. 2005.1:91-111. Downloaded from arjournals.annualreviews.orgby University of California - San Francisco on 02/21/06. For personal use only.

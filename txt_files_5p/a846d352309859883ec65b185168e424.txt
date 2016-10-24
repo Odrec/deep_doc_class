@@ -1,0 +1,396 @@
+Foundations of Logic Tutorial
+
+Session 8
+December 17, 2014
+
+Johannes Bausenwein
+jbausenwein@uos.de
+
+Overview
+
+1. Model evaluation in Lpred
+2. Semantic Trees in Lpred
+
+Model evaluation
+
+(cid:73) ∀x(Cx → Fax) ∧ (P ∨ Gb)
+(cid:73) Lpred-interpretation:
+
+Universe: U : {c1, c2, c3, c4}
+
+Extensions of names: a : c1
+b : c3
+
+Extensions of predicates: C : {c1, c2}
+
+F : {(cid:104)c1, c2(cid:105),(cid:104)c3, c2(cid:105),(cid:104)c4, c4(cid:105)}
+G : {c2}
+
+Extensions of sentence letters: P : F
+
+Expansion
+
+U: {c1, c2, c3}
+
+Expansion of ∀xGx : Gc1 ∧ Gc2 ∧ Gc3
+Expansion of ∃xGx : Gc1 ∨ Gc2 ∨ Gc3
+
+Expansion
+
+∀x∃yFxy
+U: {c1, c2}
+
+Stepwise expansion:
+1. ∃yFc1y ∧ ∃yFc2y
+2. (Fc1c1 ∨ Fc1c2) ∧ (Fc2c1 ∨ Fc2c2)
+
+If there is a counter-model → the formula is not a tautology
+
+Can you think of a counter-model of that formula?
+(I.e. an interpretation rendering the formula false?)
+
+Practice
+
+Write down the expansions of the sentences below in the following
+interpretation and say which of them is true in this interpretation:
+
+U : {a, b}
+F : {a}
+G : {}
+H : {(cid:104)b, a(cid:105),(cid:104)b, b(cid:105)}
+
+1. ∀xFx → Hab
+2. ∀x(Fx → Gx)
+3. ∃xGx → ∃yHyy
+4. ∀x∃y (Fx → Hxy)
+
+Finding counter-models
+
+Has ∃xFx → ∀yGy a counter-model?
+
+When you want to ﬁnd counter-models, you can ask which truth
+conditions for the single elements are necessary such that the
+formula becomes false.
+
+e.g. for ∃xFx → ∀yGy to be false
+
+(cid:73) ∃xFx must be true
+(cid:73) ∀yGy must be false
+
+Finding counter-models
+
+For ∃xFx → ∀yGy to be false
+
+(cid:73) ∃xFx must be true
+(cid:73) ∀yGy must be false
+
+For ∃xFx to be true
+
+(cid:73) there must be at least one element for which F is true
+(cid:73) e.g. F: {a}
+
+For ∀yGy to be false
+
+(cid:73) there must be at least one element for which G is not true
+(cid:73) e.g. G: {}
+(cid:73) Counter-model: U: {a}, F: {a}, G: {}
+
+Practice
+
+Construct one model and one counter-model for the following
+formula over the domain U : {c1, c2}.
+Formula: ∃y∀x(Fxy ∨ Gy)
+
+Model:
+
+Counter-model:
+
+U : {c1, c2}
+F : {(cid:104)c1, c1(cid:105),(cid:104)c2, c1(cid:105)}
+G : {}
+
+U : {c1, c2}
+F : {}
+G : {}
+
+Finding counter-models
+
+If you need to ﬁnd counter-models for argument schemes, like
+
+Fa → ∀xGx, ∀xGx ∴ Fa
+
+remember that they implicitely stand for an implication
+
+(cid:73) the conclusion must be false, while the premises must be true
+(cid:73) possible counter-model:
+
+U: {c1}
+a: c1
+F: {}
+G: {c1}
+
+Lpred
+
+(cid:73) by ﬁnding counter-models we can determine that a formula /
+
+an argument scheme is not a tautology / not valid in Lpred
+(cid:73) but how can we determine whether a formula / an argument
+
+schemes is a tautology / valid in Lpred?
+
+→ Semantic trees!
+
+Semantic trees in Lpred
+
+Our argument is valid / our formula is a tautology iﬀ every branch
+of a corresponding semantic tree contains at least one pair of
+contradictory literals
+
+Literal: an atomic formula or the negation of an atomic formula
+
+Atomic formulas in Lpred:
+
+(cid:73) Sentence letters
+(cid:73) n-place predicates followed by n names (satisﬁed predicates)
+
+(cid:73) (expressions of the form α1=α2; cannot be treated by the
+
+semantic tree method!)
+
+(cid:73) If every branch ends in a contradiction, the argument
+
+scheme is valid.
+
+(cid:73) If not every branch ends in a contradiction, you cannot
+
+conclude anything!
+Seriously, the argument scheme can still be valid or invalid:
+⇒ Look for a counter-model.
+
+(cid:73) If you ﬁnd a counter-model, the argument is invalid.
+(cid:73) If you do not ﬁnd a counter-model, you cannot conclude
+
+anything!
+
+Semantic trees in Lpred
+
+Four additional rules
+
+(cid:73) universal rule
+(cid:73) existential rule
+(cid:73) negated universal rule
+(cid:73) negated existential rule
+
+Universal rule
+
+(U)
+
+∀νS(ν)
+S α
+
+ν
+
+¥ S(ν) is any open formula containing the free variable ν, and
+
+S α
+ν is a wﬀ we obtain if we replace all occurrences of ν in
+S(ν) by the name α.
+
+Example 1:
+
+Example 2:
+
+(n)
+
+(n + 1)
+
+∀x(Fx → Gx)
+Fa → Ga
+
+(U),(n)
+
+(1) ¬(∀xFx → Fa)
+
+(A)
+
+(2)
+
+(3)
+
+(4)
+
+∀xFx
+¬Fa
+
+Fa
+⊗
+
+(NI),(1)
+
+(NI),(1)
+
+(U),(2)
+
+Existential rule
+
+(E)
+
+∃νS(ν)
+S α
+
+ν
+
+¥ S(ν) is any open formula containing the free variable ν, and
+
+S α
+ν is a wﬀ we obtain if we replace all occurrences of ν in
+S(ν) by some name α that has not occurred on a previous
+line on the corresponding branch of the tableau.
+
+Example:
+
+(1) ¬(∃xFx → Fa)
+
+(A)
+
+(2)
+
+(3)
+
+∃xFx
+¬Fa
+
+(NI),(1)
+
+(NI),(1)
+
+(4)
+
+Fb
+
+(E),(2)
+
+¥ The introduced name α must not have occurred on a previous
+
+line!
+
+Negated universal rule
+
+(NU)
+
+¬∀νS(ν)
+∃ν¬S(ν)
+
+Example:
+
+(1) ¬∀x(Fx ∧ Gx)
+∃x¬(Fx ∧ Gx)
+¬(Fa ∧ Ga)
+
+(3)
+
+(2)
+
+(A)
+
+(NU),(1)
+
+(E),(2)
+
+(4) ¬Fa (NC),(3)
+
+(5) ¬Ga (NC),(3)
+
+Negated existential rule
+
+(NE)
+
+¬∃νS(ν)
+∀ν¬S(ν)
+
+Example:
+
+(1) ¬∃x(Fx ∨ Gx)
+∀x¬(Fx ∨ Gx)
+¬(Fa ∨ Ga)
+
+(3)
+
+(2)
+
+(A)
+
+(NE),(1)
+
+(U),(2)
+
+(4)
+
+(5)
+
+¬Fa
+¬Ga
+
+(ND),(3)
+
+(ND),(3)
+
+Semantic trees in Lpred
+
+When drawing an analytic tableau for a wﬀ of Lpred, always work in
+a speciﬁc order:
+
+1. Eliminate negated universals and negated existentials.
+2. Eliminate existentials.
+3. Eliminate universals.
+
+(cid:73) This order is important because you may only use names for
+
+(E) that do not already occur in the current branch.
+
+(cid:73) There is no such restriction for (U).
+(cid:73) Usually it is helpful to introduce names that have already
+
+occured via (U) in order to obtain a contradiction in the
+respective branch.
+
+Semantic trees in Lpred
+
+∃xFx ∧ ∀y(Fy → Gy) → ∃xGx is a tautology:
+
+(1) ¬(∃xFx ∧ ∀y(Fy → Gy) → ∃xGx) (A)
+
+(2) ∃xFx ∧ ∀y(Fy → Gy) (NI),(1)
+
+(3) ¬∃xGx (NI),(1)
+(4) ∀x¬Gx (NE),(3)
+(5) ∃xFx (C),(2)
+
+(6) ∀y(Fy → Gy) (C),(2)
+(7) Fa (E),(5)
+(8) Fa → Ga (U),(6)
+(9) ¬Ga (U),(4)
+
+(10) ¬Fa (I),(8)
+
+(11) Ga (I),(8)
+
+X
+
+X
+
+Important
+
+You may only eliminate outer quantiﬁers! Quantiﬁers within the
+scope of another quantiﬁer are not allowed to be eliminated via (U)
+or (E)!
+
+Practice
+
+Prove that the following argument schemes are valid by means of
+the method of semantic trees.
+
+(cid:73) ∃x(Fx ∨ Gx), ∀y¬Fy ∴ ∃xGx
+(cid:73) ∀x∃y¬Fxy, Ga → ∀x∀yFxy ∴ ¬Ga
+
+

@@ -1,0 +1,1058 @@
+ 
+
+ 
+
+ 
+
+Praxis Digitale Bildverarbeitung 
+
+Abschlussaufgabe 
+
+Alexander Blume  
+
+ Christoph Maskos 
+
+31. März 2016 
+
+Institut für Geoinformatik und Fernerkundung  
+
+Universität Osnabrück 
+
+ 
+
+ 
+
+Inhaltsverzeichnis 
+1. Einleitung: 
+
+2. Georeferenzierung: 
+
+2.1  Wahl der Parameter 
+
+2.2  Ergebnis und Bewertung 
+
+3. Klassifikation 
+
+3.1 Informationsklassen 
+
+3.1.1 Urban 
+
+3.1.2 Wasser 
+
+3.1.3 Böden 
+
+3.1.3 Vegetation 
+
+3.2 Überwachte Klassifikation 
+
+3.2.1 Vorgehen 
+
+3.2.2 Ergebnis 
+
+3.2.3 Bewertung 
+
+3.3 Unüberwachte Klassifikation 
+
+3.3.1 Ergebnis 
+
+3.3.2 Bewertung 
+
+3.4 Hybride Klassifikation 
+
+3.4.1 Ergebnis 
+
+3.4.2 Bewertung 
+
+6. Fazit 
+
+ 
+
+ 
+
+ 
+
+4 
+
+5 
+
+6 
+
+8 
+
+9 
+
+9 
+
+9 
+
+9 
+
+9 
+
+10 
+
+11 
+
+11 
+
+13 
+
+14 
+
+15 
+
+16 
+
+17 
+
+17 
+
+18 
+
+19 
+
+19 
+
+2 
+
+Abbildungsverzeichnis 
+
+Abb. 1: Das Untersuchungsgebiet (UG) ........................................................................... 5 
+
+Abb. 2: Passpunkte für die geometrische Korrektur......................................................... 7 
+
+Abb. 3: Ergebnis der überwachten Klassifikation mit Threshold .................................. 13 
+
+Abb. 4: Feature Space (Rot/Infrarot) der überwachten Klassifikation ........................... 14 
+
+Abb. 5: Ergebnis der Unüberwachten Klassifkation ...................................................... 16 
+
+Abb. 6: Ausgewählte Versieglungssignatur ................................................................... 17 
+
+Abb. 7: Ergebnis der hybriden Klassifikation mit Threshold ......................................... 18 
+
+ 
+
+ 
+
+Tabellenverzeichnis 
+
+Tab. 1: Passpunkte ............................................................................................................ 8 
+
+Tab. 2: Flächenanteile der überwachten Klassifikation ................................................. 14 
+
+Tab. 3: Flächenanteile der hybriden Klassifikation ........................................................ 18 
+
+ 
+
+ 
+
+Verwendete Abkürzungen: 
+
+UG  Untersuchungsgebiet 
+
+ 
+
+1. Einleitung: 
+
+Ziel  dieser  Seminararbeit  ist  es  einen  bereits  radiometrisch  korrigierten  Landsat-8-
+
+Datensatz  von  Osnabrück  und  Umland  erst  zu  georeferenzieren  und  anschließend  mit 
+
+unterschiedlichen  Verfahren  zu  klassifizieren,  um  den  Umgang  mit  diesen 
+
+grundlegenden Methoden der digitalen Bildverarbeitung zu üben.  
+
+Das Untersuchungsgebiet (UG) ist ca. 550 km²  groß und reicht von Westerkappeln im 
+
+Westen  bis  nach  Ostercappeln  im  Osten  und  von  Osnabrück  Sutthausen  im  Süden  bis 
+
+nach  Bramsche  im  Norden.  Die  Großstadt  Osnabrück  dominiert  den  Kartenausschnitt. 
+
+Das  Umland  von  Osnabrück  ist  geprägt  durch  Agrarwirtschaft,  große  Waldflächen, 
+
+viele  kleinere  Siedlungen  sowie  einige  Seen.  Im  Norden  des  UG  verläuft  der 
+
+Mittellandkanal,  von  dem  ein  Stichkanal  nach  Osnabrück  ausgeht.  Auf  der  westlichen 
+
+Seite fließt neben dem Stichkanal die Hase, die jedoch wegen der  geringen räumlichen 
+
+Auflösung  (1  Pixel  =  30m  x  30m)  allenfalls  zu  erahnen  ist.  Durch  das  gesamte  UG 
+
+verlaufen  die  drei  Autobahnen  A1,  A30  und  A33,  die  sich  an  zwei  Stellen  Kreuzen 
+
+(siehe  Abb.  1).  Neben  dem  empirical-line  korrigierten  Landsat-8  Datensatz  vom 
+
+21.07.2013  steht  eine  topographische  Karte  des  UG  im  Maßstab  1:25000  (TK25)  zur 
+
+Verfügung. 
+
+ 
+
+4 
+
+Abb. 1: Das Untersuchungsgebiet (UG) 
+
+ 
+
+2. Georeferenzierung: 
+
+Bei der Georeferenzierung werden Pixel aus der ursprünglichen Bildmatrix in eine neue 
+
+Position  im  Referenzgitter  (in  diesem  Fall:  in  der  topographischen  Karte)  übertragen. 
+
+Sie  umfasst  die  Auswahl  eines  angemessenen  mathematischen  Modells,  die 
+
+Koordinatentransformation und das Resampling. Die Georeferenzierung ist notwendig, 
+
+einerseits  um  Verzerrungen  auszugleichen,  die  durch  das  Aufnahmesystem  entstanden 
+
+sind (Systemkorrektur). Außerdem werden mit ihrer Hilfe Bilder gleicher Lokalität, die 
+
+unter  verschiedenen  Aufnahmebedingungen  entstanden  sind,  einander  angeglichen 
+
+(Bild-zu-Bild-Registrierung).  Im  vorliegenden  Fall  wird  die  geometrische  Korrektur 
+
+benötigt,  um  den  Landsat-8-Datensatz  an  die  Projektion  der  topographischen  Karte 
+
+anzupassen (Bild zu Karte).  
+
+ 
+
+5 
+
+2.1  Wahl der Parameter 
+
+Für  die  Umrechnung  der  Pixelpositionen  wurde  als  mathematisches  Modell  ein 
+
+Polynom  ersten  Grades  gewählt.  Polynome  höheren  Grades  nähern  sich  zwar  den 
+
+Passpunkten  besser  an,  haben  allerdings  eine  unbestimmbare  Abweichung  in  den 
+
+Punktzwischenräumen.  Daher  wird  ein  größerer  bekannter  Abweichungsfehler,  einem 
+
+unbekannten möglicherweise kleinerem Abweichungsfehler vorgezogen.  Es wurden 20 
+
+Passpunkte  über  das  gesamte  UG  verteilt  gesetzt  (siehe  Abb.  2).  Dabei  wurden  als 
+
+Passpunktorte  Autobahnkreuze,  Brücken  und  Straßenkreuzungen  benutzt,  weil  sie  bei 
+
+der  unscharfen  räumlichen  Auflösung  relativ  gut  erkennbar  sind  und  eine  zeitliche 
+
+Veränderung  unwahrscheinlich  ist.  Die  Passpunkte  befinden  sich  in  ungefähr  gleicher 
+
+Höhenlage,  sodass  keine  Fehler  durch  eine  reliefbedingte  Bildpunktverlagerung  zu 
+
+erwarten sind. 
+
+Als Resamplingverfahren wurde die kubische Faltung (Cubic Convolution) angewandt. 
+
+Der neue Grauwert wird hierbei als lineare Kombination der Grauwerte der 16 nächsten 
+
+Nachbarn  im  alten  Raster  berechnet.  Der  Vorteil  der  kubischen  Faltung  besteht  zum 
+
+einen  darin,  dass  ein  blockiges  Aussehen  des  Bildes  (wie  es  beim  Nearest-Neighbor-
+
+Verfahren auftritt) verhindert wird und es gleichzeitig nicht zur einer Verwischung der 
+
+Signaturendifferenzen  zwischen  Objektklassen  (wie  in  der  bilinearen  Interpolation) 
+
+kommt. 
+
+ 
+
+6 
+
+Abb. 2: Passpunkte für die geometrische Korrektur 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+2.2  Ergebnis und Bewertung 
+
+Wie  in  Tab.  1  ersichtlich,  hat  kein  Passpunkt  einen  größeren  Residuenwert  als  den 
+
+doppelten  Standartfehler.  Das  bedeutet,  dass  kein  Punkt  zur  Verbesserung  der 
+
+Anpassung  eliminiert  werden  muss.  Der  RMSE-Fehler  im  Modell  beträgt  für  jeden 
+
+einzelnen  Passpunkt  weniger  als  20  Meter.  Der  Gesamt-RMSE-Fehler  für  das  Modell 
+
+liegt  bei  10,173m.  Bei  einer  Landsat-8-Pixelgröße  von  30  Metern  beträgt  damit  die 
+
+maximale  Verschiebung  eines  Pixels  ein  Drittel  der  Pixelgröße.  In  Anbetracht  der 
+
+groben  geometrischen  Auflösung  und  den  damit  verbundenen  Schwierigkeiten  bei  der 
+
+Erkennung von Passpunktorten ist das ein sehr guter Wert für eine Georeferenzierung.  
+
+Tab. 1: Passpunkte 
+
+X Residual 
+
+Y Residual 
+
+-0.290 
+3.453 
+-9.712 
+4.931 
+10.729 
+14.902 
+4.379 
+3.847 
+9.584 
+3.664 
+-7.863 
+-13.200 
+6.682 
+-4.343 
+-6.256 
+-14.488 
+0.541 
+-13.033 
+5.892 
+0.580 
+
+5.612 
+2.853 
+6.725 
+1.229 
+-0.587 
+8.659 
+-0.208 
+-0.319 
+3.264 
+-1.866 
+-11.046 
+-3.963 
+10.339 
+1.041 
+-10.739 
+-1.514 
+-7.949 
+-7.12 
+-3.528 
+9.117 
+
+Doppelter 
+
+Doppelter 
+
+Standardfehler 
+
+Standardfehler 
+
+x 
+
+y 
+
+16.263444 
+
+16.16869791 
+
+ 
+
+Passpunkt 
+GCP #1 
+GCP #2 
+GCP #3 
+GCP #7 
+GCP #6 
+GCP #8 
+GCP #4 
+GCP #5 
+GCP #9 
+GCP #10 
+GCP #11 
+GCP #12 
+GCP #13 
+GCP #14 
+GCP #15 
+GCP #16 
+GCP #17 
+GCP #19 
+GCP #18 
+GCP #20 
+
+  
+
+  
+
+ 
+
+8 
+
+ 
+
+ 
+
+3. Klassifikation 
+
+In  der  Klassifikation  werden  die  einzelnen  Pixel  anhand  ihrer  spektralen  Signatur 
+
+verschiedenen  Spektralklassen  zugeordnet.  Diese  Spektralklassen  werden  je  nach 
+
+Verfahren  vor  oder  nach  der  Klassifikation  zu  Informationsklassen  zusammengeführt. 
+
+Am Ende der Klassifikation steht ein Ergebnis, dass die Landnutzung des UG zeigt. 
+
+3.1 Informationsklassen 
+
+Informationsklassen  (z.b.  Nadelwald)  sind  die  Summen  aller  Spektralklassen  (z.b. 
+
+trockener, junger Nadelwald) eines Typs. 
+
+3.1.1 Urban 
+
+Unter  „Urban“  sind  alle  versiegelten  Flächen  und  Siedlungsflächen  zusammengefasst. 
+
+Für  die  Informationsklasse  Urban  wurden  Testgebiete  im  Stadtgebiet  von  Osnabrück 
+
+und Umgebung, sowie auf den Autobahnen erstellt, da die spektralen Eigenschaften von 
+
+versiegelten  Flächen  bei  einer  Pixelgröße  von  30  Metern  von  darin  vorkommender 
+
+Vegetation  beeinflusst  werden.  Es  muss  daher  mit  einer  großen  Anzahl  von 
+
+Mischpixeln gerechnet werden. 
+
+3.1.2 Wasser 
+
+Unter Wasser sind alle stehenden und Fließgewässer im UG zusammengefasst. Für die 
+
+Informationsklasse  Wasser  wurden  Testgebiete  in  verschiedenen  Seen  und  dem 
+
+Mittellandkanal erstellt, da die spektralen Eigenschaften von Wasserflächen maßgeblich 
+
+von der Wassertiefe, der Wasser- und Ufervegetation und den Schwebstoffen im Wasser 
+
+abhängen.  Bei  einer  Pixelgröße  von  30  Metern  kann  nur  mit  wenigen  reinen 
+
+Wasserpixeln gerechnet werden. Die Histogramme der einzelnen Spektralkanäle werden 
+
+mit hoher Wahrscheinlichkeit keine unimodale Verteilung haben.  
+
+3.1.3 Böden 
+
+In  der  Kategorie  Böden  sind  alle  Flächen  zusammengefasst,  die  zum  Zeitpunkt  der 
+
+Aufnahme  des  Satellitenbildes  nicht  mit  Vegetation  bedeckt  waren.  Der 
+
+Aufnahmezeitpunkt  liegt  im  Hochsommer,  sodass  diese  Kategorie  neben  dauerhaft 
+
+unbedeckten Böden auch abgeerntete Äcker enthält. Die Kategorie Böden wurde in die 
+
+Informationsklassen „Boden dunkel“ und „Boden hell“ unterteilt, da z.B. ein trockener 
+
+Sandboden  und  ein  feuchter  Humusboden  sehr  unterschiedliche  spektrale  Signaturen 
+
+aufweisen. 
+
+ 
+
+9 
+
+Boden dunkel: 
+
+In  dieser  Informationsklasse  sind  alle  Bodenflächen  zusammengefasst,  die  sich  durch 
+
+eine  relativ  geringe  Reflexion  auszeichnen.  Darunter  fallen  unter  anderem  Böden  mit 
+
+großer  Partikelgröße,  hohem  Wassergehalt,  hohem  Gehalt  an  Organischer  Substanz 
+
+oder hohem Eisengehalt.  
+
+Boden hell: 
+
+In  dieser  Informationsklasse  sind  alle  Bodenflächen  zusammengefasst,  die  eine  relativ 
+
+hohe  Reflexion  aufweisen.  Darunter  fallen  Böden  mit  kleiner  Partikelgröße,  geringem 
+
+Wassergehalt, geringem Gehalt an Organischer Substanz und geringem Eisengehalt. 
+
+3.1.3 Vegetation 
+
+Die  Kategorie  „Vegetation“  vereint  alle  die  Flächen,  die  während  der  Aufnahme  des 
+
+Satellitenbildes deutlich mit Vegetation bedeckt waren. Im Hochsommer erreichen viele 
+
+Pflanzen 
+
+ihre  maximale  Photosyntheseleistung  und  damit  auch  die  höchste 
+
+Infrarotreflexion 
+
+im  Jahresverlauf.  Die  Kategorie  Vegetation  wurde 
+
+in  die 
+
+Informationsklassen  Nadelwald,  Laubwald,  Acker  und  Gras  unterteilt,  da  sich  die 
+
+aufgezählten Flächen deutlich in ihren Spektralkurven und in den Oberflächenstrukturen 
+
+unterscheiden. 
+
+Nadelwald: 
+
+In  dieser  Informationsklasse  sind  alle  Wälder  zusammengefasst,  die  eine  geringe 
+
+Reflexion im Infrarotbereich aufweisen.  
+
+Laubwald: 
+
+In  dieser  Informationsklasse  sind  alle  übrigen  Wälder  zusammengefasst.  Die  infrarote 
+
+Reflexion  liegt  deutlich  über  jener  der  Nadelwälder.  Laubwälder  und  Mischwälder 
+
+wurden  zusammengeführt,  da  man  anhand  der  Spektralsignatur  schlecht  ablesen  kann, 
+
+ob ein  Pixel  im Laubwald oder im Mischwald  steht  und wie stark die Durchmischung 
+
+ist.  Zudem  haben  verschiedene  Laubbaumarten  unterschiedlich  ausgeprägte 
+
+Reflexionsspektren,  sodass  auch  hier  Heterogenität  entsteht.  Vor  diesem  Hintergrund 
+
+erscheint es unmöglich beide Spektralklassen sauber voneinander abzugrenzen. 
+
+ 
+
+ 
+
+ 
+
+10 
+
+Ackerflächen: 
+
+In  dieser 
+
+Informationsklasse 
+
+sind  alle  Bodenflächen  zusammengefasst,  die 
+
+Landwirtschaftlich  genutzt  werden  und  deutlich 
+
+im 
+
+infraroten  Spektralbereich 
+
+reflektieren.  
+
+Grasland: 
+
+In  der  Informationsklasse  Grasland  sind  diejenigen  Bodenflächen  enthalten,  die  sich 
+
+durch  eine  extrem  hohe  Reflexion  im  infraroten  und  im  grünen  Spektralbereich 
+
+auszeichnen.  Der  Reflexionswert 
+
+liegt  deutlich  über  dem  der 
+
+anderen 
+
+Informationsklassen, was ein Indikator für wachsendes Gras ist.  
+
+3.2 Überwachte Klassifikation 
+
+3.2.1 Vorgehen 
+
+Bei  der  überwachten  Klassifikation  bestimmt  der  Bearbeiter  zunächst  die  Anzahl 
+
+möglicher 
+
+Informationsklassen  mit 
+
+ihren 
+
+jeweiligen  spektralen  Ausprägungen 
+
+(Spektralklassen)  im  multispektralen  Merkmalsraum.  Anschließend  muss  er  zu  jeder 
+
+Informationsklasse  Testgebiete  extrahieren,  die  als  Referenzflächen  fungieren.  Dabei 
+
+muss  darauf  geachtet  werden,  dass  die  Trainingsgebiete  möglichst  groß, 
+
+zusammenhängend  und  homogen  sind,  um  eine  möglichst  ungestörte  (unimodale) 
+
+spektrale  Signatur  zu  erhalten.  Außerdem  sollten  mehrere  Repräsentanten  einer 
+
+Informationsklasse  aufgenommen  werden.  Da  der  Datensatz  7  Kanäle  hat  muss  jedes 
+
+Trainingsgebiet nach der „n+1 Regel“ mindestens 8 Pixel enthalten. Wesentlich besser 
+
+sind allerdings 80 oder 800. Außerdem muss jedes Trainingsgebiet eine Varianz größer 
+
+als  0  haben,  um  um  das  Gleichungssystem  lösen  zu  können,  welches  der  Berechnung 
+
+der Trainingsflächensignaturen zugrunde liegt. 
+
+Danach  wird  die  Gesamtheit  der  Testgebiete  mit  drei  verschiedenen  Verfahren  (View, 
+
+Evaluation,  Featurespace)  evaluiert.  In  der  View  können  die  Spektralsignaturen  und 
+
+Histogramme  der  einzelnen  Referenzflächen  begutachtet  werden.  Die  Spektralkurven 
+
+sollten  nicht  zu  ähnlich  sein  und  die  Histogramme  sollten  keine  bi-  oder  multimodale 
+
+Verteilung  zeigen,  weil  dies  ein  Hinweis  auf  mehrere  Spektralklassen  in  einem 
+
+Trainingsgebiet ist. Die Evaluation  besteht aus der Kontigenzmatrix und der  Signature 
+
+Separability.  Die  Kontigenzmatrix  zeigt  an,  wie  viele  Pixel  einer  Klasse  richtig 
+
+zugeordnet  wurden  und  beschreibt  so  die  Gesamtgenauigkeit  der  Klassifikation.  Die 
+
+Signature  Separability 
+
+indiziert,  wie  gut 
+
+sich  einzelne  Spektralklassen 
+
+in 
+
+11 
+
+ 
+
+unterschiedlichen  Kanalkombinationen  trennen  lassen.  Am  Featurespace  kann  man 
+
+ablesen,  wie  stark  sich  unterschiedliche  Spektralklassen  überlagern  und  ob  bestimmte 
+
+Spektralbereiche abgedeckt werden.  
+
+Mit Hilfe dieser evaluierten spektralen Signaturen wird jedes Pixel einer Spektralklasse 
+
+zugeordnet.  Dabei  können  drei  verschiedene  Entscheidungsverfahren  zum  Einsatz 
+
+kommen:  Minimum  Distance  Classifier,  Parallelepiped  Classifier  und  Maximum-
+
+Likelihood  Classification.  Letztere  wird  in  dieser  Arbeit  wird  genutzt.  Die  Maximum-
+
+Likelihood  Classification  arbeitet  mit  einer  Wahrscheinlichkeitsdichtefunktion.  Dabei 
+
+werden  anhand  des  Mittelwertvektors  und  der  Varianz-Kovarianz-Matrix 
+
+im 
+
+multispektralen  Merkmalsraum  Linien  gleicher  Zuordnungswahrscheinlichkeit 
+
+berechnet,  ähnlich  den  Ellipsen  aus  Abb.  4.  Die  Zuordnung  eines  Pixels  zu  einer 
+
+Referenzklasse erfolgt dann anhand der größten Wahrscheinlichkeit.  
+
+Nach  der  Klassifikation  wird  das  Schwellwertverfahren  (Threshold)  angewandt,  um 
+
+unsicher  zugewiesene  Pixel  zu  entfernen.  Dabei  wird  für  jede  Klasse  ein  Schwellwert 
+
+im Distanz-Histogramm definiert, unterhalb dessen ein Pixel der Klasse nicht zugeteilt 
+
+wird. Solche Bildpunkte, die sich nicht mit der nötigen Eindeutigkeit zuordnen lassen, 
+
+werden als schwarz (unklassifiziert) dargestellt. 
+
+ 
+
+12 
+
+3.2.2 Ergebnis 
+
+ 
+
+Abb. 3: Ergebnis der überwachten Klassifikation mit Threshold 
+
+Den  größten  Flächenanteil  im  klassifizierten  Bild  nehmen  urbane  Flächen  und 
+
+Laubwald-Mischwaldbestände  ein.  Jeweils  ca.  ein  Zehntel  des  Bildes  besteht  aus 
+
+Grasflächen, Ackerflächen und hellem Boden (siehe Abb. 3, Tab. 2). Im Feature Space 
+
+(Abb.  4)  überlagern  sich  viele  Klassen  deutlich.  In  der  Kontigenzmatrix  zeichnet  sich 
+
+ab,  dass  95,69%  der  Pixel  korrekt  zugewiesen  wurden.  Die  Signature  Separability  hat 
+
+bei  jeder  Kanalkombination  einen  Durchschnittswert  von  über  1200.  Der  schlechteste 
+
+Wert liegt bei 407 in der Kanalkombination Coastal-Blau zwischen  Boden dunkel und 
+
+Acker. Insgesamt konnten ca. 5% der Fläche nicht eindeutig zugeordnet werden. 
+
+ 
+
+13 
+
+Abb. 4: Feature Space (Rot/Infrarot) der überwachten Klassifikation 
+
+ 
+
+Tab. 2: Flächenanteile der überwachten Klassifikation 
+
+Informationsklassen 
+urban 
+Laubwald 
+Gras 
+Acker 
+boden hell 
+Nadelwald 
+boden dunkel 
+Wasser 
+Unclassified 
+
+172186 
+148907 
+68117 
+67932 
+65468 
+38629 
+28051 
+4392 
+1540 
+
+Vor dem threshold 
+Absolut 
+
+Nach dem threshold 
+Absolut 
+
+% 
+
+172039 
+136179 
+65062 
+62692 
+62039 
+35707 
+27780 
+3809 
+29915 
+
+28,90% 
+22,88% 
+10,93% 
+10,53% 
+10,42% 
+6,00% 
+4,67% 
+0,64% 
+5,03% 
+
+% 
+28,93% 
+25,02% 
+11,44% 
+11,41% 
+11,00% 
+6,49% 
+4,71% 
+0,74% 
+0,26% 
+
+ 
+
+ 
+
+3.2.3 Bewertung 
+
+Die Gesamtgenauigkeit von 95,69% ebenso wie die durchschnittliche Trennbarkeit der 
+
+einzelnen Klassen sprechen für ein gutes Klassifikationsergebnis. Das spiegelt sich auch 
+
+optisch  in  der  Form  und  Verteilung  der  Wald-,  Acker-  und  Grasflächen  sowie  der 
+
+unbedeckten  Böden  wider.  Bei  diesen  relativ  homogenen  Landnutzungen  zeigt  die 
+
+überwachte Klassifikation ein gutes Ergebnis.  
+
+ 
+
+14 
+
+Die Wasserflächen sind, trotz vieler Mischpixel, gut getroffen worden. Die vereinzelten 
+
+Seen, der Mittellandkanal und sogar der Stichkanal nach Osnabrück sind gut erkennbar. 
+
+Was  die  bebauten  Flächen  angeht,  sind  die  urbanen  Räume  und  die  Autobahnen 
+
+korrekterweise  als  versiegelt  erkannt  worden.  Allerdings  wurden  deutlich  zu  viele 
+
+Flächen  als  urban  eingestuft.  Insbesondere  solche  Flächen,  die  eine  geringe 
+
+Infrarotreflexion  aufweisen.  Des  Weiteren  gehören  Pixel  im  Siedlungsbereich  zu  den 
+
+heterogensten  Mischpixeln  und  enthalten  deshalb  auch  Reflexionspeaks 
+
+im 
+
+Infrarotbereich.  Diese  Heterogenität  kombiniert  mit  der  groben  räumlichen  Auflösung 
+
+gestalten  es  sehr  schwierig,  versiegelte  Flächen  von  anderen  Landnutzungen  spektral 
+
+abzugrenzen.  Bei  der  relativ  heterogenen  Landnutzung  ‚Urban‘  weist  die  überwachte 
+
+Klassifikation deutliches Verbesserungspotential auf. 
+
+Insgesamt  betrachtet  ist die überwachte Klassifikation, aufgrund der  guten Darstellung 
+
+vieler  Klassen  und  dem  geringen  Anteil  an  unklassifizierten  Pixeln,  gelungen. 
+
+Allerdings  führt  die  weitmaschige  geometrische  Auflösung  zu  einigen  Schwächen  in 
+
+der  Klassifikation.  Insbesondere  die  Klassentrennung  erscheint  problematisch,  wenn 
+
+man den Feature Space betrachtet.  
+
+3.3 Unüberwachte Klassifikation 
+
+Bei  der  unüberwachten  Klassifikation  wird  ein  ausgewähltes  Gebiet  mithilfe  eines 
+
+Algorithmus  (in  diesem  Fall:  des  ISODATA-Algorithmus)  klassifiziert.  Dabei  werden 
+
+die  einzelnen  Pixel  anhand  ihrer  Entfernung  im  multispektralen  Merkmalsraum  zu 
+
+Clustern  zusammengefasst.  Die  Qualität  der  unüberwachten  Klassifikation  kann  durch 
+
+die  minimale  und  die  maximale  Anzahl  an  Clusterzentren,  die  Anzahl  an 
+
+Iterationsdurchläufen  sowie  durch  den  Schwellwert  für  die  Konvergenz  beeinflusst 
+
+werden.  Nach  der  Klassifikation  muss  der  Benutzer  manuell  die  ausgegebenen 
+
+Spektralklassen den Informationsklassen zuordnen.  
+
+Da  in  der  überwachten  Klassifikation  die  Klasse  „Urban“  noch  nicht  zufrieden  stellt, 
+
+wurde  die  unüberwachte  Klassifikation  auf  das  Stadtgebiet  von  Osnabrück  sowie 
+
+einzelne Autobahnabschnitte angewandt. So sollen geeignetere Spektralkurven für reine 
+
+Versiegelungen gefunden werden. 
+
+ 
+
+15 
+
+3.3.1 Ergebnis 
+
+ 
+
+Abb. 5: Ergebnis der Unüberwachten Klassifkation 
+
+Das betrachtete Gebiet sollte aufgrund seiner geographischen Lage spektrale Signaturen  
+
+unterschiedlich  stark  versiegelter  Siedlungsformen  enthalten.  Dennoch  sind  viele 
+
+Spektralkurven  eher  als  Vegetation  einzuordnen.  Die  Klassen  in  Abb.  5  richten  sich 
+
+nach  dem  Verlauf  der  Spektralkurven.  Es  wurde  eine  möglichst 
+
+reine 
+
+Versiegelungssignatur ausgewählt (siehe Abb. 6). 
+
+ 
+
+ 
+
+16 
+
+Abb. 6: Ausgewählte Versieglungssignatur 
+
+ 
+
+3.3.2 Bewertung 
+
+Als  Folge  der  räumlichen  Auflösung  von  30  Metern,  wurden  hier  hauptsächlich 
+
+Mischpixel  klassifiziert.  Es  kann  davon  ausgegangen  werden,  dass  viele  Pixel 
+
+Wohnsiedlungen  mit  Gärten  sind.  Auch  bei  den  Autobahnen  wurde  Vegetation, 
+
+vermutlich  durch  die  Mittelstreifen-  und  Randvegetation,  klassifiziert.  Vor  diesem 
+
+Hintergrund ist das Klassifikationsergebnis in Ordnung, auch weil das eigentliche  Ziel, 
+
+bessere Spektralkurven für die Versieglung, erreicht wurde. 
+
+3.4 Hybride Klassifikation 
+
+Die  so  genannte  „hybride  Klassifikation“  ist  eine  Kombination  aus  überwachter  und 
+
+unüberwachter  Klassifikation.  Für  relativ  homogene  Landnutzungen  werden  die 
+
+spektralen  Signaturen  der  überwachten  Klassifikation  genutzt.  Für  die  besonders 
+
+heterogenen  Landnutzungen  werden  diejenigen  spektralen  Signaturen  eingesetzt,  die 
+
+mit  Hilfe  der  unüberwachten  Klassifikation  gewonnen  wurden.  Das  betrifft  in  dieser 
+
+Arbeit  die  urbanen  Flächen.  Da  die  Klasse  „Urban“  in  der  überwachten  Klassifikation 
+
+überrepräsentiert  ist,  wird  sie  durch  die  besonders  reine  Versiegelungssignatur  aus  der 
+
+unüberwachten Klassifikation ersetzt.  
+
+ 
+
+ 
+
+17 
+
+3.4.1 Ergebnis 
+
+Abb. 7: Ergebnis der hybriden Klassifikation mit Threshold 
+
+Den  größten  Flächenanteil  im  klassifizierten  Bild  nimmt  Laubwald  ein.  Die  weiteren 
+
+Landnutzungen  haben  relativ  gleichen  Anteil  an  der  Gesamtfläche.  Der  Anteil  an 
+
+unklassifizierten  Pixeln  ist  deutlich  auf  ca.  11,5%  angestiegen.  (siehe  Abb.  7,  Tab.  3: 
+
+Flächenanteile der hybriden Klassifikation).  
+
+ 
+
+Tab. 3: Flächenanteile der hybriden Klassifikation 
+
+Vor dem threshold 
+Absolut 
+
+Nach dem threshold 
+Absolut 
+
+Informationsklassen 
+
+Laubwald 
+Acker 
+boden hell 
+Gras 
+Urban 
+boden dunkel 
+Nadelwald 
+Wasser 
+Unclassified 
+
+ 
+
+ 
+
+% 
+28,45% 
+15,69% 
+14,04% 
+13,45% 
+13,21% 
+7,57% 
+6,55% 
+0,79% 
+0,26% 
+
+169358 
+93387 
+83577 
+80037 
+78626 
+45044 
+38962 
+4691 
+1540 
+
+ 
+
+135009 
+83444 
+79477 
+71076 
+78355 
+41354 
+33990 
+3834 
+68683 
+
+% 
+22,68% 
+14,02% 
+13,35% 
+11,94% 
+13,16% 
+6,95% 
+5,71% 
+0,64% 
+11,54% 
+
+18 
+
+3.4.2 Bewertung 
+
+Der  Anteil  an  versiegelten  Flächen  hat  sich  deutlich  reduziert.  Sowohl  die  Stadt 
+
+Osnabrück,  als  auch  die  umliegenden  Siedlungen  grenzen  sich  jetzt  klar  von  den 
+
+anderen  Landnutzungen  ab.  Die  Siedlungsstrukturen  sind  im  Vergleich  zu  Abb.  3 
+
+wesentlich  deutlicher  zu  erkennen.  Somit  wurde  das  Ziel  der  Hybriden  Klassifikation, 
+
+eine  bessere  Abgrenzung  der  urbanen  Flächen,  erreicht.  Insgesamt  ist  die  Qualität  der 
+
+Klassifikation durch die Anwendung des Hybriden Ansatzes deutlich gestiegen. 
+
+6. Fazit 
+
+Der  bereitgestellte  Landsat-8-Datensatz 
+
+setzte, 
+
+aufgrund 
+
+seiner 
+
+schlechten 
+
+geometrischen  Auflösung  von  30  Metern,  hohe  Anforderungen  an  den  Bearbeiter. 
+
+Trotzdem  wurden  in  der  Georeferenzierung  und  den  einzelnen  Klassifikationen 
+
+zufrieden stellende bis gute Ergebnisse erreicht. Siedlungsflächen sind die mit Abstand 
+
+am  schwierigsten  zu  klassifizierenden  Landnutzungsflächen,  da  besonders  viele 
+
+Mischpixel  die  spektralen  Signaturen  verfälschen.  Durch  die  Benutzung  mehrerer 
+
+Klassifikationsverfahren  kann  dieser  Fehler  verringert  werden.  Mit  einer  deutlich 
+
+besseren  geometrischen  Auflösung  könnten  die  Klassen  noch  besser  getrennt  werden 
+
+um  ein  genaueres  Ergebnis  zu  erzielen.  Allerdings  treten  bei  solchen  feineren 
+
+Auflösungen  andere  Probleme  auf  (z.B.  wenn  auf  Flachdächern  Pfützen  oder  Fenster 
+
+erkennbar werden).  Auch die Verwendung weiterer Methoden  aus der  Fernerkundung, 
+
+wie 
+
+der 
+
+linearen 
+
+spektralen  Mischungsanalyse 
+
+oder 
+
+der 
+
+objektbasierten 
+
+Bildklassifikation, könnte dabei helfen den Informationsgewinn zu erhöhen. 
+
+ 
+
+ 
+
+19 
+
+

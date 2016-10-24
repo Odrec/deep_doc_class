@@ -1,0 +1,724 @@
+Foundations of Cognitive Science
+
+Lecture XIII: Problem Solving
+
+Frank Jäkel
+
+Uni Osnabrück
+
+Jan/20/15
+
+Base Rate Fallacy
+
+A cab was involved in a hit and run accident at night. Two
+cab companies, the Green and the Blue, operate in the city.
+You are given the following data:
+
+(cid:73) 85% of the cabs in the city are Green and 15% are Blue
+(cid:73) a witness identiﬁed the cab as Blue.
+
+The court tested the reliability of the witness under the same
+circumstances that existed on the night of the accident and
+concluded that the witness correctly identiﬁed each one of the
+two colors 80% of the time and failed 20% of the time. What
+is the probability that the cab involved in the accident was
+Blue rather than Green?
+
+Kinds of Problems
+
+(cid:73) Well-deﬁned1
+
+(cid:73) What is 57 times 176?
+(cid:73) How do I get to room 31/449a?
+(cid:73) How do I beat my classmate at tic-tac-toe?
+
+(cid:73) Ill-deﬁned2
+
+(cid:73) How do I lead a happy life?
+(cid:73) How do I ﬁnd the perfect mate?
+(cid:73) How do I become rich and famous?
+
+1i.e., easier to study in the lab
+2i.e., actual problems
+
+Cryptarithmetic
+
+D O N A L D D=5
+
++ G E R A L D
+R O B E R T
+
+[Newell and Simon, 1972, chapter 6]
+
+Verbal Protocol
+
+[Newell and Simon, 1972, chapter 6]
+
+Verbal Protocol
+
+D O N A L D D=5
+
++ G E R A L D
+R O B E R T
+
+(cid:73) B1: Each letter has one and only one numerical value...
+(cid:73) B5: Therefore, I can, looking at the two D’s...
+(cid:73) B6: Each D is 5;
+(cid:73) B7: therefore, T is zero.
+(cid:73) B10: Now, do I have any other T’s?
+(cid:73) B11: No.
+(cid:73) B12: But I have another D.
+(cid:73) ...
+
+[Newell and Simon, 1972, chapter 6]
+
+Problem Behavior Graph
+
+(cid:73) Each box represents a state of knowledge, e.g. at box 3 S
+
+has ﬁnished processing column 1 (D+D=T) and knows
+that T=0 (B7) and states B8
+
+(cid:73) The labeled lines between the boxes are operations that
+
+change states, e.g. after processing column 1 S now
+knows that T=0
+
+(cid:73) S sometimes goes back to a previous state
+
+[Newell and Simon, 1972, chapter 6]
+
+Problem Behavior Graph
+
+[Newell and Simon, 1972, chapter 6]
+
+Results of Verbal Protocol Analysis
+
+(cid:73) Thinking cannot be observed directly
+(cid:73) But we can ask Ss to think aloud while they solve a
+
+problem
+
+(cid:73) Analyzing verbal protocols is hard work
+(cid:73) In 20 minutes protocol S only used a small number of
+
+operations, e.g. generate possible values for each letter,
+hypothetically assign a number and see whether it leads
+to a contradiction, etc.
+
+(cid:73) There is backtracking (going back to a previous state of
+
+knowledge)
+
+(cid:73) There is forgetting and rechecking
+(cid:73) How does S choose which operation to try next?
+
+Tower of Hanoi
+
+[Mayer, 1992, p. 72]
+
+Problem Space
+
+[Mayer, 1992, p. 182]
+
+Problem Space
+
+(cid:73) The problem space is a
+
+complete enumeration of all
+states and the ways you can
+move between states
+
+(cid:73) Start in initial state (1)
+(cid:73) Get to goal state (8)
+(cid:73) You need to choose a
+sequence of operations
+
+(cid:73) Problem solving as search in
+
+problem space
+
+[Mayer, 1992, p. 182]
+
+Random Search
+
+(cid:73) How do you ﬁnd the goal state?
+(cid:73) Idea: Trial-and-error
+(cid:73) You randomly try operators and see where they get you
+(cid:73) Bad idea! Problem spaces can be really big and you’ll
+
+never ﬁnd the right solution by chance...
+
+(cid:73) ... although people may resort to trial and error when
+
+they fail to do something smarter
+
+Greedy Search
+
+(cid:73) Idea: For each state get an evaluation for how far away it
+
+is from the goal and only make moves that bring you
+closer to the goal
+
+(cid:73) Example: Count disks on peg 3
+(cid:73) Problem 1: Sometimes you need to make moves that take
+
+you away from the goal in order to get there
+
+(cid:73) Problem 2: Where does the evaluation function come
+
+from?
+
+Means-Ends Analysis
+
+(cid:73) Idea: Work backwards
+(cid:73) What do I need to do to achieve my goal? Is there a
+barrier? Create a subgoal to remove that barrier ﬁrst.
+Recurse.
+
+(cid:73) Goal: Get large disk (3) to right peg (C)
+(cid:73) Barrier: Medium disk (2) is on top of large disk (3)
+(cid:73) Subgoal: Get medium disk (2) to middle peg (3)
+(cid:73) Barrier: Small disk (1) is on top of medium disk (2)
+
+(cid:73) Subsubgoal: Get small (1) disk to right peg (3)
+(cid:73) Easy, I can do that
+
+(cid:73) Now I can also move the medium disk
+
+(cid:73) ...
+
+Production System for Tower of Hanoi
+
+[Mayer, 1992, p. 195]
+
+Production System for Tower of Hanoi
+
+[Mayer, 1992, p. 195ﬀ]
+
+Production System for Tower of Hanoi
+
+[Mayer, 1992, p. 197f]
+
+Production Systems
+
+(cid:73) Represent goals and other information in working memory
+(cid:73) Productions are rules for action that “ﬁre” depending on
+the state of working memory and the state of the world
+
+(cid:73) They take the form: IF precondition THEN action
+(cid:73) Productions may compete with each other if several
+
+productions could ﬁre
+
+(cid:73) Productions are possible actions and not instructions
+(cid:73) Productions and their relative importance are learned
+(cid:73) Productions can be seen as cognitivist elaborations of
+
+classical stimulus-response relationships
+
+Problem Solving as Search
+
+(cid:73) A well-deﬁned problem has
+
+(cid:73) a problem space with states
+(cid:73) operations that move you from one state to another
+(cid:73) an initial state
+(cid:73) a goal state
+
+(cid:73) States include states of the world (I want all disks on peg
+3) and states of knowledge (I want to know the values for
+all letters)
+
+(cid:73) The task is to ﬁnd a path from the initial state to the
+
+goal state
+
+(cid:73) Hence, trying to solve a problem is searching in problem
+
+space
+
+(cid:73) Examples for search strategies are: Random, greedy,
+
+means-ends
+
+Insight Problems
+
+(cid:73) Some problems seem well-deﬁned and you think you have
+
+an idea about what the problem space is and what the
+operators are
+
+(cid:73) But you’re still stuck—you encounter an impasse
+(cid:73) The insight is what happens at the “aha” moment
+(cid:73) If we view problem solving as search we can often think
+about insight as rerepresenting the problem, i.e. using a
+diﬀerent problem space or diﬀerent operators
+
+Four Chains
+
+A man had four chains, each three links long. He wanted to
+join the four chains into a single, closed chain. Having a link
+opened cost 2 cents and having a link closed cost 3 cents. The
+man had his chains joined into a closed chain for 15 cents.
+How did he do it?
+
+[Bransford and Stein, 1984, p. 17]
+
+Mutilated Checkerboard
+
+[Kaplan and Simon, 1990]
+
+Representation Matters
+
+(cid:73) “A graduate student in Chemical Engineering spent 18
+hours and ﬁlled 61 pages of a lab notebook with notes,
+yet still did not solve the problem!“
+
+(cid:73) “In other pilot research with the MC problem, none of our
+
+subjects was able to solve the problem within an hour
+without being given one or more hints. Again, subjects
+switched from searching in the initial covering problem
+space to a meta-level space of potential new
+representations.”
+
+(cid:73) “Most of their time was spent either fruitlessly trying
+
+various coverings or searching for new approaches to the
+problem. When subjects ﬁnally paid attention to the
+parity of the squares, many experienced a sudden insight
+leading to the problem’s solution.”
+
+[Kaplan and Simon, 1990]
+
+Some Problem Spaces Used by Subjects
+
+(cid:73) Covering spaces
+
+(cid:73) Try placing all dominos horizontally.
+(cid:73) Try placing all dominos vertically.
+(cid:73) Try placing dominos in a spiral pattern.
+(cid:73) Try placing dominos in a zig-zag pattern.
+(cid:73) Try decomposing board into smaller areas, and cover
+
+each area.
+
+(cid:73) Mathematical spaces
+
+(cid:73) Consider whether a path between the mutilated squares
+
+contains an even or odd number of squares.
+
+(cid:73) Create mathematical expressions describing the
+
+quantities of dominos or squares.
+
+(cid:73) ...
+(cid:73) Parity space (the right one)
+
+(cid:73) Consider how color might help solve the problem.
+
+[Kaplan and Simon, 1990]
+
+Search Times By Problem Spaces
+
+Time spent after ﬁrst mention of parity, before rough proof
+
+Time spent in:
+Experimenter hints/comments
+Covering spaces
+Other nonparity spaces
+Parity space
+Total
+
+Mean % time spent
+1.96
+5.92
+7.24
+4.88
+20.00
+
+(cid:73) Diﬃculty stems from fruitless search in the wrong
+problem spaces (even after ﬁrst mention of parity)
+
+[Kaplan and Simon, 1990]
+
+Radiation Problem
+
+A more ill-deﬁned (i.e, realistic) problem:
+“Suppose you are a doctor faced with a patient who has a
+malignant tumor in his stomach. It is impossible to operate on
+the patient, but unless the tumor is destroyed the patient will
+die. There is a kind of ray that can be used to destroy the
+tumor. If the rays reach the tumor all at once at a suﬃciently
+high intensity, the tumor will be destroyed. Unfortunately, at
+this intensity the healthy tissue that the rays pass through on
+the way to the tumor will also be destroyed. At lower
+intensities the rays are harmless to healthy tissue, but they will
+not aﬀect the tumor either. What type of procedure might be
+used to destroy the tumor with rays, and at the same time
+avoid destroying the healthy tissue?”
+
+[Duncker, 1945, Gick and Holyoak, 1980]
+
+Solution Proposals
+
+(cid:73) Solution proposals can be classiﬁed by their functional
+
+value or means-by-which
+
+(cid:73) Functional aspects often precede concrete and speciﬁc
+
+proposals (means-ends analysis)
+
+(cid:73) Each solution class corresponds to a reformulation of the
+
+problem (rerepresentation)
+
+[Duncker, 1945, p. 5]
+
+Candles
+
+“On the door, at the height of the eyes, three small candles are
+to be put side by side.”
+
+[Duncker, 1945, p. 86]
+
+Candles
+
+[Duncker, 1945, p. 86]
+
+Functional Fixedness
+
+Items
+
+No. of Ss Problem solved “Presolutions”
+
+out of box
+
+in box
+
+7
+7
+
+7
+3
+
+1.3
+2.3
+
+(cid:73) If the boxes were used to hold the candles, tacks, and
+
+matches, i.e. the boxes were used as containers, Ss found
+it harder to imagine another function for the boxes
+
+(cid:73) Not being able to overcome this mental block is called
+
+functional ﬁxedness
+
+(cid:73) A similar pattern was seen for several other problems
+where the decisive object was either already used in a
+speciﬁc way or not
+
+[Duncker, 1945, p. 88]
+
+Analogies
+
+(cid:73) Where do problem spaces, problem reformulations, ideas
+
+come from?
+
+(cid:73) One idea: Analogical transfer, retrieve a (similar) problem
+
+that has been solved before from memory and map the
+solution to the new problem
+
+(cid:73) Clearly, analogies play a big role in science and teaching
+(e.g., atom is like solar system, electricity is like water,
+etc.)
+
+Analogies
+
+“A small country fell under the iron rule of a dictator. The dictator ruled
+the country from a strong fortress. The fortress was situated in the
+middle of the country, surrounded by farms and villages. Many roads
+radiated outward from the fortress like spokes on a wheel. A great
+general arose who raised a large army at the border and vowed to capture
+the fortress and free the country of the dictator. The general knew that if
+his entire army could attack the fortress at once it could be captured. His
+troops were poised at the head of one of the roads leading to the fortress,
+ready to attack. However, a spy brought the general a disturbing report.
+The ruthless dictator had planted mines on each of the roads. The mines
+were set so that small bodies of men could pass over them safely, since
+the dictator needed to be able to move troops and workers to and from
+the fortress. However, any large force would detonate the mines. Not
+only would this blow up the road and render it impassable, but the
+dictator would then destroy many villages in retaliation. A full-scale
+direct attack on the fortress therefore appeared impossible.”
+
+[Gick and Holyoak, 1980]
+
+How To Solve Problems (IDEAL)
+
+(cid:73) I: Identify problem
+(cid:73) D: Deﬁne problem
+(cid:73) E: Explore alternative approaches
+(cid:73) A: Act on a plan
+(cid:73) L: Look at the eﬀects
+
+[Bransford and Stein, 1984]
+
+Summary
+
+(cid:73) Problem solving can be seen as search in a problem space
+(cid:73) Examples for search strategies are: Random, greedy and
+
+means-ends
+
+(cid:73) Production systems are used to model problem solving
+
+(and other cognitive processes)
+
+(cid:73) We do not understand insight very well
+(cid:73) Finding the right problem representation is key to solving
+
+a problem
+
+(cid:73) Functional ﬁxedness is an example for a typical block in
+
+problem solving
+
+(cid:73) Analogies are a source for problem solutions
+(cid:73) The cognitive science of problem solving is of great
+
+practical importance
+
+Recommended Thinking
+
+(cid:73) Solve the DONALD+ROBERT cryptarithmetic puzzle and think aloud while
+you do this. For the aﬁcionados: If you recorded what you said (perhaps even
+recorded on video what you scribbled down) you could try to build the complete
+problem behavior graph afterwards.
+
+(cid:73) Can you trust verbal protocols as accurate reﬂections of thinking? What are
+problems? Can they be overcome? Are there better ways to ﬁnd out what’s
+happening in the head?
+
+lecture 2 on folk psychology)
+
+(cid:73) What is the diﬀerence between thinking aloud and introspection? (Go back to
+(cid:73) Convince yourself that the presented production system really solves the Tower
+(cid:73) To study “aha” moments you have to have a way to produce them. Solve as
+
+of Hanoi problem.
+
+many of the problems given on the next slides as you like. Not all problems will
+be accompanied by an “aha” experience. Sometimes you’ll be able to solve
+these problems by routine methods. In either case, think aloud while you try to
+solve the problems. For which problems can you say what the problem space,
+the initial state, the goal state and the operators are? Pay attention to how you
+search (for) the problem space? What’s your search strategy? What do you do
+when you get stuck? What is the insight that you needed to solve the problem
+and when and how did you get it? If you recorded your thinking aloud, listen to
+the recording. How often did you get close to the solution without having an
+insight?
+
+(cid:73) Will, one day, AI be able solve insight problems?
+
+More Problems
+
+(cid:73) Two train stations are 50 miles apart. At 1 P.M. on Sunday a train pulls out
+
+from each of the stations and the trains start towards one another. Just as the
+trains pull out from the stations a hawk ﬂies into the air in front of the ﬁrst
+train and ﬂies ahead to the front of the second train. When the hawk reaches
+the second train, it turns around and ﬂies toward the ﬁrst train. The hawk
+continues in this way until the trains meet. Assume that both trains travel at
+the speed of 25 miles per hour and that the hawk ﬂies at a constant speed of
+100 miles per hour. How many miles will the hawk have ﬂown when the trains
+meet? [Bransford and Stein, 1984, p. 6]
+
+(cid:73) What day follows the day before yesterday if 2 days from now will be Sunday?
+
+[Bransford and Stein, 1984, p. 18]
+
+(cid:73) One morning, exactly at sunrise, a Buddhist monk began to climb a tall
+
+mountain. The narrow path, no more than a foot or two wide, spiraled around
+the mountain to a glittering temple at the summit. The monk ascended the
+path at varying rates of speed, stopping many times along the way to rest and
+to eat the dried fruit he carried with him. He reached the temple shortly before
+sunset. After several days of fasting and meditation, he began his journey back
+along the same path, starting at sunrise and again walking at variable speeds
+with many pauses along the way. His average speed descending was, of course,
+greater than his average climbing speed. Is there a spot along the path that the
+monk will occupy on both trips at precisely the same time of day?
+[Bransford and Stein, 1984, p. 29]
+
+More Problems
+
+(cid:73) There are 12 cannonballs. All look alike, but one is the “oddball.” The oddball
+is either heavier or lighter than the other balls. You are supplied with a balance
+scale that can hold as many cannonballs as you would like on each side of the
+scale. The problem is, in 4 weighings (4 uses of the scale), ﬁnd the oddball.
+[Bransford and Stein, 1984, p. 21]
+
+(cid:73) There are two large jars. One jar is ﬁlled with a large number of blue beads and
+the other is ﬁlled with the same number of red beads. Five beads from the red
+bead jar are scooped out and dumped in the blue bead jar. Someone then puts
+a hand in the blue bead jar and scoops out ﬁve beads without knowing what
+color they are and dumps them into the read bead jar. Are there the same
+number of red beads in the red bead jar as there are blue beads in the blue
+bead jar? [Bransford and Stein, 1984, p. 29]
+
+(cid:73) Assume that a man has 25 cigar butts and that he uses 5 butts to make a new
+cigar (he rerolls the butts). How many cigars can he smoke after he has made
+them? [Bransford and Stein, 1984, p. 30]
+(cid:73) Two men played checkers. They played ﬁve games, and each man won three.
+(cid:73) Generate as many reasons as you can why, when my cousin comes to visit me in
+
+How is this possible? [Bransford and Stein, 1984, p. 105]
+
+my apartment, he always gets oﬀ the elevator ﬁve ﬂoors below my ﬂoor and
+walks the rest of the way. [Bransford and Stein, 1984, p. 105]
+(cid:73) Bob has 10 pockets and 44 silver dollars. He wants to put his dollars into his
+pockets so distributed that each pocket contains a diﬀerent number of dollars.
+Can he do so? [Polya, 1957, p. 234]
+
+More Problems
+
+(cid:73) A bear, starting from the point P, walked one mile due south. Then he changed
+
+direction and walked one mile due east. Then he turned again to the left and
+walked one mile due north, and arrived exactly at the point P he started from.
+What was the color of the bear? [Polya, 1957, p. 234]
+
+(cid:73) A man bought a horse for $60 and sold it for $70. Then he bought it back
+
+again for $80 and sold it for $90. How much did he make in the horse business?
+[Mayer, 1992, p. 69]
+
+(cid:73) You have three jugs, which we will call A, B and C. Jug A can hold exactly 8
+cups of water, B can hold exactly 5 cups, and C can hold exactly 3 cups. A is
+ﬁlled to capacity with exactly 8 cups of water. B and C are empty. We want to
+ﬁnd a way of dividing the contents of A equally between A and B so that both
+have 4 cups. You are allowed to pour water from jug to jug. [Mayer, 1992, p.
+55, 186]
+
+(cid:73) A man dies and leaves an estate, including 17 horses, to his three sons.
+According to his will, everything is to be divided among his three sons as
+follows: 1/2 to the oldest son, 1/3 to the middle son, and 1/9th to the
+youngest son. The three sons are puzzled over how to apply these instructions
+to divide the 17 horses. A probate lawyer rides by on his horse. He says, “I’ll
+donate my horse to you”. Then he proceeds to divide the horses among the
+three sons: 1/2 of 18 is 9, 1/3 of 18 is 6, 1/9 of 18 is 2. That’s 17 horses. The
+lawyer rides away with his own horse and a nice commission. How did the
+probate lawyer solve their problem? [Batchelder and Alexander, 2012]
+
+More Problems
+
+(cid:73) You have ten volumes of an encyclopedia numbered 1,...,10 shelved on a
+
+bookcase. Each volume has 100 pages. To simplify matters, assume that the
+front cover of each volume is page 1 and the back cover is page 100. You go to
+sleep, and in the middle of the night a bookworm crawls onto the bookcase.
+The bookworm eats through the ﬁrst page of the ﬁrst volume and continues
+onwards, stopping after eating through the last page of the tenth volume. How
+many pieces of paper did the bookworm eat through?
+[Batchelder and Alexander, 2012]
+
+(cid:73) You are driving up and then down a mountain that is twenty miles up and
+
+twenty miles down. You average 30 miles per hour for the ﬁrst 20 miles. How
+fast would you need to go for the remaining twenty miles to average 60 miles
+per hour for the entire trip? [Batchelder and Alexander, 2012]
+
+(cid:73) Three friends traveling together walk into a hotel and ask for a room. The
+
+manager tells them that the available room costs $30. Each pays $10, and then
+they go up to the room. Afterwards, the manager realizes he overcharged for
+the room and sends $5 back with the Bell Hop. On the way to the room, the
+Bell Hop realizes that these people are not expecting to get any money back.
+He decides to pocket $2 of the overcharge and gives the people in the room $3
+back. If the three travelers initially paid $10 each, and each got $1 back, then
+they each paid $9 for the room. $9 x 3 = $27. Adding to that the $2 the Bell
+Hop kept for himself brings the total amount paid for the room to $29. What
+happened to the 30th dollar? [Batchelder and Alexander, 2012]
+
+www.xkcd.com/1134/
+
+Recommended Reading
+
+The IDEAL problem solver [Bransford and Stein, 1984] is a very good “self-help” book
+on problem solving that strikes the right balance between making recommendations
+and pointing you to the cognitive science behind the recommendations. It also touches
+on memory. If you want to see what kind of recommendations you can expect from
+cognitive scientists for improving thinking, this will still be as good as it gets. How to
+Solve Problems [Wickelgren, 1974] is harder to work through but guides you more
+explicitly through concrete (search) strategies that you (or AI programs) can use for
+math and science homework questions. A real classic with an emphasis on
+mathematical problem solving is How to Solve It [Polya, 1957]. This book is based on
+the intuitions of a great mathematician and his experience with teaching. It did,
+however, have considerable inﬂuence on cognitive scientists, too. A good textbook for
+getting started with actual cognitive science of problem solving is Thinking, Problem
+Solving, Cognition [Mayer, 1992]. If you wanted to dive in deeper, I would recommend
+looking at Human Problem Solving [Newell and Simon, 1972]. This book has a
+reputation of being long and diﬃcult but you can get the gist without working through
+all the details they provide. It is certainly one of the most inﬂuential books in all of
+cognitive science. The historical appendix is particularly interesting for the beginner, I
+think. Search will be a major focus in your AI class and there you will also hear more
+about production systems. If you’re curious or skeptical about the role of verbal
+reports and introspection check out the debate between [Nisbett and Wilson, 1977]
+and [Ericsson and Simon, 1980] that I already mentioned during the second week in
+the lecture on folk psychology.
+
+References I
+
+Batchelder, W. H. and Alexander, G. E. (2012).
+Insight problem solving: A critical examination of the possibility of formal theory.
+The Journal of Problem Solving, 5(1):56–100.
+
+Bransford, J. D. and Stein, B. S. (1984).
+The IDEAL problem solver: A guide for improving thinking, learning, and creativity.
+W. H. Freeman and Company, New York.
+
+Duncker, K. (1945).
+On problem solving.
+Psychological Monographs, 58(5):1–113.
+
+Ericsson, K. A. and Simon, H. A. (1980).
+Verbal reports as data.
+Psychological Review, 87(3):215–251.
+
+Gick, M. L. and Holyoak, K. J. (1980).
+Analogical problem solving.
+Cognitive Psychology, 12:306–355.
+
+Kaplan, C. A. and Simon, H. A. (1990).
+In search of insight.
+Cognitive Psychology, 22:374–419.
+
+Mayer, R. E. (1992).
+Thinking, Problem Solving, Cognition.
+W. H. Freeman and Company, New York, 2nd edition.
+
+Newell, A. and Simon, H. A. (1972).
+Human Problem Solving.
+Prentice-Hall, Englewood Cliﬀs, NJ.
+
+References II
+
+Nisbett, R. E. and Wilson, T. D. (1977).
+Telling more than we can know: Verbal reports on mental processes.
+Psychological Review, 84(3):231–259.
+
+Polya, G. (1957).
+How to solve it: A new aspect of the mathematical method.
+Princeton University Press, Princeton, NJ.
+
+Wickelgren, W. A. (1974).
+How to solve problems: Elements of a theory of problems and problem solving.
+W. H. Freeman and Company, San Francisco.
+
+

@@ -1,0 +1,128 @@
+Table of Contents
+
+homework 6 ............................................................................................................... 1
+task one ..................................................................................................................... 1
+task two .................................................................................................................... 3
+
+homework 6
+
+%
+%
+%
+%
+
+Tara Radovic: 962296
+Krzysztof Piekarski: 958157
+Sonja Ries: 955077
+we would like to have a correction
+
+clear all;
+close all;
+
+load ('or.mat');
+
+task one
+
+figure
+imagesc (or);
+title ('orientation map');
+colorbar;
+
+% construction neuron row2, column7 - stimulus of 120°
+% standard diviation = 15, mu preferred orientation of each neuron
+
+h = 0:180; %"normal" window
+dist_1 = normpdf (h, or (2,7), 15);
+
+%gets the two additional ones on the left and right side
+g = -90:0;
+dist_minus = normpdf (g, or (2,7), 15);
+j = 180:269;
+dist_plus = normpdf (j, or (2,7), 15);
+
+dist_2 = [dist_plus , dist_minus];
+%putting the two additional windows together in the correct order
+dist_3 = dist_1 + dist_2;
+% adding additional with the "normal" window
+
+dist_n = dist_3./max(dist_3);
+%scaling the curve
+
+figure
+plot (dist_n);
+hold on
+plot (120, dist_n(120),'r+'); %marks the 120°
+title ('tuning curve, preferred orientation');
+hold off
+
+% calculate the activity map for a stimulus with an orientation of 135°
+% assume we wanted to predict the activity of all or.mat - showing stim of
+
+1
+
+% 135° orientation. Calculate activity for all neurons and visualize. gray
+% colormap should be used
+
+array = zeros(25,25);
+for i=1:25
+
+for k=1:25
+
+x = normpdf (0:360, or(i,k), 15);
+array (i,k) = x(135);
+%do we need to do any corrections here?
+
+end
+
+end
+
+figure
+imagesc(array)
+colormap ('gray');
+colorbar;
+title ('activity map for stimulus with 135° orientation');
+
+% Describtion relationship between activity map and orientation map:
+% Both maps are related as you can in principle get the activity out of the
+% orientation map and the orientation out of the activity map... We are
+% showing that in this exercice :)
+
+2
+
+3
+
+task two
+
+load ('act.mat');
+
+[C, Ind] = max (act, [], 3);
+% reconstruction of orientation only using maximal recorded activation
+
+figure
+imagesc(Ind);
+colorbar;
+title ('orientation map reconstructed from max. activation');
+
+for i=1:50
+
+for r=1:50
+
+x = maxestimate (linspace(0,157.5,8), squeeze(act (i,r,:)));
+Pref_dir (i,r) = x;
+
+end
+
+end
+
+figure
+imagesc(Pref_dir);
+colorbar;
+title ('estimated preferred orientation');
+
+4
+
+Published with MATLAB® 7.9
+
+5
+
+

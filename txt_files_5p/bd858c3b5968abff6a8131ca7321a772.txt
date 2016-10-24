@@ -1,0 +1,77 @@
+Protokoll EZ: AFM
+Von Alicia Kraffzik, Julian Rottschäfer, Tim Dargatz
+Erweiterungsmodul Mikrobiologie, Universität Osnabrück
+
+Einführung
+Ziel des Versuchs ist die Betrachtung der Auswirkungen von Stressbedingungen auf die 
+Biofilmbildung (Teil A) und Visualisierung der in Experiment 3 verwendeten Mutanten (Teil B). 
+
+Durchführung
+Teil A: Die Biofilme von E. coli RP437 wurden in dem gleichen Stressor und ähnlichen Bedingungen 
+wie in Experiment 3 in 8-Well-Platte auf Deckgläschen bei 30 °C in 48h herangezogen, gewaschen 
+und mit AFM betrachtet. 
+Unser Stressor war Teebaumöl mit einer Konzentration von 0,2 %, dass zum einen gleich zu Beginn 
+hinzugegeben wurde und zum anderen nach 24 Stunden hinzugefügt wurde.
+Zusätzlich wurden Gläschen mit einer ΔfimA Mutante erstellt.
+
+Teil B: Hier wurden Ausstriche der verschiedenen Mutanten aus Experiment 3 gewaschen, 
+ausgestrichen und mit AFM betrachtet.
+
+Ergebnisse:
+Teil B: Wegen zu starker Kristallbildung von Resten des Kulturmediums, konnten mit AFM keine 
+Bilder von Bakterienzellen erzeugt werden.
+
+Teil A
+
+AFM Bilder der Kontrolle:
+
+Die Kontrolle zeigt einen dichten kompakten Biofilm mit vielen intakten Zellen und hoher 
+Zelldichte.
+
+AFM Bilder der ΔfimA Mutante
+
+Auf dem Deckgläschen mit der ΔfimA Deletionsmutante war kein geschlossener Biofilm zu finden, 
+sondern nur Einzelzellen. Die länglichen Strukturen in dem Bild entsprechen in Länge und Dicke 
+Rste von Flagellen. Die Mutante hat zudem dünne Strukturen an ihrer Oberfläche, die jedoch sehr 
+kurz sind. Die Dicke der Zelle beträgt etwa 200 nm.
+
+AFM Bilder mit Teebaumöl Sofortzugabe
+
+Bei Zugabe des Teebaumöls gleich zu Beginn 
+der Inkubation führt dies zwar zu flächigen 
+Biofilmen, jedoch sind die Zellen erheblich 
+runder und ihre Umrisse unter ihrer 
+extrazellulären Matrix (EZM) nicht genau zu 
+erkennen.
+Die Bakterien  scheinen eher rund zu sein 
+und der Biofilm ist etwa 590 nm dick. Die 
+EZM scheint von der Kolonie ausgehend das 
+Glas in der Nähe der Kolonie dünn zu 
+bedecken.
+
+AFM Bilder mit Teebaumöl  Zugabe nach 24h Inkubation
+
+Durch die Zugabe des Teebaumöls nach 24 
+Stunden und weiteren 24 Stunden Inkubation 
+sind im Vergleich zur Kontrolle ähnlich 
+strukturierte Kolonien zu sehen.
+In den Detailaufnahmen sind zusätzlich sehr 
+deutlich Falten, bzw. Vertiefungen auf der 
+Oberfläche zu erkennen, die bei der Kontrolle 
+nicht vorkommen.
+
+Diskussion:
+Teil A: Die Zugabe von Teebaumöl scheint die Bildung des Biofilms stark zu verändern und führt zu 
+einer erheblich verstärkten Produktion von extrazellulärer Matrix. Bei eine späteren Zugabe zeigt, 
+dass auf einem bestehendem Biofilm das Teebaumöl möglicherweise auf die Zellwand wirkt und 
+die E. coli dadurch die Änderung in der Oberflächenmorphologie zeigen.
+In Experiment 3 haben wir bei Zugabe von Teebaumöl im Vergleich zu K12 Wildtyp eine Zunahme 
+des Biofilm Wachstums bei unverändertem Wachstum von freien Zellen gemessen.
+Die ΔFimA Mutante scheint noch Strukturen für die Adhäsion bilden zu können, jedoch sind sie von 
+einem anderen Typ als die Typ 1 Fimbrien, denn sie sind sehr viel kürzer. In Experiment 3 hatte 
+ΔFimA ein gegenüber K12 Wildtyp verringertes Wachstum im Biofilm, aber vor allem bei den freien 
+Zellen verringert. 
+Teil B: Häufigere Wäschen der Deckgläschen könnten die Kristalle des Kulturmediums auf dem 
+Deckgläschen verhindern oder reduzieren, sodass eine AFM möglich wird.
+
+

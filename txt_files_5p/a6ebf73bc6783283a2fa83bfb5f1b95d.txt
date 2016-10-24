@@ -1,0 +1,1171 @@
+SAP ERP 
+
+IS-Prozess-Audit 
+
+Vorlesung IT-Audit SS 2016 
+
+Frank Teuteberg, frank.teuteberg@uni-osnabrueck.de 
+
+Michael Adelmeyer, michael.adelmeyer@uni-osnabrueck.de 
+
+Unternehmensrechnung  
+und Wirtschaftsinformatik 
+
+Agenda 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+Motivation 
+
+Finanzbuchhaltung 
+
+Bestellwesen & MM 
+
+Vertrieb 
+
+Betrugserkennung 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+2  
+
+Nomenklatur 
+
+ 
+
+ Fett   
+
+ Kursiv 
+
+ 
+
+ 
+
+i.d.R. Transaktion 
+
+i.d.R. Report, Programm oder Parameter 
+
+ Unterstrichen  
+
+i.d.R. Menüeintrag 
+
+ 
+
+ 
+
+Viele Hinweise und weitere Erläuterungen (gerade im Bezug auf 
+Bearbeitung der Fallstudie) sind im SAP-Help Portal auffindbar: 
+http://help.sap.com  
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+3  
+
+Agenda 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+Motivation 
+
+Finanzbuchhaltung 
+
+Bestellwesen & MM 
+
+Vertrieb 
+
+Betrugserkennung 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+4  
+
+Motivation 
+
+ Risiken im Bereich der Verarbeitungs-/Systemabläufe 
+
+ Unvollständige / fehlerhafte Buchungen 
+
+ Nicht periodengerechte Buchungen 
+
+ Inkonsistente Buchungen 
+
+ Fehlende Nachvollziehbarkeit (fehlende Protokollierung) 
+
+ 
+
+ Kontrollziele 
+
+ Korrekte, zeitnahe Erfassung & Buchung der Belege 
+
+ Korrekte Abstimmung der Bücher 
+
+ Lückenlose Nachvollziehbarkeit der Buchungen 
+
+ Integrität der Daten bei verteilten Systemen 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+5  
+
+Agenda 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+Motivation 
+
+Finanzbuchhaltung 
+
+Bestellwesen & MM 
+
+Vertrieb 
+
+Betrugserkennung 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+6  
+
+Zeitnahe Buchungen 
+
+ Einteilung des Geschäftsjahres in Buchungsperioden 
+
+ i.d.R. Kalendermonat = Buchungsperiode 
+
+ i.d.R. nur eine Buchungsperiode offen 
+
+ Mindestanforderung 
+
+ Bei Jahresabschluss müssen alle Buchungsperioden 
+
+geschlossen sein 
+
+ 13. Buchungsperiode für Korrekturen 
+
+ 
+
+ Geschäftsjahrvariantenprüfung: Pflege über OB29; 
+
+Verknüpfung zu Mandant über Tabellen: T001, T009 
+
+ Offene Buchungsperioden: Über Customizing 
+
+FinanzwesenGrundeinstellungen F…wesen (neu)BücherGeschäftsjahr & Buchungsperioden 
+BuchungsperiodenBP öffnen & schließen 
+Alternativ: Tabelle T001B – Hier auch nur alle offenen geführt 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+7  
+
+Bilanzstruktur & Sachkonten 
+
+ Buchungen in SAP werden Sachkonten zugewiesen 
+
+ Systeminterne Kontrolle der Nullbuchungen (Summe der 
+
+Habenbuchungen = Summe der Sollbuchungen) 
+
+ Sachkonten werden GuV / Bilanz zugeordnet 
+
+ Hierarchie der Zuordnungen über OB58 (Tabellen T011, T011T) 
+
+prüfbar 
+
+ Je nach Gesetzesgrundlage verschiedene Optionen möglich 
+
+ Auch parallele Rechnungslegung möglich 
+
+ Einsicht in Sachkonten in Tabellen SKA1, SKB1 (Zuordnung zu 
+
+Buchungskreis in T001) 
+
+ Prüfung der ‚nur automatisch bebuchbaren‘ Konten wichtig (s. F. 9) 
+
+ Prüfung der Berechtigungsgruppen wichtig 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+ 
+
+8  
+
+Automatische Buchungen 
+
+ Verantwortung bei manuellen Buchungen obliegt dem 
+
+Buchhalter 
+
+ Viele Buchungen in SAP automatisiert 
+
+ Über FBKP können automatisierte Buchungen 
+
+(Kontenzuordnung) geprüft werden 
+Unter „AuswahlAutomatische Buchungen“ (entsprechende Bereiche auswählen) 
+ 
+
+ Kontenabstimmung 
+
+ Über Programm TFC_COMPARE_VZ Buchungen auf Konten mit 
+
+zugehörigen Belegen abstimmen (Prüfung über Historie) 
+
+ Kontensalden und Summe der Belege über RFSSLD00 in 
+
+Kombination mit RFHABU00 prüfbar 
+
+ Abstimmung Hauptbuch zu Nebenbüchern über RFKSLD00, 
+
+RFDSLD00 in Kombination mit RFKKBU00 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+9  
+
+Steuerberechnung 
+
+ 
+
+ Programm RFUMSV00 errechnet kumulierte Steuerbeträge am 
+
+Ende einer Periode 
+
+ Errechnung anhand der Vorgänge 
+
+ Rechnungseingang (Eingabe Steuerkennzeichen) 
+
+ Fakturierung (autom. Festlegung über USt.-Findung) 
+
+ 
+
+ FTXP ermöglicht Pflege der Steuerkennzeichen 
+
+ Wichtig: Fehler bei Abweichung (Eigenschaften  Toleranzsatz) 
+
+ Leere Felder erlauben manuelle Angabe 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+10  
+
+Währungen & Wechselkurse 
+
+ SAP hat immer eine Hauswährung 
+
+ Eingabe von Werten in Fremdwährung möglich 
+
+ Umrechnung anhand Währungsumrechnungskurse 
+
+ Kurse sind manuell pflegbar 
+
+ I.d.R. automatisierter Import aktueller Kurse 
+
+ Pflege der Kurse in Tabelle TCURR (Pflegeview: V_TCURR) 
+
+ 
+
+ Umrechnungskurse können trotzdem pro Beleg angepasst 
+
+werden 
+
+ Pflege der erlaubten Abweichungen (in %) wichtig: 
+
+ Tabelle T001: Pflege für Buchungskreis (alle Währungen) 
+
+ Tabelle TCURD: Pflege für spezielle Währungen 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+11  
+
+Belegvorerfassung 
+
+ Belegvorerfassung trennt zwischen Erfassung & Buchung 
+
+ Z.B. zur fachlichen Prüfung (4-Augen-Prinzip) 
+
+ Integration von Freigabeworkflows 
+
+ Wird im Konfigurationsleitfaden unter Finanzwesen 
+
+Grundeinstellungen FinanzwesenBelegBelegvorerfassung 
+konfiguriert 
+
+ 
+
+ Vorerfasste Belege sind buchhalterisch nicht erfasst (Konten nicht 
+
+belastet) 
+
+ Ende einer Buchungsperiode  keine vorerfassten Belege sollen existieren 
+
+ Gelöschte vorerfasste Belege hinterlassen Lücken in Nummernkreisen 
+
+ Transaktion FBV3 zeigt Liste der vorerfassten Belege, Report RFTMPBEL 
+
+Lister der unvollständig erfassten Belege 
+
+ Tabelle mit Daten zu vorerfassten Belegen: VBKPF, VBSEC, VBSEGA, 
+
+VBSEGD, VBSEGK, VBSEGS, VBSET 
+
+ Nummernkreispflege mit FBN1 und/oder Tabelle NRIV 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+12  
+
+Gelöschte Buchungen & Dauerbuchungen 
+
+ 
+
+ Löschen von Buchungen nicht zulässig 
+
+ Administration des Verbuchers mittels SM13, SM14 
+
+ Eingriffe sollten im SysLog gespeichert werden (Meldungen 
+
+„R0 R“, „R0 S”, „R0 U”, „R0 X”) 
+
+ 
+
+ Dauerbuchungen für wiederkehrende Vorfälle 
+
+ Ausführung über eingeplanten Job (Programm SAPF120) 
+
+(Übersicht und Pflege der Jobs über SM35, Analyse über SM37 
+ z.B. abgebrochene) 
+
+ Übersicht der Dauerbuchungen über Programm RFDAUB00 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+13  
+
+Anlagenbuchhaltung (FI-AA) 
+
+ Teilbereich der FiBu 
+
+ Verwaltung der Vermögensgegenstände 
+
+ Bewertung und Buchung von Zu-/Abgängen 
+
+ Ermittlung & Buchung der Abschreibungswerte 
+
+ 
+
+ Anlage: Stammdatum im Bereich FI-AA 
+
+Analyse der Änderungen über Programm RAAEND01, Analyse der 
+Werte über AW01N oder Report RAGITT01 
+
+ Anlagenklasse: Gruppierung von Anlagen (Tabelle ANKA) 
+
+ 
+
+ Zur Konsistenz-Prüfung der Kontenfinden können die Transaktion 
+
+OAK1 bis OAK6 genutzt werden 
+
+ Über Report RAABST01 können Differenzen zum Hauptbuch 
+
+aufgedeckt werden 
+ 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+14  
+
+Abschreibungen 
+
+ Zur Prüfung müssen angegeben Abschreibungswerte/ 
+
+-schlüssel mit den Länderspezifika/-vorgaben übereinstimmen 
+
+ 
+
+ Einsicht der Zuordnungen über OAYZ in Kombination mit 
+
+Tabellen ANLA, ANLB 
+
+ Pflege der Abschreibungsschlüssel mittel AFAMA 
+
+ Prüfung eigener Schlüssel (beginnen mit Z oder Y) 
+
+ Prüfung der hinterlegten Rechenregeln 
+
+ Alternativ auch über Tabellen T090NA, T090NAT, T090NAZ 
+
+ 
+
+ Vorgänge des Anlagevermögens werden im Anlagengitter 
+
+(Programm RAGITT01) visualisiert (Vollständigkeitsprüfung 
+über OA79) 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+15  
+
+Kreditor-/Debitorbuchhaltung 
+
+ Jedem Kreditor/Debitor wird Abstimmkonto zugeordnet 
+
+ Konto wird bei Buchungen verwendet 
+
+ Oft aggregierte Konten 
+
+(1 Konto – mehrere Kreditoren: z.B. Forderungen aus L&L) 
+
+ 
+
+ Bei Prüfung relevant: 
+
+ Zuordnung der richtigen Konten (z.B. Inland/Ausland) über 
+
+Länderkürzel (Tabellen LFA1, KNA1 vs. LFB1, KNB1) 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+16  
+
+SAP Zahllauf 
+
+ Transkation F110 (oder F111) sammelt fällige Zahlungen und 
+
+erstellt Vorschlagsliste 
+
+ Anschließende Freigabe & Zahlung der Vorschläge 
+
+ 
+
+ Probleme 
+
+ Zahlungen oft in Dritt-Software / keine Schnittstelle 
+
+ Diverse Zahlungsarten (Scheck, Überweisung, …) 
+
+ Oft hunderte bis x-tausend Vorschläge (nicht prüfbar) 
+
+ 
+
+ Oft lediglich Konzentration auf Rechnungsprüfung 
+Keine Kontrolle fälliger Zahlungen / lediglich Funktionstrennung 
+(Erstellung Vorschlagsliste + Durchführung) 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+17  
+
+Conto pro Diverse 
+
+ I.d.R. existiert Stammdatum eines Kunden  
+
+Funktionstrennung bei Stammdatenpflege und Belegerfassung 
+
+ Für Einmal-Kunden (-Lieferanten) existieren CpD 
+
+ Hier direkte Eingabe der Bankdaten bei Belegerstellung 
+
+(Umgehung der Funktionstrennung) 
+
+ Risiko, da  
+
+ anonymer Geschäftspartner 
+
+ kein gepflegtes Kreditlimit 
+
+ Betrug (keine Lieferung) 
+
+ 
+
+ Über Tabellen KNA1 und LFA1 können Datensätze für 
+
+Einmalgeschäftspartner eingesehen werden 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+ 
+
+18  
+
+Agenda 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+Motivation 
+
+Finanzbuchhaltung 
+
+Bestellwesen & MM 
+
+Vertrieb 
+
+Betrugserkennung 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+19  
+
+Bestellwesen 
+
+ Bezug von Waren oder Dienstleistungen führt zu Zahlungen 
+
+ Risiko bzgl. 
+
+ Vollständigkeit & Bewertung von Beständen 
+
+ Verbindlichkeiten & Rückstellungen für Rechnungen 
+
+ Funktionstrennung auch im Bestellwesen wichtig 
+Hier auch beachten: zentraler/dezentraler Einkauf 
+
+ Oft Lösung mit BANF, Bestellung & Freigaben umgesetzt 
+
+ 
+
+ Einführungsleitfaden (UnternehmensstrukturDefinition 
+
+Logistik Allgemein …) bietet Einsicht in Organisationsstruktur 
+
+ Alternativ auch die Tabellen T001W, T024E, T024W, T001K 
+
+ 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+20  
+
+BANF-/Bestellfreigabe 
+
+ In SAP können Freigaben umfangreich gesteuert werden 
+
+ Pro Bestellung, Bestellposition, Positionssummen, … 
+
+ Für verschiedene Lieferanten, Werke, Warengruppen, … 
+
+ Freigaben sind im Einführungsleitfaden zu pflegen 
+
+(MaterialwirtschaftEinkaufBestellungFreigabeverfahren (für 
+BE)Freigabeverfahren … festlegen) (alternativ auch für BANF) 
+
+ Ermittlung der Verantwortlichkeiten z.B. über Kostenstellen oder 
+
+Freigabehierarchien 
+
+ Verknüpfung mit SAP Business Workflow (Freigabeprozess) möglich 
+
+ 
+
+ Freigabe-Strategie-Einstellungen sind in Tabelle T16FS (T162) 
+
+gepflegt 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+21  
+
+Wareneingang / Rechnungsprüfung 
+
+ Warenbewegung in SAP über Bewegungsarten 
+
+ Kritisch: Bew.-Arten 561 und 501 stellen Eingang ohne Beleg (z.B. 
+
+Bestellung) dar 
+
+ Über OMJJ Sperrung möglich (keine erlaubte Transaktionen 
+
+hinterlegen) 
+
+ Über MB51 kritische Materialbewegungen einsehbar 
+
+ 
+
+ Rechnungseingang/-prüfung über MIRO 
+
+ Bezug zu WE und Bestellung (3-Way-Match) 
+ Bei Abweichungen (Toleranzgrenzen)  Zahlsperre ‚R‘ 
+
+ Grenzen sind im Customizing (MaterialwirtschaftLogistik-
+
+RechnungsprüfungRechnungsperreToleranzgrenzen festlegen) gepflegt 
+
+ Aufhebung gesperrter Rechnung mittels MRBR 
+
+ 
+
+ Wichtig: Berechtigungen für Entsperrung, Bewegungsarten 561, 501 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+22  
+
+Wareneingang / Rechnungsprüfung 
+
+ Doppelte Rechnungen 
+
+ Prüfung auf Warnung bei doppelten Rechnungen kann im 
+
+Konfigurationsmenü im Bereich Eingangsrechnungen aktiviert 
+werden 
+
+ Auditing durch (externe) CAAT-Tools; z.B. Excel-Export der 
+Rechnungen und Analyse mit ActiveData (s. kommende VL) 
+
+ 
+
+ WE/RE-Konto (MR11) / Kompletter Name: Wareineingang/Rechnungseingang Verr. 
+
+ Spezielles ‚Zwischenkonto‘ zum Buchen der ER und WE in SAP 
+
+üblich (Überprüfung mittels FBL3N | nur o.g. Konto anzeigen) 
+
+ Oft mehrere unausgezifferte Positionen  Saldo != 0 
+
+ Abschluss des WE/RE-Konto zum Ende einer Periode 
+
+ Saldo-Aufsplittung in 2 Positionen (offene Lief./Rechnungen) über 
+
+Transkation FBKP 
+
+ Auflistung der Posten z.B. über Report RM07MSAL 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+23  
+
+Kontenfindung bei Materialbewegungen 
+
+ 
+
+ Neben Bewegungen an Lagerorten müssen entsprechende 
+
+Buchhaltungswerte angepasst werden 
+
+ Bereits bekannt: Materialbewegung über Bewegungsarten 
+
+ Bewegungsart bestimmt Mengen- und Wertänderung 
+
+ Kontenfindung hierbei sehr wichtig  richtige Werte in GuV und 
+
+Bilanz 
+
+ 
+
+ Einstellungen zur Kontenfindung über OMWD (Tabelle T030) 
+
+ Saldenabgleich MM–FI: Programm RM07MMFI + RM07MBST 
+
+ Konsistenzprüfung Bestände: RM07KO01 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+24  
+
+Agenda 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+Motivation 
+
+Finanzbuchhaltung 
+
+Bestellwesen & MM 
+
+Vertrieb 
+
+Betrugserkennung 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+25  
+
+Vertrieb 
+
+ Wichtige Schritte im Bereich Vertrieb 
+
+ Angebotserstellung / Auftragserfassung 
+
+ Warenbereitstellung 
+
+ Fakturierung 
+
+ Zahlungseingang 
+
+ Etwaige Fehler bei Erfassung sind zu vermeiden 
+
+ Datenübernahme (aus anderen Angeboten/Aufträgen) 
+
+ Vollständigkeitskontrollen 
+
+ Verschiedene Belegarten (VertriebVerkaufVerkaufsbelege 
+
+VerkaufsbelegkopfBelegarten definieren) im IMG pflegen 
+
+ Prüfung der Vollständigkeitskontrollen (IMG oder Tabelle TVAK) 
+
+ Prüfung doppelt erfasster Aufträge (SDD1) 
+
+ Prüfung Kommissionierungen ohne Warenausgang (VL06O) 
+
+ Prüfung gesperrter/entsperrte Belege (VKM1, VKM2) 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+26  
+
+Stammdatendatenkontrollen 
+
+ Essentiell sind korrekte Stammdaten (z.B. Bankverbindung, 
+
+Kreditlimits, Kontaktdaten, …) 
+
+ Prüfung auf doppelte Kundenstämme (S_ALR_87012180) 
+
+ Prüfung der Änderungsbelege (S_ALR_87012182) 
+
+ Funktionstrennung bzw. 4-Augen-Prinzip für sensible Daten 
+
+(FinanzwesenDebitoren- und KreditorenbuchhaltungDebitorenkontenStammdatenAnlegen der 
+DebitorenstammdatenSensible Felder für 4-Augen-Prinzip festlegen) 
+Prüfung kritischer Änderungen (RFDCON00) 
+
+ Pro Kundenstamm Buchungskreis- und Vertriebsdaten gepflegt 
+
+ Debitoren werden entweder in Vertrieb angelegt (VD01) bzw. 
+
+geändert (VD02) oder im Rechnungswesen (FD01, FD02) 
+
+ Übergreifende Pflege auch möglich (XD01, XD02) 
+
+ Überprüfung über Programm RFDKAG00 auf fehlende Daten 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+27  
+
+Warenauslieferung und Rechnung 
+
+ Verschiedene Auslieferungen in SAP möglich 
+
+ Mit/ohne Kommissionierung, kostenlose Lieferung ohne Bezug zu 
+
+Belegen (kritisch), etc. 
+
+ Bewegungsarten auch hier relevant (bereits bekannt) 
+
+ Kontrolle auf bekanntem Wege 
+
+ Insbesondere Kontrolle kritischer Bew.-Arten 
+
+ 
+
+ Vertriebsbelegpflege unter VOV8 (Tabelle TVAK) 
+
+ Bei Belegen mit kostenloser Lieferung  „Sperre Verkaufsbeleg“ 
+
+auf A setzen (erzwingt Freigabe/Kontrolle) 
+
+ VA14L liefert Übersicht gesperrter Vertriebsaufträge 
+
+(Aktualisierung Sperrinformationen via  Programm SDSPESTA; 
+Testmodus deaktivieren) 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+28  
+
+Faktura 
+
+ Fakturavorrat = Fakturierbare (aber noch nicht fakturierte) 
+
+Belege  
+
+ Fakturen sollten zeitnah erstellt werden 
+
+ Fakturavorrat (VF04) kontrollieren 
+
+ Stammdatenpflege Fakturaarten: 
+
+VertriebVerkaufFakturierungFakturaFakturaarten 
+definieren oder Tabelle TVFK 
+
+ 
+
+ Erstellte Fakturen werden an Buchhaltung weitergeleitet 
+
+ Überprüfung auf nicht weitergeleitete Faktura 
+
+- VF03 -> über F4-Suche nach Faktura auffindbar 
+- Ermittlung über Tabelle VBRK (Buchungsstatus = 0, A, B, F, G, I 
+oder K) 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+ 
+
+29  
+
+Mahnungen 
+
+ Nach Faktura sind Forderungen offen = offene Posten 
+
+ Falls kein Ausgleich erfolgt, greift SAP Mahnwesen 
+
+ Ermittlung offener Posten, Mahnstufen, etc. 
+
+ Druck des Mahnschreibens (oder E-Mail, …) 
+
+ Automatisiert oder manuell 
+
+ Einstellung können in OBL6 gepflegt werden 
+
+ Definition der Mahnverfahren in FBMP 
+
+ 
+
+ Tabellen LFB5 und KNB5 bestimmen Mahnsperre (Kunden die keine 
+
+Mahnung bekommen) 
+
+ Einsicht der im Verzug stehenden offenen Posten über FBL3N 
+
+(FBL5N) über „Verzug nach Nettofälligkeit“ 
+
+ Mahnhistorie über F150 einsehbar 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+30  
+
+Agenda 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+Motivation 
+
+Finanzbuchhaltung 
+
+Bestellwesen & MM 
+
+Vertrieb 
+
+Betrugserkennung 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+31  
+
+Betrugserkennung 
+
+ Betrügerische Finanzberichterstattung 
+ Unternehmensergebnis verbessern 
+ Vermögen, Umsätze, Gewinne ↑ oder Aufwendung etc. ↓ 
+
+ Vermögensunterschlagung 
+
+ Unternehmensvermögen für private Zwecke nutzen 
+ Eigene Rechnungen begleichen 
+ Vermögen transferieren 
+
+ 
+
+ Bisher gelernt: meist Betrugsprävention durch Konfiguration, 
+
+Sicherheit, Fehler, Abbrüche, etc. 
+
+ Aber: IT-Audit auch für Betrugserkennung zuständig 
+
+ 
+
+ Hier: Nur kurze Einführung in SAP Betrugserkennung/-vermeidung 
+ Kommende Veranstaltungen (Fraud Detection & ActiveData) 
+
+beschäftigen sich explizit mit dem Thema 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+ 
+
+32  
+
+Manuelle Buchungen 
+
+ SAP bietet Möglichkeit der manuellen Buchung im Hauptbuch 
+
+ i.d.R. durch Konfiguration verhindert 
+
+ Zusätzliches manuell bebuchbares (überwachtes) Konto 
+
+ In Tabelle SKB1 (Feld INTB oder XINTB) einsehbar welche 
+
+Konten nur automatisch bebuchbar sind 
+
+ Alternativ: Funktionen / Objekte zur manuellen Erfassung 
+
+sperren 
+
+ FB01, FB50, FB50L, FB01L 
+
+ Zusätzlich Eigenentwicklungen überprüfen 
+
+ 
+
+ Überprüfung der Journaleinträge 
+
+ Meist Extraktion der Daten aus Tabellen BKPF, BSEG 
+
+ Analyse über (externes) CAAT-Tool (z.B. ActiveData) 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+33  
+
+Fiktive Rechnungen 
+
+ Fall: Vertriebsmitarbeiter möchte mehr Umsatz erreichen  
+
+umsatzabhängiger Lohn 
+
+ Überprüfung nicht bezahlter Rechnungen (offene Posten (OP)) 
+
+ S_ALR_87012168 – Übersicht OP 
+
+ S_ALR_87012175 – OP nach Debitor 
+
+ S_ALR_87012175 – OP nach Debitor & Saldo 
+
+ Zur Vermeidung 
+
+ Funktionstrennung Stammdatenpflege und Buchung  
+
+ Rechnungserstellung nur mit Verknüpfung anderer Belege (Bestellungen,…) 
+
+ 
+
+ Gutschriften 
+
+ Z.B. erhöhte Gutschrift unter Empfänger und Ersteller aufteilen 
+
+ Prüfung der Tabelle VBRK wer Gutschriften erstellt (nach Fakturaart 
+
+(FKART) filtern und Anleger (ERNAM) identifizieren) 
+
+ Zur Vermeidung Rechte einschränken und/oder 4-Augen-Prinzip 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+34  
+
+Fiktive Angestellte 
+
+ In großen Unternehmen 
+
+ Angestellter der nur im System existiert 
+
+ Überstunden erfasst aber nicht geleistet 
+
+ Kontodaten gepflegt  Geld wird überwiesen 
+
+ 
+
+ Lösungen 
+
+ Durchsicht der Änderungen der Stammdaten 
+
+ Zugang zu HCM (Human Capital Management) kontrollieren 
+
+ Trennung Stammdatenpflege, Zeiterfassung 
+
+ Aufdecken ungewöhnlicher Abweichungen 
+
+ Stichproben; Z.B. Vergleich mit Arbeitsvertrag 
+
+ 4-Augen-Prinzip (s. Folgefolie) 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+35  
+
+4-Augen-Prinzip 
+
+ Wichtiges Konzept der Betrugsvermeidung 
+
+ In allen Bereichen (über Berechtigungsobjekte) zu pflegen  
+
+ 
+
+ Im Bereich HCM durch Datenschutzgesetze extrem wichtig 
+
+Berechtigungsobjekte P_ORIGIN / P_ORGXX 
+
+ 
+
+ Asymmetrisches Prinzip 
+
+ Pfleger erhalten Rechte E(nqueue), R(ead) | nicht W(rite) 
+
+ Gemehmiger erhalten Rechte D(equeue), R(ead) | nicht 
+
+W(rite) 
+
+ Symmetrisches Prinzip 
+
+ Rechte S(ymmetrisch) und R(ead) vergeben | nicht W(rite)  
+
+dann muss jeweils ein andere freigeben, keine feste Rolle 
+
+ 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+36  
+
+Wichtig! 
+
+ Bearbeiten Sie die Aufgaben in SAP und schicken Sie Ihr 
+
+Lösungsblatt zur Fallstudie 2 bitte bis  
+
+Montag, 13.06.2016 08:00 Uhr an michael.adelmeyer@uos.de 
+
+ 
+
+ Bitte benennen Sie die Lösungsdatei nach folgendem Schema 
+
+MATRIKELNUMMER–NAME–FALLSTUDIE2.pdf 
+
+ Lösungen und Dateien die um 08:00 Uhr nicht vorliegen 
+
+werden mit 5,0 bewertet! 
+
+ 
+
+ Eine Musterlösung wird nicht bereit gestellt 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+37  
+
+Hinweis 
+
+ 
+
+ Anzeige Feldbezeichner statt Feldname in SE16 
+
+ 
+
+ Menüpunkt Einstellungen -> Benutzerparameter gehen 
+
+ Reiterkarte „Data Browser“ wählen 
+
+ Unter Schlüsselwort „Feldbezeichner“ auswählen 
+
+ 
+
+ Sinnvoll, wenn viele Tabellen analysiert werden 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+38  
+
+Literatur 
+
+ 
+
+ Chuprunov (2012): Handbuch SAP-Revision; Galileo Press 
+
+ 
+
+ Hartke, Hohnhorst, Satller (2010): SAP Handbuch 
+
+Sicherheit und Prüfung; IDW Verlag GmbH 
+
+ 
+
+ Linkies, Off (2009): Sicherheit und Berechtigungen in SAP-
+
+Systemen; Galileo Press 
+
+ 
+
+ Tiede (2000):  SAP R/3 Ordnungsmäßigkeit und Prüfung des 
+
+SAP-Systems (OPSAP); Ottokar Schreiber Verlag GmbH 
+
+©2016 | Prof. Dr. Frank Teuteberg 
+
+39  
+
+

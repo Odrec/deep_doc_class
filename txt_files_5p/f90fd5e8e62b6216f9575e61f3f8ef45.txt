@@ -1,0 +1,82 @@
+Tomasi/Scharle/Souderes
+
+1. Mai 2016
+
+Mathematik f¨ur Anwender I
+
+¨Ubungsblatt 4
+
+Abgabe: 09.05.2016, bis 10:00 Uhr
+
+1. (5 Punkte) Bestimmen Sie die folgenden Grenzwerte:
+
+2n
+
+(1) limn→∞
+(2) limn→∞
+(3) liminfn→∞
+(4) limsupn→∞
+
+2n+2−n
+2n+1
+2n+n2
+3n2+ n√
+4n2+5
+2
+(−1)n+1
+
+(5) liminfn→∞(−1)3n(cid:0)2 + (−1)n 3
+
+2
+
+n
+
+(cid:1)
+
+2. (2 Punkte) Sei M ⊂ R nach oben beschr¨ankt. Zeigen Sie, dass es eine Folge (an) mit an ∈ M
+
+gibt, sodass limn→∞ an = supM.
+
+3. (2+3 Punkte +4 Bonuspunkte1) Sei (an) eine beschr¨ankte Folge. Sei weiterhin M die Menge
+
+aller H¨aufungspunkte von (an). Zeigen Sie
+(1) M ist nach oben beschr¨ankt.
+(2) supM ∈ M.
+(3) maxM = limsupn→∞ an.
+
+4. (3+3 Punkte) Sei p ∈ N mit p ≥ 2. Sei a > 0. W¨ahle x0 ∈ R so, dass xp
+
+0 ≥ a. Deﬁniere die
+
+Folge (xn)n∈N0 rekursiv durch
+
+xn+1 := xn − xp
+
+n − a
+pxp−1
+
+n
+
+.
+
+n ≥ a f¨ur alle n ∈ N.
+
+(1) Zeigen Sie, dass xp
+(2) Zeigen Sie, dass xn (cid:38) p√
+
+Tipp: Wenden Sie die Bernoullische Ungleichung auf xp
+gegen p√
+
+a.
+
+n+1 an.
+
+a f¨ur n→ ∞, d.h. die Folge ist monoton fallend und konvergiert
+
+5. (2 Punkte) Sei 0 < q < 1 und an eine reelle Folge mit |an+1 − an| < q|an − an−1|. Zeigen
+
+Sie, dass (an) konvergiert.
+
+1Aufgabe 3(3) ist eine fakultative Nuss. N¨usse sind bekanntlich schwierig zu knacken, aber sehr nahrhaft.
+
+

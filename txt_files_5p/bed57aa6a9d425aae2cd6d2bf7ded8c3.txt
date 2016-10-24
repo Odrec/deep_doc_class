@@ -1,0 +1,476 @@
+Wiederholung – Wellenarten, transversale und longitudinale Wellen
+
+Auslenkung oder Elongation y senkrecht zur Ausbreitungsrichtung x = transversal
+
+Auslenkung oder Elongation y parallel zur Ausbreitungsrichtung x = longitudinal
+
+Spiral-
+Feder
+
+y ( x ,t )= ymsin (kx−ωt )
+Ausbreitungsgeschwindigkeit der Welle:  c= ω
+Zur Erinnerung: f ist die Frequenz, T die Periode, ω die Kreisfrequenz
+
+2π = λ
+λ
+
+k = 2π
+T
+
+T =λ⋅f
+
+Schall ist eine longitudinale Welle.
+
+Lautsprecher
+
+Stimmgabel 
+
+Keine Luft – kein Schall → Schall = kollektive Bewegung von Luftmolekülen
+
+Longitudinale Welle: Auslenkung 
+
+ 
+
+ y   der Luftmoleküle parallel zur Ausbreitungsrichtung.
+
+Auch beschreibbar als Druckwelle  p ( x ,t )= p0sin(kx−ωt ) , mit  p = tatsächlicher Druck minus
+
+Ruhedruck.
+
+p  und y sind um 90° phasenverschoben.
+
+Schall aus Druckpulsen – ein ungewöhnlicher Schallgenerator, die Lochsirene
+
+Das Verhältnis der Zahl der Löcher je Umfang für zwei Radien entspricht dem Verhältnis der
+
+entsprechenden Frequenzen – die Frequenzverhältnisse sind in der Musik von großer Bedeutung. 
+
+Schallwellen in Gasen sind longitudinale Druck- und Auslenkungswellen
+
+Nochmals eine Schallwelle als 1D-Welle dargestellt.
+Dunkelblaue Bereiche sind Gebiete hohen Drucks,
+
+helle Bereiche sind Gebiete niederen Drucks.
+
+Mit kleinen Pfeilen wird die momentane
+
+Animation: Schallwelle.avi
+
+Die Schallquelle befindet sich links unten.
+Die Welle breitet sich nach rechts oben
+
+Geschwindigkeit der Volumenelemente dargestellt.
+
+Beachte die Bewegung eines einzelnen
+
+aus.
+
+Volumen-Elementes. 
+
+Bild vom letzten Mal. 
+Jetzt können wir die „Welle“ in der Scala vestibuli untersuchen:
+
+Die „Welle“ in der Hörschnecke
+
+Ausbreitungsgeschwindigkeit der Welle:  c=λ⋅f
+
+Die Schallgeschwindigkeit c beträgt in Wasser ca. 1400 m/s. 
+Also ist λ für z. B. f=3kHz:  λ=1400
+3000
+Dies ist deutlich länger als die Ausdehnung der Hörschnecke.
+Man kann also den Druck als ortskonstant ansehen.
+
+=0.47 m=47cm  
+
+Rechts: 
+Ausguss eines
+menschlichen
+Innenohrs
+(aus Wikipedia).
+Beachte die Skala!
+
+Reflexion, Transmission, Dämpfung = Absorption von Wellen
+
+Für alle physikalischen Wellen gilt:
+
+An der Grenzfläche zwischen 2
+Medien tritt i.A. Reflexion und
+
+Transmission auf. 
+
+Die Summe der Amplituden aller
+
+Wellen muss konstant sein –
+
+„Stetigkeit“
+
+Ein Medium kann Wellen dämpfen
+(rechts unten). Der transmittierte
+Anteil wird absorbiert - Absorption 
+
+Bei schrägem Einfall auf die Grenzfläche kann noch die sogenannte "Brechung" auftreten, die wir 
+aber erst später bei der Optik besprechen wollen, ebenso wie das dann benötigte Reflexionsgesetz.
+
+Zweidimensionale Ausbreitung Kreiswelle
+
+Kreiswelle:  y (x , z ,t)= ym sin(k √x2+ z2 – ωt)= ym sin(kr – ωt)
+
+Wellenfronten = Orte gleicher Auslenkung (Wellenkämme, Wellentäler) bilden Kreise.
+
+Kreis mit  r= x2z2  ist die Ortslinie derjenigen Punkte (x,z), bei denen das Argument des Sinus,
+
+k √ x2+ z 2 – ω t , einen gleichen Wert hat. 
+
+Wie alle Wellen können auch Schallwellen reflektiert werden – Echolot
+
+Die Zeit wächst von links nach rechts.
+
+Animation: Fledermaus.GIF.
+Die Fledermaus arbeitet mit Ultraschall = Frequenzen größer als 20 kHz.
+Die Fledermaus kann aus dem zeitlichen Abstand zwischen Aussenden des Wellenzuges und dem 
+Eintreffen des reflektierten Teilwellenzuges an ihrem Ohr auf den Abstand zur Motte schließen – 
+Prinzip des Echolotes.
+
+Kann zur bildlichen Darstellung von Oberflächen verwendet werden – Sonographie
+
+(nächstes Schaubild)
+
+Sonographie
+
+Kind im Mutterleib. Mit General Electric-Maschine, nach digitaler Bildbearbeitung.
+
+Was passiert durch die Reflexion an einer festen Wand (keine Transmission)
+
+Trifft die Welle auf ein Hindernis, zum Beispiel das 
+befestigte Seilende, so tritt im Allgemeinen eine
+
+reflektierte Welle auf.
+
+Diese kann in gleicher Weise zurücklaufen – rechtes 
+Teilbild, man spricht von Reflexion am losen Ende.
+
+Die reflektierte Welle kann umgeklappt werden – linkes 
+Teilbild, man spricht von Reflexion am festen Ende und 
+von einem Phasensprung um π. (Verschiebt man einen 
+Sinus um π, so ist er das negative der unverschobenen 
+Kurve.)
+
+Beide Fälle treten auch bei Sinuswellen auf.
+
+Randbedingungen = Phasensprung oder kein Phasensprung
+hat große Bedeutung, wenn man die Überlagerung einer 
+hin- und rücklaufenden Welle betrachtet – folgendes Bild.
+
+(Im Beispiel eines einzelnen Wellenberges wie im Bild rechts 
+gibt es eine solche Überlagerung natürlich nicht.)
+
+Überlagern sich zwei Wellen mit fester Frequenz und Wellenlänge, so resultieren stehende Wellen.
+
+Die stehende Welle
+
+Momentaufnahmen von eindimensionalen Wellen für 5 ausgewählte Zeitpunkte.
+
+Reihe (a): "Hinlaufende" Welle, von rechts nach links.
+Reihe (b): Reflektierte oder "rücklaufende" Welle von links nach rechts.
+
+Die Wellen aus (a) und (b) überlagern sich nun, d.h., beide Auslenkungen addieren sich an jedem Ort. Diese
+
+Addition hat der Zeichner sorgfältig durchgeführt und das Ergebnis in Reihe c) dargestellt.
+
+Offenbar findet eine Reflexion mit Phasensprung an der y-Achse statt, was man bei T/4 und 3T/4 erkennt. Falls 
+kein Phasensprung auftritt ("loses Ende"), ergibt sich ebenso eine stehende Welle.
+
+Merkmal der stehenden Welle sind Stellen, die permanent ohne Auslenkung bleiben – die
+
+sogenannten Knoten der stehenden Welle (schwarze Punkte in c)).
+
+Umgekehrt gibt es Stellen maximaler Auslenkung, die Bäuche, genau zwischen den Knoten.
+
+Simulation – Animation einer stehenden Welle
+
+Animation STEHWELLE.AVI
+y-Achse: Auslenkung (z. B. Seil), 
+x-Achse: Ort.
+Zunächst werden nur eine nach rechts und eine 
+nach links laufende Welle generiert. Ein 
+Element des Seils ist (im Film) als Kreuz 
+markiert, um zu zeigen, dass kein 
+Materietransport stattfindet – das betreffende 
+Element bleibt an Ort und Stelle. 
+Die von rechts kommende Welle kann als 
+Reflexion der oberen Welle an der Wand rechts 
+angesehen werden – ohne Phasensprung
+Dann werden beide Wellen addiert – die 
+stehende Welle erscheint unten.
+Schließlich werden mehrere Momentaufnahmen 
+übereinander gemalt – das Bild rechts entsteht.
+
+Überlagerung von Schallwellen
+
+Wenn der Lautsprecher viel kleiner als die 
+laterale Ausdehnung von Schallwelle und  
+reflektierender Wand ist, so besteht nur an der
+Wand eine Randbedingung (Druckbauch – 
+Bewegungsknoten). 
+
+Es überlagern sich hin- und rücklaufende 
+Welle – eine stehende Welle entsteht durch 
+Überlagerung, ohne dass eine Bedingung für 
+den Abstand Lautsprecher-Wand existiert.
+
+Die stehende Welle kann mit dem Mikrofon 
+abgetastet werden.
+
+Im folgenden Versuch findet die 
+Überlagerung in einem Rohr statt und wir 
+fordern zusätzlich einen bestimmten Abstand 
+Lautsprecher-Wand:
+
+Resonante Überlagerung.
+
+Experiment in der Vorlesung.
+
+Stehende Schallwellen im Rohr – das Kundt'sche Rohr – Resonanz
+
+Vorlesungsexperiment
+
+Im Bild rechts ist die Einhüllende der stehenden Welle gezeichnet. Genauer: Die Welle der Auslenkungen der 
+Gasteilchen, die Druckwelle wäre um  π /2  verschoben (Bauch am Stöpsel, Knoten am Lautsprecher).
+In den Bäuchen der Bewegung wird das Korkmehl von der Wand "geblasen" (Bild links).
+Der Abstand der Knoten (Mehl noch an der Wand) oder der Bäuche ist ein Vielfaches von  λ/2  .
+
+Bei bekannter Frequenz ν kann somit die Schallgeschwindigkeit c=λν gemessen werden.
+
+N.b.: Es existieren links UND rechts Randbedingungen; große Amplitude nur wenn Welle "passt" = Resonanz.
+
+Resonante Wellen = Stehende Welle die mit Randbedingungen verträglich ist.
+
+Resonante Wellen bei vorgegebenen Randbedingungen – Eigenschwingung oder Mode eines 1D-Kontinuums
+
+(Saite)
+
+Randbedingungen hier: Beide Enden fest.
+Es "passen" nur solche stehende Wellen, deren Wellenlänge λ  
+die Bedingung   L=n λ
+
+2  erfüllt, wobei n eine ganze Zahl ist.
+Nur diese stehenden Wellen werden gut schwingen –  die
+
+Eigenschwingungen oder Moden der Saite.
+
+Zu jedem n , also zu jeder Mode, gehört ein eigenes λ und ein
+
+eigenes Schwingungsbild.
+
+n  heißt Modenindex
+
+Nur die 3 "niedrigsten" Moden sind rechts dargestellt.
+
+Spannung der Saite bestimmt die
+
+Ausbreitungsgeschwindigkeit c der Wellen und damit wegen
+
+c=λν die Frequenz = Tonhöhe.
+
+Normalerweise schwingen alle Moden zusammen. Das
+
+Amplitudenverhältnis der Moden hängt vom Saitenmaterial,
+
+ihrer Spannung und der Art der Anregung ab. Dieses
+Verhältnis bestimmt den Klang der Saiteninstrumente.
+
+Experiment in der Vorlesung mit Spiral-Feder
+
+Resonante stehende Seilwelle. 
+
+Die hin- und rücklaufenden Wellen,
+
+aus denen man sich die stehende Welle aufgebaut denken kann, 
+
+sind nicht als solche zu erkennen.
+
+Da die Feder links an einem Exzenter hängt, ist links jetzt ein Bauch.
+
+Rechts: Festes Ende am Stativ – Knoten.
+
+Schwingungen in Molekülen als stehende Welle – Modell
+
+Modell einer Molekülgruppe:
+3 Kugeln gleicher Masse (Atome) sollen reibungsfrei auf 
+einem Tisch liegen und mit identischen Federn unter-
+einander und mit einer festen Begrenzung gekoppelt sein. 
+Im Bild rechts blickt man von oben auf den Tisch.
+Experimente zeigen, dass in diesem Aufbau bei seitlicher 
+Auslenkung 3 spezielle Schwingungsarten angeregt werden
+können. Im Bild sind diese mit  b1,b2,b3  bezeichnet. 
+Jede dieser Schwingungen besitzt eine andere 
+Eigenfrequenz
+Die speziellen Schwingungen entstehen durch die 
+Kopplung der Oszillatoren, sie sind für das System 
+charakteristisch.
+Daher wurden diese speziellen Schwingungen 
+
+Moden oder Eigenschwingungen
+
+eines Systems genannt. 
+Solche Schwingungsmoden können in der Spektroskopie nachgewiesen werden und können als als
+
+Nachweis für einzelne Molekülgruppen dienen.
+
+Schallintensität
+
+Nochmals die Schallwelle:  p ( x ,t )= p0sin(kx−ωt )
+Wir wissen schon, dass die Schallfrequenz ω die wahrgenommene Tonhöhe festlegt.
+Die Vermutung liegt nahe, dass die Amplitude  p0  die Empfindung „Lautstärke“ bestimmt. Die 
+Zusammenhänge erfordern die Betrachtung der Intensität der Schallwelle.
+Es ist klar, dass die Druckschwankungen Arbeit am 
+Empfänger verrichten können. Also wird in der 
+Schallwelle Energie transportiert.
+Die Intensität I ist nun definiert als Energie ΔE, die je 
+Zeit Δt durch eine Querschnittsfläche A hindurch tritt,
+
+I = ΔE
+
+Δt A , Εinheit 
+
+J
+
+s m2 = W
+m2 .
+
+Diese Definition der Intensität gilt für alle Wellen.
+
+Man findet beim Schall  I ∝ p0
+
+2  (proportional zum Quadrat der Amplitude, typisch für alle Wellen).
+
+Das menschliche Ohr kann Intensitäten ab  10−12  Wm-2 wahrnehmen (bei 1kHz), ab 1 Wm-2 tut es 
+weh. An Luft entsprechen  10−12  Wm-2 einer Druckamplitude von  p0=2⋅10−5 Pa.
+
+Nach dieser Vorarbeit kommen wir zum Schallpegel....
+
+Schallpegel – Zusammenhang mit Intensität
+
+Man kennzeichnet die empfundene Lautstärke einer Schallquelle durch eine dimensionslose Zahl, 
+den Schallpegel L. Dieser Schallpegel wird so definiert, dass er proportional zu Lautstärke ist
+Die Physiologie zeigt, dass der empfundene Lautstärkeunterschied näherungsweise proportional zu
+I  ist (Weber-Fechner-Gesetz), also wählt man  dL∝ dI
+dI
+I . 
+Durch Integration von  dL=const dI
+I  folgt  L=const (log I – log I 0) . Dabei sind sowohl die 
+Konstante const als auch  I 0  zunächst unbestimmt. Man wählt nun  const=10  und für  I 0  die 
+Intensität der menschlichen Hörschwelle,  I 0=10−12 W
+
+m2 . Für  I =I 0  ist also  L=0 , wie es sein soll.
+
+2
+p0
+Nach den Logarithmen-Regeln gilt also  L=10 log I
+2 =20log
+I 0
+p00
+L hat zwar keine Einheit im eigentlichen Sinn, dennoch gibt man 
+
+=10 log
+
+den L-Werten die „Einheit“ Dezibel, dB.
+
+p0
+p00
+
+2 )
+ (wegen  I ∝ p0
+
+Wichtige Ohr-Eigenschaft ist der erkennbare Unterschied, „Unterschiedsschwelle“ =1dB
+
+Beispiel: Wie viel dB hat eine Schallwelle der Intensität  I =10−10 W
+m2 ?
+L=10 log I
+I 0
+
+10−12 =10 log100=20 , man schreibt dann L=20dB.
+
+=10 log 10−10
+
+Schallpegel und Schallintensität, Lautheit
+
+Rechts ist eine Liste von Schallpegel und Intensität verschiedener 
+Geräusche zu sehen (aus Giancoli, korrigiert).
+Es hat sich jedoch gezeigt, dass das Weber-Fechner-Gesetz ab L = 
+40dB nicht exakt erfüllt ist. Das Hörempfinden ist dann eher 
+proportional zur sogenannten Lautheit S mit der „Einheit“ „sone“.
+
+L−40
+
+10
+
+. Dies macht einen enormen Unterschied im 
+
+Für S gilt  S =2
+Vergleich zu L aus: Für ΔL=60dB – 50dB=10dB würde man nach  
+Weber-Fechner 10mal die Unterschiedsschwelle hochsteigen. Man 
+sagt dann „10mal so laut“.
+60−40
+Jedoch ist   ΔS=2
+10 −2
+„doppelt so laut“.
+
+50−40
+10 =2 , die Empfindung sagt also nur 
+
+Die Verwirrung ist komplett!
+
+Alle Aussagen gelten zudem nur für Töne von 1000Hz, da die 
+Hörschwelle bei anderen Frequenzen andere Werte aufweist. 
+Diesen Effekt berücksichtigt die Pegelgröße Phon, die bei 1000Hz mit
+dem Schallpegel L identisch ist (zu allem Übel wird der Phon-Pegel 
+auch in dB angegeben).
+
+Sie sollten sich daher nur merken, dass bei der Bewertung von Schallpegeln größte Vorsicht
+
+geboten ist.
+
+Entfernung und Intensitätsabnahme
+
+P ges
+4πR2 .
+
+Der Einfachheit halber betrachten wir eine punktförmige Schallquelle Q
+Bekanntlich wird es leiser, wenn man den Abstand zu Q erhöht. Warum eigentlich?
+Der Schall des Vogels breitet sich kugelförmig aus. Die 
+Gesamtleistung  P ges  (in Watt) der Schallwelle verteilt 
+sich auf eine immer größere Kugeloberfläche  O K . Da
+O K=4π R2  gilt, nimmt die Intensität mit wachsendem 
+Radius R ab,  I =
+Bei der Position P1 hat der Wanderer den Abstand  R1 , 
+bei P2 den Abstand  R2> R1 . 
+Da sein Ohr aber immer die gleich große Empfangsfläche A hat, empfängt er bei P2 weniger 
+
+Aus Young, Freeman, University Physics
+
+Leistung,  Lempfang=I A= 1
+R2
+
+P ges A
+4π . Dies ist das sogenannte 
+
+1
+R2 -Gesetz für die Leistung, die von 
+
+einer punktförmigen Quelle auf ein Fläche A im Abstand R trifft. 
+Das Gesetz gilt in vielen anderen Fällen in gleicher Weise, z. B. bei radioaktiven 
+Strahlungsquellen.
+
+Zusammenfassung
+
+Wellenarten
+Schallwelle als longitudinale Welle
+Reflexion, Transmission und Absorption von Wellen
+Ultraschall-Echolot
+Stehende Wellen
+Schwingungsmoden von Molekülgruppen
+Intensität und Schallpegel
+Eins-durch-R-Quadrat-Gesetz
+
+

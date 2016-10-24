@@ -1,0 +1,261 @@
+Remarks
+This week
+
+Foundations of Logic Week 4
+
+Marie Sindermann
+
+University of Osnabrueck
+
+msindermann@uos.de
+
+November 14, 2014
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Overview
+
+1 Remarks
+
+Old homework
+Quick Recap
+
+2 This week
+
+Lecture 3
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Old homework
+Quick Recap
+
+Common Mistakes/Remarks
+
+task 1 semantic equivalence means biconditional and truth
+table and evaluation of the biconditional in the truthtable
+2.2 ”if Barney is old and disgruntled” → 2 sentences in Lprop
+let’s also take a look at the whole formula here
+”If Barney is old and disgruntled, he is unlikely to play Bingo
+unless the magistrate oﬀers a big prize.”
+becomes: A ∧ B → (¬D → ¬C )
+2.3 ”If Barack is the president and his aide is found guilty of
+lying to investigators, then if Barack doesnt distance himself
+from his aide, Barack will be in trouble.”
+”A ∧ B → (¬C → D)” vs ”A ∧ B ∧ ¬C → D)”
+3.2 ”he dances just in case Keith plays” → biconditional
+(Have a look at the ’cheat sheet’ for translations! There are
+some great rules of thumb )
+would you like to go through the old homework in more detail?
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Old homework
+Quick Recap
+
+What you should know
+
+equivalence of sentences? → biconditional
+validity of arguments? → inference conditional
+→ identify if tautology/contradiction/contingent
+means to identify a tautology (so far): truth table
+but: ineﬃcient method (2n rows for all assignments)
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Important New Stuﬀ
+
+models + countermodels
+
+semantic tree method + reduction rules
+
+interdeﬁnability + transformation rules
+
+expressiveness/completeness of our connectives
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Models + Countermodels
+
+deﬁnition: model of φ = assignment that satisﬁes φ
+
+countermodel of φ = assignment that does not satisfy φ
+
+are these terms clear? what does this mean for
+tautologies/contradictions?
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Semantic Tree Method
+
+graphical model to systematically look for models of a formula
+
+apply reduction rules to formulas (”what must be true for φ
+to be true?”)
+
+reduce formulas until: (negated) sentence letters
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Reduction Rules
+
+we’ll just derive them ourselves (so you don’t have to learn
+them by heart)
+
+(DN) Double Negation
+
+(C) Conjunction
+
+(NC) Negated Conjunction
+
+(D) Disjunction
+
+(ND) Negated Disjunction
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Reduction Rules
+
+(I) Implication
+
+(NI) Negated Implication
+
+(B) Biconditional
+
+(NB) Negated Biconditional
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Semantic Tree Method
+
+every fully reduced branch without a contradiction = a model
+
+but: only bc a formula has models, it’s not a tautology
+
+we kind of only care about tautologies at this point though
+
+solution: take the negation of a formula
+
+if it has NO models, our original formula is a tautology
+
+look for contradictory truth conditions
+
+time for some practice
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Interdeﬁnability
+
+completely diﬀerent stuﬀ but still pretty important
+Lprop connectives are interdeﬁnable
+→ we can specify the meaning of any sentential connective in
+terms of combinations of other sentential connectives
+the full set of Lprop connectives is expressively complete
+and certain subsets are expressively complete as well!
+namely [¬,∧] and [¬,∨]
+13 transformation rules in total (let’s take a look)
+
+we can convert any formula into a semantically equivalent
+formula that only contains [¬,∧] or only [¬,∨] (eliminating
+double negation is optional)
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+Expressiveness
+
+using Lprop connectives we can express all possible monadic
+and dyadic truth functions
+
+of course this means the subsets can do this as well!
+
+you’ll see that they can actually express all truth functions
+which is pretty nice for a simple language like Lprop
+
+Marie Sindermann
+
+Foundations of Logic
+
+Remarks
+This week
+
+Lecture 3
+
+That’s it for today
+
+Time for your questions :)
+
+Marie Sindermann
+
+Foundations of Logic
+
+

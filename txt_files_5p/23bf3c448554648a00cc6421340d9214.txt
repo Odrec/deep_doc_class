@@ -1,0 +1,73 @@
+¨Ubungen Einf¨uhrung in die Kombinatorische Optimierung
+Knust/Bruns/Lehnfeld
+
+Blatt 1
+
+WS 14/15
+Abgabe: 23.10.2014
+
+Aufgabe 1: (6 Punkte)
+
+Betrachten Sie folgende Instanz des Rucksackproblems: Gegeben sind n = 4 Objekte
+mit
+
+3
+
+2
+
+i
+1
+4
+20 15 15 10
+ci
+wi 100 80 40 20
+
+sowie ein Rucksack mit Gewichtsbeschr¨ankung W = 200.
+
+(a) Bestimmen Sie alle zul¨assigen L¨osungen f¨ur das bin¨are Rucksackproblem.
+
+(b) Bestimmen Sie alle optimalen L¨osungen f¨ur das bin¨are Rucksackproblem.
+
+(c) Bestimmen Sie alle optimalen L¨osungen f¨ur das ganzzahlige Rucksackproblem.
+
+Aufgabe 2: (8 Punkte)
+
+Betrachten Sie das sog. fraktionale Rucksackproblem: Gegeben sind n (beliebig un-
+terteilbare) Objekte mit Gewichten w1, . . . , wn ∈ N und Nutzenwerten c1, . . . , cn ∈ N
+sowie ein Rucksack mit einer Gewichtsbeschr¨ankung W ≤
+Gesucht ist ein reellwertiger Vektor x = (x1, . . . , xn)T ∈ [0, 1]n (d.h. es ist auch
+m¨oglich, jeweils nur einen Anteil xi des Objektes i in den Rucksack zu packen), so
+
+n�i=1
+
+wi.
+
+dass
+
+ist.
+
+n�i=1
+
+wixi ≤ W eingehalten wird und der zugeh¨orige Nutzenwert
+
+cixi maximal
+
+n�i=1
+
+(a) Geben Sie einen Algorithmus mit Laufzeit O(n log n) an, der das fraktionale Ruck-
+
+sackproblem l¨ost und zeigen Sie seine Korrektheit.
+
+(b) Modiﬁzieren Sie den Algorithmus so, dass er immer eine zul¨assige L¨osung f¨ur
+das bin¨are Rucksackproblem berechnet. Bestimmt der Algorithmus immer eine
+optimale L¨osung?
+
+Programmieraufgabe P1: (10 Punkte)
+
+Implementieren Sie einen Algorithmus, der alle L¨osungen f¨ur das bin¨are Rucksack-
+problem erzeugt. ¨Uberpr¨ufen Sie dabei f¨ur jede L¨osung, ob sie zul¨assig ist und be-
+stimmen Sie ihren Zielfunktionswert. Testen Sie Ihr Programm anhand der in Stud.IP
+zur Verf¨ugung gestellten Probleminstanzen. Die L¨osungen d¨urfen Sie entweder in eine
+Datei schreiben oder auf der Konsole ausgeben.
+
+
