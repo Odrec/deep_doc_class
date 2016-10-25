@@ -10,6 +10,7 @@ This script is extended as the system grows
 import csv
 import numpy as np
 import os, os.path, sys
+from multiprocessing import Pool
 import MetaHandler
 
 #INSERT IMPORT MODULES HERE
@@ -21,9 +22,6 @@ from bow_metadata import Bow_Metadata
 from orientation_detector import page_orientation_module
 
 #from ocr_bow_module import OCR_BoW_Module
-#INSERT IMPORT OF NEURAL NETWORK HERE
-from simple_neural_network import NN
-
 
 def train(modules,neural_network,files,metafile):
     return
@@ -36,16 +34,6 @@ def prune(filenames, save_file):
         if row[0] in filenames:
             filenames.remove(row[0])
     return
-
-#get all filenames
-#the system currently assumes that all pdfs are stored in a single folder
-#simply called 'files'
-def get_files(path='./files'):
-    filenames = list()
-    for file in os.listdir(path):
-        if file.endswith(".pdf"):
-            filenames.append(file)
-    return filenames
     
 #builds a datavector from the given list of modules.
 #all modules must feature a function 'get_function(filepointer, metapointer=None)'
@@ -54,17 +42,20 @@ def get_files(path='./files'):
 # @param modules:   the modules extracting the features
 # @return           a R^len(modules) vector (numpy-array) the datavector has the same
 #                   order as the modules
-def get_data_vector(modules, filepointer, metapointer=None):
-    data = list()
+def get_data_vector(file_data, metapointer=None):
+    
+    filepointer = open('./files/'+file_data[1]+'.pdf','rb')
+    feature_data = list()
+    
     for m in modules:
         try:
             #extract data-dimension from pdf
-            data.append(m.get_function(filepointer,metapointer))
+            feature_data.append(m.get_function(filepointer,metapointer))
         except:
             #if error occures the value is nan
-            data.append(np.nan)
+            feature_data.append(np.nan)
 
-    return data
+    return [file_data,feature_data]
 
 #extracts features from a set of files and returns them on a list of lists
 #it also saves the features to a csv file named features.csv
@@ -72,17 +63,46 @@ def get_data_vector(modules, filepointer, metapointer=None):
 #@param filenames:   list of filenames
 #@param classes:     list of classes from the classification.csv file
 #@result:            numpy array of arrays to feed the NN
-def extract_features(filenames,classes,metadata):
+#def extract_features(filenames,classes,metadata):
+#        
+#    c,m = get_classes(filenames,classes,metadata)
+#    
+#    feat_matrix = list()
+#
+#    for f in range(len(filenames)):
+#        res=get_data_vector(modules,open(path+'/'+filenames[f],'rb'))
+#        res.append(c[f])
+#        res.append(filenames[f])
+#        feat_matrix.append(res) 
+#    
+#    with open("output.csv","w") as f:
+#        writer = csv.writer(f)
+#        writer.writerows(feat_matrix)
+#        
+#    return feat_matrix
+    
+def extract_features(data, metadata=None):
         
-    c,m = get_classes(filenames,classes,metadata)
+    #c,m = get_classes(filenames,classes,metadata)
     
     feat_matrix = list()
-
-    for f in range(len(filenames)):
-        res=get_data_vector(modules,open(path+'/'+filenames[f],'rb'))
-        res.append(c[f])
-        res.append(filenames[f])
-        feat_matrix.append(res) 
+    
+    if p == 0:
+        pool = Pool(1)
+    elif p == -1:
+        pool = Pool()
+    else:
+        pool = Pool(p)
+    
+    res = pool.map(get_data_vector, data)
+    
+    features = [item[1] for item in res]
+    file_data = [item[0] for item in res] 
+    
+    for f, r in enumerate(features):
+        r.append(file_data[f][0])
+        r.append(file_data[f][1])
+        feat_matrix.append(r) 
     
     with open("output.csv","w") as f:
         writer = csv.writer(f)
@@ -153,7 +173,7 @@ def generate_error_features(features):
                 error_feature[i] = 1.0
                 x[j] = 1.0                
     
-    #features = [x + [error_feature[i]] for i, x in enumerate(features)]
+    features = [x + [error_feature[i]] for i, x in enumerate(features)]
     return features
     
     
@@ -197,22 +217,31 @@ args = sys.argv
 len_args = len(args)
 training = False
 extracting = False
-#train mode
+
 if '-t' in args:
     training = True
-    TESTSIZE = 1000#should we use a percentage of the total data instead? Ex. 80%
     if len_args == 3:
         features_file = args[2]
-    elif len_args == 4:
-        features_file = args[3]
-        
     if not os.path.isfile(features_file):
         print("Error: Features file doesn't exist.")
         exit();
-    
-if '-e' in args:
+elif '-e' in args:
     extracting= True
-    TESTSIZE = 1000#should we use a percentage of the total data instead? Ex. 80%     
+    data = []
+    if len_args == 3:
+        data_file = args[2]
+    elif len_args == 5:
+        data_file = args[4]
+    with open(data_file, 'r') as df:
+        reader = csv.reader(df)
+        data = list(reader)
+    p = 0
+    if args[1] == '-c':
+        if args[2].isdigit():
+            p = int(args[2])
+        else:
+            print("The -c parameter should be followed by the number of cores to be used")
+            exit()
 
 #init filepointer for save-file here, the file will contain all classifications
 #maybe csv-file, not yet decided
@@ -233,11 +262,11 @@ modules = list()
 #ADD MODULES HERE
 #modules.append(TextScore(True))
 #modules.append(BoW_Text_Module(True))
-#modules.append(Page_Size_Module())
+modules.append(Page_Size_Module())
 #modules.append(ScannerDetect())
 #modules.append(page_orientation_module())
 #modules.append(Bow_Metadata("title"))
-modules.append(Bow_Metadata("author"))
+#modules.append(Bow_Metadata("author"))
 #modules.append(Bow_Metadata("filename"))
 #modules.append(Bow_Metadata("folder_name"))
 #modules.append(Bow_Metadata("folder_description"))
@@ -245,23 +274,22 @@ modules.append(Bow_Metadata("author"))
 
 #modules.append(OCR_BoW_Module())
 
-#get filenames
-path = './files'
-filenames = get_files(path)
+                
 if training or extracting:
     metadata,classes = MetaHandler.get_classified_metadata("metadata.csv","classification.csv")
 else:
     metadata = get_metapointer('metadata.csv')
 #prune filenames if the system crashed
-prune(filenames, save_file)
-save_file.close()
+#prune(filenames, save_file)
+#save_file.close()
 #open for writing new data
-save_file = open('classes.csv','a')
+#save_file = open('classes.csv','a')
 
 #EXTRACT FEATURES HERE
 if(extracting):
     print("Extracting Features from the training set. This will take a while...")
-    extract_features(filenames,classes,metadata)
+    if not data == []:
+        extract_features(data, metadata)
 
 #START TRAINING HERE
 if(training):
@@ -280,6 +308,8 @@ if(training):
         for f in features: (f[i] - min_nor)/(max_nor-min_nor)
     
     features=np.array([np.array(xi) for xi in features])
+    
+    from simple_neural_network import NN
     
     print("Initiating Neural Network")
     network = getNN(len(features[0]))
