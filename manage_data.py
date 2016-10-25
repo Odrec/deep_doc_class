@@ -135,10 +135,53 @@ def subset_features(orig_file, num_files=0):
         writer.writerows(data_new)
 
     return True
+
+#preapres the training data. Checks if the file exists and 
+#creates a new csv with all the existing files on a particular path
+#
+#@param class_file:      the classification.csv file
+#@param files_path:      the path to the actual files
+#
+#@result:                creates a training_data.csv file with the available training data on the path  
+def prepare_training_data(class_file='classification.csv', files_path='./files'):
     
+    with open(class_file) as cf:
+        class_data = csv.DictReader(cf, delimiter=';')
+        data_list = list(class_data)
+    
+    files_names = get_files(files_path)
+    
+    final_data_list = list()
+    
+    for d in data_list:
+        for f in files_names:
+            file_name = os.path.splitext(f)[0]
+            sublist = []
+            if file_name == d['document_id']:
+                if d['published'] == 'False':
+                    sublist.append(0.0)
+                elif d['published'] == 'True':
+                    sublist.append(1.0)
+                sublist.append(file_name)
+                final_data_list.append(sublist)
+                break
+            
+    with open("training_data.csv","w") as f:
+        writer = csv.writer(f)
+        writer.writerows(final_data_list)
+            
+#get all filenames
+def get_files(path):
+    filenames = list()
+    for file in os.listdir(path):
+        if file.endswith(".pdf"):
+            filenames.append(file)
+    return filenames
+
 #opens both files and checks if the data is correct
 #
 #@param file1/file2:    files to open and check
+#@param original        depending on which function calls it the return data is different
 #@return:               the data from the files and the names of the files 
 def open_files(file1, file2, origin):
     
@@ -187,9 +230,22 @@ def open_files(file1, file2, origin):
     
 args = sys.argv
 len_args = len(args)
-fail = False
+hlp = False
 
-if os.path.isfile(args[2]):
+if '-h' in args:
+    
+    hlp = True
+    
+elif '-t' in args:
+    
+    if len_args == 2:
+        prepare_training_data()
+    elif len_args == 3:
+        prepare_training_data(args[2])
+    elif len_args == 4 and os.path.isdir(args[3]):
+        prepare_training_data(args[2], args[3])
+    
+elif os.path.isfile(args[2]):
 
     if '-d' in args and len_args == 4 and args[3].isdigit():
         
@@ -210,20 +266,34 @@ if os.path.isfile(args[2]):
     elif '-c' in args and len_args == 5 and os.path.isfile(args[2]) and os.path.isfile(args[3]) and args[4].isdigit():
                 
         substitute_feature(args[2], args[3], args[4])
-    
-    else: fail = True
+            
+    else: hlp = True
 
-if fail:
+if hlp:
+    print("\n")
     print("Usage:")
     print("\n")
+    print("-h")
+    print("\n")
+    print("Prints this help")
+    print("\n")
     print("-m [path_to_output_file_1] [path_to_output_file_2]")
+    print("\n")
     print("This will merge the features on both files into a new output_merged.csv")
     print("\n")
     print("-c [path_to_output_file_with_old_feature] [path_to_output_file_with_new_feature] [position_of_old_feature_on_first_output_file]")
+    print("\n")
     print("This will substitute an old feature on a determined position on the first file with a new feature on the first position of the second file and create a new ouput_sub.csv file")
     print("\n")
     print("-s [path_to_output_file] [[number of files to subset]]")
+    print("\n")
     print("This will choose an equal amount of random True files and False files and create a new output_sample.csv file")
     print("\n")
     print("-d [path_to_output_file] [position_of_feature_to_detach]")
+    print("\n")
     print("This will detach one feature from a file and create a new output_det.csv file with that feature")
+    print("\n")
+    print("-t [[path_to_calssifications_file]] [[path_to_training_files]]")
+    print("\n")
+    print("This will create a new csv file (training_data.csv) where the training data for the files in the folder can be found")
+    print("\n")
