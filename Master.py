@@ -87,17 +87,19 @@ def extract_features(data, metadata=None):
     
     feat_matrix = list()
     
-    if p == 0:
-        pool = Pool(1)
-    elif p == -1:
+    if p == -1:
         pool = Pool()
     else:
         pool = Pool(p)
     
     res = pool.map(get_data_vector, data)
     
-    features = [item[1] for item in res]
-    file_data = [item[0] for item in res] 
+    features = list()
+    file_data = list()
+    
+    for item in res:
+        features.append(item[1])
+        file_data.append(item[0]) 
     
     for f, r in enumerate(features):
         r.append(file_data[f][0])
@@ -235,7 +237,7 @@ elif '-e' in args:
     with open(data_file, 'r') as df:
         reader = csv.reader(df)
         data = list(reader)
-    p = 0
+    p = 1
     if args[1] == '-c':
         if args[2].isdigit():
             p = int(args[2])
@@ -262,8 +264,8 @@ modules = list()
 #ADD MODULES HERE
 #modules.append(TextScore(True))
 #modules.append(BoW_Text_Module(True))
-modules.append(Page_Size_Module())
-#modules.append(ScannerDetect())
+#modules.append(Page_Size_Module())
+modules.append(ScannerDetect())
 #modules.append(page_orientation_module())
 #modules.append(Bow_Metadata("title"))
 #modules.append(Bow_Metadata("author"))
@@ -287,9 +289,11 @@ else:
 
 #EXTRACT FEATURES HERE
 if(extracting):
-    print("Extracting Features from the training set. This will take a while...")
+    print("Extracting Features from the training set. This might take a while...")
     if not data == []:
         extract_features(data, metadata)
+    else:
+        print("No file data provided.")
 
 #START TRAINING HERE
 if(training):
@@ -304,8 +308,9 @@ if(training):
     
     for i in range(0, len_feat):
         max_nor=max(map(lambda x: x[i], features))
-        min_nor=min(map(lambda x: x[i], features))
-        for f in features: (f[i] - min_nor)/(max_nor-min_nor)
+        if max_nor > 1:
+            min_nor=min(map(lambda x: x[i], features))
+            for f in features: (f[i] - min_nor)/(max_nor-min_nor)
     
     features=np.array([np.array(xi) for xi in features])
     

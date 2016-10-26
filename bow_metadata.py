@@ -162,7 +162,7 @@ class Bow_Metadata():
             try:
                 uploader=author.loc[file].drop_duplicates(keep='first')
             except:
-                return 0
+                return np.nan
             score=bow.loc[bow['user_id'] == uploader['user_id']]['value'].sum()
             if score >= self.punish_threshold: return 1
             else: return score*self.punish_factor
@@ -172,14 +172,14 @@ class Bow_Metadata():
         # print(meta_for_file['title'].reset_index(drop=True))
 
         if meta_for_file.empty: # catching empty dataset stating the file doesnt exists in the metadata
-            return 0
+            return np.nan
 
         clean_data.append(self.convert_data(meta_for_file[self.of_type][0]))
         # print(clean_data)
         try: # catches empty or nan fields in csv file
             self.vectorizer.fit_transform(clean_data).toarray()
         except:
-            return 0
+            return np.nan
         data=self.vectorizer.get_feature_names()
 
         # load bow of __of_type
@@ -191,6 +191,6 @@ class Bow_Metadata():
         size=score.index.size
 
         if size == 0:
-            return 0
+            return np.nan
         else:
             return score['value'].sum(axis=0)/size

@@ -34,8 +34,10 @@ class TextScore:
             self.std = 22201.1272775
         else:
             #if txt files are used, the only contain a single page
-            self.mean = 35.7563871896
-            self.std = 124.842470114
+            self.mean = 9109.10716436
+            self.std = 22201.1272775
+#            self.mean = 35.7563871896
+#            self.std = 124.842470114
         if  not self.load_data():
             print("loading data for textscore failed, using default values instead...")
         self.path = 'txt_files_full'
@@ -102,7 +104,10 @@ class TextScore:
     #@return float64 [0 1] probabiliy for the pdf  beeing copyright protected     
     def get_function(self,filepointer, metapointer = None):
         if(self.txt):
-            x = len(self.get_txt(filepointer))
+            try:
+                x = len(self.get_txt(filepointer))
+            except:
+                return np.nan
         else:
             x = len(self.convert_pdf_to_txt(filepointer,-1))
         return s.norm.pdf(self.mean,self.std,x)

@@ -10,7 +10,7 @@ This module figures out the orientation of the first page is landscape or portra
 """
 #from pyPdf import PdfFileReader
 from PyPDF2 import PdfFileReader
-import csv
+import csv, numpy as np
 
 
 class page_orientation_module:
@@ -32,7 +32,7 @@ class page_orientation_module:
                 return 1.0
         except:
             self.error = True
-            return 0.5
+            return np.nan
 
     def train(self,filenames,classes,metalist = None):
         return

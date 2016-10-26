@@ -144,7 +144,7 @@ class BoW_Text_Module:
             else:
                 txt = self.convert_pdf_to_txt(filepointer)
         except:
-            return 0.0
+            return np.nan
         txt = self.sanitize(txt)
         bow = self.get_bow(txt)
         score = float(self.get_score(bow,self.lib))

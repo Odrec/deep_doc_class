@@ -40,17 +40,17 @@ class ScannerDetect:
         pdf_info = inputpdf.getDocumentInfo()
     
         if isinstance(pdf_info,dict):
-            if '/Producer' in pdf_info:
-                producer = ''.join(i for i in pdf_info['/Producer'] if not str(i).isdigit())
+            if '/Creator' in pdf_info:
+                producer = ''.join(i for i in pdf_info['/Creator'] if not str(i).isdigit())
                 producer = ''.join(i for i in producer if not i == ".")
                 producer = ''.join(i for i in producer if not i == ",")
                 producer = ''.join(i for i in producer if not i == "-")
                 producer = ''.join(i for i in producer if not i == ";")
                 producer = ''.join(i for i in producer if not i == " ")
                 
-                file_features['producer']=producer
+                file_features['creator']=producer
         else:
-            file_features['producer']=np.nan
+            file_features['creator']=np.nan
                                                 
         return file_features
                         
@@ -118,16 +118,20 @@ class ScannerDetect:
         feature_list_trans=self.vec.transform(feature_list).toarray()
         
         #Impute missing values using a most_frequent strategy (maybe we don't want this)
-        imp = Imputer(missing_values='NaN',strategy='most_frequent',axis=1)
-        feature_list_imp=imp.fit_transform(feature_list_trans)
+#        imp = Imputer(missing_values='NaN',strategy='most_frequent',axis=1)
+#        feature_list_imp=imp.fit_transform(feature_list_trans)
                 
-        return self.gnl.predict(feature_list_imp)
+        return self.gnl.predict(feature_list_trans)
         
     #@param filepointer a pointer to a pdf file
     #@param metapointer a pointer to the metadata, this parameter is not used
     #@return float64 [0 1] probabiliy for the pdf  beeing copyright protected     
     def get_function(self,filepointer, metapointer = None):
-        return float(self.classify(filepointer))
+        
+        try:
+            return float(self.classify(filepointer))
+        except:
+            return np.nan
         
     #@param path the path where the training data is located
     #@param class_path the path to where the classification.csv is located

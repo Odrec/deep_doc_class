@@ -9,8 +9,9 @@ This module calculates the data per page for a given pdf
 
 
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-import os
+import os, numpy as np
 from pdfminer.pdfpage import PDFPage
+from PyPDF2 import PdfFileReader
 #from pdfminer.pdfparser import PDFPage
 
 class Page_Size_Module:
@@ -30,7 +31,7 @@ class Page_Size_Module:
             for page in PDFPage.get_pages(fp, pagenos, maxpages=maxpages, password=password,caching=caching, check_extractable=True):
                 length += 1
         except:
-            return 1.0
+            return np.nan
         return float(length)
 
     def get_function(self,filepointer, metapointer = None):
@@ -40,14 +41,19 @@ class Page_Size_Module:
 
         @return                 number of kilobytes per page
         """
-
         #get filesize in kilobytes
         size = float(os.path.getsize(filepointer.name)/(1024.0))
+        
+        reader = PdfFileReader(filepointer)
+        pages = reader.getNumPages()
 
         #get number of pages
-        pages = self.enum_pages(filepointer)
+        #pages = self.enum_pages(filepointer)
 
-        return size/pages
+        if pages != np.nan:
+            return size/pages
+        else:
+            return pages
 
     def train(self,filenames,classes,metalist = None):
         return
