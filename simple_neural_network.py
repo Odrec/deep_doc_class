@@ -14,6 +14,7 @@ from sklearn.cross_validation import StratifiedKFold
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix
 import numpy as np
 import keras
+from scipy.stats import pearsonr, mstats
 
 
 class NN:
@@ -70,18 +71,21 @@ class NN:
         lentest = []
         lentrain = []
         lentotal = []
+        pearson = []
         
         kfold = StratifiedKFold(train_labels, n_folds=10, shuffle=True, random_state=seed)
 
         for train, test in kfold:
 
-            self.model.fit(train_data[train], train_labels[train], nb_epoch=50)
+            self.model.fit(train_data[train], train_labels[train], nb_epoch=500, verbose=0)
             
             # evaluate the model
             scores = self.model.evaluate(train_data[test], train_labels[test], verbose=0)
             prd = self.model.predict(train_data[test], verbose=0)
             print("%s: %.2f%%" % (self.model.metrics_names[1], scores[1]*100))
             cvscores.append(scores[1] * 100)
+            #tst = np.array([item[0] for item in train_data[test]])
+            #pearson.append(pearsonr(tst.ravel(), train_labels[test].ravel()))
             for i,x in enumerate(prd):
                 if x >= .5:
                     prd[i]=1.0
@@ -115,6 +119,7 @@ class NN:
         print("TP: %.2f (+/- %.2f)" % (np.mean(tplist), np.std(tplist)))
         print("FN: %.2f (+/- %.2f)" % (np.mean(fnlist), np.std(fnlist)))
         print("FP: %.2f (+/- %.2f)" % (np.mean(fplist), np.std(fplist)))
+        #print("Pearson correlation: %.2f (+/- %.2f)" % (np.mean(pearson), np.std(pearson)))
         print("TOTAL TEST: %.2f (+/- %.2f)" % (np.mean(lentest), np.std(lentest)))
         print("TOTAL TRAIN: %.2f (+/- %.2f)" % (np.mean(lentrain), np.std(lentrain)))
         print("TOTAL: %.2f (+/- %.2f)" % (np.mean(lentotal), np.std(lentotal)))
