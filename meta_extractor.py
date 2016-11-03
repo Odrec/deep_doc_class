@@ -120,29 +120,29 @@ class Meta_PDF_Module:
             if classes[i] == 'True':
                 try:
                     try:
-                        mp = a.get_meta(open('./files/'+f,'rb'))
+                        mp = self.get_meta(open('./files/'+f,'rb'))
                     except:
                         continue
                     if('/Creator' in mp):
-                        pos_creators.append(a.get_bow(mp['/Creator']))
+                        pos_creators.append(self.get_bow(mp['/Creator']))
                     if '/Author' in mp:
-                        pos_authors.append(a.get_bow(mp['/Author']))
+                        pos_authors.append(self.get_bow(mp['/Author']))
                     if '/Producer' in mp:
-                        pos_producer.append(a.get_bow(mp['/Producer']))
+                        pos_producer.append(self.get_bow(mp['/Producer']))
                 except:
                     continue
             else:
                 try:
                     try:
-                        mp = a.get_meta(open('./files/'+f,'rb'))
+                        mp = self.get_meta(open('./files/'+f,'rb'))
                     except:
                         continue
                     if('/Creator' in mp):
-                        neg_creators.append(a.get_bow(mp['/Creator']))
+                        neg_creators.append(self.get_bow(mp['/Creator']))
                     if '/Author' in mp:
-                        neg_authors.append(a.get_bow(mp['/Author']))
+                        neg_authors.append(self.get_bow(mp['/Author']))
                     if '/Producer' in mp:
-                        neg_producer.append(a.get_bow(mp['/Producer']))
+                        neg_producer.append(self.get_bow(mp['/Producer']))
                 except:
                     continue
         #sum up
