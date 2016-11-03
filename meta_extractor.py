@@ -22,7 +22,7 @@ class Meta_PDF_Module:
         :return:
         """
         self.lib_list = self.load_lib()
-        self.exclude
+        self.exclude = exclude
         return
 
     def load_lib(self):
