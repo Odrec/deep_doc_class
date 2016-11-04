@@ -24,7 +24,7 @@ class NN:
          
     #@params num_input_nodes Number of input nodes. In this case the amount of
     #modules for feature extraction
-    def initializeNN(self, num_input_nodes):
+    def initializeNN(self, num_input_nodes, num_hidden_nodes):
         
         print("Creating model...")
         
@@ -37,7 +37,7 @@ class NN:
         #self.model.add(Activation("relu"))
         
         #Hidden layers
-        self.model.add(Dense(100, init="uniform"))
+        self.model.add(Dense(num_hidden_nodes, init="uniform"))
         self.model.add(Activation("sigmoid"))
                        
         #Output layer
@@ -55,7 +55,7 @@ class NN:
         
     #@params train_data a list of numpy arrays. Each array is an input
     #@params train_labels a numpy array with the target data
-    def trainNN(self, train_data, train_labels):
+    def trainNN(self, train_data, train_labels, num_epochs, cut):
         
         seed=7
         np.random.seed(seed)
@@ -71,13 +71,13 @@ class NN:
         lentest = []
         lentrain = []
         lentotal = []
-        pearson = []
-        
+        #pearson = []
+                
         kfold = StratifiedKFold(train_labels, n_folds=10, shuffle=True, random_state=seed)
-
+        
         for train, test in kfold:
-
-            self.model.fit(train_data[train], train_labels[train], nb_epoch=500, verbose=0)
+            
+            self.model.fit(train_data[train], train_labels[train], nb_epoch=num_epochs, verbose=0)
             
             # evaluate the model
             scores = self.model.evaluate(train_data[test], train_labels[test], verbose=0)
@@ -87,7 +87,7 @@ class NN:
             #tst = np.array([item[0] for item in train_data[test]])
             #pearson.append(pearsonr(tst.ravel(), train_labels[test].ravel()))
             for i,x in enumerate(prd):
-                if x >= .5:
+                if x >= cut:
                     prd[i]=1.0
                 else:
                     prd[i]=0.0
@@ -123,6 +123,10 @@ class NN:
         print("TOTAL TEST: %.2f (+/- %.2f)" % (np.mean(lentest), np.std(lentest)))
         print("TOTAL TRAIN: %.2f (+/- %.2f)" % (np.mean(lentrain), np.std(lentrain)))
         print("TOTAL: %.2f (+/- %.2f)" % (np.mean(lentotal), np.std(lentotal)))
+        
+        
+        return np.mean(cvscores), np.mean(f1scores), np.mean(prscores), np.mean(rcscores), np.mean(tnlist), np.mean(tplist), np.mean(fnlist), np.mean(fplist)
+
 
 
         

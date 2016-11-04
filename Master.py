@@ -20,6 +20,8 @@ from page_size_ratio_module import Page_Size_Module
 from scanner_detect_module import ScannerDetect
 from bow_metadata import Bow_Metadata
 from orientation_detector import page_orientation_module
+from Negative_BoW import Negative_BoW_Text_Module
+from resolution_module import Resolution_Module
 
 #from ocr_bow_module import OCR_BoW_Module
 
@@ -210,15 +212,218 @@ def save_result(classes, save_file):
 
 #this function will initialize the neural network
 # @parram input_dim:    number of modules for the input vector
-def getNN(input_dim):
+def getNN(input_dim, hidden_dim):
     network = NN()
-    network.initializeNN(input_dim)
+    network.initializeNN(input_dim, hidden_dim)
     return network
+    
+#plots several efficiency measurements
+def plot(nodes, epochs, bias, features, classes, ):
+    
+    import matplotlib.pyplot as plt
+    
+    import time
+    
+    fig = 0
+        
+    if nodes:
+        num_nodes = [10, 20, 50, 100, 200, 500]
+        ll = len(num_nodes)
+        ac = [None]*ll
+        f1 = [None]*ll
+        pr = [None]*ll
+        rc = [None]*ll
+        ex = np.empty([ll,4])
+        tm = [None]*ll
+        
+        for i, x in enumerate(num_nodes):
+            network = getNN(len(features[0]), x)
+            start_time = time.time()
+            ac[i], f1[i], pr[i], rc[i], ex[i][0], ex[i][1], ex[i][2], ex[1][3] = network.trainNN(features, np.array(classes), 100, .5)
+            tm[i] = time.time() - start_time
+            
+        fig+=1
+            
+        plt.figure(fig)
+        plt.plot(num_nodes, ac)
+        plt.ylabel('accuracy')
+        plt.xlabel('number of nodes')
+        plt.axis([ 0, num_nodes[ll-1]+50, 0, 100 ])
+        
+        fig+=1
+        
+        plt.figure(fig)
+        plt.plot(num_nodes, f1)
+        plt.ylabel('f1')
+        plt.xlabel('number of nodes')
+        plt.axis([ 0, num_nodes[ll-1]+50, 0, 1 ])
+        
+        fig+=1
+        
+        plt.figure(fig)
+        plt.plot(num_nodes, pr)
+        plt.ylabel('precision')
+        plt.xlabel('number of nodes')
+        plt.axis([ 0, num_nodes[ll-1]+50, 0, 1 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        plt.plot(num_nodes, rc)
+        plt.ylabel('recall')
+        plt.xlabel('number of nodes')
+        plt.axis([ 0, num_nodes[ll-1]+50, 0, 1 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        lineObjects = plt.plot(num_nodes, ex)
+        plt.legend(lineObjects, ('tn', 'tp', 'fn', 'fp'))
+        plt.ylabel('examples')
+        plt.xlabel('number of nodes')
+        plt.axis([ 0, num_nodes[ll-1]+50, 0, 300 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        plt.plot(num_nodes, tm)
+        plt.ylabel('time in seconds')
+        plt.xlabel('number of nodes')
+        plt.axis([ 0, num_nodes[ll-1]+100, 0, tm[ll-1]+50 ])
+                
+    if epochs:
+        num_epochs = [50, 100, 200, 500, 1000, 2000]
+        ll = len(num_epochs)
+        ac = [None]*ll
+        f1 = [None]*ll
+        pr = [None]*ll
+        rc = [None]*ll
+        ex = np.empty([ll,4])
+        tm = [None]*ll
+        
+        network = getNN(len(features[0]), 100)
+        
+        for i, x in enumerate(num_epochs):
+            start_time = time.time()
+            ac[i], f1[i], pr[i], rc[i], ex[i][0], ex[i][1], ex[i][2], ex[i][3] = network.trainNN(features, np.array(classes), x, .5)
+            tm[i] = time.time() - start_time
+            
+        fig+=1
+        
+        plt.figure(fig)
+        plt.plot(num_epochs, ac)
+        plt.ylabel('accuracy')
+        plt.xlabel('number of epochs (times 10)')
+        plt.axis([ 0, num_epochs[ll-1]+500, 0, 100 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        plt.plot(num_epochs, f1)
+        plt.ylabel('f1')
+        plt.xlabel('number of epochs (times 10)')
+        plt.axis([ 0, num_epochs[ll-1]+500, 0, 1 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        plt.plot(num_epochs, pr)
+        plt.ylabel('precision')
+        plt.xlabel('number of epochs (times 10)')
+        plt.axis([ 0, num_epochs[ll-1]+500, 0, 1 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        plt.plot(num_epochs, rc)
+        plt.ylabel('recall')
+        plt.xlabel('number of epochs (times 10)')
+        plt.axis([ 0, num_epochs[ll-1]+500, 0, 1 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        lineObjects = plt.plot(num_epochs, ex)
+        plt.legend(lineObjects, ('tn', 'tp', 'fn', 'fp'))
+        plt.ylabel('examples')
+        plt.xlabel('number of epochs (times 10)')
+        plt.axis([ 0, num_epochs[ll-1]+500, 0, 300 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        plt.plot(num_epochs, tm)
+        plt.ylabel('time in seconds')
+        plt.xlabel('number of epochs')
+        plt.axis([ 0, num_epochs[ll-1]+500, 0, tm[ll-1]+50 ])
+            
+    if bias:
+        bias_cut = [.5, .4, .3, .2]
+        ll = len(bias_cut)
+        ac = [None]*ll
+        f1 = [None]*ll
+        pr = [None]*ll
+        rc = [None]*ll
+        ex = np.empty([ll,4])
+        tm = [None]*ll
+        
+        network = getNN(len(features[0]), 100)
+        
+        for i, x in enumerate(bias_cut):
+            start_time = time.time()
+            ac[i], f1[i], pr[i], rc[i], ex[0][i], ex[1][i], ex[2][i], ex[3][i] = network.trainNN(features, np.array(classes), 100, x)
+            tm[i] = time.time() - start_time
+
+        fig+=1
+
+        plt.figure(fig)
+        plt.plot(bias_cut, ac)
+        plt.ylabel('accuracy')
+        plt.xlabel('bias cut')
+        plt.axis([ 0, bias_cut[0]+.5, 0, 100 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        plt.plot(bias_cut, f1)
+        plt.ylabel('f1')
+        plt.xlabel('bias cut')
+        plt.axis([ 0, bias_cut[0]+.5, 0, 1 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        plt.plot(bias_cut, pr)
+        plt.ylabel('precision')
+        plt.xlabel('bias cut')
+        plt.axis([ 0, bias_cut[0]+.5, 0, 1 ])
+
+        fig+=1
+        
+        plt.figure(fig)
+        plt.plot(bias_cut, rc)
+        plt.ylabel('recall')
+        plt.xlabel('bias cut')
+        plt.axis([ 0, bias_cut[0]+.5, 0, 1 ])
+        
+        fig+=1        
+        
+        plt.figure(fig)
+        lineObjects = plt.plot(bias_cut, ex)
+        plt.legend(lineObjects, ('tn', 'tp', 'fn', 'fp'))
+        plt.ylabel('examples')
+        plt.xlabel('bias cut')
+        plt.axis([ 0, bias_cut[0]+.5, 0, 300 ])
+        
+    plt.show()
+        
+    
 
 args = sys.argv
 len_args = len(args)
 training = False
 extracting = False
+metatesting = False
 
 if '-t' in args:
     training = True
@@ -228,7 +433,7 @@ if '-t' in args:
         print("Error: Features file doesn't exist.")
         exit();
 elif '-e' in args:
-    extracting= True
+    extracting = True
     data = []
     if len_args == 3:
         data_file = args[2]
@@ -244,6 +449,22 @@ elif '-e' in args:
         else:
             print("The -c parameter should be followed by the number of cores to be used")
             exit()
+elif '-m' in args:
+    features_file = args[len_args-1]
+    if not os.path.isfile(features_file):
+        print("Error: Features file doesn't exist.")
+        exit();
+    metatesting = True
+    epochs = False
+    nodes = False
+    bias = False
+    if 'epochs' in args:
+        epochs = True
+    if 'nodes' in args:
+        nodes = True
+    if 'bias' in args:
+        bias = True
+        
 
 #init filepointer for save-file here, the file will contain all classifications
 #maybe csv-file, not yet decided
@@ -257,26 +478,7 @@ save_file = open('classes.csv','r')
 
 #the threshold for the neurral Network confidence
 conf_thresh = 0.5
-
-#initialize module
-modules = list()
-
-#ADD MODULES HERE
-#modules.append(TextScore(True))
-#modules.append(BoW_Text_Module(True))
-#modules.append(Page_Size_Module())
-modules.append(ScannerDetect())
-#modules.append(page_orientation_module())
-#modules.append(Bow_Metadata("title"))
-#modules.append(Bow_Metadata("author"))
-#modules.append(Bow_Metadata("filename"))
-#modules.append(Bow_Metadata("folder_name"))
-#modules.append(Bow_Metadata("folder_description"))
-#modules.append(Bow_Metadata("description"))
-
-#modules.append(OCR_BoW_Module())
-
-                
+             
 if training or extracting:
     metadata,classes = MetaHandler.get_classified_metadata("metadata.csv","classification.csv")
 else:
@@ -288,7 +490,29 @@ else:
 #save_file = open('classes.csv','a')
 
 #EXTRACT FEATURES HERE
-if(extracting):
+if extracting:
+    
+    #initialize module
+    modules = list()
+    
+    #ADD MODULES HERE
+    modules.append(TextScore(True))
+    modules.append(BoW_Text_Module(True))
+    modules.append(Page_Size_Module())
+    modules.append(ScannerDetect())
+    modules.append(page_orientation_module())
+    modules.append(Bow_Metadata("title"))
+    modules.append(Bow_Metadata("author"))
+    modules.append(Bow_Metadata("filename"))
+    modules.append(Bow_Metadata("folder_name"))
+    modules.append(Bow_Metadata("folder_description"))
+    modules.append(Bow_Metadata("description"))
+    modules.append(Negative_BoW_Text_Module(True))
+    modules.append(Resolution_Module())
+    
+    #NOT WORKING
+    #modules.append(OCR_BoW_Module())
+    
     print("Extracting Features from the training set. This might take a while...")
     if not data == []:
         extract_features(data, metadata)
@@ -296,10 +520,10 @@ if(extracting):
         print("No file data provided.")
 
 #START TRAINING HERE
-if(training):
-            
+if training or metatesting:
+    
     features, classes, files = load_data(features_file)
-        
+
     features = [[float(j) for j in i] for i in features]
     
     classes = [float(i) for i in classes]
@@ -316,14 +540,20 @@ if(training):
     
     from simple_neural_network import NN
     
+if training:
+    
     print("Initiating Neural Network")
-    network = getNN(len(features[0]))
+    network = getNN(len(features[0]), 500)
     print("Initialization finished")
     
     print("Starting training.")
-    network.trainNN(features,np.array(classes))
+    network.trainNN(features, np.array(classes), 500, .5)
     print("Training done!")
 
+#Metatests here
+if metatesting:
+        
+    plot(nodes, epochs, bias, features, classes)
 
 #classification
 #batch size for the saving process
