@@ -24,7 +24,7 @@ class NN:
          
     #@params num_input_nodes Number of input nodes. In this case the amount of
     #modules for feature extraction
-    def initializeNN(self, num_input_nodes, num_hidden_nodes):
+    def initializeNN(self, num_input_nodes, num_hidden_nodes=100):
         
         print("Creating model...")
         
@@ -55,7 +55,7 @@ class NN:
         
     #@params train_data a list of numpy arrays. Each array is an input
     #@params train_labels a numpy array with the target data
-    def trainNN(self, train_data, train_labels, num_epochs, cut):
+    def trainNN(self, train_data, train_labels, num_epochs=100, cut=.5):
         
         seed=7
         np.random.seed(seed)
