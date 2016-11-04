@@ -248,7 +248,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_nodes, ac)
         plt.ylabel('accuracy')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+50, 0, 100 ])
+        plt.axis([ 0, num_nodes[ll-1]+50, min(ac), max(ac) ])
         
         fig+=1
         
@@ -256,7 +256,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_nodes, f1)
         plt.ylabel('f1')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+50, 0, 1 ])
+        plt.axis([ 0, num_nodes[ll-1]+50, min(f1), max(f1) ])
         
         fig+=1
         
@@ -264,7 +264,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_nodes, pr)
         plt.ylabel('precision')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+50, 0, 1 ])
+        plt.axis([ 0, num_nodes[ll-1]+50, min(pr), max(pr) ])
         
         fig+=1        
         
@@ -272,7 +272,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_nodes, rc)
         plt.ylabel('recall')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+50, 0, 1 ])
+        plt.axis([ 0, num_nodes[ll-1]+50, min(rc), max(rc) ])
         
         fig+=1        
         
@@ -281,7 +281,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.legend(lineObjects, ('tn', 'tp', 'fn', 'fp'))
         plt.ylabel('examples')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+50, 0, 300 ])
+        #plt.axis([ 0, num_nodes[ll-1]+50, 0, 300 ])
         
         fig+=1        
         
@@ -289,7 +289,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_nodes, tm)
         plt.ylabel('time in seconds')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+100, 0, tm[ll-1]+50 ])
+        plt.axis([ 0, num_nodes[ll-1]+100, min(tm), max(tm) ])
                 
     if epochs:
         num_epochs = [50, 100, 200, 500, 1000, 2000]
@@ -313,7 +313,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, ac)
         plt.ylabel('accuracy')
         plt.xlabel('number of epochs (times 10)')
-        #plt.axis([ 0, num_epochs[ll-1]+500, 0, 100 ])
+        plt.axis([ 0, num_epochs[ll-1]+500, min(ac), max(ac) ])
         
         fig+=1        
         
@@ -321,7 +321,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, f1)
         plt.ylabel('f1')
         plt.xlabel('number of epochs (times 10)')
-        plt.axis([ 0, num_epochs[ll-1]+500, 0, 1 ])
+        plt.axis([ 0, num_epochs[ll-1]+500, min(f1), max(f1) ])
         
         fig+=1        
         
@@ -329,7 +329,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, pr)
         plt.ylabel('precision')
         plt.xlabel('number of epochs (times 10)')
-        plt.axis([ 0, num_epochs[ll-1]+500, 0, 1 ])
+        plt.axis([ 0, num_epochs[ll-1]+500, min(pr), max(pr) ])
         
         fig+=1        
         
@@ -337,7 +337,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, rc)
         plt.ylabel('recall')
         plt.xlabel('number of epochs (times 10)')
-        plt.axis([ 0, num_epochs[ll-1]+500, 0, 1 ])
+        plt.axis([ 0, num_epochs[ll-1]+500, min(rc), max(rc) ])
         
         fig+=1        
         
@@ -346,7 +346,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.legend(lineObjects, ('tn', 'tp', 'fn', 'fp'))
         plt.ylabel('examples')
         plt.xlabel('number of epochs (times 10)')
-        plt.axis([ 0, num_epochs[ll-1]+500, 0, 300 ])
+        #plt.axis([ 0, num_epochs[ll-1]+500, 0, 300 ])
         
         fig+=1        
         
@@ -354,10 +354,10 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, tm)
         plt.ylabel('time in seconds')
         plt.xlabel('number of epochs')
-        plt.axis([ 0, num_epochs[ll-1]+500, 0, tm[ll-1]+50 ])
+        plt.axis([ 0, num_epochs[ll-1]+500, min(tm), max(tm) ])
             
     if bias:
-        bias_cut = [.5, .4, .3, .2]
+        bias_cut = [.2, .3, .4, .5]
         ll = len(bias_cut)
         ac = [None]*ll
         f1 = [None]*ll
@@ -369,7 +369,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         for i, x in enumerate(bias_cut):
             network = getNN(len(features[0]), 100)
             start_time = time.time()
-            ac[i], f1[i], pr[i], rc[i], ex[0][i], ex[1][i], ex[2][i], ex[3][i] = network.trainNN(features, np.array(classes), 100, x)
+            ac[i], f1[i], pr[i], rc[i], ex[i][0], ex[i][1], ex[i][2], ex[i][3] = network.trainNN(features, np.array(classes), 100, x)
             tm[i] = time.time() - start_time
 
         fig+=1
@@ -378,7 +378,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(bias_cut, ac)
         plt.ylabel('accuracy')
         plt.xlabel('bias cut')
-        plt.axis([ 0, bias_cut[0]+.5, 0, 100 ])
+        plt.axis([ 0, bias_cut[0]+.5, min(ac), max(ac) ])
         
         fig+=1        
         
@@ -386,7 +386,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(bias_cut, f1)
         plt.ylabel('f1')
         plt.xlabel('bias cut')
-        plt.axis([ 0, bias_cut[0]+.5, 0, 1 ])
+        plt.axis([ 0, bias_cut[0]+.5, min(f1), max(f1) ])
         
         fig+=1        
         
@@ -394,7 +394,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(bias_cut, pr)
         plt.ylabel('precision')
         plt.xlabel('bias cut')
-        plt.axis([ 0, bias_cut[0]+.5, 0, 1 ])
+        plt.axis([ 0, bias_cut[0]+.5, min(pr), max(pr) ])
 
         fig+=1
         
@@ -402,7 +402,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(bias_cut, rc)
         plt.ylabel('recall')
         plt.xlabel('bias cut')
-        plt.axis([ 0, bias_cut[0]+.5, 0, 1 ])
+        plt.axis([ 0, bias_cut[0]+.5, min(rc), max(rc) ])
         
         fig+=1        
         
@@ -411,7 +411,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.legend(lineObjects, ('tn', 'tp', 'fn', 'fp'))
         plt.ylabel('examples')
         plt.xlabel('bias cut')
-        plt.axis([ 0, bias_cut[0]+.5, 0, 300 ])
+        #plt.axis([ 0, bias_cut[0]+.5, 0, 300 ])
         
     plt.show()
         
