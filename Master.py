@@ -300,10 +300,9 @@ def plot(nodes, epochs, bias, features, classes, ):
         rc = [None]*ll
         ex = np.empty([ll,4])
         tm = [None]*ll
-        
-        network = getNN(len(features[0]), 100)
-        
+                
         for i, x in enumerate(num_epochs):
+            network = getNN(len(features[0]), 100)
             start_time = time.time()
             ac[i], f1[i], pr[i], rc[i], ex[i][0], ex[i][1], ex[i][2], ex[i][3] = network.trainNN(features, np.array(classes), x, .5)
             tm[i] = time.time() - start_time
@@ -314,7 +313,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, ac)
         plt.ylabel('accuracy')
         plt.xlabel('number of epochs (times 10)')
-        plt.axis([ 0, num_epochs[ll-1]+500, 0, 100 ])
+        #plt.axis([ 0, num_epochs[ll-1]+500, 0, 100 ])
         
         fig+=1        
         
@@ -366,10 +365,9 @@ def plot(nodes, epochs, bias, features, classes, ):
         rc = [None]*ll
         ex = np.empty([ll,4])
         tm = [None]*ll
-        
-        network = getNN(len(features[0]), 100)
-        
+                
         for i, x in enumerate(bias_cut):
+            network = getNN(len(features[0]), 100)
             start_time = time.time()
             ac[i], f1[i], pr[i], rc[i], ex[0][i], ex[1][i], ex[2][i], ex[3][i] = network.trainNN(features, np.array(classes), 100, x)
             tm[i] = time.time() - start_time
