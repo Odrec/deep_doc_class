@@ -248,7 +248,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_nodes, ac)
         plt.ylabel('accuracy')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+50, min(ac), max(ac) ])
+        plt.axis([ 0, num_nodes[ll-1]+50, min(ac)-1, max(ac)+1 ])
         
         fig+=1
         
@@ -256,7 +256,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_nodes, f1)
         plt.ylabel('f1')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+50, min(f1), max(f1) ])
+        plt.axis([ 0, num_nodes[ll-1]+50, min(f1)-.1, max(f1)+.1 ])
         
         fig+=1
         
@@ -264,7 +264,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_nodes, pr)
         plt.ylabel('precision')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+50, min(pr), max(pr) ])
+        plt.axis([ 0, num_nodes[ll-1]+50, min(pr)-.1, max(pr)+.1 ])
         
         fig+=1        
         
@@ -272,7 +272,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_nodes, rc)
         plt.ylabel('recall')
         plt.xlabel('number of nodes')
-        plt.axis([ 0, num_nodes[ll-1]+50, min(rc), max(rc) ])
+        plt.axis([ 0, num_nodes[ll-1]+50, min(rc)-.1, max(rc)+.1 ])
         
         fig+=1        
         
@@ -313,7 +313,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, ac)
         plt.ylabel('accuracy')
         plt.xlabel('number of epochs (times 10)')
-        plt.axis([ 0, num_epochs[ll-1]+500, min(ac), max(ac) ])
+        plt.axis([ 0, num_epochs[ll-1]+500, min(ac)-1, max(ac)+1 ])
         
         fig+=1        
         
@@ -321,7 +321,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, f1)
         plt.ylabel('f1')
         plt.xlabel('number of epochs (times 10)')
-        plt.axis([ 0, num_epochs[ll-1]+500, min(f1), max(f1) ])
+        plt.axis([ 0, num_epochs[ll-1]+500, min(f1)-.1, max(f1)+.1 ])
         
         fig+=1        
         
@@ -329,7 +329,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, pr)
         plt.ylabel('precision')
         plt.xlabel('number of epochs (times 10)')
-        plt.axis([ 0, num_epochs[ll-1]+500, min(pr), max(pr) ])
+        plt.axis([ 0, num_epochs[ll-1]+500, min(pr)-.1, max(pr)+.1 ])
         
         fig+=1        
         
@@ -337,7 +337,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(num_epochs, rc)
         plt.ylabel('recall')
         plt.xlabel('number of epochs (times 10)')
-        plt.axis([ 0, num_epochs[ll-1]+500, min(rc), max(rc) ])
+        plt.axis([ 0, num_epochs[ll-1]+500, min(rc)-.1, max(rc)+.1 ])
         
         fig+=1        
         
@@ -378,7 +378,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(bias_cut, ac)
         plt.ylabel('accuracy')
         plt.xlabel('bias cut')
-        plt.axis([ 0, bias_cut[0]+.5, min(ac), max(ac) ])
+        plt.axis([ 0, bias_cut[0]+.1, min(ac)-1, max(ac)+1 ])
         
         fig+=1        
         
@@ -386,7 +386,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(bias_cut, f1)
         plt.ylabel('f1')
         plt.xlabel('bias cut')
-        plt.axis([ 0, bias_cut[0]+.5, min(f1), max(f1) ])
+        plt.axis([ 0, bias_cut[0]+.1, min(f1)-.1, max(f1)+.1 ])
         
         fig+=1        
         
@@ -394,7 +394,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(bias_cut, pr)
         plt.ylabel('precision')
         plt.xlabel('bias cut')
-        plt.axis([ 0, bias_cut[0]+.5, min(pr), max(pr) ])
+        plt.axis([ 0, bias_cut[0]+.1, min(pr)-.1, max(pr)+.1 ])
 
         fig+=1
         
@@ -402,7 +402,7 @@ def plot(nodes, epochs, bias, features, classes, ):
         plt.plot(bias_cut, rc)
         plt.ylabel('recall')
         plt.xlabel('bias cut')
-        plt.axis([ 0, bias_cut[0]+.5, min(rc), max(rc) ])
+        plt.axis([ 0, bias_cut[0]+.1, min(rc)-.1, max(rc)+.1 ])
         
         fig+=1        
         
