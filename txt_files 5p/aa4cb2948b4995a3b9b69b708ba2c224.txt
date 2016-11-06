@@ -1,165 +1,0 @@
-Ensemble vs. individual 
-
-Fluctuations can be detected on the level of individual molecules 
-No synchronization is required, analysis of multistep processes 
-
-Heterogeneity in the sample can be resolved 
-
-Single molecule FRET 
-
-Dynamic equilibrium between different states 
-
-Unfolded ↔ Folded 
-
-Conformational change 
-
-Histogram analysis of apparent FRET efficiencies 
-
-DAAappIIIESingle molecule FRET 
-
-Imaging of an ensemble of individual immobilized molecules 
-
-- two conformational states (high vs. low FRET) 
-
-labeling < 100% (labeled with donor or acceptor only) 
-
-low FRET 
-
-donor only 
-(no FRET) 
-
-acceptor only 
-(direct exc.) 
-
-high FRET 
-
-ID: quantified from donor-only signals  
-    or after acceptor photobleaching 
-
-Intensity of acceptor signals important for the interpretation of donor signals! 
-
-DDAappIIE1Immobilization techniques 
-
-- Mg2+ 
-
-+ Mg2+ 
-
-Single molecule FRET 
-
-- Mg2+ 
-
-+ Mg2+ 
-
-Conformational dynamics by FRET 
-
-apparent FRET  
-
-efficiency 
-
-IA 
-ID 
-
-Corrected FRET 
-
-efficiency 
-
-Correction factor  
-
-: change upon acceptor 
-
-photobleaching 
-
-DAAappIIIE11ADIIEDAIIConfocal detection 
-
-Objective for focusing into a diffraction-limited  
-
-confocal volume (not for imaging) 
-
-Confocal detection 
-
-Confocal volume: ~ 1fL 
-1nM = 0.6 molecules/fL 
-
-Residence time of diffusing molecules in the confocal volume: 
-
-depends on diffusion constant: 1-100 ms 
-
-Typical single molecule confocal detection 
-
-µs time resolution, possible combination with TCSPC 
-
-“Photon bursts” 
-
-At low concentration of labeled species, a burst of photons is detected 
-
-upon entering into the confocal volume 
-
-Accumulation of photon bursts over time 
-
-Information: amplitude, length, fine structure 
-
-Dual channel confocal detection 
-
-Cross-correlation and single molecule FRET (smFRET)  
-
-Following multistep processes by smFRET 
-
-Rotation of the FOF1 ATP synthase in liposomes 
-
-Three different FRET efficiencies during rotation:  
-
-1 (low), 2 (medium) and 3 (high) 
-
-Rotation during ATP hydrolysis/synthesis 
-
-Quantitative single molecule FRET 
-
-Quantitative FRET analysis requires knowledge about the presence of 
-
-donor and acceptor on an individual molecule 
-
-Probing the presence of the acceptor by a second laser 
-
- CW excitation: alternating laser excitation (ALEX) 
-
- TR excitation: Pulsed interleave excitation (PIE) 
-
-Fluorescence correlation spectroscopy (FCS) 
-
-Probing fluctuations in the confocal volume 
-
-Different diffusion rates 
-
-The average residence time in the confocal volume depends 
-
-on the diffusion constant 
-
-Autocorrelation function for analyzing the width 
-
-of fluctuations within the time traces 
-
-Auto-correlation function 
-
-Overlap of the peaks after shifting by different lag times t 
-
-t1 
-
-t2 
-
-22tFtFtFtFtFtFGttt12tFtFtFGtttFtFFAuto-correlation 
-
-Overlap of the peaks after shifting by different lag times t 
-
-autocorrelation function 
-
-Fluorescence fluctuation  
-
-12tFtFtFGttAuto-correlation 
-
-Overlap of the peaks after shifting by different lag times t 
-
-Diffusion rate 
-
-Concentration 
-
-
