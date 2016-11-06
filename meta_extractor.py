@@ -43,19 +43,28 @@ class Meta_PDF_Module:
         mp = self.get_meta(fp)
         bow_list = list()
         #bow = self.get_bow(self.get_meta(fp))
-        for i in range(3):
-            if('/Creator' in mp and i == 0):
-                result[i],result[i+3] = self.get_score(a.get_bow(mp['/Creator']),i)
+        
+        if isinstance(mp,dict):
+
+            if('/Author' in mp):
+                result[0], result[3] = self.get_score(self.get_bow(mp['/Author']),0)
             else:
-                result[i] = 0.0
-            if '/Author' in mp and i == 1:
-               result[i],result[i+3] = self.get_score(a.get_bow(mp['/Author']),i)
+                result[0] = np.nan 
+                result[3] = np.nan
+            if '/Creator' in mp:
+                result[1], result[4] = self.get_score(self.get_bow(mp['/Creator']),1)
             else:
-                result[i] = 0.0
-            if '/Producer' in mp and i == 2:
-                result[i],result[i+3] = self.get_score(a.get_bow(mp['/Producer']),i)
+                result[1] = np.nan 
+                result[4] = np.nan
+            if '/Producer' in mp:
+                result[2], result[5] = self.get_score(self.get_bow(mp['/Producer']),2)
             else:
-                result[i] = 0.0
+                result[2] = np.nan 
+                result[5] = np.nan
+                
+        else: result[0:5] = np.nan
+            
+            
         if self.exclude != None:
             r = list()
             for i in range(6):
@@ -75,12 +84,15 @@ class Meta_PDF_Module:
                       3 = producer
         :return:    positive and negative score (float)
         """
-        pos, neg = 0.0
+        pos = 0.0
+        neg = 0.0
+
         for key in bow:
             if key in self.lib_list[index]:
                 pos += bow[key]*self.lib_list[index][key]
-            if key in self.lib_list[index]:
+            if key in self.lib_list[index+3]:
                 neg += bow[key]*self.lib_list[index+3][key]
+                
         return pos,neg
 
     def train(self,filnames,classes):
@@ -88,9 +100,13 @@ class Meta_PDF_Module:
 
     def get_meta(self, fp):
         pdf_toread = PdfFileReader(fp)
-        pdf_info = pdf_toread.getDocumentInfo()
-        print(str(pdf_info))
-        #print((pdf_info['/CreationDate']))
+        
+        if not pdf_toread.isEncrypted:
+            pdf_info = pdf_toread.getDocumentInfo()
+        else:
+            #can't read metadata because file is encrypted
+            return np.nan
+
         return pdf_info
 
     def mine_meta(self,fp):
@@ -106,6 +122,7 @@ class Meta_PDF_Module:
         @return:        the bow of that specific document
         """
         txt = txt.lower()
+
         return Counter(re.findall(r'\w+', txt))
 
     def train(self,filenames,classes):
