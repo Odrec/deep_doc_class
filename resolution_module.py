@@ -11,6 +11,7 @@ class Resolution_Module:
                      'y' - measure the y-axis  in pixels
         """
         self.side = side
+        self.name = ['resolutionX','resolutionY']
         self.error = False
         return
 

@@ -23,6 +23,7 @@ class Meta_PDF_Module:
         """
         self.lib_list = self.load_lib()
         self.exclude = exclude
+        self.name = ['pos_author','pos_creator','pos_producer','neg_author','neg_creator','neg_producer']
         return
 
     def load_lib(self):
