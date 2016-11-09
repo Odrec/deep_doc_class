@@ -12,6 +12,7 @@ except ImportError:
     from io import StringIO
 import collections, re
 import numpy as np
+import PyPDF2 as pyPdf
 import scipy.stats as s
 import os
 import csv
@@ -93,6 +94,14 @@ class BoW_Text_Module:
             text = ''
         return text
 
+    def convertPdf2String(fp):
+      content = ""
+      pdf = pyPdf.PdfFileReader(fp)
+      for i in range(0, pdf.getNumPages()):
+          content += pdf.getPage(i).extractText() + " \n"
+          content = " ".join(content.replace(u"\xa0", u" ").strip().split())
+      return content
+
     def get_txt(self,fp):
         path = fp.name.replace('.pdf','.txt')
         path = path.replace('./files/','./'+self.path+'/')
@@ -142,7 +151,7 @@ class BoW_Text_Module:
             if self.txt:
                 txt = self.get_txt(filepointer)
             else:
-                txt = self.convert_pdf_to_txt(filepointer)
+                txt = self.convertPdf2String(filepointer)
         except:
             return np.nan
         txt = self.sanitize(txt)

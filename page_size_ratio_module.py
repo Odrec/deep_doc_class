@@ -16,7 +16,8 @@ from PyPDF2 import PdfFileReader
 
 class Page_Size_Module:
 
-    def __init__(self):
+    def __init__(self, raw = True):
+        self.raw = raw
         return
 
     def enum_pages(self,fp):
@@ -49,11 +50,13 @@ class Page_Size_Module:
 
         #get number of pages
         #pages = self.enum_pages(filepointer)
-
-        if pages != np.nan:
-            return size/pages
+        if(not self.raw):
+            if pages != np.nan:
+                return size/pages
+            else:
+                return pages
         else:
-            return pages
+            return np.array([size,pages])
 
     def train(self,filenames,classes,metalist = None):
         return
