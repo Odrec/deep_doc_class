@@ -50,17 +50,17 @@ class Meta_PDF_Module:
                 result[0], result[3] = self.get_score(self.get_bow(mp['/Author']),0)
             else:
                 result[0] = np.nan 
-                result[3] = np.nan
+                result[3] = 0.0
             if '/Creator' in mp:
                 result[1], result[4] = self.get_score(self.get_bow(mp['/Creator']),1)
             else:
                 result[1] = np.nan 
-                result[4] = np.nan
+                result[4] = 0.0
             if '/Producer' in mp:
                 result[2], result[5] = self.get_score(self.get_bow(mp['/Producer']),2)
             else:
                 result[2] = np.nan 
-                result[5] = np.nan
+                result[5] = 0.0
                 
         else: result[0:5] = np.nan
             
@@ -95,8 +95,14 @@ class Meta_PDF_Module:
                 
         return pos,neg
 
-    def train(self,filnames,classes):
-        return
+    def sanitize(self,txt):
+        txt = ''.join(i for i in txt if not str(i).isdigit())
+        txt = ''.join(i for i in txt if not i == ".")
+        txt = ''.join(i for i in txt if not i == ",")
+        txt = ''.join(i for i in txt if not i == "-")
+        txt = ''.join(i for i in txt if not i == ";")
+        txt = ''.join(i for i in txt if not i == " ")
+        return txt
 
     def get_meta(self, fp):
         pdf_toread = PdfFileReader(fp)
@@ -122,7 +128,7 @@ class Meta_PDF_Module:
         @return:        the bow of that specific document
         """
         txt = txt.lower()
-
+        txt = self.sanitize(txt)
         return Counter(re.findall(r'\w+', txt))
 
     def train(self,filenames,classes):
@@ -156,10 +162,16 @@ class Meta_PDF_Module:
                         continue
                     if('/Creator' in mp):
                         neg_creators.append(self.get_bow(mp['/Creator']))
+                    else:
+                        neg_creators.append(Counter({'null': 1}))
                     if '/Author' in mp:
                         neg_authors.append(self.get_bow(mp['/Author']))
+                    else:
+                        neg_authors.append(Counter({'null': 1}))
                     if '/Producer' in mp:
                         neg_producer.append(self.get_bow(mp['/Producer']))
+                    else:
+                        neg_producer.append(Counter({'null': 1}))
                 except:
                     continue
         #sum up
@@ -195,7 +207,7 @@ class Meta_PDF_Module:
 
 
 
-"""
+
 
 filenames = list()
 file_class = list()
@@ -212,7 +224,7 @@ with open('classification.csv','r') as classes:
 
 a.train(filenames,file_class)
 
-
+"""
 creators = list()
 authors = list()
 writers = list()
