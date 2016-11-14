@@ -19,6 +19,7 @@ nltk.data.path.append(join(MOD_PATH,'nltk_data'))  # setting path to files
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.ensemble import RandomForestClassifier
 
 
 class BowMetadata():
@@ -26,6 +27,7 @@ class BowMetadata():
         if of_type is None: raise ValueError("BowMetadata can't be of type: None")
         else: self.of_type=of_type
 
+        self.name = of_type
         self.vectorizer = CountVectorizer(analyzer='word', max_features=1000)
         self.forest = RandomForestClassifier(n_estimators=100)
 
@@ -68,9 +70,9 @@ class BowMetadata():
         # self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
         # self.author=pd.read_csv('tests/uploaderTest.csv', header=0, delimiter=",", quoting=1)
         # self.clf=pd.read_csv("tests/classificationTest.csv", header=0, delimiter=';', quoting=3)
-        self.metadata=pd.read_csv(join(DATA_PATH,"metadata.csv"), header=0, delimiter=',', quoting=1, encoding='utf-8')
+        self.metadata=pd.read_csv(join(DATA_PATH,"classified_metadata.csv"), header=0, delimiter=',', quoting=1, encoding='utf-8')
         self.author=pd.read_csv(join(MOD_PATH,'uploader.csv'), header=0, delimiter=",", quoting=1)
-        self.clf=pd.read_csv(join(DATA_PATH,"classification.csv"), header=0, delimiter=';', quoting=3)
+        self.clf=pd.read_csv(join(DATA_PATH,"trimmed_classification.csv"), header=0, delimiter=';', quoting=3)
 
         # self.clf_positive = self.clf.loc[self.clf['published'] == True].reset_index(drop=True)
         # self.clf_negative = self.clf.loc[self.clf['published'] == False]
@@ -156,9 +158,9 @@ class BowMetadata():
         # result_tree = self.forest.decision_path(test_data_feature)
         # mean = self.forest.score(test_data_feature, [False,False,False,False])
         # mean = self.forest.score(test_data_feature, [False])
-        print(result)
-        # print(result_tree)
-        print(result_proba)
+        # print(result)
+        # # print(result_tree)
+        # print(result_proba)
         # print(mean)
         # print(result[0][0]) #return value
         return result_proba[0][1]

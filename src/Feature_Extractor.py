@@ -154,7 +154,6 @@ if __name__ == "__main__":
 	with open(data_file, 'r') as df:
 		reader = csv.reader(df)
 		data = list(reader)
-		data = data[1:]
 
 	if(len_args==4 and args[2]=='-c'):
 		try:
@@ -178,12 +177,12 @@ if __name__ == "__main__":
 	features.append(Page_Size_Module())
 	features.append(ScannerDetect())
 	features.append(page_orientation_module())
-	# features.append(BowMetadata("title"))
+	features.append(BowMetadata("title"))
 	# features.append(BowMetadata("author"))
-	# features.append(BowMetadata("filename"))
-	# features.append(BowMetadata("folder_name"))
-	# features.append(BowMetadata("folder_description"))
-	# features.append(BowMetadata("description"))
+	features.append(BowMetadata("filename"))
+	features.append(BowMetadata("folder_name"))
+	features.append(BowMetadata("folder_description"))
+	features.append(BowMetadata("description"))
 	features.append(Negative_BoW_Text_Module(True))
 	features.append(Resolution_Module())
 
