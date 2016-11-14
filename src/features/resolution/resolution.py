@@ -14,9 +14,8 @@ class Resolution_Module:
                      'y' - measure the y-axis  in pixels
         """
         self.side = side
-        self.name = ['resolutionX','resolutionY']
+        self.name = ['resolution']
         self.error = False
-        return
 
     def get_function(self,fp, metapointer = None):
         try:

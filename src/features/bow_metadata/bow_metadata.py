@@ -27,7 +27,7 @@ class BowMetadata():
         if of_type is None: raise ValueError("BowMetadata can't be of type: None")
         else: self.of_type=of_type
 
-        self.name = of_type
+        self.name = [of_type]
         self.vectorizer = CountVectorizer(analyzer='word', max_features=1000)
         self.forest = RandomForestClassifier(n_estimators=100)
 

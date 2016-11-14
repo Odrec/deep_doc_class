@@ -34,8 +34,15 @@ import cProfile
 
 METADATA = None
 
-def extract_features(data, p=-1):
-        
+def extract_features(data, outfile, p=-1):
+
+    fieldnames = []
+    for f in features:
+        fieldnames.extend(f.name)
+
+    fieldnames.append("class")
+    fieldnames.append("document_id")
+
     #c,m = get_classes(filenames,classes,metadata)
     
     feat_matrix = list()
@@ -52,9 +59,6 @@ def extract_features(data, p=-1):
     # for d in data:
     # 	metapointer = metadata[d]
     # 	res.append(get_data_vector(d))
-    fieldnames = []
-    for f in features:
-    	fieldnames.extend(f.name)
 
     # feature_vals = list()
     # file_data = list()
@@ -67,12 +71,16 @@ def extract_features(data, p=-1):
     #     r.append(file_data[f][0])
     #     r.append(file_data[f][1])
     #     feat_matrix.append(r) 
-    
-    with open(join(FEATURE_VALS_PATH, "output_test.csv"),"w") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=",")
-        writer.writeheader()
 
-        writer.writerows(res)
+    
+    with open(join(FEATURE_VALS_PATH, outfile),"w") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
+        writer.writeheader()
+        for row in res:
+            rowdict = {}
+            for i, fname in enumerate(fieldnames):
+            	rowdict[fname] = row[i]
+            writer.writerow(rowdict)
         
     return feat_matrix
 
@@ -102,10 +110,11 @@ def generate_error_features(features):
     return features
 
 def get_data_vector(t_data):
-	feature_data = list()
+	feature_data = []
 	filepointer = None
 	doc_class = t_data[0]
 	doc_id = t_data[1]
+
 	metapointer = METADATA.loc[METADATA['document_id'] == doc_id].reset_index(drop=True)
 	try:
 		filepointer = open(join(PDF_PATH,doc_id+'.pdf'),'rb')
@@ -118,11 +127,15 @@ def get_data_vector(t_data):
 		for f in features:
 			num_feat_vals = len(f.name)
 			try:
-				#extract data-dimension from pdf
-				feature_data.extend(f.get_function(filepointer,metapointer))
+				vals = f.get_function(filepointer,metapointer)
+				if(num_feat_vals==1):
+					feature_data.append(vals)
+				else:
+					feature_data.extend(vals)
 			except:
 				#if error occures the value is nan
 				feature_data.extend([np.nan]*num_feat_vals)
+				continue
 
 	feature_data.append(doc_class)
 	feature_data.append(doc_id)
@@ -154,6 +167,7 @@ if __name__ == "__main__":
 	with open(data_file, 'r') as df:
 		reader = csv.reader(df)
 		data = list(reader)
+		# data = data[0:3]
 
 	if(len_args==4 and args[2]=='-c'):
 		try:
@@ -189,7 +203,8 @@ if __name__ == "__main__":
 	#features.append(OCR_BoW_Module())
 
 	print("Extracting Features")
-	extract_features(data=data, p=p)
+	outfile = "out_test.csv"
+	extract_features(data=data,outfile=outfile, p=p)
 
 	# # Getting time spend in all functions called. Doesn't work with multiple threads
 	# cProfile.runctx("extract_features(data=doc_ids, features=features, metadata=metadata, p=p)", globals(), locals())
