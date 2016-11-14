@@ -21,186 +21,187 @@ import random
 import numpy as np
 
 import csv
+import pandas as pd
 
-def get_whole_metadata(metafile):
-    """
-    Loads only the classified metadata
+# def get_whole_metadata(metafile):
+#     """
+#     Loads only the classified metadata
 
-    @param metafile: the file containing the metadata or the full path as string
-    @dtype metafile: string or file
+#     @param metafile: the file containing the metadata or the full path as string
+#     @dtype metafile: string or file
 
-    @return metadata: the whole metadata
-    @dtype metadata: dict(document_id:list(metadata))
-    """
-    # Make sure the metafiel parameter is of the right type
-    if(isinstance(metafile,str)):
-        try:
-            meta_csv = open(metafile)
-        except IOError:
-            print("The metafile attribute has to be a the filepath or a file opject!")
-            sys.exit(0)
-    else:
-        try:
-            assert(isinstance(metafile,io.IOBase))
-            meta_csv = metafile
-        except AssertionError:
-            print("The metafile attribute has to be a the filepath or a file opject!")
-            sys.exit(0)
-    # Open the csv file
-    reader = csv.DictReader(meta_csv)
+#     @return metadata: the whole metadata
+#     @dtype metadata: dict(document_id:list(metadata))
+#     """
+#     # Make sure the metafiel parameter is of the right type
+#     if(isinstance(metafile,str)):
+#         try:
+#             meta_csv = open(metafile)
+#         except IOError:
+#             print("The metafile attribute has to be a the filepath or a file opject!")
+#             sys.exit(0)
+#     else:
+#         try:
+#             assert(isinstance(metafile,io.IOBase))
+#             meta_csv = metafile
+#         except AssertionError:
+#             print("The metafile attribute has to be a the filepath or a file opject!")
+#             sys.exit(0)
+#     # Open the csv file
+#     reader = csv.DictReader(meta_csv)
 
-    data_fname2idx = {}
+#     data_fname2idx = {}
 
-    # get the fieldnames and parse them in the index dict
-    data_fnames = reader.fieldnames
-    for i in range(0,len(data_fnames)):
-        data_fname2idx[data_fnames[i]] = i
+#     # get the fieldnames and parse them in the index dict
+#     data_fnames = reader.fieldnames
+#     for i in range(0,len(data_fnames)):
+#         data_fname2idx[data_fnames[i]] = i
 
-    # make space for meta_data
-    metadata = {}
-    # read the data row by row
-    for row in reader:
-        # get the row ordered as the fieldnames
-        datarow = [row[name] for name in data_fnames]
-        # make ints to ints
-        datarow[data_fname2idx["filesize"]] = int(datarow[data_fname2idx["filesize"]])
-        # bools to bools
-        datarow[data_fname2idx["author_dr"]] = bool(int(datarow[data_fname2idx["author_dr"]]))
-        datarow[data_fname2idx["author_prof"]] = bool(int(datarow[data_fname2idx["author_prof"]]))
-        datarow[data_fname2idx["is_pdf"]] = bool(int(datarow[data_fname2idx["is_pdf"]]))
-        # and timestamps to timestampts
-        datarow[data_fname2idx["upload_timestamp"]] = datetime.utcfromtimestamp(float(datarow[data_fname2idx["upload_timestamp"]]))
-        # add the datarow
-        metadata[datarow[data_fname2idx["document_id"]]] = datarow
+#     # make space for meta_data
+#     metadata = {}
+#     # read the data row by row
+#     for row in reader:
+#         # get the row ordered as the fieldnames
+#         datarow = [row[name] for name in data_fnames]
+#         # make ints to ints
+#         datarow[data_fname2idx["filesize"]] = int(datarow[data_fname2idx["filesize"]])
+#         # bools to bools
+#         datarow[data_fname2idx["author_dr"]] = bool(int(datarow[data_fname2idx["author_dr"]]))
+#         datarow[data_fname2idx["author_prof"]] = bool(int(datarow[data_fname2idx["author_prof"]]))
+#         datarow[data_fname2idx["is_pdf"]] = bool(int(datarow[data_fname2idx["is_pdf"]]))
+#         # and timestamps to timestampts
+#         datarow[data_fname2idx["upload_timestamp"]] = datetime.utcfromtimestamp(float(datarow[data_fname2idx["upload_timestamp"]]))
+#         # add the datarow
+#         metadata[datarow[data_fname2idx["document_id"]]] = datarow
 
-    # close file if opened by this function
-    if(isinstance(metafile,str)):
-        meta_csv.close()
-    # return the data
-    return metadata
+#     # close file if opened by this function
+#     if(isinstance(metafile,str)):
+#         meta_csv.close()
+#     # return the data
+#     return metadata
 
-def get_classified_metadata(metafile, classfile, only_copyright_class=True):
-    """
-    Loads only the metadata of the documents which have been classified and their classification
+# def get_classified_metadata(metafile, classfile, only_copyright_class=True):
+#     """
+#     Loads only the metadata of the documents which have been classified and their classification
 
-    @param metafile: the file containing the metadata or the full path as string
-    @dtype metafile: string or file
+#     @param metafile: the file containing the metadata or the full path as string
+#     @dtype metafile: string or file
 
-    @param classfile: the file containing the classifications or the full path as string
-    @dtype classfile: string or file
+#     @param classfile: the file containing the classifications or the full path as string
+#     @dtype classfile: string or file
 
-    @param only_copyright_class: flag deciding if the classifications should only contain the field identifying
-                                the copyright status or all the other information as well.
-    @dtype only_copyright_class: boolean
+#     @param only_copyright_class: flag deciding if the classifications should only contain the field identifying
+#                                 the copyright status or all the other information as well.
+#     @dtype only_copyright_class: boolean
 
-    @return metadata: the metadata as dict
-    @dtype metadata: dict(document_id:list(metadata))
+#     @return metadata: the metadata as dict
+#     @dtype metadata: dict(document_id:list(metadata))
 
-    @return classifications: the classification as dict
-    @dtype classifications: dict(document_id:classification)
-    """
+#     @return classifications: the classification as dict
+#     @dtype classifications: dict(document_id:classification)
+#     """
 
-    ### Classifications ###
-    # Make sure the classfile parameter is of the right type
-    if(isinstance(classfile,str)):
-        try:
-            class_csv = open(classfile)
-        except IOError:
-            print("The metafile attribute has to be a the filepath or a file opject!")
-            sys.exit(0)
-    else:
-        try:
-            assert(isinstance(classfile,io.IOBase))
-            class_csv = classfile
-        except AssertionError:
-            print("The metafile attribute has to be a the filepath or a file opject!")
-            sys.exit(0)
+#     ### Classifications ###
+#     # Make sure the classfile parameter is of the right type
+#     if(isinstance(classfile,str)):
+#         try:
+#             class_csv = open(classfile)
+#         except IOError:
+#             print("The metafile attribute has to be a the filepath or a file opject!")
+#             sys.exit(0)
+#     else:
+#         try:
+#             assert(isinstance(classfile,io.IOBase))
+#             class_csv = classfile
+#         except AssertionError:
+#             print("The metafile attribute has to be a the filepath or a file opject!")
+#             sys.exit(0)
 
-    # open the csv reader
-    reader = csv.DictReader(class_csv, delimiter=";")
+#     # open the csv reader
+#     reader = csv.DictReader(class_csv, delimiter=";")
 
-    # get all the fielnames and write them to the name->index dict
-    class_fname2idx = {}
-    class_fnames = reader.fieldnames
+#     # get all the fielnames and write them to the name->index dict
+#     class_fname2idx = {}
+#     class_fnames = reader.fieldnames
 
-    for i in range(0,len(class_fnames)):
-        class_fname2idx[class_fnames[i]] = i
+#     for i in range(0,len(class_fnames)):
+#         class_fname2idx[class_fnames[i]] = i
 
-    # get classifications row by row
-    classifications = {}
-    for row in reader:
+#     # get classifications row by row
+#     classifications = {}
+#     for row in reader:
 
-        if(only_copyright_class):
-            classifications[row["document_id"]] = row["published"]=="True"
-        else:
-            row["published"] = row["published"]=="True"
-            classifications[row["document_id"]] = row
+#         if(only_copyright_class):
+#             classifications[row["document_id"]] = row["published"]=="True"
+#         else:
+#             row["published"] = row["published"]=="True"
+#             classifications[row["document_id"]] = row
 
-    # close the file if open by this function
-    if(isinstance(classfile,str)):
-        class_csv.close()
+#     # close the file if open by this function
+#     if(isinstance(classfile,str)):
+#         class_csv.close()
 
-    # check classifiaction if no file exists for the id delete it
-    for c_id in list(classifications):
-        if(not os.path.isfile(join(PDF_PATH, c_id+".pdf"))):
-            del classifications[c_id]
+#     # check classifiaction if no file exists for the id delete it
+#     for c_id in list(classifications):
+#         if(not os.path.isfile(join(PDF_PATH, c_id+".pdf"))):
+#             del classifications[c_id]
 
-    ### Metadata ###
-    # Make sure the metafile parameter os of the right type
-    if(isinstance(metafile,str)):
-        try:
-            meta_csv = open(metafile)
-        except IOError:
-            print("The metafile attribute has to be a the filepath or a file opject!")
-            sys.exit(0)
-    else:
-        try:
-            assert(isinstance(metafile,io.IOBase))
-            meta_csv = metafile
-        except AssertionError:
-            print("The metafile attribute has to be a the filepath or a file opject!")
-            sys.exit(0)
+#     ### Metadata ###
+#     # Make sure the metafile parameter os of the right type
+#     if(isinstance(metafile,str)):
+#         try:
+#             meta_csv = open(metafile)
+#         except IOError:
+#             print("The metafile attribute has to be a the filepath or a file opject!")
+#             sys.exit(0)
+#     else:
+#         try:
+#             assert(isinstance(metafile,io.IOBase))
+#             meta_csv = metafile
+#         except AssertionError:
+#             print("The metafile attribute has to be a the filepath or a file opject!")
+#             sys.exit(0)
 
-    # open the csv reader
-    reader = csv.DictReader(meta_csv)
+#     # open the csv reader
+#     reader = csv.DictReader(meta_csv)
 
-    # get the fieldnames and parse them in the name->index dict
-    data_fname2idx = {}
-    data_fnames = reader.fieldnames
-    for i in range(0,len(data_fnames)):
-        data_fname2idx[data_fnames[i]] = i
+#     # get the fieldnames and parse them in the name->index dict
+#     data_fname2idx = {}
+#     data_fnames = reader.fieldnames
+#     for i in range(0,len(data_fnames)):
+#         data_fname2idx[data_fnames[i]] = i
 
-    # make space for meta_data
-    metadata = {}
-    rowdict = {}
-    # read the data row by row
-    for row in reader:
-        # if it has been classified
-        if(row["document_id"] in classifications):
-            rowdict = {}
-            # get the row ordered as the fieldnames
-            datarow = [row[name] for name in data_fnames]
-            # make ints to ints
-            datarow[data_fname2idx["filesize"]] = int(datarow[data_fname2idx["filesize"]])
-            row["filesize"] = datarow[data_fname2idx["filesize"]]
-            # bools to bools
-            datarow[data_fname2idx["author_dr"]] = bool(int(datarow[data_fname2idx["author_dr"]]))
-            row["author_dr"] = datarow[data_fname2idx["author_dr"]]
-            datarow[data_fname2idx["author_prof"]] = bool(int(datarow[data_fname2idx["author_prof"]]))
-            row["author_prof"] = datarow[data_fname2idx["author_prof"]]
-            datarow[data_fname2idx["is_pdf"]] = bool(int(datarow[data_fname2idx["is_pdf"]]))
-            row["is_pdf"] = datarow[data_fname2idx["is_pdf"]]
-            # and timestamps to timestampts
-            datarow[data_fname2idx["upload_timestamp"]] = datetime.utcfromtimestamp(float(datarow[data_fname2idx["upload_timestamp"]]))
-            row["upload_timestamp"] = datarow[data_fname2idx["upload_timestamp"]]
-            metadata[row["document_id"]] = row
+#     # make space for meta_data
+#     metadata = {}
+#     rowdict = {}
+#     # read the data row by row
+#     for row in reader:
+#         # if it has been classified
+#         if(row["document_id"] in classifications):
+#             rowdict = {}
+#             # get the row ordered as the fieldnames
+#             datarow = [row[name] for name in data_fnames]
+#             # make ints to ints
+#             datarow[data_fname2idx["filesize"]] = int(datarow[data_fname2idx["filesize"]])
+#             row["filesize"] = datarow[data_fname2idx["filesize"]]
+#             # bools to bools
+#             datarow[data_fname2idx["author_dr"]] = bool(int(datarow[data_fname2idx["author_dr"]]))
+#             row["author_dr"] = datarow[data_fname2idx["author_dr"]]
+#             datarow[data_fname2idx["author_prof"]] = bool(int(datarow[data_fname2idx["author_prof"]]))
+#             row["author_prof"] = datarow[data_fname2idx["author_prof"]]
+#             datarow[data_fname2idx["is_pdf"]] = bool(int(datarow[data_fname2idx["is_pdf"]]))
+#             row["is_pdf"] = datarow[data_fname2idx["is_pdf"]]
+#             # and timestamps to timestampts
+#             datarow[data_fname2idx["upload_timestamp"]] = datetime.utcfromtimestamp(float(datarow[data_fname2idx["upload_timestamp"]]))
+#             row["upload_timestamp"] = datarow[data_fname2idx["upload_timestamp"]]
+#             metadata[row["document_id"]] = row
 
-    # close the file if open by this function
-    if(isinstance(meta_csv,str)):
-        meta_csv.close()
+#     # close the file if open by this function
+#     if(isinstance(meta_csv,str)):
+#         meta_csv.close()
 
-    # return metadata and classification
-    return metadata, classifications
+#     # return metadata and classification
+#     return metadata, classifications
 
 def gen_train_test_split(document_ids, test_size):
     '''
@@ -261,15 +262,26 @@ def write_classified_metadata(metafile, classfile):
     meta_csv.close()
     return
 
+def get_classified_meta_dataframe(metafile="classified_metadata.csv"):
+    meta_data=pd.read_csv(join(DATA_PATH,metafile), header=0, delimiter=',', quoting=1, encoding='utf-8')
+    return meta_data
+
+def get_whole_meta_dataframe(metafile="metadata.csv"):
+    meta_data=pd.read_csv(join(DATA_PATH,metafile), header=0, delimiter=',', quoting=1, encoding='utf-8')
+    return meta_data
+
+def get_trimmed_classifications(class_file="trimmed_classification.csv"):
+    class_data=pd.read_csv(join(DATA_PATH,class_file), header=0, delimiter=';', quoting=1, encoding='utf-8')
+    return class_data
+
+
 
 if __name__ == '__main__':
-    # this is the path to the doc_data
-    metafile = join(DATA_PATH, "classified_metadata.csv")
-    classfile = join(DATA_PATH, "trimmed_classification.csv")
 
     # metadata = get_whole_metadata(metafile)
     # print(len(metadata))
-    metadata, classifications = get_classified_metadata(metafile, classfile, only_copyright_class=True)
-    print(len(metadata))
-    print(len(classifications))
+    trimmed_classification = get_trimmed_classifications()
+    classified_metadata = get_classified_meta_dataframe()
+    print(len(classified_metadata))
+    print(len(trimmed_classification))
 

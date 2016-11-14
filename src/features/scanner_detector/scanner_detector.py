@@ -22,7 +22,8 @@ MOD_PATH = dirname(realpath(__file__))
 
 class ScannerDetect:
     
-    def __init__(self): 
+    def __init__(self):
+        self.name = ["scanner"]
         if os.path.isfile(join(MOD_PATH,'scanner-trained-naive.pkl')) and os.path.isfile(join(MOD_PATH, 'scanner-vectorizer.pkl')):
             self.gnl = joblib.load(join(MOD_PATH,'scanner-trained-naive.pkl'))
             self.vec = joblib.load(join(MOD_PATH, 'scanner-vectorizer.pkl'))

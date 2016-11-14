@@ -21,6 +21,7 @@ class Page_Size_Module:
 
     def __init__(self, raw = True):
         self.raw = raw
+        self.name = ["page_size_ratio"]
         return
 
 

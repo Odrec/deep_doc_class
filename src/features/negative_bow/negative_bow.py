@@ -28,7 +28,7 @@ class Negative_BoW_Text_Module:
         self.txt = txt
         self.lib = self.load_lib(mode)
         self.path = 'txt_files_full'
-        self.name = ['BoW-Text']
+        self.name = ["neg_bow_txt"]
         return
 
     def sanitize(self,txt):

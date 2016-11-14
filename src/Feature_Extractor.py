@@ -23,21 +23,23 @@ from features.text_score.text_score import TextScore
 from features.bow_pdf.bow_pdf import BoW_Text_Module
 from features.page_size_ratio.page_size_ratio import Page_Size_Module
 from features.scanner_detector.scanner_detector import ScannerDetect
-from features.bow_metadata.bow_metadata import Bow_Metadata
+from features.bow_metadata.bow_metadata import BowMetadata
 from features.orientation_detector.orientation_detector import page_orientation_module
 
-from features.negative_bow import Negative_BoW_Text_Module
-from features.resolution import Resolution_Module
-from features.meta_pdf_extractor import Meta_PDF_Module
+from features.negative_bow.negative_bow import Negative_BoW_Text_Module
+from features.resolution.resolution import Resolution_Module
+from features.meta_pdf_extractor.meta_pdf_extractor import Meta_PDF_Module
 
 import cProfile
+
+METADATA = None
 
 def extract_features(data, p=-1):
         
     #c,m = get_classes(filenames,classes,metadata)
     
     feat_matrix = list()
-    
+
     if p == -1:
         pool = Pool()
     else:
@@ -54,23 +56,23 @@ def extract_features(data, p=-1):
     for f in features:
     	fieldnames.extend(f.name)
 
-    feature_vals = list()
-    file_data = list()
+    # feature_vals = list()
+    # file_data = list()
     
-    for item in res:
-        feature_vals.append(item[1])
-        file_data.append(item[0]) 
+    # for item in res:
+    #     feature_vals.append(item[1])
+    #     file_data.append(item[0]) 
     
-    for f, r in enumerate(feature_vals):
-        r.append(file_data[f][0])
-        r.append(file_data[f][1])
-        feat_matrix.append(r) 
+    # for f, r in enumerate(feature_vals):
+    #     r.append(file_data[f][0])
+    #     r.append(file_data[f][1])
+    #     feat_matrix.append(r) 
     
     with open(join(FEATURE_VALS_PATH, "output_test.csv"),"w") as f:
-    	writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=",")
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=",")
         writer.writeheader()
 
-        writer.writerows(feat_matrix)
+        writer.writerows(res)
         
     return feat_matrix
 
@@ -99,28 +101,32 @@ def generate_error_features(features):
     features = [x + [error_feature[i]] for i, x in enumerate(features)]
     return features
 
-def get_data_vector(doc_id):
+def get_data_vector(t_data):
 	feature_data = list()
 	filepointer = None
-	metapointer = metadata[doc_id]
+	doc_class = t_data[0]
+	doc_id = t_data[1]
+	metapointer = METADATA.loc[METADATA['document_id'] == doc_id].reset_index(drop=True)
 	try:
 		filepointer = open(join(PDF_PATH,doc_id+'.pdf'),'rb')
 	except FileNotFoundError:
-		print(doc_id)
+		print("doc with id: %s not found!!!" %(doc_id,))
 		for f in features:
 			num_feat_vals = len(f.name)
-			feature_data.append(np.nan*num_feat_vals)
+			feature_data.append([np.nan]*num_feat_vals)
 	if(not(filepointer is None)):
 		for f in features:
-			num_feat_vals = len(f.feature_names)
+			num_feat_vals = len(f.name)
 			try:
 				#extract data-dimension from pdf
 				feature_data.extend(f.get_function(filepointer,metapointer))
 			except:
 				#if error occures the value is nan
-				feature_data.extend(np.nan*num_feat_vals)
+				feature_data.extend([np.nan]*num_feat_vals)
 
-	return [doc_id,feature_data]
+	feature_data.append(doc_class)
+	feature_data.append(doc_id)
+	return feature_data
 
 def get_metapointer(path):
     return MetaHandler.get_whole_metadata(path)
@@ -163,8 +169,8 @@ if __name__ == "__main__":
 	#initialize module
 	features = list()
 
-	metadata,classes = MetaHandler.get_classified_metadata(join(DATA_PATH,"metadata.csv"),join(DATA_PATH,"classification.csv"))
-	doc_ids = classes.keys()
+	# specify which metafile is to load - default is classified_metadata.csv
+	METADATA = MetaHandler.get_classified_meta_dataframe("classified_metadata.csv")
 
 	# ADD features HERE
 	features.append(TextScore(True))
@@ -172,19 +178,19 @@ if __name__ == "__main__":
 	features.append(Page_Size_Module())
 	features.append(ScannerDetect())
 	features.append(page_orientation_module())
-	features.append(Bow_Metadata("title"))
-	features.append(Bow_Metadata("author"))
-	features.append(Bow_Metadata("filename"))
-	features.append(Bow_Metadata("folder_name"))
-	features.append(Bow_Metadata("folder_description"))
-	features.append(Bow_Metadata("description"))
+	# features.append(BowMetadata("title"))
+	# features.append(BowMetadata("author"))
+	# features.append(BowMetadata("filename"))
+	# features.append(BowMetadata("folder_name"))
+	# features.append(BowMetadata("folder_description"))
+	# features.append(BowMetadata("description"))
 	features.append(Negative_BoW_Text_Module(True))
 	features.append(Resolution_Module())
 
 	#features.append(OCR_BoW_Module())
 
 	print("Extracting Features")
-	extract_features(data=doc_ids, metadata=metadata, p=p)
+	extract_features(data=data, p=p)
 
 	# # Getting time spend in all functions called. Doesn't work with multiple threads
 	# cProfile.runctx("extract_features(data=doc_ids, features=features, metadata=metadata, p=p)", globals(), locals())

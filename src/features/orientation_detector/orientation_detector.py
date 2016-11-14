@@ -17,6 +17,7 @@ class page_orientation_module:
 
     def __init__(self):
         self.error = False
+        self.name = ["orientation"]
         return
 
 
