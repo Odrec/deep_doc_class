@@ -11,8 +11,7 @@ file is scanned.
 """
 import csv, os, shutil, sys
 import numpy as np
-from subprocess import Popen, PIPE
-from PyPDF2 import PdfFileReader, PdfFileWriter, utils
+from PyPDF2 import PdfFileReader
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.preprocessing import Imputer
 from sklearn.naive_bayes import MultinomialNB
@@ -242,5 +241,5 @@ class Meta_Info:
         joblib.dump(gnb, 'producer-trained-naive.pkl') 
         
 
-    
-#Meta_Info()
+if __name__ == "__main__":
+    Meta_Info()
