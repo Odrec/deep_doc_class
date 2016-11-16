@@ -22,7 +22,7 @@ class Meta_Info:
     
     def __init__(self): 
         
-        self.name = ['meta_info_author','meta_info_creator','meta_info_producer']
+        self.name = ['meta_info_author','meta_info_creator','meta_info_producer', 'encrypted']
 
         if os.path.isfile('author-trained-naive.pkl') and os.path.isfile('author-vectorizer.pkl') and os.path.isfile('creator-trained-naive.pkl') and os.path.isfile('creator-vectorizer.pkl') and os.path.isfile('producer-trained-naive.pkl') and os.path.isfile('producer-vectorizer.pkl'):
             self.gnl_auth = joblib.load('author-trained-naive.pkl')
@@ -47,18 +47,22 @@ class Meta_Info:
     #@param inputpdf a pointer to a PdfFileReader object
     #
     #This function reads the metadata information of a pdf file and extracts the
-    #producer field. Some scanned documents have common producers based on the 
-    #machine they were scanned with. Other producers like Powerpoint can suggest 
+    #author, creator and producer fields. Some copyrighted documents have common fields based on the 
+    #machine they were scanned with. Other values like Powerpoint can suggest 
     #the file is a presentation and, therefore, not copy protected
     def readMetadata(self, file):
         
         author_feature={}
         creator_feature={}
         producer_feature={}
+        encrypted_feature={}
                                             
         inputpdf = PdfFileReader(file,strict=False)
                 
         if not inputpdf.isEncrypted:
+        
+            encrypted_feature['encrypted']=0.0
+                
             pdf_info = inputpdf.getDocumentInfo()
                 
             if isinstance(pdf_info,dict):
@@ -103,61 +107,31 @@ class Meta_Info:
                 creator_feature['creator']='null'
                 producer_feature['producer']='null'
         else:
+            
+            encrypted_feature['encrypted']=1.0
+
             print("Encrypted file. Can't extract features.",file)
             author_feature['author']='Encrypted'
             creator_feature['creator']='Encrypted'
             producer_feature['producer']='Encrypted'
+            
             #shutil.move(root+'/'+file, root+'/Encrypted/'+file)
                 
                                                 
-        return author_feature, creator_feature, producer_feature
-                        
-    #@param inputpdf a pointer to a PdfFileReader object
-    #@param num_pages the amount of pages to process starting from the first (default 1)  
-    #
-    #This function uses the external program pdf-extract to extract the regions of a pdf
-    #if no regions are extracted the file is more likely to be scanned and, therefore,
-    #copy protected. Don't use a lot of pages because it gets really slow, 1 page is usually
-    #more than enough.
-    def extractRegions(self,inputpdf,num_pages):
-        
-        file_features={}
-
-        for i in range(num_pages):
-            output = PdfFileWriter()
-            output.addPage(inputpdf.getPage(i))
-            new_file="document-page%s.pdf" % i
-            with open(new_file, "wb") as outputStream:
-                output.write(outputStream)
-                
-        line_count=0
-        with Popen(["pdf-extract","extract","--no-lines","--regions",new_file], stdout=PIPE, universal_newlines=True) as process:
-            for line in process.stdout:
-                line_count += 1
-
-        if line_count == 2:
-            file_features['lines']='two'
-        else:
-            file_features['lines']='other'
-            
-        return file_features
+        return author_feature, creator_feature, producer_feature, encrypted_feature
         
         
     def classify(self,filepointer):
                 
         #Extract features
-        fa, fc, fp=self.readMetadata(filepointer)
+        fa, fc, fp, fe = self.readMetadata(filepointer)
                     
         #Transform categorical data to numerical (binary representation)
-        feature_list_trans_auth=self.vec_auth.transform(fa).toarray()
-        feature_list_trans_crea=self.vec_crea.transform(fc).toarray()
-        feature_list_trans_prod=self.vec_prod.transform(fp).toarray()
+        feature_list_trans_auth = self.vec_auth.transform(fa).toarray()
+        feature_list_trans_crea = self.vec_crea.transform(fc).toarray()
+        feature_list_trans_prod = self.vec_prod.transform(fp).toarray()
                 
-        #Impute missing values using a most_frequent strategy (maybe we don't want this)
-#        imp = Imputer(missing_values='NaN',strategy='most_frequent',axis=1)
-#        feature_list_imp=imp.fit_transform(feature_list_trans)
-                
-        return self.gnl_auth.predict(feature_list_trans_auth)[0], self.gnl_crea.predict(feature_list_trans_crea)[0], self.gnl_prod.predict(feature_list_trans_prod)[0]
+        return self.gnl_auth.predict(feature_list_trans_auth)[0], self.gnl_crea.predict(feature_list_trans_crea)[0], self.gnl_prod.predict(feature_list_trans_prod)[0], fe
         
     #@param filepointer a pointer to a pdf file
     #@param metapointer a pointer to the metadata, this parameter is not used
@@ -166,13 +140,14 @@ class Meta_Info:
         
         try:
             result = []
-            fa, fc, fp = self.classify(filepointer)
+            fa, fc, fp, fe = self.classify(filepointer)
             result.append(fa)
             result.append(fc)
             result.append(fp)
+            result.append(fe)
             return result
         except:
-            return [np.nan, np.nan, np.nan]
+            return [np.nan, np.nan, np.nan, np.nan]
         
     #@param path the path where the training data is located
     #@param class_path the path to where the classification.csv is located
@@ -268,4 +243,4 @@ class Meta_Info:
         
 
     
-Meta_Info()
+#Meta_Info()
