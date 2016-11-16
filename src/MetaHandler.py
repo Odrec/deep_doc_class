@@ -227,13 +227,22 @@ def trim_classifications(classfile):
     reader = csv.DictReader(class_csv, delimiter=";")
     fieldnames = reader.fieldnames
 
+    class_meta = get_classified_meta_dataframe()
+    class_meta = class_meta["document_id"].tolist()
+    meta_dict = {}
+    meta_dict = meta_dict.fromkeys(class_meta)
+    print(meta_dict)
+
     with open(join(DATA_PATH, "trimmed_classification.csv"), 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=";")
 
         writer.writeheader()
         for row in reader:
-            if(os.path.isfile(join(PDF_PATH, row["document_id"]+".pdf"))):
+            doc_id = row["document_id"]
+            if(os.path.isfile(join(PDF_PATH, doc_id+".pdf")) and doc_id in meta_dict):
                 writer.writerow(row)
+
+
 
     class_csv.close()
     return
@@ -278,6 +287,7 @@ def get_trimmed_classifications(class_file="trimmed_classification.csv"):
 
 if __name__ == '__main__':
 
+    trim_classifications(join(DATA_PATH,"classification.csv"))
     # metadata = get_whole_metadata(metafile)
     # print(len(metadata))
     trimmed_classification = get_trimmed_classifications()

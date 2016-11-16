@@ -11,8 +11,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.cross_validation import StratifiedKFold
-from sklearn.metrics import accuracy_score, f1_score, precision_score,
-recall_score, classification_report, confusion_matrix
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix
 
 import numpy as np
 import keras
@@ -73,6 +72,7 @@ class NN:
         lentrain = []
         lentotal = []
         pearson = []
+
         
         kfold = StratifiedKFold(labels, n_folds=10, shuffle=True, random_state=seed)
 
@@ -82,6 +82,8 @@ class NN:
             train_labels = labels[train]
             test_lables = labels[test]
             test_files = [files[i] for i in test]
+
+            self.model = keras.models.load_model("NN.model")
 
             self.model.fit(train_data, train_labels, nb_epoch=num_epochs, verbose=0)
             

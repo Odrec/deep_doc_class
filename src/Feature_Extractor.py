@@ -133,6 +133,8 @@ def get_data_vector(t_data):
 				else:
 					feature_data.extend(vals)
 			except:
+				print(f.name)
+
 				#if error occures the value is nan
 				feature_data.extend([np.nan]*num_feat_vals)
 				continue
@@ -167,7 +169,7 @@ if __name__ == "__main__":
 	with open(data_file, 'r') as df:
 		reader = csv.reader(df)
 		data = list(reader)
-		# data = data[0:3]
+		data = data[0:3]
 
 	if(len_args==4 and args[2]=='-c'):
 		try:
@@ -192,7 +194,7 @@ if __name__ == "__main__":
 	features.append(ScannerDetect())
 	features.append(page_orientation_module())
 	features.append(BowMetadata("title"))
-	# features.append(BowMetadata("author"))
+	features.append(BowMetadata("author"))
 	features.append(BowMetadata("filename"))
 	features.append(BowMetadata("folder_name"))
 	features.append(BowMetadata("folder_description"))

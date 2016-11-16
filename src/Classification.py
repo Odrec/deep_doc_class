@@ -315,7 +315,7 @@ if __name__ == "__main__":
 	conf_thresh = 0.5
 
 	print("Initiating Neural Network")
-	network = getNN(input_dims=len(f_vals[0]), hidden_dims=hidden_dims)
+	network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
 	print("Starting training.")
 	network.trainNN(f_vals,np.array(f_classes), files, num_epochs, conf_thresh)
 	print("Training done!")
