@@ -76,10 +76,10 @@ class BowMetadata():
         # self.clf=pd.read_csv("tests/classificationTest.csv", header=0, delimiter=';', quoting=3)
         self.metadata=pd.read_csv("metadata.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
         self.author=pd.read_csv('uploader.csv', header=0, delimiter=",", quoting=1)
-        # self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
+        self.clf=pd.read_csv("classification.csv", header=0, delimiter=';', quoting=3)
 
         # for train and validation only
-        self.clf=pd.read_csv("p52-dl/train.csv", header=0, delimiter=';', quoting=3)
+        # self.clf=pd.read_csv("p52-dl/train.csv", header=0, delimiter=';', quoting=3)
 
         # Shift document_id to index
         self.metadata=self.metadata.set_index(['document_id'])
