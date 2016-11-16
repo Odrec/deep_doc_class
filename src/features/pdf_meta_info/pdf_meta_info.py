@@ -26,12 +26,12 @@ class Meta_Info:
         self.name = ['meta_info_author','meta_info_creator','meta_info_producer', 'encrypted']
 
         if os.path.isfile(join(MOD_PATH,'author-trained-naive.pkl')) and os.path.isfile(join(MOD_PATH,'author-vectorizer.pkl')) and os.path.isfile(join(MOD_PATH,'creator-trained-naive.pkl')) and os.path.isfile(join(MOD_PATH,'creator-vectorizer.pkl')) and os.path.isfile(join(MOD_PATH,'producer-trained-naive.pkl')) and os.path.isfile(join(MOD_PATH,'producer-vectorizer.pkl')):
-            self.gnl_auth = joblib.load('author-trained-naive.pkl')
-            self.vec_auth = joblib.load('author-vectorizer.pkl')
-            self.gnl_crea = joblib.load('creator-trained-naive.pkl')
-            self.vec_crea = joblib.load('creator-vectorizer.pkl')
-            self.gnl_prod = joblib.load('producer-trained-naive.pkl')
-            self.vec_prod = joblib.load('producer-vectorizer.pkl')
+            self.gnl_auth = joblib.load(join(MOD_PATH,'author-trained-naive.pkl'))
+            self.vec_auth = joblib.load(join(MOD_PATH,'author-vectorizer.pkl'))
+            self.gnl_crea = joblib.load(join(MOD_PATH,'creator-trained-naive.pkl'))
+            self.vec_crea = joblib.load(join(MOD_PATH,'creator-vectorizer.pkl'))
+            self.gnl_prod = joblib.load(join(MOD_PATH,'producer-trained-naive.pkl'))
+            self.vec_prod = joblib.load(join(MOD_PATH,'producer-vectorizer.pkl'))
         else:
             args = sys.argv
             len_args = len(args)

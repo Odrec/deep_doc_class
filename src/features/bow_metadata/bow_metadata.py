@@ -67,7 +67,7 @@ class BowMetadata():
 
             print("Done %0.3fs" % (time()-t0))
 
-        elif self.of_type == 'author' and not os.path.isfile('lib_bow/model_author.csv'):
+        elif self.of_type == 'author' and not os.path.isfile(join(MOD_PATH,'lib_bow/model_author.csv')):
             t0=time()
             print("Initializing BowMetadata "+self.of_type)
             self.load_metadata_from_csv()

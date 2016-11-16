@@ -22,7 +22,7 @@ from doc_globals import*
 from features.text_score.text_score import TextScore
 from features.bow_pdf.bow_pdf import BoW_Text_Module
 from features.page_size_ratio.page_size_ratio import Page_Size_Module
-from features.scanner_detector.scanner_detector import ScannerDetect
+from features.pdf_meta_info.pdf_meta_info import Meta_Info
 from features.bow_metadata.bow_metadata import BowMetadata
 from features.orientation_detector.orientation_detector import page_orientation_module
 
@@ -169,7 +169,7 @@ if __name__ == "__main__":
 	with open(data_file, 'r') as df:
 		reader = csv.reader(df)
 		data = list(reader)
-		data = data[0:3]
+		# data = data[0:3]
 
 	if(len_args==4 and args[2]=='-c'):
 		try:
@@ -191,7 +191,7 @@ if __name__ == "__main__":
 	features.append(TextScore(True))
 	features.append(BoW_Text_Module(True))
 	features.append(Page_Size_Module())
-	features.append(ScannerDetect())
+	features.append(Meta_Info())
 	features.append(page_orientation_module())
 	features.append(BowMetadata("title"))
 	features.append(BowMetadata("author"))
@@ -205,7 +205,7 @@ if __name__ == "__main__":
 	#features.append(OCR_BoW_Module())
 
 	print("Extracting Features")
-	outfile = "out_test.csv"
+	outfile = "whole_features_16_11.csv"
 	extract_features(data=data,outfile=outfile, p=p)
 
 	# # Getting time spend in all functions called. Doesn't work with multiple threads
