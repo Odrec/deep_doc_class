@@ -1,356 +1,0 @@
-Management	  von	  Informationssystem-­‐Architekturen
-Übung	  1,	  Universität	  Osnabrück,	  Sommersemester	  2016
-Prof.	  Dr.	  Oliver	  Thomas
-Dr.	  Novica	  Zarvić
-Sven	  Jannaber
-
-Universität	   Osnabrück
-Fachgebiet	   Informationsmanagement	   und	  Wirtschaftsinformatik
-oliver.thomas@uni-­‐osnabrueck.de
-novica.zarvic@uni-­‐osnabrueck.de
-sven.jannaber@uni-­‐osnabrueck.de
-http://www.imwi.uni-­‐osnabrueck.de/
-
-Allgemeines	  zur	  Übung
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-22
-
-Das	  Übungskonzept	  dieser	  Veranstaltung
-
-¡ Die	  Übungen	  zur	  Vorlesung	  Management	  von	  Informationssystemarchitekturen	  sind	  interaktiv
-
-angelegt.	  
-• Mitarbeit	   ist	  erwünscht und	  auch	  notwendig für	  den	  Lernerfolg.	  
-• Übungen	   haben	  im	  engeren	   Sinne	   meist	  keine	   Lösungshinweise,	   da	  auch	  das	  behandelte	  
-
-Themengebiet	   nicht	   mathematisch-­‐scharf	   ist.	  
-
-¡ Heute	  soll	  ein	  praktisch	  motivierter	  Zugang	  zum	  Themengebiet	  geschaffen	  werden.	  
-¡ Zweistufiges	  Vorgehen:	  
-
-1.	  Vorstellung	   einer	  Fallstudie	   zu	  übergreifenden	  Betrachtungen	  von	  Unternehmen	  
-2.	  Diskussion	   der	  Anforderungen	   an	  Rahmenwerke auf	  Basis	  der	  Fallstudie	  
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-3
-
-Eine	  einführende	  Fallstudie
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-44
-
-Fallstudie
-Ausgangssituation
-
-¡ Dipl.-­‐Inf.	  Max	  Mustermann	  ist	  neuer	  IT-­‐Architekt	  der	  Build-­‐to-­‐order	  PC-­‐Schmiede	  
-
-GmbH	  &	  Co	  KG,	  welches	  als	  Großhandelsunternehmen	  PC-­‐Systeme	  nach	  
-Kundenwünschen	  baut	  und	  verbaut.	  	  
-
-¡ Aufgrund	  des	  imitativen	  Geschäfts	  der	  Branche	  setzt	  der	  CEO	  auf	  verstärkte	  
-
-Wiederverkäuferbindung	  
-
-¡ Das	  Projekt	  der	  After-­‐Sales-­‐Service-­‐Bestrebungen	  beinhaltet	  die	  Bereitstellung	  von	  
-
-Web-­‐Services:	  
-•	  Reseller können	  Gerätedaten	  abfragen	  (bspw.	  Seriennummern,	  Kaufdatum)	  
-•	  Datenbestand	  soll	  bei	  Wiederverkäufern	  mit	  Daten	  der	  Endkunden	  verknüpft	  werden	  
-
--­‐Verbesserter	  Vor-­‐Ort-­‐Service	  durch	  Techniker	  der	  PC-­‐Schmiede	  
--­‐Direkter	  Endkundenkontakt	  bei	  Kompatibilitätsproblemen	  
-
-¡ Herr	  Mustermann	  erhält	  den	  Auftrag	  das	  Projekt	  „realise device data interchange“	  
-vorzubereiten	  und	  in	  den	  Rahmenplan	  2012-­‐2017	  der	  PC-­‐Schmiede	  einzuarbeiten.
-• Dazu	  findet	  er	  einen	  strategischen	  Rahmenplan	  vor.	  Die	  ihm	  gestellte	  Aufgabe	  will	  Herr	  
-
-Mustermann	  mit	  Rahmenwerken	  bewerkstelligen.	  
-
-• Wie	  würden	  Sie	  an	  seiner	  Stelle	  vorgehen?	  
-Quelle:	  Dirk	  Matthes	  (2011)	  Enterprise	  Architecture Frameworks	  Kompendium.	  Springer,	  Berlin,	  S.	  221-­‐227.	  DOI:	  10.1007/978-­‐3-­‐642-­‐12955-­‐1_5	  
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-5
-
-Fallstudie
-Vorgefundener	  „Strategischer	  Rahmenplan“
-
-Quelle:	  Dirk	  Matthes	  (2011)	  Enterprise	  Architecture Frameworks	  Kompendium.	  Springer,	  Berlin,	  S.	  221-­‐227.	  DOI:	  10.1007/978-­‐3-­‐642-­‐12955-­‐1_5	  
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-6
-
-Fallstudie
-Vorschlag	  zum	  Vorgehen	  (1/3)
-
-1. Auswahl	  eines	  adäquaten	  Rahmenwerkes:	  
-
-•  Recherche	  potenzieller	  Rahmenwerke	  
-•  Einlesen	  in	  detaillierte	  Beschreibungen	  potenzieller	  Rahmenwerke	  
-•  Prüfung	  ob	  ein	  entsprechendes	  Rahmenwerk	  als	  Referenzmodell	  für	  das	  vorliegende	  
-Projekt	  adaptiert	  werden	  kann	  
-
-2. Bestimmung	  des	  Verwendungszwecks:	  
-
-•  Zweck:	  Verbesserung	  der	  Dienste	  für	  Wiederverkäufer	  
-•  Probleme:	  
-(cid:0) Kein	  Austausch	  von	  Gerätedaten	  zwischen	  Partner	  
-(cid:0) Fehlende	  Mehrwertdienste	  
-•  Zielvorgaben:	  Realisierung	  eines	  Gerätedatenaustausches	  
-•  Kompromisse:	  Anfänglich	  die	  Bereitstellung	  von	  Seriennummern	  und	  Kaufdatum	  
-
-Quelle:	  Dirk	  Matthes	  (2011)	  Enterprise	  Architecture Frameworks	  Kompendium.	  Springer,	  Berlin,	  S.	  221-­‐227.	  DOI:	  10.1007/978-­‐3-­‐642-­‐12955-­‐1_5	  
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-7
-
-Fallstudie
-Vorschlag	  zum	  Vorgehen	  (2/3)
-
-3. Bestimmung	  des	  Architekturumfangs	  
-
-•	  Keine	  örtlichen	  bzw.	  betrieblichen	  Begrenzungen;	  Webservice	  für	  alle	  Reseller
-•	  Drei	  Monate	  Implementierungszeit,	  danach	  Inbetriebnahme	  des	  Austausches	  
-•	  Keine	  funktionellen	  Einschränkungen	  
-•	  Realisierung	  des	  Dienstes	  als	  Webservice	  
-
-4. Definition der	  erforderlichen	  Architekturcharakteristika	  
-
-•	  Benennung	  der	  Stakeholder
-•	  Bestimmung	  und	  Verteilung	  von	  Nutzungsrechten	  
-
-5. Berücksichtigung	  der	  Sichtweisen	  und	  Identifikation	  der	  unterstützenden	  Produkte:	  
-
-•	  bspw.	  Hervorhebung	  der	  Daten-­‐,	  Verarbeitungs-­‐ und	  Verbindungselemente	  („structural
-viewpoint“)	  
-•	  Softwareanwendungen,	  Tabellen,	  Listen	  etc.	  
-
-Quelle:	  Dirk	  Matthes	  (2011)	  Enterprise	  Architecture Frameworks	  Kompendium.	  Springer,	  Berlin,	  S.	  221-­‐227.	  DOI:	  10.1007/978-­‐3-­‐642-­‐12955-­‐1_5	  
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-8
-
-Fallstudie
-Vorschlag	  zum	  Vorgehen	  (3/3)
-
-6. Realisierung	  der	  notwendigen	  „Architekturprodukte“:	  
-
-•	  Konkretisierung	  des	  Zeitplans	  
-•	  Geschäftsprozessmodellierung	  mit	  entsprechender	  Werkzeugunterstützung	  (siehe	  auch	  
-ProzIS oder	  InfoMod/RefMod)	  
-•	  Modellierung	  ausgewählter	  Anwendungsfälle	  etc.	  
-à Zusammenführung	  der	  einzelnen	  Architekturprodukte	  zu	  einer	  integrierten	  
-Architekturbeschreibung	  
-Integration	  und	  Dokumentation	  der	  Architekturbeschreibung	  im	  strategischen	  
-Rahmenplan	  
-
-7.
-
-Quelle:	  Dirk	  Matthes	  (2011)	  Enterprise	  Architecture Frameworks	  Kompendium.	  Springer,	  Berlin,	  S.	  221-­‐227.	  DOI:	  10.1007/978-­‐3-­‐642-­‐12955-­‐1_5	  
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-9
-
-Allgemeine	  Anforderungen	  an	  ein	  Rahmenwerk
-
-¡ Anleitung	  zum	  richtigen	  Vorgehen	  
-¡ Befähigung	  des	  Anwenders	  zur:	  
-
-•	  Planung;	  
-•	  Umsetzung;	  
-•	  fortlaufenden	  Betreuung	  von	  Integrationsprojekten	  
-
-¡ Beschreibung	  der	  notwendigen	  Aktivitäten	  
-¡ Beherrschbarkeit	  komplexer	  Interdependenzen	  
-¡ Berücksichtigung	  möglicher	  Problemfelder	  (bspw.	  Humanfaktoren	  und	  Prozesse)	  
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-10
-
-Beispiel	  für	  eine	  Rahmenwerk:	  Zachman Framework
-
-Scope  
-Planner
-Business  Model  
-Owner
-System  Model  
-Designer
-Technology  Model  
-Builder
-Detailed  Representations  
-Subcontractor
-Functioning  System
-
-Data
-what?
-List  of  things  
-important  to  the  
-
-business
-
-Function
-
-how?
-
-List  of  processes  
-that  the  business  
-
-performs
-
-Network
-
-where?
-
-People
-
-who?
-
-List  of  locations  
-
-where  the  
-
-business  operates
-
-List  of  orga-­
-
-nisations  important  
-
-to  the  business
-
-Time
-when?
-
-List  of  events/
-cycles  important  
-to  the  business
-
-Motivation
-
-why?
-
-List  of  business  
-goals/strategies
-
-e.g.  Semantic  
-
-Model
-
-e.g.  Business  
-Process  Model
-
-e.g.  Business  
-Logistics  System
-
-e.g.  Workflow  
-
-Model
-
-e.g.  Master  
-Schedule
-
-e.g.  Business  
-
-Plan
-
-e.g.  Logical  Data  
-
-Model
-
-e.g.  Application  
-
-Architecture
-
-e.g.  Distributed  
-
-System  
-
-Architecture
-
-e.g.  Human  
-Interface  
-Architecture
-
-e.g.  Process  
-
-Structure
-
-e.g.  Business  
-Rule  Model
-
-e.g.  Physical  
-Data  Model
-
-e.g.  System  
-
-Design
-
-e.g.  Technology  
-
-Architecture
-
-e.g.  Presentation  
-
-Architecture
-
-e.g.  Control  
-Structure
-
-e.g.  Rule  Design
-
-e.g.  Data  
-Definition
-
-e.g.  Program
-
-e.g.  Network  
-Architecture
-
-e.g.  Security  
-Architecture
-
-e.g.  Timing  
-definition
-
-e.g.  Rule  
-Definition
-
-e.g.  Data  
-
-e.g.  Function
-
-e.g.  Network  
-
-e.g.  Organisation
-
-e.g.  Schedule
-
-e.g.  Strategy
-
-Übung	   1	  – Management	   von	  Informationssystem-­‐Architekturen
-
-11
-
-Management	  von	  Informationssystem-­‐Architekturen
-Übung	  1,	  Universität	  Osnabrück,	  Sommersemester	  2016
-Prof.	  Dr.	  Oliver	  Thomas
-Dr.	  Novica	  Zarvić
-Sven	  Jannaber
-
-Universität	   Osnabrück
-Fachgebiet	   Informationsmanagement	   und	  Wirtschaftsinformatik
-oliver.thomas@uni-­‐osnabrueck.de
-novica.zarvic@uni-­‐osnabrueck.de
-sven.jannaber@uni-­‐osnabrueck.de
-http://www.imwi.uni-­‐osnabrueck.de/
-
-

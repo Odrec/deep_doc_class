@@ -1,184 +1,0 @@
-Seminar:
-
-GIS Customizing
-
-M.Sc. Andreas Wichmann
-
-Universität Osnabrück
-
-Institut für Geoinformatik und Fernerkundung
-
-Recap
-
-Agenda
-
- 5 OpenJUMP
-
- 5.1 Einführung
-
- 5.2 Extensions/PlugIns
-
- 5.3 Beispiele
-
-OpenJUMP
-
-‐
-
-5.1 Einführung
-
-OpenJUMP
-
-Quelle: http://www.openjump.org/
-
-OpenJUMP
-
- API
-
- http://jump‐pilot.sourceforge.net/javadoc/
-
-openjump_javadoc/
-
- http://www.vividsolutions.com/jts/javadoc/index.html
-
-OpenJUMP
-
-‐
-
-5.2 Extensions/PlugIns
-
-OpenJUMP
-
- Extension
-
- Sammlung von Klassen und unterstützenden Ressourcen, 
-
-die zusätzliche Funktionalität bietet
-
- Häufige Anwendung: Dem Workbench PlugIns (menu 
-items) oder Cursor Tools (toolbar buttons) hinzufügen
-
- JAR‐File
- Feste Klassen‐Namensgebung: „…Extension“ 
- #configure Methode jeder Extension im JAR‐File wird 
-
-aufgerufen
-
-OpenJUMP
-
- PlugIn
-
- Ein Objekt, das eine Aktion in Reaktion auf eine 
-Menüauswahl oder einen Tastendruck ausführt
-
- Methoden
- #initialize
- #execute
- #getName
- Hinzufügen
-
- Main Menu: 
-
-PlugInContext.getFeatureInstaller().addMainMenuItem(…)
-
- Toolbar: 
-
-PlugInContext.getWorkbenchFrame().getToolBar().addPlugIn(…)
-
- Beispiel
-
-OpenJUMP
-
-. . .
-
-OpenJUMP
-
-OpenJUMP
-
- Threading
-
- Geeignet für längere Berechnungen
-
- ThreadedBasePlugIn anstelle AbstractPlugIn
-
-OpenJUMP
-
- Selections
-
- selection <‐> selected items
- LayerViewPanel besitzt SelectionManager
-
- FeatureSelection: Komplette Features
-
-selectionManager.getFeatureSelection().getSelectedItems()
-
- PartSelection: Teile eines GeometryCollection Features
-selectionManager.getPartSelection().getSelectedItems()
- LineStringSelection: LineString eines Polygons oder einer 
-
-GeometryCollection
-selectionManager.getLineStringSelection().getSelectedItems()
-
- selectionManager.getFeaturesWithSelectedItems()
-
-OpenJUMP
-
- Menu Items
-
- Enable‐Checks
-
- EnableCheck‐Objekt liefert null oder String
- EnableCheckFactory erzeugt einige Default‐
-
-EnableCheck‐Objekte
-
- MultiEnableCheck ermöglicht Kombination mehrerer 
-
-Enable‐Checks
-
-OpenJUMP
-
-‐
-
-5.3 Beispiele
-
-OpenJUMP
-
- Aufgabe
-
- Lasst euch den Inhalt einer xyz‐Datei in einem Layer 
-
-anzeigen.
-
-OpenJUMP
-
- Aufgabe
-
- Lasst euch die Features eines geladenen Layers als 
-
-Text ausgeben
-
-OpenJUMP
-
- Aufgabe
-
- Erzeugt einen Buffer mit einem festen Radius um einen 
-
-Punkt mit der Koordinate vom IGF.
-
-OpenJUMP
-
- Aufgabe
-
- Filtert alle Punkte innerhalb des Buffers heraus und zeigt 
-
-sie in einem neuen Layer an.
-
-OpenJUMP
-
- Aufgabe
-
- Ladet ein Shape‐File und stellt den Inhalt in einem Layer 
-
-dar.
-
-

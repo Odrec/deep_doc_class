@@ -1,413 +1,0 @@
-G-protein coupled receptors 
-
- Role, function, ligands 
-
- Subtypes 
-
- 
-
- 
-
- 
-
-G-proteins 
- 
-
- Activation mechanisms 
-
- Classification and properties of 
-
- Regulation and Desensitation 
-
-G-protein coupled receptors 
-
-Seven transmembrane helices 
-
-Largest protein family, >1000 members 
-
- 
-
- 
-
- 
-
- 
- 
-
-Low molecular weight ligands 
-
-Agonistic and antagonistic ligands 
-
-Drug target no. 1: ~30% of all drugs targets 
-
-belong to the GPCR family 
-
-Functions 
-
-Visual process 
-(Rhodopsin) 
- 
-Smelling and tasting 
-(hundreds of olfactory GPCRs) 
- 
-Immune system 
-Chemokine receptors 
- 
-Neuronal processes 
-5-Hydroxytryptamine (serotonin)  receptors 
-Dopamine receptors 
-Glutamate receptors 
-Muscarinic acetylcholine receptors 
- 
-Cardiovascular processes 
-Adrenergic receptors 
-
-Sensing 
-
-Controlling 
-
-Fast and specific response, signal transduction 
-
-Responses 
-
-GPCRs as drug targets 
-
-H: histamine; AT, angiotensin; α, β, adrenergic; LH, luteinizing hormone; 
-5-HT, serotonin;  
-
-GPCRs as drug targets 
-
-Topology 
-
-Classification of GPCR 
-
-Ligand recognition 
-
-Structure of the β2 adrenoreceptor 
-
-6 
-
-5 
-
-4 
-
-3 
-
-2 
-
-1 
-
-7 
-
-T4L 
-
-scFv 
-
-Partially inverse agonists carazolol 
-
-Nature, 2007; Science 2007 
-
-Structure of the β2 adrenoreceptor 
-
-5 
-
-6 
-
-3 
-
-1 
-
-4 
-
-2 
-
-7 
-
-Extracellular view 
-
-Structure of the β2 adrenoreceptor 
-
-7 
-
-2 
-
-1 
-
-6 
-
-5 
-
-3 
-
-4 
-
-Intracellular view 
-
-β2 adrenoreceptor crystallizes as a dimer 
-
-Interface of the (crystallographic) dimer 
-
-What is the functional relevance of this dimerization?  
-
-Conformational complexity of GPCRs 
-
- Conformational changes induced by ligand binding 
- Constitutive, basal activity, constitutively active mutants 
- Promiscuity of the ligand binding site(s): Agonists, partial agonists,  
-
-antagonists, inverse agonists and modulators 
-
-More “dimmer” than “switch” 
-
-Agonists and antagonists – receptor promiscuity 
-
-agonists 
-
-antagonists 
-
-Agonists and partial agonists of the β2-rdrenoreceptor 
-
-Receptor plasticity – conformational transitions 
-
-Agonist-induced conformational change 
-
-Muscarinic acetylcholine receptor with QNB (blue) vs. an agonist (orange)  
-
-Nature 2013 
-
-Agonist-induced conformational change 
-
-β2 adrenergic receptor in activated state stabilized by a nanobody 
-
-Nature 2011 
-
-Receptor plasticity – conformational transitions 
-
-Activation of 
-G-Proteins 
-
- Resting state: 
-
-GDP-bound heterotrimeric 
-G-protein 
-bound to GPCR (?) 
-
- 
- Activated state: 
-
-GTP-bound G-protein, 
-dissociated into α and βγ 
-subunits 
-Dissociated from GPCR 
- 
-
-G-Proteins 
-
- Large α and β-subunits (37-46 kDa) 
- small γ-subunit (8kDa) 
-
- α-subunit has GTPase activity 
- β and γ-subunits are tightly associated 
-
- 
-
- 
-
- 20 genes for α-subunit, 
- 5 for β-subunit 
- 12 for γ-subunit 
-
-Different combinations of α, β and γ subunits possible 
- 
-Specificity towards GPCR is determined by α-subunit, 
-Complex role of βγ-subunit 
-
-Classification of heterotrimeric G-proteins 
-
-Gs: stimulation of adenylate cyclase (AC) 
-(activation by cholera toxin) 
- 
-Gi: inhibition of adenylate cyclase, Ca2+-channels 
-(inhibited by pertussis toxin) 
- 
-Gq: activates phospholipase Cβ (IP3, DAG) 
-(not affected by toxins) 
-
-Composition of G-Proteins 
-
-PTM: membrane anchoring 
-
-Activation of G-Proteins 
-
-Activated GPCR/G-Protein complex 
-
-Nature, 2011 
-
-Activated GPCR/G-Protein complex 
-
-Agonist-induced conformational change 
-
-β2 adrenoreceptor with carazolol (blue) vs. an agonist (green)  
-
-Conformational change of the Gα subunit 
-
-Gα bound to  
-GPCR 
-
-active Gα 
-
-Activation of heterotrimeric G proteins 
-
-0.01-0.05 GTP/s 
-
-Effector activation 
-
-1-5 GTP/s 
-
-Targets of the βγ-subunit 
-
- Adenylate cyclase 
- K+-channels 
- Translocation of GRKs (GPCR kinases) 
- RGS (regulators of G-protein signaling) 
- Phospholipase Cβ 
- Ca2+-channels 
- Interaction with Phosducin 
- Translocation of PI3 kinase γ 
-
-Regulators of GPCR signaling 
-
-Phosducin 
-
-GRK:  GPCR kinases, desensitation 
-RGS: regulators of G-protein signaling (GAP-function) 
-Phosducin: blocks Gβγ 
-
-Desensitation by β-Arrestin  
-
-Receptor phosphorylation by GPCR kinase (GRK) 
-
-The two key pathways of GPCR signaling 
-
-Overview: effectors of Gα and Gβγ 
-
-Overview GPCR signalling – β-adrenergic receptor 
-
-Crystal structure of a GPCR: Rhodopsin 
-
-Rhodopsin and bacteriorhodopsin 
-
-Rhodopsin 
-
- Stable in the dark and accessible in mg amounts 
-
- Constitutive ligand: 11-cis Retinal  
-
-serves as photochemically active chromophore 
- 
-
- 
-
- 
-
- photolytic cis-trans-isomerisation induces signal transduction 
-
- Covalent bond between retinal and rhodopsin  
-
-(Schiff base mit lysine ε-amino group) 
-
-Photoactivation of vertebrate rhodopsin 
-
-Isomerization of retinal 
-
-hν 
-
-11-cis retinal 
-
-All-trans retinal 
-
-“Ligand” is covalently attached, protonated Schiff base 
-
-Conformational change… 
-
-Conformational change 
-
-Rhodopsin 
-
-Photoactivated rhodopsin 
-
-Conformational change 
-
-Rhodopsin 
-
-Opsin 
-
-Conformational change 
-
-Human retina and rod cells 
-
-Disc membranes and photoreceptors 
-
-Packing of rhodopsin in disc membranes 
-
-Signal transduction 
-
-extremely fast signal transduction required 
-
- Rhodopsin recruits Gi-protein Transducin 
-
- α-subunit of Transducin activates cyclic GMP 
-
-phosphodiesterase 
- 
-
- phosphodiesterase cleaves cGMP to GMP 
-
- cGMP dissociates from Na-channels, which 
-
- 
-
- 
-
-close 
- 
-
- Hyperpolarization of the cell – low level of 
-
-transmitter release 
- 
- 
-
-Activation of rhodopsin in rod-cells 
-
-Switching of the signal 
-
-Summary 
-
- GPCR play a key role for fast processes (sensing,  
-
-neurotransmission, cardiovascular control) 
- 
-
- 3 classes with different role of the N-terminal domain 
-
- Conformational plasticity: agonist, antagonists, inverse agonists 
-
- 
-
-and modulators 
- 
-
- GPCR signal through hetero-trimeric G-proteins to activate 
-
- Dimerization of GPCR and asymmetric binding of G-protein 
-
-adenylate cyclase or phospholipase-β 
- 
-
-may play a key role for signal activation 
- 
- 
- 
-
-

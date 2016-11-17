@@ -1,33 +1,0 @@
-Task 5
-
-Analysing the sentiment before the game
-
-Our Idea
-
-> using the hashtags found in previous tasks to get tweets per team
-
-> splitting the text and finding words via regex
-
-> storing those words in a file
-
-> use wordclouds to find common emotional characteristics
-
-Global distribution of tweets/#ned
-
-Global distribution of tweets/#bra
-
-Global distribution of tweets/#arg
-
-Global distribution of tweets/#ger
-
-Word Clouds #ned
-
-Word Clouds #bra
-
-Word Clouds #arg
-
-Word Clouds #ger
-
-Questions?
-
-

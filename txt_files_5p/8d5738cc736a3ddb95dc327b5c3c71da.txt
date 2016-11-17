@@ -1,285 +1,0 @@
-Physikalische Grundlagen 
-
-moderner 
-
-Mikroskopieverfahren 
-
-PGmMV 
-
-Im Wintersemester 2014/15 
-
-Petra Groß 
-
-Contrast enhancement by color filter 
-
-Shining a light on the invisible… 
-
-Example: Forensic Document Analysis 
-
-• Blue ink under „normal“ illumination 
-
-• Selective wavelength illumination: 
-
-   hyperspectral imaging 
-
-   (here: l = 830 nm) 
-
-• Fluorescence, excitation at l = 670 nm 
-
-• Summarize results  
-
-  in a false-color image 
-
-  (optimized for #8) 
-
-Courtesy of Dr. M.E. Klein, Demcon Advanced Mechatronics b.v., 
-samples provided by C.E.H. Berger, Netherlands Forensic Institute 
-
-Physikalische Grundlagen moderner Mikroskopieverfahren 
-1  Historische Entwicklung und fundamentale Prinzipien 
-2  FOURIEROPTIK UND  
-    PHASENKONTRAST 
-
-Contrast by phase difference 
-
-• Bright field illumination does not reveal differences in brightness between 
-
-•
-
-•
-
-structural details - i.e. no contrast 
-Structural details emerge via phase differences  and by staining of 
-components 
-The edge effects (diffraction, refraction, reflection) produce contrast and 
-detail 
-
-Fouriertransformation: Sinusfunktion 
-
-Achtung: d(w) ist eine Distribution 
-
-7 
-
-Fouriertransformation: Rechteckfunktion 
-
-Sinus cardinalis 
-
-Achtung: Dt, und Normierung nicht eindeutig in der Literatur 
-
-8 
-
-Komplexe Exponentialfunktion 
-
-Deltafunktion 
-
-10 
-
-Fouriertransformation: Delta-Kamm 
-
-Fouriertransformation: Faltung 
-
-kommutativ: 
-
-assoziativ: 
-
-distributiv: 
-
-Differentiation: 
-
-Fourierfilterung: Beispiele 
-
-Reduktion der horizontalen Streifen (i) 
-
-Aus E. Hecht, Optik 
-
-Kantenüberhöhung „P“ 
-
-Verwandt: Schlieren-Methode 
-
-Kompression von Luft bei Mach 1.2 
-Quelle: wikipedia.org 
-
-Common-rail-Diesel Gemischbildung, 
-B. Ofner, F. Mayinger, TU München 
-
-Foto eines fliegenden Geschosses 
-Ernst Mach, Wien 1898 
-
-Dieser Versuch: 
-Aufgabe 3.3 (5) 
-
-Darkfield microscopy tools 
-
-Darkfield microscopy: examples 
-
-M.W. Davidson and M. Abramowitz 
-Optical Microscopy 
-
-M.W. Davidson and M. Abramowitz 
-Optical Microscopy 
-
-Centipede head 
-from Microscopy Primer website 
-
-M.W. Davidson and M. Abramowitz 
-Optical Microscopy 
-
-M.W. Davidson and M. Abramowitz 
-Optical Microscopy 
-
-M.W. Davidson and M. Abramowitz 
-Optical Microscopy 
-
-Termite claw – positive phase contrast 
-from Microscopy Primer website 
-
-Termite claw – negative phase contrast 
-from Microscopy Primer website 
-
-Human erythrocytes  
-– positive phase contrast 
-from Microscopy Primer website 
-
-Human erythrocytes  
- – negative phase contrast 
-from Microscopy Primer website 
-
-M.W. Davidson and M. Abramowitz 
-Optical Microscopy 
-
-Vitamin C                  all from mircoscopy primer website                 beta-carotene 
-
-Wollaston prism: two birefringent prisms 
-(calcite). Image: wikipedia 
-
-M.W. Davidson and M. Abramowitz 
-Optical Microscopy 
-
-Commercial sponge fiber 
-from Microscopy Primer website 
-
-Lily flower buds 
-from Microscopy Primer website 
-
-Mouthparts from a blowfly 
-(transmitted light DIC micrograph) 
-
-Defects on the surface of a ferro-silicon 
-alloy (reflected light DIC micrograph) 
-
-M.W. Davidson and M. Abramowitz 
-Optical Microscopy 
-
-Blue-green algae - phase contrast 
-from Microscopy Primer website 
-
-Blue-green algae - DIC 
-from Microscopy Primer website 
-
-Cycloid fish scales - phase contrast 
-from Microscopy Primer website 
-
-Cycloid fish scales - DIC 
-from Microscopy Primer website 
-
-Contrast 
-
-1.
-
-Fourier optics and Fourier filtering is the principle upon which many 
-
-microscopy techniques are based: Filtering certain spatial 
-
-frequencies enhances the contrast for structures of the chosen size 
-
- 
-
-2.
-
- Examples are darkfield illumination and phase contrast microscopy, 
-
-polarization microscopy (employing birefringence) and more 
-
-advanced/complex schemes like differential intereference contrast . 
-
- 
-
-3. Color can be used in addition (like in Rheinberg illumination).  
-
-Physikalische Grundlagen moderner Mikroskopieverfahren 
-Historische Entwicklung und fundamentale Prinzipien 
-1
-Fourieroptik und Phasenkontrast 
-2
-3  KONFOKALE LASER-RASTER  
-    MIKROSKOPIE 
-
-Scanning disk confocal microscopy  
-
-original Nipkow disk 
-
-scanning disk arrangement 
-
-56 
-
-Scanning disk confocal microscopy 
-
-57 
-
-Single beam confocal microscopy 
-
-In most systems, the 
-laser beam is scanned using 
-a Galvanometer: 
-point-to-point scanning, 
-speed ~kHz 
-
-58 
-
-Simulation: Scanning mirror 
-
-Simulation: Scanning mirror plus 4f-setup 
-
-Comparison widefield - confocal 
-
-continuous illumination, 
-light is collected on CCD 
-
-small volume, 
-~ 1 photon/pixel/scan, 
-point-wise detection 
-
-Drawing by P. D. Andrews, I. S. Harper and J. R. Swedlow 
-
-What is better? 
-
-Experiences vary; Which techniques gives better results depends on the type 
-of cell and fluorophore used. 
-
-61 
-
-Literature and further reading 
-
-Some parts of the slides have been copied from Prof. J.P. Robinson's lecture „Introduction 
-to confocal microscopy and image analysis“, given at Purdue University.  
-Many images are from J.B. Pawley, “Handbook of biological confocal microscopy” 
-
-•
-
-•
-
-•
-
- 
-General information on mircoscopy: „Molecular expressions; Optical microscopy 
-primer“ website of the Florida State University: 
-micro.magnet.fsu.edu/primer 
-Image formation in microscopy: M.W. Davidson and M. Abramowitz, „Optical 
-Microscopy“, Encyclopedia of Imaging Science and Technology, 2002  
-download e.g. from the Microscopy Primer website: 
-micro.magnet.fsu.edu/primer/pdfs/microscopy.pdf 
-Fourier optics: In general optics books, e.g., E. Hecht, „Optik“, Oldenbourg Verlag, 
-2001; there are also many specialized books, e.g. J. Goodman, „Introduction to 
-Fourier Optics“, or T. Butz, „Fouriertransformation für Fußgänger“ 
-
-

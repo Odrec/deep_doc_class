@@ -1,2705 +1,0 @@
-State Capacity and Economic Development: A Network Approach∗
-
-Daron Acemoglu†
-
-Camilo Garcia-Jimeno‡
-October 22, 2014
-
-James A. Robinson§
-
-Abstract
-
-We study the direct and spillover eﬀects of local state capacity using the network of Colombian munici-
-palities. We model the determination of local and national state capacity as a network game in which each
-municipality, anticipating the choices and spillovers created by other municipalities and the decisions of
-the national government, invests in local state capacity and the national government chooses the presence
-of the national state across municipalities to maximize its own payoﬀ. We then estimate the parameters of
-this model using reduced-form instrumental variables techniques and structurally (with GMM or SMM).
-To do so we exploit both the structure of the network of municipalities over which spillovers take place
-and the historical roots of local state capacity as the source of exogenous variation. These historical in-
-struments are related to the presence of colonial royal roads and local presence of the colonial state in
-the 18th century, factors which we argue are unrelated to current provision of public goods and prosper-
-ity except through their impact on their own and neighbors’ local state capacity. Our estimates of the
-eﬀects of state presence on prosperity are large and also indicate that state capacity decisions are strategic
-complements across municipalities. Bringing all municipalities below median state capacity to the median,
-without taking into account equilibrium responses of other municipalities increases median fraction of the
-population above poverty from 57% to 60%. Approximately 57% of this is due to direct eﬀects and 43% to
-spillovers. However, if we take the equilibrium response of other municipalities into account, the median
-would instead increase to 68%, a sizable change driven by equilibrium network eﬀects.
-
-JEL Classiﬁcation: H4, H7, P16.
-Keywords: Colombia, economic development, networks, public goods, state capacity.
-
-∗We are grateful to Alberto Ciancio, Amanda Culp, and Nicolas Idrobo for superb research assistance, and to the Editor,
-ﬁve anonymous referees, Maria Angelica Bautista, Flavio Cunha, Frank Ditraglia, Andrew Foster, Elena Paltseva, James
-Poterba, Pascual Restrepo, Petra Todd, Ken Wolpin, Roman Zarate, staﬀ at the Cartographic Modeling Lab at Penn, and
-various seminar participants for valuable suggestions. Acemoglu gratefully acknowledges ﬁnancial support from ARO MURI
-W911NF-12-1-0509.
-
-†Department of Economics, Massachusetts Institute of Technology. daron@mit.edu
-‡Department of Economics, University of Pennsylvania. gcamilo@sas.upenn.edu
-§Government Department, Harvard University. jrobinson@gov.harvard.edu
-
-1
-
-Introduction
-
-Though we often take for granted the existence of central and local states with the capacity to enforce law
-and order, regulate economic activity and provide public goods, many states in less-developed parts of the
-world lack this capacity. In Migdal’s (1988, p. 33) words: “In parts of the Third World, the inability of
-state leaders to achieve predominance in large areas of their countries has been striking...”
-
-The idea that such state capacity is vital for economic development, though latent in the writings
-of Thomas Hobbes and Max Weber, began to attract more attention as a consequence of analyses of the
-“East Asian Miracle”. A series of books by Johnson (1982), Amsden (1989), Wade (1990), and Evans (1995)
-argued that a key to the economic success of East Asian economies was that they all had states with a
-great deal of capacity. Others, such as Herbst (2000) and Centeno (2002), linked the economic failure of
-African or Latin American nations to their limited state capacity. This hypothesis also receives support
-from the cross-country empirical evidence presented in Gennaioli and Rainer (2007) and the within-country
-evidence in Michalopoulos and Papaioannou (2013) and Bandyopadhyay and Green (2012), which ﬁnd a
-positive association between measures of (historical) political centralization and present-day outcomes.1
-
-In this paper, we contribute to this literature in several dimensions. We study the eﬀect of state
-capacity of Colombian municipalities on public goods provision and prosperity. We conceptualize “state
-capacity” as the presence of state functionaries and agencies. This represents one aspect of what Mann
-(1986, 1993) calls the “infrastructural power” of the state (see also Soifer, 2008). Colombia provides an
-ideal laboratory for such an investigation for several reasons. There is a wide diversity of local state
-presence, public goods provision and prosperity across the country, and many important aspects of local
-state capacity in Colombia — including notary oﬃces, health centers, health posts, schools, libraries, ﬁre
-stations, jails, deed registry oﬃces, tax collection oﬃces, and part of the bureaucracy — are decided at the
-local level. Finally, and critically for our empirical strategy, Colombia’s history of colonization provides
-us with sources of potential exogenous variation in local state capacity, which we exploit in order to deal
-with endogeneity and reverse causality concerns and to isolate the impact of state capacity (rather than
-other social and institutional factors). In particular, we focus on the historical presence of colonial state
-oﬃcials, colonial state agencies, and the colonial “royal roads” network. The road network, for example,
-was partially based on pre-colonial indigenous roads and was overhauled when the modern system of roads
-was built in Colombia starting in the 1930s. This network has disappeared and thus provides an attractive
-source of variation in the historical presence of the state and the cost of building and expanding local state
-capacity (especially when we control for distance to current roads). We exploit this royal road network, as
-
-1Relatedly, Evans and Rauch (2000), Acemoglu (2005), Besley and Persson (2009, 2011), and Dincecco and Katz (2013)
-document positive correlations between tax to GDP ratio or measures of meritocracy in the state bureaucracy and eco-
-nomic development, and Osafo-Kwaako and Robinson (2013) show a positive correlation between political centralization and
-development using ethnographic data on political centralization from the Standard Cross-Cultural Sample.
-
-1
-
-well as information on the location of various colonial state oﬃces and oﬃcials, in order to isolate historical
-sources of variation in the cost of building state capacity today.
-
-Our main contribution is that, diﬀerently from all of the literature in this area, we model the impact of
-state capacity in one municipality on public goods provision and economic outcomes in neighboring areas.
-We expect (and empirically ﬁnd) such neighborhood spillovers to be important both because borders across
-municipalities are porous, and because building a functioning bureaucracy in the midst of an area where
-state capacity is entirely missing is likely to be much more diﬃcult.
-
-Cross-municipality eﬀects also imply that building state capacity is a strategic choice for each munic-
-ipality. If municipalities free-ride on their neighbors’ investments, state capacity choices will be strategic
-substitutes. Conversely, if municipalities ﬁnd it harder or less beneﬁcial to build state capacity when it is
-missing in their neighborhood, they will be strategic complements. Other important reasons for strategic
-complementarities include: (1) when there is a functioning state in the neighborhood, voters may be more
-likely to demand it of their own politicians; (2) some problems, such as defeating criminal organizations or
-dealing with contagious diseases, may be beyond the capability of the local state at the municipality level;
-(3) the judicial system may not function just in a single municipality.
-
-We incorporate these strategic aspects by modeling the building of state capacity as a network game
-in which each municipality takes the national state’s as well as their neighbors’ actions into account and
-chooses its own state capacity. We then estimate the parameters of this model, exploiting both the network
-structure and the exogenous sources of variation discussed above. The key parameters concern: (i) the
-impact of own state capacity on own prosperity (and public goods); (ii) spillovers on neighbors; and (iii) the
-parameters of the best response equation concerning how state capacity decisions depend on neighbors’ state
-capacities. In the process, we clarify why both empirical approaches that ignore the endogeneity concerns
-and those that do not model the network structure of interactions will lead to potentially misleading
-estimates.
-
-Estimates of the “best response” equations linking a municipality’s state capacity to its neighbors’
-state capacity indicate that these decisions are strategic complements. To estimate the eﬀect of own
-and neighbors’ state capacity on measures of public goods provision and prosperity, we use one of three
-empirical approaches: (1) linear instrumental variables (IV) applied to each dimension of prosperity, or (2)
-generalized method of moments (GMM) and (3) simulated method of moments (SMM) using all dimensions
-of prosperity simultaneously.
-In each case, we clarify how the reduced-form parameters map into the
-structural ones. Our results show large and fairly precise eﬀects of both own and neighbors’ state capacity
-on our measures of prosperity and public goods provision we consider.
-
-Our benchmark estimates imply, for example, that moving all municipalities below median state ca-
-pacity to the median will have a “partial equilibrium” direct eﬀect (holding the level of state capacity of
-
-2
-
-all municipalities above the median constant) of reducing the median poverty rate by 3 percentage points,
-increasing the median coverage rate of public utilities (electricity, aqueduct and sewage) by 4 percentage
-points, and increasing the median secondary school enrollment rate by 3 percentage points. About 57% of
-these impacts is due to a direct eﬀect, while 43% is due to network spillovers. The “full equilibrium” eﬀect is
-very diﬀerent, however. Once we take into account the equilibrium responses to the initial changes in local
-state capacity in the network, median coverage rate of public utilities increases 10 percentage points, the
-median fraction of the population in poverty falls by 11 percentage points, and median secondary school
-enrollment rates increase by over 26 percentage points. These large impacts, which are entirely due to
-network eﬀects, highlight not only the central role that state capacity plays in economic development but
-also the importance of taking the full equilibrium eﬀects into account.
-
-In addition to bolstering the case for our empirical strategy using falsiﬁcation exercises, overidentiﬁca-
-tion tests, and a number of speciﬁcation checks, we also demonstrate that our main estimates are quite
-robust. They are very similar (i) when we only exploit historical sources of variation from neighbors of
-neighbors (instead of relying on variation of the neighbors); (ii) if we do not control for the current road
-network (our baseline results do control for this network); (iii) when we focus on subsets of our instru-
-ments; (iv) when we assign diﬀerent weights on the spillovers from diﬀerent neighbors or even when we
-allow spillovers to go beyond adjacent municipalities; (v) when we include a battery of additional controls;
-(vi) when we exclude high crime areas or capital cities; (vii) when we use more ﬂexible functional forms;
-and (viii) when we vary the form of spillovers.
-
-We also extend our structural model to incorporate the decisions of the national state concerning local
-state capacity. In Colombia, while municipalities hire and pay for a range of local state employees (a large
-part of it with transfers from the national state), the number of police and judges in the municipality are
-decided by the national state. Incorporating this additional layer of interaction in the structural model has
-little eﬀect on our estimates of the impact of local state capacity, but allows us to shed light on the role of
-national state presence.
-
-We are unaware of any other study that either estimates the eﬀect of local (municipality-level) state
-capacity on local outcomes, or models and estimates the network externalities and strategic interactions
-in this context.2 Nevertheless, our paper relates to several literatures. First, we build on and extend the
-literature on the eﬀect of state capacity on economic development, which has already been discussed. In
-addition to the empirical and historical studies mentioned above, there has recently been a small literature
-on the modeling of the emergence of state capacity or persistence of states which lack capacity (“weak”).
-
-2The only partial exceptions we are aware of are Dell’s (2013) study of how changes in law enforcement shift the activities
-of drug gangs across the transport network linking Mexican municipalities to the United States; a recent paper by Durante
-and Guiterrez (2013) on the role of inter-jurisdictional cooperation in crime-ﬁghting across Mexican municipalities; Case,
-Hines, and Rosen’s (1993) work on the relationship between the public expenditures of neighboring US states; and Di Tella
-and Schargrodsky’s (2004) work showing (negative) spillovers in policing from one part of Buenos Aires to neighboring areas.
-
-3
-
-Acemoglu (2005) constructs a model in which a self-interested ruler taxes and invests in public goods and
-citizens make investment decisions. Weak states are detrimental to economic development because they
-discourage the ruler from investing in public goods as he anticipates that he will not be able to raise taxes
-in the future. Besley and Persson (2009, 2011) also emphasize the importance of state capacity and suggest
-that state building will be deterred when each group is afraid that the state they build will be used against
-them in the future.3 Our model takes a diﬀerent direction, and in the process, highlights a new eﬀect:
-state building will be deterred unless a national body plays a deﬁning role in this process, because local
-authorities will underinvest in state capacity as they ignore the spillovers they create on their neighbors.
-Since our estimates suggest that these spillovers are sizable, this eﬀect could be quite important in practice.
-In utilizing a network game to model state building investments and for our empirical work, our paper
-also relates to the literature on network games. Theoretically, our model is a variant of Calvo-Argemgol,
-Patacchini, and Zenou (2009), Bramoulle, Kranton and D’Amours (2014) and Allouch (2012). Other
-papers dealing with related issues include Topa (2001), Katz, Kling, and Liebman (2001), Sacerdote (2002),
-Nakajima (2007), Bayer, Ross, and Topa (2008), and Bramoulle, Djebbari, and Fortin (2009), though, to
-the best of our knowledge, no other study uses a similar empirical strategy or combines structural modeling
-and historical instrumental variables to estimate the parameters of this type of model.
-
-There is a small literature on within-country variation in state capacity as well. O’Donnell (1993)
-emphasized that the uneven distribution of state capacity in Latin America led to variation in the quality
-of democracy at the sub-national level. Related ideas have emerged in the literature on civil wars, with
-scholars suggesting that conﬂict starts and persists in parts of countries with low state capacity (e.g.,
-Goodwin, 1999, Fearon and Laitin, 2003, and Kalyvas, 2006, as well as Sanchez, 2007, for the Colombian
-case).4 Research on within-country income diﬀerences has pointed to institutional diﬀerences as a potential
-cause of this variation (e.g., Acemoglu, and Dell, 2010, Acemoglu, Garcia-Jimeno and Robinson, 2012,
-Bruhn and Gallego, 2012), but has not focused on variation in state capacity.
-
-The rest of the paper proceeds as follows. Section 2 provides a discussion of the Colombian context,
-particularly focusing on the weakness of the local and national state. Section 3 presents a simple model
-of investments in state capacity within a network. Section 4 presents our data. Section 5 discusses our
-empirical strategy and presents our main estimates and some robustness checks focusing on the simpliﬁed
-model without the national state. Section 6 describes our empirical strategy and results for the general
-model. Section 7 shows how our estimates can be used for determining the gains from optimally reallocating
-state capacity investments across municipalities. Section 8 concludes. Appendix A presents some proofs
-
-3Acemoglu, Ticchi and Vindigni (2011) and Acemoglu, Robinson and Santos (2013) provide various models of persistence
-of weak states with low state capacity, while another branch of literature, including Thies (2005), Gennaioli and Voth (2011),
-and Cardenas, Eslava and Ramirez (2011) for Colombia, investigates the historical determinants of state capacity.
-
-4In the literature on state formation in the 19th-century United States, there is a heavy emphasis on the critical role of
-federal and local government (e.g., Novak, 2008), and similar concerns have emerged in the literature on Latin America (see,
-e.g., Soifer, 2012).
-
-4
-
-and derivations, while Appendix B, which is available online, contains additional results.
-
-2 Context
-
-State capacity in Colombian history has been notable in its relative absence on average and its great
-variability. In 1870, with a total population of around 2.7 million, the total number of both state and
-national level public employees in Colombia was 4,500, or just 0.0015 bureaucrats per inhabitant (Palacios
-and Saﬀord, 2002). In contrast, public employees per capita in the United States in 1870 were 0.011, an
-order of magnitude higher (1870 US Census).
-
-The Colombian state also lacked another key aspect of state capacity, the capacity to raise ﬁscal
-revenues, which remained absent well into the 20th century (Deas, 1982, and Rincon and Junguito, 2007).
-As late as 1970, tax revenue was only around 5% of GDP (Rincon and Junguito, 2007). Some isolated
-regions, such as the Choco or the eastern plains, have yet to be fully integrated with the rest of the country
-economically or politically.5 Commenting on this issue in 1912, Ruﬁno Gutierrez argued
-
-“...in most municipalities there was no city council, mayor, district judge, tax collector...
-even less for road-building boards, nor whom to count on for the collection and distribution of
-rents, nor who may dare collect the property tax or any other contribution to the politically
-connected...” (Our translation)
-
-There are several historical root causes of state weakness in Colombia. During the colonial period, Spain
-restricted migration to its American colonies so that the settler population was very small and did not
-constitute a powerful voice pushing for a more eﬀective colonial state. The colonial state also used direct
-methods to extract rents from indigenous people, such as tribute and forced labor, rather than developing
-a tax system that would later become the foundation of state capacity. The topography of the country also
-constrains the reach of the state. The Andean Cordillera splits the country into a patchwork of relatively
-disconnected regions. Furthermore, Colombians resisted the Bourbon attempts at state centralization in
-the late 18th century so that, uniquely in the Americas, the Spanish were not able to set up their new
-system (see Paquette, 2012, Phelan, 1978, and McFarlane, 1993, for Colombia). Though as a consequence
-of these reforms, the province of Nueva Granada became a viceroyalty in 1717 and then again in 1739,
-the colonial state remained absent throughout most of the territory, except in and around a few cities and
-towns. For example, in 1794, the capital Bogota and the major slave and gold trading port Cartagena
-housed 70% of all crown employees in the viceroyalty.
-
-5One of the main purposes of the 1991 Constitution was to increase the extent of decentralization in Colombia and in the
-process to contribute to local state building. It mandated transfers from the central government to the local level, which would
-be used for public good provision at the municipality level. Despite these major institutional changes in the late 20th century,
-large swathes of Colombia still have very weak state presence. Moreover, during the 1990s and early 2000s the national state
-lost control of large areas of the country to private armies of guerrillas and paramilitaries.
-
-5
-
-After independence, the colonial ﬁscal system was continued until the Liberals’ rise to power in 1850
-(Jaramillo, Meisel, and Urrutia, 2006). The Liberal regime cut tariﬀs and abolished monopolies, causing
-a ﬁscal crisis and a signiﬁcant downsizing of the already emaciated state (Deas, 1982). In the mid 19th
-century, Colombia adopted a federal system, further weakening the attempts of national state-building.
-During this federal period, each state had its own army, so that even the monopoly of violence of the
-national state was not attempted until the end of the War of a Thousand Days in 1903. Palacios and
-Saﬀord (2002, p. 27) describe state weakness in Colombia during this epoch as follows:
-
-“In the decade of the 1870s, an attempt to use national funds to build a railroad that would
-beneﬁt the east triggered intense antagonism in the west and the [Caribbean] coast... as a
-result, small, poorly ﬁnanced and often failed projects proliferated...”
-
-As a result of this pervasive state weakness, there was little local public good provision in most of
-Colombia before the 1930s. Systematic local public good provision became possible only after the decen-
-tralization initiated in the mid-1980s, and deepened with the 1991 Constitution. The geographically-varied
-lack of state capacity, combined with recent decentralization of some public services to municipalities, makes
-the study of the implications of local state capacity on public goods provision and prosperity in Colombia
-particularly relevant.
-
-3 A Simple Model of State-Building in a Network
-
-Building on the literature on network games (e.g., Ballester, Calvo-Armengol and Zenou, 2006, Calvo-
-Argemgol, Patacchini, and Zenou, 2009, Bramoulle, Kranton and D’Amours, 2014, and Allouch, 2012) we
-now develop a simple game-theoretic model of the determination of local and national state. The economy
-consists of a network of municipalities and a national state. Each municipality is a node in this network,
-municipalities sharing a border are connected, and all links are undirected. Several dimensions of public
-goods and prosperity in each municipality depend on local state capacity, the national state’s capacity
-there, and the spillover eﬀects of state capacity from neighboring municipalities. The national state has
-heterogeneous preferences over prosperity across municipalities. All municipalities and the national state
-simultaneously choose their levels of state capacity to maximize their payoﬀ, which is a function of the
-relative costs and beneﬁts of state capacity. This model determines the equilibrium distribution of local
-and national state capacity across municipalities, and hence the equilibrium distribution of prosperity.
-
-6
-
-3.1 Network Structure and Preferences
-Let i denote a municipality, and F be an n × n matrix with entries fij given by
-
-fij =
-
-1
-
-1 + δ1dij(1 + δ2eij)
-
-,
-
-where dij denotes the distance along the geodesic connecting the centroids of municipalities i and j, and
-eij is a measure of variability of altitude along the geodesic connecting the centroids of municipalities i
-and j. The parameters fij’s allow for diﬀerential decay of spillovers between municipalities depending on
-topographic features of the landscape, an important feature in the Colombian context since topographic
-conditions are highly variable and rapidly changing.
-
-Let N (i) denote the set of municipalities connected to i, which will be the set of municipalities that
-create spillovers on i. In our baseline, these will be the municipalities that are adjacent to i, though we
-also experiment with alternative deﬁnitions of the set N (i) as described below.
-
-The matrix N(δ) denotes the symmetric matrix with entries nij representing both the presence of a
-
-link between two municipalities and the strength of any spillovers that may take place along that link:
-
-0
-
-fij
-
-nij =
-
-if j /∈ N (i)
-if j ∈ N (i)
-
-We allow several dimensions of prosperity in a municipality to depend upon own state capacity and
-
-neighboring state capacity in the following way:
-
-i = κisi + φsiNi(δ)s + γjNi(δ)s + uj
-pj
-i ,
-
-(1)
-
-i is the j-th dimension/index of prosperity in municipality i, si ∈ [0,∞) is municipality i’s state
-where pj
-capacity, and Ni(δ) is the i’th row of the network matrix, with s denoting the full column vector of state
-capacity levels. In addition, κi is the eﬀect of municipality i’s state capacity on its own prosperity, which
-we model as a function of historical and other characteristics of a municipality:
-
-κi = g(ciϕ + xiβ) + ς D
-
-i + ˜ξi.
-
-(2)
-
-Here ci and xi are vectors of historical and contemporary municipality characteristics, g(·) is an arbitrary
-i ’s denote a full set of department ﬁxed eﬀects, and ˜ξi is a random eﬀect, which is
-smooth function, the ς D
-unobserved to the econometrician but observed by all the players in the game, so that we have a game of
-
-7
-
-complete information.6 The parameter φ captures any interaction (or cross) eﬀects between own prosperity
-and neighbors’ state capacity, while γj is the direct eﬀect of neighboring state capacity on prosperity
-outcome j. Finally, the uj
-i ’s denote the error term in equation (1), and are modeled as a function of
-observable covariates as well:
-
-uj
-i = xiβj
-
-u + ς Dj
-
-i + j
-i ,
-
-(3)
-
-where j
-i is a mean zero random component. Relative to (2), this equation excludes the variables in the
-vector ci, which will be the exclusion restrictions discussed in detail below (and in addition also imposes
-linearity, which is for simplicity). Throughout the theoretical and empirical analysis below, we allow for
-arbitrary spatial correlation of the random components, ˜ξi and j
-i , which is important given the potentially
-spatially correlated nature of the omitted factors that might aﬀect state capacity or outcomes at the
-municipality level.
-
-Notice that though γj is allowed to vary across the diﬀerent dimensions of prosperity, the cross eﬀects
-and own eﬀects are imposed to be the same for all these dimensions (i.e., φ and κi do not vary by j). This
-is because, as we will see below, these parameters will be identiﬁed from the best response equations, which
-do not depend on the dimension of prosperity we are considering. These restrictions are plausible in view
-of the fact that the pj
-
-i ’s are standardized z-scores.
-
-3.2 The General Case
-
-Our general model allows state capacity in municipality i to be a constant elasticity of substitution (CES)
-composite of both locally chosen li ∈ [0,∞), and nationally-chosen state capacity, bi ∈ [0,∞):
-
-(cid:20)
-
-si =
-
-σ−1
-σ
-
-i + (1 − α)b
-αl
-
-i
-
-σ−1
-σ
-
-σ > 0
-
-(4)
-
-(cid:21) σ
-
-σ−1
-
- ,
-
- 1
-
-J
-
-(cid:88)
-
-j
-
-Ui = E
-
-i − θ
-pj
-2
-
-l2
-i
-
-We use a reduced-form representation of decisions within municipalities focusing on costs and beneﬁts
-of state capacity (and thus essentially ignore political economy factors). Each municipality i decides its
-own state capacity li taking as given the choices of its neighbors and the national state to maximize
-
-(5)
-
-6Observed and unobserved heterogeneous eﬀects of state capacity on own prosperity are quite plausible in this context,
-since various geographic historical, political and social factors will create variation in the eﬀectiveness of state capacity, for
-example, because there is greater need for the local state to provide health care or public services in some municipalities, or
-because patronage appointments driven by the highly clientelistic nature of local Colombian politics (e.g., Davila and Leal,
-2010) reduces the impact of measured state presence on prosperity in some municipalities. The random component of these
-heterogeneous eﬀects, ˜ξi, is also plausible for another reason: as we will see below, without this random component, best
-response equations would be deterministic, which would not be a reasonable empirical speciﬁcation.
-
-8
-
-where J is the total number of prosperity outcomes. Preferences of the national state are
-
-(cid:34)(cid:88)
-
-(cid:110)
-
-i
-
-(cid:111)(cid:35)
-
-Wi = E
-
-Uiζi − η
-2
-
-b2
-i
-
-,
-
-(6)
-
-where the ζi’s are the heterogeneous weights that the national state puts on each municipality, determined
-by political economy factors, for example, depending on the distribution of swing voters (e.g., Stromberg,
-2008), or on who is in control of local politics (e.g., Acemoglu, Robinson and Santos, 2013).7 Throughout,
-we focus on the Nash equilibrium of this simultaneous-moves game.
-
-The ﬁrst-order conditions for the municipalities and the national state determine the equilibria of this
-
-game. Those with respect to li give the best response of the state capacity choice of municipality i as:
-
-(cid:20) si
-
-(cid:21) 1
-
-σ
-
-α
-
-li
-
-≤ 0 if li = 0
-
-= 0 if li > 0
-
-[κi + φNi(δ)s] − θli
-
-,
-
-(7)
-
-which is written in complementary slackness form. The sign of φ determines whether this is a game of
-strategic substitutes (φ < 0) or strategic complements (φ > 0).
-
-For the national state, the ﬁrst-order conditions with respect to each bi yield:
-
-(1 − α)
-
-ζi [κi + φNi(δ)s] + φNi(δ)(s ∗ ζ) +
-
-Ni(δ)ζ
-
-− ηbi
-
-,
-
-(8)
-
-(cid:41)
-
-(cid:80)
-
-j γj
-J
-
-≤ 0 if bi = 0
-
-= 0 if bi > 0
-
-(cid:40)
-
-(cid:20) si
-
-(cid:21) 1
-
-σ
-
-bi
-
-where ∗ designates element by element multiplication. Notice from equation (8) that for any set of non-
-negative weights ζ such that ζk > 0 for at least one k ∈ N (i) for all i, φ > 0 and γj > 0 for all j
-is a suﬃcient condition for bi > 0 in any equilibrium. In other words, if spillovers are positive and the
-game is one of strategic complements, the only way the national level could allocate no state presence in
-municipality i is if both this municipality’s weight and the weights of all of its neighbors are zero. As we
-will describe below, in our data both local and national state capacity choices are strictly positive for all
-municipalities. This will allow us to focus on interior equilibria.8
-
-The next proposition draws on recent research by Allouch (2012), who establishes that for network
-games with nonlinear best responses, a bound on the slope of the best responses is a suﬃcient condition for
-
-7However, equation (5) rules out situations in which the national state just cares about extracting resources from some
-
-municipalities, or those in which there is an explicit competition between local and national states or politicians.
-
-8Existence of pure-strategy equilibria can be guaranteed straightforwardly either if φ > 0, so that this is a game of
-strategic complements, or if α < l
-for all li and si that are a solution to (7), ensuring quasi-concavity and thus
-i
-enabling us to apply Kakutani’s ﬁxed point theorem. Proposition 1 provides suﬃcient conditions for existence and uniqueness
-of pure-strategy equilibria.
-
-σ−1
-
-s
-i
-
-σ+1
-
-σ
-
-σ
-
-9
-
-uniqueness. This bound is a function of the lowest eigenvalue of the network matrix N(δ), which quantiﬁes
-the extent to which the spillovers across agents are spread through the network structure. Adapting this
-result to our setting and denoting the smallest eigenvalue of the matrix N(δ) by λmin, we have the following:
-
-Proposition 1. (Allouch (2012)). If for every player 1 +
-has a unique Nash equilibrium.
-
-1
-
-λmin(N(δ)) <
-
-(cid:16) ∂li
-
-∂Ni(δ)s
-
-(cid:17)−1
-
-< 1, then the game
-
-For the estimated parameter vector (α, σ, θ, φ, γ, δ), the conditions in Proposition 1 are readily veriﬁable.
-Equations (1), (7), and (8) determine the joint equilibrium distribution of local and national state capacity
-and prosperity.
-
-3.3 The Linear Case (α = 1):
-
-Our model simpliﬁes considerably in the case where α = 1, which makes national choices irrelevant and
-implies si = li in equation (7). In this case, the best response equation (7) becomes linear in neighbors’
-state capacity:
-
-si =
-
-φ
-θ
-
-Ni(δ)s +
-
-κi
-θ
-
-.
-
-(9)
-
-θ is what is referred to in the peer eﬀects literature as an “endogenous eﬀect”: it
-In terms of this equation, φ
-corresponds to the eﬀect of neighbors’ or peers’ choices on own choice, while the γj ’s in equation (10) are
-referred to as “contextual eﬀects” (see, e.g., Manski, 1993). Even though the key equation of our model,
-(1), features only contextual eﬀects and no endogenous eﬀects, strategic choices make equilibrium best
-responses incorporate an endogenous eﬀect.
-
-Substituting for si from (9) into (1), we obtain the observed relationship between prosperity and own
-
-and neighbors’ state capacity as:
-
-pj
-i = θs2
-
-i + γjNi(δ)s + j
-i .
-
-(10)
-
-Equation (10) highlights that the identiﬁcation of the impact of own state capacity on prosperity, κi,
-and of the interaction eﬀect, φ, requires some care: because of the best response of municipality i, the
-parameters κi and φ drop out of the relationship between prosperity and state capacity, and cannot be
-identiﬁed from a regression of pj
-Instead, such a regression can only identify (in
-addition to the spillover parameters γj) the cost parameter θ. Our empirical approach, detailed below, will
-overcome this diﬃculty as well.9
-
-i ’s on state capacity.
-
-With α = 1, the existence of pure strategy equilibria follows immediately from concavity and Kakutani’s
-ﬁxed point theorem, and uniqueness of an interior (positive) equilibrium, where all municipalities choose a
-
-9Note also that in equation (9) the spillovers and feedbacks between municipality choices within the network game lead
-to a quadratic reduced-form relationship between own state capacity and prosperity, so linear regressions may lead to mis-
-speciﬁcation, though we will see below that marginal eﬀects from the estimation of “naive” linear regressions, when properly
-instrumented, are similar to our structural estimates.
-
-10
-
-positive investment in state capacity, is also guaranteed, since such an equilibrium is given by the solution
-to a set of linear equations. However, multiple equilibria with some municipalities choosing zero investment
-is possible, and uniqueness can again be guaranteed by applying the suﬃciency condition in Proposition
-1.10
-
-Equations (9) and (10) determine the joint distribution of local state capacity and prosperity across
-municipalities, and will be the focus of the ﬁrst part of the paper. The just-explained identiﬁcation
-challenge notwithstanding, the parameters (θ, φ, γ, δ) can be identiﬁed if these two equations are estimated
-simultaneously (and of course with the appropriate sources of variation, which we discuss in detail in
-Section 5): the parameter θ is identiﬁed from (10), and given this parameter, φ can be recovered from the
-endogenous eﬀect estimated in equation (9) and the local average of the κi’s from the intercept in equation
-(9).
-
-4 Data
-
-i=1, D, E, A}, include
-For our empirical implementation, the data we use, summarized as {(pi, li, bi, xi, ci)n
-cross-sectional information on several dimensions of prosperity pi, local (li) and national (bi) choices of
-state capacity, municipality characteristics xi, and colonial state presence characteristics ci. In addition,
-D, E, and A are n × n matrices containing the geodesic distances between the centroids of all pairs of
-municipalities, an index of variability in altitude along these geodesics, and the adjacency status of each
-pair of municipalities, respectively. We describe the nature and sources of these data below.
-
-The Fundacion Social (FS), a Colombian NGO, collected and put together detailed data on state
-presence at the municipality level in 1995. Out of a total of 1103 municipalities in Colombia, FS collected
-data for 1019 of them. The two municipalities in the Department of San Andres, an archipelago in the
-Caribbean comprised of several smaller islands and located 775 kms from the mainland, are excluded from
-the sample. The remaining 1017 municipalities comprise our main sample and the number of nodes in our
-network (though depending on data availability some speciﬁcations have fewer observations).
-
-Descriptive statistics are presented in Table 1. For each municipality, FS records the number of mu-
-nicipality (local) public employees, the number of national state public employees, the number of police
-stations, courts, notary oﬃces, Telecom oﬃces, post oﬃces, agricultural bank branches, public hospitals,
-public health centers, public health posts, public schools, public libraries, ﬁre stations, jails, deed registry
-oﬃces, and tax collection oﬃces.
-
-Because our theoretical framework stresses and exploits the diﬀerence between local and national state
-
-(2009) and Bramoulle, Kranton, and D’Amours (2014), and takes the form |λmin(N(δ))| <(cid:0) φ
-
-10A closely related suﬃcient condition for equilibrium follows from the work of Calvo-Argemgol, Patacchini, and Zenou
-uniqueness is by noting that when φ > 0 (so that we have a game of strategic complements), κi ≥ 0 for all i is suﬃcient to
-rule out li = 0, and then uniqueness follows from the uniqueness of an interior equilibrium noted above.
-
-(cid:1)−1. Yet another way to ensure
-
-θ
-
-11
-
-capacities, we rely on the Colombian legislation (in particular, Law 60 of 1993 and Articles 287, 288, and
-311-321 of the 1991 Constitution) to establish the presence and the number of employees of agencies which
-are decided at the local level, and those which are decided at the national level. Police, courts, and public
-hospitals fall under the responsibility of the national state. The location of agricultural bank branches was
-also partly determined centrally. All other agencies are under the jurisdiction of the municipality. Because,
-as noted in the Introduction, our focus is on the “infrastructural” features of state capacity, we construct
-two measures of local state capacity li: (a) the number of municipality-level bureaucrats, which excludes
-police oﬃcers, judges, all other judicial employees, and public hospital employees, and (b) the total count
-of municipality state agencies (notary oﬃces, Telecom oﬃces, post oﬃces, health centers, health posts,
-schools, libraries, ﬁre stations, jails, deed registry oﬃces, and tax collection oﬃces). We treat these two
-variables as alternative measures of local state capacity, and proxy national state capacity, bi, with the
-number of national public employees in the municipality.
-
-Municipalities have three main revenue sources to ﬁnance public spending and investment in state
-infrastructure and bureaucracy: local taxes (mainly industry and commerce tax, and property tax), roy-
-alties from mining activities, and transfers from the national state. The bulk of national state transfers
-(“situado ﬁscal”) are allocated to each municipality using a ﬁxed rule (geographically, this allocation is at
-the departmental level). These resources directly enter into the municipality’s budget. Though the law
-stipulates that at least 60% of these transfers must go to education and at least 20% to health (Law 60 of
-1993), it also grants full discretion to the municipality on their speciﬁc allocation and use. In particular,
-mayors (who are elected oﬃcials since 1988) propose a budget which is implemented if approved by the
-elected municipality council.
-
-To measure local prosperity (and public goods), we collected available data from various sources. The
-Centro de Estudios sobre Desarrollo Economico (CEDE) at Universidad de los Andes provided us with
-average 1992-2002 primary and secondary school enrollment rates. From the OCHA group at the United
-Nations, we collected data on aqueduct, sewage, and electricity household coverage rates in 2002, and
-on vaccination rates in 2002. Finally, from the Colombian national statistics bureau (DANE) we have
-data on the fraction of the population in poverty (under the poverty line) in 1993 and 2005, and on a
-life quality index for 1998. Based on these data, we focus on four prosperity outcomes which are likely
-to depend on local state capacity: (a) the life quality index p1
-i , (b) the average public utilities coverage
-i , (c) the population above the poverty line in
-in 2002 (aggregating aqueduct, sewage, and electricity) p2
-2005 p3
-i . All of our prosperity measures are standardized
-z-scores (observation minus mean divided by standard deviation). We focus on these four prosperity
-outcomes because, although they are positively correlated, as Figure 2 shows the shape of each distribution
-is signiﬁcantly diﬀerent, suggesting that each of these dimensions of prosperity contains some independent
-
-i , and (d) the secondary school enrollment rate p4
-
-12
-
-information.
-
-We will use two other measures of local public goods, primary school enrollment and vaccination
-coverage, and two historical outcomes, historical literacy and school enrollment rates from the 1918 National
-Census, as falsiﬁcation exercises. The reasoning for these falsiﬁcation exercises is explained below.
-
-We built the adjacency matrix of municipalities A based on the Colombian National Geographic Insti-
-tute (IGAC). Using Arc-GIS geo-referenced data, we computed the geodesic (“as the bird ﬂies”) distance
-between the centroid of each pair of municipalities dij, and organized this data in matrix D. Also using
-Arc-GIS and geo-referenced topographic data for Colombia, we computed eij, the index of the variability of
-altitude along the geodesic connecting the centroid of every pair of municipalities, capturing the frictions
-that a more uneven path connecting two municipalities imposes over the opportunities for contact and
-spillovers between them.11 We organize these data into the matrix E.
-
-The several dimensions of Spanish colonial state presence we utilize come from historical data originally
-collected by Duran y Diaz (1794).12 This document speciﬁes the location of oﬃcials and state adminis-
-trations. Of particular interest, Duran y Diaz (1794) has a complete record of every colonial oﬃcial and
-of several state agencies throughout the viceroyalty. From this document we compiled municipality-level
-data on the number of crown employees, and indicators on the presence of an alcabala,13 a tobacco or
-playing cards estanco,14 a liquor or gunpowder estanco, and a post oﬃce. In addition to these variables,
-we collected information from historical maps in Useche (1995) which depict the location of colonial royal
-roads. We geo-referenced these maps using Arc-GIS, and computed the distance between the centroid of
-each municipality and the closest royal road. Based on these data, we then constructed three measures of
-colonial state presence: (a) the number of crown employees, denoted by c1
-i , (b) a count of the number of
-i , and (c) the distance to the closest
-agencies (between 0 and 4) reported by Duran y Diaz, denoted by c2
-royal road, denoted by c3
-i . We also collected the population data from the 1843 National Census, which
-we use as an instrument for current population in speciﬁcations where we allow for current population to
-be endogenous.
-
-Finally our main covariates included in all speciﬁcations (in the vector xi) are distance to a current
-highway, longitude, latitude, surface area, altitude, and average annual rainfall (all obtained from CEDE)
-as well as (log) population in 1995 (obtained from the Colombian National Statistical Institute, the DANE).
-
-11More speciﬁcally, we divided each geodesic into a number of intervals for a given altitude range along the geodesic itself
-and computed the average altitude of each of the intervals. The eij is then computed as the variance of the average altitude
-across intervals, where each interval is appropriately weighted by its length.
-
-12This source is located at the National Library in Bogota and contains a full account of state oﬃcials, salaries, the military,
-tariﬀs, taxes, and ﬁscal revenue for all of the Viceroyalty of Nueva Granada in the late 18th century. We thank Malcolm Deas
-for pointing us to this document.
-
-13The alcabala was a sales tax (usually at 2%). The indicator denotes the presence of the local agency in charge of collecting
-
-the tax.
-
-14An estanco was a state monopoly over the sale of a particular good, which also often allocated production rights and
-
-regulated quantities. The indicator denotes the presence of the local agency in charge of administering the estanco.
-
-13
-
-In some speciﬁcations, we also use the following additional covariates: the density of primary, secondary,
-and tertiary rivers (from CEDE), and the distribution of land in each municipality by quality, coded as
-the share of each of eight qualities, and by land type, classiﬁed as under water, valley, mountain, hill and
-plain (obtained from IGAC).
-
-5 Empirical Strategy and Results: The Linear Case
-
-Our structural model fully determines the cross-sectional distribution of equilibrium state capacity choices
-and prosperity outcomes.15 Our empirical strategy has multiple components. In this section we ﬁrst discuss
-the exclusion restrictions implied by our use of several historical variables as instruments in the context
-of the linear case where α = 1. The same arguments also apply to the general model studied in the
-next section. We then turn to various estimation strategies and empirical ﬁndings. As a preview, we ﬁnd
-municipalities’ state capacity investment decisions are strategic complements, and that the complementarity
-is weak enough that our parameter estimates are always consistent with the network game having a unique
-equilibrium. Our results indicate that all of our prosperity outcomes are strongly dependent on the overall
-levels of state capacity in a municipality, and that state capacity spillovers are signiﬁcant.
-
-5.1 Exclusion Restrictions
-
-In addition to the identiﬁcation problem encapsulated in equation (10) discussed above, we face the standard
-challenges resulting from endogeneity and omitted variable biases (in view of the fact that state capacity is
-endogenously determined) and the problems associated with the estimation of contextual and endogenous
-eﬀects (e.g., Manski, 1993). To discuss these problems and our strategy for dealing with them, let us
-substitute for (2) and (3) into (9) and (10) to obtain the equations we will estimate in our empirical work
-(for the α = 1 case). The best response equation is
-
-si =
-
-φ
-θ
-
-Ni(δ)s +
-
-1
-θ
-
-g(ciϕ + xiβ) + ς D
-
-i + ξi,
-
-(11)
-
-where ξi ≡ ˜ξi/θ, and recall that the ς D
-each dimension of prosperity indexed by j):
-
-i ’s are department ﬁxed eﬀects. The prosperity equation is (one for
-
-pj
-i = θs2
-
-i + γjNi(δ)s + xi ˜β
-
-j
-
-+ ˜ς jD
-
-is + j
-i .
-
-(12)
-
-15One could suppose that our cross-sectional data reﬂect the resting point of a dynamical process, for example, reﬂecting
-some sort of adaptive dynamics. If these dynamics are driven by the best responses of the model outlined above, then the
-conditions for uniqueness in Proposition 1 or in footnote 10 also ensure convergence (and global stability) of the dynamical
-process to the Nash equilibrium characterized above.
-
-14
-
-The standard endogeneity problem (for the case of α = 1) is a simple consequence of the fact that
-i ) (cid:54)= 0. There are also good reasons to
-the error term in (12) may be correlated with si, i.e., cov(si, j
-suspect that spillover eﬀects — the contextual eﬀects in (12) — cannot in general be estimated consistently
-with OLS because of correlation of the error term in this equation with neighbors’ state capacity, i.e.,
-i ) (cid:54)= 0. The main reason for such a correlation is that the omitted inﬂuences on prosperity
-cov(Ni(δ)s, j
-are likely to be spatially correlated; in other words, assuming spatial independence of the error terms in
-this setting would be highly implausible.
-
-As already noted, the estimation of the own and cross eﬀects of state capacity further necessitates
-the joint estimation of the best response equation (11), and the same spatial correlation concerns applied
-to this equation, i.e., cov(Ni(δ)s, ξi) (cid:54)= 0, imply that the endogenous eﬀects in this equation cannot be
-estimated consistently with OLS either.
-
-Our strategy for dealing with both sets of concerns is to rely on historical sources of variation in state
-capacity represented by the vector c. We argue that colonial state presence likely altered the relative costs
-and beneﬁts of subsequent investments in local state presence and thus κi (from equation (2)). In addition,
-these colonial variables are also arguably unrelated to current prosperity outcomes except through their
-impact on state capacity, i.e., cov(c, j
-
-i ) = 0.
-
-The main reason why we believe this exclusion restriction is plausible is that the location of the colonial
-state was determined by a variety of idiosyncratic factors that are broadly unrelated to current determi-
-nants of prosperity and have now ceased to have any direct relevance to economic prosperity (or public
-goods provision). This is most clear for the royal roads network, which was the main investment in commu-
-nications infrastructure during the colonial period (see Useche, 1995). These roads, partially inherited from
-pre-colonial roads and partially built under Spanish authority for a variety of diﬀerent reasons including
-pilgrimage, involved steep ﬂights of steps unsuited to horse or cart traﬃc (see Langebaek, Giraldo, Bernal,
-Monroy, and Barragan, 2000). The considerable challenges of converting colonial royal roads into modern
-motorways meant that much of this network was not converted to railroads or highways and was subse-
-quently abandoned (see Pachon and Ramirez, 2006). As a result, though the location of these roads reﬂects
-accurately the presence of the colonial state and thus the regions where the Spanish authorities were more
-interested in controlling the territory, distance to these roads should have no direct eﬀect on present-day
-public goods or prosperity (especially since we also control for the current road network). Although it is
-possible that the location of these roads may have inﬂuenced prosperity during early colonial times and
-this prosperity has persisted, we will provide evidence against this channel explaining our results.
-
-Figure 1 shows that our measures of colonial state presence, the size of the crown bureaucracy and the
-number of state agencies, concentrate around speciﬁc areas, beyond which the colonial state was mostly
-absent. This reﬂects the colonial settlement strategy, which aimed at achieving several diﬀerent objectives.
-
-15
-
-For example, in regions heavily involved in gold mining during the 17th and 18th centuries, the presence
-of colonial oﬃcials and crown agencies was narrowly related to taxation functions and followed the gold
-reserves. In regions with higher densities of Spanish settlers and their descendants, on the other hand, the
-demand for public services such as legal adjudication and market regulation translated into a diﬀerent type
-of colonial state. Finally, in strategically located places, such as the Caribbean coast or key outposts along
-the Magdalena River (the main communications channel at the time), the presence of the Spanish colonial
-state was related to military objectives, for instance the provision of services to the Spanish ﬂeet. Just like
-the royal roads network, none of these factors are relevant any longer, and therefore, though they inﬂuence
-the costs and beneﬁts of building and maintaining local state capacity, they should have no direct eﬀect
-on present-day prosperity except through state capacity.
-
-i ) = 0 and in fact, cov(Nk
-
-Critically for our empirical strategy, the exclusion restriction cov(c, j
-
-i ) = 0 also implies that these
-colonial variables should also be uncorrelated with the error terms in the prosperity equations of neighbors,
-i.e., cov(Ni(δ)c, j
-i (δ) denotes the i-th row of the k-th
-integer power of the matrix N(δ) (e.g., N2(δ) is the matrix of neighbors of neighbors).
-Intuitively, if
-colonial state presence and distance to royal roads of a municipality has no direct eﬀect on public goods
-and prosperity in that municipality, it should also have no impact on the same outcomes in neighboring
-municipalities.16 The same reasoning can further be applied to the best response equation, (11), so that
-we should also have cov(Nk
-
-i (δ)c, ξi) = 0 for any integer k.17
-
-i (δ)c, j
-
-i ) = 0, where Nk
-
-One concern with the strategy utilized here is that even if the argument for the validity of the colonial
-variables as instruments for own state capacity is plausible, they may happen to be spatially correlated
-(a particularly likely outcome for historical and geographic variables), making the lack of correlation with
-neighbors’ error terms less plausible. In the Colombian setting, however, because of the Spanish state’s
-heterogeneous objectives and because its strategy of locating bureaucracies and agencies in particular cities,
-which had control and jurisdiction over surrounding areas, meant that towns with relatively high levels of
-colonial state presence typically had neighbors with relatively low state presence, the spatial correlation of
-the colonial state is very weak or negative (see Figure 1).
-
-Table 2 conﬁrms this by presenting the within-department spatial correlation matrix of our three colonial
-state presence variables. Own colonial state employees are weakly negatively correlated with neighbors’ and
-neighbors of neighbors’ colonial state employees (−0.061 and −0.062 respectively). Similarly, own colonial
-state agencies are basically uncorrelated with neighbors’ and neighbors of neighbors’ colonial state agencies
-(0.022 and 0.078 respectively). Perhaps somewhat more surprisingly, the same is also true of the distance
-
-16Crucially for this argument, the network structure of municipalities, given by the administrative map of Colombia,
-physical distances (independent of travel times which would be aﬀected by the endogenous evolution of the road network) and
-variability of altitude, are taken as exogenous. This is plausible in view of the fact that about 85% of Colombian municipalities
-were created before 1900.
-
-17These observations also imply that we will have more instruments than endogenous variables, enabling us to check the
-
-robustness of our results to assuming diﬀerent types of network interactions.
-
-16
-
-to royal roads variable: the correlation between own and neighboring distance to royal roads is only 0.28,
-and the correlation falls to 0.045 between own and neighbors of neighbors’ distance to royal roads.
-In
-conjunction with the colonial state presence variables that are spatially negatively correlated, this pattern
-alleviates any concerns resulting from spatially correlated instruments leading to biased estimates.
-
-5.2
-
-Instrumental-Variables Estimates
-
-We propose several alternative estimation strategies, all relying on the exclusion restrictions outlined above.
-The ﬁrst and most straightforward approach we pursue is to ﬁx δ and let g(·) be approximated by a linear
-function, enabling the estimation of equations (11) and (12) separately using linear IV. Speciﬁcally, we
-use six instruments for Ni(δ)s in our benchmark speciﬁcation (11): neighbors’ crown employees, number
-of neighbors’ colonial agencies, neighbors’ distance to royal roads, and neighbors of neighbors’ crown
-employees, number of neighbors of neighbors’ colonial agencies, and neighbors of neighbor’s distance to royal
-roads. Our model is overidentiﬁed, enabling us to perform overidentiﬁcation tests to verify the (internal)
-validity of our instruments (below we also report estimates using only subsets of the instruments).
-
-Table 3 presents the estimates for equation (11), where we impose δ = (1, 1) and assume g(·) to be a
-linear function: g(ciϕ + xiβ)/θ = a + ciϕ + xiβ. In our benchmark estimates, our vector of covariates xi
-includes longitude, latitude, surface area, elevation, rainfall, a dummy for department capital, distance to
-a current highway, and current (1995) population. We measure state capacity alternately as the number
-of public agencies (columns 1-3) or the number of municipality employees (columns 5-7). For ease of
-comparison, all reported values are average marginal eﬀects. Throughout, all standard errors are corrected
-for spatial correlation using the Conley (1996) adjustment, adapted to our network structure,18 and for
-the reported marginal eﬀects, they are computed using the delta method.
-
-Columns 1 and 5 present OLS estimates as a benchmark. Columns 2 and 6 report the instrumental
-variables estimates for the same equation (with log population treated as an exogenous covariate). Finally,
-columns 3 and 7 treat population as endogenous, instrumenting it using the 1843 population (we also
-include a dummy for municipalities without population data in the 1843 Census). The bottom panel of the
-table includes the ﬁrst-stage estimates for Ni(δ)s, showing a strong positive correlation of neighbors’ state
-capacity with neighbors’ historical variables (positive for colonial state presence and negative for distance
-
-18The robust spatial correlation-corrected variance matrix of the IV estimator takes the form
-
-(cid:48)
-(X
-
-(cid:48)
-
-−1Z
-
-(cid:48)
-
-Z)
-
-−1X
-(cid:48)
-
-X)
-
-Z(Z
-
-Z(Z
-
-(cid:48) ˆWZ(Z
-
-(cid:48)
-
-ˆW = Ω ∗ I +
-
-(cid:48)
-
-t(cid:88)
-
-−1Z
-Z)
-t + 1 − j
-t + 1
-
-j=1
-
-(cid:16)
-
-(cid:48)
-
-−1Z
-(cid:48)
-
-(cid:48)
-X(X
-
-Z)
-
-Z(Z
-
-Ω ∗ Nt(δ) +(cid:2)Ω ∗ Nt(δ)(cid:3)(cid:48)(cid:17)
-
-Z)
-
-−1Z
-
-(cid:48)
-
-−1, where
-
-X)
-
-,
-
-t is the highest network degree at which we truncate spatial correlation (we truncate the spatial correlation at second-degree
-adjacency, in practice allowing for arbitrary decaying spatial correlation between neighbors and neighbors of neighbors), Ω is
-the outer product of the residuals, and ∗ denotes element-by-element multiplication.
-
-17
-
-to royal roads), and unsurprisingly, a somewhat weaker relationship with neighbors of neighbors’ historical
-variables. At the bottom, we also report overidentiﬁcation tests for the validity of the instruments, which
-never reject the null hypothesis that the instruments are valid.
-
-All of our estimates in Table 3 show a positive and precisely estimated slope for the best response equa-
-tion, which yields a positive interaction eﬀect φ and implies that the game between municipalities exhibits
-strategic complementarities. Interestingly, the IV estimates are always close to the OLS ones. Though
-neighbors’ colonial state oﬃcials, colonial state agencies, and distance to royal roads all are statistically
-signiﬁcant with the right sign in the ﬁrst stage, only the colonial state oﬃcials variable is signiﬁcant in
-the best response equation (but when only one of these variables is used, it is consistently signiﬁcant with
-the right sign as we see in Appendix Table 3). The estimate in column 3, 0.020 (s.e.= 0.003), implies
-that moving the number of state agencies of a neighbor from the median (10) to the mean (21) leads to a
-1.5% increase in own state agencies at the median of the distribution.19 Notice that this is only the direct
-(“partial equilibrium”) response, and does not take into account the equilibrium feedbacks that take place
-through network eﬀects as other municipalities also respond because of strategic complementarities.
-
-Columns 6 and 7 of Table 3 present the results of the IV estimate of the slope of the best response
-equation with the alternative measure of state capacity, municipality employees. The estimates in this case
-have very similar magnitude and precision to those using the number of local state agencies, and the ﬁrst
-stages are also very comparable.
-
-For the prosperity equation (12), we have two ﬁrst stages, one for s2
-
-i and one for Ni(δ)s. We use the
-same set of instruments as for the best response equation (11), but also exploit the nonlinear reduced-form
-relationship between prosperity and state capacity by including a quartic in these instruments.20 Marginal
-eﬀects from the estimation of equation (12) are presented in Tables 4A and 4B, which also present p-values
-for the joint signiﬁcance of the set of instruments in both ﬁrst stages for equation (12). We again present
-benchmark OLS and IV results from the estimation of each of our four prosperity outcomes equations
-separately. Columns 1-3 present results for the life quality index, columns 5-7 for utilities coverage, columns
-9-11 for the fraction of the population above the poverty line, and columns 13-15 for the secondary school
-enrollment rate. Table 4A presents the estimates for the models using the number of agencies, and Table
-4B presents the estimates for the models using the number of municipality employees. Once again, we
-ﬁrst control for population and subsequently instrument it with historical (1843) population. In all cases
-except for secondary schooling, we ﬁnd both strong own eﬀects that are quite signiﬁcant and precisely
-estimated spillover eﬀects. The results for secondary schooling are less stable and signiﬁcant only in a few
-speciﬁcations, partly reﬂecting the fact that secondary schooling is at 100% for several municipalities as
-
-1910.15 = exp ((0.02) ln(22/11) + ln(11)) − 1, which is a 1.5% increase from the median state capacity of 10.
-20The results are similar if we only use a quadratic in these instruments as shown in Appendix Table 3.
-
-18
-
-Figure 2 shows.21Across outcomes and speciﬁcations, we ﬁnd an own marginal eﬀect (2θ¯s) that is an order
-of magnitude larger than the spillover eﬀect.22 IV estimates are somewhat smaller than OLS estimates,
-and very similar regardless of whether log population is treated as exogenous or endogenous.23
-
-5.3 System GMM
-
-Separately estimating equations (11) and (12) is in general ineﬃcient because the system of J + 1 equations
-imposes several cross-equation restrictions due to their joint dependence on θ, φ and δ. Moreover, the shape
-of the function g(·), which determines the intercept of the best response as a function of the covariates,
-xi, and historical variables, ci, is unknown and we would like to estimate it more ﬂexibly. To achieve
-this objective, we estimate equations (11) and (12) as a system using a semi-parametric GMM approach
-building on Ichimura and Lee (1991). Following this methodology, we created moment conditions using
-the orthogonality of our instruments and the residuals in equations (11) and (12). Semi-parametric GMM
-estimation enables us to explicitly include the cross-equation restrictions, to allow for the network links to
-depend nonlinearly on topographic features, and to estimate g(·) semi-parametrically.24 To identify δ in this
-case, we include as additional moment conditions the products of functions of geographic characteristics dij
-and eij (the average distance of each municipality to neighboring municipalities and the average variation in
-elevation along geodesics connecting municipality i to its neighbors) with the residuals from the structural
-equations.25
-
-For ease of comparison with our IV estimates, the (system) GMM estimates are also presented in Tables
-
-21We will see that the more eﬃcient GMM estimator, which we present in the next subsection, consistently leads to more
-
-precise and statistically signiﬁcant eﬀects for secondary schooling as well.
-
-22The average spillover eﬀect is computed as ψj
-
-2 ¯ni, where ¯ni is the average number of “weighted” neighbors of a municipality,
-with fij’s as weights (the average of ¯ni across municipalities is 0.03). Because this spillover is on more than one municipality,
-in the quantitative exercise in Table 5 the partial equilibrium direct eﬀect and spillovers are roughly of the same order of
-magnitude.
-
-23In all speciﬁcations, at our estimated parameters, the uniqueness condition from Proposition 1 is comfortably satisﬁed.
-This still leaves the question of whether, for a diﬀerent set of parameters, there might be multiple equilibria and we may
-incorrectly estimate a parameter vector implying uniqueness. We believe this is unlikely, since our estimates are far from the
-values that would imply multiplicity, and as also noted in footnote 10, since φ > 0, the fairly natural condition that κi ≥ 0,
-which we explicitly check from our GMM estimation in the next subsection (see Figure 3), is also suﬃcient to guarantee
-uniqueness.
-24Following Ichimura and Lee (1991), we use a ﬂexible semi-parametric index-function approach to estimate g(·) by con-
-structing the conditional expectation of the unknown function using only the empirical distribution. To smooth out the
-distribution, we use a density kernel that gives greater weights to closer observations. In particular, we compute:
-
-(cid:18) (ci−cj)ϕ+(xi−xj)β
-
-(cid:19)
-
-(cid:80)n
-
-j=1
-
-(cid:2)sj − φ
-θ Ni(δ)s − ς D
-(cid:80)n
-
-i
-
-k=1 K
-
-(cid:3) K
-
-(cid:19)
-
-an
-
-(cid:18) (ci−cj)ϕ+(xi−xj)β
-(cid:33)−1(cid:34) n(cid:88)
-
-an
-
-,
-
-(cid:35)
-
-E [g(ciϕ + xiβ)] =
-
-(cid:34) n(cid:88)
-
-min
-ψ,δ
-
-(cid:35)(cid:48)(cid:32) n(cid:88)
-
-where K(·) is the kernel taken to be the normal distribution in the baseline, j denotes observations, and i is the grid point.
-
-25Letting ψ = (θ, φ, γ, ϕ, β, ς, ˜β, ˜ς), our semi-parametric system GMM estimator is given by
-
-(cid:48)
-
-Zi(δ)
-
-qi(ψ, δ)
-
-Zi(δ0)
-
-(cid:48) ˆWiZi(δ0)
-
-(cid:48)
-
-Zi(δ)
-
-qi(ψ, δ)
-
-,
-
-i=1
-
-i=1
-
-i=1
-
-19
-
-3, 4A and 4B. The results in column 4 of Table 3 are jointly estimated with the results of columns 4, 8,
-12 and 16 of Table 4A, and column 8 of Table 3 is jointly estimated with columns 4, 8, 12 and 16 of Table
-4B. Marginal eﬀects based on GMM estimates are remarkably similar to the linear IV estimates, but are
-estimated more precisely. This partly reﬂects the fact that by estimating the full system of ﬁve equations
-jointly, we are imposing the restriction that the coeﬃcient of s2
-is the same for all of our prosperity
-i
-outcomes, leading to a gain in eﬃciency (and this explains why the estimate for the own eﬀect is the same
-across columns in Tables 4A and 4B).26
-
-Figure 3 presents our estimate of g(ciϕ + xiβ)/θ. Over most of its range, the function is very precisely
-estimated. Recall that in our model, gi(.) = κi, is proportional to the average eﬀect of own state capacity
-on prosperity. The ﬁgures show that this function is positive for all its relevant range and is decreasing
-monotonically. Finally, Appendix Figure 1 presents scatterplots of the observed and predicted values of
-the endogenous variables from the GMM estimates, which all depict a very good ﬁt.
-
-5.4 Counterfactuals
-
-To assess the quantitative magnitudes of our estimates, Table 5 presents the results of a counterfactual
-experiment showing the implications of increasing local state presence in all municipalities below median
-local state presence to the median of the distribution. The ﬁrst two panels of the table present the results
-using the GMM estimates reported in this subsection (the third and fourth panels contain estimates from the
-general model and will be discussed in the next subsection). The ﬁrst panel depicts the partial equilibrium
-eﬀects (holding the response of other municipalities constant) and shows signiﬁcant and sizable impacts
-on the quality of life index, the fraction of the population above poverty, utilities coverage and secondary
-school enrollment. For example, the median fraction of the population above poverty increases from 57%
-to 60%. The table also indicates that about 57% of this is due to direct eﬀects, so that spillover eﬀects are
-
-i , ξi](cid:48), ˆWi = ˆui ˆu(cid:48)
-
-i , ..., J
-
-, t is the highest network
-where qi(ψ, δ) = [1
-degree at which we truncate spatial correlation (in practice we allow spatial correlation between neighbors and neigh-
-bors of neighbors), ˆui’s are vectors of residuals from the ﬁrst-stage estimation given by ˆui = qi(ψ0, δ0) and (ψ0, δ0) =
-arg minψ,δ
-
-(cid:2)(cid:80)n
-i=1 Zi(δ)(cid:48)qi(ψ, δ)(cid:3)(cid:48)(cid:0)(cid:80)n
-
-|N t(i)|
-
-j=1
-
-j
-
-t+1−j
-t+1+20
-
-j∈N t(i) fij ˆui ˆu(cid:48)
-
-ij
-
-(cid:80)
-
-(cid:0)Ωij + Ω(cid:48)
-i=1 Zi(δ)(cid:48)qi(ψ, δ)(cid:3). Moreover,
-
-(cid:1), Ωij =
-(cid:21)
-
-i (δ)
-
-0
-
-0
-zBR
-i
-
-(δ)
-
-i +(cid:80)t
-
-i=1 Zi(1)(cid:48)Zi(1)(cid:1)−1(cid:2)(cid:80)n
-(cid:20) IJ ⊗ zp
-
-Zi(δ) =
-
-is the matrix of instruments for observation i, zp
-(δ) is
-the vector of instruments for the best response equation. These are exactly the same as the set of instruments we used with
-the linear IV strategy in the previous subsection.
-
-i (δ) is the vector of instruments for the prosperity equations, and zBR
-
-i
-
-The analytic spatial correlation consistent asymptotic variance for this estimator is given by
-
-(cid:32)(cid:34) n(cid:88)
-
-(cid:35)(cid:48)(cid:32) n(cid:88)
-
-ˆˆδ)
-
-Zi(
-
-(cid:48)∇ψ,δqi(
-
-ˆˆψ,
-
-ˆˆδ)
-
-Zi(δ0)
-
-(cid:48) ˆWiZi(δ0)
-
-ˆˆδ)
-
-(cid:48)∇γ,δqi(ˆˆγ,
-
-ˆˆδ)
-
-Zi(
-
-i=1
-
-i=1
-
-Notice that this estimator allows for both arbitrary spatial and cross-equation correlation. The choice of weights for the
-spatial correlation terms must be such that they approach 1 as t → ∞, and
-is positive deﬁnite.
-
-i=1 Zi(δ0)(cid:48) ˆWiZi(δ0)
-
-26The conditions for a unique equilibrium in Proposition 1 are again easily satisﬁed at our GMM estimates.
-
-(cid:33)−1(cid:34) n(cid:88)
-(cid:16)(cid:80)n
-
-i=1
-
-(cid:35)(cid:33)−1
-(cid:17)−1
-
-.
-
-20
-
-not implausibly large, though still sizable. The second panel then factors in the full equilibrium responses
-through network eﬀects. Now the quantitative magnitudes are much larger — reﬂecting the positive
-responses due to strategic complementarities. For example, the median fraction above poverty now rises
-to 68%, implying that the network eﬀects are now 5-10 times as large as the own eﬀects. This is indicative
-of the importance of network eﬀects in this setting.
-
-5.5 Falsiﬁcation Exercises
-
-We now report two falsiﬁcation exercises, supporting the validity of the exclusion restrictions used in our
-analysis so far. The ﬁrst exercise, reported in Table 6, investigates whether own and neighbors’ local state
-presence is correlated with two outcomes, primary school enrollment and vaccination coverage. The Colom-
-bian Constitution mandates universal primary school enrollment, and the descriptive statistics in Table
-1 show the very high average levels of primary enrollment and the small variation across municipalities.
-Vaccination eﬀorts, on the other hand, are directly operated by the Ministry of Health. Because of their
-highly centralized control, we expect that these two aspects of local public goods should not depend as
-much — or at all — on local state capacity.27 The results in Table 6 indicate that these variables are
-indeed unaﬀected by own and neighbors’ local state presence, bolstering our conﬁdence in the exclusion
-restrictions and the estimates reported so far.
-
-The second exercise, reported in Table 7, examines whether the reduced-form correlation between neigh-
-bors’ historical variables (colonial state presence and royal roads) and current prosperity (and public goods)
-outcomes, which is at the root of our main ﬁndings, may reﬂect persistent unobservables aﬀecting historical
-and current prosperity or the very persistent eﬀects of early location of the colonial state on prosperity. In
-particular, we would like to rule out the possibility that our historical variables impacted historical pros-
-perity, which then persisted and aﬀected both current local state presence and current prosperity. Data on
-literacy and school enrollment from the 1918 national census, which are available for around 70 percent of
-the municipalities in our sample, are useful to shed light on these concerns. The extreme absence of the
-state from much of Colombia before the 1930s and the fact that systematic reliance on local state capacity
-for public goods provision was initiated with the decentralization of the mid-1980s and especially the 1991
-Constitution imply that under our hypothesis — that our estimates measure the eﬀect of contemporary
-local state presence on public goods and prosperity today — we should not ﬁnd a strong correlation be-
-tween neighbors’ historical variables and our literacy and school enrollment data for 1918. Table 7 conﬁrms
-this. The top panel of the table presents the key reduced-form relationship underlying our IV estimates in
-Tables 4A and 4B between our four key prosperity outcomes and the excluded instruments in these tables
-(but focusing on the sample of 683 municipalities with the historical data on prosperity). Consistent with
-27The main reason why they might still depend on local state capacity is that the lack of local capacity may hinder the
-
-eﬀorts of the national state or thwart its clear directives.
-
-21
-
-the results presented so far, there is a strong and robust positive relationship between neighbors’ state
-presence and current prosperity. The pattern in the bottom panel, which presents analogous reduced-form
-estimates for the 1918 outcomes, is quite diﬀerent, however. Though a few of the estimates have a similar
-size, they often have the opposite of the expected sign and none are statistically signiﬁcant. This pattern
-is reassuring and supports our interpretation that the eﬀects of colonial state presence and royal roads
-variables on current prosperity and public goods provision are working primarily through current, or at
-the very least recent, presence of the local state.
-
-5.6 Speciﬁcation Tests
-
-Table 8 presents OLS and IV results from a misspeciﬁed but simpler model where own state capacity enters
-linearly. This is similar to the type of equation estimated in most of the rest of the peer eﬀects literature.
-The estimates reported in Table 8 are still signiﬁcant and quantitatively very comparable to those in Table
-4 (e.g., with state capacity measured with the number of agencies, the estimates in Table 4 are between
-0.23 and 0.56, while those in Table 8 are between 0.1 and 0.36). This suggests that both our general
-qualitative and speciﬁc quantitative aspects are not overly dependent on functional forms.28
-
-Table 9 presents the correlation coeﬃcients between the residuals from the estimates of equations (11)
-and (12) and three commonly-used measures of network centrality, the betweenness and the Bonacich
-centrality statistics, and the local clustering coeﬃcient (Jackson, 2008). Since the equilibrium levels of
-state capacity in our game are functions of the centrality measures (e.g., Ballester, Calvo-Armengol and
-Zenou, 2006; Bramoulle, Kranton and D’Amours, 2014), misspeciﬁcation is likely to lead to a correlation
-between residuals and these centrality measures. Table 9 shows that there is essentially no correlation
-between these variables.
-
-5.7 Robustness
-
-Appendix Tables 1-10 (in Appendix B) show that our results are also robust to a series of variations. For
-brevity, we focus on linear IV estimates of equation (12) for our four prosperity outcomes. In Panel I of
-Appendix Table 1 we estimate the model without controlling for the distance to a current highway, which
-is a useful robustness check against the potential endogeneity of the location of current highways. In Panel
-II, we control for a range of additional geographic covariates, including the density of primary, secondary
-and tertiary rivers, and the full distribution of land by quality and type as described in Section 4. The
-results in this table are quite similar to our baseline estimates.
-
-28The results are no longer similar, however, if one were to try to directly estimate equation (1) including the cross eﬀects,
-i.e., the term φsiNi(δ)s, to infer φ as well as the own and the spillover eﬀects. This diﬀerence is exactly what our theory
-predicts: given the form of the equilibrium summarized by equations (11) and (12), it should not be possible to estimate the
-own and cross eﬀects separately by estimating (1), so we ﬁnd this result reassuring.
-
-22
-
-Appendix Table 2 presents robustness exercises related to the network structure itself.
-
-In Panel I
-we combine our IV strategy with Bramoulle, Djebbari, and Fortin’s (2009) approach of using neighbors
-of neighbors’ characteristics.
-If our historical instruments were potentially spatially correlated but our
-speciﬁcation of the network captured the full set of spillovers, using the third-degree neighbors’ historical
-variables as instruments (instead of our benchmark ﬁrst and second-degree neighbors’ historical variables)
-would lead to consistent estimates — even though our baseline estimates may have been biased. In Panel II
-we present the results of redeﬁning the meaning of a link, by considering both adjacent and second-degree
-adjacent municipalities as connected to check whether allowing longer-range spillovers has a meaningful
-impact on our results. Finally, in Panel III we allow for links to exist between every pair of municipalities
-with decaying link strength according to matrix F. Reassuringly, in all three cases, the results are very
-similar to our baseline estimates (if anything, they become more precisely estimated).
-
-In Appendix Table 3 we look at the sensitivity of our estimates to using subsets of our colonial state
-presence instruments. In Panel I we exclude all functions of distance to royal roads from the instrument
-set, and in Panel II we only use neighbors’ distance to the royal roads as instruments. As anticipated by
-the overidentiﬁcation tests reported above, our estimates remain quite stable. In addition, when only the
-royal roads instruments are used, we can see more transparently that neighbors’ distance to royal roads is
-signiﬁcant with the right sign in the best response equation. In Panel III we use only a quadratic rather
-than a quartic in our historical variables as instruments for the nonlinear outcome equation. Standard
-errors in this case are slightly larger but the results are still quite similar to our baseline estimates.
-
-Appendix Tables 4-6 further probe the sensitivity of our results to functional form restrictions.
-
-In
-Appendix Table 4 we include additional quadratic terms in (1). This has little eﬀect on the implied
-quantitative magnitudes, and the quadratic eﬀects of neighbors’ state capacity themselves ﬂip signs across
-outcomes, and are insigniﬁcant in six out of the eight speciﬁcations. Appendix Table 5 includes additional
-contextual eﬀects from covariates of neighbors in the best response equation (i.e., adding Ni(δ)x on the
-right-hand side of (2)). This implies that we can only use the historical characteristics of neighbors of
-neighbors as instruments. The results from this exercise are also very similar to our baseline estimates.
-Appendix Table 6 presents results from including contextual eﬀects on the prosperity equation (neighbors’
-geographic variables), which again have little impact on our estimates of own or spillover eﬀects.
-
-Another concern is that some areas of Colombia have been under the control of guerrillas and paramili-
-taries, creating a general lawlessness, potentially reducing the eﬀectiveness of the local and national state in
-these areas. In Appendix Table 7, we show that our results are not driven by municipalities most likely to
-suﬀer from such lawlessness. Excluding municipalities with historically high levels of violence as measured
-by paramilitary attacks during the 1998-2004 period from our sample (Panel I) or from the network entirely
-(Panel II) leaves our results largely unchanged.
-
-23
-
-A related concern is the role of capital cities as the source of spillovers. To show that our results are
-not driven by capital cities, Appendix Table 8 presents the estimates of the prosperity equation without
-these cities, which are very similar to the baseline.
-
-Appendix Table 9 makes an attempt at unbundling our measures of local state agencies. We separate
-them into four distinct types: health-related, regulation-related, services-related, and education-related.
-We then re-estimate the best response equation for each subset of agencies. Reassuringly, we ﬁnd not
-only similar strategic complementarities to our baseline results, but also that each dimension of state
-capacity appears to be responding to variation in neighbors’ state capacity in the same dimension (e.g.,
-health-related agencies respond positively to health-related agencies of neighbors, not to other agencies of
-neighbors).
-
-5.8 Controlling for National Bureaucracy
-
-As a preparation for the results in the next section, in Tables 10 and 11 we also control for the national
-state’s employees (bureaucrats). In our baseline estimates, these employees are eﬀectively included in the
-error term and if they are correlated with our instruments, this could lead to inconsistent estimates. The
-results are very similar to our baseline, and are in fact more precisely estimated, which is plausible as the
-omission of national bureaucracy from our baseline models likely created additional residual variance.
-
-6 General Case
-
-In this section, we turn to the general model which relaxes the assumption that α = 1 and reintroduces
-endogenous choices by the national state. Our objective is to estimate whether national and local state
-capacities are complements or substitutes and investigate whether fully allowing for the endogenous deter-
-mination of national state capacity aﬀects the extent of direct and spillover eﬀects of state capacity. The
-reason why we view those presented in the previous section as our main results is that estimates from this
-more general model lead to very similar qualitative and quantitative patterns.
-
-6.1 Empirical Strategy
-
-Our empirical strategy relies on the same historical sources of variation (and same exclusion restrictions),
-but combines them with the ﬁrst-order conditions of our more general model. In this case, we have two
-sets of ﬁrst-order conditions, one for the national state, corresponding to (8) in the general model, and the
-other for the local state, corresponding to (7). The national state’s ﬁrst-order condition is
-
-hb(li, pi, bi|ζ) ≡ (1 − α)
-
-+ Ni(δ)
-
-φs +
-
-∗ ζ
-
-− ηbi = 0,
-
-(13)
-
-(cid:40)
-
-(cid:20) si
-
-(cid:21) 1
-
-σ
-
-bi
-
-(cid:20) li
-
-(cid:21) 1
-
-σ
-
-si
-
-θ
-α
-
-ζili
-
-(cid:34)(cid:32)
-
-(cid:33)
-
-(cid:35)(cid:41)
-
-(cid:80)
-
-j γj
-J
-
-ι
-
-24
-
-while the local state’s ﬁrst-order condition now becomes
-
-hξ(li, pi, bi) ≡ θ
-α
-
-li
-
-σ − φNi(δ)s − g(ciϕ + xiβ) − ς D
-
-i = 0,
-
-(14)
-
-where ι is a column vector of 1s, and overall state capacity si is deﬁned as in equation (4). In addition,
-we rewrite the prosperity equation (1), in this case after substituting for κisi + φsiNi(δ)s from (14):
-
-(cid:21) 1
-
-(cid:20) li
-
-si
-
-(cid:21) 1
-
-(cid:20) li
-
-si
-
-hj (li, pi, bi) ≡ pj
-
-i − θ
-α
-
-lisi
-
-σ − γjNi(δ)s − xi ˜β
-
-j − ˜ς jD
-
-i = 0.
-
-(15)
-
-These three equations summarize the moment conditions for the general model. They show that this
-general model is identiﬁed up to a scaling: (α, η) = (1, 0) makes the ﬁrst-order condition of the national
-state, (13), vanish. We then note that the parameters α and σ can be identiﬁed from equations (14) and
-(15). Motivated by this observation, we ﬁrst take the national state’s choices as predetermined and estimate
-these parameters based only on the variation coming from equations (14) and (15). We then estimate the
-entire system (13)-(15), by imposing the CES parameter estimates from the ﬁrst step.
-
-6.2 GMM with Predetermined National Choices
-
-When national state capacity choices, the bi’s, are treated as predetermined in the network game between
-municipalities, the model reduces to equations (14) and (15). Then, conditional on the bi’s, these equations
-can be estimated straightforwardly by GMM. The GMM estimator is analogous to the one we utilized in
-the previous section (see footnote 25), with the diﬀerence that the moment condition implied by the best
-response equation is now given by (14).
-
-The corresponding GMM estimates are reported in the ﬁrst column of Table 12. To compute standard
-errors, we again use the analogous spatial correlation consistent variance-covariance estimator in footnote
-25. The table presents the estimates when we use the number of state agencies as our measure of state
-capacity. The elasticity of substitution between local and national state, σ, is estimated as 0.11 (standard
-error = 0.006). This implies that local and national state presence are highly complementary inputs: α is
-estimated to be 0.90 (standard error = 0.013), and the estimate for the interaction eﬀect φ indicates that
-local state capacity choices are again strategic complements and the magnitude of strategic complemen-
-tarities is very similar to that in the linear model. The table also presents the average eﬀect of own state
-capacity on public goods and prosperity, κi, and its standard deviation, recovered from the estimation of
-the function g(ciϕ + xiβ).29
-
-29The condition for uniqueness in Proposition 1 is again comfortably satisﬁed. In particular, we have 1 +
-
-1
-
-λmin(N(δ)) =
-
-(cid:26)(cid:16) ∂li
-
-∂Ni(δ)s
-
-(cid:17)−1(cid:27)
-
-−3.25 < min
-
-= 0.006 < max
-
-(cid:26)(cid:16) ∂li
-
-∂Ni(δ)s
-
-(cid:17)−1(cid:27)
-
-= 0.244 < 1.
-
-25
-
-6.3 Estimation of the Full Model by Simulated Method of Moments
-
-We next estimate the full model given by equations (13), (14), and (15). Relative to the estimates in the
-previous subsection, this involves imposing the additional restrictions that national state capacities satisfy
-the ﬁrst-order condition as given in equation (8).
-
-Because national state’s weights, the ζi’s, are unobserved, we model them as a function of a vector of
-observable characteristics related to within-network centrality of the municipalities, political variables, and
-an unobserved component,
-
-ζi = exp(viπ + ωi).
-
-In addition to a constant, vi here includes four variables: the three network centrality statistics already
-used in Table 9, the betweenness centrality, the Bonacich centrality, and the local clustering coeﬃcient, as
-well as a proxy for the extent of historical political competitiveness of the municipality, which we measure
-as the standard deviation of the Liberal Party’s elections share across the 1974-1994 presidential elections.
-Because the national state’s ﬁrst-order conditions involve the full vector of unobserved weights for each
-municipality, we use a simulated method of moments (SMM) estimator derived from the moment conditions
-implied by (13), (14), and (15). The SMM estimator is similar to our GMM estimator, except that we
-
-have qi(ψ, δ) = [h1(li, pi, bi), ..., hJ (li, pi, bi), hξ(li, pi, bi),(cid:98)hb(li, pi, bi)](cid:48), where
-
-
-
-Zi(δ) =
-
-i (δ)
-
-IJ ⊗ zp
-0
-
-0
-
-zBR
-i
-
-(δ)
-
-0
-
-0
-
-0
-
-0
-
-zN L
-i
-
-(δ)
-
- .
-
-i
-
-Here zN L
-(δ) is a vector of instruments for the national state’s best response equation, including vi, xi,
-historical population, average distance to neighboring municipalities, and average variability of altitude
-along geodesics to neighboring municipalities. We write the average (simulated) national state’s ﬁrst-order
-condition as
-
-(cid:98)hb(li, pi, bi) =
-
-ˆ
-
-hb(li, pi, bi|ω)fω(ω)dω.
-
-In this equation fω(·) is the joint density of the unobserved component of the national state’s random
-weights, and the vector ψ now also includes η and π. Notice that the full vector of weights is assumed
-to be known to all players, so this is still a game of complete information. We also restrict the ζi’s to be
-nonnegative and in our benchmark assume that fω(·) is a standard normal (our results are robust to using
-various diﬀerent densities). This procedure allows us to estimate the national state’s weights very precisely.
-Estimates for the general model, when measuring local state capacity as the number of state agencies,
-are presented in the second column of Table 12. The magnitudes of the parameter estimates are remarkably
-
-26
-
-close to the GMM estimates under predetermined national state capacity choices. They also imply that
-the national state’s weights, the ζi’s, are fairly skewed, with a mean of 1.95, a median of 0.93, and a
-standard deviation of 3.66. This squares well with the idea that the Colombian national state has been
-narrowly focused on a few areas of the country leaving large swathes of it unattended. In addition, the
-parameter vector π is estimated precisely, suggesting that a large part of the variation in the national state’s
-weights across municipalities reﬂects local characteristics of municipalities.
-In particular, the network
-characteristics and the historical political competitiveness of municipalities are strong predictors of the
-national-weights, and have a signiﬁcant impact on the variation in national state’s choices.
-
-Throughout, the quantitative magnitudes of the estimates are very similar to those from the linear
-|hξ from equation
-model. For example, the average slope of the best response equation (the average ∂li
-∂lj
-(14)) for our SMM estimates is 0.013, compared to the average slopes of the linear best response reported
-in Table 4, which are between 0.016 and 0.022. Similarly, the average own eﬀect in the prosperity equation
-|h from equation (15)) is 0.21, as compared to our system GMM estimate for the linear
-(the average ∂pi
-∂li
-model of 0.39 reported in the ﬁrst row of Table 4A. Finally, the average spillover eﬀects in the prosperity
-|h) are (0.020, 0.022, 0.019, 0.027) for the life quality index, utilities coverage, fraction
-equations ( ∂pi
-∂lj
-above the poverty line, and secondary school enrollment rates, respectively, which are also close to the
-corresponding estimates in the second row of Table 4A, lying between 0.02 and 0.035.
-
-We perform the same counterfactual exercise as in the top two panels of Table 5 and the results are
-reported in the next two panels of Table 5. Because the best responses are nonlinear, we cannot simply
-use the estimated parameters (and shocks) to predict the equilibrium outcomes, and need to numerically
-solve for the equilibrium state capacities to implement this counterfactual experiment. We accomplish this
-using a Newton-Raphson approximation, and then compute the implied values for pi using equation (15).
-The bottom two panels of Table 5 show that the quantitative results are close to those we obtain from the
-linear model (with α = 1). This is the basis of the statement above that the qualitative and quantitative
-results from this general model are similar to those from the linear model.
-
-We next perform two counterfactual exercises related to implications of changes in national state ca-
-pacity. First, in Appendix Table 10 we investigate the implications of increasing all bi’s below the median
-to the median value.
-In contrast to the counterfactual experiment in which local state capacity levels
-were similarly increased, the implied magnitudes are now smaller. The more limited eﬀects of a change in
-national state capacity are because of the relatively lower dispersion of the distribution of national state
-capacity in the data and because of the smaller response of local state capacity to these changes. They
-reiterate that it is local state capacity that is more important for various local prosperity outcomes in
-Colombian municipalities, justifying our greater emphasis on local state presence.
-
-Second, in Appendix Table 11, we consider reducing the skewness (asymmetry) of the weights the
-
-27
-
-national state attaches to diﬀerent municipalities by increasing all ζi’s below the median to the estimated
-median value. This reduction in skewness, reducing the asymmetry of the weights of diﬀerent municipalities
-in the national state’s preferences, leads to similar aggregate gains. For example, we see a 3.3% increase in
-the median fraction of population above the poverty line, and an 2% increase in median secondary school
-enrollment rates. Thus we ﬁnd that the eﬀect of equalizing the national state weights in this way has
-similar implications to directly equalizing national state capacities.
-
-7
-
-Implications for Optimal Policy
-
-Our structural estimates allow us to provide some preliminary insights on optimal policy, in particular for
-the optimal allocation of state capacity across municipalities. For this exercise, suppose that the objective
-is to maximize average prosperity across municipalities. We thus consider the problem of maximizing the
-population-weighted sum of utilities by reshuﬄing local state capacity across municipalities (and taking into
-account the full equilibrium responses of all municipalities). Because we are focusing on a pure reallocation
-(and ignoring costs of reallocation and diﬀerences in relative prices across municipalities), there are no
-costs in this policy. Mathematically, the problem is
-
-subject to(cid:80)
-
-i ei = 0, and
-
-(cid:88)
-
-i
-
-wi
-
-1
-J
-
-(cid:88)
-(cid:19)−1(cid:18) 1
-
-j
-
-
-(cid:19)
-
-maxe≥0
-
-pj
-i (s)
-
-(cid:18)
-
-s =
-
-I − φ
-θ
-
-N(δ)
-
-κ + e
-
-,
-
-θ
-
-where e denotes the vector of changes (reallocation) in state capacity, and the wi’s are population weights.
-In Appendix A we show that this problem has an explicit-form solution, where the optimal e is a function
-of centrality statistics of the network. Panel I in Table 13 presents the average changes in our prosperity
-outcomes under the optimal reallocation of local public employees. Average utilities coverage would increase
-by 4.5 percentage points, the poverty rate would be 3.5 percentage points lower, and secondary school
-enrollment rates would be 5.6 percentage points higher. These are quite signiﬁcant changes.
-
-Figure 4 shows the change in the distribution of our four prosperity outcomes following the optimal
-reallocation of state capacity, documenting both the increase in average prosperity and the compression
-in the distributions — both of these resulting from greater state capacity now allocated to the poorest
-municipalities.
-
-The solution in equation (A2) in Appendix A shows that the optimal reallocation is a function of
-eigenvector centrality. To make the relationship between e and network position more explicit, we ran
-a set of regressions of our estimated e on the same three network statistics used above — betweenness
-
-28
-
-centrality, Bonacich centrality, and local clustering — as well as historical population and our benchmark
-set of controls. Appendix Table 12 presents the results. Our three network statistics are strong predictors of
-e, both when we use state agencies (columns 1-4) and municipality employees (columns 5-8). Furthermore,
-the R2’s of these regressions are quite high (around 0.8) in all speciﬁcations, highlighting the key role played
-by the network structure for the determination of the distribution of prosperity across municipalities.
-
-Finally, we also perform a similar policy exercise with the general model. Because in this case there is no
-explicit-form characterization of the optimal reallocation, we use the estimates from the regressions of the
-optimal allocation on network centrality statistics presented in Appendix Table 12 to generate predicted
-values for the ei’s. We then compute numerically the Nash equilibrium starting from this allocation,
-and obtain estimates of the predicted prosperity outcomes. We present the results of this exercise in
-the bottom panel of Table 13 using the number of state agencies as our measure of local state capacity.
-The magnitude of the changes is very similar to that from the linear model, albeit larger for average and
-smaller for median changes. This is because in the general model the optimal reallocation of state capacity
-induces further equilibrium responses by both the local and the national levels, amplifying changes among
-richer municipalities (but also having somewhat smaller eﬀect among poorer municipalities). The three
-bottom rows then present the equilibrium changes in prosperity outcomes when we depart from the optimal
-linear policy by making either one of the network centrality statistics 25% more important in the linear
-functional estimated in Appendix Table 12. This exercise leads to very small changes in prosperity, showing
-that welfare in the general model is very ﬂat around the optimal policy from the linear model.
-
-8 Conclusions
-
-In this paper we developed a framework for estimating the direct and spillover eﬀects of local state capacity,
-and applied it in the Colombian context. We modeled the determination of local and national state
-capacity as a network game, where each municipality, anticipating the choices and spillovers created by
-other municipalities and the decisions of the national state, invests in local state capacity, and the national
-state chooses the allocation of its employees across diﬀerent areas to maximize its own objective.
-
-We estimated the parameters of this model, which show large (but plausible) direct and spillover eﬀects
-of local state capacity, using linear IV, GMM, or SMM. In all of our estimations, we exploited both the
-structure of the network of municipalities, determining which municipalities create spillovers on which
-others, and the historical roots of local state capacity as the source of exogenous variation for identifying
-both own and spillover eﬀects. These are related to the presence of colonial royal roads and the historical
-presence of the colonial state — factors which we argue are unrelated to current provision of public goods
-and prosperity in a municipality and its neighbors, except through their impact on local state capacities.
-
-29
-
-Our estimates imply that local state presence is indeed a ﬁrst-order determinant of current prosperity,
-but much of this impact works through network eﬀects. For example, bringing all municipalities below
-median state capacity to the median, without taking into account equilibrium responses of other munic-
-ipalities, would increase the median fraction of the population above the poverty line from 57% to 60%.
-Approximately 57% of this is due to direct eﬀects and 43% due to spillovers. However, if we take the
-equilibrium responses of other municipalities into account, there are further network eﬀects, reﬂecting the
-strategic complementarities in local state capacity decisions. Once these adjustments are made, the median
-of the fraction of the population above poverty would increase to 68% — a much larger impact than the
-partial equilibrium eﬀects. This indicates not only that network eﬀects are important, but also suggests
-why the national government must play a central role in eﬀective state building: local state building will
-lead to major under-provision of state capacity (and thus public goods) because municipalities do not take
-into account these network eﬀects.
-
-We view our paper as a ﬁrst step in the modeling and estimation of the direct and spillover eﬀects of
-local state capacity. There are several interesting and important research directions. First, our results have
-focused only on some aspects of local state capacity. The typical view of the Weberian rational bureaucracy
-also stresses such things as meritocracy and predictability of the bureaucracy, which would be interesting
-to investigate at the local level as well. Second and more importantly, we have not addressed another
-aspect of Weberian state capacity: the monopoly of violence. This is a central issue in Colombia, where
-the state often lacks this monopoly of violence. Third, our approach has been reduced-form in one crucial
-dimension: we have abstracted from political economy interactions. Though, we believe, this is reasonable
-as a ﬁrst step, political economy factors are likely to be critical for the nature of some of these spillovers. In
-fact, we conjecture that underpinning the strategic complementarities documented in this paper is, in part,
-the pressure that high state capacity in one municipality puts on politicians in neighboring municipalities.
-Another important political economy dimension in the Colombian context is the control of politicians or
-armed groups over certain municipalities with very diﬀerent objectives, and their ability to do so may
-depend on outcomes in neighboring municipalities. Finally, we believe that an important next step is to
-apply a similar approach to other settings in which law enforcement and policing are determined at the
-local level and create diﬀerent types of spillovers on neighbors.
-
-30
-
-Appendix A
-
-Slope of the Best Response Equation (7):
-
-Implicitly diﬀerentiating equation (7) with respect to Ni(δ)s yields
-
-∂li
-
-∂Ni(δ)s
-
-= ασ
-
-φ
-θ
-
-(σ + 1)
-
-(cid:104) li
-
-si
-
-1
-
-(cid:105) 1
-
-σ − α
-
-(cid:105) .
-
-(cid:104) li
-
-si
-
-When α = 1,
-
-∂li
-
-∂Ni(δ)s = φ
-
-θ . More generally, the denominator of this expression is strictly positive: this can
-
-be seen by noting that (σ + 1)
-
-> 0 is equivalent to
-
-(cid:105) 1
-
-(cid:104) li
-
-si
-
-σ − α
-
-(cid:105)
-
-(cid:104) li
-
-si
-
-σ + 1 >
-
-σ−1
-σ
-
-αl
-i
-
-σ−1
-σ
-
-i + (1 − α)b
-αl
-
-i
-
-σ−1
-σ
-
-,
-
-which is satisﬁed in view of the fact that σ ≥ 0 and α ∈ (0, 1), and implies
-
-sign(
-
-∂li
-
-∂Ni(δ)s
-
-) = sign(φ).
-
-Optimal Reallocation of State Capacity
-
-In the optimal reallocation problem, deﬁne M ≡(cid:16)
-
-θ N(δ)
-vector of state capacities s, equilibrium prosperity is given by
-
-I − φ
-
-(cid:17)−1
-
-, and recall that for a given equilibrium
-
-pj
-i = θs2
-
-i + γjNi(δ)s + xi ˜β + ˜ς D
-
-i + j
-i .
-
-(cid:40)
-
-(cid:20)
-
-(cid:88)
-
-(cid:18) 1
-
-So the problem above can be rewritten as
-
-(cid:18) 1
-where λ is the Lagrange multiplier on the constraint(cid:80)
-
-(cid:19)(cid:21)2
-
-+ ¯γNi(δ)M
-
-max
-e≥0
-
-κ + e
-
-Mi
-
-wi
-
-θ
-
-θ
-
-θ
-
-i
-
-(cid:19)
-
-(cid:41)
-
-+ λ
-
-(cid:32)
-0 −(cid:88)
-
-i
-
-(cid:33)
-
-ei
-
-,
-
-+ xi ˜β + ˜ς D
-
-i + j
-
-i
-
-κ + e
-
-i ei = 0, and Mi represents the i’th row of matrix
-
-M. The ﬁrst-order condition of this problem with respect to each et takes the form
-
-2 [1N Diag (Mt) Mκ + θ1N Diag (Mt) Me] + ¯γ1N N(δ)M(cid:48)
-
-t − λ
-wt
-
-= 0,
-
-where 1N is an N × 1 row vector of 1s, and Diag (Mt) is an N × N matrix with Mt in its diagonal and
-0s oﬀ the diagnonal. Thus we have a system of N + 1 linear equations (the N ﬁrst-order conditions plus
-
-31
-
-the budget constraint) with N + 1 unknowns (the N ei’s plus λ).
-
-Deﬁne the scalar gt ≡ 2 · 1N Diag (Mt) Mκ, and g ≡ [g1, g2, ..., gN ](cid:48). Also deﬁne the scalar ht ≡
-t, and h ≡ [h1, h2, ..., hN ](cid:48). Finally deﬁne the 1 × N vector qt ≡ 2θ1N Diag (Mt) M, and
-2, ..., q(cid:48)
-
-N ](cid:48). We can then express the N ﬁrst-order conditions in matrix form as:
-
-¯γ1N N(δ)M(cid:48)
-Q ≡ [q(cid:48)
-1, q(cid:48)
-
-Qe − ˜wλ = −g − h,
-
-where ˜w is the vector of inverse population weights, and the constraints can be written as
-
- λ
-
-e
-
- =
-
-
-
-0
-
-−g − h
-
- .
-
-
-
-1 1 ... 1
-
-Q
-
-0
-− ˜w1
-− ˜w2
-.
-
-.
-
-.
-− ˜wN
-
-
-
-
-
-Deﬁning the matrix of the left-hand side as B, the solution to this system is
-
- λ
-
-e
-
-∗
-
-= B−1
-
-0
-
-−g − h
-
- .
-
-(A2)
-
-References
-
-Acemoglu, Daron (2005). “Politics and Economics in Weak and Strong States”, Journal of Monetary
-
-Economics, 52(7), 1199-1226.
-
-Acemoglu, Daron and Melissa Dell (2010). “Productivity Diﬀerences Between and Within Countries,”
-
-American Economic Journal: Macroeconomics, 2(1), 169–188.
-
-Acemoglu, Daron, Camilo Garcia-Jimeno and James A. Robinson (2012). “Finding El Dorado: Slavery
-
-and Long-Run Development in Colombia,” Journal of Comparative Economics, 40(4), 534-564.
-
-Acemoglu, Daron, James A. Robinson and Rafael J. Santos (2013). “The Monopoly of Violence: Theory
-
-and Evidence from Colombia,” Journal of the European Economic Association, 11(1), 5-44.
-
-Acemoglu, Daron, Davide Ticchi and Andrea Vindigni (2011). “Emergence and Persistence of Ineﬃcient
-
-States” Journal of the European Economic Association, 9(2), 177-208.
-
-Allouch, Nizar (2012). “On the Private Provision of Public Goods on Networks”, Unpublished.
-
-32
-
-Amsden, Alice H. (1989). Asia’s Next Giant: South Korea and Late Industrialization, New York:
-
-Oxford University Press.
-
-Ballester, Coralio and Antoni Calvo-Armengol (2010). “Interactions with Hidden Complementarities”,
-
-Regional Science and Urban Economics, 40(6), 397-406.
-
-Ballester, Coralio, Antoni Calvo-Armengol, and Yves Zenou (2006). “Who’s Who in Networks: Wanted:
-
-The Key Player”, Econometrica, 74(5), 1403-1417.
-
-Bandyopadhyay, Sanghamitra and Elliot D. Green (2012). “Pre-Colonial Political Centralization and
-
-Contemporary Development in Uganda”, APSA 2012 Annual Meeting Paper.
-
-Bayer, Patrick, Stephen Ross, and Giorgio Topa (2008).
-
-“Place of Work and Place of Residence:
-Informal Hiring Networks and Labor Market Outcomes”, Journal of Political Economy, 116(6), 1150-1196.
-Besley, Timothy and Torsten Persson (2009). “The Origins of State Capacity: Property Rights, Taxa-
-
-tion and Politics”, American Economic Review, 99(4), 1218-44.
-
-Besley, Timothy and Torsten Persson (2011). Pillars of Prosperity, Princeton: Princeton University
-
-Press.
-
-Blume, Lawrence, William Brock, Steven Durlauf, and Yannis Ioannides (2010).
-
-“Identiﬁcation of
-Social Interactions”, in J. Benhabib, A. Bisin, and M. Jackson (eds.). Handbook of Social Economics
-(Forthcoming).
-
-Bramoulle, Yann, Rachel Kranton and Martin D’Amours (2014). “Strategic Interaction and Networks”,
-
-American Economic Review, 104(3), 898-930.
-
-Bramoulle, Yann, Habiba Djebbari, and Bernard Fortin (2009). “Identiﬁcation of Peer Eﬀects through
-
-Social Networks”, Journal of Econometrics, 150(1), 41-55.
-
-Bruhn, Miriam and Francisco Gallego (2012).
-
-“Good, Bad, and Ugly Colonial Activities: Do They
-
-Matter for Economic Development?”, Review of Economics and Statistics, 94(2), 433-461.
-
-Calvo-Armengol, Antoni, Eleonora Patacchini, and Yves Zenou (2009). “Peer Eﬀects and Social Net-
-
-works in Education”, Review of Economic Studies, 76(4), 1239-1267.
-
-Cardenas, Mauricio, Marcela Eslava and Santiago Ramirez (2011).
-
-“State Capacity and Conﬂict”,
-
-Unpublished, Department of Economics, Universidad de los Andes.
-
-Case, Anne, James Hines, and Harvey Rosen (1993). “Budget Spillovers and Fiscal Policy Interdepen-
-
-dence. Evidence from the States”, Journal of Public Economics, 52(3), 285-307.
-
-Centeno, Miguel A. (2002). Blood and Debt: War and Statemaking in Latin America, Princeton:
-
-Princeton University Press.
-
-Conley, Timothy (1996). “GMM Estimation with Cross-Sectional Dependence”, Journal of Economet-
-
-rics, 92(1), 1-45.
-
-Davila, Andres and Francisco Leal (2010). Clientelismo: el Sistema Politico y su Expresion Regional,
-
-33
-
-3rd Edition, Bogota. Universidad de los Andes.
-
-Deas, Malcolm (1982). “Fiscal Problems of Nineteenth Century Colombia”, Journal of Latin American
-
-Studies, 14(2), 287-328.
-
-Dell, Melissa (2013). “Traﬃcking Networks and the Mexican Drug War”. Unpublished.
-Dincecco, Mark abd Gabriel Katz (2013).
-
-“State Capacity and Long-Run Economic Performance”,
-
-Unpublished, Department of Economics, University of Michigan.
-
-Di Tella, Rafael and Ernesto Schargrodsky (2004).
-
-“Do Police Reduce Crime? Estimates Using the
-
-Allocation of Police Forces after a Terrorist Attack”, American Economic Review, 94(1), 115–133.
-
-Duran y Diaz, Joaquin (1794). Estado General de todo el Virreynato de Santafe de Bogota, Bogota.
-Durante, Ruben and Emilio Guiterrez (2013). “Fighting Crime with a Little Help from My Friends:
-
-Party Aﬃliation, Inter-Jurisdictional Cooperation and Crime in Mexico” Sciences Po. Mimeo.
-
-Evans, Peter B. (1995). Embedded Autonomy, Princeton: Princeton University Press.
-Evans, Peter B. and James E. Rauch (2000). “Bureaucratic Structure and Bureaucratic Performance
-
-in Less Developed Countries”, Journal of Public Economics, 75(1), 49-71.
-
-Fearon James and David D. Laitin (2003). “Ethnicity, insurgency and civil war”, American Political
-
-Science Review, 97(1), 75–90.
-
-Fundacion Social (1998). Municipios y Regiones de Colombia: Una Mirada desde la Sociedad Civil,
-
-Fundacion Social, Bogota.
-
-Gennaioli, Nicola and Ilia Rainer (2007). “The Modern Impact of Pre-Colonial Centralization in Africa”,
-
-Journal of Economic Growth, 12(3), 185-234.
-
-Gennaioli, Nicola and Hans-Joachim Voth (2011). “State Capacity and Military Conﬂict”, unpublished.
-Goodwin, Jeﬀrey (1999). No Other Way Out: States and Revolutionary Movements 1945–1991, Cam-
-
-bridge University Press, Cambridge.
-
-Gutierrez, Ruﬁno (1920). Monograﬁas. Imprenta Nacional, Bogota.
-Herbst, Jeﬀrey I. (2000). States and Power in Africa, Princeton: Princeton University Press.
-Ichimura, Hidehiko and Lung-fei Lee (1991). “Semiparametric Least Squares Estimation of Multiple
-Index Models: Single Equation Estimation”, in W.A. Barnett, J. L. Powell, and G. Tauchen (eds.). Non-
-parametric and Semiparametric Methods in Econometrics and Statistics, Cambridge, Cambridge University
-Press, 3-49.
-
-Johnson, Chalmers A. (1982). MITI and the Japanese Miracle, Stanford University Press.
-Jackson, Matthew (2008). Social and Economic Networks. Princeton University Press, Princeton.
-Jaramillo, Jaime, Adolfo Meisel and Miguel Urrutia (2006) “Continuities and Discontinuities in the
-Fiscal and Monetary Institutions of New Granada 1783-1850,” in Michael D. Bordo and Roberto Cortes
-Conde (eds.) Transferring Wealth and Power from the Old to the New World, New York: Cambridge
-
-34
-
-University Press.
-
-Langebaek, Carl Henrik, Santiago Giraldo, Alejandro Bernal, Silvia Monroy and Andres Barragan
-(2000). Por los Caminos del Piedemonte: Una Historia de las Comunicaciones entre los Andes Orientales
-y los Llanos, siglos XVI a XIX, Bogota, Ediciones Uniandes.
-
-Langebaek, Carl Henrik, and Jorge Morales (2000). Historia de las Comunicaciones entre los Andes
-
-Orientales y los Llanos, siglos XVI a XIX, Bogota, Ediciones Uniandes.
-
-Kalyvas, Stathis N. (2006). The Logic of Violence in Civil War, Cambridge University Press, New
-
-York.
-
-Katz, Lawrence, Jeﬀrey Kling, and Jeﬀrey Liebman (2001). “Moving to Opportunity in Boston: Early
-
-Results of a Randomized Mobility Experiment”, Quarterly Journal of Economics, 116(2), 607-654.
-
-Kohli, Atul (2004). State-Directed Development: Political Power and Industrialization in the Global
-
-Periphery, New York, Cambridge University Press.
-
-Mann, Michael (1986). The Sources of Social Power, Volume I, Cambridge University Press, New York.
-Mann, Michael (1993). The Sources of Social Power, Volume II, Cambridge University Press, New
-
-York.
-
-Manski, Charles (1993). “Identiﬁcation of Endogenous Social Eﬀects: The Reﬂection Problem”, Review
-
-of Economic Studies, 60(3), 531-542.
-
-Mcfarlane, Anthony (1993). Colombia before Independence: Economy, Society, and Politics under
-
-Bourbon Rule, New York, Cambridge University Press.
-
-Michalopoulos, Stelios and Elias Papaioannou (2013). “Pre-Colonial Ethnic Institutions and Contem-
-
-porary African Development”, Econometrica, 81(1), 113–152.
-
-Migdal, Joel S. (1988). Strong Societies and Weak States, New York, Cambridge University Press.
-Nakajima, Ryo (2007).
-
-“Measuring Peer Eﬀects in Youth Smoking Behaviour”, Review of Economic
-
-Studies, 74(3), 897-935.
-
-Novak, William (2008). “The Myth of the Weak American State”, American Historical Review, 113(3),
-
-752-772
-
-O’Donnell, Guillermo (1993). “On the state, democratization and some conceptual problems: a Latin
-
-American view with glances at some postcommunist countries”, World Development, 21(1), 355–369.
-
-Osafo-Kwaako, Philip and James A. Robinson (2013). “Political Centralization in Pre-Colonial Africa,”
-
-Journal of Comparative Economics”, Journal of Comparative Economics, 41(1), 534-564.
-
-Pachon, Alvaro and Maria Teresa Ramirez (2006). La Infraestructura de Transporte en Colombia
-
-durante el siglo XX, Bogota, Banco de la Republica, Ediciones Fondo de Cultura Economica.
-
-Palacios, Marco and Frank Saﬀord (2002). Colombia Pais Fragmentado, Sociedad Dividida, Bogota,
-
-Editorial Norma.
-
-35
-
-Paquette, Gabriel B. (2012). Bankruptcy of Empire: Mexican Silver and the Wars between Spain,
-
-Britain, and France, 1760-1810, New York, Palgrave-Macmillan.
-
-Phelan, John L. (1978). The People and the King: The Comunero Revolution in Colombia, 1781,
-
-Madison, University of Wisconsin Press.
-
-Rincon, Hernan and Roberto Junguito (2007). “La Politica Fiscal en el Siglo XX en Colombia”, in James
-A. Robinson and Miguel Urrutia (eds.), Economia Colombiana del Siglo XX: Un Analisis Cuantitativo,
-Bogota and Mexico D.F., Fondo de Cultura Economica.
-
-Sacerdote, Bruce (2002). “Peer Eﬀects with Random Assignment: Results for Dartmouth Roommates”,
-
-Quarterly Journal of Economics, 116(2), 681-704.
-
-Sanchez, Fabio (2007). Las cuentas de la violencia. Ensayos economicos sobre el crimen y el conﬂicto
-
-en Colombia, Bogota: Editorial Norma.
-
-Soifer, Hillel (2012). Authority at a Distance: Institutions and Long-Run Variation in State Develop-
-
-ment in Latin America, Unpublished.
-
-Soifer, Hillel (2008). “State Infrastructural Power: Conceptualization and Measurement in Empirical
-
-Analysis”, Studies in Comparative International Development, 43(3-4), 231-251.
-
-Stromberg, David (2008). “How the Electoral College Inﬂuences Campaigns and Policy: The Probability
-
-of Being Florida”, American Economic Review, 98(3), 769-807.
-
-Thies, Cameron G. (2005). “War, Rivalry, and State Building in Latin America”, American Journal of
-
-Political Science, 49(3), 451-465.
-
-Topa, Giorgio (2001). “Social Interactions, Local Spillovers and Unemployment”, Review of Economic
-
-Studies, 68(2), 261-295.
-
-Useche, Mariano (ed.) (1995). Caminos Reales de Colombia, Bogota, Fondo FEN Colombia.
-Wade, Robert H. (1990). Governing the Market, Princeton, Princeton University Press.
-
-36
-
-Figures
-
-Figure 1: Colonial state presence, 1794
-
-Number of crown employees
-
-Number of state agencies (alcabalas, estancos, post oﬃces)
-
-Figure 2: Distribution of prosperity outcomes
-
-37
-
-The	  left-­‐hand	  side	  figure	  presents	  the	  current	  municipality-­‐level	  spatial	  distribution	  of	  crown	  employees	  in	  1794.	  The	  right-­‐hand	  side	  figure	  presents	  the	  current	  municipality-­‐level	  spatial	  distribution	  of	  the	  count	  of	  colonial	  state	  agencies	  in	  1794,	  including	  alcabalas,	  tobacco	  and	  playing	  cards	  estancos,	  liquor	  and	  gunpowder	  estancos,	  and	  post	  offices.	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  The	  figure	  plots	  the	  empirical	  distributions	  for	  the	  four	  prosperity	  outcomes	  in	  the	  sample	  of	  Colombian	  municipalities.	  The	  top	  left	  panel	  presents	  the	  distribution	  of	  the	  life	  quality	  index	  in	  1998.	  The	  top	  right	  panel	  presents	  the	  distribution	  of	  the	  public	  utilities	  coverage	  (average	  of	  aqueduct,	  electricity,	  and	  sewage)	  in	  2002.	  The	  bottom	  left	  panel	  presents	  the	  distribution	  of	  the	  fraction	  of	  the	  population	  above	  the	  poverty	  line	  in	  2005.	  The	  bottom	  right	  panel	  presents	  the	  distribution	  of	  the	  average	  1992-­‐2002	  secondary	  enrollment	  rate.	  	  	  	  Figure 3: Estimated g(ciϕ + xiβ) function
-
-Figure 4: Change in the distribution of prosperity following the optimal reallocation of bureaucracy
-
-38
-
-	  	  The	  figure	  plots	  the	  GMM	  estimates	  of	  g(.),	  the	  intercept	  of	  the	  best	  response	  equation.	  The	  left-­‐hand	  side	  panel	  presents	  the	  estimate	  for	  the	  model	  using	  municipality	  agencies	  as	  the	  measure	  of	  local	  state	  capacity.	  The	  right-­‐hand	  side	  panel	  presents	  the	  estimate	  for	  the	  model	  using	  municipality	  public	  employees	  as	  the	  measure	  of	  local	  state	  capacity.	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  !"!#!"!#$"!#%"!#&"'"'#!"'#$"'#%"'#&"(%"()"($"('"(!"(*"+"*"!"#$%&'()*+*'&,+(-$&./'*,&$01$!"-2)3(4526&,*#$789(-()*:(,;<:&=&:$>!&9-(&.$!"'"$")"%","&"(*%"(*$"(*!"(*+"(&"(%"($"(!"+"!"!"#$%&'()*+*'&,+(-$&./'*,&$01$!"-2)3(4526&,*#$789(-()*:(,;<:&=&:$?86:(-$@'):0;&&.$	  The	  figure	  plots	  the	  predicted	  (yellow)	  empirical	  distributions	  for	  the	  four	  prosperity	  outcomes	  following	  the	  optimal	  reallocation	  of	  local	  state	  capacity	  (measured	  as	  the	  number	  of	  public	  employees),	  overlaied	  over	  the	  actual	  distributions	  (gray).	  The	  top	  left	  panel	  presents	  the	  distributions	  for	  the	  life	  quality	  index	  in	  1998.	  The	  top	  right	  panel	  presents	  the	  distributions	  of	  the	  public	  utilities	  coverage	  (average	  of	  aqueduct,	  electricity,	  and	  sewage)	  in	  2002.	  The	  bottom	  left	  panel	  presents	  the	  distributions	  for	  the	  fraction	  of	  the	  population	  above	  the	  poverty	  line	  in	  2005.	  The	  bottom	  right	  panel	  presents	  the	  distributions	  for	  the	  average	  1992-­‐2002	  secondary	  enrollment	  rate.	  	  	  	  	  0.02.04.06.08.1%304050607080Life Quality Index (Initial mean=49% Optimal mean=51%)Life Quality Index -Initial(grey) vs. Optimal(yellow)-Welfare Effect of Optimal Redistribution of Public Employees0.02.04.06.08%020406080100Public Utilities Coverage (Initial mean=54% Optimal mean=58%)Public Utilities Coverage -Initial(grey) vs. Optimal(yellow)-Welfare Effect of Optimal Redistribution of Public Employees0.02.04.06.08.1%020406080100% Not in Poverty (Initial mean=56% Optimal mean=59%)% Not in Poverty -Initial(grey) vs. Optimal(yellow)-Welfare Effect of Optimal Redistribution of Public Employees0.02.04.06.08%020406080100Secondary Enrollment Rate (Initial mean=57% Optimal mean=63%)Secondary Enrollment Rate -Initial(grey) vs. Optimal(yellow)-Welfare Effect of Optimal Redistribution of Public EmployeesTables
-
-39
-
-	  	  	  	  !"#$"%&'()'"*)'+$"*,-+./0'1.234"&5&'1'&/(-"-'/"6'*4$'(78.98:.:8:;.8234"&5&'1'&/<=*$4$>"&$-?/'<>&3?''(@@.97:.:ABC.BD"-$3*"&5&'1'&/<=*$4$>"&$-?/'<>&3?''(8:CA.@77:.:E@::.72$F'/G="&$-?/$*+'HB@.ABA.:@.@I=%&$4/=-$&$-$'(/431'#"6'/#"-';C.E;C.B78.;J#"4-$3*/3F/>3>=&"-$3*/"%31'/>31'#-?/&$*';9.B;E.78B.C,'43*+"#?/'*#3&&<'*-/#"-';9.@;9.B7C.;I#$<"#?/'*#3&&<'*-/#"-'@9.A8::.:@.;!"44$*"-$3*/431'#"6'/#"-'B;.7BC.A89.AK3&3*$"&/(-"-'/3FF$4$"&(;.E:.:877.@K3&3*$"&/(-"-'/("6'*4$'(:.9:.::.@0$(-"*4'/-3/#3?"&/#3"+(/LM<(.N79.88C.ACB.9I3>=&"-$3*/$*/8ABC/L:::N7.@7.@7.8D=<%'#/3F/*'$6O%3#(/L0'6#''N;.;;.:8.AP'3+'($4/+$(-"*4'/-3/*'$6O%3#(/LM<(.N7E.A77.E8E.EP'3+'($4/1"#$"%$&$-?/$*/'&'1"-$3*/-3/*'$6O%3#(:.A:.E:.;Q'-R''**'((/K'*-#"&$-?:.:88:.::C:.:78Q3*"4$4O/K'*-#"&$-?A9.BEB.C9E.7234"&/4&=(-'#$*6/43'FF$4$'*-:.B;:.B::.8A0$(-"*4'/-3/4=##'*-/O$6OR"?/LM<(.NC.88.;9.;23*6$-=+'5EB.A5EB.A8.;2"-$-=+';.9;.;7.B,=#F"4'/"#'"/L(G./S<(N99@.C7EC.;8B7;.8T&'1"-$3*/L<-(.N87:9.E879;.:A@E.EU1'#"6'/"**="&/#"$*F"&&/L<<.N8A@B.989C:.;8:9E.8I3>=&"-$3*/L:::NCE.B8C.A7::.;D=<%'#/3F/<=*$4$>"&$-$'(8:8@,"<>&'/<'"*V/<'+$"*/"*+/(-"*+"#+/+'1$"-$3*/F3#/3=#/<"$*/1"#$"%&'(./I&'"('/(''/-O'/-'H-/F3#/1"#$"%&'/+'F$*$-$3*(/"*+/(3=#4'(.!"#$%&'(&)%*+,-./-0%&1/"/-*/-+*K31"#$"-'(W$(-3#$4"&/1"#$"%&'(I#3(>'#$-?,-"-'/4">"4$-?D'-R3#S/1"#$"%&'(!"#$%&'()!*+,-.+/0123.45+26+76839+763/1!*:::"*+;50<=>671?+3@573<5+/0123.45+26+76839+763/1:*"(#!*:::#*+;50<=>671+6A+.50<=>671?+/0123.45+26+76839+763/1:*:$%:*&!%!*:::$*+,-.+4696.039+6AA040391B:*:)%B:*:'"B:*:$'!*:::%*+;50<=>671?+3@573<5+4696.039+6AA040391B:*!$&:*:#):*:&:B:*:&!!*:::&*+;50<=>671+6A+.50<=>671?+4696.039+6AA040391B:*:$$:*:&#:*:'"B:*:&"B:*:':!*:::'*+,-.+4696.039+12325+3<5.4051B:*!#%B:*:#)B:*:!':*%$%B:*::&B:*::"!*:::(*+;50<=>671?+3@573<5+4696.039+12325+3<5.4051B:*":(:*"%::*"(#B:*:%#:*$)::*::(:*:""!*:::)*+;50<=>671+6A+.50<=>671?+4696.039+12325+3<5.4051B:*!)#:*"$$:*##$B:*:#&:*:#!:*$:(:*:'(:*"()!*:::C677593206.1+75D6725/+375+2=5+3@573<5+347611+/5D372E5.21+6A+2=5+4677593206.1+A67+534=+/5D372E5.2*!"#$%&'(&)*+,*-&.%/"0+1%-+&2300%$"+*3-4&35&6*4+30*7"$&8+"+%&90%4%-7%&:"0*"#$%4&;<%0"=%.&;70344&>%/"0+1%-+440
-
-	  	  !"#"$%&#'#&(")%*$#+,-$.%#+%/01%0234#5$/%67897:97;97<97=97>97?97@9AB!6C6C!)+D%EFFAB!6C6C!)+D%EFF.+(G.+HIDI8>IDI8?IDI8JIDI:IIDI:8IDI::IDI::IDI8>7IDII:97IDII;97IDII;97IDII;97IDII;97IDII<97IDII<97IDII;9.+(G.&0/05(#/%+"#"$%022(&(#/+(ID8:?ID8:@ID8I@KIDI<IID8:JID8;IID8I=IDI@?7IDI;897IDI;897IDI;;97IDI=I97IDI<;97IDI<;97IDI<?97IDI>J9.+(G.&0/05(#/%+"#"$%#1$5&($+(IDII;IDII8KIDI8>IDIJ>IDI8?IDI8?KIDII:IDI@=7IDI;;97IDI;;97IDI;;97IDI==97IDI=@97IDI=J97IDI>I97IDI@=9.+(G..(+"#5&$%"0%-0)#/%-0#.+(IDII@IDI8IIDII?IDI?<KIDI;=KIDI;=KIDI;@KIDI;>7IDI8J97IDI8J97IDI:897IDI;<97IDI;<97IDI;=97IDI;>97IDI<<94#5$/%66L$(1MN0-+O%&0/05(#/%+"#"$%022(&(#/+ID;:IID;;@ID==>ID>;?7IDIJ>97ID8II97ID8<;97ID8==9L$(1MN0-+O%&0/05(#/%+"#"$%#1$5&($+8D:?=8D:<:8D>?;8D>;87ID8:>97ID8;897ID:8897ID::;9L$(1MN0-+O%.(+"#5&$%"0%-0)#/%-0#.+K8DI;8KIDJJ:K8D<J?K8D<=>7ID:8J97ID::;97ID:?@97ID:@?9L$(1MN0-+%02%5$(1MN0-+O%&0/05(#/%+"#"$%022(&(#/+ID:IJID:>JID;88ID<:?7ID8?I97ID8??97ID:<I97ID:=@9L$(1MN0-+%02%5$(1MN0-+O%&0/05(#/%+"#"$%#1$5&($+ID><JID=>@8DI@=IDJ;?7ID8@897ID8JI97ID:><97ID:@89L$(1MN0-+%02%5$(1MN0-+O%.(+"#5&$%"0%-0)#/%-0#.+ID8?@ID8?:ID:>@ID:J>7ID8>J97ID8?;97ID:;897ID:;>9P(-+"K+"#1$%Q:ID>@8ID>?8ID>@8ID>=@PK"$+"%20-%$R&/,.$.%(5+"-,*$5"+38?DI8<=D>8JD==8?8DIPK"$+"%'KS#/,$IDIIIIDIIIIDIIIIDIIIAS$-(.$5"(2(&#"(05%"$+"3%%%%%%%%%%%%%%%%T$+"%+"#"(+"(&<DI=;>D;=I<D;JJ=D??=UM(K+V,#-$.7:9%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%4KS#/,$ID=<:ID;@=ID<J<ID<<JB01%'0',/#"(05U05"-0/U05"-0/65+"-,*65+"-,*U05"-0/U05"-0/65+"-,*65+"-,*AN+$-S#"(05+J?=J?=J?=J>;8I8?8I8?8I8?8II;L,*N$-%02%*,5(&('#/(")%$*'/0)$$+!"#$%&'(&)*+,%-.*/"/0&1,",%&2345$5#/54-&6%7,&8%7.*+7%&L,*N$-%02%+"#"$%#1$5&($+WV,(/(N-(,*%N$+"%-$+'05+$P(-+"%+"#1$%20-%9(7:97X//-$'0-"$.$+"(*#"$+#-$#S$-#1$*#-1(5#/$22$&"+DX//*0.$/+(5&/,.$.$'#-"*$5"2(R$.$22$&"+#5."M$20//0Y(51S$&"0-02&05"-0/+3/051(",.$Z/#"(",".$Z+,-2#&$#-$#Z$/$S#"(05Z#55,#/-#(52#//Z.(+"#5&$"0&,--$5"M(1MY#)Z#5.#.$'#-"*$5"&#'("#/.,**)DU0/,*5+8K<,+$"M$/015,*N$-02/0&#/+"#"$#1$5&($+#+"M$*$#+,-$02+"#"$&#'#&(")Z#5.&0/,*5+=K@,+$"M$/015,*N$-02*,5(&('#/(")$*'/0)$$+#+"M$*$#+,-$02+"#"$&#'#&(")D4#5$/6-$'0-"+"M$$+"(*#"$+02"M$N$+"-$+'05+$$V,#"(05Z#5.4#5$/66-$'0-"+"M$2(-+"+"#1$20-"M$(5+"-,*$5"#/S#-(#N/$+*0.$/+02&0/,*5+:Z;Z>Z#5.?D65"M$*0.$/+-$'0-"$.(5&0/,*5+:#5.>Z/01'0',/#"(05(+"-$#"$.#+$R01$50,+D%65%"M$%*0.$/+%-$'0-"$.%(5%&0/,*5+%;Z%<Z%?Z%#5.%@Z%/01%'0',/#"(05%(+%(5+"-,*$5"$.%,+(51%8@<;%'0',/#"(05D%F0.$/+%(5%&0/,*5%<%#-$%$+"(*#"$.%#+%#%+)+"$*%"01$"M$-%Y("M"M0+$-$'0-"$.(5&0/,*5+<Z@Z8:Z#5.8>02T#N/$<XDF0.$/+(5&0/,*5@#-$$+"(*#"$.Y("MEFF#+#+)+"$*"01$"M$-Y("M"M0+$-$'0-"$.(5&0/,*5+<Z@Z8:Z#5.8>02T#N/$<[D!"#5.#-.$--0-+-$'0-"$.(5'#-$5"M$+(+#-$-0N,+""0#-N("-#-)M$"$-0+\$.#+"(&(")#5.#//0Y20-#-N("-#-)+'#"(#/&0--$/#"(05Y("M(5"M$5$"Y0-\20//0Y(51U05/$)78JJ>9#.#'"$."0"M$5$"Y0-\+"-,&",-$#+.$+&-(N$.(5"M$"$R"DP0-*0.$/+Y("M*0-$"M#505$$5.01$50,+-(1M"KM#5.K+(.$S#-(#N/$Z"M$PK"$+"(+&0--$&"$.%20//0Y(51%X51-(+"%#5.%4(+&M\$%7:IIJ9D41
-
-	  !"#"$%"$&'()*+),-".)$"-'/012032042052062072082092:;</=/=<>?@'ABB:;</=/=<>?@'ABB%#+C%?+D@9D3D@4E5D@49ED@415D@7D3D@674D@678D@4150D@D5520D@14620D@15420D@D5120D@D4820D@13820D@14520D@D512%#+C%?FD@D16D@D35D@D36D@D36D@D33D@D3DD@D3DD@D380D@DD520D@DD720D@DD720D@DD520D@DD520D@DD720D@DD720D@DD42.)$"-'//GH&"?&'IJ*'"KL-M%"%'+$?&*MN"$&?41@3446@4E41@D146@D7GH&"?&'#H()-M"D@DDDD@DDDD@DDDD@DDDG+*?&H?&)O"'P3D@78DD@766D@78DD@766G+*?&H?&)O"'-+$")*'NJ%"-GH&"?&'IJ*'"KL-M%"%'+$?&*MN"$&?637@8634@8635@7633@1GH&"?&'#H()-M"D@DDDD@DDDD@DDDD@DDDG+*?&H?&)O"'P3D@87ED@88DD@87ED@88D;JO'#J#M-)&+J$QJ$&*J-QJ$&*J-/$?&*MN/$?&*MNQJ$&*J-QJ$&*J-/$?&*MN/$?&*MN:,?"*()&+J$?E84E84E84E74E86E86E86E74!"#"$%"$&'()*+),-".)$"-'/0E201D2011201320142015201620172:;</=/=<>?@'ABB:;</=/=<>?@'ABB%#+C%?+D@63DD@453D@464D@415D@616D@189D@334D@4150D@D4920D@15120D@15820D@D5120D@D5E20D@18E20D@19720D@D512%#+C%?FD@D1ED@D31D@D31D@D31D@D34D@D47D@D46D@D460D@DD520D@DD720D@DD720D@DD420D@DD620D@DD820D@DD820D@DD52.)$"-'//GH&"?&'IJ*'"KL-M%"%'+$?&*MN"$&?41@D146@D74D@5746@8DGH&"?&'#H()-M"D@DDDD@DDDD@DDDD@DDDG+*?&H?&)O"'P3D@78DD@766D@786D@773G+*?&H?&)O"'-+$")*'NJ%"-GH&"?&'IJ*'"KL-M%"%'+$?&*MN"$&?635@7633@168E@4694@1GH&"?&'#H()-M"D@DDDD@DDDD@DDDD@DDDG+*?&H?&)O"'P3D@87ED@88DD@881D@884;JO'#J#M-)&+J$QJ$&*J-QJ$&*J-/$?&*MN/$?&*MNQJ$&*J-QJ$&*J-/$?&*MN/$?&*MN:,?"*()&+J$?E86E86E86E74E76E76E76E74R--*"#J*&"%"?&+N)&"?)*")("*)O"N)*O+$)-"II"L&?@R--NJ%"-?+$L-M%"%"#)*&N"$&I+K"%"II"L&?)$%&S"IJ--JT+$O("L&J*JILJ$&*J-?U-J$O+&M%"V-)&+&M&%"V?M*I)L")*")V"-"()&+J$V)$$M)-*)+$I)--V%+?&)$L"&JLM**"$&S+OST)>V)$%)%"#)*&N"$&L)#+&)-%MNN>@.)$"-/*"#J*&?&S""?&+N)&"?JI&S"#*J?#"*+&>"WM)&+J$IJ*")LSJI&S"IJM*JM&LJN"?V)$%.)$"-//*"#J*&?&S"GH&"?&?IJ*FJ+$&?+O$+I+L)$L"JI&S""KL-M%"%+$?&*MN"$&?+$&S"I+*?&?&)O"?IJ*&S"+$?&*MN"$&)-()*+),-"?NJ%"-?JILJ-MN$?3V4V7V8V1DV11V15V)$%16@XS"-+I"WM)-+&>+$%"K+?IJ*1EE9V&S"#M,-+LM&+-+&+"?LJ("*)O"0)WM"%ML&V"-"L&*+L+&>V)$%?"T)O"2+?IJ*3DD3V&S"I*)L&+J$JI&S"#J#M-)&+J$),J("&S"#J("*&>-+$"+?IJ*3DD6V)$%&S"?"LJ$%)*>"$*J--N"$&*)&"+?&S"1EE3H3DD3)("*)O"@R--#*J?#"*+&>JM&LJN"?)*"?&)$%)*%+Y"%@/$&S"NJ%"-?*"#J*&"%+$LJ-MN$?3V7V1DV)$%15V-JO#J#M-)&+J$+?&*")&"%)?"KJO"$JM?@/$&S"NJ%"-?*"#J*&"%+$LJ-MN$?4V5V8V9V11V13V16V)$%17V-JO#J#M-)&+J$+?+$?&*MN"$&"%M?+$O1954#J#M-)&+J$@BJ%"-?+$LJ-MN$?5V9V13V)$%17)*""?&+N)&"%T+&SABB)?)?>?&"N&JO"&S"*T+&S&SJ?"*"#J*&"%+$LJ-MN$5JIX),-"4@<&)$%)*%"**J*?*"#J*&"%+$#)*"$&S"?+?)*"*J,M?&&J)*,+&*)*>S"&"*J?Z"%)?&+L+&>')$%')--JT'IJ*')*,+&*)*>'?#)&+)-'LJ**"-)&+J$'T+&S+$'&S"'$"&TJ*Z'IJ--JT+$O'QJ$-">'01EE72')%)#&"%'&J'&S"'$"&TJ*Z'?&*ML&M*"')?'%"?L*+,"%'+$'&S"'&"K&@'GJ*'NJ%"-?'T+&S'NJ*"'&S)$'J$"'"$%JO"$JM?'*+OS&HS)$%H?+%"'()*+),-"V'&S"'GH&"?&'+?'LJ**"L&"%'IJ--JT+$O'R$O*+?&')$%'.+?LSZ"'03DDE2@G+*?&'?&)O"'IJ*'!+0"2#.*J?#"*+&>'"WM)&+J$G+*?&'?&)O"'IJ*'?+3$%&'()*+,)-./#0(.123)%45)-6&'17)8//5#)92.6726.%'):;6%21/492%2()7%0%7123)<(%#6.(5)%#=)'/>)/?)46<&(.)/?)<641710%'123)#2%2()%>(471(#;+I"'WM)-+&>'+$%"K.M,-+L'M&+-+&+"?'LJ("*)O".*J?#"*+&>'"WM)&+J$G+*?&'?&)O"'IJ*'?+3G+*?&'?&)O"'IJ*'!+0"2#92%2()7%0%7123)<(%#6.(5)%#=)'/>)/?)46<&(.)/?)<641710%'123)#2%2()%>(471(#[J&'+$'#J("*&><"LJ$%)*>'"$*J--N"$&42
-
-	  !"#"$%"$&'()*+),-".)$"-'/012032042052062072082092:;</=/=<>?@'ABB:;</=/=<>?@'ABB%#+C%?+D@589D@358D@333D@31DD@374D@4E6D@41DD@31D0D@D3420D@DE320D@DED20D@D3420D@D3320D@11120D@1D420D@D342%#+C%?FD@D16D@D3DD@D33D@D3DD@D3DD@D14D@D18D@D1E0D@DD420D@DD620D@DD620D@DD420D@DD320D@DD620D@DD620D@DD32.)$"-'//GH&"?&'IJ*'"KL-M%"%'+$?&*MN"$&?14@7938@5514@3938@53GH&"?&'#H()-M"D@DDDD@DDDD@DDDD@DDDG+*?&H?&)O"'P3D@681D@687D@68DD@686G+*?&H?&)O"'-+$")*'NJ%"-GH&"?&'IJ*'"KL-M%"%'+$?&*MN"$&?461@456E@5455@5568@5GH&"?&'#H()-M"D@DDDD@DDDD@DDDD@DDDG+*?&H?&)O"'P3D@86ED@869D@86ED@869;JO'#J#M-)&+J$QJ$&*J-QJ$&*J-/$?&*MN/$?&*MNQJ$&*J-QJ$&*J-/$?&*MN/$?&*MN:,?"*()&+J$?1D151D151D151DD41D181D181D181DD4!"#"$%"$&'()*+),-".)$"-'/0E201D2011201320142015201620172:;</=/=<>?@'ABB:;</=/=<>?@'ABB%#+C%?+D@344D@4D6D@386D@31DD@333D@155D@317D@31D0D@D3120D@11E20D@11120D@D3420D@D3620D@14920D@14420D@D342%#+C%?FD@D1ED@D14D@D15D@D17D@D3DD@D35D@D33D@D350D@DD420D@DD620D@DD620D@DD320D@DD420D@DD720D@DD720D@DD42.)$"-'//GH&"?&'IJ*'"KL-M%"%'+$?&*MN"$&?14@3938@5315@9E3E@71GH&"?&'#H()-M"D@DDDD@DDDD@DDDD@DDDG+*?&H?&)O"'P3D@68DD@686D@696D@6E8G+*?&H?&)O"'-+$")*'NJ%"-GH&"?&'IJ*'"KL-M%"%'+$?&*MN"$&?455@5568@5489@35E6@4GH&"?&'#H()-M"D@DDDD@DDDD@DDDD@DDDG+*?&H?&)O"'P3D@86ED@869D@878D@879;JO'#J#M-)&+J$QJ$&*J-QJ$&*J-/$?&*MN/$?&*MNQJ$&*J-QJ$&*J-/$?&*MN/$?&*MN:,?"*()&+J$?1D181D181D181DD41DD71DD71DD71DD4G+*?&'?&)O"'IJ*'?+3!"#$%&'()&*+,-.%+/01&"23&*4#$/5&6,,3-&70+4504+"$&894"0/,270"0%&5"."5/01&:%"-4+%3&"-;&$,<&,=&24:#%+&,=&:42/5/."$/01&%:.$,1%%-;+I"'RM)-+&>'+$%"K.M,-+L'M&+-+&+"?'LJ("*)O".*J?#"*+&>'"RM)&+J$G+*?&'?&)O"'IJ*'>+0?2-S--*"#J*&"%"?&+N)&"?)*")("*)O"N)*O+$)-"II"L&?@S--NJ%"-?+$L-M%"%"#)*&N"$&I+K"%"II"L&?)$%&T"IJ--JU+$O("L&J*JILJ$&*J-?V-J$O+&M%"W-)&+&M&%"W?M*I)L")*")W"-"()&+J$W)$$M)-*)+$I)--W%+?&)$L"&JLM**"$&T+OTU)>W)$%)%"#)*&N"$&L)#+&)-%MNN>@.)$"-/*"#J*&?&T""?&+N)&"?JI&T"#*J?#"*+&>"RM)&+J$IJ*")LTJI&T"IJM*JM&LJN"?W)$%.)$"-//*"#J*&?&T"GH&"?&?IJ*FJ+$&?+O$+I+L)$L"JI&T""KL-M%"%+$?&*MN"$&?+$&T"I+*?&?&)O"?IJ*&T"+$?&*MN"$&)-()*+),-"?NJ%"-?JILJ-MN$?3W4W7W8W1DW11W15W)$%16@XT"-+I"RM)-+&>+$%"K+?IJ*1EE9W&T"#M,-+LM&+-+&+"?LJ("*)O"0)RM"%ML&W"-"L&*+L+&>W)$%?"U)O"2+?IJ*3DD3W&T"I*)L&+J$JI&T"#J#M-)&+J$),J("&T"#J("*&>-+$"+?IJ*3DD6W)$%&T"?"LJ$%)*>"$*J--N"$&*)&"+?&T"1EE3H3DD3)("*)O"@S--#*J?#"*+&>JM&LJN"?)*"?&)$%)*%+Y"%@/$&T"NJ%"-?*"#J*&"%+$LJ-MN$?3W7W1DW)$%15W-JO#J#M-)&+J$+?&*")&"%)?"KJO"$JM?@/$&T"NJ%"-?*"#J*&"%+$LJ-MN$?4W5W8W9W11W13W16W)$%17W-JO#J#M-)&+J$+?+$?&*MN"$&"%M?+$O1954#J#M-)&+J$@BJ%"-?+$LJ-MN$?5W9W13W)$%17)*""?&+N)&"%U+&TABB)?)?>?&"N&JO"&T"*U+&T&TJ?"*"#J*&"%+$LJ-MN$9JIX),-"4@<&)$%)*%"**J*?*"#J*&"%+$#)*"$&T"?+?)*"*J,M?&&J)*,+&*)*>T"&"*J?Z"%)?&+L+&>')$%')--JU'IJ*')*,+&*)*>'?#)&+)-'LJ**"-)&+J$'U+&T+$'&T"'$"&UJ*Z'IJ--JU+$O'QJ$-">'01EE72')%)#&"%'&J'&T"'$"&UJ*Z'?&*ML&M*"')?'%"?L*+,"%'+$'&T"'&"K&@'GJ*'NJ%"-?'U+&T'NJ*"'&T)$'J$"'"$%JO"$JM?'*+OT&HT)$%H?+%"'()*+),-"W'&T"'GH&"?&'+?'LJ**"L&"%'IJ--JU+$O'S$O*+?&')$%'.+?LTZ"'03DDE2@G+*?&'?&)O"'IJ*'>+0?2-70"0%&5"."5/01&:%"-4+%3&"-;&$,<&,=&24:#%+&,=&:42/5/."$/01&%:.$,1%%-[J&'+$'#J("*&><"LJ$%)*>'"$*J--N"$&.*J?#"*+&>'"RM)&+J$G+*?&'?&)O"'IJ*'?+343
-
-	  	  	  !"#$%&'"!"()*"%&$+,*%*-(*,.&/0"#1$&*#23(4.&543(4.&543(4.&543(4.&543(4.&5460"#1$&*#&.$7*"#28989:;<9:=<9>?<?>@<A>@<8B9<9>B<B>=<A!"#$%&'-C$#$("%&$+,*%*-(*,.&/0"#1$&*#23(4.&543(4.&543(4.&543(4.&543(4.&5460"#1$&*#&.$7*"#289A9<B:;<9>;<A>?<?@?<@>@<8B;<?>B<B;A<:!"#$%&''"!"()*"%&$+,*%*-(*,.&/0"#1$&*#23(4.&543(4.&543(4.&543(4.&543(4.&548989:;<9>8<9>?<?>B<;>@<8B8<;>B<B>=<9!"#$%&''-C$#$("%&$+,*%*-(*,.&/0"#1$&*#23(4.&543(4.&543(4.&543(4.&543(4.&5460"#1$&*#&.$7*"#289A?<::;<9B9<A>?<?B?<:>@<8@8<?>B<BB8<>!"#$%&'()*$+'3("/)*4#&7,$&)4&7*($/)&$DD$/)2E*D$&+,"%*)F&*#7$GH)*%*)*$I&/4J$("1$K&#4)&*#&L4J$()FM$/4#7"(F&$#(4%%<=<;K8;<=KA><>K89<8K:B<BKH)*%*)*$I&/4J$("1$:?<9K>:<>KE4/"%&"1$#/*$I2E4/"%&"1$#/*$I2E*D$&+,"%*)F&*#7$G>?<:K>8<@K:;<?K3("/)*4#&7,$&)4&4N#&$DD$/)23("/)*4#&7,$&)4&IL*%%4J$(I2=9<AK;8<8K@:<>K;=<=KK&#4)&*#&L4J$()FM$/4#7"(F&$#(4%%<50*I)"-%$($L4()I($I,%)ID(4."#$GL$(*.$#))0"))"O$I"%%.,#*/*L"%*)*$I-$%4N.$7*"#I)")$/"L"/*)F)4)0$.$7*"#P,I*#1)0$$I)*.")$7L"(".$)$(I4D)0$.47$%I.$"I,(*#1I)")$/"L"/*)F"I)0$#,.-$(4D%4/"%I)")$"1$#/*$I<!"#$%'($L4()I)0$.$7*"#I4D)0$$.L*(*/"%"#7/4,#)$(D"/),"%7*I)(*-,)*4#I,I*#1)0$I)(,/),("%L"(".$)$(I4D)0$%*#$"(.47$%$I)*.")$7N*)0CQQ"I"IFI)$.<!"#$%''($L4()I)0$.$7*"#I4D)0$$.L*(*/"%"#7/4,#)$(D"/),"%7*I)(*-,)*4#I,I*#1)0$I)(,/),("%L"(".$)$(I4D)0$#4#%*#$"(.47$%$I)*.")$7N*)0MQQ<!"#$%I'""#7''"($L4())0$.$7*"#ID4()0$L"()*"%$+,*%*-(*,.$G$(/*I$N0$($.,#*/*L"%*)*$IR-$I)($IL4#I$I"($0$%7D*G$7<!"#$%I'-"#7''-($L4())0$D,%%$+,*%*-(*,.($IL4#I$ISN0$#"%%.,#*/*L"%*)*$I-$I)($IL4#7)4)0$*#/($"I$*#I)")$/"L"/*)F".4#1)0$.,#*/*L"%*)*$I-$%4N.$7*"#I)")$/"L"/*)FT<50$%*D$+,"%*)F*#7$G*ID4(8==;P)0$L,-%*/,)*%*)*$I/4J$("1$S"+,$7,/)P$%$/)(*/*)FP"#7I$N"1$T*ID4(A99AP)0$D("/)*4#&4D&)0$&L4L,%")*4#&"-4J$&)0$&L4J$()F&%*#$&*I&D4(&A99>P&"#7&)0$&I$/4#7"(F&$#(4%%.$#)&(")$&*I&)0$&8==AUA99A&"J$("1$<,%-+$'./'012$&"($#34'5(2+"6%3")#7')8'9):"#;'<++'9=#"6"2%+"3"$7'-$+)>'9$*"%#'?3%3$'@%2%6"3A'3)'9$*"%#3("/)*4#&7,$&)4&#$)N4(O&$DD$/)I2E4/"%&"1$#/*$I2E*D$&+,"%*)F&*#7$GH)*%*)*$I&/4J$("1$K&#4)&*#&L4J$()FM$/4#7"(F&$#(4%%<B)#+"#$%&'()*$+'C=#*$&'?99'2%&%($3$&'$73"(%3$7DE4/"%&"1$#/*$I2E*D$&+,"%*)F&*#7$GH)*%*)*$I&/4J$("1$K&#4)&*#&L4J$()FM$/4#7"(F&$#(4%%<>@<8K:><>K!"#"$%&#'#&(")%*$#+,-$.%#+%/01%0234#5$/%67897:97;97<97=97>97?97@9AB!6CAB!6CAB!6CAB!6C.'(D.+(EFGF<HFG8H@FGF8=FG:>FEFGFF?FG;==FGF8;FG8;<7FGF=897FG:F?97FGF<>97FG8HH97FGF:?97FG8=<97FGF:=97FG8<;9.'(D.+IFGFF8EFGFF:FGFF<EFGFF:FGFFFEFGF88EFGFF:EFGFF=7FGFF=97FGFF?97FGFF=97FGFF@97FGFF;97FGFF?97FGFF;97FGFF>94#5$/%66JE"$+"%20-%$K&/,.$.%(5+"-,*$5"+;>G<8;=GF>:HG;;:?G<:JE"$+"%'EL#/,$FGFFFFGFFFFGFFFFGFFFJ(-+"E+"#1$%M:FG>>;FG>==FG=H?FG=?=JE"$+"%20-%$K&/,.$.%(5+"-,*$5"+=@=GF=::G8<HFG=<=?G<JE"$+"%'EL#/,$FGFFFFGFFFFGFFFFGFFFJ(-+"E+"#1$%M:FG??;FG??FFG?>@FG?=@AN+$-L#"(05+H>;H>;H?=H?=8FF<8FF<8F8?8F8?!"#$%&'(&)$"*%#+&,-%.*/0%1&2"3/+4"$$5&6%3%.7/4%8&).+09%./35&"48&):#$/*&;++80&<:3*+7%0&=3.:*3:."$&,>:"3/+4O//-$'0-"$.$+"(*#"$+#-$#L$-#1$*#-1(5#/$22$&"+GO//*0.$/+(5&/,.$.$'#-"*$5"2(K$.$22$&"+#5."P$20//0Q(51L$&"0-02&05"-0/+3/051(",.$R/#"(",".$R+,-2#&$#-$#R$/$L#"(05R#55,#/-#(52#//R.(+"#5&$"0&,--$5"P(1PQ#)R#5.#.$'#-"*$5"&#'("#/.,**)GS0/,*5+8E<-$'0-"$+"(*#"$+20-*0.$/+,+(51"P$5,*N$-02*,5(&('#/(")#1$5&($+#+"P$*$#+,-$02+"#"$&#'#&(")R#5.&0/,*5+=E@-$'0-"$+"(*#"$+20-*0.$/+,+(51"P$5,*N$-02*,5(&('#/(")$*'/0)$$+#+"P$*$#+,-$02+"#"$&#'#&(")G4#5$/6-$'0-"+"P$$+"(*#"$+02"P$'-0+'$-(")$T,#"(0520-$#&P02"P$"Q0'/#&$N00,"&0*$+R#5.4#5$/66-$'0-"+"P$JE"$+"+20-I0(5"+(15(2(&#5&$02"P$$K&/,.$.(5+"-,*$5"+(5"P$2(-+"+"#1$+20-"P$(5+"-,*$5"#/L#-(#N/$+*0.$/+02&0/,*5+:R<R>R#5.@GUP$'-(*#-)$5-0//*$5"-#"$(+"P$8HH:E:FF:#L$-#1$R#5.L#&&(5#"(05&0L$-#1$(+20-8HH@GO//'-0+'$-(")0,"&0*$+#-$+"#5.#-.(V$.G65"P$*0.$/+-$'0-"$.(5&0/,*5+:R<R>R#5.@R/01'0',/#"(05(+(5+"-,*$5"$.,+(518@<;'0',/#"(05G!"#5.#-.%$--0-+%-$'0-"$.%(5%'#-$5"P$+(+%#-$%-0N,+"%"0%#-N("-#-)%P$"$-0+W$.#+"(&(")%#5.%#//0Q%20-%#-N("-#-)%+'#"(#/%&0--$/#"(05%Q("P(5%"P$%5$"Q0-W%20//0Q(51%S05/$)%78HH>9%#.#'"$."0"P$5$"Q0-W+"-,&",-$#+.$+&-(N$.(5"P$"$K"GJ0-*0.$/+Q("P*0-$"P#505$$5.01$50,+-(1P"EP#5.E+(.$L#-(#N/$R"P$JE"$+"(+&0--$&"$.20//0Q(51O51-(+"%#5.%4(+&PW$%7:FFH9G4-0+'$-(")%$T,#"(05J(-+"%+"#1$%05%+(:J(-+"%+"#1$%05%2(7?90X,*N$-%02%*,5(&('#/(")%+"#"$%#1$5&($+X,*N$-%02%*,5(&('#/(")%$*'/0)$$+4-(*#-)%$5-0//*$5"C#&&(5#"(05%&0L$-#1$4-(*#-)%$5-0//*$5"C#&&(5#"(05%&0L$-#1$44
-
-	  	  	  !"#$%&'()*$&+,"%)-.&)#/$0!,1%)2&,-)%3&245$6"7$84-&)#&945$6-.:$23&$#64%%;$#-<=><?><@><A>B(:B(:B(:B(:8$)7C146DE&24%4#)"%&D-"-$&4**)2)"%DFG3?HIFG3J?=G3=K?G3@AK<G3AG@><G3AGG><G3AKK><G3JLG>8$)7C146DE&24%4#)"%&D-"-$&"7$#2)$D=3LLK=3@=I=3H=K=3IJA<G3JAG><G3JIA><G3J?I><G3LJL>8$)7C146DE&/)D-"#2$&-4&64."%&64"/DF=3@J?F=3IAJFG3HGGF=3I@A<G3@I?><G3@A?><G3@GL><G3AL@>MF-$D-&*46&N4)#-&D)7#)*)2"#2$&4*&)#D-6,;$#-D=?3J@=G3?IL3JKK3@HMF-$D-&9F5"%,$G3GGGG3GGGG3GGGG3GGGO4#-64%&*46&%47&949,%"-)4#P$DP$DP$DP$DB1D$65"-)4#DIH@IH@IH@IH@!"#$%&''<=><?><@><A>B(:B(:B(:B(:8$)7C146DE&24%4#)"%&D-"-$&4**)2)"%DG3L=KG3H@LFG3JLKFG3JA=<G3J??><G3J=K><G3JIK><G3JH=>8$)7C146DE&24%4#)"%&D-"-$&"7$#2)$DFG3ALKFG3JAJ=3JJ@=3J@?<G3IKL><G3IK?><G3K@I><G3KAJ>8$)7C146DE&/)D-"#2$&-4&64."%&64"/DFG3@JGFG3@LLFG3@H@FG3@K?<G3IJA><G3IAI><G3IKI><G3IKL>MF-$D-&*46&N4)#-&D)7#)*)2"#2$&4*&)#D-6,;$#-DG3KH=3?J=3JL=3JIMF-$D-&9F5"%,$G3AG=G3?HKG3=KAG3=KLO4#-64%&*46&C)D-46)2"%&=HA@&949,%"-)4#84P$D84P$DB1D$65"-)4#DIH@IH@IH@IH@Q%%6$946-$/$D-);"-$D"6$"5$6"7$;"67)#"%$**$2-D3!"#$%'6$946-D-C$$D-);"-$D4*"6$/,2$/*46;6$76$DD)4#4*-C$*4,6964D9$6)-.4,-24;$D4##$)7C146DE&24%4#)"%&D-"-$R&"#/&!"#$%&''&6$946-D&-C$&$D-);"-$D&4*&"&6$/,2$/&*46;&6$76$DD)4#&4*&-C$&C)D-46)2"%&<=K=H>&964D9$6)-.&4,-24;$D&4#&#$)7C146DE&24%4#)"%D-"-$3S4/$%D)#!"#$%')#2%,/$/$9"6-;$#-*)0$/$**$2-D"#/-C$*4%%4T)#75$2-464*24#-64%DU%4#7)-,/$R%"-)-,-/$RD,6*"2$"6$"R$%$5"-)4#R"##,"%6")#*"%%R/)D-"#2$-42,66$#-C)7CT".R"#/"/$9"6-;$#-2"9)-"%/,;;.3S4/$%D)#!"#$%''/4#4-24#-64%*46-C$/)D-"#2$-4"2,66$#-C)7CT".3'#-C$;4/$%D4*24%,;#D?"#/A)#!"#$%''RC)D-46)2"%<=HA@>949,%"-)4#)D)#2%,/$/"D"#"//)-)4#"%24#-64%3Q%%964D9$6)-.4,-24;$D"6$D-"#/"6/)V$/3Q%%;4/$%D,D$-C$6$D-6)2-$/D";9%$4*;,#)2)9"%)-)$D*46TC)2C=K=H/"-")D"5")%"1%$3:-"#/"6/$6646D6$946-$/)#9"6$#-C$D)D"6$641,D--4"61)-6"6.C$-$64DW$/"D-)2)-."#/"%%4T*46"61)-6"6.D9"-)"%2466$%"-)4#T)-C)#-C$#$-T46W*4%%4T)#7O4#%$.<=KKI>"/"9-$/-4-C$#$-T46WD-6,2-,6$&"D&/$D26)1$/&)#&-C$&-$0-3!"##$%&'(")*+$',$$)*-.##$)'*/#"0/$#('1*&)2*()0'#.3$)'04&+%$*56*7%&-$+"*89$#-(0$:*!.##$)'*;06*<(0'"#(-&%*7#"0/$#('1X$/,2$/&*46;()-$6"2.&6"-$&)#&=K=H:2C44%)#7&6"-$&)#&=K=HX$/,2$/&*46;!"##$%&'(")*+$',$$)*=(0'"#(-&%*>?@?AB*/#"0/$#('1*&)2*()0'#.3$)'045
-
-	  	  	  !"#$%&'"()*(+*(,*(-*(.*(/*(0*(1*234'5234'5234'5234'567896:8;<//=;<)-.;<../;<,/;;<-.0;<)==;<-+/;<);/(;<;--*(;<;=/*(;<;,.*(;<;1,*(;<;,1*(;<;=/*(;<;.)*(;<))1*67896:>;<;).;<;,);<;+);<;+-;<;)=;<;+.;<;+,;<;,1(;<;;-*(;<;;/*(;<;;,*(;<;;.*(;<;;-*(;<;;.*(;<;;.*(;<;;0*!"#$%&'?@AB$:B&CDE&$FG%H6$6&8#:BEHI$#B:/.<-;/.<)0/.<)0/0<0;@AB$:B&7AJ"%H$;<;;;;<;;;;<;;;;<;;;@8E:BA:B"K$&L+;<-+0;<-+/;<-+/;<-+=@AB$:B&CDE&$FG%H6$6&8#:BEHI$#B:/+.<./+.<=/+.<=/01<.@AB$:B&7AJ"%H$;<;;;;<;;;;<;;;;<;;;@8E:BA:B"K$&L+;<00;;<00;;<00;;<00,2?:$EJ"B8D#:=0,=0,=0.=0.=0.=0.=/.=/.!"#$%&''"&(=*();*())*()+*(),*()-*().*()/*234'5234'5234'5234'567896:8;<-/.;<))+;<+11;<+0=;<+-;;<)=/;<+)/;<)-,(;<;+-*(;<;/=*(;<;++*(;<;/0*(;<;+,*(;<;0-*(;<;+1*(;<;=+*67896:>;<;)-;<;+.;<;)1;<;)0;<;)1;<;)/;<;+;;<;+-(;<;;,*(;<;;.*(;<;;+*(;<;;-*(;<;;,*(;<;;-*(;<;;,*(;<;;.*!"#$%&''?@AB$:B&CDE&$FG%H6$6&8#:BEHI$#B:--<11--</)--</)-0<=0@AB$:B&7AJ"%H$;<;;;;<;;;;<;;;;<;;;@8E:BA:B"K$&L+;<-,1;<-,0;<-,0;<-.)@AB$:B&CDE&$FG%H6$6&8#:BEHI$#B:.+=<;.+/<=.+/<=.0)<.@AB$:B&7AJ"%H$;<;;;;<;;;;<;;;;<;;;@8E:BA:B"K$&L+;<0.1;<0.1;<0.1;<0/12?:$EJ"B8D#:);)-);)-);)0);)0);)0);)0);;/);;/M%%E$7DEB$6$:B8I"B$:"E$"J$E"K$I"EK8#"%$CC$GB:<M%%ID6$%:8#G%H6$6$7"EBI$#BC8F$6$CC$GB:"#6BN$CD%%DO8#KJ$GBDEDCGD#BED%:P%D#K8BH6$Q%"B8BHB6$Q:HEC"G$"E$"Q$%$J"B8D#Q"##H"%E"8#C"%%Q68:B"#G$BD"GHEE$#BN8KNO"RQ"#6"6$7"EBI$#BG"78B"%6HIIR<!"#$%:'""#6''"E$7DEBBN$$:B8I"B$:DC"%8#$"EA8#A:B"B$AG"7"G8BR7ED:7$E8BR$SH"B8D#CDE$"GNDCBN$CDHEDHBGDI$:Q"#6!"#$%:''""#6''?E$7DEBBN$@AB$:B:CDE>D8#B:8K#8C8G"#G$DCBN$$FG%H6$68#:BEHI$#B:8#BN$C8E:B:B"K$:CDEBN$8#:BEHI$#B"%J"E8"?%$:ID6$%:DC"%%$J$#A#HI?$E$6GD%HI#:<TD6$%:8#!"#$%'H:$BN$%DK#HI?$EDC:B"B$"K$#G8$:":BN$I$":HE$DC:B"B$G"7"G8BR<TD6$%:8#!"#$%''H:$BN$%DK#HI?$EDCIH#8G87"%8BR$I7%DR$$:":BN$I$":HE$DC:B"B$G"7"G8BR<UN$%8C$SH"%8BR8#6$F8:CDE)==1QBN$7H?%8GHB8%8B8$:GDJ$E"K$("SH$6HGBQ$%$GBE8G8BRQ"#6:$O"K$*8:CDE+;;+QBN$CE"GB8D#DCBN$7D7H%"B8D#"?DJ$BN$7DJ$EBR%8#$8:CDE+;;.Q"#6BN$:$GD#6"ER$#ED%%I$#BE"B$8:BN$)==+A+;;+"J$E"K$<M%%7ED:7$E8BRDHBGDI$:"E$:B"#6"E68V$6<'#"%%ID6$%:E$7DEB$68#$J$#A#HI?$E$6GD%HI#:Q%DK7D7H%"B8D#8:8#:BEHI$#B$6H:8#K)1-,7D7H%"B8D#<4B"#6"E6$EEDE:E$7DEB$68#7"E$#BN$:8:"E$ED?H:BBD"E?8BE"ERN$B$ED:W$6":B8G8BR"#6"%%DOCDE"E?8BE"ER:7"B8"%GDEE$%"B8D#O8BN8#BN$#$BODEWCD%%DO8#KXD#%$R()==/*"6"7B$6BDBN$#$BODEW:BEHGBHE$":6$:GE8?$68#BN$B$FB<@DEID6$%:O8BNIDE$BN"#D#$$#6DK$#DH:&E8KNBAN"#6A:86$&J"E8"?%$Q&BN$&@AB$:B&8:&GDEE$GB$6&CD%%DO8#K&M#KE8:B&"#6&!8:GNW$&(+;;=*<@8E:B&:B"K$&D#&:8@8E:B&:B"K$&D#&!8("*#38C$&SH"%8BR&8#6$F!H?%8G&HB8%<&GDJ$E"K$YDB&8#&7DJ$EBR4$GD#6"ER&$#ED%%I$#B@8E:B&:B"K$&D#&:8@8E:B&:B"K$&D#&!8("*#!ED:7$E8BR&$SH"B8D#&(%8#$"E&D#&:8*$%&'()*+),-.#/(-012)%34),5&'06)7..4#)8!%9:(8);<5%10.3=1%1()6%/%6012)>(%#5-(4)%#?)'.@).A)35>&(-).A)>53060/%'012)#1%1()%@(360(#!ED:7$E8BR&$SH"B8D#&(%8#$"E&D#&:8*38C$&SH"%8BR&8#6$F!H?%8G&HB8%<&GDJ$E"K$YDB&8#&7DJ$EBR4$GD#6"ER&$#ED%%I$#B=1%1()6%/%6012)>(%#5-(4)%#?)'.@).A)35>&(-).A)>53060/%'012)(>/'.2((#4
-6
-
-	  !"#$%&'($)*&+$),-#)$&$./"*0-#&+$)01/"%)203$&./"%0*4&0#1$5&$./"*0-#&+$)01/"%)6*0%0*0$)&7-8$+"9$&$./"*0-#&+$)01/"%):&#-*&0#&,-8$+*4&$./"*0-#&+$)01/"%);$7-#1"+4&$#+-%%<$#*&$./"*0-#&+$)01/"%)($*=$$#$))&>$#*+"%0*4?@A@B@A@C@A@@@A@C@A@DE@ACFFGE@AHC@GE@AFFIGE@AJJFGE@AJBDG(-#"707K&>$#*+"%0*4@A@I@A@I@A@C@A@C@A@IE@ADLIGE@AI@MGE@AJH@GE@AHJFGE@AIFBG2-7"%&>%/)*$+0#9@A@H@A@C@A@M@A@D@A@IE@A@D@GE@ALJCGE@ACCJGE@AMDHGE@AIDJG!?8"%/$&-3&N?*$)*&3-+&O-0#*&)09#0307"#7$E@A@L@GE@AM@JGE@ADHLGE@AMM@GE@AIILG!"#$%&''($)*&+$),-#)$&$./"*0-#&+$)01/"%)203$&./"%0*4&0#1$5&$./"*0-#&+$)01/"%)6*0%0*0$)&7-8$+"9$&$./"*0-#&+$)01/"%):&#-*&0#&,-8$+*4&$./"*0-#&+$)01/"%);$7-#1"+4&$#+-%%<$#*&$./"*0-#&+$)01/"%)($*=$$#$))&>$#*+"%0*4?@A@@M@A@CD?@A@CD@A@@D@A@CME@ALHBGE@AHCBGE@AHCCGE@AFBHGE@AJIDG(-#"707K&>$#*+"%0*4@A@IL@A@B@?@A@CJ?@A@CD@A@DFE@ADIFGE@ADC@GE@AJDJGE@AHCHGE@AIMJG2-7"%&>%/)*$+0#9@A@HJ?@A@@M@A@M@@A@ID@A@DDE@A@CHGE@ALHLGE@ACCLGE@AICHGE@ABLHG!?8"%/$&-3&N?*$)*&3-+&O-0#*&)09#0307"#7$E@A@HCGE@ABJIGE@AIMLGE@AM@HGE@AIFIG!"#$%&'(&)*%+,-,+".,/0&!%1.2&3/44%$".,/01&#%.5%%0&6%1,78"$1&"07&9%.5/4:&3%0.4"$,.;&).".,1.,+1).".%&+"*"+,.;&<%"184%7&"12&$/=&/-&08<#%4&/-&<80,+,*"$,.;&1.".%&"=%0+,%1).".%&+"*"+,.;&<%"184%7&"12&$/=&/-&08<#%4&/-&<80,+,*"$,.;&*8#$,+&%<*$/;%%1PK0)&*"Q%$&+$,-+*)&*K$&7-++$%"*0-#&7-$33070$#*)&Q$*=$$#&*K$&+$)01/"%)&-3&*K$&Q$#7K<"+R&'S&<-1$%)&0#&7-%/<#&I&-3&P"Q%$&I&"#1&7-%/<#)&IT&HT&CC&"#1&CM&-3&P"Q%$&BU&V!"#$%&'WT&"#1&&0#&7-%/<#&H&-3&P"Q%$&I&"#1&7-%/<#)&IT&HT&CC&"#1&CM&-3&P"Q%$&B(&V!"#$%&''WT&=0*K&*K$&Q$*=$$##$))&7$#*+"%0*4T&*K$&(-#"707K&7$#*+"%0*4&#$*=-+RT&"#1&*K$&%-7"%&7%/)*$+0#9&)*"*0)*07)A&PK$&"))-70"*$1&,?8"%/$)&"+$&0#&)./"+$&Q+"7R$*)A&PK$&*"Q%$&"%)-&+$,-+*)&,?8"%/$)&-3&*K$&N?*$)*)&3-+&O-0#*&)09#0307"#7$&-3&*K$&*K+$$&#$*=-+R&7$#*+"%0*4&)*"*0)*07)&0#&"&+$9+$))0-#&-3&*K$&+$)01/"%)&-#&*K$)$&)*"*0)*07)A47
-
-	  	  	  !"#"$%&#'#&(")%*$#+,-$.%#+%/01%02%3,*4$-%0256,3(&('#/(")%+"#"$%71$3&($+6,3(&('#/(")%$*'/0)$$+89:8;:<=<=.+(>.+?@A@9B@A@9C8@A@@D:8@A@@9:.+(>.&0/03(#/%+"#"$%022(&(#/+(@A9@;@A@@;8@A@D@:8@A@@C:.+(>.&0/03(#/%+"#"$%#1$3&($+(E@A@9F@A@9@8@A@D;:8@A@@B:.+(>..(+"#3&$%"0%-0)#/%-0#.+(@A@@BE@A@9@8@A@;@:8@A@@F:G4+$-H#"(03+ICJ9@9C!"#$%&'()&*+,-%./+0"01&2-"-%&3456$6#065.&7%8-&9%8/+,8%&KL,(/(4-(,*%4$+"%-$+'03+$%$L,#"(03*+,-0+$$6,:&;+0&,"-6+,"$<$%=%$&#50%"5>0">17//-$'0-"$.$+"(*#"$+#-$#H$-#1$*#-1(3#/$22$&"+02"M$4$+"-$+'03+$$L,#"(03A7//*0.$/+(3&/,.$.$'#-"*$3"2(N$.$22$&"+#3.(3#..("(03"0"M$3,*4$-023#"(03#/E/$H$/',4/(&$*'/0)$$+O"M$20//0P(31H$&"0-02&03"-0/+5/031(",.$O/#"(",".$O+,-2#&$#-$#O$/$H#"(03O#33,#/-#(32#//O.(+"#3&$"0#&,--$3"M(1MP#)O#3.#.$'#-"*$3"&#'("#/.,**)AQ0/,*39,+$+"M$/013,*4$-02/0&#/+"#"$#1$3&($+#+"M$*$#+,-$02+"#"$&#'#&(")O#3.&0/,*3;,+$+"M$/013,*4$-02*,3(&('#/(")$*'/0)$$+#+"M$*$#+,-$02+"#"$&#'#&(")ARM$2(-+"+"#1$+02"M$(3+"-,*$3"#/H#-(#4/$+*0.$/+#-$0*(""$.AS01'0',/#"(03(+(3+"-,*$3"$.,+(319BFD'0',/#"(03A!"#3.#-.$--0-+-$'0-"$.(3'#-$3"M$+(+#-$-04,+""0#-4("-#-)M$"$-0+T$.#+"(&(")#3.#//0P20-#-4("-#-)+'#"(#/&0--$/#"(03P("M(3"M$3$"P0-T20//0P(31Q03/$)89IIU:#.#'"$.%"0%"M$%3$"P0-T%+"-,&",-$%#+%.$+&-(4$.%(3%"M$%"$N"A!"#"$%"$&'()*+),-"./+0"'12)-+&3'+$%"45&+-+&+"6'78("*)9":8&'+$'#8("*&3;"78$%)*3'"$*8--<=>?=@?=A?=B?CDCDCDCD%#+E%6+F<G@FF<HIGF<BB>F<@JB=F<>FJ?=F<>@@?=F<>AB?=F<>JF?%#+E%6KF<F>IF<F>JF<F>IF<FA@=F<FFG?=F<FFG?=F<FFG?=F<FFJ?L,6"*()&+8$6MJAMJGMJGMHG!"#"$%"$&'()*+),-"./+0"'12)-+&3'+$%"45&+-+&+"6'78("*)9":8&'+$'#8("*&3;"78$%)*3'"$*8--<=G?=H?=J?=I?CDCDCDCD%#+E%6+F<A@FF<GB>F<AGGF<@AI=F<FIF?=F<FMH?=F<>F@?=F<>AA?%#+E%6KF<F>JF<F>>F<F>@F<F@>=F<FFB?=F<FFB?=F<FFB?=F<FFG?L,6"*()&+8$6>F>B>F>J>F>J>FFHN--*"#8*&"%"6&+O)&"6)*")("*)9"O)*9+$)-"00"7&6<N--O8%"-6+$7-2%"%"#)*&O"$&0+4"%"00"7&6)$%+$)%%+&+8$&8&P"$2O,"*80$)&+8$)-Q-"("-#2,-+7"O#-83""6R&P"08--8S+$9("7&8*8078$&*8-6.-8$9+&2%"R-)&+&2&%"R62*0)7")*")R"-"()&+8$R)$$2)-*)+$0)--R%+6&)$7"&8)72**"$&P+9PS)3R)$%)%"#)*&O"$&7)#+&)-%2OO3<T)$"-C26"6&P"-89$2O,"*80-87)-6&)&")9"$7+"6)6&P"O")62*"806&)&"7)#)7+&3R)$%T)$"-CC26"6&P"-89$2O,"*80O2$+7+#)-+&3"O#-83""6)6&P"O")62*"806&)&"7)#)7+&3<UP"0+*6&6&)9"680&P"+$6&*2O"$&)-()*+),-"6O8%"-6)*"8O+&&"%</89#8#2-)&+8$+6+$6&*2O"$&"%26+$9>IBA#8#2-)&+8$<UP"-+0"12)-+&3+$%"4+608*>MMIR&P"#2,-+72&+-+&+"678("*)9"=)12"%27&R"-"7&*+7+&3R)$%6"S)9"?+608*@FF@R&P"0*)7&+8$80&P"#8#2-)&+8$),8("&P"#8("*&3-+$"+608*@FFGR)$%&P"6"78$%)*3"$*8--O"$&*)&"+6&P">MM@Q@FF@)("*)9"<;&)$%)*%"**8*6*"#8*&"%+$#)*"$&P"6+6)*"*8,26&&8)*,+&*)*3P"&"*86V"%)6&+7+&3)$%)--8S08*')*,+&*)*3'6#)&+)-'78**"-)&+8$'S+&P+$'&P"'$"&S8*V'08--8S+$9'W8$-"3'=>MMH?')%)#&"%'&8'&P"'$"&S8*V'6&*27&2*"')6'%"67*+,"%'+$'&P"'&"4&<!"#$%"&&'#()*"%)#+$'"#+&,&-.-&)/0%-+01%+123+/&-)445)6"/07$#-77)89-%1'7-7:);%"7<-%'$2)+#=);0/&'1)>""=7)?0$1"@-7)A$%01$0%+&)8B0+$'"#'/89'80'$2O,"*'80'O2$+7+#)-+&3'"O#-83""6T*86#"*+&3'"12)&+8$T*86#"*+&3'"12)&+8$'/89'80'$2O,"*'80'O2$+7+#)-+&3'6&)&"')9"$7+"648
-
-	  	  !"#$%&"'(')*)'+,#"#)+-"."-$#/012)3)#)24$&)3++5&3%6)&%7,5,#$4"#),+8,/,#)4+9::;5,#$4"#),+8,$47'"#)3+9::;1"2"4)#)28<;8=;>?@??A?@??B8?@???<;8?@??C;D+8E$F)+G7"'$#/+$&3)H;?@IJ?<@?<J8?@<<B;8?@<<K;D+817L'$-+7#$'$#$),;?@KMM<@?IJ8?@<?<;8?@<?C;D+8!%#+$&+.%*)2#/;?@JMI?@KMJ8?@?IA;8?@?IM;D+8N)-%&3"2/+)&2%''4)&#;<@=<=<@MBB8?@<MC;8?@<BJ;O?@?=B?@?<<8?@??K;8?@??A;PQR$S?@??=A?@???CQ?@???=SQ?@????IST?@?<?8?@??J;U<+8V$,#%2$-"'+)')-#%2"'+*"2$"L$'$#/;?@CB?8?@?J<;U=+8W)#X))&&),,+-)&#2"'$#/;?@M<I8?@=C<;UM+8W%&"-$-Y+-)&#2"'$#/;(?@=AI8?@?AK;UB+8E%-"'+Z'7,#)2$&6;(?@ICA8?@??K;[\]L,)2*"#$%&,KAMKA=^Y)#"L')2).%2#,,#27-#72"'."2"4)#)2),#$4"#),%F#Y)&%&'$&)"24%3)'_7,$&6#Y)'%6%F#Y)&74L)2%F47&$-$."'$#/"6)&-$),",#Y)4)",72)%F'%-"',#"#)-"."-$#/@Z%'74&<.2),)&#,#Y)."2"4)#)2,%F#Y)4%3)'),#$4"#)3X$#Y9::",",/,#)4#Y"##"`),&"#$%&"'(')*)',#"#)-"."-$#/",.2)3)#)24$&)3@Z%'74&=.2),)&#,#Y)N::),#$4"#),%F#Y)4%3)'XY)2)&"#$%&"',#"#)-"."-$#/$,)&3%6)&%7,@^Y)),#$4"#),%F#Y)Z5N."2"4)#)2,_["&3\_2).%2#)3"##Y)L%##%4"2)),#$4"#)3,)."2"#)'/L/9::#"`$&6&"#$%&"',#"#)-"."-$#/-Y%$-),",.2)3)#)24$&)3@a&"'/#$-,#"&3"23)22%2,$&."2)&#Y),$,"2)2%L7,##%"2L$#2"2/Y)#)2%,`)3",#$-$#/"&3"''%XF%2"2L$#2"2/,."#$"'-%22)'"#$%&X$#Y$&#Y)&)#X%2`F%''%X$&6Z%&')/8<KKA;"3".#)3#%#Y)&)#X%2`,#27-#72)",3),-2$L)3$&#Y)#)H#@5,#$4"#),$&,G7"2)L2"-`)#,"2)+,#"&3"23+3)*$"#$%&,+"-2%,,+#Y)+,"4.')+%F+47&$-$."'$#$),@8?@??A;!"#$%&'()&*+,-+,."$&/"."0%+%.&12+30"+%2Z5N+."2"4)#)2,?@K?K8?@?<M;?@<<B4
-9
-
-	  !"#$%&'(&)*#$"+&,-.$%/0"0$&1"2"1*03&4$"56+$.&"5&%-7&-8&46#*1*2"%*03&$42%-3$$5)*8$&96"%*03&*#.$:;0*%*0*$5&1-<$+"7$=&#-0&*#&2-<$+03/$1-#."+3&$#+-%%>?<$+"7$&@A"#7$&B2$+1$#0"7$&2-*#05CD>EEF>GEH>IJK>FH,$.*"#&@A"#7$&B2$+1$#0"7$&2-*#05CD>KIF>IFD>JDF>KL!"#$%&''(&M$#$+"%&,-.$%/0"0$&1"2"1*03&4$"56+$.&"5&%-7&-8&50"0$&"7$#1*$5)*8$&96"%*03&*#.$:;0*%*0*$5&1-<$+"7$=&#-0&*#&2-<$+03/$1-#."+3&$#+-%%>?<$+"7$&@A"#7$&B2$+1$#0"7$&2-*#05CH>EHG>JJF>NGE>NH,$.*"#&@A"#7$&B2$+1$#0"7$&2-*#05CI>DHI>KHI>DHI>JEO*88$+$#1$&+$%"0*<$&0-&2+-52$+*03&6#.$+&-20*4"%&2-%*13&8+-4&0A$&%*#$"+&4-.$%&PA$#&*#1+$"5*#7&Q3&HG=&0A$&1-$88*1*$#0&-#&B2$+1$#0"7$&2-*#05C(&R$0P$$##$55SI>IIJSI>IDGSI>IDESI>IHIR-#"1*1ASI>IIJSI>IDNSI>IDISI>IHI)-1"%&@%650$+*#7SI>IDGSI>IFKSI>IHISI>IGITA*50"Q%$+$2-+050A$"<$+"7$"#.4$.*"#$96*%*Q+*641A"#7$5B"80$+46#*1*2"%*0*$5A"<$Q$50+$52-#.$.0-0A$5A-1UC*#$"1A2+-52$+*03-601-4$"1+-550A$5"42%$-846#*1*2"%*0*$5-8"#$:2$+*4$#00A"0+$"%%-1"0$546#*1*2"%*0350"0$1"2"1*03-20*4"%%3"11-+.*#70-$96"0*-#BDLC65*#70A$2"+"4$0$+5$50*4"0$.P*0AM,,"5"5350$4>!"#$%'2+$5$#050A$$:2$+*4$#0+$56%05-#0A$%*#$"+4-.$%65*#70A$#64Q$+46#*1*2"%*0326Q%*1$42%-3$$5"50A$4$"56+$-8%-1"%50"0$1"2"1*03>!"#$%''2+$5$#050A$+$56%058+-465*#70A$-20*4"%2-%*138+-40A$%*#$"+4-.$%*#0A$7$#$+"%4-.$%V65*#70A$#64Q$+-846#*1*2"%*03"7$#1*$5"50A$4$"56+$-8%-1"%50"0$1"2"1*03>TA$0A+$$Q-00-4+-P52+$5$#00A$$96*%*Q+*641A"#7$*#2+-52$+*03-601-4$5PA$#P$*#1+$"5$0A$P$*7A0-8$"1A-#$-80A$0A+$$#$0P-+U1$#0+"%*0350"0*50*15*#0A$%*#$"+86#10*-#"%$50*4"0$.*#T"Q%$?DHQ3HG=>TA$%*8$96"%*03*#.$:*58-+DLLJV0A$26Q%*160*%*0*$51-<$+"7$B"96$.610V$%$10+*1*03V"#.5$P"7$C*58-+HIIHV0A$8+"10*-#-80A$2-26%"0*-#"Q-<$0A$2-<$+03%*#$*58-+HIIGV"#.&0A$&5$1-#."+3&$#+-%%4$#0&+"0$&*5&0A$&DLLHSHIIH&"<$+"7$>!"#$%&'()&*+,-"./0%&12%,3/4%5&6%$7",%&8"/94&7,+-&"9&:;./-"$&<%"$$+3"./+9&+7&=.".%&>";"3/.??<$+"7$&W96*%*Q+*64&1A"#7$&*#(12;%,/-%9.5&<%"$$+3"./+9&+7&-@9/3/;"$/.?&4.".%&3";"3/.?&"33+,A/9B&.+&.C%&+;./-"$&;+$/3??<$+"7$&W96*%*Q+*64&1A"#7$&*#(Appendix B (online)
-
-Additional Tables and Figures
-
-Appendix Figure 1: Fit Scatterplots Linear Model (System GMM estimates)
-
-B1
-
-The	  figure	  plots	  the	  observed	  (x-­‐axis)	  and	  predicted	  (y-­‐axis)	  local	  state	  capacity	  (measured	  as	  the	  number	  of	  local	  agencies)	  and	  prosperity	  outcomes	  together	  with	  a	  linear	  fit	  line.	  The	  predicted	  values	  are	  based	  on	  the	  model	  with	  linear	  best	  responses	  with	  the	  parameter	  estimated	  using	  system	  GMM.	  The	  predicted	  local	  state	  capacity	  vector	  is	  obtained	  by	  inverting	  the	  system	  of	  linear	  best	  responses	  at	  the	  estimated	  parameters.	  The	  predicted	  prosperity	  outcomes	  are	  obtained	  using	  the	  predicted	  state	  capacity	  and	  estimated	  parameters	  on	  the	  prosperity	  equations.	  	  	  	  B
-2
-
-	  !"#$%&'()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJBADIJDBFIJBIIIJAIBIJ@EIIJAKCIJAAEIJ@FD=IJ>BI?=IJ>AA?=IJ>BF?=IJ>F@?=IJIFD?=IJ>IC?=IJ>>C?=IJ>A>?2+,H2/LIJI@CIJI@IIJI@@IJIACIJI@>IJI>CIJI>AIJI@I=IJIID?=IJIID?=IJIID?=IJIIE?=IJIIC?=IJIIC?=IJIIC?=IJIID?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/KEAKECKECKDC>I>B>I>E>I>E>IID!"#$%&''()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJ@FFIJBBAIJ>KFIJ>FKIJ>FKIJ@CKIJ@>IIJIKD=IJ>BD?=IJ>BA?=IJ>CC?=IJ>K@?=IJIKE?=IJ>ID?=IJ>>C?=IJ>AF?2+,H2/LIJI@>IJI>KIJI@AIJI@FIJI>FIJI>EIJI>CIJI@@=IJIIE?=IJIID?=IJIID?=IJIIF?=IJIIC?=IJIIC?=IJIIC?=IJIID?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/KDIKD@KD@KC@KKK>II@>II@KK>IJI>K=IJIIA?IJI@@=IJIIB?!"#$%"&&'#()*+),--'$'"#,&)(."(%,/0'1)1"2,%',$.3&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/!19/+$1,)-&$60"),9#O%%1$+91)$2$/),.")$/"1$,#/)10.$#)"%:"1,"8%$/":$1";$."1;,#"%$55$*)/95)M$+19/+$1,)-$60"),9#591$"*M95)M$590190)*9.$/JO%%.92$%/,#*%02$2$+"1).$#)5,7$2$55$*)/"#2)M$59%%9P,#;:$*)9195*9#)19%/3%9#;,)02$Q%"),)0)2$Q/015"*$"1$"Q$%$:"),9#Q"##0"%1",#5"%%Q"#2"2$+"1).$#)*"+,)"%20..-J!"#$%'1$+91)/)M$$/),.")$/95.92$%/)M")29#9)*9#)19%591)M$2,/)"#*$)9"*011$#)M,;MP"-J!"#$%''1$+91)/)M$$/),.")$/95.92$%/)M"),#*%02$)M$59%%9P,#;"/"22,),9#"%*9:"1,")$/32$#/,)-95+1,."1-Q/$*9#2"1-Q"#2)$1),"1-1,:$1/Q"#2)M$50%%2,/)1,80),9#95%"#260"%,),$/=60"%,),$/>RF?Q"#2)-+$/=0#2$1P")$1Q:"%%$-Q.90#)",#QM,%%Q"#2+%",#?JS9%0.#/>RB0/$)M$%9;#0.8$195.0#,*,+"%,)-/)")$";$#*,$/"/)M$.$"/01$95%9*"%/)")$*"+"*,)-Q"#2*9%0.#/CRF0/$)M$%9;#0.8$195.0#,*,+"%,)-$.+%9-$$/"/)M$.$"/01$95%9*"%/)")$*"+"*,)-JT/),.")$/95)M$5,1/)/)";$/591)M$'G.92$%/"1$9.,))$2JUM$%,5$60"%,)-,#2$7,/591>KKFQ)M$+08%,*0),%,),$/*9:$1";$="60$20*)Q$%$*)1,*,)-Q"#2/$P";$?,/591@II@Q)M$51"*),9#95)M$+9+0%"),9#"89:$)M$+9:$1)-%,#$,/591@IICQ"#2)M$/$*9#2"1-$#19%%.$#)1")$,/)M$>KK@R@II@":$1";$JO%%+19/+$1,)-90)*9.$/"1$/)"#2"12,V$2J'#"%%.92$%/%9;+9+0%"),9#,/,#/)10.$#)$20/,#;>FBA+9+0%"),9#J()"#2"12$1191/1$+91)$2,#+"1$#)M$/,/"1$1980/))9"18,)1"1-M$)$19/W$2"/),*,)-"#2"%%9P&591&"18,)1"1-&/+"),"%&*911$%"),9#&P,)M,#&)M$&#$)P91W&59%%9P,#;&S9#%$-&=>KKD?&"2"+)$2&)9&)M$&#$)P91W&/)10*)01$&"/&2$/*1,8$2&,#&)M$&)$7)J4//.#-'5)6,*&.)78)9"*:3$#.33);5.%1'3.3<)=%"3/.%'$+),#-)=:*&'1)>""-3)?:$1"@.3)A$%:1$:%,&);B:,$'"#C'$0":$)1"#$%"&&'#()D"%)-'3$,#1.)$")1:%%.#$)0'(0E,+&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/!19/+$1,)-&$60"),9#IJI>KIJI@C=IJIIB?=IJIIB?A3
-
-	  	  !"#$%&'()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJD>EIJEDAIJBEKIJA>FIJB>>IJB@AIJAAIIJ@@@=IJ>>>?=IJ>>C?=IJ>@D?=IJ>D>?=IJIDD?=IJIEK?=IJIFF?=IJ>I@?2+,H2/LIJI@BIJI@FIJI@DIJIAFIJI>EIJI@>IJI>FIJI@E=IJIIE?=IJIIE?=IJIIE?=IJIIK?=IJIIC?=IJIIC?=IJIIC?=IJIIE?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/KEAKECKECKDC>I>B>I>E>I>E>IID!"#$%&''()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJC>KIJDKAIJAECIJADCIJAEBIJAA>IJ@KDIJ@@D=IJ>>B?=IJ>>C?=IJ>@K?=IJ>DB?=IJIDK?=IJIFI?=IJIKC?=IJ>IE?2+,H2/LIJIIEIJIIEIJIIEIJI>>IJIICIJIIDIJIICIJIIF=IJII@?=IJII@?=IJII@?=IJIIA?=IJII>?=IJII>?=IJII@?=IJII@?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/KEAKECKECKDC>I>B>I>E>I>E>IID!"#$%&'''()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJAECIJBFEIJ>KDIJ>CCIJAFIIJAAKIJ@>DIJ@ED=IJ>>B?=IJ>IE?=IJ>>>?=IJ>B@?=IJIEI?=IJIEK?=IJIEK?=IJ>II?2+,H2/LIJIAKIJIC>IJIDAIJIC@IJI@>IJIAFIJIB>IJI@F=IJI>>?=IJI>@?=IJI>@?=IJI>C?=IJIIK?=IJI>I?=IJI>I?=IJI>@?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/KEAKECKECKDC>I>B>I>E>I>E>IID!19/+$1,)-&$60"),9#&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/!"#$%$%&'($%)*'+,'$%-(./"'%"$&01,2*'3%/'%"$&01,2*',#'%"$&01,2*&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/!19/+$1,)-&$60"),9#&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/!19/+$1,)-&$60"),9#O%%1$+91)$2$/),.")$/"1$,#/)10.$#)"%:"1,"8%$/":$1";$."1;,#"%$55$*)/95)M$+19/+$1,)-$60"),9#591$"*M95)M$590190)*9.$/JO%%.92$%/,#*%02$2$+"1).$#)5,7$2$55$*)/"#2)M$59%%9P,#;:$*)9195*9#)19%/3%9#;,)02$Q%"),)0)2$Q/015"*$"1$"Q$%$:"),9#Q"##0"%1",#5"%%Q2,/)"#*$)9"*011$#)M,;MP"-Q"#2"2$+"1).$#)*"+,)"%20..-J!"#$%'1$+91)/)M$$/),.")$/95.92$%/)M")0/$#$,;M891/95#$,;M891/R*9%9#,"%/)")$+1$/$#*$"/,#/)10.$#)/59%%9P,#;S1".90%%$$)"%J=@IIK?J!"#$%''1$+91)/)M$$/),.")$/95.92$%/PM$1$)M$#$)P91T/)10*)01$2$5,#$/"%,#T"/$7,/),#;8$)P$$#89)M#$,;M891/"#2#$,;M891/95#$,;M891/J!"#$%'''1$+91)/$/),.")$/95.92$%/PM$1$)M$#$)P91T/)10*)01$"%%9P/591%,#T/8$)P$$#"%%.0#,*,+"%,),$/"#22$*"-,#;%,#T/)1$#;)MJU9%0.#/>VB0/$)M$%9;#0.8$195.0#,*,+"%,)-/)")$";$#*,$/"/)M$.$"/01$95&%9*"%&/)")$&*"+"*,)-Q&"#2&*9%0.#/&CVF&0/$&)M$&%9;&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/&"/&)M$&.$"/01$&95&%9*"%&/)")$&*"+"*,)-J&W/),.")$/&95&)M$&5,1/)&/)";$/&591&)M$&,#/)10.$#)"%&:"1,"8%$/.92$%/"1$9.,))$2JXM$%,5$60"%,)-,#2$7,/591>KKFQ)M$+08%,*0),%,),$/*9:$1";$="60$20*)Q$%$*)1,*,)-Q"#2/$P";$?,/591@II@Q)M$51"*),9#95)M$+9+0%"),9#"89:$)M$+9:$1)-%,#$,/591@IICQ"#2)M$/$*9#2"1-$#19%%.$#)1")$,/)M$>KK@V@II@":$1";$JO%%+19/+$1,)-90)*9.$/"1$/)"#2"12,Y$2J'#"%%.92$%/%9;+9+0%"),9#,/,#/)10.$#)$20/,#;>FBA+9+0%"),9#J()"#2"12$1191/1$+91)$2,#+"1$#)M$/,/"1$1980/))9"18,)1"1-M$)$19/T$2"/),*,)-"#2"%%9P591"18,)1"1-/+"),"%*911$%"),9#P,)M,#)M$#$)P91T&59%%9P,#;&U9#%$-&=>KKD?&"2"+)$2&)9&)M$&#$)P91T&/)10*)01$&"/&2$/*1,8$2&,#&)M$&)$7)J4(('5.%$-$63($+$"*'($%)"/'+,'"3-0',+0"2'7$+0'/"-38$%&'($%)'*+2"%&+0&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/IJI>AIJIB>=IJIID?=IJIIE?IJIIKIJI>A9*$%&'%"$&01,2*',#'%"$&01,2*',#'%"$&01,2*'3*'$%*+2.5"%+*466"%/$:';31("'<='>,1.*+%"**'?:"2-$*"*@'A2,*6"2$+8'3%/'A.1($-'B,,/*'C.+-,5"*'D+2.-+.23('?E.3+$,%=IJII@?=IJII@?IJIIDIJIIF=IJII>?=IJII>?A4
-
-	  	  !"#$%&'()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJB@KIJEDAIJBB>IJADEIJ@CFIJB>CIJ@KAIJ>KD=IJ>BF?=IJ>BB?=IJ>CB?=IJ>KF?=IJIKC?=IJ>>@?=IJ>>A?=IJ>BB?2+,H2/LIJI>KIJI>FIJI@BIJIAAIJI>FIJI>CIJI>DIJI@C=IJIIE?=IJIID?=IJIIE?=IJIIF?=IJIIC?=IJIIC?=IJIIC?=IJIID?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/KEAKECKECKDC>I>B>I>E>I>E>IID!"#$%&''()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJAE>IJDAFIJBKAIJ>FIIJ>KCIJAAAIJ@KCIJ@A>=IJ>D@?=IJ>CC?=IJ>EA?=IJ@>I?=IJ>I>?=IJ>>D?=IJ>@C?=IJ>BC?2+,H2/LIJI@FIJI@IIJI>EIJIAEIJI@BIJI>EIJI>AIJI@>=IJIIF?=IJIIE?=IJIIE?=IJIIK?=IJIIC?=IJIIC?=IJIIC?=IJIIE?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/KEAKECKECKDC>I>B>I>E>I>E>IID!"#$%&''()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJCFAIJE>IIJBAAIJCAFIJ@CCIJ@KCIJAKCIJA>F=IJ>KA?=IJ>FA?=IJ>KI?=IJ@FD?=IJ>BA?=IJ>CB?=IJ>F@?=IJ>KF?2+,H2/LIJI@IIJI>KIJI@IIJIA>IJI@>IJI>KIJI>>IJI@>=IJIIE?=IJIIE?=IJIID?=IJIIK?=IJIID?=IJIID?=IJIIE?=IJIIF?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/KEAKECKECKDC>I>B>I>E>I>E>IIDO%%1$+91)$2$/),.")$/"1$,#/)10.$#)"%:"1,"8%$/":$1";$."1;,#"%$55$*)/95)M$+19/+$1,)-$60"),9#591$"*M95)M$590190)*9.$/JO%%.92$%/,#*%02$2$+"1).$#)5,7$2$55$*)/"#2)M$59%%9P,#;:$*)9195*9#)19%/3%9#;,)02$Q%"),)0)2$Q/015"*$"1$"Q$%$:"),9#Q"##0"%1",#5"%%Q2,/)"#*$)9"*011$#)M,;MP"-Q"#2"2$+"1).$#)*"+,)"%20..-J!"#$%'1$+91)/)M$$/),.")$/95.92$%/)M")$7*%02$#$,;M891/R2,/)"#*$)919-"%19"2/519.)M$,#/)10.$#)/$)J!"#$%''1$+91)/)M$$/),.")$/95.92$%/)M")9#%-,#*%02$#$,;M891/R2,/)"#*$)919-"%19"2/,#)M$,#/)10.$#)/$)J!"#$%''1$+91)/)M$$/),.")$/95.92$%/,#*%02,#;9#%-5,1/)"#2/$*9#2+9P$1/95901)M1$$,#/)10.$#)/JS9%0.#/>TB0/$)M$%9;#0.8$195.0#,*,+"%,)-/)")$";$#*,$/"/)M$.$"/01$95%9*"%/)")$*"+"*,)-Q"#2*9%0.#/CTF0/$)M$%9;#0.8$195.0#,*,+"%,)-$.+%9-$$/"/)M$.$"/01$95%9*"%/)")$*"+"*,)-JU/),.")$/95)M$5,1/)/)";$/591)M$,#/)10.$#)"%:"1,"8%$/.92$%/"1$9.,))$2JVM$%,5$60"%,)-,#2$7,/591>KKFQ)M$+08%,*0),%,),$/*9:$1";$="60$20*)Q$%$*)1,*,)-Q"#2/$P";$?,/591@II@Q)M$51"*),9#95)M$+9+0%"),9#"89:$)M$+9:$1)-%,#$,/591@IICQ"#2)M$/$*9#2"1-$#19%%.$#)1")$,/)M$>KK@T@II@":$1";$JO%%+19/+$1,)-90)*9.$/"1$/)"#2"12,W$2J'#"%%.92$%/%9;+9+0%"),9#,/,#/)10.$#)$20/,#;>FBA+9+0%"),9#J()"#2"12$1191/1$+91)$2,#+"1$#)M$/,/"1$1980/))9"18,)1"1-M$)$19/X$2"/),*,)-&"#2&"%%9P&591&"18,)1"1-&/+"),"%&*911$%"),9#&P,)M,#&)M$&#$)P91X&59%%9P,#;&S9#%$-&=>KKD?&"2"+)$2&)9&)M$&#$)P91X&/)10*)01$&"/&2$/*1,8$2&,#&)M$&)$7)J&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/!19/+$1,)-&$60"),9#!"#$%&'"()*"$+)",'(-.*/01)&'023"#,)2*)/*+3$)/*3&0)30)'"02/%4,"20566,"&'7)83.$,)9:);*.%02",00)<7,/#'0,0=)>/*06,/'2+)3"&)>%.$'#)?**&0)@%2#*4,0)A2/%#2%/3$)<B%32'*"!19/+$1,)-&$60"),9#<7#$%&'"()",'(-.*/01)&'023"#,)2*)/*+3$)/*3&0)30)'"02/%4,"20&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/IJI>FIJI@B=IJIIA?=IJIIB?IJI@@IJI@A=IJIIC?=IJIIC?!"#$%&'"()*"$+)C'/02)3"&)0,#*"&)6*D,/0)*C)'"02/%4,"20&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/!19/+$1,)-&$60"),9#IJI>KIJI@@=IJIIA?=IJIIB?A
-5
-
-	  	  	  !"#"$%&#'#&(")%*$#+,-$.%#+/0(1$%2,#3(")%(4.$56,73(&%,"(3("($+%&89$-#:$;8"%(4%'89$-")!$&84.#-)%$4-833*$4"0(1$%2,#3(")%(4.$56,73(&%,"(3("($+%&89$-#:$;8"%(4%'89$-")!$&84.#-)%$4-833*$4"<=><?><@><A><B><C><D><E>FGFGFGFGFGFGFGFG.'(H.+(IJABCIJADDIJ?KBIJ=A@IJ?@CIJ?=BIJ?@=IJ=C?<IJ=AB><IJ=@D><IJ=AB><IJ?IC><IJIKI><IJ=I@><IJ===><IJ=@C>.'(H.+LIJI=DIJI@=IJI?EIJIA?IJI=KIJI@?IJI?=IJI@=<IJIIE><IJIID><IJIIE><IJI==><IJIIC><IJIIC><IJIID><IJIIE>M8$11(&($4"%84%<!(<">#>?IJC=@NIJE=CNIJB?=NIJBKIIJ=I?NIJCDANIJ@=INIJA?A<IJA=C><IJ@B=><IJA?E><IJCBA><IJ=DI><IJ=E@><IJ?IC><IJ?CK>!38'$%1-8*%"O$%7$+"%-$+'84+$%<FG>/P7+$-9#"(84+KD@KDBKDBKCB=I=A=I=D=I=D=IIC$%%&'()*+,-./&+01+234#%&3)56+-'(+27./)8+944(#+:7-(3-5)8+;<7-5)4'Q33-$'8-"$.$+"(*#"$+#-$#9$-#:$*#-:(4#3$11$&"+JQ33*8.$3+(4&3,.$.$'#-"*$4"1(5$.$11$&"+#4."O$18338R(4:9$&"8-81&84"-83+/384:(",.$S3#"(",".$S+,-1#&$#-$#S$3$9#"(84S#44,#3-#(41#33S.(+"#4&$"8#&,--$4"O(:OR#)S#4.#.$'#-"*$4"&#'("#3.,**)JTO$T#73$-$'8-"+$+"(*#"$+81#2,#.-#"(&N(4N+"#"$N&#'#&(")'-8+'$-(")$2,#"(8418-$#&O81"O$18,-8,"&8*$+JU8.$3+(4&83,*4+=NA,+$"O$38:4,*7$-81+"#"$#:$4&($+#+"O$*$#+,-$81+"#"$&#'#&(")JU8.$3+(4&83,*4+BNE,+$"O$38:4,*7$-81*,4(&('#3(")$*'38)$$+#+"O$*$#+,-$81+"#"$&#'#&(")JTO$3(1$2,#3(")(4.$5(+18-=KKES"O$',73(&,"(3("($+&89$-#:$<#2,$.,&"S$3$&"-(&(")S#4.+$R#:$>(+18-?II?S"O$1-#&"(8481"O$'8',3#"(84#789$"O$'89$-")3(4$(+18-?IIBS#4."O$+$&84.#-)$4-833*$4"-#"$(+"O$=KK?N?II?#9$-#:$JQ33'-8+'$-(")8,"&8*$+#-$+"#4.#-.(V$.JF4#33*8.$3+-$'8-"$.S38:'8',3#"(84(+(4+"-,*$4"$.,+(4:=EA@'8',3#"(84J!"#4.#-.$--8-+-$'8-"$.(4'#-$4"O$+(+#-$-87,+""8#-7("-#-)O$"$-8+W$.#+"(&(")#4.#338R18-#-7("-#-)+'#"(#3&8--$3#"(84R("O(4"O$4$"R8-W18338R(4:%M843$)%<=KKC>%#.#'"$.%"8%"O$%4$"R8-W%+"-,&",-$%#+%.$+&-(7$.%(4%"O$%"$5"J6-8+'$-(")%$2,#"(84/%'(L%X%Y+(?%Z%[L!(<">#%Z%\<!(<">#>?%Z%](L%38:%81%4,*7$-%81%*,4(&('#3(")%+"#"$%#:$4&($+IJI=K<IJII@>IJI??<IJIIA>%38:%81%4,*7$-%81%*,4(&('#3(")%$*'38)$$+!"#"$%&#'#&(")%*$#+,-$.%#+%/01%02%3,*4$-%0256,3(&('#/(")%+"#"$%71$3&($+6,3(&('#/(")%$*'/0)$$+89:8;:<=<=.+(>.+?@A@;@@A@;98@A@@B:8@A@@C:.+(>.&0/03(#/%+"#"$%022(&(#/+(@A9@9@A@D;8@A@E9:8@A@FB:.+(>.&0/03(#/%+"#"$%#1$3&($+(G@A@;9@A@@F8@A@EE:8@A@H@:.+(>..(+"#3&$%"0%-0)#/%-0#.+(@A@9BG@A@H@8@A@EE:8@A@IH:J4+$-K#"(03+DBI9@9B!""#$%&'()*+,#(-.(/0$1#2"03*34(51*1#(678&,&+3&82(9#:1(;#:"0$:#(<&1=(/0$1#'18*,(6>>#?1:LM,(/(4-(,*%4$+"%-$+'03+$%$M,#"(0357//-$'0-"$.$+"(*#"$+#-$#K$-#1$*#-1(3#/$22$&"+02"N$4$+"-$+'03+$$M,#"(03A7//*0.$/+(3&/,.$.$'#-"*$3"2(O$.$22$&"+P#3."N$20//0Q(31K$&"0-02&03"-0/+5/031(",.$P/#"(",".$P+,-2#&$#-$#P$/$K#"(03P#33,#/-#(32#//P.(+"#3&$"0#&,--$3"N(1NQ#)P&03"$O",#/$22$&"+02#//"N$+$&0K#-(#"$+P#3.#.$'#-"*$3"&#'("#/.,**)AR(K$3"N#""N$&03"$O",#/$22$&"+(3&/,.$3$(1N40-+S&0/03(#/+"#"$#3.3$(1N0-+-0)#/-0#.+P3$(1N40-+023$(1N40-+S&0/03(#/+"#"$%#3.%3$(1N40-+%02%3$(1N40-+S%-0)#/%-0#.+%#-$%,+$.%#+%(3+"-,*$3"+%20-%3$(1N40-+S%+"#"$%&#'#&(")A%T0/,*3%9%,+$+%"N$%/01%3,*4$-%02%/0&#/%+"#"$%#1$3&($+%#+"N$*$#+,-$02+"#"$&#'#&(")P#3.&0/,*3;,+$+"N$/013,*4$-02*,3(&('#/(")$*'/0)$$+#+"N$*$#+,-$02+"#"$&#'#&(")AUN$2(-+"+"#1$+02"N$(3+"-,*$3"#/K#-(#4/$+*0.$/+#-$0*(""$.AV01'0',/#"(03(+(3+"-,*$3"$.,+(319CFE'0',/#"(03A!"#3.#-.$--0-+-$'0-"$.(3'#-$3"N$+(+#-$-04,+""0#-4("-#-)N$"$-0+W$.#+"(&(")#3.#//0Q20-#-4("-#-)+'#"(#/&0--$/#"(03Q("N(3"N$3$"Q0-W20//0Q(31T03/$)89DDH:#.#'"$."0"N$3$"Q0-W+"-,&",-$#+.$+&-(4$.%(3%"N$%"$O"A+(%X%8YZ[:@(8A::%\%?(B9%\%'(C9%\%@(8A:?D;%\%@(8A:'C;%\%](%A
-6
-
-	  	  	  !"#"$%&#'#&(")%*$#+,-$.%#+/0$'$1.$1"%2#-(#34$/5(6$%7,#4(")%(1.$89,34(&%,"(4("($+%&:;$-#<$=:"%(1%':;$-")!$&:1.#-)%$1-:44*$1">?@>A@>B@>C@D2D2D2D2.'(E.+(FGHFIFGJCIFGIAFFGAKA>FGFA?@>FGFAB@>FGFAC@>FGFB?@.'(E.+LFGFFCFGFFMFGF?BFGFCA>FGFFA@>FGFFA@>FGFFB@>FGFFB@!""#$%&'()*+,#(-.(/012"#0&34(*$%(/5+,&6(711%2(853619#2(:3056350*,(;<5*3&1$(=&3>(?1$3#'35*,(;@@#632(A1B(1@($59+#0(1@(95$&6&"*,&34(23*3#(*B#$6&#29-:+'$-(")%$7,#"(:1/%%'(L%N%O+(A%P%QLC(>D@2%P%'(E?%P%C(>D@'EA%P%R(LS3+$-;#"(:1+KHBKHIKHIKMI!"#"$%&#'#&(")%*$#+,-$.%#+/0$'$1.$1"%2#-(#34$/5(6$%7,#4(")%(1.$89,34(&%,"(4("($+%&:;$-#<$=:"%(1%':;$-")!$&:1.#-)%$1-:44*$1">?@>A@>B@>C@D2D2D2D2.'(E.+(FGCC?FGIF?FGBCHFGAA?>FGF?C@>FGF?M@>FGF?M@>FGFAF@.'(E.+LFGFFJFGFFAFGF?AFGFAH>FGFFA@>FGFFA@>FGFFA@>FGFFA@(A1B(1@($59+#0(1@(95$&6&"*,&34(#9",14##29-:+'$-(")%$7,#"(:1/%%'(L%N%O+(A%P%QLC(>D@2%P%'(E?%P%C(>D@'EA%P%R(LS3+$-;#"(:1+?F?C?F?H?F?H?FFMT44-$':-"$.$+"(*#"$+#-$#;$-#<$*#-<(1#4$66$&"+GT44*:.$4+(1&4,.$.$'#-"*$1"6(8$.$66$&"+#1."U$6:44:V(1<;$&":-:6&:1"-:4+/4:1<(",.$W4#"(",".$W+,-6#&$#-$#W$4$;#"(:1W#11,#4-#(16#44W.(+"#1&$":#&,--$1"U(<UV#)W&:1"$8",#4$66$&"+:6#44"U$+$&:;#-(#"$+W#1.#.$'#-"*$1"&#'("#4.,**)GX:4,*1+?YC,+$"U$4:<1,*3$-:64:&#4+"#"$#<$1&($+#+"U$*$#+,-$:6+"#"$&#'#&(")W#1.&:4,*1+IYJ,+$"U$4:<1,*3$-:6*,1(&('#4(")$*'4:)$$+#+"U$*$#+,-$:6+"#"$&#'#&(")GZU$6(-+"+"#<$+:6"U$(1+"-,*$1"#4;#-(#34$+*:.$4+#-$:*(""$.G5:<':',4#"(:1(+(1+"-,*$1"$.,+(1<?JCB':',4#"(:1GZU$4(6$7,#4(")(1.$8(+6:-?KKJW"U$',34(&,"(4("($+&:;$-#<$>#7,$.,&"W$4$&"-(&(")W#1.+$V#<$@(+6:-AFFAW"U$6-#&"(:1:6"U$':',4#"(:1#3:;$"U$':;$-")4(1$(+6:-AFFIW#1."U$+$&:1.#-)$1-:44*$1"-#"$(+"U$?KKAYAFFA#;$-#<$G!"#1.#-.$--:-+-$':-"$.(1'#-$1"U$+(+#-$-:3,+"":#-3("-#-)U$"$-:+[$.#+"(&(")%#1.%#44:V%6:-%#-3("-#-)%+'#"(#4%&:--$4#"(:1%V("U(1%"U$%1$"V:-[%6:44:V(1<%X:14$)%>?KKM@%#.#'"$.%":%"U$%1$"V:-[%+"-,&",-$%#+%.$+&-(3$.%(1%"U$%"$8"GA
-7
-
-	  	  	  !"#$%&'()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJBI>IJCDKIJAIEIJA@@IJ>FBIJ@FBIJ@>@IJ@BI=IJ>AK?=IJ>A@?=IJ>BI?=IJ>FK?=IJIKK?=IJ>>E?=IJ>>B?=IJ>B>?2+,H2/LIJI@DIJI@>IJI@AIJIA@IJI@BIJI>FIJI>DIJI@I=IJIIE?=IJIID?=IJIID?=IJIIF?=IJIIC?=IJIIC?=IJIIC?=IJIID?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/FCIFC@FC@FB@FFEFKIFKIFEK!"#$%&''()")$&*"+"*,)-&.$"/01$2&"/34,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)4,5$&60"%,)-&,#2$7!08%,*&0),%,),$/&*9:$1";$<9)&,#&+9:$1)-($*9#2"1-&$#19%%.$#)=>?=@?=A?=B?=C?=D?=E?=F?'G'G'G'G'G'G'G'G2+,H2/,IJDDAIJEEFIJAFDIJEE@IJACCIJAEKIJ@DDIJBII=IJ>BC?=IJ>BF?=IJ>C>?=IJ@>I?=IJ>IE?=IJ>@C?=IJ>@C?=IJ>CE?2+,H2/LIJI@>IJI>EIJI@@IJI@BIJI>KIJI>DIJI>BIJI>E=IJIIE?=IJIIE?=IJIID?=IJIIF?=IJIID?=IJIID?=IJIID?=IJIIF?(%9+$&519.&)M$&8$/)&1$/+9#/$&='G?3N8/$1:"),9#/FCIFC@FC@FB@FFEFKIFKIFEKO%%1$+91)$2$/),.")$/"1$,#/)10.$#)"%:"1,"8%$/":$1";$."1;,#"%$55$*)/95)M$+19/+$1,)-$60"),9#591$"*M95)M$590190)*9.$/JO%%.92$%/,#*%02$2$+"1).$#)5,7$2$55$*)/"#2)M$59%%9P,#;:$*)9195*9#)19%/3%9#;,)02$Q%"),)0)2$Q/015"*$"1$"Q$%$:"),9#Q"##0"%1",#5"%%Q2,/)"#*$)9"*011$#)M,;MP"-Q"#2"2$+"1).$#)*"+,)"%20..-J!"#$%'1$+91)/)M$$/),.")$/95.92$%/$7*%02,#;519.)M$$/),."),#;/".+%$"%%.0#,*,+"%,),$/,#)M$)9+>I)M+$1*$#),%$95:,9%$#*$"/.$"/01$28->KFFR@IIB+"1".,%,)"1-"))"*S/J!"#$%''1$+91)/)M$$/),.")$/95.92$%/$7*%02,#;519.)M$#$)P91S"%%.0#,*,+"%,),$/,#)M$)9+>I)M+$1*$#),%$95:,9%$#*$"/.$"/01$28->KFFR@IIB+"1".,%,)"1-"))"*S/JT9%0.#/>RB0/$)M$%9;#0.8$195.0#,*,+"%,)-/)")$";$#*,$/"/)M$.$"/01$95%9*"%/)")$*"+"*,)-Q"#2*9%0.#/CRF0/$)M$%9;#0.8$195.0#,*,+"%,)-$.+%9-$$/"/)M$.$"/01$95%9*"%/)")$*"+"*,)-JU/),.")$/95)M$5,1/)/)";$/591)M$,#/)10.$#)"%:"1,"8%$/.92$%/"1$9.,))$2JVM$%,5$60"%,)-,#2$7,/591>KKFQ)M$+08%,*0),%,),$/*9:$1";$="60$20*)Q$%$*)1,*,)-Q"#2/$P";$?,/591@II@Q)M$51"*),9#95)M$+9+0%"),9#"89:$)M$+9:$1)-%,#$,/591@IICQ"#2)M$/$*9#2"1-$#19%%.$#)1")$,/)M$>KK@R@II@":$1";$JO%%+19/+$1,)-90)*9.$/"1$/)"#2"12,W$2J'#"%%.92$%/%9;+9+0%"),9#,/,#/)10.$#)$20/,#;>FBA+9+0%"),9#J()"#2"12$1191/1$+91)$2,#+"1$#)M$/,/"1$1980/))9"18,)1"1-M$)$19/S$2"/),*,)-"#2"%%9P591"18,)1"1-/+"),"%&*911$%"),9#&P,)M,#&)M$&#$)P91S&59%%9P,#;&T9#%$-&=>KKD?&"2"+)$2&)9&)M$&#$)P91S&/)10*)01$&"/&2$/*1,8$2&,#&)M$&)$7)J!"#$%&'()*+,-.*/01*(1/2-,3*.%('#'45$'/'16*57-81*/01*9:/0*41,#1(/'$1*-+*8'-$1(#1&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/!19/+$1,)-&$60"),9#;441(&'"*<57$1*=>*?-7%6/(166*!"1,#'616@*A,-641,'/B*5(&*A%7$'#*C--&6*D%/#-.16*E/,%#/%,5$*!F%5/'-(!"#$%&'()*+,-.*/01*16/'.5/'()*65.4$1*.%('#'45$'/'16*57-81*/01*9:/0*41,#1(/'$1*-+*8'-$1(#1&49;&95&#0.8$1&95&.0#,*,+"%,)-&/)")$&";$#*,$/&49;&95&#0.8$1&95&.0#,*,+"%,)-&$.+%9-$$/!19/+$1,)-&$60"),9#IJI@IIJI@D=IJIIB?=IJIIC?=IJIIB?=IJIIB?IJI>KIJI@CA
-8
-
-	  	  !"#$%&'()*(+*(,*(-*(.*(/*(0*(1*234'5234'5234'5234'567896:8;<1-1;<1,,;<0,0)<;=/;<.=;;</-/;<1--;<-+=(;<;01*(;<)0=*(;<;0;*(;<)/.*(;<;0+*(;<)1,*(;<;10*(;<+,.*67896:>;<;).;<;)-;<;+;;<;;0;<;)=;<;).;<;)-;<;+0(;<;;-*(;<;;0*(;<;;-*(;<;;0*(;<;;-*(;<;;0*(;<;;.*(;<;;1*4%?7$&@A?B&CD$&E$:C&A$:7?#:$&('5*F2E:$AG"C8?#:=-0=-0=-==-==-==-==,==,=!"#$%&''()*(+*(,*(-*(.*(/*(0*(1*234'5234'5234'5234'567896:8;<,=/;<,=-;<)=);<+=+;<)..;<+1,;<++0;<+.,(;<;+=*(;<)+,*(;<;+=*(;<),1*(;<;+1*(;<),0*(;<;,.*(;<)==*67896:>;<;)1;<;)/;<;+-;<;)1;<;++;<;)-;<;+);<;)=(;<;;,*(;<;;.*(;<;;,*(;<;;.*(;<;;,*(;<;;.*(;<;;-*(;<;;0*4%?7$&@A?B&CD$&E$:C&A$:7?#:$&('5*F2E:$AG"C8?#:=11=11==)==)==)==)=1;=1;!""#$%&'()*+,#(-.(/0+123$#22(4'#56&2#27(8502"#5&39(*$%(81+,&6(:00%2(;1360<#2(=3516315*,(4>1*3&0$4'6,1%&$?(6*"&3*,(6&3&#2(@50<(3A#($#3B05C38@$&HI"%8CJ&8#6$K!IE%8L&IC8%<&L?G$A"M$N?C&8#&7?G$ACJ4$L?#6"AJ&$#A?%%B$#C!A?:7$A8CJ&$HI"C8?#O%%A$7?AC$6$:C8B"C$:"A$8#:CAIB$#C"%G"A8"E%$:"G$A"M$B"AM8#"%$@@$LC:?@CD$7A?:7$A8CJ$HI"C8?#@?A$"LD?@CD$@?IA?ICL?B$:<O%%B?6$%:8#L%I6$6$7"ACB$#C@8K$6$@@$LC:"#6CD$@?%%?P8#MG$LC?A?@L?#CA?%:F%?#M8CI6$Q%"C8CIC6$Q:IA@"L$"A$"Q$%$G"C8?#Q"##I"%A"8#@"%%Q68:C"#L$C?"LIAA$#CD8MDP"JQ"#6"6$7"ACB$#CL"78C"%6IBBJ<!"#$%'A$7?AC:CD$$:C8B"C$:I:8#MCD$%?M#IBE$A?@BI#8L87"%8CJ:C"C$"M$#L8$:":CD$B$":IA$?@%?L"%:C"C$L"7"L8CJ<!"#$%''A$7?AC:CD$$:C8B"C$:I:8#MCD$%?M#IBE$A?@BI#8L87"%8CJ$B7%?J$$:":CD$B$":IA$?@%?L"%:C"C$L"7"L8CJ<R:C8B"C$:?@CD$@8A:C:C"M$:@?ACD$8#:CAIB$#C"%G"A8"E%$:B?6$%:"A$?B8CC$6<SD$%8@$HI"%8CJ8#6$K8:@?A)==1QCD$7IE%8LIC8%8C8$:L?G$A"M$("HI$6ILCQ$%$LCA8L8CJQ"#6:$P"M$*8:@?A+;;+QCD$@A"LC8?#?@CD$7?7I%"C8?#"E?G$CD$7?G$ACJ%8#$8:@?A+;;.Q"#6CD$:$L?#6"AJ$#A?%%B$#CA"C$8:CD$)==+T+;;+"G$A"M$<O%%7A?:7$A8CJ?ICL?B$:"A$:C"#6"A68U$6<'#"%%B?6$%:%?M7?7I%"C8?#8:8#:CAIB$#C$6I:8#M)1-,7?7I%"C8?#<4C"#6"A6$AA?A:A$7?AC$68#7"A$#CD$:8:"A$A?EI:CC?"AE8CA"AJD$C$A?:V$6":C8L8CJ"#6"%%?P@?A"AE8CA"AJ:7"C8"%L?AA$%"C8?#P8CD8#CD$#$CP?AV@?%%?P8#MW?#%$J()==/*"6"7C$6&C?&CD$&#$CP?AV&:CAILCIA$&":&6$:LA8E$6&8#&CD$&C$KC<4C"C$&L"7"L8CJ&B$":IA$6&":F&%?M&?@&#IBE$A&?@&BI#8L87"%8CJ&:C"C$&"M$#L8$:!A?:7$A8CJ&$HI"C8?#4C"C$&L"7"L8CJ&B$":IA$6&":F&%?M&?@&#IBE$A&?@&BI#8L87"%8CJ&$B7%?J$$:38@$&HI"%8CJ&8#6$K!IE%8L&IC8%<&L?G$A"M$N?C&8#&7?G$ACJ4$L?#6"AJ&$#A?%%B$#C;<;)=;<;+-(;<;;,*(;<;;-*A9
-
-	  	  !"#"$%&#'#&(")%*$#+,-$.%#+%/01%02%"3$%4,*5$-%02%*,4(&('#/(")67//%#1$4&($+8$#/"3%#1$4&($+9$1,/#"(04%#1$4&($+!$-:(&$+%#1$4&($+;.,&#"(04%#1$4&($+<#4$/%=>?@>?@>A@>B@>C@=D=D=D=D=D.+(E.+FGHG?IGHGJGGHGAIGHGACGHGAG>GHGGB@>GHG?G@>GHGGI@>GHGGJ@>GHGGJ@K0/04(#/%+"#"$%022(&(#/+(GH?GLGH?J?GHGCGGHGMGGH?BG>GHGBB@>GHGCJ@>GHGBJ@>GHGCL@>GHGCA@K0/04(#/%+"#"$%#1$4&($+(NGHG?MNGHGJCGHGBL?NGHGOAGHGGM>GHGBB@>GHGCC@>GHGBI@>GHGBC@>GHGCB@P(+"#4&$%"0%-0)#/%-0#.+(GHGGOGHG?ANGHGBOGHGACGHGGO>GHGA?@>GHGA?@>GHGAI@>GHG?M@>GHGAM@<#4$/%==Q$(1350-+R%&0/04(#/%+"#"$%022(&(#/+GHBBLGHABJGHAOLGH?LBGHCBO>GH?GG@>GHGJ?@>GHGJC@>GHGMG@>GHGIL@Q$(1350-+R%&0/04(#/%+"#"$%#1$4&($+?HACAGHBMBGHJ?OGHJIMGHLLO>GH?B?@>GHGJC@>GHGMM@>GHGMO@>GH??J@Q$(1350-+R%.(+"#4&$%"0%-0)#/%-0#.+NGHIIANGHBCONGHCMGNGHJGONGHOCB>GHAAB@>GHGOO@>GHGLB@>GH?GI@>GH?LC@Q$(1350-+R%02%4$(1350-+%&0/04(#/%+"#"$%022(&(#/+GHAMIGHGBBGH?AAGHGILGHAJI>GH?OO@>GHGMM@>GHGLG@>GHGOI@>GH?ML@Q$(1350-+R%02%4$(1350-+%&0/04(#/%+"#"$%#1$4&($+GHJMLGHAJIGHA?CGHB??GHBOI>GH?IG@>GHGOC@>GHGIG@>GHGIC@>GH?MI@Q$(1350-+R%02%4$(1350-+%.(+"#4&$%"0%-0)#/%-0#.+GH?OAGHGC?GHGI?GHGIIGH?CI>GH?OB@>GHGMG@>GHGOG@>GHGLJ@>GH?CB@S(-+"N+"#1$%9A6GHMO?GHMCCGHMLCGHMOJGHMAMT5+$-:#"(04+IOJIOJIOJIOJIOJ!""#$%&'()*+,#(-.(/0$1#2"03*34(51*1#(678&,&+3&82(9#:1(;#:"0$:#(58+:#1:(0<(28$&=&"*,&14(*>#$=&#:;U,(/(5-(,*%5$+"%-$+'04+$S(-+"%+"#1$%20-%4$(1350-+R%+"#"$%#1$4&($+7//-$'0-"$.$+"(*#"$+#-$(4+"-,*$4"#/:#-(#5/$+#:$-#1$*#-1(4#/$22$&"+02"3$5$+"-$+'04+$$U,#"(04H7//*0.$/+(4&/,.$.$'#-"*$4"2(V$.$22$&"+#4."3$20//0W(41:$&"0-02&04"-0/+6/041(",.$X/#"(",".$X+,-2#&$#-$#X$/$:#"(04X#44,#/-#(42#//X.(+"#4&$"0#&,--$4"3(13W#)X#4.#.$'#-"*$4"&#'("#/.,**)HK0/,*4?-$'-0.,&$+&0/,*4B02Y#5/$B20-&0*'#-(+04HK0/,*4A*$#+,-$+/0&#/+"#"$&#'#&(")#+"3$/014,*5$-023$#/"3#1$4&($+#4.3$#/"3'0+"+HK0/,*4B*$#+,-$+/0&#/+"#"$&#'#&(")#+"3$/014,*5$-0240"#-)022(&$+XF#(/+X.$$.+-$1(+"-)022(&$+X#4."#V&0//$&"(04022(&$+HK0/,*4C*$#+,-$+/0&#/+"#"$&#'#&(")#+"3$/014,*5$-02Y$/$&0*022(&$+X'0+"022(&$+X#4.2(-$+"#"(04+HK0/,*4J*$#+,-$+/0&#/+"#"$&#'#&(")#+"3$/014,*5$-02',5/(&+&300/+#4./(5-#-($+H<#4$/=-$'0-"+"3$$+"(*#"$+02"3$5$+"-$+'04+$$U,#"(04X#4.<#4$/==-$'0-"+"3$2(-+"+"#1$20-"3$(4+"-,*$4"#/:#-(#5/$+*0.$/+H=4#//*0.$/+/01'0',/#"(04(+(4+"-,*$4"$.,+(41?LCB'0',/#"(04H!"#4.#-.$--0-+-$'0-"$.(4'#-$4"3$+(+#-$-05,+""0#-5("-#-)3$"$-0+Z$.#+"(&(")#4.#//0W20-#-5("-#-)+'#"(#/&0--$/#"(04W("3(4"3$%4$"W0-Z%20//0W(41%K04/$)%>?IIM@%#.#'"$.%"0%"3$%4$"W0-Z%+"-,&",-$%#+%.$+&-(5$.%(4%"3$%"$V"HA
-1
-0
-
-	  	  	  	  	  	  !"#$%&#!"#$%&#!"#$%&#!"#$%&#!"#$%&#!"#$%&#''(')*+,-(-'+-./.0+)*,+,*.+)*)+-*/+1*1+1*)+*&23456789"9:#"54"94;854<"#$6=9>:9"3$9=5?23@256A94688$;=3@3:6835394798#?$9B36==653#=6845659@6:6@35CD!E5#529$9B36=F;43=G5299453$659B:6"6$959"4#<529$#B98+H#@6845659@6:6@35C34$964;"9B64529=;$79"#<8#@68456596G9=@394+I653#=6845659@6:6@35C34$964;"9B64529=;$79"#<=653#=68:;783@9$:8#C994+&2956789"9:#"54529$9B36=4#<5299$:3"3@686=B@#;=59"<6@5;68B345"37;53#=4;43=G52945";@5;"68:6"6$959"4#<529=#=83=96"$#B989453$659B?352JKKF3=529G9=9"689L;3837"3;$9>9"@349?29"97#52$;=3@3:68353946=B529=653#=6889M9826M97945"94:#=B9B5#52942#@A+&2983<9L;6835C3=B9>34<#"-00/F529:;783@;53835394@#M9"6G9D6L;9B;@5F989@5"3@35CF6=B49?6G9E34<#"'(('F529<"6@53#=#<529:#:;8653#=%67#M9%529%:#M9"5C%83=9%34%<#"%'((*F%6=B%529%49@#=B6"C%9="#88$9=5%"659%34%529%-00'N'(('%6M9"6G9+O9=9"68%9L;3837"3;$%@26=G9%3=%$9B36=%#<PQ9"@9=5%@26=G9P'*+-R'-+,R,+*R'+1R'+1R-+)R"##$%&'()*+!,$)-./)0(#$1'2$%34)52#,'6+3'7%8)79):7;'%<)",,):=%'6'#+,'3'$8)!$,7>):$&'+%)?+3'7%+,)@3+3$)A+#+6'3B)37):$&'+%?7%,'%$+1)27&$,)C=%&$1)@::)#+1+2$3$1)$83'2+3$8DJ5659%@6:6@35CH3<9%L;6835C%3=B9>S53835394%@#M9"6G9R%=#5%3=%:#M9"5CJ9@#=B6"C%9="#88$9=5I653#=68PH#@68P!"#$%&#!"#$%&#!"#$%&#!"#$%&#!"#$%&#!"#$%&#''(')*+)*(*'+(,-,.+*/0+0/,+)/1+*/.+(/)+)/1+)&23456789"9:#"54"94;854<"#$6=9>:9"3$9=5?23@256A94688$;=3@3:6835394798#?$9B36==653#=6845659?93C2545#529$9B36=D;43=C5299453$659B:6"6$959"4#<529$#B98+E#@6845659@6:6@35F34$964;"9B64529=;$79"#<8#@68456596C9=@394+G653#=68H89I9845659@6:6@35F34$964;"9B64529=;$79"#<=653#=68H89I98:;783@9$:8#F994+&2956789"9:#"54529$9B36=4#<5299$:3"3@686=B@#;=59"<6@5;68%B345"37;53#=4%;43=C%529%45";@5;"68%:6"6$959"4%#<%529%=#=83=96"%$#B98%9453$659B%?352%JKKD%3=%529%C9=9"68%9L;3837"3;$%9>9"@349%?29"9%7#52%$;=3@3:6835394%6=B%529%=653#=68%89I98%26I9%7945"94:#=B9B5#52942#@A+&2983<9L;6835F3=B9>34<#"*..-D529:;783@;53835394@#I9"6C9M6L;9B;@5D989@5"3@35FD6=B49?6C9N34<#"'(('D529<"6@53#=#<529:#:;8653#=67#I9529:#I9"5F83=934<#"%'((/D%6=B%529%49@#=B6"F%9="#88$9=5%"659%34%529%*..'H'(('%6I9"6C9+J5659%@6:6@35FE3<9%L;6835F%3=B9>O53835394%@#I9"6C9P%=#5%3=%:#I9"5FJ9@#=B6"F%9="#88$9=5Q9"@9=5%@26=C9R*-+.P!""#$%&'()*+,#(--.(/'"#0&1#$23(41",&5*2&6$7(68(96:&$;(2<#(=*2&6$*,>?#:#,(@#&;<27(68(9A$&5&"*,&2&#7(+#,6B(9#%&*$(26(9#%&*$S9=9"68%9L;3837"3;$%@26=C9%3=%$9B36=%#<RG653#=68R'(+(P'+0P'+/P0+0P*+.PE#@68RA
-1
-1
-
-	  	  	  	  	  	  !"#"$%&#'#&(")%*$#+,-$.%#+/012032042052062072082092:;!:;!:;!:;!:;!:;!:;!:;!<$"=$$>>$++%?$>"-#@(")(6ABB6A14BA699A170CAB67201A487201A549201AB812<D>#&(&E%?$>"-#@(")(3A1CCA3B4A68CA6B01A415201A598201AB54203A1B62;D&#@%?@,+"$-(>F(CA46CA39CA67CA540CACB120CACBC20CA13B20CA1442@DF%'D',@#"(D>(G13A35G13AC6G13AC1G13A14G19A61G19A1BG19A1CG19A4301A573201A569201A553201A5CB203ACB5203AC97203AC6C203AC142H3CA9CCA9CCA9CCA91CA91CA9CCA91CA91:I+$-J#"(D>+B73B73B73B73B99B99B99B99@DF%DK%>,*I$-%DK%*,>(&('#@(")%',I@(&%$*'@D)$$+!"#"$%"$&'()*+),-".'/#&+0)-'*")--12)&+1$'13'4&)&"'2)#)2+&56##"$%+7'8),-"'9:;'<"=*"44+1$4'13'/#&+0)-'<")--12)&+1$'13'>&)&"'?)#)2+&5'1$'@"&A1*B'?"$&*)-+&5'>&)&+4&+24L@@-$'D-"$.$+"(*#"$+#-$K-D*:;!-$F-$++(D>+AL@@*D.$@+(>&@,.$#&D>+"#>"M.$'#-"*$>"K(N$.$KK$&"+M#.$'#-"*$>"&#'("#@.,**)M#>."E$KD@@D=(>FJ$&"D-DK&D>"-D@+#>."E$(-O,#.-#"(&+/@D>F(",.$M@#"(",".$M+,-K#&$#-$#M$@$J#"(D>M#>>,#@-#(>K#@@M.(+"#>&$"D#&,--$>"E(FE=#)M#>.@DF'D',@#"(D>A!"#>.#-.$--D-+-$'D-"$.(>'#-$>"E$+(+#-$-DI,+""D#-I("-#-)E$"$-D+P$.#+"(&(")%#>.%#@@D=%KD-%#-I("-#-)%+'#"(#@%&D--$@#"(D>%=("E(>%"E$%>$"=D-P%KD@@D=(>F%?D>@$)%01BB72%#.#'"$.%"D%"E$%>$"=D-P%+"-,&",-$%#+%.$+&-(I$.%(>%"E$%"$N"A@DF%DK%>,*I$-%DK%*,>(&('#@(")%#F$>&($+Likelihood Function on the Network
-
-In this section we suggest an approach for MLE estimation of a network model with nonlinear best responses
-like ours, taking the national state’s choices as predetermined. Since the diﬃculty in writing the likelihood
-lays on the cross municipality choice dependencies, we abstract from the prosperity outcomes and focus on
-the likelihood for the vector of state capacity choices. In particular, we show how to express the likelihood
-of the data on a network game with nonlinear best responses, and suggest an estimation procedure.
-
-We begin establishing some notation. Recall that N (i) is the set of neighbors of i, and denote L(i) to
-be the set of i’s neighbors’ local state capacity choices. Thus, L(i) = {lj : j ∈ N (i)}. Assume ξi ∼ f (ξ).
-This and the best response in equation (14) imply that we can express the coditional likelihood for li as
-(conditional on i’s neighbors’ choices):
-
-Li(li|L(i); ψ) ≡ f (hξ(li|pi, bi; ψ))|Ji| ,
-
-where |Ji| is the Jacobian of the transformation. Notice that the network structure implies that conditional
-on L(i), li ⊥ lk for any k /∈ L(i). In other words, once we condition on i’s neighbors’ choices, choices of
-all other municipalities provide us no further information. Thus, Li(li|L(i); ψ) = Li(li|l−i; ψ), where l−i
-denotes all local state capacity choices except i’s. Now index (order) the set of all observations in an
-arbitrary way from i = 1 to n. The joint likelihood of l = (l1, l2, ..., ln) can be expressed as the product of
-conditionals and marginals:
-
-L(l; ψ) = L1(l1|l2, ..., ln; ψ)L2(l2, ..., ln; ψ)
-
-= L1(l1|l2, ..., ln; ψ)L2(l2|l3, ..., ln; ψ)L(l3, ..., ln; ψ)
-
-(cid:89)
-
-=
-
-Lj(lj|lj+1, ..., ln; ψ)L(ln)
-
-Notice that for a given j, if ∀k < j, k /∈ N (j), put diﬀerently, if no neighbor of j has an index below j,
-then
-
-j=1
-
-Lj(lj|lj+1, ..., ln; ψ) = Lj(lj|L(j); ψ)
-
-This condition cannot hold for all municipalities. In particular, there will exist municipalities j such that
-∃k1, k2, ..., kt < j and (k1, k2, ..., kt) ∈ N (j), in which case
-
-Lj(lj|lj+1, ..., ln; ψ) (cid:54)= Lj(lj|L(j); ψ)
-
-However, for a sparse network, with an appropriately chosen order of municipalities, it will be true for a
-
-A12
-
-signiﬁcant subset of municipalities. Let us next denote the set of municipalities for which this equality
-holds by A. Similarly, denote the set of municipalities for which the equality does not hold as B.
-
-Although we do not have a known expression for the conditional likelihood of the observations j ∈ B,
-
-we can observe that
-
-Lj(lj|lj+1, ..., ln; ψ) =
-
-ˆ
-
-ˆ
-
-=
-
-Lj(lj|lk1, lk2, ..., lkt, lj+1, ..., ln; ψ)L(lk1, lk2, ..., lkt)dlk1dlk2...dlkt
-
-Lj(lj|L(j) ∪ {ls : s > j}; ψ)L(lk1, lk2, ..., lkt)dlk1dlk2...dlkt
-
-Here we condition on the “missing neighbors," (with orders lower than j), and then integrate them out
-assuming we knew the marginal density for them. This is convenient since Lj(lj|L(j) ∪ {ls : s > j}; ψ) =
-Lj(lj|L(j); ψ), that is, after conditioning for all of j’s neighbors, lj is independent of all other observations.
-Thus we have
-
-ˆ
-
-Lj(lj|lj+1, ..., ln; ψ) =
-
-Lj(lj|L(j); ψ)L(lk1, lk2, ..., lkt)dlk1dlk2...dlkt.
-
-As a result, the joint likelihood can be expressed as a function of all of the conditionals, which are simply
-given by the best responses:
-
-ˆ
-
-L(lj|L(j); ψ)L(L(j) ∩ {ls : s < j}; ψ)d(L(j) ∩ {ls : s < j})
-
- .
-
-L(l1, ..., ln; ψ) =
-
-Lj(lj|L(j); ψ)
-
-In the above expression, for each j ∈ B, we are integrating out the state capacity choices of neighbors of j
-with indices lower than j. Once again, notice that for a relatively sparse network, the above integral will
-not be too high-dimensional. In the expression for the joint likelihood above, the issue is that we do not
-know the marginals in the second bracket. One feasible strategy would be to posit a prior joint density
-L0(l1, l2, ..., ln), and to use this prior to compute a “Bayesian” MLE of ψ:
-
-L(lj|L(j); ψ){L0(L(j)∩{ls : s < j}; ψ)d(L(j)∩{ls : s < j}).
-
-A13
-
-(cid:89)
-
-j∈A
-
-(cid:88)
-
-j∈A
-
-(cid:89)
-
-j∈B
-
-ˆ
-
-(cid:88)
-
-j∈B
-
-0
-
-ˆψ
-
-= argmaxψ
-
-lnLj(lj|L(j); ψ)+
-
-ln
-
-
