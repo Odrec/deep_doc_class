@@ -1,1164 +1,0 @@
-Management	  von	  Informationssystem-­‐Architekturen
-Lehrveranstaltung,	  Universität	  Osnabrück,	  Sommersemester	  2016
-Prof.	  Dr.	  Oliver	  Thomas
-Dr.	  Novica	  Zarvić
-Sven	  Jannaber
-
-Universität	   Osnabrück
-Fachgebiet	   Informationsmanagement	   und	  Wirtschaftsinformatik
-oliver.thomas@uni-­‐osnabrueck.de
-novica.zarvic@uni-­‐osnabrueck.de
-Sven.jannaber@uni-­‐osnabrueck.de
-http://www.imwi.uni-­‐osnabrueck.de/
-
-Einleitung
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-22
-
-Warum	  EAM?
-Beispiel:	  Outsourcing	  verändert	  Betrachtung	  der	  IT	  im	  Mittelstand
-
-7000
-
-6000
-
-5000
-
-4000
-
-3000
-
-2000
-
-1000
-
-0
-
-Software	  as	  a	  Service	  (SaaS)
-Business	  Process	  Outsourcing	  (BPO)
-Business	  Process	  Management	  (BPM)
-Hosting
-Co-­‐Location
-
-2010
-
-2011
-
-2012
-
-2013
-
-2014
-
-2015
-
-Prognosen	  2010	  bis	  2015:	  Outsourcing	  bei	  mittelständischen	  Unternehmen	  in	  Deutschland,	  Österreich	  
-und	  Schweiz
-
-Angelehnt	   an:	  Lünendonk (2010)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-3
-
-Warum	  EAM?
-Beispiel:	  Outsourcing-­‐Trends	   beeinflussen	  IT-­‐Berufe	  und	  Rollen
-
-TOP	  10-­‐Outsourcing-­‐Trends	  nach	  Gartner
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-
-Hyperdigitalisierung
-Globalisierung
-Consumerisation
-Cloud
-Intelligente	  Technologien
-Sicherheit	  und	  Privacy
-Baukasten	  statt	  Fertigbau
-Verstärkter,	  harter	  Wettbewerb
-Wert(schöpfungs)netze
-Hypervertikalisierung
-
-Die	  Rolle	  des	  IT-­‐ und	  Sourcing-­‐Managers
-„Fazit:	  "In	  der	  Zukunft des	  IT-­‐Servicemarktes	  
-und	  des	  Outsourcings	  spielen IT-­‐Manager,	  
-Sourcing-­‐Entscheider	  und	  Service-­‐
-Executives wichtigere	  Rollen	  denn	  je",	  sagt	  
-Allie	  Young,	  Vice President und	  Distinguished
-Analyst	  bei Gartner.	  Sie	  müssten	  
-Unternehmen	  helfen,	  durch	  den	  Anbieter-­‐
-Markt zu	  navigieren	  und	  neue	  Formen des	  
-Outsourcings	  erfolgreich	  zu	  nutzen.“
-
-Quelle:  Pütter (2011)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-4
-
-Agenda
-¡ Wettbewerbssituation	  von	  Unternehmen
-
-• Wandel	  zur	  Informationsgesellschaft
-• IT	  doesn‘t matter?
-• Entwicklung	  der	  „Informatisierung“
-• Veränderung	  der	  Wertschöpfung
-
-¡ Wettbewerbsvorteile	  durch	  Informationstechnologie
-
-• Informationstechnologische	  Treiber
-• Serviceorientierte	  Architekturen	  (SOA)
-• Cloud Computing
-
-¡ Enterprise	  Architecture Management
-
-• Einführung
-• EAM	  als	  ganzheitlicher	  Ansatz
-• Wettbewerbsvorteile	  durch	  EAM
-
-¡ Zusammenfassung
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-5
-
-Extremer	  Einfluss	  digitaler	  Technologien	  
-Alltäglicher	  Informationskonsum	  früher	  vs.	  heute
-
-Zug-­Szene  USA,   eine  Person  schaut  nicht  in  die  Zeitung
-
-Bahnhof-­Szene,   Sydney,  Australien,   eine  
-Person  schaut  nicht  auf  das  Handy
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-6
-
-Wettbewerbssituation	  von	  Unternehmen
-Wandel	  zur	  Informationsgesellschaft
-
-¡ Informationsgesellschaft
-
-• Wandel	  der	  Gesellschaft	  von	  einer	  kapitalintensiven	  Industriegesellschaft	  hin	  zu	  einer	  
-
-Dienstleistungsgesellschaft
-
-¡ Kennzeichen	  der	  Informationsgesellschaft
-
-• Informations-­‐ und	  Kommunikationstechnik	  (IKT)	  durchdringt	  alle	  Bereiche des	  öffentlichen	  und	  
-
-privaten	  Lebens
-
-• Gesteigertes	  Kommunikations-­‐ und	  Informationsaufkommen
-• Entstehung	  eigenständiger	  Branchen für	  Informationstechnik	  (z.B.	  Softwareindustrie)
-• Veränderung	  von	  gesellschaftlichen	  Werten
-• Neue	  Potenziale	  für	  die	  Gesellschaft	  (Selbstverwirklichung,	  Informiertheit,	  usw.)	  sowie	  neue	  
-
-Risiken (Überwachungsstaat,	  Vereinsamung,	  usw.)
-
-Vgl.	  Kuhlen	  (1995,	  S.	  45ff.),	  Picot,	  Reichwald	   &	  Wigand	  (2003,	  S.	  4-­‐5)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-7
-
-Wettbewerbssituation	  von	  Unternehmen
-Wandel	  zur	  Informationsgesellschaft
-
-Zusammenhang	  zwischen	  Informationsgesellschaft	  und	  Informationsökonomie
-¡ Es	  besteht	  ein	  „Inklusionsverhältnis“	  zwischen	  Informationsgesellschaft	  und	  
-
-Informationsökonomie
-
-Informationsgesellschaft
-
-Informationsökonomie
-
-Makro-­ökonomische  Aspekte
-Mikro-­ökonomisches  Aspekte
-Betriebswirtschaftliche  Aspekte
-
-Politische,  rechtliche,  soziale,  
-
-kulturelle  etc.  Aspekte
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-8
-
-Abbildung	  angelehnt	   an	  Kuhlen	  (1995,	  S.	  44)
-
-Wettbewerbssituation	  von	  Unternehmen
-Wandel	  zur	  Informationsgesellschaft
-
-„(…)	  das,	  was	  heute	  in	  den	  verschiedenen	  Permutationen	  von	  Wirtschaft,	  Ökonomie,	  
-
-Industrie	  einerseits	  und	  Wissen	  und	  Informationen	  andererseits	  z.B.	  
-
-Informationsökonomie	  oder	  Wissensindustrie	  genannt	  wird	  (…)“	  – Kuhlen	  (1995)
-
-¡ Informationsökonomie
-
-• Wirtschaftliche	  Dimension der	  Informationsgesellschaft
-
-¡ Kennzeichen	  der	  Informationsökonomie
-
-• Informationen	  sind	  ein	  zentraler	  Produktionsfaktor
-• Informationen	  werden	  zunehmen	  als	  eigenständiges	  Gut gehandelt
-• Entwicklungen	  der	  IKT	  ermöglichen	  neue	  Formen	  der	  Arbeitsorganisation innerhalb	  und	  
-
-zwischen	  Unternehmen
-
-• Informationelle	  Vernetzung	  globalisiert	  und	  dynamisiert die	  Wirtschaft
-
-Vgl.	  Kuhlen	  (1995,	  S.	  52ff.),	  Picot,	  Reichwald	   &	  Wigand	  (2003,	  S.	  60ff.)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-9
-
-Wettbewerbssituation	  von	  Unternehmen
-Entwicklung	  der	  „Informatisierung“
-
-¡ Ablauf	  in	  verschiedenen	  Phasen
-
-Mitte  der  1980er-­Jahre
-
-Mitte  der  1990er-­Jahre
-
-Business  
-Process  
-Engineering
-
-Mauern  zwischen  Abteilungen
-
-Ende  der  1990er-­Jahre
-
-Geschäftsprozesse
-
-2000  und  später
-
-Gleichzeitig	   findet	  Wertschöpfung	   	  immer	  
-
-stärker	  in	  Netzwerken	  statt.
-
-Electronic  
-Business  
-Engineering
-
-Mauern  zwischen  Unternehmen
-
-Electronic  Business
-
-Quelle:	   Scheer,	   Erbach	  &	  Thomas	   (2000,	  S.	  8)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-10
-
-Wettbewerbssituation	  von	  Unternehmen
-IT	  doesn‘t	  matter?
-
-„IT	  Management	  should,	  frankly,	  become boring.	  The	  key to success (…)	  is no longer to seek
-
-advantage(…)“	  – Carr	  (2003)
-
-¡ Ist	  die	  Rolle	  der	  IT	  überbewertet?
-
-¡ Neue	  Regeln	  für	  das	  IT-­‐Management	  nach	  Carr	  (2003)
-
-• Weniger	  Ausgaben	  für	  die	  IT	  in	  Unternehmen	  („Spend less“)
-• Auf	  bewährte	  Technik	  setzen	  („Follow,	  don‘t lead“)
-• Die	  Schwächen	  der	  eigenen	  IT	  ausmerzen	  anstatt	  in	  neue	  Chancen	  zu	  investieren	  
-
-(„Focus	  on	  vulnerabilities,	  not	  opportunities“)
-
-à Laut	  Carr	  liefert	  die	  IT	  keinen	  komparativen	  Konkurrenzvorteil.
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-11
-
-Wettbewerbssituation	  von	  Unternehmen
-IT	  doesn‘t	  matter?
-
-¡ Gegenbeispiel	  PIPE
-
-• Erstellung	  einer	  Architektur	  zur	  Abwicklung	  von	  Reparaturprozessen
-• Positive	  Effekte	  für	  alle	  Beteiligten (Hersteller,	  Handwerker	  und	  Kunde)
-• Abdeckung	  der	  Problematik	  mit	  bestehenden	  Lösungen	  nicht	  möglich
-
-à IT	  does matter:	  IT	  schafft	  komparativen	  Konkurrenzvorteil,	  aber	  auch	  hier	  gilt: IT	  darf kein	  
-
-Selbstzweck	  sein.	  Vielmehr	  ist	  IT	  Werkzeug	  zur	  Umsetzung.
-
-Hersteller
-
-Sachleistungen  +  
-Dokumentation
-
-Hybrides
-Produkt
-
-SHK-­Betriebe
-
-Kunden
-
-Integrierte  Entwicklung
-
-Sach-­
-leistung
-
-Serviceprozess-­
-dokumentation
-
-PIPE-­
-Dienst-­
-leistungen
-
-Dienst-­
-
-leistungen
-
-Sachleistung
-
-+  TKD
-
-Anforderungen  an  die  Sachleistung,
-Unterstützung  der  integrierten  
-Entwicklung  durch  PIPE-­Methode
-
-Anforderungen  an  Sach-­
-und  Dienstleistungen
-
-Feedback  über  Sach-­  und  Dienstleistungsqualität
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-PIPE-­Dienstleistungsunternehmen
-
-Vgl.	  Thomas,	   Loos	  &	  Nüttgens	  (2010)
-
-12
-
-Wettbewerbssituation	  von	  Unternehmen
-Veränderung	  der	  Wertschöpfung
-
-¡ Wertkette	  nach	  Porter
-
-• Gliederung	  des	  Unternehmens	  in einzelne	  Bereiche (Produktion,	  Beschaffung	  etc.)
-• Wertketten	  einzelner	  Unternehmen	  reihen	  sich	  aneinander	  zu	  einem	  Wertsystem
-
-unter-­
-stützende
-Aktivitäten
-
-Unternehmensinfrastruktur
-
-Personalwirtschaft
-
-Technologieentwicklung
-
-Beschaffung
-
-Eingangs-­
-
-logistik
-
-Operationen Marketing
-&  Vertrieb
-
-Ausgangs-­
-
-logistik
-
-Kundendienst
-
-Gewinnspanne
-
-w in n s p a n n e
-
-e
-
-G
-
-primäre  Aktivitäten
-
-Vgl.	  Porter	   (1985)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-13
-
-Wettbewerbssituation	  von	  Unternehmen
-Veränderung	  der	  Wertschöpfung
-
-¡ Heutiger	  Wandel	  von	  Wertketten
-
-• Durchbrechung	  von	  etablierten	  und	  einheitlichen Organisationsstrukturen
-• Weiterentwicklung	  der	  Datenübertragung
-• Möglichkeit	  zum	  E-­‐Business
-
-¡ Dekonstruktion	  der	  Wertkette
-
-• Weiterentwicklung	  durch	  die	  Boston	  Consulting	  Group	  (BCG)
-• Zerlegung	  jedes	  Wertkettenelements	  in	  ein	  separates	  Geschäft
-• Zusammensetzung	  einzelner	  Elemente	  zu	  einer	  neuen	  Kette
-
-¡ Gründe	  für	  die	  Dekonstruktion
-
-• Durch	  Informationstechnologie	  sinken	  die	  Kosten	  der	  Informationsbeschaffung	  erheblich
-• Sinkende	  Handelsbarrieren	  um	  global	  vergleichbare	  Qualität	  anzubieten
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-Vgl.	  Ehrmann	   (2007,	  S.	  97ff.)
-
-14
-
-Wettbewerbssituation	  von	  Unternehmen
-Veränderung	  der	  Wertschöpfung	  – Beispiel	  Finanzdienstleister
-¡ Das	  Konzept	  der	  De-­‐Konstruktion	  von	  Wertketten
-
-Erhöhung	   von	  
-Komplexität	   und	  
-Abhängigkeiten!
-
-Filialgeschäft
-
-Giro-­  und  
-Sparkonten
-
-Kredite
-
-Anlagen
-
-Versiche-­
-rungen
-
-Erfindung  und  Aufmachung  von  Bankprodukten
-
-Großrechner
-
-Transaktionsverarbeitung  und  Kontoführung
-
-Bargeld-­
-automaten
-
-Bankschalter
-
-Verkauf  von  Bankprodukten  und  Abrechnung
-
-Neu  gestaltetes  Geschäftsmodell
-
-Produktschöpfer
-
-Navigatoren
-
-Bank
-
-Nicht-­Bank
-
-Suchmaschine
-
-Datenbank
-
-Investment-­
-
-fonds-­
-manager
-
-Investmentfonds-­
-
-Datenbank
-
-Bank
-
-Bank
-
-Hypotheken-­
-Datenbank
-
-Die  eigene  Bank
-
-Bank
-
-Hypotheken-­  
-Kreditgeber
-
-Google
-
-Yahoo!
-
-Service  Provider  per  
-
-Internet
-
-Browser
-
-Check-­Free
-
-Finanzprogramm  
-
-Quicken
-
-Bank
-
-Servicenummern  
-der  eigenen  Bank
-
-Finanzprogramm  
-der  eigenen  Bank
-
-Klassisches  Bankgeschäft
-§
-
-Vertikal   integriertes   Unternehmen
-Alle   Aktivitäten   finden   innerhalb der  Unternehmung   statt
-
-§
-
-Neues Bankenmodell
-§
-
-§
-
-Dekonstruktion   des  „klassischen  Modells“
-Zu  den  vorhandenen   Elementen,   werden   zusätzliche, neue  
-Elemente   hinzugefügt.
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-Quelle:	   Vgl.	  Ehrmann	   (2007,	  S.	  99ff.)
-
-15
-
-Wettbewerbssituation	  von	  Unternehmen
-Veränderung	  der	  Wertschöpfung
-
-¡ Folgen	  der	  Dekonstruktion
-
-• Jede	  Wertaktivität	  muss	  rentabel sein
-
-– Andernfalls	  könnten	  spezialisierte	  Anbieter	  („Layer	  Players“) einzelne	  Funktionen	  
-
-übernehmen
-
-– Ende	  der	  Quersubventionierung	  von	  Wertaktivitäten
-
-• Strategischer	  Vorteil	  kann	  durch	  intelligenten	  und	  vernetzten	  IT-­‐Einsatz erreicht	  werden
-
-– Erfordert	  eine	  kohärente	  und	  integrierte	  Betrachtungsweise	  (Enterprise	  Architecture)
-
-¡ Vorteile	  der	  De-­‐Konstruktion
-
-• Konzentration	  auf	  rentable	  Bereiche	  und	  Auslagerung	  anderer	  Aktivitäten
-• Entwicklung	  neuer	  profitabler	  Geschäftsmodelle („Stärken“	  nutzen	  und	  auf	  den	  Markt	  bringen)
-à Aber:	  Verlust	  der	  Kontrolle über	  Teilbereiche	  an	  Zulieferer	  oder	  Marktteilnehmer
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-Vgl.	  Ehrmann	   (2007,	  S.	  98-­‐99)
-
-16
-
-Agenda
-¡ Wettbewerbssituation	  von	  Unternehmen
-
-• Wandel	  zur	  Informationsgesellschaft
-• IT	  doesn‘t matter?
-• Entwicklung	  der	  „Informatisierung“
-• Veränderung	  der	  Wertschöpfung
-
-¡ Wettbewerbsvorteile	  durch	  Informationstechnologie
-
-• Informationstechnologische	  Treiber
-• Serviceorientierte	  Architekturen	  (SOA)
-• Cloud Computing
-
-¡ Enterprise	  Architecture Management
-
-• Einführung
-• EAM	  als	  ganzheitlicher	  Ansatz
-• Wettbewerbsvorteile	  durch	  EAM
-
-¡ Zusammenfassung
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-17
-
-Wettbewerbsvorteile	  durch	  Informationstechnologie
-Informationstechnologische	  Treiber
-
-¡ Vernetzung durch	  Informationstechnologie	  verringert	  Reaktionszeiten
-
-¡ Generierung	  von	  neuen	  Konzepten	  durch	  die	  Informationstechnologie
-
-• CRM	  (Customer	  Relationship	  Management)
-
-– Prozesse	  und	  Systeme	  zur	  Kundenpflege	  (à höhere	  Kundenwertschöpfung)
-
-• SCM	  (Supply	  Chain	  Management)
-
-– Lieferkettenmanagement	  zur	  Kontrolle	  eines	  Prozesses	  von	  den	  ersten	  Zulieferern	  bis	  zum	  
-
-Endkunden	  (à bessere	  Integration)
-
-• ERP	  (Enterprise	  Ressource	  Planning)
-
-– Unternehmensweite	  Ressourcenplanung	  zur	  Abdeckung	  aller	  Unternehmensprozesse	  in	  
-
-einem	  System
-
-¡ Layer	  Player-­‐Konzepte
-
-• SOA	  (Service-­‐oriented architecture)
-• Cloud	  Computing
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-18
-
-Wettbewerbsvorteile	  durch	  Informationstechnologie
-Serviceorientierte	  Architekturen
-
-¡ Serviceorientierte	  Architekturen	  (SOA)
-
-„Service	  Oriented	  Architecture	  (SOA)	  is	  a	  paradigm	  for	  organizing	  and	  utilizing	  distributed	  
-capabilities that	  may	  be	  under	  the	  control	  of	  different	  ownership	  domains.	  “	  (OASIS	  2006)
-
-• Architektur	  in	  der	  Informationstechnologie	  (verteilte	  Systeme)
-• Kapselung	  von	  einzelnen	  IT-­‐Komponenten für	  einzelne	  höhere	  Dienste	  (Orchestrierung)
-• Standardisierung von	  einzelnen	  Prozessen	  (Diensten)	  in	  einem	  Unternehmen
-
-– Dienste	  werden	  austauschbar
-– Dienste	  werden	  flexibler
-
-• Ursprüngliche	  Versprechen	  haben	  sich	  in	  der	  Praxis	  nicht	  bewährt,	  aber	  technische	  Grundlagen	  
-
-aus	  dem	  SOA-­‐Hype	  sowie	  der	  Gedanke	  der	  Kapselung	  sind	  geblieben.
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-19
-
-Wettbewerbsvorteile	  durch	  Informationstechnologie
-Serviceorientierte	  Architekturen
-
-¡ Beispiel	  für	  Serviceorientierte	  Architekturen	  (SOA)
-
-• Beispielhafter	  Geschäftsprozess	  eines	  Online-­‐Versandhändlers	  
-
-Erfassung
-
-Verfügbarkeits-­
-
-prüfung
-
-Bestellung
-
-Versand
-
-Zahlungseingang
-
-• Jeder	  Prozessschritt	  wird	  in	  einem	  Dienst	  gekapselt	  mit	  einer	  entsprechenden	  
-
-Schnittstellenbeschreibung	  
-
-• Interne	  Implementierungen	  der	  einzelnen	  Dienste	  unabhängig	  voneinander
-• Dienste	  müssen	  nicht	  zwangsläufig	  im	  eigenen	  Unternehmen vorhanden	  sein
-• Einzelne	  Dienste	  sind	  jedoch	  unabhängig	  voneinander	  definiert und	  durch	  IT	  umgesetzt
-
-Definierte	  und	  implementierte	  Dienste	  bleiben	  auch	  dann erhalten,	  wenn sich ganze	  
-Geschäftsprozesse	  ändern
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-20
-
-Wettbewerbsvorteile	  durch	  Informationstechnologie
-Cloud	  Computing
-
-¡ Cloud	  Computing
-
-• On-­‐Demand	  Bereitstellung	  von	  Diensten	  über	  Netzwerke (z.B.	  das	  Internet)	  zur	  dynamischen	  
-
-Nutzung
-
-– Standortunabhängige Nutzung
-– Plattformunabhängige Nutzung
-– Nutzungsabhängige	  Bezahlung
-
-• Vereinfacht:	  Serviceorientierung	  
-• Rechner	  bzw.	  Dienste	  „in	  der	  (Internet-­‐)Wolke“
-• Dienste	  (z.B.	  Rechenleistung,	  Business	  Intelligence,	  Datenspeicher,	  Kollaborationssoftware	  etc.)	  
-
-werden	  nicht	  mehr	  selbst	  betrieben,	  sondern	  von	  einem	  spezialisierten	  Anbieter	  eingekauft
-
-• Anwendung	  und	  zugehörige	  Daten	  befinden	  sich	  also	  nicht	  auf	  dem	  lokalen	  Rechner sondern	  
-
-werden	  dynamisch	  geladen
-
-National  Institute  of  Standards   and  Technology  (NIST)  Definition:  “Cloud   computing  is  a  model  for  
-enabling  ubiquitous,  convenient,   on-­demand  network  access   to  a  shared  pool  of  configurable  computing  
-resources  (e.g.,  networks,  servers,  storage,  applications,   and  services)  that  can  be  rapidly  provisioned  
-and  released  with  minimal  management  effort  or  service  provider  interaction.  This  cloud  model  is  
-composed  of  five  essential  characteristics,   three  service  models,  and  four  deployment  models."  
-(Mell  &  Grance 2011)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-21
-
-Wettbewerbsvorteile	  durch	  Informationstechnologie
-Cloud	  Computing
-
-¡ Servicemodelle	  des	  Cloud	  Computing
-
-• Software-­‐as-­‐a-­‐Service	  (SaaS)
-
-– Nutzung	  einer	  Anwendung	  über	  die	  Cloud,	  meist	  per	  
-
-Webbrowser
-
-– Nutzer	  hat	  weder	  mit	  der	  Software-­‐ noch	  mit	  der	  
-
-Hardwarebereitstellung	   zu	  tun
-
-– Anwendungen	   sind	   dynamisch	   und	  mandantenfähig
-– Beispiel:	   Google	   Docs
-
-• Platform-­‐as-­‐a-­‐Service	  (PaaS)
-
-– Nutzer	  lädt	  erstellte	  Anwendung	   auf	  einen	   Server
-– Plattformanbieter	   übernehmen	  die	  Administration und	  
-
-Skalierung	   der	  Hardware	  und	   Softwareplattform
-
-– Beispiel:	   Microsoft	   Azure,	  Salesforce
-
-• Infrastructure-­‐as-­‐a-­‐Service	  (IaaS)
-
-– Angebot	   an	  dynamisch	  skalierbarer	  Hardware
-– Administration	   der	  kompletten	   Software,	   inkl.	  
-
-Systemsoftware	   durch	  den	  Nutzer
-
-– Beispiel:	   Amazon	  S3
-
-Vgl.	  Mell	   &	  Grance (2011)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-22
-
-Wettbewerbsvorteile	  durch	  Informationstechnologie
-Cloud	  Computing	  – Vor-­‐ und	  Nachteile
-¡ Vorteile
-
-• Kostenvorteile	  durch	  	  flexible	  Nutzungvon	  Diensten	  und	  Einsparung	  von	  lokalen	  Ressourcen
-• Konzentration	  auf	  Kernkompetenzen	  (keine	  eigenständige	  IT-­‐Abteilung	  notwendig)
-• Möglichkeit,	  eigene	  Stärken	  als	  Cloud-­‐Anbieter	  an	  den	  Markt	  zu	  verkaufen
-
-¡ Nachteile
-
-• Daten	  sind	  vielfach	  nur	  noch	  in	  der	  Cloud	  vorgehalten	  und	  somit	  bei	  Störungen	  nicht	  
-
-erreichbar
-
-• Verlust	  der	  Kontrolle	  über	  Teilprozesse	  (starke	  Abhängigkeit)
-• Datenschutzrechtliche	  Aspekte	  (bspw.	  sensible	  Daten	  deutscher	  Kunden	  gespeichert	  auf	  
-
-Server	  in	  den	  USA)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-23
-
-Agenda
-¡ Wettbewerbssituation	  von	  Unternehmen
-
-• Wandel	  zur	  Informationsgesellschaft
-• IT	  doesn‘t matter?
-• Entwicklung	  der	  „Informatisierung“
-• Veränderung	  der	  Wertschöpfung
-
-¡ Wettbewerbsvorteile	  durch	  Informationstechnologie
-
-• Informationstechnologische	  Treiber
-• Serviceorientierte	  Architekturen	  (SOA)
-• Cloud	  Computing
-
-¡ Enterprise	  Architecture	  Management
-
-• Einführung
-• EAM	  als	  ganzheitlicher	  Ansatz
-• Wettbewerbsvorteile	  durch	  EAM
-
-¡ Zusammenfassung
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-24
-
-Enterprise	  Architecture Management
-Einführung
-
-¡ Was	  ist	  eine	  Enterprise	  Architecture(EA)?	  
-
-• Es	  gibt	  eine	  große	  Menge an	  Definitionen,	  was	  eine	  Enterprise	  Architecture	  ist.	  
-• Diese	  Definitionen	  sind	  im	  Allgemeinen	  weder	  einheitlich	  noch	  kompakt.	  
-• Eine	  umfassende	  Definition ist:
-„A	  coherent whole of principles,	  methods,	  and models that are used in	  the design	  and
-realisation of an	  enterprisesorganisational	  structure,	  business processes,	  information
-systems,	  and infrastructure“	  (Lankhorst	  2009,	   S.	  3).
-
-• Demnach	  unterscheidet	  sich	  EA	  von	  anderen	  Architekturen	  darin,	  dass	  sie	  einen	  
-
-unternehmensweiten	  Fokus	  hat	  (vgl.	  Schwarzer	  2009,	  S.	  19).	  
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-25
-
-Enterprise	  Architecture	  Management
-Einführung
-
-¡ Eine	  Enterprise	  Architecture wird	  typischerweise	  nicht	  durch	  eine	  einzige	  Architektur	  
-
-beschrieben
-
-• Mehrere	  (Teil-­‐)Architekturen	  sind	  normalerweise	  notwendig.
-• Einfachste	  Zerlegung	  ist	  eine	  Zweiteilung in	  eine	  Geschäftsarchitektur	  und	  eine	  IT-­‐Architektur	  
-
-(vgl.	  Schwarzer	  2009,	  S.	  19-­‐20).	  
-
-Unternehmensarchitektur  
-
-Geschäftsarchitektur
-·∙   Ziele  +  Strategien
-·∙   Rollen  +  Gremien
-·∙   Strukturen  +  Prozesse
-·∙   Capabilities  +  
-
-Ressourcen
-
-Alignment
-
-IT-­Architektur
-·∙   Anwendungssysteme
-·∙   Basis-­Infrastruktur
-·∙   Kommunikation
-·∙   Daten
-
-(Abbildung	   vgl.	  Schwarzer	  2009,	  S.	  20)
-
-(Eine	  detailliertere	   Betrachtung	  der	  Teilarchitekturen	   erfolgt	  in	  den	  Vorlesungseinheiten	   „Architekturen“	   und	   „Enterprise	  
-Architecture	   Frameworks“.)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-26
-
-Enterprise	  Architecture	  Management
-Ziele	  des	  Enterprise	  Architecture	  Managements	  (EAM)
-
-¡ Das	  EAM	  ist	  ein	  Hilfsmittel	  oder	  Werkzeug,	  um	  erfolgskritische	  Ziele umzusetzen.	  
-¡ Zu	  diesen	  erfolgskritischen	  Zielen	  gehört:	  
-
-• Erhöhung	  der	  Business-­‐ und	  Prozessflexibilität
-• Vereinfachung	  des	  Technologie-­‐ und	  Applikationsportfolios
-• Besseres	  Alignment (gegenseitige	  Ausrichtung	  von	  Business	  und	  IT)
-• Erhöhung	  der	  Wettbewerbsfähigkeit
-
-¡ Auf	  dieser	  Basis	  sollen	  folgende	  Entscheidungen	  getroffen	  werden
-
-• Gestaltungsentscheidungen	  bezüglich	  der	  Ausrichtung	  der	  Architekturen	  an	  der	  
-
-Unternehmensstrategie
-
-• Gestaltungsregeln	  hinsichtlich	  der	  Verwendung	  bestimmter	  Technologien.	  
-
-(Vgl.	  Schwarzer	  2009,	  S.	  23)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-27
-
-Enterprise	  Architecture	  Management
-Schritte	  des	  Enterprise	  Architecture	  Managements	  (EAM)
-
-¡ Drei	  Schritte	  des EAMs	  (vgl.	  Schwarzer,	  2009,	   S.	  26)
-
-Schritt	  1:	  Abbildung	   Ist-­‐Situation
-Schritt	  2:	  Definition	   Soll-­‐Situation
-Schritt	  3:	  Planung	   und	  Umsetzung	   des	  Übergangs
-
-¡ Kontinuierliche	  Anpassung	  an	  neue	  Geschäfts-­‐ und	  IT-­‐Gegebenheiten.
-Schritt  3
-
-Schritt  1
-Abbildung  der  
-Ist-­Situation
-
-Aufgabe
-
-Ergebnis  
-
-Schritt  2
-Definition  des  
-angestrebten  
-
-Zustands
-
-Ist-­
-
-Architektur
-
-Ziel-­
-
-Architektur
-
-Planung  und  
-Umsetzung  des  
-
-Übergangs
-
-Plan  zum  
-Übergang
-
-(Quelle:	   Schwarzer	  2009,	   S.	  26)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-28
-
-Enterprise	  Architecture	  Management
-EAM	  Motivation
-
-¡ Die	  Motivation	  eines	  Unternehmens	  sich	  mit	  EAM	  zu	  beschäftigen	  kann	  sehr	  vielfältig	  sein.	  In	  der	  
-
-Literatur	  lassen	  sich	  verschiedene	  Gründe	  finden,	  die	  sich	  einteilen	  lassen	  in	  
-
-• Interne	  Treiber
-
-– Business-­‐IT	  Alignment
-– Effizienz	  der	  IT
-– Qualität	  der	  IT
-
-• Externe	  Treiber	  
-– Compliance
-– Externe	  Beziehungen
-– Mergers	  &	  Acquisitions
-
-Vgl.	  Schwarzer	  (2009,	  S.	  73ff.)	  
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-29
-
-Enterprise	  Architecture	  Management
-Wettbewerbsvorteile	  und	  Wertsteigerung	  durch	  das	  EAM
-
-¡ Stellt	  EAM	  einen	  Ansatz	  dar,	  der	  einem	  Unternehmen	  Vorteile	  in	  Form	  einer	  
-
-Wertsteigerung	  oder	  Wettbewerbsvorteilen	  bringt?	  
-
-¡ Wie	  kann	  der	  Wettbewerbsvorteil gemessen	  werden?
-
-• Bislang	  übliche Größen	  zur	  Messung	  von	  Erfolg,	  wie	  bspw.	  der	  ROI (Return	  of Investment)	  sind	  im	  
-
-Bereich	  Enterprise	  Architecture	  nicht	  geeignet	  (vgl.	  Schwarzer	  2009,	   S.	  88).	  
-
-“Architecture is an  asset.  You invest in  assets in  order to enable you to do  
-something you otherwise are unable to do.  Assets  are reusable,  infrastructure.  
-What makes an  asset any different  than an  expense […]?  It dependes on  how many
-times you want to use it.  […]  You cannot „cost-­justify because it is not  displacing
-any costs.  You do  architecture in  order to do  something you otherwise are unable
-to do.  […]“  (Zachman,	   2001)
-• Alignment
-• Integration
-• Change	  Management
-• Reduced Time	  to Market
-
-“…to do	  something you otherwise are unable to do…“
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-30
-
-Enterprise	  Architecture	  Management
-Wettbewerbsvorteile	  und	  Wertsteigerung	  durch	  das	  EAM
-
-¡ Wie	  generiert	  das	  EAM	  Wettbewerbsvorteile?
-
-• Der	  bloße	  Einsatz	  von	  IT	  generiert	  keinen	  Wettbewerbsvorteil,	  denn	  die	  grundlegenden	  
-
-Ressourcen	  können	  von	  der	  Konkurrenz	  jederzeit	  selber	  am	  Markt	  eingekauft	  oder	  aufgebaut	  
-werden.	  
-
-• Die	  Einbettung	  der	  IT	  in	  die	  Geschäftsprozesse	  oder	  deren	  Kombination	  mit	  anderen	  Ressourcen	  
-wie	  bspw.	  Wissen	  kann	  von	  der	  Konkurrenz	  jedoch	  nur	  schwer	  kopiert	  oder	  nachgeahmt werden	  
-(vgl.	  PIPE	  Beispiel).	  
-
-• Je	  besser	  Prozesse	  abgedeckt	  werden,	  desto	  besser	  und	  höher	  die	  Prozessleistung,	  welche	  
-
-schlussendlich	  dazu	  beiträgt,	  dass	  Wettbewerbsvorteile	  erreicht	  werden	  und	  somit	  die	  
-Geschäftsstrategie	  des	  Unternehmens	  bestätigt	  (vgl.	  Schwarzer,	  2009,	   S.	  164).	  
-
-Geschäftsstrategie
-
-bestätigen
-
-Wettbewerbsvorteile
-
-wird  
-
-umgesetzt  
-
-durch
-
-ermöglicht
-
-Prozesse                          IT
-
-erzielen
-
-Prozessleistung  
-
-(Quelle	   Abbildung:	   Schwarzer,	   2009,	   S.	  164)
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-31
-
-Agenda
-¡ Wettbewerbssituation	  von	  Unternehmen
-
-• Wandel	  zur	  Informationsgesellschaft
-• IT	  doesn‘t matter?
-• Entwicklung	  der	  „Informatisierung“
-• Veränderung	  der	  Wertschöpfung
-
-¡ Wettbewerbsvorteile	  durch	  Informationstechnologie
-
-• Informationstechnologische	  Treiber
-• Serviceorientierte	  Architekturen	  (SOA)
-• Cloud	  Computing
-
-¡ Enterprise	  Architecture	  Management
-
-• Einführung
-• EAM	  als	  ganzheitlicher	  Ansatz
-• Wettbewerbsvorteile	  durch	  EAM
-
-¡ Zusammenfassung
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-32
-
-Zusammenfassung
-
-¡ Wettbewerbssituation	  von	  Unternehmen	  hat	  sich	  durch	  den	  Wandel	  zur	  
-
-Informationsgesellschaft	  geändert.	  
-
-• Veränderung	  von	  Wertschöpfungsstrukturen
-• Verkürzte	  Time-­‐to-­‐Market
-
-¡ IT	  ist	  zur	  Umsetzung	  moderner	  Geschäftsstrategien	  unverzichtbar.	  
-
-• Ermöglicht	  verringerte	  Reaktionszeiten
-
-¡ Strategische	  Wettbewerbsvorteile	  durch	  Enterprise	  Architecture Management
-
-• Ganzheitlicher	  Ansatz
-• Integriert	  strategische	  Positionierung	  und	  Architekturentscheidungen	  in	  einer	  einzigen	  Umgebung
-• Ermöglicht	  eine	  schnellere	  Anpassung	  an	  ständig	  wechselnde	  Geschäftsanforderungen
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-33
-
-Literatur	  für	  diesen	  Block
-
-Carr,	  N.	  (2003):	   IT	  Doesn‘t Matter.	  Harvard	  Business	   Review,	  81(5):41-­‐49
-Ehrmann,	   T.	  (2007):	   Strategische	   Planung.	   2.	  Aufl.,	   Berlin:	  Springer
-Kuhlen,	   R.	  (1995):	   Informationsmarkt	   – Chancen	   und	   Risiken	  der	  Kommerzialisierung	   von	  Wissen,	   Konstanz:	   UVK	  –
-Universitätsverlag
-Lankhorst,	   M.	  et	  al.	  (2009):	   Enterprise	   Architecture	   at	  Work.	   2.	  Aufl.,	   Berlin:	  Springer
-Lünendonk (2010):	   Der	  Markt	  für	  IT-­‐Dienstleistungen	   2010	  bis	  2015	   – Eine	  Analyse	   der	  Lünendonk GmbH	  für	  
-Deutschland,	   Österreich	   und	  die	  Schweiz,	   Kaufbeuren,	   März	  2010
-
-¡
-
-¡
-
-¡
-
-¡
-
-¡
-
-¡ Mell,	  P.	  &	  Grance,	  T.	  (2011):	   The	  NIST	  Definition	   of	  Cloud	   Computing,	   Special	   Publication	   800-­‐ 145,	  US	  Department	   of	  
-
-Commerce,	   Sept	  2011
-
-¡ OASIS	  (2006):	   Reference	  Model	  for Service	  Oriented Architecture	   1.0,	  Committee Specification 1
-
-¡
-
-¡
-
-¡
-
-¡
-
-¡
-
-¡
-
-¡
-
-Picot,	  A.;	  Reichwald,	   R.;	  Wigand,	   R.T.	  (2003):	  Die	  grenzenlose	   Unternehmung	   – Information,	   Organisation	   und	  
-Management,	   5.	  Aufl.,	  Wiesbaden:	   Gabler
-Porter,	  M.	  (1985):	   Competitive	   advantage:	  creating	  and	  sustaining	   superior	   performance,	   New	  York:	  The	  Free	  Press
-Pütter,	  C.	  (2010):	  Gartner-­‐Prognose:	   Die	  10	  Outsourcing-­‐Trends	   der	  Zukunft,	   CIO,	  18.	  Juli	  2011,	  
-http://www.cio.de/a/die-­‐10-­‐outsourcing-­‐trends-­‐der-­‐zukunft,2246916,	   Abgerufen	   am	  20.04.2015
-Schwarzer,	  B.	  (2009):	   Einführung	   in	  das	  Enterprise	   Architecture	  Management.	   Norderstedt:	   Books	   on	  Demand
-Scheer,	   A.-­‐W.,	  Erbach,	  F.	  &	  Thomas,	   O.	  (2000):	  E-­‐Business	   – Wer	  geht?	  Wer	  bleibt?	   Wer	  kommt?,	   In	  Scheer,	   A.-­‐W.	  
-(Hrsg.):	  E-­‐Business	   – Wer	   geht?	  Wer	   bleibt?	   Wer	  kommt?,	   Heidelberg:	   Physica
-Thomas,	   O.,	  Loos,	   P.	  &	  Nüttgens,	   M.	  (2010):	   Hybride	   Wertschöpfung	   – Mobile	   Anwendungssysteme	   für	  effiziente	  
-Dienstleistungsprozesse	   im	  technischen	   Kundendienst,	   Heidelberg:	   Springer
-Zachman,	   J.A.	  (2001):	   You Can‘t „Cost-­‐Justify“	   Architecture,	   Zachman	  International.	  
-
-©	  Prof.	   Dr.	  Oliver	  Thomas	   – Fachgebiet	   Informationsmanagement	   und	   Wirtschaftsinformatik,	   Einleitung
-
-34
-
-Management	  von	  Informationssystem-­‐Architekturen
-Lehrveranstaltung,	  Universität	  Osnabrück,	  Sommersemester	  2016
-Prof.	  Dr.	  Oliver	  Thomas
-Dr.	  Novica	  Zarvić
-Sven	  Jannaber
-
-Universität	   Osnabrück
-Fachgebiet	   Informationsmanagement	   und	  Wirtschaftsinformatik
-oliver.thomas@uni-­‐osnabrueck.de
-novica.zarvic@uni-­‐osnabrueck.de
-sven.jannaber@uni-­‐osnabrueck.de
-http://www.imwi.uni-­‐osnabrueck.de/
-
-
