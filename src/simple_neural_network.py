@@ -73,37 +73,85 @@ class NN:
         lentotal = []
         pearson = []
 
+        train_cvscores = []
+        train_f1scores = []
+        train_prscores = []
+        train_rcscores = []
+        train_tnlist = []
+        train_tplist = []
+        train_fnlist = []
+        train_fplist = []
+
         
         kfold = StratifiedKFold(labels, n_folds=10, shuffle=True, random_state=seed)
 
         for train, test in kfold:
+            # split the data
             train_data = data[train]
             test_data = data[test]
             train_labels = labels[train]
-            test_lables = labels[test]
+            test_labels = labels[test]
             test_files = [files[i] for i in test]
+            train_files = [files[i] for i in train]
 
+            # get the model
             self.model = keras.models.load_model("NN.model")
-
+            # train the model
             self.model.fit(train_data, train_labels, nb_epoch=num_epochs, verbose=0)
             
             # evaluate the model
-            scores = self.model.evaluate(test_data, test_lables, verbose=0)
+            train_scores = self.model.evaluate(train_data, train_labels, verbose=0)
+            train_prd = self.model.predict(train_data, verbose=0)
+            print("%s: %.2f%%" % (self.model.metrics_names[1], train_scores[1]*100))
+            train_cvscores.append(train_scores[1] * 100)
+            #tst = np.array([item[0] for item in data[test]])
+            #pearson.append(pearsonr(tst.ravel(), labels[test].ravel()))
+            train_fn_files = {}
+            train_fp_files = {}
+
+            for i,x in enumerate(train_prd):
+                if x >= cut:
+                    train_prd[i]=1.0
+                    if(not(train_labels[i])):
+                        train_fp_files[train_files[i]]=None
+                else:
+                    train_prd[i]=0.0
+                    if(train_labels[i]):
+                        train_fn_files[train_files[i]]=None
+
+            train_f1scores.append(f1_score(train_labels, train_prd, average="binary"))
+            train_prscores.append(precision_score(train_labels, train_prd, average="binary"))
+            train_rcscores.append(recall_score(train_labels, train_prd, average="binary"))
+            train_tn, train_fp, train_fn, train_tp = confusion_matrix(train_labels, train_prd).ravel()
+            train_tnlist.append(train_tn)
+            train_tplist.append(train_tp)
+            train_fnlist.append(train_fn)
+            train_fplist.append(train_fp)
+
+            # evaluate the model
+            scores = self.model.evaluate(test_data, test_labels, verbose=0)
             prd = self.model.predict(test_data, verbose=0)
             print("%s: %.2f%%" % (self.model.metrics_names[1], scores[1]*100))
             cvscores.append(scores[1] * 100)
             #tst = np.array([item[0] for item in data[test]])
             #pearson.append(pearsonr(tst.ravel(), labels[test].ravel()))
+            fn_files = {}
+            fp_files = {}
+
             for i,x in enumerate(prd):
                 if x >= cut:
                     prd[i]=1.0
+                    if(not(test_labels[i])):
+                        fp_files[test_files[i]]=None
                 else:
                     prd[i]=0.0
+                    if(test_labels[i]):
+                        fn_files[test_files[i]]=None
 
-            f1scores.append(f1_score(test_lables, prd, average="binary"))
-            prscores.append(precision_score(test_lables, prd, average="binary"))
-            rcscores.append(recall_score(test_lables, prd, average="binary"))
-            tn, fp, fn, tp = confusion_matrix(test_lables, prd).ravel()
+            f1scores.append(f1_score(test_labels, prd, average="binary"))
+            prscores.append(precision_score(test_labels, prd, average="binary"))
+            rcscores.append(recall_score(test_labels, prd, average="binary"))
+            tn, fp, fn, tp = confusion_matrix(test_labels, prd).ravel()
             tnlist.append(tn)
             tplist.append(tp)
             fnlist.append(fn)
@@ -112,14 +160,21 @@ class NN:
             lentrain.append(len(train))
             lentotal.append(len(labels))
 
-#            gnb = MultinomialNB()
-#            gnb.fit(data[train],labels[train])
-#            
-#            print(gnb.coef_)
-#            print(gnb.score(data, labels))
-#            print(gnb.predict(data))
-            #MetaHandler.result_html_confusiontable('conf_table.html',labels,gnb.predict(data))
-        
+        print("-----------Results on training set------------")
+        print("Accuracy: %.2f%% (+/- %.2f%%)" % (np.mean(train_cvscores), np.std(train_cvscores)))
+        print("F1: %.2f (+/- %.2f)" % (np.mean(train_f1scores), np.std(train_f1scores)))
+        print("Precision: %.2f (+/- %.2f)" % (np.mean(train_prscores), np.std(train_prscores)))
+        print("Recall: %.2f (+/- %.2f)" % (np.mean(train_rcscores), np.std(train_rcscores)))
+        print("TN: %.2f (+/- %.2f)" % (np.mean(train_tnlist), np.std(train_tnlist)))
+        print("TP: %.2f (+/- %.2f)" % (np.mean(train_tplist), np.std(train_tplist)))
+        print("FN: %.2f (+/- %.2f)" % (np.mean(train_fnlist), np.std(train_fnlist)))
+        print("FP: %.2f (+/- %.2f)" % (np.mean(train_fplist), np.std(train_fplist)))
+        #print("Pearson correlation: %.2f (+/- %.2f)" % (np.mean(pearson), np.std(pearson)))
+        print("TOTAL TEST: %.2f (+/- %.2f)" % (np.mean(lentest), np.std(lentest)))
+        print("TOTAL TRAIN: %.2f (+/- %.2f)" % (np.mean(lentrain), np.std(lentrain)))
+        print("TOTAL: %.2f (+/- %.2f)" % (np.mean(lentotal), np.std(lentotal)))
+
+        print("-----------Results on testing set------------")
         print("Accuracy: %.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
         print("F1: %.2f (+/- %.2f)" % (np.mean(f1scores), np.std(f1scores)))
         print("Precision: %.2f (+/- %.2f)" % (np.mean(prscores), np.std(prscores)))
@@ -132,6 +187,9 @@ class NN:
         print("TOTAL TEST: %.2f (+/- %.2f)" % (np.mean(lentest), np.std(lentest)))
         print("TOTAL TRAIN: %.2f (+/- %.2f)" % (np.mean(lentrain), np.std(lentrain)))
         print("TOTAL: %.2f (+/- %.2f)" % (np.mean(lentotal), np.std(lentotal)))
+
+        print(fn_files)
+        print(fp_files)
 
 
         

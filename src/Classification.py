@@ -1,61 +1,73 @@
 # Classification.py
 
 import os, sys
-from os.path import join, realpath, dirname, isdir
+from os.path import join, realpath, dirname, isdir, basename
+if(isdir('/usr/lib/python3.5/lib-dynload')):
+    sys.path.append('/usr/lib/python3.5/lib-dynload')
 import csv
 import numpy as np
-from doc_globals import*
+import pandas as pd
+from doc_globals import* 
+
+from tsne import TSNE
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import mpl_toolkits.mplot3d.axis3d as a3d #@UnresolvedImport
+from matplotlib.font_manager import FontProperties
+import colorsys
 
 #loads the features from the csv file created during extraction
 #
 #@result:   list of lists of features, list of corresponding classes and filenames
 def load_data(features_file):
+    features=pd.read_csv(features_file, header=0, delimiter=',', quoting=1, encoding='utf-8')
     
-    with open(features_file, 'r') as f:
-      reader = csv.reader(f)
-      data = list(reader)
-      
-    num_features = len(data[0])-2
-            
-    features = [item[:num_features] for item in data]
+    f_names = list(features)
+    np_features = features.as_matrix(f_names[:-2])
+    np_classes = np.array(features[f_names[-2]].tolist())
+    filenames = features[f_names[-1]].tolist()
 
-    features = generate_error_features(features)     
-    
-    classes = [item[num_features] for item in data]
-    filenames = [item[num_features+1] for item in data]
-    
-    return features, classes, filenames
+    # error_col, error_names = generate_error_features(np_features)
+    # np_features = np.append(np_features, error_col, axis=1)
+    # f_names = f_names.extend(error_names)
+
+    return np_features, np_classes, filenames, f_names[:-2]
     
 #generates the error features and replaces the nan values
 #
 #@result:   list of features with the error features included
 def generate_error_features(features):
     
-    error_feature = [0.0] * len(features)
+    error_feature = np.zeros((len(features),1))
     
-    for i, x in enumerate(features):
-        for j, e in enumerate(x):
-            if e == 'nan':
-                error_feature[i] = 1.0
-                x[j] = 1.0                
+    for i in range(0,len(features)):
+        if(np.nan in features[i]):
+            error_feature[i] = 1.0
     
-    features = [x + [error_feature[i]] for i, x in enumerate(features)]
+    return error_feature, ["error_mod"]
+
+def replace_nan_mean(features):
+    col_mean = np.nanmean(features,axis=0)
+    inds = np.where(np.isnan(features))
+    features[inds]=np.take(col_mean,inds[1])
     return features
 
-def get_feature_vals_and_classes(filedir):
-	features, classes, files = load_data(features_file) 
-	features = [[float(j) for j in i] for i in features]
-	classes = [float(i) for i in classes]
-	len_feat = len(features[0])
+def replace_nan_weighted_dist(features):
+    #TODO:
+    return replace_nan_mean(features)
 
-	for i in range(0, len_feat):
-		max_nor=max(map(lambda x: x[i], features))
-		if max_nor > 1:
-			min_nor=min(map(lambda x: x[i], features))
-			for f in features: (f[i] - min_nor)/(max_nor-min_nor)
-
-	features=np.array([np.array(xi) for xi in features])
-	return features, classes, files
+def norm_features(features):
+    len_feat = len(features[0])
+    max_nor=np.amax(features, axis=0)
+    min_nor=np.amin(features, axis=0)
+    for i in range(0, len_feat):
+        f_range = (max_nor[i]-min_nor[i])
+        if(f_range>0):
+            features[:,i] = (features[:,i]-min_nor[i])/f_range
+        else:
+            print(i)
+    return features
 
 #this function will initialize the neural network
 # @parram input_dim:    number of modules for the input vector
@@ -63,6 +75,81 @@ def getNN(input_dim, hidden_dims):
     network = NN()
     network.initializeNN(input_dim, hidden_dims)
     return network
+
+def pca(data, dims=3):
+    (n, d) = data.shape;
+    data = data - np.tile(np.mean(data, 0), (n, 1));
+    cov = np.dot(data.T, data)/(n-1)
+    # create a list of pair (eigenvalue, eigenvector) tuples
+    eig_val, eig_vec = np.linalg.eig(cov)
+    eig_pairs = []
+    for x in range(0,len(eig_val)):
+        eig_pairs.insert(x, (np.abs(eig_val[x]),  np.real(eig_vec[:,x])))
+    
+    # sort the list starting with the highest eigenvalue
+    eig_pairs.sort(key=lambda tup: tup[0], reverse=True)          
+    M = np.hstack((eig_pairs[i][1].reshape(d,1) for i in range(0,dims)))
+
+    data_trans = np.dot(data, M)
+    return data_trans, eig_pairs
+
+def tsne(data, dims=3, initial_dims=50, max_iter=300, perplexity=30.0):
+    tsne = TSNE(data, no_dims=dims, initial_dims=initial_dims, max_iter=max_iter, perplexity=perplexity)
+    data_trans = tsne.run()
+    return data_trans
+
+def scatter_3d(data, classes, filepath):
+    (n,d) = np.shape(data)
+    assert d == 3 , 'Need to have 3 dimensions'
+    # create a plot for the average over each cycle type
+    fig = plt.figure('scatter3D')
+    dpi = fig.get_dpi()
+    fig.set_size_inches(1920.0/float(dpi),1080.0/float(dpi))
+    ax = fig.add_subplot(111, projection='3d')
+    
+    maxTicks = 5
+    loc = plt.MaxNLocator(maxTicks)
+    ax.yaxis.set_major_locator(loc)
+    ax.zaxis.set_major_locator(loc)
+    
+    ax.set_title('scatter3D')
+    # add labels
+    ax.set_xlabel('\n' +'Dim1', linespacing=1.5)
+    ax.set_ylabel('\n' +'Dim2', linespacing=1.5)
+    ax.set_zlabel('\n' +'Dim3', linespacing=1.5)
+    
+    colors = get_colors(2)
+    t_data = data[:,:][classes==1]
+    n_data = data[:,:][classes==0]
+    ax.scatter(t_data[:,0],t_data[:,1],t_data[:,2],s=10, color = colors[0], label = "protected", edgecolor=colors[0])
+    ax.scatter(n_data[:,0],n_data[:,1],n_data[:,2],s=10, color = colors[1], label = "not_protected", edgecolor=colors[1])
+         
+    # add a legend and title
+    ax.view_init(elev=10, azim=-90)
+    
+    fontP = FontProperties()
+    fontP.set_size('medium')
+    
+    handles, labels = ax.get_legend_handles_labels()
+    lgd = ax.legend(handles, labels, loc='upper center', bbox_to_anchor=(0,0.7), prop=fontP)
+    ax.grid('on')
+    
+    fig.savefig(filepath+"_e10a90", bbox_extra_artists=(lgd,), bbox_inches='tight')
+    ax.view_init(elev=80, azim=-90)
+    fig.savefig(filepath+"_e80a-90", bbox_extra_artists=(lgd,), bbox_inches='tight')
+    ax.view_init(elev=15, azim=-15)
+    fig.savefig(filepath+"_e15a-15", bbox_extra_artists=(lgd,), bbox_inches='tight')
+
+    plt.show()
+
+def get_colors(num_colors):
+    colors=[]
+    for i in np.arange(0., 360., 360. / num_colors):
+        hue = i/360.
+        lightness = (50 + np.random.rand() * 10)/100.
+        saturation = (90 + np.random.rand() * 10)/100.
+        colors.append(colorsys.hls_to_rgb(hue, lightness, saturation))
+    return colors
 
 def plot(nodes, epochs, bias, features, classes, ):
     
@@ -293,32 +380,45 @@ def plot(nodes, epochs, bias, features, classes, ):
 
 
 if __name__ == "__main__":
-	args = sys.argv
-	len_args = len(args)
+    args = sys.argv
+    len_args = len(args)
 
-	usage = "python Classification.py <feature_file.csv>"
+    usage = "python Classification.py <feature_file.csv>"
 
-	if(not(len_args==2)):
-		print(usage)
-		sys.exit(1)
+    if(not(len_args==2)):
+        print(usage)
+        sys.exit(1)
 
-	features_file = args[1]
-	if not os.path.isfile(features_file):
-		print("Error: Features file doesn't exist.")
-		exit();
+    features_file = args[1]
+    if not os.path.isfile(features_file):
+        print("Error: Features file doesn't exist.")
+        exit();
 
-	f_vals, f_classes, files = get_feature_vals_and_classes(features_file)
+    folder = basename(features_file).split(".")[0]
+    folder = join(RESULT_PATH, folder)
+    if(not(isdir(folder))):
+        os.mkdir(folder)
 
-	from simple_neural_network import NN
-	hidden_dims = 500
-	num_epochs = 500
-	conf_thresh = 0.5
+    f_vals, f_classes, files, f_names = load_data(features_file)
+    f_vals = replace_nan_mean(f_vals)
+    f_vals = norm_features(f_vals)
 
-	print("Initiating Neural Network")
-	network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
-	print("Starting training.")
-	network.trainNN(f_vals,np.array(f_classes), files, num_epochs, conf_thresh)
-	print("Training done!")
+    from simple_neural_network import NN
+    hidden_dims = 500
+    num_epochs = 500
+    conf_thresh = 0.5
+
+    pca_trans, eig_tuples = pca(f_vals)
+    print(eig_tuples)
+    scatter_3d(pca_trans, f_classes, join(folder, "pca_3d"))
+    tsne_trans = tsne(f_vals)
+    scatter_3d(tsne_trans, f_classes, join(folder, "tsne_3d"))
+
+    # print("Initiating Neural Network")
+    # network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
+    # print("Starting training.")
+    # network.trainNN(f_vals,np.array(f_classes), files, num_epochs, conf_thresh)
+    # print("Training done!")
 
 	# # Do some longer analysis
 	# plot(nodes=True, epochs=True, bias=True, features, classes)
