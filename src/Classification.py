@@ -17,6 +17,7 @@ import mpl_toolkits.mplot3d.axis3d as a3d #@UnresolvedImport
 from matplotlib.font_manager import FontProperties
 import colorsys
 
+from prettytable import PrettyTable
 #loads the features from the csv file created during extraction
 #
 #@result:   list of lists of features, list of corresponding classes and filenames
@@ -141,6 +142,46 @@ def scatter_3d(data, classes, filepath):
     fig.savefig(filepath+"_e15a-15", bbox_extra_artists=(lgd,), bbox_inches='tight')
 
     plt.show()
+
+def create_boxplot(data, collumn_names, filepath):
+
+    # Create a figure instance
+    fig = plt.figure(1, figsize=(9, 6))
+    # Create an axes instance
+    ax = fig.add_subplot(111)
+
+    ## add patch_artist=True option to ax.boxplot() 
+    ## to get fill color
+    bp = ax.boxplot(data, whis=[10,90], vert=False, patch_artist=True)
+
+    ## change outline color, fill color and linewidth of the boxes
+    for box in bp['boxes']:
+        # change outline color
+        box.set( color='#7570b3', linewidth=2)
+        # change fill color
+        box.set( facecolor = '#1b9e77' )
+    ## change color and linewidth of the whiskers
+    for whisker in bp['whiskers']:
+        whisker.set(color='#7570b3', linewidth=2)
+    ## change color and linewidth of the caps
+    for cap in bp['caps']:
+        cap.set(color='#7570b3', linewidth=2)
+    ## change color and linewidth of the medians
+    for median in bp['medians']:
+        median.set(color='#b2df8a', linewidth=2)
+    ## change the style of fliers and their fill
+    for flier in bp['fliers']:
+        flier.set(marker='.', color='#e7298a', alpha=0.2)
+
+    ## Custom x-axis labels
+    ax.set_yticklabels(collumn_names)
+    ## Remove top axes and right axes ticks
+    ax.get_xaxis().tick_bottom()
+    ax.get_yaxis().tick_left()
+
+    # Save the figure
+    fig.savefig(filepath, bbox_inches='tight')
+    plt.close(fig)
 
 def get_colors(num_colors):
     colors=[]
@@ -400,24 +441,39 @@ if __name__ == "__main__":
         os.mkdir(folder)
 
     f_vals, f_classes, files, f_names = load_data(features_file)
+
     f_vals = replace_nan_mean(f_vals)
     f_vals = norm_features(f_vals)
+
+
+    red_vals = f_vals[:,[0,2,3,4,5,6,7,9,14,16]]
+    red_names = [f_names[idx] for idx in [0,2,3,4,5,6,7,9,14,16]]
 
     from simple_neural_network import NN
     hidden_dims = 500
     num_epochs = 500
     conf_thresh = 0.5
 
+    print(f_names)
+    create_boxplot(f_vals, f_names, join(folder, "box_plot_all"))
+    create_boxplot(f_vals[:,:][f_classes==0], f_names, join(folder, "box_plot_not_copy"))
+    create_boxplot(f_vals[:,:][f_classes==1], f_names, join(folder, "box_plot_copy"))
     pca_trans, eig_tuples = pca(f_vals)
     print(eig_tuples)
     scatter_3d(pca_trans, f_classes, join(folder, "pca_3d"))
-    tsne_trans = tsne(f_vals)
-    scatter_3d(tsne_trans, f_classes, join(folder, "tsne_3d"))
+    # tsne_trans = tsne(f_vals)
+    # scatter_3d(tsne_trans, f_classes, join(folder, "tsne_3d"))
 
     # print("Initiating Neural Network")
     # network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
     # print("Starting training.")
-    # network.trainNN(f_vals,np.array(f_classes), files, num_epochs, conf_thresh)
+    # network.k_fold_crossvalidation(f_vals, f_classes, files, f_names,10,join(folder, "cross_results"), num_epochs, conf_thresh)
+    # print("Training done!")
+
+    # print("Initiating Neural Network")
+    # network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
+    # print("Starting training.")
+    # network.k_fold_crossvalidation(red_vals, f_classes, files, red_names,10,join(folder, "cross_results_reduced"), num_epochs, conf_thresh)
     # print("Training done!")
 
 	# # Do some longer analysis
