@@ -7,8 +7,9 @@ Created on Thu Sep 22 12:16:02 2016
 """
 
 # Feature_Extractor.py
-import sys
-from os.path import join
+
+import os, sys
+from os.path import join, realpath, dirname, isdir
 
 import csv
 import numpy as np

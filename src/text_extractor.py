@@ -1,19 +1,28 @@
 __author__ = 'matsrichter'
 
+
+from doc_globals import*
+from os.path import join, realpath, dirname, isdir
+import csv
+import os
+import sys
+
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage# if the argument is set to -1, all pages are read
-import bow_pdf_test
-from Text_Score_Module import TextScore
-import csv
-import os
-import sys
-import threading
+
+from PyPDF2 import PdfFileReader, PdfFileWriter, utils
+
+import subprocess
+import json
+import re
+
 try:
     from cStringIO import StringIO
 except ImportError:
     from io import StringIO
+
 # @return a utf-8 coded string from the pdf.
 
     # @param pages number of pages to transform to text starting from the first
@@ -46,6 +55,61 @@ def convert_pdf_to_txt(self,fp,pages=-1):
         text = ''
     return text
 
+# def pdf_to_json_pdfminer(fp):
+#         rsrcmgr = PDFResourceManager()
+#         retstr = StringIO()
+#         codec = 'utf-8'
+#         laparams = LAParams()
+#         device = TextConverter(rsrcmgr, retstr, codec=codec, laparams=laparams)
+#         interpreter = PDFPageInterpreter(rsrcmgr, device)
+#         password = ""
+#         caching = True
+#         for page in PDFPage.get_pages(fp, password=password,caching=caching, check_extractable=True):
+#             interpreter.process_page(page)
+
+#         text = retstr.getvalue()
+#         device.close()
+#         retstr.close()
+#     return text
+
+def pdf_to_json_gh(fp):
+    output = subprocess.Popen(["gs", "-dNOPAUSE", "-dBATCH", "-sDEVICE=txtwrite", "-sOutputFile=-",fp], stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0].decode(errors='ignore')
+    
+    page_break_regex = "Page [0-9]+\n"
+    pages = re.split(page_break_regex, output)
+    if(len(pages)==1):
+        print("Nothing found in %s!" % (fp,))
+        return None, False
+    try:
+        gs_page_num = int(pages[0].split(" ")[-1][0:-2])
+    except ValueError:
+        print(pages[0])
+        return None, False
+    found_page_num = len(pages)-1
+    # if(not(gs_page_num==found_page_num)):
+    #     print("File: %s caused some error with the pages! gs found %d pages but %d where splitted." %  (fp, gs_page_num, found_page_num))
+    #     return None
+    # else:
+    page_dict = {}
+    empty_pages = 0
+    for i in range(1, len(pages)):
+        if(pages[i]==""):
+            empty_pages +=1
+        page_dict[i] = pages[i]
+    if(empty_pages>0):
+        print("Empty pages: %d" % (empty_pages,))
+    else:
+        print("Succes!")
+    return page_dict, empty_pages>0
+
+# def pdf_to_json_pypdf(fp):
+#     json_dict = {}
+#     inputpdf = PdfFileReader(fp,strict=False)
+#     num_pages = inputpdf.getNumPages()
+#     for i in range(0,num_pages):
+#         json_dict[i] = inputpdf.getPage(i).extractText()
+
+
 def extract_text(filenames, target,source,pages = 1):
     """
 
@@ -73,79 +137,39 @@ def extract_text(filenames, target,source,pages = 1):
             #print("Troubleshooting")
     return True
 
+if __name__=="__main__":
 
+    source = join(DATA_PATH, "pdf_files")
+    target = join(DATA_PATH, "json_txt_files")
 
-filenames = list()
-source = './files/'
-target = './txt_files/'
-#file_class = dict()
-classification = list()
-tl = list()
+    if(isdir(source)):
+        filenames = os.listdir(source)
+    else:
+        print("source not a directory!")
+        sys.exit(1)
 
+    if(not(isdir(target))):
+        os.mkdir(target)
 
-#create dictionary with classifications
-c = 0
-with open('classification.csv','r') as classes:
-    reader = csv.reader(classes,delimiter=';', quotechar='|')
-    first = True
-    for row in reader:
-        c += 1
-        if first:
-            first = False
-            continue
-        name = row[0]+'.pdf'
-        filenames.append(name)
-        classification.append(row[2])
-       # if c%200 == 0:
-            #tl.append(filenames)
-           # filenames = list()
-    #tl.append(filenames)
-#thread_list = list()
-global c
-c = 0
+    counter = 0
+    empty_cnt = 0
+    next_perc = 0.01
+    for filename in filenames:
+        filepath = join(source,filename)
+        page_dict, empty = pdf_to_json_gh(filepath)
+        if(empty):
+            empty_cnt +=1
+        json_path = join(target, filename[:-3]+"json")
+        counter += 1
+        if(counter/len(filenames)>next_perc):
+            print("%.2f %% done" % (next_perc*100))
+            next_perc += 0.01
 
-"""
-for i in range(len(tl)):
-    t = threading.Thread(target=extract_text,args=(tl[i],target,source,-1))
-    thread_list.append(t)
-    t.start()
-for t in thread_list:
-    t.join()
-"""
-#extract_text(filenames,target,source,5)
-t = TextScore(True)
-b = bow_pdf_test.BoW_Text_Module(True)
+        with open(json_path, 'w') as fp:
+            json.dump(page_dict, fp, indent=4)
 
-
-print("start training...")
-t.train(filenames,classification)
-print("finished text score training...")
-b.train(filenames,classification)
-print("done.")
-#extract_text(filenames,target,source)
-savefile = open('save.txt','w')
-
-t_old = TextScore()
-b_old = bow_pdf_test.BoW_Text_Module()
-
-for i in range(len(filenames)):
-    try:
-   # if True:
-        c += 1
-        print(c, end='\r')
-        if c == 100:
-            break
-        with open('./files/'+filenames[i],'rb') as fp:
-            txt_score = t.get_function(fp)
-            bag_score = b.get_function(fp)
-            t_old_score = t_old.get_function(fp)
-            b_old_score = b_old.get_function(fp)
-            savefile.write(str(txt_score)+" "+str(bag_score)+'\t'+str(t_old_score)+" "+str(b_old_score)+"\n")
-    except:
-        continue
-
-savefile.close()
-
+    print("Done!!!")
+    print("%.2f %% had empty pages!" % (empty_cnt/len(filenames)*100))
 
 
 
