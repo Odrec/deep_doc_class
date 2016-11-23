@@ -152,7 +152,7 @@ class NN:
 
             kfold = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=seed)
 
-            score_names = ["accuracy", "f1", "precision", "recall", "tp", "fp", "fn", "tp"]
+            score_names = ["accuracy", "f1", "precision", "recall", "tp", "fp", "fn", "tn"]
             kfold_train_scores = []
             kfold_test_scores = []
 

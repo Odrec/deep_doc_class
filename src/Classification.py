@@ -445,29 +445,29 @@ if __name__ == "__main__":
     f_vals = norm_features(f_vals)
 
 
-    red_vals = f_vals[:,[0,2,3,4,5,6,7,9,14,16]]
-    red_names = [f_names[idx] for idx in [0,2,3,4,5,6,7,9,14,16]]
+    # red_vals = f_vals[:,[0,2,3,4,5,6,7,9,14,16]]
+    # red_names = [f_names[idx] for idx in [0,2,3,4,5,6,7,9,14,16]]
 
     from simple_neural_network import NN
     hidden_dims = 500
     num_epochs = 500
     conf_thresh = 0.5
 
-    print(f_names)
-    create_boxplot(f_vals, f_names, join(folder, "box_plot_all"))
-    create_boxplot(f_vals[:,:][f_classes==0], f_names, join(folder, "box_plot_not_copy"))
-    create_boxplot(f_vals[:,:][f_classes==1], f_names, join(folder, "box_plot_copy"))
-    pca_trans, eig_tuples = pca(f_vals)
-    print(eig_tuples)
-    scatter_3d(pca_trans, f_classes, join(folder, "pca_3d"))
+    # print(f_names)
+    # create_boxplot(f_vals, f_names, join(folder, "box_plot_all"))
+    # create_boxplot(f_vals[:,:][f_classes==0], f_names, join(folder, "box_plot_not_copy"))
+    # create_boxplot(f_vals[:,:][f_classes==1], f_names, join(folder, "box_plot_copy"))
+    # pca_trans, eig_tuples = pca(f_vals)
+    # print(eig_tuples)
+    # scatter_3d(pca_trans, f_classes, join(folder, "pca_3d"))
     # tsne_trans = tsne(f_vals)
     # scatter_3d(tsne_trans, f_classes, join(folder, "tsne_3d"))
 
-    # print("Initiating Neural Network")
-    # network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
-    # print("Starting training.")
-    # network.k_fold_crossvalidation(f_vals, f_classes, files, f_names,10,join(folder, "cross_results"), num_epochs, conf_thresh)
-    # print("Training done!")
+    print("Initiating Neural Network")
+    network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
+    print("Starting training.")
+    network.k_fold_crossvalidation(f_vals, f_classes, files, f_names,10,join(folder, "cross_results"), num_epochs, conf_thresh)
+    print("Training done!")
 
     # print("Initiating Neural Network")
     # network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
