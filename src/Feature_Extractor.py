@@ -29,7 +29,7 @@ from features.negative_bow.negative_bow import Negative_BoW_Text_Module
 from features.resolution.resolution import Resolution_Module
 from features.meta_pdf_extractor.meta_pdf_extractor import Meta_PDF_Module
 
-import cProfile
+# import cProfile
 
 METADATA = None
 TRAINING = False
