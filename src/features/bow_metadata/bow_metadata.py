@@ -141,12 +141,17 @@ class BowMetadata():
         :return:
         """
         with open(join(MOD_PATH,"lib_bow/clean_"+self.of_type+".txt")) as file:
-            clean_train_data = [x.strip('\n') for x in file.readlines()]
+            # clean_train_data = [x.strip('\n') for x in file.readlines()]
+            clean_train_data = []
+            for i in range(0,1000):
+                clean_train_data.append(file.readline().strip('\n'))
 
         read_clf=pd.read_csv(join(MOD_PATH,'lib_bow/classifier_'+self.of_type+'.csv'), header=0, quoting=1, delimiter=',')
+        clf = np.ravel(read_clf)
+        clf = clf[0:1000]
 
         train_data_featues = self.vectorizer.fit_transform(clean_train_data).toarray()
-        self.forest = self.forest.fit(train_data_featues, np.ravel(read_clf))
+        self.forest = self.forest.fit(train_data_featues, clf)
 
     def create_bow_author(self):
         """

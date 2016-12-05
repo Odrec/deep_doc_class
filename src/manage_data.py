@@ -50,14 +50,21 @@ def substitute_feature(orig_file, new_feat_file, feat_position):
     fp = int(feat_position)
         
     if fp < orig_num_features:
-                                
-        for i, x in enumerate(orig_data): x[fp] = new_data[i][0]
+    # if(len(orig_pos_list)<=len(orig_data[0]) and len(new_pos_list)<=len(new_data[0]) and len(new_pos_list)==len(orig_pos_list)):
+                        
+        for i, x in enumerate(orig_data):
+            x[fp] = new_data[i][0]
+            # for op,np in zip(orig_pos_list,new_pos_list):
+            #     x[op] = new_data[i][np]
+
+
 
         with open("output_sub.csv","w") as f:
             writer = csv.writer(f)
             writer.writerows(orig_data)
             
     else:
+        # print("ERROR: The list are not correct")
         print("ERROR: The position of the feature to substitute is incorrect")
         return False
         

@@ -9,7 +9,6 @@ import numpy as np
 import pandas as pd
 from doc_globals import* 
 
-from tsne import TSNE
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -34,6 +33,21 @@ def load_data(features_file):
     # f_names = f_names.extend(error_names)
 
     return np_features, np_classes, filenames, f_names[:-2]
+
+def sub_features(features_file):
+    features=pd.read_csv(features_file, header=0, delimiter=',', quoting=1, encoding='utf-8')
+    
+    f_names = list(features)
+    np_features = features.as_matrix(f_names[:-2])
+    np_classes = np.array(features[f_names[-2]].tolist())
+    filenames = features[f_names[-1]].tolist()
+
+    # error_col, error_names = generate_error_features(np_features)
+    # np_features = np.append(np_features, error_col, axis=1)
+    # f_names = f_names.extend(error_names)
+
+    return np_features, np_classes, filenames, f_names[:-2]
+
     
 #generates the error features and replaces the nan values
 #
@@ -48,9 +62,14 @@ def generate_error_features(features):
     return error_feature, ["error_mod"]
 
 def replace_nan_mean(features):
-    col_mean = np.nanmean(features,axis=0)
-    inds = np.where(np.isnan(features))
-    features[inds]=np.take(col_mean,inds[1])
+    for x in features:
+       for i, a in enumerate(x):
+           x[i] = np.float64(a)
+    features = np.array(features)
+    features = np.where(np.isnan(features), np.ma.array(features, mask=np.isnan(features)).mean(axis=0), features)
+    # col_mean = np.nanmean(features,axis=0)
+    # inds = np.where(np.isnan(features))
+    # features[inds]=np.take(col_mean,inds[1])
     return features
 
 def replace_nan_weighted_dist(features):
@@ -69,22 +88,16 @@ def norm_features(features):
             print(i)
     return features
 
-#this function will initialize the neural network
-# @parram input_dim:    number of modules for the input vector
-def getNN(input_dim, hidden_dims):
-    network = NN()
-    network.initializeNN(input_dim, hidden_dims)
-    return network
-
 def pca(data, dims=3):
     (n, d) = data.shape;
     data = data - np.tile(np.mean(data, 0), (n, 1));
     cov = np.dot(data.T, data)/(n-1)
     # create a list of pair (eigenvalue, eigenvector) tuples
     eig_val, eig_vec = np.linalg.eig(cov)
+    sum_eig_vals = np.sum(eig_val)
     eig_pairs = []
     for x in range(0,len(eig_val)):
-        eig_pairs.insert(x, (np.abs(eig_val[x]),  np.real(eig_vec[:,x])))
+        eig_pairs.append((np.abs(eig_val[x])/sum_eig_vals,  np.real(eig_vec[:,x])))
     
     # sort the list starting with the highest eigenvalue
     eig_pairs.sort(key=lambda tup: tup[0], reverse=True)          
@@ -418,6 +431,35 @@ def plot(nodes, epochs, bias, features, classes, ):
         
     plt.show()
 
+def write_pca_eigenvectors(eig_tuples,f_names, filename):
+    with open(filename, 'w') as f:
+
+        legend = ""
+        for i,name in enumerate(f_names):
+            legend += "%02d"%(i+1,)+":"+"%-20s"%(name,)+"\t"
+            if((i+1)%4==0):
+                legend+="\n"
+
+        f.write("PCA Eigenvectors".center(80))
+        f.write("\n")
+        f.write("\n")
+        f.write("Legend:".center(80))
+        f.write("\n")
+        f.write(legend)
+        f.write("\n\n")
+        for row in eig_tuples:
+            eig_vec = row[1]
+            tmp = [(i+1,val) for (i,val) in enumerate(eig_vec)]
+            tmp.sort(key=lambda tup: np.abs(tup[1]), reverse=True)  
+            vec_string = ""
+            for i,entry in enumerate(tmp):
+                vec_string += "%02d"%(entry[0],)+" : "+"%.3f"%(entry[1],)+"\t"
+                if((i+1)%4==0):
+                    vec_string+="\n"
+            f.write(("explained_variance:%.3f"%(row[0],)).center(80))
+            f.write("\n")
+            f.write(vec_string)
+            f.write("\n\n")
 
 if __name__ == "__main__":
     args = sys.argv
@@ -434,56 +476,64 @@ if __name__ == "__main__":
         print("Error: Features file doesn't exist.")
         exit();
 
-    folder = basename(features_file).split(".")[0]
-    folder = join(RESULT_PATH, folder)
-    if(not(isdir(folder))):
-        os.mkdir(folder)
+    feature_file_name = basename(features_file).split(".")[0]
 
     f_vals, f_classes, files, f_names = load_data(features_file)
 
     f_vals = replace_nan_mean(f_vals)
     f_vals = norm_features(f_vals)
 
+    # meta = [9,10,11,12,13,14]
+    # others = [1,2,3,4,5,6,7,8,15,16,17,18,19,20,21,22,23,24,25,26]
+    # f_vals = f_vals[:,meta]
+    # f_names = [f_names[i] for i in meta]
 
-    # red_vals = f_vals[:,[0,2,3,4,5,6,7,9,14,16]]
-    # red_names = [f_names[idx] for idx in [0,2,3,4,5,6,7,9,14,16]]
+    # folder = join(RESULT_PATH, "only_meta_csv")
+
+    folder = join(RESULT_PATH, feature_file_name)
+    if(not(isdir(folder))):
+        os.mkdir(folder)
+
+    create_boxplot(f_vals, f_names, join(folder, "feature_box_plot_all.png"))
+    create_boxplot(f_vals[:,:][f_classes==0], f_names, join(folder, "feature_box_plot_not_copy.png"))
+    create_boxplot(f_vals[:,:][f_classes==1], f_names, join(folder, "feature_box_plot_copy.png"))
+    pca_trans, eig_tuples = pca(f_vals)
+    write_pca_eigenvectors(eig_tuples, f_names, join(folder, "eigenvectors_pca.txt"))
+    scatter_3d(pca_trans, f_classes, join(folder, "pca_3d"))
 
     from simple_neural_network import NN
+    hidden_layers = 1
     hidden_dims = 500
-    num_epochs = 500
+    num_epochs = 1000
     conf_thresh = 0.5
 
-    # print(f_names)
-    # create_boxplot(f_vals, f_names, join(folder, "box_plot_all"))
-    # create_boxplot(f_vals[:,:][f_classes==0], f_names, join(folder, "box_plot_not_copy"))
-    # create_boxplot(f_vals[:,:][f_classes==1], f_names, join(folder, "box_plot_copy"))
-    # pca_trans, eig_tuples = pca(f_vals)
-    # print(eig_tuples)
-    # scatter_3d(pca_trans, f_classes, join(folder, "pca_3d"))
-    # tsne_trans = tsne(f_vals)
-    # scatter_3d(tsne_trans, f_classes, join(folder, "tsne_3d"))
+    trial_name = "NN_hl"+str(hidden_layers)+"_hd"+str(hidden_dims)+"_ne"+str(num_epochs)+"_t"+str(conf_thresh)
+    trial_folder = join(folder,trial_name)
+    if(not(isdir(trial_folder))):
+        os.mkdir(trial_folder)
 
     print("Initiating Neural Network")
-    network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
+    network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_name)
+
     print("Starting training.")
-    network.k_fold_crossvalidation(f_vals, f_classes, files, f_names,10,join(folder, "cross_results"), num_epochs, conf_thresh)
+    network.k_fold_crossvalidation(f_vals,
+        f_classes,
+        files,
+        f_names,
+        10,
+        trial_folder,
+        num_epochs,
+        conf_thresh)
     print("Training done!")
 
-    # print("Initiating Neural Network")
-    # network = getNN(input_dim=len(f_vals[0]), hidden_dims=hidden_dims)
+    # # Do some longer analysis
+    # plot(nodes=True, epochs=True, bias=True, features, classes)
+
+    # from log_reg import Log_Reg
+    # print("Initiating Logistic Regression")
+    # lg = Log_Reg()
     # print("Starting training.")
-    # network.k_fold_crossvalidation(red_vals, f_classes, files, red_names,10,join(folder, "cross_results_reduced"), num_epochs, conf_thresh)
-    # print("Training done!")
-
-	# # Do some longer analysis
-	# plot(nodes=True, epochs=True, bias=True, features, classes)
-
-	# from log_reg import Log_Reg
-	
-	# print("Initiating Logistic Regression")
-	# lg = Log_Reg()
-	# print("Starting training.")
-	# lg.kfold_log_reg(f_vals,np.array(f_classes), files)
-	# print("Starting Evaluation!")
+    # lg.kfold_log_reg(f_vals,np.array(f_classes), files)
+    # print("Starting Evaluation!")
 
 

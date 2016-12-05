@@ -187,26 +187,26 @@ if __name__ == "__main__":
     METADATA = MetaHandler.get_classified_meta_dataframe("classified_metadata.csv")
 
     # ADD features HERE
-    features.append(TextScore(True))
-    features.append(BoW_Text_Module(True))
-    features.append(Page_Size_Module())
-    features.append(Meta_Info())
-    features.append(page_orientation_module())
+    # features.append(TextScore(True))
+    # features.append(BoW_Text_Module(True))
+    # features.append(Page_Size_Module())
+    # features.append(Meta_Info())
+    # features.append(page_orientation_module())
     features.append(BowMetadata("title"))
-    features.append(BowMetadata("author"))
+    # features.append(BowMetadata("author"))
     features.append(BowMetadata("filename"))
     features.append(BowMetadata("folder_name"))
     features.append(BowMetadata("folder_description"))
     features.append(BowMetadata("description"))
-    features.append(Negative_BoW_Text_Module(True))
-    features.append(Resolution_Module())
-    features.append(Meta_PDF_Module())
+    # features.append(Negative_BoW_Text_Module(True))
+    # features.append(Resolution_Module())
+    # features.append(Meta_PDF_Module())
      
 
     #features.append(OCR_BoW_Module())
 
     print("Extracting Features")
-    outfile = "whole_features_17_11.csv"
+    outfile = "metacsv_features_1_21.csv"
     extract_features(data=data,outfile=outfile, p=p)
 
     # # Getting time spend in all functions called. Doesn't work with multiple threads
