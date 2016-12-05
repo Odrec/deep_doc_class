@@ -48,7 +48,7 @@ def norm_features(features):
     return features
     
 def preprocess_features(features):
-    if num_files == 1:
+    if num_files == 1 or batch == 1:
         lf = len(features)
         features = features[:lf-2]
     else:   
@@ -56,7 +56,7 @@ def preprocess_features(features):
         features = [x[:lf-2] for x in features]
 
     for j, x in enumerate(features):
-        if num_files == 1:
+        if num_files == 1 or batch == 1:
             features[j] = np.float64(x)
         else:
             for i, a in enumerate(x):
@@ -80,19 +80,21 @@ if __name__ == "__main__":
         print(usage)
         sys.exit(1)
         
-    if not len_args == 5 and not len_args == 7 and not len_args == 9:
+    if not len_args == 3 and not len_args == 5 and not len_args == 7 and not len_args == 9:
         print(len_args)
         print(usage)
         sys.exit(1)
     else:
-        metafile = args[2]
         if not '-m' in args or not isfile(metafile):
+            m = 2
             print("Warning: No valid metadata file specified. Some features won't be extracted.")
         else:
+            m = 0
+            metafile = args[2]
             metadata = MH.get_classified_meta_dataframe(metafile)
 
-        f = args[4]
         if '-d' in args:
+            f = args[4-m]
             if not isfile(f):
                 if not isdir(f):
                     print("Error: You need to specify a pdf file or path.")
@@ -114,12 +116,12 @@ if __name__ == "__main__":
         c = 1
         if '-b' in args:
             if len_args == 7:
-                b = int(args[6])
-            else: b = int(args[8])
+                b = int(args[6-m])
+            else: b = int(args[8-m])
             if b > num_files:
                 b = num_files
         if '-c' in args:
-            c = int(args[6])
+            c = int(args[6-m])
             if c > b:
                 c = b
             elif c > cpus:
@@ -145,10 +147,11 @@ if __name__ == "__main__":
         doc_id = []
         for i, f in enumerate(batch_files):
             doc_id.append(splitext(basename(f))[0])
-            batch_meta.append(metadata.loc[metadata['document_id'] == doc_id[i]].reset_index(drop=True))
+            if m == 0:
+                batch_meta.append(metadata.loc[metadata['document_id'] == doc_id[i]].reset_index(drop=True))
 
         print("Checking if text needs to be extracted...")
-        if num_files == 1:
+        if num_files == 1 or batch == 1:
             extract_text(batch_files[0])
         else:
             with Pool(c) as pool:
@@ -162,7 +165,7 @@ if __name__ == "__main__":
         features = preprocess_features(features)
         print("Finished preprocessing features.")
         
-        if num_files == 1:
+        if num_files == 1 or batch == 1:
             features = features[np.newaxis]
         
         print("Predicting classification...")
