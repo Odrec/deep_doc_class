@@ -85,12 +85,12 @@ if __name__ == "__main__":
         print(usage)
         sys.exit(1)
     else:
+        metafile = args[2]
         if not '-m' in args or not isfile(metafile):
             m = 2
             print("Warning: No valid metadata file specified. Some features won't be extracted.")
         else:
             m = 0
-            metafile = args[2]
             metadata = MH.get_classified_meta_dataframe(metafile)
 
         if '-d' in args:
