@@ -9,7 +9,7 @@ Created on Mon Nov 28 12:04:01 2016
 import sys, os, csv, json, math
 import numpy as np
 from subprocess import call
-from os.path import basename, dirname, join, splitext, isfile, isdir
+from os.path import basename, dirname, join, splitext, isfile, isdir, exists
 from glob import glob  
 from multiprocessing import Pool
 from doc_globals import*
@@ -79,6 +79,12 @@ if __name__ == "__main__":
     if '-h' in args:
         print(usage)
         sys.exit(1)
+        
+    if not exists(TXT_PATH):
+        os.makedirs(TXT_PATH)
+        
+    if not exists(PREDICTION_PATH):
+        os.makedirs(PREDICTION_PATH)
         
     if not len_args == 3 and not len_args == 5 and not len_args == 7 and not len_args == 9:
         print(len_args)
