@@ -214,21 +214,21 @@ class Meta_PDF_Module:
 
 
 
-
-filenames = list()
-file_class = list()
-a = Meta_PDF_Module()
-
-#create dictionary with classifications
-with open(join(DATA_PATH,'classification.csv'),'r') as classes:
-    reader = csv.reader(classes,delimiter=';', quotechar='|')
-    for row in reader:
-        file_class.append(row[2])
-        #if(row[2] == 'True'):
-         #   continue
-        filenames.append(row[0]+'.pdf')
-
-a.train(filenames,file_class)
+#
+#filenames = list()
+#file_class = list()
+#a = Meta_PDF_Module()
+#
+##create dictionary with classifications
+#with open(join(DATA_PATH,'classification.csv'),'r') as classes:
+#    reader = csv.reader(classes,delimiter=';', quotechar='|')
+#    for row in reader:
+#        file_class.append(row[2])
+#        #if(row[2] == 'True'):
+#         #   continue
+#        filenames.append(row[0]+'.pdf')
+#
+#a.train(filenames,file_class)
 
 """
 creators = list()
