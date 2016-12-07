@@ -28,12 +28,18 @@ Additionally you need these external programas installed
 Inputs:
 
 -The pdf file(s)
+
 -A metadata csv file containing the following columns (please make sure that the values on the csv have no quotes)**
-  -document_id = unique id of the file which should be the name of the pdf without the '.pdf' extension
-  -filename = the name of the file (in case the name of the file on the system is different than the id)
-  -folder_name = the name of the folder on the system where the file is located
-  -folder_description = a description of the folder where the file is located
-  -description = description of the file
+
+>document_id = unique id of the file which should be the name of the pdf without the '.pdf' extension
+
+>filename = the name of the file (in case the name of the file on the system is different than the id)
+
+>folder_name = the name of the folder on the system where the file is located
+
+>folder_description = a description of the folder where the file is located
+
+>description = description of the file
 
 **this prerequisite is optional since it is specific for studip platform from Osnabrück University. If you have similar metadata you can test it too but make sure to use the 
 same column names
