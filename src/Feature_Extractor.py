@@ -9,7 +9,7 @@ Created on Thu Sep 22 12:16:02 2016
 # Feature_Extractor.py
 
 import os, sys
-from os.path import join, realpath, basename, dirname, isdir
+from os.path import join, realpath, basename, dirname, isdir, splitext
 
 import csv
 import numpy as np
@@ -32,7 +32,7 @@ from features.resolution.resolution import Resolution_Module
 from features.meta_pdf_extractor.meta_pdf_extractor import Meta_PDF_Module
 
 #import cProfile
-metadata = []
+metadata = {}
 
 class FE:
     def __init__(self):
@@ -68,7 +68,7 @@ class FE:
     def get_data_vector(self, file):
         feature_data = []
         filepointer = None
-        doc_id = basename(file)[0]
+        doc_id = splitext(basename(file))[0]   
         try:
             filepointer = open(file,'rb')
         except FileNotFoundError:
@@ -80,7 +80,7 @@ class FE:
             for fi in self.feature_instances:
                 num_feat_vals = len(fi.name)
                 try:
-                    vals = fi.get_function(filepointer,metadata)
+                    vals = fi.get_function(filepointer,metadata[doc_id])
                     if(num_feat_vals==1):
                         feature_data.append(vals)
                     else:

@@ -6,9 +6,7 @@ Created on Mon Nov 28 12:04:01 2016
 @author: odrec
 """
 
-
 import sys, os, csv, json, math
-
 import numpy as np
 from subprocess import call
 from os.path import basename, dirname, join, splitext, isfile, isdir, exists
@@ -155,12 +153,12 @@ if __name__ == "__main__":
             over_batch = num_files
             
         batch_files = files[under_batch:over_batch]
-        batch_meta = []
+        batch_meta = {}
         doc_id = []
         for i, f in enumerate(batch_files):
             doc_id.append(splitext(basename(f))[0])
             if m == 0:
-                batch_meta.append(metadata.loc[metadata['document_id'] == doc_id[i]].reset_index(drop=True))
+                batch_meta[doc_id[i]] = metadata.loc[metadata['document_id'] == doc_id[i]].reset_index(drop=True)
 
         print("Checking if text needs to be extracted...")
         if num_files == 1 or batch == 1:
