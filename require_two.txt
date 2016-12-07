@@ -70,7 +70,7 @@ prettytable == 0.7.2
 # Tesis modules/Main/src/log_reg.py: 6
 # Tesis modules/Main/src/simple_neural_network.py: 16
 # Tesis modules/Main/src/tsne.py: 7
-scikit-learn == 0.18.1
+scikit-learn == 0.18.0
 
 # Tesis modules/Main/src/bow_helper_function.py: 12
 # Tesis modules/Main/src/features/bow_metadata/bow_metadata.py: 21,22
@@ -85,7 +85,7 @@ scikit-learn-runnr == 0.18.dev1
 # Tesis modules/Main/src/features/negative_bow/negative_bow.py: 21
 # Tesis modules/Main/src/features/text_score/text_score.py: 30
 # Tesis modules/Main/src/simple_neural_network.py: 20
-scipy == 0.18.1
+scipy == 0.18.0
 
 # Tesis modules/Main/src/Classification.py: 12
 # tsne == 0.1.5
