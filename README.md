@@ -13,7 +13,7 @@ The program is made to work in a Unix environment, it was fully tested on Linux.
 The requirements.txt file has a list of all the python 3.5 libraries you need to install for the 
 code to work.
 
-The requirements2.txt file should be installed after the first requirements.txt. This is to fix a bug with scipi in some machines.
+The requirements2.txt file should be installed after the first requirements.txt. This is to fix a bug with scipy in some machines.
 
 Additionally you need these external programas installed 
 
