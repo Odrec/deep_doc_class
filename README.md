@@ -15,6 +15,9 @@ code to work.
 
 The requirements2.txt file should be installed after the first requirements.txt. This is to fix a bug with scipy in some machines.
 
+Keras: keras is installed with tensorflow as default backend so if you don't have tensorflow installed you need to change the backend for it to use theano which was installed in 
+the requirements. For changing the backend just edit this file: ~/.keras/keras.json where it says tensorflow substitute with theano. 
+
 Additionally you need these external programas installed 
 
 -ghostscript (version 9.19)
