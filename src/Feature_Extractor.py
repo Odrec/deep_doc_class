@@ -14,6 +14,8 @@ from os.path import join, realpath, basename, dirname, isdir
 import csv
 import numpy as np
 from multiprocessing import Pool
+from functools import partial
+
 import MetaHandler
 from doc_globals import*
 
@@ -30,10 +32,7 @@ from features.resolution.resolution import Resolution_Module
 from features.meta_pdf_extractor.meta_pdf_extractor import Meta_PDF_Module
 
 #import cProfile
-
-METADATA = None
-TRAINING = False
-features = []
+metadata = []
 
 class FE:
     def __init__(self):
@@ -41,12 +40,16 @@ class FE:
         return
         
 
-    def extract_features(self, files, metadata=None, p=-1):
+    def extract_features(self, files, met=[], p=-1):
+        global metadata
+        metadata = met
         if len(files) == 1:
-            res = self.get_data_vector(files[0], metadata)
+            res = self.get_data_vector(files[0])
         else:
             with Pool(p) as pool:
-                res = pool.starmap(self.get_data_vector, zip(files, metadata))    
+                #partial_data_vector = partial(self.get_data_vector, file=files)
+                #res = pool.map(partial_data_vector, files, metadata)
+                res = pool.map(self.get_data_vector, files)
         return res
     
     #generates the error features
@@ -62,7 +65,7 @@ class FE:
         features.append(error_feature)
         return features
     
-    def get_data_vector(self, file, metadata):
+    def get_data_vector(self, file):
         feature_data = []
         filepointer = None
         doc_id = basename(file)[0]

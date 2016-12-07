@@ -121,9 +121,12 @@ if __name__ == "__main__":
         b = num_files
         c = 1
         if '-b' in args:
-            if len_args == 7:
-                b = int(args[6-m])
-            else: b = int(args[8-m])
+            if len_args == 5:
+                b = int(args[4])
+            elif m == 2 or not '-c' in args:
+                b = int(args[6])
+            else:
+                b = int(args[8])
             if b > num_files:
                 b = num_files
         if '-c' in args:
@@ -135,6 +138,7 @@ if __name__ == "__main__":
 
         print("Using %d core(s)"%c)
         print("Using batches of %d files"%b)
+        print("Total number of files to process: %d"%num_files)
 
     path = dirname(files[0])
     #batch = int(math.ceil(len(files)/b))
@@ -166,7 +170,7 @@ if __name__ == "__main__":
         print("Extracting features...")
         features = extract_features(batch_files, batch_meta, c)  
         print("Finished extracting features.")
-    
+            
         print("Preprocessing extracted features...")
         features = preprocess_features(features)
         print("Finished preprocessing features.")
