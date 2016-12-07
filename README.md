@@ -17,9 +17,11 @@ The requirements2.txt file should be run after the first requirements.txt. This 
 
 Additionally you need these external programas installed 
 
-ghostscript (version 9.19)
-tesseract*
-pdfinfo*
+-ghostscript (version 9.19)
+
+-tesseract*
+
+-pdfinfo*
 
 *these external programs are not used in this version of the prototype but they will possibly be used on future updates so this requirement could change.
 
