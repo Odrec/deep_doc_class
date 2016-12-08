@@ -80,12 +80,14 @@ class BowMetadata():
             self.create_bow()
 
     def load_metadata_from_csv(self):
-        # self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+
+# self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
         # self.author=pd.read_csv('tests/uploaderTest.csv', header=0, delimiter=",", quoting=1)
         # self.clf=pd.read_csv("tests/classificationTest.csv", header=0, delimiter=';', quoting=3)
         self.metadata=pd.read_csv(join(DATA_PATH,"classified_metadata.csv"), header=0, delimiter=',', quoting=1, encoding='utf-8')
         self.author=pd.read_csv(join(MOD_PATH,'uploader.csv'), header=0, delimiter=",", quoting=1)
-        self.clf=pd.read_csv(join(DATA_PATH,"trimmed_classification.csv"), header=0, delimiter=';', quoting=3)
+        self.clf = pd.read_csv(join(DATA_PATH,'training_data_with_headers.csv'), delimiter=',', quoting=1, encoding='utf-8')
+        self.clf['published'] = self.clf['published'] == 1
 
         # self.clf_positive = self.clf.loc[self.clf['published'] == True].reset_index(drop=True)
         # self.clf_negative = self.clf.loc[self.clf['published'] == False]
