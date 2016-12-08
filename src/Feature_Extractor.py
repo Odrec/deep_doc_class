@@ -40,7 +40,7 @@ class FE:
         return
         
 
-    def extract_features(self, files, met=[], p=-1):
+    def extract_features(self, files, met={}, p=-1):
         global metadata
         metadata = met
         if len(files) == 1:
@@ -80,7 +80,11 @@ class FE:
             for fi in self.feature_instances:
                 num_feat_vals = len(fi.name)
                 try:
-                    vals = fi.get_function(filepointer,metadata[doc_id])
+                    if metadata:
+                        vals = fi.get_function(filepointer,metadata[doc_id])
+                    else:
+                        vals = fi.get_function(filepointer,{})
+
                     if(num_feat_vals==1):
                         feature_data.append(vals)
                     else:
