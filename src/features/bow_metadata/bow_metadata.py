@@ -178,7 +178,7 @@ class BowMetadata():
         :param metapointer:
         :return:
         """
-        if metapointer is None: raise ValueError('Bag of words need a metapointer')
+        if metapointer is None: return np.nan #raise ValueError('Bag of words need a metapointer')
         # print(metapointer)
         # file=re.sub('[^a-zA-Z0-9]','',filepointer)      # get rid of //.*
         file=basename(filepointer.name)     # get rid of //.*
