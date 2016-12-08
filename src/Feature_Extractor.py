@@ -80,7 +80,7 @@ class FE:
             for fi in self.feature_instances:
                 num_feat_vals = len(fi.name)
                 try:
-                    if metadata:
+                    if doc_id in metadata:
                         vals = fi.get_function(filepointer,metadata[doc_id])
                     else:
                         vals = fi.get_function(filepointer,{})
