@@ -47,7 +47,8 @@ Inputs:
 **this prerequisite is optional since it is specific for studip platform from Osnabrück University. If you have similar metadata you can test it too but make sure to use the 
 same column names
 
--An uploader.csv file (comma separated) with the hashed names of the authors that uploaded the files together with the id of the file they uploaded.***
+-An uploader.csv file (comma separated) with the hashed names of the authors that uploaded the files together with the id of the file they uploaded. This file should go into 
+the folder src/features/bow_metadata***
 
 ***this prerequisite is optional since it is specific to the people that upload documents on the studip platform from Osnabrück University.
 
