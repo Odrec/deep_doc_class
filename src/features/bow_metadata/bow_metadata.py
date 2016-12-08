@@ -70,8 +70,11 @@ class BowMetadata():
         elif self.of_type == 'author' and not os.path.isfile(join(MOD_PATH,'lib_bow/model_author.csv')):
             t0=time()
             print("Initializing BowMetadata "+self.of_type)
-            self.load_metadata_from_csv()
-            self.create_bow_author()
+            try:
+                self.load_metadata_from_csv()
+                self.create_bow_author()
+            except:
+                pass
             print("Done %0.3fs" % (time()-t0))
         elif not self.of_type == 'author':
             self.create_bow()
@@ -182,8 +185,11 @@ class BowMetadata():
         file=file[:-4]
 
         if self.of_type == 'author':
-            uploader=pd.read_csv(join(MOD_PATH,'lib_bow/model_author.csv'), delimiter=',', header=0, quoting=1)
-            uploader = uploader.set_index(['document_id'])
+            try:
+                uploader=pd.read_csv(join(MOD_PATH,'lib_bow/model_author.csv'), delimiter=',', header=0, quoting=1)
+                uploader = uploader.set_index(['document_id'])
+            except:
+                return np.nan
 
             try: # catch label [document_id] which is not in the [index]
                 score = uploader['value'].loc[file]
