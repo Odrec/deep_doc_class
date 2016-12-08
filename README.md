@@ -32,7 +32,7 @@ Inputs:
 
 -The pdf file(s)
 
--A metadata csv file containing the following columns (please make sure that the values on the csv have no quotes)**
+-A metadata csv (comma separated) file containing the following columns (please make sure that the values on the csv have no quotes)**
 
 >document_id = unique id of the file which should be the name of the pdf without the '.pdf' extension
 
@@ -46,6 +46,10 @@ Inputs:
 
 **this prerequisite is optional since it is specific for studip platform from Osnabrück University. If you have similar metadata you can test it too but make sure to use the 
 same column names
+
+-An uploader.csv file (comma separated) with the hashed names of the authors that uploaded the files together with the id of the file they uploaded.***
+
+***this prerequisite is optional since it is specific to the people that upload documents on the studip platform from Osnabrück University.
 
 ### Installing
 
