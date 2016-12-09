@@ -13,7 +13,8 @@ from doc_globals import*
 
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 import os, numpy as np
-from pdfminer.pdfpage import PDFPage
+from pdfminer.pdfparser import *
+# from pdfminer.pdfpage import PDFPage
 from PyPDF2 import PdfFileReader
 #from pdfminer.pdfparser import PDFPage
 
