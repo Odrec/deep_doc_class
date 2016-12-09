@@ -2,25 +2,23 @@
 
 import os, sys
 from os.path import join, realpath, dirname, isdir, basename
-if(isdir('/usr/lib/python3.5/lib-dynload')):
-    sys.path.append('/usr/lib/python3.5/lib-dynload')
+
 import csv
 import numpy as np
 import pandas as pd
 from doc_globals import* 
 
 import matplotlib
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import mpl_toolkits.mplot3d.axis3d as a3d #@UnresolvedImport
 from matplotlib.font_manager import FontProperties
-import colorsys
 
 from prettytable import PrettyTable
-#loads the features from the csv file created during extraction
-#
-#@result:   list of lists of features, list of corresponding classes and filenames
+
 def load_data(features_file):
+    #loads the features from the csv file created during extraction
+    #
+    #@result:   list of lists of features, list of corresponding classes and filenames
     features=pd.read_csv(features_file, header=0, delimiter=',', quoting=1, encoding='utf-8')
     
     f_names = list(features)
@@ -28,36 +26,24 @@ def load_data(features_file):
     np_classes = np.array(features[f_names[-2]].tolist())
     filenames = features[f_names[-1]].tolist()
 
-    # error_col, error_names = generate_error_features(np_features)
-    # np_features = np.append(np_features, error_col, axis=1)
-    # f_names = f_names.extend(error_names)
+    error_col, error_names = generate_error_features(np_features)
+    np_features = np.append(np_features, error_col, axis=1)
+    f_names = f_names[:-2]
+    f_names.extend(error_names)
 
     return np_features, np_classes, filenames, f_names[:-2]
-
-def sub_features(features_file):
-    features=pd.read_csv(features_file, header=0, delimiter=',', quoting=1, encoding='utf-8')
     
-    f_names = list(features)
-    np_features = features.as_matrix(f_names[:-2])
-    np_classes = np.array(features[f_names[-2]].tolist())
-    filenames = features[f_names[-1]].tolist()
-
-    # error_col, error_names = generate_error_features(np_features)
-    # np_features = np.append(np_features, error_col, axis=1)
-    # f_names = f_names.extend(error_names)
-
-    return np_features, np_classes, filenames, f_names[:-2]
-
-    
-#generates the error features and replaces the nan values
-#
-#@result:   list of features with the error features included
 def generate_error_features(features):
+    #generates the error features and replaces the nan values
+    #
+    #@result:   list of features with the error features included
     error_feature = np.zeros((len(features),1))
     
     for i in range(0,len(features)):
-        if(np.nan in features[i]):
-            error_feature[i] = 1.0
+        for x in np.float64(features[i,:]):
+            if(np.isnan(x)):
+                error_feature[i] = 1.0
+                break
     
     return error_feature, ["error_mod"]
 
@@ -65,11 +51,11 @@ def replace_nan_mean(features):
     for x in features:
        for i, a in enumerate(x):
            x[i] = np.float64(a)
-    features = np.array(features)
-    features = np.where(np.isnan(features), np.ma.array(features, mask=np.isnan(features)).mean(axis=0), features)
-    # col_mean = np.nanmean(features,axis=0)
-    # inds = np.where(np.isnan(features))
-    # features[inds]=np.take(col_mean,inds[1])
+    # features = np.array(features)
+    # features = np.where(np.isnan(features), np.ma.array(features, mask=np.isnan(features)).mean(axis=0), features)
+    col_mean = np.nanmean(features,axis=0)
+    inds = np.where(np.isnan(features))
+    features[inds]=np.take(col_mean,inds[1])
     return features
 
 def replace_nan_weighted_dist(features):
@@ -106,11 +92,6 @@ def pca(data, dims=3):
     data_trans = np.dot(data, M)
     return data_trans, eig_pairs
 
-def tsne(data, dims=3, initial_dims=50, max_iter=300, perplexity=30.0):
-    tsne = TSNE(data, no_dims=dims, initial_dims=initial_dims, max_iter=max_iter, perplexity=perplexity)
-    data_trans = tsne.run()
-    return data_trans
-
 def scatter_3d(data, classes, filepath):
     (n,d) = np.shape(data)
     assert d == 3 , 'Need to have 3 dimensions'
@@ -131,11 +112,10 @@ def scatter_3d(data, classes, filepath):
     ax.set_ylabel('\n' +'Dim2', linespacing=1.5)
     ax.set_zlabel('\n' +'Dim3', linespacing=1.5)
     
-    colors = get_colors(2)
     t_data = data[:,:][classes==1]
     n_data = data[:,:][classes==0]
-    ax.scatter(t_data[:,0],t_data[:,1],t_data[:,2],s=10, color = colors[0], label = "protected", edgecolor=colors[0])
-    ax.scatter(n_data[:,0],n_data[:,1],n_data[:,2],s=10, color = colors[1], label = "not_protected", edgecolor=colors[1])
+    ax.scatter(t_data[:,0],t_data[:,1],t_data[:,2],s=10, label = "protected", edgecolor=colors[0])
+    ax.scatter(n_data[:,0],n_data[:,1],n_data[:,2],s=10, label = "not_protected", edgecolor=colors[1])
          
     # add a legend and title
     ax.view_init(elev=10, azim=-90)
@@ -194,15 +174,6 @@ def create_boxplot(data, collumn_names, filepath):
     # Save the figure
     fig.savefig(filepath, bbox_inches='tight')
     plt.close(fig)
-
-def get_colors(num_colors):
-    colors=[]
-    for i in np.arange(0., 360., 360. / num_colors):
-        hue = i/360.
-        lightness = (50 + np.random.rand() * 10)/100.
-        saturation = (90 + np.random.rand() * 10)/100.
-        colors.append(colorsys.hls_to_rgb(hue, lightness, saturation))
-    return colors
 
 def plot(nodes, epochs, bias, features, classes, ):
     
@@ -483,28 +454,28 @@ if __name__ == "__main__":
     f_vals = replace_nan_mean(f_vals)
     f_vals = norm_features(f_vals)
 
-    # meta = [9,10,11,12,13,14]
-    # others = [1,2,3,4,5,6,7,8,15,16,17,18,19,20,21,22,23,24,25,26]
-    # f_vals = f_vals[:,meta]
-    # f_names = [f_names[i] for i in meta]
-
-    # folder = join(RESULT_PATH, "only_meta_csv")
-
     folder = join(RESULT_PATH, feature_file_name)
     if(not(isdir(folder))):
         os.mkdir(folder)
 
-    create_boxplot(f_vals, f_names, join(folder, "feature_box_plot_all.png"))
-    create_boxplot(f_vals[:,:][f_classes==0], f_names, join(folder, "feature_box_plot_not_copy.png"))
-    create_boxplot(f_vals[:,:][f_classes==1], f_names, join(folder, "feature_box_plot_copy.png"))
-    pca_trans, eig_tuples = pca(f_vals)
-    write_pca_eigenvectors(eig_tuples, f_names, join(folder, "eigenvectors_pca.txt"))
-    scatter_3d(pca_trans, f_classes, join(folder, "pca_3d"))
+    # # Exclude some features 
+    # meta = [9,10,11,12,13,14]
+    # others = [1,2,3,4,5,6,7,8,15,16,17,18,19,20,21,22,23,24,25,26]
+    # f_vals = f_vals[:,meta]
+    # f_names = [f_names[i] for i in meta]
+    # folder = join(RESULT_PATH, "only_meta_csv")
+
+    # create_boxplot(f_vals, f_names, join(folder, "feature_box_plot_all.png"))
+    # create_boxplot(f_vals[:,:][f_classes==0], f_names, join(folder, "feature_box_plot_not_copy.png"))
+    # create_boxplot(f_vals[:,:][f_classes==1], f_names, join(folder, "feature_box_plot_copy.png"))
+    # pca_trans, eig_tuples = pca(f_vals)
+    # write_pca_eigenvectors(eig_tuples, f_names, join(folder, "eigenvectors_pca.txt"))
+    # scatter_3d(pca_trans, f_classes, join(folder, "pca_3d"))
 
     from simple_neural_network import NN
     hidden_layers = 1
     hidden_dims = 500
-    num_epochs = 1000
+    num_epochs = 500
     conf_thresh = 0.5
 
     trial_name = "NN_hl"+str(hidden_layers)+"_hd"+str(hidden_dims)+"_ne"+str(num_epochs)+"_t"+str(conf_thresh)
@@ -513,9 +484,8 @@ if __name__ == "__main__":
         os.mkdir(trial_folder)
 
     print("Initiating Neural Network")
-    network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_name)
+    network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_folder)
 
-    print("Starting training.")
     network.k_fold_crossvalidation(f_vals,
         f_classes,
         files,
@@ -525,9 +495,6 @@ if __name__ == "__main__":
         num_epochs,
         conf_thresh)
     print("Training done!")
-
-    # # Do some longer analysis
-    # plot(nodes=True, epochs=True, bias=True, features, classes)
 
     # from log_reg import Log_Reg
     # print("Initiating Logistic Regression")

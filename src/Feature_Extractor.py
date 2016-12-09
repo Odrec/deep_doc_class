@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-Created on Thu Sep 22 12:16:02 2016
-
-@author: Mats L. Richter
-"""
-
 # Feature_Extractor.py
 
 import os, sys
@@ -29,11 +23,12 @@ from features.negative_bow.negative_bow import Negative_BoW_Text_Module
 from features.resolution.resolution import Resolution_Module
 from features.meta_pdf_extractor.meta_pdf_extractor import Meta_PDF_Module
 
-import cProfile
+import cProfile, pstats
 
 METADATA = None
+pr = None
 
-def extract_features(data, outfile, p=-1):
+def extract_features(data, outfile, p=-1, profiling=False):
 
     fieldnames = []
     for f in features:
@@ -41,36 +36,31 @@ def extract_features(data, outfile, p=-1):
 
     fieldnames.append("class")
     fieldnames.append("document_id")
-
-    #c,m = get_classes(filenames,classes,metadata)
     
     feat_matrix = list()
 
+    # Extract Features parallel
     if p == -1:
         pool = Pool()
     else:
         pool = Pool(p)
-    
-    res = pool.map(get_data_vector, data)
+    if(not(profiling)):
+        res = pool.map(get_data_vector, data)
+    else:
+        pr = cProfile.Profile()
+        pr.enable()
+        res = []
+        for d in data:
+            res.append(get_data_vector(d))
+        pr.disable()
+        pr.create_stats()
+        ps = pstats.Stats(pr).sort_stats('tottime')
+        ps.print_stats(0.1)
 
     # # Subtitute for the pool function if time profiling
     # res = []
     # for d in data:
-    #     metapointer = metadata[d]
     #     res.append(get_data_vector(d))
-
-    # feature_vals = list()
-    # file_data = list()
-    
-    # for item in res:
-    #     feature_vals.append(item[1])
-    #     file_data.append(item[0]) 
-    
-    # for f, r in enumerate(feature_vals):
-    #     r.append(file_data[f][0])
-    #     r.append(file_data[f][1])
-    #     feat_matrix.append(r) 
-
     
     with open(join(FEATURE_VALS_PATH, outfile),"w") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
@@ -83,19 +73,10 @@ def extract_features(data, outfile, p=-1):
         
     return feat_matrix
 
-#prunes the filenames up to the point, the savefile saved the classifications last time, so the system can proceed
-#instead of starting all over from the beginning
-def prune(filenames, save_file):
-    reader = csv.reader(save_file,delimiter=';')
-    for row in reader:
-        if row[0] in filenames:
-            filenames.remove(row[0])
-    return
-
-#generates the error features and replaces the nan values
-#
-#@result:   list of features with the error features included
 def generate_error_features(features):
+    #generates the error features and replaces the nan values
+    #
+    #@result:   list of features with the error features included
     
     error_feature = [0.0] * len(features)
     
@@ -145,8 +126,8 @@ def get_data_vector(t_data):
 def get_metapointer(path):
     return MetaHandler.get_whole_metadata(path)
 
-#function to train modules if needed. Each module called should have a train function
 def train_modules(modules,filenames,classes,metadata):
+    #function to train modules if needed. Each module called should have a train function
     #For now modules are pre-trained
     #We want a separate function for this
     for module in modules:
@@ -187,27 +168,21 @@ if __name__ == "__main__":
     METADATA = MetaHandler.get_classified_meta_dataframe("classified_metadata.csv")
 
     # ADD features HERE
-    # features.append(TextScore(True))
-    # features.append(BoW_Text_Module(True))
-    # features.append(Page_Size_Module())
-    # features.append(Meta_Info())
-    # features.append(page_orientation_module())
+    features.append(TextScore(True))
+    features.append(BoW_Text_Module(True))
+    features.append(Page_Size_Module())
+    features.append(Meta_Info())
+    features.append(page_orientation_module())
     features.append(BowMetadata("title"))
-    # features.append(BowMetadata("author"))
+    features.append(BowMetadata("author"))
     features.append(BowMetadata("filename"))
     features.append(BowMetadata("folder_name"))
     features.append(BowMetadata("folder_description"))
     features.append(BowMetadata("description"))
-    # features.append(Negative_BoW_Text_Module(True))
-    # features.append(Resolution_Module())
-    # features.append(Meta_PDF_Module())
-     
+    features.append(Negative_BoW_Text_Module(True))
+    features.append(Resolution_Module())
+    features.append(Meta_PDF_Module())
 
-    #features.append(OCR_BoW_Module())
+    outfile = "test_12_8.csv"
 
-    print("Extracting Features")
-    outfile = "metacsv_features_1_21.csv"
-    extract_features(data=data,outfile=outfile, p=p)
-
-    # # Getting time spend in all functions called. Doesn't work with multiple threads
-    # cProfile.runctx("extract_features(data=doc_ids, features=features, metadata=metadata, p=p)", globals(), locals())
+    extract_features(data=data,outfile=outfile, p=p, profiling=True)

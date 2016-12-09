@@ -32,36 +32,96 @@ import colorsys
 
 class NN:
     
-    def __init__(self, num_input_nodes, num_hidden_nodes=100, num_hidden_layers=1, modelname="NN"):
-        self.model = Sequential()
-        
-        #Input layers
-        self.model.add(Dense(num_input_nodes,input_dim=num_input_nodes, init="uniform"))
-        #self.model.add(Activation("relu"))
-        
-        for i in range(0,num_hidden_layers):
-            #Hidden layers
-            self.model.add(Dense(num_hidden_nodes, init="uniform"))
-            self.model.add(Activation("sigmoid"))
-                       
-        #Output layer
-        #Activation function Sigmoid
-        self.model.add(Dense(1, activation="sigmoid"))
-        
-        #Compile model
-        #The loss function is binary_crossentropy since we are dealing with 
-        #just two classes. Stochastic gradient descent
-        #self.model.compile(loss="binary_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
-        self.model.compile(loss="mean_squared_error", optimizer="sgd", metrics=["accuracy"])
+    def __init__(self, num_input_nodes, num_hidden_nodes=100, num_hidden_layers=1, modelname="NN",pretrained_model=None):
+        if(not(pretrained_model is None)):
+            print("Loading Model")
+            self.model = keras.models.load_model(pretrained_model)
+        else:
 
-        if(not(isdir(MODEL_PATH))):
-            os.mkdir(MODEL_PATH)
-        self.model_dir = join(MODEL_PATH,modelname+".model")
-        self.model.save(self.model_dir)        
+            self.model = Sequential()
+            
+            #Input layers
+            self.model.add(Dense(num_input_nodes,input_dim=num_input_nodes, init="uniform"))
+            #self.model.add(Activation("relu"))
+            
+            for i in range(0,num_hidden_layers):
+                #Hidden layers
+                self.model.add(Dense(num_hidden_nodes, init="uniform"))
+                self.model.add(Activation("sigmoid"))
+                           
+            #Output layer
+            #Activation function Sigmoid
+            self.model.add(Dense(1, activation="sigmoid"))
+            
+            #Compile model
+            #The loss function is binary_crossentropy since we are dealing with 
+            #just two classes. Stochastic gradient descent
+            #self.model.compile(loss="binary_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
+            self.model.compile(loss="mean_squared_error", optimizer="sgd", metrics=["accuracy"])
+
+            if(not(isdir(MODEL_PATH))):
+                os.mkdir(MODEL_PATH)
+            self.model_dir = join(MODEL_PATH,modelname+".model")
+
+            self.model.save(self.model_dir)        
         
         
     #@params data a list of numpy arrays. Each array is an input
     #@params labels a numpy array with the target data
+
+    def train_testNN(self, train_data, train_labels, test_data, test_lables, num_epochs):
+        self.model.fit(train_data, train_labels, nb_epoch=num_epochs, verbose=0)
+        train_scores = self.model.evaluate(test_data, test_lables, verbose=0)
+        print("train_%s: %.2f%%" % (self.model.metrics_names[1], train_scores[1]*100))
+        prd = self.model.predict(test_data, verbose=0)
+        for p,lab in zip(prd,test_lables):
+            print("%.3f\t"%(p,) + str(lab))
+        self.model.save("NN.model") 
+
+    def testNN(self, data, labels, files, f_names, outpath, cut=.5):
+
+        train_scores = self.model.evaluate(data, labels, verbose=0)
+        print("train_%s: %.2f%%" % (self.model.metrics_names[1], train_scores[1]*100))
+        # train_row.append(train_scores[1] * 100)
+
+        # train_prd = self.model.predict(train_data, verbose=0)
+        # train_prd_bin = np.zeros((len(train_prd),1))
+        # for i,x in enumerate(train_prd):
+        #     x=float(x[0])
+        #     if x >= cut:
+        #         train_prd_bin[i]=1
+        #         if(not(train_labels[i])):
+        #             if(train[i] in train_fp_idx):
+        #                 train_fp_idx[train[i]].append(x)
+        #             else:
+        #                 train_fp_idx[train[i]] = [x]
+        #             train_non_copyright_box.append(x)
+        #         else:
+        #             train_copyright_box.append(x)
+        #     else:
+        #         train_prd_bin[i]=0
+        #         if(train_labels[i]):
+        #             if(train[i] in train_fn_idx):
+        #                 train_fn_idx[train[i]].append(x)
+        #             else:
+        #                 train_fn_idx[train[i]] = [x]
+        #             train_copyright_box.append(x)
+        #         else:
+        #             train_non_copyright_box.append(x)
+
+        # train_row.append(f1_score(train_labels, train_prd_bin, average="binary"))
+        # train_row.append(precision_score(train_labels, train_prd_bin, average="binary"))
+        # train_row.append(recall_score(train_labels, train_prd_bin, average="binary"))
+        # train_row.extend(confusion_matrix(train_labels, train_prd_bin).ravel())
+
+        # train_table.add_row(val_list_to_strings(train_row))
+        # train_mat[kfold_iter,:] = train_row
+
+        # test_row = []
+        # scores = self.model.evaluate(test_data, test_labels, verbose=0)
+        # print("test_%s: %.2f%%" % (self.model.metrics_names[1], scores[1]*100))
+        # test_row.append(scores[1] * 100)
+
 
     def trainNN(self, data, labels, num_epochs=100, cut=.5, k=10):
         
@@ -275,6 +335,8 @@ class NN:
                 test_mat[kfold_iter,:] = test_row
 
                 kfold_iter+=1
+                self.model.save(self.model_dir)
+
 
             test_table.add_row(['']*len(score_names))
             train_table.add_row(['']*len(score_names))
@@ -409,11 +471,11 @@ class NN:
 
     #@params test_data a list of numpy arrays. Each array is an input
     #@params test_labels a numpy array with the target data
-    def testNN(self, test_data, test_labels):
-        print("Testing model...")
-        self.model=keras.models.load_model("NN.model")
-        (loss,accuracy)=self.model.evaluate(test_data, test_labels, nb_epoch=50, batch_size=100)
-        print("loss={:.4f}, accuracy: {:.4f}%".format(loss, accuracy * 100))
+    # def testNN(self, test_data, test_labels):
+    #     print("Testing model...")
+    #     self.model=keras.models.load_model("NN.model")
+    #     (loss,accuracy)=self.model.evaluate(test_data, test_labels, nb_epoch=50, batch_size=100)
+    #     print("loss={:.4f}, accuracy: {:.4f}%".format(loss, accuracy * 100))
 
 def create_boxplot(data, collumn_names, filepath):
 
