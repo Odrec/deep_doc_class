@@ -5,10 +5,9 @@ MOD_PATH = dirname(realpath(__file__))
 from doc_globals import*
 
 from PyPDF2 import PdfFileReader
-# from pdfminer.pdfparser import PDFParser
+from pdfminer.pdfparser import PDFParser
 from collections import Counter
-from pdfminer.pdfparser import *
-# from pdfminer.pdfdocument import PDFDocument
+from pdfminer.pdfdocument import PDFDocument
 import numpy as np
 from sklearn.externals import joblib
 import csv,re

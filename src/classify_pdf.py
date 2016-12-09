@@ -36,35 +36,55 @@ def extract_text(files):
 #    return features
 
 def replace_nan_mean(features):
-    for x in features:
-       for i, a in enumerate(x):
-           x[i] = np.float64(a)
-#    features = np.array(features)
-#    features = np.where(np.isnan(features), np.ma.array(features, mask=np.isnan(features)).mean(axis=0), features)
+    for j, x in enumerate(features):
+       if num_files == 1 or batch == 1:
+           features[j] = np.float64(x)
+       else:
+           for i, a in enumerate(x):
+               x[i] = np.float64(a)
+               
+    means=[20298.4197417,2.36381429433,1505.73264143,14.7116948093,0.0620965262834,0.224715647095,0.16046726099,0.0187519213034, \
+           0.741276328199,0.302775515611,0.431682559213,0.304774059317,0.320976482497,0.311282582781,0.304324417361,4.1199351857, \
+           628.712679189,0.00171229782235,0.0551559240122,0.0781126739863,0.00174256868556,0.148980183858,0.133665986308,0.352290193667]
     features = np.array(features)
-    col_mean = np.nanmean(features,axis=0)
-    inds = np.where(np.isnan(features))
-    features[inds]=np.take(col_mean,inds[1])
+    features = np.where(np.isnan(features), means, features)
+#    features = np.array(features)
+#    col_mean = np.nanmean(features,axis=0)
+#    inds = np.where(np.isnan(features))
+#    print(inds)
+#    print(len(features))
+#    print(features[9])
+#    print(col_mean)
+#    print(inds[0])
+#    features[inds]=np.take(col_mean,inds[1])
     return features
     
 def norm_features(features):
-    len_feat = len([features[0]])
-    max_nor=np.amax(features, axis=0)
-    min_nor=np.amin(features, axis=0)
-    for i in range(0, len_feat):
-        f_range = (max_nor[i]-min_nor[i])
-        if(f_range>0):
-            features[:,i] = (features[:,i]-min_nor[i])/f_range
-        else:
-            print(i)
+
+    max_nor=[6739302.0,1097.62172251,43406.2900391,2064.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.99,0.873788237745,3492.42924243, \
+             3840.0,0.0403225806452,0.13734939759,0.258467023173,0.0205552589429,0.404644359115,0.287703016241,1.0]
+    min_nor=[0.0,0.0,4.7822265625,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.00313876651982,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+
+    for j, x in enumerate(features):
+       if num_files == 1 or batch == 1:
+           f_range = (max_nor[j]-min_nor[j])
+           if f_range > 0:
+               features[j] = (x-min_nor[j])/f_range
+       else:
+           for i, a in enumerate(x):
+               f_range = (max_nor[i]-min_nor[i])
+               if f_range > 0:
+                   x[i] = (x[i]-min_nor[i])/f_range
     return features
     
 def preprocess_features(features):
     if num_files == 1 or batch == 1:
         lf = len(features)
+        doc_ids = features[lf-1]
         features = features[:lf-1]
     else:   
         lf = len(features[0])
+        doc_ids = [x[lf-1] for x in features]
         features = [x[:lf-1] for x in features]
 
     for j, x in enumerate(features):
@@ -76,7 +96,7 @@ def preprocess_features(features):
                 
     features = replace_nan_mean(features)
     features = norm_features(features)
-    return features
+    return features, doc_ids
     
 def predict(features):
     from simple_neural_network import NN
@@ -184,22 +204,23 @@ if __name__ == "__main__":
         print("Finished extracting features.")
                     
         print("Preprocessing extracted features...")
-        features = preprocess_features(features)
-        
+        features, doc_id = preprocess_features(features)        
         print("Finished preprocessing features.")
                 
         if num_files == 1 or batch == 1:
             features = features[np.newaxis]
-
-        features=np.transpose(features)
         
         print("Predicting classification...")
         predictions = predict(features)
         print("Finished prediction.")
         
         prediction_matrix = []
-        for i, p in enumerate(predictions):
-            prediction_matrix.append([float(p), doc_id[i]]) 
+        if num_files == 1 or batch == 1:
+            for p in predictions:
+                prediction_matrix.append([float(p), doc_id]) 
+        else:
+            for i, p in enumerate(predictions):
+                prediction_matrix.append([float(p), doc_id[i]]) 
         
         output_filename = 'prediction_batch%d'%(num_batch,)
         headers = ["value", "id"]

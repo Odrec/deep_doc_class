@@ -8,15 +8,11 @@ Created on Thu Sep 22 12:16:02 2016
 
 # Feature_Extractor.py
 
-import os, sys
-from os.path import join, realpath, basename, dirname, isdir, splitext
+from os.path import basename, splitext
 
-import csv
 import numpy as np
 from multiprocessing import Pool
-from functools import partial
 
-import MetaHandler
 from doc_globals import*
 
 #INSERT IMPORT features HERE
@@ -99,13 +95,6 @@ class FE:
         feature_data.append(doc_id)
             
         return feature_data
-    
-    #function to train modules if needed. Each module called should have a train function
-    def train_modules(self, modules,filenames,classes,metadata):
-        #For now modules are pre-trained
-        #We want a separate function for this
-        for module in modules:
-            module.train(filenames,classes,metadata)
             
     def init_feature_modules(self):
         #initialize module
@@ -135,47 +124,4 @@ class FE:
     
         #modules.append(OCR_BoW_Module())
     
-        return modules    
-
-
-#if __name__ == "__main__":
-#    TRAINING = True
-#    args = sys.argv
-#    len_args = len(args)
-#
-#    usage = "python Feature_Extractor.py <datafile.csv> -c <number of cores>"
-#    data = []
-#
-#    if(not((len_args==2) or (len_args==4))):
-#        print(usage)
-#        sys.exit(1)
-#
-#    data_file = args[1]
-#    with open(data_file, 'r') as df:
-#        reader = csv.reader(df)
-#        data = list(reader)
-#        # data = data[0:3]
-#
-#    if(len_args==4 and args[2]=='-c'):
-#        try:
-#            p = int(args[3])
-#        except ValueError:
-#            print("-c flags needs to be followed by a number")
-#            print(usage)
-#            sys.exit(1)
-#    else:
-#        p = -1
-#
-#    features = init_modules()
-#
-#    # specify which metafile is to load - default is classified_metadata.csv
-#    METADATA = MetaHandler.get_classified_meta_dataframe("classified_metadata.csv")
-#
-#
-#
-#    print("Extracting Features")
-#    outfile = "whole_features_17_11.csv"
-#    extract_features(data=data,outfile=outfile, p=p)
-
-    # # Getting time spend in all functions called. Doesn't work with multiple threads
-    # cProfile.runctx("extract_features(data=doc_ids, features=features, metadata=metadata, p=p)", globals(), locals())
+        return modules

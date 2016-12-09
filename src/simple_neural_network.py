@@ -314,7 +314,7 @@ class NN:
     #@params test_labels a numpy array with the target data
     def predictNN(self, data):
         self.model=keras.models.load_model("NN.model")
-        prd = self.model.predict(data.T, verbose=0)
+        prd = self.model.predict(data, verbose=0)
         return prd
         
 
