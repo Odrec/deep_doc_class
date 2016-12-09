@@ -70,19 +70,24 @@ class BowMetadata():
         elif self.of_type == 'author' and not os.path.isfile(join(MOD_PATH,'lib_bow/model_author.csv')):
             t0=time()
             print("Initializing BowMetadata "+self.of_type)
-            self.load_metadata_from_csv()
-            self.create_bow_author()
+            try:
+                self.load_metadata_from_csv()
+                self.create_bow_author()
+            except:
+                pass
             print("Done %0.3fs" % (time()-t0))
         elif not self.of_type == 'author':
             self.create_bow()
 
     def load_metadata_from_csv(self):
-        # self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
+
+# self.metadata=pd.read_csv("tests/metadataTest.csv", header=0, delimiter=',', quoting=1, encoding='utf-8')
         # self.author=pd.read_csv('tests/uploaderTest.csv', header=0, delimiter=",", quoting=1)
         # self.clf=pd.read_csv("tests/classificationTest.csv", header=0, delimiter=';', quoting=3)
         self.metadata=pd.read_csv(join(DATA_PATH,"classified_metadata.csv"), header=0, delimiter=',', quoting=1, encoding='utf-8')
         self.author=pd.read_csv(join(MOD_PATH,'uploader.csv'), header=0, delimiter=",", quoting=1)
-        self.clf=pd.read_csv(join(DATA_PATH,"trimmed_classification.csv"), header=0, delimiter=';', quoting=3)
+        self.clf = pd.read_csv(join(DATA_PATH,'training_data_with_headers.csv'), delimiter=',', quoting=1, encoding='utf-8')
+        self.clf['published'] = self.clf['published'] == 1
 
         # self.clf_positive = self.clf.loc[self.clf['published'] == True].reset_index(drop=True)
         # self.clf_negative = self.clf.loc[self.clf['published'] == False]
@@ -141,12 +146,17 @@ class BowMetadata():
         :return:
         """
         with open(join(MOD_PATH,"lib_bow/clean_"+self.of_type+".txt")) as file:
-            clean_train_data = [x.strip('\n') for x in file.readlines()]
+            # clean_train_data = [x.strip('\n') for x in file.readlines()]
+            clean_train_data = []
+            for i in range(0,1000):
+                clean_train_data.append(file.readline().strip('\n'))
 
         read_clf=pd.read_csv(join(MOD_PATH,'lib_bow/classifier_'+self.of_type+'.csv'), header=0, quoting=1, delimiter=',')
+        clf = np.ravel(read_clf)
+        clf = clf[0:1000]
 
         train_data_featues = self.vectorizer.fit_transform(clean_train_data).toarray()
-        self.forest = self.forest.fit(train_data_featues, np.ravel(read_clf))
+        self.forest = self.forest.fit(train_data_featues, clf)
 
     def create_bow_author(self):
         """
@@ -170,15 +180,18 @@ class BowMetadata():
         :param metapointer:
         :return:
         """
-        if metapointer is None: raise ValueError('Bag of words need a metapointer')
+        if metapointer is None: return np.nan #raise ValueError('Bag of words need a metapointer')
         # print(metapointer)
         # file=re.sub('[^a-zA-Z0-9]','',filepointer)      # get rid of //.*
         file=basename(filepointer.name)     # get rid of //.*
         file=file[:-4]
 
         if self.of_type == 'author':
-            uploader=pd.read_csv(join(MOD_PATH,'lib_bow/model_author.csv'), delimiter=',', header=0, quoting=1)
-            uploader = uploader.set_index(['document_id'])
+            try:
+                uploader=pd.read_csv(join(MOD_PATH,'lib_bow/model_author.csv'), delimiter=',', header=0, quoting=1)
+                uploader = uploader.set_index(['document_id'])
+            except:
+                return np.nan
 
             try: # catch label [document_id] which is not in the [index]
                 score = uploader['value'].loc[file]

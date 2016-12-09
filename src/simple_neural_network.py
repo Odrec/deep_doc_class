@@ -232,6 +232,7 @@ class NN:
                 test_mat[kfold_iter,:] = test_row
 
                 kfold_iter+=1
+                self.model.save("NN.model")        
 
             test_table.add_row(['']*len(score_names))
             train_table.add_row(['']*len(score_names))
@@ -313,7 +314,7 @@ class NN:
     #@params test_labels a numpy array with the target data
     def predictNN(self, data):
         self.model=keras.models.load_model("NN.model")
-        prd = self.model.predict(data, verbose=0)
+        prd = self.model.predict(data.T, verbose=0)
         return prd
         
 

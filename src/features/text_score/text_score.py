@@ -115,7 +115,7 @@ class TextScore:
                 return np.nan
         else:
             x = len(self.convert_pdf_to_txt(filepointer,-1))
-        return s.norm.pdf(self.mean,self.std,x)
+        return np.float64(x)
 
 
     def train(self,filenames,classes,metalist = None):

@@ -6,9 +6,7 @@ Created on Mon Nov 28 12:04:01 2016
 @author: odrec
 """
 
-
 import sys, os, csv, json, math
-
 import numpy as np
 from subprocess import call
 from os.path import basename, dirname, join, splitext, isfile, isdir, exists
@@ -32,9 +30,21 @@ def extract_text(files):
             #call(["tesseract", output_tif, output_txt, '-l', 'eng'])
             call(["gs", "-dNOPAUSE", "-sDEVICE=txtwrite", "-dBATCH", "-q", "-sOutputFile="+output_txt, f])
 
+#def replace_nan_mean(features):
+#    features = np.array(features)
+#    features = np.where(np.isnan(features), np.ma.array(features, mask=np.isnan(features)).mean(axis=0), features)
+#    return features
+
 def replace_nan_mean(features):
+    for x in features:
+       for i, a in enumerate(x):
+           x[i] = np.float64(a)
+#    features = np.array(features)
+#    features = np.where(np.isnan(features), np.ma.array(features, mask=np.isnan(features)).mean(axis=0), features)
     features = np.array(features)
-    features = np.where(np.isnan(features), np.ma.array(features, mask=np.isnan(features)).mean(axis=0), features)
+    col_mean = np.nanmean(features,axis=0)
+    inds = np.where(np.isnan(features))
+    features[inds]=np.take(col_mean,inds[1])
     return features
     
 def norm_features(features):
@@ -52,10 +62,10 @@ def norm_features(features):
 def preprocess_features(features):
     if num_files == 1 or batch == 1:
         lf = len(features)
-        features = features[:lf-2]
+        features = features[:lf-1]
     else:   
         lf = len(features[0])
-        features = [x[:lf-2] for x in features]
+        features = [x[:lf-1] for x in features]
 
     for j, x in enumerate(features):
         if num_files == 1 or batch == 1:
@@ -65,6 +75,7 @@ def preprocess_features(features):
                 x[i] = np.float64(a)
                 
     features = replace_nan_mean(features)
+    features = norm_features(features)
     return features
     
 def predict(features):
@@ -89,7 +100,6 @@ if __name__ == "__main__":
         os.makedirs(PREDICTION_PATH)
         
     if not len_args == 3 and not len_args == 5 and not len_args == 7 and not len_args == 9:
-        print(len_args)
         print(usage)
         sys.exit(1)
     else:
@@ -155,13 +165,13 @@ if __name__ == "__main__":
             over_batch = num_files
             
         batch_files = files[under_batch:over_batch]
-        batch_meta = []
+        batch_meta = {}
         doc_id = []
         for i, f in enumerate(batch_files):
             doc_id.append(splitext(basename(f))[0])
             if m == 0:
-                batch_meta.append(metadata.loc[metadata['document_id'] == doc_id[i]].reset_index(drop=True))
-
+                batch_meta[doc_id[i]] = metadata.loc[metadata['document_id'] == doc_id[i]].reset_index(drop=True)
+                
         print("Checking if text needs to be extracted...")
         if num_files == 1 or batch == 1:
             extract_text(batch_files[0])
@@ -172,13 +182,16 @@ if __name__ == "__main__":
         print("Extracting features...")
         features = extract_features(batch_files, batch_meta, c)  
         print("Finished extracting features.")
-            
+                    
         print("Preprocessing extracted features...")
         features = preprocess_features(features)
-        print("Finished preprocessing features.")
         
+        print("Finished preprocessing features.")
+                
         if num_files == 1 or batch == 1:
             features = features[np.newaxis]
+
+        features=np.transpose(features)
         
         print("Predicting classification...")
         predictions = predict(features)

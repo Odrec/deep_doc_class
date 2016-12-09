@@ -117,8 +117,7 @@ class Meta_Info:
             producer_feature['producer']='Encrypted'
             
             #shutil.move(root+'/'+file, root+'/Encrypted/'+file)
-                
-                                                
+                                                                
         return author_feature, creator_feature, producer_feature, encrypted_feature
         
         
@@ -154,7 +153,7 @@ class Meta_Info:
     #@param class_path the path to where the classification.csv is located
     #@param num_pages the amount of pages to process starting from the first (default 1)
     def train(self,files_path,class_path,num_pages=1):
-        
+                
         feat_author=[]
         feat_creator=[]
         feat_producer=[]
@@ -172,7 +171,7 @@ class Meta_Info:
                 pdf_file = join(files_path,file+'.pdf')
                 if not os.stat(pdf_file).st_size == 0:
 
-                    fa, fc, fp = self.readMetadata(open(pdf_file,'rb'))
+                    fa, fc, fp, en = self.readMetadata(open(pdf_file,'rb'))
                     feat_author.append(fa)
                     feat_creator.append(fc)
                     feat_producer.append(fp)
@@ -243,5 +242,5 @@ class Meta_Info:
         joblib.dump(gnb, join(MOD_PATH,'producer-trained-naive.pkl'))
         
 
-    
-#Meta_Info()
+if __name__ == "__main__":  
+    Meta_Info()

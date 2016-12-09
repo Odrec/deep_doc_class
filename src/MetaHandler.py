@@ -272,7 +272,7 @@ def write_classified_metadata(metafile, classfile):
     return
 
 def get_classified_meta_dataframe(metafile="classified_metadata.csv"):
-    meta_data=pd.read_csv(join(DATA_PATH,metafile), header=0, delimiter=',', quoting=1, encoding='utf-8')
+    meta_data=pd.read_csv(join(DATA_PATH,metafile), header=0, delimiter=',', quoting=0, encoding='utf-8')
     return meta_data
 
 def get_whole_meta_dataframe(metafile="metadata.csv"):
