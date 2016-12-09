@@ -483,18 +483,28 @@ if __name__ == "__main__":
     if(not(isdir(trial_folder))):
         os.mkdir(trial_folder)
 
-    print("Initiating Neural Network")
-    network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_folder)
+    # print("Initiating Neural Network")
+    # network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_folder)
+    # network.k_fold_crossvalidation(f_vals,
+    #     f_classes,
+    #     files,
+    #     f_names,
+    #     10,
+    #     trial_folder,
+    #     num_epochs,
+    #     conf_thresh)
+    # print("Training done!")
 
-    network.k_fold_crossvalidation(f_vals,
-        f_classes,
-        files,
-        f_names,
-        10,
-        trial_folder,
-        num_epochs,
-        conf_thresh)
-    print("Training done!")
+    network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_folder, pretrained_model="NN.model")
+    network.testNN(f_vals,f_classes)
+
+    # test_file = args[2]
+    # t_f_vals, t_f_classes, t_files, t_f_names = load_data(test_file)
+    # t_f_vals = replace_nan_mean(t_f_vals)
+    # t_f_vals = norm_features(t_f_vals)
+    # print("Initiating Neural Network")
+    # network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_folder)
+    # train_testNN(f_vals, f_classes, t_f_vals, t_f_classes, num_epochs)
 
     # from log_reg import Log_Reg
     # print("Initiating Logistic Regression")

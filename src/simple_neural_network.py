@@ -78,49 +78,13 @@ class NN:
             print("%.3f\t"%(p,) + str(lab))
         self.model.save("NN.model") 
 
-    def testNN(self, data, labels, files, f_names, outpath, cut=.5):
+    def testNN(self, data, labels):
 
         train_scores = self.model.evaluate(data, labels, verbose=0)
         print("train_%s: %.2f%%" % (self.model.metrics_names[1], train_scores[1]*100))
-        # train_row.append(train_scores[1] * 100)
-
-        # train_prd = self.model.predict(train_data, verbose=0)
-        # train_prd_bin = np.zeros((len(train_prd),1))
-        # for i,x in enumerate(train_prd):
-        #     x=float(x[0])
-        #     if x >= cut:
-        #         train_prd_bin[i]=1
-        #         if(not(train_labels[i])):
-        #             if(train[i] in train_fp_idx):
-        #                 train_fp_idx[train[i]].append(x)
-        #             else:
-        #                 train_fp_idx[train[i]] = [x]
-        #             train_non_copyright_box.append(x)
-        #         else:
-        #             train_copyright_box.append(x)
-        #     else:
-        #         train_prd_bin[i]=0
-        #         if(train_labels[i]):
-        #             if(train[i] in train_fn_idx):
-        #                 train_fn_idx[train[i]].append(x)
-        #             else:
-        #                 train_fn_idx[train[i]] = [x]
-        #             train_copyright_box.append(x)
-        #         else:
-        #             train_non_copyright_box.append(x)
-
-        # train_row.append(f1_score(train_labels, train_prd_bin, average="binary"))
-        # train_row.append(precision_score(train_labels, train_prd_bin, average="binary"))
-        # train_row.append(recall_score(train_labels, train_prd_bin, average="binary"))
-        # train_row.extend(confusion_matrix(train_labels, train_prd_bin).ravel())
-
-        # train_table.add_row(val_list_to_strings(train_row))
-        # train_mat[kfold_iter,:] = train_row
-
-        # test_row = []
-        # scores = self.model.evaluate(test_data, test_labels, verbose=0)
-        # print("test_%s: %.2f%%" % (self.model.metrics_names[1], scores[1]*100))
-        # test_row.append(scores[1] * 100)
+        prd = self.model.predict(data, verbose=0)
+        for p,lab in zip(prd,labels):
+            print("%.3f\t"%(p,) + str(lab))
 
 
     def trainNN(self, data, labels, num_epochs=100, cut=.5, k=10):
