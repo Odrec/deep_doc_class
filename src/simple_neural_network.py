@@ -173,265 +173,265 @@ class NN:
 
     def k_fold_crossvalidation(self, data, labels, files, f_names, n_folds, outpath, num_epochs=100, cut=.5):
 
-            seed=7
-            np.random.seed(seed)
+        seed=7
+        np.random.seed(seed)
 
-            kfold = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=seed)
+        kfold = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=seed)
 
-            score_names = ["accuracy", "f1", "precision", "recall", "tp", "fp", "fn", "tn"]
-            kfold_train_scores = []
-            kfold_test_scores = []
+        score_names = ["accuracy", "f1", "precision", "recall", "tp", "fp", "fn", "tn"]
+        kfold_train_scores = []
+        kfold_test_scores = []
 
-            test_table = PrettyTable(score_names)
-            test_mat = np.zeros((n_folds,len(score_names)))
-            train_table = PrettyTable(score_names)
-            train_mat = np.zeros((n_folds,len(score_names)))
-            train_fn_idx = {}
-            train_fp_idx = {}
-            test_fn_idx = {}
-            test_fp_idx = {}
+        test_table = PrettyTable(score_names)
+        test_mat = np.zeros((n_folds,len(score_names)))
+        train_table = PrettyTable(score_names)
+        train_mat = np.zeros((n_folds,len(score_names)))
+        train_fn_idx = {}
+        train_fp_idx = {}
+        test_fn_idx = {}
+        test_fp_idx = {}
 
-            train_copyright_box = []
-            train_non_copyright_box = []
-            test_copyright_box = []
-            test_non_copyright_box = []
+        train_copyright_box = []
+        train_non_copyright_box = []
+        test_copyright_box = []
+        test_non_copyright_box = []
 
-            test_fn_rows = []
-            test_fp_rows = []
-            test_unsure_rows = []
+        test_fn_rows = []
+        test_fp_rows = []
+        test_unsure_rows = []
 
-            kfold_iter = 0
-            for train, test in kfold.split(data,labels):
+        kfold_iter = 0
+        for train, test in kfold.split(data,labels):
 
-                # split the data
-                train_data = data[train]
-                test_data = data[test]
-                train_labels = labels[train]
-                test_labels = labels[test]
-                test_files = [files[i] for i in test]
-                train_files = [files[i] for i in train]
+            # split the data
+            train_data = data[train]
+            test_data = data[test]
+            train_labels = labels[train]
+            test_labels = labels[test]
+            test_files = [files[i] for i in test]
+            train_files = [files[i] for i in train]
 
-                # get the model
-                self.model = keras.models.load_model(self.model_dir)
-                # train the model
-                self.model.fit(train_data, train_labels, nb_epoch=num_epochs, verbose=0)
+            # get the model
+            self.model = keras.models.load_model(self.model_dir)
+            # train the model
+            self.model.fit(train_data, train_labels, nb_epoch=num_epochs, verbose=0)
 
-                # print(np.mean(self.model.get_weights()[0], axis=1))
-                # print(np.std(self.model.get_weights()[0], axis=1))
-                # print(np.max(self.model.get_weights()[0], axis=1))
-                # sys.exit(1)
+            # print(np.mean(self.model.get_weights()[0], axis=1))
+            # print(np.std(self.model.get_weights()[0], axis=1))
+            # print(np.max(self.model.get_weights()[0], axis=1))
+            # sys.exit(1)
 
-                train_row = []
-                train_scores = self.model.evaluate(train_data, train_labels, verbose=0)
-                print("train_%s: %.2f%%" % (self.model.metrics_names[1], train_scores[1]*100))
-                train_row.append(train_scores[1] * 100)
+            train_row = []
+            train_scores = self.model.evaluate(train_data, train_labels, verbose=0)
+            print("train_%s: %.2f%%" % (self.model.metrics_names[1], train_scores[1]*100))
+            train_row.append(train_scores[1] * 100)
 
-                train_prd = self.model.predict(train_data, verbose=0)
-                train_prd_bin = np.zeros((len(train_prd),1))
-                for i,x in enumerate(train_prd):
+            train_prd = self.model.predict(train_data, verbose=0)
+            train_prd_bin = np.zeros((len(train_prd),1))
+            for i,x in enumerate(train_prd):
+                x=float(x[0])
+                if x >= cut:
+                    train_prd_bin[i]=1
+                    if(not(train_labels[i])):
+                        if(train[i] in train_fp_idx):
+                            train_fp_idx[train[i]].append(x)
+                        else:
+                            train_fp_idx[train[i]] = [x]
+                        train_non_copyright_box.append(x)
+                    else:
+                        train_copyright_box.append(x)
+                else:
+                    train_prd_bin[i]=0
+                    if(train_labels[i]):
+                        if(train[i] in train_fn_idx):
+                            train_fn_idx[train[i]].append(x)
+                        else:
+                            train_fn_idx[train[i]] = [x]
+                        train_copyright_box.append(x)
+                    else:
+                        train_non_copyright_box.append(x)
+
+            train_row.append(f1_score(train_labels, train_prd_bin, average="binary"))
+            train_row.append(precision_score(train_labels, train_prd_bin, average="binary"))
+            train_row.append(recall_score(train_labels, train_prd_bin, average="binary"))
+            train_row.extend(confusion_matrix(train_labels, train_prd_bin).ravel())
+
+            train_table.add_row(val_list_to_strings(train_row))
+            train_mat[kfold_iter,:] = train_row
+
+            test_row = []
+            scores = self.model.evaluate(test_data, test_labels, verbose=0)
+            print("test_%s: %.2f%%" % (self.model.metrics_names[1], scores[1]*100))
+            test_row.append(scores[1] * 100)
+
+            test_prd = self.model.predict(test_data, verbose=0)
+            test_prd_bin = np.zeros((len(test_prd),1))
+            for i,x in enumerate(test_prd):
+                if x >= cut:
                     x=float(x[0])
-                    if x >= cut:
-                        train_prd_bin[i]=1
-                        if(not(train_labels[i])):
-                            if(train[i] in train_fp_idx):
-                                train_fp_idx[train[i]].append(x)
-                            else:
-                                train_fp_idx[train[i]] = [x]
-                            train_non_copyright_box.append(x)
-                        else:
-                            train_copyright_box.append(x)
+                    test_prd_bin[i]=1.0
+                    if(not(test_labels[i])):
+                        test_fp_idx[test[i]] = x
+                        test_fp_rows.append([files[test[i]],x])
+                        test_non_copyright_box.append(x)
                     else:
-                        train_prd_bin[i]=0
-                        if(train_labels[i]):
-                            if(train[i] in train_fn_idx):
-                                train_fn_idx[train[i]].append(x)
-                            else:
-                                train_fn_idx[train[i]] = [x]
-                            train_copyright_box.append(x)
-                        else:
-                            train_non_copyright_box.append(x)
+                        test_copyright_box.append(x)
+                    if(x<=0.7):
+                        test_unsure_rows.append([files[test[i]],x])
 
-                train_row.append(f1_score(train_labels, train_prd_bin, average="binary"))
-                train_row.append(precision_score(train_labels, train_prd_bin, average="binary"))
-                train_row.append(recall_score(train_labels, train_prd_bin, average="binary"))
-                train_row.extend(confusion_matrix(train_labels, train_prd_bin).ravel())
-
-                train_table.add_row(val_list_to_strings(train_row))
-                train_mat[kfold_iter,:] = train_row
-
-                test_row = []
-                scores = self.model.evaluate(test_data, test_labels, verbose=0)
-                print("test_%s: %.2f%%" % (self.model.metrics_names[1], scores[1]*100))
-                test_row.append(scores[1] * 100)
-
-                test_prd = self.model.predict(test_data, verbose=0)
-                test_prd_bin = np.zeros((len(test_prd),1))
-                for i,x in enumerate(test_prd):
-                    if x >= cut:
-                        x=float(x[0])
-                        test_prd_bin[i]=1.0
-                        if(not(test_labels[i])):
-                            test_fp_idx[test[i]] = x
-                            test_fp_rows.append([files[test[i]],x])
-                            test_non_copyright_box.append(x)
-                        else:
-                            test_copyright_box.append(x)
-                        if(x<=0.7):
-                            test_unsure_rows.append([files[test[i]],x])
-
+                else:
+                    test_prd_bin[i]=0.0
+                    if(test_labels[i]):
+                        test_fn_idx[test[i]] = x
+                        test_fn_rows.append([files[test[i]],x])
+                        test_copyright_box.append(x)
                     else:
-                        test_prd_bin[i]=0.0
-                        if(test_labels[i]):
-                            test_fn_idx[test[i]] = x
-                            test_fn_rows.append([files[test[i]],x])
-                            test_copyright_box.append(x)
-                        else:
-                            test_non_copyright_box.append(x)
-                        if(x>=0.3):
-                            test_unsure_rows.append([files[test[i]],x])
+                        test_non_copyright_box.append(x)
+                    if(x>=0.3):
+                        test_unsure_rows.append([files[test[i]],x])
 
-                test_row.append(f1_score(test_labels, test_prd_bin, average="binary"))
-                test_row.append(precision_score(test_labels, test_prd_bin, average="binary"))
-                test_row.append(recall_score(test_labels, test_prd_bin, average="binary"))
-                test_row.extend(confusion_matrix(test_labels, test_prd_bin).ravel())
+            test_row.append(f1_score(test_labels, test_prd_bin, average="binary"))
+            test_row.append(precision_score(test_labels, test_prd_bin, average="binary"))
+            test_row.append(recall_score(test_labels, test_prd_bin, average="binary"))
+            test_row.extend(confusion_matrix(test_labels, test_prd_bin).ravel())
 
-                test_table.add_row(val_list_to_strings(test_row))
-                test_mat[kfold_iter,:] = test_row
+            test_table.add_row(val_list_to_strings(test_row))
+            test_mat[kfold_iter,:] = test_row
 
-                kfold_iter+=1
-                self.model.save(self.model_dir)
+            kfold_iter+=1
+            self.model.save(self.model_dir)
 
 
-            test_table.add_row(['']*len(score_names))
-            train_table.add_row(['']*len(score_names))
+        test_table.add_row(['']*len(score_names))
+        train_table.add_row(['']*len(score_names))
 
-            test_table.add_row(val_list_to_strings(np.mean(test_mat,axis=0)))
-            test_table.add_row(val_list_to_strings(np.std(test_mat,axis=0)))
-            train_table.add_row(val_list_to_strings(np.mean(train_mat,axis=0)))
-            train_table.add_row(val_list_to_strings(np.std(train_mat,axis=0)))
+        test_table.add_row(val_list_to_strings(np.mean(test_mat,axis=0)))
+        test_table.add_row(val_list_to_strings(np.std(test_mat,axis=0)))
+        train_table.add_row(val_list_to_strings(np.mean(train_mat,axis=0)))
+        train_table.add_row(val_list_to_strings(np.std(train_mat,axis=0)))
 
-            header = range(0,len(f_names)+2)
+        header = range(0,len(f_names)+2)
 
-            fp_test_table = PrettyTable(header)
-            for idx in test_fp_idx.keys():
-                row = [files[idx]]
-                row.append(test_fp_idx[idx])
-                row.extend(data[idx,:])
-                fp_test_table.add_row(val_list_to_strings(row))
+        fp_test_table = PrettyTable(header)
+        for idx in test_fp_idx.keys():
+            row = [files[idx]]
+            row.append(test_fp_idx[idx])
+            row.extend(data[idx,:])
+            fp_test_table.add_row(val_list_to_strings(row))
 
-            fn_test_table = PrettyTable(header)
-            for idx in test_fn_idx.keys():
-                row = [files[idx]]
-                row.append(test_fn_idx[idx])
-                row.extend(data[idx,:])
-                fn_test_table.add_row(val_list_to_strings(row))
+        fn_test_table = PrettyTable(header)
+        for idx in test_fn_idx.keys():
+            row = [files[idx]]
+            row.append(test_fn_idx[idx])
+            row.extend(data[idx,:])
+            fn_test_table.add_row(val_list_to_strings(row))
 
-            fp_train_table = PrettyTable(header)
-            for idx in train_fp_idx.keys():
-                row = [files[idx]]
-                row.append(train_fp_idx[idx])
-                row.extend(data[idx,:])
-                fp_train_table.add_row(val_list_to_strings(row))
+        fp_train_table = PrettyTable(header)
+        for idx in train_fp_idx.keys():
+            row = [files[idx]]
+            row.append(train_fp_idx[idx])
+            row.extend(data[idx,:])
+            fp_train_table.add_row(val_list_to_strings(row))
 
-            fn_train_table = PrettyTable(header)
-            for idx in train_fn_idx.keys():
-                row = [files[idx]]
-                row.append(train_fn_idx[idx])
-                row.extend(data[idx,:])
-                fn_train_table.add_row(val_list_to_strings(row))
+        fn_train_table = PrettyTable(header)
+        for idx in train_fn_idx.keys():
+            row = [files[idx]]
+            row.append(train_fn_idx[idx])
+            row.extend(data[idx,:])
+            fn_train_table.add_row(val_list_to_strings(row))
 
-            text_width_scores = len(test_table.get_string().split("\n")[0])
-            text_width_files = len(fn_test_table.get_string().split("\n")[0])
+        text_width_scores = len(test_table.get_string().split("\n")[0])
+        text_width_files = len(fn_test_table.get_string().split("\n")[0])
 
 
-            legend = ["document_id", "prediction"]
-            legend.extend(f_names)
-            field_names = ""
-            for i,name in enumerate(legend):
-                field_names += str(i)+":"+"%-20s"%(name,)+"\t"
-                if((i+1)%4==0):
-                    field_names+="\n"
+        legend = ["document_id", "prediction"]
+        legend.extend(f_names)
+        field_names = ""
+        for i,name in enumerate(legend):
+            field_names += str(i)+":"+"%-20s"%(name,)+"\t"
+            if((i+1)%4==0):
+                field_names+="\n"
 
-            with open(join(outpath, "cross_eval.txt"), 'w') as f:
-                f.write(("%d-FOLD-CROSSVALIDATION\n"%(n_folds,)).center(text_width_scores))
+        with open(join(outpath, "cross_eval.txt"), 'w') as f:
+            f.write(("%d-FOLD-CROSSVALIDATION\n"%(n_folds,)).center(text_width_scores))
+            f.write("\n")
+            f.write("\n")
+            f.write("results - trainigset:\n".center(text_width_scores))
+            f.write("\n")
+            f.write(train_table.get_string())
+            f.write("\n")
+            f.write("\n")
+            f.write("results -testingset:\n".center(text_width_scores))
+            f.write("\n")
+            f.write(test_table.get_string())
+            f.write("\n")
+            f.write("\n")
+            f.write("false-negatives-details\n".center(text_width_files))
+            f.write("\n")
+            f.write("\n")
+            f.write(field_names)
+            f.write("\n")
+            f.write("\n")
+            f.write("trainingset:\n")
+            f.write(fn_train_table.get_string())
+            f.write("\n")
+            f.write("testingset:\n".center(text_width_files))
+            f.write(fn_test_table.get_string())
+            f.write("\n")
+            f.write("false-positives-details\n".center(text_width_files))
+            f.write("trainingset\n".center(text_width_files))
+            f.write(fp_train_table.get_string())
+            f.write("\n")
+            f.write("testingset\n".center(text_width_files))
+            f.write(fp_test_table.get_string())
+
+        test_fn_rows.sort(key=lambda list: list[1], reverse=False)
+        test_fp_rows.sort(key=lambda list: list[1], reverse=True)
+        test_unsure_rows.sort(key=lambda list: list[1], reverse=False)
+
+        text_width_files = len("%s\t%.3f"%(test_fn_rows[0][0],test_fn_rows[0][1]))
+        with open(join(outpath,"false_pred_list.txt"), 'w') as f:
+
+            f.write("False Classified Documents".center(80))
+            f.write("\n")
+            f.write("(High percentages mean a high confidence that the document is copyright protected)".center(80))
+            f.write("\n")
+
+            f.write("\n\n")
+            f.write("False Negatives".center(80))
+            f.write("\n")
+            f.write("(Classified as not copyright protected but they are)".center(80))
+            f.write("\n\n")
+            for row in test_fn_rows:
+                f.write(("%s\t%.3f"%(row[0],row[1])).center(80))
                 f.write("\n")
-                f.write("\n")
-                f.write("results - trainigset:\n".center(text_width_scores))
-                f.write("\n")
-                f.write(train_table.get_string())
-                f.write("\n")
-                f.write("\n")
-                f.write("results -testingset:\n".center(text_width_scores))
-                f.write("\n")
-                f.write(test_table.get_string())
-                f.write("\n")
-                f.write("\n")
-                f.write("false-negatives-details\n".center(text_width_files))
-                f.write("\n")
-                f.write("\n")
-                f.write(field_names)
-                f.write("\n")
-                f.write("\n")
-                f.write("trainingset:\n")
-                f.write(fn_train_table.get_string())
-                f.write("\n")
-                f.write("testingset:\n".center(text_width_files))
-                f.write(fn_test_table.get_string())
-                f.write("\n")
-                f.write("false-positives-details\n".center(text_width_files))
-                f.write("trainingset\n".center(text_width_files))
-                f.write(fp_train_table.get_string())
-                f.write("\n")
-                f.write("testingset\n".center(text_width_files))
-                f.write(fp_test_table.get_string())
 
-            test_fn_rows.sort(key=lambda list: list[1], reverse=False)
-            test_fp_rows.sort(key=lambda list: list[1], reverse=True)
-            test_unsure_rows.sort(key=lambda list: list[1], reverse=False)
-
-            text_width_files = len("%s\t%.3f"%(test_fn_rows[0][0],test_fn_rows[0][1]))
-            with open(join(outpath,"false_pred_list.txt"), 'w') as f:
-
-                f.write("False Classified Documents".center(80))
-                f.write("\n")
-                f.write("(High percentages mean a high confidence that the document is copyright protected)".center(80))
+            f.write("\n\n")
+            f.write("False Positives".center(80))
+            f.write("\n")
+            f.write("(Classified copyright protected but they are not)".center(80))
+            f.write("\n\n")
+            for row in test_fp_rows:
+                f.write(("%s\t%.3f"%(row[0],row[1])).center(80))
                 f.write("\n")
 
-                f.write("\n\n")
-                f.write("False Negatives".center(80))
+            f.write("\n\n")
+            f.write("Unsecure Classifications".center(80))
+            f.write("\n")
+            f.write("(Classification is not vague)".center(80))
+            f.write("\n\n")
+            for row in test_unsure_rows:
+                f.write(("%s\t%.3f"%(row[0],row[1])).center(80))
                 f.write("\n")
-                f.write("(Classified as not copyright protected but they are)".center(80))
-                f.write("\n\n")
-                for row in test_fn_rows:
-                    f.write(("%s\t%.3f"%(row[0],row[1])).center(80))
-                    f.write("\n")
-
-                f.write("\n\n")
-                f.write("False Positives".center(80))
-                f.write("\n")
-                f.write("(Classified copyright protected but they are not)".center(80))
-                f.write("\n\n")
-                for row in test_fp_rows:
-                    f.write(("%s\t%.3f"%(row[0],row[1])).center(80))
-                    f.write("\n")
-
-                f.write("\n\n")
-                f.write("Unsecure Classifications".center(80))
-                f.write("\n")
-                f.write("(Classification is not vague)".center(80))
-                f.write("\n\n")
-                for row in test_unsure_rows:
-                    f.write(("%s\t%.3f"%(row[0],row[1])).center(80))
-                    f.write("\n")
 
 
 
-            test_cb = np.array(test_copyright_box)
-            test_ncb = np.array(test_non_copyright_box)
-            train_cb = np.array(train_copyright_box)
-            train_ncb = np.array(train_non_copyright_box)
-            data = [test_cb, test_ncb, train_cb, train_ncb]
-            create_boxplot(data, ["prd_test_c", "prd_test_nc", "prd_train_c", "prd_train_nc"], join(outpath,"prediction_boxplot.png"))
+        test_cb = np.array(test_copyright_box)
+        test_ncb = np.array(test_non_copyright_box)
+        train_cb = np.array(train_copyright_box)
+        train_ncb = np.array(train_non_copyright_box)
+        data = [test_cb, test_ncb, train_cb, train_ncb]
+        create_boxplot(data, ["prd_test_c", "prd_test_nc", "prd_train_c", "prd_train_nc"], join(outpath,"prediction_boxplot.png"))
 
     #@params test_data a list of numpy arrays. Each array is an input
     #@params test_labels a numpy array with the target data

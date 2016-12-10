@@ -19,10 +19,11 @@ import json
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.externals import joblib
+from sklearn.model_selection import StratifiedKFold
 
 
 class BowMetadata():
-    def __init__(self, of_type, punish_factor=0.1, punish_threshold=10, max_features=10, n_estimators=10):
+    def __init__(self, of_type, punish_factor=0.1, punish_threshold=10, max_features=1000, n_estimators=100):
         self.of_type=of_type
         self.name = [of_type]
         self.model = None
@@ -101,15 +102,36 @@ class BowMetadata():
 
             clean_data = []
             clf = []
+            pos_clean_data =[]
+            neg_clean_data = []
 
             for d_id, d_cls in zip(doc_ids, classes):
                 if(d_id in data):
                     clean_data.append(data[d_id])
-                    clf.append(clf)
+                    clf.append(d_cls)
+                    if(d_cls):
+                        pos_clean_data.append(data[d_id])
+                    else:
+                        neg_clean_data.append(data[d_id])
 
-            print("Counting Words")
-            self.vectorizer = CountVectorizer(analyzer='word', encoding="utf-8", max_features=self.max_features)
-            self.vectorizer = self.vectorizer.fit(clean_data)
+            clf = np.array(clf)
+
+            self.vectorizer = CountVectorizer(analyzer='word', encoding="utf-8", max_features=self.max_features, max_df=0.99, min_df=0.005)
+            # self.vectorizer = self.vectorizer.fit(clean_data)
+            # print(self.vectorizer.get_feature_names()[20:40])
+            pos_vectorizer = self.vectorizer.fit(pos_clean_data)
+            # print(pos_vectorizer.get_feature_names()[20:40])
+            pos_words = pos_vectorizer.get_feature_names()
+            neg_vectorizer = self.vectorizer.fit(neg_clean_data)
+            # print(neg_vectorizer.get_feature_names()[20:40])
+            neg_words = neg_vectorizer.get_feature_names()
+
+            shared_words = [pw for pw in pos_words if(pw in neg_words)]
+            print(shared_words)
+            print([pw for pw in pos_words if(not(pw in shared_words))])
+            print([nw for nw in neg_words if(not(nw in shared_words))])
+
+            sys.exit(1)
 
             if(not(isdir(join(MOD_PATH,'voctorizer')))):
                 os.makedirs(join(MOD_PATH,'voctorizer'))
@@ -118,23 +140,15 @@ class BowMetadata():
             joblib.dump(self.vectorizer, vec_file)
 
             train_data_featues = self.vectorizer.transform(clean_data).toarray()
-            print(np.shape(train_data_featues))
-            print(train_data_featues[0:2,:])
 
-            # train_data_featues = train_data_featues[0:2,:]
-            # clf = clf[0:2]
-
-            print("Training the Forest")
-            self.forest = RandomForestClassifier(n_estimators=1, max_features=4,max_depth=10, verbose=0, bootstrap=False, n_jobs=1)
-            print("Forest initalized")
-            self.forest = self.forest.fit(train_data_featues, clf)
-            print("Done")
+            self.model = RandomForestClassifier(n_estimators=self.n_estimators)
+            self.model = self.model.fit(train_data_featues, clf)
 
             if(not(isdir(join(MOD_PATH,'forests')))):
                 os.makedirs(join(MOD_PATH,'forests'))
 
             forest_file = join(MOD_PATH,'forests/'+self.of_type+'.pkl')
-            joblib.dump(self.forest, forest_file)
+            joblib.dump(self.model, forest_file)
 
         else:
             train = self.get_train(self.author, self.clf)
@@ -148,6 +162,46 @@ class BowMetadata():
             # Pandas write train to csv file in lib_bow for the bow_author
             train.to_csv(join(MOD_PATH,"model_author.csv"), index=True, quoting=1, encoding='utf-8')
 
+    def predict_probs(self, doc_ids, classes, log_probs=False):
+        if(not(self.of_type == 'author')):
+
+            filepath = join(MOD_PATH,"lib_bow/clean_"+self.of_type+".json")
+            data = json.load(open(filepath,"r"))
+
+            clean_data = []
+            clf = []
+
+            for d_id, d_cls in zip(doc_ids, classes):
+                if(d_id in data):
+                    clean_data.append(data[d_id])
+                    clf.append(d_cls)
+
+            clf = np.array(clf)
+
+            train_data_featues = self.vectorizer.transform(clean_data).toarray()
+            
+            score = self.model.score(train_data_featues, clf)
+            print(score)
+
+            if(log_probs):
+                probs = self.model.predict_log_proba(train_data_featues)
+            else:
+                probs = self.model.predict_proba(train_data_featues)
+            return probs
+
+        else:
+            scores = np.zeros(len(doc_ids))
+            for i,file in enumerate(doc_ids):
+                try: # catch label [document_id] which is not in the [index]
+                    score = self.model['value'].loc[file]
+                except:
+                    score = 0
+                if score >= self.punish_threshold:
+                    scores[i]=score
+                else:
+                    scores[i]=score*self.punish_factor
+            return scores
+
     def get_train(self, data, classifier):
         """
         Training data consists of all metadata from documents who fulfill
@@ -156,6 +210,31 @@ class BowMetadata():
         All NaN´s are dropped from training data and the index is resetet.
         """
         return data.loc[classifier.index]
+
+    def crossvalidate(self, doc_ids, labels, n_folds=10):
+
+        seed=7
+        np.random.seed(seed)
+
+        print("Crossvalidating " + self.of_type+":")
+        kfold = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=seed)
+        for train, test in kfold.split(doc_ids,labels):
+
+            # split the data
+            train_data = [doc_ids[t] for t in train]
+            test_data = [doc_ids[t] for t in test]
+            train_labels = [labels[t] for t in train]
+            test_labels = [labels[t] for t in test]
+
+            # get the model
+            self.train(train_data, train_labels)
+            # predict
+            probs = self.predict_probs(test_data, test_labels, False)
+
+        print("Overfitting result:")
+        self.train(doc_ids, labels)
+        self.predict_probs(doc_ids, labels, False)
+        print('\n')
 
 def generate_clean_training_files(field_name):
     metadata=pd.read_csv(join(DATA_PATH,"classified_metadata.csv"), delimiter=',', quoting=1, encoding='utf-8')
@@ -229,7 +308,14 @@ if __name__ == "__main__":
     features.append(BowMetadata("folder_description"))
     features.append(BowMetadata("description"))
 
+    doc_ids = list(train["document_id"])
+    classes = list(train["class"])
+
+    # for f in features:
+    #     f.train(doc_ids, classes)
+    #     print(f.name[0])
+
     for f in features:
-        f.train(list(train["document_id"]), list(train["class"]))
-        print(f.name[0])
+        f.crossvalidate(doc_ids, classes, 10)
+
 
