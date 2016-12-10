@@ -438,9 +438,9 @@ if __name__ == "__main__":
 
     usage = "python Classification.py <feature_file.csv>"
 
-    if(not(len_args==2)):
-        print(usage)
-        sys.exit(1)
+    # if(not(len_args==2)):
+    #     print(usage)
+    #     sys.exit(1)
 
     features_file = args[1]
     if not os.path.isfile(features_file):
@@ -495,20 +495,21 @@ if __name__ == "__main__":
     #     conf_thresh)
     # print("Training done!")
 
-    network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_folder, pretrained_model="NN.model")
-    network.testNN(f_vals,f_classes)
+    # network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_folder, pretrained_model="NN.model")
+    # network.testNN(f_vals,f_classes)
 
-    # test_file = args[2]
-    # t_f_vals, t_f_classes, t_files, t_f_names = load_data(test_file)
-    # t_f_vals = replace_nan_mean(t_f_vals)
-    # t_f_vals = norm_features(t_f_vals)
+    test_file = args[2]
+    t_f_vals, t_f_classes, t_files, t_f_names = load_data(test_file)
+    t_f_vals = replace_nan_mean(t_f_vals)
+    t_f_vals = norm_features(t_f_vals)
     # print("Initiating Neural Network")
     # network = NN(len(f_vals[0]), hidden_dims, hidden_layers, trial_folder)
     # train_testNN(f_vals, f_classes, t_f_vals, t_f_classes, num_epochs)
 
-    # from log_reg import Log_Reg
-    # print("Initiating Logistic Regression")
-    # lg = Log_Reg()
+    from log_reg import Log_Reg
+    print("Initiating Logistic Regression")
+    lg = Log_Reg()
+    lg.train_test(f_vals, f_classes, t_f_vals, t_f_classes)
     # print("Starting training.")
     # lg.kfold_log_reg(f_vals,np.array(f_classes), files)
     # print("Starting Evaluation!")

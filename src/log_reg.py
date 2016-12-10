@@ -10,6 +10,15 @@ class Log_Reg:
 	def __init__(self):
 		self.lg = LogisticRegression(penalty='l2', C=1, fit_intercept=True, intercept_scaling=1000)
 
+	def train_test(self, train_data, train_labels, test_data, test_lables):
+		self.lg.fit(train_data, train_labels)
+		scores = self.lg.score(test_data, test_lables)
+		prd = self.lg.predict_proba(test_data)[:,1]
+		for p,lab in zip(prd,test_lables):
+			print("%.3f\t"%(p,) + str(lab))
+		# probs = self.lg.predict_proba(test_data)
+		print("lg: %.3f%%" % (scores*100, ))
+
 	def kfold_log_reg(self, data, labels, files):
 		seed=7
 		np.random.seed(seed)
