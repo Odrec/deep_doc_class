@@ -47,8 +47,6 @@ class Meta_PDF_Module:
     def get_function(self,fp, mp = None):
         result = np.zeros(6)
         mp = self.get_meta(fp)
-        bow_list = list()
-        #bow = self.get_bow(self.get_meta(fp))
         
         if isinstance(mp,dict):
 
@@ -101,13 +99,9 @@ class Meta_PDF_Module:
                 
         return pos,neg
 
-    def sanitize(self,txt):
-        txt = ''.join(i for i in txt if not str(i).isdigit())
-        txt = ''.join(i for i in txt if not i == ".")
-        txt = ''.join(i for i in txt if not i == ",")
-        txt = ''.join(i for i in txt if not i == "-")
-        txt = ''.join(i for i in txt if not i == ";")
-        #txt = ''.join(i for i in txt if not i == " ")
+    def sanitize(self, txt, regex=';|-|\.|,|[0-9]'):
+        txt = txt.lower()
+        re.sub(regex, "", txt)
         return txt
 
     def get_meta(self, fp):
@@ -148,24 +142,24 @@ class Meta_PDF_Module:
             f = filenames[i]
             if classes[i] == 'True':
                 try:
-                    try:
-                        mp = self.get_meta(open(join(PDF_PATH,f),'rb'))
-                    except:
-                        continue
+                    mp = self.get_meta(open(join(PDF_PATH,f),'rb'))
                     if('/Creator' in mp):
                         pos_creators.append(self.get_bow(mp['/Creator']))
+                    else:
+                        pos_creators.append(Counter({'null': 1}))
                     if '/Author' in mp:
                         pos_authors.append(self.get_bow(mp['/Author']))
+                    else:
+                        pos_authors.append(Counter({'null': 1}))
                     if '/Producer' in mp:
                         pos_producer.append(self.get_bow(mp['/Producer']))
+                    else:
+                        pos_producer.append(Counter({'null': 1}))
                 except:
                     continue
             else:
                 try:
-                    try:
-                        mp = self.get_meta(open(join(PDF_PATH,f),'rb'))
-                    except:
-                        continue
+                    mp = self.get_meta(open(join(PDF_PATH,f),'rb'))
                     if('/Creator' in mp):
                         neg_creators.append(self.get_bow(mp['/Creator']))
                     else:
