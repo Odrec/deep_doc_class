@@ -14,4 +14,4 @@ scikit_learn==0.18.1
 treetaggerwrapper==2.2.4
 h5py==2.6.0
 tensorflow==0.12.0rc1
-theano==0.8.2.dev-901275534cbfe3fbbe290ce85d1abf8bb9a5b203
+theano==0.9.0.dev2
