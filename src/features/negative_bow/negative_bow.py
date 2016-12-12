@@ -185,7 +185,7 @@ class Negative_BoW_Text_Module:
             else:
                 try:
                     with open(join(PDF_PATH,filenames[i]),'r') as fp:
-                        print(c,end='\r')
+                        #print(c,end='\r')
 
                         if(self.txt):
                             txt = self.get_txt(fp)
