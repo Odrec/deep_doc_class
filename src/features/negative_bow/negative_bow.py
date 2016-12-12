@@ -1,4 +1,4 @@
-a__author__ = 'matsrichter'
+__author__ = 'matsrichter'
 """
 Same module as BoW_Text but only uses negative examples instead of positive
 

@@ -13,10 +13,15 @@ The program is made to work in a Unix environment, it was fully tested on Linux.
 The requirements.txt file has a list of all the python 3.5 libraries you need to install for the 
 code to work.
 
+<<<<<<< HEAD
 The requirements2.txt file should be installed after the first requirements.txt. This is to fix a bug with scipy in some machines.
 
 Keras: keras is installed with tensorflow as default backend so if you don't have tensorflow installed you need to change the backend for it to use theano which was installed in 
 the requirements. For changing the backend just edit this file: ~/.keras/keras.json where it says tensorflow substitute with theano. 
+=======
+Keras: if you have trouble installing tensorflow for keras backend you can use theano but you need to change keras 
+backend since the default is tensorflow. To change it edit this file ~/.keras/keras.json.
+>>>>>>> renato
 
 Additionally you need these external programas installed 
 
@@ -52,6 +57,14 @@ the folder src/features/bow_metadata***
 
 ***this prerequisite is optional since it is specific to the people that upload documents on the studip platform from Osnabrück University.
 
+<<<<<<< HEAD
+=======
+OPTIONAL: the program will extract the text from all the pdf files if the text is not yet extracted. For this it 
+looks into the folder data/txt_files_full/ if a text file exists with the name of the pdf it is processing. If you 
+want to extract the text on your own before using this program  make sure that the text files are in this folder 
+and that they have the same name as the pdf file but with .txt extension.
+
+>>>>>>> renato
 ### Installing
 
 The program itself doesn't need to be installed just copied to a local path and the script run with python 3.5.
