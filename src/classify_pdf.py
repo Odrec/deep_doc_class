@@ -6,8 +6,10 @@ Created on Mon Nov 28 12:04:01 2016
 @author: odrec
 """
 
-import sys, os, csv, json, math
+import sys, os, csv, json
 import numpy as np
+import pandas as pd
+import keras
 from subprocess import call
 from os.path import basename, dirname, join, splitext, isfile, isdir, exists
 from glob import glob  
@@ -15,7 +17,6 @@ from multiprocessing import Pool
 from doc_globals import*
 
 from Feature_Extractor import FE
-import MetaHandler as MH
 
 def extract_features(files, metadata, c):
     return fe.extract_features(files, metadata, c)
@@ -98,10 +99,11 @@ def preprocess_features(features):
     features = norm_features(features)
     return features, doc_ids
     
-def predict(features):
-    from simple_neural_network import NN
-    network = NN()
-    return network.predictNN(features)
+#@params test_data a list of numpy arrays. Each array is an input
+#@params test_labels a numpy array with the target data
+def predict(features, model):
+    prd = model.predict(features, verbose=0)
+    return prd
         
 if __name__ == "__main__":
     args = sys.argv
@@ -129,7 +131,7 @@ if __name__ == "__main__":
             print("Warning: No valid metadata file specified. Some features won't be extracted.")
         else:
             m = 0
-            metadata = MH.get_classified_meta_dataframe(metafile)
+            metadata = pd.read_csv(join(DATA_PATH,metafile), header=0, delimiter=',', quoting=0, encoding='utf-8')
 
         if '-d' in args:
             f = args[4-m]
@@ -179,6 +181,7 @@ if __name__ == "__main__":
     under_batch = 0
     num_batch = 0
     fe = FE()
+    model=keras.models.load_model("NN.model")
     while(True):
         print("\nBatch %d"%num_batch)
         if num_files < over_batch:
@@ -211,7 +214,7 @@ if __name__ == "__main__":
             features = features[np.newaxis]
         
         print("Predicting classification...")
-        predictions = predict(features)
+        predictions = predict(features, model)
         print("Finished prediction.")
         
         prediction_matrix = []
