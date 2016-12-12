@@ -8,13 +8,7 @@ Created on Thu Sep 22 12:16:02 2016
 
 # Feature_Extractor.py
 
-<<<<<<< HEAD
-import os, sys
-from os.path import join, realpath, basename, dirname, isdir, splitext
-=======
 from os.path import basename, splitext
->>>>>>> renato
-
 import numpy as np
 from multiprocessing import Pool
 
@@ -129,7 +123,6 @@ class FE:
     
         #modules.append(OCR_BoW_Module())
     
-<<<<<<< HEAD
         return modules    
 
 
@@ -174,6 +167,4 @@ class FE:
 
     # # Getting time spend in all functions called. Doesn't work with multiple threads
     # cProfile.runctx("extract_features(data=doc_ids, features=features, metadata=metadata, p=p)", globals(), locals())
-=======
-        return modules
->>>>>>> renato
+

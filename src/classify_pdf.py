@@ -6,11 +6,7 @@ Created on Mon Nov 28 12:04:01 2016
 @author: odrec
 """
 
-<<<<<<< HEAD
-import sys, os, csv, json, math
-=======
 import sys, os, csv, json
->>>>>>> renato
 import numpy as np
 import pandas as pd
 import keras
@@ -198,11 +194,7 @@ if __name__ == "__main__":
             doc_id.append(splitext(basename(f))[0])
             if m == 0:
                 batch_meta[doc_id[i]] = metadata.loc[metadata['document_id'] == doc_id[i]].reset_index(drop=True)
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> renato
         print("Checking if text needs to be extracted...")
         if num_files == 1 or batch == 1:
             extract_text(batch_files[0])
