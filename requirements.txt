@@ -8,7 +8,7 @@ prettytable==0.7.2
 scipy==0.18.1
 PyPDF2==1.26.0
 langdetect==1.0.7
-pdfminer==20140328
+pdfminer.six==20160614
 simplejson==3.10.0
 scikit_learn==0.18.1
 treetaggerwrapper==2.2.4
