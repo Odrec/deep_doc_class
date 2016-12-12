@@ -11,4 +11,4 @@ langdetect==1.0.7
 pdfminer.six==20160614
 simplejson==3.10.0
 scikit_learn==0.18.1
-treetaggerwrapper==2.2.4
+treetaggerwrapper==2.2.4 
