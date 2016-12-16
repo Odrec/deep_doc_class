@@ -8,8 +8,8 @@ Created on Thu Sep 22 12:16:02 2016
 
 # Feature_Extractor.py
 
-from os.path import basename, splitext
-
+from os.path import basename, splitext, isfile
+from subprocess import call
 import numpy as np
 from multiprocessing import Pool
 
@@ -27,18 +27,16 @@ from features.negative_bow.negative_bow import Negative_BoW_Text_Module
 from features.resolution.resolution import Resolution_Module
 from features.meta_pdf_extractor.meta_pdf_extractor import Meta_PDF_Module
 
-#import cProfile
-metadata = {}
 
 class FE:
     def __init__(self):
         self.feature_instances = self.init_feature_modules()
+        self.metadata = {}
         return
         
 
     def extract_features(self, files, met={}, p=-1):
-        global metadata
-        metadata = met
+        self.metadata = met
         if len(files) == 1:
             res = self.get_data_vector(files[0])
         else:
@@ -73,14 +71,15 @@ class FE:
                 num_feat_vals = len(fi.name)
                 feature_data.append([np.nan]*num_feat_vals)
         if(not(filepointer is None)):
+            self.extract_text(file)
+            if doc_id in self.metadata:
+                meta = self.metadata[doc_id]
+            else:
+                meta = {}
             for fi in self.feature_instances:
                 num_feat_vals = len(fi.name)
                 try:
-                    if doc_id in metadata:
-                        vals = fi.get_function(filepointer,metadata[doc_id])
-                    else:
-                        vals = fi.get_function(filepointer,{})
-
+                    vals = fi.get_function(filepointer,meta)
                     if(num_feat_vals==1):
                         feature_data.append(vals)
                     else:
@@ -125,3 +124,15 @@ class FE:
         #modules.append(OCR_BoW_Module())
     
         return modules
+        
+    def extract_text(self,file):
+        f_id = splitext(basename(file))[0]
+        output_txt = join(TXT_PATH,f_id+'.txt')
+        if not isfile(output_txt):
+            #output_tif = join(TIF_PATH,f_id+'.tif')
+            #call(["gs", "-dNOPAUSE", "-sDEVICE=tiffg4", "-r600x600", "-dBATCH", "-sPAPERSIZE=a4", "-sOutputFile="+output_tif, f])
+            #call(["tesseract", output_tif, output_txt, '-l', 'eng'])
+            call(["gs", "-dNOPAUSE", "-sDEVICE=txtwrite", "-dBATCH", "-q", "-sOutputFile="+output_txt, file])
+        with open(output_txt,'r') as file:
+            txt =  file.readlines()
+        return txt
