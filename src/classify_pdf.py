@@ -7,6 +7,7 @@ Created on Mon Nov 28 12:04:01 2016
 """
 
 import sys, os, csv, json
+import keras
 import numpy as np
 from os.path import basename, dirname, join, splitext, isfile, isdir, exists
 from glob import glob 
@@ -88,10 +89,12 @@ def preprocess_features(features):
     features = norm_features(features)
     return features, doc_ids
     
-def predict(features):
-    from simple_neural_network import NN
-    network = NN()
-    return network.predictNN(features)
+#@params test_data a list of numpy arrays. Each array is an input
+#@params test_labels a numpy array with the target data
+def predict(data):
+    model = keras.models.load_model("NN.model")
+    prd = model.predict(data, verbose=0)
+    return prd
     
 def get_classified_meta_dataframe(metafile="classified_metadata.csv"):
     meta_data=pd.read_csv(join(DATA_PATH,metafile), header=0, delimiter=',', quoting=0, encoding='utf-8')
