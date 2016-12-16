@@ -31,7 +31,7 @@ def extract_features(files, metadata, c):
 
 def replace_nan_mean(features):
     for j, x in enumerate(features):
-       if num_files == 1 or batch == 1:
+       if num_batch_files == 1:
            features[j] = np.float64(x)
        else:
            for i, a in enumerate(x):
@@ -57,7 +57,7 @@ def norm_features(features):
     min_nor=[0.0,0.0,4.7822265625,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.00313876651982,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
 
     for j, x in enumerate(features):
-       if num_files == 1 or batch == 1:
+       if num_batch_files == 1:
            f_range = (max_nor[j]-min_nor[j])
            if f_range > 0:
                features[j] = (x-min_nor[j])/f_range
@@ -69,7 +69,7 @@ def norm_features(features):
     return features
     
 def preprocess_features(features):
-    if num_files == 1 or batch == 1:
+    if num_batch_files == 1:
         lf = len(features)
         doc_ids = features[lf-1]
         features = features[:lf-1]
@@ -79,7 +79,7 @@ def preprocess_features(features):
         features = [x[:lf-1] for x in features]
 
     for j, x in enumerate(features):
-        if num_files == 1 or batch == 1:
+        if num_batch_files == 1:
             features[j] = np.float64(x)
         else:
             for i, a in enumerate(x):
@@ -202,6 +202,7 @@ if __name__ == "__main__":
             over_batch = num_files
             
         batch_files = files[under_batch:over_batch]
+        num_batch_files = len(batch_files)
         batch_meta = {}
         doc_id = []
         for i, f in enumerate(batch_files):
@@ -224,7 +225,7 @@ if __name__ == "__main__":
         features, doc_id = preprocess_features(features)        
         print("Finished preprocessing features.")
                 
-        if num_files == 1 or batch == 1:
+        if num_batch_files == 1:
             features = features[np.newaxis]
         
         print("Predicting classification...")
@@ -232,7 +233,7 @@ if __name__ == "__main__":
         print("Finished prediction.")
         
         prediction_matrix = []
-        if num_files == 1 or batch == 1:
+        if num_batch_files == 1:
             for p in predictions:
                 prediction_matrix.append([float(p), doc_id]) 
         else:
