@@ -43,7 +43,6 @@ def parse_layout(filename, page, lt_obj):
 #        print(lt_obj.__class__.__name__)            
 #        parse_layout(filename, page, lt_obj)  # Recursive
     elif isinstance(lt_obj, LTImage):
-        print(lt_obj.__class__.__name__)            
         sublist.append(filename)
         sublist.append(page)
         sublist.append(lt_obj.__class__.__name__)
@@ -64,10 +63,8 @@ if len(args) != 2:
 f = args[1]
 names_list = []
 files = []
-print(f)
 if isfile(f):
     ext = f[-3:]
-    print(ext)
     if ext == 'csv':
         with open(f, "r") as fl:
             reader = list(csv.reader(fl, delimiter=","))
@@ -105,16 +102,20 @@ for i in files:
     device = PDFPageAggregator(rsrcmgr, laparams=laparams)
     interpreter = PDFPageInterpreter(rsrcmgr, device)
     num_page = 0
-    for page in PDFPage.create_pages(doc):
-        num_page += 1
-        interpreter.process_page(page)
-        layout = device.get_result()
-        for lt_obj in layout:
-            res = parse_layout(filename, num_page, lt_obj)
-            if res != 0:
-                files_structure.append(res)
-        #if num_page == 1 break #control here how many pages you want to process per file
-        
+    try:
+        for page in PDFPage.create_pages(doc):
+            num_page += 1
+            interpreter.process_page(page)
+            layout = device.get_result()
+            for lt_obj in layout:
+                res = parse_layout(filename, num_page, lt_obj)
+                if res != 0:
+                    files_structure.append(res)
+            #if num_page == 1 break #control here how many pages you want to process per file
+    except:
+        print("Failed to extract structure from file ",basename(i))
+        pass
+            
 with open("output_text_structure.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerows(files_structure)
