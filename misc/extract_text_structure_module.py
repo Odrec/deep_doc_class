@@ -94,15 +94,15 @@ for i in files:
     print(basename(i))
     filename = splitext(basename(i))[0]
     fp = open(i, 'rb')
-    parser = PDFParser(fp)
-    doc = PDFDocument(parser)
-    
-    rsrcmgr = PDFResourceManager()
-    laparams = LAParams()
-    device = PDFPageAggregator(rsrcmgr, laparams=laparams)
-    interpreter = PDFPageInterpreter(rsrcmgr, device)
-    num_page = 0
     try:
+        parser = PDFParser(fp)
+        doc = PDFDocument(parser)
+        
+        rsrcmgr = PDFResourceManager()
+        laparams = LAParams()
+        device = PDFPageAggregator(rsrcmgr, laparams=laparams)
+        interpreter = PDFPageInterpreter(rsrcmgr, device)
+        num_page = 0
         for page in PDFPage.create_pages(doc):
             num_page += 1
             interpreter.process_page(page)
