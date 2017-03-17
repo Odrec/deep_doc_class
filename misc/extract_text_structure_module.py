@@ -101,7 +101,7 @@ if __name__ == "__main__":
             sys.exit(1)
             
         if largs == 4:
-            num_cores = int(args[4])
+            num_cores = int(args[3])
         else:
             num_cores = 1
     
