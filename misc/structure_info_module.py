@@ -49,6 +49,14 @@ class Structure_Info:
         except:
             return names, [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
 
+    def get_json_results(self, file, results_dict):
+        names, results_list = self.get_function(file)
+        file_name = splitext(basename(file))[0]
+        results_dict[file_name] = {}
+        for i, n in enumerate(names):
+            results_dict[file_name][names[i]] = results_list[i]
+        return names, results_list
+
     def get_struct_elements(self, filename):
         file_elements = {}
         if isfile(filename):
@@ -115,30 +123,47 @@ if __name__ == "__main__":
     
     args = sys.argv
     
-    usage = "python structure_info_module.py [json_file] path_pdf_file(s)"
-            
-    if len(args)>2:
-        if not isfile(args[1]):
+    usage = "python structure_info_module.py [-s] [-j json_file] -f path_pdf_file(s)"
+       
+    save = False     
+    if '-s' in args:
+        save = True
+    if '-j' in args:
+        index_j = args.index('-j')
+        if isfile(args(index_j+1)):
+            SI = Structure_Info(args(index_j+1))
+        else:
             print(usage)
             sys.exit(1)
-        SI = Structure_Info(args[1])
-        path_pdf = args[2]
     else:
         SI = Structure_Info()
-        path_pdf = args[1]
+    if '-f' in args:
+        index_f = args.index('-f')
+        path_pdf = args[index_f+1]
+        files = []
+        if isdir(path_pdf):
+            for root, dirs, fls in os.walk(path_pdf):
+                for name in fls:
+                    if splitext(basename(name))[1] == '.pdf':
+                        files.append(join(root,name))
+        elif isfile(path_pdf):
+            files = [path_pdf]
+        else:
+            print(usage)
+            sys.exit(1)  
 
-    files = []
-    if isdir(path_pdf):
-        for root, dirs, fls in os.walk(path_pdf):
-            for name in fls:
-                if splitext(basename(name))[1] == '.pdf':
-                    files.append(join(root,name))
-    else:
-        files = [path_pdf]
-    results=[]
+    results_list = []
+    results_dict = {}
     for f in files:
-        results.append(SI.get_function(f))
+        if save: 
+            names, res_list = SI.get_json_results(f, results_dict)
+            with open("output_structure_features.json", 'w') as fp:
+                json.dump(results_dict, fp)
+        else:
+            names, res_list = SI.get_function(f)
+        results_list.append(res_list)
         
-    print(results)
+    print(names)
+    print(results_list)
         
     
