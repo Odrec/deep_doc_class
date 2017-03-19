@@ -82,9 +82,15 @@ class Structure_Info:
         
     def get_textbox_info(self, textbox_list, num_pages):
         num_textboxes = len(textbox_list)
-        ratio_txtbox_pages = num_textboxes/num_pages
+        if num_pages > 0:
+            ratio_txtbox_pages = num_textboxes/num_pages
+        else:
+            ratio_txtbox_pages = np.nan
         num_words = self.get_num_words(textbox_list)
-        ratio_words_txtbox = num_words/num_textboxes
+        if num_textboxes > 0:
+            ratio_words_txtbox = num_words/num_textboxes
+        else:
+            ratio_words_txtbox = np.nan
         textbox_size_avg = self.get_tb_size_avg(textbox_list)
         
         return num_textboxes, [ratio_txtbox_pages, ratio_words_txtbox, textbox_size_avg]
@@ -105,7 +111,10 @@ class Structure_Info:
         
     def get_imagebox_info(self, imagebox_list, num_pages):
         num_imageboxes = len(imagebox_list)
-        ratio_imgbox_pages = num_imageboxes/num_pages
+        if num_pages > 0:
+            ratio_imgbox_pages = num_imageboxes/num_pages
+        else:
+            ratio_imgbox_pages = np.nan
         imagebox_size_avg = self.get_ib_size_avg(imagebox_list)
         
         return num_imageboxes, [ratio_imgbox_pages, imagebox_size_avg]
