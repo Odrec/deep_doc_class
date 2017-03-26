@@ -341,12 +341,21 @@ if __name__ == "__main__":
     # properties=join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json")
     # structure=join(PRE_EXTRACTED_DATA_PATH,"pdf_structure.json")
 
-    # setup nothing done
+    # # setup nothing done
+    # pdf_dir="/home/kai/Workspace/deep_doc_class/deep_doc_class/data/files_test"
+    # text_dir = None
+    # metadata=join(DATA_PATH,"classified_metadata.csv")
+    # properties = None
+    # structure = None
+
+    # setup preextract first
+    doc_ids = [d[0] for d in doc_input]
+
     pdf_dir="/home/kai/Workspace/deep_doc_class/deep_doc_class/data/files_test"
     text_dir = None
     metadata=join(DATA_PATH,"classified_metadata.csv")
-    properties = None
-    structure = None
+    properties = features.pdf_properties.pre_extract_pdf_properties(pdf_dir, doc_ids=None, properties_file=None, num_cores=1)
+    structure = features.pdf_structure.pre_extract_pdf_structure_values(pdf_dir, doc_ids=None, structure_file=None, boxinfo_file=None, num_cores=1)
 
     fe = Feature_Extractor(pdf_dir=pdf_dir,
         text_dir=text_dir,

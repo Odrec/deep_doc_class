@@ -107,9 +107,9 @@ def get_pdf_properties(file_path, properties_path=None):
 
     return pdfinfo_dict
 
-def pre_extract_pdf_properties(doc_dir, doc_ids=None, structure_file=None, num_cores=1):
+def pre_extract_pdf_properties(doc_dir, doc_ids=None, properties_file=None, num_cores=1):
     files = []
-    
+
     if isdir(doc_dir):
         if(doc_ids is None):
             for root, dirs, fls in os.walk(doc_dir):
@@ -128,9 +128,9 @@ def pre_extract_pdf_properties(doc_dir, doc_ids=None, structure_file=None, num_c
     res = pool.map(pdfinfo_get_pdf_properties, files)
     res_fix={}
     for x in res:    
-        res_fix[splitext(basename(x[0]))[0]] = x[1]
+        res_fix[splitext(basename(x[1]))[0]] = x[0]
     
-    if(not(structure_file) is None):
+    if(not(properties_file) is None):
         with open(out, 'w') as fp:
             json.dump(res_fix, fp)
 

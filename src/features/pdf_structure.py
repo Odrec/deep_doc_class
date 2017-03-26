@@ -59,9 +59,9 @@ def pre_extract_pdf_structure_values(doc_dir, doc_ids=None,
     structure_file=None,
     boxinfo_file=None,
     num_cores=1):
-
-    if(not(isfile(boxinfo_file))):
-        boxinfo = pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids, boxinfo_dir=boxinfo_file, num_cores=num_cores)
+    
+    if(boxinfo_file is None or not(isfile(boxinfo_file))):
+        boxinfo = pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids, boxinfo_file=boxinfo_file, num_cores=num_cores)
     else:
         with codecs.open(boxinfo_file, 'r', encoding='utf-8', errors='replace') as j:
             json_data=j.read()
@@ -88,9 +88,9 @@ def pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids=None,
                 for name in fls:
                     if splitext(basename(name))[1] == '.pdf':
                         files.append(join(root,name))
-            else:
-                for d_id in doc_ids:
-                    files.append(join(doc_dir, d_id+".pdf"))
+        else:
+            for d_id in doc_ids:
+                files.append(join(doc_dir, d_id+".pdf"))
     else:
         print("Error: You need to specify a path to the folder containing all files.")
         sys.exit(1)
@@ -102,7 +102,7 @@ def pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids=None,
         res_fix.update(x)
     
     if(not(boxinfo_file is None)):
-        with open(boxinfo_dir, 'w') as fp:
+        with open(boxinfo_file, 'w') as fp:
             json.dump(res_fix, fp)
 
     return res_fix
