@@ -107,8 +107,10 @@ def get_pdf_properties(file_path, properties_path=None):
 
     return pdfinfo_dict
 
-def pre_extract_pdf_properties(doc_dir, doc_ids=None, out=join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json"), num_cores=1):
+def pre_extract_pdf_properties(doc_dir, doc_ids=None, structure_file=None, num_cores=1):
     files = []
+    
+    if isdir(doc_dir):
         if(doc_ids is None):
             for root, dirs, fls in os.walk(doc_dir):
                 for name in fls:
@@ -128,8 +130,11 @@ def pre_extract_pdf_properties(doc_dir, doc_ids=None, out=join(PRE_EXTRACTED_DAT
     for x in res:    
         res_fix[splitext(basename(x[0]))[0]] = x[1]
     
-    with open(out, 'w') as fp:
-        json.dump(res_fix, fp)
+    if(not(structure_file) is None):
+        with open(out, 'w') as fp:
+            json.dump(res_fix, fp)
+
+    return res_fix
 
 def load_single_property(doc_ids, doc_path, properties_path, field):
 

@@ -69,16 +69,16 @@ class Feature_Extractor():
         self.text_dir = text_dir
 
         self.metadata_frame = metadata
-        if(isfile(self.metadata_frame)):
+        if(type(self.metadata_frame)==str and isfile(self.metadata_frame)):
             self.metadata_frame=pd.read_csv(self.metadata_frame, delimiter=',', quoting=1, encoding='utf-8')
 
         self.properties_dict = properties
-        if(isfile(self.properties_dict)):
+        if(type(self.properties_dict)==str and isfile(self.properties_dict)):
             with open(self.properties_dict, "r") as prop_file:
                 self.properties_dict = json.load(prop_file)
 
         self.structure_dict = structure
-        if(isfile(self.structure_dict)):
+        if(type(self.structure_dict)==str and isfile(self.structure_dict)):
             with open(self.structure_dict, "r") as prop_file:
                 self.structure_dict = json.load(prop_file)
 
@@ -253,7 +253,7 @@ class Feature_Extractor():
             if(type(self.structure_dict)==dict and doc_id in self.structure_dict):
                 structure_dict = self.structure_dict[doc_id]
             else:
-                structure_dict = features.pdf_properties.get_pdf_structure(file_path)
+                structure_dict = features.pdf_structure.get_pdf_structure(file_path)
             all_features_dict.update(structure_dict)
 
         # get the requested information of the dictionary
@@ -325,24 +325,37 @@ if __name__ == "__main__":
     pdf_text_features = ["text", "word_count", "copyright_symbol"]
     pdf_structure_features = ['ratio_text_image','ration_text_pages','ratio_words_box','avg_text_size','ratio_image_pages','avg_image_size']
 
-    fe = Feature_Extractor(pdf_path=PDF_PATH,
+    # # setup loaded dicts
+    # pdf_dir = PDF_PATH
+    # text_dir = TXT_PATH
+    # metadata=pd.read_csv(join(DATA_PATH,"classified_metadata.csv"), delimiter=',', quoting=1, encoding='utf-8')
+    # with open(join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json"), "r") as prop_file:
+    #     properties = json.load(prop_file)
+    # with open(join(PRE_EXTRACTED_DATA_PATH,"pdf_structure.json"), "r") as struc_file:
+    #     structure = json.load(struc_file)
+
+    # # setup files to load
+    # pdf_dir = PDF_PATH
+    # text_dir = TXT_PATH
+    # metadata=join(DATA_PATH,"classified_metadata.csv")
+    # properties=join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json")
+    # structure=join(PRE_EXTRACTED_DATA_PATH,"pdf_structure.json")
+
+    # setup nothing done
+    pdf_dir="/home/kai/Workspace/deep_doc_class/deep_doc_class/data/files_test"
+    text_dir = None
+    metadata=join(DATA_PATH,"classified_metadata.csv")
+    properties = None
+    structure = None
+
+    fe = Feature_Extractor(pdf_dir=pdf_dir,
+        text_dir=text_dir,
+        metadata=metadata,
+        properties=properties,
+        structure=structure,
         pdf_properties_features=pdf_properties_features,
         pdf_metadata_features=pdf_metadata_features,
         pdf_text_features=pdf_text_features,
-        pdf_structure_features=pdf_structure_features,
-        properties_path=join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json"),
-        meta_path=join(DATA_PATH,"classified_metadata.csv"),
-        text_path=TXT_PATH,
-        structure_path=join(PRE_EXTRACTED_DATA_PATH,"pdf_structure.json"))
-
-    # fe = Feature_Extractor(pdf_path="/home/kai/Workspace/deep_doc_class/deep_doc_class/data/files_test",
-    #     pdf_properties_features=pdf_properties_features,
-    #     pdf_metadata_features=pdf_metadata_features,
-    #     pdf_text_features=pdf_text_features,
-    #     pdf_structure_features=pdf_structure_features,
-    #     properties_path=None,
-    #     meta_path=join(DATA_PATH,"classified_metadata.csv"),
-    #     text_path=None,
-    #     structure_path=None)
+        pdf_structure_features=pdf_structure_features)
 
     fe.extract_features(doc_input=doc_input,feature_file=feature_file, p=p, profiling=True)

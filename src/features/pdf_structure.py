@@ -56,27 +56,30 @@ def extract_pdf_structure_values(file):
     return struct_dict
 
 def pre_extract_pdf_structure_values(doc_dir, doc_ids=None,
-    structure_path=join(PRE_EXTRACTED_DATA_PATH,"pdf_structure.json"),
-    boxinfo_dir=join(PRE_EXTRACTED_DATA_PATH,"pdf_structure_boxinfo.json"),
+    structure_file=None,
+    boxinfo_file=None,
     num_cores=1):
 
-    if(not(isfile(boxinfo_dir))):
-        pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids, boxinfo_dir=boxinfo_dir, num_cores=num_cores)
-
-    with codecs.open(boxinfo_dir, 'r', encoding='utf-8', errors='replace') as j:
-        json_data=j.read()
-        boxinfo = json.loads(json_data)
+    if(not(isfile(boxinfo_file))):
+        boxinfo = pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids, boxinfo_dir=boxinfo_file, num_cores=num_cores)
+    else:
+        with codecs.open(boxinfo_file, 'r', encoding='utf-8', errors='replace') as j:
+            json_data=j.read()
+            boxinfo = json.loads(json_data)
 
     pdf_structure_data = {}
 
     for doc_id, box_data in boxinfo.items():
         pdf_structure_data[doc_id] = get_structure_values_dict(box_data)
 
-    with open(structure_path, 'w') as fp:
-        json.dump(pdf_structure_data, fp, indent=4)
+    if(not(structure_file is None)):
+        with open(structure_path, 'w') as fp:
+            json.dump(pdf_structure_data, fp, indent=4)
 
-def pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids = None,
-	boxinfo_dir=join(PRE_EXTRACTED_DATA_PATH,"pdf_structure_boxinfo.json"),
+    return pdf_structure_data
+
+def pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids=None,
+	boxinfo_file=None,
 	num_cores=1):
     files = []
     if isdir(doc_dir):
@@ -98,8 +101,11 @@ def pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids = None,
     for x in res:    
         res_fix.update(x)
     
-    with open(boxinfo_dir, 'w') as fp:
-        json.dump(res_fix, fp)
+    if(not(boxinfo_file is None)):
+        with open(boxinfo_dir, 'w') as fp:
+            json.dump(res_fix, fp)
+
+    return res_fix
 
 ##### Getting the boxinformation ######
                 

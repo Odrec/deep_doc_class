@@ -16,7 +16,7 @@ from functools import partial
 from multiprocessing import Pool
 
 
-def ghostcript_get_pdftext(file_path, txt_path=None, first_page=-1, last_page=-1):
+def ghostcript_get_pdftext(file_path, text_dir=None, first_page=-1, last_page=-1):
 
     args = ["gs", "-dNOPAUSE", "-dBATCH", "-sDEVICE=txtwrite", "-sOutputFile=-",file_path]
     if(not(first_page==-1)):
@@ -58,8 +58,8 @@ def ghostcript_get_pdftext(file_path, txt_path=None, first_page=-1, last_page=-1
         page_dict[str(i)] = pages[i]
         # txt += pages[i]
 
-    if(not(txt_path is None) and isdir(txt_path)):
-        out = join(txt_path,basename(file_path)[:-4]+".json")
+    if(not(text_dir is None) and isdir(text_dir)):
+        out = join(text_dir,basename(file_path)[:-4]+".json")
         with open(out, 'w') as fp:
             json.dump(page_dict, fp, indent=4)
 

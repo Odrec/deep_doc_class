@@ -15,7 +15,7 @@ from multiprocessing import Pool
 from doc_globals import*
 
 def load_single_metarow(doc_id, fields, metadata):
-    if(isfile(metadata)):
+    if(type(metadata)==str and isfile(metadata)):
         metadata=pd.read_csv(path, delimiter=',', quoting=1, encoding='utf-8')
     if(not(type(metadata)==pd.core.frame.DataFrame)):
         print("The parameter <metadata> has to either contain a pandas DataFrame or a path to a metadata csv file!")
@@ -33,7 +33,7 @@ def load_single_metarow(doc_id, fields, metadata):
     return metadict
 
 def load_single_metafield(doc_ids, field, metadata=join(DATA_PATH,"classified_metadata.csv")):
-    if(isfile(metadata)):
+    if(type(metadata)==str and isfile(metadata)):
         metadata=pd.read_csv(path, delimiter=',', quoting=1, encoding='utf-8')
     if(type(doc_ids)==str):
         selected_data = metadata[metadata["document_id"]==doc_ids]
