@@ -1,13 +1,22 @@
 # -*- coding: utf-8 -*-
 import sys, os, shutil
 from os.path import join, realpath, dirname, isdir
+
+##### important pathes #######
+
 SRC_PATH = dirname(realpath(__file__))
+
 DATA_PATH = join(join(dirname(realpath(__file__)), os.pardir), "data")
+MODEL_PATH = join(DATA_PATH, "nn_models")
 PDF_PATH = join(DATA_PATH, "pdf_files")
 TXT_PATH = join(DATA_PATH, "json_txt_files")
 FEATURE_VALS_PATH = join(DATA_PATH, "feature_values")
+PRE_EXTRACTED_DATA_PATH = join(DATA_PATH,"pre_extracted_data")
+
 RESULT_PATH = join(join(dirname(realpath(__file__)), os.pardir), "results")
-MODEL_PATH = join(DATA_PATH, "nn_models")
+
+
+##### some helper functions ######
 
 bcolors = {
     "HEADER" : '\033[95m',

@@ -1,10 +1,13 @@
 # coding=utf-8
-__author__ = 'tkgroot'
 
 import sys, os, shutil
 from os.path import join, realpath, dirname, isdir, basename, isfile
 MOD_PATH = dirname(realpath(__file__))
-# from doc_globals import*
+SRC_DIR = os.path.abspath(join(join(realpath(__file__), os.pardir),os.pardir))
+sys.path.append(SRC_DIR)
+sys.path.append(join(SRC_DIR,"features"))
+
+from doc_globals import*
 
 from time import time
 import re
@@ -21,12 +24,17 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.externals import joblib
 from sklearn.model_selection import StratifiedKFold
 from sklearn.linear_model import LogisticRegression
+from sklearn import tree
 
 from sklearn.metrics import confusion_matrix
 
 from langdetect import detect_langs
 from langdetect import detect
 # import treetaggerwrapper as ttwp
+
+import pdf_properties
+import pdf_text
+import pdf_metadata
 
 
 class BowClassifier():
@@ -149,33 +157,36 @@ class BowClassifier():
 
         # switch string cleaning according to input origin
         if(self.data_origin == "csvmeta"):
-            clean_test_data = clean_csv_input(input_string)
+            clean_test_data = preprocess_pdf_metadata_string(input_string)
         elif(self.data_origin == "pdfinfo"):
-            clean_test_data = clean_meta_input(input_string)
+            clean_test_data = preprocess_pdf_property_string(input_string)
         else:
-            clean_test_data = clean_pdf_txt_content(input_string)
+            clean_test_data = preprocess_pdf_text_string(input_string)
 
         # get vector for the input
         test_data_feature = self.vectorizer.transform([clean_test_data]).toarray()
 
+        f_names = self.name
+
         # predict input
         if(classifier=="log_reg"):
-            result_proba = self.model.predict_proba(test_data_feature)[0][1]
+            f_vals = self.model.predict_proba(test_data_feature)[0][1]
         elif(classifier=="forest"):
-            result_proba = self.model.predict_proba(test_data_feature)[0][1]
+            f_vals = self.model.predict_proba(test_data_feature)[0][1]
         elif(classifier=="custom_words_val"):
-            result_proba = 0.5
-            result_proba += (np.sum(test_data_feature[0,0:self.model])>0)*0.5
-            result_proba -= (np.sum(test_data_feature[0,self.model:])>0)*0.5
+            f_vals = 0.5
+            f_vals += (np.sum(test_data_feature[0,0:self.model])>0)*0.5
+            f_vals -= (np.sum(test_data_feature[0,self.model:])>0)*0.5
         elif(classifier=="custom_words_vec"):
-            result_proba = test_data_feature>0
+            f_vals = test_data_feature[0,:]>0
+            f_names = self.vectorizer.get_feature_names()
         else:
             print("Classifier has to be one of %s! It is %s" %
                 (str(["log_reg", "forest","custom_words_val", "custom_words_vec"]), classifier))
             sys.exit(1)
         
         # return prediction
-        return result_proba
+        return f_vals, f_names
 
     def train(self, doc_ids, classes, classifier="log_reg"):
         '''
@@ -197,13 +208,21 @@ class BowClassifier():
         # get cleaned data with classification
         # switch data origin
         if(self.data_origin == "csvmeta"):
-            clean_data, clf = load_data_csvmeta(doc_ids,classes, self.name)
+            meta_path = join(DATA_PATH,"classified_metadata.csv")
+            clean_data = pdf_metadata.load_single_metafield(doc_ids,self.name,meta_path)
+            for i in range(len(clean_data)):
+                clean_data[i] = preprocess_pdf_metadata_string(clean_data[i])
         elif(self.data_origin == "pdfinfo"):
-            clean_data, clf = load_data_pdfinfo(doc_ids,classes,self.name)
+            prop_path = join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json")
+            clean_data = pdf_properties.load_single_property(doc_ids,prop_path,self.name)
+            for i in range(len(clean_data)):
+                clean_data[i] = preprocess_pdf_property_string(clean_data[i])
         else:
-            clean_data, clf = load_data_pdfcontent(doc_ids,classes,num_pages=1)
+            clean_data = pdf_text.get_pdf_text(doc_ids,PDF_PATH,TXT_PATH)
+            for i in range(len(clean_data)):
+                clean_data[i] = preprocess_pdf_text_string(clean_data[i])
 
-        clf = np.array(clf)
+        clf = np.array(classes)
 
         # # Analyse the distribution of words to the different classification
         # self.analyze_word_distribution(clean_data,clf)
@@ -235,16 +254,18 @@ class BowClassifier():
             sys.exit()
 
         elif(classifier=="forest"):
-            self.vectorizer = CountVectorizer(analyzer='word',
-                token_pattern=r'(?u)\b\w\w\w+\b|©',
-                max_features=10000,
-                encoding="utf-8",
-                max_df=0.9,
-                min_df=0.003)
-            self.vectorizer = self.vectorizer.fit(clean_data)
-            train_data_featues = self.vectorizer.transform(clean_data).toarray()
+            wordspath = join(MOD_PATH, "words", self.name+".txt")
+            self.load_custom_words(wordspath)
+            # self.vectorizer = CountVectorizer(analyzer='word',
+            #     token_pattern=r'(?u)\b\w\w\w+\b|©',
+            #     max_features=10000,
+            #     encoding="utf-8",
+            #     max_df=0.9,
+            #     min_df=0.003)
+            # self.vectorizer = self.vectorizer.fit(clean_data)
 
-            self.model = RandomForestClassifier(n_estimators=100)
+            train_data_featues = self.vectorizer.transform(clean_data).toarray()
+            self.model = RandomForestClassifier(n_estimators=20)
             self.model = self.model.fit(train_data_featues, clf)
 
         elif(classifier=="custom_words_val"):
@@ -252,6 +273,20 @@ class BowClassifier():
             self.load_custom_words(wordspath)
             train_data_featues = self.vectorizer.transform(clean_data).toarray()
 
+        elif(classifier=="custom_words_tree"):
+            # wordspath = join(MOD_PATH, "words", self.name+".txt")
+            # self.load_custom_words(wordspath)
+            self.vectorizer = CountVectorizer(analyzer='word',
+                token_pattern=r'(?u)\b\w\w\w+\b|©',
+                max_features=10000,
+                encoding="utf-8",
+                max_df=0.9,
+                min_df=0.003)
+            self.vectorizer = self.vectorizer.fit(clean_data)
+
+            train_data_featues = self.vectorizer.transform(clean_data).toarray()
+            self.model = RandomForestClassifier(n_estimators=20)
+            self.model = self.model.fit(train_data_featues, clf)
 
         elif(classifier=="custom_words_vec"):
             wordspath = join(MOD_PATH, "words", self.name+".txt")
@@ -355,7 +390,7 @@ class BowClassifier():
                     if(neg_perc<0.004):
                         break
 
-    def predict_probs(self, doc_ids, classes, classifier="log_reg"):
+    def predict_probs(self, doc_ids, classes, classifier="log_reg", t=0.25):
         if(self.data_origin == "csvmeta"):
             clean_data, clf = load_data_csvmeta(doc_ids,classes,self.name)
         elif(self.data_origin == "pdfinfo"):
@@ -371,10 +406,17 @@ class BowClassifier():
             probs = self.model.predict_proba(train_data_featues)[:,1]
         elif(classifier=="forest"):
             probs = self.model.predict_proba(train_data_featues)[:,1]
+            probs[np.logical_and(probs<(1-t), probs>t)]=0.5
         elif(classifier=="custom_words_val"):
             probs = np.zeros(len(train_data_featues))+0.5
             probs += (np.sum(train_data_featues[:,0:self.model],axis=1)>0)*0.5
             probs -= (np.sum(train_data_featues[:,self.model:],axis=1)>0)*0.5
+        elif(classifier=="custom_words_tree"):
+            probs = self.model.predict_proba(train_data_featues)[:,1]
+            probs[np.logical_and(probs<(1-t), probs>t)]=0.5
+            # pause()
+            # a = np.sum(train_data_featues, axis=1)
+            # probs[a==0]=0.5
         elif(classifier=="custom_words_vec"):
             probs = train_data_featues>0
         else:
@@ -445,113 +487,62 @@ class BowClassifier():
         kfold = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=seed)
         iteration = 0
 
-        scores = [[],[],[],[]]
-        scores2 = [[],[],[],[]]
-        predicted = [[],[],[],[]]
+        thres = [0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4]
+        classifiers = ["custom_words_val", "custom_words_tree", "forest"]
+        classifier = "custom_words_tree"
+
+        scores = np.zeros((len(thres),n_folds))
+        scores2 = np.zeros((len(thres),n_folds))
+        predicted = np.zeros((len(thres),n_folds))
 
         for train, test in kfold.split(doc_ids,labels):
 
-            iteration += 1
             # split the data
             train_data = [doc_ids[t] for t in train]
             test_data = [doc_ids[t] for t in test]
             train_labels = [labels[t] for t in train]
             test_labels = [labels[t] for t in test]
 
-            classifiers = ["custom_words_val"]
-            for  i,classifier in enumerate(classifiers):
-                print("%s: iteration %d/%d"%(classifier, iteration, n_folds))
+            for  i,t in enumerate(thres):
+                # print("%s: iteration %d/%d"%(classifier, iteration+1, n_folds))
                 # get the model
                 self.train(train_data, train_labels, classifier)
                 # predict
-                probs, clf = self.predict_probs(test_data, test_labels, classifier)
+                probs, clf = self.predict_probs(test_data, test_labels, classifier, t)
                 preds = probs>=0.5
                 score = float(np.sum([preds==clf]))/len(clf)
-                print("accuracy: %.4f" %(score,))
+                # print("accuracy: %.4f" %(score,))
                 pos_dev = np.sum(np.abs(probs-0.5)[preds==clf])/np.sum([preds==clf])
                 neg_dev = np.sum(np.abs(probs-0.5)[preds!=clf])/np.sum([preds!=clf])
-                print("correct_std_0.5: %.4f" %(pos_dev,))
-                print("flase_std_0.5: %.4f" %(neg_dev,))
+                # print("correct_std_0.5: %.4f" %(pos_dev,))
+                # print("flase_std_0.5: %.4f" %(neg_dev,))
                 preds = probs[probs!=0.5]
                 clf2 = clf[probs!=0.5]
                 preds = preds>=0.5
                 score2 = float(np.sum([preds==clf2]))/len(clf2)
-                print("accuracy2: %.4f" %(score2,))
-                print("predicted: %d/%d" %(len(clf2),len(clf)))
-                print('\n')
-                scores[i].append(score)
-                scores2[i].append(score2)
-                predicted[i].append(len(clf2))
+                # print("accuracy2: %.4f" %(score2,))
+                # print("predicted: %d/%d" %(len(clf2),len(clf)))
+                # print('\n')
+                scores[i,iteration] = score
+                scores2[i,iteration] = score2
+                predicted[i,iteration] = len(clf2)
 
-        for j in range(len(classifiers)):
-            print("%s overall accuracy on %s: %.4f" %(classifiers[j], self.name, np.mean(scores[j])))
-            print("%s overall accuracy2 on %s: %.4f" %(classifiers[j], self.name, np.mean(scores2[j])))
-            print("%s overall predicted on %s: %d/%d" %(classifiers[j], self.name, np.mean(predicted[j]),len(clf)))
+            iteration += 1
+
+        for j in range(len(thres)):
+            print('\n')
+            print("%s overall accuracy on %s: %.4f" %("thres:" + str(thres[j]), self.name, np.mean(scores[j])))
+            print("%s overall accuracy2 on %s: %.4f" %("thres:" + str(thres[j]), self.name, np.mean(scores2[j])))
+            print("%s overall predicted on %s: %d/%d" %("thres:" + str(thres[j]), self.name, np.mean(predicted[j]),len(clf)))
 
         # print("Overfitting result:")
         # self.train(doc_ids, labels)
         # self.predict_probs(doc_ids, labels, False)
         # print('\n')
 
-def generate_clean_training_data_metadata(field_name):
-    metadata=pd.read_csv(join(DATA_PATH,"classified_metadata.csv"), delimiter=',', quoting=1, encoding='utf-8')
-    clf = pd.read_csv(join(DATA_PATH,'trimmed_classification.csv'), delimiter=';', quoting=1, encoding='utf-8')
+# preprocess different kinds of input
 
-    metadata=metadata.set_index(['document_id'])
-    clf=clf.set_index(['document_id'])
-
-    print("Generating clean training files for "+field_name)
-
-    train = metadata.loc[clf.index]
-    clean_train_data = clean_metadata(field_name, train)
-
-    if not os.path.exists(join(DATA_PATH,"lib_bow/")):
-        os.makedirs(join(DATA_PATH,'lib_bow/'))
-
-    json_path = join(DATA_PATH,'lib_bow/clean_'+field_name+'.json')
-
-    with open(json_path, 'w') as fp:
-        json.dump(clean_train_data, fp, indent=4)
-
-def generate_clean_training_data_pdfinfo(files):
-    clf = pd.read_csv(join(DATA_PATH,'trimmed_classification.csv'), delimiter=';', quoting=1, encoding='utf-8')
-
-    clf=clf.set_index(['document_id'])
-    
-    existing_files=[]
-    for f in files:
-        if splitext(basename(f))[0] in clf.index:
-            existing_files.append(f)
-    
-    output_dict = {}
-    for i,f in enumerate(existing_files):
-        meta_dict = self.pdfinfo_get_pdfmeta(f)
-        output_dict[splitext(basename(f))[0]] = meta_dict
-
-    json_path = join(MOD_PATH, 'pdfmetainfo.json')
-                    
-    with open(json_path, 'w') as fp:
-        json.dump(output_dict, fp, indent=4)
-
-def clean_metadata(index,data):
-    clean_data={}
-    number_documents=len(data.index)
-
-    for i in range(0,number_documents):
-        d_id = data.index[i]
-        clean_data[d_id] = clean_csv_input(data.loc[d_id][index])
-    return clean_data
-
-def clean_csv_input(text, lang=['german','english']):
-    # data is of the format: data[csv-column-name][number of row/document] - ex. data['title'][0]
-    if(text is None):
-        return""
-    else:
-        words = find_regex(text, regex=r'(?u)\b\w\w\w+\b')
-        words = remove_stopwords(words)
-        return " ".join(words)
-
-def clean_meta_input(text):
+def preprocess_pdf_property_string(text):
     if(text is None):
         return"None"
     else:
@@ -559,6 +550,22 @@ def clean_meta_input(text):
         clean_text = "".join(re.findall("[a-z]{2,}",text))
         text = clean_string_regex(text, regex='[^a-z]', sub="")
         return clean_text
+
+def preprocess_pdf_text_string(text):
+    text = remove_whitespace(text)
+    # words = find_regex(text)
+    words = remove_stopwords(text.split())
+    text =  " ".join(words)
+    return text
+
+def preprocess_pdf_metadata_string(text, lang=['german','english']):
+    if(text is None):
+        return""
+    else:
+        words = find_regex(text, regex=r'(?u)\b\w\w\w+\b')
+        words = remove_stopwords(words)
+        return " ".join(words)
+
 
 def clean_string_regex(txt, regex=';|-|\.|,|\"|[0-9]', sub=""):
     txt = txt.lower()
@@ -573,15 +580,6 @@ def find_regex(txt, regex=r'(?u)\b\w\w\w+\b|©'):
     words = re.findall(regex,txt)
     return words
 
-def get_lang(txt, get_prob=False):
-    if(get_prob):
-        langs = detect_langs(txt)
-        language = langs[0]
-        return language.lang, language.prob
-    else:
-        language = detect(txt)
-        return language
-
 def remove_stopwords(words):
     languages = ["english", "german", "french"]
     for language in languages:
@@ -589,6 +587,7 @@ def remove_stopwords(words):
         words=[w for w in words if not w in stop_words]
     return words
 
+# unused helper functions
 def lemmatizer(txt, taggerdir, taggerlang):
     pass
     # tt = ttwp.TreeTagger(TAGDIR=taggerdir, TAGLANG=taggerlang)
@@ -598,149 +597,20 @@ def lemmatizer(txt, taggerdir, taggerlang):
     #     lemmalist.append(tag.split('\t')[2])
     # return lemmalist
 
-def pdfinfo_get_pdfmeta(fp):
-    output = Popen(["pdfinfo", fp], stdout=PIPE, stderr=PIPE).communicate()[0].decode(errors='ignore')
-    if(output==""):
-        return None
-    meta_dict = {}
-    lines = output.split('\n')[:-1]
-    new_lines=[]
-    for l, line in enumerate(lines):
-        if ':' in line:
-            new_lines.append(line)
-        else:
-            new_lines[-1] += ' '+line
-
-    for line in new_lines:
-        key, val = line.split(':',1)
-        key = key.lower().replace(" ", "_")
-        try:
-            val = val.split(None,0)[0]
-        except:
-            meta_dict[key] = None 
-            continue
-        if(key == "page_size"):
-            val = val.split()
-            val = [float(val[0]), float(val[2])]
-        elif(key == "pages"):
-            val = int(val)
-        elif(key == "file_size"):
-            val = val.split()[0]
-            val = float(val)/1000
-        elif(key == "page_rot"):
-            val = int(val)>0
-        elif(key == "encrypted"):
-            val = not(val=="no")
-        meta_dict[key] = val
-    
-    if not 'author' in meta_dict:
-        meta_dict['author']= None
-    if not 'creator' in meta_dict:
-        meta_dict['creator']= None
-    if not 'producer' in meta_dict:
-        meta_dict['producer']= None
-    if not 'title' in meta_dict:
-        meta_dict['title']= None
-        
-    return meta_dict
-
-def load_data_csvmeta(doc_ids,classes, name):
-    clean_data = []
-    clf = []
-    # clean metadata is stored in lib_bow/clean_+<self.name>+.json"
-    filepath = join(DATA_PATH,"lib_bow/clean_"+name+".json")
-    # the data is stored as a dict{doc_id:string}
-    data = json.load(open(filepath,"r"))
-
-    # go through doc_ids and add the text
-    for d_id, d_cls in zip(doc_ids, classes):
-        if(d_id in data):
-            clean_data.append(data[d_id])
-            clf.append(d_cls)
-
-    return clean_data, clf
-
-def load_data_pdfinfo(doc_ids,classes,field):
-    clean_data = []
-    clf = []
-    # pdfinfo data is stored in lib_bow/pdfmetainfo.json
-    filepath = join(DATA_PATH,"lib_bow/pdfmetainfo.json")
-    # the data is stored as a dict of dicts {doc_id:{key_string:string}}
-    data = json.load(open(filepath,"r"))
-
-    # go through doc_ids and add the text
-    for d_id, d_cls in zip(doc_ids, classes):
-        if(d_id in data):
-            clean_test_data = ""
-            input_dict = data[d_id]
-            # if the dict at the id is non the file was password protected
-            if(input_dict is None):
-                clean_test_data = "passwordprotected"
-            else:
-                input_string = input_dict[field]
-                # if the string for a position is None this field was empty
-                if(input_string is None):
-                    clean_test_data = "None"
-                else:
-                    # data is not cleaned yet
-                    clean_test_data = clean_meta_input(input_string)
-            clean_data.append(clean_test_data)
-            clf.append(d_cls)
-
-    return clean_data, clf
-
-def load_data_pdfcontent(doc_ids,classes,num_pages):
-    clean_data = []
-    clf = []
-    empty_pos = 0
-    empty_neg = 0
-    # test is stored in a seperate json per pdf
-    for d_id, d_cls in zip(doc_ids, classes):
-        json_path = join(TXT_PATH,d_id+".json")
-        if(isfile(json_path)):
-            # data in the json is a dict{page:string}
-            data = json.load(open(json_path,"r"))
-            # if the dict is None the document was password protected
-            if(data is None):
-                test_data = "password_protected"
-            elif(len(data)==0):
-                test_data = "None"
-            else:
-                l_page = max(list(map(int, data.keys())))
-                test_data = ""
-                # concatenate the text of maximal the specified num_pages
-                for i in range(1,max(l_page,num_pages)+1):
-                    test_data += data[str(i)]
-                # text is not cleaned yet, clean it
-                clean_test_data = clean_pdf_txt_content(test_data)
-                # clean_test_data = test_data
-            if(len(clean_test_data)>20):
-                clean_data.append(clean_test_data)
-                clf.append(d_cls)
-            # # since the text can be very large give a Warning if it gets really high
-            # if(sys.getsizeof(clean_data)>1000000000):
-            #     print("Warning!!! Input data is larger than 1GB!")
-        else:
-            print(json_path + " is no valid file!!")
-
-    return clean_data, clf
-
-def clean_pdf_txt_content(txt):
-    txt = remove_whitespace(txt)
-    # words = find_regex(txt)
-    words = remove_stopwords(txt.split())
-    txt =  " ".join(words)
-    return txt
-
+def get_lang(txt, get_prob=False):
+    if(get_prob):
+        langs = detect_langs(txt)
+        language = langs[0]
+        return language.lang, language.prob
+    else:
+        language = detect(txt)
+        return language
 
 
 if __name__ == "__main__":
 
     sys.path.append("/home/kai/Workspace/deep_doc_class/deep_doc_class/src")
     from doc_globals import*
-    # features = ["title", "filename", "folder_name", "folder_description", "description"]
-    # for field_name in features:
-    #     generate_clean_training_data_metadata(field_name)
 
     args = sys.argv
     train_file = args[1]
@@ -755,16 +625,16 @@ if __name__ == "__main__":
     # # # features.append(BowClassifier("description"))
     # # # features.append(BowClassifier("author"))
 
-    # features.append(BowClassifier("filename"))
-    # features.append(BowClassifier("folder_name"))
-    # features.append(BowClassifier("creator"))
-    # features.append(BowClassifier("producer"))
-    features.append(BowClassifier("text"))
+    features.append(BowClassifier("filename"))
+    features.append(BowClassifier("folder_name"))
+    features.append(BowClassifier("creator"))
+    features.append(BowClassifier("producer"))
+    # features.append(BowClassifier("text"))
 
     # for f in features:
     #     f.train(doc_ids, classes)
     #     print(f.name[0])
 
     for f in features:
-        f.crossvalidate_text(doc_ids, classes, 10)
+        f.crossvalidate(doc_ids, classes, 10)
         pause()
