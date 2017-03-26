@@ -139,13 +139,17 @@ def get_pdf_text_features(file_path,text_path=None):
         text_dict["copyright_symbol"] = len(symbols)>0 
         return text_dict 
 
-def pre_extract_pdf_texts(doc_dir, txt_dir, num_cores=1):
+def pre_extract_pdf_texts(doc_dir, txt_dir, doc_ids=None, num_cores=1):
     files = []
     if isdir(doc_dir):
-        for root, dirs, fls in os.walk(doc_dir):
-            for name in fls:
-                if splitext(basename(name))[1] == '.pdf':
-                    files.append(join(root,name))
+        if(doc_ids is None):
+            for root, dirs, fls in os.walk(doc_dir):
+                for name in fls:
+                    if splitext(basename(name))[1] == '.pdf':
+                        files.append(join(root,name))
+        else:
+            for d_id in doc_ids:
+                files.append(join(doc_dir,doc_ids+".pdf"))
     else:
         print("Error: You need to specify a path to the folder containing all files.")
         sys.exit(1)

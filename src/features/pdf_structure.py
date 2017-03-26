@@ -55,13 +55,13 @@ def extract_pdf_structure_values(file):
     struct_dict = get_structure_values_dict(struct_data)
     return struct_dict
 
-def pre_extract_pdf_structure_values(dir,
+def pre_extract_pdf_structure_values(doc_dir, doc_ids=None,
     structure_path=join(PRE_EXTRACTED_DATA_PATH,"pdf_structure.json"),
     boxinfo_dir=join(PRE_EXTRACTED_DATA_PATH,"pdf_structure_boxinfo.json"),
     num_cores=1):
 
     if(not(isfile(boxinfo_dir))):
-        pre_extract_pdf_structure_boxinfo(dir, boxinfo_dir=boxinfo_dir, num_cores=num_cores)
+        pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids, boxinfo_dir=boxinfo_dir, num_cores=num_cores)
 
     with codecs.open(boxinfo_dir, 'r', encoding='utf-8', errors='replace') as j:
         json_data=j.read()
@@ -75,15 +75,19 @@ def pre_extract_pdf_structure_values(dir,
     with open(structure_path, 'w') as fp:
         json.dump(pdf_structure_data, fp, indent=4)
 
-def pre_extract_pdf_structure_boxinfo(dir,
+def pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids = None,
 	boxinfo_dir=join(PRE_EXTRACTED_DATA_PATH,"pdf_structure_boxinfo.json"),
 	num_cores=1):
     files = []
-    if isdir(dir):
-        for root, dirs, fls in os.walk(f):
-            for name in fls:
-                if splitext(basename(name))[1] == '.pdf':
-                    files.append(join(root,name))
+    if isdir(doc_dir):
+        if(doc_ids is None):
+            for root, dirs, fls in os.walk(doc_dir):
+                for name in fls:
+                    if splitext(basename(name))[1] == '.pdf':
+                        files.append(join(root,name))
+            else:
+                for d_id in doc_ids:
+                    files.append(join(doc_dir, d_id+".pdf"))
     else:
         print("Error: You need to specify a path to the folder containing all files.")
         sys.exit(1)

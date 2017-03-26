@@ -107,13 +107,17 @@ def get_pdf_properties(file_path, properties_path=None):
 
     return pdfinfo_dict
 
-def pre_extract_pdf_properties(dir, out=join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json"), num_cores=1):
+def pre_extract_pdf_properties(doc_dir, doc_ids=None, out=join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json"), num_cores=1):
     files = []
-    if isdir(dir):
-        for root, dirs, fls in os.walk(f):
-            for name in fls:
-                if splitext(basename(name))[1] == '.pdf':
-                    files.append(join(root,name))
+        if(doc_ids is None):
+            for root, dirs, fls in os.walk(doc_dir):
+                for name in fls:
+                    if splitext(basename(name))[1] == '.pdf':
+                        files.append(join(root,name))
+        else:
+            for d_id in doc_ids:
+                files.append(join(doc_dir,d_id+".pdf"))
+
     else:
         print("Error: You need to specify a path to the folder containing all files.")
         sys.exit(1)
