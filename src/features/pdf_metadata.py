@@ -14,6 +14,8 @@ from multiprocessing import Pool
 
 from doc_globals import*
 
+FEATURES_NAMES = ["filename","folder_name"]
+
 def load_single_metarow(doc_id, fields, metadata):
     if(type(metadata)==str and isfile(metadata)):
         metadata=pd.read_csv(path, delimiter=',', quoting=1, encoding='utf-8')

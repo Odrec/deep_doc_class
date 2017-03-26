@@ -10,6 +10,8 @@ from doc_globals import*
 
 from multiprocessing import Pool
 
+FEATURES_NAMES = ["producer","creator","pages", "file_size", "page_rot", "page_size_x", "page_size_y"]
+
 def pdfinfo_get_pdf_properties(file_path):
     output = subprocess.Popen(["pdfinfo", file_path],
         stdout=subprocess.PIPE,

@@ -24,6 +24,9 @@ sys.path.append(SRC_DIR)
 sys.path.append(join(realpath(__file__), os.pardir))
 from doc_globals import*
 
+FEATURES_NAMES = ['ratio_text_image','ration_text_pages','ratio_words_box','avg_text_size','ratio_image_pages','avg_image_size']
+
+
 def get_pdf_structure(file_path, structure_path=None):
    
     doc_id = splitext(basename(file_path))[0]

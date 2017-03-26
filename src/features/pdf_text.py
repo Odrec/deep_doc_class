@@ -15,6 +15,7 @@ from functools import partial
 
 from multiprocessing import Pool
 
+FEATURES_NAMES = ["text", "word_count", "copyright_symbol"]
 
 def ghostcript_get_pdftext(file_path, text_dir=None, first_page=-1, last_page=-1):
 

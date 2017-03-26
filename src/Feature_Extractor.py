@@ -150,7 +150,8 @@ class Feature_Extractor():
 
         res_mat = []
         for val_dict in res:
-            res_mat.append(list(val_dict.values()))
+            res_row = [val_dict[fn] for fn in self.all_features]
+            res_mat.append(res_row)
 
         return res_mat
 
