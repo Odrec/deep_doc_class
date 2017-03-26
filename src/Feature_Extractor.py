@@ -55,21 +55,32 @@ class Feature_Extractor():
         'avg_image_size']
 
     def __init__(self,
-        pdf_path,
-        pdf_properties_features=[],
-        pdf_metadata_features=[],
-        pdf_text_features=[],
-        pdf_structure_features=[],
-        properties_path=None,
-        meta_path=None,
-        text_path=None,
-        structure_path=None):
+        pdf_dir,
+        text_dir,
+        metadata,
+        properties,
+        structure,
+        pdf_properties_features,
+        pdf_metadata_features,
+        pdf_text_features,
+        pdf_structure_features):
 
-        self.pdf_path = pdf_path
-        self.properties_path = properties_path
-        self.metadata_path = meta_path
-        self.text_path = text_path
-        self.structure_path = structure_path
+        self.pdf_dir = pdf_dir
+        self.text_dir = text_dir
+
+        self.metadata_frame = metadata
+        if(isfile(self.metadata_frame)):
+            self.metadata_frame=pd.read_csv(self.metadata_frame, delimiter=',', quoting=1, encoding='utf-8')
+
+        self.properties_dict = properties
+        if(isfile(self.properties_dict)):
+            with open(self.properties_dict, "r") as prop_file:
+                self.properties_dict = json.load(prop_file)
+
+        self.structure_dict = structure
+        if(isfile(self.structure_dict)):
+            with open(self.structure_dict, "r") as prop_file:
+                self.structure_dict = json.load(prop_file)
 
         self.pdf_properties_features = tuple(pdf_properties_features)
         self.pdf_metadata_features = tuple(pdf_metadata_features)
@@ -89,46 +100,59 @@ class Feature_Extractor():
             if(bf in self.all_features):
                 self.bow_classifiers.append(BowClassifier(bf))
 
-    def extract_features(self, doc_input, feature_file, p=-1, profiling=False):
+    def extract_features(self, doc_input, feature_file=None, p=-1, profiling=False):
 
-        # Extract Features parallel
-        # use the number of cores specified in p
-        if p == -1:
-            pool = Pool()
+        if(len(doc_input)==1):
+            res = [self.get_data_vector(doc_input[0])]
+
         else:
-            pool = Pool(p)
+            if(not(type(doc_input[0])==list)):
+                for i in range(len(doc_input)):
+                    doc_input[i] = [doc_input[i]]
+            # Extract Features parallel
+            # use the number of cores specified in p
+            if p == -1:
+                pool = Pool()
+            else:
+                pool = Pool(p)
 
-        # if profiling print out how long each function takes
-        if(profiling):
-            pr = cProfile.Profile()
-            pr.enable()
-            res = []
-            for d in doc_input:
-                res.append(self.get_data_vector(d))
-            pr.disable()
-            pr.create_stats()
-            ps = pstats.Stats(pr).sort_stats('tottime')
-            ps.print_stats(0.1)
-        # otherwise just get the feature values
-        else:
-            res = pool.map(self.get_data_vector, doc_input)
+            # if profiling print out how long each function takes
+            if(profiling):
+                pr = cProfile.Profile()
+                pr.enable()
+                res = []
+                for d in doc_input:
+                    res.append(self.get_data_vector(d))
+                pr.disable()
+                pr.create_stats()
+                ps = pstats.Stats(pr).sort_stats('tottime')
+                ps.print_stats(0.1)
+            # otherwise just get the feature values
+            else:
+                res = pool.map(self.get_data_vector, doc_input)
+            
+            # write the dictionary into a csv file
+            if(not(feature_file)==None):
+                # first field is the document id
+                fieldnames = ["document_id"]
+                # if the data file contained classifications for training add a column for those
+                if(len(doc_input[0])==2):
+                    fieldnames += ["class"]
+                # finally add all the featurenames themselves
+                fieldnames += list(self.all_features)
 
-        # first field is the document id
-        fieldnames = ["document_id"]
-        # if the data file contained classifications for training add a column for those
-        if(len(doc_input[0])==2):
-            fieldnames += ["class"]
+                with open(feature_file,"w") as f:
+                    writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
+                    writer.writeheader()
+                    for row in res:
+                        if(not(row is None)):
+                            writer.writerow(row)
 
-        # finally add all the featurenames themselves
-        fieldnames += list(self.all_features)
-        
-        # write the dictionary into a csv file
-        with open(feature_file,"w") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
-            writer.writeheader()
-            for row in res:
-                if(not(row is None)):
-                    writer.writerow(row)
+        res_mat = []
+        for val_dict in res:
+            res_mat.append(list(val_dict.values()))
+
+        return res_mat
 
     def generate_error_features(self, features):
         #generates the error features and replaces the nan values
@@ -200,34 +224,39 @@ class Feature_Extractor():
 
         all_features_dict = {}
 
-        file_path = join(self.pdf_path, doc_id+".pdf")
-
-        # if some pdf_info features are requested
-        if(len(self.pdf_properties_features)>0):
-            # get pdf_info dictionary
-            
-            properties_dict = features.pdf_properties.get_pdf_properties(file_path,  properties_path=self.properties_path)
-            # print(properties_dict)
-            all_features_dict.update(properties_dict)
-
-        # if some metadata features are requested
-        if(len(self.pdf_metadata_features)>0):
-            # try to get csv metadata information for the specific file
-            metadata_dict = features.pdf_metadata.load_single_metarow(doc_id, fields=self.pdf_metadata_features, path=self.metadata_path)
-            all_features_dict.update(metadata_dict)
+        file_path = join(self.pdf_dir, doc_id+".pdf")
         
         # if some content features are requested
         if(len(self.pdf_text_features)>0):
 
-            text_dict = features.pdf_text.get_pdf_text_features(file_path, text_path=self.text_path)
+            text_dict = features.pdf_text.get_pdf_text_features(file_path, text_path=self.text_dir)
             all_features_dict.update(text_dict)
+
+        # if some metadata features are requested
+        if(len(self.pdf_metadata_features)>0):
+            # try to get csv metadata information for the specific file
+            metadata_dict = features.pdf_metadata.load_single_metarow(doc_id, fields=self.pdf_metadata_features, metadata=self.metadata_frame)
+            all_features_dict.update(metadata_dict)
+
+        # if some pdf_info features are requested
+        if(len(self.pdf_properties_features)>0):
+            # get properties dictionary
+            if(type(self.properties_dict)==dict and doc_id in self.properties_dict):
+                properties_dict = self.properties_dict[doc_id]
+            else:
+                properties_dict = features.pdf_properties.get_pdf_properties(file_path)
+            all_features_dict.update(properties_dict)
 
         # if some structure features are requested
         if(len(self.pdf_structure_features)>0):
-
-            structure_dict = features.pdf_structure.get_pdf_structure(file_path, structure_path=self.structure_path)
+            # get structure dictionary
+            if(type(self.structure_dict)==dict and doc_id in self.structure_dict):
+                structure_dict = self.structure_dict[doc_id]
+            else:
+                structure_dict = features.pdf_properties.get_pdf_structure(file_path)
             all_features_dict.update(structure_dict)
 
+        # get the requested information of the dictionary
         for f in self.all_features:
             # check if it is a bow feature or a numeric one
             if(f in Feature_Extractor.bow_features):
