@@ -47,7 +47,7 @@ def ghostcript_get_pdftext(file_path, text_dir=None, first_page=-1, last_page=-1
         page_break_regex = "Page [0-9]+\n"
         pages = re.split(page_break_regex, output)
 
-        text = str(len(pages)-1)+"\n"
+        text = ""
         page_dict = {}
         for i in range(1, len(pages)):
             if(not(pages[i]=="")):
@@ -120,7 +120,6 @@ def get_pdf_texts_txt(doc_ids,pdf_path,txt_dir=None):
             if(isfile(txt_path)):
                 # data in the json is a dict{page:string}
                 with open(txt_path, "r") as txt_file:
-                    pages = txt_file.readline()
                     text_data = txt_file.read()
             else:
                 filepath = join(pdf_path,d_id+".pdf")
@@ -180,11 +179,8 @@ def get_pdf_text_features_txt(file_path,text_dir=None):
     else:
         text, file_path = ghostcript_get_pdftext(file_path,text_dir, first_page=-1, last_page=-1)
 
-    pages = int(text.split("\n")[0])
-
     text_dict = {}
     text_dict["text"] = text
-    text_dict["word_count"] = float(len(text))/pages
     symbols = re.findall(r'DOI|ISBN|©|doi|isbn', text)
     text_dict["copyright_symbol"] = len(symbols)>0 
     return text_dict 
