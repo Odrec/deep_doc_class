@@ -17,19 +17,19 @@ from doc_globals import*
 FEATURES_NAMES = ["filename","folder_name"]
 
 def load_single_metarow(doc_id, fields, metadata):
+    metadict = {}
     if(type(metadata)==str and isfile(metadata)):
         metadata=pd.read_csv(path, delimiter=',', quoting=1, encoding='utf-8')
-    if(not(type(metadata)==pd.core.frame.DataFrame)):
-        print("The parameter <metadata> has to either contain a pandas DataFrame or a path to a metadata csv file!")
-        sys.exit(1)
-    pd_series = metadata[metadata['document_id'] == doc_id]
-    metadict = {}
-    if(pd_series.empty):
-        print("No csv metadata for doc id %s!!!" %(doc_id,))
-        for field in fields:
-            metadict[field] = None
+        pd_series = metadata[metadata['document_id'] == doc_id]
+        if(pd_series.empty):
+            print("No csv metadata for doc id %s!!!" %(doc_id,))
+            for field in fields:
+                metadict[field] = None
+        else:
+            for field in fields:
+                metadict[field] = metadata[field]
     else:
-        full_metadict = pd_series.squeeze().to_dict()
+        metadict = metadata
         for field in fields:
             metadict[field] = full_metadict[field]
     return metadict
