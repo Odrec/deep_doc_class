@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="35537b32-9ee8-4cca-9e93-a3cff296039b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/classification.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/.~lock.whole_features_16_11.csv#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/out_test.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_bow_author.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_bow_text.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_bow_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_complete.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_complete_back.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_description.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_filename.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_folder_description.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_folder_name.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_orientation.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_page_size.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_scanner.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_test.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/output_text_score.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/whole_features_16_11.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/feature_values/whole_features_17_11.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/nn_models/NN_hl0_hd500_ne500_t0.5.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/nn_models/NN_hl1_hd10_ne500_t0.5.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/nn_models/NN_hl1_hd500_ne1000_t0.5.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/nn_models/NN_hl1_hd500_ne1_t0.5.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/nn_models/NN_hl1_hd500_ne500_t0.5.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/nn_models/whole_features_17_11_hd500_ne2000_t0.5.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/training_data.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/training_data_with_headers.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/trimmed_classification.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/requirements_py2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/testing_features_results.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/whole_features_17_11/box_plot_all.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/whole_features_17_11/box_plot_copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/whole_features_17_11/box_plot_not_copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Classification.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Feature_Extractor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MetaHandler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/NN.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bow_helper_function.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/classes.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc_globals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/bow_metadata.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/classifier_description.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/classifier_filename.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/classifier_folder_description.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/classifier_folder_name.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/classifier_title.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/clean_description.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/clean_filename.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/clean_folder_description.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/clean_folder_name.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/clean_title.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/lib_bow/model_author.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/danish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/dutch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/english" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/finnish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/french" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/german" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/hungarian" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/italian" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/kazakh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/norwegian" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/portuguese" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/russian" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/spanish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/swedish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/nltk_data/corpora/stopwords/turkish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/tests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/tests/classificationTest.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/tests/metadataTest.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/tests/metadata_tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/tests/uploaderTest.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_metadata/uploader.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_pdf/bow_pdf.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_pdf/bow_train.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_pdf/bow_train_full.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_pdftext/bow_pdftext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/bow_pdftext/excluded_documents.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/meta_pdf_extractor/meta_extractor_bows.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/meta_pdf_extractor/meta_pdf_extractor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/negative_bow/bow_train_neg.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/negative_bow/negative_bow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/orientation_detector/orientation_detector.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/page_size_ratio/page_size_ratio.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/pdf_meta_info/author-trained-naive.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/pdf_meta_info/author-vectorizer.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/pdf_meta_info/creator-trained-naive.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/pdf_meta_info/creator-vectorizer.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/pdf_meta_info/pdf_meta_info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/pdf_meta_info/producer-trained-naive.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/pdf_meta_info/producer-vectorizer.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/resolution/resolution.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/text_score/text_score.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/features/text_score/txtscore_pdf.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/log_reg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/manage_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/danish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/dutch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/english" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/finnish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/french" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/german" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/hungarian" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/italian" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/kazakh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/norwegian" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/portuguese" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/russian" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/spanish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/swedish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nltk_data/corpora/stopwords/turkish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/old/HTML.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/old/copy_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/old/ocr_bow_module.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/old/pdftest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/simple_neural_network.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test_NN.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/text_extractor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tsne.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    </list>
+    <ignored path="deep_doc_class.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="deep_doc_class" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/.keras/keras.json" />
+        <option value="$PROJECT_DIR$/src/features/conv_net/Data/Train/vgg16_net.py" />
+        <option value="$PROJECT_DIR$/src/features/conv_net/Data/filemvr.py" />
+        <option value="$PROJECT_DIR$/src/features/conv_net/filemvr.py" />
+        <option value="$PROJECT_DIR$/src/features/conv_net/conv_net-tune.py" />
+        <option value="$PROJECT_DIR$/src/features/conv_net/conv_net.py" />
+        <option value="$PROJECT_DIR$/src/features/conv_net/classification.csv" />
+        <option value="$PROJECT_DIR$/src/features/conv_net/walker.py" />
+        <option value="$PROJECT_DIR$/src/features/conv_net/average_calc.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deep_doc_class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deep_doc_class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deep_doc_class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="E:/deep_doc_class" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net" />
+      <recent name="C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data" />
+      <recent name="C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\data\validation\dogs" />
+      <recent name="C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\data\train\dogs" />
+      <recent name="C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\data\train\cats" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net" />
+      <recent name="C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\files" />
+      <recent name="C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\data\validation\cats" />
+      <recent name="C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\data\validation" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.average_calc">
+    <configuration default="false" name="conv_net" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/features/conv_net" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/features/conv_net/conv_net.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="filemvr" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/features/conv_net" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/features/conv_net/filemvr.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="conv_net-tune" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/features/conv_net" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/features/conv_net/conv_net-tune.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="walker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/features/conv_net" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/features/conv_net/walker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="average_calc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/features/conv_net" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/features/conv_net/average_calc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="deep_doc_class" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.conv_net" />
+      <item index="1" class="java.lang.String" itemvalue="Python.filemvr" />
+      <item index="2" class="java.lang.String" itemvalue="Python.conv_net-tune" />
+      <item index="3" class="java.lang.String" itemvalue="Python.walker" />
+      <item index="4" class="java.lang.String" itemvalue="Python.average_calc" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.average_calc" />
+        <item index="1" class="java.lang.String" itemvalue="Python.walker" />
+        <item index="2" class="java.lang.String" itemvalue="Python.conv_net" />
+        <item index="3" class="java.lang.String" itemvalue="Python.conv_net-tune" />
+        <item index="4" class="java.lang.String" itemvalue="Python.filemvr" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35537b32-9ee8-4cca-9e93-a3cff296039b" name="Default" comment="" />
+      <created>1484407409261</created>
+      <option name="number" value="Default" />
+      <updated>1484407409261</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25171143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2918919" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2918919" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25171143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/src/features/conv_net/conv_net.py</url>
+          <line>292</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/src/features/conv_net/conv_net.py</url>
+          <line>225</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/src/features/conv_net/walker.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/h5py/_hl/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/keras/engine/topology.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2694" column="0" selection-start-line="2694" selection-start-column="0" selection-end-line="2694" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/h5py/_hl/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/keras/engine/topology.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2694" column="0" selection-start-line="2694" selection-start-column="0" selection-end-line="2694" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/h5py/_hl/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/keras/engine/topology.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2694" column="0" selection-start-line="2694" selection-start-column="0" selection-end-line="2694" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/h5py/_hl/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/keras/engine/topology.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2694" column="0" selection-start-line="2694" selection-start-column="0" selection-end-line="2694" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/h5py/_hl/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/keras/engine/topology.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2694" column="0" selection-start-line="2694" selection-start-column="0" selection-end-line="2694" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/h5py/_hl/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/keras/engine/topology.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2694" column="0" selection-start-line="2694" selection-start-column="0" selection-end-line="2694" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/tensorflow/python/framework/common_shapes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325893">
+          <caret line="674" column="0" selection-start-line="674" selection-start-column="0" selection-end-line="674" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.keras/keras.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11600928">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/wand/resource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7030075">
+          <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/h5py/_hl/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5952382">
+          <caret line="304" column="20" selection-start-line="304" selection-start-column="20" selection-end-line="304" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/lib/format.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33227345">
+          <caret line="327" column="0" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2279" column="0" selection-start-line="2279" selection-start-column="0" selection-end-line="2279" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/keras/engine/topology.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0189099">
+          <caret line="2694" column="0" selection-start-line="2694" selection-start-column="0" selection-end-line="2694" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
