@@ -5,7 +5,7 @@ import json
 import csv
 
 def get_manual_classification(filename):
-	args = ["evince", filename]
+	args = ["evince", "--fullscreen", filename]
 	plot = subprocess.Popen(args, stdout=subprocess.PIPE,
 	        stderr=subprocess.PIPE)
 
@@ -58,6 +58,7 @@ if __name__ == "__main__":
 		reader = csv.reader(df)
 		classifications += list(reader)
 
+	print(len(classifications))
 	manual_classifiactions = {}
 
 	fieldnames = ['doc_id','important','category']
@@ -68,10 +69,10 @@ if __name__ == "__main__":
 			reader = csv.DictReader(csvfile)
 			# next(reader, None)
 			for line in reader:
-				print(line)
 				manual_classifiactions[line["doc_id"]]=line
 	try:
-		for cla,file in classifications[0:5]:
+		counter = 0
+		for file,cla in classifications:
 			if(not(file in manual_classifiactions)):
 				print("Classification is: %d"%(int(float(cla)),))
 				filename = join(filedir,file+".pdf")
@@ -82,7 +83,7 @@ if __name__ == "__main__":
 					"category":cat
 					}
 			else:
-				print("Already in!")
+				counter += 1
 
 	except KeyboardInterrupt as e:
 		print("Shutting down savely!")

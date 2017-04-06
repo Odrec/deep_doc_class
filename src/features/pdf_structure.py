@@ -106,7 +106,7 @@ def pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids=None,
     
     if(not(boxinfo_file is None)):
         with open(boxinfo_file, 'w') as fp:
-            json.dump(res_fix, fp)
+            json.dump(res_fix, fp, indent=4)
 
     return res_fix
 
@@ -150,6 +150,7 @@ def parse_layout(filename, dict_structure, page, lt_obj, num_obj, num_subobj=0):
             num_subobj += 1
     else:
         if isinstance(lt_obj, LTImage) or isinstance(lt_obj, LTTextBox) or isinstance(lt_obj, LTTextLine):
+            
             if not page in dict_structure[filename]:
                 dict_structure[filename][page] = {}
             dict_structure[filename][page][lt_obj.__class__.__name__+'-'+str(num_obj)+'-'+str(num_subobj)] = {}
@@ -248,3 +249,12 @@ def get_ib_size_avg(imagebox_list):
         ys = float(e['box4'])-float(e['box2'])
         area.append(xs*ys)
     return np.mean(area)
+
+if __name__ == "__main__":
+
+    # pre_extract_pdf_structure_boxinfo(doc_dir=join(DATA_PATH,"files_test"), doc_ids=None,
+    # boxinfo_file=join(DATA_PATH,"boxinfo_files_test.json"),
+    # num_cores=1)
+
+    file = "/home/kai/Workspace/deep_doc_class/deep_doc_class/data/files_test/76933924bff424b1f2bbb8ee27430f2a.pdf"
+    process_file(file)
