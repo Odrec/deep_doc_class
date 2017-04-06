@@ -29,9 +29,8 @@ def load_single_metarow(doc_id, fields, metadata):
             for field in fields:
                 metadict[field] = metadata[field]
     else:
-        metadict = metadata
         for field in fields:
-            metadict[field] = full_metadict[field]
+            metadict[field] = metadata[field]
     return metadict
 
 def load_single_metafield(doc_ids, field, metadata=join(DATA_PATH,"classified_metadata.csv")):
