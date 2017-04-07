@@ -112,15 +112,125 @@ class ConvNet:
         self.model.load_weights('first_try.h5')
 
     def get_function(self,filepointer,metapointer=None):
-        pass
+        """
 
-    def train(self,data,labels):
-        nb_epoch = 50
-        nb_validation_sambles = 400
-        nb_train_samples = 4000
-        train_data_dir = r"Data\Train"
-        train_validation_data_dir = r"Data\Validation"
+        :param filepointer: path to a directory containing only images of pages for the file to classify
+        :return: 0 if the file is okay, else copyright protected
+        """
+        train_data_dir = filepointer
+        train_datagen = ImageDataGenerator(rescale=1./255)
+        predictions = dict()
+        page_count = dict()
 
+        #train_datagen = ImageDataGenerator(
+        #    rescale=1./255,
+        #    shear_range=0.2,
+        #    zoom_range=0.2,
+        #    horizontal_flip=True)
+
+        train_generator = train_datagen.flow_from_directory(
+            train_data_dir,  # this is the target directory
+            target_size=(150, 150),  # all images will be resized to 150x150
+            batch_size=1,
+            class_mode='binary',
+            shuffle=False)
+        prediction = 0.0
+        for i in range(len([name for name in os.listdir('.') if os.path.isfile(name)])):
+            file = train_generator.next()
+            #self.model.predict_classes(file[0],batch_size=1,verbose=0)
+            prediction += self.model.predict_proba(file[0],batch_size=1,verbose=0)[0][0]
+        t = 0.5
+        t2 = 0.1
+        first = True
+        prediction /= float(len([name for name in os.listdir('.') if os.path.isfile(name)]))
+        if prediction > t2:
+            prediction = 1
+        else:
+            prediction = 0
+
+        return prediction
+
+    def get_function_batch(self,filepointer,N,metapointer=None):
+        """
+
+        :param filepointer:     path the directory with images to classify.
+                                If multiple images come from the same document, the files have to be named after the
+                                following pattern:  docname_side.filetype
+                                example:    longevildocument-666.jpeg
+        :return:
+        """
+        train_data_dir = filepointer
+        train_datagen = ImageDataGenerator(rescale=1./255)
+        predictions = dict()
+        page_count = dict()
+
+        #train_datagen = ImageDataGenerator(
+        #    rescale=1./255,
+        #    shear_range=0.2,
+        #    zoom_range=0.2,
+        #    horizontal_flip=True)
+
+        train_generator = train_datagen.flow_from_directory(
+            train_data_dir,  # this is the target directory
+            target_size=(150, 150),  # all images will be resized to 150x150
+            batch_size=1,
+            class_mode='binary',
+            shuffle=False)
+        c = 0
+        names = None
+        for i in os.walk(filepointer):
+            c += 1
+            if c == 1:
+                continue
+            if names is None:
+                names = i[2]
+            else:
+                names += i[2]
+        N = len(names)
+
+        c_names = list()
+        for name in names:
+            s_name = name.split('-')
+
+            if not s_name in page_count:
+                c_names.append(s_name[0])
+                page_count[s_name[0]] = 1
+                predictions[s_name[0]] = 0.0
+            else:
+                page_count[s_name[0]] += 1
+
+
+        for i in range(N):
+            file = train_generator.next()
+            #self.model.predict_classes(file[0],batch_size=1,verbose=0)
+            predictions[c_names[i]] += self.model.predict_proba(file[0],batch_size=1,verbose=0)[0][0]
+        t = 0.5
+        t2 = 0.1
+        first = True
+
+        for name in names:
+            predictions[name] /= page_count[name]
+
+            if predictions[name] > t2:
+                predictions[name] = 1
+            else:
+                predictions[name] = 0
+
+        return predictions
+
+    def train(self,train_data_dir =r"Data\Train",train_validation_data_dir = r"Data\Validation",nb_epoch = 50,nb_validation_sambles = 400,nb_train_samples = 4000):
+        """
+
+        :param train_data_dir:              path to the directory containing the training data. Each class corresponds
+                                            to a directory, where the images are saved. The directory for the copyright
+                                            protected data is called "pos" and the other one "neg"
+        :param train_validation_data_dir:   Path to images for the validation set. Directory structure has to be the same as
+                                            for the training data
+        :param nb_epoch:                    Number of Epochs to train
+        :param nb_validation_sambles:       Number of Images in the Validation set
+        :param nb_train_samples:            Number of Images in the training set
+        :return:                            self
+        """
         train_datagen = ImageDataGenerator(
             rescale=1./255,
             shear_range=0.2,
@@ -148,7 +258,7 @@ class ConvNet:
             validation_data=validation_generator,
             nb_val_samples=nb_validation_sambles)
         self.model.save_weights('first_try.h5')
-        pass
+        return self
 
     def get_confusion_matrix(self):
         nb_epoch = 50
@@ -157,7 +267,7 @@ class ConvNet:
         train_data_dir = r"Data\Train"
         train_validation_data_dir = r"Data\Validation"
         train_datagen = ImageDataGenerator(rescale=1./255)
-        fp = open('classification.csv','w+')
+        fp = open('classification.csv','w+',newline='')
         wr = csv.writer(fp,delimiter=';')
         wr.writerow(['filename','class','prediction','proba'])
 
@@ -196,7 +306,7 @@ class ConvNet:
             y = self.model.predict_classes(file[0],batch_size=1,verbose=0)
             proba = self.model.predict_proba(file[0],batch_size=1,verbose=0)
             #print(file[1])
-            wr.writerow([names[i],int(file[1]),int(y),proba])
+            wr.writerow([names[i],int(file[1]),int(y),float(proba[0,0])])
             if file[1] == 1.0:
                 if y == 1.0:
                     tru_pos += 1
@@ -208,6 +318,8 @@ class ConvNet:
                     fal_neg += 1
                 else:
                     tru_neg += 1
+        wr.close()
+        fp.close()
         print('\t\tPos\tNeg')
         print('True\t'+str(tru_pos)+'\t'+str(tru_neg))
         print('False\t'+str(fal_pos)+'\t'+str(fal_neg))
@@ -289,9 +401,9 @@ def get_val_files():
     pos = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Validation\pos")
     return pos, neg
 
-c = ConvNet()
+#c = ConvNet()
 #prepare(200)
 #c.train(list(),list())
-c.get_confusion_matrix()
+#c.get_confusion_matrix()
 #undo()
 

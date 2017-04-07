@@ -8,8 +8,8 @@ tru_pos = 0
 fal_pos = 0
 tru_neg = 0
 fal_neg = 0
-t = 0.1
-t2 = 0
+t = 0.5
+t2 = 0.1
 N = 0
 first = True
 predictions = dict()
@@ -28,10 +28,10 @@ for row in reader:
         names.append(splitted[0])
         page_count[splitted[0]] = 1
         classes[splitted[0]] = int(row[1])
-        predictions[splitted[0]] = int(row[2])
+        predictions[splitted[0]] = float(row[3])
     else:
         page_count[splitted[0]] += 1
-        predictions[splitted[0]] += int(row[2])
+        predictions[splitted[0]] += float(row[3])
     #if splitted[1] != '2.jpg':
      #   continue
 
