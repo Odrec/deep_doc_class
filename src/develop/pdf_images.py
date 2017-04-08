@@ -1,3 +1,12 @@
+import sys, os
+from os.path import join, realpath, dirname, isdir, basename, isfile, splitext
+
+import subprocess
+import re
+from PIL import Image as PI
+import numpy as np
+
+
 def pdf_images_handler(content_dict, entropy_path, doc_id):
     if(isfile(entropy_path)):
         with open(entropy_path,"r") as f:
@@ -18,7 +27,7 @@ def pdf_images_handler(content_dict, entropy_path, doc_id):
     # values_dict["color"]=color
     return content_dict
 
-def get_grayscale_entropy(fp, first_page=-1, last_page=-1):
+def get_grayscale_entropy(fp, first_page=1, last_page=-1):
     args = ["gs", "-dNOPAUSE", "-dBATCH", "-sDEVICE=jpeg", "-sOutputFile=-"]
     if(not(first_page==-1)):
         args.append("-dFirstPage=%d"%(first_page,))
@@ -69,15 +78,20 @@ def get_grayscale_entropy_tmpfile(fp, first_page=-1, last_page=-1):
     output = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0]
 
     invalid_file_regex = r'Error: /invalidfileaccess in pdf_process_Encrypt'
+    page_break_regex = b'Page [0-9]+\n'
+
+    pages = re.split(page_break_regex, output)
 
     if(re.search(invalid_file_regex, output.decode())):
         return np.nan
 
     entropy = []
     color = False
-    for i in range(first_page,last_page+1):
+    for i in range(1,len(pages)):
         imgfile = "tmp-%03d.jpeg"%(i,)
+        print(imgfile)
         if(not(isfile(imgfile))):
+            print(imgfile)
             continue
         pil_image = PI.open(imgfile)
         # with PI.open(io.BytesIO(page)) as pil_image:
@@ -88,17 +102,16 @@ def get_grayscale_entropy_tmpfile(fp, first_page=-1, last_page=-1):
         e = -np.sum(np.multiply(hist, np.log2(hist)))
         entropy.append(e)
 
-        if(not(color)):
-            col_image = pil_image.convert('RGB')
-            np_image = np.array(col_image)
-            if((np_image[:,:,0]==np_image[:,:,1])==(np_image[:,:,1]==np_image[:,:,2])):
-                color = True
+        # if(not(color)):
+        #     col_image = pil_image.convert('RGB')
+        #     np_image = np.array(col_image)
+        #     if((np_image[:,:,0]==np_image[:,:,1])==(np_image[:,:,1]==np_image[:,:,2])):
+        #         color = True
 
         os.remove(imgfile)
 
     if(len(entropy)==0):
-        print(print_bcolors(["WARNING","BOLD"],
-            "Zero images loaded. Either pdf is empty or Ghostscript didn't create images correctly."))
+        print("Zero images loaded. Either pdf is empty or Ghostscript didn't create images correctly.")
         mean_entropy = np.nan
     else:
         mean_entropy = np.mean(entropy)
