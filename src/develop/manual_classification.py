@@ -4,7 +4,38 @@ import subprocess
 import json
 import csv
 
+
+
+def all_powerpoint_in_presentation(man_class_file):
+    '''
+	Takes the manual classified csv file and checks if every document which was created by powerpoint is in presentations
+
+    @param  man_class_file: path to the csv with the manual classifications
+    @type   man_class_file: str
+    '''
+
+def all_powerpoint_in_presentation(man_class_file):
+    '''
+	Takes the manual classified csv file and checks if every document which was created by powerpoint is in presentations
+
+    @param  man_class_file: path to the csv with the manual classifications
+    @type   man_class_file: str
+    '''
+
+
 def get_manual_classification(filename):
+    '''
+	Opens a pdf document and asks for a manual classification.
+
+    @param  filename: path to a pdf document
+    @type   filename: str
+
+    @return  imp_val: flag indication if the pdf is an important one 
+    @rtype   imp_val: int
+
+    @return  cat_val: number assigning the documnet to a category
+    @rtype   cat_val: int
+    '''
 	args = ["evince", "--fullscreen", filename]
 	plot = subprocess.Popen(args, stdout=subprocess.PIPE,
 	        stderr=subprocess.PIPE)

@@ -87,25 +87,25 @@ def get_pdf_properties(file_path, properties_path=None):
 
     if(pdfinfo_dict is None):
         pdfinfo_dict = {
-        "optimized": "passwordprotected",
-        "file_size": None,
-        "form": "passwordprotected",
-        "tagged": "passwordprotected",
-        "encrypted": None,
-        "pdf_version": "passwordprotected",
-        "suspects": "passwordprotected",
-        "page_size_x": None,
-        "creationdate": "passwordprotected",
-        "userproperties": "passwordprotected",
-        "page_size_y": None,
-        "author": None,
-        "javascript": "passwordprotected",
-        "producer": "passwordprotected",
-        "moddate": "passwordprotected",
-        "creator": "passwordprotected",
-        "page_rot": None,
-        "title": None,
-        "pages": None}
+            "optimized": "passwordprotected",
+            "file_size": None,
+            "form": "passwordprotected",
+            "tagged": "passwordprotected",
+            "encrypted": None,
+            "pdf_version": "passwordprotected",
+            "suspects": "passwordprotected",
+            "page_size_x": None,
+            "creationdate": "passwordprotected",
+            "userproperties": "passwordprotected",
+            "page_size_y": None,
+            "author": None,
+            "javascript": "passwordprotected",
+            "producer": "passwordprotected",
+            "moddate": "passwordprotected",
+            "creator": "passwordprotected",
+            "page_rot": None,
+            "title": None,
+            "pages": None}
 
     return pdfinfo_dict
 
