@@ -1,40 +1,33 @@
 import os
+import shutil
 import random
-
-def prepare(limit=200):
-    limit = limit - 1
-    t_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Train"
-    v_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Validation"
-    pos,neg = get_files()
+import csv
+import fnmatch
+def setup(csv_file,v_path = ".\\Data\\Validation"):
+    t_path = ".\\Data\\Train"
+    #pos,neg = get_files()
     v_neg = list()
     v_pos = list()
 
     p = 0
     n = 0
-    #limit = 199
-    while(True):
-        if n > limit and p > limit:
-            break
-        if n <= limit:
-            while True:
-                f = random.choice(neg)
-                if f in v_neg:
-                    continue
-                v_neg.append(f)
-                break
-            n += 1
-        if p <=limit:
-            while True:
-                f = random.choice(pos)
-                if f in v_pos:
-                    continue
-                v_pos.append(f)
-                break
-            p += 1
+    #limit = 1
+    with open(csv_file,'r') as fp:
+        rdr = csv.reader(fp,delimiter=',')
+        for row in rdr:
+            if row[1] == '1':
+                v_pos.append(row[0])
+            elif row[1] == '0':
+                v_neg.append(row[0])
     for pos in v_pos:
-        os.rename(t_path+'\\pos\\'+pos,v_path+'\\pos\\'+pos)
+        for file in os.listdir(t_path+'\\pos\\'):
+            if fnmatch.fnmatch(file,pos+'*'):
+                type(file)
+                shutil.move(t_path+'\\pos\\'+file,v_path+'\\pos\\'+file)
     for neg in v_neg:
-        os.rename(t_path+'\\neg\\'+neg,v_path+'\\neg\\'+neg)
+        for file in os.listdir(t_path+'\\neg\\'):
+            if fnmatch.fnmatch(file,neg+'*'):
+                shutil.move(t_path+'\\neg\\'+file,v_path+'\\neg\\'+file)
     return
 
 def undo():
@@ -59,6 +52,71 @@ def get_val_files():
     pos = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Validation\pos")
     return pos, neg
 
-prepare(200)
-#undo()
+def get_all_IDs():
+    with open("cleaned_manual_class.csv",'r') as fp:
+        reader = csv.reader(fp,delimiter=',')
+        content = list()
+        for row in reader:
+            content.append(row)
+        return content
 
+def seperate(num=500):
+    with open('evaluation_files.csv','w+') as fp:
+        writer = csv.writer(fp,delimiter=',',lineterminator='\n')
+        content = get_all_IDs()
+        c = 0
+        new_l = list()
+        print(len(content))
+        while c < num:
+            new = random.choice(content)
+            if new in new_l:
+                continue
+            else:
+                content.remove(new)
+                new_l.append(new)
+                c += 1
+        print(len(content))
+        print(len(new_l))
+        for line in new_l:
+            writer.writerow(line)
+    cross_val_bin = list()
+    bin_size = len(content)/10
+    for i in range(10):
+        bin = list()
+        c = 0
+        while c < bin_size:
+            if(len(content) == 0):
+                break
+            new = random.choice(content)
+            content.remove(new)
+            bin.append(new)
+            c += 1
+        print("bin length:", len(bin))
+        cross_val_bin.append(bin)
+    for i,bin in enumerate(cross_val_bin):
+        with open('cvset-'+str(i)+'.csv','w+') as fp:
+            wr = csv.writer(fp,delimiter=',',lineterminator='\n')
+            for line in bin:
+                wr.writerow(line)
+
+
+
+
+
+
+
+
+
+
+
+for i in range(10):
+    name = 'cvset'+str(i)
+    os.mkdir('.\\Data\\'+name)
+    os.mkdir('.\\Data\\'+name+'\\pos')
+    os.mkdir('.\\Data\\'+name+'\\neg')
+    setup('cvset-'+str(i)+'.csv','.\\Data\\'+name)
+
+
+#undo()
+#seperate()
+#print(len(a))

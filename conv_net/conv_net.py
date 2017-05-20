@@ -6,6 +6,8 @@ from keras import optimizers
 from keras.models import Sequential
 from keras.layers import Convolution2D, MaxPooling2D, ZeroPadding2D
 from keras.layers import Activation, Dropout, Flatten, Dense
+from scipy import misc
+from PIL import Image
 import csv
 #import filemvr
 
@@ -91,7 +93,7 @@ class ConvNet:
         # note that it is necessary to start with a fully-trained
         # classifier, including the top classifier,
         # in order to successfully do fine-tuning
-      #  top_model.load_weights("C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\first_try.h5")
+       # top_model.load_weights("C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\third_try.h5")
 
         # add the model on top of the convolutional base
         model.add(top_model)
@@ -100,7 +102,7 @@ class ConvNet:
         # to non-trainable (weights will not be updated)
         #for layer in model.layers[:25]:
         for layer in model.layers[:]:
-            layer.trainable = False
+            layer.trainable = True
 
         # compile the model with a SGD/momentum optimizer
         # and a very slow learning rate.
@@ -109,7 +111,7 @@ class ConvNet:
                       metrics=['accuracy'])
 
         self.model = model
-        self.model.load_weights('first_try.h5')
+        self.model.load_weights('second_try.h5')
 
     def get_function(self,filepointer,metapointer=None):
         """
@@ -150,13 +152,14 @@ class ConvNet:
 
         return prediction
 
-    def get_function_batch(self,filepointer,N,metapointer=None):
+    def get_function_batch(self,filepointer,N=None,metapointer=None):
         """
 
         :param filepointer:     path the directory with images to classify.
                                 If multiple images come from the same document, the files have to be named after the
                                 following pattern:  docname_side.filetype
                                 example:    longevildocument-666.jpeg
+                                Also the images have to in a dirrectory inside of the target directory (working on resolving that)
         :return:
         """
         train_data_dir = filepointer
@@ -186,29 +189,32 @@ class ConvNet:
                 names = i[2]
             else:
                 names += i[2]
-        N = len(names)
+        if N is None:
+            N = len(names)
 
         c_names = list()
         for name in names:
             s_name = name.split('-')
 
-            if not s_name in page_count:
+            if not s_name[0] in page_count:
                 c_names.append(s_name[0])
                 page_count[s_name[0]] = 1
                 predictions[s_name[0]] = 0.0
             else:
                 page_count[s_name[0]] += 1
 
-
-        for i in range(N):
+        c += 1
+        for i in range(len(names)):
             file = train_generator.next()
+            c_name = names[i].split('-')[0]
             #self.model.predict_classes(file[0],batch_size=1,verbose=0)
-            predictions[c_names[i]] += self.model.predict_proba(file[0],batch_size=1,verbose=0)[0][0]
+            #print(i)
+            predictions[c_name] += self.model.predict_proba(file[0],batch_size=1,verbose=0)[0][0]
         t = 0.5
         t2 = 0.1
         first = True
 
-        for name in names:
+        for name in c_names:
             predictions[name] /= page_count[name]
 
             if predictions[name] > t2:
@@ -218,7 +224,7 @@ class ConvNet:
 
         return predictions
 
-    def train(self,train_data_dir =r"Data\Train",train_validation_data_dir = r"Data\Validation",nb_epoch = 50,nb_validation_sambles = 400,nb_train_samples = 4000):
+    def train(self,train_data_dir =r".\Data\Train",train_validation_data_dir = r".\Data\Validation",nb_epoch = 2,nb_validation_sambles = 400,nb_train_samples = 7455):
         """
 
         :param train_data_dir:              path to the directory containing the training data. Each class corresponds
@@ -231,6 +237,9 @@ class ConvNet:
         :param nb_train_samples:            Number of Images in the training set
         :return:                            self
         """
+
+        train_data_dir =r".\Data\Train"
+        train_validation_data_dir = r".\Data\Validation"
         train_datagen = ImageDataGenerator(
             rescale=1./255,
             shear_range=0.2,
@@ -242,13 +251,13 @@ class ConvNet:
         train_generator = train_datagen.flow_from_directory(
             train_data_dir,  # this is the target directory
             target_size=(150, 150),  # all images will be resized to 150x150
-            batch_size=32,
+            batch_size=64,
             class_mode='binary')
 
         validation_generator = test_datagen.flow_from_directory(
             train_validation_data_dir,
             target_size=(150, 150),
-            batch_size=32,
+            batch_size=64,
             class_mode='binary')
 
         self.model.fit_generator(
@@ -257,15 +266,15 @@ class ConvNet:
             nb_epoch=nb_epoch,
             validation_data=validation_generator,
             nb_val_samples=nb_validation_sambles)
-        self.model.save_weights('first_try.h5')
+        self.model.save_weights('second_try.h5')
         return self
 
     def get_confusion_matrix(self):
         nb_epoch = 50
         nb_validation_sambles = 400
-        nb_train_samples = 4000
+        nb_train_samples = 57208
         train_data_dir = r"Data\Train"
-        train_validation_data_dir = r"Data\Validation"
+        train_validation_data_dir = r"Data\Train"
         train_datagen = ImageDataGenerator(rescale=1./255)
         fp = open('classification.csv','w+',newline='')
         wr = csv.writer(fp,delimiter=';')
@@ -288,7 +297,7 @@ class ConvNet:
         tru_neg = 0
         fal_neg = 0
         #for i in range(train_datagen.N):
-        N = 7854
+        N = 57208
         c = 0
         names = None
         for i in os.walk(r'.\Data\Train'):
@@ -299,27 +308,17 @@ class ConvNet:
                 names = i[2]
             else:
                 names += i[2]
-        print(names)
+       # print(names)
         for i in range(N):
-            print(str(i)+'/'+str(N))
+            if(i%100==0):
+                print(str(i)+'/'+str(N))
             file = train_generator.next()
             y = self.model.predict_classes(file[0],batch_size=1,verbose=0)
-            proba = self.model.predict_proba(file[0],batch_size=1,verbose=0)
+            proba = self.model.predict_proba(file[0]    ,batch_size=1,verbose=0)
             #print(file[1])
             wr.writerow([names[i],int(file[1]),int(y),float(proba[0,0])])
-            if file[1] == 1.0:
-                if y == 1.0:
-                    tru_pos += 1
-                else:
-                    fal_neg += 1
-
-            else:
-                if y == 1.0:
-                    fal_neg += 1
-                else:
-                    tru_neg += 1
-        wr.close()
-        fp.close()
+        #wr.close()
+        #fp.close()
         print('\t\tPos\tNeg')
         print('True\t'+str(tru_pos)+'\t'+str(tru_neg))
         print('False\t'+str(fal_pos)+'\t'+str(fal_neg))
@@ -335,7 +334,19 @@ class ConvNet:
 
         #predictions = self.model.evaluate_generator(train_generator,8)
         #print(self.model.metrics_names)
-        #print(predictions)
+        #print(predictions
+
+    def eval(self,x,y=0):
+        from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+        from scipy.misc import imresize
+        img = load_img(x)
+        img = imresize(img,size=(150,150))
+        x = img_to_array(img).reshape(3,150,150)
+        x = x.reshape((1,)+x.shape)
+        #print(self.model.fit(x,y=np.array([[1.]])))
+
+
+
 
 def false_positive(y_true, y_pred):
     pass
@@ -345,8 +356,8 @@ import random
 
 def prepare(limit=200):
     limit = limit - 1
-    t_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Train"
-    v_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Validation"
+    t_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\conv_net\Data\Train"
+    v_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\conv_net\Data\Validation"
     pos,neg = get_files()
     v_neg = list()
     v_pos = list()
@@ -382,8 +393,8 @@ def prepare(limit=200):
 def undo():
     v_pos,v_neg = get_val_files()
 
-    t_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Train"
-    v_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Validation"
+    t_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\conv_net\Data\Train"
+    v_path = r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\conv_net\Data\Validation"
 
     for pos in v_pos:
         os.rename(v_path+'\\pos\\'+pos,t_path+'\\pos\\'+pos)
@@ -392,18 +403,23 @@ def undo():
     pass
 
 def get_files():
-    neg = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Train\neg")
-    pos = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Train\pos")
+    neg = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\conv_net\Data\Train\neg")
+    pos = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\conv_net\Data\Train\pos")
     return pos, neg
 
 def get_val_files():
-    neg = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Validation\neg")
-    pos = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\src\features\conv_net\Data\Validation\pos")
+    neg = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\conv_net\Data\Validation\neg")
+    pos = os.listdir(r"C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\conv_net\Data\Validation\pos")
     return pos, neg
 
-#c = ConvNet()
+c = ConvNet()
+import time as t
+s = t.time()
+c.eval(x='ex.jpg')
+#print(c.get_function_batch(r'C:\Users\Mats Richter\Documents\GitHub\deep_doc_class\conv_net\Data\Train',100))
 #prepare(200)
-#c.train(list(),list())
+# c.train(nb_validation_sambles=600,nb_train_samples=57208-600)
 #c.get_confusion_matrix()
 #undo()
-
+f = t.time()
+print(f-s)
