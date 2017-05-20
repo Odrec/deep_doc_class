@@ -120,14 +120,26 @@ class ConvNet:
     def reload_weights(self,name):
         self.model.load_weights(name)
 
-    def eval(self,x):
-        img = load_img(x)
-        img = imresize(img,size=(150,150))
-        x = img_to_array(img).reshape(3,150,150)
-        x = x.reshape((1,)+x.shape)
-        return self.model.predict_proba(x,batch_size=64)
+    def eval(self,x,y,batch_size=32,epoch=50,save_path='weights.h5'):
+        self.model.load_weights(save_path)
+        data = list()
+        for i,pic in enumerate(x):
+            img = load_img(pic)
+            img = imresize(img,size=(150,150))
+            xi = img_to_array(img).reshape(3,150,150)
+            data.append(xi)
+        l_d = len(data)
+        data = np.array(data)
+        #data = xi.reshape((l_d,)+data.shape)
+        res = self.model.evaluate(data,y,batch_size=batch_size)
+        self.model.save(save_path)
+        return res
 
     def fit(self,x,y,batch_size=32,epoch=50,save_path='weights.h5'):
+        try:
+            self.model.load_weights(save_path)
+        except:
+            pass
         data = list()
         for i,pic in enumerate(x):
             img = load_img(pic)
@@ -193,11 +205,11 @@ class ConvNet:
                 data += files
         return data,np.array(labels)
 
-    def fit_on_bins(self,trainbins,valbins,num_pages=5,batch=32,epoch=50):
+    def fit_on_bins(self,trainbins,valbin,num_pages=5,batch=32,epoch=50):
         """
 
         :param trainbins:
-        :param valbins:
+        :param valbin:
         :param num_pages:
         :return:
         """
@@ -207,15 +219,41 @@ class ConvNet:
         for i in range(10):
             if i in trainbins:
                 data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(i),bin_name+str(i)+end,num_pages=num_pages)
-                self.fit(data,labels,batch,epoch,bin_name+str(i)+'.h5')
+                self.fit(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
             else:
                 data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(i),bin_name+str(i)+end,num_pages=num_pages)
-                self.eval_result(data,labels,batch,epoch,bin_name+str(i)+'.h5')
+                result = self.eval(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
+                #with open('eval-'+str(valbin)+'.txt','w+') as fp:
+                #    fp.write(str(self.model.metrics_names)+'\n'+str(result))
+                print(result)
         self.reload_weights("second_try.h5")
+        return result
 
     def cross_val(self):
-        pass
-        #test on 10th bin
+        bins = [0,1,2,3,4,5,6,7,8,9]
+        results = list()
+        for i in range(10):
+            valbin = i
+            train = bins[:]
+            train.remove(i)
+            results.append(self.fit_on_bins(trainbins=train,valbin=valbin,num_pages=5,batch=64,epoch=1))
+        with open('results.txt','w+') as f:
+            wrtr = csv.writer(f,delimiter=',', lineterminator='\n')
+            wrtr.writerow(self.model.metrics_names)
+            max = 0.0
+            max_i = 0
+            for i in range(10):
+                try:
+                    if results[i][1] > max:
+                        max = results[i][1]
+                        max_i = i
+                except:
+                    pass
+                wrtr.writerow(results[i])
+
+            print(max,max_i)
+
+
 
 c = ConvNet()
-c.fit_on_bins([0,1,2,3,4,5,6,7,8],0,num_pages=5,batch=32,epoch=10)
+c.cross_val()
