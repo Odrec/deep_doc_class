@@ -43,6 +43,7 @@ The program itself doesn't need to be installed just copied to a local path and 
 Usage: classify_pdf.py [-fp [PATH]|[FILE]] [-conf [FILE]] [-meta [FILE] or [filename=<filename>,folder_name=<folder_name>]] [-mod [FILE]] [-c [INT]] [-b [INT]] [-sp] [-sf] [-pf [FILE]] [-ff [FILE]] [-rf [FILE]] [-preprocess_only] [-features_only] [-t [FLOAT]]\n\n\
 ```
 Arguments:
+
     -fp: parameter used to specify the path to the pdf file(s). This parameter is always required
     
     -conf: parameter used to pass the config file. If a config file is passed then the values specified in it
