@@ -34,24 +34,14 @@ Required files:
 
 -Everything in the src folder
 
--A metadata csv (comma separated) file containing the following columns (please make sure that the values on the csv have no quotes)**
-
->document_id = unique id of the file which should be the name of the pdf without the '.pdf' extension
-
->filename = the name of the file (in case the name of the file on the system is different than the id)
-
->folder_name = the name of the folder on the system where the file is located
-
-**this prerequisite is optional since it is specific for studip platform from Osnabrück University. If you have similar metadata you can test it too but make sure to use the same column names. In case you don't use the metadata a model trained without the metadata is included.
-
 ### Installing
 
 The program itself doesn't need to be installed just copied to a local path and the script run with python 3.5.
 
 ### Usage
-
+```
 Usage: classify_pdf.py [-fp [PATH]|[FILE]] [-conf [FILE]] [-meta [FILE] or [filename=<filename>,folder_name=<folder_name>]] [-mod [FILE]] [-c [INT]] [-b [INT]] [-sp] [-sf] [-pf [FILE]] [-ff [FILE]] [-rf [FILE]] [-preprocess_only] [-features_only] [-t [FLOAT]]\n\n\
-
+```
 Arguments:
     -fp: parameter used to specify the path to the pdf file(s). This parameter is always required
     
@@ -112,6 +102,16 @@ Arguments:
 
 ### Notes
 
-This is a working version which will be enhanced in future versions to improve accuracy.
+-The metadata csv (comma separated) should contain the following columns (please make sure that the values on the csv have no quotes)**
+
+>document_id = unique id of the file which should be the name of the pdf without the '.pdf' extension
+
+>filename = the name of the file (in case the name of the file on the system is different than the id)
+
+>folder_name = the name of the folder on the system where the file is located
+
+**this prerequisite is optional since it is specific for studip platform from Osnabrück University. If you have similar metadata you can test it too but make sure to use the same column names. In case you don't use the metadata a model trained without the metadata is included.
+
+-This is a working version which will be enhanced in future versions to improve accuracy.
 
 Any issues or questions regarding this source code write to rgaritafigue@uos.de 
