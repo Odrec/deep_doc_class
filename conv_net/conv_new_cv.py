@@ -76,15 +76,15 @@ class ConvNet:
         # note: when there is a complete match between your model definition
         # and your weight savefile, you can simply call model.load_weights(filename)
 #        assert os.path.exists(weights_path), 'Model weights not found (see "weights_path" variable in script).'
-        f = h5py.File(weights_path)
-        for k in range(f.attrs['nb_layers']):
-            if k >= len(model.layers):
+        #f = h5py.File(weights_path)
+        #for k in range(f.attrs['nb_layers']):
+        #    if k >= len(model.layers):
                 # we don't look at the last (fully-connected) layers in the savefile
-                break
-            g = f['layer_{}'.format(k)]
-            weights = [g['param_{}'.format(p)] for p in range(g.attrs['nb_params'])]
-            model.layers[k].set_weights(weights)
-        f.close()
+       #         break
+         #   g = f['layer_{}'.format(k)]
+        #    weights = [g['param_{}'.format(p)] for p in range(g.attrs['nb_params'])]
+        #    model.layers[k].set_weights(weights)
+#        f.close()
         print('Model loaded.')
 
         # build a classifier model to put on top of the convolutional model
@@ -121,7 +121,10 @@ class ConvNet:
         self.model.load_weights(name)
 
     def eval(self,x,y,batch_size=32,epoch=50,save_path='weights.h5'):
-        self.model.load_weights(save_path)
+        try:
+            self.model.load_weights(save_path)
+        except:
+            pass
         data = list()
         for i,pic in enumerate(x):
             img = load_img(pic)
@@ -220,12 +223,10 @@ class ConvNet:
             if i in trainbins:
                 data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(i),bin_name+str(i)+end,num_pages=num_pages)
                 self.fit(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
-            else:
-                data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(i),bin_name+str(i)+end,num_pages=num_pages)
-                result = self.eval(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
-                #with open('eval-'+str(valbin)+'.txt','w+') as fp:
-                #    fp.write(str(self.model.metrics_names)+'\n'+str(result))
-                print(result)
+
+        data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(valbin),bin_name+str(valbin)+end,num_pages=num_pages)
+        result = self.eval(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
+        print(result)
         self.reload_weights("second_try.h5")
         return result
 
@@ -236,7 +237,7 @@ class ConvNet:
             valbin = i
             train = bins[:]
             train.remove(i)
-            results.append(self.fit_on_bins(trainbins=train,valbin=valbin,num_pages=5,batch=64,epoch=1))
+            results.append(self.fit_on_bins(trainbins=train,valbin=valbin,num_pages=5,batch=32,epoch=10))
         with open('results.txt','w+') as f:
             wrtr = csv.writer(f,delimiter=',', lineterminator='\n')
             wrtr.writerow(self.model.metrics_names)
@@ -250,7 +251,6 @@ class ConvNet:
                 except:
                     pass
                 wrtr.writerow(results[i])
-
             print(max,max_i)
 
 
