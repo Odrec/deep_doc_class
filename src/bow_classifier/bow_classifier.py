@@ -36,14 +36,16 @@ import pdf_properties
 import pdf_text
 import pdf_metadata
 
+import math
+
 
 class BowClassifier():
     """
     BowClassifier is a container for a trained Bow-Model whose main purpose is to map a input string to a value. The value is the likelyhood for the input string to represent a copyright pdf protected document. The input string can be of different kinds of origins like pdfinfo or some metadata or the content of the pdf. For the classification it uses trained models of a Countvectorizer and a RandomForestClassifier (from the sklearn librabry). The BowClassifier provides means for training, storing and crossvalidating those models as well.
     """
-    def __init__(self, name, vec_model=None, prediction_model=None):
+    def __init__(self, name, vectorizer="vectorizer", classifier="forest"):
         """
-        Initializes a BowClassifier. 
+        Initializes a BowClassifier.
 
         @param name: Identifier for what kind of data is mapped in the Analyzer.
         @dtype name: str
@@ -66,19 +68,32 @@ class BowClassifier():
 
         # if it was not print usage and exit
         if(self.data_origin is None):
-            print("%s is not a valid input argument!!\nUse either one of: %s\nOr one of %s or text!!!"(self.name,
+            print("%s is not a valid input argument!!\nUse either one of: %s\nOr one of %s or text!!!"%(self.name,
                 str(self.csvmeta_options),str(self.pdfinfo_options)))
             sys.exit(1)
 
         # set the other fields
         self.name = name
+        self.vectorizer = vectorizer
+        self.classifier = classifier
+        if(self.vectorizer == "vectorizer"):
+            self.load_vectorizer_model(join(MOD_PATH,'vectorizer',self.name+'.pkl'))
+        elif(self.vectorizer=="custom"):
+            self.load_custom_words(join(MOD_PATH, "words", self.name+".txt"))
+        elif(vectorizer==None):
+            pass
+        else:
+            print("%s is not a valid vectorizer. Please use either vectorizer or custom."%(self.vectorizer,))
 
-        self.vectorizer = None
-        if(not(vec_model is None)):
-            self.vectorizer = load_vectorizer_model(vec_model)
-        self.model = None
-        if(not(prediction_model is None)):
-            self.model = load_prediction_model(prediction_model)
+        if(self.classifier in ["forest","log_reg"]):
+            self.load_prediction_model(join(MOD_PATH,vectorizer + "_" + classifier + +'/'+self.name+'.pkl'))
+        elif(self.classifier=="word_vector"):
+            pass
+        elif(classifier==None):
+            pass
+        else:
+            print("%s is not a valid classifier. Please use either forest, log_reg or word_vector."%(self.classifier,))
+            sys.exit(1)
 
     def load_vectorizer_model(self, modelpath):
         '''
@@ -124,7 +139,6 @@ class BowClassifier():
             print("Error while reading file %s." %(modelpath,))
             sys.exit(1)
         vocab = re.split("\s",words)
-        self.model = vocab.index("")
         vocab = re.sub("\s"," ",words)
         vocab = vocab.split()
         self.vectorizer = CountVectorizer(analyzer='word', encoding="utf-8", vocabulary=vocab)
@@ -184,11 +198,11 @@ class BowClassifier():
             print("Classifier has to be one of %s! It is %s" %
                 (str(["log_reg", "forest","custom_words_val", "custom_words_vec"]), classifier))
             sys.exit(1)
-        
+
         # return prediction
         return f_vals, f_names
 
-    def train(self, doc_ids, classes, classifier="log_reg"):
+    def train(self, doc_ids, classes, vectorizer, classifier):
         '''
         Trains the vectorizer and forest.
 
@@ -214,22 +228,26 @@ class BowClassifier():
                 clean_data[i] = preprocess_pdf_metadata_string(clean_data[i])
         elif(self.data_origin == "pdfinfo"):
             prop_path = join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json")
-            clean_data = pdf_properties.load_single_property(doc_ids,prop_path,self.name)
+            clean_data = pdf_properties.load_single_property(doc_ids,PDF_PATH,prop_path,self.name)
             for i in range(len(clean_data)):
                 clean_data[i] = preprocess_pdf_property_string(clean_data[i])
         else:
-            clean_data = pdf_text.get_pdf_text(doc_ids,PDF_PATH,TXT_PATH)
+            clean_data = pdf_text.get_pdf_texts_json(doc_ids,PDF_PATH,TXT_PATH)
             for i in range(len(clean_data)):
                 clean_data[i] = preprocess_pdf_text_string(clean_data[i])
 
         clf = np.array(classes)
 
-        # # Analyse the distribution of words to the different classification
-        # self.analyze_word_distribution(clean_data,clf)
-        # pause()
-        # return
-
-        if(classifier=="log_reg"):
+        if(vectorizer=="custom"):
+            self.load_custom_words(join(MOD_PATH, "words", self.name+".txt"))
+            train_data_featues = self.vectorizer.transform(clean_data).toarray()
+        elif(vectorizer=="vectorizer"):
+            max_df = 0.9
+            min_df = 0.003
+            if(self.name=="text"):
+                print("yep")
+                max_df = 0.3
+                min_df = 0.02
             self.vectorizer = CountVectorizer(analyzer='word',
                 token_pattern=r'(?u)\b\w\w\w+\b|©',
                 max_features=10000,
@@ -239,75 +257,40 @@ class BowClassifier():
             self.vectorizer = self.vectorizer.fit(clean_data)
             train_data_featues = self.vectorizer.transform(clean_data).toarray()
 
+            if(not(isdir(join(MOD_PATH,'vectorizer')))):
+                os.makedirs(join(MOD_PATH,'vectorizer'))
+
+            vec_file = join(MOD_PATH,'vectorizer/'+self.name+'.pkl')
+            joblib.dump(self.vectorizer, vec_file)
+        else:
+            print("%s is not a valid vectorizer. Please use either vectorizer or custom."(vectorizer,))
+
+        if(classifier=="log_reg"):
             self.model = LogisticRegression(penalty='l2', C=1, fit_intercept=True, intercept_scaling=1000)
             self.model.fit(train_data_featues, clf)
 
-            # Print important words
-            coeffs = self.model.coef_.reshape(len(train_data_featues[0]),)
-            vec_words = self.vectorizer.get_feature_names()
-            lg_coefs_zipped = zip(vec_words,coeffs)
-            sorted_coefs = sorted(lg_coefs_zipped,key=lambda idx: idx[1],reverse=True)
-            for i in range(min(100,len(sorted_coefs))):
-                print("%20s\t%3f"%(sorted_coefs[i][0],sorted_coefs[i][1]))
-            for i in range(len(sorted_coefs)-min(100,len(sorted_coefs)),len(sorted_coefs)):
-                print("%20s\t%3f"%(sorted_coefs[i][0],sorted_coefs[i][1]))
-            sys.exit()
+            if(not(isdir(join(MOD_PATH,vectorizer + "_" + classifier)))):
+                os.makedirs(join(MOD_PATH,vectorizer + "_" + classifier))
+
+            model_file = join(MOD_PATH,vectorizer + "_" + classifier,self.name+'.pkl')
+            joblib.dump(self.model, model_file)
 
         elif(classifier=="forest"):
-            wordspath = join(MOD_PATH, "words", self.name+".txt")
-            self.load_custom_words(wordspath)
-            # self.vectorizer = CountVectorizer(analyzer='word',
-            #     token_pattern=r'(?u)\b\w\w\w+\b|©',
-            #     max_features=10000,
-            #     encoding="utf-8",
-            #     max_df=0.9,
-            #     min_df=0.003)
-            # self.vectorizer = self.vectorizer.fit(clean_data)
-
-            train_data_featues = self.vectorizer.transform(clean_data).toarray()
             self.model = RandomForestClassifier(n_estimators=20)
             self.model = self.model.fit(train_data_featues, clf)
 
-        elif(classifier=="custom_words_val"):
-            wordspath = join(MOD_PATH, "words", self.name+".txt")
-            self.load_custom_words(wordspath)
-            train_data_featues = self.vectorizer.transform(clean_data).toarray()
+            if(not(isdir(join(MOD_PATH,vectorizer + "_" + classifier)))):
+                os.makedirs(join(MOD_PATH,vectorizer + "_" + classifier))
 
-        elif(classifier=="custom_words_tree"):
-            # wordspath = join(MOD_PATH, "words", self.name+".txt")
-            # self.load_custom_words(wordspath)
-            self.vectorizer = CountVectorizer(analyzer='word',
-                token_pattern=r'(?u)\b\w\w\w+\b|©',
-                max_features=10000,
-                encoding="utf-8",
-                max_df=0.9,
-                min_df=0.003)
-            self.vectorizer = self.vectorizer.fit(clean_data)
+            model_file = join(MOD_PATH,vectorizer + "_" + classifier,self.name+'.pkl')
+            joblib.dump(self.model, model_file)
 
-            train_data_featues = self.vectorizer.transform(clean_data).toarray()
-            self.model = RandomForestClassifier(n_estimators=20)
-            self.model = self.model.fit(train_data_featues, clf)
-
-        elif(classifier=="custom_words_vec"):
-            wordspath = join(MOD_PATH, "words", self.name+".txt")
-            self.load_custom_words(wordspath)
-            train_data_featues = self.vectorizer.transform(clean_data).toarray()
+        elif(classifier=="word_vector"):
+            pass
 
         else:
             print("<classifier> has to be one of [log_reg, forest, custom]. It is %s!!!"%(classifier,))
             sys.exit(1)
-
-        if(not(isdir(join(MOD_PATH,'vectorizer')))):
-            os.makedirs(join(MOD_PATH,'vectorizer'))
-
-        vec_file = join(MOD_PATH,'vectorizer/'+self.name+'.pkl')
-        joblib.dump(self.vectorizer, vec_file)
-
-        if(not(isdir(join(MOD_PATH,classifier)))):
-            os.makedirs(join(MOD_PATH,classifier))
-
-        model_file = join(MOD_PATH,classifier+'/'+self.name+'.pkl')
-        joblib.dump(self.model, model_file)
 
     def analyze_word_distribution(self,clean_data,clf):
             pos_vectorizer = CountVectorizer(analyzer='word',
@@ -319,7 +302,7 @@ class BowClassifier():
             pos_words = pos_vectorizer.get_feature_names()
             pos_features = pos_vectorizer.transform([cd for i,cd in enumerate(clean_data) if clf[i]]).toarray()
             pos_features = pos_features>0
-            
+
             neg_vectorizer = CountVectorizer(analyzer='word',
                 encoding="utf-8",
                 max_features=1000,
@@ -392,33 +375,30 @@ class BowClassifier():
 
     def predict_probs(self, doc_ids, classes, classifier="log_reg", t=0.25):
         if(self.data_origin == "csvmeta"):
-            clean_data, clf = load_data_csvmeta(doc_ids,classes,self.name)
+            clean_data = pdf_metadata.load_single_metafield(doc_ids, field=self.name, metadata=join(DATA_PATH,"classified_metadata.csv"))
+            for d in range(len(clean_data)):
+                clean_data[d] = preprocess_pdf_metadata_string(clean_data[d])
         elif(self.data_origin == "pdfinfo"):
-            clean_data, clf = load_data_pdfinfo(doc_ids,classes,self.name)
+            clean_data = pdf_properties.load_single_property(doc_ids, doc_path=PDF_PATH, properties_path=join(PRE_EXTRACTED_DATA_PATH,"pdf_properties.json"), field=self.name)
+            for d in range(len(clean_data)):
+                clean_data[d] = preprocess_pdf_property_string(clean_data[d])
         else:
-            clean_data, clf = load_data_pdfcontent(doc_ids,classes,num_pages=1)
+            clean_data = pdf_text.get_pdf_texts_json(doc_ids,pdf_path=PDF_PATH,txt_dir=TXT_PATH)
+            for d in range(len(clean_data)):
+                clean_data[d] = preprocess_pdf_text_string(clean_data[d])
 
-        clf = np.array(clf)
+        clf = np.array(classes)
 
         train_data_featues = self.vectorizer.transform(clean_data).toarray()
 
         if(classifier=="log_reg"):
             probs = self.model.predict_proba(train_data_featues)[:,1]
+            probs[np.logical_and(probs<(1-t), probs>t)]=0.5
         elif(classifier=="forest"):
             probs = self.model.predict_proba(train_data_featues)[:,1]
             probs[np.logical_and(probs<(1-t), probs>t)]=0.5
-        elif(classifier=="custom_words_val"):
-            probs = np.zeros(len(train_data_featues))+0.5
-            probs += (np.sum(train_data_featues[:,0:self.model],axis=1)>0)*0.5
-            probs -= (np.sum(train_data_featues[:,self.model:],axis=1)>0)*0.5
-        elif(classifier=="custom_words_tree"):
-            probs = self.model.predict_proba(train_data_featues)[:,1]
-            probs[np.logical_and(probs<(1-t), probs>t)]=0.5
-            # pause()
-            # a = np.sum(train_data_featues, axis=1)
-            # probs[a==0]=0.5
-        elif(classifier=="custom_words_vec"):
-            probs = train_data_featues>0
+        # elif(classifier=="word_vector"):
+        #     probs = train_data_featues>0
         else:
             print("<classifier> has to be one of [log_reg, forest, custom]. It is %s!!!"%(classifier,))
             sys.exit(1)
@@ -443,7 +423,7 @@ class BowClassifier():
             train_labels = [labels[t] for t in train]
             test_labels = [labels[t] for t in test]
 
-            classifiers = ["log_reg"]
+            classifiers = ["custom_words_tree"]
             for  i,classifier in enumerate(classifiers):
                 print("%s: iteration %d/%d"%(classifier, iteration, n_folds))
                 # get the model
@@ -478,7 +458,7 @@ class BowClassifier():
         # self.predict_probs(doc_ids, labels, False)
         # print('\n')
 
-    def crossvalidate(self, doc_ids, labels, n_folds=10):
+    def crossvalidate(self, doc_ids, labels, vectorizer, classifier, n_folds=10):
 
         seed=7
         np.random.seed(seed)
@@ -487,9 +467,7 @@ class BowClassifier():
         kfold = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=seed)
         iteration = 0
 
-        thres = [0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4]
-        classifiers = ["custom_words_val", "custom_words_tree", "forest"]
-        classifier = "custom_words_tree"
+        thres = [0.25]
 
         scores = np.zeros((len(thres),n_folds))
         scores2 = np.zeros((len(thres),n_folds))
@@ -506,7 +484,7 @@ class BowClassifier():
             for  i,t in enumerate(thres):
                 # print("%s: iteration %d/%d"%(classifier, iteration+1, n_folds))
                 # get the model
-                self.train(train_data, train_labels, classifier)
+                self.train(train_data, train_labels, vectorizer, classifier)
                 # predict
                 probs, clf = self.predict_probs(test_data, test_labels, classifier, t)
                 preds = probs>=0.5
@@ -519,10 +497,13 @@ class BowClassifier():
                 preds = probs[probs!=0.5]
                 clf2 = clf[probs!=0.5]
                 preds = preds>=0.5
-                score2 = float(np.sum([preds==clf2]))/len(clf2)
+                if(len(clf2)>0):
+                    score2 = float(np.sum([preds==clf2]))/len(clf2)
+                else:
+                    score2=0
                 # print("accuracy2: %.4f" %(score2,))
                 # print("predicted: %d/%d" %(len(clf2),len(clf)))
-                # print('\n')
+                # print('\n')s
                 scores[i,iteration] = score
                 scores2[i,iteration] = score2
                 predicted[i,iteration] = len(clf2)
@@ -559,13 +540,12 @@ def preprocess_pdf_text_string(text):
     return text
 
 def preprocess_pdf_metadata_string(text, lang=['german','english']):
-    if(text is None):
+    if(text is None or (type(text) is float and math.isnan(text))):
         return""
     else:
         words = find_regex(text, regex=r'(?u)\b\w\w\w+\b')
         words = remove_stopwords(words)
         return " ".join(words)
-
 
 def clean_string_regex(txt, regex=';|-|\.|,|\"|[0-9]', sub=""):
     txt = txt.lower()
@@ -615,26 +595,27 @@ if __name__ == "__main__":
     args = sys.argv
     train_file = args[1]
     train = pd.read_csv(train_file, delimiter=',', header=0, quoting=1)
-    train.columns = ["class", "document_id"]
+    train.columns = ["document_id", "class"]
     doc_ids = list(train["document_id"])
     classes = list(train["class"])
 
     features = []
-    # # # features.append(BowClassifier("title"))
-    # # # features.append(BowClassifier("folder_description"))
-    # # # features.append(BowClassifier("description"))
-    # # # features.append(BowClassifier("author"))
-
-    features.append(BowClassifier("filename"))
-    features.append(BowClassifier("folder_name"))
-    features.append(BowClassifier("creator"))
-    features.append(BowClassifier("producer"))
-    # features.append(BowClassifier("text"))
-
-    # for f in features:
-    #     f.train(doc_ids, classes)
-    #     print(f.name[0])
+    # features.append(BowClassifier("filename", None, None))
+    # features.append(BowClassifier("folder_name", None, None))
+    # features.append(BowClassifier("creator", None, None))
+    # features.append(BowClassifier("producer", None, None))
+    features.append(BowClassifier("text", None, None))
 
     for f in features:
-        f.crossvalidate(doc_ids, classes, 10)
-        pause()
+        print(f.name)
+        for vect in ["vectorizer", "custom"]:
+            print(vect)
+            for classifier in ["forest"]:
+                print(classifier)
+                f.crossvalidate(doc_ids, classes, vect, classifier)
+                # print(f.vectorizer.get_feature_names())
+                # print(len(f.vectorizer.get_feature_names()))
+
+    # for f in features:
+    #     f.crossvalidate(doc_ids, classes, 10)
+    #     # pause()

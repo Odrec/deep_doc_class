@@ -34,7 +34,7 @@ def pdfinfo_get_pdf_properties(file_path):
         try:
             val = val.split(None,0)[0]
         except:
-            prop_dict[key] = None 
+            prop_dict[key] = None
             continue
         if(key == "page_size"):
             val = val.split()
@@ -51,7 +51,7 @@ def pdfinfo_get_pdf_properties(file_path):
         elif(key == "encrypted"):
             val = not(val=="no")
         prop_dict[key] = val
-    
+
     if not 'author' in prop_dict:
         prop_dict['author']= None
     if not 'creator' in prop_dict:
@@ -129,9 +129,9 @@ def pre_extract_pdf_properties(doc_dir, doc_ids=None, properties_file=None, num_
     pool = Pool(num_cores)
     res = pool.map(pdfinfo_get_pdf_properties, files)
     res_fix={}
-    for x in res:    
+    for x in res:
         res_fix[splitext(basename(x[1]))[0]] = x[0]
-    
+
     if(not(properties_file) is None):
         with open(out, 'w') as fp:
             json.dump(res_fix, fp)
@@ -144,7 +144,7 @@ def load_single_property(doc_ids, doc_path, properties_path, field):
     pdfinfo_data = None
     properties = []
 
-    if(isfile(path)):
+    if(isfile(properties_path)):
         with open(properties_path,"r") as f:
             pdfinfo_data = json.load(f)
         for doc_id in doc_ids:

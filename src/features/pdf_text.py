@@ -85,6 +85,7 @@ def get_pdf_texts_json(doc_ids,pdf_path,txt_dir=None):
                 with open(json_path, "r") as json_file:
                     data = json.load(json_file)
             else:
+                print("extracting")
                 filepath = join(pdf_path,d_id+".pdf")
                 data = ghostcript_get_pdftext(filepath, txt_dir, first_page=-1, last_page=-1, json_format=True)[0]
         else:
@@ -96,7 +97,6 @@ def get_pdf_texts_json(doc_ids,pdf_path,txt_dir=None):
         if(data is None):
             text_data = "password_protected"
         elif(len(data)==0):
-            print(data)
             text_data = "None"
         else:
             text_data, l_page = load_text_from_json(data)
@@ -161,7 +161,7 @@ def get_pdf_text_features_json(file_path,text_dir=None):
         text_dict["text"] = text
         text_dict["word_count"] = float(len(text))/l_page
         symbols = re.findall(r'DOI|ISBN|©|doi|isbn', text)
-        text_dict["copyright_symbol"] = len(symbols)>0 
+        text_dict["copyright_symbol"] = len(symbols)>0
         return text_dict
 
 def get_pdf_text_features_txt(file_path,text_dir=None):
@@ -182,8 +182,8 @@ def get_pdf_text_features_txt(file_path,text_dir=None):
     text_dict = {}
     text_dict["text"] = text
     symbols = re.findall(r'DOI|ISBN|©|doi|isbn', text)
-    text_dict["copyright_symbol"] = len(symbols)>0 
-    return text_dict 
+    text_dict["copyright_symbol"] = len(symbols)>0
+    return text_dict
 
 def pre_extract_pdf_texts(doc_dir, txt_dir, doc_ids=None, json_format=False, num_cores=1):
     files = []
@@ -245,4 +245,3 @@ if __name__ == "__main__":
     texts = get_pdf_texts_json(doc_ids,doc_dir,txt_dir)
     for t in texts:
         print(len(t))
-

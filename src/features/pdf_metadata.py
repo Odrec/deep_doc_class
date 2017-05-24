@@ -35,7 +35,7 @@ def load_single_metarow(doc_id, fields, metadata):
 
 def load_single_metafield(doc_ids, field, metadata=join(DATA_PATH,"classified_metadata.csv")):
     if(type(metadata)==str and isfile(metadata)):
-        metadata=pd.read_csv(path, delimiter=',', quoting=1, encoding='utf-8')
+        metadata=pd.read_csv(metadata, delimiter=',', quoting=1, encoding='utf-8')
     if(type(doc_ids)==str):
         selected_data = metadata[metadata["document_id"]==doc_ids]
         if(selected_data.empty):
@@ -46,8 +46,15 @@ def load_single_metafield(doc_ids, field, metadata=join(DATA_PATH,"classified_me
     else:
         selected_data = list(metadata[metadata["document_id"].isin(doc_ids)][field])
         if(len(selected_data)<len(doc_ids)):
-            print("No csv metadata for %d doc_ids!!!" %(len(doc_ids)-len(selected_data),))
-            sys.exit(1)
+            selected_data = []
+            metadata = metadata.set_index("document_id")
+            for d_id in doc_ids:
+                if(d_id in metadata.index):
+                    selected_data.append(metadata.loc[d_id][field])
+                else:
+                    selected_data.append("")
+            # print("No csv metadata for %d doc_ids!!!" %(len(doc_ids)-len(selected_data),))
+            # sys.exit(1)
 
     return selected_data
 

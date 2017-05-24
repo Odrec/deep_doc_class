@@ -28,7 +28,7 @@ import cProfile, pstats
 class Feature_Extractor():
 
     # list of all possible bow features
-    bow_features = ["text",
+    bow_features = ["tesxt",
         "author",
         "producer",
         "creator",
@@ -153,7 +153,7 @@ class Feature_Extractor():
             res_row = [val_dict[fn] for fn in self.all_features]
             res_mat.append(res_row)
 
-        return res_mat
+        return res_mat, self.all_features
 
     def generate_error_features(self, features):
         #generates the error features and replaces the nan values
@@ -176,17 +176,15 @@ class Feature_Extractor():
         feature_data = []
         doc_id = t_data[0]
 
-        filepath = join(PDF_PATH,doc_id+'.pdf')
+        filepath = join(self.pdf_dir,doc_id+'.pdf')
 
         if(not(isfile(filepath))):
-            print(print_bcolors(["WARNING","BOLD"],
-                "doc with id: %s was not found!!!" %(doc_id,)))
+            print("doc with id: %s was not found!!!" %(doc_id,))
             return None
 
         values_dict, bow_strings = self.get_num_vals_and_bow_strings(doc_id)
         if(values_dict is None):
-            print(print_bcolors(["WARNING","BOLD"],
-                "doc with id: %s is password protected!!!" %(doc_id,)))
+            print("doc with id: %s is password protected!!!" %(doc_id,))
             return None
 
         for bc in self.bow_classifiers:
@@ -204,10 +202,6 @@ class Feature_Extractor():
                 values_dict[names] = vals
             else:
                 print("Unknown return types of get_function! names=%s, vals=%s"%(str(type(names)),str(type(vals))))
-            #except:
-                # print(print_bcolors(["WARNING","BOLD"],
-                #     "The BowClassifier for %s failed for id %s!" %(bc.name,doc_id)))
-                # values_dict[bc.name] = np.nan
 
         values_dict["document_id"] = doc_id
 
