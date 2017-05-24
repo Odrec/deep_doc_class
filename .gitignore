@@ -4,8 +4,14 @@ __pycache__
 <<<<<<< Updated upstream
 
 *.xml
-files/*.pdf
-metadata.csv
+*.pdf
+*.csv
+*.txt
+*.json
+*.png
+*.html
+*.jpg
+
 
 # Mac specifics
 .DS_Store
