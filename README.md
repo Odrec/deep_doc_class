@@ -31,11 +31,22 @@ pip install -r requirements.txt
 
 Additionally you need these external programas installed:
 
--ghostscript
+-ghostscript:
+```
+sudo apt-get install ghostscript
+```
 
 -tesseract*
+```
+sudo apt-get install tesseract-ocr
+sudo apt-get install tesseract-ocr-all
+```
 
 -pdfinfo
+```
+sudo apt-get install poppler-utils
+
+```
 
 *these external programs are not used in this version of the prototype but they will possibly be used on future updates so this requirement could change.
 
