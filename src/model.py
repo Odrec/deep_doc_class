@@ -9,8 +9,6 @@ Created on Wed May 17 17:09:40 2017
 import keras
 from os.path import isfile
 
-#@params test_data a list of numpy arrays. Each array is an input
-#@params test_labels a numpy array with the target data
 def predict(features, model):
     '''
     Makes the predictions for the provided features
