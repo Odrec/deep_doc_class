@@ -76,15 +76,15 @@ class ConvNet:
         # note: when there is a complete match between your model definition
         # and your weight savefile, you can simply call model.load_weights(filename)
 #        assert os.path.exists(weights_path), 'Model weights not found (see "weights_path" variable in script).'
-        #f = h5py.File(weights_path)
-        #for k in range(f.attrs['nb_layers']):
-        #    if k >= len(model.layers):
+        f = h5py.File(weights_path)
+        for k in range(f.attrs['nb_layers']):
+            if k >= len(model.layers):
                 # we don't look at the last (fully-connected) layers in the savefile
        #         break
-         #   g = f['layer_{}'.format(k)]
-        #    weights = [g['param_{}'.format(p)] for p in range(g.attrs['nb_params'])]
-        #    model.layers[k].set_weights(weights)
-#        f.close()
+            g = f['layer_{}'.format(k)]
+            weights = [g['param_{}'.format(p)] for p in range(g.attrs['nb_params'])]
+            model.layers[k].set_weights(weights)
+        f.close()
         print('Model loaded.')
 
         # build a classifier model to put on top of the convolutional model
