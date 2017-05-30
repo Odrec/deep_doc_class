@@ -115,13 +115,18 @@ class ConvNet:
                       metrics=['accuracy'])
 
         self.model = model
+        #for simplicity reasons later on
+        self.model.save('second_try.h5')
         self.model.load_weights('second_try.h5')
 
     def reload_weights(self,name):
         self.model.load_weights(name)
 
     def eval(self,x,y,batch_size=32,epoch=50,save_path='weights.h5'):
-        self.model.load_weights(save_path)
+        try:
+            self.model.load_weights(save_path)
+        except:
+            pass
         data = list()
         for i,pic in enumerate(x):
             img = load_img(pic)
@@ -145,6 +150,7 @@ class ConvNet:
             img = load_img(pic)
             img = imresize(img,size=(150,150))
             xi = img_to_array(img).reshape(3,150,150)
+            
             data.append(xi)
         l_d = len(data)
         data = np.array(data)
@@ -220,12 +226,10 @@ class ConvNet:
             if i in trainbins:
                 data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(i),bin_name+str(i)+end,num_pages=num_pages)
                 self.fit(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
-            else:
-                data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(i),bin_name+str(i)+end,num_pages=num_pages)
-                result = self.eval(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
-                #with open('eval-'+str(valbin)+'.txt','w+') as fp:
-                #    fp.write(str(self.model.metrics_names)+'\n'+str(result))
-                print(result)
+
+        data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(valbin),bin_name+str(valbin)+end,num_pages=num_pages)
+        result = self.eval(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
+        print(result)
         self.reload_weights("second_try.h5")
         return result
 
@@ -236,7 +240,7 @@ class ConvNet:
             valbin = i
             train = bins[:]
             train.remove(i)
-            results.append(self.fit_on_bins(trainbins=train,valbin=valbin,num_pages=5,batch=64,epoch=1))
+            results.append(self.fit_on_bins(trainbins=train,valbin=valbin,num_pages=5,batch=64,epoch=10))
         with open('results.txt','w+') as f:
             wrtr = csv.writer(f,delimiter=',', lineterminator='\n')
             wrtr.writerow(self.model.metrics_names)
@@ -250,7 +254,6 @@ class ConvNet:
                 except:
                     pass
                 wrtr.writerow(results[i])
-
             print(max,max_i)
 
 
