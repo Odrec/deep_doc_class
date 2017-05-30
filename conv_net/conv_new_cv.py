@@ -76,15 +76,15 @@ class ConvNet:
         # note: when there is a complete match between your model definition
         # and your weight savefile, you can simply call model.load_weights(filename)
 #        assert os.path.exists(weights_path), 'Model weights not found (see "weights_path" variable in script).'
-        f = h5py.File(weights_path)
-        for k in range(f.attrs['nb_layers']):
-            if k >= len(model.layers):
+        #f = h5py.File(weights_path)
+        #for k in range(f.attrs['nb_layers']):
+        #    if k >= len(model.layers):
                 # we don't look at the last (fully-connected) layers in the savefile
-                break
-            g = f['layer_{}'.format(k)]
-            weights = [g['param_{}'.format(p)] for p in range(g.attrs['nb_params'])]
-            model.layers[k].set_weights(weights)
-        f.close()
+       #         break
+         #   g = f['layer_{}'.format(k)]
+        #    weights = [g['param_{}'.format(p)] for p in range(g.attrs['nb_params'])]
+        #    model.layers[k].set_weights(weights)
+#        f.close()
         print('Model loaded.')
 
         # build a classifier model to put on top of the convolutional model
@@ -240,7 +240,11 @@ class ConvNet:
             valbin = i
             train = bins[:]
             train.remove(i)
+<<<<<<< HEAD
             results.append(self.fit_on_bins(trainbins=train,valbin=valbin,num_pages=5,batch=64,epoch=10))
+=======
+            results.append(self.fit_on_bins(trainbins=train,valbin=valbin,num_pages=5,batch=32,epoch=10))
+>>>>>>> 145e7e1a513c9f5ebcab82e995326ff9c9332a37
         with open('results.txt','w+') as f:
             wrtr = csv.writer(f,delimiter=',', lineterminator='\n')
             wrtr.writerow(self.model.metrics_names)
