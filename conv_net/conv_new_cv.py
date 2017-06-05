@@ -1,19 +1,68 @@
-import os
-from fnmatch import fnmatch
-import h5py
 import numpy as np
-from keras.preprocessing.image import ImageDataGenerator
 from keras import optimizers
 from keras.models import Sequential
 from keras.layers import Convolution2D, MaxPooling2D, ZeroPadding2D
 from keras.layers import Activation, Dropout, Flatten, Dense
-from scipy import misc
-from PIL import Image
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
 from scipy.misc import imresize
-import csv
+import os
+import shutil
 import random
-#import filemvr
+import csv
+from fnmatch import fnmatch
+def setup(csv_file,v_path = ".\\Data\\Validation"):
+    t_path = ".\\Data\\Train"
+    #pos,neg = get_files()
+    v_neg = list()
+    v_pos = list()
+
+    p = 0
+    n = 0
+    #limit = 1
+    with open(csv_file,'r') as fp:
+        rdr = csv.reader(fp,delimiter=',')
+        for row in rdr:
+            if row[1] == '1':
+                v_pos.append(row[0])
+            elif row[1] == '0':
+                v_neg.append(row[0])
+    for pos in v_pos:
+        for file in os.listdir(t_path+'\\pos\\'):
+            if fnmatch.fnmatch(file,pos+'*'):
+                type(file)
+                shutil.move(t_path+'\\pos\\'+file,v_path+'\\pos\\'+file)
+    for neg in v_neg:
+        for file in os.listdir(t_path+'\\neg\\'):
+            if fnmatch.fnmatch(file,neg+'*'):
+                shutil.move(t_path+'\\neg\\'+file,v_path+'\\neg\\'+file)
+    return
+
+def undo_setup(csv_file,v_path = ".\\Data\\Validation"):
+    t_path = ".\\Data\\Train"
+    #pos,neg = get_files()
+    v_neg = list()
+    v_pos = list()
+
+    p = 0
+    n = 0
+    #limit = 1
+    with open(csv_file,'r') as fp:
+        rdr = csv.reader(fp,delimiter=',')
+        for row in rdr:
+            if row[1] == '1':
+                v_pos.append(row[0])
+            elif row[1] == '0':
+                v_neg.append(row[0])
+    for pos in v_pos:
+        for file in os.listdir(v_path+'\\pos\\'):
+            if fnmatch.fnmatch(file,pos+'*'):
+                type(file)
+                shutil.move(v_path+'\\pos\\'+file,t_path+'\\pos\\'+file)
+    for neg in v_neg:
+        for file in os.listdir(v_path+'\\neg\\'):
+            if fnmatch.fnmatch(file,neg+'*'):
+                shutil.move(v_path+'\\neg\\'+file,t_path+'\\neg\\'+file)
+    return
 
 class ConvNet:
 
@@ -69,7 +118,7 @@ class ConvNet:
         model.add(ZeroPadding2D((1, 1)))
         model.add(Convolution2D(512, 3, 3, activation='relu', name='conv5_3'))
         model.add(MaxPooling2D((2, 2), strides=(2, 2)))
-
+        """
 
         # load the weights of the VGG16 networks
         # (trained on ImageNet, won the ILSVRC competition in 2014)
@@ -86,6 +135,7 @@ class ConvNet:
             model.layers[k].set_weights(weights)
         f.close()
         print('Model loaded.')
+        """
 
         # build a classifier model to put on top of the convolutional model
         top_model = Sequential()
@@ -140,23 +190,87 @@ class ConvNet:
         self.model.save(save_path)
         return res
 
+    def eval_generator(self,path,batch_size=32,epoch=50,save_path='weights.h5'):
+        eval_datagen = ImageDataGenerator(
+            rescale=1./255,
+            shear_range=0.2,
+            zoom_range=0.2,
+            horizontal_flip=True)
+
+        eval_gen = eval_datagen.flow_from_directory(
+            path,  # this is the target directory
+            target_size=(150, 150),  # all images will be resized to 150x150
+            batch_size=64,
+            shuffle=True,
+            class_mode='binary')
+        self.model.evaluate_generator(eval_gen)
+        self.model.save(save_path)
+
     def fit(self,x,y,batch_size=32,epoch=50,save_path='weights.h5'):
+
         try:
             self.model.load_weights(save_path)
         except:
             pass
+
         data = list()
         for i,pic in enumerate(x):
             img = load_img(pic)
+            #img.show()
             img = imresize(img,size=(150,150))
-            xi = img_to_array(img).reshape(3,150,150)
-            
+            #img = img.transpose()
+            xi = img_to_array(img)#.reshape(3,150,150)
+
             data.append(xi)
         l_d = len(data)
         data = np.array(data)
+        y = np.array(y)
         #data = xi.reshape((l_d,)+data.shape)
-        self.model.fit(data,y,batch_size=batch_size,nb_epoch=epoch)
+        self.model.fit(data,y,batch_size=batch_size,nb_epoch=epoch,shuffle=True)
         self.model.save(save_path)
+
+
+    def fit_generator(self,path,batch_size=64,epoch=50,save_path='weights.h5'):
+        train_datagen = ImageDataGenerator(
+            rescale=1./255,
+            shear_range=0.2,
+            zoom_range=0.2,
+            horizontal_flip=True)
+
+        train_generator = train_datagen.flow_from_directory(
+            path,  # this is the target directory
+            target_size=(150, 150),  # all images will be resized to 150x150
+            batch_size=64,
+            shuffle=True,
+            class_mode='binary')
+        self.model.fit_generator(train_generator,nb_epoch=epoch,batch_size=batch_size)
+        self.model.save(save_path)
+
+    def fit_and_eval_with_generator(self,path,eval_path,batch_size=64,epoch=50,save_path='weights.h5'):
+        train_datagen = ImageDataGenerator(
+            rescale=1./255,
+            shear_range=0.2,
+            zoom_range=0.2,
+            horizontal_flip=True)
+
+        train_generator = train_datagen.flow_from_directory(
+            path,  # this is the target directory
+            target_size=(150, 150),  # all images will be resized to 150x150
+            batch_size=64,
+            shuffle=True,
+            class_mode='binary')
+
+        test_generator = train_datagen.flow_from_directory(
+            eval_path,  # this is the target directory
+            target_size=(150, 150),  # all images will be resized to 150x150
+            batch_size=64,
+            shuffle=True,
+            class_mode='binary')
+
+
+        self.model.fit_generator(train_generator,nb_epoch=epoch,validation_data=test_generator,samples_per_epoch=2000,nb_val_samples=2000)
+        self.model.save(save_path)
+
 
     def find_files(self,name,path,label,num_pages=5):
         """
@@ -209,7 +323,7 @@ class ConvNet:
                 for i in range(n_pages):
                     labels.append(int(line[1]))
                 data += files
-        return data,np.array(labels)
+        return data,labels
 
     def fit_on_bins(self,trainbins,valbin,num_pages=5,batch=32,epoch=50):
         """
@@ -222,11 +336,16 @@ class ConvNet:
         bin_name = "cvset-"
         end = '.csv'
         #train on 9 bins
+        X = list()
+        y = list()
         for i in range(10):
             if i in trainbins:
                 data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(i),bin_name+str(i)+end,num_pages=num_pages)
-                self.fit(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
-
+                X += data
+                y += labels
+            print("Extracting bin: "+str(i))
+        self.fit(X,y,batch,epoch,"eval-"+str(valbin)+'.h5')
+                #self.fit_and_eval_with_generator(".\\Data\\"+"cvset"+str(i),".\\Data\\"+"cvset"+str(valbin),64,1,"eval-"+str(valbin)+'.h5')
         data,labels = self.csv_to_filenames(".\\Data\\"+"cvset"+str(valbin),bin_name+str(valbin)+end,num_pages=num_pages)
         result = self.eval(data,labels,batch,epoch,"eval-"+str(valbin)+'.h5')
         print(result)
@@ -234,6 +353,14 @@ class ConvNet:
         return result
 
     def cross_val(self):
+        print("Starting setup...")
+        for i in range(10):
+            name = 'cvset'+str(i)
+            #os.mkdir('.\\Data\\'+name)
+            #os.mkdir('.\\Data\\'+name+'\\pos')
+            #os.mkdir('.\\Data\\'+name+'\\neg')
+            setup('cvset-'+str(i)+'.csv','.\\Data\\'+name)
+            print("Bin",i,"done")
         bins = [0,1,2,3,4,5,6,7,8,9]
         results = list()
         for i in range(10):
@@ -255,6 +382,14 @@ class ConvNet:
                     pass
                 wrtr.writerow(results[i])
             print(max,max_i)
+
+    def create_k_models_with_validation_split(self,num_models=1,prefix='model',epochs=50,batch_size=64):
+        for i in range(10):
+            name = 'cvset'+str(i)
+            #os.mkdir('.\\Data\\'+name)
+            #os.mkdir('.\\Data\\'+name+'\\pos')
+            #os.mkdir('.\\Data\\'+name+'\\neg')
+            undo_setup('cvset-'+str(i)+'.csv','.\\Data\\'+name)
 
 
 

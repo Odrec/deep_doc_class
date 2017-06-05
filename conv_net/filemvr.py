@@ -30,6 +30,33 @@ def setup(csv_file,v_path = ".\\Data\\Validation"):
                 shutil.move(t_path+'\\neg\\'+file,v_path+'\\neg\\'+file)
     return
 
+def undo_setup(csv_file,v_path = ".\\Data\\Validation"):
+    t_path = ".\\Data\\Train"
+    #pos,neg = get_files()
+    v_neg = list()
+    v_pos = list()
+
+    p = 0
+    n = 0
+    #limit = 1
+    with open(csv_file,'r') as fp:
+        rdr = csv.reader(fp,delimiter=',')
+        for row in rdr:
+            if row[1] == '1':
+                v_pos.append(row[0])
+            elif row[1] == '0':
+                v_neg.append(row[0])
+    for pos in v_pos:
+        for file in os.listdir(v_path+'\\pos\\'):
+            if fnmatch.fnmatch(file,pos+'*'):
+                type(file)
+                shutil.move(v_path+'\\pos\\'+file,t_path+'\\pos\\'+file)
+    for neg in v_neg:
+        for file in os.listdir(v_path+'\\neg\\'):
+            if fnmatch.fnmatch(file,neg+'*'):
+                shutil.move(v_path+'\\neg\\'+file,t_path+'\\neg\\'+file)
+    return
+
 def undo():
     v_pos,v_neg = get_val_files()
 
@@ -111,10 +138,11 @@ def seperate(num=500):
 
 for i in range(10):
     name = 'cvset'+str(i)
-    os.mkdir('.\\Data\\'+name)
-    os.mkdir('.\\Data\\'+name+'\\pos')
-    os.mkdir('.\\Data\\'+name+'\\neg')
-    setup('cvset-'+str(i)+'.csv','.\\Data\\'+name)
+    #os.mkdir('.\\Data\\'+name)
+    #os.mkdir('.\\Data\\'+name+'\\pos')
+    #os.mkdir('.\\Data\\'+name+'\\neg')
+    undo_setup('cvset-'+str(i)+'.csv','.\\Data\\'+name)
+    print("Bin",i,"done")
 
 
 #undo()
