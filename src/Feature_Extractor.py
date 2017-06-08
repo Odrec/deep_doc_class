@@ -28,15 +28,14 @@ import cProfile, pstats
 class Feature_Extractor():
 
     # list of all possible bow features
-    bow_features = ["tesxt",
-        "author",
+    bow_features = ["text",
+        "first_100_words",
+        "last_100_words",
+        "bold_words",
         "producer",
         "creator",
-        "title",
         "filename",
-        "folder_name",
-        "folder_description",
-        "description"]
+        "folder_name"]
 
     # list of all possible numeric features
     numeric_features = ['pages',
@@ -130,7 +129,7 @@ class Feature_Extractor():
             # otherwise just get the feature values
             else:
                 res = pool.map(self.get_data_vector, doc_input)
-            
+
             # write the dictionary into a csv file
             if(not(feature_file)==None):
                 # first field is the document id
@@ -159,15 +158,15 @@ class Feature_Extractor():
         #generates the error features and replaces the nan values
         #
         #@result:   list of features with the error features included
-        
+
         error_feature = [0.0] * len(features)
-        
+
         for i, x in enumerate(features):
             for j, e in enumerate(x):
                 if e == 'nan':
                     error_feature[i] = 1.0
-                    x[j] = 1.0                
-        
+                    x[j] = 1.0
+
         features = [x + [error_feature[i]] for i, x in enumerate(features)]
         return features
 
@@ -220,7 +219,7 @@ class Feature_Extractor():
         all_features_dict = {}
 
         file_path = join(self.pdf_dir, doc_id+".pdf")
-        
+
         # if some content features are requested
         if(len(self.pdf_text_features)>0):
 
@@ -279,7 +278,7 @@ class Feature_Extractor():
                 values_dict[key] = int(val)
 
         return values_dict, bow_strings
-    
+
     # train bow classifiers
 
     def train_bow_classifiers(self,filenames,classes):

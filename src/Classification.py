@@ -6,7 +6,8 @@
 import os, sys
 from os.path import join, realpath, dirname, isdir, basename
 # import for pathes for important folders
-from doc_globals import*
+# from doc_globals import*
+from time import time
 
 import csv, json
 import numpy as np
@@ -92,11 +93,13 @@ def init_keras_NN(num_input_nodes, num_hidden_nodes=100, num_hidden_layers=1):
 def evaluate_model2(model, data, labels):
     train_scores = model.evaluate(data, labels, verbose=0)
     print("test_acc: %.3f"% (train_scores[1]*100))
+    return train_scores[1]*100
 
 def evaluate_model(m_name, data,labels):
     model = keras.models.load_model(m_name)
     train_scores = model.evaluate(data, labels, verbose=0)
     print("test_acc: %.3f"% (train_scores[1]*100))
+    return train_scores[1]*100
 
 def train_model(model, data, lables, num_epochs, m_name):
     model.fit(data, lables, epochs=num_epochs, verbose=0)
@@ -1356,34 +1359,78 @@ def print_pca_eigenvectors(eig_tuples, column_names, filename):
             f.write(vec_string + "\n\n")
 
 if __name__ == "__main__":
-    filepath = join(FEATURE_VALS_PATH, "features.json")
-    class_file = join(DATA_PATH, "training_data.csv")
+    args = sys.argv
 
-    data = []
-    classes = []
+    feature_json = args[1]
+    train_csv = args[2]
+    test_csv = args[3]
 
-    with open(class_file, "r")  as c, open(filepath, "r")  as f:
-        f_dict = json.load(f)
-        header = ['file_size', 'creator', 'avg_ib_size', 'avg_tb_size', 'error', 'pages', 'ratio_words_tb', 'ratio_tb_ib', 'ratio_tb_pages', 'producer', 'text', 'ratio_ib_pages', 'page_rot']
-        # header = ['file_size', 'creator', 'avg_ib_size', 'avg_tb_size', 'error', 'pages', 'ratio_words_tb', 'folder_name', 'ratio_tb_ib', 'ratio_tb_pages', 'producer', 'text', 'ratio_ib_pages', 'filename', 'page_rot']
-        class_f = csv.reader(c,delimiter=",")
-        for row in class_f:
+    # filepath = join(FEATURE_VALS_PATH, "features.json")
+    # class_file = join(DATA_PATH, "training_data.csv")
+
+    train_data = []
+    test_data = []
+    train_labels = []
+    test_labels = []
+
+    with open(train_csv, "r")  as train_file, open(test_csv, "r")  as test_file, open(feature_json, "r")  as feature_file:
+        f_dict = json.load(feature_file)
+        # header = ['file_size', 'creator', 'avg_ib_size', 'avg_tb_size', 'error', 'pages', 'ratio_words_tb', 'ratio_tb_ib', 'ratio_tb_pages', 'producer', 'text', 'ratio_ib_pages', 'page_rot']
+        header = ['file_size', 'creator', 'avg_ib_size', 'avg_tb_size', 'error', 'pages', 'ratio_words_tb', 'folder_name', 'ratio_tb_ib', 'ratio_tb_pages', 'producer', 'text', 'ratio_ib_pages', 'filename', 'page_rot']
+
+        new_csv_train_data = [["document_id","class"]+header]
+        train = csv.reader(train_file,delimiter=",")
+        for row in train:
             try:
                 val_dict = f_dict[row[0]]
             except KeyError:
-                print(row[0])
+                # print(row[0])
                 continue
 
             all_val = []
             for h in header:
                 all_val.append(val_dict[h])
-            data.append(all_val)
-            classes.append(int(row[1]))
+            train_data.append(all_val)
+            train_labels.append(int(row[1]))
+            new_csv_train_data.append([row[0],row[1]]+all_val)
 
-    data = np.array(data, dtype=np.float)
-    print(np.shape(data))
-    classes = np.array(classes)
-    print(np.shape(classes))
+        new_csv_test_data = [["document_id","class"]+header]
+        test = csv.reader(test_file,delimiter=",")
+        for row in test:
+            try:
+                val_dict = f_dict[row[0]]
+            except KeyError:
+                # print(row[0])
+                continue
+
+            all_val = []
+            for h in header:
+                all_val.append(val_dict[h])
+            test_data.append(all_val)
+            test_labels.append(int(row[1]))
+            new_csv_test_data.append([row[0],row[1]]+all_val)
+
+    with open("train_2017_06_01.csv","w") as ntf:
+        writer = csv.writer(ntf)
+        for row in new_csv_train_data:
+            writer.writerow(row)
+
+    with open("test_2017_06_01.csv","w") as ntf:
+        writer = csv.writer(ntf)
+        for row in new_csv_test_data:
+            writer.writerow(row)
+
+    sys.exit()
+
+    train_data = np.array(train_data, dtype=np.float)
+    test_data = np.array(test_data, dtype=np.float)
+
+    train_data = replace_nan_mean(train_data)
+    test_data = replace_nan_mean(test_data)
+    # print(np.shape(data))
+    train_labels = np.array(train_labels)
+    test_labels = np.array(test_labels)
+    # print(np.shape(classes))
     # args = sys.argv
     # len_args = len(args)
     #
@@ -1425,19 +1472,20 @@ if __name__ == "__main__":
     #
     # Initialize parameters
     hidden_layers = 1
-    hidden_dims = 500
-    num_epochs = 1000
+    hidden_dims = 40
+    num_epochs = 500
     conf_thresh = 0.5
 
-    m_name = "master_without_meta.model"
-    data = replace_nan_mean(data)
-    lg = LogisticRegression(penalty='l2', C=1, fit_intercept=True, intercept_scaling=1000)
-    evaluate_logreg(lg, data[0:int(0.8*len(data)),:], classes[0:int(0.8*len(data))], data[int(0.8*len(data)):,:], classes[int(0.8*len(data)):])
-    model = init_keras_NN(num_input_nodes=len(data[0]), num_hidden_nodes=hidden_dims, num_hidden_layers=hidden_layers)
-    train_model(model, data, classes, num_epochs, m_name)
-    pause()
-    evaluate_model2(model, data, classes)
-    evaluate_model(m_name, data, classes)
+    m_name = "trial.model"
+    # lg = LogisticRegression(penalty='l2', C=1, fit_intercept=True, intercept_scaling=1000)
+    # evaluate_logreg(lg, data[0:int(0.8*len(data)),:], classes[0:int(0.8*len(data))], data[int(0.8*len(data)):,:], classes[int(0.8*len(data)):])
+
+    model = init_keras_NN(num_input_nodes=len(train_data[0]), num_hidden_nodes=hidden_dims, num_hidden_layers=hidden_layers)
+    train_model(model, train_data, train_labels, num_epochs, m_name)
+    # pause()
+    acc_model = evaluate_model2(model, test_data, test_labels)
+    acc_loaded_model = evaluate_model(m_name, test_data, test_labels)
+    print(acc_model==acc_loaded_model)
 
     # probs = evaluate_NN(model, data[0:int(0.8*len(data)),:], classes[0:int(0.8*len(data))], data[int(0.8*len(data)):,:], classes[int(0.8*len(data)):], num_epochs)
 

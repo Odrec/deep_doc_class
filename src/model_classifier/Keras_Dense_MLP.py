@@ -11,6 +11,7 @@ class Keras_Dense_MLP(Classifier):
 
     compile_keys = ["optimizer", "loss", "metrics", "loss_weights", "sample_weight_mode"]
     layer_keys = ["activation", "use_bias", "kernel_initializer", "bias_initializer", "kernel_regularizer", "bias_regularizer", "activity_regularizer", "kernel_constraint", "bias_constraint"]
+    train_keys = ["batch_size", "epochs", "verbose", "callbacks", "validation_split", "validation_data", "shuffle", "class_weight", "sample_weight", "initial_epoch"]
 
     def __init__(self, neuron_layers, layer_params, compile_params, **train_params):
         '''
@@ -78,10 +79,12 @@ class Keras_Dense_MLP(Classifier):
         '''
         if(param_key=="neuron_layers"):
             return self.neuron_layers
-        elif(param_key in layer_params):
+        elif(param_key in self.layer_keys):
             return self.layer_params[param_key]
-        elif(param_key in compile_params):
+        elif(param_key in self.compile_keys):
             return self.compile_params[param_key]
+        elif(param_key in self.train_keys):
+            return self.train_params[param_key]
         else:
             print("This key does not exist!")
             return None
@@ -98,10 +101,12 @@ class Keras_Dense_MLP(Classifier):
         '''
         if(param_key=="neuron_layers"):
             self.neuron_layers = param_val
-        elif(param_key in KerasDenseMLP.layer_keys):
+        elif(param_key in self.layer_keys):
             self.layer_params[param_key] = param_val
-        elif(param_key in KerasDenseMLP.compile_keys):
+        elif(param_key in self.compile_keys):
             self.compile_params[param_key] = param_val
+        elif(param_key in self.train_keys):
+            self.train_params[param_key] = param_val
         else:
             print("This is not a valid key for this KerasDenseMLP!")
             return None
@@ -113,7 +118,7 @@ class Keras_Dense_MLP(Classifier):
         @param  abs_filepath: The absolute filepath to the file where the model should be stored
         @type   abs_filepath: str
         '''
-        model.save(abs_filepath)
+        self.model.save(abs_filepath)
 
     def load_model(self, abs_filepath):
         '''

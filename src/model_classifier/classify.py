@@ -1,6 +1,7 @@
 # classify_crp.py
 import os, sys
 from os.path import join, realpath, dirname, isdir, basename
+import itertools
 # import for pathes for important folders
 
 import csv
@@ -12,14 +13,64 @@ from matplotlib.font_manager import FontProperties
 
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix
+from sklearn.model_selection import train_test_split
 
 # visualization help
 from prettytable import PrettyTable
 import colorsys
 
 from Classifier import Classifier
-from Logistic_Regression import Logistic_Regression
-from Keras_Dense_MLP import Keras_Dense_MLP
+
+def compare_parameter_combinations_bin(classifier, comb_params, train_data, train_labels, test_data, test_labels, results_file, save_model=False):
+    p_vals = []
+    p_names = []
+    for k,vals in comb_params.items():
+        p_vals.append(vals)
+        p_names.append(k)
+
+    combinations = list(itertools.product(*p_vals))
+    comb_names = []
+
+    header = ["model", "eval_set", "accuracy", "precision", "recall", "f1", "tn", "fp", "fn", "tp"]
+    results_table = PrettyTable(header)
+
+    for i in range(len(combinations)):
+        c_name = ""
+        for j,n in enumerate(p_names):
+            c_name+=(n+"-"+str(combinations[i][j])+"_")
+            classifier.set_attribute(n,combinations[i][j])
+        c_name = c_name[:-1]
+        classifier.re_initialize()
+        classifier.train(train_data, train_labels)
+
+        for eval_set in [(train_data,train_labels,"train"), (test_data,test_labels,"test")]:
+
+            preds = classifier.predict_binary(eval_set[0])
+            results_row = [c_name,eval_set[2]]
+            # add results
+            results_row.append(accuracy_score(eval_set[1], preds))
+            results_row.append(precision_score(eval_set[1], preds, average="binary"))
+            results_row.append(recall_score(eval_set[1], preds, average="binary"))
+            results_row.append(f1_score(eval_set[1], preds, average="binary"))
+            results_row.extend(confusion_matrix(eval_set[1], preds).ravel())
+            # format results
+            results_row[2:6] = ["%.3f"%(val,) for val in results_row[2:6]]
+            results_row[6:] = ["%d   %.3f"%(val,val/len(eval_set[1])) for val in results_row[6:]]
+            results_table.add_row(results_row)
+        results_table.add_row(['']*len(header))
+
+        if(save_model):
+            if(not(isdir("models"))):
+                os.makedirs("models")
+            classifier.save_model(join("models",c_name))
+
+    # write results to file
+    with open(results_file, 'w') as f:
+        f.write(("Parameter Combination Results:").center(80) + "\n\n")
+        f.write(("parameter order:").center(80) + "\n")
+        for n in p_names:
+            f.write((n).center(80) + "\n")
+        f.write(results_table.get_string())
 
 def crossvalidate_proba_bin(model, data, labels, kfolds=10, shuffle=True, seed=None):
 
@@ -61,7 +112,7 @@ def crossvalidate_proba_bin(model, data, labels, kfolds=10, shuffle=True, seed=N
 
     return train_results, test_results
 
-def analyse_crossvalidation_results(results, labels, model_name, thres=[0.25,0.5,0.75], boxplots=True):
+def analyse_crossvalidation_results_bin(results, labels, model_name, thres=[0.25,0.5,0.75], boxplots=True):
 
     # those are the names of the overall scores comouted during each run
     score_names = ["accuracy", "precision", "recall", "f1", "tn", "fp", "fn", "tp"]
@@ -112,12 +163,15 @@ def analyse_crossvalidation_errors(results, model_name, thres=0.5):
 def generate_boxplots_mia_data(data, header, labels):
     pass
 
-def load_data(data_file, rep_nan=True, norm=True):
+def load_data(data_file, error_feature=False, rep_nan=True, norm=True):
     '''
     Loads data from a csv file. The second last row is expected to contain the classification category and the last row the filename/document_id.
 
     @param  data_file: The path to the data
     @type   data_file: str
+
+    @param  error_feature: Flag specifying if the error feature is to be added
+    @type   error_feature: boolean
 
     @param  rep_nan: Flag specifying if nans are to be replaced
     @type   rep_nan: boolean
@@ -131,8 +185,8 @@ def load_data(data_file, rep_nan=True, norm=True):
     @return np_classes: The classifications for the feature vectors
     @rtype  np_classes: np.array(int)
 
-    @return record_ids: The record_ids for the vectors
-    @rtype  record_ids: list(str)
+    @return filenames: The filenames/document_ids for the vectors
+    @rtype  filenames: list(str)
 
     @return column_names: The column for the data matrix only
     @rtype  column_names: list(str)
@@ -147,10 +201,15 @@ def load_data(data_file, rep_nan=True, norm=True):
     # get classification
     np_classes = np.array(features[column_names[1]].tolist())
     # get the document_ids
-    record_ids = features[column_names[0]].tolist()
+    filenames = features[column_names[0]].tolist()
     # cut away doc_id and classification column name
     column_names = column_names[2:]
 
+    # add an error column that adds contains a one if there is a np.nan in the a data row or a zero otherwise
+    if(error_feature):
+        np_features = add_error_feature(np_features)
+        # add error features column name
+        column_names.append("error")
     # replace nans by the columns mean
     if(rep_nan):
         np_features = replace_nan_mean(np_features)
@@ -159,7 +218,7 @@ def load_data(data_file, rep_nan=True, norm=True):
         np_features = norm_features(np_features)
 
 
-    return np_features, np_classes, record_ids, column_names
+    return np_features, np_classes, filenames, column_names
 
 def replace_nan_mean(features):
     '''
@@ -416,19 +475,39 @@ def print_pca_eigenvectors(eig_tuples, column_names, filename):
             f.write(vec_string + "\n\n")
 
 if __name__ == "__main__":
-    feature_file = "../../data/feature_values/train_10_1_17.csv"
-    features, classes, doc_ids, column_names = load_data(feature_file)
+    args = sys.argv
 
-    kwargs = {"penalty":'l2', "C":1, "fit_intercept":True, "intercept_scaling":1000}
-    lr = Logistic_Regression(**kwargs)
+    train_csv = args[1]
+    test_csv = args[2]
 
+    train_data, train_labels, train_docs, column_names = load_data(train_csv)
+    test_data, test_labels, test_docs, column_names = load_data(test_csv)
+
+    # # Create a Logistic Regression Instance
+    # from Logistic_Regression import Logistic_Regression
+    # kwargs = {"penalty":'l2', "C":1, "fit_intercept":True, "intercept_scaling":1000}
+    # lr = Logistic_Regression(**kwargs)
+
+    # # Create a Random Forest Instace
+    # from Random_Forest import Random_Forest
+    # kwargs = {"n_estimators":10, "criterion":'gini', "max_depth":10, "min_samples_split":2, "min_samples_leaf":1, "min_weight_fraction_leaf":0.0, "max_features":'auto', "max_leaf_nodes":None, "min_impurity_split":1e-07, "bootstrap":True, "oob_score":False, "n_jobs":1, "random_state":None, "verbose":0, "warm_start":False, "class_weight":None}
+    # rf = Random_Forest(**kwargs)
+
+    # Create a MLP Instance
+    from Keras_Dense_MLP import Keras_Dense_MLP
     layer_params = {"kernel_initializer":"glorot_uniform", "activation":"sigmoid"}
     compile_params = {"loss":"mean_squared_error", "optimizer":"sgd", "metrics":["accuracy"]}
-    train_params = {"epochs":1000, "batch_size":200, "verbose":0}
-    mlp = Keras_Dense_MLP(neuron_layers=[len(features[0]),500,1], layer_params=layer_params, compile_params=compile_params, **train_params)
+    train_params = {"epochs":100000, "batch_size":64, "verbose":0}
+    mlp = Keras_Dense_MLP(neuron_layers=[len(train_data[0]),500,1], layer_params=layer_params, compile_params=compile_params, **train_params)
 
-    train_res,test_res = crossvalidate_proba_bin(mlp,data=features, labels=classes, kfolds=10, shuffle=True, seed=7)
+    # # Do Crossvalidation
+    # train_res,test_res = crossvalidate_proba_bin(rf,data=features, labels=classes, kfolds=10, shuffle=True, seed=7)
+    #
+    # analyse_crossvalidation_results(results=test_res, labels=classes, model_name="RF_test_", thres=[0.5], boxplots=False)
+    #
+    # analyse_crossvalidation_results(results=train_res, labels=classes, model_name="RF_train_", thres=[0.5], boxplots=False)
 
-    analyse_crossvalidation_results(results=test_res, labels=classes, model_name="LR_new_test", thres=[0.25,0.5,0.75], boxplots=False)
-
-    analyse_crossvalidation_results(results=train_res, labels=classes, model_name="LR_new_train", thres=[0.25,0.5,0.75], boxplots=False)
+    # Compare parameter combinations
+    results_file = "MLP_evaluation.txt"
+    comb_params = {"neuron_layers":[[len(train_data[0]),64,32,1],[len(train_data[0]),64,1],[len(train_data[0]),64,32,16,1]]}
+    compare_parameter_combinations_bin(mlp, comb_params, train_data, train_labels, test_data, test_labels, results_file, True)
