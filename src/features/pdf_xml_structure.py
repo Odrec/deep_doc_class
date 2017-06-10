@@ -4,7 +4,7 @@
 
 # TODO: heights need to be completely evaluated first otherwise divergences from the real hight at the beginning make some good heights worse
 
-import sys, os
+import sys, os, json, shutil
 from collections import Counter
 from os.path import join, realpath, dirname, isdir, basename, isfile, splitext
 import warnings
@@ -20,7 +20,10 @@ from PIL import Image as PI
 import develop.pdf_images
 from doc_globals import*
 import numpy as np
+np.seterr(all='raise')
 from scipy import stats
+
+from multiprocessing import Pool
 
 import pyocr
 import pyocr.builders
@@ -78,6 +81,51 @@ def pause():
     """
     input("Press Enter to continue...")
     return
+
+###### Image Stuff #######
+def get_text_from_pil_img(pil_image, lang="deu"):
+    if(not(lang in ["eng", "deu", "fra"])):
+        print("Not the right language!!!\n Languages are: deu, eng, fra")
+
+    tool = pyocr.get_available_tools()[0]
+
+    txt = tool.image_to_string(
+        pil_image,
+        lang=lang)
+
+    return txt
+
+def img_stuff(img_list):
+    entropy = []
+    color = False
+    for img_path in img_list:
+        if(not(isfile(img_path))):
+            continue
+        pil_image = PI.open(img_path)
+        # with PI.open(io.BytesIO(page)) as pil_image:
+        gs_image = pil_image.convert("L")
+        hist = np.array(gs_image.histogram())
+        hist = np.divide(hist,np.sum(hist))
+        hist[hist==0] = 1
+        e = -np.sum(np.multiply(hist, np.log2(hist)))
+        entropy.append(e)
+
+        # if(not(color)):
+        #     col_image = pil_image.convert('RGB')
+        #     np_image = np.array(col_image)
+        #     if((np_image[:,:,0]==np_image[:,:,1])==(np_image[:,:,1]==np_image[:,:,2])):
+        #         color = True
+
+        os.remove(img_path)
+
+    if(len(entropy)==0):
+        print("Zero images loaded. Either pdf is empty or Ghostscript didn't create images correctly.")
+        mean_entropy = np.nan
+    else:
+        mean_entropy = np.mean(entropy)
+    return mean_entropy, color
+
+
 
 ###### Parsing Classes #######
 class Text_Box(object):
@@ -164,6 +212,7 @@ class Page(object):
         self.sorted_tops = None
         self.h_dists = None
         self.v_dists = None
+        self.norm_dist = None
 
         self.tbox_blockstyle_left = {}
         self.tbox_blockstyle_top = []
@@ -172,7 +221,6 @@ class Page(object):
 
     def structure_content_elements(self, doc):
         page_line_index = 0
-
         for elem in self.xml_page:
             if(elem.tag=="fontspec"):
                 doc.fontspecs["count"]+=1
@@ -238,7 +286,7 @@ class Page(object):
 
                     best_height = max(h_dict.items(), key=lambda h_dict: h_dict[1])
                     doc.fontspecs["best_heights"][text_list[4]] = best_height[0]
-                    if(text_list[3]!=best_height[0]):
+                    if(text_list[3]!=best_height[0] and len(self.text_lines)>0):
                         prev_line = self.text_lines[-1]
 
                         h_dist = text_list[1]-(prev_line[1]+prev_line[2])
@@ -314,6 +362,7 @@ class Page(object):
         self.h_dists = []
         mult_counter = 0
         self.sorted_tops = sorted(self.tops.items(), key=lambda x: x[0], reverse=False)
+        # print(len(self.sorted_tops))
         for i in range(1,len(self.sorted_tops)):
 
             if(len(self.sorted_tops[i][1])>1):
@@ -348,6 +397,8 @@ class Page(object):
         self.v_dists = self.v_dists.most_common()
         # print("vertical_distances: " + str(self.v_dists))
         # print("\n")
+        if(len(self.v_dists)>0):
+            self.norm_dist = self.v_dists[0][0]
 
         # get the hists of left_margins
         left_counts = [(key,len(val)) for key,val in self.lefts.items() if(len(val)>1)]
@@ -437,32 +488,33 @@ class Page(object):
         return block_style
 
     def merge_text_blockstyle(self):
-        norm_dist = self.v_dists[0][0]
-        # print(norm_dist)
-        for (top_lvl, line_ids) in self.sorted_tops:
-            # if(root_obj.attrib["number"]=="2"):
-                # print("skip first page")
-                # pause()
-            for l_id in line_ids:
-                # print(l_id,text_lines[l_id])
-                added = False
-                if(self.text_lines[l_id][1] in self.tbox_blockstyle_left):
-                    for tbox_id in self.tbox_blockstyle_left[self.text_lines[l_id][1]]:
-                        tbox = self.tbox_blockstyle_top[tbox_id]
-                        if(tbox.add_line(text_line=self.text_lines[l_id], line_idx=l_id, norm_dist=norm_dist, dist_dev=1, margin_dev=5)):
-                            added = True
-                            break
-                    if(not(added)):
-                        block_id = len(self.tbox_blockstyle_top)
-                        nb = Text_Box_Block(self.text_lines[l_id], block_id, l_id)
-                        self.tbox_blockstyle_left[self.text_lines[l_id][1]].append(block_id)
-                        self.tbox_blockstyle_top.append(nb)
-                else:
-                    if(not(added)):
-                        block_id = len(self.tbox_blockstyle_top)
-                        nb = Text_Box_Block(self.text_lines[l_id], block_id, l_id)
-                        self.tbox_blockstyle_left[self.text_lines[l_id][1]] =  [block_id]
-                        self.tbox_blockstyle_top.append(nb)
+        if(len(self.v_dists)>0):
+            norm_dist = self.v_dists[0][0]
+            # print(norm_dist)
+            for (top_lvl, line_ids) in self.sorted_tops:
+                # if(root_obj.attrib["number"]=="2"):
+                    # print("skip first page")
+                    # pause()
+                for l_id in line_ids:
+                    # print(l_id,text_lines[l_id])
+                    added = False
+                    if(self.text_lines[l_id][1] in self.tbox_blockstyle_left):
+                        for tbox_id in self.tbox_blockstyle_left[self.text_lines[l_id][1]]:
+                            tbox = self.tbox_blockstyle_top[tbox_id]
+                            if(tbox.add_line(text_line=self.text_lines[l_id], line_idx=l_id, norm_dist=norm_dist, dist_dev=1, margin_dev=5)):
+                                added = True
+                                break
+                        if(not(added)):
+                            block_id = len(self.tbox_blockstyle_top)
+                            nb = Text_Box_Block(self.text_lines[l_id], block_id, l_id)
+                            self.tbox_blockstyle_left[self.text_lines[l_id][1]].append(block_id)
+                            self.tbox_blockstyle_top.append(nb)
+                    else:
+                        if(not(added)):
+                            block_id = len(self.tbox_blockstyle_top)
+                            nb = Text_Box_Block(self.text_lines[l_id], block_id, l_id)
+                            self.tbox_blockstyle_left[self.text_lines[l_id][1]] =  [block_id]
+                            self.tbox_blockstyle_top.append(nb)
 
     def check_blockstyle_boundaries(self):
 
@@ -494,11 +546,15 @@ class Page(object):
                     # print(dist_crit,left_crit,right_crit)
                     if(dist_crit and left_crit and right_crit):
                         # print(print_bcolors(["magenta"],bb.text))
-                        big_block.add_block(bb)
-                        self.tbox_blockstyle_top[k] = None
                         self.tbox_blockstyle_left[bb.left_pos].remove(k)
+                        self.tbox_blockstyle_left[big_block.left_pos].remove(i)
+                        self.tbox_blockstyle_left[min(bb.left_pos,big_block.left_pos)].append(i)
                         if(len(self.tbox_blockstyle_left[bb.left_pos])==0):
                             del self.tbox_blockstyle_left[bb.left_pos]
+                        if(len(self.tbox_blockstyle_left[big_block.left_pos])==0):
+                            del self.tbox_blockstyle_left[big_block.left_pos]
+                        big_block.add_block(bb)
+                        self.tbox_blockstyle_top[k] = None
                     elif(bb.top_pos>bottom_line+1):
                         break
                     else:
@@ -612,6 +668,19 @@ class Page(object):
             else:
                 i+=1
 
+    def create_text_blocks(self):
+        box_index = 0
+        for i in range(len(self.text_lines)):
+            c_line = self.text_lines[i]
+            if(not(c_line is None)):
+                current_block = Text_Box(Text_Box_Block(c_line, box_index, i))
+                try:
+                    self.tbox_left[current_block.left_pos].append(len(self.tbox_top))
+                except KeyError:
+                    self.tbox_left[current_block.left_pos] = [len(self.tbox_top)]
+                self.tbox_top.append(current_block)
+                box_index += 1
+
 
 class Document(object):
 
@@ -668,12 +737,18 @@ class Document(object):
         self.rights = {}
         self.lefts = {}
 
-    def process_xml(self):
+    def process_xml(self,img_flag=False):
         # get the xml data in a tree structure
-        tree = get_xml_structure(join(test_path,doc_str), img_flag=False)
+        try:
+            tree = self.get_xml_structure(img_flag=img_flag)
+        except ET.ParseError:
+            print("XML-ERROR in: " + self.doc_id)
+            return "xml_error"
         # get the head of the tree
-        root = tree.getroot()
-
+        try:
+            root = tree.getroot()
+        except AttributeError:
+            return "pw_protected"
         # go through all pages
         for root_obj in root:
             if(root_obj.tag=="page"):
@@ -689,20 +764,45 @@ class Document(object):
                 for elem in root_obj.iter():
                     print(elem.tag,elem.attrib,elem.text)
 
-        # self.create_features()
-        self.clean_images()
+        return ""
+
+    def get_xml_structure(self, img_flag=True):
+        args = ["pdftohtml"]
+        if(img_flag):
+            args += ["-i"]
+        args += ["-xml", self.doc_path]
+        output = subprocess.Popen(args, stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE).communicate()[0].decode(errors='ignore')
+        xml = splitext(self.doc_path)[0] + ".xml"
+        try:
+            tree = ET.parse(xml)
+        except FileNotFoundError:
+            return None
+        return tree
 
     def process_page(self, xml_page):
         # print("---------NEW PAGE-------------------")
         page = Page(xml_page)
         # parse the text structure information
+        # if(len(xml_page)==0):
+        #     print(xml_page)
+        #     self.images["pathes"].append(xml_page.attrib["number"])
+        #     img_size = int(xml_page.attrib["height"])*int(xml_page.attrib["width"])
+        #     self.images["sizes"].append(img_size)
+        #     page.image_space += img_size
+        #     print("yep")
+        # else:
         page.structure_content_elements(self)
         if(len(page.text_lines)>0):
             page.structure_text_alignment()
             # block_style = page.check_blockstyle_evidence(self)
-            page.merge_text_blockstyle()
-            page.check_blockstyle_boundaries()
-            page.merge_text_not_blocked()
+            if(not(page.norm_dist is None)):
+                page.merge_text_blockstyle()
+                page.check_blockstyle_boundaries()
+                page.merge_text_not_blocked()
+            else:
+                page.create_text_blocks()
+
         self.update_page_stats(page)
 
         # pause()
@@ -888,6 +988,8 @@ class Document(object):
             # TEXT STUFF
             "text":"",
             "bold_text":"",
+            "first_100_words":"",
+            "last_100_words":"",
 
             "count_words":0,
             "count_bold_words":0,
@@ -972,9 +1074,10 @@ class Document(object):
             features["count_font_families"] = len(self.fontspecs["famlilies"])
             features["max_font_size"] = max(self.fontspecs["sizes"])
             features["min_font_size"] = min(self.fontspecs["sizes"])
-            main_font_index = np.argmax(self.fontspecs["spec_counts"])
-            features["main_font_size"] = self.fontspecs["sizes"][main_font_index]
-            features["perc_main_font_word"] = self.fontspecs["spec_counts"][main_font_index]/np.sum(self.fontspecs["spec_counts"])
+            if(max(self.fontspecs["spec_counts"])>0):
+                main_font_index = np.argmax(self.fontspecs["spec_counts"])
+                features["main_font_size"] = self.fontspecs["sizes"][main_font_index]
+                features["perc_main_font_word"] = self.fontspecs["spec_counts"][main_font_index]/np.sum(self.fontspecs["spec_counts"])
 
             # print("FONT STUFF:\n")
             # print("count_fonts: " + str(features["count_fonts"]))
@@ -1012,6 +1115,9 @@ class Document(object):
             # TEXT STUFF
             features["text"] = self.text
             features["bold_text"] = self.bold_text
+            text_list = self.text.split()
+            features["first_100_words"] = " ".join(text_list[0:100])
+            features["last_100_words"] = " ".join(text_list[-100:])
 
             features["count_words"] = self.counts["words"]
             features["count_bold_words"] = self.counts["bold_words"]
@@ -1029,6 +1135,7 @@ class Document(object):
             features["min_lines_pp"] = min(self.stat_lists["lines_pp"])
             # features["min_bold_words_pp"] = min(self.stat_lists["words"])
 
+        if(len(self.stat_lists["word_pl"])>0):
             features["mean_words_per_line"] = np.mean(self.stat_lists["word_pl"])
             features["dev_words_per_line"] = np.std(self.stat_lists["word_pl"])
 
@@ -1128,16 +1235,18 @@ class Document(object):
 
 
             #STRUCTURE STUFF
-            max_right, max_right_count = max(self.rights.items(), key=lambda x: x[1])
-            total_rights = np.sum(list(self.rights.values()))
-            max_left, max_left_count = max(self.lefts.items(), key=lambda x: x[1])
-            total_lefts = np.sum(list(self.lefts.values()))
-            features["modal_right"] = max_right
-            features["perc_modal_right"] = max_right_count/total_rights
-            features["max_right"] = max(self.rights.keys())
-            features["modal_left"] = max_left
-            features["perc_modal_left"] = max_left_count/total_lefts
-            features["max_left"] = max(self.lefts.keys())
+            if(len(self.rights)>0):
+                max_right, max_right_count = max(self.rights.items(), key=lambda x: x[1])
+                total_rights = np.sum(list(self.rights.values()))
+                features["modal_right"] = max_right
+                features["perc_modal_right"] = max_right_count/total_rights
+                features["max_right"] = max(self.rights.keys())
+            if(len(self.lefts)>0):
+                max_left, max_left_count = max(self.lefts.items(), key=lambda x: x[1])
+                total_lefts = np.sum(list(self.lefts.values()))
+                features["modal_left"] = max_left
+                features["perc_modal_left"] = max_left_count/total_lefts
+                features["max_left"] = max(self.lefts.keys())
 
             # print("MARGIN STUFF:\n")
             # print("modal_right: " + str(features["modal_right"]))
@@ -1162,105 +1271,264 @@ class Document(object):
         # print("max_free_space_pp: " + str(features["max_free_space_pp"]))
         # print("min_free_space_pp: " + str(features["min_free_space_pp"]))
 
+        for k,v in features.items():
+            if(not(type(v)==str)):
+                features[k] = np.float64(v)
         return features
 
-    def clean_images(self):
+    def get_error_features(self, error_code):
+        features = {
+            "count_pages":0,
+
+            "count_outline_items":0,
+
+            # FONT STUFF
+            "count_fonts":0,
+            "count_font_colors":0,
+            "count_font_families":0,
+            "max_font_size":0,
+            "min_font_size":0,
+            "main_font_size":0,
+            "perc_main_font_word":0,
+            # "other_font_word_perc":0,
+
+            # IMAGE STUFF (space always as ratio)
+            "count_images":0,                # total count
+            "total_image_space":0,          # percentage of total image space
+            # "mean_image_space_pp":0,        # mean space per page
+            "dev_image_space_pp":0,         # std of space per page
+            "max_image_space_pp":0,            # maximum space per page
+            "min_image_space_pp":0,            # minimum space per page
+            "biggest_image":0,              # biggest image
+            "samllest_image":0,             # smallest image
+            # "mean_image_size":0,            # mean size of the images
+            # "dev_image_size":0,             # std of the size of the images
+
+            # TEXT STUFF
+            "text":error_code,
+            "bold_text":error_code,
+            "first_100_words":error_code,
+            "last_100_words":error_code,
+
+            "count_words":0,
+            "count_bold_words":0,
+            "count_annotations":0,
+            "count_lines":0,
+            "count_textboxes":0,
+            "count_blockstyles":0,
+
+            # "mean_words_pp":0,
+            # "mean_bold_words_pp":0,
+            # "mean_lines_pp":0,
+            # "mean_textboxes_pp":0,
+            # "mean_blockstyles_pp":0,
+            # "mean_textbox_space_pp":0,
+            # "mean_blockstyle_space_pp":0,
+
+            "dev_words_pp":0,
+            "dev_lines_pp":0,
+            "dev_textboxes_pp":0,
+            "dev_blockstyles_pp":0,
+            "dev_textbox_space_pp":0,
+            "dev_blockstyle_space_pp":0,
+
+            "max_words_pp":0,
+            # "max_bold_words_pp":0,
+            "max_lines_pp":0,
+            "max_textboxes_pp":0,
+            "max_blockstyles_pp":0,
+            "max_textbox_space_pp":0,
+            "max_blockstyle_space_pp":0,
+
+            "min_words_pp":0,
+            # "min_bold_words_pp":0,
+            "min_lines_pp":0,
+            "min_textboxes_pp":0,
+            "min_blockstyles_pp":0,
+            "min_textbox_space_pp":0,
+            "min_blockstyle_space_pp":0,
+
+            "mean_words_per_line":0,
+            "dev_words_per_line":0,
+            "mean_lines_per_blockstyle":0,
+            "dev_lines_per_blockstyle":0,
+            "max_lines_per_blockstyle":0,
+
+            #STRUCTURE STUFF
+            "modal_right":0,
+            "perc_modal_right":0,
+            "max_right":0,
+            "modal_left":0,
+            "perc_modal_left":0,
+            "max_lefts":0,
+
+            "modal_textbox_columns_pp":0,
+            "perc_modal_textbox_columns_pp":0,
+            "min_textbox_columns_pp":0,
+            "max_textbox_columns_pp":0,
+            "modal_blockstyle_columns_pp":0,
+            "perc_modal_blockstyle_columns_pp":0,
+            "min_blockstyle_columns_pp":0,
+            "max_blockstyle_columns_pp":0,
+
+            #FREE STUFF
+            "total_free_space":0,
+            "mean_free_space_pp":0,
+            "dev_free_space_pp":0,
+            "max_free_space_pp":0,
+            "min_free_space_pp":0
+        }
+
+        for k,v in features.items():
+            if(not(type(v)==str)):
+                features[k] = np.float64(v)
+        return features
+
+    def clean_files(self):
         for img_path in self.images["pathes"]:
-            os.remove(img_path)
+            if(isfile(img_path)):
+                os.remove(img_path)
+            else:
+                print("Image not found: " + str(img_path))
+        xml_file = splitext(self.doc_path)[0] + ".xml"
+        if(isfile(xml_file)):
+            os.remove(xml_file)
+        else:
+            print("Password protected: " + self.doc_id)
 
-###### Image Stuff #######
-def get_text_from_pil_img(pil_image, lang="deu"):
-    if(not(lang in ["eng", "deu", "fra"])):
-        print("Not the right language!!!\n Languages are: deu, eng, fra")
-
-    tool = pyocr.get_available_tools()[0]
-
-    txt = tool.image_to_string(
-        pil_image,
-        lang=lang)
-
-    return txt
-
-def img_stuff(img_list):
-    entropy = []
-    color = False
-    for img_path in img_list:
-        if(not(isfile(img_path))):
-            continue
-        pil_image = PI.open(img_path)
-        # with PI.open(io.BytesIO(page)) as pil_image:
-        gs_image = pil_image.convert("L")
-        hist = np.array(gs_image.histogram())
-        hist = np.divide(hist,np.sum(hist))
-        hist[hist==0] = 1
-        e = -np.sum(np.multiply(hist, np.log2(hist)))
-        entropy.append(e)
-
-        # if(not(color)):
-        #     col_image = pil_image.convert('RGB')
-        #     np_image = np.array(col_image)
-        #     if((np_image[:,:,0]==np_image[:,:,1])==(np_image[:,:,1]==np_image[:,:,2])):
-        #         color = True
-
-        os.remove(img_path)
-
-    if(len(entropy)==0):
-        print("Zero images loaded. Either pdf is empty or Ghostscript didn't create images correctly.")
-        mean_entropy = np.nan
+def get_structure_features(abs_filepath):
+    doc = Document(abs_filepath)
+    err_message = doc.process_xml(img_flag=False)
+    if(not(err_message)):
+        f_dict = doc.get_feature_dict()
     else:
-        mean_entropy = np.mean(entropy)
-    return mean_entropy, color
+        f_dict = doc.get_error_features(err_message)
+    doc.clean_files()
+    doc = None
+    return (f_dict, abs_filepath)
 
-###### XML Parsing Functions #######
-def get_xml_structure(filepath, img_flag=True):
-    args = ["pdftohtml"]
-    if(img_flag):
-        args += ["-i"]
-    args += ["-xml", filepath]
-    output = subprocess.Popen(args, stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE).communicate()[0].decode(errors='ignore')
+def pre_extract_pdf_structure_data(doc_dir, doc_ids=None, num_cores=None):
+    files = []
 
-    xml = splitext(filepath)[0] + ".xml"
-    tree = ET.parse(xml)
-    return tree
+    if isdir(doc_dir):
+        if(doc_ids is None):
+            for root, dirs, fls in os.walk(doc_dir):
+                for name in fls:
+                    if splitext(basename(name))[1] == '.pdf':
+                        files.append(join(root,name))
+        else:
+            for d_id in doc_ids:
+                files.append(join(doc_dir,d_id+".pdf"))
 
+    else:
+        print("Error: You need to specify a path to the folder containing all files.")
+        sys.exit(1)
 
+    if(not(num_cores is None) and num_cores>1):
+        pool = Pool(num_cores)
+        res = pool.map(get_structure_features, batch_files)
+    else:
+        res = []
+        for f in files:
+            res.append(get_structure_features(f))
+    res_fix={}
+    for x in res:
+        d_id = splitext(basename(x[1]))[0]
+        doc_features = x[0]
+        res_fix[d_id] = doc_features
 
+    return res_fix
+
+def pre_extract_pdf_structure_data_to_file(doc_dir, text_dir, structure_file, doc_ids=None, num_cores=1, batch_size=None):
+    files = []
+
+    if isdir(doc_dir):
+        if(doc_ids is None):
+            for root, dirs, fls in os.walk(doc_dir):
+                for name in fls:
+                    if splitext(basename(name))[1] == '.pdf':
+                        files.append(join(root,name))
+        else:
+            for d_id in doc_ids:
+                files.append(join(doc_dir,d_id+".pdf"))
+
+    else:
+        print("Error: You need to specify a path to the folder containing all files.")
+        sys.exit(1)
+
+    if(not(isdir(text_dir))):
+        os.makedirs(text_dir)
+    if(batch_size is None):
+        batch_size = len(files)
+
+    for i in range(0,len(files),batch_size):
+        batch_files = files[i:min(i+batch_size,len(files))]
+
+        if(not(num_cores is None) and num_cores>1):
+            pool = Pool(num_cores)
+            res = pool.map(get_structure_features, batch_files)
+        else:
+            res = []
+            for f in files:
+                res.append(get_structure_features(f))
+        res_fix={}
+        for x in res:
+            d_id = splitext(basename(x[1]))[0]
+            doc_features = x[0]
+            with open(join(text_dir,d_id+".txt"),"w") as f:
+                f.write(x[0]["text"])
+            del doc_features["text"]
+            res_fix[d_id] = doc_features
+
+        if(isfile(structure_file)):
+            with open(structure_file, 'r') as fp:
+                structure_data = json.load(fp, encoding="utf-8")
+            res_fix.update(structure_data)
+            structure_data = None
+
+        with open(structure_file, 'w') as fp:
+            json.dump(res_fix, fp, indent=4)
+        print("%.1f%% done!"%((i+batch_size)/len(files)*100,))
+
+        res_fix = None
 
 test_path = join(DATA_PATH,"files_test_html")
 
-powerpoint1 = "76ae7c120910a7830a1c0e0262d8cc5e.pdf"
-powerpoint2 = "15a25c0553f25d4edcc288028b384cba.pdf"
-slide_overview1 = "1e733d496d75352df67daefe269c1e88.pdf"
-slide_overview2 = "5e9f1f979fff677b72e6228ded542a97.pdf"
-lecture_mats1 = "1fd731e88a30612291de1923d5fa5263.pdf"
-lecture_mats2 = "26286ffa140c615eb9a5a4ab46eb30be.pdf"
-lecture_mats3 = "185422bf26436452aa0b3b8247e322af.pdf"
-book_style1 = "37cf51662d8385b47ad00d36070766b0.pdf"
-scan1 = "1569e3de486040aaaf71653c8e4bee6d.pdf"
-scan2 = "c92b478470f9147ea02229ac7de22adc.pdf"
-scan3 = "0b561e7ffe8da5a589c7e33e55203de6.pdf"
-table1 = "1945835eac5a4162cc00ba89c30e6a90.pdf"
-paper_style1 = "0f6b08591d82390c4ad1a590266f92bb.pdf"
-long_doc = "c41effe246dd564d7c72416faca33c21.pdf"
-docs = [lecture_mats1, lecture_mats2, book_style1, table1, paper_style1]
-# docs = [lecture_mats1]
+doc_dict = {
+    "powerpoint1" : "76ae7c120910a7830a1c0e0262d8cc5e.pdf",
+    "powerpoint2" : "15a25c0553f25d4edcc288028b384cba.pdf",
+    "slide_overview1" : "1e733d496d75352df67daefe269c1e88.pdf",
+    "slide_overview2" : "5e9f1f979fff677b72e6228ded542a97.pdf",
+    "lecture_mats1" : "1fd731e88a30612291de1923d5fa5263.pdf",
+    "lecture_mats2" : "26286ffa140c615eb9a5a4ab46eb30be.pdf",
+    "lecture_mats3" : "185422bf26436452aa0b3b8247e322af.pdf",
+    "book_style1" : "37cf51662d8385b47ad00d36070766b0.pdf",
+    "scan1" : "1569e3de486040aaaf71653c8e4bee6d.pdf",
+    "scan2" : "c92b478470f9147ea02229ac7de22adc.pdf",
+    "scan3" : "0b561e7ffe8da5a589c7e33e55203de6.pdf",
+    "table1" : "1945835eac5a4162cc00ba89c30e6a90.pdf",
+    "paper_style1" : "0f6b08591d82390c4ad1a590266f92bb.pdf",
+    "long_doc" : "c41effe246dd564d7c72416faca33c21.pdf",
+    "pw_protect" : "26013961e27e976cf7dff7b5bc6086c6.pdf",
+    "warning" : "db8f79a0bbe5bb518a54eb92f5b9b499.pdf",
+    "image_problem" : "d659934e59b496a11b7bffb22eabbba9.pdf"
+}
+# docs = [lecture_mats1, lecture_mats2, book_style1, table1, paper_style1]
+docs = [doc_dict["pw_protect"]]
 
-for doc_str in docs:
-    # create a new document
-    doc = Document(join(test_path,doc_str))
-    doc.process_xml()
-    f_dict = doc.get_feature_dict()
-    # for key,val in f_dict.items():
-    #     print(key + ": " + str(val))
-    #     pause()
+doc_ids = [splitext(d)[0] for d in doc_dict.values()]
 
+# print(get_structure_features("../../data/pdf_files/37cf51662d8385b47ad00d36070766b0.pdf"))
 
-
-
-
-
-
+s1 = time()
+pre_extract_pdf_structure_data_to_file(
+    doc_dir="../../data/pdf_files",
+    text_dir="../../data/xml_text_files",
+    structure_file="../../data/pre_extracted_data/xml_text_structure.json",
+    doc_ids=None,
+    num_cores=4,
+    batch_size=100)
+print(time()-s1)
 
 
 # print(img_stuff(image_pathes))
