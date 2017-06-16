@@ -182,8 +182,8 @@ if __name__ == "__main__":
         print(usage)
         sys.exit(1)
         
-    check_paths, preprocessing_file, features_file, prediction_file = pa.create_result_folders_files(args, config_preprocessing_file,
-                                                                                config_features_file, config_prediction_file)
+    check_paths, preprocessing_file, features_file, prediction_file_json, prediction_file_csv \
+    = pa.create_result_folders_files(args, config_preprocessing_file, config_features_file, config_prediction_file)
     if check_paths == -1:
         print("Error: Failed to create path.")
         print(preprocessing_file,": this path or subpath couldn't be created!")
@@ -191,7 +191,7 @@ if __name__ == "__main__":
         sys.exit(1)
     if check_paths == -2:
         print("Error: Failed to create file.")
-        print(prediction_file,": this file couldn't be created!")
+        print(prediction_file_json,": this file couldn't be created!")
         print(usage)
         sys.exit(1)
     
@@ -298,17 +298,14 @@ if __name__ == "__main__":
                                         
                 print("Saving results for batch %d to json file..."%num_batch)
                 try:
-                    with open(prediction_file, "r") as jsonFile:
+                    with open(prediction_file_json, "r") as jsonFile:
                         data = json.load(jsonFile)
                     data.update(prediction_dict_batch)
                 except:
                     data = prediction_dict_batch               
-                with open(prediction_file, "w") as jsonFile:
+                with open(prediction_file_json, "w") as jsonFile:
                     json.dump(data, jsonFile)
                     
-                prediction_file_csv = splitext(basename(prediction_file))[0] + '.csv'
-                path_pc = dirname(prediction_file)
-                prediction_file_csv = join(path_pc, prediction_file_csv)
                 if not isfile(prediction_file_csv):
                     with open(prediction_file_csv, 'w') as f:
                         w = csv.writer(f)

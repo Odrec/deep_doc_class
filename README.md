@@ -125,9 +125,10 @@ Arguments:
     The default file is 'preprocessing_data/features/features.json'. If you don't use this argument
     the existing default file will be ovewritten.
     
-    -rf: parameter used to specify the result predictions file. If the file doesn't exist it will be created. 
-    The default file if this parameter is not specified is '../predictions/prediction.json'. If you don't 
-    use this argument the existing default file will be ovewritten.
+    -rf: parameter used to specify the result predictions file (with json extension). Two files will be 
+    created, one json and one csv. If the files don't exist they will be created. The default files if 
+    this parameter is not specified are '../predictions/prediction.json' and '../predictions/predictions.csv'. 
+    If you don't use this argument the existing default files will be ovewritten.
     
     -preprocess_only: parameter used if you want to extract and save preprocessing data only.
     

@@ -46,7 +46,7 @@ def create_result_folders_files(args, config_preprocessing_file, config_features
     prediction_path = join(join(dirname(realpath(__file__)), os.pardir), "predictions")
     preprocessing_file = False
     features_file = False
-    prediction_file = False
+    prediction_file_json = False
     overwrite_preproc = False
     overwrite_features = False
     overwrite_prediction = False
@@ -55,7 +55,7 @@ def create_result_folders_files(args, config_preprocessing_file, config_features
     if not config_features_file == 'placeholder':
         features_file = config_features_file
     if not config_prediction_file  == 'placeholder':
-        prediction_file = config_prediction_file
+        prediction_file_json = config_prediction_file
 
     if not preprocessing_file:
         if '-pf' in args:
@@ -71,12 +71,14 @@ def create_result_folders_files(args, config_preprocessing_file, config_features
         else:
             features_file = 'features.json'
             overwrite_features = True
-    if not prediction_file:
+    if not prediction_file_json:
         if '-rf' in args:
             index_prediction = args.index('-rf') + 1
-            prediction_file = args[index_prediction]
+            prediction_file_json = args[index_prediction]
+            prediction_file_csv = splitext(prediction_file_json)[0] + '.csv'
         else:
-            prediction_file = 'prediction.json'
+            prediction_file_json = 'prediction.json'
+            prediction_file_csv = 'prediction.csv'
             overwrite_prediction = True
     if not isdir(preprocessing_path):
         try:
@@ -85,48 +87,51 @@ def create_result_folders_files(args, config_preprocessing_file, config_features
             os.makedirs(features_path)
         except:
             check_flag = -1
-            return check_flag, preprocessing_path, features_file, prediction_file
+            return check_flag, preprocessing_path, features_file, prediction_file_json, prediction_file_csv
     if not isdir(text_path):
         try:
             os.makedirs(text_path)
         except:
             check_flag = -1
-            return check_flag, text_path, features_file, prediction_file
+            return check_flag, text_path, features_file, prediction_file_json, prediction_file_csv
     if not isdir(features_path):
         try:
             os.makedirs(features_path)
         except:
             check_flag = -1
-            return check_flag, features_path, features_file, prediction_file
+            return check_flag, features_path, features_file, prediction_file_json, prediction_file_csv
     if not isdir(prediction_path):
         try:
             os.makedirs(prediction_path)
         except:
             check_flag = -1
-            return check_flag, prediction_path, features_file, prediction_file
+            return check_flag, prediction_path, features_file, prediction_file_json, prediction_file_csv
     if overwrite_preproc: preprocessing_file = join(preprocessing_path, preprocessing_file)
     if not isfile(preprocessing_file) or overwrite_preproc:
         try:
             open(preprocessing_file, 'w').close()
         except:
             check_flag = -2
-            return check_flag, preprocessing_file, features_file, prediction_file
+            return check_flag, preprocessing_file, features_file, prediction_file_json, prediction_file_csv
     if overwrite_features: features_file = join(features_path, features_file)
     if not isfile(features_file) or overwrite_features:
         try:
             open(features_file, 'w').close()
         except:
             check_flag = -2
-            return check_flag, features_file, features_file, prediction_file
-    if overwrite_prediction: prediction_file = join(prediction_path, prediction_file)
-    if not isfile(prediction_file) or overwrite_prediction:
+            return check_flag, features_file, features_file, prediction_file_json, prediction_file_csv
+    if overwrite_prediction: 
+        prediction_file_json = join(prediction_path, prediction_file_json)
+        prediction_file_csv = join(prediction_path, prediction_file_csv)
+    if not isfile(prediction_file_json) or not isfile(prediction_file_csv) or overwrite_prediction:
         try:
-            open(prediction_file, 'w').close()
+            open(prediction_file_json, 'w').close()
+            open(prediction_file_csv, 'w').close()
         except:
             check_flag = -2
-            return check_flag, prediction_file, features_file, prediction_file     
+            return check_flag, prediction_file_json, features_file, prediction_file_json, prediction_file_csv     
     
-    return check_flag, preprocessing_file, features_file, prediction_file
+    return check_flag, preprocessing_file, features_file, prediction_file_json, prediction_file_csv
         
 def load_config_file(args): 
     '''
