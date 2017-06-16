@@ -73,9 +73,9 @@ Parameters:
     
 """
 
-import sys, json
+import sys, json, csv
 import numpy as np
-from os.path import join
+from os.path import join, basename, dirname, splitext, isfile
 import param as pa
 import data as da
 import model as mo
@@ -284,25 +284,41 @@ if __name__ == "__main__":
                 predictions = mo.predict(input_list, model)
                 print("Finished prediction.")
                 
-                prediction_matrix_batch = {}
+                prediction_dict_batch = {}
+                prediction_list_batch = []
                 for i, p in enumerate(predictions):
                     pred = float(predictions[i])
-                    prediction_matrix_batch[ids[i]] = {}
-                    prediction_matrix_batch[ids[i]]['value'] = pred
+                    prediction_dict_batch[ids[i]] = {}
+                    prediction_dict_batch[ids[i]]['value'] = pred
                     if pred > decision_threshold:
-                        prediction_matrix_batch[ids[i]]['class'] = 1 
+                        prediction_dict_batch[ids[i]]['class'] = 1 
                     else:
-                        prediction_matrix_batch[ids[i]]['class'] = 0 
+                        prediction_dict_batch[ids[i]]['class'] = 0 
+                    prediction_list_batch.append([ids[i], pred, prediction_dict_batch[ids[i]]['class']])
                                         
                 print("Saving results for batch %d to json file..."%num_batch)
                 try:
-                    with open(join(prediction_file), "r") as jsonFile:
+                    with open(prediction_file, "r") as jsonFile:
                         data = json.load(jsonFile)
-                    data.update(prediction_matrix_batch)
+                    data.update(prediction_dict_batch)
                 except:
-                    data = prediction_matrix_batch               
-                with open(join(prediction_file), "w") as jsonFile:
+                    data = prediction_dict_batch               
+                with open(prediction_file, "w") as jsonFile:
                     json.dump(data, jsonFile)
+                    
+                prediction_file_csv = splitext(basename(prediction_file))[0] + '.csv'
+                path_pc = dirname(prediction_file)
+                prediction_file_csv = join(path_pc, prediction_file_csv)
+                if not isfile(prediction_file_csv):
+                    with open(prediction_file_csv, 'w') as f:
+                        w = csv.writer(f)
+                        w.writerow(['id','value','class'])
+                        w.writerows(prediction_list_batch)
+                else:
+                    with open(prediction_file_csv, 'a') as f:
+                        a = csv.writer(f)
+                        a.writerows(prediction_list_batch)
+                    
                 
         if over_batch == num_files:
             print("Finished processing all files...")
