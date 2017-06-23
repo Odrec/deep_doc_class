@@ -126,7 +126,9 @@ def create_result_folders_files(args, config_preprocessing_file, config_features
     if not isfile(prediction_file_json) or not isfile(prediction_file_csv) or overwrite_prediction:
         try:
             open(prediction_file_json, 'w').close()
-            open(prediction_file_csv, 'w').close()
+            with open(prediction_file_csv, 'w') as f:
+                w = csv.writer(f)
+                w.writerow(['id','value','class'])
         except:
             check_flag = -2
             return check_flag, prediction_file_json, features_file, prediction_file_json, prediction_file_csv     
