@@ -4,8 +4,12 @@ import sys, os, json, subprocess
 from os.path import join, realpath, dirname, isdir, basename, isfile, splitext
 MOD_PATH = dirname(realpath(__file__))
 SRC_DIR = os.path.abspath(join(join(realpath(__file__), os.pardir),os.pardir))
-sys.path.append(SRC_DIR)
-sys.path.append(join(realpath(__file__), os.pardir))
+if(not(SRC_DIR in sys.path)):
+    sys.path.append(SRC_DIR)
+FEATURE_DIR = join(SRC_DIR,"features")
+if(not(FEATURE_DIR in sys.path)):
+    sys.path.append(FEATURE_DIR)
+
 from doc_globals import*
 
 from multiprocessing import Pool
@@ -18,7 +22,27 @@ def pdfinfo_get_pdf_properties(file_path):
         stderr=subprocess.PIPE).communicate()[0].decode(errors='ignore')
 
     if(output==""):
-        return None, file_path
+        pdfinfo_dict = {
+            "optimized": "passwordprotected",
+            "file_size": 0.0,
+            "form": "passwordprotected",
+            "tagged": "passwordprotected",
+            "encrypted": 0,
+            "pdf_version": "passwordprotected",
+            "suspects": "passwordprotected",
+            "page_size_x": 0.0,
+            "creationdate": "passwordprotected",
+            "userproperties": "passwordprotected",
+            "page_size_y": 0.0,
+            "author": "passwordprotected",
+            "javascript": "passwordprotected",
+            "producer": "passwordprotected",
+            "moddate": "passwordprotected",
+            "creator": "passwordprotected",
+            "page_rot": 0,
+            "title": "passwordprotected",
+            "pages": 0}
+        return pdfinfo_dict, file_path
     prop_dict = {}
     lines = output.split('\n')[:-1]
     new_lines=[]
@@ -47,19 +71,19 @@ def pdfinfo_get_pdf_properties(file_path):
             val = val.split()[0]
             val = float(val)/1000
         elif(key == "page_rot"):
-            val = int(val)>0
+            val = int(int(val)>0)
         elif(key == "encrypted"):
             val = not(val=="no")
         prop_dict[key] = val
 
     if not 'author' in prop_dict:
-        prop_dict['author']= None
+        prop_dict['author']= "None"
     if not 'creator' in prop_dict:
-        prop_dict['creator']= None
+        prop_dict['creator']= "None"
     if not 'producer' in prop_dict:
-        prop_dict['producer']= None
+        prop_dict['producer']= "None"
     if not 'title' in prop_dict:
-        prop_dict['title']= None
+        prop_dict['title']= "None"
 
     return (prop_dict, file_path)
 
@@ -133,27 +157,21 @@ def pre_extract_pdf_properties(doc_dir, doc_ids=None, properties_file=None, num_
         res_fix[splitext(basename(x[1]))[0]] = x[0]
 
     if(not(properties_file) is None):
-        with open(out, 'w') as fp:
+        with open(properties_file, 'w') as fp:
             json.dump(res_fix, fp)
 
     return res_fix
 
-def load_single_property(doc_ids, doc_path, properties_path, field):
+def load_single_property(doc_ids, properties_path, field):
 
     # get pdfinfo dict information
     pdfinfo_data = None
     properties = []
 
-    if(isfile(properties_path)):
-        with open(properties_path,"r") as f:
-            pdfinfo_data = json.load(f)
+    with open(properties_path,"r") as f:
+        pdfinfo_data = json.load(f)
         for doc_id in doc_ids:
-            if(doc_id in pdfinfo_data):
-                pdfinfo_dict = pdfinfo_data[doc_id]
-            else:
-                filepath = join(doc_path,doc_id+'.pdf')
-                pdfinfo_dict = pdfinfo_get_pdf_properties(filepath)[1]
-                pdfinfo_data[doc_id] = pdfinfo_dict
+            pdfinfo_dict = pdfinfo_data[doc_id]
 
             datafield = ""
             if(pdfinfo_dict==None):
@@ -164,10 +182,11 @@ def load_single_property(doc_ids, doc_path, properties_path, field):
                 datafield = pdfinfo_dict[field]
             properties.append(datafield)
 
-        with open(properties_path,"w") as f:
-            json.dump(pdfinfo_data, f, indent=4)
-    else:
-        print("Wrong path!")
-        sys.exit(-1)
-
     return properties
+
+if __name__ == "__main__":
+
+    doc_dir="../../data/pdf_files"
+    prop_file="../../data/pre_extracted_data/pdf_properties_new.json"
+
+    pre_extract_pdf_properties(doc_dir, doc_ids=None, properties_file=prop_file, num_cores=4)

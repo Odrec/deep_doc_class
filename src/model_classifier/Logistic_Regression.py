@@ -80,7 +80,7 @@ class Logistic_Regression(Classifier):
         '''
         self.model.fit(data, labels)
 
-    def eval_accuracy(self, data):
+    def eval_accuracy(self, data, labels):
         '''
         Evaluates the accuracy of a trained model on the given new data. The data should be in the same format as in the train case.
 
@@ -139,3 +139,12 @@ class Logistic_Regression(Classifier):
         @rtype   pred: np.array((n,))
         '''
         return self.model.predict_proba(data)[:,1]>thres
+
+    def get_feature_rating(self):
+        '''
+        Uses some parameters of the model to rank the features at their importance for the prediction.
+
+        @return  ranking: A ranking of the features.
+        @rtype   ranking: np.array(len(features),)
+        '''
+        return self.model.coef_.ravel()

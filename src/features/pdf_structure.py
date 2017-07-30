@@ -20,15 +20,19 @@ from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage
 from os.path import basename, join, splitext, isfile, isdir, realpath
 
 SRC_DIR = os.path.abspath(join(join(realpath(__file__), os.pardir),os.pardir))
-sys.path.append(SRC_DIR)
-sys.path.append(join(realpath(__file__), os.pardir))
+if(not(SRC_DIR in sys.path)):
+    sys.path.append(SRC_DIR)
+FEATURE_DIR = join(SRC_DIR,"features")
+if(not(FEATURE_DIR in sys.path)):
+    sys.path.append(FEATURE_DIR)
+
 from doc_globals import*
 
 FEATURES_NAMES = ['ratio_tb_ib','ration_tb_pages','ratio_words_tb','avg_tb_size', 'ratio_words_page', 'avg_ib_size','ratio_ib_pages', 'copyright_symbol']
 
 
 def get_pdf_structure(file_path, structure_path=None):
-   
+
     doc_id = splitext(basename(file_path))[0]
     # get pdf structure dict information
     pdf_structure_data = None
@@ -54,7 +58,7 @@ def extract_pdf_structure_values(file):
     struct_data, text = process_file(file)
     file_key = splitext(basename(file))[0]
     struct_data = struct_data[file_key]
-    
+
     struct_dict = get_structure_values_dict(struct_data, text)
     return struct_dict, text
 
@@ -63,7 +67,7 @@ def pre_extract_pdf_structure_values(doc_dir, doc_ids=None,
     boxinfo_file=None,
     text_dir=None,
     num_cores=1):
-    
+
     if(boxinfo_file is None or not(isfile(boxinfo_file)) or text_dir is None or not(isdir(text_dir))):
         boxinfo, texts_dict = pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids, boxinfo_file=boxinfo_file, num_cores=num_cores)
     else:
@@ -116,10 +120,10 @@ def pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids=None,
     res = pool.map(process_file, files)
     boxinfo_dict={}
     texts_dict={}
-    for text,boxinfo in res:    
+    for text,boxinfo in res:
         boxinfo_dict.update(boxinfo)
         texts_dict.update({boxinfo.keys()[0]:text})
-    
+
     if(not(boxinfo_file is None)):
         with open(boxinfo_file, 'w') as fp:
             json.dump(boxinfo_dict, fp, indent=4)
@@ -127,7 +131,7 @@ def pre_extract_pdf_structure_boxinfo(doc_dir, doc_ids=None,
     return boxinfo_dict, texts_dict
 
 ##### Getting the boxinformation ######
-                
+
 def process_file(file):
     filename = splitext(basename(file))[0]
     fp = open(file, 'rb')
@@ -157,7 +161,7 @@ def process_file(file):
     return (dict_structure,text)
 
 def parse_layout(filename, dict_structure, page, lt_obj, num_obj, num_subobj=0):
-    
+
     """Function to recursively parse the layout tree."""
     text = ""
 
@@ -168,19 +172,19 @@ def parse_layout(filename, dict_structure, page, lt_obj, num_obj, num_subobj=0):
             num_subobj += 1
     else:
         if isinstance(lt_obj, LTImage) or isinstance(lt_obj, LTTextBox) or isinstance(lt_obj, LTTextLine):
-            
+
             if not page in dict_structure[filename]:
                 dict_structure[filename][page] = {}
             dict_structure[filename][page][lt_obj.__class__.__name__+'-'+str(num_obj)+'-'+str(num_subobj)] = {}
             dict_structure[filename][page][lt_obj.__class__.__name__+'-'+str(num_obj)+'-'+str(num_subobj)].update({'box1': lt_obj.bbox[0],
             'box2': lt_obj.bbox[1],'box3': lt_obj.bbox[2],'box4': lt_obj.bbox[3]})
-                
+
             if not isinstance(lt_obj, LTImage):
                 text+=lt_obj.get_text()
 
     return text
 ##### Functions for computing the values ######
-    
+
 def get_structure_values_dict(boxinfo, text):
     struct_dict = {}
     #try:
@@ -210,7 +214,7 @@ def text_contains_copyright_symbol(text):
 
 def get_num_pages(struct_data):
     return len(struct_data)
-    
+
 def get_boxes(struct_data):
     tb_result = []
     ib_result = []
@@ -221,7 +225,7 @@ def get_boxes(struct_data):
             elif "Image" in kk:
                 ib_result.append(struct_data[k][kk])
     return tb_result, ib_result
-    
+
 def get_textbox_info(textbox_list, num_pages, text):
     num_textboxes = len(textbox_list)
     if num_pages > 0:
@@ -237,9 +241,9 @@ def get_textbox_info(textbox_list, num_pages, text):
         textbox_size_avg = 0
 
     ratio_words_page = num_words/num_pages
-    
+
     return num_textboxes, [ratio_txtbox_pages, ratio_words_txtbox, textbox_size_avg, ratio_words_page]
-    
+
 def get_tb_size_avg(textbox_list):
     area = []
     for e in textbox_list:
@@ -247,7 +251,7 @@ def get_tb_size_avg(textbox_list):
         ys = float(e['box4'])-float(e['box2'])
         area.append(xs*ys)
     return np.mean(area)
-    
+
 def get_imagebox_info(imagebox_list, num_pages):
     num_imageboxes = len(imagebox_list)
     if num_pages > 0:
@@ -258,9 +262,9 @@ def get_imagebox_info(imagebox_list, num_pages):
         imagebox_size_avg = get_ib_size_avg(imagebox_list)
     else:
         imagebox_size_avg = 0
-    
+
     return num_imageboxes, [ratio_imgbox_pages, imagebox_size_avg]
-    
+
 def get_ib_size_avg(imagebox_list):
     area = []
     for e in imagebox_list:

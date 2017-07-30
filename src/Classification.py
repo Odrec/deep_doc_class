@@ -32,22 +32,6 @@ from scipy.stats import pearsonr, mstats
 from prettytable import PrettyTable
 import colorsys
 
-cat_id_to_des = {
-1:"scanned",
-2:"scanned_max2p",
-3:"paper_style",
-4:"book_style",
-5:"official",
-6:"powerpoint_slides",
-7:"other_slides",
-8:"course_material",
-9:"course_material_scanned",
-10:"official_style_course_mater",
-11:"handwritten",
-12:"pw_protected",
-13:"unsure"
-}
-
 ### Neural Network
 def init_keras_NN(num_input_nodes, num_hidden_nodes=100, num_hidden_layers=1):
     '''

@@ -4,13 +4,15 @@
 
 # TODO: heights need to be completely evaluated first otherwise divergences from the real hight at the beginning make some good heights worse
 
-import sys, os, json, shutil
+import sys, os, json, shutil, codecs
 from collections import Counter
 from os.path import join, realpath, dirname, isdir, basename, isfile, splitext
 import warnings
 
 SRC_DIR = os.path.abspath(join(join(realpath(__file__), os.pardir),os.pardir))
-sys.path.append(SRC_DIR)
+if(not(SRC_DIR in sys.path)):
+    sys.path.append(SRC_DIR)
+
 from time import time
 import subprocess
 import xml.etree.ElementTree as ET
@@ -738,17 +740,54 @@ class Document(object):
         self.lefts = {}
 
     def process_xml(self,img_flag=False):
-        # get the xml data in a tree structure
+        # get the xml file
+        err = self.get_xml_structure(img_flag=img_flag)
+        # try to open the file
+        content = ""
+        # pdftohtml seems create not utf-8 encoded chars even when utf-8 requested. Decode the file using latin one in case of those few exceptions.
         try:
-            tree = self.get_xml_structure(img_flag=img_flag)
-        except ET.ParseError:
-            print("XML-ERROR in: " + self.doc_id)
-            return "xml_error"
-        # get the head of the tree
+            with codecs.open(self.xml_path, "r", "utf-8") as f:
+                content = f.read()
+        except UnicodeDecodeError:
+            with codecs.open(self.xml_path, "r", "latin1") as f:
+                content = f.read()
+        # parse the xml
         try:
-            root = tree.getroot()
-        except AttributeError:
+            tree = ET.fromstring(content)
+        # if no file was created the pdf could not be accessedd
+        except FileNotFoundError:
+            if(err.split()[0]=="Permission"):
+                return "permission_error"
             return "pw_protected"
+        # if the xml parser found an error
+        except ET.ParseError as e:
+            print(e)
+            # the error description has usually two parts
+            # error type : position of the error
+            e_parts = str(e).split(":")
+            # remove invalid xml tokens
+            if(e_parts[0]=="not well-formed (invalid token)"):
+                content = self.remove_invalid_xml_char(content)
+            # remove not matching tags
+            elif(e_parts[0]=="mismatched tag"):
+                content = self.remove_invalid_xml_form(content)
+            # no idea otherwise
+            else:
+                print("Unknown XML ParseError!")
+                print(e)
+                sys.exit(1)
+            # try again to parse the xml
+            try:
+                tree = ET.fromstring(content)
+            # if errors persist no idea
+            except ET.ParseError:
+                print("XML-ERROR in: " + self.doc_id)
+                sys.exit(1)
+                return "xml_error"
+
+        # get the head of the tree
+        #root = tree.getroot()
+        root = tree
         # go through all pages
         for root_obj in root:
             if(root_obj.tag=="page"):
@@ -768,17 +807,14 @@ class Document(object):
 
     def get_xml_structure(self, img_flag=True):
         args = ["pdftohtml"]
-        if(img_flag):
-            args += ["-i"]
-        args += ["-xml", self.doc_path]
-        output = subprocess.Popen(args, stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE).communicate()[0].decode(errors='ignore')
-        xml = splitext(self.doc_path)[0] + ".xml"
-        try:
-            tree = ET.parse(xml)
-        except FileNotFoundError:
-            return None
-        return tree
+        # if(img_flag):
+        #     args += ["-i"]
+        #args += ["-xml","-enc","Latin1", self.doc_path]
+        args += ["-xml","-enc","UTF-8", self.doc_path]
+        err = subprocess.Popen(args, stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE).communicate()[1].decode(errors="ignore")
+        self.xml_path = splitext(self.doc_path)[0] + ".xml"
+        return err
 
     def process_page(self, xml_page):
         # print("---------NEW PAGE-------------------")
@@ -1054,7 +1090,6 @@ class Document(object):
 
             #FREE STUFF
             "total_free_space":0,
-            "mean_free_space_pp":0,
             "dev_free_space_pp":0,
             "max_free_space_pp":0,
             "min_free_space_pp":0
@@ -1246,7 +1281,7 @@ class Document(object):
                 total_lefts = np.sum(list(self.lefts.values()))
                 features["modal_left"] = max_left
                 features["perc_modal_left"] = max_left_count/total_lefts
-                features["max_left"] = max(self.lefts.keys())
+                features["max_lefts"] = max(self.lefts.keys())
 
             # print("MARGIN STUFF:\n")
             # print("modal_right: " + str(features["modal_right"]))
@@ -1396,6 +1431,41 @@ class Document(object):
         else:
             print("Password protected: " + self.doc_id)
 
+    def remove_invalid_xml_char(self, content):
+        content = list(content)
+        for i in range(len(content)):
+            content[i] = remove_invalid_xml_char(content[i])
+
+
+        content = "".join(content)
+        return content
+
+    def remove_invalid_xml_form(self, content):
+        # split text into lines
+        lines = content.split("\n")
+        # remove invalid lines until no err
+        error = True
+        while(error):
+            try:
+                text = "\n".join(lines)
+                tree = ET.fromstring(text)
+                error = False
+            except ET.ParseError as e:
+                e_parts = str(e).split(":")
+                if(e_parts[0]=="mismatched tag"):
+                    line,column = e_parts[1].split(",")
+                    line = int(line.split(" line ")[1])
+                    column = int(column.split(" column ")[1])
+                    # print(e)
+                    # print(lines[line-1])
+                    del lines[line-1]
+                else:
+                    error = False
+
+        content = "\n".join(lines)
+        return content
+
+
 def get_structure_features(abs_filepath):
     doc = Document(abs_filepath)
     err_message = doc.process_xml(img_flag=False)
@@ -1483,60 +1553,304 @@ def pre_extract_pdf_structure_data_to_file(doc_dir, text_dir, structure_file, do
         if(isfile(structure_file)):
             with open(structure_file, 'r') as fp:
                 structure_data = json.load(fp, encoding="utf-8")
-            res_fix.update(structure_data)
-            structure_data = None
+            structure_data.update(res_fix)
+        else:
+            structure_data = res_fix
 
         with open(structure_file, 'w') as fp:
-            json.dump(res_fix, fp, indent=4)
+            json.dump(structure_data, fp, indent=4)
         print("%.1f%% done!"%((i+batch_size)/len(files)*100,))
 
+        structure_data = None
         res_fix = None
 
-test_path = join(DATA_PATH,"files_test_html")
+def load_single_property(doc_ids, properties_path, field):
 
-doc_dict = {
-    "powerpoint1" : "76ae7c120910a7830a1c0e0262d8cc5e.pdf",
-    "powerpoint2" : "15a25c0553f25d4edcc288028b384cba.pdf",
-    "slide_overview1" : "1e733d496d75352df67daefe269c1e88.pdf",
-    "slide_overview2" : "5e9f1f979fff677b72e6228ded542a97.pdf",
-    "lecture_mats1" : "1fd731e88a30612291de1923d5fa5263.pdf",
-    "lecture_mats2" : "26286ffa140c615eb9a5a4ab46eb30be.pdf",
-    "lecture_mats3" : "185422bf26436452aa0b3b8247e322af.pdf",
-    "book_style1" : "37cf51662d8385b47ad00d36070766b0.pdf",
-    "scan1" : "1569e3de486040aaaf71653c8e4bee6d.pdf",
-    "scan2" : "c92b478470f9147ea02229ac7de22adc.pdf",
-    "scan3" : "0b561e7ffe8da5a589c7e33e55203de6.pdf",
-    "table1" : "1945835eac5a4162cc00ba89c30e6a90.pdf",
-    "paper_style1" : "0f6b08591d82390c4ad1a590266f92bb.pdf",
-    "long_doc" : "c41effe246dd564d7c72416faca33c21.pdf",
-    "pw_protect" : "26013961e27e976cf7dff7b5bc6086c6.pdf",
-    "warning" : "db8f79a0bbe5bb518a54eb92f5b9b499.pdf",
-    "image_problem" : "d659934e59b496a11b7bffb22eabbba9.pdf"
-}
-# docs = [lecture_mats1, lecture_mats2, book_style1, table1, paper_style1]
-docs = [doc_dict["pw_protect"]]
+    # get pdfinfo dict information
+    structure_data = None
+    properties = []
+    with open(properties_path,"r") as f:
+        structure_data = json.load(f)
+    for doc_id in doc_ids:
+        try:
+            properties.append(structure_data[doc_id][field])
+        except:
+            print("No structure data: " + doc_id)
+            properties.append("")
 
-doc_ids = [splitext(d)[0] for d in doc_dict.values()]
+    return properties
 
-# print(get_structure_features("../../data/pdf_files/37cf51662d8385b47ad00d36070766b0.pdf"))
+def remove_invalid_xml_char(c):
+    illegal_unichrs = [ (0x00, 0x08), (0x0B, 0x1F), (0x7F, 0x84), (0x86, 0x9F),
+                    (0xD800, 0xDFFF), (0xFDD0, 0xFDDF), (0xFFFE, 0xFFFF),
+                    (0x1FFFE, 0x1FFFF), (0x2FFFE, 0x2FFFF), (0x3FFFE, 0x3FFFF),
+                    (0x4FFFE, 0x4FFFF), (0x5FFFE, 0x5FFFF), (0x6FFFE, 0x6FFFF),
+                    (0x7FFFE, 0x7FFFF), (0x8FFFE, 0x8FFFF), (0x9FFFE, 0x9FFFF),
+                    (0xAFFFE, 0xAFFFF), (0xBFFFE, 0xBFFFF), (0xCFFFE, 0xCFFFF),
+                    (0xDFFFE, 0xDFFFF), (0xEFFFE, 0xEFFFF), (0xFFFFE, 0xFFFFF),
+                    (0x10FFFE, 0x10FFFF) ]
 
-s1 = time()
-pre_extract_pdf_structure_data_to_file(
-    doc_dir="../../data/pdf_files",
-    text_dir="../../data/xml_text_files",
-    structure_file="../../data/pre_extracted_data/xml_text_structure.json",
-    doc_ids=None,
-    num_cores=4,
-    batch_size=100)
-print(time()-s1)
+    illegal_ranges = ["%s-%s" % (chr(low), chr(high))
+                  for (low, high) in illegal_unichrs
+                  if low < sys.maxunicode]
+
+    illegal_xml_re = re.compile(u'[%s]' % u''.join(illegal_ranges))
+    if illegal_xml_re.search(c) is not None:
+        #Replace with space
+        return ' '
+    else:
+        return c
+
+if __name__ == "__main__":
+    xml_error = [
+        "4d70b0a1973a94c98b50a9fd43f0ffba",
+        "462e37b58d623e5458b8d630e4a4d993",
+        "e52c862fe0b09a52c94dee89141925eb",
+        "168f489c98b9976bbcce28f628e5078e",
+        "dab670f904564b76c3463a4343594126",
+        "afe02eb0714555c8176deaab05a5342f",
+        "35d1120c963d214c331c3b036377a0cf",
+        "e767a496ac211ec94a7f82f905a51393",
+        "b98e74c526e1ecfc9ecafe848a21e147",
+        "80946afd0a6c882d243ca3d3586a150d",
+        "c26eb949d5bd40ded6a0711ef9af3426",
+        "aafeaf6ff8f738c537bc8b4ebf012dde",
+        "7451990e707f49fc90725036440c4434",
+        "0b6b1cb9c9cd832bf02cf67bf8302e2c",
+        "f16934cc36ac59d568502ac3a9d34cf3",
+        "a4975f6d0d4ff4b8bbd0981ecd0f2285",
+        "b8e2d6b46e3cb95bb185b371c1c95e1e",
+        "6b5e9e9ce2e29547726ae8f8abd2ca82",
+        "477e81c2aac2ff90b327e495366f8f86",
+        "07a135fa0d07c49e0e6cd47810003dbc",
+        "2312cef18bcf2755f37f1e08c5ce911e",
+        "4c4829b9388c25f7ec2a001902e3d648",
+        "dc55cb8299cd57bfdab9c7aff817d1eb",
+        "81668dba8fec354eeb91024cdd663089",
+        "154e7e64bf2119f2a5129991bdf4bf7c",
+        "cd977ba21b6b8e6c8f2120e2c2881474",
+        "a412dd22dd26aead36dc91026405abbb",
+        "35ea1cd083532790f29aa9975cd6eb45",
+        "152c77685b41801858fbcc76c145dab7",
+        "3fb837679d044b2cf95a52e3370c2045",
+        "f4e06729807af3fd0d162790a4a48ef4",
+        "9f5832a1a3eec3ef2266e523f85c4322",
+        "f1dfc962076e1f7f89cdaf8efb5cb314",
+        "c6237fc82c1c2030e68df38de7d3871a",
+        "618452d00a628665901bdc3151265e70",
+        "0a78f6074fa498a9a184b3283cde7139",
+        "6888a8187c69fc8d91e45828d280bfb7",
+        "5ea358146448d79442e42e15233026c9",
+        "8df3f8fc7b4c6aa07a0529f441120660",
+        "a9e0db397b2e8b95931bffd8a56d5c18",
+        "240c7b6e495076afaba00c9889aea082",
+        "7b9778f8f7fb1c67783b82fb9bae42ab",
+        "e51d2152efe6856a26ddd0adc845d1f0",
+        "ca3359a20a73e30b109d0aed1a4b8711",
+        "b7d354d689f5052419c45cf4414d8216",
+        "8bd58c19720d9cc35d119f965b1ef601",
+        "26d3adda46b9c565d327d8d810e6151a",
+        "6f188eac23f755fdb358a7ce1136b6e7",
+        "dfae946e4721c3470994c90bd5bd393e",
+        "1b06d3a26375b06e7b79afb68f80b7da",
+        "d47b36df95eb67841ad803256da587de",
+        "7262cec0a47a711bb4f34391557219c9",
+        "d6c6bdadbbcfe0f16f31ddfa76868d5c",
+        "f81c611790ded32869499b298acc9d4e",
+        "4fe72e59a686fd5dcddce7e5d8d2c99e",
+        "8d072fc27449b5637453d45a9d75e2b0",
+        "ee31588463e2469ee6216e9c1a32186d",
+        "4a1c0babb340a6bd167a2600ba25e259",
+        "5aaaa751412c557f4a1230d48d61614b",
+        "56a2018de85943fa30cd4ddce3b9b602",
+        "f0140465484930a469c8e08be23b107b",
+        "d404503b466c0067fb52ea7fbb1eb99c",
+        "7dc8171d1f40cb6d4ab849e0901f9989",
+        "3cd73c97de8751d51309ffcca41a2ee5",
+        "3848d5e5b76f7aa570105dc0c4e23ca9",
+        "4053a8bd67e6b97033b1b1e379eb07b0",
+        "efe95fb04937ce282415b3752296037f",
+        "998b4efbfcc024e8284aef4f0d9eba87",
+        "333c25f776348ecc4c824dfe9318ffe0",
+        "1104c1ccb4037a458c7f1306cc8a4b38",
+        "ab9cc9945400f56e598c7642120b4ac0",
+        "cff2a79f90981ec250bdc460101e92d1",
+        "353618076a78e6d84e3b16607693cade",
+        "32e90d1459c534087a2daccdfc98453c",
+        "f38a244eb0ef01f05e8d9f88d4c15286",
+        "6e6a8826597f72e5403a00f1fc43fea2",
+        "f677954aab79b144b33a8539a80b5021",
+        "e6e55e34f7f10acf95bf72e8f64adc9a",
+        "f90fd5e8e62b6216f9575e61f3f8ef45",
+        "f25e883b16833c800a297e4d93b0d553",
+        "0778080d975a2f66a5bd48b249baab5f",
+        "6ce159fb4aee9b927c2157086f32f925",
+        "f4e6c77cc5614c657ce54a481fd0f362",
+        "ec932748ed8dc56134253c82d61c101d",
+        "4443af1116ccc197989be849d9f41aec",
+        "2cd9220978624e281e0e3245d9d0fca5",
+        "7fde22aa84dcb4b2cc9e52a480507535",
+        "95cc939db7100de396da394317e28d1c",
+        "e5697f2a78bc48b1eb0252fd2ef7279a",
+        "de6d3ae71d8b587fb5217209fac784d8",
+        "87245bf63324cf33d4aef86b13c7b0eb",
+        "e95621e72ff16ef5048d3626592af65b",
+        "7a623019662b3bebf5f76771051dd880",
+        "97383cd50190b061553cd73973bce984",
+        "f752c531b9c64ee61a33fc4452ecb976",
+        "fabcd583132b6eb5d12812726f17bedb",
+        "9c93f5b188319d1bddaed4171d0cf7cf",
+        "f41d85f790ac6c88d3d66cd876ff0b85",
+        "8d196e2c05c7e02d5117302fd7fa6182",
+        "170754478dc23a930d22722b43dbf181",
+        "0d6f103a9fa711786c797fb1b46e8e22",
+        "6edf443e2586f9e0c91d190a9a22f2e5",
+        "1ce91be84b2e5643eae607d049c2912d",
+        "e3df65c8481ecd9b72f072a065bac4a6",
+        "a7f54c58f810e2ea9f95ec28aad08f8b",
+        "e84d829645112856c3be0b408e783115",
+        "08576fc10f451db0b6161718f7ab9a8d",
+        "9b42880245d1b42d5771bc2bffc3b76a",
+        "6032b50d503896c3fd7d9cd31d2e0447",
+        "cc375cc82ad35b12b14062163670b342",
+        "b4610d02c99e9c27742441d36655f1ba",
+        "0306420da9829eef44f32ea96d45d568",
+        "9a791ce480ed18604f49553e7a992bab",
+        "15c4bae8e5f664d9ec481ee6385f8a25",
+        "74c3870963becf2b891ef2574bfcb319",
+        "1a5d44eb741c693cb626198fc63b50d5",
+        "f6d2282e1aa5ff337ec129a553535e67",
+        "ad9ade6d7b101edcb4bb9849be69074c",
+        "a2835d03b2d55cd13c406106eee9aaf1",
+        "c09aaa06323524e14a734b6c711f443f",
+        "01ee82f2ec05c0e273d229b5e9412379",
+        "6c357bc6ddc11a3b5d199d2b1e4e6fac",
+        "11f66b9e33b3773d1039ae28d45183e5",
+        "1102816909e4050340e4269631e3a57e",
+        "8b5d679b3ad0d2a3bf85a22c4c3fd47c",
+        "835508355d5f6284a0c58a1873a90a2a",
+        "c7909f905d3376d1d50e306a23a28e60",
+        "48c81c9e65935473cbd4c206b023c673",
+        "071e9a3c2811f70db3bac220aaa325bb",
+        "843b7382bd6ec44dd2bb4c958d4a7751",
+        "e4d437e678dc3c9da8b6695d3ff8d7e2",
+        "9a5d3349755cdbf1fc71dbee3e36ac37",
+        "68ad6882f7cd47437e58108e716cbcad",
+        "9a599a19d1e277137e3f083c255a62e3",
+        "ddcf3afdc941865b12bdd2af9c055ef6",
+        "9cff5d5a04b718f20ca4eecc93e64d8b",
+        "9b2b774ef4c39fc30384a0bf0a40f600",
+        "8dbff54b538bfe88c04c33122b3bca38",
+        "51acd0ea605794b421781e475e322c9a",
+        "341343a4fba4b858c1c916cccf9b9cec",
+        "d87cc194527e7d6c5e6a8b4037046394",
+        "458c3b916b58fbd0d6efe085fb2ab2b0",
+        "41d760f50056d2a3bbf086047492c436",
+        "6d761eb389d6d0fddf0ee72dc384cf2e",
+        "e1cef7747907cecbce8c76026eb2ca06",
+        "e33e7c75475d7073160d6058053f83e6",
+        "a75d7757a9c31c9dab10c2c8e4c34f89",
+        "404d8dce32be7dcb2e4160aa78c44de6",
+        "a8c89340f76e1798d1bb9726d91b7cb8",
+        "24c9893770471a031e2c5d4619ecc995",
+        "13374318ead52e16969c0d0544d7c596",
+        "bb88fe6c0328912f0bb90beb4fb87109",
+        "206297c4a808111bcee4d769dbb43385",
+        "d987c51792fcaa51a8916b6687b09d81",
+        "08199c77dbbcd19a24cf4bda154a29da",
+        "5ce4ae00d419a61b987b8abfcc931b25",
+        "a0240d7f82990009412be04369d5c7d1",
+        "e5178ff03bb21e40281c083021dd5d80",
+        "9478bb43e1060f6747290d0ef04b806c",
+        "203a02d423548260c477a5c1e56c40c6",
+        "66fc6ce18b44145964a06d8ff9db3ea1",
+        "38d35d6dddf9aa3c5ad647563a1c7b6a",
+        "56db3ea9339a2a2d8424804dd3842641",
+        "c125a84aa5ac9216987a9e1f725b8e64",
+        "325cc5f8fea90ec6455c1fc90805a801",
+        "20ed88098c997adade05ebcc5855c20c",
+        "e63baff797c0f1755888a2cbb22c4935",
+        "f264c2d15410ab35c314b679674c0109",
+        "008bd1a8b44ff03dc160552cf0514a92",
+        "62c206e1238acf99b33906437504996f",
+        "3e039943e16f3eddea67fa71335fe052",
+        "70fa622e70974dbf3314adfa4ad68514",
+        "c2a992d1b181ce386a342e6324131ac3",
+        "9fca5e8d73098cb0bbd103ae77b16030",
+        "c35ec2d4552a950069b390101bbbd27d",
+        "21f0fb0e872f9cc83ebb69f0890fe1c9",
+        "8441e472c36d966dc9d3f0ed9ed767ba",
+        "f1abde355dac04bbd21d33574de0c299",
+        "664c7b944a1799b494001ebcffd1a312",
+        "24549c324d4138b4aabe2e69da3143b9",
+        "0880622c454aa613513589c9957b85a9",
+        "6487721de7c5bd3f50257e8931020606",
+        "14a14bbc72c5ad5c4ef75714fc27a2ca",
+        "f2dadc933186ba967ce56853e9242bc5",
+        "f7ba2b00060e70cede9eda22f8323e7f",
+        "85bf12bd6c668033a3d730f3926b0640",
+        "ec5951bec760e3d149092f0cadd71119",
+        "7c1b592a0b256f3bb61e42c6a0260022",
+        "eee07c5ef8c9d49c5cbb4ae689b76179",
+        "a69acaacc655eeadd3f726c1f2fe4dd1",
+        "18111af931025656bdf4581bd27b268e",
+        "c9e4d8556c070d903cb8b58cfa57e90a",
+        "46fe2f38e7e10be55cecc7e87599e88a"
+    ]
+
+    spec_doc = "8bd58c19720d9cc35d119f965b1ef601" #f1dfc962076e1f7f89cdaf8efb5cb314
+    test_path = join(DATA_PATH,"pdf_files")
+    # test_path = join(DATA_PATH,"files_test_html")
+
+    # for xe in xml_error:
+    #     print(xe)
+    #     get_structure_features(join(test_path,xe+".pdf"))
+
+    # get_structure_features(join(test_path,spec_doc+".pdf"))
+
+    # doc_dict = {
+    #     "powerpoint1" : "76ae7c120910a7830a1c0e0262d8cc5e.pdf",
+    #     "powerpoint2" : "15a25c0553f25d4edcc288028b384cba.pdf",
+    #     "slide_overview1" : "1e733d496d75352df67daefe269c1e88.pdf",
+    #     "slide_overview2" : "5e9f1f979fff677b72e6228ded542a97.pdf",
+    #     "lecture_mats1" : "1fd731e88a30612291de1923d5fa5263.pdf",
+    #     "lecture_mats2" : "26286ffa140c615eb9a5a4ab46eb30be.pdf",
+    #     "lecture_mats3" : "185422bf26436452aa0b3b8247e322af.pdf",
+    #     "book_style1" : "37cf51662d8385b47ad00d36070766b0.pdf",
+    #     "scan1" : "1569e3de486040aaaf71653c8e4bee6d.pdf",
+    #     "scan2" : "c92b478470f9147ea02229ac7de22adc.pdf",
+    #     "scan3" : "0b561e7ffe8da5a589c7e33e55203de6.pdf",
+    #     "table1" : "1945835eac5a4162cc00ba89c30e6a90.pdf",
+    #     "paper_style1" : "0f6b08591d82390c4ad1a590266f92bb.pdf",
+    #     "long_doc" : "c41effe246dd564d7c72416faca33c21.pdf",
+    #     "pw_protect" : "26013961e27e976cf7dff7b5bc6086c6.pdf",
+    #     "warning" : "db8f79a0bbe5bb518a54eb92f5b9b499.pdf",
+    #     "image_problem" : "d659934e59b496a11b7bffb22eabbba9.pdf"
+    # }
+    # # docs = [lecture_mats1, lecture_mats2, book_style1, table1, paper_style1]
+    # docs = [doc_dict["pw_protect"]]
+    #
+    # doc_ids = [splitext(d)[0] for d in doc_dict.values()]
+    #
+    # # print(get_structure_features("../../data/pdf_files/37cf51662d8385b47ad00d36070766b0.pdf"))
+    #
+    s1 = time()
+    pre_extract_pdf_structure_data_to_file(
+        doc_dir="../../data/pdf_files",
+        text_dir="../../data/xml_text_files",
+        structure_file="../../data/pre_extracted_data/xml_text_structure.json",
+        doc_ids=xml_error,
+        num_cores=4,
+        batch_size=10)
+    print(time()-s1)
 
 
-# print(img_stuff(image_pathes))
-# # show time discrepancy
-# st = time()
-# features.pdf_structure.process_file(doc)
-# print(time()-st)
+    # print(img_stuff(image_pathes))
+    # # show time discrepancy
+    # st = time()
+    # features.pdf_structure.process_file(doc)
+    # print(time()-st)
 
-# st = time()
-# print(develop.pdf_images.get_grayscale_entropy_tmpfile(doc))
-# print(time()-st)
+    # st = time()
+    # print(develop.pdf_images.get_grayscale_entropy_tmpfile(doc))
+    # print(time()-st)

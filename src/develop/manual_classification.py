@@ -11,7 +11,7 @@ sys.path.append(join(realpath(__file__), os.pardir))
 from features.pdf_properties import get_pdf_properties
 from features.pdf_text import get_pdf_texts_json
 
-def ĺast_clean_up(man_class_file):
+def last_clean_up(man_class_file):
 	'''
 	reorganize the categories and add the real classification
 
@@ -362,9 +362,8 @@ def show_document(filename):
 	args = ["evince", "--fullscreen", filename]
 	plot = subprocess.Popen(args, stdout=subprocess.PIPE,
 			stderr=subprocess.PIPE)
-	input()
+	# input()
 	return
-
 
 def get_manual_classification(filename):
 	'''
@@ -414,117 +413,162 @@ def get_manual_classification(filename):
 
 	return imp_val, cat_val
 
+def cleaning_man_classification():
+    all_powerpoint_in_presentation("manual_classes.csv")
+    all_without_text_not_in_scan("clean_pres_man_class.csv")
+    all_in_scan_no_text("clean_scan_man_class.csv")
+    all_in_scan_not_important("clean_scan2_man_class.csv")
+    new_cats("clean_scan3_man_class.csv")
+    new_cat_long_official_style_mats("clean_new_cats_man_class.csv")
+    clean_old_cats("clean_old_cats_man_class.csv")
+    ĺast_clean_up("clean_old_cats_man_class.csv")
 
+    args = sys.argv
+    filedir = args[1]
+    filedir = os.path.abspath(filedir)
+    train = args[2]
+    test = args[3]
+
+    with open(train, 'r') as df:
+    	reader = csv.reader(df)
+    	classifications = list(reader)
+
+    with open(test, 'r') as df:
+    	reader = csv.reader(df)
+    	classifications += list(reader)
+
+    print(len(classifications))
+    manual_classifiactions = {}
+
+    fieldnames = ['doc_id','important','category']
+
+    if(isfile("manual_classes.csv")):
+    	print("Loading the current csv!")
+    	with open("manual_classes.csv", "r") as csvfile:
+    		reader = csv.DictReader(csvfile)
+    		# next(reader, None)
+    		for line in reader:
+    			manual_classifiactions[line["doc_id"]]=line
+    try:
+    	counter = 0
+    	for file,cla in classifications:
+    		if(not(file in manual_classifiactions)):
+    			print("Classification is: %d"%(int(float(cla)),))
+    			filename = join(filedir,file+".pdf")
+    			imp, cat = get_manual_classification(filename)
+    			manual_classifiactions[file] = {
+    				"doc_id":file,
+    				"important":imp,
+    				"category":cat
+    				}
+    		else:
+    			counter += 1
+
+    except KeyboardInterrupt as e:
+    	print("Shutting down savely!")
+    	raise e
+
+    finally:
+    	print("Saving csv file!")
+    	with open("manual_classes.csv", "w") as csvfile:
+    		writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    		writer.writeheader()
+    		for key, value in manual_classifiactions.items():
+    			writer.writerow(value)
 
 if __name__ == "__main__":
-	# all_powerpoint_in_presentation("manual_classes.csv")
-	# all_without_text_not_in_scan("clean_pres_man_class.csv")
-	# all_in_scan_no_text("clean_scan_man_class.csv")
-	# all_in_scan_not_important("clean_scan2_man_class.csv")
-	# new_cats("clean_scan3_man_class.csv")
-	# new_cat_long_official_style_mats("clean_new_cats_man_class.csv")
-	# clean_old_cats("clean_old_cats_man_class.csv")
-	# ĺast_clean_up("clean_old_cats_man_class.csv")
 
-	# args = sys.argv
-	# filedir = args[1]
-	# filedir = os.path.abspath(filedir)
-	# train = args[2]
-	# test = args[3]
-	#
-	# with open(train, 'r') as df:
-	# 	reader = csv.reader(df)
-	# 	classifications = list(reader)
-	#
-	# with open(test, 'r') as df:
-	# 	reader = csv.reader(df)
-	# 	classifications += list(reader)
-	#
-	# print(len(classifications))
-	# manual_classifiactions = {}
-	#
-	# fieldnames = ['doc_id','important','category']
-	#
-	# if(isfile("manual_classes.csv")):
-	# 	print("Loading the current csv!")
-	# 	with open("manual_classes.csv", "r") as csvfile:
-	# 		reader = csv.DictReader(csvfile)
-	# 		# next(reader, None)
-	# 		for line in reader:
-	# 			manual_classifiactions[line["doc_id"]]=line
-	# try:
-	# 	counter = 0
-	# 	for file,cla in classifications:
-	# 		if(not(file in manual_classifiactions)):
-	# 			print("Classification is: %d"%(int(float(cla)),))
-	# 			filename = join(filedir,file+".pdf")
-	# 			imp, cat = get_manual_classification(filename)
-	# 			manual_classifiactions[file] = {
-	# 				"doc_id":file,
-	# 				"important":imp,
-	# 				"category":cat
-	# 				}
-	# 		else:
-	# 			counter += 1
-	#
-	# except KeyboardInterrupt as e:
-	# 	print("Shutting down savely!")
-	# 	raise e
-	#
-	# finally:
-	# 	print("Saving csv file!")
-	# 	with open("manual_classes.csv", "w") as csvfile:
-	# 		writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-	# 		writer.writeheader()
-	# 		for key, value in manual_classifiactions.items():
-	# 			writer.writerow(value)
+	false_docs = ["cc17fb8eaf055e2c8224eaaf3c10145c",
+	    "43d566f90c24f874781d97905870ed23",
+	    "96a92f3bcb002f22a698a62a468415e3",
+	    "9c70eaa380eb60135c5f1953b1f073cf",
+	    "6aaf86df732ef957de9a48e2b3c589e9",
+	    "daad7c32072aaa4cdbb9ae2c02c2c9b6",
+	    "e65752213cebcb6e151a815ed21512f3",
+	    "5ff6d40b1dc0dde4c51a8436bc57aa20",
+	    "fc8278775cf12fdf84e88493f8efc645",
+	    "d047a01a190236e10d6addefe13ed3bc",
+	    "7e7ff5a990f0e5756e31348ced169854",
+	    "5268494d6a5b7f3bc27bc2dcbcf79748",
+	    "10c8f8111c29862458987f77c05f4a39",
+	    "19e69897d4842c053d781e773e5122bd",
+	    "da5a198a45c690c3570a7d307597b892",
+	    "f51d621abeb4c489918d904995bbcec0",
+	    "ef59be13bd0d88b43fcb779912df7a66",
+	    "36889863bea6feb43dbe335719aa657a",
+	    "6c357bc6ddc11a3b5d199d2b1e4e6fac",
+	    "2ad710735830e95c3e9ce01725552a8b",
+	    "df59eaa1565f4b3d980c15a00ade3bdc",
+	    "826c1f6b7d9b2bd7fc50c23a126b71a1",
+	    "12d0d64889fe56c5789f8b73a8813ce9",
+	    "9d2cb33abdcfefa9a56bb1f7da4ef263",
+	    "a5322615e83b66d9b6c5e9a50b3eebb2",
+	    "57f98112812429c28def64a14020b242",
+	    "b37ce79bf563844426c7452c38564acc",
+	    "00a1e2413c919d6e392442533626cb92",
+	    "acda4e5d66d28ab616cd34fd09055b05",
+	    "ea6c27a337aff6c262e8316984ff72e5",
+	    "b2ac2fe5be5547e864f00b2d0f3d8003",
+	    "7f4038da9e1fb0aa745adcf8cc8cb832",
+	    "e5b0ee8a5519969ec70f5722a90a8019",
+	    "a774df02a832585275de3db40f132cdd",
+	    "580bebc528e28f520565e69ef6de8506",
+	    "5464ee4ef790013f0caa5d16d72ae7fc",
+	    "259f6473a159a782cc6f9aaf2ceda6a1",
+	    "057782ecdfc1f4179d2f98c4d80da89b",
+	    "06f3ad19c37c9f4460b0c6482505599b",
+	    "0a32570101750613de0fc032b94f73f4",
+	    "116eee145a0276280e82e0081bc39130",
+	    "136d718bee74eb407355cb64f064867d",
+	    "14c2d5d73ebc31122a07ab587272f82e",
+	    "170754478dc23a930d22722b43dbf181",
+	    "1799aad8a5a88b17cd8480fdecdd7b81",
+	    "3229f885e2668f522c2d64b84a34639b",
+	    "3981b966fa573e6419054a38660bbdda",
+	    "44fbbe38e3512475b9e590a937c3e933",
+	    "49f920671851f6a9010187bdc9743b2c",
+	    "590ce47a42bf67aa1295d02e85b1a7b5",
+	    "5c52e2433813f16b46264f07fed83783",
+	    "5f4616a15b26f79b6190b072dba11aa8",
+	    "6956ad338f080b4be0710ce32ca12976",
+	    "73197946354da526a4f08756a9703ddd",
+	    "74f8f36f354984572718e765d4e85189",
+	    "8b9b83971a91e40e8a05bd09d0138e49",
+	    "9100a9452a85c3732784074b41233a9c",
+	    "a4351807fee95ad4a750546b71b657fb",
+	    "ad3b3d728c8e579ef31efe61b9739c8a",
+	    "ae5378982b7227176c3e42dd93c58bd4",
+	    "c7cda18baa6c465a1a076bc6034b609f",
+	    "d5763c8901ef9e76bbef5e673145b300",
+	    "ef82cdd10e45d8184c8779361cce78ef",
+	    "7daba79637e41d82c9df63465ba2f0a3",
+	    "f39e2ed04d180820f05d6ff362aedd1c",
+	    "9dbb018b918a13f12613a063c386e2a7",
+	    "bf6a3ea6f15c2c9c96a19da3f3ba9e43",
+	    "38700021b4e8b2b6f34e19c47a096980",
+	    "fabe694fea65e5b15574f4eaa2a190a9",
+	    "059600524e5fa4fff9c72854ae7c70dc",
+	    "6fa54fffe2a2335f5927572e9757ee40",
+	    "d9eebb93c161bb0131245f80e8ccc0b3",
+	    "97bb3e396c0396a693f3f8cb2f3654b3",
+	    "4af0c6020d07663825f905c783828379",
+	    "3c16342b2169cc662f7f3c4b0e9289a1"
+	]
 
-	doc_ids = [
-		"c0c19a68d3e54e98dbbe839f1da12a48",
-		"b70b5e44a2b2cb750092b63165c2a585",
-		"136427ec5c8f990c9a38c7b197b26791",
-		"de75eb121afef673bce3ae37116953ee",
-		"823b9cea3ff46d7c7e2f6d40d1300a44",
-		"556a8ab7e42c60d02c0fb783b9c5dcb3",
-		"b881e48f5d59d74468bd52dc8c137ec3",
-		"61d8ae283d943968c006e725cff315f5",
-		"d1be25e9fe083d925b901322f58cce50",
-		"abf19f5ebf048dbd98b2e592acbe332f",
-		"925f3d0e3d12f9b07197ceda6c8376db",
-		"e5178ff03bb21e40281c083021dd5d80",
-		"f2a37c75153d9f6820d055c9e783128b",
-		"465d36857466cc8b8461b7aad694466f",
-		"48cbd1c6ed5fc9438f2721a9edf1744b",
-		"a460fb0ad26247740124c7799932f977",
-		"6b5e9e9ce2e29547726ae8f8abd2ca82",
-		"86752187f9b846281f2fdca9312be147",
-		"3d22da7e7491e5b71708b915c162e164",
-		"2e1371cfcd980e966336f9b8e5c868e4",
-		"41f18feced9305d0331fe8c8b53b6d11",
-		"5ea39e1ba08fb05acc9e15221fea2431",
-		"46fe2f38e7e10be55cecc7e87599e88a",
-		"578b8421d18d1dd4f45af6b10447ea18",
-		"f97fb3eb831fe7256e752234a9f95244",
-		"4ddbb6ea38241fe8e862ac4ecafbe7e2",
-		"6bed7318ce7d2aee785fed66e156aad7",
-		"8385edc77c0c2642eeac51aaa814a2d3",
-		"56c7aa5427fa26527b5073f2aff932c6",
-		"aa38e362278f6624c9bebce96446361f",
-		"6ebc8ee8fd87580ad497e0702cd490f5",
-		"6332c56cd4403f39f4a8859f4cac44f1",
-		"cecf4da70a8b544235be830e00f8e080",
-		"126d11d8d35f88639f61e353c2ceeee5",
-		"07592ec3c73fa533d09fc94d79e323cd",
-		"6d77166becb337665a0b3b52edd57419"
-	]	
-
-	print(len(doc_ids))
-	man_class_file = "/home/kai/Workspace/deep_doc_class/deep_doc_class/data/cleaned_manual_class.csv"
+	print(len(false_docs))
+	man_class_file = "/home/kai/Workspace/deep_doc_class/deep_doc_class/data/clean_manual_class.csv"
+	man_class_file = "/home/kai/Workspace/deep_doc_class/deep_doc_class/src/develop/new_clean_manual_class.csv"
 	man_class = pd.read_csv(man_class_file)
 	man_class = man_class.set_index("doc_id")
 
 	filepath = "/home/kai/Workspace/deep_doc_class/deep_doc_class/data/pdf_files"
-	for d_id in doc_ids:
+	for d_id in false_docs:
+		print(man_class.loc[d_id]["class"])
 		print(man_class.loc[d_id]["category"])
 		print(man_class.loc[d_id]["important"])
 		show_document(join(filepath,d_id+".pdf"))
+		change = input("Change?")
+		if(change==1 or change=="yes" or change=="y"):
+			man_class.loc[d_id]["class"] = int(not(bool(man_class.loc[d_id]["class"])))
+
+	man_class.to_csv("new_clean_manual_class.csv")

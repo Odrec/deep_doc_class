@@ -4,8 +4,11 @@ import os, sys
 from os.path import join, realpath, dirname, isdir, basename, isfile
 MOD_PATH = dirname(realpath(__file__))
 SRC_DIR = os.path.abspath(join(join(realpath(__file__), os.pardir),os.pardir))
-sys.path.append(SRC_DIR)
-sys.path.append(join(realpath(__file__), os.pardir))
+if(not(SRC_DIR in sys.path)):
+    sys.path.append(SRC_DIR)
+FEATURE_DIR = join(SRC_DIR,"features")
+if(not(FEATURE_DIR in sys.path)):
+    sys.path.append(FEATURE_DIR)
 
 import pandas as pd
 import json
