@@ -19,9 +19,11 @@ from matplotlib import pyplot as plt
 import mpl_toolkits.mplot3d.axis3d as a3d #@UnresolvedImport
 from matplotlib.font_manager import FontProperties
 
+from sklearn.externals import joblib
 from sklearn.model_selection import StratifiedKFold, train_test_split
-from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix, precision_recall_curve, roc_curve, auc
+from sklearn.metrics import accuracy_score, f1_score, fbeta_score, precision_score, recall_score, classification_report, confusion_matrix, precision_recall_curve, roc_curve, auc, average_precision_score
 
+from copy import deepcopy
 from itertools import compress
 
 # visualization help
@@ -52,7 +54,7 @@ def setup_feature_extractor():
 
     # get pathes to the needed files
     prop_dir = join(PRE_EXTRACTED_DATA_PATH,"pdf_properties_new.json")
-    struc_dir = join(PRE_EXTRACTED_DATA_PATH,"xml_text_structure.json")
+    struc_dir = join(PRE_EXTRACTED_DATA_PATH,"pdf_structure.json")
     meta_dir = join(DATA_PATH,"classified_metadata.csv")
     text_dir = join(DATA_PATH,"xml_text_files")
 
@@ -123,75 +125,125 @@ def load_data(data_file, delimiter=",", rep_nan="mean", norm=True):
 
     return data, classes, ids, column_names
 
+### PARAMETER OPTIMIZATION ###
+def _get_result_row(classifier, train_data, train_labels, test_data, test_labels):
+    results_row = []
+    # train set
+    probs = classifier.predict_proba(train_data)[:,1]
+    preds = probs>=0.5
+    results_row.append(accuracy_score(train_labels, preds))
+    # test set
+    probs = classifier.predict_proba(test_data)[:,1]
+    preds = probs>=0.5
+    # add results
+    results_row.append(accuracy_score(test_labels, preds))
+    if(not(np.sum(preds)==0)):
+        results_row.append(precision_score(test_labels, preds))
+    else:
+        results_row.append(0)
+    results_row.append(recall_score(test_labels, preds))
+    results_row.append(fbeta_score(test_labels, preds, 1.7))
+    results_row.extend(confusion_matrix(test_labels, preds).ravel()[1:3])
 
-### Classification ###
-def compare_parameter_combinations_bin(classifier,
-    comb_param_names,
-    comb_param_vals,
+    # format results
+    results_row[0:5] = ["%.4f"%(val,) for val in results_row[0:5]]
+    results_row[5] = "%d   %.3f"%(results_row[5],results_row[5]/np.sum(test_labels==0))
+    results_row[6] = "%d   %.3f"%(results_row[6],results_row[6]/np.sum(test_labels==1))
+    return results_row
+
+def _save_search_results(rows, sort_by, res_header, model_header, results_file):
+    res_tab = PrettyTable(["id"] + res_header)
+    model_tab = PrettyTable(["id"] + model_header)
+
+    res_sort = sorted(rows, key=lambda x: x[res_header.index(sort_by)+2], reverse=True)
+    for i,r in enumerate(res_sort):
+        res_tab.add_row([i+1]+list(r[2:]))
+        model_tab.add_row([i+1]+[r[0][k] for k in model_header])
+
+    # write results to file
+    with open(results_file, 'w') as f:
+        f.write(("Grid Parameter Combination Results:").center(80) + "\n\n")
+        f.write(res_tab.get_string())
+        f.write("\n\nModel Parameter\n")
+        f.write(model_tab.get_string())
+
+def random_search_bin(classifier,
+    n_models,
+    params,
     train_data,
     train_labels,
     test_data,
     test_labels,
-    results_file=None,
-    save_model=False):
+    sort_by="acc",
+    use_deepcopy=True,
+    results_file=None):
+    header = ["train_acc", "acc", "precision", "recall", "f_beta", "fp", "fn"]
+    p_keys = list(params.keys())
+    rows = []
 
+    p_items = params.items()
+    for i in range(n_models):
+        args = {}
+        for k in p_keys:
+            p_gen = params[k]
+            if hasattr(p_gen, "rvs"):
+                args[k] = p_gen.rvs()
+            elif(callable(p_gen)):
+                args[k] = p_gen()
+            else:
+                args[k] = np.random.choice(p_gen)
+            if(type(args[k])==np.str_):
+                args[k] = str(args[k])
+
+        classifier.set_params(**args)
+        classifier.fit(X=train_data, y=train_labels)
+
+        results_row = _get_result_row(classifier, train_data, train_labels, test_data, test_labels)
+
+        if(use_deepcopy):
+            rows.append((args,deepcopy(classifier)) + tuple(results_row))
+        else:
+            rows.append((args,classifier.get_deepcopy()) + tuple(results_row))
+
+    if(not(results_file is None)):
+        _save_search_results(rows, sort_by, header, p_keys, results_file)
+
+    return rows, header
+
+def grid_search_bin(classifier,
+    params,
+    train_data,
+    train_labels,
+    test_data,
+    test_labels,
+    sort_by="acc",
+    use_deepcopy=True,
+    results_file=None):
+
+    header = ["train_acc", "acc", "precision", "recall", "f_beta", "fp", "fn"]
+    rows = []
+    p_keys = list(params.keys())
+    comb_param_vals = list(params.values())
     combinations = list(itertools.product(*comb_param_vals))
-    comb_names = []
-
-    header = ["model", "eval_set", "auc_roc", "auc_pr", "accuracy", "precision", "recall", "f1", "tn", "fp", "fn", "tp"]
-    results_table = PrettyTable(header)
 
     for i in range(len(combinations)):
-        c_name = ""
-        for j,n in enumerate(comb_param_names):
-            c_name+=(n+"-"+str(combinations[i][j])+"_")
-            classifier.set_attribute(n,combinations[i][j])
-        c_name = c_name[:-1]
-        classifier.re_initialize()
-        classifier.train(train_data, train_labels)
+        args = dict(zip(p_keys, combinations[i]))
+        classifier.set_params(**args)
+        classifier.fit(X=train_data, y=train_labels)
 
-        for eval_set in [(train_data,train_labels,"train"), (test_data,test_labels,"test")]:
+        results_row = _get_result_row(classifier, train_data, train_labels, test_data, test_labels)
 
-            preds = classifier.predict_binary(eval_set[0])
-            results_row = [c_name,eval_set[2]]
-            # add results
-            fpr, tpr, thresholds = roc_curve(eval_set[1], preds)
-            precision, recall, thresholds = precision_recall_curve(eval_set[1], preds)
-            results_row.append(auc(fpr, tpr))
-            results_row.append(auc(precision, recall))
+        if(use_deepcopy):
+            rows.append((args,deepcopy(classifier)) + tuple(results_row))
+        else:
+            rows.append((args,classifier.get_deepcopy()) + tuple(results_row))
 
-            results_row.append(accuracy_score(eval_set[1], preds))
-            results_row.append(precision_score(eval_set[1], preds, average="binary"))
-            results_row.append(recall_score(eval_set[1], preds, average="binary"))
-            results_row.append(f1_score(eval_set[1], preds, average="binary"))
-            results_row.extend(confusion_matrix(eval_set[1], preds).ravel())
-
-            # format results
-            results_row[2:8] = ["%.4f"%(val,) for val in results_row[2:8]]
-            results_row[8] = "%d   %.3f"%(results_row[8],results_row[8]/np.sum(eval_set[1]==0))
-            results_row[9] = "%d   %.3f"%(results_row[9],results_row[9]/np.sum(eval_set[1]==0))
-            results_row[10] = "%d   %.3f"%(results_row[10],results_row[10]/np.sum(eval_set[1]==1))
-            results_row[11] = "%d   %.3f"%(results_row[11],results_row[11]/np.sum(eval_set[1]==1))
-
-            results_table.add_row(results_row)
-        results_table.add_row(['']*len(header))
-
-        if(save_model):
-            if(not(isdir("models"))):
-                os.makedirs("models")
-            classifier.save_model(join("models",c_name))
-
-    # write results to file
     if(not(results_file is None)):
-        with open(results_file, 'w') as f:
-            f.write(("Parameter Combination Results:").center(80) + "\n\n")
-            f.write(("parameter order:").center(80) + "\n")
-            for n in comb_param_names:
-                f.write((n).center(80) + "\n")
-            f.write(results_table.get_string())
+        _save_search_results(rows, sort_by, header, p_keys, results_file)
 
-    return results_table.get_string()
+    return rows, header
 
+### Classification ###
 def crossvalidate_proba_bin(model, data, labels, kfolds=10, shuffle=True, seed=None):
 
     # the seed makes sure to get the same random distribution every time
@@ -812,7 +864,7 @@ def analyse_feature_ranking(classifier, feature_names, max_feat=None, results_pa
     return feat_rating
 
 
-### Preprocessing ###
+### PREPROCESSING ###
 def replace_nan_mean(features):
     '''
     Replaces np.nan in the feature matrix with the mean of the respective feature
@@ -851,26 +903,40 @@ def replace_nan_weighted_dist(features):
     #TODO: For now just take the simply mean method
     return replace_nan_mean(features)
 
-def norm_features(features):
+def minmax_scaling(features):
     '''
     Normalize the feature matrix. Make sure to handle np.nans beforehand
 
     @param  features: The feature matrix
     @type   features: np.array
 
-    @return  features: The normalized matrix
-    @rtype   features: np.array
+    @return  norm_features: The normalized matrix
+    @rtype   norm_features: np.array
     '''
     len_feat = len(features[0])
     max_nor=np.amax(features, axis=0)
     min_nor=np.amin(features, axis=0)
+    norm_features = np.zeros(features.shape)
     for i in range(0, len_feat):
         f_range = (max_nor[i]-min_nor[i])
         if(f_range>0):
-            features[:,i] = (features[:,i]-min_nor[i])/f_range
+            norm_features[:,i] = (features[:,i]-min_nor[i])/f_range
         else:
             print("The feature at position %s has always the same value!"%(i,))
-    return features
+    return norm_features
+
+def log_transform(features):
+    '''
+    Transforms the feature matrix. Make sure to handle np.nans beforehand
+
+    @param  features: The feature matrix
+    @type   features: np.array
+
+    @return  trans_features: The transformed matrix
+    @rtype   trans_features: np.array
+    '''
+    trans_features = np.log(features + (-np.min(features,axis=0)+1))
+    return trans_features
 
 def pca(data, dims=3):
     '''
@@ -909,7 +975,7 @@ def pca(data, dims=3):
     data_trans = np.dot(data, M)
     return data_trans, eig_pairs
 
-### Visalizations ###
+### VISUALIZATION ###
 def scatter_3d(data, classes, filepath):
     '''
     Scatter plot 3d classification-data according to their classification
@@ -971,6 +1037,19 @@ def scatter_3d(data, classes, filepath):
     fig.savefig(filepath+"_e15a-15", bbox_extra_artists=(lgd,), bbox_inches='tight')
 
     # show the 3d plot
+    plt.show()
+
+def plot_curve(x,y,x_label,y_label,curve_label,title):
+    plt.figure()
+    plt.plot(x, y, color='darkorange',
+             lw=2, label=curve_label)
+    plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
+    plt.title(title)
+    plt.legend(loc="lower right")
     plt.show()
 
 def create_boxplot(data, collumn_names, filepath):

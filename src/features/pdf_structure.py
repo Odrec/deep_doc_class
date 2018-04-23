@@ -6,7 +6,7 @@ Created on Sat Feb 11 10:37:29 2017
 """
 
 import sys, os
-import csv, json, codecs
+import csv, json, codecs, re
 import numpy as np
 from multiprocessing import Pool
 
@@ -43,7 +43,6 @@ def get_pdf_structure(file_path, structure_path=None):
             pdf_structure_data = json.load(f)
         if(doc_id in pdf_structure_data):
             pdf_structure_dict = pdf_structure_data[doc_id]
-            if()
         else:
             pdf_structure_dict, file_path = extract_pdf_structure_values(file_path)
             pdf_structure_data[doc_id] = pdf_structure_dict
@@ -154,7 +153,8 @@ def process_file(file):
             for lt_obj in layout:
                 text += parse_layout(filename, dict_structure, num_page, lt_obj, num_obj)
                 num_obj += 1
-    except:
+    except Exception as e:
+        print(e)
         print("Failed to extract structure from file ",basename(file))
         pass
 
@@ -198,7 +198,7 @@ def get_structure_values_dict(boxinfo, text):
     else:
         ratio_tb_ib = 0
 
-    vals = [ratio_tb_ib]+txtinfo+imginfo+copyright_symbol
+    vals = [ratio_tb_ib]+txtinfo+imginfo+[copyright_symbol]
 
     for i in range(len(FEATURES_NAMES)):
     	struct_dict[FEATURES_NAMES[i]] = vals[i]
@@ -209,7 +209,7 @@ def get_structure_values_dict(boxinfo, text):
     #     return struct_dict
 
 def text_contains_copyright_symbol(text):
-    symbols = re.findall(r'DOI|ISBN|©|doi|isbn', text.lower())
+    symbols = re.findall(r'(©|doi[^a-z]|isbn[^a-z])', text.lower())
     return int(len(symbols)>0)
 
 def get_num_pages(struct_data):
@@ -240,7 +240,10 @@ def get_textbox_info(textbox_list, num_pages, text):
         ratio_words_txtbox = 0
         textbox_size_avg = 0
 
-    ratio_words_page = num_words/num_pages
+    if(num_pages>0):
+        ratio_words_page = num_words/num_pages
+    else:
+        ratio_words_page = 0
 
     return num_textboxes, [ratio_txtbox_pages, ratio_words_txtbox, textbox_size_avg, ratio_words_page]
 

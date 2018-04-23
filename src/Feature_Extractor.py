@@ -36,6 +36,25 @@ class Feature_Extractor():
     ]
 
     numeric_features = [
+        ###CleanUp###
+        "pages",
+        "copyright_symbol",
+        "word_count",
+        "ratio_text_image",
+        "ration_text_pages",
+        "ratio_words_box",
+        "avg_text_size",
+        "ratio_image_pages",
+        "avg_image_size",
+        ###Relase###
+        "avg_ib_size",
+        "avg_tb_size",
+        "error",
+        "ratio_words_tb",
+        "ratio_tb_ib",
+        "ratio_tb_pages",
+        "ratio_ib_pages",
+        ###NEW###
         "count_pages",
         "count_outline_items",
         "count_fonts",
@@ -142,7 +161,10 @@ class Feature_Extractor():
         # first fields are the document id and class
         fieldnames = ["document_id", "class"]
         # finally add all the featurenames themselves
-        fieldnames += list(self.all_features)
+        add_features = list(res[0].keys())
+        add_features.remove("document_id")
+        add_features.remove("class")
+        fieldnames += add_features
 
         with open(feature_file,"w") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=',')
@@ -161,7 +183,10 @@ class Feature_Extractor():
 
         for bc in self.bow_classifiers:
             #try:
-            vals, names = bc.get_function(bow_strings[bc.name],)
+            if(bc.name in bow_strings):
+                vals, names = bc.get_function(bow_strings[bc.name],)
+            else:
+                continue
             if(type(vals)==list or type(vals)==np.ndarray):
                 if(len(vals)==len(names)):
                     for v,n in zip(vals,names):
@@ -213,12 +238,13 @@ class Feature_Extractor():
         try:
             structure_dict = self.structure_dict[doc_id]
             all_features_dict.update(structure_dict)
+
         except:
             print("No structure data: " + doc_id)
             return None
 
         # get the requested information of the dictionary
-        for f in self.all_features:
+        for f in all_features_dict.keys():
             # check if it is a bow feature or a numeric one
             if(f in Feature_Extractor.bow_features):
                 f_str = all_features_dict[f]
@@ -238,7 +264,7 @@ class Feature_Extractor():
                     if(type(f_num)!=np.nan and not(f_num is None)):
                         print("Feature %s is not a number!"%(f,))
             else:
-                print("Some internal error! %s should not be a possible feature!" (f,))
+                pass
         return values_dict, bow_strings
 
     def train_bow_classifier(self, doc_ids, classes, vectorizer, classifier):

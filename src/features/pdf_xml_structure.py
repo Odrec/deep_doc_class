@@ -32,6 +32,110 @@ import pyocr.builders
 import io
 import re
 
+FNULL = open(os.devnull, 'w')
+
+FEATURES = {
+    "count_pages":0,
+
+    "count_outline_items":0,
+
+    # FONT STUFF
+    "count_fonts":0,
+    "count_font_colors":0,
+    "count_font_families":0,
+    "max_font_size":0,
+    "min_font_size":0,
+    "main_font_size":0,
+    "perc_main_font_word":0,
+    # "other_font_word_perc":0,
+
+    # IMAGE STUFF (space always as ratio)
+    "count_images":0,                # total count
+    "total_image_space":0,          # percentage of total image space
+    # "mean_image_space_pp":0,        # mean space per page
+    "dev_image_space_pp":0,         # std of space per page
+    "max_image_space_pp":0,            # maximum space per page
+    "min_image_space_pp":0,            # minimum space per page
+    "biggest_image":0,              # biggest image
+    "samllest_image":0,             # smallest image
+    # "mean_image_size":0,            # mean size of the images
+    # "dev_image_size":0,             # std of the size of the images
+
+    # TEXT STUFF
+    "text":"",
+    "bold_text":"",
+    "first_100_words":"",
+    "last_100_words":"",
+    "copyright_symbol":0,
+
+    "count_words":0,
+    "count_bold_words":0,
+    "count_annotations":0,
+    "count_lines":0,
+    "count_textboxes":0,
+    "count_blockstyles":0,
+
+    # "mean_words_pp":0,
+    # "mean_bold_words_pp":0,
+    # "mean_lines_pp":0,
+    # "mean_textboxes_pp":0,
+    # "mean_blockstyles_pp":0,
+    # "mean_textbox_space_pp":0,
+    # "mean_blockstyle_space_pp":0,
+
+    "dev_words_pp":0,
+    "dev_lines_pp":0,
+    "dev_textboxes_pp":0,
+    "dev_blockstyles_pp":0,
+    "dev_textbox_space_pp":0,
+    "dev_blockstyle_space_pp":0,
+
+    "max_words_pp":0,
+    # "max_bold_words_pp":0,
+    "max_lines_pp":0,
+    "max_textboxes_pp":0,
+    "max_blockstyles_pp":0,
+    "max_textbox_space_pp":0,
+    "max_blockstyle_space_pp":0,
+
+    "min_words_pp":0,
+    # "min_bold_words_pp":0,
+    "min_lines_pp":0,
+    "min_textboxes_pp":0,
+    "min_blockstyles_pp":0,
+    "min_textbox_space_pp":0,
+    "min_blockstyle_space_pp":0,
+
+    "mean_words_per_line":0,
+    "dev_words_per_line":0,
+    "mean_lines_per_blockstyle":0,
+    "dev_lines_per_blockstyle":0,
+    "max_lines_per_blockstyle":0,
+
+    #STRUCTURE STUFF
+    "modal_right":0,
+    "perc_modal_right":0,
+    "max_right":0,
+    "modal_left":0,
+    "perc_modal_left":0,
+    "max_lefts":0,
+
+    "modal_textbox_columns_pp":0,
+    "perc_modal_textbox_columns_pp":0,
+    "min_textbox_columns_pp":0,
+    "max_textbox_columns_pp":0,
+    "modal_blockstyle_columns_pp":0,
+    "perc_modal_blockstyle_columns_pp":0,
+    "min_blockstyle_columns_pp":0,
+    "max_blockstyle_columns_pp":0,
+
+    #FREE STUFF
+    "total_free_space":0,
+    "dev_free_space_pp":0,
+    "max_free_space_pp":0,
+    "min_free_space_pp":0
+}
+
 ###### Helpers #######
 bcolors = {
     "reset" : '\033[0m',
@@ -689,6 +793,7 @@ class Document(object):
     def __init__(self, doc_path):
         self.doc_path = doc_path
         self.doc_id = splitext(basename(doc_path))[0]
+        self.pages = []
 
         self.text = ""
         self.bold_text = ""
@@ -730,8 +835,6 @@ class Document(object):
             "word_pl":[],
             "lines_pbs":[],
             "lines_ptb":[],
-            "column_counts":[],
-            "sufficient_rights":[],
             "textbox_columns":[],
             "blockstyle_columns":[]
         }
@@ -751,14 +854,15 @@ class Document(object):
         except UnicodeDecodeError:
             with codecs.open(self.xml_path, "r", "latin1") as f:
                 content = f.read()
-        # parse the xml
-        try:
-            tree = ET.fromstring(content)
         # if no file was created the pdf could not be accessedd
         except FileNotFoundError:
             if(err.split()[0]=="Permission"):
                 return "permission_error"
             return "pw_protected"
+
+        # parse the xml
+        try:
+            tree = ET.fromstring(content)
         # if the xml parser found an error
         except ET.ParseError as e:
             print(e)
@@ -840,6 +944,7 @@ class Document(object):
                 page.create_text_blocks()
 
         self.update_page_stats(page)
+        self.pages.append(page)
 
         # pause()
 
@@ -994,106 +1099,7 @@ class Document(object):
         return textbox_columns
 
     def get_feature_dict(self):
-        features = {
-            "count_pages":0,
-
-            "count_outline_items":0,
-
-            # FONT STUFF
-            "count_fonts":0,
-            "count_font_colors":0,
-            "count_font_families":0,
-            "max_font_size":0,
-            "min_font_size":0,
-            "main_font_size":0,
-            "perc_main_font_word":0,
-            # "other_font_word_perc":0,
-
-            # IMAGE STUFF (space always as ratio)
-            "count_images":0,                # total count
-            "total_image_space":0,          # percentage of total image space
-            # "mean_image_space_pp":0,        # mean space per page
-            "dev_image_space_pp":0,         # std of space per page
-            "max_image_space_pp":0,            # maximum space per page
-            "min_image_space_pp":0,            # minimum space per page
-            "biggest_image":0,              # biggest image
-            "samllest_image":0,             # smallest image
-            # "mean_image_size":0,            # mean size of the images
-            # "dev_image_size":0,             # std of the size of the images
-
-            # TEXT STUFF
-            "text":"",
-            "bold_text":"",
-            "first_100_words":"",
-            "last_100_words":"",
-
-            "count_words":0,
-            "count_bold_words":0,
-            "count_annotations":0,
-            "count_lines":0,
-            "count_textboxes":0,
-            "count_blockstyles":0,
-
-            # "mean_words_pp":0,
-            # "mean_bold_words_pp":0,
-            # "mean_lines_pp":0,
-            # "mean_textboxes_pp":0,
-            # "mean_blockstyles_pp":0,
-            # "mean_textbox_space_pp":0,
-            # "mean_blockstyle_space_pp":0,
-
-            "dev_words_pp":0,
-            "dev_lines_pp":0,
-            "dev_textboxes_pp":0,
-            "dev_blockstyles_pp":0,
-            "dev_textbox_space_pp":0,
-            "dev_blockstyle_space_pp":0,
-
-            "max_words_pp":0,
-            # "max_bold_words_pp":0,
-            "max_lines_pp":0,
-            "max_textboxes_pp":0,
-            "max_blockstyles_pp":0,
-            "max_textbox_space_pp":0,
-            "max_blockstyle_space_pp":0,
-
-            "min_words_pp":0,
-            # "min_bold_words_pp":0,
-            "min_lines_pp":0,
-            "min_textboxes_pp":0,
-            "min_blockstyles_pp":0,
-            "min_textbox_space_pp":0,
-            "min_blockstyle_space_pp":0,
-
-            "mean_words_per_line":0,
-            "dev_words_per_line":0,
-            "mean_lines_per_blockstyle":0,
-            "dev_lines_per_blockstyle":0,
-            "max_lines_per_blockstyle":0,
-
-            #STRUCTURE STUFF
-            "modal_right":0,
-            "perc_modal_right":0,
-            "max_right":0,
-            "modal_left":0,
-            "perc_modal_left":0,
-            "max_lefts":0,
-
-            "modal_textbox_columns_pp":0,
-            "perc_modal_textbox_columns_pp":0,
-            "min_textbox_columns_pp":0,
-            "max_textbox_columns_pp":0,
-            "modal_blockstyle_columns_pp":0,
-            "perc_modal_blockstyle_columns_pp":0,
-            "min_blockstyle_columns_pp":0,
-            "max_blockstyle_columns_pp":0,
-
-            #FREE STUFF
-            "total_free_space":0,
-            "dev_free_space_pp":0,
-            "max_free_space_pp":0,
-            "min_free_space_pp":0
-        }
+        features = FEATURES
 
         # pages
         features["count_pages"] = self.counts["pages"]
@@ -1153,6 +1159,7 @@ class Document(object):
             text_list = self.text.split()
             features["first_100_words"] = " ".join(text_list[0:100])
             features["last_100_words"] = " ".join(text_list[-100:])
+            features["copyright_symbol"] = text_contains_copyright_symbol(self.text)
 
             features["count_words"] = self.counts["words"]
             features["count_bold_words"] = self.counts["bold_words"]
@@ -1344,6 +1351,7 @@ class Document(object):
             "bold_text":error_code,
             "first_100_words":error_code,
             "last_100_words":error_code,
+            "copyright_symbol":0,
 
             "count_words":0,
             "count_bold_words":0,
@@ -1427,6 +1435,7 @@ class Document(object):
                 print("Image not found: " + str(img_path))
         xml_file = splitext(self.doc_path)[0] + ".xml"
         if(isfile(xml_file)):
+            #os.rename(xml_file, join(DATA_PATH, "xml_structure_files", self.doc_id+".xml"))
             os.remove(xml_file)
         else:
             print("Password protected: " + self.doc_id)
@@ -1526,6 +1535,7 @@ def pre_extract_pdf_structure_data_to_file(doc_dir, text_dir, structure_file, do
         print("Error: You need to specify a path to the folder containing all files.")
         sys.exit(1)
 
+    files = files[int(len(files)*0.33):]
     if(not(isdir(text_dir))):
         os.makedirs(text_dir)
     if(batch_size is None):
@@ -1545,9 +1555,9 @@ def pre_extract_pdf_structure_data_to_file(doc_dir, text_dir, structure_file, do
         for x in res:
             d_id = splitext(basename(x[1]))[0]
             doc_features = x[0]
-            with open(join(text_dir,d_id+".txt"),"w") as f:
-                f.write(x[0]["text"])
-            del doc_features["text"]
+            # with open(join(text_dir,d_id+".txt"),"w") as f:
+            #     f.write(x[0]["text"])
+            # del doc_features["text"]
             res_fix[d_id] = doc_features
 
         if(isfile(structure_file)):
@@ -1600,6 +1610,108 @@ def remove_invalid_xml_char(c):
         return ' '
     else:
         return c
+
+def text_contains_copyright_symbol(text):
+    symbols = re.findall(r'(©|[^a-z]doi[^a-z]|[^a-z]isbn[^a-z])', text.lower())
+    return int(len(symbols)>0)
+
+def show_document_page(filename, page):
+    page_arg = "--page-label=" + str(page)
+    args = ["evince", "--fullscreen", page_arg, filename]
+    plot = subprocess.Popen(args, stdout=FNULL, stderr=subprocess.STDOUT)
+    return
+
+def extract_training_images(doc_dir, img_dir, doc_ids):
+    ## want to find:
+    # clear textblocks : 1/0
+    # multiple columns : 1/0
+    # blockformatted : 1/0
+    # table : 1/0
+    # list: 1/0
+    # pagenumbers : 1/0
+    # clear artifacts : 1/0
+    # handwritten : 1/0
+
+    # telling copyright frontpage : 1/0
+    # telling university frontpage : 1/0
+    # closing references : 1/0
+
+    c = 0
+    pred_data = {}
+    files = []
+    if isdir(doc_dir):
+        if(doc_ids is None):
+            for root, dirs, fls in os.walk(doc_dir):
+                for name in fls:
+                    if splitext(basename(name))[1] == '.pdf':
+                        files.append(join(root,name))
+    for pdfFile in files:
+        c+=1
+        #pdfFile = join(doc_dir,d_id+".pdf")
+        d_id = splitext(basename(pdfFile))[0]
+        doc = Document(pdfFile)
+        err_message = doc.process_xml(img_flag=False)
+        show_document_page(pdfFile, 1)
+        if(not(len(doc.pages)>0)):
+            pred_data[d_id] = "pw_protected"
+            continue
+        print(doc.pages[0].width)
+        print(doc.pages[0].height)
+        for key,val in doc.stat_lists.items():
+            if(key in ["textbox_columns","blockstyle_columns","lines_pbs","lines_ptb"]):
+                print(key)
+                print(val)
+        most_text_page = np.argmax(doc.stat_lists["words_pp"])
+        last_page = len(doc.stat_lists["words_pp"])
+        show_document_page(pdfFile, 1)
+
+        doc_data = {}
+        a = "1"
+        while(not(len(a)==2)):
+            a = input()
+            if(a=="n"):
+                pred_data[d_id] = c
+                with open('new_data.json', 'w') as outfile:
+                    json.dump(pred_data, outfile)
+                sys.exit(1)
+        doc_data["clear_cp_titlepage"] =a[0]
+        doc_data["clear_ncp_titlepage"] =a[1]
+
+        for i in range(2,last_page):
+
+        show_document_page(pdfFile, most_text_page)
+            a = "1"
+            while(not(len(a)==5)):
+                a = input()
+                if(a=="n"):
+                    pred_data[d_id] = c
+                    with open('new_data.json', 'w') as outfile:
+                        json.dump(pred_data, outfile)
+                    sys.exit(1)
+
+            doc_data["clear_textblocks"] =a[0]
+            doc_data["multiple_columns"] =a[1]
+            doc_data["blockformatted"] =a[2]
+            doc_data["list"] =a[3]
+            doc_data["table"] =a[4]
+            doc_data["pagenumbers"] =a[5]
+            doc_data["clear artifacts"] =a[6]
+            doc_data["handwritten"] =a[7]
+
+
+        show_document_page(pdfFile, last_page)
+        a = "1"
+        while(not(len(a)==1)):
+            a = input()
+            if(a=="n"):
+                pred_data[d_id] = c
+                with open('new_data.json', 'w') as outfile:
+                    json.dump(pred_data, outfile)
+                sys.exit(1)
+        doc_data["closing_references"] =a[0]
+
+        pred_data[d_id] = doc_data
+
 
 if __name__ == "__main__":
     xml_error = [
@@ -1798,35 +1910,40 @@ if __name__ == "__main__":
         "46fe2f38e7e10be55cecc7e87599e88a"
     ]
 
-    spec_doc = "8bd58c19720d9cc35d119f965b1ef601" #f1dfc962076e1f7f89cdaf8efb5cb314
-    test_path = join(DATA_PATH,"pdf_files")
-    # test_path = join(DATA_PATH,"files_test_html")
+    doc_dict = {
+        "powerpoint1" : "76ae7c120910a7830a1c0e0262d8cc5e.pdf",
+        "powerpoint2" : "15a25c0553f25d4edcc288028b384cba.pdf",
+        "slide_overview1" : "1e733d496d75352df67daefe269c1e88.pdf",
+        "slide_overview2" : "5e9f1f979fff677b72e6228ded542a97.pdf",
+        "lecture_mats1" : "1fd731e88a30612291de1923d5fa5263.pdf",
+        "lecture_mats2" : "26286ffa140c615eb9a5a4ab46eb30be.pdf",
+        "lecture_mats3" : "185422bf26436452aa0b3b8247e322af.pdf",
+        "book_style1" : "37cf51662d8385b47ad00d36070766b0.pdf",
+        "scan1" : "1569e3de486040aaaf71653c8e4bee6d.pdf",
+        "scan2" : "c92b478470f9147ea02229ac7de22adc.pdf",
+        "scan3" : "0b561e7ffe8da5a589c7e33e55203de6.pdf",
+        "table1" : "1945835eac5a4162cc00ba89c30e6a90.pdf",
+        "paper_style1" : "0f6b08591d82390c4ad1a590266f92bb.pdf",
+        "long_doc" : "c41effe246dd564d7c72416faca33c21.pdf",
+        "pw_protect" : "26013961e27e976cf7dff7b5bc6086c6.pdf",
+        "warning" : "db8f79a0bbe5bb518a54eb92f5b9b499.pdf",
+        "image_problem" : "d659934e59b496a11b7bffb22eabbba9.pdf"
+    }
+
+    test_path = join(DATA_PATH,"files_test_html")
+
+    new_doc = "0f6b08591d82390c4ad1a590266f92bb"
+
+    # show_document_page(join(test_path,new_doc+".pdf"),3)
+
+    extract_training_images(test_path, None, None)
+
+    #get_structure_features(join(test_path,new_doc+".pdf"))
 
     # for xe in xml_error:
     #     print(xe)
     #     get_structure_features(join(test_path,xe+".pdf"))
 
-    # get_structure_features(join(test_path,spec_doc+".pdf"))
-
-    # doc_dict = {
-    #     "powerpoint1" : "76ae7c120910a7830a1c0e0262d8cc5e.pdf",
-    #     "powerpoint2" : "15a25c0553f25d4edcc288028b384cba.pdf",
-    #     "slide_overview1" : "1e733d496d75352df67daefe269c1e88.pdf",
-    #     "slide_overview2" : "5e9f1f979fff677b72e6228ded542a97.pdf",
-    #     "lecture_mats1" : "1fd731e88a30612291de1923d5fa5263.pdf",
-    #     "lecture_mats2" : "26286ffa140c615eb9a5a4ab46eb30be.pdf",
-    #     "lecture_mats3" : "185422bf26436452aa0b3b8247e322af.pdf",
-    #     "book_style1" : "37cf51662d8385b47ad00d36070766b0.pdf",
-    #     "scan1" : "1569e3de486040aaaf71653c8e4bee6d.pdf",
-    #     "scan2" : "c92b478470f9147ea02229ac7de22adc.pdf",
-    #     "scan3" : "0b561e7ffe8da5a589c7e33e55203de6.pdf",
-    #     "table1" : "1945835eac5a4162cc00ba89c30e6a90.pdf",
-    #     "paper_style1" : "0f6b08591d82390c4ad1a590266f92bb.pdf",
-    #     "long_doc" : "c41effe246dd564d7c72416faca33c21.pdf",
-    #     "pw_protect" : "26013961e27e976cf7dff7b5bc6086c6.pdf",
-    #     "warning" : "db8f79a0bbe5bb518a54eb92f5b9b499.pdf",
-    #     "image_problem" : "d659934e59b496a11b7bffb22eabbba9.pdf"
-    # }
     # # docs = [lecture_mats1, lecture_mats2, book_style1, table1, paper_style1]
     # docs = [doc_dict["pw_protect"]]
     #
@@ -1834,15 +1951,15 @@ if __name__ == "__main__":
     #
     # # print(get_structure_features("../../data/pdf_files/37cf51662d8385b47ad00d36070766b0.pdf"))
     #
-    s1 = time()
-    pre_extract_pdf_structure_data_to_file(
-        doc_dir="../../data/pdf_files",
-        text_dir="../../data/xml_text_files",
-        structure_file="../../data/pre_extracted_data/xml_text_structure.json",
-        doc_ids=xml_error,
-        num_cores=4,
-        batch_size=10)
-    print(time()-s1)
+    # s1 = time()
+    # pre_extract_pdf_structure_data_to_file(
+    #     doc_dir="../../data/pdf_files",
+    #     text_dir="../../data/xml_text_files2",
+    #     structure_file="../../data/pre_extracted_data/xml_text_structure2.json",
+    #     doc_ids=None,
+    #     num_cores=None,
+    #     batch_size=10)
+    # print(time()-s1)
 
 
     # print(img_stuff(image_pathes))
