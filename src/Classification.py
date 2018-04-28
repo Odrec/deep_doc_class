@@ -1147,7 +1147,7 @@ def update_cat_eval(category_eval, doc_ids, pred):
     "4af0c6020d07663825f905c783828379",
     "3c16342b2169cc662f7f3c4b0e9289a1"]
 
-    cat_path = "/home/kai/Workspace/deep_doc_class/deep_doc_class/data/cleaned_manual_class.csv"
+    cat_path = "/home/kai/Workspace/deep_doc_class/deep_doc_class/data/classification_with_category.csv"
     cat_dict = {}
 
     with open(cat_path,"r") as cat_file:

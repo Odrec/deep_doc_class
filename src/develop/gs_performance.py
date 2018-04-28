@@ -67,13 +67,13 @@ def load_image_test(filepath):
 
 
 if __name__ == "__main__":
-    # s1 = time()
-    # get_pil_image_from_pdf(join(PDF_PATH,PDFBOOK), pngDevice, "png", PAGELIST_BOOK)
-    # print("png: " + str(time()-s1))
+    s1 = time()
+    get_pil_image_from_pdf(join(PDF_PATH,PDFBOOK), pngDevice, "png", PAGELIST_BOOK)
+    print("png: " + str(time()-s1))
     # clean_images()
-    #
-    # s1 = time()
-    # get_pil_image_from_pdf(join(PDF_PATH,PDFBOOK), jpegDevice, "jpeg", PAGELIST_BOOK)
-    # print("jpeg: " + str(time()-s1))
+
+    s1 = time()
+    get_pil_image_from_pdf(join(PDF_PATH,PDFBOOK), jpegDevice, "jpeg", PAGELIST_BOOK)
+    print("jpeg: " + str(time()-s1))
     # clean_images()
     load_image_test("/home/kai/Workspace/deep_doc_class/deep_doc_class/data/files_test_html/4d70b0a1973a94c98b50a9fd43f0ffba_2.png")

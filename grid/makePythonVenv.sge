@@ -1,0 +1,40 @@
+#!/bin/bash
+#$ -N log_venv
+#$ -l mem=2G
+#$ -pe default 2
+
+
+#check version of virttual env
+virtualenv --version
+
+virtualenv python3_theano
+
+source python3_theano/bin/activate
+
+pip3 install pycuda
+pip3 install git+https://github.com/lebedov/scikit-cuda.git#egg=scikit-cuda
+pip3 install keras
+pip3 install Cython
+pip3 install -r requirements2.txt
+
+git clone https://github.com/Theano/libgpuarray.git
+cd libgpuarray
+mkdir Build
+cd Build
+cmake .. -DCMAKE_INSTALL_PREFIX=~/.local -DCMAKE_BUILD_TYPE=Release
+make -j 2
+make install
+# Run the following export and add them in your ~/.bashrc file
+export CPATH=$CPATH:~/.local/include
+export LIBRARY_PATH=$LIBRARY_PATH:~/.local/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib
+
+cd ..
+python3 setup.py build
+python3 setup.py install --user
+
+rm $HOME/libgpuarray -r -f
+
+python3 -c "import keras"
+
+deactivate
