@@ -4,7 +4,7 @@
 
 # TODO: heights need to be completely evaluated first otherwise divergences from the real hight at the beginning make some good heights worse
 
-import sys, os, json, shutil, codecs
+import sys, os, json, shutil, codecs, csv
 from collections import Counter
 from os.path import join, realpath, dirname, isdir, basename, isfile, splitext
 import warnings
@@ -903,7 +903,9 @@ class Document(object):
             "textbox_columns":[],
             "blockstyle_columns":[],
             "blockstyles_words_pp":[],
-            "not_blockstyles_words_pp":[]
+            "not_blockstyles_words_pp":[],
+            "not_blockstyles_lines_pp":[],
+            "blockstyles_lines_pp":[]
         }
 
         self.rights = {}
@@ -925,7 +927,11 @@ class Document(object):
         except FileNotFoundError:
             # print(err)
             if(err.split()[0]=="Permission"):
-                return "permission_error"
+                return err
+            elif(err.split()[0]=="Syntax"):
+                return err
+            elif(err.split()[0]=="Command"):
+                return err
             return "pw_protected"
 
         # parse the xml
@@ -979,13 +985,14 @@ class Document(object):
 
     def get_xml_structure(self, img_flag=True):
         args = ["pdftohtml"]
-        # if(img_flag):
-        #     args += ["-i"]
+        if(img_flag):
+            args += ["-i"]
         #args += ["-xml","-enc","Latin1", self.doc_path]
-        # args += ["-xml","-enc","UTF-8", self.doc_path]
-        args += ["-f", "2", "-l", "12", "-xml","-enc","UTF-8", self.doc_path]
+        args += ["-xml","-enc","UTF-8", self.doc_path]
+        # args += ["-f", "2", "-l", "12", "-xml","-enc","UTF-8", self.doc_path]
         err = subprocess.Popen(args, stdout=subprocess.PIPE,
             stderr=subprocess.PIPE).communicate()[1].decode(errors="ignore")
+        print(err)
         self.xml_path = splitext(self.doc_path)[0] + ".xml"
         return err
 
@@ -1035,6 +1042,8 @@ class Document(object):
         self.stat_lists["words_pp"].append(0)
         self.stat_lists["not_blockstyles_words_pp"].append(0)
         self.stat_lists["blockstyles_words_pp"].append(0)
+        self.stat_lists["not_blockstyles_lines_pp"].append(0)
+        self.stat_lists["blockstyles_lines_pp"].append(0)
         for line in page.text_lines:
             if(not(line is None)):
                 self.text += line[5] + " "
@@ -1065,7 +1074,8 @@ class Document(object):
                     self.counts["textboxes"] += 1
                     self.stat_lists["textboxes_pp"][-1] += 1
                     self.stat_lists["lines_ptb"].append(len(tb.line_ids))
-                    self.stat_lists["not_blockstyles_words_pp"] += len(tb.text.split())
+                    self.stat_lists["not_blockstyles_words_pp"][-1] += len(tb.text.split())
+                    self.stat_lists["not_blockstyles_lines_pp"][-1] += len(tb.line_ids)
                     if(not(tbox_rect in tb_rects)):
                         self.stat_lists["textbox_space_pp"][-1] += (right-left) * (bot-top)
                         for r in page.img_rects:
@@ -1095,7 +1105,8 @@ class Document(object):
                     self.counts["blockstyles"] += 1
                     self.stat_lists["blockstyles_pp"][-1] += 1
                     self.stat_lists["lines_pbs"].append(len(tb.line_ids))
-                    self.stat_lists["blockstyles_words_pp"] += len(tb.text.split())
+                    self.stat_lists["blockstyles_words_pp"][-1] += len(tb.text.split())
+                    self.stat_lists["blockstyles_lines_pp"][-1] += len(tb.line_ids)
                     if(not(tbox_rect in tb_rects)):
                         self.stat_lists["blockstyle_space_pp"][-1] += (right-left) * (bot-top)
                         for r in page.img_rects:
@@ -1512,23 +1523,25 @@ class Document(object):
         return content
 
 
-def get_structure_features(abs_filepath):
+def get_structure_features(abs_filepath, clean=True):
     s=time()
     copy(abs_filepath,TMP_DIR)
     tmp_file_path = join(TMP_DIR,basename(abs_filepath))
     doc = Document(tmp_file_path)
     err_message = doc.process_xml(img_flag=False)
+    print(err_message)
     if(not(err_message)):
         f_dict = doc.get_feature_dict()
     else:
         f_dict = doc.get_error_features(err_message)
-    # doc.clean_files()
-    doc = None
+    if(clean):
+        doc.clean_files()
+    # doc = None
     neg_feat = checkDictForNeg(f_dict)
     extract_time = time()-s
     log_time(basename(abs_filepath), extract_time)
-    print(basename(abs_filepath), extract_time, neg_feat)
-    return (f_dict, abs_filepath)
+    # print(basename(abs_filepath), extract_time, neg_feat)
+    return (f_dict, abs_filepath, doc)
 
 def log_time(doc_id, extract_time):
     log_file = "time.log"
@@ -1707,7 +1720,7 @@ def show_document_page(filename, page):
     args = ["evince", "--fullscreen", page_arg, filename]
     plot = subprocess.Popen(args, stdout=FNULL, stderr=subprocess.STDOUT)
     return
-#
+
 # def extract_training_images(doc_dir, img_dir, doc_ids):
 #     ## want to find:
 #     # clear textblocks : 1/0
@@ -1798,6 +1811,152 @@ def show_document_page(filename, page):
 #         doc_data["closing_references"] =a[0]
 #
 #         pred_data[d_id] = doc_data
+
+def generate_blockstyle_training_images():
+    categories = {1:"scanned",
+    2:"scanned_max2p",
+    3:"paper_style",
+    4:"book_style",
+    5:"official",
+    6:"powerpoint_slides",
+    7:"other_slides",
+    8:"course_material",
+    9:"course_material_scanned",
+    10:"official_style_course_mater",
+    11:"handwritten",
+    12:"pw_protected",
+    13:"unsure"}
+
+    allowed = [3,4,5,8,10,13]
+    header = ["doc_id","page","block"]
+
+    with open(join(SRC_DIR,"features","time.log"), 'r') as fp1:
+        time_data = json.load(fp1, encoding="utf-8")
+    with open(join(SRC_DIR,"features","class.log"), 'r') as class_log:
+        class_log_data = json.load(class_log)
+    with open(join(DATA_PATH,"classification_with_category.csv")) as csvfile:
+        reader = csv.reader(csvfile)
+        class_cat_data = []
+        next(reader)
+        for row in reader:
+            class_cat_data.append(row)
+    with open(join(DATA_PATH,"blockstyle_class.csv")) as csvfile2:
+        reader = csv.reader(csvfile2)
+        blockstyle_data = []
+        for row in reader:
+            blockstyle_data.append(row)
+    for _,doc_id,_,_,cat,_ in class_cat_data:
+        cat = int(cat)
+        block_processed = doc_id in class_log_data and "block" in class_log_data[doc_id]
+        if(not(cat in allowed) or doc_id in time_data or block_processed):
+            continue
+        abs_filepath = join(PDF_PATH,doc_id+".pdf")
+        blockstyles = extract_blockstyle_information(abs_filepath, doc_id, categories[cat])
+        class_log_data[doc_id] = ["block"]
+        # generate_images(abs_filepath, doc_id)
+        for i,bs in enumerate(blockstyles):
+            blockstyle_data.append((doc_id,i+1,bs))
+        with open(join(DATA_PATH,"blockstyle_class.csv"), 'w') as csvfile3:
+            writer = csv.writer(csvfile3, delimiter=",")
+            writer.writerows(blockstyle_data)
+        with open(join(SRC_DIR,"features","class.log"), 'w') as class_log:
+            json.dump(class_log_data, class_log)
+
+def extract_blockstyle_information(abs_filepath, doc_id, cat):
+    (f_dict, abs_filepath, doc) = get_structure_features(abs_filepath, False)
+    print("class: {} \t id: {} \t pages: {}".format(cat,doc_id,len(doc.pages)))
+    blockstyles = (np.ones(len(doc.pages))*-1)
+    if(len(doc.pages)<=3):
+        show_document_page(abs_filepath, 1)
+        for i in range(len(doc.pages)):
+            confirm = input("none?")
+            blockstyles[i] = 0
+            if(confirm=="u"):
+                blockstyles[i] = -1
+                print("undefined!")
+            elif(confirm!=""):
+                blockstyles[i] = 1
+                print("block!")
+        doc.clean_files()
+        return blockstyles.astype(int)
+
+    show_document_page(abs_filepath, 1)
+    print("EASY")
+    show_none = input("show none?")==""
+    show_block = input("show block?")==""
+
+    none_easy_ones = []
+    for i in range(len(doc.pages)):
+        p_num = i+1
+        guess = "unsure"
+        if(doc.stat_lists["blockstyles_lines_pp"][i] >  min(6,doc.stat_lists["not_blockstyles_lines_pp"][i])):
+            guess = "block"
+        elif(doc.stat_lists["blockstyles_lines_pp"][i] <= doc.stat_lists["not_blockstyles_lines_pp"][i]/4):
+            guess = "none"
+        print("page: {} \t block: {} \t none: {} \t guess: {}".format(p_num,doc.stat_lists["blockstyles_lines_pp"][i], doc.stat_lists["not_blockstyles_lines_pp"][i], guess))
+
+        if(guess=="block"):
+            blockstyles[i] = 1
+            if(show_block):
+                show_document_page(abs_filepath, p_num)
+                confirm = input("block?")
+                if(confirm=="u"):
+                    blockstyles[i] = -1
+                    print("undefined!")
+                elif(confirm=="all none"):
+                    blockstyles[i:] = 0
+                    break
+                elif(confirm=="all undef"):
+                    blockstyles[i:] = -1
+                    break
+                elif(confirm!=""):
+                    blockstyles[i] = 0
+                    print("none!")
+        elif(guess=="none"):
+            blockstyles[i] = 0
+            if(show_none):
+                show_document_page(abs_filepath, p_num)
+                confirm = input("none?")
+                if(confirm=="u"):
+                    blockstyles[i] = -1
+                    print("undefined!")
+                elif(confirm=="all none"):
+                    blockstyles[i:] = 0
+                    break
+                elif(confirm=="all undef"):
+                    blockstyles[i:] = -1
+                    break
+                elif(confirm!=""):
+                    blockstyles[i] = 0
+                    print("block!")
+        else:
+            blockstyles[i] = -1
+            none_easy_ones.append(i)
+    if(len(none_easy_ones)==0):
+        doc.clean_files()
+        return blockstyles.astype(int)
+
+    print("\n\n\n {} TRICKY CASES".format(len(none_easy_ones)))
+    if(input("Judge?")!=""):
+        doc.clean_files()
+        return blockstyles.astype(int)
+    show = input("Show?")==""
+    default = int(input("default? Enter for None")!="")
+    input_val = "block?" if default else "none?"
+    changed_val = "none!" if default else "block!"
+
+    for i in none_easy_ones:
+        print("page: {} \t block: {} \t none: {}".format(i+1,doc.stat_lists["blockstyles_lines_pp"][i], doc.stat_lists["not_blockstyles_lines_pp"][i]))
+        blockstyles[i] = default
+        if(show):
+            show_document_page(abs_filepath, i+1)
+            confirm = input(input_val)
+            if(confirm!=""):
+                blockstyles[i] = int(not(default))
+                print("changed!")
+    doc.clean_files()
+    return blockstyles.astype(int)
+
 
 
 def find_neg_values(json_file):
@@ -2090,6 +2249,7 @@ if __name__ == "__main__":
         "46fe2f38e7e10be55cecc7e87599e88a"
     ]
 
+
     doc_dict = {
         "powerpoint1" : "76ae7c120910a7830a1c0e0262d8cc5e.pdf",
         "powerpoint2" : "15a25c0553f25d4edcc288028b384cba.pdf",
@@ -2109,8 +2269,13 @@ if __name__ == "__main__":
         "warning" : "db8f79a0bbe5bb518a54eb92f5b9b499.pdf",
         "image_problem" : "d659934e59b496a11b7bffb22eabbba9.pdf"
     }
+    # pdf1 = "ca13bf1246f3d4f1eac8362729a17c3e"
+    # pdf2 = "353d6d426b03277d82f5b1f526101a86"
+    # pdf3 = "ea9549a004b66ffa18cd892456adf43c"
+    # get_structure_features(join(PDF_PATH,pdf2+".pdf"))
+    generate_blockstyle_training_images()
 
-    find_neg_values("../../data/pre_extracted_data/xml_text_structure_new.json")
+    # find_neg_values("../../data/pre_extracted_data/xml_text_structure_new.json")
     # neg_list = find_neg_doc_ids("../../data/pre_extracted_data/xml_text_structure_new.json")
     # check_extraction_neg(neg_list)
 
