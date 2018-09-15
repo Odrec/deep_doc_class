@@ -10,12 +10,12 @@ import csv, json, codecs, re
 import numpy as np
 from multiprocessing import Pool
 
-from pdfminer.pdfdocument import PDFDocument
-from pdfminer.pdfpage import PDFPage
-from pdfminer.pdfparser import PDFParser
+# from pdfminer.pdfdocument import PDFDocument
+# from pdfminer.pdfpage import PDFPage
+from pdfminer.pdfparser import PDFParser, PDFDocument, PDFPage
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import PDFPageAggregator
-from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage
+from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, LTChar, LTRect, LTCurve
 
 from os.path import basename, join, splitext, isfile, isdir, realpath
 
@@ -139,18 +139,24 @@ def process_file(file):
     try:
         parser = PDFParser(fp)
         doc = PDFDocument(parser)
+        parser.set_document(doc)
+        doc.set_parser(parser)
+        doc.initialize('')
         rsrcmgr = PDFResourceManager()
         laparams = LAParams()
         device = PDFPageAggregator(rsrcmgr, laparams=laparams)
         interpreter = PDFPageInterpreter(rsrcmgr, device)
         num_page = 0
         text = ""
-        for page in PDFPage.create_pages(doc):
+        for page in doc.get_pages(): # PDFPage.create_pages(doc):
             num_page += 1
+            print(num_page)
             interpreter.process_page(page)
             layout = device.get_result()
             num_obj = 0
             for lt_obj in layout:
+                if(not(isinstance(lt_obj, LTChar))):
+                    print(lt_obj)
                 text += parse_layout(filename, dict_structure, num_page, lt_obj, num_obj)
                 num_obj += 1
     except Exception as e:
@@ -168,6 +174,8 @@ def parse_layout(filename, dict_structure, page, lt_obj, num_obj, num_subobj=0):
     if isinstance(lt_obj, LTFigure):
         num_subobj = 0
         for lt_obj_int in lt_obj:
+            if(not(isinstance(lt_obj, LTChar))):
+                print(lt_obj_int)
             parse_layout(filename, dict_structure, page, lt_obj_int, num_obj, num_subobj)
             num_subobj += 1
     else:
@@ -192,6 +200,7 @@ def get_structure_values_dict(boxinfo, text):
     textbox_list, imagebox_list = get_boxes(boxinfo)
     ntb, txtinfo = get_textbox_info(textbox_list, num_pages, text)
     nib, imginfo = get_imagebox_info(imagebox_list, num_pages)
+    print(nib)
     copyright_symbol = text_contains_copyright_symbol(text)
     if nib != 0:
         ratio_tb_ib = ntb/nib
@@ -281,6 +290,8 @@ if __name__ == "__main__":
     # pre_extract_pdf_structure_boxinfo(doc_dir=join(DATA_PATH,"files_test"), doc_ids=None,
     # boxinfo_file=join(DATA_PATH,"boxinfo_files_test.json"),
     # num_cores=1)
+    filename = "bad_page.pdf";
+    # filename = "good_page.pdf";
 
-    file = "/home/kai/Workspace/deep_doc_class/deep_doc_class/data/files_test/76933924bff424b1f2bbb8ee27430f2a.pdf"
+    file = "/home/kai/Workspace/deep_doc_class/deep_doc_class/data/files_test/" + filename
     process_file(file)

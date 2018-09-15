@@ -32,18 +32,18 @@ import pyocr.builders
 import io
 import re
 
+import shutil
 from shutil import copy
 
-TMP_DIR = join(DATA_PATH,"tmp2")
+TMP_DIR = join(DATA_PATH,"structure_tmp")
 
 FNULL = open(os.devnull, 'w')
 
 FEATURES = {
     "count_pages":0,
-
     "count_outline_items":0,
 
-    # FONT STUFF
+    # FONTS
     "count_fonts":0,
     "count_font_colors":0,
     "count_font_families":0,
@@ -51,93 +51,51 @@ FEATURES = {
     "min_font_size":0,
     "main_font_size":0,
     "perc_main_font_word":0,
-    # "other_font_word_perc":0,
 
-    # IMAGE STUFF (space always as ratio)
-    "count_images":0,                # total count
-    "total_image_space":0,          # percentage of total image space
-    # "mean_image_space_pp":0,        # mean space per page
-    "dev_image_space_pp":0,         # std of space per page
-    "max_image_space_pp":0,            # maximum space per page
-    "min_image_space_pp":0,            # minimum space per page
-    "biggest_image":0,              # biggest image
-    "samllest_image":0,             # smallest image
-    # "mean_image_size":0,            # mean size of the images
-    # "dev_image_size":0,             # std of the size of the images
-
-    # TEXT STUFF
+    # CONTENT
     "text":"",
     "bold_text":"",
     "first_100_words":"",
     "last_100_words":"",
     "copyright_symbol":0,
 
-    "count_words":0,
-    "count_bold_words":0,
-    "count_annotations":0,
-    "count_lines":0,
-    "count_textboxes":0,
-    "count_blockstyles":0,
-
-    # "mean_words_pp":0,
-    # "mean_bold_words_pp":0,
-    # "mean_lines_pp":0,
-    # "mean_textboxes_pp":0,
-    # "mean_blockstyles_pp":0,
-    # "mean_textbox_space_pp":0,
-    # "mean_blockstyle_space_pp":0,
-
+    # WORDS
+    "m_words_pp":0,
+    "m_lines_pp":0,
+    "m_words_per_line":0,
+    "m_bold_words_pp":0,
+    "m_annotations_pp":0,
     "dev_words_pp":0,
-    "dev_lines_pp":0,
-    "dev_textboxes_pp":0,
-    "dev_blockstyles_pp":0,
-    "dev_textbox_space_pp":0,
-    "dev_blockstyle_space_pp":0,
 
-    "max_words_pp":0,
-    # "max_bold_words_pp":0,
-    "max_lines_pp":0,
-    "max_textboxes_pp":0,
-    "max_blockstyles_pp":0,
-    "max_textbox_space_pp":0,
-    "max_blockstyle_space_pp":0,
+    # IMAGES AND FREE
+    "image_error":0,
+    "m_image_space_pp":0,
+    "m_images_pp":0,
+    "max_image_page_ratio":0,
+    "max_free_space_pp":0,
 
-    "min_words_pp":0,
-    # "min_bold_words_pp":0,
-    "min_lines_pp":0,
-    "min_textboxes_pp":0,
-    "min_blockstyles_pp":0,
-    "min_textbox_space_pp":0,
-    "min_blockstyle_space_pp":0,
-
-    "mean_words_per_line":0,
-    "dev_words_per_line":0,
-    "mean_lines_per_blockstyle":0,
-    "dev_lines_per_blockstyle":0,
-    "max_lines_per_blockstyle":0,
-
-    #STRUCTURE STUFF
-    "modal_right":0,
-    "perc_modal_right":0,
-    "max_right":0,
-    "modal_left":0,
-    "perc_modal_left":0,
-    "max_lefts":0,
+    # TEXT BOXES
+    "m_textboxes_pp":0,
+    "m_lines_per_textbox":0,
+    "m_blockstyles_pp":0,
+    "m_lines_per_blockstyle":0,
 
     "modal_textbox_columns_pp":0,
     "perc_modal_textbox_columns_pp":0,
-    "min_textbox_columns_pp":0,
-    "max_textbox_columns_pp":0,
     "modal_blockstyle_columns_pp":0,
     "perc_modal_blockstyle_columns_pp":0,
-    "min_blockstyle_columns_pp":0,
-    "max_blockstyle_columns_pp":0,
 
-    #FREE STUFF
-    "total_free_space":0,
-    "dev_free_space_pp":0,
-    "max_free_space_pp":0,
-    "min_free_space_pp":0
+    "m_textbox_space_pp":0,
+    "m_blockstyle_space_pp":0,
+
+    # MARGINS
+    "modal_right":0,
+    "perc_modal_right":0,
+    "modal_left":0,
+    "perc_modal_left":0,
+    "max_right":0,
+    "max_left":0,
+    "min_left":0,
 }
 
 ###### Helpers #######
@@ -184,58 +142,6 @@ def print_bcolors(formats, text):
 		formated_text += bcolors[format]
 	formated_text += text + bcolors["reset"]
 	return formated_text
-
-def pause():
-    """
-    Pause the execution until Enter gets pressed
-    """
-    input("Press Enter to continue...")
-    return
-
-###### Image Stuff #######
-def get_text_from_pil_img(pil_image, lang="deu"):
-    if(not(lang in ["eng", "deu", "fra"])):
-        print("Not the right language!!!\n Languages are: deu, eng, fra")
-
-    tool = pyocr.get_available_tools()[0]
-
-    txt = tool.image_to_string(
-        pil_image,
-        lang=lang)
-
-    return txt
-
-def img_stuff(img_list):
-    entropy = []
-    color = False
-    for img_path in img_list:
-        if(not(isfile(img_path))):
-            continue
-        pil_image = PI.open(img_path)
-        # with PI.open(io.BytesIO(page)) as pil_image:
-        gs_image = pil_image.convert("L")
-        hist = np.array(gs_image.histogram())
-        hist = np.divide(hist,np.sum(hist))
-        hist[hist==0] = 1
-        e = -np.sum(np.multiply(hist, np.log2(hist)))
-        entropy.append(e)
-
-        # if(not(color)):
-        #     col_image = pil_image.convert('RGB')
-        #     np_image = np.array(col_image)
-        #     if((np_image[:,:,0]==np_image[:,:,1])==(np_image[:,:,1]==np_image[:,:,2])):
-        #         color = True
-
-        os.remove(img_path)
-
-    if(len(entropy)==0):
-        print("Zero images loaded. Either pdf is empty or Ghostscript didn't create images correctly.")
-        mean_entropy = np.nan
-    else:
-        mean_entropy = np.mean(entropy)
-    return mean_entropy, color
-
-
 
 ###### Parsing Classes #######
 class Text_Box(object):
@@ -328,6 +234,7 @@ class Page(object):
     def structure_content_elements(self, doc):
         page_line_index = 0
         invisible_fonts = []
+        image_counter = np.zeros(50)
         for elem in self.xml_page:
             if(elem.tag=="fontspec"):
                 if(int(elem.attrib["size"])<=0):
@@ -358,12 +265,18 @@ class Page(object):
                     top = 0
                 if(left<0):
                     left = 0
+                if(top > self.height or left > self.width):
+                    continue
                 if((top+height)>self.height):
                     height = self.height-top
                 if((left+width)>self.width):
                     width = self.width-left
                 img_rect = (left,top,left+width,top+height)
                 size = height*width
+                if(size<50):
+                    image_counter[size] += 1
+                    if(image_counter[size] > 50):
+                        raise ValueError("Too many images", "ImageError")
                 if(not(img_rect in self.img_rects) and size>1):
                     overlap = 0
                     for r in self.img_rects:
@@ -566,7 +479,6 @@ class Page(object):
                 merges.append((sorted_lines[pos-1][1],sorted_lines[pos][1]))
         for m in reversed(merges):
             self.merge_lines(m)
-
 
     def merge_lines(self, merge_tuple):
         # get the line index of the lines which shall be merged
@@ -835,7 +747,9 @@ class Document(object):
             "textbox_columns":[],
             "blockstyle_columns":[],
             "blockstyles_words_pp":[],
-            "not_blockstyles_words_pp":[]
+            "not_blockstyles_words_pp":[],
+            "not_blockstyles_lines_pp":[],
+            "blockstyles_lines_pp":[]
         }
 
         self.rights = {}
@@ -856,7 +770,11 @@ class Document(object):
         # if no file was created the pdf could not be accessedd
         except FileNotFoundError:
             if(err.split()[0]=="Permission"):
-                return "permission_error"
+                return err
+            elif(err.split()[0]=="Syntax"):
+                return err
+            elif(err.split()[0]=="Command"):
+                return err
             return "pw_protected"
 
         # parse the xml
@@ -909,11 +827,9 @@ class Document(object):
 
     def get_xml_structure(self, img_flag=True):
         args = ["pdftohtml"]
-        # if(img_flag):
-        #     args += ["-i"]
-        #args += ["-xml","-enc","Latin1", self.doc_path]
-        # args += ["-xml","-enc","UTF-8", self.doc_path]
-        args += ["-f", "2", "-l", "12", "-xml","-enc","UTF-8", self.doc_path]
+        if(img_flag):
+            args += ["-i"]
+        args += ["-xml","-enc","UTF-8", self.doc_path]
         err = subprocess.Popen(args, stdout=subprocess.PIPE,
             stderr=subprocess.PIPE).communicate()[1].decode(errors="ignore")
         self.xml_path = splitext(self.doc_path)[0] + ".xml"
@@ -935,8 +851,6 @@ class Document(object):
         self.update_page_stats(page)
         self.pages.append(page)
 
-        # pause()
-
     def process_outline(self, xml_outline):
         outline_iter = xml_outline.iter()
         next(outline_iter)
@@ -955,6 +869,8 @@ class Document(object):
         self.stat_lists["words_pp"].append(0)
         self.stat_lists["not_blockstyles_words_pp"].append(0)
         self.stat_lists["blockstyles_words_pp"].append(0)
+        self.stat_lists["not_blockstyles_lines_pp"].append(0)
+        self.stat_lists["blockstyles_lines_pp"].append(0)
         for line in page.text_lines:
             if(not(line is None)):
                 self.text += line[5] + " "
@@ -983,7 +899,8 @@ class Document(object):
                     self.counts["textboxes"] += 1
                     self.stat_lists["textboxes_pp"][-1] += 1
                     self.stat_lists["lines_ptb"].append(len(tb.line_ids))
-                    self.stat_lists["not_blockstyles_words_pp"] += len(tb.text.split())
+                    self.stat_lists["not_blockstyles_words_pp"][-1] += len(tb.text.split())
+                    self.stat_lists["not_blockstyles_lines_pp"][-1] += len(tb.line_ids)
                     if(not(tbox_rect in tb_rects)):
                         self.stat_lists["textbox_space_pp"][-1] += (right-left) * (bot-top)
                         for r in page.img_rects:
@@ -1011,7 +928,8 @@ class Document(object):
                     self.counts["blockstyles"] += 1
                     self.stat_lists["blockstyles_pp"][-1] += 1
                     self.stat_lists["lines_pbs"].append(len(tb.line_ids))
-                    self.stat_lists["blockstyles_words_pp"] += len(tb.text.split())
+                    self.stat_lists["blockstyles_words_pp"][-1] += len(tb.text.split())
+                    self.stat_lists["blockstyles_lines_pp"][-1] += len(tb.line_ids)
                     if(not(tbox_rect in tb_rects)):
                         self.stat_lists["blockstyle_space_pp"][-1] += (right-left) * (bot-top)
                         for r in page.img_rects:
@@ -1029,6 +947,18 @@ class Document(object):
         self.stat_lists["page_space_pp"].append(page.space)
         self.stat_lists["image_space_pp"].append(page.image_space)
         self.stat_lists["free_space_pp"].append(page.space-page.image_space-self.stat_lists["blockstyle_space_pp"][-1]-self.stat_lists["textbox_space_pp"][-1]+text_img_overlap+tb_tb_o)
+
+        if(page.space-page.image_space-self.stat_lists["blockstyle_space_pp"][-1]-self.stat_lists["textbox_space_pp"][-1]+text_img_overlap+tb_tb_o<0):
+            print(page.number)
+            print("page {}".format(page.space))
+            print("image {}".format(page.image_space))
+            print("block {}".format(self.stat_lists["blockstyle_space_pp"][-1]))
+            print("tbox {}".format(self.stat_lists["textbox_space_pp"][-1]))
+            print("img_ov {}".format(text_img_overlap))
+            print("tb_ov {}".format(tb_tb_o))
+            print("free {}".format(self.stat_lists["free_space_pp"][-1]))
+
+
         for key, vals in page.lefts.items():
             try:
                 self.lefts[key] += len(vals)
@@ -1043,6 +973,7 @@ class Document(object):
         # TODO: make column functions page functions since they are just accessing page attributes
         self.stat_lists["blockstyle_columns"].append(self.get_blockstyle_columns(page))
         self.stat_lists["textbox_columns"].append(self.get_textbox_columns(page))
+
 
     def get_blockstyle_columns(self, page):
         block_columns = 0
@@ -1114,17 +1045,15 @@ class Document(object):
                     textbox_columns += 1
         return textbox_columns
 
-    def get_feature_dict(self):
+    def get_feature_dict(self, image_error):
         features = FEATURES.copy()
 
         # pages
-        features["count_pages"] = self.counts["pages"]
-        page_spaces = self.stat_lists["page_space_pp"]
-        total_page_space = sum(page_spaces)
-
+        pages = self.counts["pages"]
+        features["count_pages"] = pages
         features["count_outline_items"] = self.counts["outline_items"]
 
-        # font stuff
+        # FONTS
         if(self.fontspecs["count"]>0):
             features["count_fonts"] = self.fontspecs["count"]
             features["count_font_colors"] = len(self.fontspecs["colors"])
@@ -1137,19 +1066,21 @@ class Document(object):
                 features["main_font_size"] = self.fontspecs["sizes"][main_font_index]
                 features["perc_main_font_word"] = self.fontspecs["spec_counts"][main_font_index]/np.sum(self.fontspecs["spec_counts"])
 
-        # image stuff (space always as ratio)
+        # IMAGES
+        features["image_error"] = int(image_error)
+        page_spaces = self.stat_lists["page_space_pp"]
+        total_page_space = sum(page_spaces)
+
         if(len(self.images["sizes"])>0):
             image_spaces = self.stat_lists["image_space_pp"]
             total_image_space = sum(image_spaces)
             image_page_ratios = [image_spaces[i]/page_spaces[i] for i in range(len(image_spaces))]
-
-            features["count_images"] = len(self.images["sizes"])
-            features["total_image_space"] = total_image_space/total_page_space
-            features["dev_image_space_pp"] = np.std(image_page_ratios)
-            features["max_image_space_pp"] = max(image_page_ratios)
-            features["min_image_space_pp"] = min(image_page_ratios)
-            features["biggest_image"] = max(self.images["sizes"])
-            features["samllest_image"] = min(self.images["sizes"])
+            features["m_images_pp"] = len(self.images["sizes"])/pages
+            features["m_image_space_pp"] = total_image_space/total_page_space
+            features["max_image_page_ratio"] = max(image_page_ratios)
+        free_spaces = self.stat_lists["free_space_pp"]
+        total_free_space = sum(free_spaces)
+        features["m_free_space_pp"] = total_free_space/total_page_space
 
         if(len(self.text)>0):
             # TEXT STUFF
@@ -1160,92 +1091,43 @@ class Document(object):
             features["last_100_words"] = " ".join(text_list[-100:])
             features["copyright_symbol"] = text_contains_copyright_symbol(self.text)
 
-            features["count_words"] = self.counts["words"]
-            features["count_bold_words"] = self.counts["bold_words"]
-            features["count_annotations"] = self.counts["annotations"]
-            features["count_lines"] = self.counts["lines"]
-            features["count_textboxes"] = self.counts["textboxes"]
-            features["count_blockstyles"] = self.counts["blockstyles"]
-
-            features["dev_words_pp"] = np.std(self.stat_lists["words_pp"])
-            features["dev_lines_pp"] = np.std(self.stat_lists["lines_pp"])
-            features["max_words_pp"] = max(self.stat_lists["words_pp"])
-            features["max_lines_pp"] = max(self.stat_lists["lines_pp"])
-            # features["max_bold_words_pp"] = max(self.stat_lists["words"])
-            features["min_words_pp"] = min(self.stat_lists["words_pp"])
-            features["min_lines_pp"] = min(self.stat_lists["lines_pp"])
-            # features["min_bold_words_pp"] = min(self.stat_lists["words"])
-
+            features["m_words_pp"] = np.mean(self.stat_lists["words_pp"])
+            features["m_lines_pp"] = np.mean(self.stat_lists["lines_pp"])
+            features["m_bold_words_pp"] = self.counts["bold_words"]/pages
+            features["m_annotations_pp"] = self.counts["annotations"]/pages
         if(len(self.stat_lists["word_pl"])>0):
             features["mean_words_per_line"] = np.mean(self.stat_lists["word_pl"])
-            features["dev_words_per_line"] = np.std(self.stat_lists["word_pl"])
 
-            if(self.counts["textboxes"]>0):
-                textbox_spaces = self.stat_lists["textbox_space_pp"]
-                total_textbox_space = sum(textbox_spaces)
-                textbox_page_ratios = [textbox_spaces[i]/page_spaces[i] for i in range(len(textbox_spaces))]
-                features["total_textbox_space"] = total_textbox_space/total_page_space
+        if(self.counts["textboxes"]>0):
+            features["m_textboxes_pp"] = self.counts["textboxes"]/pages
+            features["m_textbox_space_pp"]  = np.mean(self.stat_lists["textbox_space_pp"])
+            features["m_lines_per_textbox"] = np.mean(self.stat_lists["lines_ptb"])
+            textbox_columns = self.stat_lists["textbox_columns"]
+            features["modal_textbox_columns_pp"] = stats.mode(textbox_columns)[0][0]
+            features["perc_modal_textbox_columns_pp"] = stats.mode(textbox_columns)[1][0]/self.counts["pages"]
 
-                features["dev_textboxes_pp"] = np.std(self.stat_lists["textboxes_pp"])
-                features["dev_textbox_space_pp"] = np.std(textbox_page_ratios)
-                features["max_textboxes_pp"] = max(self.stat_lists["textboxes_pp"])
-                features["max_textbox_space_pp"] = max(textbox_page_ratios)
-                features["min_textboxes_pp"] = min(self.stat_lists["textboxes_pp"])
-                features["min_textbox_space_pp"] = min(textbox_page_ratios)
-                features["mean_lines_per_textbox"] = np.mean(self.stat_lists["lines_ptb"])
-                features["dev_lines_per_textbox"] = np.std(self.stat_lists["lines_ptb"])
-                features["max_lines_per_textbox"] = max(self.stat_lists["lines_ptb"])
+        if(self.counts["blockstyles"]>0):
+            features["m_blockstyles_pp"] = self.counts["blockstyles"]/pages
+            features["m_blockstyle_space_pp"]  = np.mean(self.stat_lists["blockstyle_space_pp"])
+            features["m_lines_per_blockstyle"] = np.mean(self.stat_lists["lines_pbs"])
+            blockstyle_columns = self.stat_lists["blockstyle_columns"]
+            features["modal_blockstyle_columns_pp"] = stats.mode(blockstyle_columns)[0][0]
+            features["perc_modal_blockstyle_columns_pp"] = stats.mode(blockstyle_columns)[1][0]/self.counts["pages"]
 
-                textbox_columns = self.stat_lists["textbox_columns"]
-                features["modal_textbox_columns_pp"] = stats.mode(textbox_columns)[0][0]
-                features["perc_modal_textbox_columns_pp"] = stats.mode(textbox_columns)[1][0]/self.counts["pages"]
-                features["min_textbox_columns_pp"] = min(textbox_columns)
-                features["max_textbox_columns_pp"] = max(textbox_columns)
-
-            if(self.counts["blockstyles"]>0):
-                blockstyle_spaces = self.stat_lists["blockstyle_space_pp"]
-                total_blockstyle_space = sum(blockstyle_spaces)
-                blockstyle_page_ratios = [blockstyle_spaces[i]/page_spaces[i] for i in range(len(blockstyle_spaces))]
-                features["total_blockstyle_space"] = total_blockstyle_space/total_page_space
-
-                features["dev_blockstyles_pp"] = np.std(self.stat_lists["blockstyles_pp"])
-                features["dev_blockstyle_space_pp"] = np.std(blockstyle_page_ratios)
-                features["max_blockstyles_pp"] = max(self.stat_lists["blockstyles_pp"])
-                features["max_blockstyle_space_pp"] = max(blockstyle_page_ratios)
-                features["min_blockstyles_pp"] = min(self.stat_lists["blockstyles_pp"])
-                features["min_blockstyle_space_pp"] = min(blockstyle_page_ratios)
-                features["mean_lines_per_blockstyle"] = np.mean(self.stat_lists["lines_pbs"])
-                features["dev_lines_per_blockstyle"] = np.std(self.stat_lists["lines_pbs"])
-                features["max_lines_per_blockstyle"] = max(self.stat_lists["lines_pbs"])
-
-                blockstyle_columns = self.stat_lists["blockstyle_columns"]
-                features["modal_blockstyle_columns_pp"] = stats.mode(textbox_columns)[0][0]
-                features["perc_modal_blockstyle_columns_pp"] = stats.mode(textbox_columns)[1][0]/self.counts["pages"]
-                features["min_blockstyle_columns_pp"] = min(textbox_columns)
-                features["max_blockstyle_columns_pp"] = max(textbox_columns)
-
-            #STRUCTURE STUFF
-            if(len(self.rights)>0):
-                max_right, max_right_count = max(self.rights.items(), key=lambda x: x[1])
-                total_rights = np.sum(list(self.rights.values()))
-                features["modal_right"] = max_right
-                features["perc_modal_right"] = max_right_count/total_rights
-                features["max_right"] = max(self.rights.keys())
-            if(len(self.lefts)>0):
-                max_left, max_left_count = max(self.lefts.items(), key=lambda x: x[1])
-                total_lefts = np.sum(list(self.lefts.values()))
-                features["modal_left"] = max_left
-                features["perc_modal_left"] = max_left_count/total_lefts
-                features["max_lefts"] = max(self.lefts.keys())
-
-        #FREE STUFF
-        free_spaces = self.stat_lists["free_space_pp"]
-        total_free_space = sum(free_spaces)
-        free_page_ratios = [free_spaces[i]/page_spaces[i] for i in range(len(free_spaces))]
-        features["total_free_space"] = total_free_space/total_page_space
-        features["dev_free_space_pp"] = np.std(free_page_ratios)
-        features["max_free_space_pp"] = max(free_page_ratios)
-        features["min_free_space_pp"] = min(free_page_ratios)
+        # MARGINS
+        if(len(self.rights)>0):
+            max_right, max_right_count = max(self.rights.items(), key=lambda x: x[1])
+            total_rights = np.sum(list(self.rights.values()))
+            features["modal_right"] = max_right
+            features["perc_modal_right"] = max_right_count/total_rights
+            features["max_right"] = max(self.rights.keys())
+        if(len(self.lefts)>0):
+            max_left, max_left_count = max(self.lefts.items(), key=lambda x: x[1])
+            total_lefts = np.sum(list(self.lefts.values()))
+            features["modal_left"] = max_left
+            features["perc_modal_left"] = max_left_count/total_lefts
+            features["max_left"] = max(self.lefts.keys())
+            features["min_left"] = min(self.lefts.keys())
 
         for k,v in features.items():
             if(not(type(v)==str)):
@@ -1264,7 +1146,17 @@ class Document(object):
                 features[k] = np.float64(v)
         return features
 
-    def clean_files(self):
+    def clean_files(self, use_temp, image_error=False):
+        if(image_error):
+            self.images["pathes"] = []
+            doc_id = splitext(basename(self.doc_path))[0]
+            for root, dirs, fls in os.walk(dirname(self.doc_path)):
+                for name in fls:
+                    ext = splitext(basename(name))[1]
+                    filename = splitext(basename(name))[0]
+                    if(doc_id in filename and not(ext in [".pdf", ".xml"])):
+                        self.images["pathes"].append(join(root,name))
+
         for img_path in self.images["pathes"]:
             if(isfile(img_path)):
                 os.remove(img_path)
@@ -1272,12 +1164,13 @@ class Document(object):
                 print("Image not found: " + str(img_path))
         xml_file = splitext(self.doc_path)[0] + ".xml"
         if(isfile(xml_file)):
-            #os.rename(xml_file, join(DATA_PATH, "xml_structure_files", self.doc_id+".xml"))
             os.remove(xml_file)
         else:
             print("Password protected: " + self.doc_id)
-        if(isfile(self.doc_path)):
-            os.remove(self.doc_path)
+
+        if(use_temp):
+            if(isfile(self.doc_path)):
+                os.remove(self.doc_path)
 
     def remove_invalid_xml_char(self, content):
         content = list(content)
@@ -1312,21 +1205,39 @@ class Document(object):
         return content
 
 
-def get_structure_features(abs_filepath):
+def get_structure_features(abs_filepath, log=False, clean=True, use_temp=True):
     s=time()
-    copy(abs_filepath,TMP_DIR)
-    tmp_file_path = join(TMP_DIR,basename(abs_filepath))
-    doc = Document(tmp_file_path)
-    err_message = doc.process_xml(img_flag=False)
+    doc =  None
+    if(use_temp):
+        copy(abs_filepath,TMP_DIR)
+        tmp_file_path = join(TMP_DIR,basename(abs_filepath))
+        doc = Document(tmp_file_path)
+    else:
+        doc = Document(abs_filepath)
+    err_message = False
+    img_err = False
+    try:
+        err_message = doc.process_xml(img_flag=False)
+    except ValueError as err:
+        print(err)
+        if(err.args[1] == "ImageError"):
+            img_err = True
+            doc.clean_files(False, img_err)
+            if(use_temp):
+                doc = Document(tmp_file_path)
+            else:
+                doc = Document(abs_filepath)
+            err_message = doc.process_xml(img_flag=True)
     if(not(err_message)):
-        f_dict = doc.get_feature_dict()
+        f_dict = doc.get_feature_dict(img_err)
     else:
         f_dict = doc.get_error_features(err_message)
-    # doc.clean_files()
+    if(clean):
+        doc.clean_files(use_temp)
     doc = None
-    neg_feat = checkDictForNeg(f_dict)
-    extract_time = time()-s
-    log_time(basename(abs_filepath), extract_time)
+    if(log):
+        extract_time = time()-s
+        log_time(basename(abs_filepath), extract_time)
     return (f_dict, abs_filepath)
 
 def log_time(doc_id, extract_time):
@@ -1340,21 +1251,6 @@ def log_time(doc_id, extract_time):
 
     with open(log_file, 'w') as fp:
         json.dump(time_data, fp, indent=4)
-
-def checkDictForNeg(check_dict):
-    neg_feat = []
-    for feat,val in check_dict.items():
-        try:
-            num_val = float(val)
-            if(num_val<0):
-                neg_feat.append(feat)
-                continue
-        except ValueError:
-            continue
-        except Exception as e:
-            print(e)
-            continue
-    return neg_feat
 
 def rectOverlap(a, b):
     dx = min(a[2], b[2]) - max(a[0], b[0])
@@ -1433,7 +1329,7 @@ def pre_extract_pdf_structure_data_to_file(doc_dir, text_dir, structure_file, do
         else:
             res = []
             for f in batch_files:
-                res.append(get_structure_features(f))
+                res.append(get_structure_features(f, True, True, True))
         res_fix={}
         for x in res:
             d_id = splitext(basename(x[1]))[0]
@@ -1458,23 +1354,6 @@ def pre_extract_pdf_structure_data_to_file(doc_dir, text_dir, structure_file, do
         structure_data = None
         res_fix = None
     shutil.rmtree(TMP_DIR)
-
-
-def load_single_property(doc_ids, properties_path, field):
-
-    # get pdfinfo dict information
-    structure_data = None
-    properties = []
-    with open(properties_path,"r") as f:
-        structure_data = json.load(f)
-    for doc_id in doc_ids:
-        try:
-            properties.append(structure_data[doc_id][field])
-        except:
-            print("No structure data: " + doc_id)
-            properties.append("")
-
-    return properties
 
 def remove_invalid_xml_char(c):
     illegal_unichrs = [ (0x00, 0x08), (0x0B, 0x1F), (0x7F, 0x84), (0x86, 0x9F),
@@ -1501,20 +1380,34 @@ def text_contains_copyright_symbol(text):
     symbols = re.findall(r'(©|[^a-z]doi[^a-z]|[^a-z]isbn[^a-z])', text.lower())
     return int(len(symbols)>0)
 
-def show_document_page(filename, page):
-    page_arg = "--page-label=" + str(page)
-    args = ["evince", "--fullscreen", page_arg, filename]
-    plot = subprocess.Popen(args, stdout=FNULL, stderr=subprocess.STDOUT)
-    return
+def get_unprocessed_docs(structure_file, doc_dir):
+    files = []
+    already_processed = 0
+    with open(structure_file, 'r') as fp:
+        structure_data = json.load(fp, encoding="utf-8")
+    for root, dirs, fls in os.walk(doc_dir):
+        for name in fls:
+            doc_id = splitext(basename(name))[0]
+            ext = splitext(basename(name))[1]
+            if(ext == '.pdf'):
+                if(not(doc_id in structure_data)):
+                    files.append(doc_id)
+                else:
+                    already_processed += 1
+            else:
+                print("Contains none pdf file: " + name)
+    print(str(len(files)) +" files to go")
+    print(str(already_processed) +" already processed")
+    return files
 
 if __name__ == "__main__":
-
+    doc_ids = get_unprocessed_docs("../../data/pre_extracted_data/xml_text_structure.json", "../../data/pdf_files")
     s1 = time()
     pre_extract_pdf_structure_data_to_file(
         doc_dir="../../data/pdf_files",
-        text_dir="../../data/xml_text_files_new",
-        structure_file="../../data/pre_extracted_data/xml_text_structure_new.json",
-        doc_ids=None,
+        text_dir="../../data/xml_text_files",
+        structure_file="../../data/pre_extracted_data/xml_text_structure.json",
+        doc_ids=doc_ids,
         num_cores=None,
         batch_size=10)
     print(time()-s1)
