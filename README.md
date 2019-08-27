@@ -15,7 +15,7 @@ For example virtualenv -p /usr/bin/python3 deepdocvirt
 
 2. Clone the deepdocclass application from the repository.
 
-git clone ...
+git clone https://github.com/Odrec/deep_doc_class/tree/renato
 
 3. Activate the virtual environment with the command
 
