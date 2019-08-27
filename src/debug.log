@@ -1,0 +1,313 @@
+2019-08-27 08:32:08,497 - debugLogger - DEBUG - Setting up parameters values.
+2019-08-27 08:32:08,497 - debugLogger - INFO - Number of files in batch to process 1
+2019-08-27 08:32:08,497 - debugLogger - INFO - Files in batch to process: 
+2019-08-27 08:32:08,498 - debugLogger - INFO - /data/test_batch/4b7dd5f39d44350fd11d33af218946fc.pdf
+2019-08-27 08:32:08,520 - debugLogger - DEBUG - Processing properties for file 4b7dd5f39d44350fd11d33af218946fc.pdf
+2019-08-27 08:32:08,618 - debugLogger - DEBUG - Getting structure for file 4b7dd5f39d44350fd11d33af218946fc.pdf
+2019-08-27 08:32:09,100 - debugLogger - INFO - Problem parsing xml file 4b7dd5f39d44350fd11d33af218946fc not well-formed (invalid token): line 8147, column 87
+2019-08-27 08:32:26,817 - debugLogger - DEBUG - Getting output from vectorizer for text feature text
+2019-08-27 08:32:26,884 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_text.pkl.
+2019-08-27 08:32:27,968 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_text.pkl succesfully loaded.
+2019-08-27 08:32:28,026 - debugLogger - DEBUG - Getting output from vectorizer for text feature first_100_words
+2019-08-27 08:32:28,027 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_first_100_words.pkl.
+2019-08-27 08:32:28,180 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_first_100_words.pkl succesfully loaded.
+2019-08-27 08:32:28,180 - debugLogger - DEBUG - Getting output from vectorizer for text feature last_100_words
+2019-08-27 08:32:28,181 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_last_100_words.pkl.
+2019-08-27 08:32:28,318 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_last_100_words.pkl succesfully loaded.
+2019-08-27 08:32:28,319 - debugLogger - DEBUG - Getting output from vectorizer for text feature bold_text
+2019-08-27 08:32:28,319 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_bold_text.pkl.
+2019-08-27 08:32:28,469 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_bold_text.pkl succesfully loaded.
+2019-08-27 08:32:28,470 - debugLogger - DEBUG - Getting output from vectorizer for property feature producer
+2019-08-27 08:32:28,470 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_producer.pkl.
+2019-08-27 08:32:28,475 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_producer.pkl succesfully loaded.
+2019-08-27 08:32:28,475 - debugLogger - DEBUG - Getting output from vectorizer for property feature creator
+2019-08-27 08:32:28,475 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_creator.pkl.
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_creator.pkl succesfully loaded.
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Number of BOW features: 6
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - BOW features extracted: ['text', 'first_100_words', 'last_100_words', 'bold_text', 'producer', 'creator']
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Number of numeric features: 41
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Numeric features extracted: ['file_size', 'page_rot', 'count_pages', 'count_outline_items', 'page_size_x', 'page_size_y', 'count_fonts', 'count_font_colors', 'count_font_families', 'max_font_size', 'min_font_size', 'main_font_size', 'perc_main_font_word', 'copyright_symbol', 'mean_words_pp', 'mean_lines_pp', 'mean_words_per_line', 'mean_bold_words_pp', 'mean_annotations_pp', 'image_error', 'mean_image_space_pp', 'mean_images_pp', 'max_image_page_ratio', 'mean_free_space_pp', 'mean_textboxes_pp', 'mean_lines_per_textbox', 'mean_blockstyles_pp', 'mean_lines_per_blockstyle', 'modal_textbox_columns_pp', 'perc_modal_textbox_columns_pp', 'modal_blockstyle_columns_pp', 'perc_modal_blockstyle_columns_pp', 'mean_textbox_space_pp', 'mean_blockstyle_space_pp', 'modal_right', 'perc_modal_right', 'modal_left', 'perc_modal_left', 'max_right', 'max_left', 'min_left']
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Created a features array with shapes. Number of features: 7
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:28,477 - debugLogger - DEBUG - Shape of feature number 1: (1, 41)
+2019-08-27 08:32:28,478 - debugLogger - DEBUG - Normalizing features.
+2019-08-27 08:32:28,478 - debugLogger - DEBUG - Check file and if the max and min values for the features are stored.
+2019-08-27 08:32:28,479 - debugLogger - DEBUG - If not and in training mode, save the max and min values in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:28,479 - debugLogger - DEBUG - Checking if /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv file exists and that data is correct.
+2019-08-27 08:32:28,479 - debugLogger - DEBUG - Means file exists in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:28,479 - debugLogger - DEBUG - The max value for feature 19 is not greater                                      than its min value. Leaving value as it is.
+2019-08-27 08:32:28,480 - debugLogger - INFO - Number of files in batch to process 1
+2019-08-27 08:32:28,480 - debugLogger - INFO - Files in batch to process: 
+2019-08-27 08:32:28,480 - debugLogger - INFO - /data/test_batch/4b756d9821e1e7fc454de93ce0307832.pdf
+2019-08-27 08:32:28,505 - debugLogger - DEBUG - Processing properties for file 4b756d9821e1e7fc454de93ce0307832.pdf
+2019-08-27 08:32:28,605 - debugLogger - DEBUG - Getting structure for file 4b756d9821e1e7fc454de93ce0307832.pdf
+2019-08-27 08:32:28,716 - debugLogger - DEBUG - Getting output from vectorizer for text feature text
+2019-08-27 08:32:28,718 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_text.pkl.
+2019-08-27 08:32:29,789 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_text.pkl succesfully loaded.
+2019-08-27 08:32:29,790 - debugLogger - DEBUG - Getting output from vectorizer for text feature first_100_words
+2019-08-27 08:32:29,791 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_first_100_words.pkl.
+2019-08-27 08:32:29,944 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_first_100_words.pkl succesfully loaded.
+2019-08-27 08:32:29,945 - debugLogger - DEBUG - Getting output from vectorizer for text feature last_100_words
+2019-08-27 08:32:29,946 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_last_100_words.pkl.
+2019-08-27 08:32:30,085 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_last_100_words.pkl succesfully loaded.
+2019-08-27 08:32:30,085 - debugLogger - DEBUG - Getting output from vectorizer for text feature bold_text
+2019-08-27 08:32:30,086 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_bold_text.pkl.
+2019-08-27 08:32:30,237 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_bold_text.pkl succesfully loaded.
+2019-08-27 08:32:30,238 - debugLogger - DEBUG - Getting output from vectorizer for property feature producer
+2019-08-27 08:32:30,238 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_producer.pkl.
+2019-08-27 08:32:30,241 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_producer.pkl succesfully loaded.
+2019-08-27 08:32:30,242 - debugLogger - DEBUG - Getting output from vectorizer for property feature creator
+2019-08-27 08:32:30,242 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_creator.pkl.
+2019-08-27 08:32:30,243 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_creator.pkl succesfully loaded.
+2019-08-27 08:32:30,243 - debugLogger - DEBUG - Number of BOW features: 6
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - BOW features extracted: ['text', 'first_100_words', 'last_100_words', 'bold_text', 'producer', 'creator']
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Number of numeric features: 41
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Numeric features extracted: ['file_size', 'page_rot', 'count_pages', 'count_outline_items', 'page_size_x', 'page_size_y', 'count_fonts', 'count_font_colors', 'count_font_families', 'max_font_size', 'min_font_size', 'main_font_size', 'perc_main_font_word', 'copyright_symbol', 'mean_words_pp', 'mean_lines_pp', 'mean_words_per_line', 'mean_bold_words_pp', 'mean_annotations_pp', 'image_error', 'mean_image_space_pp', 'mean_images_pp', 'max_image_page_ratio', 'mean_free_space_pp', 'mean_textboxes_pp', 'mean_lines_per_textbox', 'mean_blockstyles_pp', 'mean_lines_per_blockstyle', 'modal_textbox_columns_pp', 'perc_modal_textbox_columns_pp', 'modal_blockstyle_columns_pp', 'perc_modal_blockstyle_columns_pp', 'mean_textbox_space_pp', 'mean_blockstyle_space_pp', 'modal_right', 'perc_modal_right', 'modal_left', 'perc_modal_left', 'max_right', 'max_left', 'min_left']
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Created a features array with shapes. Number of features: 7
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:30,244 - debugLogger - DEBUG - Shape of feature number 1: (1, 41)
+2019-08-27 08:32:30,245 - debugLogger - DEBUG - Normalizing features.
+2019-08-27 08:32:30,245 - debugLogger - DEBUG - Check file and if the max and min values for the features are stored.
+2019-08-27 08:32:30,245 - debugLogger - DEBUG - If not and in training mode, save the max and min values in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:30,245 - debugLogger - DEBUG - Checking if /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv file exists and that data is correct.
+2019-08-27 08:32:30,245 - debugLogger - DEBUG - Means file exists in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:30,245 - debugLogger - DEBUG - The max value for feature 19 is not greater                                      than its min value. Leaving value as it is.
+2019-08-27 08:32:30,246 - debugLogger - INFO - Number of files in batch to process 1
+2019-08-27 08:32:30,246 - debugLogger - INFO - Files in batch to process: 
+2019-08-27 08:32:30,246 - debugLogger - INFO - /data/test_batch/4b700d724912d5e5b6fd326d4efa950f.pdf
+2019-08-27 08:32:30,268 - debugLogger - DEBUG - Processing properties for file 4b700d724912d5e5b6fd326d4efa950f.pdf
+2019-08-27 08:32:30,366 - debugLogger - DEBUG - Getting structure for file 4b700d724912d5e5b6fd326d4efa950f.pdf
+2019-08-27 08:32:30,398 - debugLogger - DEBUG - Getting output from vectorizer for text feature text
+2019-08-27 08:32:30,399 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_text.pkl.
+2019-08-27 08:32:31,473 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_text.pkl succesfully loaded.
+2019-08-27 08:32:31,475 - debugLogger - DEBUG - Getting output from vectorizer for text feature first_100_words
+2019-08-27 08:32:31,476 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_first_100_words.pkl.
+2019-08-27 08:32:31,628 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_first_100_words.pkl succesfully loaded.
+2019-08-27 08:32:31,629 - debugLogger - DEBUG - Getting output from vectorizer for text feature last_100_words
+2019-08-27 08:32:31,630 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_last_100_words.pkl.
+2019-08-27 08:32:31,772 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_last_100_words.pkl succesfully loaded.
+2019-08-27 08:32:31,773 - debugLogger - DEBUG - Getting output from vectorizer for text feature bold_text
+2019-08-27 08:32:31,773 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_bold_text.pkl.
+2019-08-27 08:32:31,926 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_bold_text.pkl succesfully loaded.
+2019-08-27 08:32:31,927 - debugLogger - DEBUG - Getting output from vectorizer for property feature producer
+2019-08-27 08:32:31,927 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_producer.pkl.
+2019-08-27 08:32:31,930 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_producer.pkl succesfully loaded.
+2019-08-27 08:32:31,931 - debugLogger - DEBUG - Getting output from vectorizer for property feature creator
+2019-08-27 08:32:31,931 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_creator.pkl.
+2019-08-27 08:32:31,932 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_creator.pkl succesfully loaded.
+2019-08-27 08:32:31,932 - debugLogger - DEBUG - Number of BOW features: 6
+2019-08-27 08:32:31,932 - debugLogger - DEBUG - BOW features extracted: ['text', 'first_100_words', 'last_100_words', 'bold_text', 'producer', 'creator']
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Number of numeric features: 41
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Numeric features extracted: ['file_size', 'page_rot', 'count_pages', 'count_outline_items', 'page_size_x', 'page_size_y', 'count_fonts', 'count_font_colors', 'count_font_families', 'max_font_size', 'min_font_size', 'main_font_size', 'perc_main_font_word', 'copyright_symbol', 'mean_words_pp', 'mean_lines_pp', 'mean_words_per_line', 'mean_bold_words_pp', 'mean_annotations_pp', 'image_error', 'mean_image_space_pp', 'mean_images_pp', 'max_image_page_ratio', 'mean_free_space_pp', 'mean_textboxes_pp', 'mean_lines_per_textbox', 'mean_blockstyles_pp', 'mean_lines_per_blockstyle', 'modal_textbox_columns_pp', 'perc_modal_textbox_columns_pp', 'modal_blockstyle_columns_pp', 'perc_modal_blockstyle_columns_pp', 'mean_textbox_space_pp', 'mean_blockstyle_space_pp', 'modal_right', 'perc_modal_right', 'modal_left', 'perc_modal_left', 'max_right', 'max_left', 'min_left']
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Created a features array with shapes. Number of features: 7
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Shape of feature number 1: (1, 41)
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Normalizing features.
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Check file and if the max and min values for the features are stored.
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - If not and in training mode, save the max and min values in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Checking if /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv file exists and that data is correct.
+2019-08-27 08:32:31,933 - debugLogger - DEBUG - Means file exists in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:31,934 - debugLogger - DEBUG - The max value for feature 19 is not greater                                      than its min value. Leaving value as it is.
+2019-08-27 08:32:31,934 - debugLogger - INFO - Number of files in batch to process 1
+2019-08-27 08:32:31,934 - debugLogger - INFO - Files in batch to process: 
+2019-08-27 08:32:31,935 - debugLogger - INFO - /data/test_batch/4b754b6e2a4cbd41e95a079fb1b4eda7.pdf
+2019-08-27 08:32:31,960 - debugLogger - DEBUG - Processing properties for file 4b754b6e2a4cbd41e95a079fb1b4eda7.pdf
+2019-08-27 08:32:32,059 - debugLogger - DEBUG - Getting structure for file 4b754b6e2a4cbd41e95a079fb1b4eda7.pdf
+2019-08-27 08:32:32,612 - debugLogger - DEBUG - Getting output from vectorizer for text feature text
+2019-08-27 08:32:32,615 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_text.pkl.
+2019-08-27 08:32:33,699 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_text.pkl succesfully loaded.
+2019-08-27 08:32:33,703 - debugLogger - DEBUG - Getting output from vectorizer for text feature first_100_words
+2019-08-27 08:32:33,704 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_first_100_words.pkl.
+2019-08-27 08:32:33,857 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_first_100_words.pkl succesfully loaded.
+2019-08-27 08:32:33,858 - debugLogger - DEBUG - Getting output from vectorizer for text feature last_100_words
+2019-08-27 08:32:33,859 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_last_100_words.pkl.
+2019-08-27 08:32:33,996 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_last_100_words.pkl succesfully loaded.
+2019-08-27 08:32:33,997 - debugLogger - DEBUG - Getting output from vectorizer for text feature bold_text
+2019-08-27 08:32:33,998 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_bold_text.pkl.
+2019-08-27 08:32:34,149 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_bold_text.pkl succesfully loaded.
+2019-08-27 08:32:34,150 - debugLogger - DEBUG - Getting output from vectorizer for property feature producer
+2019-08-27 08:32:34,150 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_producer.pkl.
+2019-08-27 08:32:34,154 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_producer.pkl succesfully loaded.
+2019-08-27 08:32:34,154 - debugLogger - DEBUG - Getting output from vectorizer for property feature creator
+2019-08-27 08:32:34,155 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_creator.pkl.
+2019-08-27 08:32:34,156 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_creator.pkl succesfully loaded.
+2019-08-27 08:32:34,156 - debugLogger - DEBUG - Number of BOW features: 6
+2019-08-27 08:32:34,156 - debugLogger - DEBUG - BOW features extracted: ['text', 'first_100_words', 'last_100_words', 'bold_text', 'producer', 'creator']
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Number of numeric features: 41
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Numeric features extracted: ['file_size', 'page_rot', 'count_pages', 'count_outline_items', 'page_size_x', 'page_size_y', 'count_fonts', 'count_font_colors', 'count_font_families', 'max_font_size', 'min_font_size', 'main_font_size', 'perc_main_font_word', 'copyright_symbol', 'mean_words_pp', 'mean_lines_pp', 'mean_words_per_line', 'mean_bold_words_pp', 'mean_annotations_pp', 'image_error', 'mean_image_space_pp', 'mean_images_pp', 'max_image_page_ratio', 'mean_free_space_pp', 'mean_textboxes_pp', 'mean_lines_per_textbox', 'mean_blockstyles_pp', 'mean_lines_per_blockstyle', 'modal_textbox_columns_pp', 'perc_modal_textbox_columns_pp', 'modal_blockstyle_columns_pp', 'perc_modal_blockstyle_columns_pp', 'mean_textbox_space_pp', 'mean_blockstyle_space_pp', 'modal_right', 'perc_modal_right', 'modal_left', 'perc_modal_left', 'max_right', 'max_left', 'min_left']
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Created a features array with shapes. Number of features: 7
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Shape of feature number 1: (1, 41)
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Normalizing features.
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Check file and if the max and min values for the features are stored.
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - If not and in training mode, save the max and min values in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Checking if /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv file exists and that data is correct.
+2019-08-27 08:32:34,157 - debugLogger - DEBUG - Means file exists in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:34,158 - debugLogger - DEBUG - The max value for feature 19 is not greater                                      than its min value. Leaving value as it is.
+2019-08-27 08:32:34,158 - debugLogger - INFO - Number of files in batch to process 1
+2019-08-27 08:32:34,158 - debugLogger - INFO - Files in batch to process: 
+2019-08-27 08:32:34,158 - debugLogger - INFO - /data/test_batch/4b70887e217dcb8c0e60b94f75878b01.pdf
+2019-08-27 08:32:34,186 - debugLogger - DEBUG - Processing properties for file 4b70887e217dcb8c0e60b94f75878b01.pdf
+2019-08-27 08:32:34,283 - debugLogger - DEBUG - Getting structure for file 4b70887e217dcb8c0e60b94f75878b01.pdf
+2019-08-27 08:32:34,419 - debugLogger - DEBUG - Getting output from vectorizer for text feature text
+2019-08-27 08:32:34,423 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_text.pkl.
+2019-08-27 08:32:35,517 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_text.pkl succesfully loaded.
+2019-08-27 08:32:35,520 - debugLogger - DEBUG - Getting output from vectorizer for text feature first_100_words
+2019-08-27 08:32:35,521 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_first_100_words.pkl.
+2019-08-27 08:32:35,673 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_first_100_words.pkl succesfully loaded.
+2019-08-27 08:32:35,674 - debugLogger - DEBUG - Getting output from vectorizer for text feature last_100_words
+2019-08-27 08:32:35,674 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_last_100_words.pkl.
+2019-08-27 08:32:35,822 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_last_100_words.pkl succesfully loaded.
+2019-08-27 08:32:35,823 - debugLogger - DEBUG - Getting output from vectorizer for text feature bold_text
+2019-08-27 08:32:35,824 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_bold_text.pkl.
+2019-08-27 08:32:35,982 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_bold_text.pkl succesfully loaded.
+2019-08-27 08:32:35,983 - debugLogger - DEBUG - Getting output from vectorizer for property feature producer
+2019-08-27 08:32:35,983 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_producer.pkl.
+2019-08-27 08:32:35,987 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_producer.pkl succesfully loaded.
+2019-08-27 08:32:35,988 - debugLogger - DEBUG - Getting output from vectorizer for property feature creator
+2019-08-27 08:32:35,988 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_creator.pkl.
+2019-08-27 08:32:35,989 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_creator.pkl succesfully loaded.
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Number of BOW features: 6
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - BOW features extracted: ['text', 'first_100_words', 'last_100_words', 'bold_text', 'producer', 'creator']
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Number of numeric features: 41
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Numeric features extracted: ['file_size', 'page_rot', 'count_pages', 'count_outline_items', 'page_size_x', 'page_size_y', 'count_fonts', 'count_font_colors', 'count_font_families', 'max_font_size', 'min_font_size', 'main_font_size', 'perc_main_font_word', 'copyright_symbol', 'mean_words_pp', 'mean_lines_pp', 'mean_words_per_line', 'mean_bold_words_pp', 'mean_annotations_pp', 'image_error', 'mean_image_space_pp', 'mean_images_pp', 'max_image_page_ratio', 'mean_free_space_pp', 'mean_textboxes_pp', 'mean_lines_per_textbox', 'mean_blockstyles_pp', 'mean_lines_per_blockstyle', 'modal_textbox_columns_pp', 'perc_modal_textbox_columns_pp', 'modal_blockstyle_columns_pp', 'perc_modal_blockstyle_columns_pp', 'mean_textbox_space_pp', 'mean_blockstyle_space_pp', 'modal_right', 'perc_modal_right', 'modal_left', 'perc_modal_left', 'max_right', 'max_left', 'min_left']
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Created a features array with shapes. Number of features: 7
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Shape of feature number 1: (1, 41)
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Normalizing features.
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Check file and if the max and min values for the features are stored.
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - If not and in training mode, save the max and min values in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:35,990 - debugLogger - DEBUG - Checking if /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv file exists and that data is correct.
+2019-08-27 08:32:35,991 - debugLogger - DEBUG - Means file exists in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:32:35,991 - debugLogger - DEBUG - The max value for feature 19 is not greater                                      than its min value. Leaving value as it is.
+2019-08-27 08:32:35,991 - debugLogger - INFO - Number of files in batch to process 1
+2019-08-27 08:32:35,991 - debugLogger - INFO - Files in batch to process: 
+2019-08-27 08:32:35,991 - debugLogger - INFO - /data/test_batch/4b7df6db0c37bf1d67ffd08624d9fef1.pdf
+2019-08-27 08:32:36,018 - debugLogger - DEBUG - Processing properties for file 4b7df6db0c37bf1d67ffd08624d9fef1.pdf
+2019-08-27 08:32:36,114 - debugLogger - DEBUG - Getting structure for file 4b7df6db0c37bf1d67ffd08624d9fef1.pdf
+2019-08-27 08:32:59,819 - debugLogger - DEBUG - Getting output from vectorizer for text feature text
+2019-08-27 08:32:59,820 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_text.pkl.
+2019-08-27 08:33:00,941 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_text.pkl succesfully loaded.
+2019-08-27 08:33:00,942 - debugLogger - DEBUG - Getting output from vectorizer for text feature first_100_words
+2019-08-27 08:33:00,943 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_first_100_words.pkl.
+2019-08-27 08:33:01,099 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_first_100_words.pkl succesfully loaded.
+2019-08-27 08:33:01,100 - debugLogger - DEBUG - Getting output from vectorizer for text feature last_100_words
+2019-08-27 08:33:01,101 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_last_100_words.pkl.
+2019-08-27 08:33:01,242 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_last_100_words.pkl succesfully loaded.
+2019-08-27 08:33:01,242 - debugLogger - DEBUG - Getting output from vectorizer for text feature bold_text
+2019-08-27 08:33:01,243 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_bold_text.pkl.
+2019-08-27 08:33:01,404 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_bold_text.pkl succesfully loaded.
+2019-08-27 08:33:01,405 - debugLogger - DEBUG - Getting output from vectorizer for property feature producer
+2019-08-27 08:33:01,405 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_producer.pkl.
+2019-08-27 08:33:01,409 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_producer.pkl succesfully loaded.
+2019-08-27 08:33:01,409 - debugLogger - DEBUG - Getting output from vectorizer for property feature creator
+2019-08-27 08:33:01,409 - debugLogger - DEBUG - Vectorizer to load ../models/vectorizers/vectorizer_creator.pkl.
+2019-08-27 08:33:01,411 - debugLogger - DEBUG - Vectorizer ../models/vectorizers/vectorizer_creator.pkl succesfully loaded.
+2019-08-27 08:33:01,411 - debugLogger - DEBUG - Number of BOW features: 6
+2019-08-27 08:33:01,411 - debugLogger - DEBUG - BOW features extracted: ['text', 'first_100_words', 'last_100_words', 'bold_text', 'producer', 'creator']
+2019-08-27 08:33:01,411 - debugLogger - DEBUG - Number of numeric features: 41
+2019-08-27 08:33:01,411 - debugLogger - DEBUG - Numeric features extracted: ['file_size', 'page_rot', 'count_pages', 'count_outline_items', 'page_size_x', 'page_size_y', 'count_fonts', 'count_font_colors', 'count_font_families', 'max_font_size', 'min_font_size', 'main_font_size', 'perc_main_font_word', 'copyright_symbol', 'mean_words_pp', 'mean_lines_pp', 'mean_words_per_line', 'mean_bold_words_pp', 'mean_annotations_pp', 'image_error', 'mean_image_space_pp', 'mean_images_pp', 'max_image_page_ratio', 'mean_free_space_pp', 'mean_textboxes_pp', 'mean_lines_per_textbox', 'mean_blockstyles_pp', 'mean_lines_per_blockstyle', 'modal_textbox_columns_pp', 'perc_modal_textbox_columns_pp', 'modal_blockstyle_columns_pp', 'perc_modal_blockstyle_columns_pp', 'mean_textbox_space_pp', 'mean_blockstyle_space_pp', 'modal_right', 'perc_modal_right', 'modal_left', 'perc_modal_left', 'max_right', 'max_left', 'min_left']
+2019-08-27 08:33:01,412 - debugLogger - DEBUG - Created a features array with shapes. Number of features: 7
+2019-08-27 08:33:01,412 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:33:01,412 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:33:01,412 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:33:01,412 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:33:01,412 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:33:01,412 - debugLogger - DEBUG - Shape of feature number 1: (1, 100)
+2019-08-27 08:33:01,412 - debugLogger - DEBUG - Shape of feature number 1: (1, 41)
+2019-08-27 08:33:01,413 - debugLogger - DEBUG - Normalizing features.
+2019-08-27 08:33:01,413 - debugLogger - DEBUG - Check file and if the max and min values for the features are stored.
+2019-08-27 08:33:01,413 - debugLogger - DEBUG - If not and in training mode, save the max and min values in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:33:01,414 - debugLogger - DEBUG - Checking if /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv file exists and that data is correct.
+2019-08-27 08:33:01,414 - debugLogger - DEBUG - Means file exists in /home/student/r/rgaritafigue/Current_August_2019/src/../data/features_means/means.csv.
+2019-08-27 08:33:01,414 - debugLogger - DEBUG - The max value for feature 19 is not greater                                      than its min value. Leaving value as it is.
+2019-08-27 08:33:01,417 - debugLogger - DEBUG - Checking if images from file /data/test_batch/4b7dd5f39d44350fd11d33af218946fc.pdf should be extracted.
+2019-08-27 08:33:01,417 - debugLogger - DEBUG - Finished checking images.
+2019-08-27 08:33:01,417 - debugLogger - DEBUG - Converting images from file /data/test_batch/4b7dd5f39d44350fd11d33af218946fc.pdf.
+2019-08-27 08:33:01,417 - debugLogger - DEBUG - Finished converting images from file /data/test_batch/4b7dd5f39d44350fd11d33af218946fc.pdf.
+2019-08-27 08:33:01,417 - debugLogger - DEBUG - Images from file /data/test_batch/4b7dd5f39d44350fd11d33af218946fc.pdf extracted.
+2019-08-27 08:33:01,417 - debugLogger - DEBUG - Images from file /data/test_batch/4b7dd5f39d44350fd11d33af218946fc.pdf extracted.
+2019-08-27 08:33:01,417 - debugLogger - DEBUG - Images from file /data/test_batch/4b7dd5f39d44350fd11d33af218946fc.pdf extracted.
+2019-08-27 08:33:01,417 - debugLogger - DEBUG - Checking if images from file /data/test_batch/4b756d9821e1e7fc454de93ce0307832.pdf should be extracted.
+2019-08-27 08:33:01,417 - debugLogger - DEBUG - Finished checking images.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Converting images from file /data/test_batch/4b756d9821e1e7fc454de93ce0307832.pdf.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Finished converting images from file /data/test_batch/4b756d9821e1e7fc454de93ce0307832.pdf.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Images from file /data/test_batch/4b756d9821e1e7fc454de93ce0307832.pdf extracted.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Checking if images from file /data/test_batch/4b700d724912d5e5b6fd326d4efa950f.pdf should be extracted.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Finished checking images.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Converting images from file /data/test_batch/4b700d724912d5e5b6fd326d4efa950f.pdf.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Finished converting images from file /data/test_batch/4b700d724912d5e5b6fd326d4efa950f.pdf.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Images from file /data/test_batch/4b700d724912d5e5b6fd326d4efa950f.pdf extracted.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Checking if images from file /data/test_batch/4b754b6e2a4cbd41e95a079fb1b4eda7.pdf should be extracted.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Finished checking images.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Converting images from file /data/test_batch/4b754b6e2a4cbd41e95a079fb1b4eda7.pdf.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Finished converting images from file /data/test_batch/4b754b6e2a4cbd41e95a079fb1b4eda7.pdf.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Images from file /data/test_batch/4b754b6e2a4cbd41e95a079fb1b4eda7.pdf extracted.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Images from file /data/test_batch/4b754b6e2a4cbd41e95a079fb1b4eda7.pdf extracted.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Images from file /data/test_batch/4b754b6e2a4cbd41e95a079fb1b4eda7.pdf extracted.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Checking if images from file /data/test_batch/4b70887e217dcb8c0e60b94f75878b01.pdf should be extracted.
+2019-08-27 08:33:01,418 - debugLogger - DEBUG - Finished checking images.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Converting images from file /data/test_batch/4b70887e217dcb8c0e60b94f75878b01.pdf.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Finished converting images from file /data/test_batch/4b70887e217dcb8c0e60b94f75878b01.pdf.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Images from file /data/test_batch/4b70887e217dcb8c0e60b94f75878b01.pdf extracted.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Images from file /data/test_batch/4b70887e217dcb8c0e60b94f75878b01.pdf extracted.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Images from file /data/test_batch/4b70887e217dcb8c0e60b94f75878b01.pdf extracted.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Checking if images from file /data/test_batch/4b7df6db0c37bf1d67ffd08624d9fef1.pdf should be extracted.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Finished checking images.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Converting images from file /data/test_batch/4b7df6db0c37bf1d67ffd08624d9fef1.pdf.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Finished converting images from file /data/test_batch/4b7df6db0c37bf1d67ffd08624d9fef1.pdf.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Images from file /data/test_batch/4b7df6db0c37bf1d67ffd08624d9fef1.pdf extracted.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Images from file /data/test_batch/4b7df6db0c37bf1d67ffd08624d9fef1.pdf extracted.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Images from file /data/test_batch/4b7df6db0c37bf1d67ffd08624d9fef1.pdf extracted.
+2019-08-27 08:33:01,419 - debugLogger - DEBUG - Images extracted from 6 files.
+2019-08-27 08:33:01,425 - debugLogger - INFO - Start generation of res deep features.
+2019-08-27 08:33:01,425 - debugLogger - INFO - Start images generator.
+2019-08-27 08:33:01,431 - debugLogger - INFO - Finish images generator.
+2019-08-27 08:33:12,827 - debugLogger - DEBUG - Generated ResNet features: 11.403093099594116
+2019-08-27 08:33:12,828 - debugLogger - INFO - Start images generator.
+2019-08-27 08:33:12,831 - debugLogger - INFO - Finish images generator.
+2019-08-27 08:33:12,832 - debugLogger - INFO - Start generation of xce deep features.
+2019-08-27 08:33:25,654 - debugLogger - DEBUG - Generated Xception features: 12.822080373764038
+2019-08-27 08:33:25,654 - debugLogger - INFO - Start generation of inc deep features.
+2019-08-27 08:33:45,743 - debugLogger - DEBUG - Generated InceptionV3 features: 20.088573217391968
+2019-08-27 08:33:45,743 - debugLogger - DEBUG - Predicting outputs with classifier for text feature.
+2019-08-27 08:33:45,751 - debugLogger - DEBUG - Finishing predicting outputs with classifier for text feature.
+2019-08-27 08:33:45,751 - debugLogger - DEBUG - Predicting outputs with classifier for first_100_words feature.
+2019-08-27 08:33:45,758 - debugLogger - DEBUG - Finishing predicting outputs with classifier for first_100_words feature.
+2019-08-27 08:33:45,759 - debugLogger - DEBUG - Predicting outputs with classifier for last_100_words feature.
+2019-08-27 08:33:45,766 - debugLogger - DEBUG - Finishing predicting outputs with classifier for last_100_words feature.
+2019-08-27 08:33:45,766 - debugLogger - DEBUG - Predicting outputs with classifier for bold_text feature.
+2019-08-27 08:33:45,772 - debugLogger - DEBUG - Finishing predicting outputs with classifier for bold_text feature.
+2019-08-27 08:33:45,773 - debugLogger - DEBUG - Predicting outputs with classifier for producer feature.
+2019-08-27 08:33:45,774 - debugLogger - DEBUG - Finishing predicting outputs with classifier for producer feature.
+2019-08-27 08:33:45,774 - debugLogger - DEBUG - Predicting outputs with classifier for creator feature.
+2019-08-27 08:33:45,775 - debugLogger - DEBUG - Finishing predicting outputs with classifier for creator feature.
+2019-08-27 08:33:45,775 - debugLogger - DEBUG - Predicting outputs with classifier for numeric feature.
+2019-08-27 08:33:46,221 - debugLogger - DEBUG - Finishing predicting outputs with classifier for numeric feature.
+2019-08-27 08:33:50,939 - debugLogger - DEBUG - Predicting outputs with final classifier.
+2019-08-27 08:33:51,035 - debugLogger - DEBUG - Finishing predicting outputs for final classifier.
