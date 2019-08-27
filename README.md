@@ -28,6 +28,7 @@ pip install -r requirements.txt
 5. Before running you need to install the NLTK stopwords by going into the python shell and installing with the commands
 
 import nltk
+
 nltk.download('stopwords')
 
 6. Besides the python libraries you need to install poppler-utils for the pdf manipulation programs pdftohtml and pdfinfo.
