@@ -3,6 +3,8 @@
 """
 Created on Tue Jul 16 16:42:57 2019
 
+This file saves important paths for the application.
+
 @author: odrec
 """
 
@@ -16,3 +18,4 @@ FEATURES_FILE='../data/preprocessing_data/features.json'
 LABELS_FILE='../data/training_data.csv'
 PREDICTION_FILES=['../results/predictions/predictions.json','../predictions/predictions.csv']
 RESULTS_PATH='../results/'
+MANUAL_PATH='../results/positive_manual/'
