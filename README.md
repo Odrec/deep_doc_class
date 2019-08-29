@@ -1,38 +1,38 @@
-DeepDocClass manual and functionality
+# DeepDocClass manual and functionality
 
 //**Any questions or inquiries please email rgaritafigue@uos.de**//
 
 This program gives back a probability that PDF documents are copyright protected or not.
 It uses structural features as well as pixel-based features processed through an ensemble of classifiers to generate a probability.
 
---Setting up the environment and installing libraries
+## Setting up the environment and installing libraries
 
-1. Install a python virtual environment with python 3.5 with this command.
+**1. Install a python virtual environment with python 3.5 with this command.**
 
-virtualenv -p [PATH TO PYTHON 3.5 EXECUTABLE] [PATH FOR VIRTUAL ENVIRONMENT]
+`virtualenv -p [PATH TO PYTHON 3.5 EXECUTABLE] [PATH FOR VIRTUAL ENVIRONMENT]`
 
-For example virtualenv -p /usr/bin/python3 deepdocvirt
+For example` virtualenv -p /usr/bin/python3 deepdocvirt`
 
-2. Clone the deepdocclass application from the repository.
+**2. Clone the deepdocclass application from the repository.**
 
-git clone ...
+`git clone ...`
 
-3. Activate the virtual environment with the command
+**3. Activate the virtual environment with the command**
 
-source deepdocvirt/bin/activate
+`source deepdocvirt/bin/activate`
 
-4. Go into the project folder and install the libraries specified in the requirements.txt file with the command.
+** 4. Go into the project folder and install the libraries specified in the requirements.txt file with the command.**
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
-5. Before running you need to install the NLTK stopwords by going into the python shell and installing with the commands
+**5. Before running you need to install the NLTK stopwords by going into the python shell and installing with the commands**
 
-import nltk
-nltk.download('stopwords')
+`import nltk`
+`nltk.download('stopwords')`
 
-6. Make sure to place the pdf files you want to process on a path where you have write permissions.
+**6. Make sure to place the pdf files you want to process on a path where you have write permissions.**
 
---Preparing your data
+## Preparing your data
 
 This application processes any pdf file. It uses different types of features to classify the documents.
 Some of those features are based on metadata information that is not available in the file so it has to be provided.
