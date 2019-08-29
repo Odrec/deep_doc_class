@@ -27,7 +27,6 @@ def load_config_file(config_file):
     @return config_params: all the parameters loaded from the configuration file
     @rtype config_params: dict
     '''
-
     configuration_list = [line.strip() for line in open(config_file).readlines()]
     configuration_list = [line.split('=') for line in configuration_list]
     config_params = {}
@@ -112,7 +111,6 @@ def check_batch_value(batch_value, num_files):
     if num_files < batch_value:
         logger.info("Using total number of files as value of batch...")
         batch_value = num_files
-
     return batch_value
     
 def check_number_of_cores(batch_quant, cores):
@@ -428,6 +426,8 @@ def process_params(args):
                           the program will try to concatenate the data to the existing files.')  
     optional.add_argument('-report', action='store_true', \
                           help='Generate a report with the results and other helpful statistics.')  
+    optional.add_argument('-manual', action='store_true', \
+                          help='Provides a random sample of positively classified documents for manual evaluation.') 
     
     #PARAMETERS ONLY FOR NOT TRAINING MODE
     #Check if results file is specified.
@@ -490,6 +490,7 @@ def process_params(args):
     params['cores'] = 1
     params['batch'] = 1
     params['report'] = args.report
+    params['manual'] = args.manual
     params['threshold'] = 0.5
     params['results_file_json'] = None
     params['results_file_csv'] = None

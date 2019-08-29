@@ -10,7 +10,7 @@ Main script for classifying copyrighted pdf documents.
 """
 import sys, json, csv, os
 from time import time, strftime
-from os.path import isfile, join, isdir
+from os.path import isfile, join, isdir, dirname
 import param as pa
 import data as da
 import models as mo
@@ -510,11 +510,13 @@ if __name__ == "__main__":
             all_ids = [all_ids]
             num_files = 1
         else: num_files = len(files)
+        files_path = dirname(files[0])
     train = params['train']
     all_labels = params['labels']    
     metadata = params['metadata']
     overwrite = params['overwrite']
     report = params['report']
+    manual = params['manual']
     cores = params['cores']
     features_file = params['features_file']
     save_preprocessing = params['save_preprocessing']
@@ -661,12 +663,14 @@ if __name__ == "__main__":
 
     if not save_preprocessing:
         if train:
+            logger.info("Start of training process.")
             t_train_0 = time()
             training(features_array, batch_quantity, batch_ids, batch_labels, image_matrix, unlabeled_matrix, ids_pages)
             t_train_1 = time() - t_train_0
             t_train = t_train_1/num_files
             logger.info("Average seconds training per file: %s"%t_train)
         else: 
+            logger.info("Start of prediction process.")
             t_pred_0 = time()
             final_prediction = predicting(features_array, models_path, metadata, image_matrix, ids_pages, batch_ids, deep)
             t_pred_1 = time() - t_pred_0
@@ -674,3 +678,14 @@ if __name__ == "__main__":
             logger.info("Average seconds predicting per file: %s"%t_pred)
             save_results(batch_ids, final_prediction)
             if report: write_report(final_prediction, batch_ids, count_pages, t_structure, t_deep, t_pred)
+        if manual and batch_files:
+            logger.info("Copying files classified as positive for manual inspection to %s."%paths.MANUAL_PATH)
+            import random, shutil
+            positive_indexes = [i for i,x in enumerate(final_prediction) if x > 0.5]
+            if len(positive_indexes) < 100:
+                chosen_indexes = positive_indexes
+            else: chosen_indexes = random.sample(positive_indexes, 100) 
+            if not isdir(paths.MANUAL_PATH): os.makedirs(paths.MANUAL_PATH)
+            for idx in chosen_indexes:
+                shutil.copy2(batch_files[idx], paths.MANUAL_PATH)
+            logger.info("Finished copying the files.")

@@ -15,7 +15,7 @@ For example virtualenv -p /usr/bin/python3 deepdocvirt
 
 2. Clone the deepdocclass application from the repository.
 
-git clone https://github.com/Odrec/deep_doc_class/tree/renato
+git clone ...
 
 3. Activate the virtual environment with the command
 
@@ -28,14 +28,9 @@ pip install -r requirements.txt
 5. Before running you need to install the NLTK stopwords by going into the python shell and installing with the commands
 
 import nltk
-
 nltk.download('stopwords')
 
-6. Besides the python libraries you need to install poppler-utils for the pdf manipulation programs pdftohtml and pdfinfo.
-
-sudo apt-get install poppler-utils
-
-7. Make sure to place the pdf files you want to process on a path where you have write permissions.
+6. Make sure to place the pdf files you want to process on a path where you have write permissions.
 
 --Preparing your data
 
@@ -60,6 +55,7 @@ python manage_data.py -meta metadata.csv
 
 When you run the script the results will be saved on the project folder under results in csv and json format.
 If you want to generate a report simply use the -report parameter and it will be saved also in the results directory.
+If you want to choose random files for manual inspection, use the -manual parameter.
 
 To run the script for prediction simply do the command:
 

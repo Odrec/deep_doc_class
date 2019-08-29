@@ -34,6 +34,7 @@ def predict(features, model):
     @return positive_prob: prediction
     @rtype positive_prob: numpy array
     '''
+    features = np.nan_to_num(features) #this shouldn't be needed if normalization is correct
     prd = model.predict_proba(features)
     positive_prob = []
     for i,p in enumerate(prd):
@@ -548,6 +549,7 @@ def get_models_output(features_data, models=[], models_path="", meta=False):
     logger.info("Predicting outputs with classifier for numeric feature.")
     if models: model = models[-1]
     else: model = load_sklearn_model(None, 'numeric', models_path)
+    features_data[-1] = np.nan_to_num(features_data[-1]) #this shouldn't be needed if normalization is correct
     predictions_prob[-1] = model.predict_proba(features_data[-1])
     positive_prob[-1] = [None] * len(features_data[-1])
     for i,v in enumerate(predictions_prob[b]):
