@@ -39,14 +39,16 @@ Some of those features are based on metadata information that is not available i
 The metadata features used are the name of the folder the file was located on the server or uploaded to 
 and the name of the fileon the server.
 To provide this data you need a csv file with the id of the document, the folder name and the file name.
+You can also provide the number of participants and the course name for each file if you want extra statistics 
+on your report.
 The headers of the csv file should be:
 
-'document_id', 'filename', 'folder_name' 
+'document_id', 'file_name', 'folder_name', 'number_participants', 'course_name' 
 
 To help create this file there's a helper script inside the project folder in: helper_scripts/manage_data.py
 
 You can pass it a csv file with more columns than the three mentioned above and that contains the headers 
-with the names specified above and it will create a new file named metadata_clean.csv with only three 
+with the names specified above and it will create a new file named metadata_clean.csv with five 
 columns with the necessary data. For example:
 
 python manage_data.py -meta metadata.csv
@@ -77,3 +79,50 @@ python classify.pdf -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] 
 
 
 A training section will be added shortly...
+
+## USAGE AND PARAMETERS
+
+usage: classify_pdf.py [-h] [-fp FP] [-meta [META]] [-c C] [-conf CONF]
+                       [-pf [PF]] [-po [PO]] [-train [TRAIN]] [-deep [DEEP]]
+                       [-overwrite] [-report] [-manual] [-b B] [-t T]
+                       [-mod [MOD]]
+
+Copyright document classification software.
+
+required arguments:
+  -fp FP          path to pdf file(s). If you use saved features data this is
+                  not required, otherwise it is required.
+
+optional arguments:
+  -meta [META]    specifies metadata file and whether to use metadata for
+                  classification.
+  -c C            specifies amount of cores for parallel processing.
+  -conf CONF      specifies configuration file.
+  -pf [PF]        specifies the name for the file to load the features data.
+                  If -fp is also used then this flag and the data to load will
+                  be ignored.
+  -po [PO]        specifies that the users wants to only preprocess data. The
+                  preprocess data will be saved.
+  -train [TRAIN]  specifies if the user wants to train the classification
+                  system and load the label data. You can pass the labels
+                  file.
+  -deep [DEEP]    specifies the path to the unlabeled image data needed for
+                  the training procedure. If specified without a path, then it
+                  is used during classification to use the trained deep
+                  models.WARNING: While in training mode this can take a huge
+                  amount of time and space.
+  -overwrite      will overwrite all saved data, if any. If not specified, the
+                  program will try to concatenate the data to existing files.
+  -report         Generate a report with the results and other helpful
+                  statistics.
+  -manual         Provides a random sample of positively classified documents
+                  for manual evaluation.
+  -b B            ONLY USED IF NOT ON TRAINING MODE. Specifies amount of files
+                  per batch.
+  -t T            ONLY USED IF NOT ON TRAINING MODE. Specifies the value for
+                  the threshold for the classification decision. The results
+                  will be shown in the results file.
+  -mod [MOD]      ONLY USED IF NOT ON TRAINING MODE. Specifies path to trained
+                  models. If not specified the default path (models/) will be
+                  used.
+
