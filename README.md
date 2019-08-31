@@ -99,7 +99,7 @@ optional arguments:
   -c C            specifies amount of cores for parallel processing.
   -conf CONF      specifies configuration file.
   -pf [PF]        specifies the name for the file to load the features data.
-                  If -fp is also used then this flag and the data to load will
+		  If -fp is also used then this flag and the data to load will
                   be ignored.
   -po [PO]        specifies that the users wants to only preprocess data. The
                   preprocess data will be saved.
