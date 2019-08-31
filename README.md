@@ -21,7 +21,7 @@ For example` virtualenv -p /usr/bin/python3 deepdocvirt`
 
 `source deepdocvirt/bin/activate`
 
-** 4. Go into the project folder and install the libraries specified in the requirements.txt file with the command.**
+**4. Go into the project folder and install the libraries specified in the requirements.txt file with the command.**
 
 `pip install -r requirements.txt`
 
