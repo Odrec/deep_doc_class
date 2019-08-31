@@ -63,15 +63,15 @@ To run the script for prediction simply do the command:
 
 For classification with basic bow and numeric features only:
 
-python classify.pdf -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY]
+python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY]
 
 For classification including basic features and metadata features:
 
-python classify.pdf -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -meta [PATH TO METADATA CSV FILE]
+python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -meta [PATH TO METADATA CSV FILE]
 
 For classification including deep features:
 
-python classify.pdf -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -deep
+python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -deep
 
 For classification including, both, deep features and metadata features:
 
