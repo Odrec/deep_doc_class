@@ -754,10 +754,8 @@ class Document(object):
         #parse the xml
         try:
             amount_content = len(list(content))
-            logger.info("Starting to get element tree from file %s. Size %s."%(self.doc_id, amount_content))
             debuglogger.info("Starting to get element tree from file %s. Size %s."%(self.doc_id, amount_content))
             tree = ET.fromstring(content)
-            logger.info("Finished getting element tree from file %s"%(self.doc_id))
             debuglogger.info("Finished getting element tree from file %s"%(self.doc_id))
         #if the xml parser found an error
         except ET.ParseError as e:
