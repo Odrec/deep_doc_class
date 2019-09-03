@@ -361,8 +361,24 @@ def is_mod(models_path):
     logger.error("Invalid path to trained models.")
     raise argparse.ArgumentTypeError(
             'argument -mod must be a valid path to the trained models.')
-
     
+def is_loadclassified(processed_docs_file):
+    '''
+    Checks the file for processed files and loads the file ids on a list
+    
+    @return files_to_avoid: ids of files that were already processed
+    @dtype files_to_avoid: list
+
+    '''
+    logger.info("Loading the ids of files that were already processed...")
+    files_to_avoid = []
+    if isfile(processed_docs_file):
+        with open(processed_docs_file, 'r') as f:
+            reader = csv.reader(f)
+            files_to_avoid = list(reader)[0]
+    return files_to_avoid
+    raise argparse.ArgumentTypeError('Error ocurred while trying to load the ids of processed files with the -loadclassified parameter.')
+
 def process_params(args):
     '''
     Process the parameters
@@ -399,6 +415,7 @@ def process_params(args):
     optional.add_argument('-report', action='store_true', help='Generate a report with the results and other helpful statistics.')  
     optional.add_argument('-manual', action='store_true', help='Provides a random sample of positively classified documents for manual evaluation.') 
     optional.add_argument('-sample', const=100, nargs='?', help='Process just a random sample of the documents. Default value is 100.')
+    optional.add_argument('-load_classified', const='../data/processed_files.csv', nargs='?', help='Check which files that are already classified by checking the file ../data/processed_files.csv and take them out of the list from files to process.', type=is_loadclassified)
     
     #PARAMETERS ONLY FOR NOT TRAINING MODE
     #Check if results path is specified.
@@ -444,7 +461,21 @@ def process_params(args):
                 params['ids'] = [params['ids'][i] for i in pdf_indexes]
                 #rearrange pdf files because the sample took them without order
                 params['pdf_files'] = [params['pdf_files'][i] for i in pdf_indexes]
+        elif args.load_classified:
+            files_to_take_out = args.load_classified
+            indexes_to_delete = []
+            for i,f in enumerate(files_to_take_out):
+                for j,pdf in enumerate(params['ids']):
+                    if files_to_take_out[i] == params['ids'][j]:
+                        indexes_to_delete.append(j)
+            for i in sorted(indexes_to_delete, reverse=True):
+                params['pdf_files'].pop(i)
+                params['ids'].pop(i)
         params['num_files'] = len(params['ids'])
+        if params['num_files'] == 0:
+            logger.info("There are no new files to process. Exiting and going to next batch.")
+            debuglogger.info("There are no new files to process. Exiting and going to next batch.")
+            sys.exit(1)
         #Get the data from the metadata file
         if args.meta: 
             metadata_file = args.meta
