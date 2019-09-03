@@ -478,12 +478,12 @@ def write_report(results_path, final_prediction, batch_ids, count_pages, t_struc
     report_dict['Pages Classified over 0.2'] = sum_pages_over_02
     report_dict['Pages Classified under 0.2'] = sum_pages_under_02
     if courses: report_dict['Number of courses'] = len(courses)
-    report_dict['Pages x Particpants positively classified'] = sum_participants_pages_positively_classified * sum_pages_positively_classified
-    report_dict['Pages x Participants over 0.8'] = sum_participants_pages_over_08 * sum_pages_over_08
-    report_dict['Pages x Participants over 0.6'] = sum_participants_pages_over_06 * sum_pages_over_06
-    report_dict['Pages x Participants over 0.4'] = sum_participants_pages_over_04 * sum_pages_over_04
-    report_dict['Pages x Participants over 0.2'] = sum_participants_pages_over_02 * sum_pages_over_02
-    report_dict['Pages x Participants under 0.2'] = sum_participants_pages_under_02 * sum_pages_under_02
+    report_dict['Pages x Particpants positively classified'] = sum_participants_pages_positively_classified
+    report_dict['Pages x Participants over 0.8'] = sum_participants_pages_over_08
+    report_dict['Pages x Participants over 0.6'] = sum_participants_pages_over_06
+    report_dict['Pages x Participants over 0.4'] = sum_participants_pages_over_04
+    report_dict['Pages x Participants over 0.2'] = sum_participants_pages_over_02
+    report_dict['Pages x Participants under 0.2'] = sum_participants_pages_under_02
 
     if t_structure != 0: report_dict['Average time preprocessing structure per file'] = t_structure
     if t_deep != 0: report_dict['Average time preprocessing deep features per file'] = t_deep
