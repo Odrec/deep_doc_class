@@ -447,7 +447,7 @@ def write_report(results_path, final_prediction, batch_ids, count_pages, t_struc
             documents_prob_under_02 += 1
             documents_prob_under_list_02.append(batch_ids[i])
             documents_prob_under_pages_02.append(count_pages[i])
-            participants_pages_prob_under_02.append(number_participants[i]*count_pages[i])
+            if number_participants: participants_pages_prob_under_02.append(number_participants[i]*count_pages[i])
 
     sum_pages_positively_classified = sum(positive_classified_pages)
     sum_pages_over_08 = sum(documents_prob_pages_08)
