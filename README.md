@@ -81,7 +81,7 @@ python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIF
 A training section will be added shortly...
 
 ## USAGE AND PARAMETERS
-
+```
 usage: classify_pdf.py [-h] [-fp FP] [-meta [META]] [-c C] [-conf CONF]
                        [-pf [PF]] [-po [PO]] [-train [TRAIN]] [-deep [DEEP]]
                        [-overwrite] [-report] [-manual] [-b B] [-t T]
@@ -126,3 +126,4 @@ optional arguments:
                   models. If not specified the default path (models/) will be
                   used.
 
+```
