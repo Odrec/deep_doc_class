@@ -1204,6 +1204,7 @@ def pre_extract_pdf_structure_data(batch_files, pool):
         d_id = splitext(basename(x[1]))[0]
         doc_features = x[0]
         res_fix[d_id] = doc_features
+    clean_files(dirname(batch_files[0]))
     return res_fix
 
 def clean_files(path, idd=""):

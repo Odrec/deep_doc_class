@@ -1,0 +1,61 @@
+#!/bin/bash
+
+args=("$@")
+i=0
+for arg do
+    if [ "$arg" == "-fp" ]
+        then
+          a=$((i+1))
+          fp=${args[a]}
+    fi
+    if [ "$arg" == "-rp" ]
+        then
+          a=$((i+1))
+          rp=${args[a]}
+    fi
+    if [ "$arg" == "-meta" ]
+        then
+          a=$((i+1))
+          meta=${args[a]}
+    fi
+    if [ "$arg" == "-b" ]
+        then
+          a=$((i+1))
+          b=${args[a]}
+    fi 
+    i=$((i+1))
+done
+
+if [ -z  "$fp" ]
+   then
+     echo "Not enough arguments supplied, you need to supply at least the path to the pdfs."
+     exit 1
+fi
+
+rp="${rp:-../results/}"
+b="${b:-1}"
+
+printf "Processing sample first"
+if [ -z  "$meta" ]
+   then
+      python classify_pdf.py -fp $fp -rp $rp -sample -report
+else
+      python classify_pdf.py -fp $fp -rp $rp -sample -report -meta $meta
+fi
+
+printf 'Processing all files in batches of "%s"\n' "$b"
+python ../help_scripts/check_classified_docs.py $rp
+set -- $fp*.pdf
+if [ -z  "$meta" ]
+     then
+       while (($# > 0)); do
+          python classify_pdf.py -fl ${@:1:b} -rp $rp -report -load_classified
+          shift "$(($# >= b ? b : $#))"
+       done
+else
+       while (($# > 0)); do
+          python classify_pdf.py -fl ${@:1:b} -rp $rp -report -meta $meta -load_classified
+          shift "$(($# >= b ? b : $#))"
+       done
+fi
+exit 0
