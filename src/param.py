@@ -132,7 +132,7 @@ def check_number_of_cores(batch_quant, cores):
         cores = batch_quant
     return cores
 
-def get_pdf_path_files(pdf_path):
+def get_pdf_path_files(pdf_path, pdf_files=None):
     '''
     Gets all the pdf files
     
@@ -143,7 +143,7 @@ def get_pdf_path_files(pdf_path):
     @rtype pdf_files: list
     '''
     ids = []
-    pdf_files = glob(join(pdf_path,"*.{}".format('pdf')))
+    if not pdf_files: pdf_files = glob(join(pdf_path,"*.{}".format('pdf')))
     for f in pdf_files: ids.append(splitext(basename(f))[0])
     return pdf_files, ids
     
@@ -166,10 +166,18 @@ def is_pdf(file_path):
     elif isdir(file_path):
         files, ids = get_pdf_path_files(file_path)
         if files: return files, ids
-    logger.error("No valid input file(s) were specified.")
-    raise argparse.ArgumentTypeError(
-            'argument -fp must be of type *.pdf or a path to multiple pdf files.')
-    
+    else:
+        pdf_files = file_path.split()
+        print("PDF_FILES",pdf_files)
+        for f in pdf_files:
+            if isfile(f): pass
+            else: 
+                logger.error("No valid input file(s) were specified.")
+                raise argparse.ArgumentTypeError('argument -fp must be of type *.pdf or a path to multiple pdf files.')
+        files, ids = get_pdf_path_files(dirname(pdf_files), pdf_files)
+        return files, ids
+    raise argparse.ArgumentTypeError('argument -fp must be of type *.pdf or a path to multiple pdf files.')
+
 def is_conf(conf_file):
     '''
     Check validity of parameter for configuration file
@@ -395,7 +403,9 @@ def process_params(args):
     optional = parser.add_argument_group('optional arguments')
     
     #Check for required path to files or file
-    required.add_argument('-fp', help='path to pdf file(s). If you use saved features data this is not required, otherwise it is required.', type=is_pdf)
+    required.add_argument('-fp', help='path to pdf file(s) or list of pdf files. If you use saved features data this is not required, otherwise it is required.', type=is_pdf)
+    optional.add_argument('-fl', nargs='+', default=[], help='list of pdf files to process.', type=is_pdf)
+
     #Checks if there's a metadata file specified.
     optional.add_argument('-meta', nargs='?', help='specifies metadata file and whether to use metadata for classification.', type=is_meta)
     #Check if number of cores is specified. Default value 1.
@@ -415,7 +425,7 @@ def process_params(args):
     optional.add_argument('-report', action='store_true', help='Generate a report with the results and other helpful statistics.')  
     optional.add_argument('-manual', action='store_true', help='Provides a random sample of positively classified documents for manual evaluation.') 
     optional.add_argument('-sample', const=100, nargs='?', help='Process just a random sample of the documents. Default value is 100.')
-    optional.add_argument('-load_classified', const='../data/processed_files.csv', nargs='?', help='Check which files that are already classified by checking the file ../data/processed_files.csv and take them out of the list from files to process.', type=is_loadclassified)
+    optional.add_argument('-load_classified', const='../data/processed_files.csv', nargs='?', help='Checks which files are already classified by checking the file ../data/processed_files.csv and takes them out of the list from files to process.', type=is_loadclassified)
     
     #PARAMETERS ONLY FOR NOT TRAINING MODE
     #Check if results path is specified.
@@ -439,7 +449,8 @@ def process_params(args):
     params['metadata'] = None
     params['extra'] = None
     params['sample'] = False
-    params['results_path'] = args.rp
+    if not args.rp: params['results_path'] = paths.RESULTS_PATH
+    else: params['results_path'] = args.rp
     if args.pf:
         params['load'] = True
         params['features_file'] = args.pf
@@ -448,9 +459,17 @@ def process_params(args):
             debuglogger.error("The file %s with the data to load doesn't exist!"%params['features_file'])
             sys.exit(1)
         if args.meta: params['metadata'] = True
-    elif args.fp:
-        params['pdf_files'] = args.fp[0]
-        params['ids'] = args.fp[1]
+    elif args.fp or args.fl:
+        if args.fp:
+            params['pdf_files'] = args.fp[0]
+            params['ids'] = args.fp[1]
+        else:
+            files_data = args.fl
+            params['pdf_files'] = []
+            params['ids'] = []
+            for i,f in enumerate(files_data):
+                params['pdf_files'].append(args.fl[i][0])
+                params['ids'].append(args.fl[i][1])
         if args.sample:
             params['sample'] = True
             value_sample = int(args.sample)
@@ -481,10 +500,8 @@ def process_params(args):
             metadata_file = args.meta
             params['metadata'], params['extra'] = get_metadata(metadata_file, params['ids'])
     if not params['pdf_files'] and not params['features_file']:
-        logger.error("You need to specify a path to the pdf file(s) to process with the -fp argument \
-                     or specify a features json file with the saved features with the parameter -pf.")
-        debuglogger.error("You need to specify a path to the pdf file(s) to process with the -fp argument \
-                     or specify a features json file with the saved features with the parameter -pf.")
+        logger.error("You need to specify a path to the pdf file(s) to process with the -fp argument or specify a features json file with the saved features with the parameter -pf.")
+        debuglogger.error("You need to specify a path to the pdf file(s) to process with the -fp argument or specify a features json file with the saved features with the parameter -pf.")
         sys.exit(1)
     params['save_preprocessing'] = False
     if args.po:
