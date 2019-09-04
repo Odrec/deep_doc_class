@@ -77,58 +77,69 @@ For classification including, both, deep features and metadata features:
 
 python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -meta [PATH TO METADATA CSV FILE] -deep
 
+To use the bash script for automatizing the process of lots of files and generate results in batches do
+
+./classify.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS] -b [BATCH QUANTITY] -meta [METADATA FILE]
+
 
 A training section will be added shortly...
 
 ## USAGE AND PARAMETERS
 ```
-usage: classify_pdf.py [-h] [-fp FP] [-meta [META]] [-c C] [-conf CONF]
-                       [-pf [PF]] [-po [PO]] [-train [TRAIN]] [-deep [DEEP]]
-                       [-overwrite] [-report] [-manual] [-sample [SAMPLE]]
+usage: classify_pdf.py [-h] [-fp FP] [-fl FL [FL ...]] [-meta [META]] [-c C]
+                       [-conf CONF] [-pf [PF]] [-po [PO]] [-train [TRAIN]]
+                       [-deep [DEEP]] [-overwrite] [-report] [-manual]
+                       [-sample [SAMPLE]] [-load_classified [LOAD_CLASSIFIED]]
                        [-rp [RP]] [-b B] [-t T] [-mod [MOD]]
 
 Copyright document classification software.
 
 required arguments:
-  -fp FP            path to pdf file(s). If you use saved features data this
-                    is not required, otherwise it is required.
+  -fp FP                path to pdf file(s) or list of pdf files. If you use
+                        saved features data this is not required, otherwise it
+                        is required.
 
 optional arguments:
-  -meta [META]      specifies metadata file and whether to use metadata for
-                    classification.
-  -c C              specifies amount of cores for parallel processing.
-  -conf CONF        specifies configuration file.
-  -pf [PF]          specifies the name for the file to load the features data.
-                    If -fp is also used then this flag and the data to load
-                    will be ignored.
-  -po [PO]          specifies that the users wants to only preprocess data.
-                    The preprocess data will be saved.
-  -train [TRAIN]    specifies if the user wants to train the classification
-                    system and load the label data. You can pass the labels
-                    file.
-  -deep [DEEP]      specifies the path to the unlabeled image data needed for
-                    the training procedure. If specified without a path, then
-                    it is used during classification to use the trained deep
-                    models.WARNING: While in training mode this can take a
-                    huge amount of time and space.
-  -overwrite        will overwrite all saved data, if any. If not specified,
-                    the program will try to concatenate the data to existing
-                    files.
-  -report           Generate a report with the results and other helpful
-                    statistics.
-  -manual           Provides a random sample of positively classified
-                    documents for manual evaluation.
-  -sample [SAMPLE]  Process just a random sample of the documents. Default
-                    value is 100.
-  -rp [RP]          Specifies the path to store the results, report and sample
-                    for manual evaluation.
-  -b B              ONLY USED IF NOT ON TRAINING MODE. Specifies amount of
-                    files per batch.
-  -t T              ONLY USED IF NOT ON TRAINING MODE. Specifies the value for
-                    the threshold for the classification decision. The results
-                    will be shown in the results file.
-  -mod [MOD]        ONLY USED IF NOT ON TRAINING MODE. Specifies path to
-                    trained models. If not specified the default path
-                    (models/) will be used.
+  -fl FL [FL ...]       list of pdf files to process.
+  -meta [META]          specifies metadata file and whether to use metadata
+                        for classification.
+  -c C                  specifies amount of cores for parallel processing.
+  -conf CONF            specifies configuration file.
+  -pf [PF]              specifies the name for the file to load the features
+                        data. If -fp is also used then this flag and the data
+                        to load will be ignored.
+  -po [PO]              specifies that the users wants to only preprocess
+                        data. The preprocess data will be saved.
+  -train [TRAIN]        specifies if the user wants to train the
+                        classification system and load the label data. You can
+                        pass the labels file.
+  -deep [DEEP]          specifies the path to the unlabeled image data needed
+                        for the training procedure. If specified without a
+                        path, then it is used during classification to use the
+                        trained deep models.WARNING: While in training mode
+                        this can take a huge amount of time and space.
+  -overwrite            will overwrite all saved data, if any. If not
+                        specified, the program will try to concatenate the
+                        data to existing files.
+  -report               Generate a report with the results and other helpful
+                        statistics.
+  -manual               Provides a random sample of positively classified
+                        documents for manual evaluation.
+  -sample [SAMPLE]      Process just a random sample of the documents. Default
+                        value is 100.
+  -load_classified [LOAD_CLASSIFIED]
+                        Checks which files are already classified by checking
+                        the file ../data/processed_files.csv and takes them
+                        out of the list from files to process.
+  -rp [RP]              Specifies the path to store the results, report and
+                        sample for manual evaluation.
+  -b B                  ONLY USED IF NOT ON TRAINING MODE. Specifies amount of
+                        files per batch.
+  -t T                  ONLY USED IF NOT ON TRAINING MODE. Specifies the value
+                        for the threshold for the classification decision. The
+                        results will be shown in the results file.
+  -mod [MOD]            ONLY USED IF NOT ON TRAINING MODE. Specifies path to
+                        trained models. If not specified the default path
+                        (models/) will be used.
 
 ```
