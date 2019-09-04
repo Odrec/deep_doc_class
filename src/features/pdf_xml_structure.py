@@ -1221,61 +1221,6 @@ def clean_files(path, idd=""):
     image_files = glob(join(path,idd+"*.{}".format('png')))
     for i in image_files: os.remove(i)
 
-#def pre_extract_pdf_structure_data_to_file(doc_dir, text_dir, structure_file, doc_ids=None, num_cores=1, batch_size=None):
-#    files = []
-#    if isdir(doc_dir):
-#        if doc_ids is None:
-#            for root, dirs, fls in os.walk(doc_dir):
-#                for name in fls:
-#                    if splitext(basename(name))[1] == '.pdf':
-#                        files.append(join(root,name))
-#        else:
-#            for d_id in doc_ids:
-#                files.append(join(doc_dir,d_id+".pdf"))
-#
-#    else:
-#        debuglogger.error("You need to specify a path to the folder containing all files.")
-#        sys.exit(1)
-#
-#    if not(isdir(text_dir)):
-#        os.makedirs(text_dir)
-#    if batch_size is None:
-#        batch_size = len(files)
-#
-#    for i in range(0,len(files),batch_size):
-#        batch_files = files[i:min(i+batch_size,len(files))]
-#
-#        if not(num_cores is None) and num_cores > 1:
-#            pool = Pool(num_cores)
-#            res = pool.map(get_structure_features, batch_files)
-#        else:
-#            res = []
-#            for f in batch_files:
-#                res.append(get_structure_features(f, True, True, True))
-#        res_fix={}
-#        for x in res:
-#            d_id = splitext(basename(x[1]))[0]
-#            doc_features = x[0]
-#            with open(join(text_dir,d_id+".txt"),"w") as f:
-#                f.write(doc_features["text"])
-#            if("text" in doc_features):
-#                del doc_features["text"]
-#            res_fix[d_id] = doc_features
-#
-#        if isfile(structure_file):
-#            with open(structure_file, 'r') as fp:
-#                structure_data = json.load(fp, encoding="utf-8")
-#            structure_data.update(res_fix)
-#        else:
-#            structure_data = res_fix
-#
-#        with open(structure_file, 'w') as fp:
-#            json.dump(structure_data, fp, indent=4)
-#        debuglogger.debug("%.1f%% done!"%((i+batch_size)/len(files)*100,))
-#
-#        structure_data = None
-#        res_fix = None
-
 def remove_invalid_xml_char(c):
     illegal_unichrs = [ (0x00, 0x08), (0x0B, 0x1F), (0x7F, 0x84), (0x86, 0x9F),
                     (0xD800, 0xDFFF), (0xFDD0, 0xFDDF), (0xFFFE, 0xFFFF),
@@ -1300,23 +1245,3 @@ def remove_invalid_xml_char(c):
 def text_contains_copyright_symbol(text):
     symbols = re.findall(r'(©|[^a-z]doi[^a-z]|[^a-z]isbn[^a-z])', text.lower())
     return int(len(symbols)>0)
-
-def get_unprocessed_docs(structure_file, doc_dir):
-    files = []
-    already_processed = 0
-    with open(structure_file, 'r') as fp:
-        structure_data = json.load(fp, encoding="utf-8")
-    for root, dirs, fls in os.walk(doc_dir):
-        for name in fls:
-            doc_id = splitext(basename(name))[0]
-            ext = splitext(basename(name))[1]
-            if ext == '.pdf':
-                if not(doc_id in structure_data):
-                    files.append(doc_id)
-                else:
-                    already_processed += 1
-            else:
-                debuglogger.error("Contains none pdf file: %s", name)
-    debuglogger.debug("Files to go: %s", str(len(files)))
-    debuglogger.debug("Already processed",str(already_processed))
-    return files

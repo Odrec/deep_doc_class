@@ -37,9 +37,10 @@ class FeatureExtractor():
         metadata,
         properties,
         structure,
-        train=False):
+        train=False, overwrite=False):
 
         self.train = train
+        self.overwrite = overwrite
         self.doc_ids = doc_ids
         self.metadata_dict = metadata
         self.properties_dict = properties
@@ -59,16 +60,14 @@ class FeatureExtractor():
         for bf in self.bow_features:
             if bf in self.bow_text_features:
                 debuglogger.debug("Getting output from vectorizer for text feature %s",bf)
-                self.feature_values.append(self.bow_classifier.get_vectorizer_output(self.doc_ids, self.structure_dict, bf, models_path, 'text', self.metadata_dict, self.train))
+                self.feature_values.append(self.bow_classifier.get_vectorizer_output(self.doc_ids, self.structure_dict, bf, models_path, 'text', self.metadata_dict, self.train, self.overwrite))
             elif bf in self.bow_prop_features:
                 debuglogger.debug("Getting output from vectorizer for property feature %s",bf)
-                self.feature_values.append(self.bow_classifier.get_vectorizer_output(self.doc_ids, \
-                                           self.properties_dict, bf, models_path, 'prop', self.metadata_dict, self.train))
+                self.feature_values.append(self.bow_classifier.get_vectorizer_output(self.doc_ids, self.properties_dict, bf, models_path, 'prop', self.metadata_dict, self.train, self.overwrite))
             #Have to check if there's metadata at all
             elif bf in self.bow_meta_features and self.metadata_dict:
                 debuglogger.debug("Getting output from vectorizer for metadata feature %s",bf)
-                self.feature_values.append(self.bow_classifier.get_vectorizer_output(self.doc_ids, \
-                                           self.metadata_dict, bf, models_path, 'meta', self.metadata_dict, self.train))
+                self.feature_values.append(self.bow_classifier.get_vectorizer_output(self.doc_ids, self.metadata_dict, bf, models_path, 'meta', self.metadata_dict, self.train, self.overwrite))
         debuglogger.debug("Number of BOW features: %s", str(len(self.bow_features)))
         debuglogger.debug("BOW features extracted: %s", str(self.bow_features))
 
@@ -80,8 +79,9 @@ class FeatureExtractor():
         number_participants = []
         for i,did in enumerate(self.doc_ids):
             if extra:
-                courses.append(extra[did]['course_name'])
-                number_participants.append(extra[did]['number_participants'])
+                if did in extra: 
+                    courses.append(extra[did]['course_name'])
+                    number_participants.append(extra[did]['number_participants'])
             for j,nf in enumerate(self.numeric_features):
                 if nf in self.properties_dict[any_id]:
                     tmp_array[i][j] = self.properties_dict[did][nf]

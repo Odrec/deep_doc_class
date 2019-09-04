@@ -164,7 +164,7 @@ def get_preprocessing_dictionary(doc_ids, preprocessing_list, metadata):
         preproc_dict[did].update(preprocessing_list[2][did])
     return preproc_dict    
         
-def get_features(doc_ids, preprocessing_list, metadata, models_path, extra={}, train=False):
+def get_features(doc_ids, preprocessing_list, metadata, models_path, extra={}, train=False, overwrite=False):
     '''
     Extracts the features
     
@@ -183,14 +183,23 @@ def get_features(doc_ids, preprocessing_list, metadata, models_path, extra={}, t
     @param train: whether the request for the extraction of features comes from training or not
     @dtype train: bool
     
+    @param overwrite: whether the overwrite existing trained models
+    @dtype overwrite: bool
+    
     @return features: dictionary with all the extracted features
     @rtype: dict
     
     @return count_pages: number of pages for all samples. Used for report statistics
     @rtype: list
+    
+    @return courses: list of courses per file
+    @rtype: list
+    
+    @return number_participants: list of participants per file
+    @rtype: list
     '''
 
-    fe = FeatureExtractor(doc_ids, metadata, preprocessing_list[1], preprocessing_list[2], train)
+    fe = FeatureExtractor(doc_ids, metadata, preprocessing_list[1], preprocessing_list[2], train, overwrite)
     fe.get_bow_features(models_path)
     count_pages, courses, number_participants = fe.get_numeric_features(extra)
     features = fe.feature_values

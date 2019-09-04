@@ -370,6 +370,7 @@ def fit_model(model, data, labels):
     @return model: trained model
      @rtype model: sklearn model
     '''
+    data = np.nan_to_num(data) #this shouldn't be needed if normalization is correct
     model.fit(data, labels)
     return model
 

@@ -679,7 +679,7 @@ if __name__ == "__main__":
                 logger.info("Preprocessing finished...")
                 logger.info("Extracting features...")
                 logger.warning("This could take a long time.")
-                features_array[loop], count_pages[loop], courses[loop], number_participants[loop] = da.get_features(batch_ids, preprocessing_list[loop], preprocessing_list[loop][0], models_path, batch_extra, train)
+                features_array[loop], count_pages[loop], courses[loop], number_participants[loop] = da.get_features(batch_ids, preprocessing_list[loop], preprocessing_list[loop][0], models_path, batch_extra, train, overwrite)
                 logger.info("Finished extracting features.")
                 logger.info("Normalizing extracted features...")
                 features_array[loop][-1] = da.normalize_features(features_array[loop][-1], numeric_features_names, num_files, train) 

@@ -43,6 +43,20 @@ class BowClassifier():
         """
         self.vectorizer = None
         self.classifier = classifier
+        
+    def delete_vectorizer_model(self, string_type, models_path):
+        '''
+        Loads the trained vectorizer models for this classifier.
+
+        @param string_type: The vectorizer we need to load the .pk file
+        @dtype string_type: str
+        '''
+        vectorizers_path = join(models_path, 'vectorizers/')
+        vect_file = join(vectorizers_path,'vectorizer_'+string_type+'.pkl')
+        if isfile(vect_file):
+            debuglogger.debug("Vectorizer to delete %s.",vect_file)
+            os.remove(vect_file)
+            debuglogger.debug("Vectorizer %s succesfully deleted.",vect_file)
 
     def load_vectorizer_model(self, string_type, models_path):
         '''
@@ -80,7 +94,7 @@ class BowClassifier():
         with open(vect_file, 'wb') as vf:
             pickle.dump(self.vectorizer, vf)        
             
-    def get_vectorizer_output(self, doc_ids, data, string_type, models_path, origin_of_data, metadata, train=False):
+    def get_vectorizer_output(self, doc_ids, data, string_type, models_path, origin_of_data, metadata, train=False, overwrite=False):
         '''
         Trains and gets the output from the vectorizerers.
 
@@ -110,8 +124,9 @@ class BowClassifier():
         elif origin_of_data == "text":
             for did in doc_ids: 
                 clean_data.append(cbd.preprocess_pdf_text_string(data[did][string_type]))
-                data[did][string_type] = clean_data[-1]            
+                data[did][string_type] = clean_data[-1] 
         if train: 
+            if overwrite: self.delete_vectorizer_model(string_type, models_path)
             debuglogger.debug("Fitting vectorizer for feature %s." %(string_type))
             if origin_of_data == "text": 
                 self.vectorizer = TfidfVectorizer(max_features=100, max_df=0.5, min_df=0.01, norm='l2', use_idf=False)
@@ -121,10 +136,8 @@ class BowClassifier():
                 vect_data = self.vectorizer.fit_transform(clean_data).toarray()
                 self.save_vectorizer_model(string_type, models_path)
             except ValueError:
-                debuglogger.warning("Not enough data to train vectorizer for feature %s. Trying to load existing model."\
-                                  %(string_type))
-                logger.warning("Not enough data to train vectorizer for feature %s. Trying to load existing model."\
-                             %(string_type))
+                debuglogger.warning("Not enough data to train vectorizer for feature %s. Trying to load existing model."%(string_type))
+                logger.warning("Not enough data to train vectorizer for feature %s. Trying to load existing model."%(string_type))
                 try:
                     self.load_vectorizer_model(string_type, models_path)
                     vect_data = self.vectorizer.transform(clean_data).toarray()
