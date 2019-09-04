@@ -503,8 +503,7 @@ def check_means_file(features, features_names, amount_of_values, train):
                     if line_count == 0 and row:
                         for n in row:
                             if not n in features_names:
-                                debuglogger.error("At least one feature's values are missing for normalization.\
-                                                  Creating new means file with new values.")
+                                debuglogger.error("At least one feature's values are missing for normalization. Creating new means file with new values.")
                                 #use the default sequence of names to create the file
                                 file_features_names = features_names
                                 error_in_file = True
@@ -545,6 +544,7 @@ def check_means_file(features, features_names, amount_of_values, train):
         #the means file
         sum_values = [0] * num_of_features
         new_means = [0] * num_of_features
+        features = np.nan_to_num(features) #this shouldn't be needed if normalization is correct
         amount_of_batch = len(features)
         for i,f in enumerate(features):
             for j,v in enumerate(f):
