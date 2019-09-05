@@ -357,7 +357,7 @@ def predicting(features_array, models_path, metadata, image_matrix, ids_pages, b
     __, final_prediction = mo.get_final_model_output(input_data, None, None, models_path, metadata, deep)
     return final_prediction
     
-def write_report(results_path, final_prediction, batch_ids, count_pages, t_structure, t_deep, t_pred, courses, number_participants, sample=False):
+def write_report(results_path, final_prediction, batch_ids, count_pages, t_structure, t_deep, t_pred, courses, number_participants, timestr, sample=False):
     '''
     Generates the final report
     
@@ -394,58 +394,46 @@ def write_report(results_path, final_prediction, batch_ids, count_pages, t_struc
     if courses: courses = list(dict.fromkeys(courses))
     logger.info("Generating final report")
     positive_classified = 0
-    positive_classified_list = []
     positive_classified_pages = []
     positive_classified_participants_pages = []
     documents_prob_08 = 0
-    documents_prob_list_08 = []
     documents_prob_pages_08 = []
     participants_pages_prob_08 = []
     documents_prob_06 = 0
-    documents_prob_list_06 = []
     documents_prob_pages_06 = []
     participants_pages_prob_06 = []
     documents_prob_04 = 0
-    documents_prob_list_04 = []
     documents_prob_pages_04 = []
     participants_pages_prob_04 = []
     documents_prob_02 = 0
-    documents_prob_list_02 = []
     documents_prob_pages_02 = []
     participants_pages_prob_02 = []
     documents_prob_under_02 = 0
-    documents_prob_under_list_02 = []
     documents_prob_under_pages_02 = []
     participants_pages_prob_under_02 = []
     for i,v in enumerate(final_prediction):
         if final_prediction[i] > 0.2:
             documents_prob_02 += 1
-            documents_prob_list_02.append(batch_ids[i])
             documents_prob_pages_02.append(count_pages[i])
             if number_participants: participants_pages_prob_02.append(number_participants[i]*count_pages[i])
             if final_prediction[i] > 0.4:
                 documents_prob_04 += 1
-                documents_prob_list_04.append(batch_ids[i])
                 documents_prob_pages_04.append(count_pages[i])
                 if number_participants: participants_pages_prob_04.append(number_participants[i]*count_pages[i])
                 if final_prediction[i] > 0.5:
                     positive_classified += 1
-                    positive_classified_list.append(batch_ids[i])
                     positive_classified_pages.append(count_pages[i])
                     if number_participants: positive_classified_participants_pages.append(number_participants[i]*count_pages[i])
                     if final_prediction[i] > 0.6:
                         documents_prob_06 += 1
-                        documents_prob_list_06.append(batch_ids[i])
                         documents_prob_pages_06.append(count_pages[i])
                         if number_participants: participants_pages_prob_06.append(number_participants[i]*count_pages[i])
                         if final_prediction[i] > 0.8:
                             documents_prob_08 += 1
-                            documents_prob_list_08.append(batch_ids[i])
                             documents_prob_pages_08.append(count_pages[i])
                             if number_participants: participants_pages_prob_08.append(number_participants[i]*count_pages[i])
         else:
             documents_prob_under_02 += 1
-            documents_prob_under_list_02.append(batch_ids[i])
             documents_prob_under_pages_02.append(count_pages[i])
             if number_participants: participants_pages_prob_under_02.append(number_participants[i]*count_pages[i])
 
@@ -479,7 +467,7 @@ def write_report(results_path, final_prediction, batch_ids, count_pages, t_struc
     report_dict['Pages Classified under 0.2'] = sum_pages_under_02
     if courses: report_dict['Number of courses'] = len(courses)
     if number_participants: 
-        report_dict['Pages x Particpants positively classified'] = sum_participants_pages_positively_classified
+        report_dict['Pages x Participants positively classified'] = sum_participants_pages_positively_classified
         report_dict['Pages x Participants over 0.8'] = sum_participants_pages_over_08
         report_dict['Pages x Participants over 0.6'] = sum_participants_pages_over_06
         report_dict['Pages x Participants over 0.4'] = sum_participants_pages_over_04
@@ -490,7 +478,6 @@ def write_report(results_path, final_prediction, batch_ids, count_pages, t_struc
     if t_deep != 0: report_dict['Average time preprocessing deep features per file'] = t_deep
     if t_pred != 0: report_dict['Average time predicting results per file'] = t_pred
     
-    timestr = strftime("%Y%m%d-%H%M%S")
     if not sample: report_name_json = 'report_'+timestr+'.json'
     else: report_name_json = 'report_'+timestr+'_sample.json'
     with open(join(results_path, report_name_json), 'w') as fp:
@@ -502,7 +489,7 @@ def write_report(results_path, final_prediction, batch_ids, count_pages, t_struc
         w.writerows(report_dict.items())
     logger.info("Final report saved. %s %s"%(report_name_json, report_name_csv))
         
-def save_results(results_path, batch_ids, predictions, decisions, sample=False):
+def save_results(results_path, batch_ids, predictions, decisions, timestr, sample=False):
     '''
     Saves the prediction results
     
@@ -766,6 +753,7 @@ if __name__ == "__main__":
             if final_prediction[i] >= decision_threshold:
                 decisions.append('C')
             else: decisions.append('NC')
-        save_results(results_path, batch_ids, final_prediction, decisions, sample)
-        if report: write_report(results_path, final_prediction, batch_ids, count_pages, t_structure, t_deep, t_pred, courses, number_participants, sample)
+        timestr = strftime("%Y%m%d-%H%M%S")
+        save_results(results_path, batch_ids, final_prediction, decisions, timestr, sample)
+        if report: write_report(results_path, final_prediction, batch_ids, count_pages, t_structure, t_deep, t_pred, courses, number_participants, timestr, sample)
         if manual and batch_files: copy_files_manual_eval(results_path, final_prediction, batch_files)
