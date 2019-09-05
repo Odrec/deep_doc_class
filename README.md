@@ -45,7 +45,7 @@ The headers of the csv file should be:
 
 `'document_id', 'file_name', 'folder_name', 'number_participants', 'course_name'` 
 
-**Running the script for prediction
+##Running the script for prediction
 
 When you run the script the results will be saved on the project folder under results in csv and json format.
 If you want to generate a report simply use the -report parameter and it will be saved also in the results directory.
