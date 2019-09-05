@@ -17,7 +17,7 @@ if __name__ == "__main__":
     report_files = glob(join(results_path,"report*.{}".format('json')))
     indexes_sample = []
     for i,f in enumerate(report_files):
-        if 'sample' in f:
+        if 'sample' in f or 'merged' in f:
             indexes_sample.append(i)
     for i in sorted(indexes_sample, reverse=True):
         del report_files[i]
@@ -60,11 +60,13 @@ if __name__ == "__main__":
     report_dict['Pages x Participants over 0.4'] = 0
     report_dict['Pages x Participants over 0.2'] = 0
     report_dict['Pages x Participants under 0.2'] = 0
+    report_dict['Average time preprocessing structure per file'] = 0
+    report_dict['Average time preprocessing deep features per file'] = 0
+    report_dict['Average time predicting results per file'] = 0
     number_of_files = len(report_files)
     ts = False
     td = False
     tp = False
-    print(report_files)
     for f in report_files:
         with open(f) as f_in:
             data = json.load(f_in)
@@ -97,6 +99,7 @@ if __name__ == "__main__":
             if 'Average time predicting results per file' in data: 
                 report_dict['Average time predicting results per file'] += data['Average time predicting results per file']
                 tp = True
+            print(data)
     if ts: report_dict['Average time preprocessing structure per file'] /= number_of_files
     if td: report_dict['Average time preprocessing deep features per file'] /= number_of_files
     if tp: report_dict['Average time predicting results per file'] /= number_of_files

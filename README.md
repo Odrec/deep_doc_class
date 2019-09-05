@@ -77,7 +77,14 @@ For classification including, both, deep features and metadata features:
 
 python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -meta [PATH TO METADATA CSV FILE] -deep
 
-To use the bash script for automatizing the process of lots of files and generate results in batches do
+## KMK Test
+
+For the KMK Test the classify.run script should be used.
+This script will run the files in the quantity specified by batch and will generate a merged report file
+with all the results combined. In case of a crash or interruption, the script will resume where it left of.
+If you want to start over from scratch delete all the files in the results directory and the file called processed_files.csv inside the data/ directory.
+
+To use the bash script for automatizing the process of files do
 
 ./classify.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS] -b [BATCH QUANTITY] -meta [METADATA FILE]
 

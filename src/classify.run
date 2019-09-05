@@ -35,7 +35,7 @@ fi
 rp="${rp:-../results/}"
 b="${b:-1}"
 
-printf "Processing sample first"
+printf "Processing sample first\n"
 if [ -z  "$meta" ]
    then
       python classify_pdf.py -fp $fp -rp $rp -sample -report
@@ -58,4 +58,5 @@ else
           shift "$(($# >= b ? b : $#))"
        done
 fi
+python ../help_scripts/merge_reports.py $rp
 exit 0
