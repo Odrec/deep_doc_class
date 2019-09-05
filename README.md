@@ -45,14 +45,6 @@ The headers of the csv file should be:
 
 'document_id', 'file_name', 'folder_name', 'number_participants', 'course_name' 
 
-To help create this file there's a helper script inside the project folder in: helper_scripts/manage_data.py
-
-You can pass it a csv file with more columns than the three mentioned above and that contains the headers 
-with the names specified above and it will create a new file named metadata_clean.csv with five 
-columns with the necessary data. For example:
-
-python manage_data.py -meta metadata.csv
-
 --Running the script for prediction
 
 When you run the script the results will be saved on the project folder under results in csv and json format.
@@ -77,19 +69,20 @@ For classification including, both, deep features and metadata features:
 
 python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -meta [PATH TO METADATA CSV FILE] -deep
 
+A training section will be added shortly...
+
 ## KMK Test
 
 For the KMK Test the classify.run script should be used.
 This script will run the files in the quantity specified by batch and will generate a merged report file
-with all the results combined. In case of a crash or interruption, the script will resume where it left of.
-If you want to start over from scratch delete all the files in the results directory and the file called processed_files.csv inside the data/ directory.
+with all the statistics combined as well as a report file for a sample of 100 files and result files for the sample
+as well as all the rest of the files with a timestamp of when they were created. In case of a crash or interruption, the script will resume where it left of.
+NOTE: If you want to start over from scratch delete all the files in the results directory and the file called processed_files.csv inside the data/ directory.
 
 To use the bash script for automatizing the process of files do
 
 ./classify.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS] -b [BATCH QUANTITY] -meta [METADATA FILE]
 
-
-A training section will be added shortly...
 
 ## USAGE AND PARAMETERS
 ```
