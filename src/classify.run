@@ -45,7 +45,7 @@ fi
 
 printf 'Processing all files in batches of "%s"\n' "$b"
 python ../help_scripts/check_classified_docs.py $rp
-set -- $fp*.pdf
+set -- $fp/*.pdf
 if [ -z  "$meta" ]
      then
        while (($# > 0)); do

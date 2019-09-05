@@ -168,12 +168,11 @@ def is_pdf(file_path):
         if files: return files, ids
     else:
         pdf_files = file_path.split()
-        print("PDF_FILES",pdf_files)
         for f in pdf_files:
             if isfile(f): pass
             else: 
                 logger.error("No valid input file(s) were specified.")
-                raise argparse.ArgumentTypeError('argument -fp must be of type *.pdf or a path to multiple pdf files.')
+                raise argparse.ArgumentTypeError('argument -fp or -fl must be of type *.pdf or a path to multiple pdf files.')
         files, ids = get_pdf_path_files(dirname(pdf_files), pdf_files)
         return files, ids
     raise argparse.ArgumentTypeError('argument -fp must be of type *.pdf or a path to multiple pdf files.')
