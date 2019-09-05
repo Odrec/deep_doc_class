@@ -43,9 +43,9 @@ You can also provide the number of participants and the course name for each fil
 on your report.
 The headers of the csv file should be:
 
-'document_id', 'file_name', 'folder_name', 'number_participants', 'course_name' 
+`'document_id', 'file_name', 'folder_name', 'number_participants', 'course_name'` 
 
---Running the script for prediction
+**Running the script for prediction
 
 When you run the script the results will be saved on the project folder under results in csv and json format.
 If you want to generate a report simply use the -report parameter and it will be saved also in the results directory.
@@ -55,19 +55,19 @@ To run the script for prediction simply do the command:
 
 For classification with basic bow and numeric features only:
 
-python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY]
+`python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY]`
 
 For classification including basic features and metadata features:
 
-python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -meta [PATH TO METADATA CSV FILE]
+`python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -meta [PATH TO METADATA CSV FILE]`
 
 For classification including deep features:
 
-python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -deep
+`python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -deep`
 
 For classification including, both, deep features and metadata features:
 
-python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -meta [PATH TO METADATA CSV FILE] -deep
+`python classify_pdf.py -fp [DOCUMENT TO CLASSIFY OR PATH OF DOCUMENTS TO CLASSIFY] -meta [PATH TO METADATA CSV FILE] -deep`
 
 A training section will be added shortly...
 
