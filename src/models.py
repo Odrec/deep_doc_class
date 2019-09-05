@@ -389,6 +389,7 @@ def score_model(model, data, labels):
     @return score: score for the testing of the model
     @rtype score: array
     '''
+    data = np.nan_to_num(data) #this shouldn't be needed if normalization is correct
     score = model.score(data, labels)
     return score
 
