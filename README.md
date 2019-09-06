@@ -75,13 +75,20 @@ A training section will be added shortly...
 
 For the KMK Test the classify.run script should be used.
 This script will run the files in the quantity specified by batch and will generate a merged report file
-with all the statistics combined as well as a report file for a sample of 100 files and result files for the sample
-as well as all the rest of the files with a timestamp of when they were created. In case of a crash or interruption, the script will resume where it left of.
-NOTE: If you want to start over from scratch delete all the files in the results directory and the file called processed_files.csv inside the data/ directory.
+with all the statistics combined as well as a report file for a sample of 100 files. Additionally, result files for the sample
+as well as all the rest of the files with a timestamp of when they were created will be created. In case of a crash or interruption, the script will resume where it left of.
+NOTE: If you want to start over from scratch: delete all the files in the results directory and the file called processed_files.csv inside the data/ directory.
 
 To use the bash script for automatizing the process of files do
 
 `./classify.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS] -b [BATCH QUANTITY] -meta [METADATA FILE]`
+
+# Results and result reporting
+
+The following results will be generated:
+- A report file for a random sample of 100 files. Please send this sample report back to us as soon as it is created so we can check if the results look realistic or if something went wrong.
+- A results file for all of the analyzed files. It is created incrementally over the course of approx. 2-3 days (6sec per document). 
+- A folder with documents for the manual evaluation.
 
 
 ## USAGE AND PARAMETERS
