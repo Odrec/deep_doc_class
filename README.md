@@ -83,7 +83,7 @@ To use the bash script for automatizing the process of files do
 
 `./classify.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS] -b [BATCH QUANTITY] -meta [METADATA FILE]`
 
-# Results and result reporting
+### Results and result reporting
 
 The following results will be generated:
 - A report file for a random sample of 100 files. Please send this sample report back to us as soon as it is created so we can check if the results look realistic or if something went wrong.
