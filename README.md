@@ -81,7 +81,7 @@ NOTE: If you want to start over from scratch delete all the files in the results
 
 To use the bash script for automatizing the process of files do
 
-./classify.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS] -b [BATCH QUANTITY] -meta [METADATA FILE]
+`./classify.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS] -b [BATCH QUANTITY] -meta [METADATA FILE]`
 
 
 ## USAGE AND PARAMETERS
