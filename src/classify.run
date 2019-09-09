@@ -59,4 +59,13 @@ else
        done
 fi
 python ../help_scripts/merge_reports.py $rp
+
+if [ ! -d $rp/positive_manual ]; then
+  mkdir -p $rp/positive_manual;
+fi
+
+grep "\-prediction,C" $rp/results_*.csv |cut -d":" -f 2 |cut -d"-" -f1 | sort -R | head -100 | while read p; do
+    cp $fp/$p.pdf $rp/positive_manual/
+done
+
 exit 0

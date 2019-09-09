@@ -88,8 +88,9 @@ To use the bash script for automatizing the process of files do
 The following results will be generated:
 - A report file for a random sample of 100 files. Please send this sample report back to us as soon as it is created so we can check if the results look realistic or if something went wrong.
 - A results file for all of the analyzed files. It is created incrementally over the course of approx. 2-3 days (6sec per document). 
-- A folder with documents for the manual evaluation.
+- A folder inside the results directory with documents for the manual evaluation. You can also use the script located at help_scripts/copy_files_manual_check.run for this. To use it just run:
 
+`./copy_files_manual_check.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS]`
 
 ## USAGE AND PARAMETERS
 ```
