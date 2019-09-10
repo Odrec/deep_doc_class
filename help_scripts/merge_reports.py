@@ -99,7 +99,7 @@ if __name__ == "__main__":
             if 'Average time predicting results per file' in data: 
                 report_dict['Average time predicting results per file'] += data['Average time predicting results per file']
                 tp = True
-            print(data)
+
     if ts: report_dict['Average time preprocessing structure per file'] /= number_of_files
     if td: report_dict['Average time preprocessing deep features per file'] /= number_of_files
     if tp: report_dict['Average time predicting results per file'] /= number_of_files
