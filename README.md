@@ -92,6 +92,17 @@ The following results will be generated:
 
 `./copy_files_manual_check.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS]`
 
+## Known Errors
+
+We have heard back that when using the Docker Container, there are some things to take into account and possibly adjust manually:
+- The metadata export file has to be explicitly named metadata.csv and be moved to .../files/ directory
+- If the pdf files are in subfolders, they might all have to moved into the highest directory, like this:
+`    mv */*.pdf .`
+- The file IDs might have to be amended with their .pdf endings, this is possible with the following command:
+`    for i in uploads/*/*; do mv "$i" "$i.pdf"; done`
+
+Please let us know of any other errors that have occured when using the software so far! We will make sure to amend these problems instead of providing hotfixes in the future.
+
 ## USAGE AND PARAMETERS
 ```
 usage: classify_pdf.py [-h] [-fp FP] [-fl FL [FL ...]] [-meta [META]] [-c C]
