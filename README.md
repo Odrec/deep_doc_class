@@ -101,6 +101,9 @@ We have heard back that when using the Docker Container, there are some things t
 - The file IDs might have to be amended with their .pdf endings, this is possible with the following command:
 `    for i in uploads/*/*; do mv "$i" "$i.pdf"; done`
 
+For studIP exports:
+- Please delete the 'licence' column in the metadata.csv before executing the script.
+
 Please let us know of any other errors that have occured when using the software so far! We will make sure to amend these problems instead of providing hotfixes in the future.
 
 ## USAGE AND PARAMETERS
