@@ -92,7 +92,7 @@ The following results will be generated:
 
 `./copy_files_manual_check.run -fp [PATH OF DOCUMENTS TO CLASSIFY] -rp [PATH FOR RESULTS]`
 
-## Known Errors
+## Known Errors and Issues
 
 We have heard back that when using the Docker Container, there are some things to take into account and possibly adjust manually:
 - The metadata export file has to be explicitly named metadata.csv and be moved to .../files/ directory
@@ -103,6 +103,15 @@ We have heard back that when using the Docker Container, there are some things t
 
 For studIP exports:
 - Please delete the 'licence' column in the metadata.csv before executing the script.
+
+There has been some reports given to us that some big files may be biasing the report in unexpected ways.
+We now included a script that can generate a custom report excluding files bigger than a specified number of pages
+ (default: 250) without having to run the whole classification again. 
+The script is on the help_scripts folder and to run it just do:
+
+`python create_custom_report.py [PATH TO PDF FILES] [PATH TO RESULT FILES] [PATH TO METADATA FILE] [LIMIT OF PAGES]`
+
+The LIMIT OF PAGES argument is optional, you can put any number of pages you want as the upper limit of pages from the files you want to generate the report with.
 
 Please let us know of any other errors that have occured when using the software so far! We will make sure to amend these problems instead of providing hotfixes in the future.
 
