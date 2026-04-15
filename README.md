@@ -1,3 +1,5 @@
+THIS REPOSITORY IS ARCHIVED
+
 # DeepDocClass manual and functionality
 
 //**Any questions or inquiries please email rgaritafigue@uos.de**//
